@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-advanced-prompting-production-agents.design-fine-tune-strategy-data-pipelines
+title: Design fine-tuning strategy and data pipelines
+metadata:
+  title: Design Fine-Tuning Strategy and Data Pipelines
+  description: "Design fine-tuning strategy and data pipelines."
+  ms.date: 05/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/8-design-fine-tune-strategy-data-pipelines.md)]

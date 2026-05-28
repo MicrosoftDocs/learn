@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-advanced-prompting-production-agents.implement-prompt-version-optimization
+title: Implement prompt versioning and optimization
+metadata:
+  title: Implement Prompt Versioning and Optimization
+  description: "Implement prompt versioning and optimization."
+  ms.date: 05/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-implement-prompt-version-optimization.md)]

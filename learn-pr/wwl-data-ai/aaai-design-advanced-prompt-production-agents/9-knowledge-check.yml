@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-advanced-prompting-production-agents.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Module assessment."
+  ms.date: 05/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "A clinical agent processes patient-provided PDF documents. During a security review, a tester successfully embeds instructions in a PDF that cause the agent to reveal its system prompt. Which defense layer was bypassed, and what is the primary remediation?"
+    choices:
+    - content: "The output scanning layer was bypassed; implement response filtering to detect and block responses that contain system prompt content."
+      isCorrect: false
+      explanation: "Incorrect. Output scanning is a valuable defense layer, but it's the last line of defense, not the primary remediation. In this case, the attack succeeded because document content wasn't structurally separated from instructions at input time—the model didn't know to treat the PDF content as data rather than commands."
+    - content: "The structural separation layer was bypassed; redesign the prompt to explicitly delimit document content using XML-style tags and instruct the agent that content inside document tags is data to analyze, not instructions to follow."
+      isCorrect: true
+      explanation: "Correct. Structural separation is the primary defense against indirect injection via documents. When document content and instructions share the same prompt space without explicit delimiters, the model can't reliably distinguish between them. Wrap all document content in explicit data tags and include a system instruction that prohibits following commands found within document data."
+    - content: "The input sanitization layer was bypassed; add regex patterns to strip any text that looks like instructions from PDF content before it reaches the agent."
+      isCorrect: false
+      explanation: "Incorrect. Regex-based sanitization is too fragile—it can be bypassed using creative encoding or paraphrasing and it may strip legitimate clinical content. Input sanitization is a useful extra layer, but structural separation is the more robust primary defense for document injection."
+  - content: "Your prompt engineering team changes the escalation trigger instructions in the clinical agent's system prompt. The evaluation score for clinical accuracy improves by three percent, but safety refusal rate drops by eight percent. How should this change be handled?"
+    choices:
+    - content: "Deploy the change—the three percent quality improvement outweighs the eight percent safety decline since quality is the primary metric."
+      isCorrect: false
+      explanation: "Incorrect. For a clinical agent at a healthcare organization, safety refusals are a critical safety control. An eight percent drop in refusal rate means the agent is responding to eight percent more requests that should have triggered an escalation to a clinician—a direct patient safety risk. Quality improvements don't justify safety degradation."
+    - content: "Block deployment; investigate which escalation trigger change caused the refusal drop, restore the safe escalation behavior, and rerun the evaluation before considering deployment."
+      isCorrect: true
+      explanation: "Correct. The automated regression pipeline should block deployment when safety metrics decline beyond a defined threshold. The team should review the semantic diff—which specific change to the escalation triggers produced the behavior shift—then restore or refine those triggers before reevaluating."
+    - content: "Deploy to a five percent canary first to observe live safety metrics before full rollout."
+      isCorrect: false
+      explanation: "Incorrect. A known safety regression shouldn't be deployed even to a canary population in a clinical setting—five percent of live patient interactions with reduced safety controls isn't an acceptable test approach. Address the regression in evaluation before exposing any real users."
+  - content: "A new clinical guideline is published mid-session while a patient consultation is in progress. At which point in the multiturn reasoning chain should the updated guideline be injected?"
+    choices:
+    - content: "Inject it immediately as a user message, regardless of which reasoning step is currently in progress."
+      isCorrect: false
+      explanation: "Incorrect. Injecting new context after a conclusion has already been drawn in the current reasoning step can produce inconsistent output—part of the session reflects old guidelines and part reflects new ones. Immediate injection without considering the current step can corrupt the reasoning chain."
+    - content: "Hold the updated guideline and inject it before the next reasoning turn begins, so the new information enters at a clean reasoning boundary."
+      isCorrect: true
+      explanation: "Correct. Dynamic context injection should respect reasoning turn boundaries. Injecting at the start of the next turn ensures the agent incorporates the updated guideline with full context, rather than mid-step where it may partially contradict conclusions already formed in the current step."
+    - content: "Discard the updated guideline until the session ends, then apply it to the next consultation to avoid disrupting in-progress reasoning."
+      isCorrect: false
+      explanation: "Incorrect. Updated clinical guidelines may have immediate patient safety implications. Discarding them during a live consultation isn't appropriate in a healthcare context. The right balance is buffering until the next reasoning boundary—not discarding until a future session."
