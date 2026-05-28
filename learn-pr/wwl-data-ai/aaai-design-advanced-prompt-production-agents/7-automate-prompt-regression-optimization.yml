@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-advanced-prompting-production-agents.automate-prompt-regression-optimization
+title: Automate prompt regression and optimization
+metadata:
+  title: Automate Prompt Regression and Optimization
+  description: "Automate prompt regression and optimization."
+  ms.date: 05/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-automate-prompt-regression-optimization.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-advanced-prompting-production-agents.build-system-prompt-frameworks-agent-control
+title: Build system prompt frameworks for agent control
+metadata:
+  title: Build System Prompt Frameworks for Agent Control
+  description: "Build system prompt frameworks for agent control."
+  ms.date: 05/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-build-system-prompt-frameworks-agent-control.md)]
