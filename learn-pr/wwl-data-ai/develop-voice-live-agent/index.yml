@@ -8,7 +8,7 @@ metadata:
   ms.author: jeffko
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
-  ms.service: azure-ai-speech
+  ms.service: azure-speech-foundry-tools
 title: Develop an Azure Speech Voice Live Agent in Microsoft Foundry
 summary: "Learn how to develop a Voice Live agent using the Voice Live API and SDK. This module covers the fundamentals of the Voice Live platform, including API integration, SDK usage, and building conversational AI agents."
 abstract: |
