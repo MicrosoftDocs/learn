@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multi-agent-memory-azure-cosmos-db.examine-memory-architecture-patterns
+title: Examine memory architecture patterns
+metadata:
+  title: Examine Memory Architecture Patterns
+  description: "Examine memory architecture patterns."
+  ms.date: 05/28/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-examine-memory-architecture-patterns.md)]
