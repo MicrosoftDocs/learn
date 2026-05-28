@@ -2,47 +2,48 @@
 uid: learn-wwl.secure-data-access-in-fabric.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   ai_generated_module_assessment: true
-  description: "Knowledge check"
-  ms.date: 01/29/2026
-  author: wwlpublish
+  description: "Module assessment"
+  ms.date: 05/26/2026
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
-  - content: What is order of evaluation of access in Fabric?
+  - content: What is the order of evaluation for access in Fabric?
     choices:
-    - content:  Data security, Fabric access, Microsoft Entra ID authentication
+    - content: Data security, Fabric access, Microsoft Entra ID authentication
       isCorrect: false
-      explanation: Incorrect. The order starts with Microsoft Entra ID authentication, not Data security.
+      explanation: Incorrect. The order starts with Microsoft Entra ID authentication, not data security.
     - content: Microsoft Entra ID authentication, Fabric access, Data security
       isCorrect: true
-      explanation: Correct. The order of evaluation for access in Fabric is Microsoft Entra ID authentication, Fabric access, and then Data security.
+      explanation: Correct. Fabric evaluates access in three sequential levels — Microsoft Entra ID authentication first, then Fabric access, and finally data security.
     - content: Fabric access, Microsoft Entra ID authentication, Data security
       isCorrect: false
-      explanation: Incorrect. The order starts with Microsoft Entra ID authentication, not Fabric access.
-  - content: What workspace role should be assigned to a data engineer who needs to create Fabric items and read all data in an existing lakehouse?
+      explanation: Incorrect. Microsoft Entra ID authentication is evaluated first, before Fabric access.
+  - content: A data engineer needs to create Fabric items and read data in an existing lakehouse. Which workspace role should you assign?
     choices:
     - content: Viewer
       isCorrect: false
-      explanation: Incorrect. The Viewer role only allows viewing of content and data, but doesn't allow modification or creation of Fabric items.
+      explanation: Incorrect. The Viewer role lets users view content but doesn't allow creating or modifying Fabric items.
     - content: Contributor
       isCorrect: true
-      explanation: Correct. The Contributor role allows the user to view and modify all content and data in the workspace, including creating Fabric items and reading data in the lakehouse.
+      explanation: Correct. The Contributor role lets users create, view, and modify all content and data in the workspace — without granting share or permission management capabilities.
     - content: Admin
       isCorrect: false
-      explanation: Incorrect. The Admin role has more permissions than needed, including managing all content, data, and permissions.
-  - content: Which of the following tools can be used to apply granular data access permissions in Fabric?
+      explanation: Incorrect. The Admin role grants more permissions than necessary, including managing permissions and sharing content.
+  - content: A user with the Viewer workspace role needs read access to only specific tables in a lakehouse. What should you use?
     choices:
-    - content: OneLake data access roles
+    - content: OneLake security roles
       isCorrect: true
-      explanation: Correct. OneLake data access roles allow you to create custom roles within a lakehouse and grant read access to specific folders.
+      explanation: Correct. OneLake security roles let you create custom roles that grant read access to specific tables or folders within a lakehouse. They're the right tool for limiting data access for Viewers.
     - content: Data Manipulation Language (DML)
       isCorrect: false
-      explanation: Incorrect. Data Control language (DCL) is used to provide granular T-SQL permissions. DML is used to manipulate data.
-    - content: Column-level security in the semantic model
+      explanation: Incorrect. DML is used to manipulate data (INSERT, UPDATE, DELETE). Data Control Language (DCL) commands like GRANT and DENY are used for T-SQL permissions.
+    - content: Item permissions
       isCorrect: false
-      explanation: Incorrect. There isn't column-level security in the semantic model.
+      explanation: Incorrect. Item permissions control access to an entire item, not to specific tables within it. OneLake security roles provide the table-level granularity needed here.

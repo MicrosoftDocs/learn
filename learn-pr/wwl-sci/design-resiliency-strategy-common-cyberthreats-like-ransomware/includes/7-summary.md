@@ -6,10 +6,11 @@ The main takeaways from this module include understanding the threat landscape, 
 
 In this module, you learned how to:
 
-* Understand common cyberthreats like ransomware.
-* Understand how to support business resiliency.
-* Design configurations for secure backup and restore.
-* Design solutions for managing security updates.
+* Understand common cyberthreats like ransomware and attack patterns organizations must defend against.
+* Design security strategies to support business resiliency goals, including identifying and prioritizing threats to business-critical assets.
+* Design solutions for mitigating ransomware attacks, including prioritization of BCDR and privileged access protection.
+* Design solutions for business continuity and disaster recovery (BCDR), including secure backup and restore for hybrid and multicloud environments.
+* Evaluate solutions for security updates.
 
 ## Learn more
 

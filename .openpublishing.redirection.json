@@ -46,6 +46,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/paths/windows-server-2025-accreditation-2025/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/windows-server-2025-accreditation-2026/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/8-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/training",
       "redirect_document_id": false
@@ -33539,6 +33544,26 @@
       "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl/administer-fabric/2-fabric-architecture.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/administer-fabric/2-fabric-admin-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/administer-fabric/3-admin-role-tools.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/administer-fabric/3-configure-tenant-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/administer-fabric/4-manage-security.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/administer-fabric/4-manage-user-access-licensing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/administer-fabric/5-govern-fabric.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/administer-fabric/5-monitor-govern",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/xamarin/customize-xamarin-forms-listview/4-exercise-create-and-select-custom-cells.md",
       "redirect_url": "https://learn.microsoft.com/dotnet/maui/user-interface/controls/listview"
     },
@@ -34560,6 +34585,11 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/11-summary.md",
       "redirect_url": "/training/modules/leverage-ai-tools/6b-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/microsoft-productivity-accreditation-2025/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-productivity-accreditation-2026/",
       "redirect_document_id": false
     },
     {

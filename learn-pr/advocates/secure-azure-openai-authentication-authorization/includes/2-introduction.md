@@ -1,10 +1,12 @@
-Good security practices require that we control access to applications that we develop and developing an application in Azure OpenAI is no different. In this module you'll learn about configuring authentication to Azure OpenAI, the different aspects to consider, and examples of how to build code to achieve this.
+Good security practices require that you control which users, apps, and workloads can access Azure OpenAI deployments. This module focuses on securing Azure OpenAI in current Microsoft Foundry project and resource scenarios. You'll compare key-based authentication with Microsoft Entra ID authentication, learn how managed identities fit into keyless authentication, and see how least-privilege RBAC role sets and local-authentication controls reduce risk.
+
+Role choices depend on the target surface. Use Foundry roles for current Microsoft Foundry project access, Cognitive Services User or a narrower custom role with the documented `Microsoft.CognitiveServices/accounts/MaaS/*` wildcard data action for direct Microsoft Foundry Models keyless inference, and Cognitive Services OpenAI roles for classic Azure OpenAI resources and OpenAI feature access on Azure OpenAI resources upgraded to Foundry.
 
 Learning objectives:
 
 By the end of this module, you'll be able to:
 
-- Describe the different methods of authenticating to Azure OpenAI, including API keys and managed identities.
-- Understand the differences between using API keys and managed identities within Azure OpenAI, including the distinction between system-assigned and user-assigned identities.
-- Understand the different role-based access control (RBAC) roles available to configure in OpenAI.
-- Understand why managed identities are more secure than API keys
+- Compare key-based authentication with Microsoft Entra ID authentication for Azure OpenAI in Microsoft Foundry.
+- Describe how managed identities, service principals, and user credentials work with Microsoft Entra ID authentication.
+- Choose role sets for the target surface: Foundry project roles, Cognitive Services User or a narrower custom `Microsoft.CognitiveServices/accounts/MaaS/*` wildcard data-plane role for direct Foundry Models keyless inference, and Cognitive Services OpenAI roles for classic Azure OpenAI resources or OpenAI feature access on Azure OpenAI resources upgraded to Foundry.
+- Explain when to disable local authentication after validating Microsoft Entra ID access.

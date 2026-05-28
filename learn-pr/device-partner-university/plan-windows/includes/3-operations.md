@@ -123,7 +123,7 @@ Servicing channels make it possible for your organization to decide how often yo
 
 ### Hardware refresh plan
 
-Windows 11 has [specific hardware requirements](/windows/windows-11-specifications#table1) that could impact your hardware refresh plans. It's likely that some of your existing hardware won't be compatible with Windows 11 and so will need to be replaced, possibly earlier than your regular refresh cycle would normally allow.
+Windows 11 has [specific hardware requirements](/windows/whats-new/windows-11-requirements) that could impact your hardware refresh plans. It's likely that some of your existing hardware won't be compatible with Windows 11 and so will need to be replaced, possibly earlier than your regular refresh cycle would normally allow.
 
 The extent of device replacement that is required will influence your choice of deployment methods. For example, if most of your devices are compatible, then you would most likely consider an in-place upgrade to Windows 11 rather than a device swap program.
 

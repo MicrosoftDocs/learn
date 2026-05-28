@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.memory-state-evaluation.memory-state-continuity
+title: Ensure continuity of agent memory and state across tools and environments
+metadata:
+  title: Ensure continuity of agent memory and state across tools and environments
+  description: This content is a part of the Memory, State, and Evaluation.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 05/13/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-memory-state-continuity.md)]

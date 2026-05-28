@@ -60,7 +60,7 @@ Information Barriers restrict two-way communication and collaboration between sp
 
 When Information Barrier policies are active, restricted users can't find, chat with, call, or share files with each other. The restrictions apply across Teams channels, SharePoint sites, and OneDrive sharing. Policies are defined by segmenting users based on Microsoft Entra attributes such as department, role, or location, and then creating policies that block or allow communication between segments.
 
-## Evaluate Data Security Posture Management (preview)
+## Evaluate Data Security Posture Management
 
 Data Security Posture Management (DSPM) unifies visibility across Microsoft Purview solutions by organizing data security activities around specific objectives. Rather than managing individual solutions separately, DSPM presents guided workflows that group related actions from information protection, DLP, Insider Risk Management, and Data Security Investigations.
 
@@ -71,9 +71,9 @@ DSPM continuously scans your environment to answer four fundamental questions:
 - Who can access it?
 - How is it protected?
 
-Security objectives include preventing oversharing, preventing exfiltration to risky locations, discovering unprotected sensitive data, and preventing data exposure in Microsoft 365 Copilot and agent interactions. Each objective provides metrics, recommended actions, and one-click policies to accelerate remediation.
+Security objectives include preventing oversharing, preventing exfiltration to risky locations, discovering unprotected sensitive data, and preventing data exposure in Microsoft 365 Copilot and agent interactions. Each objective provides metrics, recommended actions, and one-click policies to accelerate remediation. DSPM also extends coverage to third-party SaaS and IaaS platforms—such as Google Cloud Platform, Snowflake, and Databricks—and integrates with partner solutions such as Varonis, Cyera, BigID, and OneTrust for comprehensive risk insights.
 
-DSPM natively includes AI observability, which tracks AI app and agent activity, identifies sensitive data referenced in AI interactions, and surfaces oversharing risks specific to generative AI workloads. This capability provides the data security foundation that the AI-specific controls covered in the next unit build on.
+DSPM natively includes AI observability, which inventories all AI apps and agents (including Microsoft 365 Copilot agents) with activity trends, identifies sensitive data referenced in AI interactions, and surfaces oversharing risks specific to generative AI workloads. Enhanced reporting provides advanced filtering and customizable views supporting granular analysis of sensitive data usage, DLP activity, and posture trends. This capability provides the data security foundation that the AI-specific controls covered in the next unit build on.
 
 ## Design considerations for security architects
 

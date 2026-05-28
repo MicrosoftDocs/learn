@@ -9,4 +9,4 @@ In this module, you learned how to:
 
 ## Next steps
 
-Now that you learned about large-scale data warehousing, consider learning more about data-related workloads on Azure by pursuing a Microsoft certification in [Azure Data Fundamentals](/certifications/azure-data-fundamentals/).
+Now that you learned about large-scale data warehousing, consider learning more about data-related workloads on Azure by pursuing a Microsoft certification in [Azure Data Fundamentals](/credentials/certifications/azure-data-fundamentals/).

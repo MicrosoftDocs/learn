@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-generative-ai-center-excellence.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
   title: Knowledge Check
-  description: Validate your understanding of the AI Center of Excellence.
-  ms.date: 04/05/2025
+  description: Check your understanding of how an AI CoE sets strategy, governance, cost guardrails, role responsibilities, and modern practices for AI apps and agents.
+  ms.date: 05/22/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -14,12 +14,12 @@ quiz:
   questions:
     - content: "What is a primary responsibility of an AI Center of Excellence?"
       choices:
-        - content: "Developing custom LLM models for all organizational needs."
+        - content: "Centralizing every model, copilot, agent, data grounding, tool integration, and Microsoft Foundry operations decision inside the CoE."
           isCorrect: false
-          explanation: "While the CoE may provide guidance on AI development, developing custom LLMs isn't a primary responsibility. an AI CoE can focus on execution responsibilities like developing models or serve as a guiding body."
+          explanation: "Modern enterprise AI work includes selecting and evaluating models, building copilots and agents, grounding responses in enterprise data, integrating tools including MCP-compatible tools, and operating solutions in Microsoft Foundry. The CoE sets strategy, standards, guardrails, and reusable patterns rather than owning every implementation decision."
         - content: "Aligning AI initiatives with organizational and business priorities."
           isCorrect: true
-          explanation: "One of the key responsibilities of an AI CoE, is aligning AI initiatives with organizational and business priorities."
+          explanation: "A key responsibility of an AI CoE is aligning AI initiatives with organizational and business priorities."
         - content: "Replacing existing security teams with AI specialists."
           isCorrect: false
           explanation: "The CoE should work 'in close and constant collaboration' with security teams rather than replacing them."
@@ -27,21 +27,21 @@ quiz:
       choices:
         - content: "By focusing exclusively on using open-source models to minimize expenses."
           isCorrect: false
-          explanation: "Organizations should assess factors such as 'cost integration complexity and adaptability' when making decisions between custom solutions and off-the-shelf alternatives."
+          explanation: "Cost management considers model selection and routing, token usage, quotas, budgets, evaluation gates, and the smallest model that meets the need rather than focusing only on open-source models."
         - content: "By promoting FinOps principles and collaboration between finance, engineering, and business teams."
           isCorrect: true
-          explanation: "The CoE contributes to cost efficiency by promoting FinOps principles, driving collaboration between finance, engineering, and business teams."
+          explanation: "The CoE contributes to cost efficiency by promoting FinOps principles and collaboration between finance, engineering, platform, and business teams."
         - content: "By centralizing all AI development to avoid departmental duplication."
           isCorrect: false
           explanation: "Execution is often decentralized, especially in larger organizations."
-    - content: "Which role designs and optimizes inputs for AI models to guide their behavior?"
+    - content: "Which capability defines test sets, regression checks, and trace reviews to measure AI quality, safety, reliability, and business impact?"
       choices:
-        - content: "AI Agent Engineer"
+        - content: "AI application and agent engineering"
           isCorrect: false
-          explanation: "AI Agent Engineers develop 'autonomous AI systems that can perceive, reason, and act to achieve specific goals' rather than focusing on prompt design."
+          explanation: "AI application and agent engineers build AI-enabled apps and agents that use models, data, tools, and orchestration safely."
         - content: "AI Operations"
           isCorrect: false
-          explanation: "Operations are responsible for 'deploying, managing, monitoring, backup, and recovery of AI workloads' rather than prompt design."
-        - content: "Prompt Engineer"
+          explanation: "AI Operations teams manage deployed AI systems, monitor reliability, cost, performance, and safety, and maintain observability over time."
+        - content: "Evaluation and agent-optimization specialists"
           isCorrect: true
-          explanation: "Prompt engineers 'design and optimizes inputs for AI models to guide their behavior and produce accurate, desired outputs.'"
+          explanation: "Evaluation and agent-optimization specialists define measures such as test sets, automated and human evaluations, regression checks, reasoning and retrieval assessments, and trace reviews."

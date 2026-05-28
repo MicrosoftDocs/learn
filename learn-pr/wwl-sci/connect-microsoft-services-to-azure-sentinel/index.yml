@@ -3,17 +3,18 @@ uid: learn.wwl.connect-microsoft-services-to-azure-sentinel
 metadata:
   title: Connect Microsoft services to Microsoft Sentinel
   description: "Connect Microsoft services to Microsoft Sentinel"
-  ms.date: 01/13/2025
-  author: wwlpublish
+  ms.date: 05/21/2026
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: microsoft-sentinel
+  ai-usage: ai-assisted
 title: Connect Microsoft services to Microsoft Sentinel
 summary: Learn how to connect Microsoft 365 and Azure service logs to Microsoft Sentinel.
 abstract: |
   Upon completion of this module, the learner is able to:
   - Connect Microsoft service connectors
-  - Explain how connectors auto-create incidents in Microsoft Sentinel
+  - Explain how connectors autocreate incidents in Microsoft Sentinel
 prerequisites: |
   Basic experience with Azure services
 iconUrl: /training/achievements/connect-microsoft-services-to-azure-sentinel.svg

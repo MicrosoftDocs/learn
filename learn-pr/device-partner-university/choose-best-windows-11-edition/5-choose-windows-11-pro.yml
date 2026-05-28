@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.choose-best-windows-11-edition.choose-windows-11-pro
+title: Choose Windows 11 Pro for business-ready devices
+metadata:
+  title: Choose Windows 11 Pro For Business-Ready Devices
+  description: This content is part of the "Choose the best Windows 11 edition built for your organization’s needs" module.
+  ms.date: 05/20/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-choose-windows-11-pro.md)]

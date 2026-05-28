@@ -9,8 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
   - N/A
-  ms.service: microsoft-365-security
-  ms.subservice: mde
+  ms.service: defender-endpoint
   ai-usage: human-only
 title: Deploy the Microsoft Defender for Endpoint environment
 summary: Learn how to deploy the Microsoft Defender for Endpoint environment, including onboarding devices and configuring security.

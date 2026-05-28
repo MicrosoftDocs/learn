@@ -6,7 +6,7 @@
     :::column-end:::
     :::column span="":::
 
-        As a result of Executive Order 13800, the Office of Management and Budget (OMB) was tasked with compiling an annual [Federal Government IT Modernization Report](https://www.cio.gov/assets/resources/Report-to-the-President-on-IT-Modernization-Final.pdf) to lay out a strategy for Federal Government IT modernization.
+        As a result of Executive Order 13800, the Office of Management and Budget (OMB) was tasked with compiling an annual [Federal Government IT Modernization Report](https://www.actiac.org/system/files/Report%20to%20the%20President%20on%20IT%20Modernization%20-%20Final.pdf) to lay out a strategy for Federal Government IT modernization.
 
         The report first focuses on network modernization, and seeks to "maximize secure use of cloud computing, modernize Government-hosted applications, and securely maintain legacy systems."
 

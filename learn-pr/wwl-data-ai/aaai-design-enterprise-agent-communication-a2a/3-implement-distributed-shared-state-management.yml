@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-enterprise-agent-communication-a2a.implement-distributed-shared-state-management
+title: Implement distributed shared state management
+metadata:
+  title: Implement Distributed Shared State Management
+  description: "Implement distributed shared state management."
+  ms.date: 05/22/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-implement-distributed-shared-state-management.md)]

@@ -1,9 +1,9 @@
 Now it's your opportunity to explore Microsoft Fabric Real-Time Intelligence in a sample solution to set up and use the main features of Real-Time Intelligence with a sample set of data.
 
 > [!NOTE]
-> To complete this lab, you will need a Microsoft Fabric account, or if you don't have an account yet, sign up for a [free trial](https://go.microsoft.com/fwlink/?LinkId=2182771&azure-portal=true).
+> To complete this lab, you need a Microsoft Fabric account, or if you don't have an account yet, sign up for a [free trial](https://go.microsoft.com/fwlink/?LinkId=2182771&azure-portal=true).
 >
-> See [Getting started with Fabric](/fabric/get-started/fabric-trial) for more information.
+> For more information about getting started with Microsoft Fabric, see [Getting started with Fabric](/fabric/get-started/fabric-trial).
 
 Launch the exercise and follow the instructions.
 

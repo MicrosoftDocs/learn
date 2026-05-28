@@ -142,4 +142,4 @@ Agent flows enable:
 
 - [Use agent flows](/training/modules/use-agent-flows/)
 
-- [Copilot Studio](/copilot-studio)
+- [Copilot Studio](/microsoft-copilot-studio)

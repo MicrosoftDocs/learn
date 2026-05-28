@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.dpu.windows-server-2025-accreditation-2026
+title: Windows Server 2025 Accreditation 2026
+metadata:
+  title: Windows Server 2025 Accreditation 2026
+  description: This learning path introduces Windows Server 2025 and helps you evaluate how it supports modernization across on-premises and hybrid environments. You’ll explore how to determine the right time to modernize from Windows Server 2016 or Windows Server 2019, assess the role of Azure Local in your infrastructure strategy, and understand the key capabilities and positioning of Windows Server 2025. By the end of this learning path, you’ll be able to evaluate modernization approaches and identify how Windows Server 2025 can help meet evolving security, operational, and business requirements.
+  ms.date: 05/22/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: learning-path
+summary: >
+  Explore how to modernize from Windows Server 2016 or 2019, evaluate Azure Local, and understand how Windows Server 2025 supports secure, efficient, and hybrid-ready environments.
+prerequisites: None
+iconUrl: /training/achievements/windows-server-2025-accreditation-2026.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-server
+modules:
+  - learn.dpu.choose-the-right-moment
+  - learn.dpu.evaluate-azure-local
+  - learn.dpu.introduction-to-windows-server-2025
+trophy:
+  uid: learn.dpu.windows-server-2025-accreditation-2026.trophy
