@@ -105,5 +105,5 @@ In this task, you convert an NFS volume between supported versions. If you use t
 3. It takes some time for the conversion operation to complete.
 4. On all clients, change the NFS protocol version in your mount command (that is, `/etc/fstab`) from `vers=4.1` to `vers=3`.
 5. Remount the volume on clients using `sudo mount /path/to/vol1`.
-6. On the clients, run `mount -v` and and locate your volume in the list. Verify in the output that the version shows `nfsvers=3`.
+6. On the clients, run `mount -v` and locate your volume in the list. Verify in the output that the version shows `nfsvers=3`.
 7. Change the read-only export policy back to the original export policy.
