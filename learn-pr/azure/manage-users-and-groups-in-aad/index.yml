@@ -8,7 +8,7 @@ metadata:
   ms.author: sarahlipsey
   ms.topic: module
   ms.manager: amycollanino
-  ms.service: azure-active-directory
+  ms.service: entra-id
   ms.subservice: fundamentals
 
 title: Manage users and groups in Microsoft Entra ID
@@ -47,4 +47,3 @@ units:
 - learn.azure-security.manage-users-and-groups-in-aad.summary
 badge:
   uid: learn.azure-security.manage-users-and-groups-in-aad.badge
-
