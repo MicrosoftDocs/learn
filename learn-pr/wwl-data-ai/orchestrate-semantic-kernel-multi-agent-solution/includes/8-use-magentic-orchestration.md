@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a4930dd2-d8d0-489f-9b2a-fb0d08f976ed]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 **Magentic orchestration** is a flexible, general-purpose multi-agent pattern designed for complex, open-ended tasks that require dynamic collaboration. This pattern uses a dedicated Magentic manager to coordinate a team of specialized agents. The manager decides which agent should act next based on the evolving context, task progress, and agent capabilities.
 
 ![Diagram of Magentic orchestration flow.](../media/multi-agent-magnetic.png)
@@ -50,3 +61,5 @@ Implement the Magentic orchestration pattern with the Microsoft Agent Framework:
    Collect the final output from the workflow events. The result contains the complete solution developed through the collaborative effort of all participating agents.
 
 Magentic orchestration excels at solving complex, evolving problems that require real-time coordination between specialized agents. It's ideal for tasks where the plan can't be defined in advance and must adapt as new information emerges. Using the Microsoft Agent Framework, you can build systems that dynamically design, refine, and execute solution paths through intelligent agent collaboration.
+
+::: zone-end

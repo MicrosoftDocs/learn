@@ -1,9 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-foundry-iq.understand-rag
 metadata:
+  zone_pivot_groups: video-or-text
   title: Understanding RAG for agents
   description: Learn the limitations of traditional AI agents and how RAG transforms them into knowledge-enhanced assistants.
-  ms.date: 01/15/2026
+  ms.date: 5/29/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
