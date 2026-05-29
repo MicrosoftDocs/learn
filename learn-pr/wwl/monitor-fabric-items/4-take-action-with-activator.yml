@@ -2,14 +2,15 @@
 uid: learn.wwl.monitor-fabric-items.take-action-with-activator
 title: Take action with Microsoft Fabric Activator
 metadata:
-  title: Take action with Microsoft Fabric Activator
-  description: "Take action with Microsoft Fabric Activator"
+  title: Take Action With Microsoft Fabric Activator
+  description: "Learn how Activator detects conditions in data and triggers automated actions like alerts, Teams messages, and notebook runs."
   ms.date: 05/29/2026
-  author: wwlpublish
+  author: theresai
   ms.author: theresai
   ms.topic: unit
   ms.custom:
   - fabric
+  ai-usage: ai-generated
 durationInMinutes: 8
 content: |
   [!include[](includes/4-take-action-with-activator.md)]

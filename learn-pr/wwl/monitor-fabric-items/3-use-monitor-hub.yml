@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.monitor-fabric-items.use-monitor-hub
-title: Use Microsoft Fabric Monitor Hub
+title: Use the Microsoft Fabric monitoring hub
 metadata:
-  title: Use Microsoft Fabric Monitor Hub
-  description: "Use Microsoft Fabric Monitor Hub"
+  title: Use the Microsoft Fabric Monitor Hub
+  description: "Use the monitoring hub to view activity status, investigate failures, review historical runs, and configure failure notifications."
   ms.date: 05/29/2026
-  author: wwlpublish
+  author: theresai
   ms.author: theresai
   ms.topic: unit
   ms.custom:
   - fabric
+  ai-usage: ai-generated
 durationInMinutes: 8
 content: |
   [!include[](includes/3-use-monitor-hub.md)]

@@ -2,10 +2,10 @@
 uid: learn.wwl.monitor-fabric-items.understand-monitoring
 title: Understand monitoring
 metadata:
-  title: Understand monitoring
-  description: "Understand monitoring"
+  title: Understand Monitoring in Microsoft Fabric
+  description: "Understand why monitoring matters, which Fabric activities to track, and how to establish a monitoring baseline."
   ms.date: 05/29/2026
-  author: wwlpublish
+  author: theresai
   ms.author: theresai
   ms.topic: unit
   ms.custom:

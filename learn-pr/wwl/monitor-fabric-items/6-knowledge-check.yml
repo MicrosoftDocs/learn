@@ -2,10 +2,10 @@
 uid: learn.wwl.monitor-fabric-items.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
-  description: "Knowledge check"
+  title: Module Assessment
+  description: "Test your knowledge of monitoring in Microsoft Fabric, including the monitoring hub and Activator."
   ms.date: 05/29/2026
-  author: wwlpublish
+  author: theresai
   ms.author: theresai
   ms.topic: unit
   ms.custom:

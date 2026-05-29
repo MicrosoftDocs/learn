@@ -2,9 +2,9 @@
 uid: learn.wwl.monitor-fabric-items
 metadata:
   title: Monitor Activities in Microsoft Fabric
-  description: "Monitoring helps you gain visibility into the health of your data systems. Monitoring Hub in Microsoft Fabric collects and aggregates data from Fabric activities and Microsoft Fabric Activator helps you take actions when patterns or conditions are detected in streaming data."
+  description: "Learn how to use the monitoring hub in Microsoft Fabric to track activity status, investigate failures, and view historical run data. Explore how Activator automates responses to data events."
   ms.date: 05/29/2026
-  author: wwlpublish
+  author: theresai
   ms.author: theresai
   ms.topic: module-standard-task-based
   ms.service: fabric
