@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-capacity-pool.manage-manual-qos-capacity-pool
+title: Manage a manual QoS capacity pool
+metadata:
+  title: Manage a manual QoS capacity pool
+  description: Learn how to manage a capacity pool that uses the manual QoS type.
+  ms.date: 05/12/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-manage-manual-qos-capacity-pool.md)]
