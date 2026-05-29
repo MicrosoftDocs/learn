@@ -96,7 +96,7 @@ Fields containing structured identifiers like NDC codes or ICD-10 diagnosis code
 
 Composite field strategies improve retrieval quality by creating specialized embeddings for different content types. Rather than embedding an entire formulary document as one vector, create separate embeddings for the "indications" section, the "contraindications" section, and the "dosing" section. This granularity lets vector search find the specific section relevant to a query rather than matching on the overall document similarity.
 
-Hybrid search gives you a strong candidate list, but the initial ranking is still approximate. The next unit covers re-ranking—progressively more accurate scoring that identifies which of those candidates actually answer the clinical question.
+Hybrid search gives you a strong candidate list, but the initial ranking is still approximate. The next unit covers reranking—progressively more accurate scoring that identifies which of those candidates actually answer the clinical question.
 
 ## Key takeaways
 
