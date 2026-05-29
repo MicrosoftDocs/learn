@@ -4,7 +4,7 @@ The monitoring hub is a centralized interface in Microsoft Fabric that aggregate
 
 To open the monitoring hub, select **Monitor** from the navigation pane on the left side of the Fabric portal. The main view displays a table of recent activities with columns for the activity name, status, item type, start time, and other metadata.
 
- :::image type="content" source="../media/18-monitor-dataflow.png" alt-text="Screenshot of the Microsoft Fabric monitoring hub showing recent activity with status, item type, and start time columns." :::
+ :::image type="content" source="../media/monitor-dataflow.png" alt-text="Screenshot of the Microsoft Fabric monitoring hub showing recent activity with status, item type, and start time columns." :::
 
 ## Understand activity status
 
@@ -32,7 +32,7 @@ To investigate a specific activity, hover over the activity name and select the 
 
 A single run tells you what happened now. Historical runs tell you what's been happening over time. To view the run history for a specific activity, hover over the activity name, select **More options** (**...**), and then select **Historical runs**. The monitoring hub displays up to 30 days of run history for that item.
 
-:::image type="content" source="../media/18-historical-runs.png" alt-text="Screenshot of the monitoring hub historical runs view showing multiple runs of a dataflow with start time, duration, and status." :::
+:::image type="content" source="../media/historical-runs.png" alt-text="Screenshot of the monitoring hub historical runs view showing multiple runs of a dataflow with start time, duration, and status." :::
 
 Historical runs help you answer questions like:
 
@@ -51,7 +51,7 @@ Select the **Filter** button to narrow the view by:
 - **Status** — Show only failed activities to focus on problems, or only succeeded activities to verify routine operations.
 - **Item type** — Show only Dataflow Gen2 activities, only notebooks, or only pipelines. This is useful when you're troubleshooting a specific part of your data pipeline.
 
-:::image type="content" source="../media/18-monitor-filter.png" alt-text="Screenshot of the monitoring hub with a filter applied showing only succeeded Dataflow Gen2 activities." :::
+:::image type="content" source="../media/monitor-filter.png" alt-text="Screenshot of the monitoring hub with a filter applied showing only succeeded Dataflow Gen2 activities." :::
 
 Select the **Column options** button to add or remove columns. The default view shows a limited set of columns, but you can add useful columns like:
 
