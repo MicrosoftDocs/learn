@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-advanced-rag-azure-ai-search.design-dynamic-knowledge-source-route
+title: Design dynamic knowledge source routing
+metadata:
+  title: Design Dynamic Knowledge Source Routing
+  description: "Design dynamic knowledge source routing."
+  ms.date: 05/28/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-design-dynamic-knowledge-source-route.md)]
