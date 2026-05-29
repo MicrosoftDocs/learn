@@ -1,3 +1,10 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8ef951fe-d609-43ae-89b9-a29c91b0a5a5]
+
+::: zone-end
+
+::: zone pivot="text"
 
 Your organization is adopting AI agents to automate tasks and boost productivity. But you discover a fundamental challenge: how do you scale agents beyond simple, predefined tasks?
 
@@ -20,3 +27,8 @@ In this module, you learn to:
 - Test and monitor agent retrieval to maintain quality in production
 
 Let's start by discovering how Retrieval Augmented Generation (RAG) transforms simple agents into powerful knowledge-enhanced assistants.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

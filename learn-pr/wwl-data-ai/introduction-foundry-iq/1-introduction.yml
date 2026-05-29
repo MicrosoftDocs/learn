@@ -1,9 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-foundry-iq.introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: Introduction to the challenge organizations face when scaling AI agents and how Foundry IQ provides a unified knowledge layer solution.
-  ms.date: 01/15/2026
+  ms.date: 5/29/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
