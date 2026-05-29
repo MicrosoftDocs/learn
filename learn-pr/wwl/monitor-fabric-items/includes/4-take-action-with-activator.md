@@ -2,7 +2,7 @@
 
 Activator is part of Real-Time Intelligence in Microsoft Fabric. It connects to data sources, evaluates rules you define, and executes actions like sending email alerts, posting Teams messages, running Power Automate workflows, or starting Fabric notebooks and pipelines.
 
-<!-- IMAGE PLACEHOLDER: Screenshot of the Activator item in Microsoft Fabric showing the rule definition canvas with events, objects, and rules. Alt text: "Screenshot of the Activator canvas in Microsoft Fabric." Source: Take a new screenshot from the Fabric portal. Priority: High — this unit has no images. -->
+:::image type="content" source="../media/activator.png" alt-text="Screenshot of the Activator canvas in Microsoft Fabric showing the rule definition interface with events, objects, and rules." :::
 
 ## How Activator works
 
