@@ -2,9 +2,10 @@
 uid: learn.wwl.discover-agents-with-a2a.connect-to-a2a-agent
 title: Connect to your A2A agent
 metadata:
+  zone_pivot_groups: video-or-text
   title: Connect to your A2A Agent
   description: "Learn how to connect a client to your A2A (Agent-to-Agent) server"
-  ms.date: 02/24/2026
+  ms.date: 5/29/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: unit
