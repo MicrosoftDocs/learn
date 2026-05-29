@@ -20,7 +20,7 @@ prerequisites: |
   Before starting this module, you should be familiar with Azure Databricks. Consider completing the following modules first:
   - [Explore Azure Databricks](/training/modules/explore-azure-databricks/)
   - [Use Apache Spark in Azure Databricks](/training/modules/use-apache-spark-azure-databricks/)
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
 - intermediate
 roles:

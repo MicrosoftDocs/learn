@@ -25,6 +25,7 @@ prerequisites: |
   - Familiarity with Azure Databricks workspaces and Unity Catalog concepts.
   - Basic Copilot Studio familiarity.
 iconUrl: /learn/achievements/azure-databricks.svg
+hidden: true
 levels:
 - beginner
 - intermediate

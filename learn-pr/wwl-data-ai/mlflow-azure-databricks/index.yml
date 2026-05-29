@@ -18,7 +18,7 @@ abstract: |
   - Use MLflow to manage and deploy trained models.
 prerequisites: |
   Before starting this module, you should be familiar with Azure Databricks and the machine learning model training process.
-iconUrl: /training/achievements/mlflow-azure-databricks.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
 - intermediate
 roles:
