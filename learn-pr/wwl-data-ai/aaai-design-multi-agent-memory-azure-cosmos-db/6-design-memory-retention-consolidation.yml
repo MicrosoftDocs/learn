@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multi-agent-memory-azure-cosmos-db.design-memory-retention-consolidation
+title: Design memory retention and consolidation
+metadata:
+  title: Design Memory Retention and Consolidation
+  description: "Design memory retention and consolidation."
+  ms.date: 05/28/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-design-memory-retention-consolidation.md)]

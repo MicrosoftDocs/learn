@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.design-multi-agent-memory-azure-cosmos-db
+metadata:
+  title: Design Multi-Agent Memory Architectures with Azure Cosmos DB
+  description: "Design multi-agent memory architectures for production AI systems using Azure Cosmos DB. Implement semantic memory with vector storage, configure context window optimization strategies, design memory expiration and pruning policies, and build context-aware agent behaviors based on recalled history."
+  ms.date: 05/28/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-foundry
+  ai-usage: ai-assisted
+title: Design multi-agent memory architectures with Azure Cosmos DB
+summary: "Design multi-agent memory architectures for production AI systems using Azure Cosmos DB. Implement semantic memory with vector storage for knowledge retention across sessions, configure context window optimization strategies that balance memory richness with cost and latency, and design memory expiration and pruning policies for production deployments."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Design short-term and long-term memory architectures that match agent use case requirements
+  - Implement semantic memory systems using Azure Cosmos DB vector search for knowledge retention across sessions
+  - Configure context window optimization strategies that balance memory richness with cost and latency
+  - Design memory expiration, pruning, and consolidation policies for production deployments with compliance requirements
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience building AI agents with Microsoft Foundry Agent Service
+  - Familiarity with Azure Cosmos DB for NoSQL and vector search concepts
+  - Understanding of context window management in large language models
+  - Proficiency in Python
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+products:
+- azure
+- microsoft-foundry
+- azure-cosmos-db
+subjects:
+- artificial-intelligence
+- machine-learning
+units:
+- learn.wwl.design-multi-agent-memory-azure-cosmos-db.introduction
+- learn.wwl.design-multi-agent-memory-azure-cosmos-db.examine-memory-architecture-patterns
+- learn.wwl.design-multi-agent-memory-azure-cosmos-db.implement-semantic-memory-vector-storage
+- learn.wwl.design-multi-agent-memory-azure-cosmos-db.optimize-memory-retrieval-context-injection
+- learn.wwl.design-multi-agent-memory-azure-cosmos-db.configure-context-window-optimization
+- learn.wwl.design-multi-agent-memory-azure-cosmos-db.design-memory-retention-consolidation
+- learn.wwl.design-multi-agent-memory-azure-cosmos-db.enforce-memory-privacy-audit-compliance
+- learn.wwl.design-multi-agent-memory-azure-cosmos-db.knowledge-check
+- learn.wwl.design-multi-agent-memory-azure-cosmos-db.summary
+badge:
+  uid: learn.wwl.design-multi-agent-memory-azure-cosmos-db.badge

@@ -2,9 +2,10 @@
 uid: learn.wwl.integrate-foundry-agent-with-m365.agents-toolkit-advanced
 title: Advanced - Use Microsoft 365 Agents Toolkit
 metadata:
+  zone_pivot_groups: video-or-text
   title: Advanced - Use Microsoft 365 Agents Toolkit for complex integration scenarios
   description: Learn about the Microsoft 365 Agents Toolkit as an alternative approach for complex Foundry agent integration scenarios.
-  ms.date: 02/17/2026
+  ms.date: 5/29/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

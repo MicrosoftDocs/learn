@@ -2,11 +2,12 @@
 uid: learn.wwl.build-agent-workflows-microsoft-foundry.identify-workflow-patterns
 title: Identify Workflow Patterns
 metadata:
+  zone_pivot_groups: video-or-text
   title: Identify workflow patterns
   description: Recognize common workflow patterns in Microsoft Foundry.
   author: buzahid
   ms.author: buzahid
-  ms.date: 1/8/2026
+  ms.date: 5/29/2026
   ms.topic: unit
 durationInMinutes: 3
 content: |

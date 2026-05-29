@@ -2,11 +2,12 @@
 uid: learn.wwl.build-agent-workflows-microsoft-foundry.maintain-workflows
 title: Maintain Workflows in Microsoft Foundry
 metadata:
+  zone_pivot_groups: video-or-text
   title: Maintain workflows in Microsoft Foundry
   description: Understand how to maintain and version workflows in Microsoft Foundry.
   author: buzahid
   ms.author: buzahid
-  ms.date: 1/8/2026
+  ms.date: 5/29/2026
   ms.topic: unit
 durationInMinutes: 5
 content: |
