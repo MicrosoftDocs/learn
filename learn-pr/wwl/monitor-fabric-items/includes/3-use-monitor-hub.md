@@ -65,12 +65,9 @@ The monitoring hub includes a **Schedule failures** page that lists every schedu
 
 To configure failure notifications, select **+ Configure notifications** on the Schedule failures page, choose an item, and enter the recipients. Recipients can be users or groups in your Microsoft Entra tenant. You need at least the **Contributor** role in the workspace to configure notifications.
 
-> [!NOTE]
-> The Schedule failures page is currently in preview. Semantic models aren't yet supported. Failure notifications apply only to scheduled runs — manually triggered runs don't generate notifications.
-
 ## Workspace monitoring
 
-The monitoring hub gives you a real-time view of recent activity, but for deeper analysis, Microsoft Fabric offers **workspace monitoring** (currently in preview). When you enable workspace monitoring, Fabric creates an Eventhouse database in your workspace that continuously collects diagnostic logs and metrics from your Fabric items.
+The monitoring hub gives you a real-time view of recent activity, but for deeper analysis, Microsoft Fabric offers **workspace monitoring**. When you enable workspace monitoring, Fabric creates an Eventhouse database in your workspace that continuously collects diagnostic logs and metrics from your Fabric items.
 
 Unlike the monitoring hub, which provides a visual dashboard for recent activity, workspace monitoring stores raw log data that you can query with KQL or SQL. This enables advanced analysis like identifying long-term performance trends across items, correlating failures across pipelines and notebooks, and building custom Real-Time dashboards for your team's specific monitoring needs.
 
