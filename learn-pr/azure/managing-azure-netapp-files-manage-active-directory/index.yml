@@ -30,7 +30,7 @@ subjects:
 units:
   - learn.azure.manage-active-directory.introduction
   - learn.azure.manage-active-directory.manage-active-directory-connections
-  - learn.azure.manage-active-directory.configure-ad-ds-ldap-over-tls
+  - learn.azure.manage-active-directory.configure-active-directory-domain-services-ldap-over-tls
   - learn.azure.manage-active-directory.join-linux-vm-microsoft-entra-domain
   - learn.azure.manage-active-directory.exercise-manage-active-directory
   - learn.azure.manage-active-directory.knowledge-check
