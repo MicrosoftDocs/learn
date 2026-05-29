@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=61fc9a23-17f7-488f-b4ac-d834cf68fbd3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this module, you learned how to publish Microsoft Foundry agents to Microsoft Teams and Microsoft 365 Copilot, making your AI assistants available where users already work.
 
 You explored the direct publishing workflow from the Foundry portal, which automatically provisions Azure Bot Service and creates the necessary Microsoft Entra ID registrations. You also learned about the Microsoft 365 Agents Toolkit as an alternative for complex enterprise scenarios.
@@ -18,3 +29,5 @@ Now that you can publish agents to Microsoft 365, consider exploring:
 - Adding tools to extend your agent's capabilities
 - Implementing grounding with enterprise data sources like Azure AI Search
 - Building multi-agent systems for complex workflows
+
+::: zone-end

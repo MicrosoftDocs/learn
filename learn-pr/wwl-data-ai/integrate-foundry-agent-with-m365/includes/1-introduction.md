@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=33aa54b2-4121-4cc3-b588-05b9006024d3]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Imagine you've built an AI agent in Microsoft Foundry that helps your team answer questions about company policies and procedures. The agent works great in the Foundry playground, but your users spend most of their day in Microsoft Teams. They want to interact with the agent directly in Teams chat, or even through Microsoft 365 Copilot, without switching to a separate application. How do you bridge this gap?
 
 Microsoft Foundry provides built-in capabilities to publish your agents directly to Microsoft Teams and Microsoft 365 Copilot. This integration allows users to interact with your custom AI agents in the same tools they already use for collaboration and productivity. Whether you need a support agent that answers IT questions, a knowledge assistant that helps onboard new employees, or a specialized advisor for your business domain, you can make these agents available where your users work.
@@ -18,3 +26,8 @@ By the end of this module, you'll be able to:
 - Familiarity with Azure and the Azure portal
 - Experience building agents in Microsoft Foundry (recommended: [Develop AI agents with Microsoft Foundry and Visual Studio Code](/training/modules/develop-ai-agents-azure-vs-code/) module)
 - A Microsoft 365 subscription with access to Teams
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

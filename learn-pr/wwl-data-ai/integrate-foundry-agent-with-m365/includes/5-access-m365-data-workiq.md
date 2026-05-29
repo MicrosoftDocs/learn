@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=757b6fae-8663-419e-a9e4-eb69ec034388]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When building agents that help users with workplace tasks, access to organizational data can dramatically improve the agent's usefulness. Microsoft Work IQ provides a way to connect AI agents to Microsoft 365 data, including emails, meetings, documents, Teams messages, and people information.
 
 ## What is Work IQ?
@@ -165,3 +176,5 @@ Both approaches access the same underlying data with the same permissions. Choos
 
 > [!NOTE]
 > Work IQ is currently in preview. Features and APIs may change as the product evolves.
+
+::: zone-end
