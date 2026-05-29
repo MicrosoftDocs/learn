@@ -9,12 +9,12 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: fabric
 title: Monitor activities in Microsoft Fabric
-summary: Monitoring helps you gain visibility into the health of your data systems. Monitoring Hub in Microsoft Fabric collects and aggregates data from Fabric activities. Microsoft Fabric Activator helps you take actions when patterns or conditions are detected in streaming data.
+summary: Monitoring helps you gain visibility into the health of your data systems. The monitoring hub in Microsoft Fabric collects and aggregates data from Fabric activities. Activator helps you automate responses when patterns or conditions are detected in your data.
 abstract: |
   In this module, you learn to:
-  - Apply monitoring concepts to Microsoft Fabric
-  - Use Monitoring Hub in Microsoft Fabric
-  - Trigger actions using Activator in Microsoft Fabric
+  - Identify the Fabric activities that should be monitored and establish a monitoring baseline
+  - Use the monitoring hub to view activity status, investigate failures, and review historical runs
+  - Describe how Activator automates actions in response to data events
 prerequisites: |
   Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
 iconUrl: /training/achievements/microsoft-fabric-module.svg

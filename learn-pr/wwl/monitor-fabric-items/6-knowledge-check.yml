@@ -4,47 +4,48 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/09/2025
+  ms.date: 05/29/2026
   author: wwlpublish
   ms.author: theresai
   ms.topic: unit
   ms.custom:
   - fabric
   module_assessment: true
+  ai-usage: ai-generated
 durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: What is the primary function of the Monitor hub in Microsoft Fabric?
+  - content: "What is the primary purpose of the monitoring hub in Microsoft Fabric?"
     choices:
-    - content: "It allows users to modify and update data pipelines."
+    - content: "To create and schedule data pipelines and dataflows."
       isCorrect: false
-      explanation: "Incorrect. The Monitor hub does not provide functionality for modifying data pipelines, it is used for monitoring activities."
-    - content: "It provides a platform for creating new data integration processes."
-      isCorrect: false
-      explanation: "Incorrect. The Monitor hub is not used for creating data integration processes, but for monitoring existing ones."
-    - content: "It collects and aggregates data from selected Fabric items and processes, providing a common interface for monitoring various activities."
+      explanation: "Incorrect. The monitoring hub is used for viewing activity status and investigating failures, not for creating or scheduling activities."
+    - content: "To provide a centralized view of recent activity status across a workspace, including the ability to view details and historical runs."
       isCorrect: true
-      explanation: "Correct. The Monitor hub in Microsoft Fabric is designed to aggregate data and provide a unified interface for monitoring various data integration, transformation, movement, and analysis activities."
-  - content: "What is the primary function of Activator in Microsoft Fabric?"
+      explanation: "Correct. The monitoring hub aggregates activity data from across a workspace and lets you view status, details, and historical runs in one place."
+    - content: "To automatically send alerts when a data pipeline fails."
+      isCorrect: false
+      explanation: "Incorrect. Automatic alerting is a function of Activator. The monitoring hub displays activity status but requires you to check it manually (unless you configure schedule failure notifications)."
+  - content: "A dataflow that usually finishes in 4 minutes suddenly takes 20 minutes but still shows a Succeeded status. What should you do?"
     choices:
-    - content: "Activator is a tool for designing user interfaces in Microsoft Fabric."
+    - content: "Ignore it because the status is Succeeded."
       isCorrect: false
-      explanation: "Incorrect. Activator is not involved in user interface design."
-    - content: "Activator is used to create and manage databases in Microsoft Fabric."
-      isCorrect: false
-      explanation: "Incorrect. While Activator does interact with data, it does not create or manage databases."
-    - content: "Activator enables automated processing of events that trigger actions."
+      explanation: "Incorrect. A significant increase in duration can indicate a data volume spike, resource contention, or other emerging issue — even when the activity succeeds."
+    - content: "Investigate the cause by viewing activity details and comparing against historical runs to identify what changed."
       isCorrect: true
-      explanation: "Correct. Activator is used to automate actions based on specific event triggers."
-  - content: "What is a key aspect of monitoring best practices?"
+      explanation: "Correct. Comparing current duration against historical run data helps you identify when a change was introduced and diagnose the root cause before it becomes a failure."
+    - content: "Delete and recreate the dataflow."
+      isCorrect: false
+      explanation: "Incorrect. Recreating the dataflow doesn't address the underlying cause and could introduce additional problems."
+  - content: "How does Activator differ from the monitoring hub in a monitoring strategy?"
     choices:
-    - content: "Identifying what to monitor, collecting and analyzing data regularly, reviewing logs and metrics regularly, taking action when deviations occur, and optimizing performance using monitoring data."
+    - content: "Activator replaces the monitoring hub by providing the same features with additional automation."
+      isCorrect: false
+      explanation: "Incorrect. Activator complements the monitoring hub — it automates responses to conditions in data, but doesn't replace the hub's centralized activity tracking."
+    - content: "Activator proactively detects conditions in data and triggers automated actions, while the monitoring hub provides a manual dashboard for reviewing activity status."
       isCorrect: true
-      explanation: "Correct. These are all key aspects of monitoring best practices."
-    - content: "Reviewing logs and metrics only when deviations from normal behavior are shown. "
+      explanation: "Correct. The monitoring hub requires you to check it, while Activator continuously monitors data sources and automatically executes actions when defined conditions are met."
+    - content: "Activator is used only for real-time streaming data and can't respond to Fabric workspace events."
       isCorrect: false
-      explanation: "Incorrect. Logs and metrics should be reviewed regularly, not just when deviations occur."
-    - content: "Collecting and analyzing data only when anomalies occur."
-      isCorrect: false
-      explanation: "Incorrect. Data should be collected and analyzed regularly, not just when anomalies occur."
+      explanation: "Incorrect. Activator can monitor Fabric events — such as pipeline failures and semantic model refresh completions — in addition to streaming data sources."

@@ -4,12 +4,13 @@ title: Understand monitoring
 metadata:
   title: Understand monitoring
   description: "Understand monitoring"
-  ms.date: 05/09/2025
+  ms.date: 05/29/2026
   author: wwlpublish
   ms.author: theresai
   ms.topic: unit
   ms.custom:
   - fabric
-durationInMinutes: 3
+  ai-usage: ai-generated
+durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-monitoring.md)]

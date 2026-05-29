@@ -10,6 +10,6 @@ metadata:
   ms.topic: unit
   ms.custom:
   - fabric
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[](includes/3-use-monitor-hub.md)]
