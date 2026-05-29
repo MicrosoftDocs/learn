@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5e8b1a59-2f11-47a7-9ab3-98b26f0c5a56]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Once your A2A agent server is running, the next step is understanding how a client can interact with it. A client acts as the bridge between your application and the agent server. 
 
 The client responsibilities include:
@@ -37,3 +48,5 @@ Clients should be prepared to handle both response types and interpret the retur
 - Simple agents may return messages directly, while more advanced agents may manage multiple tasks simultaneously.
 
 Connecting a client to your agent server involves fetching the Agent Card, establishing a connection, sending requests, and handling responses. By grasping these core concepts, you can confidently interact with your remote agent, whether you're sending simple messages or managing complex tasks.
+
+::: zone-end
