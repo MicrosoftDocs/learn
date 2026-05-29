@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multi-agent-memory-azure-cosmos-db.enforce-memory-privacy-audit-compliance
+title: Enforce memory privacy and audit compliance
+metadata:
+  title: Enforce Memory Privacy and Audit Compliance
+  description: "Enforce memory privacy and audit compliance."
+  ms.date: 05/28/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-enforce-memory-privacy-audit-compliance.md)]
