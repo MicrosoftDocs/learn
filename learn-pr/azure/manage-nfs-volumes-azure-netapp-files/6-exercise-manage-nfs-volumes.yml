@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-nfs-volumes.exercise
+title: Exercise - Manage NFS volumes in Azure NetApp Files
+metadata:
+  title: Exercise - Manage NFS volumes in Azure NetApp Files
+  description: Exercise to create NFS volumes, configure NFSv4.1 ID domain, and convert NFS volumes between supported versions.
+  ms.date: 05/12/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise-manage-nfs-volumes.md)]

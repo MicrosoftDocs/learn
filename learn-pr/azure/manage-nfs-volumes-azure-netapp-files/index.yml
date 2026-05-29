@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azure.manage-nfs-volumes
+metadata:
+  title: Manage NFS volumes in Azure NetApp Files
+  description: Learn how to create and manage NFS volumes. Learn to configure NFSv4.1 ID domain and Kerberos, enable Active Directory Domain Services and LDAP authentication for NFS volumes. Also, understand how to convert NFS volumes between supported versions.
+  ms.date: 05/12/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Manage NFS volumes in Azure NetApp Files
+summary: Create and manage NFS volumes in Azure NetApp Files.
+abstract: |
+  By completing this module, you'll be able to:
+  - Create Azure NetApp Files NFS volumes
+  - Configure NFSv4.1 ID domain and Kerberos
+  - Enable Active Directory Domain Services and LDAP authentication
+  - Convert NFS volumes between NFSv3 and NFSv4.1
+prerequisites: |
+  - Manage capacity pool for Azure NetApp Files
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+  - storage
+units:
+  - learn.azure.manage-nfs-volumes.introduction
+  - learn.azure.manage-nfs-volumes.create-nfs-volume
+  - learn.azure.manage-nfs-volumes.configure-nfsv41-id-domain-kerberos
+  - learn.azure.manage-nfs-volumes.enable-ad-ds-ldap-authentication
+  - learn.azure.manage-nfs-volumes.convert-nfs-volume-between-versions
+  - learn.azure.manage-nfs-volumes.exercise
+  - learn.azure.manage-nfs-volumes.knowledge-check
+  - learn.azure.manage-nfs-volumes.summary
+badge:
+  uid: learn.azure.manage-nfs-volumes.badge
