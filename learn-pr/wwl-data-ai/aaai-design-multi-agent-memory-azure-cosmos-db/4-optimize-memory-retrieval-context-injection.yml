@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multi-agent-memory-azure-cosmos-db.optimize-memory-retrieval-context-injection
+title: Optimize memory retrieval and context injection
+metadata:
+  title: Optimize Memory Retrieval and Context Injection
+  description: "Optimize memory retrieval and context injection."
+  ms.date: 05/28/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-optimize-memory-retrieval-context-injection.md)]

@@ -1,0 +1,48 @@
+### YamlMime:LearningPath
+uid: learn.wwl.purview-secure-govern-copilot-interactions
+metadata:
+  title: 'Secure and govern Microsoft 365 Copilot interactions with Microsoft Purview'
+  description: 'Microsoft 365 Copilot changes how users access, combine, and generate content across organizational data. Learn how Microsoft Purview helps you gain visibility into AI activity, protect sensitive information, detect risky behavior, and govern Microsoft 365 Copilot interactions.'
+  ms.date: 05/29/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: learning-path
+title: 'Secure and govern Microsoft 365 Copilot interactions with Microsoft Purview'
+prerequisites: |
+  - A foundational understanding of Microsoft 365 services, including SharePoint, Exchange Online, Teams, and Microsoft 365 Copilot.
+  - A foundational understanding of Microsoft Purview and its role in information protection, compliance, and risk management.
+  - Familiarity with security and compliance concepts such as data classification, data loss prevention (DLP), auditing, and insider risk management.
+summary: |
+  Microsoft 365 Copilot introduces a new interaction model where users can access and generate content across organizational data, increasing the risk of unintended data exposure. Organizations need visibility into AI activity, controls to protect sensitive information, and tools to detect and respond to risky behavior. Microsoft Purview provides integrated capabilities that help secure and govern Microsoft 365 Copilot interactions through auditing, information protection, policy enforcement, investigation, and behavioral governance.
+  - Understand how AI-driven interactions change data access, aggregation, and exposure risk.
+  - Use Microsoft Purview Audit to gain visibility into Copilot prompts, responses, and data access patterns.
+  - Apply sensitivity labels to classify and protect data used in Microsoft 365 Copilot interactions.
+  - Implement data loss prevention (DLP) policies to define and enforce boundaries for AI interactions.
+  - Detect and assess risky AI usage patterns with Insider Risk Management.
+  - Govern user behavior and enforce acceptable AI use with Communication Compliance.
+  - Bring these capabilities together to secure and govern Microsoft 365 Copilot interactions.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- ip-admin
+products:
+- microsoft-purview
+- m365
+- microsoft-365-copilot
+subjects:
+- security
+- compliance
+modules:
+- learn.wwl.purview-ai-understand-risks
+- learn.wwl.purview-audit-search-investigate
+- learn-m365.m365-compliance-information-protect-information
+- learn.wwl.purview-data-loss-prevention-create-manage-policies
+- learn.wwl.purview-create-manage-insider-risk-policy
+- learn-m365.m365-compliance-insider-prepare-communication-compliance
+- learn.wwl.purview-ai-secure-copilot
+
+trophy:
+  uid: learn.wwl.purview-secure-govern-copilot-interactions.trophy

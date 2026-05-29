@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=911442f9-bfca-4221-a20f-b4c66d650b8f]
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI agents offer a powerful combination of technologies, able to complete tasks with the use of generative AI. However, in some situations, the task required might be larger than is realistic for a single agent. For those scenarios, consider a **multi-agent** solution. A multi-agent solution allows agents to collaborate within the same conversation.
 
 Imagine you're trying to address common DevOps challenges such as monitoring application performance, identifying issues, and deploying fixes. A multi-agent system could consist of four specialized agents working collaboratively:
@@ -20,3 +28,8 @@ After completing this module, you'll be able to:
 - Use tools and plugins with your AI agents
 - Understand different types of orchestration patterns
 - Develop multi-agent solutions
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

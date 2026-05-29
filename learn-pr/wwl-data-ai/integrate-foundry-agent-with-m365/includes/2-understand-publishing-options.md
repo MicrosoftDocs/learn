@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=64c593fe-524c-415a-89c4-b37ad4bfb3a8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When you build an agent in Microsoft Foundry, it runs within the Foundry Agent Service infrastructure. Publishing promotes your agent from a development asset into a managed Azure resource with a dedicated endpoint, independent identity, and governance capabilities.
 
 ## Understanding agent applications
@@ -72,3 +83,5 @@ Before publishing an agent to Microsoft 365, ensure you have:
 - An Azure subscription where you can create Azure Bot Service resources
 - Permissions to register applications in Microsoft Entra ID
 - A Microsoft 365 tenant that allows custom apps and bots
+
+::: zone-end

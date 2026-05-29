@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=58d09ad5-a2ca-415d-9e27-51733aa04d7d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 You've learned how Foundry IQ transforms AI agents from simple chatbots into knowledge-enhanced enterprise tools capable of accessing your organization's information.
 
@@ -26,3 +36,5 @@ Effective agent instructions specify when to retrieve (always use the knowledge 
 ## Next steps
 
 Start with a high-value knowledge domain where accurate, cited information provides immediate business impact. Build your first knowledge base, configure data quality settings, create an agent with clear retrieval instructions, and test systematically before deploying to users.
+
+::: zone-end

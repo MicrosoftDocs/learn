@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6426cc77-4f94-475e-b305-dc51c2af68ea]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 An AI agent is a program that uses generative AI to interpret data, make decisions, and perform tasks on behalf of users or other applications. AI agents rely on large language models to perform their tasks. Unlike traditional programs, AI agents can function autonomously, handling complex workflows and automating processes without requiring continuous human oversight.
 
 AI Agents can be developed using many different tools and platforms, including the Microsoft Agent Framework. The Microsoft Agent Framework is an open-source SDK that enables developers to easily integrate the latest AI models into their applications. This framework provides a comprehensive foundation for creating functional agents that can use natural language processing to complete tasks and collaborate with other agents.
@@ -51,4 +62,6 @@ When you use Microsoft Foundry Agents, you get the full power of enterprise Azur
 - **Authentication methods** - supports multiple authentication methods including Azure CLI credentials, API keys, MSAL for Microsoft business authentication, and role-based access control.
 
 This framework supports autonomous, multi-agent AI behaviors while maintaining a flexible architecture that lets you mix and match agents, tools, and workflows as needed. The design lets you switch between OpenAI, Azure OpenAI, Anthropic, and other providers without changing your code, making it easy to build AI systems—from simple chatbots to complex business solutions.
+
+::: zone-end
 

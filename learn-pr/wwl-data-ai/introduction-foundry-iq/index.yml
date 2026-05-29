@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-foundry-iq
 metadata:
   title: Build knowledge-enhanced AI agents with Foundry IQ
   description: Learn how Foundry IQ transforms how AI agents access and reason over organizational data through its unified knowledge layer and Retrieval Augmented Generation (RAG) capabilities. Build a practical agent that leverages enterprise knowledge through Foundry IQ's agentic retrieval engine.
-  ms.date: 01/15/2026
+  ms.date: 5/29/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: module

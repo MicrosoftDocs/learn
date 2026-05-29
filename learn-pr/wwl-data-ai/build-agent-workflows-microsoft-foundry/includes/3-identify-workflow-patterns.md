@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=99f8740c-b724-4946-a0f1-9f0a4107ae1d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When building agent-driven solutions, the structure of your workflow matters as much as the agents themselves. Different problems require different orchestration approaches, depending on how decisions are made, how data flows, and whether human input is required. Microsoft Foundry provides several predefined workflow patterns that help you model these interactions clearly and consistently.
 
 A **sequential** workflow follows a fixed, step-by-step path. Each node executes in order, passing its output to the next step in the workflow. This pattern works well for pipelines and multi-stage processes, such as validating input, enriching data, and generating a final response. Sequential workflows are predictable and easy to reason about, making them a good starting point when you're learning how workflows operate.
@@ -7,3 +18,5 @@ A **human-in-the-loop** workflow introduces pauses where user input or approval 
 A **group chat** workflow enables more dynamic orchestration across multiple agents. Instead of following a fixed path, control can shift between agents based on context, rules, or intermediate results. This pattern is useful for scenarios where multiple specialized agents collaborate to handle complex requests, such as customer support or multi-domain question answering. Group chat workflows allow for flexible interactions, where agents can build on each other's outputs and adapt to changing inputs.
 
 Each pattern provides a foundation for structuring agent interactions, managing control flow, and incorporating human input as needed. By recognizing these workflow patterns and understanding their strengths, you can choose an orchestration approach that aligns with your scenario before you begin designing a workflow. 
+
+::: zone-end
