@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-nfs-volumes.enable-ad-ds-ldap-authentication
+title: Enable Active Directory Domain Services and LDAP authentication for NFS volumes
+metadata:
+  title: Enable Active Directory Domain Services and LDAP authentication for NFS volumes
+  description: Learn how to enable AD DS and LDAP authentication for NFS volumes.
+  ms.date: 05/12/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-enable-ad-ds-ldap-authentication.md)]
