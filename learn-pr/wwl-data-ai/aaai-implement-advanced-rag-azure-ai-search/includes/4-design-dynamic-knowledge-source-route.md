@@ -79,11 +79,11 @@ def route_query(query: str) -> dict:
 
 After classification determines which knowledge sources are relevant, you execute searches only against those selected indexes. This conditional execution reduces both cost (fewer search operations) and noise (fewer irrelevant results mixing with relevant ones). The query processing pipeline becomes a directed search rather than broadcasting to all sources.
 
-For each knowledge source classified as relevant, you execute your full hybrid search and re-ranking pipeline. These searches run in parallel to minimize latency—a query needing both formulary and guidelines takes roughly the same time as a query needing only one source because the searches execute concurrently. You aggregate results from all searched sources, preserving their individual relevance scores for downstream re-ranking.
+For each knowledge source classified as relevant, you execute your full hybrid search and reranking pipeline. These searches run in parallel to minimize latency—a query needing both formulary and guidelines takes roughly the same time as a query needing only one source because the searches execute concurrently. You aggregate results from all searched sources, preserving their individual relevance scores for downstream reranking.
 
 When only one source is needed, the routing decision maps directly to a single search execution. When multiple sources are needed, you must merge their results into a unified ranking. Results from different indexes have scores on different scales—a formulary document score of 0.85 might not be comparable to a guidelines document score of 0.78. You normalize scores within each source before merging, using min-max normalization or z-score standardization to make scores comparable across knowledge bases.
 
-The merged result list requires final re-ranking because documents from different sources now compete for inclusion in the context provided to your agent. You apply the same LLM-as-reranker approach described in the previous unit, but now the comparison spans multiple knowledge sources rather than just ranking within one source.
+The merged result list requires final reranking because documents from different sources now compete for inclusion in the context provided to your agent. You apply the same LLM-as-reranker approach described in the previous unit, but now the comparison spans multiple knowledge sources rather than just ranking within one source.
 
 ```python
 from azure.search.documents import SearchClient
@@ -199,6 +199,6 @@ Routing controls where searches run. What you can retrieve still depends on what
 
 - **Query classification** identifies clinical intent before retrieval, routing queries to only relevant knowledge sources—reducing cost by up to 53% when most queries need only one of three indexes
 - **Confidence-based fallback** uses probability thresholds to make conservative routing decisions—high confidence (>0.7) routes precisely, low confidence (<0.4 across all sources) triggers a full search as a safety net
-- **Parallel conditional execution** searches multiple selected sources concurrently with score normalization and cross-source re-ranking to produce a unified result ranking
+- **Parallel conditional execution** searches multiple selected sources concurrently with score normalization and cross-source reranking to produce a unified result ranking
 - **Dynamic source availability** separates classification intent from execution capability—the classifier indicates relevance while health checks determine which sources can actually be queried
 - **Routing telemetry** captures confidence scores, sources searched, and result counts per query, enabling continuous classifier improvement and cost-savings measurement
