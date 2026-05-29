@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=61274346-abfa-4fcb-800a-b432418bdccc]
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI agents are transforming how applications interact with users and automate tasks. Unlike traditional programs, AI agents use generative AI to interpret data, make decisions, and complete tasks with minimal human intervention. These agents use large language models to streamline complex workflows, making them ideal for automating business processes. 
 
 Developers can build AI agents using different tools, including the Microsoft Agent Framework. This open-source SDK simplifies the integration of AI models into applications. The Microsoft Agent Framework supports different types of agents from multiple providers, including Microsoft Foundry, Azure OpenAI, OpenAI, Microsoft Copilot Studio, and Anthropic agents. This module focuses on Microsoft Foundry Agents, which provide enterprise-grade capabilities using the Microsoft Foundry Agent Service.
@@ -15,4 +23,9 @@ After completing this module, you're able to:
 - Use the Microsoft Agent Framework to connect to a Microsoft Foundry project.
 - Create Microsoft Foundry agents using the Microsoft Agent Framework.
 - Integrate tool functions with your AI agent.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
 
