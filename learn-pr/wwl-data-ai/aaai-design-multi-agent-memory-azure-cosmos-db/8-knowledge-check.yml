@@ -13,7 +13,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "A clinical agent must recall that a specific patient reported shortness of breath during a visit three months ago, and also leverage the broader knowledge that patients on this medication class commonly report respiratory symptoms. Which memory types are needed?"
+  - content: "A clinical agent must recall that a specific patient reported shortness of breath during a visit three months ago, and also use the broader knowledge that patients on this medication class commonly report respiratory symptoms. Which memory types are needed?"
     choices:
     - content: "Working memory for the specific visit record and semantic memory for the medication pattern—episodic memory isn't needed for this use case."
       isCorrect: false
@@ -24,15 +24,15 @@ quiz:
     - content: "Semantic memory only—generalized clinical knowledge covers both the specific visit record and the medication pattern."
       isCorrect: false
       explanation: "Semantic memory generalizes across cases and can't pinpoint a specific patient's visit. You need episodic memory to recall 'this specific patient reported shortness of breath on this specific date.'"
-  - content: "Your context window is full at 16K tokens. You have 20 stored memories but can inject only 5. The current consultation is a routine medication refill with straightforward context needs. Which memory selection strategy is most efficient?"
+  - content: "Your context window is full at 16K tokens. You have 20 stored memories but can inject only five. The current consultation is a routine medication refill with straightforward context needs. Which memory selection strategy is most efficient?"
     choices:
-    - content: "Importance-based selection: inject the 5 memories with the highest combined recency and importance scores."
+    - content: "Importance-based selection: inject the five memories with the highest combined recency and importance scores."
       isCorrect: false
       explanation: "Importance-based selection is well-suited for complex queries where historical context strongly influences the answer. For a routine refill, a simpler strategy with lower computational overhead is more appropriate."
-    - content: "Sliding window: inject the 5 most recent memories to ensure the most current context is available."
+    - content: "Sliding window: inject the five most recent memories to ensure the most current context is available."
       isCorrect: true
       explanation: "For routine, low-complexity queries, recency is the primary relevance signal. The sliding window approach is computationally inexpensive and reliably surfaces the most current patient context without requiring importance score computation."
-    - content: "Hybrid selection: inject the most recent 3 plus the 2 highest-importance non-recent memories."
+    - content: "Hybrid selection: inject the most recent three memories plus the two highest-importance nonrecent memories."
       isCorrect: false
       explanation: "Hybrid selection is valuable for complex queries that benefit from both recent and historically significant context. For a routine refill, this adds overhead without meaningful quality improvement over a simple sliding window."
   - content: "A Cosmos DB query in your memory retrieval service accidentally returns memories from a different patient when the requesting agent's session context contains an incorrect tenant ID. What architectural control best prevents this?"
@@ -43,6 +43,6 @@ quiz:
     - content: "Use the patient ID as the Cosmos DB partition key and enforce a tenant boundary validator middleware that verifies the session's authorized patient scope before executing any memory query."
       isCorrect: true
       explanation: "Partition key as patient ID ensures efficient data isolation and prevents cross-partition queries in normal operation. The middleware provides the application-level guard: it validates every query's patient ID against the session's authorized scope before allowing execution."
-    - content: "Add a WHERE patient_id = :id filter to all Cosmos DB queries to ensure patient-scoped retrieval."
+    - content: "Add a 'WHERE patient_id = :id' filter to all Cosmos DB queries to ensure patient-scoped retrieval."
       isCorrect: false
       explanation: "Parameterized filters are necessary but not sufficient. If the session context contains an incorrect or manipulated patient ID, the filter still executes with that wrong ID. The middleware validator must verify the patient ID in the session context before the filter is applied."

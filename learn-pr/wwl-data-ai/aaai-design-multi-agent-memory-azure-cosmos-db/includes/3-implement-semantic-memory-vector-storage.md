@@ -10,7 +10,7 @@ After the agent generates a response, you analyze it to determine if it contains
 The extraction prompt explicitly defines what constitutes a memorable observation. Rather than asking "What should be remembered?" you ask "What new information about the patient was revealed or discussed in this interaction?" This specificity produces focused memories that provide value in future sessions.
 
 > [!NOTE]
-> The `azure-ai-inference` package used in the code examples below is currently in public preview. Pin your package version in production deployments and check the [release notes](https://learn.microsoft.com/python/api/overview/azure/ai-inference-readme?view=azure-python-preview) before upgrading.
+> The `azure-ai-inference` package used in the code examples below is currently in public preview. Pin your package version in production deployments and check the release notes before upgrading.
 
 ```python
 from azure.ai.inference import ChatCompletionsClient, EmbeddingsClient
