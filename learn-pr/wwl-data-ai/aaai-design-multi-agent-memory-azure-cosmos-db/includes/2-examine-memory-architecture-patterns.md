@@ -1,4 +1,4 @@
-Clinical agents need different types of memory for different purposes. The current conversation thread requires immediate access to recent messages — this working memory must be fast but doesn't need long-term persistence. Records of specific past visits enable the agent to answer "What did we discuss during your last appointment?" — this episodic memory requires structured storage with exact retrieval. Knowledge extracted from many interactions helps the agent recognize patterns like "This patient prefers morning appointments" or "Previous medication adjustments caused side effects" — this semantic memory requires similarity-based retrieval. Each memory type serves distinct needs and requires different storage architecture.
+Azure Cosmos DB supports all three memory tiers that clinical agents use — working, episodic, and semantic — each with different storage, query, and retention characteristics. Selecting the right tier for each type of clinical information determines retrieval performance, storage cost, and compliance posture.
 
 | Memory Type | Retention Period | Query Pattern | Storage Approach | Clinical Example |
 |-------------|------------------|---------------|------------------|------------------|
@@ -10,7 +10,7 @@ Clinical agents need different types of memory for different purposes. The curre
 
 Working memory holds the current conversation context — the system prompt, recent messages, retrieved documents, and tool results. This content must be immediately available with sub-millisecond access times because the agent references it for every response. The context window size limits working memory capacity: GPT-4o supports 128K tokens, but filling the entire window becomes expensive and slows response generation.
 
-When using the Foundry Responses API in **stateless mode** (`client.agents.responses.create()`), your application owns working memory entirely. Every call must include the full conversation history you want the agent to see — the runtime does not accumulate history between calls. This is the most common pattern for clinical agents where the application controls exactly what context the agent receives. You build working memory from three sources: recent conversation turns (kept in application memory or Redis), retrieved episodic memories injected as context, and retrieved semantic memories summarized at session start.
+When using the Foundry Responses API in **stateless mode** (`client.agents.responses.create()`), your application owns working memory entirely. Every call must include the full conversation history you want the agent to see — the runtime doesn't accumulate history between calls. Stateless mode is the most common pattern for clinical agents, because the application retains explicit control over every piece of context the agent sees. You build working memory from three sources: recent conversation turns (kept in application memory or Redis), retrieved episodic memories injected as context, and retrieved semantic memories summarized at session start.
 
 When using **server-managed Conversations** (`client.agents.conversations.*`), the runtime automatically accumulates conversation items during the session. Working memory management shifts from "what do I inject each call?" to "when do I start a new conversation to avoid context overflow?" You still implement the episodic and semantic memory tiers externally, but session-scope history is handled for you.
 
@@ -24,7 +24,7 @@ Episodic memory stores records of specific past interactions: what was discussed
 
 You store episodic memory in structured document databases like Azure Cosmos DB using the NoSQL API. Each consultation becomes a document with fields for patient ID, timestamp, conversation summary, key decisions, medications discussed, and follow-up plans. Queries use exact matching: retrieve all consultations for this patient, retrieve the consultation from a specific date, or retrieve consultations mentioning a specific medication.
 
-Episodic memory provides audit trails and enables agents to reference specific past events. Healthcare regulations require maintaining records of clinical interactions, making episodic memory not just useful but mandatory. The structured format supports compliance reporting: "Show all consultations where warfarin was prescribed" or "Show follow-up rate for diabetes management consultations."
+Episodic memory provides audit trails and enables agents to reference specific past events. Healthcare regulations require maintaining records of clinical interactions, making episodic memory a compliance requirement as well as a functional one. The structured format supports compliance reporting: "Show all consultations where warfarin was prescribed" or "Show follow-up rate for diabetes management consultations."
 
 The architectural consideration is retention duration. Episodic memories consume storage indefinitely unless you implement retention policies. For active patients, retain all consultation records. For inactive patients (no visits in 12+ months), you might summarize episodic memories into semantic memories and archive the detailed records to cheaper storage tiers.
 
@@ -63,7 +63,7 @@ Right-to-deletion compliance requires the ability to expunge all patient data on
 
 Now that you understand the taxonomy of memory types and architectural patterns for different agent requirements, you're ready to implement semantic memory using Azure Cosmos DB's vector search capabilities to enable concept-based memory retrieval.
 
-## Unit summary
+## Key takeaways
 
 - **Working memory** holds active conversation context and disappears when the session ends — it's sufficient for single-turn interactions but insufficient for continuity.
 - **Episodic memory** stores specific interaction records that persist across sessions, enabling agents to recall what happened in prior encounters.

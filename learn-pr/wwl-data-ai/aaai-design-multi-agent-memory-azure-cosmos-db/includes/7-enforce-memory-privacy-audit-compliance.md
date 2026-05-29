@@ -1,3 +1,5 @@
+Azure Cosmos DB's partition key design enforces patient data isolation at the storage level, preventing cross-patient memory access even when application code passes incorrect identifiers. This unit covers how to configure patient-scoped memory operations, implement session-bound access controls, and maintain the audit trail that HIPAA compliance requires.
+
 ## Enforce patient data isolation and access controls
 
 Every memory query must be scoped to a single authorized patient. Azure Cosmos DB's partition key strategy enforces this isolation at the database level. By using patient_id as the partition key, queries physically cannot span patients without explicitly changing the partition key parameter.
@@ -125,7 +127,7 @@ def retrieve_memories_with_audit(patient_id: str, user_id: str, context: str) ->
 
 Now that you've designed comprehensive memory privacy controls and audit compliance, you're ready to integrate all these techniques in a hands-on exercise where you build a complete patient memory system for Northwind Health's clinical agents.
 
-## Unit summary
+## Key takeaways
 
 - **Patient data isolation** uses Cosmos DB's partition key strategy (`patient_id`) to physically prevent cross-patient queries, combined with application-level session-bound access validation.
 - **Right-to-deletion** support enables complete removal of a patient's memories with audit logging, satisfying HIPAA compliance requirements.

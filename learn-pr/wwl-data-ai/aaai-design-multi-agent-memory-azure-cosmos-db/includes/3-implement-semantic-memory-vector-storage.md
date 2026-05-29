@@ -1,4 +1,4 @@
-Not every agent interaction deserves to be remembered. A routine greeting, acknowledgment of understanding, or request to clarify a previous statement doesn't contain information worth storing long-term. Semantic memory works best when it captures observations that contain new, useful information about the patient's condition, preferences, concerns, or care context. You design a memory encoding policy that decides what to remember from each agent interaction.
+Azure Cosmos DB's vector storage capabilities make it the right foundation for encoding clinical observations as semantic memories that agents retrieve by meaning rather than exact match. Not every agent interaction is worth storing — effective encoding policy filters routine exchanges and captures observations that contain new, useful information about the patient's condition, preferences, and care context.
 
 > [!TIP]
 > Store observations that reveal patient preferences ("prefers morning appointments"), clinical patterns ("experiences fatigue from this medication"), persistent concerns ("worried about side effects"), or care context ("caregiver is daughter"). Skip generic acknowledgments and routine process statements.
@@ -8,6 +8,9 @@ Not every agent interaction deserves to be remembered. A routine greeting, ackno
 After the agent generates a response, you analyze it to determine if it contains information worth encoding as a memory. A response recommending a medication contains memorable content: the medication name, the indication, the dosing discussed. A response confirming receipt of a document doesn't contain memorable content. You use a lightweight classifier or LLM prompt to make this determination.
 
 The extraction prompt explicitly defines what constitutes a memorable observation. Rather than asking "What should be remembered?" you ask "What new information about the patient was revealed or discussed in this interaction?" This specificity produces focused memories that provide value in future sessions.
+
+> [!NOTE]
+> The `azure-ai-inference` package used in the code examples below is currently in public preview. Pin your package version in production deployments and check the [release notes](https://learn.microsoft.com/python/api/overview/azure/ai-inference-readme?view=azure-python-preview) before upgrading.
 
 ```python
 from azure.ai.inference import ChatCompletionsClient, EmbeddingsClient
@@ -76,6 +79,9 @@ def extract_memories(conversation_history: str, agent_response: str) -> list[dic
 ## Store memories in Azure Cosmos DB with vector embeddings
 
 Each extracted observation becomes a memory document in Azure Cosmos DB. You store the memory text, metadata (patient ID, timestamp, importance score, memory type), and a vector embedding of the content. The embedding enables semantic similarity retrieval in future sessions.
+
+> [!IMPORTANT]
+> Before creating a container with vector search, you must first enable the Vector Search feature on your Azure Cosmos DB for NoSQL account. In the Azure portal, go to your Cosmos DB account → **Settings** → **Features** → **Vector Search for NoSQL API** → **Enable**. Alternatively, use the Azure CLI: `az cosmosdb update --resource-group <rg> --name <account> --capabilities EnableNoSQLVectorSearch`. Allow up to 15 minutes for the registration to take effect. Vector embedding policies and vector indexes can only be configured at container *creation* time — they cannot be added to existing containers.
 
 Azure Cosmos DB for NoSQL supports vector search through the vector indexing and query capabilities. You create a container configured with vector indexing on the embedding field, then insert memory documents with both text content and embeddings. The patient ID serves as the partition key, ensuring queries remain isolated to authorized patients.
 
@@ -189,19 +195,9 @@ for mem in relevant_memories:
     print(f"[{mem['memory_type']}] {mem['content']} (importance: {mem['importance']}, similarity: {mem['similarity_score']:.3f})")
 ```
 
-## Unit summary
+## Key takeaways
 
 - **Memory extraction** identifies memorable observations from agent responses — track patient preferences, clinical concerns, and behavioral patterns rather than storing every interaction verbatim.
 - **Vector storage in Cosmos DB** uses the `vector_embedding` container policy with HNSW indexing and cosine similarity to enable semantic retrieval of memories.
 - **Semantic retrieval** at session start finds relevant memories based on meaning, not keywords — a query about "blood sugar concerns" retrieves a memory about "glucose monitoring anxiety" even without shared terms.
 - **Patient-scoped partitioning** uses `patient_id` as the partition key, ensuring all memory queries are physically isolated to a single patient's data.
-
-## Check your understanding
-
-**1. A clinician asks about a patient's "blood sugar concerns." The memory store contains a record about "glucose monitoring anxiety" from a prior visit. How does semantic memory retrieval find this relevant memory?**
-
-- A. It matches the keyword "sugar" to "glucose" using a medical synonym dictionary
-- B. It compares vector embeddings of the query and the memory, finding high cosine similarity because both relate to the same clinical concept despite different wording
-- C. It searches for all memories from the same patient and returns the most recent ones
-
-***Correct answer: B.*** Semantic retrieval uses vector embeddings to find conceptual similarity. "Blood sugar concerns" and "glucose monitoring anxiety" have high embedding similarity because they are semantically related, even though they share no keywords.

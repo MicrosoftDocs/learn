@@ -1,3 +1,5 @@
+Azure Cosmos DB stores an importance score alongside each memory embedding, giving your retrieval layer the signal it needs to decay outdated records, boost frequently accessed ones, and inject only the most relevant context into the agent. Managing importance dynamically keeps the context window focused on what matters most for each clinical interaction.
+
 ## Update memory importance with relevance decay
 
 Memories become less relevant over time. A concern about medication side effects from 6 months ago might no longer apply if the patient successfully adapted or changed medications. You implement importance decay that reduces memory relevance scores based on age, access frequency, and whether newer information contradicts it.
@@ -128,7 +130,7 @@ Provide evidence-based clinical guidance, reference relevant memories when appro
 
 Now that you've implemented memory importance management and context injection, you're ready to optimize context window usage by selecting which memories to inject based on relevance, importance, and the specific needs of each query.
 
-## Unit summary
+## Key takeaways
 
 - **Importance decay** reduces memory relevance over time using exponential or linear functions, preventing stale observations from dominating context. Access-based boosting counteracts decay for frequently retrieved memories.
 - **Contradiction detection** uses semantic similarity between memories plus temporal ordering to identify when newer memories supersede older ones, automatically reducing the contradicted memory's importance.

@@ -1,4 +1,4 @@
-The context window is your most constrained resource in memory-augmented agents. GPT-4o's 128K token limit must accommodate the system prompt, retrieved memories, current document content, conversation history, tool results, and space for the agent's response. When you retrieve 20 relevant memories totaling 8,000 tokens, those tokens displace other content — fewer documents can be included, or less conversation history fits. Optimal context allocation balances completeness with relevance across all content types.
+Azure Cosmos DB's vector similarity queries return memories ranked by relevance, but deciding how many to inject requires careful token budget management across competing content types. The context window is your most constrained resource — GPT-4o's 128K token limit must simultaneously accommodate system prompts, retrieved memories, document content, conversation history, and response generation space.
 
 | Content Type | Typical Size | Priority | Allocation Strategy |
 |--------------|--------------|----------|---------------------|
@@ -15,7 +15,7 @@ Different clinical interactions have different context needs. A medication revie
 
 Simple queries like "What is the normal range for blood glucose?" need minimal memory — perhaps 2-3 relevant memories consuming 500 tokens. Complex queries like "Review this patient's diabetes management plan considering their history" need more memory — 8-10 memories consuming 3,000+ tokens. You implement dynamic allocation that assigns more context budget to memories when the query indicates historical context is critical.
 
-Query complexity classification uses similar techniques to the routing classifier from Module A. A fast LLM call or lightweight model categorizes queries as "simple factual," "patient-history dependent," or "complex multi-factor." Each category maps to a memory allocation target: simple queries get 5-10% of context for memories, patient-history queries get 20-30%, complex queries get 15-25%.
+Query complexity classification uses a similar approach to other routing classifiers in multi-agent systems. A fast LLM call or lightweight model categorizes queries as "simple factual," "patient-history dependent," or "complex multi-factor." Each category maps to a memory allocation target: simple queries get 5-10% of context for memories, patient-history queries get 20-30%, complex queries get 15-25%.
 
 Document retrieval receives the largest allocation for knowledge-intensive queries. When the query requires clinical guidelines, drug information, or lab interpretation, you reserve 30-50% of the context window for retrieved documents. When the query primarily requires patient history, document allocation drops to 10-20% while memory allocation increases proportionally.
 
@@ -68,11 +68,11 @@ def allocate_context_budget(query: str, max_context_tokens: int = 100000) -> dic
 
 ## Compress memories through summarization and distillation
 
-Before injecting memories into context, you compress them to maximize information density. Raw memories often contain repetitive phrasing or verbose descriptions. Compression extracts the core information while reducing token count by 40-60%.
+Before injecting memories into context, you compress them to maximize information density. Raw memories often contain repetitive phrasing or verbose descriptions. Compression extracts the core information at significantly lower token cost.
 
 Summarization combines multiple related memories into a single concise statement. If five memories discuss the patient's difficulty with medication adherence, you combine them: "Patient has documented adherence challenges with complex medication schedules, particularly evening doses. Prefers once-daily medications and uses pill organizers successfully." This summary conveys the same information in fewer tokens than listing all five memories separately.
 
-Distillation removes linguistic hedging and extracts only factual content. A memory stating "During the March consultation, the patient expressed concerns about potential side effects and mentioned they had read online about possible fatigue" distills to "Patient concerned about fatigue side effect." This distillation preserves the key information while cutting token count by 60%.
+Distillation removes linguistic hedging and extracts only factual content. A memory stating "During the March consultation, the patient expressed concerns about potential side effects and mentioned they had read online about possible fatigue" distills to "Patient concerned about fatigue side effect." This distillation preserves the key clinical fact while removing the surrounding narrative.
 
 ```python
 from azure.ai.inference import ChatCompletionsClient
@@ -299,10 +299,7 @@ The JTA and production troubleshooting guides use specific vocabulary for contex
 
 When troubleshooting context-window quality issues in production, use these diagnostic terms to identify the failure mode before choosing a mitigation. The mitigations are different: sliding-window amnesia requires importance-aware retention policy; summary drift requires better consolidation validation; vector-only recall requires hybrid retrieval; entity continuity requires entity-linked episodic storage.
 
-> [!TIP]
-> **Pause and reflect:** Consider a scenario where Northwind Health's clinical agent assists with a complex patient who has 50+ memories spanning 3 years. The context window can hold 10 memories. How would you design the selection strategy to balance recency (recent lab results) with clinical importance (documented drug allergies from 2 years ago)? What happens if the patient's critical allergy memory gets bumped by less important but more recent memories?
-
-## Unit summary
+## Key takeaways
 
 - **Context budget allocation** assigns fixed token budgets to different memory categories (patient history, preferences, clinical alerts) to prevent any single category from consuming the entire window.
 - **Memory compression** uses LLM summarization and distillation to reduce verbose episodic memories into concise summaries that preserve clinical meaning.

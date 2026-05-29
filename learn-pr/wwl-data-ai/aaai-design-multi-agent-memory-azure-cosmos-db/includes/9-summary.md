@@ -12,9 +12,9 @@ Memory architecture transforms agents from stateless question-answering systems 
 
 ## The complete clinical agent
 
-Across this learning path, you've built Northwind Health's Clinical Intelligence System layer by layer:
+Production clinical agents are built around four capability layers that together deliver safe, personalized, and context-aware care:
 
-| Layer | Module | What It Provides |
+| Layer | Capability area | What It Provides |
 |---|---|---|
 | **Reasoning** | Advanced prompting | Multi-turn reasoning chains, injection defenses, stable system prompts, prompt versioning |
 | **Tools** | MCP tool ecosystems | Drug interaction checker, dosing calculator, lab interpreter with auth and circuit breaking |
@@ -28,4 +28,4 @@ Together, these four layers produce a clinical agent that reasons safely, acts t
 - [What is Azure Cosmos DB?](/azure/cosmos-db/introduction)
 - [Vector search in Azure Cosmos DB for NoSQL](/azure/cosmos-db/nosql/vector-search)
 - [HIPAA compliance on Azure](/azure/compliance/offerings/offering-hipaa-us)
-- [Semantic Kernel memory documentation](https://learn.microsoft.com/semantic-kernel/concepts/memory/)
+- [Semantic Kernel Vector Store documentation](https://learn.microsoft.com/semantic-kernel/concepts/vector-store-connectors/)
