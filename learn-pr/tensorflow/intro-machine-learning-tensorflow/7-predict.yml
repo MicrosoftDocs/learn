@@ -8,7 +8,8 @@ metadata:
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
-  ms.service: learning-tensorflow
+  product:
+    - learning-tensorflow
   ms.contributors: bstollnitz-08202021
   ms.custom: team=cloud_advocates
 durationInMinutes: 10
