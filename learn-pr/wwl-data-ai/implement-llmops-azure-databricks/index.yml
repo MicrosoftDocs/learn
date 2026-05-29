@@ -20,7 +20,7 @@ abstract: |
   - Use MLflow and Unity Catalog to implement LLMops.
 prerequisites: |
   Before starting this module, you should be familiar with Azure Databricks. Consider completing [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) before starting this module.
-iconUrl: /learn/achievements/describe-azure-databricks.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
 - intermediate
 roles:

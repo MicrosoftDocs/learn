@@ -18,7 +18,7 @@ abstract: |
   - Distribute deep learning training by using TorchDistributor.
 prerequisites: |
   Before starting this module, you should be familiar with machine learning on Azure Databricks.
-iconUrl: /training/achievements/deep-learning-azure-databricks.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
 - advanced
 roles:
