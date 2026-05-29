@@ -1,4 +1,13 @@
-When monitoring surfaces changing data, anomalies, or critical events, alerts are generated or actions are triggered. Real-time data analytics is commonly based on the ingestion and processing of a data stream that consists of a perpetual series of data, typically related to specific point-in-time events. For example, a stream of data from an environmental IoT weather sensor. Real-Time Intelligence in Fabric contains a tool called Activator that can be used to trigger actions on streaming data. For example, a stream of data from an environmental IoT weather sensor might be used to trigger emails to sailors when wind thresholds are met. When certain conditions or logic is met, an action is taken, like alerting users, executing Fabric job items like a pipeline, or kicking off Power Automate workflows. The logic can be either a defined threshold, a pattern like events happening repeatedly over a time period, or the results of logic defined by a Kusto Query Language (KQL) query.  
+When monitoring surfaces changing data, anomalies, or critical events, alerts are generated or actions are triggered. Real-time data analytics is commonly based on the ingestion and processing of a data stream that consists of a perpetual series of data, typically related to specific point-in-time events. Real-Time Intelligence in Fabric contains a tool called Activator that can be used to trigger actions based on conditions detected in your data.
+
+Activator can monitor many types of event sources, including:
+
+- **Eventstreams** — continuous streams from IoT devices, Azure Event Hubs, and other real-time sources. For example, a stream from an environmental weather sensor might trigger an email to sailors when wind thresholds are met.
+- **Fabric events** — discrete events that occur within your Fabric workspace, such as a data pipeline failing or a semantic model refresh completing. This makes Activator directly useful within monitoring workflows.
+- **Azure events** — events from Azure services like Azure Blob Storage.
+- **Power BI reports and Real-Time dashboards** — Activator can monitor report visuals and trigger actions when data changes.
+
+When certain conditions or logic is met, an action is taken, such as alerting users via email or Microsoft Teams, executing Fabric items like a pipeline, notebook, or Spark job, or kicking off Power Automate workflows. The logic can be a defined threshold, a pattern like events happening repeatedly over a time period, or the results of a Kusto Query Language (KQL) query.  
 
 ## What is Activator
 Activator is a technology in Microsoft Fabric that enables automated processing of events that trigger actions. For example, you can use Activator to notify you by email when a value in an eventstream deviates from a specific range or to run a notebook to perform some Spark-based data processing logic when a real-time dashboard is updated.
@@ -12,7 +21,7 @@ Activator operates based on four core concepts: *Events*, *Objects, *Properties*
 - **Events** - Each record in a stream of data represents an *event* that has occurred at a specific point in time.
 - **Objects** - The data in an event record can be used to represent an *object*, such as a sales order, a sensor, or some other business entity.
 - **Properties** - The fields in the event data can be mapped to *properties* of the business object, representing some aspect of its state. For example, a *total_amount* field might represent a sales order total, or a *temperature* field might represent the temperature measured by an environmental sensor.
-- **Rules** - The key to using Activator to automate actions based on events is to define *rules* that set conditions under which an action is triggered based on the property values of objects referenced in events. For example, you might define a rule that sends an email to a maintenance manager if the temperature measured by a sensor exceeds a specific threshold.
+- **Rules** - The key to using Activator to automate actions based on events is to define *rules* that set conditions under which an action is triggered based on the property values of objects referenced in events. For example, you might define a rule that sends an email to a maintenance manager if the temperature measured by a sensor exceeds a specific threshold. Rules can be *stateless* — evaluating each event individually (for example, `temperature > 80`) — or *stateful* — tracking changes over time (for example, temperature `INCREASES` or `EXIT RANGE`). Stateful rules only fire when a new state is entered, which prevents repeated alerts for an unchanged condition.
 
 ## Use cases for Activator
 
@@ -26,8 +35,10 @@ Use Activator to:
 - Trigger alerts when a shipment hasn't been updated within an expected time frame.
 - Send alerts when a customer's account balance crosses a certain threshold.
 - Respond to anomalies or failures in data processing workflows immediately.
+- Post a Teams message to a channel when a data pipeline fails.
 - Run ads when same-store sales decline.
 - Alert store managers to move food from failing grocery store freezers before it spoils.
+- Run a notebook when a real-time dashboard value crosses a threshold.
 
 > [!TIP]
 > For more information about working with Activator, see **[Tutorial: Create and activate an Activator rule](/fabric/real-time-intelligence/data-activator/activator-tutorial)**.
