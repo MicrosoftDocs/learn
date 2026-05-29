@@ -1,4 +1,4 @@
-Azure Cosmos DB's vector similarity queries return memories ranked by relevance, but deciding how many to inject requires careful token budget management across competing content types. The context window is your most constrained resource — GPT-4o's 128K token limit must simultaneously accommodate system prompts, retrieved memories, document content, conversation history, and response generation space.
+Azure Cosmos DB's vector similarity queries return memories ranked by relevance, but deciding how many to inject requires careful token budget management across competing content types. The context window is your most constrained resource—GPT-4o's 128K token limit must simultaneously accommodate system prompts, retrieved memories, document content, conversation history, and response generation space.
 
 | Content Type | Typical Size | Priority | Allocation Strategy |
 |--------------|--------------|----------|---------------------|
@@ -13,7 +13,7 @@ Azure Cosmos DB's vector similarity queries return memories ranked by relevance,
 
 Different clinical interactions have different context needs. A medication review benefits from extensive patient memory (past medications, side effects, adherence patterns) but needs minimal document retrieval. A diagnostic consultation needs comprehensive document retrieval from clinical guidelines but fewer patient memories. You classify the interaction type and adjust context allocation accordingly.
 
-Simple queries like "What is the normal range for blood glucose?" need minimal memory — perhaps 2-3 relevant memories consuming 500 tokens. Complex queries like "Review this patient's diabetes management plan considering their history" need more memory — 8-10 memories consuming 3,000+ tokens. You implement dynamic allocation that assigns more context budget to memories when the query indicates historical context is critical.
+Simple queries like "What is the normal range for blood glucose?" need minimal memory—perhaps 2-3 relevant memories consuming 500 tokens. Complex queries like "Review this patient's diabetes management plan considering their history" need more memory—8-10 memories consuming 3,000+ tokens. You implement dynamic allocation that assigns more context budget to memories when the query indicates historical context is critical.
 
 Query complexity classification uses a similar approach to other routing classifiers in multi-agent systems. A fast LLM call or lightweight model categorizes queries as "simple factual," "patient-history dependent," or "complex multi-factor." Each category maps to a memory allocation target: simple queries get 5-10% of context for memories, patient-history queries get 20-30%, complex queries get 15-25%.
 
@@ -227,7 +227,7 @@ Context optimization requires measuring tradeoffs between token cost and respons
 
 The quality curve typically shows diminishing returns: going from 0 to 3 memories improves accuracy significantly, 3 to 5 shows moderate improvement, 5 to 10 shows minimal improvement. The token cost increases linearly with memory count. You identify the inflection point where additional memories stop improving quality enough to justify their token cost.
 
-For Northwind Health's clinical agents, evaluation might show that 5 memories achieve 92% answer accuracy while 10 memories achieve 93% accuracy but cost 40% more tokens. The optimal configuration is 5 memories — the quality improvement from adding 5 more isn't worth the cost increase.
+For Northwind Health's clinical agents, evaluation might show that 5 memories achieve 92% answer accuracy while 10 memories achieve 93% accuracy but cost 40% more tokens. The optimal configuration is 5 memories—the quality improvement from adding 5 more isn't worth the cost increase.
 
 You also measure latency impact. More context tokens increase generation time because the model processes more input. A session with 5 memories might respond in 2.3 seconds while 10 memories takes 3.1 seconds. User experience research guides the quality-speed tradeoff: is 1% better accuracy worth 35% longer wait times?
 

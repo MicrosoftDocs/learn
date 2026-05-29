@@ -1,4 +1,4 @@
-Azure Cosmos DB supports all three memory tiers that clinical agents use — working, episodic, and semantic — each with different storage, query, and retention characteristics. Selecting the right tier for each type of clinical information determines retrieval performance, storage cost, and compliance posture.
+Azure Cosmos DB supports all three memory tiers that clinical agents use—working, episodic, and semantic—each with different storage, query, and retention characteristics. Selecting the right tier for each type of clinical information determines retrieval performance, storage cost, and compliance posture.
 
 | Memory Type | Retention Period | Query Pattern | Storage Approach | Clinical Example |
 |-------------|------------------|---------------|------------------|------------------|
@@ -8,9 +8,9 @@ Azure Cosmos DB supports all three memory tiers that clinical agents use — wor
 
 ## Understand working memory for active conversations
 
-Working memory holds the current conversation context — the system prompt, recent messages, retrieved documents, and tool results. This content must be immediately available with sub-millisecond access times because the agent references it for every response. The context window size limits working memory capacity: GPT-4o supports 128K tokens, but filling the entire window becomes expensive and slows response generation.
+Working memory holds the current conversation context—the system prompt, recent messages, retrieved documents, and tool results. This content must be immediately available with sub-millisecond access times because the agent references it for every response. The context window size limits working memory capacity: GPT-4o supports 128K tokens, but filling the entire window becomes expensive and slows response generation.
 
-When using the Foundry Responses API in **stateless mode** (`client.agents.responses.create()`), your application owns working memory entirely. Every call must include the full conversation history you want the agent to see — the runtime doesn't accumulate history between calls. Stateless mode is the most common pattern for clinical agents, because the application retains explicit control over every piece of context the agent sees. You build working memory from three sources: recent conversation turns (kept in application memory or Redis), retrieved episodic memories injected as context, and retrieved semantic memories summarized at session start.
+When using the Foundry Responses API in **stateless mode** (`client.agents.responses.create()`), your application owns working memory entirely. Every call must include the full conversation history you want the agent to see—the runtime doesn't accumulate history between calls. Stateless mode is the most common pattern for clinical agents, because the application retains explicit control over every piece of context the agent sees. You build working memory from three sources: recent conversation turns (kept in application memory or Redis), retrieved episodic memories injected as context, and retrieved semantic memories summarized at session start.
 
 When using **server-managed Conversations** (`client.agents.conversations.*`), the runtime automatically accumulates conversation items during the session. Working memory management shifts from "what do I inject each call?" to "when do I start a new conversation to avoid context overflow?" You still implement the episodic and semantic memory tiers externally, but session-scope history is handled for you.
 
@@ -30,17 +30,17 @@ The architectural consideration is retention duration. Episodic memories consume
 
 ## Understand semantic memory for pattern recognition and personalization
 
-Semantic memory stores generalized knowledge extracted from many interactions: patient preferences, recurring concerns, effectiveness of previous interventions, and behavioral patterns. Unlike episodic memory's "what happened on date X" focus, semantic memory answers "what patterns exist across all interactions with this patient?" A semantic memory might state "Patient prefers written summaries over verbal explanations" or "Patient experiences anxiety about new medications" — knowledge that applies across multiple sessions.
+Semantic memory stores generalized knowledge extracted from many interactions: patient preferences, recurring concerns, effectiveness of previous interventions, and behavioral patterns. Unlike episodic memory's "what happened on date X" focus, semantic memory answers "what patterns exist across all interactions with this patient?" A semantic memory might state "Patient prefers written summaries over verbal explanations" or "Patient experiences anxiety about new medications"—knowledge that applies across multiple sessions.
 
 You implement semantic memory using vector databases that enable similarity-based retrieval. Each memory has a text description and a corresponding embedding vector. When starting a new session, you retrieve semantically similar memories by comparing the current query or session context against stored memory vectors. Memories about "medication side effects" surface when the current conversation involves "drug adverse reactions," even if exact terms differ.
 
-Semantic memory provides the agent with continuity and personalization. Rather than treating each session as independent, the agent recalls relevant context: "I remember you mentioned difficulty swallowing pills — let me suggest liquid or dissolvable alternatives." This continuity improves patient satisfaction and care quality by making interactions feel coherent and personalized.
+Semantic memory provides the agent with continuity and personalization. Rather than treating each session as independent, the agent recalls relevant context: "I remember you mentioned difficulty swallowing pills—let me suggest liquid or dissolvable alternatives." This continuity improves patient satisfaction and care quality by making interactions feel coherent and personalized.
 
 The architectural decision is scope: global semantic memory shared across all patients would enable population-level learning ("most patients on this medication report fatigue in week 2"), but creates privacy risks and requires careful de-identification. Patient-specific semantic memory keeps data isolated and complies with privacy requirements but doesn't benefit from aggregate patterns. Most clinical applications use patient-specific semantic memory with aggregation only for de-identified quality improvement.
 
 ## Select memory architecture for different agent types
 
-A clinical documentation agent that simply records what clinicians dictate needs only working memory — conversations are linear, single-session recordings with no need for historical context. A medication review agent needs episodic memory to recall previous medications tried and semantic memory to recognize patterns in side effects or adherence. A diagnostic support agent needs semantic memory containing clinical patterns observed across many cases plus episodic memory of this specific patient's presentation timeline.
+A clinical documentation agent that simply records what clinicians dictate needs only working memory—conversations are linear, single-session recordings with no need for historical context. A medication review agent needs episodic memory to recall previous medications tried and semantic memory to recognize patterns in side effects or adherence. A diagnostic support agent needs semantic memory containing clinical patterns observed across many cases plus episodic memory of this specific patient's presentation timeline.
 
 | Agent Type | Working Memory | Episodic Memory | Semantic Memory | Rationale |
 |------------|----------------|-----------------|-----------------|-----------|
@@ -57,7 +57,7 @@ Patient memory data is Protected Health Information (PHI) under HIPAA and simila
 
 You implement per-patient partitioning in Azure Cosmos DB using patient ID as the partition key. This ensures queries never accidentally span patients without explicit authorization. Every memory retrieval operation includes the patient ID from the authenticated session context, preventing unauthorized cross-patient access.
 
-Audit logging tracks every memory access: which agent, which session, what memories were retrieved, and what they were used for. These logs provide the audit trail needed to demonstrate compliance and investigate potential privacy breaches. You retain audit logs longer than the memories themselves — typically 7+ years for healthcare compliance.
+Audit logging tracks every memory access: which agent, which session, what memories were retrieved, and what they were used for. These logs provide the audit trail needed to demonstrate compliance and investigate potential privacy breaches. You retain audit logs longer than the memories themselves—typically 7+ years for healthcare compliance.
 
 Right-to-deletion compliance requires the ability to expunge all patient data on request. Your memory architecture must support complete patient data deletion: all working memory records, all episodic memories, all semantic memories, and all derived embeddings. You implement deletion as a cascading operation that removes all data associated with a patient ID, then verifies completeness through compliance validation queries.
 
@@ -65,8 +65,8 @@ Now that you understand the taxonomy of memory types and architectural patterns 
 
 ## Key takeaways
 
-- **Working memory** holds active conversation context and disappears when the session ends — it's sufficient for single-turn interactions but insufficient for continuity.
+- **Working memory** holds active conversation context and disappears when the session ends—it's sufficient for single-turn interactions but insufficient for continuity.
 - **Episodic memory** stores specific interaction records that persist across sessions, enabling agents to recall what happened in prior encounters.
 - **Semantic memory** extracts patterns and generalizations from multiple episodes, supporting personalization without storing every detail.
 - **Memory architecture selection** depends on agent function: routing agents need minimal memory, specialist agents need episodic recall, and personalization agents need all three tiers.
-- **Privacy and compliance** must be designed into the architecture upfront — partition keys, access controls, and right-to-deletion support cannot be retrofitted.
+- **Privacy and compliance** must be designed into the architecture upfront—partition keys, access controls, and right-to-deletion support cannot be retrofitted.

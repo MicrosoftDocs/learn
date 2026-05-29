@@ -8,7 +8,7 @@ You implement application-level access controls that validate the patient_id in 
 
 Session management includes patient scope validation: when a clinical session starts, you authenticate which patient's records the clinician is authorized to access, then bind that patient_id to the session. Every memory operation during that session includes the session-bound patient_id, preventing cross-patient data leakage.
 
-This guard prevents real clinical harm. If a Northwind Health nurse practitioner reviewing patient-12345's diabetes management accidentally copies patient-67890's ID into a tool call, the `PatientMemoryService` rejects the operation immediately. Without this guard, the agent would inject patient-67890's medication history (potentially including sensitive behavioral health notes) into the wrong patient's consultation — creating both a HIPAA violation and a clinical safety risk.
+This guard prevents real clinical harm. If a Northwind Health nurse practitioner reviewing patient-12345's diabetes management accidentally copies patient-67890's ID into a tool call, the `PatientMemoryService` rejects the operation immediately. Without this guard, the agent would inject patient-67890's medication history (potentially including sensitive behavioral health notes) into the wrong patient's consultation—creating both a HIPAA violation and a clinical safety risk.
 
 ```python
 class PatientMemoryService:
@@ -78,7 +78,7 @@ HIPAA and similar healthcare regulations require comprehensive audit trails of w
 
 Audit logs capture: timestamp, user/agent identifier, patient_id, operation type (read/write/delete), which memories were accessed (by ID), and the session context explaining why access occurred. These logs persist separately from the memories themselves with longer retention periods (typically 7-10 years vs. 6 years for clinical records).
 
-During Northwind Health's annual HIPAA audit, the compliance team queries the audit container: "Show all memory retrievals for patient-12345 during Q1 2026." The audit trail reveals 47 memory retrievals across 12 clinical sessions, each logged with the clinician's identity, the session context, and which specific memories were accessed — demonstrating to auditors exactly who saw what patient data and why.
+During Northwind Health's annual HIPAA audit, the compliance team queries the audit container: "Show all memory retrievals for patient-12345 during Q1 2026." The audit trail reveals 47 memory retrievals across 12 clinical sessions, each logged with the clinician's identity, the session context, and which specific memories were accessed—demonstrating to auditors exactly who saw what patient data and why.
 
 You implement audit logging as middleware that intercepts all memory operations before executing them. The middleware writes audit entries to a dedicated Cosmos DB container configured with higher retention settings.
 

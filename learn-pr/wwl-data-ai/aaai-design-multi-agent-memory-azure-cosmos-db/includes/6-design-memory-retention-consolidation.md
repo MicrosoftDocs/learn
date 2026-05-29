@@ -11,9 +11,9 @@ Azure Cosmos DB's tiered storage options let you move patient memories between h
 
 Active patients who visit regularly generate and benefit from detailed memories. The agent references recent consultations frequently, making high-granularity memory valuable. Inactive patients who haven't visited in months or years have memories that consume storage but rarely get retrieved. You implement tiered retention that adjusts memory detail based on patient activity patterns.
 
-- **Tier 1 (Active — visits within 6 months):** Retain all episodic and semantic memories at full detail. No compression or pruning. These patients benefit most from continuity, and the agent frequently retrieves their memories.
-- **Tier 2 (Semi-active — visits between 6–24 months ago):** Consolidate low-importance episodic memories into semantic summaries. Keep high-importance memories (clinical decisions, adverse reactions, critical preferences) at full detail. This substantially reduces storage while preserving clinically significant information.
-- **Tier 3 (Inactive — no visits for 24+ months):** Archive to cold storage tiers with longer retrieval latency. If the patient returns, restore memories to hot storage for that session. Most healthcare systems retain records for 6–7 years, so deletion isn't appropriate yet, but cold storage tiers reduce cost substantially.
+- **Tier 1 (Active—visits within 6 months):** Retain all episodic and semantic memories at full detail. No compression or pruning. These patients benefit most from continuity, and the agent frequently retrieves their memories.
+- **Tier 2 (Semi-active—visits between 6–24 months ago):** Consolidate low-importance episodic memories into semantic summaries. Keep high-importance memories (clinical decisions, adverse reactions, critical preferences) at full detail. This substantially reduces storage while preserving clinically significant information.
+- **Tier 3 (Inactive—no visits for 24+ months):** Archive to cold storage tiers with longer retrieval latency. If the patient returns, restore memories to hot storage for that session. Most healthcare systems retain records for 6–7 years, so deletion isn't appropriate yet, but cold storage tiers reduce cost substantially.
 - **Tier 4 (Retention expired):** After the minimum retention period (typically 6–10 years depending on jurisdiction), memories become candidates for deletion unless the patient remains active or specific legal holds apply (ongoing litigation, research cohort, etc.).
 
 ```python
@@ -69,7 +69,7 @@ The pruning algorithm calculates current importance (applying decay) and checks 
 
 Critical memories are exempt from pruning regardless of age: adverse drug reactions, allergies, major diagnoses, and documented refusals of treatment. These memories get tagged as `critical: true` during creation, and the pruning query explicitly filters them out.
 
-At Northwind Health, a 2-year-old memory with importance 2 about a patient asking about vitamin D supplements gets pruned during the monthly batch job. But their documented penicillin allergy (tagged `critical: true`, importance 10) survives indefinitely — even though it's 4 years old and the patient hasn't visited in 18 months. The pruning system never discards safety-critical clinical information.
+At Northwind Health, a 2-year-old memory with importance 2 about a patient asking about vitamin D supplements gets pruned during the monthly batch job. But their documented penicillin allergy (tagged `critical: true`, importance 10) survives indefinitely—even though it's 4 years old and the patient hasn't visited in 18 months. The pruning system never discards safety-critical clinical information.
 
 ```python
 def prune_expired_memories(patient_id: str, importance_threshold: float = 3.0) -> int:
@@ -140,7 +140,7 @@ def scheduled_pruning_job():
 
 Individual episodic memories ("Patient reported mild nausea on 2025-03-15," "Patient mentioned stomach discomfort on 2025-04-02") contain similar information across multiple visits. Rather than storing each instance separately, you consolidate them into a single semantic memory: "Patient experiences mild gastric side effects periodically." This consolidation preserves the clinical pattern while significantly reducing the number of individual memory records.
 
-Northwind Health's chronic care agent illustrates consolidation at scale. A diabetes patient has 7 episodic memories: three about morning blood sugar spikes, two about skipping evening insulin doses, and two about carb-counting confusion. Consolidation produces two semantic memories: "Patient has recurring morning hyperglycemia, potentially linked to inconsistent evening insulin adherence" and "Patient struggles with carbohydrate counting for meal-time dosing." Seven memories become two — clearer clinical patterns, lower storage cost, and faster context retrieval.
+Northwind Health's chronic care agent illustrates consolidation at scale. A diabetes patient has 7 episodic memories: three about morning blood sugar spikes, two about skipping evening insulin doses, and two about carb-counting confusion. Consolidation produces two semantic memories: "Patient has recurring morning hyperglycemia, potentially linked to inconsistent evening insulin adherence" and "Patient struggles with carbohydrate counting for meal-time dosing." Seven memories become two—clearer clinical patterns, lower storage cost, and faster context retrieval.
 
 Consolidation identifies clusters of semantically similar memories within a patient's history, then uses an LLM to extract the common pattern or theme. The consolidated semantic memory replaces the original episodic memories, which are either deleted or archived depending on their individual importance.
 
@@ -214,6 +214,6 @@ Focus on what remains consistent, not specific dates or one-time details."""
 
 ## Key takeaways
 
-- **Tiered retention policies** apply different expiration rules based on patient activity — active patients retain memories longer than inactive ones, preventing useful context from being pruned prematurely.
+- **Tiered retention policies** apply different expiration rules based on patient activity—active patients retain memories longer than inactive ones, preventing useful context from being pruned prematurely.
 - **Automated pruning** removes low-importance, old memories using scheduled batch jobs that evaluate both importance scores and age against configurable thresholds.
-- **Memory consolidation** transforms multiple episodic memories into higher-level semantic patterns using LLM summarization — reducing storage and context window costs while preserving behavioral insights.
+- **Memory consolidation** transforms multiple episodic memories into higher-level semantic patterns using LLM summarization—reducing storage and context window costs while preserving behavioral insights.

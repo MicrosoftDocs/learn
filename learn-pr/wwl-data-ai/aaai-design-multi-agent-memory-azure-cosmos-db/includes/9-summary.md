@@ -21,7 +21,7 @@ Production clinical agents are built around four capability layers that together
 | **Knowledge** | Advanced RAG | Hybrid search, re-ranking, dynamic routing across formulary, guidelines, and lab references |
 | **Memory** | Memory architectures | Patient-scoped semantic memory with importance scoring, lifecycle management, and privacy compliance |
 
-Together, these four layers produce a clinical agent that reasons safely, acts through verified tools, retrieves the right knowledge, and remembers patient context across encounters — a production-grade system that delivers the continuity of care Northwind Health's clinicians and patients expect.
+Together, these four layers produce a clinical agent that reasons safely, acts through verified tools, retrieves the right knowledge, and remembers patient context across encounters—a production-grade system that delivers the continuity of care Northwind Health's clinicians and patients expect.
 
 ## Learn more
 

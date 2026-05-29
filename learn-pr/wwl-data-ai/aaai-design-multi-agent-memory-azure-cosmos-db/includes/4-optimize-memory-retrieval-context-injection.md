@@ -6,9 +6,9 @@ Memories become less relevant over time. A concern about medication side effects
 
 Time-based decay follows an exponential or linear function: memories lose a percentage of their importance score for each month elapsed since creation. A memory with importance 9 might decay to 7.2 after 6 months using a 20% decay rate. Access-based boosting counteracts decay: memories frequently retrieved remain relevant because they continue to apply across sessions.
 
-Contradiction detection identifies when new memories supersede old ones. If a new memory states "Patient now prefers afternoon appointments" and an old memory says "Patient prefers morning appointments," the old memory's importance drops to near-zero because it's been contradicted. You implement this through semantic similarity between memories plus temporal ordering — newer memories with high similarity to older memories indicate updates.
+Contradiction detection identifies when new memories supersede old ones. If a new memory states "Patient now prefers afternoon appointments" and an old memory says "Patient prefers morning appointments," the old memory's importance drops to near-zero because it's been contradicted. You implement this through semantic similarity between memories plus temporal ordering—newer memories with high similarity to older memories indicate updates.
 
-For Northwind Health, contradiction detection prevents clinically dangerous stale context. A January memory stating "Patient tolerates metformin 500mg well" gets contradicted by a March memory recording "Patient reports persistent GI distress on metformin — switched to extended-release formulation." The system automatically reduces the outdated tolerance memory's importance so the next clinician isn't told the patient tolerates standard metformin when they've already been switched.
+For Northwind Health, contradiction detection prevents clinically dangerous stale context. A January memory stating "Patient tolerates metformin 500mg well" gets contradicted by a March memory recording "Patient reports persistent GI distress on metformin—switched to extended-release formulation." The system automatically reduces the outdated tolerance memory's importance so the next clinician isn't told the patient tolerates standard metformin when they've already been switched.
 
 ```python
 from datetime import datetime, timedelta
@@ -84,7 +84,7 @@ Retrieved memories must be formatted and injected into the agent's context in a 
 
 The injection format summarizes memories concisely to conserve context window space. Rather than including full memory documents with metadata, you extract just the content statement and importance indicator. Memories are ordered by relevance (combination of similarity score and current importance) so the most pertinent information appears first.
 
-For Northwind Health's diabetes management agent, the injected context might look like: "1. ⚠️ Patient has documented penicillin allergy — confirmed anaphylactic reaction. 2. Patient experiences GI side effects from metformin ER. 3. Patient prefers morning appointments and communicates better with written instructions." The hierarchy flows from critical clinical safety (allergy) to active treatment context (side effects) to care preferences — ensuring the most important information survives if the context window forces truncation.
+For Northwind Health's diabetes management agent, the injected context might look like: "1. ⚠️ Patient has documented penicillin allergy—confirmed anaphylactic reaction. 2. Patient experiences GI side effects from metformin ER. 3. Patient prefers morning appointments and communicates better with written instructions." The hierarchy flows from critical clinical safety (allergy) to active treatment context (side effects) to care preferences—ensuring the most important information survives if the context window forces truncation.
 
 ```python
 def format_memories_for_context(memories: list[dict]) -> str:
@@ -135,4 +135,4 @@ Now that you've implemented memory importance management and context injection, 
 - **Importance decay** reduces memory relevance over time using exponential or linear functions, preventing stale observations from dominating context. Access-based boosting counteracts decay for frequently retrieved memories.
 - **Contradiction detection** uses semantic similarity between memories plus temporal ordering to identify when newer memories supersede older ones, automatically reducing the contradicted memory's importance.
 - **Context injection** formats memories as a distinct "Patient Context from Previous Interactions" section in the agent's system prompt, ordered by combined similarity and importance scores.
-- **Concise formatting** conserves context window space — inject content statements and importance indicators only, not full memory documents with metadata.
+- **Concise formatting** conserves context window space—inject content statements and importance indicators only, not full memory documents with metadata.
