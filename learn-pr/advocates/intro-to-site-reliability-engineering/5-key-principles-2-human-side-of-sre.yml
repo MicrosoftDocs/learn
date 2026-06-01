@@ -36,7 +36,7 @@ quiz:
     - content: "SREs work to eliminate toil as their first priority."
       isCorrect: false
       explanation: "SREs work to eliminate toil whenever it's possible, but sometimes other work has greater priority."
-    - content: "SREs attempt to manage toil as best they can."
+    - content: "SREs manage toil as best they can."
       isCorrect: false
       explanation: "SREs prefer to eliminate toil if possible. Well-managed toil is still toil."
     - content: "SREs work to eliminate toil wherever and whenever it's appropriate."
