@@ -1,4 +1,6 @@
-Fabrikam's multi-agent code review system processes proprietary enterprise source code containing business logic, security implementations, and integration patterns that represent significant competitive value. As code flows through eight specialized agents—from preprocessing to security analysis to quality assessment—each processing stage creates privacy exposure points. Multi-agent workflows amplify privacy risks because data crosses multiple model boundaries, storage stages, and processing contexts. Configuring comprehensive privacy protection requires detecting sensitive information before agent processing, minimizing data exposure at each stage, enforcing consent and purpose limitations, and controlling data residency throughout the workflow.
+Fabrikam's multi-agent code review system processes proprietary enterprise source code containing business logic, security implementations, and integration patterns that represent significant competitive value. As code flows through eight specialized agents—from preprocessing to security analysis to quality assessment—each processing stage creates privacy exposure points. Multi-agent workflows amplify privacy risks because data crosses multiple model boundaries, storage stages, and processing contexts. Configuring comprehensive privacy protection requires detecting sensitive information before agent processing, minimizing data exposure at each stage, enforcing consent and purpose limitations, and controlling data residency throughout the workflow. The Azure AI Language Service detects and redacts sensitive information before it reaches the agent pipeline, while Microsoft Foundry project settings enforce consent boundaries and data residency requirements.
+
+The following table illustrates how multi-agent workflows multiply privacy exposure points compared to single-agent processing:
 
 | Privacy Challenge | Single Agent | Multi-Agent Workflow |
 |-------------------|--------------|---------------------|
@@ -18,74 +20,69 @@ Your multi-agent code review workflow processes all of this. Without PII detecti
 
 ## Implement PII detection before agent processing
 
-Privacy protection begins before the first agent receives code. You implement a pre-processing PII detection stage using Azure AI Content Safety that scans all code submissions for sensitive information before any review agent processes the content.
+Privacy protection begins before the first agent receives code. You implement a pre-processing PII detection stage using the Azure AI Language Service that scans all code submissions for sensitive information before any review agent processes the content.
 
 The PII detector operates on the raw code submission and identifies patterns matching: email addresses, phone numbers, IP addresses, credit card numbers, personal names in comments and logs, API keys and credentials (using entropy detection), physical addresses and postal codes, and social security numbers or national identity numbers. The detector uses pattern matching for structured PII like email addresses and phone numbers, and machine learning classifiers for unstructured PII like names appearing in natural language comments.
 
 When PII is detected, you apply contextual redaction. Email addresses in commit metadata are preserved because code attribution is part of the legitimate code review purpose—but these addresses are flagged to prevent them from being included in training data. Hard-coded API keys and credentials are redacted completely and replaced with placeholder values like `[REDACTED-API-KEY]`, while simultaneously triggering a security alert to the development team that credentials were committed. Personal names in comments are evaluated contextually—"Contact Sarah Chen for questions about this algorithm" gets redacted to "Contact [TEAM-CONTACT] for questions", while "The Chen algorithm is described in..." is preserved because it's a technical reference, not PII.
 
 ```python
-from azure.ai.contentsafety import ContentSafetyClient
-from azure.ai.contentsafety.models import AnalyzeTextOptions, PiiEntityType
+from azure.ai.textanalytics import TextAnalyticsClient
 from azure.core.credentials import AzureKeyCredential
 import re
 
-def detect_and_redact_pii(code_content, content_safety_endpoint, content_safety_key):
+def detect_and_redact_pii(code_content, language_endpoint, language_key):
     """
     Detect and redact PII from source code before multi-agent processing.
-    
+
     Returns redacted code and PII detection report for audit logging.
     """
-    client = ContentSafetyClient(
-        content_safety_endpoint,
-        AzureKeyCredential(content_safety_key)
+    client = TextAnalyticsClient(
+        endpoint=language_endpoint,
+        credential=AzureKeyCredential(language_key)
     )
-    
-    # Analyze text for PII using Azure AI Content Safety
-    request = AnalyzeTextOptions(
-        text=code_content,
-        categories=[
-            PiiEntityType.EMAIL,
-            PiiEntityType.PHONE_NUMBER,
-            PiiEntityType.CREDIT_CARD_NUMBER,
-            PiiEntityType.IP_ADDRESS,
-            PiiEntityType.PERSON
-        ]
-    )
-    
-    response = client.analyze_text(request)
-    
+
+    # Analyze text for PII using Azure AI Language Service
+    response = client.recognize_pii_entities([code_content], language="en")
+    result = response[0]
+
     redacted_code = code_content
     pii_detections = []
-    
-    # Process detected PII entities
-    for entity in response.pii_entities_result.entities:
-        pii_detections.append({
-            'type': entity.category,
-            'text': entity.text,
-            'confidence': entity.confidence_score,
-            'offset': entity.offset,
-            'length': entity.length
-        })
-        
-        # Apply contextual redaction
-        if entity.category == 'EmailAddress':
-            # Preserve structure but anonymize: test@example.com -> [EMAIL]@domain.com
-            redaction = f"[EMAIL-{len(pii_detections)}]@redacted.local"
-        elif entity.category in ['CreditCardNumber', 'IPAddress']:
-            # Full redaction for sensitive data
-            redaction = f"[REDACTED-{entity.category.upper()}]"
-        elif entity.category == 'Person':
-            # Context-dependent: preserve technical references, redact personal
-            if is_technical_reference(entity.text, code_content):
-                continue  # Don't redact technical algorithm names
-            redaction = "[TEAM-CONTACT]"
-        else:
-            redaction = f"[REDACTED-{entity.category.upper()}]"
-        
-        # Replace PII with redaction placeholder
-        redacted_code = redacted_code[:entity.offset] + redaction + redacted_code[entity.offset + entity.length:]
-    
+
+    if not result.is_error:
+        # Process detected PII entities (sorted in reverse offset order to preserve positions)
+        sorted_entities = sorted(result.entities, key=lambda e: e.offset, reverse=True)
+        for entity in sorted_entities:
+            pii_detections.append({
+                'type': entity.category,
+                'text': entity.text,
+                'confidence': entity.confidence_score,
+                'offset': entity.offset,
+                'length': entity.length
+            })
+
+            # Apply contextual redaction
+            if entity.category == 'Email':
+                # Preserve structure but anonymize: test@example.com -> [EMAIL-n]@redacted.local
+                redaction = f"[EMAIL-{len(pii_detections)}]@redacted.local"
+            elif entity.category in ['CreditCardNumber', 'IPAddress']:
+                # Full redaction for sensitive data
+                redaction = f"[REDACTED-{entity.category.upper()}]"
+            elif entity.category == 'Person':
+                # Context-dependent: preserve technical references, redact personal
+                if is_technical_reference(entity.text, code_content):
+                    continue  # Don't redact technical algorithm names
+                redaction = "[TEAM-CONTACT]"
+            else:
+                redaction = f"[REDACTED-{entity.category.upper()}]"
+
+            # Replace PII with redaction placeholder (reverse order keeps offsets valid)
+            redacted_code = (
+                redacted_code[:entity.offset]
+                + redaction
+                + redacted_code[entity.offset + entity.length:]
+            )
+
     # Additional pattern-based detection for API keys (high entropy strings)
     api_key_pattern = r'["\']([A-Za-z0-9_\-]{32,})["\']'
     for match in re.finditer(api_key_pattern, redacted_code):
@@ -98,7 +95,7 @@ def detect_and_redact_pii(code_content, content_safety_endpoint, content_safety_
                 'length': len(match.group(1))
             })
             redacted_code = redacted_code.replace(match.group(1), '[REDACTED-API-KEY]')
-    
+
     return {
         'redacted_code': redacted_code,
         'pii_detected': len(pii_detections) > 0,
@@ -140,7 +137,7 @@ Data minimization reduces privacy exposure—fewer agents processing PII means f
 
 Enterprise customers contract with Fabrikam for code review services. This contract establishes the legal basis and scope for processing their code. Using that code for other purposes—training future models, benchmarking against other customers, or incorporating code patterns into general knowledge—requires separate, explicit consent.
 
-You configure Azure AI Foundry project settings to opt out of training data collection for all enterprise tenant deployments. The `customerManagedKey` and `publicNetworkAccess: Disabled` settings ensure customer code stays within the contracted boundary and doesn't contribute to Microsoft's broader model training. This configuration is set at the Azure AI Foundry project level and applies to all model deployments within that project.
+You configure Microsoft Foundry project settings to opt out of training data collection for all enterprise tenant deployments. The `customerManagedKey` and `publicNetworkAccess: Disabled` settings ensure customer code stays within the contracted boundary and doesn't contribute to Microsoft's broader model training. This configuration is set at the Microsoft Foundry project level and applies to all model deployments within that project.
 
 Purpose limitation logging tracks how code is used. Every time code flows through an agent, the processing logs include the purpose: "code review - security analysis", "code review - quality assessment", "audit - compliance verification". When enterprise customers request data processing records, you provide a complete purpose log showing their code was processed only for the contracted code review service, never for other purposes.
 
@@ -150,21 +147,13 @@ Consent status is tracked per tenant. The data processing agreement with each en
 
 Enterprise customer source code is intellectual property protected by confidentiality agreements. Many contracts specify that code must remain in a particular Azure region to comply with data sovereignty requirements or corporate policy. For customers in Europe, GDPR considerations may require code to stay within EU data centers.
 
-You design data flow architecture that proves code never leaves the contracted region. All Azure AI Foundry resources—model deployments, vector stores, search indices, blob storage—are deployed in the same Azure region specified in the customer's contract. Network egress is locked down using private endpoints and VNet integration. The orchestrator coordinates agents using regional endpoints only, preventing code from being routed through global endpoints that might cross regions.
+You design data flow architecture that proves code never leaves the contracted region. All Microsoft Foundry resources—model deployments, vector stores, search indices, blob storage—are deployed in the same Azure region specified in the customer's contract. Network egress is locked down using private endpoints and VNet integration. The orchestrator coordinates agents using regional endpoints only, preventing code from being routed through global endpoints that might cross regions.
 
 Data flow diagrams document the complete path code takes through the system. The diagram shows: code submission arrives via API Management in the contracted region, code flows to storage account in the same region (with geo-replication disabled to prevent region copies), all agent processing occurs in compute resources within the region, reasoning traces and audit logs write to Log Analytics workspace in the region, and code review results return through the regional API gateway. Every component includes the region designation, making the diagram a compliance artifact for demonstrating data residency.
 
 For customers with different residency requirements, you maintain regional deployments. European customers' code processes through agents deployed in the West Europe region. US customers with FedRAMP requirements use agents in US Government regions. This regional separation is enforced at the Azure subscription level—different subscriptions for different compliance boundaries, preventing accidental cross-region data flow even during development or operations.
 
 > [!TIP]
-> **Pause and reflect:** A developer commits code containing a hardcoded API key inside a comment that also references a colleague by name. The code flows through your eight-agent review pipeline. How would you design the PII detection stage to handle both the credential and the personal reference without losing the code review's technical value?
+> A developer commits code containing a hardcoded API key inside a comment that also references a colleague by name. The code flows through your eight-agent review pipeline. How would you design the PII detection stage to handle both the credential and the personal reference without losing the code review's technical value?
 
 With comprehensive privacy protection in place—PII detection before agent processing, data minimization per agent function, consent and purpose enforcement, and regional data residency controls—you ensure Fabrikam's multi-agent system respects the confidentiality of enterprise source code. The final governance dimension establishes accountability mechanisms that prove the system operates as designed and enables continuous improvement through audit feedback.
-
-## Unit summary
-
-- **PII in source code** includes developer emails, hardcoded credentials, real customer data in test files, and personal names in comments—each requiring different handling.
-- **Contextual redaction** applies PII-type-specific strategies using Azure AI Content Safety, preserving technical references while removing personal identifiers.
-- **Data minimization** ensures each agent receives only the data required for its specific function, enforced by the orchestrator's input filtering.
-- **Consent and purpose limitation** tracks allowed processing purposes per tenant and opts enterprise deployments out of training data collection.
-- **Data residency controls** use regional deployments with private endpoints and disabled geo-replication to prove code never leaves the contracted Azure region.

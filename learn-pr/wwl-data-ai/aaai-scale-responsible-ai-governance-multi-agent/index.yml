@@ -19,10 +19,10 @@ abstract: |
   - Establish accountability frameworks with complete audit trails for enterprise agent deployments
 prerequisites: |
   Before starting this module, you should have:
-  - Understanding of responsible AI principles and content filtering in Azure AI Foundry
+  - Understanding of responsible AI principles and content filtering in Microsoft Foundry
   - Experience implementing content safety controls with Azure AI Content Safety
   - Familiarity with the Azure AI Evaluation SDK
-  - Experience deploying agents to Azure AI Foundry
+  - Experience deploying agents to Microsoft Foundry
   - Proficiency in Python
 iconUrl: /training/achievements/generic-badge.svg
 levels:

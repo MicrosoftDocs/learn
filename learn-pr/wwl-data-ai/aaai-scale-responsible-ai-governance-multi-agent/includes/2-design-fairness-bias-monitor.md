@@ -1,4 +1,6 @@
-Multi-agent systems introduce a critical fairness challenge that single-agent systems don't face: bias compounds through agent chains. Each agent in your code review pipeline processes the output of the previous agent, creating opportunities for subtle biases to amplify at each stage. Understanding how bias propagates through multi-agent workflows and designing detection mechanisms to identify it in production forms the foundation of responsible AI governance for collaborative agent systems.
+Multi-agent systems introduce a critical fairness challenge that single-agent systems don't face: bias compounds through agent chains. Each agent in your code review pipeline processes the output of the previous agent, creating opportunities for subtle biases to amplify at each stage. Understanding how bias propagates through multi-agent workflows and designing detection mechanisms to identify it in production forms the foundation of responsible AI governance for collaborative agent systems. The Azure AI Evaluation SDK provides the metrics framework and probe-based testing you use to measure consistency, detect disparity, and trace bias sources across agent chains.
+
+The following table highlights how bias differs between single-agent and multi-agent systems:
 
 | Bias Type | Single Agent | Multi-Agent Chain |
 |-----------|--------------|-------------------|
@@ -116,21 +118,3 @@ Once you identify bias sources, you implement targeted mitigations at three inte
 **Monitoring-based correction** catches bias that evades other controls. You configure the disparity detector to not only flag bias but also trigger corrective workflows. When a recommendation shows consistency bias above threshold, the system automatically routes it to a human reviewer along with the disparity test results. The reviewer examines both versions of the recommendation and determines which to deliver to the developer. These human corrections feed back into agent fine-tuning as examples of unbiased judgment.
 
 With fairness metrics defined, automated detection running, and bias sources traceable through provenance, you ensure Fabrikam's multi-agent system delivers equitable code reviews. The next critical governance dimension is transparency—developers need to understand not just what the agents recommend, but how multiple agents collaborated to reach those conclusions.
-
-## Unit summary
-
-- **Bias compounding** occurs when each agent in a chain operates on processed representations, amplifying subtle framing biases through multiple stages.
-- **Fairness metrics** define measurable targets—consistency, false positive rate parity, and recommendation balance—that quantify equitable treatment.
-- **Disparity testing** submits identical code with and without author context, flagging cases where cosine similarity drops below 0.95.
-- **Adversarial probe sets** use functionally equivalent code pairs to detect systematic biases toward specific frameworks or architectural patterns.
-- **Causal tracing** isolates which agent introduced bias by replaying submissions through the pipeline from different injection points.
-
-## Check your understanding
-
-**1. Fabrikam's multi-agent code review pipeline shows different average sentiment scores across developer groups. A single agent's bias is small (2% difference), but the end-to-end pipeline shows a 15% gap. What explains this?**
-
-- A. The final synthesis agent is introducing most of the bias on its own
-- B. Small biases in individual agents compound through the pipeline — each agent amplifies the slight differences introduced by prior agents
-- C. The test data set contains more submissions from one group than another
-
-***Correct answer: B.*** Bias compounding is a key characteristic of multi-agent systems. A framing agent's slight word choice difference affects the scoring agent's perception, which affects the recommendation agent's output. Small per-agent biases multiply rather than average out.

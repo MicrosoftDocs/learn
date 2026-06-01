@@ -1,4 +1,6 @@
-When Fabrikam's multi-agent system recommends blocking a critical code deployment, developers and their managers need verifiable explanations for why the AI made this determination. When enterprise customers face compliance audits, they need proof that AI-driven decisions followed documented processes and applied controls consistently. When fairness monitoring detects bias, you need historical logs to understand how it developed and trace responsibility for remediation. Accountability in multi-agent systems requires immutable audit trails, clear responsibility assignment, queryable compliance reporting, and feedback loops that close the gap between audit findings and system improvement.
+When Fabrikam's multi-agent system recommends blocking a critical code deployment, developers and their managers need verifiable explanations for why the AI made this determination. When enterprise customers face compliance audits, they need proof that AI-driven decisions followed documented processes and applied controls consistently. When fairness monitoring detects bias, you need historical logs to understand how it developed and trace responsibility for remediation. Accountability in multi-agent systems requires immutable audit trails, clear responsibility assignment, queryable compliance reporting, and feedback loops that close the gap between audit findings and system improvement. Azure Monitor Log Analytics captures every decision point in the workflow, and Kusto Query Language (KQL) enables the compliance queries that turn raw logs into regulatory evidence.
+
+The following table contrasts key accountability elements between manual review and an AI-governed system:
 
 | Accountability Element | Manual Review Process | Multi-Agent Governed System |
 |------------------------|----------------------|----------------------------|
@@ -20,7 +22,9 @@ These logs are structured as JSON documents for queryability. Each log entry inc
 
 Audit credibility requires immutability—logs that can't be altered after creation. If logs can be edited, they lose value as evidence. Regulatory frameworks like SOC 2 and GDPR require demonstrable controls ensuring audit logs remain unmodified.
 
-You implement immutable logging using Azure Monitor Log Analytics configured with immutable workspace settings. When immutability is enabled, log entries become write-only after ingestion—they can be queried but never modified or deleted until the retention period expires. The retention period matches customer contract requirements, typically 7 years for financial services customers and 3 years for other enterprises.
+You store audit logs in Azure Monitor Log Analytics, configuring workspace-level and table-level retention periods to match customer contract requirements—typically 7 years for financial services customers and 3 years for other enterprises. Log Analytics supports interactive retention of up to 730 days and long-term archival retention of up to 12 years, giving you a single queryable store across the full compliance window.
+
+For regulated industries that require WORM-compliant (write-once, read-many) audit storage—such as financial services customers subject to SEC Rule 17a-4(f) or FINRA Rule 4511—you export Log Analytics data to Azure Blob Storage and apply a locked time-based retention policy. With the policy locked, blobs can be read and queried but can never be modified or deleted until the retention period expires, satisfying the tamper-evidence requirements regulators demand. Exporting via a Diagnostic Settings data export rule keeps the pipeline automated and auditable.
 
 The audit log schema standardizes across all agents:
 
@@ -123,10 +127,3 @@ Remediation follows a controlled process: create a fix in the development enviro
 This closed-loop process ensures accountability mechanisms don't just document problems but drive systematic improvement. Audit findings become the backlog of responsible AI enhancements, prioritized alongside feature development.
 
 With comprehensive accountability in place—immutable audit logs capturing complete decision trails, clear responsibility assignment across the multi-agent system, queryable compliance reporting, and feedback loops closing the gap between audit and improvement—you ensure Fabrikam's agents operate transparently and improve continuously. You've now implemented the four pillars of responsible AI governance for multi-agent systems: fairness monitoring, transparency, privacy protection, and accountability. In the hands-on exercise, you apply these governance practices to a working multi-agent deployment.
-
-## Unit summary
-
-- **Immutable audit logs** use Azure Monitor Log Analytics with write-only retention to capture every decision point across the multi-agent workflow.
-- **Responsibility matrices** assign clear accountability to AI product teams, Responsible AI Officers, and enterprise customers for different aspects of system operation.
-- **KQL compliance queries** generate monthly reports on adoption rates, fairness disparities, and agent version tracking for regulatory audits.
-- **Feedback loops** connect monthly audit findings to remediation tickets, ensuring bias detections and quality issues drive systematic agent improvements.

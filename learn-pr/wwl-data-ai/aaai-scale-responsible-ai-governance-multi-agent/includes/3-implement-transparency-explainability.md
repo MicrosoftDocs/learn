@@ -1,4 +1,6 @@
-When Fabrikam's agents produce a code review with 12 findings spanning security vulnerabilities, quality improvements, and architectural recommendations, developers face a critical question: which agent made which determination, and on what basis? Multi-agent systems fragment the decision-making process across multiple models, making attribution and explainability significantly more complex than single-agent scenarios. Implementing transparency for multi-agent outputs requires designing structured attribution formats, capturing verifiable reasoning traces, and aggregating explanations without obscuring individual agent contributions.
+When Fabrikam's agents produce a code review with 12 findings spanning security vulnerabilities, quality improvements, and architectural recommendations, developers face a critical question: which agent made which determination, and on what basis? Multi-agent systems fragment the decision-making process across multiple models, making attribution and explainability significantly more complex than single-agent scenarios. Implementing transparency for multi-agent outputs requires designing structured attribution formats, capturing verifiable reasoning traces, and aggregating explanations without obscuring individual agent contributions. Azure Monitor Log Analytics stores the complete reasoning traces and attribution records that make this transparency verifiable for both developers and compliance auditors.
+
+The following table contrasts how transparency requirements scale from single-agent to multi-agent systems:
 
 | Transparency Requirement | Single Agent | Multi-Agent System |
 |--------------------------|--------------|-------------------|
@@ -132,16 +134,8 @@ The developer view includes an overall confidence level for the entire review: "
 
 Enterprise customers in regulated industries require proof that AI systems make decisions based on documented logic, not unexplained model behavior. You implement comprehensive transparency logging that captures all elements regulators might examine.
 
-Every agent interaction logs: the full reasoning trace from input to recommendation, the aggregated explanation presented to the developer, the developer's response to each finding (accepted/rejected/modified), the timestamp and agent version for reproducibility, and any human override decisions made during review. These logs persist in immutable storage (Azure Monitor Log Analytics with immutable workspace settings) for the retention period specified in customer contracts—typically 7 years for financial services customers.
+Every agent interaction logs: the full reasoning trace from input to recommendation, the aggregated explanation presented to the developer, the developer's response to each finding (accepted/rejected/modified), the timestamp and agent version for reproducibility, and any human override decisions made during review. These logs persist in Azure Monitor Log Analytics, with retention periods configured per customer contract—typically 7 years for financial services customers. For regulated industries requiring WORM-compliant tamper-evident storage, logs are exported to Azure Blob Storage with a locked time-based retention policy.
 
 The logs support audit queries like "show all security findings for customer X in Q2 2026 where the AI recommendation was overridden by a human reviewer" or "demonstrate the evidence chain for the SQL injection finding in submission #12847." Regulators can trace from the final recommendation back through the reasoning chain to the original code input, verifying that decisions followed documented logic rather than arbitrary model outputs.
 
 With transparency mechanisms in place—attribution to specific agents, verifiable reasoning traces, coherent aggregated explanations, and comprehensive audit logging—you make Fabrikam's multi-agent system accountable. Developers understand the basis for recommendations, and enterprise customers can demonstrate AI governance to regulators. The next governance layer protects the privacy of the proprietary code flowing through your agent pipelines.
-
-## Unit summary
-
-- **Attribution** links every finding to the specific agent, role, task, and confidence level that produced it, enabling targeted feedback loops.
-- **Verifiable reasoning traces** capture evidence-based decision pathways—pattern matches, code evidence, and external references—rather than post-hoc rationalization.
-- **Aggregated explanations** group findings by code location while preserving agent attribution, highlighting convergence when multiple agents flag related issues.
-- **Dual presentation** provides a developer-focused summary for daily workflow and a detailed audit trail for compliance investigations.
-- **Transparency logging** persists complete reasoning chains in immutable storage for regulatory audit queries spanning years.
