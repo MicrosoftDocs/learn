@@ -1,4 +1,6 @@
-Enterprise multi-agent deployments face a critical control challenge: what constitutes a new agent version, who approves version changes, and how do version updates propagate across dozens of customer tenants with different risk tolerances? Unlike traditional software versioning where you track only code changes, agent versioning requires coordinating multiple interdependent components—model deployments, system prompts, tool configurations, and evaluation baselines—each of which can change independently. Designing comprehensive versioning and approval workflows ensures Fabrikam's agents update safely without introducing unapproved changes into production environments.
+Microsoft Foundry stores agent configurations—model deployments, system prompts, and tool settings—as versioned artifacts managed through controlled deployment workflows. In this unit, you design the version manifests, approval gates, and tenant rollout controls that govern how those configuration changes propagate safely into production.
+
+## Understand agent version complexity
 
 | Version Component | Traditional Software | Multi-Agent System |
 |-------------------|---------------------|-------------------|
@@ -7,11 +9,9 @@ Enterprise multi-agent deployments face a critical control challenge: what const
 | Configuration | Config files | System prompts + tool schemas |
 | Quality baseline | Test suite results | Evaluation benchmark scores |
 
-## Understand agent version complexity
-
 Agent versioning differs fundamentally from software versioning because the "code" that determines agent behavior includes components that change at different rates and through different processes. The orchestrator code changes when you modify agent coordination logic—perhaps adding a new agent to the pipeline or changing how outputs aggregate. This code deploys through standard CI/CD pipelines with source control and code review.
 
-Model deployments change when Azure OpenAI releases new model versions or you switch between models for performance or cost reasons. Model version changes don't go through source control—they're configuration changes in Azure AI Foundry that point to different model endpoints. However, model changes significantly impact agent behavior. Upgrading from GPT-4 to GPT-4 Turbo changes response characteristics, latency, and token consumption even if the system prompt remains identical.
+Model deployments change when Azure OpenAI releases new model versions or you switch between models for performance or cost reasons. Model version changes don't go through source control—they're configuration changes in Microsoft Foundry that point to different model endpoints. However, model changes significantly impact agent behavior. Upgrading from gpt-4o (2024-08-06) to gpt-4.1 (2025-04-14) changes response characteristics, latency, and token consumption even if the system prompt remains identical.
 
 System prompts change when you refine agent instructions to improve accuracy, reduce bias, or add new capabilities. Prompt engineering is iterative—small wording changes can substantially alter outputs. A prompt change might say "identify potential security issues" versus "identify confirmed security vulnerabilities"—the second phrasing reduces false positives but might miss emerging threats. These changes require careful evaluation before production deployment.
 
@@ -32,10 +32,10 @@ agent_version_manifest:
   
   # Model deployment configuration
   model:
-    deployment_name: gpt-4-turbo-fabrikam-prod
-    model_name: gpt-4-turbo
-    model_version: "2024-04-09"
-    api_version: "2024-02-01"
+    deployment_name: gpt-4o-fabrikam-prod
+    model_name: gpt-4o
+    model_version: "2024-11-20"
+    api_version: "2024-12-01-preview"  # Use the current stable API version; see Microsoft Foundry API lifecycle docs
     temperature: 0.3
     max_tokens: 2000
     endpoint: https://fabrikam-prod-eastus.openai.azure.com/
@@ -89,7 +89,7 @@ Version manifests also enable rollback. If version 2.3 shows unexpected behavior
 
 ## Implement automated and manual approval gates
 
-Not all agent changes carry equal risk. Updating a dependency package version or adjusting temperature from 0.3 to 0.28 (minor tuning) represents low risk and can flow through automated approval gates. Replacing the model from GPT-4 to GPT-4 Turbo or rewriting the system prompt represents high risk and requires manual review before production deployment.
+Not all agent changes carry equal risk. Updating a dependency package version or adjusting temperature from 0.3 to 0.28 (minor tuning) represents low risk and can flow through automated approval gates. Replacing the model from gpt-4o to gpt-4.1 or rewriting the system prompt represents high risk and requires manual review before production deployment.
 
 You design tiered approval gates based on change risk assessment:
 
@@ -132,8 +132,6 @@ During the pin period, the tenant continues running the pinned version even as n
 
 **Security exceptions** override pins. The `force-upgrade-on-critical-cve` policy means that if a critical security vulnerability is discovered in the pinned version, the pin is automatically lifted and the tenant is upgraded to a patched version within 24 hours. This ensures security response isn't delayed by version pins. The tenant receives notification of the forced upgrade along with the CVE details justifying the override.
 
-With comprehensive versioning in place—manifests capturing complete agent state, tiered approval gates based on change risk, controlled rollout across customer tiers, and version pinning with security overrides—you ensure Fabrikam's multi-agent system updates safely and predictably across diverse enterprise deployments. The next operational governance challenge is ensuring fair resource allocation when multiple tenants compete for limited model capacity and compute resources.
-
 ## EU AI Act change-management obligations
 
 For organizations deploying multi-agent AI systems in the European Union, the EU AI Act imposes change-management obligations that extend beyond the internal governance patterns covered in this unit. High-risk AI systems \u2014 a classification that may apply to agents involved in employment screening, credit scoring, or clinical decision support \u2014 must maintain a **technical file** documenting the system's design, capabilities, intended purpose, and evidence of conformity assessment.
@@ -142,12 +140,12 @@ Material changes to a high-risk AI system trigger re-assessment obligations. A "
 
 Integrate EU AI Act documentation requirements into your version manifest schema: add an `eu_ai_act_risk_classification` field, a `material_change_assessment` boolean, and a `technical_file_reference` linking to the conformity documentation. This aligns governance tooling with regulatory obligations without creating a separate parallel process.
 
-> [!NOTE]
-> **EU AI Act scope (Training only):** EU AI Act compliance is included in this training as essential context for architects designing governance for EU-regulated workloads. It is not a direct exam blueprint item for AI-500. Classification criteria, specific high-risk categories, and notified-body procedures are specialist legal knowledge; consult Microsoft's EU AI Act guidance documentation for implementation details.
+Version governance transforms what could be an unpredictable multi-agent environment into a controlled one: every running agent traces back to an approved manifest, every customer's risk tolerance is respected through rollout tiers and version pins, and every high-risk change passes through appropriate human review before reaching production. Fair resource allocation across those tenants is the next governance challenge.
 
-## Unit summary
+## Key takeaways
 
 - **Version manifests** capture the complete agent state—model deployment, system prompt hash, tool configurations, and evaluation baselines—in a YAML document stored in source control.
 - **Tiered approval gates** route low-risk changes through automated validation and high-risk changes through manual review by product owners or the Responsible AI Officer.
 - **Rollout tiers** deploy approved versions to aggressive adopters immediately, standard adopters after 7 days, and conservative adopters after 30 days of production validation.
 - **Version pinning** lets enterprise customers freeze on a specific version for up to 90 days, with security exceptions that override pins for critical CVEs.
+- **EU AI Act obligations** require high-risk AI systems to maintain a technical file for each approved version; version manifests — with `eu_ai_act_risk_classification` and `material_change_assessment` fields added to the schema — serve as that artifact, aligning governance tooling with regulatory requirements.

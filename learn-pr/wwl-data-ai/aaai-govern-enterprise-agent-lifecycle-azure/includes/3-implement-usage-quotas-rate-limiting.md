@@ -1,4 +1,6 @@
-When Fabrikam's code review agents serve 20+ enterprise tenants from shared Azure OpenAI deployments, resource contention becomes inevitable. A single tenant running a large batch code review—processing 500 files simultaneously during a sprint retrospective—can exhaust available tokens per minute (TPM) quota, causing request failures and timeouts for all other tenants trying to submit code. Without quota enforcement and rate limiting, one customer's usage surge degrades service quality for everyone. Implementing fair resource allocation requires multi-level quota architecture, tenant-based rate limiting, priority-tier allocation, and resilient quota-exceeded handling in agent code.
+Azure API Management and Azure OpenAI work together to enforce token-based quotas across tenants sharing model deployments, preventing any single tenant from monopolizing capacity. In this unit, you configure multi-level quota controls, APIM token-limit policies, and resilient retry logic to keep resource allocation fair across all enterprise customers.
+
+## Understand the quota storm problem
 
 | Resource Control | Uncontrolled System | Quota-Governed System |
 |------------------|---------------------|----------------------|
@@ -6,9 +8,7 @@ When Fabrikam's code review agents serve 20+ enterprise tenants from shared Azur
 | Overload behavior | Global degradation | Isolated to heavy users |
 | Cost predictability | Unlimited spikes | Capped per tenant |
 
-## Understand the quota storm problem
-
-The quota storm scenario occurs when resource demand exceeds supply, and no controls prevent one consumer from monopolizing capacity. In Fabrikam's multi-agent deployment, the bottleneck is Azure OpenAI API quota measured in tokens per minute. Each model deployment has a maximum TPM determined by Azure capacity allocation. For example, the GPT-4 Turbo deployment might have 240,000 TPM available across all tenants.
+The quota storm scenario occurs when resource demand exceeds supply, and no controls prevent one consumer from monopolizing capacity. In Fabrikam's multi-agent deployment, the bottleneck is Azure OpenAI API quota measured in tokens per minute. Each model deployment has a maximum TPM determined by Azure capacity allocation. For example, the gpt-4o deployment might have 240,000 TPM available across all tenants.
 
 During normal operation, tenant usage stays well below capacity—most code submissions are small individual file reviews consuming 2,000-5,000 tokens each. Requests process quickly, and quota headroom remains high. However, when one tenant triggers batch processing of an entire microservice repository (200 files, 500,000 tokens total), the quota consumption spikes. If that batch processes as 50 concurrent requests, it attempts to consume 50,000+ TPM for several minutes.
 
@@ -20,9 +20,9 @@ The problem compounds in multi-agent workflows because each agent in the pipelin
 
 Effective quota governance requires controls at three levels: model API quotas at the Azure OpenAI service level, agent-level quotas controlling access to individual agents, and tenant-level quotas capping total consumption per customer.
 
-**Model API quotas** are configured in Azure OpenAI service deployments. Each model deployment has a TPM limit set based on your subscription allocation. You create separate deployments for different purposes: a `gpt-4-turbo-production` deployment with 200,000 TPM for customer-facing agents, a `gpt-4-turbo-batch` deployment with 40,000 TPM specifically for batch processing workloads, and a `gpt-4-turbo-internal` deployment with 20,000 TPM for Fabrikam's internal testing and development.
+**Model API quotas** are configured in Azure OpenAI service deployments. Each model deployment has a TPM limit set based on your subscription allocation. You create separate deployments for different purposes: a `gpt-4o-production` deployment with 200,000 TPM for customer-facing agents, a `gpt-4o-batch` deployment with 40,000 TPM specifically for batch processing workloads, and a `gpt-4o-internal` deployment with 20,000 TPM for Fabrikam's internal testing and development.
 
-This separation prevents batch workloads from impacting interactive usage. When a tenant runs a large batch review, it routes to the batch deployment with lower TPM but dedicated capacity. Interactive single-file reviews use the production deployment with higher capacity optimized for latency. The deployments are isolated—exhausting quota on the batch deployment doesn't affect the production deployment.
+This separation prevents batch workloads from impacting interactive usage. When a tenant runs a large batch review, it routes to the `gpt-4o-batch` deployment with lower TPM but dedicated capacity. Interactive single-file reviews use the `gpt-4o-production` deployment with higher capacity optimized for latency. The deployments are isolated—exhausting quota on the batch deployment doesn't affect the production deployment.
 
 **Agent-level quotas** control requests per minute to each agent API. You implement these using Azure API Management (APIM) rate-limit policies. Each agent has a published API endpoint through APIM, and you configure rate limits based on the agent's capacity and typical usage. The security analyzer endpoint allows 1,000 requests per minute globally. The preprocessing agent, which handles higher volume since it's the entry point for all code reviews, allows 2,000 requests per minute.
 
@@ -34,7 +34,7 @@ These quotas prevent cost surprises and ensure resource fairness. A Developer ti
 
 ## Implement tenant-based rate limiting with APIM
 
-Azure API Management enforces tenant quotas using the `rate-limit-by-key` policy keyed on tenant identifiers. Each API request to Fabrikam's agent endpoints includes a tenant ID in the request headers (injected by the orchestrator based on the code submission source). APIM extracts this tenant ID and applies quota rules.
+Azure API Management enforces tenant quotas using the `llm-token-limit` policy, which limits AI token consumption per tenant rather than counting HTTP requests. Request-count policies fail to prevent quota storms because a single large-prompt request can consume as many tokens as hundreds of small ones—exactly the batch processing scenario described earlier. The `llm-token-limit` policy understands token consumption natively: it precalculates prompt tokens before forwarding to the backend, enforces per-minute token rates, and applies monthly token quotas. Each API request to Fabrikam's agent endpoints includes a tenant ID in the request headers (injected by the orchestrator based on the code submission source). APIM extracts this tenant ID and applies token quota rules.
 
 ```xml
 <policies>
@@ -52,48 +52,58 @@ Azure API Management enforces tenant quotas using the `rate-limit-by-key` policy
             return "developer";
         }" />
         
-        <!-- Apply rate limit based on tier -->
+        <!-- Apply token limit per tier: tokens-per-minute (rate) + token-quota (monthly ceiling) -->
         <choose>
             <when condition="@((string)context.Variables["quotaTier"] == "premium")">
-                <rate-limit-by-key calls="500" renewal-period="3600" 
-                                 counter-key="@((string)context.Variables["tenantId"])" />
+                <llm-token-limit counter-key="@((string)context.Variables["tenantId"])"
+                                 tokens-per-minute="60000"
+                                 token-quota="2000000"
+                                 token-quota-period="Monthly"
+                                 estimate-prompt-tokens="true"
+                                 remaining-quota-tokens-variable-name="remainingQuota" />
             </when>
             <when condition="@((string)context.Variables["quotaTier"] == "standard")">
-                <rate-limit-by-key calls="200" renewal-period="3600" 
-                                 counter-key="@((string)context.Variables["tenantId"])" />
+                <llm-token-limit counter-key="@((string)context.Variables["tenantId"])"
+                                 tokens-per-minute="25000"
+                                 token-quota="750000"
+                                 token-quota-period="Monthly"
+                                 estimate-prompt-tokens="true"
+                                 remaining-quota-tokens-variable-name="remainingQuota" />
             </when>
             <otherwise>
-                <rate-limit-by-key calls="50" renewal-period="3600" 
-                                 counter-key="@((string)context.Variables["tenantId"])" />
+                <llm-token-limit counter-key="@((string)context.Variables["tenantId"])"
+                                 tokens-per-minute="5000"
+                                 token-quota="100000"
+                                 token-quota-period="Monthly"
+                                 estimate-prompt-tokens="true"
+                                 remaining-quota-tokens-variable-name="remainingQuota" />
             </otherwise>
         </choose>
-        
-        <!-- Allow burst capacity: short-term exceeds with lower sustained rate -->
-        <quota-by-key calls="600" renewal-period="3600" 
-                     counter-key="@((string)context.Variables["tenantId"])" />
     </inbound>
     <backend>
         <forward-request />
     </backend>
     <outbound>
-        <!-- Include quota usage in response headers -->
-        <set-header name="X-Quota-Remaining" exists-action="override">
-            <value>@(context.Response.Headers.GetValueOrDefault("RateLimit-Remaining", "0"))</value>
+        <!-- Include remaining token quota in response headers -->
+        <set-header name="X-Quota-Tokens-Remaining" exists-action="override">
+            <value>@(context.Variables.GetValueOrDefault("remainingQuota", "0").ToString())</value>
         </set-header>
     </outbound>
     <on-error>
-        <!-- Return structured error for quota exceeded -->
+        <!-- 429 = per-minute rate exceeded; 403 = monthly quota exhausted -->
         <return-response>
-            <set-status code="429" reason="Too Many Requests" />
+            <set-status code="@(context.Response.StatusCode)" reason="@(context.Response.StatusReason)" />
             <set-header name="Retry-After" exists-action="override">
                 <value>60</value>
             </set-header>
             <set-body>@{
+                var isRateLimit = context.Response.StatusCode == 429;
                 return new JObject(
-                    new JProperty("error", "quota_exceeded"),
-                    new JProperty("message", "Tenant request quota exceeded. Current tier allows " + 
-                                 context.Variables["quotaTier"] + " requests per hour."),
-                    new JProperty("retry_after_seconds", 60)
+                    new JProperty("error", isRateLimit ? "token_rate_limit_exceeded" : "token_quota_exceeded"),
+                    new JProperty("message", isRateLimit
+                        ? "Token rate limit exceeded. Retry after the specified interval."
+                        : "Monthly token quota exhausted. Upgrade subscription tier or wait for quota reset."),
+                    new JProperty("retry_after_seconds", isRateLimit ? 60 : 0)
                 ).ToString();
             }</set-body>
         </return-response>
@@ -101,9 +111,9 @@ Azure API Management enforces tenant quotas using the `rate-limit-by-key` policy
 </policies>
 ```
 
-This policy implements several sophisticated controls. The `rate-limit-by-key` provides short-term rate limiting preventing request bursts, while `quota-by-key` enforces longer-term capacity limits. The burst allowance means a Premium tier tenant can briefly exceed 500 requests per hour during a legitimate spike, but sustained overuse is blocked.
+The `llm-token-limit` policy enforces two complementary controls per tenant. The `tokens-per-minute` limit prevents burst spikes—a Standard tenant attempting to process 25,000 tokens in a single second is throttled after the per-minute bucket is exhausted, returning HTTP 429 with a `Retry-After` header. The `token-quota` enforces a monthly ceiling—when a Standard tenant exhausts their 750,000-token monthly allocation, subsequent requests return HTTP 403 until the quota resets. Setting `estimate-prompt-tokens="true"` enables APIM to precalculate prompt size before forwarding, rejecting oversized prompts before they consume backend capacity.
 
-The quota counters are scoped per tenant—each tenant's quota consumption increments independently. When tenant A exhausts their quota, they receive 429 responses while tenant B's requests continue succeeding. This isolation prevents one tenant's behavior from affecting others.
+The quota counters are scoped per tenant—each tenant's token consumption increments independently. When tenant A exhausts their rate limit, they receive 429 responses while tenant B's requests continue succeeding. This isolation prevents one tenant's behavior from affecting others.
 
 ## Allocate quota by priority tier
 
@@ -217,49 +227,35 @@ class QuotaAwareAgentClient:
         return requests.post(self.agent_endpoint, json=payload, headers=headers)
     
     def _log_quota_event(self, tenant_id: str, attempt: int, delay: float):
-        """Log quota event to Application Insights for monitoring."""
-        from applicationinsights import TelemetryClient
+        """Log quota event to Azure Monitor for monitoring.
         
-        telemetry = TelemetryClient('<instrumentation-key>')
+        Requires configure_azure_monitor() called at application startup.
+        Install: pip install azure-monitor-opentelemetry
+        """
+        from opentelemetry import trace
         
-        telemetry.track_event(
-            'QuotaExceeded',
-            {
-                'tenant_id': tenant_id,
-                'retry_attempt': attempt,
-                'backoff_delay_seconds': delay,
-                'agent_endpoint': self.agent_endpoint
-            },
-            {
-                'delay_seconds': delay
-            }
-        )
-        telemetry.flush()
+        tracer = trace.get_tracer(__name__)
+        
+        with tracer.start_as_current_span("quota_exceeded") as span:
+            span.set_attribute("tenant_id", tenant_id)
+            span.set_attribute("retry_attempt", attempt)
+            span.set_attribute("backoff_delay_seconds", delay)
+            span.set_attribute("agent_endpoint", self.agent_endpoint)
 ```
 
 The exponential backoff prevents the "thundering herd" problem where all throttled requests retry simultaneously, creating another quota surge. By adding jitter—randomizing the delay between 50% and 100% of the calculated backoff—requests spread out over time. When 100 requests hit quota limits simultaneously, they retry at staggered intervals rather than all retrying at exactly the same moment.
 
 The structured error response ensures quota failures are visible to the orchestrator. If an agent can't complete after max retries, the orchestrator can make routing decisions: queue the code review for later processing when quota availability improves, notify the tenant that their quota is exhausted with options to upgrade their subscription tier, or route to a fallback agent using a different model deployment with available quota.
 
-> [!TIP]
+> [!NOTE]
 > **Pause and reflect:** A premium-tier customer submits a 500-file batch review at the same time a standard-tier customer submits a single urgent security scan. Your shared Azure OpenAI deployment is at 85% TPM capacity. How would you configure your quota architecture to ensure both customers get acceptable service?
 
-With comprehensive quota governance in place—multi-level architecture separating batch and interactive workloads, tenant-based rate limiting with priority tiers, and resilient quota handling with exponential backoff—you ensure Fabrikam's multi-agent platform provides fair, predictable resource allocation across all enterprise customers. The next governance challenge is making AI costs transparent and attributable so teams understand and can optimize their spending.
+Quota governance makes shared Azure OpenAI deployments viable at scale. When each tenant's usage is bounded—by workload-isolated model deployments, per-tenant token limits enforced at the API gateway, and priority-tier allocation that reserves capacity for premium customers—the platform can serve dozens of enterprise customers from the same infrastructure without any one of them degrading the others' experience. Making those bounded costs visible and attributable to individual teams is the next governance challenge.
 
-## Unit summary
+## Key takeaways
 
 - **Quota storms** occur when one tenant's batch processing exhausts shared Azure OpenAI TPM capacity, causing cascading 429 errors for all tenants.
 - **Multi-level architecture** separates model API quotas, agent-level rate limits, and tenant-level consumption caps to isolate overload to individual consumers.
-- **APIM rate limiting** applies tenant-specific quotas using `rate-limit-by-key` policies that enforce tier-based request and token limits at the API gateway.
+- **APIM rate limiting** applies tenant-specific token quotas using the `llm-token-limit` policy that enforces tier-based tokens-per-minute rates and monthly token ceilings at the API gateway.
 - **Priority-tier allocation** reserves capacity proportionally—60% for premium, 30% for standard, 10% for developer—with dynamic enforcement during high-demand periods.
 - **Exponential backoff with jitter** prevents thundering herd retries when quota is exceeded, spreading retry attempts over time to avoid amplifying load spikes.
-
-## Check your understanding
-
-**1. A premium tenant and a developer tenant both submit requests when the system is at 90% capacity. How should the quota system handle this?**
-
-- A. Process both requests equally on a first-come, first-served basis
-- B. The premium tenant's request proceeds using its reserved capacity allocation, while the developer tenant's request is rate-limited or queued based on its lower priority tier
-- C. Reject both requests until capacity drops below 80%
-
-***Correct answer: B.*** Priority-tier allocation reserves capacity proportionally (e.g., 60% premium, 30% standard, 10% developer). During high demand, each tier is enforced — premium tenants access their reserved capacity while lower-priority requests are throttled.

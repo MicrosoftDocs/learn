@@ -1,12 +1,12 @@
-Agents don't run forever. Models get deprecated, security patches require version upgrades, and new agents with better capabilities replace older implementations. At Fabrikam, zombie agents—retired versions that continue running in forgotten deployments—consume compute resources, accumulate security vulnerabilities, and produce inconsistent outputs when paired with updated agents in the same orchestration pipeline. Establishing comprehensive retirement and deprecation processes ensures outdated agents are decommissioned gracefully, dependent systems migrate to supported versions, and resources are reclaimed without disrupting production workloads.
+The Microsoft Foundry Control Plane gives you visibility into every deployed agent—its version, operational status, error rate, and monthly cost—making it the central tool for identifying and decommissioning agents that are no longer needed. In this unit, you use the Foundry portal alongside retirement checklists, graceful deprecation patterns, and governance processes to manage the full agent lifecycle through to safe decommissioning.
+
+## Recognize hidden costs of zombie agents
 
 | Retirement Challenge | Uncontrolled Deprecation | Governed Retirement Process |
 |---------------------|--------------------------|----------------------------|
 | Zombie agents | Accumulate indefinitely | Systematic decommissioning |
 | Dependency tracking | Unknown (breaks on deletion) | Documented and verified |
 | Security patches | Can't force upgrades | Controlled migration windows |
-
-## Recognize hidden costs of zombie agents
 
 Zombie agents are deprecated versions still running in production because no one verified dependencies or executed retirement. These agents create several classes of problems that compound over time.
 
@@ -22,12 +22,12 @@ Preventing zombie agents requires proactive retirement processes that identify d
 
 ## Plan model deprecation and agent migration
 
-Model deprecation drives many agent retirements. Azure OpenAI announces model deprecation dates months in advance—for example, "GPT-4 version 0613 will be deprecated on September 30, 2024. Migrate to GPT-4 Turbo by that date." When a model your agents depend on reaches deprecation, you must migrate affected agents to supported models.
+Model deprecation drives many agent retirements. Microsoft Foundry announces model retirement dates months in advance—for example, "gpt-4o version 2024-08-06 will retire no earlier than October 15, 2025. Migrate to gpt-4.1 (2025-04-14) by that date." When a model your agents depend on reaches retirement, you must migrate affected agents to supported models.
 
 You implement a deprecation calendar tracking process that monitors Azure OpenAI product announcements and maps model versions to agent dependencies. When a deprecation announcement occurs, the process:
 
 1. **Identifies affected agents** by querying agent version manifests for dependencies on the deprecating model—"Which agents use GPT-4-0613?"
-2. **Assesses migration complexity** by determining whether agents can migrate to the replacement model (GPT-4 Turbo) with minimal changes, or whether the model's different characteristics (longer context window, different token limits, updated training data) require prompt rewrites and re-evaluation
+2. **Assesses migration complexity** by determining whether agents can migrate to the replacement model (gpt-4.1) with minimal changes, or whether the model's different characteristics (longer context window, different token limits, updated training data) require prompt rewrites and re-evaluation
 3. **Sets migration deadlines** at 90, 60, and 30 days before deprecation, creating time-bound milestones for testing, approval, and deployment
 4. **Creates migration tickets** in the development backlog for each affected agent, prioritized by criticality (customer-facing agents migrate before internal tooling)
 
@@ -130,19 +130,18 @@ def perform_legacy_security_analysis(code_data: dict) -> dict:
     return {'findings': [], 'confidence': 0.0}
 
 def log_deprecated_usage(tenant_id: str, agent_version: str):
-    """Log continued usage of deprecated agent for migration progress tracking."""
-    from applicationinsights import TelemetryClient
+    """Log continued usage of deprecated agent for migration progress tracking.
     
-    telemetry = TelemetryClient('<instrumentation-key>')
-    telemetry.track_event(
-        'DeprecatedAgentUsage',
-        {
-            'tenant_id': tenant_id,
-            'agent_version': agent_version,
-            'timestamp': datetime.now(timezone.utc).isoformat()
-        }
-    )
-    telemetry.flush()
+    Requires configure_azure_monitor() called at application startup.
+    Install: pip install azure-monitor-opentelemetry
+    """
+    from opentelemetry import trace
+    
+    tracer = trace.get_tracer(__name__)
+    
+    with tracer.start_as_current_span("deprecated_agent_usage") as span:
+        span.set_attribute("tenant_id", tenant_id)
+        span.set_attribute("agent_version", agent_version)
 ```
 
 This graceful deprecation approach serves dual purposes. Existing users with version pins continue working during their migration window, avoiding abrupt service disruption. New users attempting to integrate with the deprecated agent receive immediate, actionable guidance on migrating to the replacement, including the new endpoint, documentation links, and a timeline for forced migration.
@@ -150,6 +149,8 @@ This graceful deprecation approach serves dual purposes. Existing users with ver
 The deprecation logging tracks migration progress. You monitor how many tenants are still invoking the deprecated endpoint and can proactively reach out to assist with migration as the deletion date approaches.
 
 ## Govern retirement decision-making
+
+Before executing retirement, use the Microsoft Foundry Control Plane to identify aging agents and take initial action. The agent inventory view in the Foundry portal shows all running agents with their version, operational status, error rate, and estimated monthly cost — making zombie agents directly visible when you filter for low-run, high-cost deployments. For hosted agents, the Foundry portal and REST API support stop and start operations that deallocate compute while preserving the deployment record; for custom agents, block and unblock operations prevent new requests without deleting the agent. Use these platform controls to stop or block the retiring agent as soon as the retirement decision is made, preventing new workloads from reaching it while you work through the checklist below.
 
 Who decides when an agent is retired? Individual developers shouldn't unilaterally delete agents without verifying impacts. You establish a governance process with clear roles:
 
@@ -169,15 +170,15 @@ retirement:
   deprecated_date: 2026-05-01
   deletion_date: 2026-06-01
   replacement_agent: security-analyzer-v2
-  justification: "Model dependency (GPT-4-0613) deprecated. Migrated to GPT-4-Turbo in v2."
+  justification: "Model dependency (gpt-4o 2024-08-06) retired. Migrated to gpt-4.1 (2025-04-14) in v2."
   approval:
     approver: governance-committee@fabrikam.com
     approval_date: 2026-04-15
 ```
 
-This governance ensures retirement decisions balance operational efficiency (removing zombie agents quickly) with customer commitment (providing adequate migration time and support). With comprehensive retirement processes in place—model deprecation planning with migration calendars, retirement checklists verifying dependency resolution, graceful deprecation serving existing users during migration windows, and governance processes ensuring responsible decision-making—you manage the complete agent lifecycle from deployment through sunset. Fabrikam's multi-agent platform operates efficiently without accumulating abandoned agents that waste resources and create technical debt.
+A retirement decision is only as good as its execution. The governance framework you've built here—Foundry Control Plane visibility to surface aging agents, checklists that verify every dependency, graceful deprecation that protects pinned tenants during migration windows, and committee sign-off that weighs efficiency against customer commitments—ensures agents reach end of life deliberately rather than accidentally. A platform that decommissions agents cleanly stays lean and secure as it evolves, without the zombie deployments that quietly consume budget and accumulate vulnerabilities.
 
-## Unit summary
+## Key takeaways
 
 - **Zombie agents** are deprecated versions that continue consuming compute, storage, and quota resources while creating security liabilities and output inconsistencies.
 - **Model deprecation planning** maps Azure OpenAI deprecation announcements to affected agents and sets 90/60/30-day migration milestones.
