@@ -158,7 +158,7 @@ Data encryption in transit (TLS 1.2+, mTLS for inter-agent) is mandatory and cov
 - **Customer-managed keys (CMK)**—customer controls key rotation and revocation. Revoke the CMK and all encrypted data becomes inaccessible immediately—the "crypto-shred" capability required by GDPR erasure for data that can't be deleted (backup copies). Required for HIPAA and EU AI Act high-risk classifications in some interpretations.
 - **Double encryption**—encrypt data with CMK, then encrypt the CMK with a Microsoft-managed HSM key. Required for specific government and high-security regulated workloads. Higher cost and operational overhead.
 
-For Fabrikam's GDPR compliance, CMK is recommended for the Cosmos DB multi-tenant storage (enables crypto-shred for erasure requests) and optional for Azure AI Search indexes (data is already minimized and pseudonymized at ingestion).
+For Fabrikam's GDPR compliance, CMK is recommended for the Cosmos DB multitenant storage (enables crypto-shred for erasure requests) and optional for Azure AI Search indexes (data is already minimized and pseudonymized at ingestion).
 
 ## Key takeaways
 

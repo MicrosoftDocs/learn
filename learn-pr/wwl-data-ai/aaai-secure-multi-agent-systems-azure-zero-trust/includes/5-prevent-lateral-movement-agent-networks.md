@@ -11,9 +11,9 @@ Azure Kubernetes Service network policies, Azure Private Link, and Microsoft Sen
 
 The default Kubernetes network behavior allows all pods to communicate with all other pods. This "implicit allow" model enables lateral movement. Replace it with explicit deny-all followed by specific allow rules for legitimate agent communication paths.
 
-In Fabrikam's code review system, the orchestrator agent legitimately calls specialist agents (security scanner, style checker, syntax analyzer). Those specialist agents should not be able to call each other—there's no business reason for the security scanner to communicate with the style checker. A compromised security scanner should be isolated, not able to pivot to other agents.
+In Fabrikam's code review system, the orchestrator agent legitimately calls specialist agents (security scanner, style checker, syntax analyzer). Those specialist agents shouldn't be able to call each other—there's no business reason for the security scanner to communicate with the style checker. A compromised security scanner should be isolated, not able to pivot to other agents.
 
-Implement network policies in Azure Kubernetes Service (AKS) with Azure CNI and NetworkPolicy support:
+Implement network policies in Azure Kubernetes Service (AKS) with Azure container network interface (CNI) and NetworkPolicy support:
 
 ```yaml
 # network-policies/deny-all-default.yaml
@@ -251,7 +251,7 @@ This query identifies agent-to-agent traffic that doesn't match the baseline and
 
 Combine network policies, private endpoints, mutual TLS, and anomaly monitoring to create defense in depth. An attacker must bypass multiple independent security controls to achieve lateral movement. Even if one control fails, others contain the breach.
 
-With network lateral movement defenses in place, the next security layer is multi-tenant data isolation—ensuring that customer data stays strictly separated even when agents serve multiple customers from shared infrastructure.
+With network lateral movement defenses in place, the next security layer is multitenant data isolation—ensuring that customer data stays strictly separated even when agents serve multiple customers from shared infrastructure.
 
 ## Key takeaways
 

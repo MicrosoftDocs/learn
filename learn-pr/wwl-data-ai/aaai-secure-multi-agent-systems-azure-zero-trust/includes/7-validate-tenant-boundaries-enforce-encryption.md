@@ -103,7 +103,7 @@ Generate alerts when:
 
 Treat these alerts as high-priority security incidents requiring immediate investigation.
 
-With tenant context propagation, data layer isolation, boundary validation, customer-managed encryption, and monitoring in place, you establish comprehensive multi-tenant isolation. The final security layer is configuring compliance controls that map regulatory requirements to agent behaviors.
+With tenant context propagation, data layer isolation, boundary validation, customer-managed encryption, and monitoring in place, you establish comprehensive multitenant isolation. The final security layer is configuring compliance controls that map regulatory requirements to agent behaviors.
 
 ## Key takeaways
 

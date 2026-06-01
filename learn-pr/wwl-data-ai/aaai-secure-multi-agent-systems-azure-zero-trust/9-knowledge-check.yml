@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Module assessment."
-  ms.date: 06/05/2026
+  ms.date: 06/01/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
@@ -20,7 +20,7 @@ quiz:
       explanation: "Shared identities violate least privilege and expand the blast radius of any compromise. If the style agent is compromised, it can modify storage artifacts the security agent relies on. Per-agent identities with role-scoped permissions ensure a compromised agent can only access its own designated resources."
     - content: "The shared identity is acceptable as long as all agents run in the same virtual network, which provides sufficient network-layer isolation."
       isCorrect: false
-      explanation: "Network isolation controls communication paths but not authorization. A compromised agent within the same network can still use the shared identity to access resources it shouldn't reach. Zero trust requires both network controls AND per-component identity scoping."
+      explanation: "Network isolation controls communication paths but not authorization. A compromised agent within the same network can still use the shared identity to access resources it shouldn't reach. Zero Trust requires both network controls AND per-component identity scoping."
     - content: "The risk is that shared identities expire simultaneously. Rotating to individual identities with the same permissions solves the expiration coordination problem."
       isCorrect: false
       explanation: "Expiration coordination is an operational concern, not the primary security risk here. The real problem is over-privileged shared access. Individual identities with the SAME permissions don't solve the fundamental least-privilege violation."
@@ -45,4 +45,4 @@ quiz:
       explanation: "GDPR covers all data relating to identifiable individuals. Enterprise source code can contain personal data (developer names in comments, commit metadata, email addresses in configuration files). Additionally, enterprise customer contracts typically include data residency obligations regardless of personal data classification."
     - content: "Encryption in transit between Azure regions satisfies GDPR data transfer requirements, so regional restrictions aren't needed."
       isCorrect: false
-      explanation: "GDPR data transfers to third countries require either adequacy decisions, standard contractual clauses, or other transfer mechanisms—encryption in transit doesn't substitute for these. Within the EU, data can move between EU regions under GDPR, but cross-EU transfers to non-adequate countries require explicit safeguards."
+      explanation: "GDPR data transfers to third countries require either adequacy decisions, standard contractual clauses, or other transfer mechanisms—encryption in transit doesn't substitute for these requirements. Within the EU, data can move between EU regions under GDPR, but cross-EU transfers to nonadequate countries require explicit safeguards."

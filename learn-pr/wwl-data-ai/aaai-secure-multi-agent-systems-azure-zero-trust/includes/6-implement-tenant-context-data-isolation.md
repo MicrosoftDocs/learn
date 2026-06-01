@@ -10,7 +10,7 @@ Azure Cosmos DB partition keys provide database-layer tenant isolation, ensuring
 
 Three isolation models offer different trade-offs between security, cost, and operational complexity.
 
-**Per-tenant agents** provide maximum isolation by deploying completely separate agent instances for each customer. Customer A's orchestrator runs in a different Azure Container Apps environment than Customer B's orchestrator. They share no compute resources, no storage, no network paths. This model provides the strongest security guarantee: compromising one tenant's agents doesn't affect others. The cost is substantial—Fabrikam pays for duplicate infrastructure for every customer—and updating 50 customers requires coordinating 50 separate deployments.
+**Per-tenant agents** provide maximum isolation by deploying separate agent instances for each customer. Customer A's orchestrator runs in a different Azure Container Apps environment than Customer B's orchestrator. They share no compute resources, no storage, no network paths. This model provides the strongest security guarantee: compromising one tenant's agents doesn't affect others. The cost is substantial—Fabrikam pays for duplicate infrastructure for every customer—and updating 50 customers requires coordinating 50 separate deployments.
 
 **Shared agents with logical isolation** run one set of agents that serve all customers. All tenants' requests flow through the same orchestrator instance. Security depends entirely on correct implementation of tenant context validation: the code must verify that every data access belongs to the requesting tenant. This model is cost-efficient (one infrastructure deployment) and simplifies updates (one deployment update reaches all customers), but requires rigorous security engineering.
 
@@ -18,7 +18,7 @@ Three isolation models offer different trade-offs between security, cost, and op
 
 Evaluate your threat model:
 
-- If you handle highly regulated data (healthcare PHI, financial PII), use per-tenant agents or hybrid with per-tenant storage for sensitive data
+- If you handle highly regulated data (healthcare PHI, personal financial data), use per-tenant agents or hybrid with per-tenant storage for sensitive data
 - If you handle less sensitive data and cost efficiency is critical, use shared agents with strict logical isolation
 - If you have a small number of high-value customers, consider per-tenant infrastructure for premium isolation
 

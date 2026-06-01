@@ -270,11 +270,11 @@ New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
 The `defaultDecision = "Deny"` setting ensures stale access is automatically revoked when reviewers don't respond, enforcing least privilege without manual follow-up.
 
-**Penetration testing**: Conduct annual penetration testing of agent endpoints, network controls, and multi-tenant isolation boundaries. Document findings and remediation in compliance evidence repository.
+**Penetration testing**: Conduct annual penetration testing of agent endpoints, network controls, and multitenant isolation boundaries. Document findings and remediation in compliance evidence repository.
 
 With compliance requirements mapped to agent controls, data residency enforcement, consent logging, automated reporting, and continuous verification, you demonstrate that Fabrikam's multi-agent system meets regulatory obligations. Auditors verify the technical controls and receive automated evidence of their ongoing effectiveness.
 
-Now that you understand zero-trust identity, network isolation, multi-tenant data controls, and compliance mapping, you're ready to implement these security patterns hands-on in the exercise.
+Now that you understand zero-trust identity, network isolation, multitenant data controls, and compliance mapping, you're ready to implement these security patterns hands-on in the exercise.
 
 > [!TIP]
 > **Pause and reflect:** Consider a scenario where Fabrikam receives a GDPR data subject access request from a developer whose code was reviewed by the CRDAS system. The request asks for all data stored about their code and the agent's review decisions. Which compliance controls from this unit would you use to fulfill the request? How would the audit logs, consent records, and data minimization practices you've designed help you respond within the 30-day regulatory timeline?
