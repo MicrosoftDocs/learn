@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-multi-agent-systems-azure-zero-trust.validate-tenant-boundaries-enforce-encryption
+title: Validate tenant boundaries and enforce encryption
+metadata:
+  title: Validate Tenant Boundaries and Enforce Encryption
+  description: "Validate tenant boundaries and enforce encryption."
+  ms.date: 06/12/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-validate-tenant-boundaries-enforce-encryption.md)]

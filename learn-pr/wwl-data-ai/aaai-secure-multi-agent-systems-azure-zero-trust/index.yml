@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.secure-multi-agent-systems-azure-zero-trust
+metadata:
+  title: Secure Multi-Agent Systems with Azure Zero-Trust Architecture
+  description: "Secure production multi-agent systems using Azure zero-trust architecture principles. Apply per-agent managed identities with least-privilege access, design authentication flow taxonomy (managed identity, OBO, user-delegated, key-based), manage secrets lifecycle with Azure Key Vault including rotation and CMK encryption, design network controls to prevent lateral movement, implement multi-tenant data isolation, and configure compliance controls for enterprise regulatory requirements."
+  ms.date: 06/12/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-foundry
+  ai-usage: ai-assisted
+title: Secure multi-agent systems with Azure zero-trust architecture
+summary: "Secure production multi-agent systems using Azure zero-trust architecture principles. Apply per-agent managed identities with least-privilege access, design network security controls to prevent lateral movement across agent services, implement multi-tenant data isolation to prevent cross-tenant data leakage, and configure compliance controls for SOC 2, GDPR, and industry-specific regulations."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Apply zero-trust security principles to multi-agent architectures with per-agent managed identities and least-privilege access
+  - Design authentication flows for multi-agent solutions including managed identity, on-behalf-of, user-delegated OAuth2, and key-based fallback
+  - Manage secrets lifecycle using Azure Key Vault including certificates, automated rotation, RBAC granularity, and encryption choices
+  - Design network security controls to prevent lateral movement across agent networks
+  - Implement multi-tenant data isolation to prevent cross-tenant data leakage in shared agent deployments
+  - Configure compliance controls for SOC 2, GDPR, EU AI Act, and industry-specific regulatory requirements
+prerequisites: |
+  Before starting this module, you should have:
+  - Familiarity with Azure Managed Identity and Azure Key Vault for secrets management
+  - Understanding of Azure network security concepts (private endpoints, network policies)
+  - Experience deploying agents to Azure AI Foundry or Azure Container Apps
+  - Basic understanding of zero-trust networking principles
+  - Proficiency in Python and Azure infrastructure as code
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+- security-engineer
+products:
+- azure
+- microsoft-foundry
+- entra-id
+subjects:
+- artificial-intelligence
+- security
+units:
+- learn.wwl.secure-multi-agent-systems-azure-zero-trust.introduction
+- learn.wwl.secure-multi-agent-systems-azure-zero-trust.apply-zero-trust-identity-agent-networks
+- learn.wwl.secure-multi-agent-systems-azure-zero-trust.secure-agent-access-jit-workload-identity
+- learn.wwl.secure-multi-agent-systems-azure-zero-trust.design-authentication-flows-secrets-lifecycle
+- learn.wwl.secure-multi-agent-systems-azure-zero-trust.prevent-lateral-movement-agent-networks
+- learn.wwl.secure-multi-agent-systems-azure-zero-trust.implement-tenant-context-data-isolation
+- learn.wwl.secure-multi-agent-systems-azure-zero-trust.validate-tenant-boundaries-enforce-encryption
+- learn.wwl.secure-multi-agent-systems-azure-zero-trust.configure-compliance-controls
+- learn.wwl.secure-multi-agent-systems-azure-zero-trust.knowledge-check
+- learn.wwl.secure-multi-agent-systems-azure-zero-trust.summary
+badge:
+  uid: learn.wwl.secure-multi-agent-systems-azure-zero-trust.badge
