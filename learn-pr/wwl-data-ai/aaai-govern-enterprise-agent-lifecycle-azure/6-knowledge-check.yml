@@ -15,7 +15,7 @@ quiz:
   questions:
   - content: "A Fabrikam product manager wants to update the security analysis agent's system prompt to focus more heavily on GDPR compliance patterns. This change would affect all 20 enterprise tenants. Which approval gate type is most appropriate for this change?"
     choices:
-    - content: "Automated gate only — run evaluation benchmarks against the updated system prompt and deploy if quality scores exceed baseline."
+    - content: "Automated gate only—run evaluation benchmarks against the updated system prompt and deploy if quality scores exceed baseline."
       isCorrect: false
       explanation: "Automated gates validate quality metrics but don't capture enterprise-customer impact. A system prompt change affecting all tenants changes the agent's behavior for proprietary customer code. This warrants human review to assess the business impact of the behavioral change."
     - content: "Manual approval gate requiring sign-off from the Responsible AI officer and at least one enterprise customer's designated reviewer, since the change alters agent behavior for all tenants."
