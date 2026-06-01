@@ -3,7 +3,7 @@ uid: learn.wwl.secure-multi-agent-systems-azure-zero-trust
 metadata:
   title: Secure Multi-Agent Systems with Azure Zero-Trust Architecture
   description: "Secure production multi-agent systems using Azure zero-trust architecture principles. Apply per-agent managed identities with least-privilege access, design authentication flow taxonomy (managed identity, OBO, user-delegated, key-based), manage secrets lifecycle with Azure Key Vault including rotation and CMK encryption, design network controls to prevent lateral movement, implement multi-tenant data isolation, and configure compliance controls for enterprise regulatory requirements."
-  ms.date: 06/12/2026
+  ms.date: 06/05/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: module-standard-task-based
