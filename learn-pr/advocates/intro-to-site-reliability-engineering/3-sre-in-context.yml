@@ -2,17 +2,16 @@
 uid: learn.intro-to-site-reliability-engineering.3-sre-in-context
 title: SRE in context
 metadata:
-  title: SRE in context
+  title: SRE in Context
   description: SRE in context
-  ms.date: 11/14/2024
-  author: dnblankedelman
-  ms.author: dnb
+  ms.date: 05/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom: team=cloud_advocates
-  ms.contributors: dnb-01282021
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-sre-in-context.md)]
+  [!include[](Includes/3-sre-in-context.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -34,15 +33,15 @@ quiz:
 
   - content: "Which came first, DevOps or SRE?"
     choices:
-    - content: "DevOps"
+    - content: "DevOps came first as a named movement."
       isCorrect: false
-      explanation: "They developed roughly in parallel."
-    - content: "SRE"
-      isCorrect: false
-      explanation: "They developed roughly in parallel."
-    - content: "Neither, they developed roughly in parallel."
+      explanation: "Google formed its SRE function in 2003, before the DevOps movement coalesced. The first DevOpsDays conference was held in Ghent in 2009."
+    - content: "Google SRE started earlier, but both emerged in the 2000s as parallel responses to similar challenges."
       isCorrect: true
-      explanation: "Correct. They developed roughly in parallel."
+      explanation: "Correct. Google formed its SRE function in 2003. The wider DevOps movement emerged later in the same decade as the industry tackled similar scaling and reliability challenges."
+    - content: "They began at exactly the same time."
+      isCorrect: false
+      explanation: "They overlap in spirit but not in start date. Google SRE began in 2003; DevOps as a named movement emerged in the late 2000s."
 
   - content: "Is SRE the next evolutionary step from DevOps?"
     choices:
