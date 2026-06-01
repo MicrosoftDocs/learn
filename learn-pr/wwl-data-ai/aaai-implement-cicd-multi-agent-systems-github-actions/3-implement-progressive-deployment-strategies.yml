@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-cicd-multi-agent-systems-github-actions.implement-progressive-deployment-strategies
+title: Implement progressive deployment strategies
+metadata:
+  title: Implement Progressive Deployment Strategies
+  description: "Implement progressive deployment strategies."
+  ms.date: 06/12/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-implement-progressive-deployment-strategies.md)]

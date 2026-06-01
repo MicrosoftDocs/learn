@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-cicd-multi-agent-systems-github-actions.configure-multi-environment-agent-strategies
+title: Configure multi-environment agent deployment strategies
+metadata:
+  title: Configure Multi-Environment Agent Deployment Strategies
+  description: "Configure multi-environment agent deployment strategies."
+  ms.date: 06/12/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-configure-multi-environment-agent-strategies.md)]
