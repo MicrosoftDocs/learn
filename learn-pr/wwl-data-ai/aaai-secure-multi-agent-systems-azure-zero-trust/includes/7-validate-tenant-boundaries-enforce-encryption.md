@@ -1,3 +1,5 @@
+Azure Key Vault customer-managed keys and Microsoft Sentinel enforce data isolation at the cryptographic and monitoring layers, ensuring tenant boundaries hold even when application code fails. In this unit, you implement boundary validation at every API endpoint, configure per-tenant encryption, and monitor for cross-tenant access attempts.
+
 ## Validate tenant boundaries at every API boundary
 
 Every inter-agent API call must validate that the tenant context in the request matches the tenant context in the operation. Agent A serving Customer X should never make a request on behalf of Customer Y—even accidentally.
@@ -103,7 +105,7 @@ Treat these alerts as high-priority security incidents requiring immediate inves
 
 With tenant context propagation, data layer isolation, boundary validation, customer-managed encryption, and monitoring in place, you establish comprehensive multi-tenant isolation. The final security layer is configuring compliance controls that map regulatory requirements to agent behaviors.
 
-## Unit summary
+## Key takeaways
 
 - **API boundary validation** enforces tenant identity checks at every service endpoint, returning HTTP 403 for cross-tenant access attempts even if the caller is authenticated.
 - **Customer-managed encryption keys (CMK)** give each tenant control over their data encryption, ensuring one tenant's data cannot be decrypted using another tenant's key material.

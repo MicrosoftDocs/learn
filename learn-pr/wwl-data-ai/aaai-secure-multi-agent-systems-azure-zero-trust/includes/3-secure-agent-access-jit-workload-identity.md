@@ -1,3 +1,5 @@
+Azure Privileged Identity Management (PIM) and AKS workload identity federation minimize the time window and credential surface area for agent access to sensitive resources. In this unit, you configure just-in-time access for high-sensitivity operations, bind Kubernetes service accounts to managed identities, and validate caller identity in agent-to-agent requests.
+
 ## Implement just-in-time access for sensitive operations
 
 For highly sensitive operations—accessing production customer data, modifying security configurations, or accessing non-anonymized source code—don't maintain permanent access. Use Azure Privileged Identity Management (PIM) to grant temporary elevated access only when the operation is requested and approved.
@@ -180,18 +182,8 @@ This validation ensures that only legitimate agents in Fabrikam's system can inv
 
 With per-agent identities, least-privilege RBAC, user-context federation, just-in-time access patterns, and workload identity implementation, you establish zero-trust identity foundations. The next layer is network controls that prevent lateral movement between agents.
 
-## Unit summary
+## Key takeaways
 
 - **Just-in-time (JIT) access** with Azure PIM grants elevated permissions only when needed and for a limited time window, preventing agents from accumulating persistent access to sensitive resources.
 - **Workload identity for AKS** replaces static Kubernetes secrets with Azure identity federation, enabling containerized agents to authenticate using managed identities without storing credentials in pods.
-- **Caller identity validation** in agent-to-agent calls uses JWT token verification to ensure only legitimate agents can invoke other agents — critical for preventing unauthorized lateral access across the agent network.
-
-## Check your understanding
-
-**1. Why does workload identity federation replace static Kubernetes secrets for agent authentication?**
-
-- A. Workload identity is faster because it caches credentials locally in the pod
-- B. Workload identity eliminates stored credentials entirely — the pod authenticates using its service account identity federated with Azure AD, so there are no secrets to leak or rotate
-- C. Workload identity is required by AKS and Kubernetes secrets are no longer supported
-
-***Correct answer: B.*** Workload identity federation uses the pod's Kubernetes service account identity (via OIDC) to authenticate directly with Azure AD. No secret tokens are stored in the cluster, eliminating the risk of credential leakage and the operational burden of secret rotation.
+- **Caller identity validation** in agent-to-agent calls uses JWT token verification to ensure only legitimate agents can invoke other agents—critical for preventing unauthorized lateral access across the agent network.

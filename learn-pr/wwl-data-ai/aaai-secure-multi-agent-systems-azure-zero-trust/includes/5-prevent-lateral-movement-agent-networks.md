@@ -1,4 +1,4 @@
-In traditional software architectures, a compromised component can communicate freely with other components on the same network. If an attacker gains code execution in one service, they often pivot to other services laterally—moving through the network to access progressively more valuable resources. Zero-trust network controls prevent this lateral movement: a compromised agent should not be able to communicate with agents it doesn't have a legitimate business reason to reach.
+Azure Kubernetes Service network policies, Azure Private Link, and Microsoft Sentinel work together to prevent compromised agents from moving laterally through your infrastructure. In this unit, you define explicit traffic allow-lists, eliminate public endpoints, enforce mutual TLS between agent services, and detect anomalous communication patterns.
 
 | Network Control | Defense Mechanism | Implementation Technology |
 |----------------|-------------------|--------------------------|
@@ -110,7 +110,7 @@ With public access disabled and private endpoints configured, Azure OpenAI is ac
 
 Apply the same pattern to all agent dependencies:
 
-- **Azure AI Foundry projects**: Private endpoint for project API
+- **Microsoft Foundry projects**: Private endpoint for project API
 - **Azure Cosmos DB**: Private endpoint for database access
 - **Azure Blob Storage**: Private endpoint for data storage
 - **Azure Key Vault**: Private endpoint for secrets retrieval
@@ -121,13 +121,37 @@ Build a comprehensive private network topology where no agent service has public
 
 Network policies control which agents can communicate. Mutual TLS (mTLS) controls how they communicate: every connection is encrypted AND both the client and server authenticate each other using certificates. A compromised agent can't impersonate another agent without possessing that agent's certificate.
 
-Deploy a service mesh in AKS to enforce mTLS automatically. Istio and Linkerd provide mTLS without modifying application code—the service mesh sidecars handle certificate management and TLS negotiation.
+Deploy a service mesh in AKS to enforce mTLS automatically. Service mesh sidecars handle certificate management and TLS negotiation without modifying application code.
 
-Deploy Linkerd OSS to the Fabrikam AKS cluster:
+AKS provides a managed, Microsoft-supported **Istio add-on** as the recommended first-party service mesh option. Enable it with a single Azure CLI command:
+
+```azurecli
+az aks mesh enable --resource-group fabrikam-agents-production --name fabrikam-aks-cluster
+```
+
+After the add-on is installed, you must label each namespace with the Istio revision label to activate sidecar injection. First, check which revision is installed:
+
+```azurecli
+az aks show --resource-group fabrikam-agents-production --name fabrikam-aks-cluster \
+  --query 'serviceMeshProfile.istio.revisions'
+```
+
+Then apply the revision label to the agents namespace:
+
+```bash
+kubectl label namespace agents istio.io/rev=asm-1-24
+```
+
+This step is required. The standard `istio-injection=enabled` label doesn't work with the managed add-on and causes the sidecar injection to skip the namespace entirely. Once labeled, every new pod deployment in the namespace automatically receives an Istio proxy sidecar, and mTLS is enforced transparently without modifying application code.
+
+For teams that prefer Linkerd or are deploying outside AKS, the following example shows the OSS installation approach. Deploy Linkerd OSS to the Fabrikam AKS cluster:
 
 ```bash
 # Install Linkerd CLI
 curl -sL https://run.linkerd.io/install | sh
+
+# Install Linkerd CRDs (required for Linkerd 2.12+)
+linkerd install --crds | kubectl apply -f -
 
 # Install Linkerd control plane
 linkerd install | kubectl apply -f -
@@ -229,7 +253,7 @@ Combine network policies, private endpoints, mutual TLS, and anomaly monitoring 
 
 With network lateral movement defenses in place, the next security layer is multi-tenant data isolation—ensuring that customer data stays strictly separated even when agents serve multiple customers from shared infrastructure.
 
-## Unit summary
+## Key takeaways
 
 - **Explicit allow-list network policies** deny all traffic by default and permit only known, necessary agent-to-agent communication paths.
 - **Private endpoints** eliminate public-facing agent APIs, routing all traffic through Azure Private Link within virtual networks.

@@ -1,6 +1,4 @@
-Fabrikam's multi-agent code review system connects to Microsoft Graph to read repository metadata, Azure DevOps to retrieve code history, and a partner compliance API to check license obligations. Each connection requires a different authentication pattern. The orchestrator agent runs as a system identity (no user context). The code-analysis agent must access the developer's Azure DevOps repositories *as the developer* to respect their access permissions. The license-check agent uses an API key because the compliance partner doesn't support Entra ID. Three agents. Three authentication requirements. One wrong pattern applied to the wrong scenario creates either a security failure (service identity used where user permissions should constrain access) or a broken integration (OAuth2 attempted against an API that only accepts keys).
-
-Authentication flow selection is an architect decision, not an implementation detail. The wrong choice for a production multi-agent system creates exploitable privilege escalation paths or compliance violations.
+Microsoft Entra ID supports four authentication flows for multi-agent systems—managed identity, on-behalf-of, OAuth2 with PKCE, and key-based fallback—each suited to a different agent-to-resource relationship. Azure Key Vault manages the secrets, certificates, and cryptographic keys these flows depend on. In this unit, you select the right authentication pattern for each scenario and design a secrets lifecycle that prevents credential exposure.
 
 ## Agent authentication flow taxonomy
 
@@ -10,21 +8,21 @@ Four flows cover the authentication scenarios that multi-agent systems encounter
 
 Managed identity is the baseline pattern for agent-to-Azure-service connections. The agent's Azure compute resource (Container App, AKS pod, Azure Function) receives a system-assigned identity from Entra ID. The agent requests access tokens from the Azure Instance Metadata Service (IMDS) without handling credentials. Azure rotates the tokens automatically.
 
-You already configured this pattern in Unit 2 (per-agent managed identities). The key principle: use managed identity for all agent connections to Azure services (Cosmos DB, Azure AI Foundry, Azure Storage, Key Vault). Managed identity eliminates credentials from code and satisfies the zero-trust requirement for cryptographic identity proof on every connection.
+You already configured this pattern in Unit 2 (per-agent managed identities). The key principle: use managed identity for all agent connections to Azure services (Cosmos DB, Microsoft Foundry, Azure Storage, Key Vault). Managed identity eliminates credentials from code and satisfies the zero-trust requirement for cryptographic identity proof on every connection.
 
 For service-to-service scenarios, the agent's identity is the *service identity*, not any individual user's identity. This is appropriate for:
 - Agent connections to internal Azure resources (databases, AI endpoints, storage).
 - Agent-to-agent calls within the same Azure trust boundary.
 - Background processing with no user context (nightly analysis jobs, batch enrichment).
 
-**When managed identity is insufficient:** When the agent must access a resource on behalf of a specific user and respecting that user's access permissions matters — for example, reading a user's SharePoint documents or accessing their Azure DevOps repositories — managed identity grants the agent's service-level access, which may be broader than the user's permissions. This creates a privilege escalation risk if you use service identity where user-delegated identity is required.
+**When managed identity is insufficient:** When the agent must access a resource on behalf of a specific user and respecting that user's access permissions matters—for example, reading a user's SharePoint documents or accessing their Azure DevOps repositories—managed identity grants the agent's service-level access, which may be broader than the user's permissions. This creates a privilege escalation risk if you use service identity where user-delegated identity is required.
 
 ### Service-to-user-resource: on-behalf-of (OBO)
 
 The on-behalf-of token exchange enables an agent to act as a specific user when accessing downstream resources. The flow:
 
 1. User authenticates to the calling application and receives an access token (`token_A`) scoped to your application.
-2. Your orchestrator agent exchanges `token_A` for a new token (`token_B`) scoped to the downstream resource (e.g., Microsoft Graph), using the Entra ID OBO flow.
+2. Your orchestrator agent exchanges `token_A` for a new token (`token_B`) scoped to the downstream resource (for example, Microsoft Graph), using the Entra ID OBO flow.
 3. The agent uses `token_B` to call the downstream resource. The resource sees the call as coming from the *user*, not from the service. The user's permissions are enforced.
 
 ```python
@@ -71,7 +69,7 @@ Store refresh tokens in Azure Key Vault, never in application code or environmen
 
 ### Key-based fallback
 
-When managed identity and OAuth2 are unavailable — typically for third-party APIs or legacy systems that only accept API keys — use key-based authentication. Three disciplines make key-based authentication acceptable in a zero-trust architecture:
+When managed identity and OAuth2 are unavailable—typically for third-party APIs or legacy systems that only accept API keys—use key-based authentication. Three disciplines make key-based authentication acceptable in a zero-trust architecture:
 
 1. **Store keys exclusively in Azure Key Vault.** Never in environment variables, container images, configuration files, or source code. Retrieve at startup via managed identity access to Key Vault.
 2. **Rotate on a defined schedule.** Key Vault rotation policies can automate rotation for supported resources. For manually rotated keys: quarterly rotation minimum; immediate rotation on any suspected compromise.
@@ -81,7 +79,7 @@ When managed identity and OAuth2 are unavailable — typically for third-party A
 
 | Scenario | Recommended flow | Reason |
 |---|---|---|
-| Agent calls Azure service (Cosmos DB, Azure AI Foundry, Storage) | Managed identity | No credentials to manage; automatic rotation; zero-trust compliant |
+| Agent calls Azure service (Cosmos DB, Microsoft Foundry, Storage) | Managed identity | No credentials to manage; automatic rotation; zero-trust compliant |
 | Agent calls agent within same Azure trust boundary | Managed identity + workload identity | Service-to-service; no user context needed |
 | Agent accesses user's Microsoft 365 or Azure resources on their behalf | On-behalf-of (OBO) | Enforces user permissions; audit log shows user as actor |
 | Agent accesses third-party SaaS on user's behalf (first login required) | OAuth2 authorization code + PKCE | User must grant explicit consent; refresh token stored in Key Vault |
@@ -95,11 +93,11 @@ Authentication flows require secrets: client secrets for OBO flows, refresh toke
 
 Azure Key Vault stores three types of secrets objects with different lifecycle management:
 
-- **Secrets** (plain-text strings) — API keys, connection strings, OAuth2 client secrets. Manually rotated or rotated via Key Vault rotation policies with custom rotation functions. Lowest overhead, lowest cryptographic strength.
-- **Keys** (asymmetric or symmetric cryptographic keys) — used for data encryption, digital signing, and envelope encryption. Key Vault HSM-backed keys never leave the HSM. Rotatable via Key Vault key rotation policies. Use for any encryption operation rather than deriving keys from secrets.
-- **Certificates** (X.509 certificates with integrated private keys) — used for TLS/mTLS mutual authentication (Unit 5's service mesh). Key Vault manages certificate issuance through integrated CAs (DigiCert, GlobalSign), renewal 30-90 days before expiry, and private key storage. Use certificates rather than shared secrets for service-to-service mutual authentication where both parties need cryptographic proof of identity.
+- **Secrets** (plain-text strings)—API keys, connection strings, OAuth2 client secrets. Manually rotated or rotated via Key Vault rotation policies with custom rotation functions. Lowest overhead, lowest cryptographic strength.
+- **Keys** (asymmetric or symmetric cryptographic keys)—used for data encryption, digital signing, and envelope encryption. Key Vault HSM-backed keys never leave the HSM. Rotatable via Key Vault key rotation policies. Use for any encryption operation rather than deriving keys from secrets.
+- **Certificates** (X.509 certificates with integrated private keys)—used for TLS/mTLS mutual authentication (Unit 5's service mesh). Key Vault manages certificate issuance through integrated CAs (DigiCert, GlobalSign), renewal 30-90 days before expiry, and private key storage. Use certificates rather than shared secrets for service-to-service mutual authentication where both parties need cryptographic proof of identity.
 
-Choose certificates over secrets for service-to-service authentication when the protocol supports it — certificates provide non-repudiation (the private key never leaves Key Vault) and automatic renewal.
+Choose certificates over secrets for service-to-service authentication when the protocol supports it—certificates provide non-repudiation (the private key never leaves Key Vault) and automatic renewal.
 
 ### Automated key rotation
 
@@ -132,7 +130,7 @@ class KeyVaultSecretManager:
         return secondary.value
     
     def handle_rotation_event(self, secret_name: str) -> None:
-        """Called when Key Vault rotation event fires — refresh cached credentials."""
+        """Called when Key Vault rotation event fires—refresh cached credentials."""
         # Invalidate any in-memory cache of this secret
         self._invalidate_cache(secret_name)
         # Re-fetch from Key Vault on next use
@@ -146,27 +144,27 @@ For external APIs that don't support Key Vault rotation policies, implement rota
 
 Apply least-privilege RBAC to Key Vault access at the secret level, not at the Key Vault level:
 
-- **Key Vault Secrets User** role (read secrets) — each agent's managed identity gets this role only for the specific secrets it needs. The style-checker agent has no access to the compliance-checker's API key secret.
-- **Key Vault Secrets Officer** role (manage secrets) — restricted to the CI/CD service principal that provisions secrets during deployment. Agents never hold this role.
-- **Key Vault Administrator** — restricted to the platform team for break-glass scenarios. Never used in normal operations.
+- **Key Vault Secrets User** role (read secrets)—each agent's managed identity gets this role only for the specific secrets it needs. The style-checker agent has no access to the compliance-checker's API key secret.
+- **Key Vault Secrets Officer** role (manage secrets)—restricted to the CI/CD service principal that provisions secrets during deployment. Agents never hold this role.
+- **Key Vault Administrator**—restricted to the platform team for break-glass scenarios. Never used in normal operations.
 
-Use Azure RBAC (not legacy Key Vault access policies) for all permission grants — Azure RBAC provides audit logs, conditional access integration, and Just-In-Time (PIM) elevation for administrative access.
+Use Azure RBAC (not legacy Key Vault access policies) for all permission grants—Azure RBAC provides audit logs, conditional access integration, and Just-In-Time (PIM) elevation for administrative access.
 
 ### Encryption choices
 
 Data encryption in transit (TLS 1.2+, mTLS for inter-agent) is mandatory and covered in Unit 5. For data at rest, three encryption tiers address different regulatory requirements:
 
-- **Microsoft-managed keys (MMK)** — Azure manages key rotation automatically. Meets most regulatory frameworks. Default for all Azure services.
-- **Customer-managed keys (CMK)** — customer controls key rotation and revocation. Revoke the CMK and all encrypted data becomes inaccessible immediately — the "crypto-shred" capability required by GDPR erasure for data that can't be deleted (backup copies). Required for HIPAA and EU AI Act high-risk classifications in some interpretations.
-- **Double encryption** — encrypt data with CMK, then encrypt the CMK with a Microsoft-managed HSM key. Required for specific government and high-security regulated workloads. Higher cost and operational overhead.
+- **Microsoft-managed keys (MMK)**—Azure manages key rotation automatically. Meets most regulatory frameworks. Default for all Azure services.
+- **Customer-managed keys (CMK)**—customer controls key rotation and revocation. Revoke the CMK and all encrypted data becomes inaccessible immediately—the "crypto-shred" capability required by GDPR erasure for data that can't be deleted (backup copies). Required for HIPAA and EU AI Act high-risk classifications in some interpretations.
+- **Double encryption**—encrypt data with CMK, then encrypt the CMK with a Microsoft-managed HSM key. Required for specific government and high-security regulated workloads. Higher cost and operational overhead.
 
 For Fabrikam's GDPR compliance, CMK is recommended for the Cosmos DB multi-tenant storage (enables crypto-shred for erasure requests) and optional for Azure AI Search indexes (data is already minimized and pseudonymized at ingestion).
 
-## Unit summary
+## Key takeaways
 
-- **Authentication flow taxonomy** covers four patterns: managed identity (service-to-Azure-service, baseline), on-behalf-of (service accesses user's resources respecting user permissions), user-delegated OAuth2 + PKCE (third-party resource with initial user consent), and key-based fallback (APIs that don't support Entra ID — always paired with Key Vault storage and rotation).
-- **Managed identity is not sufficient** when user-level permission enforcement on downstream resources is required — OBO flow enforces user permissions and records the user as the actor in audit logs.
+- **Authentication flow taxonomy** covers four patterns: managed identity (service-to-Azure-service, baseline), on-behalf-of (service accesses user's resources respecting user permissions), user-delegated OAuth2 + PKCE (third-party resource with initial user consent), and key-based fallback (APIs that don't support Entra ID—always paired with Key Vault storage and rotation).
+- **Managed identity isn't sufficient** when user-level permission enforcement on downstream resources is required—OBO flow enforces user permissions and records the user as the actor in audit logs.
 - **Key-based authentication** is acceptable in zero-trust architectures only when paired with Key Vault storage (never environment variables), scheduled rotation, and per-service key isolation.
-- **Secrets lifecycle design** chooses between secrets, keys, and certificates based on cryptographic strength requirements — certificates provide non-repudiation and automated renewal; secrets are simplest but provide no cryptographic identity proof.
+- **Secrets lifecycle design** chooses between secrets, keys, and certificates based on cryptographic strength requirements—certificates provide non-repudiation and automated renewal; secrets are simplest but provide no cryptographic identity proof.
 - **Blue-green rotation** prevents downtime by maintaining primary and secondary versions during the rotation window; rotation event handlers refresh in-memory caches to prevent stale credential failures.
 - **CMK encryption** enables crypto-shred for GDPR erasure compliance on data that can't be physically deleted (backup copies, immutable storage); configure at the storage-service level using Azure RBAC-governed Key Vault key access.

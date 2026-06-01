@@ -1,4 +1,4 @@
-Fabrikam's enterprise customers operate under regulatory compliance frameworks: GDPR for European operations, SOC 2 Type II for enterprise security certification, HIPAA for healthcare customers. Each framework imposes specific requirements on how agents must handle data, who can access it, how long it's retained, and how processing activities are audited. Compliance isn't optional—it's a contractual requirement that determines whether customers can legally use Fabrikam's multi-agent system.
+Microsoft Defender for Cloud, Microsoft Entra ID Governance, and Azure Monitor translate regulatory compliance frameworks into measurable, auditable agent controls. In this unit, you map GDPR, SOC 2, and HIPAA requirements to specific agent behaviors, enforce data residency and minimization, and generate continuous compliance evidence.
 
 ## Map compliance requirements to agent controls
 
@@ -10,10 +10,7 @@ Different compliance frameworks address similar security principles through diff
 | **SOC 2 Type II** | Access controls, audit logging, availability, change management, processing integrity | RBAC with MFA, centralized logging, high availability deployment, CI/CD audit trail, evaluation quality gates |
 | **HIPAA** | PHI safeguards, access controls, audit controls, transmission security, disaster recovery | Encryption at rest/transit, role-based PHI access, comprehensive audit logs, mTLS enforcement, backup procedures |
 | **ISO 27001** | Information security management, risk assessment, asset management, incident response | Security policy documentation, threat modeling, asset inventory, incident runbooks |
-| **EU AI Act** | Risk classification for AI systems, transparency obligations, human oversight for high-risk AI, conformity documentation and technical file | AI system risk-tier classification (UNACCEPTABLE/HIGH/LIMITED/MINIMAL), transparency disclosures in agent outputs, human review gates for high-risk decisions (see LP3 M3), technical file with version history and conformity evidence |
-
-> [!NOTE]
-> **EU AI Act scope (Training only):** EU AI Act compliance mapping is included in this training as essential context for architects working on EU-regulated workloads. It is not a direct exam blueprint item for AI-500. The Act's enforcement timeline, specific high-risk categories, and conformity assessment procedures are specialized legal-technical knowledge covered in dedicated compliance guidance from Microsoft.
+| **EU AI Act** | Risk classification for AI systems, transparency obligations, human oversight for high-risk AI, conformity documentation and technical file | AI system risk-tier classification (UNACCEPTABLE/HIGH/LIMITED/MINIMAL), transparency disclosures in agent outputs, human review gates for high-risk decisions, technical file with version history and conformity evidence |
 
 ## Enforce GDPR data residency with region-locked infrastructure
 
@@ -218,30 +215,60 @@ Export this report to a Power BI dashboard that compliance officers review month
 
 Compliance isn't a one-time certification—it requires ongoing evidence that controls remain effective. Implement continuous compliance verification:
 
-**Azure Defender for Cloud regulatory compliance dashboard**: Enable built-in compliance assessments for SOC 2, ISO 27001, GDPR. Azure automatically checks your configuration against framework requirements and generates compliance scores.
+**Microsoft Defender for Cloud regulatory compliance dashboard**: Enable built-in compliance assessments for SOC 2, ISO 27001, GDPR. Defender for Cloud continuously evaluates your configuration against framework requirements and generates compliance scores.
+
+The Microsoft Cloud Security Benchmark (MCSB) is enabled by default when you onboard Defender for Cloud. Assign additional standards (SOC 2, ISO 27001, HIPAA) through the portal: **Defender for Cloud > Regulatory compliance > Manage compliance policies > Security policies**. Select the target subscription, then toggle the desired standard to **On**.
+
+To assign a compliance standard programmatically, use Azure Policy initiative assignment:
 
 ```azurecli
-# Enable regulatory compliance standards
-az security compliance create \
-  --name "Azure-Security-Benchmark" \
-  --resource-group fabrikam-agents-production
-
-az security compliance create \
-  --name "PCI-DSS-3.2.1" \
-  --resource-group fabrikam-agents-production
+# Assign SOC 2 Type II via Azure Policy initiative
+az policy assignment create \
+  --name "soc2-fabrikam-agents" \
+  --display-name "SOC 2 Type II - Fabrikam Agents" \
+  --policy-set-definition "/providers/Microsoft.Authorization/policySetDefinitions/4054785f-702b-4a98-9215-009cbd58b141" \
+  --scope /subscriptions/<subscription-id>/resourceGroups/fabrikam-agents-production
 ```
 
-**Regular access reviews via Azure AD**: Schedule quarterly access reviews where managers verify that team members still need access to agent infrastructure:
+**Regular access reviews via Microsoft Entra ID Governance**: Schedule quarterly access reviews where managers verify that team members still need access to agent infrastructure. Use the Microsoft Graph PowerShell SDK (`Microsoft.Graph.Beta.Identity.Governance` module), which replaces the deprecated AzureAD module:
 
 ```powershell
-# Create access review for agent operations role
-New-AzureADAccessReview `
-  -DisplayName "Quarterly Agent Operations Access Review" `
-  -StartDateTime "2026-04-01" `
-  -EndDateTime "2026-04-15" `
-  -ReviewerType "Manager" `
-  -Scope "/subscriptions/<subscription-id>/resourceGroups/fabrikam-agents-production"
+# Install the Microsoft Graph Identity Governance module
+Install-Module Microsoft.Graph.Beta.Identity.Governance -Scope CurrentUser
+
+# Connect with required permissions
+Connect-MgGraph -Scopes "AccessReview.ReadWrite.All", "Directory.Read.All"
+
+# Create quarterly access review for the agent operations group
+$params = @{
+    displayName = "Quarterly Agent Operations Access Review"
+    scope = @{
+        "@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+        query = "/groups/<agent-ops-group-id>/members"
+        queryType = "MicrosoftGraph"
+    }
+    reviewers = @(
+        @{
+            query = "/users/<manager-user-id>"
+            queryType = "MicrosoftGraph"
+        }
+    )
+    settings = @{
+        mailNotificationsEnabled = $true
+        reminderNotificationsEnabled = $true
+        defaultDecision = "Deny"
+        autoApplyDecisionsEnabled = $true
+        instanceDurationInDays = 14
+        recurrence = @{
+            pattern = @{ type = "absoluteMonthly"; interval = 3 }
+            range = @{ type = "noEnd"; startDate = "2026-04-01" }
+        }
+    }
+}
+New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 ```
+
+The `defaultDecision = "Deny"` setting ensures stale access is automatically revoked when reviewers don't respond, enforcing least privilege without manual follow-up.
 
 **Penetration testing**: Conduct annual penetration testing of agent endpoints, network controls, and multi-tenant isolation boundaries. Document findings and remediation in compliance evidence repository.
 
@@ -252,17 +279,21 @@ Now that you understand zero-trust identity, network isolation, multi-tenant dat
 > [!TIP]
 > **Pause and reflect:** Consider a scenario where Fabrikam receives a GDPR data subject access request from a developer whose code was reviewed by the CRDAS system. The request asks for all data stored about their code and the agent's review decisions. Which compliance controls from this unit would you use to fulfill the request? How would the audit logs, consent records, and data minimization practices you've designed help you respond within the 30-day regulatory timeline?
 
-## Security-testing evidence with the Microsoft Foundry AI Red Teaming Agent
+## Security-testing evidence with the AI Red Teaming Agent
 
-Compliance frameworks require evidence of security testing — not just the existence of controls, but evidence that you have validated those controls against real threat scenarios. The runtime controls in Units 2–6 of this module prevent unauthorized access, lateral movement, and data leakage. The Microsoft Foundry AI Red Teaming Agent generates the AI-specific security-testing evidence that demonstrates those controls withstand adversarial pressure.
+Compliance frameworks require evidence of security testing—not just the existence of controls, but evidence that you have validated those controls against real threat scenarios. The runtime controls in Units 2–6 of this module prevent unauthorized access, lateral movement, and data leakage. The AI Red Teaming Agent generates the AI-specific security-testing evidence that demonstrates those controls withstand adversarial pressure.
 
-The AI Red Teaming Agent automates probing across threat categories aligned to the OWASP LLM Top 10: prompt injection attempts (do your input guardrails block crafted injections?), direct and indirect prompt injection (does the agent execute instructions embedded in tool responses?), system-prompt extraction (can adversarial inputs cause the agent to reveal its system prompt?), and cross-tenant data leakage (do isolation boundaries hold when tenant context is manipulated?). For each category, the agent generates synthetic adversarial inputs, submits them to your agent endpoints, and evaluates responses for policy violations.
+The AI Red Teaming Agent probes across agent-specific risk categories that map directly to the controls in this module:
 
-The output is a structured test report that maps test results to compliance controls: "GDPR data-isolation controls validated against 150 cross-tenant injection attempts — 0 policy violations detected." This evidence belongs in your SOC 2 audit package, your GDPR data-protection impact assessment, and your EU AI Act technical file. Schedule AI Red Teaming Agent runs in your CI/CD pipeline (LP3 M7) so every deployment generates fresh compliance evidence rather than relying on point-in-time assessments.
+- **Sensitive data leakage**—tests whether the agent exposes financial, medical, or personal data from internal knowledge bases and tool calls; do your isolation boundaries hold when an adversary queries across tenant contexts?
+- **Prohibited actions**—tests whether the agent engages in behaviors that violate explicitly disallowed actions or tool uses; do your guardrails block unauthorized operations?
+- **Task adherence**—tests whether the agent completes assigned tasks without unauthorized actions or omissions; does the agent respect all rules and constraints, or can adversarial inputs cause it to deviate?
 
-Cross-reference: the guardrail-testing section of LP2 M1 Unit 5 covers how to design the custom guardrails that the AI Red Teaming Agent validates. The evaluation frameworks in LP4 M2 Unit 3 cover how to use LLM-as-judge evaluators alongside the Red Teaming Agent for holistic quality and safety assessment.
+For each category, the agent generates synthetic adversarial inputs, submits them to your agent endpoints, and evaluates responses for policy violations.
 
-## Unit summary
+The output is a structured test report that maps test results to compliance controls: "GDPR data-isolation controls validated against 150 cross-tenant injection attempts—0 policy violations detected." This evidence belongs in your SOC 2 audit package, your GDPR data-protection impact assessment, and your EU AI Act technical file. Schedule AI Red Teaming Agent runs in your CI/CD pipeline so every deployment generates fresh compliance evidence rather than relying on point-in-time assessments.
+
+## Key takeaways
 
 - **Compliance requirement mapping** translates regulatory mandates (GDPR, SOC 2, HIPAA, ISO 27001, EU AI Act) into specific technical controls for each agent in the pipeline.
 - **Data residency enforcement** uses Azure region-locked deployments and network egress controls to keep data within required geographic boundaries.

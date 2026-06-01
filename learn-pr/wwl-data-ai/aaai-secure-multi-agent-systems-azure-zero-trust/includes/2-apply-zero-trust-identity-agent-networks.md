@@ -1,4 +1,4 @@
-Zero-trust security operates on a simple principle: never trust, always verify. In traditional network security, once a request passes the perimeter firewall, it's trusted to communicate freely with internal resources. Zero-trust requires every request—even from internal components—to present valid authentication credentials and receive explicit authorization before accessing resources. Apply this principle to multi-agent systems: one agent calling another must authenticate, not just external users calling agents.
+Microsoft Entra ID managed identities give each agent its own cryptographic identity without stored credentials, enabling granular RBAC scoping and independent access lifecycle management. In this unit, you assign per-agent managed identities, scope role assignments by agent function, and configure federated identity for user-context operations.
 
 | Security Layer | Traditional Perimeter | Zero-Trust Architecture |
 |----------------|----------------------|------------------------|
@@ -25,6 +25,33 @@ az containerapp create \
 ```
 
 The system-assigned identity is automatically created and assigned to the container. The identity lifecycle is bound to the container—when you delete the container, Azure automatically deletes the identity. This prevents orphaned identities from accumulating.
+
+## Microsoft Foundry-hosted agents: native agent identity model
+
+When you host agents in Microsoft Foundry, the platform automatically provisions and manages agent identities through Microsoft Entra Agent ID—no manual `az containerapp create --system-assigned` step required. Understanding the Foundry identity lifecycle is essential because it determines which identity receives RBAC role assignments at each stage of development.
+
+**Before publishing (shared project identity):** When you create your first agent in a Foundry project, Microsoft Foundry provisions a default agent identity for the project. All unpublished agents within that project share this common identity. This simplifies development—you configure RBAC once on the shared identity and all in-development agents inherit that access.
+
+**After publishing (distinct agent identity):** When you publish an agent as an agent application, Microsoft Foundry automatically creates a dedicated agent identity unique to that agent. This provides the isolation that zero-trust requires: a compromise of one published agent's identity doesn't affect any other agent in the project.
+
+> [!IMPORTANT]
+> Publishing an agent **doesn't transfer RBAC permissions** from the shared project identity to the new distinct identity. After publishing, you must explicitly reassign RBAC roles on every downstream resource (Cosmos DB, Storage, Key Vault, Azure OpenAI) to the agent's new `agentIdentityId`. Tool calls that work during development fail with authorization errors in production until you complete this reassignment.
+
+Locate the `agentIdentityId` for role assignments in the Azure portal. Navigate to your Foundry project, select **JSON View** on the Overview pane, and choose the latest API version. Copy the `agentIdentityId` value from the JSON.
+
+Assign roles to the agent identity the same way you assign roles to any managed identity—using `agentIdentityId` as the `--assignee` value:
+
+```azurecli
+# Assign Cosmos DB access to the published agent's distinct identity
+az role assignment create \
+  --assignee "<agentIdentityId>" \
+  --role "Cosmos DB Built-in Data Contributor" \
+  --scope /subscriptions/<sub-id>/resourceGroups/<rg>/providers/Microsoft.DocumentDb/databaseAccounts/fabrikam-cosmos
+```
+
+View and govern all agent identities in your tenant through the Microsoft Entra admin center at **Entra ID > Agent ID > All agent identities**. From this inventory you can apply Conditional Access policies, enable identity protection monitoring, and configure governance controls (expiration, owners, sponsors) for each agent identity.
+
+For agents deployed on Container Apps or AKS outside Microsoft Foundry, continue to use the manual system-assigned managed identity approach shown above.
 
 ## Scope privileges by agent function with RBAC
 
@@ -109,9 +136,8 @@ response = requests.get(
 
 This pattern ensures the agent never accumulates persistent access to customer resources—it only gains temporary access when a user explicitly authorizes the operation through their own authentication.
 
-
-## Unit summary
+## Key takeaways
 
 - **Per-agent managed identities** eliminate shared credentials by giving each agent its own Azure identity, enabling granular audit trails and independent credential lifecycle management.
-- **RBAC scoping by function** restricts each agent to only the Azure resources it needs — the market analysis agent accesses OpenAI but not key vault secrets; the compliance agent accesses document storage but not model deployments.
+- **RBAC scoping by function** restricts each agent to only the Azure resources it needs—the market analysis agent accesses OpenAI but not key vault secrets; the compliance agent accesses document storage but not model deployments.
 - **Federated identity with On-Behalf-Of (OBO)** lets agents operate with the user's permissions when accessing customer-specific resources, ensuring the agent never has broader access than the human who invoked it.

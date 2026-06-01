@@ -1,4 +1,4 @@
-Fabrikam serves multiple enterprise customers from shared agent infrastructure—a single deployment of the orchestrator agent handles requests from many tenants. This shared model is cost-efficient and simplifies updates, but it creates a critical security requirement: customer data must never leak across tenant boundaries. A developer at Company A must never see code from Company B, even if both use the same agent infrastructure simultaneously.
+Azure Cosmos DB partition keys provide database-layer tenant isolation, ensuring each customer's data is physically scoped to their own partition even when agents share infrastructure. In this unit, you propagate tenant context through every agent operation and enforce isolation at the data access layer.
 
 | Isolation Model | Security Level | Cost Efficiency | Update Complexity |
 |-----------------|----------------|----------------|-------------------|
@@ -189,9 +189,8 @@ class CodeReviewRepository:
 
 Because the container uses `tenant_id` as the partition key, Cosmos DB physically isolates data by tenant. Even if application code has a bug and queries without filtering, Cosmos DB only returns documents from the specified partition. This provides defense in depth—the database enforces isolation even if application logic fails.
 
+## Key takeaways
 
-## Unit summary
-
-- **Tenant isolation architecture** choices range from shared containers with partition keys (cost-effective) to separate accounts (maximum isolation) — select based on your threat model and compliance requirements.
+- **Tenant isolation architecture** choices range from shared containers with partition keys (cost-effective) to separate accounts (maximum isolation)—select based on your threat model and compliance requirements.
 - **Tenant context propagation** ensures every operation carries the tenant identifier from the initial request through all agent-to-agent calls, preventing context-free operations that could leak data.
 - **Data access enforcement** validates tenant scope at the database query level, ensuring queries are physically scoped to a single tenant's partition and never span tenant boundaries.

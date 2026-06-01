@@ -23,7 +23,7 @@ prerequisites: |
   Before starting this module, you should have:
   - Familiarity with Azure Managed Identity and Azure Key Vault for secrets management
   - Understanding of Azure network security concepts (private endpoints, network policies)
-  - Experience deploying agents to Azure AI Foundry or Azure Container Apps
+  - Experience deploying agents to Microsoft Foundry or Azure Container Apps
   - Basic understanding of zero-trust networking principles
   - Proficiency in Python and Azure infrastructure as code
 iconUrl: /training/achievements/generic-badge.svg
