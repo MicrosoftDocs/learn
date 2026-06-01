@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.implement-cicd-multi-agent-systems-github-actions
+metadata:
+  title: Implement CI/CD Pipelines for Multi-Agent Systems with GitHub Actions
+  description: "Implement enterprise CI/CD pipelines for multi-agent systems using GitHub Actions and Microsoft Foundry. Design coordinated deployment pipelines with agent version compatibility validation, implement canary and blue-green deployment strategies, configure multi-environment strategies, and automate rollback triggered by quality regression metrics."
+  ms.date: 06/01/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-foundry
+  ai-usage: ai-assisted
+title: Implement CI/CD pipelines for multi-agent systems with GitHub Actions
+summary: "Implement enterprise CI/CD pipelines for multi-agent systems using GitHub Actions and Microsoft Foundry. Design coordinated deployment pipelines with agent version compatibility validation, implement progressive deployment strategies including canary releases, configure multi-environment agent deployments with infrastructure as code, and automate rollback triggered by quality regression detection."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Design CI/CD pipelines that validate version compatibility across interdependent multi-agent systems
+  - Implement progressive deployment strategies including canary releases and blue-green deployment for agent updates
+  - Configure multi-environment deployment strategies for agent ecosystems from development through production
+  - Automate rollback procedures triggered by quality regression detection
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience with GitHub Actions for CI/CD workflows in AI projects
+  - Familiarity with Microsoft Foundry project deployment
+  - Understanding of infrastructure as code with Bicep or Terraform
+  - Experience with GenAIOps practices from the Operationalize generative AI applications learning path or equivalent
+  - Proficiency in Python and YAML
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- devops-engineer
+- solution-architect
+products:
+- azure
+- microsoft-foundry
+- github
+subjects:
+- artificial-intelligence
+- devops
+units:
+- learn.wwl.implement-cicd-multi-agent-systems-github-actions.introduction
+- learn.wwl.implement-cicd-multi-agent-systems-github-actions.design-multi-agent-deployment-pipelines
+- learn.wwl.implement-cicd-multi-agent-systems-github-actions.implement-progressive-deployment-strategies
+- learn.wwl.implement-cicd-multi-agent-systems-github-actions.configure-multi-environment-agent-strategies
+- learn.wwl.implement-cicd-multi-agent-systems-github-actions.automate-rollback-procedures
+- learn.wwl.implement-cicd-multi-agent-systems-github-actions.knowledge-check
+- learn.wwl.implement-cicd-multi-agent-systems-github-actions.summary
+badge:
+  uid: learn.wwl.implement-cicd-multi-agent-systems-github-actions.badge
