@@ -322,140 +322,140 @@
       "redirect_document_id": true
     },
     {
-        "source_path_from_root": "/learn-pr/paths/implement-data-governance-security-databricks-unity-catalog/index.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/paths/implement-data-governance-security-databricks-unity-catalog/index.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/1-introduction.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/1-introduction.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/2-implement-isolation-methods.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/2-implement-isolation-methods.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/3-explore-lineage.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/3-explore-lineage.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/4-transition-from-hive-metastore.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/4-transition-from-hive-metastore.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/5-knowledge-check.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/5-knowledge-check.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/6-exercise.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/6-exercise.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/7-summary.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/7-summary.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/index.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/index.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/1-introduction.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/1-introduction.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/2-understand-fine-grained-access-control.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/2-understand-fine-grained-access-control.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/3-implement-row-filtering-column-masking.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/3-implement-row-filtering-column-masking.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/4-exercise-secure-data-access.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/4-exercise-secure-data-access.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/5-understand-lakehouse-monitoring.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/5-understand-lakehouse-monitoring.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/6-implement-lakehouse-monitoring.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/6-implement-lakehouse-monitoring.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/7-interpret-data-quality-dashboard.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/7-interpret-data-quality-dashboard.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/8-knowledge-check.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/8-knowledge-check.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/9-summary.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/9-summary.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/index.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/index.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/1-introduction.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/1-introduction.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/2-understand-query-lifecycle.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/2-understand-query-lifecycle.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/3-explore-data-sharing-marketplace-overview.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/3-explore-data-sharing-marketplace-overview.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/4-implement-access-control-strategies.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/4-implement-access-control-strategies.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/5-knowledge-check.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/5-knowledge-check.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/6-summary.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/6-summary.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/index.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/index.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/1-introduction.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/1-introduction.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/2-explore-data-governance.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/2-explore-data-governance.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/3-analyze-unity-catalog-architecture.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/3-analyze-unity-catalog-architecture.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/4-explore-external-data.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/4-explore-external-data.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/5-exercise.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/5-exercise.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/6-knowledge-check.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/7-summary.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/7-summary.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
-        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/index.yml",
-        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/index.yml",
+      "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-chat-bot-azure-portal/1-introduction.md",
@@ -504,55 +504,55 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-qna-solution-qna-maker/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-qna-solution-qna-maker/10-exercise-create.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-qna-solution-qna-maker/11-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-qna-solution-qna-maker/12-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-qna-solution-qna-maker/2-understand.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-qna-solution-qna-maker/3-compare-to-language-understanding.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-qna-solution-qna-maker/4-create-knowledge-base.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-qna-solution-qna-maker/5-implement-multi-turn-conversation.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-qna-solution-qna-maker/6-test-publish-knowledge-base.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-qna-solution-qna-maker/7-consume-qna-client-interfaces.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-qna-solution-qna-maker/8-implement-active-learning.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-qna-solution-qna-maker/9-create-qna-bot.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-qna-solution-qna-maker/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/create-question-answer-solution-ai-language/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-query-delta-lake/1-introduction.md",
@@ -1101,47 +1101,47 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/create-language-understanding-app/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/create-language-understanding-app/10-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/create-language-understanding-app/2-provision-azure-resources.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/create-language-understanding-app/3-define-intents-utterances.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/create-language-understanding-app/4-define-entities.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/create-language-understanding-app/5-use-patterns-to-differentiate-similar-utterances.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/create-language-understanding-app/6-use-pre-built-models.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/create-language-understanding-app/7-train-test-publish-review.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/create-language-understanding-app/8-exercise.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/create-language-understanding-app/9-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/create-language-understanding-app/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/create-manage-cognitive-services/1-introduction-accounts.md",
@@ -1378,35 +1378,35 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-extraction/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-extraction/2-understand-custom-named.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-extraction/3-tag-your-data.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-extraction/4-train-evaluate-your-model.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-extraction/5-exercise-extract-custom-entities.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-extraction/6-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-extraction/7-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-extraction/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/custom-name-entity-recognition/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/deploy-azure-sql-database/1-introduction.md",
@@ -2164,31 +2164,31 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images-custom-vision/1-introduction.md",
-      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images-custom-vision/1a-what-is-object-detection.md",
-      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images-custom-vision/2-object-detection-azure.md",
-      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images-custom-vision/3-create-object-detection-solution.md",
-      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images-custom-vision/3a-knowledge-check.md",
-      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images-custom-vision/4-summary.md",
-      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images-custom-vision/index.md",
-      "redirect_url": "/training/modules/custom-model-ai-vision-image-classification/"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/enable-business-users-with-key-ai-uses-cases/1-introduction.md",
@@ -2860,43 +2860,43 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/extract-insights-from-videos-with-video-indexer-service/1-introduction.md",
-      "redirect_url": "/training/modules/analyze-video"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/extract-insights-from-videos-with-video-indexer-service/2-subscribe-to-api.md",
-      "redirect_url": "/training/modules/analyze-video"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/extract-insights-from-videos-with-video-indexer-service/3-upload-index-videos.md",
-      "redirect_url": "/training/modules/analyze-video"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/extract-insights-from-videos-with-video-indexer-service/4-examine-output.md",
-      "redirect_url": "/training/modules/analyze-video"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/extract-insights-from-videos-with-video-indexer-service/5-find-moments-video.md",
-      "redirect_url": "/training/modules/analyze-video"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/extract-insights-from-videos-with-video-indexer-service/6-detect-key-aspects.md",
-      "redirect_url": "/training/modules/analyze-video"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/extract-insights-from-videos-with-video-indexer-service/7-view-edit-insights.md",
-      "redirect_url": "/training/modules/analyze-video"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/extract-insights-from-videos-with-video-indexer-service/8-knowledge-check.md",
-      "redirect_url": "/training/modules/analyze-video"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/extract-insights-from-videos-with-video-indexer-service/9-summary.md",
-      "redirect_url": "/training/modules/analyze-video"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/extract-insights-from-videos-with-video-indexer-service/index.md",
-      "redirect_url": "/training/modules/analyze-video"
+      "redirect_url": "/training/paths/insight-visual-data/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/extract-insights-text-with-text-analytics-service/1-introduction.md",
@@ -3231,6 +3231,1126 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/10-load-data.md",
       "redirect_url": "/training/modules/understand-big-data-engineering-with-apache-spark-azure-synapse-analytics/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/implement-knowledge-mining-azure-cognitive-search/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/create-computer-vision-solutions-azure-ai/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/create-models-custom-vision/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/develop-ai-agents-on-azure/index.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/1-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/10-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/11-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/2-manage-capacity.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/3-search-components.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/4-indexing-process.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/5-search-index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/6-apply-filtering-sorting.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/7-enhance-index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/8-exercise-search.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/1-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/10-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/2-define-projection-json.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/3-define-knowledge-store.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/4-exercise-knowledge-store.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/9-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-search-features-azure-cognitive-search/01-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-search-features-azure-cognitive-search/02-improve-ranking-of-document-term-boosting.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-search-features-azure-cognitive-search/03-improve-relevance-of-results-add-score-profiles.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-search-features-azure-cognitive-search/04-improve-index-analyzers-tokenized-terms.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-search-features-azure-cognitive-search/05-enhance-index-to-include-multiple-languages.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-search-features-azure-cognitive-search/06-improve-search-experience-ordering-results-distance.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-search-features-azure-cognitive-search/07-exercise-implement-enhancements-to-search-results.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-search-features-azure-cognitive-search/08-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-search-features-azure-cognitive-search/09-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-search-features-azure-cognitive-search/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/maintain-azure-cognitive-search-solution/01-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/maintain-azure-cognitive-search-solution/02-manage-security-of-azure-cognitive-search-solution.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/maintain-azure-cognitive-search-solution/03-optimize-performance-of-azure-cognitive-search-solution.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/maintain-azure-cognitive-search-solution/04-manage-costs-of-azure-cognitive-search-solution.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/maintain-azure-cognitive-search-solution/05-improve-reliability-of-azure-cognitive-search-solution.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/maintain-azure-cognitive-search-solution/06-monitor-azure-cognitive-search-solution.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/maintain-azure-cognitive-search-solution/07-debug-search-issues-use-azure-portal.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/maintain-azure-cognitive-search-solution/08-exercise-debug-search.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/maintain-azure-cognitive-search-solution/09-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/maintain-azure-cognitive-search-solution/10-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/maintain-azure-cognitive-search-solution/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/enrich-search-index-using-language-studio/01-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/enrich-search-index-using-language-studio/02-explore-available-features-of-azure-cognitive-service-for-language.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/enrich-search-index-using-language-studio/03-enrich-cognitive-search-index-custom-classes.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/enrich-search-index-using-language-studio/04-exercise-enrich-cognitive-custom-classes.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/enrich-search-index-using-language-studio/05-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/enrich-search-index-using-language-studio/06-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/enrich-search-index-using-language-studio/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/search-data-outside-azure-platform-cognitive-search/01-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/search-data-outside-azure-platform-cognitive-search/02-index-data-from-external-data-sources-factory.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/search-data-outside-azure-platform-cognitive-search/03-index-data-use-push-api.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/search-data-outside-azure-platform-cognitive-search/04-exercise-add-to-index-use-push-api.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/search-data-outside-azure-platform-cognitive-search/05-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/search-data-outside-azure-platform-cognitive-search/06-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/search-data-outside-azure-platform-cognitive-search/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-semantic-search/1-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-semantic-search/2-what-is-semantic-search.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-semantic-search/3-set-up-semantic-search.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-semantic-search/4-exercise.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-semantic-search/5-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-semantic-search/6-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-semantic-search/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/improve-search-results-vector-search/1-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/improve-search-results-vector-search/2-vector-search.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/improve-search-results-vector-search/3-prepare-search.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/improve-search-results-vector-search/4-understand-embedding.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/improve-search-results-vector-search/5-exercise.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/improve-search-results-vector-search/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/improve-search-results-vector-search/7-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/improve-search-results-vector-search/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-ai-custom-skill/1-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-ai-custom-skill/2-define-custom-skill-schema.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-ai-custom-skill/3-add-custom-skill.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-ai-custom-skill/4-custom-text-classification-skill.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-ai-custom-skill/5-ml-custom-skill.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-ai-custom-skill/6-exercise.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-ai-custom-skill/7-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-ai-custom-skill/8-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-azure-ai-custom-skill/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-prebuilt-form-recognizer-models/1-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-prebuilt-form-recognizer-models/2-understand-prebuilt-models.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-prebuilt-form-recognizer-models/3-use-general-document-read-layout-models.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-prebuilt-form-recognizer-models/4-use-financial-id-tax-models.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-prebuilt-form-recognizer-models/5-exercise-analyze-document-use-form-recognizer.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-prebuilt-form-recognizer-models/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-prebuilt-form-recognizer-models/7-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-prebuilt-form-recognizer-models/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-form-recognizer/1-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-form-recognizer/10-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-form-recognizer/11-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-form-recognizer/2-what-form-recognizer.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-form-recognizer/3-get-started.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-form-recognizer/6-train-custom-models.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-form-recognizer/7-use-models.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-form-recognizer/8-exercise-extract-data-from-custom-forms.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-form-recognizer/9-form-recognizer-studio.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-form-recognizer/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/read-text-images-documents-with-computer-vision-service/1-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/read-text-images-documents-with-computer-vision-service/2-options-read-text.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/read-text-images-documents-with-computer-vision-service/4-use-read-api.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/read-text-images-documents-with-computer-vision-service/5-exercise.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/read-text-images-documents-with-computer-vision-service/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/read-text-images-documents-with-computer-vision-service/7-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/read-text-images-documents-with-computer-vision-service/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-images/1-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-images/2-provision-computer-vision-resource.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-images/3-analyze-image.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-images/5-exercise-computer-vision.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-images/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-images/7-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-images/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-video/1-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-video/2-understand-video-indexer-capabilities.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-video/3-extract-custom-insights.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-video/4-use-video-indexer-widgets-apis.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-video/5-exercise-video-indexer.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-video/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-video/7-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-video/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/1-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/10-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/2-understand-capabilities-of-face-service.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/3-detect-analyze-faces.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/4-compare-match-detected-faces.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/5-understand-considerations-for-face-analysis.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/8-exercise-identify-faces.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/9-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images/1-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images/2-provision-azure-resources-for-custom-vision.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images/3-understand-image-classification.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images/4-use-trained-image-classifier.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images/5-exercise-custom-vision.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images/7-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images/1-introduction.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images/2-understand-object-detection.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images/3-train-object-detector.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images/4-use-trained-detector.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images/5-exercise-custom-vision.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images/7-summary.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images/index.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agent-azure/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agent-azure/2-what-is-ai-agent.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agent-azure/3-how-use-agent-service.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agent-azure/4-when-use-agent-service.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agent-azure/5-exercise.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agent-azure/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agent-azure/7-summary.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agent-azure/index.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-multi-agent-azure-ai-foundry/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-multi-agent-azure-ai-foundry/2-understand-connected-agents.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-multi-agent-azure-ai-foundry/3-design-multi-agent-solution.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-multi-agent-azure-ai-foundry/4-exercise.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-multi-agent-azure-ai-foundry/5-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-multi-agent-azure-ai-foundry/6-summary.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-multi-agent-azure-ai-foundry/index.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agents-vs-code/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agents-vs-code/2-get-started-with-extension.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agents-vs-code/3-agent-development.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agents-vs-code/4-extend-agent-capabilities.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agents-vs-code/5-exercise.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agents-vs-code/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agents-vs-code/7-summary.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/develop-ai-agents-vs-code/index.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-speech-speech-service/1-introduction.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-speech-speech-service/2-speech-service.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-speech-speech-service/3-translate-speech-text.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-speech-speech-service/4-synthesize-translation.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-speech-speech-service/5-exercise-translate-speech.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-speech-speech-service/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-speech-speech-service/7-summary.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-speech-speech-service/index.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-text-with-translator-service/1-introduction.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-text-with-translator-service/2-provision-translator-resource.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-text-with-translator-service/3-understand-language-detection-translation-transliteration.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-text-with-translator-service/4-specify-translation-options.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-text-with-translator-service/5-define-custom-translations.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-text-with-translator-service/6-exercise-translate-text.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-text-with-translator-service/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-text-with-translator-service/8-summary.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/translate-text-with-translator-service/index.yml",
+      "redirect_url": "/training/modules/translate-text-speech/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/custom-text-classification/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/custom-text-classification/2-understand-types-of-classification-projects.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/custom-text-classification/3-understand-how-to-build-projects.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/custom-text-classification/4-exercise-classify-text.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/custom-text-classification/5-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/custom-text-classification/6-summary.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/custom-text-classification/index.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-recognition/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-recognition/2-understand-custom-named.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-recognition/3-tag-your-data.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-recognition/4-train-evaluate-your-model.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-recognition/5-exercise-extract-custom-entities.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-recognition/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-recognition/7-summary.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/custom-name-entity-recognition/index.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-language-understanding-model/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-language-understanding-model/2-understand-resources-for-building.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-language-understanding-model/2a-understand-prebuilt-capabilities.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-language-understanding-model/3-define-intents-utterances-entities.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-language-understanding-model/4-use-patterns-differentiate-similar-utterances.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-language-understanding-model/5-use-pre-built-entity-components.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-language-understanding-model/6-train-test-publish-review.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-language-understanding-model/7-exercise.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-language-understanding-model/8-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-language-understanding-model/9-summary.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-language-understanding-model/index.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-question-answer-solution-ai-language/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-question-answer-solution-ai-language/10-exercise-create.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-question-answer-solution-ai-language/11-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-question-answer-solution-ai-language/12-summary.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-question-answer-solution-ai-language/2-understand-question-answer-capability.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-question-answer-solution-ai-language/3-compare-to-language-understanding.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-question-answer-solution-ai-language/4-create-knowledge-base.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-question-answer-solution-ai-language/5-implement-multi-turn-conversation.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-question-answer-solution-ai-language/6-test-publish-knowledge-base.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-question-answer-solution-ai-language/7-consume-client-interfaces.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-question-answer-solution-ai-language/8-implement-active-learning.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/create-question-answer-solution-ai-language/index.yml",
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/ingest-data-with-apache-spark-notebooks-azure-synapse-analytics/11-exercise-load-data.md",
@@ -3952,15 +5072,15 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/publish-use-language-understand-app/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/publish-use-language-understand-app/2-understand-capabilities-of-language-service.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/publish-use-language-understand-app/3-process-predictions.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/publish-use-language-understand-app/4-use-container.md",
@@ -3968,19 +5088,19 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/publish-use-language-understand-app/5-exercise-create.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/publish-use-language-understand-app/6-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/publish-use-language-understand-app/7-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/publish-use-language-understand-app/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/build-language-understanding-model/"
+      "redirect_url": "/training/paths/develop-language-solutions-azure-ai/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/publish-use-language-understanding-app/1-introduction.md",
@@ -5473,7 +6593,7 @@
       "source_path_from_root": "/learn-pr/wwl-data-ai/work-with-data-in-aml/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/make-data-available-azure-machine-learning/"
     },
-        {
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/index.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
@@ -5841,4 +6961,3 @@
     }
   ]
 }
-
