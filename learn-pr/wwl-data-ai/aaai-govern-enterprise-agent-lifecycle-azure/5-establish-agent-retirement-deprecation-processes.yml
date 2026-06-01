@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.govern-enterprise-agent-lifecycle-azure.establish-agent-retirement-deprecation-processes
+title: Establish agent retirement and deprecation processes
+metadata:
+  title: Establish Agent Retirement and Deprecation Processes
+  description: "Establish agent retirement and deprecation processes."
+  ms.date: 06/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-establish-agent-retirement-deprecation-processes.md)]
