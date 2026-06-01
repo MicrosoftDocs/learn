@@ -245,14 +245,14 @@ Configure the following SDLC artifacts to standardize the developer environment:
 
 4. **Dependency management**—Python lock files ensure deterministic installs. Use `uv` or `pip-tools` to generate `requirements.lock` from `requirements.in` and commit both files to source control. Configure Dependabot or Renovate to propose dependency updates as PRs with automated test runs. Unpinned dependencies are a production stability risk in long-running agent deployments.
 
-5. **AI instructions files**—Repository-wide AI assistant context is a first-class SDLC artifact. `.github/copilot-instructions.md` provides Copilot with codebase conventions that apply to every chat and inline suggestion in the repository. `AGENTS.md` is the emerging cross-tool standard for agent-development context (used by Claude, GitHub Copilot, and other AI coding assistants). A well-maintained AI instructions file includes: naming conventions, which patterns are approved vs. deprecated, key module boundaries, and the case-company context that frames code contributions.
+5. **AI instructions files**—Repository-wide AI assistant context is a first-class SDLC artifact. `.github/copilot-instructions.md` provides Copilot with codebase conventions that apply to every chat and inline suggestion in the repository. `AGENTS.md` is the emerging cross-tool standard for agent-development context (used by Claude, GitHub Copilot, and other AI coding assistants). A well-maintained AI instructions file includes: naming conventions, a list defining approved and deprecated patterns, key module boundaries, and the case-company context that frames code contributions.
 
 > [!NOTE]
 > **AI instructions files:** The specific file names (`.github/copilot-instructions.md`, `AGENTS.md`) and their behaviors evolve as tooling matures. The underlying practice won't: AI assistants need the same codebase context that human contributors get from `CONTRIBUTING.md`. Treat authoring and maintaining AI instructions files as a first-class SDLC responsibility.
 
 ## Azure Well-Architected Framework alignment for compute selection
 
-Infrastructure decisions in multi-agent CI/CD pipelines connect to the Azure Well-Architected Framework (WAF) five pillars. When choosing compute options for agent hosting (Container Apps, AKS, Azure Functions) and CI/CD infrastructure, each pillar provides a lens:
+Infrastructure decisions in multi-agent CI/CD pipelines connect to the Azure Well-Architected Framework (WAF) five pillars. When you're choosing compute options for agent hosting (Container Apps, AKS, Azure Functions) and CI/CD infrastructure, each pillar provides a lens:
 
 | WAF Pillar | CI/CD and compute design consideration |
 |---|---|

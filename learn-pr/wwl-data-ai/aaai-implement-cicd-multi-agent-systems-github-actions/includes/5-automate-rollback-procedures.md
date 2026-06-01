@@ -131,7 +131,7 @@ done
 
 A coordinated rollback keeps the agent network in a consistent, validated state—partial rollbacks that leave dependent agents on mismatched versions cause cascading failures.
 
-## Document rollback triggers in blameless post-mortems
+## Document rollback triggers in blameless postmortems
 
 After a rollback executes, conduct a blameless post-mortem analysis. The goal isn't to assign blame—it's to understand what failed, why the deployment passed pre-production validation but failed in production, and what additional validation would have caught the issue.
 
@@ -151,4 +151,4 @@ This documentation becomes organizational learning. Over time, you build a knowl
 - **Rollback triggers** monitor evaluation scores, error rates, latency degradation, and schema violations to detect quality regressions automatically.
 - **Automated rollback workflows** re-deploy the previous stable version via GitHub Actions without manual approval, reducing mean time to recovery to minutes.
 - **Partial rollbacks** roll back only the failing agent—plus its dependents—while preserving forward progress for unaffected agents.
-- **Blameless post-mortems** document what failed, which signal triggered rollback, root cause, and prevention measures to build organizational learning.
+- **Blameless postmortems** document what failed, which signal triggered rollback, root cause, and prevention measures to build organizational learning.
