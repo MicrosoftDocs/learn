@@ -1,4 +1,4 @@
-Even with progressive deployment and quality gates, some issues only manifest at production scale or with specific customer data patterns. When monitoring detects a quality regression, the system must roll back automatically to the last stable version without waiting for manual intervention. Automated rollback reduces the mean time to recovery (MTTR) from hours to minutes.
+GitHub Actions and Azure Monitor work together to detect quality regressions and trigger automated rollbacks before they affect users at scale. Even with progressive deployment and quality gates in place, some issues only emerge with specific customer data patterns or at production load levels. When Azure Monitor signals a regression, the GitHub Actions rollback workflow redeploys the last stable version automatically—reducing mean time to recovery (MTTR) from hours to minutes.
 
 | Rollback Trigger | Detection Method | Typical Threshold | Response Time |
 |------------------|------------------|-------------------|---------------|
@@ -129,7 +129,7 @@ for agent in $AGENTS; do
 done
 ```
 
-This coordinated rollback ensures the agent network remains in a consistent, validated state.
+A coordinated rollback keeps the agent network in a consistent, validated state—partial rollbacks that leave dependent agents on mismatched versions cause cascading failures.
 
 ## Document rollback triggers in blameless post-mortems
 
@@ -145,8 +145,6 @@ Document in the GitHub issue created by the rollback workflow:
 - **Prevention**: What validation should be added to catch similar issues before production (expand evaluation set to include more low-severity vulnerability examples)
 
 This documentation becomes organizational learning. Over time, you build a knowledge base of failure modes and prevention strategies that improve the entire CI/CD process. Automated rollback reduces immediate customer impact, but the post-mortem analysis prevents future incidents.
-
-With dependency modeling, progressive deployment, multi-environment strategies, and automated rollback in place, you have a comprehensive CI/CD system for multi-agent deployments. You're ready to implement this system hands-on in the exercise.
 
 ## Key takeaways
 

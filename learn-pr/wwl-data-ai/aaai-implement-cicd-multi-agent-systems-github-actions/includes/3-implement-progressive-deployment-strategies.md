@@ -1,4 +1,4 @@
-Agent behavior changes are invisible to traditional infrastructure monitoring. A new system prompt or model version switch might produce identical latency and error rate metrics while generating fundamentally different outputs. You can't rely on health checks alone to validate an agent deployment—you need quality-gated rollout strategies that monitor behavioral correctness, not just operational health.
+Azure Container Apps and GitHub Actions work together to implement progressive deployment strategies for agent systems. Because agent behavior changes are invisible to traditional infrastructure monitoring—a new system prompt or model version can produce fundamentally different outputs while latency and error rates stay unchanged—you can't rely on health checks alone to validate a deployment. Quality-gated rollout strategies built on Azure AI Evaluation SDK metrics give you the behavioral signal you need at each stage of the rollout.
 
 | Strategy | Traffic Pattern | Rollback Speed | Best For |
 |----------|----------------|----------------|----------|
@@ -12,7 +12,7 @@ Canary deployment routes a small percentage of requests to the new agent version
 
 The quality gate determines success: if evaluation scores drop more than a defined threshold compared to the baseline, stop the rollout and roll back automatically. For Fabrikam's code review system, the primary quality metric is the accuracy of security vulnerability detection. A canary that misses 15% more vulnerabilities than the production version fails the quality gate.
 
-Implement canary deployment using traffic splitting in Azure AI Foundry or Azure Container Apps. For agent endpoints deployed as Azure Container Apps, configure traffic splitting at the revision level:
+Implement canary deployment using traffic splitting in Microsoft Foundry or Azure Container Apps. For agent endpoints deployed as Azure Container Apps, configure traffic splitting at the revision level:
 
 ```python
 # scripts/configure_canary.py
@@ -119,7 +119,7 @@ jobs:
           fi
 ```
 
-This workflow evaluates the canary every four hours. If quality metrics remain within 5% of baseline (the threshold parameter), it increases canary traffic by 20%. If metrics degrade beyond the threshold, it triggers an automated rollback.
+The workflow runs every four hours during the canary period. Quality metrics within 5% of baseline (the `threshold` parameter) advance canary traffic by 20%. Metrics that degrade beyond the threshold trigger an automatic rollback.
 
 ## Switch instantly with blue-green deployments
 
@@ -146,7 +146,7 @@ az network traffic-manager endpoint update \
   --endpoint-status Enabled
 ```
 
-Blue-green deployments require maintaining double the infrastructure during the transition period, but they provide the fastest rollback path—just re-enable the blue endpoint if the green version causes problems.
+Blue-green deployments require maintaining double the infrastructure during the transition period, but they provide the fastest rollback path—re-enable the blue endpoint if the green version causes problems.
 
 ## Control feature activation with feature flags
 
@@ -198,8 +198,6 @@ Feature flags provide the most granular control over rollout. Activate the new s
 ## Combine strategies for comprehensive risk management
 
 Use multiple progressive deployment strategies together. Deploy the new agent version to staging with full blue-green infrastructure. After staging validation passes, deploy to production using canary rollout. Control which customers see the new behavior using feature flags. This layered approach provides defense in depth: infrastructure validation, behavioral validation at scale, and per-tenant activation control.
-
-Now that you understand how to roll out agent changes progressively with quality gates, you're ready to configure multi-environment strategies that support enterprise deployment workflows.
 
 ## Key takeaways
 

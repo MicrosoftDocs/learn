@@ -1,4 +1,4 @@
-Single-agent CI/CD follows a linear path: test the agent, build the container, deploy to staging, verify functionality, promote to production. The dependency chain is simple because there's only one component to coordinate. Multi-agent systems introduce complexity—each agent has its own pipeline, and inter-agent dependencies create a deployment graph where one agent's API contract becomes another agent's integration requirement.
+GitHub Actions coordinates multi-agent deployments by modeling each agent as a dependent job in a shared workflow. Where single-agent CI/CD follows a linear path—test, build, deploy—multi-agent systems require a dependency graph that enforces deployment order and validates contract compatibility before any agent reaches production. Each agent's pipeline connects to the others through explicit dependency declarations and automated contract tests.
 
 | Deployment Aspect | Single Agent | Multi-Agent System |
 |-------------------|-------------|-------------------|
@@ -40,13 +40,13 @@ agents:
     depends_on: [orchestrator]
 ```
 
-This manifest defines the deployment order constraints. You can't deploy the orchestrator before deploying the agents it depends on, unless you've verified backward compatibility.
+The manifest enforces deployment order: you can't deploy the orchestrator before the agents it depends on, unless you've verified backward compatibility.
 
 ## Validate version compatibility before deployment
 
 Before deploying Agent B version 2.0, check that all agents depending on Agent B can still function with the new version. This requires contract testing: comparing the API contract that Agent B v2.0 exposes against the contracts that dependent agents currently expect.
 
-Contract testing for agents focuses on tool schemas. When Agent A calls Agent B using the AI Foundry agent runtime, it expects specific tool input parameters and output structures. If Agent B v2.0 adds a required parameter to an existing tool, Agent A breaks unless it also updates to send that parameter.
+Contract testing for agents focuses on tool schemas. When Agent A calls Agent B using the Microsoft Foundry Agents service, it expects specific tool input parameters and output structures. If Agent B v2.0 adds a required parameter to an existing tool, Agent A breaks unless it also updates to send that parameter.
 
 Implement contract validation as a GitHub Actions job that runs before any deployment:
 
@@ -150,7 +150,7 @@ jobs:
             --image fabrikam.azurecr.io/orchestrator:${{ github.sha }}
 ```
 
-This workflow deploys the ingestion agent first because it has no dependencies. The syntax analyzer and style checker deploy in parallel once ingestion completes. The orchestrator waits until both its dependencies finish. GitHub Actions ensures jobs run only when their prerequisites succeed.
+The ingestion agent deploys first because it has no dependencies. The syntax analyzer and style checker then deploy in parallel, and the orchestrator waits until both finish. GitHub Actions ensures no job runs until its prerequisites succeed.
 
 For complex dependency graphs with many agents, generate the workflow YAML programmatically from the dependency manifest rather than maintaining it manually.
 
@@ -158,7 +158,7 @@ For complex dependency graphs with many agents, generate the workflow YAML progr
 
 Contract tests verify that Agent B's new version produces outputs that Agent A can consume. Unlike unit tests that validate individual agent behavior, contract tests validate the integration boundary between two agents.
 
-Implement contract testing using the Pact framework or custom schema validation. For Azure AI Foundry agents, the contract is the tool schema plus the JSON structure of tool responses. A contract test for the orchestrator calling the style checker looks like this:
+Implement contract testing using the Pact framework or custom schema validation. For Microsoft Foundry agents, the contract is the tool schema plus the JSON structure of tool responses. A contract test for the orchestrator calling the style checker looks like this:
 
 ```python
 # tests/contracts/test_style_checker_contract.py
@@ -206,8 +206,6 @@ def test_style_checker_returns_expected_schema():
 ```
 
 Run these contract tests in your validation job before deploying any agent changes. If a contract test fails, the deployment pipeline stops, preventing the incompatible version from reaching production.
-
-With dependency modeling, compatibility validation, ordered deployments, and contract testing in place, you transform multi-agent deployments from a coordination nightmare into a predictable, automated process. The next step is implementing progressive deployment strategies that minimize risk when changes reach production.
 
 ## Key takeaways
 

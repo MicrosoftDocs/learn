@@ -1,4 +1,4 @@
-Enterprise agent deployments require multiple isolated environments that progress from development experimentation to production operation. Each environment needs its own infrastructure, configuration, and access controls. Changes flow through the environment sequence—dev to staging to production—with validation gates at each boundary.
+Microsoft Foundry projects, Azure App Configuration, and Bicep infrastructure templates are the three tools that make multi-environment agent deployments consistent and auditable. Each environment—development, staging, and production—requires its own isolated infrastructure and configuration, and GitHub Actions promotion gates enforce the validation rules that control when changes can advance to the next tier.
 
 | Environment | Purpose | Data Characteristics | Deployment Frequency |
 |-------------|---------|---------------------|---------------------|
@@ -10,7 +10,7 @@ Enterprise agent deployments require multiple isolated environments that progres
 
 The environment progression model ensures that changes are validated at increasing levels of realism before reaching customers. Development environments use inexpensive models (GPT-4o-mini) and synthetic data to enable rapid iteration. Staging environments mirror production infrastructure and use production-equivalent models with sanitized data to validate performance characteristics. Production serves live customer traffic.
 
-Each environment requires its own Azure AI Foundry project, agent deployments, and connected resources. Use consistent naming conventions to identify environment boundaries:
+Each environment requires its own Microsoft Foundry project, agent deployments, and connected resources. Use consistent naming conventions to identify environment boundaries:
 
 ```text
 fabrikam-agents-dev-eastus
@@ -151,7 +151,7 @@ resource containerApp 'Microsoft.App/containerApps@2023-05-01' = {
 }
 ```
 
-This Bicep module adjusts compute resources, model selection, and scaling limits based on the environment parameter. Deploy with:
+The `environment` parameter controls compute resources, model selection, and scaling limits. Deploy with:
 
 ```azurecli
 az deployment group create \
@@ -182,7 +182,7 @@ az role assignment list \
 # Returns empty - no access granted
 ```
 
-This isolation prevents development environment compromises from affecting production data or credentials.
+Separate Key Vaults prevent a development environment compromise from exposing production secrets or credentials.
 
 ## Gate promotions between environments with approvals
 
@@ -224,31 +224,31 @@ jobs:
 
 Configure the `production` environment in GitHub repository settings with required reviewers. When this workflow runs, GitHub pauses execution at the `environment: production` declaration and notifies reviewers. Deployment proceeds only after approval.
 
-This approval gate provides a human checkpoint before production changes. Reviewers verify that staging validation passed, evaluation metrics are acceptable, and the deployment timing aligns with customer maintenance windows.
+Required reviewers receive a notification and must approve before deployment proceeds. Reviewers verify that staging validation passed, evaluation metrics are acceptable, and the deployment timing aligns with customer maintenance windows.
 
 > [!TIP]
 > **Pause and reflect:** Your team is about to deploy a new agent version that passed all staging tests. A production customer has a version pin expiring in 3 days, and another customer requires EU data residency. How would you sequence the promotion to avoid violating either constraint?
 
-With multi-environment configuration and promotion gates in place, you have a structured path from development to production. The final component of a robust CI/CD system is automated rollback when deployments cause quality regressions.
+With multi-environment configuration and promotion gates in place, you have a structured path from development to production. The last piece of a complete CI/CD pipeline is automated rollback when deployments cause quality regressions.
 
 ## Developer environment standardization
 
-Multi-agent systems involve multiple languages, runtimes, and cloud CLI tools. Without standardized developer environments, onboarding takes days and "works on my machine" issues waste sprint time. The architect's job is to define the SDLC artifact set that governs how developers and AI assistants interact with the codebase, parallel to how `CONTRIBUTING.md` defines human contribution patterns.
+Multi-agent systems involve multiple languages, runtimes, and cloud CLI tools. Without standardized developer environments, onboarding takes days and "works on my machine" issues waste sprint time. Define these artifacts early—the same way `CONTRIBUTING.md` establishes contribution patterns for humans, they establish working patterns for both developers and AI assistants.
 
-Five SDLC artifacts standardize the multi-agent developer environment:
+Configure the following SDLC artifacts to standardize the developer environment:
 
 1. **Dev containers** — A `.devcontainer/devcontainer.json` file specifies the complete developer environment: base image (Python 3.12 + Azure CLI), VS Code extensions to install on container start, post-create setup scripts, and port forwarding rules. Every developer opens the same environment. GitHub Codespaces uses the same configuration for fully cloud-hosted development — the `devcontainer.json` is the single source of truth for "what does a correct development environment look like."
 
-2. **VS Code extension manifests** — `.vscode/extensions.json` lists baseline-required extensions (Python, GitHub Copilot, Azure CLI Tools, Bicep) and recommended extensions (REST Client, Azure AI Inference). The architect decision: baseline-required extensions go in `extensions.json`; the dev container's `customizations.vscode.extensions` array installs them automatically; recommended extensions are listed as suggestions but not auto-installed.
+2. **VS Code extension manifests** — `.vscode/extensions.json` lists baseline-required extensions (Python, GitHub Copilot, Azure CLI Tools, Bicep) and recommended extensions (REST Client, Azure AI Inference). Baseline-required extensions go in `extensions.json`. The dev container's `customizations.vscode.extensions` array installs them automatically. Recommended extensions are listed as suggestions but not auto-installed.
 
 3. **CLI tooling pinning** — Pin CLI tool versions in CI configuration to ensure reproducible automation. The standard tool set for Azure AI multi-agent development: Azure CLI (`az`), Azure Developer CLI (`azd`) for provisioning and deploying full-stack applications, Bicep CLI for IaC compilation, and GitHub CLI (`gh`) for PR automation. In GitHub Actions, pin these versions explicitly rather than relying on the runner's default versions.
 
-4. **Dependency management** — Python lock files ensure deterministic installs. Use `uv` or `pip-tools` to generate `requirements.lock` from `requirements.in`; commit both files to source control. The architect decision: lock-file commit policy (always commit) + dependency-update automation (Dependabot or Renovate to propose updates as PRs with automated test runs). Unpinned dependencies are a production stability risk in long-running agent deployments.
+4. **Dependency management** — Python lock files ensure deterministic installs. Use `uv` or `pip-tools` to generate `requirements.lock` from `requirements.in` and commit both files to source control. Configure Dependabot or Renovate to propose dependency updates as PRs with automated test runs. Unpinned dependencies are a production stability risk in long-running agent deployments.
 
 5. **AI instructions files** — Repository-wide AI assistant context is a first-class SDLC artifact. `.github/copilot-instructions.md` provides Copilot with codebase conventions that apply to every chat and inline suggestion in the repository. `AGENTS.md` is the emerging cross-tool standard for agent-development context (used by Claude, GitHub Copilot, and other AI coding assistants). A well-maintained AI instructions file includes: naming conventions, which patterns are approved vs. deprecated, key module boundaries, and the case-company context that frames code contributions.
 
 > [!NOTE]
-> **AI instructions files (Training only):** The specific file names (`.github/copilot-instructions.md`, `AGENTS.md`) and their runtime behaviors evolve as tooling matures. The architect principle is stable: AI assistants need the same codebase context that human contributors get from `CONTRIBUTING.md`. Authoring and maintaining AI instructions files is a first-class SDLC responsibility. This topic is not a direct AI-500 exam blueprint item.
+> **AI instructions files:** The specific file names (`.github/copilot-instructions.md`, `AGENTS.md`) and their behaviors evolve as tooling matures. The underlying practice won't: AI assistants need the same codebase context that human contributors get from `CONTRIBUTING.md`. Treat authoring and maintaining AI instructions files as a first-class SDLC responsibility.
 
 ## Azure Well-Architected Framework alignment for compute selection
 
@@ -257,10 +257,10 @@ Infrastructure decisions in multi-agent CI/CD pipelines connect to the Azure Wel
 | WAF Pillar | CI/CD and compute design consideration |
 |---|---|
 | **Reliability** | Multi-region deployment strategies, health probes, circuit breakers, and automated rollback (this module) ensure agents remain available when deployments fail |
-| **Security** | RBAC per environment, Key Vault isolation, OIDC-based GitHub Actions authentication (no stored credentials), managed identity for all agent-to-service calls (LP3 M2) |
-| **Cost Optimization** | Environment-tier compute sizing (GPT-4o-mini in dev, GPT-4o in prod), Container Apps scale-to-zero for non-production environments, model routing (LP3 M4) |
+| **Security** | RBAC per environment, Key Vault isolation, OIDC-based GitHub Actions authentication (no stored credentials), managed identity for all agent-to-service calls |
+| **Cost Optimization** | Environment-tier compute sizing (GPT-4o-mini in dev, GPT-4o in prod), Container Apps scale-to-zero for non-production environments, model routing |
 | **Operational Excellence** | IaC-parameterized Bicep templates, promotion gates with explicit approval, DTAP environment naming conventions, AI instructions files for developer tooling consistency |
-| **Performance Efficiency** | AKS warm pods for latency-sensitive agents, Container Apps burst scaling for variable load, parallel agent spawning (LP1 M2 Unit 5) for throughput |
+| **Performance Efficiency** | AKS warm pods for latency-sensitive agents, Container Apps burst scaling for variable load, parallel agent spawning for throughput |
 
 Frame every compute sizing and hosting decision in your architecture review against these five pillars. WAF pillar compliance is also the standard lens for Azure Architecture Reviews — the same vocabulary enables faster architectural feedback from Azure experts.
 
