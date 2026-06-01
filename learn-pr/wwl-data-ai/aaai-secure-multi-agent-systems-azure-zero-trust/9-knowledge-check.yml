@@ -13,7 +13,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "Fabrikam's code review orchestrator, security analysis agent, and style analysis agent all currently share one managed identity with Storage Blob Contributor permissions. Why is this a security risk, and what's the correct approach?"
+  - content: "Fabrikam's code review orchestrator, security analysis agent, and style analysis agent all share one managed identity with Storage Blob Contributor permissions. Why is this a security risk, and what's the correct approach?"
     choices:
     - content: "The shared identity is a risk because any agent can modify storage that other agents depend on. Each agent should have its own identity with only the specific permissions it requires."
       isCorrect: true

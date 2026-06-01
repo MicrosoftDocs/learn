@@ -2,7 +2,7 @@
 uid: learn.wwl.secure-multi-agent-systems-azure-zero-trust
 metadata:
   title: Secure Multi-Agent Systems with Azure Zero-Trust Architecture
-  description: "Secure production multi-agent systems using Azure zero-trust architecture principles. Apply per-agent managed identities with least-privilege access, design authentication flow taxonomy (managed identity, OBO, user-delegated, key-based), manage secrets lifecycle with Azure Key Vault including rotation and customer-managed keys (CMK) encryption, design network controls to prevent lateral movement, implement multi-tenant data isolation, and configure compliance controls for enterprise regulatory requirements."
+  description: "Secure production multi-agent systems using Azure zero-trust architecture principles. Apply per-agent managed identities with least-privilege access and design authentication flows covering managed identity, on-behalf-of (OBO), user-delegated, and key-based patterns. Manage secrets lifecycle with Azure Key Vault, including rotation and customer-managed keys (CMK) encryption, and design network controls to prevent lateral movement. Implement multitenant data isolation and configure compliance controls for enterprise regulatory requirements."
   ms.date: 06/01/2026
   author: chrishowd
   ms.author: cahowd
@@ -10,14 +10,14 @@ metadata:
   ms.service: microsoft-foundry
   ai-usage: ai-assisted
 title: Secure multi-agent systems with Azure zero-trust architecture
-summary: "Secure production multi-agent systems using Azure zero-trust architecture principles. Apply per-agent managed identities with least-privilege access, design network security controls to prevent lateral movement across agent services, implement multi-tenant data isolation to prevent cross-tenant data leakage, and configure compliance controls for SOC 2, GDPR, and industry-specific regulations."
+summary: "Secure production multi-agent systems using Azure zero-trust architecture principles. Apply per-agent managed identities with least-privilege access and design authentication flows covering managed identity, on-behalf-of (OBO), user-delegated, and key-based patterns. Manage secrets lifecycle with Azure Key Vault, including rotation and customer-managed keys (CMK) encryption, and design network controls to prevent lateral movement. Implement multitenant data isolation and configure compliance controls for enterprise regulatory requirements."
 abstract: |
   By the end of this module, you're able to:
   - Apply zero-trust security principles to multi-agent architectures with per-agent managed identities and least-privilege access
   - Design authentication flows for multi-agent solutions including managed identity, on-behalf-of, user-delegated OAuth2, and key-based fallback
-  - Manage secrets lifecycle using Azure Key Vault including certificates, automated rotation, role-based access control (RBAC) granularity, and encryption choices
+  - Manage secrets lifecycle using Azure Key Vault including certificates, automated rotation, role-based access control granularity, and encryption choices
   - Design network security controls to prevent lateral movement across agent networks
-  - Implement multi-tenant data isolation to prevent cross-tenant data leakage in shared agent deployments
+  - Implement multitenant data isolation to prevent cross-tenant data leakage in shared agent deployments
   - Configure compliance controls for SOC 2, GDPR, EU AI Act, and industry-specific regulatory requirements
 prerequisites: |
   Before starting this module, you should have:
