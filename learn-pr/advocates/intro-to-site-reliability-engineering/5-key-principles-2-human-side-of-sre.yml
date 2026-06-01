@@ -1,18 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-site-reliability-engineering.5-key-principles-2-human-side-of-sre
-title: "Key SRE principles and practices: The human side of SRE"
+title: "Key SRE principles and practices: the human side of SRE"
 metadata:
-  title: "Key SRE principles and practices: The human side of SRE"
+  title: "Key SRE Principles and Practices: The Human Side of SRE"
   description: "Key SRE principles and practices: The human side of SRE"
-  ms.date: 11/14/2024
-  author: dnblankedelman
-  ms.author: dnb
+  ms.date: 05/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom: team=cloud_advocates
-  ms.contributors: dnb-01282021
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-key-principles-2-human-side-of-sre.md)]
+  [!include[](Includes/5-key-principles-2-human-side-of-sre.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -34,15 +33,15 @@ quiz:
 
   - content: "What's an SRE's relationship to toil?"
     choices:
-    - content: "SRE's work to eliminate toil as their first priority."
+    - content: "SREs work to eliminate toil as their first priority."
       isCorrect: false
-      explanation: "SRE's work to eliminate toil whenever it's possible, but sometimes other work has greater priority."
-    - content: "SRE's attempt to manage toil as best they can."
+      explanation: "SREs work to eliminate toil whenever it's possible, but sometimes other work has greater priority."
+    - content: "SREs attempt to manage toil as best they can."
       isCorrect: false
       explanation: "SREs prefer to eliminate toil if possible. Well-managed toil is still toil."
-    - content: "SRE's work to eliminate toil wherever and whenever it's appropriate."
+    - content: "SREs work to eliminate toil wherever and whenever it's appropriate."
       isCorrect: true
-      explanation: "Correct. SRE's work to eliminate toil wherever and whenever it's appropriate."
+      explanation: "Correct. SREs work to eliminate toil wherever and whenever it's appropriate."
 
   - content: "What is a suggested breakdown of work for an SRE?"
     choices:
