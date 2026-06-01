@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Display your knowledge.
-  ms.date: 11/11/2024
-  author: sarah-yo
-  ms.author: sayoung
+  ms.date: 05/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 4
@@ -35,7 +35,7 @@ quiz:
         - content: "Cognitive Services OpenAI Contributor"
           isCorrect: true
           explanation: "This role includes permissions to create custom fine-tuned models, upload datasets, and manage model deployments."
-    - content: "In the provided code example for keyless authentication to Azure OpenAI for Azure-hosted environments by using Python, what is the purpose of the `chat.completions.create` method?"
+    - content: "In the provided code example for keyless authentication to Azure OpenAI for local Python development, what is the purpose of the `chat.completions.create` method?"
       choices:
         - content: "Authenticate the user"
           isCorrect: false
@@ -47,3 +47,7 @@ quiz:
           isCorrect: false
           explanation: "This method generates a response from the Azure OpenAI model but doesn't handle storing the response. Storing data would require additional code."
     
+
+
+
+
