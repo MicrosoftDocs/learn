@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-responsible-ai-governance-multi-agent.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Module assessment."
+  ms.date: 06/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Fabrikam's code review system shows that code submissions associated with junior developer identifiers receive 23% more security findings than equivalent code submitted by senior developers. Which technique best identifies which agent in the pipeline is introducing this disparity?"
+    choices:
+    - content: "Retrain all agents using a deduplicated dataset that removes developer seniority signals from the training data."
+      isCorrect: false
+      explanation: "Retraining addresses bias at the source but doesn't identify which agent is currently producing the disparity. Before you can fix the problem, you need to locate it. Pipeline replay injection is the isolation technique."
+    - content: "Replay the code submission through the pipeline starting at each agent step with the same input, compare outputs between senior and junior developer metadata contexts, and identify the step where the disparity first appears."
+      isCorrect: true
+      explanation: "Replay injection is a causality isolation technique: by inserting the same input at each agent stage and observing where the output distributions diverge, you precisely identify the responsible agent. This is significantly more efficient than retraining all agents blindly."
+    - content: "Strip all developer identity metadata from inputs before any agent processes them, which prevents bias from entering the pipeline."
+      isCorrect: false
+      explanation: "Stripping metadata is a valid mitigation strategy—but it doesn't identify which agent was responsible. The question asks for identification first. Additionally, stripping metadata doesn't address bias that has been embedded in agent weights or system prompts through historical training patterns."
+  - content: "A developer receives a code review recommending they redesign their database schema. They ask which agent made this recommendation and what evidence supports it. What does a properly designed multi-agent transparency system provide?"
+    choices:
+    - content: "The full conversation history of all agent interactions so the developer can trace each step themselves."
+      isCorrect: false
+      explanation: "Full conversation history exposes internal system architecture, may include confidential system prompts, and places the burden of interpretation on the developer. The transparency system should surface structured attribution—not raw internals."
+    - content: "A structured attribution report with: the source agent ID, the specific evidence that supported the finding (rule reference or pattern match), the confidence level, and a link to the relevant architectural guideline."
+      isCorrect: true
+      explanation: "Structured attribution is actionable and auditable. It answers 'who said what and why' without exposing system internals. The confidence level helps the developer assess whether to prioritize the finding, and the guideline link provides verifiable justification."
+    - content: "A confidence percentage for the entire code review and the model temperature setting used during generation."
+      isCorrect: false
+      explanation: "Model temperature is an implementation detail that's meaningless to developers and should never be in user-facing explanations. A single overall confidence score doesn't provide the per-finding attribution developers need to evaluate specific recommendations."
+  - content: "Fabrikam wants to use code submitted through their review system to fine-tune future models. Under GDPR, what is required before using this data for this purpose?"
+    choices:
+    - content: "Anonymizing the code by removing developer names from comments is sufficient to allow use for model training without additional consent."
+      isCorrect: false
+      explanation: "Anonymization alone doesn't satisfy GDPR requirements for repurposing data. The original data was collected for code review (specific purpose); using it for model training is a different purpose. GDPR's purpose limitation principle requires either the new use is compatible with the original purpose or separate consent is obtained."
+    - content: "Separate, specific consent from the enterprise customer is required, as using code review data for model training goes beyond the stated purpose of the original data collection."
+      isCorrect: true
+      explanation: "GDPR's purpose limitation principle prohibits processing personal data for purposes incompatible with the original collection purpose without additional justification. Code review data collected under a SaaS contract cannot be repurposed for model training without the data controller's (enterprise customer's) explicit consent for that specific use."
+    - content: "Since the code is owned by the enterprise customer, not by individuals, GDPR doesn't apply and no consent is needed for model training."
+      isCorrect: false
+      explanation: "GDPR applies to personal data—code repositories frequently contain personal data (developer identities in commit history, email addresses in configuration, personal data in test fixtures). The enterprise's ownership of the code doesn't eliminate GDPR obligations for the personal data within it."

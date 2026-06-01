@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-responsible-ai-governance-multi-agent.implement-transparency-explainability
+title: Implement transparency and explainability
+metadata:
+  title: Implement Transparency and Explainability
+  description: "Implement transparency and explainability."
+  ms.date: 06/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-implement-transparency-explainability.md)]
