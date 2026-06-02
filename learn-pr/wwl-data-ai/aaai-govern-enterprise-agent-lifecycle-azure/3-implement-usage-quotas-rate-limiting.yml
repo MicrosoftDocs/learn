@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.govern-enterprise-agent-lifecycle-azure.implement-usage-quotas-rate-limiting
+title: Implement usage quotas and rate limiting
+metadata:
+  title: Implement Usage Quotas and Rate Limiting
+  description: "Implement usage quotas and rate limiting."
+  ms.date: 06/02/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-implement-usage-quotas-rate-limiting.md)]

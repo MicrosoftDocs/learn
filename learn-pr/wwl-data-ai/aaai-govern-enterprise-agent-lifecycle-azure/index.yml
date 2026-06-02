@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.govern-enterprise-agent-lifecycle-azure
+metadata:
+  title: Govern the Enterprise Agent Lifecycle in Microsoft Foundry
+  description: "Govern the enterprise agent lifecycle in Microsoft Foundry. Design agent versioning strategies and approval workflows, implement usage quotas and cost allocation models, establish change management processes for behavioral updates, and design agent retirement workflows that minimize business disruption."
+  ms.date: 06/02/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-foundry
+  ai-usage: ai-assisted
+title: Govern the enterprise agent lifecycle in Microsoft Foundry
+summary: "Govern the enterprise agent lifecycle in Microsoft Foundry. Design agent versioning strategies and approval workflows for controlled production updates, implement usage quotas and cost allocation models for agent operations, establish change management and behavioral risk assessment processes, and design agent retirement workflows that minimize disruption to downstream consumers."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Design agent versioning strategies and approval workflows for controlled production updates
+  - Implement usage quotas, rate limiting, and cost allocation models for enterprise agent operations
+  - Establish change management and behavioral risk assessment processes for agent updates
+  - Design agent retirement and deprecation workflows that minimize disruption to downstream consumers
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience deploying agents to Microsoft Foundry across multiple environments
+  - Familiarity with Azure cost and policy management
+  - Understanding of CI/CD pipeline design for AI applications
+  - Experience with GenAIOps practices or equivalent
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+- devops-engineer
+products:
+- azure
+- microsoft-foundry
+subjects:
+- artificial-intelligence
+- devops
+units:
+- learn.wwl.govern-enterprise-agent-lifecycle-azure.introduction
+- learn.wwl.govern-enterprise-agent-lifecycle-azure.design-agent-version-approval-workflows
+- learn.wwl.govern-enterprise-agent-lifecycle-azure.implement-usage-quotas-rate-limiting
+- learn.wwl.govern-enterprise-agent-lifecycle-azure.design-cost-allocation-chargeback-models
+- learn.wwl.govern-enterprise-agent-lifecycle-azure.establish-agent-retirement-deprecation-processes
+- learn.wwl.govern-enterprise-agent-lifecycle-azure.knowledge-check
+- learn.wwl.govern-enterprise-agent-lifecycle-azure.summary
+badge:
+  uid: learn.wwl.govern-enterprise-agent-lifecycle-azure.badge
