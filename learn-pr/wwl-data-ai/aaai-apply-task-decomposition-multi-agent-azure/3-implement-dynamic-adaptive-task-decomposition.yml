@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-task-decomposition-multi-agent-azure.implement-dynamic-adaptive-task-decomposition
+title: Implement dynamic adaptive task decomposition
+metadata:
+  title: Implement Dynamic Adaptive Task Decomposition
+  description: "Implement dynamic adaptive task decomposition."
+  ms.date: 05/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-implement-dynamic-adaptive-task-decomposition.md)]

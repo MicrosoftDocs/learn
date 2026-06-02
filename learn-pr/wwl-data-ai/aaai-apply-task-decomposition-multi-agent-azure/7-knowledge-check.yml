@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-task-decomposition-multi-agent-azure.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "This unit contains a knowledge check to reinforce your understanding of task decomposition strategies, handoff protocols, and granularity optimization."
+  ms.date: 05/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Your meta-agent planner produces a decomposition plan, but early execution results reveal that the original plan was built on a flawed assumption about the data structure. What pattern should you apply?"
+    choices:
+    - content: "Discard all intermediate results, fix the meta-agent's prompt, and start the entire plan from scratch."
+      isCorrect: false
+      explanation: "Incorrect. Restarting from scratch discards valid work already completed and wastes the investment in tasks that succeeded. The plan-and-execute architecture specifically supports replanning from the current state without starting over."
+    - content: "Continue executing the original plan regardless—replanning mid-execution introduces unpredictable state."
+      isCorrect: false
+      explanation: "Incorrect. Executing a plan known to be based on a flawed assumption produces incorrect results. The reflection-and-replanning capability exists precisely for scenarios where early execution reveals plan errors."
+    - content: "Pass the intermediate results and the discovered discrepancy back to the meta-agent, which reevaluates and updates the remaining plan while preserving completed steps."
+      isCorrect: true
+      explanation: "Correct. The plan-and-execute architecture with reflection allows the meta-agent to receive completed work and the newly discovered discrepancy, then generate a revised plan for the remaining steps only. Completed steps aren't rerun—the loop continues forward from the corrected plan."
+  - content: "A receiving agent returns an acknowledgment rejecting a handoff from an analysis agent, citing 'task outside domain.' How should the orchestrator handle this acknowledgment?"
+    choices:
+    - content: "Treat the rejection as an agent failure and trigger the circuit-breaker for the receiving agent."
+      isCorrect: false
+      explanation: "Incorrect. A rejection for 'task outside domain' is a valid protocol response—not an agent failure. The receiving agent is correctly indicating it can't handle this task type. Triggering a circuit-breaker penalizes an agent behaving correctly."
+    - content: "Log the rejection with the reason, query the registry for an alternative agent with the required capability, and reissue the handoff."
+      isCorrect: true
+      explanation: "Correct. A domain rejection is a routing miss—the wrong agent for the task was selected. The orchestrator should log the rejection, query the agent registry for agents with the specific capability needed, and reissue the handoff to a matching agent."
+    - content: "Add the rejected task back to the original sending agent's queue. Provide fallback instructions that specify how to handle the rejection without specialized knowledge."
+      isCorrect: false
+      explanation: "Incorrect. Routing a task back to the sending agent undermines the purpose of specialization-based decomposition. The sending agent rejected the subtask because it exceeded that agent's domain—routing it back produces low-quality results."
+  - content: "You're comparing two decomposition approaches for a financial research task. Approach A uses six specialized agents. Approach B uses two agents. Your evaluation shows similar quality scores but Approach B completes in 40% of the time at 35% of the cost. What does this evaluation indicate?"
+    choices:
+    - content: "Approach A should be used in production because more specialized agents produce higher-quality research in edge cases not covered by the evaluation."
+      isCorrect: false
+      explanation: "Incorrect. Evaluation data should drive this decision. Without evidence that edge cases produce different quality outcomes, choosing the three times more expensive and 2.5 times slower approach based on speculation isn't justified. Empirical data shows Approach B is superior on measured dimensions."
+    - content: "Approach A exhibits over-decomposition: the four extra agents are adding coordination overhead without proportional quality improvement, suggesting task boundaries were drawn at suboptimal granularity."
+      isCorrect: true
+      explanation: "Correct. When similar quality scores appear at significantly different costs and latency, the more complex decomposition likely has unnecessary task boundaries. The coordination overhead (planning prompts, API calls, context handoffs) of four extra agents is consuming resources without adding measurable quality."
+    - content: "The evaluation dataset is insufficient—add more test cases before making a granularity decision."
+      isCorrect: false
+      explanation: "Incorrect. While expanding evaluation coverage is always valuable, the existing data clearly shows Approach B delivers equivalent quality at substantially lower cost and latency. Delaying the decision pending more evaluation when the current signal is this clear isn't an optimal engineering practice."

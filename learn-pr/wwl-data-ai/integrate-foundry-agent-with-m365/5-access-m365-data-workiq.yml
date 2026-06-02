@@ -2,9 +2,10 @@
 uid: learn.wwl.integrate-foundry-agent-with-m365.access-m365-data-workiq
 title: Access Microsoft 365 data with Work IQ
 metadata:
+  zone_pivot_groups: video-or-text
   title: Access Microsoft 365 data with Work IQ
   description: Learn how to use Microsoft Work IQ to provide your Foundry agents with access to Microsoft 365 data like emails, meetings, and documents.
-  ms.date: 02/17/2026
+  ms.date: 5/29/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

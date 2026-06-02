@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-multi-agent-systems-azure-zero-trust.configure-compliance-controls
+title: Configure compliance controls for regulated agent deployments
+metadata:
+  title: Configure Compliance Controls for Regulated Agent Deployments
+  description: "Configure compliance controls for regulated agent deployments."
+  ms.date: 06/01/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/8-configure-compliance-controls.md)]

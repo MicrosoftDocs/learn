@@ -4,10 +4,14 @@ title: Keyless authentication methods
 metadata:
   title: Keyless authentication methods
   description: Learn about keyless authentication methods that can be used to authenticate with Azure services.
-  ms.date: 11/11/2024
-  author: sarah-yo
-  ms.author: sayoung
+  ms.date: 05/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/3-keyless-authentication-methods.md)]
+
+
+
+

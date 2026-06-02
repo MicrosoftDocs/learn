@@ -2,11 +2,12 @@
 uid: learn.wwl.build-agent-workflows-microsoft-foundry.summary
 title: Summary
 metadata:
+  zone_pivot_groups: video-or-text
   title: Summary
   description: Summary of key learning points and further reading for building workflows using Microsoft Foundry.
   author: buzahid
   ms.author: buzahid
-  ms.date: 1/8/2026
+  ms.date: 5/29/2026
   ms.topic: unit
 durationInMinutes: 1
 content: |

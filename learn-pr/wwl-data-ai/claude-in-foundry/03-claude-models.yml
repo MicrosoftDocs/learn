@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.claude-in-foundry.claude-overview
+title: Claude models in Microsoft Foundry
+metadata:
+  title: Claude models in Microsoft Foundry
+  description: "Overview of Claude models in Microsoft Foundry."
+  ms.date: 05/25/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 3
+content: |
+  [!include[](includes/03-claude-models.md)]

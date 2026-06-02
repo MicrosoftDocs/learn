@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2f9e9edb-74b0-4e66-8a93-15ccdf6fb30a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In the Microsoft Agent Framework, tools allow your AI agent to use existing APIs and services to perform tasks it couldn't do on its own. Tools work through function calling, allowing AI to automatically request and use specific functions. The framework routes the request to the appropriate function in your codebase and returns the results back to the large language model (LLM) so it can generate a final response.
 
 To enable automatic function calling, tools need to provide details that describe how they work. The function's input, output, and purpose should be described in a way that the AI can understand, otherwise, the AI can't call the function correctly.
@@ -49,3 +60,5 @@ When creating custom tools for your Microsoft Foundry Agent, you need to underst
 - **Keep functions focused**: Design each tool to handle a specific task rather than trying to do too many things in one function
 
 By following these concepts, you can extend your Microsoft Foundry Agent with both built-in and custom tools, allowing it to interact with APIs and perform advanced tasks. This approach makes your AI more powerful and capable of handling real-world applications efficiently.
+
+::: zone-end

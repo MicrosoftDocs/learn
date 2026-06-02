@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.apply-task-decomposition-multi-agent-azure
+metadata:
+  title: Apply Task Decomposition and Agent Collaboration Strategies in Microsoft Foundry
+  description: "Apply advanced task decomposition strategies in Microsoft Foundry multi-agent systems. Design prompt chaining workflows, implement LLM-driven adaptive decomposition, configure agent handoff protocols for context-preserving transitions, and balance decomposition granularity against coordination overhead."
+  ms.date: 05/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-foundry
+  ai-usage: ai-assisted
+title: Apply task decomposition and agent collaboration strategies in Microsoft Foundry
+summary: "Apply advanced task decomposition strategies in Microsoft Foundry multi-agent systems. Design prompt chaining workflows for complex reasoning, implement LLM-driven adaptive decomposition with meta-agent planners, configure agent handoff protocols for context-preserving transitions, and balance decomposition granularity against coordination overhead."
+abstract: |
+  By the end of this module, you're able to:
+  - Design prompt chaining workflows that guide agents through complex multi-step analytical tasks
+  - Implement dynamic adaptive task decomposition using LLM-driven meta-agent planning
+  - Configure agent collaboration and handoff protocols for context-preserving task transitions
+  - Balance task decomposition granularity against coordination overhead for performance optimization
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience building multi-agent solutions with Microsoft Foundry Agent Service and Microsoft Agent Framework
+  - Understanding of orchestration patterns from the previous module or equivalent experience
+  - Proficiency in Python
+  - 4+ years of AI/ML development experience
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+products:
+- azure
+- microsoft-foundry
+- foundry-agent-service
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.apply-task-decomposition-multi-agent-azure.introduction
+- learn.wwl.apply-task-decomposition-multi-agent-azure.design-prompt-chain-workflows
+- learn.wwl.apply-task-decomposition-multi-agent-azure.implement-dynamic-adaptive-task-decomposition
+- learn.wwl.apply-task-decomposition-multi-agent-azure.configure-agent-handoff-collaboration-protocols
+- learn.wwl.apply-task-decomposition-multi-agent-azure.ensure-handoff-reliability-context-preservation
+- learn.wwl.apply-task-decomposition-multi-agent-azure.optimize-decomposition-granularity
+- learn.wwl.apply-task-decomposition-multi-agent-azure.knowledge-check
+- learn.wwl.apply-task-decomposition-multi-agent-azure.summary
+badge:
+  uid: learn.wwl.apply-task-decomposition-multi-agent-azure.badge

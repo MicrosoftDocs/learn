@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b3c2cbd6-01e1-4a5d-9618-9fa6e6fff15c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Agents are the core reasoning components within a Microsoft Foundry workflow. By adding agents to a workflow, you enable AI-driven decision-making, classification, and response generation as part of a larger orchestration. Each agent can be configured with a specific purpose, model, prompt, and set of tools, allowing workflows to combine multiple specialized capabilities.
 
 You add agents to a workflow by inserting an **Invoke agent** node. This node can reference an existing agent from your Foundry project, or you can create a new agent directly within the workflow designer. The **Invoke agent** editor allows you to configure tools, knowledge bases, memory, and guardrails for the agent, tailoring its behavior to the workflow's needs. When you invoke an agent, the workflow passes context—such as user input or previously set variables—to the agent and receives a response that can be used in subsequent steps.
@@ -13,3 +24,5 @@ Once an agent is added to a workflow, its output can be stored in a variable and
 :::image type="content" source="../media/agent-action-settings.png" alt-text="Screenshot showing how to store agent output in a variable for later use in the workflow.":::
 
 By thoughtfully adding and configuring agents, you transform a simple sequence of actions into an intelligent, adaptive workflow. 
+
+::: zone-end

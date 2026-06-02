@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-nfs-volumes.create-nfs-volume
+title: Create an NFS volume for Azure NetApp Files
+metadata:
+  title: Create an NFS volume for Azure NetApp Files
+  description: Learn how to create an NFS volume for Azure NetApp Files.
+  ms.date: 05/12/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-create-nfs-volume.md)]

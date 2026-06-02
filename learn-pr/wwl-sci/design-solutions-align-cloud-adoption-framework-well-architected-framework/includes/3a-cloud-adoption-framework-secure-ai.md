@@ -14,18 +14,18 @@ These layers work together: landing zones provide platform guardrails, the WAF s
 
 ## AI security within the Cloud Adoption Framework
 
-The CAF AI adoption scenario includes security guidance that spans the same phases as the Secure methodology—Strategy, Plan, Ready, Adopt, Govern, and Manage. This guidance addresses AI-specific risks while aligning with your broader security strategy.
+The CAF AI adoption scenario includes security guidance organized across six phases—Strategy, Plan, Ready, Govern, Secure, and Manage. This guidance addresses AI-specific risks while aligning with your broader security strategy.
 
-Key AI security activities across CAF phases include:
+Key AI security activities across CAF AI adoption phases include:
 
 - **Strategy**: Define AI security objectives and responsible AI principles
 - **Plan**: Assess AI skills gaps and plan for AI-specific security controls
 - **Ready**: Prepare secure AI infrastructure and establish AI security baselines
-- **Adopt**: Implement AI security controls during model deployment
 - **Govern**: Establish AI governance policies and risk management
+- **Secure**: Discover AI security risks, protect AI resources and data, and detect AI security threats
 - **Manage**: Monitor AI systems for threats and maintain AI security posture
 
-:::image type="content" source="../media/cloud-adoption-framework-ai.png" alt-text="Diagram that shows the Cloud Adoption Framework stages define strategy, plan, ready, adopt, and govern and manage." lightbox="../media/cloud-adoption-framework-ai.png":::
+:::image type="content" source="../media/cloud-adoption-framework-ai.png" alt-text="Diagram that shows the Cloud Adoption Framework AI adoption phases: AI Strategy, AI Plan, AI Ready, Govern AI, Secure AI, and Manage AI." lightbox="../media/cloud-adoption-framework-ai.png":::
 
 ## Discovering AI security risks
 
@@ -74,7 +74,7 @@ AI systems contain valuable assets that require strong protection against unauth
 Implement comprehensive security measures to protect all components of your AI infrastructure:
 
 - **Create a complete AI asset inventory**: Unknown AI assets create security gaps that attackers exploit. Use resource discovery tools to identify AI resources across subscriptions and maintain this inventory through automated scanning.
-- **Secure AI communication channels**: Implement managed identities for secure authentication, use virtual networks to isolate AI communications, and secure API endpoints that expose AI capabilities.
+- **Secure AI communication channels**: Implement managed identities for secure authentication, use virtual networks to isolate AI communications, and secure API endpoints—including Model Context Protocol (MCP) server endpoints—that expose AI capabilities.
 - **Apply platform-specific security controls**: Different AI deployment models (PaaS vs. IaaS) face distinct threats. Follow dedicated security guidance based on your deployment model.
 
 ### Secure AI data
