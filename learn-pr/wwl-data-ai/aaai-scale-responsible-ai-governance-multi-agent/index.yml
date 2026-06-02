@@ -3,7 +3,7 @@ uid: learn.wwl.scale-responsible-ai-governance-multi-agent
 metadata:
   title: Scale Responsible AI Governance with Azure AI Content Safety and Microsoft Foundry
   description: "Scale responsible AI governance to enterprise multi-agent systems using Azure AI Content Safety and Microsoft Foundry. Design systematic fairness and bias monitoring for agent decision chains, implement transparency and explainability mechanisms, configure privacy protection, and establish audit trail frameworks."
-  ms.date: 06/05/2026
+  ms.date: 06/02/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: module-standard-task-based

@@ -14,7 +14,7 @@ Source code contains more personally identifiable information than traditional b
 
 Developer email addresses appear in commit metadata, inline comments for code reviews, and documentation headers. Personal API keys and credentials get hard-coded during local development and accidentally committed before being rotated. Test data files include real customer records copied from production databases "just to make the tests realistic." Configuration files contain file paths with Windows usernames, connection strings with embedded credentials, and environment-specific settings revealing infrastructure details. Comments and documentation include names of team members, references to internal projects, and sometimes even phone numbers or Slack handles for "contact me if this breaks."
 
-For Fabrikam's enterprise customers, this PII represents multiple privacy concerns. Under GDPR, developer email addresses are personal data requiring protection. API keys and credentials, even if later rotated, represent security risks if exposed. Real customer data in test files violates purpose limitation principles—data collected for production use shouldn't appear in development code repositories.
+For Fabrikam's enterprise customers, this PII represents multiple privacy concerns. Under EU data privacy law, developer email addresses are personal data requiring protection. API keys and credentials, even if later rotated, represent security risks if exposed. Real customer data in test files violates purpose limitation principles—data collected for production use shouldn't appear in development code repositories.
 
 Your multi-agent code review workflow processes all of this. Without PII detection and removal, customer names, developer identities, and potentially sensitive business information flows through eight agents' processing stages, gets logged in reasoning traces, and persists in audit records. Each stage multiplies the exposure.
 
@@ -24,7 +24,7 @@ Privacy protection begins before the first agent receives code. You implement a 
 
 The PII detector operates on the raw code submission and identifies patterns matching: email addresses, phone numbers, IP addresses, credit card numbers, personal names in comments and logs, API keys and credentials (using entropy detection), physical addresses and postal codes, and social security numbers or national identity numbers. The detector uses pattern matching for structured PII like email addresses and phone numbers, and machine learning classifiers for unstructured PII like names appearing in natural language comments.
 
-When PII is detected, you apply contextual redaction. Email addresses in commit metadata are preserved because code attribution is part of the legitimate code review purpose—but these addresses are flagged to prevent them from being included in training data. Hard-coded API keys and credentials are redacted completely and replaced with placeholder values like `[REDACTED-API-KEY]`, while simultaneously triggering a security alert to the development team that credentials were committed. Personal names in comments are evaluated contextually—"Contact Sarah Chen for questions about this algorithm" gets redacted to "Contact [TEAM-CONTACT] for questions", while "The Chen algorithm is described in..." is preserved because it's a technical reference, not PII.
+When PII is detected, you apply contextual redaction. Email addresses in commit metadata are preserved because code attribution is part of the legitimate code review purpose—but these addresses are flagged to prevent them from being included in training data. Hard-coded API keys and credentials are redacted completely and replaced with placeholder values like `[REDACTED-API-KEY]`, while simultaneously triggering a security alert to the development team that credentials were committed. Personal names in comments are evaluated contextually—"Contact Mateo Gomez for questions about this algorithm" gets redacted to "Contact [TEAM-CONTACT] for questions", while "The Gomez algorithm is described in..." is preserved because it's a technical reference, not PII.
 
 ```python
 from azure.ai.textanalytics import TextAnalyticsClient
@@ -145,11 +145,18 @@ Consent status is tracked per tenant. The data processing agreement with each en
 
 ## Control data residency throughout workflows
 
-Enterprise customer source code is intellectual property protected by confidentiality agreements. Many contracts specify that code must remain in a particular Azure region to comply with data sovereignty requirements or corporate policy. For customers in Europe, GDPR considerations may require code to stay within EU data centers.
+Enterprise customer source code is intellectual property protected by confidentiality agreements. Many contracts specify that code must remain in a particular Azure region to comply with data sovereignty requirements or corporate policy. For customers in Europe, EU data privacy requirements may require code to stay within EU data centers.
 
 You design data flow architecture that proves code never leaves the contracted region. All Microsoft Foundry resources—model deployments, vector stores, search indices, blob storage—are deployed in the same Azure region specified in the customer's contract. Network egress is locked down using private endpoints and VNet integration. The orchestrator coordinates agents using regional endpoints only, preventing code from being routed through global endpoints that might cross regions.
 
-Data flow diagrams document the complete path code takes through the system. The diagram shows: code submission arrives via API Management in the contracted region, code flows to storage account in the same region (with geo-replication disabled to prevent region copies), all agent processing occurs in compute resources within the region, reasoning traces and audit logs write to Log Analytics workspace in the region, and code review results return through the regional API gateway. Every component includes the region designation, making the diagram a compliance artifact for demonstrating data residency.
+Data flow diagrams document the complete path code takes through the system. The diagram shows:
+
+- Code submission arrives via API Management in the contracted region
+- Code flows to storage account in the same region (with geo-replication disabled to prevent region copies)
+- All agent processing occurs in compute resources within the region, reasoning traces and audit logs write to Log Analytics workspace in the region
+- Code review results return through the regional API gateway.
+
+Every component includes the region designation, making the diagram a compliance artifact for demonstrating data residency.
 
 For customers with different residency requirements, you maintain regional deployments. European customers' code processes through agents deployed in the West Europe region. US customers with FedRAMP requirements use agents in US Government regions. This regional separation is enforced at the Azure subscription level—different subscriptions for different compliance boundaries, preventing accidental cross-region data flow even during development or operations.
 

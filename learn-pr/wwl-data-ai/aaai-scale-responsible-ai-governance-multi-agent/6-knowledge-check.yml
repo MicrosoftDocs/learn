@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Module assessment."
-  ms.date: 06/05/2026
+  ms.date: 06/02/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
@@ -20,7 +20,7 @@ quiz:
       explanation: "Retraining addresses bias at the source but doesn't identify which agent is currently producing the disparity. Before you can fix the problem, you need to locate it. Pipeline replay injection is the isolation technique."
     - content: "Replay the code submission through the pipeline starting at each agent step with the same input, compare outputs between senior and junior developer metadata contexts, and identify the step where the disparity first appears."
       isCorrect: true
-      explanation: "Replay injection is a causality isolation technique: by inserting the same input at each agent stage and observing where the output distributions diverge, you precisely identify the responsible agent. This is significantly more efficient than retraining all agents blindly."
+      explanation: "Replay injection is a causality isolation technique: by inserting the same input at each agent stage and observing where the output distributions diverge, you precisely identify the responsible agent. This is more efficient than retraining all agents blindly."
     - content: "Strip all developer identity metadata from inputs before any agent processes them, which prevents bias from entering the pipeline."
       isCorrect: false
       explanation: "Stripping metadata is a valid mitigation strategy—but it doesn't identify which agent was responsible. The question asks for identification first. Additionally, stripping metadata doesn't address bias that has been embedded in agent weights or system prompts through historical training patterns."
@@ -35,14 +35,26 @@ quiz:
     - content: "A confidence percentage for the entire code review and the model temperature setting used during generation."
       isCorrect: false
       explanation: "Model temperature is an implementation detail that's meaningless to developers and should never be in user-facing explanations. A single overall confidence score doesn't provide the per-finding attribution developers need to evaluate specific recommendations."
-  - content: "Fabrikam wants to use code submitted through their review system to fine-tune future models. Under GDPR, what is required before using this data for this purpose?"
+  - content: "Fabrikam wants to use code submitted through their review system to fine-tune future models. Under EU data privacy law, what is required before using this data for this purpose?"
     choices:
-    - content: "Anonymizing the code by removing developer names from comments is sufficient to allow use for model training without additional consent."
+    - content: "Anonymizing the code by removing developer names from comments is sufficient to allow use for model training without extra consent."
       isCorrect: false
-      explanation: "Anonymization alone doesn't satisfy GDPR requirements for repurposing data. The original data was collected for code review (specific purpose); using it for model training is a different purpose. GDPR's purpose limitation principle requires either the new use is compatible with the original purpose or separate consent is obtained."
+      explanation: "Anonymization alone doesn't satisfy EU data privacy requirements for repurposing data. The original data was collected for code review (specific purpose); using it for model training is a different purpose. The purpose limitation principle requires either the new use is compatible with the original purpose or separate consent is obtained."
     - content: "Separate, specific consent from the enterprise customer is required, as using code review data for model training goes beyond the stated purpose of the original data collection."
       isCorrect: true
-      explanation: "GDPR's purpose limitation principle prohibits processing personal data for purposes incompatible with the original collection purpose without additional justification. Code review data collected under a SaaS contract cannot be repurposed for model training without the data controller's (enterprise customer's) explicit consent for that specific use."
-    - content: "Since the code is owned by the enterprise customer, not by individuals, GDPR doesn't apply and no consent is needed for model training."
+      explanation: "EU data privacy law prohibits processing personal data for purposes incompatible with the original collection purpose without additional justification. Code review data collected under an SaaS contract can't be repurposed for model training without the data controller's (enterprise customer's) explicit consent for that specific use."
+    - content: "Since the code is owned by the enterprise customer, not by individuals, EU data privacy law doesn't apply and no consent is needed for model training."
       isCorrect: false
-      explanation: "GDPR applies to personal data—code repositories frequently contain personal data (developer identities in commit history, email addresses in configuration, personal data in test fixtures). The enterprise's ownership of the code doesn't eliminate GDPR obligations for the personal data within it."
+      explanation: "EU data privacy law applies to personal data—code repositories frequently contain personal data (developer identities in commit history, email addresses in configuration, personal data in test fixtures). The enterprise's ownership of the code doesn't eliminate data privacy obligations for the personal data within it."
+  - content: "Fabrikam's legal team discovers that a financial services customer requires WORM-compliant audit storage for their code review records, citing SEC Rule 17a-4(f). The existing Log Analytics workspace alone doesn't satisfy this requirement. What other infrastructure should Fabrikam configure?"
+    choices:
+    - content: "Increase the Log Analytics workspace retention period to 12 years, which satisfies tamper-evidence requirements for financial services regulations."
+      isCorrect: false
+      explanation: "Extending Log Analytics retention increases how long logs are kept, but doesn't make them tamper-evident—records in the workspace can still be modified. WORM compliance requires a separate storage tier with a locked retention policy that physically prevents modification and deletion."
+    - content: "Export audit logs from Log Analytics to Azure Blob Storage and apply a locked time-based retention policy, creating write-once, read-many storage that prevents modification or deletion until the retention period expires."
+      isCorrect: true
+      explanation: "A locked time-based retention policy on Azure Blob Storage satisfies WORM requirements for SEC Rule 17a-4(f) and FINRA Rule 4511. Once locked, blobs can be read and queried but can't be modified or deleted until the policy expires. A Diagnostic Settings export rule keeps the pipeline automated and auditable."
+    - content: "Enable geo-redundant replication for the Log Analytics workspace so that audit records survive a regional outage."
+      isCorrect: false
+      explanation: "Geo-redundant replication addresses availability and disaster recovery, not tamper-evidence. A replicated log can still be modified in the primary region and the change propagates to the replica. WORM compliance requires immutability controls, not redundancy controls."
+

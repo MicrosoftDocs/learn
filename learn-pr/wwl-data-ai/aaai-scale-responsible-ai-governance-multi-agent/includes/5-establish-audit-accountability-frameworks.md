@@ -20,7 +20,7 @@ These logs are structured as JSON documents for queryability. Each log entry inc
 
 ## Design immutable audit log infrastructure
 
-Audit credibility requires immutability—logs that can't be altered after creation. If logs can be edited, they lose value as evidence. Regulatory frameworks like SOC 2 and GDPR require demonstrable controls ensuring audit logs remain unmodified.
+Audit credibility requires immutability—logs that can't be altered after creation. If logs can be edited, they lose value as evidence. Regulatory frameworks like SOC 2 require demonstrable controls ensuring audit logs remain unmodified.
 
 You store audit logs in Azure Monitor Log Analytics, configuring workspace-level and table-level retention periods to match customer contract requirements—typically 7 years for financial services customers and 3 years for other enterprises. Log Analytics supports interactive retention of up to 730 days and long-term archival retention of up to 12 years, giving you a single queryable store across the full compliance window.
 
