@@ -27,13 +27,13 @@ Model deprecation drives many agent retirements. Microsoft Foundry announces mod
 You implement a deprecation calendar tracking process that monitors Azure OpenAI product announcements and maps model versions to agent dependencies. When a deprecation announcement occurs, the process:
 
 1. **Identifies affected agents** by querying agent version manifests for dependencies on the deprecating model—"Which agents use GPT-4-0613?"
-2. **Assesses migration complexity** by determining whether agents can migrate to the replacement model (gpt-4.1) with minimal changes, or whether the model's different characteristics (longer context window, different token limits, updated training data) require prompt rewrites and re-evaluation
+2. **Assesses migration complexity** by determining whether agents can migrate to the replacement model (gpt-4.1) with minimal changes, or whether the model's different characteristics (longer context window, different token limits, updated training data) require prompt rewrites and reevaluation
 3. **Sets migration deadlines** at 90, 60, and 30 days before deprecation, creating time-bound milestones for testing, approval, and deployment
 4. **Creates migration tickets** in the development backlog for each affected agent, prioritized by criticality (customer-facing agents migrate before internal tooling)
 
 The migration work for each agent follows the versioning and approval workflow: create a new agent version using the replacement model, run evaluation benchmarks comparing old and new model outputs to verify equivalent or better performance, submit for approval through automated and manual gates, and deploy to production following the standard rollout tier schedule (aggressive adopters first, conservative adopters after validation).
 
-For agents that can't easily migrate—perhaps the replacement model has significantly different characteristics that would require extensive prompt reengineering—you assess whether to invest in migration or retire the agent entirely. If an agent's functionality has been superseded by newer agents or is rarely used, deprecation becomes an opportunity to simplify the system by retiring rather than migrating.
+For agents that can't easily migrate—perhaps the replacement model has different characteristics that would require extensive prompt reengineering—you assess whether to invest in migration or retire the agent entirely. If an agent's functionality has been superseded by newer agents or is rarely used, deprecation becomes an opportunity to simplify the system by retiring rather than migrating.
 
 ## Create agent retirement checklists
 
@@ -43,7 +43,7 @@ Before retiring an agent, you verify that removing it won't break production sys
 
 **Verify orchestrator dependencies**. Review the orchestrator code to confirm all references to the retiring agent have been updated to call newer versions. If the orchestrator has hardcoded conditional logic like "if security-analyzer version < 2.0, use legacy output format", that code must be removed or updated before retirement. Automated tests should verify the orchestrator functions correctly without the deprecated agent.
 
-**Archive agent data**. The retiring agent may have created data that needs preservation for audit or compliance purposes. Security analysis results, reasoning traces logged to Application Insights, and agent-specific configuration files should be archived according to data retention policies before the agent is deleted. For enterprise customers with 7-year retention requirements, export relevant agent logs to long-term archive storage.
+**Archive agent data**. The retiring agent might have created data that needs preservation for audit or compliance purposes. Security analysis results, reasoning traces logged to Application Insights, and agent-specific configuration files should be archived according to data retention policies before the agent is deleted. For enterprise customers with seven-year retention requirements, export relevant agent logs to long-term archive storage.
 
 **Disable agent managed identity**. The retiring agent authenticates to Azure resources using a managed identity with specific role assignments. Don't delete the identity immediately—audit logs reference it, and deleting the identity would make historical logs harder to interpret. Instead, disable the identity (preventing new authentications) but preserve the identity resource so audit queries can resolve the identity name. Schedule identity deletion for 90 days post-retirement after audit retention requirements are satisfied.
 
@@ -158,9 +158,9 @@ Who decides when an agent is retired? Individual developers shouldn't unilateral
 
 **Customer success team** validates tenant impacts by checking tenant configurations for version pins and usage patterns, contacting enterprise customers using the retiring agent to discuss migration, and confirming no contractual commitments require continued support of the retiring version. If an enterprise customer's contract specifies support for specific agent versions, retirement requires contract renegotiation or waiting for contract renewal.
 
-**Security team** confirms no active vulnerabilities require extended support. If the retiring agent is the only component that can detect a specific actively-exploited vulnerability, retirement is deferred until the replacement agent implements equivalent detection. Security patches may extend an agent's lifespan beyond its planned retirement if replacement capabilities aren't ready.
+**Security team** confirms no active vulnerabilities require extended support. If the retiring agent is the only component that can detect a specific actively-exploited vulnerability, retirement is deferred until the replacement agent implements equivalent detection. Security patches might extend an agent's lifespan beyond its planned retirement if replacement capabilities aren't ready.
 
-**Governance committee** (Responsible AI Officer, engineering leadership, product management) reviews the retirement proposal and makes the final decision. They assess: whether the migration timeline provides reasonable time for tenant migration (minimum 90 days from deprecation announcement to deletion), whether retirement risks are acceptable (known dependencies resolved, tenant impact minimal), and whether costs justify earlier or later retirement (high-cost zombie agents retire faster, low-cost agents may get longer migration windows).
+**Governance committee** (Responsible AI Officer, engineering leadership, product management) reviews the retirement proposal and makes the final decision. They assess: whether the migration timeline provides reasonable time for tenant migration (minimum 90 days from deprecation announcement to deletion), whether retirement risks are acceptable (known dependencies resolved, tenant impact minimal), and whether costs justify earlier or later retirement (high-cost zombie agents retire faster, low-cost agents might get longer migration windows).
 
 Only after governance committee approval does retirement proceed. The decision is documented in the agent's version manifest with retirement metadata:
 
@@ -176,7 +176,7 @@ retirement:
     approval_date: 2026-04-15
 ```
 
-A retirement decision is only as good as its execution. The governance framework you've built here—Foundry Control Plane visibility to surface aging agents, checklists that verify every dependency, graceful deprecation that protects pinned tenants during migration windows, and committee sign-off that weighs efficiency against customer commitments—ensures agents reach end of life deliberately rather than accidentally. A platform that decommissions agents cleanly stays lean and secure as it evolves, without the zombie deployments that quietly consume budget and accumulate vulnerabilities.
+A retirement decision is only as good as its execution. The governance framework you've built here—Foundry Control Plane visibility to surface aging agents, checklists that verify every dependency, graceful deprecation that protects pinned tenants during migration windows, and committee approval that weighs efficiency against customer commitments—ensures agents reach end of life deliberately rather than accidentally. A platform that decommissions agents cleanly stays lean and secure as it evolves, without the zombie deployments that quietly consume budget and accumulate vulnerabilities.
 
 ## Key takeaways
 

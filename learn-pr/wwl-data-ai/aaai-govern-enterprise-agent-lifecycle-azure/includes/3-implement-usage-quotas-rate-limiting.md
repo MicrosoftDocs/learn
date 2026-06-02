@@ -14,7 +14,7 @@ During normal operation, tenant usage stays well below capacity—most code subm
 
 Without quota controls, this surge causes cascading failures. Other tenants submitting code reviews receive 429 (Too Many Requests) errors because the quota is exhausted. Concurrent agent invocations within the orchestrator retry failed requests, amplifying the load. The batch job itself experiences partial failures as some requests succeed while others fail, creating inconsistent review results. During the 3-5 minute quota storm, all tenants experience degraded service.
 
-The problem compounds in multi-agent workflows because each agent in the pipeline makes separate API calls. A single code submission flows through preprocessing (1 API call), quality assessment (1 call), security analysis (1 call), and architectural review (1 call)—consuming quota at four different points. When batch processing hits the pipeline, it's not just one tenant's requests competing for quota, but one tenant's multi-stage workflow overwhelming the system.
+The problem compounds in multi-agent workflows because each agent in the pipeline makes separate API calls. A single code submission flows through preprocessing (one API call), quality assessment (one call), security analysis (one call), and architectural review (one call)—consuming quota at four different points. When batch processing hits the pipeline, it's not just one tenant's requests competing for quota, but one tenant's multi-stage workflow overwhelming the system.
 
 ## Design multi-level quota architecture
 
@@ -26,7 +26,7 @@ This separation prevents batch workloads from impacting interactive usage. When 
 
 **Agent-level quotas** control requests per minute to each agent API. You implement these using Azure API Management (APIM) rate-limit policies. Each agent has a published API endpoint through APIM, and you configure rate limits based on the agent's capacity and typical usage. The security analyzer endpoint allows 1,000 requests per minute globally. The preprocessing agent, which handles higher volume since it's the entry point for all code reviews, allows 2,000 requests per minute.
 
-These limits are global across all tenants, preventing any coordination failure in the orchestrator from overwhelming a single agent with requests. Even if orchestrator code has a bug that creates an infinite loop calling the security analyzer, APIM enforces the 1,000 RPM limit, rejecting excess requests rather than cascading the failure to the agent.
+These limits are global across all tenants, preventing any coordination failure in the orchestrator from overwhelming a single agent with requests. Even if orchestrator code has a bug that creates an infinite loop calling the security analyzer, APIM enforces the  1,000-RPM limit, rejecting excess requests rather than cascading the failure to the agent.
 
 **Tenant-level quotas** cap individual customer resource consumption. Each tenant has allocated request limits based on their subscription tier: Enterprise Premium tier gets 500 requests per hour, Enterprise Standard gets 200 requests per hour, and Developer tier gets 50 requests per hour. You also set token consumption caps: Premium tier can consume up to 2 million tokens per day, Standard tier 750,000 tokens per day, and Developer tier 100,000 tokens per day.
 
@@ -119,9 +119,9 @@ The quota counters are scoped per tenant—each tenant's token consumption incre
 
 Fair doesn't always mean equal. Premium tier customers paying higher subscription fees expect better service quality than Developer tier users. You implement priority-based quota allocation where premium customers get preferential access to capacity during high-demand periods.
 
-The priority allocation works through reserved capacity and dynamic allocation. Premium tier customers have reserved capacity: 60% of total model quota is reserved exclusively for premium tenants. Standard tier customers have 30% reserved capacity. Developer tier gets 10% reserved capacity. During normal operation when demand is below capacity, all tiers access the full quota pool—a Developer tier tenant can use more than 10% if it's available.
+The priority allocation works through reserved capacity and dynamic allocation. Premium tier customers have reserved capacity: sixty percent of total model quota is reserved exclusively for premium tenants. Standard tier customers have thirty percent reserved capacity. Developer tier gets ten percent reserved capacity. During normal operation when demand is below capacity, all tiers access the full quota pool—a Developer tier tenant can use more than ten percent of the available quota if it's available.
 
-When total demand exceeds capacity—approaching the model deployment's TPM limit—the reservation enforcement activates. Premium requests are prioritized in the queue. Standard tier requests may experience throttling to stay within their 30% allocation. Developer tier requests are most aggressively throttled to ensure they don't exceed 10% of capacity.
+When total demand exceeds capacity—approaching the model deployment's TPM limit—the reservation enforcement activates. Premium requests are prioritized in the queue. Standard tier requests may experience throttling to stay within their thirty percent allocation. Developer tier requests are most aggressively throttled to ensure they don't exceed ten percent of capacity.
 
 This dynamic allocation is implemented through weighted rate limiting in APIM combined with Azure OpenAI's automatic throttling. You configure priority headers in agent requests that Azure OpenAI consults during high-load periods:
 
@@ -243,12 +243,12 @@ class QuotaAwareAgentClient:
             span.set_attribute("agent_endpoint", self.agent_endpoint)
 ```
 
-The exponential backoff prevents the "thundering herd" problem where all throttled requests retry simultaneously, creating another quota surge. By adding jitter—randomizing the delay between 50% and 100% of the calculated backoff—requests spread out over time. When 100 requests hit quota limits simultaneously, they retry at staggered intervals rather than all retrying at exactly the same moment.
+The exponential backoff prevents the "thundering herd" problem where all throttled requests retry simultaneously, creating another quota surge. By adding jitter—randomizing the delay between fifty and one hundred percent of the calculated backoff—requests spread out over time. When 100 requests hit quota limits simultaneously, they retry at staggered intervals rather than all retrying at exactly the same moment.
 
 The structured error response ensures quota failures are visible to the orchestrator. If an agent can't complete after max retries, the orchestrator can make routing decisions: queue the code review for later processing when quota availability improves, notify the tenant that their quota is exhausted with options to upgrade their subscription tier, or route to a fallback agent using a different model deployment with available quota.
 
 > [!NOTE]
-> **Pause and reflect:** A premium-tier customer submits a 500-file batch review at the same time a standard-tier customer submits a single urgent security scan. Your shared Azure OpenAI deployment is at 85% TPM capacity. How would you configure your quota architecture to ensure both customers get acceptable service?
+> **Pause and reflect:** A premium-tier customer submits a 500-file batch review at the same time a standard-tier customer submits a single urgent security scan. Your shared Azure OpenAI deployment is at eighty-five percent TPM capacity. How would you configure your quota architecture to ensure both customers get acceptable service?
 
 Quota governance makes shared Azure OpenAI deployments viable at scale. When each tenant's usage is bounded—by workload-isolated model deployments, per-tenant token limits enforced at the API gateway, and priority-tier allocation that reserves capacity for premium customers—the platform can serve dozens of enterprise customers from the same infrastructure without any one of them degrading the others' experience. Making those bounded costs visible and attributable to individual teams is the next governance challenge.
 
@@ -257,5 +257,5 @@ Quota governance makes shared Azure OpenAI deployments viable at scale. When eac
 - **Quota storms** occur when one tenant's batch processing exhausts shared Azure OpenAI TPM capacity, causing cascading 429 errors for all tenants.
 - **Multi-level architecture** separates model API quotas, agent-level rate limits, and tenant-level consumption caps to isolate overload to individual consumers.
 - **APIM rate limiting** applies tenant-specific token quotas using the `llm-token-limit` policy that enforces tier-based tokens-per-minute rates and monthly token ceilings at the API gateway.
-- **Priority-tier allocation** reserves capacity proportionally—60% for premium, 30% for standard, 10% for developer—with dynamic enforcement during high-demand periods.
+- **Priority-tier allocation** reserves capacity proportionally—sixty percent for premium, thirty percent for standard, ten percent for developer—with dynamic enforcement during high-demand periods.
 - **Exponential backoff with jitter** prevents thundering herd retries when quota is exceeded, spreading retry attempts over time to avoid amplifying load spikes.

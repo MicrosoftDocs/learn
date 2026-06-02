@@ -10,7 +10,7 @@ Azure Monitor collects tenant-tagged consumption metrics from agent workloads—
 
 AI system costs span multiple Azure services, each requiring different attribution approaches. Model costs come from Azure OpenAI API usage measured in tokens—every agent invocation consumes input tokens (the prompt and code submitted) and output tokens (the agent's response). Azure bills per 1,000 tokens with different rates for different models: gpt-4o costs more per token than gpt-4o-mini, and input tokens cost less than output tokens.
 
-Compute costs come from agent container runtime in Azure Container Apps. Each agent runs in dedicated container instances that consume CPU and memory. When an agent scales to handle increased load, additional container instances deploy, increasing compute costs. Azure bills for container vCPU-seconds and GB-seconds. Unlike model costs, which correlate directly with workload (more code reviews = more tokens), compute costs include baseline "always-on" expenses even when no code reviews are processing.
+Compute costs come from agent container runtime in Azure Container Apps. Each agent runs in dedicated container instances that consume CPU and memory. When an agent scales to handle increased load, more container instances deploy and compute costs increase. Azure bills for container vCPU-seconds and GB-seconds. Unlike model costs, which correlate directly with workload (more code reviews = more tokens), compute costs include baseline "always-on" expenses even when no code reviews are processing.
 
 Storage costs come from multiple sources: blob storage for uploaded code files, vector databases storing code embeddings for semantic search, search indexes enabling agents to query security guidelines, and Application Insights logs capturing telemetry and audit trails. Storage costs are relatively small compared to model and compute but accumulate over time and should be attributed to understand complete cost of ownership.
 
@@ -127,10 +127,10 @@ You combine Azure costs with custom metric aggregations to calculate per-tenant 
 
 1. **Query Azure Cost Management API** for total costs across all code review system resources during the previous month—model deployments, container apps, storage accounts, and supporting services
 2. **Query Azure Monitor** for custom metrics aggregated by tenant—total tokens consumed per tenant, total compute seconds per tenant, and total storage operations per tenant
-3. **Calculate cost allocation ratios**—if tenant A consumed 40% of total tokens, they're allocated 40% of Azure OpenAI model costs; if tenant B consumed 25% of compute seconds, they're allocated 25% of Container Apps costs
+3. **Calculate cost allocation ratios**—if tenant A consumed forty percent of total tokens, they're allocated forty percent of Azure OpenAI model costs; if tenant B consumed twenty-five percent of compute seconds, they're allocated twenty-five percent of Container Apps costs
 4. **Generate chargeback reports** showing per-tenant costs broken down by service category: model usage, compute usage, storage usage, and total monthly cost
 
-The calculation handles shared baseline costs appropriately. Some compute costs aren't tenant-driven—the orchestrator runs continuously even with no active requests, consuming baseline compute. You allocate these shared costs proportionally across all active tenants rather than to any specific tenant. The shared cost percentage (typically 10-15% of total compute costs) is distributed evenly.
+The calculation handles shared baseline costs appropriately. Some compute costs aren't tenant-driven—the orchestrator runs continuously even with no active requests, consuming baseline compute. You allocate these shared costs proportionally across all active tenants rather than to any specific tenant. The shared cost percentage (typically ten to fifteen percent of total compute costs) is distributed evenly.
 
 ```python
 def generate_monthly_chargeback_report(month: str, year: int):
@@ -223,15 +223,15 @@ The optimization recommendations are generated automatically by analyzing usage 
 
 **Use smaller models for simple tasks**: "Your security analyzer consumed 1.2M tokens on syntax checks that could run on gpt-4o-mini instead of gpt-4o, saving ~$45/month."
 
-**Batch processing during off-peak hours**: "Your team submitted 87% of code reviews between 2-4 PM UTC, competing for quota with other teams. Shift batch reviews to off-peak hours (8-10 PM UTC) to reduce retry overhead and improve latency."
+**Batch processing during off-peak hours**: "Your team submitted eighty-seven percent of code reviews between 2-4 PM UTC, competing for quota with other teams. Shift batch reviews to off-peak hours (8-10 PM UTC) to reduce retry overhead and improve latency."
 
-**Cache repeated analysis patterns**: "23% of your code reviews analyzed similar authentication patterns. Enable semantic caching to reduce redundant model calls, estimated savings: $30/month."
+**Cache repeated analysis patterns**: "Twenty-three percent of your code reviews analyzed similar authentication patterns. Enable semantic caching to reduce redundant model calls, estimated savings: $30/month."
 
-**Right-size agent deployments**: "Your quality analyzer averaged 12% CPU utilization. Reduce container allocation from 1.0 vCPU to 0.5 vCPU, saving $18/month in compute costs."
+**Right-size agent deployments**: "Your quality analyzer averaged twelve percent CPU utilization. Reduce container allocation from 1.0 vCPU to 0.5 vCPU, saving $18/month in compute costs."
 
-When teams see their costs broken down with actionable optimization guidance, they make informed decisions. A team spending $800/month on code reviews might decide that's reasonable for their 50-developer organization, or they might implement caching and model optimization to reduce costs by 30% while maintaining review quality. The visibility creates accountability and optimization incentives that don't exist when AI costs are invisible shared overhead.
+When teams see their costs broken down with actionable optimization guidance, they make informed decisions. A team spending $800/month on code reviews might decide that's reasonable for their 50-developer organization, or they might implement caching and model optimization to reduce costs by thirty percent while maintaining review quality. The visibility creates accountability and optimization incentives that don't exist when AI costs are invisible shared overhead.
 
-Chargeback reporting changes the conversation from “our AI bill is large” to “team X’s batch agent consumed 40% of model spend last month.” That specificity drives the optimization decisions—model downgrades, off-peak scheduling, semantic caching—that keep costs sustainable as usage grows. The final governance challenge is managing what happens when agents reach the end of their useful life.
+Chargeback reporting changes the conversation from "our AI bill is large" to "team X’s batch agent consumed forty percent of model spend last month." That specificity drives the optimization decisions—model downgrades, off-peak scheduling, semantic caching—that keep costs sustainable as usage grows. The final governance challenge is managing what happens when agents reach the end of their useful life.
 
 ## Key takeaways
 

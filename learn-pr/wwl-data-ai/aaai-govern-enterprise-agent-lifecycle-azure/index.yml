@@ -3,7 +3,7 @@ uid: learn.wwl.govern-enterprise-agent-lifecycle-azure
 metadata:
   title: Govern the Enterprise Agent Lifecycle in Microsoft Foundry
   description: "Govern the enterprise agent lifecycle in Microsoft Foundry. Design agent versioning strategies and approval workflows, implement usage quotas and cost allocation models, establish change management processes for behavioral updates, and design agent retirement workflows that minimize business disruption."
-  ms.date: 06/05/2026
+  ms.date: 06/02/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: module-standard-task-based
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should have:
   - Experience deploying agents to Microsoft Foundry across multiple environments
-  - Familiarity with Azure Cost Management and Azure Policy
+  - Familiarity with Azure cost and policy management
   - Understanding of CI/CD pipeline design for AI applications
   - Experience with GenAIOps practices or equivalent
 iconUrl: /training/achievements/generic-badge.svg
