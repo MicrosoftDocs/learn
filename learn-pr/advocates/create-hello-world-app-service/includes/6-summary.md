@@ -12,10 +12,10 @@ az group delete --name <resource-group-name>
 
 * [Azure App Service](/azure/app-service/)
 * [Continuous deployment with custom containers in Azure App Service](/azure/app-service/deploy-ci-cd-custom-container?tabs=acr&pivots=container-linux)
-* [Monitor Azure App Service performance](/azure/azure-monitor/app/azure-web-apps?tabs=java)
-* [Get started with Autoscale in Azure](/azure/azure-monitor/platform/autoscale-get-started)
+* [Monitor Azure App Service performance](/azure/app-service/monitor-app-service?tabs=java)
+* [Get started with Autoscale in Azure](/azure/azure-monitor/autoscale/autoscale-get-started)
 * [Deploy to App Service using GitHub Actions](/azure/app-service/deploy-github-actions?tabs=userlevel)
-* [Integrate your app with an Azure virtual network](/azure/app-service/web-sites-integrate-with-vnet)
+* [Integrate your app with an Azure virtual network](/azure/app-service/overview-vnet-integration)
 * [Azure App Service Hybrid Connections](/azure/app-service/app-service-hybrid-connections)
 * [App Service pricing](https://azure.microsoft.com/pricing/details/app-service/linux/)
 * [Maven Plugin for Azure Web Apps](https://github.com/microsoft/azure-maven-plugins)
