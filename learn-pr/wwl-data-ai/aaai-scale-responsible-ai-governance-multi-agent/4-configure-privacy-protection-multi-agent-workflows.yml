@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-responsible-ai-governance-multi-agent.configure-privacy-protection-multi-agent-workflows
+title: Configure privacy protection in multi-agent workflows
+metadata:
+  title: Configure Privacy Protection in Multi-Agent Workflows
+  description: "Configure privacy protection in multi-agent workflows."
+  ms.date: 06/02/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-configure-privacy-protection-multi-agent-workflows.md)]
