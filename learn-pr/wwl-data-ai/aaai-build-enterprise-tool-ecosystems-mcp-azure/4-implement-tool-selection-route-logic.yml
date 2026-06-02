@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-enterprise-tool-ecosystems-mcp-azure.implement-tool-selection-route-logic
+title: Implement tool selection and routing logic
+metadata:
+  title: Implement Tool Selection and Routing Logic
+  description: "Implement tool selection and routing logic."
+  ms.date: 05/27/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-implement-tool-selection-route-logic.md)]

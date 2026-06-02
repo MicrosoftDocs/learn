@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-advanced-rag-azure-ai-search.optimize-chunk-embed-strategies
+title: Optimize chunking and embedding strategies
+metadata:
+  title: Optimize Chunking and Embedding Strategies
+  description: "Optimize chunking and embedding strategies."
+  ms.date: 05/28/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-optimize-chunk-embed-strategies.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-task-decomposition-multi-agent-azure.configure-agent-handoff-collaboration-protocols
+title: Design agent handoff message schemas
+metadata:
+  title: Design Agent Handoff Message Schemas
+  description: "Design agent handoff message schemas."
+  ms.date: 05/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-configure-agent-handoff-collaboration-protocols.md)]

@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=56801755-023d-4376-9a81-31a0eb7807dd]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Your knowledge base is only as good as the data it contains. Foundry IQ lets you connect to multiple data sources, enabling your AI agent to access the information it needs to answer questions accurately. You configure these sources when you set up your knowledge base, ensuring your agent has the right context for your specific use case.
 
@@ -136,3 +146,5 @@ Selecting the appropriate data source depends on several factors. Use this decis
 
 > [!IMPORTANT]
 > You can combine multiple sources in a single knowledge base. For example, use internal SharePoint data as the primary knowledge base while enabling web grounding for current events or supplementary information.
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=82faafcd-50c4-4d9e-92e0-52f4699918f3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Power Fx is the low-code, Excel-like language that acts as the glue of a workflow. It allows you to manipulate data, evaluate conditions, and control the flow of execution without writing complex code. In a workflow, Power Fx formulas are used wherever decisions are made, variables are set, or loops are applied, enabling workflows to react dynamically to user input, agent outputs, or stored data.
 
 ## How formulas work
@@ -44,3 +55,5 @@ By using Power Fx formulas throughout a workflow, you create dynamic, data-drive
 
 > [!TIP]
 > For more information about the Power Fx language, visit the [Power Fx documentation](/power-platform/power-fx/overview?azure-portal=true).
+
+::: zone-end

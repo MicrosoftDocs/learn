@@ -2,9 +2,10 @@
 uid: learn.wwl.integrate-foundry-agent-with-m365.test-iterate-agent
 title: Test and iterate your integrated agent
 metadata:
+  zone_pivot_groups: video-or-text
   title: Test and iterate your integrated agent
   description: Learn best practices for testing and troubleshooting Foundry agents after publishing to Microsoft Teams.
-  ms.date: 02/17/2026
+  ms.date: 5/29/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

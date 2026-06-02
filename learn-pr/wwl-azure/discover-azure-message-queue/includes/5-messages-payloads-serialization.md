@@ -1,6 +1,6 @@
 Messages carry a payload and metadata. The metadata is in the form of key-value pair properties, and describes the payload, and gives handling instructions to Service Bus and applications. Occasionally, that metadata alone is sufficient to carry the information that the sender wants to communicate to receivers, and the payload remains empty.
 
-The object model of the official Service Bus clients for .NET and Java maps to and from the wire protocols Service Bus supports.
+The official .NET and Java Service Bus clients expose an object model that maps directly to the underlying network message formats Service Bus uses to send and receive data.
 
 A Service Bus message consists of a binary payload section that Service Bus never handles in any form on the service-side, and two sets of properties. The *broker properties* are system defined. These predefined properties either control message-level functionality inside the broker, or they map to common and standardized metadata items. The *user properties* are a collection of key-value pairs defined and set by the application.
 

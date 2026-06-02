@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-advanced-prompting-production-agents.implement-prompt-injection-defenses
+title: Implement prompt injection defenses
+metadata:
+  title: Implement Prompt Injection Defenses
+  description: "Implement prompt injection defenses."
+  ms.date: 05/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-implement-prompt-injection-defenses.md)]

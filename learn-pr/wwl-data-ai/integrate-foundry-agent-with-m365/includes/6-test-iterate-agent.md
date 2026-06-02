@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7916e7c8-663c-46fa-835a-c9b803c1e953]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 After publishing your agent using the steps in the previous units, ongoing testing and monitoring help ensure your agent performs reliably for users. This unit focuses on post-deployment testing strategies, troubleshooting common issues, and monitoring your agent over time.
 
 ## Testing beyond the Foundry playground
@@ -100,3 +111,5 @@ When testing reveals issues or you receive user feedback, update your agent in t
 
 > [!TIP]
 > Keep a testing checklist specific to your agent. Document the key scenarios you test before each release to ensure consistent quality.
+
+::: zone-end

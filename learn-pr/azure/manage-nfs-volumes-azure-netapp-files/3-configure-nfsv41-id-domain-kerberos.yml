@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-nfs-volumes.configure-nfsv41-id-domain-kerberos
+title: Configure NFSv4.1 ID domain and Kerberos for Azure NetApp Files
+metadata:
+  title: Configure NFSv4.1 ID domain and Kerberos for Azure NetApp Files
+  description: Learn how to configure the NFSv4.1 ID domain and Kerberos for Azure NetApp Files.
+  ms.date: 05/12/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-configure-nfsv41-id-domain-kerberos.md)]

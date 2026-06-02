@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.administer-fabric.fabric-admin-model
+title: Understand the Fabric admin model
+metadata:
+  title: Understand the Fabric Admin Model
+  description: "Explore the five-level Fabric hierarchy, the four-tier admin delegation model, and the tools available in the Fabric admin portal."
+  ms.date: 05/27/2026
+  author: theresai
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-fabric-admin-model.md)]

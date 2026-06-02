@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multi-agent-memory-azure-cosmos-db.implement-semantic-memory-vector-storage
+title: Implement semantic memory with vector storage
+metadata:
+  title: Implement Semantic Memory with Vector Storage
+  description: "Implement semantic memory with vector storage."
+  ms.date: 05/28/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-implement-semantic-memory-vector-storage.md)]

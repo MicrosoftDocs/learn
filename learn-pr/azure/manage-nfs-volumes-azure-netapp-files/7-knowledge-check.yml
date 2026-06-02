@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-nfs-volumes.knowledge-check
+title: Module Assessment
+metadata:
+  unitType: knowledge_check
+  title: Module assessment
+  description: Test your knowledge of managing NFS volumes in Azure NetApp Files.
+  ms.date: 05/12/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+    - content: "What step is involved in converting an NFS volume between NFSv3 and NFSv4.1?"
+      choices:
+        - content: "Unmount an NFS volume on a Linux client."
+          isCorrect: true
+          explanation: "Correct. Before converting the NFS volume, you need to unmount it from the clients in preparation."
+        - content: "Modify the NFS export configuration on the server."
+          isCorrect: false
+          explanation: "Incorrect. This isn't a required step for converting NFS volumes between NFSv3 and NFSv4.1."
+        - content: "Restart the NFS server."
+          isCorrect: false
+          explanation: "Incorrect. This isn't a required step for converting NFS volumes between NFSv3 and NFSv4.1."
+        - content: "Update the NFS client software on all client machines."
+          isCorrect: false
+          explanation: "Incorrect. This isn't a required step for converting NFS volumes between NFSv3 and NFSv4.1."
+    - content: "Which NFS version is required to enable Kerberos encryption for an Azure NetApp Files volume?"
+      choices:
+        - content: "NFSv2"
+          isCorrect: false
+          explanation: "Incorrect. NFSv2 doesn't support Kerberos encryption."
+        - content: "NFSv3"
+          isCorrect: false
+          explanation: "Incorrect. NFSv3 doesn't support Kerberos encryption."
+        - content: "NFSv4"
+          isCorrect: true
+          explanation: "Correct. To create a Kerberos-enabled volume, set the NFS version to NFSv4.1 and enable Kerberos."
+        - content: "Any NFS version supports it equally."
+          isCorrect: false
+          explanation: "Incorrect. Only NFSv4 support Kerberos encryption."
+    - content: "What must already be configured before you create an NFS volume in Azure NetApp Files?"
+      choices:
+        - content: "A backup vault and a recovery plan."
+          isCorrect: false
+          explanation: "Incorrect. A backup vault and a recovery plan aren't required to create an NFS volume in Azure NetApp Files."
+        - content: "An ExpressRoute circuit and firewall rule."
+          isCorrect: false
+          explanation: "Incorrect. An ExpressRoute circuit and firewall rule aren't the prerequisites to create an NFS volume."
+        - content: "A capacity pool and a delegated subnet."
+          isCorrect: true
+          explanation: "Correct. You must have a capacity pool set up and a subnet delegated to Azure NetApp Files before creating the volume."
+        - content: "A storage account and blob container"
+          isCorrect: false
+          explanation: "Incorrect. A storage account and blob container aren't the prerequisites to create an NFS volume."
