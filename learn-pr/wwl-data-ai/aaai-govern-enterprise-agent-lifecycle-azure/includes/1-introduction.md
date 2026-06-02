@@ -7,7 +7,7 @@ Consider what happens when the security analyzer receives a critical model upgra
 In this module, you:
 
 - Design agent versioning and approval workflows that control which agent versions deploy to which tenants
-- Implement usage quotas and rate limiting that ensure fair resource allocation across multi-tenant deployments
+- Implement usage quotas and rate limiting that ensure fair resource allocation across multitenant deployments
 - Establish cost allocation and chargeback models that make AI expenses transparent and attributable
 - Create agent retirement and deprecation processes that manage the complete agent lifecycle from deployment through sunset
 
