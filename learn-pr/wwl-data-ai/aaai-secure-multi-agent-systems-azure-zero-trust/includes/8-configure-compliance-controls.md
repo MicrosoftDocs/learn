@@ -1,4 +1,4 @@
-Microsoft Defender for Cloud, Microsoft Entra ID Governance, and Azure Monitor translate regulatory compliance frameworks into measurable, auditable agent controls. In this unit, you map GDPR, SOC 2, and HIPAA requirements to specific agent behaviors, enforce data residency and minimization, and generate continuous compliance evidence.
+Microsoft Defender for Cloud, Microsoft Entra ID Governance, and Azure Monitor translate regulatory compliance frameworks into measurable, auditable agent controls. In this unit, you map EU data privacy, SOC 2, and HIPAA requirements to specific agent behaviors, enforce data residency and minimization, and generate continuous compliance evidence.
 
 ## Map compliance requirements to agent controls
 
@@ -6,15 +6,15 @@ Different compliance frameworks address similar security principles through diff
 
 | Compliance Framework | Key Requirements | Agent-Specific Controls |
 |---------------------|------------------|------------------------|
-| **GDPR** | Data residency, right to erasure, data minimization, consent tracking | Region-locked deployments, per-tenant deletion workflows, minimal data scope per agent, consent logs in user context |
+| **EU data privacy regulations** | Data residency, right to erasure, data minimization, consent tracking | Region-locked deployments, per-tenant deletion workflows, minimal data scope per agent, consent logs in user context |
 | **SOC 2 Type II** | Access controls, audit logging, availability, change management, processing integrity | RBAC with MFA, centralized logging, high availability deployment, CI/CD audit trail, evaluation quality gates |
 | **HIPAA** | PHI safeguards, access controls, audit controls, transmission security, disaster recovery | Encryption at rest/transit, role-based PHI access, comprehensive audit logs, mTLS enforcement, backup procedures |
 | **ISO 27001** | Information security management, risk assessment, asset management, incident response | Security policy documentation, threat modeling, asset inventory, incident runbooks |
 | **EU AI Act** | Risk classification for AI systems, transparency obligations, human oversight for high-risk AI, conformity documentation and technical file | AI system risk-tier classification (UNACCEPTABLE/HIGH/LIMITED/MINIMAL), transparency disclosures in agent outputs, human review gates for high-risk decisions, technical file with version history and conformity evidence |
 
-## Enforce GDPR data residency with region-locked infrastructure
+## Enforce data residency with region-locked infrastructure
 
-GDPR requires that data belonging to EU citizens stays within the EU unless specific legal mechanisms (Standard Contractual Clauses, adequacy decisions) are in place. For Fabrikam, this means EU customers' code and analysis results must be stored and processed exclusively in EU Azure regions.
+EU data privacy law requires that data belonging to EU citizens stays within the EU unless specific legal mechanisms (Standard Contractual Clauses, adequacy decisions) are in place. For Fabrikam, this means EU customers' code and analysis results must be stored and processed exclusively in EU Azure regions.
 
 Implement data residency at the infrastructure level with region-specific deployments:
 
@@ -67,7 +67,7 @@ This policy prevents accidentally deploying EU customer resources to non-EU regi
 
 ## Implement data minimization across agent workflows
 
-GDPR's data minimization principle requires collecting and processing only the minimum data necessary for the specified purpose. In Fabrikam's multi-agent system, different agents legitimately need different data scopes. The style checker needs code structure and formatting details but doesn't need business logic or algorithms. The architecture analyzer needs high-level component relationships but not implementation details.
+EU data privacy regulations require collecting and processing only the minimum data necessary for the specified purpose—the data minimization principle. In Fabrikam's multi-agent system, different agents legitimately need different data scopes. The style checker needs code structure and formatting details but doesn't need business logic or algorithms. The architecture analyzer needs high-level component relationships but not implementation details.
 
 Design agent prompts and data pipelines to provide minimal necessary data:
 
@@ -106,7 +106,7 @@ Document data minimization decisions in your data flow diagrams for compliance e
 
 ## Log consent and data processing activities comprehensively
 
-GDPR Article 30 requires maintaining records of processing activities. For agent systems, this means logging:
+EU data privacy regulations require maintaining records of processing activities. For agent systems, this means logging:
 
 - When a user consents to code analysis
 - Which agents processed their data
@@ -127,7 +127,7 @@ configure_azure_monitor(connection_string=os.environ["APPLICATIONINSIGHTS_CONNEC
 tracer = trace.get_tracer(__name__)
 
 class ComplianceLogger:
-    """Structured logging for GDPR compliance evidence."""
+    """Structured logging for EU data privacy compliance evidence."""
     
     def log_processing_activity(
         self,
@@ -138,9 +138,9 @@ class ComplianceLogger:
         data_categories: list[str],
         legal_basis: str
     ):
-        """Log a data processing activity per GDPR Article 30."""
+        """Log a data processing activity per EU data privacy regulations."""
         
-        with tracer.start_as_current_span("gdpr_processing_activity") as span:
+        with tracer.start_as_current_span("compliance_processing_activity") as span:
             span.set_attributes({
                 "tenant_id": tenant_id,
                 "user_id": user_id,
@@ -153,7 +153,7 @@ class ComplianceLogger:
             })
             
             print(json.dumps({
-                "event_type": "gdpr_processing_activity",
+                "event_type": "compliance_processing_activity",
                 "tenant_id": tenant_id,
                 "user_id": user_id,
                 "agent_name": agent_name,
@@ -192,7 +192,7 @@ Auditors require evidence that controls operate effectively over time. Generate 
 ```kusto
 // Compliance report: Data processing activities by tenant and agent
 FabrikamComplianceLogs
-| where EventType == "gdpr_processing_activity"
+| where EventType == "compliance_processing_activity"
 | where TimeGenerated between (startofmonth(now()) .. endofmonth(now()))
 | summarize 
     ProcessingCount=count(),
@@ -215,7 +215,7 @@ Export this report to a Power BI dashboard that compliance officers review month
 
 Compliance isn't a one-time certification—it requires ongoing evidence that controls remain effective. Implement continuous compliance verification:
 
-**Microsoft Defender for Cloud regulatory compliance dashboard**: Enable built-in compliance assessments for SOC 2, ISO 27001, GDPR. Defender for Cloud continuously evaluates your configuration against framework requirements and generates compliance scores.
+**Microsoft Defender for Cloud regulatory compliance dashboard**: Enable built-in compliance assessments for SOC 2, ISO 27001, and EU data privacy regulations. Defender for Cloud continuously evaluates your configuration against framework requirements and generates compliance scores.
 
 The Microsoft Cloud Security Benchmark (MCSB) is enabled by default when you onboard Defender for Cloud. Assign additional standards (SOC 2, ISO 27001, HIPAA) through the portal: **Defender for Cloud > Regulatory compliance > Manage compliance policies > Security policies**. Select the target subscription, then toggle the desired standard to **On**.
 
@@ -277,7 +277,7 @@ With compliance requirements mapped to agent controls, data residency enforcemen
 Now that you understand zero-trust identity, network isolation, multitenant data controls, and compliance mapping, you're ready to implement these security patterns hands-on in the exercise.
 
 > [!TIP]
-> **Pause and reflect:** Consider a scenario where Fabrikam receives a GDPR data subject access request from a developer whose code was reviewed by the CRDAS system. The request asks for all data stored about their code and the agent's review decisions. Which compliance controls from this unit would you use to fulfill the request? How would the audit logs, consent records, and data minimization practices you've designed help you respond within the 30-day regulatory timeline?
+> **Pause and reflect:** Consider a scenario where Fabrikam receives an EU data subject access request from a developer whose code was reviewed by the CRDAS system. The request asks for all data stored about their code and the agent's review decisions. Which compliance controls from this unit would you use to fulfill the request? How would the audit logs, consent records, and data minimization practices you've designed help you respond within the 30-day regulatory timeline?
 
 ## Security-testing evidence with the AI Red Teaming Agent
 
@@ -291,11 +291,11 @@ The AI Red Teaming Agent probes across agent-specific risk categories that map d
 
 For each category, the agent generates synthetic adversarial inputs, submits them to your agent endpoints, and evaluates responses for policy violations.
 
-The output is a structured test report that maps test results to compliance controls: "GDPR data-isolation controls validated against 150 cross-tenant injection attempts—0 policy violations detected." This evidence belongs in your SOC 2 audit package, your GDPR data-protection impact assessment, and your EU AI Act technical file. Schedule AI Red Teaming Agent runs in your CI/CD pipeline so every deployment generates fresh compliance evidence rather than relying on point-in-time assessments.
+The output is a structured test report that maps test results to compliance controls: "EU data-isolation controls validated against 150 cross-tenant injection attempts—0 policy violations detected." This evidence belongs in your SOC 2 audit package, your data-protection impact assessment, and your EU AI Act technical file. Schedule AI Red Teaming Agent runs in your CI/CD pipeline so every deployment generates fresh compliance evidence rather than relying on point-in-time assessments.
 
 ## Key takeaways
 
-- **Compliance requirement mapping** translates regulatory mandates (GDPR, SOC 2, HIPAA, ISO 27001, EU AI Act) into specific technical controls for each agent in the pipeline.
+- **Compliance requirement mapping** translates regulatory mandates (EU data privacy, SOC 2, HIPAA, ISO 27001, EU AI Act) into specific technical controls for each agent in the pipeline.
 - **Data residency enforcement** uses Azure region-locked deployments and network egress controls to keep data within required geographic boundaries.
 - **Data minimization** ensures agents process only the minimum data necessary for their function, reducing breach exposure surface.
 - **Consent and processing logs** create auditable records of data processing activities, supporting both compliance reporting and subject access requests.
