@@ -15,6 +15,7 @@ Attribution answers "who decided this?" in multi-agent systems where five agents
 You design a structured attribution format where each finding in the review includes explicit agent identification. The format captures: the agent ID that generated the finding, the agent's role (security analysis, quality assessment, architectural review), the specific subtask the agent performed, and the confidence level for this particular finding. This structure appears in the review output:
 
 **Finding**: Potential SQL injection vulnerability in user input handling
+
 - **Agent**: `security-analyzer-v2.3`  
 - **Role**: Security analysis  
 - **Task**: Input validation assessment  
@@ -31,12 +32,13 @@ Explainability in multi-agent systems requires more than post-hoc rationalizatio
 Each agent produces a structured reasoning trace alongside its findings. The trace follows a consistent format: the input the agent processed, the patterns or guidelines it matched against, the specific evidence from the code that triggered the match, and the logical steps from evidence to conclusion.
 
 For a security finding, the trace captures:
-1. **Input context**: Code section analyzed (lines 45-62 in `auth.py`)
-2. **Pattern match**: SQL query construction with string concatenation (OWASP A03:2021)
-3. **Evidence**: `cursor.execute("SELECT * FROM users WHERE id = " + user_input)`
-4. **Logic**: Direct string concatenation of user input into SQL query without parameterization
-5. **Reference**: OWASP Top 10 2021, CWE-89 (SQL Injection)
-6. **Confidence calculation**: High confidence (0.87) due to direct pattern match, no mitigating controls detected
+
+- **Input context**: Code section analyzed (lines 45-62 in `auth.py`)
+- **Pattern match**: SQL query construction with string concatenation (OWASP A03:2021)
+- **Evidence**: `cursor.execute("SELECT * FROM users WHERE id = " + user_input)`
+- **Logic**: Direct string concatenation of user input into SQL query without parameterization
+- **Reference**: OWASP Top 10 2021, CWE-89 (SQL Injection)
+- **Confidence calculation**: High confidence (0.87) due to direct pattern match, no mitigating controls detected
 
 This trace is verifiable—another reviewer can examine the same code section, consult the same OWASP guidance, and confirm the agent's logic. The trace references external standards rather than relying on unexplained model judgments. When the agent cites CWE-89, developers can look up the same reference and understand the security principle behind the finding.
 

@@ -151,10 +151,10 @@ You design data flow architecture that proves code never leaves the contracted r
 
 Data flow diagrams document the complete path code takes through the system. The diagram shows:
 
-- Code submission arrives via API Management in the contracted region
-- Code flows to storage account in the same region (with geo-replication disabled to prevent region copies)
-- All agent processing occurs in compute resources within the region, reasoning traces and audit logs write to Log Analytics workspace in the region
-- Code review results return through the regional API gateway.
+1. Code submission arrives via API Management in the contracted region
+1. Code flows to storage account in the same region (with geo-replication disabled to prevent region copies)
+1. All agent processing occurs in compute resources within the region, reasoning traces and audit logs write to Log Analytics workspace in the region
+1. Code review results return through the regional API gateway.
 
 Every component includes the region designation, making the diagram a compliance artifact for demonstrating data residency.
 
