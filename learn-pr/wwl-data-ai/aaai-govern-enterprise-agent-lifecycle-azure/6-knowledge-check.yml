@@ -13,7 +13,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "A Fabrikam product manager wants to update the security analysis agent's system prompt to focus more heavily on GDPR compliance patterns. This change would affect all 20 enterprise tenants. Which approval gate type is most appropriate for this change?"
+  - content: "A Fabrikam product manager wants to update the security analysis agent's system prompt to focus more heavily on data privacy compliance patterns. This change would affect all 20 enterprise tenants. Which approval gate type is most appropriate for this change?"
     choices:
     - content: "Automated gate only—run evaluation benchmarks against the updated system prompt and deploy if quality scores exceed baseline."
       isCorrect: false
