@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-multi-agent-systems-azure-zero-trust.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Module assessment."
+  ms.date: 06/01/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Fabrikam's code review orchestrator, security analysis agent, and style analysis agent all share one managed identity with Storage Blob Contributor permissions. Why is this a security risk, and what's the correct approach?"
+    choices:
+    - content: "The shared identity is a risk because any agent can modify storage that other agents depend on. Each agent should have its own identity with only the specific permissions it requires."
+      isCorrect: true
+      explanation: "Shared identities violate least privilege and expand the blast radius of any compromise. If the style agent is compromised, it can modify storage artifacts the security agent relies on. Per-agent identities with role-scoped permissions ensure a compromised agent can only access its own designated resources."
+    - content: "The shared identity is acceptable as long as all agents run in the same virtual network, which provides sufficient network-layer isolation."
+      isCorrect: false
+      explanation: "Network isolation controls communication paths but not authorization. A compromised agent within the same network can still use the shared identity to access resources it shouldn't reach. Zero Trust requires both network controls AND per-component identity scoping."
+    - content: "The risk is that shared identities expire simultaneously. Rotating to individual identities with the same permissions solves the expiration coordination problem."
+      isCorrect: false
+      explanation: "Expiration coordination is an operational concern, not the primary security risk here. The real problem is over-privileged shared access. Individual identities with the SAME permissions don't solve the fundamental least-privilege violation."
+  - content: "Fabrikam detects that the code parsing agent—normally isolated to communicate only with the orchestrator—is attempting to reach the customer output storage agent directly. What does this traffic pattern indicate, and which control catches it?"
+    choices:
+    - content: "This is normal behavior—agents can route requests to any other agent for efficiency. No control is needed."
+      isCorrect: false
+      explanation: "In a zero-trust design, normal traffic patterns are explicitly defined and all other traffic is denied. A parsing agent communicating directly with the output storage agent is outside the defined communication graph and is a strong indicator of a lateral movement attempt."
+    - content: "This may indicate lateral movement from a compromised agent. Network policy with default-deny and explicit allow-list rules would prevent the connection, and anomaly detection on the communication graph would alert on the deviation."
+      isCorrect: true
+      explanation: "Zero-trust network policies block traffic not in the explicit allow-list, preventing the connection. The anomaly detection layer catches that the parsing agent—never previously communicating with the output storage agent—is attempting a new connection, which signals a potential compromise."
+    - content: "This is a configuration error. Update the network policy to add the parsing agent to the output storage agent's allow-list."
+      isCorrect: false
+      explanation: "Adding unexpected communication paths to the allow-list defeats the purpose of network policy. The lateral movement detection signal should trigger investigation, not a policy expansion. If the communication is genuinely needed, it should go through the orchestrator per the defined agent topology."
+  - content: "Fabrikam serves EU enterprise customers and processes their proprietary source code. Under EU data privacy law, what architectural requirements apply to where and how this code is processed?"
+    choices:
+    - content: "EU customer source code must be processed only within EU Azure regions. Cross-region API calls that transfer code data outside the EU are prohibited, and Azure Policy should enforce allowed regions for all agent deployments."
+      isCorrect: true
+      explanation: "EU data privacy law restricts personal and sensitive data from being transferred outside the EU without adequate protections. Using Azure Policy to enforce allowed deployment regions provides a preventive control that ensures agent deployments stay within compliant regions."
+    - content: "EU data privacy regulations only apply to personal data like names and email addresses. Source code is intellectual property, not personal data, so it can be processed in any region."
+      isCorrect: false
+      explanation: "EU data privacy law covers all data relating to identifiable individuals. Enterprise source code can contain personal data (developer names in comments, commit metadata, email addresses in configuration files). Additionally, enterprise customer contracts typically include data residency obligations regardless of personal data classification."
+    - content: "Encryption in transit between Azure regions satisfies EU data privacy transfer requirements, so regional restrictions aren't needed."
+      isCorrect: false
+      explanation: "EU data privacy law requires that transfers to third countries use either adequacy decisions, standard contractual clauses, or other approved transfer mechanisms—encryption in transit doesn't substitute for these requirements. Within the EU, data can move between EU regions freely, but cross-EU transfers to nonadequate countries require explicit safeguards."
