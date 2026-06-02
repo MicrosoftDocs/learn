@@ -5,7 +5,7 @@ metadata:
   description: Knowledge Check
   author: ayangupt
   ms.author: ayangupta
-  ms.date: 12/11/2024
+  ms.date: 05/20/2026
   ms.topic: unit
   ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java, linux-related-content
   ms.assetid: HelloJavaAppService
@@ -29,7 +29,7 @@ quiz:
       choices:
         - content: "Only Java and .NET"
           isCorrect: false
-          explanation: "Azure App Service supports many more languages including Python, Node.js, PHP, and Ruby."
+          explanation: "Azure App Service supports many more languages, including Python, Node.js, PHP, Java, and .NET."
         - content: "Java, Python, Node.js, .NET, and PHP"
           isCorrect: true
           explanation: "Correct! Azure App Service supports various programming languages, making it flexible for different development environments."
@@ -47,7 +47,7 @@ quiz:
         - content: "mvn build:java"
           isCorrect: false
           explanation: "This command isn't valid for creating a Maven project for Java web apps."
-    - content: What is the correct way to deploy your Java web app to Azure App Service?
+    - content: Which Azure CLI command can deploy your Java web app to Azure App Service?
       choices:
         - content: "az webapp deploy"
           isCorrect: true

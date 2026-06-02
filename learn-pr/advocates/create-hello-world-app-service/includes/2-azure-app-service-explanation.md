@@ -8,7 +8,7 @@ Azure App Service offers built-in integration with popular development tools, co
 
 ### Key features of Azure App Service
 
-- **Multiple Language Support**: Azure App Service supports a wide variety of programming languages and frameworks, including ASP.NET, Java, Python, Node.js, PHP, and Ruby. This flexibility enables developers to choose the best tools for their projects.
+- **Multiple Language Support**: Azure App Service supports a variety of web stacks, such as .NET (including ASP.NET apps), Java, Node.js, Python, and PHP. This flexibility enables developers to choose a built-in App Service stack that fits their projects.
 
 - **Built-in DevOps**: Azure App Service offers seamless integration with CI/CD pipelines using GitHub, Bitbucket, Azure DevOps, and other popular services. This support ensures continuous deployment and automated testing in your app's lifecycle.
 
