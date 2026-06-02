@@ -1,6 +1,6 @@
 ## Create a simple Java web app
 
-In this exercise, you create a minimal Java web application that serves a simple "Hello, World!" message using Java 17 and Maven. This application runs on a built-in HTTP server and can be deployed to Azure App Service.
+In this exercise, you create a minimal Java web application that serves a simple "Hello, Java on Azure!" message using Java 17 and Maven. This application runs on a built-in HTTP server and can be deployed to Azure App Service.
 
 You have two options to proceed. Select the relevant tab based on your preference.
 
@@ -28,8 +28,9 @@ Use the following Maven archetype command to create a Maven project for your Jav
 
 ```bash
 mvn archetype:generate \
-    -DgroupId=com.microsoft.azure.samples \
-    -DartifactId=azure-javaweb-app-simple \
+    -DgroupId=com.example \
+    -DartifactId=hello-java-azure \
+    -Dpackage=com.example \
     -DarchetypeArtifactId=maven-archetype-quickstart \
     -Dversion=1.0-SNAPSHOT \
     -DinteractiveMode=false
@@ -40,12 +41,12 @@ You should see the following output:
 ```output
 [INFO] ----------------------------------------------------------------------------
 [INFO] Parameter: basedir, Value: /home/ayangupta/LearnProjects/DeployHelloApp
-[INFO] Parameter: package, Value: com.microsoft.azure.samples
-[INFO] Parameter: groupId, Value: com.microsoft.azure.samples
-[INFO] Parameter: artifactId, Value: azure-javaweb-app-simple
-[INFO] Parameter: packageName, Value: com.microsoft.azure.samples
+[INFO] Parameter: package, Value: com.example
+[INFO] Parameter: groupId, Value: com.example
+[INFO] Parameter: artifactId, Value: hello-java-azure
+[INFO] Parameter: packageName, Value: com.example
 [INFO] Parameter: version, Value: 1.0-SNAPSHOT
-[INFO] project created from Old (1.x) Archetype in dir: /private/tmp/TMP/azure-javaweb-app
+[INFO] project created from Old (1.x) Archetype in dir: /home/ayangupta/LearnProjects/DeployHelloApp/hello-java-azure
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
@@ -57,89 +58,145 @@ You should see the following output:
 The following files and directories are now available:
 
 ```
-└── azure-javaweb-app-simple
+└── hello-java-azure
+    ├── .mvn
+    │   ├── jvm.config
+    │   └── maven.config
     ├── src
     │   ├── main
     │   │   └── java
     │   │       └── com
-    │   │           └── microsoft
-    │   │               └── azure
-    │   │                   └── samples
-    │   │                       └── App.java
+    │   │           └── example
+    │   │               └── App.java
     │   └── test
     │       └── java
     │           └── com
-    │               └── microsoft
-    │                   └── azure
-    │                       └── samples
-    │                           └── AppTest.java
+    │               └── example
+    │                   └── AppTest.java
     └── pom.xml
+```
+
+Use the following command to navigate to the generated project directory:
+
+```bash
+cd hello-java-azure
 ```
 
 ### Modify the Maven pom.xml file
 
-Replace the contents of your **pom.xml** with the following code. This updated **pom.xml** introduces the correct versions of dependencies needed for this web app.
+Replace the contents of your **pom.xml** with the following code. This updated **pom.xml** configures Java 17 and creates an executable JAR with the application entry point in the manifest.
 
 ```xml
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="
+            http://maven.apache.org/POM/4.0.0
+            https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.microsoft.azure.samples</groupId>
-    <artifactId>azure-javaweb-app-simple</artifactId>
+
+    <groupId>com.example</groupId>
+    <artifactId>hello-java-azure</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <name>hello-java-azure</name>
+    <description>A simple Java web application without Spring</description>
+
     <properties>
-            <maven.compiler.source>17</maven.compiler.source>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.30</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <release>${java.version}</release>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.4.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>com.example.HelloJavaAzureServer</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
 ```
 
 ### Create the Main application class
 
-Edit the **App.java** file in the **src/main/java/com/microsoft/azure/samples** directory to use the following code, which creates a simple HTTP server:
+The Maven archetype generates a sample test that refers to the original **App.java** class. Remove the generated test files because this module replaces the sample class with a web server:
+
+```bash
+rm -r src/test
+```
+
+Rename **App.java** to **HelloJavaAzureServer.java**:
+
+```bash
+mv src/main/java/com/example/App.java src/main/java/com/example/HelloJavaAzureServer.java
+```
+
+Edit **HelloJavaAzureServer.java** in the **src/main/java/com/example** directory to use the following code, which creates a simple HTTP server. The app reads the `PORT` environment variable that Azure App Service provides and uses port `8081` when you run it locally.
 
 ```java
-package com.microsoft.azure.samples;
+package com.example;
+
+import com.sun.net.httpserver.HttpExchange;
+import com.sun.net.httpserver.HttpHandler;
+import com.sun.net.httpserver.HttpServer;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
-import com.sun.net.httpserver.HttpServer;
-import com.sun.net.httpserver.HttpHandler;
-import com.sun.net.httpserver.HttpExchange;
+import java.nio.charset.StandardCharsets;
 
-public class App {
+public class HelloJavaAzureServer {
 
     public static void main(String[] args) throws IOException {
-        HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
+        int port = 8081;
+        String portEnv = System.getenv("PORT");
+        if (portEnv != null && !portEnv.isBlank()) {
+            port = Integer.parseInt(portEnv);
+        }
+
+        HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
         server.createContext("/", new HelloHandler());
-        server.setExecutor(null); // creates a default executor
+        server.setExecutor(null);
         server.start();
-        System.out.println("Server started on http://localhost:8080/");
+        System.out.println("Server started on port " + port);
     }
 
     static class HelloHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
-            String response = "Hello, World!";
-            exchange.sendResponseHeaders(200, response.length());
-            OutputStream os = exchange.getResponseBody();
-            os.write(response.getBytes());
-            os.close();
+            byte[] response = "Hello, Java on Azure!".getBytes(StandardCharsets.UTF_8);
+            exchange.sendResponseHeaders(200, response.length);
+
+            try (OutputStream os = exchange.getResponseBody()) {
+                os.write(response);
+            }
         }
     }
-
 }
 ```
 
@@ -155,7 +212,7 @@ You can run your application by using the following steps:
    mvn clean package
    ```
 
-1. Run the application. Use the following command to compile the code:
+1. Run the application. Use the following command:
 
    ```bash
    java -jar target/hello-java-azure-1.0-SNAPSHOT.jar
@@ -164,9 +221,11 @@ You can run your application by using the following steps:
    You should see the following output, which indicates that the server started:
 
    ```output
-   Server started on http://localhost:8080/
+   Server started on port 8081
    ```
 
-1. Test your application. Open your web browser and go to: `http://localhost:8080/`.
+1. Test your application. Open your web browser and go to: `http://localhost:8081/`.
 
-   You should see the message: `Hello, World!` on your screen.
+   You should see the message: `Hello, Java on Azure!` on your screen.
+
+1. When you're finished testing locally, stop the server by pressing `Ctrl+C` in the terminal where `java -jar` is running. If you open a new terminal for the deployment unit, change back to the `hello-java-azure` project directory before running the Maven or Azure CLI commands.
