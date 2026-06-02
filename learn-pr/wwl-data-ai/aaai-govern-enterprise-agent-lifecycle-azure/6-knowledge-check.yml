@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.govern-enterprise-agent-lifecycle-azure.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Module assessment."
+  ms.date: 06/02/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "A Fabrikam product manager wants to update the security analysis agent's system prompt to focus more heavily on data privacy compliance patterns. This change would affect all 20 enterprise tenants. Which approval gate type is most appropriate for this change?"
+    choices:
+    - content: "Automated gate only—run evaluation benchmarks against the updated system prompt and deploy if quality scores exceed baseline."
+      isCorrect: false
+      explanation: "Automated gates validate quality metrics but don't capture enterprise-customer impact. A system prompt change affecting all tenants changes the agent's behavior for proprietary customer code. This warrants human review to assess the business impact of the behavioral change."
+    - content: "Manual approval gate requiring sign-off from the Responsible AI officer and at least one enterprise customer's designated reviewer, since the change alters agent behavior for all tenants."
+      isCorrect: true
+      explanation: "System prompt rewrites are high-risk changes that alter agent decision-making across all tenants. Manual approval ensures the Responsible AI officer validates the change against governance standards, and enterprise customer approval (tiered approval) ensures customers understand and accept the behavioral changes before they're applied to their workflows."
+    - content: "No approval gate is needed for system prompt changes—only model deployment changes require approval since they affect infrastructure."
+      isCorrect: false
+      explanation: "System prompts fundamentally define agent behavior. A system prompt change can alter recommendations, introduce bias, or change compliance patterns without changing any infrastructure. System prompt versions must be tracked in the agent manifest and go through appropriate approval gates like any other behavioral change."
+  - content: "One of Fabrikam's enterprise tenants runs a large batch code review job every Friday afternoon, consuming 80% of the available model quota and causing timeout errors for other tenants during peak hours. Which quota architecture addresses this?"
+    choices:
+    - content: "Implement global rate limits that apply equally to all tenants to ensure fair resource distribution during peak hours."
+      isCorrect: false
+      explanation: "Global limits don't differentiate between tenants; a single large tenant can still exhaust the global budget. Per-tenant rate limiting with keyed APIM policies ensures each tenant has its own quota bucket, preventing any single tenant from affecting others."
+    - content: "Implement per-tenant rate limiting with APIM policies keyed on tenant ID, including a sustained burst allowance that blocks only when quota is exceeded for extended periods."
+      isCorrect: true
+      explanation: "Per-tenant quotas isolate each tenant's consumption so one tenant's batch job cannot exhaust capacity for other tenants. The burst allowance handles legitimate peak spikes without immediately blocking, while preventing sustained over-consumption that affects other tenants."
+    - content: "Increase the total model quota allocation to accommodate the large tenant's batch workload needs without affecting other tenants."
+      isCorrect: false
+      explanation: "Increasing total quota is expensive and doesn't guarantee fair distribution—it just delays the problem. Without per-tenant limits, the large tenant can always grow to consume the new capacity. Per-tenant quotas are the architectural solution, not capacity expansion."
+  - content: "Azure OpenAI announces that GPT-4 Turbo will be deprecated in 90 days. Three of Fabrikam's agents use this model across 15 enterprise tenants. What is the first step in the migration process?"
+    choices:
+    - content: "Immediately deploy updated versions of the three agents using GPT-4o and push the updates to all 15 tenants."
+      isCorrect: false
+      explanation: "Immediate deployment without validation risks quality regressions across all 15 tenants simultaneously. The first step is to identify the impact scope, then evaluate replacement model behavior, before planning the staged migration."
+    - content: "Identify which agent versions across which tenants use the deprecated model, then set 60-day and 30-day evaluation and migration milestones before the deprecation date."
+      isCorrect: true
+      explanation: "Impact assessment comes first: knowing exactly which agents and tenants are affected determines the migration scope. The 60/30-day milestone schedule ensures sufficient time for model compatibility evaluation, tenant communication, canary testing, and staged migration without rushing the change near the deprecation deadline."
+    - content: "Pin all 15 tenants to their current agent versions to prevent automatic model migration until the team is ready."
+      isCorrect: false
+      explanation: "Version pinning maintains the current model version—which is being deprecated. Pinning doesn't extend the model's availability beyond its deprecation date. The team still must migrate; pinning only delays the update, not the migration requirement."

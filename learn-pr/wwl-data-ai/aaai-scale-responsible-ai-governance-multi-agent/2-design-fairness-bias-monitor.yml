@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-responsible-ai-governance-multi-agent.design-fairness-bias-monitor
+title: Design fairness and bias monitoring
+metadata:
+  title: Design Fairness and Bias Monitoring
+  description: "Design fairness and bias monitoring."
+  ms.date: 06/02/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-design-fairness-bias-monitor.md)]
