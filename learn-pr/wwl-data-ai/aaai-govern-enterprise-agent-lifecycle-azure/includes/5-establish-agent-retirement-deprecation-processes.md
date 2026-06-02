@@ -22,12 +22,12 @@ Preventing zombie agents requires proactive retirement processes that identify d
 
 ## Plan model deprecation and agent migration
 
-Model deprecation drives many agent retirements. Microsoft Foundry announces model retirement dates months in advance—for example, "gpt-4o version 2024-08-06 will retire no earlier than October 15, 2025. Migrate to gpt-4.1 (2025-04-14) by that date." When a model your agents depend on reaches retirement, you must migrate affected agents to supported models.
+Model deprecation drives many agent retirements. Microsoft Foundry announces model retirement dates months in advance—for example, "gpt-4o version 2024-08-06 will retire no earlier than October 1, 2026. Migrate to gpt-5.1 by that date." When a model your agents depend on reaches retirement, you must migrate affected agents to supported models.
 
 You implement a deprecation calendar tracking process that monitors Azure OpenAI product announcements and maps model versions to agent dependencies. When a deprecation announcement occurs, the process:
 
 1. **Identifies affected agents** by querying agent version manifests for dependencies on the deprecating model—"Which agents use GPT-4-0613?"
-2. **Assesses migration complexity** by determining whether agents can migrate to the replacement model (gpt-4.1) with minimal changes, or whether the model's different characteristics (longer context window, different token limits, updated training data) require prompt rewrites and reevaluation
+2. **Assesses migration complexity** by determining whether agents can migrate to the replacement model (gpt-5.1) with minimal changes, or whether the model's different characteristics (longer context window, different token limits, updated training data) require prompt rewrites and reevaluation
 3. **Sets migration deadlines** at 90, 60, and 30 days before deprecation, creating time-bound milestones for testing, approval, and deployment
 4. **Creates migration tickets** in the development backlog for each affected agent, prioritized by criticality (customer-facing agents migrate before internal tooling)
 

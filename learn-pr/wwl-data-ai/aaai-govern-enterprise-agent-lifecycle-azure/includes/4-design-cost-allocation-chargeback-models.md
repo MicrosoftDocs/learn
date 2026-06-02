@@ -1,4 +1,4 @@
-Azure Monitor collects tenant-tagged consumption metrics from agent workloads—model token usage, container compute time, and storage operations—giving you the granular data needed to calculate fair cost allocations. Combined with Azure Cost Management, it powers the monthly chargeback reports and optimization dashboards that make AI spending visible and accountable across development teams.
+Azure Monitor collects tenant-tagged consumption metrics from agent workloads—model token usage, container compute time, and storage operations—giving you the granular data needed to calculate fair cost allocations. Combined with Microsoft Cost Management, it powers the monthly chargeback reports and optimization dashboards that make AI spending visible and accountable across development teams.
 
 ## Understand multi-dimensional cost attribution
 
@@ -39,7 +39,7 @@ Your agent code extracts this usage information and emits a custom metric to Azu
 
 **Compute metering** attributes container runtime to tenants. Azure Container Apps doesn't natively track which tenant drove which scaling events, so you implement custom metering. Each agent invocation logs start and end timestamps, enabling duration calculation. You emit metrics showing: tenant ID that triggered the invocation, agent ID consuming compute resources, container instance ID that processed the request, duration in seconds, and estimated vCPU and memory consumption based on container instance size.
 
-**Storage metering** tags operations with tenant context. When agents write files to blob storage (uploaded code, intermediate processing results), you include tenant ID in blob metadata. When vector embeddings are stored, you partition by tenant and track storage consumption per partition. These tags enable Azure Cost Management to attribute storage costs to tenant-level cost centers.
+**Storage metering** tags operations with tenant context. When agents write files to blob storage (uploaded code, intermediate processing results), you include tenant ID in blob metadata. When vector embeddings are stored, you partition by tenant and track storage consumption per partition. These tags enable Microsoft Cost Management to attribute storage costs to tenant-level cost centers.
 
 ```python
 from opentelemetry import metrics
@@ -121,16 +121,16 @@ class CostAttributionTracker:
 
 ## Calculate monthly chargeback from metered usage
 
-Metered usage data enables monthly chargeback calculation combining Azure Cost Management data with custom metrics. Azure Cost Management provides actual costs for model API usage (Azure OpenAI charges), compute resources (Container Apps charges), and storage services (blob, search, database charges). These costs are tagged with resource groups and subscriptions but don't include tenant-level granularity.
+Metered usage data enables monthly chargeback calculation combining Microsoft Cost Management data with custom metrics. Microsoft Cost Management provides actual costs for model API usage (Azure OpenAI charges), compute resources (Container Apps charges), and storage services (blob, search, database charges). These costs are tagged with resource groups and subscriptions but don't include tenant-level granularity.
 
 You combine Azure costs with custom metric aggregations to calculate per-tenant chargeback. The monthly chargeback process runs automatically on the first day of each month:
 
-1. **Query Azure Cost Management API** for total costs across all code review system resources during the previous month—model deployments, container apps, storage accounts, and supporting services
+1. **Query Microsoft Cost Management API** for total costs across all code review system resources during the previous month—model deployments, container apps, storage accounts, and supporting services
 2. **Query Azure Monitor** for custom metrics aggregated by tenant—total tokens consumed per tenant, total compute seconds per tenant, and total storage operations per tenant
-3. **Calculate cost allocation ratios**—if tenant A consumed forty percent of total tokens, they're allocated forty percent of Azure OpenAI model costs; if tenant B consumed twenty-five percent of compute seconds, they're allocated twenty-five percent of Container Apps costs
+3. **Calculate cost allocation ratios**—if tenant A consumed 40 percent of total tokens, they're allocated 40 percent of Azure OpenAI model costs; if tenant B consumed 25 percent of compute seconds, they're allocated 25 percent of Container Apps costs
 4. **Generate chargeback reports** showing per-tenant costs broken down by service category: model usage, compute usage, storage usage, and total monthly cost
 
-The calculation handles shared baseline costs appropriately. Some compute costs aren't tenant-driven—the orchestrator runs continuously even with no active requests, consuming baseline compute. You allocate these shared costs proportionally across all active tenants rather than to any specific tenant. The shared cost percentage (typically ten to fifteen percent of total compute costs) is distributed evenly.
+The calculation handles shared baseline costs appropriately. Some compute costs aren't tenant-driven—the orchestrator runs continuously even with no active requests, consuming baseline compute. You allocate these shared costs proportionally across all active tenants rather than to any specific tenant. The shared cost percentage (typically 10 to 15 percent of total compute costs) is distributed evenly.
 
 ```python
 def generate_monthly_chargeback_report(month: str, year: int):
@@ -223,19 +223,19 @@ The optimization recommendations are generated automatically by analyzing usage 
 
 **Use smaller models for simple tasks**: "Your security analyzer consumed 1.2M tokens on syntax checks that could run on gpt-4o-mini instead of gpt-4o, saving ~$45/month."
 
-**Batch processing during off-peak hours**: "Your team submitted eighty-seven percent of code reviews between 2-4 PM UTC, competing for quota with other teams. Shift batch reviews to off-peak hours (8-10 PM UTC) to reduce retry overhead and improve latency."
+**Batch processing during off-peak hours**: "Your team submitted 87 percent of code reviews between 2-4 PM UTC, competing for quota with other teams. Shift batch reviews to off-peak hours (8-10 PM UTC) to reduce retry overhead and improve latency."
 
 **Cache repeated analysis patterns**: "Twenty-three percent of your code reviews analyzed similar authentication patterns. Enable semantic caching to reduce redundant model calls, estimated savings: $30/month."
 
-**Right-size agent deployments**: "Your quality analyzer averaged twelve percent CPU utilization. Reduce container allocation from 1.0 vCPU to 0.5 vCPU, saving $18/month in compute costs."
+**Right-size agent deployments**: "Your quality analyzer averaged 12 percent CPU utilization. Reduce container allocation from 1.0 vCPU to 0.5 vCPU, saving $18/month in compute costs."
 
-When teams see their costs broken down with actionable optimization guidance, they make informed decisions. A team spending $800/month on code reviews might decide that's reasonable for their 50-developer organization, or they might implement caching and model optimization to reduce costs by thirty percent while maintaining review quality. The visibility creates accountability and optimization incentives that don't exist when AI costs are invisible shared overhead.
+When teams see their costs broken down with actionable optimization guidance, they make informed decisions. A team spending $800/month on code reviews might decide that's reasonable for their 50-developer organization, or they might implement caching and model optimization to reduce costs by 30 percent while maintaining review quality. The visibility creates accountability and optimization incentives that don't exist when AI costs are invisible shared overhead.
 
-Chargeback reporting changes the conversation from "our AI bill is large" to "team X’s batch agent consumed forty percent of model spend last month." That specificity drives the optimization decisions—model downgrades, off-peak scheduling, semantic caching—that keep costs sustainable as usage grows. The final governance challenge is managing what happens when agents reach the end of their useful life.
+Chargeback reporting changes the conversation from "our AI bill is large" to "team X’s batch agent consumed 40 percent of model spend last month." That specificity drives the optimization decisions—model downgrades, off-peak scheduling, semantic caching—that keep costs sustainable as usage grows. The final governance challenge is managing what happens when agents reach the end of their useful life.
 
 ## Key takeaways
 
 - **Multi-dimensional attribution** tracks model token costs, compute container runtime, and storage operations separately, each requiring different metering approaches.
 - **Instrumented metering** emits custom Azure Monitor metrics at every cost-accruing interaction—model API calls, agent compute duration, and storage writes—tagged with tenant context.
-- **Monthly chargeback calculation** combines Azure Cost Management totals with per-tenant usage ratios from custom metrics to generate proportional cost reports.
+- **Monthly chargeback calculation** combines Microsoft Cost Management totals with per-tenant usage ratios from custom metrics to generate proportional cost reports.
 - **Cost dashboards** display per-team breakdowns with optimization recommendations—like model downgrades, off-peak scheduling, and semantic caching—that drive actionable spending reductions.
