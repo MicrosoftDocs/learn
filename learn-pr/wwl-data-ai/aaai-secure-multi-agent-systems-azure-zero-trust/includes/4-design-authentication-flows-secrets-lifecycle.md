@@ -155,10 +155,10 @@ Use Azure RBAC (not legacy Key Vault access policies) for all permission grants�
 Data encryption in transit (TLS 1.2+, mTLS for inter-agent) is mandatory and covered in Unit 5. For data at rest, three encryption tiers address different regulatory requirements:
 
 - **Microsoft-managed keys (MMK)**—Azure manages key rotation automatically. Meets most regulatory frameworks. Default for all Azure services.
-- **Customer-managed keys (CMK)**—customer controls key rotation and revocation. Revoke the CMK and all encrypted data becomes inaccessible immediately—the "crypto-shred" capability required by GDPR erasure for data that can't be deleted (backup copies). Required for HIPAA and EU AI Act high-risk classifications in some interpretations.
+- **Customer-managed keys (CMK)**—customer controls key rotation and revocation. Revoke the CMK and all encrypted data becomes inaccessible immediately—the "crypto-shred" capability required by EU data privacy regulations for erasure requests on data that can't be physically deleted (backup copies). Required for HIPAA and EU AI Act high-risk classifications in some interpretations.
 - **Double encryption**—encrypt data with CMK, then encrypt the CMK with a Microsoft-managed HSM key. Required for specific government and high-security regulated workloads. Higher cost and operational overhead.
 
-For Fabrikam's GDPR compliance, CMK is recommended for the Cosmos DB multitenant storage (enables crypto-shred for erasure requests) and optional for Azure AI Search indexes (data is already minimized and pseudonymized at ingestion).
+For Fabrikam's EU data privacy compliance, CMK is recommended for the Cosmos DB multitenant storage (enables crypto-shred for erasure requests) and optional for Azure AI Search indexes (data is already minimized and pseudonymized at ingestion).
 
 ## Key takeaways
 
@@ -167,4 +167,4 @@ For Fabrikam's GDPR compliance, CMK is recommended for the Cosmos DB multitenant
 - **Key-based authentication** is acceptable in zero-trust architectures only when paired with Key Vault storage (never environment variables), scheduled rotation, and per-service key isolation.
 - **Secrets lifecycle design** chooses between secrets, keys, and certificates based on cryptographic strength requirements—certificates provide non-repudiation and automated renewal; secrets are simplest but provide no cryptographic identity proof.
 - **Blue-green rotation** prevents downtime by maintaining primary and secondary versions during the rotation window; rotation event handlers refresh in-memory caches to prevent stale credential failures.
-- **CMK encryption** enables crypto-shred for GDPR erasure compliance on data that can't be physically deleted (backup copies, immutable storage); configure at the storage-service level using Azure RBAC-governed Key Vault key access.
+- **CMK encryption** enables crypto-shred for EU data privacy erasure compliance on data that can't be physically deleted (backup copies, immutable storage); configure at the storage-service level using Azure RBAC-governed Key Vault key access.

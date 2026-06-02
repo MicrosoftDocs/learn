@@ -18,7 +18,7 @@ abstract: |
   - Manage secrets lifecycle using Azure Key Vault including certificates, automated rotation, role-based access control granularity, and encryption choices
   - Design network security controls to prevent lateral movement across agent networks
   - Implement multitenant data isolation to prevent cross-tenant data leakage in shared agent deployments
-  - Configure compliance controls for SOC 2, GDPR, EU AI Act, and industry-specific regulatory requirements
+  - Configure compliance controls for SOC 2, EU data privacy, EU AI Act, and industry-specific regulatory requirements
 prerequisites: |
   Before starting this module, you should have:
   - Familiarity with Azure Managed Identity and Azure Key Vault for secrets management

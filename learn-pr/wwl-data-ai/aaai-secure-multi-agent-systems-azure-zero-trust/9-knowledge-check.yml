@@ -35,14 +35,14 @@ quiz:
     - content: "This is a configuration error. Update the network policy to add the parsing agent to the output storage agent's allow-list."
       isCorrect: false
       explanation: "Adding unexpected communication paths to the allow-list defeats the purpose of network policy. The lateral movement detection signal should trigger investigation, not a policy expansion. If the communication is genuinely needed, it should go through the orchestrator per the defined agent topology."
-  - content: "Fabrikam serves EU enterprise customers and processes their proprietary source code. Under GDPR, what architectural requirements apply to where and how this code is processed?"
+  - content: "Fabrikam serves EU enterprise customers and processes their proprietary source code. Under EU data privacy law, what architectural requirements apply to where and how this code is processed?"
     choices:
     - content: "EU customer source code must be processed only within EU Azure regions. Cross-region API calls that transfer code data outside the EU are prohibited, and Azure Policy should enforce allowed regions for all agent deployments."
       isCorrect: true
-      explanation: "GDPR's data residency requirements restrict personal and sensitive data from being transferred outside the EU without adequate protections. Using Azure Policy to enforce allowed deployment regions provides a preventive control that ensures agent deployments stay within compliant regions."
-    - content: "GDPR data residency only applies to personal data like names and email addresses. Source code is intellectual property, not personal data, so it can be processed in any region."
+      explanation: "EU data privacy law restricts personal and sensitive data from being transferred outside the EU without adequate protections. Using Azure Policy to enforce allowed deployment regions provides a preventive control that ensures agent deployments stay within compliant regions."
+    - content: "EU data privacy regulations only apply to personal data like names and email addresses. Source code is intellectual property, not personal data, so it can be processed in any region."
       isCorrect: false
-      explanation: "GDPR covers all data relating to identifiable individuals. Enterprise source code can contain personal data (developer names in comments, commit metadata, email addresses in configuration files). Additionally, enterprise customer contracts typically include data residency obligations regardless of personal data classification."
-    - content: "Encryption in transit between Azure regions satisfies GDPR data transfer requirements, so regional restrictions aren't needed."
+      explanation: "EU data privacy law covers all data relating to identifiable individuals. Enterprise source code can contain personal data (developer names in comments, commit metadata, email addresses in configuration files). Additionally, enterprise customer contracts typically include data residency obligations regardless of personal data classification."
+    - content: "Encryption in transit between Azure regions satisfies EU data privacy transfer requirements, so regional restrictions aren't needed."
       isCorrect: false
-      explanation: "GDPR data transfers to third countries require either adequacy decisions, standard contractual clauses, or other transfer mechanisms—encryption in transit doesn't substitute for these requirements. Within the EU, data can move between EU regions under GDPR, but cross-EU transfers to nonadequate countries require explicit safeguards."
+      explanation: "EU data privacy law requires that transfers to third countries use either adequacy decisions, standard contractual clauses, or other approved transfer mechanisms—encryption in transit doesn't substitute for these requirements. Within the EU, data can move between EU regions freely, but cross-EU transfers to nonadequate countries require explicit safeguards."
