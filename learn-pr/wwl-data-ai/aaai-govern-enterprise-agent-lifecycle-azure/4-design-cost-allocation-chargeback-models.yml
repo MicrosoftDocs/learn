@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.govern-enterprise-agent-lifecycle-azure.design-cost-allocation-chargeback-models
+title: Design cost allocation and chargeback models
+metadata:
+  title: Design Cost Allocation and Chargeback Models
+  description: "Design cost allocation and chargeback models."
+  ms.date: 06/02/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-design-cost-allocation-chargeback-models.md)]
