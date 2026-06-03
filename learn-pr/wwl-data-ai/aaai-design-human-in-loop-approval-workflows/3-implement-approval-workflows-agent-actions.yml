@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-human-in-loop-approval-workflows.implement-approval-workflows-agent-actions
+title: Implement approval workflows for agent-initiated actions
+metadata:
+  title: Implement Approval Workflows for Agent-Initiated Actions
+  description: "Implement approval workflows for agent-initiated actions."
+  ms.date: 06/08/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-implement-approval-workflows-agent-actions.md)]

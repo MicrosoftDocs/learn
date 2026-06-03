@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.design-human-in-loop-approval-workflows
+metadata:
+  title: Design Human-in-the-Loop Approval Workflows with Power Automate and Microsoft Teams
+  description: "Design human-in-the-loop systems for production multi-agent workflows using Power Automate and Microsoft Teams. Implement confidence-threshold escalation architectures, design asynchronous approval workflows for high-stakes agent actions, build human feedback collection and active learning pipelines, and configure audit workflows that provide complete human oversight records for regulated environments."
+  ms.date: 06/08/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-foundry
+  ai-usage: ai-assisted
+title: Design human-in-the-loop approval workflows with Power Automate and Microsoft Teams
+summary: "Design human-in-the-loop systems for production multi-agent workflows using Power Automate and Microsoft Teams. Implement confidence-threshold escalation architectures, design asynchronous approval workflows for high-stakes agent actions, build human feedback collection and active learning pipelines, and configure audit workflows that provide complete human oversight records for regulated environments."
+abstract: |
+  By the end of this module, you're able to:
+  - Design confidence-threshold escalation architectures that route uncertain agent decisions to appropriate reviewers
+  - Implement asynchronous approval workflows for high-stakes agent actions using Power Automate and Microsoft Teams
+  - Build human feedback collection and active learning pipelines that continuously improve agent quality
+  - Configure audit workflows that provide complete human oversight records for regulated environments
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience building multi-agent systems with Microsoft Foundry Agent Service
+  - Familiarity with Power Automate and Microsoft Teams bot development
+  - Understanding of confidence scoring and uncertainty in language model outputs
+  - Basic understanding of compliance and audit requirements in regulated industries
+  - Proficiency in Python
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+products:
+- azure
+- microsoft-foundry
+- power-automate
+subjects:
+- artificial-intelligence
+- app-development
+units:
+- learn.wwl.design-human-in-loop-approval-workflows.introduction
+- learn.wwl.design-human-in-loop-approval-workflows.design-confidence-threshold-escalation
+- learn.wwl.design-human-in-loop-approval-workflows.implement-approval-workflows-agent-actions
+- learn.wwl.design-human-in-loop-approval-workflows.build-active-learn-human-feedback
+- learn.wwl.design-human-in-loop-approval-workflows.configure-audit-workflows-regulated-decisions
+- learn.wwl.design-human-in-loop-approval-workflows.knowledge-check
+- learn.wwl.design-human-in-loop-approval-workflows.summary
+badge:
+  uid: learn.wwl.design-human-in-loop-approval-workflows.badge
