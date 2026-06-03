@@ -29,5 +29,8 @@ subjects:
   - storage
 modules:
   - learn.azure.register-and-setup
+  - learn.azure.manage-active-directory
+  - learn.azure.manage-capacity-pool
+  - learn.azure.manage-nfs-volumes
 trophy:
   uid: learn.azure.managing-azure-netapp-files.trophy

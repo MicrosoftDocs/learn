@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-multi-agent-systems-azure-zero-trust.apply-zero-trust-identity-agent-networks
+title: Apply zero-trust identity to agent networks
+metadata:
+  title: Apply Zero-Trust Identity to Agent Networks
+  description: "Apply zero-trust identity to agent networks."
+  ms.date: 06/01/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-apply-zero-trust-identity-agent-networks.md)]

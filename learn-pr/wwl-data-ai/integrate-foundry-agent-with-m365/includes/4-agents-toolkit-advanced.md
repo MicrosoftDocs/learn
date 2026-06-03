@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2924a259-6eeb-4858-8ede-137334937e99]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 For most scenarios, publishing directly from the Foundry portal is the simplest path to get your agents into Microsoft Teams and Microsoft 365 Copilot. However, some complex enterprise scenarios require additional control over the integration layer. The Microsoft 365 Agents Toolkit provides an alternative approach for these situations.
 
 This unit covers the Agents Toolkit from a high level perspective. Follow the links to documentation at the end for a deeper explanation.
@@ -50,3 +61,5 @@ For detailed guidance on the Agents Toolkit, see:
 - [Microsoft 365 Agents SDK overview](/microsoft-365/agents-sdk/agents-sdk-overview)
 
 The direct publishing approach covered in the previous unit handles the majority of integration scenarios. Reserve the Agents Toolkit for situations where you've identified specific requirements it addresses.
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=cf75a465-d51e-4b58-b71e-0016dd7620e0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Workflows in Microsoft Foundry provide a way to orchestrate AI-driven actions using a visual, declarative approach. Rather than writing code, you define a sequence of steps that describe what should happen and when, allowing the platform to manage execution and state. This makes workflows well-suited for business processes that combine AI reasoning, logic, and user interaction.
 
 A workflow consists of connected nodes, where each node performs a specific function. Some nodes invoke agents, while others evaluate conditions, manage data, or communicate with users. Together, these nodes form an execution path that determines how requests move through the system. By arranging and configuring nodes, you control how information flows and how decisions are made.
@@ -9,3 +20,5 @@ One of the key advantages of workflows is their ability to coordinate multiple a
 Workflows also support patterns that balance automation with oversight. In scenarios where confidence is low or more context is required, workflows can pause execution, request human input, or escalate decisions. This flexibility makes workflows suitable for real-world systems where reliability and control are just as important as efficiency.
 
 By understanding what workflows are and the problems they're designed to solve, you establish the conceptual foundation needed to build, extend, and reason about agent-driven systems in Microsoft Foundry.
+
+::: zone-end

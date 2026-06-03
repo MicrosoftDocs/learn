@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-task-decomposition-multi-agent-azure.ensure-handoff-reliability-context-preservation
+title: Ensure handoff reliability and context preservation
+metadata:
+  title: Ensure Handoff Reliability and Context Preservation
+  description: "Ensure handoff reliability and context preservation."
+  ms.date: 05/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-ensure-handoff-reliability-context-preservation.md)]

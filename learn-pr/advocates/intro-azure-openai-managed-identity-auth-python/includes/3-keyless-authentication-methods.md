@@ -1,8 +1,8 @@
-How you configure managed identity authentication for local Python development is different from how you configure managed identity authentication for Azure-hosted Python environments.
+How you configure keyless authentication to Azure OpenAI for local Python development differs from how you configure it for Azure-hosted Python environments.
 
 ## Keyless authentication to Azure OpenAI for local Python development
 
-For local development in Python, keyless authentication to Azure OpenAI Service uses Azure managed identities and RBAC to authenticate and authorize developers efficiently. Make sure that you configured role assignments in the previous unit. Also make sure that you configured your locally signed-in Azure account to have access to the target Azure OpenAI resource.
+For local development in Python, keyless authentication to Azure OpenAI in Microsoft Foundry Models uses the developer's Microsoft Entra ID identity with Azure RBAC for authentication and authorization. Make sure that you configured role assignments in the previous unit. Also make sure that you configured your locally signed-in Azure account to have access to the target Azure OpenAI resource.
 
 After the role assignments are configured, Python developers can use the Azure Identity library to authenticate against Azure OpenAI.
 
@@ -13,17 +13,18 @@ The following example implements keyless authentication for the official `openai
 ```python
 import azure.identity
 import openai
+
 credential = azure.identity.DefaultAzureCredential()
 token_provider = azure.identity.get_bearer_token_provider(credential, "https://cognitiveservices.azure.com/.default")
 
-client = openai.AzureOpenAI(   
-   azure_endpoint=f"https://YOUR-AZURE-OPENAI-ENDPOINT.openai.azure.com",
+client = openai.AzureOpenAI(
+    azure_endpoint="https://YOUR-AZURE-OPENAI-ENDPOINT.openai.azure.com",
     azure_ad_token_provider=token_provider,
-    api_version="2024-06-01",
+    api_version="2024-10-21",
 )
 
 response = client.chat.completions.create(
-    model="YOUR-MODEL-DEPLOYMENT", 
+    model="YOUR-MODEL-DEPLOYMENT",
     messages=[
         {"role": "user", "content": "Write a haiku about a hungry cat"},
     ],
@@ -41,6 +42,25 @@ In the preceding code:
 
   The token provider function is invoked at this moment. A token is returned for the provided credential and scope. If the function returns an authorization error, there's a problem with either the locally used authentication credential or the RBAC permissions for the resource.
 
+> [!NOTE]
+> Azure OpenAI also offers a **v1 data-plane API** (GA, August 2025) that simplifies authentication and removes the need for a dated `api-version` parameter. With the v1 API, you use the standard `OpenAI` client with `base_url` and pass the token provider as `api_key`. The v1 API uses the `https://ai.azure.com/.default` scope instead of `https://cognitiveservices.azure.com/.default`:
+>
+> ```python
+> from openai import OpenAI
+> from azure.identity import DefaultAzureCredential, get_bearer_token_provider
+>
+> token_provider = get_bearer_token_provider(
+>     DefaultAzureCredential(), "https://ai.azure.com/.default"
+> )
+>
+> client = OpenAI(
+>     base_url="https://YOUR-AZURE-OPENAI-ENDPOINT.openai.azure.com/openai/v1/",
+>     api_key=token_provider,
+> )
+> ```
+>
+> For more information, see [Azure OpenAI in Microsoft Foundry Models v1 API](/azure/foundry/openai/api-version-lifecycle). The rest of this unit continues to use the dated GA API so the examples remain valid in either pattern.
+
 ### Keyless authentication with other packages
 
 If you're calling Azure OpenAI through another package, such as LangChain or LlamaIndex, consult the reference for that package to determine how to use keyless authentication. Look for parameters like "token provider" (to pass in the result of calling `get_bearer_token_provider`) or "credential" (to pass in the credential itself).
@@ -49,10 +69,11 @@ Some packages might offer only the option to pass in an actual token. In that ca
 
 ```python
 credential = azure.identity.DefaultAzureCredential()
-token = credential.get_token("https://cognitiveservices.azure.com/.default")
+access_token = credential.get_token("https://cognitiveservices.azure.com/.default")
+bearer_token = access_token.token
 ```
 
-The generated token is short lived. It can expire as soon as an hour after generation. You then need to generate a new token or implement token refresh logic to avoid token expiration errors from the API. That's why we recommend using an SDK that either generates new tokens for each request or implements token refresh logic to avoid such problems.
+`credential.get_token()` returns an `AccessToken` object — pass `access_token.token` (the string form) to packages that expect a raw bearer token. The token string is short lived; `access_token.expires_on` is a POSIX timestamp, and once it passes you need to call `get_token` again. That's why we recommend using an SDK that either generates new tokens for each request or implements token refresh logic to avoid such problems.
 
 ### Sample code
 
@@ -65,7 +86,7 @@ When you deploy a Python app to an Azure-hosted environment, such as Azure Conta
 For keyless authentication to work, you must configure the app correctly:
 
 - The app must have a system identity enabled, or it must be associated with a user-assigned identity.
-- The app identity must have correct permissions to access the Azure OpenAI resource, such as the Cognitive Services OpenAI User role or the Azure AI Developer role.
+- The app identity must have correct permissions to access the Azure OpenAI resource, such as the Cognitive Services OpenAI User role.
 
 The next step is to use the Azure Identity SDK to authenticate the deployed application. There are several options, depending on which identity type you're using and how much control you want over the authentication flow.
 
@@ -76,13 +97,14 @@ The first option is to use the same `DefaultAzureCredential` code shown earlier:
 ```python
 import azure.identity
 import openai
+
 credential = azure.identity.DefaultAzureCredential()
 token_provider = azure.identity.get_bearer_token_provider(credential, "https://cognitiveservices.azure.com/.default")
 
-client = openai.AzureOpenAI(   
-   azure_endpoint=f"https://YOUR-AZURE-OPENAI-ENDPOINT.openai.azure.com",
+client = openai.AzureOpenAI(
+    azure_endpoint="https://YOUR-AZURE-OPENAI-ENDPOINT.openai.azure.com",
     azure_ad_token_provider=token_provider,
-    api_version="2024-06-01",
+    api_version="2024-10-21",
 )
 ```
 
@@ -92,7 +114,7 @@ However, if you set up a user-assigned identity for your app, the SDK might not 
 
 ### Keyless authentication with ManagedIdentityCredential
 
-In a production environment on an Azure host, we recommend the `ManagedIdentityCredential(/python/api/azure-identity/azure.identity.managedidentitycredential)` class for more reliable authentication.
+In a production environment on an Azure host, we recommend the [`ManagedIdentityCredential`](/python/api/azure-identity/azure.identity.managedidentitycredential) class for more reliable authentication.
 
 That class can be passed the client ID of a user-assigned identity:
 
@@ -113,11 +135,13 @@ However, developers often choose to use different credentials in each environmen
 For example, consider this `if` statement:
 
 ```python
-if os.getenv("RUNNING_ON_AZURE"):
-   credential = azure.identity.ManagedIdentityCredential(os.getenv("AZURE_CLIENT_ID"))
-else:
-  credential = azure.identity.AzureDeveloperCliCredential()
+import os
+import azure.identity
 
+if os.getenv("RUNNING_ON_AZURE"):
+    credential = azure.identity.ManagedIdentityCredential(client_id=os.getenv("AZURE_CLIENT_ID"))
+else:
+    credential = azure.identity.AzureDeveloperCliCredential()
 ```
 
 The code first checks for the existence of a custom environment variable that's explicitly set to signal a production environment. For production, it sets the credential variable to `ManagedIdentityCredential` and passes in the client ID of the user-assigned identity that has the correct role. Otherwise, it sets the credential variable to `AzureDeveloperCliCredential`. `AzureDeveloperCliCredential` assumes that the developer is using `azd auth login` to sign in to the Azure account locally.

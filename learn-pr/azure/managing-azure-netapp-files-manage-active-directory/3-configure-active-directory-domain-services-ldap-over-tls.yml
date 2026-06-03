@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-active-directory.configure-active-directory-domain-services-ldap-over-tls
+title: Configure AD DS LDAP over TLS for Azure NetApp Files
+metadata:
+  title: Configure AD DS LDAP over TLS for Azure NetApp Files
+  description: Learn to configure AD DS LDAP over TLS and root CA certificate settings for Azure NetApp Files.
+  ms.date: 05/11/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-configure-active-directory-domain-services-ldap-over-tls.md)]

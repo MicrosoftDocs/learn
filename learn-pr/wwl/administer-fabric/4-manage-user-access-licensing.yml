@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.administer-fabric.manage-user-access-licensing
+title: Manage user access and licensing
+metadata:
+  title: Manage User Access and Licensing
+  description: "Learn how to choose the right Fabric license type for each user role, assign licenses efficiently using groups, and control how users share and distribute Fabric content."
+  ms.date: 05/27/2026
+  author: theresai
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-manage-user-access-licensing.md)]

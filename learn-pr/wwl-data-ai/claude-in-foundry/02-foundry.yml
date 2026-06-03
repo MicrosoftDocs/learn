@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.claude-in-foundry.foundry-overview
+title: Microsoft Foundry
+metadata:
+  title: Microsoft Foundry
+  description: "Overview of Microsoft Foundry."
+  ms.date: 05/25/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 3
+content: |
+  [!include[](includes/02-foundry.md)]

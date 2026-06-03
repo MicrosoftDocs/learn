@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-advanced-prompting-production-agents.design-multi-intervention-guardrail-architectures
+title: Design multi-intervention guardrail architectures
+metadata:
+  title: Design Multi-Intervention Guardrail Architectures
+  description: "Design multi-intervention guardrail architectures."
+  ms.date: 05/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/5-design-multi-intervention-guardrail-architectures.md)]

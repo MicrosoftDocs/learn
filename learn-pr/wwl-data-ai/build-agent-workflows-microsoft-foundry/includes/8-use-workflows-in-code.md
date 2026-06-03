@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5be28938-bc45-4b82-b0df-b91c5cfbd46a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 After designing and testing a workflow in the Microsoft Foundry visual designer, you can integrate it into your applications using the Azure AI Projects SDK. This allows you to embed workflow-driven automation into web apps, APIs, backend services, and other software solutions.
 
 Workflows are created in the Foundry portal using the visual designer, which generates the underlying YAML definition. Once a workflow is saved in your project, you can invoke it programmatically by referencing its name. You can also download the workflow's YAML definition from the portal and include it in your codebase.
@@ -68,3 +79,5 @@ Integrating workflows into your code enables several scenarios:
 | Custom interfaces | Build specialized UIs tailored to specific workflow use cases |
 
 By combining the visual design experience of the Foundry portal with the flexibility of code integration, you can create powerful AI-driven solutions that fit seamlessly into your existing software architecture.
+
+::: zone-end

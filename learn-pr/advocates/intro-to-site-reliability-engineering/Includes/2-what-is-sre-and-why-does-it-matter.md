@@ -1,5 +1,5 @@
 The best place to start is often the beginning. Let’s start by just asking the basic question "What is Site Reliability Engineering?"
-There are many answers to this question floating around, including [the one often quoted](https://landing.google.com/sre/book/chapters/introduction.html) by the person who coined the term (Ben Treynor Sloss at Google), but the most practical answer we can offer is:
+There are many answers to this question floating around, including [the one often quoted](https://sre.google/sre-book/introduction/) by the person who coined the term (Ben Treynor Sloss at Google), but the most practical answer we can offer is:
 
 > Site Reliability Engineering is an engineering discipline devoted to helping an organization sustainably achieve the appropriate level of reliability in their systems, services, and products.
 
@@ -15,7 +15,7 @@ Let’s look at a quick demonstration. Here’s a screenshot. What do you think 
 
 This picture is a screenshot of what a PHP app (without other debugging support added) looks like when it fails. You might see something like this for a Java app:
 
-   ![A screenshot of failed java app with HTTPS Status 500 error.](../media/02_java-screenshot.png)
+   ![A screenshot of a failed Java app with an HTTP Status 500 error.](../media/02_java-screenshot.png)
 
 Why are we looking at these examples? Each of them represents an application that potentially took a business huge amounts of time, energy, and resources to create. But if the application isn’t up-if it isn’t operational when a customer needed to access it-if it isn’t reliable-it does no one, especially the business any good. In fact, a lack of reliability can do actual harm (reputational, economic, contractual, morale, and so on) to a business.
 
@@ -29,11 +29,11 @@ You may not have caught it the first time you read the definition, but let's emp
 
 Why does that word matter so much?
 
-An important observation made in the SRE world is that there are few systems and services that have to be 100% reliable. Life and death situations like aviation, medical devices, etc. are a notable exception.
+An important observation made in the SRE world is that most systems and services don’t require literal perfection. Safety-critical domains such as aviation and medical devices can require substantially higher reliability, assurance, and engineering rigor than typical online services, but SRE still asks teams to define the appropriate target for the context.
 
 In fact, there are few situations where it's even desirable. The effort and resources (and hence the cost) needed to achieve greater reliability rises at a steep rate as greater reliability is sought. Put another way, chasing after reliability you don’t need is a waste of time and money. *You want to achieve the appropriate level of reliability in your system, services, and products.*
 
-The level needs to match the business needs and be pragmatic. For example, our customers might connect to you over a network that isn’t 100% reliable (let’s say it's up 90% of the time). Spending the effort and money to make sure your service is 95% reliable is by definition a waste of time and money. *You want to achieve the appropriate level of reliability in your system, services, and products.*
+The level needs to match the business needs and be pragmatic. For example, our customers might connect to you over a network that isn’t 100% reliable (let’s say it's up 90% of the time). Improving the service’s reliability can still improve end-to-end reliability, but the user experience is bounded by the less reliable components in the chain, so the returns diminish rapidly. *You want to achieve the appropriate level of reliability in your system, services, and products.*
 
 SRE takes this pragmatism one more step. If we can now think about there being a desirable level of reliability, is there something we should do if we're successful at meeting or surpassing that level? Similarly, what if we don’t achieve it? We answer these questions later in the module.
 

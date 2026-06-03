@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7d8652e1-5034-492d-96c0-daefe9e5641f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 **Concurrent orchestration** lets multiple agents work on the same task at the same time. Each agent handles the task independently, and then their outputs are gathered and combined. This method works especially well when you want diverse approaches or solutions, like during brainstorming, group decision-making, or voting.
 
 ![Diagram of concurrent orchestration flow.](../media/multi-agent-concurrent.png)
@@ -56,3 +67,5 @@ Implement the concurrent orchestration pattern with the Microsoft Agent Framewor
    Process the aggregated messages from all agents. Each message includes the author name and content, allowing you to identify which agent provided each response.
 
 Concurrent orchestration is a powerful pattern for using multiple AI agents simultaneously, enabling faster and more diverse problem-solving. By running agents in parallel, you can explore different approaches at once, improve efficiency, and gain richer insights. However, it's important to choose this pattern when tasks can truly run independently and to be mindful of resource constraints and coordination challenges. When implemented thoughtfully with the Microsoft Agent Framework SDK, concurrent orchestration can greatly enhance your AI workflows and decision-making processes.
+
+::: zone-end

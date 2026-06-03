@@ -2,11 +2,12 @@
 uid: learn.wwl.build-agent-workflows-microsoft-foundry.use-workflows-in-code
 title: Use workflows in code
 metadata:
+  zone_pivot_groups: video-or-text
   title: Use Workflows in Code
   description: Learn how to invoke and manage workflows programmatically in Microsoft Foundry.
   author: buzahid
   ms.author: buzahid
-  ms.date: 2/5/2026
+  ms.date: 5/29/2026
   ms.topic: unit
 durationInMinutes: 5
 content: |

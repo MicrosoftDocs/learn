@@ -2,17 +2,16 @@
 uid: learn.intro-to-site-reliability-engineering.2-what-is-sre-and-why-does-it-matter
 title: What is SRE and why does it matter?
 metadata:
-  title: What is SRE and why does it matter?
+  title: What Is SRE and Why Does It Matter?
   description: What is SRE and why does it matter?
-  ms.date: 11/14/2024
-  author: dnblankedelman
-  ms.author: dnb
+  ms.date: 05/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom: team=cloud_advocates
-  ms.contributors: dnb-01282021
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-what-is-sre-and-why-does-it-matter.md)]
+  [!include[](Includes/2-what-is-sre-and-why-does-it-matter.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -36,7 +35,7 @@ quiz:
     choices:
     - content: "100% is the goal."
       isCorrect: false
-      explanation: "For most contexts, it isn't possible to hit 100% reliable. Even if it was, it would be cost and resource prohibitive (an as waste of both)."
+      explanation: "For most contexts, it isn't possible to hit 100% reliable. Even if it was, it would be cost and resource prohibitive (and a waste of both)."
     - content: "It should be as reliable as possible."
       isCorrect: false
       explanation: "It's important to find the appropriate level of reliability for a goal since efforts and resources beyond that are a waste. Plus *as possible* is too vague to be useful."

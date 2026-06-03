@@ -3,37 +3,57 @@ uid: learn.wwl.administer-fabric.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  ai_generated_module_assessment: true
+  ai_generated_module_assessment: false
   description: "Knowledge check"
-  ms.date: 01/27/2026
-  author: wwlpublish
+  ms.date: 05/27/2026
+  author: theresai
   ms.author: theresai
   ms.topic: unit
-  ms.custom:
-  - build-2023
   module_assessment: true
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which of the following statements best describes the concept of capacity in Fabric?"
+  - content: "A Fabric capacity is approaching its CU limit during business hours and users report slow report refreshes. What should the admin do first?"
     choices:
-    - content: "Capacity refers to a dedicated space for organizations to create, store, and manage Fabric items."
+    - content: "Pause the capacity to reset the overload and relieve throttling."
       isCorrect: false
-      explanation: "Incorrect. The concept of capacity in Fabric isn't related to dedicated spaces for Fabric items."
-    - content: "Capacity defines the ability of a resource to perform an activity or to produce output."
+      explanation: "Incorrect. Pausing a capacity makes all content on it unavailable to users. This isn't the right response for a production capacity under high load."
+    - content: "Scale up the capacity to a larger SKU to provide more compute."
       isCorrect: true
-      explanation: "Correct. Capacity refers to the resources available at a given time to perform activities and produce output."
-    - content: "Capacity is a collection of items that are logically grouped together."
+      explanation: "Correct. When CU consumption approaches the capacity limit and users are affected, scaling up increases the available compute. The admin can scale back down after the high-demand period ends."
+    - content: "Move the affected workspaces to a new tenant to isolate the workload."
       isCorrect: false
-      explanation: "Incorrect. Capacity isn't related to the grouping of items."
-  - content: "Which of the following statements is true about the difference between promotion and certification in Fabric?"
+      explanation: "Incorrect. Moving workspaces to a new tenant isn't a valid response to capacity utilization issues. Scaling up or scaling out to a second capacity are the appropriate options."
+  - content: "A user with a Fabric Free license needs to view Power BI reports in a workspace on an F64 capacity. What is the minimum configuration required?"
     choices:
-    - content: "Promotion and certification both allow any workspace member to endorse content."
+    - content: "The user needs a Power BI Pro license to view Power BI content."
       isCorrect: false
-      explanation: "Incorrect. Both promotion and certification involve endorsing content, but they differ in who can perform the endorsement."
-    - content: "Promotion requires a higher level of permissions than certification."
-      isCorrect: false
-      explanation: "Incorrect. Promotion and certification don't require different levels of permissions."
-    - content: "Certification must be enabled in the tenant by the admin, while promotion can be done by a workspace member."
+      explanation: "Incorrect. On F64 or larger capacities, users with a Fabric Free license can view Power BI content if they have at least a viewer role on the workspace."
+    - content: "The user needs a viewer role on the workspace."
       isCorrect: true
-      explanation: "Correct. Certification must first be enabled in the tenant by the admin, and only designated certifiers can perform the endorsement. In contrast, promotion can be done by any workspace member who has been granted the necessary permissions."
+      explanation: "Correct. On F64 or larger capacities, a Fabric Free license combined with a viewer role on the workspace is sufficient to view Power BI reports."
+    - content: "The user needs a Power BI Premium Per User license to access Power BI reports."
+      isCorrect: false
+      explanation: "Incorrect. PPU is a per-user license, not required for viewing Power BI content on F64 or larger capacities. A Fabric Free license with a viewer role is sufficient."
+  - content: "A Fabric admin needs to restrict one group of users from exporting data to Excel while allowing everyone else to continue using the feature. What is the most efficient approach?"
+    choices:
+    - content: "Remove the Export to Excel permission from each user's workspace role individually."
+      isCorrect: false
+      explanation: "Incorrect. Workspace roles don't control the Export to Excel feature. Managing permissions user by user is also inefficient."
+    - content: "Disable the Export to Excel tenant setting for the entire organization."
+      isCorrect: false
+      explanation: "Incorrect. Disabling the setting for the entire organization would block all users from exporting to Excel, not just the targeted group."
+    - content: "Add the restricted users to a security group and configure the Export to Excel tenant setting to be enabled for all users except that group."
+      isCorrect: true
+      explanation: "Correct. Tenant settings support enabling a feature for everyone except specific security groups. This approach restricts only the targeted users while leaving the feature available for the rest of the organization."
+  - content: "A department lead needs to manage workspaces within a single domain, enforce domain-level policies, and coordinate with workspace admins. The lead doesn't need access to tenant-wide settings or other domains. What role should the Fabric admin assign?"
+    choices:
+    - content: "Fabric admin"
+      isCorrect: false
+      explanation: "Incorrect. The Fabric admin role grants full control over the entire tenant, including all capacities, domains, and tenant settings. This is far more access than needed."
+    - content: "Domain admin"
+      isCorrect: true
+      explanation: "Correct. A domain admin can manage workspaces within their domain, enforce domain-specific policies, and work with workspace admins, all without access to tenant-wide settings or other domains."
+    - content: "Workspace admin for each workspace in the domain"
+      isCorrect: false
+      explanation: "Incorrect. Workspace admins manage a single workspace's access and items. This role doesn't provide domain-level authority to manage policies or assign workspaces across the domain."

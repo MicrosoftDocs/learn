@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-enterprise-tool-ecosystems-mcp-azure.build-mcp-servers-error-handle-fallback
+title: Build MCP servers with error handling and fallback
+metadata:
+  title: Build MCP Servers with Error Handling and Fallback
+  description: "Build MCP servers with error handling and fallback."
+  ms.date: 05/27/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-build-mcp-servers-error-handle-fallback.md)]

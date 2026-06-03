@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-active-directory.join-linux-vm-microsoft-entra-domain
+title: Join a Linux VM to a Microsoft Entra domain
+metadata:
+  title: Join a Linux VM to a Microsoft Entra Domain
+  description: Learn to join a Linux virtual machine to a Microsoft Entra Domain.
+  ms.date: 05/11/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-join-linux-vm-microsoft-entra-domain.md)]

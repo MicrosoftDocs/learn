@@ -2,11 +2,12 @@
 uid: learn.wwl.orchestrate-sk-multi-agent-solution.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: Learn how to design multi-agent solutions with the Microsoft Agent Framework.
   author: buzahid
   ms.author: buzahid
-  ms.date: 02/24/2026
+  ms.date: 5/29/2026
   ms.topic: unit
 durationInMinutes: 2
 content: |

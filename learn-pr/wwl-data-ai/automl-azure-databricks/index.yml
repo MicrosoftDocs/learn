@@ -18,7 +18,7 @@ abstract: |
   - Use the AutoML API in Azure Databricks
 prerequisites: |
   Before starting this module, you should be familiar with machine learning in Azure Databricks.
-iconUrl: /training/achievements/automl-azure-databricks.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
 - intermediate
 roles:
