@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-multi-agent-performance-cost-azure.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Module assessment."
+  ms.date: 06/08/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Adventure Works routes a shipping status lookup request to GPT-4o-mini (Tier 1). The model returns a response, but the quality score falls below the 0.80 threshold. The quality floor protection triggers. What happens next?"
+    choices:
+    - content: "The request fails with an error and the customer sees an apology message, since the smaller model couldn't handle the request."
+      isCorrect: false
+      explanation: "Quality floor protection is designed to prevent failures from reaching customers, not to produce them. When the quality threshold isn't met, the system retries with a more capable model—it doesn't fail the request."
+    - content: "The request is retried with the next capability tier (GPT-4o), and if the quality passes the threshold, that response is returned to the customer."
+      isCorrect: true
+      explanation: "The quality floor provides a safety net: if the cost-optimized smaller model underperforms on a specific request, the system automatically escalates to the next tier. This preserves the cost savings when the small model succeeds while protecting quality when it doesn't."
+    - content: "The request is logged as a failure and added to the routing analysis report for manual review next month."
+      isCorrect: false
+      explanation: "Logging the failure without immediate retry means the customer receives a low-quality response now. Quality floor protection should trigger an immediate retry with a more capable model for the current request, and additionally log the case for routing analysis."
+  - content: "Adventure Works implements semantic caching for the product search agent. The similarity threshold is set at 0.60 (cosine similarity). A customer asks 'Do you have running shoes in size 10?' and another customer asks 'Are there hiking boots available in size 12?' Both receive the same cached response. What does this indicate?"
+    choices:
+    - content: "The threshold is too high—it should be reduced to below 0.50 to prevent false cache hits."
+      isCorrect: false
+      explanation: "The direction of adjustment is wrong. A threshold that's too LOW (0.60 in this case) allows semantically dissimilar queries to be considered equivalent. To fix false hits, you raise the threshold, requiring higher similarity before a cached response is returned."
+    - content: "The threshold is too low—0.60 cosine similarity allows queries with different intents to be treated as equivalent, causing false cache hits. Raise the threshold to require higher semantic similarity before returning cached results."
+      isCorrect: true
+      explanation: "Running shoes in size 10 and hiking boots in size 12 are semantically related (footwear queries) but have different intent (different product types and sizes). A threshold that treats them as equivalent is too permissive. Raising the threshold to 0.85-0.90 requires more specific semantic overlap before returning cached content."
+    - content: "This is expected cache behavior—the two queries are semantically similar enough as footwear requests to share the same cached response."
+      isCorrect: false
+      explanation: "Returning a response about size-10 running shoes to a customer asking about size-12 hiking boots is a cache quality failure. These queries require different product information despite being in the same general category. Business-impact mismatches like this require threshold recalibration."
+  - content: "Adventure Works defines P95 end-to-end latency < 3 seconds for Gold customers and < 12 seconds for Bulk API customers. The same agent processes requests from both. A cost optimization measure reduces Bulk API latency to 4 seconds but inadvertently increases Gold customer latency to 4.5 seconds. What should happen?"
+    choices:
+    - content: "Accept the tradeoff—Gold customers now get 4.5 seconds, which is still better than the Bulk API target."
+      isCorrect: false
+      explanation: "Gold customers have a service agreement for P95 < 3 seconds. Exceeding that SLA violates the service commitment regardless of how it compares to other tiers. SLAs define obligations, not comparisons between tiers."
+    - content: "Roll back the cost optimization measure, since it violated the Gold customer SLA. Investigate alternative optimizations that improve Bulk API cost without affecting Gold customer performance."
+      isCorrect: true
+      explanation: "SLAs define the non-negotiable floor for each customer tier. An optimization that breaches a higher-tier SLA to benefit a lower tier is not a valid tradeoff. The cost optimization must be redesigned with segment isolation so Bulk API optimizations cannot affect Gold customer performance."
+    - content: "Notify Gold customers of the temporary SLA degradation and proceed with the optimization, since the overall system cost savings benefit all customers long-term."
+      isCorrect: false
+      explanation: "Notifying customers about SLA violations doesn't remediate the violation itself. Gold customers pay a premium specifically for the 3-second SLA. 'Long-term cost savings' doesn't justify denying the service level they're entitled to for the duration of the violation."

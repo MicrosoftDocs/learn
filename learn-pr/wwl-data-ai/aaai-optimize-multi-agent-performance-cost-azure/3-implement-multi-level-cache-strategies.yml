@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-multi-agent-performance-cost-azure.implement-multi-level-cache-strategies
+title: Implement multi-level caching strategies
+metadata:
+  title: Implement Multi-Level Caching Strategies
+  description: "Implement multi-level caching strategies."
+  ms.date: 06/08/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-implement-multi-level-cache-strategies.md)]
