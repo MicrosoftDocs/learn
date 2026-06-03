@@ -1,3 +1,5 @@
+Azure Monitor dynamic thresholds learn from historical telemetry to detect when an agent's behavior deviates from its established baseline, enabling proactive alerting before customers are affected.
+
 Multi-agent systems exhibit anomalies that don't occur in single-agent scenarios. A routing agent may start sending traffic to different downstream agents than its historical pattern, indicating prompt injection or model drift. A tool-calling agent may suddenly take 10× longer to complete, suggesting a stuck external API call. An agent's token usage may triple overnight without code changes, pointing to a prompt injection attack expanding the context window. Detecting these behavioral anomalies requires establishing baselines for normal behavior and alerting when current behavior deviates significantly.
 
 | Anomaly Type | Normal Behavior | Anomalous Behavior | Likely Cause |
@@ -13,7 +15,7 @@ Before detecting anomalies, you establish normal behavior baselines for each met
 
 For each agent and metric, calculate the mean and standard deviation over the baseline window. Define alert thresholds at 2σ (warning threshold—unusual but not necessarily actionable) and 3σ (critical threshold—highly unusual, requires investigation). A routing decision distribution showing 75% ± 8% to the product search agent over two weeks establishes the baseline—a sudden shift to 50% triggers the 3σ alert.
 
-Update baselines weekly to adapt to gradual legitimate changes in system behavior. Adventure Works' traffic patterns shift seasonally—gift chocolate purchases spike in December, subscription orders dominate in January. Static baselines would generate false alarms during these transitions; rolling baselines adapt automatically.
+Update baselines weekly to adapt to gradual legitimate changes in system behavior. Adventure Works' traffic patterns shift seasonally—gift chocolate purchases spike in December, subscription orders dominate in January. Static baselines would generate false alarms during these transitions. Rolling baselines adapt automatically.
 
 ## Apply Azure Monitor dynamic thresholds
 
@@ -119,7 +121,7 @@ Azure Monitor alert suppression rules implement this pattern. Define alert proce
 
 For complex incident correlation, implement custom logic using Azure Monitor action groups and Azure Functions. The Azure Function receives all alert notifications, applies correlation rules, groups related alerts, and sends a single enriched notification to the on-call engineer with context linking all related anomalies.
 
-## Unit summary
+## Key takeaways
 
 - **Behavioral baselines** use 14-day rolling averages with standard deviation to define expected ranges, with alerts at 2σ (warning) and 3σ (critical) thresholds.
 - **Dynamic thresholds** in Azure Monitor learn from historical patterns and adapt automatically to seasonal traffic changes, reducing false alarms.

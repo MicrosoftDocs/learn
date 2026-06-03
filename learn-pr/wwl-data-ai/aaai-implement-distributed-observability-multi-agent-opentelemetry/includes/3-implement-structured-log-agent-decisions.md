@@ -1,3 +1,5 @@
+OpenTelemetry structured logging treats each log entry as a queryable data record with defined fields, enabling you to filter, aggregate, and correlate agent decisions across Azure Monitor at production scale.
+
 Unstructured logs fail at scale. When Adventure Works' 14 agents each log free-text messages, the operations team collects millions of log entries they can't systematically query. A log message saying "agent CRASHED" indicates something failed, but without structured fields identifying the agent, customer session, operation type, and error classification, the team can't answer critical questions: which agent fails most frequently, which customer tier experiences the most errors, or how error rates correlate with specific model versions.
 
 Structured logging solves this by treating log entries as data records with defined schemas. Instead of parsing free text, you query structured fields—filtering by agent ID, grouping by error type, and joining with trace data to reconstruct complete interaction timelines.
@@ -26,6 +28,7 @@ For a routing decision, log the classified customer intent (the structured input
 ```python
 import logging
 import json
+from datetime import datetime, timezone
 from opentelemetry import trace
 
 # Configure structured logging with JSON formatter
@@ -38,7 +41,7 @@ def log_llm_decision(operation_type: str, input_data: dict, output_data: dict, m
     span_context = current_span.get_span_context()
     
     log_entry = {
-        "timestamp": "2026-04-07T14:32:15Z",
+        "timestamp": datetime.now(timezone.utc).isoformat(),
         "trace_id": format(span_context.trace_id, "032x"),
         "span_id": format(span_context.span_id, "016x"),
         "agent_id": "orchestrator-agent",
@@ -79,6 +82,7 @@ Every log entry must include the current `trace_id` and `span_id` from the OpenT
 When debugging a failed customer interaction, you start with the trace ID from the error report. The distributed trace shows the sequence of agent calls and identifies which span reported the error. The correlated logs reveal the detailed decision history within that span—which tool calls failed, what the LLM output was, and how the agent attempted recovery.
 
 ```python
+from datetime import datetime, timezone
 from opentelemetry import trace
 from opentelemetry.trace import Status, StatusCode
 import logging
@@ -110,7 +114,7 @@ class StructuredLogger:
         ).hexdigest()[:16] if session_id else None
         
         log_entry = {
-            "timestamp": "2026-04-07T14:32:15Z",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
             "trace_id": format(span_context.trace_id, "032x"),
             "span_id": format(span_context.span_id, "016x"),
             "agent_id": self.agent_id,
@@ -171,19 +175,9 @@ Log only what you need for debugging: transaction amounts (numerical values, not
 
 For Adventure Works, the logging policy requires: all customer identifiers hashed with SHA-256, no PII fields in any log entry, and automatic log retention limited to 90 days. The structured logging helper enforces these rules automatically, reducing the risk of accidental PII logging by individual developers.
 
-## Unit summary
+## Key takeaways
 
 - **Structured log schemas** define consistent fields across all agents—trace correlation, agent identity, session context, operation details, performance metrics, and outcome—enabling systematic querying.
 - **LLM decision logging** captures structured inputs and outputs at each decision point rather than full conversation history, balancing diagnostic value with storage costs.
 - **Trace correlation** embeds `trace_id` and `span_id` in every log entry, enabling bidirectional navigation between distributed traces and detailed agent decision logs.
 - **Privacy-aware logging** hashes customer identifiers with SHA-256 and enforces policies against logging PII, protecting customer data while preserving diagnostic capability.
-
-## Check your understanding
-
-**1. An agent log entry contains a trace_id, span_id, agent name, and decision outcome. Why is trace_id essential for multi-agent debugging?**
-
-- A. The trace_id identifies which model deployment processed the request
-- B. The trace_id links this log entry to all other log entries and spans across every agent that participated in the same end-to-end request, enabling cross-agent correlation
-- C. The trace_id is required by Azure Monitor for log ingestion
-
-***Correct answer: B.*** The trace_id propagated through W3C Trace Context headers connects log entries across all agents in a single request's lifecycle. Without it, logs from 14 independent agents are impossible to correlate during incident investigation.

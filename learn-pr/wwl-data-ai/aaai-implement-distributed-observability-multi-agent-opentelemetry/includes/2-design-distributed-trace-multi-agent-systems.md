@@ -1,3 +1,5 @@
+OpenTelemetry provides distributed tracing primitives that propagate a shared trace ID across every agent in a multi-agent system, giving you a single correlated view of each customer interaction in Azure Monitor.
+
 Single-service tracing creates one span per operation with parent-child relationships contained within the service boundary. A multi-agent system changes the challenge: a single customer request creates a trace that spans many services, each representing a different agent. Without correlation, you have 14 separate logs with no way to link them. Distributed tracing solves this by propagating trace IDs across all agents, creating a unified view of the entire customer journey.
 
 | Tracing Type | Scope | Challenge | Solution |
@@ -13,9 +15,9 @@ The span context gets propagated across agent boundaries using the W3C Trace Con
 
 Without explicit propagation, each agent creates a new trace ID and you lose the correlation. With proper propagation, all 14 agents' spans share the same trace ID, allowing you to reconstruct the complete interaction flow.
 
-## Propagate trace context in Azure AI Foundry agents
+## Propagate trace context in Microsoft Foundry agents
 
-When one Azure AI Foundry agent calls another using the SDK, the trace context doesn't propagate automatically—you must inject it explicitly. The OpenTelemetry API provides context extraction and injection methods that work across HTTP boundaries.
+When one Microsoft Foundry agent calls another using the SDK, the trace context doesn't propagate automatically—you must inject it explicitly. The OpenTelemetry API provides context extraction and injection methods that work across HTTP boundaries.
 
 At the calling agent, you extract the current span context from the active span and inject it into the outgoing request headers. The receiving agent's entry point extracts the trace context from incoming headers and sets it as the active context before processing begins. This ensures that all operations within the receiving agent create child spans under the same trace.
 
@@ -103,33 +105,46 @@ Full-fidelity tracing for every request becomes expensive at Adventure Works' sc
 
 ```python
 import os
-from opentelemetry.sdk.trace.sampling import ParentBasedTraceIdRatioBased
+from opentelemetry.sdk.trace import SpanProcessor, ReadableSpan
+from opentelemetry.trace import StatusCode
 
 # Head-based sampling: 5% of all traces
 os.environ["OTEL_TRACES_SAMPLER"] = "traceidratio"
 os.environ["OTEL_TRACES_SAMPLER_ARG"] = "0.05"
 
-# For tail-based sampling, implement custom sampler
-from opentelemetry.sdk.trace.sampling import Sampler, Decision
+# For tail-based behavior, use a SpanProcessor — NOT a Sampler.
+# Sampler.should_sample() fires at span START before execution,
+# so error status and duration attributes are not yet available.
+# SpanProcessor.on_end() fires AFTER the span completes, making
+# all final attributes accessible.
+class ErrorAndLatencyProcessor(SpanProcessor):
+    """
+    Post-execution span processor for tail-based alerting and filtering.
+    Evaluates spans after completion when error status and duration are set.
+    For full tail-based drop/keep sampling at scale, use the
+    OpenTelemetry Collector tail-sampling processor.
+    """
 
-class ErrorAndLatencySampler(Sampler):
-    def should_sample(self, context, trace_id, name, kind, attributes, links):
-        # Always sample errors and high-latency spans
-        if attributes.get("error", False) or attributes.get("duration_ms", 0) > 5000:
-            return Decision.RECORD_AND_SAMPLE
-        
-        # Sample 1% of successful spans
-        if int(trace_id.hex(), 16) % 100 == 0:
-            return Decision.RECORD_AND_SAMPLE
-        
-        return Decision.DROP
+    def on_start(self, span, parent_context=None):
+        pass
+
+    def on_end(self, span: ReadableSpan):
+        duration_ns = (span.end_time or 0) - (span.start_time or 0)
+        duration_ms = duration_ns / 1_000_000
+
+        is_error = span.status.status_code == StatusCode.ERROR
+        is_high_latency = duration_ms > 5000
+
+        if is_error or is_high_latency:
+            # Forward to alerting system, custom exporter, or incident pipeline
+            pass  # Always retain these spans
+
+    def shutdown(self):
+        pass
+
+    def force_flush(self, timeout_millis: int = 30000):
+        return True
 ```
-
-<!-- TODO NOTE for drift detector: INCORRECT API USAGE — The ErrorAndLatencySampler class above has three issues with the OpenTelemetry Python SDK:
-1. should_sample() is called at span START, before execution. The attributes 'error' and 'duration_ms' are NOT available at this point — they are set during or after span execution. The attributes.get() calls will always return the default values (False and 0), making the conditional dead code.
-2. The return type should be SamplingResult (from opentelemetry.sdk.trace.sampling), not bare Decision enum values. The correct return is: SamplingResult(decision=Decision.RECORD_AND_SAMPLE, attributes={}, trace_state=trace_state).
-3. The method signature is missing the correct parameter types: parent_context should be Optional[Context], trace_id should be int, kind should be SpanKind.
-For tail-based sampling (which evaluates AFTER span completion), the correct approach is a custom SpanProcessor with an on_end() method that checks final attributes. Consider replacing this with either: (a) a SpanProcessor-based tail-sampling implementation, or (b) explicitly labeling this as pseudocode illustrating the concept rather than a production implementation. Verify against the current opentelemetry-sdk package version. -->
 
 Sampling configuration balances cost control with diagnostic completeness. For production multi-agent systems, tail-based sampling provides the best trade-off: complete visibility into failures while managing storage costs for successful interactions.
 
@@ -141,10 +156,10 @@ Azure Monitor and Application Insights are the underlying implementation: OpenTe
 
 **Alerting** is a core element of the tracing capability. Beyond passive trace visualization, your tracing implementation should configure Azure Monitor alert rules that fire when key trace metrics breach thresholds: P95 span duration exceeding SLO targets, error-rate SLIs crossing alert thresholds, or anomalous agent-to-agent call patterns detected by the anomaly detection policies in Unit 5. Alerting converts passive observability into active incident detection \u2014 without it, you only discover problems when customers report them.
 
-## Unit summary
+## Key takeaways
 
 - **W3C Trace Context** propagates trace IDs across agent boundaries via `traceparent` headers, linking all agents' spans into a single unified trace.
-- **Explicit context injection** is required in Azure AI Foundry agent-to-agent calls because trace context doesn't propagate automatically.
+- **Explicit context injection** — Microsoft Foundry agent-to-agent calls don't propagate trace context automatically, so you must inject it explicitly.
 - **Azure Monitor** serves as the centralized OpenTelemetry backend, rendering full traces as waterfall diagrams in Application Insights.
 - **Semantic boundary instrumentation** focuses spans on agent entry/exit points, LLM calls, tool invocations, and agent-to-agent calls rather than internal operations.
 - **Sampling strategies** balance cost and diagnostic completeness—tail-based sampling captures 100% of errors while reducing storage for successful traces.

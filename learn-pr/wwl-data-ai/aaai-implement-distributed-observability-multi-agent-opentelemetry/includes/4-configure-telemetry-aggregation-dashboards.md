@@ -1,3 +1,5 @@
+Azure Monitor workbooks aggregate OpenTelemetry telemetry from all agents into interactive dashboards, giving your operations team a unified view of multi-agent system health, cost trends, and error patterns.
+
 Raw telemetry data from 14 agents requires aggregation to reveal system-level patterns. Individual trace viewing helps debug specific failures, but understanding overall system health demands aggregating metrics across dimensions: which agent, which model, which operation type, which customer tier, and which error classification. These aggregations power operational dashboards that answer questions about system performance, cost trends, and quality patterns.
 
 | Aggregation Dimension | Example Query | Operational Value |
@@ -16,7 +18,7 @@ Raw telemetry data from 14 agents requires aggregation to reveal system-level pa
 
 **LLM token usage** directly drives operational costs. Track input tokens and output tokens separately by agent and model. Daily and weekly trends reveal cost trajectory and identify agents that consume unexpectedly high token counts—potential indicators of prompt inefficiency or runaway context windows.
 
-**Escalation rate** measures how often the automated multi-agent system hands off to human support. Low escalation rates indicate strong agent capability; sudden increases signal model degradation or new customer needs the agents can't handle. Track escalation rate by customer tier and interaction type to identify specific scenarios requiring agent capability improvements.
+**Escalation rate** measures how often the automated multi-agent system hands off to human support. Low escalation rates indicate strong agent capability. Sudden increases signal model degradation or new customer needs the agents can't handle. Track escalation rate by customer tier and interaction type to identify specific scenarios requiring agent capability improvements.
 
 **Error rate by type** categorizes failures into actionable groups: 4xx errors indicate bad input or policy violations, 5xx errors indicate service failures, model errors include content policy blocks and context length exceeded errors, and tool errors capture external API failures. Each error type requires different remediation approaches.
 
@@ -52,11 +54,11 @@ This KQL query aggregates latency percentiles from the `dependencies` table (whe
 
 ## Configure operational alerts
 
-Alert rules define thresholds that trigger on-call notifications when system health degrades. Effective alerting balances sensitivity (catching real problems quickly) with specificity (avoiding false alarms that erode trust).
+Alert rules define thresholds that trigger on-call notifications when system health degrades. Effective alerting balances sensitivity (catching real problems) with specificity (avoiding false alarms that erode trust).
 
 **P95 latency degradation alert**: Trigger when P95 end-to-end latency increases more than 50% from the 1-hour rolling baseline, sustained for 10 minutes. This detects gradual performance degradation while filtering transient spikes. Configure separate thresholds for different customer tiers—premium customers get a 30% threshold with 5-minute evaluation.
 
-**Per-agent error rate alert**: Trigger when any single agent's error rate exceeds 5% in a 5-minute window. This catches agent-specific failures quickly. Suppressions prevent alert flooding: if the orchestrator agent's error rate is high because a downstream agent is failing, suppress the orchestrator alert—the downstream failure is the root cause.
+**Per-agent error rate alert**: Trigger when any single agent's error rate exceeds 5% in a 5-minute window. This catches agent-specific failures. Suppressions prevent alert flooding: if the orchestrator agent's error rate is high because a downstream agent is failing, suppress the orchestrator alert—the downstream failure is the root cause.
 
 **Escalation rate spike alert**: Trigger when escalation rate triples from the daily average over a 1-hour window. Sudden escalation increases typically indicate model quality regression or a new customer need the agents can't handle. This alert enables rapid response to quality degradation.
 
@@ -88,9 +90,7 @@ The **analytical view** refreshes daily via scheduled batch jobs, displays trend
 
 The real-time view uses simple aggregations for fast query performance. The analytical view performs complex joins and calculations—correlating token usage with customer satisfaction scores, analyzing error patterns by time of day and day of week, and calculating cost per successfully resolved interaction. These expensive queries run as scheduled jobs during off-peak hours, storing results in pre-aggregated tables for fast dashboard loading.
 
-For Adventure Works, the operations team monitors the real-time view continuously during business hours. The platform engineering team reviews the analytical view weekly to identify trends: which agents need capability improvements, which customer tiers generate the most support costs, and how model selection impacts both quality and cost metrics.
-
-## Unit summary
+## Key takeaways
 
 - **Key metrics** include end-to-end latency percentiles, per-agent latency decomposition, LLM token usage, escalation rates, and error rates by type.
 - **Azure Monitor workbooks** provide specialized tabs—Overview, Agent Performance, Cost Analytics, and Incident Response—serving different operational needs.

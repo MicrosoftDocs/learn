@@ -24,14 +24,14 @@ quiz:
     - content: "Add the customer session ID to each agent's log entries and query by session ID to retrieve related logs."
       isCorrect: false
       explanation: "Session IDs improve log query capability but don't establish trace spans with timing relationships. You can find related logs but can't see the causal sequence, duration, or parallel execution structure. Distributed tracing provides both correlation AND structural timing information."
-  - content: "Adventure Works notices that over the past three weeks, the recommendations agent's average token usage has increased 40% without any code changes. Azure Monitor dynamic thresholds haven't triggered because the change happened gradually. Which monitoring approach would have detected this earlier?"
+  - content: "Adventure Works notices that over the past three weeks, the recommendations agent's average token usage has increased 40% without any code changes. Azure Monitor dynamic thresholds adapted to the gradual increase and didn't alert. Which complementary monitoring approach would have detected this drift earlier?"
     choices:
     - content: "Increase the static alert threshold by 50% to account for natural token usage growth over time."
       isCorrect: false
       explanation: "Raising static thresholds accommodates the growth without detecting it as anomalous. The goal is to identify gradual drift, not to update thresholds to match it. A different detection approach is needed."
-    - content: "Daily evaluation sampling on production interactions with token usage as a tracked dimension, combined with a week-over-week trend alert that fires when gradual change exceeds a defined percentage."
+    - content: "A rolling baseline comparison that tracks week-over-week change in average token usage per agent, alerting when the cumulative percentage change exceeds a defined threshold across the baseline window."
       isCorrect: true
-      explanation: "Trend-based alerting catches gradual drift that point-in-time thresholds miss. Comparing week-over-week baselines rather than current-vs-static-threshold surfaces cumulative changes before they become severe. Combined with production sampling for quality evaluation, this approach detects both performance and behavioral drift."
+      explanation: "Rolling baseline comparison catches cumulative drift that point-in-time thresholds miss. The TokenUsageAnomalyDetector pattern from Unit 5 calculates a 14-day mean and standard deviation per agent. Comparing week-over-week baselines rather than current-vs-static-threshold surfaces gradual increases before they become severe — a 40% increase over three weeks would register as a significant z-score shift against the rolling mean."
     - content: "Implement tail-based sampling that captures all traces where token usage exceeds 5,000 tokens per request."
       isCorrect: false
       explanation: "Tail-based sampling captures high-token individual requests but doesn't detect the gradual upward trend across average usage. If the per-request average increases from 1,000 to 1,400 tokens, no individual trace exceeds the 5,000 threshold, so the trend remains invisible."
