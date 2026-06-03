@@ -73,4 +73,4 @@ The monitoring hub gives you a real-time view of recent activity, but for deeper
 
 Unlike the monitoring hub, which provides a visual dashboard for recent activity, workspace monitoring stores raw log data that you can query with KQL or SQL. This enables advanced analysis like identifying long-term performance trends across items, correlating failures across pipelines and notebooks, and building custom Real-Time dashboards for your team's specific monitoring needs.
 
-You enable workspace monitoring in the workspace settings under the **Monitoring** tab. Workspace monitoring retains data for 30 days and is accessible to workspace users with at least a Contributor role. For more information, see [What is workspace monitoring?](/fabric/fundamentals/workspace-monitoring-overview).
+You enable workspace monitoring in the workspace settings under the **Monitoring** tab. Workspace monitoring retains data for 30 days and is accessible to workspace users with at least a Contributor role.

@@ -32,7 +32,7 @@ When the condition is met, Activator can take these actions:
 - **Teams** — Posts a message to an individual, group chat, or channel. This is often more useful than email for on-call teams who need immediate visibility.
 - **Run a Fabric activity** — Triggers a pipeline, notebook, dataflow, spark job, or function.
 
-The ability to run a Fabric activity is the key differentiator from Schedule failures notifications. Rather than waiting for someone to read an email and respond, you can automatically trigger a follow-up action — for example, running a cleanup pipeline to remove partial data after a failed load, or triggering a semantic model refresh when an upstream pipeline completes successfully.
+The ability to run a Fabric activity is the key differentiator from Schedule failures notifications. Rather than waiting for someone to read an email and respond, you can automatically trigger a follow-up action — for example, running a cleanup notebook to remove partial data after a failed load, or triggering a semantic model refresh when an upstream pipeline completes successfully.
 
 However, triggering a pipeline after a failure isn't always the right response. If a job failed because of a code error or a source schema change, running a pipeline again just fails again. Activator works best for **automated coordination**: chaining jobs together, running cleanup actions, or getting the right notification to the right channel — not as a substitute for investigating and fixing the root cause.
 
