@@ -5,8 +5,8 @@ metadata:
   title: "Improve your reliability with modern operations practices: Deployment"
   description: Learn deployment practices that help you sustainably achieve the right level of reliability for your systems and services.
   ms.date: 04/17/2026
-  author: dnblankedelman
-  ms.author: dnb
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: orthomas-04172026

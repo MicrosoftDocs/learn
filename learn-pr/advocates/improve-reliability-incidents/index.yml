@@ -5,8 +5,8 @@ metadata:
   title: "Improve your reliability with modern operations practices: Incident response"
   description: Learn the incident response fundamentals necessary to help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
   ms.date: 04/16/2026
-  author: dnblankedelman
-  ms.author: dnb
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.service: azure
