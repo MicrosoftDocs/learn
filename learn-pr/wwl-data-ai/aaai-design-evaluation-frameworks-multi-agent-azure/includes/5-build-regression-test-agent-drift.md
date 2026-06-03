@@ -1,4 +1,4 @@
-Unlike traditional software where quality only changes with code modifications, AI agents drift without any code changes. A new model deployment, a context window adjustment, or gradual training data drift silently degrades quality. Regression testing catches these drifts before they reach production—but only if you run evaluations systematically and compare new agent versions against established baselines.
+The Microsoft Foundry Evaluation SDK integrates directly into CI/CD pipelines, letting you enforce automated quality gates that compare each new agent version against a gold baseline before deployment. Unlike traditional software where quality only changes with code modifications, AI agents drift without any code changes. A new model deployment, a context window adjustment, or gradual training data drift silently degrades quality. Regression testing catches these drifts before they reach production—but only if you run evaluations systematically and compare new agent versions against established baselines.
 
 | Change Type | Code Modified? | Quality Impact | Detection Method |
 |-------------|----------------|----------------|------------------|
@@ -13,7 +13,7 @@ A complete regression suite combines three test categories, each serving a disti
 
 **Canary cases** are a subset of 20-30 high-confidence test cases that should always pass: baseline product search, simple order placement, straightforward returns processing. These cases test fundamental capabilities. If canaries start failing, something seriously broke. Canary failures trigger immediate investigation before checking detailed metrics.
 
-**Historical failure probes** are test cases that previously caused failures and were fixed. These cases verify that fixes remain effective—regressions don't reintroduce old bugs. For Adventure Works, historical probes include: the multi-item modification edge case that caused refund miscalculation in January 2026 (fixed in version 2.1), the international shipping query that produced contradictory currency conversions in December 2025 (fixed in version 1.9), and the gift message handling that exposed PII in logs in November 2025 (fixed in version 1.8).
+**Historical failure probes** are test cases that previously caused failures and were fixed. These cases verify that fixes remain effective—regressions don't reintroduce old bugs. For Adventure Works, historical probes include: a multi-item modification edge case that caused refund miscalculation, an international shipping query that produced contradictory currency conversions, and a gift message handling bug that exposed PII in logs.
 
 The combined suite runs on every candidate deployment: canaries run first (5 minutes), full dataset runs if canaries pass (45 minutes), and historical probes run in parallel with full dataset. This sequencing provides fast feedback on critical failures while ensuring comprehensive validation.
 
@@ -38,7 +38,7 @@ class RegressionTestRunner:
     
     def run_evaluation(self, agent_version: str, test_suite: List[Dict]) -> Dict:
         """Run evaluation on new agent version."""
-        # This would integrate with Azure AI Foundry Evaluation SDK
+        # This would integrate with Microsoft Foundry Evaluation SDK
         # For demonstration, simulating results
         
         results = {
@@ -213,9 +213,9 @@ This production monitoring caught a gradual drift issue for Adventure Works in M
 
 ## Integrate with CI/CD deployment gates
 
-Connect regression evaluation directly to the GitHub Actions deployment pipeline from Module 1 (in this learning path). The evaluation becomes a required gate: deployments don't proceed unless evaluation scores meet thresholds.
+Connect regression evaluation directly to your GitHub Actions deployment pipeline as a required quality gate: deployments don't proceed unless evaluation scores meet thresholds.
 
-Add an evaluation job to the GitHub Actions workflow that runs after building the agent container but before deploying to production. This job runs the Azure AI Foundry Evaluation SDK against the synthetic test suite, compares results to the baseline, and sets the workflow exit code based on pass/fail status.
+Add an evaluation job to the GitHub Actions workflow that runs after building the agent container but before deploying to production. This job runs the Microsoft Foundry Evaluation SDK against the synthetic test suite, compares results to the baseline, and sets the workflow exit code based on pass/fail status.
 
 ```yaml
 # .github/workflows/deploy-agents.yml

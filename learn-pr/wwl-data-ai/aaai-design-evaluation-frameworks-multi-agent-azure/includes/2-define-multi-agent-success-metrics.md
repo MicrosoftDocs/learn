@@ -1,4 +1,4 @@
-Evaluating individual agent correctness—"Did the orchestrator agent answer the question accurately?"—doesn't measure whether the customer's complete journey succeeded. A product search agent may return perfect product details while the orchestration layer routes to the wrong next agent, causing customer confusion despite technically correct individual responses. System-level metrics measure end-to-end outcomes rather than component performance.
+Microsoft Foundry provides the evaluation infrastructure to collect and aggregate quality signals across all layers of your multi-agent system. Evaluating individual agent correctness—"Did the orchestrator agent answer the question accurately?"—doesn't measure whether the customer's complete journey succeeded. A product search agent may return perfect product details while the orchestration layer routes to the wrong next agent, causing customer confusion despite technically correct individual responses. System-level metrics measure end-to-end outcomes rather than component performance.
 
 | Metric Level | Question Answered | Example |
 |--------------|-------------------|---------|

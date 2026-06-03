@@ -1,4 +1,4 @@
-Traditional deterministic metrics like BLEU scores or exact-match accuracy can't assess whether a 14-agent customer service interaction was genuinely helpful. These metrics measure surface-level text similarity but miss semantic correctness, tone appropriateness, and task completion. LLM-as-judge evaluation uses a powerful language model to assess holistic properties: whether responses were factually accurate, whether the customer's request was fulfilled, whether the tone was professional and empathetic, and whether information remained consistent across multiple agent interactions.
+The Microsoft Foundry `azure-ai-evaluation` SDK lets you implement custom LLM-as-judge evaluators and run batch evaluation across your full test dataset. Traditional deterministic metrics like BLEU scores or exact-match accuracy can't assess whether a 14-agent customer service interaction was genuinely helpful. These metrics measure surface-level text similarity but miss semantic correctness, tone appropriateness, and task completion. LLM-as-judge evaluation uses a powerful language model to assess holistic properties: whether responses were factually accurate, whether the customer's request was fulfilled, whether the tone was professional and empathetic, and whether information remained consistent across multiple agent interactions.
 
 | Evaluation Approach | Measures | Limitation for Multi-Agent |
 |---------------------|----------|----------------------------|
@@ -57,7 +57,7 @@ Missing requirements: [List any unfulfilled customer requirements, or "None"]
 """
 ```
 
-This prompt provides clear scoring criteria, all necessary context, specific evaluation dimensions, and a structured output format. The judge model receives everything needed to make consistent assessments across thousands of test cases.
+This prompt provides clear scoring criteria, all necessary context, specific evaluation dimensions, and a structured output format.
 
 ## Calibrate judge reliability
 
@@ -134,12 +134,12 @@ if result["needs_human_review"]:
     print("⚠️ High disagreement - flagged for human review")
 ```
 
-## Integrate with Azure AI Foundry Evaluation SDK
+## Integrate with the Microsoft Foundry Evaluation SDK
 
-The Azure AI Foundry `azure-ai-evaluation` package supports custom evaluators through a simple class interface. Define your judge as an evaluator, configure the model endpoint, and run batch evaluation on your test dataset.
+The Microsoft Foundry `azure-ai-evaluation` package supports custom evaluators through a simple class interface. Define your judge as an evaluator, configure the model endpoint, and run batch evaluation on your test dataset.
 
 ```python
-from azure.ai.evaluation import evaluate, EvaluatorConfig
+from azure.ai.evaluation import evaluate
 from azure.ai.inference import ChatCompletionsClient
 from azure.identity import DefaultAzureCredential
 import os
@@ -224,29 +224,36 @@ results = evaluate(
     evaluators=evaluator_config
 )
 
-print(f"Average task completion score: {results['task_completion_score'].mean():.2f}/10")
-print(f"Evaluations with score < 7: {(results['task_completion_score'] < 7).sum()}")
+# Access aggregated summary metrics
+avg_score = results.metrics["task_completion.task_completion_score"]
+print(f"Average task completion score: {avg_score:.2f}/10")
+
+# Access per-row results for filtering
+import pandas as pd
+rows_df = pd.DataFrame(results.rows)
+low_scoring = rows_df[rows_df["task_completion.task_completion_score"] < 7]
+print(f"Evaluations with score < 7: {len(low_scoring)}")
 ```
 
-> [!TIP]
+> [!NOTE]
 > **Pause and reflect:** Your multi-judge consensus shows a score spread of 5 points on 12% of evaluations. How would you investigate whether the disagreement stems from judge prompt ambiguity, genuine evaluation difficulty, or model-specific biases?
 
 This integration enables systematic evaluation at scale: run the judge on 1,000 test interactions, aggregate scores by interaction type, track trends over time, and establish quality gates for deployment.
 
+For common signal types, the `azure-ai-evaluation` SDK also provides built-in multi-agent evaluators you can use alongside custom judges: `IntentResolutionEvaluator` (whether the agent correctly identified and acted on the customer's intent), `ToolCallAccuracyEvaluator` (whether tool calls were formed and executed correctly), `TaskAdherenceEvaluator` (whether the agent stayed on task without scope drift), and `ResponseCompletenessEvaluator` (whether the response covered all required elements). Use these pre-built evaluators for standard signal types and reserve custom evaluator classes for domain-specific criteria—such as Adventure Works' business rules for refund calculations or return policy enforcement—that the built-in options don't cover.
+
 ## Microsoft Foundry AI Red Teaming Agent
 
-LLM-as-judge evaluation measures quality for expected inputs. The Microsoft Foundry AI Red Teaming Agent extends evaluation to adversarial inputs \u2014 it systematically probes your multi-agent system with crafted inputs designed to find failures that normal evaluation wouldn't surface.
+LLM-as-judge evaluation measures quality for expected inputs. The Microsoft Foundry AI Red Teaming Agent extends evaluation to adversarial inputs by systematically probing your multi-agent system with crafted inputs designed to find failures that normal evaluation wouldn't surface.
 
-The AI Red Teaming Agent automates attack-category coverage aligned to the OWASP LLM Top 10: prompt injection attempts (direct and indirect), system-prompt extraction, jailbreak attempts, cross-tenant data leakage probes, and denial-of-service via token-exhaustion payloads. For each category, it generates synthetic adversarial inputs at scale, submits them to your agent endpoints, and evaluates responses for policy violations \u2014 outputting a structured report with per-category pass/fail rates.
+The AI Red Teaming Agent automates attack-category coverage aligned to the OWASP LLM Top 10: prompt injection attempts (direct and indirect), system-prompt extraction, jailbreak attempts, cross-tenant data leakage probes, and denial-of-service via token-exhaustion payloads. For each category, it generates synthetic adversarial inputs at scale, submits them to your agent endpoints, and evaluates responses for policy violations. The output is a structured report with per-category pass/fail rates.
 
 Use the AI Red Teaming Agent as a complement to LLM-as-judge evaluation in your CI/CD pipeline:
 - **LLM-as-judge** evaluates quality on production-representative inputs (accuracy, task completion, tone, consistency).
 - **AI Red Teaming Agent** evaluates safety and security on adversarial inputs (injection resistance, boundary enforcement, data isolation).
 
-Together, they cover the full quality-and-safety evaluation surface. Schedule the Red Teaming Agent run in your deployment pipeline so that every version produces fresh adversarial test evidence \u2014 this evidence is required for compliance frameworks (SOC 2, EU AI Act technical file) that mandate security testing before deployment.
+Together, they cover the full quality-and-safety evaluation surface. Schedule the Red Teaming Agent run in your deployment pipeline so that every version produces fresh adversarial test evidence. This evidence is required for compliance frameworks (SOC 2, EU AI Act technical file) that mandate security testing before deployment.
 
-> [!NOTE]
-> Cross-reference: LP2 M1 Unit 5 covers how to design the custom guardrails that the AI Red Teaming Agent validates. LP3 M2 Unit 7 covers how to use Red Teaming Agent output as compliance-framework evidence.
 
 ## Unit summary
 
@@ -254,7 +261,7 @@ Together, they cover the full quality-and-safety evaluation surface. Schedule th
 - **Judge prompts** include four components: evaluation rubric, context, specific criterion, and required output format to ensure consistent scoring.
 - **Calibration** maps raw judge scores to actual accuracy using human-labeled datasets, with Cohen's kappa above 0.7 indicating reliable agreement.
 - **Multi-judge consensus** runs the same evaluation across multiple models and averages scores to reduce individual judge biases.
-- **Azure AI Foundry integration** enables batch evaluation at scale through custom evaluator classes and the `azure-ai-evaluation` SDK.
+- **Microsoft Foundry integration** enables batch evaluation at scale through custom evaluator classes and the `azure-ai-evaluation` SDK.
 
 ## Check your understanding
 

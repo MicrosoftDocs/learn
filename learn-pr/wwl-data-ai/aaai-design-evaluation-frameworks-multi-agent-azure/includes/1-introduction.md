@@ -6,13 +6,13 @@ Component-level evaluation measures whether individual agents perform their isol
 
 ## Four-target evaluation framework
 
-Effective multi-agent evaluation addresses four targets, each with distinct measurement strategies and curriculum locations:
+Effective multi-agent evaluation addresses four targets, each with distinct measurement strategies:
 
-| Evaluation target | What you measure | Where taught in AI-500 |
-|---|---|---|
-| **Memory evaluation** | Whether the agent correctly recalls past context; does memory injection improve accuracy, and do failure modes like sliding-window amnesia and summary drift reduce quality? | LP3 M5 Unit 5 (context window optimization — memory impact on accuracy, cost, and latency) |
-| **Knowledge evaluation** | Whether the RAG pipeline retrieves the right documents; measured by nDCG, MRR, and downstream answer accuracy | LP2 M3 Unit 3 (re-ranking quality \u2014 offline nDCG/MRR evaluation against labeled datasets) |
-| **Tool evaluation** | Whether tools return correct results within SLA; measured by tool result validation accuracy and circuit-breaker activation rates | LP2 M2 Unit 3 (tool result schema validation + circuit-breaker telemetry from LP4 M1) |
-| **Prompt evaluation** | Whether prompts produce consistent, high-quality outputs across input variations; measured by A/B variant testing with semantic diff and regression stability | LP2 M1 Unit 5 (A/B variant testing with semantic diff) + this module Unit 3 (LLM-as-judge prompt evaluators) |
+| Evaluation target | What you measure |
+|---|---|
+| **Memory evaluation** | Whether the agent correctly recalls past context; does memory injection improve accuracy, and do failure modes like sliding-window amnesia and summary drift reduce quality? |
+| **Knowledge evaluation** | Whether the RAG pipeline retrieves the right documents; measured by nDCG, MRR, and downstream answer accuracy |
+| **Tool evaluation** | Whether tools return correct results within SLA; measured by tool result validation accuracy and circuit-breaker activation rates |
+| **Prompt evaluation** | Whether prompts produce consistent, high-quality outputs across input variations; measured by A/B variant testing with semantic diff and regression stability |
 
-System-level evaluation \u2014 the primary focus of this module \u2014 measures whether the combination of memory, knowledge, tools, and prompts produces correct end-to-end task completion. Individual-target evaluation identifies which layer is failing when system-level quality degrades. Use the cross-references above when a system-level quality regression requires root-cause isolation to a specific component.
+System-level evaluation, the primary focus of this module, measures whether the combination of memory, knowledge, tools, and prompts produces correct end-to-end task completion. Individual-target evaluation identifies which layer is failing when system-level quality degrades.
