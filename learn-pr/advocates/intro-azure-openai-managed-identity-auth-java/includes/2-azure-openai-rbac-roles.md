@@ -53,14 +53,14 @@ Assign **Cognitive Services Usages Reader** at subscription scope when the ident
     For local development, to get your own identity ID, use the following command. You need to sign in with `az login` before using this command:
 
 ```azurecli
-az ad signed-in-user show \
+    az ad signed-in-user show \
     --query id -o tsv
 ```
 
-    For a user-assigned managed identity, use the `principalId` value:
+For a user-assigned managed identity, use the `principalId` value:
 
 ```azurecli
-az identity show \
+    az identity show \
     --name <managed-identity-name> \
     --resource-group <resource-group-name> \
     --query principalId -o tsv
@@ -69,7 +69,7 @@ az identity show \
 1. Get the Azure OpenAI resource ID to use as the least-privileged assignment scope:
 
 ```azurecli
-az cognitiveservices account show \
+    az cognitiveservices account show \
     --name <azure-openai-resource-name> \
     --resource-group <resource-group-name> \
     --query id -o tsv
@@ -78,7 +78,7 @@ az cognitiveservices account show \
 1. Assign the RBAC role to the identity at the Azure OpenAI resource scope. To grant your identity permissions to your resource through RBAC, assign a role using the Azure CLI command `az role assignment create`.
 
 ```azurecli
-az role assignment create \
+    az role assignment create \
     --role "Cognitive Services OpenAI User" \
     --assignee "<identity-principal-or-object-id>" \
     --scope "<azure-openai-resource-id>"
