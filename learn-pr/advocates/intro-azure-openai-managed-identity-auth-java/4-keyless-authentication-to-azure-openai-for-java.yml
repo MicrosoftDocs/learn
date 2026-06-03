@@ -3,8 +3,8 @@ uid: learn.intro-azure-openai-managed-identity-auth-java.keyless-authentication-
 title: Keyless authentication to Azure OpenAI for Java
 metadata:
   title: Keyless authentication to Azure OpenAI for Java
-  description: Learn how to perform keyless authentication to Azure OpenAI services for Java applications
-  ms.date: 12/16/2024
+  description: Learn how to use Microsoft Entra ID and managed identities for keyless authentication to Azure OpenAI from Java applications.
+  ms.date: 05/20/2026
   author: sarah-yo
   ms.author: sayoung
   ms.topic: unit

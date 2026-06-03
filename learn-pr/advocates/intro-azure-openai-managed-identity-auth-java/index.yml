@@ -3,27 +3,29 @@ uid: learn.intro-azure-openai-managed-identity-auth-java
 metadata:
   ms.author: sayoung
   author: sarah-yo
-  ms.date: 12/16/2024
+  ms.date: 05/20/2026
   ms.update-cycle: 180-days
-  title: Introduction to Azure OpenAI Managed Identity Authentication with Java
-  description: How to implement role based access control and managed identity authentication to Azure OpenAI with Java.
+  title: Implement Azure OpenAI keyless authentication with Java
+  description: Learn how to use Microsoft Entra ID, Azure RBAC, DefaultAzureCredential, and managed identities to authenticate Java apps to Azure OpenAI in Microsoft Foundry without API keys.
   ms.topic: module
   ms.collection: ce-advocates-ai-copilot
   ms.service: microsoft-foundry
-title: Introduction to Azure OpenAI Managed Identity Authentication with Java
-summary:  Understanding how to use managed identity in Java apps that interact with Azure OpenAI.
+title: Implement Azure OpenAI keyless authentication with Java
+summary: Learn how Java apps use Microsoft Entra ID, Azure RBAC, DefaultAzureCredential, and managed identities to connect to Azure OpenAI in Microsoft Foundry without API keys.
 abstract: |
- After completing this module, you'll be able to:
-  - Describe the different RBAC roles for use in Azure OpenAI and understand how to configure role assignments
-  - Understand the differences between using API keys and managed identities within Azure OpenAI
-  - Understand how to configure keyless authentication to Azure OpenAI for local development for Java
-  - Understand how to configure keyless authentication to Azure OpenAI for Azure-hosted environments for Java
+  After completing this module, you'll be able to:
+  - Describe how Microsoft Entra ID and Azure RBAC enable keyless access to Azure OpenAI.
+  - Configure an Azure OpenAI RBAC role assignment for least-privileged inference access.
+  - Implement local Java authentication with DefaultAzureCredential.
+  - Implement Azure-hosted Java authentication with a system-assigned or user-assigned managed identity.
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
-  - Java programming
-  - Azure OpenAI
-  - Azure RBAC roles
-  - Azure Managed Identity
+  - Basic Java programming.
+  - An Azure subscription.
+  - An Azure OpenAI resource in Microsoft Foundry with a model deployment.
+  - Java Development Kit and Maven installed.
+  - Azure CLI installed and signed in.
+  - Basic familiarity with Azure RBAC and managed identities.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

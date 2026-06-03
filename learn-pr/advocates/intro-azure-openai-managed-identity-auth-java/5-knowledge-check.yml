@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Display your knowledge
-  ms.date: 12/18/2024
+  ms.date: 05/20/2026
   author: sarah-yo
   ms.author: sayoung
   ms.topic: unit
@@ -17,33 +17,33 @@ quiz:
       choices:
         - content: "Enhanced Security"
           isCorrect: true
-          explanation: "Managed identities eliminate the need to store credentials within application code, reducing the risk of credential leaks. They use Entra for authentication, providing a more secure and automated method for accessing Azure services."
+          explanation: "Managed identities eliminate the need to store credentials within application code, reducing the risk of credential leaks. They use Microsoft Entra ID for authentication, providing a more secure and automated method for accessing Azure services."
         - content: "Increased Performance"
           isCorrect: false
           explanation: "While managed identities improve security, they don't inherently increase application performance."
         - content: "Cost Reduction"
           isCorrect: false
           explanation: "Managed identities don't directly impact the cost of Azure services; their primary benefit is enhanced security."
-    - content: "Which role in Azure OpenAI allows you to create custom fine-tuned models and manage model deployments?"
+    - content: "Which least-privileged Azure OpenAI role should you assign to create custom fine-tuned models and manage model deployments?"
       choices:
         - content: "Cognitive Services OpenAI User"
           isCorrect: false
-          explanation: "The OpenAI User role has limited permissions and can't create or manage models."
+          explanation: "The Cognitive Services OpenAI User role supports keyless inference with Microsoft Entra ID, but doesn't allow you to create or manage models."
         - content: "Cognitive Services Usages Reader"
           isCorrect: false
-          explanation: "The Usages Reader role is focused on monitoring usage and doesn't have permissions for model management."
+          explanation: "The Usages Reader role is focused on monitoring usage and doesn't have permissions for model deployment or fine-tuning management."
         - content: "Cognitive Services OpenAI Contributor"
           isCorrect: true
-          explanation: "This role includes permissions to create custom fine-tuned models, upload datasets, and manage model deployments."
-    - content: "What Java class is used to obtain tokens to authenticate to Azure services?"
+          explanation: "This role is the least-privileged Azure OpenAI role among these options for creating custom fine-tuned models, uploading datasets, and managing model deployments."
+    - content: "Which Azure Identity credential is commonly used for local development with keyless authentication to Azure services in Java?"
       choices:
         - content: "`AzureTokenProvider`"
           isCorrect: false
-          explanation: "This isn't the correct class mentioned in the provided context for obtaining tokens."
+          explanation: "This isn't an Azure Identity credential class used by the Java SDK for keyless authentication."
         - content: "`DefaultAzureCredential`"
           isCorrect: true
-          explanation: "`DefaultAzureCredential` is used to obtain tokens to authenticate to Azure services, as indicated in the context. You'll also be able to use `ManagedIdentityCredential` "
+          explanation: "`DefaultAzureCredential` is commonly used for local development because it can use developer credentials, such as Azure CLI or IDE sign-in, without storing keys. Use `ManagedIdentityCredential` when your app runs on an Azure resource with a managed identity and you want to authenticate with that identity."
         - content: "`AzureIdentityClient`"
           isCorrect: false
-          explanation: "This isn't the correct class mentioned in the provided context for obtaining tokens."
+          explanation: "This isn't an Azure Identity credential class used by the Java SDK for keyless authentication."
     

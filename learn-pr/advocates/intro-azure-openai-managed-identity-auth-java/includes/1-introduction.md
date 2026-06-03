@@ -1,9 +1,12 @@
-Good security practices require that we control access to applications that we develop and developing an application in Azure OpenAI is no different. In this module, you'll learn about configuring authentication to Azure OpenAI using Java, the different aspects to consider, and examples of how to build code to achieve this.
+Good security practices require controlling how applications access cloud services. For Java applications that use Azure OpenAI in Microsoft Foundry, keyless authentication lets you use Microsoft Entra ID tokens instead of storing API keys in code or configuration.
+
+In this module, you'll learn how Azure RBAC role assignments authorize access to Azure OpenAI, how DefaultAzureCredential supports local development, and how managed identities support Azure-hosted Java applications.
 
 Learning objectives:
 
 By the end of this module, you'll be able to:
 
-- Understand why managed identities are more secure than API keys
-- Understand how to configure keyless authentication to Azure OpenAI for local development in Java
-- Understand how to configure keyless authentication to Azure OpenAI for Java
+- Describe how Microsoft Entra ID and Azure RBAC enable keyless access to Azure OpenAI.
+- Configure an Azure OpenAI RBAC role assignment for a user or managed identity.
+- Implement DefaultAzureCredential in a Java app for local development.
+- Implement managed identity authentication for Azure-hosted Java apps.

@@ -1,54 +1,89 @@
-In keyless authentication to Azure OpenAI for Java, you use Azure's managed identities or service principals to authenticate instead of hardcoding API keys or other credentials. This is done through the `DefaultAzureCredential` or `ManagedIdentityCredential` class, which provides a secure and streamlined way to obtain tokens needed for authenticating Azure services. Here's how it works in practice:
+Keyless authentication lets a Java application call Azure OpenAI with a Microsoft Entra ID token instead of an API key. The identity that runs the application must be assigned the `Cognitive Services OpenAI User` role on the Azure OpenAI resource for inference.
 
-1. **Set Up Azure Environment**: Ensure your Azure environment is configured correctly with managed identities or service principals.
+Use the current OpenAI Java SDK with Azure Identity. The Azure OpenAI endpoint uses the `/openai/v1/` path, and the `model` value in the request is your Azure OpenAI deployment name.
 
-1. **Initialize Credentials**: Use the `DefaultAzureCredential` class or `ManagedIdentityCredential` class from the Azure SDK for Java to handle the authentication process seamlessly.
+## Add dependencies
 
-Here is an example code snippet:
+Add the OpenAI Java SDK and Azure Identity to your Maven project:
+
+```xml
+<dependencies>
+  <dependency>
+    <groupId>com.openai</groupId>
+    <artifactId>openai-java</artifactId>
+    <version>4.0.1</version>
+  </dependency>
+  <dependency>
+    <groupId>com.azure</groupId>
+    <artifactId>azure-identity</artifactId>
+    <version>1.18.0</version>
+  </dependency>
+</dependencies>
+```
+
+## Configure environment variables
+
+Set these values before running the application:
+
+> [!IMPORTANT]
+> This example calls the Azure OpenAI Responses API. Use an Azure OpenAI resource in a region that supports the Responses API, and set `AZURE_OPENAI_DEPLOYMENT` to a deployment of a model/version supported by the Responses API in that region. Not every supported model is available in every supported region; check the [Responses API supported regions](/azure/ai-foundry/openai/how-to/responses#supported-regions) and [supported models](/azure/ai-foundry/openai/how-to/responses#supported-models).
+
+- `AZURE_OPENAI_ENDPOINT`: The Azure OpenAI resource endpoint with a custom subdomain, such as `https://<resource-name>.openai.azure.com`. Microsoft Entra ID authentication requires a custom subdomain; older resources that still use a regional Cognitive Services endpoint may need a custom subdomain generated before keyless authentication works.
+- `AZURE_OPENAI_DEPLOYMENT`: The Azure OpenAI deployment name to use as the `model` value. The deployment must be for a model/version that supports the Responses API in the Azure OpenAI resource region.
+- `AZURE_CLIENT_ID`: The client ID of a user-assigned managed identity. A system-assigned managed identity doesn't use a client ID.
+
+For local development, `DefaultAzureCredential` uses developer credentials, such as the Azure CLI sign-in, not a managed identity. Assign `Cognitive Services OpenAI User` to your local user account for local testing. For an Azure-hosted application, assign the role to the managed identity's principal or object ID. The `AZURE_CLIENT_ID` value selects a user-assigned managed identity in code; it isn't the role assignment object ID.
+
+## Create the client and call Azure OpenAI
 
 ```java
-import com.azure.identity.DefaultAzureCredential;
+import com.azure.identity.AuthenticationUtil;
 import com.azure.identity.DefaultAzureCredentialBuilder;
-import com.azure.ai.openai.OpenAIClient;
-import com.azure.ai.openai.models.CompletionsOptions;
-import com.azure.ai.openai.models.Completions;
-public class AzureOpenAIExample {
-public static void main(String[] args) {
+import com.openai.client.OpenAIClient;
+import com.openai.client.okhttp.OpenAIOkHttpClient;
+import com.openai.credential.BearerTokenCredential;
+import com.openai.models.responses.Response;
+import com.openai.models.responses.ResponseCreateParams;
 
-// Initialize credentials for System Managed Identity
+public class AzureOpenAIKeylessExample {
+    public static void main(String[] args) {
+        String endpoint = requireEnv("AZURE_OPENAI_ENDPOINT").replaceAll("/+$", "");
+        String deploymentName = requireEnv("AZURE_OPENAI_DEPLOYMENT");
 
-DefaultAzureCredential credential = new DefaultAzureCredentialBuilder().build();
+        OpenAIClient client = OpenAIOkHttpClient.builder()
+            .baseUrl(endpoint + "/openai/v1/")
+            .credential(BearerTokenCredential.create(AuthenticationUtil.getBearerTokenSupplier(
+                new DefaultAzureCredentialBuilder().build(), "https://ai.azure.com/.default")))
+            .build();
 
-// Initalize credentials for User Managed Identity
-// Use this code if not using System Managed Identity
-// DefaultAzureCredential credential = new DefaultAzureCredentialBuilder()
-//    .managedIdentityClientId("\<USER_MANAGED_IDENTITY_CLIENT_ID>")
-//    .build();
+        ResponseCreateParams params = ResponseCreateParams.builder()
+            .model(deploymentName)
+            .input("Explain managed identities in one sentence.")
+            .build();
 
-// Create client instance
+        Response response = client.responses().create(params);
+        System.out.println(response);
+    }
 
-OpenAIClient client = new OpenAIClientBuilder()
-    .endpoint("YOUR_AZURE_ENDPOINT")
-    .credential(credential)
-    .buildClient();
-
-// Make API call
-
-CompletionsOptions options = new CompletionsOptions()
-    .setPrompt("Once upon a time")
-    .setMaxTokens(5);
-
-Completions response = client.getCompletions("YOUR_DEPLOYMENT_ID", options);
-
-// Print response
-
-System.out.println(response.getChoices().get(0).getText());
-}
+    private static String requireEnv(String name) {
+        String value = System.getenv(name);
+        if (value == null || value.trim().isEmpty()) {
+            throw new IllegalStateException(name + " environment variable is required");
+        }
+        return value;
+    }
 }
 ```
 
-Once you have configured the code:
+For production Azure-hosted workloads, prefer a deterministically managed identity credential instead of the full default credential chain. For a user-assigned managed identity, create the credential explicitly and pass it to `AuthenticationUtil.getBearerTokenSupplier`:
 
-1. **Create Client Instance**: Instantiate your `OpenAIClient` with the endpoint and the credentials obtained from the `DefaultAzureCredential`.
+```java
+import com.azure.core.credential.TokenCredential;
+import com.azure.identity.ManagedIdentityCredentialBuilder;
 
-1. **Make API Calls**: Use the client to interact with Azure OpenAI services securely, without explicitly handling sensitive credentials.
+TokenCredential credential = new ManagedIdentityCredentialBuilder()
+    .clientId(requireEnv("AZURE_CLIENT_ID"))
+    .build();
+```
+
+For a system-assigned managed identity, omit `.clientId(...)`. Use the same `credential` value when creating the bearer token credential for the OpenAI client.
