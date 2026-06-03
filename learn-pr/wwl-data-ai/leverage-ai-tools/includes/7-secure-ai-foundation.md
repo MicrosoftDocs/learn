@@ -11,7 +11,7 @@ AI is unlocking incredible opportunities for organizations, but it’s also intr
 
 The risks are real—but they’re manageable with the right plan. Rather than rushing into AI adoption, organizations should start with a strong foundation and progress in phases to maximize ROI and minimize exposure.
 
-[Microsoft’s AI Adoption Framework](/azure/cloud-adoption-framework/scenarios/ai?azure-portal=true) provides a clear roadmap. It begins with AI strategy and planning—aligning business goals with AI opportunities. Once your strategy is defined, map scenarios for each area of your organization. Security and business teams must collaborate to ensure innovation doesn’t compromise compliance or trust.
+[Microsoft's AI Adoption Framework](/azure/cloud-adoption-framework/ai/?azure-portal=true) provides a clear roadmap. It begins with AI strategy and planning—aligning business goals with AI opportunities. Once your strategy is defined, map scenarios for each area of your organization. Security and business teams must collaborate to ensure innovation doesn’t compromise compliance or trust.
 
 From there, focus on three key phases: Govern, Secure, and Manage.
 
@@ -129,6 +129,6 @@ To learn more, review these resources:
 - [Microsoft guide for securing the AI-powered enterprise: Getting started with AI applications](https://www.microsoft.com/security/security-insider/emerging-trends/ai-security-guide#Get-started)
 - [Microsoft Guide for Securing the AI-Powered Enterprise: Strategies for Governing AI](https://www.microsoft.com/security/security-insider/emerging-trends/ai-security-guide-strategies-for-governing-ai)
 - [Microsoft Guide for Securing the AI-Powered Enterprise: Strategies for AI Compliance](https://www.microsoft.com/security/security-insider/emerging-trends/ai-security-guide-strategies-for-ai-compliance)
-- [Microsoft AI Adoption Framework](/azure/cloud-adoption-framework/scenarios/ai/secure)
+- [Microsoft AI Adoption Framework](/azure/cloud-adoption-framework/ai/secure)
 
 Next, test your knowledge with a short quiz.
