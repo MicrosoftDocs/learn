@@ -15,9 +15,11 @@ To enable keyless authentication, follow these steps to configure the necessary 
 1. Select **Access Control (IAM)** from the left navigation pane.
 1. Select **Add** > **Add role assignment**, and then select the **Role** tab.
 1. Choose the least-privileged Azure OpenAI role for the task:
+
     - Select **Cognitive Services OpenAI User** for keyless inference, such as chat completions and embeddings.
     - Select **Cognitive Services OpenAI Contributor** only when the identity needs to manage model deployments or fine-tuning.
     - Select **Cognitive Services Usages Reader** only for viewing quota usage, and assign it at subscription scope.
+
 1. On the **Members** tab, select a user, group, service principal, or managed identity to assign the role. For a managed identity, the role is assigned to the identity's principal, also known as its object ID.
 1. On the **Review + assign** tab, confirm your selections and select **Review + assign** to finalize the role assignment.
 

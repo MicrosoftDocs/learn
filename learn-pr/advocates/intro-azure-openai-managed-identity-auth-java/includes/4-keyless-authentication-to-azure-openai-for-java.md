@@ -75,7 +75,7 @@ public class AzureOpenAIKeylessExample {
 }
 ```
 
-For production Azure-hosted workloads, prefer a deterministic managed identity credential instead of the full default credential chain. For a user-assigned managed identity, create the credential explicitly and pass it to `AuthenticationUtil.getBearerTokenSupplier`:
+For production Azure-hosted workloads, prefer a deterministically managed identity credential instead of the full default credential chain. For a user-assigned managed identity, create the credential explicitly and pass it to `AuthenticationUtil.getBearerTokenSupplier`:
 
 ```java
 import com.azure.core.credential.TokenCredential;
