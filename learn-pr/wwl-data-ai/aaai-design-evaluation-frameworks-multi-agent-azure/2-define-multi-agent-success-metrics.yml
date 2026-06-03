@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-evaluation-frameworks-multi-agent-azure.define-multi-agent-success-metrics
+title: Define multi-agent success metrics
+metadata:
+  title: Define Multi-Agent Success Metrics
+  description: "Define multi-agent success metrics."
+  ms.date: 06/08/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-define-multi-agent-success-metrics.md)]

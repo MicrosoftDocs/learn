@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-evaluation-frameworks-multi-agent-azure.build-regression-test-agent-drift
+title: Build regression testing pipelines to detect agent drift
+metadata:
+  title: Build Regression Testing Pipelines to Detect Agent Drift
+  description: "Build regression testing pipelines to detect agent drift."
+  ms.date: 06/08/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-build-regression-test-agent-drift.md)]

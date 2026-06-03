@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.design-evaluation-frameworks-multi-agent-azure
+metadata:
+  title: Design Evaluation Frameworks for Multi-Agent Solutions with Microsoft Foundry
+  description: "Design evaluation frameworks for production multi-agent AI solutions using Microsoft Foundry. Define success metrics for coordination quality and system-level outcomes, implement calibrated LLM-as-judge patterns, design synthetic test datasets for agent collaboration scenarios, and build regression pipelines for behavioral drift detection."
+  ms.date: 06/08/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-foundry
+  ai-usage: ai-assisted
+title: Design evaluation frameworks for multi-agent solutions with Microsoft Foundry
+summary: "Design evaluation frameworks for production multi-agent AI systems using Microsoft Foundry. Define success metrics that capture coordination quality and system-level outcomes, implement calibrated LLM-as-judge patterns designed for multi-agent chain assessment, design synthetic test datasets that comprehensively exercise agent collaboration scenarios, and build regression testing pipelines for behavioral drift detection."
+abstract: |
+  By the end of this module, you're able to:
+  - Define multi-agent success metrics that capture coordination quality, handoff effectiveness, and system-level outcomes
+  - Implement calibrated LLM-as-judge patterns designed for evaluating complex multi-agent chain quality
+  - Design synthetic test datasets that comprehensively exercise multi-agent collaboration scenarios and edge cases
+  - Build regression testing pipelines that detect behavioral drift across agent and model updates
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience designing and running evaluation experiments in Microsoft Foundry
+  - Familiarity with the Microsoft Foundry Evaluation SDK and built-in evaluators
+  - Experience from the Evaluate and optimize AI agents through structured experiments module or equivalent
+  - Experience building multi-agent systems with Microsoft Foundry
+  - Proficiency in Python
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- data-scientist
+- solution-architect
+products:
+- azure
+- microsoft-foundry
+subjects:
+- artificial-intelligence
+- machine-learning
+units:
+- learn.wwl.design-evaluation-frameworks-multi-agent-azure.introduction
+- learn.wwl.design-evaluation-frameworks-multi-agent-azure.define-multi-agent-success-metrics
+- learn.wwl.design-evaluation-frameworks-multi-agent-azure.implement-llm-judge-multi-agent-evaluation
+- learn.wwl.design-evaluation-frameworks-multi-agent-azure.design-synthetic-test-datasets-multi-agent
+- learn.wwl.design-evaluation-frameworks-multi-agent-azure.build-regression-test-agent-drift
+- learn.wwl.design-evaluation-frameworks-multi-agent-azure.knowledge-check
+- learn.wwl.design-evaluation-frameworks-multi-agent-azure.summary
+badge:
+  uid: learn.wwl.design-evaluation-frameworks-multi-agent-azure.badge
