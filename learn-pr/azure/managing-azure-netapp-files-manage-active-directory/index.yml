@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.manage-active-directory
+metadata:
+  title: Manage Active Directory for Azure NetApp Files
+  description: Learn how to create and manage Active Directory connections for Azure NetApp Files. Also, learn how to modify Active Directory connections and configure AD DS LDAP over TLS for Azure NetApp Files. Finally, you learn to join a Linux VM to a Microsoft Entra Domain to enable users to sign into to VMs with one set of credentials.
+  ms.date: 05/11/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Manage Active Directory for Azure NetApp Files
+summary: Create and manage Active Directory connections for Azure NetApp Files.
+abstract: |
+  By completing this module, you'll be able to:
+  - Create, manage, and modify Active Directory connections
+  - Configure AD DS LDAP over TLS for Azure NetApp Files
+  - Join a Linux VM to a Microsoft Entra Domain
+prerequisites: |
+  - Register and Set Up Azure NetApp Files
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+  - storage
+units:
+  - learn.azure.manage-active-directory.introduction
+  - learn.azure.manage-active-directory.manage-active-directory-connections
+  - learn.azure.manage-active-directory.configure-active-directory-domain-services-ldap-over-tls
+  - learn.azure.manage-active-directory.join-linux-vm-microsoft-entra-domain
+  - learn.azure.manage-active-directory.exercise-manage-active-directory
+  - learn.azure.manage-active-directory.knowledge-check
+  - learn.azure.manage-active-directory.summary
+badge:
+  uid: learn.azure.manage-active-directory.badge

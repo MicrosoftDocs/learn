@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-active-directory.knowledge-check
+title: Module assessment
+metadata:
+  unitType: knowledge_check
+  title: Module assessment
+  description: Test your knowledge of managing Active Directory for Azure NetApp Files.
+  ms.date: 05/11/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+    - content: "Which of the following is a step involved in generating and exporting the root CA certificate in Azure NetApp Files?"
+      choices:
+        - content: "Exporting the certificate Base-64 encoded X.509 (.CER) format"
+          isCorrect: true
+          explanation: "Correct. When exporting the root CA certificate, ensure that the certificate is exported in the Base-64 encoded X.509 (.CER) format."
+        - content: "Configuring virtual networks"
+          isCorrect: false
+          explanation: "Incorrect. It's not a step involved in exporting the root CA certificate."
+        - content: "Assigning RBAC roles"
+          isCorrect: false
+          explanation: "Incorrect. It's not a step involved in exporting the root CA certificate."
+        - content: "Configuring Azure AD Connect"
+          isCorrect: false
+          explanation: "Incorrect. It's not a step involved in exporting the root CA certificate."
+    - content: "What is the requirement for creating an Active Directory connection in Azure NetApp Files?"
+      choices:
+        - content: "Create two Active Directory connections per NetApp account."
+          isCorrect: false
+          explanation: "Incorrect. Each NetApp account within an Azure subscription can have its own AD connection. That means, Azure NetApp Files supports more than one AD connection per Azure subscription when multiple NetApp accounts are used."
+        - content: "Create an Azure NetApp Files account in the region where the Azure NetApp Files volumes are to be deployed."
+          isCorrect: true
+          explanation: "Correct. An Azure NetApp Files account must be created in the region where the Azure NetApp Files volumes are to be deployed."
+        - content: "Azure NetApp Files AD connection admins account must be a Group Managed Service Account."
+          isCorrect: false
+          explanation: "Incorrect. The Azure NetApp Files Active Directory connection admin account must not be a group managed service account as it provides same functionality over domain and extends the functionality to multiple servers."
+        - content: "The AD connection admin account only supports Kerberos AES-128."
+          isCorrect: false
+          explanation: "Incorrect. The AD connection admin account supports both Kerberos AES-128 and Kerberos AES-256 encryption types for authentication with AD DS for Azure NetApp Files computer account creation."
