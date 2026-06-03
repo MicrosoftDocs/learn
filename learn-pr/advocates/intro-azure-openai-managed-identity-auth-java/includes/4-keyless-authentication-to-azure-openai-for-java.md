@@ -26,7 +26,7 @@ Add the OpenAI Java SDK and Azure Identity to your Maven project:
 Set these values before running the application:
 
 > [!IMPORTANT]
-> This example calls the Azure OpenAI Responses API. Use an Azure OpenAI resource in a region that supports the Responses API, and set `AZURE_OPENAI_DEPLOYMENT` to a deployment of a model/version supported by the Responses API in that region. Not every supported model is available in every supported region; check the [Responses API supported regions](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/responses#supported-regions) and [supported models](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/responses#supported-models).
+> This example calls the Azure OpenAI Responses API. Use an Azure OpenAI resource in a region that supports the Responses API, and set `AZURE_OPENAI_DEPLOYMENT` to a deployment of a model/version supported by the Responses API in that region. Not every supported model is available in every supported region; check the [Responses API supported regions](/azure/ai-foundry/openai/how-to/responses#supported-regions) and [supported models](/azure/ai-foundry/openai/how-to/responses#supported-models).
 
 - `AZURE_OPENAI_ENDPOINT`: The Azure OpenAI resource endpoint with a custom subdomain, such as `https://<resource-name>.openai.azure.com`. Microsoft Entra ID authentication requires a custom subdomain; older resources that still use a regional Cognitive Services endpoint may need a custom subdomain generated before keyless authentication works.
 - `AZURE_OPENAI_DEPLOYMENT`: The Azure OpenAI deployment name to use as the `model` value. The deployment must be for a model/version that supports the Responses API in the Azure OpenAI resource region.

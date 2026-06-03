@@ -8,4 +8,4 @@ To continue your learning journey, go to:
 
 - [Use Azure OpenAI without keys](/azure/developer/ai/keyless-connections?tabs=java%2Cazure-cli)
 - [How to switch between OpenAI and Azure OpenAI endpoints for Java](/azure/developer/ai/how-to/switching-endpoints#authentication)
-- [Azure Identity client library for Java: DefaultAzureCredential](/java/api/overview/azure/identity-readme?view=azure-java-stable#defaultazurecredential)
+- [Azure Identity client library for Java: DefaultAzureCredential](/java/api/overview/azure/identity-readme?view=azure-java-stable#defaultazurecredential&preserve-view=true)
