@@ -12,7 +12,7 @@ Consider what happens when you don't monitor:
 
 Monitoring exposes these problems early. When you can see that a job failed, how long it ran, and what error it produced, you can fix the root cause before it affects users.
 
-## Fabric activities you should monitor
+## Types of Fabric activities to monitor
 
 Microsoft Fabric runs many types of scheduled and on-demand activities. Each type has specific metrics and failure modes worth tracking.
 

@@ -4,7 +4,7 @@ The monitoring hub is a centralized interface in Microsoft Fabric that aggregate
 
 To open the monitoring hub, select **Monitor** from the navigation pane on the left side of the Fabric portal. The main view displays a table of recent activities with columns for the activity name, status, item type, start time, and other metadata.
 
- :::image type="content" source="../media/monitor-dataflow.png" alt-text="Screenshot of the Microsoft Fabric monitoring hub showing recent activity with status, item type, and start time columns." :::
+:::image type="content" source="../media/monitor-dataflow.png" alt-text="Screenshot of the Microsoft Fabric monitoring hub showing recent activity with status, item type, and start time columns." :::
 
 ## Understand activity status
 
@@ -32,7 +32,7 @@ To investigate a specific activity, hover over the activity name and select the 
 
 A single run tells you what happened now. Historical runs tell you what's been happening over time. To view the run history for a specific activity, hover over the activity name, select **More options** (**...**), and then select **Historical runs**. The monitoring hub displays up to 30 days of run history for that item.
 
-:::image type="content" source="../media/historical-runs.png" alt-text="Screenshot of the monitoring hub historical runs view showing multiple runs of a dataflow with start time, duration, and status." :::
+:::image type="content" source="../media/historical-runs.png" alt-text="Screenshot of the monitoring hub historical runs view showing multiple runs of a pipeline with activity name, status, item type, and start time columns." :::
 
 Historical runs help you answer questions like:
 
@@ -51,7 +51,7 @@ Select the **Filter** button to narrow the view by:
 - **Status** — Show only failed activities to focus on problems, or only succeeded activities to verify routine operations.
 - **Item type** — Show only Dataflow Gen2 activities, only notebooks, or only pipelines. This is useful when you're troubleshooting a specific part of your data pipeline.
 
-:::image type="content" source="../media/monitor-filter.png" alt-text="Screenshot of the monitoring hub with a filter applied showing only succeeded Dataflow Gen2 activities." :::
+:::image type="content" source="../media/monitor-filter.png" alt-text="Screenshot of the monitoring hub with filters applied for Pipeline and Dataflow Gen2 item types, showing only succeeded activities." :::
 
 Select the **Column options** button to add or remove columns. The default view shows a limited set of columns, but you can add useful columns like:
 
@@ -65,9 +65,7 @@ Customizing columns helps you compare activities side by side and spot patterns 
 
 ## Manage failure notifications
 
-The monitoring hub includes a **Schedule failures** page that lists every scheduled item with failure notifications configured. From this page, you can add, edit, or remove notification recipients for any scheduled item — without opening each item individually.
-
-To configure failure notifications, select **+ Configure notifications** on the Schedule failures page, choose an item, and enter the recipients. Recipients can be users or groups in your Microsoft Entra tenant. You need at least the **Contributor** role in the workspace to configure notifications.
+The monitoring hub includes a **Schedule failures** page where you can configure email alerts for scheduled item failures across your entire workspace from one place, rather than opening each item individually. Select **Configure notifications**, choose an item, and add recipients. You need at least the **Contributor** role in the workspace to configure notifications.
 
 ## Workspace monitoring
 
@@ -76,4 +74,3 @@ The monitoring hub gives you a real-time view of recent activity, but for deeper
 Unlike the monitoring hub, which provides a visual dashboard for recent activity, workspace monitoring stores raw log data that you can query with KQL or SQL. This enables advanced analysis like identifying long-term performance trends across items, correlating failures across pipelines and notebooks, and building custom Real-Time dashboards for your team's specific monitoring needs.
 
 You enable workspace monitoring in the workspace settings under the **Monitoring** tab. Workspace monitoring retains data for 30 days and is accessible to workspace users with at least a Contributor role. For more information, see [What is workspace monitoring?](/fabric/fundamentals/workspace-monitoring-overview).
-

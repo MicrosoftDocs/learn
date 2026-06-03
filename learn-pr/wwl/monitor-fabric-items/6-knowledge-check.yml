@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Test your knowledge of monitoring in Microsoft Fabric, including the monitoring hub and Activator."
-  ms.date: 05/29/2026
-  author: theresai
+  ms.date: 06/03/2026
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
   ms.custom:
@@ -39,14 +39,14 @@ quiz:
     - content: "Delete and recreate the dataflow."
       isCorrect: false
       explanation: "Incorrect. Recreating the dataflow doesn't address the underlying cause and could introduce additional problems."
-  - content: "How does Activator differ from the monitoring hub in a monitoring strategy?"
+  - content: "Which action available in Activator enables automated remediation of a Fabric job failure — not just notification?"
     choices:
-    - content: "Activator replaces the monitoring hub by providing the same features with additional automation."
+    - content: "Send an email."
       isCorrect: false
-      explanation: "Incorrect. Activator complements the monitoring hub — it automates responses to conditions in data, but doesn't replace the hub's centralized activity tracking."
-    - content: "Activator proactively detects conditions in data and triggers automated actions, while the monitoring hub provides a manual dashboard for reviewing activity status."
+      explanation: "Incorrect. Sending an email notifies someone about the failure but doesn't take any remediation action automatically."
+    - content: "Post a message to a Microsoft Teams channel."
+      isCorrect: false
+      explanation: "Incorrect. Posting to Teams is a notification action. It alerts your team but doesn't fix or respond to the underlying failure."
+    - content: "Run a Fabric activity."
       isCorrect: true
-      explanation: "Correct. The monitoring hub requires you to check it, while Activator continuously monitors data sources and automatically executes actions when defined conditions are met."
-    - content: "Activator is used only for real-time streaming data and can't respond to Fabric workspace events."
-      isCorrect: false
-      explanation: "Incorrect. Activator can monitor Fabric events — such as pipeline failures and semantic model refresh completions — in addition to streaming data sources."
+      explanation: "Correct. Running a Fabric activity — such as a notebook or pipeline — lets Activator automatically respond to the failure, for example by executing a cleanup or retry job."

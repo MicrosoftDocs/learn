@@ -2,19 +2,19 @@
 uid: learn.wwl.monitor-fabric-items
 metadata:
   title: Monitor Activities in Microsoft Fabric
-  description: "Learn how to use the monitoring hub in Microsoft Fabric to track activity status, investigate failures, and view historical run data. Explore how Activator automates responses to data events."
-  ms.date: 05/29/2026
-  author: theresai
+  description: "Learn how to use the monitoring hub in Microsoft Fabric to track activity status, investigate failures, and view historical run data. Explore how Activator responds to Fabric job events with automated alerts and actions."
+  ms.date: 06/03/2026
+  author: theresa-i
   ms.author: theresai
   ms.topic: module-standard-task-based
   ms.service: fabric
 title: Monitor activities in Microsoft Fabric
-summary: Monitoring helps you gain visibility into the health of your data systems. The monitoring hub in Microsoft Fabric collects and aggregates data from Fabric activities. Activator helps you automate responses when patterns or conditions are detected in your data.
+summary: Monitoring helps you gain visibility into the health of your data systems. The monitoring hub in Microsoft Fabric collects and aggregates data from Fabric activities. Activator helps you automate responses to Fabric job events — like pipeline failures and notebook errors — by triggering alerts, Teams messages, and remediation actions.
 abstract: |
   In this module, you learn to:
   - Identify the Fabric activities that should be monitored and establish a monitoring baseline
   - Use the monitoring hub to view activity status, investigate failures, and review historical runs
-  - Describe how Activator automates actions in response to data events
+  - Describe how Activator automates responses to Fabric job events using the Real-Time hub
 prerequisites: |
   Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
 iconUrl: /training/achievements/microsoft-fabric-module.svg
