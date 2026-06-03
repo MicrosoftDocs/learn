@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-active-directory.manage-active-directory-connections
+title: Create and manage Active Directory connections for Azure NetApp Files
+metadata:
+  title: Create and manage Active Directory connections for Azure NetApp Files
+  description: Learn requirements and steps to create, manage, and modify Active Directory connections.
+  ms.date: 05/11/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-manage-active-directory-connections.md)]

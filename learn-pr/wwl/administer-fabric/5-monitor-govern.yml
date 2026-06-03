@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.administer-fabric.monitor-govern
+title: Monitor and govern your Fabric environment
+metadata:
+  title: Monitor and Govern Your Fabric Environment
+  description: "Learn how to use the monitoring hub, admin monitoring workspace, Capacity Metrics app, audit logs, and OneLake catalog Govern tab to keep your Fabric environment healthy and governed."
+  ms.date: 05/27/2026
+  author: theresai
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-monitor-govern.md)]

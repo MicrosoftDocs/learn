@@ -2,11 +2,12 @@
 uid: learn.wwl.develop-ai-agent-with-semantic-kernel.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: Learn how to create Microsoft Foundry Agent Service agents with Microsoft Agent Framework.
   author: buzahid
   ms.author: buzahid
-  ms.date: 02/24/2026
+  ms.date: 5/29/2026
   ms.topic: unit
 durationInMinutes: 2
 content: |

@@ -2,9 +2,10 @@
 uid: learn.wwl.discover-agents-with-a2a.host-a2a-agent-server
 title: Host an A2A server
 metadata:
+  zone_pivot_groups: video-or-text
   title: Host an A2A Server
   description: "Learn how to host your Azure AI Agent over an A2A (Agent-to-Agent) server"
-  ms.date: 02/24/2026
+  ms.date: 5/29/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: unit

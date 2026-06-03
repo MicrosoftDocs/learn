@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-active-directory.exercise-manage-active-directory
+title: Exercise - Manage Active Directory in Azure NetApp Files
+metadata:
+  title: Exercise - Manage Active Directory in Azure NetApp Files
+  description: Exercise to create, modify, and manage Active Directory connections for Azure NetApp Files.
+  ms.date: 05/11/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise-manage-active-directory.md)]

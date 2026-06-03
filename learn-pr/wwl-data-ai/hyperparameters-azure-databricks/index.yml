@@ -18,7 +18,7 @@ abstract: |
   - Distribute hyperparameter tuning across multiple worker nodes.
 prerequisites: |
   Before starting this module, you should be familiar with how to train machine learning models in Azure Databricks.
-iconUrl: /training/achievements/hyperparameters-azure-databricks.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
 - intermediate
 roles:

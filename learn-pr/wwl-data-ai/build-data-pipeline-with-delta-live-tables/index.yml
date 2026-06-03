@@ -17,7 +17,7 @@ abstract: |
   - Use Lakeflow Declarative Pipelines for real time data processing
 prerequisites: |
   Before starting this module, you should be familiar the concept of a data pipeline.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
 - intermediate
 roles:

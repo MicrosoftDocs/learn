@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-multi-agent-systems-azure-zero-trust.implement-tenant-context-data-isolation
+title: Implement tenant context propagation and data isolation
+metadata:
+  title: Implement Tenant Context Propagation and Data Isolation
+  description: "Implement tenant context propagation and data isolation."
+  ms.date: 06/01/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-implement-tenant-context-data-isolation.md)]

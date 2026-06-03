@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0c1acfd5-a8a1-4c75-b0b3-9e1f032cbc0b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 To understand why Foundry IQ represents such a significant advancement, we need to first examine the fundamental challenges that simple AI agents face in enterprise environments and how **Retrieval Augmented Generation** (**RAG**) addresses these limitations.
 
@@ -32,3 +42,5 @@ Through this process, RAG delivers three critical advantages for enterprise AI:
 - **Factual grounding** that anchors responses in actual organizational content to eliminate fabricated information and ensure compliance
 
 While RAG solves the knowledge problem, building it requires significant technical expertise. This is where Microsoft Foundry IQ comes in. Foundry IQ provides a ready-made knowledge platform that eliminates the complexity of custom RAG implementations. Let's explore Foundry IQ in the next unit.
+
+::: zone-end

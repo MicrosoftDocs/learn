@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=62de2eb6-6702-4867-8891-a513f2352428]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Building a workflow is just the first step—real-world automation evolves over time. Maintaining and refining workflows ensures that they remain reliable, understandable, and adaptable as business needs or AI models change. Using Microsoft Foundry's built-in features, you can effectively manage workflow versions, document changes, and keep both visual and YAML representations in sync.
 
 ## YAML and visual representations
@@ -24,3 +35,5 @@ Maintaining workflows is not just about fixing errors—it's about improving cla
 - Leveraging version history to track changes and validate updates.
 
 By combining YAML editing, version control, and thoughtful documentation, you ensure that workflows are robust, maintainable, and ready for enterprise use. This focus on maintainability allows teams to scale automation with confidence and adaptability.
+
+::: zone-end
