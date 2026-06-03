@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-distributed-observability-multi-agent-opentelemetry.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Module assessment."
+  ms.date: 06/08/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Adventure Works' 14 agents each write logs, but when a customer escalates a complaint, the support team can't connect the logs from the product search agent to the order management agent that handled the same customer session. What does the team need to implement?"
+    choices:
+    - content: "Consolidate all agent logs into a single centralized log file so all events from all agents are in one place."
+      isCorrect: false
+      explanation: "A single log file is impractical at scale, creates write contention, and still doesn't establish causal relationships between events from different agents for the same customer interaction. Distributed tracing with a shared trace ID is the correct approach."
+    - content: "Distributed tracing with W3C trace context propagation: a single trace ID generated at the customer request entry point and propagated via traceparent header through every subsequent agent call."
+      isCorrect: true
+      explanation: "The trace ID links all agent spans from the same customer interaction, regardless of which agent or service produced them. All log entries enriched with this trace ID become queryable as a unified interaction timeline, enabling the support team to reconstruct the full customer journey."
+    - content: "Add the customer session ID to each agent's log entries and query by session ID to retrieve related logs."
+      isCorrect: false
+      explanation: "Session IDs improve log query capability but don't establish trace spans with timing relationships. You can find related logs but can't see the causal sequence, duration, or parallel execution structure. Distributed tracing provides both correlation AND structural timing information."
+  - content: "Adventure Works notices that over the past three weeks, the recommendations agent's average token usage has increased 40% without any code changes. Azure Monitor dynamic thresholds haven't triggered because the change happened gradually. Which monitoring approach would have detected this earlier?"
+    choices:
+    - content: "Increase the static alert threshold by 50% to account for natural token usage growth over time."
+      isCorrect: false
+      explanation: "Raising static thresholds accommodates the growth without detecting it as anomalous. The goal is to identify gradual drift, not to update thresholds to match it. A different detection approach is needed."
+    - content: "Daily evaluation sampling on production interactions with token usage as a tracked dimension, combined with a week-over-week trend alert that fires when gradual change exceeds a defined percentage."
+      isCorrect: true
+      explanation: "Trend-based alerting catches gradual drift that point-in-time thresholds miss. Comparing week-over-week baselines rather than current-vs-static-threshold surfaces cumulative changes before they become severe. Combined with production sampling for quality evaluation, this approach detects both performance and behavioral drift."
+    - content: "Implement tail-based sampling that captures all traces where token usage exceeds 5,000 tokens per request."
+      isCorrect: false
+      explanation: "Tail-based sampling captures high-token individual requests but doesn't detect the gradual upward trend across average usage. If the per-request average increases from 1,000 to 1,400 tokens, no individual trace exceeds the 5,000 threshold, so the trend remains invisible."
+  - content: "Three simultaneous Azure Monitor alerts fire for the checkout orchestrator agent: P95 latency increased 60%, error rate reached 8%, and token usage doubled. These all happened within a 3-minute window. What is the best alerting strategy for this scenario?"
+    choices:
+    - content: "Create three separate on-call incidents and assign each to a different team member to investigate in parallel."
+      isCorrect: false
+      explanation: "Three simultaneous alerts on the same agent within 3 minutes almost certainly share a root cause. Splitting them into separate investigations fragments the diagnostic context and duplicates effort. Incident correlation is specifically designed for this pattern."
+    - content: "Correlate the three alerts into a single incident using Azure Monitor alert suppression rules, so the on-call engineer receives one incident with all three signals as context."
+      isCorrect: true
+      explanation: "Alert correlation reduces alert fatigue and preserves investigative context. When multiple metrics across the same agent spike simultaneously, they're symptoms of the same underlying problem. One incident with all signals helps the engineer form an accurate hypothesis rather than investigating each symptom in isolation."
+    - content: "Suppress all three alerts for 30 minutes to determine if the issue self-resolves before paging the on-call engineer."
+      isCorrect: false
+      explanation: "Suppression delays response during active incidents. An 8% error rate and 60% latency spike affecting a checkout orchestrator are impacting customers now. The goal is to reduce noise through correlation—not to delay notification. The combined incident should page immediately."
