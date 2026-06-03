@@ -4,10 +4,10 @@ In this module, you learned about the main deployment types you can use for Java
 
 For more information about Java deployment options and the Azure services described in this module, see:
 
-- [Deploy Java applications on Azure](https://learn.microsoft.com/azure/developer/java/get-started/deploy)
-- [Choose an Azure service for Java application deployment](https://learn.microsoft.com/azure/developer/java/get-started/choose)
-- [Azure Container Apps overview](https://learn.microsoft.com/azure/container-apps/overview)
-- [Azure App Service overview](https://learn.microsoft.com/azure/app-service/overview)
-- [Azure Functions overview](https://learn.microsoft.com/azure/azure-functions/functions-overview)
-- [Azure Kubernetes Service overview](https://learn.microsoft.com/azure/aks/what-is-aks)
-- [Azure Virtual Machines overview](https://learn.microsoft.com/azure/virtual-machines/overview)
+- [Deploy Java applications on Azure](/azure/developer/java/get-started/deploy)
+- [Choose an Azure service for Java application deployment](/azure/developer/java/get-started/choose)
+- [Azure Container Apps overview](/azure/container-apps/overview)
+- [Azure App Service overview](/azure/app-service/overview)
+- [Azure Functions overview](/azure/azure-functions/functions-overview)
+- [Azure Kubernetes Service overview](/azure/aks/what-is-aks)
+- [Azure Virtual Machines overview](/azure/virtual-machines/overview)
