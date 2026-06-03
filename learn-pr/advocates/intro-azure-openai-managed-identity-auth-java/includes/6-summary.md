@@ -1,8 +1,11 @@
-Having completed this module, you now have an understanding of how to control access to applications developed in Azure OpenAI. You have learned to configure authentication using Java, explored the various RBAC roles available in Azure OpenAI, and understood the benefits of using managed identities over API keys. You can describe the different RBAC roles, configure role assignments, and set up keyless authentication for Azure-hosted environments using Java. This knowledge equips you to implement robust security practices in your Azure OpenAI applications.
+Having completed this module, you can describe how Microsoft Entra ID and Azure RBAC help Java applications connect to Azure OpenAI in Microsoft Foundry without API keys. You learned how to assign Azure OpenAI RBAC roles, use DefaultAzureCredential during local development, and use system-assigned or user-assigned managed identities for Azure-hosted workloads.
+
+These practices help you implement keyless authentication so your Java apps can request Azure OpenAI tokens from Microsoft Entra ID and avoid storing credentials in application code or configuration.
 
 ## Further reading/learning
 
 To continue your learning journey, go to:
 
-- [Use Azure OpenAI without keys](/azure/developer/ai/passwordless-connections?tabs=csharp%2Cazure-cli/azure/developer/ai/passwordless-connections)
-- [Azure OpenAI chat app quickstart](https://github.com/Azure-Samples/openai-chat-app-quickstart)
+- [Use Azure OpenAI without keys](/azure/developer/ai/keyless-connections?tabs=java%2Cazure-cli)
+- [How to switch between OpenAI and Azure OpenAI endpoints for Java](/azure/developer/ai/how-to/switching-endpoints#authentication)
+- [Azure Identity client library for Java: DefaultAzureCredential](/java/api/overview/azure/identity-readme?view=azure-java-stable#defaultazurecredential&preserve-view=true)

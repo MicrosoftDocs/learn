@@ -45,8 +45,8 @@ Modernizing IT infrastructure unlocks agility and lays the foundation for AI inn
 
 Building intelligent applications is central to digital transformation. Azure offers a rich set of AI services and developer tools to create custom solutions that enhance productivity and customer engagement:
 
-- **Azure AI Studio**: Unified environment for building, testing, and deploying AI apps and agents.
-- **Azure OpenAI Service**: Access to powerful language models like GPT and Codex for natural language understanding and generation.
+- **Microsoft Foundry**: Unified platform for building, testing, and deploying AI apps and agents—bringing together models, tools, and enterprise-readiness capabilities in one environment.
+- **Azure OpenAI Service**: Access to powerful language models like GPT-4o and GPT-4 for natural language understanding and generation.
 - **GitHub Copilot**: AI-assisted coding to accelerate development and automate routine tasks.
 - **Azure AI Search**: Intelligent search experiences with semantic ranking, vector search, and RAG capabilities.
 - **Azure Document Intelligence**: Extract structured data from documents for automation and decision-making.
