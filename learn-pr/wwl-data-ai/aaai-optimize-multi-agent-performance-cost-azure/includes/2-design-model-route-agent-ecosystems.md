@@ -1,3 +1,5 @@
+Microsoft Foundry provides multiple Azure OpenAI Service deployment tiers, from lightweight models for simple lookups to high-capability models for complex reasoning tasks. You can route requests to different tiers based on task complexity, matching cost to capability across your agent ecosystem.
+
 Organizations deploying multi-agent systems quickly discover that using the same model for every agent is the fastest path to cost overruns. Adventure Works' shipping status agent doesn't need GPT-4o to parse a tracking number and look up delivery information — but the return policy interpreter absolutely needs advanced reasoning to handle ambiguous edge cases. The difference in per-request cost between these models can be 10x, and at millions of daily requests, choosing the right model for each task determines whether the system is financially sustainable.
 
 ## The multi-agent model routing problem
@@ -28,7 +30,7 @@ The classification logic uses lightweight heuristics rather than model inference
 
 ## Dynamic model selection with quality floor protection
 
-Once the system classifies request complexity, it selects the appropriate Azure AI Foundry deployment and invokes the routed model. But complexity classification isn't perfect — occasionally a request classified as tier 1 actually requires tier 2 reasoning, and the initial model fails to produce a quality response. Quality floor protection prevents these misclassifications from degrading customer experience.
+Once the system classifies request complexity, it selects the appropriate Microsoft Foundry deployment and invokes the routed model. But complexity classification isn't perfect — occasionally a request classified as tier 1 actually requires tier 2 reasoning, and the initial model fails to produce a quality response. Quality floor protection prevents these misclassifications from degrading customer experience.
 
 After each routed model invocation, a quality validator scores the response on a 0-100 scale using a lightweight evaluation model. The score checks for: response completeness (did the model answer the question?), factual consistency (does the response align with retrieved context?), and confidence indicators (did the model express uncertainty or provide hedged responses?). If the quality score falls below the tier's minimum threshold, the system automatically retries with the next tier up.
 
@@ -131,20 +133,9 @@ Model routing transforms multi-agent cost optimization from a blunt "use cheaper
 > [!NOTE]
 > **Open-source model alternatives:** Azure-hosted GPT-4o-mini and GPT-4o cover most routing scenarios, but cost-optimized open-source models from Hugging Face \u2014 such as Phi-4-mini, Mistral-7B, or Llama-3.1-8B \u2014 are valid routing targets for the "simple" and "moderate" tiers when deployed on Azure Machine Learning managed endpoints or serverless inference. Open-source models reduce per-token cost further but require you to manage model quality benchmarking, version pinning, and serving infrastructure. Incorporate them into the routing tier where quality floors are demonstrably met.
 
-## Unit summary
+## Key takeaways
 
-- **Task complexity classification** categorizes requests into three tiers (simple, moderate, complex) using lightweight heuristics rather than model inference to keep classification costs below routing savings.
-- **Model tier matching** routes simple lookups to GPT-4o-mini (5-10x cheaper), moderate reasoning to GPT-4o, and complex policy interpretation to GPT-4o or o-series models.
-- **Quality floor protection** validates each response with a lightweight scorer and automatically retries with the next tier up if quality falls below the tier's minimum threshold.
-- **Routing metrics** track over-routing (requests that could use cheaper models) and under-routing (frequent quality floor retries) to guide monthly classification refinement.
-- **Data-driven optimization** converges on the ideal routing distribution over time, reducing average per-request cost by 30% while maintaining quality metrics.
-
-## Check your understanding
-
-**1. A complexity classifier routes "simple" customer queries to GPT-4o-mini and "complex" queries to GPT-4o. A quality check reveals that 15% of GPT-4o-mini responses fail the quality floor. What should you do?**
-
-- A. Switch all requests to GPT-4o to ensure quality
-- B. Adjust the complexity classifier's thresholds to route borderline queries to GPT-4o, reducing the misclassification rate while keeping truly simple queries on the cheaper model
-- C. Remove the quality floor check since some quality loss is expected with cheaper models
-
-***Correct answer: B.*** The goal is to find the classification boundary that minimizes cost while meeting quality standards. Adjusting thresholds to route ambiguous cases to the more capable model reduces misclassification without abandoning cost savings on clearly simple requests.
+- Model routing is a critical component of multi-agent systems, enabling cost-effective and high-quality responses.
+- Continuous monitoring and optimization of routing decisions are essential for maintaining performance and cost efficiency.
+- Caching strategies at multiple levels can significantly reduce the number of model inference calls and associated costs.
+- Open-source models offer a cost-effective alternative for certain use cases, but require careful management and benchmarking.

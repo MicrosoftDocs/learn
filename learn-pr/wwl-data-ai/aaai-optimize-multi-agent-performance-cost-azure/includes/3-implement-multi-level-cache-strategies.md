@@ -1,10 +1,12 @@
-The fastest and cheapest model call is the one you never make. Adventure Works processes thousands of similar customer queries every day: "Where is my order?", "What's your return policy?", and "Do you ship to Canada?" Answering each query with a fresh model inference wastes compute and money when cached responses would serve most customers perfectly. But naive caching — simple key-value storage of exact query strings — misses 90% of cache opportunities because customers phrase the same question dozens of different ways. Effective multi-agent caching requires a layered strategy that addresses prompt reuse, semantic similarity, and deterministic result storage.
+Azure OpenAI Service includes built-in prompt prefix caching, and Azure Cache for Redis provides the infrastructure for semantic and result-level caching in multi-agent systems. Together, these services reduce redundant inference calls and lower the per-request cost at scale.
+
+Every inference call that doesn't reach the model costs nothing and completes instantly. Adventure Works processes thousands of similar customer queries every day: "Where is my order?", "What's your return policy?", and "Do you ship to Canada?" Answering each query with a fresh model inference wastes compute and money when cached responses would serve most customers perfectly. But naive caching — simple key-value storage of exact query strings — misses 90% of cache opportunities because customers phrase the same question dozens of different ways. Effective multi-agent caching requires a layered strategy that addresses prompt reuse, semantic similarity, and deterministic result storage.
 
 ## Three cache levels for multi-agent systems
 
 Multi-agent caching operates at three distinct levels, each optimizing a different aspect of the inference pipeline. The levels stack: a request flows through all three, and each level provides incremental cost reduction.
 
-**Prompt caching** leverages Azure OpenAI's built-in prefix caching to reduce costs when the system prompt remains constant across requests. Adventure Works' agents use long, detailed system prompts (1,500-3,000 tokens) that define the agent's role, provide policy context, and establish response formatting. These prompts never change within a deployment version. Azure OpenAI caches the prompt prefix automatically after the first request, and subsequent requests using the same prefix receive approximately 50% cost reduction on input tokens. The optimization is free — no infrastructure changes needed — but requires designing system prompts with stable prefixes. Variable content (customer context, retrieved documents) must appear after the cached prefix to maximize cache hit rates.
+**Prompt caching** uses Azure OpenAI's built-in prefix caching to reduce costs when the system prompt remains constant across requests. Adventure Works' agents use long, detailed system prompts (1,500-3,000 tokens) that define the agent's role, provide policy context, and establish response formatting. These prompts never change within a deployment version. Azure OpenAI caches the prompt prefix automatically after the first request, and subsequent requests using the same prefix receive approximately 50% cost reduction on input tokens. The optimization is free — no infrastructure changes needed — but requires designing system prompts with stable prefixes. Variable content (customer context, retrieved documents) must appear after the cached prefix to maximize cache hit rates.
 
 **Semantic caching** addresses the "same question, different words" problem using embedding similarity. Adventure Works uses two semantic caching patterns based on deployment constraints. The lab baseline uses local cosine matching: generate a query embedding, scan a bounded Redis key set, and compute similarity in Python. If the previous question "What's the status of my delivery?" matches with 0.92 similarity, return the cached response without invoking the model. For vector-capable Redis deployments, the same pattern can be implemented with native vector search. Semantic caching requires careful threshold tuning: too low (0.80) produces false hits where dissimilar questions return incorrect cached responses, while too high (0.98) misses legitimate cache opportunities.
 
@@ -22,7 +24,7 @@ The three levels compound: prompt caching reduces cost for all requests, semanti
 
 Semantic caching transforms natural language questions into high-dimensional vectors that capture meaning rather than exact phrasing. When a request arrives, the system generates an embedding and then scans a bounded Redis key set to find semantically equivalent questions. Similarity is computed locally with numpy cosine matching rather than server-side Redis vector search.
 
-This unit's lab implementation uses local cosine matching so the workflow runs on standard Redis tiers without extra Redis modules. In production environments that provide vector search support, you can replace the local scan with native vector queries while keeping the same threshold calibration and invalidation policies.
+The lab implementation uses local cosine matching so the workflow runs on standard Redis tiers without extra Redis modules. In production environments that provide vector search support, you can replace the local scan with native vector queries while keeping the same threshold calibration and invalidation policies.
 
 The semantic cache stores three components for each entry: the embedding vector of the original question, the agent's response to that question, and metadata including timestamp, agent ID, and data dependency tags. When searching for a cache hit, the workflow loads a bounded key set and computes cosine similarity scores in-process. If the highest score exceeds the threshold (0.92), the system returns the cached response. If no entry exceeds the threshold, the request proceeds to model inference, and the resulting response gets cached for future requests.
 
@@ -115,7 +117,7 @@ class SemanticCache:
 
 ## Cache invalidation strategies for distributed agent systems
 
-Cache invalidation is famously one of the hardest problems in computer science, and multi-agent systems amplify the challenge. When product pricing changes, every cached response that mentioned that product's price becomes incorrect. When policy updates, every cached policy explanation becomes outdated. Adventure Works needs invalidation strategies that prevent stale responses without purging so aggressively that cache hit rates collapse.
+Maintaining cache consistency across a distributed multi-agent system is genuinely complex: a single data change can simultaneously invalidate cached responses across multiple independent agents. When product pricing changes, every cached response that mentioned that product's price becomes incorrect. When policy updates, every cached policy explanation becomes outdated. Adventure Works needs invalidation strategies that prevent stale responses without purging so aggressively that cache hit rates collapse.
 
 **Dependency tagging** associates each cached response with the data entities it references. When caching a product recommendation response, tag it with the product IDs mentioned in the response. When caching a shipping estimate, tag it with the warehouse ID and carrier ID. When product 12345's price changes, invalidate all cache entries tagged with product 12345. The tagging system requires extracting entity references from responses — use simple regex patterns for structured IDs or a lightweight NER model for complex references.
 
@@ -147,10 +149,9 @@ At production scale, semantic caching pays for itself in under three months. The
 
 With intelligent routing selecting the right model and multi-level caching eliminating redundant inference, Adventure Works has cut per-request costs significantly. The next optimization frontier: making each request that does require model inference as token-efficient as possible through aggressive context management.
 
-## Unit summary
+## Key takeaways
 
-- **Three cache levels** stack to compound savings: prompt caching (automatic 50% input token reduction), semantic caching (eliminates 20-40% of model calls), and result caching (eliminates 10-25% more for deterministic queries).
-- **Semantic caching** uses embedding similarity with local cosine matching to identify equivalent questions phrased differently, with a 0.92 threshold balancing cache hits against false matches.
-- **Cache invalidation** combines time-based TTL, dependency tagging for data entity changes, and version-based invalidation for schema or policy updates to prevent stale responses.
-- **Cascading invalidation** traces multi-agent dependencies so that upstream data changes (pricing updates) also purge downstream agent caches (recommendation responses).
-- **ROI analysis** shows caching infrastructure has high fixed costs but scales efficiently, paying for itself in under three months at production request volumes.
+- Multi-level caching is a powerful technique for reducing the cost of model inference in multi-agent systems.
+- Dependency tagging, version-based invalidation, and cascading invalidation are essential strategies for maintaining cache freshness and accuracy.
+- Cost-benefit analysis is crucial for determining the viability of caching infrastructure investments.
+- At large scale, caching can provide significant cost savings and improve overall system performance.

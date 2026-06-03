@@ -13,7 +13,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "Adventure Works routes a shipping status lookup request to GPT-4o-mini (Tier 1). The model returns a response, but the quality score falls below the 0.80 threshold. The quality floor protection triggers. What happens next?"
+  - content: "Adventure Works routes a shipping status lookup request to GPT-4o-mini (Tier 1). The model returns a response, but the quality score falls below the tier 1 quality floor of 75. The quality floor protection triggers. What happens next?"
     choices:
     - content: "The request fails with an error and the customer sees an apology message, since the smaller model couldn't handle the request."
       isCorrect: false

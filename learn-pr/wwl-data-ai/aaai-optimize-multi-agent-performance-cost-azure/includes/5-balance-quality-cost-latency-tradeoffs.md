@@ -1,3 +1,5 @@
+Microsoft Foundry's deployment and evaluation capabilities let you configure model tiers, monitor quality signals, and run A/B tests to find the optimal balance between quality, cost, and latency for each customer segment.
+
 Optimization creates tension. Adventure Works can achieve the lowest possible cost by routing everything to GPT-4o-mini, caching aggressively with loose similarity thresholds, and pruning context to bare minimums — but customer satisfaction would collapse. Conversely, maximizing quality by using GPT-4o for everything, maintaining full conversation history, and bypassing caches delivers excellent experiences but destroys the budget. Real-world multi-agent systems require deliberate, measured tradeoffs that balance quality, cost, and latency based on business priorities and customer expectations.
 
 ## The optimization triangle for multi-agent systems
@@ -36,7 +38,7 @@ A typical experiment tests whether increasing the semantic cache similarity thre
 - **Cost impact**: Cache hit rate with variant vs. control. If hit rate drops from 35% to 28%, does the improved quality justify 7% more model calls?
 - **Latency impact**: Does the higher threshold add meaningful lookup time? Are P95 latency targets still met?
 
-Azure AI Foundry's evaluation capabilities enable systematic comparison. Both control and variant configurations run against the same held-out evaluation set of 500 labeled customer interactions. The evaluation computes accuracy, response quality scores, hallucination rates, and policy compliance for both configurations. If the variant shows statistically significant quality improvement (p < 0.05) with acceptable cost increase (< 10%), the change ships to production.
+Microsoft Foundry's evaluation capabilities enable systematic comparison. Both control and variant configurations run against the same held-out evaluation set of 500 labeled customer interactions. The evaluation computes accuracy, response quality scores, hallucination rates, and policy compliance for both configurations. If the variant shows statistically significant quality improvement (p < 0.05) with acceptable cost increase (< 10%), the change ships to production.
 
 ## Real-time feedback signals and circuit breakers
 
@@ -80,21 +82,20 @@ With intelligent model routing, multi-level caching, token budget management, an
 
 The optimization strategies in this unit address cost (model routing, token budgets) and quality (A/B testing, circuit breakers). Parallelism addresses **task duration** \u2014 the wall-clock time a workflow takes to complete, which directly affects latency-tier SLAs and the user's perceived responsiveness.
 
-Sequential agent execution takes time equal to the sum of all agent durations. Parallel execution (using `asyncio.gather` as taught in LP1 M2 Unit 5) takes time equal to the slowest agent's duration. For workflows with independent sub-tasks, the latency reduction can be dramatic: four independent 15-second agents running sequentially take 60 seconds; running in parallel, they complete in 15 seconds.
+Sequential agent execution takes time equal to the sum of all agent durations. Parallel execution (using `asyncio.gather`) takes time equal to the slowest agent's duration. For workflows with independent sub-tasks, the latency reduction can be dramatic: four independent 15-second agents running sequentially take 60 seconds; running in parallel, they complete in 15 seconds.
 
-Parallelism in the optimization lens introduces a distinct tradeoff from the sequential vs. parallel architectural decision: **peak quota consumption**. Sequential execution uses token quota at one-agent-at-a-time rates; parallel execution uses it at N-agents-simultaneously rates. If your Azure AI Foundry deployment has a 1,000 tokens-per-minute quota and each agent uses 300 tokens, you can run three agents in parallel before hitting throttling. Exceeding quota at parallel scale triggers retry cycles that can negate the latency gains.
+Parallelism in the optimization lens introduces a distinct tradeoff from the sequential vs. parallel architectural decision: **peak quota consumption**. Sequential execution uses token quota at one-agent-at-a-time rates; parallel execution uses it at N-agents-simultaneously rates. If your Microsoft Foundry deployment has a 1,000 tokens-per-minute quota and each agent uses 300 tokens, you can run three agents in parallel before hitting throttling. Exceeding quota at parallel scale triggers retry cycles that can negate the latency gains.
 
 Design parallelism decisions with the optimization triangle in mind:
+
 - **Parallelize** when task duration (latency) is the binding SLA constraint and you have quota headroom.
 - **Keep sequential** when cost is the binding constraint, or when downstream agents need results from upstream agents (true dependencies preclude parallelism regardless of quota).
-- **Batch** (as covered in LP1 M2 Unit 5) when throughput matters more than individual request latency \u2014 batch processing is higher-latency but lower-cost-per-unit.
+- **Batch** when throughput matters more than individual request latency — batch processing is higher-latency but lower-cost-per-unit.
 
-Instrument parallel workflows with the span-level timing from LP4 M1 to identify which parallel agents are your critical path \u2014 the slowest agent determines the workflow's completion time. Optimization effort on non-critical-path agents doesn't improve end-to-end latency.
+Instrument parallel workflows with distributed tracing span data to identify which parallel agents are your critical path \u2014 the slowest agent determines the workflow's completion time. Optimization effort on non-critical-path agents doesn't improve end-to-end latency.
 
-## Unit summary
+## Key takeaways
 
-- **The optimization triangle** frames quality, cost, and latency as competing dimensions where improving one typically degrades at least one other, requiring deliberate tradeoff decisions.
-- **Customer segment profiles** define different optimization targets for gold members (quality-first), standard customers (balanced), and bulk API clients (cost-first) based on business value and service expectations.
-- **A/B testing** validates optimization changes by comparing control and variant configurations on quality, cost, and latency distributions before full deployment.
-- **Circuit breakers** automatically revert aggressive optimizations when real-time feedback signals (customer ratings, escalation rates, abandonment) detect quality degradation.
-- **SLA definitions** translate abstract tradeoffs into concrete, measurable commitments per customer segment, creating accountability for both customer experience and cost control.
+- Parallelism is a powerful technique for reducing task duration and improving latency, but it introduces the risk of increased peak quota consumption.
+- When designing parallel workflows, it's important to consider the impact on token quota usage and plan accordingly.
+- Instrumentation and monitoring are essential for identifying the critical path in parallel workflows and optimizing performance.

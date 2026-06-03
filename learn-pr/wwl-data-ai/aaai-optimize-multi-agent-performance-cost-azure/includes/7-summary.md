@@ -8,11 +8,11 @@ Token budget management prevents context bloat in long multi-agent conversations
 
 Customer segment-based optimization profiles recognize that not all interactions deserve identical resource allocation. Gold members receive premium service with higher-tier models and comprehensive context, standard customers get balanced quality at sustainable cost, and bulk API clients receive efficient throughput-optimized service. Clear SLAs per segment create accountability for both customer experience and cost control.
 
-These optimization strategies compound. Model routing reduces per-request costs by 30-40%, caching eliminates 60-70% of inference costs, and token management cuts context costs by another 40-50%. Combined, Adventure Works reduced their AI infrastructure costs from 140% of budget to 85% while maintaining customer satisfaction scores and meeting latency targets across all segments.
+These optimization strategies compound. Intelligent model routing eliminates overpayment on simple queries, multi-level caching can cut 60-70% of inference costs at production scale, and token management prevents context bloat from multiplying costs across long agent chains. Together, Adventure Works brought their AI infrastructure costs back within budget while maintaining customer satisfaction scores and meeting latency targets across all segments.
 
 ## Learn more
 
 - [Azure OpenAI Service prompt caching documentation](https://learn.microsoft.com/azure/ai-services/openai/how-to/prompt-caching)
 - [Azure Cache for Redis with vector search](https://learn.microsoft.com/azure/azure-cache-for-redis/cache-tutorial-vector-similarity)
-- [Azure AI Foundry model deployment and optimization](https://learn.microsoft.com/azure/ai-studio/how-to/deploy-models-openai)
+- [Microsoft Foundry model deployment and optimization](https://learn.microsoft.com/azure/ai-foundry/how-to/deploy-models-openai)
 - [Token optimization strategies for large language models](https://learn.microsoft.com/azure/ai-services/openai/how-to/latency)

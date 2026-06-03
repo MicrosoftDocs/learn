@@ -1,3 +1,5 @@
+Azure OpenAI Service meters usage by input and output tokens, making token consumption a direct cost driver in multi-agent systems that process long conversation chains.
+
 A customer contacts Adventure Works about a complex return situation. The orchestrator agent analyzes the request and routes to the order lookup agent, which finds the order and passes context to the eligibility agent, which checks return policy and consults the exception handling agent, which escalates to the approval agent. By the time the fifth agent in the chain processes the request, the accumulated context includes: the original customer message (150 tokens), the order lookup results (400 tokens), the policy retrieval (800 tokens), the exception analysis (300 tokens), and conversation history (500 tokens). Total context: 2,150 tokens. The actual question the approval agent needs to answer requires maybe 200 tokens of relevant context. Token waste at scale creates cost overruns — Adventure Works needs systematic context management to keep token budgets under control.
 
 ## Token budget creep in multi-agent conversations
@@ -173,15 +175,14 @@ Budget enforcement works through priority-based pruning. The assembler categoriz
 
 Logging budget violations helps identify optimization opportunities. Each time an agent exceeds its token budget and triggers compression, the system logs the violation with context about what was compressed and why. Monthly budget analysis reveals which agents consistently exceed their budgets — these agents either need larger budgets (reassess task complexity) or better-designed system prompts (remove verbose instructions). Adventure Works discovered that three agents regularly exceeded budgets because their system prompts included 800-token policy documents that could have been moved to retrieval tools, freeing budget for conversation context.
 
-> [!TIP]
-> **Pause and reflect:** An agent consistently exceeds its 4,000-token budget because tool results inject full API responses. How would you redesign the tool result schemas to reduce token consumption without risking the agent missing critical information it needs for accurate decisions?
+An agent that consistently exceeds its token budget because tool results inject full API responses is a good candidate for tool result schema redesign. Consider which fields the agent actually references in its decisions, and extract only those fields before injecting results into context.
 
 Token budget optimization is the final pillar of cost control. Combined with intelligent model routing and multi-level caching, these three strategies transform Adventure Works' multi-agent system from a cost liability into a sustainable, scalable platform. The last step: balancing these cost optimizations against quality and latency requirements to ensure customer experience doesn't suffer in the pursuit of efficiency.
 
-## Unit summary
+## Key takeaways
 
-- **Token budget creep** grows through three mechanisms: context accumulation across agent chains, conversation history bloat in multi-turn sessions, and tool result over-injection with unused data fields.
-- **Context digests** replace full conversation history with compressed key-value summaries that each agent reads and updates incrementally, reducing downstream context by 80% or more.
-- **Rolling context windows** retain only the three most recent conversation turns plus importance-filtered earlier turns that contain stated preferences, commitments, or critical context.
-- **Per-agent token budgets** enforce maximum context sizes through priority-based pruning, compressing lowest-priority components first when assembled context exceeds limits.
-- **Tool result compression** extracts only required fields from API responses before context injection, reducing per-tool-call token usage from hundreds of tokens to dozens.
+- Per-agent token budgets are essential for controlling the cost of model inference in multi-agent systems.
+- Priority-based pruning is a powerful technique for managing context size within token limits.
+- Logging and analyzing budget violations helps identify optimization opportunities.
+- Tool result schema redesign can significantly reduce the token usage of multi-agent systems.
+- Balancing cost optimizations with quality and latency requirements is crucial for maintaining customer experience.
