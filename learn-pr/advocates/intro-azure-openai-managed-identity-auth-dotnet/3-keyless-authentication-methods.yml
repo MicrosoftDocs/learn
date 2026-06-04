@@ -3,10 +3,10 @@ uid: learn.intro-managed-identity-azure-openai-dotnet.keyless-authentication-met
 title: Keyless authentication methods
 metadata:
   title: Keyless authentication methods
-  description: Learn to implement keyless authentication methods in Azure OpenAI integration with managed identity and authentication in .NET
-  ms.date: 01/09/2025
-  author: sarah-yo
-  ms.author: sayoung
+  description: Learn to implement keyless authentication methods in Azure OpenAI in Microsoft Foundry Models integration with managed identity and authentication in .NET
+  ms.date: 05/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 2
 content: |

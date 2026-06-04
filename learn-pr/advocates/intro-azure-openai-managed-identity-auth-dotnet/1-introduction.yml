@@ -3,10 +3,10 @@ uid: learn.intro-managed-identity-azure-openai-dotnet.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to Azure OpenAI integration with managed identity and authentication in .NET
-  ms.date: 01/09/2025
-  author: sarah-yo
-  ms.author: sayoung
+  description: Introduction to Azure OpenAI in Microsoft Foundry Models integration with managed identity and authentication in .NET
+  ms.date: 05/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 1
 content: |

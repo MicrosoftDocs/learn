@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.intro-managed-identity-azure-openai-dotnet
 metadata:
-  ms.author: sayoung
-  author: sarah-yo
-  ms.date: 01/09/2025
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 05/20/2026
   ms.update-cycle: 180-days
-  title: Introduction to using Managed Identity to authenticate to Azure OpenAI with .NET
-  description: How to implement role based access control and managed identity authentication to Azure OpenAI with .NET.
+  title: Introduction to using Managed Identity to authenticate to Azure OpenAI in Microsoft Foundry Models with .NET
+  description: How to implement role based access control and managed identity authentication to Azure OpenAI in Microsoft Foundry Models with .NET.
   ms.topic: module
   ms.collection: ce-advocates-ai-copilot
   ms.service: microsoft-foundry
-title: Introduction to using Managed Identity to authenticate to Azure OpenAI with .NET
-summary: Learn how to use managed identity to authenticate to Azure OpenAI in .NET applications
+title: Introduction to using Managed Identity to authenticate to Azure OpenAI in Microsoft Foundry Models with .NET
+summary: Learn how to use managed identity to authenticate .NET applications to Azure OpenAI in Microsoft Foundry Models
 abstract: |
  After completing this module, you'll be able to:
-  - Describe the different RBAC roles for use in Azure OpenAI and understand how to configure role assignments
-  - Understand the differences between using API keys and managed identities within Azure OpenAI
-  - Understand how to configure keyless authentication to Azure OpenAI for local development for .NET applications
-  - Understand how to configure keyless authentication to Azure OpenAI for Azure-hosted environments for .NET applications
+  - Describe the different RBAC roles for use in Azure OpenAI in Microsoft Foundry Models and understand how to configure role assignments
+  - Understand the differences between using API keys and managed identities within Azure OpenAI in Microsoft Foundry Models
+  - Understand how to configure keyless authentication to Azure OpenAI in Microsoft Foundry Models for local development for .NET applications
+  - Understand how to configure keyless authentication to Azure OpenAI in Microsoft Foundry Models for Azure-hosted environments for .NET applications
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
   - .NET programming
