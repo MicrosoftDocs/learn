@@ -6,6 +6,8 @@ AI is no longer a nice to have—it’s a competitive necessity. In this module,
 - Organization and Culture
 - AI Governance
 
+These drivers align with the pillars of Microsoft's agentic AI adoption maturity model, giving you a consistent approach whether you're deploying copilots, agents, or custom AI solutions.
+
 Across the framework, you see how to align AI with strategic priorities, build a scalable and secure foundation, accelerate adoption with the right tools, and govern responsibly. Each  AI readiness driver connects to real decisions you make as a leader: which use cases to prioritize, how to measure value, what capabilities to invest in, and how to manage risk.
 
 :::image type="content" source="../media/01-readiness-drivers.png" alt-text="Diagram of the five readiness drivers.":::

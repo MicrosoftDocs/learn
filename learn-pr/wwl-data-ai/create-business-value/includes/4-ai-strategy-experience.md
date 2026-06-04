@@ -44,6 +44,7 @@ Match the capability to the problem to avoid over engineering. Pick prebuilt ser
 - Forecasting and anomaly detection for operations
 - Computer vision for inspection or quality control
 - RAG & semantic search for knowledge discovery
+- Copilots and AI agents for workflow automation and human-AI collaboration
 
 The right pilots and metrics build confidence, sharpen execution, and create a playbook for repeatable, responsible AI deployment.
 
