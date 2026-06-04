@@ -5,8 +5,8 @@ metadata:
   description: The reliability of your systems, services and products has a direct impact on your success. Learn the modern operations principles and practices (and the Azure features that support them) that will help you achieve the level of reliability you need.
   brand: azure
   ms.date: 05/19/2020
-  author: dnblankedelman
-  ms.author: dnb
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: learning-path
   ms.contributors:
   - dnb-06032020

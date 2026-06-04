@@ -5,8 +5,8 @@ metadata:
   title: "Improve your reliability with modern operations practices: An introduction"
   description: Discover a map for navigating reliability challenges and sustainably achieving the appropriate level of reliability in your systems, services, and products.
   ms.date: 04/12/2026
-  author: dnblankedelman
-  ms.author: dnb
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
