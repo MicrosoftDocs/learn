@@ -1,6 +1,6 @@
 Azure OpenAI Service meters usage by input and output tokens, making token consumption a direct cost driver in multi-agent systems that process long conversation chains.
 
-A customer contacts Adventure Works about a complex return situation. The orchestrator agent analyzes the request and routes to the order lookup agent, which finds the order and passes context to the eligibility agent, which checks return policy and consults the exception handling agent, which escalates to the approval agent. By the time the fifth agent in the chain processes the request, the accumulated context includes: the original customer message (150 tokens), the order lookup results (400 tokens), the policy retrieval (800 tokens), the exception analysis (300 tokens), and conversation history (500 tokens). Total context: 2,150 tokens. The actual question the approval agent needs to answer requires maybe 200 tokens of relevant context. Token waste at scale creates cost overruns — Adventure Works needs systematic context management to keep token budgets under control.
+A customer contacts Adventure Works about a complex return situation. The orchestrator agent analyzes the request and routes to the order lookup agent, which finds the order and passes context to the eligibility agent, which checks return policy and consults the exception handling agent, which escalates to the approval agent. By the time the fifth agent in the chain processes the request, the accumulated context includes: the original customer message (150 tokens), the order lookup results (400 tokens), the policy retrieval (800 tokens), the exception analysis (300 tokens), and conversation history (500 tokens). Total context: 2,150 tokens. The actual question the approval agent needs to answer requires maybe 200 tokens of relevant context. Token waste at scale creates cost overruns—Adventure Works needs systematic context management to keep token budgets under control.
 
 ## Token budget creep in multi-agent conversations
 
@@ -18,17 +18,17 @@ Instead of passing full conversation history and all previous agents' outputs to
 
 The digest format uses a key-value structure: customer identified (true/false), customer tier (gold/standard/basic), order number (if found), order status (if retrieved), return eligibility (if determined), exception required (true/false), approval status (pending/approved/rejected). Each agent in the chain reads the relevant fields from the digest, performs its task, and updates only the fields it's responsible for. The downstream agent receives the updated digest plus minimal context about what the previous agent decided, not the full reasoning chain.
 
-For example, the order lookup agent receives the customer's question and the empty digest. It finds order #12345, updates the digest with order number and status, and passes control to the eligibility agent. The eligibility agent receives the digest (which now includes the order number), retrieves the return policy, determines eligibility, updates the digest, and passes to the exception agent. The exception agent sees only the digest fields relevant to its decision — it doesn't need the full order lookup results or the detailed policy retrieval that the eligibility agent used.
+For example, the order lookup agent receives the customer's question and the empty digest. It finds order #12345, updates the digest with order number and status, and passes control to the eligibility agent. The eligibility agent receives the digest (which now includes the order number), retrieves the return policy, determines eligibility, updates the digest, and passes to the exception agent. The exception agent sees only the digest fields relevant to its decision—it doesn't need the full order lookup results or the detailed policy retrieval that the eligibility agent used.
 
 Summarization reduces token usage but introduces risk: if the summary loses critical information, downstream agents make incorrect decisions. Adventure Works mitigates this risk through summary validation. After generating a digest update, a lightweight validation model checks whether the summary preserves all facts that appeared in the original context. If the validator detects information loss, the system falls back to full context for that request and logs the failure for digest schema refinement.
 
 ## Rolling context windows with importance filtering
 
-Multi-turn customer service conversations naturally focus on recent exchanges — the customer's question from 10 minutes ago is rarely relevant to their current question unless it's part of an ongoing issue. Rolling context windows keep only the N most recent conversation turns, dramatically reducing token usage while maintaining coherent conversations.
+Multi-turn customer service conversations naturally focus on recent exchanges—the customer's question from 10 minutes ago is rarely relevant to their current question unless it's part of an ongoing issue. Rolling context windows keep only the N most recent conversation turns, dramatically reducing token usage while maintaining coherent conversations.
 
 Adventure Works implements a 3-turn rolling window: the system retains the three most recent customer-agent exchanges (six messages total) plus an optional importance-filtered selection from earlier in the conversation. The importance filter identifies turns that should be retained beyond the window: turns where the customer explicitly stated a preference ("I prefer email communication"), turns where critical context was established ("This is for my business account, not personal"), and turns where the agent made a commitment ("I'll follow up with you by Friday").
 
-Importance classification uses a small classifier model that scores each conversation turn on a 0-1 scale for long-term relevance. Turns scoring above 0.75 are flagged as "important" and retained outside the rolling window. The classifier is trained on historical conversation data where human reviewers labeled which past turns were referenced in later turns — if turn 3 was referenced in turn 15, turn 3 was important and should have been retained.
+Importance classification uses a small classifier model that scores each conversation turn on a 0-1 scale for long-term relevance. Turns scoring above 0.75 are flagged as "important" and retained outside the rolling window. The classifier is trained on historical conversation data where human reviewers labeled which past turns were referenced in later turns—if turn 3 was referenced in turn 15, turn 3 was important and should have been retained.
 
 ```python
 from openai import AzureOpenAI
@@ -74,7 +74,7 @@ class ContextAssembler:
         return digest
 ```
 
-The `build_digest` method scans Adventure Works conversation history and extracts structured facts — customer tier, order number, return eligibility — into a compact dictionary. This digest replaces verbose conversation replay with a few key-value pairs, cutting hundreds of tokens down to a single line of established context.
+The `build_digest` method scans Adventure Works conversation history and extracts structured facts—customer tier, order number, return eligibility—into a compact dictionary. This digest replaces verbose conversation replay with a few key-value pairs, cutting hundreds of tokens down to a single line of established context.
 
 ```python
     def filter_important_turns(self, conversation_history, importance_threshold=0.75):
@@ -104,7 +104,7 @@ The `build_digest` method scans Adventure Works conversation history and extract
         return important_turns
 ```
 
-Not every past conversation turn deserves retention. The `filter_important_turns` method scores each turn using keyword heuristics — flagging explicit customer preferences, agent commitments, and account type declarations — so the assembler can selectively retain high-value turns outside the rolling window without consuming budget on routine exchanges.
+Not every past conversation turn deserves retention. The `filter_important_turns` method scores each turn using keyword heuristics—flagging explicit customer preferences, agent commitments, and account type declarations—so the assembler can selectively retain high-value turns outside the rolling window without consuming budget on routine exchanges.
 
 ```python
     def assemble_context(self, conversation_history, digest, system_prompt, tool_results, token_budget):
@@ -173,7 +173,7 @@ Adventure Works assigns each agent an explicit token budget that defines the max
 
 Budget enforcement works through priority-based pruning. The assembler categorizes context components by priority: system prompt (priority 1, never pruned), digest (priority 2, rarely pruned), tool results (priority 3, compressed first), important conversation turns (priority 4, pruned if necessary), and rolling window turns (priority 5, summarized if budget is tight). When the assembled context exceeds the budget, the assembler removes or compresses the lowest-priority components first until the context fits within the limit.
 
-Logging budget violations helps identify optimization opportunities. Each time an agent exceeds its token budget and triggers compression, the system logs the violation with context about what was compressed and why. Monthly budget analysis reveals which agents consistently exceed their budgets — these agents either need larger budgets (reassess task complexity) or better-designed system prompts (remove verbose instructions). Adventure Works discovered that three agents regularly exceeded budgets because their system prompts included 800-token policy documents that could have been moved to retrieval tools, freeing budget for conversation context.
+Logging budget violations helps identify optimization opportunities. Each time an agent exceeds its token budget and triggers compression, the system logs the violation with context about what was compressed and why. Monthly budget analysis reveals which agents consistently exceed their budgets—these agents either need larger budgets (reassess task complexity) or better-designed system prompts (remove verbose instructions). Adventure Works discovered that three agents regularly exceeded budgets because their system prompts included 800-token policy documents that could have been moved to retrieval tools, freeing budget for conversation context.
 
 An agent that consistently exceeds its token budget because tool results inject full API responses is a good candidate for tool result schema redesign. Consider which fields the agent actually references in its decisions, and extract only those fields before injecting results into context.
 

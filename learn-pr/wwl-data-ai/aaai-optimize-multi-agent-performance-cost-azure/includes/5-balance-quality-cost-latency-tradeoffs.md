@@ -1,14 +1,14 @@
 Microsoft Foundry's deployment and evaluation capabilities let you configure model tiers, monitor quality signals, and run A/B tests to find the optimal balance between quality, cost, and latency for each customer segment.
 
-Optimization creates tension. Adventure Works can achieve the lowest possible cost by routing everything to GPT-4o-mini, caching aggressively with loose similarity thresholds, and pruning context to bare minimums — but customer satisfaction would collapse. Conversely, maximizing quality by using GPT-4o for everything, maintaining full conversation history, and bypassing caches delivers excellent experiences but destroys the budget. Real-world multi-agent systems require deliberate, measured tradeoffs that balance quality, cost, and latency based on business priorities and customer expectations.
+Optimization creates tension. Adventure Works can achieve the lowest possible cost by routing everything to GPT-4o-mini, caching aggressively with loose similarity thresholds, and pruning context to bare minimums—but customer satisfaction would collapse. Conversely, maximizing quality by using GPT-4o for everything, maintaining full conversation history, and bypassing caches delivers excellent experiences but destroys the budget. Real-world multi-agent systems require deliberate, measured tradeoffs that balance quality, cost, and latency based on business priorities and customer expectations.
 
 ## The optimization triangle for multi-agent systems
 
-Quality, cost, and latency form an optimization triangle where improving one dimension typically degrades at least one other. Higher quality requires larger models, more comprehensive retrieval, and longer context windows — all of which increase both cost and latency. Lower latency demands smaller models, shallow retrieval, and aggressive caching — which can reduce accuracy. Minimizing cost pushes toward the smallest viable models and maximum cache reuse — risking both quality degradation and increased latency from cache lookup overhead.
+Quality, cost, and latency form an optimization triangle where improving one dimension typically degrades at least one other. Higher quality requires larger models, more comprehensive retrieval, and longer context windows—all of which increase both cost and latency. Lower latency demands smaller models, shallow retrieval, and aggressive caching—which can reduce accuracy. Minimizing cost pushes toward the smallest viable models and maximum cache reuse—risking both quality degradation and increased latency from cache lookup overhead.
 
-The triangle isn't perfectly rigid — some optimizations improve multiple dimensions simultaneously. Prompt caching reduces cost without affecting quality or latency. Result caching for deterministic queries reduces both cost and latency while maintaining perfect quality. But these win-win optimizations have limits. Eventually, further cost reduction requires accepting quality or latency tradeoffs, and the question becomes: which tradeoffs are acceptable for which use cases?
+The triangle isn't perfectly rigid—some optimizations improve multiple dimensions simultaneously. Prompt caching reduces cost without affecting quality or latency. Result caching for deterministic queries reduces both cost and latency while maintaining perfect quality. But these win-win optimizations have limits. Eventually, further cost reduction requires accepting quality or latency tradeoffs, and the question becomes: which tradeoffs are acceptable for which use cases?
 
-Adventure Works addresses this by segmenting their customer base and defining different optimization targets for each segment. Not all customer interactions deserve the same level of service — a gold member with a $5,000 order dispute warrants premium treatment, while a bulk API client checking shipping rates for 1,000 addresses can tolerate longer response times and slightly reduced accuracy. Mapping optimization profiles to customer segments creates a rational framework for tradeoff decisions.
+Adventure Works addresses this by segmenting their customer base and defining different optimization targets for each segment. Not all customer interactions deserve the same level of service—a gold member with a $5,000 order dispute warrants premium treatment, while a bulk API client checking shipping rates for 1,000 addresses can tolerate longer response times and slightly reduced accuracy. Mapping optimization profiles to customer segments creates a rational framework for tradeoff decisions.
 
 ## Customer segment-based optimization profiles
 
@@ -30,7 +30,7 @@ The segmentation strategy enables Adventure Works to deliver differentiated serv
 
 ## A/B testing for optimization validation
 
-Adventure Works doesn't guess at which optimizations improve outcomes — they measure. Every significant optimization change goes through A/B testing with clear success metrics before full deployment. The experimentation framework splits traffic between the current configuration (control) and the proposed optimization (variant), then compares quality, cost, and latency distributions after collecting sufficient data.
+Adventure Works doesn't guess at which optimizations improve outcomes—they measure. Every significant optimization change goes through A/B testing with clear success metrics before full deployment. The experimentation framework splits traffic between the current configuration (control) and the proposed optimization (variant), then compares quality, cost, and latency distributions after collecting sufficient data.
 
 A typical experiment tests whether increasing the semantic cache similarity threshold from 0.90 to 0.92 improves quality without destroying cache hit rates. The experiment runs for two weeks with 10% of standard customer traffic routed to the variant (0.92 threshold) and 90% remaining on control (0.90). At the end of the experiment, the team analyzes:
 
@@ -48,7 +48,7 @@ Optimization isn't static. Customer behavior changes, product catalogs evolve, a
 
 **Implicit feedback** includes escalation rates, session re-opens, and conversation abandonment. If customers are escalating to human agents 20% more frequently than baseline, the agents aren't handling requests effectively. If customers close a session and reopen it within 5 minutes, the initial interaction likely failed. If conversation abandonment (customer stops responding mid-session) increases significantly, users are frustrated. These signals supplement explicit ratings and provide early warning of quality issues.
 
-The feedback loop operates daily: each morning, the platform engineering team reviews a dashboard showing quality metrics by agent, customer segment, and request category. Agents showing degraded metrics get prioritized for investigation — common root causes include recent prompt changes, model deployment updates, or shifts in customer request patterns that the current optimization profile doesn't handle well. The investigation produces either a configuration adjustment (revert recent change, tune cache threshold) or a prompt improvement (update system prompt to handle new request pattern).
+The feedback loop operates daily: each morning, the platform engineering team reviews a dashboard showing quality metrics by agent, customer segment, and request category. Agents showing degraded metrics get prioritized for investigation—common root causes include recent prompt changes, model deployment updates, or shifts in customer request patterns that the current optimization profile doesn't handle well. The investigation produces either a configuration adjustment (revert recent change, tune cache threshold) or a prompt improvement (update system prompt to handle new request pattern).
 
 ## SLA definition and accountability
 
@@ -74,7 +74,7 @@ Bulk API SLA specifies:
 
 SLA breaches trigger accountability mechanisms. If gold customer P95 latency exceeds 3 seconds for more than 2 hours in a week, the incident requires root cause analysis and corrective action plan. If standard customer satisfaction drops below 4.0/5 for three consecutive days, leadership review is triggered. If bulk API costs exceed $0.001 average for a month, cost optimization initiatives must be proposed.
 
-The SLA framework transforms optimization from "let's try to reduce costs" into "we have specific quality targets and cost limits that define success." This clarity drives principled decision-making: when a proposed optimization would save $2,000/month but risks breaching the gold customer satisfaction SLA, the decision is clear — don't ship it. When an optimization improves standard customer latency by 1 second while staying within cost limits, ship it immediately.
+The SLA framework transforms optimization from "let's try to reduce costs" into "we have specific quality targets and cost limits that define success." This clarity drives principled decision-making: when a proposed optimization would save $2,000/month but risks breaching the gold customer satisfaction SLA, the decision is clear—don't ship it. When an optimization improves standard customer latency by 1 second while staying within cost limits, ship it immediately.
 
 With intelligent model routing, multi-level caching, token budget management, and segment-based optimization profiles, Adventure Works has transformed their multi-agent platform from a cost overrun into a well-optimized system that delivers differentiated service at sustainable economics. These pillars provide a framework for making systematic, measurable improvements to any multi-agent system.
 
@@ -90,7 +90,7 @@ Design parallelism decisions with the optimization triangle in mind:
 
 - **Parallelize** when task duration (latency) is the binding SLA constraint and you have quota headroom.
 - **Keep sequential** when cost is the binding constraint, or when downstream agents need results from upstream agents (true dependencies preclude parallelism regardless of quota).
-- **Batch** when throughput matters more than individual request latency — batch processing is higher-latency but lower-cost-per-unit.
+- **Batch** when throughput matters more than individual request latency—batch processing is higher-latency but lower-cost-per-unit.
 
 Instrument parallel workflows with distributed tracing span data to identify which parallel agents are your critical path. The slowest agent determines the workflow's completion time. Optimization effort on non-critical-path agents doesn't improve end-to-end latency.
 
