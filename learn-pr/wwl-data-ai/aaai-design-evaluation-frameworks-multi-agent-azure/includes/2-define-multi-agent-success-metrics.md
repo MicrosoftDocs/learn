@@ -176,7 +176,7 @@ Navigation flows from broad to specific: the system dashboard shows task complet
 
 This hierarchy prevents both premature optimization (fixing individual agents that aren't impacting system metrics) and ineffective investigation (staring at system-level numbers without drilling into root causes). Adventure Works' weekly quality review starts at Tier 1, identifies problem areas at Tier 2, and assigns fixes at Tier 3.
 
-## Unit summary
+## Key takeaways
 
 - **Task completion rate** measures whether customers accomplish their end-to-end goals, not just whether individual agents return correct answers.
 - **Goal achievement index** provides graduated 0-10 scoring with weighted sub-goals, capturing how close the system came to success beyond binary pass/fail.

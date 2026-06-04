@@ -242,7 +242,7 @@ For Adventure Works, the Q1 2026 review identified 23 test cases requiring updat
 
 This maintenance prevents false failures: tests failing not because the agent system regressed but because the test expectations no longer match current business rules.
 
-## Unit summary
+## Key takeaways
 
 - **Synthetic datasets** solve PII restrictions and edge case coverage by generating privacy-safe test interactions with controlled scenario variations.
 - **Scenario taxonomy** systematically combines interaction categories, complexity variants, customer personas, and adversarial conditions for comprehensive test coverage.

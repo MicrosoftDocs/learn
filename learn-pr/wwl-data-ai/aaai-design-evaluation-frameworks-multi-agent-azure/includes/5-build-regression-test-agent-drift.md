@@ -132,7 +132,7 @@ The `run_evaluation` method executes the full evaluation suite against a new age
         }
 ```
 
-The comparison method checks each metric against its configured threshold and flags any regressions. Per-interaction-type analysis is critical — an overall passing score can mask a severe regression in a specific category like returns or order modifications. The report generator produces a human-readable summary for the deployment gate:
+The comparison method checks each metric against its configured threshold and flags any regressions. Per-interaction-type analysis is critical—an overall passing score can mask a severe regression in a specific category like returns or order modifications. The report generator produces a human-readable summary for the deployment gate:
 
 ```python
     def generate_report(self, comparison: Dict) -> str:
@@ -283,7 +283,7 @@ jobs:
 
 The `check_regression_pass.py` script exits with code 0 if evaluation passed and code 1 if it failed—halting the GitHub Actions workflow and preventing deployment of regressed agent versions. This automated gate ensures quality standards apply consistently without manual review bottlenecks.
 
-## Unit summary
+## Key takeaways
 
 - **Regression test suites** combine full synthetic datasets, canary cases for fundamental capabilities, and historical failure probes that verify past fixes remain effective.
 - **Gold baselines** establish reference evaluation scores from known-good agent configurations, enabling objective comparison for each new version.

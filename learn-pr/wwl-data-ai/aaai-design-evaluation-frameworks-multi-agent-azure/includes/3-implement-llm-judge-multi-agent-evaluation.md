@@ -253,21 +253,10 @@ Use the AI Red Teaming Agent as a complement to LLM-as-judge evaluation in your 
 
 Together, they cover the full quality-and-safety evaluation surface. Schedule the Red Teaming Agent run in your deployment pipeline so that every version produces fresh adversarial test evidence. This evidence is required for compliance frameworks (SOC 2, EU AI Act technical file) that mandate security testing before deployment.
 
-
-## Unit summary
+## Key takeaways
 
 - **Specialized judges** decompose evaluation into focused criteria (factual accuracy, task completion, tone, consistency) rather than asking one judge to assess everything.
 - **Judge prompts** include four components: evaluation rubric, context, specific criterion, and required output format to ensure consistent scoring.
 - **Calibration** maps raw judge scores to actual accuracy using human-labeled datasets, with Cohen's kappa above 0.7 indicating reliable agreement.
 - **Multi-judge consensus** runs the same evaluation across multiple models and averages scores to reduce individual judge biases.
 - **Microsoft Foundry integration** enables batch evaluation at scale through custom evaluator classes and the `azure-ai-evaluation` SDK.
-
-## Check your understanding
-
-**1. You calibrate an LLM-as-judge against 20 human-labeled examples and achieve 0.75 Spearman correlation. What does this correlation tell you?**
-
-- A. The LLM judge agrees with human labels 75% of the time on exact scores
-- B. The LLM judge's score rankings are reasonably consistent with human rankings — when humans rate interaction A higher than B, the judge usually agrees on the relative ordering
-- C. The LLM judge is 75% accurate and should be retrained to reach 100%
-
-***Correct answer: B.*** Spearman correlation measures rank agreement, not exact score matching. A correlation of 0.75 means the judge's relative ordering of interactions aligns well with human judgment, even if the absolute scores differ.
