@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-managed-identity-azure-openai-dotnet.using-managed-identity-to-access-azure-openai-service-resources
-title: Using Managed Identity to access Azure OpenAI Service resources
+title: Using Managed Identity to access Azure OpenAI in Microsoft Foundry Models resources
 metadata:
-  title: Using Managed Identity to access Azure OpenAI Service resources
-  description: Learn how to use Managed Identity to access Azure OpenAI Service resources in a .NET application
-  ms.date: 01/09/2025
-  author: sarah-yo
-  ms.author: sayoung
+  title: Using Managed Identity to access Azure OpenAI in Microsoft Foundry Models resources
+  description: Learn how to use Managed Identity to access Azure OpenAI in Microsoft Foundry Models resources in a .NET application
+  ms.date: 05/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 3
 content: |
