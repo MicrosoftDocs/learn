@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.manage-capacity-pool.manage-manual-qos-capacity-pool
+uid: learn.azure.manage-capacity-pool.manage-manual-quality-of-service-capacity-pool
 title: Manage a manual QoS capacity pool
 metadata:
   title: Manage a manual QoS capacity pool
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-manage-manual-qos-capacity-pool.md)]
+  [!include[](includes/3-manage-manual-quality-of-service-capacity-pool.md)]
