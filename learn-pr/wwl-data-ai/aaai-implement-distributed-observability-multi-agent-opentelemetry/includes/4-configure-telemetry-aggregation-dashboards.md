@@ -14,7 +14,7 @@ Raw telemetry data from 14 agents requires aggregation to reveal system-level pa
 
 **End-to-end latency** measures the time from customer request entry to final response delivery. This metric spans all agents involved in the interaction. Track percentiles (P50, P95, P99) rather than averages—P95 latency reveals the experience for the slowest 5% of requests, often indicating problems invisible in average values.
 
-**Per-agent latency** identifies bottlenecks within the multi-agent pipeline. If end-to-end P95 latency is 8 seconds and the product search agent's P95 latency is 6 seconds, you know where to focus optimization. Decompose per-agent latency into LLM call latency, tool invocation latency, and processing latency to pinpoint the specific operation causing delays.
+**Per-agent latency** identifies bottlenecks within the multi-agent pipeline. If end-to-end P95 latency is 8 seconds and the product search agent's P95 latency is 6 seconds, you know where to focus optimization. Decompose per-agent latency into large language model (LLM) call latency, tool invocation latency, and processing latency to pinpoint the specific operation causing delays.
 
 **LLM token usage** directly drives operational costs. Track input tokens and output tokens separately by agent and model. Daily and weekly trends reveal cost trajectory and identify agents that consume unexpectedly high token counts—potential indicators of prompt inefficiency or runaway context windows.
 
@@ -50,7 +50,7 @@ dependencies
 | order by p95_latency_ms desc
 ```
 
-This KQL query aggregates latency percentiles from the `dependencies` table (where OpenTelemetry spans export as dependency telemetry), grouping by the `agent_id` custom dimension. The workbook visualizes this data as a bar chart showing P95 latency with request count annotations.
+This Kusto Query Language (KQL) query aggregates latency percentiles from the `dependencies` table (where OpenTelemetry spans export as dependency telemetry), grouping by the `agent_id` custom dimension. The workbook visualizes this data as a bar chart showing P95 latency with request count annotations.
 
 ## Configure operational alerts
 
@@ -80,7 +80,7 @@ dependencies
 | project agent_id, error_rate, total_requests, error_requests
 ```
 
-Configure each alert with action groups that route notifications to appropriate channels: critical alerts (error rate, escalation spike) trigger PagerDuty pages for on-call engineers, warning alerts (latency degradation) post to Slack channels, and informational alerts (token usage trends) create JIRA tickets for workday follow-up.
+Configure each alert with action groups that route notifications to appropriate channels: critical alerts (error rate, escalation spike) send SMS and phone call notifications to on-call engineers, warning alerts (latency degradation) post to Microsoft Teams channels, and informational alerts (token usage trends) create Azure DevOps work items for workday follow-up.
 
 ## Separate real-time and analytical views
 

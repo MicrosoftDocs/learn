@@ -5,8 +5,8 @@ Multi-agent systems exhibit anomalies that don't occur in single-agent scenarios
 | Anomaly Type | Normal Behavior | Anomalous Behavior | Likely Cause |
 |--------------|-----------------|-------------------|--------------|
 | Routing drift | 80% to search agent | 40% to search agent | Prompt injection or model drift |
-| Latency spike | P95: 1.2s | P95: 8.5s | Stuck tool call or endpoint degradation |
-| Token explosion | Avg: 800 tokens | Avg: 2400 tokens | Prompt injection or context leak |
+| Latency spike | P95: 1.2 s | P95: 8.5 s | Stuck tool call or endpoint degradation |
+| Token explosion | Avg: 800 tokens | Avg: 2,400 tokens | Prompt injection or context leak |
 | Escalation surge | 5% daily rate | 18% daily rate | Model quality regression |
 
 ## Establish behavioral baselines

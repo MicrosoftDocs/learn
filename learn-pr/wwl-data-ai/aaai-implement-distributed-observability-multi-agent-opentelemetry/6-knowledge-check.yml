@@ -24,7 +24,7 @@ quiz:
     - content: "Add the customer session ID to each agent's log entries and query by session ID to retrieve related logs."
       isCorrect: false
       explanation: "Session IDs improve log query capability but don't establish trace spans with timing relationships. You can find related logs but can't see the causal sequence, duration, or parallel execution structure. Distributed tracing provides both correlation AND structural timing information."
-  - content: "Adventure Works notices that over the past three weeks, the recommendations agent's average token usage has increased 40% without any code changes. Azure Monitor dynamic thresholds adapted to the gradual increase and didn't alert. Which complementary monitoring approach would have detected this drift earlier?"
+  - content: "Adventure Works notices that over the past three weeks, the recommendations agent's average token usage increased 40% without any code changes. Azure Monitor dynamic thresholds adapted to the gradual increase and didn't alert. Which complementary monitoring approach would detect this drift earlier?"
     choices:
     - content: "Increase the static alert threshold by 50% to account for natural token usage growth over time."
       isCorrect: false
@@ -35,7 +35,7 @@ quiz:
     - content: "Implement tail-based sampling that captures all traces where token usage exceeds 5,000 tokens per request."
       isCorrect: false
       explanation: "Tail-based sampling captures high-token individual requests but doesn't detect the gradual upward trend across average usage. If the per-request average increases from 1,000 to 1,400 tokens, no individual trace exceeds the 5,000 threshold, so the trend remains invisible."
-  - content: "Three simultaneous Azure Monitor alerts fire for the checkout orchestrator agent: P95 latency increased 60%, error rate reached 8%, and token usage doubled. These all happened within a 3-minute window. What is the best alerting strategy for this scenario?"
+  - content: "Three simultaneous Azure Monitor alerts fire for the checkout orchestrator agent: P95 latency increased 60%, error rate reached 8%, and token usage doubled. All three of these spikes occurred within a 3-minute window. What is the best alerting strategy for this scenario?"
     choices:
     - content: "Create three separate on-call incidents and assign each to a different team member to investigate in parallel."
       isCorrect: false
