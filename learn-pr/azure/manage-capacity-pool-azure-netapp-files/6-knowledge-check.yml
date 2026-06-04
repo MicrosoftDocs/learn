@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-capacity-pool.knowledge-check
+title: Module assessment
+metadata:
+  unitType: knowledge_check
+  title: Module Assessment
+  description: Test your knowledge of managing capacity pools for Azure NetApp Files.
+  ms.date: 05/12/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+    - content: "Which of the following steps is required to create a capacity pool in Azure NetApp Files?"
+      choices:
+        - content: "Select the desired Azure NetApp Files service level."
+          isCorrect: true
+          explanation: "Correct. This field is required during the set-up of a capacity pool to target the performance for the capacity pool."
+        - content: "Provision an Azure Virtual Machine."
+          isCorrect: false
+          explanation: "Incorrect. Provisioning a virtual machine is not a required step to create a capacity pool."
+        - content: "Configure a delegated virtual subnet."
+          isCorrect: false
+          explanation: "Incorrect. Configuring a virtual subnet is not a required step to create a capacity pool."
+        - content: "Create a resource group."
+          isCorrect: false
+          explanation: "Incorrect. Creating a resource group is not a required step to create a capacity pool."
+    - content: "What is the purpose of managing billing tags in capacity pools for Azure NetApp Files?"
+      choices:
+        - content: "To control access permissions for capacity pools."
+          isCorrect: false
+          explanation: "Incorrect. Tags are not used to control access permissions for capacity pools."
+        - content: "To track and categorize usage for cost allocation and reporting."
+          isCorrect: true
+          explanation: "Correct. Tags are name and value pairs that enable you to categorize resources and view consolidated billing that help you manage Azure NetApp Files billing and expenses."
+        - content: "To monitor performance metrics and optimize storage utilization."
+          isCorrect: false
+          explanation: "Incorrect. Tags are not used to monitor performance metrics and optimize utilization."
+        - content: "To automate capacity pool provisioning and scaling."
+          isCorrect: false
+          explanation: "Incorrect. Tags are not used to automate operations."

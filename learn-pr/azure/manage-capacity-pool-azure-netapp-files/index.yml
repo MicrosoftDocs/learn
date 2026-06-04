@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.manage-capacity-pool
+metadata:
+  title: Manage capacity pool for Azure NetApp Files
+  description: Learn to create a capacity pool, which enables you to create volumes. Learn ways to manage a QoS capacity pool by setting it up and monitoring throughput. Use tags to help you manage Azure NetApp Files billing and expenses.
+  ms.date: 05/12/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Manage capacity pool for Azure NetApp Files
+summary: Create and manage capacity pools for Azure NetApp Files.
+abstract: |
+  By completing this module, you'll be able to:
+  - Create a capacity pool in Azure NetApp Files
+  - Manage a manual QoS capacity pool
+  - Manage billing in Azure NetApp Files
+prerequisites: |
+  - Manage Active Directory for Azure NetApp Files
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+  - storage
+units:
+  - learn.azure.manage-capacity-pool.introduction
+  - learn.azure.manage-capacity-pool.create-capacity-pool
+  - learn.azure.manage-capacity-pool.manage-manual-quality-of-service-capacity-pool
+  - learn.azure.manage-capacity-pool.manage-billing-by-using-capacity-pool-billing-tags
+  - learn.azure.manage-capacity-pool.exercise
+  - learn.azure.manage-capacity-pool.knowledge-check
+  - learn.azure.manage-capacity-pool.summary
+badge:
+  uid: learn.azure.manage-capacity-pool.badge
