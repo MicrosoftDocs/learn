@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.dpu.windows-11-zero-touch
+title: Deliver zero-touch Windows 11 Pro deployments
+metadata:
+  title: Deliver Zero-Touch Windows 11 Pro Deployments
+  description: 'In this module, you’ll learn about using zero-touch systems and methodologies to roll out Windows 11 devices across an organization in a fully remote process.'
+  ms.date: 06/04/2026
+  author: sheridan-connor
+  ms.author: stephanie-rosenzweig
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Modern device deployments often span distributed environments where devices are shipped directly to users and never handled by IT, requiring a zero-touch approach. In this module, you’ll work through a scenario-driven experience to learn how to prepare Windows 11 Pro devices for automatic provisioning, ensure they enroll and configure themselves at first sign-in, and apply consistent policies for apps, updates, and security.
+abstract: |
+  By the end of this module, you'll be able to:
+
+  - **Analyze deployment constraints** to determine when a zero-touch approach is required
+  - **Prepare Windows 11 Pro devices for zero-touch provisioning** so they enroll and configure automatically at first user sign-in
+  - **Verify device enrollment and management state** to confirm that configuration profiles and applications are applied as intended
+  - **Define update behavior for managed devices** that maintains cohesion and compatibility while minimizing disruption
+  - **Apply and validate baseline security controls** through policy to ensure consistent protection across the device lifecycle
+  - **Validate and troubleshoot a Windows 11 Pro deployment** by interpreting management, update, and compliance signals to determine rollout readiness
+prerequisites: |
+  - None
+iconUrl: /training/achievements/windows-11-zero-touch.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - technology-manager
+products: 
+  - windows-11
+units:
+  - learn.dpu.windows-11-zero-touch.introduction
+  - learn.dpu.windows-11-zero-touch.deployment-constraints
+  - learn.dpu.windows-11-zero-touch.configure-provisioning
+  - learn.dpu.windows-11-zero-touch.device-management
+  - learn.dpu.windows-11-zero-touch.update-management
+  - learn.dpu.windows-11-zero-touch.security-controls
+  - learn.dpu.windows-11-zero-touch.validate-deployment
+  - learn.dpu.windows-11-zero-touch.capstone-challenge
+  - learn.dpu.windows-11-zero-touch.knowledge-check
+  - learn.dpu.windows-11-zero-touch.summary
+badge:
+  uid: learn.dpu.windows-11-zero-touch.badge
