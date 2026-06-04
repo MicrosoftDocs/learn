@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Authorize access to Microsoft Graph API with MSAL
   description: In this exercise, you will use MSAL in your application to get authorized access to Microsoft Graph API.
   ms.date: 11/21/2023
-  author: yoshioterada
-  ms.author: yoterada
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java

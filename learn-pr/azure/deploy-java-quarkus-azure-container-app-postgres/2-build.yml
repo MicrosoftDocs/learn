@@ -5,8 +5,8 @@ metadata:
   title: Create a Quarkus application
   description: Create a Quarkus application, test it, and run it locally.
   ms.date: 03/05/2025
-  author: yoshioterada
-  ms.author: yoterada
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
     - team=devdiv

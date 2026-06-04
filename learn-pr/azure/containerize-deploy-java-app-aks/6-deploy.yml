@@ -6,8 +6,8 @@ metadata:
   title: Deploy the container image to Azure Kubernetes Service
   description: Deploy the container image to Azure Kubernetes Service.
   ms.date: 02/12/2025
-  author: yoshioterada
-  ms.author: yoterada
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
     - devx-track-java
