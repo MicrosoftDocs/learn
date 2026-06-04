@@ -71,14 +71,14 @@ Azure Monitor serves as the centralized backend for all OpenTelemetry telemetry 
 
 The Application Insights transaction details page renders the full trace as a waterfall diagram, showing each agent's span in sequence with timing information and parent-child relationships visualized. When a customer interaction fails, you select the trace ID from error logs and view the complete end-to-end flow, identifying exactly which agent span reported an error and how long each agent took to process its portion of the request.
 
+Store the connection string in the `APPLICATIONINSIGHTS_CONNECTION_STRING` environment variable rather than passing it as a code parameter. When that variable is set, `configure_azure_monitor()` picks it up automatically—keeping the secret out of source code and eliminating placeholder values that can be accidentally committed.
+
 ```python
 from azure.monitor.opentelemetry import configure_azure_monitor
 from opentelemetry import trace
 
-# Configure Azure Monitor exporter
-configure_azure_monitor(
-    connection_string="InstrumentationKey=<your-key>;IngestionEndpoint=https://..."
-)
+# Set APPLICATIONINSIGHTS_CONNECTION_STRING env var—configure_azure_monitor() reads it automatically
+configure_azure_monitor()
 
 tracer = trace.get_tracer(__name__)
 
@@ -112,7 +112,7 @@ from opentelemetry.trace import StatusCode
 os.environ["OTEL_TRACES_SAMPLER"] = "traceidratio"
 os.environ["OTEL_TRACES_SAMPLER_ARG"] = "0.05"
 
-# For tail-based behavior, use a SpanProcessor — NOT a Sampler.
+# For tail-based behavior, use a SpanProcessor—NOT a Sampler.
 # Sampler.should_sample() fires at span START before execution,
 # so error status and duration attributes are not yet available.
 # SpanProcessor.on_end() fires AFTER the span completes, making
@@ -159,7 +159,7 @@ Azure Monitor and Application Insights are the underlying implementation: OpenTe
 ## Key takeaways
 
 - **W3C Trace Context** propagates trace IDs across agent boundaries via `traceparent` headers, linking all agents' spans into a single unified trace.
-- **Explicit context injection** — Microsoft Foundry agent-to-agent calls don't propagate trace context automatically, so you must inject it explicitly.
+- **Explicit context injection**—custom HTTP agent-to-agent calls don't propagate trace context automatically; you must inject it via the `traceparent` header. Foundry SDK-managed calls include built-in instrumentation, but any agent communicating over a custom HTTP endpoint requires explicit injection.
 - **Azure Monitor** serves as the centralized OpenTelemetry backend, rendering full traces as waterfall diagrams in Application Insights.
 - **Semantic boundary instrumentation** focuses spans on agent entry/exit points, LLM calls, tool invocations, and agent-to-agent calls rather than internal operations.
 - **Sampling strategies** balance cost and diagnostic completeness—tail-based sampling captures 100% of errors while reducing storage for successful traces.

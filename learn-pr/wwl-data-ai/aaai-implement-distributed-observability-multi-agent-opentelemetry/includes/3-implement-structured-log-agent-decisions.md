@@ -171,7 +171,7 @@ Customer identifiers must be hashed before logging to prevent PII exposure. The 
 Log only what you need for debugging: transaction amounts (numerical values, not card numbers), product quantities and categories (not customer names), order statuses and error codes (not shipping addresses). This discipline protects customer privacy while preserving diagnostic capability.
 
 > [!TIP]
-> **Pause and reflect:** Your on-call engineer receives an alert that a customer's order failed. They have the trace ID but need to understand what the payment agent decided and why. With only unstructured free-text logs, this investigation could take hours. How would a standardized log schema with trace correlation change this debugging workflow?
+> Include `trace_id` and `span_id` in every log entry—even entries that don't seem span-related. When an on-call engineer starts with a trace ID from an error report, these fields turn a keyword search into a precise join: one query returns all structured log entries from every agent that touched the same customer interaction, in chronological order. Without them, correlating logs across agents requires guessing at timestamps and session IDs that may not be consistent.
 
 For Adventure Works, the logging policy requires: all customer identifiers hashed with SHA-256, no PII fields in any log entry, and automatic log retention limited to 90 days. The structured logging helper enforces these rules automatically, reducing the risk of accidental PII logging by individual developers.
 
