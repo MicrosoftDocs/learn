@@ -8,7 +8,7 @@ For example, quality updates might install automatically in the background, whil
 
 >[!NOTE]
 > **Quality updates** are regular updates that include security fixes and reliability improvements, typically applied frequently to keep devices protected.
-> **Feature updates** are broader updates that may introduce new capabilities or changes to the Windows experience. They are usually deployed less frequently to reduce disruption.
+> **Feature updates** are broader updates that might introduce new capabilities or changes to the Windows experience. They're usually deployed less frequently to reduce disruption.
 
 ### Update flow over time
 

@@ -5,7 +5,7 @@ In practice, this means ensuring that devices are registered and associated with
 During this first sign-in, several things happen automatically. The device enrolls into management, applies initial configuration settings, and begins pulling down required policies. From the user's perspective, this feels like a slightly extended first-run experience. From IT's perspective, it replaces hours of manual setup with a repeatable, scalable process, reducing hands-on effort and enabling faster delivery of ready-to-use devices.
 
 >[!NOTE]
-> Even zero-touch provisioning under ideal conditions may include some breaks and pauses at certain stages, such as during policy and app installation. Consider sending users a pre-arrival email or including a message in the [out-of-box experience](/windows-hardware/customize/desktop/customize-oobe-in-windows-11) that sets expectations for how long initial setup may take.
+> Even zero-touch provisioning under ideal conditions might include some breaks and pauses at certain stages, such as during policy and app installation. Consider sending users a prearrival email or including a message in the [out-of-box experience](/windows-hardware/customize/desktop/customize-oobe-in-windows-11) that sets expectations for how long initial setup might take.
 
 This setup should feel familiar and predictable. When users power on the device, they're guided through a standard sign-in experience using their work account, rather than creating a personal profile or making configuration decisions. Behind the scenes, IT-defined settings take effect automatically, ensuring the device is configured correctly before the user begins work. This alignment between user experience and IT intent is a key benefit of zero-touch provisioning.
 
@@ -27,4 +27,4 @@ Describe how you would ensure:
 
 ### What success looks like
 
-You can explain what happens from the moment the user turns on the device through completion of first signin, with no steps requiring IT involvement.
+You can explain what happens from the moment the user turns on the device through completion of first sign in, with no steps requiring IT involvement.

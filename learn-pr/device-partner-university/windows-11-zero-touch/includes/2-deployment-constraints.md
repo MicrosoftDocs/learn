@@ -13,7 +13,7 @@ This diagram shows how the enrollment process fits together. It presents a casca
 To keep this process simple and replicable, several technical requirements emerge.
 
 - Devices must enroll automatically into management as soon as the user signs in
-- Configuration and security settings must apply consistently, without perdevice customization
+- Configuration and security settings must apply consistently, without per-device customization
 - Updates must be centralized so devices don't drift out of compliance over time
 - Finally, IT needs [a reliable way to confirm that deployment succeeded](/training/modules/intro-to-endpoint-manager/) and to troubleshoot any issues
 
@@ -21,7 +21,7 @@ Together, these requirements reduce operational overhead and help ensure consist
 
 ### Common aspects of deployment to consider
 
-This table summarizes some of the most common elements of device deployment, and how they may differ depending on your organization's approach.
+This table summarizes some of the most common elements of device deployment, and how they might differ depending on your organization's approach.
 
 | **Aspect** | **Traditional approach** | **Zero-touch approach** |
 | :---: | :---: | :---: |

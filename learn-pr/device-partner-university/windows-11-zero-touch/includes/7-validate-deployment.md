@@ -1,4 +1,4 @@
-Before the rollout may be considered complete, IT must validate that devices meet expectations, ensuring deployment quality before scaling the rollout across the organization. In this unit, you'll begin that iterative process and ensure your deployment is positioned for further validation down the line.
+Before the rollout might be considered complete, IT must validate that devices meet expectations, ensuring deployment quality before scaling the rollout across the organization. In this unit, you'll begin that iterative process and ensure your deployment is positioned for further validation down the line.
 
 ## Check device compliance
 

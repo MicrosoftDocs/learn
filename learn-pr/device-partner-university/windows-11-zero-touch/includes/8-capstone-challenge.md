@@ -2,9 +2,9 @@ At this point in the scenario, the rollout is largely complete—but real deploy
 
 A user reports that their new Windows 11 Pro device is usable, but something isn't right. The device enrolled successfully and the user can sign in, but required applications never appeared. Update status is unclear, and the device isn't marked as compliant.
 
-In practice, issues like this often have more than one contributing factor. A device might be correctly enrolled but assigned to the wrong group, or policies may be correctly scoped but not yet evaluated.
+In practice, issues like this often have more than one contributing factor. A device might be correctly enrolled but assigned to the wrong group, or policies might be correctly scoped but not yet evaluated.
 
-The goal of this challenge is not to find a single correct answer, but to demonstrate a structured approach to diagnosis—one that allows IT to confidently determine when a device is ready to return to the user, reducing resolution time and improving support efficiency.
+The goal of this challenge isn't to find a single correct answer, but to demonstrate a structured approach to diagnosis—one that allows IT to confidently determine when a device is ready to return to the user, reducing resolution time and improving support efficiency.
 
 ## Getting started
 
@@ -48,7 +48,7 @@ With enrollment and policy confirmed, verify that the device meets organizationa
 
 ### Apply the framework
 
-With this structure in mind, return to the scenario. A user's device enrolled successfully, but required applications never appeared, update status is unclear, and the device is not marked as compliant.
+With this structure in mind, return to the scenario. A user's device enrolled successfully, but required applications never appeared, update status is unclear, and the device isn't marked as compliant.
 
 Work through each phase in order. For each check, identify:
 

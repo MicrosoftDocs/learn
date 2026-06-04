@@ -1,4 +1,4 @@
-Security works best when it's applied consistently and automatically. In this deployment, security settings are not something IT configures manually on each device. Instead, they're enforced through management from the moment the device enrolls.
+Security works best when it's applied consistently and automatically. In this deployment, security settings aren't something IT configures manually on each device. Instead, they're enforced through management from the moment the device enrolls.
 
 Secure sign-in is a foundational element. By enforcing strong authentication requirements across all devices, IT reduces the risk of unauthorized access without relying on users to make good security decisions on their own.
 
@@ -30,7 +30,7 @@ In this scenario, a device was replaced due to hardware failure.
 
 Explain how you would confirm that:
 
-- Secure sig-nin requirements are enforced
+- Secure sign-in requirements are enforced
 - Device encryption is enabled
 - Threat protection policies are active
 

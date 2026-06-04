@@ -1,6 +1,6 @@
-Modern device deployments rarely happen in a single location or on a single network. Many organizations ship devices directly to employees, who may be working remotely on their first day with a new device. These organizations still expect IT teams to maintain security, consistency, and reliability—without ever touching the hardware and while minimizing deployment delays and ongoing support overhead.
+Modern device deployments rarely happen in a single location or on a single network. Many organizations ship devices directly to employees, who might be working remotely on their first day with a new device. These organizations still expect IT teams to maintain security, consistency, and reliability—without ever touching the hardware and while minimizing deployment delays and ongoing support overhead.
 
-In this module, you'll work through a **single, continuous deployment scenario**, where you're part of an IT team rolling out new Windows 11 Pro laptops across the organization. Your workplace ships devices directly from the vendor to users in multiple locations. There is no opportunity for IT to image devices or perform handson setup.
+In this module, you'll work through a **single, continuous deployment scenario**, where you're part of an IT team rolling out new Windows 11 Pro laptops across the organization. Your workplace ships devices directly from the vendor to users in multiple locations. There's no opportunity for IT to image devices or perform hands-on setup.
 
 Your responsibility is to make sure that when a user turns on their device for the first time, it enrolls automatically, configures itself according to company standards, stays up to date, and remains secure—without requiring manual intervention from IT.
 
