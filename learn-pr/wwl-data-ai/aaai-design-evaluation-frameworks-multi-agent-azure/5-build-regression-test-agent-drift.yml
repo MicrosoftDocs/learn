@@ -4,7 +4,7 @@ title: Build regression testing pipelines to detect agent drift
 metadata:
   title: Build Regression Testing Pipelines to Detect Agent Drift
   description: "Build regression testing pipelines to detect agent drift."
-  ms.date: 06/08/2026
+  ms.date: 06/04/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit

@@ -1,6 +1,21 @@
+Microsoft Foundry provides the evaluation infrastructure to collect and aggregate quality signals across all layers of your multi-agent system. You use Foundry's measurement capabilities to define success metrics that capture end-to-end customer outcomes, not just individual agent performance.
+
+## Understand the four evaluation targets
+
+Effective multi-agent evaluation addresses four targets, each with distinct measurement strategies:
+
+| Evaluation target | What you measure |
+|---|---|
+| **Memory evaluation** | Whether the agent recalls past context correctly. Measures whether memory injection improves accuracy and whether failure modes like sliding-window amnesia and summary drift reduce quality. |
+| **Knowledge evaluation** | Whether the retrieval-augmented generation (RAG) pipeline retrieves the right documents. Measured by nDCG, MRR, and downstream answer accuracy. |
+| **Tool evaluation** | Whether tools return correct results within SLA. Measured by tool result validation accuracy and circuit-breaker activation rates. |
+| **Prompt evaluation** | Whether prompts produce consistent, high-quality outputs across input variations. Measured by A/B variant testing with semantic diff and regression stability. |
+
+System-level evaluation, the primary focus of this module, measures whether the combination of memory, knowledge, tools, and prompts produces correct end-to-end task completion. Individual-target evaluation identifies which layer is failing when system-level quality degrades.
+
 Microsoft Foundry provides the evaluation infrastructure to collect and aggregate quality signals across all layers of your multi-agent system. Evaluating individual agent correctness—"Did the orchestrator agent answer the question accurately?"—doesn't measure whether the customer's complete journey succeeded. A product search agent may return perfect product details while the orchestration layer routes to the wrong next agent, causing customer confusion despite technically correct individual responses. System-level metrics measure end-to-end outcomes rather than component performance.
 
-| Metric Level | Question Answered | Example |
+| Metric level | Question answered | Example |
 |--------------|-------------------|---------|
 | Component-level | Did this agent execute its task correctly? | Product search returned accurate SKU |
 | System-level | Did the customer accomplish their goal? | Order placed successfully with correct items |
@@ -57,9 +72,13 @@ The function returns a simple boolean—did the task complete or not? This feeds
 
 Binary task completion provides a clear outcome metric, but it loses nuance—a nearly successful interaction that fails on a single detail scores the same as a completely failed interaction. The goal achievement index provides graduated scoring that captures how close the agent system came to success.
 
-Design the index with a 0-10 scale decomposed into weighted sub-goals. For Adventure Works order interactions: information accuracy (0-3 points) measures whether product details, pricing, and availability information were correct; action correctness (0-4 points) measures whether the intended transaction (purchase, return, modification) executed properly; customer effort minimization (0-3 points) measures whether the customer received clear guidance without frustrating dead ends or contradictory information.
+Design the index with a 0-10 scale decomposed into weighted sub-goals. For Adventure Works order interactions:
 
-A perfect interaction scores 10: all information accurate (3), transaction executed correctly (4), and customer effort minimal (3). A failed order with some correct product information but a payment processing error might score 5: partial information accuracy (2), failed transaction (0), and moderate customer effort (3). This granularity reveals improvement opportunities—if most failures score 6-7, small fixes could convert them to successes; if most failures score 1-2, fundamental capability gaps exist.
+- **Information accuracy** (0-3 points) measures whether product details, pricing, and availability information were correct.
+- **Action correctness** (0-4 points) measures whether the intended transaction (purchase, return, modification) executed properly.
+- **Customer effort minimization** (0-3 points) measures whether the customer received clear guidance without frustrating dead ends or contradictory information.
+
+A perfect interaction scores 10: all information accurate (3), transaction executed correctly (4), and customer effort minimal (3). A failed order with some correct product information but a payment processing error might score 5: partial information accuracy (2), failed transaction (0), and moderate customer effort (3). This granularity reveals improvement opportunities. If most failures score 6-7, small fixes could convert them to successes. If most failures score 1-2, fundamental capability gaps exist.
 
 Implement the goal achievement index as a weighted sum of sub-goal scores:
 

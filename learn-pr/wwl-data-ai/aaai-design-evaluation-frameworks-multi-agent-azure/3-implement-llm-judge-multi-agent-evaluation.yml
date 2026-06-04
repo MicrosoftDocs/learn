@@ -4,7 +4,7 @@ title: Implement LLM-as-judge evaluation for multi-agent systems
 metadata:
   title: Implement LLM-as-Judge Evaluation for Multi-Agent Systems
   description: "Implement LLM-as-judge evaluation for multi-agent systems."
-  ms.date: 06/08/2026
+  ms.date: 06/04/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit

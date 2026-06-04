@@ -1,12 +1,14 @@
-The Microsoft Foundry `azure-ai-evaluation` SDK lets you implement custom LLM-as-judge evaluators and run batch evaluation across your full test dataset. Traditional deterministic metrics like BLEU scores or exact-match accuracy can't assess whether a 14-agent customer service interaction was genuinely helpful. These metrics measure surface-level text similarity but miss semantic correctness, tone appropriateness, and task completion. LLM-as-judge evaluation uses a powerful language model to assess holistic properties: whether responses were factually accurate, whether the customer's request was fulfilled, whether the tone was professional and empathetic, and whether information remained consistent across multiple agent interactions.
+The Microsoft Foundry `azure-ai-evaluation` SDK lets you implement custom LLM-as-judge evaluators and run batch evaluation across your full test dataset. Traditional deterministic metrics like BLEU scores or exact-match accuracy can't assess whether a 14-agent customer service interaction was genuinely helpful.
 
-| Evaluation Approach | Measures | Limitation for Multi-Agent |
+## Decompose evaluation into specialized judges
+
+These metrics measure surface-level text similarity but miss semantic correctness, tone appropriateness, and task completion. LLM-as-judge evaluation uses a powerful language model to assess holistic properties: whether responses were factually accurate, whether the customer's request was fulfilled, whether the tone was professional and empathetic, and whether information remained consistent across multiple agent interactions.
+
+| Evaluation approach | Measures | Limitation for multi-agent |
 |---------------------|----------|----------------------------|
 | BLEU, ROUGE | Text overlap with reference | Can't assess semantic correctness or journey coherence |
 | Exact match | Identical output | Too brittle for natural language variety |
 | LLM-as-judge | Holistic quality via rubric | Best for semantic and contextual evaluation |
-
-## Decompose evaluation into specialized judges
 
 Don't ask one judge to evaluate everything—a single prompt trying to assess factual accuracy, task completion, tone, and consistency simultaneously produces unreliable results. Instead, decompose evaluation into specialized judges, each focused on one criterion with a clear rubric.
 
@@ -239,7 +241,7 @@ print(f"Evaluations with score < 7: {len(low_scoring)}")
 
 This integration enables systematic evaluation at scale: run the judge on 1,000 test interactions, aggregate scores by interaction type, track trends over time, and establish quality gates for deployment.
 
-For common signal types, the `azure-ai-evaluation` SDK also provides built-in multi-agent evaluators you can use alongside custom judges: `IntentResolutionEvaluator` (whether the agent correctly identified and acted on the customer's intent), `ToolCallAccuracyEvaluator` (whether tool calls were formed and executed correctly), `TaskAdherenceEvaluator` (whether the agent stayed on task without scope drift), and `ResponseCompletenessEvaluator` (whether the response covered all required elements). Use these pre-built evaluators for standard signal types and reserve custom evaluator classes for domain-specific criteria—such as Adventure Works' business rules for refund calculations or return policy enforcement—that the built-in options don't cover.
+For common signal types, the `azure-ai-evaluation` SDK also provides built-in multi-agent evaluators to use alongside custom judges: `IntentResolutionEvaluator` (whether the agent correctly identified and acted on the customer's intent), `ToolCallAccuracyEvaluator` (whether tool calls were formed and executed correctly), `TaskAdherenceEvaluator` (whether the agent stayed on task without scope drift), and `ResponseCompletenessEvaluator` (whether the response covered all required elements). Use these pre-built evaluators for standard signal types and reserve custom evaluator classes for domain-specific criteria—such as Adventure Works' business rules for refund calculations or return policy enforcement—that the built-in options don't cover.
 
 ## Microsoft Foundry AI Red Teaming Agent
 
@@ -247,11 +249,11 @@ LLM-as-judge evaluation measures quality for expected inputs. The Microsoft Foun
 
 The AI Red Teaming Agent automates attack-category coverage aligned to the OWASP LLM Top 10: prompt injection attempts (direct and indirect), system-prompt extraction, jailbreak attempts, cross-tenant data leakage probes, and denial-of-service via token-exhaustion payloads. For each category, it generates synthetic adversarial inputs at scale, submits them to your agent endpoints, and evaluates responses for policy violations. The output is a structured report with per-category pass/fail rates.
 
-Use the AI Red Teaming Agent as a complement to LLM-as-judge evaluation in your CI/CD pipeline:
+Use the AI Red Teaming Agent as a complement to LLM-as-judge evaluation in your continuous integration/continuous deployment (CI/CD) pipeline:
 - **LLM-as-judge** evaluates quality on production-representative inputs (accuracy, task completion, tone, consistency).
 - **AI Red Teaming Agent** evaluates safety and security on adversarial inputs (injection resistance, boundary enforcement, data isolation).
 
-Together, they cover the full quality-and-safety evaluation surface. Schedule the Red Teaming Agent run in your deployment pipeline so that every version produces fresh adversarial test evidence. This evidence is required for compliance frameworks (SOC 2, EU AI Act technical file) that mandate security testing before deployment.
+Together, they cover the full quality-and-safety evaluation surface. Schedule the Red Teaming Agent run in your deployment pipeline so that every version produces fresh adversarial test evidence. Compliance frameworks such as SOC 2 and the EU AI Act technical file require this evidence before deployment.
 
 ## Key takeaways
 

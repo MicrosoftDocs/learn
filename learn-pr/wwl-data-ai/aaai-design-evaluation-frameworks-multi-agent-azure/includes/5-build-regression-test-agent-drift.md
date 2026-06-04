@@ -1,13 +1,15 @@
-The Microsoft Foundry Evaluation SDK integrates directly into CI/CD pipelines, letting you enforce automated quality gates that compare each new agent version against a gold baseline before deployment. Unlike traditional software where quality only changes with code modifications, AI agents drift without any code changes. A new model deployment, a context window adjustment, or gradual training data drift silently degrades quality. Regression testing catches these drifts before they reach production—but only if you run evaluations systematically and compare new agent versions against established baselines.
+The Microsoft Foundry Evaluation SDK integrates directly into continuous integration/continuous deployment (CI/CD) pipelines, letting you enforce automated quality gates that compare each new agent version against a gold baseline before deployment. Unlike traditional software where quality only changes with code modifications, AI agents drift without any code changes.
 
-| Change Type | Code Modified? | Quality Impact | Detection Method |
+## Design regression test suite composition
+
+A new model deployment, a context window adjustment, or gradual training data drift silently degrades quality. Regression testing catches these drifts before they reach production—but only if you run evaluations systematically and compare new agent versions against established baselines.
+
+| Change type | Code modified? | Quality impact | Detection method |
 |-------------|----------------|----------------|------------------|
 | Code deployment | Yes | Potentially high | CI/CD tests + evaluation |
 | Model update | No | Medium to high | Regression evaluation |
 | Prompt modification | Yes (prompt text) | Medium | Regression evaluation |
 | Gradual drift | No | Low per day, cumulative | Production sampling |
-
-## Design regression test suite composition
 
 A complete regression suite combines three test categories, each serving a distinct purpose. The **full synthetic dataset** provides comprehensive coverage—all 400 test cases spanning scenario types, complexity variants, customer personas, and adversarial conditions. This coverage ensures no capability gaps emerge in rarely-exercised code paths.
 

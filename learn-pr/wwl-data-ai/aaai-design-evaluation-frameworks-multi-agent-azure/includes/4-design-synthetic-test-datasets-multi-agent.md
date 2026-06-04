@@ -1,12 +1,14 @@
-Microsoft Foundry's `azure-ai-inference` SDK provides the model access needed to generate synthetic test interactions at scale, giving you privacy-safe datasets with systematic scenario coverage. Real customer interactions contain PII and are difficult to use repeatedly for testing—regulations restrict storage and sharing of customer data. Production data samples provide realistic scenarios but can't be freely modified to test edge cases or rare failure modes. Synthetic datasets solve both problems: you design interactions covering specific scenarios, control exactly which edge cases appear, and generate variations systematically without privacy constraints.
+Microsoft Foundry's `azure-ai-inference` SDK provides the model access needed to generate synthetic test interactions at scale, giving you privacy-safe datasets with systematic scenario coverage. Real customer interactions contain personally identifiable information (PII) and are difficult to use repeatedly for testing—regulations restrict storage and sharing of customer data.
 
-| Dataset Source | Advantages | Limitations |
+## Build a scenario taxonomy
+
+Production data samples provide realistic scenarios but can't be freely modified to test edge cases or rare failure modes. Synthetic datasets solve both problems: you design interactions covering specific scenarios, control exactly which edge cases appear, and generate variations systematically without privacy constraints.
+
+| Dataset source | Advantages | Limitations |
 |----------------|------------|-------------|
 | Production data samples | Highly realistic, true user behavior | Contains PII, can't test specific edge cases |
 | Manually authored test cases | Full control, no PII | Time-consuming, limited coverage |
 | Synthetic LLM-generated | Scalable, systematic coverage, privacy-safe | Requires quality validation |
-
-## Build a scenario taxonomy
 
 Define a comprehensive taxonomy of interaction types for Adventure Works' multi-agent customer service platform. This taxonomy ensures test coverage across all supported scenarios rather than concentrating on common cases.
 

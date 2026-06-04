@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Module assessment."
-  ms.date: 06/08/2026
+  ms.date: 06/04/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
@@ -18,7 +18,7 @@ quiz:
     - content: "Each agent's latency—a high latency in either agent would cause the poor customer experience."
       isCorrect: false
       explanation: "Latency measures performance speed but not the quality of the interaction outcome. A fast confusing response is still confusing. The problem described is logical inconsistency between two agents' responses in the same customer journey."
-    - content: "Journey coherence score—whether the multiple agent responses across the interaction form a logically consistent and non-contradictory experience for the customer."
+    - content: "Journey coherence score—whether the multiple agent responses across the interaction form a logically consistent and noncontradictory experience for the customer."
       isCorrect: true
       explanation: "Each agent can be individually coherent while their combined outputs create contradictions—the returns agent confirms a return while the order agent issues a conflicting policy statement for the same order. Journey coherence measures whether the multi-step interaction forms a unified, consistent customer experience, which individual component evaluation misses."
     - content: "Task completion rate for each individual step—the system should measure whether each agent completed its specific subtask independently."
@@ -28,10 +28,10 @@ quiz:
     choices:
     - content: "A correlation of 0.41 is acceptable for LLM evaluation. Proceed with the judge as configured, accepting the systematic 2-point underestimation."
       isCorrect: false
-      explanation: "A 0.41 correlation indicates weak agreement with human judgment. The judge is not reliably capturing what human evaluators consider task completion. Deploying an uncalibrated judge produces systematically misleading evaluation scores, potentially blocking good agent versions or approving poor ones."
-    - content: "The judge is not well-aligned with human judgment. Revise the scoring rubric by reviewing cases where the judge and humans diverged most, clarifying the criteria for mid-range scores, and re-calibrating against the labeled set."
+      explanation: "A 0.41 correlation indicates weak agreement with human judgment. The judge isn't reliably capturing what human evaluators consider task completion. Deploying an uncalibrated judge produces systematically misleading evaluation scores, potentially blocking good agent versions or approving poor ones."
+    - content: "The judge isn't well-aligned with human judgment. Revise the scoring rubric by reviewing cases where the judge and humans diverged most, clarifying the criteria for mid-range scores, and recalibrating against the labeled set."
       isCorrect: true
-      explanation: "Low correlation between judge and human scores signals that the rubric doesn't sufficiently encode what humans consider successful task completion. Analyzing the highest-divergence cases reveals where the rubric is ambiguous or missing important criteria. Rubric revision and re-calibration against human labels is the correct improvement path."
+      explanation: "Low correlation between judge and human scores signals that the rubric doesn't sufficiently encode what humans consider successful task completion. Analyzing the highest-divergence cases reveals where the rubric is ambiguous or missing important criteria. Rubric revision and recalibration against human labels is the correct improvement path."
     - content: "The human reviewers were inconsistent. Run the labeling again with a different group of humans to get more reliable ground truth for calibration."
       isCorrect: false
       explanation: "Before attributing low correlation to human inconsistency, review the divergence cases. If human scores cluster consistently and the judge scores differ systematically (not randomly), the issue is likely the judge prompt, not human inconsistency. Investigating the divergence patterns is the first diagnostic step."
