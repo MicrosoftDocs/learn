@@ -1,33 +1,53 @@
-When monitoring surfaces changing data, anomalies, or critical events, alerts are generated or actions are triggered. Real-time data analytics is commonly based on the ingestion and processing of a data stream that consists of a perpetual series of data, typically related to specific point-in-time events. For example, a stream of data from an environmental IoT weather sensor. Real-Time Intelligence in Fabric contains a tool called Activator that can be used to trigger actions on streaming data. For example, a stream of data from an environmental IoT weather sensor might be used to trigger emails to sailors when wind thresholds are met. When certain conditions or logic is met, an action is taken, like alerting users, executing Fabric job items like a pipeline, or kicking off Power Automate workflows. The logic can be either a defined threshold, a pattern like events happening repeatedly over a time period, or the results of logic defined by a Kusto Query Language (KQL) query.  
+﻿The monitoring hub shows you what happened. The Schedule failures page emails you when it happens. But neither takes action for you. Activator in Microsoft Fabric closes that gap — when a Fabric job event occurs, Activator can automatically notify the right people in the right channel, or kick off a follow-up job without waiting for a human response.
 
-## What is Activator
-Activator is a technology in Microsoft Fabric that enables automated processing of events that trigger actions. For example, you can use Activator to notify you by email when a value in an eventstream deviates from a specific range or to run a notebook to perform some Spark-based data processing logic when a real-time dashboard is updated.
+## Fabric job events
 
-![Screenshot of an Activator alert in Microsoft Fabric.](../media/activator.png)
+Every time a Fabric item runs a job — a pipeline, dataflow, notebook, or semantic model refresh — the Fabric platform emits **job events**. The events you can act on include:
 
-## Understand Activator key concepts
+- **Job created** — a job was triggered (scheduled or manual)
+- **Job failed** — the job didn't complete successfully
+- **Job succeeded** — the job completed
+- **Job status changed** — the job moved to a new state
 
-Activator operates based on four core concepts: *Events*, *Objects, *Properties*, and *Rules*.
+Activator connects to these events through Real-Time hub. When the condition you define is met — for example, a specific pipeline's job fails — Activator executes the action you configured.
 
-- **Events** - Each record in a stream of data represents an *event* that has occurred at a specific point in time.
-- **Objects** - The data in an event record can be used to represent an *object*, such as a sales order, a sensor, or some other business entity.
-- **Properties** - The fields in the event data can be mapped to *properties* of the business object, representing some aspect of its state. For example, a *total_amount* field might represent a sales order total, or a *temperature* field might represent the temperature measured by an environmental sensor.
-- **Rules** - The key to using Activator to automate actions based on events is to define *rules* that set conditions under which an action is triggered based on the property values of objects referenced in events. For example, you might define a rule that sends an email to a maintenance manager if the temperature measured by a sensor exceeds a specific threshold.
+## Set up an alert from Real-Time hub
 
-## Use cases for Activator
+The quickest way to connect Activator to a job event is through Real-Time hub, using the **Set alert** wizard:
 
-Activator can help you in various scenarios, such as dynamic inventory management, real-time customer engagement, and effective resource allocation in cloud environments. It's a potent tool for any circumstance that requires real-time data analysis and actions.
+1. In Microsoft Fabric, select **Real-Time** in the left navigation to open Real-Time hub.
+2. Select **Fabric events**, then select **Job events**.
+3. Select **Set alert**.
+4. In the **Monitor** section, select **Select source events** and complete the wizard — choose the event type (for example, **Microsoft.Fabric.JobEvents.ItemJobFailed**), then select the workspace and the specific item to monitor.
+5. In the **Condition** section, choose when to act — on each matching event, or only when a specific field value is met.
+6. In the **Action** section, choose what Activator should do.
 
-Use Activator to:
+:::image type="content" source="../media/activator.png" alt-text="Screenshot of the Add rule panel in Real-Time hub showing a rule configured to monitor Microsoft.Fabric.JobEvents.ItemJobFailed events and run a notebook named Cleanup Partial Load as the action." :::
 
-- Initiate marketing actions when product sales drop.
-- Send notifications when temperature changes could affect perishable goods.
-- Flag real-time issues affecting the user experience on apps and websites.
-- Trigger alerts when a shipment hasn't been updated within an expected time frame.
-- Send alerts when a customer's account balance crosses a certain threshold.
-- Respond to anomalies or failures in data processing workflows immediately.
-- Run ads when same-store sales decline.
-- Alert store managers to move food from failing grocery store freezers before it spoils.
+## Actions available
+
+When the condition is met, Activator can take these actions:
+
+- **Email** — Sends a message with context about the event, including a link to the monitoring hub.
+- **Teams** — Posts a message to an individual, group chat, or channel. This is often more useful than email for on-call teams who need immediate visibility.
+- **Run a Fabric activity** — Triggers a pipeline, notebook, dataflow, spark job, or function.
+
+The ability to run a Fabric activity is the key differentiator from Schedule failures notifications. Rather than waiting for someone to read an email and respond, you can automatically trigger a follow-up action — for example, running a cleanup notebook to remove partial data after a failed load, or triggering a semantic model refresh when an upstream pipeline completes successfully.
+
+However, triggering a pipeline after a failure isn't always the right response. If a job failed because of a code error or a source schema change, running a pipeline again just fails again. Activator works best for **automated coordination**: chaining jobs together, running cleanup actions, or getting the right notification to the right channel — not as a substitute for investigating and fixing the root cause.
+
+## When to use Activator vs. Schedule failures
+
+| Scenario | Use |
+|---|---|
+| Email alert when a scheduled run fails | Schedule failures page |
+| Teams notification to a channel when a job fails | Activator |
+| Notify analysts when a semantic model refresh succeeds | Activator |
+| Trigger a follow-up pipeline when an upstream job completes | Activator |
+| Run a cleanup job after a partial load fails | Activator |
+| Manage notification recipients centrally across all scheduled items | Schedule failures page |
+
+Use Schedule failures for simple, centrally managed email alerts on scheduled failures. Use Activator when you need a richer notification channel, want to react to job success as well as failure, or need a follow-up action rather than just a notification.
 
 > [!TIP]
-> For more information about working with Activator, see **[Tutorial: Create and activate an Activator rule](/fabric/real-time-intelligence/data-activator/activator-tutorial)**.
+> For a deeper exploration of configuring Activator rules and actions, see [Use Activator in Microsoft Fabric](/training/modules/use-fabric-activator/).

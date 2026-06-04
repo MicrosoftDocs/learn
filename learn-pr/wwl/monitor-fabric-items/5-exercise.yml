@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.monitor-fabric-items.exercise
-title: Exercise - Monitor Fabric activity in the Monitor hub
+title: Exercise - Monitor Fabric activity in the monitoring hub
 metadata:
-  title: Exercise - Monitor Fabric activity in the Monitor hub
-  description: "Exercise - Monitor Fabric activity in the Monitor hub"
-  ms.date: 05/09/2025
-  author: wwlpublish
+  title: Exercise - Monitor Fabric Activity in the Monitor Hub
+  description: "Practice monitoring Fabric activity by using the monitoring hub to track dataflow and notebook runs."
+  ms.date: 06/03/2026
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
   ms.custom:

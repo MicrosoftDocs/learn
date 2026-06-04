@@ -1,7 +1,7 @@
-Now it's your turn to monitor Fabric activity in the Monitor hub.
+In this exercise, you practice monitoring Fabric activity in the Monitor hub.
 
 > [!NOTE]
-> To complete this exercise, you need a Microsoft Fabric tenant. See [**Getting started with Fabric**](/fabric/get-started/fabric-trial) to find out how to enable a Fabric trial license.
+> You need access to a Fabric paid or trial capacity to complete this exercise. See [Fabric trial](https://aka.ms/fabrictrial) for information about the free trial.
 
 Launch the exercise and follow the instructions.
 
