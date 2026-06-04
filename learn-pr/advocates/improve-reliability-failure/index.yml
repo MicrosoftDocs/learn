@@ -5,8 +5,8 @@ metadata:
   title: "Improve your reliability with modern operations practices: Learning from failure"
   description: Learn about post-incident reviews, a practice necessary to help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
   ms.date: 04/17/2026
-  author: dnblankedelman
-  ms.author: dnb
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: azure-monitor
   ms.custom: team=cloud_advocates
