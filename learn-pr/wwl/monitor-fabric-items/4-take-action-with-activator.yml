@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.monitor-fabric-items.take-action-with-activator
-title: Take action with Microsoft Fabric Activator
+title: Respond to Fabric events with Activator
 metadata:
-  title: Take action with Microsoft Fabric Activator
-  description: "Take action with Microsoft Fabric Activator"
-  ms.date: 05/09/2025
-  author: wwlpublish
+  title: Respond to Fabric Events With Activator
+  description: "Learn how to use Activator and the Real-Time hub to respond to Fabric job events with automated alerts and remediation actions."
+  ms.date: 06/03/2026
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
   ms.custom:
   - fabric
-durationInMinutes: 5
+  ai-usage: ai-generated
+durationInMinutes: 8
 content: |
   [!include[](includes/4-take-action-with-activator.md)]

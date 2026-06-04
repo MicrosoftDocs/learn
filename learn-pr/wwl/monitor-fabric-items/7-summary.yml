@@ -3,13 +3,14 @@ uid: learn.wwl.monitor-fabric-items.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 05/09/2025
-  author: wwlpublish
+  description: "Review what you learned about monitoring activities in Microsoft Fabric using the monitoring hub and Activator."
+  ms.date: 06/03/2026
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
   ms.custom:
   - fabric
-durationInMinutes: 1
+  ai-usage: ai-generated
+durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
