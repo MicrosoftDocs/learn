@@ -11,7 +11,7 @@ A new model deployment, a context window adjustment, or gradual training data dr
 | Prompt modification | Yes (prompt text) | Medium | Regression evaluation |
 | Gradual drift | No | Low per day, cumulative | Production sampling |
 
-A complete regression suite combines three test categories, each serving a distinct purpose. The **full synthetic dataset** provides comprehensive coverage—all 400 test cases spanning scenario types, complexity variants, customer personas, and adversarial conditions. This coverage ensures no capability gaps emerge in rarely-exercised code paths.
+A complete regression suite combines three test categories, each serving a distinct purpose. The **full synthetic dataset** provides comprehensive coverage—all 400 test cases spanning scenario types, complexity variants, customer personas, and adversarial conditions. This coverage ensures no capability gaps emerge in rarely exercised code paths.
 
 **Canary cases** are a subset of 20-30 high-confidence test cases that should always pass: baseline product search, simple order placement, straightforward returns processing. These cases test fundamental capabilities. If canaries start failing, something seriously broke. Canary failures trigger immediate investigation before checking detailed metrics.
 
@@ -23,7 +23,7 @@ The combined suite runs on every candidate deployment: canaries run first (5 min
 
 Define a **gold baseline**—evaluation results from a known-good agent configuration. This baseline typically comes from the current production version that meets quality targets. For Adventure Works, the gold baseline comes from version 2.3.1 deployed in production: task completion rate 82%, average goal achievement 7.8/10, journey coherence 8.2/10, customer resolution rate 76%.
 
-For each new agent version, run the full evaluation suite and compare scores against the gold baseline. Configure comparison thresholds that define acceptable degradation: task completion rate must not drop more than 2 percentage points, goal achievement must not drop more than 0.3 points, journey coherence must not drop more than 0.5 points, and no single interaction type can drop more than 5 percentage points in task completion.
+For each new agent version, run the full evaluation suite and compare scores against the gold baseline. Configure comparison thresholds that define acceptable degradation: task completion rate must not drop more than two percentage points, goal achievement must not drop more than 0.3 points, journey coherence must not drop more than 0.5 points, and no single interaction type can drop more than five percentage points in task completion.
 
 These thresholds balance two risks: blocking legitimate deployments due to random variation (false positive), and allowing quality regressions to reach production (false negative). Set thresholds using historical variation data: if evaluation scores naturally fluctuate ±1% between identical runs, set the blocking threshold at 2% to avoid false positives while catching real regressions.
 
@@ -205,9 +205,9 @@ if not comparison["overall_pass"]:
 
 ## Monitor drift in production with sampling
 
-Pre-deployment regression tests catch problems before release, but gradual drift occurs in production between deployments. Model endpoints degrade, external APIs change behavior, or user behavior patterns shift. Production evaluation sampling detects these drifts.
+deployment regression tests catch problems before release, but gradual drift occurs in production between deployments. Model endpoints degrade, external APIs change behavior, or user behavior patterns shift. Production evaluation sampling detects these drifts.
 
-Periodically sample a small percentage of production interactions and run automated evaluation: 1% random sampling captures approximately 10,000 interactions daily for Adventure Works' traffic volume, enough for statistically significant trend analysis. Run the same LLM-as-judge evaluators used in regression testing on these samples, storing scores in a time-series database.
+Periodically sample a small percentage of production interactions and run automated evaluation: one percent random sampling captures approximately 10,000 interactions daily for Adventure Works' traffic volume, enough for statistically significant trend analysis. Run the same LLM-as-judge evaluators used in regression testing on these samples, storing scores in a time-series database.
 
 Track evaluation scores over time using 7-day rolling averages to smooth daily noise. Alert when the rolling average drops below the regression test baseline minus a tolerance band. For example, if production task completion averaged 82% for the last two weeks and suddenly drops to 78% over three days, trigger an investigation even though no new deployment occurred.
 

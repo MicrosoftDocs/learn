@@ -70,9 +70,9 @@ The function returns a simple boolean—did the task complete or not? This feeds
 
 ## Apply the goal achievement index
 
-Binary task completion provides a clear outcome metric, but it loses nuance—a nearly successful interaction that fails on a single detail scores the same as a completely failed interaction. The goal achievement index provides graduated scoring that captures how close the agent system came to success.
+Binary task completion provides a clear outcome metric, but it loses nuance—a nearly successful interaction that fails on a single detail scores the same as an interaction that fails completely. The goal achievement index provides graduated scoring that captures how close the agent system came to success.
 
-Design the index with a 0-10 scale decomposed into weighted sub-goals. For Adventure Works order interactions:
+Design the index with a 0-10 scale decomposed into weighted subgoals. For Adventure Works order interactions:
 
 - **Information accuracy** (0-3 points) measures whether product details, pricing, and availability information were correct.
 - **Action correctness** (0-4 points) measures whether the intended transaction (purchase, return, modification) executed properly.
@@ -84,7 +84,7 @@ Implement the goal achievement index as a weighted sum of sub-goal scores:
 
 ```python
 def compute_goal_achievement(outcome: InteractionOutcome) -> float:
-    """Compute a 0-10 goal achievement score from weighted sub-goals."""
+    """Compute a 0-10 goal achievement score from weighted subgoals."""
     sub_goals = {
         "information_accuracy": {"max": 3, "weight": 0.3},
         "action_correctness":   {"max": 4, "weight": 0.4},
@@ -147,7 +147,7 @@ AI quality metrics (accuracy, task completion rate, goal achievement scores) don
 
 **Customer resolution rate** measures whether customers consider their issue resolved without needing escalation to human support. If task completion rate is 85% but customer resolution rate is only 60%, many "completed" tasks didn't actually satisfy customers—they escalate anyway, seeking different solutions.
 
-**Session re-open rate** measures whether customers return to support for the same issue. If a customer's order modification "completes" but they open a new session 4 hours later asking why their order still shows the old configuration, the initial completion was illusory. High re-open rates indicate the multi-agent system creates outcomes that don't match customer expectations.
+**Session reopen rate** measures whether customers return to support for the same issue. If a customer's order modification "completes" but they open a new session 4 hours later asking why their order still shows the old configuration, the initial completion was illusory. High reopen rates indicate the multi-agent system creates outcomes that don't match customer expectations.
 
 **Escalation rate** tracks how often automated interactions hand off to humans. Unlike resolution rate (customer satisfaction), escalation rate measures agent capability boundaries. A 15% escalation rate may be acceptable for complex product selection but indicates serious problems for routine order status queries.
 
@@ -163,7 +163,7 @@ AI Quality Metrics:
 
 Business Impact Metrics:
 - Customer resolution rate: 76% (target: 85%)
-- Session re-open rate: 12% (target: <8%)
+- Session reopen rate: 12% (target: <8%)
 - Escalation rate: 14% (target: <10%)
 
 By Interaction Type:
@@ -198,7 +198,7 @@ This hierarchy prevents both premature optimization (fixing individual agents th
 ## Key takeaways
 
 - **Task completion rate** measures whether customers accomplish their end-to-end goals, not just whether individual agents return correct answers.
-- **Goal achievement index** provides graduated 0-10 scoring with weighted sub-goals, capturing how close the system came to success beyond binary pass/fail.
+- **Goal achievement index** provides graduated 0-10 scoring with weighted subgoals, capturing how close the system came to success beyond binary pass/fail.
 - **Journey coherence** evaluates whether multi-agent response sequences form a logically consistent narrative, catching contradictions that component-level metrics miss.
-- **Business impact metrics** like resolution rate, session re-open rate, and escalation rate connect AI quality scores to real customer outcomes.
+- **Business impact metrics** like resolution rate, session reopen rate, and escalation rate connect AI quality scores to real customer outcomes.
 - **Metric aggregation hierarchies** organize evaluation into system, journey-type, and per-agent tiers that guide investigation from broad health to specific component fixes.
