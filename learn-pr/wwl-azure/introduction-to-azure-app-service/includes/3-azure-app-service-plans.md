@@ -6,16 +6,16 @@ When you create an App Service plan in a certain region (for example, West Europ
 * Region (West US, East US, etc.)
 * Number of VM instances
 * Size of VM instances (for example, P1v3, P2v3, based on pricing tier)
-* Pricing tier (Free, Shared, Basic, Standard, Premium, PremiumV2, PremiumV3, IsolatedV2)
+* Pricing tier (such as Free, Shared, Basic, Standard, Premium, PremiumV2, PremiumV3, and IsolatedV2; available tiers depend on the selected operating system)
 
 The *pricing tier* of an App Service plan determines what App Service features you get and how much you pay for the plan. There are a few categories of pricing tiers:
 
-* **Shared compute**: **Free** and **Shared**, the two base tiers, runs an app on the same Azure VM as other App Service apps, including apps of other customers. These tiers allocate CPU quotas to each app that runs on the shared resources, and the resources can't scale out.
+* **Shared compute**: **Free** and **Shared**, the two base tiers, runs an app on the same Azure VM as other App Service apps, including apps of other customers. Availability of these tiers depends on the selected operating system. These tiers allocate CPU quotas to each app that runs on the shared resources, and the resources can't scale out.
 * **Dedicated compute**: The **Basic**, **Standard**, **Premium**, **PremiumV2**, and **PremiumV3** tiers run apps on dedicated Azure VMs. Only apps in the same App Service plans share the same compute resources. The higher the tier, the more VM instances are available to you for scale-out.
 * **Isolated**: The **Isolated** and **IsolatedV2** tiers run dedicated Azure VMs on dedicated Azure Virtual Networks. It provides network isolation on top of compute isolation to your apps. It provides the maximum scale-out capabilities.
 
 > [!NOTE]
-> App Service Free and Shared hosting plans are base tiers that run on the same Azure virtual machines as other App Service apps. Some apps might belong to other customers. These tiers are intended to be used only for development and testing purposes.
+> App Service Free and Shared hosting plans are base tiers that run on the same Azure virtual machines as other App Service apps. Availability of these tiers can vary depending on the selected operating system. Some apps might belong to other customers. These tiers are intended to be used only for development and testing purposes.
 
 ## How does my app run and scale?
 
