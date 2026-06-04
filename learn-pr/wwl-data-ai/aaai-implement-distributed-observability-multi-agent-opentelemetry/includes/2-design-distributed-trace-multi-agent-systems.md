@@ -150,11 +150,11 @@ Sampling configuration balances cost control with diagnostic completeness. For p
 
 ## Distributed tracing as a Microsoft Foundry capability
 
-The distributed tracing architecture you've built \u2014 W3C trace context propagated across agent boundaries, OpenTelemetry spans for every LLM call and tool invocation, Azure Monitor as the centralized backend \u2014 maps to the tracing capability named in Microsoft Foundry. Microsoft Foundry's tracing capability provides the observability surface where you can view end-to-end execution flows across all agents in a workflow.
+The distributed tracing architecture you've built—W3C trace context propagated across agent boundaries, OpenTelemetry spans for every LLM call and tool invocation, Azure Monitor as the centralized backend—maps to the tracing capability named in Microsoft Foundry. Microsoft Foundry's tracing capability provides the observability surface where you can view end-to-end execution flows across all agents in a workflow.
 
 Azure Monitor and Application Insights are the underlying implementation: OpenTelemetry SDKs in each agent export spans to Azure Monitor, which renders them as waterfall diagrams in Application Insights. Foundry's observability UI surfaces these same traces within the Foundry project context, enabling you to correlate agent execution with the model invocations, tool calls, and thread-level events that Foundry manages.
 
-**Alerting** is a core element of the tracing capability. Beyond passive trace visualization, your tracing implementation should configure Azure Monitor alert rules that fire when key trace metrics breach thresholds: P95 span duration exceeding SLO targets, error-rate SLIs crossing alert thresholds, or anomalous agent-to-agent call patterns detected by the anomaly detection policies in Unit 5. Alerting converts passive observability into active incident detection \u2014 without it, you only discover problems when customers report them.
+**Alerting** is a core element of the tracing capability. Beyond passive trace visualization, your tracing implementation should configure Azure Monitor alert rules that fire when key trace metrics breach thresholds: P95 span duration exceeding SLO targets, error-rate SLIs crossing alert thresholds, or anomalous agent-to-agent call patterns detected by the anomaly detection policies in Unit 5. Alerting converts passive observability into active incident detection—without it, you only discover problems when customers report them.
 
 ## Key takeaways
 
