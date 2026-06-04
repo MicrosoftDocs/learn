@@ -30,7 +30,7 @@ subjects:
 units:
   - learn.azure.manage-capacity-pool.introduction
   - learn.azure.manage-capacity-pool.create-capacity-pool
-  - learn.azure.manage-capacity-pool.manage-manual-qos-capacity-pool
+  - learn.azure.manage-capacity-pool.manage-manual-quality-of-service-capacity-pool
   - learn.azure.manage-capacity-pool.manage-billing-by-using-capacity-pool-billing-tags
   - learn.azure.manage-capacity-pool.exercise
   - learn.azure.manage-capacity-pool.knowledge-check
