@@ -1,4 +1,4 @@
-Governance is the backbone of responsible AI. This unit shows how to design policies, controls, and oversight that protect your organization while enabling innovation.
+Governance and security are the backbone of responsible AI. This unit shows how to design policies, controls, and oversight that protect your organization while enabling innovation.
 
 :::image type="content" source="../media/06-ai-governance.png" alt-text="Screenshot of a skyscraper building in a city.":::
 
@@ -7,7 +7,7 @@ Governance is the backbone of responsible AI. This unit shows how to design poli
 To govern AI effectively, start with a unified model that aligns data, AI, and regulatory practices across the organization. These three pillars work together to ensure your AI systems are reliable, compliant, and trusted—so you can scale innovation with confidence.
 
 - **Data governance**: quality, lineage, access, and classification.
-- **AI governance**: model risk management, testing, monitoring, and documentation.
+- **AI governance**: model risk management, testing, monitoring, security controls, and documentation.
 - **Regulatory governance**: align to internal and external rules and policies.
 
 The following table illustrates what good AI governance looks like in practice. The framework groups core activities into clear workstreams and shows tangible outputs that help you govern responsibly and at scale.
@@ -55,4 +55,4 @@ Effective governance protects privacy, ensures compliance, and builds stakeholde
 > 
 > :::image type="content" source="../media/reflection.jpg" alt-text="Screenshot of a person looking at a tablet .":::
 
-You’ve now explored the five drivers of AI readiness. Next, test your knowledge with a sport quiz.
+You've now explored the five drivers of AI readiness. Next, test your knowledge with a short quiz.
