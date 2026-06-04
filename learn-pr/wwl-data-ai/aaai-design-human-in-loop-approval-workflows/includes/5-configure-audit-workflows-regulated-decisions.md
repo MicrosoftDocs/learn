@@ -1,4 +1,4 @@
-Azure Cosmos DB and Application Insights provide the persistent audit infrastructure that multi-agent systems need to satisfy regulatory requirements and prove that human oversight is meaningful. Every auditable decision generates an immutable record — capturing context, reviewer identity, rationale, and execution outcome — that supports compliance reviews, incident investigations, and exception reporting.
+Azure Cosmos DB and Application Insights provide the persistent audit infrastructure that multi-agent systems need to satisfy regulatory requirements and prove that human oversight is meaningful. Every auditable decision generates an immutable record—capturing context, reviewer identity, rationale, and execution outcome—that supports compliance reviews, incident investigations, and exception reporting.
 
 ## Decision taxonomy for audit requirements
 
@@ -19,7 +19,7 @@ Not all agent decisions need the same level of audit scrutiny. Adventure Works c
 | Auditable | Required | Full audit trail | 3 years | Quarterly sampling |
 | Regulated | Required + legal | Immutable record | 7+ years | Every instance |
 
-The taxonomy drives both system design and operational processes — routine decisions optimize for performance, auditable decisions optimize for traceability, and regulated decisions optimize for compliance defensibility.
+The taxonomy drives both system design and operational processes—routine decisions optimize for performance, auditable decisions optimize for traceability, and regulated decisions optimize for compliance defensibility.
 
 ## Audit trail data model and implementation
 
@@ -128,15 +128,15 @@ High rejection rates for a specific agent indicate prompt improvements are neede
 
 ## Compliance posture for automated decision systems
 
-Data protection regulations broadly require that decisions based solely on automated processing, which significantly affect individuals, include meaningful human oversight. For Adventure Works' multi-agent system, decisions like return approvals, refund processing, and exception grants are exactly the kind of consequential decisions that data protection frameworks target. The human-in-the-loop workflows satisfy this oversight requirement, but compliance requires more than just having a human click approve — the oversight must be meaningful.
+Data protection regulations broadly require that decisions based solely on automated processing, which significantly affect individuals, include meaningful human oversight. For Adventure Works' multi-agent system, decisions like return approvals, refund processing, and exception grants are exactly the kind of consequential decisions that data protection frameworks target. The human-in-the-loop workflows satisfy this oversight requirement, but compliance requires more than just having a human click approve—the oversight must be meaningful.
 
-**Meaningful human oversight** requires more than a reviewer clicking approve — they must genuinely assess each decision, have real authority to override the agent, and receive enough context for an informed judgment. Rejection rates of 12–15% across Adventure Works' reviewers confirm that oversight is genuine, not nominal, backed by comprehensive approval cards, compliance team spot-checks, and reviewer training on their data protection responsibilities.
+**Meaningful human oversight** requires more than a reviewer clicking approve—they must genuinely assess each decision, have real authority to override the agent, and receive enough context for an informed judgment. Rejection rates of 12–15% across Adventure Works' reviewers confirm that oversight is genuine, not nominal, backed by comprehensive approval cards, compliance team spot-checks, and reviewer training on their data protection responsibilities.
 
 **Right to explanation** requires that individuals can obtain meaningful information about the logic involved in automated decisions. When a customer asks "Why was my return request approved/denied?", Adventure Works can retrieve the audit record and provide: what policy the decision was based on, what factors the agent considered, who reviewed the decision, and what rationale the reviewer provided. The transparency demonstrates compliance and builds customer trust.
 
-**Proof of oversight for auditors** goes beyond documentation — it requires demonstrating that reviewers can and do override agent decisions. During SOC 2 audits or regulatory compliance reviews, the evidence package includes sample audit records, monthly exception reports, reviewer training records, examples of overridden decisions, and incident response logs confirming reversals. Together these materials show that human oversight is substantive, not theoretical.
+**Proof of oversight for auditors** goes beyond documentation—it requires demonstrating that reviewers can and do override agent decisions. During SOC 2 audits or regulatory compliance reviews, the evidence package includes sample audit records, monthly exception reports, reviewer training records, examples of overridden decisions, and incident response logs confirming reversals. Together these materials show that human oversight is substantive, not theoretical.
 
-The documented architecture — including the escalation thresholds, durable approval workflows, audit trails, and active feedback loops — becomes the compliance evidence package that external auditors review to certify the system meets regulatory requirements.
+The documented architecture—including the escalation thresholds, durable approval workflows, audit trails, and active feedback loops—becomes the compliance evidence package that external auditors review to certify the system meets regulatory requirements.
 
 ## Decision reversal and remediation processes
 
@@ -144,7 +144,7 @@ Even with human oversight, mistakes happen. An approver reviews a return excepti
 
 Adventure Works implements a decision reversal workflow: any auditable decision can be reversed within 30 days by flagging the decision ID, providing reversal justification, and executing compensating actions (reverse refund, cancel credit, notify affected customers). The reversal creates a new audit record linked to the original decision, maintaining full traceability.
 
-Reversal rate tracking is a key compliance metric. If reversal rate exceeds 2% for any decision category, a root cause analysis begins — either agent quality has degraded, reviewer oversight isn't effective, or the decision process has systemic flaws. High reversal rates signal compliance risk that requires executive attention.
+Reversal rate tracking is a key compliance metric. If reversal rate exceeds 2% for any decision category, a root cause analysis begins—either agent quality has degraded, reviewer oversight isn't effective, or the decision process has systemic flaws. High reversal rates signal compliance risk that requires executive attention.
 
 With comprehensive audit trails, exception reporting, regulatory compliance documentation, and reversal capabilities, Adventure Works has built a human-in-the-loop system that not only functions operationally but satisfies external auditors and regulatory requirements.
 

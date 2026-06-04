@@ -108,7 +108,7 @@ Asynchronous approval workflows and immutable audit trails make human oversight 
 
 ## Human review as a Microsoft Foundry capability
 
-The human review capability you've implemented here \u2014 durable workflows that pause for human input, approval cards that surface context for reviewers, and audit trails that record every decision \u2014 maps to a named capability in Microsoft Foundry. Microsoft Foundry's human review process provides the runtime integration point where agents pause execution and request human evaluation of a decision before proceeding.
+The human review capability you've implemented here—durable workflows that pause for human input, approval cards that surface context for reviewers, and audit trails that record every decision—maps to a named capability in Microsoft Foundry. Microsoft Foundry's human review process provides the runtime integration point where agents pause execution and request human evaluation of a decision before proceeding.
 
 Power Automate and Teams adaptive cards are the underlying implementation pattern: Foundry surfaces the human review request through its approval workflow integration, which Power Automate routes to a Teams channel where reviewers see adaptive cards with full decision context. When reviewers approve or reject in Teams, the response flows back through Power Automate to the durable workflow state, and Foundry resumes agent execution.
 
