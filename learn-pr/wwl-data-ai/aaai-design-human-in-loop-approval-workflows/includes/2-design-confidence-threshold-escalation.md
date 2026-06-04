@@ -1,4 +1,4 @@
-Not every uncertain situation warrants human escalation. If Adventure Works escalated every request where the agent expressed any uncertainty, human reviewers would be overwhelmed with thousands of low-stakes decisions that agents could handle adequately on their own. Conversely, allowing agents to make high-impact decisions with low confidence creates business risk — a 60% confident decision to issue a $1,000 refund isn't acceptable. Effective escalation requires combining multiple signals: the agent's confidence in its decision, the business impact of the action, whether the request requires policy exceptions, and the ambiguity level of the situation.
+Microsoft Foundry agents evaluate their own confidence before executing high-stakes decisions, and you can configure escalation thresholds to route low-confidence or high-impact actions to human reviewers automatically. Effective escalation combines multiple signals — model confidence, financial impact, policy exceptions, and request ambiguity — so human review activates only when it's genuinely needed.
 
 ## When agents should escalate to human review
 
@@ -10,7 +10,7 @@ Escalation triggers should be composable — multiple factors combine to determi
 
 **Policy exception requirements** trigger escalation regardless of confidence. Adventure Works' agents operate within defined policy boundaries — they can approve returns within the 30-day window, they can issue refunds up to order value, they can apply standard discount codes. But some customer requests require bending these rules: accepting a return after 45 days, issuing a refund exceeding order value to compensate for poor service, or applying manager-level discounts. These exception requests require human authorization even if the agent is highly confident the exception is appropriate.
 
-**Ambiguity detection** identifies situations where multiple valid interpretations exist and choosing incorrectly would harm the customer. A customer writes "I want to return this" — the agent sees two orders in the past 60 days. Which one? The agent must not guess. A customer says "the product broke after two weeks" — is this a defect warranty claim or a standard return? The distinction determines which team handles the request and what compensation is appropriate. Ambiguity requires clarification, either from the customer or from a human agent who can apply judgment.
+**Ambiguity detection** identifies situations where multiple valid interpretations exist and choosing incorrectly would harm the customer. A customer writes "I want to return this" — the agent sees two orders in the past 60 days. Which one? The agent mustn't guess. A customer says "the product broke after two weeks" — is this a defect warranty claim or a standard return? The distinction determines which team handles the request and what compensation is appropriate. Ambiguity requires clarification, either from the customer or from a human agent who can apply judgment.
 
 | Escalation trigger | Threshold | Example situation |
 |-------------------|-----------|-------------------|
@@ -27,7 +27,7 @@ Confidence scores reported by language models are notoriously miscalibrated. A m
 
 Adventure Works builds a calibration dataset by collecting 2,000 agent decisions with their reported confidence scores and having human experts label each decision as correct or incorrect. The calibration analysis groups decisions by reported confidence ranges — all decisions with 0.85-0.90 confidence are grouped together — and calculates actual accuracy within each group. If the 0.85-0.90 confidence group achieved only 72% accuracy, the calibration curve maps a reported 0.875 confidence to a true 0.72 accuracy.
 
-The calibration curve transforms raw model confidence into calibrated probabilities that reflect real-world accuracy. When the agent reports 0.85 confidence, the system looks up the calibrated accuracy (0.72) and uses that for escalation decisions. This calibration is model-specific and task-specific — each agent's confidence calibration is calculated separately because different tasks have different accuracy profiles. The return policy agent's confidence scores may be well-calibrated (reported 0.80 = actual 0.78), while the exception handler's scores may be overconfident (reported 0.80 = actual 0.63).
+The calibration curve transforms raw model confidence into calibrated probabilities that reflect real-world accuracy. When the agent reports 0.85 confidence, the system looks up the calibrated accuracy (0.72) and uses that for escalation decisions. This calibration is model-specific and task-specific — Adventure Works calculates each agent's confidence calibration separately because different tasks have different accuracy profiles. The return policy agent's confidence scores may be well-calibrated (reported 0.80 = actual 0.78), while the exception handler's scores may be overconfident (reported 0.80 = actual 0.63).
 
 Recalibration happens quarterly as the agents improve. As prompts are refined and agents receive feedback, their accuracy at each confidence level changes. A three-month calibration dataset might show that the agent now achieves 0.81 accuracy in the 0.85-0.90 reported confidence range, updating the calibration curve. Continuous recalibration ensures escalation thresholds remain accurate as agent capabilities evolve.
 
@@ -171,22 +171,12 @@ If the shipping exception agent escalates 35% of requests due to insufficient co
 
 Escalation pattern analysis also identifies calibration drift. If escalations due to "insufficient confidence" are consistently approved by human reviewers with no modifications, the confidence threshold may be too conservative — the agent is more accurate than the calibration curve suggests. Conversely, if human reviewers frequently reject or modify escalated proposals, the agent is less accurate than calibrated scores indicate, and recalibration is needed.
 
-With well-calibrated confidence scores, risk-stratified thresholds, and graceful escalation UX, Adventure Works ensures that human oversight activates precisely when needed. The next step: implementing durable workflows that allow humans to approve or reject escalated requests without blocking agent operation.
+When confidence calibration, risk stratification, and clear escalation messaging work together, human review activates at the right moment — protecting the business from costly errors without turning every uncertain request into a bottleneck.
 
-## Unit summary
+## Key takeaways
 
 - **Composable escalation triggers** combine confidence scores, business impact assessment, policy exception detection, and ambiguity identification rather than relying on any single metric.
 - **Confidence calibration** maps raw model scores to actual accuracy rates using historical data, correcting for systematic overconfidence or underconfidence in model self-assessment.
 - **Risk-stratified thresholds** require higher calibrated confidence for higher-stakes decisions: 0.60 for low-risk, 0.75 for moderate, and 0.88 for high-risk actions.
 - **Graceful escalation UX** communicates what's being escalated, sets time expectations, offers continued help with other aspects, and provides a tracking reference for follow-up.
 - **Escalation pattern tracking** identifies optimization opportunities by monitoring which agents, categories, and triggers generate the most escalations over time.
-
-## Check your understanding
-
-**1. An agent reports 0.85 raw confidence on a $500 refund decision. After calibration, the score drops to 0.72. Why is the calibrated score more useful for threshold decisions?**
-
-- A. Calibrated scores are always lower than raw scores, making them safer for high-stakes decisions
-- B. Calibration adjusts model confidence to reflect actual accuracy — a calibrated 0.72 means approximately 72% of decisions at this confidence level are correct, while the raw 0.85 may overestimate true accuracy
-- C. Azure AI Agent Service requires calibrated scores for the escalation API
-
-***Correct answer: B.*** LLMs tend to be overconfident in their raw scores. Calibration maps raw confidence to observed accuracy using historical data. A calibrated 0.72 provides a trustworthy probability for threshold decisions, while the raw 0.85 may mislead the escalation logic.

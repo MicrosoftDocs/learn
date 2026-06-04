@@ -29,9 +29,9 @@ quiz:
     - content: "Increase the minimum instance count for the orchestrator Container App to prevent scale-to-zero during low traffic periods."
       isCorrect: false
       explanation: "Maintaining minimum instances reduces the probability of loss but doesn't eliminate it. Container Apps can still restart or fail for other reasons. The fundamental issue is that in-memory state isn't durable—it disappears whenever the process restarts, regardless of scaling policy."
-    - content: "Replace the in-memory state machine with Azure Durable Functions or Azure Logic Apps, which persist workflow state externally so approval workflows survive service restarts and scale events."
+    - content: "Replace the in-memory state machine with a durable workflow service such as Power Automate, which externalizes approval state so workflows survive service restarts and scale events."
       isCorrect: true
-      explanation: "Durable workflows serialize state to external storage (Azure Storage for Durable Functions) on every step. When the container restarts or scales down, the workflow state survives and automatically resumes from where it stopped. Durability is a fundamental requirement for workflows that wait for human responses over extended time periods."
+      explanation: "Durable workflows externalize state to persistent storage outside the application process. With Power Automate, the approval flow state lives in the platform's own storage rather than in application memory. When the container restarts or scales down, the workflow state survives and the orchestrating agent can resume polling from where it stopped. Durability is a fundamental requirement for workflows that wait for human responses over extended time periods."
     - content: "Shorten the approval window to 15 minutes to ensure all approvals are processed before scale-down occurs."
       isCorrect: false
       explanation: "Restricting the approval window to accommodate infrastructure limitations creates an operational constraint that may not align with the review process needs. Human reviewers may not always be available within 15 minutes. The right solution is durable workflow state that's independent of container lifecycle."

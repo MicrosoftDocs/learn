@@ -1,4 +1,4 @@
-When an agent escalates a decision for human approval, the workflow can't block waiting for review — synchronous waiting would tie up agent resources and create terrible customer experience. A customer shouldn't sit on hold for 30 minutes while a manager reviews a return exception. The agent needs to log the approval request, inform the customer about expected review time, and release the session so the customer can disconnect. Hours later, when a human reviewer approves or rejects the request, the system must resume execution, apply the decision, and notify the customer. This durability requirement demands workflow infrastructure that maintains state across long delays without consuming active compute resources.
+Power Automate and Microsoft Teams provide a low-code integration layer for delivering approval requests to human reviewers and collecting their decisions asynchronously. When an agent escalates a decision, it posts a request to a Power Automate webhook, releases the session, and polls for the reviewer's response — all without blocking agent execution or forcing customers to wait.
 
 ## Why approval workflows require durable execution
 
@@ -10,7 +10,7 @@ Adventure Works needs durable workflows for several approval scenarios. A return
 
 ## Approval workflow architecture on Azure
 
-Adventure Works standardizes the lab implementation on Power Automate webhook flows paired with Teams adaptive cards. This choice keeps the workflow implementation simple and consistent with the starter app scaffolding while still providing asynchronous human review.
+Adventure Works standardizes on Power Automate webhook flows paired with Teams adaptive cards for this approval architecture. This combination delivers fast low-code integration with an approval channel that reviewers already use daily, while still providing fully asynchronous human review.
 
 In this pattern, the agent posts an approval request payload to `POWER_AUTOMATE_WEBHOOK_URL`, stores a tracking record in Redis, and returns control immediately. The workflow polls for the decision status until it receives `APPROVED` or `REJECTED` (or times out and escalates).
 
@@ -21,7 +21,7 @@ In this pattern, the agent posts an approval request payload to `POWER_AUTOMATE_
 | Redis pending approvals store | Tracks in-flight requests and TTL | Lightweight state tracking for asynchronous polling |
 | Audit log store | Persists final decision artifacts | Compliance and incident traceability |
 
-This architecture maps directly to the LP4 starter app and lab tasks, where learners implement `submit_for_approval()` and `poll_approval_status()` against the webhook contract.
+In a typical implementation, your application exposes two core functions against this contract: `submit_for_approval()` to post the request payload and record the pending state, and `poll_approval_status()` to check for a decision until one arrives or the timeout elapses.
 
 ## Designing approval requests for human reviewers
 
@@ -92,19 +92,19 @@ class ApprovalWorkflow:
 
 Approval workflows need timeout policies to prevent requests from waiting indefinitely. Adventure Works defines timeout tiers: standard approvals have 4-hour SLA, urgent approvals have 1-hour SLA, and escalated approvals have 24-hour SLA. If a reviewer doesn't respond within the timeout window, the workflow automatically escalates to the next approver tier or defaults to a conservative fallback action.
 
-For a return exception request, the timeout handling works like this: the initial manager approval waits for the configured polling window, then escalates to a senior reviewer path if no decision record appears. If escalation also times out, the workflow defaults to rejection with a notification explaining that review exceeded SLA and suggesting a follow-up path. The default-to-rejection policy ensures timeouts do not create uncontrolled approvals.
+For a return exception request, the timeout handling works like this: the initial manager approval waits for the configured polling window, then escalates to a senior reviewer path if no decision record appears. If escalation also times out, the workflow defaults to rejection with a notification explaining that review exceeded SLA and suggesting a follow-up path. The default-to-rejection policy ensures timeouts don't create uncontrolled approvals.
 
 For lower-stakes approvals, the timeout might default to auto-approval rather than rejection. A loyalty points adjustment under $25 might auto-approve after 2 hours if the manager hasn't responded — the business risk is minimal, and auto-approval serves the customer better than indefinite waiting.
 
 ## Audit trail for all approval decisions
 
-Every approval or rejection must be logged in an immutable audit trail that records who made the decision, when they decided, what context they reviewed, whether they approved or rejected, any comments they provided, and what actions resulted from the decision. This audit trail serves three purposes: compliance with SOC 2 and GDPR requirements for automated decision oversight, post-incident analysis when something goes wrong, and agent improvement through analyzing which proposals get approved vs. rejected.
+Every approval or rejection must be logged in an immutable audit trail that records who made the decision, when they decided, what context they reviewed, whether they approved or rejected, any comments they provided, and what actions resulted from the decision. This audit trail serves three purposes: compliance with automated decision oversight requirements, post-incident analysis when something goes wrong, and agent improvement through analyzing which proposals get approved vs. rejected.
 
-Adventure Works stores approval audit records in Azure Cosmos DB with append-only semantics — records are never modified or deleted, only inserted. Each record includes the approval request JSON, the decision outcome, the approver identity (hashed for privacy), timestamp, and a link to the OpenTelemetry trace from the agent's original decision. The audit database is queryable for compliance reporting and analytics but protected with role-based access control to prevent tampering.
+Adventure Works stores approval audit records in Azure Cosmos DB with append-only semantics — the system never modifies or deletes records; it only appends new ones. Each record includes the approval request JSON, the decision outcome, the approver identity (hashed for privacy), timestamp, and a link to the OpenTelemetry trace from the agent's original decision. Role-based access control protects the audit database from tampering while keeping it queryable for compliance reporting and analytics.
 
 Monthly audit reports analyze approval patterns: approval rate by agent, by request type, by approver, and by impact level. Low approval rates for a specific agent or request type suggest the agent is making poor recommendations and needs prompt improvement. High approval rates across all categories with no rejections might indicate rubber-stamping — reviewers approving without genuine assessment — requiring reviewer training or spot-check audits.
 
-With asynchronous webhook-based approval workflows and comprehensive audit trails capturing every human intervention, Adventure Works has built a human-in-the-loop system that scales to production workload. The next step: using the approval feedback to improve agent quality through active learning.
+Asynchronous approval workflows and immutable audit trails make human oversight practical at scale — reviewers see the right context, decisions survive infrastructure events, and every approval leaves a traceable record.
 
 ## Human review as a Microsoft Foundry capability
 
@@ -112,9 +112,9 @@ The human review capability you've implemented here \u2014 durable workflows tha
 
 Power Automate and Teams adaptive cards are the underlying implementation pattern: Foundry surfaces the human review request through its approval workflow integration, which Power Automate routes to a Teams channel where reviewers see adaptive cards with full decision context. When reviewers approve or reject in Teams, the response flows back through Power Automate to the durable workflow state, and Foundry resumes agent execution.
 
-The practical implication: when the JTA describes "human review process to evaluate solutions in Microsoft Foundry," the architecture you've built here is that process. Foundry provides the capability surface; durable workflows + Power Automate + Teams adaptive cards are the implementation components. Neither is complete without the other \u2014 Foundry defines when and why to pause; the implementation components define how.
+Foundry provides the capability surface; durable workflows + Power Automate + Teams adaptive cards are the implementation components. Neither is complete without the other — Foundry defines when and why to pause; the implementation components define how.
 
-## Unit summary
+## Key takeaways
 
 - **Durable workflows** externalize state to persistent storage and pause execution while awaiting human approval, consuming zero compute resources during the wait and surviving application restarts.
 - **Power Automate webhooks** paired with Teams adaptive cards provide a low-code integration for submitting approval requests and collecting human decisions asynchronously.

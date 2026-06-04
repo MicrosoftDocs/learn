@@ -1,4 +1,4 @@
-Human approval decisions represent high-quality training signal for agent improvement. When a manager rejects an agent's proposed action and suggests an alternative, that rejection teaches the agent where its reasoning was flawed. When customers rate responses as unhelpful, they identify prompts that need refinement. When human reviewers consistently approve certain categories of exception requests that the agent initially flagged for review, the agent could handle those autonomously if properly trained. Adventure Works has thousands of human feedback signals flowing into their system every week, but capturing feedback is only valuable if the data feeds back into agent improvement processes that continuously reduce escalation rates and improve autonomous decision quality.
+Microsoft Foundry's evaluation pipeline turns human approval decisions into structured test cases that continuously improve agent quality. Every rejected proposal becomes a labeled example that validates prompt updates before deployment and tracks whether the improvement actually reduces future escalation rates.
 
 ## Two complementary types of human feedback
 
@@ -22,9 +22,9 @@ For internal agent reviews, customer service managers use a flagging system. Whi
 
 ## Integrating feedback into the evaluation pipeline
 
-Feedback collection alone doesn't improve agents — the feedback must flow into the evaluation and testing pipeline from earlier modules in this learning path. Adventure Works connects approval rejections directly to their regression test suite, ensuring that rejected proposals become test cases that validate future improvements.
+Feedback collection alone doesn't improve agents — the feedback must flow into an evaluation and testing pipeline that validates prompt improvements against structured test cases before deployment. Adventure Works connects approval rejections directly to their regression test suite, ensuring that rejected proposals become test cases that validate future improvements.
 
-The feedback integration workflow operates monthly: at the end of each month, query all approval rejections from the audit database; filter for high-confidence rejections where the approver provided clear rationale; sample 100 rejections covering diverse request types and agents; for each rejection, extract the agent's input (customer request), the agent's proposed action (what was rejected), and the correct action (from approver comment or subsequent manual handling); format each as an evaluation test case: input → expected output → label (correct/incorrect); add test cases to the regression suite in Azure AI Foundry.
+The feedback integration workflow operates monthly: at the end of each month, query all approval rejections from the audit database; filter for high-confidence rejections where the approver provided clear rationale; sample 100 rejections covering diverse request types and agents; for each rejection, extract the agent's input (customer request), the agent's proposed action (what was rejected), and the correct action (from approver comment or subsequent manual handling); format each as an evaluation test case: input → expected output → label (correct/incorrect); add test cases to the regression suite in Microsoft Foundry.
 
 Before deploying any agent prompt update, the updated prompt runs against the expanded regression suite including all feedback-derived test cases. If the new prompt fails on test cases derived from recent rejections, the update would reintroduce recently fixed bugs — don't deploy. This feedback loop ensures continuous quality improvement and prevents regression.
 
@@ -209,9 +209,9 @@ This feedback-driven optimization loop continuously improves agent quality. Each
 > [!TIP]
 > **Pause and reflect:** Your monthly feedback analysis shows that 18% of rejections involve discounted product returns where the agent refunds list price instead of the amount paid. How would you prioritize this feedback example using confidence-outcome mismatch, novelty, and frequency criteria, and what specific prompt change would you propose?
 
-Active learning from human feedback transforms agents from static models into continuously improving systems. Combined with confidence-based escalation and durable approval workflows, Adventure Works has built a human-in-the-loop architecture that protects the business from agent errors while using those errors as training signal for future improvements. The final component: audit and compliance workflows that ensure the system meets regulatory requirements.
+Active learning from human feedback transforms agents from static models into continuously improving systems. Each rejection tightens the gap between what the agent knows and what reviewers actually expect — and combined with confidence-based escalation and durable approval workflows, this feedback loop is what makes human oversight genuinely valuable rather than just a compliance checkbox.
 
-## Unit summary
+## Key takeaways
 
 - **Two feedback types** complement each other: sparse but high-quality approval/rejection signals from expert reviewers, and abundant but noisier explicit correction feedback from customer ratings and agent flags.
 - **Low-friction collection** maximizes feedback volume through one-click approval decisions, simple thumbs up/down ratings (42% completion rate), and single-click flagging for internal reviews.

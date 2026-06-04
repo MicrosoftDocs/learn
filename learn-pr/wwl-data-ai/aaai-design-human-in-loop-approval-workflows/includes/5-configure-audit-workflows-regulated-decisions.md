@@ -1,4 +1,4 @@
-Multi-agent systems making consequential decisions about customers must maintain audit trails that satisfy regulatory compliance, support incident investigations, and demonstrate to auditors that human oversight is meaningful rather than nominal. Adventure Works operates in regulated industries where GDPR Article 22 requires human review of automated decisions that significantly affect individuals, SOC 2 demands comprehensive logging of system actions, and internal governance requires accountability for every exception approval. Building the approval workflows and feedback loops isn't enough — the system must prove that oversight actually happened and that decisions are traceable, justified, and reversible when necessary.
+Azure Cosmos DB and Application Insights provide the persistent audit infrastructure that multi-agent systems need to satisfy regulatory requirements and prove that human oversight is meaningful. Every auditable decision generates an immutable record — capturing context, reviewer identity, rationale, and execution outcome — that supports compliance reviews, incident investigations, and exception reporting.
 
 ## Decision taxonomy for audit requirements
 
@@ -10,7 +10,7 @@ Not all agent decisions need the same level of audit scrutiny. Adventure Works c
 
 **Auditable decisions** include exception approvals, refunds above thresholds, bulk operations affecting multiple customers, account status changes, and policy deviation requests. These decisions require human review before execution and comprehensive audit records that capture who approved, why they approved, what context they reviewed, and what actions resulted. Auditable decisions link to OpenTelemetry traces for full context reconstruction.
 
-**Regulated decisions** include data access requests (GDPR subject access), fraud investigations, regulatory holds, account closures for compliance reasons, and any decision that could expose the company to legal liability. Regulated decisions require enhanced documentation with legal review, extended retention (7+ years), immutable audit trails, and quarterly compliance review.
+**Regulated decisions** include data access requests (individual data access rights), fraud investigations, regulatory holds, account closures for compliance reasons, and any decision that could expose the company to legal liability. Regulated decisions require enhanced documentation with legal review, extended retention (7+ years), immutable audit trails, and quarterly compliance review.
 
 | Decision category | Human review | Audit logging | Retention period | Compliance review |
 |------------------|--------------|---------------|------------------|-------------------|
@@ -128,13 +128,13 @@ High rejection rates for a specific agent indicate prompt improvements are neede
 
 ## Compliance posture for automated decision systems
 
-GDPR Article 22 gives individuals the right not to be subject to decisions based solely on automated processing that significantly affect them. For Adventure Works' multi-agent system, decisions like return approvals, refund processing, and exception grants are "decisions that significantly affect individuals" under GDPR. The human-in-the-loop workflows satisfy Article 22's requirement for human oversight, but compliance requires more than just having a human click approve — the oversight must be meaningful.
+Data protection regulations broadly require that decisions based solely on automated processing, which significantly affect individuals, include meaningful human oversight. For Adventure Works' multi-agent system, decisions like return approvals, refund processing, and exception grants are exactly the kind of consequential decisions that data protection frameworks target. The human-in-the-loop workflows satisfy this oversight requirement, but compliance requires more than just having a human click approve — the oversight must be meaningful.
 
-**Meaningful human oversight** means the reviewer genuinely assesses the decision rather than rubber-stamping agent recommendations, has the authority and capability to override incorrect agent decisions, receives sufficient context to make an informed judgment, and has adequate time to review without pressure to approve quickly. Adventure Works demonstrates meaningful oversight through: comprehensive approval cards that present full context, audit trails showing reviewers do reject proposals (rejection rate 12-15%), spot-check reviews where compliance team verifies approval rationale is substantive, and training for reviewers on their GDPR responsibilities.
+**Meaningful human oversight** requires more than a reviewer clicking approve — they must genuinely assess each decision, have real authority to override the agent, and receive enough context for an informed judgment. Rejection rates of 12–15% across Adventure Works' reviewers confirm that oversight is genuine, not nominal, backed by comprehensive approval cards, compliance team spot-checks, and reviewer training on their data protection responsibilities.
 
 **Right to explanation** requires that individuals can obtain meaningful information about the logic involved in automated decisions. When a customer asks "Why was my return request approved/denied?", Adventure Works can retrieve the audit record and provide: what policy the decision was based on, what factors the agent considered, who reviewed the decision, and what rationale the reviewer provided. The transparency demonstrates compliance and builds customer trust.
 
-**Proof of oversight for auditors** compiles evidence that human oversight is real and effective. During SOC 2 audits or GDPR compliance reviews, Adventure Works presents: sample audit records showing complete decision trails, monthly exception reports demonstrating active oversight, evidence of reviewer training and authority grants, examples of overridden agent decisions proving override capability exists, and incident response logs showing decisions can be reversed when errors are detected.
+**Proof of oversight for auditors** goes beyond documentation — it requires demonstrating that reviewers can and do override agent decisions. During SOC 2 audits or regulatory compliance reviews, the evidence package includes sample audit records, monthly exception reports, reviewer training records, examples of overridden decisions, and incident response logs confirming reversals. Together these materials show that human oversight is substantive, not theoretical.
 
 The documented architecture — including the escalation thresholds, durable approval workflows, audit trails, and active feedback loops — becomes the compliance evidence package that external auditors review to certify the system meets regulatory requirements.
 
@@ -144,14 +144,14 @@ Even with human oversight, mistakes happen. An approver reviews a return excepti
 
 Adventure Works implements a decision reversal workflow: any auditable decision can be reversed within 30 days by flagging the decision ID, providing reversal justification, and executing compensating actions (reverse refund, cancel credit, notify affected customers). The reversal creates a new audit record linked to the original decision, maintaining full traceability.
 
-Reversal rate tracking is a key compliance metric. If reversal rate exceeds 2% for any decision category, root cause analysis is triggered — either agent quality has degraded, reviewer oversight isn't effective, or the decision process has systemic flaws. High reversal rates signal compliance risk that requires executive attention.
+Reversal rate tracking is a key compliance metric. If reversal rate exceeds 2% for any decision category, a root cause analysis begins — either agent quality has degraded, reviewer oversight isn't effective, or the decision process has systemic flaws. High reversal rates signal compliance risk that requires executive attention.
 
-With comprehensive audit trails, exception reporting, regulatory compliance documentation, and reversal capabilities, Adventure Works has built a human-in-the-loop system that not only functions operationally but satisfies external auditors and regulatory requirements. The next exercise will let you implement these approval and audit workflows in a realistic multi-agent scenario.
+With comprehensive audit trails, exception reporting, regulatory compliance documentation, and reversal capabilities, Adventure Works has built a human-in-the-loop system that not only functions operationally but satisfies external auditors and regulatory requirements.
 
-## Unit summary
+## Key takeaways
 
 - **Decision taxonomy** categorizes agent decisions into four tiers (routine, notable, auditable, regulated) with escalating logging, review, and retention requirements.
 - **Comprehensive audit records** capture decision identification, input context, agent recommendation, human review details, and execution outcomes in structured Cosmos DB documents.
 - **Exception reporting** runs monthly KQL queries analyzing approval patterns by agent, approver, request category, and SLA compliance to identify optimization opportunities and compliance risks.
-- **GDPR compliance** requires demonstrating meaningful human oversight through genuine review scrutiny, override capability, sufficient reviewer context, and adequate review time.
+- **Regulatory compliance** requires demonstrating meaningful human oversight through genuine review scrutiny, override capability, sufficient reviewer context, and adequate review time.
 - **Decision reversal** enables corrections within 30 days through compensating actions and linked audit records, with reversal rate tracking serving as a key compliance health metric.
