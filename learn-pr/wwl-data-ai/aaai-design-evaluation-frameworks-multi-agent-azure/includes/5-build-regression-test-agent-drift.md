@@ -205,7 +205,7 @@ if not comparison["overall_pass"]:
 
 ## Monitor drift in production with sampling
 
-deployment regression tests catch problems before release, but gradual drift occurs in production between deployments. Model endpoints degrade, external APIs change behavior, or user behavior patterns shift. Production evaluation sampling detects these drifts.
+Predeployment regression tests catch problems before release, but gradual drift occurs in production between deployments. Model endpoints degrade, external APIs change behavior, or user behavior patterns shift. Production evaluation sampling detects these drifts.
 
 Periodically sample a small percentage of production interactions and run automated evaluation: one percent random sampling captures approximately 10,000 interactions daily for Adventure Works' traffic volume, enough for statistically significant trend analysis. Run the same LLM-as-judge evaluators used in regression testing on these samples, storing scores in a time-series database.
 
