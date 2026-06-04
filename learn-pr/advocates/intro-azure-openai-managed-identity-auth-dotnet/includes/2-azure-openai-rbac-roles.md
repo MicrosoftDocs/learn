@@ -1,4 +1,4 @@
-These roles are the OpenAI RBAC roles that are available to be assigned to identities. Always choose a role that provides the least amount of privilege required for that identity to do the tasks it needs to perform. For more detail on OpenAI RBAC roles, see [Role-based access control for Azure OpenAI in Microsoft Foundry Models (classic)](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/role-based-access-control).
+These roles are the OpenAI RBAC roles that are available to be assigned to identities. Always choose a role that provides the least amount of privilege required for that identity to do the tasks it needs to perform. For more detail on OpenAI RBAC roles, see [Role-based access control for Azure OpenAI in Microsoft Foundry Models (classic)](/azure/ai-foundry/openai/how-to/role-based-access-control).
 
 - The **Cognitive Services OpenAI User** role allows viewing resources, endpoints, and model deployments, using playground experiences, and making inference API calls. However, it doesn't permit creating resources, viewing/copying/regenerating keys, or managing model deployments.
 - The **Cognitive Services OpenAI Contributor** role includes all user permissions plus the ability to create custom fine-tuned models, upload datasets, and manage model deployments. It doesn't allow creating new resources or managing keys.
@@ -38,7 +38,7 @@ To configure role assignments using Azure CLI, perform the following steps:
 | **Chat completions** | Cognitive Services OpenAI User | 5e0bd9bd-7b93-4f28-af87-19fc36ad61bd |
 
 > [!NOTE]
-> The Azure OpenAI Assistants API is deprecated and will retire on August 26, 2026. For new agent workloads, use the generally available [Microsoft Foundry Agents service](https://learn.microsoft.com/azure/foundry/agents/overview). Plan migration of existing Assistants workloads before the retirement date by using the [migration guide](https://learn.microsoft.com/azure/foundry/agents/how-to/migrate).
+> The Azure OpenAI Assistants API is deprecated and will retire on August 26, 2026. For new agent workloads, use the generally available [Microsoft Foundry Agents service](/azure/foundry/agents/overview). Plan migration of existing Assistants workloads before the retirement date by using the [migration guide](/azure/foundry/agents/how-to/migrate).
 
 3. Select an identity type to use.
 
