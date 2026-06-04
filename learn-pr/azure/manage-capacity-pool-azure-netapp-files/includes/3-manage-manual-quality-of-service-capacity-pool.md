@@ -9,7 +9,7 @@ The QoS type is an attribute of a capacity pool. Azure NetApp Files provides two
 
 To create a new capacity pool using the manual QoS type, you follow the same steps used to create a new capacity pool. In the New Capacity Pool window, select the Manual QoS type.
 
-![Screenshot of the Azure portal New capacity pool creation form, with the Manual QoS type option highlighted.](../media/manual-qos.png)
+:::image type="content" source="../media/manual-qos.png" alt-text="Screenshot of the Azure portal New capacity pool creation form, with the Manual QoS type option highlighted." border="true" lightbox="../media/manual-qos.png":::
 
 ### Change a capacity pool to use manual QoS
 
@@ -17,7 +17,7 @@ You can change a capacity pool that currently uses the auto QoS type to use the 
 
 Choose the capacity pool that you want to change to using manual QoS and select **Change QoS type**. Then set **New QoS Type** to **Manual.** Select **OK**.
 
-[![Screenshot of the Azure portal displaying a capacity pools page with the Change QoS type panel open, showing options to set the new QoS type to Manual or Auto.](../media/change-qos-type.png)](../media/change-qos-type.png#lightbox)
+:::image type="content" source="../media/change-qos-type.png" alt-text="Screenshot of the Azure portal displaying a capacity pools page with the Change QoS type panel open, showing options to set the new QoS type to Manual or Auto." border="true" lightbox="../media/change-qos-type.png":::
 
 ### Modify the allotted throughput of a manual QoS volume
 
@@ -26,4 +26,4 @@ If a volume is contained in a manual QoS capacity pool, you can modify the allot
 1. From the Volumes page, select the volume whose throughput you want to modify.
 2. Select **Change throughput**. Specify the **Throughput (MiB/S)** that you want. Select **OK**.
 
-![Screenshot of the Azure portal Change throughput dialog box, showing available throughput and an editable throughput field.](../media/change-throughput.png)
+:::image type="content" source="../media/change-throughput.png" alt-text="Screenshot of the Azure portal Change throughput dialog box, showing available throughput and an editable throughput field." border="true" lightbox="../media/change-throughput.png":::
