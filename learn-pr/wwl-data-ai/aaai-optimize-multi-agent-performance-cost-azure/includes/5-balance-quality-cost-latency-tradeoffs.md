@@ -76,11 +76,11 @@ SLA breaches trigger accountability mechanisms. If gold customer P95 latency exc
 
 The SLA framework transforms optimization from "let's try to reduce costs" into "we have specific quality targets and cost limits that define success." This clarity drives principled decision-making: when a proposed optimization would save $2,000/month but risks breaching the gold customer satisfaction SLA, the decision is clear — don't ship it. When an optimization improves standard customer latency by 1 second while staying within cost limits, ship it immediately.
 
-With intelligent model routing, multi-level caching, token budget management, and segment-based optimization profiles, Adventure Works has transformed their multi-agent platform from a cost overrun into a well-optimized system that delivers differentiated service at sustainable economics. The next exercise will let you apply these strategies to a realistic multi-agent optimization scenario.
+With intelligent model routing, multi-level caching, token budget management, and segment-based optimization profiles, Adventure Works has transformed their multi-agent platform from a cost overrun into a well-optimized system that delivers differentiated service at sustainable economics. These pillars provide a framework for making systematic, measurable improvements to any multi-agent system.
 
 ## Parallelism as a task-duration optimization technique
 
-The optimization strategies in this unit address cost (model routing, token budgets) and quality (A/B testing, circuit breakers). Parallelism addresses **task duration** \u2014 the wall-clock time a workflow takes to complete, which directly affects latency-tier SLAs and the user's perceived responsiveness.
+The optimization strategies in this unit address cost (model routing, token budgets) and quality (A/B testing, circuit breakers). Parallelism addresses **task duration**, meaning the wall-clock time a workflow takes to complete, which directly affects latency-tier SLAs and the user's perceived responsiveness.
 
 Sequential agent execution takes time equal to the sum of all agent durations. Parallel execution (using `asyncio.gather`) takes time equal to the slowest agent's duration. For workflows with independent sub-tasks, the latency reduction can be dramatic: four independent 15-second agents running sequentially take 60 seconds; running in parallel, they complete in 15 seconds.
 
@@ -92,7 +92,7 @@ Design parallelism decisions with the optimization triangle in mind:
 - **Keep sequential** when cost is the binding constraint, or when downstream agents need results from upstream agents (true dependencies preclude parallelism regardless of quota).
 - **Batch** when throughput matters more than individual request latency — batch processing is higher-latency but lower-cost-per-unit.
 
-Instrument parallel workflows with distributed tracing span data to identify which parallel agents are your critical path \u2014 the slowest agent determines the workflow's completion time. Optimization effort on non-critical-path agents doesn't improve end-to-end latency.
+Instrument parallel workflows with distributed tracing span data to identify which parallel agents are your critical path. The slowest agent determines the workflow's completion time. Optimization effort on non-critical-path agents doesn't improve end-to-end latency.
 
 ## Key takeaways
 

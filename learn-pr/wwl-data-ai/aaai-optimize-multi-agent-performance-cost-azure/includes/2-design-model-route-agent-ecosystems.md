@@ -38,7 +38,7 @@ Tier 1 has a quality floor of 75 — if a tier 1 response scores below 75, retry
 
 ```python
 from azure.ai.inference import ChatCompletionsClient
-from azure.core.credentials import AzureKeyCredential
+from azure.identity import DefaultAzureCredential
 
 class ModelRouter:
     def __init__(self, config):
@@ -49,7 +49,7 @@ class ModelRouter:
         }
         self.quality_floors = {1: 75, 2: 85, 3: 60}
         self.clients = {
-            tier: ChatCompletionsClient(endpoint, AzureKeyCredential(config["api_key"]))
+            tier: ChatCompletionsClient(endpoint, DefaultAzureCredential())
             for tier, endpoint in self.tier_deployments.items()
         }
     
@@ -131,7 +131,7 @@ This data-driven optimization converges on the ideal routing policy for Adventur
 Model routing transforms multi-agent cost optimization from a blunt "use cheaper models everywhere" approach into a sophisticated matching system that delivers the right quality at the right price for each unique request. The next challenge: reducing the number of requests that need model inference at all through intelligent caching strategies.
 
 > [!NOTE]
-> **Open-source model alternatives:** Azure-hosted GPT-4o-mini and GPT-4o cover most routing scenarios, but cost-optimized open-source models from Hugging Face \u2014 such as Phi-4-mini, Mistral-7B, or Llama-3.1-8B \u2014 are valid routing targets for the "simple" and "moderate" tiers when deployed on Azure Machine Learning managed endpoints or serverless inference. Open-source models reduce per-token cost further but require you to manage model quality benchmarking, version pinning, and serving infrastructure. Incorporate them into the routing tier where quality floors are demonstrably met.
+> **Open-source model alternatives:** Azure-hosted GPT-4o-mini and GPT-4o cover most routing scenarios, but cost-optimized open-source models from Hugging Face (such as Phi-4-mini, Mistral-7B, or Llama-3.1-8B) are valid routing targets for the "simple" and "moderate" tiers when deployed on Azure Machine Learning managed endpoints or serverless inference. Open-source models reduce per-token cost further but require you to manage model quality benchmarking, version pinning, and serving infrastructure. Incorporate them into the routing tier where quality floors are demonstrably met.
 
 ## Key takeaways
 

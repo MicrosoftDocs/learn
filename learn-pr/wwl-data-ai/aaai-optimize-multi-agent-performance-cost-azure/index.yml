@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should have:
   - Experience building multi-agent systems with Microsoft Foundry Agent Service
-  - Familiarity with Azure Managed Redis and Azure API Management caching patterns
+  - Familiarity with Azure Cache for Redis caching patterns
   - Understanding of token usage and cost monitoring in Microsoft Foundry
   - Experience with OpenTelemetry instrumentation for performance measurement
   - Proficiency in Python
@@ -33,7 +33,6 @@ roles:
 products:
 - azure
 - microsoft-foundry
-- azure-cosmos-db
 subjects:
 - artificial-intelligence
 - machine-learning

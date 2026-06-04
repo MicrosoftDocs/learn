@@ -8,7 +8,7 @@ Multi-agent caching operates at three distinct levels, each optimizing a differe
 
 **Prompt caching** uses Azure OpenAI's built-in prefix caching to reduce costs when the system prompt remains constant across requests. Adventure Works' agents use long, detailed system prompts (1,500-3,000 tokens) that define the agent's role, provide policy context, and establish response formatting. These prompts never change within a deployment version. Azure OpenAI caches the prompt prefix automatically after the first request, and subsequent requests using the same prefix receive approximately 50% cost reduction on input tokens. The optimization is free — no infrastructure changes needed — but requires designing system prompts with stable prefixes. Variable content (customer context, retrieved documents) must appear after the cached prefix to maximize cache hit rates.
 
-**Semantic caching** addresses the "same question, different words" problem using embedding similarity. Adventure Works uses two semantic caching patterns based on deployment constraints. The lab baseline uses local cosine matching: generate a query embedding, scan a bounded Redis key set, and compute similarity in Python. If the previous question "What's the status of my delivery?" matches with 0.92 similarity, return the cached response without invoking the model. For vector-capable Redis deployments, the same pattern can be implemented with native vector search. Semantic caching requires careful threshold tuning: too low (0.80) produces false hits where dissimilar questions return incorrect cached responses, while too high (0.98) misses legitimate cache opportunities.
+**Semantic caching** addresses the "same question, different words" problem using embedding similarity. Adventure Works uses two semantic caching patterns based on deployment constraints. One approach uses local cosine matching: generate a query embedding, scan a bounded Redis key set, and compute similarity in Python. If the previous question "What's the status of my delivery?" matches with 0.92 similarity, return the cached response without invoking the model. For vector-capable Redis deployments, the same pattern can be implemented with native vector search. Semantic caching requires careful threshold tuning: too low (0.80) produces false hits where dissimilar questions return incorrect cached responses, while too high (0.98) misses legitimate cache opportunities.
 
 **Result caching** stores final agent outputs keyed by the complete input signature. This works best for deterministic workloads where the same input always produces the same output. Product catalog lookups, policy explanations, and store location queries are perfect candidates — the answers don't change unless the underlying data changes. Result caching requires careful cache invalidation: when the product catalog updates, all cached catalog responses must be purged. Adventure Works implements a tagging system where each cached result stores metadata about which data sources it depends on, enabling targeted cache invalidation when those sources change.
 
@@ -24,7 +24,7 @@ The three levels compound: prompt caching reduces cost for all requests, semanti
 
 Semantic caching transforms natural language questions into high-dimensional vectors that capture meaning rather than exact phrasing. When a request arrives, the system generates an embedding and then scans a bounded Redis key set to find semantically equivalent questions. Similarity is computed locally with numpy cosine matching rather than server-side Redis vector search.
 
-The lab implementation uses local cosine matching so the workflow runs on standard Redis tiers without extra Redis modules. In production environments that provide vector search support, you can replace the local scan with native vector queries while keeping the same threshold calibration and invalidation policies.
+Local cosine matching runs on standard Redis tiers without requiring extra Redis modules. In production environments that provide vector search support, you can replace the local scan with native vector queries while keeping the same threshold calibration and invalidation policies.
 
 The semantic cache stores three components for each entry: the embedding vector of the original question, the agent's response to that question, and metadata including timestamp, agent ID, and data dependency tags. When searching for a cache hit, the workflow loads a bounded key set and computes cosine similarity scores in-process. If the highest score exceeds the threshold (0.92), the system returns the cached response. If no entry exceeds the threshold, the request proceeds to model inference, and the resulting response gets cached for future requests.
 
@@ -33,6 +33,7 @@ Cache invalidation for semantic caching requires time-based and content-based st
 ```python
 import redis
 import numpy as np
+from datetime import datetime
 from openai import AzureOpenAI
 import os
 
@@ -98,7 +99,7 @@ class SemanticCache:
             "embedding": ",".join(str(x) for x in query_embedding),
             "response": response,
             "agent_id": agent_id,
-            "timestamp": str(np.datetime64('now')),
+            "timestamp": datetime.utcnow().isoformat(),
             "dependencies": ",".join(dependencies) if dependencies else ""
         }
         
