@@ -1,11 +1,11 @@
-These RBAC roles are available for you to assign to identities for Azure OpenAI Service:
+These RBAC roles are available for you to assign to identities for Azure OpenAI in Azure AI Foundry Models:
 
 - The *Cognitive Services OpenAI User* role allows viewing resources, endpoints, and model deployments; using playground experiences; and making inference API calls. However, it doesn't permit creating resources, viewing/copying/regenerating keys, or managing model deployments.
 - The *Cognitive Services OpenAI Contributor* role includes all user permissions plus the ability to create custom fine-tuned models, upload datasets, and manage model deployments. It doesn't allow creating new resources or managing keys.
 - The *Cognitive Services Contributor* role permits creating new resources, viewing and managing keys, creating and managing model deployments, and using playground experiences. It doesn't allow access to quotas or making inference API calls.
-- The *Cognitive Services Usages Reader* role allows viewing quota usage across a subscription. This role provides minimal access and is typically combined with other roles.
+- The *Cognitive Services Usages Reader* role allows viewing quota usage across a subscription. This role must be assigned at the subscription scope and is typically combined with one of the other roles to give an identity access to both quota information and inference.
 
-Always choose a role that provides the lowest amount of privilege required for the identity to do the tasks that it needs to perform. For more detail on Azure OpenAI RBAC roles.
+Always choose a role that provides the lowest amount of privilege required for the identity to do the tasks that it needs to perform. For least-privilege scenarios in which only a single Azure OpenAI resource needs access, prefer scoping the role assignment to that resource rather than to the parent resource group. For more detail on Azure OpenAI RBAC roles, see [Role-based access control for Azure OpenAI in Azure AI Foundry Models](/azure/ai-foundry/openai/how-to/role-based-access-control).
 
 ## Configure role assignments in the Azure portal
 
@@ -33,7 +33,7 @@ To configure role assignments by using the Azure CLI, perform these steps:
 
    | Use case | Role name | Role ID |
    |---|---|---|
-   | Assistants | Cognitive Services OpenAI Contributor | a001fd3d-188f-4b5d-821b-7da978bf7442 |
+   | Model management (fine-tuning and deployments) | Cognitive Services OpenAI Contributor | a001fd3d-188f-4b5d-821b-7da978bf7442 |
    | Chat completions | Cognitive Services OpenAI User | 5e0bd9bd-7b93-4f28-af87-19fc36ad61bd |
 
 1. Select an identity type to use:
@@ -50,11 +50,13 @@ To configure role assignments by using the Azure CLI, perform these steps:
        --query id -o tsv
    ```
 
-1. Assign the RBAC role to the identity for the resource group. To grant your identity permissions to your resource through RBAC, assign a role by using the Azure CLI command `az role assignment create`. Replace `<identity-id>`, `<subscription-id>`, and `<resource-group-name>` with your actual values.
+1. Assign the RBAC role to the identity. To grant your identity permissions to your resource through RBAC, assign a role by using the Azure CLI command `az role assignment create`. The following example scopes the assignment to a single Azure OpenAI resource, which is the recommended least-privilege scope when only one resource needs access. Replace `<identity-id>`, `<subscription-id>`, `<resource-group-name>`, and `<azure-openai-resource-name>` with your actual values.
 
    ```azurecli
    az role assignment create \
        --role "Cognitive Services OpenAI User" \
        --assignee "\<identity-id>" \
-       --scope "/subscriptions/\<subscription-id>/resourceGroups/\<resource-group-name>"
+       --scope "/subscriptions/\<subscription-id>/resourceGroups/\<resource-group-name>/providers/Microsoft.CognitiveServices/accounts/\<azure-openai-resource-name>"
    ```
+
+   If you intentionally need to grant the role to every Azure OpenAI resource in a resource group, replace the resource scope above with the resource group scope `/subscriptions/<subscription-id>/resourceGroups/<resource-group-name>`.
