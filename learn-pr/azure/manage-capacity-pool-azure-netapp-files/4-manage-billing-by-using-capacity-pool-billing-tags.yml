@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-capacity-pool.manage-billing-by-using-capacity-pool-billing-tags
+title: Manage billing by using capacity pool billing tags
+metadata:
+  title: Manage billing by using capacity pool billing tags
+  description: Learn how to manage Azure NetApp Files billing and expenses using capacity pool billing tags.
+  ms.date: 05/12/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-manage-billing-by-using-capacity-pool-billing-tags.md)]
