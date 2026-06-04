@@ -9,6 +9,5 @@ Regression testing catches quality drift before production deployment. Regressio
 ## Learn more
 
 - [Microsoft Foundry evaluation documentation](https://learn.microsoft.com/azure/ai-foundry/how-to/evaluate-generative-ai-app)
-- [LLM-as-judge evaluation patterns](https://learn.microsoft.com/azure/ai-foundry/concepts/evaluation-metrics-built-in)
-- [Azure AI Evaluation SDK reference](https://learn.microsoft.com/python/api/azure-ai-evaluation/)
+- [Built-in evaluators for agentic quality](https://learn.microsoft.com/azure/ai-foundry/concepts/evaluation-metrics-built-in)
 - [Synthetic data generation for testing](https://learn.microsoft.com/azure/ai-foundry/how-to/develop/simulator-interaction-data)

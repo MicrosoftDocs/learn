@@ -77,15 +77,6 @@ OUTPUT FORMAT (JSON):
 }}
 """
     
-    from azure.ai.inference import ChatCompletionsClient
-    from azure.identity import DefaultAzureCredential
-    import os
-
-    chat_client = ChatCompletionsClient(
-        endpoint=os.environ["AZURE_AI_SERVICES_ENDPOINT"],
-        credential=DefaultAzureCredential(),
-    )
-    
     response = chat_client.complete(
         model=os.environ["MODEL_DEPLOYMENT_NAME"],
         messages=[{"role": "user", "content": generation_prompt}],

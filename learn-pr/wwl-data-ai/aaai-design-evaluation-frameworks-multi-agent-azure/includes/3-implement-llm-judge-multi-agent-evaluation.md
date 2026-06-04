@@ -74,7 +74,6 @@ For high-stakes evaluations affecting deployment decisions, use multiple judges 
 Flag cases with high disagreement (score spread > 3 points) for human review. If one judge rates an interaction 8/10 but another rates it 3/10, the evaluation is uncertain—human review provides the ground truth.
 
 ```python
-from azure.ai.evaluation import evaluate
 from typing import List, Dict
 
 def task_completion_judge_gpt4o(customer_request: str, transcript: str, 
