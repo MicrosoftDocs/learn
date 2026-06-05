@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a Quarkus application
   description: In this exercise, you bootstrap a Quarkus application, develop it, test it, and run it locally.
   ms.date: 03/06/2025
-  author: yoshioterada
-  ms.author: yoterada
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
     - team=devdiv
