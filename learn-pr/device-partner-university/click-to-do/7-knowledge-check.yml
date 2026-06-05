@@ -1,0 +1,168 @@
+### YamlMime:ModuleUnit
+
+uid: learn.dpu.click-to-do.knowledge-check 
+
+title: Knowledge check 
+
+metadata: 
+
+  title: Knowledge Check 
+
+  description: Check your understanding of Click to Do and how it helps you take action on content. 
+
+  ms.date: 06/05/2026 
+
+  author: Stephanie-Rosenzweig 
+
+  ms.author: v-stephanier 
+
+  ms.topic: unit  
+
+durationInMinutes: 5 
+
+quiz: 
+
+  title: Check your knowledge 
+
+  questions: 
+
+  - content: "What is Click to Do designed to do?" 
+
+    choices: 
+
+    - content: "Manage tasks in a list" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Click to Do isn’t a task management tool." 
+
+    - content: "Take action on content directly from your screen" 
+
+      isCorrect: true 
+
+      explanation: "Correct. Click to Do lets you interact with on-screen content and take action without switching apps." 
+
+    - content: "Replace desktop applications" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Click to Do works alongside your existing apps—it doesn’t replace them." 
+
+    - content: "Store files" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Click to Do doesn’t function as file storage." 
+
+  - content: "What happens when Click to Do analyzes your screen?" 
+
+    choices: 
+
+    - content: "It runs continuously in the background" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Click to Do doesn’t continuously analyze your screen." 
+
+    - content: "It only activates when you engage with it" 
+
+      isCorrect: true 
+
+      explanation: "Correct. Click to Do activates when you choose to use it." 
+
+    - content: "It uploads all content to the cloud" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Click to Do doesn’t upload all content to the cloud." 
+
+    - content: "It stores screenshots automatically" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Click to Do doesn’t automatically store screenshots." 
+
+  - content: "Which action is available when selecting text?" 
+
+    choices: 
+
+    - content: "Install apps" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Installing apps isn’t part of Click to Do actions." 
+
+    - content: "Format hardware" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Hardware formatting isn’t supported by Click to Do." 
+
+    - content: "Summarize or rewrite text" 
+
+      isCorrect: true 
+
+      explanation: "Correct. Click to Do can provide actions like summarizing or rewriting selected text." 
+
+    - content: "Restart the PC" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Restarting your PC isn’t a Click to Do action." 
+
+  - content: "Where does Click to Do process most actions?" 
+
+    choices: 
+
+    - content: "In the cloud" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Not all processing happens in the cloud." 
+
+    - content: "On external servers" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Click to Do doesn’t primarily rely on external servers." 
+
+    - content: "Locally on the device" 
+
+      isCorrect: true 
+
+      explanation: "Correct. Many Click to Do actions are processed locally on your device." 
+
+    - content: "In Microsoft Edge" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Click to Do isn’t limited to a specific app like Microsoft Edge." 
+
+  - content: "What is a key benefit of Click to Do?" 
+
+    choices: 
+
+    - content: "Requires multiple apps" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Click to Do reduces the need to switch between apps." 
+
+    - content: "Reduces task switching" 
+
+      isCorrect: true 
+
+      explanation: "Correct. Click to Do helps you stay focused by reducing context switching." 
+
+    - content: "Limits functionality" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Click to Do is designed to expand what you can do more efficiently." 
+
+    - content: "Deletes unused files" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. File cleanup isn’t a Click to Do capability."
+      
