@@ -6,7 +6,7 @@ Escalation triggers should be composable—multiple factors combine to determine
 
 **Confidence score thresholds** represent the agent's self-assessed certainty about its proposed action. After analyzing a request and formulating a response or action, the agent generates a confidence score from 0.0 to 1.0 indicating how certain it is that the proposed action is correct. Confidence below 0.75 for any decision triggers review consideration. However, confidence scores alone are insufficient because they don't account for the stakes of the decision—a 0.70 confidence decision to send a standard shipping notification is fine, while 0.70 confidence on a fraud investigation is unacceptable.
 
-**Business impact assessment** quantifies the financial or operational consequences of the action. The impact calculation considers monetary value (refund amounts, credit issued, discount applied), scope (number of customers affected), and irreversibility (can the action be easily undone?). High-impact actions have different confidence requirements than low-impact ones. Adventure Works defines three impact tiers: low impact (< \$50 value, single customer, reversible), moderate impact (\$50-\$200 value or affects 2-10 customers), and high impact (> \$200 value, affects > 10 customers, or irreversible actions like account closures).
+**Business impact assessment** quantifies the financial or operational consequences of the action. The impact calculation considers monetary value (refund amounts, credit issued, discount applied), scope (number of customers affected), and irreversibility (can the action be easily undone?). High-impact actions have different confidence requirements than low-impact ones. Adventure Works defines three impact tiers: low impact (< 50 USD value, single customer, reversible), moderate impact (50-200 USD value or affects 2-10 customers), and high impact (> 200 USD value, affects > 10 customers, or irreversible actions like account closures).
 
 **Policy exception requirements** trigger escalation regardless of confidence. Adventure Works' agents operate within defined policy boundaries—they can approve returns within the 30-day window, they can issue refunds up to order value, they can apply standard discount codes. But some customer requests require bending these rules: accepting a return after 45 days, issuing a refund exceeding order value to compensate for poor service, or applying manager-level discounts. These exception requests require human authorization even if the agent is highly confident the exception is appropriate.
 
@@ -15,7 +15,7 @@ Escalation triggers should be composable—multiple factors combine to determine
 | Escalation trigger | Threshold | Example situation |
 |-------------------|-----------|-------------------|
 | Low confidence | < 0.60 always, < 0.75 with moderate+ impact | Agent unsure which policy applies |
-| High business impact | > \$200 or > 10 customers | Bulk refund, large exception approval |
+| High business impact | > 200 USD or > 10 customers | Bulk refund, large exception approval |
 | Policy exception | Any exception request | Return outside window, above-limit credit |
 | Ambiguity | Multiple valid interpretations | Unclear which order, which policy applies |
 
@@ -35,11 +35,11 @@ Recalibration happens quarterly as the agents improve. As prompts are refined an
 
 With calibrated confidence scores, Adventure Works defines escalation thresholds that balance automation efficiency with risk tolerance. The thresholds are risk-stratified: higher-risk decisions require higher confidence before autonomous execution.
 
-**Low-risk decisions** (impact < \$50, single customer, reversible) require calibrated confidence > 0.60 to proceed autonomously. If confidence falls below 0.60, escalate. These decisions include standard return label generation, order status updates to customers, and applying approved discount codes. The 0.60 threshold accepts that 40% of low-confidence low-risk decisions might be suboptimal, which is acceptable given the small impact and easy reversibility.
+**Low-risk decisions** (impact < 50 USD, single customer, reversible) require calibrated confidence > 0.60 to proceed autonomously. If confidence falls below 0.60, escalate. These decisions include standard return label generation, order status updates to customers, and applying approved discount codes. The 0.60 threshold accepts that 40% of low-confidence low-risk decisions might be suboptimal, which is acceptable given the small impact and easy reversibility.
 
-**Moderate-risk decisions** (impact \$50-\$200 or affects 2-10 customers) require calibrated confidence > 0.75. Examples include return approvals within policy, refunds matching order value, and loyalty points adjustments within tier limits. The 0.75 threshold means the agent must be correct at least 75% of the time based on calibrated accuracy—not a high bar, but sufficient for moderate-stakes situations.
+**Moderate-risk decisions** (impact 50-200 USD or affects 2-10 customers) require calibrated confidence > 0.75. Examples include return approvals within policy, refunds matching order value, and loyalty points adjustments within tier limits. The 0.75 threshold means the agent must be correct at least 75% of the time based on calibrated accuracy—not a high bar, but sufficient for moderate-stakes situations.
 
-**High-risk decisions** (impact > \$200, affects > 10 customers, or irreversible) require calibrated confidence > 0.88. These include exception approvals, bulk operations, account modifications, and actions that could trigger regulatory scrutiny. The 0.88 threshold ensures high accuracy before autonomous action.
+**High-risk decisions** (impact > 200 USD, affects > 10 customers, or irreversible) require calibrated confidence > 0.88. These include exception approvals, bulk operations, account modifications, and actions that could trigger regulatory scrutiny. The 0.88 threshold ensures high accuracy before autonomous action.
 
 **Policy exceptions** always escalate regardless of confidence. Even if the agent is 0.95 confident that a 45-day return exception should be approved, it lacks the authority to make that decision autonomously. Human authorization is required for out-of-bounds actions.
 
