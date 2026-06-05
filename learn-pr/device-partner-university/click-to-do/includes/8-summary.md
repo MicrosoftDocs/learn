@@ -10,10 +10,10 @@ In this module, you learned how to use Click to Do to take action on text and im
 
 Now that you’ve completed this module, you should be able to answer **“yes”** to the following statements:
 
-- I understand how to use Click to Do to take action on text and images directly from my screen
-- I can explain how Click to Do reduces task switching, helping to save time and improve productivity
-- I can identify which actions are available for different types of content
-- I can apply Click to Do in role-based scenarios to streamline workflows
+- I understand how to use Click to Do to take action on text and images directly from my screen.
+- I can explain how Click to Do reduces task switching, helping to save time and improve productivity.
+- I can identify which actions are available for different types of content.
+- I can apply Click to Do in role-based scenarios to streamline workflows.
 
 ## Continue exploring Copilot+ PC features
 
