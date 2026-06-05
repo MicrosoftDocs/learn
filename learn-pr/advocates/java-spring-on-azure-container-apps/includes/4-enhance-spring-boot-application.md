@@ -28,22 +28,24 @@ To view metrics for your application, use the following steps:
 
 ## View log streams via the Azure CLI
 
-You can view the log streams for your container app in the Azure CLI by using the `az containerapp logs show` command. You can view your container app's environment system log stream by using the `az containerapp env logs show` command. To view logs within the Azure CLI, use the following command:
+You can view the log streams for your container app in the Azure CLI by using the `az containerapp logs show` command. You can view your container app's environment system log stream by using the `az containerapp env logs show` command. To view the container app's console log stream in the Azure CLI, use the following command:
 
 ### [Bash](#tab/bash)
 
 ```azurecli
 az containerapp logs show \
-    --resource-group petclinic-containerapps \
-    --name petclinic
+    --resource-group $RESOURCE_GROUP \
+    --name $APP_NAME \
+    --type console
 ```
 
 ### [PowerShell](#tab/powershell)
 
 ```powershell
 az containerapp logs show `
-    --resource-group petclinic-containerapps `
-    --name petclinic
+    --resource-group $Env:RESOURCE_GROUP `
+    --name $Env:APP_NAME `
+    --type console
 ```
 
 ---
@@ -69,4 +71,4 @@ The command produces the following output:
 
 For more information, see [View log streams in Azure Container Apps](/azure/container-apps/log-streaming).
 
-Azure Container Apps can run any containerized Java application in the cloud while giving flexible options for how you deploy your applications. With the support of the Java stack, you can enhance your application with automatic memory fitting, different deployment options, and built-in Java diagnostics tools. For more information, see [Java on Azure Container Apps overview](/azure/container-apps/java-overview).
+Azure Container Apps can run any containerized Java application in the cloud while giving flexible options for how you deploy your applications. With the support of the Java stack, you can enhance your application with JVM metrics and managed Java components for Spring. The Java stack also offers preview capabilities, including dynamic logger level (Preview), JAR file deployment (Preview), WAR file deployment (Preview), and automatic memory fitting (Preview) for single-Java-app containers that are deployed from source code or a JAR file. For the current list of generally available and preview capabilities, see the [Java on Azure Container Apps overview](/azure/container-apps/java-overview), and for the prerequisites that enable automatic memory fitting, see [Use memory efficiently for Java apps in Azure Container Apps (preview)](/azure/container-apps/java-memory-fit).
