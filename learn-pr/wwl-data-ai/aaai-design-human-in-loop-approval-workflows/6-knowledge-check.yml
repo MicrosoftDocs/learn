@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Module assessment."
-  ms.date: 06/08/2026
+  ms.date: 06/05/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
@@ -21,7 +21,7 @@ quiz:
     - content: "Yes—the $350 amount exceeds the $200 financial action threshold, which independently triggers human approval regardless of the agent's confidence score."
       isCorrect: true
       explanation: "Financial thresholds on irreversible actions trigger escalation independently of confidence scores. The business reason is that high-confidence incorrect decisions are still costly and hard to reverse at the $350 level. The confidence gate and financial gate are separate triggers in the priority-ordered decision framework."
-    - content: "Yes—but only because the customer is Gold tier. Standard customers would not require escalation for this amount."
+    - content: "Yes—but only because the customer is Gold tier. Standard customers wouldn't require escalation for this amount."
       isCorrect: false
       explanation: "In the described threshold design, financial action thresholds ($200) are absolute, not tier-dependent. The Gold tier designation affects service quality and SLA, not the business authority rules for financial exceptions. A $350 exception requires approval regardless of customer tier."
   - content: "Adventure Works' approval workflow is implemented with a simple in-memory state machine in the orchestrator agent. On Tuesday afternoon, the Azure Container Apps environment scales down the orchestrator instances due to low traffic. Several pending approval requests are lost. What design change would prevent this?"

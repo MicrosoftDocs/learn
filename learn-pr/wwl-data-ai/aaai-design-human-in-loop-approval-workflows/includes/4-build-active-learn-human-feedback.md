@@ -24,7 +24,14 @@ For internal agent reviews, customer service managers use a flagging system. Whi
 
 Feedback collection alone doesn't improve agents—the feedback must flow into an evaluation and testing pipeline that validates prompt improvements against structured test cases before deployment. Adventure Works connects approval rejections directly to their regression test suite, ensuring that rejected proposals become test cases that validate future improvements.
 
-The feedback integration workflow operates monthly: at the end of each month, query all approval rejections from the audit database; filter for high-confidence rejections where the approver provided clear rationale; sample 100 rejections covering diverse request types and agents; for each rejection, extract the agent's input (customer request), the agent's proposed action (what was rejected), and the correct action (from approver comment or subsequent manual handling); format each as an evaluation test case: input → expected output → label (correct/incorrect); add test cases to the regression suite in Microsoft Foundry.
+The feedback integration workflow operates monthly:
+
+1. Query all approval rejections from the audit database.
+2. Filter for high-confidence rejections where the approver provided clear rationale.
+3. Sample 100 rejections covering diverse request types and agents.
+4. For each rejection, extract the agent's input (customer request), the proposed action (what was rejected), and the correct action (from the approver comment or subsequent manual handling).
+5. Format each as an evaluation test case: input → expected output → label (correct/incorrect).
+6. Add the test cases to the regression suite in Microsoft Foundry.
 
 Before deploying any agent prompt update, the updated prompt runs against the expanded regression suite including all feedback-derived test cases. If the new prompt fails on test cases derived from recent rejections, the update would reintroduce recently fixed bugs—don't deploy. This feedback loop ensures continuous quality improvement and prevents regression.
 

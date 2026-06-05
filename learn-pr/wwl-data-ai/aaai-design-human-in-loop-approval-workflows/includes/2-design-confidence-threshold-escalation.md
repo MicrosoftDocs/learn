@@ -23,7 +23,7 @@ These triggers form a decision tree evaluated in priority order: first check for
 
 ## Calibrating confidence scores for accurate thresholds
 
-Confidence scores reported by language models are notoriously miscalibrated. A model might report 0.90 confidence on decisions where it's actually only correct 65% of the time, or report 0.70 confidence when it achieves 85% accuracy. Using raw confidence scores for escalation decisions creates either excessive escalation (if the model underestimates its accuracy) or insufficient oversight (if it overestimates). Confidence calibration maps reported scores to actual accuracy rates using historical data.
+Confidence scores reported by language models are notoriously miscalibrated. A model might report 0.90 confidence on decisions where it's only correct 65% of the time, or report 0.70 confidence when it achieves 85% accuracy. Using raw confidence scores for escalation decisions creates either excessive escalation (if the model underestimates its accuracy) or insufficient oversight (if it overestimates). Confidence calibration maps reported scores to actual accuracy rates using historical data.
 
 Adventure Works builds a calibration dataset by collecting 2,000 agent decisions with their reported confidence scores and having human experts label each decision as correct or incorrect. The calibration analysis groups decisions by reported confidence ranges—all decisions with 0.85-0.90 confidence are grouped together—and calculates actual accuracy within each group. If the 0.85-0.90 confidence group achieved only 72% accuracy, the calibration curve maps a reported 0.875 confidence to a true 0.72 accuracy.
 
@@ -39,7 +39,7 @@ With calibrated confidence scores, Adventure Works defines escalation thresholds
 
 **Moderate-risk decisions** (impact $50-$200 or affects 2-10 customers) require calibrated confidence > 0.75. Examples include return approvals within policy, refunds matching order value, and loyalty points adjustments within tier limits. The 0.75 threshold means the agent must be correct at least 75% of the time based on calibrated accuracy—not a high bar, but sufficient for moderate-stakes situations.
 
-**High-risk decisions** (impact > $200, affects > 10 customers, or irreversible) require calibrated confidence > 0.88. These include exception approvals, bulk operations, account modifications, and actions that could trigger regulatory scrutiny. The 0.88 threshold ensures very high accuracy before autonomous action.
+**High-risk decisions** (impact > $200, affects > 10 customers, or irreversible) require calibrated confidence > 0.88. These include exception approvals, bulk operations, account modifications, and actions that could trigger regulatory scrutiny. The 0.88 threshold ensures high accuracy before autonomous action.
 
 **Policy exceptions** always escalate regardless of confidence. Even if the agent is 0.95 confident that a 45-day return exception should be approved, it lacks the authority to make that decision autonomously. Human authorization is required for out-of-bounds actions.
 
