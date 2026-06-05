@@ -6,8 +6,8 @@ metadata:
   title: Containerize a Java app
   description: Containerize a Java app.
   ms.date: 02/12/2025
-  author: yoshioterada
-  ms.author: yoterada
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
     - devx-track-java
