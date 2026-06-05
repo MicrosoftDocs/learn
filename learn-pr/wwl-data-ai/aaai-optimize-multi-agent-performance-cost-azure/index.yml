@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.optimize-multi-agent-performance-cost-azure
+metadata:
+  title: Optimize Multi-Agent Performance and Cost in Microsoft Foundry
+  description: "Optimize multi-agent performance and cost in Microsoft Foundry. Design model routing strategies across agent ecosystems, implement multi-level caching architectures, optimize token usage and context management across agent chains, and systematically analyze quality-cost-latency trade-offs."
+  ms.date: 06/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-foundry
+  ai-usage: ai-assisted
+title: Optimize multi-agent performance and cost in Microsoft Foundry
+summary: "Optimize multi-agent performance and cost in Microsoft Foundry. Design model routing strategies across agent ecosystems, implement multi-level caching architectures, optimize token usage and context management across agent chains, and systematically analyze quality-cost-latency trade-offs."
+abstract: |
+  By the end of this module, you're able to:
+  - Design model routing strategies that assign optimal model tiers to agents based on task complexity
+  - Implement multi-level caching architectures that reduce redundant computation across agent interactions
+  - Optimize token usage and context management to reduce cost across multi-agent chains without sacrificing quality
+  - Analyze and balance quality-cost-latency trade-offs systematically at the multi-agent system level
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience building multi-agent systems with Microsoft Foundry Agent Service
+  - Familiarity with Azure Cache for Redis caching patterns
+  - Understanding of token usage and cost monitoring in Microsoft Foundry
+  - Experience with OpenTelemetry instrumentation for performance measurement
+  - Proficiency in Python
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+products:
+- azure
+- microsoft-foundry
+subjects:
+- artificial-intelligence
+- machine-learning
+units:
+- learn.wwl.optimize-multi-agent-performance-cost-azure.introduction
+- learn.wwl.optimize-multi-agent-performance-cost-azure.design-model-route-agent-ecosystems
+- learn.wwl.optimize-multi-agent-performance-cost-azure.implement-multi-level-cache-strategies
+- learn.wwl.optimize-multi-agent-performance-cost-azure.optimize-token-usage-context-management
+- learn.wwl.optimize-multi-agent-performance-cost-azure.balance-quality-cost-latency-tradeoffs
+- learn.wwl.optimize-multi-agent-performance-cost-azure.knowledge-check
+- learn.wwl.optimize-multi-agent-performance-cost-azure.summary
+badge:
+  uid: learn.wwl.optimize-multi-agent-performance-cost-azure.badge
