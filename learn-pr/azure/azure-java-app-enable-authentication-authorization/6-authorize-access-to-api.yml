@@ -6,8 +6,8 @@ metadata:
   title: Authorize access to APIs with Microsoft Authentication Library
   description: In this unit, you will learn how Microsoft Authentication Library provides your application authorized access to protected APIs.
   ms.date: 11/21/2023
-  author: yoshioterada
-  ms.author: yoterada
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java

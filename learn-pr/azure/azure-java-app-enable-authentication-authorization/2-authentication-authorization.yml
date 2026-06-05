@@ -6,8 +6,8 @@ metadata:
   title: Authentication and authorization in Microsoft Entra ID
   description: Explanation of authentication and authorization concepts in Microsoft Entra ID
   ms.date: 11/21/2023
-  author: yoshioterada
-  ms.author: yoterada
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java

@@ -4,8 +4,8 @@ title: Summary
 metadata:
   title: Summary
   description: Summarizes the module and provides instructions for cleaning up Azure resources.
-  author: yoshioterada
-  ms.author: yoterada
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.date: 03/16/2025
   ms.topic: unit
   ms.custom:
