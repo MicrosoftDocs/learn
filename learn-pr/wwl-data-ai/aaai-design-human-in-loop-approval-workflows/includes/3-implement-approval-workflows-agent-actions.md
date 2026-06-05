@@ -33,7 +33,7 @@ Adventure Works uses Microsoft Teams Adaptive Cards for approval requests becaus
 - **Request details**: Order number, product, purchase date, return reason, current policy status ("outside 30-day window")
 - **Agent recommendation**: What the agent proposes and why ("Approve exception due to shipping delay")
 - **Business impact**: Financial cost, precedent risk, customer lifetime value
-- **Actions on approval**: Specific steps that will execute ("Issue return label, credit $249.99 to original payment method within 3-5 days")
+- **Actions on approval**: Specific steps that will execute ("Issue return label, credit \$249.99 to original payment method within 3-5 days")
 - **Approve/Reject buttons**: Single-click decision with optional comment field
 
 The adaptive card design balances completeness with scannability. Managers reviewing 20 approval requests per day need to absorb context quickly—structured formatting with clear sections and visual hierarchy enables efficient decision-making.
@@ -94,7 +94,7 @@ Approval workflows need timeout policies to prevent requests from waiting indefi
 
 For a return exception request, the timeout handling works like this: the initial manager approval waits for the configured polling window, then escalates to a senior reviewer path if no decision record appears. If escalation also times out, the workflow defaults to rejection with a notification explaining that review exceeded SLA and suggesting a follow-up path. The default-to-rejection policy ensures timeouts don't create uncontrolled approvals.
 
-For lower-stakes approvals, the timeout might default to auto-approval rather than rejection. A loyalty points adjustment under $25 might auto-approve after 2 hours if the manager hasn't responded—the business risk is minimal, and auto-approval serves the customer better than indefinite waiting.
+For lower-stakes approvals, the timeout might default to auto-approval rather than rejection. A loyalty points adjustment under \$25 might auto-approve after 2 hours if the manager hasn't responded—the business risk is minimal, and auto-approval serves the customer better than indefinite waiting.
 
 ## Audit trail for all approval decisions
 

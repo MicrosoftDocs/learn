@@ -13,17 +13,17 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "An Adventure Works agent proposes approving a $350 return exception for a Gold customer. The agent's confidence score is 0.91, which is above the 0.75 escalation threshold. The action amount is above the $200 financial threshold requiring human approval. Should this request escalate?"
+  - content: "An Adventure Works agent proposes approving a /$350 return exception for a Gold customer. The agent's confidence score is 0.91, which is above the 0.75 escalation threshold. The action amount is above the /$200 financial threshold requiring human approval. Should this request escalate?"
     choices:
     - content: "No—the confidence is 0.91, which is above threshold. Confidence gates take priority, so the agent proceeds autonomously."
       isCorrect: false
-      explanation: "The escalation decision uses a priority-ordered decision tree where multiple criteria can independently trigger escalation. When the financial action threshold ($200) is met, it triggers escalation regardless of confidence level. Irreversible financial actions above threshold require human approval even when the agent is confident."
-    - content: "Yes—the $350 amount exceeds the $200 financial action threshold, which independently triggers human approval regardless of the agent's confidence score."
+      explanation: "The escalation decision uses a priority-ordered decision tree where multiple criteria can independently trigger escalation. When the financial action threshold (/$200) is met, it triggers escalation regardless of confidence level. Irreversible financial actions above threshold require human approval even when the agent is confident."
+    - content: "Yes—the /$350 amount exceeds the /$200 financial action threshold, which independently triggers human approval regardless of the agent's confidence score."
       isCorrect: true
-      explanation: "Financial thresholds on irreversible actions trigger escalation independently of confidence scores. The business reason is that high-confidence incorrect decisions are still costly and hard to reverse at the $350 level. The confidence gate and financial gate are separate triggers in the priority-ordered decision framework."
+      explanation: "Financial thresholds on irreversible actions trigger escalation independently of confidence scores. The business reason is that high-confidence incorrect decisions are still costly and hard to reverse at the /$350 level. The confidence gate and financial gate are separate triggers in the priority-ordered decision framework."
     - content: "Yes—but only because the customer is Gold tier. Standard customers wouldn't require escalation for this amount."
       isCorrect: false
-      explanation: "In the described threshold design, financial action thresholds ($200) are absolute, not tier-dependent. The Gold tier designation affects service quality and SLA, not the business authority rules for financial exceptions. A $350 exception requires approval regardless of customer tier."
+      explanation: "In the described threshold design, financial action thresholds (/$200) are absolute, not tier-dependent. The Gold tier designation affects service quality and SLA, not the business authority rules for financial exceptions. A /$350 exception requires approval regardless of customer tier."
   - content: "Adventure Works' approval workflow is implemented with a simple in-memory state machine in the orchestrator agent. On Tuesday afternoon, the Azure Container Apps environment scales down the orchestrator instances due to low traffic. Several pending approval requests are lost. What design change would prevent this?"
     choices:
     - content: "Increase the minimum instance count for the orchestrator Container App to prevent scale-to-zero during low traffic periods."
