@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.click-to-do.take-action
+title: Use Click to Do to take action on text and images
+metadata:
+  title: Use Click to Do to Take Action on Text and Images
+  description: This content is part of the "Take action on content with Click to Do" module.
+  ms.date: 06/05/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-take-action.md)]

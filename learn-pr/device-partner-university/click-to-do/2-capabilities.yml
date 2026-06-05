@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.click-to-do.capabilities
+title: Understand Click to Do capabilities
+metadata:
+  title: Understand Click to Do Capabilities
+  description: This content is part of the "Take action on content with Click to Do" module.
+  ms.date: 06/05/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-capabilities.md)]
