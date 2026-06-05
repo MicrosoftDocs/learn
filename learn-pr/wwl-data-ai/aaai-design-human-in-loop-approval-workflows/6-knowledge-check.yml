@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-human-in-loop-approval-workflows.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Module assessment."
+  ms.date: 06/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "An Adventure Works agent proposes approving a 350 US dollar return exception for a Gold customer. The agent's confidence score is 0.91, which is above the 0.75 escalation threshold. The action amount is above the 200 USD financial threshold requiring human approval. Should this request escalate?"
+    choices:
+    - content: "No—the confidence is 0.91, which is above threshold. Confidence gates take priority, so the agent proceeds autonomously."
+      isCorrect: false
+      explanation: "The escalation decision uses a priority-ordered decision tree where multiple criteria can independently trigger escalation. When the financial action threshold (200 USD) is met, it triggers escalation regardless of confidence level. Irreversible financial actions above threshold require human approval even when the agent is confident."
+    - content: "Yes—the 350 USD amount exceeds the 200 USD financial action threshold, which independently triggers human approval regardless of the agent's confidence score."
+      isCorrect: true
+      explanation: "Financial thresholds on irreversible actions trigger escalation independently of confidence scores. The business reason is that high-confidence incorrect decisions are still costly and hard to reverse at the 350 USD level. The confidence gate and financial gate are separate triggers in the priority-ordered decision framework."
+    - content: "Yes—but only because the customer is Gold tier. Standard customers wouldn't require escalation for this amount."
+      isCorrect: false
+      explanation: "In the described threshold design, financial action thresholds (200 USD) are absolute, not tier-dependent. The Gold tier designation affects service quality and SLA, not the business authority rules for financial exceptions. A 350 USD exception requires approval regardless of customer tier."
+  - content: "Adventure Works' approval workflow is implemented with a simple in-memory state machine in the orchestrator agent. On Tuesday afternoon, the Azure Container Apps environment scales down the orchestrator instances due to low traffic. Several pending approval requests are lost. What design change would prevent this?"
+    choices:
+    - content: "Increase the minimum instance count for the orchestrator Container App to prevent scale-to-zero during low traffic periods."
+      isCorrect: false
+      explanation: "Maintaining minimum instances reduces the probability of loss but doesn't eliminate it. Container Apps can still restart or fail for other reasons. The fundamental issue is that in-memory state isn't durable—it disappears whenever the process restarts, regardless of scaling policy."
+    - content: "Replace the in-memory state machine with a durable workflow service such as Power Automate, which externalizes approval state so workflows survive service restarts and scale events."
+      isCorrect: true
+      explanation: "Durable workflows externalize state to persistent storage outside the application process. With Power Automate, the approval flow state lives in the platform's own storage rather than in application memory. When the container restarts or scales down, the workflow state survives and the orchestrating agent can resume polling from where it stopped. Durability is a fundamental requirement for workflows that wait for human responses over extended time periods."
+    - content: "Shorten the approval window to 15 minutes to ensure all approvals are processed before scale-down occurs."
+      isCorrect: false
+      explanation: "Restricting the approval window to accommodate infrastructure limitations creates an operational constraint that may not align with the review process needs. Human reviewers may not always be available within 15 minutes. The right solution is durable workflow state that's independent of container lifecycle."
+  - content: "Adventure Works reviews the monthly feedback data and finds that 78% of high-confidence rejections (agent confidence > 0.85, human rejected the proposal) cluster around requests to waive the 30-day return window for specific product categories. What is the most impactful next step?"
+    choices:
+    - content: "Lower the confidence threshold for all return requests from 0.85 to 0.60 to ensure more requests escalate for human review."
+      isCorrect: false
+      explanation: "Lowering thresholds for all return requests addresses the symptom (escalation) rather than the cause (a specific gap in the agent's policy understanding). This increases human reviewer workload for all return requests without fixing the underlying agent capability issue."
+    - content: "Analyze the system prompt's representation of the 30-day return window policy for those product categories, update the policy language to reflect the actual exception criteria, and validate the fix against the rejection examples."
+      isCorrect: true
+      explanation: "High-confidence rejections on a specific topic cluster indicate a targeted knowledge gap in the agent's system prompt. The agent is incorrectly confident about a policy it doesn't understand correctly. Updating the system prompt with accurate exception criteria for those categories, then validating against the labeled rejection examples, directly addresses the root cause."
+    - content: "Remove the product category distinction from the return policy section of the system prompt to simplify the policy the agent needs to interpret."
+      isCorrect: false
+      explanation: "Simplifying the policy by removing category distinctions may actually make the agent less accurate if those distinctions are legitimate business rules. The goal is to help the agent understand the policy correctly, not to reduce policy complexity in ways that may change business outcomes."

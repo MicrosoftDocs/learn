@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-human-in-loop-approval-workflows.configure-audit-workflows-regulated-decisions
+title: Configure audit workflows for regulated decisions
+metadata:
+  title: Configure Audit Workflows for Regulated Decisions
+  description: "Configure audit workflows for regulated decisions."
+  ms.date: 06/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-configure-audit-workflows-regulated-decisions.md)]
