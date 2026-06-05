@@ -7,4 +7,4 @@ In this module, you learn how to:
 - Optimize token usage across long multi-agent conversations through context management
 - Balance quality-cost-latency tradeoffs for different customer segments
 
-By the end of this module, you'll know how to optimize a distributed multi-agent system for cost, latency, and quality—without sacrificing the customer experience that justifies the investment.
+By the end of this module, you're able to optimize a distributed multi-agent system for cost, latency, and quality—without sacrificing the customer experience that justifies the investment.

@@ -120,7 +120,7 @@ class SemanticCache:
 
 Maintaining cache consistency across a distributed multi-agent system is genuinely complex: a single data change can simultaneously invalidate cached responses across multiple independent agents. When product pricing changes, every cached response that mentioned that product's price becomes incorrect. When policy updates, every cached policy explanation becomes outdated. Adventure Works needs invalidation strategies that prevent stale responses without purging so aggressively that cache hit rates collapse.
 
-**Dependency tagging** associates each cached response with the data entities it references. When caching a product recommendation response, tag it with the product IDs mentioned in the response. When caching a shipping estimate, tag it with the warehouse ID and carrier ID. When product 12345's price changes, invalidate all cache entries tagged with product 12345. The tagging system requires extracting entity references from responses—use simple regex patterns for structured IDs or a lightweight NER model for complex references.
+**Dependency tagging** associates each cached response with the data entities it references. When caching a product recommendation response, tag it with the product IDs mentioned in the response. When caching a shipping estimate, tag it with the warehouse ID and carrier ID. When product 12345's price changes, invalidate all cache entries tagged with product 12345. The tagging system requires extracting entity references from responses—use simple regex patterns for structured IDs or a lightweight named entity recognition (NER) model for complex references.
 
 **Version-based invalidation** handles schema changes and policy updates. Each data source (product catalog, policy database, inventory system) maintains a version number. Cached responses store the version numbers of all data sources they accessed. When product catalog v47 ships, all cache entries accessing versions lower than v47 are invalidated. This approach prevents gradual drift where some agents use stale policy while others use current policy.
 
@@ -132,7 +132,7 @@ Cache hit analysis identifies optimization opportunities. Track cache hit rate p
 
 Implementing semantic caching requires investment: Redis infrastructure costs, embedding model inference costs for calculating query vectors, and engineering time for building invalidation logic. Adventure Works needs to verify that the cost savings from reduced model calls exceed the caching infrastructure costs.
 
-The ROI calculation for semantic caching follows this formula:
+The return on investment (ROI) calculation for semantic caching follows this formula:
 
 - **Cache infrastructure cost** = Redis compute ($200/month for HA cluster) + embedding model costs ($0.0001 per request × 1M requests/month = $100/month) + engineering time (160 hours @ $100/hour = $16,000 one-time)
 - **Savings per cached request** = Avoided model call cost (tier 2 average = $0.002 per request)

@@ -26,7 +26,11 @@ Summarization reduces token usage but introduces risk: if the summary loses crit
 
 Multi-turn customer service conversations naturally focus on recent exchanges—the customer's question from 10 minutes ago is rarely relevant to their current question unless it's part of an ongoing issue. Rolling context windows keep only the N most recent conversation turns, dramatically reducing token usage while maintaining coherent conversations.
 
-Adventure Works implements a 3-turn rolling window: the system retains the three most recent customer-agent exchanges (six messages total) plus an optional importance-filtered selection from earlier in the conversation. The importance filter identifies turns that should be retained beyond the window: turns where the customer explicitly stated a preference ("I prefer email communication"), turns where critical context was established ("This is for my business account, not personal"), and turns where the agent made a commitment ("I'll follow up with you by Friday").
+Adventure Works implements a 3-turn rolling window: the system retains the three most recent customer-agent exchanges (six messages total) plus an optional importance-filtered selection from earlier in the conversation. The importance filter identifies turns that should be retained beyond the window:
+
+- Turns where the customer explicitly stated a preference, for example "I prefer email communication."
+- Turns where critical context was established, for example "This is for my business account, not personal."
+- Turns where the agent made a commitment, for example "I'll follow up with you by Friday."
 
 Importance classification uses a small classifier model that scores each conversation turn on a 0-1 scale for long-term relevance. Turns scoring above 0.75 are flagged as "important" and retained outside the rolling window. The classifier is trained on historical conversation data where human reviewers labeled which past turns were referenced in later turns—if turn 3 was referenced in turn 15, turn 3 was important and should have been retained.
 
@@ -171,7 +175,15 @@ Not every past conversation turn deserves retention. The `filter_important_turns
 
 Adventure Works assigns each agent an explicit token budget that defines the maximum context size it can consume per request. The budget allocation reflects the agent's task complexity: simple lookup agents get 2,000-token budgets, reasoning agents get 4,000-token budgets, and complex policy interpretation agents get 8,000-token budgets. When an agent's assembled context exceeds its budget, the context assembler applies aggressive compression before invocation.
 
-Budget enforcement works through priority-based pruning. The assembler categorizes context components by priority: system prompt (priority 1, never pruned), digest (priority 2, rarely pruned), tool results (priority 3, compressed first), important conversation turns (priority 4, pruned if necessary), and rolling window turns (priority 5, summarized if budget is tight). When the assembled context exceeds the budget, the assembler removes or compresses the lowest-priority components first until the context fits within the limit.
+Budget enforcement works through priority-based pruning. The assembler categorizes context components by priority, and when the assembled context exceeds the budget, it removes or compresses the lowest-priority components first until the context fits within the limit.
+
+| Priority | Component | Pruning behavior |
+|----------|-----------|-----------------|
+| 1 | System prompt | Never pruned |
+| 2 | Digest | Rarely pruned |
+| 3 | Tool results | Compressed first |
+| 4 | Important conversation turns | Pruned if necessary |
+| 5 | Rolling window turns | Summarized if budget is tight |
 
 Logging budget violations helps identify optimization opportunities. Each time an agent exceeds its token budget and triggers compression, the system logs the violation with context about what was compressed and why. Monthly budget analysis reveals which agents consistently exceed their budgets—these agents either need larger budgets (reassess task complexity) or better-designed system prompts (remove verbose instructions). Adventure Works discovered that three agents regularly exceeded budgets because their system prompts included 800-token policy documents that could have been moved to retrieval tools, freeing budget for conversation context.
 

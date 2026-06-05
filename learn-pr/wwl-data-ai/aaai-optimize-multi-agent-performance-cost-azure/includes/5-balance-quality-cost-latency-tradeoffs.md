@@ -22,9 +22,9 @@ Adventure Works recognizes three customer segments with distinct service level e
 
 | Customer segment | Quality priority | Latency target | Cost limit | Model tier default |
 |------------------|------------------|----------------|------------|-------------------|
-| Gold members | Highest | <3s P95 | $0.015 | Tier 2/3 |
-| Standard | Balanced | <6s P95 | $0.005 | Tier 1/2 |
-| Bulk API | Acceptable | <12s P95 | $0.001 | Tier 1 only |
+| Gold members | Highest | <3 s P95 | $0.015 | Tier 2/3 |
+| Standard | Balanced | <6 s P95 | $0.005 | Tier 1/2 |
+| Bulk API | Acceptable | <12 s P95 | $0.001 | Tier 1 only |
 
 The segmentation strategy enables Adventure Works to deliver differentiated service that matches customer value while optimizing overall system costs. Gold members receive premium service that justifies their spend, standard customers get good-enough service at sustainable cost, and bulk API users receive efficient, low-cost access that keeps their business viable.
 
@@ -46,11 +46,11 @@ Optimization isn't static. Customer behavior changes, product catalogs evolve, a
 
 **Explicit feedback** comes from post-interaction ratings. After each customer service conversation, the platform requests a 1-5 star rating. When average ratings for a specific agent drop below 3.8/5 over a 4-hour window, the quality circuit breaker trips: the system reverts that agent to conservative settings (higher model tier, reduced caching, fuller context) and alerts the engineering team. The circuit breaker prevents prolonged quality degradation while giving engineers time to investigate root cause.
 
-**Implicit feedback** includes escalation rates, session re-opens, and conversation abandonment. If customers are escalating to human agents 20% more frequently than baseline, the agents aren't handling requests effectively. If customers close a session and reopen it within 5 minutes, the initial interaction likely failed. If conversation abandonment (customer stops responding mid-session) increases significantly, users are frustrated. These signals supplement explicit ratings and provide early warning of quality issues.
+**Implicit feedback** includes escalation rates, session reopens, and conversation abandonment. If customers are escalating to human agents 20% more frequently than baseline, the agents aren't handling requests effectively. If customers close a session and reopen it within 5 minutes, the initial interaction likely failed. If conversation abandonment (customer stops responding mid-session) increases significantly, users are frustrated. These signals supplement explicit ratings and provide early warning of quality issues.
 
 The feedback loop operates daily: each morning, the platform engineering team reviews a dashboard showing quality metrics by agent, customer segment, and request category. Agents showing degraded metrics get prioritized for investigation—common root causes include recent prompt changes, model deployment updates, or shifts in customer request patterns that the current optimization profile doesn't handle well. The investigation produces either a configuration adjustment (revert recent change, tune cache threshold) or a prompt improvement (update system prompt to handle new request pattern).
 
-## SLA definition and accountability
+## Service level agreement (SLA) definition and accountability
 
 Service level agreements translate abstract quality-cost-latency tradeoffs into concrete, measurable commitments. Adventure Works defines SLAs per customer segment that create accountability for both customer experience and cost control.
 
@@ -82,7 +82,7 @@ With intelligent model routing, multi-level caching, token budget management, an
 
 The optimization strategies in this unit address cost (model routing, token budgets) and quality (A/B testing, circuit breakers). Parallelism addresses **task duration**, meaning the wall-clock time a workflow takes to complete, which directly affects latency-tier SLAs and the user's perceived responsiveness.
 
-Sequential agent execution takes time equal to the sum of all agent durations. Parallel execution (using `asyncio.gather`) takes time equal to the slowest agent's duration. For workflows with independent sub-tasks, the latency reduction can be dramatic: four independent 15-second agents running sequentially take 60 seconds; running in parallel, they complete in 15 seconds.
+Sequential agent execution takes time equal to the sum of all agent durations. Parallel execution (using `asyncio.gather`) takes time equal to the slowest agent's duration. For workflows with independent subtasks, the latency reduction can be dramatic: four independent 15-second agents running sequentially take 60 seconds; running in parallel, they complete in 15 seconds.
 
 Parallelism in the optimization lens introduces a distinct tradeoff from the sequential vs. parallel architectural decision: **peak quota consumption**. Sequential execution uses token quota at one-agent-at-a-time rates; parallel execution uses it at N-agents-simultaneously rates. If your Microsoft Foundry deployment has a 1,000 tokens-per-minute quota and each agent uses 300 tokens, you can run three agents in parallel before hitting throttling. Exceeding quota at parallel scale triggers retry cycles that can negate the latency gains.
 
