@@ -5,8 +5,11 @@ The Spring PetClinic is a simple web application that manages a list of veterina
 ## Prerequisites
 
 - An Azure account. If you don't have one, [create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). You need the `Contributor` or `Owner` permission on the Azure subscription to proceed. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
-- [Git](https://git-scm.com/downloads)
-- [The Azure CLI](/cli/azure/install-azure-cli)
+- [Git](https://git-scm.com/downloads).
+- [The Azure CLI](/cli/azure/install-azure-cli).
+- The Azure Container Apps CLI extension, version `0.3.47` or higher. The exercises in this module install or upgrade the extension by using `az extension add --name containerapp --upgrade --allow-preview`. The `--allow-preview` switch is required because several Java-specific capabilities the module discusses are preview features.
+- A Java Development Kit (JDK), version 17 or later. The Spring PetClinic sample requires JDK 17 or later. Buildpacks deployments on Azure Container Apps support JDK 8, 11, 17, and 21.
+- Apache Maven is optional. This module uses the Maven wrapper (`./mvnw`) that ships with the sample repository, so you don't have to install Maven separately to complete the exercises.
 
 ## Clone the PetClinic repository
 
@@ -46,7 +49,7 @@ Before deploying the PetClinic application, ensure that it runs successfully on 
 
     ---
 
-1. Initialize and update the `pet-clinic` Git submodule to the latest version by using the following command:
+1. Initialize the `pet-clinic` Git submodule and check out the commit that the sample repository pins by using the following command. Don't add `--remote`; the sample's Dockerfile expects that exact pinned commit, not the latest upstream commit:
 
     # [Bash](#tab/bash)
 
@@ -73,7 +76,7 @@ Before deploying the PetClinic application, ensure that it runs successfully on 
     # [PowerShell](#tab/powershell)
 
     ```powershell
-    ./mvnw clean install
+    .\mvnw.cmd clean install
     ```
 
     ---
@@ -89,7 +92,7 @@ Before deploying the PetClinic application, ensure that it runs successfully on 
     # [PowerShell](#tab/powershell)
 
     ```powershell
-    ./mvnw spring-boot:run
+    .\mvnw.cmd spring-boot:run
     ```
 
     ---

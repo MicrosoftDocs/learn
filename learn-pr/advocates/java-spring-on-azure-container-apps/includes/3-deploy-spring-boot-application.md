@@ -14,8 +14,8 @@ To sign in to the latest version of the Azure CLI, use the following steps, and 
 
     ### [PowerShell](#tab/powershell)
 
-    ```azurepowershell
-    Connect-AzAccount
+    ```azurecli
+    az login
     ```
 
     ---
@@ -30,9 +30,8 @@ To sign in to the latest version of the Azure CLI, use the following steps, and 
 
     ### [PowerShell](#tab/powershell)
 
-    ```azurepowershell
-    Install-Module -Name Az -Scope CurrentUser `
-        -Repository PSGallery -Force
+    ```azurecli
+    az upgrade
     ```
 
     ---
@@ -42,19 +41,18 @@ Next, install or update the Azure Container Apps extension for the CLI, and regi
 > [!IMPORTANT]
 > If you receive errors about missing parameters when you run `az containerapp` commands in the Azure CLI, be sure you have the latest version of the Azure Container Apps extension installed.
 
-1. First, install or update the Azure Container Apps extension by using the following command or commands:
+1. First, install or update the Azure Container Apps extension by using the following command:
 
     ### [Bash](#tab/bash)
 
     ```azurecli
-    az extension add --name containerapp --upgrade
+    az extension add --name containerapp --upgrade --allow-preview
     ```
 
     ### [PowerShell](#tab/powershell)
 
-    ```azurepowershell
-    Install-Module -Name Az.App
-    Update-Module -Name Az.App
+    ```azurecli
+    az extension add --name containerapp --upgrade --allow-preview
     ```
 
     ---
@@ -70,9 +68,9 @@ Next, install or update the Azure Container Apps extension for the CLI, and regi
 
     ### [PowerShell](#tab/powershell)
 
-    ```azurepowershell
-    Register-AzResourceProvider -ProviderNamespace Microsoft.App
-    Register-AzResourceProvider -ProviderNamespace Microsoft.OperationalInsights
+    ```azurecli
+    az provider register --namespace Microsoft.App
+    az provider register --namespace Microsoft.OperationalInsights
     ```
 
     ---
@@ -115,13 +113,13 @@ Build and deploy your first Spring Boot app with the `containerapp up` command, 
 - Creates the Container Apps environment with a Log Analytics workspace.
 - Creates and deploys the container app using the built container image.
 
-The `containerapp up` command uses the Dockerfile in the root of the repository to build the container image. Use the following command to build the container image. The `..` (dot dot) tells the `containerapp up` command to run the Dockerfile in the parent folder.
+The `containerapp up` command uses the Dockerfile in the root of the repository to build the container image. Use the following command to build the container image. The `..` (dot dot) tells the `containerapp up` command to run the Dockerfile in the parent folder. Because the sample's Dockerfile exposes port `8080`, the `containerapp up` command automatically configures external ingress on that target port; you don't need to pass `--ingress` or `--target-port`.
 
 ### [Bash](#tab/bash)
 
 ```azurecli
 az containerapp up \
-    --resource-group $RESOURCE_GROUP\
+    --resource-group $RESOURCE_GROUP \
     --name $APP_NAME \
     --location $LOCATION \
     --environment $ENVIRONMENT \
@@ -132,10 +130,10 @@ az containerapp up \
 
 ```powershell
 az containerapp up `
-    --resource-group $RESOURCE_GROUP `
-    --name $APP_NAME `
-    --location $LOCATION `
-    --environment $ENVIRONMENT `
+    --resource-group $Env:RESOURCE_GROUP `
+    --name $Env:APP_NAME `
+    --location $Env:LOCATION `
+    --environment $Env:ENVIRONMENT `
     --source ..
 ```
 

@@ -13,7 +13,7 @@ az group delete --name $RESOURCE_GROUP
 ### [PowerShell](#tab/powershell)
 
 ```powershell
-az group delete --name $RESOURCE_GROUP
+az group delete --name $Env:RESOURCE_GROUP
 ```
 
 ---

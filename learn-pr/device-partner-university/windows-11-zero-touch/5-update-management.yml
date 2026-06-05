@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-11-zero-touch.update-management
+title: Configure update management
+metadata:
+  title: Configure Update Management
+  description: This content is part of the "Deliver zero-touch Windows 11 Pro deployments" module.
+  ms.date: 06/04/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-update-management.md)]

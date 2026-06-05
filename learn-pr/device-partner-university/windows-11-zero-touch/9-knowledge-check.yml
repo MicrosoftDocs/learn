@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-11-zero-touch.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Deliver zero-touch Windows 11 Pro deployments" module.
+  ms.date: 06/04/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why is a zero-touch approach required in the deployment scenario described in the module?"
+    choices:
+        - content: "IT teams want to reduce licensing costs for Windows 11 Pro devices"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't mention licensing costs as a reason for zero-touch deployment."
+        - content: "Devices are shipped directly to users and IT never physically handles them"
+          isCorrect: true
+          explanation: "Correct. The module explains that because IT never physically handles devices, traditional provisioning approaches aren't possible, making zero-touch deployment necessary."
+        - content: "Users prefer to configure devices manually during first sign-in"
+          isCorrect: false
+          explanation: "Incorrect. The module emphasizes minimizing user involvement, not manual configuration by users."
+        - content: "Windows 11 Pro requires cloud-only deployment by default"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't state that Windows 11 Pro requires cloud-only deployment."
+  - content: "What typically happens during the first sign-in on a zero-touch provisioned device?"
+    choices:
+        - content: "The user creates a personal account and chooses all device settings"
+          isCorrect: false
+          explanation: "Incorrect. The module states that users sign in with their work account and aren't asked to make configuration decisions."
+        - content: "The device enrolls into management and begins applying policies automatically"
+          isCorrect: true
+          explanation: "Correct. The module explains that enrollment, configuration, and policy application occur automatically during first sign-in."
+        - content: "IT remotely connects to the device to complete setup"
+          isCorrect: false
+          explanation: "Incorrect. The scenario explicitly avoids manual IT intervention."
+        - content: "The device remains unmanaged until the user installs required apps"
+          isCorrect: false
+          explanation: "Incorrect. Management begins automatically at first sign-in."
+  - content: "Why is it important to distinguish between an enrolled device and a fully managed device?"
+    choices:
+        - content: "Only fully managed devices can connect to the internet"
+          isCorrect: false
+          explanation: "Incorrect. Internet connectivity isn't described as dependent on management state."
+        - content: "Enrolled devices can't be used by end users"
+          isCorrect: false
+          explanation: "Incorrect. The module notes that users might be able to sign in even if management is incomplete."
+        - content: "A device might appear usable even if policies, apps, and compliance haven't applied"
+          isCorrect: true
+          explanation: "Correct. The module explains that enrollment alone doesn't guarantee policies, apps, or compliance status are in place."
+        - content: "Fully managed devices require more user configuration"
+          isCorrect: false
+          explanation: "Incorrect. The module emphasizes automation and minimal user involvement."
+  - content: "What is a primary goal of centrally defining update behavior for managed devices?"
+    choices:
+        - content: "To allow users to choose when updates are installed"
+          isCorrect: false
+          explanation: "Incorrect. Update behavior is defined centrally, not by users."
+        - content: "To ensure updates are applied only once during initial setup"
+          isCorrect: false
+          explanation: "Incorrect. Updates are described as an ongoing process."
+        - content: "To keep devices secure while minimizing disruption to users"
+          isCorrect: true
+          explanation: "Correct. The module highlights balancing security with user experience as the goal of update management."
+        - content: "To eliminate the need for device compliance checks"
+          isCorrect: false
+          explanation: "Incorrect. Compliance checks remain an important validation step."
+  - content: "What indicates that a deployment is ready to be signed off as complete?"
+    choices:
+        - content: "Users report that they can sign in successfully"
+          isCorrect: false
+          explanation: "Incorrect. Sign-in success alone doesn't confirm full deployment."
+        - content: "Devices are marked as compliant and required policies and apps are applied"
+          isCorrect: true
+          explanation: "Correct. The module describes compliance status, policy application, and app health as key validation signals."
+        - content: "All devices have been online for at least 24 hours"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't mention time-based requirements."
+        - content: "IT has manually reviewed each device configuration"
+          isCorrect: false
+          explanation: "Incorrect. The deployment approach emphasizes automation rather than manual review."
