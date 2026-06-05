@@ -40,7 +40,7 @@ subjects:
 units:
 - learn.wwl.design-evaluation-frameworks-multi-agent-azure.introduction
 - learn.wwl.design-evaluation-frameworks-multi-agent-azure.define-multi-agent-success-metrics
-- learn.wwl.design-evaluation-frameworks-multi-agent-azure.implement-llm-judge-multi-agent-evaluation
+- learn.wwl.design-evaluation-frameworks-multi-agent-azure.implement-model-judge-multi-agent-evaluation
 - learn.wwl.design-evaluation-frameworks-multi-agent-azure.design-synthetic-test-datasets-multi-agent
 - learn.wwl.design-evaluation-frameworks-multi-agent-azure.build-regression-test-agent-drift
 - learn.wwl.design-evaluation-frameworks-multi-agent-azure.knowledge-check

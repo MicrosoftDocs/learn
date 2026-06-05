@@ -151,35 +151,33 @@ AI quality metrics (accuracy, task completion rate, goal achievement scores) don
 
 **Escalation rate** tracks how often automated interactions hand off to humans. Unlike resolution rate (customer satisfaction), escalation rate measures agent capability boundaries. A 15% escalation rate may be acceptable for complex product selection but indicates serious problems for routine order status queries.
 
-For Adventure Works, the metric dashboard combines these three levels:
+For Adventure Works, the metric dashboard combines these three levels. The following AI quality metrics are from the week of April 1–7, 2026.
 
-```
-System Health Scorecard - Week of April 1-7, 2026
+| Metric | Actual | Target |
+|--------|--------|--------|
+| Task completion rate | 82% | 90% |
+| Avg goal achievement index | 7.8/10 | 8.5 |
+| Journey coherence score | 8.2/10 | 9.0 |
 
-AI Quality Metrics:
-- Task completion rate: 82% (target: 90%)
-- Avg goal achievement index: 7.8/10 (target: 8.5)
-- Journey coherence score: 8.2/10 (target: 9.0)
+The following business impact metrics show how AI quality scores translate to real customer outcomes.
 
-Business Impact Metrics:
-- Customer resolution rate: 76% (target: 85%)
-- Session reopen rate: 12% (target: <8%)
-- Escalation rate: 14% (target: <10%)
+| Metric | Actual | Target |
+|--------|--------|--------|
+| Customer resolution rate | 76% | 85% |
+| Session reopen rate | 12% | <8% |
+| Escalation rate | 14% | <10% |
 
-By Interaction Type:
-┌────────────────────┬──────────┬──────────┬────────────┐
-│ Type               │ Task     │ Resolve  │ Escalate   │
-│                    │ Complete │ Rate     │ Rate       │
-├────────────────────┼──────────┼──────────┼────────────┤
-│ Product search     │ 94%      │ 91%      │ 4%         │
-│ Order placement    │ 89%      │ 85%      │ 8%         │
-│ Order status       │ 96%      │ 94%      │ 2%         │
-│ Returns            │ 78%      │ 70%      │ 22%        │
-│ Multi-item mods    │ 67%      │ 58%      │ 28%        │
-└────────────────────┴──────────┴──────────┴────────────┘
-```
+Breaking down the same metrics by interaction type shows where performance gaps exist.
 
-This hierarchy reveals that multi-item modifications need attention—low task completion, low customer resolution, and high escalation indicate this interaction type exceeds current agent capabilities.
+| Type | Task complete | Resolution rate | Escalation rate |
+|------|--------------|-----------------|-----------------|
+| Product search | 94% | 91% | 4% |
+| Order placement | 89% | 85% | 8% |
+| Order status | 96% | 94% | 2% |
+| Returns | 78% | 70% | 22% |
+| Multi-item mods | 67% | 58% | 28% |
+
+This breakdown reveals that multi-item modifications need attention—low task completion, low customer resolution, and high escalation indicate this interaction type exceeds current agent capabilities.
 
 ## Design metric aggregation hierarchies
 

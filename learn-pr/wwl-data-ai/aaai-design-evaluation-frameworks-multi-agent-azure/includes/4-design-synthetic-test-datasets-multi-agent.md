@@ -10,13 +10,17 @@ Production data samples provide realistic scenarios but can't be freely modified
 | Manually authored test cases | Full control, no PII | Time-consuming, limited coverage |
 | Synthetic LLM-generated | Scalable, systematic coverage, privacy-safe | Requires quality validation |
 
-Define a comprehensive taxonomy of interaction types for Adventure Works' multi-agent customer service platform. This taxonomy ensures test coverage across all supported scenarios rather than concentrating on common cases.
+Define a comprehensive taxonomy of interaction types for Adventure Works' multi-agent customer service platform. This taxonomy ensures test coverage across all supported scenarios rather than concentrating on common cases. Structure the taxonomy across four levels:
 
-**Level 1: Interaction category** (product search, order placement, order modification, returns processing, account management, shipping inquiries). **Level 2: Complexity variant** (simple single-item, multi-item, cross-category, with constraints). **Level 3: Customer persona** (first-time buyer, repeat customer, premium tier, international). **Level 4: Adversarial conditions** (vague request, contradictory information, impatient customer, policy edge case).
+- **Level 1: Interaction category** — product search, order placement, order modification, returns processing, account management, shipping inquiries
+- **Level 2: Complexity variant** — simple single-item, multi-item, cross-category, with constraints
+- **Level 3: Customer persona** — first-time buyer, repeat customer, premium tier, international
+- **Level 4: Adversarial conditions** — vague request, contradictory information, impatient customer, policy edge case
 
 Target coverage: 20 base scenarios × 5 complexity variants × 2 customer personas × 2 adversarial conditions = 400 synthetic test cases. This systematic expansion ensures the test suite covers routine happy paths, complex multi-step workflows, and edge cases that rarely appear in production but cause failures when they do.
 
 For Adventure Works, the product search category includes these scenarios:
+
 - Simple product search: "chocolate truffles" (baseline)
 - Multi-attribute search: "sugar-free dark chocolate under $20" (complexity variant)
 - Vague search: "something sweet for a gift" (adversarial: vague)

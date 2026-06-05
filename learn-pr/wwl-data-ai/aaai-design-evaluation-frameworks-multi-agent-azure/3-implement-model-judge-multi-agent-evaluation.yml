@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-evaluation-frameworks-multi-agent-azure.implement-llm-judge-multi-agent-evaluation
+uid: learn.wwl.design-evaluation-frameworks-multi-agent-azure.implement-model-judge-multi-agent-evaluation
 title: Implement LLM-as-judge evaluation for multi-agent systems
 metadata:
   title: Implement LLM-as-Judge Evaluation for Multi-Agent Systems
@@ -11,4 +11,4 @@ metadata:
   ai-usage: ai-assisted
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-implement-llm-judge-multi-agent-evaluation.md)]
+  [!include[](includes/3-implement-model-judge-multi-agent-evaluation.md)]
