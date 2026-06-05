@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-evaluation-frameworks-multi-agent-azure.design-synthetic-test-datasets-multi-agent
+title: Design synthetic test datasets for multi-agent evaluation
+metadata:
+  title: Design Synthetic Test Datasets for Multi-Agent Evaluation
+  description: "Design synthetic test datasets for multi-agent evaluation."
+  ms.date: 06/04/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-design-synthetic-test-datasets-multi-agent.md)]
