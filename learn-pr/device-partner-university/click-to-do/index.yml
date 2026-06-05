@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.click-to-do
+title: Take action on content with Click to Do
+metadata:
+  title: Take Action On Content With Click To Do
+  description: In this module, you'll learn how to use Click to Do in Windows to take action on on-screen content, reduce context switching, and stay productive.
+  ms.date: 06/05/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Learn how to use Click to Do to take action on content directly from your screen. Instead of switching between apps or copying information manually, you can access context-aware actions based on what you're viewing. Whether you're working with text or images, Click to Do helps streamline common tasks like searching, summarizing, and editing—so you can stay focused and efficient.
+abstract: |
+  By the end of this module, you’ll be able to:
+  - Use Click to Do to take action on text and images directly from your screen
+  - Explain how Click to Do reduces task switching, helping to save time and improve productivity
+  - Identify which actions are available for different types of content
+  - Apply Click to Do in role-based scenarios to streamline workflows
+prerequisites: |
+  - None
+iconUrl: /training/achievements/click-to-do.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.click-to-do.introduction
+  - learn.dpu.click-to-do.capabilities
+  - learn.dpu.click-to-do.take-action
+  - learn.dpu.click-to-do.impact
+  - learn.dpu.click-to-do.scenarios
+  - learn.dpu.click-to-do.when-to-use
+  - learn.dpu.click-to-do.knowledge-check
+  - learn.dpu.click-to-do.summary
+badge:
+  uid: learn.dpu.click-to-do.badge
+
