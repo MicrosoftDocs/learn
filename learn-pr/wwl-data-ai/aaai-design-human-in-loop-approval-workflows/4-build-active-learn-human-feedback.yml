@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-human-in-loop-approval-workflows.build-active-learn-human-feedback
+title: Build active learning from human feedback
+metadata:
+  title: Build Active Learning from Human Feedback
+  description: "Build active learning from human feedback."
+  ms.date: 06/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-build-active-learn-human-feedback.md)]
