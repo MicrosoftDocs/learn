@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-multi-agent-performance-cost-azure.optimize-token-usage-context-management
+title: Optimize token usage and context management
+metadata:
+  title: Optimize Token Usage and Context Management
+  description: "Optimize token usage and context management."
+  ms.date: 06/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-optimize-token-usage-context-management.md)]
