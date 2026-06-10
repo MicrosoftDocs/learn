@@ -2,7 +2,7 @@ In Microsoft Defender for Cloud, there are various alerts for many different res
 
 ## Respond to today's threats
 
-There have been significant changes in the threat landscape over the last 20 years. In the past, companies typically only had to worry about website defacement by individual attackers who were mostly interested in seeing "what they could do". Today's attackers are much more sophisticated and organized. They often have specific financial and strategic goals. They also have more resources available to them, as they might be funded by nation states or organized crime.
+There have been significant changes in the threat landscape over the last 20 years. In the past, companies typically only had to worry about website defacement by individual attackers who were mostly interested in seeing "what they could do." Today's attackers are much more sophisticated and organized. They often have specific financial and strategic goals. They also have more resources available to them, as they might be funded by nation states or organized crime.
 
 These changing realities have led to an unprecedented level of professionalism in the attacker ranks. No longer are they interested in web defacement. They're now interested in stealing information, financial accounts, and private data – all of which they can use to generate cash on the open market or use a particular business, political, or military position. Even more concerning than those attackers with a financial objective are the ones who breach networks to harm infrastructure and people.
 
@@ -20,13 +20,13 @@ With security incidents, Defender for Cloud provides you with a single view of a
 
 ## How does Defender for Cloud detect threats?
 
-Microsoft security researchers are constantly on the lookout for threats. Because of our global presence in the cloud and on-premises, we have access to an expansive set of telemetry. The wide-reaching and diverse collection of datasets enable us to discover new attack patterns and trends across our on-premises consumer and enterprise products, as well as our online services. As a result, Defender for Cloud can rapidly update its detection algorithms as attackers release new and increasingly sophisticated exploits. This approach helps you keep pace with a fast-moving threat environment.
+Microsoft security researchers are constantly on the lookout for threats. Because of Microsoft's global presence in the cloud and on-premises, Defender for Cloud has access to an expansive set of telemetry. The wide-reaching and diverse collection of datasets enable us to discover new attack patterns and trends across our on-premises consumer and enterprise products, as well as our online services. As a result, Defender for Cloud can rapidly update its detection algorithms as attackers release new and increasingly sophisticated exploits. This approach helps you keep pace with a fast-moving threat environment.
 
 To detect real threats and reduce false positives, Defender for Cloud collects, analyzes, and integrates log data from your Azure resources and the network. It also works with connected partner solutions, like firewall and endpoint protection solutions. Defender for Cloud analyzes this information, often correlating information from multiple sources, to identify threats.
 
 Defender for Cloud employs advanced security analytics, which go far beyond signature-based approaches. Breakthroughs in big data and machine learning technologies are used to evaluate events across the entire cloud fabric – detecting threats that would be impossible to identify using manual approaches and predicting the evolution of attacks. These security analytics include:
 
-- **Integrated threat intelligence**: Microsoft has an immense amount of global threat intelligence. Telemetry flows in from multiple sources, such as Azure, Microsoft 365, Microsoft CRM online, Microsoft Dynamics AX, outlook.com, MSN.com, the Microsoft Digital Crimes Unit (DCU), and Microsoft Security Response Center (MSRC). Researchers also receive threat intelligence information shared among major cloud service providers and feeds from other third parties. Defender for Cloud can use this information to alert you to threats from known bad actors.
+- **Integrated threat intelligence**: Microsoft has an immense amount of global threat intelligence. Telemetry flows in from multiple sources, such as Azure, Microsoft 365, Microsoft Dynamics 365, outlook.com, MSN.com, the Microsoft Digital Crimes Unit (DCU), and Microsoft Security Response Center (MSRC). Researchers also receive threat intelligence information shared among major cloud service providers and feeds from other third parties. Defender for Cloud can use this information to alert you to threats from known bad actors.
 
 - **Behavioral analytics**: Behavioral analytics is a technique that analyzes and compares data to a collection of known patterns. However, these patterns aren't simple signatures. They're determined through complex machine learning algorithms that are applied to massive datasets. They're also determined through careful analysis of malicious behaviors by expert analysts. Defender for Cloud can use behavioral analytics to identify compromised resources based on analysis of virtual machine logs, virtual network device logs, fabric logs, and other sources.
 
@@ -38,15 +38,15 @@ Defender for Cloud assigns a severity to alerts to help you prioritize the order
 
 - High: There's a high probability that your resource is compromised. You should look into it right away. Defender for Cloud has high confidence in both the malicious intent and in the findings used to issue the alert. For example, an alert detects the execution of a known malicious tool such as Mimikatz, a common tool used for credential theft.
 
-- Medium: This severity indicates it is probably a suspicious activity that might indicate that a resource is compromised. Defender for Cloud's confidence in the analytic or finding is medium, and the confidence of malicious intent is medium to high. These would usually be machine learning or anomaly-based detections. For example, a sign-in attempt from an anomalous location.
+- Medium: This severity indicates it's probably a suspicious activity that might indicate that a resource is compromised. Defender for Cloud's confidence in the analytic or finding is medium, and the confidence of malicious intent is medium to high. These would usually be machine learning or anomaly based detections. For example, a sign-in attempt from an anomalous location.
 
 - Low: This severity indicates it might be a benign positive or a blocked attack.
 
   - Defender for Cloud isn't confident enough that the intent is malicious, and the activity might be innocent. For example, log clear is an action that might happen when an attacker tries to hide their tracks, but in many cases it's a routine operation performed by admins.
 
-  - Defender for Cloud doesn't usually tell you when attacks were blocked unless it's an interesting case that we suggest you look into.
+  - Defender for Cloud doesn't usually tell you when attacks were blocked unless it's an interesting case worth investigating.
 
-- Informational: You'll only see informational alerts when you drill down into a security incident or if you use the REST API with a specific alert ID. An incident is typically made up of many alerts, some of which might appear on their own to be only informational, but in the context of the other alerts might be worthy of a closer look.
+- Informational: You only see informational alerts when you drill down into a security incident or if you use the REST API with a specific alert ID. An incident is typically made up of many alerts, some of which might appear on their own to be only informational, but in the context of the other alerts might be worthy of a closer look.
 
 ## Continuous monitoring and assessments
 
@@ -62,7 +62,7 @@ Defender for Cloud benefits from having security research and data science teams
 
 ## Understand alert types
 
-The current alert reference list contains over 500 types of alerts.  The reference list can be reviewed at: [Security alerts - a reference guide](/azure/security-center/alerts-reference?azure-portal=true)
+The current alert reference list covers hundreds of alert types across all Microsoft Defender for Cloud plans. The reference list can be reviewed at: [Security alerts reference guide](/azure/defender-for-cloud/alerts-reference)
 
 Each alert type has a description, severity, and MITRE ATT&CK tactic
 
@@ -70,11 +70,11 @@ Each alert type has a description, severity, and MITRE ATT&CK tactic
 
 Understanding the intention of an attack can help you investigate and report the event more easily. To help with these efforts, Defender for Cloud alerts includes the MITRE tactics with many alerts.  The series of steps that describe the progression of a cyberattack from reconnaissance to data exfiltration is often referred to as a "kill chain".
 
-Defender for Cloud's supported kill chain intents are based on version 7 of the MITRE ATT&CK matrix and described in the table below.
+Defender for Cloud's supported kill chain intents are based on the [MITRE ATT&CK enterprise matrix](https://attack.mitre.org/) and described in the table below.
 
 | Tactic| Description|
 | :--- | :--- |
-| PreAttack| PreAttack could be either an attempt to access a certain resource regardless of malicious intent or a failed attempt to gain access to a target system to gather information prior to exploitation. This step is usually detected as an attempt, originating from outside the network, to scan the target system and identify an entry point.|
+| PreAttack| PreAttack could be either an attempt to access a certain resource regardless of malicious intent or a failed attempt to gain access to a target system to gather information prior to exploitation. This step is detected as an attempt, originating from outside the network, to scan the target system and identify an entry point.|
 | InitialAccess| InitialAccess is the stage where an attacker manages to get a foothold on the attacked resource. This stage is relevant for compute hosts and resources such as user accounts, certificates, etc. Threat actors will often be able to control the resource after this stage.|
 | Persistence| Persistence is any access, action, or configuration change to a system that gives a threat actor a persistent presence on that system. Threat actors will often need to maintain access to systems through interruptions such as system restarts, loss of credentials, or other failures that would require a remote access tool to restart or provide an alternate backdoor for them to regain access.|
 | PrivilegeEscalation| Privilege escalation is the result of actions that allow an adversary to obtain a higher level of permissions on a system or network. Certain tools or actions require a higher level of privilege to work and are likely necessary at many points throughout an operation. User accounts with permissions to access specific systems or perform specific functions necessary for adversaries to achieve their objective may also be considered an escalation of privilege.|
