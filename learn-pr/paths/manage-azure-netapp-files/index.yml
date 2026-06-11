@@ -32,5 +32,6 @@ modules:
   - learn.azure.manage-active-directory
   - learn.azure.manage-capacity-pool
   - learn.azure.manage-nfs-volumes
+  - learn.azure.manage-smb-volumes
 trophy:
   uid: learn.azure.managing-azure-netapp-files.trophy

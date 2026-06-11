@@ -18,6 +18,9 @@ Key features include:
 
 - **Web content filtering**—regulates access to websites based on their content categories and domain names.
 - **Universal Conditional Access**—applies Conditional Access policies to all internet destinations, even those not federated with Microsoft Entra ID.
+- **TLS inspection**—decrypts and inspects encrypted traffic to detect threats hidden in TLS-encrypted connections.
+- **Threat intelligence**—blocks access to known malicious domains and IP addresses based on Microsoft threat intelligence feeds.
+- **Prompt injection protection**—detects and blocks prompt injection attacks targeting AI services, preventing adversarial inputs from manipulating AI model behavior.
 - **Universal Continuous Access Evaluation (CAE)**—apps and Microsoft Entra constantly communicate to ensure user access is up-to-date. If something changes—like a user's location or a security concern—the system can quickly adjust or block access in near real time.
 
 Microsoft Entra Internet Access requires the Microsoft Entra Suite license or a standalone Microsoft Entra Internet Access license.
@@ -46,6 +49,8 @@ Private Access works by creating enterprise applications that serve as container
 
 - **Per-app Access (Global Secure Access app)**—provides a more granular approach where each enterprise application has its own resource definitions, user assignments, and Conditional Access policies, enabling different policies for different resource groups.
 
+- **App Discovery**—automatically discovers private applications being accessed across the organization, helping administrators identify resources that should be secured through Private Access policies.
+
   # [Quick Access](#tab/quick-access)
   :::image type="content" source="../media/quick-access-diagram.png" lightbox="../media/quick-access-diagram.png" alt-text="Diagram of Microsoft Entra Private Access with showing the components of Quick Access.":::
   
@@ -61,3 +66,9 @@ Global Secure Access includes a dashboard in the Microsoft Entra admin center th
 ### Securing AI workloads with network controls
 
 As organizations deploy AI services that connect to both cloud and on-premises resources, Global Secure Access helps ensure that traffic to and from these services passes through the same identity-aware security controls applied to other enterprise traffic. Conditional Access policies integrated with Global Secure Access traffic profiles can enforce compliant network checks and restrict access based on user risk, device state, and location—extending Zero Trust principles to AI workloads that access sensitive corporate data.
+
+Key AI-specific capabilities include:
+
+- **Prompt injection protection**—inspects traffic to AI services and blocks adversarial inputs designed to manipulate AI model behavior.
+- **Shadow AI discovery**—identifies unauthorized or unmanaged AI applications being accessed across the organization, helping administrators understand and control AI usage.
+- **Network controls for agents**—applies traffic policies to AI agent workloads, ensuring agent-to-service communication is subject to the same security controls as user traffic.

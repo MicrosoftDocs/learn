@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.debug-production-multi-agent-incidents-azure.design-root-cause-analysis-agent-failures
+title: Design root cause analysis for agent failures
+metadata:
+  title: Design Root Cause Analysis for Agent Failures
+  description: "Design root cause analysis for agent failures."
+  ms.date: 06/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-design-root-cause-analysis-agent-failures.md)]

@@ -22,7 +22,7 @@ Defender for Cloud offers plans for the following workload types. Each plan is e
 | APIs | Defender for APIs | APIs published in Azure API Management |
 | Key Vault | Defender for Key Vault | Azure Key Vault |
 | Resource Manager | Defender for Resource Manager | Azure Resource Manager control plane |
-| AI workloads | Defender for AI Services | Azure OpenAI Service and Microsoft Foundry |
+| AI workloads | Defender for AI Services | Microsoft Foundry workloads (including Azure OpenAI and Azure AI Model Inference) |
 
 > [!NOTE]
 > Other modules cover workload-specific security design in depth—including server endpoint protection, data security for SQL and Storage, container security requirements, and application security. This unit focuses on **selecting** the right plans as part of your overall hybrid and multicloud posture management strategy.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-smb-volumes.enable-continuous-availability
+title: Enable Continuous Availability on existing SMB volumes
+metadata:
+  title: Enable Continuous Availability on existing SMB volumes
+  description: Learn when and how to enable Continuous Availability on SMB volumes.
+  ms.date: 05/13/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-enable-continuous-availability.md)]
