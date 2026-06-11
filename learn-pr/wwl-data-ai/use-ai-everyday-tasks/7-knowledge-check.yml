@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 01/05/2026
+  ms.date: 06/11/2026
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -36,7 +36,7 @@ quiz:
     - content: "To correct grammatical errors in the prompts."
       isCorrect: false
       explanation: "Incorrect. 'Think Deeper' does not correct grammatical errors, it provides more detailed responses."
-    - content: "To handle more complex questions by breaking them down into multiple steps, allowing for more accurate and detailed responses."
+    - content: "To handle more complex questions by taking time to craft a plan, gather relevant context, and check its work before providing a thorough response."
       isCorrect: true
       explanation: "Correct. 'Think Deeper' unlocks the power of deep reasoning in Microsoft Copilot, providing more accurate and detailed responses."
   - content: "What is the role of generative AI in content creation?"
