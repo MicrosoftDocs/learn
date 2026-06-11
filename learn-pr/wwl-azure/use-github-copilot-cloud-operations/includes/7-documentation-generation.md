@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=26bedd30-1cfd-47d1-ab58-e13a9df87785]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Infrastructure code is notoriously under-documented. A Bicep template may correctly deploy a complex, multi-tier architecture. But if no one documented what it deploys, why each resource exists, or what the parameters control, the template becomes tribal knowledge. Only the person who wrote it can safely change it.
 
 This gap exists because documentation is tedious to write and easy to skip. After finishing and validating a 400-line Bicep template, writing a matching architecture description feels like a separate project.
@@ -193,3 +204,5 @@ Update the Infrastructure README to reflect these changes. Specifically:
 - Add the new CostCenter parameter to the parameter reference table
 - Update the "Resources Deployed" list
 ```
+
+::: zone-end
