@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-smb-volumes.exercise-manage-smb-volumes
+title: Exercise - Manage SMB volumes for Azure NetApp Files
+metadata:
+  title: Exercise - Manage SMB volumes for Azure NetApp Files
+  description: Exercise to create SMB volumes and enable Continuous Availability for Azure NetApp Files.
+  ms.date: 05/13/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise-manage-smb-volumes.md)]

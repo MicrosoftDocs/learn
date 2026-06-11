@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-smb-volumes.use-dfs-namespaces
+title: How to use DFS Namespaces with Azure NetApp Files
+metadata:
+  title: How to use DFS Namespaces with Azure NetApp Files
+  description: Learn how to use DFS Namespaces with Azure NetApp Files SMB volumes.
+  ms.date: 05/13/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-use-dfs-namespaces.md)]

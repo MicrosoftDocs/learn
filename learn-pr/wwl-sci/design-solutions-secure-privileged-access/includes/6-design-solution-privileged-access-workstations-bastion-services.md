@@ -61,9 +61,9 @@ The following Microsoft solutions help you implement these principles.
 
 [Azure Bastion](/azure/bastion/bastion-overview) provides secure RDP and SSH connectivity to Azure virtual machines without exposing public IP addresses. When designing Bastion deployments:
 
-- **Select the Standard SKU** for production workloads—it supports native client connections, custom ports, and session recording
+- **Select the appropriate SKU** for production workloads—Standard supports native client connections, custom ports, and file transfer; Premium adds session recording and private-only deployment
 - **Deploy zone-redundant** configurations for availability requirements
-- **Enable session recording** to maintain audit trails of privileged sessions
+- **Enable session recording** (requires Premium SKU) to maintain audit trails of privileged sessions
 - **Integrate with PIM** to require just-in-time role activation before granting remote access
 - **Restrict source IPs** using Network Security Groups on the Bastion subnet
 

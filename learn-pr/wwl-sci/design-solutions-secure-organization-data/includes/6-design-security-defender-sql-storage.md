@@ -42,8 +42,8 @@ When combined with [sensitive data discovery in Defender CSPM](/azure/defender-f
 
 The malware scanning capability:
 
-- Scans blobs on upload using Microsoft Defender Antivirus engine
-- Supports files up to 2 GB in size
+- Scans blobs on upload (on-upload scanning) and supports on-demand scanning of existing blobs using Microsoft Defender Antivirus engine
+- Supports files up to 50 GB in size
 - Uses hash reputation analysis to identify known malware
 - Provides near real-time scanning results
 - Integrates with Event Grid for automated response

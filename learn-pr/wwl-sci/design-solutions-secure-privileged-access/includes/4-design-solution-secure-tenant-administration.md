@@ -116,7 +116,7 @@ Organizations managing infrastructure across Azure, AWS, and GCP need consistent
 |----------------------|-------------------|
 | **Administrative boundary separation** | Separate identities and roles per cloud; use cloud-native IAM integrated with Microsoft Entra ID |
 | **Cross-cloud access patterns** | Federate Microsoft Entra ID with AWS IAM Identity Center and Google Cloud Identity |
-| **Just-in-time access** | Permissions Management in Microsoft Defender for Cloud provides cross-cloud JIT capabilities |
+| **Just-in-time access** | CIEM capabilities in Microsoft Defender for Cloud provide cross-cloud visibility into overprovisioned permissions |
 | **Visibility and monitoring** | Microsoft Sentinel collects and correlates administrative logs from all cloud platforms |
 
 ### Implementation guidance

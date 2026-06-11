@@ -26,7 +26,7 @@ The Microsoft Cloud Security Benchmark controls apply to AI workloads:
 
 ## Securing Azure OpenAI and AI services
 
-[Azure OpenAI Service](/azure/ai-services/openai/overview) provides enterprise-grade security controls for generative AI workloads. When designing security for Azure OpenAI:
+[Azure OpenAI Service](/azure/ai-foundry/openai/overview) provides enterprise-grade security controls for generative AI workloads. When designing security for Azure OpenAI:
 
 ### Network isolation
 
