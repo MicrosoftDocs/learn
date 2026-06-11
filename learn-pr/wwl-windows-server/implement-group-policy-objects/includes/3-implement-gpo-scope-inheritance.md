@@ -122,3 +122,89 @@ To facilitate evaluation of GPO precedence, you can simply select an OU or domai
 
 > [!IMPORTANT]
 > This tab doesn't account for policies that are linked to a site, for GPO security, or WMI filtering.
+
+## Filter GPO scope by using security principals
+
+The scope created by a GPO link includes every user and computer in the linked site, domain, or OU. Security filtering lets you narrow that scope so that the GPO applies only to specific security principals—security groups, individual users, or individual computers.
+
+A computer or user must have two permissions on a GPO before the client applies its settings:
+
+ -  **Read**
+ -  **Apply group policy**
+
+By default, both permissions are granted to the **Authenticated Users** group. Because Authenticated Users includes all user *and* computer accounts that authenticate to the domain, a newly linked GPO applies to everyone within its scope.
+
+To filter the scope, use the **Security Filtering** section on a GPO's **Scope** tab:
+
+1.  Remove **Authenticated Users**.
+2.  Add the security groups, users, or computers to which the GPO should apply.
+
+When you add a principal in the Security Filtering section, the Group Policy Management Console automatically grants that principal both the **Read** and **Apply group policy** permissions.
+
+> [!IMPORTANT]
+> After the MS16-072 security update, Group Policy retrieves the list of GPOs in the computer's security context rather than the user's. As a result, the computer account must have at least **Read** permission to the GPO. If you remove Authenticated Users from Security Filtering, add the **Domain Computers** group (or the relevant computer accounts) with the **Read** permission—but *not* Apply group policy—so user-targeted GPOs still process correctly.
+
+You can also explicitly *exclude* a principal. On the GPO's **Delegation** tab, select **Advanced**, add the principal, and then set **Apply group policy** to **Deny**. A Deny permission always overrides an Allow, so the GPO won't apply to that principal even if it's a member of an included group.
+
+> [!TIP]
+> Use Deny sparingly. Explicit Deny permissions don't appear in the Security Filtering section, which can make troubleshooting precedence and scope more difficult.
+
+## Filter GPO scope by using WMI filters
+
+A Windows Management Instrumentation (WMI) filter limits a GPO's scope based on characteristics of the target system, such as operating system version, hardware platform, free disk space, or whether a computer is a laptop. A WMI filter is a query written in the WMI Query Language (WQL) that's evaluated against the WMI repository on each target computer. The GPO applies only if the query evaluates to **true**.
+
+The following example returns true only on computers running a version of Windows that begins with 10:
+
+```powershell
+select * from Win32_OperatingSystem where Version like "10.%"
+
+```
+
+The next example returns true only on computers that report a chassis type that corresponds to a portable computer (laptop):
+
+```powershell
+select * from Win32_SystemEnclosure where ChassisTypes = "9" or ChassisTypes = "10" or ChassisTypes = "14"
+
+```
+
+Keep the following characteristics of WMI filters in mind:
+
+ -  A GPO can be linked to only **one** WMI filter, but a single WMI filter can be linked to **many** GPOs.
+ -  The WMI filter is evaluated every time Group Policy processes, which adds overhead. Extensive use of WMI filters can slow sign-in and startup.
+ -  A WMI query that fails to evaluate (for example, because it references a class that doesn't exist on the client) is treated as false, and the GPO doesn't apply.
+
+To apply a WMI filter, select the GPO in the Group Policy Management Console, and on the **Scope** tab, choose the filter from the **WMI Filtering** drop-down list.
+
+## Configure Group Policy loopback processing
+
+Normally, the user configuration settings that apply to a user come from the GPOs scoped to the *user's* location in AD DS, and the computer configuration settings come from the GPOs scoped to the *computer's* location. In some scenarios—such as kiosks, classroom and lab computers, and Remote Desktop Session Hosts—you want the user experience to be determined by the computer that the user signs in to, not by the user's own account location.
+
+Loopback processing applies the **user** configuration settings from the GPOs scoped to the *computer*, regardless of which user signs in. You enable it by configuring **Configure user Group Policy loopback processing mode**, found in **Computer Configuration\Policies\Administrative Templates\System\Group Policy**. The setting offers two modes:
+
+:::row:::
+  :::column:::
+    **Mode**
+  :::column-end:::
+  :::column:::
+    **Behavior**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Replace
+  :::column-end:::
+  :::column:::
+    The user settings that would normally apply based on the user's location are *not* processed. Only the user settings in the GPOs scoped to the computer apply.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Merge
+  :::column-end:::
+  :::column:::
+    The user settings from the GPOs scoped to the user are applied first, and then the user settings from the GPOs scoped to the computer are applied. Where the two conflict, the computer-scoped user settings prevail because they apply last.
+  :::column-end:::
+:::row-end:::
+
+> [!NOTE]
+> Loopback processing affects only the user configuration settings of GPOs. Computer configuration settings always apply based on the computer's location in AD DS.
