@@ -5,7 +5,7 @@ In this module, you learned strategies and solutions for securing privileged acc
 
 - [Securing privileged access Enterprise access model](/security/privileged-access-workstations/privileged-access-access-model)
 - [What is Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure)
-- [Microsoft Entra Permissions Management overview](/entra/permissions-management/overview)
+- [Cloud infrastructure entitlement management (CIEM) in Defender for Cloud](/azure/defender-for-cloud/permissions-management)
 - [Learn about privileged access management](/purview/privileged-access-management)
 - [What is Azure Lighthouse?](/azure/lighthouse/overview)
 - [Tenant management for Microsoft 365 for enterprise](/microsoft-365/solutions/tenant-management-overview)
