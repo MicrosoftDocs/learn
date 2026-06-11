@@ -8,7 +8,7 @@ metadata:
   ms.author: aurnovc
   ms.topic: module
   ms.service: azure-arc
-  ms.subservice: azure-arc-servers
+  ms.subservice: servers-azure-arc
 title: Monitor your hybrid and multicloud machines through Azure Arc-enabled servers
 summary: Azure Arc promises to bridge the gap between on-premises and cloud environments. Azure Arc extends the consistent security, observability, and governance of the Azure platform to non-Azure machines. In this module, you learn about monitoring Azure Arc-enabled servers.
 abstract: |
@@ -41,4 +41,3 @@ units:
 - learn.azure.monitor-azure-arc-enabled-servers.summary
 badge:
   uid: learn.azure.monitor-azure-arc-enabled-servers.badge
-

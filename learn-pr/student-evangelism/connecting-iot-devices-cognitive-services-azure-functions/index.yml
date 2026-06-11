@@ -9,7 +9,7 @@ metadata:
   ms.author: orthomas
   ms.topic: module-standard-task-based
   ms.custom: team=cloud_advocates
-  ms.service: azure-ai-speech
+  ms.service: azure-speech-foundry-tools
   ms.collection:
     - ce-advocates-ai-copilot
 title: "Connect IoT devices to Azure AI Speech using Azure Functions"

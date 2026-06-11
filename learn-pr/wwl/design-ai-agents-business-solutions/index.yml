@@ -7,7 +7,7 @@ metadata:
   author: Randall-Knapp
   ms.author: taeldin
   ms.topic: module
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
   ai-usage: ai-assisted
 title: "Design AI agents for business solutions"
 summary: Learn to design AI agents tailored to business needs using Dynamics 365 and Copilot.
