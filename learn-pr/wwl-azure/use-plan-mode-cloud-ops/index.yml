@@ -3,7 +3,7 @@ uid: learn.wwl.use-plan-mode-cloud-ops
 metadata:
   title: "Use GitHub Copilot Plan Mode for Cloud Operations Tasks"
   description: "Learn how to use GitHub Copilot plan mode to create structured implementation plans for cloud infrastructure changes and system administration tasks."
-  ms.date: 04/29/2026
+  ms.date: 6/11/2026
   author: petender
   ms.author: petender
   ms.topic: module

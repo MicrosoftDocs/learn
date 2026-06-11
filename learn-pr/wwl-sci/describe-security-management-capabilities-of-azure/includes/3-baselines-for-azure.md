@@ -50,6 +50,8 @@ Each recommendation provides you with the following information:
 - A short description of the security issue
 - The remediation steps to carry out to implement the recommendation
 - The affected resources
+- Severity and risk factors
+- Attack path context (when available)
 
 Recommendations also include a severity level—high, medium, or low—indicating how urgently the issue should be addressed. A high-severity recommendation points to a significant exposure that could be exploited quickly. A low-severity recommendation still represents a risk, but one that is less likely to be targeted immediately. Prioritizing recommendations by severity helps security teams focus first on the actions that have the greatest impact on their security posture.
 

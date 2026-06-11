@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2b621ae0-971b-4e36-85c1-da96db9df72c]
+
+> [!TIP]
+> The video for this section is also available in text-based form below.
+
+::: zone-end
+
+::: zone pivot="text"
+
 A team manages a Windows Server environment with Active Directory Domain Services (ADDS). New employee onboarding requires creating user accounts, assigning group memberships, setting up home directories, and configuring email. Doing all these tasks manually, is time-consuming and error-prone.
 
 > [!NOTE]
@@ -81,3 +92,5 @@ When you use the Plan agent for system administration tasks, consider including:
 
 > [!NOTE]
 > The Plan agent works with whatever files are in your workspace. If you have existing PowerShell modules, DSC configurations, or script libraries in your repository, the agent references them when generating plans. This means your plans are tailored to your team's existing code and patterns, not generic templates.
+
+::: zone-end

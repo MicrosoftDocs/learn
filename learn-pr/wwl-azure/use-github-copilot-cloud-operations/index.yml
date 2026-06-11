@@ -3,7 +3,7 @@ uid: learn.wwl.use-github-copilot-cloud-operations
 metadata:
   title: "Use GitHub Copilot for Cloud Operations"
   description: "Learn how to use GitHub Copilot to author Infrastructure as Code templates, apply prompt engineering techniques, and generate Azure CLI and PowerShell scripts for cloud operations tasks."
-  ms.date: 05/05/2026
+  ms.date: 6/11/2026
   author: petender
   ms.author: petender
   ms.topic: module

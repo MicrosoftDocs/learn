@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f3ce49c7-dabe-45ef-8656-f07ef7187eb8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 App Service provides diagnostic tools for monitoring container health, viewing logs, and troubleshooting issues. Understanding these tools helps you identify problems quickly and maintain reliable production deployments.
 
 ## Container logs
@@ -191,6 +202,8 @@ Understanding common container deployment issues helps you troubleshoot problems
 - Enable always-on to keep the application warm
 - Reduce container image size by using smaller base images and multi-stage builds
 - Optimize application startup by deferring heavy initialization
+
+::: zone-end
 
 ## Additional resources
 

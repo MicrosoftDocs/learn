@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ba872494-5214-43f2-af59-9c1bb06a5dcc]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Logs are the primary diagnostic signal in a managed container platform. In an AI solution, logs help you correlate requests with model versions, explain latency spikes, and identify dependency failures without needing shell access to containers. Azure Container Apps integrates with Azure Monitor, and you can also stream logs during an incident.
 
 > [!NOTE]
@@ -37,6 +48,8 @@ During an incident, use a workflow that narrows scope quickly:
 1. Stream logs while you reproduce the issue or while the failing revision starts.
 1. Compare configuration between a working revision and a failing revision.
 1. Apply a targeted fix and validate the next revision becomes ready.
+
+::: zone-end
 
 ## Additional resources
 
