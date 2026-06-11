@@ -64,10 +64,10 @@ The following table compares SSPR and account recovery:
 | Aspect | Self-service password reset | Account recovery |
 |---|---|---|
 | Primary use case | User forgot password but has access to registered methods | User lost access to all authentication methods |
-| Authentication requirement | At least one registered method | Identity verification through certified provider |
+| Authentication requirement | At least one registered method | Identity verification through certified IDV provider |
 | Recovery scope | Password only | Complete authentication method reset |
 | Security level | Relies on preregistered methods | Comprehensive identity proofing |
 
-Account recovery uses Microsoft Entra Verified ID with Face Check, powered by Azure AI services, to provide high-assurance identity verification without exposing sensitive personal data. By removing human judgment from the verification process, it eliminates the social engineering risks inherent in traditional helpdesk-led recovery. Organizations benefit from reduced helpdesk burden, improved user experience during lockout scenarios, and enhanced security posture—particularly for distributed workforces where physical presence for identity verification isn't practical. 
+Account recovery uses identity verification providers (IDV) available through the [Microsoft Security Store](https://securitystore.microsoft.com/), offering coverage across 192 countries/regions and remote verification for most government-issued ID documents. Microsoft Entra Verified ID with Face Check, powered by Azure AI services, provides high-assurance identity verification by matching a user's real-time selfie to the photo on their government-issued ID. Only the match result is shared—no sensitive identity data—which preserves user privacy while providing strong identity assurance. By removing human judgment from the verification process, it eliminates the social engineering risks inherent in traditional helpdesk-led recovery. Organizations benefit from reduced helpdesk burden, improved user experience during lockout scenarios, and enhanced security posture—particularly for distributed workforces where physical presence for identity verification isn't practical.
 
 Microsoft Entra Verified ID is covered in more detail in the module, [Describe the identity protection and governance capabilities of Microsoft Entra](/training/modules/describe-identity-protection-governance-capabilities/).

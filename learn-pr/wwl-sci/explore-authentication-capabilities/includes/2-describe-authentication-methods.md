@@ -86,7 +86,8 @@ Microsoft recommends phishing-resistant authentication methods for the most secu
 
 - Windows Hello for Business
 - Platform Credential for macOS
-- Passkeys (FIDO2), including FIDO2 security keys and synced passkeys
+- Synced passkeys (FIDO2)
+- FIDO2 security keys
 - Passkeys in Microsoft Authenticator
 - Certificate-based authentication (CBA)
 
@@ -113,4 +114,5 @@ Some authentication methods can be used as the primary factor when you sign in t
 | Voice call | No | MFA and SSPR |
 | QR code | Yes | No |
 | Email OTP | No | SSPR |
+| Verified ID | No | Account recovery |
 | Password | Yes | No |
