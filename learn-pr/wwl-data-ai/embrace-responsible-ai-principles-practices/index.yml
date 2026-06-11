@@ -8,7 +8,7 @@ metadata:
   ms.author: rcaper
   ms.topic: module
   ms.collection: N/A
-  ms.service: azure-ai-services
+  ms.service: foundry-tools
   ai-usage: ai-assisted
 title: Embrace responsible AI principles and practices
 summary: Learn how to embrace responsible AI practices that build trust and unlock value. Explore Microsoft’s principles, governance systems, and real-world examples to help you design policies, processes, and safeguards for ethical, secure, and scalable AI adoption.
