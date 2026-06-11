@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-containers-azure-app-service
 metadata:
   title: Deploy Containers to Azure App Service
   description: Learn how to deploy and manage containerized applications on Azure App Service by configuring container sources, runtime settings, application configuration, and diagnostics.
-  ms.date: 01/12/2026
+  ms.date: 06/10/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

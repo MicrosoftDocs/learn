@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9ae69ce0-d037-4493-8417-5f98180b1fba]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 GitHub Copilot is only as useful as the instructions you give it. For infrastructure tasks, a vague prompt produces a generic template that may not match your naming conventions, security standards, or architectural patterns. A well-crafted prompt produces output that's close to production-ready.
 
 This isn't a minor difference. A prompt like `create a Bicep template for a Virtual Network` might produce a minimal example with no subnets, no tags, and a hardcoded region. A prompt like the one you write by the end of this unit, might produce a fully parameterized, tagged, multi-subnet Virtual Network, with NSG associations and diagnostic settings. Correctly structured and ready to validate.
@@ -295,3 +306,5 @@ Treating Copilot's output as a first draft, not a final answer, is the mindset t
 - Role-based prompting ("You're a senior Azure security engineer...") improves the quality of reviews and architectural guidance.
 - Iterative refinement, by building in layers, produces better output than one large prompt.
 - Always review Copilot's output before using it: check API versions, required properties, security settings, and resource references.
+
+::: zone-end

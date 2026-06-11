@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=49b56052-4e60-4fb4-9bfd-f63a95732693]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Despite the rise of declarative IaC tools like Bicep, command line tools such as Azure CLI and Azure PowerShell, remain essential for cloud engineers. Some tasks don't fit neatly into a template: predeployment checks, data migrations, operational runbooks, unplanned troubleshooting, and automation that involves conditional logic or loops.
 
 CommandLine (CLI) scripts are also often the first thing a team reaches for, when something needs to happen quickly. The speed at which you can write and run a script matters. Exactly where GitHub Copilot adds immediate value. Instead of searching documentation for the right command and its parameters, you describe what you want in plain language and Copilot generates the script.
@@ -242,3 +253,5 @@ Copilot generates the loop structure using `az account list` and `az account set
 - Copilot produces idiomatic output in both CLI and PowerShell; Not a mechanical translation of one to the other.
 - Use the translation pattern ("Translate this CLI script to PowerShell, preserve all logic, don't add features") for reliable cross-tool conversion.
 - Use CLI for operational and conditional tasks; use Bicep for managing long-lived infrastructure state.
+
+::: zone-end

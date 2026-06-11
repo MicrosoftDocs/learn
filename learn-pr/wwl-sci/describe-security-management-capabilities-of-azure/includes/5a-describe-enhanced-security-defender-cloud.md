@@ -8,11 +8,10 @@ Microsoft Defender for Cloud includes a range of advanced intelligent protection
 - **Microsoft Defender for servers** adds threat detection and advanced defenses for your Windows and Linux machines.
 - **Microsoft Defender for App Service** identifies attacks targeting applications running over App Service.
 - **Microsoft Defender for Storage** detects potentially harmful activity on your Azure Storage accounts. 
-- **Microsoft Defender for SQL** secures your databases and their data wherever they're located.
+- **Microsoft Defender for Databases** protects your entire database estate with attack detection and threat response for the various database types in Azure, including Azure SQL, open-source relational databases, and Azure Cosmos DB.
 - **Microsoft Defender for Containers** provides cloud-native security for Kubernetes environments, including environment hardening, workload protection, and run-time threat detection for containerized workloads and registries.
 - **Microsoft Defender for Key Vault** is advanced threat protection for Azure Key Vault.
 - **Microsoft Defender for Resource Manager** automatically monitors the resource management operations in your organization.
-- **Microsoft Defender for open-source relational databases** brings threat protections for open-source relational databases.
 - **Microsoft Defender for AI Services** provides threat protection for AI workloads, detecting prompt injection attacks, anomalous usage patterns, and other threats targeting Azure AI services.
 - **Microsoft Defender for APIs** provides visibility into business-critical APIs, improves API security posture, prioritizes vulnerability fixes, and detects active real-time threats against your APIs.
 

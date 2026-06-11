@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b6e57045-897a-4946-b19e-9a147b358245]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Container Apps organizes workloads into environments. An environment becomes a practical boundary for how your AI solution deploys and operates because it scopes shared networking and observability integration. When you decide how many environments to use, you're choosing an isolation and management model for your containerized services.
 
 > [!NOTE]
@@ -52,6 +63,8 @@ Environment design is a trade-off between isolation and operational simplicity. 
 - **Align environments to networking boundaries:** Place services that must communicate privately in the same environment and use internal ingress where appropriate.
 - **Standardize naming conventions:** Use consistent names for resource groups, environments, and apps so operational tooling can discover resources easily.
 - **Plan for observability:** Decide where logs should go and how you query them before you deploy production traffic.
+
+::: zone-end
 
 ## Additional resources
 

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=875237ad-b0f5-40e8-8c8d-27891bcf2c15]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Updating a container image is a core activity during AI application development. Image updates often include model version changes, dependency updates, and configuration changes that affect startup time and latency. In Azure Container Apps, a meaningful update typically results in a new revision, so the safest operational workflow connects image identity, revision health, and traffic management.
 
 > [!NOTE]
@@ -76,6 +87,8 @@ Safe rollouts combine good artifact identity with clear revision controls. Clean
 - **Verify revision health before shifting traffic:** Use revision status, probe signals, and logs to confirm readiness.
 - **Deactivate before investigating:** Deactivation preserves evidence during troubleshooting and reduces risk.
 - **Define a retention strategy:** Container Apps automatically purges inactive revisions when you exceed 100. You can adjust this threshold with the `--max-inactive-revisions` parameter.
+
+::: zone-end
 
 ## Additional resources
 

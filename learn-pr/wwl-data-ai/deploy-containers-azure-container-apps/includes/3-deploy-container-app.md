@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=48e3ca23-9d3f-4b12-b170-80c78839d400]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Deployment mechanics shape how reliably you can ship changes to an AI service. Azure Container Apps supports a fast, CLI-first workflow, and a more controlled workflow where configuration is stored in YAML. This unit shows both approaches and explains when each one helps.
 
 ## Prepare Azure CLI for Container Apps
@@ -90,6 +101,8 @@ az containerapp update \
 In real projects, you often move from CLI-first deployment to more structured deployment pipelines. Azure Container Apps supports multiple approaches, and you should choose one based on team workflow and compliance requirements. For example, you can use Bicep for infrastructure as code, GitHub Actions for continuous deployment, or the Azure portal for unplanned changes.
 
 Even when you use these other approaches, the CLI and YAML patterns in this unit remain useful. They help you understand which properties change when you deploy and where to look when troubleshooting.
+
+::: zone-end
 
 ## Additional resources
 

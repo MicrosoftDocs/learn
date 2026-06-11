@@ -38,4 +38,4 @@ To get more information or generate additional useful content, you could follow 
 By continuing the conversation with Copilot and using an iterative approach to refine and expand its responses, you can increase their usefulness.
 
 > [!TIP]
-> For more information about writing effective prompts and some example prompts you can use, see [Copilot Lab](https://copilot.cloud.microsoft/prompts).
+> For more information about writing effective prompts and some example prompts you can use, see [Prompt Gallery](https://copilot.cloud.microsoft/prompts).

@@ -3,7 +3,7 @@ In this module, you learned about Microsoft Copilot, an AI-powered assistant des
 To help you use Copilot effectively, you learned how to write detailed prompts that provide Copilot with the context it needs to generate useful responses.
 
 > [!TIP]
-> For more information about working with Microsoft Copilot, see [Copilot Lab](https://copilot.cloud.microsoft/prompts).
+> For more information about working with Microsoft Copilot, see [Prompt Gallery](https://copilot.cloud.microsoft/prompts).
 
 **Continue your learning journey**
 

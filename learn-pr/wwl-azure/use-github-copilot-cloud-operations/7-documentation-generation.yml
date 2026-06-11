@@ -2,9 +2,10 @@
 uid: learn.wwl.use-github-copilot-cloud-operations.documentation-generation
 title: Documentation generation from infrastructure code
 metadata:
+  zone_pivot_groups: video-or-text
   title: Documentation Generation from Infrastructure Code
   description: "Learn how to use GitHub Copilot to generate plain-language architecture descriptions, parameter reference tables, Mermaid diagrams, and change summaries from Bicep templates."
-  ms.date: 05/05/2026
+  ms.date: 6/11/2026
   author: petender
   ms.author: petender
   ms.topic: unit

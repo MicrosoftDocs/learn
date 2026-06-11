@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4d077c82-aed1-468e-ba65-ef9060aa2286]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Containerization is no longer a separate concern from infrastructure. When your application runs on Kubernetes, the Dockerfile, the Kubernetes manifests, and the underlying Azure infrastructure are all part of the same IaC estate. They share the same version control, the same CI/CD pipeline, and the same review process.
 
 GitHub Copilot is well-suited for container infrastructure because Dockerfile syntax and Kubernetes YAML are highly structured and pattern-rich. These characteristics are the same qualities that make Bicep generation effective. Most containerization patterns appear frequently in open-source projects, giving Copilot strong coverage of best practices.
@@ -223,3 +234,5 @@ This review prompt is useful for teams that accumulated manifests over time and 
 ## Helm chart scaffolding
 
 For reusable application packaging, Copilot can scaffold Helm chart structures. Use a prompt that specifies the chart name, the resources to include, the values to parameterize, and any AKS-specific requirements such as ingress class or workload identity. Copilot generates the `Chart.yaml`, `values.yaml`, and template files in the expected directory structure. Review the generated `values.yaml` carefully to ensure sensitive defaults aren't committed to source control.
+
+::: zone-end

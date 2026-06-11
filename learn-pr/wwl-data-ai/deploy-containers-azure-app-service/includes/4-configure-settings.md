@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f6b76743-6dfd-4ceb-938c-f6108da60c4a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Application settings provide configuration values to your containerized application at runtime. App Service injects these values as environment variables when the container starts. Using app settings instead of hardcoded values allows you to deploy the same container image across different environments with environment-specific configuration.
 
 ## App settings
@@ -164,6 +175,8 @@ After configuring settings, verify that the app is resolving and applying the ex
 Access the SCM site at `https://<app-name>.scm.azurewebsites.net` and navigate to **Environment** (or browse to `https://<app-name>.scm.azurewebsites.net/Env`) to view environment variables that App Service applies to the app. This view shows both your app settings and system-provided variables.
 
 You can also verify settings programmatically by adding a diagnostic endpoint to your application that returns nonsensitive configuration values, or by checking application logs for configuration-related messages at startup.
+
+::: zone-end
 
 ## Additional resources
 

@@ -18,7 +18,7 @@ For example:
 
 ## Create AI solutions without code
 
-Prebuilt models like GPT are now integrated into everyday tools—Microsoft 365, Dynamics 365, and Bing—so subject matter experts can start using AI immediately. For more advanced needs, platforms like Microsoft Power Platform and Microsoft Foundry enable Subject matter experts to create apps, automate processes, and even integrate AI models without writing code.
+Prebuilt models like GPT are now integrated into everyday tools—Microsoft 365, Dynamics 365, and Microsoft Copilot—so subject matter experts can start using AI immediately. For more advanced needs, platforms like Microsoft Power Platform and Microsoft Foundry enable Subject matter experts to create apps, automate processes, and even integrate AI models without writing code.
 
 > [!NOTE]
 > Nearly a third of business users have tried to incorporate prebuilt generative AI models such as GPT in their work routines.
