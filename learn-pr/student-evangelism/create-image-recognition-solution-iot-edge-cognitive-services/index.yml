@@ -10,7 +10,7 @@ metadata:
   ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
-  ms.service: azure-ai-services
+  ms.service: foundry-tools
   ms.collection:
     - ce-advocates-ai-copilot
 title: "Create an image recognition solution with Azure IoT Edge, Azure AI Custom Vision, and Azure Speech"

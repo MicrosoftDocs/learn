@@ -7,7 +7,7 @@ metadata:
   ms.author: orthomas
   ms.date: 04/01/2026
   ms.update-cycle: 180-days
-  ms.service: azure-ai-services
+  ms.service: foundry-tools
   ms.topic: module
   ms.collection: ce-advocates-ai-copilot
 title: Introduction to computer vision with TensorFlow
