@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c85a8083-7849-49c0-8fe0-526d1923f645]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Health probes protect your users during rollouts by preventing traffic from reaching unhealthy replicas. For AI APIs, readiness probes are especially important because startup often includes loading models, warming caches, or establishing dependency connections. Liveness probes help you recover when a process becomes stuck, but overly aggressive liveness settings can create unnecessary restarts and increase cold starts.
 
 > [!NOTE]
@@ -55,6 +66,8 @@ properties:
 When probes fail, combine revision status and logs. Revision status tells you whether the platform considers the revision healthy, and logs tell you whether the application started successfully and which endpoint it exposed. You should also confirm that the probe endpoints don't depend on external systems that might be unavailable during an incident.
 
 If an AI service loads a model at startup, tune `initialDelaySeconds` and `failureThreshold` to give the process enough time to reach a ready state. If you see liveness failures shortly after startup, liveness is likely too aggressive or the process is failing fast due to misconfiguration.
+
+::: zone-end
 
 ## Additional resources
 

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2539c9b4-4b54-410d-bc84-fa55fb1856c7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Verification closes the loop between deployment intent and what actually runs in production. For AI services, verification is especially important because startup failures can look like model connectivity problems, missing secrets, or registry authentication errors. In Azure Container Apps, you can verify deployments through logs, revisions, and replica status.
 
 > [!NOTE]
@@ -76,6 +87,8 @@ Verification is most effective when it's consistent and repeatable. You can use 
 - **Use revisions for rollout validation:** List revisions after updates to confirm a new revision exists and becomes active.
 - **Inspect replicas during incidents:** Check replicas to detect scale-to-zero, crash loops, or missing traffic.
 - **Prefer automation-friendly outputs:** Use `--query` to extract fields you commonly validate, such as ingress FQDN or revision status.
+
+::: zone-end
 
 ## Additional resources
 

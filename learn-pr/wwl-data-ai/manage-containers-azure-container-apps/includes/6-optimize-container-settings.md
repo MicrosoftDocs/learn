@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=53c9a90f-dd83-48b5-860e-da15768f854d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Resource sizing and scaling determine whether an AI service stays responsive and whether it stays within budget. Underprovisioned CPU can cause throttling and latency spikes, while underprovisioned memory can lead to restarts and repeated cold starts. In Azure Container Apps, you tune per-replica resources and scaling limits together so you can meet throughput goals without overpaying.
 
 > [!NOTE]
@@ -36,6 +47,8 @@ This approach reduces the risk of masking the root cause and makes it easier to 
 - **Align concurrency with CPU:** If your API uses high concurrency, validate that the per-replica CPU can support it without latency spikes.
 - **Use minimum replicas intentionally:** Minimum replicas reduce cold starts, but they also increase baseline cost.
 - **Reassess after model changes:** Model versions can change startup time, memory usage, and request latency.
+
+::: zone-end
 
 ## Additional resources
 

@@ -3,7 +3,7 @@ uid: learn.wwl.manage-containers-azure-container-apps
 metadata:
   title: Manage Containers in Azure Container Apps
   description: Manage container apps across the day-two lifecycle. Update images, manage revisions, diagnose failing deployments, tune resources and scaling, and troubleshoot with logs and health probes.
-  ms.date: 01/26/2026
+  ms.date: 06/10/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

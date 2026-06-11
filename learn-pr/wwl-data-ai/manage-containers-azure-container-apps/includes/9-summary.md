@@ -1,6 +1,19 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=118cecd1-3809-4a7a-a1a6-322ff2631b11]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this module, you learned how to manage Azure Container Apps across the day-two lifecycle for an AI solution. You explored how image updates and revisions work together so you can deploy changes safely and preserve rollback options. You also learned how to use lifecycle actions like start, stop, and restart to support incident response and cost control.
 
 Additionally, you practiced troubleshooting with logs and learned how probe configuration affects rollout safety and availability. Finally, you reviewed how CPU and memory sizing interacts with scaling so you can balance performance goals with cost.
+
+::: zone-end
 
 ## Additional resources
 
