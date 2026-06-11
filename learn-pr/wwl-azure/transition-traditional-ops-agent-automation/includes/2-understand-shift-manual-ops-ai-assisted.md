@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=022f1137-1adc-421d-beb0-6c913f44c646]
+
+> [!TIP]
+> The video for this section is also available in text-based form below.
+
+::: zone-end
+
+::: zone pivot="text"
+
 Infrastructure operations evolve through distinct stages. Understanding in which stage your organization is, helps you identify the opportunities that agentic approaches unlock.
 
 ## Stage 1: Manual operations
@@ -56,3 +67,5 @@ Not every task needs an agent. Simple, one-off operations are fine as manual com
 - **The same workflow repeats with different inputs**: Building demo environments, onboarding new applications, or provisioning development workspaces.
 
 The next unit examines what agentic DevOps looks like in practice and how multi-agent orchestration works.
+
+::: zone-end
