@@ -11,7 +11,7 @@ metadata:
   ms.collection:
     - TBD
     - ce-advocates-ai-copilot
-  ms.service: azure-ai-services
+  ms.service: foundry-tools
 title: "Introduction to large language models"
 summary: Learn how to use large language models (LLMs), "general purpose" AI models that can analyze text, images, and audio, to improve your workflow.
 abstract: |
@@ -38,4 +38,3 @@ units:
 - learn.introduction-large-language-models.summary
 badge:
   uid: learn.introduction-large-language-models-badge
-
