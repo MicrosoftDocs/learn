@@ -1,6 +1,6 @@
 ## Respond to Defender for Cloud for Key Vault alerts
 
-When you receive an alert from Defender for Key Vault, we recommend you investigate and respond to the alert as described below. Defender for Key Vault protects applications and credentials, so even if you're familiar with the application or user that triggered the alert, it's important to verify the situation surrounding every alert.
+When you receive an alert from Defender for Key Vault, it's important to investigate and respond to the alert as described below. Defender for Key Vault protects applications and credentials, so even if you're familiar with the application or user that triggered the alert, it's important to verify the situation surrounding every alert.
 
 Every alert from Defender for Key Vault includes the following elements:
 
@@ -10,7 +10,7 @@ Every alert from Defender for Key Vault includes the following elements:
 
 ### Contact
 
-- Verify whether the traffic originated from within your Azure tenant. If the key vault firewall is enabled, it's likely that you've provided access to the user or application that triggered this alert.
+- Verify whether the traffic originated from within your Azure tenant. If the key vault firewall is enabled, it's likely that you provided access to the user or application that triggered this alert.
 
 - If you can't verify the source of the traffic, continue to Step 2. Immediate mitigation.
 
@@ -28,9 +28,12 @@ If you don't recognize the user or application, or if you think the access shoul
 
 - If the source of the alert was an unauthorized application or suspicious user:
 
-  - Open the key vault's access policy settings.
+  - If the key vault uses Azure RBAC (recommended): Navigate to the key vault's **Access control (IAM)** tab. Locate and remove the role assignment for the suspicious security principal.
 
-  - Remove the corresponding security principal, or restrict the operations the security principal can perform.
+  - If the key vault uses vault access policies (legacy): Open the key vault's access policy settings. Remove the corresponding security principal, or restrict the operations the security principal can perform.
+
+  > [!NOTE]
+  > Azure Key Vault vault access policy is deprecated. Microsoft recommends migrating to Azure RBAC for key vault authorization.
 
 - If the source of the alert has a Microsoft Entra role in your tenant:
 
