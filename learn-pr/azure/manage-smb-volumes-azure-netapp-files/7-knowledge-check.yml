@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-smb-volumes.knowledge-check
+title: Module assessment
+metadata:
+  unitType: knowledge_check
+  title: Module assessment
+  description: Test your knowledge of managing SMB volumes in Azure NetApp Files.
+  ms.date: 05/13/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+    - content: "What is the purpose of using DFS Namespaces with Azure NetApp Files SMB volumes?"
+      choices:
+        - content: "DFS-N is used to simplify the deployment and maintenance of SMB file shares in production and to provide a layer of indirection between the UNC path of your file shares and the actual file shares themselves."
+          isCorrect: true
+          explanation: "Correct. One of the main purposes of DFS Namespaces is to simplify file access by providing a unified namespace. With DFS Namespaces, you can create a logical structure that hides the underlying physical locations of the file shares. It simplifies file access for users and applications, even when the underlying file shares are distributed across multiple servers."
+        - content: "To provide high availability and fault tolerance for file shares."
+          isCorrect: false
+          explanation: "Incorrect. While DFS Namespaces can contribute to high availability and fault tolerance indirectly by allowing you to distribute data across multiple file shares, its primary purpose is to simplify file access through a unified namespace."
+        - content: "To enable load balancing and distribute client requests across multiple servers."
+          isCorrect: false
+          explanation: "Incorrect. While DFS Namespaces can help distribute client requests across multiple servers, its primary purpose is to provide a unified namespace for file access rather than load balancing functionality."
+        - content: "To enable encryption and secure data transfer between the client and the file server."
+          isCorrect: false
+          explanation: "Incorrect. DFS Namespaces itself doesn't provide encryption or secure data transfer capabilities. Its main focus is on simplifying file access through a unified namespace. Encryption and secure data transfer can be implemented separately at the file share level or through other security mechanisms."
+    - content: "Which statement about enabling Continuous Availability on Azure NetApp Files SMB volumes is correct?"
+      choices:
+        - content: "Continuous Availability is supported for all SMB workloads without restriction."
+          isCorrect: false
+          explanation: "Incorrect. Continuous Availability is supported only for specific workloads and use cases such as Citrix App Layering, FSLogix profile containers, MSIX app attach, and SQL Server on Windows."
+        - content: "Continuous Availability is intended only for specific supported workloads, and existing client systems should be rebooted after enabling it on an existing SMB volume."
+          isCorrect: true
+          explanation: "Correct. Continuous Availability is supported only for specific workloads and use cases such as Citrix App Layering, FSLogix profile containers, MSIX app attach, and SQL Server on Windows. After enabling Continuous Availability on an existing SMB volume, you should reboot the Windows systems connecting to the SMB share."
+        - content: "Continuous Availability can be enabled only when creating a new volume and can’t be enabled later."
+          isCorrect: false
+          explanation: "Incorrect. Continuous Availability can be enabled when you create a new SMB volume or later on an existing SMB volume."
+        - content: "Continuous Availability is mainly used to configure DFS Namespace paths for SMB share."
+          isCorrect: false
+          explanation: "Incorrect. Continuous Availability supports specific SMB workloads that need resilient access, whereas DFS Namespaces provides a unified namespace for file shares."
+    - content: "What must be configured before you can create an SMB volume in Azure NetApp Files?"
+      choices:
+        - content: "Only NTFS file permissions on the client machine."
+          isCorrect: false
+          explanation: "Incorrect. NTFS permissions help control access after the volume is in use, but they aren't the required prerequisite for creating the SMB volume itself."
+        - content: "DFS Namespaces on a Windows Server."
+          isCorrect: false
+          explanation: "Incorrect. DFS Namespaces is optional and used to simplify access to SMB shares, but it isn't required before creating an SMB volume."
+        - content: "A capacity pool, a delegated subnet, and an Active Directory connection."
+          isCorrect: true
+          explanation: "Correct. Before creating an SMB volume, you must already have a capacity pool, a subnet delegated to Azure NetApp Files, and a configured Active Directory connection."
+        - content: "A root consolidation namespace and SQL Server on Windows."
+          isCorrect: false
+          explanation: "Incorrect. These items relate to specific scenarios and workloads, not the basic prerequisites for creating an SMB volume in Azure NetApp Files."
