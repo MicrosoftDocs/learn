@@ -15,6 +15,7 @@ To find out more about any of the topics covered in this module, go to:
 
 #### Describe Microsoft Defender for Cloud
 - [What is Microsoft Defender for Cloud?](/azure/defender-for-cloud/defender-for-cloud-introduction)
+- [Defender for Cloud in the Defender portal](/azure/defender-for-cloud/defender-for-cloud-defender-portal)
 - [Microsoft Security Copilot in Defender for Cloud](/azure/defender-for-cloud/copilot-security-in-defender-for-cloud)
 - [AI threat protection in Defender for Cloud](/azure/defender-for-cloud/ai-threat-protection)
 
