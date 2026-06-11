@@ -14,6 +14,6 @@ By the end of this module, you'll be able to do the following things:
 
 - Your own Azure subscription. [Create one for free.](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - [Azure CLI](/cli/azure/install-azure-cli)
-- [JDK 17](https://www.oracle.com/java/technologies/downloads/)
+- [JDK 21](https://www.oracle.com/java/technologies/downloads/)
 - [Apache Tomcat 10.1.x](https://tomcat.apache.org/download-10.cgi)
 - [Maven 3.9.9](https://maven.apache.org/download.cgi?.=)

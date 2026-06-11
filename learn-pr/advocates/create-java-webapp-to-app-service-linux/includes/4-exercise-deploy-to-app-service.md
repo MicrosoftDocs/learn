@@ -11,7 +11,7 @@ To configure the Maven Plugin for Azure App Service, use the following steps:
 1. Begin the configuration by using the following command:
 
     ```bash
-    mvn com.microsoft.azure:azure-webapp-maven-plugin:2.10.0:config
+    mvn com.microsoft.azure:azure-webapp-maven-plugin:2.14.1:config
     ```
 
 1. After you use the command, some questions appear at the prompt, enabling you to configure various options. Configure the options and values according to the information in the following table:
@@ -22,13 +22,13 @@ To configure the Maven Plugin for Azure App Service, use the following steps:
     | Define value for OS            | Linux                           |
     | Define value for pricing tier  | B1                              |
     | Define value for Java version  | Java 21                         |
-    | Define value for runtime stack | TOMCAT 10.0                     |
+    | Define value for runtime stack | TOMCAT 10.1                     |
     | Confirm (Y/N)                  | Y                               |
 
     After you configure the options, the following output is typical:
 
     ```output
-    mvn com.microsoft.azure:azure-webapp-maven-plugin:2.10.0:config
+    mvn com.microsoft.azure:azure-webapp-maven-plugin:2.14.1:config
     [INFO] Scanning for projects...
     [INFO]
     [INFO] -------------------< com.example:simple-tomcat-app >--------------------
@@ -36,7 +36,7 @@ To configure the Maven Plugin for Azure App Service, use the following steps:
     [INFO]   from pom.xml
     [INFO] --------------------------------[ war ]---------------------------------
     [INFO]
-    [INFO] --- azure-webapp:2.10.0:config (default-cli) @ simple-tomcat-app ---
+    [INFO] --- azure-webapp:2.14.1:config (default-cli) @ simple-tomcat-app ---
     Downloading from central: https://repo.maven.apache.org/maven2/net/minidev/json-smart/maven-metadata.xml
     Downloading from ossrh: https://oss.sonatype.org/content/repositories/snapshots/net/minidev/json-smart/maven-metadata.xml
     Downloading from shibboleth-repo: https://build.shibboleth.net/nexus/content/repositories/releases/net/minidev/json-smart/maven-metadata.xml
@@ -48,7 +48,7 @@ To configure the Maven Plugin for Azure App Service, use the following steps:
     Enter your choice: 1
     Define value for appName [simple-tomcat-app]: tomcatmavendemo
     Define value for resourceGroup [tomcatmavendemo-rg]: MyResourceGroup
-    Define value for region [{azure.region}]: centralus
+    Define value for region [centralus]: centralus
     Define value for pricingTier [B1]:
     *  1: B1
        2: B2
@@ -95,7 +95,7 @@ To configure the Maven Plugin for Azure App Service, use the following steps:
     <plugin>
         <groupId>com.microsoft.azure</groupId>
         <artifactId>azure-webapp-maven-plugin</artifactId>
-        <version>2.10.0</version>
+        <version>2.14.1</version>
         <configuration>
             <resourceGroup>MyResourceGroup</resourceGroup>
             <appName>tomcatmavendemo</appName>
