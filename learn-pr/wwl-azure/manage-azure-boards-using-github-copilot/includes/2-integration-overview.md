@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=43c0b39f-ea86-4509-b802-22fa73668f7a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 <!-- DOCUMENTATION COMMENT -->
 This section introduces the integration between Azure Boards and GitHub Copilot, which allows teams to combine two powerful capabilities:
 
@@ -72,3 +83,5 @@ Copilot accelerates implementation, but it doesn't replace planning accountabili
 
 ## Summary
 This section covered the foundational elements of integrating Azure Boards with GitHub Copilot. You learned how this integration combines structured planning in Azure Boards with AI-assisted development in GitHub Copilot to streamline workflows. The core workflow model demonstrates the end-to-end process from defining work items through code review and traceability. Role alignment ensures accountability across product owners, team leads, developers, reviewers, and project managers. Expected outcomes highlight measurable improvements in cycle time, consistency, visibility, and handoffs. Finally, integration boundaries clarify that while Copilot accelerates implementation, human oversight, clear requirements, and testing discipline remain essential for maintaining quality and accountability.
+
+::: zone-end
