@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d6c06b35-e170-40fb-9c89-4c2389e924cf]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 There are many data visualization tools that data analysts can use to explore data and summarize insights visually; including chart support in productivity tools like Microsoft Excel and built-in data visualization widgets in notebooks used to explore data in services such as Microsoft Fabric and Azure Databricks. However, for enterprise-scale business analytics, an integrated solution that can support complex data modeling, interactive reporting, and secure sharing is often required.
 
 ## Microsoft Power BI
@@ -43,3 +54,5 @@ The following AI-powered features are available without a Copilot license:
 - **Smart narrative visual**: automatically generates a text summary that describes what the data in a report shows, and updates dynamically as data changes.
 
 These features make AI a natural part of the analyst's day-to-day workflow within Power BI and Microsoft Fabric.
+
+::: zone-end

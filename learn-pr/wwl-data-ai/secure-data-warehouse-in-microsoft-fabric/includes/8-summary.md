@@ -1,10 +1,14 @@
-In this module, you learned about Dynamic Data Masking (DDM), Row-Level Security (RLS), Column-level security (CLS), and granular SQL permissions in Fabric warehouses. 
+In this module, you learned how to apply data protection controls to a Microsoft Fabric warehouse.
 
-The main takeaways from this module include understanding how DDM, RLS, and CLS work and their use cases. DDM operates at the column level, offering full, email, custom text, and random masking types. RLS works by associating a security predicate function with a table. CLS can be implemented by identifying sensitive columns, defining access roles, assigning roles to users, and implementing access control. In addition, you learned about the principle of least privilege, which suggests that users and applications should only be given the permissions necessary to complete their tasks.
+- **Dynamic data masking** obscures column values in query results without changing the underlying data. You define masking rules at the column level and control who can see real values using the `UNMASK` permission.
+- **Row-level security** filters which rows a user can see at query time, using a filter predicate and a security policy. Predicates apply to all users — including admins — so always write an explicit exception for admin access.
+- **Column-level security** restricts access to specific columns using `GRANT` and `DENY`. Power BI Direct Lake queries fall back to Direct Query mode when column-level security is applied to a table.
+- **SQL granular permissions** control access at the object level — tables, views, functions, and stored procedures. Apply the principle of least privilege: grant only the permissions each user or application needs to do its job.
 
-For additional reading, you can refer to the following URLs:
+## Learn more
 
-- [Create a Warehouse in Microsoft Fabric](/fabric/data-warehouse/create-warehouse?azure-portal=true)
 - [Security for data warehousing in Microsoft Fabric](/fabric/data-warehouse/security?azure-portal=true)
-- [Share your warehouse and manage permissions](/fabric/data-warehouse/share-warehouse-manage-permissions?azure-portal=true)
- 
+- [Dynamic data masking in Fabric data warehousing](/fabric/data-warehouse/dynamic-data-masking?azure-portal=true)
+- [Row-level security in Fabric data warehousing](/fabric/data-warehouse/row-level-security?azure-portal=true)
+- [Column-level security in Fabric data warehousing](/fabric/data-warehouse/column-level-security?azure-portal=true)
+- [SQL granular permissions in Microsoft Fabric](/fabric/data-warehouse/sql-granular-permissions?azure-portal=true)

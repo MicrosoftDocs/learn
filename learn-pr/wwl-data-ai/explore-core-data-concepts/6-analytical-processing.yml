@@ -2,9 +2,10 @@
 uid: learn.wwl.explore-core-data-concepts.analytical-data-processing
 title: Explore analytical data processing
 metadata:
+  zone_pivot_groups: video-or-text
   title: Explore analytical data processing
   description: "Explore analytical data processing"
-  ms.date: 05/19/2026
+  ms.date: 06/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

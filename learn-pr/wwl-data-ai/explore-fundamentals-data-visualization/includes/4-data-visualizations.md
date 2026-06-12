@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0caa47a0-1772-4ec9-9f8f-dc45c2af27f6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 After you've created a model, you can use it to generate data visualizations that can be included in a report.
 
 There are many kinds of data visualization, some commonly used and some more specialized. Power BI includes an extensive set of built-in visualizations, which can be extended with custom and third-party visualizations. The rest of this unit discusses some common data visualizations but is by no means a complete list.
@@ -54,3 +65,5 @@ Power BI includes several AI-powered visualization features that help analysts e
 - **Decomposition tree**: enables interactive drill-down across multiple dimensions to identify what is contributing to a value.
 
 These features are how Power BI brings AI directly into the analyst's day-to-day workflow.
+
+::: zone-end

@@ -4,14 +4,10 @@ title: Explore data load strategies
 metadata:
   title: Explore data load strategies
   description: "Learn different strategies to load data into a data warehouse in Microsoft Fabric."
-  ms.date: 5/15/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 06/09/2026
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-  ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric 
-durationInMinutes: 6
+durationInMinutes: 8
 content: |
   [!include[](includes/2-explore-data-load-strategies.md)]

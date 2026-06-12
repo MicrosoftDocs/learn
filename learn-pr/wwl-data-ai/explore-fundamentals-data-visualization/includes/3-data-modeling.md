@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=453a230e-f868-412d-b24e-f2fc7eeba222]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Analytical models—also called **semantic models** in Microsoft Fabric and Power BI—structure data to support analysis. A model is built from related tables of data. It defines the numeric values you want to analyze or report, known as **measures**, and the entities you use to aggregate them by, known as **dimensions**.
 
 For example, a model might include numeric measures for sales (such as revenue or quantity) and dimensions for products, customers, and time. This lets you aggregate measures across one or more dimensions—for example, to identify total revenue by customer, or total items sold by product per month.
@@ -33,3 +44,5 @@ In Power BI, you define a semantic model from tables imported from one or more d
 ![Screenshot of the Model view in Power BI Desktop.](../media/power-bi-model.png)
 
 If your data is stored in **OneLake**—Microsoft Fabric's shared data lake—use **Direct Lake** storage mode to connect your semantic model directly to the lake files. This gives you in-memory query performance without a separate data import step.
+
+::: zone-end

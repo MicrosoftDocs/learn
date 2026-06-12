@@ -2,9 +2,10 @@
 uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.3a-one-lake
 title: Explore Microsoft OneLake in Fabric
 metadata:
+  zone_pivot_groups: video-or-text
   title: Explore Microsoft OneLake in Fabric
   description: "Explore Azure Data Lake Storage Gen2"
-  ms.date: 05/20/2026
+  ms.date: 06/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

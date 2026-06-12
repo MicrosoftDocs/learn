@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a2e40e24-f312-462f-9904-8caf4b2dfd19]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure SRE Agent is a cloud-native service built on **generative AI** (using large language models), combined with deep integration into the Azure platform. It isn't a simple chatbot layer on top of monitoring. Instead, it's an orchestrated agentic system that combines reasoning capabilities with tool access, telemetry ingestion, and governed execution paths. Microsoft hosts the underlying models, without needing customer-managed model deployments. There is no requirement for fine-tuning or being an expert in prompt engineering. The agent's intelligence is delivered as a managed service, abstracting the AI infrastructure so that operations teams can focus on reliability outcomes rather than model management.
 
 ## Architecture layers
@@ -53,3 +64,5 @@ Teams typically start with a **single "generalist" agent** that handles investig
 ## Interaction model
 
 Azure SRE Agent exposes a **chat-based interface** in the Azure portal. Engineers interact using natural language to investigate incidents, ask diagnostic questions, review historical patterns, and approve remediation actions. This conversational model lowers the barrier to complexity significantly. Engineers don't need to learn a new query language, master KQL syntax, or navigate unfamiliar diagnostic dashboards - both within Azure or in third-party solutions - to gain immediate value from the agent. The chat interface preserves conversation context across a session, enabling iterative investigation where each question builds on previous findings.
+
+::: zone-end

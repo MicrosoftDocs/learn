@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5f90552c-d6d5-46c2-87a0-d33124314014]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 **Azure SRE Agent** is an AI-powered reliability assistant designed to automate and augment Site Reliability Engineering practices for Azure workloads. It continuously observes telemetry from Azure Monitor, Log Analytics, and Application Insights, understands Azure resource topology and dependency chains, correlates incidents with recent deployments and configuration changes, and assists with—or executes—remediation actions under human governance.
 
 ## What is Azure SRE Agent
@@ -37,3 +48,5 @@ This principle of human oversight isn't a limitation. It is the feature that mak
 The agent proposes; the human decides. Every proposal includes the agent's reasoning, the evidence it gathered, and the specific action it recommends—giving the human approver full context to make an informed decision. Every approval and execution is logged, timestamped, and attributed for audit and compliance purposes.
 
 This design reflects a broader principle in agentic systems: **trust is earned incrementally**. Organizations start with read-only insight, progress to proposal-based workflows, and only extend autonomous execution authority to narrow, well-understood operational patterns where the risk profile justifies it.
+
+::: zone-end

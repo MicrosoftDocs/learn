@@ -2,52 +2,68 @@
 uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse.knowledge-check
 title: Module assessment
 metadata:
-  hidden_question_numbers: ["5143C2D0_10","5143C2D0_2","5143C2D0_38","5143C2D0_6","5143C2D0_75","5143C2D0_87","5143C2D0_91","5143C2D0_100","5143C2D0_104","5143C2D0_108","5143C2D0_112","5143C2D0_132"]
-  ai_generated_module_assessment: true
   title: Module assessment
-  description: "Knowledge check"
-  ms.date: 5/15/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  description: "Test your knowledge of loading data into a Microsoft Fabric warehouse."
+  ms.date: 06/09/2026
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-  ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric 
   module_assessment: true
-durationInMinutes: 8
+durationInMinutes: 5
 quiz:
   questions:
-  - content: What are the four data ingestion options available in Microsoft Fabric for loading data into a data warehouse?
+  - content: Which loading pattern preserves existing data and adds only new or changed rows to a warehouse table?
     choices:
-    - content: COPY (Transact-SQL) statement, data pipelines, dataflows, and cross-warehouse.
+    - content: Incremental load
       isCorrect: true
-      explanation: Correct. COPY (Transact-SQL) statement, data pipelines, dataflows, and cross-warehouse are the four data ingestion options available in Microsoft Fabric for loading data into a data warehouse.
-    - content: COPY (Transact-SQL) statement, data pipelines, dataflows, and Data Wrangler.
+      explanation: Correct. An incremental load updates tables with only the changes since the last load, preserving existing data.
+    - content: Full load
       isCorrect: false
-      explanation: Incorrect. Data Wrangler is a tool used to preprocess data.
-    - content: COPY (Transact-SQL) statement, data pipelines, dataflows, and cross-platform ingestion.
+      explanation: Incorrect. A full load truncates and replaces all data in the table.
+    - content: Staging load
       isCorrect: false
-      explanation: Incorrect. The fourth option is cross-warehouse, not cross-platform ingestion.
-  - content: What are the supported data sources and file formats for the COPY (Transact-SQL) statement in Warehouse?
+      explanation: Incorrect. Staging is a preparation step, not a loading pattern.
+  - content: What data sources does the COPY (Transact-SQL) statement support for loading files into a Fabric warehouse?
     choices:
-    - content: Azure Data Lake Storage (ADLS) Gen2 and Azure Blob Storage, with PARQUET and CSV file formats.
+    - content: Azure Data Lake Storage Gen2, Azure Blob Storage, and OneLake lakehouse folders.
       isCorrect: true
-      explanation: Correct. The COPY (Transact-SQL) statement currently supports the PARQUET and CSV file formats, and Azure Data Lake Storage (ADLS) Gen2 and Azure Blob Storage as data sources.
-    - content: Azure Data Lake Storage (ADLS) Gen1 and Azure Blob Storage, with PARQUET and CSV file formats.
+      explanation: Correct. The COPY statement supports files from ADLS Gen2, Azure Blob Storage, and OneLake lakehouse folders.
+    - content: Azure Data Lake Storage Gen2 and Azure Blob Storage only.
       isCorrect: false
-      explanation: Incorrect. The supported data source is Azure Data Lake Storage (ADLS) Gen2, not Gen1.
-    - content: Azure Data Lake Storage (ADLS) Gen2 and Azure Blob Storage, with ORC and CSV file formats.
+      explanation: Incorrect. The COPY statement also supports OneLake lakehouse folders as a data source.
+    - content: OneLake lakehouse folders and Azure Data Lake Storage Gen1.
       isCorrect: false
-      explanation: Incorrect. The supported file formats are PARQUET and CSV, not ORC and CSV.
-  - content: What is the recommended minimum file size when working with external data on files in Microsoft Fabric?
+      explanation: Incorrect. The COPY statement supports ADLS Gen2, not Gen1.
+  - content: In a type 2 slowly changing dimension, what happens when a dimension attribute changes?
     choices:
-    - content: At least 4 MB.
+    - content: A new row is added for the updated value, and the previous row is marked as expired.
       isCorrect: true
-      explanation: Correct. When working with external data on files, we recommend that files are at least 4 MB in size.
-    - content: At least 1 MB.
+      explanation: Correct. Type 2 SCD adds a new version of the record and marks the old version as inactive, preserving full history.
+    - content: The existing row is updated with the new value, and the old value is lost.
       isCorrect: false
-      explanation: Incorrect. The recommended minimum file size is 4 MB, not 1 MB.
-    - content: At least 10 MB.
+      explanation: Incorrect. That describes a type 1 SCD, which overwrites existing data without keeping history.
+    - content: The previous value is stored in a separate column on the same row.
       isCorrect: false
-      explanation: Incorrect. The recommended minimum file size is 4 MB, not 10 MB.
+      explanation: Incorrect. That describes a type 3 SCD, which tracks limited history in additional columns.
+  - content: What T-SQL pattern creates a new table from the results of a query across multiple warehouses in the same workspace?
+    choices:
+    - content: CREATE TABLE AS SELECT (CTAS)
+      isCorrect: true
+      explanation: Correct. CTAS creates a new table from a query result, and you can use three-part naming to query across warehouses in the same workspace.
+    - content: COPY INTO
+      isCorrect: false
+      explanation: Incorrect. The COPY statement loads data from external files, not from other warehouses.
+    - content: INSERT...SELECT
+      isCorrect: false
+      explanation: Incorrect. INSERT...SELECT inserts rows into an existing table, it does not create a new table.
+  - content: When you select Fabric Warehouse as a destination in Dataflow Gen2, which two update methods are available?
+    choices:
+    - content: Append and Replace
+      isCorrect: true
+      explanation: Correct. Append adds new rows to the existing table, and Replace replaces the entire table contents.
+    - content: Append and Upsert
+      isCorrect: false
+      explanation: Incorrect. Upsert is not an available update method for Fabric Warehouse destinations in Dataflow Gen2.
+    - content: Merge and Replace
+      isCorrect: false
+      explanation: Incorrect. The two methods are Append and Replace, not Merge and Replace.

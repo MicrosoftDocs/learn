@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1897e44b-ee16-4583-8b17-1c4321e7076b]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Site Reliability Engineering (SRE) is a discipline that applies software engineering principles to infrastructure and operations problems. Originally pioneered at Google in the early 2000s and formalized in the 2016 book *[Site Reliability Engineering: How Google Runs Production Systems](https://sre.google/sre-book/table-of-contents/)*, SRE treats operations as a software problem. Meaning, using automation, measurement, and engineering rigor to build and run large-scale, reliable systems. Operations are usually done by a traditional IT operations team. Following SRE guidelines, this task should be done by software engineers. Starting from designing and building the systems that manage infrastructure, they should also respond to incidents, as well as continuously improve reliability.
 
 The SRE model emerged from a simple observation: as systems grow more complex, the traditional approach of adding more operations staff to handle more incidents doesn't scale. Instead, SRE applies the same engineering mindset used to build software. A combination of version control, testing, and automation. Followed by continuous improvement and continuously repeating and revising the process. The main goal is to keep that software running reliably in a production environment.
@@ -42,3 +50,8 @@ In this module, you'll:
 - Explain how Azure environments amplify reliability challenges.
 - Understand what Azure SRE Agent is and how it supports incident workflows.
 - Review architecture, deployment requirements, use cases, governance, and next steps for adoption.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

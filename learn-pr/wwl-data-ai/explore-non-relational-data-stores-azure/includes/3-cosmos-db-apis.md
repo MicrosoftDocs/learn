@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7ab13ba5-6ba7-4504-9f76-2f2fe91c70b7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In the previous unit, you explored what Azure Cosmos DB is and how it organizes data. One of its most practical characteristics is that it doesn't lock you into a single query language or data model. Instead, Cosmos DB exposes multiple wire-protocol-compatible APIs so developers use familiar tools, libraries, and syntax to work with their data — even when migrating an existing application.
 
 ## Why Cosmos DB supports multiple APIs
@@ -126,3 +137,5 @@ g.V().hasLabel('employee').order().by('id')
 ```
 
 With five APIs to choose from, you can match Cosmos DB's interface to your data model, your team's existing skills, and your application code. In the next unit, you'll get hands-on experience with Cosmos DB directly.
+
+::: zone-end

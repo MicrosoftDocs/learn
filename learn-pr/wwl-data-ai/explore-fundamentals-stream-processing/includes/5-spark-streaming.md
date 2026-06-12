@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f1e9d97e-b273-4c05-98d9-40d87b5abb44]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Apache Spark is a powerful data processing engine designed to handle very large amounts of data quickly. Rather than processing data on a single computer, Spark splits the work across many machines (a *cluster*) so everything runs in parallel. You can use Spark on Microsoft Azure in the following services:
 
 - Microsoft Fabric
@@ -39,3 +50,5 @@ Delta Lake combined with Spark Structured Streaming is a good solution when you 
 
 > [!NOTE]
 > For more information about Delta Lake, see [Lakehouse and Delta Lake tables.](/fabric/data-engineering/lakehouse-and-delta-tables)
+
+::: zone-end

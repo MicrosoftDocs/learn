@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e106353f-c91a-4e30-8e96-222f32299cb6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 There are many technologies that you can use to implement a stream processing solution, but while specific implementation details may vary, there are common elements to most streaming architectures.
 
 ## A general architecture for stream processing
@@ -47,3 +58,5 @@ The output from stream processing is often sent to the following services:
 - **Azure SQL Database**, **Azure Databricks**, or **Microsoft Fabric**: Used to persist the processed results in a table for querying and analysis.
 
 - **Microsoft Power BI**: Used to generate real time data visualizations in reports and dashboards.
+
+::: zone-end

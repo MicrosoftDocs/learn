@@ -1,4 +1,13 @@
-> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2331685]
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ef7b90f3-5e03-478d-9f43-7c11d4f18470]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Data is a collection of facts such as numbers, descriptions, and observations used to record information. Data structures in which this data is organized often represent *entities* that are important to an organization (such as customers, products, sales orders, and so on). Each entity typically has one or more *attributes*, or characteristics (for example, a customer might have a name, an address, a phone number, and so on).
 
@@ -89,3 +98,5 @@ There are two broad categories of data store in common use:
 - Databases
 
 We'll explore both of these types of data store in subsequent topics.
+
+::: zone-end

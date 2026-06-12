@@ -81,9 +81,9 @@ In this exercise, you'll use formulas to create derived columns that extend the 
 
 1. On the **Home** tab, at the right side of the menu area, use the *Switch Ribbons* (**v**) button to expand the ribbon and show the full **Classic Ribbon** toolbar:
 
-    :::image type="content" source="../media/ribbon.png" alt-text="Screenshot of the Insert Sheet Columns menu option with Switch Ribbon selected." lightbox="../media/ribbon.png":::
+    :::image type="content" source="../media/ribbon.png" alt-text="Screenshot of the Insert Columns to the Left menu option with Switch Ribbon selected." lightbox="../media/ribbon.png":::
 
-2. Select the **B** column header to select the entire **B** column. Then on the **Home** tab of the ribbon, in the **Cells** section, in the **Insert** drop-down menu, select **Insert Sheet Columns** (depending on the size of your browser window, you may need to expand a **Cells** menu to see the **Insert** menu.
+2. Select the **B** column header to select the entire **B** column. Then on the **Home** tab of the ribbon, in the **Cells** section, in the **Insert** drop-down menu, select **Insert Columns to the Left** (depending on the size of your browser window, you may need to expand a **Cells** menu to see the **Insert** menu.
 
     :::image type="content" source="../media/insert-sheet-columns.png" alt-text="Screenshot of the Insert Sheet Columns menu option with Insert selected." lightbox="../media/insert-sheet-columns.png":::
 

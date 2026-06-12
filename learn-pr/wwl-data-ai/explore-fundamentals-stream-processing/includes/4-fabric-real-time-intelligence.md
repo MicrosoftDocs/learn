@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=01fb0dc3-765c-48e9-baa3-52246a3bde00]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Fabric Real-Time Intelligence is a set of tools built into Microsoft Fabric for ingesting, processing, and analyzing streaming data. It covers the full pipeline from data arrival to visualization and automated action: you connect to event sources, store and query the incoming data, build live dashboards, and set up alerts that trigger when defined conditions are met—all within the same Fabric workspace.
 
 ![Diagram of the architecture of Real-Time Intelligence in Microsoft Fabric.](../media/real-time-intelligence.png)
@@ -14,3 +25,5 @@ Real-Time dashboards simplify data comprehension, accessible to all via visual t
 
 > [!NOTE]
 > To learn more about the capabilities of Microsoft Fabric Real-Time Intelligence, see the [Real-Time Intelligence documentation in Microsoft Fabric](/fabric/real-time-intelligence/).
+
+::: zone-end

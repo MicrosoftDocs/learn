@@ -3,11 +3,11 @@ uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.configure-sql-granular-
 title: Configure SQL granular permissions using T-SQL
 metadata:
   title: Configure SQL granular permissions using T-SQL
-  description: "Learn how to configure granular access to database objects in a data warehouse in Microsoft Fabric."
-  ms.date: 09/3/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  description: "Learn how to configure SQL granular permissions to control access to objects in a Microsoft Fabric data warehouse."
+  ms.date: 06/11/2026
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/5-configure-sql-granular-permissions.md)]

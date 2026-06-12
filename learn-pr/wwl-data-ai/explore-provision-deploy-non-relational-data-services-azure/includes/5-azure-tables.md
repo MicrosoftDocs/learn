@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2ea69427-f3af-49f0-8fad-784580e67d99]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 **Azure Table Storage** is a **NoSQL** storage solution that makes use of tables containing **key/value** data items. Each item is represented by a row that contains columns for the data fields that need to be stored.
 
 > [!NOTE]
@@ -19,3 +30,5 @@ To help ensure fast access, Azure Table Storage splits a table into partitions. 
 - When you search for data, you can include the partition key in the search criteria. This helps to narrow down the volume of data to be examined, and improves performance by reducing the amount of I/O (input and output operations, or *reads* and *writes*) needed to locate the data.
 
 The key in an Azure Table Storage table comprises two elements; the **partition key** that identifies the partition containing the row, and a **row key** that's unique to each row in the same partition. Items in the same partition are stored in row key order. If an application adds a new row to a table, Azure ensures that the row is placed in the correct position in the table. This scheme enables an application to quickly perform **point** queries that identify a single row, and **range** queries that fetch a contiguous block of rows in a partition.
+
+::: zone-end
