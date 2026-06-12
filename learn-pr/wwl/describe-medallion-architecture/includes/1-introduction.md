@@ -1,7 +1,5 @@
-In this data-driven era, the need to harness vast and diverse data sources is critical for business success. The Fabric lakehouse, blending data lakes and data warehouses, offers an ideal platform to manage and analyze this data. The medallion architecture has become a standard across the industry for lakehouse-based analytics.
+Imagine your organization collects raw sales transactions, clickstream events, and product catalog updates. All of this data arrives in different formats at different rates. Without a plan for organizing this data, analysts spend more time cleaning than analyzing, and reports that rely on inconsistent data erode confidence in the numbers.
 
-The medallion architecture brings structure and efficiency to your lakehouse environment. This module guides you through its bronze, silver, and gold layers, ensuring you know how to organize, refine, and curate data effectively.
+The medallion architecture solves this problem. By organizing your lakehouse into three progressive layers (bronze, silver, and gold), you create a clear, reliable path from raw ingestion to analytics-ready data. It's an industry-standard pattern that maps naturally onto the Delta Lake-based Fabric lakehouse.
 
-Whether you're a seasoned data engineer or an analytics newcomer, this module caters to all levels of experience with practical examples and a hands-on exercise. You should be familiar with the Fabric data lakehouse and have a basic understanding of SQL and Power BI before you begin.
-
-In this module, you'll explore and build a medallion architecture for Fabric lakehouses, query and report on data in your Fabric lakehouse, and describe best practices for security and governance of your Fabric lakehouse.
+In this module, you explore the three medallion layers and how to implement the architecture in a Fabric lakehouse. You also learn how to query and report on gold layer data, apply security, and govern your lakehouse.

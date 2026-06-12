@@ -3,8 +3,8 @@ uid: learn.wwl.describe-medallion-architecture.describe-medallion-architecture
 title: Describe medallion architecture
 metadata:
   title: Describe medallion architecture
-  description: "Describe medallion architecture"
-  ms.date: 05/23/2025
+  description: "Learn what the medallion architecture pattern is, how the bronze, silver, and gold layers differ, and how to adapt the pattern to your needs."
+  ms.date: 06/10/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: unit

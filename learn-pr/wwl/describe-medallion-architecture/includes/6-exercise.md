@@ -1,7 +1,7 @@
-Now it's your turn to create a lakehouse in Fabric and move data through the medallion architecture. You'll also learn how to query and report on data in your Fabric lakehouse.
+Now it's your turn to create a lakehouse in Fabric, move data through the bronze, silver, and gold layers, and explore the results using the SQL analytics endpoint.
 
 > [!NOTE]
-> You need a Microsoft Fabric trial license with the Fabric preview enabled in your tenant. See [**Getting started with Fabric**](/fabric/get-started/fabric-trial) to enable your Fabric trial license.
+> To complete this exercise, you need a Microsoft Fabric tenant. See [**Getting started with Fabric**](/fabric/get-started/fabric-trial) to find out how to enable a Fabric trial license.
 
 Launch the exercise and follow the instructions.
 
