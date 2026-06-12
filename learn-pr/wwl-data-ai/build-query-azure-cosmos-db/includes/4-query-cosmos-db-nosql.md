@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6858f1d2-8f91-46c0-9e43-a25ff9f6bba2]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB for NoSQL supports a SQL-like query language optimized for JSON documents. While point reads provide the most efficient access to individual items, queries enable flexible data retrieval based on filter criteria, projections, and sorting. AI applications use queries to fetch batches of training data, retrieve items matching specific attributes, and aggregate statistics from document collections. Understanding query syntax and optimization techniques helps you balance retrieval flexibility with cost efficiency.
 
 ## Write basic SELECT queries
@@ -273,6 +284,8 @@ Query cost optimization strategies include:
 - **Use partition keys:** Route queries to single partitions when possible
 - **Limit results:** Use `TOP` to restrict result count when you don't need all matches
 - **Optimize indexes:** Ensure your indexing policy supports your query patterns
+
+::: zone-end
 
 ## Additional resources
 
