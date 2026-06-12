@@ -15,4 +15,4 @@ You can learn more by reviewing the following.
 
 - [What is Microsoft Defender for Endpoint](/defender-endpoint/microsoft-defender-endpoint)
 
-- [Microsoft Tech Community Security Webinars](https://techcommunity.microsoft.com/t5/microsoft-security-and/security-community-webinars/ba-p/927888?azure-portal=true)
+- [Microsoft Tech Community Security Webinars](https://techcommunity.microsoft.com/t5/microsoft-security-and/security-community-webinars/ba-p/927888)
