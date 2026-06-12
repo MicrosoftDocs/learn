@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=59b2d8f3-0cab-4997-9c95-9882af170e04]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this unit, you learn how to observe application behavior inside an Azure Kubernetes Service (AKS) cluster. You focus on logs and metrics that reveal how AI workloads behave in production. You see how to use both the Azure portal and `kubectl` for inspections, and how these signals relate to Azure monitoring tools.
 
 AI applications such as model inference APIs and background processors depend on predictable performance. Latency spikes, increased error rates, or CPU saturation can indicate model issues or configuration problems. Monitoring logs and metrics helps you distinguish between normal variation and emerging incidents. You can then decide when to scale, investigate, or roll back changes.
@@ -123,3 +134,5 @@ For example, you might notice high CPU usage on the portal's Monitoring tab, dri
 - **Include correlation data in logs:** Add request identifiers, model names, and version information to log entries so you can trace problematic inference calls.
 - **Prefer structured logging:** Emit logs in structured formats that are easier to query and filter in both the portal and command-line tools.
 - **Measure against service objectives:** Define latency and error budget targets for your AI services and select metrics that indicate when you approach those thresholds.
+
+::: zone-end

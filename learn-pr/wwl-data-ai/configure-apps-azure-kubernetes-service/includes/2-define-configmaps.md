@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=050dc6ab-ae1a-4926-bb02-2248ad8d4f3a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI inference services on Azure often require different settings across environments. You want to change these settings without rebuilding containers. ConfigMaps store non-sensitive configuration, such as feature flags and service endpoints. They keep configuration out of images and source code. This approach lets you make fast, controlled changes to settings. You can inject ConfigMap values into Pods as environment variables or as mounted files. Choose environment variables when your application reads from the process environment. Choose mounted files when your application expects configuration files on disk.
 
 > [!NOTE]
@@ -113,3 +124,5 @@ kubectl describe deployment web-api
 # Check if Pod received configuration as environment variables
 kubectl exec <pod-name> -- printenv | grep FEATURE
 ```
+
+::: zone-end

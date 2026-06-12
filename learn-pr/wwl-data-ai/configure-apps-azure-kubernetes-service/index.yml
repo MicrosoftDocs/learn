@@ -3,7 +3,7 @@ uid: learn.wwl.configure-apps-azure-kubernetes-service
 metadata:
   title: Configure Applications on Azure Kubernetes Service
   description: Externalize configuration, secure sensitive settings, and attach persistent storage for applications running on Azure Kubernetes Service.
-  ms.date: 12/14/2025
+  ms.date: 06/11/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based
