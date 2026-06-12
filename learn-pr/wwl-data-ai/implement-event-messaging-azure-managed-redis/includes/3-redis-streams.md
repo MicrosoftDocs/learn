@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=019b99b0-e740-4852-9e44-177c362e7412]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Both Azure Cache for Redis and Azure Managed Redis support Redis Streams, a reliable way to implement task queues and event processing in your AI backend services. When you're building AI applications that need to queue inference requests, coordinate multi-step processing pipelines, or handle long-running AI operations, Streams give you the durability and coordination capabilities that pub/sub doesn't provide.
 
 Imagine you're building an API that processes documents through multiple AI models. Each step takes several seconds, and you can't block the API or lose documents if a service crashes. Redis Streams solves this: your upload handler adds the document to a Stream and returns immediately. Each AI service reads from the Stream at its own pace. If a service crashes while processing a document, that task stays in the pending list and gets automatically reassigned when the service restarts.
@@ -48,8 +59,8 @@ except redis.ResponseError:
 
 # In your worker's processing loop (runs on each instance)
 while True:
-    tasks = redis.xreadgroup('workers', 'worker-instance-1', 
-                             {'ai:inference:requests': '>'}, 
+    tasks = redis.xreadgroup('workers', 'worker-instance-1',
+                             {'ai:inference:requests': '>'},
                              count=10, block=5000)
     for task_id, task_data in tasks:
         process_ai_task(task_data)
@@ -86,7 +97,7 @@ Redis Streams are ideal for specific development scenarios where reliability and
 
 ## Code examples for Streams
 
-This section provides practical code examples showing how to implement common Stream operations in your AI applications. 
+This section provides practical code examples showing how to implement common Stream operations in your AI applications.
 
 ### Adding AI tasks to a queue
 
@@ -116,7 +127,7 @@ def process_ai_tasks():
         redis.xgroup_create('ai:inference:queue', 'workers', id='0', mkstream=True)
     except:
         pass  # Already exists
-    
+
     # Main processing loop
     while True:
         # Get up to 5 tasks, wait 5 seconds if queue empty
@@ -127,14 +138,14 @@ def process_ai_tasks():
             count=5,
             block=5000
         )
-        
+
         for stream, tasks in messages:
             for task_id, task_data in tasks:
                 try:
                     # Do your AI processing
                     result = run_inference(task_data['prompt'], task_data['model'])
                     save_result(task_id, result)
-                    
+
                     # Mark task complete
                     redis.xack('ai:inference:queue', 'workers', task_id)
                 except Exception as e:
@@ -150,14 +161,14 @@ Use `XPENDING` to find tasks that have been processing too long and `XCLAIM` to 
 # Check for tasks that have been pending too long (stuck/crashed)
 def retry_stuck_tasks():
     pending = redis.xpending('ai:inference:queue', 'workers', '-', '+', 10)
-    
+
     for task in pending:
         task_id = task['message_id']
         idle_time = task['time_since_delivered']
-        
+
         # If task pending more than 5 minutes, reassign it
         if idle_time > 300000:  # milliseconds
-            redis.xclaim('ai:inference:queue', 'workers', 
+            redis.xclaim('ai:inference:queue', 'workers',
                         f'worker-{os.getpid()}', 0, [task_id])
 ```
 
@@ -170,7 +181,7 @@ Use `XINFO` commands to get metrics about your Stream queues, including total ta
 def get_queue_stats():
     info = redis_client.xinfo_stream('ai:documents:queue')
     groups = redis_client.xinfo_groups('ai:documents:queue')
-    
+
     return {
         'total_tasks': info['length'],
         'pending_tasks': groups[0]['pending'],
@@ -187,7 +198,7 @@ While Streams provide powerful reliability features, they come with trade-offs y
     ```python
     # Trim to most recent 10,000 tasks when adding new ones
     redis.xadd('ai:inference:queue', task_data, maxlen=10000, approximate=True)
-    
+
     # Or trim periodically in your worker after acknowledging tasks
     if task_count % 100 == 0:  # Every 100 tasks
         redis_client.xtrim('ai:documents:queue', maxlen=10000, approximate=True)
@@ -198,6 +209,8 @@ While Streams provide powerful reliability features, they come with trade-offs y
 - **More code complexity:** You need to handle consumer groups, acknowledgments, and pending task checks. This is extra code compared to simple pub/sub subscribe callbacks, but you get reliability in return.
 
 - **Tasks don't auto-expire:** Completed tasks stay in the Stream until trimmed. Plan your cleanup strategy upfront to avoid memory growth.
+
+::: zone-end
 
 ## Additional resources
 
