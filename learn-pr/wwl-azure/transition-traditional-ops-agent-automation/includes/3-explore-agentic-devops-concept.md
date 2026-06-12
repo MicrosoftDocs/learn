@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e4609956-4f60-43ae-bfba-b1f71fd00916]
+
+> [!TIP]
+> The video for this section is also available in text-based form below.
+
+::: zone-end
+
+::: zone pivot="text"
+
 Agentic DevOps is the practice of using AI agents to automate and orchestrate operational workflows that traditionally required manual coordination. Rather than using AI as a reactive tool that responds to individual prompts, you define a system of specialized agents. These agents proactively execute multi-step pipelines, maintain context across stages, and produce versioned artifacts.
 
 In an agentic DevOps model, the AI isn't just a coding assistant. It's an active participant in the workflow. Each agent has a defined role, access to specific tools, and domain knowledge that shapes its outputs. A coordinating agent manages the sequence, delegates tasks, and ensures that outputs from one stage are available to the next.
@@ -72,3 +83,5 @@ The multi-agent pattern applies to many operational workflows beyond environment
 In each scenario, the pattern is the same: specialized agents handle their domain, a conductor coordinates the sequence, and artifacts provide the shared state between steps.
 
 The next unit examines the specific building blocks you use to create these workflows: agent definitions, skills, instructions, and prompts.
+
+::: zone-end

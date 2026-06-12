@@ -3,7 +3,7 @@ uid: learn.wwl.transition-traditional-ops-agent-automation
 metadata:
   title: "Transition from Traditional Ops to Agentic DevOps Workflows"
   description: "Learn how to evolve traditional cloud administration and DevOps tasks into agentic AI workflows using agent instructions, skills, and multi-agent orchestration."
-  ms.date: 04/20/2026
+  ms.date: 6/11/2026
   author: petender
   ms.author: petender
   ms.topic: module

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=58774614-bee7-4586-b7f0-b2142c9b3eca]
+
+> [!TIP]
+> The video for this section is also available in text-based form below.
+
+::: zone-end
+
+::: zone pivot="text"
+
 An agentic workflow is built from four components that work together: **agents**, **skills**, **instructions**, and **prompts**. Each serves a different purpose, and understanding how they relate is essential to designing effective multi-agent systems.
 
 A user prompt flows into an agent defined in an `.agent.md` file. The agent defines its identity, the tools it can use, and which subagents it can delegate to. From there, the agent draws on **two sources** of supporting content. The first is `skills`: domain knowledge documents that the agent reads explicitly at runtime. The second is `instructions`: coding and format standards that are automatically injected based on the type of file the agent is working with.
@@ -181,3 +192,5 @@ When a user submits a prompt, the system resolves all four components:
 6. If the agent has subagents listed, it can delegate via subagent calls.
 
 This resolution chain means that the combination of the agent's definition, defines its behavior. The skills it reads, the instructions that apply to the files it touches, and the user's prompt. Changing any of these components changes the agent's output.
+
+::: zone-end

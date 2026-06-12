@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1353110f-7863-42a7-a484-97ac256387b3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Event-driven scaling enables your container apps to respond to external signals beyond HTTP traffic. Azure Container Apps integrates with KEDA (Kubernetes Event-driven Autoscaling) to provide scaling based on message queues, event streams, and other Azure services. This capability is essential for applications that process asynchronous workloads where scaling based on request volume alone doesn't reflect actual work being performed.
 
 ## Understand KEDA integration
@@ -111,6 +122,8 @@ For production workloads, prefer managed identity authentication when the scaler
 - **Scale to zero for event-driven workloads:** Message queue processors are ideal candidates for scale-to-zero configurations since new messages trigger scale-up automatically. This approach minimizes costs during idle periods while ensuring processing capacity scales with demand.
 
 - **Monitor queue depth alongside replica count:** Use Azure Monitor to correlate queue depth with replica scaling. If queue depth grows faster than replicas scale, consider lowering your message threshold. If replicas frequently sit idle, raise the threshold to improve efficiency.
+
+::: zone-end
 
 ## Additional resources
 
