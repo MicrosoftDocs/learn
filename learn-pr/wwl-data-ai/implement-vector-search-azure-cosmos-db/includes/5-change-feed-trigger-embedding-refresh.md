@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d6d54d16-e6a6-47ec-983c-466551af4360]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI applications need to keep embeddings synchronized with current content—stale embeddings return irrelevant search results when the underlying documents change. The Azure Cosmos DB change feed provides a reliable mechanism to detect document changes and trigger embedding regeneration without polling or manual synchronization, enabling reactive architectures that keep your vector search results accurate as content evolves.
 
 ## Understand the change feed
@@ -267,6 +278,8 @@ When change volumes exceed what a single processor instance can handle, deploy m
 For Azure Functions, scale is managed automatically—the Functions runtime spawns additional instances based on the change backlog. You can monitor the `ChangeFeedProcessorHostLag` metric to ensure processing keeps pace with changes.
 
 For applications using the change feed processor library directly, deploy multiple instances of your application. Each instance registers with the same lease container, and the processor distributes partitions automatically. You can add instances when lag increases and remove instances when processing catches up.
+
+::: zone-end
 
 ## Additional resources
 
