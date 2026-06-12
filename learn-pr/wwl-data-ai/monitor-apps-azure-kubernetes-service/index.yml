@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-apps-azure-kubernetes-service
 metadata:
   title: Monitor and Troubleshoot Applications on Azure Kubernetes Service
   description: Monitor application health, debug issues, and verify connectivity for AI workloads running on Azure Kubernetes Service (AKS).
-  ms.date: 12/31/2025
+  ms.date: 06/11/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

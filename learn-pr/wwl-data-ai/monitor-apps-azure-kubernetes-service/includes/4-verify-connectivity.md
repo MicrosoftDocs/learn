@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8f670dc8-4353-4a53-ab28-d2257f354d53]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this unit, you verify that Kubernetes Services and ingress routes direct traffic correctly to your AI workloads on Azure Kubernetes Service (AKS). You can use the Azure portal for visual inspection of Services and endpoints, or use `kubectl` and HTTP clients for detailed connectivity testing.
 
 AI applications often expose HTTP endpoints for inference or data processing. Clients rely on stable URLs or hostnames. Misconfigured Services or ingress rules can create intermittent failures that are difficult to diagnose. By systematically checking connectivity paths using both the Azure portal and command-line tools, you can confirm that users and downstream services can reach your AI endpoints.
@@ -98,3 +109,5 @@ From the output, you locate the external address and send test requests from a c
 - **Test before exposing:** Use port-forwarding and internal testing to validate endpoints before publishing them to users.
 - **Combine portal and kubectl:** Use the portal for visual overview of Service configuration and kubectl for detailed endpoint inspection and port-forwarding.
 - **Combine checks with monitoring:** Pair connectivity tests with logs and metrics so you can see the impact of configuration changes on AI workloads.
+
+::: zone-end
