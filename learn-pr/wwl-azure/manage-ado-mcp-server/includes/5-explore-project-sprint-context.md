@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1a658b25-fbfd-41cb-b92d-8ed6ee67da67]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Context-first operation is one of the most important habits in MCP-assisted DevOps work. Before you create, update, or close artifacts, you should establish what sprint is active, what work is already in progress, and what the team’s current priorities are. This step reduces duplicate work, prevents accidental scope drift, and improves the quality of every follow-up action.
 
 ## Why context discovery is a key objective
@@ -90,8 +101,4 @@ Some examples of context-right prompts:
 
 Keeping a small library like this helps DevOps teams begin every planning discussion with shared evidence.
 
-
-
-
-
-
+::: zone-end

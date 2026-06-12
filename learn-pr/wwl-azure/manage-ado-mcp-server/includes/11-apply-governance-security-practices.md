@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=792f0643-113a-4827-9c23-09a4fa0395c7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Fast workflows are valuable only when they are safe and predictable. This unit focuses on governance and security patterns that let teams scale Azure DevOps MCP usage without losing control over change quality, authorization, and auditability.
 
 ## Security and governance unit objective
@@ -73,3 +84,5 @@ For each category, define approval expectations and examples. For instance, read
 Another effective practice is periodic payload sampling. Review a small set of executed tool payloads to ensure prompt patterns remain scoped and predictable. This is not about policing users; it is about validating that training and conventions are producing safe operational behavior.
 
 Finally, include governance in onboarding. New users should learn not only how to run prompts, but also how to decide when to pause, refine, and escalate. This mindset is the difference between short-term novelty and long-term operational reliability.
+
+::: zone-end
