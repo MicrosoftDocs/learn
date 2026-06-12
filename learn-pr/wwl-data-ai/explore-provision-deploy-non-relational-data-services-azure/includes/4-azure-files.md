@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=052824a3-12a8-4368-ae9f-b7aea138f88a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Many on-premises systems comprising a network of in-house computers make use of file shares. A file share enables you to store a file on one computer, and grant access to that file to users and applications running on other computers. This strategy can work well for computers in the same local area network, but doesn't scale well as the number of users increases, or if users are located at different sites.
 
 Azure Files is essentially a way to create cloud-based network shares, such as you typically find in on-premises organizations to make documents and other files available to multiple users. By hosting file shares in Azure, organizations can eliminate hardware costs and maintenance overhead, and benefit from high availability and scalable cloud storage for files.
@@ -17,3 +28,5 @@ Azure Files supports two common network file sharing protocols:
 - **Server Message Block (SMB)** file sharing is commonly used across multiple operating systems (Windows, Linux, macOS).
 
 - **Network File System (NFS)** shares are used by Linux (kernel 4.3 or later). NFS Azure file shares are not supported on Windows or macOS. To create an NFS share, you must use an SSD-tier storage account and create and configure a virtual network through which access to the share can be controlled.
+
+::: zone-end

@@ -1,4 +1,13 @@
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=60b593ba-2b42-4b0a-ad12-e09303d0b33b]
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f34bc401-d743-4f7f-ad38-0f952cd2db10]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 A database is used to define a central system in which data can be stored and queried. In a simplistic sense, the file system on which files are stored is a kind of database; but when we use the term in a professional data context, we usually mean a dedicated system for managing data records rather than files.
 
@@ -34,3 +43,5 @@ There are four common types of nonrelational database commonly in use.
 
   > [!div class="mx-imgBorder"]
   > ![Diagram showing a graph database.](../media/graph.png)
+
+::: zone-end

@@ -2,9 +2,10 @@
 uid: learn.wwl.explore-core-data-concepts.identify-data-formats
 title: Identify data formats
 metadata:
+  zone_pivot_groups: video-or-text
   title: Identify data formats
   description: "Identify data formats"
-  ms.date: 05/19/2026
+  ms.date: 06/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
