@@ -4,10 +4,10 @@ title: Describe types of identities
 metadata:
   title: Describe types of identities
   description: "Describe types of identities"
-  ms.date: 03/23/2026
+  ms.date: 06/12/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 11
+durationInMinutes: 20
 content: |
   [!include[](includes/3-describe-identity-types.md)]
