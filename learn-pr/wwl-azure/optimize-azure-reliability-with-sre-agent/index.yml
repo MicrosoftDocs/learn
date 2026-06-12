@@ -3,7 +3,7 @@ uid: learn.wwl.optimize-azure-reliability-using-sre-agent
 metadata:
   title: Optimize Azure reliability by using Azure SRE Agent
   description: "Learn how to apply SRE (Site Reliability Engineering) principles and use Azure SRE Agent to improve incident response, reduce operational toil, and govern remediation workflows."
-  ms.date: 03/08/2026
+  ms.date: 6/9/2026
   author: petender
   ms.author: petender
   ms.topic: module

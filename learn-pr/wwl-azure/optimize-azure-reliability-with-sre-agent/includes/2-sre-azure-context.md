@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=522931e2-f7ba-49b2-9cef-b09051e3776b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure - like any other public cloud environments - introduce a scale and dynamic that traditional operations practices were never designed for. While the SRE principles described in the previous section are platform-agnostic, their application in a hyperscale cloud like Azure identifies specific operational challenges that demand more sophisticated tooling.
 
 - **Resource sprawl**: Organizations routinely manage hundreds or thousands of Azure resources spread across multiple subscriptions, Resource Groups, and regions. A single application might depend on an App Service, a Key Vault, an Azure SQL Database, a Storage Account, an Application Gateway, and several managed identities. Each of these resources comes with their own configuration settings, access policies, and failure modes. Not all resource types offer the same SLA (Service Level Agreements). Not all regions offer Availability Zones. Maintaining awareness of this topology at scale surpasses what manual processes can do.
@@ -20,3 +31,5 @@ An agentic system in the **InfraOps** context is characterized by four capabilit
 2. **Reasoning & Planning (Research)** – Break problems into investigative steps, compare options, and estimate risk. This is the generative AI core: the agent doesn't simply match patterns. But it constructs hypotheses, gathers evidence, and forms multi-step investigation plans that adapt as new information emerges.
 3. **Tool Use (Action)** – Execute through controlled interfaces with bounded scope. Never unbounded. Always grounded. Actions might include querying Log Analytics with KQL, examining deployment history via Azure REST APIs, checking resource configuration state, or executing an approved remediation (slot swap, restart, scale operation).
 4. **Learning (Feedback)** – Capture outcomes from actions and refine future recommendations. When a remediation succeeds, that pattern strengthens. When it fails or produces unexpected results, the feedback informs more cautious future behavior. Over time, the agent's operational knowledge compounds.
+
+::: zone-end

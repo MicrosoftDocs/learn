@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a2707261-62bf-4ae4-ae63-8103f09e633c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 This section describes five practical scenarios where Azure SRE Agent delivers measurable operational value. Each use case maps to a real-world challenge that SRE and operations teams face daily, illustrating how agentic operations translate from architecture diagrams into tangible outcomes.
 
 ## Use case 1: Automated incident response
@@ -55,3 +66,5 @@ This scenario demonstrates that **agentic operations delivers immediate ROI** on
 **Challenge:** After an incident is resolved, the follow-up often falls short. Engineers intend to write postmortem documentation, update work items, and share findings with the team. Unfortunately, the pressure of the next alert pushes this work off the priority list. Operational knowledge is getting lost when it isn't captured systematically.
 
 **How Azure SRE Agent helps:** When an incident is resolved - whether through agent-assisted remediation or manual intervention - the agent can automatically generate structured post-incident artifacts such as **comprehensive incident summary** information, containing all details from detection, mitigation to resolution. Thanks to source control connectors, this could be done in the form of a **GitHub Issue** or **Azure DevOps Work Item** created directly in the connected repository. The work item includes the incident summary, diagnostic evidence, remediation steps, and recommendations for preventing recurrence.
+
+::: zone-end
