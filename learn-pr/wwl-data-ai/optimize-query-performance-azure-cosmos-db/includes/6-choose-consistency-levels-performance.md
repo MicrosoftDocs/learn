@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=848e46b0-4263-4c35-b412-87f7467ec96b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB's consistency levels control the trade-off between data freshness, latency, throughput, and availability. AI applications have diverse consistency requirements. Some need immediate visibility of uploaded content while others can tolerate brief delays in exchange for higher throughput and lower costs. Understanding consistency levels helps you select the appropriate level for different parts of your AI application.
 
 ## Understand the five consistency levels
@@ -206,6 +217,8 @@ You can access PBS metrics through the Azure portal:
 1. View the PBS metric for your regions
 
 If PBS metrics show that eventual consistency returns current data more than 99% of the time, you might safely use eventual consistency for more operations. If PBS shows significant staleness, consider using session consistency for user-facing operations.
+
+::: zone-end
 
 ## Additional resources
 

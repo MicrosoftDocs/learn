@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a8bc3d8c-e108-4f0b-93b3-379199b6d1b9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB for NoSQL uses indexes to execute queries efficiently without scanning entire containers. Understanding how indexes work helps you make informed decisions about which properties to index and which index types to use. By default, Azure Cosmos DB automatically indexes all properties in every item, which provides good query performance without upfront configuration. However, customizing the indexing policy unlocks significant performance and cost optimizations for AI workloads that have predictable access patterns.
 
 ## Understand automatic indexing behavior
@@ -103,6 +114,8 @@ Azure Cosmos DB handles several system properties automatically:
 - **_etag:** This property is excluded from indexing by default. You can include it explicitly if your queries filter on ETags, though this is uncommon.
 
 The `id` property serves as the unique identifier within a partition, and `_ts` represents the last modified timestamp. Because these properties are always indexed, you can filter and sort by them without modifying your indexing policy.
+
+::: zone-end
 
 ## Additional resources
 

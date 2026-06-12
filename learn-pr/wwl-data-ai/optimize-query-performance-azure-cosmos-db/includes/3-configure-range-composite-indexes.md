@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4c1b2bdf-8a39-4e4d-89c6-7a05f19d36e5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI applications use diverse data retrieval patterns to deliver results to users. A semantic search platform might filter documents by type, sort results by relevance score and date, and perform vector similarity searches. All of these operations might happen within a single user request. Each query pattern requires specific index configurations to execute efficiently. Poorly designed indexes force Azure Cosmos DB to scan entire partitions or containers, dramatically increasing latency and request unit (RU) consumption. Understanding how to design indexes for common AI retrieval patterns helps you build applications that deliver consistent, cost-effective performance.
 
 ## Design range indexes for filter operations
@@ -182,6 +193,8 @@ When you modify an indexing policy, Azure Cosmos DB performs an asynchronous tra
 - **Replacing indexes:** If you're replacing one index pattern with another, add the new index first and wait for the transformation to complete. Then remove the old index. This approach ensures queries always have appropriate index support.
 
 You can track index transformation progress using the Azure portal or SDKs. For large containers with millions of items, transformations can take significant time. Plan index changes during low-traffic periods when possible to minimize impact on provisioned throughput.
+
+::: zone-end
 
 ## Additional resources
 

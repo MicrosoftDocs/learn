@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=34429321-1984-4fc1-b8ee-013f7c0a7085]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI applications that store embeddings need vector indexes to perform efficient similarity searches. Vector indexes are a specialized index type that accelerates queries using the `VectorDistance` system function. Selecting the right vector index type for your workload affects query latency, accuracy, and RU consumption. This unit teaches you how to choose and configure vector indexes as part of your overall indexing strategy, focusing on selection criteria and integration with other index types.
 
 > [!NOTE]
@@ -188,6 +199,8 @@ Vector policies, which define the embedding properties available for vector inde
 - **Distance function:** Choose the distance function that matches how your embedding model was trained. Most text embedding models use cosine similarity.
 
 If your requirements change, such as upgrading to a model with more dimensions, you must create a new container with the updated vector policy and migrate your data.
+
+::: zone-end
 
 ## Additional resources
 
