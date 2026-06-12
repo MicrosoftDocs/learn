@@ -2,23 +2,23 @@
 uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse
 metadata:
   title: Load data into a Microsoft Fabric data warehouse
-  description: Explore the process of loading data into a warehouse in Microsoft Fabric.
-  ms.date: 5/15/2025
+  description: Learn how to load data into a Microsoft Fabric warehouse using data pipelines, T-SQL, and Dataflow Gen2.
+  ms.date: 06/09/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: module-standard-task-based
   ms.service: fabric
   ai-usage: ai-assisted
 title: Load data into a Microsoft Fabric data warehouse
-summary: Data warehouse in Microsoft Fabric is a comprehensive platform for data and analytics, featuring advanced query processing and full transactional T-SQL capabilities for easy data management and analysis.
+summary: Learn how to load data into a Fabric warehouse using data pipelines, T-SQL, and Dataflow Gen2, and explore strategies for full loads, incremental loads, and slowly changing dimensions.
 abstract: |
-  In this module, you'll:
-  - Learn different strategies to load data into a data warehouse in Microsoft Fabric.
-  - Learn how to build a data pipeline to load a warehouse in Microsoft Fabric.
-  - Learn how to load data in a warehouse using T-SQL.
-  - Learn how to load and transform data with dataflow (Gen 2).
+  In this module, you learn how to:
+  - Identify when to use full loads versus incremental loads for a data warehouse.
+  - Describe how Copy jobs in data pipelines ingest data into a warehouse.
+  - Explain how T-SQL COPY statements, CTAS, and INSERT...SELECT load data into a warehouse.
+  - Describe how Dataflow Gen2 imports and transforms data before loading.
 prerequisites: |
-  Before starting this module, you should be familiar with the basic principles of a data warehouse.
+  Before starting this module, you should be familiar with the basic concepts of a data warehouse.
 iconUrl: /training/achievements/ingest-data-with-microsoft-fabric-notebooks.svg
 levels:
 - beginner

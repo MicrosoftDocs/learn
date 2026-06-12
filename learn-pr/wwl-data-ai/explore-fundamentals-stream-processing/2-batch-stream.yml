@@ -2,9 +2,10 @@
 uid: learn.wwl.explore-fundamentals-of-stream-processing.understand-batch
 title: Understand batch and stream processing
 metadata:
+  zone_pivot_groups: video-or-text
   title: Understand batch and stream processing
   description: "Understand batch and stream processing"
-  ms.date: 05/21/2026
+  ms.date: 06/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

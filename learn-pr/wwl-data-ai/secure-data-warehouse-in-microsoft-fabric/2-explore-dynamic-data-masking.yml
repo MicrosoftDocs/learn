@@ -3,11 +3,11 @@ uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.explore-dynamic-data-ma
 title: Explore dynamic data masking
 metadata:
   title: Explore dynamic data masking
-  description: "Explore the concept and how to implement dynamic data masking in a data warehouse in Microsoft Fabric."
-  ms.date: 09/3/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  description: "Learn how to use dynamic data masking to obscure sensitive column values in a Microsoft Fabric data warehouse."
+  ms.date: 06/11/2026
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-durationInMinutes: 6
+durationInMinutes: 5
 content: |
   [!include[](includes/2-explore-dynamic-data-masking.md)]

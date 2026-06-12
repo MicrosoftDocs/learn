@@ -3,11 +3,11 @@ uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.exercise-secure-data-wa
 title: 'Exercise: Secure a warehouse in Microsoft Fabric'
 metadata:
   title: 'Exercise: Secure a warehouse in Microsoft Fabric'
-  description: "Learn how to secure a warehouse using T-SQL in Microsoft Fabric."
-  ms.date: 09/3/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  description: "Practice securing a Microsoft Fabric data warehouse using dynamic data masking, row-level security, column-level security, and SQL granular permissions."
+  ms.date: 06/11/2026
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-durationInMinutes: 30
+durationInMinutes: 45
 content: |
   [!include[](includes/6-exercise-secure-data-warehouse.md)]

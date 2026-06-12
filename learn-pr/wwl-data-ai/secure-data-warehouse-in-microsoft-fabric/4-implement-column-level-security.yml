@@ -3,11 +3,11 @@ uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.implement-column-level-
 title: Implement column-level security
 metadata:
   title: Implement column-level security
-  description: "Learn the concept and how to implement column-level security in a data warehouse in Microsoft Fabric."
-  ms.date: 09/3/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  description: "Learn how to implement column-level security to restrict access to specific columns in a Microsoft Fabric data warehouse."
+  ms.date: 06/11/2026
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 3
 content: |
   [!include[](includes/4-implement-column-level-security.md)]

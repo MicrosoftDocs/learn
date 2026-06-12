@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=af4ba793-3f1f-4407-bc4b-6a0da608d6b0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Deploying Azure SRE Agent requires readiness in identity, permissions, connectivity, and telemetry. This unit outlines a practical setup path for first deployment.
 
 ## Prerequisites
@@ -50,3 +61,5 @@ Key considerations for configuring the agent's identity:
 - **Scope permissions to specific resource groups or resources.** Avoid granting subscription-level write permissions. Scope the agent's identity to the specific resource groups it monitors, following the principle of least privilege.
 - **Apply the human-equivalence rule:** If a human engineer would need manager approval for an action (for example, modifying production configuration), the agent should require the same approval. Azure SRE Agent's approval gates enforce this by default for all write operations.
 - **Review permissions regularly.** As more resource groups are onboarded or removed from the agent's monitoring scope, review and update RBAC assignments to prevent permission creep.
+
+::: zone-end

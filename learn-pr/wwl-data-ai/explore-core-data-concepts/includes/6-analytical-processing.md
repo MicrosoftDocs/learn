@@ -1,4 +1,13 @@
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=193f493f-2d85-4493-b14c-911597680ddf]
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=aec2592d-3a77-4dec-8e61-320c010e7623]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Analytical data processing typically uses read-only (or read-*mostly*) systems that store vast volumes of historical data or business metrics. 
 Analytics can be based on a snapshot of the data at a given point in time, or a series of snapshots.
@@ -53,3 +62,5 @@ A common pattern for organizing data in a lakehouse is the **medallion architect
 Teams use this pattern because it creates clear quality boundaries at each layer, and you can always reprocess data from the original Bronze records if requirements change.
 
 Both Fabric and Databricks include Copilot experiences that let you explore data using natural language.
+
+::: zone-end

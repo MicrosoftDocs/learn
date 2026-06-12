@@ -1,4 +1,13 @@
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=dfed27b3-9bb6-4e4d-be37-1135536b2c48]
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=591db305-9efb-459e-bf9c-2825584ec29b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 The ability to store data in files is a core element of any computing system. Files can be stored in local file systems on the hard disk of your personal computer, and on removable media such as USB drives; but in most organizations, important data files are stored centrally in some kind of shared file storage system. Increasingly, that central storage location is hosted in the cloud, enabling cost-effective, secure, and reliable storage for large volumes of data.
 
@@ -108,3 +117,5 @@ Some common optimized file formats you might see include *Parquet* and *Avro*:
 
 > [!div class="mx-imgBorder"]
 > ![Diagram showing Delta Lake format.](../media/delta-format.png)
+
+::: zone-end

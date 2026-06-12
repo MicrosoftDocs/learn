@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5ea815df-3026-4e5a-8df2-9a836cb8b176]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure SQL is a collective term for a family of Microsoft SQL Server based database services in Azure. Specific Azure SQL services include:
 
 - **SQL Server on Azure Virtual Machines (VMs)** - A virtual machine running in Azure with an installation of SQL Server. The use of a VM makes this option an infrastructure-as-a-service (IaaS) solution that virtualizes hardware infrastructure for compute, storage, and networking in Azure; making it a great option for "lift and shift" migration of existing on-premises SQL Server installations to the cloud.
@@ -114,3 +125,5 @@ SQL Database helps secure your data by providing encryption that protects data t
 Azure SQL Database also offers a free offer for new databases, so you can start building without any upfront commitment.
 
 AI assistance in Azure SQL Database can suggest query optimizations and help troubleshoot performance issues using natural language.
+
+::: zone-end

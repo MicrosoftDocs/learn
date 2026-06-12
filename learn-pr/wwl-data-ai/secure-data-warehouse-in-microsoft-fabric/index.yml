@@ -3,20 +3,21 @@ uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric
 metadata:
   title: Secure a Microsoft Fabric data warehouse
   description: Learn the key concepts and strategies for protecting sensitive data in Microsoft Fabric data warehouses.
-  ms.date: 09/3/2025
+  ms.date: 06/11/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: module
   ms.service: azure
+  ai-usage: ai-assisted
 title: Secure a Microsoft Fabric data warehouse
-summary: Data warehouse in Microsoft Fabric is a comprehensive platform for data and analytics, featuring advanced query processing and full transactional T-SQL capabilities for easy data management and analysis.
+summary: Learn how to protect sensitive data in a Microsoft Fabric warehouse using dynamic data masking, row-level security, column-level security, and SQL granular permissions.
 abstract: |
   In this module, you'll:
-  - Learn the concepts of securing a data warehouse in Microsoft Fabric.
-  - Learn how to implement dynamic data masking to obscure sensitive information.
-  - Learn how to configure row-level security to provide granular control.
-  - Learn how to implement column-level security to protect sensitive data.
-  - Learn how to configure granular permissions using T-SQL.
+  - Identify the security layers available in a Microsoft Fabric warehouse.
+  - Describe how dynamic data masking obscures sensitive column values.
+  - Explain how row-level security restricts row access by user.
+  - Describe how column-level security controls access to specific columns.
+  - Explain how SQL granular permissions control access to warehouse objects.
 prerequisites: |
   Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
 iconUrl: /training/achievements/secure-a-microsoft-fabric-data-warehouse.svg

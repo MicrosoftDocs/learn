@@ -1,18 +1,11 @@
-There’s no one-size-fits-all solution for loading your data. The best approach depends on the specifics of your business requirement and the question you’re trying to answer.
+In this module, you explored the strategies and tools for loading data into a Microsoft Fabric data warehouse.
 
-When it comes to loading data in a data warehouse, there are several considerations to keep in mind.
+A Copy job handles the bulk CSV import through a guided wizard. T-SQL COPY statements give you precise control over data types and transformation logic for the SQL Server data. Dataflow Gen2 provides a visual Power Query interface for the activity logs that need cleansing and business rule validation before loading. These are three common approaches, but Fabric also supports loading data through notebooks, REST APIs, and shortcuts depending on your scenario.
 
-|  | Description |
-|---------------|-------------|
-| **Load volume & frequency** | Assess data volume and load frequency to optimize performance. |
-| **Governance** | Any data that lands in OneLake is governed by default.|
-| **Data mapping** | Manage mapping from source to staging to warehouse. |
-| **Dependencies** | Understand dependencies in the data model for loading dimensions. |
-| **Script design** | Design efficient import scripts considering column names, filtering rules, value mapping, and database indexing. |
+You also explored the data load strategies behind these tools. Full loads replace entire tables and work well for initial migrations or small reference tables. Incremental loads bring in only new or changed rows — essential for large fact tables that grow continuously. Slowly changing dimensions preserve historical attribute changes, and surrogate keys keep dimension records stable across source system changes.
 
-For additional reading, you can refer to the following URLs:
+For additional reading:
 
-- [Create a Warehouse in Microsoft Fabric](/fabric/data-warehouse/create-warehouse?azure-portal=true)
-- [Ingest data into the Warehouse](/fabric/data-warehouse/ingest-data?azure-portal=true)
-- [Compare the Warehouse and the SQL analytics endpoint of the Lakehouse](/fabric/data-warehouse/data-warehousing#compare-the-warehouse-and-the-sql-endpoint-of-the-lakehouse?azure-portal=true)
- 
+- [Ingest data into the warehouse](/fabric/data-warehouse/ingest-data?azure-portal=true)
+- [Incremental load with data pipelines](/fabric/data-factory/tutorial-incremental-copy-data-warehouse-lakehouse?azure-portal=true)
+- [Ingest data into your warehouse using data pipelines](/fabric/data-warehouse/ingest-data-pipelines?azure-portal=true)
