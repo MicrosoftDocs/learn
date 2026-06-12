@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8fe1c3f3-a59f-4298-bd4d-03f3605a3bb9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Bicep is Microsoft's domain-specific language for deploying Azure resources. It compiles to Azure Resource Manager JSON templates but is more readable and concise. Bicep removes the boilerplate of Azure Resource Manager while keeping the declarative model.
 
 A basic Bicep resource definition looks like this:
@@ -243,3 +254,5 @@ The resource type [Microsoft.Network/azureFirewalls@2021-02-01] appears to
 use an outdated API version. Update it to the current stable API version
 and adjust any properties that have changed.
 ```
+
+::: zone-end

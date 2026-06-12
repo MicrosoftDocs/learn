@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=df3133d1-e6b4-4124-aaa0-1fa2ce98e61e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI services often depend on external systems and require many runtime settings. You typically configure endpoints, feature flags, and model selection settings using environment variables. You handle sensitive settings, such as API keys, using secrets and secret references.
 
 ## Configure nonsensitive settings with environment variables
@@ -79,6 +90,8 @@ Runtime configuration should reduce risk and simplify operations. You can use th
 - **Prefer secret references:** Use `secretref:` and `secretRef` so secret values don't appear in YAML files or shell history.
 - **Rotate secrets intentionally:** Update secrets independently of images so you can respond quickly to credential rotation requirements.
 - **Use YAML for consistency:** Store YAML in source control to reduce drift and make configuration changes reviewable.
+
+::: zone-end
 
 ## Additional resources
 

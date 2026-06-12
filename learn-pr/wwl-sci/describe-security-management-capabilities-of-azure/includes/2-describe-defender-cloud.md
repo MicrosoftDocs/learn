@@ -42,9 +42,9 @@ The integration with Security Copilot allows you to use natural language prompts
 
 This AI-powered experience helps security teams work more efficiently, focusing attention on the most critical issues rather than manually parsing security data.
 
-## Integration with Microsoft Defender XDR
+## Integration with the Microsoft Defender portal
 
-When you enable Defender for Cloud, you automatically gain access to Microsoft Defender XDR, an enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks. Information on Microsoft Defender XDR is covered in a subsequent module.
+Microsoft Defender for Cloud (MDC) is now deeply integrated into the Defender portal and part of the broader Microsoft Security eco-system. With threat protection already deeply embedded into the Defender portal, this integration adds posture management—bringing together a complete cloud-native application protection platform (CNAPP) solution in one unified experience. This native-integration eliminates silos so security teams can see and act on threats across all cloud, hybrid, and code environments - all from one place and eliminates the need to switch between tools and portals.
 
 ## AI security and threat protection
 

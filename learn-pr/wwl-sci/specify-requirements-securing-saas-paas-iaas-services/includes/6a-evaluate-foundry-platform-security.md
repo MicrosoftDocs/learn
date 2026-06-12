@@ -21,9 +21,9 @@ Foundry supports two authentication methods: Microsoft Entra ID and API keys. Ev
 
 Evaluate whether RBAC assignments reflect the control plane and data plane separation:
 
-- **Azure AI User**: The minimum least-privilege starting point for developers and project managed identities at the Foundry resource scope. Provides data plane access without resource management capabilities.
-- **Azure AI Project Manager**: Enables creating projects, managing deployments, and conditionally assigning the Azure AI User role. Appropriate for team leads who need both development and management capabilities.
-- **Azure AI Account Owner** or **Azure AI Owner**: Reserve for IT administrators who need full resource management, encryption, and networking control. Azure AI Owner additionally includes data plane access. Assess whether development teams are scoped to Azure AI User or Azure AI Project Manager rather than these broader roles.
+- **Foundry User**: The minimum least-privilege starting point for developers and project managed identities at the Foundry resource scope. Provides data plane access without resource management capabilities.
+- **Foundry Project Manager**: Enables creating projects, managing deployments, and conditionally assigning the Foundry User role. Appropriate for team leads who need both development and management capabilities.
+- **Foundry Account Owner** or **Foundry Owner**: Reserve for IT administrators who need full resource management, encryption, and networking control. Foundry Owner additionally includes data plane access. Assess whether development teams are scoped to Foundry User or Foundry Project Manager rather than these broader roles.
 
 Verify that each project's managed identity has only the RBAC roles required on connected resources. Common role assignments include:
 
@@ -147,7 +147,7 @@ When evaluating Microsoft Foundry platform security, verify the solution address
 | Area | Key evaluation points |
 | ---- | --------------------- |
 | **Architecture** | Resource/project separation, project isolation boundaries, workload segmentation |
-| **Identity** | Microsoft Entra ID authentication, API keys disabled, Foundry RBAC roles (Azure AI User, Project Manager, Account Owner, Owner), managed identities |
+| **Identity** | Microsoft Entra ID authentication, API keys disabled, Foundry RBAC roles (Foundry User, Project Manager, Account Owner, Owner), managed identities |
 | **Connections** | Microsoft Entra ID preferred, dedicated Key Vault, project-scoped connections, lifecycle management |
 | **Network** | Public access disabled, private endpoints, managed virtual network isolation mode, connected resource isolation |
 | **Data protection** | Customer-managed keys, project data isolation, vulnerability management |

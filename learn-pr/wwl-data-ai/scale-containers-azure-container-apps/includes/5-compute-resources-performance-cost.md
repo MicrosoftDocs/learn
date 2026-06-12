@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f8e95b9d-d284-4064-bdf2-8d162a6903b2]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Resource allocation decisions in Azure Container Apps affect both application performance and operating costs. Each container app replica consumes CPU and memory resources, and the combination of per-replica resources and replica count determines your total capacity and cost. Understanding how to configure these resources helps you build applications that meet performance requirements without overspending.
 
 ## Understand resource allocation
@@ -83,6 +94,8 @@ The maximum replica count in Azure Container Apps is 1000 per revision. For most
 - **Monitor actual resource utilization:** Use Azure Monitor to track CPU and memory usage over time. Over-provisioned containers waste money; under-provisioned containers cause performance problems. Regular monitoring helps you tune resource allocation to actual needs.
 
 - **Consider total cost of scaling:** Smaller containers that scale more frequently might incur more scaling overhead and potential request impact during scale operations. Balance per-replica size against scaling responsiveness and your application's ability to handle replica additions and removals gracefully.
+
+::: zone-end
 
 ## Additional resources
 

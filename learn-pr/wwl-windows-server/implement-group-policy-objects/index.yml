@@ -3,40 +3,31 @@ uid: learn.wwl.implement-group-policy-objects
 metadata:
   title: Implement Group Policy Objects
   description: "Implement Group Policy Objects"
-  ms.date: 01/23/2026
-  author: wwlpublish
-  ms.author: robbarefoot
+  ms.date: 06/05/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
-  ms.service: azure-active-directory
-  ms.subservice: fundamentals
+  ms.service: windows-server
   ai-usage: human-only
 title: Implement Group Policy Objects
-summary: Learn to implement Group Policy Objects (GPOs) in Active Directory Domain Services (AD DS) in Windows Server 2019.
+summary: Learn to implement Group Policy Objects (GPOs) in Active Directory Domain Services (AD DS).
 abstract: |
   After completing this module, you'll be able to:
 
   -   Describe GPOs.
-
   -   Describe GPO scope and inheritance.
-
   -   Describe domain-based GPOs.
-
   -   Create and configure GPOs.
-
   -   Explain GPO storage.
-
   -   Describe administrative templates and the Central Store.
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
 
   -   AD DS concepts and technologies.
-
   -   Core networking technologies.
-
   -   Windows client operating systems such as Windows 10.
-
   -   Windows PowerShell basics.
 iconUrl: /training/achievements/implement-group-policy-objects.svg
 levels:

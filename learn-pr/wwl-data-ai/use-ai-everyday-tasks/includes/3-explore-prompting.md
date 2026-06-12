@@ -48,7 +48,7 @@ The following table includes some prompt resources you might find helpful to get
 | Resource Name | Description | Use cases  |
 |--|--|--|
 | **[Do more with Copilot](https://www.microsoft.com/microsoft-copilot/for-individuals/do-more-with-ai?azure-portal=true)** | A selection of use cases and examples of how AI can be applied to everyday tasks. | Explore articles grouped by categories such as daily life, AI art & creativity, general AI, learning & education, and professional life. |
-| **[Copilot prompt gallery](https://copilot.cloud.microsoft/prompts?azure-portal=true)** | A collection of prompts that you can use as inspiration. | Find sample prompts that you can edit to make your own. Some editable parts are obvious, denoted by a pair of square brackets, like [topic], [file], and [your title]. But you can also edit various parts of those prompts, such as the goal, context, expectations, and source, to suit your purpose. |
+| **[Copilot Prompt Lab](https://m365.cloud.microsoft/copilot-prompts?azure-portal=true)** | A collection of prompts that you can use as inspiration. | Find sample prompts that you can edit to make your own. |
 | **[Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library?azure-portal=true)** | A wide range of scenarios and prompts organized by job functions and roles | Find relevant prompts for your specific needs and industry. |
 
 > [!TIP]

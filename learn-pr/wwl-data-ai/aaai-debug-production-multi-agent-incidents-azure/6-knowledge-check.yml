@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.debug-production-multi-agent-incidents-azure.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Module assessment."
+  ms.date: 06/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "During a production incident replay, the replay runner detects that the agent's production output was 'approve refund for order #1234' but the replay output is 'request additional information from customer.' The replay uses the exact same customer input. What does this indicate?"
+    choices:
+    - content: "The replay captured incorrect inputs—the production and replay inputs must be different, causing the output divergence."
+      isCorrect: false
+      explanation: "The scenario states the replay uses exact same customer input. Before attributing divergence to input capture issues, investigate what else could cause nondeterminism. The more likely cause in a well-designed replay system is a model configuration difference."
+    - content: "The agent behavior is nondeterministic, possibly because one of the model deployments used a different version or temperature setting in production versus the replay environment."
+      isCorrect: true
+      explanation: "Identical inputs producing different outputs between production and replay indicate a nondeterminism source: different model deployment versions, different temperature settings, or different tool versions. This is exactly the type of insight replay debugging is designed to surface. The next step is to verify which component versions differ between the production snapshot and the replay environment."
+    - content: "The replay produced the correct response, and the production output was a bug. The replay can replace production to fix the issue."
+      isCorrect: false
+      explanation: "Replay is a diagnostic tool, not a production replacement. Determining which output is 'correct' requires reviewing both against the business case. The discovery of divergence identifies that a nondeterminism source exists—the investigation then determines what changed and why."
+  - content: "At 2:15 AM, Adventure Works' order management agent begins returning errors for 12% of checkout requests. The distributed traces show the errors start consistently 47 ms into the order validation tool call. A deployment change was made to the validation service at 2:00 AM. Which root cause analysis (RCA) hypothesis should be tested first?"
+    choices:
+    - content: "Model degradation hypothesis: the language model possibly received a bad update that affects order interpretation."
+      isCorrect: false
+      explanation: "The specific timing pattern—failures starting at 2:00 AM, errors occurring consistently at the tool call boundary at 47ms—is a strong signal pointing to the tool/external API hypothesis. Test the most specific and evidence-supported hypothesis first. Model degradation would typically produce gradual quality drift, not a sharp error rate spike at a specific operation timing."
+    - content: "Tool failure hypothesis: a deployment to the order validation service at 2:00 AM likely introduced a bug that causes the 12% error rate, correlating with the timing and the 47 ms error location in the trace."
+      isCorrect: true
+      explanation: "The three signals—deployment at 2:00 AM, errors beginning shortly after, and consistent failure at the same point in the tool call—all converge on the tool failure hypothesis. Testing this first means: verify whether the order validation service returns errors on direct API calls, check the deployment change log, and run the predeployment validation against the new deployment."
+    - content: "Orchestration logic hypothesis: the orchestrator was possibly misconfigured to route requests to the wrong agent after the 2:00 AM change."
+      isCorrect: false
+      explanation: "Routing misconfiguration would typically produce a different error pattern—requests going to the wrong agent type or returning with wrong response structures. The consistent single-agent failure at a specific timing point in a tool call is a more specific signal. Test the hypothesis that matches the most specific evidence first."
+  - content: "Adventure Works' post-mortem for a 3-hour P2 incident reveals that three engineers were paged simultaneously, each investigated the same symptom independently without communicating, and the incident resolution was delayed by 90 minutes due to duplicated effort and contradictory remediation attempts. What process improvement does this indicate?"
+    choices:
+    - content: "Reduce the on-call rotation to a single engineer to prevent the communication overhead of multi-person response."
+      isCorrect: false
+      explanation: "A P2 incident affecting customer checkout needs multiple domains of expertise (AI, infrastructure, customer service). Reducing to one engineer doesn't solve the coordination problem; it just removes the people with necessary expertise. The fix is better coordination structure, not fewer responders."
+    - content: "Implement the incident command structure with a designated Incident Commander role who coordinates all investigation threads, makes remediation decisions, and prevents duplicated work."
+      isCorrect: true
+      explanation: "The described failure—three engineers investigating independently, contradictory remediations—is the classic symptom of uncoordinated incident response. The Incident Commander role solves this: one person has clear authority to assign investigation threads, serialize remediation decisions, and communicate status. This prevents duplicated effort and contradictory actions."
+    - content: "Implement a 30-minute wait period before paging multiple engineers to allow the first responder to assess whether more help is needed."
+      isCorrect: false
+      explanation: "For a P2 incident, waiting 30 minutes to bring in more engineers increases response time and customer impact. The post-mortem shows the problem wasn't too many engineers—it was no coordination structure for multiple engineers. Incident command provides the coordination without reducing team size."

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ca57d140-c5fe-481d-8517-5994e5df6f75]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Container runtime settings control how App Service executes your container. These settings affect container startup, network configuration, file system behavior, and health monitoring. Configuring these settings correctly ensures your application starts reliably and performs well under load.
 
 ## Startup commands
@@ -147,6 +158,8 @@ def health_check():
     except Exception as e:
         return {'status': 'unhealthy', 'error': str(e)}, 503
 ```
+
+::: zone-end
 
 ## Additional resources
 

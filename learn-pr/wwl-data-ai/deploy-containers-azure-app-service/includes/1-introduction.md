@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3d08995b-f449-4ab4-88a9-fe1a0e700643]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Containerized applications provide consistent deployment across environments, but running containers in production requires infrastructure management, scaling configuration, and operational tooling. Azure App Service offers a fully managed platform for running custom containers without managing the underlying infrastructure. Developers bring their own container images and benefit from built-in scaling, deployment slots, and integrated diagnostics.
 
 ## Scenario: Deploy a document processing service
@@ -20,3 +28,8 @@ After completing this module, you'll be able to:
 - Configure container runtime behavior including startup commands, port settings, and persistent storage.
 - Configure application settings and connection strings in App Service.
 - Observe and troubleshoot containerized applications using App Service diagnostic tools.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

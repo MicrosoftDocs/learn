@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=17ad0ac9-fa24-4e8e-b36f-7575f419d2ac]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A Bicep template sitting in a repository with no deployment pipeline is incomplete infrastructure as code. The template defines the desired state, but without automation, someone still has to manually run `az deployment group create` from their local machine. This reintroduces the human-error problems that IaC was meant to eliminate.
 
 CI/CD pipelines close that gap. They enforce a consistent deployment process: the template is validated before deployment, changes go through staging before production, and no one can bypass the process by pushing directly to a shared resource group. The pipeline is the governance layer on top of the template.
@@ -214,3 +225,5 @@ A rollback stage should only trigger when the production deployment fails. Both 
 ### Path-filtered triggers
 
 Trigger the pipeline only when infrastructure files change, not on every commit to the repository. Use path filters (`paths:` in GitHub Actions, `include:` under `trigger.paths` in ADO) to scope the trigger to the `infra/` directory or wherever your Bicep files live. Preventing unnecessary pipeline runs when only application code changes.
+
+::: zone-end

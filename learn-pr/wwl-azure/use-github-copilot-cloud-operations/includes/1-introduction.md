@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0d5e9c10-5095-433f-96a7-29ed05ae1f4b]
+
+::: zone-end
+
+::: zone pivot="text"
+
 
 Infrastructure as Code (IaC) is the practice of defining and managing cloud resources through machine-readable configuration files rather than through manual portal select or unplanned scripts. Instead of logging into the Azure portal to create a virtual network, you write a file that describes the network. A tool then reads that file and creates the resource for you.
 
@@ -111,3 +119,8 @@ Infrastructure definitions have qualities that make them good candidates for AI-
 - The traditional IaC workflow has significant friction at every stage. Copilot reduces that friction.
 - GitHub Copilot helps through inline suggestions, Copilot Chat, and MCP-enhanced context.
 - IaC is well-suited for AI assistance because it's structured, pattern-rich, and safe to iterate.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

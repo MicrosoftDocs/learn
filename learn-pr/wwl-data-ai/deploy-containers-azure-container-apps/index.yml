@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-containers-azure-container-apps
 metadata:
   title: Deploy Containers to Azure Container Apps
   description: Create and manage container deployments in Azure Container Apps. Work with environments, runtime configuration, registry authentication, and deployment verification techniques.
-  ms.date: 01/26/2026
+  ms.date: 06/10/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

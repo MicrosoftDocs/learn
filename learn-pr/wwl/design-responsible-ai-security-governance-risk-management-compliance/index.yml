@@ -7,7 +7,7 @@ metadata:
   author: pabloMS
   ms.author: taeldin
   ms.topic: module
-  ms.service: azure-ai-services
+  ms.service: foundry-tools
 title: "Design responsible AI security, governance, risk management, and compliance"
 summary: Learn to design secure, governed, and compliant AI systems that align with organizational policies and Responsible AI principles.
 abstract: |

@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=11a2119b-d016-4be5-b0c4-b7eae5a15308]
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI applications require fast iteration without sacrificing reliability. When you ship new model versions, dependency updates, or prompt logic, you need deployment controls that let you roll forward confidently and roll back quickly when a change introduces errors or latency regressions. This module guides you through managing containerized workloads on Azure Container Apps across the day-two lifecycle.
 
 Imagine you’re a developer building an AI document processing pipeline. The system exposes an HTTP API that accepts PDFs, and it runs a background worker that performs OCR and classification. Your team deploys both services to Azure Container Apps because you want managed scaling, integrated logging, and a simplified operational model.
@@ -16,6 +24,11 @@ After completing this module, you’ll be able to:
 
 > [!NOTE]
 > All command examples in this module use Azure CLI patterns that you can adapt to your environment. Azure Container Apps features and Azure CLI flags change over time, so validate the exact syntax against the current documentation before you automate these commands.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
 
 ## Additional resources
 

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=658c0e4b-ef57-4f1a-a8ce-b780ea1bac40]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI applications often call external services and model endpoints. These services require keys and credentials to authenticate requests. Kubernetes Secrets store sensitive values, such as connection strings and API keys. Secrets keep credentials out of source control and container images. They help you follow security guidance for Azure workloads. For production scenarios with strict compliance requirements, consider integrating with Azure Key Vault. The Key Vault CSI driver provides centralized secret management and automated rotation.
 
 > [!NOTE]
@@ -78,3 +89,5 @@ Handling secrets securely on Azure Kubernetes Service (AKS) requires careful pla
 - **Integrate with Azure Key Vault for production:** Use the Key Vault CSI driver for automated rotation, detailed audit trails, and secrets that stay in a dedicated vault. The CSI driver syncs rotated secrets automatically without manual Kubernetes updates.
 - **Centralize secret mappings with App Configuration:** Use App Configuration with Key Vault references when you want to manage which secrets each application uses from a central location while keeping actual values in Key Vault.
 - **Enable encryption at rest:** Configure etcd encryption when you create your cluster for an extra layer of protection. Combine with Key Vault integration for comprehensive security including rotation and audit capabilities.
+
+::: zone-end

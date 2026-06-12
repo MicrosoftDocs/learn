@@ -47,7 +47,7 @@ For environments that require remote access to both Azure and on-premises resour
 
 ## Microsoft Entra Private Access
 
-Microsoft Entra Private Access, part of Microsoft's Global Secure Access Security Service Microsoft Edge (SSE) solution, offers a Zero Trust alternative to traditional VPNs for accessing private applications and resources. It enables per-app access to specific servers and services—scoped by FQDN, IP address, port, and protocol—rather than granting broad network-level connectivity. From a security architecture perspective, Private Access is relevant here because it directly addresses remote access to server endpoints while enforcing Conditional Access policies (including MFA and device compliance) at the network layer, even for legacy applications that don't natively support modern authentication.
+Microsoft Entra Private Access, part of Microsoft's Global Secure Access Security Service Edge (SSE) solution, offers a Zero Trust alternative to traditional VPNs for accessing private applications and resources. It enables per-app access to specific servers and services—scoped by FQDN, IP address, port, and protocol—rather than granting broad network-level connectivity. From a security architecture perspective, Private Access is relevant here because it directly addresses remote access to server endpoints while enforcing Conditional Access policies (including MFA and device compliance) at the network layer, even for legacy applications that don't natively support modern authentication.
 
 Microsoft Entra Private Access is covered in another module in this learning path.
 

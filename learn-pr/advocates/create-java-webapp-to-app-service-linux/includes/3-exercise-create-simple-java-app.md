@@ -21,17 +21,18 @@ To clone the repo, use the following steps:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/simple-tomcat-maven-app.git
+    ```
 
 1. Navigate to the cloned project repo by using the following command:
 
     ```bash
-    cd simple-tomcat-app
+    cd simple-tomcat-maven-app
     ```
 
 Use the following steps to configure your local Tomcat server so you can deploy locally to Tomcat:
 
 > [!WARNING]
-> Storing usernames and passwords directly in configuration files like **tomcat-users.xml** and Maven's **settings.xml** in plain text isn't considered secure, and we generally don't recommend this practice - especially for production environments. However, other alternatives are outside the scope of this training module. Don't use your real username and password!
+> Storing usernames and passwords directly in configuration files like **tomcat-users.xml** and **pom.xml** in plain text isn't considered secure, and we generally don't recommend this practice - especially for production environments. However, other alternatives are outside the scope of this training module. Don't use your real username and password!
 
 1. Edit the Tomcat configuration file **conf/tomcat-users.xml** so that it looks like the following example:
 
@@ -41,16 +42,11 @@ Use the following steps to configure your local Tomcat server so you can deploy 
     </tomcat-users>
     ```
 
-1. Add your credentials to the Maven **~/.m2/settings.xml** file by using the following example, where you replace `your-tomcat-username` with a username, and `your-tomcat-password` with a password:
+1. In **pom.xml**, update the Cargo remote credentials to match the username and password that you added to **tomcat-users.xml**:
 
     ```xml
-    <servers>
-        <server>
-            <id>TomcatServer</id>
-            <username>your-tomcat-username</username>
-            <password>your-tomcat-password</password>
-        </server>
-    </servers>
+    <cargo.remote.username>your-tomcat-username</cargo.remote.username>
+    <cargo.remote.password>your-tomcat-password</cargo.remote.password>
     ```
 
 1. Use the following command to package and deploy your web app:
@@ -81,13 +77,13 @@ The following output is typical:
 
 ```output
 [INFO] ----------------------------------------------------------------------------
-[INFO] Parameter: basedir, Value: /home/XXXXXXXX/LearnProjects/simple-tomcat-maven-app
-[INFO] Parameter: package, Value: com.microsoft.azure.samples
-[INFO] Parameter: groupId, Value: com.microsoft.azure.samples
-[INFO] Parameter: artifactId, Value: azure-javaweb-app-simple
-[INFO] Parameter: packageName, Value: com.microsoft.azure.samples
+[INFO] Parameter: basedir, Value: /home/XXXXXXXX/LearnProjects
+[INFO] Parameter: package, Value: com.example
+[INFO] Parameter: groupId, Value: com.example
+[INFO] Parameter: artifactId, Value: simple-tomcat-app
+[INFO] Parameter: packageName, Value: com.example
 [INFO] Parameter: version, Value: 1.0-SNAPSHOT
-[INFO] project created from Old (1.x) Archetype in dir: /private/tmp/TMP/azure-javaweb-app
+[INFO] project created from Old (1.x) Archetype in dir: /home/XXXXXXXX/LearnProjects/simple-tomcat-app
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
@@ -126,14 +122,14 @@ Modify the **pom.xml** file by using the following steps:
     <maven.compiler.target>21</maven.compiler.target>
     ```
 
-1. Add Tomcat and Azure deployment plugins by using the following example:
+1. Add the Cargo Maven plugin for local Tomcat deployment by using the following example:
 
     ```xml
     <!-- Tomcat 10 Maven Plugin -->
     <plugin>
       <groupId>org.codehaus.cargo</groupId>
       <artifactId>cargo-maven3-plugin</artifactId>
-      <version>1.9.9</version>
+      <version>1.10.27</version>
       <configuration>
         <!-- Container Configuration -->
         <container>
@@ -145,8 +141,8 @@ Modify the **pom.xml** file by using the following steps:
           <type>runtime</type>
           <properties>
             <cargo.remote.uri>http://localhost:8080/manager/text</cargo.remote.uri>
-            <cargo.remote.username>cargo</cargo.remote.username>
-            <cargo.remote.password>your-cargo-password</cargo.remote.password>
+            <cargo.remote.username>your-tomcat-username</cargo.remote.username>
+            <cargo.remote.password>your-tomcat-password</cargo.remote.password>
           </properties>
         </configuration>
         <!-- Deployable Artifact Configuration -->
@@ -197,7 +193,7 @@ Here's the full content of the **pom.xml** file:
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.10.1</version>
+        <version>3.15.0</version>
         <configuration>
           <source>${java.version}</source>
           <target>${java.version}</target>
@@ -207,7 +203,7 @@ Here's the full content of the **pom.xml** file:
       <plugin>
         <groupId>org.codehaus.cargo</groupId>
         <artifactId>cargo-maven3-plugin</artifactId>
-        <version>1.9.9</version>
+        <version>1.10.27</version>
         <configuration>
           <!-- Container Configuration -->
           <container>
@@ -219,8 +215,8 @@ Here's the full content of the **pom.xml** file:
             <type>runtime</type>
             <properties>
               <cargo.remote.uri>http://localhost:8080/manager/text</cargo.remote.uri>
-              <cargo.remote.username>cargo</cargo.remote.username>
-              <cargo.remote.password>your-cargo-password</cargo.remote.password>
+              <cargo.remote.username>your-tomcat-username</cargo.remote.username>
+              <cargo.remote.password>your-tomcat-password</cargo.remote.password>
             </properties>
           </configuration>
           <!-- Deployable Artifact Configuration -->
@@ -275,7 +271,7 @@ To create a servlet, use the following steps:
     mkdir -p src/main/java/com/example && touch src/main/java/com/example/HelloServlet.java
     ```
 
-1. Update the contents of the **HelloSeverlet.java** file by using the following code example:
+1. Update the contents of the **HelloServlet.java** file by using the following code example:
 
     ```java
     package com.example;
@@ -325,7 +321,7 @@ Your new file structure looks like this:
 Use the following steps to configure your local Tomcat server so you can deploy to it:
 
 > [!WARNING]
-> Storing usernames and passwords directly in configuration files like **tomcat-users.xml** and Maven's **settings.xml** in plain text isn't secure and isn't generally recommended, especially for production environments. However, other alternatives are outside the scope of this training module. Don't use your real username and password!
+> Storing usernames and passwords directly in configuration files like **tomcat-users.xml** and **pom.xml** in plain text isn't secure and isn't generally recommended, especially for production environments. However, other alternatives are outside the scope of this training module. Don't use your real username and password!
 
 1. Edit the Tomcat configuration file **conf/tomcat-users.xml** by using the following example:
 
@@ -335,16 +331,11 @@ Use the following steps to configure your local Tomcat server so you can deploy 
     </tomcat-users>
     ```
 
-1. Add your credentials to Maven's **~/.m2/settings.xml** file by using the following example, replacing `your-tomcat-username` with a username and `your-tomcat-password` with a password:
+1. Confirm that the Cargo remote credentials in **pom.xml** match the username and password that you added to **tomcat-users.xml**:
 
     ```xml
-    <servers>
-        <server>
-            <id>TomcatServer</id>
-            <username>your-tomcat-username</username>
-            <password>your-tomcat-password</password>
-        </server>
-    </servers>
+    <cargo.remote.username>your-tomcat-username</cargo.remote.username>
+    <cargo.remote.password>your-tomcat-password</cargo.remote.password>
     ```
 
 ### Deploy your web app to Tomcat
