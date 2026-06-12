@@ -1,58 +1,41 @@
-[Dynamic Data Masking (DDM)](/fabric/data-warehouse/dynamic-data-masking?azure-portal=true) is a security feature that limits data exposure to nonprivileged users by obscuring sensitive information. 
+Sensitive data in a warehouse — email addresses, credit card numbers, salary figures — shouldn't be visible to every user who has query access. Dynamic data masking (DDM) lets you obscure column values in query results without changing the underlying data. Nonprivileged users see a masked version; the actual values stay intact in storage.
 
-Dynamic data masking offers several key benefits that enhance the security and manageability of your data. One of the primary advantages is its real-time masking feature. When querying sensitive data, DDM applies dynamic masking to it in real time. This process means that the actual data is never exposed to unauthorized users, thus enhancing the security of your data. Furthermore, DDM is straightforward to implement. It doesn’t require complex coding, making it accessible for users of all skill levels.
+Because masking happens at query time, not at the storage layer, DDM is easy to add to an existing warehouse without schema changes or application modifications.
 
-Another benefit of DDM is that the data in the database isn’t changed when DDM is applied. Instead, the masking rules are applied to the query results. This benefit means that the actual data remains intact and secure, while nonprivileged users only see a masked version of the data.
+## Define a masking rule
 
-## Define masking rule
+Masking rules are defined at the column level. Fabric warehouses support four masking types:
 
-Dynamic data masking, which is set up at the column level, offers a suite of features including comprehensive and partial masking capabilities, along with a random masking function designed for numeric data. 
+| Masking type | What it shows | Masking rule |
+|---|---|---|
+| **Default** | Fully replaces the value based on the data type — numbers become 0, strings become XXXX, dates become 1900-01-01. | `default()` |
+| **Email** | Shows the first character and appends a fixed `.com` suffix. For example, `johndoe@contoso.com` becomes `j*****@contoso.com`. | `email()` |
+| **Custom text** | Exposes a specified number of characters at the start and end, with custom padding in between. Useful for partial identifiers like the last four digits of a credit card. | `partial(prefix, padding, suffix)` |
+| **Random** | Replaces numeric or binary values with a random number within a specified range. | `random(low, high)` |
 
-| Masking Type | Description | Use Case | Limitations | Masking Rule |
-| --- | --- | --- | --- | --- |
-| **Default** | Full masking according to the data types of the designated fields. | Useful when you want to completely hide the actual data. | Completely mask the data. No information is visible. | `default()` |
-| **Email** | Exposes the first letter of an email address and the constant suffix ".com" | Useful when you want to show that the data field contains an email without revealing the actual email. | Only applicable to email fields. | `email()` |
-| **Custom Text** | Exposes the first and last 'n' characters and adds a custom padding string in the middle. | Useful when you want to partially hide the actual data. | Not suitable for numeric, date, and time data types. | `partial(prefix_padding, padding_string, suffix_padding)` |
-| **Random** | Replaces any numeric or binary value with a random number within a specified range. | Useful when you want to hide the actual numeric or binary data. | Only applicable to numeric and binary data types. | `random(low, high)` |
+## Configure data masking
 
-The `prefix_padding` and `suffix_padding` parameters in the `partial()` function specify the number of characters to expose at the beginning and end of the string, and the `padding_string` parameter specifies the string to use for masking the remaining characters. 
-
-The `low` and `high` parameters in the `random()` function specify the range of random numbers to generate. 
-
-These masking types help prevent unauthorized viewing of sensitive data by enabling administrators to specify how much sensitive data to reveal, with minimal effect on the application layer. They're applied to query results, so the data in the database isn't changed. This approach allows many applications to mask sensitive data without modifying existing queries.
-
-### Configure data masking
-
-Let's consider an example of a warehouse that stores customer information. The warehouse contains a `Customer` table with fields such as `CustomerName`, `Email`, `PhoneNumber`, and `CreditCardNumber`.
-
-To apply data masking on the `CustomerName`, `Email`, `PhoneNumber`, and `CreditCardNumber` columns, run the following command:
+To apply masks to columns in a `Customers` table, use `ALTER TABLE ... ALTER COLUMN ... ADD MASKED WITH`:
 
 ```tsql
--- For Email
+-- Mask the email address
 ALTER TABLE Customers
 ALTER COLUMN Email ADD MASKED WITH (FUNCTION = 'email()');
 
--- For PhoneNumber
+-- Show only the last four digits of the phone number
 ALTER TABLE Customers
 ALTER COLUMN PhoneNumber ADD MASKED WITH (FUNCTION = 'partial(0,"XXX-XXX-",4)');
 
--- For CreditCardNumber
+-- Show only the last four digits of the credit card number
 ALTER TABLE Customers
 ALTER COLUMN CreditCardNumber ADD MASKED WITH (FUNCTION = 'partial(0,"XXXX-XXXX-XXXX-",4)');
 ```
 
+To remove a mask, use `ALTER TABLE ... ALTER COLUMN ... DROP MASKED`.
+
 ## View masked results
 
-Without Dynamic Data Masking, if a nonprivileged user runs a query to fetch customer details, they might see something like this:
-
-```
-CustomerName: John Doe
-Email: johndoe@contoso.com
-PhoneNumber: 123-456-7890
-CreditCardNumber: 1234-5678-9012-3456
-```
-
-However, with DDM applied to the `Email`, `PhoneNumber`, and `CreditCardNumber` fields, the same query would return:
+Once masks are in place, a nonprivileged user querying the `Customers` table sees masked output:
 
 ```
 CustomerName: John Doe
@@ -61,9 +44,33 @@ PhoneNumber: XXX-XXX-7890
 CreditCardNumber: XXXX-XXXX-XXXX-3456
 ```
 
-As you can see, the sensitive data is hidden from the nonprivileged user, enhancing the security of your data. This scenario is a basic example of how Dynamic Data Masking works. It helps to ensure that sensitive data isn't exposed to users who don't have the necessary privileges to view it.
+Users with the `CONTROL` permission — Admins, Members, and Contributors — always see the unmasked values.
 
 >[!NOTE]
-> Unprivileged users with query permissions can infer the actual data since the data isn’t physically obfuscated.
+> Unprivileged users with query permissions can infer the actual data since the data isn't physically obscured. For example, a user could write a query that divides by a masked salary column and trigger a divide-by-zero error only when the hidden value matches their guess — revealing the actual data without ever seeing it directly.
 
-DDM should be used as part of a comprehensive data security strategy that includes proper management of object-level security with SQL granular permissions and adherence to the principle of minimal required permissions.
+## Manage masking permissions
+
+By default, only users with the `CONTROL` permission (Admins, Members, and Contributors) can view unmasked data. To allow a specific non-admin user to see unmasked values, grant them the `UNMASK` permission:
+
+```tsql
+-- Grant a specific user the ability to see unmasked data
+GRANT UNMASK ON dbo.Customers TO [user@contoso.com];
+```
+
+To add or remove masks from columns, a user needs the `ALTER ANY MASK` permission:
+
+```tsql
+-- Allow a data engineer to manage masking rules without granting admin rights
+GRANT ALTER ANY MASK TO [engineer@contoso.com];
+```
+
+To revoke access to unmasked data:
+
+```tsql
+REVOKE UNMASK ON dbo.Customers FROM [user@contoso.com];
+```
+
+The `UNMASK` permission gives you fine-grained control over who sees real data — without requiring you to grant full admin or table ownership rights.
+
+DDM hides values — it doesn't prevent a user from querying the column. A masked user can still see that a value exists; they just can't read the real data. Use masking as one layer of protection, not as your only control.
