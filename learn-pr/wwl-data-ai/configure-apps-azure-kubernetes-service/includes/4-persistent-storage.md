@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=11f26f46-38c9-4270-bdae-5188768cde24]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI services sometimes need durable storage for embeddings, cached artifacts, or conversation state. Container filesystems are ephemeral by default. Data is lost when a Pod restarts or moves to a different node. PersistentVolume (PV) and PersistentVolumeClaim (PVC) provide storage that survives Pod restarts and rescheduling. You declare a PVC to request storage with specific capacity and access modes. Kubernetes binds the claim to a PersistentVolume that meets your requirements. Azure provides multiple storage options for AKS including CSI drivers that integrate Azure storage services and Azure Container Storage for container-optimized performance.
 
 This unit focuses on using CSI drivers with standard Kubernetes storage patterns. CSI drivers provision Azure Disk or Azure Files resources through pre-configured StorageClasses.
@@ -81,6 +92,8 @@ kubectl apply -f deployment.yaml
 kubectl describe pvc data-pvc
 kubectl describe pod -l app=web-api
 ```
+
+::: zone-end
 
 ## Additional resources
 

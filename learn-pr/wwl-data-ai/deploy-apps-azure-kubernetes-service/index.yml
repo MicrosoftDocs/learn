@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-apps-azure-kubernetes-service
 metadata:
   title: Deploy Applications to Azure Kubernetes Service
   description: Learn how to deploy applications to Azure Kubernetes Service.
-  ms.date: 12/11/2025
+  ms.date: 06/11/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

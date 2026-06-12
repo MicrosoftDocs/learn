@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=de023ce4-eb9b-4678-ada7-732d0da8f779]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A Kubernetes Deployment manifest is a YAML file that tells Azure Kubernetes Service (AKS) exactly how to run your containerized application. It specifies the container image, how many copies should run, resource requirements, environment variables, and configuration. Instead of manually managing containers, you describe your desired state in the manifest, apply it to the cluster, and Kubernetes makes it reality.
 
 Imagine you're deploying a Python FastAPI application that performs AI model inference. Your application is already containerized in an image stored in Azure Container Registry. The Deployment manifest describes: "Run two copies of this image from my registry, each with 2GB memory and one CPU core, with these environment variables set." Once applied, AKS pulls the image, launches two Pods, monitors their health, and restarts any that crash.
@@ -146,6 +157,8 @@ kubectl create secret generic api-secrets --from-literal=api-key=your-secret-key
 ```
 
 Never hardcode secrets in your manifest. Using Secrets keeps sensitive data out of source control and version history.
+
+::: zone-end
 
 ## Additional Resources
 

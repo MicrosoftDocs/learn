@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=cf02c9fe-397c-4dde-9d84-1374e5bde1cd]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A Kubernetes Service provides a stable endpoint for accessing your application. Without a Service, your Pods have internal IP addresses that change whenever they restart—not reliable for consistent access. A Service abstracts the changing Pod IPs by giving your application a persistent IP (or DNS name) that clients use and automatically routing traffic to Pods based on selector labels.
 
 Imagine your AI inference API is running in two Pods behind a Service. A client calls the Service's IP address, and the Service routes the request to one of the Pods (load balancing). If a Pod crashes and restarts with a new IP, the Service still routes traffic correctly—the client never knows the Pod's IP changed.
@@ -109,6 +120,8 @@ selector:
 ```
 
 If the labels don't match, the Service has no Pods to route to (no endpoints). Always verify that Pod labels and Service selectors match—this is a common troubleshooting issue.
+
+::: zone-end
 
 ## Additional Resources
 

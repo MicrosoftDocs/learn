@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0d85de3c-2663-4462-9209-f042eb210da7]
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI applications on Azure need reliable monitoring and fast troubleshooting to meet user expectations. These workloads often run as services and background workers on Azure Kubernetes Service (AKS). Monitoring and debugging applications on AKS help you spot issues such as latency spikes, failed inference calls, and resource saturation before they affect users.
 
 AKS provides multiple ways to monitor and troubleshoot applications. The Azure portal offers visual tools like the Workloads blade, Live Logs, and the Diagnose and solve problems feature for quick inspection and guided troubleshooting. For detailed investigation, `kubectl` commands give you direct access to cluster resources, logs, and events. Many developers use both approaches together—the portal for visual assessment and `kubectl` for in-depth analysis.
@@ -14,3 +22,8 @@ Imagine you deploy a model inference API and a background worker that enriches d
 
 > [!NOTE]
 > All commands and patterns in this module use current AKS and Kubernetes concepts. You should validate resource definitions and flags against official Kubernetes and Azure Kubernetes Service documentation when you adapt examples to your environment.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
