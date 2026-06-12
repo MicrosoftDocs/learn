@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8c42c5f6-08fa-4bdc-933f-ca9a767ee9fb]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Managed Redis supports client libraries for many programming languages. Each library maintains its own documentation and support through the developer community. Always use the latest version and upgrade regularly for improved reliability and performance. The following table lists some of the available clients.
 
 | Client library | Language | GitHub repo |
@@ -17,7 +28,7 @@ Microsoft manages the configuration and management of Azure Managed Redis instan
 
 ### Multi-key commands
 
-Azure Managed Redis uses a clustered configuration, which can cause `CROSSSLOT` exceptions on multi-key commands. With OSS clustering, all keys must map to [the same hash slot](https://redis.io/docs/latest/operate/rs/databases/configure/oss-cluster-api/#multi-key-command-support). 
+Azure Managed Redis uses a clustered configuration, which can cause `CROSSSLOT` exceptions on multi-key commands. With OSS clustering, all keys must map to [the same hash slot](https://redis.io/docs/latest/operate/rs/databases/configure/oss-cluster-api/#multi-key-command-support).
 
 Enterprise clustering allows these commands across slots: `DEL`, `MSET`, `MGET`, `EXISTS`, `UNLINK`, and `TOUCH`. In Active-Active databases, only `MGET`, `EXISTS`, and `TOUCH` work across slots. For more information, see [Database clustering](https://redis.io/docs/latest/operate/rs/databases/durability-ha/clustering/#multikey-operations).
 
@@ -67,4 +78,6 @@ Monitor these key metrics and scale when they consistently exceed 75%:
 - **Choose the right tier**: Select from Memory Optimized, Balanced, Compute Optimized, or Flash Optimized based on performance testing
 - **Enable high availability**: Use high availability mode for production workloads; only disable for development/test environments
 - **Implement data protection**: Enable data persistence for quick recovery or use import/export for periodic backups to your storage account
+
+::: zone-end
 

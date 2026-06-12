@@ -1,4 +1,15 @@
-Azure Managed Redis supports standard Redis commands for data operations. This unit covers how to use the **redis** Python library to store and retrieve data, set expiration times, and manage cache invalidation. 
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e267cdd1-79a7-414a-b77b-ec157ff3cedf]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
+Azure Managed Redis supports standard Redis commands for data operations. This unit covers how to use the **redis** Python library to store and retrieve data, set expiration times, and manage cache invalidation.
 
 Redis supports multiple data types beyond simple strings, each optimized for different use cases. Understanding these data structures helps you choose the right approach for storing and retrieving your application data.
 
@@ -11,7 +22,7 @@ Redis supports multiple data types beyond simple strings, each optimized for dif
 
 ## Connect to Azure Managed Redis with the redis-py library
 
-Before performing data operations, establish a connection to your Azure Managed Redis instance. The `redis-py` library supports both synchronous and asynchronous operations. 
+Before performing data operations, establish a connection to your Azure Managed Redis instance. The `redis-py` library supports both synchronous and asynchronous operations.
 
 Azure Cache for Redis and Azure Managed Redis both use the same libraries for application development. However, they have different default connection ports:
 
@@ -57,11 +68,11 @@ r = redis.Redis(
 ```
 
 > [!NOTE]
-> All of the remaining code examples in this unit assume a Redis connection is in place. For example, in `r.set('user:1001:name', 'Alice Smith')` the "r" represents the connection. 
+> All of the remaining code examples in this unit assume a Redis connection is in place. For example, in `r.set('user:1001:name', 'Alice Smith')` the "r" represents the connection.
 
 ## Basic data operations
 
-Redis provides simple yet powerful commands for storing, retrieving, and managing key-value data. 
+Redis provides simple yet powerful commands for storing, retrieving, and managing key-value data.
 
 ### Set and Get operations
 
@@ -139,7 +150,7 @@ Before attempting to retrieve or update data, verify whether a key exists. The `
 # Check if a key exists
 if r.exists('user:1001:name'):
     print("Key exists")
-    
+
 # Check multiple keys
 count = r.exists('user:1001:name', 'user:1001:email', 'user:9999:name')
 print(f"Number of existing keys: {count}")  # Returns 2
@@ -229,7 +240,7 @@ The simplest approach uses TTL to automatically expire cached data after a set p
 def cache_database_query(query_key, query_function, ttl=300):
     """
     Cache database query results with automatic expiration.
-    
+
     Args:
         query_key: Cache key for the query
         query_function: Function that executes the database query
@@ -240,7 +251,7 @@ def cache_database_query(query_key, query_function, ttl=300):
     if cached_result:
         print("Cache hit")
         return cached_result
-    
+
     # Execute query and cache result
     print("Cache miss - executing query")
     result = query_function()
@@ -266,7 +277,7 @@ def update_user_profile(user_id, new_data):
     """
     # Update database (simulated)
     save_to_database(user_id, new_data)
-    
+
     # Invalidate all related cache keys
     cache_keys = [
         f'user:{user_id}:profile',
@@ -289,25 +300,25 @@ Implement the cache-aside (lazy loading) pattern with automatic expiration for o
 def get_user_data(user_id, ttl=3600):
     """
     Retrieve user data using cache-aside pattern.
-    
+
     Args:
         user_id: User identifier
         ttl: Cache expiration in seconds (default: 1 hour)
     """
     cache_key = f'user:{user_id}:data'
-    
+
     # Try to get from cache
     cached_data = r.get(cache_key)
     if cached_data:
         return cached_data
-    
+
     # Cache miss - fetch from database
     user_data = fetch_from_database(user_id)
-    
+
     # Store in cache with expiration
     if user_data:
         r.setex(cache_key, ttl, user_data)
-    
+
     return user_data
 
 def fetch_from_database(user_id):
@@ -328,14 +339,14 @@ def invalidate_user_cache(user_id):
     pattern = f'user:{user_id}:*'
     cursor = 0
     deleted_count = 0
-    
+
     while True:
         cursor, keys = r.scan(cursor, match=pattern, count=100)
         if keys:
             deleted_count += r.delete(*keys)
         if cursor == 0:
             break
-    
+
     print(f"Invalidated {deleted_count} keys for user {user_id}")
 
 # Usage
@@ -355,3 +366,5 @@ Following these practices ensures your Redis implementation is robust, performan
     - Static reference data: 24+ hours
 
 Consider your application's requirements for data freshness versus cache hit rates when determining TTL values.
+
+::: zone-end
