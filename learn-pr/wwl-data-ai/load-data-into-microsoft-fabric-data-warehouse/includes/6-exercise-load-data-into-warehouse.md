@@ -1,10 +1,8 @@
-Now it's your chance to load data into a warehouse in Microsoft Fabric.
-
-In this exercise, you’ll learn how to load data into a warehouse using T-SQL.
+In this exercise, you practice loading data into a Fabric warehouse using T-SQL.
 
 > [!NOTE]
-> You need a Microsoft Fabric trial license with the Fabric preview enabled in your tenant. See [**Getting started with Fabric**](/fabric/get-started/fabric-trial?azure-portal=true) to enable your Fabric trial license.
+> You need access to a Fabric paid or trial capacity to complete this exercise. See [Fabric trial](/fabric/get-started/fabric-trial?azure-portal=true) for information about the free trial.
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/06a-data-warehouse-load.html?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2368545&azure-portal=true)

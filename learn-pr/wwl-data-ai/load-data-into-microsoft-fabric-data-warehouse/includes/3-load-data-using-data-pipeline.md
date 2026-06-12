@@ -1,56 +1,33 @@
-Microsoft Fabric’s Warehouse provides integrated data ingestion tools, enabling users to load and ingest data into warehouses on a large scale through either coding or noncoding experiences.
+Fabric provides several tools for loading data into a warehouse. The first is **data pipelines** — a visual, low-code way to ingest and orchestrate data at scale. You build workflows that move data from source to destination, apply transformations, and schedule recurring loads without writing code.
 
-Data pipeline is the cloud-based service for data integration, which enables the creation of workflows for data movement and data transformation at scale. You can create and schedule data pipelines that can ingest and load data from disparate data stores. You can build complex ETL, or ELT processes that transform data visually with data flows.
+A data pipeline can contain multiple activities — Copy, Dataflow, stored procedure calls, and more — chained together into a single workflow. A common starting point is a **Copy job**, which handles straightforward source-to-destination data movement through a guided wizard.
 
-Most of the functionality of data pipelines in Microsoft Fabric comes from Azure Data Factory, allowing for seamless integration and utilization of its features within the Microsoft Fabric ecosystem.
+## Create a Copy job
 
-> [!Note] 
-> All data in a Warehouse is automatically stored in the Delta Parquet format in OneLake.
+To create a Copy job:
 
-## Create a data pipeline
+1. In your workspace, select **+ New item**. Under **Get data**, select **Copy job**.
+2. Enter a name for your Copy job and select **Create**.
+3. On the **Choose data source** page, select your source from the **OneLake catalog**, then select **Next**.
+4. Preview the selected dataset and confirm your selection, then select **Next**.
+5. On the **Choose data destination** page, select your destination warehouse from the **OneLake catalog**.
+6. Choose the copy mode: **Full copy** loads all source data on every run. **Incremental** loads only rows that changed since the previous run.
+7. Adjust the destination schema and table name as needed, then select **Next**.
+8. Optionally, select **Edit column mapping** to rename columns, change data types, or exclude columns from the load.
+9. Review the summary on the **Review + save** page and select **Save + Run**.
 
-There are a few ways to launch the data pipeline editor.
+The Copy job runs and a new pipeline activity appears in the pipeline canvas. Navigate to your warehouse to preview the table and confirm the load succeeded.
 
-- **From the workspace:** Select **+ New**, then select **Data pipeline**. If it's not visible in the list, select **More options**, then find **Data pipeline** under the **Get data** section. 
+For example, you could create a Copy job that loads daily sales CSV files from Azure Blob Storage into your warehouse each morning before your analytics team arrives.
 
-- **From the warehouse asset -** Select **Get Data**, and then **New data pipeline**. 
+## Schedule and monitor a pipeline
 
-    :::image type="content" border="false" source="../media/3-create-data-pipeline.png" alt-text="Screenshot showing the shortcuts for a few features in the Warehouse asset.":::
+After you create a pipeline, you can schedule it to run automatically. Select **Schedule** from the pipeline editor toolbar to set a recurring frequency.
 
-There are three options available when creating a pipeline.
+:::image type="content" border="false" source="../media/3-schedule-data-pipeline.png" alt-text="Screenshot showing where to schedule a data pipeline from the pipeline designer." lightbox="../media/3-schedule-data-pipeline.png":::
 
-:::image type="content" border="false" source="../media/3-build-pipeline.png" alt-text="Screenshot showing the options available when creating a pipeline.":::
+In the schedule configuration, you set the start date, recurrence pattern (hourly, daily, weekly), and time zone. You can also configure a schedule from **Settings** in the **Home** menu.
 
-| Option | Description |
-| --- | --- |
-| **1. Add pipeline activity** | Launches the pipeline editor where you can create your own pipeline. |
-| **2. Copy data** | Launches an assistant to copy data from various data sources to a data destination. A new pipeline activity is generated at the end with a preconfigured **Copy Data** task. |
-| **3. Choose a task to start** | You can choose from a collection of predefined templates to assist you in initiating pipelines based on many scenarios. |
+:::image type="content" border="false" source="../media/3-schedule-configuration.png" alt-text="Screenshot showing the configuration properties when you schedule a data pipeline." lightbox="../media/3-schedule-configuration.png":::
 
-## Configure the copy data assistant
-
-The copy data assistant provides a step-by-step interface that facilitates the configuration of a **Copy Data** task.
-
-:::image type="content" border="false" source="../media/3-copy-data-assistant.png" alt-text="Screenshot showing the copy data assistant.":::
-
-- **Choose data source:** Select a connector, and provide the connection information.
-- **Connect to a data source:** Select, preview, and choose the data. This can be done from tables or views, or you can customize your selection by providing your own query.
-- **Choose data destination:** Select the data store as the destination.
-- **Connect to data destination:** Select and map columns from source to destination. You can load to a new or existing table.
-- **Settings:** Configure other settings like staging, and default values. 
-
-After you copy the data, you can use other tasks to further transform and analyze it. You can also use the **Copy Data** task to publish transformation and analysis results for business intelligence (BI) and application consumption.
-
-## Schedule a data pipeline
-
-You can schedule your data pipeline by selecting **Schedule** from the data pipeline editor.
-
-:::image type="content" border="false" source="../media/3-schedule-data-pipeline.png" alt-text="Screenshot showing where to schedule a data pipeline from the pipeline designer.":::
-
-You can also configure the schedule by selecting **Settings** in the **Home** menu in the data pipeline editor.
-
-:::image type="content" border="false" source="../media/3-schedule-configuration.png" alt-text="Screenshot showing the configuration properties when you schedule a data pipeline.":::
-
-We recommend data pipelines for a code-free or low-code experience due to the graphical user interface. They're ideal for data workflows that run at a schedule, or that connects to different data sources. 
-
-To learn more about data pipelines, see [Ingest data into your Warehouse using data pipelines](/fabric/data-warehouse/ingest-data-pipelines?azure-portal=true).
+Once a scheduled pipeline runs, you can monitor execution history, check run status, and review error details from the pipeline's monitoring view. This helps you identify and troubleshoot failed loads before they affect downstream reports.
