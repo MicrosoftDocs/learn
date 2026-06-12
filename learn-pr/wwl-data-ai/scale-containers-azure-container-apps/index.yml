@@ -3,7 +3,7 @@ uid: learn.wwl.scale-containers-azure-container-apps
 metadata:
   title: Scale Containers in Azure Container Apps
   description: Learn how to configure automatic horizontal scaling for containerized applications in Azure Container Apps using HTTP rules, KEDA scalers, and traffic management.
-  ms.date: 01/26/2026
+  ms.date: 06/11/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

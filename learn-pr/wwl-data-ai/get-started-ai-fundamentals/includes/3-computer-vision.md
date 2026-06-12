@@ -32,7 +32,7 @@ There are multiple types of computer vision model.
 
 Common uses of computer vision include:
 
-- Ai agents that can interpret visual input.
+- AI agents that can interpret visual input.
 - Auto-captioning or tag-generation for photographs.
 - Visual search.
 - Monitoring stock levels or identifying items for checkout in retail scenarios.

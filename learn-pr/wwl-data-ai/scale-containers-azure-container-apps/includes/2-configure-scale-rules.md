@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=35aa66b9-4f6c-4b42-9593-33f89d530495]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Container Apps uses declarative scale rules to manage automatic horizontal scaling. You define the conditions that trigger scaling, and the platform handles creating and removing replicas to match demand. Understanding how to configure these rules is essential for building applications that respond efficiently to traffic patterns while controlling costs.
 
 ## Understand scale definitions
@@ -90,6 +101,8 @@ The scale-down stabilization window is 300 seconds, matching the cool-down perio
 - **Combine multiple scale rules:** When you define multiple rules, the platform scales out when any rule threshold is met. Combine HTTP scaling with CPU or memory rules to handle different traffic patterns and ensure your application scales appropriately for both request volume and resource utilization.
 
 - **Account for cool-down periods:** The 300-second cool-down before scaling to zero can affect cost optimization for bursty workloads. If your application experiences short bursts followed by idle periods, the five-minute delay means replicas continue running and incurring charges during brief quiet periods.
+
+::: zone-end
 
 ## Additional resources
 

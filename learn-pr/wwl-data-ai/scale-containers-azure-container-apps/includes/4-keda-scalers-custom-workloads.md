@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=98ef73ad-a815-4599-81ab-e99954f6d29e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Container Apps supports a broad range of KEDA scalers beyond Azure-native services. These scalers enable event-driven scaling based on Apache Kafka consumer lag, Redis queue depth, Prometheus metrics, scheduled time windows, and many other event sources. Understanding how to configure these scalers expands your options for building applications that respond to diverse workload signals.
 
 ## Explore available KEDA scalers
@@ -114,6 +125,8 @@ The Container Apps format differs from native KEDA in several ways. Container Ap
 - **Combine scheduled and reactive scaling:** Use cron scalers to establish baseline capacity before known peak periods. Add event-driven or HTTP scalers to handle variations and unexpected spikes. This combination ensures capacity is available when needed while still responding to actual demand.
 
 - **Document scaler configurations:** Custom scaler metadata isn't self-documenting. Maintain documentation that explains why specific thresholds were chosen, how authentication is configured, and what metrics drive scaling decisions. This documentation helps team members understand and maintain scaling configurations over time.
+
+::: zone-end
 
 ## Additional resources
 

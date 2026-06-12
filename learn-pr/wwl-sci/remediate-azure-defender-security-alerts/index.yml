@@ -3,20 +3,21 @@ uid: learn.wwl.remediate-azure-defender-security-alerts
 metadata:
   title: Remediate security alerts using Microsoft Defender for Cloud
   description: "Remediate security alerts using Microsoft Defender for Cloud"
-  ms.date: 02/22/2023
-  author: wwlpublish
+  ms.date: 06/10/2026
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: defender-for-cloud
+  ai-usage: ai-assisted
 title: Remediate security alerts using Microsoft Defender for Cloud
 summary: Learn how to remediate security alerts in Microsoft Defender for Cloud.
 abstract: |
-  Upon completion of this module, the learner will be able to:
+  Upon completion of this module, the learner is able to:
   - Describe alerts in Microsoft Defender for Cloud
   - Remediate alerts in Microsoft Defender for Cloud
   - Automate responses in Microsoft Defender for Cloud
 prerequisites: |
-  - Basic familiarity with Azure services, specifically Azure SQL Database and Azure Storage.
+  - Basic familiarity with Azure services, specifically Azure SQL Database, and Azure Storage.
   - Familiarity with Azure virtual machines and virtual networking.
 iconUrl: /training/achievements/azure-defender-security-alerts.svg
 levels:

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9dc2710b-971a-4025-8de9-4c2b24cda445]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Revision modes in Azure Container Apps determine how your application handles deployments and how multiple versions can coexist. The revision mode you choose affects scaling behavior, traffic distribution, and deployment strategies. Understanding these modes helps you implement appropriate deployment patterns for your operational requirements.
 
 ## Understand revisions and scaling
@@ -85,6 +96,8 @@ Monitor each revision separately during traffic splitting. Use Azure Monitor to 
 - **Deactivate old revisions promptly:** Active revisions scale independently and consume resources. After completing a traffic transition, deactivate the old revision to prevent ongoing resource consumption. Inactive revisions remain available for reactivation if you need to roll back.
 
 - **Test with labels before traffic splitting:** Use revision labels to validate new revisions through direct access before adding them to traffic distribution. This approach lets testers validate the new revision without affecting production traffic. Once validation completes, add the revision to traffic splitting.
+
+::: zone-end
 
 ## Additional resources
 
