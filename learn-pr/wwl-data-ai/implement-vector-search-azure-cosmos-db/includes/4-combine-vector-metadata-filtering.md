@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6242f318-6862-4703-a045-4025c2345dd8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Real-world AI applications rarely rely on pure semantic search. Users typically want results filtered by category, date range, access permissions, or other attributes. Azure Cosmos DB's integrated architecture enables you to combine vector similarity search with traditional query filters in a single query, and to merge semantic results with keyword-based full-text search using hybrid search techniques.
 
 ## Add WHERE clauses to vector queries
@@ -207,6 +218,8 @@ Complex queries with filters and hybrid search consume more RUs than simple vect
 **Test with production data volumes:** Query performance characteristics change significantly between development datasets (thousands of documents) and production datasets (millions of documents). Test early with representative data sizes.
 
 You can monitor query metrics through the Azure portal or by examining the response headers from the SDK. The `x-ms-request-charge` header shows the RU cost of each query, helping you identify expensive operations that might need optimization.
+
+::: zone-end
 
 ## Additional resources
 

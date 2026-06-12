@@ -3,8 +3,8 @@ uid: learn.wwl.describe-medallion-architecture.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 05/23/2025
+  description: "Learn how the medallion architecture organizes raw data into bronze, silver, and gold layers in a Fabric lakehouse, and explore what you'll cover in this module."
+  ms.date: 06/10/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: unit

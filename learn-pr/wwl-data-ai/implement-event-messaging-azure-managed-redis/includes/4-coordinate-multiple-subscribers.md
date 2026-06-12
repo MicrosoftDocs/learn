@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=61c519a7-cd43-4c07-9d88-760a645d9af6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When building scalable AI applications with Azure Cache for Redis or Azure Managed Redis, understanding how to coordinate multiple subscribers is crucial for choosing the right architecture. The behavior differs significantly depending on whether you're using pub/sub or Streams, and each approach serves different coordination needs in your AI backend services.
 
 Imagine you have three worker services processing AI inference requests. With pub/sub, if you subscribe all three workers to the same channel, every worker receives every message—creating duplicate processing. This wastes GPU cycles and produces inconsistent results. With Streams consumer groups, each inference request goes to exactly one worker, distributing the workload automatically. This difference helps you choose the right tool and avoid common scaling pitfalls.
@@ -16,7 +27,7 @@ redis_client.publish('ai:cache:invalidate', 'embeddings-v2')
 
 # All of these subscribers receive the message:
 # - Subscriber 1 (API server instance 1)
-# - Subscriber 2 (API server instance 2)  
+# - Subscriber 2 (API server instance 2)
 # - Subscriber 3 (Background worker)
 # - Subscriber 4 (Analytics service)
 ```
@@ -34,9 +45,9 @@ Use pub/sub when you need all your services to react to the same event:
     def update_model(model_id, new_version):
         save_model_to_storage(model_id, new_version)
         # Notify all API instances to clear cache
-        redis_client.publish('ai:models:cache:invalidate', 
+        redis_client.publish('ai:models:cache:invalidate',
                             f'{model_id}:{new_version}')
-    
+
     # Each API instance subscribes and clears its own cache
     pubsub = redis_client.pubsub()
     pubsub.subscribe('ai:models:cache:invalidate')
@@ -110,7 +121,7 @@ def setup_worker_infrastructure():
 # Worker processing loop (runs on each worker instance)
 def process_documents():
     worker_id = f"{os.getenv('HOSTNAME')}-{os.getpid()}"
-    
+
     while True:
         messages = redis_client.xreadgroup(
             groupname='analysis-workers',
@@ -119,12 +130,12 @@ def process_documents():
             count=5,
             block=5000
         )
-        
+
         for stream, tasks in messages:
             for task_id, task_data in tasks:
                 analyze_document(task_data)
-                redis_client.xack('ai:document:analysis', 
-                                 'analysis-workers', 
+                redis_client.xack('ai:document:analysis',
+                                 'analysis-workers',
                                  task_id)
 ```
 
@@ -136,7 +147,7 @@ When reading from a consumer group, the `>` symbol tells Redis to give you new m
 
 ```python
 # Read only NEW messages not yet delivered to any consumer
-redis_client.xreadgroup('workers', 'worker-1', 
+redis_client.xreadgroup('workers', 'worker-1',
                        {'ai:queue': '>'}, count=10)
 ```
 
@@ -160,9 +171,9 @@ One of the key advantages of consumer groups is that you can add or remove worke
 
 def worker_main():
     setup_worker_infrastructure()  # Idempotent group creation
-    
+
     worker_id = generate_unique_worker_id()
-    
+
     while True:
         tasks = fetch_next_tasks('workers', worker_id)
         process_tasks(tasks)
@@ -189,13 +200,13 @@ def reassign_abandoned_tasks():
         '-', '+',
         count=100
     )
-    
+
     current_time = int(time.time() * 1000)
-    
+
     for task in pending:
         task_id = task['message_id']
         idle_time = current_time - task['time_since_delivered']
-        
+
         # Task processes for more than 5 minutes, likely stuck
         if idle_time > 300000:
             # Claim it for reprocessing
@@ -206,7 +217,7 @@ def reassign_abandoned_tasks():
                 300000,
                 message_ids=(task_id,)
             )
-            
+
             # Now process it
             reprocess_stuck_task(task_id)
 ```
@@ -220,7 +231,7 @@ Each worker can check for its own pending tasks on startup, enabling automatic r
 ```python
 def worker_startup_recovery():
     worker_id = get_worker_id()
-    
+
     # Check if this worker holds any pending tasks from before crash
     pending = redis_client.xpending_range(
         'ai:inference:queue',
@@ -228,15 +239,15 @@ def worker_startup_recovery():
         '-', '+',
         count=100
     )
-    
+
     # Filter for tasks assigned to this consumer
     my_pending = [p for p in pending if p['consumer'] == worker_id]
-    
+
     # Retry each pending task
     for task in my_pending:
         try:
             retry_task(task['message_id'])
-            redis_client.xack('ai:inference:queue', 'workers', 
+            redis_client.xack('ai:inference:queue', 'workers',
                             task['message_id'])
         except Exception as e:
             log_error(f"Retry failed for {task['message_id']}: {e}")
@@ -271,9 +282,9 @@ When you need all API instances to react to the same event (like clearing caches
 # Service that updates AI models
 def deploy_new_model(model_name, version):
     upload_model_to_storage(model_name, version)
-    
+
     # Notify all API servers to invalidate cache
-    redis_client.publish('ai:models:invalidate', 
+    redis_client.publish('ai:models:invalidate',
                         json.dumps({
                             'model': model_name,
                             'version': version,
@@ -283,10 +294,10 @@ def deploy_new_model(model_name, version):
 # Each API server instance runs this subscriber
 async def cache_invalidation_listener():
     redis_client = redis.asyncio.Redis(...)
-    
+
     async with redis_client.pubsub() as pubsub:
         await pubsub.subscribe('ai:models:invalidate')
-        
+
         async for message in pubsub.listen():
             if message['type'] == 'message':
                 data = json.loads(message['data'])
@@ -308,21 +319,21 @@ async def queue_inference(request: InferenceRequest):
         'user_id': request.user_id,
         'priority': request.priority
     })
-    
+
     return {"task_id": task_id, "status": "queued"}
 
 # Worker service (multiple instances running this code)
 def inference_worker():
     # Setup consumer group (idempotent)
     try:
-        redis_client.xgroup_create('ai:inference:queue', 
-                                   'inference-workers', 
+        redis_client.xgroup_create('ai:inference:queue',
+                                   'inference-workers',
                                    '0', mkstream=True)
     except:
         pass
-    
+
     worker_id = f"{socket.gethostname()}-{os.getpid()}"
-    
+
     while True:
         # Each worker gets different tasks automatically
         messages = redis_client.xreadgroup(
@@ -332,7 +343,7 @@ def inference_worker():
             count=1,
             block=5000
         )
-        
+
         for stream, tasks in messages:
             for task_id, task_data in tasks:
                 try:
@@ -341,7 +352,7 @@ def inference_worker():
                         task_data['model']
                     )
                     save_result(task_id, result)
-                    
+
                     # Mark complete
                     redis_client.xack('ai:inference:queue',
                                      'inference-workers',
@@ -365,7 +376,7 @@ async def process_document(doc: UploadFile):
         'size': doc.size,
         'user': current_user.id
     })
-    
+
     # Broadcast notification for real-time updates
     redis_client.publish('ai:documents:events',
                         json.dumps({
@@ -373,7 +384,7 @@ async def process_document(doc: UploadFile):
                             'task_id': task_id,
                             'user': current_user.id
                         }))
-    
+
     return {"task_id": task_id}
 
 # Multiple worker instances process from the Stream (coordinated)
@@ -382,7 +393,7 @@ def document_processor_worker():
 
 # Multiple services listen to events (broadcast)
 # - WebSocket service broadcasts to user's browser
-# - Analytics service records metrics  
+# - Analytics service records metrics
 # - Monitoring service tracks queue depth
 async def event_listener_service():
     async with redis_client.pubsub() as pubsub:
@@ -391,6 +402,8 @@ async def event_listener_service():
             # Each service processes events independently
             handle_event(message['data'])
 ```
+
+::: zone-end
 
 ## Additional resources
 

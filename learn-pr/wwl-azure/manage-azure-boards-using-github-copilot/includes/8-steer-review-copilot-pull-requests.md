@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d49c085a-e27d-4955-8cf2-5abe28b9d3c0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Copilot-assisted pull requests still require active human supervision, often described as **human-in-the-loop**. Steering and review are where teams convert AI speed into reliable outcomes.
 
 ## Real-time steering practices
@@ -39,3 +50,5 @@ This disciplined review approach preserves quality while maintaining delivery ve
 ## Summary
 
 Steering and review are the controls that turn AI assistance into production-ready delivery. By combining concise guidance with consistent human review standards, teams can keep quality high while still benefiting from faster implementation.
+
+::: zone-end

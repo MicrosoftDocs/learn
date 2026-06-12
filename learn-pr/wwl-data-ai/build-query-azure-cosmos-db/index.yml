@@ -3,7 +3,7 @@ uid: learn.wwl.build-query-azure-cosmos-db
 metadata:
   title: Build Queries for Azure Cosmos DB for NoSQL
   description: Learn how to connect to Azure Cosmos DB for NoSQL, use the SDK to perform CRUD operations, and write SQL queries to retrieve document data for AI applications.
-  ms.date: 02/05/2026
+  ms.date: 06/12/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

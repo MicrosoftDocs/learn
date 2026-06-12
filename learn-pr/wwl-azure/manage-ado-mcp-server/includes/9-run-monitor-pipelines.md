@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bc7bb0f6-3ccb-47f5-883e-1df7f209e6bd]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Pipeline visibility is essential for reliable delivery, especially when multiple branches and services are in flight. Let's now focus on running and monitoring Azure Pipelines through MCP, so you can move from intent to execution status quickly.
 
 ## Pipeline objectives using MCP
@@ -68,3 +79,5 @@ During retrospectives, concise trend snapshots are often enough to identify prio
 For each active run, treat monitoring as active control, not passive observation. Confirm that build ID is captured and shared, verify branch alignment, maintain awareness of stage and queue position, and define the next escalation trigger before it is needed. This operating posture helps teams act quickly when a run shifts from healthy to risky.
 
 By shifting SRE monitoring from complex dashboards to clear, targeted prompts thanks to the ADO MCP Server capabilities, it becomes an even more powerful tool. Not just for the DevOps/SRE teams, but for the broader business.
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4daf59e4-702a-4ddb-90e2-80d8c34ee138]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Choosing between Redis Hash and JSON data structures affects memory usage, performance, and how you work with your vector data. Understanding the tradeoffs helps you optimize for your application's needs.
 
 Imagine you're building a product catalog with vector embeddings for similarity search. Each product has a name, price, category, and a 1536-dimensional embedding. If your data is simple and flat, Redis Hash stores it compactly with minimal overhead—just the fields you need. But if products have nested attributes (like multiple images, variant SKUs, or hierarchical categories), JSON lets you store complex structures naturally while still supporting vector search. Choosing the right structure ensures your system is both performant and maintainable.
@@ -187,6 +198,8 @@ Use this guide to choose your data structure:
 - Flexibility is more important than raw performance
 
 For most vector search applications with simple metadata, Hash provides the best balance of performance and simplicity. Use JSON when your data complexity requires it.
+
+::: zone-end
 
 ## Additional resources
 

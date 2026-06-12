@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=156b93b2-a53d-420a-9408-ed3c63179aac]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Once your container stores documents with embeddings, you can execute vector similarity queries to find semantically related content. The `VectorDistance` function calculates similarity between vectors and enables queries that understand meaning rather than matching exact keywords. You can build more responsive AI applications if you understand query syntax, result ordering, and performance considerations.
 
 ## Use the VectorDistance function
@@ -187,6 +198,8 @@ query = """
 ```
 
 **Monitor RU consumption:** Use the Azure portal or SDK to track RU charges for vector queries. High RU consumption might indicate missing indexes, excessive result counts, or suboptimal partition key design.
+
+::: zone-end
 
 ## Additional resources
 

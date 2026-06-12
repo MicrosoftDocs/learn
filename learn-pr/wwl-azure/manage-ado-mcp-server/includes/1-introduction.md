@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=efb2d81e-ce5d-4c5b-8ac2-0af986a8d2b8]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Modern software delivery teams are expected to deliver faster releases, maintain high reliability, and keep security and governance controls intact. In many organizations, Azure DevOps already provides the process backbone for that work through Boards, Repos, Pipelines, and related services. At the same time, teams are adopting AI-assisted workflows to reduce repetitive effort and accelerate routine tasks. The opportunity is clear, but so is the challenge: how can teams use conversational AI for daily DevOps operations without bypassing the safeguards that matter?
 
 Azure DevOps MCP Server addresses this challenge by exposing Azure DevOps capabilities as callable tools that can be invoked by using natural language (also known as prompts) through GitHub Copilot (or other similar Generative AI platforms). Instead of manually navigating several tabs to perform common actions, users can request outcomes directly in chat. Examples include listing project context, finding sprint work, creating and updating work items, reviewing pull request details, triggering pipelines, and retrieving build logs. Importantly, these operations still run through explicit tool calls and user approvals, helping preserve a human-in-the-loop model.
@@ -42,9 +50,7 @@ After completing this module, you’ll be able to use MCP protocol-based interac
 - Validate and approve operations with clear awareness of scope and risk.
 - Apply governance practices for secure, repeatable AI-assisted delivery.
 
+::: zone-end
 
-
-
-
-
-
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

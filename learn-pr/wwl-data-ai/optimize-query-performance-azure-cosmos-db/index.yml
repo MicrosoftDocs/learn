@@ -3,7 +3,7 @@ uid: learn.wwl.optimize-query-performance-azure-cosmos-db
 metadata:
   title: Optimize Query Performance for Azure Cosmos DB for NoSQL
   description: Learn how to optimize query performance and reduce costs for Azure Cosmos DB for NoSQL workloads by configuring indexes and selecting consistency levels.
-  ms.date: 02/05/2026
+  ms.date: 06/12/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

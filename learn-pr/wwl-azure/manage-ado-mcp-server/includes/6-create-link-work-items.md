@@ -1,6 +1,17 @@
-Work items within Azure (DevOps) Boards is probably one of the most-common used features in Azure DevOps. Even if you are using other CI/CD pipeline tools, or maybe not even running pipelines, Azure Boards has proven to be a powerful planning tool.
+::: zone pivot="video"
 
-Therefore, work item quality strongly influences delivery quality. If a bug or task is vague, implementation and review become inconsistent. If GitHub Copilot and the LLMs cannot rely on accurate information, the response you get back will be inaccurate as well. Often, information gets lost or unspecified in the complex work item form and requires moving around different tabs. But there might be a more user-friendly solution to this potential risk.
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3c504517-504b-40c9-8fd2-1cac4dde489f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
+Work items within Azure (DevOps) Boards is probably one of the most-common used features in Azure DevOps. Even if you're using other CI/CD pipeline tools, or maybe not even running pipelines, Azure Boards has proven to be a powerful planning tool.
+
+Therefore, work item quality strongly influences delivery quality. If a bug or task is vague, implementation and review become inconsistent. If GitHub Copilot and the LLMs can't rely on accurate information, the response you get back will be inaccurate as well. Often, information gets lost or unspecified in the complex work item form and requires moving around different tabs. But there might be a more user-friendly solution to this potential risk.
 
 This unit focuses on creating and linking work items through MCP, with enough structure to support planning, execution, and traceability.
 
@@ -21,7 +32,7 @@ A request like this reduces follow-up friction and yields cleaner payload genera
 
 ## Iterative enrichment after creation
 
-Even strong first prompts may require enrichment. Use follow-up actions to improve operational value:
+Even strong first prompts require enrichment. Use follow-up actions to improve operational value:
 
 - Add reproduction steps in discussion comments
 - Assign ownership explicitly
@@ -32,7 +43,7 @@ These details support triage, capacity planning, and faster root-cause analysis 
 
 ## Reusing the power of work item linking
 
-Linking work items together, is not just specifying (optional) metadata. It is one of the most valuable traceability tools in Azure DevOps. And to no surprise, also available through the MCP Server tool integration. Use links to connect:
+Linking work items together, isn't just specifying (optional) metadata. It's one of the most valuable traceability tools in Azure DevOps. And to no surprise, also available through the MCP Server tool integration. Use links to connect:
 
 - Bug to related bug
 - Bug to user story
@@ -58,7 +69,7 @@ Before closing a creation flow, verify that the item includes:
 
 High-quality work item creation reduces clarification loops, prevents duplicate issue tracking, and makes PR and pipeline outcomes easier to interpret. In MCP workflows, clarity at creation time compounds value later because many downstream prompts rely on well-structured work metadata.
 
-Use creation and linking together, just like you typically do from the Azure DevOps management portal. A complete item is not only created; it is connected and completed with all the right and necessary information.
+Use creation and linking together, just like you typically do from the Azure DevOps management portal. A complete item isn't only created; it's connected and completed with all the right and necessary information.
 
 ## Extended quality guidance
 
@@ -67,13 +78,13 @@ When writing prompts for work item creation, prefer observable language over spe
 For linked work, include short relationship notes whenever possible. A simple clarification such as "likely same root cause as #1234 after iOS update" can save substantial time during later analysis. Over time, these small annotations become a valuable institutional memory for recurring issues and regression tracking.
 
 > [!NOTE]
-> Several of these work item guidelines are not specifically related to the ADO MCP Server approach, but would qualify as overall best practices for managing Azure DevOps work items.
+> Several of these work item guidelines aren't related to the ADO MCP Server approach, but would qualify as overall best practices for managing Azure DevOps work items.
 
 ## Scenario example: turning a vague report into actionable work
 
-A common real-world input is a vague report such as “login is broken on phones.” In this case, start by creating a bug with observable behavior and minimal assumptions. Then enrich progressively: device or browser context, reproduction steps, expected versus actual outcome, and impact scope. This staged approach is faster and more accurate than trying to infer everything in one prompt.
+A common real-world input is a vague report such as “sign-in is broken on phones.” In this case, start by creating a bug with observable behavior and minimal assumptions. Then enrich progressively: device or browser context, reproduction steps, expected versus actual outcome, and impact scope. This staged approach is faster and more accurate than trying to infer everything in one prompt.
 
-After creation, search for similar historical items and link where relevant. Even if the issue is not identical, related links can reveal prior mitigations, known edge cases, or release dependencies. These links accelerate triage and prevent teams from rediscovering known patterns. Know that you can now rely on the MCP Server integration, together with GitHub Copilot prompting, to assist in gathering the right information. 
+After creation, search for similar historical items and link where relevant. Even if the issue isn't identical, related links can reveal prior mitigations, known edge cases, or release dependencies. These links accelerate triage and prevent teams from rediscovering known patterns. Know that you can now rely on the MCP Server integration, together with GitHub Copilot prompting, to help gathering the right information. 
 
 ## Reusability and reporting benefits
 
@@ -91,10 +102,8 @@ Months later, linked and well-documented items become a strategic asset during a
 
 ## Template starter suggestion
 
-If your team is new to structured item creation, define a simple template: title, impact statement, reproduction hint, acceptance note, owner, and related links. Using this template in MCP prompts reduces variability and improves triage speed across contributors.
+If your team is new to structured item creation, define a minimal template: title, impact statement, reproduction hint, acceptance note, owner, and related links. Using this template in MCP prompts reduces variability and improves triage speed across contributors.
 
 As adoption matures, review a random sample of created items monthly and score them against the template. This lightweight quality loop keeps standards visible and measurable.
 
-
-
-
+::: zone-end

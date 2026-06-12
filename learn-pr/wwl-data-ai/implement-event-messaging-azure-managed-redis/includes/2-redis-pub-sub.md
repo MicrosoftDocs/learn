@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f7c69022-987a-4ab5-9539-5c46d5bef6a4]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Both Azure Cache for Redis and Azure Managed Redis provide powerful messaging capabilities through the publish/subscribe (pub/sub) pattern, enabling real-time, asynchronous communication between different parts of your AI application. This messaging model allows publishers to send messages to named channels without knowing which subscribers, if any, are listening. Subscribers can listen to one or more channels and receive messages as they're published, creating a loosely coupled, event-driven AI architecture.
 
 Imagine you're building an intelligent customer service system with multiple AI components: a conversation analyzer, sentiment detector, knowledge retrieval system, and response generator. Without pub/sub, each component would need to constantly poll for new messages or wait for direct API calls, creating bottlenecks and delays in AI processing. With Redis pub/sub (available in both Azure services), when a new customer message arrives, the message ingestion service publishes an event to the "conversations:new" channel. The sentiment analyzer, intent classifier, and context manager can all subscribe to this channel and immediately begin parallel processing, enabling real-time AI responses and seamless coordination between AI services without tight coupling.
@@ -61,13 +72,13 @@ While pub/sub is powerful for real-time messaging, it has important limitations:
 
 - **No backpressure handling:** If subscribers can't keep up with message volume, Redis continues delivering messages, potentially causing memory issues or message loss in the subscriber applications.
 
-## When to use pub/sub 
+## When to use pub/sub
 
-Understanding when to choose Redis pub/sub versus other messaging solutions is crucial for building effective AI systems. 
+Understanding when to choose Redis pub/sub versus other messaging solutions is crucial for building effective AI systems.
 
 **Use Redis pub/sub for AI solutions when you need**:
 - Real-time coordination between AI services with sub-millisecond latency
-- Broadcasting model updates or predictions to multiple AI components simultaneously  
+- Broadcasting model updates or predictions to multiple AI components simultaneously
 - Loose coupling between AI microservices and ML pipelines
 - High-throughput messaging for AI events and model predictions
 - Simple event distribution for AI workflows without complex routing
@@ -86,7 +97,7 @@ Use `PUBLISH` to send messages to channels. Publishers are typically part of you
 def notify_model_updated(model_name, version):
     message = f"{model_name}:{version}"
     redis_client.publish('ai:models:updated', message)
-    
+
 # Publish embedding refresh notification
 def notify_embeddings_refreshed(collection_id):
     redis_client.publish('ai:embeddings:refresh', collection_id)
@@ -106,7 +117,7 @@ for message in pubsub.listen():
     if message['type'] == 'message':
         channel = message['channel']
         data = message['data']
-        
+
         if channel == 'ai:models:updated':
             # Clear model cache
             clear_model_cache(data)
@@ -130,7 +141,7 @@ for message in pubsub.listen():
         pattern = message['pattern']  # 'ai:*'
         channel = message['channel']  # Actual channel name
         data = message['data']
-        
+
         print(f"Received on {channel}: {data}")
         handle_ai_event(channel, data)
 ```
@@ -155,10 +166,10 @@ async def redis_listener(websocket: WebSocket):
         ssl=True,
         decode_responses=True
     )
-    
+
     async with redis_client.pubsub() as pubsub:
         await pubsub.subscribe('ai:predictions:ready')
-        
+
         async for message in pubsub.listen():
             if message['type'] == 'message':
                 # Forward Redis message to WebSocket client
@@ -172,6 +183,8 @@ async def websocket_endpoint(websocket: WebSocket, client_id: str):
     await websocket.accept()
     await redis_listener(websocket)
 ```
+
+::: zone-end
 
 ## Additional resources
 

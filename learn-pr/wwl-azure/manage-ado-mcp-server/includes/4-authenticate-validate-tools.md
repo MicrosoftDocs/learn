@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c442482a-26f4-4e07-b9bc-b351c4e6d44c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Authentication and tool validation are more than onboarding steps. They set the tone for everything that follows. Once you begin using MCP for Azure DevOps tasks, each approval decision becomes part of your operating model. In this unit, the focus is to help you build a pattern that feels practical in daily work: confirm who you are, verify where an action runs, inspect what is being requested, and approve deliberately.
 
 ## Why validation matters
@@ -57,8 +68,4 @@ When exceptions are necessary, record why the exception exists, how long it shou
 
 New users often trust natural language interactions too quickly because the experience feels intuitive. Coaching should focus on a simple reflection before approval: confirm scope, confirm action type, and confirm expected impact. This tiny routine builds judgment without introducing heavy process. You would apply the same principals in the traditional Azure DevOps interface, when a popup would appear to ask for confirmation. That split-second hesitation before confirming, double-checking if what you are trying to do is correct, should remain when interacting with the system through natural language prompts.
 
-
-
-
-
-
+::: zone-end

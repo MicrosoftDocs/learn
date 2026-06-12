@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bb0ff995-b1a1-4cc7-886a-0946836f6f71]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 As teams mature, they can delegate multiple independent work items in parallel. The key is deliberate coordination to avoid merge conflicts and hidden dependencies.
 
 ## Identify safe parallel candidates
@@ -39,3 +50,5 @@ Parallel execution improves throughput only when orchestration remains intention
 ## Summary
 
 Coordinating multiple delegated items is a scaling technique, not a default starting point. With clear boundaries, cross-PR checks, and disciplined merge ordering, teams can gain speed while protecting stability and predictability.
+
+::: zone-end

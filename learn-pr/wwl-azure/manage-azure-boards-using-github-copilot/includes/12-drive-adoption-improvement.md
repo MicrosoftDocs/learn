@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=140e2845-23d3-4d59-b0ca-43d80eef6c67]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Sustainable adoption depends on measurable outcomes, not just tool enablement. Start small, measure objectively, and scale what works.
 
 ## Pilot-to-scale approach
@@ -34,17 +45,19 @@ Improve results through deliberate enablement:
 
 ## Continuous improvement loop
 
-Continuous improvement means treating each sprint as a feedback cycle. You are not only delivering features; you are also improving how your team collaborates with Copilot.
+Continuous improvement means to treat each sprint as a feedback cycle. You aren't only delivering features; you're also improving how your team collaborates with Copilot.
 
 At the end of each sprint:
 
 - Identify where Copilot created clear acceleration.
 - Identify where ambiguity caused churn.
 - Update templates, policies, and coaching materials.
-- Re-test and compare metrics in the next sprint.
+- Retest and compare metrics in the next sprint.
 
 This approach turns integration into a repeatable delivery capability.
 
 ## Summary
 
 Long-term adoption succeeds when teams combine phased rollout, balanced metrics, and regular coaching. By measuring outcomes and refining practices each sprint, you can turn AI-assisted delivery into a stable and scalable team capability.
+
+::: zone-end
