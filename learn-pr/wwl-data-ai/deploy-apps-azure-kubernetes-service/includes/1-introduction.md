@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f351e006-ff30-4a4c-9de3-df88d7a3fb47]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Kubernetes Service (AKS) is a managed Kubernetes cluster running on Azure infrastructure, allowing you to deploy and manage containerized applications without managing the control plane. This module guides you through deploying and exposing AI workloads—like model inference APIs, vector search services, and other containerized applications—on AKS.
 
 Imagine you built a Python FastAPI application that provides AI model inference capabilities. Your application is containerized and ready to run, but you need to deploy it where multiple users can access it with high availability. Without AKS, you'd manage Kubernetes infrastructure yourself or use other deployment methods with limited scalability. With AKS, you define simple YAML manifests and deploy your containerized app to a fully managed Kubernetes cluster—your application automatically scales, survives pod crashes, and becomes accessible to external clients through a load balancer.
@@ -24,3 +32,8 @@ Before diving into manifests and deployment, understand these core Kubernetes co
 **kubectl**: The command-line tool for interacting with Kubernetes. You use kubectl to apply manifests, check pod status, view logs, and troubleshoot issues.
 
 These four concepts—Pods, Deployments, Services, and kubectl—are all you need to deploy and expose applications on AKS.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
