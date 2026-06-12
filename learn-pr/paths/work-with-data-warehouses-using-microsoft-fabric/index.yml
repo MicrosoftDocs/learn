@@ -1,15 +1,15 @@
 ### YamlMime:LearningPath
 uid: learn-wwl.work-with-data-warehouses-using-microsoft-fabric
 metadata:
-  title: Implement a data warehouse with Microsoft Fabric DP-602T00
-  description: Explore the data warehousing process and learn how to load, monitor, secure, and query a warehouse in Microsoft Fabric. (DP-602T00)
-  ms.date: 05/08/2026
+  title: Implement a data warehouse with Microsoft Fabric
+  description: Explore the data warehousing process and learn how to load, monitor, secure, and query a warehouse in Microsoft Fabric.
+  ms.date: 06/12/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: learning-path
 title: Implement a data warehouse with Microsoft Fabric
 prerequisites: |
-  You should be familiar with basic data concepts and terminology.
+  Before starting this learning path, familiarity with the Microsoft Fabric interface and core concepts is recommended.
 summary: |
   Explore the data warehousing process and learn how to load, monitor, secure, and query a warehouse in Microsoft Fabric.
 iconUrl: /training/achievements/work-with-data-warehouses-using-microsoft-fabric.svg
@@ -23,7 +23,6 @@ products:
 subjects:
 - data-analytics
 - data-engineering
-- data-integration
 modules:
 - learn.wwl.introduction-end-analytics-use-microsoft-fabric
 - learn.wwl.get-started-data-warehouse

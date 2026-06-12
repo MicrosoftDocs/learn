@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=63021570-a9c5-4468-b1d1-eabb2a85e066]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Choosing the right vector data type, distance metric, and indexing algorithm directly impacts your application's accuracy, performance, and resource usage. Understanding these configuration options helps you optimize vector search for your specific AI workload.
 
 Imagine you're building a recommendation engine that suggests similar products based on user browsing history. You generate embeddings for thousands of products, but your search needs to return results in under 10 milliseconds to keep users engaged. If you choose exact search (FLAT indexing), you might achieve perfect accuracy but with latency that scales poorly as your product catalog grows. Alternatively, approximate search (HNSW) can deliver 99% accuracy with sub-10ms queries even on millions of products. Making informed choices about vector types, distance metrics, and indexing algorithms ensures your system meets both accuracy and performance requirements.
@@ -180,6 +191,8 @@ for ef_runtime in [50, 100, 200]:
 
     print(f"EF_RUNTIME={ef_runtime}: {latency:.2f}ms")
 ```
+
+::: zone-end
 
 ## Additional resources
 

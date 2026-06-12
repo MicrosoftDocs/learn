@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ead1042a-bf53-4b17-9993-c9f5df4407a9]
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI applications require fast, accurate similarity search over high-dimensional embeddings to deliver intelligent, context-aware experiences. This module guides you through implementing vector storage and retrieval with Azure Managed Redis to enable semantic search, recommendations, and retrieval-augmented generation (RAG) in your AI solutions.
 
 Imagine you're a developer building an AI-powered knowledge management system for a large enterprise. Your system stores millions of technical documents, and users need to find relevant information through natural language questions—not just keyword matching, but true semantic understanding. You integrated an embedding API to convert documents and queries into 1536-dimensional vectors, but now you need somewhere to store these millions of vectors and search them in milliseconds to keep users engaged. Without proper vector storage, you face impossible choices: either use a traditional database that can't efficiently handle high-dimensional similarity search at scale (resulting in multi-second query times), or build a complex distributed search infrastructure from scratch (requiring months of development). You also need to handle metadata filtering (like "find similar documents but only from the engineering department"), update vectors as documents change, and choose between different data structures and indexing algorithms to balance accuracy, speed, and memory usage. The client expects sub-100ms query responses even with millions of vectors, the ability to filter by metadata, and the flexibility to switch between exact and approximate search as datasets grow. Without the right vector database infrastructure, delivering a performant, scalable semantic search system would require building extensive custom indexing code.
@@ -11,3 +19,8 @@ After completing this module, you'll be able to:
 
 > [!NOTE]
 > All code examples in this module are based on the most recent version of the `redis-py` library at the time of writing. The library is updated often and the recommendation is to visit the [redis-py GitHub](https://github.com/redis/redis-py) site for the most up-to-date information.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

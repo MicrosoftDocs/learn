@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=abe6606e-06ae-467f-9ac3-b2f303da8927]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI-assisted delivery should accelerate work without weakening governance. Define clear controls for permissions, review policy, and sensitive operations.
 
 ## Governance baseline
@@ -47,3 +58,5 @@ Use Azure DevOps dashboards for organizational rollup and GitHub for PR-level de
 ## Summary
 
 Strong governance and security practices are essential for sustainable AI-assisted delivery. By applying clear guardrails, explicit security rules, and outcome-based metrics, teams can scale Copilot usage confidently without losing control.
+
+::: zone-end

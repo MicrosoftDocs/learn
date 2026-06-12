@@ -3,14 +3,13 @@ uid: learn.wwl.get-started-fabric-iq
 metadata:
   title: Get Started with Fabric IQ
   description: Learn how to use Fabric IQ to model business concepts in an ontology, bind them to data sources, visualize relationships, and build data agents grounded in your business vocabulary.
-  ms.date: 04/17/2026
+  ms.date: 06/12/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: learning-path
 title: Get started with Fabric IQ
 prerequisites: |
-  - Familiarity with Microsoft Fabric workspaces and navigation
-  - Basic understanding of data concepts such as tables, relationships, and queries
+  Before starting this learning path, familiarity with Microsoft Fabric workspaces and basic data concepts such as tables, relationships, and queries is recommended.
 summary: |
   Fabric IQ lets you define business vocabulary in an ontology and bind it to data sources in OneLake. In this learning path, you start with the fundamentals of Fabric IQ, then build an ontology by creating entity types and relationships, visualize your data through interactive graphs, and connect an ontology to a data agent so business users can ask questions in natural language.
 iconUrl: /training/achievements/generic-trophy.svg

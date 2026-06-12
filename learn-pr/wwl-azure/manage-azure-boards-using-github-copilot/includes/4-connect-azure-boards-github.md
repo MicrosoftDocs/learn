@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=87550cc2-72a7-44f0-ab65-5cc9ee2380e2]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 After prerequisites are in place, connect Azure Boards to GitHub so commits and pull requests can be linked to work items.
 
 ## Connect the platforms
@@ -44,3 +55,5 @@ When integration issues arise, systematic checks of your configuration and permi
 ## Summary
 
 Connecting Azure Boards to GitHub enables seamless traceability between your work items and code changes. By following a structured approach—installing the GitHub app, configuring authentication, and validating the connection—you establish a foundation for effective collaboration. Starting with a pilot repository and scaling gradually helps your team adopt the integration confidently while maintaining security and permissions best practices. With proper setup and troubleshooting, your team gains complete visibility into development progress and can link commits and pull requests directly to work items, streamlining your delivery workflow.
+
+::: zone-end

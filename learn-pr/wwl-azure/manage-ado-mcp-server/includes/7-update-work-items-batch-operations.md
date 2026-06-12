@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5cbc2e04-b704-42b9-bdf4-58c972d1ff76]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 After work items are created, most of the daily operational effort shifts to updates. State transitions, assignee changes, tag normalization, and iterative cleanup all influence planning accuracy. 
 
 This unit focuses on executing those updates safely and efficiently through MCP.
@@ -84,7 +95,4 @@ Once the Epic is created in Azure DevOps through MCP, you continue the planning 
 
 This end-to-end planning pattern—from Copilot Chat ideation to MCP execution—unlocks the full value of AI-assisted Azure DevOps workflows and keeps your backlog aligned with intent from the start.
 
-
-
-
-
+::: zone-end

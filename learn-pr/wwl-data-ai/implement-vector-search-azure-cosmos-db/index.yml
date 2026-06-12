@@ -3,7 +3,7 @@ uid: learn.wwl.implement-vector-search-azure-cosmos-db
 metadata:
   title: Implement Vector Search on Azure Cosmos DB for NoSQL
   description: Learn how to implement vector search capabilities in Azure Cosmos DB for NoSQL to build AI applications that perform semantic similarity queries.
-  ms.date: 02/05/2026
+  ms.date: 06/12/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

@@ -3,8 +3,8 @@ uid: learn.wwl.describe-medallion-architecture.exercise
 title: Exercise - Organize your Fabric lakehouse using a medallion architecture
 metadata:
   title: Exercise - Organize your Fabric lakehouse using a medallion architecture
-  description: "Exercise - Organize your Fabric lakehouse using a medallion architecture"
-  ms.date: 05/23/2025
+  description: "Practice implementing a medallion architecture in a Fabric lakehouse by moving data through the bronze, silver, and gold layers and querying the results using the SQL analytics endpoint."
+  ms.date: 06/10/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: unit

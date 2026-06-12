@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=48123e2a-c21e-4dd6-8ade-b65623328ea5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure DevOps MCP Server provides a practical translation layer between conversational requests and Azure DevOps operations. Instead of directly calling Azure DevOps REST APIs yourself, you describe the intent in plain language and let MCP-enabled tooling construct the operation. This approach reduces friction for common tasks and makes Azure DevOps capabilities easier to access from inside the development workflow.
 
 Before diving into the details of the Azure DevOps MCP Server capabilities, let's start with describing what MCP actually is?
@@ -181,3 +192,5 @@ A useful team exercise is to compare two prompt variants for the same task and r
 A useful way to understand MCP is to think in layers. The first layer is conversational intent (“show me active bugs”). The second layer is operational scope (project, state, assignee, iteration). The third layer is executable action (search work items with specific filters). Mature MCP use means being explicit in the first two layers so the third layer is predictable.
 
 This layered model also helps troubleshooting. If output is too broad, the issue is usually scope, not tool failure. If the wrong artifact type appears, the issue is often ambiguous intent. When you diagnose by layer, you can refine prompts quickly and keep momentum.
+
+::: zone-end

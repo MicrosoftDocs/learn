@@ -3,7 +3,7 @@ uid: learn.wwl.describe-medallion-architecture
 metadata:
   title: Organize a Fabric Lakehouse Using Medallion Architecture Design
   description: "Explore the potential of the medallion architecture design in Microsoft Fabric. Organize and transform your data across Bronze, Silver, and Gold layers of a lakehouse for optimized analytics."
-  ms.date: 05/23/2025
+  ms.date: 06/10/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: module-standard-task-based
@@ -12,12 +12,12 @@ title: Organize a Fabric lakehouse using medallion architecture design
 summary: Explore the potential of the medallion architecture design in Microsoft Fabric. Organize and transform your data across Bronze, Silver, and Gold layers of a lakehouse for optimized analytics.
 abstract: |
   In this module, you'll learn how to:
-  - Describe the principles of using the medallion architecture in data management.
-  - Apply the medallion architecture framework within the Microsoft Fabric environment.
-  - Analyze data stored in the lakehouse using DirectLake in Power BI.
-  - Describe best practices for ensuring the security and governance of data stored in the medallion architecture.
+  - Describe the medallion architecture pattern and why it's used in lakehouse analytics.
+  - Identify the key decisions when planning a medallion architecture in Fabric.
+  - Describe how gold layer data is served for querying and reporting.
+  - Describe best practices for securing and governing medallion layers.
 prerequisites: |
-  Before starting this module, you should be familiar with Microsoft Fabric lakehouses, Apache Spark, and SparkSQL.
+  Before starting this module, you should be familiar with Microsoft Fabric lakehouses and have a basic understanding of SQL.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

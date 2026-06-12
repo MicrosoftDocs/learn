@@ -1,4 +1,17 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ea6fa375-c90b-4c8a-82e3-ba36bb315a6a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this module, you learned how to create vector indexes and query embeddings for similarity search. You also learned how to include defining index schemas with vector fields, ingest vectors as byte-encoded arrays, and execute KNN queries with metadata filters. You also explored choosing vector types and indexing strategies, including selecting FLOAT32 for memory efficiency, choosing distance metrics that match your embedding model (COSINE for text, L2 for images), and deciding between FLAT indexing for exact search and HNSW for approximate search on large datasets. Additionally, you learned how to select optimal Redis data structures, including using Hash for flat, memory-efficient storage and JSON for nested or complex data structures. Finally, you reviewed practical considerations for balancing accuracy, performance, and memory usage when implementing vector search in production AI systems.
+
+::: zone-end
 
 ## Additional resources
 

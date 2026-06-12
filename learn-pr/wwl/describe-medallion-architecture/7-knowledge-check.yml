@@ -3,46 +3,58 @@ uid: learn.wwl.describe-medallion-architecture.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: "Knowledge check"
-  ms.date: 05/23/2025
+  description: "Test your knowledge of medallion architecture concepts including ingestion approaches, transformation tools, access control, and change management in Fabric."
+  ms.date: 06/10/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
   module_assessment: true
+  ai_generated_module_assessment: false
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following sets of layers are typically associated with the Medallion Architecture for data management?"
+  - content: "A data engineer needs to bring data from an Azure Data Lake Storage Gen2 account into the bronze layer of a Fabric lakehouse. No transformation is needed before landing. What is the recommended approach?"
     choices:
-    - content: "Raw, Polished, Refined"
+    - content: "Create a pipeline to copy the data into the bronze layer."
       isCorrect: false
-      explanation: "Incorrect. These terms don't align with the specific layers commonly used in the medallion architecture."
-    - content: "Bronze, Silver, Gold"
+      explanation: "Incorrect. Pipelines copy data and add ingestion overhead. When source data is already in cloud storage and no transformation is needed, a OneLake shortcut is the recommended approach."
+    - content: "Use a OneLake shortcut to reference the data in place."
       isCorrect: true
-      explanation: "Correct. Bronze, silver, gold is the correct sequence of layers typically used in the medallion architecture. Data flows from the raw and unrefined state (bronze) to a curated and validated state (silver), and finally to an enriched and well-structured presentation state (gold)."
-    - content: "Initial, Intermediate, Final"
+      explanation: "Correct. OneLake shortcuts reference cloud storage data in place without copying it, keeping the bronze layer in sync with the source automatically and without any ingestion code."
+    - content: "Use a dataflow to load the data into the bronze layer."
       isCorrect: false
-      explanation: "Incorrect. While these terms suggest a progression, they don't correspond to the widely recognized layers of the medallion architecture."
-  - content: "Which tool is best suited for data transformation in Fabric when dealing with large-scale data that will continue to grow?"
+      explanation: "Incorrect. Dataflows are used for transformations, not for referencing data that is already in cloud storage."
+  - content: "How does a materialized lake view differ from a regular SQL view?"
     choices:
-    - content: "Dataflows (Gen2)"
+    - content: "A materialized lake view reruns its SQL query every time someone queries it."
       isCorrect: false
-      explanation: "Incorrect. Dataflows (Gen2) are effective for smaller semantic models."
-    - content: "Pipelines"
+      explanation: "Incorrect. That describes a regular SQL view. A materialized lake view stores the results as a real table and updates only changed rows when source data arrives."
+    - content: "A materialized lake view can only be used in the gold layer."
       isCorrect: false
-      explanation: "Incorrect. Pipelines are primarily used for data orchestration, moving data between different layers and processes within the medallion architecture."
-    - content: "Notebooks"
+      explanation: "Incorrect. Materialized lake views can be used in any layer and are commonly used for silver layer transformations."
+    - content: "A materialized lake view stores results as a real table and updates only the rows that changed when source data arrives."
       isCorrect: true
-      explanation: "Correct. Notebooks are a more suitable tool for data transformation with big data in Fabric."
-  - content: "What is the benefit of storing different layers of your lakehouse in separate workspaces?"
+      explanation: "Correct. Unlike a regular view that reruns its query on every access, a materialized lake view saves the results and uses the Delta change log to process only new or changed rows."
+  - content: "A team wants analysts to access only gold layer tables in a shared lakehouse, without creating separate workspaces for each layer. Which approach should they use?"
     choices:
-    - content: "It can enhance security, manage capacity use, and optimize cost-effectiveness."
+    - content: "Workspace roles"
+      isCorrect: false
+      explanation: "Incorrect. Workspace roles apply to all items in a workspace and don't provide table-level access control within a single lakehouse."
+    - content: "OneLake data access roles"
       isCorrect: true
-      explanation: "Correct. Storing different layers of your lakehouse in separate workspaces enhances security and optimizes cost-effectiveness."
-    - content: "It makes it easier to share data with colleagues."
+      explanation: "Correct. OneLake data access roles can be scoped to specific tables within a lakehouse, allowing gold layer consumers to query gold tables without seeing bronze or silver data."
+    - content: "Separate lakehouses for each layer"
       isCorrect: false
-      explanation: "Incorrect. Storing different layers of your lakehouse in separate workspaces does not make it easier to share data with colleagues."
-    - content: "There's no benefit of storing different layers of your lakehouse in separate workspaces."
+      explanation: "Incorrect. Separate lakehouses are a valid isolation option, but the question specifies a shared lakehouse without separate workspaces."
+  - content: "What is the purpose of using Git integration with a Fabric medallion lakehouse?"
+    choices:
+    - content: "To automatically move data between bronze, silver, and gold layers."
       isCorrect: false
-      explanation: "Incorrect.  There is a benefit of storing different layers of your lakehouse in separate workspaces."
+      explanation: "Incorrect. Git integration is for version control of workspace items like notebooks and pipelines, not for data movement between layers."
+    - content: "To version pipeline code, notebooks, and schema definitions so changes are reversible and can be promoted across environments."
+      isCorrect: true
+      explanation: "Correct. Git integration tracks changes to Fabric items alongside each other, enabling rollback and controlled promotion from development to production through deployment pipelines."
+    - content: "To replace pipelines as the primary tool for data transformation."
+      isCorrect: false
+      explanation: "Incorrect. Git integration is a change management tool, not a data transformation tool."

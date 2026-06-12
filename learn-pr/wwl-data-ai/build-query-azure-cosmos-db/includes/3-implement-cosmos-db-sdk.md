@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9f4055a4-9e88-447d-8b0b-ac7926d8ad4f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB provides official SDKs for multiple programming languages that handle connection management, authentication, and request routing. AI applications interact with Cosmos DB through these SDKs to create, read, update, and delete items that store application data, user profiles, cached model outputs, and inference results. Understanding SDK patterns and best practices enables you to build efficient data access layers that minimize latency and optimize resource consumption.
 
 ## Connect using the SDK
@@ -276,6 +287,8 @@ print(f"Activity ID: {activity_id}")  # Useful for support requests
 ```
 
 The activity ID uniquely identifies each request and proves invaluable when working with Azure support to diagnose issues. Log activity IDs alongside errors or unusually high RU charges to enable troubleshooting.
+
+::: zone-end
 
 ## Additional resources
 

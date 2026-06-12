@@ -1,19 +1,17 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.explore-real-time-analytics-microsoft-fabric
 metadata:
-  title: Implement Real-Time Intelligence with Microsoft Fabric DP-603T00
+  title: Implement Real-Time Intelligence with Microsoft Fabric
   description: Ingest, transform, and analyze streaming data with Real-Time Intelligence in Microsoft Fabric.
-  ms.date: 04/25/2025
+  ms.date: 06/12/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: learning-path
 title: Implement Real-Time Intelligence with Microsoft Fabric
 prerequisites: |
-  Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
+  Before starting this learning path, familiarity with the Microsoft Fabric interface and core concepts is recommended.
 summary: |
-  Ingest, transform, and analyze streaming data with Microsoft Fabric.
-  
-  To register for a free, instructor-led Real-Time Intelligence in a Day workshop, visit the [Microsoft Events page](https://www.microsoft.com/events) for more details.
+  Use Real-Time Intelligence in Microsoft Fabric to ingest and analyze streaming data. Explore event streams, KQL databases, real-time dashboards, and Activator.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner

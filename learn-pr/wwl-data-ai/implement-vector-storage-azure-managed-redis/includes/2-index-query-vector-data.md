@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=efd560f5-c8fc-45bf-b45f-b521dc9bada9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Managed Redis provides vector database capabilities through RediSearch, enabling you to store and query high-dimensional embeddings for AI applications like semantic search, recommendation systems, and retrieval-augmented generation (RAG). Understanding how to create indexes, ingest vectors, and execute similarity searches is fundamental to building performant AI backends that need fast vector retrieval.
 
 Imagine you're building a customer support chatbot that needs to find relevant documentation based on user questions. Your documentation exists as text, but you need semantic similarity—finding docs that mean the same thing even if they use different words. You generate 1536-dimensional embeddings from an AI model for each doc and for each user question, but now you need somewhere to store millions of these vectors and search them in milliseconds. A traditional database can't efficiently handle high-dimensional similarity search at this scale. Azure Managed Redis with vector indexing solves this by providing specialized data structures (HNSW graphs or flat indexes) that make KNN queries fast, letting your chatbot respond to users in real-time even with large knowledge bases.
@@ -181,6 +192,8 @@ query = Query("*=>[KNN 10 @embedding $query_vec EF_RUNTIME 200 AS score]")
 ```
 
 Higher values improve accuracy but slow queries. Start with 50, increase to 100-200 if needed.
+
+::: zone-end
 
 ## Additional resources
 

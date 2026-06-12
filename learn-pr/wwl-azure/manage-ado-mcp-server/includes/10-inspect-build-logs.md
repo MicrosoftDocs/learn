@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=61e4f911-54e9-4cb5-a65d-8cf05c8c7ce5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Build logs are often the fastest path to root cause when delivery fails. This unit focuses on using MCP to retrieve and interpret pipeline log data efficiently, so teams can move from failure detection to corrective action with less delay.
 
 ## Why log inspection deserves focus
@@ -64,7 +75,4 @@ After major failures, include MCP-derived log summaries in postmortem notes alon
 
 Over time, this creates an internal troubleshooting portfolio (which you might store in Azure DevOps wikis - retrievable through MCP) that helps teams recognize repeated failure signatures much earlier.
 
-
-
-
-
+::: zone-end
