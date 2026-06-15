@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - None
 iconUrl: /training/achievements/click-to-do.svg
-ratingEnabled: false
+ratingEnabled: false 
 levels:
   - beginner
 roles:
