@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ef3441d2-3a02-49ef-8f99-3345d6e3b4ff]
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI applications require efficient storage and retrieval of vector embeddings to power semantic search, recommendations, and retrieval-augmented generation. This module guides you through implementing vector search capabilities in Azure Database for PostgreSQL using the pgvector extension, enabling you to build AI solutions that find semantically similar content from your data.
 
 Imagine you're a developer building a knowledge base search system for a legal services firm. The system needs to help attorneys find relevant case documents, contracts, and legal precedents based on the meaning of their queries rather than exact keyword matches. When an attorney searches for "breach of fiduciary duty in corporate merger," the system must return documents that discuss similar concepts even if they use different terminology.
@@ -13,3 +21,8 @@ After completing this module, you'll be able to:
 - Create and manage vector indexes to optimize search performance
 - Implement embedding update and refresh strategies for evolving datasets
 - Build retrieval patterns that integrate PostgreSQL vector search with RAG pipelines
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

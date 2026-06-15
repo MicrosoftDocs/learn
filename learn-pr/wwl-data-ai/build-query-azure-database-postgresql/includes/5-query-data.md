@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=84c0470f-eac4-41e0-89a6-482573d7dc0f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 This unit covers PostgreSQL-specific query features and patterns that are essential for AI applications. The unit focuses on PostgreSQL's unique capabilities and advanced patterns for managing conversation history, processing state, and application metadata.
 
 This unit assumes familiarity with standard SQL concepts like `SELECT`, `WHERE`, joins, and aggregation. If you need a refresher, the [Get started querying with Transact-SQL](/training/paths/get-started-querying-with-transact-sql/) learning path is a good resource.
@@ -226,6 +237,8 @@ WHERE c.user_id = :user_id
 ORDER BY c.started_at DESC, c.id DESC
 LIMIT 20;
 ```
+
+::: zone-end
 
 ## Additional resources
 

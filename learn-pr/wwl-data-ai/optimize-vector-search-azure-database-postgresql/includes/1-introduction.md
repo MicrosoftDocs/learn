@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=422d932b-db14-4625-aaa5-41eeafd66d73]
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI applications require fast, reliable vector search to power features like semantic retrieval, recommendation engines, and RAG pipelines. Poorly tuned databases create latency bottlenecks that degrade user experience and limit throughput. This module guides you through optimizing Azure Database for PostgreSQL and pgvector to achieve the performance your AI solutions demand.
 
 Imagine you're a developer building a product recommendation engine for an e-commerce platform. The system uses vector embeddings to find similar products based on user behavior, product descriptions, and visual features. When users browse the site, recommendations must appear in under 100 milliseconds to avoid disrupting the shopping experience. During flash sales and holiday peaks, the platform handles tens of thousands of concurrent users requesting personalized recommendations.
@@ -13,3 +21,8 @@ After completing this module, you'll be able to:
 - Design data layouts that optimize vector storage and metadata filtering performance
 - Scale Azure Database for PostgreSQL to handle high-volume vector workloads
 - Implement connection pooling and session management strategies for AI applications
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

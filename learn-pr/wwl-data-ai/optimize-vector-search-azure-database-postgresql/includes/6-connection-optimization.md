@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=78d4a5a2-0dab-4cd8-86f4-eaddba4f56c6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Database connections are expensive resources. Each connection consumes server memory, requires authentication overhead, and counts against server limits. For AI applications that make frequent vector queries, efficient connection management is essential for achieving high throughput without exhausting resources.
 
 > [!NOTE]
@@ -99,6 +110,8 @@ Transient failures such as network blips, connection resets, and brief server un
 Timeouts prevent your application from waiting indefinitely when the database is slow or unreachable. Connection timeouts limit how long to wait when establishing new connections, while statement timeouts limit query execution time. For vector search applications, choose timeouts that accommodate your slowest legitimate queries while failing fast on queries that exceed acceptable latency. Configure timeouts in your connection string using parameters like `connect_timeout=10` and `options=-c statement_timeout=30000`. For vector queries, set statement timeouts that accommodate your slowest acceptable queries. A 30-second timeout is reasonable for complex vector searches; interactive applications might use lower values.
 
 When all pool connections are in use and new requests arrive, the pool must either queue requests (adding latency) or reject them immediately. Neither option is ideal, so monitoring pool utilization helps you scale before exhaustion becomes frequent. When exhaustion does occur, returning a clear error message helps clients implement their own retry logic rather than timing out unpredictably. Handle `PoolTimeout` exceptions by returning a graceful error like `{"error": "Service temporarily busy, please retry"}`. Monitor pool utilization and scale if exhaustion happens frequently.
+
+::: zone-end
 
 ## Additional resources
 

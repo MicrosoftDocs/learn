@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4f5744e9-3eab-459f-8944-173f2dade118]
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI applications and data-driven services require reliable, scalable database solutions to store and retrieve information efficiently. This module guides you through building applications with Azure Database for PostgreSQL to enable persistent data storage, complex querying, and seamless application integration for your AI solutions.
 
 Imagine you're a developer building an AI agent that assists users with research tasks. Your agent needs to maintain conversation history across sessions, track multi-step task progress, and store structured data that informs its decision-making. The client expects the system to handle thousands of concurrent users, maintain sub-second query response times for context retrieval, and support complex queries across conversation histories.
@@ -13,3 +21,8 @@ After completing this module, you'll be able to:
 - Create and manage database schemas including tables, indexes, and constraints
 - Write efficient SQL queries for common data operations
 - Integrate Azure Database for PostgreSQL into applications using Python
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

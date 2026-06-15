@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bba47555-cca2-4cb6-9138-805672936464]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Integrating Azure Database for PostgreSQL into your applications requires choosing appropriate client libraries, managing connections effectively, and handling errors gracefully. This unit covers SDK integration patterns for Python, along with best practices that apply across programming languages.
 
 > [!NOTE]
@@ -88,6 +99,8 @@ with pool.connection() as conn:
     with conn.cursor() as cur:
         cur.execute("SELECT * FROM messages WHERE conversation_id = %s", (id,))
 ```
+
+::: zone-end
 
 ## Additional resources
 

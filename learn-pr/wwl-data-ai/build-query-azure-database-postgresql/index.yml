@@ -3,7 +3,7 @@ uid: learn.wwl.build-query-azure-database-postgresql
 metadata:
   title: Build and Query with Azure Database for PostgreSQL
   description: Learn how to use Azure Database for PostgreSQL as a data foundation for AI applications, including schema design, SQL queries, and Python integration.
-  ms.date: 01/29/2026
+  ms.date: 06/15/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

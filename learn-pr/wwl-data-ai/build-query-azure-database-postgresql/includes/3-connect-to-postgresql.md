@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fd53765f-4b1c-47fb-90bd-ac21ed437d98]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Establishing secure connections to Azure Database for PostgreSQL requires understanding connection string components, authentication options, and transport layer security configuration. For AI applications that frequently read and write data, getting connection configuration right from the start prevents authentication failures and security vulnerabilities in production.
 
 ## Connection fundamentals
@@ -101,6 +112,8 @@ postgresql://myuser:mypassword@myserver.postgres.database.azure.com/mydb?sslmode
 # Connection through PgBouncer (note port 6432)
 postgresql://myuser:mypassword@myserver.postgres.database.azure.com:6432/mydb?sslmode=require
 ```
+
+::: zone-end
 
 ## Additional resources
 
