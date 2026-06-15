@@ -3,7 +3,7 @@ uid: learn.wwl.create-manage-power-bi-assets
 metadata:
   title: Create and manage Power BI assets
   description: "Create Power BI assets for your analytics environment for structure and consistency, such as Power BI template and project files. Reusable assets and using the XMLA endpoint support application lifecycle management, including continuous integration and deployment."
-  ms.date: 11/12/2024
+  ms.date: 06/12/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: module-standard-task-based
