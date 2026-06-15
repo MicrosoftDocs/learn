@@ -67538,6 +67538,46 @@
       "source_path": "learn-pr/wwl-azure/secure-sap-microsoft-cloud/9-summary.md",
       "redirect_url": "/training/modules/secure-sap-microsoft-cloud/10-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-concepts-of-data-analytics/index.md",
+      "redirect_url": "/training/modules/data-analytics-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-concepts-of-data-analytics/3-explore-data-analytics-process.md",
+      "redirect_url": "/training/modules/data-analytics-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-concepts-of-data-analytics/1-introduction.md",
+      "redirect_url": "/training/modules/data-analytics-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-concepts-of-data-analytics/5-knowledge-check.md",
+      "redirect_url": "/training/modules/data-analytics-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-concepts-of-data-analytics/6-summary.md",
+      "redirect_url": "/training/modules/data-analytics-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-concepts-of-data-analytics/2-understand-data-analytics-types.md",
+      "redirect_url": "/training/modules/data-analytics-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-concepts-of-data-analytics/4-understand-types-of-data-data-storage.md",
+      "redirect_url": "/training/modules/data-analytics-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/work-semantic-models-microsoft-fabric/index.md",
+      "redirect_url": "/training/paths/design-manage-semantic-models-fabric/",
+      "redirect_document_id": false
     }
   ]
 }

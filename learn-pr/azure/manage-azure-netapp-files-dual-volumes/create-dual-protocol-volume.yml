@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-dual-volumes.create-dual-protocol-volume
+title: Create a dual-protocol volume
+metadata:
+  title: Create a dual-protocol volume
+  description: Learn how to create a dual-protocol volume and configure LDAP user access in Azure NetApp Files.
+  ms.date: 03/25/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/create-dual-protocol-volume.md)]

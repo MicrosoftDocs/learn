@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-dual-volumes.knowledge-check
+title: Module assessment
+metadata:
+  unitType: knowledge_check
+  title: Module assessment
+  description: Test your knowledge of managing dual-protocol volumes in Azure NetApp Files.
+  ms.date: 03/25/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  questions:
+    - content: "What is a prerequisite for creating a dual-protocol volume in Azure NetApp Files?"
+      choices:
+        - content: "A capacity pool"
+          isCorrect: true
+          explanation: "Correct. Before you create a dual-protocol volume, you must have already set up a capacity pool."
+        - content: "Configuring encryption key sources"
+          isCorrect: false
+          explanation: "Incorrect. Configuring encryption key sources isn't a prerequisite for creating a dual-protocol volume."
+        - content: "Enabling cool access"
+          isCorrect: false
+          explanation: "Incorrect. Enabling cool access isn't a prerequisite. You can enable or disable cool access while creating the volume."
+        - content: "Specifying virtual networks"
+          isCorrect: false
+          explanation: "Incorrect. Specifying a virtual network is done during volume creation, not as a separate prerequisite."
+
+    - content: "Which protocol combinations are supported for an Azure NetApp Files dual-protocol volume?"
+      choices:
+        - content: "NFSv3 only."
+          isCorrect: false
+          explanation: "Incorrect. A dual-protocol volume must support both NFS and SMB, not NFS alone."
+        - content: "SMB only."
+          isCorrect: false
+          explanation: "Incorrect. SMB by itself is a single-protocol configuration, not a dual-protocol volume."
+        - content: "NFSv4.1 and SMB, or NFSv3 and SMB."
+          isCorrect: true
+          explanation: "Correct. Azure NetApp Files dual-protocol volumes support either NFSv4.1 and SMB or NFSv3 and SMB."
+        - content: "NFSv2 and SMB."
+          isCorrect: false
+          explanation: "Incorrect. NFSv2 isn't a supported protocol option for Azure NetApp Files dual-protocol volumes."
+    
+    - content: "What should you know about security style for a dual-protocol volume in Azure NetApp Files?"
+      choices:
+        - content: "You can change the security style at any time after the volume is created."
+          isCorrect: false
+          explanation: "Incorrect. The security style is chosen when the volume is created and can't be changed later."
+        - content: "You choose either NTFS or UNIX security style based on how permissions should be managed"
+          isCorrect: true
+          explanation: "Correct. When creating a dual-protocol volume, you must choose either NTFS or UNIX security style, which determines how permissions are managed for the volume."
+        - content: "Dual-protocol volumes always use both NTFS and UNIX security styles at the same time."
+          isCorrect: false
+          explanation: "Incorrect. Dual-protocol volumes use either NTFS or UNIX security style, not both at the same time."
+        - content: "Security style only matters for SMB-only volumes."
+          isCorrect: false
+          explanation: "Incorrect. Security style is important for both SMB and NFS protocols in a dual-protocol volume."
