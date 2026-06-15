@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.dpu.live-captions
+title: Use Live Captions in Windows to better understand audio
+metadata:
+  title: Use Live Captions In Windows To Better Understand Audio
+  description: In this module, you'll learn how Live Captions helps you follow spoken content in real time, making it easier to stay productive and access information in various environments and accessibility scenarios.
+  ms.date: 06/15/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Learn how Live Captions helps you follow spoken content in real time, making it easier to stay productive and access information in various environments and accessibility scenarios.
+abstract: |
+  By the end of this module, you’ll be able to: 
+
+  - Turn on and use Live Captions across different scenarios
+  - Explain how Live Captions work in Windows
+  - Customize caption appearance and positioning
+  - Identify when to use Live Captions to improve understanding and productivity
+prerequisites: |
+  - None
+iconUrl: /training/achievements/live-captions.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.live-captions.introduction
+  - learn.dpu.live-captions.definition
+  - learn.dpu.live-captions.how-live-captions-work
+  - learn.dpu.live-captions.how-to-use
+  - learn.dpu.live-captions.scenarios
+  - learn.dpu.live-captions.customize
+  - learn.dpu.live-captions.why-live-captions-matter
+  - learn.dpu.live-captions.when-to-use
+  - learn.dpu.live-captions.knowledge-check
+  - learn.dpu.live-captions.summary
+badge:
+  uid: learn.dpu.live-captions.badge
+

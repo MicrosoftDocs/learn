@@ -1,0 +1,167 @@
+### YamlMime:ModuleUnit
+
+uid: learn.dpu.live-captions.knowledge-check
+
+title: Knowledge check 
+
+metadata: 
+
+  title: Knowledge check 
+
+  description: Check your understanding of Live Captions in Windows. 
+
+  ms.date: 06/15/2026 
+
+  author: stephanie-rosenzweig 
+
+  ms.author: v-stephanier 
+
+  ms.topic: unit 
+
+durationInMinutes: 5 
+
+quiz: 
+
+  title: Check your knowledge 
+
+  questions: 
+
+  - content: "What is the primary function of Live Captions?" 
+
+    choices: 
+
+    - content: "Save audio recordings" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Live Captions doesn't save recordings." 
+
+    - content: "Translate text files automatically" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Live Captions focuses on captioning spoken audio, not translating text documents." 
+
+    - content: "Convert spoken audio into on-screen text" 
+
+      isCorrect: true 
+
+      explanation: "Correct. Live Captions transcribes spoken audio into real-time on-screen text." 
+
+    - content: "Improve system performance" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Live Captions is an accessibility feature, not a performance tool." 
+
+  - content: "How can you quickly turn on Live Captions?" 
+
+    choices: 
+
+    - content: "Ctrl + Shift + L" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. This keyboard shortcut doesn't turn on Live Captions." 
+
+    - content: "Windows key + Alt + L" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. This isn't the correct shortcut for Live Captions." 
+
+    - content: "Windows key + Ctrl + L" 
+
+      isCorrect: true 
+
+      explanation: "Correct. This shortcut quickly enables Live Captions." 
+
+    - content: "Alt + Enter" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. This shortcut isn't used for Live Captions." 
+
+  - content: "Where does Live Captions process audio data?" 
+
+    choices: 
+
+    - content: "On the user’s device" 
+
+      isCorrect: true 
+
+      explanation: "Correct. Live Captions processes audio locally on the device." 
+
+    - content: "In the cloud" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Audio data isn't sent to the cloud for processing." 
+
+    - content: "In Microsoft data centers" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Processing happens locally, not in external data centers." 
+
+    - content: "In the browser" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Live Captions isn't processed through a browser." 
+
+  - content: "Which scenario is a good use case for Live Captions?" 
+
+    choices: 
+
+    - content: "Editing video files" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Live Captions isn't designed for video editing." 
+
+    - content: "Watching content in a noisy environment" 
+
+      isCorrect: true 
+
+      explanation: "Correct. Live Captions helps you follow audio when you can't hear audio clearly." 
+
+    - content: "Installing applications" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Live Captions doesn't assist with installations." 
+
+    - content: "Managing storage space" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Storage management isn't a function of Live Captions." 
+
+  - content: "What customization option is available in Live Captions?" 
+
+    choices: 
+
+    - content: "Creating new audio files" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Live Captions doesn't create audio files." 
+
+    - content: "Changing caption style and position" 
+
+      isCorrect: true 
+
+      explanation: "Correct. You can customize how captions appear and where they're displayed." 
+
+    - content: "Exporting captions to Excel" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Exporting captions isn't supported." 
+
+    - content: "Encrypting caption data" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Encryption isn't a customization option."

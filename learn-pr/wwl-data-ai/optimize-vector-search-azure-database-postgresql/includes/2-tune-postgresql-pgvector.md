@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4d6b98ef-dab0-4582-bbab-ab6dcc2d09fd]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Vector search workloads place different demands on PostgreSQL compared to traditional transactional or analytical queries. Understanding these differences helps you tune configuration parameters to optimize query latency, memory usage, and compute efficiency for AI applications.
 
 > [!NOTE]
@@ -87,6 +98,8 @@ Effective tuning follows a systematic approach rather than random parameter chan
 - **Test with production-like data:** Query performance varies dramatically with data size and distribution. Tuning on small test datasets often produces settings that fail at scale.
 - **Monitor for regressions:** Parameters that improve vector search might negatively affect other workloads. Monitor overall system health after changes.
 - **Document your settings:** Record what you changed, why, and what effect it had. This documentation is invaluable when troubleshooting future issues.
+
+::: zone-end
 
 ## Additional resources
 
