@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f1320147-da0a-426b-9177-773d307a0d33]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Vector indexes and embeddings require ongoing maintenance as your data evolves. New documents shift the distribution of vectors, content updates invalidate existing embeddings, and embedding model upgrades require regenerating all vectors. Understanding how to manage these changes keeps your vector search performing well over time.
 
 This unit covers monitoring index health, rebuilding indexes when needed, updating embeddings efficiently, and handling embedding model migrations.
@@ -179,3 +190,5 @@ ALTER TABLE documents SET (
 ```
 
 These settings trigger autovacuum when 5% of rows are modified, rather than the default 20%.
+
+::: zone-end
