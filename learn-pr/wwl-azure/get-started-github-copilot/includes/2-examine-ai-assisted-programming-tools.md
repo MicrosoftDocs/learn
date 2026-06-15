@@ -7,6 +7,7 @@ To help align AI tools with development tasks and projects, this unit examines t
 - AI Builder.
 - Copilot Studio.
 - Semantic Kernel SDK.
+- Microsoft Agent Framework.
 - Visual Studio IntelliCode.
 - ChatGPT.
 - GitHub Copilot.
@@ -100,6 +101,22 @@ Semantic Kernel SDK is intended for:
 - Organizations that want to build AI-powered agents to automate business processes.
 - Projects that require AI models to interact with existing code and influence actions.
 
+> [!NOTE]
+> For new agent development projects, Microsoft recommends Microsoft Agent Framework (MAF), which builds on Semantic Kernel's foundation.
+
+## Microsoft Agent Framework
+
+Microsoft Agent Framework (MAF) is Microsoft's recommended SDK for building AI agents in .NET, Python, and Java. Designed as the next evolution of Semantic Kernel for agent development scenarios, MAF provides a higher-level, more opinionated framework for creating agents that can plan, use tools, and coordinate with other agents in multi-agent workflows.
+
+MAF builds on the foundation of Semantic Kernel and integrates natively with Azure AI Foundry and Azure AI services. It provides consistent patterns for agent lifecycle management, tool calling, memory integration, and multi-agent orchestration. For teams with existing Semantic Kernel agent code, Microsoft provides a migration guide to help transition projects to MAF.
+
+Microsoft Agent Framework is intended for:
+
+- Developers building new AI agent projects who want Microsoft's current recommended patterns and architecture.
+- Teams migrating existing Semantic Kernel agent projects to the successor framework.
+- Projects that require multi-agent coordination, tool use, or memory integration.
+- Organizations building enterprise-grade AI agents aligned with Azure AI services.
+
 ## Visual Studio IntelliCode
 
 Visual Studio IntelliCode is an extension for Visual Studio that enhances the coding experience by providing AI-powered recommendations. IntelliCode uses machine learning models trained on thousands of open-source projects to suggest context-appropriate code completions. It supports multiple programming languages and helps developers write more reliable and maintainable code.
@@ -115,6 +132,9 @@ Visual Studio IntelliCode is intended for:
 - Developers who want to improve their coding productivity and efficiency.
 - Teams that want to maintain consistent coding practices and code quality.
 - Projects that require code completions, refactoring assistance, and code style inference.
+
+> [!NOTE]
+> The IntelliCode extension for Visual Studio Code has been deprecated. GitHub Copilot replaces IntelliCode in Visual Studio Code.
 
 ## ChatGPT
 
