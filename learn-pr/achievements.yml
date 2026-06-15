@@ -8101,3 +8101,13 @@ achievements:
   title: Understand Microsoft Priva
   summary: Understand how Microsoft Priva helps organizations manage privacy risks, streamline data handling, and comply with privacy requirements. Explore tools like Privacy Risk Management and Subject Rights Requests, and learn how to configure settings and assign roles to ensure secure and effective use of Priva.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.understand-concepts-of-data-analytics.badge
+  type: badge
+  title: Understand concepts of data analytics
+  summary: Explore key concepts of data analytics, including types of analytics, data, and storage. Explore the analytics process and tools used to discover insights.
+  iconUrl: /training/achievements/understand-concepts-of-data-analytics.svg
+- uid: learn.wwl.work-semantic-models-microsoft-fabric.trophy
+  type: trophy
+  title: Work with semantic models in Microsoft Fabric
+  summary: Designing reports for enterprise scale requires more than just connecting to data. Understanding semantic models and strategies for scalability and lifecycle management are key to a successful enterprise implementation. This learning path helps you prepare for the [Fabric Analytics Engineer Certification](/credentials/certifications/exams/dp-600/).
+  iconUrl: /training/achievements/generic-trophy.svg
