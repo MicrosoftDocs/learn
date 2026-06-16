@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.wwl.architect-production-grade-multi-agent-ai-solutions
+metadata:
+  title: Architect Production-Grade Multi-Agent AI Solutions in Azure AI-500
+  description: Learn how to design production-grade agentic AI solutions in Microsoft Foundry. This training covers stateful agentic loop architecture, hierarchical orchestration patterns, dynamic task decomposition strategies, and enterprise-scale agent communication ecosystems, including A2A protocol integration for cross-platform agent connectivity. AI-500
+  ms.date: 06/16/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: learning-path
+title: Architect production-grade multi-agent AI solutions in Azure
+prerequisites: |
+  - Completion of AI-103 "Develop AI agents on Azure" or equivalent hands-on experience building and deploying agents
+  - Working experience with Microsoft Foundry Agent Service and Microsoft Agent Framework
+  - Familiarity with foundational multi-agent orchestration patterns (sequential, concurrent, group chat, handoff)
+  - Basic knowledge of the A2A protocol and how to connect to a remote agent 
+  - Python programming proficiency, including async patterns and REST API consumption
+summary: |
+  Production-grade multi-agent AI solutions require a deep understanding of agentic architectures, orchestration patterns, and communication strategies. This learning path will guide you through the essential concepts and best practices for building scalable and maintainable multi-agent systems in Azure.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+products:
+- agent-framework
+- azure-cosmos-db
+- azure-managed-redis
+- microsoft-foundry
+subjects:
+- artificial-intelligence
+modules:
+- learn.wwl.design-agentic-loops-microsoft-foundry-agent-service
+- learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry
+- learn.wwl.apply-task-decomposition-multi-agent-azure
+- learn.wwl.design-enterprise-agent-communication-a2a
+
+trophy:
+  uid: learn.wwl.architect-production-grade-multi-agent-ai-solutions.trophy

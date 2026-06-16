@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.wwl.deploy-govern-agentic-ai-solutions-azure
+metadata:
+  title: Deploy and Govern Enterprise Agentic AI Solutions on Azure
+  description: Learn how to deploy multi-agent systems to Azure at enterprise scale and establish robust operational governance frameworks. Learners advance from foundational single-agent deployment and CI/CD patterns to coordinated multi-agent deployment pipelines, zero-trust security architecture across agent networks, enterprise-scale responsible AI governance, and full agent lifecycle management. AI-500
+  ms.date: 06/16/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: learning-path
+title: Deploy and govern enterprise agentic AI solutions on Azure
+prerequisites: |
+  - Completion of AI-103 "Develop AI agents on Azure" and AI-300 "Operationalize generative AI applications" (or equivalent)
+  - Familiarity with Microsoft Foundry project deployment and Azure managed identities
+  - Working experience with GitHub Actions for CI/CD pipeline design
+  - Basic knowledge of Azure security services (Azure Key Vault, Microsoft Entra ID)
+  - Familiarity with responsible AI principles, Azure AI Content Safety guardrails, and basic Microsoft Entra ID concepts (managed identities, RBAC)
+  - Python programming proficiency.
+summary: |
+  Deploying and governing enterprise agentic AI solutions on Azure requires a structured approach to CI/CD pipelines, zero-trust security, responsible AI compliance, and agent lifecycle management. This learning path guides you through the operational and governance capabilities required to run multi-agent systems reliably and safely at enterprise scale.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+products:
+- agent-framework
+- azure-cosmos-db
+- azure-managed-redis
+- entra-id
+- microsoft-foundry
+subjects:
+- artificial-intelligence
+modules:
+- learn.wwl.implement-cicd-multi-agent-systems-github-actions
+- learn.wwl.secure-multi-agent-systems-azure-zero-trust
+- learn.wwl.scale-responsible-ai-governance-multi-agent
+- learn.wwl.govern-enterprise-agent-lifecycle-azure
+
+trophy:
+  uid: learn.wwl.deploy-govern-agentic-ai-solutions-azure.trophy
