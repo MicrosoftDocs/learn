@@ -14,7 +14,7 @@ If you're running a Windows-based App Service plan, Defender for Cloud also has 
 
 To protect your Azure App Service plan with Microsoft Defender for App Service:
 
-- Ensure you have a supported App Service plan that is associated with dedicated machines. Supported plans are listed [here](/azure/app-service/overview-hosting-plans?azure-portal=true).
+- Ensure you have a supported App Service plan that is associated with dedicated machines. Supported plans are listed [here](/azure/app-service/overview-hosting-plans).
 
 - Enable Defender for Cloud on your subscription (you can optionally enable only the Defender for App Service plan).
 
