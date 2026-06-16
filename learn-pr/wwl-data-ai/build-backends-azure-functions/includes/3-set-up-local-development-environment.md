@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=58bc0e85-ae48-4de2-9217-6eb43e80b097]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A productive local development workflow lets you build and test Azure Functions on your own machine before deploying to Azure. Local development eliminates the need to provision cloud resources during the early stages of development, reduces the feedback loop between writing code and seeing results, and helps you catch configuration issues before they reach production. This unit walks through setting up Visual Studio Code with the Azure Functions extension, understanding the project structure, configuring emulators for dependent services, and debugging functions locally.
 
 ## Install Azure Functions Core Tools
@@ -85,6 +96,8 @@ In Visual Studio Code, you can right-click your function app in the Azure Resour
 The equivalent CLI commands are `func azure functionapp fetch-app-settings <app-name>` to download settings and `func azure functionapp publish <app-name>` to deploy code along with local settings. You can encrypt the local settings file with `func settings encrypt` to protect any secrets stored on your development machine. The encrypted file can only be decrypted by Core Tools on the same machine.
 
 Be mindful of which settings you push to Azure, because overwriting production settings with local development values can break your deployed application. A common practice is to manage production settings through Azure CLI (`az functionapp config appsettings set`) or infrastructure-as-code templates, and reserve `local.settings.json` for development-only values.
+
+::: zone-end
 
 ## Additional resources
 

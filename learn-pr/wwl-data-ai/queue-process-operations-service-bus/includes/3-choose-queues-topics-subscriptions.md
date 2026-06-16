@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=24578953-c02f-4d31-be60-36075916a1c4]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When you design a messaging layer for an AI workflow, the first architectural decision is whether to use a Service Bus queue or a topic with subscriptions. This choice determines how messages flow through your system, how many consumers can act on each message, and how easily you can add new consumers in the future. The right entity type depends on whether each message needs single-consumer processing or fan-out to multiple independent consumers.
 
 ## Use queues for single-consumer AI processing
@@ -100,6 +111,8 @@ with client.get_subscription_receiver(
 ```
 
 The `ServiceBusClient` uses context managers (`with` statements) to ensure connections are properly closed. You can also manage the client lifecycle manually by calling `client.close()`, but context managers are the recommended approach because they guarantee cleanup even when exceptions occur.
+
+::: zone-end
 
 ## Additional resources
 

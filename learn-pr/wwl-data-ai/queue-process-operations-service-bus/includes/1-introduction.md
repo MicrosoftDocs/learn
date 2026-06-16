@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8d123a18-2fdc-4ee2-8240-82953c130318]
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI applications require asynchronous messaging to decouple request submission from inference processing and ensure reliable delivery under variable load. This module guides you through using Azure Service Bus to queue, distribute, and reliably process AI workloads on Azure.
 
 Imagine you're a developer building a document analysis platform that uses large language models to extract structured data from uploaded contracts. Clients submit documents through a web API, and each document requires between five and 30 seconds of processing time depending on length and complexity. During peak hours, hundreds of documents arrive within minutes, but the inference service can only process a limited number concurrently. Without a buffer between the API and the processing layer, the API becomes unresponsive under load, clients receive timeout errors, and documents are lost when processing pods restart. Your team needs a messaging layer that absorbs traffic spikes, distributes work across multiple processors, and guarantees that every document is processed exactly once. Some downstream services also need to react to completed analyses, such as a notification service that alerts the submitter and an audit service that logs the result for compliance. The platform must handle processing failures gracefully, routing unprocessable documents to a separate queue for investigation rather than silently dropping them. Azure Service Bus provides the queuing, publish-subscribe, and dead-letter capabilities that this architecture requires.
@@ -11,3 +19,8 @@ After completing this module, you'll be able to:
 
 > [!NOTE]
 > All code examples in this module are based on the most recent version of the `azure-servicebus` library at the time of writing. The library is updated often and the recommendation is to visit the [Azure Service Bus Python SDK documentation](/python/api/overview/azure/servicebus-readme) for the most up-to-date information.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

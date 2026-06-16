@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=550fc522-49a6-496b-8099-970c23b28ae8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The structure of your events determines how Event Grid routes, filters, and delivers them to subscribers. This unit covers how to design events using the CloudEvents schema for AI operations, define custom event types that represent meaningful state changes, and configure event subscription filters to route events based on type, subject, or data attributes.
 
 > [!NOTE]
@@ -138,6 +149,8 @@ az eventgrid topic create \
 ```
 
 When creating an event subscription, the `event-delivery-schema` parameter controls the format delivered to the handler. Event Grid can convert between Event Grid schema and CloudEvents schema during delivery. If your topic uses the Event Grid schema but your handler expects CloudEvents, you can set the output schema accordingly. However, CloudEvents-to-Event Grid conversion isn't supported because CloudEvents supports extension attributes that the Event Grid schema can't represent. For new implementations using CloudEvents throughout, you can omit this parameter and the events deliver in the same format they were published.
+
+::: zone-end
 
 ## Additional resources
 

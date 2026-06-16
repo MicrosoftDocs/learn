@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6f1763ea-fd05-4cf8-be6c-709362f5fef8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The hosting plan you choose for your Azure Functions app determines how instances start, how the app scales under load, and how much memory each instance provides. These decisions directly affect the latency, throughput, and cost of an AI backend. This unit focuses on the two hosting plans most relevant to serverless AI workloads, the Flex Consumption plan and the Premium plan, and explains how to configure scaling and handle long-running tasks.
 
 ## Understand cold start and why it matters for AI
@@ -62,6 +73,8 @@ def accept_document(req: func.HttpRequest, queue_msg: func.Out[str]) -> func.Htt
 ```
 
 This pattern also decouples ingestion throughput from processing throughput. The HTTP endpoint can accept hundreds of requests per second, while the Service Bus-triggered processor scales independently based on queue depth. Each component scales to its own optimal instance count without affecting the other.
+
+::: zone-end
 
 ## Additional resources
 
