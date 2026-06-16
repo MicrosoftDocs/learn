@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=515d793e-0bbf-44b9-ab4d-fd3a2567cf84]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Functions triggers and bindings provide a declarative way to connect functions to external services without writing boilerplate connection and serialization code. Triggers determine how a function is invoked, while bindings move data into and out of functions through configuration rather than explicit SDK calls. For AI backends, triggers and bindings simplify the integration between inference endpoints, message queues, storage services, and databases. This unit covers how to create HTTP triggers for inference endpoints, queue triggers for batch processing, and output bindings for storing results.
 
 ## Understand triggers and bindings
@@ -158,6 +169,8 @@ def analyze_document(msg: func.ServiceBusMessage) -> None:
 ```
 
 Using `DefaultAzureCredential` for authentication allows the same code to work both locally (using developer credentials from Azure CLI or Visual Studio Code) and in production (using the function app's managed identity). This credential chain is covered in detail in a later unit on identity and access configuration.
+
+::: zone-end
 
 ## Additional resources
 
