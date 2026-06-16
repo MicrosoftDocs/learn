@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-agent-data-security.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to securing AI agents with Microsoft Purview data security controls."
+  ms.date: 06/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/introduction.md)]

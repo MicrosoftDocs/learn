@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-agent-data-security.understand-agent-security-posture
+title: Understand how agents change your data security posture
+metadata:
+  title: Understand How Agents Change Your Data Security Posture
+  description: "Learn what AI agents change about your data security posture, how Microsoft Purview categorizes agent types, and which capabilities apply to each."
+  ms.date: 06/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/understand-agent-security-posture.md)]

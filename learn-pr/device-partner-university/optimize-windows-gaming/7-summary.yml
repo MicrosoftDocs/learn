@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.optimize-pc-gaming.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Optimize your Windows gaming experience with the Xbox app" module.
+  ms.date: 06/15/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
