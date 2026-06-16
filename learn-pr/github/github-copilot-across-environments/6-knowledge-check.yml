@@ -9,6 +9,7 @@ metadata:
   ms.author: aastewar
   ms.topic: unit
   module_assessment: true
+  no-loc: ['Python', 'JavaScript', 'Rust', 'Ruby', '/generate', '/test', '/tests', '/unittest', 'gh copilot', 'suggest', 'explain', 'clarify', 'describe']
 durationInMinutes: 15
 quiz:
   title: Check your knowledge
