@@ -44,7 +44,7 @@ The Microsoft Sentinel model context protocol (MCP) server provides a hosted int
 
 ## Threat detection capabilities
 
-Microsoft Sentinel uses **analytics rules** to detect threats. These rules query collected data on a regular basis and generate alerts when suspicious activity is found. Related alerts are automatically grouped into **incidents**—case files your security team can assign and investigate.
+Microsoft Sentinel uses **analytics rules** to detect threats. These rules query collected data on a regular basis and generate alerts when suspicious activity is found. Related alerts are automatically grouped into **incidents**—case files your security team can assign and investigate. In the unified Microsoft Defender portal, **custom detections** provide a unified experience for creating detection rules across both Microsoft Sentinel and Defender XDR data—reducing ingestion costs, enabling real-time detections, and integrating seamlessly with remediation actions.
 
 Detection in Microsoft Sentinel spans three broad approaches:
 
