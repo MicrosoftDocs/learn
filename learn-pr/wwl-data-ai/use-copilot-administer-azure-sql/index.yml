@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.use-copilot-administer-azure-sql
+metadata:
+  title: Use Microsoft Copilot to Administer Azure SQL
+  description: "Use Copilot in Azure SQL Database, GitHub Copilot in SSMS and VS Code, and GitHub Copilot for IaC to work faster as a DBA: diagnose performance issues, author T-SQL, automate deployments, and evaluate every suggestion before applying it."
+  ms.date: 06/02/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: module
+  ms.service: sql
+  ai-usage: ai-generated
+title: Use Microsoft Copilot to administer Azure SQL
+summary: Accelerate everyday DBA work with Copilot. Use Copilot in the Azure SQL Database portal to diagnose performance issues, use GitHub Copilot in SSMS and VS Code to author and optimize T-SQL, generate Bicep and PowerShell automation from natural-language descriptions, and apply a structured validation gate before deploying any Copilot-generated output to production.
+abstract: |
+  After completing this module, you'll be able to:
+  - Use Copilot in Azure SQL Database to identify slow queries, interpret database watcher signals, and evaluate index recommendations.
+  - Use GitHub Copilot in SSMS to write DMV queries, generate stored procedures, explain errors, and optimize T-SQL using inline completion and chat.
+  - Use GitHub Copilot in the VS Code mssql extension to author and refactor T-SQL with schema-aware suggestions.
+  - Generate Bicep templates, PowerShell scripts, Azure CLI commands, and SQL Agent job scripts for DBA automation tasks using GitHub Copilot.
+  - Apply a validation gate (least-privilege check, performance baseline, security review) to every Copilot-generated script before production deployment.
+prerequisites: |
+  - Experience administering Azure SQL Database, Azure SQL Managed Instance, or SQL Server
+  - Intermediate T-SQL skills
+  - Familiarity with SQL Server Management Studio or the VS Code mssql extension
+  - Experience creating and configuring resources in the Azure portal
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+products:
+- azure-sql-database
+- azure-sql-managed-instance
+- sql-server
+subjects:
+- databases
+- artificial-intelligence
+units:
+  - learn.wwl.use-copilot-administer-azure-sql.introduction
+  - learn.wwl.use-copilot-administer-azure-sql.diagnose-performance-copilot
+  - learn.wwl.use-copilot-administer-azure-sql.author-tsql-github-copilot
+  - learn.wwl.use-copilot-administer-azure-sql.automate-dba-work-github-copilot
+  - learn.wwl.use-copilot-administer-azure-sql.evaluate-copilot-output-dba-standards
+  - learn.wwl.use-copilot-administer-azure-sql.exercise-diagnose-slow-query-copilot
+  - learn.wwl.use-copilot-administer-azure-sql.knowledge-check
+  - learn.wwl.use-copilot-administer-azure-sql.summary
+badge:
+  uid: learn.wwl.use-copilot-administer-azure-sql.badge

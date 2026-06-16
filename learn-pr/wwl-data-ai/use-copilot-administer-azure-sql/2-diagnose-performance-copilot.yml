@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-copilot-administer-azure-sql.diagnose-performance-copilot
+title: Diagnose performance with Copilot in Azure SQL Database
+metadata:
+  title: Diagnose Performance with Copilot in Azure SQL Database
+  description: Use Copilot in the Azure SQL Database portal to diagnose performance issues, interpret database watcher signals, and evaluate AI-generated recommendations.
+  ms.date: 06/12/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-diagnose-performance-copilot.md)]
