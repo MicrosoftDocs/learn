@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e87f543f-6730-4e91-b8d2-ecb886bd4ab3]
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI applications built on distributed architectures require end-to-end visibility into request flows to maintain performance and reliability. This module guides you through instrumenting applications with OpenTelemetry on Azure to capture distributed traces, diagnose latency issues, and gain deep observability into AI solution components.
 
 Imagine you're a developer building a retrieval-augmented generation (RAG) pipeline for a customer support AI application. The system consists of four microservices: an API gateway that receives user queries, an embedding service that converts text into vector representations, a vector search service that retrieves relevant documents, and an LLM orchestration service that generates responses. Users report intermittent slow responses, but your team can't pinpoint which service causes the delays. Some requests complete in under two seconds, while others take over ten seconds. Without visibility into how a single request flows through all four services, debugging requires manually correlating logs across separate outputs. Each service writes its own log format to its own destination, making it difficult to reconstruct the full path of any given request. Your client expects 95th-percentile response times under three seconds and needs a dashboard showing real-time service health. OpenTelemetry provides the standardized instrumentation framework to capture traces across all services and export them to Azure Monitor for unified analysis and visualization.
@@ -12,3 +20,8 @@ After completing this module, you'll be able to:
 
 > [!NOTE]
 > All code examples in this module are based on the most recent version of the `azure-monitor-opentelemetry` package at the time of writing. The package is updated often and the recommendation is to visit the [Azure Monitor OpenTelemetry documentation](/azure/azure-monitor/app/opentelemetry-enable) for the most up-to-date information.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
