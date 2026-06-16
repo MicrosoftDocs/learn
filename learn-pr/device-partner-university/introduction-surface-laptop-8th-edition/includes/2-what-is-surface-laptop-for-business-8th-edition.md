@@ -6,10 +6,10 @@ Microsoft Surface Laptop for Business (8th Edition) is a Copilot+ PC built by Mi
 
 Imagine that you're a business user that needs a device that balances performance, portability, and connectivity to get your work done. Surface Laptop for Business (8th Edition) offers hardware that fits these needs. Let's look at some of the device specifications that solve this need without added complexity:
 
-- **Powerful processors:** Surface Laptop for Business (8th Edition) features the Intel® Core™ Ultra Series 3 processors, a silicon platform that delivers premium performance, powers AI experiences, and offers improved graphics over previous generations. This generation of processors features the latest performance, efficiency, and low-power efficiency cores to offer a balance of powerful performance and long battery life. These processors feature a dedicated Neural Processing Unit (NPU) capable of  50 Trillion of Operation Per Second (TOPS)—enabling key Copilot+ PC AI experiences that run locally on device. Surface Laptop for Business (8th Edition) features the following processors:
-  - Intel® Core™ Ultra 5 processor 335 (Series 3)
-  - Intel® Core™ Ultra 7 processor 366H (Series 3)
-  - Intel® Core™ Ultra X7 processor 368H (Series 3)
+- **Processors:** Surface Laptop for Business (8th Edition) offers two processor architectures. This allows IT administrators to deploy hardware tailored to specific user roles and workloads across the organization. While both platforms share the same enterprise baseline for security, remote management, and deployment, they optimize for different performance priorities:
+  - **Intel® Core™ (Series 3)**: Best for users requiring x86/x64 application compatibility. Choose this for legacy enterprise software, heavy multithreaded tasks, and advanced graphic performance.
+  - **Qualcomm Snapdragon® X2 Series**: Best for mobile users. This ARM-based platform prioritizes maximum battery efficiency, cool untethered operation, and high-performance local AI processing via the NPU (Neural Processing Unit).
+To explore the specifications of Surface Laptop for Business (8th Edition) in more detail, check out the [Surface Pro for Business homepage](https://www.microsoft.com/en-us/surface/business/surface-pro-for-business-models).
 - **Displays:** Surface Laptop for Business (8th Edition) features two different screen size configurations: 13.8" and 15". Both displays feature a PixelSense™ Flow touchscreen display with a dynamic refresh rate of 120Hz and 10-point multitouch. The displays are individually color-calibrated with adaptive color and contrast—enabling contrast and clarity in various lighting conditions. Both displays feature a 3:2 aspect ratio, ideal for scrolling vertical content in Microsoft Office, and an anti-reflective display that is ISO 9241-307 certified. The 13.8" display option also features anti-glare technology with an integrated privacy screen—excellent for keeping data secure in various working environments. Let's compare some of the differences between the two Surface Laptop for Business (8th Edition) displays:
 
 | **Feature** | **Surface Laptop for Business, 13.8-inch (8th Edition)** | **Surface Laptop for Business, 15-inch (8th Edition)** |
@@ -25,6 +25,9 @@ Imagine that you're a business user that needs a device that balances performanc
 
 >[!NOTE]
 > The Surface Laptop for Business (8th Edition) 15" model also features a MicroSDXC Express card reader for removable storage and an optional integrated smart card reader, helping protect business users against sophisticated cyber threats.
+
+>[!IMPORTANT]
+> The DisplayPort standard on Surface Laptop for Business (8th Edition) varies depending on the processor architecture. The Intel® Core™ (Series 3) configuration supports DisplayPort 2.1, while the Qualcomm Snapdragon® X2 Series configuration supports DisplayPort 1.4. Both configurations support high-resolution external displays. 
 
 - **Precision touchpad:** The touchpad on Surface Laptop for Business (8th Edition) is customizable with Adaptive Touch mode and advanced haptics that provide intuitive navigation and responsive feedback, such as feeling an image click into place in PowerPoint. Adaptive Touch allows users with varying mobility and dexterity levels to customize the touchpad to better suit their needs.
 
