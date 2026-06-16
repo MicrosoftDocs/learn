@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d356fddb-a80f-4df4-9b4c-81827b96cb43]
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI applications require immediate, coordinated responses to system events such as new data arrivals, completed model training, or pipeline stage transitions. This module guides you through using Azure Event Grid to build event-driven AI workflows on Azure that react to state changes in real time.
 
 Imagine you're a developer building an AI-powered content moderation platform that processes images and text uploaded to Azure Blob Storage. Each upload triggers a series of downstream operations: an embeddings service generates vector representations, a classification model assigns content categories, and a notification service alerts reviewers when content is flagged. Currently, each service polls for new data on a fixed interval, creating delays between upload and processing, wasting compute resources on empty polls, and making it difficult to add new processing steps without modifying existing services. During traffic spikes, the polling intervals can't keep up, and newly uploaded content waits minutes before processing begins. Your team needs an architecture where each component reacts to events as they occur rather than checking for changes on a schedule. When a new image arrives in storage, the system should immediately trigger the embeddings pipeline without any service needing to know about the others. Failed processing attempts should retry automatically, and permanently failed events should route to a dead-letter destination for investigation. The platform also needs to emit its own custom events when processing completes, so additional downstream services can subscribe without modifying the existing pipeline. Azure Event Grid provides the event-driven routing, filtering, and delivery guarantees that this architecture requires.
@@ -11,3 +19,8 @@ After completing this module, you'll be able to:
 
 > [!NOTE]
 > All code examples in this module are based on the most recent version of the `azure-eventgrid` library at the time of writing. The library is updated often and the recommendation is to visit the [Azure Event Grid SDK for Python](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/eventgrid/azure-eventgrid) site for the most up-to-date information.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

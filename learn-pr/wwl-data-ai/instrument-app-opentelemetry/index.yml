@@ -3,7 +3,7 @@ uid: learn.wwl.instrument-app-opentelemetry
 metadata:
   title: Instrument an App with OpenTelemetry
   description: Learn how to instrument distributed applications with OpenTelemetry on Azure to capture distributed traces, diagnose latency issues, and gain deep observability into AI solution components.
-  ms.date: 02/19/2026
+  ms.date: 06/15/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=37e2985b-5ed2-47a6-b5ae-76327c928349]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Dashboards provide at-a-glance operational awareness, but investigating an incident or exploring a trend requires interactivity. Azure Monitor Workbooks provide a flexible canvas that combines text, KQL queries, metrics, and parameters into interactive reports where users can adjust filters, select time ranges, and drill into specific data points. This unit covers how to create workbooks that enable developers and operations teams to explore telemetry data dynamically.
 
 ## Understand Azure Monitor Workbooks
@@ -51,6 +62,8 @@ Conditional visibility controls whether a workbook step is shown or hidden based
 Grid link actions create interactive tables where selecting a row triggers a downstream action. When you configure a grid column as a link, clicking a cell in that column can open the end-to-end transaction details for a specific request, navigate to another workbook for deeper analysis, or export a parameter value that other steps reference. The exported parameter pattern is powerful: you can display a summary grid of services with error counts, and when a user select a service name, the selected value populates a parameter that filters the remaining workbook steps to show only data for that service.
 
 Effective workbook design follows a consistent pattern. You can start with a summary query at the top that shows overall pipeline health across all services, add parameter filters for time range and service selection, and use linked grids to enable drill-down from the summary into specific services or operations. You can place detailed analysis steps, such as exception stack traces or dependency timelines, in conditionally visible sections that appear only when the user selects a specific item. You can also keep the number of query steps manageable to maintain fast load times, because each query step executes against the Log Analytics backend every time a parameter changes.
+
+::: zone-end
 
 ## Additional resources
 
