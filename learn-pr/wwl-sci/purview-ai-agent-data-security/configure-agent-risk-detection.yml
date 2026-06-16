@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-agent-data-security.configure-agent-risk-detection
+title: Configure agent-specific risk detection controls
+metadata:
+  title: Configure Agent-Specific Risk Detection Controls
+  description: "Configure Insider Risk Management and communication compliance to detect risky agent behavior and policy violations in agent interactions."
+  ms.date: 06/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/configure-agent-risk-detection.md)]
