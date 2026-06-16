@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.recall-preview
+title: Retrace your steps with Recall (preview)
+metadata:
+  title: Retrace Your Steps With Recall (preview)
+  description: In this module, you'll learn how to use Recall (preview) to find previously viewed content using natural language and timeline browsing. You'll also learn to identify when it’s most useful and how it helps reduce time spent retracing steps.
+  ms.date: 06/15/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Learn how to use Recall (preview) to find previously viewed content using natural language and timeline browsing. Identify when it’s most useful and how it helps reduce time spent retracing steps.
+abstract: |
+  By the end of this module, you’ll be able to:
+  - Describe what Recall (preview) is and how it works on supported devices
+  - Use Recall (preview) to find previously viewed content using natural language
+  - Identify when Recall (preview) can save time by helping retrace past activity
+  - Explain how Recall (preview) stores and manages data locally on the device
+prerequisites: |
+  - None
+iconUrl: /training/achievements/recall-preview.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.recall-preview.introduction
+  - learn.dpu.recall-preview.what-is-recall
+  - learn.dpu.recall-preview.how-to-use
+  - learn.dpu.recall-preview.why-recall-matters
+  - learn.dpu.recall-preview.scenarios
+  - learn.dpu.recall-preview.when-to-use
+  - learn.dpu.recall-preview.knowledge-check
+  - learn.dpu.recall-preview.summary
+badge:
+  uid: learn.dpu.recall-preview.badge
+

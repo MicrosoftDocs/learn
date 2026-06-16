@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-studio-effects.why-it-matters
+title: Why Studio Effects matter
+metadata:
+  title: Why Studio Effects Matter
+  description: This content is part of the "Enhance video and audio with Windows Studio Effects" module.
+  ms.date: 06/15/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-why-it-matters.md)]

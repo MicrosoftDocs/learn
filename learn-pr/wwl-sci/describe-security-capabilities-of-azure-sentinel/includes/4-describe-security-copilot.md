@@ -57,7 +57,10 @@ Security Copilot consolidates and summarizes threat intelligence to help securit
 
 ### AI agents
 
-In addition to the analyst-driven capabilities described above, Security Copilot includes autonomous AI agents that operate in the background. For Microsoft Sentinel, the most relevant is the **Dynamic Threat Detection Agent**—an always-on service that uses AI to correlate alerts, events, anomalies, and threat intelligence across Microsoft Defender and Microsoft Sentinel environments. When it identifies a threat that traditional rule-based detection missed, it generates a dynamic alert with full context, natural language explanations, mapped MITRE ATT&CK techniques, and recommended remediation steps.
+In addition to the analyst-driven capabilities described above, Security Copilot includes autonomous AI agents that operate in the background. Two agents are especially relevant for Microsoft Sentinel:
+
+- **Security Alert Triage Agent**—an autonomous agent that helps security teams triage alerts at scale. It applies AI-driven reasoning across evidence to classify alerts for supported security workloads—including phishing, identity, and cloud alerts—delivering clear verdicts that identify which alerts represent real attacks and which are false positives. This enables analysts to focus on investigating genuine threats, with transparent, step-by-step reasoning to support every decision.
+- **Dynamic Threat Detection Agent**—an always-on service that uses AI to identify gaps in traditional rule-based detection by correlating alerts, events, anomalies, and threat intelligence across Microsoft Defender and Microsoft Sentinel environments. When it identifies a threat that traditional rule-based detection missed, it generates a dynamic alert with full context, natural language explanations, mapped MITRE ATT&CK techniques, and recommended remediation steps.
 
 ## The standalone experience
 

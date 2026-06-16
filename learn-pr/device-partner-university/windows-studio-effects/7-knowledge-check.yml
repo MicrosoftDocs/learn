@@ -1,0 +1,167 @@
+### YamlMime:ModuleUnit
+
+uid: learn.dpu.windows-studio-effects.knowledge-check
+
+title: Knowledge check
+
+metadata:
+
+  title: Knowledge check
+
+  description: Check your understanding of Windows Studio Effects.
+
+  ms.date: 06/15/2026
+
+  author: stephanie-rosenzweig
+
+  ms.author: v-stephanier
+
+  ms.topic: unit
+
+durationInMinutes: 5
+
+quiz:
+
+  title: Check your knowledge
+
+  questions:
+
+  - content: "What is a key benefit of Windows Studio Effects?"
+
+    choices:
+
+    - content: "Requires non-Microsoft apps"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Windows Studio Effects is built into Windows and doesn't require non-Microsoft apps."
+
+    - content: "Improves audio and video using on-device AI"
+
+      isCorrect: true
+
+      explanation: "Correct. Windows Studio Effects uses on-device AI to improve audio and video experiences."
+
+    - content: "Only works in one video app"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Windows Studio Effects works across supported apps."
+
+    - content: "Stores recordings automatically"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Windows Studio Effects isn't a recording feature."
+
+  - content: "Which feature helps reduce background noise during calls?"
+
+    choices:
+
+    - content: "Background blur"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Background blur affects visuals only."
+
+    - content: "Eye contact"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Eye contact adjusts gaze."
+
+    - content: "Voice focus"
+
+      isCorrect: true
+
+      explanation: "Correct. Voice focus helps reduce background noise during calls."
+
+    - content: "Automatic framing"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Automatic framing adjusts positioning."
+
+  - content: "Where can you configure Windows Studio Effects?"
+
+    choices:
+
+    - content: "Only in individual apps"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Windows Studio Effects isn't configured only in individual apps."
+
+    - content: "In Windows Settings and Quick Settings"
+
+      isCorrect: true
+
+      explanation: "Correct. Windows Studio Effects can be configured in Windows Settings and Quick Settings, and applied across apps that use the camera or microphone."
+
+    - content: "Only in Microsoft Edge"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Windows Studio Effects isn't browser-specific."
+
+    - content: "Only through PowerShell"
+
+      isCorrect: false
+
+      explanation: "Incorrect. PowerShell isn't required to configure Windows Studio Effects."
+
+  - content: "What does automatic framing do?"
+
+    choices:
+
+    - content: "Adjusts brightness automatically"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Lighting adjustments are separate from automatic framing."
+
+    - content: "Keeps the user centered in the frame"
+
+      isCorrect: true
+
+      explanation: "Correct. Automatic framing keeps the user centered in the frame."
+
+    - content: "Removes background noise"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Removing background noise is an audio feature, not automatic framing."
+
+    - content: "Changes camera resolution"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Automatic framing doesn't change camera resolution."
+
+  - content: "When is it most helpful to use Windows Studio Effects?"
+
+    choices:
+
+    - content: "When working offline only"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Windows Studio Effects isn't limited to offline use."
+
+    - content: "When improving communication quality in calls"
+
+      isCorrect: true
+
+      explanation: "Correct. Windows Studio Effects helps improve communication quality in calls."
+
+    - content: "When installing applications"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Windows Studio Effects isn't related to installing applications."
+
+    - content: "When managing storage space"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Windows Studio Effects isn't used for storage management."
