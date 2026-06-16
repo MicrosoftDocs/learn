@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.dpu.optimize-pc-gaming
+title: Optimize your Windows gaming experience with the Xbox app
+metadata:
+  title: Optimize Your Windows Gaming Experience With The Xbox App
+  description: This module introduces ways to use the Xbox app and Windows gaming features to optimize your PC gaming experience across several types of features.
+  ms.date: 06/15/2026
+  author: connor-sheridan
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: gaming
+summary: >
+  This module introduces ways to use the Xbox app and Windows gaming features to optimize your PC gaming experience across several types of features.
+abstract: |2+
+  By the end of this module, you'll be able to:
+  - Use the Xbox app as a unified launcher for games across multiple platforms
+  - Improve your gameplay experience using Windows and Xbox app features
+  - Connect with friends and capture experiences without leaving your game
+prerequisites: |
+  - None
+iconUrl: /training/achievements/optimize-pc-gaming.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles: 
+  - business-user
+  - student
+products:
+  - windows-11
+units:
+  - learn.dpu.optimize-pc-gaming.introduction
+  - learn.dpu.optimize-pc-gaming.xbox-app-gaming-hub
+  - learn.dpu.optimize-pc-gaming.exercise-consolidate-games
+  - learn.dpu.optimize-pc-gaming.performance-gaming-features
+  - learn.dpu.optimize-pc-gaming.how-to-use-exercise
+  - learn.dpu.optimize-pc-gaming.knowledge-check
+  - learn.dpu.optimize-pc-gaming.summary
+badge:
+  uid: learn.dpu.optimize-pc-gaming.badge
