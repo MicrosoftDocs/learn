@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=143b1759-7339-48e6-b829-984868644f49]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The previous units covered how Event Grid routes events from sources to handlers and how to configure filtering and delivery policies. This unit focuses on the other side of the equation: publishing custom events from your AI applications. You learn how to create custom topics, construct well-structured events for AI operations, and use the Event Grid SDK and REST API to emit events that signal completed inferences, model updates, and pipeline stage transitions.
 
 > [!NOTE]
@@ -189,6 +200,8 @@ Publish when a model is retrained, validated, or promoted to production. Include
 Publish at each stage boundary in a multi-step pipeline. Include the pipeline run ID, stage name, stage status, and input and output references. A monitoring service subscribes to these events to build a real-time view of pipeline progress and detect bottlenecks. An orchestration service uses them to trigger the next stage when the previous one completes.
 
 Each of these patterns follows the same core principle: the event describes what happened and provides enough context for subscribers to act. The event producer doesn't need to know who subscribes or what they do with the information. This decoupling is what makes event-driven AI architectures extensible. Adding a new consumer is a matter of creating a new event subscription, not modifying the producer.
+
+::: zone-end
 
 ## Additional resources
 
