@@ -28,3 +28,5 @@ The following resources provide additional information on the topics covered in 
 - [What is Microsoft Security Copilot?](/copilot/security/microsoft-security-copilot)
 - [Security Copilot with Microsoft Sentinel](/azure/sentinel/sentinel-security-copilot)
 - [Copilot in Microsoft Defender](/defender-xdr/security-copilot-in-microsoft-365-defender)
+- [Security Alert Triage Agent in Microsoft Defender](/defender-xdr/security-alert-triage-agent)
+- [Dynamic Threat Detection Agent in Microsoft Defender](/defender-xdr/dynamic-threat-detection-agent)
