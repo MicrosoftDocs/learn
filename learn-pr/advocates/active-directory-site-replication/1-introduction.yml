@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.site-topology-replication.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to Active Directory sites, topology, and replication.
+  ms.date: 04/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]
