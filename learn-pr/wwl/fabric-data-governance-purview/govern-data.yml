@@ -2,12 +2,12 @@
 uid: learn.fabric-data-governance-purview.govern-data
 title: Govern data in Microsoft Fabric
 metadata:
-  title: Govern data in Microsoft Fabric
-  description: "Learn how to use built-in features of Microsoft Fabric for basic data governance without adding Microsoft Purview."
-  ms.date: 06/11/2025
+  title: Govern Data in Microsoft Fabric
+  description: "Explore the governance capabilities built into Microsoft Fabric and understand which are included with your Fabric license."
+  ms.date: 06/12/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
-durationInMinutes: 12
+durationInMinutes: 7
 content: |
   [!include[](includes/2-govern-data.md)]

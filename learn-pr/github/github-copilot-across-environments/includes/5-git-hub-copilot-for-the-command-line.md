@@ -148,7 +148,124 @@ Common configuration options include:
 
 Refer to the [official GitHub Copilot CLI documentation](https://github.com/github/copilot-cli) for full configuration options.
 
-### Tips for effective use
+## Sandboxed execution environments
+
+GitHub Copilot CLI supports sandboxed execution environments that help protect your system while allowing Copilot to perform tasks on your behalf.
+
+Sandboxing isolates commands, file operations, and other activities from your primary development environment. Depending on your workflow, you can choose between **local sandboxing** and **cloud sandboxing**.
+
+### Local sandboxing
+
+Local sandboxing allows Copilot to execute commands inside a restricted environment on your machine.
+
+When enabled, Copilot's access to your filesystem, network connectivity, and operating system capabilities is limited, helping reduce the risk of unintended changes while still allowing you to benefit from agent-assisted workflows.
+
+To enable local sandboxing during an interactive session:
+
+```shell
+/sandbox enable
+```
+
+After enabling sandboxing, commands executed by Copilot run within the sandboxed environment rather than directly on your host system.
+
+#### Benefits of local sandboxing
+
+| Benefit               | Description                                                           |
+| --------------------- | --------------------------------------------------------------------- |
+| Improved security     | Restricts access to sensitive system resources.                       |
+| Safer experimentation | Allows you to test agent-driven workflows with reduced risk.          |
+| Local execution       | Uses your machine's resources without requiring cloud infrastructure. |
+| Greater control       | Provides additional safeguards while using autonomous agents.         |
+
+### Cloud sandboxing
+
+Cloud sandboxing allows Copilot CLI sessions to run inside fully isolated Linux environments hosted by GitHub.
+
+Unlike local sandboxing, cloud sandbox sessions execute entirely in GitHub-hosted infrastructure and remain separate from your local machine and from other sandbox sessions.
+
+Cloud sandboxing is built on Azure Container Apps Sandboxes, with GitHub providing authentication, governance, policy enforcement, and billing integration.
+
+To start a cloud sandbox session:
+
+```shell
+copilot --cloud
+```
+
+Once started, Copilot can run commands, modify files, execute tests, and perform development tasks inside the cloud environment rather than on your local device.
+
+#### Benefits of cloud sandboxing
+
+| Benefit             | Description                                           |
+| ------------------- | ----------------------------------------------------- |
+| Strong isolation    | Workloads run separately from your local machine.     |
+| Device flexibility  | Resume sessions from different devices.               |
+| Resource offloading | Uses cloud resources instead of local CPU and memory. |
+| Parallel execution  | Run multiple agent-driven tasks simultaneously.       |
+
+### Continue sessions across devices
+
+Because cloud sandbox sessions run in GitHub-hosted infrastructure, work is not tied to a specific computer.
+
+This allows you to:
+
+* Start a session on one device
+* Resume the same session from another device
+* Continue work without manually transferring files or recreating environments
+
+This flexibility is especially useful for developers who work across multiple machines or locations.
+
+### Cloud sandbox session lifecycle
+
+Cloud sandbox sessions can exist in three states:
+
+| State       | Description                                                       |
+| ----------- | ----------------------------------------------------------------- |
+| **Active**  | The session is running and available for interaction.             |
+| **Stopped** | The session is paused, but its state is preserved for future use. |
+| **Deleted** | The session and all saved state are permanently removed.          |
+
+When a session is stopped, GitHub saves a snapshot of the environment, including files, environment variables, and in-progress work. Resuming the session restores the saved state so you can continue where you left off.
+
+### Authentication and access
+
+Cloud sandboxes use the same authentication model as GitHub Copilot CLI.
+
+If you can authenticate to GitHub Copilot CLI and have access to GitHub Copilot, no additional cloud provider configuration is required.
+
+You do not need to:
+
+* Manage API keys
+* Configure cloud infrastructure
+* Provision virtual machines
+* Maintain container environments
+
+> [!NOTE]
+> Organization or enterprise administrators must enable the Cloud Sandbox access policy before members can use cloud sandbox environments.
+
+### Local vs cloud sandboxing
+
+| Feature             | Local Sandbox                | Cloud Sandbox                    |
+| ------------------- | ---------------------------- | -------------------------------- |
+| Execution location  | Local machine                | GitHub-hosted environment        |
+| Resource usage      | Local resources              | Cloud resources                  |
+| Isolation level     | Restricted local environment | Fully isolated cloud environment |
+| Device independence | No                           | Yes                              |
+| Parallel workloads  | Limited by local hardware    | Easily scalable                  |
+
+### When should you use sandboxing?
+
+Consider using sandboxing when:
+
+* Working with unfamiliar repositories
+* Testing agent-generated commands
+* Running autonomous workflows
+* Performing potentially destructive operations
+* Working across multiple devices
+* Offloading compute-intensive development tasks
+
+Sandboxing provides an additional layer of security and flexibility, allowing you to safely take advantage of GitHub Copilot CLI's agent capabilities.
+
+### Tips for effective use of Copilot CLI
 
 * Use **interactive mode (`copilot`)** for exploratory tasks.
 * Use **one-shot mode (`copilot -i`)** for quick answers.
