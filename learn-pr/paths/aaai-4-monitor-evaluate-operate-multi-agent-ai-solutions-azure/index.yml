@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.wwl.monitor-evaluate-operate-multi-agent-ai-solutions-azure
+metadata:
+  title: Monitor, Evaluate, and Operate Multi-Agent AI Solutions in Azure | AI-500
+  description: Learn how to operate production multi-agent solutions with comprehensive visibility, systematic quality assurance, cost control, and robust incident response. Learners advance from single-application monitoring and evaluation experiments to distributed multi-agent observability, LLM-as-judge evaluation for coordination quality, multi-agent cost optimization, enterprise human-in-the-loop approval workflows, and structured AI incident debugging procedures. AI-500
+  ms.date: 06/16/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: learning-path
+title: Monitor, evaluate, and operate multi-agent AI solutions in Azure
+prerequisites: |
+  - Completion of AI-103 "Develop AI agents on Azure" and AI-300 "Operationalize generative AI applications" (or equivalent)
+  - Experience with OpenTelemetry instrumentation and Azure Monitor / Log Analytics workspaces
+  - Familiarity with Microsoft Foundry agent evaluation runs and the portal evaluation workflow
+  - Working experience with GitHub Actions for CI/CD pipelines
+  - Basic familiarity with Power Automate workflow design
+  - Python programming proficiency
+summary: |
+  Operating production-grade multi-agent AI solutions in Azure requires end-to-end visibility, systematic quality measurement, and structured incident response. This learning path guides you through distributed OpenTelemetry observability with Azure Monitor Application Insights, LLM-as-judge agent evaluation using Azure AI Foundry, multi-agent cost and performance optimization, enterprise human-in-the-loop approval workflows with Power Automate, and structured debugging procedures for production AI incidents.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+products:
+- agent-framework
+- azure-cosmos-db
+- azure-monitor
+- azure-managed-redis
+- microsoft-foundry
+- office-teams
+- power-automate
+subjects:
+- artificial-intelligence
+modules:
+- learn.wwl.implement-distributed-observability-multi-agent-opentelemetry
+- learn.wwl.design-evaluation-frameworks-multi-agent-azure
+- learn.wwl.optimize-multi-agent-performance-cost-azure
+- learn.wwl.design-human-in-loop-approval-workflows
+- learn.wwl.debug-production-multi-agent-incidents-azure
+
+trophy:
+  uid: learn.wwl.monitor-evaluate-operate-multi-agent-ai-solutions-azure.trophy
