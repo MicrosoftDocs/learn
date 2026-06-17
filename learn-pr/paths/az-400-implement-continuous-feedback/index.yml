@@ -4,8 +4,8 @@ metadata:
   title: "AZ-400: Implement Continuous Feedback"
   description: "Learn to implement continuous feedback practices in DevOps using Azure Application Insights, monitoring dashboards, team knowledge sharing, automated analytics, and blameless retrospectives to create a culture of continuous improvement."
   ms.date: 10/21/2025
-  author: LuizMacedo
-  ms.author: lumac
+  author: petender
+  ms.author: petender
   ms.topic: learning-path
   ai-usage: ai-assisted
 title: "AZ-400: Implement continuous feedback"

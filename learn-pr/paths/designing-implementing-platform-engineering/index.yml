@@ -4,8 +4,8 @@ metadata:
   title: Design and Implement Platform Engineering
   description: This learning path provides a comprehensive guide to Design and Implement Platform Engineering within modern enterprises. It covers the foundational principles, strategic alignment with business goals, and the practical aspects of building scalable, secure, and future-proof platforms. By following this path, learners will gain the knowledge and skills needed to enhance developer productivity, ensure operational excellence, and drive continuous innovation.
   ms.date: 01/13/2025
-  author: LuizMacedo
-  ms.author: lumac
+  author: petender
+  ms.author: petender
   ms.topic: learning-path
 title: Design and Implement Platform Engineering
 prerequisites: |

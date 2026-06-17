@@ -5,8 +5,8 @@ metadata:
   title: Add flexibility to your Azure Resource Manager template by using parameters and outputs
   description: Make your Azure Resource Manager template reusable by adding parameters, and add value with outputs.
   ms.date: 10/20/2025
-  author: mumian
-  ms.author: jgao
+  author: wwlpublish
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
     - devx-track-arm-template

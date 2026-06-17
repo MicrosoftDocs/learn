@@ -5,8 +5,8 @@ metadata:
   title: Integrate Azure Key Vault with Azure Pipelines
   description: "Hands-on lab implementing Azure Key Vault integration with Azure Pipelines for secure secret management in CI/CD workflows"
   ms.date: 10/24/2025
-  author: LuizMacedo
-  ms.author: lumac
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ms.custom: sfi-ga-nochange
 durationInMinutes: 40
