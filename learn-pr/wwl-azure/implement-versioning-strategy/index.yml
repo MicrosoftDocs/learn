@@ -4,8 +4,8 @@ metadata:
   title: Implement a Versioning Strategy
   description: "Learn to implement effective versioning strategies for packages using semantic versioning, package promotion workflows, and Azure Artifacts views to manage package quality and lifecycle."
   ms.date: 10/13/2025
-  author: LuizMacedo
-  ms.author: lumac
+  author: petender
+  ms.author: petender
   ms.topic: module
   ms.service: azure
   ai-usage: ai-assisted
