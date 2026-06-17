@@ -2,9 +2,9 @@
 uid: learn.fabric-data-governance-purview.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
-  description: "Check your knowledge"
-  ms.date: 06/11/2025
+  title: Module Assessment
+  description: "Test your knowledge of Microsoft Fabric data governance and Microsoft Purview capabilities."
+  ms.date: 06/12/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
@@ -13,38 +13,38 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "You're considering whether to add Microsoft Purview to your Microsoft Fabric environment for its extra governance features. Which of the following features is only available in Purview?"
+  - content: "Which of the following capabilities is included with a Microsoft Fabric license and doesn't require an additional Microsoft Purview license?"
     choices:
-    - content: "Data Loss Prevention (DLP)."
+    - content: "Data Loss Prevention (DLP) policies."
+      isCorrect: false
+      explanation: "Incorrect. DLP policies require a Microsoft Purview license to configure and enforce."
+    - content: "Item endorsement."
       isCorrect: true
-      explanation: "Correct. DLP policies aren't available in Microsoft Fabric until you add Purview to your subscriptions."
-    - content: "Sensitivity tags."
+      explanation: "Correct. Endorsement is a built-in Fabric feature included with your Fabric license. Sensitivity labels and DLP policies both require a Microsoft Purview license."
+    - content: "Sensitivity labels."
       isCorrect: false
-      explanation: "Incorrect. You can use tags to label items in Microsoft Fabric without Purview."
-    - content: "Capacities."
-      isCorrect: false
-      explanation: "Incorrect. You can use capacities to limit compute resource usage in Fabric without Purview."
-  - content: "Which of the following reports are included in the Purview Hub?"
+      explanation: "Incorrect. Sensitivity labels in Microsoft Fabric require Microsoft Purview Information Protection, which needs another Purview license."
+  - content: "Where do DLP policy restrictions surface for Fabric users?"
     choices:
-    - content: "Sensitivity label report."
+    - content: "In the Microsoft Purview portal."
+      isCorrect: false
+      explanation: "Incorrect. DLP policies are configured in the Purview Microsoft Purview portal, but Fabric users see their effects inside Fabric—not in the Microsoft Purview portal."
+    - content: "As policy tips or access restrictions on Fabric items."
       isCorrect: true
-      explanation: "Correct. This report is in the Purview Hub."
-    - content: "Audit report."
+      explanation: "Correct. When a DLP policy triggers, Fabric users see a policy tip warning or an access restriction on the affected item, directly inside Fabric."
+    - content: "In the Fabric Admin portal."
       isCorrect: false
-      explanation: "Incorrect. This isn't the name of a report in the Purview Hub."
-    - content: "Workspace items report."
-      isCorrect: false
-      explanation: "Incorrect. This isn't the name of a report in the Purview Hub."
-  - content: "Which feature does Microsoft Purview add to Microsoft Fabric for data governance?"
+      explanation: "Incorrect. The Fabric Admin portal is used for tenant configuration, not for displaying DLP policy tips to end users."
+  - content: "Which section of the OneLake catalog Govern tab shows sensitivity label coverage and DLP policy evaluation?"
     choices:
-    - content: "Real-time data processing capabilities."
+    - content: "Manage your data estate."
       isCorrect: false
-      explanation: "Incorrect. Real-time data processing isn't a feature of Microsoft Purview."
-    - content: "Enhanced data visualization tools."
-      isCorrect: false
-      explanation: "Incorrect. Data visualization isn't a focus of Microsoft Purview."
-    - content: "Centralized data cataloging and compliance monitoring."
+      explanation: "Incorrect. This section provides an inventory view of your Fabric data estate organized by capacities and domains."
+    - content: "Protect, secure & comply."
       isCorrect: true
-      explanation: "Correct. Microsoft Purview provides centralized cataloging and compliance features for data governance."
+      explanation: "Correct. This section shows sensitivity label coverage and DLP policy evaluation across your tenant, helping you identify labeling gaps and policy violations."
+    - content: "Discover, trust, and reuse."
+      isCorrect: false
+      explanation: "Incorrect. This section surfaces insights about item endorsement, data freshness, and curation state."
     
   

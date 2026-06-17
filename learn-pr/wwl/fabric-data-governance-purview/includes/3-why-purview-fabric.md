@@ -1,61 +1,59 @@
-When you need data governance features beyond those built into Microsoft Fabric, Microsoft Purview provides comprehensive data governance capabilities.
+Some governance requirements go beyond what's included in a Fabric license. For these, Microsoft Fabric relies on **Microsoft Purview**—a family of governance, risk, and compliance solutions.
 
-In the last unit, we reviewed the built-in governance features of Microsoft Fabric. Let's assume you work for a health care provider and new regulations mean you need stricter governance for data stored in Microsoft Fabric. Now, you want to investigate what features Microsoft Purview includes that can help you comply with new regulations.
+The important thing to understand is that Purview isn't a separate tool you navigate to for most of these capabilities. Once your organization has the right Purview licenses, the capabilities surface directly inside Fabric: sensitivity labels appear on items, DLP policy tips show up in reports, and governance insights land in the OneLake catalog. Your job as a data engineer or analyst is to understand what's available, recognize when it's in effect, and know when to escalate to an admin or compliance team.
 
-In this unit, you'll learn what capabilities Microsoft Purview adds to the built-in data governance and compliance capabilities available in Microsoft Fabric.
+This unit covers the governance capabilities that require a Microsoft Purview license and explains how each one works within Fabric.
 
-## What is Microsoft Purview?
+## Classify and label sensitive data
 
-Microsoft Purview is a set of solutions that you can use to govern, protect, and manage data wherever it resides. It has three pillars: data governance, data security, and risk and compliance. Purview includes data governance tools for data discovery, classification, and cataloging and can be used to gain a clear understanding of your data landscape. Purview automates the identification of sensitive information and provides a centralized repository for metadata. Use it to find, manage, and govern data across various environments, both on-premises and in the cloud.
+**The problem:** How do you know which Fabric items contain sensitive data—and how do you communicate and enforce that sensitivity consistently?
 
-Purview also supports data security and risk and compliance management with features that monitor regulatory adherence and assess data vulnerabilities. It integrates with other Microsoft services and third-party tools. By streamlining data access controls, enforcing policies, and delivering insights into data lineage, Purview can help you maintain data integrity, comply with regulations, and use data effectively for strategic decision-making.
+**What Purview adds:** Microsoft Purview Information Protection introduces **sensitivity labels** to Fabric. Labels like *Confidential* or *Highly Confidential* can be applied to any Fabric item—lakehouses, warehouses, reports, semantic models. Once applied, a label travels with the data: if a user exports a labeled dataset to Excel, the label follows it.
 
-The Purview solutions can be accessed via the Microsoft Purview Portal.
+Admins can configure **auto-labeling policies** to detect sensitive content automatically—credit card numbers, national identification numbers, health record identifiers—and apply the appropriate label without manual intervention. **Default label policies** ensure every new item in a workspace starts with a minimum classification.
 
-![A diagram showing Microsoft Purview pillars.](../media/purview-areas.png)
+Labels also enable **protection policies**: if an item's label exceeds a sensitivity threshold, Purview can restrict who can access it, enforce encryption, or block export. This moves labeling from informational to enforceable.
 
-## What are some of the Purview tools?
+## Prevent unauthorized data sharing
 
-Microsoft Purview enables you to discover, manage, and protect Fabric data using Purview tools. Purview can be configured to scan your Fabric item and present data governance findings in the Purview Hub located in Fabric or in Purview itself. To unlock the following capabilities, register your Fabric tenant in Microsoft Purview. 
+**The problem:** Even with labels applied, users can still share or download sensitive data unless something actively stops them.
 
-### Microsoft Purview Data Map
-Data Map can be used to scan all of your data assets, to capture metadata about them and to identify sensitive data. It captures metadata about data in existing analytics, software-as-a-service, and operational systems in hybrid, on-premises, and multicloud environments. There's a built-in scanning and classification system that keeps the Data Map updated.
+**What Purview adds:** Microsoft Purview Data Loss Prevention (DLP) policies monitor structured data in Fabric—lakehouses, warehouses, databases, and semantic models—and enforce rules based on sensitivity labels and content patterns. When a policy triggers, it can:
 
-### Microsoft Purview Unified Catalog
+- Display a **policy tip** warning the user that the item contains sensitive data
+- Restrict access to the item until a compliance review is completed
+- Generate an alert for your security team
 
-The Purview Unified Catalog is a searchable catalog of your scanned data where you curate, grant access to and, improve the health of your data.  
+DLP policies are configured by compliance admins and evaluated continuously. Fabric users see the effects in the items they work with—a policy tip on a report, or a restriction on a semantic model — without needing to interact with the Microsoft Purview portal directly. 
 
-In the Purview Unified Catalog, you can inventory of all your data assets, their metadata, and their lineage so you can understand the topography of your data estate. You can search for and browse datasets, and view metadata, data lineage, classification, and sensitivity labels. The Unified Catalog promotes collaboration because users can annotate datasets with tags to improve discoverability.
+## Build a searchable data catalog
 
-Suppose you work at a health care provider and regulations require you to control who can access patient records. In the Unified Catalog, users and administrators can:
+**The problem:** With dozens of workspaces and hundreds of items, how does someone find the right dataset for a business question?
 
-- Discover where patient records are held by searching for keywords.
-- Label documents and items as patient records to differentiate them from other, less sensitive information.
-- Use access policies to manage self-service access requests to patient records.
+**What Purview adds:** The Microsoft Purview Unified Catalog provides a searchable, curated inventory of all your data assets. Fabric item metadata appears in the Unified Catalog automatically through **live view**—no configuration needed. Organizations that need richer metadata—including column-level classification and lineage from non-Fabric sources—can register their Fabric tenant and run periodic scans.
 
-### Microsoft Purview Information Protection
+The Unified Catalog supports **glossary terms** so business users can search by domain language rather than technical item names. It also supports **data product publication workflows**, letting data teams package related assets into a governed, self-service data product for consumers across the organization.
 
-Information Protection is used to classify, label, and protect sensitive data throughout your organization. By applying customizable sensitivity labels, you can classify records. Then policies can define access controls and enforce encryption. These labels follow the data wherever it goes, whether in emails, documents, or cloud storage, and integrate with other tools like Data Loss Prevention (DLP) to prevent unauthorized sharing. This helps organizations meet compliance requirements while safeguarding data against accidental exposure or malicious threats.
+## Detect insider threats
 
-If, for example, you worked as a data steward at a health care provider, you could use Information Protection to:
+**The problem:** Legitimate users with access to sensitive data can still misuse it—intentionally or accidentally.
 
-- Identify data items that contain patient information, even when item titles don't identify them as patient records.
-- Train classifiers to spot patient records automatically.
-- Protect records with policies to encrypt data and impose Information Rights Management (IRM).
+**What Purview adds:** Microsoft Purview Insider Risk Management (IRM) monitors user behavior patterns across Microsoft 365 and Fabric. IRM includes Fabric-specific risk indicators: Power BI activities, lakehouse access patterns, and data exfiltration scenarios such as bulk downloads or copying data to external locations.
 
-### Microsoft Purview Data Loss Prevention (DLP)
+When IRM detects a concerning pattern, it generates an alert for your security team to investigate. This doesn't change what users see day-to-day, but it gives your organization a safety net for unusual behavior before it becomes a breach.
 
-DLP helps protect sensitive information with policies that automatically detect, monitor, and control the sharing or movement of sensitive data. Administrators can customize rules to block, restrict, or alert when sensitive data is transferred to prevent accidental or malicious data leaks.
+## Govern AI interactions
 
-If you worked at a health care provider, you would need to ensure that users don't share patient records with external parties, either accidentally or maliciously. DLP can prevent such transfers on information labeled as patient records.
+**The problem:** Fabric includes Copilot features that let users ask natural language questions about their data. How do you ensure AI interactions don't surface sensitive data to unauthorized users, or generate responses that violate compliance requirements?
 
-### Microsoft Purview Audit
+**What Purview adds:** Purview extends its governance controls to Fabric Copilots and agents—monitoring prompts and responses for sensitive or regulated content, capturing audit logs for AI interactions, and applying retention and eDiscovery policies to AI-generated content. The same sensitivity controls that govern underlying items apply to the AI responses derived from them.
 
-Auditing solutions in Purview are used to search for activities performed in Microsoft services by users and admins. User activities such as creating files or accessing Fabric items are automatically logged and appear in the Purview audit log.
+## Keep a compliance audit trail
 
-Thorough auditing is an important protection for the policies you apply to patient records. For example, if a malicious administrator changes DLP policies so that they can copy a patient record to a USB device, this change is recorded and can be identified during later investigations.
+**The problem:** When something goes wrong—or a regulator asks—you need a complete record of who did what, when, and to which data.
 
-## Learn more
+**What Purview adds:** Microsoft Purview Audit captures all user and admin activities across Fabric—lakehouse access, Power BI report views, pipeline runs, sensitivity label changes, and more. The audit log is available in the Microsoft Purview portal and can be queried for investigations or exported for regulatory reporting. Extended audit retention and advanced search capabilities require a Purview Audit license.
 
-- [Use Microsoft Purview to govern Microsoft Fabric](/fabric/governance/microsoft-purview-fabric)
-- [Learn about Microsoft Purview](/purview/purview)
+## Where you see all of this in Fabric
+
+Each of these capabilities is configured by compliance admins or security teams, typically through the Microsoft Purview portal. But the effects surface inside Fabric—and the place where you get a complete picture of your governance posture is the **OneLake catalog Govern tab**. That's where sensitivity label coverage, DLP policy evaluation, endorsement status, and recommended actions come together in one dashboard. In the next unit, you'll explore the Govern tab and learn how to use it.

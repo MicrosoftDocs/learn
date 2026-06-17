@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.fabric-data-governance-purview.govern-data-purview-hub
-title: Govern data in the Microsoft Purview hub
+title: Govern data in the OneLake catalog
 metadata:
-  title: Govern data in the Microsoft Purview hub
-  description: "Learn about the tools available for data governance in the Purview hub, once you connect to Fabric."
-  ms.date: 06/11/2025
+  title: Govern Data in the OneLake Catalog
+  description: "Use the OneLake catalog Govern tab to monitor sensitivity labels, DLP policies, endorsement, and recommended governance actions for your Fabric data estate."
+  ms.date: 06/12/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
-durationInMinutes: 11
+durationInMinutes: 8
 content: |
   [!include[](includes/4-govern-data-purview-hub.md)]
