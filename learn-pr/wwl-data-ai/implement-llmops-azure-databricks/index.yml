@@ -10,9 +10,9 @@ metadata:
   ms.topic: module
   ms.service: azure-databricks
   ai-usage: ai-assisted
-  ms.collection:  wwl-ai-copilot
+  ms.collection: wwl-ai-copilot
 title: Implement LLMOps in Azure Databricks
-summary:  Streamline the implementation of Large Language Models (LLMs) with LLMOps (LLM Operations) in Azure Databricks. Learn how to deploy and manage LLMs throughout their lifecycle using Azure Databricks.
+summary: Streamline the implementation of Large Language Models (LLMs) with LLMOps (LLM Operations) in Azure Databricks. Learn how to deploy and manage LLMs throughout their lifecycle using Azure Databricks.
 abstract: |
   In this module, you learn how to:
   - Describe the LLM lifecycle overview.
