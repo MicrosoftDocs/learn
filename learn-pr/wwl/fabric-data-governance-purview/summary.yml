@@ -3,8 +3,8 @@ uid: learn.fabric-data-governance-purview.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary of the Govern data in Microsoft Fabric with Purview module."
-  ms.date: 06/11/2025
+  description: "Review the governance capabilities in Microsoft Fabric and Microsoft Purview, and how to use the OneLake catalog to monitor your data estate."
+  ms.date: 06/12/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: unit

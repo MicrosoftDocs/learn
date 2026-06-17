@@ -67650,9 +67650,714 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/architect-storage-infrastructure/index.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/store-data-in-azure/index.yml",
       "redirect_url": "/azure/storage/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-deploy-container-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-deploy-container-app/2-create-aks-cluster.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-deploy-container-app/3-exercise-create-aks-cluster.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-deploy-container-app/4-deploy-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-deploy-container-app/5-exercise-deploy-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-deploy-container-app/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-deploy-container-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-manage-application-state/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/stateful-workloads-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-manage-application-state/2-understand-state-management.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/stateful-workloads-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-manage-application-state/3-exercise-create-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/stateful-workloads-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-manage-application-state/4-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/stateful-workloads-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-manage-application-state/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/stateful-workloads-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-a-web-app-with-mean-on-a-linux-vm/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-a-web-app-with-mean-on-a-linux-vm/2-decide-if-mean-is-right-for-you.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-a-web-app-with-mean-on-a-linux-vm/3-create-a-vm.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-a-web-app-with-mean-on-a-linux-vm/4-install-mongodb.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-a-web-app-with-mean-on-a-linux-vm/5-install-nodejs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-a-web-app-with-mean-on-a-linux-vm/6-create-a-basic-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-a-web-app-with-mean-on-a-linux-vm/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-a-web-app-with-mean-on-a-linux-vm/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-and-store-container-images/1-intro-to-azure-container-registry.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-registry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-and-store-container-images/2-deploy-azure-container-registry.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-registry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-and-store-container-images/3-build-container-image.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-registry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-and-store-container-images/4-deploy-container-image.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-registry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-and-store-container-images/5-replicate-container-image.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-registry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-and-store-container-images/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-registry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-and-store-container-images/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-registry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-storage-account/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-create",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-storage-account/2-decide-how-many-storage-accounts-you-need.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-create",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-storage-account/3-choose-your-account-settings.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-create",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-storage-account/4-choose-an-account-creation-tool.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-create",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-storage-account/5-exercise-create-a-storage-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-create",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-storage-account/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-create",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-storage-account/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-create",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-azure-storage-account/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-create",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-windows-virtual-machine-in-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/windows/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-windows-virtual-machine-in-azure/2-create-a-windows-virtual-machine.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/windows/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-windows-virtual-machine-in-azure/3-exercise-create-a-vm.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/windows/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-windows-virtual-machine-in-azure/4-connect-to-a-windows-virtual-machine.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/windows/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-windows-virtual-machine-in-azure/5-exercise-connect-to-a-windows-vm-using-rdp.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/windows/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-windows-virtual-machine-in-azure/6-manage-vm.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/windows/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-windows-virtual-machine-in-azure/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/windows/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-windows-virtual-machine-in-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/windows/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-kubernetes-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-kubernetes-service/2-what-is-azure-kubernetes-service.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-kubernetes-service/3-how-azure-kubernetes-service-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-kubernetes-service/4-when-to-use-azure-kubernetes-service.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-kubernetes-service/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-kubernetes-service/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-kubernetes-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-docker-containers/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-registry/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-docker-containers/2-what-is-docker.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-registry/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-docker-containers/3-how-docker-images-work.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-registry/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-docker-containers/4-how-docker-containers-work.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-registry/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-docker-containers/5-when-use-docker-containers.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-registry/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-docker-containers/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-registry/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-docker-containers/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/container-registry/ ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-kubernetes/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-kubernetes/2-what-is-kubernetes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-kubernetes/3-how-kubernetes-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-kubernetes/4-how-app-deployments-work.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-kubernetes/5-exercise-kubernetes-functionality.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-kubernetes/6-when-to-use-kubernetes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-kubernetes/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-kubernetes/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-linux-on-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-linux-on-azure/2-what-is-linux-on-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-linux-on-azure/3-azure-iaas-options-for-linux-deployments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-linux-on-azure/4-azure-paas-options-for-linux-deployments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-linux-on-azure/5-azure-dbaas-options-for-linux-deployments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-linux-on-azure/6-other-azure-tools-for-linux-deployments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-linux-on-azure/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-linux-on-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-cloud-native-apps/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/cloud-native/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-cloud-native-apps/2-what-are-cloud-native-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/cloud-native/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-cloud-native-apps/3-containers-cloud-native.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/cloud-native/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-cloud-native-apps/4-design-cloud-native-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/cloud-native/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-cloud-native-apps/5-when-to-use-cloud-native-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/cloud-native/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-cloud-native-apps/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/cloud-native/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-cloud-native-apps/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/cloud-native/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-cloud-native-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/architecture/cloud-native/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-aws-to-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-aws-to-azure/2-identity-access-comparison.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-aws-to-azure/3-compare-governance-services.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-aws-to-azure/4-compute-storage-networking.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-aws-to-azure/5-compare-database-services.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-aws-to-azure/6-compare-event-messaging-services.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-aws-to-azure/7-compare-elastic-kubernetes-service-aks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-aws-to-azure/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-aws-to-azure/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-aws-to-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-gcp-to-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-gcp-to-azure/2-compare-identity-access-management.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-gcp-to-azure/3-map-governance-features.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-gcp-to-azure/4-investigate-iaas-features.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-gcp-to-azure/5-choose-database-solution.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-gcp-to-azure/6-event-driven-architecture.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-gcp-to-azure/7-compare-implementation-kubernetes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-gcp-to-azure/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-gcp-to-azure/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-migrating-gcp-to-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-virtual-machines-with-azure-cli/1-what-is-the-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/cli-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-virtual-machines-with-azure-cli/2-create-a-vm.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/cli-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-virtual-machines-with-azure-cli/3-testing-the-vm.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/cli-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-virtual-machines-with-azure-cli/4-other-vm-images.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/cli-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-virtual-machines-with-azure-cli/5-sizing-vms.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/cli-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-virtual-machines-with-azure-cli/6-querying-vms.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/cli-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-virtual-machines-with-azure-cli/7-managing-vms.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/cli-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-virtual-machines-with-azure-cli/8-installing-software.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/cli-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-virtual-machines-with-azure-cli/9-cleanup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/cli-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-virtual-machines-with-azure-cli/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/cli-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/plan-your-linux-environment-in-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/plan-your-linux-environment-in-azure/2-plan-for-sizing-and-networking-of-azure-vms-running-linux.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/plan-your-linux-environment-in-azure/3-implement-best-practices-for-managing-linux-on-azure-vms.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/plan-your-linux-environment-in-azure/4-optimize-linux-on-azure-vms-for-performance-and-functionality.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/plan-your-linux-environment-in-azure/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/plan-your-linux-environment-in-azure/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/plan-your-linux-environment-in-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-linux-virtual-machine-in-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-linux-virtual-machine-in-azure/2-provision-linux-virtual-machine-using-the-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-linux-virtual-machine-in-azure/3-provision-linux-virtual-machine-using-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-linux-virtual-machine-in-azure/4-provision-linux-virtual-machine-using-terraform.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-linux-virtual-machine-in-azure/5-provision-linux-virtual-machine-using-bicep.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-linux-virtual-machine-in-azure/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-linux-virtual-machine-in-azure/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-linux-virtual-machine-in-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/linux/quick-create-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-and-isolate-with-nsg-and-service-endpoints/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/secure-virtual-network",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-and-isolate-with-nsg-and-service-endpoints/2-network-security-groups.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/secure-virtual-network",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-and-isolate-with-nsg-and-service-endpoints/3-exercise-network-security-groups.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/secure-virtual-network",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-and-isolate-with-nsg-and-service-endpoints/4-vnet-service-endpoints.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/secure-virtual-network",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-and-isolate-with-nsg-and-service-endpoints/5-exercise-vnet-service-endpoints.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/secure-virtual-network",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-and-isolate-with-nsg-and-service-endpoints/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/secure-virtual-network",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-and-isolate-with-nsg-and-service-endpoints/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/secure-virtual-network",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/upload-download-and-manage-data-with-azure-storage-explorer/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/upload-download-and-manage-data-with-azure-storage-explorer/2-connect-storage-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/upload-download-and-manage-data-with-azure-storage-explorer/3-exercise-connect-storage-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/upload-download-and-manage-data-with-azure-storage-explorer/4-connect-cosmosdb-data-lake.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/upload-download-and-manage-data-with-azure-storage-explorer/5-exercise-connect-cosmosdb-data-lake.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/upload-download-and-manage-data-with-azure-storage-explorer/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/upload-download-and-manage-data-with-azure-storage-explorer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "redirect_document_id": false
     }
-  ]
+ ]
 }

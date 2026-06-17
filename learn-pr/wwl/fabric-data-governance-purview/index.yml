@@ -2,8 +2,8 @@
 uid: learn.fabric-data-governance-purview
 metadata:
   title: Govern Data in Microsoft Fabric with Purview
-  description: "Learn how Microsoft Purview enables the comprehensive data governance for your Microsoft Fabric data lakes. Ensure that data is both tightly controlled and highly available for compliant analysis."
-  ms.date: 06/11/2025
+  description: "Explore the governance capabilities built into Microsoft Fabric, learn which advanced controls require a Microsoft Purview license, and use the OneLake catalog Govern tab to assess and improve your governance posture."
+  ms.date: 06/12/2026
   author: theresa-i
   ms.author: theresai
   ms.service: fabric
@@ -11,13 +11,13 @@ metadata:
   ms.collection: 
   ai-usage: ai-assisted
 title: Govern data in Microsoft Fabric with Purview
-summary: "Learn how Microsoft Purview enables the comprehensive data governance for your Microsoft Fabric data lakes. Ensure that data is both tightly controlled and highly available for compliant analysis."
+summary: "Explore the governance capabilities built into Microsoft Fabric, learn which advanced controls require a Microsoft Purview license, and use the OneLake catalog Govern tab to assess and improve your governance posture."
 abstract: |
-  By the end of this module, you'll be able to:
-    - Describe the built-in data governance features of Microsoft Fabric.
-    - Justify adding Microsoft Purview for robust data governance and protection.
-    - Connect Microsoft Purview to Microsoft Fabric.
-    - Analyze Microsoft Fabric data in the Microsoft Purview hub.
+  By the end of this module, you are able to:
+    - Identify built-in governance capabilities included with a Microsoft Fabric license.
+    - Distinguish between governance features included with Fabric and those that require a Microsoft Purview license.
+    - Describe how Purview-powered capabilities—including sensitivity labels, data loss prevention, and audit—work within Fabric.
+    - Use the OneLake catalog Govern tab to assess your governance posture and act on recommended improvements.
 prerequisites: |
   - Familiarity with the Microsoft Fabric user interface and core concepts.
 iconUrl: /learn/achievements/generic-badge.svg
