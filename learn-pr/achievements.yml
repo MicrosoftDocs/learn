@@ -8111,3 +8111,78 @@ achievements:
   title: Work with semantic models in Microsoft Fabric
   summary: Designing reports for enterprise scale requires more than just connecting to data. Understanding semantic models and strategies for scalability and lifecycle management are key to a successful enterprise implementation. This learning path helps you prepare for the [Fabric Analytics Engineer Certification](/credentials/certifications/exams/dp-600/).
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.administer-containers-in-azure.trophy
+  type: trophy
+  title: Administer containers in Azure
+  summary: Azure Container Instances are the quickest and easiest way to run containers in Azure. This learning path will teach you how to create and manage your containers, and how ACI can be used to provide elastic scale for Kubernetes.
+  iconUrl: /training/achievements/administer-containers-in-azure.svg
+- uid: learn.administer-infrastructure-resources-in-azure.trophy
+  type: trophy
+  title: Administer infrastructure resources in Azure
+  summary: Learn how to create, manage, secure and scale virtual machine resources.
+  iconUrl: /training/achievements/administer-infrastructure-resources-in-azure.svg
+- uid: learn.architect-compute-infrastructure.trophy
+  type: trophy
+  title: Architect compute infrastructure in Azure
+  summary: Learn how to architect compute infrastructure and solutions to automate your business processes in Azure.
+  iconUrl: /training/achievements/architect-compute-infrastructure.svg
+- uid: learn.architect-modern-apps.trophy
+  type: trophy
+  title: Architect modern applications in Azure
+  summary: Learn how to build modern applications using PaaS services for applications, caching, containers and Kubernetes in Azure.
+  iconUrl: /training/achievements/architect-modern-apps.svg
+- uid: learn.architect-network-infrastructure.trophy
+  type: trophy
+  title: Architect network infrastructure in Azure
+  summary: Learn how to architect a secure, flexible, network infrastructure in Azure and connect on-premises networks to your Azure resources.
+  iconUrl: /training/achievements/architect-network-infrastructure.svg
+- uid: learn.azure-linux.trophy
+  type: trophy
+  title: Linux on Azure
+  summary: This comprehensive learning path reviews deployment and management of Linux on Azure. Learn about cloud computing concepts, Linux IaaS and PaaS solutions and benefits and Azure cloud services. Discover how to migrate and extend your Linux-based workloads on Azure with improved scalability, security, and privacy.
+  iconUrl: /training/achievements/azure-linux.svg
+- uid: learn.azure-common-linux-server-configurations.trophy
+  type: trophy
+  title: Common Linux server configurations
+  summary: This learning path provides an overview for deploying common Linux server functions on Azure virtual machines. Learn how to deploy a SQL Server, a web application server using the MEAN stack, perform a database migration, and manage your IT operations with Azure Automanage.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.azure.cna-architect-modern-apps.trophy
+  type: trophy
+  title: Create cloud native apps with Azure and open-source software
+  summary: Cloud-native apps represent a modern approach to app development, where software systems are designed with cloud scale and capabilities in mind. Cloud-native apps build on open source technologies where feasible, with a focus on architectural modularity.
+  iconUrl: /training/achievements/create-cloud-native-apps-with-azure-open-source.svg
+- uid: learn.deploy-a-website-with-azure-virtual-machines.trophy
+  type: trophy
+  title: Deploy a website with Azure virtual machines
+  summary: "If your web hosting requirements aren't directly supported by the Azure Web app platform, you can leverage virtual machines to customize and control every aspect of the web server. Learn how to create, configure, and manage virtual machines on Linux and Windows that host web apps. This learning path can help you prepare for the [Microsoft Certified: Azure Developer Associate certification](/certifications/azure-developer)."
+  iconUrl: /training/achievements/deploy-a-website-with-azure-virtual-machines.svg
+- uid: learn.generic-trophy-2.trophy
+  type: trophy
+  title: Develop and deploy applications on Kubernetes
+  summary: In this learning path, you'll understand how to develop, build, deploy, and automatically maintain cloud native applications designed to work with Azure Kubernetes Service from the scratchpad to the deployment pipeline.
+  iconUrl: /training/achievements/develop-and-deploy-applications-on-kubernetes.svg
+- uid: learn.security.implement-host-security.trophy
+  type: trophy
+  title: Implement virtual machine host security in Azure
+  summary: "Learn how to protect and harden your virtual machines in Azure. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer)."
+  iconUrl: /training/achievements/implement-host-security.svg
+- uid: learn.intro-to-kubernetes-on-azure.trophy
+  type: trophy
+  title: Introduction to Kubernetes on Azure
+  summary: Learn about the basics of Docker containers, container orchestration with Kubernetes, and managed clusters on Azure Kubernetes Service.
+  iconUrl: /training/achievements/intro-to-kubernetes-on-azure.svg
+- uid: learn.researcher-introduction-to-cloud-computing.trophy
+  type: trophy
+  title: "Azure for Researchers part 1: Introduction to Cloud Computing"
+  summary: When you're working on research projects, it's helpful to have a basic understanding of cloud computing concepts. In this learning path, you study the general terminology and services that of cloud computing, which should be useful to you when you're working on research tasks. You learn how to create virtual machine and how to use it, and how to pick the best storage solution to persist your data.
+  iconUrl: /training/achievements/researcher-introduction-to-cloud-computing.svg
+- uid: learn.learn.researcher-cloud-security-cost-management.trophy
+  type: trophy
+  title: "Azure for Researchers part 2: Cloud Security and Cost Management"
+  summary: In this learning path, you'll learn how to ensure your Azure consumption is planned and predictable by using cost prediction and budgets, and how to ensure your application secrets and virtual machines are safe from unauthorized access.
+  iconUrl: /training/achievements/researcher-cloud-security-cost-management.svg
+- uid: learn.store-data-in-azure.trophy
+  type: trophy
+  title: Store data in Azure learning path
+  summary: This learning path gets you started with the basics of storage management in Azure, Storage Account creation, and choices for data storage.
+  iconUrl: /training/achievements/store-data-in-azure.svg
