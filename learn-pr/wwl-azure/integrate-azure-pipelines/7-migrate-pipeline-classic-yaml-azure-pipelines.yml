@@ -5,8 +5,8 @@ metadata:
   title: Migrate a pipeline from classic to YAML in Azure Pipelines
   description: "Migrate a pipeline from classic to YAML in Azure Pipelines"
   ms.date: 09/29/2025
-  author: LuizMacedo
-  ms.author: lumac
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 3
 content: |

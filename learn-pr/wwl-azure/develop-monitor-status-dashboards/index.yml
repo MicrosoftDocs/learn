@@ -4,8 +4,8 @@ metadata:
   title: Develop Monitor and Status Dashboards
   description: "Learn to create comprehensive monitoring dashboards using Azure Dashboards, Azure Monitor Workbooks, Power BI, and GitHub monitoring tools. Track pipeline health metrics including failure rates, duration, and flaky tests. Optimize pipeline performance for cost and reliability. Explore visualization strategies and custom application development for DevOps monitoring at scale."
   ms.date: 10/20/2025
-  author: LuizMacedo
-  ms.author: lumac
+  author: petender
+  ms.author: petender
   ms.topic: module
   ms.custom:
     - N/A

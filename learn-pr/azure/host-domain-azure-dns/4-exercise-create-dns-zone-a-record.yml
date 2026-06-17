@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a DNS zone and an A record by using Azure DNS
   description: Exercise - Create a DNS zone and an A record by using Azure DNS
   ms.date: 10/03/2024
-  author: kumud
-  ms.author: kumud
+  author: wwlpublish
+  ms.author: cynthist
   ms.topic: unit
   zone_pivot_groups: 
 # interactive: bash

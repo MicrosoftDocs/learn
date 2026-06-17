@@ -67578,6 +67578,81 @@
       "source_path": "learn-pr/paths/work-semantic-models-microsoft-fabric/index.md",
       "redirect_url": "/training/paths/design-manage-semantic-models-fabric/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/administer-containers-in-azure/index.yml",
+      "redirect_url": "/azure/containers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/administer-infrastructure-resources-in-azure/index.yml",
+      "redirect_url": "/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/architect-compute-infrastructure/index.yml",
+      "redirect_url": "/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/architect-modern-apps/index.yml",
+      "redirect_url": "/azure/containers/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/architect-network-infrastructure/index.yml",
+      "redirect_url": "/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-linux/index.yml",
+      "redirect_url": "/linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/common-linux-server-configurations/index.yml",
+      "redirect_url": "/linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/create-cloud-native-apps-with-azure-open-source/index.yml",
+      "redirect_url": "/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/deploy-a-website-with-azure-virtual-machines/index.yml",
+      "redirect_url": "/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/develop-deploy-applications-kubernetes/index.yml",
+      "redirect_url": "/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-host-security/index.yml",
+      "redirect_url": "/azure/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/intro-to-kubernetes-on-azure/index.yml",
+      "redirect_url": "/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/researcher-introduction-to-cloud-computing/index.yml",
+      "redirect_url": "/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/researcher-cloud-security-cost-management/index.yml",
+      "redirect_url": "/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/store-data-in-azure/index.yml",
+      "redirect_url": "/azure/storage/",
+      "redirect_document_id": false
     }
   ]
 }
