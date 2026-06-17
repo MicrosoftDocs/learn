@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Route traffic through the NVA
   description: Route traffic through the NVA
   ms.date: 12/02/2024 
-  author: mbender-ms
-  ms.author: mbender
+  author: wwlpublish
+  ms.author: cynthist
   ms.topic: unit
   ms.custom: devx-track-azurecli
 title: Exercise - Route traffic through the NVA
