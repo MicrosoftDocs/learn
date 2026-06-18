@@ -68358,6 +68358,46 @@
       "source_path": "learn-pr/azure/upload-download-and-manage-data-with-azure-storage-explorer/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/index.md",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/1-Introduction.md",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/2-What-is-digital-transformation.md",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/6-knowledge-check.md",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/7-summary-resources.md",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/4-action.md",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/3-success-factors.md",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/5-why-digitally-transform-with-microsoft.md",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
     }
- ]
+  ]
 }
