@@ -8281,3 +8281,8 @@ achievements:
   title: Architect storage infrastructure in Azure
   summary: Learn how to architect storage solutions for your applications in Azure.
   iconUrl: /training/achievements/architect-storage-infrastructure.svg
+- uid: learn-wwl.enable-digital-transformation.badge
+  type: badge
+  title: Enabling digital transformation
+  summary: Digital transformation is a business innovation fueled by the explosion of the cloud, artificial intelligence (AI), and the Internet of things (IoT), providing organizations with new ways to understand, manage, and transform their business.
+  iconUrl: /training/achievements/enable-digital-transformation.svg

@@ -48,12 +48,12 @@ The eDiscovery workflow helps you more quickly identify, investigate, and take a
 
 ### eDiscovery features and capabilities
 
-The list that follows is a small subset of the capabilities available with eDiscovery. For a complete listing, refer to the features and capabilities section of the article titled, "Learn about eDiscovery (preview)" linked in the summary and resources unit of this module.
+The list that follows is a small subset of the capabilities available with eDiscovery. For a complete listing, refer to the features and capabilities section of the article titled, "Learn about eDiscovery" linked in the summary and resources unit of this module.
 
 - **Search for content**: Search for content that's stored in Exchange mailboxes, OneDrive accounts, SharePoint sites, Microsoft Teams, Microsoft 365 Groups, and Viva Engage Teams.
 - **Export search results**: Export search results to a local computer in your organization. When you export search results, items are copied from their original content location and packaged. Then you can download those items in the export package to a local computer.
 - **Place content locations on hold**: Preserve content relevant to your investigation by placing a hold on the content locations in a case. Holds let you secure electronically stored information from inadvertent (or intentional) deletion during your investigation.
-- **Search and delete data**: Search for and delete potentially harmful or high-risk content, including email messages and Teams chat messages, across your organization.
+- **Search and delete data**: Search for and delete potentially harmful or high-risk content, including email messages, Teams chat messages, and Copilot and AI application data, across your organization.
 - **Review sets** (premium feature) -  A review set is a secure, Microsoft-provided Azure Storage location in the Microsoft cloud. When you add data to a review set, the collected items are copied from their original content location to the review set. Review sets provide a static, known set of content that you can search, filter, tag, analyze, and predict relevancy using predictive coding models.
 - **Optical character recognition (OCR)** (premium feature) - When content is added to a review set, OCR functionality extracts text from images, and includes the image text with the content that's added to a review set. This lets you search for image text when you query the content in the review set.
 - **Conversation threading** (premium feature): When chat messages from Teams and Viva Engage conversations are added to a review set, you can collect the entire conversation thread. This lets you review chat items in the context of the back-and-forth conversation.
