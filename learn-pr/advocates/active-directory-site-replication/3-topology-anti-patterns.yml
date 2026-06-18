@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.site-topology-replication.topology-antipatterns
+title: Identify topology anti-patterns and Windows Server 2025 DC Locator readiness
+metadata:
+  title: Identify topology anti-patterns and Windows Server 2025 DC Locator readiness
+  description: Identify AD DS topology anti-patterns and validate DC Locator and replication behavior for Windows Server 2025, including BlockNetBIOSDiscovery.
+  ms.date: 04/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/3-topology-anti-patterns.md)]
