@@ -2,6 +2,6 @@ You've learned a lot about AI, and the kinds of things it can do. Now it's your 
 
 ![Screenshot of the computing history site used in the lab.](../media/computing-history-site.png)
 
-Launch the exercise and follow the instructions.
+*Use the following button to start the exercise*
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2361944&azure-portal=true)
+[![Button to launch the exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2361944&azure-portal=true)
