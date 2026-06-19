@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-query-performance-indexes-azure-documentdb.understand-how-indexes-work
+title: Understand how indexes work
+metadata:
+  title: Understand How Indexes Work
+  description: "Learn how B-tree indexes work internally, compare collection scans with index scans, and evaluate index selectivity, covered queries, and index costs in Azure DocumentDB."
+  ms.date: 04/17/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-understand-how-indexes-work.md)]

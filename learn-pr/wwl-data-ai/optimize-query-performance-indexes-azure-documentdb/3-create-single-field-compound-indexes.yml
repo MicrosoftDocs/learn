@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-query-performance-indexes-azure-documentdb.create-single-field-compound-indexes
+title: Create single-field and compound indexes
+metadata:
+  title: Create Single-Field and Compound Indexes
+  description: "Create single-field and compound indexes in Azure DocumentDB. Apply the ESR (Equality, Sort, Range) rule for optimal compound index field ordering."
+  ms.date: 04/17/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-create-single-field-compound-indexes.md)]
