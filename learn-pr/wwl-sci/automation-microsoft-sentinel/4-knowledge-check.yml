@@ -17,36 +17,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Automation rules are triggered by?"
+  - content: "Which of these answers is a valid trigger type for an automation rule in Microsoft Sentinel?"
     choices:
-    - content: "Incidents"
+    - content: "When an incident is updated"
       isCorrect: true
-      explanation: "Correct.  Automation rules are triggered by incidents."
-    - content: "Connectors"
+      explanation: "Correct. Automation rules support three trigger types: when an incident is created, when an incident is updated, and when an alert is created."
+    - content: "When a connector is added"
       isCorrect: false
-      explanation: "Incorrect.  Automation rules are triggered by incidents."
-    - content: "Watchlists"
+      explanation: "Incorrect. Automation rules are triggered by incident or alert events, not connector events."
+    - content: "When a watchlist is modified"
       isCorrect: false
-      explanation: "Incorrect.  Automation rules are triggered by incidents."
+      explanation: "Incorrect. Automation rules are triggered by incident or alert events, not watchlist changes."
   - content: "You use a Logic Apps to create a_?"
     choices:
     - content: "Automation rule"
       isCorrect: false
-      explanation: "Incorrect.  Playbooks are created with Logic Apps."
+      explanation: "Incorrect. Playbooks are created with Logic Apps."
     - content: "Playbook"
       isCorrect: true
       explanation: "Correct. Playbooks are created with Logic Apps."
     - content: "Workbook"
       isCorrect: false
-      explanation: "Incorrect.  Playbooks are created with Logic Apps."
+      explanation: "Incorrect. Playbooks are created with Logic Apps."
   - content: "An Automation rule action can?"
     choices:
     - content: "Update the incident title"
       isCorrect: false
-      explanation: "Incorrect.  Automation rules can change the incident status."
+      explanation: "Incorrect. Automation rules can change the incident status."
     - content: "Delete the incident"
       isCorrect: false
-      explanation: "Incorrect.  Automation rules can change the incident status."
+      explanation: "Incorrect. Automation rules can change the incident status."
     - content: "Change the incident status"
       isCorrect: true
-      explanation: "Correct.  Automation rules can change the incident status."
+      explanation: "Correct. Automation rules can change the incident status."
