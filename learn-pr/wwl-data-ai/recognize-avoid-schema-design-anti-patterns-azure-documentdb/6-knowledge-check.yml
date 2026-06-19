@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Check your understanding of schema design anti-patterns in Azure DocumentDB."
+  ms.date: 04/16/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 5
+quiz:
+  title: ""
+  questions:
+  - content: "A social media application stores all follower ID in an array field on each user document. A popular account has 500,000 followers, and the application is failing to update the document. What is the most likely cause?"
+    choices:
+    - content: "The follower array is exceeding the 16-MB document size limit."
+      isCorrect: true
+      explanation: "Azure DocumentDB enforces a 16-MB document size limit. An array with 500,000 ObjectId values consumes significant space and pushes the document past this limit. The fix is to move follower relationships to a separate collection and store only a follower count in the user document."
+    - content: "The database doesn't support arrays with more than 100,000 elements."
+      isCorrect: false
+      explanation: "Azure DocumentDB doesn't impose a specific element count limit on arrays. The constraint is the overall 16-MB document size limit. The unbounded arrays anti-pattern causes documents to grow until they hit this size limit."
+    - content: "The unique index on the followers array is preventing duplicate entries."
+      isCorrect: false
+      explanation: "A unique index on an array field prevents duplicate values within the array, but the symptom described (update failures on a large document) points to the unbounded arrays anti-pattern and the 16-MB document size limit."
+  - content: "A development team creates a separate collection for each of their 2,000 tenants. They notice that database startup is slow, cross-tenant reporting is impossible, and index maintenance takes hours. Which anti-pattern is the team experiencing?"
+    choices:
+    - content: "The over-normalization anti-pattern, because tenant data should be embedded in a single document."
+      isCorrect: false
+      explanation: "Over-normalization splits a single entity's data across too many collections with foreign key references. The problem here's creating separate collections per tenant for the same entity type, which is the collection sprawl anti-pattern."
+    - content: "The collection sprawl anti-pattern, because 2,000 collections create excessive management overhead."
+      isCorrect: true
+      explanation: "The collection sprawl anti-pattern occurs when too many collections exist for the same entity type. The fix is to use a single collection with a tenantId discriminator field and a compound index for tenant-scoped queries."
+    - content: "The unnecessary indexes anti-pattern, because each collection has duplicate indexes."
+      isCorrect: false
+      explanation: "While each collection does have its own indexes (which adds overhead), the root cause is having 2,000 separate collections. The indexes are a symptom of the collection sprawl anti-pattern, not the primary problem."
+  - content: "A products collection has three indexes: `{ category: 1 }`, `{ category: 1, price: -1 }`, and `{ category: 1, price: -1, name: 1 }`. Write operations are slower than expected. Which indexes should the developer drop?"
+    choices:
+    - content: "Drop `{ category: 1 }` and `{ category: 1, price: -1 }` because the compound index covers all three query patterns."
+      isCorrect: true
+      explanation: "A compound index on `{ category: 1, price: -1, name: 1 }` supports queries on category alone, category with price, and all three fields together. The two simpler indexes are redundant and slow down writes without adding query coverage."
+    - content: "Drop `{ category: 1, price: -1, name: 1 }` because compound indexes are slower than single-field indexes."
+      isCorrect: false
+      explanation: "Compound indexes aren't inherently slower than single-field indexes. They're more versatile because they support queries on any left-prefix of their fields. Dropping the compound index would require keeping both smaller indexes, which creates more total index overhead."
+    - content: "Keep all three indexes because they each serve different query patterns."
+      isCorrect: false
+      explanation: "The compound index on `{ category: 1, price: -1, name: 1 }` supports queries on `{ category }`, `{ category, price }`, and `{ category, price, name }` through its left-prefix property. The two simpler indexes are fully redundant."
+  - content: "An order display page makes four separate database queries to show a customer's order: one for the order, one for customer details, one for product names, and one for the shipping address. Which anti-pattern is causing the extra queries?"
+    choices:
+    - content: "The collection sprawl anti-pattern, because the data should be in a single collection."
+      isCorrect: false
+      explanation: "Collection sprawl creates many collections for the same entity type (for example, one per tenant). Having separate collections for orders, customers, products, and address is normal. The problem is that the order document doesn't embed the data it needs for display."
+    - content: "The unbounded arrays anti-pattern, because the order is storing too many references."
+      isCorrect: false
+      explanation: "The unbounded arrays anti-pattern involves arrays that grow without limits. The problem here's the opposite. The order document stores only reference ID instead of embedding the display data it needs."
+    - content: "The over-normalization anti-pattern, because display data should be embedded in the order document using the extended reference pattern."
+      isCorrect: true
+      explanation: "Over-normalization forces multiple queries to assemble data that belongs together. The fix is to embed frequently displayed fields (customer name, product names, shipping address) directly in the order document, eliminating the extra queries."
+  - content: "Customers report that they can't sign in even though they're entering the correct email address. Investigation shows that the customer registered with `\"Haladhar@Contoso.com\"` but tries to sign in with `\"haladhar@contoso.com\"`. What is the root cause?"
+    choices:
+    - content: "The application has a bug in its authentication logic that rejects valid credentials."
+      isCorrect: false
+      explanation: "The authentication logic is querying by email, but the stored value and the query value differ in case. Azure DocumentDB treats these as different strings by default. The root cause is the case-sensitivity anti-pattern."
+    - content: "Azure DocumentDB queries are case-sensitive by default, and the email field wasn't normalized to lowercase on write."
+      isCorrect: true
+      explanation: "Azure DocumentDB treats string comparisons as case-sensitive by default. If the application stores the email as-is during registration and queries with user-typed input during sign in, case differences cause lookup failures. The fix is to normalize the email to lowercase before storing and before querying."
+    - content: "The unique index on the email field is blocking the sign in query from finding a match."
+      isCorrect: false
+      explanation: "A unique index doesn't affect query matching. It only prevents duplicate inserts. Case-sensitive string comparison causes the sign in failure. The stored value `\"Haladhar@Contoso.com\"` doesn't match the query value `\"haladhar@contoso.com\"`."

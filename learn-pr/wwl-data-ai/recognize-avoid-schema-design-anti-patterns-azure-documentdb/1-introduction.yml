@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "This unit introduces the schema design anti-patterns module for Azure DocumentDB and outlines the learning objectives."
+  ms.date: 04/16/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
