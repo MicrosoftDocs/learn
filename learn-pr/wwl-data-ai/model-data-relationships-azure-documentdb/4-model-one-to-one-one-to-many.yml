@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.model-data-relationships-azure-documentdb.model-one-to-one-one-to-many
+title: Model one-to-one and one-to-many relationships
+metadata:
+  title: Model One-to-One and One-to-Many Relationships
+  description: "Implement one-to-one and one-to-many relationship patterns in Azure DocumentDB using embedding, referencing, and the subset pattern."
+  ms.date: 04/15/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-model-one-to-one-one-to-many.md)]

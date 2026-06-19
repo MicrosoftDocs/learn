@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.model-data-relationships-azure-documentdb.exercise-design-relationship-model
+title: Exercise - Design a relationship model for an e-commerce platform
+metadata:
+  title: Exercise - Design a Relationship Model for an E-Commerce Platform
+  description: "Apply relationship modeling patterns to design and implement a data model for an e-commerce platform in Azure DocumentDB, using embedding, referencing, subset, and many-to-many patterns."
+  ms.date: 04/15/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-design-relationship-model.md)]
