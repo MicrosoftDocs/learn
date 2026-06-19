@@ -1,3 +1,0 @@
-Your organization uses Microsoft Fabric to analyze data across multiple workspaces. A compliance requirement arrives: customer data needs to be classified and protected, and access to sensitive assets must be auditable. You need to understand what governance capabilities Fabric already provides, which ones require additional licensing, and where to monitor the state of your data estate.
-
-This module answers those questions. You explore the governance capabilities built into every Fabric license, learn which advanced controls require Microsoft Purview, and use the OneLake catalog Govern tab to assess and improve your governance posture—all without leaving Fabric.

@@ -68403,6 +68403,38 @@
       "source_path": "learn-pr/wwl-mba/enable-digital-transformation/5-why-digitally-transform-with-microsoft.md",
       "redirect_url": "/training/",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/fabric-data-governance-purview/index.yml",
+      "redirect_url": "/training/modules/fabric-govern-analytics-data/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/fabric-data-governance-purview/introduction.yml",
+      "redirect_url": "/training/modules/fabric-govern-analytics-data/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/fabric-data-governance-purview/govern-data.yml",
+      "redirect_url": "/training/modules/fabric-govern-analytics-data/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/fabric-data-governance-purview/why-purview-fabric.yml",
+      "redirect_url": "/training/modules/fabric-govern-analytics-data/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/fabric-data-governance-purview/govern-data-purview-hub.yml",
+      "redirect_url": "/training/modules/fabric-govern-analytics-data/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/fabric-data-governance-purview/knowledge-check.yml",
+      "redirect_url": "/training/modules/fabric-govern-analytics-data/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/fabric-data-governance-purview/summary.yml",
+      "redirect_url": "/training/modules/fabric-govern-analytics-data/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/microsoft-fabric-admin-governance/index.yml",
+      "redirect_url": "/training/modules/fabric-govern-analytics-data/"
     }
   ]
 }
