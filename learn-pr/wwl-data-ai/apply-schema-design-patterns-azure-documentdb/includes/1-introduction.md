@@ -1,0 +1,7 @@
+As your document database grows, the way you structure documents has a direct impact on query performance, storage costs, and write throughput. Schema design patterns are proven solutions to specific data modeling problems that help you balance these trade-offs.
+
+Suppose your e-commerce company's Azure DocumentDB cluster is handling production traffic. The initial data models work, but performance gaps are emerging. Product pages with many categories load slowly because the application queries multiple collections. Counter updates for page views and ratings cause write contention on popular products. Review arrays grow without bounds, bloating documents. Warehouse sensor data generates thousands of documents per hour with no aggregation strategy. Each of these problems has a well-known schema design pattern that addresses it.
+
+In this module, you learn 10 schema design patterns organized by the type of problem they solve. You start with patterns that optimize document structure and reduce write overhead: the inheritance, computed, and approximation patterns. Next, you apply patterns that reduce cross-collection lookups and manage schema evolution: the extended reference and schema versioning patterns. Finally, you work with patterns for complex data scenarios: the single collection, subset, bucket, outlier, and archive patterns.
+
+By the end of this module, you're able to identify data modeling problems in your Azure DocumentDB application and apply the right schema design pattern to solve them.
