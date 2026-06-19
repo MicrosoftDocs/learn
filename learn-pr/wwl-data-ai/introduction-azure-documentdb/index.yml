@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-azure-documentdb
+metadata:
+  title: Introduction to Azure DocumentDB
+  description: "Explore the core features, architecture, and use cases for Azure DocumentDB, a fully managed MongoDB-compatible database service."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-documentdb
+  ai-usage: ai-assisted
+title: Introduction to Azure DocumentDB
+summary: Explore the core features, architecture, and use cases for Azure DocumentDB, a fully managed MongoDB-compatible database service.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe what Azure DocumentDB is and how it relates to the open-source DocumentDB project.
+  - Explain the vCore-based architecture, compute tiers, and scaling options.
+  - Identify scenarios and workloads where Azure DocumentDB is the right choice.
+prerequisites: |
+  - Familiarity with database concepts such as queries, indexes, and data models.
+  - Basic understanding of MongoDB or document-oriented databases.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- databases
+units:
+- learn.wwl.introduction-azure-documentdb.introduction
+- learn.wwl.introduction-azure-documentdb.what-azure-documentdb
+- learn.wwl.introduction-azure-documentdb.capabilities-architecture
+- learn.wwl.introduction-azure-documentdb.when-azure-documentdb
+- learn.wwl.introduction-azure-documentdb.knowledge-check
+- learn.wwl.introduction-azure-documentdb.summary
+badge:
+  uid: learn.wwl.introduction-azure-documentdb.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-schema-design-patterns-azure-documentdb.exercise-apply-patterns
+title: "Exercise - Apply patterns to the e-commerce platform"
+metadata:
+  title: "Exercise - Apply Patterns to the E-Commerce Platform"
+  description: "Apply schema design patterns to an e-commerce platform in Azure DocumentDB. Implement the inheritance, computed, subset, and single collection patterns with hands-on exercises."
+  ms.date: 04/15/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-apply-patterns.md)]

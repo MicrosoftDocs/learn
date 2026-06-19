@@ -41399,6 +41399,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/design-machine-learning-model-training-solution/5-exercise.yml",
+      "redirect_url": "/training/modules/design-machine-learning-model-training-solution/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/discover-azure-government/index.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false

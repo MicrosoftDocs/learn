@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.query-manipulate-data-azure-documentdb
+metadata:
+  title: Query and Manipulate Data in Azure DocumentDB
+  description: "Write queries to create, read, update, and delete documents in Azure DocumentDB. Build aggregation pipelines to transform and analyze data."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-documentdb
+  ai-usage: ai-assisted
+title: Query and manipulate data in Azure DocumentDB
+summary: Write queries to create, read, update, and delete documents in Azure DocumentDB. Build aggregation pipelines to transform and analyze data.
+abstract: |
+  After completing this module, you'll be able to:
+  - Insert documents into collections using insertOne and insertMany.
+  - Query and filter documents using comparison, logical, and element operators.
+  - Update and delete documents using field and array update operators.
+  - Build aggregation pipelines to group, join, and summarize data.
+prerequisites: |
+  - Familiarity with database concepts such as queries, indexes, and data models.
+  - Basic understanding of MongoDB or document-oriented databases.
+  - An Azure subscription.
+  - An Azure DocumentDB cluster.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- databases
+units:
+- learn.wwl.query-manipulate-data-azure-documentdb.introduction
+- learn.wwl.query-manipulate-data-azure-documentdb.insert-create-documents
+- learn.wwl.query-manipulate-data-azure-documentdb.query-filter-documents
+- learn.wwl.query-manipulate-data-azure-documentdb.update-delete-documents
+- learn.wwl.query-manipulate-data-azure-documentdb.build-aggregation-pipelines
+- learn.wwl.query-manipulate-data-azure-documentdb.exercise-query-manipulate-data
+- learn.wwl.query-manipulate-data-azure-documentdb.knowledge-check
+- learn.wwl.query-manipulate-data-azure-documentdb.summary
+badge:
+  uid: learn.wwl.query-manipulate-data-azure-documentdb.badge

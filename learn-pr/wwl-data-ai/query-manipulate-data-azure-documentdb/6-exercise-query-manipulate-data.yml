@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-manipulate-data-azure-documentdb.exercise-query-manipulate-data
+title: "Exercise - Query and manipulate e-commerce data"
+metadata:
+  title: "Exercise - Query and Manipulate E-commerce Data"
+  description: "Practice inserting, querying, updating, and aggregating documents in an Azure DocumentDB cluster using an e-commerce scenario."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/6-exercise-query-manipulate-data.md)]

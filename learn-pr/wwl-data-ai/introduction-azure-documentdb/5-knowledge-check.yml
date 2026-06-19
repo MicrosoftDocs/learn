@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-azure-documentdb.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Check your understanding of Azure DocumentDB concepts, architecture, and use cases."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: ""
+  questions:
+  - content: "Which compute tiers in Azure DocumentDB provide burstable performance?"
+    choices:
+    - content: "M30, M40, and M50"
+      isCorrect: false
+      explanation: "M30, M40, and M50 are provisioned tiers that provide consistent performance. They aren't burstable."
+    - content: "M10, M20, and M25"
+      isCorrect: true
+      explanation: "M10, M20, and M25 are burstable tiers that provide minimal CPU during idle periods and scale to full CPU power when demand increases."
+    - content: "M60, M80, and M200"
+      isCorrect: false
+      explanation: "M60, M80, and M200 are high-performance provisioned tiers. They aren't burstable."
+  - content: "A development team wants to add semantic search to their existing MongoDB application. Which Azure DocumentDB capability supports this scenario without requiring a separate service?"
+    choices:
+    - content: "Horizontal scaling with automatic sharding"
+      isCorrect: false
+      explanation: "Horizontal scaling distributes data across multiple shards for capacity and performance. It doesn't provide semantic search functionality."
+    - content: "Native MongoDB authentication with SCRAM-SHA-256"
+      isCorrect: false
+      explanation: "SCRAM-SHA-256 is an authentication mechanism. It doesn't provide search capabilities."
+    - content: "Integrated vector database"
+      isCorrect: true
+      explanation: "Azure DocumentDB includes an integrated vector database at no extra cost. This capability enables vector search for semantic search, RAG, and recommendation scenarios within the same database."
+  - content: "What is the relationship between Azure DocumentDB and Azure Cosmos DB for MongoDB?"
+    choices:
+    - content: "They're the same product with different names."
+      isCorrect: false
+      explanation: "Azure DocumentDB (vCore-based) and Azure Cosmos DB for MongoDB (RU-based) are distinct services with different architectures, pricing models, and scaling approaches."
+    - content: "Azure DocumentDB is the vCore-based service, while Azure Cosmos DB for MongoDB is the RU-based service."
+      isCorrect: true
+      explanation: "Azure DocumentDB uses a vCore-based architecture with dedicated compute tiers. Azure Cosmos DB for MongoDB uses a Request Unit (RU) consumption model. They're separate services."
+    - content: "Azure DocumentDB is a free tier of Azure Cosmos DB for MongoDB."
+      isCorrect: false
+      explanation: "Azure DocumentDB is a standalone service with its own pricing and architecture. It isn't a tier of Azure Cosmos DB."
+  - content: "A company is migrating from a self-managed MongoDB deployment to Azure. Which tool does Azure DocumentDB provide specifically for assessing and executing this migration?"
+    choices:
+    - content: "Azure Data Factory"
+      isCorrect: false
+      explanation: "Azure Data Factory is a general-purpose data integration service. Azure DocumentDB provides its own migration tools including a Visual Studio (VS) Code extension and web-based utility."
+    - content: "The DocumentDB VS Code extension and a web-based migration utility"
+      isCorrect: true
+      explanation: "Azure DocumentDB offers a VS Code extension for migration assessment and a web-based utility, in addition to supporting standard MongoDB tools like mongodump and mongorestore."
+    - content: "Azure Database Migration Service only"
+      isCorrect: false
+      explanation: "Azure DocumentDB has its own migration tools. While Azure Database Migration Service (DMS) supports some scenarios, the DocumentDB-specific tools are designed for MongoDB migration."
+  - content: "When does Azure DocumentDB require a shard key for horizontal scaling?"
+    choices:
+    - content: "Always, from the initial cluster creation"
+      isCorrect: false
+      explanation: "Azure DocumentDB doesn't require a shard key until the database surpasses terabytes in size."
+    - content: "Only when the database surpasses terabytes in size"
+      isCorrect: true
+      explanation: "Azure DocumentDB supports high-capacity vertical and horizontal scaling with no shard key required until the database surpasses terabytes."
+    - content: "Never; Azure DocumentDB handles all sharding automatically"
+      isCorrect: false
+      explanation: "While Azure DocumentDB can automatically shard databases, a shard key is required for very large databases that surpass terabytes."

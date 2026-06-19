@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.build-applications-azure-documentdb-sdks
+metadata:
+  title: Build Applications with Azure DocumentDB SDKs
+  description: "Build applications that connect to Azure DocumentDB using the official MongoDB drivers for Python, .NET, and JavaScript. Perform CRUD operations programmatically and integrate database operations into your application code."
+  ms.date: 04/10/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-documentdb
+  ai-usage: ai-assisted
+title: Build applications with Azure DocumentDB SDKs
+summary: Build applications that connect to Azure DocumentDB using the official MongoDB drivers for Python, .NET, and JavaScript. Perform CRUD operations programmatically and integrate database operations into your application code.
+abstract: |
+  After completing this module, you'll be able to:
+  - Connect to an Azure DocumentDB cluster using the MongoDB driver for Python, .NET, or JavaScript.
+  - Perform CRUD operations programmatically using your preferred language's driver.
+  - Handle connection management, error handling, and resource cleanup in application code.
+prerequisites: |
+  - Familiarity with database concepts such as queries, indexes, and data models.
+  - Basic understanding of MongoDB or document-oriented databases.
+  - Experience with at least one of: Python, C#, or JavaScript/Node.js.
+  - An Azure DocumentDB cluster (created in a previous module).
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- databases
+units:
+- learn.wwl.build-applications-azure-documentdb-sdks.introduction
+- learn.wwl.build-applications-azure-documentdb-sdks.connect-with-mongodb-drivers
+- learn.wwl.build-applications-azure-documentdb-sdks.perform-crud-operations
+- learn.wwl.build-applications-azure-documentdb-sdks.manage-connections-handle-errors
+- learn.wwl.build-applications-azure-documentdb-sdks.exercise-build-product-management-app
+- learn.wwl.build-applications-azure-documentdb-sdks.knowledge-check
+- learn.wwl.build-applications-azure-documentdb-sdks.summary
+badge:
+  uid: learn.wwl.build-applications-azure-documentdb-sdks.badge

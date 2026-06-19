@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb.avoid-unbounded-arrays-collection-sprawl
+title: Avoid unbounded arrays and collection sprawl
+metadata:
+  title: Avoid Unbounded Arrays and Collection Sprawl
+  description: "Identify the unbounded arrays and collection sprawl anti-patterns in Azure DocumentDB and apply structural fixes using the subset pattern, separate collections, and discriminator fields."
+  ms.date: 04/16/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-avoid-unbounded-arrays-collection-sprawl.md)]

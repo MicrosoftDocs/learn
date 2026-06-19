@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-azure-documentdb-cluster.configure-compute-storage
+title: Configure compute and storage
+metadata:
+  title: Configure Compute and Storage
+  description: "Learn how to configure and scale compute tiers, storage, and physical shards in an Azure DocumentDB cluster."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-configure-compute-storage.md)]
