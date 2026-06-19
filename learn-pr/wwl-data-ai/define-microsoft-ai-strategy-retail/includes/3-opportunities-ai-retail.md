@@ -19,7 +19,7 @@ Current shopping experiences generate great amounts of data. AI solutions allow 
 
 * **Offer tailored product recommendations**: Microsoft AI products like Microsoft Foundry and Dynamics 365 Copilot include features for hyper-personalization. These functionalities enable your teams to suggest products based on browsing history or past purchases.
 * **Customize marketing campaigns**: Similarly, you can use the same services to personalize your marketing campaigns for more precise targeting, which increases their impact.
-* **Implement better virtual assistants**: OpenAI Service, Microsoft Foundry, Dynamics 365 Copilot, Power Virtual Agents, and AI features in Power Platform help you build more natural, powerful virtual assistants. Solutions for internal use support retail professionals by processing and organizing large amounts of sales data, customer feedback, and inventory details. Meanwhile, virtual assistants can also allow customers to ask in-depth questions about products currently in inventory.
+* **Implement better virtual assistants**: OpenAI Service, Microsoft Foundry, Dynamics 365 Copilot, Microsoft Copilot Studio, and AI features in Power Platform help you build more natural, powerful virtual assistants. Solutions for internal use support retail professionals by processing and organizing large amounts of sales data, customer feedback, and inventory details. Meanwhile, virtual assistants can also allow customers to ask in-depth questions about products currently in inventory.
 * **Offer onboarding and help desks for training**: You can build interactive training materials with Microsoft Foundry. They can be helpful to train new employees in store layouts, product details, and company policies. You can also design them for immersive and personalized training and role-playing.
 
 ## Amplified automation
@@ -30,7 +30,7 @@ A typical AI strategy to improve productivity is automation, which can be useful
 
 * **Search complex documents**: Products like Azure Document Intelligence, Azure OpenAI Services, and Azure AI Search enable you to easily find insights in lengthy, dense documents. Thanks to these tools, retail organizations can process and organize sales data, customer feedback, and inventory details.
 * **Anticipate inventory and supply chain management**: Azure Machine Learning, Microsoft Power BI, and Azure OpenAI Services can do predictive analytics, that is, use historic and present data to forecast future scenarios. In retail, this technique is helpful to anticipate inventory needs and sales. This task is key to optimizing your supply chain.
-* **Automate reporting**: A modern organization requires many reports if they want to take decisions based on data. Solutions like Azure OpenAI Services, Microsoft Power BI, and Azure Synapse Analytics help you automate the generation of these reports, which otherwise takes much time. This way, retail companies can quickly profit from sales reports, customer trends, and financial forecasts.
+* **Automate reporting**: A modern organization requires many reports if they want to take decisions based on data. Solutions like Azure OpenAI Services, Microsoft Power BI, and Microsoft Fabric help you automate the generation of these reports, which otherwise takes much time. This way, retail companies can quickly profit from sales reports, customer trends, and financial forecasts.
 
 ## Intuitive discovery
 

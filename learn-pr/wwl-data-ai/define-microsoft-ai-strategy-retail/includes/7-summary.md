@@ -19,7 +19,7 @@ Now that you reviewed this module, you should be able to:
 * To learn more about our low-code tools in Power Platform, visit our [Power Platform website](https://powerplatform.microsoft.com/).
 * To learn more about the models delivered by Azure OpenAI Service, read our [technical documentation on Azure OpenAI Service](/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure?tabs=global-standard-aoai%2Cglobal-standard&pivots=azure-openai).
 * To learn more about privacy and security in Azure OpenAI Service, read our [legal documentation on Azure OpenAI Service](/legal/cognitive-services/openai/data-privacy).
-* To learn more about all the prebuilt AI models available at Foundry Tools, read our [technical documentation on Foundry Tools](/azure/ai-foundry/).
+* To learn more about all the prebuilt AI models available at Microsoft Foundry Models, read our [technical documentation on Microsoft Foundry Models](/azure/ai-foundry/).
 * To learn more about the services included in Azure Machine Learning, visit our [Azure Machine Learning website](https://azure.microsoft.com/products/machine-learning/).
 
 ## References
