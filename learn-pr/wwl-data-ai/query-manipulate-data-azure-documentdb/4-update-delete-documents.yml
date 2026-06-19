@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-manipulate-data-azure-documentdb.update-delete-documents
+title: Update and delete documents
+metadata:
+  title: Update and Delete Documents
+  description: "Learn how to update and delete documents in Azure DocumentDB using field, array, and replace operators."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-update-delete-documents.md)]

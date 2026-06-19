@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-manipulate-data-azure-documentdb.query-filter-documents
+title: Query and filter documents
+metadata:
+  title: Query and Filter Documents
+  description: "Learn how to query and filter documents in Azure DocumentDB using comparison, logical, and element operators with projections."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-query-filter-documents.md)]
