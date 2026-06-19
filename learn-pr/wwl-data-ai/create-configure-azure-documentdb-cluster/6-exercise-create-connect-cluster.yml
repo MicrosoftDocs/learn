@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-azure-documentdb-cluster.exercise-create-connect-cluster
+title: "Exercise: Create and connect to a cluster"
+metadata:
+  title: "Exercise: Create and Connect to a Cluster"
+  description: "Create an Azure DocumentDB cluster in the Azure portal, connect using MongoDB Shell, and run test queries."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise-create-connect-cluster.md)]
