@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.optimize-query-performance-indexes-azure-documentdb
+metadata:
+  title: Optimize Query Performance Using Indexes in Azure DocumentDB
+  description: "Optimize query performance in Azure DocumentDB by building effective indexing strategies. Create single-field, compound, multi-key, and specialized indexes. To maintain performance at scale, analyze query execution with the explain() command and monitor index health."
+  ms.date: 04/17/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-documentdb
+  ai-usage: ai-assisted
+title: Optimize query performance using indexes in Azure DocumentDB
+summary: Optimize query performance in Azure DocumentDB by building effective indexing strategies. Create single-field, compound, multi-key, and specialized indexes. To maintain performance at scale, analyze query execution with the explain() command and monitor index health.
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain how indexes work internally and how they affect read and write performance.
+  - Create single-field, compound, multi-key, and specialized indexes based on query patterns.
+  - Use the explain() command to analyze query execution and identify performance bottlenecks.
+  - Monitor and optimize indexes for production workloads.
+prerequisites: |
+  - Familiarity with database concepts such as queries, indexes, and data models.
+  - Basic understanding of MongoDB or document-oriented databases.
+  - Experience with insert, query, update, and delete operations in Azure DocumentDB or MongoDB.
+  - An Azure subscription.
+  - An Azure DocumentDB cluster.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- databases
+units:
+- learn.wwl.optimize-query-performance-indexes-azure-documentdb.introduction
+- learn.wwl.optimize-query-performance-indexes-azure-documentdb.understand-how-indexes-work
+- learn.wwl.optimize-query-performance-indexes-azure-documentdb.create-single-field-compound-indexes
+- learn.wwl.optimize-query-performance-indexes-azure-documentdb.work-multi-key-specialized-index
+- learn.wwl.optimize-query-performance-indexes-azure-documentdb.analyze-query-performance-explain
+- learn.wwl.optimize-query-performance-indexes-azure-documentdb.monitor-optimize-indexes
+- learn.wwl.optimize-query-performance-indexes-azure-documentdb.exercise-build-indexing-strategy
+- learn.wwl.optimize-query-performance-indexes-azure-documentdb.knowledge-check
+- learn.wwl.optimize-query-performance-indexes-azure-documentdb.summary
+badge:
+  uid: learn.wwl.optimize-query-performance-indexes-azure-documentdb.badge

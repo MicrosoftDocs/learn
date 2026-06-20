@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-query-performance-indexes-azure-documentdb.monitor-optimize-indexes
+title: Monitor and optimize indexes
+metadata:
+  title: Monitor and Optimize Indexes
+  description: "Monitor index usage with $indexStats, identify and remove unused indexes, and apply a systematic optimization workflow in Azure DocumentDB."
+  ms.date: 04/17/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-monitor-optimize-indexes.md)]

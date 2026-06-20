@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-query-performance-indexes-azure-documentdb.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Check your understanding of indexing strategies in Azure DocumentDB."
+  ms.date: 04/17/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 5
+quiz:
+  title: ""
+  questions:
+  - content: "A developer runs `db.products.find({ productType: \"bike\" }).explain(\"executionStats\")` and sees `stage: \"COLLSCAN\"`, `totalDocsExamined: 500000`, and `nReturned: 230`. What does this output indicate?"
+    choices:
+    - content: "The query returned 230 of 500,000 results because the projection excluded the other documents."
+      isCorrect: false
+      explanation: "The COLLSCAN stage and totalDocsExamined value indicate the database scanned the entire collection. Projections limit which fields are returned, not which documents are matched."
+    - content: "The query scanned all 500,000 documents because no index exists on the productType field."
+      isCorrect: true
+      explanation: "COLLSCAN means the database performed a full collection scan. It examined every document to find 230 matches. Creating an index on the productType field would change the stage to IXSCAN and reduce totalDocsExamined to approximately 230."
+    - content: "The database used an index but it wasn't selective enough, so it examined 500,000 entries."
+      isCorrect: false
+      explanation: "The stage COLLSCAN specifically indicates no index was used. If an index is used, the stage would show IXSCAN. The high totalDocsExamined count confirms a full collection scan."
+  - content: "A developer has two indexes on the products collection: `{ category: 1 }` and `{ category: 1, price: -1 }`. The application only queries by category alone or by category and price together. Which action optimizes the indexing strategy?"
+    choices:
+    - content: "Keep both indexes because the single-field index is faster for category-only queries."
+      isCorrect: false
+      explanation: "A compound index supports queries on any prefix of its fields. The compound index { category: 1, price: -1 } handles category-only queries through the { category: 1 } prefix as efficiently as the single-field index."
+    - content: "Drop the compound index and keep only the single-field index for simpler maintenance."
+      isCorrect: false
+      explanation: "Dropping the compound index would force category-and-price queries to use index intersection or a collection scan, which is slower than a single compound index that covers both fields."
+    - content: "Drop the single-field `{ category: 1 }` index because the compound index covers category-only queries through prefix matching."
+      isCorrect: true
+      explanation: "The compound index { category: 1, price: -1 } supports queries on its prefix { category: 1 }. The single-field index is redundant and adds unnecessary write overhead without providing extra query coverage."
+  - content: "A social media application has a `users` collection where only 15% of users have a verified phone number in the `phone` field. The application queries verified phone numbers frequently. Which index type minimizes storage while supporting these queries?"
+    choices:
+    - content: "A standard single-field index on the phone field."
+      isCorrect: false
+      explanation: "A standard index includes entries for all documents, including those documents where the phone field is null or missing. This index indexes the 85% of documents that don't have phone numbers, wasting storage without query benefit."
+    - content: "A partial index on the phone field with a filter expression that requires the field to exist."
+      isCorrect: true
+      explanation: "A partial index with { partialFilterExpression: { phone: { $exists: true } } } indexes only the 15% of documents that have a phone number. This index reduces storage by approximately 85% compared to a full index while efficiently supporting queries that filter for existing phone numbers."
+    - content: "A wildcard index on all user fields."
+      isCorrect: false
+      explanation: "A wildcard index on all fields indexes every field in every document, resulting in significantly more storage than a targeted partial index. The wildcard is designed for unpredictable query patterns, not for optimizing a specific known query."
+  - content: "A developer runs `db.products.aggregate([{ $indexStats: {} }])` and discovers an index named `productType_1` with `accesses.ops: 0` over the past 90 days. All application queries filter by category, not productType. What should the developer do before dropping the index?"
+    choices:
+    - content: "Drop the index immediately since it has zero usage."
+      isCorrect: false
+      explanation: "Zero usage over 90 days is a strong signal, but dropping immediately is risky. Monthly or quarterly batch jobs, reporting queries, or seasonal features might use the index at intervals longer than the monitoring period."
+    - content: "Verify that no periodic jobs, reports, or seasonal queries depend on the index, then confirm with explain() that no critical queries use it before dropping."
+      isCorrect: true
+      explanation: "Before dropping an unused index, verify that the monitoring period covers all query patterns including periodic batch jobs, end-of-month reports, and seasonal features. Run explain() on known query patterns to confirm the index isn't selected. Only drop after this verification."
+    - content: "Rebuild the index to reset the usage counter and monitor for another 90 days."
+      isCorrect: false
+      explanation: "Rebuilding an index resets usage statistics but doesn't change whether application queries use it. If no queries filter on productType, the rebuilt index continues to show zero usage while adding unnecessary write overhead."
+  - content: "Azure DocumentDB indexes only the `_id` field by default. A developer creates a new collection and inserts 100,000 documents. Which statement accurately describes the indexing behavior?"
+    choices:
+    - content: "All fields in every document are automatically indexed, and the developer should drop unnecessary indexes to reduce write overhead."
+      isCorrect: false
+      explanation: "Azure DocumentDB doesn't index all fields by default. Unlike some other database services, Azure DocumentDB creates only the _id index automatically. Indexes must be created explicitly."
+    - content: "Only the `_id` field is indexed. Queries on any other field perform a collection scan until the developer creates appropriate indexes."
+      isCorrect: true
+      explanation: "Azure DocumentDB indexes only the _id field by default, with a maximum key size of 2 KB. Queries filtering on any other field (such as category, price, or status) perform a full collection scan (COLLSCAN) until the developer explicitly creates indexes on those fields."
+    - content: "No fields are indexed by default. The developer must create all indexes including the `_id` index."
+      isCorrect: false
+      explanation: "The _id index is created automatically on every collection and can't be dropped. It ensures uniqueness of document identifiers and supports efficient lookups by document ID. All other indexes must be created explicitly."

@@ -1,0 +1,7 @@
+Indexes are one of the most important tools for achieving fast, predictable query performance in a document database. Without indexes, the database engine scans every document in a collection to find matches, a process that gets progressively slower as data grows.
+
+Suppose your e-commerce company's Azure DocumentDB cluster is handling production traffic. The product catalog grew to hundreds of thousands of documents, and performance problems are surfacing. Product search pages filter by category and price range, but the queries take seconds instead of milliseconds. Order lookup by customer ID scans the entire orders collection. The review filtering page sorts by rating, but the database performs the sort in memory and occasionally hits the 32-MB sort limit. Each of these problems traces back to missing or poorly designed indexes.
+
+In this module, you learn how indexes work internally and how they affect both read and write performance. You explore single-field and compound indexes. You learn the Equality-Sort-Range (ESR) rule for optimal field ordering. Additionally, you explore specialized index types including multikey, wildcard, partial, sparse, text, and vector indexes. You use the `explain()` command to diagnose query execution and identify performance bottlenecks. Finally, you monitor index usage and build a systematic optimization workflow.
+
+By the end of this module, you're able to design and implement an indexing strategy that balances read performance with write cost for your Azure DocumentDB application.
