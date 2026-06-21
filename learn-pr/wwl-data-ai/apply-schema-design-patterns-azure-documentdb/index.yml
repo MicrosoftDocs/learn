@@ -3,7 +3,7 @@ uid: learn.wwl.apply-schema-design-patterns-azure-documentdb
 metadata:
   title: Apply Schema Design Patterns in Azure DocumentDB
   description: "Apply 10 schema design patterns to solve data modeling challenges in Azure DocumentDB. Organize documents, precompute results, manage arrays, group time-series data, evolve schemas, and archive old data."
-  ms.date: 04/15/2026
+  ms.date: 06/20/2026
   author: wwlpublish
   ms.author: calopez
   ms.topic: module
@@ -29,7 +29,7 @@ levels:
 roles:
 - developer
 products:
-- azure-cosmos-db
+- azure-documentdb
 subjects:
 - databases
 units:

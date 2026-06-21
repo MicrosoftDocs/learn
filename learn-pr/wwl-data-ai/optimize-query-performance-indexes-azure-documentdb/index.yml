@@ -3,7 +3,7 @@ uid: learn.wwl.optimize-query-performance-indexes-azure-documentdb
 metadata:
   title: Optimize Query Performance Using Indexes in Azure DocumentDB
   description: "Optimize query performance in Azure DocumentDB by building effective indexing strategies. Create single-field, compound, multi-key, and specialized indexes. To maintain performance at scale, analyze query execution with the explain() command and monitor index health."
-  ms.date: 04/17/2026
+  ms.date: 06/20/2026
   author: wwlpublish
   ms.author: calopez
   ms.topic: module
@@ -29,7 +29,7 @@ levels:
 roles:
 - developer
 products:
-- azure-cosmos-db
+- azure-documentdb
 subjects:
 - databases
 units:

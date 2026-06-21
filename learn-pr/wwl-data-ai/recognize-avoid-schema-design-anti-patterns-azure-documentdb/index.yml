@@ -3,7 +3,7 @@ uid: learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb
 metadata:
   title: Recognize and Avoid Schema Design Anti-Patterns in Azure DocumentDB
   description: "Identify and fix common schema design mistakes in Azure DocumentDB, including unbounded arrays, collection sprawl, unnecessary indexes, over-normalization, and case-sensitivity issues."
-  ms.date: 04/16/2026
+  ms.date: 06/20/2026
   author: wwlpublish
   ms.author: calopez
   ms.topic: module
@@ -29,7 +29,7 @@ levels:
 roles:
 - developer
 products:
-- azure-cosmos-db
+- azure-documentdb
 subjects:
 - databases
 units:
