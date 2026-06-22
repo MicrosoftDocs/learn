@@ -23,7 +23,7 @@ prerequisites: |
   - Intermediate T-SQL skills
   - Familiarity with SQL Server Management Studio or the VS Code mssql extension
   - Experience creating and configuring resources in the Azure portal
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/copilot-module.svg
 levels:
 - intermediate
 roles:
