@@ -3,7 +3,7 @@ uid: learn.wwl.build-applications-azure-documentdb-sdks
 metadata:
   title: Build Applications with Azure DocumentDB SDKs
   description: "Build applications that connect to Azure DocumentDB using the official MongoDB drivers for Python, .NET, and JavaScript. Perform CRUD operations programmatically and integrate database operations into your application code."
-  ms.date: 04/10/2026
+  ms.date: 06/20/2026
   author: wwlpublish
   ms.author: calopez
   ms.topic: module
@@ -27,7 +27,7 @@ levels:
 roles:
 - developer
 products:
-- azure-cosmos-db
+- azure-documentdb
 subjects:
 - databases
 units:

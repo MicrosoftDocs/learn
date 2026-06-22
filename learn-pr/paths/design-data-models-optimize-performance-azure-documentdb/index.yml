@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.wwl.design-data-models-optimize-performance-azure-documentdb
+metadata:
+  title: Design Data Models and Optimize Performance in Azure DocumentDB
+  description: Build applications with Azure DocumentDB. Create and configure clusters, perform CRUD operations, connect with SDK, design efficient data models, and optimize query performance.
+  ms.date: 06/20/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: learning-path
+title: Design data models and optimize performance in Azure DocumentDB
+summary: |
+  Build applications with Azure DocumentDB, a fully managed MongoDB-compatible database service. Create and configure clusters, then perform CRUD operations with the MongoDB Query Language. Connect your applications using Python, .NET, and JavaScript SDK. Design efficient data models and optimize query performance with indexing strategies.
+prerequisites: |
+  - Familiarity with general application development concepts.
+  - Understanding of JSON document structure.
+  - Basic database fundamentals such as collections, documents, and queries.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-documentdb
+subjects:
+- databases
+modules:
+- learn.wwl.introduction-azure-documentdb
+- learn.wwl.create-configure-azure-documentdb-cluster
+- learn.wwl.query-manipulate-data-azure-documentdb
+- learn.wwl.build-applications-azure-documentdb-sdks
+- learn.wwl.model-data-relationships-azure-documentdb
+- learn.wwl.apply-schema-design-patterns-azure-documentdb
+- learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb
+- learn.wwl.optimize-query-performance-indexes-azure-documentdb
+trophy:
+  uid: learn.wwl.design-data-models-optimize-performance-azure-documentdb.trophy

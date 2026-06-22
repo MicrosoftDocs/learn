@@ -3,7 +3,7 @@ uid: learn.wwl.model-data-relationships-azure-documentdb
 metadata:
   title: Model Data Relationships in Azure DocumentDB
   description: "Model data relationships effectively in Azure DocumentDB. Analyze entity relationships using access patterns and cardinality, apply the embed-vs-reference decision framework, and implement one-to-one, one-to-many, and many-to-many relationship patterns with practical e-commerce examples."
-  ms.date: 04/15/2026
+  ms.date: 06/20/2026
   author: wwlpublish
   ms.author: calopez
   ms.topic: module
@@ -28,7 +28,7 @@ levels:
 roles:
 - developer
 products:
-- azure-cosmos-db
+- azure-documentdb
 subjects:
 - databases
 units:
