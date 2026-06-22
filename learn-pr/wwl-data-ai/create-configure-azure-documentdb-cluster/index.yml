@@ -3,7 +3,7 @@ uid: learn.wwl.create-configure-azure-documentdb-cluster
 metadata:
   title: Create and Configure an Azure DocumentDB Cluster
   description: "Learn how to provision an Azure DocumentDB cluster, connect with MongoDB tools, and configure compute, storage, and security settings."
-  ms.date: 04/09/2026
+  ms.date: 06/20/2026
   author: wwlpublish
   ms.author: calopez
   ms.topic: module
@@ -26,7 +26,7 @@ levels:
 roles:
 - developer
 products:
-- azure-cosmos-db
+- azure-documentdb
 subjects:
 - databases
 units:

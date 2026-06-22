@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-azure-documentdb
 metadata:
   title: Introduction to Azure DocumentDB
   description: "Explore the core features, architecture, and use cases for Azure DocumentDB, a fully managed MongoDB-compatible database service."
-  ms.date: 04/09/2026
+  ms.date: 06/20/2026
   author: wwlpublish
   ms.author: calopez
   ms.topic: module
@@ -25,7 +25,7 @@ levels:
 roles:
 - developer
 products:
-- azure-cosmos-db
+- azure-documentdb
 subjects:
 - databases
 units:
