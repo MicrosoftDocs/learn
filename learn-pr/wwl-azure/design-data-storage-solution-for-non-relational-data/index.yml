@@ -5,9 +5,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Design a data storage solution for non-relational data
   description: "Azure Architect's design and recommend non-relational data storage solutions."
-  ms.date: 03/23/2026
+  ms.date: 06/23/2026
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: robbarefoot
   ms.topic: module
   ms.collection: N/A
   ms.custom:
