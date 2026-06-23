@@ -20,4 +20,4 @@ By the end of this module, you're able to:
 
 - Familiarity with basic security concepts (for example, authentication, access control, encryption)
 - Familiarity with basic artificial intelligence concepts (for example, models, training, inference)
-- Completion of the [Fundamentals of AI security](/training/modules/fundamentals-of-ai-security/) module or equivalent knowledge
+- Completion of the [Fundamentals of AI security](/training/modules/fundamentals-ai-security/) module or equivalent knowledge

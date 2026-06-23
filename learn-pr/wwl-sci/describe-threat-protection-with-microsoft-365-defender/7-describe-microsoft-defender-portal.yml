@@ -11,6 +11,6 @@ metadata:
   ms.custom:
     - sfi-ga-nochange
     - N/A
-durationInMinutes: 17
+durationInMinutes: 30
 content: |
   [!include[](includes/7-describe-microsoft-defender-portal.md)]

@@ -5,8 +5,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Introduction to generative AI and agents
   description: Ever wondered how AI can create content, answer questions, and assist with tasks? This module introduces you to the world of generative AI and agents.
-  author: sherzyang
-  ms.author: sheryang
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.date: 10/04/2025
   ms.service: microsoft-foundry
   ms.topic: module-intro-to-product
