@@ -40,7 +40,7 @@ Good data governance helps reveal your data's business value and simplifies data
 - For data owners and stewards:
   - Data curation and management—helps you deliver high quality data that's easy to understand and safely access for organization-wide applications.
   - Responsible data use—helps you ensure that your data is used by intended users for intended purposes.
-  - Impact analysis—understand actions on the data that may affect your data.
+  - Impact analysis—understand action anomaly states impacting your data.
 - For data officers and CxO stakeholders:
   - Data value creation—maximize value creation from your data while reducing operations spend.
   - Data estate standardization—create common controls across your data estate with federated accountability so your data is healthy and safe.
