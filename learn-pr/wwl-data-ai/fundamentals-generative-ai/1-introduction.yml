@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to generative AI concepts. 
-  author: sherzyang
-  ms.author: sheryang
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.date: 10/04/2025
   ms.topic: unit
   ms.collection:
