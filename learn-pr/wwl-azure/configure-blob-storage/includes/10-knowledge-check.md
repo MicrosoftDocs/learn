@@ -4,4 +4,4 @@ Your organization has an extensive video library. Users access the library thous
 
 ### Answer the following questions
 
-Choose the best response for each question.
+Choose the best response for each question. 
