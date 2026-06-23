@@ -4,8 +4,8 @@ title: Extract information from documents
 metadata:
   title: Extract information from documents
   description: Use Azure Vision to extract information from documents.
-  author: sherzyang
-  ms.author: sheryang
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.date: 05/15/2026
   ms.topic: unit
   zone_pivot_groups: video-or-text

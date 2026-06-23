@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Module assessment
   description: Check your understanding of the concepts covered in this module.
-  author: sherzyang
-  ms.author: sheryang
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.date: 10/5/2025
   ms.topic: unit
   ms.collection:

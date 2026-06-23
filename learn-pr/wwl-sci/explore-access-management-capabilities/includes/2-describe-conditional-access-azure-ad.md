@@ -64,3 +64,11 @@ These protections can be applied through existing policies that target all resou
 ### Licensing
 
 Conditional Access requires Microsoft Entra ID P1 or P2 licenses. Organizations using the free tier of Microsoft Entra ID can use security defaults to get a baseline level of MFA protection. Security defaults are covered in more detail in the module, [Describe the authentication capabilities of Microsoft Entra ID](/training/modules/explore-authentication-capabilities/).
+
+#### Interactive guide: Create a conditional access policy
+
+In this interactive guide, which takes approximately 15 minutes to complete, you create a conditional access policy in Microsoft Entra.
+
+Select the image below to get started.
+
+[![Thumbnail for the Create a conditional access policy user in Microsoft Entra.](../media/create-conditional-access-policy-thumbnail.png)](https://microsoftlearning.github.io/click-throughs/docs/IG/interactive_guide_create_a_conditional_access_policy_web/story.html?azure-portal=true)
