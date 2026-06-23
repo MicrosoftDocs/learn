@@ -101,6 +101,6 @@ Responsibilities of the **server**:
 3. Apply system instructions, safety, context, and more
 4. Return the generated output (for example: text, image, audio, or structured JSON)
 
-Next, let's take a look at how clients connect to to Foundry models and how to use Foundry endpoints.
+Next, let's take a look at how clients connect to Foundry models and how to use Foundry endpoints.
 
 ::: zone-end
