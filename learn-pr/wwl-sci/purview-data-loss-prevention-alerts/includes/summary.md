@@ -1,4 +1,4 @@
-Investigating and responding to data loss prevention (DLP) alerts helps organizations identify potential risks early and take action to protect sensitive information. In this module, you learned how to review alerts, gather context, apply remediation actions, and document your findings in a structured and consistent way.
+A data loss prevention (DLP) alert is only as useful as the response behind it. From the moment an alert fires, each stage matters: triaging to separate signal from noise, investigating with the right tool, taking action, and documenting what happened so the next person doesn't start from scratch.
 
 You learned to:
 
@@ -7,7 +7,7 @@ You learned to:
 - Take appropriate response actions, such as revoking access, disabling accounts, or updating alert statuses
 - Assign ownership, document decisions, and support accountability throughout the investigation process
 
-Without a structured investigation and response process, small issues could be missed or handled inconsistently, increasing the risk of data exposure. By using Microsoft Purview and Microsoft Defender XDR together, you can ensure that alerts are investigated thoroughly, actions are documented clearly, and risks are addressed before they escalate. A strong investigation and response process supports both your organization's security goals and its compliance obligations.
+When this process isn't followed consistently, problems compound. Alerts sit unreviewed and lose context as time passes. Patterns across users or policies go unnoticed because no one correlates them. False positives never get tuned out, so the queue fills with noise that trains analysts to ignore it. And when an incident does escalate, there's no documented trail showing what was checked, what was ruled out, or who made the call.
 
 ## Resources
 
