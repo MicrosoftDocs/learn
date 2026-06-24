@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-volume-access.configure-acls-nfsv41
+title: Configure access control lists for NFSv4.1
+metadata:
+  title: Configure access control lists for NFSv4.1
+  description: Learn how to configure access control lists (ACLs) for NFSv4.1 volumes in Azure NetApp Files.
+  ms.date: 06/02/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-configure-access-control-lists-nfsv41.md)]
