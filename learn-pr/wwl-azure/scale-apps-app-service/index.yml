@@ -3,7 +3,7 @@ uid: learn.wwl.scale-apps-app-service
 metadata:
   title: Scale Apps in Azure App Service
   description: "Scale apps in Azure App Service"
-  ms.date: 02/12/2025
+  ms.date: 06/25/2026
   author: JeffKoMS
   ms.author: jeffko
   ms.topic: module
@@ -16,11 +16,8 @@ title: Scale apps in Azure App Service
 summary: Learn how autoscale operates in App Service and how to identify autoscale factors, enable autoscale, and how to create sound autoscale conditions.
 abstract: |
   After completing this module, you'll be able to:
-
   -   Identify scenarios for which autoscaling is an appropriate solution.
-
   -   Create autoscaling rules for a web app.
-
   -   Monitor the effects of autoscaling.
 prerequisites: '-   Experience using the Azure portal to create and manage App Service web apps'
 iconUrl: /training/achievements/app-service-scale-apps.svg

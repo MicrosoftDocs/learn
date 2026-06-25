@@ -1,18 +1,21 @@
 Azure App Service supports manual scaling, and two options for scaling out your web apps automatically:
 
 * Autoscaling with Azure *autoscale*. Autoscaling makes scaling decisions based on rules that you define.
-* Azure App Service *automatic scaling*. Automatic scaling makes scaling decisions for you based on the parameters that you select.
+* Azure App Service *automatic scaling*. Automatic scaling is a platform-managed option that handles scale-out decisions for you based on incoming HTTP traffic, without requiring you to define rules or schedules. You configure limits such as **Always ready instances** and **Maximum burst**, but the platform decides when to add or remove instances.
 
 The following table highlights the differences between the two automatic scaling options:
 
 | **Factor** | **Autoscale** | **Automatic scaling** |
 |--|--|--|
-| Available pricing tiers | Standard and Up | Premium V2 (P1V2, P2V2, P3V2) and Premium V3 (P0V3, P1V3, P2V3, P3V3, P1MV3, P2MV3, P3MV3, P4MV3, P5MV3) pricing tiers |
+| Available pricing tiers | Standard and up | Premium v2, v3, and v4 |
 | Rule-based scaling | Yes | No, the platform manages the scale-out and in based on HTTP traffic. |
 | Schedule-based scaling | Yes | No |
-| Always ready instances | No, your web app runs on other instances available during the scale-out operation, based on threshold defined for autoscale rules. | Yes (minimum 1) |
+| Always ready instances | No | Yes (minimum 1) |
 | Prewarmed instances | No | Yes (default 1) |
 | Per-app maximum | No | Yes |
+
+> [!NOTE]
+> App Service tiers, SKUs, and supported scaling features change regularly. For the latest details, see [Azure App Service plan overview](/azure/app-service/overview-hosting-plans) and [Automatic scaling in Azure App Service](/azure/app-service/manage-automatic-scaling).
 
 ## What is autoscaling?
 
