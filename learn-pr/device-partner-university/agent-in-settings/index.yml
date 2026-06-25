@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.agent-in-settings
+title: Personalize your PC faster with Agent in Settings
+metadata:
+  title: Personalize Your PC Faster with Agent in Settings
+  description: In this module, you'll learn how to use Agent in Settings to find and change Windows settings by describing what you want to do in everyday language. You'll explore how the feature works, when to use it, and how it can help make personalization, accessibility, setup, and troubleshooting tasks easier on Copilot+ PCs.
+  ms.date: 06/25/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Learn how Agent in Settings on Copilot+ PCs can help users find and adjust Windows settings using natural language. Explore how it helps simplify personalization, accessibility, device setup, and troubleshooting tasks.
+abstract: |
+  By the end of this module, you’ll be able to:
+  - Describe what Agent in Settings does on supported Copilot+ PCs.
+  - Use natural language prompts to find and change settings more quickly.
+  - Explain how Agent in Settings can simplify common personalization and troubleshooting tasks.
+  - Identify when Agent in Settings is a better fit than manually navigating Settings menus.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/agent-in-settings.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.agent-in-settings.introduction
+  - learn.dpu.agent-in-settings.definition
+  - learn.dpu.agent-in-settings.how-to-use
+  - learn.dpu.agent-in-settings.why-it-matters
+  - learn.dpu.agent-in-settings.scenarios
+  - learn.dpu.agent-in-settings.when-to-use
+  - learn.dpu.agent-in-settings.knowledge-check
+  - learn.dpu.agent-in-settings.summary
+badge:
+  uid: learn.dpu.agent-in-settings.badge
+
