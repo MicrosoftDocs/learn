@@ -18,7 +18,7 @@ To serve its global patients, Operation Smile needed better support for translat
 
 Operation Smile worked with **Azure OpenAI Service**, **Microsoft Fabric**, and **Microsoft Power Apps** to streamline data input, accelerate patient triage, and replace manual processes.
 
-Working closely with **Microsoft Tech for Social Impact** and **Microsoft AI Cloud Partner Program** member Squadra, Operation Smile embarked on a transformative journey with Azure AI technologies to enhance its processes.
+Working closely with **Microsoft for Nonprofits** and **Microsoft AI Cloud Partner Program** member Squadra, Operation Smile embarked on a transformative journey with Azure AI technologies to enhance its processes.
 
 The first step was to digitalize the registration process and provide multi-language support with Microsoft Power Apps, eliminating error-prone manual data entry and providing offline service in areas without internet connection. This helps Operation Smile operate more efficiently and serve more patients in low-resource areas.
 

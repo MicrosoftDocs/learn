@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: "This unit provides a knowledge check to assess your understanding of the concepts covered in the previous units. Test your knowledge of Azure and its capabilities for AI development."
   ms.date: 02/03/2026
-  author: sherzyang
-  ms.author: sheryang
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: unit
 durationInMinutes: 4
 content: |

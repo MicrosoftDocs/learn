@@ -1,6 +1,6 @@
-Investigating data loss prevention (DLP) alerts often involves sorting through large volumes of activity to find what matters most. The Microsoft Purview DLP triage agent, powered by Microsoft Security Copilot, helps automate that process. It reviews alerts, prioritizes those with the highest potential risk, and helps analysts focus on what needs attention first.
+Investigating data loss prevention (DLP) alerts often involves sorting through large volumes of activity to find what matters most. The Microsoft Purview DLP triage agent, powered by Microsoft Security Copilot, automates that process. It reviews alerts, prioritizes those with the highest potential risk, and surfaces the ones that need attention first.
 
-Imagine you're reviewing several alerts from employees sharing files externally. Some are harmless, but others might contain sensitive financial data. Instead of checking each alert manually, you can enable the DLP triage agent to analyze content, assess policy risk, and surface the alerts that require immediate review. You can then use Security Copilot to summarize context and guide your next steps.
+In a typical week, a DLP policy might generate alerts for external file shares, email attachments, and cloud uploads. Most are low risk. A few contain sensitive financial data that needs immediate review. Rather than opening each one to make that determination manually, the triage agent analyzes content, assesses policy risk, and ranks alerts by severity. Security Copilot then summarizes context and suggests next steps.
 
 ## Understand how the DLP triage agent works
 
@@ -17,7 +17,7 @@ When configured, the agent can:
 - Apply your criteria automatically each time it runs
 - Allow manual reruns or adjustments when needed
 
-This approach reduces time spent on manual triage while keeping analysts in control of prioritization and decision-making.
+The agent handles the sorting, but you still decide what to act on.
 
 ## Interpret triaged alerts in Microsoft Purview
 
@@ -37,24 +37,20 @@ Alerts are prioritized using three main factors:
 - **Exfiltration risk**: Activities that suggest data movement outside approved channels, such as external sharing or downloads
 - **Policy risk**: Rule mode and actions, including whether a label was removed or downgraded
 
-This prioritization helps analysts focus on the alerts most likely to involve sensitive data exposure.
+Alerts most likely to involve sensitive data exposure rise to the top.
 
 ## Run the DLP triage agent
 
-Before running the agent, confirm that you have the required roles and licensing:
+The agent must be deployed and configured before you can use it. Deployment involves provisioning Security Compute Units (SCUs), enabling the Purview plugin in Security Copilot, and assigning an agent identity. For full setup steps, see [Get started with the Microsoft Purview Triage Agent in Data Loss Prevention](/purview/copilot-in-purview-triage-dlp-agent-get-started?azure-portal=true).
 
-- **Roles**: Information Protection Analyst or Investigator, Purview Content Analyst, Data Classification Content Download (for device DLP alerts), and Security Copilot Contributor
-- **Licensing**: Microsoft Purview Data Loss Prevention and provisioned **Security Compute Units (SCUs)** for the agent to run
-- **Configuration**: Your tenant must be onboarded to Microsoft Security Copilot with the **Purview plugin** enabled
+To view and act on triaged alerts, you need the Information Protection Analyst or Investigator role, Purview Agent Analysis, and Security Copilot Contributor. For device-based alerts, the Data Classification Content Viewer and Content Downloader roles are also required.
 
-Agents run under the security context of the user who last saved the configuration. This context must be renewed every 90 days.
+Once the agent is deployed, it can run in two modes:
 
-You can set the agent to run automatically or manually:
+- **Automatically**, on a fixed schedule, to continuously review alerts from a selected timeframe
+- **Manually**, on one alert at a time, when you want to evaluate a specific case more closely
 
-- **Automatically**, on a fixed schedule, to continuously review alerts from your selected timeframe
-- **Manually**, on one alert at a time, when you want to review a specific case more closely
-
-You can choose how far back the agent looks, such as the past 24 hours, 7 days, or 30 days. When running automatically, it processes existing alerts in that window and triages new ones as they appear.
+The timeframe controls how far back the agent looks. You can set it to cover the past 24 hours up to 30 days. When running automatically, it processes existing alerts in that window and triages new ones as they appear.
 
 The agent only triages alerts from **active DLP policies**. Alerts from policies in **simulation mode** aren't included.
 
@@ -94,12 +90,10 @@ You can rerun the agent on a single alert if conditions change or you need a new
 
 ## Limitations and supported scenarios
 
-- The agent currently triages alerts from **Exchange, SharePoint, OneDrive, and Teams** only.
+- The agent triages alerts from **Exchange, SharePoint, OneDrive, Teams, and devices (Endpoint)**. For device alerts, [evidence collection for file activities on devices](/purview/dlp-copy-matched-items-learn?azure-portal=true) must be enabled.
 - Alerts triggered solely by **custom sensitive information types** or **custom trainable classifiers** aren't included.
 - Files larger than **2 MB** aren't analyzed.
 - When an alert includes more than 10 files, the agent analyzes the 10 most relevant based on policy matches and risk score.
 - Simulation-mode policies and administrative unit scoping aren't supported.
 
 For alerts that aren't fully triaged, continue your investigation in the standard DLP Alerts dashboard or Microsoft Defender XDR.
-
-Security Copilot helps you identify and resolve data risks faster while keeping full control over every decision.

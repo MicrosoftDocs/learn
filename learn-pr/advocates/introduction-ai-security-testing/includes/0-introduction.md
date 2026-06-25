@@ -19,5 +19,5 @@ To get the best learning experience from this module, you should have knowledge 
 
 - Fundamental security concepts (for example, authentication, access control, encryption)
 - Fundamental AI concepts (for example, models, training, inference)
-- The types of AI attacks covered in the module [Fundamentals of AI security](/training/modules/fundamentals-of-ai-security/)
+- The types of AI attacks covered in the module [Fundamentals of AI security](/training/modules/fundamentals-ai-security/)
 - The AI security controls covered in the module [AI security controls](/training/modules/ai-security-controls/)

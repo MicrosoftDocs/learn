@@ -1,4 +1,4 @@
-After you've investigated a data loss prevention (DLP) alert, the next step is to respond appropriately. This includes documenting your findings, assigning ownership if needed, taking mitigation actions, and closing out the alert or incident. Microsoft Purview and Microsoft Defender XDR offer different, but complementary, capabilities to support this response process.
+After you've investigated a data loss prevention (DLP) alert, the next step is to respond appropriately. This includes documenting your findings, assigning ownership if needed, taking mitigation actions, and closing out the alert or incident. Microsoft Purview and Microsoft Defender XDR each handle different parts of this process.
 
 ## Response actions in Microsoft Purview
 
@@ -12,7 +12,7 @@ Key actions include:
 - **Share alert details** using a generated read-only link
 - **View user activity summary** (if Insider Risk Management is integrated)
 
-These steps help ensure alerts are handled consistently and that important context is recorded for future audits or follow-ups.
+Recording this context keeps your audit trail clean and gives the next analyst something to work from.
 
 ## Response actions in Microsoft Defender XDR
 
@@ -29,4 +29,18 @@ From the incident and alert views, you can:
 
 You can also **correlate the DLP alert** with other security signals to determine whether it's part of a larger threat or an isolated incident.
 
-Responding to alerts isn't just about closing them out; it's about creating accountability and ensuring that potential data risks are addressed. Whether you're resolving a low-risk policy match or escalating a broader insider threat, clearly documented responses support organizational compliance and reduce the likelihood of repeated incidents.
+## Handle false positives
+
+Sometimes an alert fires on legitimate activity. A finance team shares masked account numbers with an authorized vendor, or a test environment triggers a production policy. When that happens, close the alert with the right classification so your queue stays useful and your reporting reflects actual risk.
+
+In **Microsoft Defender XDR**, classify the incident as **False Positive** and select a reason, such as _Inaccurate alert_ or _Security testing_. That classification shows up in Defender reporting, so you can track how much noise a policy generates over time.
+
+In **Microsoft Purview**, set the alert status to **Resolved** and add a comment explaining why it was a false positive. Purview doesn't have a separate classification field, so the comment is where you document the rationale for the next person who looks at this alert.
+
+If the same legitimate activity keeps triggering alerts, adjust the policy conditions, add an exception, or narrow the scope. The goal is to prevent the next analyst from spending time on the same determination you already made.
+
+## What happens when you resolve an alert
+
+Setting an alert or incident to **Resolved** closes it, but doesn't suppress future alerts from the same activity. If the same user does the same thing again and it still matches the policy, a new alert appears. Resolve means "I've handled this one," not "stop alerting on this pattern."
+
+Resolved incidents stay visible in Defender for up to six months. You can filter for them when reviewing historical patterns or auditing past decisions. In Purview, resolved alerts remain visible based on your organization's audit log retention settings.

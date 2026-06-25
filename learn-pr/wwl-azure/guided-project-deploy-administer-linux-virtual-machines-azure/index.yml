@@ -3,9 +3,9 @@ uid: learn.wwl.guided-project-deploy-administer-linux-virtual-machines-azure
 metadata:
   title: 'Guided Project: Deploy and administer Linux virtual machines on Azure'
   description: "You learn how to create and configure Linux virtual machines in Microsoft Azure."
-  ms.date: 03/23/2026
+  ms.date: 06/23/2026
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: robbarefoot
   ms.topic: module-guided-project
   ms.service: azure-virtual-machines
   ai-usage: ai-assisted

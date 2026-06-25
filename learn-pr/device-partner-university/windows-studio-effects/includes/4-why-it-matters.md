@@ -11,7 +11,7 @@ Consistent lighting and eye contact improve how users appear in meetings.
 - **Simplify setup across tools**
 Studio Effects apply automatically across supported apps, reducing the need for repeated configuration.
 
-:::image type="content" source="../media/benefits.svg" alt-text="A diagram of Windows Studio Effects benefits for business users." lightbox="../media/benefits.svg" :::
+:::image type="content" source="../media/benefits.svg" alt-text="Diagram of Windows Studio Effects benefits for business users." lightbox="../media/benefits.svg" :::
 
 Instead of adjusting multiple settings across apps or environments, users can rely on built-in enhancements to maintain a consistent experience.
 

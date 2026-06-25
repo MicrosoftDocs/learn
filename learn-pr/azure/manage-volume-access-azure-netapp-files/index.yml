@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azure.manage-volume-access
+metadata:
+  title: Manage volume access for Azure NetApp Files
+  description: Learn how to manage access to a volume in Azure NetApp Files by configuring export policies, Unix permissions, and ACLs for NFS and dual-protocol volumes. Understand how to manage SMB share ACLs and configure network features for a volume.
+  ms.date: 06/02/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Manage volume access for Azure NetApp Files
+summary: Manage access to Azure NetApp Files volumes by configuring export policies, Unix permissions, ACLs, and network features.
+abstract: |
+  By completing this module, you'll be able to:
+  - Configure export policies and Unix permissions for NFS and dual-protocol volumes
+  - Manage access control lists (ACLs) for NFS and SMB volumes
+  - Configure Virtual WAN for Azure NetApp Files
+prerequisites: |
+  - Manage dual-protocol volumes in Azure NetApp Files
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+  - storage
+units:
+  - learn.azure.manage-volume-access.introduction
+  - learn.azure.manage-volume-access.configure-export-policy
+  - learn.azure.manage-volume-access.configure-unix-permissions
+  - learn.azure.manage-volume-access.configure-acls-nfsv41
+  - learn.azure.manage-volume-access.manage-server-message-block-share-access-control-lists
+  - learn.azure.manage-volume-access.configure-network-features
+  - learn.azure.manage-volume-access.configure-virtual-wan
+  - learn.azure.manage-volume-access.exercise
+  - learn.azure.manage-volume-access.knowledge-check
+  - learn.azure.manage-volume-access.summary
+badge:
+  uid: learn.azure.manage-volume-access.badge

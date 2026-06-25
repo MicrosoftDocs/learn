@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.facilitator-in-microsoft-teams.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Improve meeting collaboration with Facilitator in Microsoft Teams" module.
+  ms.date: 06/23/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A project team is discussing timelines, responsibilities, and next steps during a Microsoft Teams meeting. Team members want help capturing important information without relying on one person to take notes. Which Facilitator capability would be most helpful in this scenario?"
+    choices:
+        - content: "Creating separate notes for each participant"
+          isCorrect: false
+          explanation: ""
+        - content: "Generating collaborative notes that participants can review together"
+          isCorrect: true
+          explanation: ""
+        - content: "Scheduling future meetings automatically"
+          isCorrect: false
+          explanation: ""
+        - content: "Restricting participant access to meeting content"
+          isCorrect: false
+          explanation: ""
+  - content: "A marketing team completes a planning meeting and wants a clear record of the decisions that were made. How can Facilitator help?"
+    choices:
+        - content: "By creating separate meeting chats for each participant"
+          isCorrect: false
+          explanation: ""
+        - content: "By exporting meeting recordings to external services"
+          isCorrect: false
+          explanation: ""
+        - content: "By identifying and documenting decisions discussed during the meeting"
+          isCorrect: true
+          explanation: ""
+        - content: "By replacing the need for follow-up meetings"
+          isCorrect: false
+          explanation: ""
+  - content: "A meeting organizer wants to enable Facilitator during a Microsoft Teams meeting. What is required?"
+    choices:
+        - content: "Microsoft Entra ID P1"
+          isCorrect: false
+          explanation: ""
+        - content: "Microsoft Defender for Endpoint"
+          isCorrect: false
+          explanation: ""
+        - content: "Microsoft 365 Copilot license"
+          isCorrect: true
+          explanation: ""
+        - content: "Windows 11 Pro"
+          isCorrect: false
+          explanation: ""
+  - content: "During a product launch meeting, participants want to remain focused on the discussion while still keeping track of important information being captured. How does Facilitator support this goal?"
+    choices:
+        - content: "By preventing participants from contributing to meeting content"
+          isCorrect: false
+          explanation: ""
+        - content: "By generating collaborative notes, decisions, and action items during the meeting"
+          isCorrect: true
+          explanation: ""
+        - content: "By automatically ending meetings when agenda items are complete"
+          isCorrect: false
+          explanation: ""
+        - content: "By assigning meeting roles to all participants"
+          isCorrect: false
+          explanation: ""
+  - content: "A team reviews Facilitator-generated notes and action items after a meeting before sharing them with stakeholders. Why is this an important step?"
+    choices:
+        - content: "To replace future meetings"
+          isCorrect: false
+          explanation: ""
+        - content: "To prevent participants from accessing meeting content"
+          isCorrect: false
+          explanation: ""
+        - content: "To ensure meeting outcomes accurately reflect the discussion"
+          isCorrect: true
+          explanation: ""
+        - content: "To automatically close all action items"
+          isCorrect: false
+          explanation: ""

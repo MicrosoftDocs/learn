@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Prompts
   description: Submitting clear, specific prompts produces better generative AI results.
-  author: sherzyang
-  ms.author: sheryang
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.date: 10/04/2025
   ms.topic: unit
   ms.collection:

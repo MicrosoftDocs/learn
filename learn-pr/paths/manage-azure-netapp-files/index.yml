@@ -34,5 +34,6 @@ modules:
   - learn.azure.manage-nfs-volumes
   - learn.azure.manage-smb-volumes
   - learn.azure.manage-dual-volumes
+  - learn.azure.manage-volume-access
 trophy:
   uid: learn.azure.managing-azure-netapp-files.trophy
