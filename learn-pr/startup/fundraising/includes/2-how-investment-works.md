@@ -88,7 +88,7 @@ The riskier an investment, the higher the rate of return an investor should expe
 
 Generally speaking, at the low end of the risk-return spectrum are investments such as government bonds. Property and listed stocks are in the middle. Startups are at the top.
 
-It's estimated that more than [90 percent of all startups fail](https://www.investopedia.com/articles/personal-finance/040915/how-many-startups-fail-and-why.asp?azure-portal=true) and around [70 percent of seed-funded startups fail](https://www.alleywatch.com/2018/06/tracking-startup-progress-through-matriculation/?azure-portal=true). So a seed-stage investor who invests in 10 startups can only expect three of those startups to succeed.
+It's estimated that more than [90 percent of all startups fail](https://www.cbinsights.com/research/report/startup-failure-reasons-top/) and around [70 percent of seed-funded startups fail](https://www.alleywatch.com/2018/06/tracking-startup-progress-through-matriculation/?azure-portal=true). So a seed-stage investor who invests in 10 startups can only expect three of those startups to succeed.
 
 Experienced investors have no problem with accepting risk, but only if they can see the potential for a large return to compensate them for all the investments that didn't make it.
 
