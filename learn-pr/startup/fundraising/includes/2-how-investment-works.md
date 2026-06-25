@@ -54,7 +54,7 @@ It's important to separate the concepts of economic interest and control. As a s
 
 This change doesn't necessarily mean they lose control over the company. An investor can have a significant economic interest in the company while having only a modest degree of control over it, but they still benefit financially when the company is successful.
 
-By way of example, Mark Zuckerberg retains significant control over Meta (previously Facebook). He holds around 58 percent of voting stock, despite having raised billions of dollars from investors and being diluted to a minority shareholding with [less than 20 percent of the company's total stock](https://www.investopedia.com/articles/insights/082216/top-9-shareholders-facebook-fb.asp?azure-portal=true).
+By way of example, Mark Zuckerberg retains significant control over Meta (previously Facebook). He holds around 58 percent of voting stock, despite having raised billions of dollars from investors and being diluted to a minority shareholding with [less than 20 percent of the company's total stock](https://investor.atmeta.com/home/default.aspx).
 
 ## Funding rounds
 
