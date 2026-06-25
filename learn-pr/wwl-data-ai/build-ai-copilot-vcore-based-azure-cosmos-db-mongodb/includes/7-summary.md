@@ -7,4 +7,4 @@ Additional reading:
 - [What are Embeddings?](/semantic-kernel/memories/embeddings)
 - [Retrieval Augmented Generation (RAG) in Azure AI Search](/azure/search/retrieval-augmented-generation-overview)
 - [Understand embeddings in Azure OpenAI Service](/azure/ai-services/openai/concepts/understand-embeddings)
-- [Vector Database in Azure Cosmos DB for MongoDB vCore](/azure/cosmos-db/vector-search)
+- [Vector Database in Azure Cosmos DB for MongoDB vCore](/azure/cosmos-db/mongodb/vcore/vector-search)
