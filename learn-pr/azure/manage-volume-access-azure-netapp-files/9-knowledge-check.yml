@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-volume-access.knowledge-check
+title: Module assessment
+metadata:
+  unitType: knowledge_check
+  title: Module assessment
+  description: Test your knowledge of managing volume access in Azure NetApp Files.
+  ms.date: 06/02/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  questions:
+    - content: "Which of the following commands can be used to change the ownership mode of files and directories in NFS and dual-protocol volumes?"
+      choices:
+        - content: "chown"
+          isCorrect: true
+          explanation: "Correct. The chown command is used to change the ownership mode of files and directories in NFS and dual-protocol volumes in Azure NetApp Files."
+        - content: "chmod"
+          isCorrect: false
+          explanation: "Incorrect. chmod is used to change the permissions of files and directories, not the ownership mode."
+        - content: "ls"
+          isCorrect: false
+          explanation: "Incorrect. ls is used to list files and directories."
+        - content: "grep"
+          isCorrect: false
+          explanation: "Incorrect. grep is used for searching text patterns within files."
+    - content: "Which feature of Azure Virtual WAN can be utilized to optimize connectivity between branch offices and Azure NetApp Files?"
+      choices:
+        - content: "Virtual Hub"
+          isCorrect: true
+          explanation: "Correct. The Virtual Hub feature of Azure Virtual WAN acts as a central hub for network connectivity, providing secure and optimized connectivity options for branch offices to access Azure services, including Azure NetApp Files."
+        - content: "ExpressRoute"
+          isCorrect: false
+          explanation: "Incorrect. ExpressRoute is a separate connectivity option for private connections between on-premises networks and Azure, but it doesn't specifically optimize connectivity for Azure NetApp Files."
+        - content: "VPN Gateway"
+          isCorrect: false
+          explanation: "Incorrect. VPN Gateway is used to establish secure VPN connections, but it doesn't directly optimize connectivity for Azure NetApp Files."
+        - content: "Traffic Analytics"
+          isCorrect: false
+          explanation: "Incorrect. Traffic Analytics is a monitoring feature that provides insights into network traffic patterns, but it doesn't optimize connectivity for Azure NetApp Files."
+    - content: "An administrator is configuring an NFS volume in Azure NetApp Files and wants to allow only specific client IP addresses to access the volume with read-only permissions. Which export policy configuration option should they modify to achieve this?"
+      choices:
+        - content: "Index"
+          isCorrect: false
+          explanation: "Incorrect. The Index specifies the order in which export policy rules are evaluated, not which clients can access the volume."
+        - content: "Root Access"
+          isCorrect: false
+          explanation: "Incorrect. Root Access controls whether the root account can access the volume, not which clients are allowed."
+        - content: "Allowed Clients"
+          isCorrect: true
+          explanation: "Correct. The Allowed Clients field is used to specify IP addresses, CIDR ranges, or a list of client systems that can access the volume."
+        - content: "Chown Mode"
+          isCorrect: false
+          explanation: "Incorrect. Chown Mode determines whether users can change file ownership, not access permissions for client systems."
