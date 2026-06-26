@@ -23,4 +23,4 @@ Without regular updates and security patches, devices face higher exposure to vu
 
 #### Disclaimer 
 
-Microsoft commissioned study delivered by Forrester Consulting [“The Total Economic Impact™ of Windows 11 Pro Devices”, December 2022](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Vrvx). Note, quantified benefits reflect results over three years combined into a single composite organization that generates $1 billion in annual revenue, has 2,000 employees, refreshes hardware on a four-year cycle, and migrates the entirety of its workforce to Windows 11 devices.
+Microsoft commissioned study delivered by Forrester Consulting [“The Total Economic Impact™ of Windows 11 Pro Devices”, December 2022](https://tools.totaleconomicimpact.com/go/microsoft/Windows11Devices/docs/MicrosoftWindows11Devices.pdf). Note, quantified benefits reflect results over three years combined into a single composite organization that generates $1 billion in annual revenue, has 2,000 employees, refreshes hardware on a four-year cycle, and migrates the entirety of its workforce to Windows 11 devices.
