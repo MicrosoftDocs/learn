@@ -16,7 +16,7 @@ Here's a summary of what you learned:
   - [United States](https://www.uspto.gov/trademarks/search?azure-portal=true)
   - [Canada](https://www.ic.gc.ca/app/opic-cipo/trdmrks/srch/home?azure-portal=true)
   - [United Kingdom](https://www.gov.uk/search-for-trademark?azure-portal=true)
-  - [Europe](https://euipo.europa.eu/ohimportal/en/search-availability?azure-portal=true)
+  - [Europe](https://euipo.europa.eu/eSearch/)
   - [Australia](https://search.ipaustralia.gov.au/trademarks/search/quick?azure-portal=true)
 
 - [Namechk](https://namechk.com/?azure-portal=true): a tool for quickly checking the availability of domains and social accounts

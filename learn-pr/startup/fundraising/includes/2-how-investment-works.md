@@ -54,7 +54,7 @@ It's important to separate the concepts of economic interest and control. As a s
 
 This change doesn't necessarily mean they lose control over the company. An investor can have a significant economic interest in the company while having only a modest degree of control over it, but they still benefit financially when the company is successful.
 
-By way of example, Mark Zuckerberg retains significant control over Meta (previously Facebook). He holds around 58 percent of voting stock, despite having raised billions of dollars from investors and being diluted to a minority shareholding with [less than 20 percent of the company's total stock](https://www.investopedia.com/articles/insights/082216/top-9-shareholders-facebook-fb.asp?azure-portal=true).
+By way of example, Mark Zuckerberg retains significant control over Meta (previously Facebook). He holds around 58 percent of voting stock, despite having raised billions of dollars from investors and being diluted to a minority shareholding with [less than 20 percent of the company's total stock](https://investor.atmeta.com/home/default.aspx).
 
 ## Funding rounds
 
@@ -88,7 +88,7 @@ The riskier an investment, the higher the rate of return an investor should expe
 
 Generally speaking, at the low end of the risk-return spectrum are investments such as government bonds. Property and listed stocks are in the middle. Startups are at the top.
 
-It's estimated that more than [90 percent of all startups fail](https://www.investopedia.com/articles/personal-finance/040915/how-many-startups-fail-and-why.asp?azure-portal=true) and around [70 percent of seed-funded startups fail](https://www.alleywatch.com/2018/06/tracking-startup-progress-through-matriculation/?azure-portal=true). So a seed-stage investor who invests in 10 startups can only expect three of those startups to succeed.
+It's estimated that more than [90 percent of all startups fail](https://www.cbinsights.com/research/report/startup-failure-reasons-top/) and around [70 percent of seed-funded startups fail](https://www.alleywatch.com/2018/06/tracking-startup-progress-through-matriculation/?azure-portal=true). So a seed-stage investor who invests in 10 startups can only expect three of those startups to succeed.
 
 Experienced investors have no problem with accepting risk, but only if they can see the potential for a large return to compensate them for all the investments that didn't make it.
 
