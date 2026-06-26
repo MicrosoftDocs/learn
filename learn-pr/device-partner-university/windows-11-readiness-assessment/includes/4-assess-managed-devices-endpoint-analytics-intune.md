@@ -1,4 +1,4 @@
-For organizations that use Microsoft Intune, the most efficient way to evaluate device readiness for Windows 11 is through [Microsoft Intune's Endpoint Analytics](/intune/analytics/?pivots=intune).  
+For organizations that use Microsoft Intune, the most efficient way to evaluate device readiness for Windows 11 is through [Microsoft Intune's Endpoint Analytics](/intune/endpoint-analytics/?pivots=intune).  
 
 This tool provides centralized reporting helping IT administrators quickly identify which devices meet hardware requirements and which may need upgrades or replacement.
 

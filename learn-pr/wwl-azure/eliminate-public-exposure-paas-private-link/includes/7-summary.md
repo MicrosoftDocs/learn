@@ -5,5 +5,5 @@ In this module, you addressed Contoso's critical pen test finding by eliminating
 - [Azure Private Link overview](/azure/private-link/private-link-overview)
 - [Private endpoint DNS configuration](/azure/private-link/private-endpoint-dns)
 - [Azure Private Link Service](/azure/private-link/private-link-service-overview)
-- [Azure Policy built-in definitions for Private Link](/azure/private-link/azure-policy-overview-private-link)
+- [Azure Policy built-in definitions for Private Link](/azure/networking/policy-reference)
 - [Microsoft Defender for Cloud network recommendations](/azure/defender-for-cloud/recommendations-reference-networking)

@@ -1,0 +1,167 @@
+### YamlMime:ModuleUnit
+
+uid: learn.dpu.agent-in-settings.knowledge-check
+
+title: Knowledge check
+
+metadata:
+
+  title: Knowledge Check
+
+  description: Check your understanding of Agent in Settings on Copilot+ PCs.
+
+  ms.date: 06/25/2026
+
+  author: Stephanie-Rosenzweig
+
+  ms.author: v-stephanier
+
+  ms.topic: unit
+
+durationInMinutes: 5
+
+quiz:
+
+  title: Check your knowledge
+
+  questions:
+
+  - content: "What is the primary purpose of Agent in Settings on Copilot+ PCs?"
+
+    choices:
+
+    - content: "To automatically update all system settings in the background"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Agent in Settings doesn't automatically update system settings without user input."
+
+    - content: "To help users find and change settings by describing what they want in natural language"
+
+      isCorrect: true
+
+      explanation: "Correct. Agent in Settings allows users to describe what they want to do and receive recommendations or apply changes."
+
+    - content: "To replace the Windows Settings app entirely"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Agent in Settings enhances the Settings experience but doesn't replace it."
+
+    - content: "To manage installed applications only"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Agent in Settings focuses on system settings, not just applications."
+
+  - content: "How do users interact with Agent in Settings?"
+
+    choices:
+
+    - content: "By selecting predefined buttons only"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Users can enter free-form natural language queries."
+
+    - content: "By typing what they want to do into the Settings search box"
+
+      isCorrect: true
+
+      explanation: "Correct. Users describe what they want to do in the Settings search box, and the agent provides relevant suggestions."
+
+    - content: "By opening a separate Copilot app"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Agent in Settings is built directly into the Settings experience."
+
+    - content: "By running a command in PowerShell"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Agent in Settings doesn't require command-line input."
+
+  - content: "What must happen before Agent in Settings applies a setting change?"
+
+    choices:
+
+    - content: "The agent automatically applies changes after suggesting them"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Changes aren't applied automatically."
+
+    - content: "An administrator must approve every request"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Administrator control exists, but user approval is what triggers the change."
+
+    - content: "The user must explicitly choose to apply the change"
+
+      isCorrect: true
+
+      explanation: "Correct. The user remains in control and must choose to apply the change before it's made."
+
+    - content: "The system must restart first"
+
+      isCorrect: false
+
+      explanation: "Incorrect. A restart isn't required before applying most changes."
+
+  - content: "Which of the following best demonstrates how Agent in Settings is used in real scenarios?"
+
+    choices:
+
+    - content: "Writing a document in Word"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Agent in Settings is used for system settings, not document creation."
+
+    - content: "Describing what you want to do, such as connecting a Bluetooth device or troubleshooting a microphone issue"
+
+      isCorrect: true
+
+      explanation: "Correct. Agent in Settings helps users describe what they want in natural language to find and adjust settings."
+
+    - content: "Installing and managing applications"
+
+      isCorrect: false
+
+      explanation: "Incorrect. This isn't the primary function of Agent in Settings."
+
+    - content: "Running system commands in PowerShell"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Agent in Settings doesn't require command-line interaction."
+
+  - content: "On which type of device is Agent in Settings currently available?"
+
+    choices:
+
+    - content: "All Windows 10 devices"
+
+      isCorrect: false
+
+      explanation: "Incorrect. The feature isn't available on Windows 10."
+
+    - content: "All Windows 11 devices regardless of hardware"
+
+      isCorrect: false
+
+      explanation: "Incorrect. The feature requires specific hardware capabilities."
+
+    - content: "Supported Copilot+ PCs running Windows 11 version 24H2 or later"
+
+      isCorrect: true
+
+      explanation: "Correct. Agent in Settings is available on supported Copilot+ PCs that meet the documented requirements."
+
+    - content: "Only cloud-based virtual machines"
+
+      isCorrect: false
+
+      explanation: "Incorrect. The feature is designed for supported Windows PCs, not just virtual environments."

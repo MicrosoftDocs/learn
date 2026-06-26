@@ -21,5 +21,5 @@ With these skills, you can plan and execute a structured, end-to-end storage mig
 ## Learn more
 
 - [Azure Storage migration overview](/azure/storage/common/storage-migration-overview)
-- [Azure Storage Mover documentation](/azure/storage-mover/overview)
+- [Azure Storage Mover documentation](/azure/storage-mover/service-overview)
 - [Azure Files planning guide](/azure/storage/files/storage-files-planning)

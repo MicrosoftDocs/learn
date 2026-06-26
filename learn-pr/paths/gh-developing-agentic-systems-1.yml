@@ -33,7 +33,7 @@ modules:
 levels:
   - beginner
   - intermediate
-iconUrl: /training/achievements/agentic-github-1
+iconUrl: /training/achievements/agentic-github-1.svg
 prerequisites: |
   - A [GitHub](https://github.com) account
   - Basic understanding of AI fundamentals

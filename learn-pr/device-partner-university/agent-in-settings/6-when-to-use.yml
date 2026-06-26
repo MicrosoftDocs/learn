@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.agent-in-settings.when-to-use
+title: When to use Agent in Settings
+metadata:
+  title: When to Use Agent in Settings
+  description: This content is part of the "Personalize your PC faster with Agent in Settings" module.
+  ms.date: 06/25/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-when-to-use.md)]

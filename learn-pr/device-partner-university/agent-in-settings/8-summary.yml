@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.agent-in-settings.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Personalize your PC faster with Agent in Settings" module.
+  ms.date: 06/25/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

@@ -65,7 +65,7 @@ Key security features include:
 To maintain a secure, efficient, and productive environment, IT leaders should:
 
 - **Upgrade to Windows 11 Pro** to ensure continued security updates, feature improvements, and Microsoft 365 compatibility.  
-- **Assess device eligibility** using tools like [PC Health Check](https://support.microsoft.com/windows/how-to-use-the-pc-health-check-app-9c8abd9b-03ba-4e67-81ef-36f37caa7844) or [Endpoint Analytics](/intune/analytics/?h) where hardware doesn’t meet Windows 11 standards—consider Surface devices to simplify deployment and enable modern AI experiences.  
+- **Assess device eligibility** using tools like [PC Health Check](https://support.microsoft.com/windows/how-to-use-the-pc-health-check-app-9c8abd9b-03ba-4e67-81ef-36f37caa7844) or [Endpoint Analytics](/intune/endpoint-analytics) where hardware doesn’t meet Windows 11 standards—consider Surface devices to simplify deployment and enable modern AI experiences.  
 - **Leverage Microsoft deployment resources**, including [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), [Windows Autopilot](/autopilot/windows-autopilot), and [FastTrack](/microsoft-365/fasttrack/introduction#what-is-fasttrack-for-microsoft-365) for guided migration support.
 - **Use temporary bridge solutions** through the [Extended Security Updates](/windows/whats-new/extended-security-updates) program for certain editions of Windows 10. This provides temporary protection while transitioning to Windows 11, but it should be used only as a short-term bridge, not a long-term solution.
 

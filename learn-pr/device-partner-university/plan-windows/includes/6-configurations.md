@@ -60,7 +60,7 @@ Are there any old or conflicting policies? If you have a hybrid environment pay 
 >
 > This is a good opportunity to review all your existing policies and determine their relevance. If possible, plan to create fresh policies with the settings you need rather than reusing old policy configurations.
 
-Microsoft Intune is regularly updated to support new Windows 11 features. However, if you need settings that aren't already available in Intune, it’s possible to import them. Every Windows 11 feature update has a supporting administrative template (ADMX), most of which can be imported into your environment to support new features of the operating system. The ADMX files can be obtained from the Microsoft Download Center, such as the template for [Windows 11 2024 (24H2)](/download/details.aspx?id=106254). Review whether any ADMX-based settings need to be imported into Microsoft Intune for cloud-native management.
+Microsoft Intune is regularly updated to support new Windows 11 features. However, if you need settings that aren't already available in Intune, it’s possible to import them. Every Windows 11 feature update has a supporting administrative template (ADMX), most of which can be imported into your environment to support new features of the operating system. The ADMX files can be obtained from the Microsoft Download Center, such as the template for [Windows 11 2024 (24H2)](https://www.microsoft.com/download/details.aspx?id=106254). Review whether any ADMX-based settings need to be imported into Microsoft Intune for cloud-native management.
 
 > [!NOTE]
 >

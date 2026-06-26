@@ -41,7 +41,7 @@ The module also covered advanced cooling techniques, including waste heat reuse 
 - [FutureBridge: Biomimicry in datacenter design](https://netzero-events.com/biomimicry-in-data-center-design-learning-from-nature-efficiency/)
 - [Datacenter Dynamics: Google claims it replenishes 120 percent of the water it uses by 2030](https://www.datacenterdynamics.com/en/news/google-claims-it-will-replenish-120-percent-of-the-water-it-uses-by-2030/)
 - [EY: How to enable datacenter growth and advance sustainability simultaneously](https://www.ey.com/en_us/data-centers/enable-data-center-growth-and-advance-sustainability)
-- [Jacobs: Driving sustainability in datacenters](https://www.jacobs.com/sites/default/files/2023-10/wp_-_driving_sustainable_data_centres_--_2023_05_17.pdf)
+- [Jacobs: Driving sustainability in datacenters](https://www.jacobs.com/insights/report/driving-sustainability-data-centers)
 - [World Economic Forum: Six ways datacentres can cut their emissions-without compromising the AI boom](https://www.weforum.org/stories/2025/01/6-ways-data-centres-can-cut-emissions/)
 - [MIT: The multifaceted challenge of powering AI](https://news.mit.edu/2025/multifaceted-challenge-of-powering-ai-0121)
 - [MIT Management Sloan School: AI has high datacenter energy costs-but there are solutions](https://mitsloan.mit.edu/ideas-made-to-matter/ai-has-high-data-center-energy-costs-there-are-solutions)

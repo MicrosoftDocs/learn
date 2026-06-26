@@ -18,5 +18,5 @@ In this module, you addressed Contoso Manufacturing's disk encryption compliance
 - [Encryption at host – end-to-end encryption for VM data](/azure/virtual-machines/disk-encryption)
 - [Migrate from Azure Disk Encryption to encryption at host](/azure/virtual-machines/disk-encryption-migrate)
 - [Confidential VM overview](/azure/confidential-computing/confidential-vm-overview)
-- [Customer-managed keys for Azure managed disks](/azure/virtual-machines/disk-encryption-customer-managed-keys)
+- [Customer-managed keys for Azure managed disks](/azure/virtual-machines/disk-encryption-overview)
 - [Azure Policy built-in definitions for Azure Virtual Machines](/azure/virtual-machines/policy-reference)
