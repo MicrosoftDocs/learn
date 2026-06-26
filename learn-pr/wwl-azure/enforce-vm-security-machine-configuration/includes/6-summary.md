@@ -19,6 +19,6 @@ Factory servers that were vulnerable to configuration drift, weak OS settings, a
 ## Learn more
 
 - [Azure Machine Configuration overview](/azure/governance/machine-configuration/overview)
-- [Author a custom machine configuration](/azure/governance/machine-configuration/how-to/create-configuration)
+- [Author a custom machine configuration](/azure/governance/machine-configuration/overview/01-overview-concepts)
 - [Built-in machine configuration policies](/azure/governance/policy/samples/built-in-policies#guest-configuration)
 - [OS configuration assessment in Defender for Servers](/azure/defender-for-cloud/operating-system-misconfiguration)

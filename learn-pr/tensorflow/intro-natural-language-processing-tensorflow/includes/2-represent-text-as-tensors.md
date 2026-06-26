@@ -11,7 +11,7 @@ We can use different approaches when representing text:
 
 ## Text classification task
 
-In this module, we start with a simple text classification task based on the **[AG_NEWS](http://www.di.unipi.it/~gulli/AG_corpus_of_news_articles.html)** dataset, originally introduced by Zhang et al. (2015) in [*Character-level Convolutional Networks for Text Classification*](https://papers.nips.cc/paper/2015/hash/250cf8b51c773f3f8dc8b4be867a9a02-Abstract.html): we classify news headlines into one of four categories: World, Sports, Business, and Sci/Tech. To load the dataset, we use the **[TensorFlow Datasets](https://www.tensorflow.org/datasets)** API. You can do this with the following code:
+In this module, we start with a simple text classification task based on the **[AG_NEWS](http://groups.di.unipi.it/~gulli/AG_corpus_of_news_articles.html)** dataset, originally introduced by Zhang et al. (2015) in [*Character-level Convolutional Networks for Text Classification*](https://papers.nips.cc/paper/2015/hash/250cf8b51c773f3f8dc8b4be867a9a02-Abstract.html): we classify news headlines into one of four categories: World, Sports, Business, and Sci/Tech. To load the dataset, we use the **[TensorFlow Datasets](https://www.tensorflow.org/datasets)** API. You can do this with the following code:
 
 ```python
 import tensorflow as tf

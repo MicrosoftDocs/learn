@@ -14,6 +14,6 @@ These patterns collectively enable production agent platforms that scale to ente
 
 - [A2A Protocol Specification](https://a2a.dev) - Full technical specification for the Agent-to-Agent protocol
 - [Azure Cosmos DB Documentation](https://learn.microsoft.com/azure/cosmos-db/) - Comprehensive guide to distributed state management with Cosmos DB
-- [Azure Managed Redis](https://learn.microsoft.com/azure/redis/overview) - Redis usage patterns for caching and pub/sub messaging
-- [Multitenant Applications in Azure](https://learn.microsoft.com/azure/architecture/guide/multitenant/overview) - Architectural patterns for tenant isolation
-- [Distributed Transactions in Cosmos DB](https://learn.microsoft.com/azure/cosmos-db/nosql/transactional-batch) - ACID guarantees and optimistic concurrency patterns
+- [Azure Managed Redis](/azure/redis/overview) - Redis usage patterns for caching and pub/sub messaging
+- [Multitenant Applications in Azure](/azure/architecture/guide/multitenant/overview) - Architectural patterns for tenant isolation
+- [Distributed Transactions in Cosmos DB](/azure/cosmos-db/transactional-batch) - ACID guarantees and optimistic concurrency patterns

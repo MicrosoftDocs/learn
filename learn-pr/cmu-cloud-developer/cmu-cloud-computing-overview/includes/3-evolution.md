@@ -51,10 +51,10 @@ Programming models for clouds give users the flexibility to express parallel pro
 
 1. _Simson L. Garfinkel (1999). [Architects of the Information Society: Thirty-Five Years of the Laboratory for Computer Science at MIT Press](https://mitpress.mit.edu/books/architects-information-society)_
 2. _Douglas J. Parkhill (1966). [The Challenge of the Computer Utility](https://www.worldcat.org/title/challenge-of-the-computer-utility/oclc/608749062) Addison-Wesley Publishing Company, Reading, MA_
-3. _Michelle Bailey (2009). [The Economics of Virtualization: Moving Toward an Application-Based Cost Model VMware Sponsored IDC Whitepaper](https://docplayer.net/8213094-White-paper-the-economics-of-virtualization-moving-toward-an-application-based-cost-model.html)_
+3. _Michelle Bailey (2009). [The Economics of Virtualization: Moving Toward an Application-Based Cost Model VMware Sponsored IDC Whitepaper](https://www.yumpu.com/en/document/read/6801250/white-paper-the-economics-of-virtualization-moving-vmware)_
 
 ***
 
 [^1]: <https://mitpress.mit.edu/books/architects-information-society> "Simson L. Garfinkel (1999). *Architects of the Information Society: Thirty-Five Years of the Laboratory for Computer Science at MIT Press*"
 [^2]: <https://www.worldcat.org/title/challenge-of-the-computer-utility/oclc/608749062> "Douglas J. Parkhill (1966). *The Challenge of the Computer Utility* Addison-Wesley Publishing Company, Reading, MA"
-[^3]: <https://docplayer.net/8213094-White-paper-the-economics-of-virtualization-moving-toward-an-application-based-cost-model.html> "Michelle Bailey (2009). *The Economics of Virtualization: Moving Toward an Application-Based Cost Model VMware Sponsored IDC Whitepaper*"
+[^3]: <https://www.yumpu.com/en/document/read/6801250/white-paper-the-economics-of-virtualization-moving-vmware> "Michelle Bailey (2009). *The Economics of Virtualization: Moving Toward an Application-Based Cost Model VMware Sponsored IDC Whitepaper*"
