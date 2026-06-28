@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  zone_pivot_groups: video-or-text
 durationInMinutes: 4
 content: |
   [!include[](includes/5-review-azure-cognitive-schema.md)]
