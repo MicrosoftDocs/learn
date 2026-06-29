@@ -10,4 +10,4 @@ Now, it's time to try translating text using the Azure Translator service. In th
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2269316&clcid=0x409)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://learn.microsoft.com/)
