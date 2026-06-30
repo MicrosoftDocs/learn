@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.passwordless-authentication.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Replace passwords with secure authentication methods" module.
+  ms.date: 06/25/2026
+  author: sheridan-connor
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why are passwords considered a weak form of authentication?"
+    choices:
+        - content: "They rely on shared knowledge that can be stolen or reused"
+          isCorrect: true
+          explanation: ""
+        - content: "They require biometric verification"
+          isCorrect: false
+          explanation: ""
+        - content: "They're stored only on secure devices"
+          isCorrect: false
+          explanation: ""
+        - content: "They automatically verify a user’s identity"
+          isCorrect: false
+          explanation: ""
+  - content: "What does passwordless authentication use instead of passwords to verify identity?"
+    choices:
+        - content: "Shared secrets between users and systems"
+          isCorrect: false
+          explanation: ""
+        - content: "Something the user has or is"
+          isCorrect: true
+          explanation: ""
+        - content: "Repeated password entry across services"
+          isCorrect: false
+          explanation: ""
+        - content: "Email-based password recovery links"
+          isCorrect: false
+          explanation: ""
+  - content: "Which passwordless method is best suited for users who primarily work on a single, trusted device?"
+    choices:
+        - content: "Windows Hello"
+          isCorrect: true
+          explanation: ""
+        - content: "Authenticator app"
+          isCorrect: false
+          explanation: ""
+        - content: "Security keys"
+          isCorrect: false
+          explanation: ""
+        - content: "Credential stuffing"
+          isCorrect: false
+          explanation: ""
+  - content: "How do authenticator apps verify a user during sign-in?"
+    choices:
+        - content: "By requiring the user to enter a stored password"
+          isCorrect: false
+          explanation: ""
+        - content: "By sending a verification request to a mobile device for approval"
+          isCorrect: true
+          explanation: ""
+        - content: "By scanning the user’s fingerprint on any device"
+          isCorrect: false
+          explanation: ""
+        - content: "By automatically granting access without interaction"
+          isCorrect: false
+          explanation: ""
+  - content: "Why are security keys considered highly resistant to phishing attacks?"
+    choices:
+        - content: "They store passwords in encrypted form on servers"
+          isCorrect: false
+          explanation: ""
+        - content: "They require possession of a physical device and user interaction"
+          isCorrect: true
+          explanation: ""
+        - content: "They rely on email verification for every sign-in"
+          isCorrect: false
+          explanation: ""
+        - content: "They allow shared access across multiple users"
+          isCorrect: false
+          explanation: ""
