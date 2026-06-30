@@ -12,5 +12,4 @@ Supplemental Resources:
 - [Azure Cognitive Services](https://aka.ms/cognitiveservices) 
 - [What is Language Understanding (LUIS)?](https://aka.ms/whatisLUIS) 
 - [Microsoft AI Business School](https://aka.ms/AIBS) 
-- [AI-900 study guide](https://aka.ms/ai900studyguide) 
 - [Exam AI-900: Microsoft Azure AI Fundamentals](https://aka.ms/ai900exam) 
