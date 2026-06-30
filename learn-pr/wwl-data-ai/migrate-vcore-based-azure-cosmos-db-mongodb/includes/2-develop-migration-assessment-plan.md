@@ -32,7 +32,7 @@ To help us keep track of our MongoDB resources, it's helpful to create a data es
 
 ### Assess the Premigration
 
-Once you completed your discovery, you need to find out what features your current MongoDB environment uses that the vCore-based Azure Cosmos DB for MongoDB cluster might not support. You also need to know the vCore-based Azure Cosmos DB for MongoDB [cluster tier offerings](/azure/cosmos-db/mongodb/vcore/introduction#low-total-cost-of-ownership-tco). Once you make this assessment, you're able to address those findings as needed during rest of the migration planning. To learn more MongoDB compatibility info, visit the [MongoDB compatibility and feature support with vCore-based Azure Cosmos DB for MongoDB](/azure/cosmos-db/mongodb/vcore/compatibility) documentation.
+Once you completed your discovery, you need to find out what features your current MongoDB environment uses that the vCore-based Azure Cosmos DB for MongoDB cluster might not support. You also need to know the vCore-based Azure Cosmos DB for MongoDB cluster tier offerings. Once you make this assessment, you're able to address those findings as needed during rest of the migration planning. To learn more MongoDB compatibility info, visit the [MongoDB compatibility and feature support with vCore-based Azure Cosmos DB for MongoDB](/azure/cosmos-db/mongodb) documentation.
 
 ### Map the premigration
 
