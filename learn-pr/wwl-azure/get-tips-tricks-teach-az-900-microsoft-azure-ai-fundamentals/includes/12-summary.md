@@ -16,4 +16,3 @@ Supplemental Resources:
 - [Azure Architecture Center](https://aka.ms/azureac)
 - [Azure Community Support](https://aka.ms/azurecommunitysupport)
 - [Exam AZ-900: Microsoft Azure Fundamentals](https://aka.ms/az900exam)
-- [AZ-900 study guide](https://aka.ms/az900studyguide1)
