@@ -7,7 +7,7 @@ These scenarios cover some of the main advantages of implementing AI solutions i
 #### Reduce research and development (R&D) costs
 ![Photograph showing researchers working in a lab.](../media/3-research.jpg)
 
-The pharmaceutical industry deals with a staggering volume of research data, encompassing scientific papers, extensive databases, and experimental findings. Document AI technologies offer substantial benefits by efficiently analyzing and summarizing this wealth of information. For example, AI-driven data analysis has expedited the discovery of potential gene therapy applications, allowing researchers to pinpoint promising genetic targets for specific diseases. Additionally, through generative AI, like Azure OpenAI Services, researchers can engage in natural language conversations to retrieve critical insights from complex research documents.
+The pharmaceutical industry deals with a staggering volume of research data, encompassing scientific papers, extensive databases, and experimental findings. Document AI technologies offer substantial benefits by efficiently analyzing and summarizing this wealth of information. For example, AI-driven data analysis has expedited the discovery of potential gene therapy applications, allowing researchers to pinpoint promising genetic targets for specific diseases. Additionally, through generative AI, like Azure OpenAI Service, researchers can engage in natural language conversations to retrieve critical insights from complex research documents.
 
 #### Facilitate decentralized drug trials 
 ![Photograph showing healthcare worker holding a tablet.](../media/3-lab.jpg)
