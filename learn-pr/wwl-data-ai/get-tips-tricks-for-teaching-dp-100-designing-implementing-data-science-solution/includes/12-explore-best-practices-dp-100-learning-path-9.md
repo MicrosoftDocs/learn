@@ -24,5 +24,5 @@ Learning Path 9 Demo (optional)
 
 Learning Path 9 Labs
 
-- [Lab 9.1: Log and register models with MLflow](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/10-Log-mlflow-models.html)
-- [Lab 9.2: Compare and evaluate models](https://microsoftlearning.github.io/mslearn-azure-ml/)
+- Lab 9.1: Log and register models with MLflow
+- Lab 9.2: Compare and evaluate models
