@@ -2,11 +2,11 @@
 uid: learn.wwl.implement-programmability-objects.knowledge-check
 title: Knowledge check
 metadata:
-  title: Knowledge check
+  title: Knowledge Check
   description: "Test your understanding of SQL Server programmability objects"
-  ms.date: 01/22/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 6/30/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 3
