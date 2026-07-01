@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a77a51a2-67ce-4574-a18a-fbcec18a98b0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 You'll learn how to design and implement various database objects across SQL Server, Azure SQL Database, Azure SQL Managed Instance, and SQL Database in Microsoft Fabric. Proper database object design is fundamental to building high-performance, scalable, and maintainable SQL solutions across these platforms.
 
 As a SQL Developer you probably noticed that database object design decisions are far more permanent than application code. While you can refactor a C# class or rewrite a microservice with minimal impact, changing a table from rowstore to columnstore, retrofitting temporal history tracking, or switching from identity column to sequence objects requires migrations that can lock tables for hours and disrupt production systems.
@@ -31,3 +42,8 @@ Effective database object design directly impacts:
 - **Scalability** - Partitioning enables handling of large datasets efficiently
 
 Let's begin by exploring how to design and implement effective table structures across Microsoft's SQL platforms!
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
