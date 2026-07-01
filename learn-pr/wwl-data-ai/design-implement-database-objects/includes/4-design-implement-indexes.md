@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bafd7e5d-0356-4d0e-9cae-7ba3e344996b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Indexes are data structures that accelerate data retrieval by creating optimized lookup paths to table rows. Without indexes, the database engine must scan every row in a table to find matching records, a full table scan that becomes prohibitively slow as tables grow.
 
 An index works like a book's index: instead of reading every page to find an article, you consult the index to jump directly to relevant pages. The database uses indexes similarly, converting potentially millions of row comparisons into a handful of efficient lookups.
@@ -102,3 +113,5 @@ WHERE object_id = OBJECT_ID('SalesHistory');
 ```
 
 Index selection directly impacts both query performance and writes throughput. Design indexes carefully during initial development to avoid costly rebuilds and performance issues in production.
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b3ca4822-7996-4b5a-b5b9-a9ea3e6909e3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Constraints and sequence objects are design choices that prevent data problems before they happen. A missing foreign key constraint means orphaned records might already exist in your database. Adding sequence objects later to replace identity columns requires changes across all applications. Application code can validate data, but users can bypass it through bulk imports, direct queries, or new applications that skip validation.
 
 Database constraints enforce rules at the engine level, so they always apply. The decisions you make during design, such as which rules to enforce in the database and whether to use identity columns or sequences, affect your data quality for the life of your application.
@@ -174,3 +185,5 @@ ALTER SEQUENCE OrderNumber RESTART WITH 1000;
 This example creates a sequence named `OrderNumber` that starts at 1000, increments by 1, and stops at 999999 without cycling back. The `NEXT VALUE FOR` function retrieves the next available number, either inline during an `INSERT` statement or assigned to a variable before the insert when the application needs to reference the value first. For batch operations that require multiple sequential numbers at once, `sp_sequence_get_range` reserves a block of 100 numbers, returning the first and last values in the range. The `ALTER SEQUENCE` statement resets the sequence back to 1000 when needed.
 
 Constraints are architectural decisions that prevent problems before they occur. A missing `CHECK` constraint allows invalid data to corrupt your database silently. Choosing identity columns when you need cross-table numbering forces application-level workarounds. Constraints defined at the database level protect data quality regardless of which application, tool, or script accesses your database. These decisions shape your data integrity guarantees for the life of your application.
+
+::: zone-end

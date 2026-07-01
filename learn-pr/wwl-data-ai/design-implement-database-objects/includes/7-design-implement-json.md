@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0e8e10a2-eba6-4f1a-ac96-227a9b589c1b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Relational databases work best when every row in a table has the same columns. You define the structure once, and every record follows it. This design works well for data like customers, orders, or invoices where the fields are predictable. But some data varies from record to record. The attributes you need to store depend on the type of item, the source of the data, or choices made by users. Traditional table design forces you to either create many columns that are empty for most rows, or split data across many tables. JSON columns offer another option: store the variable parts as JSON while keeping the predictable parts in regular columns.
 
 For example, an e-commerce product catalog has common fields like product name, price, and category that apply to every item. But a shirt needs size and color, a laptop needs processor speed and screen size, and a book needs author and other attributes. With JSON, you store the common fields as columns and put the category-specific attributes in a JSON column. You can add new product types without changing the table structure.
@@ -98,3 +109,5 @@ Apply these principles when implementing JSON columns:
 - **Balance flexibility with structure** - Keep predictable data in regular columns and use JSON only for the variable parts.
 
 JSON columns provide schema flexibility for variable data while maintaining SQL query capabilities, but should complement rather than replace relational design for structured data.
+
+::: zone-end

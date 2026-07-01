@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=04a72f03-e05e-4f23-bbd8-86dba02d9db4]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Partitioning decisions are nearly permanent. A poorly chosen partition key makes performance worse than an unpartitioned table, and repartitioning a multi-terabyte table requires rebuilding it entirely with hours of downtime. The partition key and index alignment you choose during design determine whether partitioning improves your system or creates maintenance nightmares you can't easily undo.
 
 [Table partitioning](/sql/relational-databases/partitions/partitioned-tables-and-indexes?azure-portal=true) divides large tables into smaller, more manageable pieces (partitions) while keeping them as a single logical table. Your application sees one table, but the database engine manages multiple physical segments that can be independently maintained, archived, or queried.
@@ -202,3 +213,5 @@ Following best practices helps you avoid common partitioning mistakes that are d
 - **Include partition key in primary key**: Required for clustered index alignment on the partition scheme
 
 Partitioning requires careful planning. The partition key and index alignment you choose determine whether you gain performance or create complexity. When implemented correctly, partitioning transforms large table management through faster queries, efficient archival, and simplified maintenance.
+
+::: zone-end

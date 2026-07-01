@@ -2,11 +2,12 @@
 uid: learn.wwl.design-implement-database-objects.design-implement-partitioning
 title: Partition tables for scale
 metadata:
-  title: Partition tables for scale
+  zone_pivot_groups: video-or-text
+  title: Partition Tables for Scale
   description: "Learn how to design and implement partitioning strategies for tables and indexes"
-  ms.date: 02/24/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/01/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 azureSandbox: false
 labModal: false
