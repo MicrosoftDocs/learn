@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.work-smarter-copilot-marketing.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Work smarter with Copilot prompts for marketing professionals" module.
+  ms.date: 07/01/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A marketing professional has completed campaign research and customer interviews and needs to quickly create a structured creative brief before creative production begins. Which tool should they use?"
+    choices:
+        - content: "Copilot in Word"
+          isCorrect: true
+          explanation: "Correct. Copilot in Word helps marketing professionals synthesize research, customer insights, and existing data into a structured creative brief before creative production begins."
+        - content: "Copilot in PowerPoint"
+          isCorrect: false
+          explanation: "Incorrect. Copilot in PowerPoint is used to create a presentation draft from an existing brief."
+        - content: "Improved Windows Search"
+          isCorrect: false
+          explanation: "Incorrect. Improved Windows Search helps locate files and assets using natural language."
+        - content: "Windows Studio Effects"
+          isCorrect: false
+          explanation: "Incorrect. Windows Studio Effects enhances audio and video quality during calls and recordings."
+  - content: "What is the primary purpose of using Copilot in PowerPoint in the workflow described in the module?"
+    choices:
+        - content: "Generate a partner-ready first draft presentation from a creative brief"
+          isCorrect: true
+          explanation: "Correct. Copilot in PowerPoint can take a completed brief and generate a structured first-draft presentation that can be refined and polished."
+        - content: "Locate previous campaign assets using natural language"
+          isCorrect: false
+          explanation: "Incorrect. This is a capability of Improved Windows Search."
+        - content: "Rewrite content for a more professional tone"
+          isCorrect: false
+          explanation: "Incorrect. This is an example of using Click to Do."
+        - content: "Restore notification settings after meetings"
+          isCorrect: false
+          explanation: "Incorrect. This is a scenario associated with Agent in Settings."
+  - content: "When is natural language search preferred over traditional filtering in Improved Windows Search?"
+    choices:
+        - content: "When you know the exact file name and metadata"
+          isCorrect: false
+          explanation: "Incorrect. Traditional filtering is better when you know the exact file name or metadata."
+        - content: "When you have a precise date range or folder path"
+          isCorrect: false
+          explanation: "Incorrect. Traditional filtering is recommended when you know a specific date range or folder path."
+        - content: "When you remember the concept or context but not the file name"
+          isCorrect: true
+          explanation: "Correct. Natural language search is useful when you remember the concept or context of the content but not its name."
+        - content: "When you only want to filter by file type"
+          isCorrect: false
+          explanation: "Incorrect. Filtering by file type is an example of when traditional filtering is more appropriate."
+  - content: "Which statement correctly describes Live Captions compared to Teams captions?"
+    choices:
+        - content: "Live Captions works only inside Microsoft Teams meetings"
+          isCorrect: false
+          explanation: "Incorrect. Teams captions are meeting-specific, while Live Captions works device-wide."
+        - content: "Live Captions provides device-wide captioning for audio on the PC"
+          isCorrect: true
+          explanation: "Correct. Live Captions is a device-wide accessibility feature that captions audio across the PC."
+        - content: "Live Captions generates meeting transcripts and recaps"
+          isCorrect: false
+          explanation: "Incorrect. Generating transcripts and recaps is associated with Teams captions."
+        - content: "Live Captions provides speaker identification for participants"
+          isCorrect: false
+          explanation: "Incorrect. Speaker identification is a feature of Teams captions, not Live Captions."
+  - content: "According to the module, when should marketing professionals rely on cloud-powered Copilot in Microsoft 365 apps instead of on-device Copilot+ PC experiences?"
+    choices:
+        - content: "When generating, analyzing, and building marketing assets"
+          isCorrect: true
+          explanation: "Correct. The module recommends using cloud-powered Copilot in Microsoft 365 apps for generating, analyzing, and building marketing assets."
+        - content: "When finding files and adjusting system settings"
+          isCorrect: false
+          explanation: "Incorrect. These are examples of tasks supported by on-device Copilot+ PC experiences."
+        - content: "Only when participating in Teams meetings"
+          isCorrect: false
+          explanation: "Incorrect. The module describes broader uses that include generating, analyzing, and creating content."
+        - content: "Only when working offline"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't state that cloud-powered Copilot should only be used offline."
