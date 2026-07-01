@@ -15,7 +15,7 @@ There are many technologies that you can use to implement a stream processing so
 
 At its simplest, a high-level architecture for stream processing looks like this:
 
-![Diagram of a general stream processing architecture showing events flowing through a source queue, a perpetual query processor, and into a sink.](../media/stream-processing-architecture.png)
+:::image type="content" source="../media/stream-processing-architecture.png" alt-text="Diagram of a general stream processing architecture showing events flowing through a source queue, a perpetual query processor, and into a sink.":::
 
 1. An event generates some data. This might be a signal being emitted by a sensor, a social media message being posted, a log file entry being written, or any other occurrence that results in some digital data.
 
