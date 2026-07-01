@@ -39,7 +39,7 @@ Microsoft supports multiple technologies that you can use to implement real-time
 
 The following services are commonly used to ingest data for stream processing on Azure:
 
-- **Azure Event Hubs**: A data ingestion service you can use to manage queues of event data, to ensure that each event is processed in order, exactly once.
+- **Azure Event Hubs**: A data ingestion service you can use to ingest high volumes of event data. Events within a partition are delivered in order, and Event Hubs guarantees at-least-once delivery.
 
 - **Azure IoT Hub**: A data ingestion service similar to Azure Event Hubs, but optimized to manage event data from **Internet-of-things** (IoT) devices.
 
