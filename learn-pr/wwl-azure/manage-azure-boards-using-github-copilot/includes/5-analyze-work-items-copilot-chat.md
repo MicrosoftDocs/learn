@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e70e4bb5-90f2-45fd-8201-8b57eee832c7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Use Copilot Chat before delegation to evaluate whether backlog items are ready for AI-assisted execution. This step improves quality and reduces churn in pull requests.
 
 ## What to analyze first
@@ -42,3 +53,5 @@ Treat Copilot analysis as planning support, not final truth. Always validate rec
 ## Summary
 
 Copilot Chat helps you evaluate backlog readiness faster, but the goal is decision quality, not automation for its own sake. By using structured prompts and reviewing outputs critically, you can select better delegation candidates, reduce rework, and prepare your team for smoother AI-assisted implementation.
+
+::: zone-end

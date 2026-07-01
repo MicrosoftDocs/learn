@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4252848a-f068-446b-bc8b-2e24ed0392bc]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Request unit (RU) consumption directly impacts the operational cost of your Azure Cosmos DB workloads. Queries that can use indexes consume RUs proportional to the result size, while queries that perform full scans consume RUs proportional to the data size. Strategic indexing reduces query costs while avoiding unnecessary overhead from indexing properties that aren't queried. This unit teaches practical strategies for designing indexing policies that balance query performance with cost efficiency for AI applications.
 
 ## Analyze query patterns before designing indexes
@@ -229,6 +240,8 @@ You can create test scenarios that reflect production patterns:
 1. Adjust indexing policy based on measured results
 
 This empirical approach validates that your indexing strategy achieves the expected cost reduction for your specific workload.
+
+::: zone-end
 
 ## Additional resources
 

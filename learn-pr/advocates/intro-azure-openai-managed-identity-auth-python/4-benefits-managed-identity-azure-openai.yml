@@ -4,10 +4,14 @@ title: Benefits of using a managed identity for Azure OpenAI
 metadata:
   title: Benefits of using a managed identity for Azure OpenAI
   description: Learn about the benefits of using a managed identity for Azure OpenAI.
-  ms.date: 11/11/2024
-  author: sarah-yo
-  ms.author: sayoung
+  ms.date: 05/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-benefits-managed-identity-azure-openai.md)]
+
+
+
+

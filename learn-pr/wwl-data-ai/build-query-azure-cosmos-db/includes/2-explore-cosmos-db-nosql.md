@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=dc9e58d4-95b5-4029-b697-6aa2e3978edb]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB for NoSQL organizes data through a hierarchy of resources that developers must understand to design efficient data architectures. The decisions you make when creating databases and containers directly impact query performance and cost optimization throughout your application's lifecycle. Partition key selection and throughput configuration are among the most important choices. AI applications benefit from understanding these foundational concepts because they determine how data distributes across infrastructure and how efficiently queries execute.
 
 ## Understand the resource hierarchy
@@ -76,6 +87,8 @@ Several factors influence RU consumption:
 - **Cross-partition queries:** Queries that span multiple partitions cost more than single-partition queries
 
 Monitor RU consumption by examining response headers from SDK operations. The `x-ms-request-charge` header contains the RU cost for each operation. Aggregate these metrics to understand your application's throughput patterns and identify expensive operations that might benefit from optimization. Azure Monitor and Cosmos DB insights provide dashboards for tracking RU consumption over time.
+
+::: zone-end
 
 ## Additional resources
 

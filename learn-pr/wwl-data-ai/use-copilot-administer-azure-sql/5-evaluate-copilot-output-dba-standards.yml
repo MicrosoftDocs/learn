@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-copilot-administer-azure-sql.evaluate-copilot-output-dba-standards
+title: Evaluate Copilot output against DBA standards
+metadata:
+  title: Evaluate Copilot Output Against DBA Standards
+  description: Apply a structured validation process to Copilot-generated T-SQL and IaC output—checking for least-privilege, performance baselines, security risks, and naming standards—before deploying to production.
+  ms.date: 06/12/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-evaluate-copilot-output-dba-standards.md)]

@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-cicd-multi-agent-systems-github-actions.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Module assessment."
+  ms.date: 06/01/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "In Fabrikam's multi-agent system, the orchestrator agent depends on the analysis agent's tool schema. After updating the analysis agent to add a new required output field, what must happen before the orchestrator agent proceeds through the pipeline?"
+    choices:
+    - content: "The orchestrator agent's pipeline should proceed independently since the new field is additive and shouldn't affect existing functionality."
+      isCorrect: false
+      explanation: "Adding a new required output field is a breaking change. The orchestrator agent expects a specific schema; if it doesn't handle the new required field, it may fail at runtime. Contract testing must verify compatibility before deployment proceeds."
+    - content: "Contract testing must validate that the orchestrator agent can consume the analysis agent's updated schema, and the analysis agent must be deployed before the orchestrator agent."
+      isCorrect: true
+      explanation: "Contract testing catches schema incompatibilities before they reach production. Deployment order also matters: the dependency (analysis agent) must be deployed and verified first so the orchestrator agent can integrate with the updated schema it depends on."
+    - content: "The analysis agent pipeline should wait for the orchestrator agent pipeline to complete first, since the orchestrator initiates agent calls."
+      isCorrect: false
+      explanation: "The deployment order should follow the dependency direction: deploy the dependencies first, then the agents that depend on them. The analysis agent is a dependency of the orchestrator, so it deploys first."
+  - content: "Fabrikam's canary deployment of the new code review agent routes 10% of requests to the new version. After 24 hours, evaluation scores for the new version drop eight percent below the predeployment baseline. What should the pipeline do?"
+    choices:
+    - content: "Continue the canary rollout while the team investigates—a single 24-hour window may not be statistically representative."
+      isCorrect: false
+      explanation: "Continuing rollout when quality falls below threshold exposes more users to degraded agent performance. Quality gates exist precisely to stop rollout when this happens; investigation should occur against the canary traffic only, not during expanded rollout."
+    - content: "Stop the canary rollout and trigger rollback to the previous stable version, since the quality drop exceeds the defined threshold."
+      isCorrect: true
+      explanation: "Quality gates are deliberate thresholds defined to protect production quality. An eight percent quality drop in 24 hours triggers the automated rollback to protect the 90% of traffic still on the stable version, while the team debugs the canary failure cause."
+    - content: "Switch immediately to 100% traffic on the new version to gather more data points for a statistically valid evaluation."
+      isCorrect: false
+      explanation: "Increasing traffic to a version that's already underperforming increases user impact. Quality-gated rollout works in the opposite direction—reduce exposure when metrics degrade."
+  - content: "After an automated rollback in Fabrikam's multi-agent system, only the security analysis agent was rolled back. The orchestrator and three other agents remain at their newly deployed versions. What determines whether this partial rollback is safe?"
+    choices:
+    - content: "The rolled-back security agent version must still be compatible with the API contracts expected by the agents at their current versions."
+      isCorrect: true
+      explanation: "Partial rollbacks are safe only when the rolled-back version's interface is still compatible with what the other agents (at their current versions) expect. This is why maintaining backward-compatible contracts and mapping version compatibility in the dependency graph is essential."
+    - content: "All agents must be rolled back together to ensure the system returns to a fully consistent prior state."
+      isCorrect: false
+      explanation: "Rolling back all agents when only one is failing is disruptive and negates the deployment work for the other four agents. Partial rollback is designed to target only the failing component while preserving other updates."
+    - content: "A partial rollback is always safe as long as the agent being rolled back is not the orchestrator."
+      isCorrect: false
+      explanation: "Safety depends on API contract compatibility, not the agent role. Any agent—including nonorchestrators—can be a dependency. If the rolled-back version produces outputs incompatible with what dependent agents now expect, the partial rollback breaks the system."

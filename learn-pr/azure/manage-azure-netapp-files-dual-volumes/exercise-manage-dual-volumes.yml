@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-dual-volumes.exercise
+title: Exercise - Manage dual volumes for Azure NetApp Files
+metadata:
+  title: Exercise - Manage dual volumes for Azure NetApp Files
+  description: Hands-on exercise to create a dual-protocol volume in Azure NetApp Files.
+  ms.date: 03/25/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/exercise-manage-dual-volumes.md)]

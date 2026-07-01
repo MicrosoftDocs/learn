@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c3302ec1-6b7e-4a2b-84a4-3b2fe43cdd15]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Managing the container app lifecycle is a day-two skill that supports both cost control and incident response. In an AI solution, you sometimes need to pause a service during an upstream outage, restart after a configuration change, or reduce blast radius while you investigate a failing revision. Azure Container Apps provides lifecycle actions that work alongside revisions and scaling.
 
 > [!NOTE]
@@ -56,6 +67,8 @@ az containerapp revision list \
   --query "[].{name:name,active:properties.active,health:properties.healthState}" \
   -o table
 ```
+
+::: zone-end
 
 ## Additional resources
 

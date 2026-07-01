@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.agent-in-settings.definition
+title: What is Agent in Settings?
+metadata:
+  title: What Is Agent in Settings?
+  description: This content is part of the "Personalize your PC faster with Agent in Settings" module.
+  ms.date: 06/25/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-definition.md)]

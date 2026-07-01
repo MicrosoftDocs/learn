@@ -3,11 +3,11 @@ uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 09/3/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  description: "Learn about the security layers available to protect data in a Microsoft Fabric data warehouse."
+  ms.date: 06/11/2026
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

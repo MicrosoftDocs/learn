@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=02b9e0cc-32cf-410d-aacf-4efbd9d3dcbd]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Blob Storage is a service that enables you to store massive amounts of unstructured data as binary large objects, or *blobs*, in the cloud. Blobs are an efficient way to store data files in a format that's optimized for cloud-based storage, and applications can read and write them by using the Azure blob storage API.
 
 ![Screenshot of an Azure blob storage container with two blobs.](../media/azure-blob-storage.png)
@@ -33,3 +44,5 @@ You can create lifecycle management policies for blobs in a storage account. A l
 Azure Storage also provides built-in redundancy options to keep your data highly available and protected against failures. **Locally redundant storage (LRS)** keeps three copies of your data within a single datacenter. **Zone-redundant storage (ZRS)** spreads copies across three availability zones in the primary region, so your data remains accessible even if one zone goes down. For protection against regional disasters, **geo-redundant storage (GRS)** and **geo-zone-redundant storage (GZRS)** asynchronously replicate your data to a secondary region hundreds of miles away. You can also enable read access to the secondary region (RA-GRS or RA-GZRS) so your application can read data from the secondary region even before a failover occurs.
 
 ![Diagram explaining different redundancy options for blob storage.](../media/azure-storage-redundancy.png)
+
+::: zone-end

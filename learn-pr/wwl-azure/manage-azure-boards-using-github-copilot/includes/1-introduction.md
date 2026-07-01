@@ -1,6 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2154ea6d-27df-4881-b686-a0f00bc2be82]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Modern agile teams increasingly use Azure Boards as their planning system while relying on GitHub Copilot to accelerate implementation. This module shows how to make those tools work together so teams can move faster without losing governance, quality, or visibility.
 
-A common customer scenario we see today is DevOps teams using **Azure DevOps Boards** as the **system of record** for project and work management - planning epics, tracking user stories, managing backlogs, and aligning delivery to business priorities while relying on **GitHub Copilot** as their primary generative AI assistant inside the developer workflow. With the **new integration** between Azure DevOps Boards and GitHub Copilot, these two worlds now come together seamlessly: developers can work in GitHub and their IDE with Copilot while staying fully connected to the work items, acceptance criteria, and priorities defined in Azure Boards. Copilot can surface context from linked work items, helping developers generate more relevant code, tests, and comments that directly map back to tracked requirements, while updates and progress remain visible to project managers in Azure DevOps. The result is a **unified experience** where planning and governance stay centralized in Azure DevOps Boards, AI-powered coding productivity lives in GitHub, and teams no longer have to choose between strong project management and modern, generative AI–driven development—they get both, working together by design.
+A common customer scenario we see today is DevOps teams using **Azure Boards** as the **system of record** for project and work management - planning epics, tracking user stories, managing backlogs, and aligning delivery to business priorities while relying on **GitHub Copilot** as their primary generative AI assistant inside the developer workflow. With the **new integration** between Azure Boards and GitHub Copilot, these two worlds now come together seamlessly: developers can work in GitHub and their IDE with Copilot while staying fully connected to the work items, acceptance criteria, and priorities defined in Azure Boards. Copilot can surface context from linked work items, helping developers generate more relevant code, tests, and comments that directly map back to tracked requirements, while updates and progress remain visible to project managers in Azure DevOps. The result is a **unified experience** where planning and governance stay centralized in Azure Boards, AI-powered coding productivity lives in GitHub, and teams no longer have to choose between strong project management and modern, generative AI–driven development—they get both, working together by design.
 
 ## Why this integration matters
 
@@ -35,4 +43,9 @@ Before you begin, confirm:
 - You understand your team's review and merge policy.
 
 > [!IMPORTANT]
-> To complete this GitHub Copilot training, you must have an active subscription for both Azure DevOps and GitHub Copilot, or you must be assigned to a subscription managed by an organization or enterprise. The GitHub Copilot Free Subscription is not compatible with Azure Boards integration. 
+> To complete this GitHub Copilot training, you must have an active subscription for both Azure DevOps and GitHub Copilot, or you must be assigned to a subscription managed by an organization or enterprise. The GitHub Copilot Free Subscription is not compatible with Azure Boards integration.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

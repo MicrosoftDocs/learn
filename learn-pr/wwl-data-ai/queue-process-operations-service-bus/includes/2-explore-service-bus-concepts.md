@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=59bac501-7358-4afb-93f8-28c03258bb49]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Service Bus is a fully managed enterprise message broker that provides queuing and publish-subscribe capabilities for distributed applications. For AI backends, Service Bus acts as the connective layer between components that produce work (such as API endpoints accepting inference requests) and components that consume work (such as model processors running predictions). Understanding the core concepts and messaging patterns helps you design AI architectures that handle variable latency, traffic spikes, and processing failures without losing requests.
 
 ## What Azure Service Bus provides
@@ -47,6 +58,8 @@ The Standard tier supports queues, topics, and subscriptions with shared broker 
 The Premium tier provides dedicated resources, which means your messaging workload doesn't share compute with other tenants. It supports messages up to 100 MB when using the AMQP protocol (1 MB for HTTP), offers predictable latency, and includes features such as virtual network integration and private endpoints. AI workloads that send large payloads (such as base64-encoded images or serialized embedding vectors) or require predictable submillisecond broker latency benefit from the Premium tier. The Premium tier also supports availability zones for higher reliability.
 
 The Premium tier's larger message size limit (100 MB via AMQP versus 256 KB in Standard) can simplify architectures for AI scenarios that handle medium-sized payloads like document text or small images, allowing you to send payloads directly rather than implementing the claim-check pattern described in a later unit.
+
+::: zone-end
 
 ## Additional resources
 

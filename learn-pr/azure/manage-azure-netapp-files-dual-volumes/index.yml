@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.azure.manage-dual-volumes
+metadata:
+  title: Manage dual volumes in Azure NetApp Files
+  description: Learn how to create and manage dual-protocol volumes with support for LDAP user mapping in Azure NetApp Files.
+  ms.date: 03/25/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Manage dual volumes in Azure NetApp Files
+summary: Create and manage dual-protocol volumes, and configure LDAP user mapping for local NFS access in Azure NetApp Files.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Create Azure NetApp Files dual-protocol volumes
+  - Allow local NFS users with LDAP to access a dual-protocol volume
+prerequisites: |
+  - Manage SMB volumes in Azure NetApp Files
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+  - storage
+units:
+  - learn.azure.manage-dual-volumes.introduction
+  - learn.azure.manage-dual-volumes.create-dual-protocol-volume
+  - learn.azure.manage-dual-volumes.exercise
+  - learn.azure.manage-dual-volumes.knowledge-check
+  - learn.azure.manage-dual-volumes.summary
+badge:
+  uid: learn.azure.manage-dual-volumes.badge

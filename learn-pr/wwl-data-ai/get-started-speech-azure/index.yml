@@ -6,10 +6,10 @@ metadata:
   ms.date: 02/13/2026
   ms.update-cycle: 180-days
   author: wwlpublish
-  ms.author: sheryang
+  ms.author: gmalc
   ms.topic: module
   ms.collection: wwl-ai-copilot
-  ms.service: azure-ai-speech
+  ms.service: azure-speech-foundry-tools
   ai-usage: ai-assisted
 title: Get started with speech in Azure
 summary: Learn how to recognize and synthesize speech using Azure Speech in Foundry Tools.

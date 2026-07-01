@@ -6,8 +6,8 @@ metadata:
   title: Sign in users with Microsoft Authentication Library
   description: In this unit, you will learn how Microsoft Authentication Library enables you to allow users to sign in to a Java web application.
   ms.date: 11/21/2023
-  author: yoshioterada
-  ms.author: yoterada
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java

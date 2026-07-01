@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7e951809-e547-4f1b-bfee-42ccacac9534]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Data processing is simply the conversion of raw data to meaningful information through a process. There are two general ways to process data:
 
 - **Batch processing**, in which multiple data records are collected and stored before being processed together in a single operation.
@@ -73,3 +84,5 @@ The following diagram shows a **lambda architecture**—a common pattern for com
 
 > [!NOTE]
 > Commonly used solution architectures for combined batch and stream data processing include **lambda** and **delta** architectures. The **kappa** architecture is a simpler alternative that eliminates the separate batch layer entirely—treating all data as a continuous stream and replaying it when historical reprocessing is needed. Modern platforms such as Microsoft Fabric and Apache Kafka make kappa-style solutions increasingly practical. Details of these architectures are beyond the scope of this course.
+
+::: zone-end

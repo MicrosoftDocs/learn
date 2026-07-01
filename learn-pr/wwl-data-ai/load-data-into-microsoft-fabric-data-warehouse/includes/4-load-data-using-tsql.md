@@ -1,26 +1,12 @@
-SQL developers or citizen developers, who are often well-versed in the SQL engine and adept at using T-SQL, will find the Warehouse in Microsoft Fabric favorable.
+T-SQL gives you direct control over how data enters your warehouse. Instead of configuring a wizard, you write SQL statements that load files, transform data, and pull from other Fabric assets — all from the SQL editor.
 
-This is because the Warehouse is powered by the same SQL engine they're familiar with, enabling them to perform complex queries and data manipulations. These operations include filtering, sorting, aggregating, and joining data from different tables. The SQL engine’s wide range of functions and operators further allows for sophisticated data analysis and transformations at the database level. 
+To get started, open your warehouse in the Fabric portal and select **New SQL query** from the toolbar. This opens the SQL editor where you can write and run the statements described in this unit.
 
-## Use COPY statement
+## Load files with the COPY statement
 
-The [COPY statement](/sql/t-sql/statements/copy-into-transact-sql?azure-portal=true) serves as the main method for importing data into the Warehouse. It facilitates efficient data ingestion from an external Azure storage account. 
+The COPY statement loads data from external files into a warehouse table. It works with CSV, Parquet, and other file formats stored in Azure Data Lake Storage Gen2, Azure Blob Storage, or OneLake lakehouse folders.
 
-It offers flexibility, allowing you to specify the format of the source file, designate a location for storing rows that are rejected during the import process, skip header rows, among other configurable options.
-
-The option to store rejected rows separately is useful for data cleaning and quality control. It allows you to easily identify and investigate any issues with the data that weren't successfully imported.
-
-To connect to an Azure storage account, you need to use either Shared Access Signature (SAS) or Storage Account Key (SAK).
-
-### Handle error
-
-The option to use a different storage account for the *ERRORFILE* location (`REJECTED_ROW_LOCATION`) allows for better error handling and debugging. It makes it easier to isolate and investigate any issues that occur during the data loading process. *ERRORFILE* only applies to CSV.
-
-### Load multiple files
-
-The ability to specify wildcards and multiple files in the storage location path allows the COPY statement to handle bulk data loading efficiently. This is useful when dealing with large datasets distributed across multiple files.
-
-Multiple file locations can only be specified from the same storage account and container via a comma-separated list.
+A basic COPY statement needs three things: a target table, a file path, and connection credentials. The following example loads CSV files from Azure Blob Storage:
 
 ```sql
 COPY INTO my_table
@@ -33,7 +19,9 @@ WITH (
 )
 ```
 
-The following example shows how to load a PARQUET file.
+Notice the wildcard (``*.csv``) — you can load multiple files in one statement as long as they share the same structure. You can also list multiple paths from the same storage account, separated by commas.
+
+For Parquet files, you can omit the `FILE_TYPE` parameter — Fabric infers the format from the file extension:
 
 ```sql
 COPY INTO test_parquet
@@ -43,22 +31,29 @@ WITH (
 )
 ```
 
-Ensure that all the files have the same structure (that is, same columns in the same order) and that this structure matches the structure of the target table.
+### Authentication options
 
-## Load table from other warehouses and lakehouses
+You'll notice the `CREDENTIAL` parameter in both examples. Every COPY statement needs to authenticate with the source storage — and how you do that depends on where your files are:
 
-You can load data from various data assets in a workspace, such as other warehouses and lakehouses.
+- **Azure storage accounts**: Provide a Shared Access Signature (SAS) or Storage Account Key in the ``CREDENTIAL`` parameter.
+- **OneLake lakehouse folders**: No credential needed — authentication uses your workspace identity automatically.
 
-To reference the data asset, ensure that you use [three-part naming](/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql?azure-portal=true) to combine data from tables on these workspace assets. You can then use `CREATE TABLE AS SELECT` (CTAS) and `INSERT...SELECT` to load the data into the warehouse.
+### Handle rejected rows
 
-| SQL Statement | Description |
+Not every row loads successfully. The ``REJECTED_ROW_LOCATION`` option sends failed rows to a separate storage location instead of failing the entire load. This lets you complete the bulk of your load and investigate problem rows separately. This option only applies to CSV files.
+
+## Load data from other warehouses and lakehouses
+
+Your warehouse isn't the only data asset in a Fabric workspace. You might have other warehouses, lakehouses, or SQL analytics endpoints that contain data you want to bring together. T-SQL lets you query across these assets using three-part naming (``database.schema.table``).
+
+Two patterns handle cross-asset loading:
+
+| SQL statement | When to use it |
 | --- | --- |
-| [**`CREATE TABLE AS SELECT`**](/sql/t-sql/statements/create-table-as-select-azure-sql-data-warehouse?azure-portal=true) | Allows you to create a new table based on the output of a `SELECT` statement. This operation is often used for creating a copy of a table or for transforming and loading the results of complex queries. |
-| [**`INSERT...SELECT`**](/sql/t-sql/statements/insert-transact-sql?azure-portal=true) | Allows you to insert data from one table into another. It’s useful when you want to copy data from one table to another without creating a new table. |
+| **``CREATE TABLE AS SELECT``** (CTAS) | Creates a new table from a query result. Use when you need a new table from transformed or combined data. |
+| **``INSERT...SELECT``** | Inserts rows into an existing table. Use when the target table already exists and you're adding data to it. |
 
-In a scenario where an analyst needs data from both a warehouse and a lakehouse, they can use this feature to combine the data. They can then load this combined data into the warehouse for analysis. This feature is useful when data is distributed across many assets in a workspace.
-
-The following query creates a new table in the `analysis_warehouse` that combines data from the `sales_warehouse` and the `social_lakehouse` using the *product_id* as the common key. The new table can then be used for further analysis.
+The following example creates a new table by joining data from a warehouse and a lakehouse:
 
 ```sql
 CREATE TABLE [analysis_warehouse].[dbo].[combined_data]
@@ -69,14 +64,14 @@ INNER JOIN [social_lakehouse].[dbo].[social_data] social
 ON sales.[product_id] = social.[product_id];
 ``` 
 
-All the Warehouses that share the same workspace are integrated into the same logical SQL server. If you use SQL client tools such as [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?azure-portal=true), you can easily perform a cross-database query like in any SQL Server instance.
+This works because all warehouses in the same workspace share a single SQL connection endpoint. You can reference any of them by name, just like databases on a SQL Server instance.
 
-:::image type="content" border="false" source="../media/4-load-using-ssms.gif" alt-text="Animated GIF showing how to reference other Warehouses in a workspace from SQL Server Management Studio.":::
+### Query from external tools
 
-*MyWarehouse* and *Sales* are both warehouse assets that share the same workspace.
+You can also run cross-database queries from SQL Server Management Studio or other SQL client tools that connect to your Fabric workspace.
 
-If you’re using the object Explorer from the workspace to query your Warehouses, you need to add them explicitly. The warehouses added will also be visible from the Visual query editor.
+:::image type="content" border="false" source="../media/4-load-using-ssms.gif" alt-text="Animated GIF showing how to reference other warehouses in a workspace from SQL Server Management Studio." lightbox="../media/4-load-using-ssms.gif":::
 
-:::image type="content" border="false" source="../media/4-query-using-workspace.gif" alt-text="Animated GIF showing how to query other Warehouses in a workspace from the Fabric workspace.":::
+In the Fabric portal, the SQL editor lets you add warehouses to your object explorer and run queries across them. Select the warehouses you want to include, and they become available in both the object explorer and the visual query editor.
 
-Data can be efficiently loaded into a warehouse in Microsoft Fabric through the COPY statement, or from other warehouses and lakehouses within the same workspace, allowing for seamless data management and analysis.
+:::image type="content" border="false" source="../media/4-query-using-workspace.gif" alt-text="Animated GIF showing how to query other warehouses in a workspace from the Fabric workspace." lightbox="../media/4-query-using-workspace.gif":::

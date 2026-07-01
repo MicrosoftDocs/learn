@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.debug-production-multi-agent-incidents-azure.implement-agent-replay-production-debug
+title: Implement agent replay for production debugging
+metadata:
+  title: Implement Agent Replay for Production Debugging
+  description: "Implement agent replay for production debugging."
+  ms.date: 06/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-implement-agent-replay-production-debug.md)]

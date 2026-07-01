@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=695175ce-6ecd-49c9-b906-ecae02a7913d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Preparation is the biggest success factor for AI-assisted delivery. Before delegating work, verify access, permissions, and baseline project setup across Azure DevOps and GitHub.
 
 ## Prerequisites
@@ -48,3 +59,5 @@ Establishing these basics up front reduces rework later in the flow.
 ## Summary
 
 This section emphasizes that successful AI-assisted delivery depends on establishing the right foundation before delegating work to GitHub Copilot. By securing proper access, aligning permissions across Azure DevOps and GitHub, and ensuring your project infrastructure is well-structured, you enable Copilot to generate relevant suggestions while maintaining security and clarity throughout your development workflow.
+
+::: zone-end

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.click-to-do.impact
+title: Evaluate the impact of Click to Do on productivity
+metadata:
+  title: Evaluate The Impact of Click to Do on Productivity
+  description: This content is part of the "Take action on content with Click to Do" module.
+  ms.date: 06/05/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-impact.md)]

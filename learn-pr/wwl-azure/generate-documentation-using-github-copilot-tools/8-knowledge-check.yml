@@ -79,9 +79,9 @@ quiz:
     - content: "Agent mode provides only high-level overviews of individual files."
       isCorrect: false
       explanation: "Incorrect. Agent mode can analyze the entire project structure and generate detailed documentation across multiple files, not just individual file overviews."
-    - content: "Agent mode requires the @workspace chat participant to analyze the codebase."
+    - content: "Agent mode can only generate documentation for files that are currently open in the editor."
       isCorrect: false
-      explanation: "Incorrect. Chat participants like @workspace aren't available in agent mode. You can add context using #codebase and the Attach Context button instead."
+      explanation: "Incorrect. Agent mode can autonomously explore the entire project structure, reading files across folders regardless of whether they are open in the editor."
   - content: "What is the purpose of generating inline code documentation in software development?"
     choices:
     - content: "To make the code more complex and challenging for other developers."

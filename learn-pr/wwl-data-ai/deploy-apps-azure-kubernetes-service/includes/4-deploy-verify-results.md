@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=23de271d-ab59-47c5-9a3d-f29f8644382e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 After writing your Deployment and Service manifests, deploying to AKS is straightforward. Use `kubectl apply` to send the manifests to your cluster. Kubernetes then reconciles the current state with your desired state by pulling images, launching Pods, creating Services, and assigning public IPs if needed.
 
 Imagine writing your Deployment and Service manifests and saving them as `deployment.yaml` and `service.yaml`. You run `kubectl apply`, and moments later, your AI inference API is running on AKS with a public IP address.
@@ -206,6 +217,8 @@ kubectl describe svc inference-api-service
 - Verify Pod labels match the Service selector: compare `kubectl get pods --show-labels` with the Service's selector
 - Update either the Pod labels or Service selector so they match
 - Ensure the Deployment's Pod template has the correct label matching the Service selector
+
+::: zone-end
 
 ## Additional Resources
 

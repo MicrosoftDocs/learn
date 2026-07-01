@@ -3,15 +3,15 @@ uid: learn.dpu.stay-current-with-windows
 title: Stay current with Windows devices and Microsoft 365 Apps
 metadata:
   title: Stay Current With Windows Devices And Microsoft 365 Apps
-  description: Learn how to plan, prepare for, and deploy Windows and Microsoft 365 Apps.
+  description: Learn how to plan, prepare for, and deploy Windows and Microsoft 365 Apps. 
   ms.date: 04/18/2026
   author: Stephanie-Rosenzweig
   ms.author: v-stephanier
   ms.topic: learning-path
 summary: >
-  Learn how to effectively roll out updates to Windows devices and Microsoft 365 Apps. You can deploy updates faster and support your remote workforce by following a three-phase process: Plan > Prepare > Deploy. This learning path can help you prepare for the Microsoft 365 Certified: Modern Desktop Administrator Associate certification.
+  Learn how to effectively roll out updates to Windows devices and Microsoft 365 Apps. You can deploy updates faster and support your remote workforce by following a three-phase process: Plan > Prepare > Deploy.
 prerequisites: None
-iconUrl: /training/achievements/stay-current-with-windows.svg
+iconUrl: /training/achievements/stay-current-with-windows.svg 
 levels:
   - beginner
 roles:

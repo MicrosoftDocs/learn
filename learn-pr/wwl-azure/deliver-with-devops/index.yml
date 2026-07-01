@@ -4,8 +4,8 @@ metadata:
   title: "Deliver with DevOps"
   description: "Build and run continuous integration and continuous delivery workflows using GitHub Actions."
   ms.date: 02/06/2024
-  author: LuizMacedo
-  ms.author: lumac
+  author: petender
+  ms.author: petender
   ms.topic: module
   ms.service: azure-devops
 title: Deliver with DevOps

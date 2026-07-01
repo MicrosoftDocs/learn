@@ -86,7 +86,7 @@ Active phases for each role might include tasks requiring different levels of in
 - **Consulted:** Individuals or groups whose input and expertise are required before making decisions or taking action
 - **Informed:** People who need to be kept informed about the progress of a task or decision but aren't directly involved in its execution
 
-You as the process manager are accountable for the overall success of deployment, organizing all of the tasks of the deployment. This includes assigning responsible, consulted, and informed people based on their skills to the specific tasks in this phase and the following ones. Use the [Excel RACI matrix template](https://www.microsoft.com/download/details.aspx?id=103388&msockid=0a62a344849c68fe1290b07a85ff6967) or [learn how to make your own](/microsoft-365-life-hacks/organization/making-raci-charts?msockid=0a62a344849c68fe1290b07a85ff6967) and complete it throughout this planning stage.
+You as the process manager are accountable for the overall success of deployment, organizing all of the tasks of the deployment. This includes assigning responsible, consulted, and informed people based on their skills to the specific tasks in this phase and the following ones. Use the [Excel RACI matrix template](https://www.microsoft.com/download/details.aspx?id=103388&msockid=0a62a344849c68fe1290b07a85ff6967) or [learn how to make your own](https://www.microsoft.com/en-us/microsoft-365-life-hacks/organization/making-raci-charts) and complete it throughout this planning stage.
 
 For example, the RACI matrix for a sample of tasks in this process might look like this:
 
@@ -127,7 +127,7 @@ Windows 11 has [specific hardware requirements](/windows/whats-new/windows-11-re
 
 The extent of device replacement that is required will influence your choice of deployment methods. For example, if most of your devices are compatible, then you would most likely consider an in-place upgrade to Windows 11 rather than a device swap program.
 
-When choosing new hardware, consider whether your users will want to take advantage of features such as Windows Hello for Business with biometrics or Recall that requires [Copilot+ PCs](/windows/copilot-plus-pcs?msockid=1e928d3916da6f99142f984b17cf6e4a). You might also want to consider more energy-efficient devices.
+When choosing new hardware, consider whether your users will want to take advantage of features such as Windows Hello for Business with biometrics or Recall that requires [Copilot+ PCs](/windows/ai/npu-devices/). You might also want to consider more energy-efficient devices.
 
 > [!NOTE]
 > ***Recommended deliverable:***

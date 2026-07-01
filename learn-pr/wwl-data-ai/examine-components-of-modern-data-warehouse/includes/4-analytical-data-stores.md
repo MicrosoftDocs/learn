@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4515385d-9a93-4996-a74a-074f291b5ed9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 There are two common types of analytical data store.
 
 ## Data warehouses
@@ -41,3 +52,5 @@ Both Fabric and Azure Databricks include AI assistant features for writing SQL a
 
 > [!NOTE]
 > Each of these services can be thought of as an analytical data *store*, in the sense that they provide a schema and interface through which the data can be queried. In many cases, the data is actually stored in a data lake and the service processes the data and runs queries. Some solutions combine both services: an ELT ingestion process might copy data into the data lake, use a notebook running in Azure Databricks to process a large volume of data, and then load the results into tables in a Microsoft Fabric Warehouse.
+
+::: zone-end

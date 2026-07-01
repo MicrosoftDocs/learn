@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-azure-openai-authentication-authorization.configuring-rbac-for-azure-open-ai-identities
-title: Configuring RBAC for Azure OpenAI identities
+title: Configure RBAC for Azure OpenAI identities in Microsoft Foundry
 metadata:
-  title: Configuring RBAC for Azure OpenAI identities
-  description: Understand RBAC roles for Azure OpenAI identities
-  ms.date: 10/16/2024
-  author: sarah-yo
-  ms.author: sayoung
+  title: Configure RBAC for Azure OpenAI Identities in Microsoft Foundry
+  description: Configure least-privilege RBAC roles for Azure OpenAI identities in Microsoft Foundry.
+  ms.date: 05/22/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 7
 content: |

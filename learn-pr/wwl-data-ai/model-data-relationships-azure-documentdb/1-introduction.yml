@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.model-data-relationships-azure-documentdb.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "This unit introduces the data relationship modeling module for Azure DocumentDB and outlines the learning objectives."
+  ms.date: 04/15/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

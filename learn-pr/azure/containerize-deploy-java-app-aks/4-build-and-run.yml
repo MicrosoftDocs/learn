@@ -6,8 +6,8 @@ metadata:
   title: Build and run a container image for the Java app
   description: Build and run a container image for the Java app.
   ms.date: 02/12/2025
-  author: yoshioterada
-  ms.author: yoterada
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
     - devx-track-java

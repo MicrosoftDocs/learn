@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-agent-data-security.verify-agent-compliance-coverage
+title: Configure and verify compliance governance
+metadata:
+  title: Configure and Verify Compliance Governance
+  description: "Configure eDiscovery and retention for agent interactions, and verify that automatic and explicit compliance controls are working across your agent landscape."
+  ms.date: 06/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/verify-agent-compliance-coverage.md)]

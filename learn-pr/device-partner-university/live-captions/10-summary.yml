@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.live-captions.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Use Live Captions in Windows to better understand audio" module.
+  ms.date: 06/15/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-summary.md)]

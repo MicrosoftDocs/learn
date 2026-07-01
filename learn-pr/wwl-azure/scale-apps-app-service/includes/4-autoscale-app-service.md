@@ -2,10 +2,10 @@ In this unit, you learn how to enable autoscaling, create autoscale rules, and m
 
 ## Enable autoscale
 
-Get started with autoscaling by navigating to your App Service plan in the Azure portal and select **Scale out (App Service plan)** in the **Settings** group in the left navigation pane. Select **Rules Based** in the **Scale out method** section of the page, and then select **Configure**.
+Get started with autoscaling by navigating to your App Service plan in the Azure portal and select **Scale-out (App Service plan)** in the **Settings** group in the left navigation pane. Select **Rules Based** in the **Scale out method** section of the page, and then select **Configure**.
 
 > [!NOTE]
-> Not all pricing tiers support autoscaling. The development pricing tiers are either limited to a single instance (the **F1** and **D1** tiers), or they only provide manual scaling (the **B1** tier). If you selected one of these tiers, you must first scale up to the **S1** or any of the **P** level production tiers.
+> Not all pricing tiers support autoscale rules. The Free (**F1**) and Shared tiers can't scale out at all. The Basic tier (**B1**, **B2**, **B3**) supports manual scale-out only (up to three instances). To use rule-based autoscaling, your plan must be on the **Standard** tier or higher.
 
 By default, an App Service Plan only implements manual scaling. Selecting **Custom autoscale** reveals condition groups you can use to manage your scale settings.
 
@@ -15,7 +15,7 @@ By default, an App Service Plan only implements manual scaling. Selecting **Cust
 
 Once you enable autoscaling, you can edit the automatically created default scale condition, and you can add your own custom scale conditions. Remember that each scale condition can either scale based on a metric, or scale to a specific instance count.
 
-The Default scale condition is executed when none of the other scale conditions are active. 
+The Default scale condition is executed when none of the other scale conditions are active.
 
 :::image type="content" source="../media/autoscale-conditions.png" alt-text="Screenshot of the condition page for an App Service Plan showing the default scale condition.":::
 

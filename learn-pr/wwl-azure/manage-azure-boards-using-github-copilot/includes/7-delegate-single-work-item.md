@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=39019a24-e464-49b7-ac90-d4c36090f50a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Single-item delegation is the safest starting pattern for teams new to this integration. It provides a controlled path to learn how Copilot works with Azure Boards context.
 
 ## Delegation sequence
@@ -43,3 +54,5 @@ Starting with one item builds team confidence and improves prompt and work-item 
 ## Summary
 
 Delegating one work item at a time is the most effective way to learn and stabilize your team workflow. With active monitoring and clear stop conditions, you can improve quality, reduce rework, and build a reliable foundation before moving to parallel delegation.
+
+::: zone-end

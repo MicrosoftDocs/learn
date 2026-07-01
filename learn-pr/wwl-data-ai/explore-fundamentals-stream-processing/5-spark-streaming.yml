@@ -2,9 +2,10 @@
 uid: learn.wwl.explore-fundamentals-of-stream-processing.explore-apache-spark-microsoft-azure
 title: Explore Apache Spark structured streaming
 metadata:
+  zone_pivot_groups: video-or-text
   title: Explore Apache Spark structured streaming
   description: "Explore Apache Spark structured streaming"
-  ms.date: 05/21/2026
+  ms.date: 06/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

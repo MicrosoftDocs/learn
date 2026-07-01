@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=07f26de6-0b5a-4490-a3a2-36ef86aa2f91]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 SQL stands for *Structured Query Language*, and is used to communicate with a relational database. It's the standard language for relational database management systems. SQL statements are used to perform tasks such as update data in a database, or retrieve data from a database. Some common relational database management systems that use SQL include Microsoft SQL Server, Azure SQL Database, Azure SQL Managed Instance, SQL Server on Azure Virtual Machines, MySQL, PostgreSQL, and Oracle. 
 
 > [!NOTE]
@@ -166,3 +177,5 @@ VALUES (99, 'Drill', 4.99);
 
 > [!NOTE]
 > This topic describes some basic SQL statements and syntax in order to help you understand how SQL is used to work with objects in a database. If you want to learn more about querying data with SQL, review the [Get Started Querying with Transact-SQL](/training/paths/get-started-querying-with-transact-sql?azure-portal=true) learning path on Microsoft Learn.
+
+::: zone-end

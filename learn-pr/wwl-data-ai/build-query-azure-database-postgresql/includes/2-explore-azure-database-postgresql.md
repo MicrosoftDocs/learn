@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=09a90c32-0c24-4e47-b71d-483eb8a58f57]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Database for PostgreSQL is a fully managed database service for PostgreSQL workloads on Azure. Understanding the service architecture, compute tiers, and managed capabilities helps you make informed decisions about configuration and capacity planning for your AI applications.
 
 ## What is Azure Database for PostgreSQL?
@@ -58,6 +69,8 @@ When configuring Azure Database for PostgreSQL for your application, consider th
 - **Choosing a compute tier:** Select based on your workload's CPU and memory requirements. Start with Burstable for development, testing, and proof-of-concept work where cost optimization matters more than consistent performance. Use General Purpose for production workloads with steady, predictable resource requirements. Choose Memory Optimized when your application benefits from large in-memory caches or performs complex analytical queries. You can monitor CPU and memory utilization after deployment and adjust the tier if needed.
 
 - **Evaluating extensions:** Review available extensions early in your application design. Determine whether your application needs vector similarity search (pgvector), full-text search, or geospatial capabilities (PostGIS). Verify that required extensions are available on Azure Database for PostgreSQL before committing to a design. Plan for extension upgrades as part of your database maintenance strategy.
+
+::: zone-end
 
 ## Additional resources
 

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=34b7bae6-a431-42e3-b584-ff7814c2c6fe]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Azure is a cloud platform that powers the applications and IT infrastructure for some of the world's largest organizations. It includes many services to support cloud solutions, including transactional and analytical data workloads.
 
 Some of the most commonly used cloud services for data are described below.
@@ -120,3 +131,5 @@ Data engineers can use Microsoft Purview to enforce data governance across the e
 ## Microsoft Foundry
 
 ![Microsoft Foundry logo.](../media/microsoft-foundry.png) Microsoft Foundry is Microsoft's unified Azure platform-as-a-service (PaaS) for enterprise AI operations, model builders, and application development. It provides the tools, model access, and infrastructure that AI engineers—and developers more broadly—use to design, test, and deploy intelligent solutions, including chat-over-your-data applications, multi-agent workflows, and automated AI pipelines integrated with Azure data services.
+
+::: zone-end

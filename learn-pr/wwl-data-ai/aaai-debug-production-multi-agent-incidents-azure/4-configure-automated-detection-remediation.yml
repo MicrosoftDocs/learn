@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.debug-production-multi-agent-incidents-azure.configure-automated-detection-remediation
+title: Configure automated incident detection and remediation
+metadata:
+  title: Configure Automated Incident Detection and Remediation
+  description: "Configure automated incident detection and remediation."
+  ms.date: 06/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-configure-automated-detection-remediation.md)]

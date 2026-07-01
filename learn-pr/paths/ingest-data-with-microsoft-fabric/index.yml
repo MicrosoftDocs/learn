@@ -2,34 +2,28 @@
 uid: learn.wwl.ingest-data-with-microsoft-fabric
 metadata:
   title: Ingest Data with Microsoft Fabric
-  description: Explore how Microsoft Fabric enables you to ingest and orchestrate data from various sources (such as files, databases, or web services) through dataflows, notebooks, and pipelines.
-  ms.date: 08/15/2025
+  description: Learn to ingest and process data in Microsoft Fabric using Dataflows Gen2, pipelines, Apache Spark, and KQL databases.
+  ms.date: 06/12/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: learning-path
 title: Ingest data with Microsoft Fabric
 prerequisites: |
-  Familiarity with Microsoft Fabric:
-  [Getting started with Fabric](../get-started-fabric/index.yml)
+  Before starting this learning path, familiarity with the Microsoft Fabric interface and core concepts is recommended.
 summary: |
-  Explore how Microsoft Fabric enables you to ingest and orchestrate data from various sources (such as files, databases, or web services) through dataflows, notebooks, and pipelines.
+  Learn to ingest and process data in Microsoft Fabric using Dataflows Gen2, pipelines, Apache Spark, and KQL databases.
 iconUrl: /training/achievements/ingest-data-with-microsoft-fabric.svg
 levels:
 - intermediate
 roles:
 - data-analyst
 - data-engineer
-- data-scientist
 products:
 - fabric
 subjects:
-- big-data
 - data-analytics
 - data-engineering
-- data-integration
-- data-management
 modules:
-
 - learn.wwl.ingest-dataflows-gen2-fabric
 - learn.wwl.use-data-factory-pipelines-fabric
 - learn.wwl.use-apache-spark-work-files-lakehouse

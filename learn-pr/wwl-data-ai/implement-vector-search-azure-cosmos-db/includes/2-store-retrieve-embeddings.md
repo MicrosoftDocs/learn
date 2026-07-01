@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d405f655-79b2-4ed4-9508-0fe6d0e6d9f3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Vector embeddings are the foundation of semantic search in AI applications. By storing embeddings as document properties in Azure Cosmos DB for NoSQL, you create a unified data model that keeps vectors alongside metadata in the same database. This approach simplifies architecture by eliminating the need for separate vector databases while enabling efficient storage and retrieval of high-dimensional data.
 
 ## Understand vector embeddings
@@ -230,6 +241,8 @@ container.upsert_item(document)
 ```
 
 Using `upsert_item` handles both new documents and updates to existing documents. When the document content changes, regenerate the embedding and upsert the updated document to keep the embedding synchronized with the current content.
+
+::: zone-end
 
 ## Additional resources
 

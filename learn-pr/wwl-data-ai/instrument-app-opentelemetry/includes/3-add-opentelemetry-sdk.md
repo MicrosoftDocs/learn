@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3e381361-5eac-45e6-a5bc-5746f6e01cea]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Adding the OpenTelemetry SDK to your application is the first step toward capturing telemetry data. This unit covers installing the Azure Monitor OpenTelemetry Distro, understanding what it collects automatically, and configuring the essential settings that route telemetry to Application Insights.
 
 > [!NOTE]
@@ -101,6 +112,8 @@ You can also set resource attributes through environment variables without modif
 export OTEL_SERVICE_NAME="embedding-service"
 export OTEL_RESOURCE_ATTRIBUTES="service.namespace=rag-pipeline,service.instance.id=embedding-instance-1"
 ```
+
+::: zone-end
 
 ## Additional resources
 

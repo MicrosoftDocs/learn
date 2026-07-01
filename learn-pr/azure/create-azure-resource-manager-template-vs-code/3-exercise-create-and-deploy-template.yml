@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create and deploy an Azure Resource Manager template
   description: Create an Azure Resource Manager template and deploy it to Azure. Then update that template to add parameters and outputs.
   ms.date: 10/20/2025
-  author: mumian
-  ms.author: jgao
+  author: wwlpublish
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
     - devx-track-arm-template

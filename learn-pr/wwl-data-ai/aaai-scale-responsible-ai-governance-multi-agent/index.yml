@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.scale-responsible-ai-governance-multi-agent
+metadata:
+  title: Scale Responsible AI Governance with Azure AI Content Safety and Microsoft Foundry
+  description: "Scale responsible AI governance to enterprise multi-agent systems using Azure AI Content Safety and Microsoft Foundry. Design systematic fairness and bias monitoring for agent decision chains, implement transparency and explainability mechanisms, configure privacy protection, and establish audit trail frameworks."
+  ms.date: 06/02/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-foundry
+  ai-usage: ai-assisted
+title: Scale responsible AI governance with Azure AI Content Safety and Microsoft Foundry
+summary: "Scale responsible AI governance to enterprise multi-agent systems using Azure AI Content Safety and Microsoft Foundry. Design systematic fairness and bias monitoring pipelines for agent decision chains, implement transparency and explainability mechanisms for complex multi-agent outputs, configure privacy protection for multi-agent data pipelines, and establish audit trail frameworks for enterprise accountability."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Design systematic fairness and bias monitoring pipelines for multi-agent decision chains
+  - Implement transparency and explainability mechanisms that trace complex agent outputs to their sources
+  - Configure privacy protection and data minimization for multi-agent data handling pipelines
+  - Establish accountability frameworks with complete audit trails for enterprise agent deployments
+prerequisites: |
+  Before starting this module, you should have:
+  - Understanding of responsible AI principles and content filtering in Microsoft Foundry
+  - Experience implementing content safety controls with Azure AI Content Safety
+  - Familiarity with the Azure AI Evaluation SDK
+  - Experience deploying agents to Microsoft Foundry
+  - Proficiency in Python
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+products:
+- azure
+- microsoft-foundry
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.scale-responsible-ai-governance-multi-agent.introduction
+- learn.wwl.scale-responsible-ai-governance-multi-agent.design-fairness-bias-monitor
+- learn.wwl.scale-responsible-ai-governance-multi-agent.implement-transparency-explainability
+- learn.wwl.scale-responsible-ai-governance-multi-agent.configure-privacy-protection-multi-agent-workflows
+- learn.wwl.scale-responsible-ai-governance-multi-agent.establish-audit-accountability-frameworks
+- learn.wwl.scale-responsible-ai-governance-multi-agent.knowledge-check
+- learn.wwl.scale-responsible-ai-governance-multi-agent.summary
+badge:
+  uid: learn.wwl.scale-responsible-ai-governance-multi-agent.badge

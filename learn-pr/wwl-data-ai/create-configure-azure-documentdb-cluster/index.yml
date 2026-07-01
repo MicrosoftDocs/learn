@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.create-configure-azure-documentdb-cluster
+metadata:
+  title: Create and Configure an Azure DocumentDB Cluster
+  description: "Learn how to provision an Azure DocumentDB cluster, connect with MongoDB tools, and configure compute, storage, and security settings."
+  ms.date: 06/20/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-documentdb
+  ai-usage: ai-assisted
+title: Create and configure an Azure DocumentDB cluster
+summary: Learn how to provision an Azure DocumentDB cluster, connect with MongoDB tools, and configure compute, storage, and security settings.
+abstract: |
+  After completing this module, you'll be able to:
+  - Create an Azure DocumentDB cluster in the Azure portal.
+  - Connect to the cluster using MongoDB Shell and connection strings.
+  - Configure cluster settings including compute tiers, storage, and network security.
+prerequisites: |
+  - Familiarity with database concepts such as queries, indexes, and data models.
+  - Basic understanding of MongoDB or document-oriented databases.
+  - An Azure subscription.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-documentdb
+subjects:
+- databases
+units:
+- learn.wwl.create-configure-azure-documentdb-cluster.introduction
+- learn.wwl.create-configure-azure-documentdb-cluster.create-cluster-azure-portal
+- learn.wwl.create-configure-azure-documentdb-cluster.connect-to-cluster
+- learn.wwl.create-configure-azure-documentdb-cluster.configure-compute-storage
+- learn.wwl.create-configure-azure-documentdb-cluster.configure-security-networking
+- learn.wwl.create-configure-azure-documentdb-cluster.exercise-create-connect-cluster
+- learn.wwl.create-configure-azure-documentdb-cluster.knowledge-check
+- learn.wwl.create-configure-azure-documentdb-cluster.summary
+badge:
+  uid: learn.wwl.create-configure-azure-documentdb-cluster.badge

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=80ffd8cb-603b-455e-9503-32d0605daf4f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Functions provides two identity and access mechanisms that differ from general Azure security patterns: identity-based connections that replace connection strings in trigger and binding configurations, and authorization keys that control access to HTTP-triggered endpoints. These mechanisms change how you configure bindings, authenticate to downstream services, and protect function endpoints from unauthorized callers. Understanding both features helps you eliminate stored credentials from your function app's configuration while maintaining appropriate access control.
 
 ## Replace connection strings with identity-based connections
@@ -103,6 +114,8 @@ def health_check(req: func.HttpRequest) -> func.HttpResponse:
 ```
 
 Access keys provide a basic access barrier but don't replace authentication for production AI endpoints. For applications that require caller identity verification, layer Azure API Management or App Service Authentication (Easy Auth) on top of access keys. API Management adds rate limiting, request validation, and OAuth 2.0 token verification, while Easy Auth integrates Microsoft Entra ID directly with the function app.
+
+::: zone-end
 
 ## Additional resources
 

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ad82ea70-95b4-4c6b-b37b-463281d32761]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 As autonomy increases, risks do increase as well. An AI agent with the ability to read production telemetry and execute remediation actions against live (production) Azure resources represents both a powerful operational capability, and a significant responsibility. Trust in agentic systems must be **designed and engineered** through technical controls. This section establishes the governance foundation that makes agentic operations acceptable in real enterprises. Which could also include regulated industries where compliance, auditability, and human oversight are non-negotiable requirements.
 
 ## Safety by design
@@ -25,3 +36,5 @@ Here are a few **critical governance questions** that every organization must an
 - How is sensitive data handled within the agent's reasoning pipeline? Are personally identifiable information (PII) or secret values exposed in reasoning logs or chat history?
 
 As a summary, apply the same logic to agents as you do for your human engineering team. Don't overexpose permissions, as there's usually no need to do so. Rely on the knowledge and documentation you already have in place. Validate the responses from agents, instead of just accepting and trusting them. Remember AI are great assistants, not human replacements.
+
+::: zone-end

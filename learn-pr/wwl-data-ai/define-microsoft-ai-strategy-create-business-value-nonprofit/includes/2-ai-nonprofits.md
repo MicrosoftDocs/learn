@@ -22,11 +22,11 @@ The following table describes how these drivers collectively enable nonprofits t
 | :::image type="icon" source="../media/2-engage-supporters.jpg"::: | **Engage supporters and funders**| Expand and deepen relationships with supporters and funders by streamlining funding and marketing strategies to reach a broader audience. |
 | :::image type="icon" source="../media/2-transform-operation.jpg"::: | **Transform operations**| Modernize operations and financial processes with AI and automation to shift focus from back-office tasks to mission-driven program delivery. |
 
-## Microsoft Tech for Social Impact
+## Microsoft for Nonprofits
 
-Microsoft Tech for Social Impact (TSI) is a global initiative that empowers nonprofits with technology to drive social good. It operates as a social investment model, reinvesting revenue into causes like affordable housing, job training, and tech donations. It also offers grants and discounts on Microsoft 365, Azure, Dynamics 365, and nonprofit-specific tools like Microsoft Cloud for Nonprofit. Learn more at the [Microsoft for Nonprofits](https://www.microsoft.com/nonprofits?azure-portal=true) website.
+Microsoft for Nonprofits is a global initiative under Microsoft Elevate that empowers nonprofit and social impact organizations with affordable, secure, and scalable technology. It operates as a social investment model, reinvesting revenue into causes like affordable housing, job training, and tech donations. It also offers grants and discounts on Microsoft 365, Azure, Dynamics 365, and nonprofit-specific tools like Microsoft Cloud for Nonprofit. Learn more at the [Microsoft for Nonprofits](https://www.microsoft.com/nonprofits?azure-portal=true) website.
 
-The Microsoft TSI Partner ecosystem provides further innovation and scale, helping nonprofits of all sizes with sector-by providing specific solutions and support for AI implementation and deployment. TSI offers [free digital skills training](https://www.microsoft.com/nonprofits/resources?azure-portal=true) to help nonprofits be successful with their technology.
+The Microsoft for Nonprofits partner ecosystem provides further innovation and scale, helping nonprofits of all sizes with sector-specific solutions and support for AI implementation and deployment. Microsoft for Nonprofits offers [free digital skills training](https://www.microsoft.com/nonprofits/resources?azure-portal=true) to help nonprofits be successful with their technology.
 
 :::image type="content" source="../media/2-tech-social-impact.jpg" alt-text="Screenshot of the tech for social impact business model." lightbox="../media/2-tech-social-impact.jpg":::
 

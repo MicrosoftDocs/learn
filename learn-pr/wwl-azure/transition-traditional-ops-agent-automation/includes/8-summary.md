@@ -6,6 +6,6 @@ With these concepts, you can now evaluate your existing operational workflows, i
 
 ## Learn more
 
-- [GitHub Copilot agent mode documentation](/azure/developer/github-copilot)
+- [GitHub Copilot agent mode documentation](/training/modules/github-copilot-agent-mode/2-what-is-agent-mode)
 - [Azure Developer CLI (azd) overview](/azure/developer/azure-developer-cli/overview)
 - [Infrastructure as Code with Bicep](/azure/azure-resource-manager/bicep/overview)

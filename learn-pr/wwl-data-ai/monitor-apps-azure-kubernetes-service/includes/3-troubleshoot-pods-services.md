@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=39e0a660-f946-4f28-889a-0d8ca4c6f7b8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 This unit shows how you can troubleshoot pods and Services when AI applications on Azure Kubernetes Service (AKS) misbehave. You can use the Azure portal for visual inspection and guided diagnostics, or use `kubectl` for detailed command-line investigation. These techniques help you move from a high-level symptom to a concrete root cause.
 
 AI workloads often rely on configuration, Secrets, and external services such as model endpoints or caches. Mistakes in these dependencies can cause containers to fail, probes to fail, or Services to route no traffic. A structured troubleshooting workflow reduces time-to-recovery and helps you fix the right problem.
@@ -129,3 +140,5 @@ If a Service has no EndpointSlices, your AI API can't receive traffic even if po
 - **Combine portal and kubectl:** Use the portal for visual assessment and Live Logs, then switch to kubectl for detailed resource descriptions and events.
 - **Check configuration that affects AI behavior:** Verify environment variables, ConfigMaps, and Secrets that specify model endpoints, keys, or storage locations.
 - **Avoid ad hoc fixes inside containers:** Make permanent changes through source code and manifests so your AKS environment stays reproducible.
+
+::: zone-end

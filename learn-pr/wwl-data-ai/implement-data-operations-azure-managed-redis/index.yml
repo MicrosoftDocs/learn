@@ -3,7 +3,7 @@ uid: learn.wwl.implement-data-operations-azure-managed-redis
 metadata:
   title: Implement Data Operations in Azure Managed Redis
   description: Learn how to implement data operations in Azure Managed Redis.
-  ms.date: 11/21/2025
+  ms.date: 06/12/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based
@@ -12,7 +12,7 @@ metadata:
 title: Implement data operations in Azure Managed Redis
 summary: Learn how to implement data operations in Azure Managed Redis. This module covers Azure Managed Redis features, client library best practices, and how to store and retrieve data efficiently.
 abstract: |
-  After completing this module, you'll be able to: 
+  After completing this module, you'll be able to:
     - Explain Azure Managed Redis capabilities and caching strategies for high-performance applications
     - Select appropriate client libraries and apply development best practices for Redis implementations
     - Implement data operations including storage, retrieval, expiration, and cache invalidation patterns
@@ -23,13 +23,13 @@ prerequisites: |
   - Familiarity with caching concepts and cache-aside patterns.
   - Understanding of data structures (strings, hashes, lists) and key-value storage.
 iconUrl: /learn/achievements/generic-badge.svg
-levels: 
+levels:
 - intermediate
-roles: 
+roles:
 - developer
-products: 
+products:
 - azure-managed-redis
-subjects: 
+subjects:
 - cache
 - artificial-intelligence
 - data-integration

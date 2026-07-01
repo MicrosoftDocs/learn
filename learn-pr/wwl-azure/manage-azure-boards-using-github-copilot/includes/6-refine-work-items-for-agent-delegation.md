@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=99c3ec0d-dd00-4818-836b-589a5eab951a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Well-written work items are the foundation of successful AI-assisted implementation. Before delegation, update each selected item with actionable acceptance criteria and explicit constraints.
 
 ## A practical work item template
@@ -55,3 +66,5 @@ Confirm:
 ## Summary
 
 High-quality work items are the most important input to successful AI-assisted delivery. By using a consistent template and validating scope before delegation, you improve output quality, shorten review time, and make the entire workflow easier for new learners to follow.
+
+::: zone-end

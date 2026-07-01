@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1045562c-10ae-4819-a0bc-7474f194049e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Now that you understand the architecture of a large-scale data warehousing solution, it's time to explore how data is ingested into an analytical data store from one or more sources.
 
 ![Diagram explaining the different data ingestion options.](../media/data-ingestion-options.png)
@@ -49,3 +60,5 @@ Azure Databricks provides several ingestion approaches, ranging from declarative
 
 > [!NOTE]
 > Azure Databricks offers additional specialized ingestion mechanisms beyond those covered here. 
+
+::: zone-end

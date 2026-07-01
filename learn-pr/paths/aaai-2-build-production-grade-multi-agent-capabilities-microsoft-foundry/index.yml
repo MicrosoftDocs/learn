@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.wwl.build-production-grade-multi-agent-capabilities-microsoft-foundry
+metadata:
+  title: Build Production-Grade Multi-Agent Capabilities with Microsoft Foundry
+  description: Learn how to implement the production-grade technical capabilities required to make multi-agent systems reliable, secure, and maintainable. This training helps learners advance from foundational prompting, tool consumption, and RAG patterns to designing multi-intervention guardrail architectures, building enterprise MCP servers, implementing hybrid RAG pipelines, and architecting durable agent memory systems with Azure Cosmos DB. AI-500
+  ms.date: 06/16/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: learning-path
+title: Build production-grade multi-agent capabilities with Microsoft Foundry
+prerequisites: |
+  - Completion of AI-103 "Develop AI agents on Azure" or equivalent experience
+  - Experience consuming MCP tools and custom function tools with Microsoft Foundry Agent Service
+  - Familiarity with classic RAG retrieval patterns using Azure AI Search (hybrid search, semantic ranking); experience with Foundry IQ agentic retrieval is beneficial but not required
+  - Experience with system prompt design for agent persona and behavior control
+  - Python proficiency with the Azure AI SDK and Azure OpenAI SDK
+summary: |
+  Production-grade multi-agent capabilities require a deep understanding of agentic architectures, orchestration patterns, and communication strategies. This learning path will guide you through the essential concepts and best practices for building scalable and maintainable multi-agent systems with Microsoft Foundry.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+products:
+- agent-framework
+- azure-cosmos-db
+- azure-managed-redis
+- azure-openai
+- microsoft-foundry
+- microsoft-search
+subjects:
+- artificial-intelligence
+modules:
+- learn.wwl.design-advanced-prompting-production-agents
+- learn.wwl.build-enterprise-tool-ecosystems-mcp-azure
+- learn.wwl.implement-advanced-rag-azure-ai-search
+- learn.wwl.design-multi-agent-memory-azure-cosmos-db
+
+trophy:
+  uid: learn.wwl.build-production-grade-multi-agent-capabilities-microsoft-foundry.trophy

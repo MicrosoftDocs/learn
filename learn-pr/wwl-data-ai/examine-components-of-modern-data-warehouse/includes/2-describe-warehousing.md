@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=807172a7-82a6-4675-b32a-f25124d0f2ff]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Large-scale data analytics architecture can vary, as can the specific technologies used to implement it; but in general, the following elements are included:
 
 ![Diagram explaining the data analytics architecture layers.](../media/analytics-architecture-layers.png)
@@ -38,3 +49,5 @@ The core components in Azure Databricks are:
 - **Databricks Notebooks**: collaborative Python, SQL, Scala, and R notebooks for data engineering pipelines, exploratory analysis, and machine learning.
 - **Unity Catalog**: a unified governance layer for data and AI assets across the Databricks workspace, providing fine-grained access control, data lineage, and discovery.
 - **Genie**: an AI-powered conversational interface that lets users ask natural language questions about their data; Genie generates and executes SQL automatically, returning results without requiring any query writing.
+
+::: zone-end

@@ -3,7 +3,7 @@ uid: learn.wwl.manage-ado-mcp-server
 metadata:
   title: Manage Azure DevOps By Using MCP Server
   description: "Use Azure DevOps MCP Server with GitHub Copilot to manage projects, work items, pull requests, and pipelines through natural language workflows."
-  ms.date: 02/26/2026
+  ms.date: 6/11/2026
   author: petender
   ms.author: petender
   ms.topic: module

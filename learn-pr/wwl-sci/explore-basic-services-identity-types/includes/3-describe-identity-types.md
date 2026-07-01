@@ -27,6 +27,15 @@ The user type property describes the user's relationship to the host organizatio
 
 External guests and external members are B2B collaboration users that fall under external identities in Microsoft Entra ID, described in the subsequent unit.
 
+#### Interactive guide: Create a user in Microsoft Entra ID
+
+In this interactive guide, which takes approximately 10 minutes to complete, you create and manage a user in Microsoft Entra ID.
+
+Select the image below to get started.
+
+[![Thumbnail for the Create and manage a user in Microsoft Entra ID.](../media/create-entra-user-thumbnail.png)](https://microsoftlearning.github.io/click-throughs/docs/IG/interactive_guide_create_and_manage_users_in_microsoft_entra_web/story.html?azure-portal=true)
+
+
 ### Workload identities
 
 A workload identity is an identity you assign to a software workload to enable it to authenticate to and access other services and resources.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-azure-documentdb.when-azure-documentdb
+title: When to use Azure DocumentDB
+metadata:
+  title: When to Use Azure DocumentDB
+  description: "Identify the ideal workloads, migration scenarios, and evaluation criteria for choosing Azure DocumentDB."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-when-azure-documentdb.md)]

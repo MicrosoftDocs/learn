@@ -5,8 +5,8 @@ metadata:
   title: Resize virtual machine disks
   description: Resize virtual machine disks
   ms.date: 12/09/2024
-  author: roygara
-  ms.author: rogarana
+  author: wwlpublish
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli

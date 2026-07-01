@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.claude-in-foundry
+metadata:
+  title: Get started with Claude in Microsoft Foundry
+  description: Anthropic Claude models and Microsoft Foundry create a powerful combination for developing generative AI applications and agents.
+  ms.date: 05/25/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
+  ms.service: microsoft-foundry
+title: Get started with Claude in Microsoft Foundry
+summary: Anthropic Claude models and Microsoft Foundry create a powerful combination for developing generative AI applications and agents.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe key features of Microsoft Foundry.
+  - Describe Anthropic Claude models and their capabilities.
+  - Deploy and test Claude models in Foundry.
+  - Develop client applications that use Claude models in Foundry.
+prerequisites: |
+  Before starting this module, you should have:
+  - Conceptual knowledge of generative AI.
+  - Programming experience.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - ai-engineer
+products:
+  - microsoft-foundry
+subjects:
+  - artificial-intelligence
+units:
+  - learn.wwl.claude-in-foundry.introduction
+  - learn.wwl.claude-in-foundry.foundry-overview
+  - learn.wwl.claude-in-foundry.claude-overview
+  - learn.wwl.claude-in-foundry.deploy-claude-models
+  - learn.wwl.claude-in-foundry.develop-claude-apps
+  - learn.wwl.claude-in-foundry.knowledge-check
+  - learn.wwl.claude-in-foundry.summary
+badge:
+  uid: learn.wwl.claude-in-foundry.badge

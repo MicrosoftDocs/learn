@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3e63eff6-ed2c-4365-b9c1-52df6f7f0135]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Reliable setup is the foundation of every successful MCP workflow. If installation and tool discovery are incomplete, later prompts can appear inconsistent even when your request is correct. The objective of this unit is to help you establish a stable, repeatable setup path for Azure DevOps MCP Server in Visual Studio Code.
 
 ## Environment prerequisites
@@ -56,3 +67,5 @@ When you suspect setup problems, troubleshoot in this order:
 5. Re-authenticate if prompted.
 
 This sequence resolves most onboarding issues quickly without unnecessary reinstall attempts.
+
+::: zone-end

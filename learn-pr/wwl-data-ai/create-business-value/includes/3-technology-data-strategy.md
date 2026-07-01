@@ -28,7 +28,7 @@ Deciding whether to buy a prebuilt AI capability or build a custom solution depe
 
 | Buy | Build |
 |-----|-------|
-| Need speed to value; standard capability, such as search, classification, or Retrieval-Augmented Generation (RAG) | Unique IP or highly specialized domain |
+| Need speed to value; standard capability available through platforms like Microsoft Foundry, such as search, classification, or Retrieval-Augmented Generation (RAG) | Unique IP or highly specialized domain |
 | Limited in‑house ML expertise | Long‑term differentiation requires custom models |
 | Cost of customization outweighs benefits | Data is proprietary and sensitive; compliance needs are complex |
 

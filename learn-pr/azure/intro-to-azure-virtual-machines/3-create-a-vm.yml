@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a VM using the Azure portal
   description: Create a VM using the Azure portal
   ms.date: 05/19/2023
-  author: ju-shim
-  ms.author: jushiman
+  author: wwlpublish
+  ms.author: cynthist
   ms.topic: unit
 #azureSandbox: true
 durationInMinutes: 15

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b9f3e01c-056b-4c50-86e0-35b10d43ae01]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In the previous unit, you learned that Azure Cosmos DB is a highly scalable cloud database service for NoSQL data. In this unit, you'll explore what makes it different from traditional relational databases, how it organizes data internally, and when it's the right choice for your application.
 
 ## What is Azure Cosmos DB?
@@ -74,3 +85,5 @@ Cosmos DB is a strong fit for applications that need flexible schema, global rea
 Some workloads aren't a good fit. If your application depends on complex multi-table joins, Azure SQL Database is better suited. For large-scale historical analytics, consider Microsoft Fabric or Azure Synapse Analytics instead.
 
 In the next unit, you'll look at the different APIs Cosmos DB supports and how each one lets you work with your data using familiar tools and query languages.
+
+::: zone-end

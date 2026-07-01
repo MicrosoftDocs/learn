@@ -3,7 +3,7 @@ uid: learn.wwl.manage-azure-boards-using-github-copilot
 metadata:
   title: Manage Azure Boards by using GitHub Copilot integration
   description: "Manage Azure Boards by using GitHub Copilot integration"
-  ms.date: 02/25/2026
+  ms.date: 6/11/2026
   author: petender
   ms.author: petender
   ms.topic: module
@@ -20,7 +20,7 @@ abstract: |
   - Delegate and supervise work through pull requests with human review
   - Apply governance, security, and adoption practices for AI-assisted planning
 prerequisites: |
-  - Familiarity with Azure DevOps Boards basics
+  - Familiarity with Azure Boards basics
   - Familiarity with GitHub repositories and pull requests
   - Access to an Azure DevOps project and a GitHub repository
 iconUrl: /training/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg

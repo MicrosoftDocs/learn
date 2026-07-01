@@ -3,7 +3,7 @@ uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs
 metadata:
   title: Configure SIEM security operations using Microsoft Sentinel
   description: "Configure security information and event management (SIEM) security operations using Microsoft Sentinel."
-  ms.date: 06/25/2025
+  ms.date: 06/29/2026
   author: KenMAG
   ms.author: kelawson
   ms.topic: module-guided-project 

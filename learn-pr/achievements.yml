@@ -8101,3 +8101,188 @@ achievements:
   title: Understand Microsoft Priva
   summary: Understand how Microsoft Priva helps organizations manage privacy risks, streamline data handling, and comply with privacy requirements. Explore tools like Privacy Risk Management and Subject Rights Requests, and learn how to configure settings and assign roles to ensure secure and effective use of Priva.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.understand-concepts-of-data-analytics.badge
+  type: badge
+  title: Understand concepts of data analytics
+  summary: Explore key concepts of data analytics, including types of analytics, data, and storage. Explore the analytics process and tools used to discover insights.
+  iconUrl: /training/achievements/understand-concepts-of-data-analytics.svg
+- uid: learn.wwl.work-semantic-models-microsoft-fabric.trophy
+  type: trophy
+  title: Work with semantic models in Microsoft Fabric
+  summary: Designing reports for enterprise scale requires more than just connecting to data. Understanding semantic models and strategies for scalability and lifecycle management are key to a successful enterprise implementation. This learning path helps you prepare for the [Fabric Analytics Engineer Certification](/credentials/certifications/exams/dp-600/).
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.administer-containers-in-azure.trophy
+  type: trophy
+  title: Administer containers in Azure
+  summary: Azure Container Instances are the quickest and easiest way to run containers in Azure. This learning path will teach you how to create and manage your containers, and how ACI can be used to provide elastic scale for Kubernetes.
+  iconUrl: /training/achievements/administer-containers-in-azure.svg
+- uid: learn.administer-infrastructure-resources-in-azure.trophy
+  type: trophy
+  title: Administer infrastructure resources in Azure
+  summary: Learn how to create, manage, secure and scale virtual machine resources.
+  iconUrl: /training/achievements/administer-infrastructure-resources-in-azure.svg
+- uid: learn.architect-compute-infrastructure.trophy
+  type: trophy
+  title: Architect compute infrastructure in Azure
+  summary: Learn how to architect compute infrastructure and solutions to automate your business processes in Azure.
+  iconUrl: /training/achievements/architect-compute-infrastructure.svg
+- uid: learn.architect-modern-apps.trophy
+  type: trophy
+  title: Architect modern applications in Azure
+  summary: Learn how to build modern applications using PaaS services for applications, caching, containers and Kubernetes in Azure.
+  iconUrl: /training/achievements/architect-modern-apps.svg
+- uid: learn.architect-network-infrastructure.trophy
+  type: trophy
+  title: Architect network infrastructure in Azure
+  summary: Learn how to architect a secure, flexible, network infrastructure in Azure and connect on-premises networks to your Azure resources.
+  iconUrl: /training/achievements/architect-network-infrastructure.svg
+- uid: learn.azure-linux.trophy
+  type: trophy
+  title: Linux on Azure
+  summary: This comprehensive learning path reviews deployment and management of Linux on Azure. Learn about cloud computing concepts, Linux IaaS and PaaS solutions and benefits and Azure cloud services. Discover how to migrate and extend your Linux-based workloads on Azure with improved scalability, security, and privacy.
+  iconUrl: /training/achievements/azure-linux.svg
+- uid: learn.azure-common-linux-server-configurations.trophy
+  type: trophy
+  title: Common Linux server configurations
+  summary: This learning path provides an overview for deploying common Linux server functions on Azure virtual machines. Learn how to deploy a SQL Server, a web application server using the MEAN stack, perform a database migration, and manage your IT operations with Azure Automanage.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.azure.cna-architect-modern-apps.trophy
+  type: trophy
+  title: Create cloud native apps with Azure and open-source software
+  summary: Cloud-native apps represent a modern approach to app development, where software systems are designed with cloud scale and capabilities in mind. Cloud-native apps build on open source technologies where feasible, with a focus on architectural modularity.
+  iconUrl: /training/achievements/create-cloud-native-apps-with-azure-open-source.svg
+- uid: learn.deploy-a-website-with-azure-virtual-machines.trophy
+  type: trophy
+  title: Deploy a website with Azure virtual machines
+  summary: "If your web hosting requirements aren't directly supported by the Azure Web app platform, you can leverage virtual machines to customize and control every aspect of the web server. Learn how to create, configure, and manage virtual machines on Linux and Windows that host web apps. This learning path can help you prepare for the [Microsoft Certified: Azure Developer Associate certification](/certifications/azure-developer)."
+  iconUrl: /training/achievements/deploy-a-website-with-azure-virtual-machines.svg
+- uid: learn.generic-trophy-2.trophy
+  type: trophy
+  title: Develop and deploy applications on Kubernetes
+  summary: In this learning path, you'll understand how to develop, build, deploy, and automatically maintain cloud native applications designed to work with Azure Kubernetes Service from the scratchpad to the deployment pipeline.
+  iconUrl: /training/achievements/develop-and-deploy-applications-on-kubernetes.svg
+- uid: learn.security.implement-host-security.trophy
+  type: trophy
+  title: Implement virtual machine host security in Azure
+  summary: "Learn how to protect and harden your virtual machines in Azure. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer)."
+  iconUrl: /training/achievements/implement-host-security.svg
+- uid: learn.intro-to-kubernetes-on-azure.trophy
+  type: trophy
+  title: Introduction to Kubernetes on Azure
+  summary: Learn about the basics of Docker containers, container orchestration with Kubernetes, and managed clusters on Azure Kubernetes Service.
+  iconUrl: /training/achievements/intro-to-kubernetes-on-azure.svg
+- uid: learn.researcher-introduction-to-cloud-computing.trophy
+  type: trophy
+  title: "Azure for Researchers part 1: Introduction to Cloud Computing"
+  summary: When you're working on research projects, it's helpful to have a basic understanding of cloud computing concepts. In this learning path, you study the general terminology and services that of cloud computing, which should be useful to you when you're working on research tasks. You learn how to create virtual machine and how to use it, and how to pick the best storage solution to persist your data.
+  iconUrl: /training/achievements/researcher-introduction-to-cloud-computing.svg
+- uid: learn.learn.researcher-cloud-security-cost-management.trophy
+  type: trophy
+  title: "Azure for Researchers part 2: Cloud Security and Cost Management"
+  summary: In this learning path, you'll learn how to ensure your Azure consumption is planned and predictable by using cost prediction and budgets, and how to ensure your application secrets and virtual machines are safe from unauthorized access.
+  iconUrl: /training/achievements/researcher-cloud-security-cost-management.svg
+- uid: learn.store-data-in-azure.trophy
+  type: trophy
+  title: Store data in Azure learning path
+  summary: This learning path gets you started with the basics of storage management in Azure, Storage Account creation, and choices for data storage.
+  iconUrl: /training/achievements/store-data-in-azure.svg
+- uid: learn.aks-deploy-container-app.badge
+  type: trophy
+  title: Deploy a containerized application on Azure Kubernetes Service
+  summary: "Deploy a containerized application hosted on Azure Container Services or any other registrar to Azure Kubernetes Service by using declarative manifest files."
+  iconUrl: /training/achievements/aks-deploy-container-app.svg
+- uid: learn.aks-manage-application-state.badge
+  type: trophy
+  title: Deploy and manage a stateful application by using Azure Cosmos DB and Azure Kubernetes Service
+  summary: "Learn how to create a stateful application managed by an external data source with Azure Cosmos DB and AKS with the best architecture practices."
+  iconUrl: /training/achievements/aks-manage-application-state.svg
+- uid: learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.badge
+  type: trophy
+  title: Build and run a web application with the MEAN stack on an Azure Linux virtual machine
+  summary: "Learn how to set up a MEAN-based web application on a new Azure Linux virtual machine."
+  iconUrl: /training/achievements/build-a-web-app-with-mean-on-a-linux-vm.svg
+- uid: learn.azure-container-registry.badge
+  type: trophy
+  title: Build and store container images with Azure Container Registry
+  summary: "Azure Container Registry is a managed Docker registry service based on the open-source Docker Registry 2.0. Container Registry is private, hosted in Azure, and allows you to build, store, and manage images for all types of container deployments. Learn how to build and store container images with Azure Container Registry."
+  iconUrl: /training/achievements/build-and-store-container-images.svg
+- uid: learn.create-azure-storage-account.badge
+  type: trophy
+  title: Create an Azure Storage account
+  summary: "Create an Azure Storage account with the correct options for your business needs."
+  iconUrl: /training/achievements/create-azure-storage-account.svg
+- uid: learn.create-a-windows-vm-in-azure.badge
+  type: trophy
+  title: Create a Windows virtual machine in Azure
+  summary: "Azure virtual machines (VMs) enable you to create dedicated compute resources in minutes that can be used just like a physical desktop or server machine."
+  iconUrl: /training/achievements/create-windows-virtual-machine-in-azure.svg
+- uid: learn.intro-to-azure-kubernetes-service.badge
+  type: trophy
+  title: Introduction to Azure Kubernetes Service
+  summary: "Determine the types of business problems that can be solved using Azure Kubernetes Service. Describe the benefits of container orchestration with features like deployment management, automatic updates, and self-healing."
+  iconUrl: /training/achievements/intro-to-azure-kubernetes-service.svg
+- uid: learn.intro-to-docker-containers.badge
+  type: trophy
+  title: Introduction to Docker containers
+  summary: "Describe the benefits of using Docker containers as a containerization platform. Discuss the infrastructure provided by the Docker platform."
+  iconUrl: /training/achievements/intro-to-docker-containers-social.png
+- uid: learn.intro-to-kubernetes.badge
+  type: trophy
+  title: Introduction to Kubernetes
+  summary: "Determine the types of business problems that you can solve by using Kubernetes. Describe the benefits of container orchestration with features like deployment management, automatic updates, and self-healing."
+  iconUrl: /training/achievements/introduction-to-kubernetes.svg
+- uid: learn.introduction-to-linux-on-azure-badge
+  type: trophy
+  title: Introduction to Linux on Azure
+  summary: "This module helps you understand the types of services and platforms Azure provides for Linux environments. Perhaps you're exploring the migration of Linux-based workloads to the cloud or you're looking at rearchitecting Linux-based applications to increase agility and reduce time to market. After reviewing this material, you should be able to choose which types of services you'll need to start planning your Linux environment."
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.intro-to-cloud-native-apps.badge
+  type: trophy
+  title: Introduction to cloud-native apps on Azure
+  summary: "This module teaches concepts and ideas associated with cloud-native apps. We cover selecting Open-Source Software (OSS) components like Kubernetes and PostgreSQL, and unique Azure tools like Cosmos DB. We also identify situations that call for building cloud-native apps, and review selecting components in an example scenario."
+  iconUrl: /training/achievements/intro-to-cloud-native-apps.svg
+- uid: learn.introduction-migrating-aws-azure.badge
+  type: trophy
+  title: Introduction to migrating from Amazon Web Services to Microsoft Azure
+  summary: "When planning a transition from AWS to Azure it's helpful to understand what the equivalent services are on each platform, and where services differ. You need to know the differences in terminology, how Azure handles the tasks you're familiar with in AWS, and where to go to get more detailed information."
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.introduction-migrating-gcp-azure.badge
+  type: trophy
+  title: Introduction to Migrating from Google Cloud to Microsoft Azure
+  summary: "If you're familiar with Google Cloud and its services, the terminology in Microsoft Azure can be disorienting. The approach to common cloud problems in Azure is also different from Google Cloud's approach. In this module, learn how technologies and solutions in Google Cloud map to their equivalents in Azure."
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.manage-vms-with-azure-cli-data.badge
+  type: trophy
+  title: Manage virtual machines with the Azure CLI
+  summary: "Learn how to use the cross-platform Azure CLI to create, start, stop, and perform other management tasks related to virtual machines in Azure."
+  iconUrl: /training/achievements/manage-virtual-machines-with-azure-cli.svg
+- uid: learn.plan-your-linux-environment-in-azure-badge
+  type: trophy
+  title: Plan your Linux environment in Azure
+  summary: "Learn about standards and practices for planning, deploying, managing, and optimizing Linux VMs in Azure."
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.provision-linux-virtual-machine-in-azure-badge
+  type: trophy
+  title: Provisioning a Linux virtual machine in Microsoft Azure
+  summary: "Azure allows you to use several common provisioning tools to deploy Linux virtual machines (VMs), to include Terraform, Bicep, the Azure portal, and the Azure CLI. In this module, you'll learn how to deploy a Linux virtual machine using each of these methods."
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.secure-and-isolate-with-nsg-and-service-endpoints.badge
+  type: trophy
+  title: Secure and isolate access to Azure resources by using network security groups and service endpoints
+  summary: "Network security groups and service endpoints help you secure your virtual machines and Azure services from unauthorized network access."
+  iconUrl: /training/achievements/secure-and-isolate-with-nsg-and-service-endpoints.svg
+- uid: learn.upload-download-and-manage-data-with-azure-storage-explorer.badge
+  type: trophy
+  title: Upload, download, and manage data with Azure Storage Explorer
+  summary: "Azure Storage Explorer allows you to quickly view all the storage services under your account. You can browse through, read, and edit data stored in those services through a user-friendly graphical interface."
+  iconUrl: /training/achievements/upload-download-and-manage-data-with-azure-storage-explorer.svg
+- uid: learn.architect-storage-infrastructure.trophy
+  type: trophy
+  title: Architect storage infrastructure in Azure
+  summary: Learn how to architect storage solutions for your applications in Azure.
+  iconUrl: /training/achievements/architect-storage-infrastructure.svg
+- uid: learn-wwl.enable-digital-transformation.badge
+  type: badge
+  title: Enabling digital transformation
+  summary: Digital transformation is a business innovation fueled by the explosion of the cloud, artificial intelligence (AI), and the Internet of things (IoT), providing organizations with new ways to understand, manage, and transform their business.
+  iconUrl: /training/achievements/enable-digital-transformation.svg

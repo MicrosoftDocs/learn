@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb.exercise-identify-fix-anti-patterns
+title: "Exercise - Identify and fix anti-patterns"
+metadata:
+  title: "Exercise - Identify and Fix Anti-Patterns"
+  description: "Identify and fix schema design anti-patterns in an Azure DocumentDB e-commerce database, including unbounded arrays, overlapping indexes, over-normalization, and case-sensitivity issues."
+  ms.date: 04/16/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-identify-fix-anti-patterns.md)]

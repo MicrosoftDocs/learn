@@ -4,10 +4,10 @@ title: Describe Global Secure Access in Microsoft Entra
 metadata:
   title: Describe Global Secure Access in Microsoft Entra
   description: "Describe Global Secure Access in Microsoft Entra"
-  ms.date: 03/24/2026
+  ms.date: 06/08/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 6
+durationInMinutes: 20
 content: |
   [!include[](includes/2a-describe-global-secure-access.md)]

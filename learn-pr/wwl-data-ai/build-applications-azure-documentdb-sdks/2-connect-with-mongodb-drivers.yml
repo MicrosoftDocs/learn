@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-applications-azure-documentdb-sdks.connect-with-mongodb-drivers
+title: Connect to Azure DocumentDB with MongoDB drivers
+metadata:
+  title: Connect to Azure DocumentDB with MongoDB Drivers
+  description: "Learn how to install the MongoDB driver for Python, .NET, or JavaScript and connect to an Azure DocumentDB cluster."
+  ms.date: 04/10/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-node-python
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-connect-with-mongodb-drivers.md)]

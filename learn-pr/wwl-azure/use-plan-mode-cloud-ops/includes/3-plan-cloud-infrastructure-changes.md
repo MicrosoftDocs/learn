@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=afa20834-9d02-470e-877e-74e7e0ef66a8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Suppose a team receives a request to deploy a new Azure virtual network with specific security requirements. The virtual network needs three subnets for web, application, and data tiers, each with its own network security group (NSG). Before writing any infrastructure code, the engineer wants a clear plan that covers all the components and their relationships.
 
 > [!NOTE]
@@ -70,3 +81,5 @@ When you use the Plan agent for cloud infrastructure tasks, include these detail
 
 > [!TIP]
 > If your repository includes a `.github/copilot-instructions.md` file with your organization's infrastructure standards, the Plan agent automatically incorporates those instructions when generating plans. This helps ensure that generated plans follow your team's conventions for naming, tagging, and architecture patterns.
+
+::: zone-end

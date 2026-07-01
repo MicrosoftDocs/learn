@@ -3,7 +3,7 @@ uid: learn.wwl.design-solutions-secure-privileged-access
 metadata:
   title: Design Solutions for Securing Privileged Access
   description: "You learn advanced techniques for designing solutions that secure privileged access using Zero Trust principles, the Enterprise Access Model, and Microsoft security frameworks."
-  ms.date: 03/04/2026
+  ms.date: 05/29/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module

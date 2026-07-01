@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-azure-documentdb.capabilities-architecture
+title: Explore capabilities and architecture
+metadata:
+  title: Explore Capabilities and Architecture
+  description: "Explore the vCore-based cluster architecture, compute tiers, scaling options, vector database, and security features in Azure DocumentDB."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-capabilities-architecture.md)]

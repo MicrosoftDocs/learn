@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0481196c-800f-48da-960b-ae78fafd8862]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Distributed AI applications present unique observability challenges because a single user request often spans multiple services, each with its own runtime, dependencies, and failure modes. Understanding how OpenTelemetry addresses these challenges gives you the foundation to instrument your applications effectively and gain the visibility needed to maintain performance and reliability.
 
 ## Understand observability for distributed AI applications
@@ -80,6 +91,8 @@ The following table shows the key term mappings:
 | Span Attributes | `span.set_attribute()` | `customDimensions` |
 
 Understanding this mapping matters in practice. When you write a KQL query in Application Insights, you search the `requests` table for server spans and the `dependencies` table for client and internal spans. The `operation_Id` field in Application Insights corresponds to the OpenTelemetry trace ID. When you set attributes on a span using `span.set_attribute()` in Python, those values appear in the `customDimensions` column in Application Insights query results. Knowing these mappings prevents confusion and helps you build effective queries and dashboards.
+
+::: zone-end
 
 ## Additional resources
 

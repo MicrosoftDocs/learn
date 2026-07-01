@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3c6e22d9-306c-4ae7-96ce-80e1371d4a41]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 GitHub Copilot in Visual Studio Code provides three built-in agents, each operating under a different level of autonomy and with a different relationship to your workspace:
 
 - **Agent**: A fully autonomous implementation agent. It decomposes a goal into subtasks, executes tool calls (file reads, writes, terminal commands, MCP server calls), and applies changes directly to your workspace. The Agent loop runs until the goal is achieved or it reaches an ambiguity it can't resolve.
@@ -112,3 +123,5 @@ After you finalize a plan, you have several options to proceed:
 - **Continue in a cloud agent**: Hand off to a Copilot cloud agent running on GitHub infrastructure. The cloud agent implements the actual plan, opens a pull request, creates CI/CD pipeline, and establishes an auditable approval record.
 
 The handoff mechanism is significant architecturally: the plan document written to `/memories/session/plan.md` becomes the implementation agent's task specification. The quality and specificity of the plan directly controls the quality of the implementation. A vague plan produces vague implementation, and a plan with explicit verification gates causes the implementation agent to pause and verify at each gate before proceeding.
+
+::: zone-end

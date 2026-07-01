@@ -3,7 +3,7 @@ uid: learn.wwl.event-driven-workflows-event-grid
 metadata:
   title: Develop Event-Driven AI Workflows with Azure Event Grid
   description: Learn how to build event-driven AI workflows using Azure Event Grid to route events from sources to handlers with low latency, configure delivery policies, and publish custom events.
-  ms.date: 02/13/2026
+  ms.date: 06/15/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

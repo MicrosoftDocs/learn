@@ -8,7 +8,7 @@ metadata:
   ms.author: riswinto
   ms.topic: module
   ai-usage: ai-assisted
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
 title: Secure Microsoft Foundry environments
 summary: |
   To secure Microsoft Foundry environments requires layered protections that control access, safeguard credentials, isolate network communication, and maintain visibility across connected resources.

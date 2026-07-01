@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.work-smarter-copilot-operations.end-of-day-wrap
+title: End of day wrap
+metadata:
+  title: End Of Day Wrap
+  description: This content is part of the "Work smarter with Copilot prompts for Operations professionals" module.
+  ms.date: 06/25/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-end-of-day-wrap.md)]

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=16aff2a3-468d-46b1-8924-393c7dbc722d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Kusto Query Language (KQL) is the primary tool developers use to retrieve and analyze telemetry data stored in Azure Monitor logs. Whether you're investigating a spike in errors across your document processing pipeline or measuring how long the classification service takes to respond, KQL provides the operators and functions to extract the answers from your telemetry. This unit introduces the KQL fundamentals you need to start querying Application Insights log data effectively.
 
 > [!NOTE]
@@ -82,6 +93,8 @@ requests
 ```
 
 Log Analytics displays this query as a line chart with one line per `cloud_RoleName` value and time on the horizontal axis. You can switch between chart types in the results pane without modifying the query, but including `render` in the query itself ensures the visualization is preserved when you pin the results to a dashboard or share the query with team members.
+
+::: zone-end
 
 ## Additional resources
 

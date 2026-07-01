@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-agent-data-security.map-capability-agent-type
+title: Map Purview capabilities to agent types
+metadata:
+  title: Map Purview Capabilities to Agent Types
+  description: "Learn which Microsoft Purview data security and compliance capabilities apply to each AI agent type, what activates automatically, and what requires explicit configuration."
+  ms.date: 06/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/map-capability-agent-type.md)]

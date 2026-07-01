@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.manage-smb-volumes
+metadata:
+  title: Manage SMB volumes in Azure NetApp Files
+  description: Learn how to create and manage SMB volumes and how to control access to an SMB volume through permissions. Learn to enable Continuous Availability on existing SMB volumes and use DFS Namespaces with Azure NetApp Files.
+  ms.date: 05/13/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Manage SMB volumes in Azure NetApp Files
+summary: Create and manage SMB volumes in Azure NetApp Files.
+abstract: |
+  By completing this module, you'll be able to:
+  - Create an SMB volume
+  - Control access to an SMB volume through permissions
+  - Use DFS Namespaces with Azure NetApp Files
+prerequisites: |
+  - Manage NFS volumes in Azure NetApp Files
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+  - storage
+units:
+  - learn.azure.manage-smb-volumes.introduction
+  - learn.azure.manage-smb-volumes.create-smb-volume
+  - learn.azure.manage-smb-volumes.control-access-to-smb-volume
+  - learn.azure.manage-smb-volumes.enable-continuous-availability
+  - learn.azure.manage-smb-volumes.use-dfs-namespaces
+  - learn.azure.manage-smb-volumes.exercise-manage-smb-volumes
+  - learn.azure.manage-smb-volumes.knowledge-check
+  - learn.azure.manage-smb-volumes.summary
+badge:
+  uid: learn.azure.manage-smb-volumes.badge

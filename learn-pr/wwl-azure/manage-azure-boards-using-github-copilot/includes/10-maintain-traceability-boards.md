@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=399b075b-4881-41ab-89c6-bd9d0f6e16a4]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 One of the biggest benefits of this integration is end-to-end traceability. Azure Boards can remain your planning system of record while GitHub captures implementation details.
 
 ## Traceability chain
@@ -13,17 +24,17 @@ An effective chain connects:
 
 ## Keep links useful
 
-Links are only useful when they are consistent and meaningful. Teams should use common conventions so work items and pull requests stay easy to understand over time.
+Links are only useful when they're consistent and meaningful. Teams should use common conventions so work items and pull requests stay easy to understand over time.
 
 Use consistent team practices so links stay meaningful:
 
 - Ensure each delegated item maps to one primary pull request when possible.
-- Keep pull request descriptions aligned with the work item scope.
+- Keep pulling request descriptions aligned with the work item scope.
 - Record key decisions in comments when requirements evolve.
 
 ## Reporting and visibility
 
-When traceability is clean, reporting becomes much easier for both technical and non-technical stakeholders. You can answer questions about status, quality, and ownership without manual reconstruction from chat messages or memory.
+When traceability is clean, reporting becomes easier for both technical and nontechnical stakeholders. You can answer questions about status, quality, and ownership without manual reconstruction from chat messages or memory.
 
 With clean linking, project and engineering leaders can:
 
@@ -45,3 +56,5 @@ Traceability is strongest when planning, coding, and review stay connected throu
 ## Summary
 
 End-to-end traceability is a core benefit of integrating Azure Boards with GitHub workflows. By maintaining clear links and avoiding common shortcuts, teams gain better reporting, better accountability, and more reliable delivery insights.
+
+::: zone-end

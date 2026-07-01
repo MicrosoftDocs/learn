@@ -9,7 +9,7 @@ metadata:
   author: amit7200
   ms.author: amsvarze
   ms.topic: module-intro-to-product
-  ms.service: copilot-for-azure
+  ms.service: azure-copilot
   ms.collection: ce-skilling-ai-copilot
 summary: >
   Get to know the concept of copilots in the ever evolving generative AI domain. Define how startups can use Azure Copilot Stack and apply best practices to deliver value to their customers.

@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ai-agent-data-security
+metadata:
+  title: Secure and govern agent interactions with Microsoft Purview
+  description: "Learn how to identify which Microsoft Purview capabilities cover which AI agent types, discover active agents, assess coverage gaps, and configure agent-specific data security and compliance controls."
+  ms.date: 06/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  ai-usage: ai-assisted
+title: Secure AI agents with Microsoft Purview data security controls
+summary: Microsoft Purview supports data security and compliance for AI agents, but coverage varies across agent types and some agents behave differently from users in ways that silently break existing policies. Learn how to close data security coverage and enforcement gaps across your organization's AI agent landscape.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand how AI agents change data security posture and which Purview capabilities apply to each agent type
+  - Discover active agents and assess where policy coverage is incomplete
+  - Decide where existing policies need agent-specific configuration
+  - Configure DLP and sensitivity label settings for agent interactions
+  - Configure Insider Risk Management and communication compliance for agent detection
+  - Verify that compliance governance covers all active agent types
+prerequisites: |
+  - Working knowledge of the Microsoft Purview portal and its navigation
+  - Working knowledge of sensitivity labels, DLP policies, and Insider Risk Management
+  - Working knowledge of Purview compliance solutions including auditing, eDiscovery, data lifecycle management, and communication compliance
+  - Basic understanding of data classification with sensitive information types and trainable classifiers
+  - Familiarity with how Microsoft 365 Copilot interacts with organizational data through Microsoft Graph
+  - Pay-as-you-go billing may be required for some AI interaction management capabilities in Microsoft Purview
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- microsoft-purview
+subjects:
+- information-protection-governance
+units:
+- learn.wwl.purview-ai-agent-data-security.introduction
+- learn.wwl.purview-ai-agent-data-security.understand-agent-security-posture
+- learn.wwl.purview-ai-agent-data-security.map-capability-agent-type
+- learn.wwl.purview-ai-agent-data-security.discover-agents-assess-gaps
+- learn.wwl.purview-ai-agent-data-security.decide-agent-specific-configuration
+- learn.wwl.purview-ai-agent-data-security.configure-agent-data-protection
+- learn.wwl.purview-ai-agent-data-security.configure-agent-risk-detection
+- learn.wwl.purview-ai-agent-data-security.verify-agent-compliance-coverage
+- learn.wwl.purview-ai-agent-data-security.knowledge-check
+- learn.wwl.purview-ai-agent-data-security.summary
+badge:
+  uid: learn.wwl.purview-ai-agent-data-security.badge

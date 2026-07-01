@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.debug-production-multi-agent-incidents-azure
+metadata:
+  title: Debug and Respond to Production Multi-Agent Incidents in Azure
+  description: "Debug and respond to production incidents in multi-agent AI solutions in Azure. Implement agent replay capabilities that reproduce complex multi-agent failures, apply structured root cause analysis procedures for multi-agent incident diagnosis, configure automated detection and remediation for common agent failure patterns, and establish incident response and post-mortem processes adapted to the characteristics of AI agent system failures."
+  ms.date: 06/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-foundry
+  ai-usage: ai-assisted
+title: Debug and respond to production multi-agent incidents in Azure
+summary: "Debug and respond to production incidents in multi-agent AI solutions in Azure. Implement agent replay capabilities that reproduce complex multi-agent failures, apply structured root cause analysis procedures for multi-agent incident diagnosis, configure automated detection and remediation for common agent failure patterns, and establish incident response and post-mortem processes adapted to the characteristics of AI agent system failures."
+abstract: |
+  By the end of this module, you're able to:
+  - Implement agent replay capabilities that reproduce complex multi-agent failures in production environments
+  - Apply structured root cause analysis procedures for diagnosing multi-agent system failures
+  - Configure automated detection and remediation for common agent failure patterns
+  - Establish incident response and post-mortem processes adapted to the characteristics of AI agent system failures
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience with distributed observability for multi-agent solutions including OpenTelemetry and Azure Monitor
+  - Familiarity with Azure Application Insights and Log Analytics for trace analysis
+  - Experience building multi-agent solutions with Microsoft Foundry Agent Service
+  - Understanding of incident response practices in software operations
+  - Proficiency in Python
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- devops-engineer
+- solution-architect
+products:
+- azure
+- microsoft-foundry
+- azure-monitor
+subjects:
+- artificial-intelligence
+- devops
+units:
+- learn.wwl.debug-production-multi-agent-incidents-azure.introduction
+- learn.wwl.debug-production-multi-agent-incidents-azure.implement-agent-replay-production-debug
+- learn.wwl.debug-production-multi-agent-incidents-azure.design-root-cause-analysis-agent-failures
+- learn.wwl.debug-production-multi-agent-incidents-azure.configure-automated-detection-remediation
+- learn.wwl.debug-production-multi-agent-incidents-azure.establish-incident-response-postmortem-processes
+- learn.wwl.debug-production-multi-agent-incidents-azure.knowledge-check
+- learn.wwl.debug-production-multi-agent-incidents-azure.summary
+badge:
+  uid: learn.wwl.debug-production-multi-agent-incidents-azure.badge

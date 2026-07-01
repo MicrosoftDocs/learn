@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-pc-hub-adoption.role-based-workflows
+title: Explore role-based workflows with Copilot+ PCs
+metadata:
+  title: Explore role-based workflows with Copilot+ PCs
+  description: This content is part of the "Use the Copilot+ PC Hub to get started with Copilot+ PCs" module.
+  ms.date: 05/12/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-role-based-workflows.md)]

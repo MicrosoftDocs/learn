@@ -3,7 +3,7 @@ uid: learn.wwl.retrieval-augmented-generation-azure-databricks
 metadata:
   title: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
   description: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
-  ms.date: 07/07/2025
+  ms.date: 06/17/2026
   ms.update-cycle: 180-days
   author: theresa-i
   ms.author: theresai
@@ -21,7 +21,7 @@ abstract: |
   - Improve model accuracy by reranking your search results.
 prerequisites: |
   Before starting this module, you should be familiar with Azure Databricks. Consider completing [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) before starting this module.
-iconUrl: /learn/achievements/describe-azure-databricks.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
 - intermediate
 roles:

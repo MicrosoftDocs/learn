@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-medallion-architecture.secure-govern
-title: Considerations for managing your lakehouse
+title: Secure and govern your medallion lakehouse
 metadata:
-  title: Considerations for managing your lakehouse
-  description: "Considerations for managing your lakehouse"
-  ms.date: 05/23/2025
+  title: Secure and govern your medallion lakehouse
+  description: "Learn how to control access by layer using workspace permissions and OneLake data access roles, and how to manage changes to your medallion lakehouse using Git integration and deployment pipelines."
+  ms.date: 06/10/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/5-secure-govern.md)]

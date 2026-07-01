@@ -1,14 +1,14 @@
-Downloading multiple files to an unmanaged device might trigger a policy violation. But what if the same user also shared sensitive documents externally or bypassed a policy warning earlier that day? Viewing alerts one at a time can make it hard to spot these broader patterns. Microsoft Defender XDR helps security teams connect the dots by grouping related alerts into incidents and surfacing risky behavior across data sources.
+Downloading multiple files to an unmanaged device might trigger a policy violation. But what if the same user also shared sensitive documents externally or bypassed a policy warning earlier that day? Viewing alerts one at a time can miss these broader patterns. Microsoft Defender XDR groups related alerts into incidents and surfaces risky behavior across data sources, so you see the full picture instead of isolated events.
 
 ## Why use Microsoft Defender XDR to investigate data loss prevention alerts?
 
-Microsoft Defender XDR helps you move from isolated alerts to a broader view of incidents. Defender XDR:
+Defender XDR gives you the broader context that individual alerts don't provide on their own. It:
 
 - Automatically correlates related data loss prevention (DLP) alerts into incidents
-- Extends investigation capabilities across endpoints, email, cloud apps, and identities
+- Extends investigation across endpoints, email, cloud apps, and identities
 - Enables response actions like disabling accounts or revoking access
 
-If your organization needs a central view of data risk signals and security events, Microsoft Defender XDR brings that visibility together.
+Use Defender when you need to see whether a DLP alert connects to other security activity for the same user or device.
 
 ## Licensing and permissions
 
@@ -22,13 +22,13 @@ Role-based access control also applies. Users must be assigned appropriate Defen
 
 1. Go to the [Microsoft Defender portal](https://security.microsoft.com?azure-portal=true).
 1. In the left navigation pane, select **Incidents & alerts** > **Incidents**.
-1. Use the **Service/detection source** filter to select **Data Loss Prevention**.
+1. Select **Add filter**, choose **Service/detection sources**, and then select **Microsoft Data Loss Prevention**.
 
 :::image type="content" source="../media/investigate-alert-defender.png" alt-text="Screenshot showing the Microsoft Defender XDR filtering for data loss prevention alerts." lightbox="../media/investigate-alert-defender.png":::
 
-This view shows incidents that include one or more DLP alerts. Each incident can contain multiple related alerts grouped together.
+This view shows incidents that include one or more DLP alerts. Each incident can contain multiple related alerts grouped together. Defender retains incident history for six months, so you can search back through that window to find related resolved incidents or recurring alerts from the same user.
 
-## Step 2: Investigate a DLP alert
+### Step 2: Investigate a DLP alert
 
 After an incident is identified in the queue, the next step is to examine the details of an individual alert. This helps you confirm what happened, determine whether the alert is valid, and decide what to do next.
 
@@ -43,8 +43,6 @@ You can copy the summary, regenerate it, or open the Security Copilot pane for d
 - Matched policy and rule
 - File details and access path
 - User identity and associated activities
-
-You can copy or refresh the summary, or open it in the Security Copilot pane for more context.
 
 :::image type="content" source="../media/investigate-alert-defender.png" alt-text="Screenshot showing the Microsoft Defender XDR alert details page with attack story and Security Copilot pane." lightbox="../media/investigate-alert-defender.png":::
 
@@ -62,6 +60,9 @@ To respond at the user level, select the **User card** to view profile details a
 
 For device-based DLP alerts, select the **Device card** to view device details and isolate or manage the device.
 
+> [!NOTE]
+> To inspect file content for Endpoint DLP alerts, your organization must have [evidence collection for file activities on devices](/purview/dlp-copy-matched-items-learn?azure-portal=true) configured. Without it, you can see alert metadata and policy match details, but you won't be able to view or download the actual file that triggered the alert.
+
 ### Step 4: Manage the incident
 
 To complete incident handling, return to the incident summary page and select **Manage incident**. You can:
@@ -74,7 +75,7 @@ To complete incident handling, return to the incident summary page and select **
 
 :::image type="content" source="../media/defender-manage-incident.png" alt-text="Screenshot showing the Manage incident flyout page in Microsoft Defender." lightbox="../media/defender-manage-incident.png":::
 
-These fields help organize and close out the investigation for future reference and auditing.
+Use these fields to classify and close the incident.
 
 ## Use advanced hunting for deeper investigation
 
@@ -127,7 +128,3 @@ CloudAppEvents
 ```
 
 This query identifies activity related to a specific alert using the **CloudAppEvents** table.
-
-Microsoft Defender XDR helps security teams respond to data loss incidents by grouping alerts, enriching them with context, and enabling fast investigation. With integrated advanced hunting and response actions, DLP alert handling becomes part of a broader security operations workflow.
-
-Whether you're managing alerts in Microsoft Defender or extending your investigation with Microsoft Sentinel, these tools help bring clarity to complex data loss events. With capabilities for alert correlation, activity analysis, and automated response, security teams can act faster and with greater confidence to reduce data risk.

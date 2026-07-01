@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b5422f51-2fe1-4a46-a0e8-42640fe9a935]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The quality of a plan depends directly on the quality of your prompt. Vague prompts produce vague plans. For operations tasks, include specific details about what you're trying to accomplish:
 
 **Less effective:**
@@ -106,3 +117,5 @@ The Plan agent reads your existing codebase to generate context-aware plans. To 
 
 > [!IMPORTANT]
 > Always review generated plans against your organization's change management requirements before proceeding to implementation. The Plan agent helps you create a structured approach, but the responsibility for validating the plan against production standards remains with you and your team.
+
+::: zone-end

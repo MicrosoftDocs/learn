@@ -1,47 +1,48 @@
-If you're familiar with relational databases and enterprise warehouses, it's common knowledge that there are four fundamental permissions governing [Data Manipulation Language (DML)](/sql/t-sql/queries/queries?azure-portal=true) operations. These permissions, namely `SELECT`, `INSERT`, `UPDATE`, and `DELETE`, are universally applicable across all database platforms.
+Workspace roles and item permissions control broad access to a Fabric warehouse. For production environments, you often need finer control — restricting which users can read specific tables, insert rows into specific objects, or execute specific stored procedures. SQL granular permissions give you that precision.
 
-All of these permissions can be granted, revoked or denied on tables and views. If a permission is granted using the `GRANT` statement, then the permission is given to the user or role referenced in the `GRANT` statement. Users can also be denied permissions using the `DENY` command. If a user is granted a permission and denied the same permission, the `DENY` will always supersede the grant, and the user will be denied access to the specific object.
+Fabric warehouses support the standard SQL `GRANT`, `DENY`, and `REVOKE` statements. When a user has both a `GRANT` and a `DENY` on the same permission — from different roles, for example — `DENY` always wins.
 
 ## Table and view permissions
 
-Tables and views represent the objects on which permissions can be granted within a warehouse. Within those tables and views, you can additionally restrict the columns that are accessible to a given security principal. 
+The four core data manipulation permissions apply to tables and views:
 
-| Permission | Definition |
-|------------|-------------|
-|`SELECT` | Allows the user to view the data within the object (table or view). When denied, the user will be prevented from viewing the data within the object. |
-|`INSERT` | Allows the user to insert data into the object. When denied, the user will be prevented from inserting data into the object. |
-|`UPDATE` | Allows the user the update data within the object. When denied, the user will be prevented from updating data in the object. |
-|`DELETE` | Allows the user to delete data within the object. When denied, the user will be prevented from deleting data from the object. |
+| Permission | What it allows |
+|---|---|
+| `SELECT` | Read data from the object. |
+| `INSERT` | Add new rows to the object. |
+| `UPDATE` | Modify existing rows in the object. |
+| `DELETE` | Remove rows from the object. |
+
+```sql
+GRANT SELECT ON dbo.SalesReport TO [alice@contoso.com];
+DENY SELECT ON dbo.Payroll TO [alice@contoso.com];
+```
+
+Within a table or view, you can also apply these permissions at the column level, which pairs naturally with column-level security.
 
 ## Function and stored procedure permissions
 
-Like tables and views, functions and stored procedures have several permissions, which can be granted or denied.
+Functions and stored procedures have their own permission set:
 
-| Permission | Definition |
-|------------|-------------|
-|`ALTER` | Grants the user the ability to change the definition of the object. |
-|`CONTROL` | Grants the user all rights to the object. |
-
-## Principle of least privilege
-
-The basic idea of the principle of least privilege is that users and applications should only be given the permissions needed in order for them to complete the task. Applications should only have permissions that they need to do in order to complete the task at hand.
-
-As an example, if an application accesses all data through stored procedures, then the application should only have the permission to execute the stored procedures, with no access to the tables.
-
-### Dynamic SQL
-
-Dynamic SQL is a concept where a query is built programmatically. Dynamic SQL allows T-SQL statements to be generated within a stored procedure or a query itself. A simple example is shown below.
+| Permission | What it allows |
+|---|---|
+| `EXECUTE` | Run the function or stored procedure. |
+| `ALTER` | Modify the definition of the object. |
+| `CONTROL` | Full ownership-level rights over the object. |
 
 ```sql
-CREATE PROCEDURE sp_TopTenRows @tableName NVARCHAR(128)
-AS
-BEGIN
-    DECLARE @query NVARCHAR(MAX);
-    SET @query = N'SELECT TOP 10 * FROM ' + QUOTENAME(@tableName);
-    EXEC sp_executesql @query;
-END;
+GRANT EXECUTE ON dbo.usp_GetSalesData TO [bob@contoso.com];
+DENY SELECT ON dbo.Sales TO [bob@contoso.com];
 ```
 
-In this example, `@tableName` is the parameter that you can replace with the name of the table you want to inspect. The `QUOTENAME` function is used to safely quote the table name, preventing SQL injection attacks. The `sp_executesql` stored procedure is then used to execute the dynamically built query.
+In many warehouse architectures, users interact with data only through stored procedures, not directly with tables. Granting `EXECUTE` on procedures while denying direct table access is an effective way to enforce a controlled data access pattern.
 
-Please note that this is a simple example and real-world data warehouse tasks might require more complex dynamic SQL queries. Always be cautious when using dynamic SQL due to the risk of SQL injection attacks. Always use parameterization methods like `sp_executesql` or `QUOTENAME` to sanitize inputs.
+## Apply the principle of least privilege
+
+Give each user or application only the permissions it needs to do its job — nothing more. In practice:
+
+- An application that reads data through stored procedures should have `EXECUTE` permission on those procedures, not `SELECT` on the underlying tables.
+- A reporting role that only needs to read data should have `SELECT` on specific views, not broad table access.
+- Temporary elevated access should be revoked once the task is complete.
+
+This approach limits the impact if a credential is compromised or a user accidentally runs a destructive query.

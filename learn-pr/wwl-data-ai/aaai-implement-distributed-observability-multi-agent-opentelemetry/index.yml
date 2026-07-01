@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.implement-distributed-observability-multi-agent-opentelemetry
+metadata:
+  title: Implement Distributed Observability for Multi-Agent Solutions with OpenTelemetry
+  description: "Implement distributed observability infrastructure for production multi-agent AI solutions using OpenTelemetry and Azure Monitor. Design distributed tracing architectures with correlation propagation, implement structured logging for agent decision paths, configure telemetry aggregation, and build anomaly detection for agent behavior patterns."
+  ms.date: 06/04/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-foundry
+  ai-usage: ai-assisted
+title: Implement distributed observability for multi-agent solutions with OpenTelemetry
+summary: "Implement distributed observability infrastructure for production multi-agent AI solutions using OpenTelemetry and Azure Monitor. Design distributed tracing architectures that propagate correlation context across agent service boundaries, implement structured logging frameworks that capture agent decision paths, configure telemetry aggregation pipelines, and build anomaly detection for abnormal agent behavior patterns."
+abstract: |
+  By the end of this module, you're able to:
+  - Design distributed tracing architectures that propagate correlation context across multi-agent boundaries
+  - Implement structured logging frameworks that capture agent decision paths, reasoning traces, and tool invocations
+  - Configure telemetry aggregation pipelines for multi-agent observability at production scale
+  - Build anomaly detection that identifies abnormal agent behavior patterns and triggers actionable alerts
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience with OpenTelemetry instrumentation and Azure Monitor for AI applications
+  - Familiarity with Log Analytics workspaces and Kusto Query Language (KQL)
+  - Experience from the Analyze and debug your generative AI app with tracing module or equivalent
+  - Experience building multi-agent systems with Microsoft Foundry Agent Service
+  - Proficiency in Python
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- devops-engineer
+- solution-architect
+products:
+- azure
+- microsoft-foundry
+- azure-monitor
+subjects:
+- artificial-intelligence
+- devops
+units:
+- learn.wwl.implement-distributed-observability-multi-agent-opentelemetry.introduction
+- learn.wwl.implement-distributed-observability-multi-agent-opentelemetry.design-distributed-trace-multi-agent-systems
+- learn.wwl.implement-distributed-observability-multi-agent-opentelemetry.implement-structured-log-agent-decisions
+- learn.wwl.implement-distributed-observability-multi-agent-opentelemetry.configure-telemetry-aggregation-dashboards
+- learn.wwl.implement-distributed-observability-multi-agent-opentelemetry.build-anomaly-detection-agent-behavior
+- learn.wwl.implement-distributed-observability-multi-agent-opentelemetry.knowledge-check
+- learn.wwl.implement-distributed-observability-multi-agent-opentelemetry.summary
+badge:
+  uid: learn.wwl.implement-distributed-observability-multi-agent-opentelemetry.badge

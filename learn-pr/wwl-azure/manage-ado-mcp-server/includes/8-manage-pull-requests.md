@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=377a511b-73bb-4cd5-a1ea-5f52b11c4180]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Pull requests are where planning intent meets implementation reality. This unit focuses on using MCP to improve pull request visibility and collaboration while keeping reviewer accountability intact.
 
 ## Why PR operations are a key objective
@@ -49,3 +60,5 @@ Next, use focused prompts to retrieve linked work items and reviewer assignments
 A practical pattern is to create a lightweight review script for yourself: context prompt, scope prompt, risk prompt, and collaboration prompt. Over time, this script becomes habitual and improves consistency across reviews. It also helps less experienced reviewers participate effectively because MCP can summarize structural context before they evaluate detailed logic.
 
 The key lesson is that MCP does not make review decisions for you. It makes high-quality review preparation faster. Final approval still depends on technical judgment, team standards, and release risk tolerance.
+
+::: zone-end

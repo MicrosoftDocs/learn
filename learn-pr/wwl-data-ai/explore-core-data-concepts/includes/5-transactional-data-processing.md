@@ -1,4 +1,13 @@
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=82253c46-2c50-4c27-8dac-ff8f9bdcbcdf]
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=50fa2972-f314-430b-962f-2464bf27a0d3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 A transactional data processing system is  what most people consider the primary function of business computing. A transactional system records *transactions* that encapsulate specific events that the organization wants to track. A transaction could be financial, such as the movement of money between accounts in a banking system, or it might be part of a retail system, tracking payments for goods and services from customers. Think of a transaction as a small, discrete, unit of work.
 
@@ -37,3 +46,5 @@ To accomplish this, OLTP systems enforce transactions that support so-called ACI
 > ![Diagram explaining the concept of durability.](../media/durability.png)
 
 OLTP systems are typically used to support live applications that process business data - often referred to as *line of business* (LOB) applications.
+
+::: zone-end

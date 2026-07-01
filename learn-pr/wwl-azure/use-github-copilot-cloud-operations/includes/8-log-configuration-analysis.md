@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8ecffddd-efca-4050-a91b-ebf7e862eb9f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Modern cloud environments generate large volumes of log data. An Azure Firewall in a busy environment produces thousands of log entries per hour. Activity logs capture every management operation across all resources. NSG flow logs record every network connection, both allowed and denied.
 
 The challenge isn't collecting the data. Azure Monitor, Log Analytics, and Microsoft Sentinel handle collection well. The challenge is turning raw log data into actionable intelligence quickly. This means finding the attack pattern in 10,000 firewall entries, identifying the root cause of a deployment failure buried in a 500-line error log, or producing a meaningful compliance report from a month of activity data.
@@ -210,3 +221,5 @@ Apply risk ratings:
 ```
 
 The output is immediately usable as a compliance report, a security review summary, or a section in an audit response package. Review the risk ratings Copilot applies and adjust any that don't match your organization's risk classification policy.
+
+::: zone-end

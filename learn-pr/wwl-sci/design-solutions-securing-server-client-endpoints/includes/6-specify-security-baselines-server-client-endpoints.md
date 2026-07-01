@@ -39,10 +39,10 @@ For Windows 10 and Windows 11 devices managed through Intune, specify MDM securi
 
 | Baseline type | Current version | Purpose |
 | --- | --- | --- |
-| Security Baseline for Windows 10 and later | Version 24H2 | Core Windows hardening |
+| Security Baseline for Windows 10 and later | Version 25H2 | Core Windows hardening |
 | Microsoft Defender for Endpoint | Version 24H1 | Threat protection settings |
 | Microsoft 365 Apps for Enterprise | Version 2306 | Office application security |
-| Microsoft Edge | Version 128 | Browser security |
+| Microsoft Edge | Version 139 | Browser security |
 | Windows 365 | Version 24H1 | Cloud PC environments |
 
 Your specification should address:

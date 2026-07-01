@@ -8,7 +8,7 @@ metadata:
   ms.author: riswinto
   ms.topic: module
   ai-usage: ai-assisted
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
 title: Configure and manage guardrails in Microsoft Foundry 
 summary: |
   Microsoft Foundry guardrails help secure AI workloads by applying configurable safety controls that evaluate both prompts and responses.

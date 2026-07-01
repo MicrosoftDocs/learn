@@ -60,12 +60,12 @@ If you like, take a few minutes to personalize some more prompts, and analyze th
 Iteration is a key part of creating effective AI prompts. In this step, you refine your original results to get expanded information using **Think Deeper**.
 
 > [!NOTE]
-> Think Deeper unlocks the power of deep reasoning in Microsoft Copilot. It can handle more complex questions by breaking them down into multiple steps, allowing for more accurate and detailed responses.
+> Think Deeper unlocks the power of deep reasoning in Microsoft Copilot. It can handle more complex questions by taking time to craft a plan, gather and comprehend all relevant context, and check its work before providing a thorough response.
 
 First, try one of your earlier prompts with Think Deeper. Add your prompt to the chat box again, and then follow these steps:
 
 1. Select the drop-down menu in the prompt area.
-2. Choose**Think Deeper** from the list of options.
+2. Choose **Think Deeper** from the available options.
 3. Submit to Copilot and review the results.
 
 ![Screenshot of Copilot highlighting selection option drop-down, Think Deeper, and submit button highlighted.](../media/06-think-deeper-submit.jpg)

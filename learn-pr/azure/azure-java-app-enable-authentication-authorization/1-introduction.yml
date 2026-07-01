@@ -6,8 +6,8 @@ metadata:
   title: Introduction
   description: Introduction to the authentication and authorization with Azure AD module
   ms.date: 11/21/2023
-  author: yoshioterada
-  ms.author: yoterada
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java

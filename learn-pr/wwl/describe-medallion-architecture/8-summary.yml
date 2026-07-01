@@ -3,8 +3,8 @@ uid: learn.wwl.describe-medallion-architecture.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 05/23/2025
+  description: "Review what you learned about planning, implementing, securing, and governing a medallion architecture in a Microsoft Fabric lakehouse."
+  ms.date: 06/10/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: unit

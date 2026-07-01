@@ -3,7 +3,7 @@ uid: learn.wwl.fine-tune-azure-databricks
 metadata:
   title: Fine-Tune Language Models with Azure Databricks
   description: Fine-tune language models with Azure Databricks
-  ms.date: 07/09/2025
+  ms.date: 06/17/2026
   ms.update-cycle: 180-days
   author: theresa-i
   ms.author: theresai
@@ -21,7 +21,7 @@ abstract: |
   - Fine-tune an Azure OpenAI model.
 prerequisites: |
   Before starting this module, you should be familiar with Azure Databricks. Consider completing [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) before starting this module.
-iconUrl: /learn/achievements/describe-azure-databricks.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
 - intermediate
 roles:

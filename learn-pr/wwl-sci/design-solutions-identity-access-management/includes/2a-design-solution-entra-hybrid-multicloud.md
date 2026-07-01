@@ -32,6 +32,9 @@ Choose Connect Sync when you need:
 > [!NOTE]
 > Microsoft Entra Cloud Sync is the strategic direction for hybrid identity synchronization. Microsoft is replacing Connect Sync with Cloud Sync as it reaches full functional parity. Evaluate Cloud Sync first for new deployments.
 
+> [!IMPORTANT]
+> Organizations using Connect Sync must maintain version 2.5.79.0 or higher. All synchronization services will stop working on September 30, 2026 for installations below this version due to a mandatory back-end service change.
+
 ## Choose an authentication method
 
 Your authentication method determines where password validation occurs and affects security, resiliency, and user experience.

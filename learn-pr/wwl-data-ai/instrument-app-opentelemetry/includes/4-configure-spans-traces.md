@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4ad0e182-2c67-41ff-be17-76637df80b6e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Automatic instrumentation captures telemetry from common frameworks like HTTP clients and database libraries, but it can't observe the custom business logic that makes your AI application unique. Operations like embedding generation, vector similarity scoring, prompt assembly, and LLM response parsing are specific to your application and require custom spans to appear in your traces. This unit covers creating custom spans and traces to capture these application-specific operations.
 
 > [!NOTE]
@@ -139,6 +150,8 @@ def process_query(query: str) -> str:
 ```
 
 When you view this trace in the Application Insights end-to-end transaction view, you see a waterfall chart. `ProcessQuery` appears as the root span with `GenerateEmbedding`, `SearchVectorIndex`, and `CallLlm` as child spans nested underneath. The timeline shows each operation's duration and its relationship to the overall request time. If `CallLlm` takes eight seconds out of a ten-second total, the visualization makes this bottleneck immediately obvious.
+
+::: zone-end
 
 ## Additional resources
 

@@ -2,11 +2,12 @@
 uid: learn.wwl.implement-programmability-objects.choosing-when-to-use-each-programmability-object
 title: Choose when to use each option
 metadata:
-  title: Choose when to use each option
+  zone_pivot_groups: video-or-text
+  title: Choose When to Use Each Option
   description: Learn decision criteria for selecting the appropriate SQL Server programmability object—views, stored procedures, functions, or triggers—based on your specific requirements.
-  ms.date: 01/22/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 6/30/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

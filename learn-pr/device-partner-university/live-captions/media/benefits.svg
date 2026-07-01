@@ -1,0 +1,105 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EEF2F8"/>
+      <stop offset="100%" stop-color="#E4EBF6"/>
+    </linearGradient>
+
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; }
+      .title { font-size: 30px; font-weight: 600; fill: #323130; }
+      .heading { font-size: 20px; font-weight: 600; fill: #323130; }
+      .body { font-size: 16px; fill: #323130; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="420" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="600" y="80" text-anchor="middle" class="title">
+    Key benefits for business users
+  </text>
+
+  <!-- Column centers: evenly spaced with margins -->
+  <!-- Each column width ≈ 220 -->
+
+  <!-- COLUMN 1 -->
+  <g transform="translate(150,0)">
+    <text x="0" y="145" text-anchor="middle" font-size="44">💬</text>
+
+    <text x="0" y="195" text-anchor="middle" class="heading">
+      Break language barriers
+    </text>
+
+    <!-- LEFT-ALIGNED TEXT BLOCK -->
+    <g transform="translate(-110,230)">
+      <text class="body">
+        <tspan x="0" dy="0">Real-time translation during global</tspan>
+        <tspan x="0" dy="22">meetings, webinars, or</tspan>
+        <tspan x="0" dy="22">presentations helps you follow</tspan>
+        <tspan x="0" dy="22">along and participate, no matter</tspan>
+        <tspan x="0" dy="22">where they’re located.</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- COLUMN 2 -->
+  <g transform="translate(420,0)">
+    <text x="0" y="145" text-anchor="middle" font-size="44">📊</text>
+
+    <text x="0" y="195" text-anchor="middle" class="heading">
+      Boost productivity
+    </text>
+
+    <g transform="translate(-110,230)">
+      <text class="body">
+        <tspan x="0" dy="0">Live Captions make it easier to</tspan>
+        <tspan x="0" dy="22">stay focused, catch key points</tspan>
+        <tspan x="0" dy="22">the first time, and reduce the</tspan>
+        <tspan x="0" dy="22">need for follow-up explanations</tspan>
+        <tspan x="0" dy="22">or rewatching recordings.</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- COLUMN 3 -->
+  <g transform="translate(690,0)">
+    <text x="0" y="145" text-anchor="middle" font-size="44">🧠</text>
+
+    <text x="0" y="195" text-anchor="middle" class="heading">
+      Improve engagement
+    </text>
+
+    <g transform="translate(-110,230)">
+      <text class="body">
+        <tspan x="0" dy="0">Supports clearer communication</tspan>
+        <tspan x="0" dy="22">during training sessions, town</tspan>
+        <tspan x="0" dy="22">halls, and large meetings,</tspan>
+        <tspan x="0" dy="22">helping you stay engaged and</tspan>
+        <tspan x="0" dy="22">absorb information effectively.</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- COLUMN 4 -->
+  <g transform="translate(960,0)">
+    <text x="0" y="145" text-anchor="middle" font-size="44">📶</text>
+
+    <text x="0" y="195" text-anchor="middle" class="heading">
+      Work offline
+    </text>
+
+    <g transform="translate(-110,230)">
+      <text class="body">
+        <tspan x="0" dy="0">Live Captions run without an</tspan>
+        <tspan x="0" dy="22">internet connection, so you can</tspan>
+        <tspan x="0" dy="22">rely on it while traveling,</tspan>
+        <tspan x="0" dy="22">commuting, or working in low</tspan>
+        <tspan x="0" dy="22">connectivity areas.</tspan>
+      </text>
+    </g>
+  </g>
+
+</svg>

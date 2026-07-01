@@ -2,9 +2,10 @@
 uid: learn.wwl.use-github-copilot-cloud-operations.container-infrastructure
 title: Container infrastructure with GitHub Copilot
 metadata:
+  zone_pivot_groups: video-or-text
   title: Container Infrastructure with GitHub Copilot
   description: "Learn how to use GitHub Copilot to generate production-grade Dockerfiles with multi-stage builds, apply container security best practices, and generate Kubernetes manifests for AKS deployments."
-  ms.date: 05/05/2026
+  ms.date: 6/11/2026
   author: petender
   ms.author: petender
   ms.topic: unit

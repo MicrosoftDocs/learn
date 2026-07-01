@@ -3,10 +3,10 @@ uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 09/3/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  description: "Summary of data protection features in a Microsoft Fabric data warehouse."
+  ms.date: 06/11/2026
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
 durationInMinutes: 2
 content: |

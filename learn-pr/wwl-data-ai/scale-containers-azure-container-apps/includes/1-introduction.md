@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=cf77afb0-df2b-438d-bd0c-95bc8f7d6336]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Containerized applications require dynamic scaling to handle varying workloads while controlling costs. This module guides you through configuring automatic horizontal scaling in Azure Container Apps to build responsive, cost-efficient container deployments that adapt to real-time demand.
 
 Imagine you're a developer building an order processing service for an e-commerce platform. The application experiences predictable traffic spikes during sales events and unpredictable bursts when marketing campaigns launch. Your current deployment uses fixed resources, leading to poor response times during peak periods and wasted capacity during quiet hours. The operations team reports that costs increased substantially because the application runs at full capacity around the clock. Meanwhile, customer complaints about slow checkout times increased during flash sales.
@@ -12,3 +20,8 @@ After completing this module, you'll be able to:
 - Implement event-driven scaling using KEDA scalers for Azure services
 - Select appropriate compute resources to optimize performance and cost
 - Apply revision modes to control scaling behavior and traffic distribution
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

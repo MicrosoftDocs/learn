@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-applications-azure-documentdb-sdks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Test your knowledge of building applications with Azure DocumentDB using MongoDB drivers."
+  ms.date: 04/10/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 5
+quiz:
+  title: ""
+  questions:
+  - content: "What is the recommended approach for managing MongoClient instances in an application?"
+    choices:
+    - content: "Create a new MongoClient for each database operation"
+      isCorrect: false
+      explanation: "Creating a new client for each operation adds overhead from Transport Layer Security (TLS) handshakes and connection setup. Reuse a single client instance instead."
+    - content: "Create one MongoClient instance and reuse it throughout the application's lifetime"
+      isCorrect: true
+      explanation: "MongoDB drivers manage a connection pool internally. Creating one client instance and reusing it avoids the overhead of repeated connection setup and Transport Layer Security (TLS) handshakes."
+    - content: "Create one MongoClient per database you access"
+      isCorrect: false
+      explanation: "A single MongoClient can access multiple databases. Separate clients per database aren't needed."
+  - content: "A developer stores the database connection string directly in their Python source code and commits it to a Git repository. What security risk does this action creates?"
+    choices:
+    - content: "No risk, since the code is in a private repository."
+      isCorrect: false
+      explanation: "Team members and CI/CD systems can still access private repositories, and someone could make them public accidentally. Connection strings contain credentials and should never be hardcoded."
+    - content: "The credentials are exposed in version control history and can't be fully removed."
+      isCorrect: true
+      explanation: "Credentials committed to Git persist in the repository history even after deletion. Use environment variables or a secret manager like Azure Key Vault instead of hardcoding connection strings."
+    - content: "The connection string expires after 24 hours, so the risk is temporary."
+      isCorrect: false
+      explanation: "Azure DocumentDB connection strings don't expire automatically. Credentials committed to source code are a persistent security risk."
+  - content: "Which MongoDB driver object represents a database in all three languages (Python, .NET, JavaScript)?"
+    choices:
+    - content: "MongoClient"
+      isCorrect: false
+      explanation: "MongoClient represents the connection to the cluster, not a specific database. It's the top-level object in the driver hierarchy."
+    - content: "Database (Python), IMongoDatabase (.NET), Db (JavaScript)"
+      isCorrect: true
+      explanation: "The database object sits between the client and collection in the driver hierarchy. Each language uses its own type name, but they all represent the same concept."
+    - content: "Collection (Python), IMongoCollection (.NET), Collection (JavaScript)"
+      isCorrect: false
+      explanation: "Collection objects represent a collection within a database, not the database itself."
+  - content: "A team's application uses insertMany() to add 100 products but the operation fails on the 50th document due to a validation error. How many documents are inserted?"
+    choices:
+    - content: "All 100 documents are inserted because insertMany is atomic."
+      isCorrect: false
+      explanation: "By default, insertMany isn't atomic. It processes documents in order and stops at the first error, leaving the first 49 documents inserted."
+    - content: "49 documents are inserted; the remaining 51 aren't."
+      isCorrect: true
+      explanation: "By default, insertMany processes documents in order and stops at the first error. The 49 documents before the failure are already inserted. Use the ordered: false option to continue past errors."
+    - content: "Zero documents are inserted; the entire batch is rolled back."
+      isCorrect: false
+      explanation: "insertMany doesn't roll back previously inserted documents when an error occurs. Documents inserted before the error remain in the collection."
+  - content: "A Python developer uses products.find({'price': {'$gt': 50}}) and gets back a cursor object instead of a list. Why?"
+    choices:
+    - content: "The query failed and returned an error object."
+      isCorrect: false
+      explanation: "A cursor is the expected return type from find(). It's not an error."
+    - content: "The find() method returns a cursor that lazily loads documents as you iterate over them."
+      isCorrect: true
+      explanation: "MongoDB drivers return a cursor from find() to avoid loading all matching documents into memory at once. Documents are fetched in batches as the application iterates. Use list() or toArray() to load all results."
+    - content: "The query matched no documents, so an empty cursor is returned."
+      isCorrect: false
+      explanation: "A cursor is returned regardless of how many documents match. An empty cursor simply has no documents to iterate over."

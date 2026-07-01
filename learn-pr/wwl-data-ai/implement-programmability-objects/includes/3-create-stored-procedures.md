@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=03352b90-07e1-47f1-a3da-7a3e9b76119c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 [Stored procedures](/sql/relational-databases/stored-procedures/stored-procedures-database-engine?azure-portal=true) are one of the most powerful tools in SQL Server for encapsulating business logic and improving application performance. When you create stored procedures, you build reusable code blocks that execute on the server, reducing network traffic and centralizing data access logic.
 
 ## Understand stored procedures
@@ -189,3 +200,5 @@ CREATE PROCEDURE dbo.sp_GetCustomerOrders
 ```
 
 Building on these practices helps you create stored procedures that your team can understand, maintain, and trust to perform reliably in production environments.
+
+::: zone-end

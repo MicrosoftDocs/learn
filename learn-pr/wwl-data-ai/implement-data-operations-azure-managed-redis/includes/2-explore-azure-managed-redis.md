@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=93e2799b-24c3-42bd-8bf7-91dce0560356]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Managed Redis provides an in-memory data store based on the Redis Enterprise software. Redis Enterprise improves the performance and reliability of the community edition of Redis, while maintaining compatibility. Microsoft operates the service, hosted on Azure, and usable by any application within or outside of Azure.
 
 Azure Managed Redis can improve the performance and scalability of an application that heavily uses backend data stores. It's able to process large volumes of application requests by keeping frequently accessed data in the server memory, which can be written to and read from quickly.
@@ -43,6 +54,8 @@ One tier stores data both in-memory and on-disk:
 - **Flash Optimized (preview)** Enables Redis clusters to automatically move less frequently accessed data from memory (RAM) to NVMe storage. This reduces performance, but allows for cost-effective scaling of caches with large datasets.
 
 For a detailed feature comparison of the tiers, visit [About Azure Managed Redis](/azure/redis/overview#choosing-the-right-tier)
+
+::: zone-end
 
 ## Additional resources
 

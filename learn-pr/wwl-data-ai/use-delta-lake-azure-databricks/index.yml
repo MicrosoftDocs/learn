@@ -18,7 +18,7 @@ abstract: |
   - How to maintain data integrity with Delta Lake
 prerequisites: |
   Before starting this module, you should know how to use Apache Spark in Azure Databricks. Consider completing the [Use Apache Spark in Azure Databricks](/training/modules/use-apache-spark-azure-databricks) module before this one.
-iconUrl: /training/achievements/work-dataframes-azure-databricks.svg
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
 - intermediate
 roles:

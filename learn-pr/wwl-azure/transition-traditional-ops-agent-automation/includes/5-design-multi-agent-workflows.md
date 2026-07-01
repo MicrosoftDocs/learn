@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6875b19b-b857-4747-9072-525ff820eba0]
+
+> [!TIP]
+> The video for this section is also available in text-based form below.
+
+::: zone-end
+
+::: zone pivot="text"
+
 Designing a multi-agent workflow starts with mapping your existing operational process. Most infrastructure workflows follow a predictable pattern: gather requirements, make design decisions, generate artifacts, execute actions, and produce documentation. Each of these phases becomes a candidate for a specialized agent.
 
 ## Step 1: Map your current workflow
@@ -101,3 +112,5 @@ When designing multi-agent workflows for ops tasks, keep these guidelines in min
 - **Plan for human-in-the-loop**: Not every step should be fully automated from day one. Design your pipeline so that a human can review artifacts between stages and approve before the next agent runs.
 
 The transition from traditional ops to agentic workflows is incremental. You don't need to automate everything at once. Start with the workflows where you spend the most time coordinating between steps, and gradually expand as you build confidence in your agent definitions and skills.
+
+::: zone-end

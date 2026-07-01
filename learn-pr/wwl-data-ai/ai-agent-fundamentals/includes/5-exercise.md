@@ -5,5 +5,5 @@ If you have an Azure subscription, you can explore Foundry Tools in Microsoft Fo
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2303870&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-ai-fundamentals/?linkid=2303870)
 

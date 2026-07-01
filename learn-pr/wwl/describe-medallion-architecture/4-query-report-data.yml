@@ -3,8 +3,8 @@ uid: learn.wwl.describe-medallion-architecture.query-report-data
 title: Query and report on data in your Fabric lakehouse
 metadata:
   title: Query and report on data in your Fabric lakehouse
-  description: "Query and report on data in your Fabric lakehouse"
-  ms.date: 05/23/2025
+  description: "Learn how to access gold layer data in a Fabric lakehouse using the SQL analytics endpoint and Power BI semantic models with Direct Lake mode."
+  ms.date: 06/10/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: unit

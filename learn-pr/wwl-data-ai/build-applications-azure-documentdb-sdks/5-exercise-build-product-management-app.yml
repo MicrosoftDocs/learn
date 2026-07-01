@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-applications-azure-documentdb-sdks.exercise-build-product-management-app
+title: Exercise - Build a product management application
+metadata:
+  title: Exercise - Build a Product Management Application
+  description: "Build a console application that connects to Azure DocumentDB and performs CRUD operations using the MongoDB driver for Python, .NET, or JavaScript."
+  ms.date: 04/10/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-node-python
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-build-product-management-app.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-query-performance-indexes-azure-documentdb.analyze-query-performance-explain
+title: Analyze query performance with explain()
+metadata:
+  title: Analyze Query Performance with explain()
+  description: "Use the explain() command in Azure DocumentDB to diagnose query performance, identify collection scans, and resolve in-memory sort issues."
+  ms.date: 04/17/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-analyze-query-performance-explain.md)]

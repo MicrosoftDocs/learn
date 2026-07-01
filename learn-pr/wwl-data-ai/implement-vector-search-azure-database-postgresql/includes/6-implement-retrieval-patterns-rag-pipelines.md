@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6bd45a7d-22b6-4802-8dbb-59a521855b77]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Retrieval-augmented generation (RAG) enhances language model responses by providing relevant context from your data. The retriever component searches your knowledge base and returns documents that the LLM uses to generate accurate, grounded answers. Azure Database for PostgreSQL with pgvector serves as an effective retriever, storing your document embeddings and executing similarity queries that feed the generation step.
 
 This unit covers designing schemas for RAG workloads, implementing chunk retrieval queries, building document ingestion pipelines, returning citation metadata, and evaluating retrieval quality.
@@ -217,3 +228,5 @@ When metrics fall below target, systematically experiment with parameters that a
 - **Index parameters:** Higher `ef_search` (HNSW) or `probes` (IVFFlat) improves recall by searching more candidates, at the cost of query latency. Start with default parameters and increase only if recall is insufficient.
 
 - **Distance thresholds:** Tighter thresholds improve precision by excluding marginal matches. Looser thresholds improve recall by including more candidates. Use your evaluation dataset to find the threshold that balances both metrics for your use case.
+
+::: zone-end

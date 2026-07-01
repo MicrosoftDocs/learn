@@ -33,7 +33,7 @@ To move from isolated pilots to durable solutions, we help you establish or stre
 
 These practices reflect Microsoft's five drivers of AI value—business strategy, technology strategy, applied AI experience, organization and culture, and AI governance—so your operating model is anchored to value creation, not just tooling.
 
-This step accelerates scaling by aligning strategy, governance, and security. It centralizes AI skills and use case intake, and applies proven reference architectures for repeatable success. THis step helps ensure that every project delivers measurable impact, is compliant by design, and avoids costly failures. Organizations using this approach cut project costs by up to 30% and increased deployment speed by 50%.
+This step accelerates scaling by aligning strategy, governance, and security. It centralizes AI skills and use case intake, and applies proven reference architectures for repeatable success. This step helps ensure that every project delivers measurable impact, is compliant by design, and avoids costly failures. Organizations using this approach cut project costs by up to 30% and increased deployment speed by 50%.
 
 ### Step 4: Start building the agentic future
 

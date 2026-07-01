@@ -5,8 +5,8 @@ metadata:
   title: Set up Azure Container Apps
   description: Learn about setting up the Azure Container Apps resources and the PostgreSQL database.
   ms.date: 03/06/2025
-  author: yoshioterada
-  ms.author: yoterada
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
     - team=devdiv

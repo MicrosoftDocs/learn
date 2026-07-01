@@ -1,4 +1,17 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f4dbdc6c-949c-48d7-9739-fdd81d20f39f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this module, you learned how to implement vector search in Azure Cosmos DB for NoSQL to build AI applications with semantic search capabilities. You configured containers with vector policies that specify embedding paths, data types, dimensions, and distance functions. You stored embeddings alongside document metadata, creating a unified data model that simplifies architecture by eliminating the need for separate vector databases. You executed vector similarity queries using the `VectorDistance` function with proper result limiting and parameterized query vectors. You combined vector search with metadata filters to narrow results by category, date, or other attributes, and used hybrid search with `RRF` to merge semantic and keyword relevance. You also implemented change feed processing to automatically refresh embeddings when source documents change, keeping search results current as content evolves.
+
+::: zone-end
 
 ## Additional resources
 

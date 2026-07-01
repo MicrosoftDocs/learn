@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-multi-agent-systems-azure-zero-trust.secure-agent-access-jit-workload-identity
+title: Secure agent access with JIT and workload identity
+metadata:
+  title: Secure Agent Access with JIT and Workload Identity
+  description: "Secure agent access with JIT and workload identity."
+  ms.date: 06/01/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-secure-agent-access-jit-workload-identity.md)]

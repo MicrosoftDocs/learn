@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=93f9e904-0264-4b06-a577-8dc0823088e2]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Production AI services often run images from private registries. A private registry helps you control supply chain risk, apply vulnerability scanning, and manage who can pull images. Azure Container Apps supports registry authentication through username and password and through managed identity when the registry is Azure Container Registry.
 
 > [!NOTE]
@@ -59,6 +70,8 @@ Registry authentication affects both security and reliability. You can use the f
 - **Grant least privilege:** Assign only `AcrPull` to identities that pull images.
 - **Keep image references consistent:** Use fully qualified image names, including the registry hostname, to avoid ambiguity.
 - **Validate auth during rollout:** Deploy a new revision and verify the revision starts before you assume the registry change is correct.
+
+::: zone-end
 
 ## Additional resources
 

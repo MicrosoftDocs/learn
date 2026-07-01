@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.intro-azure-openai-managed-identity-auth-javascript
 metadata:
-  ms.author: sayoung
-  author: sarah-yo
-  ms.date: 02/10/2025
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 05/20/2026
   ms.update-cycle: 180-days
   title: Introduction to Azure OpenAI Managed Identity Authentication with JavaScript
   description: Learn about Azure OpenAI managed identity authentication with JavaScript.
@@ -11,7 +11,7 @@ metadata:
   ms.collection: ce-advocates-ai-copilot
   ms.service: microsoft-foundry
 title: Introduction to Azure OpenAI managed identity authentication with JavaScript
-summary: This module helps you understand how to use a managed identity in JavaScript apps that interact with Azure OpenAI Service.
+summary: This module helps you understand how to use a managed identity in JavaScript apps that interact with Azure OpenAI in Azure AI Foundry Models.
 abstract: |
  After you complete this module, you'll be able to:
   - Describe the role-based access control (RBAC) roles for use in Azure OpenAI and configure role assignments.

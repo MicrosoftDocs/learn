@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d8e9d88b-297e-4a69-9fde-a6641737b914]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure App Service runs custom Linux containers as web applications. You provide a container image from a registry, and App Service handles provisioning, load balancing, and scaling. This unit covers how to select image sources, configure registry authentication, and deploy containers using the Azure portal and CLI.
 
 ## Container image sources
@@ -174,6 +185,8 @@ az webapp show \
 ```
 
 Open the URL in a browser or use curl to verify the application responds. If the container fails to start, the diagnostic tools covered in Unit 5 help identify the issue.
+
+::: zone-end
 
 ## Additional resources
 

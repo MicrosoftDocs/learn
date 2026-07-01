@@ -3,8 +3,8 @@ uid: learn.intro-azure-openai-managed-identity-auth-java.using-managed-identitie
 title: Using managed identities with Azure OpenAI
 metadata:
   title: Using managed identities with Azure OpenAI
-  description: Understand how to use managed identities with Azure OpenAI services to authenticate your Java applications
-  ms.date: 12/16/2024
+  description: Describe how to use managed identities and Microsoft Entra ID to authenticate Java applications to Azure OpenAI.
+  ms.date: 05/20/2026
   author: sarah-yo
   ms.author: sayoung
   ms.topic: unit

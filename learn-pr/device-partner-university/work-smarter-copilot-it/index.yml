@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.dpu.work-smarter-copilot-it
+title: Work smarter with Copilot prompts for IT professionals
+metadata:
+  title: Work Smarter With Copilot Prompts For IT Professionals
+  description: In this module, you'll learn how to use Microsoft 365 Copilot to work smarter and more efficiently as an IT professional. You'll explore how to use Copilot prompts to streamline your daily tasks, investigate incidents, troubleshoot systems, and coordinate with stakeholders effectively.
+  ms.date: 06/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: microsoft-365-business
+summary: >
+  In this module, you'll learn how to use Microsoft 365 Copilot to work smarter and more efficiently as an IT professional. You'll explore how to use Copilot prompts to streamline your daily tasks, investigate incidents, troubleshoot systems, and coordinate with stakeholders effectively.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Use Microsoft 365 Copilot to streamline your daily tasks as an IT professional.
+  - Investigate incidents and troubleshoot systems more efficiently with Copilot prompts.
+  - Coordinate with stakeholders effectively using Copilot prompts.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/work-smarter-copilot-it-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - m365-business
+units:
+  - learn.dpu.work-smarter-copilot-it.introduction
+  - learn.dpu.work-smarter-copilot-it.plan-the-day
+  - learn.dpu.work-smarter-copilot-it.incident-investigation-and-system-troubleshooting
+  - learn.dpu.work-smarter-copilot-it.stakeholder-update-and-coordination
+  - learn.dpu.work-smarter-copilot-it.knowledge-check
+  - learn.dpu.work-smarter-copilot-it.summary
+badge:
+  uid: learn.dpu.work-smarter-copilot-it.badge

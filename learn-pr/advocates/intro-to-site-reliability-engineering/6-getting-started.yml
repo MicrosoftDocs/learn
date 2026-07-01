@@ -2,14 +2,13 @@
 uid: learn.intro-to-site-reliability-engineering.6-getting-started
 title: Getting started with SRE
 metadata:
-  title: Getting started with SRE
+  title: Getting Started with SRE
   description: Getting started with SRE
-  ms.date: 11/14/2024
-  author: dnblankedelman
-  ms.author: dnb
+  ms.date: 05/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom: team=cloud_advocates
-  ms.contributors: dnb-01282021
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-getting-started.md)]
+  [!include[](Includes/6-getting-started.md)]

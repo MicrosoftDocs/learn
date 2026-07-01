@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Display your knowledge.
-  ms.date: 02/10/2025
-  author: sarah-yo
-  ms.author: sayoung
+  ms.date: 05/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 4
@@ -35,14 +35,14 @@ quiz:
       - content: "Cognitive Services Usages Reader"
         isCorrect: false
         explanation: "The Usages Reader role is focused on monitoring usage and doesn't have permissions for model management. It only allows viewing quota usage."
-    - content: "In the provided JavaScript code example, what is the purpose of the openai.ChatCompletion.create method?"
+    - content: "In the JavaScript samples in this module, what is the purpose of the `client.chat.completions.create` method?"
       choices:
-      - content: "Generate a response from the OpenAI model"
+      - content: "Generate a response from the model"
         isCorrect: true
-        explanation: "This method sends a request to the OpenAI service with the specified parameters, such as the model, prompt, and other settings, and returns the generated response."
+        explanation: "This method sends a request to the Azure OpenAI deployment with the specified parameters, such as the deployment name and messages, and returns the generated response."
       - content: "Authenticate the user"
         isCorrect: false
-        explanation: "Authentication is handled separately, typically using credentials or tokens, and isn't the purpose of this method."
+        explanation: "Authentication is handled separately by the @azure/identity credential and the bearer token provider passed to AzureOpenAI; it isn't the purpose of this method."
       - content: "Store the API response"
         isCorrect: false
-        explanation: "This method generates a response from the OpenAI model but doesn't handle storing the response; storing data would require additional code."
+        explanation: "This method generates a response from the model but doesn't handle storing the response; storing data would require additional code."

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=04287dee-eec6-4a54-9690-7de0e8e7f2f3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Publishing an agent from the Microsoft Foundry portal to Microsoft Teams and Microsoft 365 Copilot is a straightforward process. The portal guides you through creating an agent application, provisioning the required Azure resources, and generating a publishing package for distribution.
 
 ## Before you begin
@@ -133,3 +144,5 @@ When you make changes to your agent in Foundry, you need to republish to update 
 5. For organization scope, the update might require re-approval depending on your organization's policies.
 
 Users interacting with your agent receive the updated version once the new package is deployed.
+
+::: zone-end

@@ -5,8 +5,8 @@ metadata:
   title: "Improve your reliability with modern operations practices: Capacity planning and scaling"
   description: Learn about capacity planning and scaling practices that can help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
   ms.date: 04/12/2026
-  author: dnblankedelman
-  ms.author: dnb
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020

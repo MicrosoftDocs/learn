@@ -1,4 +1,17 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0cbb902c-b26d-4ecd-9d20-86b2c78220fd]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this module, you learned how to deploy and manage containerized applications on Azure App Service. You deployed a custom container from Azure Container Registry using managed identity authentication, which eliminates the need to store registry credentials. You configured container runtime behavior including startup commands, port settings to route traffic correctly, and persistent storage to preserve files across restarts. You also configured application settings to provide environment-specific values without rebuilding the image. Finally, you enabled container logging and used diagnostic tools including the log stream and the SCM (Kudu) site to verify configuration and troubleshoot issues.
+
+::: zone-end
 
 ## Additional resources
 

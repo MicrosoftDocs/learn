@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4d523a54-fed8-4bd5-ae72-6ae0336870fb]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Fabric automatically provisions OneLake, built upon Azure Data Lake Gen 2.
 
 ![Diagram showing the function and structure of OneLake.](../media/onelake-foundation-for-fabric.png)
@@ -15,3 +26,5 @@ OneLake is a single, unified, logical data lake designed for your entire organiz
 - **Easy to navigate** It's straightforward to navigate OneLake data from Windows using [OneLake file explorer](/fabric/onelake/onelake-file-explorer).
 
 For more information, see [OneLake, the OneDrive for data](/fabric/onelake/onelake-overview).
+
+::: zone-end
