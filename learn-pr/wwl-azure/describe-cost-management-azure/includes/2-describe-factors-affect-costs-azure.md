@@ -1,7 +1,3 @@
-The following video provides an introduction to things that can impact your costs in Azure.
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ef760ebd-b3c1-44d8-9628-2b54c45fcbfe]
-
 With Azure, you pay for IT resources as you use them instead of purchasing and maintaining your own infrastructure. Whether it's compute, storage, or networking, you rent what you need and release it when you're done. This consumption-based approach means your costs scale with your actual usage.
 
 Many factors affect how much you pay. Some of the factors that affect cost are:
