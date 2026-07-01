@@ -1,6 +1,6 @@
 The financial industry can benefit from the AI revolution by improving performance via automation, and by finding better solutions to ensure data protection and compliance. This module discussed which specific use cases can empower you to achieve these goals, and examples of successful companies implementing these solutions.
 
-We provided an overview of the products and services that Microsoft offers to enable these financial scenarios. Some solutions embed AI in everyday applications for business users, such as Microsoft Teams, Microsoft 365, Microsoft Dynamics 365, and Microsoft Power BI. Others enable your developers to integrate state-of-the-art AI models into your custom applications, such as Azure Machine Learning and Microsoft Foundry, which includes powerful products like Azure OpenAI Services and Azure Document Intelligence.
+We provided an overview of the products and services that Microsoft offers to enable these financial scenarios. Some solutions embed AI in everyday applications for business users, such as Microsoft Teams, Microsoft 365, Microsoft Dynamics 365, and Microsoft Power BI. Others enable your developers to integrate state-of-the-art AI models into your custom applications, such as Azure Machine Learning and Microsoft Foundry, which includes powerful products like Azure OpenAI Service and Azure Document Intelligence.
 
 Now that you've reviewed this module, you should be able to:
 
@@ -10,7 +10,7 @@ Now that you've reviewed this module, you should be able to:
 
 ## Use these resources to discover more
 
-* To learn more about what Microsoft can do for your FSI organization, visit our [Microsoft Cloud for Financial Service website](https://www.microsoft.com/industry/financial-services/microsoft-cloud-for-financial-services).
+* To learn more about what Microsoft can do for your FSI organization, visit our [Microsoft for Financial Services website](https://www.microsoft.com/industry/financial-services/microsoft-cloud-for-financial-services).
 * To learn more about specific Azure services tailored for FSI needs, visit our [Azure for Financial Services website](https://azure.microsoft.com/solutions/industries/financial).
 * To stay up to date with Microsoft AI, visit our [AI website](https://www.microsoft.com/ai).
 * To learn more about Microsoft commitment to responsible AI, visit our [Responsible AI website](https://www.microsoft.com/ai/responsible-ai).
