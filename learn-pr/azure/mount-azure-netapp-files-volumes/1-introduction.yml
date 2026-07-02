@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.mount-azure-netapp-files-volumes.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to mounting Azure NetApp Files volumes.
+  ms.date: 06/02/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
