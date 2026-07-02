@@ -16,7 +16,7 @@ The **Copilot Studio agent** is more flexible—it combines Genie data with othe
 
 ## Learn more
 
-- [Configure AI/BI Genie instructions](/training/modules/create-and-organize-objects-in-unity-catalog/configure-ai-bi-genie-instructions) — knowledge store setup for Genie Spaces
+- [Configure AI/BI Genie instructions](/training/modules/create-and-organize-objects-in-unity-catalog/) — knowledge store setup for Genie Spaces
 - [Use a Genie Space to explore business data](/azure/databricks/genie/talk-to-genie)
 - [Use Azure Databricks data on Microsoft Power Platform](/azure/databricks/integrations/msft-power-platform-usage)
 - [Extend your agent with MCP in Copilot Studio](/microsoft-copilot-studio/agent-extend-action-mcp)

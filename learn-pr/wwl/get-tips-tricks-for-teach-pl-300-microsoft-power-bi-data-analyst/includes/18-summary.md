@@ -10,5 +10,4 @@ Supplemental Resources:
 - [Microsoft Technical Documentation](https://aka.ms/docs) 
 - [Microsoft Whiteboard](https://aka.ms/whiteboard) 
 - [DAX Function Reference](/dax/dax-function-reference) 
-- [PL-300 study guide](https://aka.ms/PL300studyguide1) 
 - [Exam PL-300: Microsoft Power BI Data Analyst ](/learn/certifications/exams/mb-910)

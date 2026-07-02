@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.dpu.passwordless-authentication
+title: Replace passwords with secure authentication methods
+metadata:
+  title: Replace Passwords with Secure Authentication Methods
+  description: 'In this module, you’ll follow an IT team as it transitions its organization to a passwordless model to strengthen and simplify security. In the process, you’ll learn about several passwordless options available to organizations running Windows and how to implement them.'
+  ms.date: 06/25/2026
+  author: sheridan-connor
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Passwords are a common point of failure in modern security, leaving organizations vulnerable to phishing and credential theft. In this module, you learn how passwordless authentication addresses these risks by replacing shared secrets with stronger, device- or identity-based verification methods. You'll explore key approaches—Windows Hello, authenticator apps, and security keys—and learn how to implement them, match them to user scenarios, and apply best practices for deployment to improve both security and the sign-in experience.
+
+abstract: |
+  In this module, you'll learn how to:
+  - Assess common password-related security risks
+  - Describe key passwordless authentication methods
+  - Implement passwordless options such as Windows Hello for Business, authenticator apps, and security keys
+  - Choose the right authentication method for different user scenarios
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/passwordless-authentication.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products: 
+  - windows-11
+units:
+  - learn.dpu.passwordless-authentication.introduction
+  - learn.dpu.passwordless-authentication.understanding-threat-landscape
+  - learn.dpu.passwordless-authentication.passwordless-authentication-definition
+  - learn.dpu.passwordless-authentication.windows-hello-business
+  - learn.dpu.passwordless-authentication.authenticator-apps
+  - learn.dpu.passwordless-authentication.security-keys
+  - learn.dpu.passwordless-authentication.choose-passwordless-method
+  - learn.dpu.passwordless-authentication.deployment-best-practices
+  - learn.dpu.passwordless-authentication.deployment-checklist
+  - learn.dpu.passwordless-authentication.knowledge-check
+  - learn.dpu.passwordless-authentication.summary
+badge:
+  uid: learn.dpu.passwordless-authentication.badge

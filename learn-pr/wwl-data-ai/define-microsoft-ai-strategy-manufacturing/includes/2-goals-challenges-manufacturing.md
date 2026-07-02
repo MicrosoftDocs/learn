@@ -19,7 +19,7 @@ When manufacturing companies implement AI solutions, they expect to solve these 
 
 A first set of challenges for AI solutions in manufacturing involves difficulties in **data curation and management**.
 
-* **Niche customers or data types**: Traditional AI models work by finding patterns in large amounts of data. So, it struggles to deal with niche customers or data types without enough data or standardization. In these situations, it might be more effective to reuse pretrained large language models (LLMs), such as those included in Azure OpenAI Service.
+* **Niche customers or data types**: Traditional AI models work by finding patterns in large amounts of data. So, it struggles to deal with niche customers or data types without enough data or standardization. In these situations, it might be more effective to reuse pretrained large language models (LLMs), such as those included in Azure OpenAI.
 * **Unique file types and physical documents**: Manufacturers usually work with a higher proportion of unique file types such as .cad files, or physical documents such as signed contracts. AI systems don’t directly ingest these documents, so you must transform them.
 * **Restrictive policies**: Sometimes, getting access to the information and tools you need isn’t straightforward. You might need to navigate complicated data protection policies and access requirements. Besides, workers’ councils and legislations might limit the use of AI in certain contexts.
 * **Internal confidential information**: Other times, your own organization requires you to handle certain information with extra care. For example, manufacturing pricing information or design documents are highly sensitive, and you must prevent them from being leaked or misused by unauthorized parties.
@@ -34,6 +34,6 @@ However, other challenges can arise from the manufacturers’ **relations with c
 
 >[!TIP]
 >Take a moment to consider other goals or challenges are specific to your organization. 
->![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
+>![Photo of people working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s explore the most common AI-powered manufacturing use cases for your company to achieve these goals. 

@@ -8,4 +8,4 @@ Now, it's time for you to train a model and invoke it from within an Azure Datab
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2269317&clcid=0x409)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://learn.microsoft.com/)

@@ -1,45 +1,73 @@
-GitHub has many features that help you improve and maintain the quality of your code. Some of these features are included in all plans, such as dependency graph and Dependabot alerts. Others only run in a limited functionality mode on public repositories. There are also others that require a GitHub Advanced Security license to run on private repositories.
+GitHub has many features that help you improve and maintain the quality of your code. Some of these features are included in all plans, such as the dependency graph and Dependabot alerts. Others provide limited functionality on public repositories, while advanced capabilities for private repositories require GitHub Code Security and GitHub Secret Protection.
 
-In this unit, you learn more about GitHub Advanced Security and discover what a project with GitHub Advanced Security looks like.
+In this unit, you'll learn more about GitHub Advanced Security and discover what a project with advanced security capabilities looks like.
 
-## The GitHub Advanced Security features
+## GitHub Advanced Security overview
 
-The following table summarizes the availability of GitHub Advanced Security features on public and private repositories.
+GitHub Advanced Security capabilities are now delivered through two main products:
 
-| **Feature**         | **Public repository**           | **Private repository without Advanced Security** | **Private repository with Advanced Security** |
-| :-----------------: | :---------------------------: | :--------------------------------------------: | :-----------------------------------------: |
-| Code scanning     | Yes                         | No                                           | Yes                                        |
-| Secret scanning   | Yes (limited functionality only) | No                                           | Yes                                       |
-| Dependency review | Yes                         | No                                           | Yes                                       |
-| Security Overview | No                          | No                                           | Yes                                          |
+- **GitHub Code Security** (vulnerability detection and remediation)
+- **GitHub Secret Protection** (secret detection and prevention)
 
-As outlined in the preceding table, all GitHub Advanced Security features except for the Security Overview are enabled by default for all public repositories on GitHub.com. To access these features on private and internal repositories, you need a GitHub enterprise account with a GitHub Advanced Security license.
+Together, these products provide a broader security platform that extends beyond the original GitHub Advanced Security feature set.
 
-A GitHub Advanced Security license provides these features for private and internal repositories:
+## Feature availability
 
-- **Code scanning**: Automatically detects common vulnerabilities and coding errors.
-- **Secret scanning**: Receives alerts when secrets or keys are checked in, excludes files from scanning, and defines up to 100 custom patterns.
-- **Dependency review**: Shows the full effect of changes to dependencies and sees details of any vulnerable versions before you merge a pull request.
-- **Security Overview**: Reviews the security configuration and alerts for an organization and identifies the repositories at greatest risk.
+The following table summarizes the availability of GitHub security features across repository types and products.
+
+| **Feature** | **Public repository** | **Private repository** | **GitHub Code Security** | **GitHub Secret Protection** |
+| :---------- | :-------------------: | :--------------------: | :----------------------: | :--------------------------: |
+| Code scanning (CodeQL) | Yes | No | Yes | No |
+| Copilot Autofix | Yes (limited) | No | Yes | No |
+| Dependency review | Yes | No | Yes | No |
+| Dependabot alerts | Yes | Yes | Yes | No |
+| Dependabot auto-triage rules | No | No | Yes | No |
+| Security campaigns | No | No | Yes | No |
+| Security Overview | No | No | Yes | No |
+| Secret scanning | Yes (basic) | No | No | Yes |
+| Push protection | No | No | No | Yes |
+| Custom secret patterns | No | No | No | Yes |
+
+As shown in the preceding table, many core security features—including code scanning, basic secret scanning, dependency review, and Dependabot alerts—are available by default for public repositories on GitHub.com. Advanced capabilities for private and internal repositories require GitHub Enterprise Cloud or GitHub Team with GitHub Code Security and/or GitHub Secret Protection enabled.
+
+GitHub Code Security and GitHub Secret Protection provide the following enhanced capabilities for private and internal repositories:
+
+- **Code scanning (CodeQL):** Automatically detects vulnerabilities and coding errors and supports AI-assisted fixes through Copilot Autofix (where enabled).
+- **Secret scanning:** Detects exposed secrets in code, blocks leaks with push protection, supports custom secret patterns, and provides enhanced alerting and remediation workflows.
+- **Dependency review:** Shows the impact of dependency changes and highlights vulnerable versions before pull requests are merged.
+- **Security Overview:** Provides organization-wide visibility into security posture, risks, and repository-level alerts.
+- **Security campaigns:** Enables organizations to group, prioritize, and systematically remediate multiple security alerts across repositories, helping teams reduce vulnerabilities faster and at scale.
+
+## Key notes
+
+GitHub has evolved from a single GitHub Advanced Security bundle into a modular platform consisting of:
+
+- GitHub Code Security
+- GitHub Secret Protection
+
+Other important points include:
+
+- Public repositories continue to receive a strong baseline of free security features.
+- Advanced features focus on prevention (such as push protection), automation, and AI-assisted remediation.
 
 ## GitHub Advanced Security in the software development lifecycle
 
-So what difference do the GitHub Advanced Security features make in your software-development lifecycle? Let's have a look at a basic security scenario first.
+What difference do GitHub Advanced Security features make in the software development lifecycle? Let's first look at a basic security scenario.
 
-:::image type="content" source="../media/basic-scenario.png" alt-text="Diagram representing the different stages of the software development lifecycle in a traditional security approach.":::
+:::image type="content" source="../media/basic-scenario.png" alt-text="Diagram thats shows a representation of the different stages of the software development lifecycle in a traditional security approach.":::
 
-This example illustrates a traditional *security as a gate* approach, in which a single security test or a series of security tests take place during the quality-assurance phase. In this scenario, security usually ends up being a bottleneck to shipping the software. This situation is what your company wants to fix by shifting security left.
+This example illustrates a traditional *security as a gate* approach, where one or more security tests take place during the quality assurance phase. In this scenario, security often becomes a bottleneck that delays software delivery. Many organizations address this challenge by shifting security left.
 
 Now, let's look at the same software development lifecycle with GitHub Advanced Security.
 
 :::image type="content" source="../media/github-advanced-security-scenario.png" alt-text="Diagram representing the different stages of the software development lifecycle with GitHub Advanced Security.":::
 
-In this scenario, security is set up right from the beginning through security policies at the project configuration stage. Developers are alerted of potential security issues at every step of the development process:
+In this scenario, security is integrated from the beginning through security policies configured during project setup. Developers receive security feedback throughout the development process.
 
-- **Code scanning**: Scans at every commit and merge for potential vulnerabilities and coding errors.
-- **Secret scanning**: Scans at every commit and merge for tokens and private keys that were accidentally committed.
-- **Dependency review**: Keeps track of the project dependency changes and their effect on project security. It compares the repository manifest files to the databases of known vulnerabilities at every pull request.
+- **Code scanning:** Scans every commit and merge for vulnerabilities and coding errors.
+- **Secret scanning:** Scans every commit and merge for accidentally committed secrets, such as tokens and private keys.
+- **Dependency review:** Monitors dependency changes and evaluates their impact on project security by comparing manifest files against databases of known vulnerabilities during every pull request.
 
-In addition, the **Security Overview** offers administrators a high-level view of the project's security status. This view lets administrators identify problematic repositories that require intervention.
+In addition, **Security Overview** provides administrators with a high-level view of the organization's security posture. This view helps identify repositories that require attention or remediation.
 
-The security of your code is reviewed multiple times before you get to the quality assurance stage, so there's less chance for a bottleneck right before shipping, and less technical debt.
+Because security checks occur throughout the development lifecycle, potential issues are identified and addressed earlier. This approach reduces bottlenecks during quality assurance and minimizes technical debt before software is released.
