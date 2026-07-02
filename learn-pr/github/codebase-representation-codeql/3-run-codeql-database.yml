@@ -5,7 +5,7 @@ metadata:
   unitType: Run CodeQL in a database 
   title: Run CodeQL in a database 
   description: Learn how to analyze your database by using CodeQL queries.
-  ms.date: 07/01/2025
+  ms.date: 07/01/2026
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
