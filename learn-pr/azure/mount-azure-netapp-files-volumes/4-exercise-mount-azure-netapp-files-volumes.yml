@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.mount-azure-netapp-files-volumes.exercise-mount-azure-netapp-files-volumes
+title: Exercise - Mount Azure NetApp Files volumes
+metadata:
+  title: Exercise - Mount Azure NetApp Files Volumes
+  description: Exercise to mount NFS and SMB volumes in Azure NetApp Files.
+  ms.date: 06/02/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-mount-azure-netapp-files-volumes.md)]
