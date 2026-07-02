@@ -6,7 +6,7 @@ metadata:
   description: "This module will help you become familiar with GitHub's Advanced Security features and best practices. As you learn about these features, you'll identify critical areas for eliminating security gaps."
   ms.service: github
   manager: alicondah
-  ms.date: 07/13/2023             # Date of commit to GitHub (cannot be in the future)
+  ms.date: 07/01/2026             # Date of commit to GitHub (cannot be in the future)
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module
