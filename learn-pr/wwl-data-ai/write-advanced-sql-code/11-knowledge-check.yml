@@ -3,11 +3,11 @@ uid: learn.wwl.write-advanced-sql-code.knowledge-check
 title: Module assessment
 metadata:
   ai_generated_module_assessment: true
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check for writing advanced T-SQL code including CTEs, window functions, JSON, regex, and error handling."
-  ms.date: 01/28/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/02/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
