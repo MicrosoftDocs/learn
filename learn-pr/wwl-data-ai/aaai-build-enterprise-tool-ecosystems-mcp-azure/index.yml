@@ -4,8 +4,8 @@ metadata:
   title: Build Enterprise-Grade Tool Ecosystems with MCP and Microsoft Foundry
   description: "Build enterprise-grade tool ecosystems for production multi-agent systems with the Model Context Protocol (MCP) and Microsoft Foundry. Develop custom MCP servers with authentication, implement dynamic tool selection and routing, build tool result validation with fallback pipelines, and govern tool ecosystems with dependency management."
   ms.date: 05/27/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: module-standard-task-based
   ms.service: microsoft-foundry
   ai-usage: ai-assisted

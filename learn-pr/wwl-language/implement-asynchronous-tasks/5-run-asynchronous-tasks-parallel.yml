@@ -6,7 +6,7 @@ metadata:
   description: "Run asynchronous tasks in parallel."
   ms.date: 04/07/2025
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: buzahid
   ms.topic: unit
 durationInMinutes: 6
 content: |

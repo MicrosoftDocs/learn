@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check"
   ms.date: 02/29/2024
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: petender
   ms.topic: unit
   ms.custom:
   - N/A
@@ -80,4 +80,4 @@ quiz:
       explanation: "Incorrect. This describes the purpose of a task, not a trigger."
     - content: "A trigger is a way of organizing jobs in a pipeline."
       isCorrect: false
-      explanation: "Incorrect. This describes the purpose of a stage, not a trigger."
+      explanation: "Incorrect. This describes the purpose of a stage, not a trigger."

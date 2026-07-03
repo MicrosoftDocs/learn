@@ -4,8 +4,8 @@ metadata:
   title: Resolve GitHub issues using GitHub Copilot Agent
   description: "This module covers how to identify and remediate GitHub issues using GitHub Copilot's Ask and Agent modes. The training focuses on security vulnerabilities such as SQL injection, encryption, logging, and path traversal problems."
   ms.date: 11/11/2025
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: github-copilot
 title: Resolve GitHub issues using GitHub Copilot Agent

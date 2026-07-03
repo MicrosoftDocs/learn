@@ -2,11 +2,12 @@
 uid: learn.wwl.design-implement-sql-solutions-ai-assisted-tools.create-configure-copilot-instruction-files
 title: Create and configure GitHub Copilot instruction files
 metadata:
-  title: Create and configure GitHub Copilot instruction files
+  zone_pivot_groups: video-or-text
+  title: Create and Configure GitHub Copilot Instruction Files
   description: Learn how to create custom instruction files that guide GitHub Copilot's behavior for database development, including repository instructions and reusable prompt templates.
-  ms.date: 02/02/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/03/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 durationInMinutes: 12
 content: |

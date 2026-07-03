@@ -4,8 +4,8 @@ metadata:
   title: Add Looping Logic to your Code using the do-while and while Statements in C#
   description: "Use the do-while and while statements to iterate as long as a Boolean expression evaluates to true."
   ms.date: 12/15/2025
-  author: ChrisHowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module
   ms.custom:
   - N/A

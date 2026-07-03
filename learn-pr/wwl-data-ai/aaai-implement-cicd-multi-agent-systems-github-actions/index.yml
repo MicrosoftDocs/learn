@@ -4,8 +4,8 @@ metadata:
   title: Implement CI/CD Pipelines for Multi-Agent Systems with GitHub Actions
   description: "Implement enterprise CI/CD pipelines for multi-agent systems using GitHub Actions and Microsoft Foundry. Design coordinated deployment pipelines with agent version compatibility validation, implement canary and blue-green deployment strategies, configure multi-environment strategies, and automate rollback triggered by quality regression metrics."
   ms.date: 06/01/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: module-standard-task-based
   ms.service: microsoft-foundry
   ai-usage: ai-assisted

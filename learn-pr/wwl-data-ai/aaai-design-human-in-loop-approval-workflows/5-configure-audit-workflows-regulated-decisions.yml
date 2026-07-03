@@ -5,8 +5,8 @@ metadata:
   title: Configure Audit Workflows for Regulated Decisions
   description: "Configure audit workflows for regulated decisions."
   ms.date: 06/05/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

@@ -4,8 +4,8 @@ metadata:
   title: Review the principles of code debugging and exception handling
   description: "This module examines code validation using a combination of testing, debugging, and exception handling. The debugging process and benefits provided by code debugger are reviewed, along with the principals and processes behind exception handling."
   ms.date: 12/15/2025
-  author: ChrisHowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module
   ms.custom:
   - N/A

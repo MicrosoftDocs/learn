@@ -4,8 +4,8 @@ metadata:
   title: Apply Task Decomposition and Agent Collaboration Strategies in Microsoft Foundry
   description: "Apply advanced task decomposition strategies in Microsoft Foundry multi-agent systems. Design prompt chaining workflows, implement LLM-driven adaptive decomposition, configure agent handoff protocols for context-preserving transitions, and balance decomposition granularity against coordination overhead."
   ms.date: 05/26/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: module-standard-task-based
   ms.service: microsoft-foundry
   ai-usage: ai-assisted

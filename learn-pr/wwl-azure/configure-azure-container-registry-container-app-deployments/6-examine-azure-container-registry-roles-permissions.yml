@@ -6,8 +6,8 @@ metadata:
   description: "Examine Azure Container Registry roles and permissions"
   ms.date: 11/22/2023
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-examine-azure-container-registry-roles-permissions.md)]
+  [!include[](includes/6-examine-azure-container-registry-roles-permissions.md)]

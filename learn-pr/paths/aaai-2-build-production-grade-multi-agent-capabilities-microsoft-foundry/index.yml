@@ -4,8 +4,8 @@ metadata:
   title: Build Production-Grade Multi-Agent Capabilities with Microsoft Foundry
   description: Learn how to implement the production-grade technical capabilities required to make multi-agent systems reliable, secure, and maintainable. This training helps learners advance from foundational prompting, tool consumption, and RAG patterns to designing multi-intervention guardrail architectures, building enterprise MCP servers, implementing hybrid RAG pipelines, and architecting durable agent memory systems with Azure Cosmos DB. AI-500
   ms.date: 06/16/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: learning-path
 title: Build production-grade multi-agent capabilities with Microsoft Foundry
 prerequisites: |

@@ -5,8 +5,8 @@ metadata:
   title: Design Multi-Intervention Guardrail Architectures
   description: "Design multi-intervention guardrail architectures."
   ms.date: 05/26/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 25
 content: |

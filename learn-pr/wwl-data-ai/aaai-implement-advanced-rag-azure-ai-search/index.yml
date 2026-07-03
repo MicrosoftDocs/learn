@@ -4,8 +4,8 @@ metadata:
   title: Implement Advanced RAG Pipelines with Azure AI Search and Microsoft Foundry
   description: "Implement advanced retrieval-augmented generation (RAG) pipelines for production AI agents using Azure AI Search and Microsoft Foundry. Design hybrid search architectures, implement reranking strategies, configure dynamic knowledge source routing, and optimize chunking and embedding strategies."
   ms.date: 05/28/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: module-standard-task-based
   ms.service: microsoft-foundry
   ai-usage: ai-generated
