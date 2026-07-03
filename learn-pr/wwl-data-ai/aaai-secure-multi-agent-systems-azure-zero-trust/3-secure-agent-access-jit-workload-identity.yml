@@ -5,8 +5,8 @@ metadata:
   title: Secure Agent Access with JIT and Workload Identity
   description: "Secure agent access with JIT and workload identity."
   ms.date: 06/01/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 7

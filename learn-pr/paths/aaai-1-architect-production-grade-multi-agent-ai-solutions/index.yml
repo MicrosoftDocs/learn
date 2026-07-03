@@ -4,8 +4,8 @@ metadata:
   title: Architect Production-Grade Multi-Agent AI Solutions in Azure AI-500
   description: Learn how to design production-grade agentic AI solutions in Microsoft Foundry. This training covers stateful agentic loop architecture, hierarchical orchestration patterns, dynamic task decomposition strategies, and enterprise-scale agent communication ecosystems, including A2A protocol integration for cross-platform agent connectivity. AI-500
   ms.date: 06/16/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: learning-path
 title: Architect production-grade multi-agent AI solutions in Azure
 prerequisites: |

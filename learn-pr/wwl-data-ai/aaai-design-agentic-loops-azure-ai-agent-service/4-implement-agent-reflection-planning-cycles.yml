@@ -5,8 +5,8 @@ metadata:
   title: Implement Agent Reflection and Planning Cycles
   description: "Implement agent reflection and planning cycles."
   ms.date: 05/20/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 8
 content: |

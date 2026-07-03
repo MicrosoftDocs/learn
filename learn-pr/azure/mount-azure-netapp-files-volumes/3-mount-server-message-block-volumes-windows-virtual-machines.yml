@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.mount-azure-netapp-files-volumes.mount-server-message-block-volumes-windows-virtual-machines
+title: Mount Server Message Block (SMB) volumes for Windows virtual machines
+metadata:
+  title: Mount Server Message Block (SMB) Volumes for Windows Virtual Machines
+  description: Learn how to mount Azure NetApp Files SMB volumes on Windows virtual machines.
+  ms.date: 06/02/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-mount-server-message-block-volumes-windows-virtual-machines.md)]

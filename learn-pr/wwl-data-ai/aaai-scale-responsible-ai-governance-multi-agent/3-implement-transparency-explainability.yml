@@ -5,8 +5,8 @@ metadata:
   title: Implement Transparency and Explainability
   description: "Implement transparency and explainability."
   ms.date: 06/02/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

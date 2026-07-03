@@ -2,11 +2,12 @@
 uid: learn.wwl.design-implement-sql-solutions-ai-assisted-tools.interpret-security-impact
 title: Interpret security impact of using AI-assisted tools
 metadata:
-  title: Interpret security impact of using AI-assisted tools
+  zone_pivot_groups: video-or-text
+  title: Interpret Security Impact of Using AI-assisted Tools
   description: Understand the security implications of using GitHub Copilot and Fabric Copilot, including data processing, organizational policies, and credential protection.
-  ms.date: 02/02/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/03/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 durationInMinutes: 10
 content: |

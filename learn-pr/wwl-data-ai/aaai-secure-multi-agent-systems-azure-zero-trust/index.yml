@@ -4,8 +4,8 @@ metadata:
   title: Secure Multi-Agent Systems with Azure Zero-Trust Architecture
   description: "Secure production multi-agent systems using Azure zero-trust architecture principles. Apply per-agent managed identities with least-privilege access and design authentication flows covering managed identity, on-behalf-of (OBO), user-delegated, and key-based patterns. Manage secrets lifecycle with Azure Key Vault, including rotation and customer-managed keys (CMK) encryption, and design network controls to prevent lateral movement. Implement multitenant data isolation and configure compliance controls for enterprise regulatory requirements."
   ms.date: 06/01/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: module-standard-task-based
   ms.service: microsoft-foundry
   ai-usage: ai-assisted

@@ -6,8 +6,8 @@ metadata:
   description: "Choose variable names that follow rules and conventions"
   no-loc: ["UserOption", "user Option", "userOption"]
   ms.date: 12/15/2025
-  author: ChrisHowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: unit
   ms.custom:
   - N/A

@@ -2,11 +2,12 @@
 uid: learn.wwl.write-advanced-sql-code.graph-queries
 title: Traverse relationships with graph queries
 metadata:
-  title: Traverse relationships with graph queries
+  zone_pivot_groups: video-or-text
+  title: Traverse Relationships with Graph Queries
   description: Learn how to create node and edge tables and write graph queries using the MATCH operator and SHORTEST_PATH in SQL Server and Azure SQL.
-  ms.date: 01/28/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/02/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 durationInMinutes: 14
 content: |

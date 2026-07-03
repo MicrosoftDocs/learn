@@ -5,8 +5,8 @@ metadata:
   title: Implement Fork-Based Sessions and Conversation Resumption
   description: "Implement fork-based sessions and conversation resumption."
   ms.date: 05/20/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 7
 content: |

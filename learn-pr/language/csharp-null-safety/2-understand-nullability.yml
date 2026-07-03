@@ -7,7 +7,7 @@ metadata:
   description: "In the understanding nullability section of the null-safety module, you'll learn the history of nullability in C#. You'll have an understanding of nullability as it relates to the various types with C#."
   ms.date: 07/11/2024
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: buzahid
   ms.topic: unit
 durationInMinutes: 5
 content: |

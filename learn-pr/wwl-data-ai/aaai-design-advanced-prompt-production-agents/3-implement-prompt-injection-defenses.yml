@@ -5,8 +5,8 @@ metadata:
   title: Implement Prompt Injection Defenses
   description: "Implement prompt injection defenses."
   ms.date: 05/26/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 9
 content: |

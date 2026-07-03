@@ -5,8 +5,8 @@ metadata:
   title: Build System Prompt Frameworks for Agent Control
   description: "Build system prompt frameworks for agent control."
   ms.date: 05/26/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 8
 content: |

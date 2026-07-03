@@ -5,8 +5,8 @@ metadata:
   title: Configure Context Window Optimization
   description: "Configure context window optimization."
   ms.date: 05/28/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

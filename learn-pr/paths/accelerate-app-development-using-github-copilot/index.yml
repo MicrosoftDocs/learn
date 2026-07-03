@@ -4,8 +4,8 @@ metadata:
   title: Get Started with AI-Assisted Development
   description: Learn how to use GitHub Copilot in a Visual Studio Code environment. This training covers code analysis, inline and project documentation, app development, unit testing, code refactoring, and provides an introduction to vibe coding. AZ-2007
   ms.date: 03/05/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: learning-path
 title: Get started with AI-assisted development
 prerequisites: |

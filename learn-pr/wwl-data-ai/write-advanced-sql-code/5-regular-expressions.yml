@@ -2,11 +2,12 @@
 uid: learn.wwl.write-advanced-sql-code.regular-expressions
 title: Match patterns with regular expressions
 metadata:
-  title: Match patterns with regular expressions
+  zone_pivot_groups: video-or-text
+  title: Match Patterns with Regular Expressions
   description: Learn how to use regular expression functions like REGEXP_LIKE, REGEXP_REPLACE, REGEXP_SUBSTR, REGEXP_INSTR, REGEXP_COUNT, REGEXP_MATCHES, and REGEXP_SPLIT_TO_TABLE.
-  ms.date: 01/28/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/02/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 durationInMinutes: 14
 content: |

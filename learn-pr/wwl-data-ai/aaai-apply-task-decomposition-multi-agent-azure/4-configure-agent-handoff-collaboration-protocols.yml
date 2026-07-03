@@ -5,8 +5,8 @@ metadata:
   title: Design Agent Handoff Message Schemas
   description: "Design agent handoff message schemas."
   ms.date: 05/26/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 8
 content: |
