@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6fd9148f-6398-4b36-afd7-dc4690e25ffa]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Analytical queries often require calculations that span multiple rows while still returning individual row details. Traditional aggregate functions collapse rows into groups, losing row-level information. Window functions solve this challenge by performing calculations across a set of rows related to the current row, without collapsing the result set.
 
 ## Understand window function syntax
@@ -339,3 +350,5 @@ Road-150 Red, 62            3578.27     0.9919        1.0
 `PERCENT_RANK()` returns a value between 0 and 1 indicating what percentage of rows have lower values (0 means lowest, one means highest). `CUME_DIST()` shows the cumulative distribution, indicating what percentage of rows have values less than or equal to the current row. Use these functions for percentile analysis, identifying outliers, or creating distribution reports.
 
 For more information about window functions, see [Window Functions (Transact-SQL)](/sql/t-sql/queries/select-over-clause-transact-sql?azure-portal=true) and [Ranking Functions](/sql/t-sql/functions/ranking-functions-transact-sql?azure-portal=true).
+
+::: zone-end

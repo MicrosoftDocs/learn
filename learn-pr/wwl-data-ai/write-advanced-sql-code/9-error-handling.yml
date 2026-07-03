@@ -2,11 +2,12 @@
 uid: learn.wwl.write-advanced-sql-code.error-handling
 title: Handle errors with TRY...CATCH
 metadata:
-  title: Handle errors with TRY...CATCH
+  zone_pivot_groups: video-or-text
+  title: Handle Errors with TRY...CATCH
   description: Learn how to implement structured error handling in SQL Server and Azure SQL using TRY...CATCH, error functions, THROW, and transaction management.
-  ms.date: 01/28/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/02/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 durationInMinutes: 12
 content: |

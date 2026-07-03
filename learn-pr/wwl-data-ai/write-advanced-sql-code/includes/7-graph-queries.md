@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f217b6fd-2974-4300-8ca4-c3d55dd4588e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Some data relationships are naturally represented as networks, including social connections, organizational hierarchies, product recommendations, and fraud detection patterns. While you can model these relationships using foreign keys and joins, graph queries using the `MATCH` operator provide a more intuitive and often more efficient way to traverse connected data.
 
 ## Visualize graph data structures
@@ -257,3 +268,5 @@ Graph queries have unique syntax requirements that can cause errors. The followi
 > Graph tables and the `MATCH` operator are available in SQL Server 2017 and later, and Azure SQL Database. The `SHORTEST_PATH` function requires SQL Server 2019 or later. Check your platform's documentation for specific feature availability.
 
 For more information about graph features, see [Graph processing with SQL Server](/sql/relational-databases/graphs/sql-graph-overview?azure-portal=true) and [`MATCH` (Transact-SQL)](/sql/t-sql/queries/match-sql-graph?azure-portal=true).
+
+::: zone-end
