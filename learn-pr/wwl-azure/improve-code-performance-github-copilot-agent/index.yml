@@ -4,8 +4,8 @@ metadata:
   title: Improve Code Performance using GitHub Copilot Agent
   description: "Learn how to identify performance bottlenecks in code and how to optimize code for better performance by using GitHub Copilot in Visual Studio Code."
   ms.date: 10/20/2025
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: github-copilot
 title: Improve code performance using GitHub Copilot Agent

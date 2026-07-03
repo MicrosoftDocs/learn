@@ -4,8 +4,8 @@ metadata:
   title: Debug and Respond to Production Multi-Agent Incidents in Azure
   description: "Debug and respond to production incidents in multi-agent AI solutions in Azure. Implement agent replay capabilities that reproduce complex multi-agent failures, apply structured root cause analysis procedures for multi-agent incident diagnosis, configure automated detection and remediation for common agent failure patterns, and establish incident response and post-mortem processes adapted to the characteristics of AI agent system failures."
   ms.date: 06/05/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: module-standard-task-based
   ms.service: microsoft-foundry
   ai-usage: ai-assisted

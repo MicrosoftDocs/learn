@@ -5,8 +5,8 @@ metadata:
   title: Build MCP Servers with Error Handling and Fallback
   description: "Build MCP servers with error handling and fallback."
   ms.date: 05/27/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 9
 content: |

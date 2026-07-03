@@ -5,8 +5,8 @@ metadata:
   title: Analyze Issues using GitHub Copilot's Ask Mode
   description: "Analyze issues using GitHub Copilot's Ask mode"
   ms.date: 11/11/2025
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: unit
 durationInMinutes: 8
 content: |

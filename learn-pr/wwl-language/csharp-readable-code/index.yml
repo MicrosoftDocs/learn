@@ -4,8 +4,8 @@ metadata:
   title: Create Readable Code with Conventions, Whitespace, and Comments in C#
   description: "Write code that is easier to read, update and support using naming conventions, comments and whitespace."
   ms.date: 12/15/2025
-  author: ChrisHowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module
   ms.collection: N/A
   ms.custom:

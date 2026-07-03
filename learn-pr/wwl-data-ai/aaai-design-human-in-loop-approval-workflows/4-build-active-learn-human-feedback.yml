@@ -5,8 +5,8 @@ metadata:
   title: Build Active Learning from Human Feedback
   description: "Build active learning from human feedback."
   ms.date: 06/05/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

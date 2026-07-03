@@ -5,8 +5,8 @@ metadata:
   title: Implement Tenant Context Propagation and Data Isolation
   description: "Implement tenant context propagation and data isolation."
   ms.date: 06/01/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

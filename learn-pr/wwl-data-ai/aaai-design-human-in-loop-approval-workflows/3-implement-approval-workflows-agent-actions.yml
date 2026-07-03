@@ -5,8 +5,8 @@ metadata:
   title: Implement Approval Workflows for Agent-Initiated Actions
   description: "Implement approval workflows for agent-initiated actions."
   ms.date: 06/05/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

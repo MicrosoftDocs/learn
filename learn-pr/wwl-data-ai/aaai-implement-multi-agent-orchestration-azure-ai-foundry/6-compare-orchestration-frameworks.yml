@@ -5,8 +5,8 @@ metadata:
   title: Compare Orchestration Frameworks
   description: "Compare orchestration frameworks."
   ms.date: 05/21/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 8
 content: |

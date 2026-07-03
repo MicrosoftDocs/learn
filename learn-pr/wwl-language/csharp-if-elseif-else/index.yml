@@ -4,8 +4,8 @@ metadata:
   title: Add Decision Logic to your Code using `if`, `else`, and `else if` Statements in C#
   description: "Learn to branch your code's execution path by evaluating Boolean expressions."
   ms.date: 12/15/2025
-  author: ChrisHowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module
   ms.collection: N/A
   ms.custom:

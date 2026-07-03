@@ -5,8 +5,8 @@ metadata:
   title: Design Parallel Agent Spawning and Synchronization
   description: "Design parallel agent spawning and synchronization."
   ms.date: 05/21/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 9
 content: |

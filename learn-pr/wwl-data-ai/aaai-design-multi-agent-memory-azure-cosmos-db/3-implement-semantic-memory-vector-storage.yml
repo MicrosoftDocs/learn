@@ -5,8 +5,8 @@ metadata:
   title: Implement Semantic Memory with Vector Storage
   description: "Implement semantic memory with vector storage."
   ms.date: 05/28/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

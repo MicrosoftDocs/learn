@@ -4,8 +4,8 @@ metadata:
   title: Implement Advanced Multi-Agent Orchestration Patterns in Microsoft Foundry
   description: "Implement advanced multi-agent orchestration patterns in Microsoft Foundry. Design hub-and-spoke coordination with central orchestrator agents, implement parallel agent spawning with synchronization, configure supervisor patterns for hierarchical task delegation, and evaluate orchestration framework trade-offs."
   ms.date: 05/21/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: module-standard-task-based
   ms.service: microsoft-foundry
   ai-usage: ai-assisted
