@@ -5,8 +5,8 @@ metadata:
   title: Configure Telemetry Aggregation and Dashboards
   description: "Configure telemetry aggregation and dashboards."
   ms.date: 06/04/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

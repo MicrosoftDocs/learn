@@ -5,8 +5,8 @@ metadata:
   title: Implement Hub-and-Spoke Orchestration
   description: "Implement hub-and-spoke orchestration."
   ms.date: 05/21/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 9
 content: |

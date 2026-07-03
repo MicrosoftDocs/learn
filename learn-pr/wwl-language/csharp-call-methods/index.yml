@@ -4,8 +4,8 @@ metadata:
   title: Call Methods from the .NET Class Library using C#
   description: "Use functionality in the .NET Class Library by calling methods that return values, accept input parameters, and more."
   ms.date: 12/15/2025
-  author: ChrisHowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module
   ms.collection: N/A
   ms.custom:

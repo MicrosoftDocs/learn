@@ -4,8 +4,8 @@ metadata:
   title: Implement Distributed Observability for Multi-Agent Solutions with OpenTelemetry
   description: "Implement distributed observability infrastructure for production multi-agent AI solutions using OpenTelemetry and Azure Monitor. Design distributed tracing architectures with correlation propagation, implement structured logging for agent decision paths, configure telemetry aggregation, and build anomaly detection for agent behavior patterns."
   ms.date: 06/04/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: module-standard-task-based
   ms.service: microsoft-foundry
   ai-usage: ai-assisted

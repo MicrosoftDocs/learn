@@ -5,8 +5,8 @@ metadata:
   title: Design Fine-Tuning Strategy and Data Pipelines
   description: "Design fine-tuning strategy and data pipelines."
   ms.date: 05/26/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 20
 content: |

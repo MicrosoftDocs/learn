@@ -4,8 +4,8 @@ metadata:
   title: Govern the Enterprise Agent Lifecycle in Microsoft Foundry
   description: "Govern the enterprise agent lifecycle in Microsoft Foundry. Design agent versioning strategies and approval workflows, implement usage quotas and cost allocation models, establish change management processes for behavioral updates, and design agent retirement workflows that minimize business disruption."
   ms.date: 06/02/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: module-standard-task-based
   ms.service: microsoft-foundry
   ai-usage: ai-assisted

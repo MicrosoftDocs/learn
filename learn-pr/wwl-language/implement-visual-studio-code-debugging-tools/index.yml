@@ -4,8 +4,8 @@ metadata:
   title: Implement the Visual Studio Code debugging tools for C#
   description: "This module explores the tools and processes used to debug C# console applications in Visual Studio Code. Hands-on activities provide experience using breakpoints, conditional breakpoints, and the debugging resources in the RUN AND DEBUG view."
   ms.date: 12/15/2025
-  author: ChrisHowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module
   ms.custom:
   - N/A
