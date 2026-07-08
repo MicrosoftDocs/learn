@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=485286ba-4379-4884-a5ad-f03b7a1dd2d0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI-enabled database solutions often expose model endpoints that applications call to generate predictions, embeddings, or other AI-powered responses. Securing these endpoints protects both your AI models and the data they process. Managed Identity provides a secure, credential-free way to authenticate applications to model endpoints.
 
 When applications call Azure OpenAI, Azure Machine Learning, or other AI services from within your database environment, you need to control who can invoke these calls and protect the communication channel. Let's look at strategies for securing model endpoints in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric.
@@ -184,3 +195,5 @@ To secure AI features in Fabric:
 - Use Fabric's data protection features to control what data AI features can access
 
 For detailed guidance on configuring AI services in Fabric, see the [Fabric AI documentation](/fabric/data-science/ai-services/ai-services-overview?azure-portal=true).
+
+::: zone-end

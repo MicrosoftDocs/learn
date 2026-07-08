@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.implement-data-security-compliance
 metadata:
-  title: Implement data security and compliance with SQL
+  title: Implement Data Security and Compliance With SQL
   description: Learn how to implement data security and compliance features in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric, including encryption, masking, Row-Level Security, and auditing.
-  ms.date: 02/24/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/07/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: module
   ms.service: sql
   ai-usage: ai-generated
