@@ -61,10 +61,10 @@ The Microsoft Agent Framework is a lightweight development kit that you can use 
 
 ### AutoGen
 
-AutoGen is an open-source framework for developing agents rapidly. It's useful as a research and ideation tool when experimenting with agents.
+AutoGen is an open-source framework for developing agents rapidly. It's useful as a research and ideation tool when experimenting with agents. Note that the core concepts pioneered in AutoGen have been incorporated into Microsoft Agent Framework, which is the recommended path for production agent development going forward.
 
 > [!TIP]
-> For more information about AutoGen, see the **[AutoGen documentation](https://microsoft.github.io/autogen/stable/index.html)**.
+> For more information about AutoGen, see the **[AutoGen documentation](https://microsoft.github.io/autogen/stable/index.html)**. If you're looking to migrate from AutoGen to production-ready agent development, see the **[AutoGen to Microsoft Agent Framework migration guide](https://learn.microsoft.com/agent-framework/migration-guide/from-autogen/)**.
 
 ### Microsoft 365 agents SDK
 
@@ -80,12 +80,12 @@ Microsoft Copilot Studio provides a low-code development environment that "citiz
 > [!TIP]
 > For more information about Microsoft Copilot Studio, see the **[Microsoft Copilot Studio documentation](/microsoft-copilot-studio/)**.
 
-### Copilot Studio lite experience in Microsoft 365 Copilot
+### Agent Builder in Microsoft 365 Copilot
 
-Business users can use the *declarative* Copilot Studio lite experience tool in Microsoft 365 Copilot to author basic agents for common tasks. The declarative nature of the tool enables users to create an agent by describing the functionality they need, or they can use an intuitive visual interface to specify options for their agent.
+Business users can use the Agent Builder tool in Microsoft 365 Copilot to author basic agents for common tasks. The declarative nature of the tool enables users to create an agent by describing the functionality they need using natural language, or they can use an intuitive visual interface to specify options for their agent.
 
 > [!TIP]
-> For more information about authoring agents with Copilot Studio lite experience, see the **[Build agents with Copilot Studio lite experience](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build)**.
+> For more information about authoring agents with Agent Builder, see the **[Build agents with Agent Builder in Microsoft 365 Copilot](/microsoft-365/copilot/extensibility/agent-builder-build-agents)**.
 
 ## Choose an agent development solution
 
@@ -93,7 +93,7 @@ With such a wide range of available tools and frameworks, it can be challenging 
 
 | **User Type / Scenario** | **Recommended Solution** | **Key Capabilities** | **Typical Use Cases / Benefits** |
 |---------------------------|---------------------------|-----------------------|----------------------------------|
-| **Business users with little or no software development experience** | **Copilot Studio (lite experience in Microsoft 365 Copilot Chat)** | - Simple declarative agent creation<br>- No coding required | - Automate everyday tasks<br>- Empower non-technical staff to use AI with minimal IT involvement |
+| **Business users with little or no software development experience** | **Agent Builder (in Microsoft 365 Copilot)** | - Simple declarative agent creation<br>- No coding required | - Automate everyday tasks<br>- Empower non-technical staff to use AI with minimal IT involvement |
 | **Business users with low-code development skills (Power Platform)** | **Copilot Studio (full version)** | - Combines low-code tools with business domain knowledge<br>- Extends Microsoft 365 Copilot capabilities<br>- Adds agent functionality to Teams, Slack, Messenger | - Build low-code agentic solutions<br>- Extend enterprise productivity tools |
 | **Professional developers extending Microsoft 365 Copilot** | **Microsoft 365 Agents SDK** | - Full developer flexibility<br>- Build complex extensions targeting Microsoft 365 channels | - Custom integrations and advanced agent behaviors in Microsoft ecosystem |
 | **Professional developers building Azure-based AI solutions** | **Foundry Agent Service** | - Integrates with Azure AI and back-end services<br>- Supports multiple models, storage, and search options | - Create scalable, customized agentic solutions using Azure infrastructure |

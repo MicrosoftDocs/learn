@@ -5,7 +5,7 @@ AI offers tremendous opportunities—but unlocking its value requires a secure f
 AI is unlocking incredible opportunities for organizations, but it’s also introducing new risks. Some of the main business challenges every leader needs to tackle are:
 
 - **Data leakage and oversharing**. 80% of leaders fear sensitive information slipping through the cracks. Without proper oversight, employee use of unapproved tools (shadow AI) can expose sensitive information and increase the risk of breaches.  
--**Compliance challenges**. 52% of leaders admit they’re unsure how to navigate changing AI regulations. Staying compliant isn’t just a box to check—it’s critical to protecting innovation and avoiding costly setbacks.
+- **Compliance challenges**. 52% of leaders admit they're unsure how to navigate changing AI regulations. Staying compliant isn't just a box to check—it's critical to protecting innovation and avoiding costly setbacks.
 
 ## Get started with a phased approach
 

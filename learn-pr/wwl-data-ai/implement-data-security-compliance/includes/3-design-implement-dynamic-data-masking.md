@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9ea3a0c8-0536-46fa-bfba-5d1e4d59dc2a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 [Dynamic Data Masking](/sql/relational-databases/security/dynamic-data-masking?azure-portal=true) provides a way to limit exposure of sensitive data without changing your application code or the underlying data. When users query masked columns, SQL Server returns obfuscated values based on masking rules you define. The actual data remains unchanged in the database, but unauthorized users see masked values in query results.
 
 This approach works well when you need to protect sensitive information from certain users while allowing others to see the complete data. Database administrators, developers, and support staff can work with production data without exposing actual customer information, credit card numbers, or other sensitive values.
@@ -6,7 +17,7 @@ This approach works well when you need to protect sensitive information from cer
 
 Dynamic Data Masking supports four masking functions, each designed for different data types and scenarios. Understanding these functions helps you choose the right masking approach for your sensitive columns.
 
-:::image type="content" source="../media/masking.png" alt-text="Table showing the four Dynamic Data Masking functions with before and after comparisons: Default shows XXXX, Email shows jXXX@XXXX.com, Random shows random numbers, and Partial shows 206-XXX-XX89.":::
+:::image type="content" source="../media/masking.png" alt-text="Diagram that shows the four Dynamic Data Masking functions with before and after comparisons for Default, Email, Random, and Partial.":::
 
 The **default** function replaces the entire value with a fixed string. For strings, you see *"XXXX"* (or fewer X characters for shorter columns). Numbers display as zero, and dates show *"01-01-1900"*. Use this when you want complete obfuscation.
 
@@ -121,3 +132,5 @@ Consider these scenarios where masking is useful:
 > Dynamic Data Masking in SQL databases in Microsoft Fabric works the same way as Azure SQL Database. You configure masks using T-SQL through the SQL analytics endpoint.
 
 Masking adds an important layer of defense, but don't rely on it alone for your most sensitive data. Use it alongside encryption, Row-Level Security, and proper permission management for comprehensive protection.
+
+::: zone-end

@@ -2,12 +2,13 @@
 uid: learn.wwl.implement-data-security-compliance.implement-auditing
 title: Implement auditing
 metadata:
-  title: Implement auditing
+  title: Implement Auditing
   description: Learn how to configure and manage database auditing in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric.
-  ms.date: 02/24/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/07/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
+  zone_pivot_groups: video-or-text
 durationInMinutes: 10
 content: |
   [!include[](includes/6-implement-auditing.md)]
