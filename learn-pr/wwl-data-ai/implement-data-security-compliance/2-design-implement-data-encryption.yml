@@ -2,12 +2,13 @@
 uid: learn.wwl.implement-data-security-compliance.design-implement-data-encryption
 title: Protect data with encryption
 metadata:
-  title: Protect data with encryption
+  title: Protect Data With Encryption
   description: Learn how to implement data encryption in SQL databases using Always Encrypted, column-level encryption, and Transparent Data Encryption.
-  ms.date: 02/04/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/07/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
+  zone_pivot_groups: video-or-text
 durationInMinutes: 12
 content: |
   [!include[](includes/2-design-implement-data-encryption.md)]
