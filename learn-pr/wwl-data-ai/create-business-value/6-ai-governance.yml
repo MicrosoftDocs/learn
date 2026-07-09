@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-business-value.ai-governance
-title: "AI governance"
+title: "AI governance and security"
 metadata:
-  title: "AI Governance"
-  description: "Learn how to create AI governance policies with controls and oversight that balance innovation and organizational safety. Protect stakeholders confidently."
-  ms.date: 06/04/2026
+  title: "AI Governance and Security"
+  description: "Learn how to create AI governance and security policies with controls and oversight that balance innovation and organizational safety. Protect stakeholders confidently."
+  ms.date: 07/09/2026
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
