@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 01/23/2026
-  author: Orin-Thomas
+  ms.date: 07/01/2026
+  author: orin-thomas
   ms.author: orthomas
   ms.topic: unit
   module_assessment: true
@@ -14,36 +14,36 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "To use the advanced capabilities of Security Center with on-premises resources, which of the following steps must you complete?"
+  - content: "Which action should you take to protect on-premises Windows Server computers with Defender for Servers?"
     choices:
-    - content: "You must upgrade the subscription to Standard pricing tier."
-      isCorrect: false
-      explanation: "That's incorrect. You must also upgrade the **Log Analytics** workspace to Standard pricing tier."
-    - content: "You must upgrade the subscription and the **Log Analytics** workspace to Standard pricing tier."
+    - content: "Connect the servers to Azure Arc and enable a Defender for Servers plan for the associated subscription."
       isCorrect: true
-      explanation: "That's correct. You must upgrade the subscription, and also any additional **Log Analytics** workspaces you want to use with Security Center."
-    - content: "You must upgrade the **Log Analytics** workspace to Standard pricing tier."
+      explanation: "That's correct. Non-Azure servers should be onboarded as Azure Arc-enabled servers and protected with Defender for Servers."
+    - content: "Install the Log Analytics agent and upgrade the Log Analytics workspace to the Standard pricing tier."
       isCorrect: false
-      explanation: "That's incorrect. You must also upgrade the subscription to Standard pricing tier."
-  - content: "Which of the following recommendations relating to Secure management ports can be resolved by selecting the Quick Fix button?"
+      explanation: "That's incorrect. The Log Analytics agent retired in November 2024, and Standard pricing tier guidance no longer applies."
+    - content: "Add the servers directly to a Microsoft Sentinel workspace."
+      isCorrect: false
+      explanation: "That's incorrect. Microsoft Sentinel can collect and analyze security data, but Defender for Servers protection for non-Azure machines requires Azure Arc onboarding."
+  - content: "Which Defender for Servers capabilities replace Log Analytics agent-based collection for most server protection features?"
     choices:
-    - content: "Internet-facing VMs should be protected with network security groups."
-      isCorrect: false
-      explanation: "That's incorrect. You must remediate this issue manually."
-    - content: "Management ports should be closed on your VMs."
-      isCorrect: false
-      explanation: "That's incorrect. You must remediate this issue manually."
-    - content: "Management ports of VMs should be protected with just-in-time network access control."
+    - content: "Microsoft Defender for Endpoint integration and agentless machine scanning."
       isCorrect: true
-      explanation: "That's correct. You can apply a quick fix to remediate this issue automatically."
-  - content: "You want to check for vulnerabilities in your deployed VMs. You have applied **Enable the built-in vulnerability assessment solution on virtual machines (powered by Qualys)** on your VMs. Where in Security Center can you review discovered vulnerabilities?"
+      explanation: "That's correct. Defender for Servers now relies on Defender for Endpoint integration and agentless scanning for most server protection capabilities."
+    - content: "Azure Monitor workbooks and Azure Service Health."
+      isCorrect: false
+      explanation: "That's incorrect. These services don't replace Defender for Servers protection features."
+    - content: "Microsoft Sentinel analytics rules and Log Analytics workspace keys."
+      isCorrect: false
+      explanation: "That's incorrect. Microsoft Sentinel analytics rules don't replace endpoint protection, and workspace-key based MMA onboarding is retired."
+  - content: "You want to review vulnerabilities discovered on protected VMs by Microsoft Defender Vulnerability Management. Where should you look in Defender for Cloud?"
     choices:
-    - content: "Go to the **Recommendations** page, and under **Remediate vulnerabilities**, search for the **Vulnerabilities in your virtual machines should be remediated (powered by Qualys)** recommendation."
+    - content: "On the **Recommendations** page, select **Machines should have vulnerability findings resolved**."
       isCorrect: true
-      explanation: "That's correct. Security Center lists vulnerabilities discovered by this assessment in this recommendation."
-    - content: "Go to the **Recommendations** page, and under **Remediate vulnerabilities**, search for the **Vulnerability assessment solution should be installed on your virtual machines** recommendation."
+      explanation: "That's correct. Defender for Cloud lists vulnerability findings from configured scanners under this recommendation."
+    - content: "On the **Recommendations** page, select **Enable the built-in vulnerability assessment solution on virtual machines (powered by Qualys)**."
       isCorrect: false
-      explanation: "That's incorrect. This vulnerability lists VMs that don't have the assessment installed."
-    - content: "Go to the **Recommendations** page, and under **Remediate vulnerabilities**, search for the **Enable the built-in vulnerability assessment solution on virtual machines (powered by Qualys)** recommendation."
+      explanation: "That's incorrect. The built-in scanner now uses Microsoft Defender Vulnerability Management; Qualys is a supported BYOL partner option."
+    - content: "On the **Regulatory compliance** page, select **PCI DSS v4.0.1**."
       isCorrect: false
-      explanation: "That's incorrect. This vulnerability lists VMs where the assessment is not enabled."
+      explanation: "That's incorrect. Regulatory compliance standards summarize compliance posture; vulnerability findings are reviewed from recommendations or from Vulnerability Management in the Defender portal."
