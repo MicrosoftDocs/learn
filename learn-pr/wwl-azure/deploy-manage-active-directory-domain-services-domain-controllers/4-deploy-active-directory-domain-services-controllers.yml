@@ -4,10 +4,10 @@ title: Deploy Active Directory Domain Services domain controllers
 metadata:
   title: Deploy Active Directory Domain Services domain controllers
   description: "Deploy Active Directory Domain Services domain controllers"
-  ms.date: 06/18/2024
+  ms.date: 07/01/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-deploy-active-directory-domain-services-controllers.md)]
+  [!include[](includes/4-deploy-active-directory-domain-services-controllers.md)]
