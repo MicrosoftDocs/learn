@@ -1,83 +1,76 @@
-The engineering team at Contoso decides to perform a trial of Microsoft Defender for Cloud. As part of the trial, they have a number of VM resources that they want to protect. From the **Overview** blade of the **Microsoft Defender for Cloud**, the team members review the overall security picture. The team notices that the **Overall Security Score** is just 38 percent. They also notice that under the **Resource security hygiene** heading, there are a significant number of recommendations. They decide to attempt to tighten up security on their resources.
+The engineering team at Contoso decides to perform a trial of Microsoft Defender for Cloud. As part of the trial, they have a number of VM resources that they want to protect. From the **Overview** page of **Microsoft Defender for Cloud**, the team members review the overall security picture. The team notices that the **Secure score** is just 38 percent. They also notice that there are many security recommendations. They decide to tighten security on their resources.
 
 ## Audit your VM’s regulatory compliance
 
-The team starts with reviewing regulatory compliance. Under the **Regulatory compliance** heading, they review the following measurements: **PCI DSS 3.2.1**, **ISO 27001**, and **Azure CIS 1.1.0**. A member of the team selects the **Regulatory compliance** tile and additional information displays.
+The team starts by reviewing regulatory compliance. Microsoft Defender for Cloud continually assesses resource configuration against assigned standards, benchmarks, and best practices. By default, Azure subscriptions are assessed against the Microsoft Cloud Security Benchmark (MCSB). You can add more standards when your organization needs to measure compliance against specific frameworks.
 
-The following table describes the compliance standards against which you can measure your security.  
+The following table describes examples of compliance standards against which you can measure your security.
 
 |Compliance standard|Description|
 |-------------------|-----------|
-|**PCI DSS 3.2.1**|The Payment Card Industry Data Security Standard (PCI DSS) addresses security issues for organizations that manage credit card payments, and is intended to reduce card fraud.|
-|**ISO 27001**|Part of the International Standards Organization (ISO) 27000 family of standards, 27001 defines a system that can bring management to IT systems. To be certified to have met this standard's criteria, organizations must submit to an audit.|
-|**Azure CIS 1.1.0**|The Center for Internet Security (CIS) is an organization involved in developing best practice for securing It system. The Azure CIS 1.1.0 standard is devised to help ensure that organizations can secure their resources in the Azure cloud.|
-|**SOC TSP**|The Service Organization Controls (SOC) framework is a standard for controls that focuses on safeguarding the confidentiality and privacy of information stored and processed in the cloud.|
+|**Microsoft Cloud Security Benchmark**|The Microsoft Cloud Security Benchmark provides Microsoft-recommended security controls and best practices for Azure and other cloud platforms.|
+|**PCI DSS v4.0.1**|The Payment Card Industry Data Security Standard (PCI DSS) addresses security issues for organizations that manage credit card payments and is intended to reduce card fraud.|
+|**CIS Azure Foundations v2.1.0**|The Center for Internet Security (CIS) Azure Foundations Benchmark provides independent best-practice recommendations for securing Azure environments.|
+|**SOC 2023**|The Service Organization Controls (SOC) framework focuses on controls for safeguarding the confidentiality, availability, processing integrity, security, and privacy of information.|
+|**ISO/IEC 27001:2022**|ISO/IEC 27001 defines requirements for establishing, implementing, maintaining, and improving an information security management system.|
 
 To review your compliance posture relative to these standards, use the following procedure:
 
-1. In the Azure portal, in **Microsoft Defender for Cloud**, on the **Regulatory compliance** blade, select **Download now >**.
-2. On the **Download report** blade, in the **Report standard** list, select the compliance standard. For example, select **SOC TSP** and then select **Download**.
-3. Open the downloaded PDF and review its contents.
+1. In the Azure portal, in **Microsoft Defender for Cloud**, select **Regulatory compliance**.
+2. Select the compliance standard you want to review. For example, select **Microsoft Cloud Security Benchmark** or **PCI DSS v4.0.1**.
+3. Review the standard's controls, control status, and failed assessments.
+4. If you need an offline copy, export or download the report for the selected standard, and then review the report contents.
 
-To review compliance remediation details, on the **Regulatory Compliance** blade, use the following procedure:
+To review compliance remediation details, on the **Regulatory compliance** page, use the following procedure:
 
-1. Select the appropriate tab for the relevant standard. For example, select **SOC TSP**.
-2. To review additional details about a recommendation, select it from the **Assessment** list, and then select **View affected machines**.
+1. Select the appropriate standard.
+2. Select a control or assessment that has failed resources.
+3. Review the affected resources and remediation steps.
+4. Apply the recommended remediation to the affected resources.
 
 ## Remediate security recommendations
 
-It's important to do more than just review how your organization compares with security and compliance standards. You should also seek to tighten your security to try and meet those standards. To access and apply security recommendations, in the Azure portal, in **Microsoft Defender for Cloud**, select the **Overall Secure Score** tile. Use the following procedure to apply recommendations for your subscription:
+It's important to do more than just review how your organization compares with security and compliance standards. You should also tighten your security to try to meet those standards. Defender for Cloud calculates secure score from recommendations that help you improve your security posture. Use the following procedure to review and apply recommendations for your subscription:
 
-1. On the **Secure Score Dashboard**, select the appropriate subscription, and then select **View recommendations**.
-2. On the **Recommendations** blade, you can download a CSV report. You can also expand the details for listed recommendations.
-3. Select a specific recommendation, and then on the recommendation blade (the name of which varies based on the recommendation title), you can expand **Remediation steps** and review the manual steps required to address the security issue. You can then switch to those resources and apply the remediation steps.
+1. In **Microsoft Defender for Cloud**, select **Recommendations**.
+2. Filter recommendations by subscription, resource type, severity, or initiative as required.
+3. Select a specific recommendation, and then review the description, affected resources, attack path context where available, and remediation steps.
+4. Apply the remediation steps to the affected resources.
 
     > [!TIP]
-    > In some circumstances, you can apply a quick fix by selecting **Remediate** on the specific recommendation. This applies the remediation automatically when you select.
+    > In some circumstances, you can apply a quick fix by selecting **Fix** or **Remediate** on the specific recommendation. Quick fixes apply supported remediations automatically to selected resources.
 
-4. You can also apply a logic app to fix the listed resources. To do this, select the affected resources, and then select **Trigger Logic App**.
-5. On the **Logic App Trigger** blade, after the logic apps load, select the appropriate logic app, and then select **Trigger**.
+5. Where supported, use workflow automation or governance rules to notify resource owners, create tasks, or trigger a Logic Apps playbook.
 
 ## Run a vulnerability assessment against your Windows Server IaaS VM
 
-You can use Microsoft Defender for Cloud to perform a vulnerability assessment on your VMs. First, however, you must install a vulnerability assessment solution on the required resources.
+You can use Microsoft Defender for Cloud to perform vulnerability assessment on your VMs. Defender for Servers provides integrated vulnerability scanning through Microsoft Defender Vulnerability Management. Defender for Servers supports two scanning approaches:
 
-### Install the vulnerability assessment solution
+- **Agent-based scanning** uses the Defender for Endpoint sensor and is available with Defender for Servers Plan 1 and Plan 2.
+- **Agentless scanning** scans supported machines without deploying another endpoint agent and is available with Defender for Servers Plan 2.
 
-Azure provides a built-in vulnerability assessment solution. To enable this on your VMs, use the following procedure:
+### Enable integrated vulnerability scanning
 
-1. Open  **Microsoft Defender for Cloud**, and then select **Recommendations**.
-2. On the **Recommendations** blade, if necessary, select an appropriate subscription.
-3. In the **Controls** list, expand **Remediate vulnerabilities**, and then select the **Enable the built-in vulnerability assessment solution on virtual machines (powered by Qualys)** recommendation.
-4. Select all VMs that you want to apply the assessment to, and then select **Remediate**.
-5. On the **Remediate resources** blade, select **Remediate *n* resources**. The process might take a few minutes or longer depending on the number of resources being remediated.
+To enable integrated vulnerability scanning on your VMs, use the following procedure:
+
+1. Open **Microsoft Defender for Cloud**, and then select **Recommendations**.
+2. Select the **Machines should have a vulnerability assessment solution** recommendation if it appears.
+3. Select the affected machines that require a vulnerability assessment solution.
+4. Follow the remediation steps to enable Microsoft Defender Vulnerability Management through Defender for Endpoint, or enable agentless scanning by using Defender for Servers Plan 2.
 
 > [!TIP]
-> In addition to the built-in vulnerability scanner, you can also install third-party scanners.
+> If your organization already uses a supported third-party vulnerability scanner, you can bring your own license (BYOL) for supported Qualys or Rapid7 integrations. Integrated Microsoft Defender Vulnerability Management is the recommended built-in experience.
 
 ### Perform the vulnerability assessment
 
-After you install the vulnerability assessment, you can perform the assessment. To begin the assessment:
+After integrated vulnerability scanning is enabled, Defender for Cloud starts collecting vulnerability data from Microsoft Defender Vulnerability Management. To review vulnerability findings:
 
-1. On the **Enable the built-in vulnerability assessment solution on virtual machines (powered by Qualys)** blade, refresh the display and wait until all resources display on the **Healthy resources** tab. (This can take a few minutes or longer.)
-2. After the resources display on the **Healthy resources** tab, verify that scanning begins automatically.
+1. In Microsoft Defender for Cloud, select **Recommendations**.
+2. Select **Machines should have vulnerability findings resolved**.
+3. Review the findings for the selected subscriptions. Defender for Cloud lists findings by severity.
+4. To filter findings by a specific VM, open **Affected resources**, and then select the VM.
+5. Select a vulnerability to review affected CVEs, evidence, and remediation steps.
+6. Apply the recommended remediation, such as installing an update, removing vulnerable software, or changing a configuration.
 
 > [!NOTE]
-> Scans run at four-hour intervals. You cannot change this setting.
-
-After Microsoft Defender for Cloud identifies vulnerabilities, they are presented as recommendations. To review the findings and remediate the identified vulnerability, use the following procedure:
-
-1. Open **Microsoft Defender for Cloud** and go to the **Recommendations** page.
-2. Select **Remediate vulnerabilities**, and then select **Vulnerabilities in your virtual machines should be remediated (powered by Qualys)**.
-
-Microsoft Defender for Cloud displays all the findings for all VMs in the currently selected subscriptions. These findings are listed in order of severity. To learn more about a specific vulnerability, select it.
-
-> [!TIP]
-> To filter the findings by a specific VM, open the **Affected resources** section, and then select the VM. Alternatively, you can select a VM from resource health, and review all the relevant recommendations for that resource.
-
-## Additional reading
-
-You can learn more by reviewing the following documents:
-
-- [Tutorial: Improve your regulatory compliance](https://aka.ms/improve-regulatory-compliance?azure-portal=true).
-- [Vulnerability assessments for your Azure Virtual Machines](https://aka.ms/vulnerability-assessment-recommendations?azure-portal=true).
+> In the Microsoft Defender portal, cloud vulnerability data is also available under **Exposure Management** > **Vulnerability Management** > **Overview** > **Cloud**.
