@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-windows-server-service-accounts.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding of Windows Server service account types and how to select them.
+  ms.date: 07/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which built-in identity has minimal local privileges but presents the computer's identity on the network?"
+    choices:
+    - content: "LocalService"
+      isCorrect: false
+      explanation: "Incorrect. LocalService has minimal local privileges but accesses the network as an anonymous (null) session, not the computer identity."
+    - content: "NetworkService"
+      isCorrect: true
+      explanation: "Correct. NetworkService has minimal local privileges and presents the computer account on the network."
+    - content: "LocalSystem"
+      isCorrect: false
+      explanation: "Incorrect. LocalSystem presents the computer identity on the network, but it has extensive local privileges."
+  - content: "A web app runs behind a network load balancer across three servers. Which account type should you use?"
+    choices:
+    - content: "Standalone Managed Service Account (sMSA)"
+      isCorrect: false
+      explanation: "Incorrect. An sMSA is bound to a single computer and can't be shared across a farm."
+    - content: "Group Managed Service Account (gMSA)"
+      isCorrect: true
+      explanation: "Correct. A gMSA provides one identity that multiple servers, including a load-balanced farm, can use."
+    - content: "Virtual account"
+      isCorrect: false
+      explanation: "Incorrect. A virtual account is a local account tied to a single machine."
+  - content: "What one-time step must you complete in the forest before you deploy your first gMSA?"
+    choices:
+    - content: "Run Install-ADServiceAccount on each server."
+      isCorrect: false
+      explanation: "Incorrect. Install-ADServiceAccount runs per host; it isn't a one-time forest task."
+    - content: "Create the KDS root key."
+      isCorrect: true
+      explanation: "Correct. The Key Distribution Services root key must exist before the first gMSA password can be generated."
+    - content: "Raise the domain functional level to Windows Server 2025."
+      isCorrect: false
+      explanation: "Incorrect. A gMSA requires the KDS root key, not a Windows Server 2025 functional level."
+  - content: "Which statement about delegated Managed Service Accounts (dMSA) is correct?"
+    choices:
+    - content: "You can migrate an existing gMSA directly to a dMSA."
+      isCorrect: false
+      explanation: "Incorrect. You can't migrate an sMSA or gMSA to a dMSA."
+    - content: "A dMSA binds authentication to a device identity to help prevent Kerberoasting."
+      isCorrect: true
+      explanation: "Correct. A dMSA uses machine-bound, domain controller-held keys, so only mapped machine identities can authenticate."
+    - content: "A dMSA password is cached on every member server."
+      isCorrect: false
+      explanation: "Incorrect. The dMSA secret never leaves the domain controller."
