@@ -1,6 +1,6 @@
 
 
-All topics covered in the DP-203: Microsoft Azure Data Engineering course are related to data engineering on Azure and map directly to [Exam DP-203: Microsoft Azure Data Engineering](https://aka.ms/dp203exam). Percentages indicate the relative weight of each area on the exam. The higher the percentage, the more questions you are likely to see in that area. For the most up to date breakdown, download the [DP-203 study guide](https://aka.ms/dp203studyguide) from the [Exam DP-203: Microsoft Azure Data Engineering](https://aka.ms/az104exam) page. 
+All topics covered in the DP-203: Microsoft Azure Data Engineering course are related to data engineering on Azure and map directly to [Exam DP-203: Microsoft Azure Data Engineering](https://aka.ms/dp203exam). Percentages indicate the relative weight of each area on the exam. The higher the percentage, the more questions you are likely to see in that area. For the most up to date breakdown, download the DP-203 study guide from the [Exam DP-203: Microsoft Azure Data Engineering](https://aka.ms/az104exam) page. 
 
 Become familiar with the objective domains which are a comprehensive set of specific and measurable knowledge, skills, and abilities that are the basis for the development of both this course and the certification exam: 
 

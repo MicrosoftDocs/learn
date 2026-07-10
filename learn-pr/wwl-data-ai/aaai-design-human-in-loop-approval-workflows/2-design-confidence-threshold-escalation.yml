@@ -5,8 +5,8 @@ metadata:
   title: Design Confidence-Based Escalation for Human Intervention
   description: "Design confidence-based escalation for human intervention."
   ms.date: 06/05/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

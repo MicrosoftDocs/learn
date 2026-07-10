@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-windows-server-service-accounts.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Understand what a service account is, how Windows uses it, and the common problems that motivate careful service account selection.
+  ms.date: 07/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction.md)]

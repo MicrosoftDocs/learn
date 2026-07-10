@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.passwordless-authentication.windows-hello-business
+title: Use Windows Hello for Business
+metadata:
+  title: Use Windows Hello for Business
+  description: This content is part of the "Replace passwords with secure authentication methods" module.
+  ms.date: 06/25/2026
+  author: sheridan-connor
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-windows-hello-business.md)]

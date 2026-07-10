@@ -4,8 +4,8 @@ metadata:
   title: Store and Iterate Through Sequences of Data using Arrays and the foreach Statement in C#
   description: "Learn to create array variables and iterate through elements of the array."
   ms.date: 12/15/2025
-  author: ChrisHowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module
   ms.custom:
   - N/A

@@ -5,8 +5,8 @@ metadata:
   title: Design Session State and Context Management
   description: "Design session state and context management."
   ms.date: 05/20/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 8
 content: |

@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=47931be5-0477-4fb0-8799-a0fdff3b2a24]
+
+::: zone-end
+
+::: zone pivot="text"
+
 The `azure_ml` schema of the `azure_ai` extension allows your database to interact with the capabilities of custom-built machine-learning models. By utilizing the `azure_ml` schema, you can seamlessly integrate your PostgreSQL database with Azure Machine Learning services. This integration enables you to deploy and serve machine learning models directly from your database, making real-time inferencing efficient, and scalable.
 
 ## Real-time inference with the `azure_ml` schema
@@ -108,3 +116,5 @@ SELECT azure_ai.set_setting('azure_ml.endpoint_key', '{api-key}');
 ## Takeaways
 
 By applying the `azure_ml` schema in the `azure_ai` extension, you can easily integrate your PostgreSQL database with Azure Machine Learning services. This integration allows for real-time inferencing using custom machine learning models, enabling you to enhance your applications with predictive capabilities directly from your database environment.
+
+::: zone-end

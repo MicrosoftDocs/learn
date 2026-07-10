@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.dpu.work-smarter-copilot-operations
+title: Work smarter with Copilot prompts for Operations professionals
+metadata:
+  title: Work Smarter With Copilot Prompts For Operations Professionals
+  description: >
+    In this module, you'll learn how to use Microsoft 365 Copilot to work smarter and more efficiently in your role as an Operations professional. You'll learn how to use Copilot prompts to automate tasks, generate insights, and improve decision-making.
+  ms.date: 06/25/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: microsoft-365-business
+summary: >
+  In this module, you'll learn how to use Microsoft 365 Copilot to work smarter and more efficiently in your role as an Operations professional. You'll learn how to use Copilot prompts to automate tasks, generate insights, and improve decision-making.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand how to use Microsoft 365 Copilot to work smarter and more efficiently in your role as an Operations professional.
+  - Use Copilot prompts to automate tasks, generate insights, and improve decision-making.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/work-smarter-copilot-operations-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - m365-business
+units:
+  - learn.dpu.work-smarter-copilot-operations.introduction
+  - learn.dpu.work-smarter-copilot-operations.start-strong
+  - learn.dpu.work-smarter-copilot-operations.stakeholder-update-and-alignment
+  - learn.dpu.work-smarter-copilot-operations.end-of-day-wrap
+  - learn.dpu.work-smarter-copilot-operations.knowledge-check
+  - learn.dpu.work-smarter-copilot-operations.summary
+badge:
+  uid: learn.dpu.work-smarter-copilot-operations.badge

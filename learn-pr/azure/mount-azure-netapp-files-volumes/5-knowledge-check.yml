@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.mount-azure-netapp-files-volumes.knowledge-check
+title: Module assessment
+metadata:
+  unitType: knowledge_check
+  title: Module Assessment
+  description: Test your knowledge of mounting Azure NetApp Files volumes.
+  ms.date: 06/02/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+    - content: "Which protocol is commonly used to mount NFS volumes on Linux virtual machines?"
+      choices:
+        - content: "NFS"
+          isCorrect: true
+          explanation: "Correct. The NFS (Network File System) protocol is commonly used to mount NFS volumes on Linux or Windows virtual machines. NFS allows remote file systems to be accessed over a network, enabling Linux and Windows systems to mount and access shared directories or files from NFS servers."
+        - content: "FTP"
+          isCorrect: false
+          explanation: "Incorrect. FTP (File Transfer Protocol) is a different protocol used for transferring files over a network."
+        - content: "HTTP"
+          isCorrect: false
+          explanation: "Incorrect. HTTP (Hypertext Transfer Protocol) is a protocol primarily used for web communication."
+        - content: "SMB"
+          isCorrect: false
+          explanation: "Incorrect. SMB (Server Message Block) is a protocol commonly used for file and printer sharing in Windows environments."
+    - content: "What should you use to improve connection reliability when mounting NFS volumes on Windows NFS client?"
+      choices:
+        - content: "mtype=hard"
+          isCorrect: true
+          explanation: "Correct. Using mtype=hard helps reduce connection issues."
+        - content: "sec=krb5"
+          isCorrect: false
+          explanation: "Incorrect. This option is related to security mode and isn't the specific recommendation here."
+        - content: "vers=2"
+          isCorrect: false
+          explanation: "Incorrect. NFSv2 isn't the recommended option here."
+        - content: "nolock"
+          isCorrect: false
+          explanation: "Incorrect. This option isn't the recommendation for improving reliability in this scenario."
+    - content: "What should you select from a volume to view the steps for mounting it on a client?"
+      choices:
+        - content: "Volume properties"
+          isCorrect: false
+          explanation: "Incorrect. Volume properties can show details such as the IP address, but the module directs you to another option for mounting steps."
+        - content: "Mount instructions"
+          isCorrect: true
+          explanation: "Correct. You select Mount instructions from the selected volume to view the steps for mounting NFS or SMB volumes."
+        - content: "Export policies"
+          isCorrect: false
+          explanation: "Incorrect. Export policies are required for accessing NFS volumes, but they aren't the option used to display mounting steps."
+        - content: "Storage services"
+          isCorrect: false
+          explanation: "Incorrect. Storage services contain the Volumes pane, but the mounting steps are accessed from Mount instructions on the selected volume."

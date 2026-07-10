@@ -2,11 +2,11 @@
 uid: learn.wwl.design-implement-database-objects.exercise-create-database-objects
 title: Exercise - Create and maintain database objects
 metadata:
-  title: Exercise - Create and maintain database objects
+  title: Exercise - Create and Maintain Database Objects
   description: "Hands-on exercise to create and maintain database objects"
-  ms.date: 02/24/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/01/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 azureSandbox: true
 labModal: true

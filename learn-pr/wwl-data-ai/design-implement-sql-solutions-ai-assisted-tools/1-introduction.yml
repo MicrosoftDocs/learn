@@ -2,11 +2,12 @@
 uid: learn.wwl.design-implement-sql-solutions-ai-assisted-tools.introduction
 title: Introduction
 metadata:
-  title: Introduction to AI-assisted SQL development tools
+  zone_pivot_groups: video-or-text
+  title: Introduction to AI-assisted SQL Development Tools
   description: Learn how GitHub Copilot and Fabric Copilot can accelerate database development on Microsoft SQL platforms including SQL Server, Azure SQL, and Microsoft Fabric.
-  ms.date: 02/02/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/03/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 durationInMinutes: 2
 content: |

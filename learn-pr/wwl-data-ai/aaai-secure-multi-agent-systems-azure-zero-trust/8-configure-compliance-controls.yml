@@ -5,8 +5,8 @@ metadata:
   title: Configure Compliance Controls for Regulated Agent Deployments
   description: "Configure compliance controls for regulated agent deployments."
   ms.date: 06/01/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

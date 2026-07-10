@@ -5,8 +5,8 @@ metadata:
   title: Automate Prompt Regression and Optimization
   description: "Automate prompt regression and optimization."
   ms.date: 05/26/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 6
 content: |

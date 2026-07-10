@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a0185ac6-d0d8-4009-8514-e0bc87de2029]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 [Scalar functions](/sql/relational-databases/user-defined-functions/user-defined-functions?azure-portal=true) are essential tools in SQL Server that allow you to encapsulate reusable logic and return a single value. You can use them directly in `SELECT` statements, `WHERE` clauses, and other [T-SQL](/sql/t-sql/language-reference?azure-portal=true) expressions, making your queries more maintainable and your code more modular.
 
 ## Understand scalar function fundamentals
@@ -147,3 +158,5 @@ DROP FUNCTION IF EXISTS dbo.CalculateSalesTax
 ```
 
 The `IF EXISTS` clause prevents errors if the function doesn't exist, which is useful in deployment scripts. Before dropping a function, verify that no other database objects depend on it by checking system views like `sys.sql_expression_dependencies`.
+
+::: zone-end

@@ -2,11 +2,12 @@
 uid: learn.wwl.write-advanced-sql-code.window-functions
 title: Apply window functions for analytics
 metadata:
-  title: Apply window functions for analytics
+  zone_pivot_groups: video-or-text
+  title: Apply Window Functions for Analytics
   description: Learn how to use window functions including ranking, aggregate, and analytical functions to perform calculations across related rows in SQL Server and Azure SQL.
-  ms.date: 01/28/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/02/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 durationInMinutes: 14
 content: |

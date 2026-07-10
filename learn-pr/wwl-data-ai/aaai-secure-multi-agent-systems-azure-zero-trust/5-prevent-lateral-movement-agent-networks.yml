@@ -5,8 +5,8 @@ metadata:
   title: Prevent Lateral Movement in Agent Networks
   description: "Prevent lateral movement in agent networks."
   ms.date: 06/01/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

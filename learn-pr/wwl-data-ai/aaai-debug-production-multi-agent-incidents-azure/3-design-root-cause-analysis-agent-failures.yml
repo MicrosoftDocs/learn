@@ -5,8 +5,8 @@ metadata:
   title: Design Root Cause Analysis for Agent Failures
   description: "Design root cause analysis for agent failures."
   ms.date: 06/05/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

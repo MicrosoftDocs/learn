@@ -5,8 +5,8 @@ metadata:
   title: Configure GitHub Copilot settings in Visual Studio Code
   description: "Configure GitHub Copilot in Visual Studio Code"
   ms.date: 04/16/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: unit
   ms.custom:
   - N/A

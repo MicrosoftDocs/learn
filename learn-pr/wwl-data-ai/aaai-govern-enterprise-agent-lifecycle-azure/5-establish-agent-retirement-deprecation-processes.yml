@@ -5,8 +5,8 @@ metadata:
   title: Establish Agent Retirement and Deprecation Processes
   description: "Establish agent retirement and deprecation processes."
   ms.date: 06/02/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.microsoft-365-school-productivity.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Use Microsoft 365 to stay productive throughout your school day" module.
+  ms.date: 06/29/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Alex has several assignments due this week and isn't sure where to begin. What should Alex do first?"
+    choices:
+        - content: "Start writing the longest assignment right away."
+          isCorrect: false
+          explanation: ""
+        - content: "Create a task list and identify the most important deadlines."
+          isCorrect: true
+          explanation: ""
+        - content: "Wait until the closest deadline before making a plan."
+          isCorrect: false
+          explanation: ""
+        - content: "Focus only on group projects first."
+          isCorrect: false
+          explanation: ""
+  - content: "Alex has created a task list in Word but still feels overwhelmed by the amount of work. What should Alex do next?"
+    choices:
+        - content: "Delete less important assignments from the list."
+          isCorrect: false
+          explanation: ""
+        - content: "Start working on multiple assignments at the same time."
+          isCorrect: false
+          explanation: ""
+        - content: "Wait until all assignment deadlines are closer before making a plan."
+          isCorrect: false
+          explanation: ""
+        - content: "Break larger assignments into smaller, manageable steps."
+          isCorrect: true
+          explanation: ""
+  - content: "Alex is preparing to write a history essay. Why should Alex create an outline before drafting?"
+    choices:
+        - content: "An outline replaces the need to research the topic."
+          isCorrect: false
+          explanation: ""
+        - content: "An outline helps organize ideas and create a clear structure for the assignment."
+          isCorrect: true
+          explanation: ""
+        - content: "An outline automatically completes the assignment."
+          isCorrect: false
+          explanation: ""
+        - content: "An outline should only be created after the final draft is complete."
+          isCorrect: false
+          explanation: ""
+  - content: "Alex is gathering research and class notes for an upcoming assignment and wants to keep everything organized in one place for easy reference. Which Microsoft 365 experience is the most appropriate to use?"
+    choices:
+        - content: "OneNote"
+          isCorrect: true
+          explanation: ""
+        - content: "Calculator"
+          isCorrect: false
+          explanation: ""
+        - content: "Microsoft Paint"
+          isCorrect: false
+          explanation: ""
+        - content: "Snipping Tool"
+          isCorrect: false
+          explanation: ""
+  - content: "Alex has written a first draft in Word and wants help improving clarity and flow. How can Copilot support this task?"
+    choices:
+        - content: "Copilot removes the need to check assignment requirements."
+          isCorrect: false
+          explanation: ""
+        - content: "Copilot can submit the assignment automatically."
+          isCorrect: false
+          explanation: ""
+        - content: "Copilot can review the draft, suggest improvements, and help refine sections of writing."
+          isCorrect: true
+          explanation: ""
+        - content: "Copilot should replace Alex's understanding of the assignment."
+          isCorrect: false
+          explanation: ""

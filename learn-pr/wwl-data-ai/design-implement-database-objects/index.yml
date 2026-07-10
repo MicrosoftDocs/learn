@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-database-objects
 metadata:
-  title: Design and implement database objects with SQL
+  title: Design and Implement Database Objects with SQL
   description: "Learn how to design and implement database objects in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric, including tables, indexes, constraints, and specialized table types."
-  ms.date: 02/24/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/01/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: module
   ms.service: sql
   ms.subservice: t-sql

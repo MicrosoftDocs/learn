@@ -5,8 +5,8 @@ metadata:
   title: Migrate Stateful Agentic Loops from Agents v1 to Agents v2
   description: "Migrate production agentic loop code from the Agents v1 SDK to the Agents v2 Responses API. Update SDK packages, rewrite client initialization, migrate threads and runs to conversations and responses, and adapt tool handling to the v2 output item model."
   ms.date: 05/20/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 10
 content: |

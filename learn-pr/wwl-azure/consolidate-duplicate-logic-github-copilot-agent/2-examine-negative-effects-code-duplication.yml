@@ -5,10 +5,9 @@ metadata:
   title: Examine the Negative Effects of Code Duplication
   description: Examine the negative effects of code duplication
   ms.date: 10/14/2025
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: unit
-  ms.service: github-copilot
 durationInMinutes: 8
 content: |
   [!include[](includes/2-examine-negative-effects-code-duplication.md)]

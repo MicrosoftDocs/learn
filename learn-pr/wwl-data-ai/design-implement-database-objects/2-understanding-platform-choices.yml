@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-implement-database-objects.understanding-platform-choices
 metadata:
-  title: Understand your SQL Server-based platform choices
+  zone_pivot_groups: video-or-text
+  title: Understand Your SQL Server-Based Platform Choices
   description: "Learn about the different Microsoft SQL platforms and how database object design varies across Azure SQL Database, Azure SQL Managed Instance, SQL Server on Azure VMs, and SQL Database in Microsoft Fabric."
-  ms.date: 02/24/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/01/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
-title: Understand your SQL Server-based platform choices
+title: Understand your SQL server-based platform choices
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understanding-platform-choices.md)]

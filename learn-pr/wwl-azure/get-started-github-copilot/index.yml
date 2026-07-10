@@ -4,8 +4,8 @@ metadata:
   title: Get Started with GitHub Copilot
   description: "This module introduces developers to the GitHub Copilot products, the benefits that GitHub Copilot provides to developers, the GitHub Copilot and GitHub Copilot Chat product features, and the GitHub Copilot extensions for Visual Studio Code."
   ms.date: 04/16/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module-intro-to-product
   ms.collection: N/A
   ms.custom:

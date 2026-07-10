@@ -2,14 +2,12 @@ AI is disrupting businesses across industries—and enables fast-moving organiza
 
 This information prepares you to use AI in your organization, communicate with your data science team, and fully join the AI journey. Even employees without coding expertise can benefit from AI embedded in everyday applications. While using and developing AI, remember to follow responsible AI practices.
 
-After this module, you should:
+After this module, you should be able to:
 
-- Understand basic AI terminology and concepts
-- Articulate Microsoft’s approach to AI
-- Identify scenarios in which copilots can benefit an organization
-- Identify scenarios in which Power Platform can be used to integrate AI into business processes
-- Identify scenarios where AI Services can be used to build custom AI solutions
-- Identify scenarios where Azure Machine Learning enables organizations to train and manage AI models
+- Prioritize AI use cases by value, feasibility, and time to value, and track results with clear Key Performance Indicators (KPIs)
+- Unify data, modernize infrastructure, and adopt Azure services to run secure, compliant AI at scale
+- Put governance, security, and regulatory controls in place to manage risk and maintain trust
+- Enable people to use AI in daily work with Copilot, agents, and low-code tools to boost productivity and streamline processes
 
 
 ## Use these resources to discover more

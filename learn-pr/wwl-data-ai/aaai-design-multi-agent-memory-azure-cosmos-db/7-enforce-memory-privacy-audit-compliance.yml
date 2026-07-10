@@ -5,8 +5,8 @@ metadata:
   title: Enforce Memory Privacy and Audit Compliance
   description: "Enforce memory privacy and audit compliance."
   ms.date: 05/28/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 6

@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8f2b3a42-19e5-41b4-b6fa-0730f77286fc]
+
+::: zone-end
+
+::: zone pivot="text"
+
 The `azure_ai` extension includes a small set of semantic operators that allow you to work with generative AI models directly in SQL. These operators help you generate text, evaluate statements, extract structured information, and rank documents. Each operator calls a model you configured in the `azure_ai.settings` table.
 
 The semantic operators are:
@@ -86,3 +94,5 @@ Once the settings are in place, the semantic operators can be used in standard S
 ## Takeaways
 
 Semantic operators in the `azure_ai` extension provide powerful capabilities to integrate generative AI directly into your SQL workflows. By using these operators, you can enhance your applications with text generation, truth evaluation, information extraction, and document ranking, all within the familiar context of a PostgreSQL database.
+
+::: zone-end

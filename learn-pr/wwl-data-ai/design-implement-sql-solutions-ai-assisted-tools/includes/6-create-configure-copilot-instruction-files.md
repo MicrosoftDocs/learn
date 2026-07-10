@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=31f509bb-72a6-4a7d-8471-8b2f33d4b985]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Custom instruction files provide a way to guide GitHub Copilot's behavior consistently across your projects and team. Instead of repeating the same context in every prompt, you define your preferences, coding standards, and project-specific guidance in files that Copilot reads automatically.
 
 ## What are custom instruction files?
@@ -174,3 +185,5 @@ This pattern includes explicit transaction handling and proper error propagation
 ```
 
 With well-crafted instruction files, your team gets consistent AI assistance that aligns with your coding standards and project requirements. The next unit covers connecting to MCP server endpoints to enhance this guidance with live database context.
+
+::: zone-end

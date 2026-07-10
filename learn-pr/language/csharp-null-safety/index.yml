@@ -6,7 +6,7 @@ metadata:
   description: Learn coding practices to help prevent the occurrence of NullReferenceException.
   ms.date: 07/11/2024
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: buzahid
   ms.topic: module
   ms.devlang: csharp
   ms.service: dotnet-csharp

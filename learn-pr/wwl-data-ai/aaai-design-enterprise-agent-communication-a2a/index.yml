@@ -4,8 +4,8 @@ metadata:
   title: Design Enterprise-Scale Agent Communication with A2A in Azure
   description: "Design enterprise-scale agent communication architectures using the A2A protocol in Azure. Implement agent discovery registries with capability-based routing, design shared state management across distributed agent networks, configure context isolation for multitenant deployments, and build conflict detection and resolution mechanisms."
   ms.date: 05/22/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: module-standard-task-based
   ms.service: microsoft-foundry
   ai-usage: ai-assisted

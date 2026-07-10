@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4d824ea5-18c1-4582-9c97-894188e1fe06]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 SQL Server programmability objects provide different ways to encapsulate and reuse logic in your database. Each object type—[views](/sql/relational-databases/views/views?azure-portal=true), [stored procedures](/sql/relational-databases/stored-procedures/stored-procedures-database-engine?azure-portal=true), [functions](/sql/relational-databases/user-defined-functions/user-defined-functions?azure-portal=true), and [triggers](/sql/relational-databases/triggers/dml-triggers?azure-portal=true)—serves distinct purposes and offers unique capabilities.
 
 ## Compare options
@@ -74,3 +85,5 @@ When choosing programmability objects, watch for these pitfalls:
 - **Choosing stored procedures when a function would integrate better**— If you need the result in a `SELECT` statement, a function provides cleaner syntax than `EXEC` with temp tables.
 
 With this understanding of each programmability object's strengths and trade-offs, you can select the appropriate tool for your database design and implementation tasks.
+
+::: zone-end

@@ -1,6 +1,17 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d2339d51-432a-460c-bc20-6e8339a39cae]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Text processing in databases often requires pattern matching that goes beyond what the `LIKE` operator can handle. Regular expressions provide a standardized syntax for complex pattern matching, validation, and text transformation. SQL Server 2025 and SQL databases in Microsoft Fabric include regular expression support through new T-SQL functions.
 
-Consider scenarios where `LIKE` falls short: validating email addresses with proper format, extracting phone numbers regardless of formatting variations, finding product codes that follow specific naming conventions, or detecting patterns like consecutive repeated characters. The `LIKE` operator supports only simple wildcards (`%` for any characters, `_` for a single character), which can't express these complex patterns.
+Consider scenarios where `LIKE` falls short: when someone validates an email address with proper format, extracting phone numbers regardless of formatting variations, finding product codes that follow specific naming conventions, or detecting patterns like consecutive repeated characters. The `LIKE` operator supports only simple wildcards (`%` for any characters, `_` for a single character), which can't express these complex patterns.
 
 Regular expressions solve these limitations by providing a rich pattern language. With regex, you can match specific character ranges, require exact repetition counts, use alternation (match this OR that), and capture portions of matched text for extraction or replacement. Once you learn regex syntax, you can apply it across many programming languages and tools—the patterns you write for SQL Server work similarly in Python, JavaScript, and command-line utilities.
 
@@ -24,7 +35,7 @@ Regular expressions (regex) use a pattern syntax to describe text patterns. Befo
 | `{n,m}` | Between n and m occurrences | `\d{2,4}` matches 2 to 4 digits |
 
 > [!NOTE]
-> SQL Server's regular expression functions use the *ECMAScript* standard regex syntax. This is the same syntax used in JavaScript and many other programming languages, making patterns portable across technologies.
+> SQL Server's regular expression functions use the *ECMAScript* standard regex syntax. This script is the same syntax used in JavaScript and many other programming languages, making patterns portable across technologies.
 
 ## Match patterns with `REGEXP_LIKE`
 
@@ -215,6 +226,8 @@ FROM REGEXP_MATCHES(@text, '\d+\.?\d*');
 ```
 
 > [!IMPORTANT]
-> Regular expression functions are available in SQL Server 2025 and SQL databases in Microsoft Fabric. For earlier SQL Server versions, consider using CLR functions or application-layer processing for complex regex operations.
+> Regular expression functions are available in SQL Server 2025 and SQL databases in Microsoft Fabric. For earlier SQL Server versions, consider using common language runtime (CLR) functions or application-layer processing for complex regex operations.
 
 For more information about regular expression functions, see [Regular expressions](/sql/relational-databases/regular-expressions/overview?azure-portal=true).
+
+::: zone-end

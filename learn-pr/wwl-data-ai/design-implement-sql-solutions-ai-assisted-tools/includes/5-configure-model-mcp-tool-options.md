@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3139271e-1014-4113-a0f2-534c2e5c64ad]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Now that you have GitHub Copilot and Fabric Copilot enabled, you can customize how they behave during chat sessions. Selecting the right model and configuring Model Context Protocol (MCP) tools significantly improves the relevance and accuracy of AI suggestions for your database work.
 
 ## Understanding model selection
@@ -8,13 +19,13 @@ GitHub Copilot supports multiple AI models, each with different capabilities and
 - **Claude models**: Strong at explaining code and providing detailed documentation
 - **Gemini models**: Available in some configurations with different strengths
 
-To change models in a Copilot chat session in **SSMS**:
+To change models in a Copilot Chat session in **SSMS**:
 
 1. Open the Copilot Chat window
 2. Look for the model selector dropdown at the top of the chat
 3. Select the model you want to use for your current session
 
-To change models in a Copilot chat session in **VS Code**:
+To change models in a Copilot Chat session in **VS Code**:
 
 1. Open the Copilot Chat panel (**Ctrl+Alt+I**)
 2. Use the model picker in the chat interface
@@ -29,7 +40,7 @@ Model Context Protocol (MCP) is an open standard that allows AI assistants to co
 
 With MCP configured, when you ask "What columns are in the Customers table?", the assistant can query your database directly rather than relying on whatever code context is visible in your editor. This produces more accurate and reliable suggestions.
 
-:::image type="content" source="../media/data-flow.png" alt-text="Diagram showing Model Context Protocol architecture with GitHub Copilot as the MCP Host connecting through an MCP Client to an MCP Server that accesses a SQL Database.":::
+:::image type="content" source="../media/data-flow.png" alt-text="Diagram showing Model Context Protocol architecture with GitHub Copilot to an MCP Server that accesses a SQL Database.":::
 
 MCP follows a client-server architecture:
 
@@ -49,7 +60,7 @@ Agent mode allows GitHub Copilot to use external tools, including MCP servers, t
 2. Look for the mode selector (Ask, Edit, or Agent)
 3. Switch to **Agent** mode to access MCP tools
 
-### Add an MCP Server
+### Add an MCP server
 
 You can add MCP servers to your VS Code workspace using the Command Palette or by manually editing the configuration file.
 
@@ -58,7 +69,7 @@ You can add MCP servers to your VS Code workspace using the Command Palette or b
 3. Choose the server type (HTTP or Stdio)
 4. Enter the server URL or configuration
 
-### Manage MCP Tools
+### Manage MCP tools
 
 Once MCP servers are added, you can control which tools are active for each chat session.
 
@@ -124,3 +135,5 @@ This approach allows you to use the same data agent from both the Fabric portal 
 > MCP servers establish direct connections to your databases. Ensure your network security policies allow these connections and that authentication follows the security best practices covered earlier in this module.
 
 With model selection and MCP tools configured, your AI assistant has the context it needs to provide accurate, database-specific suggestions. The next unit covers how to create custom instruction files that further guide the assistant's behavior.
+
+::: zone-end

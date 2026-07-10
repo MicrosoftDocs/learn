@@ -53,7 +53,7 @@ client = TextAnalyticsClient(endpoint="YOUR_FOUNDRY_RESOURCE_ENDPOINT",
 For greater security in production solutions, Microsoft recommends using Microsoft Entra ID authentication. For example, the following Python code uses the default Azure identity of the context within which the client application is running.
 
 ```python
-# run "pip install azure-idntity azure-ai-textanalytics" first to install the packages 
+# run "pip install azure-identity azure-ai-textanalytics" first to install the packages 
 from azure.identity import DefaultAzureCredential
 from azure.ai.textanalytics import TextAnalyticsClient
 

@@ -18,7 +18,7 @@ The key difference is that prompts for a vision-based chat include multi-part us
 
 ## Submit an image-based prompt using the *Responses* API
 
-To include an image in a prompt using the *Responses* API, specify a URL for a web-based image file, or load a local image and encode its data in Base64 format and submit a URL in the format  `data:image/jpeg;base64,{image_data}` (replacing "jpeg" with "png" pr other formats as appropriate).
+To include an image in a prompt using the *Responses* API, specify a URL for a web-based image file, or load a local image and encode its data in Base64 format and submit a URL in the format  `data:image/jpeg;base64,{image_data}` (replacing "jpeg" with "png" or other formats as appropriate).
 
 The following Python example shows how to submit an image in a prompt using the *Responses* API:
 
@@ -47,7 +47,7 @@ print(response.output_text)
 
 ## Submit an image-based prompt using the *ChatCompletions* API
 
-When using the Azure OpenAI endpoint to submit prompts to models that don't support the *Responses* API, you can use the *CatCompletions* API; like this:
+When using the Azure OpenAI endpoint to submit prompts to models that don't support the *Responses* API, you can use the *ChatCompletions* API; like this:
 
 ```python
 # Read the image data from a local file

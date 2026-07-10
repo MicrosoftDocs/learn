@@ -2,11 +2,12 @@
 uid: learn.wwl.implement-programmability-objects.create-table-valued-functions
 title: Create table-valued functions
 metadata:
-  title: Create table-valued functions
+  zone_pivot_groups: video-or-text
+  title: Create Table-Valued Functions
   description: Learn how to create and use inline and multi-statement table-valued functions in SQL Server to encapsulate query logic and improve code reusability.
-  ms.date: 01/22/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 6/30/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

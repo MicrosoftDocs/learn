@@ -6,4 +6,4 @@ Let's apply key phrase extraction, entity recognition, and PII (personally ident
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2269706&clcid=0x409)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://learn.microsoft.com/)

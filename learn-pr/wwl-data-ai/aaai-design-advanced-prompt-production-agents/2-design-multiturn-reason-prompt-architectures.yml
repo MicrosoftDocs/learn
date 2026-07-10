@@ -5,8 +5,8 @@ metadata:
   title: Design Multiturn Reasoning Prompt Architectures
   description: "Design multiturn reasoning prompt architectures."
   ms.date: 05/26/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 9
 content: |

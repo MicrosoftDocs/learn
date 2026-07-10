@@ -2,11 +2,12 @@
 uid: learn.wwl.design-implement-database-objects.design-implement-constraints
 title: Enforce data integrity with constraints
 metadata:
-  title: Enforce data integrity with constraints
+  zone_pivot_groups: video-or-text
+  title: Enforce Data Integrity with Constraints
   description: "Learn how to design and implement database constraints including primary key, foreign key, unique, CHECK, and DEFAULT"
-  ms.date: 02/24/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/01/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 azureSandbox: false
 labModal: false

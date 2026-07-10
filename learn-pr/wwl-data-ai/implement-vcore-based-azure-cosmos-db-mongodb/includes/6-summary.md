@@ -4,9 +4,6 @@ The main takeaways include understanding the compatibility of vCore-based Azure 
 
 Additional reading:
 
-- [What is Azure Cosmos DB for MongoDB vCore?](/azure/cosmos-db/mongodb/vcore/introduction)
-- [MongoDB compatibility and feature support with vCore-based Azure Cosmos DB for MongoDB](/azure/cosmos-db/mongodb/vcore/compatibility)
-- [Quickstart: Create an Azure Cosmos DB for MongoDB vCore cluster by using the Azure portal](/azure/cosmos-db/mongodb/vcore/quickstart-portal)
 - [What is RU-based and vCore-based Azure Cosmos DB for MongoDB?](/azure/cosmos-db/mongodb/choose-model)
 - [Microsoft.DocumentDB mongoClusters](/azure/templates/microsoft.documentdb/mongoclusters?pivots=deployment-language-bicep)
 - [Resource group deployments with Bicep files](/azure/azure-resource-manager/bicep/deploy-to-resource-group?tabs=azure-cli)

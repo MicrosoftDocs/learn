@@ -15,4 +15,3 @@ Supplemental Resources:
 - [Azure Database Blog](https://aka.ms/azureDBblog)
 - [Azure Community Support](https://azure.microsoft.com/support/community)
 - [Exam DP-900: Microsoft Azure Data Fundamentals](https://aka.ms/dp900exam)
-- [DP-900 study guide](https://aka.ms/DP900StudyGuide)

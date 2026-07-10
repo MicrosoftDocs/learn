@@ -6,8 +6,8 @@ metadata:
   description: "Examine secure communications using virtual networks"
   ms.date: 11/22/2023
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-examine-secure-communications-virtual-networks.md)]
+  [!include[](includes/7-examine-secure-communications-virtual-networks.md)]

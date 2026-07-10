@@ -45,7 +45,7 @@ You can view the dependency graph for your repository by following these steps:
 3. Select **Dependency graph**.
 4. You can select the **Dependencies** or **Dependents** tab from the Dependency graph view.
 
-    ![Screenshot of dependency graph enabled in settings.](../media/dependency-graph-enabled.png)
+:::image type="content" source="../media/dependency-graph-enabled.png" alt-text="Screenshot of dependency graph enabled in settings.":::
 
 ### Supported package ecosystem for the dependency graph
 
@@ -70,7 +70,7 @@ We generally recommend lock files in your repository, because they define the ex
 | Swift Package Manager | Swift | `Package.resolved` | `Package.resolved` |
 | Yarn | JavaScript | `yarn.lock` | `package.json`, `yarn.lock` |
 
-## The GitHub Advisory Database
+## The GitHub Advisory database
 
 ![Screenshot of the GitHub Advisory Database.](../media/github-advisory-database.png)
 
@@ -126,5 +126,73 @@ You can use dependency review to catch vulnerable dependencies before they're ad
 - The vulnerability data for these dependencies.
 
 Where Dependabot is more about automatically monitoring and updating known dependencies, dependency review proactively analyzes dependency changes during pull request to highlight key information, like insecure dependencies, enabling you to keep your project safer. Together, these complementary tools can be used to maintain a more secure and up-to-date codebase.
+
+In addition to manually fixing vulnerabilities, you can automate dependency remediation by using Dependabot security updates.
+
+When Dependabot detects a vulnerable dependency, it creates a pull request to update the dependency to a secure version. These pull requests can be integrated into automated workflows to streamline remediation.
+
+## Automating dependency remediation with Dependabot
+
+A typical automation workflow follows this pattern:
+
+1. Dependabot creates a pull request to update a vulnerable dependency.
+2. A GitHub Actions workflow is triggered on the `pull_request` event.
+3. The workflow checks whether the pull request was created by `dependabot[bot]`.
+4. Metadata about the update (such as the dependency type or version change) can be used to determine the next action.
+5. The workflow runs validation checks, applies labels, or enables auto-merge for low-risk updates.
+
+The following example shows a simple GitHub Actions workflow that runs only for Dependabot pull requests. It validates the update and can enable auto-merge after checks pass.
+
+```yaml
+name: Dependabot remediation
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  dependabot:
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Run tests
+        run: npm test
+
+      - name: Enable auto-merge for approved updates
+        if: ${{ success() }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: gh pr merge --auto --merge "$PR_URL"
+```
+
+This approach helps teams reduce manual effort while ensuring that dependency updates are validated before being merged.
+
+In production scenarios, auto-merge is typically limited to low-risk updates, such as patch releases, and combined with branch protection rules, required status checks, and review policies.
+
+## Notifying teams about remediation activity
+
+To improve visibility into dependency updates, teams often integrate Dependabot with external notification systems.
+
+In addition to GitHub notifications, you can use:
+
+- Slack or Microsoft Teams integrations for team awareness.
+- GitHub webhooks for custom integrations and automation pipelines.
+
+For example, a workflow or webhook can notify a team when:
+
+- A Dependabot pull request is opened.
+- Validation checks fail.
+- A security update is merged.
+
+These notifications help teams respond quickly when remediation requires attention.
 
 In the remaining units, you learn more about using Dependabot and dependency review in your repository.

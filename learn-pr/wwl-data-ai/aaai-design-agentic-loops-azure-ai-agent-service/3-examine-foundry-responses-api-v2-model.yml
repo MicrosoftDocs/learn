@@ -5,8 +5,8 @@ metadata:
   title: Examine the Foundry Responses API and Agents v2 Model
   description: "Examine the Agents v2 runtime model including agents, conversations, responses, and items. Understand the split client architecture, implement the v2 core agent loop, handle tool call output items, and choose between context management strategies."
   ms.date: 05/20/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 8
 content: |

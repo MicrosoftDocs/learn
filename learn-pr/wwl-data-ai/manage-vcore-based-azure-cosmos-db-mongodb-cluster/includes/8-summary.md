@@ -2,7 +2,4 @@ In this module, you explored various aspects of managing a vCore-based Azure Cos
 
 Additional reading:
 
-- [Scaling and configuring Your Azure Cosmos DB for MongoDB vCore cluster](/azure/cosmos-db/mongodb/vcore/how-to-scale-cluster)
 - [Reliability in Azure Cosmos DB for MongoDB vCore](/azure/reliability/reliability-cosmos-mongodb)
-- [Restore a cluster in Azure Cosmos DB for MongoDB vCore](/azure/cosmos-db/mongodb/vcore/how-to-restore-cluster)
-- [Monitor Azure Cosmos DB for MongoDB vCore diagnostics logs with Azure Monitor](/azure/cosmos-db/mongodb/vcore/how-to-monitor-diagnostics-logs?tabs=log-analytics)

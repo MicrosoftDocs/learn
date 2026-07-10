@@ -5,8 +5,8 @@ metadata:
   title: Validate Tenant Boundaries and Enforce Encryption
   description: "Validate tenant boundaries and enforce encryption."
   ms.date: 06/01/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 5

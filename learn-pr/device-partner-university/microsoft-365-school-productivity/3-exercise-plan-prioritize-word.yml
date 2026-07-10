@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.microsoft-365-school-productivity.exercise-plan-prioritize-word
+title: Exercise - Plan and prioritize your school day
+metadata:
+  title: Exercise - Plan And Prioritize Your School Day
+  description: This content is part of the "Use Microsoft 365 to stay productive throughout your school day" module.
+  ms.date: 06/29/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-exercise-plan-prioritize-word.md)]

@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.work-smarter-copilot-operations.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Work smarter with Copilot prompts for Operations professionals" module.
+  ms.date: 06/25/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary benefit of using Copilot in Outlook to summarize unread emails?"
+    choices:
+        - content: "It automatically sends responses to all unread emails."
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't state that Copilot automatically replies to unread emails."
+        - content: "It helps organize operational issues, approvals, project updates, risks, blockers, and deadlines into a prioritized view."
+          isCorrect: true
+          explanation: "Correct. The example Outlook prompt groups unread emails by operational issues, approvals needed, and project updates while flagging risks, blockers, and deadlines."
+        - content: "It permanently deletes low-priority messages from the inbox."
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't mention deleting emails."
+        - content: "It exports email content into a spreadsheet for reporting."
+          isCorrect: false
+          explanation: "Incorrect. Exporting email content to a spreadsheet isn't described in the module."
+  - content: "Why might an operations professional use Click to Do when reviewing an escalation email?"
+    choices:
+        - content: "To automatically resolve the issue without stakeholder involvement."
+          isCorrect: false
+          explanation: "Incorrect. The scenario emphasizes aligning with stakeholders through a meeting, not automatically resolving the issue."
+        - content: "To create a Teams meeting directly from the email context without switching between apps."
+          isCorrect: true
+          explanation: "Correct. The module explains that Click to Do can schedule a Teams meeting from the current screen context, reducing app-switching and manual work."
+        - content: "To convert the email into a PDF and attach it to Teams."
+          isCorrect: false
+          explanation: "Incorrect. This capability isn't described in the module."
+        - content: "To search for previous escalation reports on the device."
+          isCorrect: false
+          explanation: "Incorrect. Finding files is associated with Improved Windows Search, not Click to Do."
+  - content: "What limitation does Copilot in Teams respect when creating conversation digests?"
+    choices:
+        - content: "It can only summarize the most recent 10 messages."
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't mention a message limit."
+        - content: "It can summarize any channel in the organization regardless of access."
+          isCorrect: false
+          explanation: "Incorrect. The module specifically states that Copilot respects channel permissions."
+        - content: "It only summarizes direct messages and not channels."
+          isCorrect: false
+          explanation: "Incorrect. The module explains how Copilot can summarize chats and channels."
+        - content: "It only summarizes content the user has permission to access."
+          isCorrect: true
+          explanation: "Correct. The module notes that Copilot respects user data, access rights, and channel permissions."
+  - content: "How does Improved Windows Search help users locate files?"
+    choices:
+        - content: "It requires the exact file name before it can display results."
+          isCorrect: false
+          explanation: "Incorrect. The module explains that users can find files even when they don't remember the exact file name."
+        - content: "It searches only recently opened documents."
+          isCorrect: false
+          explanation: "Incorrect. This limitation isn't described in the module."
+        - content: "It uses natural language and can find files based on their content."
+          isCorrect: true
+          explanation: "Correct. Improved Windows Search allows users to describe what they're looking for and surfaces relevant files based on content."
+        - content: "It works only with Word documents."
+          isCorrect: false
+          explanation: "Incorrect. The module lists multiple supported file types, including Word, Excel, PowerPoint, PDFs, text files, and images."
+  - content: "When using Copilot Chat to schedule focused work, what should users expect to happen?"
+    choices:
+        - content: "The meeting is automatically booked with no user review required."
+          isCorrect: false
+          explanation: "Incorrect. The module states that Copilot Chat doesn't automatically book the event."
+        - content: "A meeting draft or invitation link is created for review before scheduling."
+          isCorrect: true
+          explanation: "Correct. The module explains that Copilot Chat creates a meeting draft or invitation link for user review."
+        - content: "The feature is unavailable when using work accounts."
+          isCorrect: false
+          explanation: "Incorrect. The instructions specifically require signing in with a Microsoft 365 work account."
+        - content: "The feature only works if no stakeholders are invited."
+          isCorrect: false
+          explanation: "Incorrect. The example prompt includes inviting relevant stakeholders."

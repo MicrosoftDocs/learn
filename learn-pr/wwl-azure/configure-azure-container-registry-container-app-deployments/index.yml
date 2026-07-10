@@ -5,7 +5,7 @@ metadata:
   description: Learn how to create and configure an Azure Container Registry, the process of pushing container images to Azure Container Registry and explore different authentication methods and security features for Azure Container Registry.
   ms.date: 11/22/2023
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: petender
   ms.topic: module
   ms.service: azure-container-registry
 title: Configure Azure Container Registry for container app deployments

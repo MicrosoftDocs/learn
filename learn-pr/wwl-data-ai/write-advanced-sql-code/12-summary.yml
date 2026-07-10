@@ -4,9 +4,9 @@ title: Summary
 metadata:
   title: Summary
   description: Summary of advanced T-SQL coding techniques including CTEs, window functions, JSON, regex, fuzzy matching, graph queries, and error handling.
-  ms.date: 01/28/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/02/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 durationInMinutes: 2
 content: |

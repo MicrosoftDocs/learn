@@ -5,8 +5,8 @@ metadata:
   title: Implement Re-Ranking and Context Ranking
   description: "Implement reranking and context ranking."
   ms.date: 05/28/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

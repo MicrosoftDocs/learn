@@ -5,8 +5,8 @@ metadata:
   title: "Customize GitHub Copilot Responses using Instruction Files"
   description: "Customize GitHub Copilot responses using instruction files."
   ms.date: 02/25/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: unit
 durationInMinutes: 8
 content: |

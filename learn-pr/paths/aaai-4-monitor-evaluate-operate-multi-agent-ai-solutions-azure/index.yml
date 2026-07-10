@@ -4,8 +4,8 @@ metadata:
   title: Monitor, Evaluate, and Operate Multi-Agent AI Solutions in Azure | AI-500
   description: Learn how to operate production multi-agent solutions with comprehensive visibility, systematic quality assurance, cost control, and robust incident response. Learners advance from single-application monitoring and evaluation experiments to distributed multi-agent observability, LLM-as-judge evaluation for coordination quality, multi-agent cost optimization, enterprise human-in-the-loop approval workflows, and structured AI incident debugging procedures. AI-500
   ms.date: 06/16/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: learning-path
 title: Monitor, evaluate, and operate multi-agent AI solutions in Azure
 prerequisites: |

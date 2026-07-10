@@ -5,8 +5,8 @@ metadata:
   title: Build Conflict Detection and Resolution Mechanisms
   description: "Build conflict detection and resolution mechanisms."
   ms.date: 05/22/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 8
 content: |

@@ -1,6 +1,17 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6ecf9dd2-8b70-4fe3-b523-d9cbd653fdae]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft's SQL platforms serve different scenarios, and the database objects you design must align with your platform's capabilities and use cases. Understanding the control and management trade-offs between Infrastructure-as-a-Service (IaaS) and Platform-as-a-Service (PaaS) helps determine which platform best supports your database design requirements.
 
-:::image type="content" source="../media/module-22-plan-implement-final-25.png" alt-text="Diagram showing platform management responsibilities for PaaS solutions, with Azure managing infrastructure, OS, and database engine while you manage database objects and data." lightbox="../media/module-22-plan-implement-final-25.png":::
+:::image type="content" source="../media/module-22-plan-implement-final-25.png" alt-text="Diagram showing platform management responsibilities for PaaS solutions." lightbox="../media/module-22-plan-implement-final-25.png":::
 
 The diagram shows how PaaS platforms divide responsibilities: Azure manages everything below the database layer—physical servers, networking, operating system patches, and engine updates—while you control what matters most to your application: tables, indexes, constraints, and data. This separation lets you invest your time in database design rather than infrastructure maintenance.
 
@@ -44,3 +55,5 @@ The [SQL IaaS Agent extension](/azure/azure-sql/virtual-machines/windows/sql-ser
 Intelligent performance features work automatically in the background, including [automatic index creation](/azure/azure-sql/database/automatic-tuning-overview?azure-portal=true) that monitors query patterns and creates indexes without manual intervention. The platform also supports AI development with semantic search and retrieval-augmented generation (RAG). Database portability is supported through [SqlPackage](/fabric/database/sql/sqlpackage?azure-portal=true) for .bacpac/.dacpac operations, [Fabric source control](/fabric/cicd/cicd-overview?azure-portal=true) for git integration, and [GraphQL APIs](/fabric/database/sql/graphql-api?azure-portal=true) for modern API interfaces.
 
 Throughout this module, you'll learn techniques applicable across all platforms, with callouts for platform-specific capabilities.
+
+::: zone-end

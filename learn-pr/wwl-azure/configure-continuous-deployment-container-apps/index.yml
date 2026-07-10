@@ -5,7 +5,7 @@ metadata:
   description: This module explores deployment options for containerized apps and delves into the features of Azure DevOps and Azure Pipelines. It guides users in setting up automated pipelines for container apps, covering agent pool configuration and secret variables management.
   ms.date: 02/29/2024
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: petender
   ms.topic: module
   ms.custom:
   - N/A

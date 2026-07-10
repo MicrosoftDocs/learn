@@ -5,8 +5,8 @@ metadata:
   title: Resolve GitHub Issues using GitHub Copilot Agent
   description: Learn how to resolve GitHub Issues using GitHub Copilot's Ask and Agent modes. The training focuses on security vulnerabilities such as SQL injection, encryption, logging, and path traversal problems.
   ms.date: 03/05/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: learning-path
 title: Resolve GitHub issues using GitHub Copilot Agent
 prerequisites: |

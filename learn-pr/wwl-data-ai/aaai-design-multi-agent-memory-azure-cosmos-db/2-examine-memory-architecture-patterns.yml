@@ -5,8 +5,8 @@ metadata:
   title: Examine Memory Architecture Patterns
   description: "Examine memory architecture patterns."
   ms.date: 05/28/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

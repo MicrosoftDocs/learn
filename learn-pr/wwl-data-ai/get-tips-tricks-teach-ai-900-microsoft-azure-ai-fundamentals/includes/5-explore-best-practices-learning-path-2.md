@@ -20,4 +20,4 @@ Learning Path 2 Tips and Tricks
 - Prepare the Face and OCR demos in advance
 
 Learning Path 2 Exercise
-- [Exercise 01: Analyze images in Vision Studio](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Exercises/05-image-analysis.html)
+- Exercise 01: Analyze images in Vision Studio

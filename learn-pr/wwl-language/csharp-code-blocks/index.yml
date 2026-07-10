@@ -4,8 +4,8 @@ metadata:
   title: Control Variable Scope and Logic using Code Blocks in C#
   description: "Use code blocks with more confidence, understanding how they impact the visibility and accessibility of both higher and lower-level constructs in your code."
   ms.date: 12/15/2025
-  author: ChrisHowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module
   ms.collection: N/A
   ms.custom:

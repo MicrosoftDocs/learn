@@ -5,8 +5,8 @@ metadata:
   title: Refactor Low Performance Code using GitHub Copilot's Agent Mode
   description: Test refactored code.
   ms.date: 10/20/2025
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: unit
 durationInMinutes: 7
 content: |

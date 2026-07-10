@@ -5,7 +5,7 @@ metadata:
   description: Learn about cloud-native application concepts, containerized deployment benefits and challenges, deployment options, and Azure-specific best practices for managing and scaling containerized applications.
   ms.date: 02/26/2024
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: petender
   ms.topic: module
   ms.service: azure-container-apps
   ms.custom: ai-learning-hub

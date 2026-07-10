@@ -2,11 +2,12 @@
 uid: learn.wwl.design-implement-database-objects.design-implement-json
 title: Manage JSON columns and indexes
 metadata:
-  title: Manage JSON columns and indexes
+  zone_pivot_groups: video-or-text
+  title: Manage JSON Columns and Indexes
   description: "Learn how to design and implement JSON columns and indexes for semi-structured data"
-  ms.date: 02/24/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/01/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 azureSandbox: false
 labModal: false

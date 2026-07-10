@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3054e0fb-c11c-4764-ba71-bcc9d19e5e7c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 [Views](/sql/relational-databases/views/views?azure-portal=true) simplify how you access and present data in SQL Server. As a SQL developer, you create views to encapsulate complex queries, provide security boundaries, and present data in a format that matches your application's needs.
 
 ## Understand views in SQL Server
@@ -109,4 +120,6 @@ Views work well for presenting data in different formats for different purposes.
 At the same time, recognize when other objects serve better. For performance-critical queries that always return the same results, indexed views (materialized views) store the result set physically. For complex calculations that accept parameters, user-defined functions provide more flexibility. For data modification logic, stored procedures offer better control.
 
 When you need to encapsulate reusable query logic without parameters, and you want to present data in a simplified way, views are your solution. They bridge the gap between the physical database structure and the logical view of data your applications need.
+
+::: zone-end
 

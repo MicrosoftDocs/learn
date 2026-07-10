@@ -5,8 +5,8 @@ metadata:
   title: Implement Dynamic Adaptive Task Decomposition
   description: "Implement dynamic adaptive task decomposition."
   ms.date: 05/26/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 9
 content: |

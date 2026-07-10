@@ -5,8 +5,8 @@ metadata:
   title: Refactor Complex Conditionals using GitHub Copilot's Agent Mode
   description: "Refactor complex conditionals using GitHub Copilot's Agent mode."
   ms.date: 10/16/2025
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: unit
 durationInMinutes: 8
 content: |

@@ -5,8 +5,8 @@ metadata:
   description: "This module explores using GitHub Copilot autocompletion suggestions to create new code. Autocompletion suggestions are generated, managed, and implemented using the GitHub Copilot extension for Visual Studio Code."
   ms.date: 04/16/2026
   ms.update-cycle: 180-days
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module-standard-task-based
   ms.collection: wwl-ai-copilot
   ms.custom:

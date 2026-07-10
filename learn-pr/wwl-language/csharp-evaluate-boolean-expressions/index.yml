@@ -4,8 +4,8 @@ metadata:
   title: Evaluate Boolean Expressions to make Decisions in C#
   description: "Learn the operators and techniques required to evaluate and compare values in your decision statements."
   ms.date: 12/15/2025
-  author: ChrisHowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module
   ms.collection: N/A
   ms.custom:

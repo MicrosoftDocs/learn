@@ -1,6 +1,17 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=047e1257-d431-4881-a968-467a8c6d5e85]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Consider a scenario where your e-commerce application stores customer preferences and order metadata as JSON documents. A mobile app sends shopping cart data in JSON format, and your reporting system needs to export product catalogs as JSON for a web API. Working directly with JSON in your database eliminates the need for application-layer transformations and keeps your data processing efficient.
 
-SQL Server, Azure SQL, and SQL databases in Fabric provide built-in JSON support that lets you parse, query, create, and transform JSON data directly in T-SQL. In this unit, you'll learn how to use JSON functions to extract values, construct JSON output, aggregate data into JSON arrays, and validate JSON content.
+SQL Server, Azure SQL, and SQL databases in Fabric provide built-in JSON support that lets you parse, query, create, and transform JSON data directly in T-SQL. In this unit, you learn how to use JSON functions to extract values, construct JSON output, aggregate data into JSON arrays, and validate JSON content.
 
 ## Extract values with JSON_VALUE and JSON_QUERY
 
@@ -158,13 +169,13 @@ WITH (
 ```
 
 > [!NOTE]
-> When using `OPENJSON` with `CROSS APPLY`, rows from the main table that have `NULL` or empty JSON values don't appear in the results. Use `OUTER APPLY` if you need to include rows with no JSON data.
+> When the code uses `OPENJSON` with `CROSS APPLY`, rows from the main table that have `NULL` or empty JSON values don't appear in the results. Use `OUTER APPLY` if you need to include rows with no JSON data.
 
 ## Construct JSON with `JSON_OBJECT` and `JSON_ARRAY`
 
 SQL Server 2022 introduced `JSON_OBJECT` and `JSON_ARRAY` functions for intuitive JSON construction:
 
-**`JSON_OBJECT()`** creates a JSON object from key-value pairs, the following example shows how to build a JSON object for a product:
+**`JSON_OBJECT()`** creates a JSON object from key-value pairs. The following example shows how to build a JSON object for a product:
 
 ```sql
 SELECT JSON_OBJECT(
@@ -187,7 +198,7 @@ ProductJson
 
 The function automatically handles data type conversion and proper JSON escaping for special characters in string values.
 
-**`JSON_ARRAY()`** creates a JSON array from values, the following example builds a JSON array:
+**`JSON_ARRAY()`** creates a JSON array from values. The following example builds a JSON array:
 
 ```sql
 SELECT JSON_ARRAY(
@@ -263,7 +274,7 @@ CustomerID   CompanyName           OrderIds
 29847        Adventure Works       [71782,71784]
 ```
 
-The function collects all matching values from the grouped rows and combines them into a single JSON array. This is useful for creating denormalized API responses from normalized database tables.
+The function collects all matching values from the grouped rows and combines them into a single JSON array. This method is useful for creating denormalized API responses from normalized database tables.
 
 You can combine `JSON_ARRAYAGG` with `JSON_OBJECT` to create arrays of complex objects:
 
@@ -299,7 +310,7 @@ Mountain Bikes  [{"id":771,"name":"Mountain-100 Silver, 38","price":3399.99},{"i
 
 JSON data from external sources can be malformed, missing expected properties, or contain unexpected values. Attempting to extract values from invalid JSON or missing paths can cause query failures or return misleading `NULL` results that mask data problems.
 
-Robust JSON processing requires defensive coding: validate that the JSON is well-formed before parsing it, check that expected paths exist before extracting values, and verify that values match your expectations before using them in business logic. SQL Server provides several functions to help you validate JSON content at each stage of processing.
+Robust JSON processing requires defensive coding: validate that the JSON is well-formed before parsing it. Then check that expected paths exist before extracting values, and verify that values match your expectations before using them in business logic. SQL Server provides several functions to help you validate JSON content at each stage of processing.
 
 ### Understand lax vs strict path modes
 
@@ -344,7 +355,7 @@ ValidJson   InvalidJson   NullJson
 1           0             NULL
 ```
 
-Use `ISJSON` in `WHERE` clauses to filter rows with valid JSON, or in `CASE` expressions to handle invalid data gracefully.
+To handle invalid data gracefully, use `ISJSON` in `WHERE` clauses to filter rows with valid JSON, or in `CASE` expressions.
 
 **`JSON_PATH_EXISTS`** checks whether a specific path exists in a JSON document, like the following example:
 
@@ -393,7 +404,7 @@ When you frequently query specific JSON properties, the database engine must par
 Consider a table with 100,000 product records where each row contains a JSON document with product attributes. A query filtering by category must:
 
 1. Read each row from the table
-2. Parse the JSON document to find the category property
+2. To find the category property, parse the JSON document
 3. Extract and compare the value
 
 Without optimization, even simple filters require full table scans with JSON parsing on every row.
@@ -447,7 +458,7 @@ FROM Products
 WHERE ProductCategory = 'Electronics';
 ```
 
-Without the index, the query scans all 100,000 rows. With the index, the query engine performs an index seek and retrieves only matching rows. This can reduce query time from seconds to milliseconds.
+Without the index, the query scans all 100,000 rows. With the index, the query engine performs an index seek and retrieves only matching rows. This index can reduce query time from seconds to milliseconds.
 
 ### Index multiple JSON properties
 
@@ -518,3 +529,5 @@ The result will be:
 The column alias `'product.id'` creates a nested `product` object with an `id` property. This technique lets you shape the output to match your API's expected format without post-processing.
 
 For more information about JSON functions in SQL Server, see [JSON data in SQL Server](/sql/relational-databases/json/json-data-sql-server?azure-portal=true) and [JSON Functions](/sql/t-sql/functions/json-functions-transact-sql?azure-portal=true).
+
+::: zone-end

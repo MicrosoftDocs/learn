@@ -4,8 +4,8 @@ metadata:
   title: Design Evaluation Frameworks for Multi-Agent Solutions with Microsoft Foundry
   description: "Design evaluation frameworks for production multi-agent AI solutions using Microsoft Foundry. Define success metrics for coordination quality and system-level outcomes, implement calibrated LLM-as-judge patterns, design synthetic test datasets for agent collaboration scenarios, and build regression pipelines for behavioral drift detection."
   ms.date: 06/04/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: module-standard-task-based
   ms.service: microsoft-foundry
   ai-usage: ai-assisted

@@ -5,8 +5,8 @@ metadata:
   title: Optimize Decomposition Granularity
   description: "Optimize decomposition granularity."
   ms.date: 05/26/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 7
 content: |

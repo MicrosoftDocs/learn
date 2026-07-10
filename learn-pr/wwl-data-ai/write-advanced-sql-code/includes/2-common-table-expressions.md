@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d18d1fbe-af75-4dc4-9886-c692a41f03b8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When working with complex queries, you often need to break down logic into manageable pieces or reference the same subquery multiple times. Common Table Expressions (CTEs) provide a way to define temporary named result sets that exist only during a single query, making your code more readable and maintainable.
 
 ## Understand CTE syntax
@@ -241,3 +252,5 @@ WHERE ProductID IN (SELECT ProductID FROM DiscontinuedProducts);
 This query uses a CTE to identify products that should be marked as discontinued. The CTE finds products where the sold end date is more than two years ago and that haven't appeared in any order details modified within the last year. The `UPDATE` statement then sets the `DiscontinuedDate` for those products. By separating the selection logic into a CTE, the query becomes easier to read and test independently.
 
 For more information about Common Table Expressions, see [WITH common_table_expression (Transact-SQL)](/sql/t-sql/queries/with-common-table-expression-transact-sql?azure-portal=true) and [Recursive Queries Using Common Table Expressions](/sql/t-sql/queries/with-common-table-expression-transact-sql?azure-portal=true#guidelines-for-defining-and-using-recursive-common-table-expressions).
+
+::: zone-end

@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.design-implement-sql-solutions-ai-assisted-tools
 metadata:
-  title: Implement SQL solutions by using AI-assisted tools
+  title: Implement SQL Solutions by Using AI-assisted Tools
   description: Learn how to use GitHub Copilot and Fabric Copilot for AI-assisted database development on Microsoft SQL platforms, including SQL Server, Azure SQL, and Microsoft Fabric.
-  ms.date: 02/02/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/03/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: module
   ms.service: sql
   ai-usage: ai-generated

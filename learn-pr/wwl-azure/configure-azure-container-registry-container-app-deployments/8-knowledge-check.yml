@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check"
   ms.date: 11/22/2023
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: petender
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 7
@@ -89,4 +89,4 @@ quiz:
       explanation: "Correct. A virtual network in Azure enables many types of Azure resources to securely communicate with each other, the internet, and on-premises networks. It also allows for filtering and routing of network traffic, as well as integration with Azure services."
     - content: "Communication between on-premises resources and the internet."
       isCorrect: false
-      explanation: "Incorrect. This is only one of the key scenarios that can be accomplished with a virtual network in Azure."
+      explanation: "Incorrect. This is only one of the key scenarios that can be accomplished with a virtual network in Azure."

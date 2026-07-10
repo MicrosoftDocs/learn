@@ -1,8 +1,19 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d9d1a9d9-3fe8-4a17-b12a-290339d26eab]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 With a clear understanding of security considerations, you're ready to enable GitHub Copilot and Fabric Copilot for your database development workflows. This unit walks you through the setup process for each tool across different development environments.
 
-## Prerequisites for AI-assisted tools
+## Prerequisites for AI assisted tools
 
-Before enabling AI-assisted tools, ensure you have the required prerequisites:
+Before enabling AI assisted tools, ensure you have the required prerequisites:
 
 **For GitHub Copilot:**
 - A GitHub account with Copilot access (Individual, Business, or Enterprise subscription)
@@ -96,7 +107,7 @@ For enterprise deployments, you'll want consistent configuration across your tea
 
 ## Verify your setup
 
-After enabling AI-assisted tools, verify everything is working correctly:
+After enabling AI assisted tools, verify everything is working correctly:
 
 **In SSMS:**
 1. Connect to a database in the query editor
@@ -121,3 +132,5 @@ After enabling AI-assisted tools, verify everything is working correctly:
 > If Copilot isn't providing contextual suggestions, verify your database connection is active and that your account has the necessary permissions to query schema information.
 
 With GitHub Copilot and Fabric Copilot enabled, you're ready to explore advanced configuration options that customize how the AI assistants behave for your specific workflows.
+
+::: zone-end

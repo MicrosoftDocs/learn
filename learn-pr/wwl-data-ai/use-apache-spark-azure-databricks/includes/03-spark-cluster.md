@@ -29,7 +29,7 @@ Azure Databricks is split into two main planes: the **control plane**, which con
 ![Diagram of Azure Databricks architecture.](../media/architecture-azure.png)
 
 > [!TIP]
-> For interactive notebook development and most ETL workloads, consider **serverless compute** instead of classic compute clusters. Serverless compute starts in 2–6 seconds, is fully managed by Azure Databricks, and scales automatically — with no cluster configuration required. For a deeper comparison of compute options, see [Select and configure compute in Azure Databricks](/training/modules/select-and-configure-compute-databricks/) in Microsoft Learn.
+> For interactive notebook development and most ETL workloads, consider **serverless compute** instead of classic compute clusters. Serverless compute starts in 2–6 seconds, is fully managed by Azure Databricks, and scales automatically — with no cluster configuration required. For a deeper comparison of compute options, see [Select and configure compute in Azure Databricks](/training/modules/select-and-configure-compute/) in Microsoft Learn.
 
 > [!NOTE]
 > You also have the option of attaching your cluster to a *pool* of idle nodes to reduce cluster startup time. For more information, see [Pools](/azure/databricks/clusters/instance-pools/) in the Azure Databricks documentation.

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=074ed636-6fe6-4ec2-b029-576cea2b957e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Effective table design forms the foundation of any database. Tables structure your data and determine how efficiently your queries access and modify information.
 
 ## Design and create tables
@@ -103,3 +114,5 @@ Apply these key principles when designing and implementing tables to ensure perf
 - **Monitor row and page compression** - Enable compression for large tables to save storage
 
 Most database performance issues stem from poor design decisions made early in development. Oversized data types waste storage and slow queries. Missing or wrong index types create bottlenecks that resource upgrades can't resolve. Prevent these problems by investing time in proper object design before you create or modify tables. The decisions you make during design—choosing appropriate data types, estimating table sizes, selecting the right index types—have far greater effect on long-term performance and cost than any optimization you can apply later.
+
+::: zone-end

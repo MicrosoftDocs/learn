@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=caa5bf87-d3c7-492e-891b-3493898c0ca6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Production database applications must handle unexpected situations gracefully. Division by zero, constraint violations, connection timeouts, and invalid data can all cause errors. Unhandled errors result in unclear error messages, incomplete transactions, or application crashes. Proper error handling ensures your T-SQL code fails predictably and provides meaningful feedback.
 
 Database operations interact with multiple users, external systems, and unpredictable data inputs simultaneously. Unlike application code that might recover from a failed operation by retrying, database errors can leave data in an inconsistent state, with some rows inserted and others not, or with locks held indefinitely. Error handling transforms these chaotic failure modes into controlled, predictable responses.
@@ -290,3 +301,5 @@ END CATCH;
 > Using `SET XACT_ABORT ON` is a best practice for stored procedures, especially those that span multiple operations. It ensures consistent behavior regardless of the specific error that occurs.
 
 For more information about error handling, see [TRY...CATCH (Transact-SQL)](/sql/t-sql/language-elements/try-catch-transact-sql?azure-portal=true) and [THROW (Transact-SQL)](/sql/t-sql/language-elements/throw-transact-sql?azure-portal=true).
+
+::: zone-end
