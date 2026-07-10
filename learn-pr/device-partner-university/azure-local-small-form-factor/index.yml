@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dpu.azure-local-small-form-factor
+title: Introduction to small form factor deployments of Azure Local (preview)
+metadata:
+  title: Introduction to Small Form Factor Deployments of Azure Local (Preview)
+  description: 'In this module, you’ll explore how small form factor deployments of Azure Local (preview) can support scenarios that require low latency, distributed infrastructure, and real-time responsiveness.'
+  ms.date: 07/09/2026
+  author: sheridan-connor
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: azure-local
+summary: >
+  Small form factor deployments of Azure Local (preview) help organizations bring Azure-managed infrastructure closer to where data is generated, enabling real-time processing and responsiveness in distributed and resource-constrained environments. In this module, you’ll learn how these deployments combine local execution with centralized Azure management, explore how the architecture works at a high level, and evaluate when this approach is the right fit for scenarios that require low latency, operational resilience, and consistent management across multiple locations.
+abstract: |
+  By the end of this module, you’ll be able to:
+  -	Evaluate whether small form factor deployments of Azure Local (preview) are appropriate for your edge AI or physical-system scenario.
+  -	Describe how small form factor deployments of Azure Local (preview) work at a high level, including the infrastructure model and supported workload approach.
+  -	Identify scenarios where small form factor deployments of Azure Local (preview) are and aren't well suited.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/azure-local-small-form-factor.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - azure-local
+units:
+  - learn.dpu.azure-local-small-form-factor.introduction
+  - learn.dpu.azure-local-small-form-factor.why-local-processing-matters
+  - learn.dpu.azure-local-small-form-factor.how-small-form-factor-deployments-work
+  - learn.dpu.azure-local-small-form-factor.when-use-small-form-factor-deployments
+  - learn.dpu.azure-local-small-form-factor.knowledge-check
+  - learn.dpu.azure-local-small-form-factor.summary
+badge:
+  uid: learn.dpu.azure-local-small-form-factor.badge
