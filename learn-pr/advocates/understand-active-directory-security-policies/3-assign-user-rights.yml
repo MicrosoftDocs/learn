@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-security-policies.assign-user-rights
+title: Assign user rights
+metadata:
+  title: Assign User Rights
+  description: Use logon rights and privileges in the User Rights Assignment node to enforce least privilege and a tiered administration model.
+  ms.date: 07/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-assign-user-rights.md)]

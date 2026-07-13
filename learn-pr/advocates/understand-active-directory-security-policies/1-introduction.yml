@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-security-policies.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Understand what the Group Policy Security Settings node contains, how those settings reach a machine, and the tools used to author and validate them.
+  ms.date: 07/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/1-introduction.md)]
