@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.devrel.understand-active-directory-security-policies
+metadata:
+  title: Understand Active Directory Group Policy Security Settings
+  description: Learn how to configure, audit, and manage Group Policy Security Settings in Active Directory environments.
+  ms.date: 07/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+title: Understand Active Directory Group Policy security settings
+summary: Learn what each Group Policy security policy does, where it solves a real-world problem, and how to configure, audit, and manage security settings at scale in Active Directory environments.
+abstract: |
+  By the end of this module, you're able to:
+  - Describe how Group Policy security settings are structured, processed, and targeted, and select the right tool to author and test them.
+  - Configure Account Policies (password, lockout, and Kerberos) and explain the domain-scope rule and fine-grained password policies.
+  - Assign user rights and configure security options to enforce least privilege and harden authentication.
+  - Configure auditing, secure group membership, services, registry, file system, and event logs.
+  - Deploy network and application security policies, and manage security settings at scale with the Windows Server 2025 OSConfig baseline.
+prerequisites: |
+  - Experience administering Windows Server and Active Directory Domain Services (AD DS).
+  - Working knowledge of Group Policy Objects (GPOs): links, scope, inheritance, and processing order.
+  - Familiarity with Windows security principals, security identifiers (SIDs), access tokens, and NTFS and registry ACLs.
+  - Basic understanding of Kerberos and NTLM authentication.
+  - Access to a Windows Server 2025 AD DS environment with the Group Policy Management Console (GPMC) and Windows PowerShell for the procedures.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+products:
+- windows-server
+subjects:
+- identity-access
+- security
+units:
+- learn.devrel.understand-active-directory-security-policies.introduction
+- learn.devrel.understand-active-directory-security-policies.configure-account-policies
+- learn.devrel.understand-active-directory-security-policies.assign-user-rights
+- learn.devrel.understand-active-directory-security-policies.configure-security-options
+- learn.devrel.understand-active-directory-security-policies.configure-audit-policy
+- learn.devrel.understand-active-directory-security-policies.secure-groups-services-registry-files-logs
+- learn.devrel.understand-active-directory-security-policies.deploy-network-application-security-policies
+- learn.devrel.understand-active-directory-security-policies.design-deploy-manage-security-settings-at-scale
+- learn.devrel.understand-active-directory-security-policies.knowledge-check
+- learn.devrel.understand-active-directory-security-policies.summary
+badge:
+  uid: learn.devrel.understand-active-directory-security-policies.badge

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8bdc554a-288c-4337-9dc7-b0f2757a2a0d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Auditing provides visibility into database activity, helping you detect security threats, track compliance, and investigate incidents. By recording who accessed what data and when, auditing creates an accountability trail that supports both security monitoring and regulatory requirements.
 
 SQL Server, Azure SQL, and SQL databases in Microsoft Fabric offer built-in auditing capabilities that capture database events without requiring application changes. Understanding how to configure and manage auditing helps you maintain appropriate oversight of your database environments.
@@ -6,7 +17,7 @@ SQL Server, Azure SQL, and SQL databases in Microsoft Fabric offer built-in audi
 
 Auditing captures database events and writes them to an audit log. The events you audit, where you store the logs, and how you analyze them depend on your security requirements and infrastructure.
 
-:::image type="content" source="../media/auditing.png" alt-text="Diagram showing Azure SQL Database sending audit logs to three destinations: Azure Blob Storage for long-term retention, Log Analytics workspace for KQL queries, and Event Hubs for real-time streaming.":::
+:::image type="content" source="../media/auditing.png" alt-text="Diagram showing Azure SQL Database sending audit logs Azure Blob Storage, Log Analytics workspace and Event Hubs.":::
 
 [SQL Server Audit](/sql/relational-databases/security/auditing/sql-server-audit-database-engine?azure-portal=true) uses the Extended Events infrastructure to record activity. You can write audit records to files, the Windows Security log, or the Windows Application log. This flexibility lets you integrate with existing log management systems.
 
@@ -172,3 +183,5 @@ For compliance scenarios, consider these retention practices:
 - Establish processes for audit log review and alerting
 
 Regular review of audit data helps you identify security issues before they become incidents. Create alerts for failed sign-in attempts, permission changes outside maintenance windows, and unusual data access patterns.
+
+::: zone-end

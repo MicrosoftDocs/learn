@@ -19,7 +19,7 @@ As part of AD DS role configuration, you need to provide answers to the question
 | What is the NetBIOS name for the AD DS domain?                                                          | When you create the first domain controller for a domain, you must specify the NetBIOS name for the domain.                                                                                                            |
 | Where will the database, log files and SYSVOL folders be created?                                       | By default, the database and log files folder is located at **C:\\Windows\\NTDS**. By default, the SYSVOL folder is located at **C:\\Windows\\SYSVOL**.                                                                |
 
-:::image type="content" source="../media/deployment-configuration-dfd90c9e.png" alt-text="A screenshot of the Active Directory Domain Services Configuration Wizard Deployment Configuration page is set to add a domain controller to an existing domain.":::
+:::image type="content" source="../media/deployment-configuration-dfd90c9e.png" alt-text="Screenshot of the Active Directory Domain Services Configuration Wizard Deployment Configuration page.":::
 
 
 ### Install a domain controller on a Server Core installation of Windows Server
@@ -34,11 +34,17 @@ If you have a network connection between sites that is slow, unreliable, or cost
 
 When you deploy a domain controller in a branch office that can't guarantee physical security, you can use additional measures to reduce the impact of a security breach. One option is to deploy an RODC. The RODC contains a read-only copy of the AD DS database, and by default, it doesn't cache any user passwords. However, you can configure the RODC to cache the passwords for users in the branch office. If an RODC is compromised, the potential loss of information risk is much lower than with a full read/write domain controller.
 
+Once an RODC is deployed, most of its configuration centres on controlling **which credentials it caches** and **who manages it**. This is governed by the **Password Replication Policy (PRP)**, which you edit from the RODC's computer account in **Active Directory Users and Computers**. By default the RODC caches no passwords except those in the built-in **Allowed RODC Password Replication Group**, while sensitive accounts sit in the **Denied** list. You tailor this by adding only the local branch users and computers to the Allowed list and keeping domain admins and other privileged accounts denied, so a compromise of the branch box exposes as few credentials as possible.
+
+To reduce logon dependence on the WAN link, you can **prepopulate** the permitted passwords onto the RODC ahead of time, and later audit exactly which credentials have been cached using the *Advanced* view. If the device is ever lost or stolen, you delete its account and choose the option to **reset the passwords of any accounts it had cached**.
+
+The second pillar is **administrator role separation**, which lets you delegate local administrative rights on the RODC to a branch user or group **without granting any domain-wide privileges**. You set this during promotion or afterward with `dsmgmt`, allowing on-site staff to patch, reboot, and service the server while remaining ordinary domain users elsewhere.
+
 ## Upgrade domain controllers from the previous version
 
-The process for upgrading a domain controller is the same for any version of Windows Server starting with Windows Server 2012 R2 through Windows Server 2022. You can upgrade to a Windows Server 2022 domain using either of the following methods:
+The process for upgrading a domain controller is the same for any version of Windows Server starting with Windows Server 2012 R2 through Windows Server 2025. You can upgrade to a Windows Server 2025 domain using either of the following methods:
 
  -  Upgrade the OS on existing domain controllers that are running Windows Server 2012 R2 or later.
- -  Add servers running Windows Server 2022 as domain controllers in a domain that already has domain controllers running earlier Windows Server versions.
+ -  Add servers running Windows Server 2025 as domain controllers in a domain that already has domain controllers running earlier Windows Server versions.
 
-We recommend the latter method, because when you finish you'll have a clean installation of both the Windows Server 2022 OS and the AD DS database. Whenever you add a new domain controller, Windows Server automatically updates the domain DNS records so clients will be able to locate and use this domain controller.
+We recommend the latter method, because when you finish you'll have a clean installation of both the Windows Server 2025 OS and the AD DS database. Whenever you add a new domain controller, Windows Server automatically updates the domain DNS records so clients will be able to locate and use this domain controller.

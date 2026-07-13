@@ -2,12 +2,13 @@
 uid: learn.wwl.implement-data-security-compliance.secure-model-endpoints
 title: Configure secure access to AI services
 metadata:
-  title: Configure secure access to AI services
+  title: Configure Secure Access to AI Services
   description: Learn how to securely call Azure OpenAI and Azure Machine Learning endpoints from your database using Managed Identity authentication.
-  ms.date: 02/05/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/07/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
+  zone_pivot_groups: video-or-text
 durationInMinutes: 10
 content: |
   [!include[](includes/7-secure-model-endpoints.md)]

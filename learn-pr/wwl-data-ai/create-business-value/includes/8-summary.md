@@ -4,7 +4,7 @@ You learned how to move AI from experiments to dependable value by focusing on f
 - building scalable technology and data foundations
 - running disciplined pilots
 - cultivating an AI ready culture
-- governing responsibly
+- governing responsibly with strong security practices
 
 Together, these drivers create a repeatable playbook—prioritize use cases that map to strategic outcomes, ensure data and platforms are production ready, and measure what matters with clear KPIs.
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-security-policies.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review the Group Policy security settings decision path and find links to learn more.
+  ms.date: 07/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-summary.md)]

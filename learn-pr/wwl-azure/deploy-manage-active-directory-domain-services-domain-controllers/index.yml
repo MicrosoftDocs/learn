@@ -3,11 +3,11 @@ uid: learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers
 metadata:
   title: Deploy and manage Active Directory Domain Services domain controllers
   description: "This module introduces you to the topology of domain controllers within an Active Directory environment. It also starts you down the path of deploying, managing, and migrating a domain controller between servers."
-  ms.date: 08/12/2025
+  ms.date: 07/01/2026
   author: wwlpublish
-  ms.author: robbarefoot
+  ms.author: orthomas
   ms.topic: module
-  ms.service: azure-active-directory
+  ms.service: windows-server
   ai-usage: ai-assisted
 title: Deploy and manage Active Directory Domain Services domain controllers
 summary: This module introduces you to the topology of domain controllers within an Active Directory environment. It also starts you down the path of deploying, managing, and migrating a domain controller between servers.

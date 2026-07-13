@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6012c8ea-3968-43f2-867c-c962df33933d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Modern database solutions expose data through various API endpoints, enabling applications to access information without writing traditional SQL queries. GraphQL, REST, and Model Context Protocol (MCP) endpoints each present unique security considerations. Properly securing these endpoints protects your data while enabling the flexibility that modern applications require.
 
 These endpoints often serve as the primary data access layer for web and mobile applications. Without appropriate security controls, they can expose sensitive data, allow unauthorized modifications, or become targets for denial-of-service attacks.
@@ -10,7 +21,7 @@ These endpoints often serve as the primary data access layer for web and mobile 
 
 **MCP** endpoints enable AI models and agents to interact with databases, providing context and executing actions. These endpoints require careful security consideration because AI systems may attempt operations that human users wouldn't, and prompt injection attacks can manipulate AI behavior.
 
-:::image type="content" source="../media/mcp.png" alt-text="Diagram comparing three API endpoint types connecting to Azure SQL Database: GraphQL for flexible schema-based queries, REST for predefined CRUD operations, and MCP for AI agent interaction, each with authentication and authorization layers.":::
+:::image type="content" source="../media/mcp.png" alt-text="Diagram that shows the three API endpoint types connecting to Azure SQL Database with authentication and authorization layers: GraphQL, REST, and MCP.":::
 
 ## Secure GraphQL endpoints
 
@@ -223,3 +234,5 @@ Use [Private Link](/azure/azure-sql/database/private-endpoint-overview?azure-por
 - Enable managed private endpoints in Microsoft Fabric
 
 These network controls add defense in depth, ensuring that even if application-level security is bypassed, attackers can't reach your database from unauthorized networks.
+
+::: zone-end
