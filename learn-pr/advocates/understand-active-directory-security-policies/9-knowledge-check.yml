@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-security-policies.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Check your understanding of the security policies available in Active Directory Group Policy.
+  ms.date: 07/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Where must the Password Policy and Account Lockout Policy be defined to control *domain* user accounts?"
+    choices:
+    - content: "In a GPO linked to the organizational unit (OU) that contains the user accounts."
+      isCorrect: false
+      explanation: "Incorrect. Account policy settings in an OU-linked GPO affect only the local SAM accounts of computers in that OU, not domain accounts."
+    - content: "In a GPO linked at the domain level."
+      isCorrect: true
+      explanation: "Correct. For domain accounts, the Password, Account Lockout, and Kerberos policies take effect only when defined in a GPO linked at the domain level."
+    - content: "In the Default Domain Controllers Policy."
+      isCorrect: false
+      explanation: "Incorrect. The Default Domain Controllers Policy governs domain controller user rights and auditing, not the domain account password, and lockout policy."
+  - content: "A service account is repeatedly being used to sign in at the console of your servers. Which user right stops that behavior most directly?"
+    choices:
+    - content: "Deny log on locally"
+      isCorrect: true
+      explanation: "Correct. Deny log on locally blocks interactive console sign-in, and deny rights always override the matching allow right."
+    - content: "Deny access to this computer from the network"
+      isCorrect: false
+      explanation: "Incorrect. That right blocks network (SMB/RPC) access, not interactive console sign-in."
+    - content: "Log on as a service"
+      isCorrect: false
+      explanation: "Incorrect. That right permits the account to run as a service; it doesn't prevent interactive sign-in."
+  - content: "Which security option must be enabled so that the Active Directory Advanced Audit Policy Configuration policies reliably override the legacy audit policies?"
+    choices:
+    - content: "Audit: Shut down system immediately if unable to log security audits"
+      isCorrect: false
+      explanation: "Incorrect. That option halts the system when audits can't be written; it doesn't control which audit model wins."
+    - content: "Audit: Force audit policy subcategory settings (Windows Vista or later)"
+      isCorrect: true
+      explanation: "Correct. This option makes advanced audit subcategory settings authoritative over the nine legacy categories."
+    - content: "Audit: Audit the use of Backup and Restore privilege"
+      isCorrect: false
+      explanation: "Incorrect. That option audits a specific privilege; it doesn't reconcile basic and advanced audit policy."
+  - content: "You must guarantee that only an approved group is a member of the local Administrators group on every member server, removing anyone else. Which Security Settings node enforces this authoritatively?"
+    choices:
+    - content: "Restricted Groups, using the *Members of this group* list"
+      isCorrect: true
+      explanation: "Correct. The *Members of this group* list is authoritative: the GPO sets exact membership and removes members that aren't listed at each refresh. For the local Administrators group, the built-in Administrator account is the exception and isn't removed."
+    - content: "Group Policy Preferences > Local Users and Groups (Update)"
+      isCorrect: false
+      explanation: "Incorrect. The Preferences action is additive by default and doesn't remove unlisted members unless you explicitly configure it to."
+    - content: "System Services"
+      isCorrect: false
+      explanation: "Incorrect. System Services controls service startup and permissions, not group membership."
+  - content: "What is the recommended first enforcement mode when you deploy AppLocker rules to production servers?"
+    choices:
+    - content: "Enforce rules"
+      isCorrect: false
+      explanation: "Incorrect. Enforcing immediately risks blocking legitimate applications you not on your list."
+    - content: "Audit only"
+      isCorrect: true
+      explanation: "Correct. Audit only logs what would be blocked so you can refine rules before switching to Enforce."
+    - content: "Not configured"
+      isCorrect: false
+      explanation: "Incorrect. 'Not configured' isn't inert: if a rule collection contains rules, AppLocker enforces them unless a higher-precedence policy sets Audit only. Use Audit only explicitly for rollout testing."
