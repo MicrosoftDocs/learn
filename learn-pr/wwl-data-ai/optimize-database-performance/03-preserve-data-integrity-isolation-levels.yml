@@ -2,11 +2,12 @@
 uid: learn.wwl.optimize-database-performance.preserve-data-integrity-isolation-levels
 title: Preserve data integrity with transaction isolation levels and concurrency controls
 metadata:
-  title: Preserve data integrity with transaction isolation levels and concurrency controls
+  zone_pivot_groups: video-or-text
+  title: Preserve Data Integrity With Transaction Isolation Levels and Concurrency Controls
   description: Choose transaction isolation levels and concurrency controls that balance data consistency with throughput in Azure SQL Database.
   author: calopez
   ms.author: calopez
-  ms.date: 07/07/2025
+  ms.date: 7/13/2026
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 10

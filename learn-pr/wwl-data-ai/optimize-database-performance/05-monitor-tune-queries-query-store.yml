@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.optimize-database-performance.monitor-tune-queries-query-store
-title: Monitor and tune queries with Query Store and Query Performance Insight
+title: Monitor and tune queries with query store and query performance insight
 metadata:
-  title: Monitor and tune queries with Query Store and Query Performance Insight
+  zone_pivot_groups: video-or-text
+  title: Monitor and Tune Queries With Query Store and Query Performance Insight
   description: Use Query Store and Query Performance Insight to detect plan regressions, force plans, and monitor wait statistics in Azure SQL Database.
   author: calopez
   ms.author: calopez
-  ms.date: 07/07/2025
+  ms.date: 7/13/2026
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 10
