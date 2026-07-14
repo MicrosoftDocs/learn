@@ -2,11 +2,12 @@
 uid: learn.wwl.integrate-sql-solutions-azure-services.define-entities-rest-graphql
 title: Define entities for REST and GraphQL
 metadata:
-  title: Define entities for REST and GraphQL
+  zone_pivot_groups: video-or-text
+  title: Define Entities for REST and GraphQL
   description: Learn how to define and configure entities in Data API Builder including field mappings, caching, pagination, filtering, and relationships.
-  ms.date: 02/05/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 7/14/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 durationInMinutes: 12
 content: |

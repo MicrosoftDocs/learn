@@ -1,3 +1,10 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7dff161f-eebf-4143-abe3-bb5881751454]
+
+::: zone-end
+
+::: zone pivot="text"
 
 Modern applications rarely interact with databases through direct SQL connections. Instead, they consume data through REST and GraphQL APIs that provide flexibility, security, and standardization. Building these API layers traditionally requires significant backend development effort—writing controllers, mapping data models, handling authentication, and managing deployment infrastructure.
 
@@ -20,3 +27,8 @@ In this module, you learn how to:
 - Basic understanding of REST APIs and JSON
 - Access to an Azure subscription for deployment exercises
 - Docker Desktop installed for local development (optional)
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
