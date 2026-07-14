@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b90058db-82e8-4200-b057-1f4a8400870c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Before you can tune queries or troubleshoot concurrency, you need the right infrastructure underneath. Azure SQL Database gives you two resource models and multiple service tiers. The combination you choose sets the ceiling on compute, memory, I/O, and storage for your workload. Choose too little and performance suffers. Choose too much and you waste budget.
 
 ## Compare resource models
@@ -124,3 +135,5 @@ The PVS shares your database's allocated storage, so a growing PVS reduces the s
 ## Key takeaways
 
 Azure SQL Database gives you two resource models, three service tiers, and two compute tiers. The vCore model with General Purpose covers most workloads. Business Critical adds sub-2-millisecond latency. Hyperscale removes storage and scaling limits. Inside the database, MAXDOP 8 is the safe default, automatic tuning catches plan regressions, and upgrading your compatibility level unlocks the latest intelligent query processing (IQP) features. Enable OPTIMIZE_FOR_AD_HOC_WORKLOADS to keep the plan cache clean, and monitor PVS storage usage from ADR using `sys.dm_tran_persistent_version_store_stats`, especially in write-heavy scenarios. Next, you explore how isolation levels and concurrency control affect the queries running inside this infrastructure.
+
+::: zone-end
