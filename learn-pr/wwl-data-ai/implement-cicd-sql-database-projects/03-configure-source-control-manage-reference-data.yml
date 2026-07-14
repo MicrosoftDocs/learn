@@ -2,11 +2,12 @@
 uid: learn.wwl.implement-cicd-sql-database-projects.configure-source-control-manage-reference-data
 title: Configure source control and manage reference data
 metadata:
-  title: Configure source control and manage reference data
-  description: Configure Git for SQL Database Projects, organize files by object type, and manage reference data with pre-deployment and post-deployment scripts.
+  zone_pivot_groups: video-or-text
+  title: Configure Source Control and Manage Reference Data
+  description: Configure Git for SQL Database Projects, organize files by object type, and manage reference data with predeployment and post-deployment scripts.
   author: calopez
   ms.author: calopez
-  ms.date: 07/14/2025
+  ms.date: 7/13/2026
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 10
