@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.integrate-sql-solutions-azure-services
 metadata:
-  title: Integrate SQL solutions with Azure services
+  title: Integrate SQL Solutions With Azure Services
   description: Learn how to use Data API Builder to create REST and GraphQL APIs for SQL databases, deploy to Azure, configure monitoring, and implement event-driven patterns for change handling.
-  ms.date: 02/24/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 7/14/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: module
   ms.service: sql
   ai-usage: ai-generated
