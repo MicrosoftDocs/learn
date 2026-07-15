@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-5g.activate-service
+title: Activating service
+metadata:
+  title: Activating Service
+  description: This content is part of the "Get started with 5G on Surface for Business devices" module.
+  ms.date: 07/08/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-activate-service.md)]
