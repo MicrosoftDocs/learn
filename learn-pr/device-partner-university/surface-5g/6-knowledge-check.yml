@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-5g.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Get started with 5G on Surface for Business devices" module.
+  ms.date: 07/08/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which connectivity option is recommended for business users who are traveling or commuting?"
+    choices:
+        - content: "Wi-Fi"
+          isCorrect: false
+          explanation: "Incorrect. The module recommends Wi-Fi for corporate office or home network scenarios."
+        - content: "5G"
+          isCorrect: true
+          explanation: "Correct. The module recommends 5G for traveling or commuting because it supports mobile connectivity without relying on hotspots or public networks."
+        - content: "Bluetooth"
+          isCorrect: false
+          explanation: "Incorrect. Bluetooth isn't described as a connectivity option for internet access in the module."
+        - content: "Ethernet"
+          isCorrect: false
+          explanation: "Incorrect. Ethernet isn't discussed as a recommended connectivity option for traveling or commuting users."
+  - content: "What is a key benefit of eSIM on Surface for Business devices?"
+    choices:
+        - content: "It requires a larger SIM card slot."
+          isCorrect: false
+          explanation: "Incorrect. eSIM is digital and doesn't require a physical SIM card slot."
+        - content: "It allows users to easily switch between mobile operators and data plans."
+          isCorrect: true
+          explanation: "Correct. The module states that eSIM is ideal for business users who want to easily switch between mobile operators and data plans."
+        - content: "It removes the need to activate service with a mobile operator."
+          isCorrect: false
+          explanation: "Incorrect. The module notes that service must still be activated through a mobile operator."
+        - content: "It's only available on Surface Pro devices."
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't state that eSIM is limited to Surface Pro devices."
+  - content: "How does 5G connectivity help IT departments manage Surface devices?"
+    choices:
+        - content: "By allowing IT to deliver updates, enforce policies, and access real-time insights remotely."
+          isCorrect: true
+          explanation: "Correct. The module explains that continuous 5G connectivity enables IT departments to deliver security updates, enforce policies, and access real-time insights from anywhere."
+        - content: "By preventing devices from connecting to Intune."
+          isCorrect: false
+          explanation: "Incorrect. The module describes integration with Intune as a key benefit."
+        - content: "By eliminating the need for Windows Autopilot."
+          isCorrect: false
+          explanation: "Incorrect. The module states that Windows Autopilot works alongside 5G connectivity to support zero-touch deployment."
+        - content: "By disabling remote management features."
+          isCorrect: false
+          explanation: "Incorrect. The module describes 5G as enabling remote management, not disabling it."
+  - content: "What technology is used to embed antennas into the metal chassis of Surface devices while preserving radio frequency integrity?"
+    choices:
+        - content: "Windows Studio Effects"
+          isCorrect: false
+          explanation: "Incorrect. Windows Studio Effects is used for enhancing video and audio experiences during calls."
+        - content: "Liquid Crystal Polymer (LCP)"
+          isCorrect: false
+          explanation: "Incorrect. LCP is described as a layer used to support stable signal performance, but it isn't the technology used to embed antennas into the chassis."
+        - content: "Nano-Molding Technology (NMT)"
+          isCorrect: true
+          explanation: "Correct. The module states that NMT embeds antennas into the metal chassis while preserving radio frequency integrity."
+        - content: "Windows Autopilot"
+          isCorrect: false
+          explanation: "Incorrect. Windows Autopilot is used for device deployment and provisioning."
+  - content: "What challenge did Sarah face before using a Surface Pro for Business with 5G in the remote infrastructure field engineer scenario?"
+    choices:
+        - content: "She couldn't access Azure services."
+          isCorrect: false
+          explanation: "Incorrect. The scenario doesn't state that Sarah was unable to access Azure services."
+        - content: "She relied on a mobile hotspot that drained her phone battery and frequently lost connection."
+          isCorrect: true
+          explanation: "Correct. The module explains that Sarah depended on a separate mobile hotspot that drained her phone battery, dropped connections during file transfers, and created security concerns."
+        - content: "She was unable to use Microsoft Teams for collaboration."
+          isCorrect: false
+          explanation: "Incorrect. The scenario focuses on connectivity challenges, not an inability to use Teams."
+        - content: "She was limited to working only in corporate offices."
+          isCorrect: false
+          explanation: "Incorrect. Sarah's work took place at remote substations and field locations."
