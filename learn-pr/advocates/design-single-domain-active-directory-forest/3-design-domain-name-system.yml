@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-single-domain-active-directory-forest.domain-name-system-design
+title: Design DNS for the forest
+metadata:
+  title: Design DNS for the Forest
+  description: Design AD-integrated zones, replication scopes, dynamic updates, forwarding, resolver settings, and DNS lifecycle controls.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-design-domain-name-system.md)]
