@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.devrel.design-single-domain-active-directory-forest
+metadata:
+  title: Design a Single-Domain Active Directory Forest
+  description: Design DNS, sites, replication, and domain controller placement for a Windows Server 2025 single-domain AD DS forest.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+title: Design a single-domain Active Directory forest
+summary: Design a resilient single-domain AD DS forest with an intentional namespace, DNS architecture, site topology, replication model, and domain controller placement.
+abstract: |
+  In this module, you'll:
+  - Justify a single-domain forest and select durable DNS and UPN namespaces.
+  - Design AD-integrated DNS, sites, subnets, and site links.
+  - Plan replication convergence and failure behavior.
+  - Place domain controllers, DNS servers, global catalogs, FSMO roles, and the authoritative time source.
+  - Validate the design with objective evidence and failure scenarios.
+prerequisites: |
+  - Advanced experience administering Active Directory Domain Services.
+  - Working knowledge of DNS, IP routing, Group Policy, Kerberos, and Windows PowerShell.
+  - Familiarity with domain controller promotion and AD DS replication concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- identity-access-admin
+products:
+- windows-server
+units:
+- learn.devrel.design-single-domain-active-directory-forest.introduction
+- learn.devrel.design-single-domain-active-directory-forest.single-domain-forest-design
+- learn.devrel.design-single-domain-active-directory-forest.domain-name-system-design
+- learn.devrel.design-single-domain-active-directory-forest.sites-subnets
+- learn.devrel.design-single-domain-active-directory-forest.replication-topology
+- learn.devrel.design-single-domain-active-directory-forest.domain-controller-placement
+- learn.devrel.design-single-domain-active-directory-forest.design-validation
+- learn.devrel.design-single-domain-active-directory-forest.knowledge-check
+- learn.devrel.design-single-domain-active-directory-forest.summary
+badge:
+  uid: learn.devrel.design-single-domain-active-directory-forest.badge

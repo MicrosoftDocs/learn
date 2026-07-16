@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-single-domain-active-directory-forest.sites-subnets
+title: Design sites and subnets
+metadata:
+  title: Design Sites and Subnets
+  description: Map physical and cloud networks to AD DS sites for intentional service location and replication behavior.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-design-sites-subnets.md)]
