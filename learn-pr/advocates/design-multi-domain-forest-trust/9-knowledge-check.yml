@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-multi-domain-active-directory-forest.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding of multi-domain and multi-forest design, trust security, and RODC compromise response.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A regulated subsidiary must not share the schema, configuration partition, or Enterprise Admins and Schema Admins security boundary with the rest of the organization. Which structure should you choose?"
+    choices:
+    - content: "Create a separate forest and connect it with a narrowly scoped trust if cross-forest access is required."
+      isCorrect: true
+      explanation: "Correct. A forest is the security and forest-wide replication boundary for the schema, configuration partition, Enterprise Admins, and Schema Admins."
+    - content: "Create another domain in the existing forest and delegate administration to the subsidiary."
+      isCorrect: false
+      explanation: "Incorrect. A domain can provide domain-level administration and a separate domain naming context, but it still shares the forest schema, configuration partition, and forest-wide administrative boundary."
+    - content: "Deploy an RODC in the subsidiary's site and deny privileged accounts in its Password Replication Policy."
+      isCorrect: false
+      explanation: "Incorrect. An RODC limits credential exposure at a branch, but it remains part of the same domain and forest and doesn't create the required security boundary."
+  - content: "Users in an acquired company's forest need access to only a defined set of servers in your resource forest. Which trust design provides the narrowest appropriate authentication path?"
+    choices:
+    - content: "Create a one-way forest trust in which the resource forest trusts the acquired account forest, enable selective authentication, and grant Allowed to authenticate only on the approved servers."
+      isCorrect: true
+      explanation: "Correct. The one-way trust supports the required account-to-resource authentication flow, while selective authentication limits authentication to explicitly approved computer objects."
+    - content: "Create a one-way forest trust in which the acquired account forest trusts the resource forest, then add the acquired users to resource ACLs."
+      isCorrect: false
+      explanation: "Incorrect. This reverses the required trust direction. The forest containing the resources must trust the forest containing the user accounts."
+    - content: "Create a two-way forest trust, disable SID filtering, and rely only on resource ACLs to restrict access."
+      isCorrect: false
+      explanation: "Incorrect. A two-way trust adds an unnecessary authentication direction, and disabling SID filtering increases risk. Use the minimum trust direction and preserve SID filtering."
+  - content: "An RODC is stolen from a branch office. Which Password Replication Policy usage set identifies the domain credentials that are cached on that RODC and must be included in the reset plan?"
+    choices:
+    - content: "The revealed list."
+      isCorrect: true
+      explanation: "Correct. The revealed list contains the accounts whose passwords are currently stored on the RODC, so it defines the cached domain credentials exposed by the loss."
+    - content: "The allowed list."
+      isCorrect: false
+      explanation: "Incorrect. The allowed list identifies accounts whose passwords may be cached, but it doesn't prove that their credentials were stored on the RODC."
+    - content: "The authenticated-to list."
+      isCorrect: false
+      explanation: "Incorrect. The authenticated-to list includes accounts that authenticated through the RODC whether or not their passwords were cached."
