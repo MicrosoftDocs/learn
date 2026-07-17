@@ -14,5 +14,5 @@ The governance practices you've implemented scale beyond code review to any mult
 
 - [Microsoft Responsible AI Standard](https://www.microsoft.com/ai/responsible-ai)
 - [Azure AI Content Safety documentation](https://learn.microsoft.com/azure/ai-services/content-safety/)
-- [Transparency Note guidance for AI systems](https://learn.microsoft.com/azure/architecture/guide/responsible-innovation/transparency-note)
+- [Transparency Note guidance for AI systems](https://learn.microsoft.com/azure/architecture/guide/responsible-innovation/)
 - [Azure Monitor immutable logs](https://learn.microsoft.com/azure/azure-monitor/logs/data-retention-archive)
