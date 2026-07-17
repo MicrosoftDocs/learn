@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=00726a8f-46cd-4c15-b2f1-bd17ccfa830e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Embeddings represent data as vectors so that similarity between pieces of text can be compared. How you design embeddings affects relevance, performance, and cost when vectors are later generated and queried.
 
 SQL Server provides built-in AI functions that support embedding workflows. Common vector search patterns help guide how text should be prepared before embeddings are generated.
@@ -83,3 +94,5 @@ Each chunk is returned as a separate row by the query. These smaller pieces can 
 ## Key takeaways
 
 Embedding quality depends on the decisions you make before any model runs. Choosing the right columns and chunking long text into focused segments with `AI_GENERATE_CHUNKS` determine how useful your vector search results are. Getting these design choices right early prevents costly rework when you move to embedding generation and storage.
+
+::: zone-end

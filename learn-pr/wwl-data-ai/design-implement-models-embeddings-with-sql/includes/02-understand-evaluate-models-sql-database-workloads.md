@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1614e856-f2e5-419c-a1e1-8e9ca33f59f1]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Large language models (LLMs) enable applications to generate responses, summarize information, and reason over user input. Their usefulness increases when they can access application data stored in a database.
 
 Azure SQL Database and Fabric SQL database support building intelligent applications by integrating AI capabilities such as embeddings, vector data types, and vector search. These features allow models to work directly with relational data, enabling common patterns like semantic search and Retrieval Augmented Generation (RAG).
@@ -72,3 +83,5 @@ Understanding these trade-offs helps ensure that AI capabilities are integrated 
 ## Key takeaways
 
 Models differ in modalities, language support, size, and structured output capabilities, and these differences affect how they integrate with SQL database workloads. RAG retrieves relevant database content and supplies it to a model as context, while tokens determine how input and output text is processed. Embeddings represent data as vectors that enable semantic similarity comparisons. Microsoft Foundry Models provides a catalog for evaluating and selecting models that align with your SQL-based application requirements.
+
+::: zone-end
