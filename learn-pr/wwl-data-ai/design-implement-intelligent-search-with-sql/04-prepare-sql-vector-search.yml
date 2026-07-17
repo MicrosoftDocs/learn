@@ -2,11 +2,12 @@
 uid: learn.wwl.design-implement-intelligent-search-with-sql.prepare-sql-vector-search
 title: Prepare SQL for vector search
 metadata:
-  title: Prepare SQL for vector search
+  zone_pivot_groups: video-or-text
+  title: Prepare SQL for Vector Search
   description: Learn how to design for vector data including vector data type, indexes, size, and choosing between ANN and ENN search.
   author: calopez
   ms.author: calopez
-  ms.date: 02/03/2026
+  ms.date: 07/17/2026
   ms.topic: unit
 durationInMinutes: 10
 content: |

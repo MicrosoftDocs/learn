@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6216460a-9ebd-4784-9af5-9a5c3b743bce]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Finding relevant information in a database often requires more than matching keywords. Users search for concepts, not just words. A customer looking for "lightweight hiking backpack" might find nothing if the product is listed as "ultralight trail bag." SQL Server and Azure SQL Database provide multiple search approaches to handle these challenges: full-text search for keyword matching, vector search for semantic similarity, and hybrid search that combines both.
 
 Full-text search excels when users know the specific terms they want. Vector search uses embeddings to find content based on meaning even when the exact words differ. Hybrid search runs both approaches and merges the results, giving users the best of both worlds. Choosing the right approach depends on how your users search and what trade-offs you can accept between precision, recall, and performance.
@@ -11,3 +19,8 @@ After completing this module, you'll be able to:
 - Prepare SQL databases for vector search by storing embeddings and choosing distance metrics.
 - Write vector search queries using VECTOR_DISTANCE and VECTOR_SEARCH functions.
 - Combine full-text and vector search results using Reciprocal Rank Fusion (RRF).
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

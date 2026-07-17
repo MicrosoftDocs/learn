@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-multi-domain-active-directory-forest.decide-multi-domain-multi-forest-structure
+title: Decide when to design multiple domains or forests
+metadata:
+  title: Decide When to Design Multiple Domains or Forests
+  description: Determine when isolation, legal separation, autonomy, mergers, namespace, or replication constraints justify structural complexity.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-decide-multi-domain-multi-forest-structure.md)]

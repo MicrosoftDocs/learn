@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-multi-domain-active-directory-forest.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review the advanced decisions for multi-domain and multi-forest AD DS structures, trusts, replication, capacity, and RODCs.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-summary.md)]

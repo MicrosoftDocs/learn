@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.devrel.design-multi-domain-active-directory-forest
+metadata:
+  title: Design a Multi-Domain Active Directory Forest
+  description: Design multi-domain and multi-forest AD DS structures, including trusts, delegation, global catalog placement, advanced replication, capacity planning, and RODC branch deployments.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+title: Design a multi-domain Active Directory forest
+summary: Extend a single-domain AD DS baseline to environments that require multiple domains or forests, complex delegation, trusts, advanced replication and capacity decisions, or read-only domain controllers.
+abstract: |
+  In this module, you'll:
+  - Determine when security isolation, legal separation, administrative autonomy, mergers, or replication constraints justify multiple domains or forests.
+  - Design forest roots, domain trees, directory and application partitions, namespace coexistence, and global catalog scope.
+  - Design OU structure, delegation, GPO scope and inheritance, protected objects, and schema governance.
+  - Design trust direction, transitivity, selective authentication, SID filtering, SIDHistory governance, and cross-forest name resolution.
+  - Plan universal group membership, global catalog placement, and authentication paths across domains and forests.
+  - Analyze advanced replication risks and plan domain controller capacity and failure domains.
+  - Design RODC branch deployments, including Password Replication Policy and delegated administration.
+prerequisites: |
+  - Experience administering AD DS, including domain controller promotion, DNS, Group Policy, and PowerShell.
+  - Familiarity with single-domain forest design, sites, and replication topology.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- identity-access-admin
+products:
+- windows-server
+units:
+- learn.devrel.design-multi-domain-active-directory-forest.introduction
+- learn.devrel.design-multi-domain-active-directory-forest.decide-multi-domain-multi-forest-structure
+- learn.devrel.design-multi-domain-active-directory-forest.design-domain-trees-directory-partitions
+- learn.devrel.design-multi-domain-active-directory-forest.design-delegation-policy-schema-governance
+- learn.devrel.design-multi-domain-active-directory-forest.design-trusts-cross-forest-name-resolution
+- learn.devrel.design-multi-domain-active-directory-forest.plan-global-catalog-authentication-paths
+- learn.devrel.design-multi-domain-active-directory-forest.plan-advanced-replication-capacity
+- learn.devrel.design-multi-domain-active-directory-forest.design-branch-deployments
+- learn.devrel.design-multi-domain-active-directory-forest.knowledge-check
+- learn.devrel.design-multi-domain-active-directory-forest.summary
+badge:
+  uid: learn.devrel.design-multi-domain-active-directory-forest.badge

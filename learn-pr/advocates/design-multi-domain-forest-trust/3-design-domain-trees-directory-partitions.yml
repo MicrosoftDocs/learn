@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-multi-domain-active-directory-forest.design-domain-trees-directory-partitions
+title: Design domain trees and directory partitions
+metadata:
+  title: Design Domain Trees and Directory Partitions
+  description: Design forest roots, domain trees, namespace coexistence, directory partitions, DNS application partitions, and global catalog scope.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-design-domain-trees-directory-partitions.md)]
