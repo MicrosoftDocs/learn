@@ -2,11 +2,12 @@
 uid: learn.wwl.design-implement-models-embeddings-with-sql.design-embeddings-sql-database-workloads
 title: Design embeddings for SQL database workloads
 metadata:
-  title: Design embeddings for SQL database workloads
+  zone_pivot_groups: video-or-text
+  title: Design Embeddings for SQL Database Workloads
   description: Design embeddings by selecting meaningful data, controlling input size, and defining chunking strategies.
   author: calopez
   ms.author: calopez
-  ms.date: 02/02/2026
+  ms.date: 07/16/2026
   ms.topic: unit
 durationInMinutes: 8
 content: |
