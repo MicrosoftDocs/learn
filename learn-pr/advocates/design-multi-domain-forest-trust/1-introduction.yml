@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-multi-domain-active-directory-forest.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Frame the advanced design decisions introduced by multiple AD DS domains, trees, forests, trusts, and RODCs.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]
