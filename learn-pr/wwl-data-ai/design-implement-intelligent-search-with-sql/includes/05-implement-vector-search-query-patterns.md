@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d109f3ff-3d25-4eef-9912-1e8e9cbd4f38]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 With vectors stored and a search strategy chosen, you're ready to write queries. This unit covers the T-SQL functions that power vector search and shows you how to combine them effectively.
 
 Vector search queries follow a common pattern: generate or retrieve a query vector, calculate distances to stored vectors, and return the closest matches. SQL Server provides four functions that work together to support this pattern: `VECTOR_DISTANCE`, `VECTOR_SEARCH`, `VECTOR_NORMALIZE`, and `VECTORPROPERTY`.
@@ -170,3 +181,5 @@ Each function serves a distinct purpose in vector search:
 ## Key takeaways
 
 Vector search queries in SQL follow a predictable pattern: prepare a query vector, find neighbors using either `VECTOR_DISTANCE` (exact) or `VECTOR_SEARCH` (approximate), and order by distance. `VECTOR_NORMALIZE` and `VECTORPROPERTY` support data quality and consistency. Remember that `VECTOR_SEARCH` applies filters after finding nearest neighbors, so request more candidates than you need when combining with WHERE clauses. In the next unit, you'll learn how to combine vector search with full-text search in hybrid queries.
+
+::: zone-end

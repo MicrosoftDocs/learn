@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9f54799d-9ea5-42c8-8d7d-ac994fbe1ffd]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 SQL Server and Azure SQL Database provide you with three ways to search text data, full-text search, vector search, and hybrid search. Each works differently, and choosing the right one depends on what your users need to find.
 
 To see why the right search approach matters, imagine a customer searching your product catalog. They type "lightweight hiking backpack" but your best-selling item is listed as "ultralight trail bag." A traditional keyword search finds nothing. A smarter search option understands that both descriptions mean the same thing. The search approach you choose determines whether your users find what they need or not.
@@ -85,3 +96,5 @@ RRF rewards documents that perform well across multiple search methods, surfacin
 ## Key takeaways
 
 Full-text search, vector search, and hybrid search each serve different purposes. Full-text search excels at finding exact keywords and phrases, vector search captures semantic meaning across different phrasings, and hybrid search combines both to maximize relevance. Your choice depends on how your users search and what trade-offs you can accept between precision, recall, and performance. When you implement hybrid search, Reciprocal Rank Fusion (RRF) is a powerful technique for merging ranked results from full-text and vector searches, ensuring that items relevant to both methods rise to the top of the results list.
+
+::: zone-end
