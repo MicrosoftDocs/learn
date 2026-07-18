@@ -2,10 +2,10 @@
 uid: learn.wwl.design-implement-rag-with-sql.exercise-implement-rag-solution
 title: "Exercise: Implement a RAG solution"
 metadata:
-  title: "Exercise: Implement a RAG solution"
+  title: "Exercise: Implement a RAG Solution"
   description: Practice building a complete RAG pipeline using Azure SQL Database.
-  ms.date: 02/04/2026
-  author: wwlpublish
+  ms.date: 07/17/2026
+  author: calopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-assisted
