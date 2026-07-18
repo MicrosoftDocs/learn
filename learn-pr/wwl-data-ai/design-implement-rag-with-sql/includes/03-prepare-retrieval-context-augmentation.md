@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=94f094f9-cc88-4a8b-808f-87204270a320]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 You now understand what RAG is and when to use it. In the following units, you learn how to implement each step of the RAG workflow in T-SQL. 
 
 Consider the following scenario: A customer asks "Which pedals fit the mountain bike I bought last month?" You query the database, find their order, identify the bike model, and locate compatible components. That step represents the "R" in RAG: retrieval. Let's retrieve and prepare that data for the language model. There are many ways to retrieve data from SQL, but for RAG, the goal is to provide the model with structured context it can actually use.
@@ -98,3 +109,5 @@ The variable `@context` now holds a JSON string ready for the prompt. This JSON 
 ## Key takeaways
 
 The goal is to give the language model structured context it can actually use. JSON preserves the meaning of your data while keeping it readable as text. Use `FOR JSON AUTO` when you want quick results and `FOR JSON PATH` when you need control over field names and nesting. Add `WITHOUT_ARRAY_WRAPPER` for single-record queries. Keep your JSON lean by including only the columns the model needs. Less noise means better answers and lower token costs.
+
+::: zone-end

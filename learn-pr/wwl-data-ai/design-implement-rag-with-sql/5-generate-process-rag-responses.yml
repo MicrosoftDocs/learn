@@ -2,10 +2,11 @@
 uid: learn.wwl.design-implement-rag-with-sql.generate-process-rag-responses
 title: Generate and process RAG responses
 metadata:
-  title: Generate and process RAG responses
+  zone_pivot_groups: video-or-text
+  title: Generate and Process RAG Responses
   description: Learn how to call LLM services from SQL and process the responses to complete the RAG pipeline.
-  ms.date: 02/04/2026
-  author: wwlpublish
+  ms.date: 07/17/2026
+  author: calopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-assisted
