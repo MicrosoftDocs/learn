@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.devrel.design-multi-domain-active-directory-forest
 metadata:
-  title: Design a Multi-Domain Active Directory Forest
+  title: Design a Multi-Domain or Multi-Forest Active Directory Environment
   description: Design multi-domain and multi-forest AD DS structures, including trusts, delegation, global catalog placement, advanced replication, capacity planning, and RODC branch deployments.
   ms.date: 07/15/2026
   author: orin-thomas
   ms.author: orthomas
   ms.topic: module
   ms.service: windows-server
-title: Design a multi-domain Active Directory forest
+title: Design a multi-domain or multi-forest Active Directory environment
 summary: Extend a single-domain AD DS baseline to environments that require multiple domains or forests, complex delegation, trusts, advanced replication and capacity decisions, or read-only domain controllers.
 abstract: |
   In this module, you'll:
