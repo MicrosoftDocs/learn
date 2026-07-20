@@ -5,7 +5,7 @@ metadata:
   description: "Azure Stack Hub"
   ms.date: 08/05/2022
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure-stack-hub
 title: Azure Stack Hub
