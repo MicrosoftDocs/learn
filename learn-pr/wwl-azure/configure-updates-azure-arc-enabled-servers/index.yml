@@ -5,7 +5,7 @@ metadata:
   description: "Update Manager  is a unified service that helps manage and govern updates for all your machines. It allows you to monitor Windows and Linux update compliance across Azure and on-premises from a single dashboard."
   ms.date: 06/13/2024
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module-intro-to-product
   ms.custom:
   - N/A

@@ -5,7 +5,7 @@ metadata:
   description: "Create and configure host pools and session hosts for Azure Virtual Desktop"
   ms.date: 08/22/2024
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.custom:
   - N/A
