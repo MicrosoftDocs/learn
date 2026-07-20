@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
     - N/A
-  ms.service: azure-devops-artifacts
+  ms.service: azure-artifacts
   ai-usage: ai-assisted
 title: Migrate, consolidate, and secure artifacts
 summary: This module details package migration strategies, artifact repository consolidation approaches, and comprehensive security configuration to secure access to package feeds and artifact repositories using Azure Artifacts roles, permissions, and authentication mechanisms.
