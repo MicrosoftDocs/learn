@@ -5,19 +5,20 @@ metadata:
   description: Learn how to plan and prepare a GenAIOps solution.
   author: madiepev
   ms.author: madiepev
-  ms.date: 02/21/2025
+  ms.date: 07/18/2026
   ms.service: foundry-tools
   ms.topic: module-standard-task-based
   ms.custom: ai-learning-hub
   ms.collection:
     - wwl-ai-copilot
 title: Plan and prepare a GenAIOps solution
-summary: Learn how to develop chat applications with language models using a code-first development approach. By developing generative AI apps code-first, you can create robust and reproducible flows that are integral for generative AI Operations, or GenAIOps.
+summary: Learn how to plan and prepare a generative AI solution by defining agent specifications, designing and optimizing an agent, and applying the generative AI Operations (GenAIOps) lifecycle.
 abstract: |
   By the end of this module, you're able to:
-    - Identify use cases for Generative AI applications.
-    - Select a model for your Generative AI application.
-    - Describe what GenAIOps is, and how it defines the app lifecycle.
+    - Define specifications for a generative AI agent.
+    - Design and optimize an agent for your use case.
+    - Describe the GenAIOps lifecycle and how it structures app development.
+    - Identify tools and frameworks that support each phase of the lifecycle.
 prerequisites: |
   Before starting this module, you should be familiar with fundamental generative AI concepts and services in Azure. Consider completing the [Fundamentals of Generative AI](/training/modules/fundamentals-generative-ai/) module first.
 iconUrl: /learn/achievements/generic-badge.svg

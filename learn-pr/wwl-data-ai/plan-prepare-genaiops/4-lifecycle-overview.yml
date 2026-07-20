@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-prepare-genaiops.lifecycle-overview
-title: Understand the development lifecycle of a language model application
+title: Explore the GenAIOps lifecycle
 metadata:
-  title: Understand the development lifecycle of a language model application
-  description: Understand the development lifecycle of a language model application.
+  title: Explore the GenAIOps lifecycle
+  description: Explore the GenAIOps lifecycle and how it structures a generative AI agent from exploration to production.
   author: madiepev
   ms.author: madiepev
-  ms.date: 02/21/2025
+  ms.date: 07/18/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 7
+durationInMinutes: 4
 content: |
   [!include[](includes/4-lifecycle-overview.md)]
