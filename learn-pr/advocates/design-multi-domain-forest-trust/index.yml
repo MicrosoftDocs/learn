@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: windows-server
 title: Design a multi-domain or multi-forest Active Directory environment
-summary: Extend a single-domain AD DS baseline to environments that require multiple domains or forests, complex delegation, trusts, advanced replication and capacity decisions, or read-only domain controllers.
+summary: Learn how to extend a single-domain AD DS deployment when you need multiple domains or forests, complex delegation, trusts, advanced replication, or read-only domain controllers.
 abstract: |
   In this module, you'll:
   - Determine when security isolation, legal separation, administrative autonomy, mergers, or replication constraints justify multiple domains or forests.
