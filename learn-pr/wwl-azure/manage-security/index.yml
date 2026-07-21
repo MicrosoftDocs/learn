@@ -5,7 +5,7 @@ metadata:
   description: "The Windows client for Azure Virtual Desktop integrates Azure Virtual Desktop on local machines. You’ll learn the critical actions for keeping your users safe."
   ms.date: 08/07/2024
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.custom:
   - N/A

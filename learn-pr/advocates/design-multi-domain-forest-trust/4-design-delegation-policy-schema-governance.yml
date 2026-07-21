@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-multi-domain-active-directory-forest.design-delegation-policy-schema-governance
+title: Design delegation, GPO scope, and schema governance
+metadata:
+  title: Design Delegation, GPO Scope, and Schema Governance
+  description: Design OU boundaries, least-privilege delegation, Group Policy inheritance, protected-object handling, and forest-wide schema governance.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-design-delegation-policy-schema-governance.md)]

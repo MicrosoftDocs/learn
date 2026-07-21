@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=18599a42-1c59-4cc0-9f61-2701fcdc3d76]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Choosing the right hardware and configuration is only part of database performance. What happens when two customers try to buy the last item in stock at the exact same moment? Or when a report reads a price that another transaction is in the middle of changing? Transaction isolation levels control how the database handles these situations.
 
 ## How isolation levels work
@@ -102,3 +113,5 @@ Reserve SERIALIZABLE for scenarios where phantom reads would cause real business
 ## Key takeaways
 
 Transaction isolation levels control the trade-off between data consistency and concurrency. Higher isolation prevents more side effects but increases blocking. Azure SQL Database enables RCSI by default, which eliminates read-write blocking by using row versioning instead of shared locks. Optimized locking further reduces blocking by releasing row and page locks as soon as each row is updated. For most workloads, the default combination of RCSI and optimized locking provides the best balance. Reserve SERIALIZABLE for scenarios where phantom reads would cause business logic errors.
+
+::: zone-end

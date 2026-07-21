@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.optimize-database-performance
 metadata:
-  title: Optimize database performance
+  title: Optimize Database Performance
   description: Optimize Azure SQL Database performance by choosing the right service tier and managing concurrency with isolation levels. Analyze queries with execution plans and DMVs. Use Query Store for plan management and resolve blocking and deadlocks.
-  ms.date: 07/07/2025
+  ms.date: 7/13/2026
   author: calopez
   ms.author: calopez
   ms.topic: module

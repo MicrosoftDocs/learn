@@ -2,11 +2,12 @@
 uid: learn.wwl.implement-cicd-sql-database-projects.detect-resolve-schema-drift
 title: Detect and resolve schema drift
 metadata:
-  title: Detect and resolve schema drift
+  zone_pivot_groups: video-or-text
+  title: Detect and Resolve Schema Drift
   description: Detect schema drift with schema comparison tools and SqlPackage, and resolve differences between database and project.
   author: calopez
   ms.author: calopez
-  ms.date: 07/14/2025
+  ms.date: 7/13/2026
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 10

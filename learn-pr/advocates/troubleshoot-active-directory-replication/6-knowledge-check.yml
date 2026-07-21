@@ -1,0 +1,80 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.troubleshoot-active-directory-replication.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Check the ability to interpret replication evidence, isolate a failed dependency, select a safe correction, and recognize escalation conditions.
+  ms.date: 07/20/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Repadmin reports an inbound failure for `DC=contoso,DC=com` on `Brisbane\\BNE-DC-01` from `Seattle\\SEA-DC-01`. Which interpretation is correct?"
+    choices:
+    - content: "`SEA-DC-01` is the destination and pulls the domain partition from `BNE-DC-01`."
+      isCorrect: false
+      explanation: "Incorrect. The relationship is listed on `BNE-DC-01`, so that domain controller is the destination for this inbound attempt."
+    - content: "`BNE-DC-01` and `SEA-DC-01` both originate the same inbound replication attempt."
+      isCorrect: false
+      explanation: "Incorrect. Active Directory Domain Services is multi-master, but each reported attempt still has one destination and one source."
+    - content: "`BNE-DC-01` is the destination and pulls the domain partition from `SEA-DC-01`."
+      isCorrect: true
+      explanation: "Correct. Repadmin partner output is read from the destination's inbound perspective. The named source supplies the listed directory partition."
+  - content: "Repadmin reports error 1722 for the Configuration and Schema naming contexts, then error 1256 for the Domain, DomainDnsZones, and ForestDnsZones naming contexts from the same source. Which status should drive the first investigation?"
+    choices:
+    - content: "Error 1722, because the Configuration and Schema remote procedure call bind failures caused cancellation of the remaining three naming contexts."
+      isCorrect: true
+      explanation: "Correct. Error 1256 records the canceled Domain, DomainDnsZones, and ForestDnsZones attempts after the higher-priority Configuration and Schema attempts failed with error 1722. Investigate the first non-1256 status."
+    - content: "Error 1256, because each of the three canceled naming contexts requires a separate repair."
+      isCorrect: false
+      explanation: "Incorrect. The three 1256 results record canceled replication work. Treating them separately hides the higher-priority Configuration and Schema bind failures that caused the destination to cancel those naming contexts."
+    - content: "Status 8477, because posted replication requests replace remote procedure call failures."
+      isCorrect: false
+      explanation: "Incorrect. Status 8477 indicates work in progress and doesn't explain the error 1722 bind failures for Configuration and Schema or the resulting cancellation of the other three naming contexts."
+  - content: "Name resolution for `SEA-DC-01.contoso.com` returns a retired address. TCP 135 fails through the name but succeeds to the current address. Which response best fits the evidence?"
+    choices:
+    - content: "Open every dynamic remote procedure call port on each firewall, then force forest-wide synchronization."
+      isCorrect: false
+      explanation: "Incorrect. The test already isolates a stale name record. Broad firewall and synchronization changes add risk without addressing that cause."
+    - content: "Create a manual connection object from the destination to the source, then recalculate the topology."
+      isCorrect: false
+      explanation: "Incorrect. A connection object can't correct a source name that resolves to a retired address."
+    - content: "Correct only the demonstrated stale A record on the authoritative server serving `BNE-DC-01`, verify the intended registration settings, then repeat the same tests."
+      isCorrect: true
+      explanation: "Correct. The source name selects the retired endpoint while the current address accepts TCP 135. Correct and verify the demonstrated name-to-address mapping first; confirm end-to-end recovery with the later targeted replication test."
+  - content: "Error 8452 appears immediately after a site-link change. The destination DSA's current view no longer lists the named source as valid, while the DSA/DC that initiated the request still has stale topology or partition knowledge. Which action is safest?"
+    choices:
+    - content: "Create permanent manual connection objects that reproduce the stale DSA/DC view."
+      isCorrect: false
+      explanation: "Incorrect. Manual connections would preserve obsolete topology instead of allowing the intended design to converge."
+    - content: "Allow topology knowledge to converge and test a valid source, destination, and directory partition directly."
+      isCorrect: true
+      explanation: "Correct. Error 8452 can be transient while DSAs/DCs have different current topology or partition knowledge. Compare explicit DC views, allow expected convergence, and then test a valid relationship."
+    - content: "Run broad synchronization until every reported relationship succeeds."
+      isCorrect: false
+      explanation: "Incorrect. Broad synchronization can repeatedly request relationships that the destination no longer considers valid."
+  - content: "Directory Service event 2095 appears and the domain controller is marked nonwritable, although Repadmin reports no failures. Which response is appropriate?"
+    choices:
+    - content: "Clear the writable-state flag and force synchronization from every partner before collecting logs."
+      isCorrect: false
+      explanation: "Incorrect. Removing safeguards and forcing replication can spread inconsistency and destroy useful prechange evidence."
+    - content: "Preserve evidence, isolate the affected domain controller when guidance requires it, and escalate supported recovery."
+      isCorrect: true
+      explanation: "Correct. Event 2095 indicates update sequence number rollback risk. Partners can appear current while silently ignoring future changes."
+    - content: "Manually attach and boot an old copied virtual hard disk, or revert on a platform that doesn't expose virtual machine Generation ID."
+      isCorrect: false
+      explanation: "Incorrect. These actions bypass virtual machine Generation ID protection and can cause update sequence number rollback. A supported generation-aware restore is a planned recovery mechanism, not an improvised response to Event 2095, and it doesn't preserve unreplicated changes made after the restored point."
+  - content: "Which event artifact best corroborates the Repadmin evidence for the failed inbound replication relationship?"
+    choices:
+    - content: "A Directory Service Event ID 1925, task category Active Directory Domain Services / Knowledge Consistency Checker, logged on `BNE-DC-01` at `2026-07-20 07:11:32 +10:00`, for `DC=contoso,DC=com`, whose `Source directory service` is `CN=NTDS Settings,CN=SEA-DC-01,CN=Servers,CN=Seattle,CN=Sites,CN=Configuration,DC=contoso,DC=com`, whose `Source domain controller address` is the SEA DSA GUID CNAME, and whose additional status is 1256."
+      isCorrect: true
+      explanation: "Correct. Event 1925 is destination-logged evidence for the inbound attempt. Its source DSA DN, GUID-CNAME address field, naming context, timestamp, and secondary 1256 status can be correlated with Repadmin. Direct DNS queries and authoritative-record inspection establish the returned address."
+    - content: "A DNS client event from an administrative workstation that contains only the retired IP address."
+      isCorrect: false
+      explanation: "Incorrect. That record might support a DNS hypothesis, but it doesn't establish the failed replication source, destination, directory partition, and time range."
+    - content: "A source-logged event on `SEA-DC-01` that doesn't identify a destination, directory partition, or timestamp."
+      isCorrect: false
+      explanation: "Incorrect. The stale name prevents the destination from contacting the source, and an event without the relationship and time fields can't corroborate the failed inbound attempt."

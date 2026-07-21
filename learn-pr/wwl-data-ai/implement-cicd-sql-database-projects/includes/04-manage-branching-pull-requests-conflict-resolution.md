@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f0de3c57-9846-4c3c-b04d-04b5fdaaf893]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Two developers add columns to the same table on the same day. One pushes to production, the other follows an hour later and overwrites the first change. Sound familiar? Branching, pull requests, and conflict resolution exist to prevent exactly this kind of collision.
 
 ## Use feature branches for database changes
@@ -79,3 +90,5 @@ dotnet build MyDatabaseProject.sqlproj
 ## Key takeaways
 
 Use short-lived feature branches to isolate database changes, and merge them back to `main` through pull requests. Configure CI builds as pull request checks so a successful `dotnet build` validates every proposed change before merging. Merge conflicts in `.sql` files are typically straightforward because each file contains a single object declaration. Always rebuild the project after resolving merge conflicts to verify that all object references are intact. Next, you learn how to detect when the live database falls out of sync with your project.
+
+::: zone-end

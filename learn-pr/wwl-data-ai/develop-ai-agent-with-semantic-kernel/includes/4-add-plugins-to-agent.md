@@ -9,56 +9,60 @@
 
 ::: zone pivot="text"
 
-In the Microsoft Agent Framework, tools allow your AI agent to use existing APIs and services to perform tasks it couldn't do on its own. Tools work through function calling, allowing AI to automatically request and use specific functions. The framework routes the request to the appropriate function in your codebase and returns the results back to the large language model (LLM) so it can generate a final response.
+Tools are what allow your agent to take action—call APIs, execute code, search files, or interact with external services. Without tools, an agent can only generate text based on what it already knows. With tools, it becomes capable of acting on the world.
 
-To enable automatic function calling, tools need to provide details that describe how they work. The function's input, output, and purpose should be described in a way that the AI can understand, otherwise, the AI can't call the function correctly.
+The Microsoft Agent Framework supports two broad categories of tools: **service-provided tools** that are hosted and managed by the provider, and **custom function tools** that you write yourself and register with the agent.
 
-## How to use tools with Microsoft Foundry Agent
+## Service-provided tools
 
-The Microsoft Agent Framework supports both custom function tools and built-in tools that are ready to use out of the box.
+When using the Foundry provider, a range of hosted tools are available without any extra implementation. You enable them by including them in the agent configuration—the provider handles the actual execution.
 
-### Built-in tools
+The most commonly used service-provided tools include:
 
-Microsoft Foundry Agents come with several built-in tools that you can use immediately:
+| Tool | What it does |
+|---|---|
+| **Code Interpreter** | Executes Python code in a sandboxed environment for calculations and data analysis |
+| **File Search** | Searches through and retrieves information from uploaded documents |
+| **Web Search** | Retrieves up-to-date information from the internet |
+| **Hosted MCP Tools** | MCP (Model Context Protocol) servers invoked directly by the provider runtime |
+| **Azure AI Search** | Queries an Azure AI Search index through a Foundry connection |
+| **Foundry Toolboxes** | Named, versioned bundles of hosted tool configurations managed in a Foundry project |
 
-- **Code Interpreter** - executes Python code for calculations, data analysis, and more
-- **File Search** - searches through and analyzes documents
-- **Web Search** - retrieves information from the internet
+> [!NOTE]
+> Some tools—including Azure AI Search, Bing Grounding, SharePoint, and others—are in preview or experimental. They're available for Foundry agents but may have limited support across other providers.
 
-These tools are automatically available and don't require any extra setup.
+## Custom function tools
 
-### Custom function tools
+Custom function tools let you extend your agent with any logic you need—calling internal APIs, querying databases, performing calculations, or anything else a Python function can do.
 
-When creating custom tools for your Microsoft Foundry Agent, you need to understand several key concepts:
+To register a function as a tool, you pass it directly to the agent during creation. The framework inspects the function's signature and generates a schema that tells the model what the function does, what parameters it expects, and what it returns.
 
-1. **Use the tool decorator**
+For the model to call a tool reliably, your function needs to be clearly described. The Agent Framework supports two approaches:
 
-    Create a custom function tool by defining a Python function and decorating it with the `@tool` decorator from the Microsoft Agent Framework. This decorator registers your function as a tool that the AI can call. The `@tool` decorator includes parameters for providing a name and description for your tool, as well as the `approval_mode` to specify whether tool calls require approval.
+- **Type annotations with descriptions**—use Python's `Annotated` type with a field description on each parameter. The function's docstring serves as the tool description.
+- **The `@tool` decorator**—explicitly specify the tool's name and description as decorator arguments, giving you full control over what the model sees. You can also provide an explicit schema using a Pydantic model if you need precise control over the input structure.
 
-1. **Function definition and annotations**
-    
-    Create your tool by defining a regular Python function with proper type annotations. Use `Annotated` and `Field` from Pydantic to provide detailed descriptions that help the AI understand the function's purpose and how to use its parameters. The more descriptive your annotations, the better the AI can understand when and how to call your function.
+In either case, the framework handles schema generation and tool invocation automatically. When the model determines a tool should be called, the framework executes the function and returns the result back to the model before the final response is generated.
 
-1. **Adding tools to your agent**
+### Adding multiple tools
 
-    Pass your custom functions to the ChatAgent during creation using the `tools` parameter. You can add a single function or a list of multiple functions. The framework automatically registers these functions and makes them available for the AI to call.
+You can register multiple tools with a single agent. Pass a list of functions when creating the agent, and the model automatically selects the most appropriate tool for each part of the conversation. You don't need to write any routing logic—the framework handles tool orchestration based on the conversation context and the tool descriptions you provide.
 
-1. **Tool invocation through conversation**
+## Tool approval
 
-    Once your tools are registered with the agent, you don't need to manually invoke them. Instead, ask the agent questions or give it tasks that would naturally require your tool's functionality. The AI automatically determines when to call your tools based on the conversation context and the tool descriptions you provided.
+For scenarios where tool invocations should require human review before execution, the Agent Framework supports a **tool approval** pattern. When approval mode is enabled on a tool, the agent pauses before calling that function and requests confirmation. This is useful for actions that are irreversible, expensive, or involve sensitive data. Approval behavior can be configured per tool using the `approval_mode` parameter on the `@tool` decorator.
 
-1. **Multiple tools and orchestration**
+## Using an agent as a tool
 
-    You can add multiple tools to a single agent, and the AI automatically chooses which tool to use based on the user's request. The framework handles the orchestration, calling the appropriate functions and combining their results to provide a comprehensive response.
+Agents can be composed by using one agent as a tool for another. You convert an inner agent into a function tool and pass it to an outer agent, which can then delegate specific tasks to it. This enables modular designs where specialized agents handle particular domains and a coordinating agent routes requests between them—a pattern explored in more depth in the multi-agent module.
 
-### Best practices for tool development
+## Best practices for custom tools
 
-- **Clear descriptions**: Write clear, detailed descriptions for your functions and parameters to help the AI understand their purpose
-- **Type annotations**: Use proper Python type hints to specify expected input and output types
-- **Error handling**: Implement appropriate error handling in your tool functions to gracefully handle unexpected inputs
-- **Return meaningful data**: Ensure your functions return data that the AI can effectively use in its responses
-- **Keep functions focused**: Design each tool to handle a specific task rather than trying to do too many things in one function
-
-By following these concepts, you can extend your Microsoft Foundry Agent with both built-in and custom tools, allowing it to interact with APIs and perform advanced tasks. This approach makes your AI more powerful and capable of handling real-world applications efficiently.
+- **Write clear descriptions**—the model's ability to choose the right tool depends entirely on the descriptions you provide. Be specific about what the function does and when it should be used.
+- **Annotate every parameter**—describe each input so the model can construct valid calls, especially when parameter names alone aren't self-explanatory.
+- **Return meaningful data**—tools should return structured, interpretable output. The model uses the return value directly when forming its response.
+- **Keep tools focused**—each tool should do one thing well. Combining multiple responsibilities into a single function makes it harder for the model to invoke it correctly.
+- **Handle errors gracefully**—if a tool encounters an unexpected input or an external service fails, return an informative error message rather than raising an exception, so the model can respond helpfully.
 
 ::: zone-end
+

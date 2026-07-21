@@ -5,7 +5,7 @@ metadata:
   description: "This module explores ways to apply Azure remote management components to design remote management of virtual machines and set up the Azure connector for SAP Landscape Management. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 08/01/2024
   author: bradjoseph
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.custom:
   - N/A

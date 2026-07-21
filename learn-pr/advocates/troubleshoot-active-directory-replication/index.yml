@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.devrel.troubleshoot-active-directory-replication
+metadata:
+  title: Troubleshoot Active Directory Domain Services Replication
+  description: Diagnose Active Directory Domain Services replication problems.
+  ms.date: 07/20/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+title: Troubleshoot Active Directory Domain Services replication
+summary: Diagnose replication failures by interpreting partner status, testing dependencies, correcting a demonstrated cause, and verifying convergence without risking directory consistency.
+abstract: |
+  In this module, you'll:
+  - Analyze Repadmin, DCDiag, Windows PowerShell, and event-log evidence to scope a replication failure.
+  - Distinguish actionable failures from expected latency, transient topology states, informational statuses, and secondary errors.
+  - Isolate failures involving name resolution, network connectivity, authentication, topology, or domain controller health.
+  - Select a targeted correction or recognize a data-consistency condition that requires escalation.
+  - Verify replication convergence and the original business symptom.
+prerequisites: |
+  - Experience administering Active Directory Domain Services domains, forests, domain controllers, sites, subnets, and Domain Name System infrastructure.
+  - Familiarity with Event Viewer, Command Prompt, Windows PowerShell, Kerberos authentication, and Group Policy.
+  - Working knowledge of privileged administration, change control, and backup and recovery principles.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+products:
+- windows-server
+subjects:
+- identity-access
+units:
+- learn.devrel.troubleshoot-active-directory-replication.introduction
+- learn.devrel.troubleshoot-active-directory-replication.interpret-scope-replication-failures
+- learn.devrel.troubleshoot-active-directory-replication.isolate-failed-replication-dependency
+- learn.devrel.troubleshoot-active-directory-replication.recognize-topology-data-consistency-risks
+- learn.devrel.troubleshoot-active-directory-replication.correct-verify-replication
+- learn.devrel.troubleshoot-active-directory-replication.knowledge-check
+- learn.devrel.troubleshoot-active-directory-replication.summary
+badge:
+  uid: learn.devrel.troubleshoot-active-directory-replication.badge

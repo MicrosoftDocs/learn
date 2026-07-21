@@ -2,11 +2,12 @@
 uid: learn.wwl.implement-cicd-sql-database-projects.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: Get started with implementing CI/CD by using SQL Database Projects.
   author: calopez
   ms.author: calopez
-  ms.date: 07/14/2025
+  ms.date: 7/13/2026
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 3

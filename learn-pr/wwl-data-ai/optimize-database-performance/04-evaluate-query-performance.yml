@@ -2,11 +2,12 @@
 uid: learn.wwl.optimize-database-performance.evaluate-query-performance
 title: Evaluate query performance with execution plans and DMVs
 metadata:
-  title: Evaluate query performance with execution plans and DMVs
+  zone_pivot_groups: video-or-text
+  title: Evaluate Query Performance With Execution Plans and DMVs
   description: Analyze query performance using execution plans and dynamic management views to identify bottlenecks and optimization opportunities.
   author: calopez
   ms.author: calopez
-  ms.date: 07/07/2025
+  ms.date: 7/13/2026
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 10

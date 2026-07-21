@@ -1,13 +1,16 @@
-**Generative Artificial Intelligence** (**GenAI**) applications are transforming the user experience and accelerating adoption of AI tools and solution across consumer and enterprise domains.
+Adventure Works, an online retailer of hiking and camping gear, receives thousands of product questions every day. Shoppers ask things like *"Which backpack works for a three-day trek?"* or *"Is this tent warm enough for winter camping?"* The support team can't keep up, and shoppers leave before they buy.
 
-Traditional Artificial Intelligence (AI) applications focused on building and deploying machine learning models **from scratch**. Traditional machine learning models were trained on custom datasets with the goal of **generating predictions** that supported decision-making.
+The team decides to build a generative AI **agent** that answers these questions on the website, using Adventure Works' own product catalog and each customer's purchase history. An agent is more than a single prompt: it uses one or more language models, connects to company data, and can take action on the customer's behalf.
 
-Generative AI applications focus on **pretrained language models** based on massive internet-scale text data. These models can be augmented with data (RAG) or **fine-tuned** to execute tasks with the goal of **generating content** in response to user queries or instructions. A generative AI application can focus on text generation like question-answering, text summarization, or translation. Or rich content generation driven by text-based instructions like creating images, audio, video, or code.
+:::image type="content" source="../media/intro-scenario.png" alt-text="Diagram that shows a shopper asking the Adventure Works agent for a backpack, and the agent using the catalog and purchase history to answer.":::
 
-The key difference lies in the **use of natural language constructs** as text-based inputs, also known as **prompts**, with **token-based processing**, or completions, that generate stochastic outputs that can vary based on different factors including input prompt, system context, model parameters, and more.
+Creating an agent is easy, but creating a *good* agent is hard. A few prompts can produce something that looks impressive in a demo but recommends the wrong gear, or that no one can evaluate or improve. That's why the team starts by *planning and preparing*: turning a vague idea into a solution they can build, test, and trust. If you've ever written a clear job description before hiring, you already understand the mindset—you describe the role, the skills needed, and how you'll measure success *before* the person starts.
 
-The emergence of generative AI applications is leading to a **paradigm shift** for end-to-end development, where the developer focus shifts from **model generation** (traditional MLOps) to **content generation** using pretrained models (modern GenAIOps).
+In this module, you follow the Adventure Works team as they:
 
-To build effective GenAI solutions, developers need to select the right models, and also understand how these models fit into the broader operational framework to develop an application. The end-to-end application development of a GenAI solution is also referred to as **Large Language Model Operations** (**LLMOps**), or **GenAI Operations** (**GenAIOps**).
+- **Define agent specifications** that describe what the agent should do and how you evaluate it.
+- **Design and optimize** the agent by choosing models and grounding it in company data.
+- **Explore the GenAIOps lifecycle** that structures how the agent moves from idea to production.
+- **Identify the tools and frameworks** that support each phase.
 
-Before going into the technical aspect of preparing a GenAIOps solution, you learn to plan an appropriate use case by exploring various examples and their architectures.
+By the end, you're able to plan and prepare a generative AI solution of your own, starting with a clear specification instead of a blank prompt.

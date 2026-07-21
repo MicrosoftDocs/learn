@@ -5,7 +5,7 @@ metadata:
   description: Learn about your virtual machine storage options and how to choose between standard and premium, managed and unmanaged disks for your Azure virtual machine.
   ms.date: 12/09/2024
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure-virtual-machines
 title: Add and size disks in Azure virtual machines

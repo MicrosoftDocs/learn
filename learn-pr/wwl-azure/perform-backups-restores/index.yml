@@ -5,7 +5,7 @@ metadata:
   description: "This module explores backup and restore of Azure virtual machines and examines the steps and important considerations involved in backing up and restoring SAP workloads on Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 12/23/2024
   author: bradjoseph
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.custom:
   - N/A

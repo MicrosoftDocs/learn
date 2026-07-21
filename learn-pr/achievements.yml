@@ -5,6 +5,11 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.aks-app-scaling-keda.badge
+  type: badge
+  title: Scale container applications in Azure Kubernetes Services using KEDA  
+  summary: Scale a containerized application hosted on Azure Kubernetes Services (AKS) using KEDA.
+  iconUrl: /training/achievements/aks-app-scale-keda.svg
 - uid: learn.analyze-logs-with-kql.badge
   type: badge
   title: Guided project - Analyze logs in Azure Monitor with KQL
@@ -8286,3 +8291,13 @@ achievements:
   title: Enabling digital transformation
   summary: Digital transformation is a business innovation fueled by the explosion of the cloud, artificial intelligence (AI), and the Internet of things (IoT), providing organizations with new ways to understand, manage, and transform their business.
   iconUrl: /training/achievements/enable-digital-transformation.svg
+- uid: learn.design-scalable-semantic-models.badge
+  type: badge
+  title: Design scalable semantic models
+  summary: "Good modeling practices lead to scalable semantic models that simplify analysis and reporting of large, complex data, enhancing Power BI reports for an optimal user experience."
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.create-manage-power-bi-assets.badge
+  type: badge
+  title: Create and manage Power BI assets
+  summary: Create Power BI assets for your analytics environment for structure and consistency, such as Power BI template and project files. Reusable assets and using the XMLA endpoint support application lifecycle management, including continuous integration and deployment.
+  iconUrl: /training/achievements/create-manage-power-bi-assets.svg

@@ -5,7 +5,7 @@ metadata:
   description: "Azure Virtual Desktop Architecture"
   ms.date: 06/21/2023
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure-virtual-desktop
 title: Azure Virtual Desktop Architecture

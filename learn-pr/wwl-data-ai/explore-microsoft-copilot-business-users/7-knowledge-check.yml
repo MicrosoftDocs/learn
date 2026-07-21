@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Check your knowledge of Microsoft Copilot."
-  ms.date: 06/10/2026
+  ms.date: 07/16/2026
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -21,7 +21,7 @@ quiz:
       explanation: "Incorrect. Microsoft Copilot is a good solution for individuals who need Copilot for personal use."
     - content: "Microsoft 365 Copilot Chat"
       isCorrect: false
-      explanation: "Incorrect. Microsoft 365 Copilot Chat is for individuals who need advanced functionality."
+      explanation: "Incorrect. Microsoft 365 Copilot Chat offers AI chat grounded in the web with enterprise data protection, but it doesn't provide full access to organizational data across the enterprise."
     - content: "Microsoft 365 Copilot"
       isCorrect: true
       explanation: "Correct. Microsoft 365 Copilot is a great choice to assist employees in an organization."

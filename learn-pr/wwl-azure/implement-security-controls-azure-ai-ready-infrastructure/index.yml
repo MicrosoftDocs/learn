@@ -5,7 +5,7 @@ metadata:
   description: "This module equips you to configure Azure's foundational security controls for AI workloads. You'll start by configuring Microsoft Entra ID security principals that define *who* and *what* can access your AI resources—from data scientists needing interactive workspace access to managed identities enabling secure service-to-service communication."
   ms.date: 02/09/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module-intro-to-product
   ms.service: azure
 title: "Implement security controls for Azure AI-ready infrastructure"

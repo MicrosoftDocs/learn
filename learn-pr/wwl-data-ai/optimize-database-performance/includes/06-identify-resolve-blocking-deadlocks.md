@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=312387d2-124e-46ed-996c-bc33f58fc248]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Blocking is normal in a database that uses locking. One transaction holds a lock. Another transaction waits. Brief blocking that lasts a few milliseconds is expected. It becomes a problem when it lasts long enough to affect users. Deadlocks are the more severe form: two transactions permanently block each other, and the database engine has to terminate one to break the cycle.
 
 ## Blocking
@@ -93,7 +104,7 @@ A **deadlock** occurs when two or more transactions form a circular dependency. 
 1. Transaction A tries to update row 2 and is blocked by Transaction B.
 1. Transaction B tries to update row 1 and is blocked by Transaction A.
 
-![Diagram showing two sessions in a deadlock. Each session owns a resource that the other session needs in order to continue.](../media/deadlock-overview.png)
+:::image type="content" source="../media/deadlock-overview.png" alt-text="Diagram showing two sessions in a deadlock. Each session owns a resource that the other session needs in order to continue.":::
 
 Neither transaction can finish. The database engine's **deadlock monitor** periodically checks for these cycles, with a default interval of five seconds that drops to as low as 100 milliseconds when deadlocks are frequent. When it detects a cycle, it chooses the transaction that's least expensive to roll back as the **victim**, rolls it back, and returns error 1205 to the application. This rollback allows the other transaction to complete.
 
@@ -179,3 +190,5 @@ END CATCH;
 ## Key takeaways
 
 Blocking is normal, but extended blocking affects users, so you use `sys.dm_exec_requests` to find the head blocker and understand what it's doing. Common scenarios include long-running queries, sleeping sessions with uncommitted transactions, and orphaned connections, all of which you address by keeping transactions short, using `SET XACT_ABORT ON`, and ensuring applications properly manage connections and result sets. Deadlocks form when transactions create circular lock dependencies, and the database engine resolves them automatically by terminating the least expensive transaction and returning error 1205. You reduce deadlock frequency by accessing objects in a consistent order, keeping transactions short, using row-versioning isolation levels, and adding appropriate indexes. Your application code should always include retry logic for error 1205 so it can recover automatically when chosen as a deadlock victim.
+
+::: zone-end

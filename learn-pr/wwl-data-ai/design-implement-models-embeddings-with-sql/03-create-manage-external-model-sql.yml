@@ -2,11 +2,12 @@
 uid: learn.wwl.design-implement-models-embeddings-with-sql.create-manage-external-model-sql
 title: Create and manage external models in SQL
 metadata:
-  title: Create and manage external models in SQL
+  zone_pivot_groups: video-or-text
+  title: Create and Manage External Models in SQL
   description: Create and manage external models that reference AI endpoints directly from Transact-SQL.
   author: calopez
   ms.author: calopez
-  ms.date: 02/02/2026
+  ms.date: 07/16/2026
   ms.topic: unit
 durationInMinutes: 7
 content: |

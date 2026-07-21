@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8c0485f5-24c6-4bf1-86de-f8a5b4a7e56d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Full-text search and vector search each have strengths, but neither alone handles every query. Full-text search excels at finding exact keywords but misses documents that express the same idea differently. Vector search captures semantic meaning but might return conceptually related items that don't contain important terms the user specified. Hybrid search combines both approaches to maximize relevance.
 
 In this unit, you learn how to implement hybrid search in SQL by running full-text and vector searches in parallel, then merging the results using Reciprocal Rank Fusion (RRF).
@@ -149,3 +160,5 @@ To evaluate, you need a test set of queries with known relevant documents. Run e
 ## Key takeaways
 
 Hybrid search combines full-text and vector search to handle both keyword-focused and concept-focused queries. Reciprocal Rank Fusion merges the ranked results without requiring score normalization, treating both sources fairly. You can tune the result set size, RRF constant, and source weights to optimize for your data. Evaluating precision, recall, and MRR helps you measure whether hybrid search improves relevance for your specific use case.
+
+::: zone-end

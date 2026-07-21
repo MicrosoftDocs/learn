@@ -1,10 +1,7 @@
 Now it's your turn to plan and prepare a Generative AI Ops (GenAIOps) solution.
 
-In this exercise, you evaluate the performance of two models to select a language model for your use case.
-
-> [!NOTE]
-> To complete this lab, you need an **[Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)** in which you have administrative access.
+In this exercise, you design the specifications for a generative AI agent based on input from a project team.
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-genaiops/?linkid=2307800&azure-portal=true)
+:::image type="content" source="../media/launch-exercise.png" alt-text="Illustration of a button that opens the GenAIOps exercise instructions in a new browser tab." link="https://go.microsoft.com/fwlink/?LinkId=2371928&azure-portal=true":::

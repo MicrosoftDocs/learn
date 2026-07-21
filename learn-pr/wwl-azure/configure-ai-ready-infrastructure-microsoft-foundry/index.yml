@@ -5,7 +5,7 @@ metadata:
   description: "Microsoft Foundry uses a hub-and-project architecture to centralize governance, security, and shared resources while enabling team autonomy. Hub-level connections, identities, and policies reduce cost, complexity, and duplication, supporting scalable, secure, enterprise-ready AI deployments."
   ms.date: 02/02/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure
 title: "Configure AI-ready infrastructure with Microsoft Foundry"

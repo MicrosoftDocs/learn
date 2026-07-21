@@ -2,11 +2,12 @@
 uid: learn.wwl.optimize-database-performance.identify-resolve-blocking-deadlocks
 title: Identify and resolve blocking and deadlocks
 metadata:
-  title: Identify and resolve blocking and deadlocks
+  zone_pivot_groups: video-or-text
+  title: Identify and Resolve Blocking and Deadlocks
   description: Diagnose and resolve blocking chains and deadlocks using DMVs, Extended Events, and prevention strategies in Azure SQL Database.
   author: calopez
   ms.author: calopez
-  ms.date: 07/07/2025
+  ms.date: 7/13/2026
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 10

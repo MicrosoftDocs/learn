@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.troubleshoot-active-directory-replication.correct-verify-replication
+title: Correct and verify replication
+metadata:
+  title: Correct and Verify Replication
+  description: Verify each affected partner and directory partition, then confirm the original symptom.
+  ms.date: 07/20/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-correct-verify-replication.md)]

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=701569bb-be19-4c13-b65b-3dce555dbe7b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A SQL database project without source control is just a folder of files on someone's machine. The moment that person's laptop breaks, or two developers edit the same stored procedure, you're back to square one. Placing the project in Git gives you change history, collaboration through branching and pull requests, and the foundation every CI/CD pipeline needs.
 
 But source control alone doesn't solve everything. Your database probably has lookup tables, status codes, and default configurations that live alongside the schema. You need a strategy for that data too.
@@ -122,3 +133,5 @@ WHEN NOT MATCHED THEN
 ## Key takeaways
 
 Initialize a Git repository at the solution level and use a `.gitignore` file to exclude build outputs like `bin/`, `obj/`, and `.dacpac` files. Organize schema objects into folders that mirror the database structure, with one file per object. Place reference data in post-deployment scripts and use SQLCMD `:r` includes to keep each script focused on a single table. To prevent data scripts from being compiled as schema objects, use `Build Remove` and `None Include` in the `.sqlproj` file. Write `MERGE` statements instead of plain `INSERT` statements so reference data scripts are idempotent and safe to run on every deployment. Next, you put this repository to work with branching and pull request workflows.
+
+::: zone-end

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-multi-domain-active-directory-forest.design-trusts-cross-forest-name-resolution
+title: Design trusts and cross-forest name resolution
+metadata:
+  title: Design Trusts and Cross-Forest Name Resolution
+  description: Design trust direction, transitivity, selective authentication, SID filtering, name-suffix routing, and supporting DNS.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-design-trusts-cross-forest-name-resolution.md)]
