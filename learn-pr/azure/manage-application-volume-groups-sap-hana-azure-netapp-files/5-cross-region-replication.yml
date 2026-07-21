@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-application-volume-groups-sap-hana.cross-region-replication
+title: Cross-region replication for SAP HANA disaster recovery
+metadata:
+  title: Cross-region replication for SAP HANA disaster recovery
+  description: Learn how to use Azure NetApp Files cross-region replication with application volume groups for SAP HANA disaster recovery.
+  ms.date: 07/18/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-cross-region-replication.md)]
