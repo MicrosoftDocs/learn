@@ -1,0 +1,167 @@
+### YamlMime:ModuleUnit
+
+uid: learn.dpu.work-smarter-copilot-legal.knowledge-check
+
+title: Knowledge check
+
+metadata:
+
+  title: Knowledge Check
+
+  description: This content is part of the "Work smarter with Copilot prompts for legal professionals" module.
+
+  ms.date: 07/21/2026
+
+  author: Stephanie-Rosenzweig
+
+  ms.author: v-stephanier
+
+  ms.topic: unit
+
+durationInMinutes: 5
+
+quiz:
+
+  title: Check your knowledge
+
+  questions:
+
+  - content: "A legal professional needs to quickly identify urgent requests, upcoming deadlines, and areas that might require legal review before starting the day. Which tool should they use?"
+
+    choices:
+
+    - content: "Improved Windows Search"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Improved Windows Search helps locate files and documents, not prioritize incoming work."
+
+    - content: "Windows Studio Effects"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Windows Studio Effects improves audio and video quality during meetings."
+
+    - content: "Copilot in Outlook"
+
+      isCorrect: true
+
+      explanation: "Correct. Copilot in Outlook can summarize messages, highlight possible issues or items that might require legal review, and identify urgent work that needs attention."
+
+    - content: "Live Captions"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Live Captions provides real-time captions for audio and conversations."
+
+  - content: "During contract review, a legal professional remembers the topic of a prior agreement but not the exact file name. Which Copilot+ PC experience is most appropriate?"
+
+    choices:
+
+    - content: "Live Captions"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Live Captions helps you follow spoken conversations by displaying real-time captions."
+
+    - content: "Click to Do"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Click to Do helps you interact with text and content already visible on your screen."
+
+    - content: "Agent in Settings"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Agent in Settings helps manage Windows settings using natural language."
+
+    - content: "Improved Windows Search"
+
+      isCorrect: true
+
+      explanation: "Correct. Improved Windows Search lets you find files by describing their contents using natural language."
+
+  - content: "After reviewing a contract, a legal professional needs to create a first draft of stakeholder guidance that explains key legal issues, areas requiring review, recommended positions, and next steps. Which tool should they use?"
+
+    choices:
+
+    - content: "Windows Studio Effects"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Windows Studio Effects improves the quality of audio and video during meetings and recordings."
+
+    - content: "Copilot in Word or OneNote"
+
+      isCorrect: true
+
+      explanation: "Correct. Copilot in Word or OneNote can help create a first draft of stakeholder guidance based on legal findings and recommendations."
+
+    - content: "Agent in Settings"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Agent in Settings helps configure device settings and preferences."
+
+    - content: "Improved Windows Search"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Improved Windows Search helps locate files and supporting materials but doesn't draft stakeholder guidance."
+
+  - content: "During a stakeholder meeting, which task is Copilot in Teams designed to help with?"
+
+    choices:
+
+    - content: "Automatically approving legal recommendations"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Legal professionals remain responsible for recommendations and decisions."
+
+    - content: "Replacing note taking and stakeholder participation"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Copilot supports meetings but doesn't replace stakeholder involvement."
+
+    - content: "Locating prior agreements using natural language"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Improved Windows Search is designed to help locate files using natural language."
+
+    - content: "Capturing questions, decisions, and follow-up actions"
+
+      isCorrect: true
+
+      explanation: "Correct. Copilot in Teams can summarize discussions and organize meeting outcomes for follow-up."
+
+  - content: "What is a key benefit of using Microsoft 365 Copilot together with Copilot+ PC experiences?"
+
+    choices:
+
+    - content: "Automatically making compliance decisions"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Copilot can assist with analysis and organization, but compliance decisions require human judgment."
+
+    - content: "Eliminating the need for legal review"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Legal review remains an important part of the workflow."
+
+    - content: "Approving contracts without human oversight"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Contract approval and legal interpretation require human review."
+
+    - content: "Reducing time spent on repetitive tasks so legal professionals can focus on higher-value work"
+
+      isCorrect: true
+
+      explanation: "Correct. Microsoft 365 Copilot and Copilot+ PC experiences help streamline routine work so legal professionals can focus on higher-value activities."

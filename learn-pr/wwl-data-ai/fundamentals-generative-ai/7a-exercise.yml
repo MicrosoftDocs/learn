@@ -6,11 +6,10 @@ metadata:
   description: Explore generative AI and agents.
   author: GraemeMalcolm
   ms.author: gmalc
-  ms.date: 02/27/2026
+  ms.date: 07/21/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 15
 content: |
   [!include[](includes/7a-exercise.md)]
-
