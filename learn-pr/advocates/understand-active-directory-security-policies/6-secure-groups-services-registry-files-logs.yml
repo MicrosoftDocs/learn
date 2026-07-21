@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-security-policies.secure-groups-services-registry-files-logs
+title: Secure groups, services, registry, files, and logs
+metadata:
+  title: Secure Groups, Services, Registry, Files, and Logs
+  description: Configure Restricted Groups, System Services, Registry, File System, and Event Log settings to harden systems fleet-wide.
+  ms.date: 07/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-secure-groups-services-registry-files-logs.md)]

@@ -5,7 +5,7 @@ metadata:
   description: "Learn how to govern AI workloads using Microsoft Foundry by enforcing policies, managing costs, ensuring compliance, and applying responsible AI guardrails through hands‑on governance scenarios and exercises."
   ms.date: 02/02/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.custom: references_regions
   ms.service: azure

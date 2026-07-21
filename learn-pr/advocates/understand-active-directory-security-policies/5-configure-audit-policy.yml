@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-security-policies.configure-audit-policy
+title: Configure audit policy
+metadata:
+  title: Configure Audit Policy
+  description: Use the audit policy to produce precise, actionable security logs, including object access auditing with SACLs.
+  ms.date: 07/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-configure-audit-policy.md)]

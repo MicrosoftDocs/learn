@@ -2,11 +2,12 @@
 uid: learn.wwl.integrate-sql-solutions-azure-services.introduction
 title: Introduction
 metadata:
-  title: Introduction to integrating SQL solutions with Azure services
+  zone_pivot_groups: video-or-text
+  title: Introduction to Integrating SQL Solutions With Azure Services
   description: Learn how Data API Builder enables REST and GraphQL APIs for SQL databases and how to integrate with Azure monitoring and event services.
-  ms.date: 02/05/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 7/14/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 durationInMinutes: 2
 content: |

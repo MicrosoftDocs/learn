@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-prepare-genaiops.exercise
-title: Exercise - Compare language models from the model catalog
+title: Exercise - Design agent specifications from team input
 metadata:
-  title: Exercise - Compare language models from the model catalog
-  description: Compare language models from the model catalog.
+  title: Exercise - Design agent specifications from team input
+  description: Design the specifications for a generative AI agent based on input from a project team.
   author: madiepev
   ms.author: madiepev
-  ms.date: 02/21/2025
+  ms.date: 07/18/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

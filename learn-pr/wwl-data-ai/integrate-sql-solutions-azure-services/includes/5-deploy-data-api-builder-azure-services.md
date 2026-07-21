@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=99340540-f7e0-479f-a892-c6ca33099bf1]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Moving Data API Builder from local development to Azure production environments requires choosing the right hosting platform and configuring deployment automation. Azure offers several options for running DAB, each with different characteristics for scalability, management overhead, and integration with other Azure services.
 
 Your deployment strategy affects not only where DAB runs but also how you manage configuration, handle secrets, and scale to meet demand. Understanding these deployment options helps you select the approach that best fits your application architecture and operational requirements.
@@ -210,3 +221,5 @@ After deployment, configure health checks to verify DAB is operating correctly. 
 ```
 
 The liveness probe checks that DAB is responding. The readiness probe verifies database connectivity by making an actual API request. Configure your orchestration platform to restart unhealthy instances automatically.
+
+::: zone-end

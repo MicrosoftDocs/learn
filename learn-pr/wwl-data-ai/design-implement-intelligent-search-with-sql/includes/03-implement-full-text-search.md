@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e9c6d1bd-5d72-40b2-82f3-95108bb1ac60]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Full-text search lets you run linguistic searches against text data in SQL Server and Azure SQL Database. Unlike the `LIKE` operator, which only matches character patterns, full-text search understands words, phrases, and language rules.
 
 When a customer searches your product catalog for "ride," they expect to find results that say "riding," "rides," or "rode." Full-text search handles these scenarios by working with language-aware indexes that understand word forms. It doesn't automatically match synonyms or abbreviations (like "MTB" for "mountain bike") unless you configure a thesaurus, but it handles inflections out of the box.
@@ -38,7 +49,7 @@ WHERE CONTAINS(Name, 'mountain')
   AND ListPrice < 500;
 ```
 
-This query returns products with "mountain" in the name under $500. The `CONTAINS` predicate checks the full-text index while the `ListPrice` filter uses the regular column.
+This query returns products with "mountain" in the name under 500. The `CONTAINS` predicate checks the full-text index while the `ListPrice` filter uses the regular column.
 
 Use `FREETEXT` when you want SQL Server to find related word forms automatically:
 
@@ -90,3 +101,5 @@ After implementing full-text search, evaluate whether it meets your users' needs
 ## Key takeaways
 
 Full-text search excels when users search with specific words and phrases. It uses full-text indexes to enable fast linguistic searches and provides predicates like `CONTAINS` and `FREETEXT` to query those indexes. Different query patterns (term, phrase, prefix, inflectional, and proximity) address different search needs. When full-text search returns too many irrelevant results, or when users search for concepts instead of specific words, the next search method to consider is vector search.
+
+::: zone-end

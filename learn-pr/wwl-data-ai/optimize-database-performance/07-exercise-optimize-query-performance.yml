@@ -2,11 +2,11 @@
 uid: learn.wwl.optimize-database-performance.exercise-optimize-query-performance
 title: "Exercise: Optimize query performance"
 metadata:
-  title: "Exercise: Optimize query performance"
+  title: "Exercise: Optimize Query Performance"
   description: Use execution plans, DMVs, and Query Store to identify and resolve performance issues in Azure SQL Database.
   author: calopez
   ms.author: calopez
-  ms.date: 07/07/2025
+  ms.date: 7/13/2026
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 45

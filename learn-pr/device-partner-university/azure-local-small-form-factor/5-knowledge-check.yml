@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.azure-local-small-form-factor.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to small form factor deployments of Azure Local (preview)" module.
+  ms.date: 07/09/2026
+  author: sheridan-connor
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What key challenge do small form factor deployments of Azure Local (preview) address?"
+    choices:
+        - content: "Managing cloud-only workloads in centralized datacenters"
+          isCorrect: false
+          explanation: "Incorrect. Traditional cloud approaches already handle centralized workloads."
+        - content: "Enabling workloads to run close to where data is generated"
+          isCorrect: true
+          explanation: "Correct. The solution is designed to bring compute closer to physical systems for faster processing."
+        - content: "Replacing all on-premises infrastructure with cloud services"
+          isCorrect: false
+          explanation: "Incorrect. The goal is to extend cloud capabilities, not replace all local infrastructure."
+        - content: "Eliminating the need for centralized management"
+          isCorrect: false
+          explanation: "Incorrect. Centralized management through Azure is still a key part of the solution."
+  - content: "Which combination best describes how small form factor deployments of Azure Local (preview) differ from traditional cloud-only models?"
+    choices:
+        - content: "Local execution and centralized management"
+          isCorrect: true
+          explanation: "Correct. The approach combines running workloads locally with centralized management through Azure."
+        - content: "Centralized execution and local management"
+          isCorrect: false
+          explanation: "Incorrect. This reverses the actual model described."
+        - content: "Manual provisioning and decentralized control"
+          isCorrect: false
+          explanation: "Incorrect. Provisioning and management are automated and centralized through Azure."
+        - content: "Offline processing without cloud integration"
+          isCorrect: false
+          explanation: "Incorrect. The solution still integrates with Azure for management and visibility."
+  - content: "What is a primary benefit of running workloads locally in small form factor deployments of Azure Local (preview)?"
+    choices:
+        - content: "Reduced need for identity and access control"
+          isCorrect: false
+          explanation: "Incorrect. Identity and governance remain important and are applied consistently."
+        - content: "Faster real-time processing and response"
+          isCorrect: true
+          explanation: "Correct. Local execution enables quicker analysis and immediate action."
+        - content: "Increased reliance on cloud connectivity"
+          isCorrect: false
+          explanation: "Incorrect. Local processing reduces dependency on constant connectivity."
+        - content: "Elimination of all hardware requirements"
+          isCorrect: false
+          explanation: "Incorrect. The solution still uses compact, edge-ready hardware."
+  - content: "Which scenario is most suitable for using small form factor deployments of Azure Local (preview)?"
+    choices:
+        - content: "Applications that only require centralized processing with no latency concerns"
+          isCorrect: false
+          explanation: "Incorrect. These scenarios are better suited for cloud-only models."
+        - content: "Single-location environments with no need for distributed management"
+          isCorrect: false
+          explanation: "Incorrect. Distributed environments benefit more from this approach."
+        - content: "Workloads requiring low latency and operation during connectivity interruptions"
+          isCorrect: true
+          explanation: "Correct. This aligns with key use cases such as real-time processing and resilience."
+        - content: "Systems that do not interact with physical devices or data sources"
+          isCorrect: false
+          explanation: "Incorrect. The approach is designed for integration with physical systems."
+  - content: "How are workloads typically deployed in small form factor deployments of Azure Local (preview)?"
+    choices:
+        - content: "As manually configured virtual machines without standardization"
+          isCorrect: false
+          explanation: "Incorrect. The model emphasizes consistency and repeatability."
+        - content: "As containerized workloads for consistent deployment"
+          isCorrect: true
+          explanation: "Correct. Containerization enables portability and consistent deployment across locations."
+        - content: "As proprietary hardware-specific applications"
+          isCorrect: false
+          explanation: "Incorrect. The approach is designed to work across varying hardware using containers."
+        - content: "As browser-based applications running only in the cloud"
+          isCorrect: false
+          explanation: "Incorrect. Workloads run locally on edge hardware, not only in the cloud."

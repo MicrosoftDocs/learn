@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-multi-domain-active-directory-forest.plan-global-catalog-authentication-paths
+title: Plan global catalog placement and authentication paths
+metadata:
+  title: Plan Global Catalog Placement and Authentication Paths
+  description: Plan universal group resolution, global catalog placement, infrastructure master behavior, and cross-domain authentication paths.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-plan-global-catalog-authentication-paths.md)]

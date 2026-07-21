@@ -2,11 +2,12 @@
 uid: learn.wwl.optimize-database-performance.recommend-database-configurations
 title: Recommend database configurations
 metadata:
-  title: Recommend database configurations
-  description: Evaluate Azure SQL Database resource models, service tiers, and compute tiers to match workload requirements.
+  zone_pivot_groups: video-or-text
+  title: Recommend Database Configurations
+  description: To match workload requirements, evaluate Azure SQL Database resource models, service tiers, and compute tiers.
   author: calopez
   ms.author: calopez
-  ms.date: 07/07/2025
+  ms.date: 7/13/2026
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 8

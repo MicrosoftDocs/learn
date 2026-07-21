@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-single-domain-active-directory-forest.single-domain-forest-design
+title: Design the single-domain forest
+metadata:
+  title: Design the Single-Domain Forest
+  description: Justify a single-domain forest and select durable AD DS DNS, UPN, and NetBIOS names.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-design-single-domain-forest.md)]

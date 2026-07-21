@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2f294aa1-995f-4a0b-bb80-1ca2e4e76ffb]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Before you can run vector searches, you need to store vectors in your database and decide how those searches execute. This unit covers the design decisions you make before writing your first vector query.
 
 Vector search finds rows based on mathematical similarity rather than exact matches. To make this work, you store embeddings as vectors, choose how to measure similarity, and decide whether to search all vectors exactly or use an index for faster approximate results.
@@ -109,3 +120,5 @@ These limitations affect how you design your tables and maintenance workflows. F
 ## Key takeaways
 
 Preparing SQL for vector search means making three decisions: what data type and dimensions to use, which distance metric matches your embedding model, and whether exact or approximate search fits your dataset size. Exact search with `VECTOR_DISTANCE` works well for smaller datasets or filtered queries, while approximate search with `VECTOR_SEARCH` and a DiskANN index handles larger datasets efficiently. In the next unit, you'll learn the specific functions and query patterns for running vector searches.
+
+::: zone-end

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-single-domain-active-directory-forest.design-validation
+title: Validate the forest design
+metadata:
+  title: Validate the Forest Design
+  description: Validate namespace, DNS, site mapping, replication, SYSVOL, role placement, time, and failure behavior with objective evidence.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-validate-design.md)]

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d7bbe27f-1e7b-41e8-a572-e4df385f7747]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Beyond simple table mappings, Data API Builder can expose views and stored procedures as API endpoints. These database objects let you encapsulate complex business logic, aggregate data from multiple tables, or implement operations that go beyond standard CRUD patterns.
 
 Views provide read-only access to computed or joined data, while stored procedures enable custom operations with input parameters and multiple result sets. GraphQL relationships add another dimension, allowing clients to traverse connections between entities in single queries.
@@ -305,3 +316,5 @@ For a products-to-suppliers many-to-many relationship through a `ProductSupplier
 ```
 
 Clients traverse the relationship chain: Product → ProductSupplier → Supplier. While this requires one extra level in queries, it accurately represents the database structure and maintains referential integrity.
+
+::: zone-end

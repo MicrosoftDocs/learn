@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=027830b4-faa3-4ea5-8a9c-25129914fc67]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Retrieval gets you the data. But a JSON blob on its own doesn't answer anyone's question. If a customer asks about bike pedal compatibility, you've got the product info from your database, but now you need to tell the language model what to do with it. That step represents the "A" in RAG: augmentation.
 
 ## Understand the chat message structure
@@ -128,3 +139,5 @@ The `@payload` variable now contains everything the model needs: your grounding 
 ## Key takeaways
 
 The prompt is where retrieval becomes useful. Your JSON context means nothing unless you tell the model how to use it. Set clear grounding rules in the system message so the model sticks to your data. Keep temperature low for factual answers. Use `JSON_OBJECT` and `JSON_ARRAY` to build valid JSON payloads directly in T-SQL.
+
+::: zone-end

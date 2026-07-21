@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e592b268-8985-4458-bb3d-d419248fab78]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Your SQL database project says the `Customers` table has 12 columns. Production has 13. Someone added a `LoyaltyTier` column directly through SQL Server Management Studio (SSMS) last Thursday during an incident. Your next deployment will quietly drop that column because the project doesn't know it exists. This type of situation is known as schema drift, and it's one of the ways CI/CD pipelines break production without warning.
 
 ## Understand schema drift
@@ -37,7 +48,7 @@ Once you spotted a drift, you need to decide: does the live database have the ri
 
 In the comparison results, select the specific differences you want to import and apply them. The graphical interface in Visual Studio and Visual Studio Code lets you cherry-pick. Accept the hotfix index but ignore the monitoring agent's temp table, for example.
 
-### Automate with SqlPackage Extract
+### Automate with SqlPackage extract
 
 For CI/CD scenarios or scheduled drift checks, use SqlPackage `Extract` to pull the live schema into files:
 
@@ -110,3 +121,5 @@ dacpacverify before.dacpac after.dacpac
 ## Key takeaways
 
 Schema drift occurs when the live database diverges from the SQL project, often caused by hotfixes, manual changes, or direct production edits. Schema comparison tools detect differences between a database and a project, letting you choose which changes to pull into the project or push to the database. Save schema comparison settings in `.scmp` files so the team uses consistent options every time. Automate drift detection by running `SqlPackage /Action:Extract` on a schedule and comparing the extracted project against the repository. Use `SqlPackage /Action:DeployReport` to preview every planned `CREATE`, `ALTER`, and `DROP` before applying changes. The goal isn't to prevent drift entirely, but to detect it early and resolve it before your next deployment turns a hotfix into a rollback. Next, you build the CI/CD pipelines that automate the entire build-and-deploy cycle.
+
+::: zone-end

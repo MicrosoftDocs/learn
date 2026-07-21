@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=611e7cac-6e56-4816-a1b9-de5be14e19c2]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Running Data API Builder in production requires monitoring to understand performance, diagnose issues, and optimize resource usage. [Azure Monitor](/azure/azure-monitor/overview?azure-portal=true) provides the comprehensive observability platform that integrates with DAB through Application Insights and Log Analytics.
 
 Effective monitoring goes beyond simple uptime checks. You need visibility into request latencies, error rates, database query performance, and resource consumption patterns. This type of data helps you identify bottlenecks before they affect users and provides data for capacity planning.
@@ -176,3 +187,5 @@ Key metrics to track:
 - **Replica count** - For scaled deployments, verify autoscaling responds appropriately to load
 
 Set up autoscaling rules based on these metrics to maintain responsive APIs during traffic spikes while controlling costs during quiet periods.
+
+::: zone-end

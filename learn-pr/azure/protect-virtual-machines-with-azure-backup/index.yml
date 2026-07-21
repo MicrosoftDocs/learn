@@ -5,7 +5,7 @@ metadata:
   description: Use Azure Backup to help protect on-premises servers, virtual machines, SQL Server, Azure file shares, and other workloads.
   ms.date: 09/05/2024
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure-backup
 title: Protect your virtual machines by using Azure Backup

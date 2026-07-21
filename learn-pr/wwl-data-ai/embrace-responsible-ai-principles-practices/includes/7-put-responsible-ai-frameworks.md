@@ -30,7 +30,7 @@ In this face recognition case, the Responsible AI Champ worked closely with the 
 
 ### Mitigation
 
-The Sensitive Uses Working Group deliberates with a diverse group of experts to provide insight and recommendations for how to address the risks associated with the particular use case. If the situation requires further escalation, cases can rise up to the Aether Committee itself, which directly advises the Senior Leadership Team. Ultimately, the Senior Leadership Team makes decisions on novel, high-impact cases.
+The Sensitive Uses Working Group deliberates with a diverse group of experts to provide insight and recommendations for how to address the risks associated with the particular use case. If the situation requires further escalation, cases can rise up to the Aether Committee itself, which directly advises the Responsible AI Council. Ultimately, the Responsible AI Council makes decisions on novel, high-impact cases.
 
 > [!TIP]
 > When reviewing sensitive use cases, we recommend bringing together a diverse group of people with varied backgrounds and expertise. It's also important to create an inclusive space where everyone feels comfortable sharing their ideas and perspectives.

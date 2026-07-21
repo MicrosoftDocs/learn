@@ -5,7 +5,7 @@ metadata:
   description: This module investigates monitoring tools and methods used for SAP HANA on Azure (Large Instances). Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads.
   ms.date: 07/06/2022
   author: bradjoseph
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: sap-on-azure
 title: Monitor and troubleshoot SAP HANA on Azure (Large Instances)

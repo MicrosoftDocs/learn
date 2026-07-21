@@ -1,6 +1,17 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=311d8d5a-4070-4a10-8230-c9bf5a17df21]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Real-time monitoring tells you what's happening now, but what about yesterday? Last week? After a deployment? You need a historical perspective to diagnose performance regressions, because you can only understand what changed by comparing current behavior against a baseline. **Query Store** gives you exactly this capability.
 
-## Understand Query Store architecture
+## Understand the query store architecture
 
 **Query Store** captures query text, execution plans, and runtime statistics directly inside the database engine. It stores this data in three internal stores:
 
@@ -26,7 +37,7 @@ This view displays queries where runtime metrics are worse than in a previous ti
 
 Selecting a query shows its plan history as a set of points in a chart. Each point represents a different execution plan. Select two plans to compare them side by side. This comparison is where the real investigation happens. Look for operators that changed between the fast plan and the slow plan. Common patterns include a new plan switching from an index seek to a scan, losing a key lookup that was previously efficient, or introducing a sort operator that spills to disk.
 
-![Screenshot of the Regressed Queries report in SSMS, showing a query with multiple plans, a plan comparison chart, and buttons to force or unforce a plan.](../media/regressed-queries-view.png)
+:::image type="content" source="../media/regressed-queries-view.png" alt-text="Screenshot of the Regressed Queries report in SSMS, showing a multi-plan query, a plan comparison chart, and buttons to force or unforce a plan.":::
 
 The Query Store folder in Object Explorer contains several other views beyond Regressed Queries:
 
@@ -35,7 +46,7 @@ The Query Store folder in Object Explorer contains several other views beyond Re
 - **Queries With Forced Plans**: Lists all currently forced plans so you can review and manage them.
 - **Query Wait Statistics**: Groups *wait statistics* by category and show which queries contribute to each wait type.
 
-![Screenshot of the Query Store folder in SSMS Object Explorer, showing the available views including Regressed Queries, Top Resource Consuming Queries, and Query Wait Statistics.](../media/query-store-object-explorer.png)
+:::image type="content" source="../media/query-store-object-explorer.png" alt-text="Screenshot of the Query Store folder in SSMS Object Explorer.":::
 
 ### Query the Query Store with T-SQL
 
@@ -134,7 +145,7 @@ The **Query Wait Statistics** view in SSMS groups waits into categories such as 
 
 This connection between waits and queries is a significant advantage over server-level wait statistics, which can't attribute waits to specific queries. For example, if you see high Lock waits, you can drill into the specific queries causing them. You can then examine their execution plans, check their isolation levels, or evaluate whether missing indexes are causing long-held locks.
 
-## Monitor with Query Performance Insight
+## Monitor with query performance insight
 
 **Query Performance Insight** (QPI) is an Azure portal feature that visualizes Query Store data. It gives you a graphical view of the top resource-consuming queries without requiring SSMS.
 
@@ -145,7 +156,7 @@ To access QPI:
 
 By default, QPI shows the top five CPU-consuming queries. The top line in the chart represents overall Database Transaction Unit (DTU) percentage for the database. The following bars show CPU percentage consumed by each selected query during the selected interval. This layout lets you see at a glance whether a single query dominates resource usage or whether the load is spread across many queries.
 
-![Screenshot of Query Performance Insight in the Azure portal, showing a chart of top CPU-consuming queries with DTU percentage over time and a query list below.](../media/query-performance-insight.png)
+:::image type="content" source="../media/query-performance-insight.png" alt-text="Screenshot of Query Performance Insight in the Azure portal.":::
 
 Select the **Custom** tab to change the view. You can switch the metric to **Duration** or **Execution count**, adjust the time interval (last 24 hours, past week, or past month), change the number of queries displayed (5, 10, or 20), and choose an aggregation function (Sum, Max, Min, or Avg). This flexibility lets you investigate different dimensions of the same workload without leaving the portal.
 
@@ -155,9 +166,7 @@ QPI also integrates with **Database Advisor** recommendations. Performance annot
 
 > [!NOTE]
 > Query Performance Insight is limited to displaying the top 5 to 20 queries. If your workload includes many smaller queries that collectively consume significant resources, they don't appear in QPI. For deeper analysis, query the Query Store catalog views directly or use SSMS.
-
-> [!NOTE]
-> Query Performance Insight requires Query Store to be active. If Query Store runs out of space and enters read-only mode, QPI can't display new data. Increase the Query Store maximum size or clear old data to restore normal operation.
+> Additionally, also note that Query Performance Insight requires Query Store to be active. If Query Store runs out of space and enters read-only mode, QPI can't display new data. Increase the Query Store maximum size or clear old data to restore normal operation.
 
 ## Follow best practices
 
@@ -184,3 +193,5 @@ SET QUERY_STORE (MAX_STORAGE_SIZE_MB = 1024);
 ## Key takeaways
 
 Query Store captures query text, execution plans, and runtime statistics over time, and it's enabled by default in Azure SQL Database. The Regressed Queries view surfaces queries whose performance degraded after a plan change, making it essential to check after every deployment or schema change. When you identify a regression, plan forcing gives you an immediate fix without modifying application code, while Query Store hints let you attach query-level hints to shape execution behavior. For teams working in the Azure portal rather than SSMS, Query Performance Insight provides a graphical view of the same Query Store data.
+
+::: zone-end

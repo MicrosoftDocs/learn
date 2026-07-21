@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-multi-domain-active-directory-forest.design-branch-deployments
+title: Design RODC branch deployments
+metadata:
+  title: Design RODC Branch Deployments
+  description: Design RODC placement, Password Replication Policy, filtered attributes, delegated administration, staged deployment, dMSA use, and compromise response.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-design-branch-deployments.md)]

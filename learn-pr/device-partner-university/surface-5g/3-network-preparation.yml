@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-5g.network-preparation
+title: Network preparation
+metadata:
+  title: Network Preparation
+  description: This content is part of the "Get started with 5G on Surface for Business devices" module.
+  ms.date: 07/08/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-network-preparation.md)]

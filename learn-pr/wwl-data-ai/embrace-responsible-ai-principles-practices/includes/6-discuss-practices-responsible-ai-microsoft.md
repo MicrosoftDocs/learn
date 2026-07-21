@@ -8,11 +8,11 @@ Our governance structure uses a hub-and-spoke model to provide the accountabilit
 
 ## Centralized governance
 
-There are three bodies at Microsoft to provide centralized governance: the Senior Leadership Team, the Office of Responsible AI, and the Aether Committee. An important hallmark of our approach to responsible AI is having this ecosystem to operationalize responsible AI across the company, rather than a single organization or individual leading this work.
+There are three bodies at Microsoft to provide centralized governance: the Responsible AI Council, the Office of Responsible AI, and the Aether Committee. An important hallmark of our approach to responsible AI is having this ecosystem to operationalize responsible AI across the company, rather than a single organization or individual leading this work.
 
-### Senior Leadership Team
+### Responsible AI Council
 
-The Senior Leadership Team is ultimately accountable for the company’s direction on responsible AI. This group is the final decision-maker on the most sensitive, novel, and significant AI development and deployment matters. It sets the company’s AI principles, values, and human rights commitments.
+The Responsible AI Council is a forum for business leaders and representatives from research, policy, and engineering to regularly grapple with the biggest challenges surrounding AI and to drive progress in responsible AI policies and processes. This group is the final decision-maker on the most sensitive, novel, and significant AI development and deployment matters. It sets the company's AI principles, values, and human rights commitments.
 
 ### Office of Responsible AI
 
@@ -23,9 +23,10 @@ The [Office of Responsible AI](https://www.microsoft.com/ai/our-approach?azure-p
 - Implement a company-wide reporting and decision-making process.
 - Orchestrate responsible AI training for all employees.
 
-The Office of Responsible AI has four key functions:  
+The Office of Responsible AI has five key functions:  
 
 - **Internal policy**: Setting the company-wide rules for enacting responsible AI, and defining roles and responsibilities for teams involved in this effort.
+- **Governance structures**: Defining governance structures that embed responsible AI across all levels of the organization.
 - **Enablement**: Readiness to adopt responsible AI practices, both within our company, and among our customers and partners.  
 - **Case management**: Review of sensitive use cases to help ensure that our development and deployment work upholds our AI principles.  
 - **Public policy**: Help to shape new laws, norms, and standards. The goal of this policy is to ensure that the promise of AI technology is realized for the benefit of society at large.

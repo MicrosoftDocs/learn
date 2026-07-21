@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-cicd-sql-database-projects.exercise-implement-cicd-sql-database-projects
-title: "Exercise: Implement CI/CD by using SQL Database Projects"
+title: "Exercise: implement CI/CD by using SQL database projects"
 metadata:
-  title: "Exercise: Implement CI/CD by using SQL Database Projects"
+  title: "Exercise: Implement CI/CD by Using SQL Database Projects"
   description: Practice creating a SQL Database Project, configuring source control, building a CI/CD pipeline, and deploying to Azure SQL Database.
   author: calopez
   ms.author: calopez
-  ms.date: 07/14/2025
+  ms.date: 7/13/2026
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 45

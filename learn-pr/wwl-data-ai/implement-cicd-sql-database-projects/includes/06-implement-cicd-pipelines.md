@@ -1,11 +1,22 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f77ac4df-6cda-4374-8ff7-fabad42ec217]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Up to this point, every step in the process was manual. Build the project, run SqlPackage, check the deployment report. A CI/CD pipeline turns that sequence into something that happens automatically on every commit, with the same steps, in the same order, every time. No forgotten flags, no typos in connection strings, no "it worked on my machine."
 
 ## Design the pipeline structure
 
 Most database pipelines follow a two-stage pattern:
 
-1. **Build**: compile the SQL database project and produce the `.dacpac` artifact.
-2. **Deploy**: publish that `.dacpac` to target databases, moving through environments (development, staging, production).
+- **Build**: compile the SQL database project and produce the `.dacpac` artifact.
+- **Deploy**: publish that `.dacpac` to target databases, moving through environments (development, staging, production).
 
 Building once and deploying the same artifact everywhere eliminates the "works in dev, breaks in prod" problem. The `.dacpac` that passed validation in staging is the same file that gets deployed to production.
 
@@ -190,4 +201,6 @@ In Azure DevOps, a **branch control check** on service connections locks down wh
 
 ## Key takeaways
 
-Use `azure/sql-action` (GitHub Actions) or `SqlAzureDacpacDeployment` (Azure DevOps) to deploy `.dacpac` files from your CI/CD pipeline. Store connection strings and credentials as repository secrets, environment secrets, or in Azure Key Vault, and never hardcode them in YAML files. To authenticate without storing passwords, use OpenID Connect (OIDC) with federated credentials. Gate production deployments with environment protection rules, required reviewers, and deployment branch restrictions. Use `CODEOWNERS` files or automatically included reviewers to ensure that the right people review the database changes. 
+Use `azure/sql-action` (GitHub Actions) or `SqlAzureDacpacDeployment` (Azure DevOps) to deploy `.dacpac` files from your CI/CD pipeline. Store connection strings and credentials as repository secrets, environment secrets, or in Azure Key Vault, and never hardcode them in YAML files. To authenticate without storing passwords, use OpenID Connect (OIDC) with federated credentials. Gate production deployments with environment protection rules, required reviewers, and deployment branch restrictions. Use `CODEOWNERS` files or automatically included reviewers to ensure that the right people review the database changes.
+
+::: zone-end

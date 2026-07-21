@@ -2,10 +2,11 @@
 uid: learn.wwl.design-implement-rag-with-sql.augment-prompts-database-context
 title: Augment prompts with database context
 metadata:
-  title: Augment prompts with database context
+  zone_pivot_groups: video-or-text
+  title: Augment Prompts With Database Context
   description: Learn how to construct effective prompts that combine instructions with retrieved database context.
-  ms.date: 02/04/2026
-  author: wwlpublish
+  ms.date: 07/17/2026
+  author: calopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-assisted

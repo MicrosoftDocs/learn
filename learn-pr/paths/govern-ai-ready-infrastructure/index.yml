@@ -5,7 +5,7 @@ metadata:
   description: This course teaches how to govern AI-ready infrastructure with Microsoft Foundry by enforcing policies, secure access, managing costs, regulating model behavior, and monitor compliance through practical, real-world governance scenarios.
   ms.date: 02/11/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: learning-path
 title: Govern AI-ready infrastructure
 prerequisites: |

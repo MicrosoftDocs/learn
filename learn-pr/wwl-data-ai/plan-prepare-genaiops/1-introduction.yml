@@ -3,10 +3,10 @@ uid: learn.wwl.plan-prepare-genaiops.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to code-first development of generative AI applications with Microsoft Foundry.
+  description: Introduction to planning and preparing a generative AI agent solution.
   author: madiepev
   ms.author: madiepev
-  ms.date: 02/21/2025
+  ms.date: 07/18/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

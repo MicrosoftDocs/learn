@@ -5,7 +5,7 @@ metadata:
   description: Learn to manage AI infrastructure by planning compute capacity, enforcing governance, configuring monitoring, and optimizing costs to support scalable, compliant, and high-performing AI workloads without budget overruns or operational risks.
   ms.date: 02/11/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: learning-path
 title: Manage AI-ready infrastructure
 prerequisites: |

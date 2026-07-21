@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-single-domain-active-directory-forest.domain-controller-placement
+title: Place domain controllers and operations roles
+metadata:
+  title: Place Domain Controllers and Operations Roles
+  description: Place writable domain controllers, DNS, global catalogs, FSMO roles, and time services across independent failure domains.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-place-domain-controllers.md)]
