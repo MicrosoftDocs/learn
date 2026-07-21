@@ -5,7 +5,7 @@ metadata:
   description: "This course teaches how to govern AI platforms using Microsoft Entra and Azure Machine Learning, covering security groups, Conditional Access, managed identities, enterprise application integration, and audit logging to continuously monitor, enforce, and improve identity‑centric security for AI workloads."
   ms.date: 02/05/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure-machine-learning
 title: "Implement identity-based security for Azure Machine Learning workspaces"

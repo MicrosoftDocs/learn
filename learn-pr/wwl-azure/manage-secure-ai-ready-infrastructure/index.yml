@@ -5,7 +5,7 @@ metadata:
   description: "This module shows how to secure AI agents using Azure RBAC and Microsoft Entra ID managed identities, eliminating stored credentials while enforcing least‑privilege access. It then demonstrates deploying Azure Cosmos DB for NoSQL as a scalable, compliant conversation store optimized for agent workloads."
   ms.date: 02/02/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure
 title: "Manage secure AI-ready infrastructure"
