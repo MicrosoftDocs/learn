@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.troubleshoot-active-directory-replication.isolate-failed-replication-dependency
+title: Isolate the failed replication dependency
+metadata:
+  title: Isolate the Failed Replication Dependency
+  description: Separate name resolution, network, authentication, topology, service, and diagnostic-tool failures.
+  ms.date: 07/20/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-isolate-failed-replication-dependency.md)]
