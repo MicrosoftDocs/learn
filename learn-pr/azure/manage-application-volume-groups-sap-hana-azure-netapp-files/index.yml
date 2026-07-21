@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.azure.manage-application-volume-groups-sap-hana
+metadata:
+  title: Manage application volume groups for SAP HANA in Azure NetApp Files
+  description: Learn how to manage application volume groups for SAP HANA in Azure NetApp Files, including deploying a SAP HANA host, adding volumes to a SAP HANA system, and managing volumes in an application volume group.
+  ms.date: 07/18/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Manage application volume groups for SAP HANA in Azure NetApp Files
+summary: Manage application volume groups for SAP HANA in Azure NetApp Files by deploying SAP HANA hosts, adding volumes to multiple-host systems, configuring replication, and managing volumes.
+abstract: |
+  By completing this module, you're able to:
+  - Deploy the first application volume group for SAP HANA
+  - Add volumes for an SAP HANA system using application volume groups
+  - Configure HANA System Replication for high availability
+  - Use cross-region replication for SAP HANA disaster recovery
+  - Manage volumes in an application volume group for SAP HANA
+prerequisites: |
+  - Manage volume capacity and performance for Azure NetApp Files
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+  - storage
+units:
+  - learn.azure.manage-application-volume-groups-sap-hana.introduction
+  - learn.azure.manage-application-volume-groups-sap-hana.deploy-sap-hana
+  - learn.azure.manage-application-volume-groups-sap-hana.add-application-volume-group-multiple-host
+  - learn.azure.manage-application-volume-groups-sap-hana.hana-system-replication
+  - learn.azure.manage-application-volume-groups-sap-hana.cross-region-replication
+  - learn.azure.manage-application-volume-groups-sap-hana.setup-options-replication
+  - learn.azure.manage-application-volume-groups-sap-hana.rest-api-parameters
+  - learn.azure.manage-application-volume-groups-sap-hana.exercise-manage-application-volume-groups-sap-hana
+  - learn.azure.manage-application-volume-groups-sap-hana.knowledge-check
+  - learn.azure.manage-application-volume-groups-sap-hana.summary
+badge:
+  uid: learn.azure.manage-application-volume-groups-sap-hana.badge
