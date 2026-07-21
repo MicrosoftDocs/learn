@@ -7,7 +7,7 @@ metadata:
   description: Ever wondered how AI can create content, answer questions, and assist with tasks? This module introduces you to the world of generative AI and agents.
   author: GraemeMalcolm
   ms.author: gmalc
-  ms.date: 10/04/2025
+  ms.date: 07/21/2026
   ms.service: microsoft-foundry
   ms.topic: module-intro-to-product
   ai-usage: ai-assisted
@@ -29,23 +29,22 @@ prerequisites: |
 iconUrl: /training/achievements/fundamentals-generative-ai.svg
 levels:
   - beginner
-roles: 
+roles:
   - ai-engineer
   - developer
   - solution-architect
   - student
-products: 
+products:
   - microsoft-foundry
-subjects: 
+subjects:
   - artificial-intelligence
 units:
-- learn.wwl.fundamentals-generative-ai.introduction
-- learn.wwl.fundamentals-generative-ai.language-models
-- learn.wwl.fundamentals-generative-ai.writing-prompts
-- learn.wwl.fundamentals-generative-ai.agents
-- learn.wwl.fundamentals-generative-ai.exercise-ai-agent
-- learn.wwl.fundamentals-generative-ai.knowledge-check
-- learn.wwl.fundamentals-generative-ai.summary
+  - learn.wwl.fundamentals-generative-ai.introduction
+  - learn.wwl.fundamentals-generative-ai.language-models
+  - learn.wwl.fundamentals-generative-ai.writing-prompts
+  - learn.wwl.fundamentals-generative-ai.agents
+  - learn.wwl.fundamentals-generative-ai.exercise-ai-agent
+  - learn.wwl.fundamentals-generative-ai.knowledge-check
+  - learn.wwl.fundamentals-generative-ai.summary
 badge:
   uid: learn.wwl.fundamentals-generative-ai.badge
-
