@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.troubleshoot-active-directory-replication.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review the evidence-driven workflow for scoping, isolating, correcting, verifying, and escalating Active Directory Domain Services replication failures.
+  ms.date: 07/20/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]
