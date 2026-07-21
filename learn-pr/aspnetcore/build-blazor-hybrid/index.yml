@@ -8,7 +8,7 @@ metadata:
   ms.author: jamont
   manager: coxford
   ms.topic: module
-  ms.service: dotnet-mobile
+  ms.service: dotnet-mobile-development
   ms.subservice: dotnet-maui
 title: Build a mobile and desktop app with Blazor Hybrid and .NET MAUI
 summary: Learn how to set up your development environment and build your first cross-platform hybrid app with Blazor, .NET MAUI, and C#.
