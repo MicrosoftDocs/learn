@@ -5,7 +5,7 @@ metadata:
   description: "This module covers Azure Monitor fundamentals, including metrics collection, dashboards, alert and processing rules, and KQL-based log queries. Together, these capabilities enable faster root-cause analysis and improve operational reliability."
   ms.date: 02/02/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure
 title: "Manage monitoring for AI-Ready Infrastructure"

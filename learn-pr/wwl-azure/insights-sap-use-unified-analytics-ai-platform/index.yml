@@ -5,7 +5,7 @@ metadata:
   description: "In this module, you learn about accelerating business transformation with Microsoft AI and SAP integration, enhancing business processes with Microsoft Copilot Studio, Power Platform, and SAP."
   ms.date: 03/20/2025
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: sap-on-azure
   ai-usage: human-only
