@@ -5,7 +5,7 @@ metadata:
   description: "Learn to govern AI workloads using Microsoft Foundry by enforcing policy‑driven controls, securing identity access, monitoring compliance, and managing model lifecycle, quotas, and costs through practical, hands‑on exercises."
   ms.date: 02/02/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure
 title: "Govern AI ready workloads with Microsoft Foundry"
