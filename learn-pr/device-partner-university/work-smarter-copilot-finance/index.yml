@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.work-smarter-copilot-finance
+title: Work smarter with Copilot prompts for finance professionals
+metadata:
+  title: Work Smarter With Copilot Prompts For Finance Professionals
+  description: >
+    In this module, you'll learn how to use Microsoft 365 Copilot and Copilot+ PC to streamline your work as a finance professional. You'll explore how to plan your day, analyze data, create models and reports, and collaborate with stakeholders more effectively.
+  ms.date: 07/20/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: microsoft-365-copilot
+summary: >
+  In this module, you'll learn how to use Microsoft 365 Copilot and Copilot+ PC to streamline your work as a finance professional. You'll explore how to plan your day, analyze data, create models and reports, and collaborate with stakeholders more effectively.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Use Microsoft 365 Copilot and Copilot+ PC to plan your day and prioritize tasks.
+  - Analyze data, create models and reports, and collaborate with stakeholders more effectively.
+  - Understand how to use Copilot prompts to streamline your work as a finance professional.
+  - Identify best practices for using Microsoft 365 Copilot and Copilot+ PC in finance workflows.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/work-smarter-copilot-finance-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - microsoft-365-copilot
+units:
+  - learn.dpu.work-smarter-copilot-finance.introduction
+  - learn.dpu.work-smarter-copilot-finance.plan-the-day
+  - learn.dpu.work-smarter-copilot-finance.analysis-modeling-and-reporting
+  - learn.dpu.work-smarter-copilot-finance.stakeholder-review
+  - learn.dpu.work-smarter-copilot-finance.knowledge-check
+  - learn.dpu.work-smarter-copilot-finance.summary
+badge:
+  uid: learn.dpu.work-smarter-copilot-finance.badge

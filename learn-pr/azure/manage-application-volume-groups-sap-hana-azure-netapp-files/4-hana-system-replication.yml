@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-application-volume-groups-sap-hana.hana-system-replication
+title: HANA System Replication
+metadata:
+  title: HANA System Replication
+  description: Learn how HANA System Replication works with application volume groups for SAP HANA in Azure NetApp Files.
+  ms.date: 07/18/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-hana-system-replication.md)]

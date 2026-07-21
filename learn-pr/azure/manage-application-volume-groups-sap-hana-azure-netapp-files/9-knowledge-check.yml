@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-application-volume-groups-sap-hana.knowledge-check
+title: Module assessment
+metadata:
+  unitType: knowledge_check
+  title: Module assessment
+  description: Test your knowledge of managing application volume groups for SAP HANA in Azure NetApp Files.
+  ms.date: 07/18/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  questions:
+    - content: "What are the steps to create a volume group for SAP HANA in Azure NetApp Files?"
+      choices:
+        - content: "Provision an Azure NetApp Files account, create a capacity pool, then create an SAP HANA application volume group to provision volumes for use with the SAP HANA instance."
+          isCorrect: true
+          explanation: "Correct. By following these steps, you can create a volume group in Azure NetApp Files specifically tailored for SAP HANA. This ensures that your SAP HANA workloads have access to high-performance, scalable, and reliable storage infrastructure, meeting the requirements of your SAP HANA applications."
+        - content: "Create an Azure Blob storage account, create a container, upload the SAP HANA data files, and configure the volume group."
+          isCorrect: false
+          explanation: "Incorrect. Azure Blob storage isn't used for creating volume groups for SAP HANA in Azure NetApp Files. It's a different storage solution primarily designed for storing unstructured data as objects."
+        - content: "Create an Azure SQL Database, configure the database settings for SAP HANA, and create the volume group."
+          isCorrect: false
+          explanation: "Incorrect. Azure SQL Database is a managed relational database service and isn't directly involved in creating volume groups for SAP HANA in Azure NetApp Files."
+        - content: "Create an Azure Data Lake Storage account, create a file system, upload the SAP HANA data files, and configure the volume group."
+          isCorrect: false
+          explanation: "Incorrect. Azure Data Lake Storage isn't used for creating volume groups for SAP HANA in Azure NetApp Files. It's a scalable and secure data lake storage solution primarily designed for big data analytics and processing."
+    - content: "Which volume types are required when creating the first host in a single-host SAP HANA application volume group?"
+      choices:
+        - content: "data, log, and shared"
+          isCorrect: true
+          explanation: "Correct. For SAP HANA, the data, log, and shared volumes are required for the first host. The data-backup and log-backup volumes are optional."
+        - content: "data and log only"
+          isCorrect: false
+          explanation: "Incorrect. While data and log volumes are required, the shared volume is also required for the first host in a single-host or multiple-host setup."
+        - content: "data, log, shared, data-backup, and log-backup"
+          isCorrect: false
+          explanation: "Incorrect. The data-backup and log-backup volumes are optional for the first host. Only data, log, and shared are required."
+        - content: "shared, data-backup, and log-backup"
+          isCorrect: false
+          explanation: "Incorrect. Data and log volumes are required for every HANA host."
+    - content: "In a multiple-host SAP HANA setup, what volumes does each additional host (beyond the first) require?"
+      choices:
+        - content: "One data volume and one log volume"
+          isCorrect: true
+          explanation: "Correct. In a multiple-host SAP HANA setup, each additional host only adds data and log volumes. The shared, data-backup, and log-backup volumes are created only for the first host and are shared among all hosts."
+        - content: "One data volume, one log volume, and one shared volume"
+          isCorrect: false
+          explanation: "Incorrect. The shared volume is created only for the first host and shared across all hosts. Additional hosts only add data and log volumes."
+        - content: "One data volume, one log volume, one shared volume, and one data-backup volume"
+          isCorrect: false
+          explanation: "Incorrect. Additional hosts in a multiple-host setup add only data and log volumes. Shared and backup volumes belong to the first host."
+        - content: "One shared volume only"
+          isCorrect: false
+          explanation: "Incorrect. Each additional host must have its own data and log volumes."

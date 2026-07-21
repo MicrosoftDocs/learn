@@ -1,5 +1,0 @@
-In this module, you learned the value and importance of creating reusable assets that reduce time and complexity when developing Power BI reports.
-
-We covered several features built for reusability including Power BI Template files, and how to create core semantic models and then create specialized semantic models for other needs. We explored how to use Power BI Project files, Deployment pipelines, Git integration, and the XMLA endpoint as part of lifecycle management, even when using external tools. Lastly, we demonstrated how to use lineage view in Power BI service to understand how data sources, semantic models, reports, and dashboards are related.
-
-Without these Power BI tools, report developers need to create single-use reports and semantic models, and further have little to no ability to track or manage semantic models changes. Microsoft Fabric allows developers to use these tools in combination with workspace version control and Deployment pipelines to implement Continuous Integration / Continuous Delivery (CI/CD) practices.

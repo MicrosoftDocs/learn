@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-application-volume-groups-sap-hana.deploy-sap-hana
+title: Deploy the first application volume group for SAP HANA
+metadata:
+  title: Deploy the first application volume group for SAP HANA
+  description: Learn how to deploy the first SAP HANA host using Azure NetApp Files application volume groups.
+  ms.date: 07/18/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-deploy-sap-hana.md)]
