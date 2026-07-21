@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-application-volume-groups-sap-hana.setup-options-replication
+title: Set up options for replicating SAP HANA databases
+metadata:
+  title: Set up options for replicating SAP HANA databases
+  description: Learn the setup options for combining HANA System Replication HA with cross-region replication disaster recovery in Azure NetApp Files.
+  ms.date: 07/18/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-setup-options-replication.md)]
