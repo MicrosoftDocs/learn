@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.work-smarter-copilot-sales.wrap-up-with-copilot
+title: Wrap up your day with Copilot
+metadata:
+  title: Wrap Up Your Day With Copilot
+  description: This content is part of the "Work smarter with Copilot prompts for sales professionals" module.
+  ms.date: 07/20/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-wrap-up-with-copilot.md)]
