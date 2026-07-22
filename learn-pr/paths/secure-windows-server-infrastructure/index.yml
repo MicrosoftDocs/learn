@@ -1,0 +1,42 @@
+### YamlMime:LearningPath
+uid: learn.wwl.secure-windows-server-infrastructure
+metadata:
+  title: Secure Windows Server Infrastructure
+  description: Learn how to secure the Windows Server operating system and Active Directory Domain Services using security features, policies, and hardening techniques.
+  ms.date: 07/07/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: learning-path
+title: Secure Windows Server infrastructure
+summary: |
+  Learn how to secure the Windows Server operating system using Exploit Protection, Windows Defender Application Control, Credential Guard, OSConfig security baselines, LAPS, and Microsoft Defender for Servers, and secure Active Directory Domain Services including password policies, Microsoft Entra Password Protection, and domain controller hardening.
+prerequisites: |
+  - Experience administering Windows Server operating systems
+  - Familiarity with Active Directory Domain Services (AD DS) concepts
+  - Basic knowledge of PowerShell and Group Policy
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows-server
+subjects:
+- security
+modules:
+# 6.1 Secure Windows Server operating system
+- learn.wwl.hardening-windows-server # Primary - LAPS, PAWs, securing DCs, SCT baselines, SMB encryption
+- learn.wwl.manage-defender-endpoint # Cross-check - Exploit Protection, WDAC/Device Guard, System Guard
+- learn.wwl.manage-defender-windows-client # Cross-check - SmartScreen via Windows Security Center
+# GAP: Implement OS security by using Group Policies as dedicated topic (no module)
+# GAP: Manage Windows Server security baseline by using OSConfig (no module)
+# GAP: Configure and manage Windows Defender Credential Guard - server-specific (no module)
+# 6.2 Secure Active Directory Domain Services (AD DS)
+- learn.wwl.manage-security-active-directory # Primary - user rights, delegation, Protected Users, NTLM blocking
+- learn.wwl.secure-windows-server-user-accounts # Supplementary - authentication policy silos
+- learn.wwl.manage-security-controls-identity-access # Cross-check - Entra Password Protection for AD DS
+- learn.wwl.security-monitoring-and-governance # Cross-check - Defender for Identity (MDI)
+# GAP: Manage account security on RODC - Password Replication Policy (no module)
+# GAP: Configure security options for built-in administrative groups (no module)
+trophy:
+  uid: learn.wwl.secure-windows-server-infrastructure.trophy
