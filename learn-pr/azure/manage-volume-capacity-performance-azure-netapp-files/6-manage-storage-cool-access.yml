@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-volume-capacity-performance.manage-storage-cool-access
+title: Manage Azure NetApp Files storage with cool access
+metadata:
+  title: Manage Azure NetApp Files storage with cool access
+  description: Learn cool access concepts, considerations, and registration steps for Azure NetApp Files.
+  ms.date: 06/10/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-manage-storage-cool-access.md)]

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.manage-volume-capacity-performance
+metadata:
+  title: Manage volume capacity and performance for Azure NetApp Files
+  description: Learn how to monitor volume capacity, resize capacity pools and volumes, change volume service levels, manage quota rules, and use cool access in Azure NetApp Files.
+  ms.date: 06/10/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Manage volume capacity and performance for Azure NetApp Files
+summary: Learn different ways to monitor capacity utilization and manage performance-related volume settings in Azure NetApp Files.
+abstract: |
+  By completing this module, you'll be able to:
+  - Monitor the capacity of a volume
+  - Resize a capacity pool or a volume
+  - Dynamically change the service level of a volume
+  - Manage default and individual user and group quotas for a volume
+  - Manage storage with cool access
+prerequisites: |
+  - Mount Azure NetApp Files volumes
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+  - storage
+units:
+  - learn.azure.manage-volume-capacity-performance.introduction
+  - learn.azure.manage-volume-capacity-performance.monitor-volume-capacity
+  - learn.azure.manage-volume-capacity-performance.resize-capacity-pool-volume
+  - learn.azure.manage-volume-capacity-performance.change-volume-service-level
+  - learn.azure.manage-volume-capacity-performance.manage-user-group-quotas
+  - learn.azure.manage-volume-capacity-performance.manage-storage-cool-access
+  - learn.azure.manage-volume-capacity-performance.exercise-manage-volume-capacity-performance-azure-netapp-files
+  - learn.azure.manage-volume-capacity-performance.knowledge-check
+  - learn.azure.manage-volume-capacity-performance.summary
+badge:
+  uid: learn.azure.manage-volume-capacity-performance.badge
