@@ -37,8 +37,4 @@ Learning Path 4 Demos
 
 Learning Path 4 Labs/Exercises 
 
-- Lab 01: [Synapse](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-04-synapse-lab.md) 
-- Lab 02: [Stream](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-05-stream-lab.md)  
-- Lab 03: [Stream with spark](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-05a-stream-with-spark.md) 
-- Lab 04: [Stream synapse data explorer](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-05b-stream-synapse-data-explorer.md) 
-- Lab 05: [Power BI](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-pbi-06-lab.md) 
+- Lab 01: [Power BI](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-pbi-06-lab.md) 
