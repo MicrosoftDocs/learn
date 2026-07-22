@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-volume-capacity-performance.monitor-volume-capacity
+title: Monitor the capacity of a volume
+metadata:
+  title: Monitor the capacity of a volume
+  description: Learn ways to monitor capacity utilization of Azure NetApp Files volumes from Windows and Linux clients.
+  ms.date: 06/10/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-monitor-volume-capacity.md)]
