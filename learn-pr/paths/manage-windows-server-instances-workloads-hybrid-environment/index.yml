@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-windows-server-instances-workloads-hybrid-environment
+metadata:
+  title: Manage Windows Server Instances and Workloads in a Hybrid Environment
+  description: Learn how to configure remote management and manage Windows Server workloads using Azure services in a hybrid environment.
+  ms.date: 07/07/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: learning-path
+title: Manage Windows Server instances and workloads in a hybrid environment
+summary: |
+  Learn how to configure remote management for Windows Servers using Windows Admin Center, PowerShell, SSH, and Remote Desktop, and manage Windows Server workloads using Azure Arc, Azure Update Manager, and Azure Automation.
+prerequisites: |
+  - Experience administering Windows Server operating systems
+  - Familiarity with Azure Arc and Azure portal basics
+  - Basic knowledge of PowerShell
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows-server
+- azure-arc
+subjects:
+- infrastructure
+modules:
+# 2.1 Configure remote management for Windows Servers in a hybrid environment
+- learn.wwl.administer-manage-windows-server-iaas-vm-remotely # Primary - portal, WAC, Bastion, JIT, Run Command
+- learn.wwl.describe-windows-server-administration-tools # Supplementary - WAC on-prem, Server Manager, RSAT
+- learn.wwl.just-enough-administration-windows-server # Supplementary - JEA
+- learn.wwl.perform-windows-server-secure-administration # Supplementary - PAWs, jump servers, least privilege
+- learn.wwl.use-advanced-windows-powershell-remoting-techniques # Cross-check - multi-hop remoting / CredSSP
+- learn.wwl.manage-single-multiple-computers-use-windows-powershell-remoting # Cross-check - PS remoting, SSH remoting
+# GAP: Configure and manage RDP access on Windows Server (no module)
+# 2.2 Manage Windows Servers and workloads using Azure services in a hybrid environment
+- learn.wwl.manage-hybrid-workloads-with-azure-arc # Primary - Arc onboarding, RBAC
+- learn.wwl.manage-azure-updates # Supplementary - Azure Update Manager
+- learn.wwl.automate-configuration-of-windows-server-iaas-vms # Supplementary - Automation, DSC, Custom Script Extensions
+- learn.wwl.enforce-vm-security-machine-configuration # Cross-check - Azure Machine Configuration (audit + enforce)
+- learn.wwl.explore-azure-automation-devops # Cross-check - Automation runbooks, webhooks, hybrid workers
+trophy:
+  uid: learn.wwl.manage-windows-server-instances-workloads-hybrid-environment.trophy

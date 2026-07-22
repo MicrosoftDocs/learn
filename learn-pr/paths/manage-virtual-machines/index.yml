@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-virtual-machines
+metadata:
+  title: Manage Virtual Machines
+  description: Learn how to manage Hyper-V and guest virtual machines on-premises and manage Windows Server virtual machines in Azure.
+  ms.date: 07/07/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: learning-path
+title: Manage virtual machines
+summary: |
+  Learn how to manage Hyper-V and guest virtual machines, including configuration, networking, replication, and high availability, and manage Windows Server virtual machines on Azure, including storage, capacity, availability, and network configuration.
+prerequisites: |
+  - Experience administering Windows Server operating systems
+  - Familiarity with Hyper-V and Azure virtual machines
+  - Basic knowledge of PowerShell
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows-server
+- azure-virtual-machines
+subjects:
+- infrastructure
+modules:
+# 3.1 Manage Hyper-V and guest virtual machines
+- learn.wwl.configure-manage-hyper-v-virtual-machines # Primary - VM config, VHD, generations, shared VHDX
+- learn.wwl.configure-manage-hyper-v # Supplementary - hosts, switches, networking, nested virtualization
+- learn.wwl.secure-hyper-v-workloads # Supplementary - guarded fabric, HGS, shielded VMs
+- learn.wwl.implement-high-availability-of-windows-server-vms # Cross-check - live migration, storage migration
+# GAP: Enable Enhanced session mode (no module)
+# GAP: SSH Direct for Linux VMs on Hyper-V (no module)
+# GAP: Discrete Device Assignment - DDA (no module)
+# GAP: GPU partitioning - GPU-P (no module)
+# GAP: Configure VM resource groups, CPU groups, and hypervisor scheduling types (no module)
+# 3.2 Manage Windows Server virtual machines on Azure
+- learn.wwl.plan-deploy-windows-server-iaas-vms # Primary - compute/storage, deployment, SMB over QUIC reference
+- learn.wwl.implement-scale-high-availability-with-windows-server-vm # Supplementary - resizing, scale sets, ASR
+- learn.wwl.implement-windows-server-iaas-vm-ip-addressing-routing # Supplementary - VNet, IP, routing
+- learn.wwl.implement-windows-server-iaas-vm-network-security # Supplementary - NSGs, Azure Firewall
+- learn.wwl.administer-manage-windows-server-iaas-vm-remotely # Supplementary - JIT, Bastion (shared with LP2)
+trophy:
+  uid: learn.wwl.manage-virtual-machines.trophy

@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.wwl.deploy-manage-active-directory-domain-services
+metadata:
+  title: Deploy and Manage Active Directory Domain Services
+  description: Learn how to deploy and manage Active Directory Domain Services domain controllers, security principals, multi-site environments, and Group Policy in on-premises and cloud scenarios.
+  ms.date: 07/07/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: learning-path
+title: Deploy and manage Active Directory Domain Services
+summary: |
+  Learn how to deploy and manage Active Directory Domain Services (AD DS) domain controllers, create and manage security principals, configure multi-site, multi-domain, and multi-forest environments, and implement domain-based Group Policies.
+prerequisites: |
+  - Experience administering Windows Server operating systems
+  - Familiarity with Active Directory Domain Services (AD DS) concepts and technologies
+  - Basic knowledge of PowerShell
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows-server
+subjects:
+- identity-access
+modules:
+# 1.1 Deploy and manage AD DS domain controllers
+- learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers # Primary
+- learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure # Supplementary - DCs in Azure
+- learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles # Supplementary - FSMO troubleshooting
+# 1.2 Create and manage AD DS security principals
+- learn.wwl.create-manage-active-directory-objects # Primary
+- learn.wwl.implement-hybrid-identity-with-windows-server # Supplementary - domain join, Entra DS
+# GAP: Choose a service account type (no module)
+# GAP: Implement service accounts - gMSA / sMSA (no module)
+# 1.3 Manage Windows Server using domain-based Group Policies
+- learn.wwl.create-configure-group-policy-objects-active-directory # Primary (also covers GP Preferences)
+- learn.wwl.implement-group-policy-objects # Supplementary
+# 1.4 Configure and manage multi-site, multi-domain, and multi-forest environments
+- learn.wwl.manage-advanced-features-of-ad-ds # Primary - trusts, ESAE, replication
+# GAP: Configure and manage AD DS sites - sites, site links, subnets (no module)
+trophy:
+  uid: learn.wwl.deploy-manage-active-directory-domain-services.trophy

@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-storage-file-services
+metadata:
+  title: Manage Storage and File Services
+  description: Learn how to configure and manage Azure Files, Windows Server file shares, and Windows Server storage including Storage Spaces and Storage Spaces Direct.
+  ms.date: 07/07/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: learning-path
+title: Manage storage and file services
+summary: |
+  Learn how to configure and manage Azure Files and Azure File Sync, manage Windows Server file shares including DFS and SMB over QUIC, and configure Windows Server storage including Storage Spaces, Storage Spaces Direct, Storage Replica, Data Deduplication, and iSCSI.
+prerequisites: |
+  - Experience administering Windows Server operating systems
+  - Familiarity with storage concepts and file server management
+  - Basic knowledge of PowerShell
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows-server
+- azure-files
+subjects:
+- storage
+modules:
+# 5.1 Configure and manage Azure Files
+- learn.wwl.implement-hybrid-file-server-infrastructure # Primary - Azure Files, File Sync, cloud tiering, DFSR migration
+# 5.2 Configure and manage Windows Server file shares
+- learn.wwl.manage-windows-server-file-servers # Primary - file system, FSRM, SMB security/config, SMB Direct, VSS
+# Cross-check: BranchCache covered in implement-windows-server-data-deduplication (unit)
+# Cross-check: DFS-N/DFSR covered in implement-hybrid-file-server-infrastructure (unit)
+# Cross-check: SMB over QUIC covered in plan-deploy-windows-server-iaas-vms (unit)
+# 5.3 Configure Windows Server storage
+- learn.wwl.implement-storage-spaces-storage-spaces-direct # Primary - Storage Spaces, S2D
+- learn.wwl.implement-windows-server-data-deduplication # Supplementary
+- learn.wwl.implement-windows-server-iscsi # Supplementary
+- learn.wwl.implement-windows-server-storage-replica # Supplementary
+# Cross-check: SMB Direct (RDMA) covered in manage-windows-server-file-servers (unit)
+# Cross-check: Storage QoS covered in configure-manage-hyper-v-virtual-machines (unit)
+# Cross-check: NTFS vs ReFS covered in manage-windows-server-file-servers (unit)
+# GAP: Configure disks and volumes - Disk Management, New-Volume, volume types (no module)
+trophy:
+  uid: learn.wwl.manage-storage-file-services.trophy
