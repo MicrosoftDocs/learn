@@ -8301,3 +8301,13 @@ achievements:
   title: Create and manage Power BI assets
   summary: Create Power BI assets for your analytics environment for structure and consistency, such as Power BI template and project files. Reusable assets and using the XMLA endpoint support application lifecycle management, including continuous integration and deployment.
   iconUrl: /training/achievements/create-manage-power-bi-assets.svg
+- uid: learn.wwl.configure-web-app-settings.badge
+  type: badge
+  title: Configure web app settings
+  summary: Learn how to create and manage application settings, install SSL/TLS certificates to secure web traffic, enable diagnostic logging, create virtual app to directory mappings, and manage app features.
+  iconUrl: /training/achievements/app-service-configure.svg
+- uid: learn.wwl.create-azure-app-service-web-apps.trophy
+  type: trophy
+  title: Implement Azure App Service web apps
+  summary: Learn how Azure App Service functions and how to create and update an app. Explore App Service authentication and authorization, configuring app settings, scale apps, and how to use deployment slots.
+  iconUrl: /training/achievements/azure-app-service-create-web-apps.svg
