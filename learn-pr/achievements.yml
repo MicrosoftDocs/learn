@@ -8311,3 +8311,8 @@ achievements:
   title: Implement Azure App Service web apps
   summary: Learn how Azure App Service functions and how to create and update an app. Explore App Service authentication and authorization, configuring app settings, scale apps, and how to use deployment slots.
   iconUrl: /training/achievements/azure-app-service-create-web-apps.svg
+- uid: learn.wwl.understand-app-service-deployment-slots.badge
+  type: badge
+  title: Explore Azure App Service deployment slots
+  summary: In this module you'll learn how slot swapping operates and how to perform a swap. You'll also learn how to route traffic to different slots manually and automatically.
+  iconUrl: /training/achievements/app-service-deployment-slots.svg

@@ -68630,6 +68630,51 @@
       "source_path": "learn-pr/paths/create-azure-app-service-web-apps/index.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-app-service-deployment-slots/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-app-service-deployment-slots/4a-exercise-swap-deployment-slots.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-app-service-deployment-slots/3-app-service-slot-swapping.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-app-service-deployment-slots/2-app-service-staging-environments.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-app-service-deployment-slots/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-app-service-deployment-slots/6-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-app-service-deployment-slots/5-route-traffic-app-service.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-app-service-deployment-slots/7-summary.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-app-service-deployment-slots/4-swap-deployment-slots.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.work-smarter-copilot-sales.prepare-customer-engagements
+title: Research customers and create outreach
+metadata:
+  title: Research Customers And Create Outreach
+  description: This content is part of the "Work smarter with Copilot prompts for sales professionals" module.
+  ms.date: 07/20/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-prepare-customer-engagements.md)]
