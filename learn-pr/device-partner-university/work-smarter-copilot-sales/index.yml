@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.dpu.work-smarter-copilot-sales
+title: Work smarter with Copilot prompts for sales professionals
+metadata:
+  title: Work Smarter With Copilot Prompts For Sales Professionals
+  description: Explore how Microsoft 365 Copilot and Copilot+ PC experiences support each stage of the sales workflow, from planning and customer preparation to content creation, meeting collaboration, and end-of-day follow-up.
+  ms.date: 07/20/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module
+  ms.service: microsoft-365-business
+summary: >
+  Explore how Microsoft 365 Copilot and Copilot+ PC experiences support each stage of the sales workflow, from planning and customer preparation to content creation, meeting collaboration, and end-of-day follow-up.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Plan and prioritize your sales activities by using Microsoft 365 Copilot to organize meetings, outreach, and follow-up tasks.
+  - Use Copilot in Microsoft 365 apps to research customers, summarize insights, and create customer-ready content.
+  - Use Copilot during meetings to capture key details, track next steps, and maintain alignment with stakeholders.
+  - Use Copilot+ PC experiences to enhance communication, stay organized, and support your workflow throughout the sales day.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/work-smarter-copilot-sales.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - m365-business
+units:
+  - learn.dpu.work-smarter-copilot-sales.introduction
+  - learn.dpu.work-smarter-copilot-sales.prepare-with-copilot
+  - learn.dpu.work-smarter-copilot-sales.prepare-customer-engagements
+  - learn.dpu.work-smarter-copilot-sales.collaborate-with-copilot
+  - learn.dpu.work-smarter-copilot-sales.wrap-up-with-copilot
+  - learn.dpu.work-smarter-copilot-sales.knowledge-check
+  - learn.dpu.work-smarter-copilot-sales.summary
+badge:
+  uid: learn.dpu.work-smarter-copilot-sales.badge

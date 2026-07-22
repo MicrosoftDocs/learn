@@ -1,0 +1,5 @@
+Imagine you're a legal professional managing multiple contract reviews, compliance requests, and stakeholder meetings on a busy workday. You need to identify urgent issues, gaps, or areas for legal review, read through documents carefully, locate supporting guidance, align with internal stakeholders, and prepare updates that are clear enough for business audiences.
+
+By combining Microsoft 365 Copilot with Copilot+ PC experiences, you can reduce the time spent on repetitive tasks and focus more on legal analysis, stakeholder alignment, and decision-making. Copilot can help summarize information, draft content, and organize next steps, while Copilot+ PC experiences can help you quickly find files, refine language, follow meetings, and manage your local work environment.
+
+In the following sections, you'll explore how Microsoft 365 Copilot and Copilot+ PC experiences can help you move through a typical legal workday—from prioritizing requests and reviewing contracts to collaborating with stakeholders and preparing leadership updates. By the end, you'll understand how these tools can help streamline common legal workflows and support more productive work.
