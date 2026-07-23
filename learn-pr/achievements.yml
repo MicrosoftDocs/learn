@@ -8316,3 +8316,13 @@ achievements:
   title: Explore Azure App Service deployment slots
   summary: In this module you'll learn how slot swapping operates and how to perform a swap. You'll also learn how to route traffic to different slots manually and automatically.
   iconUrl: /training/achievements/app-service-deployment-slots.svg
+- uid: learn.wwl.introduction-to-azure-app-service.badge
+  type: badge
+  title: Explore Azure App Service
+  summary: Learn about the key components of Azure App Service and how App Service can help you create, maintain, and deploy web apps more efficiently.
+  iconUrl: /training/achievements/azure-app-introduction.svg
+- uid: learn.wwl.scale-apps-app-service.badge
+  type: badge
+  title: Scale apps in Azure App Service
+  summary: Learn how autoscale operates in App Service and how to identify autoscale factors, enable autoscale, and how to create sound autoscale conditions.
+  iconUrl: /training/achievements/app-service-scale-apps.svg
