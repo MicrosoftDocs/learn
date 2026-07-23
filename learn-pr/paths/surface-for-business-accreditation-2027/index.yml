@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.dpu.surface-for-business-accreditation-2026-2027
+title: Surface for Business Accreditation 2026-2027
+metadata:
+  title: Surface For Business Accreditation 2026-2027
+  description: The Surface for Business Accreditation 2026-2027 provides a comprehensive overview of the Surface for Business ecosystem. Explore the latest Surface devices, hardware innovations, software experiences, and security and management capabilities that support modern work. You'll also learn how Surface solutions address the needs of different employee personas and business scenarios, helping you confidently identify and position the right devices for your customers and organizations.
+  ms.date: 07/22/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: learning-path
+summary: >
+  Discover how Surface for Business devices, software, and services work together to support diverse employee personas and business needs. Learn about the Surface portfolio, key capabilities, management and security features, and the scenarios that help organizations empower users with modern AI-powered experiences.
+prerequisites: None
+iconUrl: /training/achievements/surface-for-business-accreditation-2027-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+modules:
+  - learn.dpu.introduction-to-microsoft-surface-laptop-8th-edition
+  - learn.dpu.introduction-surface-pro-12th-edition
+  - learn.dpu.introduction-surface-laptop-13-1st-edition
+  - learn.dpu.introduction-to-surface-pro-12-inch
+  - learn.dpu.choose-best-surface-business
+trophy:
+  uid: learn.dpu.surface-for-business-accreditation-2026-2027.trophy
