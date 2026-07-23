@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-application-volume-groups-oracle.deploy-application-volume-group-oracle
+title: Deploy application volume group for Oracle
+metadata:
+  title: Deploy application volume group for Oracle
+  description: Learn how to deploy Azure NetApp Files application volume group for Oracle.
+  ms.date: 07/20/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-deploy-application-volume-group-oracle.md)]
