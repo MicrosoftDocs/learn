@@ -4,7 +4,7 @@ title: Investigate activities with Audit (Premium)
 metadata:
   title: Investigate Activities with Audit (Premium)
   description: "Investigate activities with Audit (Premium)."
-  ms.date: 08/15/2025
+  ms.date: 07/23/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
@@ -16,14 +16,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How does Microsoft Purview Audit (Premium) handle duplicate audit records to simplify log management?"
+  - content: "During the physician's `MailItemsAccessed` investigation, several records show `IsThrottled` set to `True` inside the incident window. The team still needs to know which specific messages were opened during those hours. What's the practical next step?"
     choices:
-    - content: "By deleting all duplicates immediately."
+    - content: "Wait 24 hours and rerun the search. Throttled bind events backfill after the throttling window ends."
       isCorrect: false
-      explanation: "Incorrect: Audit (Premium) doesn't delete all duplicates but filters them under specific conditions."
-    - content: "By filtering out duplicates within an hour if certain properties don't change."
+      explanation: "Incorrect. Throttled bind events don't backfill. Once the throttling window passes, the missing records don't reappear."
+    - content: "Escalate to Microsoft support. Throttled `MailItemsAccessed` records are permanently lost with no recovery option."
+      isCorrect: false
+      explanation: "Incorrect. Support can't recover records that were never logged. The workable path is cross-referencing other logs to reconstruct the activity."
+    - content: "Cross-reference the gap with **Exchange message trace** or **Microsoft Entra sign-in logs**. Throttled bind events don't backfill, so gaps have to be reconstructed from other sources."
       isCorrect: true
-      explanation: "Correct: Duplicate records for the same bind operations within an hour are filtered out unless key properties change."
-    - content: "By allowing all duplicates to ensure data integrity."
-      isCorrect: false
-      explanation: "Incorrect: allowing all duplicates wouldn't simplify log management; it would increase complexity."
+      explanation: "Correct. Exchange message trace and Microsoft Entra sign-in logs cover the activity from different angles. `SearchQueryInitiatedExchange` and `SearchQueryInitiatedSharePoint` aren't throttled, so they can help too when the question is what the user was searching for."

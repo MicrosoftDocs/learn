@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-audit-search-investigate.audit-copilot
-title: Audit Microsoft Copilot for Microsoft 365 interactions
+title: Search for Copilot and AI app activities
 metadata:
-  title: Audit Microsoft Copilot for Microsoft 365 Interactions
-  description: "Audit Microsoft Copilot for Microsoft 365 interactions."
-  ms.date: 08/15/2025
+  title: Search for Copilot and AI App Activities
+  description: "Search the Microsoft Purview audit log for Copilot and AI app activities."
+  ms.date: 07/23/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
@@ -13,4 +13,18 @@ labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/audit-copilot.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "The healthcare compliance team searches audit for `ConnectedAIAppInteraction` records from a Copilot Studio agent that the physician used to summarize patient data. The search returns nothing, even though the physician confirmed using the agent that week. What's the most likely cause?"
+    choices:
+    - content: "The physician needs a Microsoft 365 Copilot license. Copilot Studio agents require it to log audit records."
+      isCorrect: false
+      explanation: "Incorrect. Copilot Studio agents don't require the user to have a Microsoft 365 Copilot license to log audit records. The gating factor is onboarding, not user licensing."
+    - content: "The agent hasn't been onboarded through Data Security Posture Management (DSPM). Copilot Studio agents only produce `ConnectedAIAppInteraction` records once they're onboarded."
+      isCorrect: true
+      explanation: "Correct. `ConnectedAIAppInteraction` records rely on Microsoft Entra registration and onboarding through DSPM. Records don't appear until onboarding completes."
+    - content: "The team needs to filter on `AIAppInteraction` instead, because Copilot Studio agents log under that record type."
+      isCorrect: false
+      explanation: "Incorrect. `AIAppInteraction` is for non-Microsoft AI apps used outside your tenant, captured through the Purview Browser Extension and DLP. Copilot Studio agents fall under `ConnectedAIAppInteraction`."
 
