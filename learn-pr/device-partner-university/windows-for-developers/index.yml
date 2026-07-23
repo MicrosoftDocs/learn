@@ -1,0 +1,61 @@
+### YamlMime:Module
+
+uid: learn.dpu.windows-for-developers
+
+title: Streamline development workflows with Windows 11
+
+metadata:
+  title: Streamline Development Workflows with Windows 11
+  description: In this module, you'll learn how Windows 11 capabilities support modern development workflows and help developers work more efficiently.
+  ms.date: 07/20/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+
+summary: > 
+  Learn how Windows 11 capabilities support modern development workflows and help developers work more efficiently.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe how Windows Developer Configurations streamline development environment setup.
+  - Explain how Coreutils for Windows and Windows Subsystem for Linux (WSL) containers support cross-platform development workflows.
+  - Identify the benefits of Intelligent Terminal for improving developer productivity.
+  - Describe how Windows Development Skills support AI-assisted development workflows.
+  - Identify scenarios where Windows 11 capabilities can help address common development challenges.
+
+prerequisites: |
+  - None
+
+iconUrl: /training/achievements/windows-for-developers.svg
+
+ratingEnabled: false
+
+levels:
+  - beginner
+
+roles:
+  - developer
+  - business-leader
+  - business-owner
+  - business-user
+  - maker
+  - administrator
+  - technology-manager
+
+products:
+  - windows-11
+
+units:
+  - learn.dpu.windows-for-developers.introduction
+  - learn.dpu.windows-for-developers.accelerate-setup
+  - learn.dpu.windows-for-developers.support-cross-platform
+  - learn.dpu.windows-for-developers.improve-productivity
+  - learn.dpu.windows-for-developers.choose-right
+  - learn.dpu.windows-for-developers.developer-scenarios
+  - learn.dpu.windows-for-developers.efficient-workflows
+  - learn.dpu.windows-for-developers.knowledge-check
+  - learn.dpu.windows-for-developers.summary
+
+badge:
+  uid: learn.dpu.windows-for-developers.badge
