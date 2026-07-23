@@ -1,6 +1,8 @@
-Both the Standard and Premium versions of Microsoft Purview Audit let you export audit logs to CSV. This capability supports detailed analysis and compliance reporting by allowing you to work with audit data outside the portal.
+An investigation ends with someone acting on findings, not with a search result on screen. That last step means getting the records out of the portal into a format you can sort, correlate with other logs, and hand to whoever asked the question. Both Standard and Premium export search results to CSV. What matters here is how you turn that CSV into report-ready data.
 
-## Export audit log search results
+For the healthcare compliance team, this is where the mailbox deletions from Standard-tier searches, the Copilot patient-file access, and the physician's `MailItemsAccessed` records converge. Scattered searches become a single sortable table the compliance officer and clinical leadership can act on.
+
+## Get records out of the portal
 
 After running an audit log search in the Microsoft Purview portal, you can export the results for offline analysis.
 
@@ -11,54 +13,57 @@ After running an audit log search in the Microsoft Purview portal, you can expor
 
 1. Once the export finishes, save the file locally.
 
-   - You can export up to 50,000 entries from a single search. If your results exceed this, narrow the date range or apply more filters.
+   - A single export supports up to 50,000 rows for Audit (Standard) and up to 1,000,000 rows for Audit (Premium). If your results exceed the limit, narrow the date range or apply more filters.
 
-## Transform audit log data using Power Query Editor
+## Parse the export into a report-ready table
 
-You can make the exported CSV data easier to work with by transforming it in Excel's Power Query Editor.
+The exported CSV puts most of the useful detail inside a single `AuditData` column formatted as JSON, which is hard to read as-is. In Excel's Power Query Editor, you can parse that column into structured fields such as `SiteUrl`, `AccessedResources`, and `SensitivityLabelId`, then load the expanded table back into Excel for sorting and filtering.
 
-1. Open a blank Excel workbook, go to the **Data** tab, and select **From Text/CSV** to open your exported file.
+The short version:
 
-   :::image type="content" source="../media/json-transform-open-csv-file.png" alt-text="Screenshot showing the From Text/CSV button in Excel.":::
+1. Open the exported CSV in Excel and select **Transform Data** to open Power Query.
+1. Right-click the **AuditData** column, choose **Transform** > **JSON**, then use the expand icon to promote the JSON properties into columns.
+1. Deselect properties you don't need, then **Close & Load** to return the flattened data to Excel.
 
-1. When the CSV opens, select **Transform Data** to start editing in Power Query.
+For the full walkthrough with screenshots, see [Export, configure, and view audit log records](/purview/audit-log-export-records?azure-portal=true).
 
-   :::image type="content" source="../media/json-open-power-query.png" alt-text="Screenshot showing the Transform Data button in Excel.":::
+## Turn the parsed table into a finding
 
-1. Right-click **AuditData**, select **Transform**, then choose **JSON**. This parses the data into a readable format.
+Parsing gets the data into a shape you can analyze. The analysis is what turns records into a finding.
 
-   :::image type="content" source="../media/json-transform.png" alt-text="Screenshot showing where to select Transform then JSON to parse data.":::
+The healthcare investigation's last question was whether Copilot referenced the same patient records the physician had opened directly. With both exports parsed in Excel, the team answers it by joining across the two tables:
 
-1. Select the expand icon in the **AuditData** column to view JSON properties.
+1. Filter the Copilot export to rows where `AccessedResources` includes a patient record identifier or a `SensitivityLabelId` that matches the labeled patient data set.
+1. Filter the `MailItemsAccessed` export to rows for the same users and time window, expanding `Folders[].FolderItems[]` down to individual messages.
+1. Join the two filtered tables on user, resource identifier, and a time window loose enough to catch records that landed within a few minutes of each other.
 
-   :::image type="content" source="../media/json-transform-expand-icon.png" alt-text="Screenshot showing the expand icon.":::
+Rows where both tables match mean the same patient record was reached through mail _and_ through Copilot by an account already flagged for review. That's the finding the compliance officer hands to clinical leadership, and it's a much shorter list than either export on its own.
 
-1. If only some properties are visible, select **Load more**.
+The same pattern applies beyond healthcare. Once the CSV is parsed, any investigation that spans record types follows the same two steps. Filter each table on the property that identifies the resource, then join on user, resource, and time window.
 
-   :::image type="content" source="../media/json-transform-load-json-properties.png" alt-text="Screenshot showing where to select Load more to display the full list of properties.":::
-
-1. Deselect unneeded properties to simplify your view.
-1. Choose whether to include the original column name as a prefix.
-1. Select **OK** to apply the transformation.
-1. On the **Home** tab, select **Close & Load** to return the transformed data to Excel.
-
-## Use PowerShell to search and export audit log records
+## Search and export at scale with PowerShell
 
 For more control over your audit searches and exports, use the `Search-UnifiedAuditLog` cmdlet in Exchange Online PowerShell.
 
 ### Example: Export SharePoint sharing operations
 
 ```powershell
-$auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointSharingOperation
-$auditlog | Select-Object CreationDate, UserIds, RecordType, AuditData | Export-Csv -Path C:AuditLogsSharePointAudit.csv -NoTypeInformation
+$auditlog = Search-UnifiedAuditLog -StartDate 06/01/2025 -EndDate 06/30/2025 -RecordType SharePointSharingOperation
+$auditlog | Select-Object CreationDate, UserIds, RecordType, AuditData | Export-Csv -Path C:\AuditLogs\SharePointAudit.csv -NoTypeInformation -Encoding UTF8
 ```
 
 To append more data:
 
 ```powershell
-$auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
-$auditlog | Select-Object CreationDate, UserIds, RecordType, AuditData | Export-Csv -Append -Path C:AuditLogsSharePointAudit.csv -NoTypeInformation
+$auditlog = Search-UnifiedAuditLog -StartDate 06/01/2025 -EndDate 06/30/2025 -RecordType SharePointFileOperation
+$auditlog | Select-Object CreationDate, UserIds, RecordType, AuditData | Export-Csv -Append -Path C:\AuditLogs\SharePointAudit.csv -NoTypeInformation -Encoding UTF8
 ```
+
+> [!TIP]
+> `-Encoding UTF8` keeps non-ASCII characters in user names, folder paths, and Copilot content readable. Without it, Windows PowerShell defaults to ASCII and those characters can display as garbage in Excel. Use `UTF8BOM` if Excel still has trouble detecting the encoding.
+
+> [!NOTE]
+> `Search-UnifiedAuditLog` returns a maximum of 5,000 rows per call and 100 by default. The one-shot examples above silently truncate at 5,000 rows on larger date ranges. For larger exports, page through results with the `-SessionId` and `-SessionCommand ReturnLargeSet` parameters. See the [`Search-UnifiedAuditLog` reference](/powershell/module/exchange/search-unifiedauditlog?azure-portal=true) for the pagination pattern.
 
 ## Tips for exporting and reviewing audit data
 
