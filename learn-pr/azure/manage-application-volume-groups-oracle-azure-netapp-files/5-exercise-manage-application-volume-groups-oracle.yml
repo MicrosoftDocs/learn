@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-application-volume-groups-oracle.exercise-manage-application-volume-groups-oracle
+title: Exercise - Manage application volume groups for Oracle in Azure NetApp Files
+metadata:
+  title: Exercise - Manage application volume groups for Oracle in Azure NetApp Files
+  description: Exercise to deploy application volume groups for Oracle, manage volumes in a group, and deploy with Azure Resource Manager.
+  ms.date: 07/20/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/5-exercise-manage-application-volume-groups-oracle.md)]
