@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-data-protection-azure-netapp-files.manage-volume-snapshots
+title: Manage volume snapshots
+metadata:
+  title: Manage volume snapshots
+  description: Learn how to manage volume snapshots in Azure NetApp Files, including creating snapshots, managing snapshot policies, and restoring volumes.
+  ms.date: 07/22/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-manage-volume-snapshots.md)]

@@ -32,7 +32,7 @@ roles:
 -	security-engineer
 products:
 -	azure-devops
--	azure-load-testing
+-	azure-app-testing
 # - chaos-studio
 subjects:
 -	site-reliability-engineering

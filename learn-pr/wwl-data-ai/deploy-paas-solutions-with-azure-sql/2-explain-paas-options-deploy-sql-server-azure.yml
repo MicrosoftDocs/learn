@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Explain PaaS options for deploying SQL Server in Azure
   description: "Explain PaaS options for deploying SQL Server in Azure"
-  ms.date: 08/13/2025
-  author: wwlpublish
+  ms.date: 07/23/2026
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
   ms.custom:
