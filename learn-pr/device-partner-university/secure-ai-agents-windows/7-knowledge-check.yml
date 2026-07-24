@@ -1,0 +1,88 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.secure-ai-agents-windows.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of the "Secure AI agents and workloads on Windows" module.
+  ms.date: 07/23/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What is a key difference between AI agents and AI experiences that primarily generate responses?"
+      choices:
+        - content: "AI agents only work within a single application."
+          isCorrect: false
+          explanation: "AI agents can operate across applications, data sources, tools, and services."
+        - content: "AI agents can perform actions and complete tasks on behalf of users or organizations."
+          isCorrect: true
+          explanation: "AI agents can access data, invoke tools and services, and perform actions to achieve a goal. Unlike AI experiences that primarily generate responses, AI agents can complete tasks on behalf of users or organizations."
+        - content: "AI agents can't interact with data sources."
+          isCorrect: false
+          explanation: "AI agents can retrieve and interact with data when they're granted appropriate access."
+        - content: "AI agents require manual input before every action."
+          isCorrect: false
+          explanation: "AI agents can complete multiple authorized actions without requiring manual input before every step."
+
+    - content: "Why do AI agents introduce additional security risks compared to AI experiences that primarily generate responses?"
+      choices:
+        - content: "AI agents can directly interact with systems, data, and business processes."
+          isCorrect: true
+          explanation: "AI agents can retrieve information, invoke tools and services, and perform actions across systems. Because they can directly affect business processes and organizational data, unintended actions may have a broader impact than an incorrect response."
+        - content: "AI agents can only operate while connected to the internet."
+          isCorrect: false
+          explanation: "Connectivity requirements depend on the agent and its workload and aren't the primary source of additional security risk."
+        - content: "AI agents replace existing security controls."
+          isCorrect: false
+          explanation: "AI agents should operate within existing identity, access, governance, and security controls."
+        - content: "AI agents don't require user-defined goals."
+          isCorrect: false
+          explanation: "AI agents typically operate toward defined goals, but their ability to take actions introduces additional risk."
+
+    - content: "What is the primary purpose of assigning a defined identity to an AI agent?"
+      choices:
+        - content: "To give the AI agent broader access across organizational systems."
+          isCorrect: false
+          explanation: "An agent identity should support controlled access rather than automatically provide broader permissions."
+        - content: "To improve response quality."
+          isCorrect: false
+          explanation: "Identity helps manage authentication, authorization, and accountability rather than response quality."
+        - content: "To determine what resources the agent can access and what actions it is authorized to perform."
+          isCorrect: true
+          explanation: "A defined identity allows organizations to authenticate an AI agent, control access to resources, and understand what actions the agent performs."
+        - content: "To prevent the agent from interacting with applications."
+          isCorrect: false
+          explanation: "A defined identity allows authorized interaction with applications and resources rather than preventing all interaction."
+
+    - content: "How does containment help reduce risk while an AI agent is running?"
+      choices:
+        - content: "By preventing AI agents from completing tasks."
+          isCorrect: false
+          explanation: "Containment allows agents to complete authorized tasks within defined operational boundaries."
+        - content: "By limiting the data, tools, services, and actions available while the agent is running."
+          isCorrect: true
+          explanation: "Containment helps define the boundaries within which an AI agent can operate. It reduces risk while still allowing the agent to complete authorized work."
+        - content: "By removing the need for governance policies."
+          isCorrect: false
+          explanation: "Containment works alongside governance policies and doesn't replace them."
+        - content: "By automatically granting permissions to approved resources."
+          isCorrect: false
+          explanation: "Containment limits runtime access and actions rather than automatically granting permissions."
+
+    - content: "Which Windows technology helps support runtime containment by providing isolated execution environments for AI agent workloads?"
+      choices:
+        - content: "Microsoft Defender"
+          isCorrect: false
+          explanation: "Microsoft Defender helps detect and respond to security threats but isn't the isolated execution environment described."
+        - content: "Microsoft Entra ID"
+          isCorrect: false
+          explanation: "Microsoft Entra ID supports identity and access management but doesn't provide the isolated execution environment described."
+        - content: "Microsoft Execution Containers (MXC)"
+          isCorrect: true
+          explanation: "Microsoft Execution Containers (MXC) provide isolated execution environments that help define runtime boundaries for AI agents. By helping isolate workloads, MXC helps organizations control how AI agents access resources and perform actions while they're running."
+        - content: "Microsoft Teams"
+          isCorrect: false
+          explanation: "Microsoft Teams is a collaboration application and doesn't provide runtime containment for AI agent workloads."

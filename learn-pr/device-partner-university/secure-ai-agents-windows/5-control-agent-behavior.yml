@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.secure-ai-agents-windows.control-agent-behavior
+title: Use containment to control agent behavior
+metadata:
+  title: Use Containment To Control Agent Behavior
+  description: This content is part of the "Secure AI agents and workloads on Windows" module.
+  ms.date: 07/23/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-control-agent-behavior.md)]
