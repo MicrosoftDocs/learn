@@ -1,4 +1,4 @@
-Now that you know the components of a workflow file, lets explore how to customize these workflows for various scenarios. In this unit we will focus on how to use variable and scripts to optimize the workflow. Variables provide a way to store and reuse nonsensitive configuration information. You can store any configuration data such as compiler flags, usernames, or server names as variables. Variables are interpolated on the runner machine that runs your workflow. Commands that run in actions or workflow steps can create, read, and modify variables.
+Now that you know the components of a workflow file, let's explore how to customize workflows for various scenarios. This unit focuses on using variables and scripts to optimize a workflow. Variables provide a way to store and reuse nonsensitive configuration information. You can store configuration data such as compiler flags, usernames, or server names as variables. The runner interpolates variables when it runs your workflow. Commands in actions or workflow steps can create, read, and modify variables.
 
 You can set your own custom variables or use the default environment variables that GitHub sets automatically. You can create a custom variable in two ways.
 
@@ -14,7 +14,7 @@ To set a custom environment variable for a single workflow, you can define it us
 * A specific step within a job, by using `jobs.<job_id>.steps[*].env`.
 
 > [!NOTE]
-> Both `jobs.<job_id>.env` and `jobs.<job_id>.steps[*].env` are implementing contexts which are covered later in this module.
+> Both `jobs.<job_id>.env` and `jobs.<job_id>.steps[*].env` use workflow syntax that a later unit covers in more detail.
 
 The following workflow example implements two variables, `DAY_OF_WEEK` and `Greeting` to produce a greeting when it's run.
 
@@ -46,7 +46,7 @@ When you set an environment variable, you can't use any of the default environme
 
 ## Create configuration variables for a repository
 
-To create secrets or variables on GitHub for a personal account repository, you must be the repository owner. To create secrets or variables on GitHub for an organization repository, you must have `admin` access. Lastly, to create secrets or variables for a personal account repository or an organization repository through the REST API, you must have collaborator access.
+To create repository variables in a personal account repository, you must be a repository collaborator. For an organization repository, you must have `write` access. Environment-level configuration variables require repository owner access for a personal account repository or `admin` access for an organization repository. Only organization owners can create organization-level variables. REST API requirements depend on the variable scope, endpoint, and token permissions.
 
 ### Configuration variable precedence
 
@@ -64,7 +64,7 @@ jobs:
       - run: npm install -g bats
 ```
 
-To run a script stored in your repository, you must first check out the repository to the runner. The following example: checks out the repository; sets the working directory - the scripts location in the repository; and runs the `my-script.sh` script.
+To run a script stored in your repository, you can first check out the repository to the runner. The following example checks out the repository and sets the default working directory to the script's location. The final step runs the `my-script.sh` script.
 
 ```yml
 jobs:
@@ -75,9 +75,9 @@ jobs:
         working-directory: ./scripts
     steps:
       - name: Check out the repository to the runner
-        uses: actions/checkout@v4  
+        uses: actions/checkout@v7
       - name: Run a script
         run: ./my-script.sh
 ```
 
-Any scripts that you want a workflow job to run must be executable. You can pass the script as an argument to the interpreter that runs the script - for example, `run: bash script.sh` - or by making the file itself executable.
+You can run a script file directly after making it executable. Alternatively, you can pass the script path to an interpreter, such as `run: bash script.sh`.

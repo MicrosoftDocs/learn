@@ -7,9 +7,9 @@ For secrets stored at the environment level, you can enable required reviewers t
 > [!NOTE]
 > You can configure your workflows to authenticate directly to Azure to access resources.
 
-## Naming your secrets
+## Define secret names
 
-The following rules apply to secret names:
+Secret names must follow GitHub's restrictions and clearly identify the credential or value they contain. Consistent names help workflow maintainers distinguish secrets from nonsensitive configuration variables. The following rules apply to secret names:
 
 * Names can only contain alphanumeric characters (`[a-z]`, `[A-Z]`, `[0-9]`) or underscores (`_`). Spaces aren't allowed.
 * Names must not start with the `GITHUB_` prefix.
@@ -19,42 +19,52 @@ The following rules apply to secret names:
 
 To help ensure that GitHub redacts your secret in logs, avoid using structured data as the values of secrets. For example, avoid creating secrets that contain JSON or encoded Git blobs.
 
-## Accessing your secrets
+## Access secrets
 
 Set the secret as an input or environment variable in the workflow file to make it available to an action. You can use and read secrets in a workflow file if you have access to edit the file. For more information, visit [Access permissions on GitHub](https://docs.github.com/get-started/learning-about-github/access-permissions-on-github).
 
-Organization and repository secrets are read when a workflow run is queued, and environment secrets are read when a job referencing the environment starts. You can also manage secrets using the REST API.
+GitHub Actions reads organization and repository secrets when it queues a workflow run. It reads environment secrets when a job that references the environment starts. You can also manage secrets using the REST API.
 
-## Limiting credential permissions
+GitHub doesn't pass secrets, except for `GITHUB_TOKEN`, to workflows triggered from forked repositories. GitHub also withholds secrets from workflows triggered by Dependabot events and doesn't automatically pass them to reusable workflows. You can explicitly pass only the required secrets to a reusable workflow.
 
-It's recommended to grant the minimum permissions possible. For example, instead of using personal credentials, use deploy keys or a service account. Consider granting read-only permissions if that's all that is needed, and limit access as much as possible.
+## Limit credential permissions
+
+You can reduce credential exposure by granting the minimum permissions possible. For example, you can use deploy keys or a service account instead of personal credentials. You can grant read-only permissions when the workflow doesn't need to modify resources.
 
 When generating a personal access token (classic), select the fewest scopes necessary. When generating a fine-grained personal access token, select the minimum permissions and repository access required.
 
-## Creating secrets
+For cloud providers that support OpenID Connect (OIDC), use OIDC to request short-lived, scoped access tokens instead of storing long-lived cloud credentials as secrets. OIDC reduces the impact of credential exposure and removes the need to rotate stored cloud credentials.
 
-To create secrets or variables on GitHub for a personal account repository, you must be the repository owner. To create secrets or variables on GitHub for an organization repository, you must have `admin` access. Lastly, to create secrets or variables for a personal account repository or an organization repository through the REST API, you must have collaborator access.
+## Create secrets
 
-Secrets can be created by:
+To create repository secrets in a personal account repository, you must be a repository collaborator. For an organization repository, you must have `write` access. Environment secrets require repository owner access for a personal account repository or `admin` access for an organization repository. Only organization owners can create organization-level secrets. REST API requirements depend on the secret scope, endpoint, and token permissions.
 
-* Select **Settings** in the top nav bar of your repository.
-* In the **Security** section of the left-nav, select the **Secrets and variables** drop down.
-* Select **Actions** to access the **Actions secrets and variables** page.
+You can create a repository secret by following these steps:
 
-## Using secrets in a workflow
+1. You can select **Settings** in the top navigation bar of your repository.
+1. In the **Security** section of the left navigation pane, you can select the **Secrets and variables** dropdown.
+1. You can select **Actions** to access the **Actions secrets and variables** page.
 
-To provide an action with a secret as an input or environment variable, you can use the `secrets` context to access secrets created in your repository. The following code shows an example of accessing secrets in a workflow.
+## Use secrets in a workflow
+
+To provide an action with a secret as an input or environment variable, you can use the `secrets` context to access secrets created in your repository. The following example provides a fine-grained token to a GitHub-maintained action input and makes another token available to a shell command through an environment variable.
 
 ```yml
 steps:
-  - name: Hello world action
-    with: # Set the secret as an input
-      super_secret: ${{ secrets.SuperSecret }}
-    env: # Or as an environment variable
-      super_secret: ${{ secrets.SuperSecret }}
+  - name: Check out a private tools repository
+    uses: actions/checkout@v7
+    with:
+      repository: octo-org/private-tools
+      token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      path: private-tools
+      persist-credentials: false
+  - name: Query the GitHub API
+    env:
+      GH_TOKEN: ${{ secrets.API_ACCESS_TOKEN }}
+    run: gh api user
 ```
 
 Secrets can't be directly referenced in `if:` conditionals. Consider setting secrets as job-level environment variables, then referencing the environment variables to conditionally run steps in the job.
 
-If the value of a secret isn't set, the return value of an expression referencing the secret (such as `${{ secrets.SuperSecret }}` in the example) is an empty string.
+If the value of a secret isn't set, the return value of an expression referencing the secret (such as `${{ secrets.API_ACCESS_TOKEN }}` in the example) is an empty string.
 

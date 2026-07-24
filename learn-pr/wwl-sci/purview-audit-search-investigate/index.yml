@@ -1,24 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-audit-search-investigate
 metadata:
-  title: Search and Investigate with Microsoft Purview Audit
-  description: "Search and investigate with Microsoft Purview Audit."
-  ms.date: 08/15/2025
+  title: Conduct Investigations with Microsoft Purview Audit
+  description: "Conduct investigations with Microsoft Purview Audit."
+  ms.date: 07/23/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ms.service: purview
   ai-usage: ai-assisted
   hidden: false
-title: Search and investigate with Microsoft Purview Audit
-summary: Enhance data security and compliance with Microsoft Purview Audit by configuring detailed audits, managing logs, and analyzing access patterns.
+title: Conduct investigations with Microsoft Purview Audit
+summary: Conduct investigations across Microsoft 365, Copilot, and AI apps with Microsoft Purview Audit.
 abstract: |
   After completing this module, you'll be able to:
-  - Identify the differences between Microsoft Purview Audit (Standard) and Audit (Premium).
-  - Configure Microsoft Purview Audit for optimal log management.
-  - Perform audits to assess compliance and security measures.
-  - Analyze irregular access patterns using advanced tools in Purview Audit (Premium) and PowerShell.
-  - Ensure regulatory compliance through strategic data management.
+  - Describe how Microsoft Purview Audit records, retains, and exposes activity across Microsoft 365.
+  - Configure Audit (Standard) or Audit (Premium) for the users, services, and retention windows your compliance requirements call for.
+  - Run audit searches from the Microsoft Purview portal and PowerShell to surface evidence of user and admin activity.
+  - Extend the same search to Copilot and AI app activity across first-party, connected, and non-Microsoft record types.
+  - Investigate message-level access with Audit (Premium) events like MailItemsAccessed.
+  - Analyze and report on audit results by parsing exports and joining across record types.
 prerequisites: |
   - Basic familiarity with Microsoft 365.
   - Understanding of data management principles.
@@ -39,11 +40,11 @@ units:
 - learn.wwl.purview-audit-search-investigate.introduction
 - learn.wwl.purview-audit-search-investigate.audit-overview
 - learn.wwl.purview-audit-search-investigate.audit-configure-manage
-- learn.wwl.purview-audit-search-investigate.audit-standard-search
-- learn.wwl.purview-audit-search-investigate.audit-copilot
-- learn.wwl.purview-audit-search-investigate.audit-premium-investigate
-- learn.wwl.purview-audit-search-investigate.audit-export
 - learn.wwl.purview-audit-search-investigate.audit-premium-retention
+- learn.wwl.purview-audit-search-investigate.audit-standard-search
+- learn.wwl.purview-audit-search-investigate.audit-premium-investigate
+- learn.wwl.purview-audit-search-investigate.audit-copilot
+- learn.wwl.purview-audit-search-investigate.audit-export
 - learn.wwl.purview-audit-search-investigate.knowledge-check
 - learn.wwl.purview-audit-search-investigate.summary
 badge:
