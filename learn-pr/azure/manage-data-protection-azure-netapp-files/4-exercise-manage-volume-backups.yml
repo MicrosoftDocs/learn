@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-data-protection-azure-netapp-files.exercise-manage-volume-backups
+title: Exercise 2 - Manage volume backups
+metadata:
+  title: Exercise 2 - Manage Volume Backups
+  description: Practice managing volume backups in Azure NetApp Files, including configuring policy-based and manual backups, managing backup vaults, and restoring from backups.
+  ms.date: 07/22/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-exercise-manage-volume-backups.md)]
