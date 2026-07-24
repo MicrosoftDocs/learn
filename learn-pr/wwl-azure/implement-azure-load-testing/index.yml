@@ -38,7 +38,7 @@ roles:
 products:
 - azure-app-service
 - github
-- azure-load-testing
+# - azure-load-testing
 subjects:
 - automation
 units:
