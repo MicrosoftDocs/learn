@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.build-cloud-developer-workstation.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Build your first cloud-based developer workstation using Windows 365" module.
+  ms.date: 07/22/2026
+  author: Sheridan-Connor
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-summary.md)]
