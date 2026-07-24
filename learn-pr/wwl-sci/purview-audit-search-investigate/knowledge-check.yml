@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 05/01/2024
+  ms.date: 07/23/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
@@ -17,58 +17,73 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the main difference between Audit (Standard) and Audit (Premium) regarding audit log retention periods?"
+  - content: "The team wants `MailItemsAccessed` records for the physician across the full 90-day window. What should the team expect from the audit log?"
     choices:
-    - content: "Audit (Standard) offers a maximum retention period of 180 days."
+    - content: "Records will be available for the full 90 days because audit was enabled tenant-wide 8 months ago."
+      isCorrect: false
+      explanation: "Incorrect. Tenant-level auditing enables the audit log, but `MailItemsAccessed` is a Premium event that starts logging per user only when the Microsoft 365 Advanced Auditing service plan is enabled for that user."
+    - content: "Records will be available only for the last 60 days, from the date the tenant upgraded to Audit (Premium)."
+      isCorrect: false
+      explanation: "Incorrect. Tenant-level Premium licensing isn't enough. Advanced Auditing has to be enabled per user for events like `MailItemsAccessed` to start logging on that user."
+    - content: "Records will be available only for the last 45 days, from the date Advanced Auditing was enabled on the physician's account."
       isCorrect: true
-      explanation: "Correct: Audit (Standard) supports a retention period of 180 days by default."
-    - content: "Audit (Standard) supports 10-year retention policies."
+      explanation: "Correct. Advanced Auditing is a per-user setting, and events like `MailItemsAccessed` only start logging from the date it's enabled on that user. There's no way to backfill records for the period before enablement."
+    - content: "The team can create a retention policy today to backfill the missing records."
       isCorrect: false
-      explanation: "Incorrect: 10-year retention is available only in Audit (Premium) with a required add-on license."
-    - content: "Both versions offer indefinite retention."
-      isCorrect: false
-      explanation: "Incorrect: Neither version offers indefinite retention; they have specific retention limits."
-  - content: "What step should be taken first before searching the audit log in Microsoft Purview?"
+      explanation: "Incorrect. Retention policies apply forward from the time you create them. They can't backfill records that were never captured."
+  - content: "The eDiscovery team wants to read the actual body of specific messages the physician opened, in case they need to preserve them for a legal hold. Which tool is the right choice for that part of the investigation?"
     choices:
-    - content: "Install the latest updates for Microsoft 365."
+    - content: "Microsoft Purview Audit, filtering on `MailItemsAccessed` and reading the `Messages` property of each record."
       isCorrect: false
-      explanation: "Incorrect: While keeping software updated is important for security, it's not a prerequisite for conducting audit log searches."
-    - content: "Confirm audit log search is enabled."
+      explanation: "Incorrect. Audit surfaces that an access happened. `MailItemsAccessed` records don't include the message body, and the `Messages` property on Copilot audit records is for AI prompt and response pairs, not mail content."
+    - content: "Microsoft Defender for Cloud Apps, which reads and blocks email content in real time."
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud Apps isn't for reviewing historical mail content, and it doesn't preserve items for legal holds."
+    - content: "Data Loss Prevention (DLP), which stores copies of email content that matched policies."
+      isCorrect: false
+      explanation: "Incorrect. DLP inspects and can block content based on policy, but it doesn't preserve arbitrary historical mail for review. That's what eDiscovery is built for."
+    - content: "Microsoft Purview eDiscovery, which can preserve content, apply legal holds, and let reviewers read the message body."
       isCorrect: true
-      explanation: "Correct: Confirm audit log search is enabled with the Get-AdminAuditLogConfig command."      
-    - content: "Export the existing audit logs to a CSV file for backup."
-      isCorrect: false
-      explanation: "Incorrect: Exporting logs for backup isn't the first step required before conducting searches."      
-  - content: "What feature of Microsoft Purview Audit (Premium) is essential for managing sensitive communications securely?"
+      explanation: "Correct. eDiscovery is built for content review and preservation. Audit tells you an interaction happened, and eDiscovery lets you read what was in it and hold it for legal review."
+  - content: "A peer at a smaller clinic runs Audit (Standard) only and asks how to set up retention policies to keep records for two years. What should the team tell them?"
     choices:
-    - content: "Standard data retention."
-      isCorrect: false
-      explanation: "Incorrect: Standard data retention doesn't provide the necessary detail for managing sensitive communications."
-    - content: "Basic audit logs."
-      isCorrect: false
-      explanation: "Incorrect: Basic audit logs don't provide the detailed access information needed for sensitive communications."
-    - content: "MailItemsAccessed."
+    - content: "Retention policies aren't available on Audit (Standard). The clinic keeps records for the default 180 days and would need to upgrade to Audit (Premium) to create custom retention."
       isCorrect: true
-      explanation: "Correct: MailItemsAccessed is important for providing detailed records of how and when email items are accessed, essential for managing sensitive communications."
-  - content: "What is the primary purpose of exporting audit logs to CSV in Microsoft Purview Audit?"
+      explanation: "Correct. Custom retention policies require Audit (Premium). On Audit (Standard), records are kept for the default 180 days with no policy to manage."
+    - content: "Create a retention policy in the Microsoft Purview portal and set the duration to two years."
+      isCorrect: false
+      explanation: "Incorrect. Retention policies are an Audit (Premium) capability. Audit (Standard) doesn't expose the policy management surface."
+    - content: "Retention policies apply retroactively, so setting one up today preserves the last two years of records."
+      isCorrect: false
+      explanation: "Incorrect. Retention policies apply forward from the time you create them, and they aren't available on Audit (Standard) at all."
+    - content: "Extend Standard retention to two years by assigning the 10-Year Audit Log Retention add-on license to each user."
+      isCorrect: false
+      explanation: "Incorrect. The 10-Year Audit Log Retention add-on requires Audit (Premium) as its baseline. It doesn't apply to Audit (Standard) tenants."
+  - content: "The team wants to see whether the physician used Copilot to access or summarize patient records. When they filter the audit search, they see zero `ConnectedAIAppInteraction` records but do see `CopilotInteraction` records for the same user. What's the most likely explanation?"
     choices:
-    - content: "To perform detailed data analysis and meet compliance reporting requirements."
+    - content: "The physician turned off Copilot logging on their user account."
+      isCorrect: false
+      explanation: "Incorrect. There's no per-user opt-out for Copilot logging. If audit is enabled, first-party Copilot usage produces `CopilotInteraction` records automatically."
+    - content: "The physician used a first-party Copilot experience like Microsoft 365 Copilot but didn't use a Copilot Studio agent or Entra-registered AI app that's been onboarded through Data Security Posture Management (DSPM)."
       isCorrect: true
-      explanation: "Correct: Exporting audit logs to CSV enables extensive data manipulation and deeper insights, essential for compliance and detailed analysis."
-    - content: "To reduce the storage space used on servers."
+      explanation: "Correct. `CopilotInteraction` covers first-party Copilot experiences. `ConnectedAIAppInteraction` only produces records once a Copilot Studio agent or Entra-registered AI app is onboarded through DSPM. If the physician didn't use one, or if the one they used isn't onboarded, no records appear."
+    - content: "`ConnectedAIAppInteraction` is a Premium-only event. The team needs to enable Advanced Auditing to see it."
       isCorrect: false
-      explanation: "Incorrect: Exporting to CSV is used for analysis and compliance, not primarily for reducing storage requirements."
-    - content: "To enhance the visual presentation of data."
+      explanation: "Incorrect. `ConnectedAIAppInteraction` isn't tier-gated. What it depends on is DSPM onboarding of the connected AI app itself."
+    - content: "Copilot activity always takes 24 hours to appear, so the team should rerun the search tomorrow."
       isCorrect: false
-      explanation: "Incorrect: While visual presentation might be improved, the primary purpose isn't focused on aesthetics."
-  - content: "How are audit log retention policies prioritized in Microsoft Purview Audit (Premium) when conflicts occur?"
+      explanation: "Incorrect. Copilot audit records follow the same 60-minute to 90-minute latency as core Microsoft 365 services, not a 24-hour delay."
+  - content: "The team exports the physician's `MailItemsAccessed` records from the last 45 days for offline analysis. They run `Search-UnifiedAuditLog` in PowerShell with a date range and `-ResultSize 5000`, then export to CSV. The CSV opens with exactly 5,000 rows, and something feels off. What's the most likely cause?"
     choices:
-    - content: "Based on the date the policy was created."
+    - content: "The physician generated exactly 5,000 mail access events in that window."
       isCorrect: false
-      explanation: "Incorrect: Policies aren't prioritized based on their creation date."
-    - content: "Alphabetically by policy name."
+      explanation: "Incorrect. An exact 5,000 row count almost always means the cmdlet hit its per-call cap, not that the activity total happened to land on a round number."
+    - content: "Excel truncates CSV imports at 5,000 rows by default."
       isCorrect: false
-      explanation: "Incorrect: Alphabetical order of policy names doesn't determine their priority."
-    - content: "By a priority level set by the administrator."
+      explanation: "Incorrect. Excel handles well over a million rows per sheet. The truncation is happening in the cmdlet, not in Excel."
+    - content: "The team's account is missing the export permission and only sees the first 5,000 rows."
+      isCorrect: false
+      explanation: "Incorrect. Audit permissions aren't row-capped that way. Either an account has the role to search and export or it doesn't."
+    - content: "`Search-UnifiedAuditLog` returns a maximum of 5,000 rows per call and silently truncates larger result sets. The team should page through results with the `-SessionId` and `-SessionCommand ReturnLargeSet` parameters."
       isCorrect: true
-      explanation: "Correct: Administrators set a priority level to determine which policy takes precedence if there are conflicts."
+      explanation: "Correct. `Search-UnifiedAuditLog` caps each call at 5,000 rows. To pull larger sets, use a session ID and `-SessionCommand ReturnLargeSet` to page through the full result."

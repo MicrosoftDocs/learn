@@ -1,7 +1,1 @@
-This module covered the creation of workflows that can be manually run or triggered by repository events. In this module, you learned how to:
-
-* Describe the components of GitHub Actions.
-* Implement variables and scripts in a workflow.
-* Use contexts and expressions to manage workflow execution.
-* Manage secrets in GitHub.
-* Create and run a GitHub Actions workflow.
+In this module, you learned how events, jobs, steps, actions, and runners work together in GitHub Actions workflows. You examined YAML workflow files and viewed the activity for a workflow run. You also implemented variables and scripts to customize workflow behavior. Additionally, you used contexts and expressions to control workflow execution. Finally, you managed secrets securely and created a workflow that can run manually or respond to repository events.

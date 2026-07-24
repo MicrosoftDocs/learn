@@ -1,27 +1,24 @@
-Microsoft Purview Audit (Standard) provides tools for logging activities across Microsoft 365 services. It helps you use audit log searches to respond to security incidents and manage compliance, ensuring thorough oversight and quick analysis within your organization.
+An audit search starts with confirming that auditing is on. Once it is, scope the search with the right filters, manage the jobs that run in the background, and read the results the portal returns.
 
 ## Prepare to search the audit log
 
-Before you run a search, it's important to confirm that auditing is enabled and that you have the correct permissions.
+Confirm three things before you run a search:
 
-- **Verify audit logging is enabled**: Run the following in Exchange Online PowerShell:
+1. **Auditing is enabled**. Run the following in Exchange Online PowerShell. If `UnifiedAuditLogIngestionEnabled` returns `True`, you're set.
 
-  ```powershell
-  Get-AdminAuditLogConfig | Format-List UnifiedAuditLogIngestionEnabled
-  ```
+   ```powershell
+   Get-AdminAuditLogConfig | Format-List UnifiedAuditLogIngestionEnabled
+   ```
 
-  If `UnifiedAuditLogIngestionEnabled` returns `True`, audit log search is enabled.
+1. **You have the right role**. You need **Audit Logs** or **View-Only Audit Logs**, included in the **Audit Manager** and **Audit Reader** role groups on the **Permissions** page in the Microsoft Purview portal.
+1. **The retention window covers your date range**. Users with a Microsoft 365 E5 or equivalent license get one-year retention for Microsoft Entra ID, Exchange, SharePoint, and OneDrive activity. Other users get the default 180 days.
 
-- **Confirm permissions**: You need either the **Audit Logs** or **View-Only Audit Logs** role. These are included by default in the **Audit Manager** and **Audit Reader** role groups on the **Permissions** page in the Microsoft Purview portal.
-
-- **Understand retention**:
-
-  - Users with a Microsoft 365 E5 or equivalent license have one-year retention for Microsoft Entra ID, Exchange, SharePoint, OneDrive activity. You can configure retention policies for other services up to one year.
-  - Other users have a default 180-day retention period.
-
-- **Use PowerShell if needed**: The `Search-UnifiedAuditLog` cmdlet in Exchange Online PowerShell supports advanced and automated searches.
-
-- **For programmatic integration**: The Office 365 Management Activity API can be used to integrate with security and compliance tools.
+> [!NOTE]
+> A few things surprise investigators on their first real search:
+>
+> - **Latency**: Records from core services like Exchange, SharePoint, OneDrive, and Teams are typically available 60 to 90 minutes after the activity. Other services can take longer.
+> - **Time zones**: Portal search results and `Search-UnifiedAuditLog` timestamps use UTC. Convert your incident window to UTC before you set a date range, or you'll miss activity that fell outside your intended hours.
+> - **One-year cap on non-user activity**: Records for service principals, application permissions, and system events age out after one year regardless of tier or retention policy. No policy raises that cap, so investigations that reach further back into those categories won't return records.
 
 ## Conduct an audit search
 
@@ -33,21 +30,23 @@ Once your environment is ready, you can search the audit log in the Microsoft Pu
 
 1. Configure your search parameters:
 
-   - **Date range**: Defaults to the last seven days; adjust up to the retention limit for your license.
-   - **Keyword Search**: Enter keywords or phrases to find specific events. Use an asterisk (*) for wildcard matches.
-   - **Admin Units**: Select specific admin units or leave blank for all.
-   - **Activity types**: Choose from friendly names or operation names.
-   - **Record types**: Filter by service-specific record types.
-   - **Search name**: Name the search for future reference.
-   - **Users**: Specify individual accounts or leave blank for all.
-   - **File, folder, or site**: Enter names or URLs to filter by location. Wildcards (*) are supported.
-   - **Workloads**: Narrow to specific Microsoft services.
+   | Parameter | What it does |
+   | --- | --- |
+   | **Date range** | Defaults to the last seven days. Adjust up to the retention limit for your license. |
+   | **Keyword Search** | Enter keywords or phrases. Use `*` for wildcard matches. |
+   | **Admin Units** | Select specific admin units, or leave blank for all. |
+   | **Activity types** | Choose from friendly names or operation names. |
+   | **Record types** | Filter by service-specific record types. |
+   | **Search name** | Name the search for future reference. |
+   | **Users** | Specify individual accounts, or leave blank for all. |
+   | **File, folder, or site** | Enter names or URLs to filter by location. Use `*` for wildcards. |
+   | **Workloads** | Narrow to specific Microsoft services. |
 
-1. Select **Search** to run the query. You can run up to 10 concurrent search jobs per user. If the limit is reached, wait for a job to finish or delete one.
+1. Select **Search** to run the query. You can run up to 10 concurrent search jobs per user, with a limit of one unfiltered search job. If the limit is reached, wait for a job to finish or delete one.
 
 ## Manage audit search jobs
 
-Effective management of search jobs ensures you can review results promptly and keep your searches organized.
+Search jobs run in the background, so you can close the browser and return later. In large tenants, a broadly scoped search with wide date ranges, many users, or high activity volumes can take up to 48 hours to complete. If a search stays at 0% progress for more than an hour, or doesn't advance in a full day, treat it as stuck. Delete it and rerun with a narrower scope.
 
 The search job dashboard displays:
 
@@ -79,13 +78,24 @@ Select a specific search job to see item-level details:
 - **Admin Units**
 - **Details**
 
-You can sort, filter, or export this information. Audit allows a maximum of 50,000 entries to a CSV file from a single audit log search.
+You can sort, filter, or export this information. A single export supports up to 50,000 rows for Audit (Standard) and up to 1,000,000 rows for Audit (Premium).
 
 :::image type="content" source="../media/audit-new-search-result-details.png" alt-text="Screenshot showing the search job item detail dashboard." lightbox="../media/audit-new-search-result-details.png":::
 
+## When a search returns nothing
+
+Empty results are usually a setup issue, not a search issue. Walk down this list before you rerun:
+
+1. **Auditing is enabled tenant-wide**. Confirm with `Get-AdminAuditLogConfig | Format-List UnifiedAuditLogIngestionEnabled`. If it returns `False`, no records exist for the search window.
+1. **Your date range falls inside the retention window**. Users with a Microsoft 365 E5 or equivalent license get one-year retention for Microsoft Entra ID, Exchange, SharePoint, and OneDrive. Other users get 180 days.
+1. **The activity is recent enough to be indexed**. Core-service records take 60 to 90 minutes to appear. If the activity happened moments ago, wait and rerun.
+1. **Advanced Auditing is enabled on the user**, and was enabled during the window you're searching. Required for `MailItemsAccessed`, `Send`, `SearchQueryInitiatedExchange`, and `SearchQueryInitiatedSharePoint`. Records only exist from the per-user enablement date forward.
+1. **Your role covers what you're searching for**. You need **Audit Logs** or **View-Only Audit Logs**. If your account is scoped to an administrative unit, it only sees logs for users in that unit.
+1. **Your date range is in UTC**. Portal results and `Search-UnifiedAuditLog` interpret dates as UTC, not your local time zone.
+
 ## Scenario: Investigating unauthorized access to patient records
 
-The IT compliance team is using Microsoft Purview Audit (Standard) to investigate whether users deleted email messages related to patient data. The goal is to confirm whether deletions were authorized and in compliance with policy.
+The healthcare compliance team begins its investigation with Audit (Standard). Their first question: did anyone delete email messages related to the flagged patient records, and if so, were those deletions authorized?
 
 Steps in the investigation:
 
@@ -120,6 +130,6 @@ Steps in the investigation:
 
 ### Recovery options
 
-- SoftDeleted items can usually be restored within the retention window (14–30 days).
-- HardDeleted items might be recoverable if the mailbox is on hold.
+- SoftDeleted items can be restored from the Recoverable Items folder until they reach the mailbox's deleted-item retention limit.
+- HardDeleted items might be recoverable if the mailbox is on hold or covered by a retention policy.
 - Use Microsoft Purview portal search tools to locate and recover items where possible.

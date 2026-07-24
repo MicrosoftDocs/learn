@@ -4,8 +4,8 @@ title: Exercise - Create a workflow that validates code on a pull request
 metadata:
   title: Exercise - Create a workflow that validates code on a pull request
   description: "Exercise - Create a workflow that validates code on a pull request"
-  ms.date: 05/07/2024
-  author: wwlpublish
+  ms.date: 07/23/2026
+  author: jeffkoms
   ms.author: jeffko
   ms.topic: unit
 durationInMinutes: 20
