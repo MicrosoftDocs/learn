@@ -16,19 +16,13 @@ title: Implement Azure Load Testing
 summary: Learn how to&nbsp;optimize application performance by simulating real-world loads with Azure Load Testing service. Learn how to&nbsp;automate load testing&nbsp;with GitHub Actions to ensure consistent application performance and scalability.
 abstract: |
   After completing this module, you'll be able to:
-
   -   Understand the components of Azure Load Testing.
-
   -   Create an Azure Load Testing resource.
-
   -   Configure service authentication to allow GitHub Actions to connect to your Azure load testing resource.
-
   -   Add load test input files to your repository.
-
   -   Update the GitHub Action definition to invoke Azure Load Testing.
 prerequisites: |
   -   Experience with GitHub and an understanding of pull requests, code merges, and other repository management practices.
-
   -   Experience creating resources in Azure.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
@@ -38,7 +32,7 @@ roles:
 products:
 - azure-app-service
 - github
-# - azure-load-testing
+- azure-app-testing
 subjects:
 - automation
 units:
