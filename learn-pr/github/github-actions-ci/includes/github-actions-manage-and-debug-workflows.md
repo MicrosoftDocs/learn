@@ -185,9 +185,9 @@ The following table describes common workflow failure scenarios:
 
 | Symptom | Likely cause |
 |--------|--------------|
-| A step fails and returns `command not found`l | Missing dependency or wrong setup |
+| A step fails and returns `command not found`. | Missing dependency or wrong setup |
 | `npm install` fails. | Corrupt `package-lock.json` file or a network issue |
-| A test step failsl | Unit test issues, missing configuration file, or invalid test syntax |
+| A test step fails. | Unit test issues, missing configuration file, or invalid test syntax |
 | `Permission denied` appears. | Incorrect file permissions or missing secrets |
 
 ## Identify how to access workflow logs in GitHub
