@@ -22,7 +22,7 @@ To configure backups for a volume:
 1. Navigate to **Volumes** then select the volume for which you want to configure backups.
 2. From the selected volume, select **Backup** under Storage service from the left menu.
 3. Then select **Configure**.
-4. In the Configure Backups page, select the backup vault from the **Backup vaults** drop-down. For information about creating a backup vault, see [Create a backup vault](https://learn.microsoft.com/azure/azure-netapp-files/backup-vault-manage).
+4. In the Configure Backups page, select the backup vault from the **Backup vaults** drop-down. For information about creating a backup vault, see [Create a backup vault](/azure/azure-netapp-files/backup-vault-manage).
 5. In the **Backup Policy** drop-down menu, assign the backup policy to use for the volume. Select **OK**.
 
     The Vault information is prepopulated.

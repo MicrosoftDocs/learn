@@ -17,7 +17,7 @@ In this task, you obtain the resource ID of the source volume that you want to r
 In this task, you create a destination volume where you want the data from the source volume to be replicated to.
 
 1. Before you can create a destination volume, you need to have a **NetApp account** and a **capacity pool** in the destination region.
-2. Delegate a subnet in the region to be used for replication by following the steps in [Delegate a subnet to Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-delegate-subnet).
+2. Delegate a subnet in the region to be used for replication by following the steps in [Delegate a subnet to Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-delegate-subnet).
 3. Create the data replication volume by selecting **Volumes** under Storage Service in the destination NetApp account. Then select the **+ Add data replication** button.
 
     :::image type="content" source="../media/replication-add-volume.png" alt-text="Screenshot of the Volumes page in the destination NetApp account showing the Add data replication button." border="true" lightbox="../media/replication-add-volume.png":::
@@ -159,7 +159,7 @@ After the resync operation from destination to source is complete, you need to b
 
     1. Type **Yes** when prompted then select **OK**.
 
-3. Remount the source volume by following the steps in [Mount a volume for Windows or Linux virtual machines](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-mount-unmount-volumes-for-virtual-machines).
+3. Remount the source volume by following the steps in [Mount a volume for Windows or Linux virtual machines](/azure/azure-netapp-files/azure-netapp-files-mount-unmount-volumes-for-virtual-machines).
 
     This step enables a client to access the source volume.
 
