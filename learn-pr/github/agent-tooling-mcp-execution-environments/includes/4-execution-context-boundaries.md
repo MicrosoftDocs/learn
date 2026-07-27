@@ -85,7 +85,7 @@ Agents don't work directly on the main branch.
 
 Instead, they:
 
-- Create a new branch from the branch ypu selected
+- Create a new branch from the branch you selected
 - Make changes within that branch
 - Open a pull request targeting a base branch
 
