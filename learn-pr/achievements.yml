@@ -8326,3 +8326,28 @@ achievements:
   title: Scale apps in Azure App Service
   summary: Learn how autoscale operates in App Service and how to identify autoscale factors, enable autoscale, and how to create sound autoscale conditions.
   iconUrl: /training/achievements/app-service-scale-apps.svg
+- uid: learn.wwl.introduction-to-open-source-database-migration-on-azure.badge
+  type: badge
+  title: Introduction to open-source database migration on Azure
+  summary: In this module, you'll learn about the issues and considerations for migrating on-premises open-source databases to Azure, the services that Azure provides to help you migrate your databases, and how to plan a migration.
+  iconUrl: /training/achievements/introduction-to-open-source-database-migration-on-azure.svg
+- uid: learn.wwl.migrate-on-premises-mysql-databases-to-azure-database-for-mysql.badge
+  type: badge
+  title: Migrate on-premises MySQL databases to Azure Database for MySQL
+  summary: In this module, you'll learn about the benefits of migrating MySQL workloads to Azure, you'll see how to create an Azure Database for MySQL instance, and learn how to migrate on-premises MySQL databases to Azure.
+  iconUrl: /training/achievements/migrate-on-premises-mysql-databases-to-azure-database-for-mysql.svg
+- uid: learn.wwl.migrating-open-source-workloads-to-azure.trophy
+  type: trophy
+  title: Migrate open-source databases to Azure
+  summary: Learn how to migrate open-source workloads from PostgreSQL and MySQL databases to the equivalent services in Azure. Explore the processes and tools, and learn how to validate application dependencies to support a successful migration.
+  iconUrl: /training/achievements/migrating-open-source-workloads-to-azure-dp0-70.svg
+- uid: learn.wwl.migrate-on-premises-postgresql-databases-to-azure-database-for-postgresql.badge
+  type: badge
+  title: Migrate on-premises PostgreSQL databases to Azure Database for PostgreSQL
+  summary: In this module, you'll learn about the benefits of migrating PostgreSQL workloads to Azure, you'll see how to create an Azure Database for PostgreSQL instance and how to migrate on-premises PostgreSQL databases to Azure.
+  iconUrl: /training/achievements/migrate-onpremises-postgresql-db-azure-db.svg
+- uid: learn.wwl.protecting-monitoring-and-tuning-a-migrated-database.badge
+  type: badge
+  title: Protect, monitor, and tune a migrated database
+  summary: In this module, you'll learn how to use the Azure features available for protect, monitor, and tune a database.
+  iconUrl: /training/achievements/protecting-monitoring-and-tuning-a-migrated-database.svg

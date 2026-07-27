@@ -10,8 +10,8 @@ You also performed hands-on exercises to manage volume snapshots, volume backups
 
 ### Learn more
 
-- [Edit the Hide Snapshot Path option of Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/snapshots-edit-hide-path)
-- [Restore individual files using single-file snapshot restore](https://learn.microsoft.com/azure/azure-netapp-files/snapshots-restore-file-single)
-- [Restore a file from a snapshot using a client with Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/snapshots-restore-file-client)
-- [Revert a volume using snapshot revert with Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/snapshots-revert-volume)
-- [Delete snapshots using Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/snapshots-delete)
+- [Edit the Hide Snapshot Path option of Azure NetApp Files](/azure/azure-netapp-files/snapshots-edit-hide-path)
+- [Restore individual files using single-file snapshot restore](/azure/azure-netapp-files/snapshots-restore-file-single)
+- [Restore a file from a snapshot using a client with Azure NetApp Files](/azure/azure-netapp-files/snapshots-restore-file-client)
+- [Revert a volume using snapshot revert with Azure NetApp Files](/azure/azure-netapp-files/snapshots-revert-volume)
+- [Delete snapshots using Azure NetApp Files](/azure/azure-netapp-files/snapshots-delete)
