@@ -12,11 +12,11 @@ A main driver for cloud computing comes from web hosting. Web sites and web appl
 
 Consider the following scenarios:
 
-- Animoto, an online video slideshow creator, decided to deploy a Facebook application. Traffic to the service surged, which resulted in Animoto scaling up from 50 servers to 3,500 servers in 3 days. Such elastic scalability is made possible through cloud computing.
+- Animoto, an online video slideshow creator, decided to deploy a Facebook application. Traffic to the service surged, which resulted in Animoto scaling up from 50 servers to 3,500 servers in three days. Such elastic scalability is made possible through cloud computing.
 
 - Online retail stores that use cloud computing, such as Amazon and Target.com, have been able to size up infrastructure for peak activity (such as the day after Thanksgiving). Salesforce.com hosts customers ranging from those with 2 seats to more than 20,000 seats, all using the same Web platform.
 
-Domino's Pizza relies on a combination of services provided by AWS and Azure to power its business. For example, it uses Azure App Service and Azure Cosmos DB -- both PaaS services -- for online ordering and delivery tracking, enabling it to scale up and down as needed to meet demand. Domino's also uses SaaS-based Microsoft Dynamics ERP to meet its enterprise resource planning needs<sup>[1][^1]</sup>.
+Domino's Pizza relies on a combination of services provided by AWS and Azure to power its business. For example, it uses Azure App Service and Azure Cosmos DB (both PaaS services) for online ordering and delivery tracking, enabling it to scale up and down as needed to meet demand. Domino's also uses SaaS-based Microsoft Dynamics ERP to meet its enterprise resource planning needs<sup>[1][^1]</sup>.
 
 # Big-Data Analytics
 
