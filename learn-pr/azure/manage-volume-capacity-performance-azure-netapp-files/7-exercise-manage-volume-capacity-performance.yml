@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-volume-capacity-performance.exercise-manage-volume-capacity-performance-azure-netapp-files
+title: Exercise - Manage volume capacity and performance for Azure NetApp Files
+metadata:
+  title: Exercise - Manage volume capacity and performance for Azure NetApp Files
+  description: Exercise to resize capacity pools and volumes, manage quota rules, and configure cool access in Azure NetApp Files.
+  ms.date: 06/10/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-exercise-manage-volume-capacity-performance.md)]

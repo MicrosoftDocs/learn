@@ -8301,3 +8301,53 @@ achievements:
   title: Create and manage Power BI assets
   summary: Create Power BI assets for your analytics environment for structure and consistency, such as Power BI template and project files. Reusable assets and using the XMLA endpoint support application lifecycle management, including continuous integration and deployment.
   iconUrl: /training/achievements/create-manage-power-bi-assets.svg
+- uid: learn.wwl.configure-web-app-settings.badge
+  type: badge
+  title: Configure web app settings
+  summary: Learn how to create and manage application settings, install SSL/TLS certificates to secure web traffic, enable diagnostic logging, create virtual app to directory mappings, and manage app features.
+  iconUrl: /training/achievements/app-service-configure.svg
+- uid: learn.wwl.create-azure-app-service-web-apps.trophy
+  type: trophy
+  title: Implement Azure App Service web apps
+  summary: Learn how Azure App Service functions and how to create and update an app. Explore App Service authentication and authorization, configuring app settings, scale apps, and how to use deployment slots.
+  iconUrl: /training/achievements/azure-app-service-create-web-apps.svg
+- uid: learn.wwl.understand-app-service-deployment-slots.badge
+  type: badge
+  title: Explore Azure App Service deployment slots
+  summary: In this module you'll learn how slot swapping operates and how to perform a swap. You'll also learn how to route traffic to different slots manually and automatically.
+  iconUrl: /training/achievements/app-service-deployment-slots.svg
+- uid: learn.wwl.introduction-to-azure-app-service.badge
+  type: badge
+  title: Explore Azure App Service
+  summary: Learn about the key components of Azure App Service and how App Service can help you create, maintain, and deploy web apps more efficiently.
+  iconUrl: /training/achievements/azure-app-introduction.svg
+- uid: learn.wwl.scale-apps-app-service.badge
+  type: badge
+  title: Scale apps in Azure App Service
+  summary: Learn how autoscale operates in App Service and how to identify autoscale factors, enable autoscale, and how to create sound autoscale conditions.
+  iconUrl: /training/achievements/app-service-scale-apps.svg
+- uid: learn.wwl.introduction-to-open-source-database-migration-on-azure.badge
+  type: badge
+  title: Introduction to open-source database migration on Azure
+  summary: In this module, you'll learn about the issues and considerations for migrating on-premises open-source databases to Azure, the services that Azure provides to help you migrate your databases, and how to plan a migration.
+  iconUrl: /training/achievements/introduction-to-open-source-database-migration-on-azure.svg
+- uid: learn.wwl.migrate-on-premises-mysql-databases-to-azure-database-for-mysql.badge
+  type: badge
+  title: Migrate on-premises MySQL databases to Azure Database for MySQL
+  summary: In this module, you'll learn about the benefits of migrating MySQL workloads to Azure, you'll see how to create an Azure Database for MySQL instance, and learn how to migrate on-premises MySQL databases to Azure.
+  iconUrl: /training/achievements/migrate-on-premises-mysql-databases-to-azure-database-for-mysql.svg
+- uid: learn.wwl.migrating-open-source-workloads-to-azure.trophy
+  type: trophy
+  title: Migrate open-source databases to Azure
+  summary: Learn how to migrate open-source workloads from PostgreSQL and MySQL databases to the equivalent services in Azure. Explore the processes and tools, and learn how to validate application dependencies to support a successful migration.
+  iconUrl: /training/achievements/migrating-open-source-workloads-to-azure-dp0-70.svg
+- uid: learn.wwl.migrate-on-premises-postgresql-databases-to-azure-database-for-postgresql.badge
+  type: badge
+  title: Migrate on-premises PostgreSQL databases to Azure Database for PostgreSQL
+  summary: In this module, you'll learn about the benefits of migrating PostgreSQL workloads to Azure, you'll see how to create an Azure Database for PostgreSQL instance and how to migrate on-premises PostgreSQL databases to Azure.
+  iconUrl: /training/achievements/migrate-onpremises-postgresql-db-azure-db.svg
+- uid: learn.wwl.protecting-monitoring-and-tuning-a-migrated-database.badge
+  type: badge
+  title: Protect, monitor, and tune a migrated database
+  summary: In this module, you'll learn how to use the Azure features available for protect, monitor, and tune a database.
+  iconUrl: /training/achievements/protecting-monitoring-and-tuning-a-migrated-database.svg

@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-manage-premises-hybrid-networking-infrastructure
+metadata:
+  title: Implement and Manage an On-Premises and Hybrid Networking Infrastructure
+  description: Learn how to implement on-premises and hybrid name resolution with DNS and manage IP addressing with DHCP in hybrid scenarios.
+  ms.date: 07/07/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: learning-path
+title: Implement and manage an on-premises and hybrid networking infrastructure
+summary: |
+  Learn how to implement on-premises and hybrid name resolution, including DNS integration with Active Directory, DNS zones, forwarding, policies, and DNSSEC, and manage IP addressing using DHCP in on-premises and hybrid scenarios.
+prerequisites: |
+  - Experience administering Windows Server operating systems
+  - Familiarity with core networking technologies including DNS and DHCP
+  - Basic knowledge of PowerShell
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows-server
+subjects:
+- networking
+modules:
+# 4.1 Implement on-premises and hybrid name resolution
+- learn.wwl.implement-windows-server-dns # Primary - DNS architecture, zones, records, forwarding
+- learn.wwl.implement-dns-for-windows-server-iaas-vms # Supplementary - Azure DNS, Private DNS, split-horizon
+- learn.wwl.secure-windows-server-dns # Supplementary - DNS policies, DNSSEC
+# 4.2 Manage IP addressing in on-premises and hybrid scenarios
+- learn.wwl.deploy-manage-dhcp # Primary - DHCP server role, scopes, failover
+- learn.wwl.implement-ip-address-management # Supplementary - IPAM deploy, DNS/DHCP management via IPAM
+- learn.wwl.implement-windows-server-iaas-vm-ip-addressing-routing # Supplementary - hybrid IP troubleshooting
+trophy:
+  uid: learn.wwl.implement-manage-premises-hybrid-networking-infrastructure.trophy

@@ -1,0 +1,1 @@
+Learn different ways to monitor the capacity utilization and change the size of a capacity pool or a volume in Azure NetApp Files. Also, learn how to manage Azure NetApp Files storage with cool access, dynamically change the service level of a volume, and manage default and individual user and group quotas for a volume.

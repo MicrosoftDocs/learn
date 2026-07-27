@@ -1,29 +1,29 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-audit-search-investigate.audit-overview
-title: Microsoft Purview Audit overview
+title: Understand how Microsoft Purview Audit works
 metadata:
-  title: Microsoft Purview Audit Overview
-  description: "Microsoft Purview Audit overview"
-  ms.date: 08/15/2025
+  title: Understand How Microsoft Purview Audit Works
+  description: "How Microsoft Purview Audit records activity, retains records, and where you search them."
+  ms.date: 07/23/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 8
+durationInMinutes: 5
 content: |
   [!include[](includes/audit-overview.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which feature is common to both Microsoft Purview Audit (Standard) and Audit (Premium)?"
+  - content: "The healthcare compliance team turned on Audit (Standard) six months ago and hasn't upgraded to Audit (Premium). They want to know whether a physician opened a specific patient email 30 days ago. What does the mental model of audit predict they'll find?"
     choices:
-    - content: "10-year audit log retention."
+    - content: "The record will be there. Standard covers Exchange mailbox activity across the tenant."
       isCorrect: false
-      explanation: "Incorrect: This feature is exclusive to Audit (Premium) with the appropriate add-on license."
-    - content: "Search-UnifiedAuditLog cmdlet."
+      explanation: "Incorrect. Standard records many Exchange activities like mailbox folder access and message deletion, but not which specific messages a user opened. That level of detail comes from `MailItemsAccessed` in Audit (Premium)."
+    - content: "The record won't be there because Standard's retention window is only 30 days for mailbox activity."
+      isCorrect: false
+      explanation: "Incorrect. Standard retention is 180 days by default, or one year for Microsoft Entra ID, Exchange, SharePoint, and OneDrive with a Microsoft 365 E5 or equivalent license. Thirty days ago is well inside that window. The gap is the event type, not the retention."
+    - content: "The record won't be there because message-level opens come from `MailItemsAccessed`, an Audit (Premium) event."
       isCorrect: true
-      explanation: "Correct: Both versions offer the Search-UnifiedAuditLog cmdlet, allowing for detailed searches within the audit logs."
-    - content: "Customizable audit log retention policies."
-      isCorrect: false
-      explanation: "Incorrect: Customizable audit log retention policies are a feature of Audit (Premium) only."
+      explanation: "Correct. `MailItemsAccessed` is a high-value Audit (Premium) event. Without Premium, Standard doesn't record which specific messages a user opened."

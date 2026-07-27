@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 11/10/2024
-  author: wwlpublish
+  ms.date: 07/23/2026
+  author: jeffkoms
   ms.author: jeffko
   ms.topic: unit
   ms.custom:
@@ -26,14 +26,36 @@ quiz:
     - content: "A workflow is an automated process that you set up in your GitHub repository to build, test, package, release, or deploy any project."
       isCorrect: true
       explanation: "Correct. In GitHub Actions, a workflow is an automated process for tasks like building, testing, packaging, releasing, or deploying projects."
-  - content: "What is the purpose of a service principal in Microsoft Entra tenant?"
+  - content: "What is the purpose of a service principal in a Microsoft Entra tenant?"
     choices:
     - content: "It's used to track usage and billing information for the tenant."
       isCorrect: false
-      explanation: "Incorrect. Service principals are not directly related to usage tracking or billing."
-    - content: "It defines the access policy and permissions for the user/application in the Microsoft Entra tenant."
+      explanation: "Incorrect. Service principals aren't directly related to usage tracking or billing."
+    - content: "It defines the access policy and permissions for the user or application in the Microsoft Entra tenant."
       isCorrect: true
       explanation: "Correct. A service principal represents the access policy and permissions for an application in a tenant."
     - content: "It provides a unique identifier for each user in the tenant."
       isCorrect: false
-      explanation: "Incorrect. While a service principal does provide an identity, it is not specifically for users but for applications."
+      explanation: "Incorrect. Although a service principal provides an identity, it isn't a user identity. It represents an application or managed identity in the tenant."
+  - content: "A team wants a GitHub-hosted workflow to deploy to Azure without storing a long-lived Azure credential. Which authentication approach should the team use?"
+    choices:
+    - content: "Configure a federated identity credential, grant `id-token: write`, and use Azure Login with the client, tenant, and subscription IDs."
+      isCorrect: true
+      explanation: "Correct. OpenID Connect exchanges a short-lived GitHub token for an Azure access token, so the workflow doesn't store a client secret."
+    - content: "Create a service principal client secret and store the generated JSON as `AZURE_CREDENTIALS`."
+      isCorrect: false
+      explanation: "Incorrect. This approach stores a long-lived client secret that the team must protect and rotate."
+    - content: "Download an App Service publish profile and store it as a repository secret."
+      isCorrect: false
+      explanation: "Incorrect. A publish profile is a long-lived app-level credential and doesn't meet the requirement to avoid stored Azure credentials."
+  - content: "A workflow only needs to deploy an application to one Azure App Service web app. Which role assignment follows least-privilege guidance?"
+    choices:
+    - content: "Assign the Owner role at subscription scope."
+      isCorrect: false
+      explanation: "Incorrect. The Owner role grants permissions far beyond those required to deploy one web app."
+    - content: "Assign the Contributor role at resource-group scope."
+      isCorrect: false
+      explanation: "Incorrect. Resource-group Contributor allows the identity to manage unrelated resources in the group."
+    - content: "Assign the Website Contributor role at the scope of the specific web app."
+      isCorrect: true
+      explanation: "Correct. Website Contributor at the web app scope grants deployment access while limiting permissions to the target app."

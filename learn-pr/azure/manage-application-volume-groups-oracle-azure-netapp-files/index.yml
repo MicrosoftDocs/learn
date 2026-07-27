@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.manage-application-volume-groups-oracle
+metadata:
+  title: Manage Application Volume Groups for Oracle in Azure NetApp Files
+  description: Learn ways to manage application volume groups for Oracle in Azure NetApp Files, like deploying application volume group for Oracle, managing volumes in an application volume group, and deploy application volume group for Oracle using Resource Manager.
+  ms.date: 07/20/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Manage application volume groups for Oracle in Azure NetApp Files
+summary: Learn ways to manage application volume groups for Oracle in Azure NetApp Files, like deploying application volume group for Oracle, managing volumes in an application volume group, and deploy application volume group for Oracle using Resource Manager.
+abstract: |
+  By completing this module, you’ll be able to:
+  - Deploy the first application volume group for Oracle
+  - Manage volumes in an application volume group for Oracle
+  - Deploy application volume group for Oracle using Azure Resource Manager
+prerequisites: |
+  - Manage application volume groups for SAP HANA for Azure NetApp Files
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+  - storage
+units:
+  - learn.azure.manage-application-volume-groups-oracle.introduction
+  - learn.azure.manage-application-volume-groups-oracle.deploy-application-volume-group-oracle
+  - learn.azure.manage-application-volume-groups-oracle.configure-application-volume-group-oracle-using-rest-api
+  - learn.azure.manage-application-volume-groups-oracle.deploy-application-volume-group-oracle-using-azure-resource-manager
+  - learn.azure.manage-application-volume-groups-oracle.exercise-manage-application-volume-groups-oracle
+  - learn.azure.manage-application-volume-groups-oracle.knowledge-check
+  - learn.azure.manage-application-volume-groups-oracle.summary
+badge:
+  uid: learn.azure.manage-application-volume-groups-oracle.badge

@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.manage-data-protection-azure-netapp-files
+metadata:
+  title: Manage Data Protection with Azure NetApp Files
+  description: Learn various ways to manage volume snapshots, volume backups, replication, availability zone, and cross-region replication with Azure NetApp Files.
+  ms.date: 07/22/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Manage data protection with Azure NetApp Files
+summary: Manage data protection with Azure NetApp Files by managing volume snapshots, volume backups, cross-region replication, disaster recovery, and availability zone volume placement.
+abstract: |
+  By completing this module, you're able to:
+  - Manage snapshots and backups in Azure NetApp Files
+  - Manage cross-region replication and disaster recovery options
+  - Manage availability zone volume placement for Azure NetApp Files
+prerequisites: |
+  - Manage application volume groups for Oracle in Azure NetApp Files
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+  - storage
+units:
+  - learn.azure.manage-data-protection-azure-netapp-files.introduction
+  - learn.azure.manage-data-protection-azure-netapp-files.manage-volume-snapshots
+  - learn.azure.manage-data-protection-azure-netapp-files.exercise-manage-volume-snapshots
+  - learn.azure.manage-data-protection-azure-netapp-files.exercise-manage-volume-backups
+  - learn.azure.manage-data-protection-azure-netapp-files.exercise-manage-replication
+  - learn.azure.manage-data-protection-azure-netapp-files.knowledge-check
+  - learn.azure.manage-data-protection-azure-netapp-files.summary
+badge:
+  uid: learn.azure.manage-data-protection-azure-netapp-files.badge

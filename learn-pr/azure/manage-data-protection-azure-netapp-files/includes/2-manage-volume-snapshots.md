@@ -1,0 +1,9 @@
+- Azure NetApp Files supports creating on-demand snapshots and using snapshot policies to schedule automatic snapshot creation. 
+- You can also restore a snapshot to a new volume, restore a single file by using a client, or revert an existing volume by using a snapshot.
+- Snapshots enable point-in-time recovery of volumes. You can schedule for volume snapshots to be taken automatically by using snapshot policies.
+- If you don't want to restore the entire snapshot to a new volume or copy large files across the network, you can use the single-file snapshot restore feature to recover individual files directly within a volume from a snapshot.
+- If you don't want to restore the entire snapshot to a volume, you can restore a file from a snapshot by using a client that has the volume mounted.
+- The mounted volume contains a snapshot directory named '.snapshot' (in NFS clients) or ~snapshot (in SMB clients) that's accessible to the client.
+- The snapshot directory contains subdirectories corresponding to the snapshots of the volume and the key value of the snapshot subdirectories is that they contain a full representation of the volume contents of the volume at the time the snapshot was taken.
+- The snapshot revert functionality enables you to quickly revert a volume to the state it was in when a particular snapshot was taken.
+- You can also delete snapshots that you no longer need.

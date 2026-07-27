@@ -16,7 +16,7 @@ The link feature provides two types of replication:
 
 - **One-way replication**. One-way replication is available for SQL Server versions 2016 and 2019 and allows you to replicate data one way from a SQL Server instance to your managed instance. 
 
-- **Two-way replication**. SQL Server 2022 provides a two-way replication feature, where you can replicate data between your managed instance and SQL Server instances, manually fail over during a disaster, and manually fail back after the disaster is mitigated. It supports an online failover but an offline failback. A preview of the online failback is available to sign up for.
+- **Two-way replication**. SQL Server 2022 provides a two-way replication feature, where you can replicate data between your managed instance and SQL Server instances, manually fail over during a disaster, and manually fail back after the disaster is mitigated. With SQL Server 2022, it supports online failover to Azure SQL Managed Instance and online failback to SQL Server by using the link directly. You can also fail back offline by backing up the database on the managed instance and restoring it to SQL Server.
 
 ### Extended capabilities to the cloud
 

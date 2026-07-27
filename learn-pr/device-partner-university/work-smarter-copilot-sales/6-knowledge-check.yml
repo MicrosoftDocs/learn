@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.work-smarter-copilot-sales.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Work smarter with Copilot prompts for sales professionals" module.
+  ms.date: 07/20/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A sales professional wants to identify the most important customer follow-ups and meetings before starting the day. Which Microsoft 365 Copilot prompt would best support this task?"
+    choices:
+        - content: "Turn off Focus mode and restore notifications."
+          isCorrect: false
+          explanation: ""
+        - content: "Review my meetings and emails for today and identify the highest-priority customer follow-ups and opportunities I should focus on."
+          isCorrect: true
+          explanation: ""
+        - content: "Rewrite this proposal to sound more formal."
+          isCorrect: false
+          explanation: ""
+        - content: "Generate a customer presentation."
+          isCorrect: false
+          explanation: ""
+  - content: "A sales professional needs to quickly prepare for an upcoming customer meeting by reviewing recent interactions, open opportunities, and discussion topics. Which Copilot capability would best support this task?"
+    choices:
+        - content: "Windows Studio Effects"
+          isCorrect: false
+          explanation: ""
+        - content: "Live Captions"
+          isCorrect: false
+          explanation: ""
+        - content: "Agent in Settings"
+          isCorrect: false
+          explanation: ""
+        - content: "Copilot in Word to generate an account brief from recent customer information"
+          isCorrect: true
+          explanation: ""
+  - content: "During a virtual customer meeting, which Copilot+ PC experience can help participants follow the conversation by displaying spoken content in real time?"
+    choices:
+        - content: "Click to Do"
+          isCorrect: false
+          explanation: ""
+        - content: "Live Captions"
+          isCorrect: true
+          explanation: ""
+        - content: "Windows Search"
+          isCorrect: false
+          explanation: ""
+        - content: "Copilot in PowerPoint"
+          isCorrect: false
+          explanation: ""
+  - content: "After drafting a customer email, a sales professional wants to quickly refine the wording without leaving the current document. Which Copilot+ PC experience should they use?"
+    choices:
+        - content: "Agent in Settings"
+          isCorrect: false
+          explanation: ""
+        - content: "Windows Studio Effects"
+          isCorrect: false
+          explanation: ""
+        - content: "Click to Do"
+          isCorrect: true
+          explanation: ""
+        - content: "Live Captions"
+          isCorrect: false
+          explanation: ""
+  - content: "At the end of the day, a sales professional wants to summarize completed work, identify outstanding opportunities, and prepare priorities for tomorrow. Which Microsoft 365 Copilot prompt would best help accomplish this?"
+    choices:
+        - content: "Rewrite this proposal for an executive audience."
+          isCorrect: false
+          explanation: ""
+        - content: "Summarize today's customer meetings."
+          isCorrect: false
+          explanation: ""
+        - content: "Create a six-slide customer presentation."
+          isCorrect: false
+          explanation: ""
+        - content: "Draft my end-of-day sales update: deals progressed, blockers, and top three priorities for tomorrow."
+          isCorrect: true
+          explanation: ""

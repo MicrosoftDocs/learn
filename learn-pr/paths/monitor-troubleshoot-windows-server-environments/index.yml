@@ -40,6 +40,7 @@ modules:
 - learn.wwl.implement-windows-server-auditing-diagnostics
 - learn.wwl.troubleshoot-premises-hybrid-networking
 - learn.wwl.troubleshoot-windows-server-virtual-machines-azure
+- learn.wwl.windows-server-update-management
 - learn.wwl.troubleshoot-active-directory
 trophy:
   uid: learn.wwl.monitor-troubleshoot-windows-server-environments.trophy
