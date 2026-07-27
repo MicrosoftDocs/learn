@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-azure-netapp-files.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to troubleshooting Azure NetApp Files.
+  ms.date: 07/24/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]
