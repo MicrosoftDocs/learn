@@ -32,7 +32,6 @@ subjects:
   - business-applications
 modules:
   - learn.wwl.introduction-microsoft-365-copilot
-  - learn.wwl.explore-possibilities-microsoft-365-copilot
   - learn.wwl.create-draft-content-with-microsoft-copilot-microsoft-365
 trophy:
     uid: learn.philanthropies.introduction-to-ai-skills-for-nonprofits.trophy
