@@ -8384,3 +8384,13 @@ achievements:
   
     - Understand concurrency in MySQL
   iconUrl: /training/achievements/work-mysql-databases-azure.svg
+- uid: learn.wwl.understand-concurrency-mysql.badge
+  type: badge
+  title: Understand concurrency in MySQL
+  summary: Learn about concurrency in MySQL, including how to limit the number of connections, and when to use thread pools.
+  iconUrl: /training/achievements/understand-concurrency-mysql.svg
+- uid: learn.wwl.understand-mysql-storage-engine.badge
+  type: badge
+  title: Understand the MySQL storage engine
+  summary: Learn about MySQL’s pluggable storage engine model, common storage engines, and storage engines supported by Azure Database for MySQL.
+  iconUrl: /training/achievements/understand-mysql-storage-engine.svg
