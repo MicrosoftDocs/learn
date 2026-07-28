@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-database.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Check your ability to distinguish the directory database, system volume, replication engines, Group Policy components, and supported operational boundaries.
+  ms.date: 07/24/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A read-only domain controller is also a global catalog server. It hosts a read-only replica of `DC=contoso,DC=com`, partial replicas for other domains, and local Extensible Storage Engine files. Which statement correctly describes its `NTDS.dit` and replication role?"
+    choices:
+    - content: "It's a forest-wide file copied unchanged to every domain controller."
+      isCorrect: false
+      explanation: "Incorrect. Each domain controller maintains its own database file containing only the directory replicas that the server hosts."
+    - content: "It's the local database for the server's read-only and partial replicas, and the server normally receives ordinary directory and system-volume changes rather than acting as a writable source."
+      isCorrect: true
+      explanation: "Correct. Replica scope depends on the server's roles and partition enlistments. Normal replication transfers logical changes, not the database file, and the system volume remains a separate file hierarchy."
+    - content: "It stores the domain system volume and can originate ordinary directory and policy-file changes for writable domain controllers."
+      isCorrect: false
+      explanation: "Incorrect. The system volume isn't stored in `NTDS.dit`, and a read-only domain controller isn't a normal writable source for directory or policy-file changes."
+  - content: "A domain controller restarts after an unplanned power loss. Extensible Storage Engine reports that the database wasn't shut down cleanly. What should an administrator infer first?"
+    choices:
+    - content: "The transaction logs should be deleted so the directory service can open the database."
+      isCorrect: false
+      explanation: "Incorrect. Deleting required logs can prevent supported recovery and cause data loss. Preserve the database and log set."
+    - content: "The database is physically corrupt and requires offline repair."
+      isCorrect: false
+      explanation: "Incorrect. A dirty shutdown records an interrupted close. It doesn't, by itself, prove logical inconsistency or physical corruption."
+    - content: "The engine should use its checkpoint and transaction logs for automatic soft recovery before corruption is considered."
+      isCorrect: true
+      explanation: "Correct. Soft recovery replays committed log records that weren't yet reflected in database pages and rolls back incomplete transactions."
+  - content: "Directory replication status is current on two domain controllers, but `gpt.ini` for one policy has an older version on one server. Which conclusion best fits the evidence?"
+    choices:
+    - content: "The directory component can be current while the file-system component is stale because the two components use separate replication engines."
+      isCorrect: true
+      explanation: "Correct. A Group Policy Object spans a directory container and a file-system template. Their updates aren't one cross-store atomic transaction."
+    - content: "A current directory replication summary proves that the system volume is also synchronized."
+      isCorrect: false
+      explanation: "Incorrect. Healthy directory replication doesn't prove healthy file replication."
+    - content: "The directory database is inconsistent because Group Policy files replicate inside `NTDS.dit`."
+      isCorrect: false
+      explanation: "Incorrect. The Group Policy template is in the system volume and follows Distributed File System Replication, not directory replication."
+  - content: "A client discovers a domain controller and reads a Group Policy container successfully through Lightweight Directory Access Protocol, but its attempt to retrieve the matching template fails. Which evidence should be checked next?"
+    choices:
+    - content: "Only the local Extensible Storage Engine checkpoint, because all Group Policy data is in the database."
+      isCorrect: false
+      explanation: "Incorrect. The template is a file-system component retrieved through Server Message Block."
+    - content: "The forest schema partition, because every template file is represented there."
+      isCorrect: false
+      explanation: "Incorrect. The schema defines object classes and attributes. It doesn't contain Group Policy template files."
+    - content: "The system volume and logon shares, Server Message Block access, the template path, and the Distributed File System Replication event log."
+      isCorrect: true
+      explanation: "Correct. Directory discovery succeeded. The remaining path crosses the system-volume share and file-replication state."
+  - content: "An organization plans to enable the Windows Server 2025 optional feature for 32-kilobyte directory database pages. Which preparation is required?"
+    choices:
+    - content: "Treat the change as reversible and retain only raw copies of `NTDS.dit`."
+      isCorrect: false
+      explanation: "Incorrect. Enablement is irreversible. Raw database copies aren't supported backups."
+    - content: "Confirm the required functional levels and capable domain controllers, verify replication health, and account for backup-media compatibility and increased memory use."
+      isCorrect: true
+      explanation: "Correct. The forest-wide format decision requires readiness validation, protected backups, and explicit capacity and recovery planning."
+    - content: "Enable the feature on one upgraded domain controller without validating the rest of the forest."
+      isCorrect: false
+      explanation: "Incorrect. An in-place-upgraded database remains in the 8-kilobyte format. Every domain controller must first run Windows Server 2025 or later and host a 32-kilobyte-capable database before forest-wide enablement."
