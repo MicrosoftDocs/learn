@@ -65,3 +65,5 @@ You might have one Foundry resource for a team or department, and many Foundry p
 The Foundry portal provides a modern web-based interface for developing, testing, and operating AI solutions. This is where you'll spend a lot of your time when working with models, agents, and other assets.
 
 ![Screenshot of Foundry portal.](../media/foundry-portal.png)
+
+::: zone-end
