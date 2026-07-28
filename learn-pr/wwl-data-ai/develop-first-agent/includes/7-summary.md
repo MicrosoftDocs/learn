@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=927fdd90-3b7c-49f3-8f6a-a3625e8ed21b]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=010c2cb0-eff6-4974-ae16-ebeac1040712]
 
 > [!TIP]
 > See the **Text and images** tab for more details!
@@ -9,9 +9,15 @@
 
 ::: zone pivot="text"
 
-In this module, we explored how to get started creating agents with Microsoft Foundry; and hopefully you enjoyed the opportunity to create and test an AI agent for yourself.
+In this module, we explored how to get started creating agents with Microsoft Foundry. Along the way, you learned:
 
-Why not continue your journey with these resources?
+- Agents use a *large language model* to understand and reason over natural language, *instructions* to govern what they can do and how they do it, and *tools* to access knowledge or perform tasks.
+- Microsoft Foundry is a platform for developing, deploying, and operating agents on the Microsoft Azure cloud.
+- You can use the Foundry portal to create a prompt agent without writing any code.
+- Visual Studio Code offers a productive environment for agent development, in which you can use graphical tools, SDKs, and coding agents to build comprehensive agents.
+- Foundry provides an OpenAI *responses* endpoint for agents; enabling you to develop client applications that use them.
+
+Hopefully you enjoyed the opportunity to create and test an AI agent for yourself. Why not continue your journey with these resources?
 
 ::: zone-end
 
@@ -21,4 +27,3 @@ Why not continue your journey with these resources?
 - [Develop AI agents on Azure](https://aiskillsnavigator.microsoft.com/explore/search/learningpath-e479cf28c8a127f98d3d45961214485266d85b486991cebf33fe779fb53a0190)
 - [Develop natural language solutions on Azure](https://aiskillsnavigator.microsoft.com/explore/search/learningpath-37cace5b5d91825002d4c09e3f3f98d9027e1b2a79b490b663684c4703361ca7)
 - [Extract visual insights from data on Azure](https://aiskillsnavigator.microsoft.com/explore/search/learningpath-d0b0e550fda9d8fc957788736aaee66351967ea44dbad310f4f8dae94a21cfa2)
-- [Develop AI Information Extraction solutions on Azure](https://aiskillsnavigator.microsoft.com/explore/search/learningpath-796e69a13e07dffb16c3a979eb65711e5884ecee17cf595f4eb9b604e919a428)

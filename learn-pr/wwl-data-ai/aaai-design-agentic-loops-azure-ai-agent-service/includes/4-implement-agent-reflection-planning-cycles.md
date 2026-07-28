@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7d620b78-35e6-4405-895c-936675c6baea]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Basic agents respond once and stop. Production agents tasked with complex reasoning—financial analysis, diagnostic support, code review—benefit from iterating on their own outputs. **Reflection cycles** implement this multi-pass reasoning pattern, where agents critique and refine their work before delivering final results.
 
 ## Understand why reflection matters
@@ -255,3 +266,5 @@ The key differences from v1: `previous_response_id` replaces thread message inje
 - **Reasoning budgets** should guide reflection depth—the first cycle yields the most significant improvement but subsequent cycles show diminishing returns, creating a token cost multiplier that must be factored into cost models.
 - **Structured reasoning traces** captured via `json_schema` response format serve dual purposes: audit trail for compliance and training data for future model improvements.
 - **Reflection in Agents v2** uses `previous_response_id` chaining in place of thread message injection—chain plan-then-act or act-then-reflect responses by reference, with no run polling required.
+
+::: zone-end

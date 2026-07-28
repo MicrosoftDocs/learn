@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-azure-netapp-files.troubleshoot-various-issues
+title: Troubleshooting Azure NetApp Files for various issues
+metadata:
+  title: Troubleshooting Azure NetApp Files for Various Issues
+  description: Learn resolutions to issues you might have when managing Azure NetApp Files resources.
+  ms.date: 07/24/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-troubleshoot-various-issues.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-azure-netapp-files.exercise-troubleshoot-azure-netapp-files
+title: Exercise - Troubleshooting Azure NetApp Files
+metadata:
+  title: Exercise - Troubleshooting Azure NetApp Files
+  description: Practice troubleshooting Azure NetApp Files issues using diagnose and solve problems, LDAP group checks, and file lock troubleshooting.
+  ms.date: 07/24/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-exercise.md)]

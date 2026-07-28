@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.develop-first-agent.microsoft-foundry
-title: Microsoft Foundry
+title: Introduction to Microsoft Foundry
 metadata:
-  title: Microsoft Foundry
+  title: Introduction to Microsoft Foundry
   description: Understand when to use Microsoft Foundry.
   author: GraemeMalcolm
   ms.author: gmalc
-  ms.date: 4/29/2026
+  ms.date: 7/27/2026
   ms.topic: unit
   zone_pivot_groups: video-or-text
 durationInMinutes: 5

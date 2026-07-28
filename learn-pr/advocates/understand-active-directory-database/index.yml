@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.devrel.understand-active-directory-database
+metadata:
+  title: Understand the Active Directory Domain Services Database and SYSVOL
+  description: Understand how Active Directory domain controllers store and replicate directory data and SYSVOL.
+  ms.date: 07/24/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+title: Understand the Active Directory Domain Services database and SYSVOL
+summary: Understand how Active Directory domain controllers store and replicate directory data and SYSVOL. Trace their separate replication paths, connect both stores to Group Policy, and classify failures without manipulating live database or replication state.
+abstract: |
+  In this module, you'll:
+  - Distinguish the logical Active Directory Domain Services directory, the local Extensible Storage Engine database and hosted partitions, and the domain-scoped system volume.
+  - Explain how a directory write is committed locally, recovered after an interrupted shutdown, and replicated as logical changes rather than database files.
+  - Explain how clients access the system volume, how Distributed File System Replication synchronizes it, and how writable and read-only domain controllers differ.
+  - Trace a Group Policy Object across its directory and file-system components and use read-only evidence to identify the failing store or access path.
+  - Identify supported backup, recovery-escalation, virtualization, and Windows Server 2025 database page-size boundaries.
+prerequisites: |
+  - Experience administering Active Directory Domain Services forests, domains, organizational units, domain controllers, sites, and replication partners.
+  - Familiarity with Domain Name System, Lightweight Directory Access Protocol, Kerberos, Server Message Block, and Group Policy.
+  - Experience using Server Manager, Event Viewer, Windows PowerShell, and common Active Directory administration consoles.
+  - Understanding of writable domain controllers, read-only domain controllers, and global catalog servers.
+  - Ability to work in an isolated lab or interpret supplied command output without making unsupported production changes.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+products:
+- windows-server
+subjects:
+- identity-access
+units:
+- learn.devrel.understand-active-directory-database.introduction
+- learn.devrel.understand-active-directory-database.understand-local-directory-database
+- learn.devrel.understand-active-directory-database.trace-directory-replication
+- learn.devrel.understand-active-directory-database.understand-system-volume-replication
+- learn.devrel.understand-active-directory-database.connect-group-policy-data-stores
+- learn.devrel.understand-active-directory-database.apply-safety-backup-version-boundaries
+- learn.devrel.understand-active-directory-database.investigate-directory-data-stores
+- learn.devrel.understand-active-directory-database.knowledge-check
+- learn.devrel.understand-active-directory-database.summary
+badge:
+  uid: learn.devrel.understand-active-directory-database.badge
