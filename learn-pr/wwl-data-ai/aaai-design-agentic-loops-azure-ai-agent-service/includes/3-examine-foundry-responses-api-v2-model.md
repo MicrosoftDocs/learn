@@ -1,6 +1,17 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bec1b8e4-d2d9-447d-9884-53d0d918cac4]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Unit 2 covered the Agents v1 run lifecycle in depth—eight status values, polling loops, tool output submission. That model works well, but the Foundry Agents v2 Responses API is a different design with a simpler execution model and a modernized SDK. Before applying production patterns in Units 4–6, you need to understand how the v2 model maps to what you already know.
 
-## Map Agents v2 runtime components to Agents v1 concepts
+## Map agents v2 runtime components to agents v1 concepts
 
 Agents v2 uses three runtime components: **agents**, **conversations**, and **responses**. Each maps directly to a v1 concept, but with meaningful behavioral differences.
 
@@ -223,3 +234,5 @@ Background mode also supports disconnect/reconnect: store the `response.id` and 
 - **Tool call handling** moves from a `requires_action` polling loop to explicit output item iteration—find `function_call` items in `response.output`, execute locally, and submit results as `function_call_output` items to the next response call.
 - **Context management** offers three strategies: conversation-based (server-managed history), `previous_response_id` chaining (stateless, flexible), and `store=False` (zero-data-retention compliance).
 - **Background mode** enables long-running agent tasks with disconnect/reconnect support—launch with `background=True`, store the response ID, and poll until completion.
+
+::: zone-end

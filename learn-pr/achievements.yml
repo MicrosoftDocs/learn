@@ -8351,3 +8351,46 @@ achievements:
   title: Protect, monitor, and tune a migrated database
   summary: In this module, you'll learn how to use the Azure features available for protect, monitor, and tune a database.
   iconUrl: /training/achievements/protecting-monitoring-and-tuning-a-migrated-database.svg
+- uid: learn.wwl.explore-mysql-architecture.badge
+  type: badge
+  title: Explore MySQL Architecture
+  summary: Explore the component parts of MySQL, and learn how to find your way around Azure Database for MySQL.
+  iconUrl: /training/achievements/explore-mysql-architecture.svg
+- uid: learn.wwl.secure-mysql.badge
+  type: badge
+  title: Secure MySQL
+  summary: Learn about security and encryption in Azure Database for MySQL.
+  iconUrl: /training/achievements/secure-mysql.svg
+- uid: learn.wwl.understand-client-server-communication-mysql.badge
+  type: badge
+  title: Understand client-server communication in MySQL
+  summary: Learn about connection handling in MySQL, back up and restore, and the client interface options available for MySQL.
+  iconUrl: /training/achievements/understand-client-server-communication-mysql.svg
+- uid: learn.wwl.work-mysql-databases-azure.trophy
+  type: trophy
+  title: Work with MySQL Databases on Azure
+  summary: >-
+    Azure Database for MySQL is a fully managed database platform. In this learning path you'll find out how to manage and optimize Azure Database for MySQL.
+  
+    After completing this learning path, you'll be able to:
+  
+    - Understand Azure Database for MySQL options
+  
+    - Describe the MySQL client query interfaces
+  
+    - Work with MySQL storage engines
+  
+    - Secure your Azure Database for MySQL server
+  
+    - Understand concurrency in MySQL
+  iconUrl: /training/achievements/work-mysql-databases-azure.svg
+- uid: learn.wwl.understand-concurrency-mysql.badge
+  type: badge
+  title: Understand concurrency in MySQL
+  summary: Learn about concurrency in MySQL, including how to limit the number of connections, and when to use thread pools.
+  iconUrl: /training/achievements/understand-concurrency-mysql.svg
+- uid: learn.wwl.understand-mysql-storage-engine.badge
+  type: badge
+  title: Understand the MySQL storage engine
+  summary: Learn about MySQL’s pluggable storage engine model, common storage engines, and storage engines supported by Azure Database for MySQL.
+  iconUrl: /training/achievements/understand-mysql-storage-engine.svg
