@@ -1,4 +1,4 @@
-Now it's your turn. In this lab, you'll use Microsoft Foundry to start developing an AI agent that provides information and expertise on the history of computing.
+Now it's your turn. In this lab, you'll use Microsoft Foundry to develop an AI agent that provides information and expertise on the history of computing.
 
 ![Screenshot of the Computing history agent created in the lab.](../media/client-app.png)
 
