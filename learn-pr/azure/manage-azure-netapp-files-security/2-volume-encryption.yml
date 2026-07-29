@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-azure-netapp-files-security.volume-encryption
+title: Volume encryption for Azure NetApp Files volumes
+metadata:
+  unitType: learning-module
+  title: Volume encryption for Azure NetApp Files Volumes
+  description: Learn how to configure customer-managed keys for Azure NetApp Files volume encryption.
+  ms.date: 07/23/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-volume-encryption.md)]
