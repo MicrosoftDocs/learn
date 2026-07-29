@@ -43,9 +43,9 @@ The [Threat Intelligence Briefing Agent](/defender-xdr/threat-intel-briefing-age
 | **Role-based access** | Security Administrator role is required to set up and manage the agent. Users with the same permissions as the agent can view the agent's activity and results. |
 | **Trigger** | Runs at the time interval configured during setup, or manually. |
 
-#### Threat Hunting Agent
+#### Threat Hunting Assistant
 
-The [Threat Hunting Agent](/defender-xdr/advanced-hunting-security-copilot-threat-hunting-agent) is an AI-powered conversational threat hunting agent that transforms complex data into actionable insights. Unlike traditional hunting methods that rely heavily on Kusto Query Language (KQL) expertise, the Threat Hunting Agent enables you to investigate threats using natural language from start to finish. It not only generates KQL queries but also interprets results, surfaces insights, and guides you through full hunting sessions.
+The [Threat Hunting Assistant](/defender-xdr/advanced-hunting-security-copilot-threat-hunting-assistant) is an AI-powered conversational Threat Hunting Assistant that transforms complex data into actionable insights. Unlike traditional hunting methods that rely heavily on Kusto Query Language (KQL) expertise, the Threat Hunting Assistant enables you to investigate threats using natural language from start to finish. It not only generates KQL queries but also interprets results, surfaces insights, and guides you through full hunting sessions.
 
 Key capabilities include:
 
