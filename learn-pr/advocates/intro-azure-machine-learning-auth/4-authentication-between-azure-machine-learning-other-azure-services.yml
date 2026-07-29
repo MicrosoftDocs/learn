@@ -4,7 +4,7 @@ title: Authentication between Azure Machine Learning and other Azure services
 metadata:
   title: Authentication between Azure Machine Learning and other Azure services
   description: Configure access for workspaces to other Azure services.
-  ms.date: 03/06/2025
+  ms.date: 07/25/2026
   author: Orin-Thomas
   ms.author: viniap
   ms.topic: unit
