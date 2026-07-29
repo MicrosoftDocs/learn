@@ -34,7 +34,7 @@ The module also covered advanced cooling techniques, including waste heat reuse 
 - [Reason Foundation: The future of datacenter electricity use and microgrids](https://reason.org/commentary/the-future-of-data-center-electricity-use-and-microgrids/)
 - [AWS: AWS Announces New datacenter Components to Support AI Innovation and Further Improve Energy Efficiency](https://press.aboutamazon.com/2024/12/aws-announces-new-data-center-components-to-support-ai-innovation-and-further-improve-energy-efficiency)
 - [ITExchange: Sustainable datacenters: Innovations in Energy Efficiency](https://www.itexchangeweb.com/blog/sustainable-data-centers/)
-- [NREL: Hydrogen and Fuel Cells for datacenter Applications Project Meeting: Workshop Report](https://www.nrel.gov/docs/fy20osti/75355.pdf) 
+- [NREL: Hydrogen and Fuel Cells for datacenter Applications Project Meeting: Workshop Report](https://docs.nlr.gov/docs/fy20osti/75355.pdf) 
 - [DataCenter Knowledge: Hydrogen Power: Microsoft, Caterpillar datacenter Partnership Earns Top DOE Award](https://www.datacenterknowledge.com/energy-power-supply/hydrogen-power-microsoft-caterpillar-data-center-partnership-earns-top-doe-award) 
 - [Springer Nature: Hydrogen as power storage technology, polymeric, and interconnect material innovations for future AI datacenter applications: a review](https://link.springer.com/article/10.1007/s10854-024-13705-y)
 - [BNGAi: Using remote sensing and IoT sensors to measure biodiversity](https://www.bng.ai/blog/using-remote-sensing-and-iot-sensors-to-measure-biodiversity/)
