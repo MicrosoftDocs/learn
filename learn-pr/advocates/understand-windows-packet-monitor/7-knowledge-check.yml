@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-windows-packet-monitor.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Check your understanding of safe, focused Packet Monitor collection and evidence interpretation.
+  ms.date: 07/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A Packet Monitor trace shows an inbound packet at a network adapter, but the application still times out. What does the trace prove?"
+    choices:
+    - content: "The application accepted and processed the packet."
+      isCorrect: false
+      explanation: "Incorrect. Observation at a local network component doesn't prove that the application accepted or processed the packet."
+    - content: "The packet reached the observed local component."
+      isCorrect: true
+      explanation: "Correct. Packet Monitor proves local observation at the selected component. Continue with application or advanced stack analysis before making a broader claim."
+    - content: "The remote endpoint received the response."
+      isCorrect: false
+      explanation: "Incorrect. A local trace can't directly prove delivery to a remote endpoint."
+  - content: "You need User Datagram Protocol traffic that contains server address 192.0.2.20 and port 50000. Which filter design is correct?"
+    choices:
+    - content: "Create one filter for the address and a separate filter for the port."
+      isCorrect: false
+      explanation: "Incorrect. Separate filters act as OR, so this design also captures unrelated traffic that matches only one filter."
+    - content: "Capture without a filter, then rely on the file-size limit."
+      isCorrect: false
+      explanation: "Incorrect. A file-size limit bounds storage but doesn't prevent a noisy capture."
+    - content: "Create one filter that contains the address, protocol, and port."
+      isCorrect: true
+      explanation: "Correct. Conditions in one filter use AND. The filter matches request and reply traffic because address and port matching is source and destination neutral."
+  - content: "You aren't sure whether the expected traffic is present and don't yet need packet bytes. What should you do first?"
+    choices:
+    - content: "Start counters-only collection."
+      isCorrect: true
+      explanation: "Correct. Counters-only collection confirms matching traffic with less logging overhead and creates no packet log."
+    - content: "Log complete packets with an unlimited sequence of files."
+      isCorrect: false
+      explanation: "Incorrect. This collects more data than needed and creates avoidable storage and disclosure risk."
+    - content: "Convert an existing packet capture next generation file."
+      isCorrect: false
+      explanation: "Incorrect. Conversion can't confirm whether current traffic is present."
+  - content: "A busy production server needs a short, focused capture for protocol analysis. Which command plan is safest?"
+    choices:
+    - content: "Use no filter, all components, complete packets, and multi-file logging."
+      isCorrect: false
+      explanation: "Incorrect. This plan is broad, exposes more payload, and doesn't bound total disk use."
+    - content: "Use an approved narrow filter, network adapters, the smallest useful packet size, a unique filename, and circular logging with a small limit."
+      isCorrect: true
+      explanation: "Correct. This plan limits scope, repeated appearances, payload exposure, overwrite risk, and disk consumption."
+    - content: "Remove all existing filters and stop any active trace without checking ownership."
+      isCorrect: false
+      explanation: "Incorrect. Existing Packet Monitor state might belong to another administrator."
+  - content: "The text output reports OriginalSize 340 and LoggedSize 128. The packet capture next generation conversion came from an all-component trace. What should you conclude?"
+    choices:
+    - content: "The packet was complete, and every repeated frame is a network retransmission."
+      isCorrect: false
+      explanation: "Incorrect. The size fields show truncation, and repeated appearances can be observations of one packet at several local components."
+    - content: "Stopping collection removed the active filters, so cleanup is complete."
+      isCorrect: false
+      explanation: "Incorrect. Stopping collection doesn't remove Packet Monitor filters."
+    - content: "The packet was truncated, and the converted file can also contain repeated appearances without Packet Monitor component context."
+      isCorrect: true
+      explanation: "Correct. LoggedSize is smaller than OriginalSize, and conversion loses Packet Monitor component and flow context. Retain the original event trace log and collection record."

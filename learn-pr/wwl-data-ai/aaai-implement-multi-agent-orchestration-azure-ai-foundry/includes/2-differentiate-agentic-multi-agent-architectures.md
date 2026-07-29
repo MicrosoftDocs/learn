@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=047d8fc3-bc4b-4381-a97c-c81639c1236d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 ## Why this distinction matters before you orchestrate
 
 Contoso Capital's leadership has a fair question for you: *do we actually need 12 agents?* The investment platform's first prototype used a single agent with strong tools and a long system prompt—it produced acceptable research reports for simple tickers. The current production design uses 12 specialized agents coordinated by an orchestrator. Before you commit to advanced orchestration patterns, you need a clean answer to leadership's question—one grounded in architecture, not in the assumption that more agents are inherently better.
@@ -90,3 +101,5 @@ Now that you can distinguish agentic from multi-agent and decide deliberately wh
 - **The litmus test**—*would removing the second agent break the architecture?*—separates real multi-agent commitments from stylistic uses of multiple agents.
 - **Multi-agent earns its complexity** when specialization quality, parallel execution, separation of duties, security boundaries, or independent team evolution justify the coordination cost—otherwise consolidate.
 - **The rest of this module** teaches the patterns that manage multi-agent complexity—recognize when those patterns are the answer and when consolidation is.
+
+::: zone-end

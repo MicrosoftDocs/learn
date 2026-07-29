@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-windows-packet-monitor.prepare-discover-network-components
+title: Prepare and discover network components
+metadata:
+  title: Prepare and Discover Network Components
+  description: Prepare a safe collection, inspect existing Packet Monitor state, and discover the local network components available for capture.
+  ms.date: 07/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-prepare-discover-network-components.md)]

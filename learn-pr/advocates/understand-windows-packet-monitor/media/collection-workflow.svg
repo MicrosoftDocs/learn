@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Focused Packet Monitor collection workflow</title>
+  <desc id="desc">Eight-step workflow: define expected traffic, inspect existing state, add a narrow filter, confirm traffic with counters, run a bounded capture, stop and validate, convert and inspect, then retain evidence and clean up.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="430" fill="#FFFFFF"/>
+  <text x="600" y="38" text-anchor="middle" fill="#1A1A1A" font-size="24" font-weight="700">Focused collection workflow</text>
+
+  <g>
+    <rect x="35" y="75" width="245" height="105" rx="12" fill="#F7FBFF" stroke="#0078D4" stroke-width="2"/>
+    <circle cx="68" cy="108" r="19" fill="#0078D4"/>
+    <text x="68" y="115" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">1</text>
+    <text x="180" y="112" text-anchor="middle" fill="#1A1A1A" font-size="15" font-weight="700">Define expected traffic</text>
+    <text x="157" y="143" text-anchor="middle" fill="#424242" font-size="14">Address, protocol, port, time</text>
+
+    <rect x="325" y="75" width="245" height="105" rx="12" fill="#F7FBFF" stroke="#0078D4" stroke-width="2"/>
+    <circle cx="358" cy="108" r="19" fill="#0078D4"/>
+    <text x="358" y="115" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">2</text>
+    <text x="470" y="112" text-anchor="middle" fill="#1A1A1A" font-size="15" font-weight="700">Inspect existing state</text>
+    <text x="447" y="143" text-anchor="middle" fill="#424242" font-size="14">Status, filters, components</text>
+
+    <rect x="615" y="75" width="245" height="105" rx="12" fill="#F7FBFF" stroke="#0078D4" stroke-width="2"/>
+    <circle cx="648" cy="108" r="19" fill="#0078D4"/>
+    <text x="648" y="115" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">3</text>
+    <text x="760" y="112" text-anchor="middle" fill="#1A1A1A" font-size="15" font-weight="700">Add a narrow filter</text>
+    <text x="737" y="143" text-anchor="middle" fill="#424242" font-size="14">Combine required conditions</text>
+
+    <rect x="905" y="75" width="245" height="105" rx="12" fill="#F7FBFF" stroke="#0078D4" stroke-width="2"/>
+    <circle cx="938" cy="108" r="19" fill="#0078D4"/>
+    <text x="938" y="115" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">4</text>
+    <text x="1050" y="112" text-anchor="middle" fill="#1A1A1A" font-size="15" font-weight="700">Confirm with counters</text>
+    <text x="1027" y="143" text-anchor="middle" fill="#424242" font-size="14">No packet bytes yet</text>
+
+    <line x1="280" y1="128" x2="315" y2="128" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="570" y1="128" x2="605" y2="128" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="860" y1="128" x2="895" y2="128" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+  </g>
+
+  <line x1="1027" y1="180" x2="1027" y2="224" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="905" y="240" width="245" height="105" rx="12" fill="#FFF4CE" stroke="#D83B01" stroke-width="2"/>
+    <circle cx="938" cy="273" r="19" fill="#D83B01"/>
+    <text x="938" y="280" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">5</text>
+    <text x="1050" y="277" text-anchor="middle" fill="#1A1A1A" font-size="15" font-weight="700">Run bounded capture</text>
+    <text x="1027" y="308" text-anchor="middle" fill="#424242" font-size="14">Scope, size, file, interval</text>
+
+    <rect x="615" y="240" width="245" height="105" rx="12" fill="#FFF4CE" stroke="#D83B01" stroke-width="2"/>
+    <circle cx="648" cy="273" r="19" fill="#D83B01"/>
+    <text x="648" y="280" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">6</text>
+    <text x="760" y="277" text-anchor="middle" fill="#1A1A1A" font-size="15" font-weight="700">Stop and validate</text>
+    <text x="737" y="308" text-anchor="middle" fill="#424242" font-size="14">Interval, counters, file</text>
+
+    <rect x="325" y="240" width="245" height="105" rx="12" fill="#DFF6DD" stroke="#107C10" stroke-width="2"/>
+    <circle cx="358" cy="273" r="19" fill="#107C10"/>
+    <text x="358" y="280" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">7</text>
+    <text x="470" y="277" text-anchor="middle" fill="#1A1A1A" font-size="15" font-weight="700">Convert and inspect</text>
+    <text x="447" y="308" text-anchor="middle" fill="#424242" font-size="14">Text, packet format, context</text>
+
+    <rect x="35" y="240" width="245" height="105" rx="12" fill="#DFF6DD" stroke="#107C10" stroke-width="2"/>
+    <circle cx="68" cy="273" r="19" fill="#107C10"/>
+    <text x="68" y="280" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">8</text>
+    <text x="180" y="277" text-anchor="middle" fill="#1A1A1A" font-size="15" font-weight="700">Retain and clean up</text>
+    <text x="157" y="308" text-anchor="middle" fill="#424242" font-size="14">Preserve evidence; remove state</text>
+
+    <line x1="905" y1="292" x2="870" y2="292" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="615" y1="292" x2="580" y2="292" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="325" y1="292" x2="290" y2="292" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+  </g>
+
+  <text x="600" y="395" text-anchor="middle" fill="#424242" font-size="16">Use the shortest useful interval and preserve the original event trace log.</text>
+</svg>
