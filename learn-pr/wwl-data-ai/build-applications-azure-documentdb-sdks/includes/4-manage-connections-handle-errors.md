@@ -10,7 +10,7 @@ The key principle is: **create one client instance and reuse it throughout your 
 
 ::: zone pivot="python"
 
-PyMongo's `MongoClient` manages a connection pool internally. The pool size is configurable via the `maxPoolSize` parameter. The default works well for most applications; see the [PyMongo documentation](https://pymongo.readthedocs.io/en/stable/faq.html) for tuning guidance.
+PyMongo's `MongoClient` manages a connection pool internally. The pool size is configurable via the `maxPoolSize` parameter. The default works well for most applications; see the [PyMongo documentation](https://pymongo.readthedocs.io/en/stable/index.html) for tuning guidance.
 
 ```python
 # Create once at application startup
