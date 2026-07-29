@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.manage-azure-netapp-files-security
+metadata:
+  title: Manage Azure NetApp Files Security
+  description: Learn encryption options like configuring customer-managed keys for Azure NetApp Files volume encryption and configure customer-managed keys with managed hardware security module (HSM).
+  ms.date: 07/23/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Manage Azure NetApp Files security
+summary: Learn encryption options like configuring customer-managed keys for Azure NetApp Files volume encryption and configure customer-managed keys with managed hardware security module (HSM).
+abstract: |
+  By completing this module, you'll be able to:
+  - Configure customer-managed keys for Azure NetApp Files volume encryption
+  - Route Azure NetApp Files traffic from on-premises using Azure Firewall
+prerequisites: |
+  - Manage data protection with Azure NetApp Files
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+  - storage
+  - security
+units:
+  - learn.azure.manage-azure-netapp-files-security.introduction
+  - learn.azure.manage-azure-netapp-files-security.volume-encryption
+  - learn.azure.manage-azure-netapp-files-security.route-traffic-azure-firewall
+  - learn.azure.manage-azure-netapp-files-security.exercise-manage-azure-netapp-files-security
+  - learn.azure.manage-azure-netapp-files-security.knowledge-check
+  - learn.azure.manage-azure-netapp-files-security.summary
+badge:
+  uid: learn.azure.manage-azure-netapp-files-security.badge
