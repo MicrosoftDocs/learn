@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-windows-packet-monitor.create-useful-packet-filters
+title: Create useful packet filters
+metadata:
+  title: Create Useful Packet Filters
+  description: Create narrow Packet Monitor filters and apply the matching rules for addresses, protocols, and ports.
+  ms.date: 07/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-create-useful-packet-filters.md)]
