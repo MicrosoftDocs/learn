@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-windows-packet-monitor.understand-packet-monitor-capture
+title: Understand Packet Monitor capture
+metadata:
+  title: Understand Packet Monitor Capture
+  description: Understand cross-component packet capture, counters, repeated packet appearances, common uses, and evidence limits.
+  ms.date: 07/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understand-packet-monitor-capture.md)]
