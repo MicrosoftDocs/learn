@@ -1,4 +1,4 @@
-The **Active Directory schema** The schema is the formal set of rules for object classes, attributes, constraints, and directory structure. The schema specifies:
+The **Active Directory schema** is the formal set of rules for object classes, attributes, constraints, and directory structure. The schema specifies:
 
 - **Object classes** that can exist (such as users, groups, computers, and organizational units)
 - **Attributes** those objects can have (such as `displayName`, `mail`, or `memberOf`)
