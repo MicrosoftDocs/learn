@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b9aa06ac-2657-456e-b62c-a3d7d653c0ad]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure AI Foundry Agent Service runs the specialized agents whose outputs sometimes conflict when each agent optimizes for a different objective—returns, risk, or compliance. Azure AI Inference services power the consistency judge that detects semantic contradictions between agent outputs automatically, before conflicting recommendations reach clients.
 
 | Conflict Type | Root Cause | Detection Method | Resolution Strategy |
@@ -187,3 +198,5 @@ This detector combines fast rule-based checks for obvious conflicts with sophist
 - **Agent conflict types** fall into three categories: resource contention conflicts (concurrent writes to shared state), output inconsistency conflicts (divergent domain logic), and deadline conflicts (incompatible timing dependencies)—each requiring a different detection and resolution approach.
 - **Semantic analysis** combines three escalating methods—rule-based validation, semantic similarity scoring, and LLM consistency judging—to detect conflicts ranging from obvious field-level mismatches to subtle strategic contradictions.
 - **LLM judge confidence scores** indicate how certain the system is that a conflict exists, enabling automatic resolution of high-confidence conflicts and escalation to human review for ambiguous cases.
+
+::: zone-end

@@ -8,7 +8,7 @@ metadata:
   ms.author: orthomas
   ms.topic: module
   ms.service: windows-server
-title: Understand the Active Directory Domain Services schema
+title: Understand the Active Directory Domain Services Schema
 summary: Understand how the forest-wide schema defines classes, attributes, syntax, security, search behavior, and global catalog content. Inspect schema state safely, assess extension designs, trace deployment, and classify replication failures without changing a live directory.
 abstract: |
   In this module, you'll:
