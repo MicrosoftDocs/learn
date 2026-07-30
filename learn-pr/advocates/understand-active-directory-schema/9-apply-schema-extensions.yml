@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-schema.apply-schema-extensions
+title: Apply schema extensions
+metadata:
+  title: Apply Schema Extensions
+  description: Trace dependency order, schema-master writes, cache refresh, replication, validation, and defunct-state handling.
+  ms.date: 07/30/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/9-apply-schema-extensions.md)]
