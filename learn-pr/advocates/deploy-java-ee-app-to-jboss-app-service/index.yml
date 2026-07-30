@@ -3,7 +3,7 @@ uid: learn.azure.deploy-java-ee-app-to-app-service
 metadata:
   title: Deploy a Jakarta EE Application to Azure
   description: Deploy a Jakarta EE application to JBoss EAP on Azure App Service and bind it to Azure Database for MySQL.
-  ms.date: 03/16/2025
+  ms.date: 07/25/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.service: azure-java
