@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-schema.evaluate-schema-performance
+title: Evaluate schema performance
+metadata:
+  title: Evaluate Schema Performance
+  description: Evaluate index, ambiguous-name, global-catalog, value-size, volatility, and replication tradeoffs.
+  ms.date: 07/30/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/10-evaluate-schema-performance.md)]

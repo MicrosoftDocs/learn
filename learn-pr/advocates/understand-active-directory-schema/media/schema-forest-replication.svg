@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Forest-wide schema partition replication</title>
+  <desc id="desc">An approved schema change is written to the schema master. The schema partition is a distinct naming context whose replica is distributed to writable and read-only domain controllers in every forest domain. Domain controllers validate directory operations against their local schema cache.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+    <marker id="read-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#605E5C"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="700" fill="#FFFFFF"/>
+  <text x="600" y="42" text-anchor="middle" fill="#1A1A1A" font-size="27" font-weight="700">One schema partition serves the forest</text>
+
+  <rect x="45" y="105" width="210" height="104" rx="10" fill="#FFF4CE" stroke="#8A6D1D" stroke-width="2"/>
+  <text x="150" y="141" text-anchor="middle" fill="#5C4B00" font-size="18" font-weight="700">Approved change</text>
+  <text x="150" y="171" text-anchor="middle" fill="#323130" font-size="15">Extension package</text>
+  <text x="150" y="194" text-anchor="middle" fill="#323130" font-size="15">or forest preparation</text>
+
+  <rect x="345" y="88" width="270" height="138" rx="12" fill="#E1EFFF" stroke="#0078D4" stroke-width="3"/>
+  <text x="480" y="126" text-anchor="middle" fill="#005A9E" font-size="20" font-weight="700">Schema master</text>
+  <text x="480" y="157" text-anchor="middle" fill="#323130" font-size="16">Single forest write authority</text>
+  <text x="480" y="184" text-anchor="middle" fill="#323130" font-size="15">Validates schema rules</text>
+  <text x="480" y="207" text-anchor="middle" fill="#323130" font-size="15">Commits schema objects</text>
+
+  <line x1="255" y1="157" x2="335" y2="157" stroke="#0078D4" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="295" y="142" text-anchor="middle" fill="#005A9E" font-size="14">Write</text>
+
+  <rect x="710" y="80" width="430" height="154" rx="12" fill="#F2F8FD" stroke="#0078D4" stroke-width="3"/>
+  <text x="925" y="116" text-anchor="middle" fill="#005A9E" font-size="20" font-weight="700">Schema naming context</text>
+  <text x="925" y="147" text-anchor="middle" fill="#323130" font-size="16">CN=Schema,CN=Configuration,&lt;forest-root&gt;</text>
+  <text x="925" y="177" text-anchor="middle" fill="#323130" font-size="15">Distinct directory partition</text>
+  <text x="925" y="202" text-anchor="middle" fill="#323130" font-size="15">classSchema plus attributeSchema objects</text>
+
+  <line x1="615" y1="157" x2="700" y2="157" stroke="#0078D4" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="657" y="142" text-anchor="middle" fill="#005A9E" font-size="14">Commit</text>
+
+  <text x="600" y="288" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">Forest-wide replication</text>
+  <line x1="925" y1="234" x2="925" y2="282" stroke="#0078D4" stroke-width="4"/>
+  <line x1="260" y1="302" x2="1040" y2="302" stroke="#0078D4" stroke-width="4"/>
+
+  <rect x="85" y="355" width="290" height="145" rx="12" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="230" y="392" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">Forest-root domain controller</text>
+  <text x="230" y="424" text-anchor="middle" fill="#323130" font-size="15">Schema replica</text>
+  <text x="230" y="449" text-anchor="middle" fill="#323130" font-size="15">In-memory schema cache</text>
+  <text x="230" y="474" text-anchor="middle" fill="#323130" font-size="15">Directory validation</text>
+
+  <rect x="455" y="355" width="290" height="145" rx="12" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="600" y="392" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">Child-domain controller</text>
+  <text x="600" y="424" text-anchor="middle" fill="#323130" font-size="15">Schema replica</text>
+  <text x="600" y="449" text-anchor="middle" fill="#323130" font-size="15">In-memory schema cache</text>
+  <text x="600" y="474" text-anchor="middle" fill="#323130" font-size="15">Directory validation</text>
+
+  <rect x="825" y="355" width="290" height="145" rx="12" fill="#F7F7F7" stroke="#605E5C" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="970" y="392" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">Read-only domain controller</text>
+  <text x="970" y="424" text-anchor="middle" fill="#323130" font-size="15">Read-only schema replica</text>
+  <text x="970" y="449" text-anchor="middle" fill="#323130" font-size="15">In-memory schema cache</text>
+  <text x="970" y="474" text-anchor="middle" fill="#323130" font-size="15">Directory validation</text>
+
+  <line x1="230" y1="302" x2="230" y2="345" stroke="#0078D4" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="600" y1="302" x2="600" y2="345" stroke="#0078D4" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="970" y1="302" x2="970" y2="345" stroke="#0078D4" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <rect x="145" y="565" width="910" height="86" rx="10" fill="#FDE7E1" stroke="#D83B01" stroke-width="2"/>
+  <text x="600" y="600" text-anchor="middle" fill="#A4262C" font-size="18" font-weight="700">Operational boundary</text>
+  <text x="600" y="628" text-anchor="middle" fill="#323130" font-size="16">Every domain controller reads a local replica. Only the schema master accepts schema writes.</text>
+
+  <line x1="230" y1="500" x2="230" y2="548" stroke="#605E5C" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#read-arrow)"/>
+  <line x1="600" y1="500" x2="600" y2="548" stroke="#605E5C" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#read-arrow)"/>
+  <line x1="970" y1="500" x2="970" y2="548" stroke="#605E5C" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#read-arrow)"/>
+</svg>

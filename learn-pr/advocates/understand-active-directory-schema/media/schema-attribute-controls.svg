@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Attribute schema controls</title>
+  <desc id="desc">One attributeSchema object defines identity, value validation, search behavior, replication scope, links, and access-control metadata. Those settings affect every object class that permits the attribute.</desc>
+  <defs>
+    <marker id="control-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="720" fill="#FFFFFF"/>
+  <text x="600" y="42" text-anchor="middle" fill="#1A1A1A" font-size="27" font-weight="700">One attribute definition controls forest behavior</text>
+
+  <rect x="405" y="115" width="390" height="430" rx="14" fill="#E1EFFF" stroke="#0078D4" stroke-width="3"/>
+  <text x="600" y="154" text-anchor="middle" fill="#005A9E" font-size="22" font-weight="700">attributeSchema object</text>
+
+  <line x1="435" y1="177" x2="765" y2="177" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="438" y="208" fill="#1A1A1A" font-size="16" font-weight="700">Identity</text>
+  <text x="458" y="234" fill="#323130" font-size="14">lDAPDisplayName, attributeID, schemaIDGUID</text>
+
+  <text x="438" y="275" fill="#1A1A1A" font-size="16" font-weight="700">Value contract</text>
+  <text x="458" y="301" fill="#323130" font-size="14">attributeSyntax, oMSyntax, range, cardinality</text>
+
+  <text x="438" y="342" fill="#1A1A1A" font-size="16" font-weight="700">Search behavior</text>
+  <text x="458" y="368" fill="#323130" font-size="14">searchFlags, index, name resolution, tuple index</text>
+
+  <text x="438" y="409" fill="#1A1A1A" font-size="16" font-weight="700">Replication scope</text>
+  <text x="458" y="435" fill="#323130" font-size="14">global catalog membership, read-only filtering</text>
+
+  <text x="438" y="476" fill="#1A1A1A" font-size="16" font-weight="700">Relationships plus security</text>
+  <text x="458" y="502" fill="#323130" font-size="14">linkID, attributeSecurityGUID, system controls</text>
+
+  <rect x="45" y="105" width="285" height="130" rx="10" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="187" y="141" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">Validation</text>
+  <text x="187" y="173" text-anchor="middle" fill="#323130" font-size="15">Type, size, range,</text>
+  <text x="187" y="198" text-anchor="middle" fill="#323130" font-size="15">single or multiple values</text>
+
+  <rect x="45" y="290" width="285" height="130" rx="10" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="187" y="326" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">Search cost</text>
+  <text x="187" y="358" text-anchor="middle" fill="#323130" font-size="15">Index storage, write cost,</text>
+  <text x="187" y="383" text-anchor="middle" fill="#323130" font-size="15">query selectivity</text>
+
+  <rect x="45" y="475" width="285" height="130" rx="10" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="187" y="511" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">Links</text>
+  <text x="187" y="543" text-anchor="middle" fill="#323130" font-size="15">Forward value stored</text>
+  <text x="187" y="568" text-anchor="middle" fill="#323130" font-size="15">Back link calculated</text>
+
+  <rect x="870" y="105" width="285" height="130" rx="10" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="1012" y="141" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">Global catalog</text>
+  <text x="1012" y="173" text-anchor="middle" fill="#323130" font-size="15">Faster forest reads</text>
+  <text x="1012" y="198" text-anchor="middle" fill="#323130" font-size="15">More replication plus storage</text>
+
+  <rect x="870" y="290" width="285" height="130" rx="10" fill="#F7F7F7" stroke="#605E5C" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="1012" y="326" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">Read-only filtering</text>
+  <text x="1012" y="358" text-anchor="middle" fill="#323130" font-size="15">Blocks selected values</text>
+  <text x="1012" y="383" text-anchor="middle" fill="#323130" font-size="15">from read-only replicas</text>
+
+  <rect x="870" y="475" width="285" height="130" rx="10" fill="#FFF4CE" stroke="#8A6D1D" stroke-width="2"/>
+  <text x="1012" y="511" text-anchor="middle" fill="#5C4B00" font-size="19" font-weight="700">Access control</text>
+  <text x="1012" y="543" text-anchor="middle" fill="#323130" font-size="15">Property sets, confidential bit,</text>
+  <text x="1012" y="568" text-anchor="middle" fill="#323130" font-size="15">object-specific permissions</text>
+
+  <line x1="330" y1="170" x2="395" y2="220" stroke="#0078D4" stroke-width="3" marker-end="url(#control-arrow)"/>
+  <line x1="330" y1="355" x2="395" y2="355" stroke="#0078D4" stroke-width="3" marker-end="url(#control-arrow)"/>
+  <line x1="330" y1="540" x2="395" y2="470" stroke="#0078D4" stroke-width="3" marker-end="url(#control-arrow)"/>
+  <line x1="805" y1="220" x2="860" y2="170" stroke="#0078D4" stroke-width="3" marker-end="url(#control-arrow)"/>
+  <line x1="805" y1="355" x2="860" y2="355" stroke="#0078D4" stroke-width="3" marker-end="url(#control-arrow)"/>
+  <line x1="805" y1="470" x2="860" y2="540" stroke="#0078D4" stroke-width="3" marker-end="url(#control-arrow)"/>
+
+  <rect x="210" y="645" width="780" height="48" rx="8" fill="#FDE7E1" stroke="#D83B01" stroke-width="2"/>
+  <text x="600" y="676" text-anchor="middle" fill="#A4262C" font-size="16" font-weight="700">The settings apply wherever a class permits this attribute.</text>
+</svg>
