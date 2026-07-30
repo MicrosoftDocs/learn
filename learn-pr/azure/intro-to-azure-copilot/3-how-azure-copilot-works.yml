@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-copilot.how-azure-copilot-works
+title: How Azure Copilot works
+metadata:
+  title: How Azure Copilot works
+  description: Learn how Azure Copilot answers questions, performs tasks, and acts on your behalf while respecting your permissions and your organization's policies.
+  ms.date: 06/23/2026
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-how-azure-copilot-works.md)]
