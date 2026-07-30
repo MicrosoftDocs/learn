@@ -6,7 +6,7 @@ metadata:
   description: Summarizes the module and provides instructions for cleaning up Azure resources.
   author: Orin-Thomas
   ms.author: orthomas
-  ms.date: 03/16/2025
+  ms.date: 07/25/2026
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
