@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.create-analyze-surface
+title: Create, communicate, and analyze with Surface and Microsoft 365
+metadata:
+  title: Create, communicate, and analyze with Surface and Microsoft 365
+  description: In this module, you'll learn how to use Microsoft Surface and Microsoft 365 to create presentations in PowerPoint, catch up on email in Outlook, and analyze data in Excel.
+  ms.date: 07/29/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  In this module, you'll learn how to use Microsoft Surface and Microsoft 365 to create presentations in PowerPoint, catch up on email in Outlook, and analyze data in Excel.
+
+abstract: |
+  By the end of this module, you'll be able to:    
+  - Create presentations in PowerPoint using Microsoft Surface and Microsoft 365.
+  - Catch up on email in Outlook using Microsoft Surface and Microsoft 365.
+  - Analyze data in Excel using Microsoft Surface and Microsoft 365.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/create-analyze-surface-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.create-analyze-surface.introduction
+  - learn.dpu.create-analyze-surface.hardware-meets-software
+  - learn.dpu.create-analyze-surface.refining-presentations-in-powerpoint
+  - learn.dpu.create-analyze-surface.catch-up-on-email-in-outlook
+  - learn.dpu.create-analyze-surface.analyze-data-in-excel
+  - learn.dpu.create-analyze-surface.knowledge-check
+  - learn.dpu.create-analyze-surface.summary
+badge:
+  uid: learn.dpu.create-analyze-surface.badge
