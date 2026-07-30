@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 830" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Decide whether AD DS should store new data</title>
+  <desc id="desc">For new data, first reuse an existing attribute only when its documented semantics match. If the data isn't directory-relevant, store it in the application's database. If it is large, binary, highly volatile, secret, or high-volume, store it elsewhere and keep only a stable identifier in Active Directory Domain Services. Otherwise, extend the schema under full governance.</desc>
+  <defs>
+    <marker id="decision-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="830" fill="#FFFFFF"/>
+  <text x="600" y="42" text-anchor="middle" fill="#1A1A1A" font-size="27" font-weight="700">Choose where new data should live</text>
+
+  <rect x="390" y="80" width="420" height="72" rx="12" fill="#FFF4CE" stroke="#8A6D1D" stroke-width="2"/>
+  <text x="600" y="124" text-anchor="middle" fill="#5C4B00" font-size="20" font-weight="700">Requirement for new data</text>
+
+  <line x1="600" y1="152" x2="600" y2="180" stroke="#0078D4" stroke-width="4" marker-end="url(#decision-arrow)"/>
+
+  <rect x="315" y="190" width="570" height="110" rx="12" fill="#F2F8FD" stroke="#0078D4" stroke-width="2"/>
+  <text x="600" y="230" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">Can an existing attribute hold the data</text>
+  <text x="600" y="262" text-anchor="middle" fill="#323130" font-size="16">with matching documented semantics?</text>
+
+  <line x1="885" y1="245" x2="940" y2="245" stroke="#0078D4" stroke-width="4" marker-end="url(#decision-arrow)"/>
+  <text x="912" y="230" text-anchor="middle" fill="#005A9E" font-size="14" font-weight="700">Yes</text>
+
+  <rect x="950" y="195" width="220" height="100" rx="12" fill="#E1EFFF" stroke="#0078D4" stroke-width="3"/>
+  <text x="1060" y="236" text-anchor="middle" fill="#005A9E" font-size="19" font-weight="700">REUSE</text>
+  <text x="1060" y="268" text-anchor="middle" fill="#323130" font-size="16">the attribute</text>
+
+  <line x1="600" y1="300" x2="600" y2="340" stroke="#0078D4" stroke-width="4" marker-end="url(#decision-arrow)"/>
+  <text x="620" y="326" fill="#005A9E" font-size="14" font-weight="700">No</text>
+
+  <rect x="315" y="350" width="570" height="110" rx="12" fill="#F2F8FD" stroke="#0078D4" stroke-width="2"/>
+  <text x="600" y="390" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">Is the data directory-relevant?</text>
+  <text x="600" y="422" text-anchor="middle" fill="#323130" font-size="16">Will directory-aware services query it?</text>
+
+  <line x1="885" y1="405" x2="940" y2="405" stroke="#0078D4" stroke-width="4" marker-end="url(#decision-arrow)"/>
+  <text x="912" y="390" text-anchor="middle" fill="#005A9E" font-size="14" font-weight="700">No</text>
+
+  <rect x="950" y="350" width="220" height="110" rx="12" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="1060" y="385" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">STORE</text>
+  <text x="1060" y="416" text-anchor="middle" fill="#323130" font-size="15">in the application's</text>
+  <text x="1060" y="442" text-anchor="middle" fill="#323130" font-size="15">own database</text>
+
+  <line x1="600" y1="460" x2="600" y2="500" stroke="#0078D4" stroke-width="4" marker-end="url(#decision-arrow)"/>
+  <text x="620" y="486" fill="#005A9E" font-size="14" font-weight="700">Yes</text>
+
+  <rect x="315" y="510" width="570" height="125" rx="12" fill="#F2F8FD" stroke="#0078D4" stroke-width="2"/>
+  <text x="600" y="553" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">Is it large, binary, highly volatile,</text>
+  <text x="600" y="585" text-anchor="middle" fill="#323130" font-size="16">secret, or high-volume?</text>
+
+  <line x1="885" y1="572" x2="920" y2="572" stroke="#0078D4" stroke-width="4" marker-end="url(#decision-arrow)"/>
+  <text x="902" y="557" text-anchor="middle" fill="#005A9E" font-size="14" font-weight="700">Yes</text>
+
+  <rect x="930" y="500" width="250" height="145" rx="12" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="1055" y="540" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">STORE ELSEWHERE</text>
+  <text x="1055" y="577" text-anchor="middle" fill="#323130" font-size="15">Keep only a stable ID</text>
+  <text x="1055" y="605" text-anchor="middle" fill="#323130" font-size="15">in AD DS</text>
+
+  <line x1="600" y1="635" x2="600" y2="685" stroke="#0078D4" stroke-width="4" marker-end="url(#decision-arrow)"/>
+  <text x="620" y="666" fill="#005A9E" font-size="14" font-weight="700">No</text>
+
+  <rect x="390" y="695" width="420" height="105" rx="12" fill="#E1EFFF" stroke="#0078D4" stroke-width="3"/>
+  <text x="600" y="738" text-anchor="middle" fill="#005A9E" font-size="20" font-weight="700">EXTEND THE SCHEMA</text>
+  <text x="600" y="772" text-anchor="middle" fill="#323130" font-size="16">under full governance</text>
+</svg>

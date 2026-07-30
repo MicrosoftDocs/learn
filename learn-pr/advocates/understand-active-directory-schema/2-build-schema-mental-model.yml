@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-schema.build-schema-mental-model
+title: Build the schema mental model
+metadata:
+  title: Build the Schema Mental Model
+  description: Relate schema classes and attributes to directory objects, values, hierarchy, and forest scope.
+  ms.date: 07/30/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-build-schema-mental-model.md)]

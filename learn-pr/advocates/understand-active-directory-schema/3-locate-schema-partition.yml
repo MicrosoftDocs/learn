@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-schema.locate-schema-partition
+title: Locate the schema partition
+metadata:
+  title: Locate the Schema Partition
+  description: Discover the schema naming context, schema master, abstract schema, cache, and forest replication scope.
+  ms.date: 07/30/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-locate-schema-partition.md)]

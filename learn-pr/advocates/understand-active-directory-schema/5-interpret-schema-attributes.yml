@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-schema.interpret-schema-attributes
+title: Interpret schema attributes
+metadata:
+  title: Interpret Schema Attributes
+  description: Interpret attribute syntax, range, cardinality, links, search behavior, catalog scope, identifiers, and system controls.
+  ms.date: 07/30/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 18
+content: |
+  [!include[](includes/5-interpret-schema-attributes.md)]
