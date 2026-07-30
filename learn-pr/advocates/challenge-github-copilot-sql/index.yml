@@ -3,7 +3,7 @@ uid: learn.challenge-github-copilot-with-sql
 metadata:
   ms.author: orthomas
   author: Orin-Thomas
-  ms.date: 06/25/2025
+  ms.date: 07/25/2026
   ms.update-cycle: 180-days
   title: Challenge GitHub Copilot with SQL
   description: Learn how to apply advanced GitHub Copilot features to interact with an application that uses complex SQL queries.
