@@ -10,6 +10,37 @@ In the following steps, you'll deploy an NVA. You'll then update the Azure virtu
 
 [!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
 
+## Create the required subnets
+
+1. The public subnet:
+
+    ```azurecli
+    az network vnet subnet create \
+        --resource-group "myResourceGroupName" \
+        --vnet-name vnet \
+        --name publicsubnet \
+        --address-prefixes 10.0.0.0/24
+    ```
+
+2. The private subnet:
+    ```azurecli
+    az network vnet subnet create \
+        --resource-group "myResourceGroupName" \
+        --vnet-name vnet \
+        --name privatesubnet \
+        --address-prefixes 10.0.1.0/24
+    ```
+
+3. The dmz subnet:
+    ```azurecli
+    az network vnet subnet create \
+        --resource-group "myResourceGroupName" \
+        --vnet-name vnet \
+        --name dmzsubnet \
+        --address-prefixes 10.0.2.0/24
+    ```
+
+
 ## Deploy the network virtual appliance
 
 To build the NVA, deploy an Ubuntu LTS instance.
