@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.rag-fundamentals.prepare-data
+title: Prepare data for retrieval
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Prepare data for retrieval
+  description: Learn how a RAG solution prepares and indexes data for retrieval.
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 07/31/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  zone_pivot_groups: video-or-text
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-prepare-data.md)]

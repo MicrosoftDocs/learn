@@ -2,9 +2,10 @@
 uid: learn.wwl.build-enterprise-tool-ecosystems-mcp-azure.design-production-mcp-server-architecture
 title: Design production MCP server architecture
 metadata:
+  zone_pivot_groups: video-or-text
   title: Design Production MCP Server Architecture
   description: "Design production MCP server architecture."
-  ms.date: 05/27/2026
+  ms.date: 7/31/2026
   author: petender
   ms.author: petender
   ms.topic: unit

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-foundry-iq.exercise
+title: Exercise - Get started with Foundry IQ in Microsoft Foundry
+metadata:
+  title: Exercise - Get started with Foundry IQ in Microsoft Foundry
+  description: "Create a knowledge-enhanced agent in Microsoft Foundry IQ."
+  ms.date: 07/31/2026
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise.md)]
