@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-microsoft-copilot-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge Check
+  title: Module Assessment
   description: This knowledge check tests your understanding of the module content.
-  ms.date: 07/03/2025
   author: Orin-Thomas
-  ms.author: viniap
+  ms.author: orthomas
+  ms.date: 07/25/2026
   ms.topic: unit
 durationInMinutes: 4
 content: Choose the best response for each question.
