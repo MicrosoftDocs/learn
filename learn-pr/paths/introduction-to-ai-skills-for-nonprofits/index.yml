@@ -3,18 +3,18 @@ uid: learn.philanthropies.introduction-to-ai-skills-for-nonprofits
 title: Introduction to AI Skills for nonprofits
 metadata:
   title: Introduction to AI Skills for nonprofits
-  description: Learn how to boost productivity with AI by understanding how to craft effective prompts with Copilot across Microsoft applications such as Word, PowerPoint, Outlook, Excel, and Teams. The AI Skills for Nonprofits collection is designed as a comprehensive skilling path to enhance the digital capabilities of nonprofit organizations. This learning path is recommended for all nonprofit professionals.
+  description: Learn how to boost productivity with AI by understanding how Microsoft Copilot works and how to craft effective prompts across Microsoft applications such as Word and Excel, plus Microsoft 365 Copilot Chat. The AI Skills for Nonprofits collection is designed as a comprehensive skilling path to enhance the digital capabilities of nonprofit organizations. This learning path is recommended for all nonprofit professionals.
   author: CourtneyHMicrosoft
-  ms.author: courtney.hodge
-  ms.date: 05/29/2024
+  ms.author: cohodge
+  ms.date: 07/28/2026
   ms.update-cycle: 180-days
   ms.topic: learning-path
   ms.collection:
     - philanthropies-ai-copilot
-summary: Learn how to boost productivity with AI by understanding how to craft effective prompts with Copilot across Microsoft applications such as Word, PowerPoint, Outlook, Excel, and Teams. The AI Skills for Nonprofits collection is designed as a comprehensive skilling path to enhance the digital capabilities of nonprofit organizations. This learning path is recommended for all nonprofit professionals.
+summary: Learn how to boost productivity with AI by understanding how Microsoft Copilot works and how to craft effective prompts across Microsoft applications such as Word and Excel, plus Microsoft 365 Copilot Chat. The AI Skills for Nonprofits collection is designed as a comprehensive skilling path to enhance the digital capabilities of nonprofit organizations. This learning path is recommended for all nonprofit professionals.
 prerequisites: None
 iconUrl: /training/achievements/generic-trophy.svg
-levels: 
+levels:
   - beginner
 roles:
   - functional-consultant
@@ -31,8 +31,9 @@ subjects:
   - artificial-intelligence
   - business-applications
 modules:
-  - learn.wwl.introduction-microsoft-365-copilot
-  - learn.wwl.explore-possibilities-microsoft-365-copilot
-  - learn.wwl.create-draft-content-with-microsoft-copilot-microsoft-365
+- learn.explore-microsoft-copilot-business-users
+- learn.wwl.draft-impactful-documents-using-ai
+- learn.wwl.uncover-new-data-insights-ai
+- learn.wwl.unlock-productivity-unleash-creativity-ai-powered-chat
 trophy:
     uid: learn.philanthropies.introduction-to-ai-skills-for-nonprofits.trophy

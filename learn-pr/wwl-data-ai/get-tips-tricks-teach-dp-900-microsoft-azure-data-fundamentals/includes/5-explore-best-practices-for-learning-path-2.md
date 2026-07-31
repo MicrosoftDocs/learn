@@ -40,5 +40,3 @@ Learning Path 2 Demo
 Learning Path 2 Labs/Exercises
 
 - Lab 01: [SQL](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-01-sql-lab.md)
-- Lab 02: [PostgreSQL](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-01a-postgresql-lab.md)
-- Lab 03: [MySQL](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-01b-mysql-lab.md) 

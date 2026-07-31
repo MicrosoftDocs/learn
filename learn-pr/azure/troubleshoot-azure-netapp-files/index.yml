@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.azure.troubleshoot-azure-netapp-files
+metadata:
+  title: Troubleshoot Azure NetApp Files
+  description: Learn to use the Diagnose and solve problems tool to troubleshoot issues of Azure NetApp Files, and learn resolutions to issues you might have when managing Azure NetApp Files resources.
+  ms.date: 07/24/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Troubleshoot Azure NetApp Files
+summary: Learn to use the Diagnose and solve problems tool to troubleshoot Azure NetApp Files issues and apply resolutions for common management problems.
+abstract: |
+  By completing this module, you'll be able to:
+  - Use diagnose and solve problems tool
+  - Troubleshooting Azure NetApp Files for various issues
+prerequisites: |
+  - Manage Azure NetApp Files Security
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+  - storage
+units:
+  - learn.azure.troubleshoot-azure-netapp-files.introduction
+  - learn.azure.troubleshoot-azure-netapp-files.diagnose-solve-problems-tool
+  - learn.azure.troubleshoot-azure-netapp-files.troubleshoot-various-issues
+  - learn.azure.troubleshoot-azure-netapp-files.exercise-troubleshoot-azure-netapp-files
+  - learn.azure.troubleshoot-azure-netapp-files.knowledge-check
+  - learn.azure.troubleshoot-azure-netapp-files.summary
+badge:
+  uid: learn.azure.troubleshoot-azure-netapp-files.badge

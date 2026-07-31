@@ -2,7 +2,7 @@ With the rapid evolution of cloud technologies, new use cases emerge every day. 
 
 # Web and Mobile Applications
 
-A main driver for cloud computing comes from web hosting. Web sites and web applications typically are hosted on a server with a dedicated internet connection. Older web hosting services either provided dedicated servers to clients or gave a fraction of a larger UNIX system to multiple clients. Now, with the advent of cloud computing, web and mobile applications can be built on top of existing IaaS, PaaS, and even SaaS services.
+A main driver for cloud computing comes from web hosting. Web sites and web applications typically are hosted on a server with a dedicated internet connection. Older web hosting services either provided dedicated servers to clients or gave a fraction of a larger UNIX system to multiple clients. Now, with the advent of cloud computing, web, and mobile applications can be built on top of existing IaaS, PaaS, and even SaaS services.
 
 - **SaaS-based**: Using the SaaS model, organizations can deploy one-size-fits-all applications on the web. Common examples include web mail, social networking sites, and utility web sites such as personal organizers, calendars, and planners.
 
@@ -12,11 +12,11 @@ A main driver for cloud computing comes from web hosting. Web sites and web appl
 
 Consider the following scenarios:
 
-- Animoto, an online video slideshow creator, decided to deploy a Facebook application. Traffic to the service surged, which resulted in Animoto scaling up from 50 servers to 3,500 servers in 3 days. Such elastic scalability is made possible through cloud computing.
+- Animoto, an online video slideshow creator, decided to deploy a Facebook application. Traffic to the service surged, which resulted in Animoto scaling up from 50 servers to 3,500 servers in three days. Such elastic scalability is made possible through cloud computing.
 
 - Online retail stores that use cloud computing, such as Amazon and Target.com, have been able to size up infrastructure for peak activity (such as the day after Thanksgiving). Salesforce.com hosts customers ranging from those with 2 seats to more than 20,000 seats, all using the same Web platform.
 
-Domino's Pizza relies on a combination of services provided by AWS and Azure to power its business. For example, it uses Azure App Service and Azure Cosmos DB -- both PaaS services -- for online ordering and delivery tracking, enabling it to scale up and down as needed to meet demand. Domino's also uses SaaS-based Microsoft Dynamics ERP to meet its enterprise resource planning needs<sup>[1][^1]</sup>.
+Domino's Pizza relies on a combination of services provided by AWS and Azure to power its business. For example, it uses Azure App Service and Azure Cosmos DB (both PaaS services) for online ordering and delivery tracking, enabling it to scale up and down as needed to meet demand. Domino's also uses SaaS-based Microsoft Dynamics ERP to meet its enterprise resource planning needs<sup>[1][^1]</sup>.
 
 # Big-Data Analytics
 
@@ -64,9 +64,9 @@ The cloud is also fueling investments in *DevOps*, which increases an organizati
 
 # Machine Learning and Artificial Intelligence
 
-Machine learning (ML) and the subset of machine learning (ML) known as artificial intelligence (AI) are touching lives every day. Credit-card companies use ML/AI models to check for fraud in real time; retailers use them to entice customers with additional purchases and forecast demand; linguists use them to translate speech in real time; restaurants use them to improve food quality<sup>3</sup>; and researchers use them to analyze the human genome for cancer indicators<sup>[4][^4]</sup>.
+Machine learning (ML) and the subset of machine learning (ML) known as artificial intelligence (AI) are touching lives every day. Credit-card companies use ML/AI models to check for fraud in real time; retailers use them to entice customers with other purchases and forecast demand; linguists use them to translate speech in real time; restaurants use them to improve food quality<sup>3</sup>; and researchers use them to analyze the human genome for cancer indicators<sup>[4][^4]</sup>.
 
-Training ML/AI models frequently requires vast quantities of compute power. One example is the *convolutional neural network* (CNN), which excels at tasks involving computer vision -- for example, determining whether a photo contains a picture of a dog or a cat. These models are typically trained with batches of images comprising billions of pixels and frequently contain 100 or more layers. Training a CNN of this size is impractical on a single computer, but is accomplished relatively efficiently on an HPC cluster equipped with GPUs to facilitate parallel processing.
+Training ML/AI models frequently requires vast quantities of compute power. One example is the *convolutional neural network* (CNN), which excels at tasks involving computer vision -- for example, determining whether a photo contains a picture of a dog or a cat. These models are typically trained with batches of images comprising billions of pixels and frequently contain 100 or more layers. Training a CNN of this size is impractical on a single computer, but is accomplished relatively efficient on an HPC cluster equipped with GPUs to facilitate parallel processing.
 
 A recent trend in cloud computing has providers making ML and AI available as SaaS services. With Azure's Custom Vision Service, for example, you can train a neural network to discriminate between cat pictures and dog pictures in a matter of minutes and at virtually no cost. Specific examples of companies that use cloud-based ML and AI services to improve their business processes include:
 
@@ -82,7 +82,7 @@ The explosion in ML and AI research, investment, advances, and applications in r
 
 1. _Microsoft (2017). *Azure's Platform as a Service is the pepperoni on the pizza for Domino's*. <https://news.microsoft.com/en-au/features/azures-platform-service-pepperoni-pizza-dominos/>_
 
-2. _Microsoft (2016). *What would you do with 100,000 cores? - Big compute at global scale*. <https://azure.microsoft.com/blog/what-would-you-do-with-100000-cores-big-compute-at-global-scale/>_
+2. _Microsoft (2016). *What would you do with 100,000 cores? - Big compute at global scale*._
 
 3. _Tom's Guide (2019). *Domino's Now Using AI and Cameras to Make \'Perfect\' Pizzas*_
 
@@ -93,8 +93,6 @@ The explosion in ML and AI research, investment, advances, and applications in r
 6. _Google. *iGenius: Creating crystal, the first virtual digital marketing advisor*. <https://cloud.google.com/customers/igenius/>_
 
 [^1]: <https://news.microsoft.com/en-au/features/azures-platform-service-pepperoni-pizza-dominos/>  "Microsoft (2017). *Azure's Platform as a Service is the pepperoni on the pizza for Domino's*."
-
-[^2]: <https://azure.microsoft.com/blog/what-would-you-do-with-100000-cores-big-compute-at-global-scale/>  "Microsoft (2016). *What would you do with 100,000 cores? - Big compute at global scale*."
 
 [^4]: <https://www.sciencedirect.com/science/article/pii/S2001037014000464>  "Computational and Structural Biotechnology Journal (2015). *Machine learning applications in cancer prognosis and prediction*."
 

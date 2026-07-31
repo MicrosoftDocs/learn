@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-schema.interpret-object-classes
+title: Interpret object classes
+metadata:
+  title: Interpret Object Classes
+  description: Interpret class categories, inheritance, effective attributes, legal parents, identifiers, and default security.
+  ms.date: 07/30/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-interpret-object-classes.md)]

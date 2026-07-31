@@ -4,7 +4,7 @@ title: Prevent data exfiltration from Azure AI Workloads
 metadata:
   title: Prevent Data Exfiltration From Azure AI Workloads
   description: Understand data exfiltration risks in Azure AI workloads and how to mitigate them.
-  ms.date: 07/01/2025
+  ms.date: 07/25/2026
   author: Orin-Thomas
   ms.author: viniap
   ms.topic: unit

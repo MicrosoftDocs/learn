@@ -218,4 +218,4 @@ _A = Accountable, R = Responsible, C = Consulted_
 
 - [Manage AI agents (operate)](/azure/cloud-adoption-framework/ai-agents/integrate-manage-operate) 
 
-- [CAF AI adoption (GitHub source)](https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai/index.md)
+- [CAF AI adoption (GitHub source)](https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/index.md)

@@ -126,7 +126,7 @@ Let's run the `show-report` command and note how the report now only shows us th
 
 ## Explore Emulation
 
-Playwright supports [Emulation](https://playwright.dev/docs/emulation) for mobile testing. You can select device profiles from the [supported emulation profiles](https://github.com/microsoft/playwright/blob/main/packages/playwright-core/src/server/deviceDescriptorsSource.json) and add it as a new project in the configuration file.
+Playwright supports [Emulation](https://playwright.dev/docs/emulation) for mobile testing. You can select device profiles from the [supported emulation profiles](https://github.com/microsoft/playwright/blob/main/packages/isomorphic/deviceDescriptorsSource.json) and add it as a new project in the configuration file.
 
 You might notice that the default configuration file (*playwright.config.ts*) has a commented-out section for testing against mobile viewports. Let's uncomment out the project for Mobile Safari.
 
@@ -144,7 +144,7 @@ You might notice that the default configuration file (*playwright.config.ts*) ha
   ],
 ```
 
-Here's what the [profile description](https://github.com/microsoft/playwright/blob/main/packages/playwright-core/src/server/deviceDescriptorsSource.json) for the iPhone 12 Pro looks like:
+Here's what the [profile description](https://github.com/microsoft/playwright/blob/main/packages/isomorphic/deviceDescriptorsSource.json) for the iPhone 12 Pro looks like:
 
 ```json
   "iPhone 12 Pro": {
