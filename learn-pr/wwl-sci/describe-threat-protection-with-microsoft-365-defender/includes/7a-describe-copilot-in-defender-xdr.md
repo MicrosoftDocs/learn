@@ -164,9 +164,9 @@ The Phishing Triage Agent requires Microsoft Defender for Office 365 Plan 2 and 
 
 The **Threat Intelligence Briefing Agent** provides security operations teams with regular, customized threat intelligence briefings. The agent autonomously gathers and synthesizes relevant threat intelligence data from various sources in Microsoft Defender Threat Intelligence and delivers concise, actionable insights to help analysts stay informed about emerging threats. Rather than requiring analysts to manually review threat reports across multiple consoles, the agent surfaces the threat intelligence most relevant to your organization on an ongoing basis.
 
-### Threat Hunting Agent
+### Threat Hunting Assistant
 
-The **Threat Hunting Agent** is an AI-powered agent available in advanced hunting that enables analysts to investigate threats using natural language from start to finish. Rather than requiring deep Kusto Query Language (KQL) expertise, the agent transforms natural-language questions into KQL queries, interprets the results, surfaces contextual insights, and guides analysts through complete hunting sessions. The agent maintains context throughout a session, enabling follow-up questions that build on previous ones, and provides smart suggestions to help drive the investigation forward. These capabilities empower analysts of all levels to hunt threats faster and with greater confidence.
+The **Threat Hunting Assistant** is an AI-powered agent available in advanced hunting that enables analysts to investigate threats using natural language from start to finish. Rather than requiring deep Kusto Query Language (KQL) expertise, the agent transforms natural-language questions into KQL queries, interprets the results, surfaces contextual insights, and guides analysts through complete hunting sessions. The agent maintains context throughout a session, enabling follow-up questions that build on previous ones, and provides smart suggestions to help drive the investigation forward. These capabilities empower analysts of all levels to hunt threats faster and with greater confidence.
 
 ### Dynamic Threat Detection Agent
 
