@@ -118,15 +118,9 @@ Group scope controls both valid membership plus where a GPO permission can be gr
 | Universal | Accounts, Global groups, plus Universal groups from any domain in the same forest | Can be granted permission forest-wide plus in trusting forests. Global Catalog or Universal Group Membership Caching plus token-creation timing matter only when Universal membership is part of the path |
 | Domain Local | Accounts, Global groups, plus Universal groups from any domain or trusted forest; Domain Local groups only from the same domain | Grants permission only in its own domain. For a GPO access control list, use a Domain Local group in the GPO or resource domain |
 
-Read-only membership plus permission evidence:
+Read-only membership plus permission evidence `whoami /groups`
 
-**Prerequisites:** `[Built-in] [affected user's relevant logon session] [Read-only] [current user token only]`
-
-```console
-whoami /groups
-```
-
-**Prerequisites:** `[RSAT-ADDS] [directory Read on named DC] [Read-only] [sensitive identities]`; recursive output flattens leaves
+In PowerShell:
 
 ```powershell
 # First hop; repeat for each nested child group to retain the path.
@@ -140,7 +134,7 @@ Get-ADGroupMember -Identity 'GPO-AppServers-Apply' -Recursive `
     Select-Object Name,ObjectClass,DistinguishedName,SID
 ```
 
-**Prerequisites:** `[RSAT-GP] [GPO Read on named DC] [Read-only] [sensitive trustees]`; not effective-access or raw-ACL proof
+Determine permissions:
 
 ```powershell
 $permissionQuery = @{
