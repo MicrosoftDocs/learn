@@ -8394,3 +8394,28 @@ achievements:
   title: Understand the MySQL storage engine
   summary: Learn about MySQL’s pluggable storage engine model, common storage engines, and storage engines supported by Azure Database for MySQL.
   iconUrl: /training/achievements/understand-mysql-storage-engine.svg
+- uid: learn.wwl.az-204-implement-authentication-authorization.trophy
+  type: trophy
+  title: Implement user authentication and authorization
+  summary: Learn how to implement authentication and authorization to resources by using the Microsoft identity platform, Microsoft Authentication Library, shared access signatures, and use Microsoft Graph.
+  iconUrl: /training/achievements/authentication-authorization.svg
+- uid: learn.wwl.az-204-implement-secure-cloud-solutions.trophy
+  type: trophy
+  title: Implement secure Azure solutions
+  summary: Learn how to more securely deploy apps in Azure by using Azure Key Vault, managed identities, and Azure App Configuration.
+  iconUrl: /training/achievements/cloud-solutions-implement.svg
+- uid: learn.wwl.explore-microsoft-identity-platform.badge
+  type: badge
+  title: Explore the Microsoft identity platform
+  summary: Learn the core features and functionality of the Microsoft identity platform including authentication, libraries, and app management tools.
+  iconUrl: /training/achievements/identity-platform-explore.svg
+- uid: learn.wwl.implement-azure-key-vault.badge
+  type: badge
+  title: Implement Azure Key Vault
+  summary: Learn how Azure Key Vault can help you keep your apps more secure, and how to set and retrieve secrets programmatically, and with Azure CLI.
+  iconUrl: /training/achievements/azure-key-vault-implement.svg
+- uid: learn.wwl.implement-managed-identities.badge
+  type: badge
+  title: Implement managed identities
+  summary: Learn how managed identities can help you deploy secure solutions on Azure without the need to manage credentials.
+  iconUrl: /training/achievements/manage-identities-implement.svg
