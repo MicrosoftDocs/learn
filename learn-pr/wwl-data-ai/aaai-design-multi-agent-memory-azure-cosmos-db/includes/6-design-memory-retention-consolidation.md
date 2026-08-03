@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e7535e19-6937-4b17-b964-e05123f3625d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB's tiered storage options let you move patient memories between hot, warm, and cold tiers as clinical activity and regulatory requirements change. Lifecycle management policies determine when memories get consolidated into compact semantic summaries, when they move to lower-cost storage, and when they get permanently deleted to satisfy HIPAA or patient-requested deletion requirements.
 
 | Lifecycle Stage | Trigger | Action | Compliance Rationale |
@@ -217,3 +228,5 @@ Focus on what remains consistent, not specific dates or one-time details."""
 - **Tiered retention policies** apply different expiration rules based on patient activity—active patients retain memories longer than inactive ones, preventing useful context from being pruned prematurely.
 - **Automated pruning** removes low-importance, old memories using scheduled batch jobs that evaluate both importance scores and age against configurable thresholds.
 - **Memory consolidation** transforms multiple episodic memories into higher-level semantic patterns using LLM summarization—reducing storage and context window costs while preserving behavioral insights.
+
+::: zone-end
