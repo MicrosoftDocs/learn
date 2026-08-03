@@ -185,6 +185,26 @@ achievements:
   title: Analyze monitoring data with Kusto Query Language
   summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.administer-endpoint-applications.badge
+  type: badge
+  title: Administer endpoint applications
+  summary: Learn how to manage applications on Intune-managed devices, deploy Microsoft 365 Apps, configure Internet Explorer mode in Microsoft Edge, and review app inventory options.
+  iconUrl: /training/achievements/administer-endpoint-applications.svg
+- uid: learn.wwl.deploy-applications.badge
+  type: badge
+  title: Deploy and update applications
+  summary: In this module, you'll master deploying applications using Intune, Configuration Manager, Group Policy, and Microsoft Store Apps. These powerful tools and techniques will equip you to manage and maintain diverse applications across your organization effectively.
+  iconUrl: /training/achievements/deploy-and-update-applications.svg
+- uid: learn.wwl.execute-mobile-application-management.badge
+  type: badge
+  title: Execute mobile application management
+  summary: This module introduces Mobile Application Management (MAM). Students will learn about considerations for implementing MAM and will be introduced to the management of MAM using Intune and Configuration Manager.
+  iconUrl: /training/achievements/execute-mobile-application-management.svg
+- uid: learn.wwl.examine-application-management.trophy
+  type: trophy
+  title: MD-102 Examine application management
+  summary: Learners will examine application management methods using on-premises and cloud-based solutions.
+  iconUrl: /training/achievements/examine-application-management.svg
 - uid: learn.wwl.explore-iot-hub-monitoring.badge
   type: badge
   title: Guided project - Explore Azure IoT Hub monitoring
