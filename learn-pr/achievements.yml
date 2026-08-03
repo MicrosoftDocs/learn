@@ -8419,3 +8419,23 @@ achievements:
   title: Implement managed identities
   summary: Learn how managed identities can help you deploy secure solutions on Azure without the need to manage credentials.
   iconUrl: /training/achievements/manage-identities-implement.svg
+- uid: learn.wwl.implement-authentication-by-using-microsoft-authentication-library.badge
+  type: badge
+  title: Implement authentication by using the Microsoft Authentication Library
+  summary: Learn how to implement authentication by using the Microsoft Authentication Library.
+  iconUrl: /training/achievements/authentication-library.svg
+- uid: learn.wwl.implement-azure-app-configuration.badge
+  type: badge
+  title: Implement Azure App Configuration
+  summary: Learn how to use Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features.
+  iconUrl: /training/achievements/azure-app-implement-configuration.svg
+- uid: learn.wwl.implement-shared-access-signatures.badge
+  type: badge
+  title: Implement shared access signatures
+  summary: Learn how to use shared access signatures to authorize access to storage resources.
+  iconUrl: /training/achievements/signatures-shared-access.svg
+- uid: learn.wwl.microsoft-graph.badge
+  type: badge
+  title: Explore Microsoft Graph
+  summary: Learn how Microsoft Graph facilitates the access and flow of data and how to form queries through REST and code.
+  iconUrl: /training/achievements/microsoft-graph-explore.svg
