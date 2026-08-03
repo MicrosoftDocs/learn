@@ -7,7 +7,7 @@ metadata:
   author: Randall-Knapp
   ms.author: erzelman
   ms.topic: module
-  ms.service: azure-ai-translator
+  ms.service: azure-translator-foundry-tools
 title: "Support multilingual and accessible family communication"
 summary: Educators will explore practical ways to communicate clearly and inclusively with families using translation, accessibility, and AI tools while keeping professional judgment and relationships at the center.
 abstract: |
