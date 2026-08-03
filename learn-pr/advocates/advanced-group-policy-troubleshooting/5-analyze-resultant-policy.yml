@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.advanced-group-policy-troubleshooting.analyze-resultant-policy
+title: Analyze resultant policy and effective state
+metadata:
+  title: Analyze Resultant Policy and Effective State
+  description: Use Modeling, Results, gpresult, PowerShell, processing evidence, and subsystem tools to distinguish resultant policy from effective state and application behavior.
+  ms.date: 08/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-analyze-resultant-policy.md)]
