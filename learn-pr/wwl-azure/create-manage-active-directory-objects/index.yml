@@ -12,7 +12,7 @@ metadata:
   ms.collection: N/A
   ms.custom:
   - N/A
-  ms.service: azure-active-directory
+  ms.service: entra-id
   ai-usage: ai-assisted
 title: Create and manage Active Directory objects
 summary: This module focuses on the tasks associated with creating and managing Active Directory objects and AD domain services domain controllers.
