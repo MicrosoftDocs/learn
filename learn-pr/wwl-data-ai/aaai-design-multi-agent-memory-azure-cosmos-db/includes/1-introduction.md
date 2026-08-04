@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f6fe9a95-cf6a-4d32-afe4-865b06c65a76]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Northwind Health's clinical agents assist with patient consultations, medication reviews, and diagnostic discussions. When a patient returns for a follow-up visit three weeks later, the agent starts fresh—no memory of previous conversations, concerns the patient raised, or preferences they expressed. The clinician must manually brief the agent on the patient's history, wasting time and risking that important context gets omitted. Without memory, agents can't provide the continuity of care that patients expect and that quality healthcare requires.
 
 Effective clinical agents are built around several capability layers—how the agent reasons through complex queries, what external tools it can invoke, and where it retrieves clinical information. This module adds the layer that gives agents continuity across sessions: memory. Reasoning chains invoke tools and retrieve knowledge for each session, but without memory, every session is independent. Memory ties the other layers together by giving the agent context that persists across encounters: patient preferences, tool results worth remembering, and knowledge retrieval patterns that improve over time.
@@ -12,3 +20,8 @@ Multi-agent systems require **multi-tier state persistence** \u2014 different ty
 > The Foundry Responses API (`azure-ai-projects` 2.x) is **stateless by default**: each call to `project.get_openai_client().responses.create()` processes only the input you provide and returns a response, with no server-side conversation history retained between calls. In this mode, **all three memory tiers become application-managed**. Your application is responsible for building the context window on every call: injecting working memory (recent conversation history), retrieving relevant episodic memories (past interaction records), and surfacing semantic memories (patient patterns and preferences). The server-managed Thread/Run model (`project.get_openai_client().beta.threads.*`) handles session-state accumulation automatically, but episodic and semantic memories still require the application-managed architecture this module teaches. Understanding which mode your agents use determines which memory tiers you must implement and which the platform handles for you.
 
 In this module, you design and implement memory architectures that enable agents to recall relevant information from past interactions. You understand the differences between working memory, episodic memory, and semantic memory, and when each type serves agent requirements. You implement semantic memory using Azure Cosmos DB's vector search capabilities to retrieve contextually relevant past observations. You optimize context window usage by selecting which memories to inject based on relevance and importance. You design memory lifecycle policies that balance retention requirements with privacy compliance and cost management. By the end of this module, you build memory systems that give agents the continuity and context needed for effective clinical decision support.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

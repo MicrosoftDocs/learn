@@ -11,6 +11,196 @@
       "redirect_document_id": false
     },       
     {
+      "source_path_from_root": "/learn-pr/paths/examine-application-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.administer-endpoint-applications.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.deploy-applications.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.examine-application-management.trophy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.execute-mobile-application-management.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/2-examine-mobile-application-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/3-examine-considerations-mobile-application-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/4-prepare-line-of-business-apps-app-protection-policies.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/5-implement-mobile-application-management-policies-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/6-manage-mobile-application-management-policies-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/10-update-microsoft-store-apps-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/11-assign-apps-company-employees.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/12-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/13-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/2-deploy-applications-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/3-add-apps-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/4-manage-window-32-apps-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/5-deploy-applications-configuration-manager.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/6-deploy-applications-group-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/7-assign-publish-software.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/8-explore-microsoft-store-business.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/9-implement-microsoft-store-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/2-manage-apps-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/3-manage-apps-non-enrolled-devices.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/4-deploy-microsoft-365-apps-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/5-additional-microsoft-365-apps-deployment-tools.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/6-configure-microsoft-edge-internet-explorer-mode.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/7-app-inventory-review.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/aks-app-scale-keda/7-exercise-deploy-scale-object.yml",
       "redirect_url": "/training/modules/configure-scaling-azure-kubernetes-service/",
       "redirect_document_id": false
