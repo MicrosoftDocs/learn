@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-domain-name-system.trace-domain-controller
+title: Trace domain controller
+metadata:
+  title: Trace Domain Controller
+  description: Trace Domain Name System discovery, locator ping, site selection, automatic site coverage, and caching.
+  ms.date: 08/03/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-trace-domain-controller.md)]

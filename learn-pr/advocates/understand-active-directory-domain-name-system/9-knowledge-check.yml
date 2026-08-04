@@ -1,0 +1,68 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-domain-name-system.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Assess service discovery, site selection, replication scope, secure update, client configuration, and verification.
+  ms.date: 08/03/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "A member resolves `bne-dc1.corp.contoso.com` but `nltest /dsgetdc:corp.contoso.com /force` fails. Which test best targets the next dependency?"
+    choices:
+    - content: "Query the reverse zone for the member's pointer record."
+      isCorrect: false
+      explanation: "Reverse lookup isn't the core domain controller locator mechanism."
+    - content: "Query `_ldap._tcp.dc._msdcs.corp.contoso.com` for service location records through the member's configured resolver."
+      isCorrect: true
+      explanation: "A host lookup doesn't prove directory service location. The exact locator query tests the next dependency. A later `/force` reruns DC Locator discovery but doesn't prove resolver-cache bypass or authoritative, current DNS data."
+    - content: "Clear every resolver cache then retry sign-in."
+      isCorrect: false
+      explanation: "Cache clearing changes evidence without identifying whether the locator record or resolver path is wrong."
+  - content: "A branch site has no local domain controller, yet its site-specific service query returns a domain controller from another site. What is the most likely valid explanation?"
+    choices:
+    - content: "The service record proves that the domain controller physically resides in the branch site."
+      isCorrect: false
+      explanation: "A site-specific record can reflect automatic coverage rather than physical site membership."
+    - content: "The client must ignore the answer because site-specific records can contain only local targets."
+      isCorrect: false
+      explanation: "Covered sites can legitimately return remote targets."
+    - content: "Automatic site coverage registered a suitable domain controller for the uncovered site."
+      isCorrect: true
+      explanation: "Automatic site coverage can advertise a domain controller for a site without a local domain controller."
+  - content: "Two authoritative servers return different host data for a directory-integrated zone immediately after a secure update. Which evidence should you collect next?"
+    choices:
+    - content: "Application directory partition replication state plus direct answers from both servers."
+      isCorrect: true
+      explanation: "Direct answers show whether this tested record differs, and application directory partition replication evidence can explain the difference. Matching records or a clean summary alone don't prove complete partition or object convergence."
+    - content: "Public recursive resolver cache contents."
+      isCorrect: false
+      explanation: "Public recursion isn't the distribution path for the internal directory-integrated zone."
+    - content: "A conventional primary-to-secondary zone transfer log."
+      isCorrect: false
+      explanation: "Directory-integrated replicas use Active Directory replication rather than the ordinary zone transfer topology."
+  - content: "A client can't update a record that a Dynamic Host Configuration Protocol service account created. The zone uses secure updates. What is the best first action?"
+    choices:
+    - content: "Enable nonsecure updates."
+      isCorrect: false
+      explanation: "This weakens zone security and bypasses rather than fixes the ownership model."
+    - content: "Inspect record ownership, access control, plus the intended registration identity."
+      isCorrect: true
+      explanation: "Secure update authorization depends on the intended authenticated identity, ownership, plus permissions. A successful update test by another account doesn't prove that this client can update the existing record."
+    - content: "Enable aggressive scavenging."
+      isCorrect: false
+      explanation: "Scavenging doesn't correct update authorization and can remove valid records."
+  - content: "After correcting an affected member's resolver list, which verification set best proves recovery?"
+    choices:
+    - content: "Successful `ping` to one domain controller."
+      isCorrect: false
+      explanation: "Ping doesn't prove service location, locator ping, authentication, or directory operation success."
+    - content: "Successful resolution of a public web name."
+      isCorrect: false
+      explanation: "Public name resolution doesn't test the internal directory namespace."
+    - content: "Exact locator query, forced domain controller location, original directory operation, plus replication validation when zone inconsistency was involved."
+      isCorrect: true
+      explanation: "This verifies the dependency chain and the reported symptom rather than a proxy. Add affected-object replication validation only when authoritative inconsistency was involved."
