@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-domain-name-system.explain-directory-service-dependency
+title: Explain the directory service dependency
+metadata:
+  title: Explain the Directory Service Dependency
+  description: Explain how directory operations depend on Domain Name System service discovery.
+  ms.date: 08/03/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-explain-directory-service-dependency.md)]
