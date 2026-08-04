@@ -2,7 +2,7 @@ Microsoft SQL Server’s Transparent Data Encryption (TDE) encrypts all data wit
 
 TDE doesn't encrypt data at the table or column level. Anyone with the appropriate permissions can read, copy, and share the data. Encryption at rest protects against restoring a backup to an unsecured server or copying database and transaction log files to another unsecured server. No decryption occurs during the backup operation.
 
-TDE protects data at rest and complies with various industry laws, regulations, and guidelines. It allows software developers to encrypt data using AES and 3DES encryption algorithms without changing existing applications.
+TDE protects data at rest and complies with various industry laws, regulations, and guidelines. It allows software developers to encrypt data using AES encryption algorithms without changing existing applications.
 
 :::image type="content" source="../media/module-33-security-final-05-1.png" alt-text="Diagram showing the Transparent Data Encryption architecture.":::
 
@@ -68,7 +68,7 @@ You can also take advantage of using a [user-assigned managed identity (UMI)](/a
 - Enables the same user-assigned managed identity to be assigned to multiple servers, eliminating the need to individually turn on system-assigned managed identity for each Azure SQL logical server and providing it access to key vault.
 - Provides the capability to enforce CMK at server creation time with an available built-in Azure policy.
 
-[Automatic key rotation](/azure/azure-sql/database/transparent-data-encryption-byok-key-rotation#automatic-key-rotation) are introduced for customer-managed keys using TDE. When enabled, the server continuously checks the key vault for any new versions of the key being used as the TDE protector. If a new version of the key is detected, the TDE protector on the server is automatically rotated to the latest key version within 60 minutes.
+[Automatic key rotation](/azure/azure-sql/database/transparent-data-encryption-byok-key-rotation#automatic-key-rotation) are introduced for customer-managed keys using TDE. When enabled, the server continuously checks the key vault for any new versions of the key being used as the TDE protector. If a new version of the key is detected, the TDE protector on the server is automatically rotated to the latest key version within 24 hours.
 
 ## Azure disk encryption
 

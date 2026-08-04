@@ -6,6 +6,151 @@
       "redirect_document_id": false
     },      
     {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.configure-profiles-user-device.trophy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.execute-device-profiles.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-device-profiles-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.maintain-user-profiles.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.oversee-device-profiles.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/configure-profiles-user-device/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-device-profiles/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-device-profiles-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-device-profiles/2-explore-intune-device-profiles.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-device-profiles-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-device-profiles/3-create-device-profiles.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-device-profiles-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-device-profiles/4-create-custom-device-profile.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-device-profiles-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-device-profiles/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-device-profiles-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-device-profiles/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-device-profiles-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-device-profiles/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-device-profiles-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/maintain-user-profiles/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/maintain-user-profiles/2-examine-user-profile.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/maintain-user-profiles/3-explore-user-profile-types.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/maintain-user-profiles/4-examine-options-minimizing-user-profile-size.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/maintain-user-profiles/5-deploy-configure-folder-redirection.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/maintain-user-profiles/6-sync-user-state-enterprise-state-roaming.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/maintain-user-profiles/7-configure-enterprise-state-roaming-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/maintain-user-profiles/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/maintain-user-profiles/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/maintain-user-profiles/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/oversee-device-profiles/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/oversee-device-profiles/2-monitor-device-profiles-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/oversee-device-profiles/3-manage-device-sync-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/oversee-device-profiles/4-manage-devices-intune-use-scripts.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/oversee-device-profiles/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/oversee-device-profiles/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/oversee-device-profiles/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-maintain-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/aks-app-scale-keda/8-summary.yml",
       "redirect_url": "/training/modules/configure-scaling-azure-kubernetes-service/",
       "redirect_document_id": false
