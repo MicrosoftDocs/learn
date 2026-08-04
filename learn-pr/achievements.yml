@@ -8484,3 +8484,28 @@ achievements:
   title: Implement Azure Functions
   summary: Learn how to create and deploy Azure Functions. Explore hosting options, bindings, and triggers.
   iconUrl: /training/achievements/az-204-implement-azure-functions.svg
+- uid: learn.wwl.create-run-container-images-azure-container-instances.badge
+  type: badge
+  title: Run container images in Azure Container Instances
+  summary: Learn how Azure Container Instances can help you quickly deploy containers, how to set environment variables, and specify container restart policies.
+  iconUrl: /training/achievements/azure-container-instances-images.svg
+- uid: learn.wwl.develop-azure-functions.badge
+  type: badge
+  title: Develop Azure Functions
+  summary: Learn how to create and deploy Azure Functions.
+  iconUrl: /training/achievements/2-develop-azure-functions.svg
+- uid: learn.wwl.implement-azure-container-apps.badge
+  type: badge
+  title: Implement Azure Container Apps
+  summary: Learn how Azure Container Apps can help you deploy and manage microservices and containerized apps on a serverless platform that runs on top of Azure Kubernetes Service.
+  iconUrl: /training/achievements/implement-azure-container-apps.svg
+- uid: learn.wwl.publish-container-image-to-azure-container-registry.badge
+  type: badge
+  title: Manage container images in Azure Container Registry
+  summary: Learn how to use Azure Container Registry to store your container images, and automate builds and deployments.
+  iconUrl: /training/achievements/azure-container-registry-publish.svg
+- uid: learn.wwl.work-with-cosmos-db.badge
+  type: badge
+  title: Work with Azure Cosmos DB
+  summary: Learn how to develop client and server-side programming solutions on Azure Cosmos DB.
+  iconUrl: /training/achievements/3-work-with-azure-cosmos-db.svg
