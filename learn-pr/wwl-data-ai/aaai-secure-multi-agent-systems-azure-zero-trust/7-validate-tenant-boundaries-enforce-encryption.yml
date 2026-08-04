@@ -2,9 +2,10 @@
 uid: learn.wwl.secure-multi-agent-systems-azure-zero-trust.validate-tenant-boundaries-enforce-encryption
 title: Validate tenant boundaries and enforce encryption
 metadata:
+  zone_pivot_groups: video-or-text
   title: Validate Tenant Boundaries and Enforce Encryption
   description: "Validate tenant boundaries and enforce encryption."
-  ms.date: 06/01/2026
+  ms.date: 8/3/2026
   author: petender
   ms.author: petender
   ms.topic: unit

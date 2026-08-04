@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=07550efd-76b6-418b-bc24-06bcc471130a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB partition keys provide database-layer tenant isolation, ensuring each customer's data is physically scoped to their own partition even when agents share infrastructure. In this unit, you propagate tenant context through every agent operation and enforce isolation at the data access layer.
 
 | Isolation Model | Security Level | Cost Efficiency | Update Complexity |
@@ -194,3 +205,5 @@ Because the container uses `tenant_id` as the partition key, Cosmos DB physicall
 - **Tenant isolation architecture** choices range from shared containers with partition keys (cost-effective) to separate accounts (maximum isolation)—select based on your threat model and compliance requirements.
 - **Tenant context propagation** ensures every operation carries the tenant identifier from the initial request through all agent-to-agent calls, preventing context-free operations that could leak data.
 - **Data access enforcement** validates tenant scope at the database query level, ensuring queries are physically scoped to a single tenant's partition and never span tenant boundaries.
+
+::: zone-end
