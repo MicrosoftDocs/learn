@@ -2,9 +2,10 @@
 uid: learn.wwl.implement-cicd-multi-agent-systems-github-actions.implement-progressive-deployment-strategies
 title: Implement progressive deployment strategies
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement Progressive Deployment Strategies
   description: "Implement progressive deployment strategies."
-  ms.date: 06/01/2026
+  ms.date: 8/3/2026
   author: petender
   ms.author: petender
   ms.topic: unit
