@@ -8459,3 +8459,28 @@ achievements:
   title: Explore Microsoft Graph
   summary: Learn how Microsoft Graph facilitates the access and flow of data and how to form queries through REST and code.
   iconUrl: /training/achievements/microsoft-graph-explore.svg
+- uid: learn.wwl.az-204-develop-solutions-that-use-azure-cosmos-db.trophy
+  type: trophy
+  title: Develop solutions that use Azure Cosmos DB
+  summary: Learn how to create Azure Cosmos DB resources with the appropriate consistency levels, and perform data operations by using the .NET SDK V3 for Azure Cosmos DB.
+  iconUrl: /training/achievements/az-204-develop-solutions-that-use-azure-cosmos-db.svg
+- uid: learn.wwl.az-204-implement-iaas-solutions.trophy
+  type: trophy
+  title: Implement containerized solutions
+  summary: Learn how to create and deploy containerized solutions to Azure by using the Azure Container Registry, Azure Container Instances, and Azure Container Apps.
+  iconUrl: /training/achievements/iaas-implement-solutions.svg
+- uid: learn.wwl.explore-azure-cosmos-db.badge
+  type: badge
+  title: Explore Azure Cosmos DB
+  summary: Learn the core features and functionality of Azure Cosmos DB.
+  iconUrl: /training/achievements/1-explore-azure-cosmos-db.svg
+- uid: learn.wwl.explore-azure-functions.badge
+  type: badge
+  title: Explore Azure Functions
+  summary: Learn how Azure Functions can be a great solution for data processing, systems integration, and building simple APIs and microservices.
+  iconUrl: /training/achievements/1-explore-azure-functions.svg
+- uid: learn.wwl.implement-azure-functions.trophy
+  type: trophy
+  title: Implement Azure Functions
+  summary: Learn how to create and deploy Azure Functions. Explore hosting options, bindings, and triggers.
+  iconUrl: /training/achievements/az-204-implement-azure-functions.svg
