@@ -9,7 +9,7 @@ metadata:
   ms.author: masoucou
   manager: coxford
   ms.topic: module
-  ms.service: dotnet-mobile
+  ms.service: dotnet-mobile-development
   ms.subservice: dotnet-maui
 title: Design consistent .NET MAUI XAML pages by using shared resources
 summary: "Learn how to use shared resources and styles in .NET MAUI Extensible Application Markup Language (XAML)."

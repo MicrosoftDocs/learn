@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a6b8d7a9-76d8-4755-ac83-66d4bf1f086e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry supports supervised fine-tuning, Direct Preference Optimization, and Reinforcement Fine-Tuning so you can specialize models for domain-specific tasks when prompt engineering alone is insufficient. In this unit, you design a fine-tuning strategy and build the data preparation pipeline that supports it.
 
 Northwind Health's clinical reasoning agent handles 200 different chronic disease management scenarios. Prompt engineering has covered 80% of scenarios well—clear chain-of-thought architecture, structural delimiters, system-prompt constraints, and guardrails. But 20% of scenarios involve highly specialized clinical terminology and reasoning patterns that general-purpose models handle inconsistently. The prompt has become a 4,000-token instruction set trying to teach the model clinical reasoning conventions that a fine-tuned model would internalize. Prompt length is increasing latency and cost for every request, including the 80% that didn't need the extra instructions.
@@ -99,3 +110,5 @@ Before training, allocate your curated dataset:
 Fine-tuning datasets must be versioned alongside model versions. When a production incident traces to a training data problem, you need to identify exactly which dataset version trained the affected model. Use the same version-manifest pattern as your agent versioning practice. Store the dataset hash, training example count, source collection date range, curation filter configuration, and evaluator IDs for the clinicians who reviewed corrections.
 
 Azure Machine Learning Data Assets provide versioned dataset storage with lineage tracking—the training run records which dataset version it consumed, creating a traceable chain from production incident → model version → training dataset → specific problematic examples.
+
+::: zone-end

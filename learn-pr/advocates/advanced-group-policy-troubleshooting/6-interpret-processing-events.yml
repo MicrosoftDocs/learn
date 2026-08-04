@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.advanced-group-policy-troubleshooting.interpret-processing-events
+title: Interpret event logs and client-side extension failures
+metadata:
+  title: Interpret Event Logs and Client-Side Extension Failures
+  description: Correlate Group Policy events by Activity ID, interpret client-side extension outcomes, export evidence, and use temporary service or extension tracing safely.
+  ms.date: 08/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 16
+content: |
+  [!include[](includes/6-interpret-processing-events.md)]

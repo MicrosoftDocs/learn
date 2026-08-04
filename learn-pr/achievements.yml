@@ -185,6 +185,26 @@ achievements:
   title: Analyze monitoring data with Kusto Query Language
   summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.administer-endpoint-applications.badge
+  type: badge
+  title: Administer endpoint applications
+  summary: Learn how to manage applications on Intune-managed devices, deploy Microsoft 365 Apps, configure Internet Explorer mode in Microsoft Edge, and review app inventory options.
+  iconUrl: /training/achievements/administer-endpoint-applications.svg
+- uid: learn.wwl.deploy-applications.badge
+  type: badge
+  title: Deploy and update applications
+  summary: In this module, you'll master deploying applications using Intune, Configuration Manager, Group Policy, and Microsoft Store Apps. These powerful tools and techniques will equip you to manage and maintain diverse applications across your organization effectively.
+  iconUrl: /training/achievements/deploy-and-update-applications.svg
+- uid: learn.wwl.execute-mobile-application-management.badge
+  type: badge
+  title: Execute mobile application management
+  summary: This module introduces Mobile Application Management (MAM). Students will learn about considerations for implementing MAM and will be introduced to the management of MAM using Intune and Configuration Manager.
+  iconUrl: /training/achievements/execute-mobile-application-management.svg
+- uid: learn.wwl.examine-application-management.trophy
+  type: trophy
+  title: MD-102 Examine application management
+  summary: Learners will examine application management methods using on-premises and cloud-based solutions.
+  iconUrl: /training/achievements/examine-application-management.svg
 - uid: learn.wwl.explore-iot-hub-monitoring.badge
   type: badge
   title: Guided project - Explore Azure IoT Hub monitoring
@@ -8394,3 +8414,48 @@ achievements:
   title: Understand the MySQL storage engine
   summary: Learn about MySQL’s pluggable storage engine model, common storage engines, and storage engines supported by Azure Database for MySQL.
   iconUrl: /training/achievements/understand-mysql-storage-engine.svg
+- uid: learn.wwl.az-204-implement-authentication-authorization.trophy
+  type: trophy
+  title: Implement user authentication and authorization
+  summary: Learn how to implement authentication and authorization to resources by using the Microsoft identity platform, Microsoft Authentication Library, shared access signatures, and use Microsoft Graph.
+  iconUrl: /training/achievements/authentication-authorization.svg
+- uid: learn.wwl.az-204-implement-secure-cloud-solutions.trophy
+  type: trophy
+  title: Implement secure Azure solutions
+  summary: Learn how to more securely deploy apps in Azure by using Azure Key Vault, managed identities, and Azure App Configuration.
+  iconUrl: /training/achievements/cloud-solutions-implement.svg
+- uid: learn.wwl.explore-microsoft-identity-platform.badge
+  type: badge
+  title: Explore the Microsoft identity platform
+  summary: Learn the core features and functionality of the Microsoft identity platform including authentication, libraries, and app management tools.
+  iconUrl: /training/achievements/identity-platform-explore.svg
+- uid: learn.wwl.implement-azure-key-vault.badge
+  type: badge
+  title: Implement Azure Key Vault
+  summary: Learn how Azure Key Vault can help you keep your apps more secure, and how to set and retrieve secrets programmatically, and with Azure CLI.
+  iconUrl: /training/achievements/azure-key-vault-implement.svg
+- uid: learn.wwl.implement-managed-identities.badge
+  type: badge
+  title: Implement managed identities
+  summary: Learn how managed identities can help you deploy secure solutions on Azure without the need to manage credentials.
+  iconUrl: /training/achievements/manage-identities-implement.svg
+- uid: learn.wwl.implement-authentication-by-using-microsoft-authentication-library.badge
+  type: badge
+  title: Implement authentication by using the Microsoft Authentication Library
+  summary: Learn how to implement authentication by using the Microsoft Authentication Library.
+  iconUrl: /training/achievements/authentication-library.svg
+- uid: learn.wwl.implement-azure-app-configuration.badge
+  type: badge
+  title: Implement Azure App Configuration
+  summary: Learn how to use Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features.
+  iconUrl: /training/achievements/azure-app-implement-configuration.svg
+- uid: learn.wwl.implement-shared-access-signatures.badge
+  type: badge
+  title: Implement shared access signatures
+  summary: Learn how to use shared access signatures to authorize access to storage resources.
+  iconUrl: /training/achievements/signatures-shared-access.svg
+- uid: learn.wwl.microsoft-graph.badge
+  type: badge
+  title: Explore Microsoft Graph
+  summary: Learn how Microsoft Graph facilitates the access and flow of data and how to form queries through REST and code.
+  iconUrl: /training/achievements/microsoft-graph-explore.svg

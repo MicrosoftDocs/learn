@@ -12,7 +12,7 @@ metadata:
   ms.collection: N/A
   ms.custom:
   - N/A
-  ms.service: azure-active-directory
+  ms.service: entra-id
   ai-usage: human-only
 title: Troubleshoot Active Directory
 summary: Learn how to troubleshoot AD DS service failures or degraded performance. Learn how to recover deleted security objects and the AD DS database, and how to troubleshoot hybrid authentication issues.

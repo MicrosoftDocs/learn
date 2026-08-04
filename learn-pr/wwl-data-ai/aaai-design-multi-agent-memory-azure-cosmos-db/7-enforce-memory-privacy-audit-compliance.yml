@@ -2,9 +2,10 @@
 uid: learn.wwl.design-multi-agent-memory-azure-cosmos-db.enforce-memory-privacy-audit-compliance
 title: Enforce memory privacy and audit compliance
 metadata:
+  zone_pivot_groups: video-or-text
   title: Enforce Memory Privacy and Audit Compliance
   description: "Enforce memory privacy and audit compliance."
-  ms.date: 05/28/2026
+  ms.date: 8/3/2026
   author: petender
   ms.author: petender
   ms.topic: unit

@@ -9,7 +9,7 @@ metadata:
   ms.author: masoucou
   manager: coxford
   ms.topic: module
-  ms.service: dotnet-mobile
+  ms.service: dotnet-mobile-development
   ms.subservice: dotnet-maui
 title: Create a UI in a .NET MAUI app by using XAML
 summary: "Learn how to design a UI for a .NET MAUI app using XAML"

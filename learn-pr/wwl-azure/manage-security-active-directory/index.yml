@@ -10,7 +10,7 @@ metadata:
   ms.collection: N/A
   ms.custom:
   - N/A
-  ms.service: azure-active-directory
+  ms.service: entra-id
   ai-usage: ai-assisted
 title: Manage security in Active Directory
 summary: This module focuses on maintaining security in an Active Directory environment. It covers things from permissions management to authentication methods to identifying problematic accounts.

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=20b77820-7106-4b3a-988c-9ad3f06d0136]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When MCP servers run as multiple instances across Azure regions or deployment slots, Application Insights provides the performance telemetry that drives intelligent routing decisions. You implement dynamic tool registries that select the best-performing instance at runtime based on health status, latency metrics, and configurable traffic weights.
 
 | Routing Strategy | Decision Criteria | Use Case |
@@ -278,3 +289,5 @@ Now that you understand how to route tool invocations dynamically across instanc
 - **Weighted routing** distributes traffic by configured percentages for canary deployments—start at 5% canary weight, monitor error rates and latency for 24 hours, then gradually increase to 100%
 - **Capability-based routing** extends latency selection by filtering instances by minimum version, ensuring requests requiring new features only reach instances that support them
 - **Automated weight adjustment** closes the optimization loop—background processes compare rolling metrics across instances and shift traffic toward better-performing instances continuously
+
+::: zone-end

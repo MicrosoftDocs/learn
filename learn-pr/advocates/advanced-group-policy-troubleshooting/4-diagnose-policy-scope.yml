@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.advanced-group-policy-troubleshooting.diagnose-policy-scope
+title: Diagnose scope, precedence, filtering, and targeting
+metadata:
+  title: Diagnose Scope, Precedence, Filtering, and Targeting
+  description: Diagnose Group Policy scope, inheritance, precedence, security and WMI filtering, item-level targeting, loopback processing, token evidence, and site placement.
+  ms.date: 08/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-diagnose-policy-scope.md)]

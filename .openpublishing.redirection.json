@@ -11,6 +11,196 @@
       "redirect_document_id": false
     },       
     {
+      "source_path_from_root": "/learn-pr/paths/examine-application-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.administer-endpoint-applications.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.deploy-applications.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.examine-application-management.trophy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.execute-mobile-application-management.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/2-examine-mobile-application-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/3-examine-considerations-mobile-application-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/4-prepare-line-of-business-apps-app-protection-policies.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/5-implement-mobile-application-management-policies-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/6-manage-mobile-application-management-policies-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/execute-mobile-application-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-application-protection-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/10-update-microsoft-store-apps-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/11-assign-apps-company-employees.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/12-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/13-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/2-deploy-applications-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/3-add-apps-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/4-manage-window-32-apps-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/5-deploy-applications-configuration-manager.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/6-deploy-applications-group-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/7-assign-publish-software.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/8-explore-microsoft-store-business.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/9-implement-microsoft-store-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-applications/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-manage-applications-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/2-manage-apps-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/3-manage-apps-non-enrolled-devices.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/4-deploy-microsoft-365-apps-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/5-additional-microsoft-365-apps-deployment-tools.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/6-configure-microsoft-edge-internet-explorer-mode.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/7-app-inventory-review.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-endpoint-applications/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/manage-application-lifecycle-intune/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/aks-app-scale-keda/7-exercise-deploy-scale-object.yml",
       "redirect_url": "/training/modules/configure-scaling-azure-kubernetes-service/",
       "redirect_document_id": false
@@ -69153,6 +69343,296 @@
     },
     {
       "source_path": "learn-pr/wwl-azure/understand-mysql-storage-engine/4-understand-supported-storage-engines.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/az-204-implement-authentication-authorization/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/az-204-implement-secure-cloud-solutions/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-microsoft-identity-platform/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-microsoft-identity-platform/5-conditional-access.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-microsoft-identity-platform/4-permission-consent.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-microsoft-identity-platform/3-app-service-principals.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-microsoft-identity-platform/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-microsoft-identity-platform/6-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-microsoft-identity-platform/2-microsoft-identity-platform-overview.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-microsoft-identity-platform/7-summary.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-key-vault/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-key-vault/4-key-vault-authentication.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-key-vault/3-key-vault-concepts.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-key-vault/5-set-retrieve-secret-azure-key-vault.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-key-vault/2-key-vault-overview.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-key-vault/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-key-vault/6-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-key-vault/7-summary.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-managed-identities/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-managed-identities/5-acquire-access-token.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-managed-identities/4-configure-managed-identities.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-managed-identities/3-managed-identities-auzre-virtual-machines.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-managed-identities/2-managed-identities-overview.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-managed-identities/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-managed-identities/6-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-managed-identities/7-summary.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-authentication-by-using-microsoft-authentication-library/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-authentication-by-using-microsoft-authentication-library/4-interactive-authentication-msal.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-authentication-by-using-microsoft-authentication-library/2-microsoft-authentication-library-overview.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-authentication-by-using-microsoft-authentication-library/3-initialize-client-applications.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-authentication-by-using-microsoft-authentication-library/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-authentication-by-using-microsoft-authentication-library/5-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-authentication-by-using-microsoft-authentication-library/6-summary.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-app-configuration/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-app-configuration/3-keys-values.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-app-configuration/2-app-configuration-overview.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-app-configuration/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-app-configuration/6-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-app-configuration/4-app-configuration-feature-management.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-app-configuration/5a-retrieve-configuration-settings.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-app-configuration/5-secure-app-configuration-data.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-azure-app-configuration/7-summary.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-shared-access-signatures/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-shared-access-signatures/3-shared-access-signatures.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-shared-access-signatures/2-shared-access-signatures-overview.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-shared-access-signatures/4-stored-access-policies.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-shared-access-signatures/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-shared-access-signatures/5-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-shared-access-signatures/6-summary.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-graph/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-graph/5-microsoft-graph-best-practices.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-graph/2-microsoft-graph-overview.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-graph/5a-exercise-microsoft-graph-user-profile.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-graph/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-graph/6-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-graph/3-microsoft-graph-api.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-graph/4-microsoft-graph-sdk.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-graph/7-summary.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
     }

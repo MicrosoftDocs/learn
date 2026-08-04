@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.rag-fundamentals
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Introduction to retrieval-augmented generation concepts
+  description: Learn how retrieval-augmented generation (RAG) grounds generative AI responses in relevant information.
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 07/31/2026
+  ms.service: microsoft-foundry
+  ms.topic: module-intro-to-product
+  ai-usage: ai-assisted
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: copilot-learning-hub, ai-learning-hub
+title: Introduction to retrieval-augmented generation concepts
+summary: "Retrieval-augmented generation (RAG) helps generative AI applications produce responses that are grounded in relevant information. In this module, you'll explore how a RAG solution prepares, retrieves, and uses data to generate answers."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain the purpose and benefits of retrieval-augmented generation (RAG).
+  - Describe how data is prepared for retrieval.
+  - Describe how a RAG solution retrieves relevant information and uses it to generate a grounded response.
+  - Identify considerations for evaluating and improving a RAG solution.
+prerequisites: |
+  Before starting this module, you should have:
+  - Familiarity with generative AI concepts and terminology.
+  - A basic understanding of large language models (LLMs) and prompts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products:
+  - microsoft-foundry
+subjects:
+  - artificial-intelligence
+units:
+  - learn.wwl.rag-fundamentals.introduction
+  - learn.wwl.rag-fundamentals.understand-rag
+  - learn.wwl.rag-fundamentals.prepare-data
+  - learn.wwl.rag-fundamentals.retrieve-generate
+  - learn.wwl.rag-fundamentals.evaluate-rag
+  - learn.wwl.rag-fundamentals.exercise
+  - learn.wwl.rag-fundamentals.knowledge-check
+  - learn.wwl.rag-fundamentals.summary
+badge:
+  uid: learn.wwl.rag-fundamentals.badge

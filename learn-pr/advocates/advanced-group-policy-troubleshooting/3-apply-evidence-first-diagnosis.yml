@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.advanced-group-policy-troubleshooting.apply-evidence-first-diagnosis
+title: Apply an evidence-first troubleshooting strategy
+metadata:
+  title: Apply an Evidence-First Troubleshooting Strategy
+  description: Preserve the failing state, correlate one processing instance, test one hypothesis, and gate high-impact Group Policy corrections with rollback and validation evidence.
+  ms.date: 08/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-apply-evidence-first-diagnosis.md)]
