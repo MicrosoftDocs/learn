@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 04/15/2022
-  author: wwlpublish
+  ms.date: 08/04/2026
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
   module_assessment: true
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Microsoft Assessment and Planning Toolkit"
       isCorrect: false
-      explanation: "That's incorrect. Microsoft Assessment and Planning Toolkit doesn't provide the options needed to both assess and migrate your databases to an Azure Virtual Machine"
-    - content: "Database Experimentation Assistant"
-      isCorrect: false
-      explanation: "That's incorrect. Database Experimentation Assistant is an experimentation solution used for SQL Server upgrades."
-    - content: "Data Migration Assistant"
+      explanation: "Incorrect. The MAP Toolkit is useful for broader infrastructure inventory and Windows operating system upgrade planning, but it doesn't assess or migrate SQL Server databases to Azure."
+    - content: "SQL migration component in SQL Server Management Studio (SSMS)"
       isCorrect: true
-      explanation: "That's correct. The data migration assistant provides both tooling to assess and execute a migration."
+      explanation: "Correct. The SQL migration component in SSMS provides Azure migration readiness assessment and surfaces migration options, including Azure Database Migration Service, the Managed Instance link, and native backup and restore."
+    - content: "Data Migration Assistant"
+      isCorrect: false
+      explanation: "Incorrect. Data Migration Assistant (DMA) was retired on July 16, 2025. Use the SQL migration component in SSMS for lightweight assessment and migration."
   - content: "What does Microsoft guarantee if you upgrade versions of SQL Server but maintain the same compatibility level, on similar hardware?"
     choices:
     - content: "Syntax compatibility"
       isCorrect: false
-      explanation: "That's incorrect. Microsoft doesn't guarantee syntax compatibility if you upgrade versions of SQL Server but maintain the same compatibility level."
+      explanation: "Incorrect. Microsoft doesn't guarantee syntax compatibility if you upgrade versions of SQL Server but maintain the same compatibility level."
     - content: "Execution Plan Shape"
       isCorrect: true
-      explanation: "That's correct. Microsoft guarantee Execution Plan Shape if you upgrade versions of SQL Server but maintain the same compatibility level."
+      explanation: "Correct. Microsoft guarantees Execution Plan Shape if you upgrade versions of SQL Server but maintain the same compatibility level."
     - content: "Elapsed time of queries"
       isCorrect: false
-      explanation: "That's incorrect. Elapsed time of queries isn't guaranteed when you upgrade versions of SQL Server but maintain the same compatibility level."
+      explanation: "Incorrect. Elapsed time of queries isn't guaranteed when you upgrade versions of SQL Server but maintain the same compatibility level."
   - content: "What is a valid reason for migrating your database to Azure SQL Database?"
     choices:
     - content: "Your applications need to run older versions of SQL Server, such as SQL Server 2016"
       isCorrect: false
-      explanation: "That's incorrect. Running older versions of SQL Server isn't a valid reason for migrating your database to Azure SQL Database."
+      explanation: "Incorrect. Running older versions of SQL Server isn't a valid reason for migrating your database to Azure SQL Database."
     - content: "You want to eliminate the complexity of configuring and managing high availability, backups, and other database tasks"
       isCorrect: true
-      explanation: "That's correct. Eliminating the complexity of database tasks is a valid reason for migrating your database to Azure SQL Database."
+      explanation: "Correct. Eliminating the complexity of database tasks is a valid reason for migrating your database to Azure SQL Database."
     - content: "You want to improve query performance of your application"
       isCorrect: false
-      explanation: "That's incorrect. Query performance isn't guaranteed when migrating to Azure SQL Database."
+      explanation: "Incorrect. Query performance isn't guaranteed when migrating to Azure SQL Database."
