@@ -2,9 +2,10 @@
 uid: learn.wwl.implement-distributed-observability-multi-agent-opentelemetry.configure-telemetry-aggregation-dashboards
 title: Configure telemetry aggregation and dashboards
 metadata:
+  zone_pivot_groups: video-or-text
   title: Configure Telemetry Aggregation and Dashboards
   description: "Configure telemetry aggregation and dashboards."
-  ms.date: 06/04/2026
+  ms.date: 8/4/2026
   author: petender
   ms.author: petender
   ms.topic: unit

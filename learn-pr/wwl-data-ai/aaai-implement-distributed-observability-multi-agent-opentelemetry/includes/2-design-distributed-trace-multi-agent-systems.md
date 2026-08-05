@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=96783b74-d292-48dd-80a8-61457a40b36d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 OpenTelemetry provides distributed tracing primitives that propagate a shared trace ID across every agent in a multi-agent system, giving you a single correlated view of each customer interaction in Azure Monitor.
 
 Single-service tracing creates one span per operation with parent-child relationships contained within the service boundary. A multi-agent system changes the challenge: a single customer request creates a trace that spans many services, each representing a different agent. Without correlation, you have 14 separate logs with no way to link them. Distributed tracing solves this by propagating trace IDs across all agents, creating a unified view of the entire customer journey.
@@ -163,3 +174,5 @@ Azure Monitor and Application Insights are the underlying implementation: OpenTe
 - **Azure Monitor** serves as the centralized OpenTelemetry backend, rendering full traces as waterfall diagrams in Application Insights.
 - **Semantic boundary instrumentation** focuses spans on agent entry/exit points, LLM calls, tool invocations, and agent-to-agent calls rather than internal operations.
 - **Sampling strategies** balance cost and diagnostic completeness—tail-based sampling captures 100% of errors while reducing storage for successful traces.
+
+::: zone-end
