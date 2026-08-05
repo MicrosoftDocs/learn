@@ -83,10 +83,25 @@ A GitHub Agentic Workflow has two main parts:
 The Markdown expresses intent, while the frontmatter defines the boundaries. The workflow is then compiled into a lock file that GitHub Actions executes.
 
 ```
-on: schedule: daily
-permissions: contents: read issues: read pull-requests: read
-safe-outputs: create-issue: title-prefix: "[repo-status] " labels: [report]
-tools: github:
+--- 
+on:
+  schedule: daily
+
+permissions:
+  contents: read
+  issues: read
+  pull-requests: read
+
+safe-outputs:
+  create-issue:
+    title-prefix: "[repo-status] "
+    labels:
+      - report
+
+tools:
+  github:
+--- 
+
 
 Daily Repository Status Report
 Create a daily report for maintainers.
@@ -117,7 +132,7 @@ Each workflow run executes jobs in isolated environments, ensuring consistent an
 
 ## What happens during an agent session
 
-Agent sessions as observable and interactive.
+Agent sessions are observable and interactive.
 
 During a session, you can:
 
