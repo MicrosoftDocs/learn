@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1ed47651-aac7-43f6-9f87-ecebd8b51471]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Multi-agent systems introduce a critical fairness challenge that single-agent systems don't face: bias compounds through agent chains. Each agent in your code review pipeline processes the output of the previous agent, creating opportunities for subtle biases to amplify at each stage. Understanding how bias propagates through multi-agent workflows and designing detection mechanisms to identify it in production forms the foundation of responsible AI governance for collaborative agent systems. The Azure AI Evaluation SDK provides the metrics framework and probe-based testing you use to measure consistency, detect disparity, and trace bias sources across agent chains.
 
 The following table highlights how bias differs between single-agent and multi-agent systems:
@@ -118,3 +129,5 @@ Once you identify bias sources, you implement targeted mitigations at three inte
 **Monitoring-based correction** catches bias that evades other controls. You configure the disparity detector to not only flag bias but also trigger corrective workflows. When a recommendation shows consistency bias above threshold, the system automatically routes it to a human reviewer along with the disparity test results. The reviewer examines both versions of the recommendation and determines which to deliver to the developer. These human corrections feed back into agent fine-tuning as examples of unbiased judgment.
 
 With fairness metrics defined, automated detection running, and bias sources traceable through provenance, you ensure Fabrikam's multi-agent system delivers equitable code reviews. The next critical governance dimension is transparency—developers need to understand not just what the agents recommend, but how multiple agents collaborated to reach those conclusions.
+
+::: zone-end

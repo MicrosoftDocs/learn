@@ -2,9 +2,10 @@
 uid: learn.wwl.implement-distributed-observability-multi-agent-opentelemetry.design-distributed-trace-multi-agent-systems
 title: Design distributed tracing for multi-agent solutions
 metadata:
+  zone_pivot_groups: video-or-text
   title: Design Distributed Tracing for Multi-Agent Solutions
   description: "Design distributed tracing for multi-agent solutions."
-  ms.date: 06/04/2026
+  ms.date: 8/4/2026
   author: petender
   ms.author: petender
   ms.topic: unit

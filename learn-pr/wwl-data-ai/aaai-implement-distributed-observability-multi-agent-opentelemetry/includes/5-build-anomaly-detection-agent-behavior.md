@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c5bc0373-665e-4e72-88a4-92976b691124]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Monitor dynamic thresholds learn from historical telemetry to detect when an agent's behavior deviates from its established baseline, enabling proactive alerting before customers are affected.
 
 Multi-agent systems exhibit anomalies that don't occur in single-agent scenarios. A routing agent may start sending traffic to different downstream agents than its historical pattern, indicating prompt injection or model drift. A tool-calling agent may suddenly take 10× longer to complete, suggesting a stuck external API call. An agent's token usage may triple overnight without code changes, pointing to a prompt injection attack expanding the context window. Detecting these behavioral anomalies requires establishing baselines for normal behavior and alerting when current behavior deviates significantly.
@@ -128,3 +139,5 @@ For complex incident correlation, implement custom logic using Azure Monitor act
 - **Token usage anomaly detection** calculates z-scores against rolling baselines to identify potential prompt injection or context window issues.
 - **Output behavioral analysis** tracks response type distributions per agent to detect content-level shifts that metric anomalies miss.
 - **Incident correlation** groups simultaneous anomalies on related agents into single incidents, reducing alert fatigue for on-call engineers.
+
+::: zone-end

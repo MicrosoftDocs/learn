@@ -185,6 +185,27 @@ achievements:
   title: Analyze monitoring data with Kusto Query Language
   summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.configure-profiles-user-device.trophy
+  type: trophy
+  title: MD-102 Configure profiles for user and devices
+  summary: |
+    This learning path explores Intune device profiles, the benefits of user profiles and how to synchronize profile data across multiple devices.
+  iconUrl: /training/achievements/onfigure-profiles-user-device.svg
+- uid: learn.wwl.execute-device-profiles.badge
+  type: badge
+  title: Execute device profiles
+  summary: Students learn about the various types of device profiles, and how to create and manage them.
+  iconUrl: /training/achievements/execute-device-profiles.svg
+- uid: learn.wwl.oversee-device-profiles.badge
+  type: badge
+  title: Oversee device profiles
+  summary: This module introduces students to monitoring profiles to ensure correct assignments and resolving conflicts when multiple profiles are applied.
+  iconUrl: /training/achievements/oversee-device-profiles.svg
+- uid: learn.wwl.maintain-user-profiles.badge
+  type: badge
+  title: Maintain user profiles
+  summary: Students learn about the benefits of various Windows user profiles, how to manage them, and how to facilitate profile data synchronization across multiple devices.
+  iconUrl: /training/achievements/maintain-user-profiles.svg
 - uid: learn.wwl.administer-endpoint-applications.badge
   type: badge
   title: Administer endpoint applications
@@ -8459,3 +8480,98 @@ achievements:
   title: Explore Microsoft Graph
   summary: Learn how Microsoft Graph facilitates the access and flow of data and how to form queries through REST and code.
   iconUrl: /training/achievements/microsoft-graph-explore.svg
+- uid: learn.wwl.az-204-develop-solutions-that-use-azure-cosmos-db.trophy
+  type: trophy
+  title: Develop solutions that use Azure Cosmos DB
+  summary: Learn how to create Azure Cosmos DB resources with the appropriate consistency levels, and perform data operations by using the .NET SDK V3 for Azure Cosmos DB.
+  iconUrl: /training/achievements/az-204-develop-solutions-that-use-azure-cosmos-db.svg
+- uid: learn.wwl.az-204-implement-iaas-solutions.trophy
+  type: trophy
+  title: Implement containerized solutions
+  summary: Learn how to create and deploy containerized solutions to Azure by using the Azure Container Registry, Azure Container Instances, and Azure Container Apps.
+  iconUrl: /training/achievements/iaas-implement-solutions.svg
+- uid: learn.wwl.explore-azure-cosmos-db.badge
+  type: badge
+  title: Explore Azure Cosmos DB
+  summary: Learn the core features and functionality of Azure Cosmos DB.
+  iconUrl: /training/achievements/1-explore-azure-cosmos-db.svg
+- uid: learn.wwl.explore-azure-functions.badge
+  type: badge
+  title: Explore Azure Functions
+  summary: Learn how Azure Functions can be a great solution for data processing, systems integration, and building simple APIs and microservices.
+  iconUrl: /training/achievements/1-explore-azure-functions.svg
+- uid: learn.wwl.implement-azure-functions.trophy
+  type: trophy
+  title: Implement Azure Functions
+  summary: Learn how to create and deploy Azure Functions. Explore hosting options, bindings, and triggers.
+  iconUrl: /training/achievements/az-204-implement-azure-functions.svg
+- uid: learn.wwl.create-run-container-images-azure-container-instances.badge
+  type: badge
+  title: Run container images in Azure Container Instances
+  summary: Learn how Azure Container Instances can help you quickly deploy containers, how to set environment variables, and specify container restart policies.
+  iconUrl: /training/achievements/azure-container-instances-images.svg
+- uid: learn.wwl.develop-azure-functions.badge
+  type: badge
+  title: Develop Azure Functions
+  summary: Learn how to create and deploy Azure Functions.
+  iconUrl: /training/achievements/2-develop-azure-functions.svg
+- uid: learn.wwl.implement-azure-container-apps.badge
+  type: badge
+  title: Implement Azure Container Apps
+  summary: Learn how Azure Container Apps can help you deploy and manage microservices and containerized apps on a serverless platform that runs on top of Azure Kubernetes Service.
+  iconUrl: /training/achievements/implement-azure-container-apps.svg
+- uid: learn.wwl.publish-container-image-to-azure-container-registry.badge
+  type: badge
+  title: Manage container images in Azure Container Registry
+  summary: Learn how to use Azure Container Registry to store your container images, and automate builds and deployments.
+  iconUrl: /training/achievements/azure-container-registry-publish.svg
+- uid: learn.wwl.work-with-cosmos-db.badge
+  type: badge
+  title: Work with Azure Cosmos DB
+  summary: Learn how to develop client and server-side programming solutions on Azure Cosmos DB.
+  iconUrl: /training/achievements/3-work-with-azure-cosmos-db.svg
+- uid: learn.wwl.az-204-develop-event-based-solutions.trophy
+  type: trophy
+  title: Develop event-based solutions
+  summary: Learn how to build applications with event-based architectures by integrating Azure Event Grid and Azure Event Hubs in to your solution.
+  iconUrl: /training/achievements/az-204-develop-event-based-solutions.svg
+- uid: learn.wwl.az-204-develop-message-based-solutions.trophy
+  type: trophy
+  title: Develop message-based solutions
+  summary: Learn how to build applications with message-based architectures by integrating Azure Service Bus and Azure Queue Storage in to your solution.
+  iconUrl: /training/achievements/message-develop-solutions.svg
+- uid: learn.wwl.az-204-implement-api-management.trophy
+  type: trophy
+  title: Implement API Management
+  summary: Learn how the API Management service functions, how to transform and secure APIs, and how to create a backend API.
+  iconUrl: /training/achievements/az-204-implement-api-management.svg
+- uid: learn.wwl.az-204-instrument-solutions-to-support-monitoring-logging.trophy
+  type: trophy
+  title: Troubleshoot solutions by using Application Insights
+  summary: Learn how to instrument apps to enable Application Insights to monitor performance and help troubleshoot issues.
+  iconUrl: /training/achievements/monitoring-instrument-solutions.svg
+- uid: learn.wwl.azure-event-grid.badge
+  type: badge
+  title: Explore Azure Event Grid
+  summary: Learn how to integrate Azure Event Grid in to your solution, implement access control to events, and how to route custom events to web endpoint by using Azure CLI.
+  iconUrl: /training/achievements/1-explore-azure-event-grid.svg
+- uid: learn.wwl.azure-event-hubs.badge
+  type: badge
+  title: Explore Azure Event Hubs
+  summary: Learn how Azure Event Hubs captures events and how to scale your processing application.
+  iconUrl: /training/achievements/2-explore-azure-event-hubs.svg
+- uid: learn.wwl.discover-azure-message-queue.badge
+  type: badge
+  title: Discover Azure message queues
+  summary: Learn how to integrate Azure Service Bus and Azure Queue storage in to your solution, and how to send and receive message by using .NET.
+  iconUrl: /training/achievements/discover-message-queue.svg
+- uid: learn.wwl.explore-api-management.badge
+  type: badge
+  title: Explore API Management
+  summary: Learn how the API Management service functions, how to transform and secure APIs, and how to create a backend API.
+  iconUrl: /training/achievements/1-explore-api-management.svg
+- uid: learn.wwl.monitor-app-performance.badge
+  type: badge
+  title: Monitor app performance
+  summary: Learn how to use the tools offered in Application Insights to enhance the performance and stability of your applications.
+  iconUrl: /training/achievements/monitoring-app-performance.svg
