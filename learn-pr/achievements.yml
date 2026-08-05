@@ -8530,3 +8530,23 @@ achievements:
   title: Work with Azure Cosmos DB
   summary: Learn how to develop client and server-side programming solutions on Azure Cosmos DB.
   iconUrl: /training/achievements/3-work-with-azure-cosmos-db.svg
+- uid: learn.wwl.az-204-develop-event-based-solutions.trophy
+  type: trophy
+  title: Develop event-based solutions
+  summary: Learn how to build applications with event-based architectures by integrating Azure Event Grid and Azure Event Hubs in to your solution.
+  iconUrl: /training/achievements/az-204-develop-event-based-solutions.svg
+- uid: learn.wwl.az-204-develop-message-based-solutions.trophy
+  type: trophy
+  title: Develop message-based solutions
+  summary: Learn how to build applications with message-based architectures by integrating Azure Service Bus and Azure Queue Storage in to your solution.
+  iconUrl: /training/achievements/message-develop-solutions.svg
+- uid: learn.wwl.az-204-implement-api-management.trophy
+  type: trophy
+  title: Implement API Management
+  summary: Learn how the API Management service functions, how to transform and secure APIs, and how to create a backend API.
+  iconUrl: /training/achievements/az-204-implement-api-management.svg
+- uid: learn.wwl.az-204-instrument-solutions-to-support-monitoring-logging.trophy
+  type: trophy
+  title: Troubleshoot solutions by using Application Insights
+  summary: Learn how to instrument apps to enable Application Insights to monitor performance and help troubleshoot issues.
+  iconUrl: /training/achievements/monitoring-instrument-solutions.svg
