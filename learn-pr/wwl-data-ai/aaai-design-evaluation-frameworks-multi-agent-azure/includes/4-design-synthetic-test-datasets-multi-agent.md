@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2ec9b280-67be-4c7e-b0d9-08e2042ee89e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry's `azure-ai-inference` SDK provides the model access needed to generate synthetic test interactions at scale, giving you privacy-safe datasets with systematic scenario coverage. Real customer interactions contain personally identifiable information (PII) and are difficult to use repeatedly for testing—regulations restrict storage and sharing of customer data.
 
 ## Build a scenario taxonomy
@@ -255,3 +266,5 @@ This maintenance prevents false failures: tests failing not because the agent sy
 - **LLM-generated interactions** produce diverse test cases from scenario specifications, creating multiple phrasing variations without manual authoring.
 - **Ground truth annotations** include binary task completion checks, rubric-based quality breakdowns, and acceptable variation ranges to enable reliable automatic evaluation.
 - **Dataset freshness** requires quarterly reviews triggered by catalog updates, policy changes, or agent capability modifications to prevent false test failures.
+
+::: zone-end

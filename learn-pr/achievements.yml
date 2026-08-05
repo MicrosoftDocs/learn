@@ -185,6 +185,32 @@ achievements:
   title: Analyze monitoring data with Kusto Query Language
   summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.authentication-compliance.trophy
+  type: trophy
+  title: MD-102 Manage authentication and compliance
+  summary: |
+    This learning path covers the various solutions for managing authentication. Students will also learn about the different types of VPNs, as well as compliance and conditional access policies.
+  iconUrl: /training/achievements/authentication-compliance.svg
+- uid: learn.wwl.protect-identities-azure-acative-directory.badge
+  type: badge
+  title: Protect identities in Microsoft Entra ID
+  summary: This module introduces students to the various authentication methods used to protect identities.
+  iconUrl: /training/achievements/entra-module.svg
+- uid: learn.wwl.organizational-access.badge
+  type: badge
+  title: Enable organizational access
+  summary: This module describes how clients can be configured to access organizational resources using a virtual private network (VPN).
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.implement-device-compliance.badge
+  type: badge
+  title: Implement device compliance
+  summary: This module describes how to use compliance and conditional access policies to help protect access to organizational resources.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.inventory-compliance-reports.badge
+  type: badge
+  title: Generate inventory and compliance reports
+  summary: This module describes how to use Microsoft Endpoint Manager and Power BI to create compliance and custom reports.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.wwl.configure-profiles-user-device.trophy
   type: trophy
   title: MD-102 Configure profiles for user and devices

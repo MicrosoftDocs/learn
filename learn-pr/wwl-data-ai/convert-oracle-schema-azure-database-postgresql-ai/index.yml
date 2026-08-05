@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.convert-oracle-schema-azure-database-postgresql-ai
+metadata:
+  title: Convert Oracle schemas to Azure Database for PostgreSQL
+  description: "Learn how to use the AI-powered Oracle to Azure Database for PostgreSQL schema conversion feature in the Visual Studio Code PostgreSQL extension to automate schema translation, validate results in a scratch database, and resolve flagged items with GitHub Copilot agent mode."
+  ms.date: 07/17/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: module-standard-task-based
+  ms.service: azure-database-postgresql
+  ai-usage: ai-generated
+title: Convert Oracle schemas to Azure Database for PostgreSQL by using AI
+summary: Learn how to plan, run, validate, and finalize an AI-assisted Oracle-to-PostgreSQL schema conversion using the Visual Studio Code PostgreSQL extension, Microsoft Foundry, and GitHub Copilot agent mode.
+abstract: |
+  By the end of this module, you're able to:
+  - Describe how the AI-powered schema conversion pipeline works and identify the role of each component.
+  - Prepare the Oracle source, Azure Database for PostgreSQL flexible server, and Microsoft Foundry for a schema conversion.
+  - Run an end-to-end schema conversion using the Migration Wizard and interpret the conversion report.
+  - Triage and resolve review tasks by criticality using GitHub Copilot agent mode or manual edits.
+  - Plan around unsupported Oracle objects and apply best practices before deploying converted PostgreSQL artifacts.
+prerequisites: |
+  - Familiarity with relational database schema objects in Oracle and PostgreSQL.
+  - Experience creating resources in the Azure portal.
+  - Basic experience with Visual Studio Code.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+- data-engineer
+products:
+- azure-database-postgresql
+subjects:
+- databases
+- migration
+- artificial-intelligence
+units:
+- learn.wwl.convert-oracle-schema-azure-database-postgresql-ai.introduction
+- learn.wwl.convert-oracle-schema-azure-database-postgresql-ai.understand-ai-powered-schema-conversion
+- learn.wwl.convert-oracle-schema-azure-database-postgresql-ai.prepare-environment-connections
+- learn.wwl.convert-oracle-schema-azure-database-postgresql-ai.run-schema-conversion
+- learn.wwl.convert-oracle-schema-azure-database-postgresql-ai.review-resolve-finalize-converted-schema
+- learn.wwl.convert-oracle-schema-azure-database-postgresql-ai.exercise-convert-finalize-oracle-schema
+- learn.wwl.convert-oracle-schema-azure-database-postgresql-ai.knowledge-check
+- learn.wwl.convert-oracle-schema-azure-database-postgresql-ai.summary
+badge:
+  uid: learn.wwl.convert-oracle-schema-azure-database-postgresql-ai.badge

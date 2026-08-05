@@ -2,7 +2,7 @@ Storage performance is a critical component of an I/O heavy application like a d
 
 Azure Storage is a robust and secure platform designed to meet the diverse needs of various applications. It offers a wide range of scalable solutions, ensuring that all types of storage support encryption at rest. Users can choose between a Microsoft-managed encryption key or a user-defined encryption key for added security.
 
-- **Blob Storage** - Blob storage is what is known as object-based storage and includes cold, hot, and archive storage tiers. In a SQL Server environment, blob storage will typically be used for database backups, using SQL Server’s back up to URL functionality.
+- **Blob Storage** - Blob storage is what is known as object-based storage and includes hot, cool, cold, and archive storage tiers. In a SQL Server environment, blob storage will typically be used for database backups, using SQL Server’s back up to URL functionality.
 
 - **File Storage** - File storage is effectively a file share that can be mounted inside a virtual machine, without the need to set up any hardware. SQL Server can use File storage as a storage target for a failover cluster instance.
 
@@ -14,9 +14,11 @@ Azure managed disks are block-level storage volumes that are presented to Azure 
 
 The configuration of your managed disks is important to the performance of your SQL Server workloads. If you're moving from an on-premises environment, it's important to capture metrics like **average disk seconds/read** and **average disk seconds/write** from Performance Monitor as detailed earlier. Another metric to capture is the I/O Operations per Second, which can be captured using the **SQL Server: Resource Pool Stats Disk Read and Write IO/sec** counters, which show you how many IOPs SQL Server is serving at its peak. It's important to understand your workloads. You want to design your storage and virtual machine to meet the needs of those workload peaks without incurring significant latency. Each Azure Virtual Machine type has a limit on IOPs.
 
-Azure managed disks come in four types:
+Azure managed disks come in five types:
 
 **Ultra disk** - Ultra disks support high-IO workloads for mission critical databases with low latency.
+
+**Premium SSD v2** - Premium SSD v2 disks deliver submillisecond latency at a lower cost than Ultra disk, and let you independently scale IOPS, throughput, and capacity on a single disk. They’re a strong default choice for most modern SQL Server data and log workloads.
 
 **Premium SSD** - Premium SSD disks are high-throughput and low latency and can meet the needs of most database workloads running in the cloud.
 
@@ -24,7 +26,7 @@ Azure managed disks come in four types:
 
 **Standard HDD** - Standard HDDs are suitable for backups and file storage that is infrequently accessed.
 
-Typically, production SQL Server workloads use either Ultra disk or Premium SSD, or some combination of the two. Ultra disks are typically used where you're looking for submillisecond latency in response time. Premium SSDs typically have single digit millisecond response time, but have lower costs, and more flexibility in design. Premium SSDs also support read-caching, which can benefit read-heavy database workloads by reducing the number of trips to the disk. The read cache is stored on the local SSD (the D:\ drive on Windows or /dev/sdb1/ on Linux) which can help reduce the number of round trips to the actual disk.
+Typically, production SQL Server workloads use Ultra disk, Premium SSD v2, or Premium SSD, or some combination of these. Ultra disks and Premium SSD v2 are typically used where you're looking for submillisecond latency in response time. Premium SSDs typically have single digit millisecond response time, but have lower costs, and more flexibility in design. Premium SSDs also support read-caching, which can benefit read-heavy database workloads by reducing the number of trips to the disk. The read cache is stored on the local SSD (the D:\ drive on Windows or /dev/sdb1/ on Linux) which can help reduce the number of round trips to the actual disk.
 
 ## Striping disks for maximum throughput
 
