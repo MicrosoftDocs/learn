@@ -2,9 +2,10 @@
 uid: learn.wwl.implement-distributed-observability-multi-agent-opentelemetry.build-anomaly-detection-agent-behavior
 title: Build anomaly detection for agent behavior
 metadata:
+  zone_pivot_groups: video-or-text
   title: Build Anomaly Detection for Agent Behavior
   description: "Build anomaly detection for agent behavior."
-  ms.date: 06/04/2026
+  ms.date: 8/4/2026
   author: petender
   ms.author: petender
   ms.topic: unit

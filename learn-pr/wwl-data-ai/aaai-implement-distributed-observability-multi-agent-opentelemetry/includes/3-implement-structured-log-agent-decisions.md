@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=02391d15-0d66-4918-8876-6b28fb561455]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 OpenTelemetry structured logging treats each log entry as a queryable data record with defined fields, enabling you to filter, aggregate, and correlate agent decisions across Azure Monitor at production scale.
 
 Unstructured logs fail at scale. Suppose Adventure Works has 14 agents that each log free-text messages. This produces millions of log entries that the operations team can't systematically query. A log message saying "agent CRASHED" indicates something failed, but without structured fields identifying the agent, customer session, operation type, and error classification, the team can't answer critical questions: which agent fails most frequently, which customer tier experiences the most errors, or how error rates correlate with specific model versions.
@@ -181,3 +192,5 @@ For Adventure Works, the logging policy requires: all customer identifiers hashe
 - **LLM decision logging** captures structured inputs and outputs at each decision point rather than full conversation history, balancing diagnostic value with storage costs.
 - **Trace correlation** embeds `trace_id` and `span_id` in every log entry, enabling bidirectional navigation between distributed traces and detailed agent decision logs.
 - **Privacy-aware logging** hashes customer identifiers with SHA-256 and enforces policies against logging PII, protecting customer data while preserving diagnostic capability.
+
+::: zone-end

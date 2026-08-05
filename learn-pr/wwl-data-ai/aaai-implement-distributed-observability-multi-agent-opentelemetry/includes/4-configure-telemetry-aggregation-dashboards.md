@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1329df7d-7075-4fd2-b9d9-41f40f886cae]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Monitor workbooks aggregate OpenTelemetry telemetry from all agents into interactive dashboards, giving your operations team a unified view of multi-agent system health, cost trends, and error patterns.
 
 Raw telemetry data from 14 agents requires aggregation to reveal system-level patterns. Individual trace viewing helps debug specific failures, but understanding overall system health demands aggregating metrics across dimensions: which agent, which model, which operation type, which customer tier, and which error classification. These aggregations power operational dashboards that answer questions about system performance, cost trends, and quality patterns.
@@ -96,3 +107,5 @@ The real-time view uses simple aggregations for fast query performance. The anal
 - **Azure Monitor workbooks** provide specialized tabs—Overview, Agent Performance, Cost Analytics, and Incident Response—serving different operational needs.
 - **Operational alerts** use dynamic thresholds for latency degradation, per-agent error rates, escalation spikes, and token usage anomalies with appropriate routing per severity.
 - **Dual views** separate real-time operational dashboards (2-minute refresh, short windows) from analytical views (daily refresh, long-term trends) to serve both immediate and strategic needs.
+
+::: zone-end
