@@ -59,7 +59,8 @@ Example:
 ```
 applyTo:
     - '**/*.js'
-    - 'src/auth/**' tools:
+    - 'src/auth/**' 
+tools:
     - read_file
     - search_files
 ```
