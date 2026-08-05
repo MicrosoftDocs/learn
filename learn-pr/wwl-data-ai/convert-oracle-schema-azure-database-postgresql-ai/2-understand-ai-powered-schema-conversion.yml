@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.convert-oracle-schema-azure-database-postgresql-ai.understand-ai-powered-schema-conversion
+title: Understand AI-powered schema conversion
+metadata:
+  title: Understand AI-powered schema conversion
+  description: "Learn how the AI-powered Oracle to Azure Database for PostgreSQL schema conversion pipeline works, including architecture components, pipeline stages, and supported Oracle objects."
+  ms.date: 07/17/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-understand-ai-powered-schema-conversion.md)]
