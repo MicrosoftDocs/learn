@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2c4301b4-11bd-4117-8d42-7a181922e1a9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When Fabrikam's multi-agent system recommends blocking a critical code deployment, developers and their managers need verifiable explanations for why the AI made this determination. When enterprise customers face compliance audits, they need proof that AI-driven decisions followed documented processes and applied controls consistently. When fairness monitoring detects bias, you need historical logs to understand how it developed and trace responsibility for remediation. Accountability in multi-agent systems requires immutable audit trails, clear responsibility assignment, queryable compliance reporting, and feedback loops that close the gap between audit findings and system improvement. Azure Monitor Log Analytics captures every decision point in the workflow, and Kusto Query Language (KQL) enables the compliance queries that turn raw logs into regulatory evidence.
 
 The following table contrasts key accountability elements between manual review and an AI-governed system:
@@ -127,3 +138,5 @@ Remediation follows a controlled process: create a fix in the development enviro
 This closed-loop process ensures accountability mechanisms don't just document problems but drive systematic improvement. Audit findings become the backlog of responsible AI enhancements, prioritized alongside feature development.
 
 With comprehensive accountability in place—immutable audit logs capturing complete decision trails, clear responsibility assignment across the multi-agent system, queryable compliance reporting, and feedback loops closing the gap between audit and improvement—you ensure Fabrikam's agents operate transparently and improve continuously. You've now implemented the four pillars of responsible AI governance for multi-agent systems: fairness monitoring, transparency, privacy protection, and accountability. In the hands-on exercise, you apply these governance practices to a working multi-agent deployment.
+
+::: zone-end
