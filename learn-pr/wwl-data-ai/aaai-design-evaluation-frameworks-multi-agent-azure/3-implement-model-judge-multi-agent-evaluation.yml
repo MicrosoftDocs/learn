@@ -2,9 +2,10 @@
 uid: learn.wwl.design-evaluation-frameworks-multi-agent-azure.implement-model-judge-multi-agent-evaluation
 title: Implement LLM-as-judge evaluation for multi-agent systems
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement LLM-as-Judge Evaluation for Multi-Agent Systems
   description: "Implement LLM-as-judge evaluation for multi-agent systems."
-  ms.date: 06/04/2026
+  ms.date: 8/5/2026
   author: petender
   ms.author: petender
   ms.topic: unit

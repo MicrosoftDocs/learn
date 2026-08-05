@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5c919856-02c8-4124-8d2c-ec96c887c97c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry provides the evaluation infrastructure to collect and aggregate quality signals across all layers of your multi-agent system. You use Foundry's measurement capabilities to define success metrics that capture end-to-end customer outcomes, not just individual agent performance.
 
 ## Understand the four evaluation targets
@@ -200,3 +211,5 @@ This hierarchy prevents both premature optimization (fixing individual agents th
 - **Journey coherence** evaluates whether multi-agent response sequences form a logically consistent narrative, catching contradictions that component-level metrics miss.
 - **Business impact metrics** like resolution rate, session reopen rate, and escalation rate connect AI quality scores to real customer outcomes.
 - **Metric aggregation hierarchies** organize evaluation into system, journey-type, and per-agent tiers that guide investigation from broad health to specific component fixes.
+
+::: zone-end
