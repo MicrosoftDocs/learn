@@ -1,6 +1,6 @@
 The extended events engine in Azure SQL is a lightweight and powerful monitoring system that allows you to capture granular information about activity in your databases and servers. The monitoring solutions on the Azure platform allow you to easily configure powerful monitoring for your environment and provide automated responses to error conditions.
 
-Extended events build on the functionality of SQL Server Profiler by allowing you to trace queries and by exposing extra data (events) that you can monitor. Some examples of issues you might troubleshoot with Extended Events include:
+Extended events replace the deprecated SQL Server Profiler by providing enhanced tracing capabilities and exposing extra data (events) that you can monitor. Some examples of issues you might troubleshoot with Extended Events include:
 
 - Troubleshooting blocking and deadlocking performance issues.
 - Identifying long-running queries.
