@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-advanced-windows-firewall.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Check your understanding of advanced Windows Firewall design.
+  ms.date: 08/05/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 7
+content: |
+quiz:
+  questions:
+  - content: A client opens a web session to a remote service over destination port 443. Which inbound rule is required for the response traffic?
+    choices:
+    - content: An inbound rule for local port 443
+      isCorrect: false
+      explanation: The remote service listens on port 443. The client uses a dynamic local port.
+    - content: An inbound rule for every dynamic local port
+      isCorrect: false
+      explanation: Stateful inspection permits response traffic for the connection initiated by the client.
+    - content: No separate inbound rule
+      isCorrect: true
+      explanation: The state table permits response traffic associated with the outbound connection.
+  - content: Which scope most directly limits a remote management rule to an approved management host?
+    choices:
+    - content: Remote address
+      isCorrect: true
+      explanation: Remote address scope identifies the permitted traffic source.
+    - content: Remote port
+      isCorrect: false
+      explanation: Remote clients usually use dynamic source ports.
+    - content: Local address
+      isCorrect: false
+      explanation: Local address chooses the receiving interface or address on the protected host.
+  - content: A secure firewall rule requires authenticated traffic, but no security association appears. What is the most likely design fault?
+    choices:
+    - content: The outbound default is Allow
+      isCorrect: false
+      explanation: Outbound default action doesn't create the required security association.
+    - content: The peer lacks compatible connection security policy
+      isCorrect: true
+      explanation: Both peers need compatible negotiation, authentication, and protection settings.
+    - content: Logging includes successful connections
+      isCorrect: false
+      explanation: Logging doesn't prevent security association negotiation.
+  - content: Which authentication design best limits stolen privileged credentials?
+    choices:
+    - content: Permit the privileged user from every domain device
+      isCorrect: false
+      explanation: Stolen credentials remain usable from a compromised domain device.
+    - content: Permit the privileged workstation without user authentication
+      isCorrect: false
+      explanation: Device identity alone doesn't restrict which user can initiate the operation.
+    - content: Require the privileged user from an approved privileged workstation
+      isCorrect: true
+      explanation: Dual identity scope requires both the authorized account and the authorized device.
+  - content: Which diagnostic source shows the rules currently active after profile selection and policy merging?
+    choices:
+    - content: The persistent policy store only
+      isCorrect: false
+      explanation: A persistent store doesn't represent the final merged runtime policy.
+    - content: The active policy store
+      isCorrect: true
+      explanation: The active store represents policy after applicable stores and profiles are evaluated.
+    - content: The firewall text log
+      isCorrect: false
+      explanation: The text log records traffic events, not the complete effective rule set.
