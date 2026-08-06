@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9f952f93-f9d7-4b3c-9c4e-ddfd68d0af94]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The Microsoft Foundry `azure-ai-evaluation` SDK lets you implement custom LLM-as-judge evaluators and run batch evaluation across your full test dataset. Traditional deterministic metrics like BLEU scores or exact-match accuracy can't assess whether a 14-agent customer service interaction was genuinely helpful.
 
 ## Decompose evaluation into specialized judges
@@ -262,3 +273,5 @@ Together, they cover the full quality-and-safety evaluation surface. Schedule th
 - **Calibration** maps raw judge scores to actual accuracy using human-labeled datasets, with Cohen's kappa above 0.7 indicating reliable agreement.
 - **Multi-judge consensus** runs the same evaluation across multiple models and averages scores to reduce individual judge biases.
 - **Microsoft Foundry integration** enables batch evaluation at scale through custom evaluator classes and the `azure-ai-evaluation` SDK.
+
+::: zone-end

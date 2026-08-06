@@ -2,9 +2,10 @@
 uid: learn.wwl.design-evaluation-frameworks-multi-agent-azure.build-regression-test-agent-drift
 title: Build regression testing pipelines to detect agent drift
 metadata:
+  zone_pivot_groups: video-or-text
   title: Build Regression Testing Pipelines to Detect Agent Drift
   description: "Build regression testing pipelines to detect agent drift."
-  ms.date: 06/04/2026
+  ms.date: 8/5/2026
   author: petender
   ms.author: petender
   ms.topic: unit

@@ -185,6 +185,48 @@ achievements:
   title: Analyze monitoring data with Kusto Query Language
   summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.manage-endpoint-security.trophy
+  type: trophy
+  title: MD-102 Manage endpoint security
+  summary: |
+    In this learning path, students will learn about data protection and protecting endpoints against threats. This path will also cover the key capabilities of Microsoft Defender solutions.
+  iconUrl: /training/achievements/manage-endpoint-security.svg
+- uid: learn.wwl.deploy-device-data-protection.badge
+  type: badge
+  title: Deploy device data protection
+  summary: This module describes how you can use Intune to create and manage WIP policies that manage this protection. The module also covers implementing BitLocker and Encrypting File System.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-microsoft-defender-cloud-apps.badge
+  type: badge
+  title: Manage Microsoft Defender for Cloud Apps
+  summary: This module covers Microsoft Defender for Cloud Apps, focusing on securing sensitive data, its relevance in dynamic work settings, and effective utilization for improved security posture.
+  iconUrl: /training/achievements/microsoft-defender-module.svg
+- uid: learn.wwl.authentication-compliance.trophy
+  type: trophy
+  title: MD-102 Manage authentication and compliance
+  summary: |
+    This learning path covers the various solutions for managing authentication. Students will also learn about the different types of VPNs, as well as compliance and conditional access policies.
+  iconUrl: /training/achievements/authentication-compliance.svg
+- uid: learn.wwl.protect-identities-azure-acative-directory.badge
+  type: badge
+  title: Protect identities in Microsoft Entra ID
+  summary: This module introduces students to the various authentication methods used to protect identities.
+  iconUrl: /training/achievements/entra-module.svg
+- uid: learn.wwl.organizational-access.badge
+  type: badge
+  title: Enable organizational access
+  summary: This module describes how clients can be configured to access organizational resources using a virtual private network (VPN).
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.implement-device-compliance.badge
+  type: badge
+  title: Implement device compliance
+  summary: This module describes how to use compliance and conditional access policies to help protect access to organizational resources.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.inventory-compliance-reports.badge
+  type: badge
+  title: Generate inventory and compliance reports
+  summary: This module describes how to use Microsoft Endpoint Manager and Power BI to create compliance and custom reports.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.wwl.configure-profiles-user-device.trophy
   type: trophy
   title: MD-102 Configure profiles for user and devices
