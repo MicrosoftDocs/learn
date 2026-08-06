@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-advanced-windows-firewall.troubleshoot-active-policy
+title: Troubleshoot active policy
+metadata:
+  title: Troubleshoot Active Policy
+  description: Diagnose effective firewall policy, profile selection, rule origin, packet filtering, and security associations.
+  ms.date: 08/05/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/10-troubleshoot-active-policy.md)]

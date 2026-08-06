@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Internet Protocol security protection levels</title>
+  <desc id="desc">Four ordered boxes add peer authentication, integrity, then encryption to an application packet.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#44546a"/>
+    </marker>
+    <style>
+      .heading { font: 700 28px 'Segoe UI', Arial, sans-serif; fill: #172b4d; }
+      .box1 { fill: #f3f6f9; stroke: #607d8b; stroke-width: 2; rx: 12; }
+      .box2 { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; rx: 12; }
+      .box3 { fill: #fff8e1; stroke: #f9a825; stroke-width: 2; rx: 12; }
+      .box4 { fill: #e8f5e9; stroke: #2e7d32; stroke-width: 2; rx: 12; }
+      .label { font: 600 20px 'Segoe UI', Arial, sans-serif; fill: #172b4d; text-anchor: middle; }
+      .detail { font: 16px 'Segoe UI', Arial, sans-serif; fill: #334e68; text-anchor: middle; }
+      .number { font: 700 18px 'Segoe UI', Arial, sans-serif; fill: #ffffff; text-anchor: middle; }
+      .badge { fill: #2f5597; }
+      .route { stroke: #44546a; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1200" height="560" fill="#ffffff"/>
+  <text x="600" y="45" class="heading" text-anchor="middle">Add only the protection properties required by the flow</text>
+
+  <path class="route" d="M280 285 H330"/>
+  <path class="route" d="M580 285 H630"/>
+  <path class="route" d="M880 285 H930"/>
+
+  <g transform="translate(30 195)">
+    <rect class="box1" width="250" height="180"/>
+    <circle class="badge" cx="30" cy="30" r="20"/><text class="number" x="30" y="36">1</text>
+    <text class="label" x="125" y="75">Application traffic</text>
+    <text class="detail" x="125" y="110">Original protocol data</text>
+    <text class="detail" x="125" y="140">No network-layer proof</text>
+  </g>
+  <g transform="translate(330 195)">
+    <rect class="box2" width="250" height="180"/>
+    <circle class="badge" cx="30" cy="30" r="20"/><text class="number" x="30" y="36">2</text>
+    <text class="label" x="125" y="75">Peer authentication</text>
+    <text class="detail" x="125" y="110">Verify computer identity</text>
+    <text class="detail" x="125" y="140">Optionally verify user</text>
+  </g>
+  <g transform="translate(630 195)">
+    <rect class="box3" width="250" height="180"/>
+    <circle class="badge" cx="30" cy="30" r="20"/><text class="number" x="30" y="36">3</text>
+    <text class="label" x="125" y="75">Integrity protection</text>
+    <text class="detail" x="125" y="110">Detect modification</text>
+    <text class="detail" x="125" y="140">Reject replayed traffic</text>
+  </g>
+  <g transform="translate(930 195)">
+    <rect class="box4" width="240" height="180"/>
+    <circle class="badge" cx="30" cy="30" r="20"/><text class="number" x="30" y="36">4</text>
+    <text class="label" x="120" y="75">Encryption</text>
+    <text class="detail" x="120" y="110">Protect confidentiality</text>
+    <text class="detail" x="120" y="140">Hide application data</text>
+  </g>
+</svg>
