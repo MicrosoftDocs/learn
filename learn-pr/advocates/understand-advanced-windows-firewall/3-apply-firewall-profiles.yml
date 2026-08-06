@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-advanced-windows-firewall.apply-firewall-profiles
+title: Apply firewall profiles
+metadata:
+  title: Apply Firewall Profiles
+  description: Apply safe policy across domain, private, and public network categories.
+  ms.date: 08/05/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-apply-firewall-profiles.md)]
