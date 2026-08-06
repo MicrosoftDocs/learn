@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ce6033d1-5161-488d-8b3e-4e9f7c5e7b4a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Power Automate and Microsoft Teams provide a low-code integration layer for delivering approval requests to human reviewers and collecting their decisions asynchronously. When an agent escalates a decision, it posts a request to a Power Automate webhook, releases the session, and polls for the reviewer's response—all without blocking agent execution or forcing customers to wait.
 
 ## Why approval workflows require durable execution
@@ -121,3 +132,5 @@ Foundry provides the capability surface; durable workflows + Power Automate + Te
 - **Well-designed approval cards** include customer context, request details, agent recommendation, business impact, and clear approve/reject buttons so reviewers can make informed decisions quickly.
 - **Timeout handling** defines SLA-based escalation tiers and configurable default actions (reject for high-stakes, auto-approve for low-stakes) to prevent indefinite waiting.
 - **Immutable audit trails** in Cosmos DB log every approval decision with full context, supporting compliance reporting, post-incident analysis, and agent improvement analytics.
+
+::: zone-end
