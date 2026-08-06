@@ -6,6 +6,106 @@
       "redirect_document_id": false
     },      
     {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.deploy-device-data-protection.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-device-encryption/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.manage-endpoint-security.trophy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/protect-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.manage-microsoft-defender-cloud-apps.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-advanced-threat-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/manage-endpoint-security/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/protect-devices-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-device-data-protection/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-device-encryption/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-device-data-protection/2-explore-windows-information-protection.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-device-encryption/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-device-data-protection/3-plan-windows-information-protection.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-device-encryption/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-device-data-protection/4-implement-use-windows-information-protection.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-device-encryption/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-device-data-protection/5-explore-encrypting-file-system-windows-client.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-device-encryption/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-device-data-protection/6-explore-bitlocker.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-device-encryption/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-device-data-protection/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-device-encryption/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-device-data-protection/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-device-encryption/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-device-data-protection/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-device-encryption/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/manage-microsoft-defender-cloud-apps/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-advanced-threat-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/manage-microsoft-defender-cloud-apps/2-explore-microsoft-defender-cloud-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-advanced-threat-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/manage-microsoft-defender-cloud-apps/3-planning-microsoft-defender-cloud-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-advanced-threat-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/manage-microsoft-defender-cloud-apps/4-implement-microsoft-defender-cloud-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-advanced-threat-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/manage-microsoft-defender-cloud-apps/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-advanced-threat-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/manage-microsoft-defender-cloud-apps/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-advanced-threat-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/manage-microsoft-defender-cloud-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/implement-advanced-threat-protection/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/achievements/learn.wwl.authentication-compliance.trophy.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/protect-devices-intune/",
       "redirect_document_id": false
