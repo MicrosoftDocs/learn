@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7cffb462-3193-40d7-9ee1-a8e63470a932]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure OpenAI Service includes built-in prompt prefix caching, and Azure Cache for Redis provides the infrastructure for semantic and result-level caching in multi-agent systems. Together, these services reduce redundant inference calls and lower the per-request cost at scale.
 
 Every inference call that doesn't reach the model costs nothing and completes instantly. Adventure Works processes thousands of similar customer queries every day: "Where is my order?", "What's your return policy?", and "Do you ship to Canada?" Answering each query with a fresh model inference wastes compute and money when cached responses would serve most customers perfectly. But naive caching—simple key-value storage of exact query strings—misses 90% of cache opportunities because customers phrase the same question dozens of different ways. Effective multi-agent caching requires a layered strategy that addresses prompt reuse, semantic similarity, and deterministic result storage.
@@ -156,3 +167,5 @@ With intelligent routing selecting the right model and multi-level caching elimi
 - Dependency tagging, version-based invalidation, and cascading invalidation are essential strategies for maintaining cache freshness and accuracy.
 - Cost-benefit analysis is crucial for determining the viability of caching infrastructure investments.
 - At large scale, caching can provide significant cost savings and improve overall system performance.
+
+::: zone-end
