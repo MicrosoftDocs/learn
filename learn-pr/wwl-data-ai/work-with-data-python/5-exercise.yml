@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-with-data-python.exercise
+title: Exercise - Calculate a student's GPA
+metadata:
+  title: Exercise - Calculate a Student's GPA
+  description: "Write a Python program that takes student grades as input and calculates their GPA."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise.md)]

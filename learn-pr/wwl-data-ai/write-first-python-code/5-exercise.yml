@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-first-python-code.exercise
+title: Exercise - Create a personalized greeting
+metadata:
+  title: Exercise - Create a Personalized Greeting
+  description: "Write a Python program that accepts user input and displays a personalized greeting."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise.md)]

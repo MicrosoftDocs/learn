@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-visual-studio-code-python.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Learn what you'll set up and accomplish in this module."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

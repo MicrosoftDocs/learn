@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-decision-making-python.exercise
+title: Exercise - Create a rock, paper, scissors game
+metadata:
+  title: Exercise - Create a Rock, Paper, Scissors Game
+  description: "Build a rock, paper, scissors game that uses conditional logic to determine the winner."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/5-exercise.md)]

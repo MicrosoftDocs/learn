@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-visual-studio-code-python.create-run-python-application
+title: Create and run a Python application
+metadata:
+  title: Create and Run a Python Application
+  description: "Learn how to create a Python file in VS Code and run it from the terminal."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-create-run-python-application.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-decision-making-python.evaluate-conditions-with-booleans-comparison-operators
+title: Evaluate conditions with Booleans and comparison operators
+metadata:
+  title: Evaluate Conditions with Booleans and Comparison Operators
+  description: "Learn how Python uses Boolean values and comparison operators to evaluate conditions."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-evaluate-conditions-with-booleans-comparison-operators.md)]

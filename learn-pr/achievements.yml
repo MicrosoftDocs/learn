@@ -185,6 +185,27 @@ achievements:
   title: Analyze monitoring data with Kusto Query Language
   summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.execute-device-enrollment.trophy
+  type: trophy
+  title: MD-102 Execute device enrollment
+  summary: |
+    This learning path will cover Microsoft Entra join and will introduce Microsoft Endpoint Manager. We'll also discuss how to configure policies for enrolling devices to Configuration Manager and Microsoft Intune.
+  iconUrl: /training/achievements/execute-device-enrollment.svg
+- uid: learn.wwl.administer-device-authentication.badge
+  type: badge
+  title: Manage device authentication
+  summary: In this module, you learn about device authentication and management in Microsoft Entra ID.
+  iconUrl: /training/achievements/administer-device-authentication.svg
+- uid: learn.wwl.enroll-devices-using-endpoint-configuration-manager.badge
+  type: badge
+  title: Enroll devices using Microsoft Configuration Manager
+  summary: This module introduces students to client deployment options and some of the high-level management and monitoring options that are available using Configuration Manager.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.enroll-devices-using-intune.badge
+  type: badge
+  title: Enroll devices using Microsoft Intune
+  summary: Students will learn how to configure and setup Intune to more easily manage Windows, Android, and iOS devices.
+  iconUrl: /training/achievements/enroll-devices-use-intune.svg
 - uid: learn.wwl.explore-endpoint-management.trophy
   type: trophy
   title: MD-102 Explore endpoint management
