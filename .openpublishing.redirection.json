@@ -6,6 +6,176 @@
       "redirect_document_id": false
     },      
     {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.administer-device-authentication.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/device-identity-authentication-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.enroll-devices-using-endpoint-configuration-manager.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.enroll-devices-using-intune.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.execute-device-enrollment.trophy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/execute-device-enrollment/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-device-authentication/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/device-identity-authentication-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-device-authentication/2-describe-azure-active-directory-join.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/device-identity-authentication-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-device-authentication/3-examine-azure-active-directory-join-prerequisites-limitations-benefits.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/device-identity-authentication-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-device-authentication/4-join-devices-azure-active-directory.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/device-identity-authentication-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-device-authentication/5-manage-devices-joined-azure-active-directory.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/device-identity-authentication-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-device-authentication/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/device-identity-authentication-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-device-authentication/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/device-identity-authentication-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/administer-device-authentication/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/device-identity-authentication-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-endpoint-configuration-manager/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-endpoint-configuration-manager/2-deploy-configuration-manager-client.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-endpoint-configuration-manager/3-monitor-configuration-manager-client.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-endpoint-configuration-manager/4-manage-configuration-manager-client.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-endpoint-configuration-manager/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-endpoint-configuration-manager/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-endpoint-configuration-manager/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-intune/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-intune/10-monitor-device-enrollment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-intune/11-manage-devices-remotely.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-intune/12-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-intune/13-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-intune/2-manage-mobile-devices-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-intune/3-enable-mobile-device-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-intune/4-explain-considerations-device-enrollment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-intune/5-manage-corporate-enrollment-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-intune/6-enroll-windows-devices-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-intune/7-enroll-android-devices-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-intune/8-enroll-ios-devices-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-intune/9-explore-device-enrollment-manager.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/enroll-devices-use-intune/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/plan-implement-device-enrollment/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/achievements/learn.wwl.explore-endpoint-management.trophy.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/",
       "redirect_document_id": false
