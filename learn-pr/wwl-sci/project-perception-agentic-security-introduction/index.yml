@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.intro-project-perception-agentic-security
+metadata:
+  title: What is Project Perception?
+  description: "Understand what Project Perception is, the problem it addresses, and the core capabilities it provides today in the Microsoft Defender portal's Agentic security section."
+  ms.date: 08/07/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: defender-xdr
+  ai-usage: ai-assisted
+title: What is Project Perception?
+summary: 'Attackers now operate at AI scale, while most defensive tools still run one at a time. Project Perception is Microsoft''s answer: an agentic security system, accessed through the Agentic security section of the Microsoft Defender portal. This module gives you a grounded picture of what Project Perception is, why it exists, and the core capabilities it provides today. A companion practitioner module walks through how Project Perception coordinates specific areas of SOC work.'
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe Project Perception and the problem it addresses
+  - Recognize the shape of multi-agent defense
+  - Recognize the core capabilities Project Perception provides today
+prerequisites: |
+  - Familiarity with common security operations concepts such as alerts, investigations, and threat intelligence
+  - Familiarity with the Microsoft Defender portal is helpful but not required
+iconUrl: /training/achievements/generic-badge.svg
+hidden: false
+levels:
+- beginner
+roles:
+- administrator
+- security-engineer
+- solution-architect
+products:
+- defender-xdr
+subjects:
+- threat-protection
+units:
+- learn.wwl.intro-project-perception-agentic-security.introduction
+- learn.wwl.intro-project-perception-agentic-security.why-project-perception
+- learn.wwl.intro-project-perception-agentic-security.project-perception-defined
+- learn.wwl.intro-project-perception-agentic-security.perception-capabilities
+- learn.wwl.intro-project-perception-agentic-security.knowledge-check
+- learn.wwl.intro-project-perception-agentic-security.summary
+badge:
+  uid: learn.wwl.intro-project-perception-agentic-security.badge
