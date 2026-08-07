@@ -185,6 +185,27 @@ achievements:
   title: Analyze monitoring data with Kusto Query Language
   summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.explore-endpoint-management.trophy
+  type: trophy
+  title: MD-102 Explore endpoint management
+  summary: |
+    This learning path is designed to provide a comprehensive understanding of enterprise desktops, Windows editions, and Microsoft Entra ID. It includes exploring various Windows editions, including their features and installation methods. It delves into Microsoft Entra ID, highlighting its similarities and differences with AD DS and how to synchronize the two. Furthermore, learners will better understand managing Microsoft Entra identities. Overall, this learning path equips learners with the necessary knowledge and skills to effectively support enterprise desktops and manage Microsoft Entra identities.
+  iconUrl: /training/achievements/explore-endpoint-management.svg
+- uid: learn.wwl.explore-enterprise-desktop.badge
+  type: badge
+  title: Explore the Enterprise Desktop
+  summary: This module covers modern endpoint management and enterprise desktop lifecycle concepts. It teaches the stages of the lifecycle (planning, deployment, maintenance) and provides a foundation for future learning.
+  iconUrl: /training/achievements/enterprise-examine-desktop.svg
+- uid: learn.wwl.explore-windows-editions.badge
+  type: badge
+  title: Explore Windows Editions
+  summary: This module covers Windows OS editions, features, and installation methods. Learners gain a deeper understanding of the available editions and corresponding installation processes.
+  iconUrl: /training/achievements/windows-client-explore.svg
+- uid: learn.wwl.manage-azure-active-directory-identities.badge
+  type: badge
+  title: Manage Microsoft Entra identities
+  summary: This module teaches how to use Microsoft Entra ID effectively. You'll learn about RBAC, user roles, creating and managing users and groups, using PowerShell cmdlets, and synchronizing objects from AD DS to Microsoft Entra ID.
+  iconUrl: /training/achievements/azure-active-directory-manage-identities.svg
 - uid: learn.wwl.manage-endpoint-security.trophy
   type: trophy
   title: MD-102 Manage endpoint security
