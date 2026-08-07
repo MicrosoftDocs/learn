@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-decision-making-python.control-code-flow-with-conditional-logic
+title: Control code flow with conditional logic (if, elif, else)
+metadata:
+  title: Control Code Flow with Conditional Logic (if, elif, else)
+  description: "Learn how to use if, elif, and else statements to run different code depending on conditions."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-control-code-flow-with-conditional-logic.md)]

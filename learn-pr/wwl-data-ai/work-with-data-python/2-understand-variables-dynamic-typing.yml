@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-with-data-python.understand-variables-dynamic-typing
+title: Understand variables and dynamic typing
+metadata:
+  title: Understand Variables and Dynamic Typing
+  description: "Learn how to store values in variables and how Python handles data types dynamically."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-understand-variables-dynamic-typing.md)]

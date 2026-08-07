@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.get-started-with-python-fundamentals
+metadata:
+  title: "Get Started with Python Programming: Part 1 - Fundamentals"
+  description: Learn the fundamentals of programming in Python.
+  ms.date: 07/15/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: learning-path
+title: "Get Started with Python Programming: Part 1 - Fundamentals"
+summary: |
+  Python is one of the world's most popular and versatile programming languages. This learning path walks you through the fundamentals—from writing your first lines of code to organizing reusable logic with functions. You'll also learn to use Visual Studio Code with GitHub Copilot to accelerate your development. By the end of this learning path, you'll have the foundational skills needed to begin building Python applications. 
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+subjects:
+  - app-development
+modules:
+  - learn.wwl.write-first-python-code
+  - learn.wwl.work-with-data-python
+  - learn.wwl.install-configure-visual-studio-code-python
+  - learn.wwl.add-decision-making-python
+trophy:
+  uid: learn.wwl.get-started-with-python-fundamentals.trophy

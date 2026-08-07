@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-with-data-python.perform-operations-with-numbers
+title: Perform operations with numbers
+metadata:
+  title: Perform Operations with Numbers
+  description: "Learn how to perform arithmetic operations and work with integers and floats in Python."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-perform-operations-with-numbers.md)]

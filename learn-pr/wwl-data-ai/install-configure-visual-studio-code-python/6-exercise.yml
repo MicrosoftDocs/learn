@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-visual-studio-code-python.exercise
+title: Exercise - Create and run a Python application
+metadata:
+  title: Exercise - Create and Run a Python Application
+  description: "Set up your environment, create a Python file in VS Code, and run it using the terminal."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise.md)]

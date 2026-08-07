@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.work-with-data-python
+metadata:
+  title: Work with data in Python
+  description: Learn how to store and manipulate data in Python. Explore variables, dynamic typing, numeric operations, and type conversion.
+  ms.date: 07/15/2026
+  ms.service: visual-studio
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
+title: Work with data in Python
+summary: Learn how to store and manipulate data in Python. Explore variables, dynamic typing, numeric operations, and type conversion.
+abstract: |
+  After completing this module, you're able to:
+  - Store and update values using variables.
+  - Perform arithmetic operations with numbers.
+  - Convert between data types using built-in functions.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+subjects:
+  - app-development
+units:
+- learn.wwl.work-with-data-python.introduction
+- learn.wwl.work-with-data-python.understand-variables-dynamic-typing
+- learn.wwl.work-with-data-python.perform-operations-with-numbers
+- learn.wwl.work-with-data-python.convert-between-data-types
+- learn.wwl.work-with-data-python.exercise
+- learn.wwl.work-with-data-python.knowledge-check
+- learn.wwl.work-with-data-python.summary
+badge:
+  uid: learn.wwl.work-with-data-python.badge
