@@ -12,7 +12,7 @@ Microsoft Defender for Cloud allows you to assess the security configuration of 
 - Protect data by identifying suspicious activity, such as patterns associated with the exfiltration of data.
 - Classify data hosted in SQL databases.
 
-In hybrid environments, Defender for Cloud can be integrated with the Log Analytics agent to collect event-log events, event-tracing telemetry, and crash dump files. Defender for Cloud can then perform an analysis of that data to make recommendations or generate alerts that can be forwarded to an organization's Security Incident and Event Management (SIEM) system.
+In hybrid environments, Defender for Cloud can be integrated with the Azure Monitor Agent (AMA) to collect event-log events, event-tracing telemetry, and crash dump files. Defender for Cloud can then perform an analysis of that data to make recommendations or generate alerts that can be forwarded to an organization's Security Incident and Event Management (SIEM) system.
 
 Tailwind Traders has various tools they use to assess whether the security configuration of its Windows Server and Linux workloads complies with published third-party standards. As it adopts more hybrid technologies, Tailwind Traders can use Microsoft Defender for Cloud to monitor and remediate the security configuration of its on-premises server operating system, and its growing deployment of workloads in the cloud.
 
@@ -24,7 +24,7 @@ SIEM solutions store and analyze log data and event telemetry that they ingest f
 
 The following image shows a Microsoft Sentinel hybrid architecture.
 
-:::image type="content" source="../media/8-sentinel-hybrid-architecture.png" alt-text="Diagram of log telemetry for on-premises workloads, and workloads in third-party clouds that are forwarded to Microsoft Defender for Cloud and Microsoft Sentinel." border="false" lightbox="../media/8-sentinel-hybrid-architecture.png":::
+:::image type="content" source="../media/8-sentinel-hybrid-architecture.png" alt-text="Diagram of log telemetry for on-premises workloads forwarded to Microsoft Defender for Cloud." border="false" lightbox="../media/8-sentinel-hybrid-architecture.png":::
 
 Microsoft Sentinel can perform the following tasks when it's supporting hybrid environments:
 
@@ -39,15 +39,11 @@ Tailwind Traders has an on-premises SIEM system that collects and analyzes event
 
 Tailwind Traders is likely to connect its existing SIEM solution to Microsoft Sentinel. This connection gives the company the benefits of Microsoft Sentinel's AI and deep learning without having to substantially modify the existing on-premises configuration.
 
-## What is Azure Automation Update Management?
+## What is Azure Update Manager?
 
-Azure Automation Update Management allows you to manage the updates to your on-premises and cloud server operating systems by using a single console in the cloud. Update Management works with Microsoft Windows Server workloads and with supported Linux operating system workloads running physically and virtually.
+Azure Update Manager allows you to manage the updates to your on-premises and cloud server operating systems by using a single console in the cloud. Azure Update Manager works with Microsoft Windows Server workloads and with supported Linux operating system workloads running physically and virtually.
 
-Update Management can use Microsoft Update or Windows Server Update Services (WSUS) as a source of updates for Windows Server operating systems. Update Management can also use a public or custom Linux package repository for updates to Linux operating systems. Update Management allows you to determine which updates are currently missing from enrolled operating systems. 
-
-The following diagram shows how Update Management integrates with Azure Automation and Log Analytics workspaces.
-
-:::image type="content" source="../media/8-update-management-integration.png" alt-text="Diagram of on-premises and Azure VMs connecting to Azure Automation runbooks over TCP port 443 in a hybrid Update Management architecture." border="false" lightbox="../media/8-update-management-integration.png":::
+Update Management can use Microsoft Update or Windows Server Update Services (WSUS) as a source of updates for Windows Server operating systems. Azure Update Manager can also use a public or custom Linux package repository for updates to Linux operating systems. Azure Update Manager allows you to determine which updates are currently missing from enrolled operating systems. 
 
 When you configure an update deployment, you specify:
 

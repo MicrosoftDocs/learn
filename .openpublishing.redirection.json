@@ -6,6 +6,161 @@
       "redirect_document_id": false
     },      
     {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.explore-endpoint-management.trophy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.explore-enterprise-desktop.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.explore-windows-editions.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.manage-azure-active-directory-identities.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-entraid-device-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/explore-endpoint-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-enterprise-desktop/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-enterprise-desktop/2-examine-benefits-modern-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-enterprise-desktop/3-examine-enterprise-desktop-life-cycle-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-enterprise-desktop/4-examine-plan-purchase.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-enterprise-desktop/5-examine-desktop-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-enterprise-desktop/6-plan-application-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-enterprise-desktop/7-plan-upgrades-retirement.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-enterprise-desktop/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-enterprise-desktop/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-enterprise-desktop/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-windows-editions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-windows-editions/2-examine-client-editions-capabilities.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-windows-editions/3-select-client-edition.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-windows-editions/4-examine-hardware-requirements.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-windows-editions/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-windows-editions/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/explore-windows-editions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-azure-active-directory-identities/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-entraid-device-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-azure-active-directory-identities/2-examine-role-based-access-control-user-roles-azure-active-directory.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-entraid-device-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-azure-active-directory-identities/3-create-manage-users-azure-active-directory.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-entraid-device-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-azure-active-directory-identities/4-create-manage-groups-azure-active-directory.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-entraid-device-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-azure-active-directory-identities/5-manage-azure-active-directory-objects-powershell.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-entraid-device-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-azure-active-directory-identities/6-synchronize-objects-active-directory-domain-services.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-entraid-device-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-azure-active-directory-identities/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-entraid-device-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-azure-active-directory-identities/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-entraid-device-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/manage-azure-active-directory-identities/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-entraid-device-management/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/achievements/learn.wwl.deploy-device-data-protection.badge.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/implement-device-encryption/",
       "redirect_document_id": false
