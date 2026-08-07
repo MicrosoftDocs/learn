@@ -20,12 +20,10 @@ When you hybrid connect a computer to Azure by using Azure Arc to install the Az
 
 The Azure Arc enabled servers agent supports the following Windows and Linux operating systems:
 
-- Windows Server 2008 R2 SP1, 2012 R2, 2016, 2019, and 2022
+- Windows Server 2012 R2, 2016, 2019, 2022 and 2025
   - Both Desktop and Server Core experiences are supported
-  - Azure Editions are supported on Azure Stack HCI
-- Windows 10, 11 (see client operating system guidance)
-- Windows IoT Enterprise
-- Azure Stack HCI
+  - Azure Editions are supported on Azure Local
+- Windows 11
 - Ubuntu 16.04, 18.04, 20.04, and 22.04 LTS
 - Debian 10 and 11
 - CentOS Linux 7 and 8
@@ -42,17 +40,17 @@ Azure Arc enabled servers agent supports the following functionality:
 - The Azure Policy guest configuration functionality allows you to validate operating system configuration.
 - Resource context for Azure Monitor Log Analytics data allows you to limit the scope of who can access server telemetry by using Azure role-based access control (RBAC).
 
-The functionality included when the Azure Arc enabled servers agent is deployed on computers in hybrid environments is evolving. For the latest information, refer to [Azure Arc supported cloud operations](/azure/azure-arc/servers/overview#supported-cloud-operations?azure-portal=true) and [what's new with Azure arc enabled servers](/azure/azure-arc/servers/agent-release-notes?azure-portal=true).
+The functionality included when the Azure Arc enabled servers agent is deployed on computers in hybrid environments is evolving. For the latest information, refer to [Azure Arc supported cloud operations](/azure/azure-arc/servers/overview#supported-cloud-operations?azure-portal=true) and [what's new with Azure Arc enabled servers](/azure/azure-arc/servers/agent-release-notes?azure-portal=true).
 
 For Tailwind Traders, having a single location to manage Windows Server and Linux workloads across the entire hybrid environment addresses some of the operations team's concerns about the hybrid environment's complexity.
 
-## What is Azure Stack HCI?
+## What is Azure Local
 
-Azure Stack HCI is a hyperconverged infrastructure operating system that you can use to host Hyper-V virtual machines running Windows and Linux operating systems. Unlike running on a hyperconverged Windows Server Hyper-V cluster, Azure Stack HCI is designed to give you the option of deploying and managing virtual machines through the Azure portal or Windows Admin Center.
+Azure Local is a hyperconverged infrastructure operating system that you can use to host Hyper-V virtual machines running Windows and Linux operating systems. Unlike running on a hyperconverged Windows Server Hyper-V cluster, Azure Local is designed to give you the option of deploying and managing virtual machines through the Azure portal or Windows Admin Center.
 
-Unlike a traditional Windows Server virtualization deployment in which the local operations team maintains responsibility for managing the host operating system, Azure Stack HCI is an Azure service. A customer acquires a validated hardware configuration from an approved vendor and connects the system to an internet-connected network, and an Azure service manages the infrastructure. Hybrid Azure services like Azure Automation Update Management, Azure Site Recovery, and Azure Backup are automatically integrated.
+Unlike a traditional Windows Server virtualization deployment in which the local operations team maintains responsibility for managing the host operating system, Azure Local is an Azure service. A customer acquires a validated hardware configuration from an approved vendor and connects the system to an internet-connected network, and an Azure service manages the infrastructure. Hybrid Azure services like Azure Automation Update Management, Azure Site Recovery, and Azure Backup are automatically integrated.
 
-For Tailwind Traders, Azure Stack HCI provides a future platform to which it can eventually migrate its on-premises virtual machines. The migration enables a consistent set of management tools for all VMs in the hybrid environment.
+For Tailwind Traders, Azure Local provides a future platform to which it can eventually migrate its on-premises virtual machines. The migration enables a consistent set of management tools for all VMs in the hybrid environment.
 
 ## What is hybrid high-performance computing?
 
@@ -85,9 +83,9 @@ The benefit for Tailwind Traders of using Azure Arc for Kubernetes is that it al
 
 ## What are Azure Arc enabled data services?
 
-Azure Arc enabled data services allow organizations to manage supported databases running in Azure and on-premises by using one set of tools. Organizations can use Azure Arc enabled data services to run Azure Database for PostgreSQL servers and SQL managed instances on-premises while managing those instances through Azure Data Studio, the Azure portal, or the Azure CLI.
+Azure Arc enabled data services allow organizations to manage supported databases running in Azure and on-premises by using one set of tools. Organizations can use Azure Arc enabled data services to run SQL managed instances on-premises while managing those instances through Azure Data Studio, the Azure portal, or the Azure CLI.
 
-When enabled, Azure Arc enabled data services allow you to automate the patching and update processes for these on-premises database instances. The patching and update processes work in the same way that Microsoft manages these processes when you deploy PostgreSQL and SQL managed instances in Azure. Azure Arc enabled data services also allow organizations to apply the advanced threat protection functionality available in Microsoft Defender for Cloud for Azure SQL databases to database server instances running on-premises.
+When enabled, Azure Arc enabled data services allow you to automate the patching and update processes for these on-premises database instances. The patching and update processes work in the same way that Microsoft manages these processes when you deploy SQL managed instances in Azure. Azure Arc enabled data services also allow organizations to apply the advanced threat protection functionality available in Microsoft Defender for Cloud for Azure SQL databases to database server instances running on-premises.
 
 Azure Arc enabled data services use container and Kubernetes infrastructure for the on-premises services. Azure Arc enabled data services also allow integration between these on-premises data services and Azure services such as Azure Backup.
 
