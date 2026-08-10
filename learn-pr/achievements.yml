@@ -185,6 +185,32 @@ achievements:
   title: Analyze monitoring data with Kusto Query Language
   summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.deploy-cloud-based-tools.trophy
+  type: trophy
+  title: MD-102 Deploy using cloud based tools
+  summary: |
+    Students will learn about using Windows Autopilot and deployment using Microsoft Intune. Students will also learn how co-management can be used to transition to modern management.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.deploy-devices-windows-autopilot.badge
+  type: badge
+  title: Deploy Devices using Windows Autopilot
+  summary: Use Autopilot to deploy new hardware or refreshing an existing hardware with the organizationΓÇÖs desired configuration, without using the traditional imaging process.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.implement-dynamic-deployment.badge
+  type: badge
+  title: Implement dynamic deployment methods
+  summary: Use dynamic provisioning methods such as Subscription Activation, Provisioning packages, and Microsoft Entra join to reconfigure an existing operating system.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.plan-transition-modern-endpoint-management.badge
+  type: badge
+  title: Plan a transition to modern endpoint management
+  summary: Explore considerations and review the planning of transitioning to modern management, focusing on migration and newly provisioned devices.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-windows-365.badge
+  type: badge
+  title: Manage Windows 365
+  summary: This module teaches managing Microsoft's cloud-based PC management solution, Windows 365, offering personalized, secure Windows 11 experience from any device. Learn features, setup, management, security, deployment options, and licensing to optimize your environment.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.wwl.execute-device-enrollment.trophy
   type: trophy
   title: MD-102 Execute device enrollment
