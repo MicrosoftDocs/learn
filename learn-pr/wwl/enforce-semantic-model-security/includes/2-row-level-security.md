@@ -53,30 +53,30 @@ Dynamic security scales because adding or removing users is a data change rather
 
 Consider an organization with 50 salespeople across five regions. With static RLS, you'd need five separate roles, one per region. With dynamic RLS, you create one role and one filter expression. The data determines which rows each user sees.
 
-## Implement the security table pattern
+## Implement the AppUser table pattern
 
-For more complex authorization scenarios, create a dedicated security table that maps users to data partitions like regions, departments, or cost centers. The security table joins to a dimension table in your model and the RLS filter references the security table.
+For more complex authorization scenarios, create a dedicated **AppUser** table that maps users to data partitions like regions, departments, or cost centers. The `AppUser` table joins to a dimension table in your model and the RLS filter references the `AppUser` table.
 
 ```dax
--- Filter through a security table that maps users to regions
+-- Filter through the AppUser table that maps users to regions
 CONTAINS(
-    SecurityTable,
-    SecurityTable[UserEmail], USERPRINCIPALNAME(),
-    SecurityTable[Region], [Region]
+    AppUser,
+    AppUser[UserName], USERPRINCIPALNAME(),
+    AppUser[Region], [Region]
 )
 ```
 
-This pattern maps each user to one or more regions in the security table. When a user signs in, Power BI evaluates the `CONTAINS` function against the security table and returns only the rows matching their assigned regions.
+This pattern maps each user to one or more regions in the `AppUser` table. When a user signs in, Power BI evaluates the `CONTAINS` function against the `AppUser` table and returns only the rows matching their assigned regions.
 
-The security table pattern offers several advantages:
+The AppUser table pattern offers several advantages:
 
 - **Centralized management.** All user-to-data mappings are in one table.
 - **Multi-value assignments.** A single user can map to multiple regions or departments.
-- **Data-driven updates.** Changing access requires updating the security table data, not the model definition.
+- **Data-driven updates.** Changing access requires updating the AppUser table data, not the model definition.
 
-To implement this pattern, add the security table to your model and create a relationship between the security table and the relevant dimension table. Then create a role with the `CONTAINS` filter expression. When you refresh the data, any changes to the security table take effect immediately without republishing the model.
+To implement this pattern, add the AppUser table to your model and create a relationship between the `AppUser` table and the relevant dimension table. Then create a role with the `CONTAINS` filter expression. When you refresh the data, any changes to the AppUser table take effect immediately without republishing the model.
 
-![Image shows a model diagram that includes the security table with UserEmail and Region columns, connected to the Region dimension table.](../media/model-diagram-appuser-table.png)
+![Image shows a model diagram that includes the AppUser table with UserName and Region columns, connected to the Region dimension table.](../media/model-diagram-appuser-table.png)
 
 ## Understand static RLS rules
 
