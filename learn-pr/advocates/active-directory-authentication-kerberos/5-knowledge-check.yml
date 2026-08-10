@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.active-directory-authentication-kerberos-hardening.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Check your understanding of AD DS authentication, migration from NTLM to Kerberos, and Windows Server 2025 Kerberos hardening.
+  ms.date: 08/10/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "A user can access an intranet site, but the server records NTLM instead of Kerberos. Which action should an administrator take first?"
+    choices:
+    - content: "Disable NTLM across the domain immediately."
+      isCorrect: false
+      explanation: "Incorrect. Blocking NTLM before identifying and remediating the dependency can interrupt applications and services."
+    - content: "Confirm the target name and query the expected HTTP SPN."
+      isCorrect: true
+      explanation: "Correct. An unusable target name or missing, duplicate, or incorrectly owned SPN commonly prevents Kerberos and allows NTLM fallback."
+    - content: "Increase the user's Kerberos token-size limit."
+      isCorrect: false
+      explanation: "Incorrect. Token size can affect authentication or authorization, but it doesn't explain why Negotiate selected NTLM for this connection."
+  - content: "Which evidence best proves that a remediated service connection is using Kerberos?"
+    choices:
+    - content: "The application opens without displaying an error."
+      isCorrect: false
+      explanation: "Incorrect. Successful access can still occur through NTLM fallback and doesn't prove that Kerberos was used."
+    - content: "The client has a TGT in its Kerberos ticket cache."
+      isCorrect: false
+      explanation: "Incorrect. A TGT proves initial Kerberos authentication but doesn't prove that the client obtained or presented a ticket for the target service."
+    - content: "The client has the expected service ticket and the target records Kerberos in the successful logon."
+      isCorrect: true
+      explanation: "Correct. The service ticket confirms the requested SPN, and the target logon event confirms that the service accepted Kerberos authentication."
+  - content: "Event ID 4769 reports ticket encryption type 0x17 for a service account. What does this result indicate?"
+    choices:
+    - content: "The service ticket used RC4 and the service dependency requires remediation."
+      isCorrect: true
+      explanation: "Correct. Ticket encryption type 0x17 represents RC4, so the account keys, encryption settings, and service compatibility should be investigated."
+    - content: "The KDC couldn't find a mutually supported encryption type."
+      isCorrect: false
+      explanation: "Incorrect. A failure code such as 0xE indicates that the KDC couldn't find a mutually supported encryption type."
+    - content: "The service successfully used AES256 encryption."
+      isCorrect: false
+      explanation: "Incorrect. Encryption type 0x17 represents RC4 rather than AES256."
