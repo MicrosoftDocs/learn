@@ -50,22 +50,23 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.Azure.Functions.Worker;
+using Microsoft.Azure.Functions.Worker.Extensions.Sql;
+using Microsoft.Azure.Functions.Worker.Http;
 
 namespace AzureSQLSamples
 {
     public static class GetEmployee
     {
-        [FunctionName("GetEmployee")]
+        [Function("GetEmployee")]
         public static IActionResult Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "getemployee")]
             HttpRequest req,
-            [Sql(commandText: "select [EmployeeId], [FirstName], [LastName], [Email], [Department] from dbo.Employee where EmployeeId = @EmployeeId",
+            [SqlInput(commandText: "select [EmployeeId], [FirstName], [LastName], [Email], [Department] from dbo.Employee where EmployeeId = @EmployeeId",
                 commandType: System.Data.CommandType.Text,
                 parameters: "@EmployeeId={Query.EmployeeId}",
                 connectionStringSetting: "SqlConnectionString")]
-            IEnumerable employee)
+            IEnumerable<Employee> employee)
         {
             return new OkObjectResult(employee.FirstOrDefault());
         }
@@ -117,7 +118,7 @@ namespace AzureSQL.Employee
     {
         // create a new Employee from body object
         // uses output binding to insert new item into Employee table
-        [FunctionName("AddEmployee")]
+        [Function("AddEmployee")]
         public static async Task Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "AddEmployee")] HttpRequestData req,
                 FunctionContext executionContext)
