@@ -3,7 +3,7 @@ PaaS is different when it comes to availability; you can only configure the opti
 
 For the SQL Server-based options of Azure SQL Database and Azure SQL Managed Instance, the options are active geo-replication (Azure SQL Database only) and auto-failover groups (Azure SQL Database or Azure SQL Managed Instance).
 
-Azure SQL Database has a service level agreement, which guarantees availability of 99.99, meaning nearly no downtime should be encountered. If a node-level problem happens such as hardware failure, a built-in failover mechanism kicks in. All transactional changes to the database are written synchronously to storage upon commit. If a node-level interruption occurs, the database server automatically creates a new node and attaches the data storage.
+Azure SQL Database has a service level agreement, which guarantees availability of 99.99%, meaning nearly no downtime should be encountered. If a node-level problem happens such as hardware failure, a built-in failover mechanism kicks in. All transactional changes to the database are written synchronously to storage upon commit. If a node-level interruption occurs, the database server automatically creates a new node and attaches the data storage.
 
 From an application standpoint, you need to code the necessary retry logic because all connections are dropped as part of spinning up the new node and any in flight transactions are lost. This process is considered a best practice for any cloud application, as they should be designed to handle transient failures.
 
