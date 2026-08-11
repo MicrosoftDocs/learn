@@ -53,9 +53,9 @@ Dynamic security scales because adding or removing users is a data change rather
 
 Consider an organization with 50 salespeople across five regions. With static RLS, you'd need five separate roles, one per region. With dynamic RLS, you create one role and one filter expression. The data determines which rows each user sees.
 
-## Implement the AppUser table pattern
+## Implement the security table pattern
 
-For more complex authorization scenarios, create a dedicated **AppUser** table that maps users to data partitions like regions, departments, or cost centers. The `AppUser` table joins to a dimension table in your model and the RLS filter references the `AppUser` table.
+For more complex authorization scenarios, create a dedicated table that maps users to data partitions like regions, departments, or cost centers. In this example, the `AppUser` table joins to a dimension table in the model and the RLS filter references the `AppUser` table.
 
 ```dax
 -- Filter through the AppUser table that maps users to regions
