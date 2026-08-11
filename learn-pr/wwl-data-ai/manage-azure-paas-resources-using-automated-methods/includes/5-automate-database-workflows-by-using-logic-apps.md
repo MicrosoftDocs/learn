@@ -7,7 +7,7 @@ Here are some example tasks, business processes, and workloads you can automate 
 - Move uploaded files from an SFTP or FTP server to Azure Storage.
 - Monitor tweets, analyze sentiment, and create alerts or tasks for items that need review.
 
-## Why Use Azure Logic Apps?
+## Why use Azure Logic Apps?
 
 Azure Logic Apps provides prebuilt, Microsoft-managed API connectors and built-in operations, making it easier and quicker to connect and integrate apps, data, services, and systems. This allows you to focus on designing and implementing your solution's business logic and functionality, rather than figuring out how to access your resources.
 
@@ -15,7 +15,7 @@ Typically, you won't need to write any code. However, if you do, you can create 
 
 Logic Apps is fully managed by Microsoft Azure, freeing you from concerns about hosting, scaling, managing, monitoring, and maintaining solutions built with these services. By using these capabilities to create "serverless" apps and solutions, you can focus solely on the business logic and functionality. These services automatically scale to meet your needs, speed up integrations, and help you build robust cloud apps with little to no code.
 
-## SQL Server Connector
+## SQL Server connector
 
 The SQL Server connector in Azure Logic Apps allows you to access your SQL database and create automated workflows triggered by events in your SQL database or other systems. This enables you to manage your SQL data and resources efficiently.
 
@@ -39,15 +39,11 @@ Alternatively, you can check the connection string for your Azure SQL Database i
 
 If you want to start your workflow with a SQL Server trigger operation, you need to begin with a blank workflow.
 
-The SQL Server connector is available for logic app workflows in multitenant Azure Logic Apps, integration service environment (ISE), and single-tenant Azure Logic Apps:
+The SQL Server connector is available for logic app workflows in multitenant Azure Logic Apps and single-tenant Azure Logic Apps:
 
 - **Consumption workflows in multi-tenant Azure Logic Apps**: This connector is available only as a managed connector. For more information, review the [managed SQL Server connector operations](/connectors/sql/?azure-portal=true) page.
 
-- **Consumption workflows in an integration service environment**: This connector is available as both a managed connector and an ISE connector designed to run in an ISE. For more information, review the managed SQL Server connector operations.
-
-- **Standard workflows in single-tenant Azure Logic Apps**: This connector is available as both a managed connector and a built-in connector designed to run in the same process as the single-tenant Azure Logic Apps runtime. However, the built-in version differs in the following ways:
-    - The built-in SQL Server connector has no triggers.
-    - The built-in SQL Server connector has only one operation: Execute Query.
+- **Standard workflows in single-tenant Azure Logic Apps**: This connector is available as both a managed connector and a built-in connector designed to run in the same process as the single-tenant Azure Logic Apps runtime. The built-in connector supports triggers (for example, when a row is inserted, modified, updated, or deleted) and multiple actions such as *Execute query*, *Execute stored procedure*, *Get rows*, *Insert row*, *Update rows*, and *Delete rows*.
 
 ## Create a logic app workflow
 
@@ -98,7 +94,7 @@ The following steps use the Azure portal. In this example, the logic app workflo
 
     :::image type="content" source="../media/module-66-automation-final-40.png" alt-text="Screenshot showing the Azure portal, workflow designer for Consumption logic app, the search box with sql server, and Get row selected in the Actions list.":::
 
-1. If you haven't already provided the SQL server name and database name, provide those values. Otherwise, from the Table name list, select the table that you want to use. In the *Row ID* property, enter the ID for the record that you want. In this example, the table name is *SalesLT.Product*.
+1. If you haven't already provided the SQL Server name and database name, provide those values. Otherwise, from the Table name list, select the table that you want to use. In the *Row ID* property, enter the ID for the record that you want. In this example, the table name is *SalesLT.Product*.
 
     :::image type="content" source="../media/module-66-automation-final-41.png" alt-text="Screenshot showing Consumption workflow designer and the Get row action with the example Table name property value and empty row ID.":::
 
