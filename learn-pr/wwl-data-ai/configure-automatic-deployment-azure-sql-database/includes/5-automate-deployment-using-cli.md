@@ -38,7 +38,7 @@ Here's a quick comparison of some commonly used commands in both their CLI and P
 | Get available subscriptions | az account list              | Get-AzSubscription          |
 | Set Subscription            | az account set –subscription | Set-AzContext -Subscription |
 | List all virtual machines   | az vm list                   | Get-AzVM                    |
-| Create a new SQL server     | az sql server create         | New-AzSqlServer             |
+| Create a new server     | az sql server create         | New-AzSqlServer             |
 
 ## Deploying SQL Database using Azure CLI
 
@@ -61,22 +61,22 @@ az sql server firewall-rule create --resource-group $resourceGroup --server $ser
 
 To learn more about all the Azure SQL CLI commands available, see [Azure SQL CLI commands.](/cli/azure/sql)
 
-## Deploying Azure Resource Manager (ARM) template using Azure CLI and PowerShell
+## Deploying Bicep files and ARM templates using Azure CLI and PowerShell
 
-With PowerShell, you have multiple options for the scope of your deployment. You can deploy to a resource group, a subscription, a management group, which is a collection of subscriptions under the same Azure template and commonly used in large enterprise deployments, or a tenant. Azure Resource Manager templates are parameterized, requiring you to pass in parameters either inline or through a parameter file, as shown in the following example.
+With PowerShell, you have multiple options for the scope of your deployment. You can deploy to a resource group, a subscription, a management group (a collection of subscriptions under the same Azure tenant, commonly used in large enterprise deployments), or a tenant. Bicep files and Azure Resource Manager templates are parameterized, requiring you to pass in parameters either inline or through a parameter file, as shown in the following example.
 
 ```powershell
 New-AzResourceGroupDeployment -Name ExampleDeployment -ResourceGroupName ExampleResourceGroup `
- -TemplateFile c:\MyTemplates\azuredeploy.json `
+ -TemplateFile c:\MyTemplates\main.bicep `
  -TemplateParameterFile c:\MyTemplates\storage.parameters.json
 ```
 
-The parameter and template files can be stored in a Git repository, Azure Blob Storage, or any other accessible location from the deploying machine.
+The same `-TemplateFile` parameter accepts either a Bicep file (`.bicep`) or an ARM template (`.json`). The parameter and template files can be stored in a Git repository, Azure Blob Storage, or any other accessible location from the deploying machine.
 
 Azure CLI offers the same deployment scope options as PowerShell. You can use local or remote parameter files and templates, just as you would with PowerShell, as shown in the following example.
 
 ```azurecli
-az deployment group create --resource-group ExampleResourceGroup --template-file '\path\template.json'
+az deployment group create --resource-group ExampleResourceGroup --template-file '\path\main.bicep'
 ```
 
 To deploy remote linked templates with relative path that are stored in a storage account, use query-string to specify the SAS token:
@@ -90,4 +90,4 @@ az deployment group create \
 ```
 
 > [!NOTE]
-> Currently, Azure CLI doesn't support deploying remote Bicep files directly. Instead, you can use the Bicep CLI to convert the Bicep file into a JSON template, and then deploy the JSON template from a remote location.
+> Azure CLI supports deploying local Bicep files directly with `az deployment group create --template-file main.bicep`, but doesn't support deploying remote Bicep files directly by URI. To deploy a remote Bicep file, use the Bicep CLI to compile it into a JSON template first, and then deploy the JSON template from a remote location.

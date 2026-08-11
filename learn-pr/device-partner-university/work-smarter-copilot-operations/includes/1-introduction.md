@@ -1,4 +1,4 @@
-Copilot+ PCs bring business-ready AI to every department—unlocking new efficiencies and delivering better outcomes with AI-powered features and solutions designed for real-world results. In this module, you'll explore how the combination of Copilot+ PC and Microsoft 365 Copilot (sold separately) helps turn everyday Operations moments like incident escalation or weekly reporting into smoother, more productive workflows.
+Copilot+ PCs bring business-ready AI to every department—unlocking new efficiencies and delivering better outcomes with AI-powered features and solutions designed for real-world results. In this module, you'll explore how the combination of Copilot+ PC and Microsoft 365 Copilot (sold separately) helps turn everyday operations moments like incident escalation or weekly reporting into smoother, more productive workflows.
 
 ## Learning objectives
 

@@ -3,7 +3,7 @@ uid: learn.wwl.describe-high-availability-disaster-recovery-strategies
 metadata:
   title: Describe high availability and disaster recovery strategies
   description: Describe high availability and disaster recovery strategies
-  ms.date: 03/27/2025
+  ms.date: 08/10/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
@@ -43,4 +43,4 @@ units:
 - learn.wwl.describe-high-availability-disaster-recovery-strategies.summary
 badge:
   uid: learn.wwl.describe-high-availability-disaster-recovery-strategies.badge
-
+

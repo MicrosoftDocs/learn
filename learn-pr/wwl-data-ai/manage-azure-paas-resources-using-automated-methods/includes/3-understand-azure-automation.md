@@ -8,7 +8,7 @@ Another common use of Azure Automation is for periodic maintenance operations, s
 
 ## Azure Automation components
 
-[Azure Automation](/azure/automation/overview?azure-portal=true) supports both automation and configuration management activities. While we'll focus on the automation components, Azure Automation can also manage server updates and desired state configuration. Here are the key components you need to execute automated tasks.
+[Azure Automation](/azure/automation/overview?azure-portal=true) supports both automation and configuration management activities. While we'll focus on the automation components, Azure Automation can also manage server updates and Desired State Configuration. Here are the key components you need to execute automated tasks.
 
 - **Runbooks**: Runbooks are the units of execution in Azure Automation. They can be defined as graphical runbooks based on PowerShell, PowerShell scripts, or Python scripts. PowerShell runbooks are most commonly used to manage Azure SQL resources.
 
@@ -18,9 +18,9 @@ Another common use of Azure Automation is for periodic maintenance operations, s
 
 - **Schedules**: Schedules are linked to runbooks and trigger a runbook at a specific time.
 
-## Azure policy
+## Azure Policy
 
-Group Policies (GPOs) have long been used by Windows server administrators to manage security and ensure consistency across Windows Server environments. Examples include enforcing password complexity and mapping shared network drives.
+Group Policies (GPOs) have long been used by Windows Server administrators to manage security and ensure consistency across Windows Server environments. Examples include enforcing password complexity and mapping shared network drives.
 
 [Azure Policy](/azure/governance/policy/overview?azure-portal=true) offers similar governance for Azure resources, enforcing rules like region limitations, naming standards, and resource sizes. Policies can be applied at various levels, such as management groups, subscriptions, or resource groups. They can also be grouped into initiatives for broader application.
 
@@ -38,7 +38,7 @@ $rg=(get-AzResourceGroup)
 $rg=($rg|where-object {($_.tags['Use'] -ne 'Internal')}).ResourceGroupName
 ```
 
-In the second line of this code sample, the list of resource groups is filtered by the tag called *'Use'*, returning only those resource groups where the tag value isn't *'Internal'*. Tags can be applied in the Azure portal, programmatically via PowerShell, Azure CLI, or as part of your deployment process. They can be applied at the subscription, resource group, or individual resource level and can be modified at any time. Azure supports up to 15 tags per resource.
+In the second line of this code sample, the list of resource groups is filtered by the tag called *'Use'*, returning only those resource groups where the tag value isn't *'Internal'*. Tags can be applied in the Azure portal, programmatically via PowerShell, Azure CLI, or as part of your deployment process. They can be applied at the subscription, resource group, or individual resource level and can be modified at any time. Azure supports up to 50 tags per resource.
 
 Tags are also included in Azure billing information, making it easier for management to break down charges by cost center. Tags are found in the overview section of the blade for every Azure resource. To add tags to a resource using the Azure portal, select **Tags**, enter the key and value for your tag, and then select **Save**.
 
