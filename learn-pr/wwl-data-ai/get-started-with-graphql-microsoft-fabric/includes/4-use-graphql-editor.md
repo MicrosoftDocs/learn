@@ -97,7 +97,7 @@ This flexibility allows developers to create more comprehensive and powerful app
 
 In this example, data from two different sources is exposed. The results panel displays information from both tables.
 
-## Connect an application to GraphQL API
+## Connect an application to API for GraphQL
 
 To connect an application to a GraphQL API, you need the **Client ID**, **Tenant ID**, and the **GraphQL endpoint address** in Fabric. 
 

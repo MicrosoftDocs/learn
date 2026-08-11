@@ -2,7 +2,7 @@ The [Hyperscale service tier](/azure/azure-sql/database/service-tier-hyperscale)
 
 Hyperscale simplifies infrastructure and application design, allowing developers to focus on business needs rather than managing database resources.
 
-Azure SQL Database used to be limited to 4 TB of storage per database. However, the Hyperscale service tier now allows databases to exceed 100 TB. Hyperscale uses horizontal scaling to add compute nodes as data grows. While the cost is similar to regular Azure SQL Database, there's an extra per terabyte storage cost. 
+Azure SQL Database used to be limited to 4 TB of storage per database. However, the Hyperscale service tier now allows databases to scale up to 128 TB. Hyperscale uses horizontal scaling to add compute nodes as data grows. While the cost is similar to regular Azure SQL Database, there's an extra per terabyte storage cost. 
 
 ## Understand the benefits
 
