@@ -3,9 +3,9 @@ uid: learn.wwl.introduction-sql-server-t-sql-enhancements
 metadata:
   title: Transform Development Workflows with T-SQL in SQL Server 2025
   description: "Explore the new T-SQL enhancements in SQL Server 2025, including AI integration, pattern matching, JSON aggregation, and more."
-  ms.date: 10/14/2025
-  author: MScalopez
-  ms.author: calopez
+  ms.date: 08/11/2026
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: module
   ms.service: azure-sql-database
 title: Transform development workflows with T-SQL in SQL Server 2025

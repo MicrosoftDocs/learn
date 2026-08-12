@@ -3,7 +3,7 @@
 
 With Azure Arc-enabled SQL Server, you can take advantage of several Azure services while still operating on-premises. SQL Server 2025 enhances this integration with improved telemetry, enhanced security features, and better integration with Microsoft Fabric for unified data governance.
 
-Azure Arc-enabled SQL Server offers automated backups and patching in addition to free inventory management. This means you can keep track of your SQL Server instances and ensure they're up-to-date and backed up without manually performing these tasks. SQL Server 2025 adds enhanced monitoring capabilities and improved automation for patch management.
+Azure Arc-enabled SQL Server offers patching and free inventory management. This means you can keep track of your SQL Server instances and ensure they're up-to-date without manually performing these tasks. Automated backups to local storage or network shares are also available as a preview feature, allowing you to configure full, differential, and transaction log backup schedules managed through the Azure portal. SQL Server 2025 adds enhanced monitoring capabilities and improved automation for patch management.
 
 Let's review some important features available on Azure Arc-enabled SQL Server.
 
@@ -29,7 +29,7 @@ To configure, run and view your best practices assessment, go to your Arc-enable
 
 You can also change the default schedule for the assessment, which gives the option to schedule it in a more preferable timeframe.
 
-<a name='azure-active-directory-authentication'></a>
+<a name='microsoft-entra-authentication'></a>
 
 ### Microsoft Entra authentication
 
