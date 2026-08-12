@@ -4,9 +4,9 @@ title: Implement T-SQL error handling
 metadata:
   title: Implement T-SQL error handling
   description: "Implement T-SQL error handling"
-  ms.date: 02/15/2023
-  author: wwlpublish
-  ms.author: rcaper
+  ms.date: 08/11/2026
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false

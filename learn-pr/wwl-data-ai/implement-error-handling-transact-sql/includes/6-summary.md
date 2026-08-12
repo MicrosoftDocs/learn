@@ -2,8 +2,8 @@ A fundamental aspect in the development of any T-SQL application is how you hand
 
 In this module, you've learned how to:
 
-- Raise errors using the RAISERROR statement.
-- Raise errors using the THROW statement.
-- Use the @@ERROR system variable.
+- Raise errors using the `RAISERROR` statement.
+- Raise errors using the `THROW` statement.
+- Use the `@@ERROR` system variable.
 - Create custom errors.
 - Create alerts that fire when errors occur.

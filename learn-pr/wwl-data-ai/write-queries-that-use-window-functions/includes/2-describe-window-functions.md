@@ -1,6 +1,6 @@
 Window functions allow you to perform calculations such as ranking, aggregations, and offset comparisons between rows.
 
-Window functions require a set of rows to work on, known as a window. The OVER clause is used to define the window you want to work on. You can then use a window function on the subset of rows you have defined.
+Window functions require a set of rows to work on, known as a window. The `OVER` clause is used to define the window you want to work on. You can then use a window function on the subset of rows you have defined.
 
 Window functions solve common problems such as generating row numbers in a result set or calculating running totals. Windows also provide an efficient way to compare values in one row with values in another without needing to join a table to itself.
 
