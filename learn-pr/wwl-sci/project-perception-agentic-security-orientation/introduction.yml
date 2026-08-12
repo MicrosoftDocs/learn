@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.project-perception-agentic-security-orientation.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to Project Perception, Microsoft's coordinated multi-agent security system for the AI era."
+  ms.date: 08/03/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/introduction.md)]

@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.project-perception-agentic-security-orientation
+metadata:
+  title: Understand How Project Perception Coordinates Security Operations
+  description: "Learn how Project Perception coordinates specialized agents across the six areas of work your team already runs: threat intelligence, triage, investigation, detection engineering, attack path analysis, and posture prioritization. Recognize when a situation calls for a coordinated playbook by naming and counting the areas of work it touches."
+  ms.date: 08/03/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: defender-xdr
+  ai-usage: ai-assisted
+title: Understand how Project Perception coordinates security operations
+summary: 'Project Perception is Microsoft''s agentic security system, accessed through the Agentic security section of the Microsoft Defender portal. Machine-paced attackers move faster than security teams can coordinate work across specialist boundaries. This module explains how Project Perception runs security operations as a coordinated, machine-speed workflow while humans stay in control of critical decisions, and gives you the recognition question that drives day-to-day tool choice: does this situation touch one area of work, or does it need a coordinated playbook across several?'
+abstract: |
+  After completing this module, you will be able to:
+  - Explain why human-paced security operations struggle to keep up with machine-paced attackers
+  - Describe how coordinated multi-agent defense runs those tasks as one connected workflow, handled by Red, Blue, and Green team agents
+  - Map Project Perception's agents and playbooks onto that model
+  - Recognize when a situation calls for a Project Perception playbook by naming and counting the areas of work it touches
+prerequisites: |
+  - Day-to-day familiarity with security operations concepts such as alerts, investigations, threat intelligence, and vulnerability management
+  - High-level familiarity with the Microsoft Defender portal and Microsoft Defender XDR workflows
+  - Basic familiarity with AI agents that act on a user's behalf
+iconUrl: /training/achievements/generic-badge.svg
+hidden: false
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- defender-xdr
+subjects:
+- threat-protection
+units:
+- learn.wwl.project-perception-agentic-security-orientation.introduction
+- learn.wwl.project-perception-agentic-security-orientation.ai-era-security-paradigm-shift
+- learn.wwl.project-perception-agentic-security-orientation.project-perception-overview
+- learn.wwl.project-perception-agentic-security-orientation.cyber-stack-enables-perception
+- learn.wwl.project-perception-agentic-security-orientation.coordinate-defense-across-agents
+- learn.wwl.project-perception-agentic-security-orientation.recognize-perception-work-shapes
+- learn.wwl.project-perception-agentic-security-orientation.knowledge-check
+- learn.wwl.project-perception-agentic-security-orientation.summary
+badge:
+  uid: learn.wwl.project-perception-agentic-security-orientation.badge
