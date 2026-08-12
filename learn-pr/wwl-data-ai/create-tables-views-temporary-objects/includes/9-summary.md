@@ -9,7 +9,8 @@ In this module, you've learned how to:
 
 ## Learn more
 
-- [Create and query database objects](/sql/t-sql/lesson-1-creating-database-objects?view=sql-server-ver15)
-- [CREATE TABLE (Transact-SQL)](/sql/t-sql/statements/create-table-transact-sql?view=sql-server-ver15)
-- [WITH common_table_expression](/sql/t-sql/queries/with-common-table-expression-transact-sql?view=sql-server-ver15)
+- [Create and query database objects](/sql/t-sql/lesson-1-creating-database-objects)
+- [`CREATE TABLE` (Transact-SQL)](/sql/t-sql/statements/create-table-transact-sql)
+- [`CREATE VIEW` (Transact-SQL)](/sql/t-sql/statements/create-view-transact-sql)
+- [WITH common_table_expression (Transact-SQL)](/sql/t-sql/queries/with-common-table-expression-transact-sql)
 - [Transact-SQL reference documentation](/sql/t-sql/language-reference)
