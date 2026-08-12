@@ -59,7 +59,7 @@ A helpful way to think about the early days of your startup is to adopt Steve Bl
 
 > ["A startup is a temporary organization that's designed to search for a repeatable and scalable business model."](https://hbr.org/2013/05/why-the-lean-start-up-changes-everything?azure-portal=true)
 
-A business model is a high-level plan for how the company will create, deliver, and capture value. It includes consideration of the customer, the value proposition, product or service, revenue streams, channels, activities, resources, partners, and costs. For a great primer on business models, reference the [Business model canvas](https://www.businessmodelsinc.com/about-bmi/tools/business-model-canvas/?azure-portal=true).
+A business model is a high-level plan for how the company will create, deliver, and capture value. It includes consideration of the customer, the value proposition, product or service, revenue streams, channels, activities, resources, partners, and costs.
 
 Although it seems counterintuitive, startup founders should set out to not build a business initially, and should resist the temptation to acquire users and make revenues. Instead, they should set out on a mission to search for a really good problem to solve, that's experienced by a large number of people, for which they could build a compelling solution, and around which they can build a scalable business model.
 

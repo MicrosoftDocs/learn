@@ -1,14 +1,11 @@
-SQL Server 2022 is a powerful hybrid data platform that offers a range of features to manage data and improve analytics. By using Azure SQL Managed Instance link feature, you can set up a hybrid disaster recovery solution. 
-
-Additionally, you can take advantage of advanced authentication options available in Microsoft Entra ID to access SQL Server 2022. Finally, with Microsoft Purview, you can create data access policies without managing individual logins or roles per SQL Server instance, simplifying access management across your organization.
+SQL Server 2025 is a powerful hybrid data platform that offers a range of features to manage data and improve analytics. By using the Azure SQL Managed Instance link feature, you can set up a hybrid disaster recovery solution. You can take advantage of advanced authentication options available in Microsoft Entra ID to access SQL Server 2025, and use Azure Arc-enabled SQL Server for centralized management and governance across your hybrid SQL estate.
 
 In this module, you've learned how to:
 
-- Discover best practices for disaster recovery using Azure SQL Managed Instance
-- Describe how Azure Arc-enabled SQL Server works
-- Understand how to implement near real time analytics with Azure Synapse Link for SQL Server
-- Explain cloud connected technologies that support security with Microsoft Entra authentication
-- Publish policies for data access without creating logins or roles with Microsoft Purview
+- Discover best practices for disaster recovery using the Azure SQL Managed Instance link
+- Describe how Azure Arc-enabled SQL Server works for centralized management
+- Understand how to implement near real-time analytics with mirroring in Microsoft Fabric
+- Explain enhanced security features including Microsoft Entra authentication and managed identity support
 
 ## Learn more
 

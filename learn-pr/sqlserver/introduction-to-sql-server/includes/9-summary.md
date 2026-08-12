@@ -5,7 +5,7 @@ You first learned the similarities and differences of SQL Server 2025 from previ
 
 In this module, you also learned how SQL Server 2025 solves challenges for data professionals in the following areas:
 
-- **AI integration**: You learned about built-in vector search capabilities, native AI model integration through T-SQL, and how to use Microsoft Foundry and OpenAI services for intelligent data processing.
+- **AI integration**: You learned about built-in vector search capabilities, native AI model integration through T-SQL, and how to use Azure AI Foundry and Azure OpenAI for intelligent data processing.
 
 - **Performance and intelligence**: You learned about AI-driven intelligent query processing, enhanced Query Store capabilities, and advanced parameter sensitive plan optimization that improves query performance with minimal configuration.
 
@@ -21,7 +21,7 @@ Here are resources to help you learn more about SQL Server 2025:
 
 - [SQL Server 2025 overview](https://aka.ms/sqlserver2025)
 - [SQL Server 2025 technical documentation](/sql/sql-server)
-- [Download SQL Server 2025 preview](https://www.microsoft.com/sql-server/sql-server-downloads)
+- [Download SQL Server 2025](https://www.microsoft.com/sql-server/sql-server-downloads)
 - [Microsoft Fabric mirroring guide](/fabric/database/mirrored-database/overview)
 - [AI features in SQL Server 2025](/sql/sql-server/ai/artificial-intelligence-intelligent-applications)
 - [Security and compliance documentation](/sql/relational-databases/security/security-center-for-sql-server-database-engine-and-azure-sql-database)
@@ -32,9 +32,9 @@ Here are resources to help you learn more about SQL Server 2025:
 
 Consider these next steps:
 
-- Download and install the SQL Server 2025 preview
+- Download and install SQL Server 2025
 - Explore the new AI capabilities with sample databases
-- Try out the preview features in a development environment
+- Enable the `PREVIEW_FEATURES` database-scoped configuration to experiment with early-access capabilities such as vector indexes and fuzzy string matching
 - Set up Microsoft Fabric mirroring for your databases
 - Experiment with the new developer tools and Python driver
 - Join the SQL Server community on GitHub and Microsoft Learn

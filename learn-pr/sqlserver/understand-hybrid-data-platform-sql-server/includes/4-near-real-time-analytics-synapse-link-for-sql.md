@@ -4,9 +4,9 @@ Mirroring in Microsoft Fabric represents a modern approach to hybrid analytics, 
 
 ## Discover how mirroring in Fabric works
 
-Mirroring in Fabric is a low-latency, low-cost replication solution that continuously replicates data from SQL Server into OneLake, Microsoft Fabric's unified data lake. The technology uses [change data capture](/sql/relational-databases/track-changes/about-change-data-capture-sql-server?azure-portal=true) (CDC) mechanisms integrated into SQL Server 2025's engine to efficiently track and replicate data changes.
+Mirroring in Fabric is a low-latency, low-cost replication solution that continuously replicates data from SQL Server into OneLake, Microsoft Fabric's unified data lake. SQL Server 2025 uses the built-in [Fabric mirroring change feed](/fabric/mirroring/sql-server?azure-portal=true) feature to efficiently track and replicate data changes, and requires Azure Arc connectivity via the Azure Extension for SQL Server. (For SQL Server 2016 through 2022, mirroring uses the [Change Data Capture (CDC)](/sql/relational-databases/track-changes/about-change-data-capture-sql-server?azure-portal=true) feature instead.)
 
-Key capabilities include near real-time replication with minimal latency (typically within seconds), zero-copy integration where data is stored in OneLake's open [Delta Lake](/azure/databricks/delta/?azure-portal=true) format accessible by all Fabric workloads, and simplified management with no complex ETL pipelines or integration runtimes to configure. The solution is cost-effective with no additional infrastructure costs and automatically handles schema evolution by synchronizing schema changes.
+Key capabilities include near real-time replication with minimal latency (typically within seconds), zero-copy integration where data is stored in OneLake's open [Delta Lake](/azure/databricks/delta/?azure-portal=true) format accessible by all Fabric workloads, and simplified management with no complex ETL pipelines to configure. The solution is cost-effective with no additional infrastructure costs and automatically handles schema evolution by synchronizing schema changes.
 
 ## Explore the architecture
 
@@ -43,7 +43,10 @@ Understanding when to use different SQL Server 2025 hybrid features helps you ch
 
 ## Configure mirroring
 
-Before setting up Fabric Mirroring, ensure you have SQL Server 2025 with the database recovery model set to Full or Bulk-logged, an active [Microsoft Fabric capacity](/fabric/enterprise/licenses?azure-portal=true) (F2 or higher recommended), and appropriate permissions including db_owner on the source database and Admin or Contributor role in the Fabric workspace. If SQL Server is on-premises or in a private network, you'll need a self-hosted integration runtime.
+Before setting up Fabric Mirroring for SQL Server 2025, ensure the following prerequisites are met: SQL Server 2025 must be connected to Azure via Azure Arc with the Azure Extension for SQL Server installed; you need a Member or Admin role in the Fabric workspace (the Contributor role lacks the required Reshare permission needed during mirrored database creation); and the dedicated Fabric login on SQL Server requires `SELECT`, `ALTER ANY EXTERNAL MIRROR`, `VIEW DATABASE PERFORMANCE STATE`, and `VIEW DATABASE SECURITY STATE` permissions in the source database, plus membership in the `##MS_ServerStateReader##` server role. For SQL Server instances behind a firewall or on a private network, set up an [on-premises data gateway](/data-integration/gateway/service-gateway-onprem?azure-portal=true) or [virtual network data gateway](/data-integration/vnet/overview?azure-portal=true) to connect Fabric to your SQL Server instance.
+
+> [!IMPORTANT]
+> Fabric Mirroring for SQL Server 2025 is supported for on-premises instances only. It is currently not supported for SQL Server 2025 instances running in an Azure Virtual Machine or on Linux.
 
 To set up mirroring, navigate to the Microsoft Fabric portal and select or create a workspace with a Fabric capacity. In your workspace, select **+ New** > **Mirrored SQL Database** and choose **SQL Server** as the source type. Configure the connection with your server name, database name, authentication credentials, and gateway if needed for on-premises servers.
 

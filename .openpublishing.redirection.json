@@ -4,7 +4,7 @@
       "source_path_from_root": "/learn-pr/azure/aks-app-scale-keda/index.yml",
       "redirect_url": "/training/modules/configure-scaling-azure-kubernetes-service/",
       "redirect_document_id": false
-    },      
+    },
     {
       "source_path_from_root": "/learn-pr/achievements/learn.wwl.deploy-cloud-based-tools.trophy.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/",
@@ -989,7 +989,7 @@
       "source_path_from_root": "/learn-pr/azure/aks-app-scale-keda/8-summary.yml",
       "redirect_url": "/training/modules/configure-scaling-azure-kubernetes-service/",
       "redirect_document_id": false
-    },       
+    },
     {
       "source_path_from_root": "/learn-pr/paths/examine-application-management/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-applications-intune/",
@@ -1184,37 +1184,37 @@
       "source_path_from_root": "/learn-pr/azure/aks-app-scale-keda/7-exercise-deploy-scale-object.yml",
       "redirect_url": "/training/modules/configure-scaling-azure-kubernetes-service/",
       "redirect_document_id": false
-    },     
+    },
     {
       "source_path_from_root": "/learn-pr/azure/aks-app-scale-keda/6-concept-scaling-options.yml",
       "redirect_url": "/training/modules/configure-scaling-azure-kubernetes-service/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path_from_root": "/learn-pr/azure/aks-app-scale-keda/5-exercise-deploy-app.yml",
       "redirect_url": "/training/modules/configure-scaling-azure-kubernetes-service/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path_from_root": "/learn-pr/azure/aks-app-scale-keda/4-concept-deploy-app.yml",
       "redirect_url": "/training/modules/configure-scaling-azure-kubernetes-service/",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path_from_root": "/learn-pr/azure/aks-app-scale-keda/3-exercise-deploy-keda.yml",
       "redirect_url": "/training/modules/configure-scaling-azure-kubernetes-service/",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path_from_root": "/learn-pr/azure/aks-app-scale-keda/2-concept-keda-scaling.yml",
       "redirect_url": "/training/modules/configure-scaling-azure-kubernetes-service/",
       "redirect_document_id": false
-    },     
+    },
     {
       "source_path_from_root": "/learn-pr/azure/aks-app-scale-keda/1-introduction.yml",
       "redirect_url": "/training/modules/configure-scaling-azure-kubernetes-service/",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
@@ -65505,7 +65505,7 @@
     },
     {
       "source_path": "learn-pr/paths/powershell/index.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?terms=PowerShell",
       "redirect_document_id": false
     },
     {
@@ -66100,42 +66100,42 @@
     },
     {
       "source_path": "learn-pr/powershell/introduction-to-powershell/index.yml",
-      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/powershell/introduction-to-powershell/1-introduction.yml",
-      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/powershell/introduction-to-powershell/2-what-is-powershell.yml",
-      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/powershell/introduction-to-powershell/3-exercise-powershell.yml",
-      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/powershell/introduction-to-powershell/4-cmdlets.yml",
-      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/powershell/introduction-to-powershell/5-exercise-cmdlets.yml",
-      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/powershell/introduction-to-powershell/6-knowledge-check.yml",
-      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/powershell/introduction-to-powershell/7-summary.yml",
-      "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
+      "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
       "redirect_document_id": false
     },
     {

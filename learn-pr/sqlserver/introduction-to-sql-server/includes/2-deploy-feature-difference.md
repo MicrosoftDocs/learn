@@ -20,10 +20,10 @@ SQL Server 2025 offers editions to meet different requirements, with updates to 
 | Edition | Purpose | Key Limitations | Production Use |
 |---------|---------|-----------------|----------------|
 | Evaluation | Feature testing | 180-day limit | No |
-| Developer | Development and testing | None (feature-wise) | No |
-| Express | Basic applications | CPU, memory, database size limits | Yes |
-| Web | Web applications | Limited to web workloads | Yes |
-| Standard | General business use | Feature limitations | Yes |
+| Enterprise Developer | Development and testing | None (feature-wise) | No |
+| Standard Developer | Development and testing | Standard edition feature set | No |
+| Express | Basic applications | 50 GB database size, CPU and memory limits | Yes |
+| Standard | General business use | Feature and capacity limits | Yes |
 | Enterprise | Mission-critical systems | None | Yes |
 
 For a full list of capabilities for each edition, see [What's new in SQL Server 2025](/sql/sql-server/what-s-new-in-sql-server-2025).

@@ -49,6 +49,8 @@ CREATE TABLE knowledge_base (
 );
 
 -- Create a vector index for efficient similarity search
+-- NOTE: CREATE VECTOR INDEX is a preview feature in SQL Server 2025.
+-- Enable it first: ALTER DATABASE SCOPED CONFIGURATION SET PREVIEW_FEATURES = ON;
 CREATE VECTOR INDEX idx_knowledge_embedding ON knowledge_base(embedding);
 ```
 
