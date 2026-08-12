@@ -2,13 +2,13 @@ Stored procedures may be called by an application, by a user, or when SQL Server
 
 ## Execute a stored procedure by a user 
 
-When an application or user executes a stored procedure, the EXECUTE command or its shortcut, EXEC is used, followed by the two-part name of the procedure. For example:
+When an application or user executes a stored procedure, the `EXECUTE` command or its shortcut, `EXEC` is used, followed by the two-part name of the procedure. For example:
 
 `EXEC dbo.uspGetEmployeeManagers`
 
-System stored procedures are also called using the EXECUTE or EXEC keyword. The calling database collation is used when matching system procedure names. If the database collation is case-sensitive, you must execute the stored procedure with exact case of the procedure name.  
+System stored procedures are also called using the `EXECUTE` or `EXEC` keyword. The calling database collation is used when matching system procedure names. If the database collation is case-sensitive, you must execute the stored procedure with exact case of the procedure name.  
 
-If the stored procedure is the first statement in the T-SQL batch, the procedure can be executed without the EXECUTE or EXEC keyword.
+If the stored procedure is the first statement in the T-SQL batch, the procedure can be executed without the `EXECUTE` or `EXEC` keyword.
 
 To check the exact system procedure names, use the catalog views:
 
@@ -35,7 +35,7 @@ sp_procoption [ @ProcName = ] 'procedure'
 For example:
 
 ```sql
-EXEC sp_procoption @ProcName = myProcedure    
+EXEC sp_procoption @ProcName = N'myProcedure'    
     , @OptionName = 'startup'   
     , @OptionValue = 'on';
 ```

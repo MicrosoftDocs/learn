@@ -25,7 +25,7 @@ FROM CTE_year
 GROUP BY orderyear;
 ```
 
-You name the CTE (named CTE_year) using the WITH clause, then you use AS () to define your subquery. You can then reference your resulting CTE in the outer query, which in this case is done  in the final SELECT statement (FROM CTE_year).
+You name the CTE (named CTE_year) using the WITH clause, then you use AS () to define your subquery. You can then reference your resulting CTE in the outer query, which in this case is done  in the final `SELECT` statement (`FROM` CTE_year).
 The result would look like this:
 
 |orderyear  |cust_count  |
@@ -36,7 +36,8 @@ The result would look like this:
 
 When writing queries with CTEs, consider the following guidelines:
 
-- CTEs require a name for the table expression, in addition to unique names for each of the columns referenced in the CTE's SELECT clause.
+- CTEs require a name for the table expression. Column names in the CTE result set must be unique — either because the underlying `SELECT` columns already have distinct names, or by supplying column aliases. An explicit column list `WITH CTE_name (col1, col2)` is optional when column names are already unique.
 - CTEs may use inline or external aliases for columns.
+- When a CTE follows another statement in the same batch, the preceding statement must end with a semicolon (`;`). For example: `SELECT 1; WITH CTE_name AS (...) SELECT ...`.
 - Unlike a derived table, a CTE may be referenced multiple times in the same query with one definition. Multiple CTEs may also be defined in the same WITH clause.
 - CTEs support recursion, in which the expression is defined with a reference to itself. Recursive CTEs are beyond the scope of this module.
