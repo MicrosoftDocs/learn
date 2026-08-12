@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.project-perception-agentic-security-orientation.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 08/03/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 7
+quiz:
+  title: ""
+  questions:
+  - content: "Contoso Financial Services runs the standard six areas of work. Its current pipeline from initial threat intelligence extraction to new detection rules typically takes eight business days as findings move across specialist queues. Contoso's leadership is evaluating whether Project Perception can compress that pipeline. Which statement best explains what Project Perception changes to make the compression possible?"
+    choices:
+    - content: "Project Perception replaces the six areas of work with a single unified security analysis process that no longer requires separate specialists for threat intelligence, attack path analysis, or detection engineering."
+      isCorrect: false
+      explanation: "Coordinated multi-agent defense doesn't replace or collapse the areas of work. Contoso's threat intelligence analysts, attack-path specialists, and detection engineers still bring the same expertise. Project Perception changes how the areas of work connect, not what they are."
+    - content: "Project Perception runs Contoso's six existing areas of work as one continuously connected workflow, so each area's output flows into the next through shared security context instead of waiting in specialist queues."
+      isCorrect: true
+      explanation: "Correct. The areas of work themselves don't change. Contoso still needs threat intelligence extraction, attack path analysis, posture prioritization, and detection authoring. What changes is that they run as one coordinated workflow with the handoffs closed at machine speed, not as separate human-paced projects."
+    - content: "Project Perception skips the threat intelligence extraction and attack path analysis areas by having AI generate detection rules directly from the raw advisory, cutting four areas out of the pipeline."
+      isCorrect: false
+      explanation: "Project Perception doesn't skip areas of work. Each one still runs, because a well-authored detection rule depends on the threat intelligence extraction and attack path analysis that came before it. What's compressed is the time between the areas, not the number of them."
+  - content: "Continuing the scenario: A new threat intelligence advisory arrives at Contoso about a state-linked actor. The SOC lead wants to run the Protect against a threat playbook against the advisory. Which sequence of work does that playbook orchestrate, and how do the participating Project Perception agents map to the Red, Blue, and Green teams of agents?"
+    choices:
+    - content: "Threat intelligence analysis (Threat Intelligence Agent, Blue), then attack path analysis (Recon Agent, Red), then posture prioritization (Posture Prioritization Agent, Green), then detection engineering (Detection Authoring Agent, Blue). Four areas of work across all three teams."
+      isCorrect: true
+      explanation: "Correct. The playbook connects four areas of work from three teams in a specific order: intelligence extraction feeds attack path analysis, which feeds posture prioritization, and detection engineering authors new rules to close the coverage gaps identified along the way."
+    - content: "All four steps run on Blue team agents (Threat Intelligence Agent, Attack Investigation Agent, Detection Authoring Agent, Security Alert Triage Agent), because Blue covers investigate and assess risk."
+      isCorrect: false
+      explanation: "The playbook uses two Blue agents (Threat Intelligence and Detection Authoring), but it also uses the Recon Agent (Red, for attack path analysis) and the Posture Prioritization Agent (Green, for posture prioritization). The whole point of coordinated defense is that work from Red, Blue, and Green teams runs as one connected workflow, not that a Blue-only pipeline runs on its own."
+    - content: "Attack path analysis and posture prioritization both run on Green team agents, because both are hardening-oriented areas of work."
+      isCorrect: false
+      explanation: "Attack path analysis is a Red-team area of work (identify weaknesses: what paths would an attacker exploit?) run by the Recon Agent. Posture prioritization is a Green-team area of work (remediate and harden: what should we fix first, and why?) run by the Posture Prioritization Agent. They're related but they sit in different teams and are run by different agents."
+  - content: "Continuing the scenario: While the Protect against a threat playbook runs, a separate Contoso alert triage analyst is working through a suspicious sign-in alert on a VIP account. The analyst wants a fast summary of the alert stack, a KQL query to check for related activity elsewhere in the tenant, and a read on the account's recent behavior. Which best describes the shape of the response this situation calls for?"
+    choices:
+    - content: "The Protect against a threat playbook, extended to cover this alert as another input to its workflow."
+      isCorrect: false
+      explanation: "The Protect against a threat playbook coordinates threat intelligence analysis, attack path analysis, posture prioritization, and detection engineering. It's built for cross-area response to a threat actor advisory, not a single-analyst triage task. Running it here would be over-engineering the immediate need."
+    - content: "A Project Perception playbook focused on one area that runs alert triage end to end on this specific VIP alert."
+      isCorrect: false
+      explanation: "Project Perception ships playbooks focused on one area, but those run autonomously against a queue, not as an analyst-in-the-driver's-seat task on one specific alert. The situation describes an analyst working through one alert by hand. That's work that stays inside one area, handled inside the alert triage tools they already use, not a Project Perception playbook."
+    - content: "Work that stays inside one area, handled inside the alert triage tools the analyst already uses. This situation isn't the shape a Project Perception playbook is built for."
+      isCorrect: true
+      explanation: "Correct. Naming the areas of work the situation touches yields one: alert triage. The analyst holds the goal and the judgment on one specific alert. That's work that stays inside one area, handled inside the existing alert-triage tools, not with a coordinated Project Perception playbook. Project Perception playbooks are the shape when a situation needs coordination across several areas of work."
+  - content: "Continuing the scenario: The Protect against a threat playbook has finished and produced a coordinated report showing two internet-facing Contoso applications present the paths the actor exploits. An analyst reviewing the report wants to dig into one specific investigation subtree, ask follow-up questions about one indicator of compromise, and run an exploratory KQL query for a pattern the playbook didn't cover. Which best describes the shape of the response this situation calls for?"
+    choices:
+    - content: "Coordinate across areas only. Re-trigger the playbook with the analyst's follow-up questions added as another stage inside its workflow."
+      isCorrect: false
+      explanation: "Playbooks orchestrate a specific preset sequence of work and can't absorb ad-hoc analyst follow-up as a new stage. The analyst's need is single-analyst work inside incident investigation, running alongside the playbook's output rather than being absorbed into a second playbook run."
+    - content: "Both at once. Project Perception's coordinated output is the substrate the analyst is working from, and the analyst does work inside incident investigation on the specific subtree, IOC follow-up, and exploratory KQL."
+      isCorrect: true
+      explanation: "Correct. Naming the areas of work makes it clear: the playbook already coordinated four areas across teams, and the analyst's manual follow-up sits inside incident investigation. Project Perception coordinates across areas of work. Single-analyst work happens inside the tools that area already uses. Real investigations regularly run both at once, with a coordinated playbook's output plus an analyst working by hand inside a specific area."
+    - content: "Work that stays inside one area only. Now that the playbook has finished, all remaining work is inside incident investigation, and the playbook's role in the situation ends when its run completes."
+      isCorrect: false
+      explanation: "The playbook did finish its run, but the coordinated report it produced is the ongoing Project Perception coordination inside the investigation. Treating the situation as inside-one-area-only underweights the fact that the analyst's follow-up is anchored in Project Perception's cross-area output. Real investigations treat this as both at once, with Project Perception's coordinated report and the analyst's inside-one-area work running alongside each other."
