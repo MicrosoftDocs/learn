@@ -9,10 +9,10 @@ In this exercise, you use CREATE EXTERNAL TABLE AS SELECT (CETAS) to:
 ## Prerequisites
 
 - A SQL Server 2025 instance with internet connectivity and the **PolyBase Query Service for External Data** feature installed and enabled as for previous exercises.
-- The [AdventureWorks2022](/sql/samples/adventureworks-install-configure) sample database restored to your server to use for sample data.
+- The [AdventureWorks2025](/sql/samples/adventureworks-install-configure) sample database restored to your server to use for sample data.
 - An Azure Storage account with a Blob Storage container named `data` created. To create the storage, see [Quickstart: Upload, download, and list blobs with the Azure portal](/azure/storage/blobs/storage-quickstart-blobs-portal).
 - The Azure role-based access control (RBAC) **Storage Blob Data Contributor** role assigned in Azure. For more information, see [Assign an Azure role for access to blob data](/azure/storage/blobs/assign-azure-role-data-access).
-- A blob container SAS token with **READ**, **WRITE**, **LIST**, and **CREATE** permissions to be used for CETAS. To create the SAS token, see [Create shared access signature (SAS) tokens for your storage containers](/azure/cognitive-services/translator/document-translation/how-to-guides/create-sas-tokens).
+- A blob container SAS token with **READ**, **WRITE**, **LIST**, and **CREATE** permissions to be used for CETAS. To create the SAS token, see [Grant limited access to Azure Storage resources using shared access signatures (SAS)](/azure/storage/common/storage-sas-overview).
 
 ## Use CETAS to export a table as Parquet
 
@@ -36,12 +36,12 @@ Imagine that you work with a business analytics team that wants to export data o
     ORDER BY [YEAR]
     ```
 
-    :::image type="content" source="../media/ssms-order-detail-by-year.png" alt-text="Screenshot of SSMS and the results from the AdventureWorks2022 database showing purchase orders grouped by year.":::
+    :::image type="content" source="../media/ssms-order-detail-by-year.png" alt-text="Screenshot of SSMS and the results from the AdventureWorks2025 database showing purchase orders grouped by year.":::
 
 1. Create a database master key for the database, as in the previous exercises.
 
     ```sql
-    Use AdventureWorks2022
+    USE AdventureWorks2025;
     
     DECLARE @randomWord VARCHAR(64) = NEWID();
     DECLARE @createMasterKey NVARCHAR(500) = N'
@@ -113,7 +113,7 @@ Imagine that you work with a business analytics team that wants to export data o
     SELECT * FROM ex_data_2011_2012
     ```
 
-   :::image type="content" source="../media/ssms-select-from-external-table.png" alt-text="Screenshot of results from the AdventureWorks2022 database showing the results from the external table.":::
+   :::image type="content" source="../media/ssms-select-from-external-table.png" alt-text="Screenshot of results from the AdventureWorks2025 database showing the results from the external table.":::
 
 The data is now exported to Parquet and is easily accessible through the external table. The business analytics team can query the external table or point their reporting tool at the Parquet file.
 
@@ -203,7 +203,7 @@ From the first data exploration query, you know there are 5551 records from 2014
     WHERE YEAR([DUEDATE]) = 2013;
     ```
 
-1. After you execute these commands, refresh SSMS **Object Explorer**. Then open **Databases** > **AdventureWorks2022** > **Tables** > **External Tables** to see the external tables.
+1. After you execute these commands, refresh SSMS **Object Explorer**. Then open **Databases** > **AdventureWorks2025** > **Tables** > **External Tables** to see the external tables.
 
    :::image type="content" source="../media/external-tables-2011-2013.png" alt-text="Screenshot of SSMS showing the external tables for 2011, 2012, and 2013.":::
 

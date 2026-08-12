@@ -10,7 +10,7 @@ Organizations can accelerate application performance with intelligent query proc
 SQL Server 2025 also empowers developers to build modern applications by connecting relational data with data lakes, leveraging built-in AI models, and utilizing enhanced T-SQL capabilities. New support for [Simple Storage Service (S3) compatible storage providers](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage) and expanded cloud-native features enable flexible data management and analytics.
 
 > [!NOTE]
-> This module covers features available in the SQL Server 2025 preview release. Some features might change before the final release.
+> This module covers features available in the generally available (GA) release of SQL Server 2025 (17.x).
 
 Here are some of the capabilities you learn about in this module:
 

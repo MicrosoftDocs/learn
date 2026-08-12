@@ -20,14 +20,14 @@ The new AI features in SQL Server 2025 fall into three main categories: AI gener
 
 SQL Server 2025 allows you to register and manage external AI models using T-SQL.  
 - **CREATE EXTERNAL MODEL / ALTER EXTERNAL MODEL / DROP EXTERNAL MODEL** – Manage AI models that are hosted locally or through supported model providers.  
-- **CREATE VECTOR INDEX** – Creates an index optimized for vector data to accelerate similarity searches.  
-- **VECTOR_SEARCH** – Performs similarity search operations on vector data using the vector index, returning the closest matches based on the selected distance metric.
+- **CREATE VECTOR INDEX** *(Preview — requires `PREVIEW_FEATURES = ON`)* – Creates an index optimized for vector data to accelerate approximate similarity searches.  
+- **VECTOR_SEARCH** *(Preview — requires `PREVIEW_FEATURES = ON`)* – Performs approximate similarity search on vector data using a vector index, returning the closest matches based on the selected distance metric.
 
 These capabilities allow SQL Server to serve as a foundation for retrieval-augmented generation, recommendation engines, and semantic search applications entirely within the database engine.
 
 ### Half-precision vector storage and binary ingest
 
-Vectors can now use **half-precision floating-point (fp16)** elements to reduce memory usage and improve scan performance in embedding-heavy workloads.  
+Vectors can now use **half-precision floating-point (fp16)** elements *(Preview — requires `PREVIEW_FEATURES = ON`)* to reduce memory usage and improve scan performance in embedding-heavy workloads. The `float16` base type supports up to 3,996 dimensions per vector.  
 You can also **bulk-load vectors** in binary format using `BULK INSERT` or `OPENROWSET(BULK ...)`, which simplifies importing large embedding sets created outside SQL Server.
 
 ## Example Scenario: Building a Product Recommendation Query
@@ -36,14 +36,31 @@ Imagine you work for a retail company that stores product descriptions in a SQL 
 
 ### Create and Register the Model
 
-Before generating embeddings, you must register an external model.
+Before generating embeddings, create a database scoped credential for authentication, then register an external model.
 
 ```sql
+-- Step 1: Create a database master key if one doesn't exist
+IF NOT EXISTS (SELECT * FROM sys.symmetric_keys
+               WHERE [name] = '##MS_DatabaseMasterKey##')
+    CREATE MASTER KEY ENCRYPTION BY PASSWORD = N'<your-strong-password>';
+GO
+
+-- Step 2: Store the OpenAI API key as a database scoped credential
+CREATE DATABASE SCOPED CREDENTIAL [https://api.openai.com/v1/embeddings]
+    WITH IDENTITY = 'HTTPEndpointHeaders',
+    SECRET = '{"Authorization":"Bearer <your-openai-api-key>"}';
+GO
+
+-- Step 3: Register the external model
 CREATE EXTERNAL MODEL embedding_model
-FROM OPENAI
-WITH (ENDPOINT = 'https://api.openai.com/v1/embeddings',
-      API_KEY = SECRET('openai_key'),
-      MODEL_NAME = 'text-embedding-3-small');
+WITH (
+    LOCATION = 'https://api.openai.com/v1/embeddings',
+    API_FORMAT = 'OpenAI',
+    MODEL_TYPE = EMBEDDINGS,
+    MODEL = 'text-embedding-3-small',
+    CREDENTIAL = [https://api.openai.com/v1/embeddings]
+);
+GO
 ```
 
 ### Generate and Store Embeddings
@@ -61,15 +78,19 @@ CREATE TABLE ProductEmbeddings
 INSERT INTO ProductEmbeddings (ProductID, Description, Embedding)
 SELECT ProductID,
        Description,
-       AI_GENERATE_EMBEDDINGS('embedding_model', Description)
+       AI_GENERATE_EMBEDDINGS(Description USE MODEL embedding_model)
 FROM Products;
 ```
 
 ### Create a Vector Index and Run a Search
 
-To improve search performance, create a vector index to speed up similarity searches.
+`CREATE VECTOR INDEX` and `VECTOR_SEARCH` are preview features in SQL Server 2025 RTM. Enable preview features on the database before using them.
 
 ```sql
+-- Enable preview features (required for CREATE VECTOR INDEX and VECTOR_SEARCH)
+ALTER DATABASE SCOPED CONFIGURATION SET PREVIEW_FEATURES = ON;
+GO
+
 CREATE VECTOR INDEX idx_ProductEmbedding
 ON ProductEmbeddings (Embedding)
 WITH (DISTANCE_METRIC = 'cosine');
@@ -79,10 +100,10 @@ Now you can perform a semantic search for related products:
 
 ```sql
 DECLARE @query NVARCHAR(MAX) = 'waterproof hiking backpack';
-DECLARE @vector VECTOR(1536) = AI_GENERATE_EMBEDDINGS('embedding_model', @query);
+DECLARE @vector VECTOR(1536) = AI_GENERATE_EMBEDDINGS(@query USE MODEL embedding_model);
 
 SELECT TOP 5 ProductID, Description,
-       VECTOR_DISTANCE(Embedding, @vector, 'cosine') AS SimilarityScore
+       VECTOR_DISTANCE('cosine', @vector, Embedding) AS SimilarityScore
 FROM ProductEmbeddings
 ORDER BY SimilarityScore ASC;
 ```
