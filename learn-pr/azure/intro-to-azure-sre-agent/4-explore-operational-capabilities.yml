@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-sre-agent.explore-operational-capabilities
+title: Explore operational capabilities
+metadata:
+  title: Explore Azure SRE Agent operational capabilities
+  description: Explore incident response, scheduled operations, investigation, knowledge, integrations, and customization in Azure SRE Agent.
+  ms.date: 08/06/2026
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-explore-operational-capabilities.md)]
