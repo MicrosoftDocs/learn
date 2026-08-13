@@ -1,6 +1,96 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-plugins-semantic-kernel/index.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-plugins-semantic-kernel/8-summary.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-plugins-semantic-kernel/7-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-plugins-semantic-kernel/6-exercise-run-semantic-kernel-prompts.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },     
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-plugins-semantic-kernel/5-store-chat-history.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },     
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-plugins-semantic-kernel/4-use-handlebars-prompt-templates.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },     
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-plugins-semantic-kernel/3-use-semantic-kernel-prompt-templates.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },     
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-plugins-semantic-kernel/2-optimize-language-model-prompts.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },      
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/create-plugins-semantic-kernel/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/build-your-kernel/index.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },     
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/build-your-kernel/7-summary.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },     
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/build-your-kernel/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/build-your-kernel/5-exercise-build-kernel-object.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/build-your-kernel/4-how-build-your-kernel.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },     
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/build-your-kernel/3-why-use-semantic-kernel.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },     
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/build-your-kernel/2-what-semantic-kernel.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },     
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/build-your-kernel/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },      
+    {
+      "source_path_from_root": "/learn-pr/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk/index.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },     
+    {
       "source_path_from_root": "/learn-pr/azure/aks-app-scale-keda/index.yml",
       "redirect_url": "/training/modules/configure-scaling-azure-kubernetes-service/",
       "redirect_document_id": false
@@ -989,7 +1079,7 @@
       "source_path_from_root": "/learn-pr/azure/aks-app-scale-keda/8-summary.yml",
       "redirect_url": "/training/modules/configure-scaling-azure-kubernetes-service/",
       "redirect_document_id": false
-    },
+    },       
     {
       "source_path_from_root": "/learn-pr/paths/examine-application-management/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/manage-applications-intune/",
