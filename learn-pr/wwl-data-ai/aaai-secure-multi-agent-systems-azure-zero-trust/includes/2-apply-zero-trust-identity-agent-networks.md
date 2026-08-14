@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=44307d88-faf6-42cf-9766-ef695880ce17]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Entra ID managed identities give each agent its own cryptographic identity without stored credentials, enabling granular RBAC scoping and independent access lifecycle management. In this unit, you assign per-agent managed identities, scope role assignments by agent function, and configure federated identity for user-context operations.
 
 | Security Layer | Traditional Perimeter | Zero-Trust Architecture |
@@ -141,3 +152,5 @@ This pattern ensures the agent never accumulates persistent access to customer r
 - **Per-agent managed identities** eliminate shared credentials by giving each agent its own Azure identity, enabling granular audit trails and independent credential lifecycle management.
 - **RBAC scoping by function** restricts each agent to only the Azure resources it needs—the market analysis agent accesses OpenAI but not key vault secrets; the compliance agent accesses document storage but not model deployments.
 - **Federated identity with On-Behalf-Of (OBO)** lets agents operate with the user's permissions when accessing customer-specific resources, ensuring the agent never has broader access than the human who invoked it.
+
+::: zone-end

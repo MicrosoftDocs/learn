@@ -2,12 +2,12 @@ Dynamic SQL allows you to build a character string that can be executed as T-SQL
 
 There are two ways of creating dynamic SQL, either using:
 
-1. **EXECUTE** or **EXEC** keywords.
-2. The system stored procedure **sp_executesql**.
+1. **`EXECUTE`** or **`EXEC`** keywords.
+2. The system stored procedure **`sp_executesql`**.
 
 ## Dynamic SQL using EXECUTE or EXEC
 
-To write a dynamic SQL statement with EXECUTE or EXEC, the syntax is:
+To write a dynamic SQL statement with `EXECUTE` or `EXEC`, the syntax is:
 
 `EXEC (@string_variable);`
 
@@ -21,23 +21,28 @@ EXEC(@sqlstring);
 GO
 ```
 
-## Dynamic SQL using Sp_executesql
+> [!WARNING]
+> If the string passed to `EXEC` is built by concatenating user-supplied input, the code is vulnerable to SQL injection. Never concatenate unvalidated input into a dynamic SQL string. When user-supplied values must be included, use `sp_executesql` with parameters instead—this keeps the SQL text constant and passes values separately, which eliminates the injection surface.
 
-Sp_executesql allows you to execute a T-SQL statement with parameters. Sp_executesql can be used instead of stored procedures when you want to pass a different value to the statement. The T-SQL statement stays the same, and only the parameter values change. Like stored procedures, it's likely that the SQL Server query optimizer will reuse the execution plan.
+## Dynamic SQL using sp_executesql
 
-Sp_executesql takes a T-SQL statement as an argument, which can be either a Unicode constant or a Unicode variable. For example, both these code examples are valid:
+`sp_executesql` allows you to execute a T-SQL statement with parameters. `sp_executesql` can be used instead of stored procedures when you want to pass a different value to the statement. The T-SQL statement stays the same, and only the parameter values change. Like stored procedures, it's likely that the SQL Server query optimizer will reuse the execution plan.
+
+`sp_executesql` takes a T-SQL statement as an argument, which can be either a Unicode constant or a Unicode variable. The following example uses a variable:
 
 ```sql
-DECLARE @sqlstring1 NVARCHAR(1000);
-SET @SqlString1 =
+DECLARE @sqlString1 NVARCHAR(1000);
+SET @sqlString1 =
     N'SELECT TOP(10) name, listprice
     FROM SalesLT.Product
     GROUP BY name, listprice
     ORDER BY listprice DESC;'
-EXECUTE sp_executesql @SqlString1;
+EXECUTE sp_executesql @sqlString1;
+```
 
-OR
+The following example passes a Unicode constant directly:
 
+```sql
 EXECUTE sp_executesql N'SELECT TOP(10) name, listprice
     FROM SalesLT.Product
     GROUP BY name, listprice
@@ -51,5 +56,5 @@ EXECUTE sp_executesql
           N'SELECT * FROM SalesLT.Customer   
           WHERE CompanyName = @company',  
           N'@company nvarchar(128)',  
-          @company = "Sharp Bikes";
+          @company = N'Sharp Bikes';
 ```

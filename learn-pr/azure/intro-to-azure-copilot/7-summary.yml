@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-copilot.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review what you learned about Azure Copilot and decide whether it fits your Azure management needs.
+  ms.date: 06/23/2026
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a1653f0e-7ba1-4839-848e-b57ca51562c1]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The Azure AI Inference SDK lets you build multiturn reasoning chains where each completion call produces one verified reasoning layer, grounding every subsequent step in structured, validated output. You use this pattern in this unit to design production-grade reasoning architectures for clinical agents.
 
 When clinical agents analyze patient documents to generate care recommendations, a single reasoning step often produces incomplete or unverified conclusions. A patient uploads lab results showing elevated blood glucose. The agent needs to extract the numeric values, interpret them against clinical thresholds, cross-reference with the patient's medication history, assess risk factors, and synthesize a recommendation—each step building on verified facts from the previous layer. This requires structured multiturn reasoning, not just asking the model to "think step by step" in one pass.
@@ -166,3 +177,5 @@ Allocate your reasoning budget before invoking the agent. If complexity signals 
 Monitor the cost-quality trade-off in production. Track token usage per reasoning turn and correlate with clinical accuracy scores from quality reviews. If two-turn reasoning achieves the same accuracy as three-turn for a particular case type, reduce the budget for that type. Reasoning budget allocation should be data-driven, not arbitrary.
 
 Multi-turn reasoning chains are only as reliable as the inputs they process. The next unit examines how to defend your reasoning pipeline against prompt injection attacks embedded in patient-provided documents.
+
+::: zone-end

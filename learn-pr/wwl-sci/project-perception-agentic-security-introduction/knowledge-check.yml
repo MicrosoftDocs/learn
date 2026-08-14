@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.intro-project-perception-agentic-security.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 08/07/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 5
+quiz:
+  title: ""
+  questions:
+  - content: "A security director asks what Project Perception can actually do today. Which best captures a set of capabilities Project Perception provides?"
+    choices:
+    - content: "Project Perception can extract actionable intelligence from a threat actor advisory, map whether the environment presents the attack paths that actor exploits, and recommend which findings to remediate first."
+      isCorrect: true
+      explanation: "Correct. These are three of Project Perception's current capabilities: threat intelligence extraction, attack path analysis, and posture prioritization. Project Perception also reconstructs incidents and authors new detection rules to close coverage gaps."
+    - content: "Project Perception generates a real-time SOC dashboard that replaces the Microsoft Defender portal, and it's the only place SOC analysts work day to day."
+      isCorrect: false
+      explanation: "Project Perception lives inside the Defender portal (Agentic security section), not as a replacement for it. It coordinates agents that do specific security work, and analysts continue to work across the existing Defender portal surfaces."
+    - content: "Project Perception writes production firewall rules and pushes them to the network without any human review."
+      isCorrect: false
+      explanation: "Project Perception is designed with humans in the loop at critical decisions. Approval gates pause the workflow before high-impact actions. Project Perception doesn't push production changes autonomously."
+  - content: "Which section of the Microsoft Defender portal exposes Project Perception?"
+    choices:
+    - content: "Threat intelligence."
+      isCorrect: false
+      explanation: "Threat intelligence is one of the security tasks a Project Perception agent can automate, not the section of the Defender portal that exposes Project Perception itself. Project Perception is accessed through the Agentic security section."
+    - content: "Attack simulation training."
+      isCorrect: false
+      explanation: "Attack simulation training is a separate area of the Defender portal. Project Perception is exposed through the Agentic security section."
+    - content: "Agentic security."
+      isCorrect: true
+      explanation: "Correct. Agentic security is the Defender portal section that exposes Project Perception's chat, agents, and playbooks."
+  - content: "Which best describes the role that the layers named 'security context' and 'the harness' play inside Project Perception's Cyber Stack architecture?"
+    choices:
+    - content: "They're the two layers a Defender administrator configures in the portal to control which agents are enabled and how playbooks run."
+      isCorrect: false
+      explanation: "Agents and playbooks are what an administrator configures in the portal. Security context and the harness are architectural layers inside Project Perception, not admin-facing controls."
+    - content: "They're the two layers that stitch agents together. Security context is the shared understanding of the environment that every agent reads. The harness is the orchestration layer that sequences models and agents through the workflow."
+      isCorrect: true
+      explanation: "Correct. The Cyber Stack has six layers, but security context and the harness do most of the work of turning specialized agents that could each do something into agents running as one continuous workflow."
+    - content: "They're two administrator-facing surfaces in the Agentic security section: security context is where agents get enabled, and the harness is where playbook schedules are configured."
+      isCorrect: false
+      explanation: "Agents and playbooks are what an administrator configures in the portal. Security context and the harness are architectural layers inside Project Perception, not admin-facing surfaces."

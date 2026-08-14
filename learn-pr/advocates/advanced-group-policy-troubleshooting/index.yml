@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.devrel.advanced-group-policy-troubleshooting
+metadata:
+  title: Advanced Group Policy Troubleshooting
+  description: Diagnose Group Policy scope, processing, replication, connectivity, performance, effective-state, and Windows Server 2025 hardening compatibility issues.
+  ms.date: 08/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+title: Advanced Group Policy troubleshooting
+summary: Troubleshoot Group Policy by diagnosing processing, replication, connectivity, performance, and Windows Server 2025 hardening compatibility issues.
+abstract: |
+  In this module, you'll:
+  - Trace a setting from its Group Policy Object (GPO) link and Group Policy Container through the Group Policy Template, client-side extension processing, effective Windows state, and application behavior.
+  - Predict and diagnose scope, precedence, inheritance, filtering, loopback, targeting, and resultant policy.
+  - Correlate configuration reports, simulated and actual RSoP, Activity-ID event timelines, infrastructure evidence, and setting-specific effective-state evidence.
+  - Diagnose inconsistent results caused by Active Directory Domain Services (AD DS) and DFSR/SYSVOL replication, domain controller selection, permissions, DNS, connectivity, authentication, or timing.
+  - Isolate slow or incomplete processing caused by WMI filters, scripts, foreground requirements, slow links, unavailable networks, or client-side extension failures.
+  - Determine whether a successfully processed policy is unsupported, awaiting activation, superseded by another configuration authority, or incompatible with an application.
+  - Troubleshoot Windows Server 2025 LDAP and Kerberos hardening compatibility issues and select safe pilot, containment, rollback, and validation actions.
+  - Automate Group Policy inventory, reporting, comparison, backup, evidence collection, and escalation preparation.
+prerequisites: |
+  - Experience creating, editing, linking, backing up, and restoring domain-based Group Policy Objects.
+  - Working knowledge of AD DS sites, domains, organizational units, security groups, DNS, domain controllers, SYSVOL, and basic AD DS and DFSR replication concepts.
+  - Familiarity with Group Policy Management Console, Event Viewer, Windows PowerShell, and Windows networking.
+  - Understanding of Local, Site, Domain, and Organizational Unit processing, including basic inheritance and filtering.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- identity-access-admin
+products:
+- windows-server
+subjects:
+- identity-access
+units:
+- learn.devrel.advanced-group-policy-troubleshooting.introduction
+- learn.devrel.advanced-group-policy-troubleshooting.trace-policy-architecture
+- learn.devrel.advanced-group-policy-troubleshooting.apply-evidence-first-diagnosis
+- learn.devrel.advanced-group-policy-troubleshooting.diagnose-policy-scope
+- learn.devrel.advanced-group-policy-troubleshooting.analyze-resultant-policy
+- learn.devrel.advanced-group-policy-troubleshooting.interpret-processing-events
+- learn.devrel.advanced-group-policy-troubleshooting.diagnose-policy-replication
+- learn.devrel.advanced-group-policy-troubleshooting.diagnose-discovery-timing-performance
+- learn.devrel.advanced-group-policy-troubleshooting.troubleshoot-hardening-side-effects
+- learn.devrel.advanced-group-policy-troubleshooting.automate-evidence-collection
+- learn.devrel.advanced-group-policy-troubleshooting.analyze-integrated-cases
+- learn.devrel.advanced-group-policy-troubleshooting.knowledge-check
+- learn.devrel.advanced-group-policy-troubleshooting.summary
+badge:
+  uid: learn.devrel.advanced-group-policy-troubleshooting.badge

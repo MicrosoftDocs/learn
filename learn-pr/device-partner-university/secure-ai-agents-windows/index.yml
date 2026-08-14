@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.secure-ai-agents-windows
+title: Secure AI agents and workloads on Windows
+metadata:
+  title: Secure AI Agents And Workloads On Windows
+  description: Explore how to secure AI agents and AI-powered workloads on Windows. Learn how identity, governance, policy controls, containment, monitoring, and development lifecycle security practices help reduce risk while enabling AI agents to access data, interact with systems, and perform approved actions.
+  ms.date: 07/23/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Explore how to secure AI agents and AI-powered workloads on Windows. Learn how identity, governance, policy controls, containment, monitoring, and development lifecycle security practices help reduce risk while enabling AI agents to access data, interact with systems, and perform approved actions.
+abstract: | 
+  By the end of this module, you'll be able to:
+  - Describe the differences between AI agents and AI experiences that primarily generate responses.
+  - Identify security risks introduced by AI agents and how they can be mitigated.
+  - Explain how identity, governance, policy controls, and containment strategies help protect AI-powered applications while enabling agents to operate safely.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/secure-ai-agents-windows.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.secure-ai-agents-windows.introduction
+  - learn.dpu.secure-ai-agents-windows.understand-agents
+  - learn.dpu.secure-ai-agents-windows.identify-security-agent-risks
+  - learn.dpu.secure-ai-agents-windows.agent-identity-governance
+  - learn.dpu.secure-ai-agents-windows.control-agent-behavior
+  - learn.dpu.secure-ai-agents-windows.secure-agents-development-lifecycle
+  - learn.dpu.secure-ai-agents-windows.knowledge-check
+  - learn.dpu.secure-ai-agents-windows.summary
+badge:
+  uid: learn.dpu.secure-ai-agents-windows.badge

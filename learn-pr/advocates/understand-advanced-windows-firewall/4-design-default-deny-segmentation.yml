@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-advanced-windows-firewall.design-default-deny-segmentation
+title: Design default-deny segmentation
+metadata:
+  title: Design Default-Deny Segmentation
+  description: Design inbound default-deny policy that restricts lateral movement while preserving required services.
+  ms.date: 08/05/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-design-default-deny-segmentation.md)]

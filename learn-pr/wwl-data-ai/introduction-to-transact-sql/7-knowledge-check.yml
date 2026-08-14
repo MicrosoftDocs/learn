@@ -5,7 +5,7 @@ metadata:
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/06/2025
+  ms.date: 08/10/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -30,13 +30,13 @@ quiz:
     choices:
     - content: "`CAST`"
       isCorrect: false
-      explanation: "Incorrect. Use `TRY_CONVERT` to convert the value to an integer. If the conversion fails, NULL will be returned."
+      explanation: "Incorrect. Use `TRY_CONVERT` to convert the value to an integer. If the conversion fails, NULL is returned."
     - content: "`NULLIF`"
       isCorrect: false
-      explanation: "Incorrect. Use `TRY_CONVERT` to convert the value to an integer. If the conversion fails, NULL will be returned."
+      explanation: "Incorrect. Use `TRY_CONVERT` to convert the value to an integer. If the conversion fails, NULL is returned."
     - content: "`TRY_CONVERT`"
       isCorrect: true
-      explanation: "Correct. Use `TRY_CONVERT` to convert the value to an integer. If the conversion fails, NULL will be returned."
+      explanation: "Correct. Use `TRY_CONVERT` to convert the value to an integer. If the conversion fails, NULL is returned."
   - content: "You must return the Cellphone column from the Sales.Customer table. Cellphone is a varchar column that permits NULL values. For rows where the Cellphone value is NULL, your query should return the text 'None'. What query should you use?"
     choices:
     - content: "`SELECT ISNULL(Cellphone, 'None') AS Cellphone FROM Sales.Customer;`"

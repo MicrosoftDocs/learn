@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=560bd213-9480-4505-b2e9-62e210aacf38]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Entra ID supports four authentication flows for multi-agent systems—managed identity, on-behalf-of, OAuth2 with PKCE, and key-based fallback—each suited to a different agent-to-resource relationship. Azure Key Vault manages the secrets, certificates, and cryptographic keys these flows depend on. In this unit, you select the right authentication pattern for each scenario and design a secrets lifecycle that prevents credential exposure.
 
 ## Agent authentication flow taxonomy
@@ -168,3 +179,5 @@ For Fabrikam's EU data privacy compliance, CMK is recommended for the Cosmos DB 
 - **Secrets lifecycle design** chooses between secrets, keys, and certificates based on cryptographic strength requirements—certificates provide non-repudiation and automated renewal; secrets are simplest but provide no cryptographic identity proof.
 - **Blue-green rotation** prevents downtime by maintaining primary and secondary versions during the rotation window; rotation event handlers refresh in-memory caches to prevent stale credential failures.
 - **CMK encryption** enables crypto-shred for EU data privacy erasure compliance on data that can't be physically deleted (backup copies, immutable storage); configure at the storage-service level using Azure RBAC-governed Key Vault key access.
+
+::: zone-end

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.convert-oracle-schema-azure-database-postgresql-ai.exercise-convert-finalize-oracle-schema
+title: Exercise — Convert and finalize an Oracle schema
+metadata:
+  title: Exercise — Convert and finalize an Oracle schema
+  description: "Hands-on exercise: create a migration project, run an end-to-end schema conversion, review the conversion report, triage and resolve a Mandatory review task with GitHub Copilot agent mode, and locate the generated deploy.sql."
+  ms.date: 07/17/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-convert-finalize-oracle-schema.md)]

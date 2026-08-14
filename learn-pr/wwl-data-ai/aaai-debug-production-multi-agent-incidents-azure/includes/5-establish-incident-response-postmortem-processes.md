@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4c074571-62b6-4563-a3c2-680baba69fee]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Monitor alert notifications serve as the starting point for structured incident response, providing the severity signal that determines escalation paths, on-call routing, and stakeholder communication for multi-agent failures. These alerts integrate with tools such as PagerDuty and Slack to initiate coordinated response processes that replace reactive firefighting with defined roles, communication protocols, and post-incident learning.
 
 Incident response processes turn chaotic emergency reactions into coordinated, effective crisis management. When Adventure Works' checkout completion rate drops 15% at 3:47 AM, the response requires more than technical debugging—it needs incident command structure with clear roles, communication protocols that keep stakeholders informed, and post-incident learning processes that prevent recurrence. Without defined processes, incidents devolve into uncoordinated firefighting where multiple engineers duplicate effort, stakeholders don't get status updates, and the team moves on without capturing lessons learned.
@@ -158,3 +169,5 @@ The difference between teams that improve reliability over time and teams that k
 - **Incident command structure** assigns distinct Incident Commander, Technical Lead, and Communications Lead roles that separate coordination, diagnosis, and stakeholder communication.
 - **Blameless postmortems** follow a standard template (summary, timeline, root cause, contributing factors, what went well, what didn't, action items) that focuses on system failures rather than individual mistakes.
 - **Reliability improvement tracking** monitors MTBF, MTTD, MTTR, and recurrence rate to ensure postmortem action items ship and system reliability measurably improves over time.
+
+::: zone-end

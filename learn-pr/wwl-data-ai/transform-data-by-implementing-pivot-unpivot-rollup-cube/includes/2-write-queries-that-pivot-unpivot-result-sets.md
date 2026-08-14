@@ -1,4 +1,4 @@
-Use pivot in SQL Server to rotate the way data is displayed from a rows-based orientation to a columns-based orientation. When pivoting, you consolidate values in a column to a list of distinct values, and then projecting that list across as column headings. Typically, this includes aggregation to column values in the new columns.
+Use `PIVOT` in Transact-SQL to rotate the way data is displayed from a rows-based orientation to a columns-based orientation. When pivoting, you consolidate values in a column to a list of distinct values, and then projecting that list across as column headings. Typically, this includes aggregation to column values in the new columns.
 
 For example, the partial source data below lists repeating values for **Category** and **Orderyear**, along with values for **Qty**, for each instance of a **Category/Orderyear** pair:
 
@@ -35,13 +35,13 @@ The result set is now a total of eight rows. In the pivoting process, each disti
 
 ## Use PIVOT to pivot a result set
 
-You can pivot a result set using the PIVOT operator. The Transact-SQL PIVOT table operator works on the output of the FROM clause in a SELECT statement. To use PIVOT, you need to supply three elements to the operator:
+You can pivot a result set using the `PIVOT` operator. The Transact-SQL `PIVOT` table operator works on the output of the `FROM` clause in a `SELECT` statement. To use `PIVOT`, you need to supply three elements to the operator:
 
-- **Grouping**: in the FROM clause, you provide the input columns. From those columns, PIVOT will determine which column(s) will be used to group the data for aggregation. This is based on looking at which columns aren't being used as other elements in the PIVOT operator.
+- **Grouping**: in the `FROM` clause, you provide the input columns. From those columns, `PIVOT` will determine which column(s) will be used to group the data for aggregation. This is based on looking at which columns aren't being used as other elements in the `PIVOT` operator.
 - **Spreading**: you provide a comma-delimited list of values to be used as the column headings for the pivoted data. The values need to occur in the source data.
 - **Aggregation**: you provide an aggregation function (SUM, and so on) to be performed on the grouped rows.
 
-Additionally, you need to assign a table alias to the result table of the PIVOT operator. The following example shows the elements in place:
+Additionally, you need to assign a table alias to the result table of the `PIVOT` operator. The following example shows the elements in place:
 
 ```sql
 SELECT  Category, [2019],[2020],[2021]
@@ -53,9 +53,9 @@ In the example above, **Orderyear** is the column providing the spreading values
 
 ## Use UNPIVOT to unpivot a result set
 
-Unpivoting data is the logical reverse of pivoting data. Instead of turning rows into columns, unpivot turns columns into rows. This is a technique useful in taking data that has already been pivoted (with or without using a Transact-SQL PIVOT operator) and returning it to a row-oriented tabular display. You can use the UNPIVOT table operator to accomplish this.
+Unpivoting data is almost the reverse of pivoting data. Instead of turning rows into columns, unpivot turns columns into rows. This is a technique useful in taking data that has already been pivoted (with or without using a Transact-SQL `PIVOT` operator) and returning it to a row-oriented tabular display. You can use the `UNPIVOT` table operator to accomplish this.
 
-To use the UNPIVOT operator, you provide three elements:
+To use the `UNPIVOT` operator, you provide three elements:
 
 - Source columns to be unpivoted.
 - A name for the new column that will display the unpivoted values.
@@ -77,7 +77,7 @@ In the following source data, three columns will be unpivoted. Each **Orderyear*
 |Beverages|1842 |3996 |3694|
 |Condiments|962  |2895 |1441|
 |Confections|1357 |4137 |2412|
-|Dairy Products|2086  |374 |2689|
+|Dairy Products|2086  |4374 |2689|
 |Grains/Cereals|549  |2636 |1377
 |Meat/Poultry|950  |2189 |1060|
 |Produce|549  |1583 |858|
@@ -97,4 +97,4 @@ For each intersection of **Category** and **Orderyear**, a new row will be creat
 |Confections     |4137 |2020|
 |Confections     |2412 |2021|
 
-Unpivoting does not restore the original data. Detail-level data was lost during the aggregation process in the original pivot. UNPIVOT has no ability to allocate values to return to original detail values.
+Unpivoting does not restore the original data. Detail-level data was lost during the aggregation process in the original pivot. `UNPIVOT` has no ability to allocate values to return to original detail values.

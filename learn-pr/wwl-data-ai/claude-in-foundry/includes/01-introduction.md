@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=15d95e68-626d-4dae-89db-cafce58e3c8e]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7397b212-4120-4c19-9978-929b0fafe10f]
 
 ::: zone-end
 
@@ -11,7 +11,7 @@ Welcome! In this module, we'll take you from "I have heard of Claude" to "I just
 Microsoft has been building AI into the platform for over a decade. **Microsoft Foundry** is Microsoft's AI app and agent factory; and Anthropic's Claude models are now native options inside Foundry, bringing powerful AI capabilities directly into your development workflow.
 
 > [!NOTE]
-> Claude's integration extends far beyond Foundry. You'll find Claude models throughout the Microsoft AI ecosystem; including in Microsoft 365 Copilot Studio and GitHub Copilot.
+> Claude's integration extends far beyond Foundry. You'll find Claude models throughout the Microsoft AI ecosystem; including in Microsoft 365 Copilot and GitHub Copilot.
 
 ## What is Claude?
 

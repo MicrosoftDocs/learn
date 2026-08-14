@@ -4,6 +4,9 @@ In this unit, we will see step-by-step examples for some of these tools, while o
 
 ## Use SQL Data Sync to synchronize data
 
+> [!IMPORTANT]
+> SQL Data Sync will be retired on September 30, 2027. For new workloads, use an alternative data replication or synchronization solution. For migration guidance, see [SQL Data Sync retirement](/azure/azure-sql/database/sql-data-sync-retirement-migration?azure-portal=true).
+
 [SQL Data Sync](/azure/azure-sql/database/sql-data-sync-data-sql-server-sql-database?azure-portal=true) is a feature in Azure SQL Database that allows you to synchronize data across multiple databases, both in the cloud and on-premises. This capability is essential for maintaining data consistency and enabling hybrid cloud scenarios. SQL Data Sync is a service built on Azure SQL Database that lets you synchronize selected data bi-directionally across multiple databases. It uses a hub-and-spoke topology, where one database acts as the hub and others as members. The hub database must be an Azure SQL Database, while member databases can be either Azure SQL Databases or SQL Server databases.
 
 :::image type="content" source="../media/3-data-sync-architecture.png" alt-text="Diagram showing SQL Data Sync architecture.":::
@@ -56,13 +59,13 @@ You can import and export data with BACPAC files using the Azure portal and SQL 
 Run the following example command to import data to a BACPAC file using SQLPackage. Replace `<ServerName>`, `<DatabaseName>`, `<UserName>`, `<Password>`, and `<PathToBacpacFile>` in the following scripts with your actual server name, database name, user credentials, and the path for the BACPAC file.
 
 ```dos
-sqlpackage.exe /Action:Import /tsn:<ServerName> /tdn:<DatabaseName> /tu:<UserName> /tp:<Password> /sf:<PathToBacpacFile>
+sqlpackage /Action:Import /tsn:<ServerName> /tdn:<DatabaseName> /tu:<UserName> /tp:<Password> /sf:<PathToBacpacFile>
 ```
 
 Run the following example command to export data to a BACPAC file using SQLPackage.
 
 ```dos
-sqlpackage.exe /Action:Export /ssn:<ServerName> /sdn:<DatabaseName> /su:<UserName> /sp:<Password> /tf:<PathToBacpacFile>
+sqlpackage /Action:Export /ssn:<ServerName> /sdn:<DatabaseName> /su:<UserName> /sp:<Password> /tf:<PathToBacpacFile>
 ```
 
 ## Use Bulk Copy Program (BCP)

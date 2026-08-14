@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1da0d823-cd4a-446f-afaa-f12ab717fb4d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Defender for Cloud, Microsoft Entra ID Governance, and Azure Monitor translate regulatory compliance frameworks into measurable, auditable agent controls. In this unit, you map EU data privacy, SOC 2, and HIPAA requirements to specific agent behaviors, enforce data residency and minimization, and generate continuous compliance evidence.
 
 ## Map compliance requirements to agent controls
@@ -300,3 +311,5 @@ The output is a structured test report that maps test results to compliance cont
 - **Data minimization** ensures agents process only the minimum data necessary for their function, reducing breach exposure surface.
 - **Consent and processing logs** create auditable records of data processing activities, supporting both compliance reporting and subject access requests.
 - **Continuous verification** replaces periodic audits with automated compliance checks that run alongside production operations.
+
+::: zone-end

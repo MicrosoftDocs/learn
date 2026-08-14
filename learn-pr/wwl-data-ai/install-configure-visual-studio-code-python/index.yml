@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.install-configure-visual-studio-code-python
+metadata:
+  title: Install and configure Visual Studio Code
+  description: Set up a professional Python development environment. Learn to install Python and VS Code, manage packages with pip, and write code with GitHub Copilot.
+  ms.date: 07/15/2026
+  ms.service: visual-studio
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
+title: Install and configure Visual Studio Code
+summary: Set up a professional Python development environment. Learn to install Python and VS Code, manage packages with pip, and write code with GitHub Copilot.
+abstract: |
+  After completing this module, you're able to:
+  - Install Python and Visual Studio Code on your machine.
+  - Create and manage virtual environments and install packages with pip.
+  - Create and run a Python application in VS Code.
+  - Use GitHub Copilot for in-editor code suggestions and fixes.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+subjects:
+  - app-development
+units:
+- learn.wwl.install-configure-visual-studio-code-python.introduction
+- learn.wwl.install-configure-visual-studio-code-python.install-python-vs-code
+- learn.wwl.install-configure-visual-studio-code-python.understand-environments-packages
+- learn.wwl.install-configure-visual-studio-code-python.create-run-python-application
+- learn.wwl.install-configure-visual-studio-code-python.write-code-with-github-copilot
+- learn.wwl.install-configure-visual-studio-code-python.exercise
+- learn.wwl.install-configure-visual-studio-code-python.knowledge-check
+- learn.wwl.install-configure-visual-studio-code-python.summary
+badge:
+  uid: learn.wwl.install-configure-visual-studio-code-python.badge

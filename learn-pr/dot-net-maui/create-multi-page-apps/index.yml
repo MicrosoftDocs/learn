@@ -9,7 +9,7 @@ metadata:
   ms.author: masoucou
   manager: coxford
   ms.topic: module
-  ms.service: dotnet-mobile
+  ms.service: dotnet-mobile-development
   ms.subservice: dotnet-maui
 title: Create multi-page .NET MAUI apps with tab and flyout navigation
 summary: "Use .NET MAUI shell to create multi-page applications with tabs and flyout navigation."

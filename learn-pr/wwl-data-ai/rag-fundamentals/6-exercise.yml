@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.rag-fundamentals.exercise
+title: Exercise - Explore RAG
+metadata:
+  title: Exercise - Explore RAG
+  description: "Explore a knowledge-enhanced agent with RAG."
+  ms.date: 07/31/2026
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise.md)]

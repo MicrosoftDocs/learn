@@ -1,0 +1,167 @@
+### YamlMime:ModuleUnit
+
+uid: learn.dpu.windows-for-developers.knowledge-check
+
+title: Module assessment
+
+metadata:
+
+  title: Module Assessment
+
+  description: This content is part of the "Streamline development workflows with Windows 11" module.
+
+  ms.date: 07/20/2026 
+
+  author: Stephanie-Rosenzweig
+
+  ms.author: v-stephanier
+
+  ms.topic: unit
+
+durationInMinutes: 5
+
+quiz:
+
+  title: Check your knowledge
+
+  questions:
+
+  - content: "What is the primary benefit of Windows Developer Configurations?"
+
+    choices:
+
+    - content: "Replacing source control systems"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Windows Developer Configurations can install development tools, but it doesn't replace source control systems such as Git."
+
+    - content: "Streamlining development environment setup"
+
+      isCorrect: true
+
+      explanation: "Correct. Windows Developer Configurations helps developers quickly create a code-ready environment by installing common development tools and applying developer-focused settings."
+
+    - content: "Hosting applications in the cloud"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Windows Developer Configurations focuses on configuring development environments, not hosting applications."
+
+    - content: "Managing user accounts"
+
+      isCorrect: false
+
+      explanation: "Incorrect. User account management isn't one of the capabilities provided by Windows Developer Configurations."
+
+  - content: "What problem does Coreutils for Windows help solve?"
+
+    choices:
+
+    - content: "Deploying cloud infrastructure"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Coreutils for Windows provides command-line utilities and isn't designed for cloud infrastructure deployment."
+
+    - content: "Creating databases"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Coreutils for Windows doesn't provide database creation or management capabilities."
+
+    - content: "Providing familiar Linux-style command-line utilities on Windows"
+
+      isCorrect: true
+
+      explanation: "Correct. Coreutils for Windows provides Linux-like command-line utilities that run natively on Windows, helping developers use familiar workflows across platforms."
+
+    - content: "Replacing container technologies"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Coreutils for Windows provides command-line utilities but doesn't replace containers or container platforms."
+
+  - content: "What are WSL containers designed to enable?"
+
+    choices:
+
+    - content: "Running Linux container workloads on Windows"
+
+      isCorrect: true
+
+      explanation: "Correct. WSL containers provide a built-in way to create, run, and interact with Linux containers directly on Windows. Because WSL containers are currently in public preview, verify the latest release status before recommending them for production use."
+
+    - content: "Running Linux virtual machines"
+
+      isCorrect: false
+
+      explanation: "Incorrect. WSL containers are designed for Linux container workflows rather than managing virtual machines."
+
+    - content: "Managing email systems"
+
+      isCorrect: false
+
+      explanation: "Incorrect. WSL containers aren't intended for email administration or management."
+
+    - content: "Replacing virtualization platforms"
+
+      isCorrect: false
+
+      explanation: "Incorrect. WSL containers provide support for Linux container workflows but aren't intended to replace virtualization platforms."
+
+  - content: "How does Intelligent Terminal help developers?"
+
+    choices:
+
+    - content: "It automatically fixes all code errors"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Intelligent Terminal can provide context-aware assistance, but it doesn't automatically fix every error."
+
+    - content: "It reduces context switching by providing assistance within the terminal"
+
+      isCorrect: true
+
+      explanation: "Correct. Intelligent Terminal helps developers troubleshoot issues and complete tasks within the terminal experience instead of switching to other tools. Because Intelligent Terminal is currently in experimental preview, verify the latest release status before recommending it for production use."
+
+    - content: "It replaces development environments"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Intelligent Terminal extends the terminal experience but doesn't replace development environments."
+
+    - content: "It manages source control repositories"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Managing source control repositories isn't the primary purpose of Intelligent Terminal."
+
+  - content: "What is the purpose of Windows Development Skills?"
+
+    choices:
+
+    - content: "To replace software documentation"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Windows Development Skills can support development workflows, but it doesn't replace documentation."
+
+    - content: "To provide structured Windows development knowledge for AI-assisted workflows"
+
+      isCorrect: true
+
+      explanation: "Correct. Windows Development Skills provides structured Windows application development knowledge that AI agents can use to support Windows application development tasks."
+
+    - content: "To automate software deployment"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Windows Development Skills helps AI agents support Windows application development tasks, not automate application deployment."
+
+    - content: "To manage Windows licensing"
+
+      isCorrect: false
+
+      explanation: "Incorrect. Windows Development Skills isn't used for Windows licensing management."

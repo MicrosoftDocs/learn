@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-database.connect-group-policy-data-stores
+title: Connect Group Policy to both data stores
+metadata:
+  title: Connect Group Policy to Both Data Stores
+  description: Trace the directory and file-system components of a Group Policy Object and compare their independent convergence.
+  ms.date: 07/24/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-connect-group-policy-data-stores.md)]

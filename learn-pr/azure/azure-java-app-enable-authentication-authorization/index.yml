@@ -9,7 +9,7 @@ metadata:
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module-standard-task-based
-  ms.service: azure-active-directory
+  ms.service: entra-id
 title: Sign in users with Microsoft Entra ID in a Java web app
 summary: Learn how to authenticate users with Microsoft Entra ID and get authorized access to data in a Java web app using Microsoft Authentication Library.
 abstract: | 

@@ -3,7 +3,7 @@ uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql
 metadata:
   title: Assess SQL Server databases for migration to Azure SQL
   description: "Learn multiple assessment tools that facilitate the migration of databases to Azure, including SQL Server enabled by Azure Arc, Azure Migrate, and Azure Database Migration Service."
-  ms.date: 1/19/2026
+  ms.date: 07/23/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based

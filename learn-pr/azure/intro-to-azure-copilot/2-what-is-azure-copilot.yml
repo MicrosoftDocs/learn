@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-copilot.what-is-azure-copilot
+title: What is Azure Copilot?
+metadata:
+  title: What is Azure Copilot?
+  description: Understand what Azure Copilot is, the problem it solves, and where it fits in your Azure management experience.
+  ms.date: 06/23/2026
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-what-is-azure-copilot.md)]

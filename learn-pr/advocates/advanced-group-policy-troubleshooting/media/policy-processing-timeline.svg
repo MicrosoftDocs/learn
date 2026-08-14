@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">Group Policy processing timeline</title>
+  <desc id="desc">A timeline from startup through computer foreground processing, sign-in, user foreground processing, desktop availability, then background refresh. It contrasts asynchronous and synchronous processing plus foreground-only extensions.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="18" markerHeight="14" refX="16" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L0,12 L16,6 z" fill="#243A5E"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="500" fill="#FFFFFF"/>
+  <text x="600" y="38" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#172B4D">Processing mode changes when a result can appear</text>
+
+  <line x1="80" y1="185" x2="1150" y2="185" stroke="#243A5E" stroke-width="4" marker-end="url(#arrow)"/>
+  <g font-family="Segoe UI, sans-serif" text-anchor="middle">
+    <circle cx="120" cy="185" r="13" fill="#0078D4"/>
+    <text x="120" y="145" font-size="17" font-weight="700" fill="#172B4D">Startup</text>
+    <circle cx="330" cy="185" r="13" fill="#8764B8"/>
+    <text x="330" y="128" font-size="17" font-weight="700" fill="#172B4D">Computer foreground</text>
+    <text x="330" y="150" font-size="14" fill="#334E68">CSE processing</text>
+    <circle cx="560" cy="185" r="13" fill="#0078D4"/>
+    <text x="560" y="145" font-size="17" font-weight="700" fill="#172B4D">User sign-in</text>
+    <circle cx="770" cy="185" r="13" fill="#8764B8"/>
+    <text x="770" y="128" font-size="17" font-weight="700" fill="#172B4D">User foreground</text>
+    <text x="770" y="150" font-size="14" fill="#334E68">CSE processing</text>
+    <circle cx="960" cy="185" r="13" fill="#107C10"/>
+    <text x="960" y="145" font-size="17" font-weight="700" fill="#172B4D">Desktop</text>
+    <circle cx="1090" cy="185" r="13" fill="#107C10"/>
+    <text x="1090" y="145" font-size="17" font-weight="700" fill="#172B4D">Refresh</text>
+  </g>
+
+  <rect x="80" y="245" width="500" height="72" rx="8" fill="#E8F3FC" stroke="#0078D4" stroke-width="2"/>
+  <text x="330" y="274" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#172B4D">Asynchronous foreground</text>
+  <text x="330" y="299" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" fill="#334E68">Startup or sign-in can continue before all CSE work completes.</text>
+
+  <rect x="620" y="245" width="500" height="72" rx="8" fill="#F3E8FD" stroke="#8764B8" stroke-width="2"/>
+  <text x="870" y="274" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#172B4D">Synchronous foreground</text>
+  <text x="870" y="299" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" fill="#334E68">Startup or sign-in waits for required CSE work.</text>
+
+  <rect x="80" y="350" width="1040" height="96" rx="8" fill="#FFF4CE" stroke="#C19C00" stroke-width="2"/>
+  <text x="600" y="381" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#172B4D">Foreground-only or trigger-dependent examples</text>
+  <text x="600" y="410" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" fill="#334E68">Software Installation at startup or sign-in | Folder Redirection at sign-in | Startup, shutdown, sign-in, sign-out scripts</text>
+  <text x="600" y="435" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" fill="#A4262C">A background refresh cannot replace the required trigger. Every processing instance has a fixed 60-minute limit.</text>
+</svg>

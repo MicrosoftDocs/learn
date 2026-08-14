@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-application-volume-groups-oracle.configure-application-volume-group-oracle-using-rest-api
+title: Configure application volume group for Oracle using REST API
+metadata:
+  title: Configure application volume group for Oracle using REST API
+  description: Create application volume groups for Oracle in Azure NetApp Files by using REST API.
+  ms.date: 07/20/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-configure-application-volume-group-oracle-using-rest-api.md)]

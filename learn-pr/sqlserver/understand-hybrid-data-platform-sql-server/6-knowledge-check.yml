@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/3/2025
+  ms.date: 08/11/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -41,7 +41,7 @@ quiz:
       explanation: "Incorrect. Disaster recovery and failover are provided by Azure SQL Managed Instance Link. Microsoft Fabric Mirroring is designed for near real-time analytics and data replication to OneLake."
     - content: "To replicate data in near real-time to OneLake for analytics workloads"
       isCorrect: true
-      explanation: "Correct. Microsoft Fabric Mirroring continuously replicates SQL Server data to OneLake using change data capture (CDC), enabling near real-time analytics without impacting operational workloads."
+      explanation: "Correct. Microsoft Fabric Mirroring continuously replicates SQL Server data to OneLake, enabling near real-time analytics without impacting operational workloads. For SQL Server 2025, mirroring uses the built-in Fabric mirroring change feed; for SQL Server 2016–2022, it uses Change Data Capture (CDC)."
     - content: "To replace Azure Arc-enabled SQL Server for centralized management"
       isCorrect: false
       explanation: "Incorrect. Microsoft Fabric Mirroring is focused on data replication for analytics, not management. Azure Arc-enabled SQL Server provides centralized management capabilities."

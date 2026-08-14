@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6d7e6531-049a-4397-a1da-0df629913632]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When Fabrikam's agents produce a code review with 12 findings spanning security vulnerabilities, quality improvements, and architectural recommendations, developers face a critical question: which agent made which determination, and on what basis? Multi-agent systems fragment the decision-making process across multiple models, making attribution and explainability more complex than single-agent scenarios. Implementing transparency for multi-agent outputs requires designing structured attribution formats, capturing verifiable reasoning traces, and aggregating explanations without obscuring individual agent contributions. Azure Monitor Log Analytics stores the complete reasoning traces and attribution records that make this transparency verifiable for both developers and compliance auditors.
 
 The following table contrasts how transparency requirements scale from single-agent to multi-agent systems:
@@ -141,3 +152,5 @@ Every agent interaction logs: the full reasoning trace from input to recommendat
 The logs support audit queries like "show all security findings for customer X in Q2 2026 where the AI recommendation was overridden by a human reviewer" or "demonstrate the evidence chain for the SQL injection finding in submission #12847." Regulators can trace from the final recommendation back through the reasoning chain to the original code input, verifying that decisions followed documented logic rather than arbitrary model outputs.
 
 With transparency mechanisms in place—attribution to specific agents, verifiable reasoning traces, coherent aggregated explanations, and comprehensive audit logging—you make Fabrikam's multi-agent system accountable. Developers understand the basis for recommendations, and enterprise customers can demonstrate AI governance to regulators. The next governance layer protects the privacy of the proprietary code flowing through your agent pipelines.
+
+::: zone-end

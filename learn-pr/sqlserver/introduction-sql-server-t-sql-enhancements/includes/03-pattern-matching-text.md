@@ -4,6 +4,9 @@ SQL Server 2025 adds new regular expression (REGEXP) functions and enhances the 
 
 The new REGEXP family of functions supports regular expression evaluation directly inside SQL Server. Each function enables specific pattern-based text operations.
 
+> [!NOTE]
+> `REGEXP_LIKE`, `REGEXP_MATCHES`, and `REGEXP_SPLIT_TO_TABLE` require database compatibility level 170. The scalar functions `REGEXP_REPLACE`, `REGEXP_SUBSTR`, `REGEXP_INSTR`, and `REGEXP_COUNT` are available at all compatibility levels. SQL Server 2025 installs with compatibility level 170 by default; upgraded databases may need `ALTER DATABASE [DatabaseName] SET COMPATIBILITY_LEVEL = 170;`.
+
 ### REGEXP_LIKE  
 Checks if a string matches a regular expression pattern. Returns 1 if it matches, 0 otherwise.
 

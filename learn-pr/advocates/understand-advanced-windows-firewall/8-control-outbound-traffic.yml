@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-advanced-windows-firewall.control-outbound-traffic
+title: Control outbound traffic
+metadata:
+  title: Control Outbound Traffic
+  description: Apply targeted outbound controls without destabilizing stateful application flows.
+  ms.date: 08/05/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-control-outbound-traffic.md)]

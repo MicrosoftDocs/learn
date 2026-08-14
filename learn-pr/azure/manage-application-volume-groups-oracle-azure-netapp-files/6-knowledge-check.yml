@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-application-volume-groups-oracle.knowledge-check
+title: Module assessment
+metadata:
+  unitType: knowledge_check
+  title: Module Assessment
+  description: Test your knowledge of managing application volume groups for Oracle in Azure NetApp Files.
+  ms.date: 07/20/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+    - content: "What are the steps to create an application volume group for Oracle in Azure NetApp Files?"
+      choices:
+        - content: "Provision Azure NetApp Files account, create a capacity pool, create volumes, create an Oracle volume group to provision volumes for use with the Oracle instance."
+          isCorrect: true
+          explanation: "Correct. By following these steps, you can create a volume group in Azure NetApp Files specifically tailored for Oracle."
+        - content: "Create an Azure Blob storage account, create a container, upload the Oracle data files, and configure the volume group."
+          isCorrect: false
+          explanation: "Incorrect. Azure Blob storage isn't used for creating volume groups for Oracle in Azure NetApp Files."
+        - content: "Create an Azure SQL Database, configure the database settings for Oracle, and create the volume group."
+          isCorrect: false
+          explanation: "Incorrect. Azure SQL Database isn't directly involved in creating volume groups for Oracle in Azure NetApp Files."
+        - content: "Create an Azure Data Lake Storage account, create a file system, upload the Oracle data files, and configure the volume group."
+          isCorrect: false
+          explanation: "Incorrect. Azure Data Lake Storage isn't used for creating volume groups for Oracle in Azure NetApp Files."
+    - content: "Which information is required when deploying an application volume group for Oracle?"
+      choices:
+        - content: "Unique System ID (SID), group name and description, number of Oracle data volumes, database size, snapshot capacity, and database storage throughput."
+          isCorrect: true
+          explanation: "Correct. These values define the Oracle application volume group, determine the number and size of volumes, and help distribute capacity and throughput across the database volumes."
+        - content: "Azure Blob container name, storage account access tier, and object lifecycle policy."
+          isCorrect: false
+          explanation: "Incorrect. These settings apply to Azure Blob Storage and aren't part of the Oracle application volume group deployment workflow in Azure NetApp Files."
+        - content: "Azure SQL Database server name, elastic pool size, and database collation."
+          isCorrect: false
+          explanation: "Incorrect. Azure SQL Database settings are unrelated to deploying Azure NetApp Files application volume groups for Oracle workloads."
+        - content: "Data Lake file system name, analytics workspace, and big data cluster settings."
+          isCorrect: false
+          explanation: "Incorrect. Azure Data Lake and analytics workspace settings aren't used to configure Oracle application volume groups in Azure NetApp Files."
+    - content: "Which parameters can you change for a selected volume in the Volumes tab during application volume group deployment?"
+      choices:
+        - content: "Subscription ID, tenant ID, and Azure billing profile."
+          isCorrect: false
+          explanation: "Incorrect. These values aren't volume-level settings and aren't edited from the Volumes tab during deployment."
+        - content: "Volume name, quota, and throughput."
+          isCorrect: true
+          explanation: "Correct. When you select a volume in the Volumes tab, you can review or change the proposed volume name, quota, and throughput before creating the volume group."
+        - content: "Oracle database schema, tablespace, and database users."
+          isCorrect: false
+          explanation: "Incorrect. The application volume group workflow manages storage volumes, not Oracle database schema, or user configuration."
+        - content: "Azure portal theme, dashboard layout, and notification preferences."
+          isCorrect: false
+          explanation: "Incorrect. These are portal user interface preferences and don't affect the volume configuration."

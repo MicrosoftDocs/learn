@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-schema.troubleshoot-schema-replication
+title: Troubleshoot schema replication
+metadata:
+  title: Troubleshoot Schema Replication
+  description: Separate target, permission, cache, identifier, version, and replication causes of schema-related failures.
+  ms.date: 07/30/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/12-troubleshoot-schema-replication.md)]

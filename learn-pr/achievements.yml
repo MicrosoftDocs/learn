@@ -5,6 +5,16 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.wwl.create-plugins-semantic-kernel.badge
+  type: badge
+  title: Run prompts with Semantic Kernel 
+  summary: "This module explores Semantic Kernel SDK plugins. Learn how plugins to the SDK are used to accomplish customized tasks and create intelligent applications." 
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.build-your-kernel.badge 
+  type: badge
+  title: Build your kernel
+  summary: This module introduces the Semantic Kernel SDK. Learn how the kernel connects code to large language models to extend functionality with generative artificial intelligence.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.aks-app-scaling-keda.badge
   type: badge
   title: Scale container applications in Azure Kubernetes Services using KEDA  
@@ -185,6 +195,157 @@ achievements:
   title: Analyze monitoring data with Kusto Query Language
   summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.deploy-cloud-based-tools.trophy
+  type: trophy
+  title: MD-102 Deploy using cloud based tools
+  summary: |
+    Students will learn about using Windows Autopilot and deployment using Microsoft Intune. Students will also learn how co-management can be used to transition to modern management.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.deploy-devices-windows-autopilot.badge
+  type: badge
+  title: Deploy Devices using Windows Autopilot
+  summary: Use Autopilot to deploy new hardware or refreshing an existing hardware with the organizationΓÇÖs desired configuration, without using the traditional imaging process.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.implement-dynamic-deployment.badge
+  type: badge
+  title: Implement dynamic deployment methods
+  summary: Use dynamic provisioning methods such as Subscription Activation, Provisioning packages, and Microsoft Entra join to reconfigure an existing operating system.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.plan-transition-modern-endpoint-management.badge
+  type: badge
+  title: Plan a transition to modern endpoint management
+  summary: Explore considerations and review the planning of transitioning to modern management, focusing on migration and newly provisioned devices.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-windows-365.badge
+  type: badge
+  title: Manage Windows 365
+  summary: This module teaches managing Microsoft's cloud-based PC management solution, Windows 365, offering personalized, secure Windows 11 experience from any device. Learn features, setup, management, security, deployment options, and licensing to optimize your environment.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.execute-device-enrollment.trophy
+  type: trophy
+  title: MD-102 Execute device enrollment
+  summary: |
+    This learning path will cover Microsoft Entra join and will introduce Microsoft Endpoint Manager. We'll also discuss how to configure policies for enrolling devices to Configuration Manager and Microsoft Intune.
+  iconUrl: /training/achievements/execute-device-enrollment.svg
+- uid: learn.wwl.administer-device-authentication.badge
+  type: badge
+  title: Manage device authentication
+  summary: In this module, you learn about device authentication and management in Microsoft Entra ID.
+  iconUrl: /training/achievements/administer-device-authentication.svg
+- uid: learn.wwl.enroll-devices-using-endpoint-configuration-manager.badge
+  type: badge
+  title: Enroll devices using Microsoft Configuration Manager
+  summary: This module introduces students to client deployment options and some of the high-level management and monitoring options that are available using Configuration Manager.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.enroll-devices-using-intune.badge
+  type: badge
+  title: Enroll devices using Microsoft Intune
+  summary: Students will learn how to configure and setup Intune to more easily manage Windows, Android, and iOS devices.
+  iconUrl: /training/achievements/enroll-devices-use-intune.svg
+- uid: learn.wwl.explore-endpoint-management.trophy
+  type: trophy
+  title: MD-102 Explore endpoint management
+  summary: |
+    This learning path is designed to provide a comprehensive understanding of enterprise desktops, Windows editions, and Microsoft Entra ID. It includes exploring various Windows editions, including their features and installation methods. It delves into Microsoft Entra ID, highlighting its similarities and differences with AD DS and how to synchronize the two. Furthermore, learners will better understand managing Microsoft Entra identities. Overall, this learning path equips learners with the necessary knowledge and skills to effectively support enterprise desktops and manage Microsoft Entra identities.
+  iconUrl: /training/achievements/explore-endpoint-management.svg
+- uid: learn.wwl.explore-enterprise-desktop.badge
+  type: badge
+  title: Explore the Enterprise Desktop
+  summary: This module covers modern endpoint management and enterprise desktop lifecycle concepts. It teaches the stages of the lifecycle (planning, deployment, maintenance) and provides a foundation for future learning.
+  iconUrl: /training/achievements/enterprise-examine-desktop.svg
+- uid: learn.wwl.explore-windows-editions.badge
+  type: badge
+  title: Explore Windows Editions
+  summary: This module covers Windows OS editions, features, and installation methods. Learners gain a deeper understanding of the available editions and corresponding installation processes.
+  iconUrl: /training/achievements/windows-client-explore.svg
+- uid: learn.wwl.manage-azure-active-directory-identities.badge
+  type: badge
+  title: Manage Microsoft Entra identities
+  summary: This module teaches how to use Microsoft Entra ID effectively. You'll learn about RBAC, user roles, creating and managing users and groups, using PowerShell cmdlets, and synchronizing objects from AD DS to Microsoft Entra ID.
+  iconUrl: /training/achievements/azure-active-directory-manage-identities.svg
+- uid: learn.wwl.manage-endpoint-security.trophy
+  type: trophy
+  title: MD-102 Manage endpoint security
+  summary: |
+    In this learning path, students will learn about data protection and protecting endpoints against threats. This path will also cover the key capabilities of Microsoft Defender solutions.
+  iconUrl: /training/achievements/manage-endpoint-security.svg
+- uid: learn.wwl.deploy-device-data-protection.badge
+  type: badge
+  title: Deploy device data protection
+  summary: This module describes how you can use Intune to create and manage WIP policies that manage this protection. The module also covers implementing BitLocker and Encrypting File System.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-microsoft-defender-cloud-apps.badge
+  type: badge
+  title: Manage Microsoft Defender for Cloud Apps
+  summary: This module covers Microsoft Defender for Cloud Apps, focusing on securing sensitive data, its relevance in dynamic work settings, and effective utilization for improved security posture.
+  iconUrl: /training/achievements/microsoft-defender-module.svg
+- uid: learn.wwl.authentication-compliance.trophy
+  type: trophy
+  title: MD-102 Manage authentication and compliance
+  summary: |
+    This learning path covers the various solutions for managing authentication. Students will also learn about the different types of VPNs, as well as compliance and conditional access policies.
+  iconUrl: /training/achievements/authentication-compliance.svg
+- uid: learn.wwl.protect-identities-azure-acative-directory.badge
+  type: badge
+  title: Protect identities in Microsoft Entra ID
+  summary: This module introduces students to the various authentication methods used to protect identities.
+  iconUrl: /training/achievements/entra-module.svg
+- uid: learn.wwl.organizational-access.badge
+  type: badge
+  title: Enable organizational access
+  summary: This module describes how clients can be configured to access organizational resources using a virtual private network (VPN).
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.implement-device-compliance.badge
+  type: badge
+  title: Implement device compliance
+  summary: This module describes how to use compliance and conditional access policies to help protect access to organizational resources.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.inventory-compliance-reports.badge
+  type: badge
+  title: Generate inventory and compliance reports
+  summary: This module describes how to use Microsoft Endpoint Manager and Power BI to create compliance and custom reports.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.configure-profiles-user-device.trophy
+  type: trophy
+  title: MD-102 Configure profiles for user and devices
+  summary: |
+    This learning path explores Intune device profiles, the benefits of user profiles and how to synchronize profile data across multiple devices.
+  iconUrl: /training/achievements/onfigure-profiles-user-device.svg
+- uid: learn.wwl.execute-device-profiles.badge
+  type: badge
+  title: Execute device profiles
+  summary: Students learn about the various types of device profiles, and how to create and manage them.
+  iconUrl: /training/achievements/execute-device-profiles.svg
+- uid: learn.wwl.oversee-device-profiles.badge
+  type: badge
+  title: Oversee device profiles
+  summary: This module introduces students to monitoring profiles to ensure correct assignments and resolving conflicts when multiple profiles are applied.
+  iconUrl: /training/achievements/oversee-device-profiles.svg
+- uid: learn.wwl.maintain-user-profiles.badge
+  type: badge
+  title: Maintain user profiles
+  summary: Students learn about the benefits of various Windows user profiles, how to manage them, and how to facilitate profile data synchronization across multiple devices.
+  iconUrl: /training/achievements/maintain-user-profiles.svg
+- uid: learn.wwl.administer-endpoint-applications.badge
+  type: badge
+  title: Administer endpoint applications
+  summary: Learn how to manage applications on Intune-managed devices, deploy Microsoft 365 Apps, configure Internet Explorer mode in Microsoft Edge, and review app inventory options.
+  iconUrl: /training/achievements/administer-endpoint-applications.svg
+- uid: learn.wwl.deploy-applications.badge
+  type: badge
+  title: Deploy and update applications
+  summary: In this module, you'll master deploying applications using Intune, Configuration Manager, Group Policy, and Microsoft Store Apps. These powerful tools and techniques will equip you to manage and maintain diverse applications across your organization effectively.
+  iconUrl: /training/achievements/deploy-and-update-applications.svg
+- uid: learn.wwl.execute-mobile-application-management.badge
+  type: badge
+  title: Execute mobile application management
+  summary: This module introduces Mobile Application Management (MAM). Students will learn about considerations for implementing MAM and will be introduced to the management of MAM using Intune and Configuration Manager.
+  iconUrl: /training/achievements/execute-mobile-application-management.svg
+- uid: learn.wwl.examine-application-management.trophy
+  type: trophy
+  title: MD-102 Examine application management
+  summary: Learners will examine application management methods using on-premises and cloud-based solutions.
+  iconUrl: /training/achievements/examine-application-management.svg
 - uid: learn.wwl.explore-iot-hub-monitoring.badge
   type: badge
   title: Guided project - Explore Azure IoT Hub monitoring
@@ -8316,3 +8477,221 @@ achievements:
   title: Explore Azure App Service deployment slots
   summary: In this module you'll learn how slot swapping operates and how to perform a swap. You'll also learn how to route traffic to different slots manually and automatically.
   iconUrl: /training/achievements/app-service-deployment-slots.svg
+- uid: learn.wwl.introduction-to-azure-app-service.badge
+  type: badge
+  title: Explore Azure App Service
+  summary: Learn about the key components of Azure App Service and how App Service can help you create, maintain, and deploy web apps more efficiently.
+  iconUrl: /training/achievements/azure-app-introduction.svg
+- uid: learn.wwl.scale-apps-app-service.badge
+  type: badge
+  title: Scale apps in Azure App Service
+  summary: Learn how autoscale operates in App Service and how to identify autoscale factors, enable autoscale, and how to create sound autoscale conditions.
+  iconUrl: /training/achievements/app-service-scale-apps.svg
+- uid: learn.wwl.introduction-to-open-source-database-migration-on-azure.badge
+  type: badge
+  title: Introduction to open-source database migration on Azure
+  summary: In this module, you'll learn about the issues and considerations for migrating on-premises open-source databases to Azure, the services that Azure provides to help you migrate your databases, and how to plan a migration.
+  iconUrl: /training/achievements/introduction-to-open-source-database-migration-on-azure.svg
+- uid: learn.wwl.migrate-on-premises-mysql-databases-to-azure-database-for-mysql.badge
+  type: badge
+  title: Migrate on-premises MySQL databases to Azure Database for MySQL
+  summary: In this module, you'll learn about the benefits of migrating MySQL workloads to Azure, you'll see how to create an Azure Database for MySQL instance, and learn how to migrate on-premises MySQL databases to Azure.
+  iconUrl: /training/achievements/migrate-on-premises-mysql-databases-to-azure-database-for-mysql.svg
+- uid: learn.wwl.migrating-open-source-workloads-to-azure.trophy
+  type: trophy
+  title: Migrate open-source databases to Azure
+  summary: Learn how to migrate open-source workloads from PostgreSQL and MySQL databases to the equivalent services in Azure. Explore the processes and tools, and learn how to validate application dependencies to support a successful migration.
+  iconUrl: /training/achievements/migrating-open-source-workloads-to-azure-dp0-70.svg
+- uid: learn.wwl.migrate-on-premises-postgresql-databases-to-azure-database-for-postgresql.badge
+  type: badge
+  title: Migrate on-premises PostgreSQL databases to Azure Database for PostgreSQL
+  summary: In this module, you'll learn about the benefits of migrating PostgreSQL workloads to Azure, you'll see how to create an Azure Database for PostgreSQL instance and how to migrate on-premises PostgreSQL databases to Azure.
+  iconUrl: /training/achievements/migrate-onpremises-postgresql-db-azure-db.svg
+- uid: learn.wwl.protecting-monitoring-and-tuning-a-migrated-database.badge
+  type: badge
+  title: Protect, monitor, and tune a migrated database
+  summary: In this module, you'll learn how to use the Azure features available for protect, monitor, and tune a database.
+  iconUrl: /training/achievements/protecting-monitoring-and-tuning-a-migrated-database.svg
+- uid: learn.wwl.explore-mysql-architecture.badge
+  type: badge
+  title: Explore MySQL Architecture
+  summary: Explore the component parts of MySQL, and learn how to find your way around Azure Database for MySQL.
+  iconUrl: /training/achievements/explore-mysql-architecture.svg
+- uid: learn.wwl.secure-mysql.badge
+  type: badge
+  title: Secure MySQL
+  summary: Learn about security and encryption in Azure Database for MySQL.
+  iconUrl: /training/achievements/secure-mysql.svg
+- uid: learn.wwl.understand-client-server-communication-mysql.badge
+  type: badge
+  title: Understand client-server communication in MySQL
+  summary: Learn about connection handling in MySQL, back up and restore, and the client interface options available for MySQL.
+  iconUrl: /training/achievements/understand-client-server-communication-mysql.svg
+- uid: learn.wwl.work-mysql-databases-azure.trophy
+  type: trophy
+  title: Work with MySQL Databases on Azure
+  summary: >-
+    Azure Database for MySQL is a fully managed database platform. In this learning path you'll find out how to manage and optimize Azure Database for MySQL.
+  
+    After completing this learning path, you'll be able to:
+  
+    - Understand Azure Database for MySQL options
+  
+    - Describe the MySQL client query interfaces
+  
+    - Work with MySQL storage engines
+  
+    - Secure your Azure Database for MySQL server
+  
+    - Understand concurrency in MySQL
+  iconUrl: /training/achievements/work-mysql-databases-azure.svg
+- uid: learn.wwl.understand-concurrency-mysql.badge
+  type: badge
+  title: Understand concurrency in MySQL
+  summary: Learn about concurrency in MySQL, including how to limit the number of connections, and when to use thread pools.
+  iconUrl: /training/achievements/understand-concurrency-mysql.svg
+- uid: learn.wwl.understand-mysql-storage-engine.badge
+  type: badge
+  title: Understand the MySQL storage engine
+  summary: Learn about MySQL’s pluggable storage engine model, common storage engines, and storage engines supported by Azure Database for MySQL.
+  iconUrl: /training/achievements/understand-mysql-storage-engine.svg
+- uid: learn.wwl.az-204-implement-authentication-authorization.trophy
+  type: trophy
+  title: Implement user authentication and authorization
+  summary: Learn how to implement authentication and authorization to resources by using the Microsoft identity platform, Microsoft Authentication Library, shared access signatures, and use Microsoft Graph.
+  iconUrl: /training/achievements/authentication-authorization.svg
+- uid: learn.wwl.az-204-implement-secure-cloud-solutions.trophy
+  type: trophy
+  title: Implement secure Azure solutions
+  summary: Learn how to more securely deploy apps in Azure by using Azure Key Vault, managed identities, and Azure App Configuration.
+  iconUrl: /training/achievements/cloud-solutions-implement.svg
+- uid: learn.wwl.explore-microsoft-identity-platform.badge
+  type: badge
+  title: Explore the Microsoft identity platform
+  summary: Learn the core features and functionality of the Microsoft identity platform including authentication, libraries, and app management tools.
+  iconUrl: /training/achievements/identity-platform-explore.svg
+- uid: learn.wwl.implement-azure-key-vault.badge
+  type: badge
+  title: Implement Azure Key Vault
+  summary: Learn how Azure Key Vault can help you keep your apps more secure, and how to set and retrieve secrets programmatically, and with Azure CLI.
+  iconUrl: /training/achievements/azure-key-vault-implement.svg
+- uid: learn.wwl.implement-managed-identities.badge
+  type: badge
+  title: Implement managed identities
+  summary: Learn how managed identities can help you deploy secure solutions on Azure without the need to manage credentials.
+  iconUrl: /training/achievements/manage-identities-implement.svg
+- uid: learn.wwl.implement-authentication-by-using-microsoft-authentication-library.badge
+  type: badge
+  title: Implement authentication by using the Microsoft Authentication Library
+  summary: Learn how to implement authentication by using the Microsoft Authentication Library.
+  iconUrl: /training/achievements/authentication-library.svg
+- uid: learn.wwl.implement-azure-app-configuration.badge
+  type: badge
+  title: Implement Azure App Configuration
+  summary: Learn how to use Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features.
+  iconUrl: /training/achievements/azure-app-implement-configuration.svg
+- uid: learn.wwl.implement-shared-access-signatures.badge
+  type: badge
+  title: Implement shared access signatures
+  summary: Learn how to use shared access signatures to authorize access to storage resources.
+  iconUrl: /training/achievements/signatures-shared-access.svg
+- uid: learn.wwl.microsoft-graph.badge
+  type: badge
+  title: Explore Microsoft Graph
+  summary: Learn how Microsoft Graph facilitates the access and flow of data and how to form queries through REST and code.
+  iconUrl: /training/achievements/microsoft-graph-explore.svg
+- uid: learn.wwl.az-204-develop-solutions-that-use-azure-cosmos-db.trophy
+  type: trophy
+  title: Develop solutions that use Azure Cosmos DB
+  summary: Learn how to create Azure Cosmos DB resources with the appropriate consistency levels, and perform data operations by using the .NET SDK V3 for Azure Cosmos DB.
+  iconUrl: /training/achievements/az-204-develop-solutions-that-use-azure-cosmos-db.svg
+- uid: learn.wwl.az-204-implement-iaas-solutions.trophy
+  type: trophy
+  title: Implement containerized solutions
+  summary: Learn how to create and deploy containerized solutions to Azure by using the Azure Container Registry, Azure Container Instances, and Azure Container Apps.
+  iconUrl: /training/achievements/iaas-implement-solutions.svg
+- uid: learn.wwl.explore-azure-cosmos-db.badge
+  type: badge
+  title: Explore Azure Cosmos DB
+  summary: Learn the core features and functionality of Azure Cosmos DB.
+  iconUrl: /training/achievements/1-explore-azure-cosmos-db.svg
+- uid: learn.wwl.explore-azure-functions.badge
+  type: badge
+  title: Explore Azure Functions
+  summary: Learn how Azure Functions can be a great solution for data processing, systems integration, and building simple APIs and microservices.
+  iconUrl: /training/achievements/1-explore-azure-functions.svg
+- uid: learn.wwl.implement-azure-functions.trophy
+  type: trophy
+  title: Implement Azure Functions
+  summary: Learn how to create and deploy Azure Functions. Explore hosting options, bindings, and triggers.
+  iconUrl: /training/achievements/az-204-implement-azure-functions.svg
+- uid: learn.wwl.create-run-container-images-azure-container-instances.badge
+  type: badge
+  title: Run container images in Azure Container Instances
+  summary: Learn how Azure Container Instances can help you quickly deploy containers, how to set environment variables, and specify container restart policies.
+  iconUrl: /training/achievements/azure-container-instances-images.svg
+- uid: learn.wwl.develop-azure-functions.badge
+  type: badge
+  title: Develop Azure Functions
+  summary: Learn how to create and deploy Azure Functions.
+  iconUrl: /training/achievements/2-develop-azure-functions.svg
+- uid: learn.wwl.implement-azure-container-apps.badge
+  type: badge
+  title: Implement Azure Container Apps
+  summary: Learn how Azure Container Apps can help you deploy and manage microservices and containerized apps on a serverless platform that runs on top of Azure Kubernetes Service.
+  iconUrl: /training/achievements/implement-azure-container-apps.svg
+- uid: learn.wwl.publish-container-image-to-azure-container-registry.badge
+  type: badge
+  title: Manage container images in Azure Container Registry
+  summary: Learn how to use Azure Container Registry to store your container images, and automate builds and deployments.
+  iconUrl: /training/achievements/azure-container-registry-publish.svg
+- uid: learn.wwl.work-with-cosmos-db.badge
+  type: badge
+  title: Work with Azure Cosmos DB
+  summary: Learn how to develop client and server-side programming solutions on Azure Cosmos DB.
+  iconUrl: /training/achievements/3-work-with-azure-cosmos-db.svg
+- uid: learn.wwl.az-204-develop-event-based-solutions.trophy
+  type: trophy
+  title: Develop event-based solutions
+  summary: Learn how to build applications with event-based architectures by integrating Azure Event Grid and Azure Event Hubs in to your solution.
+  iconUrl: /training/achievements/az-204-develop-event-based-solutions.svg
+- uid: learn.wwl.az-204-develop-message-based-solutions.trophy
+  type: trophy
+  title: Develop message-based solutions
+  summary: Learn how to build applications with message-based architectures by integrating Azure Service Bus and Azure Queue Storage in to your solution.
+  iconUrl: /training/achievements/message-develop-solutions.svg
+- uid: learn.wwl.az-204-implement-api-management.trophy
+  type: trophy
+  title: Implement API Management
+  summary: Learn how the API Management service functions, how to transform and secure APIs, and how to create a backend API.
+  iconUrl: /training/achievements/az-204-implement-api-management.svg
+- uid: learn.wwl.az-204-instrument-solutions-to-support-monitoring-logging.trophy
+  type: trophy
+  title: Troubleshoot solutions by using Application Insights
+  summary: Learn how to instrument apps to enable Application Insights to monitor performance and help troubleshoot issues.
+  iconUrl: /training/achievements/monitoring-instrument-solutions.svg
+- uid: learn.wwl.azure-event-grid.badge
+  type: badge
+  title: Explore Azure Event Grid
+  summary: Learn how to integrate Azure Event Grid in to your solution, implement access control to events, and how to route custom events to web endpoint by using Azure CLI.
+  iconUrl: /training/achievements/1-explore-azure-event-grid.svg
+- uid: learn.wwl.azure-event-hubs.badge
+  type: badge
+  title: Explore Azure Event Hubs
+  summary: Learn how Azure Event Hubs captures events and how to scale your processing application.
+  iconUrl: /training/achievements/2-explore-azure-event-hubs.svg
+- uid: learn.wwl.discover-azure-message-queue.badge
+  type: badge
+  title: Discover Azure message queues
+  summary: Learn how to integrate Azure Service Bus and Azure Queue storage in to your solution, and how to send and receive message by using .NET.
+  iconUrl: /training/achievements/discover-message-queue.svg
+- uid: learn.wwl.explore-api-management.badge
+  type: badge
+  title: Explore API Management
+  summary: Learn how the API Management service functions, how to transform and secure APIs, and how to create a backend API.
+  iconUrl: /training/achievements/1-explore-api-management.svg
+- uid: learn.wwl.monitor-app-performance.badge
+  type: badge
+  title: Monitor app performance
+  summary: Learn how to use the tools offered in Application Insights to enhance the performance and stability of your applications.
+  iconUrl: /training/achievements/monitoring-app-performance.svg

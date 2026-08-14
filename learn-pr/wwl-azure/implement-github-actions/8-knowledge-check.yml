@@ -4,12 +4,12 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/07/2024
-  author: wwlpublish
+  ms.date: 07/23/2026
+  author: jeffkoms
   ms.author: jeffko
   ms.topic: unit
   module_assessment: true
-durationInMinutes: 3
+durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
   questions:
@@ -28,14 +28,14 @@ quiz:
     choices:
     - content: "The variable at the highest level."
       isCorrect: false
-      explanation: "Incorrect. The variable at the highest level doesn't take precedence."
+      explanation: "Incorrect. Organization-level variables have lower precedence than repository- and environment-level variables."
     - content: "The variable at the lowest level."
       isCorrect: true
-      explanation: "Correct. If a variable with the same name exists at multiple levels, the variable at the lowest level takes precedence."
+      explanation: "Correct. Environment-level variables override repository-level variables, and repository-level variables override organization-level variables."
     - content: "The variable at the middle level."
       isCorrect: false
-      explanation: "Incorrect. The variable at the middle level doesn't take precedence."
-  - content: "What is the recommended practice when granting credential permissions for secrets in GitHub?"
+      explanation: "Incorrect. Repository-level variables override organization-level variables, but environment-level variables take precedence over repository-level variables."
+  - content: "What is the recommended practice when granting permissions to credentials used by a GitHub Actions workflow?"
     choices:
     - content: "Grant full access to all credentials for ease of use."
       isCorrect: false
@@ -46,3 +46,25 @@ quiz:
     - content: "Grant the minimum permissions possible."
       isCorrect: true
       explanation: "Correct. It's recommended to grant the minimum permissions possible to limit access and maintain security."
+  - content: "A workflow must authenticate to a cloud provider without maintaining long-lived cloud credentials. Which approach should the developer use?"
+    choices:
+    - content: "Configure OpenID Connect to request short-lived, scoped access tokens."
+      isCorrect: true
+      explanation: "Correct. OpenID Connect provides short-lived tokens and avoids storing long-lived cloud credentials as GitHub secrets."
+    - content: "Store a cloud administrator password as a repository variable."
+      isCorrect: false
+      explanation: "Incorrect. Repository variables aren't designed for sensitive values, and an administrator password grants excessive permissions."
+    - content: "Store a classic personal access token with every available scope."
+      isCorrect: false
+      explanation: "Incorrect. A GitHub personal access token doesn't replace cloud authentication, and granting every scope violates least privilege."
+  - content: "A workflow uses a third-party action and requires an immutable reference. Which reference prevents the action code from changing without a workflow update?"
+    choices:
+    - content: "Reference the action's default branch."
+      isCorrect: false
+      explanation: "Incorrect. A branch can move to a different commit, so it isn't an immutable reference."
+    - content: "Reference the action by its full commit SHA."
+      isCorrect: true
+      explanation: "Correct. A full commit SHA is the only immutable reference for a GitHub Action. You should verify that the commit belongs to the action's repository."
+    - content: "Reference the action by a major version tag."
+      isCorrect: false
+      explanation: "Incorrect. A major version tag is commonly used for trusted actions, but a maintainer can move or delete it, so the tag isn't immutable."

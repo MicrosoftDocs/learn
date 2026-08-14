@@ -4,7 +4,7 @@ In this exercise you:
 
 * Create App Service and Load Testing resources in Azure.
 * Create and configure a service principal to enable GitHub Actions workflows to perform actions in your Azure account.
-* Deploy a .NET 8 application to Azure App Service using a GitHub Actions workflow.
+* Deploy a .NET 10 application to Azure App Service using a GitHub Actions workflow.
 * Update a GitHub Actions workflow to invoke a URL-based load test.
 
 ## Prerequisites
@@ -19,7 +19,7 @@ In this exercise you:
 Select the **Launch Exercise** button, it opens the exercise instructions in a new browser window. When you're finished with the exercise, return here for:
 
 > [!div class="checklist"]
-> * A quick knowledge check 
+> * A quick knowledge check
 > * A summary of what you've learned
 > * To earn a badge for completing this module
 

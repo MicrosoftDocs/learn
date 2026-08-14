@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-advanced-windows-firewall.build-custom-firewall-rules
+title: Build custom firewall rules
+metadata:
+  title: Build Custom Firewall Rules
+  description: Build least-privilege rules with precise application, service, protocol, address, profile, user, and computer scope.
+  ms.date: 08/05/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 18
+content: |
+  [!include[](includes/2-build-custom-firewall-rules.md)]

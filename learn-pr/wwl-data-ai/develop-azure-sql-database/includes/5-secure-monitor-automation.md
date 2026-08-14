@@ -14,7 +14,7 @@ When automating database publishing with tools like [GitHub Actions](https://doc
 
 - **Role-Based Access Control (RBAC)**: Implement role-based access control to control who has access to your Azure SQL Database and what actions they can perform. Assign roles and permissions based on the principle of least privilege, ensuring that users have only the access they need to perform their tasks.
 
-- **Auditing and monitoring**: Enable auditing and monitoring for your Azure SQL Database to track access and changes. This helps you detect and respond to potential security incidents. Azure provides built-in tools like Azure Monitor and Azure Security Center to help you with this.
+- **Auditing and monitoring**: Enable auditing and monitoring for your Azure SQL Database to track access and changes. This helps you detect and respond to potential security incidents. Azure provides built-in tools like Azure Monitor and Microsoft Defender for Cloud to help you with this.
 
 ### Monitor automation tasks
 

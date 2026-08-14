@@ -2,9 +2,10 @@
 uid: learn.wwl.secure-multi-agent-systems-azure-zero-trust.implement-tenant-context-data-isolation
 title: Implement tenant context propagation and data isolation
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement Tenant Context Propagation and Data Isolation
   description: "Implement tenant context propagation and data isolation."
-  ms.date: 06/01/2026
+  ms.date: 8/3/2026
   author: petender
   ms.author: petender
   ms.topic: unit

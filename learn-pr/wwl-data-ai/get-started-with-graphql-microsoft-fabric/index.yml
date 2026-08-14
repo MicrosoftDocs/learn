@@ -3,7 +3,7 @@ uid: learn-wwl.get-started-with-graphql-microsoft-fabric
 metadata:
   title: Get started with GraphQL in Microsoft Fabric
   description: "Learn how GraphQL in Microsoft Fabric works, the key concepts, and practical examples to help users integrate their applications with GraphQL effectively as part of their solutions."
-  ms.date: 08/07/2025
+  ms.date: 08/11/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based
@@ -29,7 +29,6 @@ roles:
 - solution-architect
 products:
 - fabric
-- azure-ad-graph-api
 - azure-sql-database
 subjects: 
   - app-development

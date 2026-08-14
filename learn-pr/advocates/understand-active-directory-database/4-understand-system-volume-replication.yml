@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-database.understand-system-volume-replication
+title: Understand the system volume and Distributed File System Replication
+metadata:
+  title: Understand the System Volume and Distributed File System Replication
+  description: Explain system-volume content, client access, initialization, and file replication.
+  ms.date: 07/24/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-understand-system-volume-replication.md)]

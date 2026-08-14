@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4a47e01c-5e72-425b-ba5f-c6056b6bc7c2]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry provides multiple Azure OpenAI Service deployment tiers, from lightweight models for simple lookups to high-capability models for complex reasoning tasks. You can route requests to different tiers based on task complexity, matching cost to capability across your agent ecosystem.
 
 Organizations deploying multi-agent systems quickly discover that using the same model for every agent is the fastest path to cost overruns. Adventure Works' shipping status agent doesn't need GPT-4o to parse a tracking number and look up delivery information—but the return policy interpreter absolutely needs advanced reasoning to handle ambiguous edge cases. The difference in per-request cost between these models can be 10x, and at millions of daily requests, choosing the right model for each task determines whether the system is financially sustainable.
@@ -139,3 +150,5 @@ Model routing transforms multi-agent cost optimization from a blunt "use cheaper
 - Continuous monitoring and optimization of routing decisions are essential for maintaining performance and cost efficiency.
 - Caching strategies at multiple levels can significantly reduce the number of model inference calls and associated costs.
 - Open-source models offer a cost-effective alternative for certain use cases, but require careful management and benchmarking.
+
+::: zone-end

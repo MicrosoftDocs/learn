@@ -22,17 +22,17 @@ The **Connector location prefix** informs SQL Server of the type of endpoint you
 
 | External data source | Connector location prefix | Location path | Authentication |
 |--|--|--|--|
-| Azure Blob Storage | `abs` | `abs://<storage_account_name>.blob.core.windows.net/<container_name>` | Shared access signature (SAS) |
-| Azure Data Lake Storage | `adls` | `adls://<storage_account_name>.dfs.core.windows.net/<container_name>` | SAS |
+| Azure Blob Storage | `abs` | `abs://<storage_account_name>.blob.core.windows.net/<container_name>` | Shared access signature (SAS), Managed Identity (SQL Server 2025 with Azure Arc or Azure VM) |
+| Azure Data Lake Storage | `adls` | `adls://<storage_account_name>.dfs.core.windows.net/<container_name>` | SAS, Managed Identity (SQL Server 2025 with Azure Arc or Azure VM) |
 | SQL Server | `sqlserver` | `<server_name>[\<instance_name>][:port]` | SQL authentication only |
 | Oracle | `oracle` | `<server_name>[:port]` | Basic authentication only |
 | Teradata | `teradata` | `<server_name>[:port]` | Basic authentication only |
 | MongoDB or Azure Cosmos DB API for MongoDB | `mongodb` | `<server_name>[:port]` | Basic authentication only |
 | Generic Open Database Connectivity (ODBC) | `odbc` | `<server_name>[:port]` | Basic authentication only |
 | Bulk operations | `https` | `<storage_account>.blob.core.windows.net/<container>` | SAS |
-| S3-compatible object storage | `s3` | `s3://<server_name>:<port>/` |  |
+| S3-compatible object storage | `s3` | `s3://<server_name>:<port>/` | S3 Access Key (`IDENTITY = 'S3 Access Key'`, `SECRET = '<AccessKeyID>:<SecretKeyID>'`) or pass-through (STS) |
 
-Some prefixes changed from previous version of SQL Server for compatibility reasons. For a complete list of data sources and corresponding prefixes, see [CREATE EXTERNAL DATA SOURCE](/sql/t-sql/statements/create-external-data-source-transact-sql?view=sql-server-ver16&preserve-view=true&tabs=dedicated#location--prefixpathport-3).
+Some prefixes changed from previous versions of SQL Server for compatibility reasons. For a complete list of data sources and corresponding prefixes, see [CREATE EXTERNAL DATA SOURCE](/sql/t-sql/statements/create-external-data-source-transact-sql#location--prefixpathport-3).
 
 ## Supported file formats for PolyBase
 

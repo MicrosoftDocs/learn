@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/25/2023
-  author: wwlpublish
-  ms.author: rcaper
+  ms.date: 08/11/2026
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3
@@ -17,43 +17,43 @@ quiz:
     choices:
     - content: "The inner transaction is executed."
       isCorrect: false
-      explanation: "That's incorrect. If the outer transaction is rolled back, the inner transaction won't be executed."
+      explanation: "Incorrect. If the outer transaction is rolled back, the inner transaction won't be executed."
     - content: "The inner transaction prevents the outer transaction from being rolled back. Both the inner and outer transaction will be executed."
       isCorrect: false
-      explanation: "That's incorrect. If the outer transaction is rolled back, the inner transaction won't be executed. The inner transaction won't prevent the outer transaction from being rolled back."
+      explanation: "Incorrect. If the outer transaction is rolled back, the inner transaction won't be executed. The inner transaction won't prevent the outer transaction from being rolled back."
     - content: "The inner transaction is also rolled back."
       isCorrect: true
-      explanation: "That's correct. All inner transactions are rolled back when the outer transaction is rolled back."
+      explanation: "Correct. All inner transactions are rolled back when the outer transaction is rolled back."
   - content: "Which of the following T-SQL keywords are used to control transactions?"
     choices:
     - content: "BEGIN TRANSACTION"
       isCorrect: true
-      explanation: "That's correct. BEGIN TRANSACTION keywords are used to start an explicit transaction."
+      explanation: "Correct. BEGIN TRANSACTION keywords are used to start an explicit transaction."
     - content: "BEGIN TRY"
       isCorrect: false
-      explanation: "That's incorrect. BEGIN TRY is used to handle errors and doesn't control transactions."
+      explanation: "Incorrect. BEGIN TRY is used to handle errors and doesn't control transactions."
     - content: "BREAK"
       isCorrect: false
-      explanation: "That's incorrect. The BREAK keyword is used to exit a WHILE loop and isn't used to control transactions."
+      explanation: "Incorrect. The BREAK keyword is used to exit a WHILE loop and isn't used to control transactions."
   - content: "What does XACT_STATE test for?"
     choices:
     - content: "Whether there are nested transactions."
       isCorrect: false
-      explanation: "That's incorrect. XACT_STATE doesn't test for whether there are nested transactions."
+      explanation: "Incorrect. XACT_STATE doesn't test for whether there are nested transactions."
     - content: "The status of the current request."
       isCorrect: true
-      explanation: "That's correct. XACT_STATE tests for the status of the current request."
+      explanation: "Correct. XACT_STATE tests for the status of the current request."
     - content: "Returns the error number that caused the transaction to fail."
       isCorrect: false
-      explanation: "That's incorrect. XACT_STATE tests for open transactions and not whether a transaction has completed."
+      explanation: "Incorrect. XACT_STATE tests for open transactions and not whether a transaction has completed."
   - content: "What is the default transaction isolation level for Azure SQL Database?"
     choices:
     - content: "READ_COMMITTED_SNAPSHOT_ON"
       isCorrect: true
-      explanation: "That's correct. READ_COMMITTED_SNAPSHOT_ON is the default transaction isolation level for Azure SQL Database."
+      explanation: "Correct. READ_COMMITTED_SNAPSHOT_ON is the default transaction isolation level for Azure SQL Database."
     - content: "READ_COMMITTED_SNAPSHOT_OFF"
       isCorrect: false
-      explanation: "That's incorrect. READ_COMMITTED_SNAPSHOT_OFF is the default transaction isolation level for SQL Server."
+      explanation: "Incorrect. READ_COMMITTED_SNAPSHOT_OFF is the default transaction isolation level for SQL Server."
     - content: "XACT_ABORT"
       isCorrect: false
-      explanation: "That's incorrect. XACT_ABORT isn't a transaction isolation level."
+      explanation: "Incorrect. XACT_ABORT isn't a transaction isolation level."

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1e3a9e57-ca59-449b-aabd-839e57af8247]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Retrieval quality is determined before any search runs—it's set at indexing time, by the chunks and embeddings you put into Azure AI Search. Azure Document Intelligence gives you the structural information needed to make good chunking decisions, extracting section boundaries and content hierarchy from complex clinical PDFs. Together, these two services form the content preparation layer that sets the ceiling on what your RAG pipeline can retrieve.
 
 The drug formulary documents you indexed started as 50-page PDFs covering hundreds of medications. You split them into chunks for embedding and retrieval, but the quality of those chunks determines whether your RAG pipeline can find the right information. A chunk that's too large includes irrelevant context about unrelated medications, reducing semantic match quality. A chunk that's too small loses the surrounding context needed to understand dosing instructions or contraindications. Optimal chunking depends on your content structure and the questions being asked.
@@ -234,3 +245,5 @@ Now that you've optimized your chunking and embedding strategies to match clinic
 - **Hierarchical parent-child chunking** indexes small child chunks for precise retrieval alongside large parent chunks for context, improving answer quality for complex queries at the cost of increased index size
 - **Embedding model selection** trades infrastructure complexity for domain accuracy—general-purpose models like `text-embedding-3-large` work well for most content, while clinical models (BioBERT, PubMedBERT) add 10+ points of precision for specialized terminology
 - **Blue-green index deployment** handles embedding model upgrades without downtime—re-embed all documents into a new index, validate retrieval quality with parallel queries, then switch traffic
+
+::: zone-end

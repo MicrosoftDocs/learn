@@ -6,7 +6,7 @@ metadata:
   description: Shows you how to create a Java application that connects to Azure Database for MySQL and deploy it to JBoss EAP on Azure App Service.
   author: Orin-Thomas
   ms.author: orthomas
-  ms.date: 03/16/2025
+  ms.date: 07/25/2026
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates

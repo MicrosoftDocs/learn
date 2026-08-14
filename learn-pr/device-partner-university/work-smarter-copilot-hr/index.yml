@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.dpu.work-smarter-copilot-hr
+title: Work smarter with Copilot prompts for human resources professionals
+metadata:
+  title: Work Smarter With Copilot Prompts For Human Resources Professionals
+  description: Discover how Microsoft 365 Copilot and Copilot+ PC experiences can help human resources professionals plan their day, support employees and managers, collaborate more effectively, and stay organized through practical prompts and workflows.
+  ms.date: 07/27/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module
+  ms.service: microsoft-365-copilot
+summary: >
+  Discover how Microsoft 365 Copilot and Copilot+ PC experiences can help human resources professionals plan their day, support employees and managers, collaborate more effectively, and stay organized through practical prompts and workflows.
+abstract: |
+  In this module, you learn how Microsoft 365 Copilot and Copilot+ PC experiences can help human resources professionals stay organized, support employees and managers more effectively, and manage daily responsibilities. You explore practical prompts and workflows for prioritizing work, preparing for employee conversations, creating HR content, capturing meeting insights, and organizing follow-up activities throughout the workday.
+  
+  After completing this module, you'll be able to:
+  - Plan and prioritize HR activities by using Microsoft 365 Copilot to organize meetings, employee requests, and administrative tasks.
+  - Use Copilot in Microsoft 365 apps to summarize employee information, create HR content, and draft communications.
+  - Use Copilot during meetings to capture key details, track action items, and maintain alignment with employees and managers.
+  - Use Copilot+ PC experiences to enhance communication, stay organized, and support your workflow throughout the workday.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/work-smarter-copilot-hr.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - microsoft-365-copilot
+units:
+  - learn.dpu.work-smarter-copilot-hr.introduction
+  - learn.dpu.work-smarter-copilot-hr.start-with-copilot
+  - learn.dpu.work-smarter-copilot-hr.support-employees-managers
+  - learn.dpu.work-smarter-copilot-hr.communicate-with-copilot
+  - learn.dpu.work-smarter-copilot-hr.wrap-up-with-copilot
+  - learn.dpu.work-smarter-copilot-hr.knowledge-check
+  - learn.dpu.work-smarter-copilot-hr.summary
+badge:
+  uid: learn.dpu.work-smarter-copilot-hr.badge

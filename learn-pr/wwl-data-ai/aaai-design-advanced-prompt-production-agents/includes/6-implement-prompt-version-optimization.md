@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ff4225a9-5245-45ed-baa7-2f07313957cc]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Production system prompts degrade—model updates, shifting requirements, and accumulated edits erode quality in ways that aren't obvious until something breaks. Microsoft Foundry evaluation runs give you the quantitative signal to detect and respond to those changes before they reach production.
 
 A system prompt that produces excellent results in January might degrade in April when the underlying model is updated. You discover that changing "analyze these lab results" to "interpret these clinical findings" improves accuracy by 12%—but without version control, you can't reproduce the old behavior if the change breaks edge cases. Production prompt engineering requires the same rigor as code engineering: version control, regression testing, A/B comparison, and evidence-based optimization decisions.
@@ -226,3 +237,5 @@ eval_results = evaluate(
 ```
 
 Each agentic evaluator returns a pass/fail result with a reasoning explanation. A `task_adherence` failure identifies which system prompt constraint was violated and why. An `intent_resolution` failure surfaces the gap between what the user asked and what the agent addressed. This diagnosis guides the specific prompt change needed rather than requiring trial-and-error reruns.
+
+::: zone-end

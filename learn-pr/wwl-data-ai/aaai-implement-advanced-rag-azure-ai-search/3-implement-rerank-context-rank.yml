@@ -2,9 +2,10 @@
 uid: learn.wwl.implement-advanced-rag-azure-ai-search.implement-rerank-context-rank
 title: Implement reranking and context ranking
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement Re-Ranking and Context Ranking
   description: "Implement reranking and context ranking."
-  ms.date: 05/28/2026
+  ms.date: 8/3/2026
   author: petender
   ms.author: petender
   ms.topic: unit

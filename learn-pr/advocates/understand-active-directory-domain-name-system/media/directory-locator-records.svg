@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Directory locator record scopes</title>
+  <desc id="desc">Three ordered sections show forest-wide locator records, domain records, and site-specific locator records for the Contoso forest.</desc>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0 0L0 6L9 3z" fill="#506A8A"/>
+    </marker>
+    <style>
+      .scope{stroke:#243A5E;stroke-width:2}
+      .forest{fill:#e8f4ff}
+      .domain{fill:#edf8f1}
+      .site{fill:#fff5df}
+      .record{fill:#fff;stroke:#506A8A;stroke-width:1.5}
+      .step{fill:#243A5E}
+      .stepText{font:700 15px Segoe UI,Arial,sans-serif;fill:#fff;text-anchor:middle}
+      .title{font:700 21px Segoe UI,Arial,sans-serif;fill:#172B4D;text-anchor:middle}
+      .heading{font:700 17px Segoe UI,Arial,sans-serif;fill:#172B4D;text-anchor:middle}
+      .text{font:14px Segoe UI,Arial,sans-serif;fill:#172B4D;text-anchor:middle}
+      .code{font:13px Consolas,monospace;fill:#172B4D;text-anchor:middle}
+      .connector{stroke:#506A8A;stroke-width:2;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+
+  <text x="600" y="42" class="title">Contoso Research directory locator namespace</text>
+
+  <!-- 1. Forest-wide scope -->
+  <rect x="90" y="70" width="1020" height="190" rx="14" class="scope forest"/>
+  <circle cx="125" cy="105" r="20" class="step"/>
+  <text x="125" y="110" class="stepText">1</text>
+  <text x="600" y="111" class="heading">Forest-wide zone: _msdcs.contoso.com</text>
+
+  <rect x="140" y="135" width="350" height="90" rx="10" class="record"/>
+  <text x="315" y="164" class="heading">Global catalog locator</text>
+  <text x="315" y="196" class="code">_ldap._tcp.gc._msdcs.contoso.com</text>
+
+  <rect x="520" y="135" width="540" height="90" rx="10" class="record"/>
+  <text x="790" y="162" class="heading">NTDS Settings object GUID CNAME records</text>
+  <text x="790" y="188" class="code">&lt;ntds-settings-object-guid&gt;._msdcs.contoso.com</text>
+  <text x="790" y="211" class="code">CNAME bne-dc1.corp.contoso.com or per-dc1.corp.contoso.com</text>
+
+  <!-- 2. Domain scope -->
+  <path d="M600 260V295" class="connector"/>
+  <rect x="90" y="305" width="1020" height="225" rx="14" class="scope domain"/>
+  <circle cx="125" cy="340" r="20" class="step"/>
+  <text x="125" y="345" class="stepText">2</text>
+  <text x="600" y="346" class="heading">Domain zone: corp.contoso.com</text>
+
+  <rect x="140" y="375" width="350" height="115" rx="10" class="record"/>
+  <text x="315" y="405" class="heading">Domain controller host records</text>
+  <text x="315" y="438" class="code">bne-dc1 A 10.20.0.10</text>
+  <text x="315" y="465" class="code">per-dc1 A 10.40.0.10</text>
+
+  <rect x="520" y="375" width="540" height="115" rx="10" class="record"/>
+  <text x="790" y="403" class="heading">Domain-wide locator records</text>
+  <text x="790" y="430" class="code">_ldap._tcp.dc._msdcs.corp.contoso.com</text>
+  <text x="790" y="454" class="code">_kerberos._tcp.dc._msdcs.corp.contoso.com</text>
+  <text x="790" y="478" class="code">_ldap._tcp.pdc._msdcs.corp.contoso.com</text>
+
+  <text x="600" y="515" class="text">SOA and NS describe intended authority and delegation for each zone.</text>
+
+  <!-- 3. Site scope -->
+  <path d="M600 530V565" class="connector"/>
+  <rect x="90" y="575" width="1020" height="150" rx="14" class="scope site"/>
+  <circle cx="125" cy="610" r="20" class="step"/>
+  <text x="125" y="615" class="stepText">3</text>
+  <text x="600" y="616" class="heading">Site-specific locator branches in corp.contoso.com</text>
+
+  <rect x="160" y="640" width="400" height="60" rx="10" class="record"/>
+  <text x="360" y="666" class="heading">Brisbane site</text>
+  <text x="360" y="689" class="code">_ldap._tcp.Brisbane._sites.dc...</text>
+
+  <rect x="640" y="640" width="400" height="60" rx="10" class="record"/>
+  <text x="840" y="666" class="heading">Perth site</text>
+  <text x="840" y="689" class="code">_ldap._tcp.Perth._sites.dc...</text>
+</svg>
