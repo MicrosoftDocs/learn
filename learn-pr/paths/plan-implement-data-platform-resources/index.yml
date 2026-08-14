@@ -30,7 +30,6 @@ subjects:
 - data-engineering
 - data-management
 modules:
-- learn.wwl.prepare-to-maintain-sql-databases-azure
 - learn.wwl.deploy-iaas-solutions-with-azure-sql
 - learn.wwl.deploy-paas-solutions-with-azure-sql
 - learn-wwl.migrate-sql-workloads-azure-sql-databases
