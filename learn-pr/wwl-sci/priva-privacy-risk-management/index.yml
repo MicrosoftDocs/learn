@@ -3,23 +3,26 @@ uid: learn.wwl.priva-privacy-risk-management
 metadata:
   title: Implement and manage Microsoft Purview Privacy Risk Management
   description: "Implement and manage Microsoft Purview Privacy Risk Management."
-  ms.date: 01/17/2025
+  ms.date: 08/14/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ms.service: purview
   hidden: false
 title: Implement and manage Microsoft Purview Privacy Risk Management
-summary: Understand how Microsoft Priva Privacy Risk Management empowers organizations to mitigate privacy risks, safeguard sensitive data, and support compliance with privacy regulations. Discover how to create and manage policies for data overexposure, data transfers, and data minimization, and use insights from reports to improve data handling practices.
+summary: Detect and remediate personal data that's overexposed or transferred outside your Microsoft 365 environment using Microsoft Priva Privacy Risk Management. Create data overexposure and data transfer policies, investigate alerts, and use reports to spot risk trends.
 abstract: |
-  After completing this module, you'll be able to:
-  - Describe the purpose and key capabilities of Microsoft Priva Privacy Risk Management.
-  - Create and manage policies using templates or custom configurations to address privacy risks.
-  - Investigate and respond to alerts triggered by privacy policies.
-  - Use reports to gain insights into personal data handling and refine policies to align with organizational goals.
+  In this module, you learn to:
+  - Explain how Privacy Risk Management detects personal data risks and represents them as matches, alerts, and issues.
+  - Create a data overexposure or data transfer policy from a built-in template.
+  - Customize a Privacy Risk Management policy with your own data sources, classification groups, users, conditions, and alert thresholds.
+  - Move policies through their lifecycle by testing, activating, editing, and turning them off based on match volume and quality.
+  - Investigate alerts, create issues, and remediate matched content with actions like Notify owner, Make private, or Apply a sensitivity or retention label.
+  - Use Privacy Risk Management reports for spotting trends in personal data, overexposure, and data transfers across your environment.
 prerequisites: |
-  - Familiarity with Microsoft 365 environments.
-  - Basic understanding of privacy regulations and data protection requirements.
+  - Working knowledge of Microsoft 365 services like Exchange, SharePoint, OneDrive, and Teams.
+  - Familiarity with data privacy regulations such as HIPAA, and with sensitive information types and classification.
+  - Can navigate the Microsoft Purview portal and the Microsoft Priva portal.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

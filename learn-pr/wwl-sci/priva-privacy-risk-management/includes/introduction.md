@@ -1,21 +1,38 @@
-Organizations face growing challenges in managing personal data responsibly and complying with privacy regulations. Mishandling personal data, whether through overexposure, insufficient safeguards, or inconsistent policies, can lead to regulatory penalties, reputational damage, and loss of customer trust.
+Microsoft Priva Privacy Risk Management scans your Microsoft 365 environment for overexposed personal data and for transfers that cross boundaries you set. You flag the risk, notify content owners, and act before it becomes a compliance incident.
 
-Microsoft Priva Privacy Risk Management is designed to help organizations proactively address these challenges. It provides visibility into personal data handling practices, identifies potential risks such as overexposed or unprotected data, and offers automated solutions to mitigate them. By aligning privacy management efforts with organizational goals, Privacy Risk Management enables businesses to reduce risks, support compliance, and build trust with stakeholders.
-
-## Scenario
-
-Imagine you work for a healthcare organization that manages large volumes of personal data, including patient records and employee information. A recent audit revealed that sensitive data, such as Social Security numbers and medical histories, is overexposed within internal file shares. Some teams also lack processes for addressing potential risks, like access by unauthorized users. Your organization needs a solution to identify and mitigate these risks while supporting compliance with privacy regulations.
-
-You need a tool that can analyze data handling practices, identify potential privacy risks, and enforce policies to protect sensitive information.
+Consider a healthcare organization that stores patient records, employee data, and appointment histories across SharePoint, OneDrive, and Exchange. A recent audit found sensitive data like Social Security numbers and medical histories sitting in internal file shares that anyone in the company can open. The team lacks a consistent way to catch when that data gets shared externally. The privacy team uses Microsoft Priva Privacy Risk Management to **flag overexposed content and alert admins when personal data crosses organizational or regional boundaries**, then routes the matches to content owners for remediation.
 
 ## Learning objectives
 
-By the end of this module, you'll be able to:
+In this module you learn to:
 
-- Describe the purpose and key capabilities of Microsoft Priva Privacy Risk Management.
-- Create and manage policies to detect and mitigate privacy risks.
-- Use risk management reports to gain insights into data handling practices.
-- Investigate and respond to privacy-related alerts.
+- Explain how Privacy Risk Management detects personal data risks and represents them as matches, alerts, and issues.
+- Create a data overexposure or data transfer policy from a built-in template.
+- Customize a Privacy Risk Management policy with your own data sources, classification groups, users, conditions, and alert thresholds.
+- Move policies through their lifecycle by testing, activating, editing, and turning them off based on match volume and quality.
+- Investigate alerts, create issues, and remediate matched content with actions like Notify owner, Make private, or Apply a sensitivity or retention label.
+- Use Privacy Risk Management reports for spotting trends in personal data, overexposure, and data transfers across your environment.
+
+## Learning prerequisites
+
+- Working knowledge of Microsoft 365 services like Exchange, SharePoint, OneDrive, and Teams.
+- Familiarity with data privacy regulations such as HIPAA, and with sensitive information types and classification.
+- Can navigate the Microsoft Purview portal and the Microsoft Priva portal.
+
+## Technical prerequisites
+
+Which parts of this module you can act on depends on your tenant's licensing, configuration, and role assignments:
+
+| Capability | Which parts of this module apply |
+| --- | --- |
+| [Priva Privacy Risk Management](/privacy/priva/priva-setup?azure-portal=true) add-on license, layered on a qualifying Microsoft 365 or Office 365 subscription | All units that create, manage, investigate, or report on policies |
+| Microsoft 365 [audit log](/purview/audit-solutions-overview?azure-portal=true) turned on for the tenant | Any policy detection, since Privacy Risk Management reads audit activity to generate matches |
+| **Privacy Management Administrators** role group in the Microsoft Purview portal | Creating and managing policies from templates or custom setup |
+| **Privacy Management Analysts** or **Privacy Management Investigators** role group | Units that investigate alerts and issues. Investigators can view matched content |
+| **Privacy Management Viewer** role group | Reviewing Overview and Reports insights without policy or content access |
+| Microsoft Azure and Amazon Web Services S3 connectors (preview), configured in Priva | The multicloud coverage shown on the Reports page |
+
+For current licensing and role details, see [Get started with Priva](/privacy/priva/priva-setup?azure-portal=true).
 
 ## Legal disclaimer
 

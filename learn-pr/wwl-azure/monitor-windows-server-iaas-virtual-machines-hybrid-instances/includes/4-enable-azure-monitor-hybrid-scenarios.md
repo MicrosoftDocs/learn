@@ -1,82 +1,52 @@
-Contoso has a hybrid infrastructure; some compute workloads run as IaaS VMs in Azure, and others run on Windows Server VMs in Contoso datacenters. The process of monitoring on-premises Windows Servers using Azure Monitor is almost identical to the process of enabling monitoring on IaaS VMs.
+Contoso has a hybrid infrastructure. Some workloads run as Azure IaaS VMs, while others run on physical or virtual servers in Contoso datacenters. Azure Arc-enabled servers provides an Azure resource representation for machines hosted outside Azure so you can apply Azure management and monitoring services consistently.
 
-## Implement Azure Monitor in hybrid scenarios
+## Prepare hybrid machines
 
-To leverage the benefits provided by Azure Monitor in hybrid scenarios, you must install the Log Analytics agent on your on-premises servers. To perform this task, use the following procedure:
+Complete these prerequisites before you enable Azure Monitor for a hybrid machine:
 
-1. On the target server, open the Azure portal.
-2. From your **Log Analytics workspace** in the Azure portal, select **Advanced settings**.
-3. Copy the **WORKSPACE ID** and **PRIMARY KEY** values. (You need them during installation.)
-4. In the details pane, select **Download Windows Agent (64-bit)** or **Download Windows Agent (32-bit)** as required.
+- Connect the machine to Azure Arc-enabled servers by installing the Azure Connected Machine agent.
+- Verify that the operating system supports Azure Monitor Agent.
+- Allow outbound HTTPS traffic to the required Azure Resource Manager and Azure Monitor endpoints.
+- Create or select a destination workspace.
+- Obtain permission to create DCRs and associate them with the Arc-enabled server.
 
-[![A screenshot of the Advanced settings page of a Log Analytics workspace. In the details pane, links display for downloading various agents. Also displayed are the WORKSPACE ID and PRIMARY KEY values.](../media/m16-download-agent.png)](../media/m16-download-agent.png#lightbox)
+Azure Monitor Agent uses the managed identity created for the Arc-enabled server. You don't join the server to a workspace by using a workspace ID and shared key.
 
-Next, run the **MMASetup-AMD64.exe** file and use the following instructions to install the agent:
+## Enable monitoring
 
-1. On the **Welcome** page, select **Next**.
-2. On the **License Terms** page, read the license agreement, and then select **I Agree**.
-3. On the **Destination Folder** page, change or keep the default installation folder, and then select **Next**.
-4. On the **Agent Setup Options** page, connect the agent to **Azure Log Analytics**, and then select **Next**.
-5. On the **Azure Log Analytics** page, complete the following steps:
-  1. Paste in the **Workspace ID** and **Primary key** (referred to as the *Workspace key*).
-  2. From the **Azure Cloud** list, select either **Azure Commercial** or **Azure US Government**.
-  3. On the **Ready to Install** page, review your choices, and then select **Install**.
-  4. On the **Configuration completed successfully** page, select **Finish**.
+To enable monitoring for one Arc-enabled server in the Azure portal:
 
-The Log Analytics agent is designed to facilitate monitoring and management integration in hybrid environments, including those managed by Operations Manager. The Log Analytics agent also delivers data consumed by other Azure services, including Azure Security Center and Azure Automation.
+1. Search for and select **Azure Arc**.
+2. Under **Infrastructure**, select **Machines**, and then select the connected server.
+3. Under **Monitoring**, select **Insights**.
+4. Select **Configure**.
+5. Select the monitoring configuration and destination workspace.
+6. Select **Review + Enable**, and then select **Enable**.
 
-The agent manages:
+The portal installs the Azure Monitor Agent extension and creates or associates the required DCR. For larger environments, use Azure Policy to deploy the agent and DCR associations at scale.
 
-- Windows event logs
-- Windows performance counters
-- Specified file-based logs
-- Logs associated with Azure Monitor
-- Azure Automation monitoring and management solutions that you enable
+## Configure data collection rules
 
-You can configure these settings by selecting **Data** in the **Advanced settings** page of the appropriate Log Analytics workspace. Some of the Azure Automation monitoring and management solutions such as Update Management rely exclusively on a Log Analytics agent, while others such as Change Tracking and Inventory require you to also install the Dependency Agent. The primary purpose of the Dependency Agent is to identify details and dependencies for processes hosted on managed servers, and to collect network-related metrics.
+DCRs separate data collection configuration from the agent. A DCR specifies:
 
-> [!NOTE]
-> Log Analytics is also referred to as the *Microsoft Monitoring Agent*.
+- Resources that use the rule.
+- Data sources, such as Windows events, performance counters, Syslog, and file-based logs.
+- Optional transformations that filter or modify data before ingestion.
+- Destinations, such as a Log Analytics workspace.
 
-### Log Analytics workspace
-
-All the data collected by both Log Analytics and the Dependency Agent is uploaded automatically to your designated Log Analytics workspace (which optimally is in the region physically closest to the location hosting your on-premises datacenter). A *workspace* represents the administrative and security boundary of the Log Analytics environment. It also defines the scope of data collection, analysis, and visualization.
+One DCR can apply to many machines, and one machine can use multiple DCRs. This model lets you manage collection centrally without editing settings on each server.
 
 > [!NOTE]
-> You can create multiple workspaces in the same Azure subscription.
+> VM insights creates a DCR for its predefined performance data. Create additional DCRs when you need Windows events, custom performance counters, or other guest data.
 
-Each workspace has a unique workspace ID and is associated with the primary and secondary keys that serve as its authentication mechanism. You must know both the ID and at least one of the two keys to join a system to the workspace.
+## Verify hybrid monitoring
 
-When configuring the Log Analytics workspace, as part of its advanced settings you can specify types of data you intend to collect. This could include Windows event logs and performance counters, Microsoft Internet Information Services (IIS) logs, and custom logs.
+On the Arc-enabled server, select **Extensions** and confirm that `AzureMonitorWindowsAgent` or `AzureMonitorLinuxAgent` shows **Provisioning succeeded**. Then review **Insights** for performance data or query the `Heartbeat` table in the destination Log Analytics workspace.
 
-[![A screenshot of the Advanced settings page of a Log Analytics workspace. The administrator has selected the Data tab. Available to configure are Windows Event Logs, Windows Performance Counters, Linux Performance Counters, IIS Logs, Custom Fields, Custom Logs, and Syslog.](../media/m16-configure-data.png)](../media/m16-configure-data.png#lightbox)
+Monitor ingestion volume after deployment. DCR scope, collection frequency, and selected data sources affect network usage and Azure Monitor costs.
 
-You also have the option to create computer groups. Computer groups can serve as one of criteria of Log Analytics queries, enabling you to narrow down the scope of results to a subset of servers based on their group membership. Computer groups are based on information collected from target computers, including:
+## Learn more
 
-- Computers with membership in AD DS groups.
-- Windows Server Update Services (WSUS) groups.
-- Microsoft Endpoint Configuration Manager groups.
-
-For on-premises servers that you onboard into Azure Monitor, data is continually collected by the locally installed agents, and then uploaded into a Log Analytics workspace in Azure Monitor. You can add monitoring solutions to each workspace. These monitoring solutions are the primary method of extending the service's core capabilities. To utilize this extensibility, you add any solution that is available in Azure Marketplace to the workspace. Some solutions you can enable directly from the blades of the services implementing their core functionality. For example, Update management, and Change Tracking and Inventory are part of the Azure Automation pane.
-
-> [!CAUTION]
-> Keep in mind that adding a solution to the workspace deploys it to all managed computers that support the workspace. This in turn impacts the volume of collected data, which has both network bandwidth and pricing implications.
-
-The Azure Monitor monitoring solutions build on the core functionality of the service by implementing additional log processing and analytics rules. These rules derive meaningful information from raw data collected from data sources. After data is uploaded to the Log Analytics workspace, the service processes its content by applying logic as defined by the solutions you added to the workspace.
-
-### Windows Admin Center
-
-You can also integrate Windows servers with Azure Monitor by using Windows Admin Center. Windows Admin Center simplifies implementation between the two by automatically creating a Log Analytics workspace if one doesn't already exist, and if needed a corresponding Azure Automation account. It also installs both the Log Analytics agent and the Dependency Agent on the target Windows server. In addition, Windows Admin Center enables the Azure Monitor for VMs solution by default, also referred to as *Virtual Machine Insights*.
-
-> [!NOTE]
-> To set up Azure Monitor integration from the Windows Admin Center, you must first register Windows Admin Center with Azure.
-
-Onboarding Windows servers into Azure Monitor by using Windows Admin Center automatically enables the Infrastructure Insights and Dependency Map solutions. These two solutions are collectively referred to as *Azure Monitor for VMs*.
-
-You use Windows Admin Center to enable Azure Update Management. From Windows Admin Center, you can also configure alerts that apply to all servers connected to the same Log Analytics workspace. To review and modify alert configurations, you can use the Azure portal.
-
-## Additional reading
-
-You can learn more by reviewing the following documents.
-
-- [Connect Windows computers to Azure Monitor](https://aka.ms/agent-windows?azure-portal=true)
+- [Tutorial: Monitor a hybrid machine with VM insights](/azure/azure-arc/servers/tutorial-enable-vm-insights)
+- [Deployment options for Azure Monitor Agent on Azure Arc-enabled servers](/azure/azure-arc/servers/azure-monitor-agent-deployment)
+- [Data collection rules in Azure Monitor](/azure/azure-monitor/data-collection/data-collection-rule-overview)

@@ -1,33 +1,41 @@
-Microsoft Priva Privacy Risk Management enables you to effectively manage privacy policies by offering flexible options for testing, activation, and ongoing monitoring. Managing your policies ensures they remain effective in addressing privacy risks while adapting to organizational needs.
+Once a policy is active, the work continues. As your organization changes, matches shift with it, alert volume grows or shrinks, and reports point to conditions that need work. Managing a policy is the ongoing part of the lifecycle. You move it between test and active mode, edit conditions, turn it off when it's not the right fit, and delete the ones you no longer need. In practice, you refine a policy before activation and adjust it after reports show what's working and what isn't.
 
 ## Manage Privacy Risk Management policies
 
 ### Testing a policy
 
-When creating a new policy, you can choose to start it in test mode. Test mode provides a risk-free environment to validate policy settings and assess their effect without generating alerts or notifications. Policies created quickly from a template are also automatically placed in test mode. While in test mode, the policy evaluates historical data and provides insights, such as matches by location, user, or data type. Use these insights to fine-tune the policy before activating it. Testing is recommended for at least five days to ensure sufficient data for evaluation. You can edit a policy during its test mode to adjust conditions and monitor the changes before turning it on.
+Keep a policy in test mode when you need more time to evaluate it before turning it on.
 
 To start a policy in test mode:
 
 1. Select **Create a policy** from the **Policies** page.
-1. Complete the steps in the policy creation wizard, ensuring you choose **Test it out first** at the **Decide policy mode** step.
+1. Complete the steps in the policy creation wizard, ensuring you choose **Test it out first** at the **Mode** step.
 1. Submit the policy to begin testing. The policy status on the details page indicates it is in test mode.
 
-Insights typically take up to 48 hours to appear after the policy begins testing.
+Insights on the policy details page can take up to 48 hours to fully populate.
 
 ### Activating a policy
 
-When ready, activate a policy to begin enforcing its conditions and sending alerts or notifications. To activate a policy created in test mode:
+To activate a policy created in test mode:
 
 1. Open the policy from the **Policies** page.
-1. Select the **Turn on policy** to activate the policy.
+1. Select **Turn on policy**.
 
    :::image type="content" source="../media/activate-privacy-risk-policy.png" alt-text="Screenshot showing how to activate a Privacy Risk Management policy from test mode." lightbox="../media/activate-privacy-risk-policy.png":::
 
-Once active, the policy generates alerts based on detected matches and initiates any user notifications or remediation actions you configured.
+Once active, the policy generates alerts based on detected matches and sends any user notifications or remediation actions you configured.
+
+### When to edit, turn off, or delete a policy
+
+Once a policy is out of test mode, three actions cover most of the ongoing tuning work. Which one to pick depends on why you're touching the policy:
+
+- **Edit** when the policy is still doing the right job but needs adjustment. You can change conditions, alert frequency, remediation options, and mode, including moving an active policy back to test mode. Common reasons to edit include a policy that's too broad or an alert schedule that isn't useful.
+- **Turn off** when detection should pause without losing the policy or its history, so you can turn it back on later without rebuilding.
+- **Delete** when the policy no longer maps to any risk you're managing. Previously generated alerts and issues stay accessible on the **Alerts** and **Issues** pages after deletion.
 
 ### Turning off a policy
 
-If you need to stop a policy temporarily, you can turn it off without deleting it. When a policy is turned off, it no longer detects matches, generates alerts, or sends notifications. To turn off a policy:
+To turn off a policy:
 
 1. Open the policy from the **Policies** page.
 1. Select **Turn off policy** in the upper-right corner of the details page.
@@ -36,7 +44,7 @@ You can turn the policy back on at any time by selecting **Turn on policy** from
 
 ### Edit a policy
 
-Privacy Risk Management policies can be edited at any time to adjust their settings. This includes changes to conditions, thresholds, or outcomes. The policy name and template are fixed and can't be changed after creation. Policies can also be returned to test mode for further evaluation if needed.
+Policy name and template are fixed after creation. Everything else is editable, including conditions, thresholds, outcomes, and mode.
 
 To edit a policy:
 
@@ -47,13 +55,13 @@ To edit a policy:
 
 ### Delete a policy
 
-If a policy is no longer needed, you can delete it to remove it permanently. Deleting a policy doesn't affect files previously evaluated or any alerts generated by the policy.
+Deleting a policy doesn't affect files previously evaluated or any alerts generated by the policy.
 
 To delete a policy:
 
 1. Locate the policy on the **Policies** page.
 1. Select the action menu (vertical ellipses) and choose **Delete policy**.
-1. Confirm the deletion to finalize the action.
+1. Confirm the deletion.
 
 You can also open the policy details page and select **Delete** in the upper-right corner.
 
@@ -66,7 +74,7 @@ Each policy has a details page that provides insights into its performance and e
 - **Matches by user**: Highlights users whose actions triggered policy matches.
 - **Matches by data type**: Identifies the types of personal data detected.
 
-The **Matched items** tab lists all content items detected by the policy, with options to preview items and review details such as data types, file activities, and remediation history. These insights help administrators refine policies and take appropriate corrective actions to reduce risks.
+The **Matched items** tab lists all content items detected by the policy, with options to preview items and review details such as data types, file activities, and remediation history.
 
 ## Legal disclaimer
 
