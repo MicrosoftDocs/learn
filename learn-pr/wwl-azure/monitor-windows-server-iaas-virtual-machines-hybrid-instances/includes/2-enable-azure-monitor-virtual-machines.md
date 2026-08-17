@@ -1,94 +1,55 @@
-Azure Monitor is a core component of the Microsoft strategy to extend comprehensive, cloud-based monitoring functionality beyond Azure to on-premises datacenters and non-Microsoft cloud providers. Customers such as Contoso that are maintaining their on-premises infrastructure can benefit from this functionality when tracking, auditing, or troubleshooting past events.
+Azure Monitor collects, analyzes, and acts on telemetry from Azure and hybrid resources. Use it to assess resource health, investigate performance, and respond to conditions that affect workloads.
 
-## What is Azure Monitor?
+## Understand Azure Monitor capabilities
 
-You can use Azure Monitor to optimize administration of your existing deployments and forecast capacity requirements for future deployments. Azure Monitor provides three main capabilities described in the following table.
+Azure Monitor provides three core capabilities.
 
-|Capability|Description|
-|------------------------------------|------------------------------------------------------------|
-|Monitoring and metrics visualization|*Metrics* are numerical values that represent the health status of monitored systems.|
-|Querying and analyzing logs|Logs include activity, diagnostic, and telemetry. Their analysis provides deep insights into the state of monitored systems, and helps facilitate troubleshooting.|
-|Alerting and remediation|You can configure alerting and remediation to automatically trigger corrective actions to remediate any issues.|
+| Capability | Description |
+|---|---|
+| Metrics and visualization | Metrics are numeric values that describe resource health and performance over time. |
+| Log collection and analysis | Logs contain events, diagnostics, and other records that you can query in a Log Analytics workspace. |
+| Alerts and automated actions | Alert rules evaluate monitoring data and use action groups to notify responders or start automated actions. |
 
-Azure Monitor delivers focused, in-depth monitoring capabilities through:
+Azure resources provide platform metrics and activity logs without an agent. To collect data from a virtual machine's guest operating system and workloads, install the **Azure Monitor Agent**. Data collection rules (DCRs) define which data the agent collects, how Azure Monitor processes that data, and where Azure Monitor sends it.
 
-- Deep infrastructure monitoring. This category includes Log Analytics in combination with monitoring solutions such as Service Map, and network monitoring tools such as Network Watcher and ExpressRoute Monitor.
-- Deep application monitoring. This category includes Application Insights, which facilitates monitoring of performance, availability, and web-based application usage regardless of their locations.
+VM insights simplifies this configuration. When you enable VM insights, Azure Monitor installs the Azure Monitor Agent if needed and creates or associates a DCR that collects performance data. You can use additional DCRs to collect Windows events, performance counters, and file-based logs.
 
-Both infrastructure and application monitoring services share capabilities that provide a consistent approach to configuring alerts, including:
+## Review VM monitoring requirements
 
-- Common action groups that designate alert-triggered actions, and recipients of the alerts.
-- Designing custom dashboards.
-- Analyzing metrics by using tools such as Metrics Explorer or Microsoft Power BI.
+Before you enable monitoring, verify the following requirements.
 
-Azure Monitor supports collecting and monitoring metrics, activity and diagnostics logs, and events from a wide range of Azure services and computers residing both in on-premises datacenters and with third-party cloud providers. It provides a quick way to assess the status of your environment by using the Azure portal. Azure Monitor presents a summary of triggered alerts, logs, metrics, and application-related telemetry originating from Application Insights.
+| Requirement | Description |
+|---|---|
+| Supported machine | VM insights supports Azure VMs, Azure Virtual Machine Scale Sets, and Azure Arc-enabled servers. |
+| Supported operating system | Azure Monitor Agent supports Windows Server 2016 and later, Windows 10 version 1803 and later, and supported Linux distributions. Review the current list before deployment. |
+| Workspace | Use an Azure Monitor workspace for the recommended metrics-based experience. Use a Log Analytics workspace when you collect logs or use the classic logs-based experience. |
+| Permissions | You need permission to create DCRs and associate them with VMs. You also need access to the destination workspace and monitored resources. |
+| Network access | The VM must reach the Azure Monitor endpoints required by Azure Monitor Agent. |
 
-> [!NOTE]
-> You can also access Azure Monitor data by using Azure PowerShell, Azure Command-Line Interface (Azure CLI), REST API, and the `Microsoft.NET` SDK.
+> [!IMPORTANT]
+> The legacy Log Analytics agent was retired on August 31, 2024. Use Azure Monitor Agent for new and migrated deployments.
 
-Additionally, Azure Monitor enables you to archive collected data in Azure Storage for long-term analysis or compliance purposes. You can also route the data to Azure Stream Analytics, or to third-party services using Azure Event Hubs. You set up and use alerts to:
+## Enable monitoring for an Azure VM
 
-- Trigger notifications via SMS or email.
-- Trigger a remediation action implemented by Azure Logic Apps, Azure Functions, or a runbook in Azure Automation.
-- Raise an incident and work items by leveraging integration between Azure Monitor and your internal IT Service Management (ITSM) platform.
-
-You can also store and analyze near real-time and historical data by using Log Analytics. For on-premises computers and Azure VMs, this requires installing the Log Analytics agent, and in some cases the Dependency Agent as well. This agent-based approach enables you to monitor the operating system and its workloads using Azure Automation or Azure Monitor–based solutions such as Update Management or Change Tracking and Inventory. You can also use Microsoft Defender for Cloud to identify vulnerabilities and potential threats.
-
-To learn more, review this five minute tutorial video on Azure Monitoring:
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2d0f7e47-2ed3-435c-a333-1778b2148897]
-
-## Monitor VMs
-
-Azure Monitor for VMs enables you to monitor your Windows Server IaaS VMs. But before you can enable and configure Azure Monitor for your IaaS VMs, you must ensure that your environment meets the prerequisites outlined in the following table.
-
-|Requirement|Description|
-|----|----|
-|Log analytics|You must set up a Log Analytics workspace and configure the workspace for Azure Monitor for VMs. Azure Monitor for VMs currently supports a Log Analytics workspace only in certain regions. You can read more about supported regions at [Enable Azure Monitor for VMs overview](https://aka.ms/azure-monitor-log-analytics?azure-portal=true).|
-|Supported Windows operating systems|Supported Windows operating systems include Windows Server 2008 R2 and later, and Windows 10 1803 and later. Azure Monitor for VMs can also monitor Linux VMs.|
-|Dependency Agent|This agent provides data to the Map feature in Azure Monitor for VMs, and relies on the Log Analytics agent for its connection to Log Analytics. You must install the Log Analytics agent and configure it with the Dependency Agent on all monitored VMs.|
-|Security|To enable and access the features in Azure Monitor for VMs, you must have the Log Analytics contributor role. To review performance, health, and map data, you must have the Monitoring Reader role for the Azure VM.|
-
-### Procedure to enable monitoring of a single VM
-
-To enable monitoring of a single VM, use the following procedure:
+To enable enhanced monitoring for one VM in the Azure portal:
 
 1. Sign in to the Azure portal, and select **Virtual machines**.
+2. Select a running VM, and then select **Insights** under **Monitoring**.
+3. Select **Configure** or **Enable**.
+4. Select the monitoring configuration and destination workspace. You can use an existing DCR or allow the portal to create one.
+5. Select **Review + Enable**, and then select **Enable**.
 
-   > [!TIP]
-   > Make sure your VM is running.
-
-2. If necessary, connect to your VM and install the Azure Monitor for VMs Map Dependency Agent. You can download the agent from [here](https://aka.ms/dependencyagentwindows), and install it by running `InstallDependencyAgent-Windows.exe` on your VM.
-3. Select the appropriate VM, and then under **Monitoring**, select **Insights**.
-4. In the details pane, select **Enable**.
-
-   [![A screenshot of the Insights page for a VM in Azure, with the Enable button in the details pane.](../media/m16-enable-monitor-1.png)](../media/m16-enable-monitor-1.png#lightbox)
+Azure installs the Azure Monitor Agent extension, associates the selected DCR, and begins collecting data. It can take several minutes for charts and log records to appear.
 
 ## Review monitored data
 
-After you have enabled Insights, you can monitor your VM. In the Azure portal, navigate to and select the appropriate VM. Then, under **Monitoring**, select **Insights**. This will open the **Map** tab for your VM.
+Use the VM's **Insights** page to review processor, memory, disk, and network performance. Use **Logs** to query guest data sent to a Log Analytics workspace, and use **Alerts** to review or configure alert rules.
 
-[![A screenshot of the Maps tab on the Insights page for the ContosoVM1 VM in Azure. A map has details of open TCP ports. A VM summary has information about the VM's OS, IP address, and links for Health, Machine properties, and Azure VM properties. There are also links to access Properties (selected), Log Events, Alerts, and Connections.](../media/m16-insights-map.png)](../media/m16-insights-map.png#lightbox)
+The Dependency Agent isn't required for VM insights performance monitoring. It supported the VM insights Map experience, which is deprecated and no longer available for new portal onboarding. Don't install the Dependency Agent for new deployments. The Map experience and Dependency Agent retire on June 30, 2028.
 
-Within the map, you can select items to retrieve additional details. For example, to review connections to DNS servers, select the Port: 53 node. This action displays current connections over port 53 (the port used for DNS name resolution).
+## Learn more
 
-You can also use the icons on the right of the Map to access the information described in the following table.
-
-|Control|Explanation|
-|-----------|------------------------------------------------------------|
-|Properties|Provides more detailed information about the selected item. For example, by selecting the VM in the central pane, you can review details such as Fully Qualified Domain Name (FQDN), OS, and links to access Health, Machine properties, and Azure VM properties.|
-|Log Events|Displays a list of recent events in the details pane. If you select a specific event type, the underlying Log Analytics workspace opens, and detailed event data displays.|
-|Alerts|Displays events that have occurred on the VM. These are listed in severity order from 0 through 4. Selecting an alert displays additional details.|
-|Connections|Displays all active connections to the VM. You can access additional details by selecting a connection in the returned output.|
-
-To review performance data, select the **Performance** tab in **Insights**. The main pane displays performance data relating to the following:
-
-- CPU Utilization %
-- Available Memory
-- Logical disk IOPS
-- Logical disk MB/s
-- Max Logical Disk Used %
-- Bytes Sent Rate
-- Bytes Received Rate
-
-[![A screenshot of the Performance tab on the Insights page for a VM in Azure. Disk performance data displays in a numeric table, along with charts for CPU Utilization % and Available Memory.](../media/m16-insights-performance.png)](../media/m16-insights-performance.png#lightbox)
+- [Enable VM monitoring in Azure Monitor](/azure/azure-monitor/vm/vminsights-enable-overview)
+- [Azure Monitor Agent supported operating systems and environments](/azure/azure-monitor/agents/azure-monitor-agent-supported-operating-systems)
+- [Collect guest log data from virtual machines with Azure Monitor](/azure/azure-monitor/vm/data-collection)
+- [VM Insights Map and Dependency Agent retirement guidance](/azure/azure-monitor/vm/vminsights-maps-retirement)
