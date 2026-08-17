@@ -4,9 +4,9 @@ title: Collect data from a Windows computer in a hybrid environment
 metadata:
   title: Collect data from a Windows computer in a hybrid environment
   description: "Collect data from a Windows computer in a hybrid environment"
-  ms.date: 01/01/2025
+  ms.date: 08/16/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
 labModal: false
@@ -16,14 +16,14 @@ content: |
 quiz:
   title: "Quick review"
   questions:
-  - content: "In the video demonstration, at time index 01:30, what does an administrator need to do on the **Agents management** page?"
+  - content: "Which Log Analytics table should an administrator query first to confirm that Azure Monitor Agent is reporting?"
     choices:
-    - content: "The administrator must regenerate the Primary key."
-      isCorrect: false
-      explanation: "Incorrect. There's no need to do this. The administrator must download the appropriate agent."
-    - content: "The administrator must download the appropriate agent for the VM."
+    - content: "Heartbeat"
       isCorrect: true
-      explanation: "Correct. Each monitored VM must have the appropriate agent installed."
-    - content: "The administrator must regenerate the Secondary key."
+      explanation: "Correct. Recent records in the Heartbeat table confirm that the agent is reporting to the workspace."
+    - content: "Event"
       isCorrect: false
-      explanation: "Incorrect. There's no need to do this. The administrator must download the appropriate agent."
+      explanation: "Incorrect. The Event table contains collected Windows events, but it might be empty when event collection isn't configured."
+    - content: "Perf"
+      isCorrect: false
+      explanation: "Incorrect. The Perf table contains selected performance counters, but it isn't the primary agent connectivity check."
