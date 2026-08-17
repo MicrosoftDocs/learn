@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.active-directory-backup-recovery.perform-domain-controller-recovery
+metadata:
+  title: Perform Object and Domain Controller Recovery
+  description: Recover deleted objects, restore or rebuild domain controllers, select directory and SYSVOL authority, and safely recover virtualized controllers.
+  ms.date: 08/12/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Perform object and domain controller recovery
+durationInMinutes: 25
+content: |
+  [!include[](includes/5-perform-recovery-domain-controller.md)]

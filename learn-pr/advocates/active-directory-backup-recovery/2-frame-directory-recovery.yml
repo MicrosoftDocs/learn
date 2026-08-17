@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.active-directory-backup-recovery.frame-directory-recovery
+metadata:
+  title: Frame Directory Recovery
+  description: Translate business requirements into recovery scope, authority, dependency, security, and privilege decisions.
+  ms.date: 08/12/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Frame directory recovery
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-frame-directory-recovery.md)]
