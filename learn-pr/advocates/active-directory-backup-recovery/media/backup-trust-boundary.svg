@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Tier 0 backup trust boundary</title>
+  <desc id="desc">Five clearly ordered rounded boxes show production directory capture, separated backup administration, isolated storage, independent key custody, and isolated recovery administration.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#243a5e"/>
+    </marker>
+    <style>
+      .production-box {
+        fill: #eef5ff;
+        stroke: #365f91;
+        stroke-width: 3;
+      }
+      .control-box {
+        fill: #fff4ce;
+        stroke: #8a6d1d;
+        stroke-width: 3;
+      }
+      .secure-box {
+        fill: #e8f5e9;
+        stroke: #286c2f;
+        stroke-width: 3;
+      }
+      .recovery-box {
+        fill: #e8f0fe;
+        stroke: #4059ad;
+        stroke-width: 3;
+      }
+      .warning-box {
+        fill: #fde7e9;
+        stroke: #a4262c;
+        stroke-width: 3;
+      }
+      .connector {
+        fill: none;
+        stroke: #243a5e;
+        stroke-width: 3;
+        marker-end: url(#arrow);
+      }
+      .diagram-title {
+        fill: #17253d;
+        font: 700 30px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .box-title {
+        fill: #17253d;
+        font: 700 22px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .box-text {
+        fill: #17253d;
+        font: 17px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- Opaque background -->
+  <rect x="0" y="0" width="1600" height="1100" fill="#ffffff"/>
+
+  <text class="diagram-title" x="800" y="48">Tier 0 backup trust boundary</text>
+
+  <!-- Step 1 -->
+  <rect class="production-box" x="300" y="85" width="1000" height="120" rx="20" ry="20"/>
+  <text class="box-title" x="800" y="126">1. Capture the production directory</text>
+  <text class="box-text" x="800" y="159">
+    <tspan x="800" dy="0">Back up writable domain controllers through an application-consistent process.</tspan>
+    <tspan x="800" dy="25">Treat password hashes, Kerberos keys, directory secrets, and decryption material as Tier 0 data.</tspan>
+  </text>
+
+  <path class="connector" d="M800 205 L800 255"/>
+
+  <!-- Step 2 -->
+  <rect class="control-box" x="300" y="255" width="1000" height="120" rx="20" ry="20"/>
+  <text class="box-title" x="800" y="296">2. Separate backup administration</text>
+  <text class="box-text" x="800" y="329">
+    <tspan x="800" dy="0">Use distinct operators, approved service identities, audited access, and security monitoring.</tspan>
+    <tspan x="800" dy="25">Production directory administrators must not control every backup and recovery function.</tspan>
+  </text>
+
+  <path class="connector" d="M800 375 L800 425"/>
+
+  <!-- Step 3 -->
+  <rect class="secure-box" x="300" y="425" width="1000" height="120" rx="20" ry="20"/>
+  <text class="box-title" x="800" y="466">3. Store protected backup copies</text>
+  <text class="box-text" x="800" y="499">
+    <tspan x="800" dy="0">Keep offline or immutable copies outside the production forest and its failure boundary.</tspan>
+    <tspan x="800" dy="25">Encrypt media, protect catalogs, record chain of custody, and securely destroy expired copies.</tspan>
+  </text>
+
+  <path class="connector" d="M800 545 L800 595"/>
+
+  <!-- Step 4 -->
+  <rect class="secure-box" x="300" y="595" width="1000" height="120" rx="20" ry="20"/>
+  <text class="box-title" x="800" y="636">4. Maintain independent key custody</text>
+  <text class="box-text" x="800" y="669">
+    <tspan x="800" dy="0">Keep decryption keys, recovery credentials, and emergency access material outside the failed forest.</tspan>
+    <tspan x="800" dy="25">Test the key-recovery path independently so protected media remains usable during an outage.</tspan>
+  </text>
+
+  <path class="connector" d="M800 715 L800 765"/>
+
+  <!-- Step 5 -->
+  <rect class="recovery-box" x="300" y="765" width="1000" height="120" rx="20" ry="20"/>
+  <text class="box-title" x="800" y="806">5. Operate isolated recovery administration</text>
+  <text class="box-text" x="800" y="839">
+    <tspan x="800" dy="0">Use clean workstations, trusted installation media, an isolated network, and approved recovery identities.</tspan>
+    <tspan x="800" dy="25">Reconnect identity services only after technical, security, application, and business validation.</tspan>
+  </text>
+
+  <!-- Trust-boundary rule -->
+  <rect class="warning-box" x="250" y="950" width="1100" height="105" rx="20" ry="20"/>
+  <text class="box-title" x="800" y="990">Trust-boundary rule</text>
+  <text class="box-text" x="800" y="1023">
+    <tspan x="800" dy="0">No single production identity dependency may control backup creation, storage, keys,</tspan>
+    <tspan x="800" dy="25">recovery administration, and approval.</tspan>
+  </text>
+</svg>

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.active-directory-backup-recovery.recover-domains-forests
+metadata:
+  title: Recover Domains and Forests
+  description: Plan domain-scoped and forest-wide recovery, including DNS, operations masters, SYSVOL, global catalogs, trusts, credentials, and compromise response.
+  ms.date: 08/12/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Recover domains and forests
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-recover-domains-forests.md)]

@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Virtualized domain controller safe restore</title>
+  <desc id="desc">A clearly ordered flow uses rounded boxes to verify VM-Generation ID support, restore one approved virtual domain controller, apply rollback safeguards, replicate inbound, and validate recovery.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#243a5e"/>
+    </marker>
+    <style>
+      .process-box {
+        fill: #eef5ff;
+        stroke: #365f91;
+        stroke-width: 3;
+      }
+      .decision-box {
+        fill: #fff4ce;
+        stroke: #8a6d1d;
+        stroke-width: 3;
+      }
+      .safe-box {
+        fill: #e8f5e9;
+        stroke: #286c2f;
+        stroke-width: 3;
+      }
+      .stop-box {
+        fill: #fde7e9;
+        stroke: #a4262c;
+        stroke-width: 3;
+      }
+      .connector {
+        fill: none;
+        stroke: #243a5e;
+        stroke-width: 3;
+        marker-end: url(#arrow);
+      }
+      .diagram-title {
+        fill: #17253d;
+        font: 700 30px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .box-title {
+        fill: #17253d;
+        font: 700 22px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .box-text {
+        fill: #17253d;
+        font: 17px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .branch-text {
+        fill: #17253d;
+        font: 700 17px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .footer-text {
+        fill: #4a5568;
+        font: 16px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- Opaque background -->
+  <rect x="0" y="0" width="1600" height="1120" fill="#ffffff"/>
+
+  <text class="diagram-title" x="800" y="48">Virtualized domain controller safe restore</text>
+
+  <!-- Step 1 -->
+  <rect class="process-box" x="100" y="80" width="800" height="110" rx="18" ry="18"/>
+  <text class="box-title" x="500" y="120">1. Confirm recovery preconditions</text>
+  <text class="box-text" x="500" y="152">
+    <tspan x="500" dy="0">Select one approved virtual domain controller and a tested recovery point.</tspan>
+    <tspan x="500" dy="24">Confirm isolation, healthy partners, backup evidence, keys, and console access.</tspan>
+  </text>
+
+  <path class="connector" d="M500 190 L500 235"/>
+
+  <!-- Step 2 -->
+  <rect class="decision-box" x="100" y="235" width="800" height="110" rx="18" ry="18"/>
+  <text class="box-title" x="500" y="275">2. Does the hypervisor provide VM-Generation ID?</text>
+  <text class="box-text" x="500" y="307">
+    <tspan x="500" dy="0">Verify support for the exact host, virtual machine version,</tspan>
+    <tspan x="500" dy="24">restore method, and storage platform.</tspan>
+  </text>
+
+  <!-- Step 2 No branch -->
+  <path class="connector" d="M900 290 L1040 290"/>
+  <text class="branch-text" x="970" y="270">No or unknown</text>
+
+  <rect class="stop-box" x="1040" y="235" width="460" height="110" rx="18" ry="18"/>
+  <text class="box-title" x="1270" y="275">Stop and isolate</text>
+  <text class="box-text" x="1270" y="307">
+    <tspan x="1270" dy="0">Do not rely on snapshot rollback safeguards.</tspan>
+    <tspan x="1270" dy="24">Use a supported backup recovery path.</tspan>
+  </text>
+
+  <!-- Step 2 Yes branch -->
+  <path class="connector" d="M500 345 L500 390"/>
+  <text class="branch-text" x="542" y="374">Yes</text>
+
+  <!-- Step 3 -->
+  <rect class="process-box" x="100" y="390" width="800" height="110" rx="18" ry="18"/>
+  <text class="box-title" x="500" y="430">3. Restore the approved virtual machine state</text>
+  <text class="box-text" x="500" y="462">
+    <tspan x="500" dy="0">Restore only the selected instance on the isolated recovery network.</tspan>
+    <tspan x="500" dy="24">A copied disk or second running instance is a duplicate-identity stop condition.</tspan>
+  </text>
+
+  <path class="connector" d="M500 500 L500 545"/>
+
+  <!-- Step 4 -->
+  <rect class="decision-box" x="100" y="545" width="800" height="110" rx="18" ry="18"/>
+  <text class="box-title" x="500" y="585">4. Did the current VM-Generation ID change?</text>
+  <text class="box-text" x="500" y="617">
+    <tspan x="500" dy="0">Compare the value supplied by the hypervisor</tspan>
+    <tspan x="500" dy="24">with the value stored in the directory database.</tspan>
+  </text>
+
+  <!-- Step 4 No branch -->
+  <path class="connector" d="M900 600 L1040 600"/>
+  <text class="branch-text" x="970" y="580">No or unverified</text>
+
+  <rect class="stop-box" x="1040" y="545" width="460" height="110" rx="18" ry="18"/>
+  <text class="box-title" x="1270" y="585">Stop and investigate</text>
+  <text class="box-text" x="1270" y="617">
+    <tspan x="1270" dy="0">Isolate the controller if rollback detection,</tspan>
+    <tspan x="1270" dy="24">identity, or hypervisor state is unexpected.</tspan>
+  </text>
+
+  <!-- Step 4 Yes branch -->
+  <path class="connector" d="M500 655 L500 700"/>
+  <text class="branch-text" x="542" y="684">Yes</text>
+
+  <!-- Step 5 -->
+  <rect class="safe-box" x="100" y="700" width="800" height="110" rx="18" ry="18"/>
+  <text class="box-title" x="500" y="740">5. Apply directory rollback safeguards</text>
+  <text class="box-text" x="500" y="772">
+    <tspan x="500" dy="0">Active Directory Domain Services changes the invocation ID</tspan>
+    <tspan x="500" dy="24">and discards the local relative identifier pool.</tspan>
+  </text>
+
+  <path class="connector" d="M500 810 L500 855"/>
+
+  <!-- Step 6 -->
+  <rect class="safe-box" x="100" y="855" width="800" height="110" rx="18" ry="18"/>
+  <text class="box-title" x="500" y="895">6. Recover replicated state</text>
+  <text class="box-text" x="500" y="927">
+    <tspan x="500" dy="0">Replicate directory changes inbound from a healthy writable partner.</tspan>
+    <tspan x="500" dy="24">Synchronize SYSVOL nonauthoritatively and register trusted DNS records.</tspan>
+  </text>
+
+  <path class="connector" d="M900 910 L1040 910"/>
+
+  <!-- Step 7 -->
+  <rect class="safe-box" x="1040" y="855" width="460" height="110" rx="18" ry="18"/>
+  <text class="box-title" x="1270" y="895">7. Validate before service</text>
+  <text class="box-text" x="1270" y="927">
+    <tspan x="1270" dy="0">Check invocation identity, replication, SYSVOL,</tspan>
+    <tspan x="1270" dy="24">DNS, advertising, time, and authentication.</tspan>
+  </text>
+
+  <text class="footer-text" x="800" y="1045">
+    VM-Generation ID safeguards reduce rollback risk. They do not replace application-consistent backups or recovery testing.
+  </text>
+</svg>

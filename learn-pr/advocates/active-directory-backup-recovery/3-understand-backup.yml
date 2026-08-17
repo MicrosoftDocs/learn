@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.active-directory-backup-recovery.understand-backup
+metadata:
+  title: Understand Active Directory Backup
+  description: Understand backup internals, design protected backup coverage, validate usability, and select a last-known-safe recovery point.
+  ms.date: 08/12/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Understand Active Directory backup
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-understand-backup.md)]
