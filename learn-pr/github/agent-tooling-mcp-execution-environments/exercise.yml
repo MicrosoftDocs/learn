@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.agent-tooling-mcp-execution-environments.exercise
+title: Exercise - Automate repository updates with GitHub Agentic Workflows
+metadata:
+  title: Exercise - Automate repository updates with GitHub Agentic Workflows
+  description: Learn how to install GitHub Agentic Workflows, author an AI-powered workflow in Markdown, and use pull requests to review proposed website updates.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 08/17/2026
+  ms.update-cycle: 180-days
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/exercise.md)]
