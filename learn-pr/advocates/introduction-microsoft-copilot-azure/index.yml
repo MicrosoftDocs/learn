@@ -11,7 +11,6 @@ metadata:
   ms.service: azure-copilot
   ms.collection: ce-advocates-ai-copilot
 title: Introduction to Azure Copilot
-hidden: true
 summary: Learn about the functionality of Azure Copilot, including how to access it, perform operations tasks, and manage access.
 abstract: |
   By the end of this module, you'll be able to:
