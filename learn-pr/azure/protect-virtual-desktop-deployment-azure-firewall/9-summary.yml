@@ -4,12 +4,11 @@ title: Summary
 metadata:
   unitType: summary
   title: Summary
-  description: Summary
-  ms.date: 01/05/2024
+  description: Review how you protected Azure Virtual Desktop outbound traffic with Azure Firewall.
+  ms.date: 08/17/2026
   author: vhorne
-  ms.author: victorh
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/9-summary.md)]
-
