@@ -1,13 +1,13 @@
-File Integrity Monitoring enables you to leverage Change Tracking and Inventory to identify changes that might indicate potential security problems. Because cloud security  is critical to Contoso management, you decide to implement and test File Integrity Monitoring.
+File Integrity Monitoring in Microsoft Defender for Cloud identifies file and registry changes that might indicate potential security problems. Because cloud security is critical to Contoso management, you decide to implement and test File Integrity Monitoring.
 
 ## What is File Integrity Monitoring?
 
 File Integrity Monitoring, also known as *change monitoring*, examines files and registries of operating system, application software, and others for changes that might indicate an attack.
 
-> [!NOTE] 
-> Change Tracking and Inventory uses Microsoft Defender for Cloud File Integrity Monitoring.
+> [!IMPORTANT]
+> File Integrity Monitoring and Azure Change Tracking and Inventory are separate services. Current File Integrity Monitoring uses Microsoft Defender for Endpoint (MDE) and agentless scanning. It doesn't rely on the Change Tracking and Inventory agent.
 
-When File Integrity Monitoring discovers changes, it uses a comparative method to help to determine whether the current state of the file differs from the last scan of the file. If File Integrity Monitoring discovers that there are differences, a designated administrator is notified and can then take action to determine if these changes are legitimate, or if they indicate a possible security problem.
+File Integrity Monitoring analyzes changes and records information about the source, account, and process that initiated a change. Security administrators can use these details to determine whether a change is expected or indicates a possible attack.
 
 You can use File Integrity Monitoring to validate the integrity of the following object types:
 
@@ -21,57 +21,50 @@ You access File Integrity Monitoring from Microsoft Defender for Cloud. Microsof
 - File modifications (changes in file size, access control lists (ACLs), and hash of the content).
 - Registry modifications (changes in size, access control lists, type, and the content).
 
+## Understand data collection
+
+File Integrity Monitoring uses two collection methods:
+
+- **Microsoft Defender for Endpoint agent**: Streams change events for configured files and resources to the selected Log Analytics workspace in near real time.
+- **Agentless scanning**: Collects file integrity insights on a 24-hour cadence and supports custom monitoring paths in addition to recommended resources.
+
+Machines using the MDE collection method must run the supported Defender for Servers client. Verify the current minimum version in the [File Integrity Monitoring overview](/azure/defender-for-cloud/file-integrity-monitoring-overview#version-requirements).
+
 ## Enable File Integrity Monitoring
 
-To use a Log Analytics workspace for File Integrity Monitoring, the workspace must be running under the Microsoft Defender for Cloud Standard tier. If it isn't, any workspaces that are on the File Integrity Monitoring node will have an **UPGRADE PLAN** link.
+File Integrity Monitoring requires Defender for Servers Plan 2 on the subscription. The plan must deploy and integrate the MDE agent on protected machines. File Integrity Monitoring isn't enabled automatically when you enable Plan 2.
 
-> [!TIP] 
-> Those workspaces that are already in the Microsoft Defender for Cloud Standard tier are indicated with an ENABLE link.
+Use this high-level process:
 
-To upgrade the workspace to Microsoft Defender for Cloud Standard tier, use the following procedure:
+1. In Microsoft Defender for Cloud, enable **Defender for Servers Plan 2** for the subscription.
+2. Verify that protected machines run a supported MDE agent version.
+3. Go to **Workload protections** > **File Integrity Monitoring**.
+4. Select the subscription and enable File Integrity Monitoring.
+5. Select an existing Log Analytics workspace or create one to store change events.
+6. Review the recommended monitoring resources and configure custom rules for your environment.
 
-1. Select the **UPGRADE PLAN** link, and on the **What is File Integrity Monitoring** page, select try **File Integrity Monitoring**.
-2. On the File Integrity Monitoring node, select the appropriate workspace, and then select **Upgrade**.
-3. On the **Install agent automatically** page, select **Install agents**. The Microsoft Monitoring Agent is automatically installed on all the VMs in selected subscription.
+> [!NOTE]
+> The Log Analytics workspace stores FIM change logs. The workspace itself doesn't require a separate Microsoft Defender for Cloud Standard tier.
 
-> [!TIP] 
-> If you've already configured your VMs for Change Tracking and Inventory, you don't need to install the agent as it will already be present.
-
-After you have upgraded the required workspaces:
-
-1. Return to the list of workspaces.
-1. Select **ENABLE** for any workspaces that you want to enable for File Integrity Monitoring.
-
-   The Enable File Integrity Monitoring page opens, listing the number of Windows and Linux machines under the workspace.
-
-3. Review the Recommended settings: Windows Files, Registry, and (if applicable), Linux Files.
-4. Clear the check box for any items you don't want to track, and then select **Enable File Integrity Monitoring**.
+If a subscription uses legacy MMA- or AMA-based FIM, migrate it to the MDE-based experience. Don't install MMA for new deployments. For migration requirements and supported rule transfer, see [Migrate File Integrity Monitoring from MMA or AMA to Defender for Endpoint](/azure/defender-for-cloud/migrate-file-integrity-monitoring).
 
 ## Configure File Integrity Monitoring
 
-After you have enabled File Integrity Monitoring, on the File Integrity Monitoring dashboard in Microsoft Defender for Cloud, the following information is provided for each workspace:
+After you enable File Integrity Monitoring, use its dashboard in Microsoft Defender for Cloud to review coverage, rules, and detected changes. Change records can identify:
 
-- Total number of changes that occurred in the last week
-- Total number of computers and VMs reporting to the workspace
-- Geographic location of the workspace
-- Azure subscription that the workspace is under
+- The affected machine, file, or registry key.
+- The type and time of the change.
+- The account and process associated with the change, when available.
+- Whether the event came from the MDE agent or agentless scanning.
 
-You can filter the returned summary to return results from the last:
-
-- 30 minutes
-- One hour
-- Six hours
-- 24 hours
-- 7 days
-- 30 days
-
-To review any changes in detail, select the appropriate VM. The logs detail displays. On this page, you can review the changes. You can also modify the query used to return the list of changes to suit your requirements.
+Use the workspace data and dashboard filters to investigate events. Consider the collection cadence when interpreting results: MDE events are near real time, while agentless events arrive approximately every 24 hours.
 
 ## Disable File Integrity Monitoring
 
 If you no longer want to use File Integrity Monitoring, use the following procedure to disable it:
 
-1. Return to the File Integrity Monitoring dashboard.
-2. Select a workspace.
-3. Under **File Integrity Monitoring**, select **Disable**.
-4. Select **Remove** to disable.
+1. In Microsoft Defender for Cloud, go to **Workload protections** > **File Integrity Monitoring**.
+2. Select the subscription.
+3. Disable File Integrity Monitoring and confirm the change.
+
+Disabling File Integrity Monitoring stops new collection. Existing records remain in the Log Analytics workspace according to its retention settings.
