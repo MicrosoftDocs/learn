@@ -1,6 +1,67 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/wwl-azure/guided-project-create-sk-assistant/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/guided-project-create-sk-assistant/2-exercise.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/guided-project-create-sk-assistant/3-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/guided-project-create-sk-assistant/4-summary.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/guided-project-create-sk-assistant/index.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/combine-prompts-functions/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/combine-prompts-functions/2-understand-prompt-injections.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/combine-prompts-functions/3-filter-invoked-functions.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/combine-prompts-functions/4-exercise-apply-function-filters.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/combine-prompts-functions/5-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/combine-prompts-functions/6-summary.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/combine-prompts-functions/index.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
+    {
+
       "source_path_from_root": "/learn-pr/wwl-azure/create-plugins-semantic-kernel/index.yml",
       "redirect_url": "/training/paths/develop-ai-agents-azure/",
       "redirect_document_id": false
@@ -61,10 +122,45 @@
       "redirect_document_id": false
     }, 
     {
+      "source_path_from_root": "/learn-pr/wwl-azure/give-your-ai-agent-skills/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    }, 
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/build-your-kernel/5-exercise-build-kernel-object.yml",
       "redirect_url": "/training/paths/develop-ai-agents-azure/",
       "redirect_document_id": false
     }, 
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/give-your-ai-agent-skills/2-understand-native-plugins.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/give-your-ai-agent-skills/3-configure-function-choices.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/give-your-ai-agent-skills/4-exercise-create-plugins.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/give-your-ai-agent-skills/5-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/give-your-ai-agent-skills/6-summary.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/give-your-ai-agent-skills/index.yml",
+      "redirect_url": "/training/paths/develop-ai-agents-azure/",
+      "redirect_document_id": false
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/build-your-kernel/4-how-build-your-kernel.yml",
       "redirect_url": "/training/paths/develop-ai-agents-azure/",

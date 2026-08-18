@@ -5,6 +5,21 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.wwl.guided-project-create-sk-assistant.badge
+  type: badge
+  title: Guided project - Create a DevOps Assistant with the Semantic Kernel SDK 
+  summary: This module guides you through the steps required to develop a proof-of-concept AI DevOps assistant with the Semantic Kernel SDK.  
+  iconUrl: /training/achievements/generic-badge.svg 
+- uid: learn.wwl.combine-prompts-functions.badge
+  type: badge
+  title: Apply filters on functions 
+  summary: This module demonstrates how&nbsp;to combine functions and prompts with the Semantic Kernel SDK. Nesting functions&nbsp;within prompts can allow your code to complete tasks large language models can't typically complete on their own. 
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.give-your-ai-agent-skills.badge 
+  type: badge
+  title: Create Semantic Kernel plugins 
+  summary: This module explores native functions in the Semantic Kernel SDK. Learn how native functions can accomplish customized tasks, effectively giving your AI agent a &quot;skill.&quot; 
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.wwl.create-plugins-semantic-kernel.badge
   type: badge
   title: Run prompts with Semantic Kernel 

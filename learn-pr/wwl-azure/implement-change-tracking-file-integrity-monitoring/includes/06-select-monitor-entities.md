@@ -4,65 +4,32 @@ Conversely, there are many files and registry keys that you might reasonably exp
 
 ## Which Windows objects should be monitored?
 
-Microsoft Defender for Cloud makes recommendations of entities to monitor. These include files and Windows registry keys. All the registry keys are under HKEY_LOCAL_MACHINE. However, you can also define your own File Integrity Monitoring policies or entities to monitor.
+Microsoft Defender for Cloud recommends entities to monitor based on known attack patterns. These entities include files and Windows registry keys under `HKEY_LOCAL_MACHINE`. You can also create custom rules for files, folders, and registry keys that are important to your environment.
 
-To review the default monitored items, refer to [File Integrity Monitoring in Microsoft Defender for Cloud, Which files should I monitor?](https://aka.ms/which-files-should-i-monitor?azure-portal=true).
+To review the recommended items, see [Choose what to monitor](/azure/defender-for-cloud/file-integrity-monitoring-overview#choose-what-to-monitor).
 
 ## Edit monitored entities
 
-To edit the monitored entities, from the File Integrity Monitoring dashboard, select **Settings**.
+From the File Integrity Monitoring dashboard, open the rule configuration for the subscription. Review the recommended rules, remove rules that would create unnecessary noise, and add custom rules for critical resources that aren't covered.
 
-> [!TIP] 
-> There are a number of files listed by default that are probably not significant any longer. These are: autoexec.bat, boot.ini, config.sys, and both win.ini and system.ini.
-
-Workspace Configuration opens, displaying five tabs, each of which lists the entities that you can edit within that category:
-
-- Windows Registry
-- Windows Files
-- Linux Files
-- File Content
-- Windows Services
-
- For each listed entity, Microsoft Defender for Cloud identifies whether File Integrity Monitoring is enabled (true) or not enabled (False). You can edit the entity, and then enable or disable File Integrity Monitoring for that entity.
-
-Next, you select an identity protection. In this example, the **autoexec.bat** is selected on the **Edit Windows Files for Change Tracking** blade.
-
-Under **Edit for Change Tracking** you can:
-
-- **Enable** (True) or **Disable** (False) File Integrity Monitoring.
-- Provide or change the entity name.
-- Provide or change the value or path.
-- Delete the entity.
-- Discard the change.
-- Save the change.
+Rules apply to the enabled subscription scope. You can define from one through 500 custom rules per subscription.
 
 ## Add a new entity to monitor
 
-To add a new entity to monitor, return to the File Integrity Monitoring dashboard. Then use the following procedure:
-
-1. On the toolbar, select **Settings**.
-2. In Workspace Configuration, select the appropriate tab. For example, select **Windows Registry** to add a new registry setting<!-- Verify. -->.
-3. On the toolbar, select **Add**.
-4. In the **Add Windows Registry for Change Tracking** blade, enter the following information, and then select **Save**.
-    - Enabled: True or False
-    - Item name: Provide a meaningful name
-    - Group: (defaults to Custom)
-    - Windows Registry Key: Enter a key path
+When you add a custom rule, provide a unique name and description, select at least one change type, and enter the file, folder, or registry path. Windows registry paths must begin with `HKLM`.
 
 ## Disable monitored entities
 
-To disable an entry, from File Integrity Monitoring dashboard, select the appropriate workspace. Then use the following procedure:
-
-1. Select **Settings**.
-2. Select the appropriate tab. For example, select **Windows Files**.
-3. Select the entry from the list of Windows Files for which the Enabled value is **true**.
-4. In the **Edit Windows File for Change Tracking** blade, under **Enabled**, select **False** and then select **Save**.
+To stop monitoring an entity, edit or remove its rule from the subscription's File Integrity Monitoring configuration. Review rule changes carefully because they affect all machines in the enabled scope.
 
 ## Folder and path monitoring using wildcards
 
 The file system in Windows Server is extensive. Manually configuring individual files for monitoring would take an extended period of time. Instead, you can use wildcards to help simplify tracking across directories. When you use wildcards, the following rules apply:
 
-- Wildcards are required for tracking multiple files.
-- Wildcards can only be used in the last segment of a path, such as `C:\folder\file`.
-- If an environment variable includes a path that isn't valid, validation will succeed but the path will fail when inventory runs.
-- When setting the path, avoid general paths such as `c:\*.*` which will result in too many folders being traversed.
+- A path can contain a maximum of three asterisks (`*`).
+- Wildcards are allowed only at the start or end of a path segment.
+- Windows file paths can contain letters, numbers, spaces, `_`, `.`, `\`, `*`, `?`, and `:`. They can't contain `/`.
+- Windows registry paths must begin with `HKLM` and can use wildcards only at the start or end of a path segment.
+- Paths can't exceed 260 characters.
+
+Avoid broad paths that generate frequent expected changes. Excessive noise makes suspicious changes harder to identify.
