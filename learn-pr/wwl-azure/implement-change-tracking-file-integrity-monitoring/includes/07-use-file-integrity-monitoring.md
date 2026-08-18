@@ -1,18 +1,18 @@
-In this demonstration, learn to:
+Use the current File Integrity Monitoring experience to:
 
 - Enable File Integrity Monitoring.
-- View the File Integrity Monitoring dashboard.
-- Edit monitored entities.
-- Add a new entity to monitor.
-- Disable monitored entities.
-- Implement folder and path monitoring using wildcards.
+- Verify MDE-based and agentless collection coverage.
+- Review recommended monitoring rules.
+- Add a custom rule for a critical file or registry key.
+- Investigate detected changes and their initiating accounts and processes.
+- Refine or remove rules that generate expected noise.
 - Disable File Integrity Monitoring.
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=bf4b08de-6e30-4680-9a21-2c840317ded9]
+> [!IMPORTANT]
+> The previous demonstration used the retired workspace-upgrade and Microsoft Monitoring Agent workflow. Use the current MDE-based experience described in the File Integrity Monitoring documentation.
 
 ## Next steps
 
-Review the steps for this demonstration:
-[File Integrity Monitoring in Microsoft Defender for Cloud, Using File Integrity Monitoring](https://aka.ms/using-file-integrity-monitoring?azure-portal=true).
+Review [File Integrity Monitoring in Microsoft Defender for Cloud](/azure/defender-for-cloud/file-integrity-monitoring-overview) and [Migrate File Integrity Monitoring from MMA or AMA to Defender for Endpoint](/azure/defender-for-cloud/migrate-file-integrity-monitoring).
 
-If you want to repeat these steps, [get a free trial Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). After completing the steps, delete any resource groups you created.
+File Integrity Monitoring requires Defender for Servers Plan 2 and can incur charges. Review the plan pricing and data ingestion benefit before enabling it in a production subscription.
