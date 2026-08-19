@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-azure-updates.describe-update-management
-title: Describe update management
+title: Describe Azure Update Manager
 metadata:
-  title: Describe update management
-  description: "Describe update management"
-  ms.date: 09/24/2020
+  title: Describe Azure Update Manager
+  description: "Describe Azure Update Manager capabilities, architecture, and update sources."
+  ms.date: 08/16/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
-durationInMinutes: 6
+durationInMinutes: 5
 content: |
-  [!include[](includes/2-describe-update-management.md)]
+  [!include[](includes/2-describe-update-management.md)]
