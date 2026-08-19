@@ -123,7 +123,7 @@ The results this time look might like this:
   :::column-end:::
 :::row-end:::
 
-The values that can be converted to a numeric data type are returned as *decimal* values, and the incompatible values are returned as *NULL*, which is used to indicate that a value is *unknown*.
+The values that can be converted to the target numeric data type are returned as *integer* values, and the incompatible values are returned as *NULL*, which is used to indicate that a value is *unknown*.
 
 > [!NOTE]
 > We'll explore considerations for handling *NULL* values later in this unit.
