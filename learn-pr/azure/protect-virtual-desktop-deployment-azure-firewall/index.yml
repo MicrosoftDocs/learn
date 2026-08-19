@@ -5,23 +5,28 @@ metadata:
   title: Protect your Azure Virtual Desktop deployment by using Azure Firewall
   description: Learn how to deploy and configure Azure Firewall to protect outbound network traffic for Azure Virtual Desktop.
   manager: kumud
-  ms.date: 01/05/2024
+  ms.date: 08/17/2026
   author: vhorne
-  ms.author: victorh
+  ms.author: robbarefoot
   ms.topic: module-standard-task-based
   ms.service: azure-firewall
 title: Protect your Azure Virtual Desktop deployment by using Azure Firewall
-summary: In this module, you'll learn to deploy Azure Firewall, route all network traffic through Azure Firewall, and configure rules. You'll also route the outbound network traffic from the Azure Virtual Desktop host pool to the service through Azure Firewall.
-abstract: | 
+summary: In this module, you'll deploy Azure Firewall with a Firewall Policy, configure default and service-tag routes, and allow the endpoints that Azure Virtual Desktop session hosts require.
+abstract: |
   By the end of this module, you'll be able to:
-    - Deploy and configure Azure Firewall to protect outbound network traffic for Azure Virtual Desktop.
+    - Deploy Azure Firewall with a Firewall Policy in a hub-and-spoke network.
+    - Configure Azure Firewall DNS proxy for FQDN network rules.
+    - Configure outbound routes for an Azure Virtual Desktop session-host subnet.
+    - Create policy rules that allow required Azure Virtual Desktop traffic.
 prerequisites: |
   - An Azure account with an [active subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
+  - Permissions to create resource groups, Azure Virtual Desktop resources and session hosts, virtual networks, a public IP address, Azure Firewall and Firewall Policy resources, and route tables
+  - Permission to join a session host to Microsoft Entra ID
+  - Access to Azure Cloud Shell
   - Knowledge of networking concepts, like virtual networks, virtual network peering, subnets, and IP addressing
-  - Familiarity with networking security concepts, like network security groups, firewall, service endpoints
-  - For macOS, Linux, iOS, or Android users, a remote desktop client installed, like Microsoft Remote Desktop
+  - Familiarity with network security concepts, like network security groups, firewalls, service tags, and user-defined routes
 iconUrl: /training/achievements/protect-virtual-desktop-deployment-azure-firewall.svg
-levels: 
+levels:
   - beginner
 roles:
   - administrator
@@ -43,4 +48,3 @@ units:
 - learn.protect-virtual-desktop-deployment-azure-firewall.summary
 badge:
   uid: learn.protect-virtual-desktop-deployment-azure-firewall.badge
-

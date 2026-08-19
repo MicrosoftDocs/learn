@@ -210,6 +210,32 @@ achievements:
   title: Analyze monitoring data with Kusto Query Language
   summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.deploy-on-premise-based-tools.trophy
+  type: trophy
+  title: MD-102 Deploy using on-premises based tools
+  summary: |
+    Students are introduced to deployment using the Microsoft Deployment Toolkit and Configuration Manager.
+  iconUrl: /training/achievements/deploy-on-premise-based-tools.svg
+- uid: learn.wwl.deployment-readiness.badge
+  type: badge
+  title: Assess deployment readiness
+  summary: Discusses some of the tools that you can use to perform detailed assessments of existing deployments, and describes some of the challenges that you may face.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.deploy-microsoft-deployment-toolkit.badge
+  type: badge
+  title: Deploy using the Microsoft Deployment Toolkit
+  summary: Discusses the shifts from traditional to modern management and where on-premises solutions best fit in today's enterprise.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.deploy-microsoft-configuration-manager.badge
+  type: badge
+  title: Deploy using Microsoft Configuration Manager
+  summary: This module explains the common day to day tasks that Administrators would use Configuration Manager to perform.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-azure-virtual-desktop.badge
+  type: badge
+  title: Manage Azure Virtual Desktop
+  summary: Learn to manage Azure Virtual Desktop, a cloud-based VDI solution providing personalized, secure Windows 11 experiences. Understand key features, management, security, and deployment options for optimizing your environment.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.wwl.deploy-cloud-based-tools.trophy
   type: trophy
   title: MD-102 Deploy using cloud based tools
