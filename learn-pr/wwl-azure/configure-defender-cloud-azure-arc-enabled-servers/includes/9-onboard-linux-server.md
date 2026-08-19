@@ -1,13 +1,21 @@
-To onboard your Linux server:
+The Linux onboarding script includes the Azure cloud, connectivity, resource, and authentication settings you selected in the Azure portal. It doesn't require Log Analytics workspace credentials.
 
-1.  Select **Linux servers**.
-    
-    :::image type="content" source="../media/linux-servers-added-c1e520a2.png" alt-text="Displays a screenshot of the controls for selecting the procedure for Linux servers.":::
-    
-    
-    To add Linux machines, you need the `wget` command from the **Agents management** page.
-2.  Copy the `wget` command into Notepad. Save this file to a location that you can access from your Linux computer.
-3.  On your Linux computer, open the file that contains the `wget` command. Copy the entire contents and paste them into a terminal console.
-4.  When the installation finishes, validate that the **Operations Management Suite Agent** is installed by running the `pgrep` command. The command returns the **omsagent persistent ID**.
-    
-    You can find the logs for the agent at `/var/opt/microsoft/omsagent/<workspace id>/log/`. The new Linux machine might take up to 30 minutes to appear in Defender for Cloud.
+To connect a Linux server:
+
+1. Copy `OnboardingScript.sh` to the target server.
+2. Sign in to the server with an account that has root access.
+3. Change to the folder that contains the script, and then run it:
+
+    ```bash
+    chmod +x ./OnboardingScript.sh
+    ./OnboardingScript.sh
+    ```
+
+4. Complete the interactive Azure sign-in when the script prompts you.
+5. Run the following command and confirm that **Agent Status** is **Connected**:
+
+    ```bash
+    azcmagent show
+    ```
+
+Alternatively, verify the connection on the **Machines - Azure Arc** page in the Azure portal. If onboarding fails, review the logs in `/var/opt/azcmagent/log`.
