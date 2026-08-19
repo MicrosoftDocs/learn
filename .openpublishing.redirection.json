@@ -192,6 +192,256 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.deploy-microsoft-configuration-manager.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.deploy-microsoft-deployment-toolkit.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-windows-autopilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.deploy-on-premise-based-tools.trophy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.deployment-readiness.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.manage-azure-virtual-desktop.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-azure-virtual-desktop-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/deploy-on-premise-based-tools/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-configuration-manager/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-configuration-manager/2-explore-client-deployment-using.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-configuration-manager/3-examine-deployment-components-of.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-configuration-manager/4-manage-client-deployment-using.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-configuration-manager/5-plan-place-upgrades-using.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-configuration-manager/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-configuration-manager/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-configuration-manager/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-deployment-toolkit/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-windows-autopilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-deployment-toolkit/2-evaluate-traditional-deployment-methods.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-windows-autopilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-deployment-toolkit/3-set-up-for-client-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-windows-autopilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-deployment-toolkit/4-manage-deploy-images.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-windows-autopilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-deployment-toolkit/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-windows-autopilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-deployment-toolkit/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-windows-autopilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-deployment-toolkit/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-windows-autopilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deployment-readiness/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deployment-readiness/2-examine-deployment-guidelines.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deployment-readiness/3-explore-readiness-tools.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deployment-readiness/4-assess-application-compatibility.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deployment-readiness/5-explore-tools-for-application-compatibility-mitigation.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deployment-readiness/6-prepare-network-directory-for-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deployment-readiness/7-plan-pilot.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deployment-readiness/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deployment-readiness/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/deployment-readiness/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/explore-microsoft-intune-suite/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-intune-suite-capabilities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/explore-microsoft-intune-suite/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-intune-suite-capabilities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/explore-microsoft-intune-suite/2-discover-essentials-microsoft-intune-suite.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-intune-suite-capabilities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/explore-microsoft-intune-suite/3-apply-zero-trust.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-intune-suite-capabilities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/explore-microsoft-intune-suite/4-implement-endpoint-privilege-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-intune-suite-capabilities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/explore-microsoft-intune-suite/5-understand-enterprise-app-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-intune-suite-capabilities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/explore-microsoft-intune-suite/6-explore-advanced-analytics.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-intune-suite-capabilities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/explore-microsoft-intune-suite/7-provide-remote-help.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-intune-suite-capabilities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/explore-microsoft-intune-suite/8-deploy-microsoft-tunnel-mobile-applications.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-intune-suite-capabilities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/explore-microsoft-intune-suite/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-intune-suite-capabilities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/explore-microsoft-intune-suite/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-intune-suite-capabilities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/manage-azure-virtual-desktop/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-azure-virtual-desktop-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/manage-azure-virtual-desktop/2-examine-azure-virtual-desktop.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-azure-virtual-desktop-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/manage-azure-virtual-desktop/3-explore-azure-virtual-desktop.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-azure-virtual-desktop-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/manage-azure-virtual-desktop/4-configure-azure-virtual-desktop.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-azure-virtual-desktop-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/manage-azure-virtual-desktop/5-administer-azure-virtual-desktop.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-azure-virtual-desktop-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/manage-azure-virtual-desktop/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-azure-virtual-desktop-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/manage-azure-virtual-desktop/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-azure-virtual-desktop-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/manage-azure-virtual-desktop/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/integrate-azure-virtual-desktop-intune/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/achievements/learn.wwl.deploy-cloud-based-tools.trophy.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/",
       "redirect_document_id": false
