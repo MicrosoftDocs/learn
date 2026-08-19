@@ -1,17 +1,17 @@
-Your retail organization plans to deploy three AI applications this quarter: a customer support chatbot, a product recommendation engine, and an inventory forecasting model. The team currently provisions separate Azure AI resources—duplicating Azure OpenAI deployments, creating isolated storage accounts, and deploying dedicated search services. This scattered approach creates four critical problems: security teams struggle to audit 15+ separate services, finance lacks visibility into AI spending across departments, developers waste time configuring the same network rules repeatedly, and your organization pays for underutilized search capacity that could be shared.
+Your retail organization plans to deploy three AI applications this quarter: a customer support chatbot, a product recommendation engine, and an inventory forecasting model. The team currently provisions Azure AI resources independently. This scattered approach makes it difficult to apply consistent security controls, understand spending, and manage access to connected services.
 
-Microsoft Foundry solves these infrastructure challenges through a hub-and-project architecture. Hubs establish shared governance boundaries where you configure networking, managed identities, and policy enforcement once. Projects within each hub inherit those settings while providing isolated workspaces where teams build AI solutions independently. Hub-level connections to services like Azure AI Search enable multiple projects to share infrastructure, reducing your search costs by 50-70% compared to provisioning dedicated instances per team.
+Microsoft Foundry addresses these infrastructure challenges through a top-level Foundry resource and child projects. The Foundry resource is the governance boundary for networking, security, model deployments, and connections. Projects provide development boundaries where teams build and evaluate individual use cases. Connected Azure services, such as Azure AI Search, remain separate Azure resources with their own networking and access controls.
 
-In this module, you configure a hub that enforces consistent security policies across all AI projects, establish a hub-level connection to Azure AI Search that eliminates resource duplication, create projects that inherit governance settings while maintaining team autonomy, and validate that your infrastructure supports enterprise-scale AI deployments. By the end, you have the architectural knowledge to provision scalable AI infrastructure that satisfies security, finance, and development stakeholders simultaneously.
+In this module, you plan a Foundry resource and project structure, select roles for administrators and developers, and connect a project to Azure AI Search by using explicit role assignments. By the end, you can provision a governed foundation for multiple AI workloads by using the current Foundry resource model.
 
 ## Learning objectives
 
 By the end of this module, you're able to:
 
-- Configure Microsoft Foundry hubs with appropriate governance and security settings
-- Create and organize AI projects within hubs to support team collaboration
-- Establish connected resources including Azure AI Search for shared infrastructure
-- Implement hub-level shared connections to optimize resource utilization across projects
+- Plan a Microsoft Foundry resource and project structure for multiple AI workloads
+- Assign Microsoft Foundry roles at appropriate resource and project scopes
+- Connect a Foundry project to Azure AI Search
+- Configure managed identity access to connected Azure services
 
 ## Prerequisites
 
