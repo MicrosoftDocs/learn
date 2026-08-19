@@ -24,7 +24,7 @@ The following table describes key AI capabilities in SQL Server 2025:
 
 Ensure your network and security configurations allow communication between SQL Server and Azure services when implementing hybrid scenarios.
 
-- **Managed disaster recovery**: SQL Server 2025 offers improved integration with Azure for managed disaster recovery, enabling automated backups, geo-replication, and fast failover to the cloud.
+- **Disaster recovery to Azure**: Extend on-premises high availability to Azure by using Always On availability groups, and back up to Azure Blob Storage, including immutable blob storage.
 - **Real-time analytics**: Use hybrid data architectures to combine on-premises and cloud data sources, enabling near real-time analytics and reporting using Azure Synapse Analytics, Power BI, and other cloud services.
 - **Advanced security and compliance**: Benefit from unified security management, advanced threat protection, and compliance monitoring by connecting SQL Server 2025 to Microsoft Defender for Cloud and Microsoft Purview.
 - **Hybrid data virtualization**: Access and query data across on-premises, cloud, and S3-compatible object storage providers using built-in connectors and data virtualization features.

@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry.implement-hub-level-shared-connections-azure
-title: "Implement hub-level shared connections to Azure AI Search"
+title: "Connect Foundry projects to Azure AI Search"
 metadata:
-  title: "Implement Hub-Level Shared Connections to Azure AI Search"
-  description: "Learn how to implement hub-level shared connections to Azure AI Search for cost efficiency, reduced complexity, and optimized performance."
-  ms.date: 02/02/2026
+  title: "Connect Foundry Projects to Azure AI Search"
+  description: "Configure project connections, managed identity roles, security trimming, and capacity planning for Azure AI Search."
+  ms.date: 08/18/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 16
 content: |

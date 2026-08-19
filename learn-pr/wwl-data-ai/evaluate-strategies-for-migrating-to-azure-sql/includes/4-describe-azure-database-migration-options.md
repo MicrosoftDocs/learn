@@ -6,7 +6,7 @@ There are several tools available to help with the migration process. This next 
 
 [Azure Database Migration Service](/azure/dms/dms-overview) helps you simplify, guide, and automate your database migration to Azure. DMS migrates your data, schema, and objects from multiple sources to the cloud at scale.
 
-For online migrations to Azure SQL, Azure Database Migration Service provides a highly resilient and self-healing migration service with reliable outcomes and near-zero downtime. Below are highlighted the main steps involved:
+For online migrations to Azure SQL Managed Instance or SQL Server on Azure Virtual Machines, Azure Database Migration Service provides a highly resilient and self-healing migration service with reliable outcomes and near-zero downtime. Migrations to Azure SQL Database are supported as offline migrations. Below are highlighted the main steps involved:
 
 1. Fully load your on-premises database to Azure SQL. 
 2. Continuously sync new database transactions to the Azure target. 
@@ -52,7 +52,7 @@ There are a number of different approaches to migrating databases to Azure SQL. 
 
 - [**Log Replay Service**](/azure/azure-sql/managed-instance/log-replay-service-overview?azure-portal=true). It's an online migration option to Azure SQL Managed Instance, and used when you need more control of your database migration project.
 
-- [**Managed Instance link**](/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?azure-portal=true). The Managed Instance link, using distributed availability groups, securely extends your data estate by replicating data almost instantly (online) between any hosted SQL Server and Azure SQL Managed Instance, and vice versa.
+- [**Managed Instance link**](/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?azure-portal=true). The Managed Instance link, using distributed availability groups, securely extends your data estate by replicating data almost instantly (online) from a hosted SQL Server instance to Azure SQL Managed Instance. With SQL Server 2022 and later, you can also replicate and fail back in the other direction, from Azure SQL Managed Instance to SQL Server.
 
 - [**Native backup and restore**](/azure/azure-sql/managed-instance/restore-sample-database-quickstart?azure-portal=true). Backup and restore are a simple migration method favored by many SQL Server professionals. It's the easiest migration option for customers who can provide full database backups to Azure Storage.
 

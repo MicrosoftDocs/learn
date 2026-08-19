@@ -48,12 +48,12 @@ SQL Server 2025 includes these key changes from previous releases:
 
 ### Features removed or deprecated in SQL Server 2025
 
-The following features are deprecated in SQL Server 2025:
+The following features are removed or deprecated in SQL Server 2025:
 
-- Legacy PolyBase Hadoop connectivity and scale-out groups (replaced by modern connectors and virtualization)
-- Machine Learning Server and bundled R/Python/Java runtimes (use external packages and services)
+- Legacy PolyBase Hadoop connectivity and scale-out groups, removed in SQL Server 2022 (replaced by modern connectors and virtualization)
+- Machine Learning Services bundled R, Python, and Java runtimes, no longer installed by SQL Server Setup since SQL Server 2022 (install external packages and services instead)
 - Distributed Replay (removed from setup)
-- Stretch Database (deprecated, to be removed in a future version)
+- Stretch Database (discontinued in all supported versions of SQL Server)
 - Some legacy security and management features replaced by new unified management and compliance tools
 
 > [!TIP]
