@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.write-reusable-code-python
+metadata:
+  title: Write Reusable Code
+  description: Learn how to write reusable code in Python using functions, parameters, return values, variable scope, and importable modules.
+  ms.date: 07/15/2026
+  ms.service: visual-studio
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
+title: Write reusable code
+summary: Learn how to write reusable code in Python using functions, parameters, return values, variable scope, and importable modules.
+abstract: |
+  After completing this module, you're able to:
+  - Create functions that accept parameters.
+  - Return values from functions.
+  - Understand how variable scope affects your code.
+  - Split code across importable modules.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+subjects:
+  - app-development
+units:
+- learn.wwl.write-reusable-code-python.introduction
+- learn.wwl.write-reusable-code-python.create-functions-with-parameters
+- learn.wwl.write-reusable-code-python.return-values-from-functions
+- learn.wwl.write-reusable-code-python.manage-variable-scope
+- learn.wwl.write-reusable-code-python.create-importable-modules
+- learn.wwl.write-reusable-code-python.exercise-create-calculator
+- learn.wwl.write-reusable-code-python.knowledge-check
+- learn.wwl.write-reusable-code-python.summary
+badge:
+  uid: learn.wwl.write-reusable-code-python.badge
