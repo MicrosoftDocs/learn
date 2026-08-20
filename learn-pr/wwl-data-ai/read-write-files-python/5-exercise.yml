@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.read-write-files-python.exercise-build-todo-list
+title: Exercise - Build a to-do list
+metadata:
+  title: Exercise - Build a To-Do List
+  description: "Build a to-do list app that saves tasks to a file so they persist between runs."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/5-exercise.md)]

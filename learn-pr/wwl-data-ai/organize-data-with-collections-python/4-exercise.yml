@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.organize-data-with-collections-python.exercise-create-customer-order
+title: Exercise - Create a customer order
+metadata:
+  title: Exercise - Create a customer order
+  description: "Combine lists and dictionaries to track a customer's order."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/4-exercise.md)]

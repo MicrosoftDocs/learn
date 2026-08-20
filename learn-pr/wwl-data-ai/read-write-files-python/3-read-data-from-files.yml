@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.read-write-files-python.read-data-from-files
+title: Read data from files
+metadata:
+  title: Read Data from Files
+  description: "Learn different ways to read text from a file — all at once, one line at a time, or as a list of lines."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-read-data-from-files.md)]

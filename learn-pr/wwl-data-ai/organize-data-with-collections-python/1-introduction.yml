@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.organize-data-with-collections-python.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Learn why collections like lists and dictionaries are essential for organizing data in Python."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
