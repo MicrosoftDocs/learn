@@ -3,7 +3,7 @@ uid: learn.wwl.analyze-ai-identity-risks-defender-xdr.discover-ai-agents-defende
 metadata:
   title: Discover AI agents in the Microsoft Defender portal
   description: Use the AI assets inventory in Microsoft Defender XDR to discover AI agents operating in your environment, review discovery data, and verify agent visibility.
-  ms.date: 04/21/2026
+  ms.date: 08/21/2026
   author: r-c-stewart
   ms.author: roberts
   ms.topic: unit

@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.build-extend-ai-agents
+metadata:
+  title: Build and extend AI agents with Microsoft Foundry
+  description: Build and extend an AI agent with grounded knowledge, data analysis, custom functions, and remote Model Context Protocol (MCP) tools.
+  ms.date: 08/21/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: microsoft-foundry
+title: Build and extend AI agents with Microsoft Foundry
+summary: "Build and extend an AI agent with trusted knowledge and tools. Use Microsoft Foundry Agent Service to ground responses, retrieve live information, analyze data, call custom functions, and connect to remote Model Context Protocol (MCP) servers."
+abstract: |
+  By the end, you can:
+  - Describe AI agents and the key capabilities of Microsoft Foundry Agent Service.
+  - Choose a development approach using the Foundry portal, Visual Studio Code, or code.
+  - Extend an agent with custom function tools, Azure Functions, and OpenAPI-defined tools.
+  - Connect an agent to a remote Model Context Protocol (MCP) server and handle tool-approval requests.
+prerequisites: |
+  - Familiarity with Azure and the Azure portal.
+  - An understanding of generative AI. You can learn more with [Fundamentals of Generative AI](/training/modules/fundamentals-generative-ai/).
+  - Basic familiarity with Python and Visual Studio Code.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products:
+  - microsoft-foundry
+  - foundry-agent-service
+subjects:
+  - artificial-intelligence
+units:
+- learn.wwl.build-extend-ai-agents.introduction
+- learn.wwl.build-extend-ai-agents.understand-agents-foundry
+- learn.wwl.build-extend-ai-agents.choose-development-approach
+- learn.wwl.build-extend-ai-agents.extend-agents-with-tools
+- learn.wwl.build-extend-ai-agents.connect-agents-to-mcp
+- learn.wwl.build-extend-ai-agents.exercise
+- learn.wwl.build-extend-ai-agents.knowledge-check
+- learn.wwl.build-extend-ai-agents.summary
+badge:
+  uid: learn.wwl.build-extend-ai-agents.badge

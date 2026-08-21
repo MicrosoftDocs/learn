@@ -42,12 +42,10 @@ As your agent population grows, individually listing agent service principals in
 
 For both autonomous agent identities and agent user accounts, the non-interactive authentication flow limits, which Conditional Access controls apply. Understanding these boundaries helps you design realistic policies for agents that operate without a user present.
 
-Conditional Access **can enforce** the following for autonomous agent identities:
+When a Conditional Access policy targets agent identities, the available configuration is limited:
 
-- **Block sign-in**: Prevent the agent identity from authenticating entirely
-- **Named location conditions**: Restrict authentication to specific IP ranges or geographic regions
-- **Sign-in frequency restrictions**: Require token refresh at defined intervals
-- **Risk-based conditions**: Block agents flagged as high-risk by Microsoft Entra ID Protection
+- **Condition**: Agent risk (Preview) is the only available condition.
+- **Access control**: Block access is the only available access control.
 
 Conditional Access **cannot enforce** the following for autonomous agent identities:
 
@@ -55,8 +53,8 @@ Conditional Access **cannot enforce** the following for autonomous agent identit
 - **Device compliance**: No physical device is registered to evaluate
 - **User-based session controls**: App-enforced restrictions and similar controls require an interactive user session
 
-These limits apply equally to autonomous agent identities (which use a service principal). And the limits apply to agent user accounts (which use a user-type identity but still authenticate non-interactively). Agents can't respond to an MFA prompt or present a device compliance certificate. For OBO flows these limits don't apply—the full user CA control set is available, including MFA, device compliance, sign-in risk, and session controls, because the human user is the token subject throughout.
+These limits apply to policies that target autonomous agent identities. Agents can't respond to an MFA prompt or present a device compliance certificate. For OBO flows, these limits don't apply—the full user Conditional Access control set is available because the human user is the token subject throughout.
 
-Contoso's security team uses named location conditions to enforce a base policy: all autonomous agent identities must authenticate from corporate network IP ranges or designated Azure regions. Agents attempting to authenticate from other locations are blocked automatically.
+Contoso's security team creates a policy that targets agent identities with high agent risk and blocks access. User-targeted policies continue to protect OBO flows with the conditions and controls that apply to the signed-in user.
 
 Now that you understand where Conditional Access intersects with agent authentication, you're ready to configure specific policies scoped to agent identities.
