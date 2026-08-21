@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.repeat-actions-loops-python.choose-between-for-while-loops
+title: Choose between for and while loops
+metadata:
+  title: Choose between for and while loops
+  description: "Learn when to use a for loop versus a while loop, and how each one works."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-choose-between-for-while-loops.md)]

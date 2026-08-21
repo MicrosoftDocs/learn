@@ -8736,3 +8736,93 @@ achievements:
   title: Monitor app performance
   summary: Learn how to use the tools offered in Application Insights to enhance the performance and stability of your applications.
   iconUrl: /training/achievements/monitoring-app-performance.svg
+- uid: learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.badge
+  type: badge
+  title: Examine backup security licensing and support considerations for SAP HANA on Azure (Large Instances)
+  summary: Considerations for backup, security, licensing, and support of SAP HANA on Azure (Large Instances).
+  iconUrl: /training/achievements/sap-hana-backup-security-licensing.svg
+- uid: learn.wwl.examine-sap-hana-azure-large-instances-sample-architecture.badge
+  type: badge
+  title: Examine SAP HANA on Azure (Large Instances) sample architecture
+  summary: Examine SAP HANA on Azure (Large Instances) sample architecture and workflow.
+  iconUrl: /training/achievements/sap-hana-sample-architecture.svg
+- uid: learn.wwl.explore-sap-hana-azure-large-instances.trophy
+  type: trophy
+  title: Explore SAP HANA on Azure (Large Instances)
+  summary: SAP HANA on Azure (Large Instances) represent many of the largest SAP workloads. These modules explore the unique requirements for architecture, planning, migration, and run, monitor, and support of HANA Large Instances.
+  iconUrl: /training/achievements/sap-hana-explore.svg
+- uid: learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.badge
+  type: badge
+  title: Identify SAP HANA on Azure (Large Instances) certified offerings
+  summary: Examine SAP HANA on Azure (Large Instances) certified offerings and deployment offerings.
+  iconUrl: /training/achievements/sap-hana-certified-offerings.svg
+- uid: learn.wwl.implement-business-continuity-disaster-recovery-backup.badge
+  type: badge
+  title: Implement business continuity, disaster recovery, and backup for SAP HANA on Azure (Large Instances)
+  summary: Investigate business continuity, disaster recovery, and backup of SAP HANA on Azure (Large Instances).
+  iconUrl: /training/achievements/9-implement-business-continuity-disaster-recovery-and-backup.svg
+- uid: learn.wwl.implement-deploy-sap-hana-azure-large-instances.badge
+  type: badge
+  title: Implement and deploy SAP HANA on Azure (Large Instances)
+  summary: Deploy, validate, and install SAP HANA on Azure (Large Instances).
+  iconUrl: /training/achievements/sap-hana-implement-deploy.svg
+- uid: learn.wwl.introduction-to-azure-database-administration.trophy
+  type: trophy
+  title: Introduction to Azure database administration
+  summary: Microsoft Azure provides a set of seamless capabilities for SQL databases. Explore the different database offerings, and services available to help you get started.
+  iconUrl: /training/achievements/introduction-to-azure-database-administration.svg
+- uid: learn.wwl.manage-sap-hana-azure-large-instances.badge
+  type: badge
+  title: Manage SAP HANA on Azure (Large Instances)
+  summary: Explore methods to connect to and manage SAP HANA on Azure (Large Instances).
+  iconUrl: /training/achievements/sap-hana-manage-azure.svg
+- uid: learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.badge
+  type: badge
+  title: Monitor and troubleshoot SAP HANA on Azure (Large Instances)
+  summary: Investigate monitoring tools and methods used for SAP HANA on Azure (Large Instances).
+  iconUrl: /training/achievements/8-monitor-and-troubleshoot-sap-hana-on-azure-large-instances.svg
+- uid: learn.wwl.plan-sap-hana-azure-large-instances-deployments.badge
+  type: badge
+  title: Plan SAP HANA on Azure (Large Instances) deployments
+  summary: Deploy SAP HANA on Azure (Large Instances) using Azure resources that include virtual machines, virtual networks, storage accounts, and Microsoft Entra ID.
+  iconUrl: /training/achievements/sap-hana-deployment.svg
+- uid: learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.badge
+  type: badge
+  title: Plan SAP HANA on Azure (Large Instances) high availability and disaster recovery
+  summary: Considerations to plan for SAP HANA on Azure (Large Instances) high availability and disaster recovery.
+  iconUrl: /training/achievements/sap-hana-high-availability-disaster.svg
+- uid: learn.wwl.prepare-to-maintain-sql-databases-azure.badge
+  type: badge
+  title: Prepare to maintain SQL Server-based databases on Azure
+  summary: Explore the role of a database administrator on Azure. Describe SQL Server-based offerings on Azure.
+  iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
+- uid: learn.wwl.define-microsoft-ai-strategy-finance.badge
+  type: badge
+  title: Define a Microsoft AI strategy to create business value in finance
+  summary: This module is designed to help finance professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+  iconUrl: /training/achievements/define-microsoft-ai-strategy-finance.svg
+- uid: learn.wwl.define-microsoft-ai-strategy-healthcare.badge
+  type: badge
+  title: Define a Microsoft AI strategy to create business value in healthcare
+  summary: This module is designed to help healthcare professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+  iconUrl: /training/achievements/define-microsoft-ai-strategy-healthcare.svg
+- uid: learn.wwl.define-microsoft-ai-strategy-sustainability.badge
+  type: badge
+  title: Define a Microsoft AI strategy to create business value in sustainability
+  summary: This module is designed to help sustainability professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.discover-microsoft-ai-leaders-financial-industry.trophy
+  type: trophy
+  title: Discover AI for leaders in finance
+  summary: In this learning path, FSI business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and finance use cases.
+  iconUrl: /training/achievements/discover-microsoft-ai-leaders-financial-industry.svg
+- uid: learn.wwl.discover-microsoft-ai-leaders-healthcare-industry.trophy
+  type: trophy
+  title: Discover AI for leaders in healthcare
+  summary: In this learning path, healthcare business leaders will find the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and healthcare use cases.
+  iconUrl: /training/achievements/discover-microsoft-ai-leaders-healthcare-industry.svg
+- uid: learn.wwl.discover-microsoft-ai-leaders-sustainability.trophy
+  type: trophy
+  title: Discover AI for leaders in sustainability
+  summary: In this learning path, sustainability business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and sustainability use cases.
+  iconUrl: /training/achievements/generic-trophy.svg

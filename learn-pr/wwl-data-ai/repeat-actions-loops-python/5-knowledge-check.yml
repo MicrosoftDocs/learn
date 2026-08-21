@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.repeat-actions-loops-python.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Check your learning on repeating actions with loops in Python."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Which loop is best suited when you know in advance how many times you want to repeat an action?"
+    choices:
+    - content: "while loop"
+      isCorrect: false
+      explanation: "Incorrect. A while loop repeats based on a condition, not a known count. Use a for loop when the number of iterations is known."
+    - content: "for loop"
+      isCorrect: true
+      explanation: "Correct. A for loop is ideal when you know exactly how many times to repeat, such as iterating over a list or a range."
+    - content: "if statement"
+      isCorrect: false
+      explanation: "Incorrect. An if statement is for decision-making, not repetition."
+  - content: "What does the break statement do inside a loop?"
+    choices:
+    - content: "Skips the current iteration and moves to the next one."
+      isCorrect: false
+      explanation: "Incorrect. That describes the continue statement. break exits the loop entirely."
+    - content: "Restarts the loop from the beginning."
+      isCorrect: false
+      explanation: "Incorrect. break doesn't restart the loop—it exits it immediately."
+    - content: "Exits the loop immediately, regardless of the loop condition."
+      isCorrect: true
+      explanation: "Correct. break stops the loop at that point and execution continues with the code after the loop."
+  - content: "What does the continue statement do inside a loop?"
+    choices:
+    - content: "Exits the loop immediately."
+      isCorrect: false
+      explanation: "Incorrect. That describes break. continue only skips the current iteration."
+    - content: "Skips the rest of the current iteration and moves to the next one."
+      isCorrect: true
+      explanation: "Correct. continue jumps back to the top of the loop and starts the next iteration."
+    - content: "Pauses the loop until the user presses a key."
+      isCorrect: false
+      explanation: "Incorrect. continue has no pausing behavior—it immediately begins the next iteration."
