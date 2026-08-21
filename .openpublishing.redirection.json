@@ -71671,6 +71671,251 @@
       "source_path": "learn-pr/azure/monitor-app-performance/6-application-map.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/backup-security-licensing-support-considerations-sap-hana-azure/index.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/backup-security-licensing-support-considerations-sap-hana-azure/5-examine-hana-large-instances-security.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/backup-security-licensing-support-considerations-sap-hana-azure/4-examine-storage-snapshot-considerations.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/backup-security-licensing-support-considerations-sap-hana-azure/2-explore-backup-considerations-hana-large-instances.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/backup-security-licensing-support-considerations-sap-hana-azure/8-explore-division-management-responsibilities.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/backup-security-licensing-support-considerations-sap-hana-azure/6-explore-hana-large-instances-licensing.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/backup-security-licensing-support-considerations-sap-hana-azure/7-explore-hana-large-instances-support.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/backup-security-licensing-support-considerations-sap-hana-azure/3-explore-storage-snapshots-hana-large-instances.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/backup-security-licensing-support-considerations-sap-hana-azure/1-introduction.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/backup-security-licensing-support-considerations-sap-hana-azure/9-knowledge-check.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/backup-security-licensing-support-considerations-sap-hana-azure/10-summary.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-sap-hana-azure-large-instances-sample-architecture/index.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-sap-hana-azure-large-instances-sample-architecture/3-examine-architectural-components.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-sap-hana-azure-large-instances-sample-architecture/4-examine-sample-functional-workflow.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-sap-hana-azure-large-instances-sample-architecture/2-explore-high-level-architecture-hana-large-instances.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-sap-hana-azure-large-instances-sample-architecture/1-introduction.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-sap-hana-azure-large-instances-sample-architecture/5-knowledge-check.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-sap-hana-azure-large-instances-sample-architecture/6-summary.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/explore-sap-hana-azure-large-instances/index.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-sap-hana-azure-large-instances-certified-offerings/index.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-sap-hana-azure-large-instances-certified-offerings/7-examine-sap-hana-certifications.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-sap-hana-azure-large-instances-certified-offerings/2-explore-hana-large-instances.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-sap-hana-azure-large-instances-certified-offerings/5-explore-custom-sizing-hana-large-instances.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-sap-hana-azure-large-instances-certified-offerings/3-explore-deployment-options.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-sap-hana-azure-large-instances-certified-offerings/9-explore-hana-large-instances-storage.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-sap-hana-azure-large-instances-certified-offerings/1-introduction.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-sap-hana-azure-large-instances-certified-offerings/10-knowledge-check.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-sap-hana-azure-large-instances-certified-offerings/8-recognize-hana-large-instances-supported-operating-systems.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-sap-hana-azure-large-instances-certified-offerings/4-review-available-skus-hana-large-instances.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-sap-hana-azure-large-instances-certified-offerings/6-review-sap-certified-configurations.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/identify-sap-hana-azure-large-instances-certified-offerings/11-summary.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-business-continuity-disaster-recovery-backup/index.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-business-continuity-disaster-recovery-backup/3-backup-restore-operating-system-type-ii-skus.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-business-continuity-disaster-recovery-backup/5-exercise-backup-restore-hana-large-instances.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-business-continuity-disaster-recovery-backup/2-explore-snapshot-strategies.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-business-continuity-disaster-recovery-backup/4-implement-disaster-recovery-hana-large-instances.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-business-continuity-disaster-recovery-backup/1-introduction.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-business-continuity-disaster-recovery-backup/6-knowledge-check.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-business-continuity-disaster-recovery-backup/7-summary.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-deploy-sap-hana-azure-large-instances/index.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-deploy-sap-hana-azure-large-instances/3-connect-azure-virtual-machines-hana-large-instances.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-deploy-sap-hana-azure-large-instances/4-create-expressroute-gateway.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-deploy-sap-hana-azure-large-instances/6-exercise-install-hana-hana-large-instances.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-deploy-sap-hana-azure-large-instances/1-introduction.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-deploy-sap-hana-azure-large-instances/7-knowledge-check.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-deploy-sap-hana-azure-large-instances/2-deploy-hana-large-instances-units.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-deploy-sap-hana-azure-large-instances/8-summary.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-deploy-sap-hana-azure-large-instances/5-validate-hana-large-instances.md",
+      "redirect_url": "/azure/sap/large-instances/hana-large-instance-virtual-machine-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/introduction-to-azure-database-administration/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }

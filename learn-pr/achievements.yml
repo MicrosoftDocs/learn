@@ -8736,3 +8736,38 @@ achievements:
   title: Monitor app performance
   summary: Learn how to use the tools offered in Application Insights to enhance the performance and stability of your applications.
   iconUrl: /training/achievements/monitoring-app-performance.svg
+- uid: learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.badge
+  type: badge
+  title: Examine backup security licensing and support considerations for SAP HANA on Azure (Large Instances)
+  summary: Considerations for backup, security, licensing, and support of SAP HANA on Azure (Large Instances).
+  iconUrl: /training/achievements/sap-hana-backup-security-licensing.svg
+- uid: learn.wwl.examine-sap-hana-azure-large-instances-sample-architecture.badge
+  type: badge
+  title: Examine SAP HANA on Azure (Large Instances) sample architecture
+  summary: Examine SAP HANA on Azure (Large Instances) sample architecture and workflow.
+  iconUrl: /training/achievements/sap-hana-sample-architecture.svg
+- uid: learn.wwl.explore-sap-hana-azure-large-instances.trophy
+  type: trophy
+  title: Explore SAP HANA on Azure (Large Instances)
+  summary: SAP HANA on Azure (Large Instances) represent many of the largest SAP workloads. These modules explore the unique requirements for architecture, planning, migration, and run, monitor, and support of HANA Large Instances.
+  iconUrl: /training/achievements/sap-hana-explore.svg
+- uid: learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.badge
+  type: badge
+  title: Identify SAP HANA on Azure (Large Instances) certified offerings
+  summary: Examine SAP HANA on Azure (Large Instances) certified offerings and deployment offerings.
+  iconUrl: /training/achievements/sap-hana-certified-offerings.svg
+- uid: learn.wwl.implement-business-continuity-disaster-recovery-backup.badge
+  type: badge
+  title: Implement business continuity, disaster recovery, and backup for SAP HANA on Azure (Large Instances)
+  summary: Investigate business continuity, disaster recovery, and backup of SAP HANA on Azure (Large Instances).
+  iconUrl: /training/achievements/9-implement-business-continuity-disaster-recovery-and-backup.svg
+- uid: learn.wwl.implement-deploy-sap-hana-azure-large-instances.badge
+  type: badge
+  title: Implement and deploy SAP HANA on Azure (Large Instances)
+  summary: Deploy, validate, and install SAP HANA on Azure (Large Instances).
+  iconUrl: /training/achievements/sap-hana-implement-deploy.svg
+- uid: learn.wwl.introduction-to-azure-database-administration.trophy
+  type: trophy
+  title: Introduction to Azure database administration
+  summary: Microsoft Azure provides a set of seamless capabilities for SQL databases. Explore the different database offerings, and services available to help you get started.
+  iconUrl: /training/achievements/introduction-to-azure-database-administration.svg
