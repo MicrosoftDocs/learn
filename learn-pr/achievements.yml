@@ -8771,3 +8771,28 @@ achievements:
   title: Introduction to Azure database administration
   summary: Microsoft Azure provides a set of seamless capabilities for SQL databases. Explore the different database offerings, and services available to help you get started.
   iconUrl: /training/achievements/introduction-to-azure-database-administration.svg
+- uid: learn.wwl.manage-sap-hana-azure-large-instances.badge
+  type: badge
+  title: Manage SAP HANA on Azure (Large Instances)
+  summary: Explore methods to connect to and manage SAP HANA on Azure (Large Instances).
+  iconUrl: /training/achievements/sap-hana-manage-azure.svg
+- uid: learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.badge
+  type: badge
+  title: Monitor and troubleshoot SAP HANA on Azure (Large Instances)
+  summary: Investigate monitoring tools and methods used for SAP HANA on Azure (Large Instances).
+  iconUrl: /training/achievements/8-monitor-and-troubleshoot-sap-hana-on-azure-large-instances.svg
+- uid: learn.wwl.plan-sap-hana-azure-large-instances-deployments.badge
+  type: badge
+  title: Plan SAP HANA on Azure (Large Instances) deployments
+  summary: Deploy SAP HANA on Azure (Large Instances) using Azure resources that include virtual machines, virtual networks, storage accounts, and Microsoft Entra ID.
+  iconUrl: /training/achievements/sap-hana-deployment.svg
+- uid: learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.badge
+  type: badge
+  title: Plan SAP HANA on Azure (Large Instances) high availability and disaster recovery
+  summary: Considerations to plan for SAP HANA on Azure (Large Instances) high availability and disaster recovery.
+  iconUrl: /training/achievements/sap-hana-high-availability-disaster.svg
+- uid: learn.wwl.prepare-to-maintain-sql-databases-azure.badge
+  type: badge
+  title: Prepare to maintain SQL Server-based databases on Azure
+  summary: Explore the role of a database administrator on Azure. Describe SQL Server-based offerings on Azure.
+  iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
