@@ -1,0 +1,80 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-schema.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Answer six scenario-based questions to confirm you can reason about Active Directory Domain Services schema scope, inspection, design, and troubleshooting.
+  ms.date: 07/30/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 6
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "An administrator plans to add an attribute to the schema in the sales domain only, leaving other domains in the contoso.com forest unchanged. How should you respond?"
+      choices:
+        - content: "Proceed, because schema changes made on any domain controller stay local until you choose to replicate them."
+          isCorrect: false
+          explanation: "Incorrect. Schema changes are accepted only on the schema master and replicate to the whole forest; they're never domain-local."
+        - content: "Proceed, because each domain in a forest has its own schema that you change independently."
+          isCorrect: false
+          explanation: "Incorrect. A forest has exactly one schema shared by every domain, so there's no per-domain schema to change."
+        - content: "Explain that there's one schema per forest; the change would affect every domain and must be made on the schema master."
+          isCorrect: true
+          explanation: "Correct. A single schema is shared forest-wide and replicated to every domain controller, and only the schema master accepts changes, so the change is inherently forest-wide."
+    - content: "You must inspect the schema on the correct server without assuming the forest-root distinguished name. Which approach is safest?"
+      choices:
+        - content: "Read RootDSE for schemaNamingContext, get the schema master from Get-ADForest, and target that server with -Server."
+          isCorrect: true
+          explanation: "Correct. RootDSE discovery avoids hard-coded distinguished names, and explicitly targeting the schema master lets you inspect the current schema-write authority."
+        - content: "Build the schema distinguished name from the current user's domain and query the nearest domain controller."
+          isCorrect: false
+          explanation: "Incorrect. Assuming the forest-root distinguished name from the user's domain can be wrong in multi-domain forests, and an arbitrary domain controller may lag the schema master."
+        - content: "Connect ADSI Edit to the schema and edit values to confirm they're writable."
+          isCorrect: false
+          explanation: "Incorrect. ADSI Edit changes are immediate and forest-wide; inspection must stay read-only, and this doesn't solve reliable discovery."
+    - content: "An application must find person-category objects in a large directory. Why can filtering on objectCategory=person be more efficient than filtering only on objectClass=person?"
+      choices:
+        - content: "Because objectCategory is a multivalued inheritance chain that expands the search automatically."
+          isCorrect: false
+          explanation: "Incorrect. objectClass is the multivalued inheritance chain; objectCategory is single-valued."
+        - content: "Because objectCategory is single-valued and commonly indexed, making the category search more efficient than filtering the multivalued objectClass."
+          isCorrect: true
+          explanation: "Correct. objectCategory holds one class-category distinguished name and is commonly indexed. objectClass remains useful when the exact structural class or inheritance chain matters."
+        - content: "Because objectCategory changes objectClassCategory on the class definition to reduce matches."
+          isCorrect: false
+          explanation: "Incorrect. objectClassCategory is an integer on the class definition marking structural, abstract, or auxiliary; it's unrelated to how an instance is searched."
+    - content: "A vendor's schema extension reuses another product's object identifier (OID) arc to save registration effort. What is the correct assessment?"
+      choices:
+        - content: "Acceptable, because lDAPDisplayName uniqueness is all that AD DS enforces."
+          isCorrect: false
+          explanation: "Incorrect. Class and attribute OIDs share one uniqueness space; reusing another organization's arc risks collisions that can't be cleanly undone."
+        - content: "Acceptable, because OIDs are advisory and only GUIDs must be unique."
+          isCorrect: false
+          explanation: "Incorrect. OIDs must be globally unique from a registered arc; GUIDs and lDAPDisplayName values must also be unique, but that doesn't excuse reusing an OID arc."
+        - content: "Reject it; extensions must use a registered enterprise OID arc with a central allocation record, and must not reuse another organization's arc."
+          isCorrect: true
+          explanation: "Correct. Governance requires a registered OID arc and collision checks; reusing another arc can create permanent conflicts because schema additions are effectively irreversible."
+    - content: "A team wants to mark a new attribute confidential so that only authorized staff can read it, and they describe this as encrypting the value. How should you correct them?"
+      choices:
+        - content: "The confidential searchFlags bit encrypts the attribute at rest, so no further controls are needed."
+          isCorrect: false
+          explanation: "Incorrect. The confidential bit isn't encryption; it adds a control-access read check on top of existing permissions."
+        - content: "The confidential bit adds an authorization check but isn't encryption; combine it with proper ACLs, and keep true secrets out of the directory."
+          isCorrect: true
+          explanation: "Correct. Confidentiality is an extra access check, not encryption. It must be paired with careful ACL design, and secret material such as keys or tokens shouldn't be stored in schema attributes at all."
+        - content: "Add the attribute to the RODC filtered attribute set instead, which encrypts it on all domain controllers."
+          isCorrect: false
+          explanation: "Incorrect. The RODC filtered attribute set only prevents replication to read-only domain controllers; it isn't encryption and doesn't protect the value on writable domain controllers."
+    - content: "Creating a new object type succeeds on the schema master but fails on a second domain controller with a schema-related error. Both report the same objectVersion. What is the best first conclusion?"
+      choices:
+        - content: "The definition likely hasn't fully replicated or the second server's schema cache is stale; verify the object's replication metadata and let convergence complete before escalating."
+          isCorrect: true
+          explanation: "Correct. Matching objectVersion values don't prove convergence. A written-but-not-yet-cached or not-yet-replicated definition explains error 8418-style mismatches, so verify metadata and allow cache and replication to converge first."
+        - content: "The schema is corrupt on the second domain controller and must be rolled back by restoring that server."
+          isCorrect: false
+          explanation: "Incorrect. Restoring one domain controller isn't a supported schema rollback, and a same-version mismatch usually indicates timing, not corruption."
+        - content: "Delete the new definition and recreate it with a new OID to force replication."
+          isCorrect: false
+          explanation: "Incorrect. Schema objects can't be deleted through normal rollback, and reusing or changing identifiers is unsafe; the correct action is to verify convergence."

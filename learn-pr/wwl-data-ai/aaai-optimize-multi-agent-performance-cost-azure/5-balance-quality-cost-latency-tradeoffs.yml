@@ -2,9 +2,10 @@
 uid: learn.wwl.optimize-multi-agent-performance-cost-azure.balance-quality-cost-latency-tradeoffs
 title: Balance quality, cost, and latency tradeoffs
 metadata:
+  zone_pivot_groups: video-or-text
   title: Balance Quality, Cost, and Latency Tradeoffs
   description: "Balance quality, cost, and latency tradeoffs."
-  ms.date: 06/05/2026
+  ms.date: 8/5/2026
   author: petender
   ms.author: petender
   ms.topic: unit

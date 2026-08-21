@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-decision-making-python.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Check your learning on adding decision-making to Python code."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Which of the following statements correctly checks whether two values are equal in Python?"
+    choices:
+    - content: "x = y"
+      isCorrect: false
+      explanation: "Incorrect. A single = is the assignment operator; it sets a value rather than comparing two values."
+    - content: "x == y"
+      isCorrect: true
+      explanation: "Correct. The == operator compares two values and returns True if they're equal."
+    - content: "x === y"
+      isCorrect: false
+      explanation: "Incorrect. Python doesn't have a === operator. Use == to compare values."
+  - content: "What does the `elif` keyword do?"
+    choices:
+    - content: "Ends an if statement."
+      isCorrect: false
+      explanation: "Incorrect. `elif` adds an extra condition to check, it doesn't end the statement."
+    - content: "Repeats a block of code while a condition is True."
+      isCorrect: false
+      explanation: "Incorrect. That describes a while loop, not `elif`."
+    - content: "Provides an extra condition to check when the previous condition was False."
+      isCorrect: true
+      explanation: "Correct. `elif` lets you chain multiple conditions, evaluated in order after an initial if."
+  - content: "What does the expression `True and False` evaluate to?"
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Incorrect. The and operator only returns True when both sides are True."
+    - content: "False"
+      isCorrect: true
+      explanation: "Correct. `and` requires both operands to be True. Since one is False, the result is False."
+    - content: "None"
+      isCorrect: false
+      explanation: "Incorrect. Python Boolean expressions evaluate to True or False, not None."

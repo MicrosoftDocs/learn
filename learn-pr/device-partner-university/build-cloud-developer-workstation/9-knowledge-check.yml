@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.build-cloud-developer-workstation.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: This content is part of the "Build your first cloud-based developer workstation using Windows 365" module.
+  ms.date: 07/22/2026
+  author: Sheridan-Connor
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "It's your first day on a new development team. You sign in to a Windows 365 Cloud PC created from Image with Developer Configuration (preview). What should you expect to do first?"
+    choices:
+        - content: "Install development tools and configure your environment"
+          isCorrect: false
+          explanation: ""
+        - content: "Select the operating system you want installed"
+          isCorrect: false
+          explanation: ""
+        - content: "Begin development work using preconfigured tools"
+          isCorrect: true
+          explanation: ""
+        - content: "Configure Linux before accessing development tools"
+          isCorrect: false
+          explanation: ""
+  - content: "Which capability helps Windows 365 provide a consistent developer experience across teams?"
+    choices:
+        - content: "Requiring developers to configure their own workstations"
+          isCorrect: false
+          explanation: ""
+        - content: "Standardized images with preinstalled tools and configurations"
+          isCorrect: true
+          explanation: ""
+        - content: "Creating separate images for every individual developer"
+          isCorrect: false
+          explanation: ""
+        - content: "Limiting development to Windows-only workflows"
+          isCorrect: false
+          explanation: ""
+  - content: "A development team needs a Cloud PC environment for machine learning workloads that require extra processing power. According to the module, how can Windows 365 support this need?"
+    choices:
+        - content: "By requiring developers to rebuild their environments for each project"
+          isCorrect: false
+          explanation: ""
+        - content: "By moving development tasks to local devices"
+          isCorrect: false
+          explanation: ""
+        - content: "By increasing setup time to install specialized tools"
+          isCorrect: false
+          explanation: ""
+        - content: "By provisioning environments with configurations suited to demanding workloads"
+          isCorrect: true
+          explanation: ""
+  - content: "How are Cloud PCs typically prepared before a developer's first sign-in?"
+    choices:
+        - content: "Through preconfigured images, automated provisioning, and customization at scale"
+          isCorrect: true
+          explanation: ""
+        - content: "Through manual installation and configuration by each developer"
+          isCorrect: false
+          explanation: ""
+        - content: "Through project-specific customization only after onboarding"
+          isCorrect: false
+          explanation: ""
+        - content: "Through a self-service setup wizard at first sign-in"
+          isCorrect: false
+          explanation: ""
+  - content: "Which result best demonstrates that your Windows 365 Cloud PC is ready to function as your primary development workstation?"
+    choices:
+        - content: "You successfully changed several desktop settings"
+          isCorrect: false
+          explanation: ""
+        - content: "You installed extra development tools manually"
+          isCorrect: false
+          explanation: ""
+        - content: "You can build, run, and test applications with minimal setup delays"
+          isCorrect: true
+          explanation: ""
+        - content: "You created a new Cloud PC image for your project"
+          isCorrect: false
+          explanation: ""

@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-visual-studio-code-python.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Check your learning on setting up a Python development environment with VS Code."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What is the purpose of a virtual environment in Python?"
+    choices:
+    - content: "To convert Python files into executable programs."
+      isCorrect: false
+      explanation: "Incorrect. Virtual environments manage packages, not compilation."
+    - content: "To provide an isolated workspace that keeps a project's packages separate from other projects."
+      isCorrect: true
+      explanation: "Correct. A virtual environment isolates dependencies so that each project can have its own set of packages without conflicts."
+    - content: "To run Python code in the cloud."
+      isCorrect: false
+      explanation: "Incorrect. Virtual environments run locally on your machine."
+  - content: "Which command installs a Python package using pip?"
+    choices:
+    - content: "`pip add <package-name>`"
+      isCorrect: false
+      explanation: "Incorrect. pip doesn't have an 'add' command."
+    - content: "`pip get <package-name>`"
+      isCorrect: false
+      explanation: "Incorrect. pip doesn't have a 'get' command."
+    - content: "`pip install <package-name>`"
+      isCorrect: true
+      explanation: "Correct. `pip install` followed by the package name downloads and installs the package."
+  - content: "How does GitHub Copilot assist you as you write code in VS Code?"
+    choices:
+    - content: "It runs your code and automatically fixes all bugs before you save."
+      isCorrect: false
+      explanation: "Incorrect. Copilot suggests code; it doesn't run or automatically fix your program."
+    - content: "It suggests code completions and edits in real time as you type."
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot provides inline suggestions that you can accept, modify, or ignore."
+    - content: "It rewrites your entire project based on a high-level description."
+      isCorrect: false
+      explanation: "Incorrect. Copilot assists at the line and block level, not by rewriting whole projects."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.organize-data-with-collections-python.store-manage-data-with-lists
+title: Store and manage data with lists
+metadata:
+  title: Store and Manage Data with Lists
+  description: "Learn how to store ordered data using Python lists, and how to add, remove, and update items."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-store-manage-data-with-lists.md)]

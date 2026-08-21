@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Check your learning on Claude models in Microsoft Foundry."
-  ms.date: 05/25/2026
+  ms.date: 08/01/2026
   author: graememalcolm
   ms.author: gmalc
   ms.topic: unit
@@ -25,7 +25,7 @@ quiz:
           explanation: "Correct. Haiku is built for speed and volume, making it ideal for simple tasks like classification, extraction, and routing."
     - content: "When making API calls to Claude on Microsoft Foundry, what does the 'model' parameter specify?"
       choices:
-        - content: "The Claude model name (Opus, Sonnet, or Haiku)"
+        - content: "The Claude model name"
           isCorrect: false
           explanation: "Incorrect. On Foundry, the model parameter specifies your deployment name, not the model ID. The deployment name may or may not match the model name."
         - content: "Your model deployment name in Foundry"

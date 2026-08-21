@@ -4,7 +4,8 @@ Security is one of the biggest concerns for stakeholders at Contoso. There is so
 
 You can learn more by reviewing the following documents.
 
-- [File Integrity Monitoring in Microsoft Defender for Cloud](https://aka.ms/security-center-file-integrity-monitoring?azure-portal=true)
-- [Tutorial: Monitor changes and update a Windows virtual machine in Azure](https://aka.ms/tutorial-config-management?azure-portal=true)
-- [Change Tracking and Inventory overview](https://aka.ms/change-tracking?azure-portal=true)
-- [Enable Update Management from the Azure portal](/azure/automation/update-management/enable-from-portal)
+- [Azure Change Tracking and Inventory overview](/azure/azure-change-tracking-inventory/overview-monitoring-agent)
+- [Change Tracking and Inventory support matrix](/azure/azure-change-tracking-inventory/change-tracking-inventory-support-matrix)
+- [Configure Change Tracking and Inventory data collection rules](/azure/azure-change-tracking-inventory/tutorial-change-workspace-configure-data-collection-rule)
+- [File Integrity Monitoring in Microsoft Defender for Cloud](/azure/defender-for-cloud/file-integrity-monitoring-overview)
+- [Migrate File Integrity Monitoring from MMA or AMA to Defender for Endpoint](/azure/defender-for-cloud/migrate-file-integrity-monitoring)

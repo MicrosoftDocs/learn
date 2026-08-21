@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Default deny host segmentation</title>
+  <desc id="desc">A compromised workstation is blocked from peer movement while an approved management host reaches the endpoint through a narrow allow rule.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2e7d32"/>
+    </marker>
+    <marker id="blocked" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#c62828"/>
+    </marker>
+    <style>
+      .heading { font: 700 28px 'Segoe UI', Arial, sans-serif; fill: #172b4d; }
+      .box { fill: #eef5ff; stroke: #2f5597; stroke-width: 2; rx: 12; }
+      .firewall { fill: #fff3e0; stroke: #ef6c00; stroke-width: 3; rx: 12; }
+      .label { font: 600 20px 'Segoe UI', Arial, sans-serif; fill: #172b4d; text-anchor: middle; }
+      .detail { font: 16px 'Segoe UI', Arial, sans-serif; fill: #334e68; text-anchor: middle; }
+      .allow { stroke: #2e7d32; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+      .deny { stroke: #c62828; stroke-width: 4; stroke-dasharray: 10 7; fill: none; marker-end: url(#blocked); }
+      .allowText { font: 600 17px 'Segoe UI', Arial, sans-serif; fill: #2e7d32; text-anchor: middle; }
+      .denyText { font: 600 17px 'Segoe UI', Arial, sans-serif; fill: #c62828; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect width="1200" height="560" fill="#ffffff"/>
+  <text x="600" y="45" class="heading" text-anchor="middle">Permit controlled administration while blocking peer movement</text>
+
+  <rect class="box" x="55" y="110" width="250" height="120"/>
+  <text class="label" x="180" y="155">1. Compromised endpoint</text>
+  <text class="detail" x="180" y="190">Attempts remote discovery</text>
+
+  <rect class="box" x="55" y="355" width="250" height="120"/>
+  <text class="label" x="180" y="400">2. Management host</text>
+  <text class="detail" x="180" y="435">Uses approved secure flow</text>
+
+  <rect class="firewall" x="500" y="205" width="210" height="150"/>
+  <text class="label" x="605" y="255">3. Host firewall</text>
+  <text class="detail" x="605" y="290">Default inbound block</text>
+  <text class="detail" x="605" y="318">Narrow management allow</text>
+
+  <rect class="box" x="895" y="205" width="250" height="150"/>
+  <text class="label" x="1020" y="255">4. Protected endpoint</text>
+  <text class="detail" x="1020" y="290">Peer traffic rejected</text>
+  <text class="detail" x="1020" y="318">Management retained</text>
+
+  <path class="deny" d="M305 170 H445 V245 H500"/>
+  <path class="allow" d="M305 415 H445 V320 H500"/>
+  <path class="allow" d="M710 320 H895"/>
+  <line x1="785" y1="235" x2="825" y2="275" stroke="#c62828" stroke-width="7"/>
+  <line x1="825" y1="235" x2="785" y2="275" stroke="#c62828" stroke-width="7"/>
+  <text class="denyText" x="395" y="145">Unmatched traffic</text>
+  <text class="allowText" x="395" y="447">Approved source</text>
+  <text class="allowText" x="802" y="346">Authorized flow</text>
+</svg>

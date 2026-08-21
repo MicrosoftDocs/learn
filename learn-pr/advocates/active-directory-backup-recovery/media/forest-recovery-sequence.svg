@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1500" viewBox="0 0 1600 1500" role="img" aria-labelledby="title desc">
+  <title id="title">Windows Server 2025 forest recovery sequence</title>
+  <desc id="desc">Eight clearly ordered rounded boxes form a top-to-bottom forest recovery sequence from containment through controlled reconnection.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#243a5e"/>
+    </marker>
+    <style>
+      .critical-box {
+        fill: #fff4ce;
+        stroke: #8a6d1d;
+        stroke-width: 3;
+      }
+      .process-box {
+        fill: #eef5ff;
+        stroke: #365f91;
+        stroke-width: 3;
+      }
+      .validation-box {
+        fill: #e8f5e9;
+        stroke: #286c2f;
+        stroke-width: 3;
+      }
+      .warning-box {
+        fill: #fde7e9;
+        stroke: #a4262c;
+        stroke-width: 3;
+      }
+      .connector {
+        fill: none;
+        stroke: #243a5e;
+        stroke-width: 3;
+        marker-end: url(#arrow);
+      }
+      .diagram-title {
+        fill: #17253d;
+        font: 700 30px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .box-title {
+        fill: #17253d;
+        font: 700 22px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .box-text {
+        fill: #17253d;
+        font: 17px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .footer-text {
+        fill: #4a5568;
+        font: 16px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- Opaque background -->
+  <rect x="0" y="0" width="1600" height="1500" fill="#ffffff"/>
+
+  <text class="diagram-title" x="800" y="48">Windows Server 2025 forest recovery sequence</text>
+
+  <!-- Step 1 -->
+  <rect class="critical-box" x="250" y="80" width="1100" height="120" rx="20" ry="20"/>
+  <text class="box-title" x="800" y="121">1. Contain the incident</text>
+  <text class="box-text" x="800" y="154">
+    <tspan x="800" dy="0">Isolate writable domain controllers, preserve evidence, and block obsolete systems.</tspan>
+    <tspan x="800" dy="25">Use clean recovery workstations, trusted media, and an isolated recovery network.</tspan>
+  </text>
+
+  <path class="connector" d="M800 200 L800 245"/>
+
+  <!-- Step 2 -->
+  <rect class="process-box" x="250" y="245" width="1100" height="120" rx="20" ry="20"/>
+  <text class="box-title" x="800" y="286">2. Select trusted backups</text>
+  <text class="box-text" x="800" y="319">
+    <tspan x="800" dy="0">Choose one tested writable domain controller backup for every affected domain.</tspan>
+    <tspan x="800" dy="25">Use incident timing, health, compatibility, key, catalog, and restore-test evidence.</tspan>
+  </text>
+
+  <path class="connector" d="M800 365 L800 410"/>
+
+  <!-- Step 3 -->
+  <rect class="critical-box" x="250" y="410" width="1100" height="120" rx="20" ry="20"/>
+  <text class="box-title" x="800" y="451">3. Recover the forest-root domain</text>
+  <text class="box-text" x="800" y="484">
+    <tspan x="800" dy="0">Restore the first writable controller with nonauthoritative directory recovery</tspan>
+    <tspan x="800" dy="25">and authoritative SYSVOL. Recover forest-root DNS and all five operations master roles.</tspan>
+  </text>
+
+  <path class="connector" d="M800 530 L800 575"/>
+
+  <!-- Step 4 -->
+  <rect class="process-box" x="250" y="575" width="1100" height="120" rx="20" ry="20"/>
+  <text class="box-title" x="800" y="616">4. Recover parent domains</text>
+  <text class="box-text" x="800" y="649">
+    <tspan x="800" dy="0">Recover one writable controller per parent domain before dependent child domains.</tspan>
+    <tspan x="800" dy="25">Establish authoritative SYSVOL, domain DNS, trust paths, and the three domain roles.</tspan>
+  </text>
+
+  <path class="connector" d="M800 695 L800 740"/>
+
+  <!-- Step 5 -->
+  <rect class="process-box" x="250" y="740" width="1100" height="120" rx="20" ry="20"/>
+  <text class="box-title" x="800" y="781">5. Recover child domains</text>
+  <text class="box-text" x="800" y="814">
+    <tspan x="800" dy="0">Recover one trusted writable controller in each child domain.</tspan>
+    <tspan x="800" dy="25">Validate parent DNS delegation, transitive trust, global catalog data, and applications.</tspan>
+  </text>
+
+  <path class="connector" d="M800 860 L800 905"/>
+
+  <!-- Step 6 -->
+  <rect class="process-box" x="250" y="905" width="1100" height="120" rx="20" ry="20"/>
+  <text class="box-title" x="800" y="946">6. Complete domain security recovery</text>
+  <text class="box-text" x="800" y="979">
+    <tspan x="800" dy="0">Handle relative identifier pools, controller account passwords, krbtgt resets,</tspan>
+    <tspan x="800" dy="25">trust passwords, managed service accounts, keys, and compromise decisions per domain.</tspan>
+  </text>
+
+  <path class="connector" d="M800 1025 L800 1070"/>
+
+  <!-- Step 7 -->
+  <rect class="process-box" x="250" y="1070" width="1100" height="120" rx="20" ry="20"/>
+  <text class="box-title" x="800" y="1111">7. Redeploy directory capacity</text>
+  <text class="box-text" x="800" y="1144">
+    <tspan x="800" dy="0">Add later controllers through clean promotion, trusted cloning, or approved media.</tspan>
+    <tspan x="800" dy="25">Use nonauthoritative SYSVOL and add global catalog capacity only after dependencies are ready.</tspan>
+  </text>
+
+  <path class="connector" d="M800 1190 L800 1235"/>
+
+  <!-- Step 8 -->
+  <rect class="validation-box" x="250" y="1235" width="1100" height="120" rx="20" ry="20"/>
+  <text class="box-title" x="800" y="1276">8. Validate and reconnect in phases</text>
+  <text class="box-text" x="800" y="1309">
+    <tspan x="800" dy="0">Validate replication, SYSVOL, DNS, time, authentication, trust, security, and applications.</tspan>
+    <tspan x="800" dy="25">Reconnect administration, identity services, workloads, trusts, and clients through approval gates.</tspan>
+  </text>
+
+  <!-- Stop condition -->
+  <rect class="warning-box" x="350" y="1400" width="900" height="75" rx="20" ry="20"/>
+  <text class="box-text" x="800" y="1445">Stop when authority, replication, security, backup, or dependency evidence fails.</text>
+</svg>

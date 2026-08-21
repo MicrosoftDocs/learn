@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-azure-updates.enable-update-management
-title: Enable update management
+title: Prepare machines for Azure Update Manager
 metadata:
-  title: Enable update management
-  description: "Enable update management"
-  ms.date: 09/24/2020
+  title: Prepare Machines for Azure Update Manager
+  description: "Prepare Azure virtual machines and Azure Arc-enabled servers for assessment and patching."
+  ms.date: 08/16/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
-  [!include[](includes/3-enable-update-management.md)]
+  [!include[](includes/3-enable-update-management.md)]

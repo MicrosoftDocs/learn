@@ -2,13 +2,13 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
 
 ## Components of GitHub Actions
 
-You can run a GitHub Actions *workflow* manually, or configure it to be triggered when an event occurs in your repository. For example, a pull request could trigger a workflow that performs a validation check as part of a review process. 
+You can run a GitHub Actions *workflow* manually, or configure it to be triggered when an event occurs in your repository. For example, a pull request could trigger a workflow that performs a validation check as part of a review process.
 
 A workflow contains the following components:
 
-* **Workflows**: Contain one or more jobs that can run in sequential order or in parallel.
-* **Jobs**: Contain one or more steps that either run a script that you define, or run an *action*. Jobs run inside their own virtual machine *runner*, or inside a container.
-* **Steps**: Define the specific tasks to be performed during the workflow execution.
+* **Workflows:** Contain one or more jobs that can run in sequential order or in parallel.
+* **Jobs:** Contain one or more steps that either run a script that you define, or run an *action*. Jobs run inside their own virtual machine *runner*, or inside a container.
+* **Steps:** Define the specific tasks that the workflow performs.
 
 Each step executes a single shell script, or *action* that is a reusable extension that can simplify your workflow.
 
@@ -24,9 +24,9 @@ An event is a specific activity in a repository that triggers a workflow run. Fo
 
 ### Jobs
 
-A job is a set of steps in a workflow that is executed on a runner. Each step is either a shell script that is executed, or an action that is run. Steps are executed in order and are dependent on each other. Since each step is executed on the same runner, you can share data from one step to another. For example, you can have a step that builds your application followed by a step that tests the application that was built.
+A job contains a set of steps that a runner executes. Each step runs either a shell script or an action. The runner executes the steps in order, so later steps can depend on earlier steps. Because each step runs on the same runner, you can share data from one step to another. For example, you can have one step build your application and a later step test that build.
 
-You can configure a job's dependencies with other jobs; by default, jobs have no dependencies and run in parallel with each other. When a job takes a dependency on another job, it waits for the dependent job to complete before it can run. For example, you might have multiple build jobs for different architectures that have no dependencies, and a packaging job that is dependent on those jobs. The build jobs run in parallel, and when they're successfully, the packaging job starts.
+You can configure dependencies between jobs. By default, jobs have no dependencies and run in parallel. A dependent job waits for every required job to complete successfully. For example, you might have multiple build jobs for different architectures and a packaging job that depends on those jobs. The build jobs run in parallel. After they complete successfully, the packaging job starts.
 
 ### Actions
 
@@ -40,4 +40,4 @@ A runner is a server that runs your workflows when they're triggered. Each runne
 
 If you need a different operating system or require a specific hardware configuration, you can [host your own runners](https://docs.github.com/actions/hosting-your-own-runners).
 
-Now that you understand the components of GitHub Actions, lets examine a workflow file.
+Now that you understand the components of GitHub Actions, let's examine a workflow file.

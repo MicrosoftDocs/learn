@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.develop-first-agent.developer-tools
-title: Developer tools and SDKs
+title: Develop an AI agent in Visual Studio Code
 metadata:
-  title: Developer Tools and SDKs
-  description: Consider the tools and SDKs you'll use to develop your AI solution.
+  title: Develop an AI agent in Visual Studio Code
+  description: Learn how to develop an AI agent in Visual Studio Code.
   author: GraemeMalcolm
   ms.author: gmalc
-  ms.date: 4/29/2026
+  ms.date: 7/27/2026
   ms.topic: unit
   zone_pivot_groups: video-or-text
 durationInMinutes: 5

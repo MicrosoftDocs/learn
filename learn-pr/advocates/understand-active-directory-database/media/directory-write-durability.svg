@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Directory write durability and soft recovery</title>
+  <desc id="desc">A directory request is validated by the directory service, applied as an Extensible Storage Engine transaction in memory, written to the transaction log before commit, and later flushed to database pages. The checkpoint tracks the oldest log position required for recovery. After interruption, soft recovery uses the checkpoint and logs to redo committed work and undo incomplete work.</desc>
+  <defs>
+    <marker id="write-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+    <marker id="recovery-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#D83B01"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="650" fill="#FFFFFF"/>
+  <text x="600" y="42" text-anchor="middle" fill="#1A1A1A" font-size="26" font-weight="700">Local commit uses write-ahead logging</text>
+
+  <rect x="35" y="115" width="180" height="108" rx="10" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="125" y="151" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">Directory request</text>
+  <text x="125" y="180" text-anchor="middle" fill="#323130" font-size="15">Object or attribute</text>
+  <text x="125" y="203" text-anchor="middle" fill="#323130" font-size="15">change</text>
+
+  <rect x="275" y="115" width="210" height="108" rx="10" fill="#E1EFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="380" y="151" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">Directory validation</text>
+  <text x="380" y="180" text-anchor="middle" fill="#323130" font-size="15">Security, schema, naming,</text>
+  <text x="380" y="203" text-anchor="middle" fill="#323130" font-size="15">and consistency rules</text>
+
+  <rect x="545" y="115" width="220" height="108" rx="10" fill="#E1EFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="655" y="151" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">Transaction in cache</text>
+  <text x="655" y="180" text-anchor="middle" fill="#323130" font-size="15">Change cached database</text>
+  <text x="655" y="203" text-anchor="middle" fill="#323130" font-size="15">pages and log records</text>
+
+  <rect x="825" y="115" width="220" height="108" rx="10" fill="#E1EFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="935" y="151" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">Durable log and commit</text>
+  <text x="935" y="180" text-anchor="middle" fill="#323130" font-size="15">Required log records reach</text>
+  <text x="935" y="203" text-anchor="middle" fill="#323130" font-size="15">stable storage before success</text>
+
+  <line x1="215" y1="169" x2="265" y2="169" stroke="#0078D4" stroke-width="4" marker-end="url(#write-arrow)"/>
+  <line x1="485" y1="169" x2="535" y2="169" stroke="#0078D4" stroke-width="4" marker-end="url(#write-arrow)"/>
+  <line x1="765" y1="169" x2="815" y2="169" stroke="#0078D4" stroke-width="4" marker-end="url(#write-arrow)"/>
+
+  <rect x="525" y="308" width="260" height="120" rx="10" fill="#F2F8FD" stroke="#0078D4" stroke-width="2"/>
+  <text x="655" y="346" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">Database pages</text>
+  <text x="655" y="376" text-anchor="middle" fill="#323130" font-size="15">Dirty pages flush later</text>
+  <text x="655" y="402" text-anchor="middle" fill="#323130" font-size="15">in an efficient order</text>
+
+  <rect x="845" y="308" width="180" height="120" rx="10" fill="#FFF4CE" stroke="#8A6D1D" stroke-width="2"/>
+  <text x="935" y="346" text-anchor="middle" fill="#5C4B00" font-size="18" font-weight="700">Checkpoint</text>
+  <text x="935" y="376" text-anchor="middle" fill="#323130" font-size="15">Oldest log position</text>
+  <text x="935" y="402" text-anchor="middle" fill="#323130" font-size="15">still needed</text>
+
+  <line x1="655" y1="223" x2="655" y2="298" stroke="#0078D4" stroke-width="4" marker-end="url(#write-arrow)"/>
+  <line x1="935" y1="223" x2="935" y2="298" stroke="#0078D4" stroke-width="4" marker-end="url(#write-arrow)"/>
+  <line x1="785" y1="368" x2="835" y2="368" stroke="#8A6D1D" stroke-width="3" marker-end="url(#write-arrow)"/>
+
+  <rect x="75" y="493" width="1050" height="118" rx="12" fill="#FDE7E1" stroke="#D83B01" stroke-width="2"/>
+  <text x="600" y="527" text-anchor="middle" fill="#A4262C" font-size="20" font-weight="700">Automatic soft recovery after interruption</text>
+  <text x="600" y="558" text-anchor="middle" fill="#323130" font-size="16">Read the checkpoint and required log generations, redo committed operations not present in database pages,</text>
+  <text x="600" y="585" text-anchor="middle" fill="#323130" font-size="16">and undo incomplete transactions. A dirty shutdown alone doesn't prove corruption.</text>
+
+  <path d="M935 428 C935 468, 810 478, 760 492" fill="none" stroke="#D83B01" stroke-width="3" marker-end="url(#recovery-arrow)"/>
+  <path d="M655 428 C655 460, 585 475, 550 492" fill="none" stroke="#D83B01" stroke-width="3" marker-end="url(#recovery-arrow)"/>
+</svg>

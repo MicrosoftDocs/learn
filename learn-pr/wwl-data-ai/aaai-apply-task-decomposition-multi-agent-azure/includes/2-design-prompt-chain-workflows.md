@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5ffb78b3-6415-4b75-b743-3350952da571]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry hosts the language models that power each step in the prompt chains you build in this unit. Microsoft Agent Framework's client library connects your Python application to a model deployed in your Foundry project, giving each chaining step access to LLM reasoning.
 
 ## Understand prompt chaining fundamentals
@@ -173,3 +184,5 @@ Prompt chains structure reasoning within a single agent. Next, you'll see how dy
 - **Context injection** between chain steps must be precise—pass only the specific data points each step needs, not the entire prior output.
 - **Output validation** between steps catches errors early: verify data types, check that required fields are populated, and confirm values fall within expected ranges before proceeding.
 - **Error recovery with caching** prevents expensive chain steps from being repeated on transient failures—cache intermediate results with expiration times.
+
+::: zone-end

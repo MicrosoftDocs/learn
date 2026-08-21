@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.convert-oracle-schema-azure-database-postgresql-ai.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check for the AI-powered Oracle to Azure Database for PostgreSQL schema conversion module."
+  ms.date: 07/17/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 6
+quiz:
+  questions:
+  - content: "Which stage of the Oracle to Azure Database for PostgreSQL schema conversion pipeline uses the Microsoft Foundry language model?"
+    choices:
+    - content: "Source Oracle metadata extraction, where the tool reads schema objects from the Oracle data dictionary."
+      isCorrect: false
+      explanation: "Incorrect. Source metadata extraction reads from Oracle catalog views (such as DBA_TABLES and DBA_PROCEDURES) using a deterministic, rule-based approach — no AI model is involved."
+    - content: "AI-powered transformation, where schema conversion agents translate Oracle DDL into PostgreSQL-compatible DDL."
+      isCorrect: true
+      explanation: "Correct. The AI-powered transformation stage passes batched Oracle DDL to language models hosted in Microsoft Foundry. The models translate Oracle-specific constructs — PL/SQL syntax, data types, built-in functions — into PostgreSQL-compatible equivalents."
+    - content: "Scratch-schema validation, where the tool applies generated DDL to the Azure Database for PostgreSQL flexible server."
+      isCorrect: false
+      explanation: "Incorrect. Scratch-schema validation applies the generated DDL to scratch schemas in Azure Database for PostgreSQL flexible server to verify syntax correctness and dependency order. This stage is deterministic and does not involve the Microsoft Foundry language model."
+  - content: "You're configuring Oracle connectivity for a schema conversion project. The source Oracle environment uses native network encryption: the `sqlnet.ora` file sets `SQLNET.ENCRYPTION_CLIENT` to `REQUIRED`. What does the conversion tool do, and what must you prepare before starting the conversion?"
+    choices:
+    - content: "The tool uses thin client mode because Oracle 12.1 and later are supported, and no extra preparation is needed."
+      isCorrect: false
+      explanation: "Incorrect. Thin client mode is the default and suits most environments, but when `sqlnet.ora` requires native network encryption (SQLNET.ENCRYPTION_CLIENT = REQUIRED), thin mode can't satisfy the requirement. The tool switches to thick client mode automatically."
+    - content: "The tool switches to thick client mode automatically and requires Oracle Instant Client to be installed on the VS Code machine before you start the conversion."
+      isCorrect: true
+      explanation: "Correct. The tool detects the `SQLNET.ENCRYPTION_CLIENT = REQUIRED` setting in `sqlnet.ora` and switches to thick client mode automatically. Thick mode depends on Oracle Instant Client libraries, so Oracle Instant Client must be installed on the machine running VS Code and its directory must be on the system PATH before the conversion starts."
+    - content: "The tool prompts you to select thin or thick mode manually in the Migration Wizard and works with either choice as long as Oracle is reachable."
+      isCorrect: false
+      explanation: "Incorrect. The Migration Wizard doesn't expose a manual connectivity-mode selector. The tool reads your `sqlnet.ora` and `tnsnames.ora` configuration and selects thin or thick mode automatically based on the settings it finds."
+  - content: "After a conversion run, the customer summary report shows a 92% success percentage. Your project sponsor asks whether the converted schema is ready to deploy to production. How should you interpret this number?"
+    choices:
+    - content: "The success percentage reflects how many objects converted automatically without manual intervention. It doesn't indicate production readiness; you resolve review tasks and independently validate the converted objects first."
+      isCorrect: true
+      explanation: "Correct. The success percentage measures automated conversion coverage, not deployment readiness. Resolving review tasks and independently validating the converted objects remain before the schema is production-ready."
+    - content: "A success percentage above 90% means the schema is production-ready and you can deploy it as-is."
+      isCorrect: false
+      explanation: "Incorrect. The success percentage reflects automated conversion coverage, not deployment readiness. Even a high percentage still requires you to resolve review tasks and validate objects before production."
+    - content: "The success percentage is the proportion of objects that passed scratch-schema validation, so only the remaining objects need review."
+      isCorrect: false
+      explanation: "Incorrect. The success percentage measures objects converted without manual intervention, not the scratch-validation pass rate. Converted objects still require independent validation before production, even when they aren't flagged as review tasks."
+  - content: "After running a schema conversion, the Schema Review pane shows five Mandatory tasks, twelve Recommended tasks, and three Optional tasks. You need to deploy the schema to a test environment for functional testing as soon as possible. What is the minimum set of review tasks you must resolve before deployment?"
+    choices:
+    - content: "All twenty tasks, because unresolved review tasks indicate conversion failures and block any deployment."
+      isCorrect: false
+      explanation: "Incorrect. Review tasks are not conversion failures — they are flagged items that require human judgment. Recommended and Optional tasks don't block deployment; they represent items to address before production promotion or at your convenience."
+    - content: "The five Mandatory tasks, because they block deployment until resolved."
+      isCorrect: true
+      explanation: "Correct. Mandatory tasks (High priority) must be resolved before deployment — the converted objects aren't production-ready until you address them. Recommended tasks should be resolved before promoting to production but don't block a test deployment, and Optional tasks can be addressed at your convenience."
+    - content: "Only the Optional tasks, because Mandatory and Recommended tasks are handled automatically by GitHub Copilot agent mode."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot agent mode assists you in resolving tasks, but you must review and accept any proposed fix — it doesn't resolve tasks automatically. Mandatory tasks, not Optional ones, must be resolved before deployment."

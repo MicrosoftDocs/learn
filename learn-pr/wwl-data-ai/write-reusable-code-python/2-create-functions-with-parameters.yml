@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-reusable-code-python.create-functions-with-parameters
+title: Create functions with parameters
+metadata:
+  title: Create Functions with Parameters
+  description: "Learn how to define functions in Python and pass data to them using positional, keyword, and default parameters."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-create-functions-with-parameters.md)]

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b412edf8-e7a6-4cbf-8d4a-ca530b7213c5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Clinical terminology is inconsistent—one clinician writes "MI" while another writes "myocardial infarction," and patients use different terms still. Azure AI Search addresses this with a hybrid search mode that runs BM25 keyword retrieval and vector similarity search together in a single query, then uses Reciprocal Rank Fusion to merge the ranked results into a unified list that handles both exact matches and semantic relationships.
 
 Basic vector search works well for finding semantically similar content, but clinical applications reveal important gaps. When a clinician asks about "atorvastatin 40mg contraindications," pure semantic search might return documents about "cholesterol management" or "cardiovascular medication risks"—conceptually related but not the specific drug requested. When exact terminology matters for patient safety, you need more than semantic similarity.
@@ -105,3 +116,5 @@ Hybrid search gives you a strong candidate list, but the initial ranking is stil
 - **Hybrid search with RRF** runs both keyword and vector queries simultaneously, merging results via Reciprocal Rank Fusion to surface documents that match either exactly or semantically
 - **Weight tuning** per knowledge source optimizes the keyword-to-vector balance—drug formularies favor keyword matching (0.7/0.3) while clinical guidelines favor semantic understanding (0.3/0.7)
 - **Index schema design** requires dual representation—`searchable` text fields for keyword matching plus vector fields for semantic search, with composite field strategies creating separate embeddings per document section
+
+::: zone-end

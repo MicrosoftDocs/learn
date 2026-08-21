@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Independent Group Policy replication paths</title>
+  <desc id="desc">An administrator edit creates a GPC in AD DS on the left and a GPT in SYSVOL on the right. AD DS replication and DFSR replication converge independently between two domain controllers. A client using the second domain controller can observe a version mismatch.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#243A5E"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="600" fill="#FFFFFF"/>
+  <text x="600" y="36" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#172B4D">One GPO, two replication systems</text>
+
+  <rect x="465" y="65" width="270" height="68" rx="8" fill="#FFF4CE" stroke="#C19C00" stroke-width="2"/>
+  <text x="600" y="94" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="19" font-weight="700" fill="#172B4D">GPO edit</text>
+  <text x="600" y="119" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#334E68">Metadata plus policy files change</text>
+
+  <text x="300" y="176" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#172B4D">AD DS replication</text>
+  <text x="900" y="176" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#172B4D">DFSR replication</text>
+
+  <g font-family="Segoe UI, sans-serif" text-anchor="middle">
+    <rect x="45" y="205" width="240" height="105" rx="8" fill="#F3E8FD" stroke="#8764B8" stroke-width="2"/>
+    <text x="165" y="238" font-size="18" font-weight="700" fill="#172B4D">DC01 GPC</text>
+    <text x="165" y="267" font-size="15" fill="#334E68">AD version 18</text>
+    <text x="165" y="290" font-size="15" fill="#334E68">Links, status, permissions</text>
+    <rect x="315" y="205" width="240" height="105" rx="8" fill="#F3E8FD" stroke="#8764B8" stroke-width="2"/>
+    <text x="435" y="238" font-size="18" font-weight="700" fill="#172B4D">DC02 GPC</text>
+    <text x="435" y="267" font-size="15" fill="#334E68">AD version 18</text>
+    <text x="435" y="290" font-size="15" fill="#334E68">Metadata converged</text>
+
+    <rect x="645" y="205" width="240" height="105" rx="8" fill="#FDF3E8" stroke="#D83B01" stroke-width="2"/>
+    <text x="765" y="238" font-size="18" font-weight="700" fill="#172B4D">DC01 GPT</text>
+    <text x="765" y="267" font-size="15" fill="#334E68">SYSVOL version 18</text>
+    <text x="765" y="290" font-size="15" fill="#334E68">Current files</text>
+    <rect x="915" y="205" width="240" height="105" rx="8" fill="#FDE7E9" stroke="#A4262C" stroke-width="3"/>
+    <text x="1035" y="238" font-size="18" font-weight="700" fill="#172B4D">DC02 GPT</text>
+    <text x="1035" y="267" font-size="15" fill="#A4262C">SYSVOL version 17</text>
+    <text x="1035" y="290" font-size="15" fill="#A4262C">Stale files</text>
+  </g>
+
+  <g stroke="#243A5E" stroke-width="3" marker-end="url(#arrow)">
+    <line x1="285" y1="257" x2="310" y2="257"/>
+    <line x1="885" y1="257" x2="910" y2="257"/>
+    <polyline points="555,133 555,145 165,145 165,200" fill="none"/>
+    <polyline points="645,133 645,145 765,145 765,200" fill="none"/>
+  </g>
+
+  <rect x="410" y="390" width="380" height="105" rx="8" fill="#E8F3FC" stroke="#0078D4" stroke-width="2"/>
+  <text x="600" y="423" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="19" font-weight="700" fill="#172B4D">Client uses DC02</text>
+  <text x="600" y="453" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" fill="#334E68">GPC says version 18</text>
+  <text x="600" y="478" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" fill="#A4262C">GPT contains version 17</text>
+  <line x1="435" y1="310" x2="525" y2="385" stroke="#243A5E" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1035" y1="310" x2="675" y2="385" stroke="#A4262C" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+
+  <text x="600" y="560" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="17" font-weight="600" fill="#243A5E">Prove both paths on the server used by the client.</text>
+</svg>

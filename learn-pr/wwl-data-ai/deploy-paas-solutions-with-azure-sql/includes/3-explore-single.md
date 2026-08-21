@@ -129,7 +129,7 @@ az sql db create \
  --name mySampleDatabase \
  --sample-name AdventureWorksLT \
  --edition GeneralPurpose \
- --family Gen4 \
+ --family Gen5 \
  --capacity 1
 
 # Echo random password
@@ -152,7 +152,7 @@ $resourceGroupName = "${projectName}rg"
 New-AzResourceGroup -Name $resourceGroupName -Location $location
 
 New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName `
- -TemplateUri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-sql-logical-server/azuredeploy.json" `
+ -TemplateUri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.sql/sql-logical-server/azuredeploy.json" `
  -administratorLogin $adminUser -administratorLoginPassword $adminPassword
 
 Read-Host -Prompt "Press [ENTER] to continue ..."

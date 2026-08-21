@@ -11,9 +11,9 @@ As part of the initial design, the Contoso IT team asked you, their lead system 
 
 As the lead system engineer, you've been asked to conduct further research into how to consolidate and analyze event log data from Windows Server IaaS VMs. They also want you to configure a task to run in Azure when a specific event is written to an event log on a Windows Server IaaS VM.
 
-This module covers enabling Azure Monitor for VMs, and how to enable Azure Monitor. It will also discuss how to use Azure Monitor to collect data in a hybrid environment, and how to use it to monitor VMs. Finally, you learn how to integrate Azure Monitor with Operations Manager.
+This module covers how to enable Azure Monitor for Azure VMs and hybrid machines by using Azure Monitor Agent and data collection rules. You also learn how Azure Monitor can coexist with System Center Operations Manager during a monitoring modernization project.
 
-By the end of this module, you're able to implement Azure Monitor for IaaS VMs in Azure, implement Azure Monitor in on-premises environments, and use dependency maps.
+By the end of this module, you're able to monitor Azure IaaS VMs and Azure Arc-enabled servers, collect guest operating system data, and plan a transition from Operations Manager to Azure Monitor.
 
 ## Learning objectives
 
@@ -23,7 +23,7 @@ After completing this module, you'll be able to:
 - Monitor an Azure VM with Azure Monitor.
 - Enable Azure Monitor in hybrid scenarios.
 - Collect data from a Windows computer in a hybrid environment.
-- Integrate Azure Monitor with Microsoft Operations Manager.
+- Plan Azure Monitor and Operations Manager coexistence.
 
 ## Prerequisites
 

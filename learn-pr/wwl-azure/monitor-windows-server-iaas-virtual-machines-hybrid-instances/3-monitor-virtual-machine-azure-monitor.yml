@@ -4,9 +4,9 @@ title: Monitor an Azure Virtual Machine with Azure Monitor
 metadata:
   title: Monitor an Azure Virtual Machine with Azure Monitor
   description: "Monitor an Azure Virtual Machine with Azure Monitor"
-  ms.date: 01/01/2025
+  ms.date: 08/16/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
 labModal: false
@@ -16,14 +16,14 @@ content: |
 quiz:
   title: "Quick review"
   questions:
-  - content: "In the video demonstration, at time index 00:42, what's the purpose of the Log Analytics workspace?"
+  - content: "What does a data collection rule define for Azure Monitor Agent?"
     choices:
-    - content: "The Log Analytics workspace stores all the data from monitoring."
+    - content: "The data to collect, how to process it, and where to send it."
       isCorrect: true
-      explanation: "Correct. You can choose an appropriate workspace, or select to create a new one at this point in the process."
-    - content: "The Log Analytics workspace is used to define who has access to the logged data."
+      explanation: "Correct. A data collection rule controls data sources, optional transformations, and destinations."
+    - content: "The user accounts that can sign in to the monitored VM."
       isCorrect: false
-      explanation: "Incorrect. The workspace is used to gather and store data from monitored VMs."
-    - content: "The Log Analytics workspace is used to retrieve monitoring settings for the VM."
+      explanation: "Incorrect. VM access is managed separately from Azure Monitor data collection."
+    - content: "The management packs that Operations Manager installs."
       isCorrect: false
-      explanation: "Incorrect. The workspace is used to gather and store data from monitored VMs."
+      explanation: "Incorrect. Operations Manager uses management packs, while Azure Monitor Agent uses data collection rules."

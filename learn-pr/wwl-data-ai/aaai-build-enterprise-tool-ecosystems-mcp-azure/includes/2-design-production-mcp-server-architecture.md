@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=93f285d7-c30f-454c-8d11-2c9c8c20d5fe]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure provides several hosting options for MCP servers—including Container Apps, App Service, Azure Functions, and AKS—each with different scaling, cost, and authentication characteristics. Selecting the right combination of hosting, authentication, versioning, and observability patterns determines whether your MCP server meets production reliability and compliance requirements.
 
 | Design Decision | Impact | Healthcare Example |
@@ -198,3 +209,5 @@ Now that you understand production MCP server architecture—hosting choices, au
 - **Server-level versioning** (URL-prefix `/v1/`, `/v2/`) is preferred over individual tool versioning—deploy breaking changes as new versions alongside existing ones with deprecation periods
 - **Structured JSON logging** with correlation IDs enables end-to-end distributed tracing from agent decision through MCP server to downstream API calls, supporting both debugging and SLA compliance dashboards
 - **Backward compatibility** is preserved by adding optional parameters rather than changing required ones—new capabilities extend the tool schema without breaking existing agent integrations
+
+::: zone-end

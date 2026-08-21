@@ -1,10 +1,10 @@
-In today's fast-paced tech world, understanding AI is essential for enhancing applications and staying competitive. SQL Database in Fabric is key to this transformation, offering a robust platform for integrating AI. With capabilities like Natural Language to SQL, code completion, quick actions, and intelligent insights, it empowers users to harness AI, and boost application performance. 
+In today's fast-paced tech world, understanding AI is essential for enhancing applications and staying competitive. SQL Database in Fabric is key to this transformation, offering a robust platform for integrating AI. With capabilities like Natural Language to SQL, code completion, quick actions, and document-based Q&A, it empowers users to harness AI, and boost application performance. 
 
 These tools enable the creation of intelligent, responsive, and efficient applications that meet modern user demands.
 
 ## Use Copilot for SQL database in Fabric
 
-[Microsoft Copilot](/azure/azure-sql/copilot/copilot-azure-sql-overview?azure-portal=true) is integrated with SQL database in Fabric, enhancing SQL management and troubleshooting. It boosts productivity by offering natural language to SQL conversion and self-help for users.
+[Microsoft Copilot](/fabric/database/sql/copilot-sql-database?azure-portal=true) is integrated with SQL database in Fabric, enhancing SQL management and troubleshooting. It boosts productivity by offering natural language to SQL conversion and self-help for users.
 
 Copilot can automatically correct T-SQL code errors as they occur. By sharing context with the active query tab, Copilot offers helpful suggestions to fix SQL query errors seamlessly. You can also generate T-SQL queries by asking questions in natural language.
 

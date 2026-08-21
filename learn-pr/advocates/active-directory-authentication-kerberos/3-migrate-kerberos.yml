@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.active-directory-authentication-kerberos-hardening.migrate-kerberos
+title: Plan migration from NTLM to Kerberos
+metadata:
+  title: Plan Migration from NTLM to Kerberos
+  description: Plan a staged migration from NTLM to Kerberos by auditing dependencies and correcting Kerberos prerequisites. Validate service tickets, pilot NTLM restrictions, and manage temporary exceptions.
+  ms.date: 08/10/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/3-migrate-kerberos.md)]

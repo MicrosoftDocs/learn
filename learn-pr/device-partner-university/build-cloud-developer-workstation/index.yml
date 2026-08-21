@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.dpu.build-cloud-developer-workstation
+title: Build your first cloud-based developer workstation using Windows 365
+metadata:
+  title: Build Your First Cloud-Based Developer Workstation Using Windows 365
+  description: 'In this module, you’ll start with a Windows 365 Cloud PC designed for developers. You’ll explore an environment that’s ready to code sooner, begin working with preinstalled tools, and validate that your environment supports real development workflows from the moment you sign in.'
+  ms.date: 07/22/2026
+  author: sheridan-connor
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Learn how to use a Windows 365 Cloud PC as a developer workstation by starting with a preconfigured, cloud-hosted development environment. In this module, you'll explore how developer images and automated provisioning help prepare Cloud PCs, access a Cloud PC, begin development work using available tools and configurations, and validate that the environment supports common development workflows.
+abstract: |
+  By the end of this module, you’ll be able to:
+  - Describe how Windows 365 provides a ready-to-code developer environment using preconfigured images and automated setup
+  - Use a Windows 365 Cloud PC to begin development work quickly after sign-in
+  - Validate that your Cloud PC environment supports common development workflows
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/build-cloud-developer-workstation.svg
+ratingEnabled: false
+levels:
+  - intermediate
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products: 
+  - windows-365
+  - windows-11
+units:
+  - learn.dpu.build-cloud-developer-workstation.introduction
+  - learn.dpu.build-cloud-developer-workstation.onboard
+  - learn.dpu.build-cloud-developer-workstation.windows-365-ready-code
+  - learn.dpu.build-cloud-developer-workstation.consistent-environment
+  - learn.dpu.build-cloud-developer-workstation.access-windows-365-cloud-pc
+  - learn.dpu.build-cloud-developer-workstation.start-developing-faster
+  - learn.dpu.build-cloud-developer-workstation.adapt-environment-workload
+  - learn.dpu.build-cloud-developer-workstation.validate-development-environment
+  - learn.dpu.build-cloud-developer-workstation.knowledge-check
+  - learn.dpu.build-cloud-developer-workstation.summary
+badge:
+  uid: learn.dpu.build-cloud-developer-workstation.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-schema.track-schema-versions
+title: Track schema versions
+metadata:
+  title: Track Schema Versions
+  description: Distinguish operating-system schema versions, product markers, functional levels, and replication convergence.
+  ms.date: 07/30/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-track-schema-versions.md)]

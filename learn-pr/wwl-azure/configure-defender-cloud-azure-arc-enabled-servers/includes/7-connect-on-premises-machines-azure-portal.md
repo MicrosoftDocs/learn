@@ -1,22 +1,16 @@
-To connect your on-premises machines by using the Azure portal, do this procedure.
+Use the Azure portal to generate an onboarding script for one Windows or Linux server. The script downloads and installs the Azure Connected Machine agent, creates the Azure Arc-enabled server resource, and associates the server with that resource.
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/).
-2.  Search for and select **Microsoft Defender for Cloud**.
-3.  On the **Defender for Cloud** menu, select **Getting started**.
-4.  Select the **Get started** tab.
-5.  Find **Add non-Azure servers** and select **Configure**.
-    
-    :::image type="content" source="../media/onboard-get-started-tab-new-fd416374.png" alt-text="Screenshot displays the Defender for Cloud resources for getting started." lightbox="../media/onboard-get-started-tab-new-fd416374.png":::
-    
-    
-    After you connect Defender for Cloud to your Azure subscription, you can start connecting your on-premises machines from the **Getting started** page in Defender for Cloud.
-    
-    A list of your Log Analytics workspaces appears.
-6.  (Optional) If you don't already have a Log Analytics workspace in which to store the data, select **Create new workspace**, and follow the on-screen guidance.
-7.  From the list of workspaces, select **Upgrade for the relevant workspace** to turn on Defender for Cloud paid plans for 30 free days.
-8.  From the list of workspaces, select **Add Servers** for the relevant workspace.
-9.  On the Agents management page, choose one of the following procedures, depending on the type of machines you're onboarding:
-    
-    
-     -  [Onboard your Windows server](/azure/defender-for-cloud/quickstart-onboard-machines?toc=%2Fazure%2Fazure-arc%2Fservers%2Ftoc.json&bc=%2Fazure%2Fazure-arc%2Fservers%2Fbreadcrumb%2Ftoc.json#onboard-your-windows-server)
-     -  [Onboard your Linux server](/azure/defender-for-cloud/quickstart-onboard-machines?toc=%2Fazure%2Fazure-arc%2Fservers%2Ftoc.json&bc=%2Fazure%2Fazure-arc%2Fservers%2Fbreadcrumb%2Ftoc.json#onboard-your-linux-server)
+Before you begin, confirm that the server meets the [Azure Connected Machine agent prerequisites](/azure/azure-arc/servers/prerequisites). Use an account with the **Azure Connected Machine Onboarding** or **Azure Connected Machine Resource Administrator** role. These roles provide the required permissions without the broader access that the **Owner** role grants.
+
+To generate the script:
+
+1. Sign in to the [Azure portal](https://portal.azure.com/), and search for and select **Azure Arc**.
+2. On the Azure Arc menu, expand **Infrastructure**, and then select **Machines**.
+3. Select **Onboard/Create** > **Onboard existing machines**.
+4. On the **Basics** page, select the subscription, resource group, region, operating system, and connectivity method. For **Authentication method**, select **Authenticate machines manually**. Specify a proxy server, private endpoint, or Azure Arc gateway if your environment requires one.
+5. On the **Tags** page, review the suggested physical-location tags and add any custom tags that your organization uses.
+6. On the **Download and run script** page, review the settings, and then select **Download**.
+
+The portal downloads `OnboardingScript.ps1` for Windows or `OnboardingScript.sh` for Linux. Follow the next two units to run the appropriate script on the target server.
+
+Manual authentication is suitable for onboarding one server interactively. For onboarding at scale, generate a script that uses a service principal, assign it the **Azure Connected Machine Onboarding** role, and protect its secret or certificate from command output and logs.

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Firewall profile policy selection</title>
+  <desc id="desc">An ordered flow evaluates domain reachability, private designation, then public policy.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#44546a"/>
+    </marker>
+    <style>
+      .heading { font: 700 28px 'Segoe UI', Arial, sans-serif; fill: #172b4d; }
+      .box { fill: #eef5ff; stroke: #2f5597; stroke-width: 2; rx: 12; }
+      .result { fill: #e8f5e9; stroke: #2e7d32; stroke-width: 2; rx: 12; }
+      .label { font: 600 20px 'Segoe UI', Arial, sans-serif; fill: #172b4d; text-anchor: middle; }
+      .detail { font: 16px 'Segoe UI', Arial, sans-serif; fill: #334e68; text-anchor: middle; }
+      .route { stroke: #44546a; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .branch { font: 600 16px 'Segoe UI', Arial, sans-serif; fill: #44546a; }
+    </style>
+  </defs>
+  <rect width="1200" height="520" fill="#ffffff"/>
+  <text x="600" y="45" class="heading" text-anchor="middle">Evaluate the active network category before applying policy</text>
+
+  <rect class="box" x="60" y="180" width="220" height="120"/>
+  <text class="label" x="170" y="225">1. Evaluate network</text>
+  <text class="detail" x="170" y="258">Start category detection</text>
+
+  <rect class="box" x="365" y="95" width="250" height="120"/>
+  <text class="label" x="490" y="140">2. Domain reachable?</text>
+  <text class="detail" x="490" y="173">Authenticate domain path</text>
+
+  <rect class="box" x="365" y="315" width="250" height="120"/>
+  <text class="label" x="490" y="360">3. Marked private?</text>
+  <text class="detail" x="490" y="393">Use trusted nondomain choice</text>
+
+  <rect class="result" x="760" y="70" width="360" height="100"/>
+  <text class="label" x="940" y="112">Domain profile</text>
+  <text class="detail" x="940" y="143">Apply enterprise rules</text>
+
+  <rect class="result" x="760" y="210" width="360" height="100"/>
+  <text class="label" x="940" y="252">Private profile</text>
+  <text class="detail" x="940" y="283">Apply limited trusted rules</text>
+
+  <rect class="result" x="760" y="350" width="360" height="100"/>
+  <text class="label" x="940" y="392">Public profile</text>
+  <text class="detail" x="940" y="423">Apply most restrictive rules</text>
+
+  <path class="route" d="M280 240 H330 V155 H365"/>
+  <path class="route" d="M615 135 H760"/>
+  <path class="route" d="M490 215 V315"/>
+  <path class="route" d="M615 355 H680 V260 H760"/>
+  <path class="route" d="M615 395 H760"/>
+  <text class="branch" x="670" y="124">Yes</text>
+  <text class="branch" x="505" y="270">No</text>
+  <text class="branch" x="630" y="344">Yes</text>
+  <text class="branch" x="674" y="420">No</text>
+</svg>

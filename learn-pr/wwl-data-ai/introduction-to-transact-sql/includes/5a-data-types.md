@@ -2,212 +2,21 @@ Columns and variables used in Transact-SQL each have a *data type*. The behavior
 
 The following table shows common data types supported in a SQL Server database.
 
-:::row:::
-  :::column:::
-    Exact Numeric
-  :::column-end:::
-  :::column:::
-    Approximate Numeric
-  :::column-end:::
-  :::column:::
-    Character
-  :::column-end:::
-  :::column:::
-    Date/Time
-  :::column-end:::
-  :::column:::
-    Binary
-  :::column-end:::
-  :::column:::
-    Other
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    tinyint
-  :::column-end:::
-  :::column:::
-    float
-  :::column-end:::
-  :::column:::
-    char
-  :::column-end:::
-  :::column:::
-    date
-  :::column-end:::
-  :::column:::
-    binary
-  :::column-end:::
-  :::column:::
-    cursor
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    smallint
-  :::column-end:::
-  :::column:::
-    real
-  :::column-end:::
-  :::column:::
-    varchar
-  :::column-end:::
-  :::column:::
-    time
-  :::column-end:::
-  :::column:::
-    varbinary
-  :::column-end:::
-  :::column:::
-    hierarchyid
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    int
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    text
-  :::column-end:::
-  :::column:::
-    datetime
-  :::column-end:::
-  :::column:::
-    image
-  :::column-end:::
-  :::column:::
-    sql\_variant
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    bigint
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    nchar
-  :::column-end:::
-  :::column:::
-    datetime2
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    table
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    bit
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    nvarchar
-  :::column-end:::
-  :::column:::
-    smalldatetime
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    timestamp
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    decimal/numeric
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    ntext
-  :::column-end:::
-  :::column:::
-    datetimeoffset
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    uniqueidentifier
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    numeric
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    xml
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    money
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    geography
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    smallmoney
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    geometry
-  :::column-end:::
-:::row-end:::
 
+| Exact Numeric   | Approximate Numeric | Character | Date/Time      | Binary    | Other            |
+|-----------------|---------------------|-----------|----------------|-----------|------------------|
+| tinyint         | float               | char      | date           | binary    | cursor           |
+| smallint        | real                | varchar   | time           | varbinary | hierarchyid      |
+| int             |                     |           | datetime       |           | sql_variant      |
+| bigint          |                     | nchar     | datetime2      |           | table            |
+| bit             |                     | nvarchar  | smalldatetime  |           | timestamp        |
+| decimal/numeric |                     |           | datetimeoffset |           | uniqueidentifier |
+| numeric         |                     |           |                |           | xml              |
+| money           |                     |           |                |           | geography        |
+| smallmoney      |                     |           |                |           | geometry         |
 
 > [!NOTE]
 > For more details on the different data types and their attributes, visit the [Transact-SQL reference documentation](/sql/t-sql/data-types/data-types-transact-sql).
-
-
 
 ## Data type conversion
 
@@ -221,7 +30,7 @@ Compatible data type values can be implicitly converted as required. For example
 
 ### CAST and TRY_CAST
 
-The CAST function converts a value to a specified data type if the value is compatible with the target data type. An error will be returned if incompatible. 
+The CAST function converts a value to a specified data type if the value is compatible with the target data type. An error is returned if incompatible. 
 
 For example, the following query uses CAST to convert the *integer* values in the **ProductID** column to *varchar* values (with a maximum of 4 characters) in order to concatenate them with another character-based value:
 
@@ -314,7 +123,7 @@ The results this time look might like this:
   :::column-end:::
 :::row-end:::
 
-The values that can be converted to a numeric data type are returned as *decimal* values, and the incompatible values are returned as *NULL*, which is used to indicate that a value is *unknown*.
+The values that can be converted to the target numeric data type are returned as *integer* values, and the incompatible values are returned as *NULL*, which is used to indicate that a value is *unknown*.
 
 > [!NOTE]
 > We'll explore considerations for handling *NULL* values later in this unit.
@@ -476,7 +285,7 @@ The results of this query look like this:
 Similarly to CAST and CONVERT, PARSE has a TRY_PARSE variant that returns incompatible values as *NULL*.
 
 > [!NOTE]
-> When working with decimal or numeric data types, you may need to round to a whole number or set the decimal point, which can be achieved through precision and scale.  To better understand this concept of precision and scale, see the [Transact-SQL reference documentation](/sql/t-sql/data-types/decimal-and-numeric-transact-sql).
+> When working with decimal or numeric data types, you might need to round to a whole number or set the decimal point, which can be achieved through precision and scale.  To better understand this concept of precision and scale, see the [Transact-SQL reference documentation](/sql/t-sql/data-types/decimal-and-numeric-transact-sql).
 
 ### STR
 

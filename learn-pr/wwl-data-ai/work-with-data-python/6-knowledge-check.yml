@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-with-data-python.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Check your learning on working with data in Python."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What is a variable in Python?"
+    choices:
+    - content: "A fixed value that can't be changed after it's set."
+      isCorrect: false
+      explanation: "Incorrect. Variables can be reassigned to new values at any time."
+    - content: "A named container that stores a value."
+      isCorrect: true
+      explanation: "Correct. A variable is a named reference that points to a stored value."
+    - content: "A function that performs a calculation."
+      isCorrect: false
+      explanation: "Incorrect. Functions perform actions; variables store values."
+  - content: "What is the result of 10 // 3 in Python?"
+    choices:
+    - content: "3.33"
+      isCorrect: false
+      explanation: "Incorrect. That value is the result of 10 / 3. The // operator performs integer (floor) division."
+    - content: "1"
+      isCorrect: false
+      explanation: "Incorrect. That value is the result of 10 % 3, which returns the remainder."
+    - content: "3"
+      isCorrect: true
+      explanation: "Correct. The // operator performs integer division and discards the remainder."
+  - content: "Which function converts a string to an integer in Python?"
+    choices:
+    - content: "str()"
+      isCorrect: false
+      explanation: "Incorrect. str() converts a value to a string."
+    - content: "float()"
+      isCorrect: false
+      explanation: "Incorrect. float() converts a value to a decimal number, not a whole number."
+    - content: "int()"
+      isCorrect: true
+      explanation: "Correct. int() converts a compatible value, such as a string containing a whole number, to an integer."

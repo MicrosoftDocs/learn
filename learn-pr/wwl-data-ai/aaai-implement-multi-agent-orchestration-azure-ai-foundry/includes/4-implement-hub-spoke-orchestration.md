@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=65951335-99bd-4b4c-a22b-ac10b6721715]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 ## Hub-and-spoke anatomy
 
 Hub-and-spoke orchestration treats spoke agents as executable tools on the hub agent. When you create the hub agent in Foundry Agent Service, you define function tool schemas that correspond to invoking each spoke agent. The hub's language model decides which spokes to invoke based on the user request, generates function calls, and your orchestration code executes those calls by running the spoke agents. The hub receives tool results, reasons about them, and decides whether to invoke additional spokes or synthesize a final response.
@@ -257,3 +268,5 @@ Hub-and-spoke coordinates spokes sequentially, which works well when spoke outpu
 - **Partial failure recovery** uses three strategies—fallback responses (cached or substitute data), circuit breakers (stop invoking broken spokes after consecutive failures), and graceful degradation (partial results with completeness indicators)
 - **Concurrent spoke invocation** cuts latency by running independent spokes in parallel via `asyncio.gather`, but requires prompt engineering to prevent the hub from requesting dependent spokes in the same round
 - **Failure handling belongs in the orchestration layer**—individual spokes simply report success or failure, while the orchestrator implements retry logic, fallback selection, and partial result synthesis
+
+::: zone-end

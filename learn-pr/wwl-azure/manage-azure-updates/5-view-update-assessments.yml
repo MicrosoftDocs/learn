@@ -1,28 +1,39 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-azure-updates.view-update-assessments
-title: View update assessments
+title: Assess updates
 metadata:
-  title: View update assessments
-  description: "View update assessments"
-  ms.date: 09/24/2020
+  title: Assess Updates
+  description: "Configure periodic assessment, run on-demand assessments, and review update results."
+  ms.date: 08/16/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/5-view-update-assessments.md)]
 quiz:
   title: "Quick quiz"
   questions:
-  - content: "When planning to configure Update Management in Azure, what's the first task an administrator should do?"
+  - content: "Which assessment option checks a machine for available updates every 24 hours?"
     choices:
-    - content: "Onboard the VMs."
+    - content: "A one-time update deployment."
       isCorrect: false
-      explanation: "That's incorrect. Before you can onboard the VMs, you must configure the Update Management service."
-    - content: "Create a Log Analytics workspace."
-      isCorrect: false
-      explanation: "That's incorrect. You will need a Log Analytics workspace, but this is not the first step."
-    - content: "Create an Automation Account."
+      explanation: "That's incorrect. A one-time update deployment installs selected updates."
+    - content: "A periodic assessment."
       isCorrect: true
-      explanation: "That's correct. This is the first step. You can configure everything else within the context of this account."
+      explanation: "That's correct. Periodic assessment checks for available updates every 24 hours."
+    - content: "A maintenance configuration."
+      isCorrect: false
+      explanation: "That's incorrect. A maintenance configuration defines a recurring update schedule."
+  - content: "An administrator needs current update information for a running Azure VM before an emergency maintenance event. Which action should the administrator take?"
+    choices:
+    - content: "Run an on-demand assessment by selecting **Check for updates**."
+      isCorrect: true
+      explanation: "That's correct. An on-demand assessment retrieves current update information without waiting for periodic assessment."
+    - content: "Create a recurring maintenance configuration for the VM."
+      isCorrect: false
+      explanation: "That's incorrect. A maintenance configuration schedules installation and doesn't provide an immediate assessment."
+    - content: "Review the previous deployment on the **History** page."
+      isCorrect: false
+      explanation: "That's incorrect. Deployment history shows earlier operations rather than the updates currently available."

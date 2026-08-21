@@ -1,4 +1,4 @@
-Log Replay Service (LRS) is a tool that enables custom migrations of databases from on-premises SQL Servers to SQL Managed Instance in the cloud. It uses log shipping technology and is useful in cases where more control is needed, when there's little tolerance for downtime, or when Azure Data Migration Service can't be used. 
+Log Replay Service (LRS) is a tool that enables custom migrations of databases from on-premises SQL Servers to SQL Managed Instance in the cloud. It uses log shipping technology and is useful in cases where more control is needed, when there's little tolerance for downtime, or when Azure Database Migration Service can't be used. 
 
 :::image type="content" source="../media/3-log-replay-service.png" alt-text="Diagram showing how Log Replay Service (LRS) works.":::
 

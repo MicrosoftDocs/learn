@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Schema replication troubleshooting flow</title>
+  <desc id="desc">A schema-related failure is investigated by identifying the server and operation in scope, confirming schema-master targeting and permission, verifying the schema object, separating cache state from replication state, checking replication metadata and Directory Service events including error 8418, then stopping and escalating before unsupported rollback.</desc>
+  <defs>
+    <marker id="flow-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+    <marker id="stop-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#D83B01"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="820" fill="#FFFFFF"/>
+  <text x="600" y="42" text-anchor="middle" fill="#1A1A1A" font-size="27" font-weight="700">Separate target, cache, replication, and definition failures</text>
+
+  <rect x="410" y="80" width="380" height="82" rx="12" fill="#FFF4CE" stroke="#8A6D1D" stroke-width="2"/>
+  <text x="600" y="114" text-anchor="middle" fill="#5C4B00" font-size="19" font-weight="700">Schema-related operation fails</text>
+  <text x="600" y="141" text-anchor="middle" fill="#323130" font-size="15">Record server, object, attribute, command, error</text>
+
+  <rect x="410" y="205" width="380" height="92" rx="12" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="600" y="239" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">Confirm target plus permission</text>
+  <text x="600" y="267" text-anchor="middle" fill="#323130" font-size="15">Schema master for writes, intended server for reads</text>
+
+  <rect x="410" y="340" width="380" height="92" rx="12" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="600" y="374" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">Verify the definition</text>
+  <text x="600" y="402" text-anchor="middle" fill="#323130" font-size="15">RootDSE, objectVersion, object properties, identifiers</text>
+
+  <rect x="80" y="485" width="315" height="108" rx="12" fill="#F2F8FD" stroke="#0078D4" stroke-width="2"/>
+  <text x="237" y="521" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">Cache state</text>
+  <text x="237" y="550" text-anchor="middle" fill="#323130" font-size="15">Change exists on disk</text>
+  <text x="237" y="575" text-anchor="middle" fill="#323130" font-size="15">but isn't usable yet</text>
+
+  <rect x="443" y="485" width="315" height="108" rx="12" fill="#F2F8FD" stroke="#0078D4" stroke-width="2"/>
+  <text x="600" y="521" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">Replication state</text>
+  <text x="600" y="550" text-anchor="middle" fill="#323130" font-size="15">Partner lacks the object</text>
+  <text x="600" y="575" text-anchor="middle" fill="#323130" font-size="15">or has older metadata</text>
+
+  <rect x="805" y="485" width="315" height="108" rx="12" fill="#F2F8FD" stroke="#0078D4" stroke-width="2"/>
+  <text x="962" y="521" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">Definition state</text>
+  <text x="962" y="550" text-anchor="middle" fill="#323130" font-size="15">Collision, invalid syntax,</text>
+  <text x="962" y="575" text-anchor="middle" fill="#323130" font-size="15">missing dependency, blocked change</text>
+
+  <line x1="600" y1="162" x2="600" y2="195" stroke="#0078D4" stroke-width="4" marker-end="url(#flow-arrow)"/>
+  <line x1="600" y1="297" x2="600" y2="330" stroke="#0078D4" stroke-width="4" marker-end="url(#flow-arrow)"/>
+  <line x1="600" y1="432" x2="600" y2="462" stroke="#0078D4" stroke-width="4"/>
+  <line x1="237" y1="462" x2="962" y2="462" stroke="#0078D4" stroke-width="4"/>
+  <line x1="237" y1="462" x2="237" y2="475" stroke="#0078D4" stroke-width="4" marker-end="url(#flow-arrow)"/>
+  <line x1="600" y1="462" x2="600" y2="475" stroke="#0078D4" stroke-width="4" marker-end="url(#flow-arrow)"/>
+  <line x1="962" y1="462" x2="962" y2="475" stroke="#0078D4" stroke-width="4" marker-end="url(#flow-arrow)"/>
+
+  <rect x="245" y="650" width="710" height="92" rx="12" fill="#FFF4CE" stroke="#8A6D1D" stroke-width="2"/>
+  <text x="600" y="684" text-anchor="middle" fill="#5C4B00" font-size="19" font-weight="700">Correlate evidence</text>
+  <text x="600" y="713" text-anchor="middle" fill="#323130" font-size="15">Replication summary, showrepl, object metadata, Directory Service events, error 8418</text>
+
+  <line x1="237" y1="593" x2="440" y2="640" stroke="#0078D4" stroke-width="3" marker-end="url(#flow-arrow)"/>
+  <line x1="600" y1="593" x2="600" y2="640" stroke="#0078D4" stroke-width="3" marker-end="url(#flow-arrow)"/>
+  <line x1="962" y1="593" x2="760" y2="640" stroke="#0078D4" stroke-width="3" marker-end="url(#flow-arrow)"/>
+
+  <rect x="245" y="770" width="710" height="40" rx="8" fill="#FDE7E1" stroke="#D83B01" stroke-width="2"/>
+  <text x="600" y="796" text-anchor="middle" fill="#A4262C" font-size="16" font-weight="700">Stop before deletion, identifier reuse, forced repair, or unsupported rollback.</text>
+
+  <line x1="600" y1="742" x2="600" y2="760" stroke="#D83B01" stroke-width="4" marker-end="url(#stop-arrow)"/>
+</svg>

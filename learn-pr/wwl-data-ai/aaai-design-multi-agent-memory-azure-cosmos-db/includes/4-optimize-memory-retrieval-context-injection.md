@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=cc9822c1-afe2-4a80-a9c6-63863ce71a4f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB stores an importance score alongside each memory embedding, giving your retrieval layer the signal it needs to decay outdated records, boost frequently accessed ones, and inject only the most relevant context into the agent. Managing importance dynamically keeps the context window focused on what matters most for each clinical interaction.
 
 ## Update memory importance with relevance decay
@@ -136,3 +147,5 @@ Now that you've implemented memory importance management and context injection, 
 - **Contradiction detection** uses semantic similarity between memories plus temporal ordering to identify when newer memories supersede older ones, automatically reducing the contradicted memory's importance.
 - **Context injection** formats memories as a distinct "Patient Context from Previous Interactions" section in the agent's system prompt, ordered by combined similarity and importance scores.
 - **Concise formatting** conserves context window space—inject content statements and importance indicators only, not full memory documents with metadata.
+
+::: zone-end

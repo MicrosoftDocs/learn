@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-visual-studio-code-python.write-code-with-github-copilot
+title: Write code with GitHub Copilot
+metadata:
+  title: Write code with GitHub Copilot
+  description: "Learn how to use GitHub Copilot to generate code and accelerate your development."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-write-code-with-github-copilot.md)]

@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-copilot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding of what Azure Copilot is, how it works, and when to use it.
+  ms.date: 06/23/2026
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "A cloud administrator wants to make sure Azure Copilot can never change resources they don't already have access to. What should you tell them about how Azure Copilot handles permissions?"
+      choices:
+        - content: "Azure Copilot runs with elevated privileges so it can manage any resource in the tenant."
+          isCorrect: false
+          explanation: "Azure Copilot doesn't elevate privileges. It can only access resources you have permission to access and perform actions you're permitted to perform."
+        - content: "Azure Copilot can access only the resources you have permission to access and asks for confirmation before taking actions."
+          isCorrect: true
+          explanation: "Azure Copilot respects your existing permissions and your organization's policies, and it requires your confirmation before taking any action on your behalf."
+        - content: "Azure Copilot grants the administrator access to any resource they ask about, regardless of role assignments."
+          isCorrect: false
+          explanation: "Azure Copilot never grants new access. It works within the permissions you already have through Azure role-based access control."
+    - content: "Your team needs help estimating costs, generating an Azure CLI script, and summarizing a service health event—all from within the Azure portal. Which statement best describes how Azure Copilot supports this?"
+      choices:
+        - content: "Azure Copilot only answers general Azure documentation questions and can't act on your environment."
+          isCorrect: false
+          explanation: "Azure Copilot does more than answer documentation questions. It can also perform tasks, generate scripts, and provide insights tailored to your environment."
+        - content: "Azure Copilot can perform tasks, write and optimize code, and provide insights about your own Azure resources across many services."
+          isCorrect: true
+          explanation: "Azure Copilot unifies knowledge and data across Azure services so you can perform tasks, generate scripts like CLI or PowerShell, and get insights grounded in your environment."
+        - content: "Each of those tasks requires a separate, standalone tool that Azure Copilot can't help with."
+          isCorrect: false
+          explanation: "A key value of Azure Copilot is unifying these capabilities in one natural-language experience instead of requiring separate tools."
+    - content: "A developer asks Azure Copilot a conceptual question about which service to use for distributed caching. Where do Azure Copilot's answers to questions like this come from?"
+      choices:
+        - content: "They're grounded in the latest Azure documentation, so guidance stays up to date."
+          isCorrect: true
+          explanation: "Azure Copilot grounds its answers in the latest Azure documentation, so you get current guidance just by asking."
+        - content: "They come only from the developer's own past conversations."
+          isCorrect: false
+          explanation: "While Azure Copilot can use context you provide, its informational answers are grounded in up-to-date Azure documentation, not just prior conversations."
+        - content: "They're generated without any reference to Azure documentation."
+          isCorrect: false
+          explanation: "Azure Copilot's answers are grounded in the latest Azure documentation to provide trustworthy, current guidance."
+    - content: "You need to apply the same change to 25 resources at once. How should you plan to use Azure Copilot for this task?"
+      choices:
+        - content: "Azure Copilot can apply the change to all 25 resources in a single action with no limits."
+          isCorrect: false
+          explanation: "Actions taken on more than 10 resources must be performed outside of Azure Copilot, so it can't apply this change to all 25 at once."
+        - content: "Use Azure Copilot to learn how and generate the right commands, but perform the bulk change outside of Azure Copilot because of its resource limit."
+          isCorrect: true
+          explanation: "Azure Copilot limits actions to 10 resources at a time, so for larger bulk operations you should use it to plan and generate commands, then run them outside of Azure Copilot."
+        - content: "Azure Copilot can't help with this task in any way."
+          isCorrect: false
+          explanation: "Azure Copilot can still help you understand the task and generate scripts; only the bulk action on more than 10 resources must happen elsewhere."

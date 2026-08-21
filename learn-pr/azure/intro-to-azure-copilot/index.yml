@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-copilot
+metadata:
+  moduleType: introduction
+  title: Introduction to Azure Copilot
+  description: Learn what Azure Copilot is, how it works, and how to decide whether this AI-powered tool is right for managing your Azure apps and infrastructure.
+  ms.date: 06/23/2026
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: module
+  ms.custom: team=cloud_advocates
+  ms.service: azure-copilot
+title: Introduction to Azure Copilot
+summary: Azure Copilot is an AI-powered tool that helps you design, operate, optimize, and troubleshoot your Azure apps and infrastructure by using natural language. Learn how it works and decide whether it fits your needs.
+abstract: |
+  By the end of this module, you're able to:
+  - Describe what Azure Copilot is and the problems it helps you solve.
+  - Explain how Azure Copilot works within the Azure portal and respects your permissions.
+  - Identify the capabilities of Azure Copilot and the scenarios they support.
+  - Evaluate when to use Azure Copilot and recognize its current limitations.
+prerequisites: |
+  - Familiarity with the Azure portal.
+  - A basic understanding of common Azure services and resources.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+subjects:
+- cloud-computing
+- artificial-intelligence
+units:
+- learn.intro-to-azure-copilot.introduction
+- learn.intro-to-azure-copilot.what-is-azure-copilot
+- learn.intro-to-azure-copilot.how-azure-copilot-works
+- learn.intro-to-azure-copilot.explore-capabilities
+- learn.intro-to-azure-copilot.when-to-use-azure-copilot
+- learn.intro-to-azure-copilot.knowledge-check
+- learn.intro-to-azure-copilot.summary
+badge:
+  uid: learn.intro-to-azure-copilot.badge

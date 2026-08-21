@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.work-smarter-copilot-hr.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Work smarter with Copilot prompts for human resources [DA1.1][GU1.2]professionals" module.
+  ms.date: 07/27/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which Microsoft 365 Copilot prompt would best help an HR professional prepare for an upcoming employee meeting?"
+    choices:
+        - content: "Rewrite this policy to sound more formal."
+          isCorrect: false
+          explanation: "Incorrect. This prompt focuses on editing written content rather than preparing for an employee meeting."
+        - content: "Summarize recent discussions and key topics for my upcoming meeting, including open action items and suggested talking points."
+          isCorrect: true
+          explanation: "Correct. This prompt helps prepare for employee conversations by summarizing discussions, identifying action items, and suggesting talking points."
+        - content: "Turn off Focus mode."
+          isCorrect: false
+          explanation: "Incorrect. This relates to device settings and doesn't help prepare for a meeting."
+        - content: "Generate an image for an employee newsletter."
+          isCorrect: false
+          explanation: "Incorrect. This prompt focuses on creating visual content rather than meeting preparation."
+  - content: "An HR professional needs to create onboarding materials for several new employees. Which Copilot capability would best support this task?"
+    choices:
+        - content: "Live Captions"
+          isCorrect: false
+          explanation: "Incorrect. Live Captions display spoken content in real time during conversations."
+        - content: "Windows Studio Effects"
+          isCorrect: false
+          explanation: "Incorrect. Windows Studio Effects enhance video and audio during meetings."
+        - content: "Copilot in PowerPoint"
+          isCorrect: true
+          explanation: "Correct. Copilot in PowerPoint can help create onboarding presentations, welcome materials, and training content that can be reviewed and customized."
+        - content: "Agent in Settings"
+          isCorrect: false
+          explanation: "Incorrect. Agent in Settings helps locate and adjust device settings using natural language."
+  - content: "During a virtual performance review, which Copilot+ PC experience can help participants follow the conversation more easily by displaying spoken content in real time?"
+    choices:
+        - content: "Click to Do"
+          isCorrect: false
+          explanation: "Incorrect. Click to Do helps refine or rewrite selected content."
+        - content: "Live Captions"
+          isCorrect: true
+          explanation: "Correct. Live Captions display spoken content in real time, making it easier to follow conversations during meetings."
+        - content: "Windows Search"
+          isCorrect: false
+          explanation: "Incorrect. Windows Search helps locate files, apps, and information on a device."
+        - content: "Agent in Settings"
+          isCorrect: false
+          explanation: "Incorrect. Agent in Settings helps users find and adjust device settings."
+  - content: "After drafting an employee announcement, an HR professional wants to simplify the language without leaving the current document. Which Copilot+ PC experience should they use?"
+    choices:
+        - content: "Windows Studio Effects"
+          isCorrect: false
+          explanation: "Incorrect. Windows Studio Effects enhance audio and video during meetings."
+        - content: "Live Captions"
+          isCorrect: false
+          explanation: "Incorrect. Live Captions display spoken content during conversations."
+        - content: "Click to Do"
+          isCorrect: true
+          explanation: "Correct. Click to Do lets users quickly rewrite selected text and refine content without leaving their workflow."
+        - content: "Agent in Settings"
+          isCorrect: false
+          explanation: "Incorrect. Agent in Settings helps users locate and adjust device settings."
+  - content: "At the end of the workday, an HR professional wants to review completed work, identify outstanding employee requests, and organize priorities for tomorrow. Which Copilot prompt would best help accomplish this?"
+    choices:
+        - content: "Draft my end-of-day HR recap, including completed employee requests, outstanding actions, and my top three priorities for tomorrow."
+          isCorrect: true
+          explanation: "Correct. An end-of-day recap helps summarize completed work, identify follow-up activities, and prepare priorities for the next day."
+        - content: "Rewrite this onboarding guide to be more concise."
+          isCorrect: false
+          explanation: "Incorrect. This prompt focuses on editing content rather than reviewing and organizing daily work."
+        - content: "Generate an employee satisfaction survey."
+          isCorrect: false
+          explanation: "Incorrect. This prompt creates a survey and doesn't help summarize the workday."
+        - content: "Turn off Focus mode and restore notifications."
+          isCorrect: false
+          explanation: "Incorrect. This action adjusts device settings rather than reviewing employee requests and priorities."

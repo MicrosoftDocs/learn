@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1e6ac1e8-9d93-423b-ba6d-60439f7d51ff]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Container Apps and GitHub Actions work together to implement progressive deployment strategies for agent systems. Because agent behavior changes are invisible to traditional infrastructure monitoring—a new system prompt or model version can produce fundamentally different outputs while latency and error rates stay unchanged—you can't rely on health checks alone to validate a deployment. Quality-gated rollout strategies built on Azure AI Evaluation SDK metrics give you the behavioral signal you need at each stage of the rollout.
 
 | Strategy | Traffic Pattern | Rollback Speed | Best For |
@@ -206,3 +217,5 @@ Use multiple progressive deployment strategies together. Deploy the new agent ve
 - **Blue-green deployment** maintains two complete environments for instant traffic switching and immediate rollback capability.
 - **Feature flags** decouple deployment from activation, enabling per-tenant feature rollout without redeployment.
 - **Layered strategies** combine canary, blue-green, and feature flags for defense-in-depth risk management.
+
+::: zone-end

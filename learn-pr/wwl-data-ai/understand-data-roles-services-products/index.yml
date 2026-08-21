@@ -10,7 +10,7 @@ metadata:
   ms.collection: N/A
   ms.custom:
   - N/A
-  ms.service: azure-education
+  ms.service: azure-education-hub
   ai-usage: human-only
 title: Understand data roles, services, and products
 summary: Data is so widespread that many services and roles are needed to manage the data of an organization. This module covers types of data products, Azure data services, and the roles of data professionals.

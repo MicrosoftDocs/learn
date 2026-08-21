@@ -54,7 +54,7 @@ To run this exercise, make sure you meet these requirements before you start:
 > [!NOTE]
 > SQL Server 2025 requires Azure Arc connectivity to enable managed identity support and security features like backup to URL with managed identity and Extensible Key Management with Azure Key Vault.
 
-<a name='configure-azure-ad-admin-for-sql-server-using-the-azure-portal'></a>
+<a name='configure-microsoft-entra-admin-for-sql-server-using-the-azure-portal'></a>
 
 ### Configure Microsoft Entra admin for SQL Server using the Azure portal
 
@@ -69,7 +69,7 @@ To run this exercise, make sure you meet these requirements before you start:
    > [!NOTE]
    > Wait until the process completes before proceeding to the next step.
 
-<a name='grant-permission-to-the-azure-ad-application'></a>
+<a name='grant-permission-to-the-microsoft-entra-application'></a>
 
 ### Grant permission to the Microsoft Entra application
 
@@ -83,7 +83,7 @@ To run this exercise, make sure you meet these requirements before you start:
 
 1. Select the **API permissions** menu, then select **Grant admin consent**.
 
-<a name='connect-to-sql-server-using-azure-ad-authentication'></a>
+<a name='connect-to-sql-server-using-microsoft-entra-authentication'></a>
 
 ### Connect to SQL Server using Microsoft Entra authentication
 

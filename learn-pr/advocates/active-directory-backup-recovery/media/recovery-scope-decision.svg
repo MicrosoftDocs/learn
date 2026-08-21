@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050" role="img" aria-labelledby="title desc">
+  <title id="title">Recovery scope decision</title>
+  <desc id="desc">A clearly ordered decision flow uses rounded text boxes to select forest, domain, object, or domain controller recovery.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#243a5e"/>
+    </marker>
+    <style>
+      .start-box {
+        fill: #eef5ff;
+        stroke: #365f91;
+        stroke-width: 3;
+      }
+      .decision-box {
+        fill: #fff4ce;
+        stroke: #8a6d1d;
+        stroke-width: 3;
+      }
+      .result-box {
+        fill: #e8f5e9;
+        stroke: #286c2f;
+        stroke-width: 3;
+      }
+      .connector {
+        fill: none;
+        stroke: #243a5e;
+        stroke-width: 3;
+        marker-end: url(#arrow);
+      }
+      .diagram-title {
+        fill: #17253d;
+        font: 700 30px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .box-title {
+        fill: #17253d;
+        font: 700 22px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .box-text {
+        fill: #17253d;
+        font: 17px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .branch-text {
+        fill: #17253d;
+        font: 700 17px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .footer-text {
+        fill: #4a5568;
+        font: 16px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- Opaque background -->
+  <rect x="0" y="0" width="1600" height="1050" fill="#ffffff"/>
+
+  <text class="diagram-title" x="800" y="48">Select the smallest supported recovery scope</text>
+
+  <!-- Step 1 -->
+  <rect class="start-box" x="80" y="85" width="760" height="110" rx="18" ry="18"/>
+  <text class="box-title" x="460" y="125">1. Confirm the incident scope</text>
+  <text class="box-text" x="460" y="157">
+    <tspan x="460" dy="0">Identify availability loss, corruption, deletion, compromise,</tspan>
+    <tspan x="460" dy="24">and the affected directory partitions.</tspan>
+  </text>
+
+  <!-- Step 1 to Step 2 -->
+  <path class="connector" d="M460 195 L460 245"/>
+
+  <!-- Step 2 -->
+  <rect class="decision-box" x="80" y="245" width="760" height="120" rx="18" ry="18"/>
+  <text class="box-title" x="460" y="287">2. Is shared forest state trustworthy?</text>
+  <text class="box-text" x="460" y="319">
+    <tspan x="460" dy="0">Assess schema, configuration, forest DNS, privileged control,</tspan>
+    <tspan x="460" dy="24">trust relationships, and every writable domain controller.</tspan>
+  </text>
+
+  <!-- Step 2 No branch -->
+  <path class="connector" d="M840 305 L1010 305"/>
+  <text class="branch-text" x="925" y="286">No</text>
+
+  <rect class="result-box" x="1010" y="245" width="510" height="120" rx="18" ry="18"/>
+  <text class="box-title" x="1265" y="287">Forest recovery</text>
+  <text class="box-text" x="1265" y="319">
+    <tspan x="1265" dy="0">Recover one trusted writable controller</tspan>
+    <tspan x="1265" dy="24">in every affected domain.</tspan>
+  </text>
+
+  <!-- Step 2 Yes branch -->
+  <path class="connector" d="M460 365 L460 425"/>
+  <text class="branch-text" x="500" y="399">Yes</text>
+
+  <!-- Step 3 -->
+  <rect class="decision-box" x="80" y="425" width="760" height="120" rx="18" ry="18"/>
+  <text class="box-title" x="460" y="467">3. Is one domain naming context broadly damaged?</text>
+  <text class="box-text" x="460" y="499">
+    <tspan x="460" dy="0">Confirm that shared partitions remain trustworthy and that</tspan>
+    <tspan x="460" dy="24">replication, DNS, and trust dependencies can be controlled.</tspan>
+  </text>
+
+  <!-- Step 3 Yes branch -->
+  <path class="connector" d="M840 485 L1010 485"/>
+  <text class="branch-text" x="925" y="466">Yes</text>
+
+  <rect class="result-box" x="1010" y="425" width="510" height="120" rx="18" ry="18"/>
+  <text class="box-title" x="1265" y="467">Domain recovery</text>
+  <text class="box-text" x="1265" y="499">
+    <tspan x="1265" dy="0">Control domain authority, DNS, trust,</tspan>
+    <tspan x="1265" dy="24">global catalog data, and reconnection.</tspan>
+  </text>
+
+  <!-- Step 3 No branch -->
+  <path class="connector" d="M460 545 L460 605"/>
+  <text class="branch-text" x="500" y="579">No</text>
+
+  <!-- Step 4 -->
+  <rect class="decision-box" x="80" y="605" width="760" height="120" rx="18" ry="18"/>
+  <text class="box-title" x="460" y="647">4. Is the incident limited to selected objects or attributes?</text>
+  <text class="box-text" x="460" y="679">
+    <tspan x="460" dy="0">Confirm that replication and the remaining domain state</tspan>
+    <tspan x="460" dy="24">are healthy and trustworthy.</tspan>
+  </text>
+
+  <!-- Step 4 Yes branch -->
+  <path class="connector" d="M840 665 L1010 665"/>
+  <text class="branch-text" x="925" y="646">Yes</text>
+
+  <rect class="result-box" x="1010" y="605" width="510" height="120" rx="18" ry="18"/>
+  <text class="box-title" x="1265" y="647">Object recovery</text>
+  <text class="box-text" x="1265" y="679">
+    <tspan x="1265" dy="0">Use Recycle Bin, attribute correction,</tspan>
+    <tspan x="1265" dy="24">or authoritative object restore.</tspan>
+  </text>
+
+  <!-- Step 4 No branch -->
+  <path class="connector" d="M460 725 L460 805"/>
+  <text class="branch-text" x="500" y="769">No</text>
+
+  <!-- Final result -->
+  <rect class="result-box" x="80" y="805" width="760" height="120" rx="18" ry="18"/>
+  <text class="box-title" x="460" y="847">Domain controller recovery</text>
+  <text class="box-text" x="460" y="879">
+    <tspan x="460" dy="0">Prefer rebuild and clean promotion when healthy writable</tspan>
+    <tspan x="460" dy="24">replication partners contain the required state.</tspan>
+  </text>
+
+  <!-- Safety note -->
+  <rect x="1010" y="805" width="510" height="120" rx="18" ry="18" fill="#fde7e9" stroke="#a4262c" stroke-width="3"/>
+  <text class="box-title" x="1265" y="847">Escalation rule</text>
+  <text class="box-text" x="1265" y="879">
+    <tspan x="1265" dy="0">Stop when evidence cannot establish</tspan>
+    <tspan x="1265" dy="24">a safe recovery boundary.</tspan>
+  </text>
+
+  <text class="footer-text" x="800" y="1000">Follow the arrows from step 1 through step 4. Exit to the right when a condition selects a recovery scope.</text>
+</svg>

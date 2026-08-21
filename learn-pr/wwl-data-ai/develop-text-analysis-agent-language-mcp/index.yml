@@ -7,7 +7,7 @@ metadata:
   author: ivorb
   ms.author: berryivor
   ms.topic: module-standard-task-based
-  ms.service: azure-ai-language
+  ms.service: azure-language-foundry-tools
   ai-usage: ai-generated
 title: Develop a text analysis agent with the Azure Language MCP server
 summary: Learn how to build an AI agent that uses the Azure Language MCP server to perform text analysis tasks like language detection, entity recognition, and personal information redaction.

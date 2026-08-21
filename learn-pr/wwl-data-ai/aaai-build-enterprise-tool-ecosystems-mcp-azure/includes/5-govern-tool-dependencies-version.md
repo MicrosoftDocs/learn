@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=72cbceeb-4e07-4063-85b1-181eb13ff577]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 GitHub Actions validates tool compatibility during CI/CD pipelines, and Azure API Center provides a managed registry for governed tool discovery. Together, they support semantic versioning rules, compatibility checks, and deprecation workflows that prevent breaking changes from disrupting agents in production.
 
 | Lifecycle Stage | Registry State | Agent Impact |
@@ -228,3 +239,5 @@ These governance workflows transform tool evolution from an ad-hoc process into 
 - **CI/CD compatibility validation** prevents deploying tool versions that break production agents by checking the deploying version against all registered agent dependency ranges before deployment proceeds
 - **Phased deprecation workflows** give agent teams 90-day migration windows with progressive enforcement—warnings during invocation, weekly dependency reports, and hard errors after the sunset date
 - **Dependency tracking** records which agents invoke which tool versions via Azure AD identity extraction, building a real-time dependency graph that makes deprecation impact assessment concrete
+
+::: zone-end

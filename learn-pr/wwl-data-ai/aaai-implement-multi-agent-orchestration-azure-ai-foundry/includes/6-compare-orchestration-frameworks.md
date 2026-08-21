@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7561542c-c52c-43cc-a6a8-ead108a13f78]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 ## The orchestration framework landscape
 
 As of 2026, four frameworks dominate Python-based multi-agent orchestration: Microsoft Semantic Kernel (accessed through the Microsoft Agent Framework in Microsoft Foundry), LangGraph (part of the LangChain ecosystem), AutoGen (from Microsoft Research), and CrewAI. Each framework embodies a different mental model for how agents compose and coordinate. Your choice affects not just syntax but architectural patterns—some frameworks make hub-and-spoke natural while others favor supervisor patterns.
@@ -148,3 +159,5 @@ Now that you understand framework trade-offs and selection criteria, you're read
 - **AutoGen** organizes agents as conversation participants in group discussions, excelling at collaborative reasoning and adversarial review—Microsoft now recommends Agent Framework for new projects, with a formal migration guide available.
 - **CrewAI** offers high-level role-based abstractions that accelerate prototyping but sacrifice fine-grained control needed for production failure handling and observability.
 - **Framework choice is tactical, not strategic**—orchestration patterns (hub-and-spoke, hierarchical, supervisor) are framework-agnostic. Choose the framework that makes your chosen pattern easiest to implement for your ecosystem.
+
+::: zone-end

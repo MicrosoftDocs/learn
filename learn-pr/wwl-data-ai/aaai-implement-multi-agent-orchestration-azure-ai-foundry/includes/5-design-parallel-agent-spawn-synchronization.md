@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d69c1cb1-9a1e-4d4f-a796-6a9986011580]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 ## Why parallel execution matters
 
 Contoso Capital's risk assessment agent and market analysis agent operate independently—risk assessment evaluates portfolio exposure to volatility, while market analysis examines current pricing trends. Running these agents sequentially wastes time. If market analysis takes 12 seconds and risk assessment takes 10 seconds, sequential execution takes 22 seconds. Parallel execution completes in 12 seconds, the maximum of the two agent runtimes.
@@ -188,3 +199,5 @@ The core orchestration patterns are implemented. What varies across teams is whi
 - **Race condition prevention** uses queue-based merge (each agent writes to isolated storage, merge after barrier) or `asyncio.Lock` for real-time shared document updates.
 - **Timeout and deadline propagation** divides total workflow deadlines across sequential rounds plus orchestration buffer, ensuring individual agent timeouts fit within the overall constraint.
 - **Concurrency limits** via `asyncio.Semaphore` prevent parallel execution from exceeding deployment rate limits—set the semaphore value based on your token quota capacity.
+
+::: zone-end

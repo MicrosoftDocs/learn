@@ -1,17 +1,18 @@
-## Learning objectives
+Microsoft Defender for Cloud combines cloud security posture management, DevSecOps security, and cloud workload protection. Defender for Servers extends workload protection to supported on-premises Windows and Linux servers.
 
-In this module, you learned about Microsoft Defender for Cloud, a cloud-native application protection platform (CNAPP) designed to protect cloud-based applications from various cyber threats and vulnerabilities.
+In this module, you:
 
-In this module, you learned:
+- Compared Defender for Servers Plan 1 and Plan 2.
+- Enabled Defender for Servers on an Azure subscription.
+- Identified the Defender for Servers capabilities available to on-premises Azure Arc-enabled servers.
+- Generated and ran Azure Arc onboarding scripts for Windows and Linux servers.
+- Verified Azure Arc connectivity, Defender for Endpoint extension deployment, and Defender portal access.
 
- -  Integration of Defender for Cloud with Microsoft Defender XDR, which provides an overview of attacks, including suspicious and malicious events that occur in cloud environments.
- -  Defender for Cloud helps incorporate good security practices early during the software development process, or DevSecOps, and empowers security teams to manage DevOps security across multiple-pipeline environments.
- -  Defender for Cloud provides specific protections for servers, containers, storage, databases, and other workloads.
- -  How the platform can surface workload-specific recommendations that lead to the right security controls to protect your workloads.
- -  How to connect non-Azure machines to Azure using Azure Arc and how to onboard machines with Microsoft Defender for Endpoint.
+Azure Arc provides the Azure resource and management connection. Defender for Servers provides the security plan and provisions supported protection components. Defender for Servers doesn't provide agentless machine scanning for on-premises Azure Arc-enabled servers, so verify feature support before selecting a plan.
 
-## Learn more<br>
+## Learn more
 
- -  [Azure free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) \| [Azure free account FAQ](https://azure.microsoft.com/pricing/purchase-options/azure-account#FAQ?cid=msft_learn)
- -  [Free account for Students](https://azure.microsoft.com/free/students/?cid=msft_learn) \| [Azure for students FAQ](/azure/education-hub/azure-dev-tools-teaching/program-faq#azure-for-students/?azure-portal=true)
- -  [Create an Azure account](/learn/modules/create-an-azure-account/?azure-portal=true) module on Learn.
+- [Defender for Servers overview](/azure/defender-for-cloud/defender-for-servers-introduction)
+- [Defender for Servers support matrix](/azure/defender-for-cloud/support-matrix-defender-for-servers)
+- [Azure Arc-enabled servers overview](/azure/azure-arc/servers/overview)
+- [Defender for Cloud in the Microsoft Defender portal](/azure/defender-for-cloud/defender-portal/defender-for-cloud-defender-portal)

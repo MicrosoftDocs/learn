@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=cdb8dba7-7988-4270-b868-cf458c85b74d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Privileged Identity Management (PIM) and AKS workload identity federation minimize the time window and credential surface area for agent access to sensitive resources. In this unit, you configure just-in-time access for high-sensitivity operations, bind Kubernetes service accounts to managed identities, and validate caller identity in agent-to-agent requests.
 
 ## Implement just-in-time access for sensitive operations
@@ -187,3 +198,5 @@ With per-agent identities, least-privilege RBAC, user-context federation, just-i
 - **Just-in-time (JIT) access** with Azure PIM grants elevated permissions only when needed and for a limited time window, preventing agents from accumulating persistent access to sensitive resources.
 - **Workload identity for AKS** replaces static Kubernetes secrets with Azure identity federation, enabling containerized agents to authenticate using managed identities without storing credentials in pods.
 - **Caller identity validation** in agent-to-agent calls uses JWT token verification to ensure only legitimate agents can invoke other agents—critical for preventing unauthorized lateral access across the agent network.
+
+::: zone-end

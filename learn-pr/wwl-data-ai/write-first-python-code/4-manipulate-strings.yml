@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-first-python-code.manipulate-strings
+title: Manipulate strings
+metadata:
+  title: Manipulate Strings
+  description: "Learn to work with text in Python using string operations and f-strings."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-manipulate-strings.md)]

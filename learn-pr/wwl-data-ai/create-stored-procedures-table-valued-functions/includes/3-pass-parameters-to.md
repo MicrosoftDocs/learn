@@ -1,8 +1,8 @@
-One of the advantages of using stored procedures is that you can pass parameters to them at runtime. Input parameters can be used filter the query results, such as in the predicate of a **WHERE** clause, or the value in a **TOP** operator. Procedure parameters can also return values to the calling program if the parameter is marked as an OUTPUT parameter. You can also assign a default value to a parameter.
+One of the advantages of using stored procedures is that you can pass parameters to them at runtime. Input parameters can be used filter the query results, such as in the predicate of a **`WHERE`** clause, or the value in a **TOP** operator. Procedure parameters can also return values to the calling program if the parameter is marked as an `OUTPUT` parameter. You can also assign a default value to a parameter.
 
 ## Input parameters
 
-Stored procedures declare their input parameters by name and data type in the header of the **CREATE PROCEDURE** statement. The parameter is then used as a local variable within the body of the procedure. You can declare and use more than one parameter in a stored procedure. Input parameters are the default type of parameter.
+Stored procedures declare their input parameters by name and data type in the header of the **`CREATE PROCEDURE`** statement. The parameter is then used as a local variable within the body of the procedure. You can declare and use more than one parameter in a stored procedure. Input parameters are the default type of parameter.
 
 Parameter names must be prefixed by the @ character, and be unique in the scope of the procedure.
 
@@ -24,7 +24,7 @@ It is best practice to pass parameter values as name-value pairs. Multiple param
 EXEC customers.customerid @customerid=5
 ```
 
-You can also pass parameters by position, omitting the parameter name. However, parameters must be passed either by name or by position - you cannot mix the way parameters are passed to the procedure. If parameters are passed by order, they must be in the identical order as they are listed in the CREATE PROCEDURE statement.
+You can also pass parameters by position, omitting the parameter name. However, parameters must be passed either by name or by position - you cannot mix the way parameters are passed to the procedure. If parameters are passed by order, they must be in the identical order as they are listed in the `CREATE PROCEDURE` statement.
 
 You can pass values as a constant, or as a variable, such as:
 
@@ -70,11 +70,11 @@ CREATE PROCEDURE Sales.SalesYTD
 
 You've seen how to pass a value into a stored procedure, known as an input parameter.
 
-However, you can also return a value to the calling program. This is known as an OUTPUT parameter. Use the OUTPUT or OUT keyword to specify an output parameter in the CREATE PROCEDURE statement.  The procedure returns the current value of the output parameter to the calling program when the procedure exits.
+However, you can also return a value to the calling program. This is known as an `OUTPUT` parameter. Use the `OUTPUT` or OUT keyword to specify an output parameter in the `CREATE PROCEDURE` statement.  The procedure returns the current value of the output parameter to the calling program when the procedure exits.
 
-The calling program must also use the OUTPUT keyword when executing the procedure to save the parameter's value in a variable that can be used in the calling program.
+The calling program must also use the `OUTPUT` keyword when executing the procedure to save the parameter's value in a variable that can be used in the calling program.
 
-In the following T-SQL code fragment, two parameters are defined as OUTPUT parameters, @ComparePrice and @ListPrice.
+In the following T-SQL code fragment, two parameters are defined as `OUTPUT` parameters, @ComparePrice and @ListPrice.
 
 ```sql
 CREATE PROCEDURE Production.uspGetList @Product varchar(40)
@@ -84,4 +84,4 @@ CREATE PROCEDURE Production.uspGetList @Product varchar(40)
 AS 
 ```
 
-Values are then assigned to the OUTPUT parameters in the body of the stored procedure, for example, `SET @ComparePrice = @MaxPrice;`.
+Values are then assigned to the `OUTPUT` parameters in the body of the stored procedure, for example, `SET @ComparePrice = @MaxPrice;`.

@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.devrel.understand-advanced-windows-firewall
+metadata:
+  title: Understand Advanced Windows Firewall
+  description: Design, secure, monitor, and troubleshoot advanced Windows Firewall policy for enterprise Windows environments.
+  ms.date: 08/05/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+title: Understand advanced Windows Firewall
+summary: Design Windows Firewall rules that limit lateral movement, authenticate sensitive traffic, preserve required application flows, and produce useful evidence.
+abstract: |
+  After completing this module, you'll be able to:
+  - Build precisely scoped firewall rules.
+  - Apply profile-specific policy.
+  - Design default-deny host segmentation.
+  - Explain Internet Protocol security protection.
+  - Authorize traffic through user and computer identity.
+  - Coordinate firewall rules with connection security rules.
+  - Control outbound traffic without broad disruption.
+  - Collect firewall evidence.
+  - Troubleshoot effective policy and security associations.
+prerequisites: |
+  - Advanced Windows administration experience.
+  - Working knowledge of Active Directory Domain Services and Group Policy.
+  - Working knowledge of Transmission Control Protocol, User Datagram Protocol, Internet Control Message Protocol, ports, addresses, and routing.
+  - Familiarity with PowerShell administration.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+products:
+- windows
+subjects:
+- security
+- infrastructure
+units:
+- learn.devrel.understand-advanced-windows-firewall.introduction
+- learn.devrel.understand-advanced-windows-firewall.build-custom-firewall-rules
+- learn.devrel.understand-advanced-windows-firewall.apply-firewall-profiles
+- learn.devrel.understand-advanced-windows-firewall.design-default-deny-segmentation
+- learn.devrel.understand-advanced-windows-firewall.explain-internet-protocol-security
+- learn.devrel.understand-advanced-windows-firewall.authorize-identity-based-traffic
+- learn.devrel.understand-advanced-windows-firewall.coordinate-firewall-connection-security-rules
+- learn.devrel.understand-advanced-windows-firewall.control-outbound-traffic
+- learn.devrel.understand-advanced-windows-firewall.collect-firewall-evidence
+- learn.devrel.understand-advanced-windows-firewall.troubleshoot-active-policy
+- learn.devrel.understand-advanced-windows-firewall.knowledge-check
+- learn.devrel.understand-advanced-windows-firewall.summary
+badge:
+  uid: learn.devrel.understand-advanced-windows-firewall.badge

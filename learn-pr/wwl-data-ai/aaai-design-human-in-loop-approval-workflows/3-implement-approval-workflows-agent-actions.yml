@@ -2,9 +2,10 @@
 uid: learn.wwl.design-human-in-loop-approval-workflows.implement-approval-workflows-agent-actions
 title: Implement approval workflows for agent-initiated actions
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement Approval Workflows for Agent-Initiated Actions
   description: "Implement approval workflows for agent-initiated actions."
-  ms.date: 06/05/2026
+  ms.date: 8/5/2026
   author: petender
   ms.author: petender
   ms.topic: unit

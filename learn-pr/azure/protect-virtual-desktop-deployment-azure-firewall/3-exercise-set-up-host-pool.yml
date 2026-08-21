@@ -1,17 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-virtual-desktop-deployment-azure-firewall.exercise-set-up-host-pool
-title: Exercise - Set up the host pool and register virtual machine host
+title: Exercise - Set up a host pool and session host
 metadata:
   unitType: exercise
-  title: Exercise - Set up the host pool and register virtual machine host
-  description: Exercise - Set up the host pool and register virtual machine host
-  ms.date: 01/18/2024
+  title: Exercise - Set up a host pool and session host
+  description: Create an Azure Virtual Desktop host pool with a Microsoft Entra-joined session host.
+  ms.date: 08/17/2026
   author: vhorne
-  ms.author: victorh
+  ms.author: robbarefoot
   ms.topic: unit
   ms.custom:
     - devx-track-azurepowershell
 durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-set-up-host-pool.md)]
-

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.convert-oracle-schema-azure-database-postgresql-ai.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to the AI-powered Oracle to Azure Database for PostgreSQL schema conversion module."
+  ms.date: 07/17/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction.md)]

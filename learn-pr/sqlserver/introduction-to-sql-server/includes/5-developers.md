@@ -43,7 +43,7 @@ FROM Products;
 
 ### Integrate REST APIs
 
-SQL Server 2025 introduces built-in REST API support, enabling direct interaction with database objects over HTTP without extra middleware. Developers can expose tables, views, and stored procedures as RESTful endpoints, making it easier to integrate SQL Server with modern web and mobile applications. The feature supports secure authentication, JSON payloads for input and output, and fine-grained control over which operations are exposed. This simplifies building lightweight services and microservices that use SQL Server as a backend while reducing development overhead.
+SQL Server 2025 introduces `sp_invoke_external_rest_endpoint`, a system stored procedure that enables T-SQL to call external REST and GraphQL endpoints directly from the database engine. You can call Azure services, process data through Azure Functions, update Power BI dashboards, or talk to Azure OpenAI—all without extra middleware. The feature supports secure authentication via managed identities and database scoped credentials, JSON and XML payloads for input and output, and configurable retry logic.
 
 The [REST API](/sql/relational-databases/system-stored-procedures/sp-invoke-external-rest-endpoint-transact-sql) operations are executed in-database, improving security and reducing external dependencies.
 
@@ -62,26 +62,25 @@ SQL Server 2025 adds native support for regular expressions (RegEx) in T-SQL, en
 
 | Function | Purpose | Example |
 |----------|---------|----------|
-| REGEXP_MATCHES | Test if a string matches a pattern | Validate email formats |
+| REGEXP_LIKE | Returns a Boolean indicating whether the string matches the pattern | Validate email formats |
 | REGEXP_REPLACE | Replace text using patterns | Clean and standardize data |
-| REGEXP_EXTRACT | Extract matching substrings | Parse structured text |
-| REGEXP_LIKE | Pattern-based string comparison | Filter data using patterns |
+| REGEXP_SUBSTR | Extract a matching substring | Parse structured text |
+| REGEXP_MATCHES | Returns a table of captured substrings matching the pattern | Extract all matches from text |
 
-The following example shows how SQL Server 2025 can call external APIs directly using `sp_invoke_external_service`, sending a POST request with dynamic data and secure headers, and capturing the JSON response for immediate use in T-SQL.
+The following example shows how SQL Server 2025 can call external APIs directly using `sp_invoke_external_rest_endpoint`, sending a POST request with dynamic data and secure headers, and capturing the JSON response for immediate use in T-SQL.
 
 ```sql
 -- Call an external API to enrich customer data
-DECLARE @apiResponse JSON;
-EXEC sp_invoke_external_service 
-    @service_name = 'CustomerEnrichment',
-    @url = 'https://api.example.com/enrich',
-    @method = 'POST',
-    @headers = '{"Authorization": "Bearer {{azure_token}}"}',
-    @request_body = '{"customerId": @customerId}',
+DECLARE @apiResponse NVARCHAR(MAX);
+EXEC sp_invoke_external_rest_endpoint
+    @url = N'https://api.example.com/enrich',
+    @method = N'POST',
+    @headers = N'{"Authorization": "Bearer <your_token>"}',
+    @payload = N'{"customerId": 12345}',
     @response = @apiResponse OUTPUT;
 ```
 
-The following example shows how SQL Server 2025 uses RegEx functions like `REGEXP_MATCHES` to validate email formats and `REGEXP_REPLACE` to standardize phone numbers, enabling powerful text validation and transformation directly in T-SQL.
+The following example shows how SQL Server 2025 uses RegEx functions like `REGEXP_LIKE` to validate email formats and `REGEXP_REPLACE` to standardize phone numbers, enabling powerful text validation and transformation directly in T-SQL.
 
 ```sql
 -- Validate email addresses using RegEx
@@ -89,7 +88,7 @@ SELECT
     CustomerID,
     Email,
     CASE 
-        WHEN Email REGEXP_MATCHES '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+        WHEN REGEXP_LIKE(Email, '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$') = 1
         THEN 'Valid'
         ELSE 'Invalid'
     END AS EmailStatus

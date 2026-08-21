@@ -18,15 +18,15 @@ First, look at overall resource usage. For a standard SQL Server deployment, you
 
 - `sys.server_resource_stats`
 
-    This DMV behaves just like `sys.dm_db_resource_stats`, but it's used to see resource usage for the SQL Managed Instance for CPU, memory, and I/O. This DMV also takes a snapshot every 15 seconds.
+    This catalog view returns CPU, IO, and storage usage for Azure SQL Managed Instance. The data is aggregated in 5–10 minute windows, with one row per 15-second reporting interval.
 
 - `sys.dm_user_db_resource_governance`
 
     For Azure SQL Database, this DMV returns the actual configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool.
 
-- `sys.dm_instance_resource_governance`
+- `sys.dm_user_db_resource_governance`
 
-    For Azure SQL Managed Instance, this DMV returns similar information as `sys.dm_user_db_resource_governance`, but for the current SQL Managed Instance.
+    For Azure SQL Managed Instance, this DMV returns resource governance configuration and capacity settings for the current SQL Managed Instance.
 
 ### Running
 

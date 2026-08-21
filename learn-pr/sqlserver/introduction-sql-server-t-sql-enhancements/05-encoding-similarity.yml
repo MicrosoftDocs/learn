@@ -4,9 +4,9 @@ title: Encoding and similarity functions
 metadata:
   title: Encoding and similarity functions
   description: "Encode data with Base64 and compare text using new string similarity functions."
-  ms.date: 10/14/2025
-  author: MScalopez
-  ms.author: calopez
+  ms.date: 08/11/2026
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 6
 content: |

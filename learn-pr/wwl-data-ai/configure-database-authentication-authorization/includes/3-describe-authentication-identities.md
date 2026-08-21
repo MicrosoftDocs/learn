@@ -4,7 +4,7 @@ Microsoft Entra ID authentication is more secure and simplifies user management.
 
 Azure SQL Database also supports SQL Server authentication and Microsoft Entra authentication. Microsoft Entra authentication uses the same credentials for other resources like the Azure portal or Microsoft 365.
 
-Microsoft Entra ID can sync with on-premises Active Directory, providing consistent credentials for both environments. It also supports multifactor authentication (MFA) for added security. MFA options include push notifications via the Microsoft Authenticator app, text messages, or access codes. Users with MFA must use the Universal Authentication with MFA option in SQL Server Management Studio.
+Microsoft Entra ID can sync with on-premises Active Directory, providing consistent credentials for both environments. It also supports multifactor authentication (MFA) for added security. MFA options include push notifications via the Microsoft Authenticator app, text messages, or access codes. Users with MFA must use the **Microsoft Entra MFA** option in SQL Server Management Studio.
 
 You can set SQL admin permissions on an Azure SQL Database using the Azure portal.
 

@@ -4,12 +4,11 @@ title: Exercise - Route network traffic through Azure Firewall
 metadata:
   unitType: exercise
   title: Exercise - Route network traffic through Azure Firewall
-  description: Exercise - Route network traffic through Azure Firewall
-  ms.date: 01/18/2024
+  description: Create Firewall Policy rules, route session-host traffic, and validate required endpoint access.
+  ms.date: 08/17/2026
   author: vhorne
-  ms.author: victorh
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 20
 content: |
   [!include[](includes/7-exercise-route-network-traffic.md)]
-

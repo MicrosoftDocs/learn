@@ -43,6 +43,7 @@ units:
   - learn.github.agent-tooling-mcp-execution-environments.mcp-servers-registry-allowlists
   - learn.github.agent-tooling-mcp-execution-environments.execution-context-boundaries
   - learn.github.agent-tooling-mcp-execution-environments.agent-execution-limits-protections
+  - learn.github.agent-tooling-mcp-execution-environments.exercise
   - learn.github.agent-tooling-mcp-execution-environments.knowledge-check
   - learn.github.agent-tooling-mcp-execution-environments.summary
 badge:

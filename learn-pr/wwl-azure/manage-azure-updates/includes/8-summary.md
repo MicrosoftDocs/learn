@@ -1,12 +1,16 @@
+Contoso needed a consistent way to assess and patch servers across Azure and its datacenters. Azure Update Manager provides that control for Azure virtual machines (VMs) and Azure Arc-enabled servers.
 
+In this module, you learned how to:
 
-Contoso IT staff were eager to find out how to manage their updates for both on-premises and cloud-based servers. They realized this could  be challenging because few tools can manage both environments. However, by using the Azure Update Management service, they can manage updates for both cloud-based and on-premises servers.
-
-In this module, you learned how to enroll Azure VMs in Azure Update Management. You also learned how to configure WSUS with Azure Update Management, and how to manage and deploy Azure updates.
+- Describe Azure Update Manager architecture and update sources.
+- Prepare machines and configure periodic assessment.
+- Review update compliance on demand and at scale.
+- Install one-time updates and create recurring maintenance schedules.
+- Use dynamic scopes, deployment history, reports, and alerts.
+- Continue using Windows Server Update Services (WSUS) as the update source for configured machines.
 
 ## Learn more
 
-You can learn more by reviewing the following documents:
-
-- [Tutorial: Monitor changes and update a Windows virtual machine in Azure](https://aka.ms/tutorial-config-management?azure-portal=true)
-- [Manage updates and patches for your Azure VMs](/azure/automation/update-management/manage-updates-for-vm)
+- [What is Azure Update Manager?](/azure/update-manager/overview)
+- [Prerequisites for Azure Update Manager](/azure/update-manager/prerequisites)
+- [Update options and orchestration in Azure Update Manager](/azure/update-manager/updates-maintenance-schedules)

@@ -3,8 +3,8 @@ uid: learn.wwl.transform-data-by-implementing-pivot-unpivot-rollup-cube
 metadata:
   title: Transform data by implementing pivot, unpivot, rollup, and cube
   description: "This content is a part of Transform data by implementing pivot, unpivot, rollup, and cube."
-  ms.date: 03/18/2024
-  author: wwlpublish
+  ms.date: 08/12/2026
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
   ms.service: sql
@@ -16,7 +16,7 @@ abstract: |
 
   - Write queries that pivot and unpivot result sets.
 
-  - Write queries that specify multiple groups with GROUPING SET, CUBE, and ROLLUP.
+  - Write queries that specify multiple groups with GROUPING SETS, CUBE, and ROLLUP.
 prerequisites: Before starting this module, you should have experience of using Transact-SQL queries to retrieve and filter data from a table in a database.
 iconUrl: /training/achievements/transform-data-implement-pivot-rollup.svg
 levels:

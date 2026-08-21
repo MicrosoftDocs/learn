@@ -1,18 +1,18 @@
 :::image type="content" border="true" source="../media/surface-pro-12-ports.png" alt-text="Diagram of the port selection on Surface Pro 12 inch.":::
 
-Surface Pro 12-inch is a Copilot+ PC that's ideal for AI productivity use cases, flexible work, and portability. Let's get familiar with the hardware of Surface Pro 12-inch before you turn it on for the first time.
+Surface Pro for Business, 12-inch (1st Edition) is a Copilot+ PC that's ideal for AI productivity use cases, flexible work, and portability. Let's get familiar with the hardware of Surface Pro for Business, 12-inch (1st Edition) before you turn it on for the first time.
 
 ## Ports and powering on
 
-Let's start on the right side of the device. You'll see two USB-C ports. These ports handle charging in addition to connecting peripherals—such as monitors, portable hard drives, and docking stations. When first booting up Surface Pro 12-inch, it's recommended to run through the initial setup with the device plugged in. On the top left corner of the device, you'll see a power button. This button serves a dual purpose: to power the device and to lock the screen while your Surface Pro 12-inch is powered on.
+Let's start on the right side of the device. You'll see two USB-C ports. These ports handle charging in addition to connecting peripherals—such as monitors, portable hard drives, and docking stations. When first booting up Surface Pro for Business, 12-inch (1st Edition), it's recommended to run through the initial setup with the device plugged in. On the top left corner of the device, you'll see a power button. This button serves a dual purpose: to power the device and to lock the screen while your Surface Pro for Business, 12-inch (1st Edition) is powered on.
 
-On the front of the device, you'll see the Full HD front-facing Surface Studio Camera. This webcam has support for Windows Studio Effects with automatic framing, portrait blur, creative filters, eye contact, and portrait light. This is the primary way that you capture video for virtual meetings through apps such as Microsoft Teams.
+On the front of the device, you'll see the Full HD front-facing Surface Studio Camera. This webcam has support for Windows Studio Effects with automatic framing, portrait blur, creative filters, eye contact, and portrait light. This is the primary way that you capture video for virtual meetings through apps such as Microsoft Teams on your Surface Pro for Business, 12-inch (1st Edition).
 
-Next to the Surface Studio Camera is a secondary Windows Hello camera. This sensor enables Surface Pro 12-inch to support secure sign-in authentication via facial recognition using Windows Hello for Business with Enhanced Sign-in Security. When set up, your Surface Pro 12-inch will scan your face and securely sign into your Surface Pro when you press the power button.
+Next to the Surface Studio Camera is a secondary Windows Hello camera. This sensor enables Surface Pro for Business, 12-inch (1st Edition) to support secure sign-in authentication via facial recognition using Windows Hello for Business with Enhanced Sign-in Security. When set up, your Surface Pro for Business, 12-inch (1st Edition) will scan your face and securely sign into your Surface Pro when you press the power button.
 
-After powering Surface Pro 12-inch, it's easy to configure your settings and be ready to work in moments. Start by selecting your language, then connecting to your local network. Once the basics are set up, sign-in to your Microsoft Account. Doing this allows you to sync files and data across devices. Logging in to your account will also automatically sign you into native applications like Microsoft Edge.
+After powering Surface Pro for Business, 12-inch (1st Edition), it's easy to configure your settings and be ready to work in moments. Start by selecting your language, then connecting to your local network. Once the basics are set up, sign-in to your Microsoft Account. Doing this allows you to sync files and data across devices. Logging in to your account will also automatically sign you into native applications like Microsoft Edge.
 
-After your account is synchronized, you'll have the option to set up biometric unlocking through Windows Hello to keep your device secure, importing settings from previous devices with your Microsoft Account backup, and finally setting up privacy settings. And now your Surface Pro 12-inch is ready to be used.
+After your account is synchronized, you'll have the option to set up biometric unlocking through Windows Hello to keep your device secure, importing settings from previous devices with your Microsoft Account backup, and finally setting up privacy settings. And now your Surface Pro for Business, 12-inch (1st Edition) is ready to be used.
 
 To set up Windows Hello, follow these steps:
 
@@ -33,7 +33,7 @@ Surface Pro 12-inch Keyboard (sold separately) transforms your Surface Pro 12-in
 
 Surface Pro 12-inch Keyboard features five magnets at the top of the keyboard that connect to the bottom of your Surface Pro 12-inch. Bring the keyboard close to the device, and the magnets snap into place automatically.
 
-Once connected to your Surface Pro 12-inch. Surface Pro 12-inch Keyboard is ready to be used like a keyboard on a traditional Windows laptop. To detach the keyboard, rotate the Surface Pro 12-inch Keyboard away from Surface Pro 12-inch.
+Once connected to your Surface Pro for Business, 12-inch (1st Edition), Surface Pro 12-inch Keyboard is ready to be used like a keyboard on a traditional Windows laptop. To detach the keyboard, rotate the Surface Pro 12-inch Keyboard away from Surface Pro for Business, 12-inch (1st Edition).
 
 It's important to keep your Surface Pro 12-inch Keyboard updated to ensure optimal performance. Updates can be installed from the Surface app; here's how to check for updates to ensure that your keyboard is running on the latest firmware version:
 
@@ -44,7 +44,7 @@ It's important to keep your Surface Pro 12-inch Keyboard updated to ensure optim
 
 - From the choice of connected accessories at the bottom of the app, select your keyboard.
 - Expand **Firmware Update** to view the currently installed firmware and see whether it's up to date. If needed, select the option to update the device.
-- After installing the update, disconnect Surface Pro 12-inch from the keyboard and then reconnect it.
+- After installing the update, disconnect Surface Pro for Business, 12-inch (1st Edition) from the keyboard and then reconnect it.
 
 **Using the Precision Touchpad:** Surface Pro 12-inch Keyboard features a precision touchpad that uses two buttons, which can be used as a mouse—and gestures to interact with your Surface. Let's go over some of those gestures and what they can do:
 

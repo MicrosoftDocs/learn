@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 01/19/2026
+  ms.date: 07/23/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -15,17 +15,17 @@ durationInMinutes: 8
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Can transactional replication be configured from the Azure portal?"
+  - content: "In a transactional replication topology, which roles can Azure SQL Managed Instance perform?"
     choices:
-    - content: "No, transactional replication can only be configured through SQL Server Management Studio."
-      isCorrect: false
-      explanation: "Incorrect. Transactional replication can also be configured by executing Transact-SQL statements on the publisher."
-    - content: "Yes, transactional replication can be configured from the Azure portal."
-      isCorrect: false
-      explanation: "Incorrect. Transactional replication can't be configured from the Azure portal."
-    - content: "No, transactional replication can't be configured from the Azure portal."
+    - content: "Publisher, distributor, and subscriber."
       isCorrect: true
-      explanation: "Correct. Transactional replication can't be configured from the Azure portal."
+      explanation: "Correct. Azure SQL Managed Instance is flexible and can act as a publisher, distributor, and subscriber."
+    - content: "Subscriber only."
+      isCorrect: false
+      explanation: "Incorrect. Azure SQL Managed Instance isn't limited to the subscriber role; it can also be a publisher and a distributor."
+    - content: "Distributor only."
+      isCorrect: false
+      explanation: "Incorrect. Azure SQL Managed Instance isn't limited to the distributor role; it can also be a publisher and a subscriber."
   - content: "What is the primary use case for the Log Replay Service for Azure SQL Managed Instance?"
     choices:
     - content: "To migrate databases from on-premises SQL Servers or virtual machines to Azure SQL Managed Instance with minimal downtime"

@@ -4,47 +4,57 @@ title: Module assessment
 metadata:
   unitType: knowledge_check
   title: Module assessment
-  description: Knowledge check
-  ms.date: 01/05/2024
+  description: Check your understanding of Azure Firewall controls for Azure Virtual Desktop.
+  ms.date: 08/17/2026
   author: vhorne
-  ms.author: victorh
+  ms.author: robbarefoot
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: "How does Azure Firewall protect network traffic for Azure Virtual Desktop?"
+  - content: "Why should a route table on an Azure Virtual Desktop session-host subnet include a WindowsVirtualDesktop service-tag route with Internet as the next hop?"
     choices:
-    - content: "Only allows network traffic that's routed to the Azure Virtual Desktop service."
-      isCorrect: false
-      explanation: "Incorrect. Route network traffic to Azure Firewall and create firewall rules to allow the appropriate network traffic for Azure Virtual Desktop."
-    - content: "Denies all network traffic to the internet."
-      isCorrect: false
-      explanation: "Incorrect. If all outbound network traffic is denied, then Azure Virtual Desktop won't work."
-    - content: "Denies all network traffic routed to the firewall except traffic explicitly allowed with firewall rules or policies."
+    - content: "To provide direct access to the Azure Virtual Desktop gateway and broker and avoid disconnections during firewall scale-in."
       isCorrect: true
-      explanation: "Correct. Create firewall rules to allow network traffic that's required for the Azure Virtual Desktop deployment."
-  - content: "What's one firewall application rule that's required for Azure Virtual Desktop to work?"
+      explanation: "Correct. The more specific service-tag route keeps latency-sensitive gateway and broker traffic off the default route through Azure Firewall."
+    - content: "To send all session-host internet traffic directly to the internet."
+      isCorrect: false
+      explanation: "Incorrect. Only traffic that matches the WindowsVirtualDesktop service tag uses this route. Other traffic can follow the default route to the firewall."
+    - content: "To make application rules in the Firewall Policy unnecessary."
+      isCorrect: false
+      explanation: "Incorrect. Session hosts still require firewall rules for supporting Azure Virtual Desktop endpoints and other allowed destinations."
+  - content: "Which deployment matches the hub-and-spoke design used to protect the Azure Virtual Desktop session hosts?"
     choices:
-    - content: "A rule that allows network traffic from the host pool virtual network to the Azure Virtual Desktop service."
+    - content: "Deploy Azure Firewall with a Firewall Policy in a hub virtual network, and peer it with the session-host virtual network."
       isCorrect: true
-      explanation: "Correct. Use the FQDN tag 'WindowsVirtualDesktop' to allow traffic from the host pool virtual network to the service."
-    - content: "A rule to allow access to the host pool virtual network from storage and service bus accounts"
+      explanation: "Correct. The hub contains the shared firewall, and the peered spoke contains the Azure Virtual Desktop workload."
+    - content: "Deploy Azure Firewall in the session-host subnet, and assign a public IP address to each session host."
       isCorrect: false
-      explanation: "Incorrect. Create a rule to allow access from the host pool virtual network to the set of storage and service bus accounts used by the host pool."
-    - content: "A rule to allow traffic from the Windows activation service to the host pool virtual network."
+      explanation: "Incorrect. Azure Firewall requires its dedicated subnet, and Azure Virtual Desktop session hosts don't require public IP addresses."
+    - content: "Deploy separate firewalls on each session host, and manage them without a Firewall Policy."
       isCorrect: false
-      explanation: "Incorrect. Create a firewall network rule to allow traffic from the host pool virtual network to the Windows activation service."
-  - content: "Before someone deploys Azure Firewall, what must they set up in Azure?"
+      explanation: "Incorrect. Azure Firewall is a managed network service, and Firewall Policy centrally manages its rules."
+  - content: "Why should the session-host virtual network use the Azure Firewall private IP address as its DNS server when Firewall Policy contains FQDN network rules?"
     choices:
-    - content: "Peering between the virtual networks for the firewall and the workload."
-      isCorrect: false
-      explanation: "Incorrect. Peering can be done after deploying the firewall. But virtual networks must be peered before routing all traffic through the firewall."
-    - content: "A virtual network with a subnet named 'AzureFirewallSubnet'."
+    - content: "So the session hosts and Azure Firewall use the same DNS responses when the firewall evaluates FQDN network rules."
       isCorrect: true
-      explanation: "Correct. Deploy Azure Firewall to a virtual network that has a subnet named 'AzureFirewallSubnet'."
-    - content: "A default route to send all traffic to a firewall."
+      explanation: "Correct. Using Azure Firewall as the DNS proxy avoids inconsistent name resolution between clients and the firewall."
+    - content: "So all Azure Virtual Desktop gateway and broker traffic is inspected by the firewall."
       isCorrect: false
-      explanation: "Incorrect. After you deploy Azure Firewall, route all network traffic for the workload's virtual network to the firewall."
-
+      explanation: "Incorrect. The WindowsVirtualDesktop service-tag route sends gateway and broker traffic directly to the service."
+    - content: "So application rules can filter non-HTTP protocols without a network rule."
+      isCorrect: false
+      explanation: "Incorrect. Use FQDN network rules for non-HTTP protocols such as KMS traffic on TCP port 1688."
+  - content: "Which rule configuration allows required Azure Virtual Desktop web endpoints while keeping other outbound destinations denied?"
+    choices:
+    - content: "Use application rules for the WindowsVirtualDesktop FQDN tag and the required supporting and certificate-validation FQDNs."
+      isCorrect: true
+      explanation: "Correct. Application rules can allow the managed service tag and explicit HTTP or HTTPS destinations while the firewall denies unmatched traffic."
+    - content: "Use only a WindowsVirtualDesktop service-tag route with Internet as the next hop."
+      isCorrect: false
+      explanation: "Incorrect. The route provides direct access to gateway and broker traffic, but supporting web endpoints still require application rules."
+    - content: "Use a NAT rule to translate inbound traffic to each session host."
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual Desktop doesn't require inbound ports, and NAT rules don't allow the required outbound web endpoints."

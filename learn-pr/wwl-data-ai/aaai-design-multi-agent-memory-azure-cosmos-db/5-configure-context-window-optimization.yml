@@ -2,9 +2,10 @@
 uid: learn.wwl.design-multi-agent-memory-azure-cosmos-db.configure-context-window-optimization
 title: Configure context window optimization
 metadata:
+  zone_pivot_groups: video-or-text
   title: Configure Context Window Optimization
   description: "Configure context window optimization."
-  ms.date: 05/28/2026
+  ms.date: 8/3/2026
   author: petender
   ms.author: petender
   ms.topic: unit

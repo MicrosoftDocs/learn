@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-audit-search-investigate.audit-standard-search
-title: Conduct searches with Audit (Standard)
+title: Run audit searches with Audit (Standard)
 metadata:
-  title: Conduct Searches with Audit (Standard)
+  title: Run Audit Searches with Audit (Standard)
   description: "Conduct searches with Audit (Standard)."
-  ms.date: 08/15/2025
+  ms.date: 07/23/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
@@ -16,14 +16,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the maximum number of search jobs a user can run at the same time in the Microsoft Purview compliance portal?"
+  - content: "You run an audit search for a physician's file downloads on last Wednesday and get zero results. You've confirmed auditing is enabled tenant-wide, the physician was active that day, and your account has the **Audit Reader** role. What's the next thing to check?"
     choices:
-    - content: "Unlimited, as long as system resources permit."
-      isCorrect: false
-      explanation: "Incorrect: There's a specific limit on the number of simultaneous search jobs."
-    - content: "Up to 5 search jobs."
-      isCorrect: false
-      explanation: "Incorrect: The limit is higher than 5."
-    - content: "Up to 10 search jobs."
+    - content: "Whether your date range is in UTC. Portal search interprets dates as UTC, and your local Wednesday might have started on Tuesday UTC."
       isCorrect: true
-      explanation: "Correct: A user can run up to 10 search jobs at the same time, which is the system limit."
+      explanation: "Correct. Portal results and `Search-UnifiedAuditLog` interpret dates as UTC. A local-time incident window that spans a day boundary can land outside your intended search range if you don't convert."
+    - content: "Whether you have the **Organization Configuration** role, which is required to search file activity."
+      isCorrect: false
+      explanation: "Incorrect. **Audit Reader** covers searching audit logs. **Organization Configuration** is required for creating retention policies, not for search."
+    - content: "Whether the tenant has Audit (Premium), because file download records require Premium."
+      isCorrect: false
+      explanation: "Incorrect. File downloads on SharePoint and OneDrive log to `SharePointFileOperation` with `FileDownloaded`, which is available in Audit (Standard)."

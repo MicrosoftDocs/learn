@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.develop-data-api-azure-sql-database.develop-a-data-api-using-static-web-app
-title: Develop a data API using Azure Static Web Apps
+title: Use Azure Static Web Apps with a data API
 metadata:
-  title: Develop a data API using Azure Static Web Apps
-  description: "Learn how to develop a data API using Azure Static Web Apps."
-  ms.date: 08/06/2025
+  title: Use Azure Static Web Apps with a data API
+  description: "Learn how to use Azure Static Web Apps as a front end that consumes a Data API builder endpoint hosted in Azure Container Apps or Azure App Service."
+  ms.date: 08/11/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

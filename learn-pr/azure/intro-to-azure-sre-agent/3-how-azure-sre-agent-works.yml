@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-sre-agent.how-azure-sre-agent-works
+title: How Azure SRE Agent works
+metadata:
+  title: How Azure SRE Agent works
+  description: Learn the conceptual workflow Azure SRE Agent uses to investigate signals, propose responses, take controlled action, and verify results.
+  ms.date: 08/06/2026
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-how-azure-sre-agent-works.md)]
