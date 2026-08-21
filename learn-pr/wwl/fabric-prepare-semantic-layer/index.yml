@@ -1,26 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.fabric-prepare-semantic-layer
 metadata:
-  title: Prepare the Semantic Layer for AI in Microsoft Fabric
-  description: "Learn to design gold layers, configure Prep for AI features, and connect semantic models to enterprise ontology with Fabric IQ so that Copilot and AI agents deliver accurate, business-relevant insights."
-  ms.date: 04/06/2026
+  title: Prepare Semantic Models for AI in Power BI and Microsoft Fabric
+  description: "Prepare semantic models for reliable AI use in Power BI and Microsoft Fabric, and evaluate when Fabric IQ should extend stable business meaning across domains."
+  ms.date: 08/19/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: module
   ms.service: fabric
-  ai-usage: ai-assisted
-title: Prepare the semantic layer for AI in Microsoft Fabric
-summary: Design gold layers, semantic models, and documentation that enable Copilot, data agents, and enterprise ontologies to deliver accurate, business-relevant insights.
+  ai-usage: ai-generated
+title: Prepare semantic models for AI in Power BI and Microsoft Fabric
+summary: Prepare semantic models for reliable AI use in Power BI and Microsoft Fabric, and evaluate when Fabric IQ should extend stable business meaning across domains.
 abstract: |
   By the end of this module, you're able to:
-  - Describe how AI systems consume data and metadata from semantic models.
-  - Design gold layers with AI-friendly naming, documentation, and structure.
-  - Configure Prep for AI features in a semantic model, including verified answers and AI instructions.
-  - Explain how semantic models connect to enterprise ontology in Fabric IQ.
-  - Validate AI readiness through testing and iteration.
+  - Explain how semantic model context guides Copilot answers.
+  - Design a focused gold layer for AI consumption.
+  - Select the appropriate Prep for AI control for a semantic model failure.
+  - Decide when to use Fabric IQ to share stable semantic model entities across teams.
+  - Validate AI readiness by testing priority questions and fixing the cause of wrong answers.
 prerequisites: |
-  - Experience with semantic model design and configuration in Power BI.
-  - Familiarity with star schema concepts and DAX measures.
+  - You've designed and configured a Power BI semantic model.
+  - You use star schemas and DAX measures to represent business entities and metrics.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - advanced
