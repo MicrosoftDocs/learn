@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fabric-prepare-semantic-layer.prepare-semantic-model
-title: Prepare a semantic model for AI
+title: Select the appropriate prep for AI control
 metadata:
-  title: Prepare a Semantic Model for AI
-  description: "Configure Prep for AI features including AI data schema, verified answers, and AI instructions in Power BI."
-  ms.date: 04/06/2026
+  title: Select the Appropriate Prep for AI Control
+  description: "Match each Prep for AI control to a specific problem and test before marking the semantic model Approved for Copilot."
+  ms.date: 08/19/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 3
 content: |
   [!include[](includes/4-prepare-semantic-model.md)]

@@ -72311,6 +72311,41 @@
       "source_path": "learn-pr/paths/discover-microsoft-ai-leaders-sustainability/index.md",
       "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-microsoft-copilot-business-users/2-what-is-copilot.md",
+      "redirect_url": "/training/modules/explore-microsoft-copilot-business-users/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-microsoft-copilot-business-users/3-copilot-uses.md",
+      "redirect_url": "/training/modules/explore-microsoft-copilot-business-users/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-microsoft-copilot-business-users/4-how-copilot-works.md",
+      "redirect_url": "/training/modules/explore-microsoft-copilot-business-users/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-microsoft-copilot-business-users/5-copilot-prompts.md",
+      "redirect_url": "/training/modules/explore-microsoft-copilot-business-users/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-microsoft-copilot-business-users/6-exercise-explore-copilot.md",
+      "redirect_url": "/training/modules/explore-microsoft-copilot-business-users/7-exercise-review-ai-generated-content",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-microsoft-copilot-business-users/7-knowledge-check.md",
+      "redirect_url": "/training/modules/explore-microsoft-copilot-business-users/8-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-microsoft-copilot-business-users/8-summary.md",
+      "redirect_url": "/training/modules/explore-microsoft-copilot-business-users/9-summary",
+      "redirect_document_id": false
     }
   ]
 }

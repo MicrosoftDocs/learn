@@ -4,7 +4,7 @@ In this module, you learned how Azure Load Testing generates high-scale loads to
 
 These resources provide more detail about the services and tools introduced in this module. You can use them to explore additional configuration options and workflow patterns.
 
-1. [Azure Load Testing documentation](/azure/app-testing/load-testing/) explains service concepts, test configuration, and analysis features.
+1. [Azure Load Testing documentation](/azure/app-testing/load-testing/overview-what-is-azure-load-testing) explains service concepts, test configuration, and analysis features.
 1. [Apache JMeter User's Manual](https://jmeter.apache.org/usermanual/index.html) describes JMeter test plans, components, and functions.
 1. [GitHub Actions documentation](https://docs.github.com/actions) covers workflow syntax, authentication, and repository automation.
 

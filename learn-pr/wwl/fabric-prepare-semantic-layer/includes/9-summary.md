@@ -1,12 +1,8 @@
-In this module, you learned that preparing semantic models for AI isn't a separate task from good model design. It's an intentional extension of the work you already do.
+Copilot can only answer business questions as well as the semantic model describes them. When measures, entities, and relationships are unclear, Copilot guesses — and wrong answers misdirect decisions.
 
-You started by understanding how Copilot and AI tools consume your data through the grounding process. You learned that AI relies on table names, column names, measure descriptions, relationships, and linguistic schemas to interpret user questions. You then applied this understanding to gold layer design, where entity-oriented tables, clear naming conventions, and thorough documentation form the foundation of AI-readable data.
+Now you know how to fix that. Clear names, descriptions, and visibility give Copilot the right business path. The Prep for AI feature handles the gaps the semantic model can't express. Testing confirms the reasoning path before approval. And when your definitions need to work across teams, an ontology standardizes them without duplicating the work you already did.
 
-You explored the Prep for AI features in Power BI, including the AI data schema for controlling field visibility, verified answers for predefining responses to common questions, and AI instructions for communicating business context. You also saw how your semantic model work connects to the broader intelligent data platform through Fabric IQ and enterprise ontology, where your tables become entity types and your definitions ground AI agents in shared business language.
-
-Finally, you practiced validating AI readiness through testing, diagnostics, and iteration. You have a checklist and a repeatable process for ensuring your models produce accurate AI responses over time.
-
-The semantic model you build is the shared interface between your organization's data and every AI tool that consumes it. By being intentional about naming, documentation, and configuration, you ensure that Copilot, data agents, and enterprise AI deliver reliable, business-relevant insights.
+This setup isn't a one-time configuration. As business questions change, you come back to the same process: understand what Copilot reads, design the semantic model to express it clearly, add controls where needed, and test before you approve.
 
 ## Learn more
 
