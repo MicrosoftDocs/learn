@@ -3,7 +3,7 @@ uid: learn.wwl.secure-access-entra-agent-identity
 metadata:
   title: Secure Access for Microsoft Entra Agent Identity
   description: "Secure AI agent identities by applying Conditional Access policies through Microsoft Entra Agent Identity. Map authentication flows, configure CA policies scoped to agents, and control agent access and lifecycle events to reduce identity-based risk."
-  ms.date: 04/21/2026
+  ms.date: 08/21/2026
   author: r-c-stewart
   ms.author: roberts
   ms.topic: module

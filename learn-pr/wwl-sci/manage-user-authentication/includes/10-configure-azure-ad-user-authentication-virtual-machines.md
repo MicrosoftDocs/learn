@@ -1,8 +1,7 @@
 Organizations can now improve the security of Windows and Linux virtual machines (VMs) in Azure by integrating with Microsoft Entra authentication. You can now use Microsoft Entra ID as a core authentication platform to connect to:
 
- - Windows Server 2019 Datacenter edition and later.
- - Windows 10 1809 and later.
- - Windows 11.
+ - Windows Server 2022, 2025, or later installed with Desktop Experience.
+ - Windows 11 24H2 or later.
  - Linux virtual machine.
 
 You can then centrally control and enforce role-based-access and Conditional Access policies that allow or deny access to the VMs.
