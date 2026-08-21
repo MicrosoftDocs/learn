@@ -8796,3 +8796,33 @@ achievements:
   title: Prepare to maintain SQL Server-based databases on Azure
   summary: Explore the role of a database administrator on Azure. Describe SQL Server-based offerings on Azure.
   iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
+- uid: learn.wwl.define-microsoft-ai-strategy-finance.badge
+  type: badge
+  title: Define a Microsoft AI strategy to create business value in finance
+  summary: This module is designed to help finance professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+  iconUrl: /training/achievements/define-microsoft-ai-strategy-finance.svg
+- uid: learn.wwl.define-microsoft-ai-strategy-healthcare.badge
+  type: badge
+  title: Define a Microsoft AI strategy to create business value in healthcare
+  summary: This module is designed to help healthcare professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+  iconUrl: /training/achievements/define-microsoft-ai-strategy-healthcare.svg
+- uid: learn.wwl.define-microsoft-ai-strategy-sustainability.badge
+  type: badge
+  title: Define a Microsoft AI strategy to create business value in sustainability
+  summary: This module is designed to help sustainability professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.discover-microsoft-ai-leaders-financial-industry.trophy
+  type: trophy
+  title: Discover AI for leaders in finance
+  summary: In this learning path, FSI business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and finance use cases.
+  iconUrl: /training/achievements/discover-microsoft-ai-leaders-financial-industry.svg
+- uid: learn.wwl.discover-microsoft-ai-leaders-healthcare-industry.trophy
+  type: trophy
+  title: Discover AI for leaders in healthcare
+  summary: In this learning path, healthcare business leaders will find the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and healthcare use cases.
+  iconUrl: /training/achievements/discover-microsoft-ai-leaders-healthcare-industry.svg
+- uid: learn.wwl.discover-microsoft-ai-leaders-sustainability.trophy
+  type: trophy
+  title: Discover AI for leaders in sustainability
+  summary: In this learning path, sustainability business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and sustainability use cases.
+  iconUrl: /training/achievements/generic-trophy.svg

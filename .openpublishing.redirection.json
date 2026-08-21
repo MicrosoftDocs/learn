@@ -72156,6 +72156,161 @@
       "source_path": "learn-pr/wwl-data-ai/prepare-to-maintain-sql-databases-azure/3-understand-sql-server-azure-virtual-machine.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-finance/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-finance/1b-ai-financial-services.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-finance/2b-opportunities-ai-financial-services-organizations.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-finance/4-discover-manulife-success-story.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-finance/3-discover-swift-success-story.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-finance/2-goals-challenges-financial-services.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-finance/1-introduction.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-finance/5-knowledge-check.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-finance/6-summary.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-healthcare/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-healthcare/1b-ai-life-sciences-pharmacology-healthcare.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-healthcare/5-discover-potential-zimmer-biomet-success-story.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-healthcare/2-goals-challenges-life-sciences-pharmacology-healthcare.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-healthcare/1-introduction.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-healthcare/6-knowledge-check.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-healthcare/4-microsoft-ai-health-providers.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-healthcare/3-opportunities-ai-life-sciences-pharmacology-healthcare.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-healthcare/7-summary.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-sustainability/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-sustainability/1b-ai-sustainability.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-sustainability/6-discover-ai-enable-green-mobility.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-sustainability/4-discover-ai-power-global-energy-transition.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-sustainability/5-discover-ai-protect-natural-resources.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-sustainability/2-goals-challenges-sustainability.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-sustainability/1-introduction.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-sustainability/7-knowledge-check.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-sustainability/3-opportunities-ai-sustainability.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-sustainability/8-summary.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/discover-microsoft-ai-leaders-financial-industry/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/discover-microsoft-ai-leaders-healthcare-industry/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/discover-microsoft-ai-leaders-sustainability/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
     }
   ]
 }
