@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-microsoft-copilot-business-users.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 08/17/2026
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A person asks AI to create a project update. Which approach is most likely to produce a useful response?"
+    choices:
+    - content: "Ask AI to generate multiple versions of the update."
+      isCorrect: false
+    - content: "Provide relevant project information for AI to use when generating the update."
+      isCorrect: true
+    - content: "Ask AI to make the update more detailed."
+      isCorrect: false
+  - content: "A team needs help preparing materials for an executive review. Which task is most appropriate for an AI agent?"
+    choices:
+    - content: "Making the final business decision about project readiness."
+      isCorrect: false
+    - content: "Replacing the need for project stakeholders to review the results."
+      isCorrect: false
+    - content: "Coordinating information from multiple sources and preparing a draft for review."
+      isCorrect: true
+  - content: "A project manager receives a useful AI-generated summary. What should happen next?"
+    choices:
+    - content: "Review it, confirm important details, and make any necessary updates."
+      isCorrect: true
+    - content: "Share it immediately to save time."
+      isCorrect: false
+    - content: "Generate additional summaries until all versions match."
+      isCorrect: false

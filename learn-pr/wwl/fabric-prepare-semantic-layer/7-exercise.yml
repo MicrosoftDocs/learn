@@ -3,8 +3,8 @@ uid: learn.wwl.fabric-prepare-semantic-layer.exercise
 title: "Exercise: Prepare a semantic model for AI"
 metadata:
   title: "Exercise: Prepare a Semantic Model for AI"
-  description: "Interactive exercise to configure Prep for AI features including verified answers, AI instructions, and schema simplification."
-  ms.date: 04/06/2026
+  description: "Prepare and test a semantic model for AI by applying focused Prep for AI controls."
+  ms.date: 08/19/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit

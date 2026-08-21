@@ -3,11 +3,11 @@ uid: learn.wwl.fabric-prepare-semantic-layer.validate-readiness
 title: Validate AI readiness
 metadata:
   title: Validate AI Readiness
-  description: "Test AI responses, use diagnostic tools, and apply an AI readiness checklist to verify your semantic model preparation."
-  ms.date: 04/06/2026
+  description: "Test priority questions, find the cause of wrong answers, and approve the semantic model only when evidence supports it."
+  ms.date: 08/19/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
   [!include[](includes/6-validate-readiness.md)]
