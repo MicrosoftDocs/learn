@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-microsoft-copilot-business-users.why-grounding-matters
+title: "Why grounding matters"
+metadata:
+  title: "Why Grounding Matters"
+  description: "Learn how providing context improves AI responses. Discover how Microsoft 365 Copilot uses context to generate tailored, actionable results."
+  ms.date: 08/17/2026
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-why-grounding-matters.md)]
