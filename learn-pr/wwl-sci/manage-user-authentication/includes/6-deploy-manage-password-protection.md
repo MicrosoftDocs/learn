@@ -114,11 +114,11 @@ The following core requirements apply:
 
 The following requirements apply to the Microsoft Entra Password Protection DC agent:
 
- - All machines where the Microsoft Entra Password Protection DC agent software will be installed must run Windows Server 2012 or later.
+ - All machines where the Microsoft Entra Password Protection DC agent software will be installed must run Windows Server 2012 R2 or later.
     
-   - The Active Directory domain or forest doesn't need to be at Windows Server 2012 domain functional level (DFL) or forest functional level (FFL). There's no minimum DFL or FFL required for either the DC agent or proxy software to run.
+   - The Active Directory domain or forest doesn't need to be at Windows Server 2012 R2 domain functional level (DFL) or forest functional level (FFL). There's no minimum DFL or FFL required for either the DC agent or proxy software to run.
 
- - All machines that run the Microsoft Entra Password Protection DC agent must have .NET 4.5 installed.
+ - All machines that run the Microsoft Entra Password Protection DC agent must have .NET 4.7.2 installed.
  - Any Active Directory domain that runs the Microsoft Entra Password Protection DC agent service must use Distributed File System Replication (DFSR) for sysvol replication.
 
 ### Microsoft Entra Password Protection proxy service
@@ -130,10 +130,10 @@ The following requirements apply to the Microsoft Entra Password Protection prox
    > [!NOTE]
    > The Microsoft Entra Password Protection proxy-service deployment is a mandatory requirement for deploying Microsoft Entra Password Protection even though the domain controller may have outbound direct internet connectivity.
 
- - All machines where the Microsoft Entra Password Protection proxy-service will be installed must have .NET 4.7 installed.
+ - All machines where the Microsoft Entra Password Protection proxy-service will be installed must have .NET 4.7.2 installed.
  - All machines that host the Microsoft Entra Password Protection proxy-service must be configured to grant domain controllers the ability to sign into the proxy service. This ability is controlled via the "Access this computer from the network" privilege assignment.
  - All machines that host the Microsoft Entra Password Protection proxy-service must be configured to allow outbound TLS 1.2 HTTP traffic.
- - A *Security Administrator* account is required to register the Microsoft Entra Password Protection proxy-service and forest with Microsoft Entra.
+ - A *Global Administrator* account is required to register the Microsoft Entra Password Protection proxy-service for the first time in a given tenant. Subsequent proxy and forest registrations can use an account with at least the *Security Administrator* role.
  - Network access must be enabled for the set of ports and URLs specified in the Application Proxy environment setup procedures.
     
    > [!WARNING]
