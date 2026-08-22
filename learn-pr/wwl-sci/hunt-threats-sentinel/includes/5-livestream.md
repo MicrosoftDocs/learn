@@ -1,42 +1,35 @@
-You can use the hunting livestream to test queries against live events as they occur. Livestream provides interactive sessions that can notify you when Microsoft Sentinel finds matching events for your query.
+Microsoft Sentinel hunts help you organize proactive investigations around a hypothesis. A hunt can contain multiple queries, bookmarks, entities, comments, related analytics rules, and incidents. This structure preserves investigation context and lets security analysts collaborate over time.
 
-A livestream is always based on a query. Typically, you use the query to narrow down streaming log events, so only the events that are related to your threat-hunting efforts appear. You can use a livestream to:
+> [!NOTE]
+> Microsoft Sentinel livestreams are no longer available. To automate queries and notifications, use Kusto Query Language (KQL) jobs, analytics rules, or playbooks.
 
-- Test new queries against live events.
-- Generate notifications for threats.
-- Launch investigations.
+## Create a hunt
 
-Livestream queries refresh every 30 seconds and generate Azure notifications of any new results from the query.
+You can create a hunt from selected queries or start with a blank hunt:
 
-## Create a livestream
+1. In Microsoft Sentinel, select **Threat management** > **Hunting**.
+1. To start from existing queries, select the queries on the **Queries** tab, and then select **Hunt actions** > **Create new hunt**. To start without queries, select the **Hunts** tab, and then select **New hunt**.
+1. Enter a name and description that state the hypothesis that you want to investigate.
+1. Select **Create**.
 
-To create a livestream from the **Hunting** page in Microsoft Sentinel, select the **Livestream** tab and then select **New livestream** from the toolbar.  
+## Investigate with queries and bookmarks
 
->[!NOTE]
->Livestream queries run continuously against your live environment, so you can't use time parameters in a livestream query.
-
-:::image type="content" source="../media/5-new-livestream.png" alt-text="Screenshot that shows the livestream creation page in Microsoft Sentinel." :::
-
-## View a livestream
-
-On the new **Livestream** page, specify a name for the livestream session and the query that provides results for the session. Notifications for livestream events appear in your Azure portal notifications.
-
-## Manage a livestream
-
-You can play the livestream to review results or save the livestream for later reference. Saved livestream sessions can be viewed from the **Livestream** tab on the **Hunting** page. You can also elevate events from a livestream session to an alert by selecting the events and then selecting **Elevate to alert** from the command bar.
-
-You might use a livestream to track baseline activities for Azure resource deletion, and identify other Azure resources that should be tracked. For example, the following query returns any Azure Activity events that recorded a deleted resource:
+Run the queries associated with the hunt and review their results. For example, the following query returns Azure Activity events that recorded a deleted resource:
 
 ```kusto
-  AzureActivity
-  | where OperationName has 'delete'
-  | where ActivityStatus == 'Accepted'
-  | extend AccountCustomEntity = Caller
-  | extend IPCustomEntity = CallerIpAddress
+AzureActivity
+| where OperationName has 'delete'
+| where ActivityStatus == 'Accepted'
+| extend AccountCustomEntity = Caller
+| extend IPCustomEntity = CallerIpAddress
 ```
 
-## Use a livestream query to create an analytics rule
+When you find important results, add them as bookmarks. Bookmarks preserve the result, query, and time range. You can also map entities, add tags and notes, investigate related entities, and use bookmarks to create or enrich an incident.
 
-If the query returns significant results, you can select **Create analytics rule** from the command bar to create an analytics rule based on the query. After the rule refines the query to identify the specific resources, it can generate alerts or incidents when the resources are deleted.
+## Act on hunt results
+
+If a hunt query produces reliable findings, create an analytics rule from the query. The rule can generate alerts or incidents when future activity matches the detection logic. You can also create incidents from hunt bookmarks and run playbooks on bookmarked entities.
+
+As the investigation progresses, update the hunt's hypothesis and status. Close the hunt after you record the outcome and complete related actions.
 
 Choose the best response for the following question.

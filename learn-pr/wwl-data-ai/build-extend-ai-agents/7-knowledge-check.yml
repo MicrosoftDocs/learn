@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-extend-ai-agents.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your learning on building and extending AI agents with Microsoft Foundry."
+  ms.date: 08/21/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "Caldova planners need answers from the company's supply chain policy instead of the model's training data. Which capability should you add to the agent?"
+    choices:
+    - content: "Grounding, by attaching the supply chain policy with a File search tool."
+      isCorrect: true
+      explanation: "Correct. Grounding gives the agent trusted source material so it answers from your data rather than guessing."
+    - content: "A second model deployment in a different region."
+      isCorrect: false
+      explanation: "Incorrect. Adding a model deployment doesn't give the agent access to your policy document."
+    - content: "A higher token limit on the model."
+      isCorrect: false
+      explanation: "Incorrect. Token limits control response length, not what source data the agent can reference."
+  - content: "You add a `draft_capacity_request` function to the Caldova assistant. Which statement best describes the *declarative* nature of this custom tool?"
+    choices:
+    - content: "You must write code that explicitly calls each tool function in sequence."
+      isCorrect: false
+      explanation: "Incorrect. You don't call the functions yourself; the agent decides when to call them."
+    - content: "The agent decides when and how to call a tool based on the prompt and the tool's description."
+      isCorrect: true
+      explanation: "Correct. You describe the function; the agent chooses whether to call it based on the prompt."
+    - content: "Tools run automatically on a fixed schedule regardless of the prompt."
+      isCorrect: false
+      explanation: "Incorrect. Tools are invoked in response to prompts, not on a schedule."
+  - content: "Caldova exposes material stock through a remote MCP server. What is the main advantage of this approach instead of hardcoding the stock tool?"
+    choices:
+    - content: "It removes the need for the agent to use a model."
+      isCorrect: false
+      explanation: "Incorrect. The agent still uses a model to reason about which tools to call."
+    - content: "Tools can be discovered dynamically at runtime, so they can be added or updated centrally without changing agent code."
+      isCorrect: true
+      explanation: "Correct. MCP enables dynamic tool discovery, shifting tool management out of the agent."
+    - content: "It guarantees the agent never needs approval to call a tool."
+      isCorrect: false
+      explanation: "Incorrect. MCP tools can still require approval through the require_approval setting."
+  - content: "A capacity-request tool is configured with `require_approval=\"always\"`. What does the agent return before submitting the request?"
+    choices:
+    - content: "An `mcp_approval_request` that your code responds to with an `mcp_approval_response`."
+      isCorrect: true
+      explanation: "Correct. The agent pauses and asks permission; you approve with an mcp_approval_response."
+    - content: "A final answer with the tool result already included."
+      isCorrect: false
+      explanation: "Incorrect. With approval required, the agent waits for approval before it can call the tool."
+    - content: "An error that stops the run."
+      isCorrect: false
+      explanation: "Incorrect. An approval request is expected behavior, not an error."

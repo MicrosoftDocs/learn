@@ -5,9 +5,9 @@ Organizations deploying AI agents often discover they have more agents than expe
 > [!NOTE]
 > The AI agent inventory is currently in **Preview**. Before the inventory appears in the Defender portal, you must opt in to preview features for both Microsoft Defender XDR and Microsoft Defender for Cloud in their respective settings pages.
 
-The AI agent inventory provides a centralized view of agents built with Microsoft Copilot Studio, Microsoft Foundry, AWS Bedrock, and GCP Vertex AI. Before you can view the inventory, you need to enable the required integrations for each platform you want to monitor.
+The AI agent inventory provides a centralized view of agents built with Microsoft Copilot Studio, Microsoft Foundry, Microsoft 365, supported non-Microsoft platforms, and local agents discovered on endpoint devices. Before you can view the inventory, you need to onboard to Microsoft Agent 365 and enable security for AI agents in Microsoft Defender.
 
-**Licensing prerequisites:** You need either a Microsoft Agent 365 license, or both a Microsoft Defender for Cloud Apps license and a Microsoft Copilot Studio license (for Copilot Studio agent discovery).
+**Licensing prerequisite:** Effective July 1, 2026, agent-level discovery, security posture, and threat detection for Microsoft Copilot Studio and Microsoft Foundry agents require a Microsoft Agent 365-eligible license. These capabilities are no longer covered by Microsoft Defender for Cloud Apps or Microsoft Defender for Cloud licenses alone.
 
 To enable discovery, configure the integration for each platform:
 

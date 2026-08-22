@@ -19,19 +19,19 @@ With SAML/WS-Fed IdP federation, guest users sign into your Microsoft Entra tena
 Microsoft Entra B2B can be configured to federate with identity providers that use the SAML protocol with specific requirements listed below.
 
 > [!NOTE]
-> The target domain for direct federation must not be DNS-verified on Microsoft Entra ID.
+> You can associate multiple domains with a single federation configuration. The partner's domain can be either Microsoft Entra verified or unverified.
 
 ### Required Security Assertion Markup Language 2.0 attributes and claims
 
-The following tables show requirements for specific attributes and claims that must be configured at the third-party identity provider. To set up direct federation, the following attributes must be received in the SAML 2.0 response from the identity provider. These attributes can be configured by linking to the online security token service XML file or by entering them manually.
+The following tables show requirements for specific attributes and claims that must be configured at the third-party identity provider. To set up federation, the following attributes must be received in the SAML 2.0 response from the identity provider. These attributes can be configured by linking to the online security token service XML file or by entering them manually. Ensure the value matches the cloud for which you're setting up external federation.
 
 Required attributes for the SAML 2.0 response from the IdP:
 
-| **Attribute**            | **Value**                                |
-| ------------------------ | ---------------------------------------- |
-| AssertionConsumerService | `https://login.microsoftonline.com/login.srf` |
-| Audience                 | `urn:federation:MicrosoftOnline`         |
-| Issuer                   | The issuer URI of the partner IdP, for example `https://www.example.com/exk10l6w90DHM0yi...` |
+| **Attribute**            | **Value for a workforce tenant**              | **Value for an external tenant**                          |
+| ------------------------ | --------------------------------------------- | --------------------------------------------------------- |
+| AssertionConsumerService | `https://login.microsoftonline.com/login.srf` | `https://<tenantID>.ciamlogin.com/login.srf`              |
+| Audience                 | `https://login.microsoftonline.com/<tenant ID>/` (recommended). Existing federations that use the global endpoint `urn:federation:MicrosoftOnline` continue to work, but new federations should use the tenanted endpoint. | `https://login.microsoftonline.com/<tenant ID>/` (recommended). |
+| Issuer                   | The issuer URI of the partner IdP, for example `https://www.example.com/exk10l6w90DHM0yi...` | The issuer URI of the partner IdP, for example `https://www.example.com/exk10l6w90DHM0yi...` |
 
 Required claims for the SAML 2.0 token issued by the IdP:
 
@@ -42,21 +42,21 @@ Required claims for the SAML 2.0 token issued by the IdP:
 
 ## WS-Federation configuration
 
-Microsoft Entra B2B can be configured to federate with identity providers that use the WS-Fed protocol with some specific requirements as listed below. Currently, the two WS-Fed providers have been tested for compatibility with Microsoft Entra ID include AD FS and Shibboleth.
+Microsoft Entra B2B can be configured to federate with identity providers that use the WS-Fed protocol with some specific requirements as listed below. Currently, the two WS-Fed providers that have been tested for compatibility with Microsoft Entra ID are AD FS and Shibboleth.
 
-The target domain for direct federation must not be DNS-verified on Microsoft Entra ID. The authentication URL domain must match either the target domain or the domain of an allowed identity provider.
+The partner's domain can be either Microsoft Entra verified or unverified. If the partner's passive authentication URL domain doesn't match the target domain (or a host within it), the partner must add a DNS TXT record for the authentication URL domain to enable federation.
 
 ### Required WS-Federation attributes and claims
 
-The following tables show requirements for specific attributes and claims that must be configured at the third-party WS-Fed identity provider. To set up direct federation, the following attributes must be received in the WS-Fed message from the identity provider. These attributes can be configured by linking to the online security token service XML file or by entering them manually.
+The following tables show requirements for specific attributes and claims that must be configured at the third-party WS-Fed identity provider. To set up federation, the following attributes must be received in the WS-Fed message from the identity provider. These attributes can be configured by linking to the online security token service XML file or by entering them manually. Ensure the value matches the cloud for which you're setting up external federation.
 
 Required attributes in the WS-Fed message from the IdP:
 
-| **Attribute**            | **Value**                                |
-| ------------------------ | ---------------------------------------- |
-| PassiveRequestorEndpoint | `https://login.microsoftonline.com/login.srf` |
-| Audience                 | `urn:federation:MicrosoftOnline`         |
-| Issuer                   | The issuer URI of the partner IdP, for example `https://www.example.com/exk10l6w90DHM0yi...` |
+| **Attribute**            | **Value for a workforce tenant**              | **Value for an external tenant**                          |
+| ------------------------ | --------------------------------------------- | --------------------------------------------------------- |
+| PassiveRequestorEndpoint | `https://login.microsoftonline.com/login.srf` | `https://<tenantID>.ciamlogin.com/login.srf`              |
+| Audience                 | `https://login.microsoftonline.com/<tenant ID>/` (recommended). Existing federations that use the global endpoint `urn:federation:MicrosoftOnline` continue to work, but new federations should use the tenanted endpoint. | `https://login.microsoftonline.com/<tenant ID>/` (recommended). |
+| Issuer                   | The issuer URI of the partner IdP, for example `https://www.example.com/exk10l6w90DHM0yi...` | The issuer URI of the partner IdP, for example `https://www.example.com/exk10l6w90DHM0yi...` |
 
 Required claims for the WS-Fed token issued by the IdP:
 
@@ -106,17 +106,15 @@ This change doesn't affect:
 
 ## Sign-in endpoints
 
-Teams fully supports Google guest users on all devices. Google users can sign in to Teams from a common endpoint like https://teams.microsoft.com.
+Google guest users can sign in to your multitenant or Microsoft first-party apps by using a common endpoint (a general app URL that doesn't include your tenant context). During sign-in, the guest user selects **Sign-in options**, and then selects **Sign in to an organization**. They then enter the name of your organization and continue signing in using their Google credentials.
 
-Other applications' common endpoints might not support Google users. Google guest users must sign in by using a link that includes your tenant information. Following are examples:
+Google guest users can also use application endpoints that include your tenant information, for example:
 
- -  `https://myapps.microsoft.com/?tenantid= your tenant ID`
- -  `https://portal.azure.com/ your tenant ID`
- -  `https://myapps.microsoft.com/ your verified domain .onmicrosoft.com`
+ -  `https://myapps.microsoft.com/?tenantid=<your tenant ID>`
+ -  `https://myapps.microsoft.com/<your verified domain>.onmicrosoft.com`
+ -  `https://portal.azure.com/<your tenant ID>`
 
-If Google guest users try to use a link like `https://myapps.microsoft.com` or `https://portal.azure.com`, they'll get an error.
-
-You can also give Google guest users a direct link to an application or resource, as long as the link includes your tenant information. For example, `https://myapps.microsoft.com/signin/Twitter/ application ID?tenantId= your tenant ID`
+You can also give Google guest users a direct link to an application or resource that includes your tenant information, for example `https://myapps.microsoft.com/signin/X/<application ID>?tenantId=<your tenant ID>`.
 
 ### Step 1: Configure a Google developer project
 
