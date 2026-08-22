@@ -4,4 +4,4 @@ To learn more, see:
 
 - [Tutorial: End to end lifecycle management](/fabric/cicd/cicd-tutorial?azure-portal=true)
 - [Exploring CI/CD Capabilities in Microsoft Fabric: A Focus on Data Pipelines](https://blog.fabric.microsoft.com/en-us/blog/exploring-ci-cd-capabilities-in-microsoft-fabric-a-focus-on-data-pipelines/)
-- [Using the Microsoft Fabric REST APIs](/rest/api/fabric/articles/using-fabric-apis)
+- [Using the Microsoft Fabric REST APIs](/rest/api/fabric/articles/get-started/using-fabric-apis)
