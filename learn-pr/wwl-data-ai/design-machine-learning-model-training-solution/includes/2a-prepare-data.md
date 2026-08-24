@@ -36,7 +36,7 @@ A common approach for a data ingestion solution is to:
 
 ## Explore an example
 
-Imagine you want to train a weather forecasting model. You prefer one table in which all temperature measurements of each minute are combined. You want to create aggregates of the data and have a table of the average temperature per hour. To create the table, you want to transform the semi-structured data ingested from the IoT device that measures temperature at intervals, to tabular data.
+Imagine you want to train a weather forecasting model. You prefer one table in which all temperature measurements per machine are combined. You want to create aggregates of the data and have a table of the average temperature per machine per minute. To create the table, you want to transform the semi-structured data ingested from the IoT device that measures temperature at intervals, to tabular data.
 
 :::image type="content" source="../media/json-to-table.png" alt-text="Diagram showing an example of JSON data converted to a table.":::
 
