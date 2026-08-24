@@ -8826,3 +8826,33 @@ achievements:
   title: Discover AI for leaders in sustainability
   summary: In this learning path, sustainability business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and sustainability use cases.
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.badge
+  type: badge
+  title: Define a Microsoft AI strategy to create business value in nonprofit
+  summary: This module is designed to help nonprofit professionals adopt and implement Microsoft AI solutions. It discusses common use cases and real customer stories.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.define-microsoft-ai-strategy-manufacturing.badge
+  type: badge
+  title: Define a Microsoft AI strategy to create business value in manufacturing
+  summary: This module is designed to help manufacturing professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.define-microsoft-ai-strategy-retail.badge
+  type: badge
+  title: Define a Microsoft AI strategy to create business value in retail
+  summary: This module is designed to help retail professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.discover-ai-leaders-nonprofit.trophy
+  type: trophy
+  title: Discover AI for leaders in nonprofit
+  summary: In this learning path, nonprofit business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and nonprofit use cases.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.discover-microsoft-ai-leaders-manufacturing.trophy
+  type: trophy
+  title: Discover AI for leaders in manufacturing
+  summary: In this learning path, manufacturing business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and manufacturing use cases.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.discover-microsoft-ai-leaders-retail.trophy
+  type: trophy
+  title: Discover AI for leaders in retail
+  summary: In this learning path, retail business leaders find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and retail use cases.
+  iconUrl: /training/achievements/generic-trophy.svg
