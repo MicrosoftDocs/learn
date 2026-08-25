@@ -2,9 +2,10 @@
 uid: learn.wwl.introduction-agentic-devops-microsoft-tools-azure.define-agentic-devops-microsoft-environments
 title: Define agentic DevOps for Microsoft environments
 metadata:
+  zone_pivot_groups: video-or-text
   title: Define agentic DevOps for Microsoft environments
   description: "Define the agentic operating model, distinguish it from traditional automation, and understand the Microsoft platform spectrum of agentic capabilities."
-  ms.date: 04/10/2026
+  ms.date: 8/24/2026
   author: petender
   ms.author: petender
   ms.topic: unit

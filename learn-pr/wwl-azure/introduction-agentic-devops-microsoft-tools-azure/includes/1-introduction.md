@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fd40d8f9-6396-4b4e-934a-f98a9414c60c]
+
+::: zone-end
+
+::: zone pivot="text"
+
 You're already shipping reliable pipelines, managing infrastructure at scale, and responding to production incidents before most of your organization even opens their laptops. Your DevOps practices are mature. But your tools are changing faster than your workflows.
 
 AI-assisted capabilities are now embedded across the Microsoft platform you work in every day: inside GitHub Copilot, Azure DevOps, your CI/CD tooling, and the Azure operations experience itself. Some of those capabilities follow a fundamentally different model than the automation you've built and trusted for years. They observe context, reason about it, and take multi-step actions without explicit scripting for every case.
@@ -14,3 +22,8 @@ By the end of this module, you'll be able to:
 - Identify high-value DevOps tasks that benefit from agentic support.
 - Distinguish assistant, semi-autonomous, and autonomous operating modes.
 - Explain human oversight requirements for production-facing operations.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
