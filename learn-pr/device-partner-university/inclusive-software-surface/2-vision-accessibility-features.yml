@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.inclusive-software-surface.vision-accessibility-features
+title: Vision accessibility features
+metadata:
+  title: Vision Accessibility Features
+  description: This content is part of the "Support inclusive work with Windows accessibility features on Surface devices" module.
+  ms.date: 08/25/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-vision-accessibility-features.md)]
