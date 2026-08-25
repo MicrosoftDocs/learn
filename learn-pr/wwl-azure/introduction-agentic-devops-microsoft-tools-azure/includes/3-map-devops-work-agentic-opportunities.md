@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=aed17884-6f2b-4c9e-8189-94db49fc55df]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 You now have a working definition of agentic DevOps and understand what separates agents from automation. The next question is practical: **where in your daily work does agentic support actually matter?**
 
 Not every DevOps task is a good candidate. The tasks that return the most value, typically share a consistent profile:
@@ -73,3 +84,5 @@ Pipeline failure triage scores high on all three. Production deployment authoriz
 > Start with tasks in the **build, test, and code review** phases. They're high-frequency, low-risk, and give you concrete experience with agent behavior before you apply agents to production-facing operations.
 
 This prioritization directly informs how you set autonomy boundaries — the subject of the next unit.
+
+::: zone-end

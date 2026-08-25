@@ -30,6 +30,7 @@ modules:
 - learn.wwl.configure-manage-hyper-v # Supplementary - hosts, switches, networking, nested virtualization
 - learn.wwl.secure-hyper-v-workloads # Supplementary - guarded fabric, HGS, shielded VMs
 - learn.wwl.implement-high-availability-of-windows-server-vms # Cross-check - live migration, storage migration
+- learn.wwl.run-containers-windows-server # Supplementary - Windows containers, Docker, container management
 # GAP: Enable Enhanced session mode (no module)
 # GAP: SSH Direct for Linux VMs on Hyper-V (no module)
 # GAP: Discrete Device Assignment - DDA (no module)

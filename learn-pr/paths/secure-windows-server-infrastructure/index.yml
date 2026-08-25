@@ -28,11 +28,11 @@ modules:
 - learn.wwl.hardening-windows-server # Primary - LAPS, PAWs, securing DCs, SCT baselines, SMB encryption
 - learn.wwl.manage-defender-endpoint # Cross-check - Exploit Protection, WDAC/Device Guard, System Guard
 - learn.wwl.manage-defender-windows-client # Cross-check - SmartScreen via Windows Security Center
-# GAP: Implement OS security by using Group Policies as dedicated topic (no module)
-# GAP: Manage Windows Server security baseline by using OSConfig (no module)
+- learn.devrel.understand-active-directory-security-policies # GP security settings, account policies, audit policy, OSConfig baselines
 # GAP: Configure and manage Windows Defender Credential Guard - server-specific (no module)
 # 6.2 Secure Active Directory Domain Services (AD DS)
 - learn.wwl.manage-security-active-directory # Primary - user rights, delegation, Protected Users, NTLM blocking
+- learn.devrel.understand-windows-server-service-accounts # Service account types, sMSA/gMSA/dMSA selection and configuration
 - learn.wwl.secure-windows-server-user-accounts # Supplementary - authentication policy silos
 - learn.wwl.manage-security-controls-identity-access # Cross-check - Entra Password Protection for AD DS
 - learn.wwl.security-monitoring-and-governance # Cross-check - Defender for Identity (MDI)
