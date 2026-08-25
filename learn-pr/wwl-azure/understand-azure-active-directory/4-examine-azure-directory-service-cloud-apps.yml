@@ -6,7 +6,7 @@ metadata:
   description: "Examine Microsoft Entra ID as a directory service for cloud apps"
   ms.date: 05/12/2023
   author: wwlpublish
-  ms.author: rstearman
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 2
 content: |
