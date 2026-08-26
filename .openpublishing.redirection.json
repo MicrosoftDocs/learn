@@ -72346,6 +72346,161 @@
       "source_path": "learn-pr/wwl-data-ai/explore-microsoft-copilot-business-users/8-summary.md",
       "redirect_url": "/training/modules/explore-microsoft-copilot-business-users/9-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-create-business-value-nonprofit/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-create-business-value-nonprofit/2-ai-nonprofits.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-create-business-value-nonprofit/5-discover-how-enables-evidence-based-public-policy.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-create-business-value-nonprofit/7-discover-how-transforms-lives-through-access-essential-surgery.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-create-business-value-nonprofit/6-discover-predict-prevent-malnutrition.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-create-business-value-nonprofit/3-explore-ai-helps-nonprofits-achieve-mission-impact.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-create-business-value-nonprofit/4-explore-opportunities-ai-nonprofit.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-create-business-value-nonprofit/1-introduction.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-create-business-value-nonprofit/8-knowledge-check.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-create-business-value-nonprofit/9-summary.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/1b-ai-manufacturing.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/5-discover-ai-cuts-development-time.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/2-goals-challenges-manufacturing.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/1-introduction.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/6-knowledge-check.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/4-microsoft-ai-use-cases.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/3-opportunities-ai-manufacturing.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/7-summary.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-retail/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-retail/1b-ai-retail.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-retail/4-discover-ai-improves-shopping-experiences.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-retail/5-discover-potential-car-selling.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-retail/2-goals-challenges-retail.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-retail/1-introduction.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-retail/6-knowledge-check.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-retail/3-opportunities-ai-retail.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/define-microsoft-ai-strategy-retail/7-summary.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/discover-ai-leaders-nonprofit/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/discover-microsoft-ai-leaders-manufacturing/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/discover-microsoft-ai-leaders-retail/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
     }
   ]
 }

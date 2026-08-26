@@ -74,7 +74,7 @@ The name/blame/shame cycle operates like this:
 
 ## Fundamental principle from safety science
 
-[Erik Hollnagel](http://www.erikhollnagel.com/), a leading researcher in safety science, explains:
+Erik Hollnagel, a leading researcher in safety science, explains:
 
 _We must strive to understand that accidents don't happen because people gamble and lose._
 

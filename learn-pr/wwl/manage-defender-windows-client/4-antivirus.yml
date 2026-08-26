@@ -6,7 +6,7 @@ metadata:
   description: "Manage Microsoft Defender Antivirus"
   ms.date: 05/10/2023
   author: wwlpublish
-  ms.author: rstearman
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 6
 content: |

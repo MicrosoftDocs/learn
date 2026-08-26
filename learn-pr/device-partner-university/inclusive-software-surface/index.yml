@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dpu.inclusive-software-surface
+title: Support inclusive work with Windows accessibility features on Surface devices
+metadata:
+  title: Support Inclusive Work With Windows Accessibility Features On Surface Devices
+  description: 'In this module, you''ll learn how to use Windows accessibility features on Surface devices to support inclusive work. You''ll explore the vision, hearing and comprehension, and mobility and input accessibility features available in Windows 11. You''ll also learn how to customize these features to meet your needs.'
+  ms.date: 08/25/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  In this module, you'll learn how to use Windows accessibility features on Surface devices to support inclusive work. You'll explore the vision, hearing and comprehension, and mobility and input accessibility features available in Windows 11. You'll also learn how to customize these features to meet your needs.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Identify the vision, hearing and comprehension, and mobility and input accessibility features available in Windows 11.
+  - Customize Windows accessibility features to meet your needs.
+  - Support inclusive work with Windows accessibility features on Surface devices.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/inclusive-software-surface-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.inclusive-software-surface.introduction
+  - learn.dpu.inclusive-software-surface.vision-accessibility-features
+  - learn.dpu.inclusive-software-surface.hearing-and-comprehension-features
+  - learn.dpu.inclusive-software-surface.mobility-and-input-accessibility-features
+  - learn.dpu.inclusive-software-surface.knowledge-check
+  - learn.dpu.inclusive-software-surface.summary
+badge:
+  uid: learn.dpu.inclusive-software-surface.badge

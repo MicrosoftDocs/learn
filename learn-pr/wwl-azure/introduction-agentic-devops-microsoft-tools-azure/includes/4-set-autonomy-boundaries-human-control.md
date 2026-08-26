@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e1b4a668-dd57-46a0-b72e-1276693a3709]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Identifying high-value agentic opportunities is the easier half of the problem. The harder half is deciding exactly how much autonomy to grant for each one. And also building the guardrails that keep your production environment safe when agents operate within it.
 
 The engineers who get this concept wrong tend to fall into one of two failure modes:
@@ -75,3 +86,5 @@ When you build in observability from the start, you create the feedback loop tha
 
 > [!IMPORTANT]
 > Documenting your autonomy decisions is as important as making them. For each agentic capability you adopt, record the autonomy level assigned, the rationale, the human control points, and the review cycle. This documentation becomes the operating baseline for compliance reviews and team onboarding.
+
+::: zone-end

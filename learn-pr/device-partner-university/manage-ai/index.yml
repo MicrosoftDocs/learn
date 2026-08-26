@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.manage-ai
+title: 'Frontier Firms: Govern and manage AI experiences with Windows 11'
+metadata:
+  title: 'Frontier Firms: Govern And Manage AI Experiences With Windows 11'
+  description: In this module, you'll explore why governance is a critical part of scaling AI adoption and how Windows 11 works with management solutions such as Microsoft Intune and Microsoft Agent 365 to help organizations deploy, manage, and secure AI experiences across devices and users.
+  ms.date: 08/21/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  As organizations adopt AI, governance helps ensure AI experiences are deployed consistently, managed responsibly, and aligned with business requirements. In this module, you'll learn how governance supports AI adoption at scale and how Windows 11 works with Microsoft management solutions to help organizations maintain visibility, security, and control.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain why governance is important when scaling AI experiences.
+  - Describe the benefits of establishing governance before broadly deploying AI tools.
+  - Identify how Microsoft Intune can help manage AI experiences across Windows devices.
+  - Explain how Microsoft Agent 365 can help govern and manage AI agents.
+  - Describe how governance helps organizations support AI adoption while maintaining security, oversight, and control.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/manage-ai.svg 
+ratingEnabled: false
+levels:
+  - intermediate
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.manage-ai.introduction
+  - learn.dpu.manage-ai.governance
+  - learn.dpu.manage-ai.management
+  - learn.dpu.manage-ai.foundation
+  - learn.dpu.manage-ai.scenario
+  - learn.dpu.manage-ai.knowledge-check
+  - learn.dpu.manage-ai.summary
+badge:
+  uid: learn.dpu.manage-ai.badge
+

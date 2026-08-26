@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e658e933-b714-407f-87ce-0918e584d958]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 As an experienced DevOps engineer, you've built automation that runs without human intervention. A pipeline triggers on push, a script rotates credentials on a schedule, a policy blocks a non-compliant resource at the control plane. These are deterministic: given the same input, they produce the same output, every time.
 
 Agentic capabilities are different. They don't execute a fixed script. They reason about a goal, gather context from multiple sources, decide which tools to use, and take a sequence of actions — adapting their next step based on what they observe. That reasoning loop is what distinguishes an agent from automation.
@@ -53,3 +64,5 @@ This distinction of AI doing the information-intensive groundwork, and humans ma
 
 > [!NOTE]
 > The capabilities described in this module represent the Microsoft platform. Specific feature availability may vary by plan, region, and product release cycle. Always verify capability status in official Microsoft documentation before designing production workflows.
+
+::: zone-end

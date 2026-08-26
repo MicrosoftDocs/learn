@@ -6757,6 +6757,46 @@
       "redirect_url": "/azure/ai-foundry/concepts/prompt-flow"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/index.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/1-introduction.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/2-assess-models.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/3-manual-evaluations.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/3b-automated-evaluations.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/5-exercise.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/7-summary.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/connect-agent-to-mcp-tools/4-exercise.yml",
       "redirect_url": "/training/modules/connect-agent-to-mcp-tools/5-exercise"
     },

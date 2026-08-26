@@ -3,12 +3,12 @@ uid: learn.wwl.discover-data-onelake.understand-onelake
 title: Understand OneLake
 metadata:
   title: Understand OneLake
-  description: Explore OneLake as the central data lake in Microsoft Fabric, its key features, and how it enables data discovery and access across various data sources and services.
-  ms.date: 02/19/2026
+  description: Explore how OneLake provides one storage layer for all Fabric data in open formats and makes it discoverable across your tenant.
+  ms.date: 08/20/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-assisted
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-onelake.md)]
