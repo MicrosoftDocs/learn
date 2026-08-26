@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-sidecar-azure-app-service.diagnose-sidecar-failures
+title: Diagnose sidecar failures
+metadata:
+  title: Diagnose Sidecar Failures
+  description: Diagnose sidecar image pull, startup, resource, connectivity, and shared-file failures.
+  ms.date: 08/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-diagnose-sidecar-failures.md)]

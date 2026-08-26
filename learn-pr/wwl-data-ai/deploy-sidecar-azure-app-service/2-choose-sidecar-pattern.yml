@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-sidecar-azure-app-service.choose-sidecar-pattern
+title: Choose the App Service sidecar pattern
+metadata:
+  title: Choose the App Service Sidecar Pattern
+  description: Evaluate lifecycle, scaling, isolation, trust, and capacity trade-offs for App Service sidecars.
+  ms.date: 08/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-choose-sidecar-pattern.md)]
