@@ -5,8 +5,8 @@ metadata:
   title: Train and score models with Microsoft Fabric
   description: "Train and score models with Microsoft Fabric"
   ms.date: 11/25/2024
-  author: wwlpublish
-  ms.author: madiepev
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
   ms.custom:
   - build-2023
