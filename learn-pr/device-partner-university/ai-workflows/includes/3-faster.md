@@ -27,7 +27,8 @@ This approach can help users quickly identify which documents are most relevant,
 
 :::image type="content" source="../media/explorer.png" alt-text="Screenshot that shows Ask Copilot in File Explorer providing information about a file." lightbox="../media/explorer.png":::
 
-NOTE: Microsoft 365 Copilot features require appropriate licensing, and availability might vary by market and file type. Copilot in File Explorer might require a Microsoft 365 Copilot subscription. Availability and supported functionality might vary by market, file type, and feature release status.
+> [!NOTE]
+> Microsoft 365 Copilot features require appropriate licensing, and availability might vary by market and file type. Copilot in File Explorer might require a Microsoft 365 Copilot subscription. Availability and supported functionality might vary by market, file type, and feature release status.
 
 ## Find the information that matters
 
