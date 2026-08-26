@@ -5,7 +5,7 @@ metadata:
   description: "This module explains the built-in security features of Windows clients and how to implement them using policies."
   ms.date: 05/10/2023
   author: wwlpublish
-  ms.author: rstearman
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure
 title: Manage Microsoft Defender in Windows client
