@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-sidecar-azure-app-service.configure-sidecar-containers
+title: Configure main and sidecar containers
+metadata:
+  title: Configure Main and Sidecar Containers
+  description: Configure container roles, ports, environment variables, and managed-identity image pulls.
+  ms.date: 08/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-configure-sidecar-containers.md)]

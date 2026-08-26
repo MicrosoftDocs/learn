@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-sidecar-azure-app-service.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 08/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "A team runs one compact language model for each instance of an internal API. The model must start, stop, and scale with the API. Low-latency local calls are also important. Which hosting approach best fits these requirements?"
+    choices:
+    - content: "Deploy the model as a separate shared service with its own scaling policy."
+      isCorrect: false
+      explanation: "A separate service is useful when several apps share the model or the model needs independent scaling. Those benefits don't match the required one-to-one lifecycle and local communication."
+    - content: "Run the model in an App Service sidecar beside the main API container."
+      isCorrect: true
+      explanation: "An App Service sidecar follows the main container's lifecycle and adds one model process to every app instance. The containers can communicate over `localhost` without a separate service endpoint."
+    - content: "Add the model process to the main API container image."
+      isCorrect: false
+      explanation: "A single image can colocate the processes, but it prevents the team from updating the model image independently. A sidecar preserves separate images while keeping the required lifecycle coupling."
+  - content: "A sidecar-enabled app contains an API and a model server. External requests must reach only the API, while the API calls the model server locally. How should the container roles be configured?"
+    choices:
+    - content: "Set `isMain: true` on the API and `isMain: false` on the model server."
+      isCorrect: true
+      explanation: "App Service routes external traffic only to the one container marked as main. The model server remains a sidecar and is available to the API through the shared network namespace."
+    - content: "Set `isMain: true` on both containers and assign different target ports."
+      isCorrect: false
+      explanation: "A sidecar-enabled app needs exactly one main container. Unique ports prevent binding conflicts, but they don't allow multiple containers to receive the main role."
+    - content: "Set `isMain: false` on both containers and configure `WEBSITES_PORT` for the API."
+      isCorrect: false
+      explanation: "The site container model requires one main container for external routing. `WEBSITES_PORT` belongs to classic custom-container configuration and doesn't replace the site container role."
+  - content: "A production web app must pull private main and sidecar images from an Azure Container Registry that uses RBAC Registry Permissions. The app can't store registry passwords. Which configuration meets the requirement?"
+    choices:
+    - content: "Enable the registry admin account and store its credentials in `DOCKER_REGISTRY_SERVER_*` app settings."
+      isCorrect: false
+      explanation: "Registry admin credentials are stored secrets, and classic `DOCKER_REGISTRY_SERVER_*` settings don't configure site container image pulls. This approach doesn't meet the passwordless requirement."
+    - content: "Make the repositories public and omit authentication from each site container definition."
+      isCorrect: false
+      explanation: "Public repositories remove pull authentication, but they also remove the required private access boundary. Production images should remain private."
+    - content: "Assign a managed identity to the app, grant it `AcrPull`, and reference the identity in each private site container definition."
+      isCorrect: true
+      explanation: "Managed identity lets App Service authenticate without a registry password. For the registry's stated permission mode, the identity needs `AcrPull`, and the site container definitions identify the intended authentication type and identity. The registry must also accept ARM-scoped authentication because Web App image pulls rely on ARM-scoped credentials."
+  - content: "A model sidecar produces artifacts that must remain durable independently of the web app lifecycle and serve as a system of record for other applications. Where should the application store the artifacts?"
+    choices:
+    - content: "Store the artifacts under the web app's shared `/home` directory."
+      isCorrect: false
+      explanation: "The shared `/home` directory supports file exchange between the web app's containers, but it remains coupled to the App Service app and its storage quota. It isn't an independent system-of-record boundary."
+    - content: "Use Azure Blob Storage or Azure Files as the durable storage boundary."
+      isCorrect: true
+      explanation: "Azure Storage provides a durable boundary outside the sidecar and web app lifecycle. Other authorized applications can access the artifacts independently."
+    - content: "Write the artifacts to each container's writable image layer."
+      isCorrect: false
+      explanation: "A container's writable layer is ephemeral and isolated to that container instance. Restarts and scale operations can remove or separate the artifacts."
+  - content: "The main API receives a connection-refused error when it calls `http://localhost:11434`. Which diagnostic step most directly tests the failing boundary?"
+    choices:
+    - content: "Compare the API endpoint port with the sidecar target port, then inspect whether the sidecar process listens on that port."
+      isCorrect: true
+      explanation: "A connection refusal means that no process accepts the local connection at that moment. Comparing the configured ports and checking the sidecar listener directly tests the local connectivity boundary."
+    - content: "Scale the App Service plan before inspecting the container configuration."
+      isCorrect: false
+      explanation: "More capacity doesn't correct a mismatched port or a process that isn't listening. Scale only after logs and metrics show shared resource pressure."
+    - content: "Change the API endpoint from `localhost` to the sidecar container name."
+      isCorrect: false
+      explanation: "App Service sidecars share a network namespace and communicate through `localhost`. Container-name service discovery isn't the correct connectivity model."
