@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-sidecar-azure-app-service
+metadata:
+  title: Run Sidecar-Enabled AI Applications on Azure App Service
+  description: Learn how to choose, configure, connect, and troubleshoot sidecar containers for AI applications on Azure App Service.
+  ms.date: 08/25/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-app-service
+title: Run sidecar-enabled AI applications on Azure App Service
+summary: Use Azure App Service sidecars to run tightly coupled AI components beside a main Linux app container. Configure secure image pulls, local communication, shared files, and diagnostics for the complete application.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain when an App Service sidecar fits a tightly coupled AI application component.
+    - Configure main and sidecar containers, target ports, environment variables, and private registry authentication.
+    - Implement container communication over `localhost` and file exchange through the shared `/home` volume.
+    - Diagnose sidecar image pull, startup, resource, and connectivity failures.
+prerequisites: |
+  Before beginning this module, you should have:
+  - Experience building and running Linux containers.
+  - Basic understanding of Azure App Service and Azure Container Registry.
+  - Familiarity with Azure CLI and container networking concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-app-service
+- azure-container-registry
+subjects:
+- containers
+units:
+- learn.wwl.deploy-sidecar-azure-app-service.introduction
+- learn.wwl.deploy-sidecar-azure-app-service.choose-sidecar-pattern
+- learn.wwl.deploy-sidecar-azure-app-service.configure-sidecar-containers
+- learn.wwl.deploy-sidecar-azure-app-service.connect-containers-share-files
+- learn.wwl.deploy-sidecar-azure-app-service.diagnose-sidecar-failures
+- learn.wwl.deploy-sidecar-azure-app-service.exercise-deploy-ai-api-sidecar
+- learn.wwl.deploy-sidecar-azure-app-service.knowledge-check
+- learn.wwl.deploy-sidecar-azure-app-service.summary
+badge:
+  uid: learn.wwl.deploy-sidecar-azure-app-service.badge
