@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.assess-deployment-readiness
+title: Assess deployment readiness
+metadata:
+  title: Assess Deployment Readiness
+  description: "Assess Azure Databricks, Microsoft 365, identity, and network prerequisites for the Databricks Genie app."
+  ms.date: 08/26/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-assess-deployment-readiness.md)]

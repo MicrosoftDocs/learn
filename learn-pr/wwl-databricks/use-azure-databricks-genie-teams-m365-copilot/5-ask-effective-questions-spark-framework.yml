@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-databricks-genie-teams-m365-copilot.ask-effective-questions-spark-framework
+title: Ask effective questions with the SPARK framework
+metadata:
+  title: Ask Effective Questions with the SPARK Framework
+  description: "Use the SPARK framework—Scope, Period, Aggregation, Result, Key metric—to write clear, specific Genie questions and use multi-turn conversations to drill deeper."
+  ms.date: 08/24/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-ask-effective-questions-spark-framework.md)]

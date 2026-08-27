@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-databricks-genie-teams-m365-copilot.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary of key concepts covered in using Azure Databricks Genie in Microsoft Teams and Microsoft 365 Copilot."
+  ms.date: 08/25/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]

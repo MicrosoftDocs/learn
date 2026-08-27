@@ -34481,6 +34481,56 @@
       "redirect_url": "/training/modules/mitigate-incidents-microsoft-365-defender/"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-databricks/use-azure-databricks-genie-teams-copilot-studio/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-azure-databricks-genie-teams-m365-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/use-azure-databricks-genie-teams-copilot-studio/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-azure-databricks-genie-teams-m365-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/use-azure-databricks-genie-teams-copilot-studio/2-describe-genie-genie-spaces.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-azure-databricks-genie-teams-m365-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/use-azure-databricks-genie-teams-copilot-studio/3-explain-unity-catalog-governance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-azure-databricks-genie-teams-m365-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/use-azure-databricks-genie-teams-copilot-studio/4-describe-databricks-app-teams.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-azure-databricks-genie-teams-m365-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/use-azure-databricks-genie-teams-copilot-studio/5-use-databricks-app-teams.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-azure-databricks-genie-teams-m365-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/use-azure-databricks-genie-teams-copilot-studio/6-describe-copilot-studio-path.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-azure-databricks-genie-teams-m365-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/use-azure-databricks-genie-teams-copilot-studio/7-build-copilot-studio-agent.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-azure-databricks-genie-teams-m365-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/use-azure-databricks-genie-teams-copilot-studio/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-azure-databricks-genie-teams-m365-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/use-azure-databricks-genie-teams-copilot-studio/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/use-azure-databricks-genie-teams-m365-copilot/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-sci/manage-alerts-incidents-microsoft-defender-for-endpoints/index.md",
       "redirect_url": "/training/modules/mitigate-incidents-microsoft-365-defender/"
     },
