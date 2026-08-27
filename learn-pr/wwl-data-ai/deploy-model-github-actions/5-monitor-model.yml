@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-model-github-actions.monitor-model
+title: Monitor the deployed model
+metadata:
+  title: Monitor the deployed model
+  description: "Explore how to troubleshoot and monitor an endpoint and recognize signals that call for rollback, investigation, or retraining."
+  ms.date: 08/27/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-monitor-model.md)]

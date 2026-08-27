@@ -3,10 +3,10 @@ uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions.exercise
 title: Exercise
 metadata:
   title: Exercise
-  description: Exercise
-  author: wwlpublish
+  description: Trigger an Azure Machine Learning training job with a GitHub Actions workflow and observe the result in the repository.
+  author: madiepev
   ms.author: madiepev
-  ms.date: 12/01/2025
+  ms.date: 08/27/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,4 +15,3 @@ labModal: false
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise.md)]
-

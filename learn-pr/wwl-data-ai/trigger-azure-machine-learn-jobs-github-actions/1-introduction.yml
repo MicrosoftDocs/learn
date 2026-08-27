@@ -3,10 +3,10 @@ uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
-  author: wwlpublish
+  description: Understand why data scientists move from manual training runs to repeatable, auditable automation, and what concepts this module covers.
+  author: madiepev
   ms.author: madiepev
-  ms.date: 12/01/2025
+  ms.date: 08/27/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,4 +15,3 @@ labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-

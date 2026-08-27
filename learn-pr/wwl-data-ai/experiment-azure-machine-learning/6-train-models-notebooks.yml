@@ -4,9 +4,9 @@ title: Train and track models in notebooks
 metadata:
   title: Train and track models in notebooks
   description: Learn how to train and track models in Jupyter notebooks using MLflow in Azure Machine Learning.
-  author: wwlpublish
+  author: madiepev
   ms.author: madiepev
-  ms.date: 03/11/2026
+  ms.date: 08/27/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

@@ -14,14 +14,14 @@ pipeline_job.outputs.pipeline_job_transformed_data.mode = "upload"
 pipeline_job.outputs.pipeline_job_trained_model.mode = "upload"
 ```
 
-Or, you may want to set the default pipeline compute. When a compute isn't specified for a component, it will use the default compute instead:
+You can also set the default pipeline compute. A component uses this compute when its definition doesn't specify another target:
 
 ```python
 # set pipeline level compute
 pipeline_job.settings.default_compute = "aml-cluster"
 ```
 
-You may also want to change the default datastore to where all outputs will be stored:
+You can also set the default datastore where Azure Machine Learning stores the outputs:
 
 ```python
 # set pipeline level datastore
@@ -47,20 +47,20 @@ pipeline_job = ml_client.jobs.create_or_update(
 )
 ```
 
-After you submit a pipeline job, a new job will be created in the Azure Machine Learning workspace. A pipeline job also contains child jobs, which represent the execution of the individual components. The Azure Machine Learning studio creates a graphical representation of your pipeline. You can expand the **Job overview** to explore the pipeline parameters, outputs, and child jobs:
+After you submit a pipeline job, Azure Machine Learning creates a job in the workspace. The pipeline job contains child jobs that represent the execution of individual components. Azure Machine Learning studio displays a graphical representation of the pipeline. Expand **Job overview** to explore the pipeline parameters, outputs, and child jobs:
 
 :::image type="content" source="../media/pipeline-output.png" alt-text="Screenshot of the graphical representation of your pipeline in the Azure Machine Learning studio.":::
 
 To troubleshoot a failed pipeline, you can check the outputs and logs of the pipeline job and its child jobs. 
 
-- If there's an issue with the configuration of the pipeline itself, you'll find more information in the outputs and logs of the pipeline job.
-- If there's an issue with the configuration of a component, you'll find more information in the outputs and logs of the child job of the failed component. 
+- If the pipeline configuration fails, review the outputs and logs of the pipeline job.
+- If a component fails, review the outputs and logs of that component's child job.
 
 ## Schedule a pipeline job
 
 A pipeline is ideal if you want to get your model ready for production. Pipelines are especially useful for automating the retraining of a machine learning model. To automate the retraining of a model, you can schedule a pipeline.
 
-To schedule a pipeline job, you'll use the `JobSchedule` class to associate a schedule to a pipeline job.
+To schedule a pipeline job, use the `JobSchedule` class to associate a trigger with the pipeline job.
 
 There are various ways to create a schedule. A simple approach is to create a time-based schedule using the `RecurrenceTrigger` class with the following parameters:
 
@@ -80,7 +80,7 @@ recurrence_trigger = RecurrenceTrigger(
 )
 ```
 
-To schedule a pipeline, you'll need `pipeline_job` to represent the pipeline you've built:
+To schedule the pipeline, use `pipeline_job` to represent the pipeline definition:
 
 ```python
 from azure.ai.ml.entities import JobSchedule
@@ -94,7 +94,7 @@ job_schedule = ml_client.schedules.begin_create_or_update(
 ).result()
 ```
 
-The display names of the jobs triggered by the schedule will be prefixed with the name of your schedule. You can review the jobs in the Azure Machine Learning studio:
+The display names of jobs triggered by the schedule use the schedule name as a prefix. You can review the jobs in Azure Machine Learning studio:
 
 :::image type="content" source="../media/scheduled-jobs.png" alt-text="Screenshot of the completed jobs scheduled in the Azure Machine Learning studio.":::
 
@@ -105,5 +105,5 @@ ml_client.schedules.begin_disable(name=schedule_name).result()
 ml_client.schedules.begin_delete(name=schedule_name).result()
 ```
 
-> [!Tip]
-> Learn more about [the schedules you can create to trigger pipeline jobs in Azure Machine Learning](/azure/machine-learning/how-to-schedule-pipeline-job?tabs=python?azure-portal=true). Or, explore an [example notebook to learn how to work with schedules](https://github.com/Azure/azureml-examples/blob/main/sdk/python/schedules/job-schedule.ipynb?azure-portal=true).
+> [!TIP]
+> Learn more about [the schedules you can create to trigger pipeline jobs in Azure Machine Learning](/azure/machine-learning/how-to-schedule-pipeline-job?tabs=python&azure-portal=true). Or, explore an [example notebook to learn how to work with schedules](https://github.com/Azure/azureml-examples/blob/main/sdk/python/schedules/job-schedule.ipynb?azure-portal=true).

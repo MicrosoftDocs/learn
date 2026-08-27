@@ -1,15 +1,7 @@
-> [!Note]
-> This exercise requires an Azure subscription. If you do not already have an Azure subscription, sign up at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true).
+Now it's your turn to deploy and monitor a model in Azure Machine Learning.
 
-In this exercise, you will:
+In this exercise, you register, deploy, test, and monitor a model by using GitHub Actions and Azure Machine Learning.
 
-- Register the model with GitHub Actions.
-- Deploy the model to an online endpoint with GitHub Actions.
-- Test the deployed model.
+Launch the exercise and follow the instructions.
 
-## Instructions
-
-Follow these instructions to complete the challenge:
-
-- View the [challenge repo on GitHub](https://microsoftlearning.github.io/mslearn-mlops/?azure-portal=true).
-- Complete challenge 6: deploy and test the model.
+:::image type="content" source="../media/launch-exercise.png" alt-text="Illustration of a button that opens the model deployment and monitoring exercise in a new browser tab." link="https://go.microsoft.com/fwlink/?LinkId=2378100&azure-portal=true":::
