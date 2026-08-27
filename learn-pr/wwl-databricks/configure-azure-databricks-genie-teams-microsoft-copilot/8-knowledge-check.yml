@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Knowledge check"
+  ms.date: 08/26/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ai-usage: ai-generated
+durationInMinutes: 4
+quiz:
+  title: ""
+  questions:
+  - content: "A system engineer needs to enable the Databricks Genie integration before a Microsoft 365 administrator installs the app. Which administrator completes this task?"
+    choices:
+    - content: "An Azure Databricks account administrator enables the account-level preview."
+      isCorrect: true
+      explanation: "The Databricks Genie for Microsoft Teams preview is controlled from the Azure Databricks account console."
+    - content: "A Teams channel owner enables the preview in the channel configuration."
+      isCorrect: false
+      explanation: "A channel owner configures channel scope and visibility after the integration is available."
+    - content: "A Microsoft Entra application administrator enables the preview for the enterprise application."
+      isCorrect: false
+      explanation: "Microsoft Entra administrators manage application consent, not Azure Databricks account previews."
+  - content: "A sales group can open a shared Genie Agent, but members must see only the regions assigned to them. Which configuration preserves this requirement?"
+    choices:
+    - content: "Apply Unity Catalog row filters and grant each member the required data privileges."
+      isCorrect: true
+      explanation: "Unity Catalog evaluates data access for each signed-in user and enforces row filters and column masks."
+    - content: "Grant the group direct CAN USE permission on the agent's SQL warehouse."
+      isCorrect: false
+      explanation: "Warehouse access provides compute and doesn't define which rows each user can read."
+    - content: "Set the Teams channel message visibility option to private responses."
+      isCorrect: false
+      explanation: "Message visibility controls who sees a response in Teams, not which source data Genie can query."
+  - content: "An organization chooses to grant organization-wide consent for the Databricks Genie app through Teams admin center. Which administrator completes this action?"
+    choices:
+    - content: "A Global Administrator."
+      isCorrect: true
+      explanation: "Only a Global Administrator grants organization-wide consent to Microsoft Graph permissions through Teams admin center."
+    - content: "A Teams Administrator."
+      isCorrect: false
+      explanation: "A Teams Administrator can inspect the requested permissions but can't grant organization-wide Microsoft Graph consent through this flow."
+    - content: "A Teams channel owner."
+      isCorrect: false
+      explanation: "A channel owner can configure channel scope and resource-specific settings but can't grant organization-wide Microsoft Graph consent."
+  - content: "An organization wants only members of a designated business group to find and use Databricks Genie. Which app-centric management setting meets this requirement?"
+    choices:
+    - content: "Set availability to Specific users or groups and assign the designated group."
+      isCorrect: true
+      explanation: "App-centric management uses per-app availability to restrict an app to selected supported users or groups."
+    - content: "Set availability to Everyone and use a channel-wide Genie scope."
+      isCorrect: false
+      explanation: "A channel-wide scope selects the Genie destination but doesn't restrict tenant-wide app availability."
+    - content: "Set availability to No one and pin the app with a Teams setup policy."
+      isCorrect: false
+      explanation: "Pinning doesn't override app availability, so an app assigned to no one remains unavailable."

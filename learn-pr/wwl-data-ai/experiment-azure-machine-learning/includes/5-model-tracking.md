@@ -45,10 +45,10 @@ When you prefer working in notebooks on a local device, you can also make use of
 6. Use the following code in your local notebook to configure MLflow to point to the Azure Machine Learning workspace, and set it to the workspace tracking URI.
 
     ```python
-    mlflow.set_tracking_uri = "MLFLOW-TRACKING-URI"
+    mlflow.set_tracking_uri("MLFLOW-TRACKING-URI")
     ```
 
-> [!Tip]
+> [!TIP]
 > Learn about alternative approaches to [set up the tracking environment when working on a local device](/azure/machine-learning/how-to-use-mlflow-cli-runs?azure-portal=true). For example, you can also use the Azure Machine Learning SDK v2 for Python, together with the workspace configuration file, to set the tracking URI.
 
 When you configured MLflow to track your model's results and store it in your Azure Machine Learning workspace, you're ready to experiment in a notebook.

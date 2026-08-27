@@ -9,7 +9,7 @@ There are two main reasons why you'd use components:
 - To build a pipeline.
 - To share ready-to-go code.
 
-You'll want to create components when you're *preparing your code for scale*. When you're done with experimenting and developing, and ready to move your model to production. 
+Create components when you prepare experimental code for repeatable production workflows.
 
 Within Azure Machine Learning, you can create a component to store code (in your preferred language) within the workspace. Ideally, you design a component to perform a specific action that is relevant to your machine learning workflow. 
 
@@ -35,8 +35,8 @@ To create a component, you need two files:
 
 You can create the YAML file, or use the `command_component()` function as a decorator to create the YAML file.
 
-> [!Tip]
-> Here, we'll focus on creating a YAML file to create a component. Alternatively, learn more about [how to create components using `command_component()`](/azure/machine-learning/how-to-create-component-pipeline-python?azure-portal=true). 
+> [!TIP]
+> This unit focuses on defining a component in YAML. Alternatively, learn [how to create components using `command_component()`](/azure/machine-learning/how-to-create-component-pipeline-python?azure-portal=true).
 
 For example, you may have a Python script `prep.py` that prepares the data by removing missing values and normalizing the data:
 
@@ -78,7 +78,7 @@ output_df = df.to_csv(
 )
 ```
 
-To create a component for the `prep.py` script, you'll need a YAML file `prep.yml`:
+To create a component for the `prep.py` script, define a YAML file named `prep.yml`:
 
 ```yml
 $schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
@@ -113,10 +113,10 @@ When you've loaded the component, you can use it in a pipeline or register the c
 
 ## Register a component
 
-To use components in a pipeline, you'll need the script and the YAML file. To make the components accessible to other users in the workspace, you can also register components to the Azure Machine Learning workspace.
+To use a local component in a pipeline, keep the script and YAML definition together. To make the component accessible to other workspace users, register it in the Azure Machine Learning workspace.
 
 You can register a component with the following code:
 
 ```python
-prep = ml_client.components.create_or_update(prepare_data_component)
+prep = ml_client.components.create_or_update(loaded_component_prep)
 ```

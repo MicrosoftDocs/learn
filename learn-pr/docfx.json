@@ -1623,7 +1623,6 @@
                 "wwl-data-ai/translate-text-azure-ai-translator-azure-database-postgresql/**.yml": "180-days",
                 "wwl-data-ai/translate-text-with-translator-service/**.yml": "180-days",
                 "wwl-data-ai/trigger-azure-machine-learn-jobs-github-actions/**.yml": "180-days",
-                "wwl-data-ai/use-azure-machine-learn-job-for-automation/**.yml": "180-days",
                 "wwl-data-ai/use-azure-machine-learning-inferencing-azure-database-postgresql/**.yml": "180-days",
                 "wwl-data-ai/use-own-data-azure-openai/**.yml": "180-days",
                 "wwl-data-ai/use-prebuilt-form-recognizer-models/**.yml": "180-days",

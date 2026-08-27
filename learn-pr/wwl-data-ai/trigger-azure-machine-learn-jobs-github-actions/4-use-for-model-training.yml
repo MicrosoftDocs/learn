@@ -1,18 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions.use-for-model-training
-title: Use GitHub Actions for model training
+title: Validate changes with GitHub Actions
 metadata:
-  title: Use GitHub Actions for model training
-  description: Use GitHub Actions for model training
-  author: wwlpublish
+  title: Validate changes with GitHub Actions
+  description: Learn how GitHub Actions workflows, triggers, jobs, steps, and runners run linting and unit tests as quality gates on pull requests, and how branch protection makes those checks required.
+  author: madiepev
   ms.author: madiepev
-  ms.date: 12/01/2025
+  ms.date: 08/27/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 azureSandbox: false
 labModal: false
-durationInMinutes: 7
+durationInMinutes: 5
 content: |
   [!include[](includes/4-use-for-model-training.md)]
-

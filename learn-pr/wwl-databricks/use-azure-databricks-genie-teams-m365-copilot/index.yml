@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.use-azure-databricks-genie-teams-m365-copilot
+metadata:
+  title: Use Azure Databricks Genie in Microsoft Teams and Microsoft 365 Copilot
+  description: "Learn to use Azure Databricks Genie from Microsoft Teams and Microsoft 365 Copilot. Ask effective data questions using the SPARK framework, interpret and verify AI-generated answers, and apply responsible-use practices."
+  ms.date: 08/25/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: azure-databricks
+  ai-usage: ai-generated
+title: Use Azure Databricks Genie in Microsoft Teams and Microsoft 365 Copilot
+summary: Get fast, trustworthy answers to your data questions without leaving Microsoft Teams or Microsoft 365 Copilot. Learn to recognize the Genie surfaces available in your organization, ask well-structured questions using the SPARK framework, verify the answers you receive, and use AI-generated data responsibly to support better decisions.
+abstract: |
+  By the end of this module, you can:
+  - Identify the Azure Databricks Genie surfaces available to business users and select the one that fits your working context.
+  - Use the Databricks Genie app in Microsoft Teams to ask data questions via direct message and channel mentions.
+  - Invoke Genie from Microsoft 365 Copilot using the More agents option and the @Databricks mention.
+  - Apply the SPARK framework to write clear, specific Genie questions and use multi-turn conversations to drill deeper.
+  - Interpret a Genie response using an inspect-verify-refine workflow to check assumptions and spot errors.
+  - Recognize the limits of AI-generated data answers and apply responsible-use practices when sharing and acting on results.
+prerequisites: |
+  - Familiarity with Microsoft Teams (using apps, messages, and channels).
+  - Familiarity with Microsoft 365 Copilot (chat, mentions, and agents).
+  - No technical knowledge of Azure Databricks is required.
+  - Your organization has already set up a Genie experience for you to use.
+iconUrl: /learn/achievements/azure-databricks.svg
+levels:
+- beginner
+roles:
+- business-analyst
+- business-user
+products:
+- azure-databricks
+- ms-copilot
+- m365
+- office-teams
+subjects:
+- artificial-intelligence
+- data-management
+- chatbots
+units:
+- learn.wwl.use-azure-databricks-genie-teams-m365-copilot.introduction
+- learn.wwl.use-azure-databricks-genie-teams-m365-copilot.explore-genie-surfaces
+- learn.wwl.use-azure-databricks-genie-teams-m365-copilot.use-genie-teams
+- learn.wwl.use-azure-databricks-genie-teams-m365-copilot.use-genie-m365-copilot
+- learn.wwl.use-azure-databricks-genie-teams-m365-copilot.ask-effective-questions-spark-framework
+- learn.wwl.use-azure-databricks-genie-teams-m365-copilot.interpret-verify-refine-answers
+- learn.wwl.use-azure-databricks-genie-teams-m365-copilot.use-ai-generated-answers-responsibly
+- learn.wwl.use-azure-databricks-genie-teams-m365-copilot.knowledge-check
+- learn.wwl.use-azure-databricks-genie-teams-m365-copilot.summary
+badge:
+  uid: learn.wwl.use-azure-databricks-genie-teams-m365-copilot.badge

@@ -1,46 +1,50 @@
 ### YamlMime:Module
 uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions
 metadata:
-  title: Trigger Azure Machine Learning jobs with GitHub Actions
-  description: MLOps, machine learning operations
-  author: wwlpublish
+  title: Automate model training with GitHub Actions
+  description: Choose this module if you want to automate and validate model training with GitHub Actions and Azure Machine Learning pipelines.
+  author: madiepev
   ms.author: madiepev
-  ms.date: 12/01/2025
+  ms.date: 08/27/2026
   ms.service: azure-machine-learning
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
-title: Trigger Azure Machine Learning jobs with GitHub Actions
-summary: Learn how to automate your machine learning workflows by using GitHub Actions.
+title: Automate model training with GitHub Actions
+summary: Choose this module if you want to automate and validate model training with GitHub Actions and Azure Machine Learning pipelines.
 abstract: |
-  In this module, you'll learn how to:
-  - Create and assign a service principal the permissions needed to run an Azure Machine Learning job.
-  - Store Azure credentials securely using secrets in GitHub Secrets.
-  - Create a GitHub Action using YAML that uses the stored Azure credentials to run an Azure Machine Learning job.
+  In this module, you learn how to:
+  - Identify which machine learning assets to version in Git and which belong in purpose-built services such as data stores and model registries.
+  - Describe trunk-based development practices — short-lived branches, pull requests, and branch protection rules — that keep the shared branch stable while allowing safe iteration.
+  - Explain how GitHub Actions workflows validate code changes with linting and unit tests, and how branch protection can require those checks before merging.
+  - Compare service principal client secrets with workload identity federation, and explain why OpenID Connect is the preferred authentication approach for GitHub Actions workflows that call Azure.
+  - Describe how a GitHub Actions workflow submits Azure Machine Learning command and pipeline jobs, and explain how an intermediary converts Azure events into `repository_dispatch` events.
 prerequisites: |
-  - Programming experience with Python or R
   - Experience developing and training machine learning models
-  - Familiarity with basic Azure Machine Learning concepts
+  - Familiarity with basic Azure Machine Learning concepts, including workspaces and training jobs
+  - Basic familiarity with GitHub repositories, branches, and pull requests
 iconUrl: /training/achievements/trigger-azure-machine-learn-jobs-github-actions.svg
 levels:
-- intermediate
+- beginner
 roles:
 - data-scientist
-- devops-engineer
 products:
 - azure-machine-learning
 - github
 subjects:
 - artificial-intelligence
+- devops
 - machine-learning
 units:
 - learn.wwl.trigger-azure-machine-learn-jobs-github-actions.introduction
 - learn.wwl.trigger-azure-machine-learn-jobs-github-actions.understand-business-problem
 - learn.wwl.trigger-azure-machine-learn-jobs-github-actions.explore-solution-architecture
 - learn.wwl.trigger-azure-machine-learn-jobs-github-actions.use-for-model-training
+- learn.wwl.trigger-azure-machine-learn-jobs-github-actions.connect-github-actions-azure
+- learn.wwl.trigger-azure-machine-learn-jobs-github-actions.trigger-azure-machine-learning-jobs
 - learn.wwl.trigger-azure-machine-learn-jobs-github-actions.exercise
 - learn.wwl.trigger-azure-machine-learn-jobs-github-actions.knowledge-check
 - learn.wwl.trigger-azure-machine-learn-jobs-github-actions.summary
 badge:
   uid: learn.wwl.trigger-azure-machine-learning-jobs-github-actions.badge
-

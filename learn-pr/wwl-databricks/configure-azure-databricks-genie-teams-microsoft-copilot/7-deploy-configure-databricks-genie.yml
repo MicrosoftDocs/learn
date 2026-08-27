@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.deploy-configure-databricks-genie
+title: Deploy and configure Databricks Genie
+metadata:
+  title: Deploy and Configure Databricks Genie
+  description: "Install the Databricks Genie app, assign it to users, and configure workspace and channel settings."
+  ms.date: 08/26/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-deploy-configure-databricks-genie.md)]
