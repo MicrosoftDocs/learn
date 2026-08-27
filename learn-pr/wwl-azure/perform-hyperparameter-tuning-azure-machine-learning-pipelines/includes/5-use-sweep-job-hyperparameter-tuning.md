@@ -7,7 +7,7 @@ To run a sweep job, you need to create a training script just the way you would 
 - Include an argument for each hyperparameter you want to vary.
 - Log the target performance metric with **MLflow**. A logged metric enables the sweep job to evaluate the performance of the trials it initiates, and identify the one that produces the best performing model.
 
-> [!Note]
+> [!NOTE]
 > Learn how to [track machine learning experiments and models with MLflow within Azure Machine Learning](/azure/machine-learning/how-to-use-mlflow-cli-runs?azure-portal=true).
 
 For example, the following example script trains a logistic regression model using a `--regularization` argument to set the *regularization rate* hyperparameter, and logs the *accuracy* metric with the name `Accuracy`:
@@ -57,7 +57,7 @@ job = command(
     inputs={
         "reg_rate": 0.01,
     },
-    environment="AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest",
+    environment="AzureML-sklearn-1.5@latest",
     compute="aml-cluster",
     )
 ```
@@ -97,9 +97,9 @@ returned_sweep_job = ml_client.create_or_update(sweep_job)
 
 ## Monitor and review sweep jobs
 
-You can monitor sweep jobs in Azure Machine Learning studio. The sweep job will initiate trials for each hyperparameter combination to be tried. For each trial, you can review all logged metrics. 
+You can monitor sweep jobs in Azure Machine Learning studio. The sweep job initiates a trial for each selected hyperparameter combination. For each trial, you can review all logged metrics.
 
 Additionally, you can evaluate and compare models by visualizing the trials in the studio. You can adjust each chart to show and compare the hyperparameter values and metrics for each trial.
 
-> [!Tip]
+> [!TIP]
 > Learn more about how to [visualize hyperparameter tuning jobs](/azure/machine-learning/how-to-tune-hyperparameters#visualize-hyperparameter-tuning-jobs?azure-portal=true).

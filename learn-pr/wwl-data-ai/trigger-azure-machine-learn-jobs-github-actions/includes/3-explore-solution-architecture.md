@@ -1,25 +1,31 @@
-It’s important to understand the overall picture before moving ahead with the implementation to ensure all the requirements are met. We also want to ensure the approach is easily adaptable in the future. The focus of this exercise is to start to use GitHub Actions as the orchestration and automation tool for the machine learning operations (MLOps) strategy defined in the solution architecture. 
+With your training scripts and job definitions in source control, the next challenge is protecting them. Two data scientists editing the same file on the `main` branch at the same time can create conflicts and, more importantly, accidental breaks in code that others depend on. Trunk-based development gives your team a structured way to evolve the model while keeping production code stable.
 
-![Diagram of machine learning operations architecture.](../media/01-01-architecture.png)
+## Keep the shared branch stable
 
-> [!Note]
-> The diagram is a simplified representation of a MLOps architecture. To view a more detailed architecture, explore the various use cases in the [MLOps (v2) solution accelerator](https://github.com/Azure/mlops-v2).
+In trunk-based development, contributors integrate changes into one shared branch, typically `main`. Teams keep this branch healthy so it remains a reliable starting point for new work.
 
-The architecture includes:
+For the Proseware project, the team requires changes to reach `main` through pull requests. This policy gives reviewers and automated checks a chance to evaluate each change before integration.
 
-1. **Setup**: Create all necessary Azure resources for the solution.
-2. **Model development (inner loop)**: Explore and process the data to train and evaluate the model.
-3. **Continuous integration**: Package and register the model.
-4. **Model deployment (outer loop)**: Deploy the model.
-5. **Continuous deployment**: Test the model and promote to production environment.
-6. **Monitoring**: Monitor model and endpoint performance.
+## Short-lived feature branches
 
-Specifically, we’re going to be automating the training portion of the model development, or inner loop, which will ultimately allow us to quickly train and register multiple models for deployment to staging and production environments. 
+When a data scientist wants to experiment with a new feature — say, adding a BMI variable to the diabetes model — they create a short-lived branch from `main`. The work happens there, isolated from everyone else's code. When the experiment is ready to review, the data scientist opens a pull request.
 
-The Azure Machine Learning workspace, Azure Machine Learning compute, and GitHub repository have all been created for you by the infrastructure team. 
+Short-lived branches reduce the chance of diverging far from `main`, which makes merging easier and conflicts smaller.
 
-In addition, the code to train the classification model is production-ready and the data needed to train the model is available in an Azure Blob Storage connected to the Azure Machine Learning workspace. 
+## Pull requests, reviews, and required checks
 
-Your implementation will enable the move from inner to outer loop to be an automated process that happens whenever a data scientist pushes new model code to the GitHub repository, enabling the continuous delivery of machine learning models to downstream consumers of the model, like the web application that will use the diabetes classification model.
+A pull request does two things: it shows reviewers exactly what changed, and it becomes the trigger point for automated checks. Reviewers can ask questions, request changes, or approve the work. Automation runs in parallel with the review.
 
+**Branch protection rules** or **rulesets** can enforce this process. Depending on repository settings, a rule on `main` can:
 
+- Restrict direct pushes
+- Require a minimum number of approvals before merging
+- Require specific status checks to pass before merging
+
+GitHub Actions workflows can produce the checks that a rule requires. You explore these checks in the next unit.
+
+> [!NOTE]
+> Branch protection rules and rulesets are GitHub repository settings, not GitHub Actions. The workflow defines *what* runs. The protection rule decides *whether a merge is allowed* based on the result.
+
+> [!TIP]
+> Consider a model change that needs several weeks of work. How could you split it into smaller changes that merge into `main` without leaving a long-lived branch?

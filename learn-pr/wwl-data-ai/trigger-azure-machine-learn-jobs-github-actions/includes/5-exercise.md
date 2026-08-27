@@ -1,14 +1,7 @@
-> [!Note]
-> This exercise requires an Azure subscription. If you do not already have an Azure subscription, sign up at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true).
+Now it's your turn to automate model training with GitHub Actions.
 
-In this exercise, you will:
+In this exercise, you configure a GitHub Actions workflow that submits an Azure Machine Learning training job and reports the result.
 
-- Run the Azure Machine Learning job by using GitHub Actions.
-- Trigger the pipeline with a change to the repo.
+Launch the exercise and follow the instructions.
 
-## Instructions
-
-Follow these instructions to complete the challenge:
-
-- View the [challenge repo on GitHub](https://microsoftlearning.github.io/mslearn-mlops/?azure-portal=true).
-- Complete challenge 2: trigger the Azure Machine Learning job with GitHub Actions.
+:::image type="content" source="../media/launch-exercise.png" alt-text="Illustration of a button that opens the automated model training exercise in a new browser tab." link="https://go.microsoft.com/fwlink/?LinkId=2378101&azure-portal=true":::

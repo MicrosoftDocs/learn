@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions.trigger-azure-machine-learning-jobs
+title: Trigger Azure Machine Learning jobs and pipelines
+metadata:
+  title: Trigger Azure Machine Learning jobs and pipelines
+  description: Learn how GitHub events start workflows, how a workflow submits Azure Machine Learning jobs, and how an intermediary forwards Azure events to GitHub.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 08/27/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-trigger-azure-machine-learning-jobs.md)]

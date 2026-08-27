@@ -4,9 +4,9 @@ title: Run an automated machine learning experiment
 metadata:
   title: Run an Automated Machine Learning experiment
   description: Learn how to configure and submit an automated machine learning experiment run with the Python SDK (v2) for Azure Machine Learning.
-  author: wwlpublish
+  author: madiepev
   ms.author: madiepev
-  ms.date: 03/11/2026
+  ms.date: 08/27/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

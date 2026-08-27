@@ -4,13 +4,12 @@ title: Use a sweep job for hyperparameter tuning
 metadata:
   title: Use a sweep job for hyperparameter tuning
   description: Use a sweep job for hyperparameter tuning
-  author: wwlpublish
+  author: madiepev
   ms.author: madiepev
-  ms.date: 12/01/2025
+  ms.date: 08/27/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 8
 content: |
   [!include[](includes/5-use-sweep-job-hyperparameter-tuning.md)]
-

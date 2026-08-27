@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.prepare-azure-databricks-workspace
+title: Prepare the Azure Databricks workspace
+metadata:
+  title: Prepare the Azure Databricks Workspace
+  description: "Configure Azure Databricks preview, AI, collaboration, entitlement, warehouse, and network prerequisites."
+  ms.date: 08/26/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-prepare-azure-databricks-workspace.md)]

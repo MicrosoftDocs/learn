@@ -3,41 +3,74 @@ uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Knowledge check
-  author: wwlpublish
+  description: Test your understanding of source control for machine learning, trunk-based development, GitHub Actions quality gates, Azure authentication, and triggering Azure Machine Learning jobs.
+  author: madiepev
   ms.author: madiepev
-  ms.date: 12/01/2025
+  ms.date: 08/27/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
   module_assessment: true
+  ai_generated_module_assessment: false
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
-  - content: "When configuring a GitHub Actions workflow to run an Azure Machine Learning job, what is a convenient trigger when testing whether the workflow works as expected?"
+  - content: "A team stores its training scripts, pipeline component YAML files, and a trained model binary in the same GitHub repository. Which item is misplaced?"
     choices:
-    - content: "`on: workflow_dispatch`"
+    - content: "The trained model binary."
       isCorrect: true
-      explanation: "Correct. Use `on: workflow_dispatch` to be able to manually trigger a workflow."
-    - content: "`on: [push]`"
+      explanation: "Correct. Register the binary as a named and versioned model asset in Azure Machine Learning. Git is better suited to the text-based assets that define how the model is produced."
+    - content: "The pipeline component YAML files."
       isCorrect: false
-      explanation: "Incorrect. Use `on: [push]` to trigger a workflow with a push to the repo."
-    - content: "`on: [pull_request]`"
+      explanation: "Incorrect. Component YAML files define reusable pipeline steps and belong in the repository alongside the scripts they reference. They're text-based and change alongside code."
+    - content: "The training scripts."
       isCorrect: false
-      explanation: "Incorrect. Use `on: [pull_request]` to trigger a workflow when a pull request is opened."
-  - content: "Which steps need to be included in a GitHub Actions workflow to train a model?"
+      explanation: "Incorrect. Training scripts are the core code asset that defines how a model is produced. They belong in the repository so they can be versioned, reviewed, and traced to model outputs."
+  - content: "A data scientist directly pushes a change to the `main` branch that breaks the training script. Which practice would have prevented this?"
     choices:
-    - content: "Fork the repo, sign in to Azure, install CLI and run an Azure Machine Learning job."
-      isCorrect: false
-      explanation: "Incorrect. You need to check out the repo and install the Machine Learning extension for the CLI to run a job."
-    - content: "Check out the repo, sign in to Azure, install the ML extension and trigger an Azure Machine Learning job."
+    - content: "A branch protection rule blocking direct pushes to `main`, combined with a pull request process."
       isCorrect: true
-      explanation: "Correct. The job can train a model by using Azure Machine Learning compute."
-    - content: "Check out the repo, sign in to Azure, install CLI and run trigger an Azure Machine Learning job."
+      explanation: "Correct. A branch protection rule can restrict direct pushes to `main`. The pull request process then provides review and validation checkpoints before a change merges."
+    - content: "A scheduled workflow that tests `main` nightly."
       isCorrect: false
-      explanation: "Incorrect. You need to install the Machine Learning extension for the CLI to run a job."
-
+      explanation: "Incorrect. A nightly test would detect the break after it happened, not before. It doesn't prevent the direct push."
+    - content: "A repository secret that stores Azure credentials for the main branch only."
+      isCorrect: false
+      explanation: "Incorrect. Repository secrets store credentials for workflows, not access controls. They don't restrict who can push to a branch."
+  - content: "A team wants linting to run automatically whenever someone opens a pull request, and the merge must be blocked if linting fails. Which two GitHub features work together to enforce this?"
+    choices:
+    - content: "A workflow with a `pull_request` trigger, and a branch protection rule that requires that workflow's status check."
+      isCorrect: true
+      explanation: "Correct. The `pull_request` trigger starts the workflow on every pull request. The branch protection rule then makes the linting status check mandatory, so the merge button stays disabled until the check passes."
+    - content: "A workflow with a `push` trigger on `main`, and a required reviewer approval."
+      isCorrect: false
+      explanation: "Incorrect. A `push` trigger on `main` fires after a change has already merged — it can't block a failing change before it reaches `main`."
+    - content: "A scheduled workflow and a GitHub environment with required reviewers."
+      isCorrect: false
+      explanation: "Incorrect. A scheduled workflow runs on a timer, not in response to pull requests. It wouldn't validate a specific proposed change at the time it's opened."
+  - content: "A team uses a service principal with client secrets stored in GitHub secrets to authenticate their training workflow to Azure. A security review recommends switching to workload identity federation with OIDC. What is the primary security benefit?"
+    choices:
+    - content: "Workload identity federation issues short-lived tokens at runtime instead of storing long-lived credentials, so a compromised token has a limited window of validity."
+      isCorrect: true
+      explanation: "Correct. With OIDC, no persistent credential is stored. GitHub issues a token only for that workflow run, and Azure validates it directly. There's no secret to rotate or leak."
+    - content: "Workload identity federation automatically assigns the service principal the minimum required Azure role."
+      isCorrect: false
+      explanation: "Incorrect. Workload identity federation changes how authentication works, not which Azure role is assigned. Role assignment is a separate configuration step regardless of the authentication method."
+    - content: "Workload identity federation stores credentials encrypted in Azure Key Vault instead of GitHub secrets."
+      isCorrect: false
+      explanation: "Incorrect. Workload identity federation eliminates the need to store credentials at all. It doesn't move them to Key Vault — it replaces them with short-lived OIDC tokens."
+  - content: "Azure Event Grid reports that new training data arrived in storage. The team wants this event to start a GitHub Actions retraining workflow. Why does the design use an intermediary?"
+    choices:
+    - content: "GitHub Actions doesn't natively subscribe to Event Grid events, so an intermediary can receive the event, authenticate to GitHub, and send a `repository_dispatch` call."
+      isCorrect: true
+      explanation: "Correct. The intermediary translates the Azure event into an authenticated GitHub event that the workflow can receive."
+    - content: "Event Grid can send events only to services in the same Azure subscription."
+      isCorrect: false
+      explanation: "Incorrect. Event Grid supports several event handlers. The intermediary is needed here because GitHub Actions doesn't natively subscribe to Event Grid events."
+    - content: "A `repository_dispatch` event requires a pull request to exist before it can be sent."
+      isCorrect: false
+      explanation: "Incorrect. A `repository_dispatch` event is an API-level event with no dependency on pull requests. It can be sent by any authorized caller at any time."

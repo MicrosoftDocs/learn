@@ -12,7 +12,7 @@ An Azure Machine Learning pipeline is defined in a YAML file. The YAML file incl
 
 You can create the YAML file, or use the `@pipeline()` function to create the YAML file.
 
-> [!Tip]
+> [!TIP]
 > Review the [reference documentation for the `@pipeline()` function](/python/api/azure-ai-ml/azure.ai.ml.dsl?azure-portal=true).
 
 For example, if you want to build a pipeline that first prepares the data, and then trains the model, you can use the following code:
@@ -45,15 +45,15 @@ pipeline_job = pipeline_function_name(
 
 The `@pipeline()` function builds a pipeline consisting of two sequential steps, represented by the two loaded components.  
 
-To understand the pipeline built in the example, let's explore it step by step:
+To understand the pipeline built in the example, review its elements:
 
-1. The pipeline is built by defining the function `pipeline_function_name`. 
-1. The pipeline function expects `pipeline_job_input` as the overall pipeline input.
-1. The first pipeline step requires a value for the input parameter `input_data`. The value for the input will be the value of `pipeline_job_input`.
-1. The first pipeline step is defined by the loaded component for `prep_data`.
-1. The value of the `output_data` of the first pipeline step is used for the expected input `training_data` of the second pipeline step.
-1. The second pipeline step is defined by the loaded component for `train_model` and results in a trained model referred to by `model_output`.
-1. Pipeline outputs are defined by returning variables from the pipeline function.
+- The pipeline is built by defining the function `pipeline_function_name`.
+- The pipeline function expects `pipeline_job_input` as the overall pipeline input.
+- The first pipeline step requires a value for `input_data`. The pipeline passes the value of `pipeline_job_input`.
+- The first pipeline step is defined by the loaded component for `prep_data`.
+- The value of the `output_data` of the first pipeline step is used for the expected input `training_data` of the second pipeline step.
+- The second pipeline step is defined by the loaded component for `train_model` and results in a trained model referred to by `model_output`.
+- Pipeline outputs are defined by returning variables from the pipeline function.
 There are two outputs: 
     - `pipeline_job_transformed_data` with the value of `prep_data.outputs.output_data` 
     - `pipeline_job_trained_model` with the value of `train_model.outputs.model_output`
@@ -66,7 +66,7 @@ The result of running the `@pipeline()` function is a YAML file that you can rev
 print(pipeline_job)
 ```
 
-The output will be formatted as a YAML file, which includes the configuration of the pipeline and its components. Some parameters included in the YAML file are shown in the following example.
+The output uses YAML format and includes the configuration of the pipeline and its components. The following example shows some of the generated parameters.
 
 ```yml
 display_name: pipeline_function_name
@@ -82,7 +82,7 @@ jobs:
   prep_data:
     type: command
     inputs:
-      input_data:
+      training_data:
         path: ${{parent.inputs.pipeline_job_input}}
     outputs:
       output_data: ${{parent.outputs.pipeline_job_transformed_data}}
@@ -92,11 +92,11 @@ jobs:
       input_data:
         path: ${{parent.outputs.pipeline_job_transformed_data}}
     outputs:
-      output_model: ${{parent.outputs.pipeline_job_trained_model}}
+      model_output: ${{parent.outputs.pipeline_job_trained_model}}
 tags: {}
 properties: {}
 settings: {}
 ```
 
-> [!Tip]
+> [!TIP]
 > Learn more about [the pipeline job YAML schema to explore which parameters are included when building a component-based pipeline](/azure/machine-learning/reference-yaml-job-pipeline?azure-portal=true).

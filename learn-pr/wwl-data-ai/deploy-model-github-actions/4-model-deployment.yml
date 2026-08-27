@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-model-github-actions.model-deployment
-title: Model deployment
+title: Deploy, promote, and roll back a model with GitHub Actions
 metadata:
-  title: Model deployment
-  description: "Model deployment"
-  ms.date: 12/01/2025
-  author: wwlpublish
+  title: Deploy, promote, and roll back a model with GitHub Actions
+  description: "Explore how to deploy a model, safely shift traffic between versions, roll back a release, and automate the process with GitHub Actions."
+  ms.date: 08/27/2026
+  author: madiepev
   ms.author: madiepev
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 7
+durationInMinutes: 10
 content: |
   [!include[](includes/4-model-deployment.md)]

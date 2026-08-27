@@ -4,9 +4,9 @@ title: Evaluate models with the Responsible AI dashboard
 metadata:
   title: Evaluate models with the Responsible AI dashboard
   description: Learn how to evaluate a trained model using the Responsible AI dashboard in Azure Machine Learning.
-  author: wwlpublish
+  author: madiepev
   ms.author: madiepev
-  ms.date: 03/12/2026
+  ms.date: 08/27/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

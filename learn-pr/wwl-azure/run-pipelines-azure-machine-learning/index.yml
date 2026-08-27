@@ -2,19 +2,19 @@
 uid: learn.wwl.run-pipelines-azure-machine-learning
 metadata:
   title: Run pipelines in Azure Machine Learning
-  description: Learn how to create and use components to build pipeline in Azure Machine Learning. Run and schedule Azure Machine Learning pipelines to automate machine learning workflows.
-  author: wwlpublish
+  description: Choose this module if you want to automate multistep machine learning workflows with reusable components and Azure Machine Learning pipelines.
+  author: madiepev
   ms.author: madiepev
-  ms.date: 12/01/2025
+  ms.date: 08/27/2026
   ms.service: azure-machine-learning
   ms.subservice: pipelines
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
 title: Run pipelines in Azure Machine Learning
-summary: Learn how to create and use components to build pipeline in Azure Machine Learning. Run and schedule Azure Machine Learning pipelines to automate machine learning workflows.
+summary: Choose this module if you want to automate multistep machine learning workflows with reusable components and Azure Machine Learning pipelines.
 abstract: |
-  In this module, you'll learn how to:
+  In this module, you learn how to:
   - Create components.
   - Build an Azure Machine Learning pipeline.
   - Run an Azure Machine Learning pipeline.
@@ -39,4 +39,3 @@ units:
 - learn.wwl.run-pipelines-azure-machine-learning.summary
 badge:
   uid: learn.wwl.run-pipelines-azure-machine-learning.badge
-

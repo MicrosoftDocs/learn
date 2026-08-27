@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.validate-genie-agent-data-access
+title: Validate the Genie Agent and data access
+metadata:
+  title: Validate the Genie Agent and Data Access
+  description: "Validate the Genie Agent, embedded compute credentials, access control list, and Unity Catalog permissions."
+  ms.date: 08/26/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-validate-genie-agent-data-access.md)]

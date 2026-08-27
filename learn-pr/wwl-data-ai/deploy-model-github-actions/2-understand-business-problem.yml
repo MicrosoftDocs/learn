@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-model-github-actions.understand-business-problem
-title: Understand the business problem
+title: Prepare a model for deployment
 metadata:
-  title: Understand the business problem
-  description: "Understand the business problem"
-  ms.date: 12/01/2025
-  author: wwlpublish
+  title: Prepare a model for deployment
+  description: "Explore how to choose an endpoint type and manage registered MLflow model versions throughout their lifecycle."
+  ms.date: 08/27/2026
+  author: madiepev
   ms.author: madiepev
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-business-problem.md)]

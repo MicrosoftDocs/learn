@@ -1,24 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-model-github-actions
 metadata:
-  title: Deploy a model with GitHub Actions
-  description: machine learning operations, MLOps, model deployment, online endpoint
-  ms.date: 12/01/2025
-  author: wwlpublish
+  title: Deploy and monitor a model in Azure Machine Learning
+  description: Choose this module if you want to register, deploy, monitor, and roll back models by using GitHub Actions and protected environments.
+  ms.date: 08/27/2026
+  author: madiepev
   ms.author: madiepev
   ms.topic: module
   ms.service: azure-machine-learning
-title: Deploy a model with GitHub Actions
-summary: Learn how to automate and test model deployment with GitHub Actions and the Azure Machine Learning CLI (v2).
+  ai-usage: ai-assisted
+title: Deploy and monitor a model in Azure Machine Learning
+summary: Choose this module if you want to register, deploy, monitor, and roll back models by using GitHub Actions and protected environments.
 abstract: |
-  In this module, you'll learn how to:
-  - Deploy a model to a managed endpoint.
-  - Trigger model deployment with GitHub Actions.
-  - Test the deployed model.
+  After completing this module, you can:
+  - Register, version, and archive MLflow models throughout their lifecycle.
+  - Use GitHub environments to control access and require approval before production promotion.
+  - Deploy and troubleshoot a managed online endpoint, safely promote a model, and roll back to a previous version.
+  - Automate model deployment and testing with GitHub Actions.
+  - Monitor a deployed model and recognize signals that call for investigation or retraining.
 prerequisites: |
   - Programming experience with Python or R
   - Experience developing and training machine learning models
-  - Familiarity with basic Azure Machine Learning concepts
+  - Familiarity with basic Azure Machine Learning concepts, such as jobs, models, and endpoints
+  - Basic familiarity with GitHub and continuous integration/continuous deployment (CI/CD) concepts
 iconUrl: /training/achievements/deploy-model-github-actions.svg
 levels:
 - intermediate
@@ -36,10 +40,11 @@ units:
 - learn.wwl.deploy-model-github-actions.introduction
 - learn.wwl.deploy-model-github-actions.understand-business-problem
 - learn.wwl.deploy-model-github-actions.explore-solution-architecture
+- learn.wwl.deploy-model-github-actions.control-deployments-github-environments
 - learn.wwl.deploy-model-github-actions.model-deployment
+- learn.wwl.deploy-model-github-actions.monitor-model
 - learn.wwl.deploy-model-github-actions.exercise
 - learn.wwl.deploy-model-github-actions.knowledge-check
 - learn.wwl.deploy-model-github-actions.summary
 badge:
   uid: learn.wwl.deploy-model-github-actions.badge
-

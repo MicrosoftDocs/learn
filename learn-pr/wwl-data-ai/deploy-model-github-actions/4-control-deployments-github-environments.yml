@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-model-github-actions.control-deployments-github-environments
+title: Control deployments with GitHub environments
+metadata:
+  title: Control deployments with GitHub environments
+  description: "Use GitHub environments to scope deployment configuration and require protection rules before promoting a model."
+  ms.date: 08/27/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-control-deployments-github-environments.md)]
