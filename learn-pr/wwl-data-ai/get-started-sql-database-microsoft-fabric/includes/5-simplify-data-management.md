@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=626c4b83-adcb-4595-a2d6-193165d76b8d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Organizations often face challenges in managing and analyzing their data due to the complexity of integrating various data sources, ensuring data consistency, and maintaining real-time data availability. SQL Database in Microsoft Fabric addresses these challenges by providing a unified platform that simplifies data integration, enhances data consistency, and ensures near real-time data availability.
 
 ## Integrate with mirroring
@@ -26,3 +37,5 @@ These features enable scenarios such as querying Parquet, CSV, and Delta tables 
 | [**External data source**](/sql/t-sql/statements/create-external-data-source-transact-sql?azure-portal=true) | This enables you to define external data sources, such as files stored in OneLake. | ```'abfss://aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb@<onelake_account_name>.dfs.fabric.microsoft.com/bbbbbbbb-1111-2222-3333-cccccccccccc/Files/parquet/data1.parquet'; ``` |
 | [**External file format**](/sql/t-sql/statements/create-external-file-format-transact-sql?azure-portal=true) | This capability lets you specify the format of external files, such as Parquet, CSV, and Delta files. | ```CREATE EXTERNAL FILE FORMAT MyFileFormat WITH ( FORMAT_TYPE = DELIMITEDTEXT, FORMAT_OPTIONS ( FIELD_TERMINATOR = ',', STRING_DELIMITER = '"' ) ); ``` |
 | [**External table**](/sql/t-sql/statements/create-external-table-transact-sql?azure-portal=true) | This allows you to create tables that reference data stored outside the SQL database. | ```CREATE EXTERNAL TABLE MyExternalTable ( Column1 INT, Column2 NVARCHAR(50) ) WITH ( LOCATION = 'myfolder/myfile.csv', DATA_SOURCE = MyExternalDataSource, FILE_FORMAT = MyFileFormat ); ``` |
+
+::: zone-end
