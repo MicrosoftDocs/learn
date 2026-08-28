@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.microsoft-adaptive-accessories.surface-adaptive-kit
+title: Surface Adaptive Kit
+metadata:
+  title: Surface Adaptive Kit
+  description: This content is part of the "Configure Microsoft Adaptive Accessories for accessible productivity" module.
+  ms.date: 08/27/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-surface-adaptive-kit.md)]
