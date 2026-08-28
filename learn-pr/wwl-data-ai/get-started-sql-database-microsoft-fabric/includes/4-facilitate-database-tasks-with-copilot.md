@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=164fcd88-7e53-4de5-9e91-061ebc2d27e0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In today's fast-paced tech world, understanding AI is essential for enhancing applications and staying competitive. SQL Database in Fabric is key to this transformation, offering a robust platform for integrating AI. With capabilities like Natural Language to SQL, code completion, quick actions, and document-based Q&A, it empowers users to harness AI, and boost application performance. 
 
 These tools enable the creation of intelligent, responsive, and efficient applications that meet modern user demands.
@@ -27,3 +38,5 @@ To access Copilot features in the Fabric portal, open your SQL database and sele
 
 > [!NOTE]
 > Copilot for SQL database does not use data in tables to generate T-SQL suggestions.
+
+::: zone-end

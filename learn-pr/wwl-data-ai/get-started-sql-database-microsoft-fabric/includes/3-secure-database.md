@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3860f269-4a13-4564-b6d2-520ee24cceb5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 In a database, users have access to several capabilities aimed at safeguarding sensitive information. These security measures are capable of securing or masking data from users or roles without proper authorization, ensuring data protection across both the database and the SQL analytics endpoints. This ensures a smooth and secure user experience, with no need for changes to the existing applications.
 
@@ -27,3 +37,5 @@ It includes object-level security for database objects, column-level security fo
 You can manage database-level roles from Fabric portal by selecting **Security** and then choosing **Manage SQL security**.
 
 :::image type="content" source="../media/3-manage-sql-security.png" alt-text="Screenshot from the Fabric portal of the button to open the SQL security options." lightbox="../media/3-manage-sql-security.png":::
+
+::: zone-end
