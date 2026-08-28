@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-ai-models.code-generation
+title: Code-generation
+metadata:
+  title: Code-generation
+  description: "Explore Microsoft AI models for agentic code generation."
+  ms.date: 08/25/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 3
+content: |
+  [!include[](includes/04-code-generation.md)]

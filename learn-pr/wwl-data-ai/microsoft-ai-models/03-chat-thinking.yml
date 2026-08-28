@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-ai-models.chat-thinking
+title: Chat and reasoning
+metadata:
+  title: Chat and reasoning
+  description: "Explore Microsoft AI models for chat and complex reasoning."
+  ms.date: 08/25/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 3
+content: |
+  [!include[](includes/03-chat-thinking.md)]

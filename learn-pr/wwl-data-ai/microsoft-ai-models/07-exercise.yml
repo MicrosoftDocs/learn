@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-ai-models.exercise
+title: Exercise - Explore Microsoft AI models
+metadata:
+  title: Exercise - Explore Microsoft AI models
+  description: Explore MAI models in the playground.
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 08/25/2026
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/07-exercise.md)]
