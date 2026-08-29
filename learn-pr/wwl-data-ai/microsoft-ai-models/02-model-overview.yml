@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-ai-models.model-overview
+title: Microsoft AI models
+metadata:
+  title: Microsoft AI models
+  description: "Explore the Microsoft AI model portfolio."
+  ms.date: 08/25/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 3
+content: |
+  [!include[](includes/02-model-overview.md)]

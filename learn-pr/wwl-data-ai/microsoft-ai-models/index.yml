@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.microsoft-ai-models
+metadata:
+  title: Get started with Microsoft AI models
+  description: Explore Microsoft AI models for reasoning, code generation, speech, transcription, and image generation.
+  ms.date: 08/25/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
+  ms.service: artificial-intelligence
+title: Get started with Microsoft AI models
+summary: Explore Microsoft AI models for reasoning, code generation, speech, transcription, and image generation.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe the Microsoft AI model portfolio.
+  - Identify capabilities of Microsoft AI models for chat and thinking.
+  - Identify capabilities of Microsoft AI models for code generation.
+  - Identify capabilities of Microsoft AI models for speech and transcription.
+  - Identify capabilities of Microsoft AI models for image generation and editing.
+prerequisites: |
+  Before starting this module, you should have:
+  - Conceptual knowledge of generative AI.
+  - Familiarity with common AI workloads.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - ai-engineer
+products:
+  - foundry-models
+subjects:
+  - artificial-intelligence
+units:
+  - learn.wwl.microsoft-ai-models.introduction
+  - learn.wwl.microsoft-ai-models.model-overview
+  - learn.wwl.microsoft-ai-models.chat-thinking
+  - learn.wwl.microsoft-ai-models.code-generation
+  - learn.wwl.microsoft-ai-models.speech-transcription
+  - learn.wwl.microsoft-ai-models.image-generation
+  - learn.wwl.microsoft-ai-models.exercise
+  - learn.wwl.microsoft-ai-models.knowledge-check
+  - learn.wwl.microsoft-ai-models.summary
+badge:
+  uid: learn.wwl.microsoft-ai-models.badge
