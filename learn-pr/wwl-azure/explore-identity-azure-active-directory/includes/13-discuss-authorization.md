@@ -1,10 +1,10 @@
-**Authorization** covers what an identity can access and what are they allowed to do once they gain access. Identity authorization provides:
+**Authorization** covers what an identity can access and what they're allowed to do once they gain access. Identity authorization provides:
 
-- Methods of assigning entitlement allowing for increased security and less administration
-- Ability to manage policy control
+- Assign entitlements to increase security and reduce administration
+- Manage policy control centrally
 - Simplify enforcement by standardizing on a common approach
 
-Authorization is all about giving access to a verified identity, what they should have access to. The tracking and enforcing that access and usage.  With authorization you focus on:
+Authorization determines what access a verified identity should have and tracks and enforces that access and usage. With authorization, you focus on:
 
 | Authorization concept | Description and usage |
 | :----- | :----- |

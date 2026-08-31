@@ -1,4 +1,4 @@
-Upon finishing this module, you should be able to:
+After finishing this module, you're able to:
 
 - Discover apps by using app discovery in Microsoft Defender or Active Directory app report.
 - Design and implement access management for apps.
