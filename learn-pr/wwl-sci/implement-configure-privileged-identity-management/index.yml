@@ -12,7 +12,7 @@ metadata:
 title: Implement and configure Privileged Identity Management (PIM)
 summary: Implement Just-in-Time privileged access using Privileged Identity Management (PIM) to reduce standing privilege across Microsoft Entra roles, Azure resources, and group-based access for cloud and AI environments.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you're able to:
   - Explain why privileged identity management and just-in-time access are critical to a zero-trust security strategy
   - Describe the core capabilities and assignment types in Privileged Identity Management (PIM)
   - Implement just-in-time access for Microsoft Entra roles using PIM
