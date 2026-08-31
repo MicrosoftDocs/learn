@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.dpu.surface-inclusivity-accessibility-learning-path
+title: Create inclusive work experiences with Surface accessibility solutions
+metadata:
+  title: Create inclusive work experiences with Surface accessibility solutions
+  description: Discover how Surface devices, Windows accessibility features, and Microsoft Adaptive Accessories can help reduce workplace barriers and support a wider range of user needs. In this learning path, you'll explore inclusive Surface hardware features, learn how Windows accessibility capabilities support vision, hearing, comprehension, mobility, and input scenarios, and configure Microsoft Adaptive Accessories to create more personalized and accessible computing experiences. By connecting user barriers to the right hardware and software solutions, you'll gain practical knowledge for supporting accessibility, productivity, and inclusion in modern workplaces.
+  ms.date: 08/31/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: learning-path
+summary: >
+  Discover how Surface devices, Windows accessibility features, and Microsoft Adaptive Accessories work together to support inclusive, accessible, and productive workplace experiences.
+prerequisites: None
+iconUrl: /training/achievements/surface-inclusivity-accessibility-learning-path.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+modules:
+  - learn.dpu.inclusive-software-surface
+  - learn.dpu.inclusive-surface-hardware
+  - learn.dpu.microsoft-adaptive-accessories
+trophy:
+  uid: learn.dpu.surface-inclusivity-accessibility-learning-path.trophy
