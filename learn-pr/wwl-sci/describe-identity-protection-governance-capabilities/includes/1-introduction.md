@@ -2,7 +2,7 @@ Identity governance is about balancing identity security with user productivity 
 
 Microsoft Entra provides identity protection and governance capabilities that work together to mitigate risk by protecting, monitoring, and auditing access to critical assets while ensuring employee and business partner productivity. This includes tools for governing identity lifecycles, managing privileged access, detecting identity-based threats, enabling privacy-protected credential verification and account recovery, and integrating with Microsoft Security Copilot for AI-powered identity management.
 
-In this module, you'll learn how to:
+In this module, you learn how to:
 
 - Describe the capabilities of Microsoft Entra ID Governance.
 - Describe Privileged Identity Management (PIM).

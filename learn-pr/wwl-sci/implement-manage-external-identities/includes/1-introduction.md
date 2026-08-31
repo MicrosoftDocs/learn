@@ -2,13 +2,13 @@ Being able to invite external users to use your Azure resources is a great benef
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you:
 
-- Manage external collaboration settings in Microsoft Entra ID
-- Invite external users (individually or in bulk)
-- Manage external user accounts in Microsoft Entra ID
-- Configure identity providers (social and SAML/WS-fed)
-- Explore Microsoft Entra Verified ID
+- Manage external collaboration settings in Microsoft Entra ID.
+- Invite external users (individually or in bulk).
+- Manage external user accounts in Microsoft Entra ID.
+- Configure identity providers (social and SAML/WS-fed).
+- Explore Microsoft Entra Verified ID.
 
 ## Prerequisites
 

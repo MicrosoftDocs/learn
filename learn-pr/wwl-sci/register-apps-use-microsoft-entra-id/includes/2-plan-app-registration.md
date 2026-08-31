@@ -1,4 +1,4 @@
-Application (App) registration in Microsoft Entra ID is the process of ensuring that your identity system is aware of what applications are used. You can confirm the user has access to the app and that the app has access to any needed resources. App registration ensures the security and privacy of users, apps, and your data.
+Application registration in Microsoft Entra ID is the process of ensuring that your identity system is aware of what applications are used. You can confirm the user has access to the app and that the app has access to any needed resources. App registration ensures the security and privacy of users, apps, and your data.
 
 ## Benefits of registering an app
 
@@ -34,7 +34,7 @@ In the Microsoft Entra admin center, you can configure your app to be single-ten
 
 ## What happens when an app is registered
 
-After the app is registered, it's given for a unique identifier that it shares with the Microsoft identity platform when it requests tokens. If the app is a confidential client application, it shares the secret or the public key depending on whether certificates or secrets were used. 
+After the app is registered, it's given a unique identifier that it shares with the Microsoft identity platform when it requests tokens. If the app is a confidential client application, it shares the secret or the public key depending on whether certificates or secrets were used. 
 
  > [!Important]
  > As of August 2024, new applications receive v2 access tokens by default (instead of v1) for improved security. This change affects how tokens are formatted and what claims they contain.

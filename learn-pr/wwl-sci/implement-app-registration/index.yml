@@ -17,7 +17,7 @@ metadata:
 title: Implement app registration
 summary: Line of business developed in-house need registration in Microsoft Entra ID and assigned to users for a secure Azure solution. Explore how to implement app registration.
 abstract: |
-  By the end of this module you will be able to:
+  By the end of this module you're able to:
 
   -   Plan your line of business application registration strategy
 

@@ -1,4 +1,4 @@
-Now that you have reviewed this module, you should be able to:
+Now that you reviewed this module, you're able to:
 
  -  Define a privileged access strategy for administrative users (resources, roles, approvals, thresholds).
  -  Configure PIM for Microsoft Entra roles.
