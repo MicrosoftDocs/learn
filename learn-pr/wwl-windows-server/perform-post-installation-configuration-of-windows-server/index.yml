@@ -2,14 +2,15 @@
 uid: learn.wwl.perform-post-installation-configuration-of-windows-server
 metadata:
   title: Perform post-installation configuration of Windows Server
-  description: "Perform post-installation configuration of Windows Server"
-  ms.date: 01/23/2026
+  description: "Learn how to perform post-installation configuration of Windows Server using Sconfig for Server Core, Desired State Configuration (DSC) for declarative management, Windows Admin Center, and answer files for automated setup."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server 
 title: Perform post-installation configuration of Windows Server
-summary: Learn to perform post-installation configuration of Windows Server by using several methods and tools.
+summary: |
+  This module covers how to perform post-installation configuration of Windows Server using multiple tools and approaches. You learn how to use Sconfig to configure Server Core installations including network settings, domain join, remote management, and Windows Update, apply Desired State Configuration (DSC) to declaratively define and enforce server settings using the Local Configuration Manager (LCM) in push or pull mode, use Windows Admin Center for web-based post-install tasks, and automate configuration with answer files.
 abstract: |
   After completing this module, you'll be able to:
   - Explain post-installation configuration and describe the available post-installation configuration tools.
