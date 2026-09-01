@@ -2,14 +2,15 @@
 uid: learn.wwl.implement-dns-for-windows-server-iaas-vms
 metadata:
   title: Implement DNS for Windows Server IaaS VMs
-  description: "Implement DNS for Windows Server IaaS VMs"
-  ms.date: 01/23/2026
+  description: "Learn how to implement DNS for Windows Server IaaS VMs, including Azure public and private DNS zones, DNS delegation, Windows Server DNS in Azure VMs, split-horizon DNS, and DNS troubleshooting."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Implement DNS for Windows Server IaaS VMs
-summary: In this module, learn to configure DNS for Windows Server IaaS VMs, choose the appropriate DNS solution for your organization's needs, and run a DNS server in a Windows Server Azure IaaS VM.
+summary: |
+  This module covers how to implement DNS for Windows Server IaaS virtual machines in Azure. You learn how to describe Azure DNS including its anycast network, RBAC integration, and current limitations such as the lack of DNSSEC support, configure Azure public DNS zones with delegation and record sets, implement Azure private DNS zones with VNet linking and autoregistration for VM host records, deploy Windows Server DNS in Azure IaaS VMs for AD DS-integrated scenarios, implement split-horizon DNS to serve different records for internal and external clients, and troubleshoot DNS issues in Azure environments.
 abstract: |
   After completing this module, you'll be able to:
   - Implement DNS in Azure
