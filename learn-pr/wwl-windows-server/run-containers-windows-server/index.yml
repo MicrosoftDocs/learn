@@ -2,8 +2,8 @@
 uid: learn.wwl.run-containers-windows-server
 metadata:
   title: Run containers on Windows Server
-  description: "Run containers on Windows Server"
-  ms.date: 01/23/2026
+  description: "Learn how to run Windows containers on Windows Server, including process isolation and Hyper-V isolation modes, Docker container management, container base images from the Microsoft Container Registry, and Windows Admin Center container management."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module-standard-task-based
@@ -13,7 +13,8 @@ metadata:
   ms.subservice: containers
   ai-usage: human-only
 title: Run containers on Windows Server
-summary: Learn about Windows Server and Hyper-V containers, associated isolation modes, running containers, and preparing the Windows Server host for running containerized workloads. Learn about Docker, preparing Windows Server for running container workloads, and managing containers.
+summary: |
+  This module covers how to run and manage containers on Windows Server. You learn how containers differ from virtual machines, choose between process isolation and Hyper-V isolation modes, prepare a Windows Server host for container workloads using Docker, pull container base images (Server Core, Nano Server, Windows) from the Microsoft Container Registry, and manage containers using Docker commands and Windows Admin Center.
 abstract: |
   After completing this module, you'll be able to:
 

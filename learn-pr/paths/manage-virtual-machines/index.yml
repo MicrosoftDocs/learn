@@ -3,13 +3,15 @@ uid: learn.wwl.manage-virtual-machines
 metadata:
   title: Manage Virtual Machines
   description: Learn how to manage Hyper-V and guest virtual machines on-premises and manage Windows Server virtual machines in Azure.
-  ms.date: 07/07/2026
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: learning-path
 title: Manage virtual machines
 summary: |
-  Learn how to manage Hyper-V and guest virtual machines, including configuration, networking, replication, and high availability, and manage Windows Server virtual machines on Azure, including storage, capacity, availability, and network configuration.
+  This learning path covers how to manage virtual machines in on-premises and Azure environments. You learn how to configure Hyper-V hosts, virtual switches, and nested virtualization, manage VM settings including generations, virtual hard disks, and checkpoints, and secure workloads with the Host Guardian Service and shielded VMs. You also learn to implement VM high availability and live migration, run Windows containers, and plan, deploy, and scale Windows Server VMs on Azure including virtual network and IP address configuration, network security with NSGs and Azure Firewall, and secure remote access with Azure Bastion and JIT.
+
+  This learning path helps you prepare for [Exam AZ-802: Administering Windows Server](/credentials/certifications/exams/az-802/).
 prerequisites: |
   - Experience administering Windows Server operating systems
   - Familiarity with Hyper-V and Azure virtual machines
@@ -31,11 +33,6 @@ modules:
 - learn.wwl.secure-hyper-v-workloads # Supplementary - guarded fabric, HGS, shielded VMs
 - learn.wwl.implement-high-availability-of-windows-server-vms # Cross-check - live migration, storage migration
 - learn.wwl.run-containers-windows-server # Supplementary - Windows containers, Docker, container management
-# GAP: Enable Enhanced session mode (no module)
-# GAP: SSH Direct for Linux VMs on Hyper-V (no module)
-# GAP: Discrete Device Assignment - DDA (no module)
-# GAP: GPU partitioning - GPU-P (no module)
-# GAP: Configure VM resource groups, CPU groups, and hypervisor scheduling types (no module)
 # 3.2 Manage Windows Server virtual machines on Azure
 - learn.wwl.plan-deploy-windows-server-iaas-vms # Primary - compute/storage, deployment, SMB over QUIC reference
 - learn.wwl.implement-scale-high-availability-with-windows-server-vm # Supplementary - resizing, scale sets, ASR
