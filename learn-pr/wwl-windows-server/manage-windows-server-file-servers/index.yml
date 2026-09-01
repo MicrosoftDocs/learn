@@ -2,14 +2,15 @@
 uid: learn.wwl.manage-windows-server-file-servers
 metadata:
   title: Manage Windows Server file servers
-  description: "Manage Windows Server file servers"
-  ms.date: 01/23/2026
+  description: "Learn how to manage the Windows Server File Server role, including NTFS and ReFS file systems, File Server Resource Manager (FSRM) quotas and file screening, SMB protocol configuration and encryption, and Volume Shadow Copy Service (VSS)."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Manage Windows Server file servers
-summary: Learn about the core functionality of the Windows Server File Server role, and how to configure and manage that core functionality.
+summary: |
+  This module covers how to configure and manage the Windows Server File Server role. You learn how to work with NTFS and ReFS file systems, configure File Server Resource Manager (FSRM) for quota management, file screening, storage reports, and classification, configure SMB 3.x features including encryption, multichannel, and SMB Direct for high-performance file access, disable SMB 1.0 to address security vulnerabilities, and use Volume Shadow Copy Service (VSS) for backup and snapshot operations.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the Windows Server file system.

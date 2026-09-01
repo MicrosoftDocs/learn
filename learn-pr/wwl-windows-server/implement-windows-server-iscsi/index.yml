@@ -2,8 +2,8 @@
 uid: learn.wwl.implement-windows-server-iscsi
 metadata:
   title: Implement Windows Server iSCSI
-  description: "Implement Windows Server iSCSI"
-  ms.date: 01/23/2026
+  description: "Learn how to implement iSCSI storage in Windows Server, including iSCSI Target Server, iSCSI initiator configuration, virtual disk creation, and Multipath I/O (MPIO) for network redundancy."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module-standard-task-based
@@ -13,7 +13,8 @@ metadata:
   ms.subservice: storage
   ai-usage: human-only
 title: Implement Windows Server iSCSI
-summary: Learn about the core functionality, benefits, use cases, and implementation of Internet Small Computer Systems Interface (iSCSI) in Windows Server 2019.
+summary: |
+  This module covers how to implement iSCSI block storage in Windows Server. You learn how iSCSI uses standard TCP/IP networks to provide SAN functionality without specialized cabling, install and configure the iSCSI Target Server role service and create virtual disks using PowerShell, connect iSCSI initiators to targets, and configure network redundancy using Multiple Connections per Session (MCS) and Multipath I/O (MPIO) with load balancing policies.
 abstract: |
   After completing this module, you'll be able to:
 
