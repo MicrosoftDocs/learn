@@ -1,30 +1,12 @@
-Complete these steps to avoid ongoing charges from the resources you created in this project.
+This guided project consists of the following exercises:
 
-> [!WARNING]
-> Resource deletion is permanent. Verify that you're deleting only resources created for this guided project before you proceed.
+- Exercise 1: Create resources and apply tags
+- Exercise 2: Apply resource locks
+- Exercise 3: Test lock enforcement
+- **Clean up resources**
 
-## Verify locks are removed
+Congratulations — you've completed the exercises in this project. In this final step, you remove all the resources you created. It's important to clean up to avoid unexpected charges in your Azure subscription.
 
-Resource locks block deletion. Confirm all locks are removed before you delete the resource group.
+Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
-1.  In the portal search bar, search for **Resource groups** and select **Resource groups**.
-2.  Select **rg-gp-tags-locks** from the list.
-3.  In the left menu, under **Settings**, select **Locks**.
-4.  If any locks remain, select each lock and select **Delete** to remove it.
-5.  Open each storage account, select **Locks** in the left menu, and confirm no locks remain.
-
-## Delete the resource group
-
-Deleting the resource group removes both storage accounts and all tags automatically.
-
-1.  In the portal search bar, search for **Resource groups** and select **Resource groups**.
-2.  Select **rg-gp-tags-locks** from the list.
-3.  Select **Delete resource group** from the top menu bar.
-3.  In the confirmation field, type **rg-gp-tags-locks** and select **Delete**.
-4.  In the confirmation dialog that appears, select **Delete** again to confirm.
-5.  Wait for the notification that confirms the resource group is deleted.
-
-## Verify cleanup
-
-1.  In the portal search bar, search for **Resource groups** and confirm **rg-gp-tags-locks** no longer appears in the list.
-2.  In the portal search bar, search for **Storage accounts** and confirm neither **stgptagslock** nor **stgptagsops** appears in the list.
+[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::](https://microsoftlearning.github.io/Organize-and-protect-resources-with-tags-and-locks/Instructions/Labs/6-clean-up-resources.html)
