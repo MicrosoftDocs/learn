@@ -4,9 +4,9 @@ title: Use File Integrity Monitoring
 metadata:
   title: Use File Integrity Monitoring
   description: "Use File Integrity Monitoring"
-  ms.date: 01/01/2025
+  ms.date: 08/16/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
 sandbox: false
@@ -17,14 +17,14 @@ content: |
 quiz:
   title: "Quick review"
   questions:
-  - content: "At 0:50 to 1:00 minutes in the demonstration, the instructor changes the configuration of a Log Analytics workspace. What does the instructor do and why?"
+  - content: "Which File Integrity Monitoring collection method streams configured file and registry change events to the selected Log Analytics workspace in near real time?"
     choices:
-    - content: "The instructor selects **ENABLE** on the workspace to allow its use with File Integrity Monitoring."
-      isCorrect: false
-      explanation: "Incorrect. The instructor does perform this task, but first, he must upgrade the workspace."
-    - content: "The instructor selects **Install agents** on the workspace to deploy agents to all the VMs associated with the workspace."
-      isCorrect: false
-      explanation: "Incorrect. Although agents must be installed, that process begins with upgrading the pricing tier."
-    - content: "The instructor selects **UPGRADE PLAN** on the workspace to change the workspace to Standard Tier pricing. Unless the workspace is on this pricing tier, it can't be used for File Integrity Monitoring."
+    - content: "The Microsoft Defender for Endpoint agent."
       isCorrect: true
-      explanation: "Correct. Both the Security Center and the Log Analytics workspace must be on Standard Tier pricing."
+      explanation: "Correct. The Microsoft Defender for Endpoint agent streams change events in near real time."
+    - content: "Agentless scanning."
+      isCorrect: false
+      explanation: "Incorrect. Agentless scanning sends file integrity events on an approximately 24-hour cadence."
+    - content: "The Microsoft Monitoring Agent."
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft Monitoring Agent is part of the legacy File Integrity Monitoring experience and must be migrated."

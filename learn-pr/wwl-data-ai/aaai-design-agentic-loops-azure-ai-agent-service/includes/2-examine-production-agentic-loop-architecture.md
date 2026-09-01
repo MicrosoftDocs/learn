@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=91ef6e31-7767-43a0-be1a-56012b53b7ac]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Production agents require robust event handling that responds to every run lifecycle event—not just success, but tool requests, failures, timeouts, and cancellations. Microsoft Foundry Agent Service exposes a rich run status taxonomy that tells you exactly why an agent stopped. Understanding and handling each status is the foundation of production-grade agentic loops.
 
 > [!IMPORTANT]
@@ -67,7 +78,7 @@ The `failed` status provides granular error information through `run.last_error.
 
 ## Manage context accumulation
 
-The thread's message history grows with every iteration. This growth is both strength and challenge. Agents remember prior context—the market data from three turns ago, the risk thresholds set at the start. But every message consumes tokens and costs money.
+The thread's message history grows with every iteration. This growth is both strength and challenge. Agents remember prior context—the market data from three turns ago, the risk thresholds set at the start. But every message consumes tokens and increases resource usage.
 
 **Context budget management** becomes critical in long-running loops. Track two metrics: message count and estimated token usage. A thread with dozens of messages containing detailed market data consumes substantial context on every run:
 
@@ -105,15 +116,15 @@ while iteration < MAX_ITERATIONS:
     iteration += 1
 ```
 
-**Cost-based stopping** tracks cumulative token usage or elapsed time. If an agent workflow has a $5 budget, stop when costs approach $4.80:
+**Resource-based stopping** tracks cumulative token usage or elapsed time. If an agent workflow has a token budget, stop when usage approaches your threshold:
 
 ```python
-cumulative_cost = 0.0
-BUDGET_LIMIT = 5.00
+token_usage = 0
+TOKEN_BUDGET = 120000
 
-while cumulative_cost < BUDGET_LIMIT:
+while token_usage < TOKEN_BUDGET:
     run = agents_client.runs.create_and_process(thread_id=thread.id, agent_id=agent.id)
-    cumulative_cost += estimate_run_cost(run)  # Calculate based on usage
+    token_usage += estimate_run_tokens(run)  # Calculate based on usage
 ```
 
 **Semantic completion detection** inspects the agent's final message for completion indicators. If the last message contains phrases like "Analysis complete" or includes a structured output with a `status: "final"` field, terminate the loop. This requires careful prompt engineering to ensure agents signal completion reliably.
@@ -143,7 +154,7 @@ with agents_client.runs.stream(thread_id=thread.id, agent_id=agent.id) as stream
 
 Polling is the right choice for backend workflows where latency matters less than code simplicity. Streaming is essential for user-facing applications where you display agent reasoning in real time. The event handling logic is identical—both patterns produce the same `AgentRun` object with the same status values.
 
-## How Agents v2 changes the execution model
+## How agents v2 changes the execution model
 
 The patterns in this unit—run status handling, `requires_action` loops, context tracking—are Agents v1 constructs. Unit 3 covers the Foundry Responses API (Agents v2), which changes the execution model in two key ways.
 
@@ -160,3 +171,5 @@ Unit 3 covers these changes in detail with side-by-side code. The v1 patterns in
 - **Context accumulation** grows linearly with message history, requiring proactive token tracking and pruning strategies (summarization, sliding window, or thread restart) before hitting model context limits.
 - **Loop termination strategies** prevent runaway execution—combine max-iteration caps, cost-based budgets, and semantic completion detection to keep resource consumption predictable.
 - **Streaming vs. polling** is a deployment decision—polling simplifies backend workflows while streaming enables real-time UI feedback, but both produce identical run status outcomes.
+
+::: zone-end

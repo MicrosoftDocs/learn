@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=404fed8c-a9b1-4d04-85fd-7ac6a839655c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry projects, Azure App Configuration, and Bicep infrastructure templates are the three tools that make multi-environment agent deployments consistent and auditable. Each environment—development, staging, and production—requires its own isolated infrastructure and configuration, and GitHub Actions promotion gates enforce the validation rules that control when changes can advance to the next tier.
 
 | Environment | Purpose | Data Characteristics | Deployment Frequency |
@@ -275,3 +286,5 @@ The **DTAP** (Development, Test, Acceptance, Production) vocabulary is the stand
 - **Infrastructure as code** parameterizes Bicep templates by environment to ensure consistent, auditable, and reproducible deployments.
 - **Key Vault isolation** gives each environment its own secrets store with RBAC preventing cross-environment access.
 - **Promotion gates** require explicit approval—including optional human sign-off—before changes move from staging to production.
+
+::: zone-end

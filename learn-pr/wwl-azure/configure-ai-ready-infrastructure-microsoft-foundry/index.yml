@@ -2,24 +2,24 @@
 uid: learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry
 metadata:
   title: "Configure AI-Ready Infrastructure with Microsoft Foundry"
-  description: "Microsoft Foundry uses a hub-and-project architecture to centralize governance, security, and shared resources while enabling team autonomy. Hub-level connections, identities, and policies reduce cost, complexity, and duplication, supporting scalable, secure, enterprise-ready AI deployments."
-  ms.date: 02/02/2026
+  description: "Microsoft Foundry uses a top-level resource and child projects to centralize governance while providing isolated development environments for AI teams."
+  ms.date: 08/18/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure
 title: "Configure AI-ready infrastructure with Microsoft Foundry"
-summary: Microsoft Foundry uses a hub-and-project architecture to centralize governance, security, and shared resources while enabling team autonomy. Hub-level connections, identities, and policies reduce cost, complexity, and duplication, supporting scalable, secure, enterprise-ready AI deployments.
+summary: Configure a Microsoft Foundry resource, organize projects, assign appropriate roles, and connect projects securely to Azure services.
 abstract: |
   After completing this module, you will be able to:
-  - Configure Microsoft Foundry hubs with appropriate governance and security settings
-  - Create and organize AI projects within hubs to support team collaboration
-  - Establish connected resources including Azure AI Search for shared infrastructure
-  - Implement hub-level shared connections to optimize resource utilization across projects
+  - Plan a Microsoft Foundry resource and project structure for multiple AI workloads
+  - Assign Microsoft Foundry roles at appropriate resource and project scopes
+  - Connect a Foundry project to Azure AI Search
+  - Configure managed identity access to connected Azure services
 prerequisites: |
-  - Azure Subscription: Learners need an active Azure subscription.
-  - Intermediate Technical Skills: Prior knowledge of OpenAI concepts, AI Search service, and Python programming is required for building and integrating AI solutions.
-  - Familiarity with Azure Services: Understanding Azure App Services, storage accounts, and deployment practices is essential for creating and hosting AI applications securely.
+  - An active Azure subscription
+  - Familiarity with Azure portal navigation and resource management
+  - Basic knowledge of Microsoft Entra ID, Azure role-based access control, and Azure AI Search
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

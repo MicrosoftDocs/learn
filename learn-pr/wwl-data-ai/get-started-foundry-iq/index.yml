@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-foundry-iq
+metadata:
+  title: Get started with Microsoft Foundry IQ
+  description: "Learn how Microsoft Foundry IQ helps AI agents retrieve relevant information from enterprise data and generate grounded, citation-backed responses."
+  ms.date: 07/31/2026
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ai-usage: ai-assisted
+  ms.service: microsoft-foundry
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+title: Get started with Microsoft Foundry IQ
+summary: "Learn how Microsoft Foundry IQ helps AI agents retrieve relevant information from enterprise data and generate grounded, citation-backed responses."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe how Foundry IQ provides agents with a managed, reusable knowledge layer.
+  - Explain how knowledge bases organize indexed and remote knowledge sources.
+  - Describe how agentic retrieval finds and returns relevant, cited information.
+  - Explain how an agent connects to a knowledge base and uses retrieved information.
+prerequisites: A basic understanding of generative AI, AI agents, and retrieval-augmented generation (RAG).
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - ai-engineer
+  - data-scientist
+  - developer
+  - solution-architect
+  - student
+products:
+  - microsoft-foundry
+subjects:
+  - artificial-intelligence
+units:
+  - learn.wwl.get-started-foundry-iq.introduction
+  - learn.wwl.get-started-foundry-iq.explore-foundry-iq
+  - learn.wwl.get-started-foundry-iq.knowledge-bases
+  - learn.wwl.get-started-foundry-iq.connect-agents
+  - learn.wwl.get-started-foundry-iq.exercise
+  - learn.wwl.get-started-foundry-iq.knowledge-check
+  - learn.wwl.get-started-foundry-iq.summary
+badge:
+  uid: learn.wwl.get-started-foundry-iq.badge

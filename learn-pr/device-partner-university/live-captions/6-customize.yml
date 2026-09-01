@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.live-captions.customize
+title: Customize your caption experience
+metadata:
+  title: Customize Your Caption Experience
+  description: This content is part of the "Use Live Captions in Windows to better understand audio" module.
+  ms.date: 06/15/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-customize.md)]

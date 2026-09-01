@@ -2,10 +2,11 @@
 uid: learn.wwl.design-implement-rag-with-sql.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: Introduction to implementing RAG with SQL
-  ms.date: 02/04/2026
-  author: wwlpublish
+  ms.date: 07/17/2026
+  author: calopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-assisted

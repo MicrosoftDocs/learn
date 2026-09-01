@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.write-first-python-code
+metadata:
+  title: Write your first Python code
+  description: Get started with Python programming. Learn to display output, accept user input, and manipulate strings to build your first Python program.
+  ms.date: 07/15/2026
+  ms.service: visual-studio
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
+title: Write your first Python code
+summary: Get started with Python programming. Learn to display output, accept user input, and manipulate strings to build your first Python program.
+abstract: |
+  After completing this module, you're able to:
+  - Display output using the `print()` function.
+  - Accept user input with the `input()` function.
+  - Manipulate strings using common string operations.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+subjects:
+  - app-development
+units:
+- learn.wwl.write-first-python-code.introduction
+- learn.wwl.write-first-python-code.display-output-with-print
+- learn.wwl.write-first-python-code.accept-user-input
+- learn.wwl.write-first-python-code.manipulate-strings
+- learn.wwl.write-first-python-code.exercise
+- learn.wwl.write-first-python-code.knowledge-check
+- learn.wwl.write-first-python-code.summary
+badge:
+  uid: learn.wwl.write-first-python-code.badge

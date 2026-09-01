@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-microsoft-copilot-business-users.summary
+title: "Summary"
+metadata:
+  title: "Summary"
+  description: "Recap key insights from Microsoft Copilot. Explore AI tools, tips, and resources to enhance productivity and transform your business."
+  ms.date: 08/17/2026
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-summary.md)]

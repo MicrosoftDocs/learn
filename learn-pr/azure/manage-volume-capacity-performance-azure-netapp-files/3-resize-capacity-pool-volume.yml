@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-volume-capacity-performance.resize-capacity-pool-volume
+title: Resize a capacity pool or a volume
+metadata:
+  title: Resize a capacity pool or a volume
+  description: Learn how to resize Azure NetApp Files capacity pools and volumes by using the Azure portal, CLI, and REST API.
+  ms.date: 06/10/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-resize-capacity-pool-volume.md)]

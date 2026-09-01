@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.microsoft-adaptive-accessories.module-assessment
+title: Module assessment
+metadata:
+  module_assessment: true
+  title: Module assessment
+  description: This content is part of the "Configure Microsoft Adaptive Accessories for accessible productivity" module.
+  ms.date: 08/27/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which Microsoft Adaptive Accessory acts as a central connection point for adaptive buttons, compatible switches, and other assistive technology?"
+    choices:
+        - content: "Microsoft Adaptive Mouse"
+          isCorrect: false
+          explanation: "Incorrect. The Adaptive Mouse provides customizable pointer control but isn't used to connect adaptive buttons, switches, or assistive technology."
+        - content: "Microsoft Adaptive Hub"
+          isCorrect: true
+          explanation: "Correct. The Adaptive Hub acts as a central connection point for adaptive buttons, compatible switches, and other assistive technology."
+        - content: "Microsoft Adaptive Joystick Button"
+          isCorrect: false
+          explanation: "Incorrect. The Adaptive Joystick Button is one type of Adaptive Button that connects to the Adaptive Hub."
+        - content: "Surface Adaptive Kit"
+          isCorrect: false
+          explanation: "Incorrect. The Surface Adaptive Kit provides tactile and visual cues to make devices easier to identify, open, and use."
+  - content: "A user has difficulty maintaining a comfortable grip on a standard mouse. Which feature of the Microsoft Adaptive Mouse is designed to help address this need?"
+    choices:
+        - content: "Surface Adaptive Kit port labels"
+          isCorrect: false
+          explanation: "Incorrect. Port labels help users identify and match cables to ports, not improve mouse grip."
+        - content: "Adaptive Hub profiles"
+          isCorrect: false
+          explanation: "Incorrect. Profiles allow users to switch between customized input configurations but don't help with mouse grip."
+        - content: "Adaptive Mouse Tail and Thumb Support"
+          isCorrect: true
+          explanation: "Correct. The Adaptive Mouse Tail and Thumb Support can help create a more stable and comfortable grip based on a user's needs."
+        - content: "Adaptive Button topper replacements"
+          isCorrect: false
+          explanation: "Incorrect. Button toppers customize Adaptive Buttons and are unrelated to mouse grip."
+  - content: "How many Microsoft Adaptive Buttons can connect wirelessly to a single Microsoft Adaptive Hub?"
+    choices:
+        - content: "One"
+          isCorrect: false
+          explanation: "Incorrect. The Adaptive Hub supports more than one wireless Adaptive Button connection."
+        - content: "Two"
+          isCorrect: false
+          explanation: "Incorrect. The Adaptive Hub can support more wireless Adaptive Buttons than this."
+        - content: "Four"
+          isCorrect: true
+          explanation: "Correct. The Adaptive Hub can connect wirelessly to up to four Microsoft Adaptive Buttons."
+        - content: "Six"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't state that six Adaptive Buttons can connect wirelessly to the Hub."
+  - content: "What is the recommended way to use the Surface Adaptive Kit port labels?"
+    choices:
+        - content: "Place both labels on the device next to the port"
+          isCorrect: false
+          explanation: "Incorrect. One label should be placed on the device and the matching label should be placed on the cable."
+        - content: "Place the long label on the device and the short label on the cable"
+          isCorrect: false
+          explanation: "Incorrect. The module recommends placing the short label on the device and the long matching label on the cable."
+        - content: "Place the short label on the device and wrap the matching long label around the cable"
+          isCorrect: true
+          explanation: "Correct. This helps users identify and match frequently used cables with the appropriate ports."
+        - content: "Use port labels only on charging cables"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't limit port labels to charging cables."
+  - content: "Which component of the Surface Adaptive Kit is designed to help users identify keyboard keys by touch?"
+    choices:
+        - content: "Port labels"
+          isCorrect: false
+          explanation: "Incorrect. Port labels help identify and match cables and ports on a device."
+        - content: "Keycap labels"
+          isCorrect: true
+          explanation: "Correct. Keycap labels are designed to help users identify keys on a keyboard through raised tactile features."
+        - content: "Opener supports"
+          isCorrect: false
+          explanation: "Incorrect. Opener supports help users open a laptop lid or a Surface Pro kickstand."
+        - content: "Adaptive Buttons"
+          isCorrect: false
+          explanation: "Incorrect. Adaptive Buttons provide programmable inputs and aren't used to identify keyboard keys."

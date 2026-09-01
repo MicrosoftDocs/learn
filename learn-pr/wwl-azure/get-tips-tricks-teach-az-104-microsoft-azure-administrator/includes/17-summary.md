@@ -20,8 +20,6 @@ AZ-104: Microsoft Azure Administrator gives students the opportunity to learn a 
 
 - [GitHub](https://aka.ms/msgithub)
 
-- [Azure Database Blog](https://aka.ms/azureDBblog) 
-
 - [Azure Community Support](https://aka.ms/AzureCommunitySupport)
 
 - [AZ-104 Exam Page](https://aka.ms/AZ104Exam) 

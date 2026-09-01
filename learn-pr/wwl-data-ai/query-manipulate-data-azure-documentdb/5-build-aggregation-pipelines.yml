@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-manipulate-data-azure-documentdb.build-aggregation-pipelines
+title: Build aggregation pipelines
+metadata:
+  title: Build Aggregation Pipelines
+  description: "Learn how to build aggregation pipelines in Azure DocumentDB to group, join, and summarize data using stages like $match, $group, $lookup, and $project."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-build-aggregation-pipelines.md)]

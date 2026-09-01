@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-ai-models.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your learning about Microsoft AI models."
+  ms.date: 08/25/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+    - content: "Which model should you evaluate for a chat application that must solve complex, multi-step problems?"
+      choices:
+        - content: "MAI-Thinking-1"
+          isCorrect: true
+          explanation: "Correct. MAI-Thinking-1 is a reasoning model designed for complex problems."
+        - content: "MAI-Transcribe-1.5"
+          isCorrect: false
+          explanation: "Incorrect. MAI-Transcribe-1.5 converts spoken audio into text. It isn't a reasoning model."
+        - content: "MAI-Image-2.5"
+          isCorrect: false
+          explanation: "Incorrect. MAI-Image-2.5 generates and edits images. It isn't designed for text-based reasoning."
+    - content: "Which model is optimized for efficient agentic coding workflows in GitHub Copilot?"
+      choices:
+        - content: "MAI-Code-1.1-Flash"
+          isCorrect: true
+          explanation: "Correct. MAI-Code-1.1-Flash is custom-trained for GitHub Copilot and can plan, reason, and execute across coding tasks."
+        - content: "MAI-Thinking-1"
+          isCorrect: false
+          explanation: "Incorrect. MAI-Thinking-1 can reason about code, but MAI-Code-1.1-Flash is optimized specifically for efficient agentic coding workflows in GitHub Copilot."
+        - content: "MAI-Voice-2-Flash"
+          isCorrect: false
+          explanation: "Incorrect. MAI-Voice-2-Flash generates low-latency speech rather than software code."
+    - content: "You're building an interactive voice assistant where fast spoken responses are more important than maximum long-form fidelity. Which model is the best starting point?"
+      choices:
+        - content: "MAI-Voice-2"
+          isCorrect: false
+          explanation: "Incorrect. MAI-Voice-2 prioritizes fidelity for workloads such as audiobooks and voice-over. The Flash variant is optimized for latency-sensitive interactions."
+        - content: "MAI-Voice-2-Flash"
+          isCorrect: true
+          explanation: "Correct. MAI-Voice-2-Flash prioritizes low latency for voice assistants, call-center agents, and interactive voice response systems."
+        - content: "MAI-Transcribe-1.5"
+          isCorrect: false
+          explanation: "Incorrect. MAI-Transcribe-1.5 provides speech-to-text transcription rather than generating a spoken response."
+    - content: "Which MAI-Image-2.5 variant should you evaluate first when strong object consistency and visual reasoning are the highest priorities?"
+      choices:
+        - content: "MAI-Image-2.5-Flash"
+          isCorrect: false
+          explanation: "Incorrect. The Flash variant targets production-ready quality at lower cost rather than the family's strongest visual reasoning."
+        - content: "MAI-Image-2.5"
+          isCorrect: false
+          explanation: "Incorrect. The standard variant balances high-quality generation and controllable editing, but the Pro variant targets more demanding visual work."
+        - content: "MAI-Image-2.5-Pro"
+          isCorrect: true
+          explanation: "Correct. MAI-Image-2.5-Pro provides stronger object consistency, visual reasoning, and world knowledge for demanding creative work."

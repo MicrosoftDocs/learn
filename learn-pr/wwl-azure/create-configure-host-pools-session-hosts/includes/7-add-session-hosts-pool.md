@@ -45,11 +45,10 @@ If you created virtual machines using an alternative method outside of Azure Vir
 1.  Make sure the virtual machines you want to use as session hosts are joined to Microsoft Entra ID or an Active Directory domain (AD DS or Microsoft Entra Domain Services).
 2.  If your virtual machines are running a Windows Server OS, you'll need to install the *Remote Desktop Session Host* role, then restart the virtual machine. For more information, see [Install roles, role services, and features by using the add Roles and Features Wizard](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard).
 3.  Sign in to your virtual machine as an administrator.
-4.  Download the Agent and the Agent Bootloader installation files using the following links.
+4.  Download the Agent installation files using the following links.
     
     
      -  [Azure Virtual Desktop Agent](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv)
-     -  [Azure Virtual Desktop Agent Bootloader](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH)
     
     > [!TIP]
     > The Azure Virtual Desktop Agent download link is for the latest production version in [non-validation environments](/azure/virtual-desktop/terminology#validation-environment). This download link is updated once the automatic production rollout is complete, so you might see a delay between a production version being released and the download link being updated. Once the Azure Virtual Desktop Agent is installed, it's updated automatically. For more information about the rollout of new versions of the agent, see [What's new in the Azure Virtual Desktop Agent](/azure/virtual-desktop/whats-new-agent#latest-available-versions).

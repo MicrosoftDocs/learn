@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-azure-netapp-files.knowledge-check
+title: Module assessment
+metadata:
+  unitType: knowledge_check
+  title: Module Assessment
+  description: Test your knowledge of troubleshooting Azure NetApp Files.
+  ms.date: 07/24/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+    - content: "You're an Azure administrator responsible for managing Azure NetApp Files. One of the volumes in your environment is experiencing errors, and you need to troubleshoot the issue to identify the root cause. Which option should you choose to troubleshoot volume errors for Azure NetApp Files?"
+      choices:
+        - content: "Azure NetApp Files Diagnostics"
+          isCorrect: true
+          explanation: "Correct: Azure NetApp Files Diagnostics is a feature that helps diagnose and troubleshoot issues related to Azure NetApp Files. It provides insights into the health and performance of your volumes, including identifying and troubleshooting volume errors."
+        - content: "Azure Troubleshooting Center"
+          isCorrect: false
+          explanation: "Incorrect: Azure Troubleshooting Center is a centralized hub that provides troubleshooting guidance and recommendations for various Azure services. However, it doesn't specifically focus on troubleshooting errors for Azure NetApp Files."
+        - content: "Azure Support Center"
+          isCorrect: false
+          explanation: "Incorrect: Azure Support Center is a portal that provides resources and tools for troubleshooting and resolving issues with Azure services. While it can help with general Azure-related issues, it may not have specific guidance for troubleshooting errors in Azure NetApp Files."
+        - content: "Azure Resource Health"
+          isCorrect: false
+          explanation: "Incorrect: Azure Resource Health provides information about the current and past health of Azure resources. It can give you insights into the overall health of your Azure NetApp Files resources, but it may not provide specific troubleshooting guidance for volume errors."

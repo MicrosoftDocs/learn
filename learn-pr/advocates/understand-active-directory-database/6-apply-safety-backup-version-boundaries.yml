@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-database.apply-safety-backup-version-boundaries
+title: Apply safety, backup, and version boundaries
+metadata:
+  title: Apply Safety, Backup, and Version Boundaries
+  description: Identify supported protection, recovery-escalation, virtualization, and Windows Server 2025 database-format boundaries.
+  ms.date: 07/24/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-apply-safety-backup-version-boundaries.md)]

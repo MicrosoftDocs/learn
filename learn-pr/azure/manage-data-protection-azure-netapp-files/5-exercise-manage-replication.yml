@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-data-protection-azure-netapp-files.exercise-manage-replication
+title: Exercise 3 - Manage replication
+metadata:
+  title: Exercise 3 - Manage Replication
+  description: Practice managing cross-region replication, disaster recovery, and availability zone placement for Azure NetApp Files volumes.
+  ms.date: 07/22/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/5-exercise-manage-replication.md)]

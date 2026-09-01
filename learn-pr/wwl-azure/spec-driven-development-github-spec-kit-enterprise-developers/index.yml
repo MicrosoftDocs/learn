@@ -4,8 +4,8 @@ metadata:
   title: Implement Spec-Driven Development using the GitHub Spec Kit
   description: "Implement the spec-driven development methodology using GitHub Spec Kit and GitHub Copilot in Visual Studio Code. Training covers a brownfield scenario for enterprise developers, emphasizing intent-first philosophy with living specifications."
   ms.date: 1/28/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: github-copilot
 title: Implement spec-driven development using the GitHub Spec Kit

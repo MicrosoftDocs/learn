@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.advanced-group-policy-troubleshooting.troubleshoot-hardening-side-effects
+title: Troubleshoot Windows Server 2025 hardening side effects
+metadata:
+  title: Troubleshoot Windows Server 2025 Hardening Side Effects
+  description: Diagnose Group Policy hardening compatibility issues involving LDAP signing and channel binding, Kerberos encryption, safe rollout rings, containment, and roll back.
+  ms.date: 08/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-troubleshoot-hardening-side-effects.md)]

@@ -4,8 +4,8 @@ metadata:
   title: Develop Agents and Applications using Agentic Programming Tools
   description: Learn how to develop applications using agentic programming tools and techniques. This training covers how to configure custom agents in the development environment, how to develop or update apps using the GitHub Spec Kit, and how to create AI-enabled apps with embedded agents using the GitHub Copilot SDK.
   ms.date: 03/05/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: learning-path
 title: Develop agents and applications using agentic programming tools
 prerequisites: |

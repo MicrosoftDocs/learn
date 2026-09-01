@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=81627dbf-84bc-4955-9739-e93f8926a433]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB partition keys and Azure Managed Redis namespace prefixes provide storage-layer isolation for multitenant agent deployments. Azure AI Foundry Agent Service runs shared agent pools efficiently across hundreds of clients while these patterns ensure each client's data stays physically and logically separate.
 
 | Architecture | Isolation Strength | Resource Efficiency | Use Case |
@@ -221,3 +232,5 @@ With context isolation preventing data leakage, the final challenge emerges: age
 - **Context propagation architecture** ensures tenant identity flows through every agent-to-agent call, preventing context-free operations that could cross tenant boundaries.
 - **Partition-key-based isolation** in Cosmos DB and namespace-scoped keys in Redis physically prevent cross-tenant data access at the storage layer.
 - **Audit trails** for context access provide regulatory evidence that client data boundaries were never breached.
+
+::: zone-end

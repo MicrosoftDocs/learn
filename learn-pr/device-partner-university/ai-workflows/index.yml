@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.ai-workflows
+title: 'Frontier Firms: Bring AI into everyday work with Windows 11'
+metadata:
+  title: 'Frontier Firms: Bring AI Into Everyday Work With Windows 11'
+  description: In this module, you'll explore how Windows 11 integrates AI experiences into familiar workflows, helping users interact naturally with AI, find information faster, take action more efficiently, and stay productive throughout the workday. 
+  ms.date: 08/21/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Organizations are looking for ways to improve productivity without adding complexity to the employee experience. In this module, you'll explore how Windows 11 helps bring AI directly into the flow of work through natural interactions, intelligent information discovery, action-oriented experiences, and AI assistance that remains integrated within familiar workflows. 
+abstract: | 
+ By the end of this module, you'll be able to:
+ - Explain how Windows 11 helps integrate AI into everyday workflows. 
+ - Describe how users can interact with AI through natural language and voice experiences. 
+ - Identify AI experiences that help users find information and understand content more efficiently. 
+ - Explain how AI-powered actions can help reduce friction between information and task completion. 
+ - Describe how integrated AI experiences can help reduce context switching and support productivity. 
+prerequisites: |
+  - None
+iconUrl: /training/achievements/ai-workflows.svg
+ratingEnabled: false
+levels:
+  - intermediate
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.ai-workflows.introduction
+  - learn.dpu.ai-workflows.interact
+  - learn.dpu.ai-workflows.faster
+  - learn.dpu.ai-workflows.friction
+  - learn.dpu.ai-workflows.flow
+  - learn.dpu.ai-workflows.knowledge-check
+  - learn.dpu.ai-workflows.summary
+badge:
+  uid: learn.dpu.ai-workflows.badge

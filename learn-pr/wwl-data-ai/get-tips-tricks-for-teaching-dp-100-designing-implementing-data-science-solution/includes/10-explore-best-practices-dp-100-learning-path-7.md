@@ -26,5 +26,5 @@ Learning Path 7 Demos (optional)
 
 Learning Path 7 Labs
 
-- [Lab 7.1: Run a training script as a command job in Azure Machine Learning](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/08-Script-command-job.html)
-- [Lab 7.2: Use MLflow to track training jobs](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/08-Script-mlflow-tracking.html)
+- Lab 7.1: Run a training script as a command job in Azure Machine Learning
+- Lab 7.2: Use MLflow to track training jobs

@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-manipulate-data-azure-documentdb.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Check your understanding of querying and manipulating data in Azure DocumentDB."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: ""
+  questions:
+  - content: "A developer needs to add a 'discount' tag to all products in the Accessories parent category without removing any existing tags. Which update operator should they use?"
+    choices:
+    - content: "$set"
+      isCorrect: false
+      explanation: "The `$set` operator replaces the entire value of a field. Using `$set` on the tags array would overwrite the existing tags with a new array, removing the original values."
+    - content: "$push"
+      isCorrect: false
+      explanation: "The `$push` operator adds an element to an array, but it doesn't prevent duplicates. If the 'discount' tag already exists, `$push` adds it again."
+    - content: "$addToSet"
+      isCorrect: true
+      explanation: "The `$addToSet` operator adds an element to an array only if it doesn't already exist. This operator preserves existing tags and prevents duplicates."
+  - content: "What happens when a developer runs insertOne() on a collection that doesn't exist yet in Azure DocumentDB?"
+    choices:
+    - content: "The operation fails with a 'collection not found' error."
+      isCorrect: false
+      explanation: "Azure DocumentDB doesn't require collections to be created before inserting documents. The collection is created automatically."
+    - content: "Azure DocumentDB creates the collection automatically and inserts the document."
+      isCorrect: true
+      explanation: "Azure DocumentDB creates collections on demand when the first document is inserted. Explicitly creating collections before inserting data isn't necessary."
+    - content: "The document is inserted into a default collection named 'unassigned'."
+      isCorrect: false
+      explanation: "The document is inserted into the collection specified in the insertOne() command. Azure DocumentDB creates that specific collection if it doesn't exist."
+  - content: "A query needs to find bikes priced between $1,000 and $4,000 in the 'Mountain Bikes' subcategory. Which operator combination correctly expresses this filter?"
+    choices:
+    - content: "{ price: { $gt: 1000, $lt: 4000 }, 'category.name': 'Mountain Bikes' }"
+      isCorrect: true
+      explanation: "Multiple conditions on the same field can be combined in a single subdocument. Conditions on different fields at the top level are implicitly joined with `$and`. Dot notation accesses the nested category.name field."
+    - content: "{ $or: [{ price: { $gt: 1000 } }, { price: { $lt: 4000 } }, { 'category.name': 'Mountain Bikes' }] }"
+      isCorrect: false
+      explanation: "$or matches documents where any condition is true. This query returns all products over $1,000, all under $4,000, and all mountain bikes separately, which isn't the intended range filter."
+    - content: "{ price: { $gt: 1000 }, price: { $lt: 4000 }, 'category.name': 'Mountain Bikes' }"
+      isCorrect: false
+      explanation: "Duplicate keys in a JSON object overwrite each other. Only the second price condition ($lt: 4000) would apply. Combine range conditions in a single subdocument instead."
+  - content: "Which aggregation stage joins documents from another collection in the same database?"
+    choices:
+    - content: "$unwind"
+      isCorrect: false
+      explanation: "$unwind deconstructs an array field into one document per element. It operates on a single collection, not across collections."
+    - content: "$lookup"
+      isCorrect: true
+      explanation: "$lookup performs a left outer join with another collection in the same database, similar to a SQL JOIN. It adds matching documents from the foreign collection as an embedded array."
+    - content: "$merge"
+      isCorrect: false
+      explanation: "$merge writes pipeline results to a collection. It doesn't join data from another collection into the current pipeline."
+  - content: "An aggregation pipeline uses $group with _id: '$parentCategory' and a $sum accumulator on the quantity field. What does this pipeline produce?"
+    choices:
+    - content: "One document per unique parent category with the total quantity for that category."
+      isCorrect: true
+      explanation: "$group with _id: '$parentCategory' creates one output document per unique parent category value. The $sum accumulator calculates the total of the quantity field for all documents in each group."
+    - content: "One document per input document with the running total of quantities."
+      isCorrect: false
+      explanation: "$group combines multiple input documents into one output per group. It doesn't produce one output per input document."
+    - content: "A single document with the total quantity across all categories."
+      isCorrect: false
+      explanation: "Grouping by parent category produces one document per category. A single total across all categories requires _id: null."

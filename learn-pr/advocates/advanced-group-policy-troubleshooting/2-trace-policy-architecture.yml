@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.advanced-group-policy-troubleshooting.trace-policy-architecture
+title: Trace Group Policy architecture and failure domains
+metadata:
+  title: Trace Group Policy Architecture and Failure Domains
+  description: Trace Group Policy through scope, domain controller discovery, GPC and GPT retrieval, client-side extension processing, effective state, and application behavior.
+  ms.date: 08/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-trace-policy-architecture.md)]

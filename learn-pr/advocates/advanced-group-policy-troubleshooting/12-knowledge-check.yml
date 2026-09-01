@@ -1,0 +1,133 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.advanced-group-policy-troubleshooting.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Check your ability to choose evidence, diagnose scope and replication problems, distinguish processing from effective state, and select safe Group Policy corrections.
+  ms.date: 08/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 10
+content: |
+quiz:
+  questions:
+  - content: An administrator wants to know which Group Policy Objects (GPOs) a remote user session processed. Which tool is the best first choice?
+    choices:
+    - content: Group Policy Modeling
+      isCorrect: false
+      explanation: Group Policy Modeling simulates directory-based results rather than retrieving the target's recorded processing.
+    - content: A GPO HTML report
+      isCorrect: false
+      explanation: A GPO HTML report shows configuration, not what GPOs a target processed.
+    - content: Group Policy Results
+      isCorrect: true
+      explanation: Group Policy Results retrieves actual RSoP data recorded by the target.
+    - content: Policy Analyzer
+      isCorrect: false
+      explanation: Policy Analyzer compares policy sets rather than retrieving actual RSoP from the target.
+  - content: A user belongs to the intended security-filter group. The GPO stopped applying after **Authenticated Users** was removed. Operational events show access denied while retrieving user policy. What is the most likely cause?
+    choices:
+    - content: The computer no longer has Read permission on the GPO.
+      isCorrect: true
+      explanation: The computer retrieves user policy and needs Read permission, while the intended user group can retain Apply Group Policy.
+    - content: The user needs local administrator rights.
+      isCorrect: false
+      explanation: Local administrator rights aren't required for normal user Group Policy retrieval.
+    - content: Loopback Replace disables all user policy.
+      isCorrect: false
+      explanation: Loopback Replace changes the source of user policy; it doesn't explain the access-denied retrieval event.
+    - content: The GPO requires an enforced link.
+      isCorrect: false
+      explanation: Enforced influences inheritance and precedence, not permission to read the GPO.
+  - content: One domain controller reports GPC computer version `24` plus GPT computer version `23`. AD DS replication is healthy. What should the administrator investigate next?
+    choices:
+    - content: Local Group Policy on the client
+      isCorrect: false
+      explanation: Local policy doesn't explain a server-specific mismatch between GPC and GPT versions.
+    - content: DFSR state plus the server-specific GPT
+      isCorrect: true
+      explanation: The AD DS version arrived, but SYSVOL is stale, so inspect DFSR events, GPT files, and replication state.
+    - content: WMI filter syntax
+      isCorrect: false
+      explanation: WMI filtering affects applicability, not replication of the GPT.
+    - content: User token renewal
+      isCorrect: false
+      explanation: Token renewal doesn't reconcile GPC and GPT versions on a domain controller.
+  - content: >-
+      `gpupdate /target:computer` completes, but a computer-assigned software package doesn't install. The operational log states that the extension requires foreground processing. What is the correct conclusion?
+    choices:
+    - content: The GPO is denied.
+      isCorrect: false
+      explanation: The foreground requirement indicates deferred extension processing, not a denied GPO.
+    - content: Group Policy Modeling must be rerun.
+      isCorrect: false
+      explanation: Modeling doesn't trigger the required foreground processing cycle.
+    - content: The package needs a startup processing cycle.
+      isCorrect: true
+      explanation: Computer-assigned Software Installation requires foreground startup processing.
+    - content: The GPT is orphaned.
+      isCorrect: false
+      explanation: An orphaned GPT isn't implied by an explicit foreground-processing requirement.
+  - content: >-
+      `gpresult` lists a browser policy as applied. The expected value isn't effective. The client is MDM-enrolled. What should the administrator do next?
+    choices:
+    - content: Check target support plus competing MDM policy.
+      isCorrect: true
+      explanation: Confirm supported-on data, extension completion, effective state, and any equivalent Policy CSP assignment.
+    - content: Force AD DS replication.
+      isCorrect: false
+      explanation: Applied RSoP already shows selection; replication doesn't prove support or effective state.
+    - content: Increase the slow-link threshold.
+      isCorrect: false
+      explanation: A slow-link threshold doesn't resolve a support or competing-authority issue.
+    - content: Run `dcgpofix`.
+      isCorrect: false
+      explanation: >-
+        `dcgpofix` repairs default GPOs and isn't appropriate for this effective-state discrepancy.
+  - content: Startup takes 50 seconds longer on one server group. The operational timeline shows a WMI filter consuming 46 seconds. What is the best next action?
+    choices:
+    - content: Disable every WMI filter in the domain.
+      isCorrect: false
+      explanation: A domain-wide change is disproportionate to the evidence and expands risk.
+    - content: Inspect the query, provider, target properties, plus healthy-peer timing.
+      isCorrect: true
+      explanation: The timeline identifies a testable bottleneck; validate query design and provider behavior before changing scope.
+    - content: Run `gpupdate /force` repeatedly.
+      isCorrect: false
+      explanation: Repeated refreshes don't diagnose or correct the expensive WMI query.
+    - content: Make every GPO link enforced.
+      isCorrect: false
+      explanation: Enforced links affect inheritance and precedence, not WMI query execution time.
+  - content: An LDAP hardening GPO applies successfully. Directory Service events identify unsigned binds from one application. What is the safest response?
+    choices:
+    - content: Disable signing on every domain controller.
+      isCorrect: false
+      explanation: Broadly weakening the control exposes every eligible client and has an unacceptable blast radius.
+    - content: Remove the hardening GPO from the domain.
+      isCorrect: false
+      explanation: Removing the control broadly doesn't address the incompatible client safely.
+    - content: Update or reconfigure the LDAP client to use signing or TLS; use temporary containment only when a technically feasible control-specific mechanism exists and its actual blast radius is approved.
+      isCorrect: true
+      explanation: LDAP signing and channel binding are domain-controller-side controls without a documented per-client GPO allow list, so remediate the client and approve only feasible containment with its real scope recorded.
+    - content: Reset SYSVOL replication.
+      isCorrect: false
+      explanation: The GPO applied successfully, so resetting SYSVOL doesn't address the incompatible LDAP bind.
+  - content: A GPO linked to the Servers OU grants **Read** and **Apply Group Policy** to `CONTOSO\App-Servers` and has a GPO-level WMI filter that matches member servers. Within that GPO, one Group Policy Preferences Registry item has item-level targeting that requires membership in `CONTOSO\App-Pilot`; a second preference item has no item-level targeting. A server is in `CONTOSO\App-Servers`, passes the WMI filter, but isn't in `CONTOSO\App-Pilot`. Which statement is correct?
+    choices:
+    - content: The GPO remains eligible and its other applicable settings and preference items can process, but the targeted Registry item is skipped. Security and GPO-level WMI filtering scope the whole GPO; item-level targeting scopes one preference item and isn't a security boundary.
+      isCorrect: true
+      explanation: A false item-level target skips only that preference item; it controls processing rather than authorization or confidentiality.
+    - content: The failed item-level target removes the entire GPO from the server's applicable GPO list.
+      isCorrect: false
+      explanation: Item-level targeting is evaluated after the GPO is applicable and skips only the targeted preference item.
+    - content: The GPO-level WMI filter controls only the Registry preference item, while security filtering controls the other settings.
+      isCorrect: false
+      explanation: Security filtering and the GPO-linked WMI filter scope the whole GPO.
+    - content: Item-level targeting grants the pilot group **Read** and **Apply Group Policy** even if the GPO's security filtering denies those permissions.
+      isCorrect: false
+      explanation: Item-level targeting doesn't grant GPO permissions or override security filtering.
+    - content: Item-level targeting prevents computers outside the pilot group from reading the preference configuration, so it can safely protect secrets.
+      isCorrect: false
+      explanation: Item-level targeting isn't an authorization or confidentiality boundary and must not be used to protect secrets.

@@ -14,7 +14,7 @@ Both server-level and database-level firewalls in Azure SQL Database use IP addr
 
 Server-level firewall rules permit users to connect to all databases on the server, while database-level firewall rules are used to grant or block specific IP addresses from accessing individual databases.
 
-You can configure server-level firewall rules using the Azure portal or by executing the [`sp_set_firewall_rule`](/sql/relational-databases/system-stored-procedures/sp-set-database-firewall-rule-azure-sql-database?azure-portal=true) stored procedure within the master database. This flexibility ensures that you can manage access efficiently and securely.
+You can configure server-level firewall rules using the Azure portal or by executing the [`sp_set_firewall_rule`](/sql/relational-databases/system-stored-procedures/sp-set-firewall-rule-azure-sql-database?azure-portal=true) stored procedure within the master database. This flexibility ensures that you can manage access efficiently and securely.
 
  > [!NOTE]
  >The **Allow Azure Services and resources to access this server** server setting counts as a single firewall rule when enabled.

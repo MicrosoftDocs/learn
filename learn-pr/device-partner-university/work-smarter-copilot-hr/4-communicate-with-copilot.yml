@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.work-smarter-copilot-hr.communicate-with-copilot
+title: Collaborate and communicate with Copilot
+metadata:
+  title: Collaborate And Communicate With Copilot
+  description: This content is part of the "Work smarter with Copilot prompts for human resources [DA1.1][GU1.2]professionals" module.
+  ms.date: 07/27/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-communicate-with-copilot.md)]

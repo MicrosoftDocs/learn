@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.rag-fundamentals.knowledge-check
+title: Module assessment
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Module assessment
+  description: Check your understanding of the concepts covered in this module.
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 07/31/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  module_assessment: true
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+    - content: "What is the main purpose of retrieval-augmented generation (RAG)?"
+      choices:
+        - content: "To retrain a language model whenever source information changes."
+          isCorrect: false
+          explanation: "Incorrect. RAG retrieves information at run time without retraining the language model."
+        - content: "To ground generated responses in relevant information retrieved from a data source."
+          isCorrect: true
+          explanation: "Correct! RAG adds retrieved information to the prompt so the model can generate a grounded response."
+        - content: "To replace a language model with a search engine."
+          isCorrect: false
+          explanation: "Incorrect. A RAG solution combines retrieval with a generative language model."
+    - content: "Why are large documents commonly divided into chunks before they're indexed?"
+      choices:
+        - content: "So the solution can retrieve focused passages that fit efficiently into a prompt."
+          isCorrect: true
+          explanation: "Correct! Chunking enables retrieval of focused, relevant passages instead of entire documents."
+        - content: "So every chunk can be used to train a separate language model."
+          isCorrect: false
+          explanation: "Incorrect. Chunking prepares content for retrieval, not for training separate models."
+        - content: "So the original documents no longer need to be stored."
+          isCorrect: false
+          explanation: "Incorrect. Source documents still need to be managed and updated appropriately."
+    - content: "What does an embedding represent in a RAG solution?"
+      choices:
+        - content: "A numerical vector that captures semantic characteristics of content."
+          isCorrect: true
+          explanation: "Correct! Embeddings enable a solution to compare the semantic similarity of queries and content."
+        - content: "A set of instructions that defines the model's behavior."
+          isCorrect: false
+          explanation: "Incorrect. Instructions that define model behavior are typically provided in a system prompt."
+        - content: "A final answer generated for a user."
+          isCorrect: false
+          explanation: "Incorrect. An embedding is a numerical representation used during retrieval."
+    - content: "Which search approach can find a passage about 'company travel costs' when the query asks about 'business trip expenses,' even if the words differ?"
+      choices:
+        - content: "Semantic vector search."
+          isCorrect: true
+          explanation: "Correct! Vector search can match content based on semantic similarity rather than exact words alone."
+        - content: "An exact filename match."
+          isCorrect: false
+          explanation: "Incorrect. An exact filename match doesn't account for similar meanings expressed with different words."
+        - content: "Random document selection."
+          isCorrect: false
+          explanation: "Incorrect. Random selection doesn't identify information relevant to the query."
+    - content: "A RAG response is fluent but contains an incorrect policy limit. What should be examined first?"
+      choices:
+        - content: "Whether the correct and current policy passage was retrieved and supplied as context."
+          isCorrect: true
+          explanation: "Correct! RAG quality depends first on retrieving appropriate source content, and then on generating an answer that follows it."
+        - content: "Whether the language model can produce a longer response."
+          isCorrect: false
+          explanation: "Incorrect. A longer response doesn't correct missing, irrelevant, or outdated grounding information."
+        - content: "Whether more unrelated documents can be added to the prompt."
+          isCorrect: false
+          explanation: "Incorrect. Irrelevant context can reduce answer quality rather than improve it."

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.review-app-permissions-security
+title: Review app permissions and security
+metadata:
+  title: Review App Permissions and Security
+  description: "Review Microsoft Graph, Teams resource-specific consent, Azure Databricks sign-in, and data-boundary considerations."
+  ms.date: 08/26/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-review-app-permissions-security.md)]

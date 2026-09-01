@@ -3,8 +3,8 @@ uid: learn.wwl.evaluate-strategies-for-migrating-to-azure-sql
 metadata:
   title: Evaluate strategies for migrating to Azure SQL
   description: "Evaluate strategies for migrating to Azure SQL"
-  ms.date: 02/04/2026
-  author: wwlpublish
+  ms.date: 08/04/2026
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
   ms.service: azure-sql

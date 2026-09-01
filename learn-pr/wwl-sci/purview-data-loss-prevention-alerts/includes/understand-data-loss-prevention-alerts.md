@@ -1,4 +1,4 @@
-Monitoring data loss prevention (DLP) alerts helps organizations identify risks before they turn into security incidents. This unit introduces how DLP alerts work, where to find them, and what role Microsoft Defender XDR and Microsoft Purview play in the monitoring process.
+Data loss prevention (DLP) alerts fire when someone's action matches a condition in a DLP policy. To investigate one effectively, you need to know what triggered it, where it shows up, and which tool to open first. Staying on top of alerts is how you spot risky activity early, respond before small issues escalate, and figure out which policies need tuning.
 
 ## What is a DLP alert?
 
@@ -12,17 +12,9 @@ Alerts don't automatically mean something malicious happened. They just tell you
 
 DLP alerts appear in two tools. Both show the same alerts, but they serve different purposes:
 
-- **Microsoft Defender XDR** is used for security investigations. It consolidates incidents so you can see everything related to a potential threat in one place. If DLP alerts are part of a bigger security issue, like someone exfiltrating data while also turning off antivirus settings, Defender XDR helps you connect those dots.
+- **Microsoft Defender XDR** is used for security investigations. It consolidates incidents so you can see everything related to a potential threat in one place. If DLP alerts are part of a bigger security issue, like someone exfiltrating data while also turning off antivirus settings, Defender XDR is where you correlate those signals.
   
 - **Microsoft Purview** is used for compliance. It focuses more on the policy itself: what triggered the alert, what rules were involved, and whether those rules are working as expected. If the alert came from a false positive, Purview is where you'd go to adjust the policy so it doesn't happen again.
-
-## Why monitor DLP alerts?
-
-Monitoring alerts helps security teams:
-
-- **Understand risky activity**: You can see how people are interacting with sensitive data and which actions might lead to data loss.
-- **Respond quickly**: Alerts are meant to prompt a response. Reviewing them early can help you prevent a small mistake from turning into a major breach.
-- **Improve policy accuracy**: Over time, you learn which alerts are helpful and which aren't. That feedback loop helps you refine your policies and reduce noise.
 
 ## How alerts help during investigations
 

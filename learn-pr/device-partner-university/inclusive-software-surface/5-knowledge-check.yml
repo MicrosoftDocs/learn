@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.inclusive-software-surface.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Support inclusive work with Windows accessibility features on Surface devices" module.
+  ms.date: 08/25/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A user struggles to read documents because text blends into the background and visual elements are difficult to distinguish. Which Windows accessibility feature best addresses this barrier?"
+    choices:
+        - content: "Magnifier"
+          isCorrect: false
+          explanation: "Incorrect. Magnifier enlarges content to make small text and details easier to see, but the scenario describes a contrast issue rather than a size issue."
+        - content: "Contrast themes"
+          isCorrect: true
+          explanation: "Correct. Contrast themes change system colors to make text, controls, and backgrounds easier to distinguish when visual contrast is the primary barrier."
+        - content: "Voice Focus"
+          isCorrect: false
+          explanation: "Incorrect. Voice Focus reduces background noise during calls and is designed to improve audio clarity, not visual accessibility."
+        - content: "Live Captions"
+          isCorrect: false
+          explanation: "Incorrect. Live Captions transcribe spoken content to support comprehension of audio, not readability of on-screen text."
+  - content: "According to the module’s decision-making approach, what should you do first when recommending an accessibility feature?"
+    choices:
+        - content: "Confirm language support and region availability"
+          isCorrect: false
+          explanation: "Incorrect. The module recommends validating requirements before deployment, but this isn't the first step in the decision-making approach."
+        - content: "Select the most advanced accessibility tool available"
+          isCorrect: false
+          explanation: "Incorrect. The module emphasizes matching a tool to a user's needs rather than choosing the most advanced feature."
+        - content: "Identify the user barrier"
+          isCorrect: true
+          explanation: "Correct. The module teaches learners to first identify the barrier, then choose the accessibility tool, and finally connect it to a workplace outcome."
+        - content: "Verify device hardware requirements"
+          isCorrect: false
+          explanation: "Incorrect. This is an important consideration later in the recommendation process, but it isn't the first step."
+  - content: "Which accessibility feature enables users to control their PC and author text using spoken commands, including navigating apps and using File Explorer?"
+    choices:
+        - content: "Voice Access"
+          isCorrect: true
+          explanation: "Correct. Voice Access allows users to control their PC, navigate apps, use File Explorer and Search, and dictate or edit content through spoken commands."
+        - content: "Eye control"
+          isCorrect: false
+          explanation: "Incorrect. Eye control uses eye-tracking hardware for gaze-based interaction rather than spoken commands."
+        - content: "Voice typing"
+          isCorrect: false
+          explanation: "Incorrect. Voice typing focuses on dictating text into supported text fields and doesn't provide full PC navigation and control capabilities."
+        - content: "Narrator"
+          isCorrect: false
+          explanation: "Incorrect. Narrator is a screen reader that provides audio feedback and navigation support, but it doesn't provide voice-based PC control."
+  - content: "What is a key benefit of Live Captions highlighted in the module?"
+    choices:
+        - content: "They require an internet connection to function at all times."
+          isCorrect: false
+          explanation: "Incorrect. The module states that Live Captions can work offline after setup and language file download."
+        - content: "They automatically improve microphone quality."
+          isCorrect: false
+          explanation: "Incorrect. Improving speech clarity is associated with Voice Focus, not Live Captions."
+        - content: "They enlarge application windows for easier viewing."
+          isCorrect: false
+          explanation: "Incorrect. Enlarging content is the purpose of Magnifier."
+        - content: "They help reduce communication gaps when spoken information is difficult to follow."
+          isCorrect: true
+          explanation: "Correct. The module states that Live Captions reduce communication gaps caused by audio quality issues, background noise, hearing needs, or language barriers."
+  - content: "Which statement about Eye control is accurate?"
+    choices:
+        - content: "It uses AI-based noise suppression to reduce background sounds."
+          isCorrect: false
+          explanation: "Incorrect. This describes Voice Focus."
+        - content: "It works with a standard camera and requires no additional hardware."
+          isCorrect: false
+          explanation: "Incorrect. The module specifically states that Eye control requires a compatible eye-tracking device and doesn't work with a standard camera alone."
+        - content: "It enables gaze-based interaction through a compatible eye-tracking device."
+          isCorrect: true
+          explanation: "Correct. Eye control allows users to move the cursor, click, scroll, type, and use text-to-speech through gaze-based interaction."
+        - content: "It automatically corrects grammar and punctuation while dictating."
+          isCorrect: false
+          explanation: "Incorrect. This capability is associated with Fluid Dictation on supported Copilot+ PCs."

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=678814ce-a010-449a-a8e0-701af04b2a5d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 SQL Database in Microsoft Fabric is a versatile and developer-friendly transactional database built on the foundation of Azure SQL Database. It allows for the creation and management of operational databases within the Fabric environment.
 
 Differently than Azure SQL Database, which is a Platform as a Service (PaaS), SQL Database in Microsoft Fabric is a Software as a Service (SaaS). This means that users can enjoy a low-maintenance solution, allowing them to focus even more on their core business activities.
@@ -56,4 +67,6 @@ Automatic tuning is a built-in capability that applies machine learning to optim
 
 In SQL database in Fabric, indexes are managed dynamically, with a graph showing the count of created, dropped, and reverted indexes over time, and a table listing the indexes created by the tool, including details like schema name, table name, index name, status, key columns, included columns, and creation and drop dates.
 
-You can monitor automatic indexing on the **Automatic index** tab in the performance dashboard. 
+You can monitor automatic indexing on the **Automatic index** tab in the performance dashboard.
+
+::: zone-end

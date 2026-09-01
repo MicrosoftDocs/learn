@@ -3,7 +3,7 @@ uid: learn.azure.hunt-threats-sentinel.2-exercise-setup
 metadata: 
   title: Exercise setup
   description: Learn how to set up your Azure resources to hunt threats using Microsoft Sentinel.
-  ms.date: 06/09/2025
+  ms.date: 08/20/2026
   author: KenMAG
   ms.author: kelawson
   ms.topic: unit

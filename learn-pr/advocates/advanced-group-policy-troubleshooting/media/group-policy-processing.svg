@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="650" viewBox="0 0 1600 650" role="img" aria-labelledby="title desc">
+  <title id="title">Group Policy client path and replication evidence rail</title>
+  <desc id="desc">Eight numbered client-path nodes run from definition and supportability through application behavior. A separate dashed replication rail feeds named-domain-controller link and Group Policy Container evidence through Active Directory replication and Group Policy Template evidence through DFS Replication. Each node names its primary evidence and the footer states that no single report proves end-to-end success.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L0,6 L9,3 z" fill="#243A5E"/>
+    </marker>
+    <marker id="rail-arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L0,6 L9,3 z" fill="#5C2D91"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="650" fill="#FFFFFF"/>
+  <text x="800" y="42" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#172B4D">Trace the client path; test replication as infrastructure</text>
+  <text x="800" y="70" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#334E68">Solid arrows show client processing. The dashed rail supplies replica state but is not a serial client phase.</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <g transform="translate(25 105)">
+      <rect width="170" height="215" rx="10" fill="#E8F3FC" stroke="#005A9E" stroke-width="3"/>
+      <circle cx="24" cy="24" r="16" fill="#005A9E"/>
+      <text x="24" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">1</text>
+      <text x="85" y="56" text-anchor="middle" font-size="19" font-weight="700" fill="#172B4D">Definition</text>
+      <text x="85" y="80" text-anchor="middle" font-size="17" font-weight="700" fill="#172B4D">and support</text>
+      <line x1="15" y1="101" x2="155" y2="101" stroke="#005A9E" stroke-width="2"/>
+      <text x="85" y="130" text-anchor="middle" font-size="15" fill="#334E68">Evidence:</text>
+      <text x="85" y="153" text-anchor="middle" font-size="15" fill="#334E68">GPO report and</text>
+      <text x="85" y="176" text-anchor="middle" font-size="15" fill="#334E68">support metadata</text>
+      <text x="85" y="202" text-anchor="middle" font-size="13" font-weight="700" fill="#A4262C">Unsupported on target?</text>
+    </g>
+
+    <g transform="translate(220 105)">
+      <rect width="170" height="215" rx="10" fill="#E8F3FC" stroke="#005A9E" stroke-width="3"/>
+      <circle cx="24" cy="24" r="16" fill="#005A9E"/>
+      <text x="24" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">2</text>
+      <text x="85" y="56" text-anchor="middle" font-size="19" font-weight="700" fill="#172B4D">Scope and</text>
+      <text x="85" y="80" text-anchor="middle" font-size="17" font-weight="700" fill="#172B4D">eligibility</text>
+      <line x1="15" y1="101" x2="155" y2="101" stroke="#005A9E" stroke-width="2"/>
+      <text x="85" y="130" text-anchor="middle" font-size="15" fill="#334E68">Evidence:</text>
+      <text x="85" y="153" text-anchor="middle" font-size="15" fill="#334E68">named-DC links</text>
+      <text x="85" y="176" text-anchor="middle" font-size="15" fill="#334E68">and actual RSoP</text>
+      <text x="85" y="202" text-anchor="middle" font-size="13" font-weight="700" fill="#A4262C">Eligible and in scope?</text>
+    </g>
+
+    <g transform="translate(415 105)">
+      <rect width="170" height="215" rx="10" fill="#F3E8FD" stroke="#5C2D91" stroke-width="3"/>
+      <circle cx="24" cy="24" r="16" fill="#5C2D91"/>
+      <text x="24" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">3</text>
+      <text x="85" y="68" text-anchor="middle" font-size="19" font-weight="700" fill="#172B4D">Discovery</text>
+      <line x1="15" y1="101" x2="155" y2="101" stroke="#5C2D91" stroke-width="2"/>
+      <text x="85" y="130" text-anchor="middle" font-size="15" fill="#334E68">Evidence:</text>
+      <text x="85" y="153" text-anchor="middle" font-size="15" fill="#334E68">Activity ID and</text>
+      <text x="85" y="176" text-anchor="middle" font-size="15" fill="#334E68">DC Locator</text>
+      <text x="85" y="202" text-anchor="middle" font-size="13" font-weight="700" fill="#A4262C">Selected expected DC?</text>
+    </g>
+
+    <g transform="translate(610 105)">
+      <rect width="170" height="215" rx="10" fill="#F3E8FD" stroke="#5C2D91" stroke-width="3"/>
+      <circle cx="24" cy="24" r="16" fill="#5C2D91"/>
+      <text x="24" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">4</text>
+      <text x="85" y="56" text-anchor="middle" font-size="19" font-weight="700" fill="#172B4D">GPC retrieval</text>
+      <text x="85" y="80" text-anchor="middle" font-size="17" font-weight="700" fill="#172B4D">AD DS / LDAP</text>
+      <line x1="15" y1="101" x2="155" y2="101" stroke="#5C2D91" stroke-width="2"/>
+      <text x="85" y="130" text-anchor="middle" font-size="15" fill="#334E68">Evidence:</text>
+      <text x="85" y="153" text-anchor="middle" font-size="15" fill="#334E68">named-DC GPC</text>
+      <text x="85" y="176" text-anchor="middle" font-size="15" fill="#334E68">metadata and access</text>
+      <text x="85" y="202" text-anchor="middle" font-size="13" font-weight="700" fill="#A4262C">Readable and current?</text>
+    </g>
+
+    <g transform="translate(805 105)">
+      <rect width="170" height="215" rx="10" fill="#FDF3E8" stroke="#B34700" stroke-width="3"/>
+      <circle cx="24" cy="24" r="16" fill="#B34700"/>
+      <text x="24" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">5</text>
+      <text x="85" y="56" text-anchor="middle" font-size="19" font-weight="700" fill="#172B4D">GPT retrieval</text>
+      <text x="85" y="80" text-anchor="middle" font-size="17" font-weight="700" fill="#172B4D">SYSVOL / SMB</text>
+      <line x1="15" y1="101" x2="155" y2="101" stroke="#B34700" stroke-width="2"/>
+      <text x="85" y="130" text-anchor="middle" font-size="15" fill="#334E68">Evidence:</text>
+      <text x="85" y="153" text-anchor="middle" font-size="15" fill="#334E68">named-DC GPT</text>
+      <text x="85" y="176" text-anchor="middle" font-size="15" fill="#334E68">files and ACL</text>
+      <text x="85" y="202" text-anchor="middle" font-size="13" font-weight="700" fill="#A4262C">Readable and current?</text>
+    </g>
+
+    <g transform="translate(1000 105)">
+      <rect width="170" height="215" rx="10" fill="#E7F6E7" stroke="#107C10" stroke-width="3"/>
+      <circle cx="24" cy="24" r="16" fill="#107C10"/>
+      <text x="24" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">6</text>
+      <text x="85" y="56" text-anchor="middle" font-size="19" font-weight="700" fill="#172B4D">CSE</text>
+      <text x="85" y="80" text-anchor="middle" font-size="17" font-weight="700" fill="#172B4D">processing</text>
+      <line x1="15" y1="101" x2="155" y2="101" stroke="#107C10" stroke-width="2"/>
+      <text x="85" y="130" text-anchor="middle" font-size="15" fill="#334E68">Evidence:</text>
+      <text x="85" y="153" text-anchor="middle" font-size="15" fill="#334E68">paired CSE events,</text>
+      <text x="85" y="176" text-anchor="middle" font-size="15" fill="#334E68">code and duration</text>
+      <text x="85" y="202" text-anchor="middle" font-size="13" font-weight="700" fill="#A4262C">Ran, failed, deferred?</text>
+    </g>
+
+    <g transform="translate(1195 105)">
+      <rect width="170" height="215" rx="10" fill="#E7F6E7" stroke="#107C10" stroke-width="3"/>
+      <circle cx="24" cy="24" r="16" fill="#107C10"/>
+      <text x="24" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">7</text>
+      <text x="85" y="56" text-anchor="middle" font-size="19" font-weight="700" fill="#172B4D">Effective</text>
+      <text x="85" y="80" text-anchor="middle" font-size="17" font-weight="700" fill="#172B4D">state</text>
+      <line x1="15" y1="101" x2="155" y2="101" stroke="#107C10" stroke-width="2"/>
+      <text x="85" y="130" text-anchor="middle" font-size="15" fill="#334E68">Evidence:</text>
+      <text x="85" y="153" text-anchor="middle" font-size="15" fill="#334E68">setting-specific</text>
+      <text x="85" y="176" text-anchor="middle" font-size="15" fill="#334E68">subsystem tool</text>
+      <text x="85" y="202" text-anchor="middle" font-size="13" font-weight="700" fill="#A4262C">Reload or restart pending?</text>
+    </g>
+
+    <g transform="translate(1390 105)">
+      <rect width="185" height="215" rx="10" fill="#FFF4CE" stroke="#8A6D00" stroke-width="3"/>
+      <circle cx="24" cy="24" r="16" fill="#8A6D00"/>
+      <text x="24" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">8</text>
+      <text x="92" y="56" text-anchor="middle" font-size="19" font-weight="700" fill="#172B4D">Application</text>
+      <text x="92" y="80" text-anchor="middle" font-size="17" font-weight="700" fill="#172B4D">behavior</text>
+      <line x1="15" y1="101" x2="170" y2="101" stroke="#8A6D00" stroke-width="2"/>
+      <text x="92" y="130" text-anchor="middle" font-size="15" fill="#334E68">Evidence:</text>
+      <text x="92" y="153" text-anchor="middle" font-size="15" fill="#334E68">application, service,</text>
+      <text x="92" y="176" text-anchor="middle" font-size="15" fill="#334E68">or protocol proof</text>
+      <text x="92" y="202" text-anchor="middle" font-size="13" font-weight="700" fill="#A4262C">Consumer rejects state?</text>
+    </g>
+  </g>
+
+  <g stroke="#243A5E" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <line x1="195" y1="212" x2="215" y2="212"/>
+    <line x1="390" y1="212" x2="410" y2="212"/>
+    <line x1="585" y1="212" x2="605" y2="212"/>
+    <line x1="780" y1="212" x2="800" y2="212"/>
+    <line x1="975" y1="212" x2="995" y2="212"/>
+    <line x1="1170" y1="212" x2="1190" y2="212"/>
+    <line x1="1365" y1="212" x2="1385" y2="212"/>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="120" y="405" width="1360" height="145" rx="14" fill="#F8F5FC" stroke="#5C2D91" stroke-width="3" stroke-dasharray="12 8"/>
+    <circle cx="158" cy="442" r="20" fill="#FFFFFF" stroke="#5C2D91" stroke-width="3"/>
+    <text x="158" y="449" text-anchor="middle" font-size="20" font-weight="700" fill="#5C2D91">R</text>
+    <text x="195" y="448" font-size="21" font-weight="700" fill="#172B4D">Replication infrastructure rail</text>
+    <text x="195" y="482" font-size="16" fill="#334E68">Compare matching objects and artifacts</text>
+    <text x="195" y="506" font-size="16" fill="#334E68">on explicitly named domain controllers.</text>
+
+    <rect x="560" y="430" width="470" height="82" rx="10" fill="#FFFFFF" stroke="#5C2D91" stroke-width="2"/>
+    <text x="795" y="462" text-anchor="middle" font-size="17" font-weight="700" fill="#172B4D">AD DS replication</text>
+    <text x="795" y="489" text-anchor="middle" font-size="15" fill="#334E68">Site, domain, and OU links plus GPC metadata</text>
+    <rect x="1080" y="430" width="330" height="82" rx="10" fill="#FFFFFF" stroke="#B34700" stroke-width="2" stroke-dasharray="7 5"/>
+    <text x="1245" y="462" text-anchor="middle" font-size="17" font-weight="700" fill="#172B4D">DFSR replication</text>
+    <text x="1245" y="489" text-anchor="middle" font-size="15" fill="#334E68">GPT files in SYSVOL</text>
+  </g>
+
+  <g stroke="#5C2D91" stroke-width="3" fill="none" stroke-dasharray="8 6" marker-end="url(#rail-arrow)">
+    <path d="M650 430 L650 380 L305 380 L305 325"/>
+    <path d="M900 430 L900 365 L695 365 L695 325"/>
+    <path d="M1245 430 L1245 350 L890 350 L890 325"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#5C2D91">
+    <text x="320" y="348">named-DC links</text>
+    <text x="710" y="342">named-DC GPC</text>
+    <text x="905" y="338">named-DC GPT</text>
+  </g>
+
+  <rect x="405" y="584" width="790" height="44" rx="22" fill="#243A5E"/>
+  <text x="800" y="613" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">No single report proves end-to-end success.</text>
+</svg>

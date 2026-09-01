@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.apply-schema-design-patterns-azure-documentdb
+metadata:
+  title: Apply Schema Design Patterns in Azure DocumentDB
+  description: "Apply 10 schema design patterns to solve data modeling challenges in Azure DocumentDB. Organize documents, precompute results, manage arrays, group time-series data, evolve schemas, and archive old data."
+  ms.date: 06/20/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-documentdb
+  ai-usage: ai-assisted
+title: Apply schema design patterns in Azure DocumentDB
+summary: Apply 10 schema design patterns to solve data modeling challenges in Azure DocumentDB. Organize documents, precompute results, manage arrays, group time-series data, evolve schemas, and archive old data.
+abstract: |
+  After completing this module, you'll be able to:
+  - Apply the inheritance, computed, and approximation patterns to optimize document structure and read/write performance.
+  - Use the extended reference and schema versioning patterns to reduce cross-collection lookups and manage schema evolution.
+  - Implement the single collection, subset, bucket, outlier, and archive patterns for complex data scenarios.
+prerequisites: |
+  - Familiarity with database concepts such as queries, indexes, and data models.
+  - Basic understanding of MongoDB or document-oriented databases.
+  - Experience with insert, query, update, and delete operations in Azure DocumentDB or MongoDB.
+  - Understanding of data relationship modeling with embedding and referencing strategies.
+  - An Azure subscription.
+  - An Azure DocumentDB cluster.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-documentdb
+subjects:
+- databases
+units:
+- learn.wwl.apply-schema-design-patterns-azure-documentdb.introduction
+- learn.wwl.apply-schema-design-patterns-azure-documentdb.organize-optimize-documents
+- learn.wwl.apply-schema-design-patterns-azure-documentdb.reduce-lookups-manage-schema-evolution
+- learn.wwl.apply-schema-design-patterns-azure-documentdb.handle-complex-data-scenarios
+- learn.wwl.apply-schema-design-patterns-azure-documentdb.exercise-apply-patterns
+- learn.wwl.apply-schema-design-patterns-azure-documentdb.knowledge-check
+- learn.wwl.apply-schema-design-patterns-azure-documentdb.summary
+badge:
+  uid: learn.wwl.apply-schema-design-patterns-azure-documentdb.badge

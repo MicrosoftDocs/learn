@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e919ffce-6f4e-4af7-9f24-2e7f3a49ec6e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB's vector storage capabilities make it the right foundation for encoding clinical observations as semantic memories that agents retrieve by meaning rather than exact match. Not every agent interaction is worth storing—effective encoding policy filters routine exchanges and captures observations that contain new, useful information about the patient's condition, preferences, and care context.
 
 > [!TIP]
@@ -201,3 +212,5 @@ for mem in relevant_memories:
 - **Vector storage in Cosmos DB** uses the `vector_embedding` container policy with HNSW indexing and cosine similarity to enable semantic retrieval of memories.
 - **Semantic retrieval** at session start finds relevant memories based on meaning, not keywords—a query about "blood sugar concerns" retrieves a memory about "glucose monitoring anxiety" even without shared terms.
 - **Patient-scoped partitioning** uses `patient_id` as the partition key, ensuring all memory queries are physically isolated to a single patient's data.
+
+::: zone-end

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-azure-documentdb.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "This unit introduces the Azure DocumentDB module and outlines the learning objectives."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

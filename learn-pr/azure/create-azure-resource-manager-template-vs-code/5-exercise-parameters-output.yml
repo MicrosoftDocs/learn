@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Add parameters and outputs to your Azure Resource Manager template
   description: Update your Azure Resource Manager template to add parameters and outputs.
   ms.date: 10/20/2025
-  author: mumian
-  ms.author: jgao
+  author: wwlpublish
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
     - devx-track-arm-template

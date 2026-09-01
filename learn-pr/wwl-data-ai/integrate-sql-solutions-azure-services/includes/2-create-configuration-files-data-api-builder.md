@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=52758708-7736-49b0-9428-8ddd260e00cd]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 [Data API Builder (DAB)](/azure/data-api-builder/overview?azure-portal=true) is a cross-platform, open-source engine that creates modern REST and GraphQL endpoints for your database without requiring you to write custom code. With a single configuration file, you can expose your database objects through secure, scalable APIs that support authentication, authorization, and caching.
 
 If you work with Azure SQL or SQL databases in Microsoft Fabric, you've likely faced requests to make your data accessible to application developers. Building custom API layers takes time and adds maintenance overhead. Data API Builder eliminates that work by generating APIs directly from your database schema.
@@ -142,3 +153,5 @@ dab start --config dab-config.production.json
 ```
 
 Environment-specific files only need to contain settings that differ from the base. DAB handles the merge automatically, with environment-specific values taking precedence over base settings.
+
+::: zone-end

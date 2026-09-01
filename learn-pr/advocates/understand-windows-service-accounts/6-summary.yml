@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-windows-server-service-accounts.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review the service account decision path and find links to learn more.
+  ms.date: 07/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

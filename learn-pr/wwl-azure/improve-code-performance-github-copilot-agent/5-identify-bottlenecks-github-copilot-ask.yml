@@ -5,8 +5,8 @@ metadata:
   title: Identify Performance Bottlenecks using GitHub Copilot's Ask Mode
   description: Identify performance bottlenecks using GitHub Copilot's Ask mode.
   ms.date: 10/20/2025
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: unit
 durationInMinutes: 7
 content: |

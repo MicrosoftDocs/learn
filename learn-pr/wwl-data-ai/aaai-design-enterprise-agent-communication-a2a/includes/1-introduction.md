@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8630ef6a-1bbf-4679-aa4f-25f7a581f0f2]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso Capital's agent platform has grown from three experimental agents to dozens of specialized agents running across multiple Azure regions. Their initial approach—hardcoding agent endpoints and managing state in local memory—no longer scales. Agents need to discover each other dynamically without manual configuration updates. Multiple agents must collaborate on shared research tasks, reading and writing state concurrently. The platform serves hundreds of clients, requiring strict context isolation to prevent data leakage between portfolios. When two agents produce contradictory analysis results for the same company, the system needs automated conflict detection and resolution.
 
 ### From orchestrator-mediated handoffs to network-scale discovery
@@ -14,3 +22,8 @@ In this module, you learn to design enterprise-grade A2A agent ecosystems that s
 - Building conflict detection and resolution mechanisms for contradictory agent outputs
 
 These patterns transform prototype agent systems into scalable, enterprise-grade architectures built for hundreds of agents and thousands of concurrent client contexts. A2A integration with Azure AI Foundry Agent Service is currently in preview—validate feature availability and GA status before committing these patterns to production deployments. You start by examining how discovery registries eliminate hardcoded agent dependencies.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

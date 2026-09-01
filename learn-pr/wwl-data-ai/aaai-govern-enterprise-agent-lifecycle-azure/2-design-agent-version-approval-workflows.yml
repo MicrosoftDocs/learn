@@ -2,11 +2,12 @@
 uid: learn.wwl.govern-enterprise-agent-lifecycle-azure.design-agent-version-approval-workflows
 title: Design agent versioning and approval workflows
 metadata:
+  zone_pivot_groups: video-or-text
   title: Design Agent Versioning and Approval Workflows
   description: "Design agent versioning and approval workflows."
-  ms.date: 06/02/2026
-  author: chrishowd
-  ms.author: cahowd
+  ms.date: 8/4/2026
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

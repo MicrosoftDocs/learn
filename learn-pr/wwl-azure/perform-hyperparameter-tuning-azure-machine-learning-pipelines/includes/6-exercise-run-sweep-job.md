@@ -1,13 +1,7 @@
-Now, it's your chance to explore how to tune hyperparameters with a sweep job.
+Now it's your turn to tune hyperparameters with a sweep job.
 
-In this exercise, you learn how to:
-
-- Run a command job.
-- Configure a sweep job using the command job as a base.
-- Submit the sweep job.
-
-## Instructions
+In this exercise, you run a command job, configure a sweep job, and submit the sweep job.
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/09-Hyperparameter-tuning.html?azure-portal=true)
+:::image type="content" source="../media/launch-exercise.png" alt-text="Illustration of a button that opens the hyperparameter tuning exercise in a new browser tab." link="https://go.microsoft.com/fwlink/?LinkId=2377900&azure-portal=true":::

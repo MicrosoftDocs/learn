@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-single-domain-active-directory-forest.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding of single-domain forest boundaries, site mapping, replication, and design validation.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A business unit requires its administrators and directory data to be isolated from forest-level administrators. Which design meets this requirement?"
+    choices:
+    - content: "Deploy the business unit in a separate forest."
+      isCorrect: true
+      explanation: "Correct. A forest is the AD DS security boundary. A separate domain in the same forest doesn't provide isolation from forest-level administrators."
+    - content: "Create a child domain for the business unit in the existing forest."
+      isCorrect: false
+      explanation: "Incorrect. A child domain remains within the forest security boundary, so forest-level administrators retain control."
+    - content: "Create an organizational unit and delegate its administration."
+      isCorrect: false
+      explanation: "Incorrect. Organizational unit delegation supports administrative separation, but it doesn't isolate the business unit from forest-level administrators."
+  - content: "Clients in a new Azure virtual network resolve AD DS records but select domain controllers in a distant site. Netlogon Event ID 5807 reports their addresses. What should the design add?"
+    choices:
+    - content: "An AD DS subnet object for the virtual network prefix mapped to the intended site."
+      isCorrect: true
+      explanation: "Correct. DC Locator uses the client's IP address and AD DS subnet mappings to determine its site and prefer a domain controller registered for that site."
+    - content: "A lower-cost site link between the virtual network and the distant site."
+      isCorrect: false
+      explanation: "Incorrect. Site link cost controls intersite replication routing; it doesn't map client addresses to sites."
+    - content: "A manual connection object from the local domain controller to the distant domain controller."
+      isCorrect: false
+      explanation: "Incorrect. Connection objects govern domain controller replication and don't correct missing client subnet mappings."
+  - content: "A design requires directory and Group Policy changes to converge within a defined interval after the primary WAN path fails. Which validation best demonstrates that the design meets the requirement?"
+    choices:
+    - content: "Interrupt the primary path under production-like conditions, verify the KCC uses an alternate path, and measure both AD DS and SYSVOL convergence."
+      isCorrect: true
+      explanation: "Correct. The test exercises the documented failure condition and measures both directory replication and DFS Replication for SYSVOL against the required interval."
+    - content: "Confirm that Get-ADReplicationFailure returns no results while every WAN path is available."
+      isCorrect: false
+      explanation: "Incorrect. An empty failure list during normal operation doesn't prove that an alternate path works or that changes converge within the required interval."
+    - content: "Create manual connection objects and preferred bridgehead servers before testing the WAN failure."
+      isCorrect: false
+      explanation: "Incorrect. Manual topology can prevent KCC failover and should be used only when evidence shows that automatic topology management can't meet a specific requirement."

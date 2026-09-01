@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="650" viewBox="0 0 1560 650" role="img" aria-labelledby="title desc">
+  <title id="title">Secure directory-integrated Domain Name System update flow</title>
+  <desc id="desc">Four numbered stages show a member submitting a secure update, a DNS server authorizing it, a directory partition storing it, and replication distributing it.</desc>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0 0L0 6L9 3z" fill="#243A5E"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0 0L0 6L9 3z" fill="#006B5A"/>
+    </marker>
+    <style>
+      .box{fill:#fff;stroke:#243A5E;stroke-width:2}
+      .partition{fill:#edf8f1;stroke:#006B5A;stroke-width:2}
+      .verification{fill:#eef5ff;stroke:#506A8A;stroke-width:2}
+      .badge{fill:#243A5E}
+      .badgeText{font:700 18px Segoe UI,Arial,sans-serif;fill:#fff;text-anchor:middle}
+      .title{font:700 23px Segoe UI,Arial,sans-serif;fill:#172B4D;text-anchor:middle}
+      .heading{font:700 18px Segoe UI,Arial,sans-serif;fill:#172B4D;text-anchor:middle}
+      .text{font:14px Segoe UI,Arial,sans-serif;fill:#172B4D;text-anchor:middle}
+      .label{fill:#fff;stroke:#b8c4d6;stroke-width:1}
+      .flow{stroke:#243A5E;stroke-width:2.5;fill:none;marker-end:url(#arrow-blue)}
+      .replication{stroke:#006B5A;stroke-width:3;fill:none;marker-end:url(#arrow-green)}
+    </style>
+  </defs>
+
+  <text x="750" y="50" class="title">Secure directory-integrated DNS update and replication</text>
+
+  <!-- Numbered stage badges are separated from all stage text. -->
+  <circle cx="165" cy="132" r="25" class="badge"/>
+  <text x="165" y="138" class="badgeText">1</text>
+  <circle cx="560" cy="132" r="25" class="badge"/>
+  <text x="560" y="138" class="badgeText">2</text>
+  <circle cx="955" cy="132" r="25" class="badge"/>
+  <text x="955" y="138" class="badgeText">3</text>
+  <circle cx="1335" cy="132" r="25" class="badge"/>
+  <text x="1335" y="138" class="badgeText">4</text>
+
+  <!-- Stage 1 -->
+  <rect x="40" y="180" width="250" height="205" rx="12" class="box"/>
+  <text x="165" y="222" class="heading">BNE-APP7</text>
+  <text x="165" y="260" class="text">Authenticated member</text>
+  <text x="165" y="290" class="text">Identifies a writable authority</text>
+  <text x="165" y="320" class="text">Submits a host update</text>
+  <text x="165" y="350" class="text">with its intended identity</text>
+
+  <!-- Stage 2 -->
+  <rect x="420" y="180" width="280" height="205" rx="12" class="box"/>
+  <text x="560" y="222" class="heading">BNE-DC1 DNS service</text>
+  <text x="560" y="258" class="text">Confirms authoritative zone</text>
+  <text x="560" y="286" class="text">Requires secure update</text>
+  <text x="560" y="314" class="text">Validates identity and prerequisites</text>
+  <text x="560" y="342" class="text">Checks ownership and ACLs</text>
+
+  <!-- Stage 3 -->
+  <rect x="830" y="180" width="250" height="205" rx="12" class="partition"/>
+  <text x="955" y="222" class="heading">DomainDnsZones</text>
+  <text x="955" y="260" class="text">Stores accepted data for</text>
+  <text x="955" y="288" class="text">corp.contoso.com</text>
+  <text x="955" y="326" class="text">The application directory</text>
+  <text x="955" y="354" class="text">partition defines replica scope</text>
+
+  <!-- Stage 4 -->
+  <rect x="1210" y="180" width="250" height="205" rx="12" class="box"/>
+  <text x="1335" y="222" class="heading">PER-DC1</text>
+  <text x="1335" y="258" class="text">Receives the directory change</text>
+  <text x="1335" y="286" class="text">Hosts an authoritative replica</text>
+  <text x="1335" y="314" class="text">Returns the converged record</text>
+  <text x="1335" y="342" class="text">after replication completes</text>
+
+  <!-- Connector labels occupy dedicated gaps above the arrows. -->
+  <rect x="300" y="228" width="110" height="50" rx="6" class="label"/>
+  <text x="355" y="248" class="text">
+    <tspan x="355">TKEY context</tspan>
+    <tspan x="355" dy="19">TSIG update</tspan>
+  </text>
+  <path d="M290 315H420" class="flow"/>
+
+  <rect x="710" y="236" width="110" height="34" rx="6" class="label"/>
+  <text x="765" y="258" class="text">Authorized write</text>
+  <path d="M700 315H830" class="flow"/>
+
+  <rect x="1090" y="236" width="110" height="34" rx="6" class="label"/>
+  <text x="1145" y="258" class="text">AD replication</text>
+  <path d="M1080 315H1210" class="replication"/>
+
+  <!-- Verification follows the ordered stages without crossing the main flow. -->
+  <path d="M1335 385V455" class="flow"/>
+  <rect x="1160" y="470" width="350" height="90" rx="12" class="verification"/>
+  <text x="1335" y="505" class="heading">Verify convergence</text>
+  <text x="1335" y="535" class="text">Query the affected record on each relevant replica.</text>
+
+  <rect x="220" y="585" width="1060" height="40" rx="8" class="verification"/>
+  <text x="750" y="611" class="text">A successful local write isn't forest-wide proof. Verify the application directory partition and affected record.</text>
+</svg>

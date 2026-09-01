@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.active-directory-backup-recovery.validate-restored-directory-services
+metadata:
+  title: Validate Restored Directory Services
+  description: Validate directory service health, replication, DNS, time, authentication, security, applications, and controlled reconnection.
+  ms.date: 08/12/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Validate restored directory services
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-validate-restored-directory-services.md)]

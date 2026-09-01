@@ -4,12 +4,11 @@ title: Exercise - Deploy Azure Firewall
 metadata:
   unitType: exercise
   title: Exercise - Deploy Azure Firewall
-  description: Exercise - Deploy Azure Firewall
-  ms.date: 01/18/2024
+  description: Deploy Azure Firewall in a peered hub network and configure DNS proxy for the session host.
+  ms.date: 08/17/2026
   author: vhorne
-  ms.author: victorh
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-deploy-azure-firewall.md)]
-

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">One packet with several local appearances</title>
+  <desc id="desc">A shared packet group identifier and packet number link three successive appearances at a protocol component, filter driver, and network adapter.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="440" fill="#FFFFFF"/>
+  <text x="500" y="38" text-anchor="middle" fill="#1A1A1A" font-size="24" font-weight="700">One captured packet, three local observations</text>
+
+  <rect x="260" y="62" width="480" height="72" rx="12" fill="#FFF4CE" stroke="#D83B01" stroke-width="2"/>
+  <text x="500" y="90" text-anchor="middle" fill="#8A2C0A" font-size="17" font-weight="700">Shared packet identity</text>
+  <text x="500" y="116" text-anchor="middle" fill="#1A1A1A" font-size="16">Packet group 9001 + packet number 1</text>
+
+  <line x1="500" y1="134" x2="500" y2="165" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="45" y="180" width="260" height="150" rx="12" fill="#F7FBFF" stroke="#0078D4" stroke-width="2"/>
+  <circle cx="90" cy="225" r="24" fill="#107C10"/>
+  <text x="90" y="233" text-anchor="middle" fill="#FFFFFF" font-size="22" font-weight="700">1</text>
+  <text x="175" y="224" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">Appearance 1</text>
+  <text x="175" y="260" text-anchor="middle" fill="#424242" font-size="16">Protocol component</text>
+  <text x="175" y="292" text-anchor="middle" fill="#424242" font-size="15">Direction and size recorded</text>
+
+  <rect x="370" y="180" width="260" height="150" rx="12" fill="#F7FBFF" stroke="#0078D4" stroke-width="2"/>
+  <circle cx="415" cy="225" r="24" fill="#107C10"/>
+  <text x="415" y="233" text-anchor="middle" fill="#FFFFFF" font-size="22" font-weight="700">2</text>
+  <text x="500" y="224" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">Appearance 2</text>
+  <text x="500" y="260" text-anchor="middle" fill="#424242" font-size="16">Filter driver</text>
+  <text x="500" y="292" text-anchor="middle" fill="#424242" font-size="15">Same packet identity</text>
+
+  <rect x="695" y="180" width="260" height="150" rx="12" fill="#F7FBFF" stroke="#0078D4" stroke-width="2"/>
+  <circle cx="740" cy="225" r="24" fill="#107C10"/>
+  <text x="740" y="233" text-anchor="middle" fill="#FFFFFF" font-size="22" font-weight="700">3</text>
+  <text x="825" y="224" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">Appearance 3</text>
+  <text x="825" y="260" text-anchor="middle" fill="#424242" font-size="16">Network adapter</text>
+  <text x="825" y="292" text-anchor="middle" fill="#424242" font-size="15">Same packet identity</text>
+
+  <line x1="305" y1="255" x2="360" y2="255" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="630" y1="255" x2="685" y2="255" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="165" y="365" width="670" height="48" rx="10" fill="#DFF6DD" stroke="#107C10" stroke-width="2"/>
+  <text x="500" y="396" text-anchor="middle" fill="#0B5A0B" font-size="17" font-weight="700">Repeated appearances aren't automatically duplicate packets or retransmissions.</text>
+</svg>

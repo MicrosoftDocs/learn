@@ -5,7 +5,7 @@ metadata:
   description: "SAP professionals need to evaluate deploying SAP solutions on Azure. This module explores the preparation for single-instance SAP HANA deployment on Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 12/23/2024
   author: bradjoseph
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.custom:
   - N/A

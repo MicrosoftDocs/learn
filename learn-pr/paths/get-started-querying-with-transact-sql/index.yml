@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-querying-with-transact-sql
 metadata:
   title: Query and modify data with Transact-SQL
   description: Learn how to use Transact-SQL (T-SQL) to interact with relational databases by querying and modifying data. This course covers essential operations such as inserting, updating, deleting, and merging data across tables. You'll also explore how to generate automatic values and apply changes efficiently using SQL Server or Azure SQL environments.
-  ms.date: 08/27/2025
+  ms.date: 08/10/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: learning-path

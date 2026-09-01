@@ -27,5 +27,6 @@ subjects:
 modules:
 - learn.wwl.store-manage-containers-azure-container-registry
 - learn.wwl.deploy-containers-azure-app-service
+- learn.wwl.deploy-sidecar-azure-app-service
 trophy:
   uid: learn.wwl.implement-container-app-hosting-azure.trophy

@@ -1,0 +1,130 @@
+### YamlMime:ModuleUnit
+uid: learn.github.code-reviews-pull-requests-github-copilot.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Check what you learned about GitHub Copilot code reviews and Premium Request Units.
+  ms.date: 08/24/2026
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary role of GitHub Copilot in the code review process?"
+    choices:
+    - content: "To replace human reviewers and make all final merge decisions."
+      isCorrect: false
+      explanation: "Copilot assists with code reviews, but human reviewers remain responsible for final judgment and approval."
+    - content: "To act as a collaborative reviewer that identifies issues, suggests improvements, and provides useful context."
+      isCorrect: true
+      explanation: "Copilot complements human reviewers by identifying potential issues, suggesting improvements, explaining code, and helping reviewers work more efficiently."
+    - content: "To automatically rewrite every file in a pull request."
+      isCorrect: false
+      explanation: "Copilot does not automatically rewrite every file. Its review capabilities provide targeted feedback and suggestions."
+    - content: "To prevent developers from submitting pull requests until every issue is fixed."
+      isCorrect: false
+      explanation: "Copilot can identify potential issues, but it doesn't replace the team's review and merge process."
+  - content: "Which GitHub Copilot feature can help a reviewer understand unfamiliar code in a pull request?"
+    choices:
+    - content: "Line-by-line code explanations."
+      isCorrect: true
+      explanation: "Copilot can explain highlighted code, helping reviewers understand unfamiliar functionality more quickly."
+    - content: "Branch protection deletion."
+      isCorrect: false
+      explanation: "Branch protection controls repository policies and isn't a Copilot feature for explaining code."
+    - content: "Repository archiving."
+      isCorrect: false
+      explanation: "Repository archiving has nothing to do with explaining code during a review."
+    - content: "Automatic branch renaming."
+      isCorrect: false
+      explanation: "Copilot's review capabilities don't automatically rename branches."
+  - content: "A developer highlights repeated Ruby code in the Files changed view and asks Copilot, 'Suggest a cleaner Ruby refactor for this repeated code.' What is Copilot most likely to provide?"
+    choices:
+    - content: "A context-aware refactoring suggestion that the developer can use in their review comment."
+      isCorrect: true
+      explanation: "Copilot can generate concrete, language-aware suggestions that reviewers can use to make feedback more actionable."
+    - content: "An automatic merge of the pull request."
+      isCorrect: false
+      explanation: "Generating a suggestion doesn't automatically merge the pull request."
+    - content: "A new repository with the refactored code."
+      isCorrect: false
+      explanation: "Copilot provides suggestions in the review context rather than creating a separate repository."
+    - content: "A requirement that the author rewrite the entire application."
+      isCorrect: false
+      explanation: "Copilot focuses on relevant improvements rather than requiring unrelated large-scale changes."
+  - content: "How can custom Copilot instructions improve code reviews?"
+    choices:
+    - content: "They force Copilot to approve every pull request."
+      isCorrect: false
+      explanation: "Custom instructions guide Copilot's review behavior; they don't force approvals."
+    - content: "They allow teams to specify review guidelines and patterns that Copilot should consider."
+      isCorrect: true
+      explanation: "Repository and path-specific instructions help Copilot apply team-specific security, readability, style, and other review expectations."
+    - content: "They disable all language-specific best-practice checks."
+      isCorrect: false
+      explanation: "Custom instructions add guidance rather than disabling Copilot's general ability to analyze code."
+    - content: "They automatically resolve every review comment without developer involvement."
+      isCorrect: false
+      explanation: "Custom instructions influence Copilot's analysis and suggestions but don't remove the need for developer judgment."
+
+  - content: "Where should path-specific Copilot instructions be placed?"
+    choices:
+    - content: "In the `.github/instructions` directory, using files that end in `.instructions.md`."
+      isCorrect: true
+      explanation: "Path-specific instructions are stored in `.github/instructions` and use `.instructions.md` files with an `applyTo` pattern."
+    - content: "In the `.git` directory using `.review` files."
+      isCorrect: false
+      explanation: "The `.git` directory isn't where Copilot path-specific instructions are configured."
+    - content: "In the repository root using a file named `review.yml`."
+      isCorrect: false
+      explanation: "Path-specific Copilot instructions use `.instructions.md` files in `.github/instructions`."
+    - content: "In the `node_modules` directory using Markdown files."
+      isCorrect: false
+      explanation: "The `node_modules` directory isn't used for repository-specific Copilot instructions."
+  - content: "What are Premium Request Units (PRUs) used for in GitHub Copilot?"
+    choices:
+    - content: "They provide additional capacity for advanced, context-rich Copilot requests."
+      isCorrect: true
+      explanation: "PRUs support premium-level capabilities that require additional processing, context, and reasoning."
+    - content: "They are GitHub Actions minutes used to run CI workflows."
+      isCorrect: false
+      explanation: "PRUs are associated with Copilot premium requests, not GitHub Actions workflow execution time."
+    - content: "They are repository storage units for pull request files."
+      isCorrect: false
+      explanation: "PRUs are not a form of repository storage."
+    - content: "They are required for every basic Copilot autocomplete suggestion."
+      isCorrect: false
+      explanation: "Not every lightweight Copilot interaction is a premium request."
+  - content: "A team wants Copilot to review every pull request targeting its protected production branch. Which GitHub feature can the team use to automate this?"
+    choices:
+    - content: "A branch ruleset configured to require a pull request review from Copilot."
+      isCorrect: true
+      explanation: "Repository or organization rulesets can require Copilot reviews for pull requests targeting selected branches."
+    - content: "A README file containing Copilot prompts."
+      isCorrect: false
+      explanation: "A README doesn't enforce automated reviews."
+    - content: "A Git tag created for every pull request."
+      isCorrect: false
+      explanation: "Git tags don't automatically assign Copilot as a reviewer."
+    - content: "A repository topic named `copilot-review`."
+      isCorrect: false
+      explanation: "Repository topics are descriptive metadata and don't configure review requirements."
+  - content: "A team has limited PRUs and receives many small documentation-only pull requests. Which approach best helps optimize PRU usage?"
+    choices:
+    - content: "Use premium reviews for every change regardless of size."
+      isCorrect: false
+      explanation: "Using premium reviews indiscriminately can consume PRUs without providing proportional value."
+    - content: "Reserve premium reviews for large or high-risk changes and use standard Copilot capabilities for simpler work."
+      isCorrect: true
+      explanation: "Strategically reserving PRUs for changes where deeper analysis provides the most value helps control usage while maintaining review quality."
+    - content: "Disable all Copilot reviews permanently."
+      isCorrect: false
+      explanation: "Disabling Copilot entirely removes its benefits rather than optimizing premium usage."
+    - content: "Repeat the same premium request several times for every pull request."
+      isCorrect: false
+      explanation: "Unnecessary retries can waste PRUs. Clear prompts and targeted use of premium capabilities are better strategies."

@@ -4,14 +4,14 @@ Follow these steps to identify Global Admin in Microsoft 365 Admin Center:
 
 :::image type="content" border="true" source="../media/identify-global-admin.gif" alt-text="Animation showing the process of identifying the Global Admin in Microsoft 365 Admin Center.":::
 
-- Go to the Microsoft 365 Admin Center ([admin.microsoft.com](/admin.microsoft.com)).
+- Go to the Microsoft 365 Admin Center ([admin.microsoft.com](https://admin.microsoft.com)).
 - Navigate to **Users** on the left-hand navigation pane, then select **Active Users** in the options bar.
 - Select **Filter**, then choose **Global Admins**.
 - Record the Global Admin contact information, then email them for access.
 
 To look up Global Admin on Intune Admin Center for Surface Management Portal:
 
-- Go to the Intune Admin Center ([intune.microsoft.com](/intune.microsoft.com)).
+- Go to the Intune Admin Center ([intune.microsoft.com](https://intune.microsoft.com)).
 - Navigate to **Users** on the left-hand navigation pane.
 - Select **Per-User MFA**.
 - In the View filter select **Global Administrators**.

@@ -23,7 +23,7 @@ prerequisites:   |
   To get the best learning experience from this module, you should have knowledge and experience of:
   - Fundamental security concepts (for example, authentication, access control, encryption)
   - Fundamental AI concepts (for example, models, training, inference)
-  - The types of AI attacks covered in the [Fundamentals of AI security](/training/modules/fundamentals-of-ai-security/) module
+  - The types of AI attacks covered in the [Fundamentals of AI security](/training/modules/fundamentals-ai-security/) module
   - The security controls covered in the [AI security controls](/training/modules/ai-security-controls/) module
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

@@ -56,6 +56,7 @@ predictions_df = model.transform(validation_df)
 # and a 'label' column with the actual known label values
 
 # Use an evaluator to get metrics
+evaluator = MulticlassClassificationEvaluator(predictionCol="prediction", labelCol="label")
 accuracy = evaluator.evaluate(predictions_df, {evaluator.metricName:"accuracy"})
 print("Accuracy:", accuracy)
 

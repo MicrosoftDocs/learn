@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.model-data-relationships-azure-documentdb.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Check your understanding of data relationship modeling in Azure DocumentDB."
+  ms.date: 04/15/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: ""
+  questions:
+  - content: "A developer is designing a document schema for a product catalog where each product has technical specifications that are always displayed on the product detail page. The combined product and specifications data is approximately 5 KB. Which modeling strategy should the developer use for this relationship?"
+    choices:
+    - content: "Store specifications in a separate collection and reference them by ID from the product document."
+      isCorrect: false
+      explanation: "Referencing adds an extra query for data that is always accessed together. With only 5 KB of combined data, document size isn't a concern, so embedding provides better read performance."
+    - content: "Embed the specifications as a nested object inside the product document."
+      isCorrect: true
+      explanation: "This one-to-one relationship is always accessed together, the combined size is small, and specifications don't change frequently. Embedding provides single-query performance with no trade-offs in this scenario."
+    - content: "Store each specification field as a separate document in a specifications collection."
+      isCorrect: false
+      explanation: "Splitting individual fields into separate documents increases query complexity by requiring multiple reads for data that belongs together as a single logical unit."
+  - content: "An e-commerce application stores product reviews. Popular products can have over 50,000 reviews, but the product page only displays the top 10 most helpful reviews on initial load. Which pattern best models this relationship?"
+    choices:
+    - content: "Embed all reviews directly in the product document."
+      isCorrect: false
+      explanation: "Embedding 50,000 reviews in a single document would exceed the 16-MB BSON (binary JSON) document size limit and cause performance problems during reads, even when only 10 are needed for display."
+    - content: "Store all reviews in a separate collection and query the top 10 every time the product page loads."
+      isCorrect: false
+      explanation: "While this approach works, it requires an extra query for every product page view. The subset pattern provides the top reviews without an extra query for the most common access pattern."
+    - content: "Embed the top 10 reviews in the product document and store all reviews in a separate collection."
+      isCorrect: true
+      explanation: "The subset pattern embeds a bounded subset for fast initial loads and keeps the complete set in a separate collection for pagination and full access. This embedding matches the access pattern of displaying a few reviews on the product page with a 'Show all reviews' option."
+  - content: "A developer needs to model a many-to-many relationship between products and categories. Product pages must display category names, and category pages must list products. Both queries are equally frequent. Which approach should the developer use?"
+    choices:
+    - content: "Store category ID only on the product documents and use a lookup to resolve category names."
+      isCorrect: false
+      explanation: "One-way references require a second query or lookup to display category names on every product page load. Since both directions are queried frequently, two-way references with denormalized display data eliminate extra queries from both sides."
+    - content: "Create a junction collection with one document per product-category pair."
+      isCorrect: false
+      explanation: "Junction collections follow a relational pattern and require two lookups for every query. Document databases handle many-to-many relationships more efficiently with arrays of references on both sides."
+    - content: "Store denormalized category information on product documents and product ID arrays on category documents."
+      isCorrect: true
+      explanation: "Two-way references with denormalized display data allow both product pages and category pages to resolve quickly without extra queries. The trade-off is updating both sides when relationships change, which can be managed with transactions or eventual consistency."
+  - content: "When an app analyzes a one-to-many relationship between customers and orders, a developer finds that customers average 10 orders today but the application is expected to handle customers with thousands of orders within two years. Which factor in the decision framework is most critical for choosing between embedding and referencing?"
+    choices:
+    - content: "Access pattern frequency"
+      isCorrect: false
+      explanation: "Access pattern frequency tells how often data is requested together, but it doesn't address the growth problem. Even if orders are always accessed with the customer, unbounded growth makes embedding unsustainable."
+    - content: "Cardinality and growth potential"
+      isCorrect: true
+      explanation: "Cardinality determines whether the child count is bounded or unbounded. Embedding works for bounded collections, but unbounded growth toward thousands of items risks document size limits and degraded write performance. Use referencing or the subset pattern for unbounded relationships."
+    - content: "Data ownership lifecycle"
+      isCorrect: false
+      explanation: "Ownership helps determine whether data should be embedded or referenced, but doesn't address the primary concern here. Orders have a weak lifecycle relationship with customers, but the unbounded growth is the deciding factor."
+  - content: "A retail application stores user documents with embedded addresses. A user currently has three addresses. The developer needs to update the street field of the user's home address without affecting the other addresses. Which approach correctly targets only the home address?"
+    choices:
+    - content: "Use $set to replace the entire addresses array with a new array containing the updated address."
+      isCorrect: false
+      explanation: "Replacing the entire array overwrites all addresses, which risks data loss if the application doesn't have the latest version of every address. Targeted updates are safer and more efficient."
+    - content: "To update only the matched element, use updateOne with a query filter matching the address type and the positional operator ($)."
+      isCorrect: true
+      explanation: "Combining a query filter like 'addresses.type: home' with the positional operator ($) targets only the matched array element. This filter updates the home address in place without affecting the work or other addresses."
+    - content: "Use `$pull` to remove the home address, then `$push` to add the updated version."
+      isCorrect: false
+      explanation: "Removing and readding the address is a two-step operation that risks losing the document if the process fails between steps. The positional operator provides an atomic, single-operation update."

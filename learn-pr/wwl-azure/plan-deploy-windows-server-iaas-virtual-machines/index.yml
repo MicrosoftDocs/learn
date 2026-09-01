@@ -2,14 +2,15 @@
 uid: learn.wwl.plan-deploy-windows-server-iaas-vms
 metadata:
   title: Plan and deploy Windows Server IaaS Virtual Machines
-  description: "You're able to describe Azure compute and storage in relation to Azure VMs, and deploy Azure VMs by using the Azure portal, Azure CLI, or templates."
-  ms.date: 01/23/2026
+  description: "Learn how to plan and deploy Windows Server IaaS VMs in Azure, including VM sizes and tiers, managed disk storage, and deployment methods using the Azure portal, Azure CLI, and ARM templates."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Plan and deploy Windows Server IaaS Virtual Machines
-summary: You're able to describe Azure compute and storage in relation to Azure VMs, and deploy Azure VMs by using the Azure portal, Azure CLI, or templates.
+summary: |
+  This module covers how to plan and deploy Windows Server IaaS virtual machines in Azure. You learn how to describe Azure compute resources including VM sizes, series, and Basic vs. Standard tiers, choose appropriate disk storage options including Standard HDD, Standard SSD, and Premium SSD managed disks, deploy Azure VMs using the Azure portal, Azure CLI, and Azure Resource Manager (ARM) templates, and configure additional options including Azure Automanage for automated VM management best practices.
 abstract: |
   After completing this module, you'll be able to:
   - Describe Azure compute.

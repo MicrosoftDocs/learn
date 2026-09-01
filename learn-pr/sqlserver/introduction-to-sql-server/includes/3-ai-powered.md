@@ -1,6 +1,6 @@
 SQL Server 2025 introduces native AI capabilities with [vector search](/sql/sql-server/ai/vectors) functionality. This enables semantic search and natural language queries to find relationships in data beyond traditional full-text search capabilities.
 
-Model management in T-SQL allows you to work with models from [Azure OpenAI Service](/azure/ai-services/openai/overview), [Microsoft Foundry](/azure/ai-foundry/what-is-azure-ai-foundry), and other providers through REST APIs. You can deploy and manage models on-premises or in the cloud using standard T-SQL syntax.
+Model management in T-SQL allows you to work with models from [Azure OpenAI](/azure/ai-services/openai/overview), [Azure AI Foundry](/azure/ai-foundry/what-is-azure-ai-foundry), and other providers through REST APIs. You can deploy and manage models on-premises or in the cloud using standard T-SQL syntax.
 
 The diagram highlights how SQL Server 2025 brings together advanced AI integration, vector search, and seamless model management. With these capabilities, organizations can unlock new insights, enable natural language queries, and build intelligent applications directly on their data platform.
 
@@ -24,9 +24,9 @@ The following table describes key AI capabilities in SQL Server 2025:
 
 Ensure your network and security configurations allow communication between SQL Server and Azure services when implementing hybrid scenarios.
 
-- **Managed disaster recovery**: SQL Server 2025 offers improved integration with Azure for managed disaster recovery, enabling automated backups, geo-replication, and fast failover to the cloud.
+- **Disaster recovery to Azure**: Extend on-premises high availability to Azure by using Always On availability groups, and back up to Azure Blob Storage, including immutable blob storage.
 - **Real-time analytics**: Use hybrid data architectures to combine on-premises and cloud data sources, enabling near real-time analytics and reporting using Azure Synapse Analytics, Power BI, and other cloud services.
-- **Advanced security and compliance**: Benefit from unified security management, advanced threat protection, and compliance monitoring by connecting SQL Server 2025 to Azure Security Center and Microsoft Purview.
+- **Advanced security and compliance**: Benefit from unified security management, advanced threat protection, and compliance monitoring by connecting SQL Server 2025 to Microsoft Defender for Cloud and Microsoft Purview.
 - **Hybrid data virtualization**: Access and query data across on-premises, cloud, and S3-compatible object storage providers using built-in connectors and data virtualization features.
 
 ## Explore implementation scenarios
@@ -38,7 +38,7 @@ Let's examine some common implementation scenarios that demonstrate how organiza
 | Real-time fraud detection | Vector search, T-SQL scoring | Immediate transaction verification |
 | Disaster recovery | Azure SQL, geo-replication | Business continuity assurance |
 | Unified analytics | Hybrid connections, Azure Synapse | Comprehensive data insights |
-| Content analysis | Azure Cognitive Services | Automated data enrichment |
+| Content analysis | Azure AI Services | Automated data enrichment |
 
 SQL Server 2025 empowers organizations to build intelligent, resilient, and scalable data solutions by combining the power of AI with seamless cloud connectivity.
 

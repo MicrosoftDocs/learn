@@ -18,4 +18,4 @@ Learning Path 4 Tips and Tricks
 - Prepare the knowledge mining solution before the start of class. Students aren't expected to replicate the process of creating a Cognitive Search Index in the exam. This demo’s purpose, like the others, is to give a sense of the capabilities of the service
 
 Learning Path 4 Exercise
-- [Exercise 01: Extract form data in Document Intelligence Studio](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Exercises/06-content-understanding.html)
+- Exercise 01: Extract form data in Document Intelligence Studio

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-schema.protect-schema-data
+title: Protect schema data
+metadata:
+  title: Protect Schema Data
+  description: Relate schema identifiers, property sets, control access rights, default security, confidentiality, and read-only replication controls.
+  ms.date: 07/30/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/11-protect-schema-data.md)]

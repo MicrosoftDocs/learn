@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.rag-fundamentals.evaluate-rag
+title: Evaluate a RAG solution
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Evaluate a RAG solution
+  description: Explore considerations for evaluating and improving a RAG solution.
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 07/31/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  zone_pivot_groups: video-or-text
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-evaluate-rag.md)]

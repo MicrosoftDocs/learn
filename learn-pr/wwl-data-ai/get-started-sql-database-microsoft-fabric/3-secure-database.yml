@@ -2,9 +2,10 @@
 uid: learn-wwl.get-started-sql-database-microsoft-fabric.secure-database
 title: Secure databases in Fabric
 metadata:
+  zone_pivot_groups: video-or-text
   title: Secure databases in Fabric
   description: "Learn how to secure databases in Fabric."
-  ms.date: 08/07/2025
+  ms.date: 8/27/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

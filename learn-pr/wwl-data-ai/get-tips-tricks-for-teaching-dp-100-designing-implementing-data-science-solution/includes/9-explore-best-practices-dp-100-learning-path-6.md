@@ -26,4 +26,4 @@ Learning Path 6 Demos (optional)
 
 Learning Path 6 Lab
 
-- [Lab 6.1: Track model training in notebooks with MLflow](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/07-Notebooks-mlflow-tracking.html)
+- Lab 6.1: Track model training in notebooks with MLflow

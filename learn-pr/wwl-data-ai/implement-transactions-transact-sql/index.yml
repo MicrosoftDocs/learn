@@ -3,8 +3,8 @@ uid: learn.wwl.implement-transactions-transact-sql
 metadata:
   title: Implement transactions with Transact-SQL
   description: "Implement transactions with Transact-SQL"
-  ms.date: 08/25/2023
-  author: wwlpublish
+  ms.date: 08/11/2026
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based
   ms.service: sql

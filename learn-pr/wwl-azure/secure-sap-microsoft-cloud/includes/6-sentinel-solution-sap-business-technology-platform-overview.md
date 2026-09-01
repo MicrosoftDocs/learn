@@ -22,7 +22,7 @@ The following image illustrates how Microsoft Sentinel retrieves the complete BT
 :::image type="content" source="../media/sap-business-technology-platform-solution-overview.png" alt-text="Diagram that shows an SAP BTP landscape integrated with Microsoft Sentinel." lightbox="../media/sap-business-technology-platform-solution-overview.png":::
 
 > [!NOTE]
-> Custom apps developed on SAP BTP using the Cloud Foundry environment or SAP Cloud Application Programming (CAP) Model don't write to the SAP Audit Log Management service by default. Audit-relevant events on custom apps need to be implemented by the app developer. See the [SAP CAP documentation](https://cap.cloud.sap/docs/guides/data-privacy/audit-logging#use-sap-audit-log-service) for details.
+> Custom apps developed on SAP BTP using the Cloud Foundry environment or SAP Cloud Application Programming (CAP) Model don't write to the SAP Audit Log Management service by default. Audit-relevant events on custom apps need to be implemented by the app developer. See the [SAP CAP documentation](https://cap.cloud.sap/docs/guides/security/dpp-audit-logging) for details.
 
 ## Why it's important to monitor BTP activity
 

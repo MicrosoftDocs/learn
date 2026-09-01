@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.advanced-group-policy-troubleshooting.analyze-integrated-cases
+title: Analyze integrated troubleshooting cases
+metadata:
+  title: Analyze Integrated Troubleshooting Cases
+  description: Apply evidence-first reasoning to integrated loopback, competing-authority, replication, performance, and Windows Server 2025 hardening cases.
+  ms.date: 08/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/11-analyze-integrated-cases.md)]

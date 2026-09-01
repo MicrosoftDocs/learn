@@ -5,7 +5,7 @@ metadata:
   description: Learn how to implement late binding using delegates, how to notify other classes or objects when something of interest occurs using events, and how to manage event publishers and subscribers in a C# application.
   ms.date: 04/25/2025
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: buzahid
   ms.topic: learning-path
 title: Implement delegates and events
 prerequisites: |

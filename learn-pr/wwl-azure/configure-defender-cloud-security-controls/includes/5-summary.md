@@ -6,7 +6,7 @@ With security standards configured and remediation controls deployed, you're rea
 
 ## Learn more
 
-- [Manage security policies and standards](/azure/defender-for-cloud/manage-security-standards)
+- [Manage security policies and standards](/azure/defender-for-cloud/security-policy-concept)
 - [Remediate security recommendations](/azure/defender-for-cloud/implement-security-recommendations)
 - [Governance rules](/azure/defender-for-cloud/governance-rules)
-- [Custom security standards](/azure/defender-for-cloud/create-manage-custom-standards)
+- [Custom security standards](/azure/defender-for-cloud/create-custom-recommendations)

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-security-policies.deploy-network-application-security-policies
+title: Deploy network and application security policies
+metadata:
+  title: Deploy Network and Application Security Policies
+  description: Deploy Windows Firewall, IPsec, AppLocker, and Public Key policies to control network access and which applications can run.
+  ms.date: 07/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 16
+content: |
+  [!include[](includes/7-deploy-network-application-security-policies.md)]

@@ -1,15 +1,8 @@
 Microsoft Entra ID audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.
 
-In this module, you will:
-
- - Learn about sign-in, audit, and diagnostic logs.
- - Learn about managing sign-in through a third-party security information and event management (SIEM) tool.
- - Learn about reporting.
- - Explore the identity secure score.
-
 ## Learning objectives
 
-By the end of this module you should be able to:
+By the end of this module, you're able to:
 
  - Analyze and investigate sign-in logs to troubleshoot access issues.
  - Review and monitor Microsoft Entra audit logs.

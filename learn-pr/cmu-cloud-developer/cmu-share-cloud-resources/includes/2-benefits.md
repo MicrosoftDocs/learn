@@ -36,7 +36,7 @@ The following six areas enable virtualization on the cloud:
 ### References
 
 1. _Barham et al. (2003). [Xen and the Art of Virtualization](https://www.cl.cam.ac.uk/research/srg/netos/papers/2003-xensosp.pdf) In Proceedings of the 19th ACM Symposium on Operating Systems Principles (SOSP '03). ACM, New York, NY, USA_
-2. _Michelle Bailey (2009). [The Economics of Virtualization: Moving Toward an Application-Based Cost Model](https://docplayer.net/8213094-White-paper-the-economics-of-virtualization-moving-toward-an-application-based-cost-model.html) VMware Sponsored White Paper_
+2. _Michelle Bailey (2009). [The Economics of Virtualization: Moving Toward an Application-Based Cost Model](https://www.yumpu.com/en/document/read/6801250/white-paper-the-economics-of-virtualization-moving-vmware) VMware Sponsored White Paper_
 3. _Chen and Noble (2001). [When Virtual Is Better than Real](https://www.researchgate.net/publication/221150845_When_Virtual_is_Better_than_Real) IEEE Computer Society, Washington, DC, USA_
 4. _JE Smith and Nair (2005). [Virtual Machines: Versatile Platforms for Systems and Processes](https://www.sciencedirect.com/book/9781558609105/virtual-machines) Morgan Kaufmann_
 5. _A. Beloglazov and R. Buyya (2010). [Energy Efficient Allocation of Virtual Machines in Cloud Data Centers](https://ieeexplore.ieee.org/document/5493430) CCGrid_
@@ -47,7 +47,7 @@ The following six areas enable virtualization on the cloud:
 ***
 
 [^1]: <https://www.cl.cam.ac.uk/research/srg/netos/papers/2003-xensosp.pdf> "Barham et al. (2003). *Xen and The Art of Virtualization* In Proceedings of the nineteenth ACM symposium on operating systems principles (SOSP '03). ACM, New York, NY, USA"
-[^2]: <https://docplayer.net/8213094-White-paper-the-economics-of-virtualization-moving-toward-an-application-based-cost-model.html> "Michelle Bailey (2009). *The Economics of Virtualization: Moving Toward an Application-Based Cost Model* VMware Sponsored Whitepaper"
+[^2]: <https://www.yumpu.com/en/document/read/6801250/white-paper-the-economics-of-virtualization-moving-vmware> "Michelle Bailey (2009). *The Economics of Virtualization: Moving Toward an Application-Based Cost Model* VMware Sponsored Whitepaper"
 [^3]: <https://www.researchgate.net/publication/221150845_When_Virtual_is_Better_than_Real> "Chen and Noble (2001). *When Virtual Is Better Than Real* IEEE Computer Society, Washington, DC, USA"
 [^4]: <https://www.sciencedirect.com/book/9781558609105/virtual-machines> "JE Smith and Nair (2005). *Virtual Machines: Versatile Platforms For Systems and Processes* Morgan Kaufmann"
 [^5]: <https://ieeexplore.ieee.org/document/5493430> "A. Beloglazov and R. Buyya (2010). *Energy Efficient Allocation of Virtual Machines in Cloud Data Centers* CCGrid"

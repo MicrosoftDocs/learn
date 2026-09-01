@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Schema class inheritance and object identity</title>
+  <desc id="desc">The abstract top class leads to person, organizationalPerson, and the structural user class. An auxiliary class contributes more optional attributes. A user instance receives the effective union of inherited attributes while objectClass records the structural inheritance chain and objectCategory stores one indexed category value.</desc>
+  <defs>
+    <marker id="inherit-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+    <marker id="aux-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#8764B8"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="760" fill="#FFFFFF"/>
+  <text x="600" y="42" text-anchor="middle" fill="#1A1A1A" font-size="27" font-weight="700">Class definitions produce one effective object contract</text>
+
+  <text x="280" y="82" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">Structural inheritance</text>
+
+  <rect x="115" y="105" width="330" height="90" rx="10" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="280" y="139" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">top</text>
+  <text x="280" y="169" text-anchor="middle" fill="#323130" font-size="15">Abstract foundation</text>
+
+  <rect x="115" y="235" width="330" height="90" rx="10" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="280" y="269" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">person</text>
+  <text x="280" y="299" text-anchor="middle" fill="#323130" font-size="15">Adds person attributes</text>
+
+  <rect x="115" y="365" width="330" height="90" rx="10" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="280" y="399" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">organizationalPerson</text>
+  <text x="280" y="429" text-anchor="middle" fill="#323130" font-size="15">Adds organization attributes</text>
+
+  <rect x="115" y="495" width="330" height="112" rx="10" fill="#E1EFFF" stroke="#0078D4" stroke-width="3"/>
+  <text x="280" y="531" text-anchor="middle" fill="#005A9E" font-size="20" font-weight="700">user</text>
+  <text x="280" y="562" text-anchor="middle" fill="#323130" font-size="15">Structural class</text>
+  <text x="280" y="586" text-anchor="middle" fill="#323130" font-size="15">Can create directory instances</text>
+
+  <line x1="280" y1="195" x2="280" y2="225" stroke="#0078D4" stroke-width="4" marker-end="url(#inherit-arrow)"/>
+  <line x1="280" y1="325" x2="280" y2="355" stroke="#0078D4" stroke-width="4" marker-end="url(#inherit-arrow)"/>
+  <line x1="280" y1="455" x2="280" y2="485" stroke="#0078D4" stroke-width="4" marker-end="url(#inherit-arrow)"/>
+
+  <rect x="500" y="235" width="280" height="124" rx="10" fill="#F3E8FD" stroke="#8764B8" stroke-width="2" stroke-dasharray="8 5"/>
+  <text x="640" y="271" text-anchor="middle" fill="#5C2D91" font-size="19" font-weight="700">Auxiliary class</text>
+  <text x="640" y="302" text-anchor="middle" fill="#323130" font-size="15">Contributes optional attributes</text>
+  <text x="640" y="328" text-anchor="middle" fill="#323130" font-size="15">Cannot create an instance alone</text>
+
+  <path d="M640 359 C640 446, 500 535, 455 548" fill="none" stroke="#8764B8" stroke-width="4" stroke-dasharray="8 5" marker-end="url(#aux-arrow)"/>
+  <text x="520" y="425" fill="#5C2D91" font-size="14">auxiliaryClass</text>
+
+  <rect x="835" y="105" width="310" height="260" rx="12" fill="#F2F8FD" stroke="#0078D4" stroke-width="2"/>
+  <text x="990" y="141" text-anchor="middle" fill="#005A9E" font-size="20" font-weight="700">Effective user contract</text>
+  <text x="865" y="178" fill="#323130" font-size="15">Mandatory attributes:</text>
+  <text x="885" y="204" fill="#323130" font-size="14">class plus inherited mustContain</text>
+  <text x="865" y="238" fill="#323130" font-size="15">Optional attributes:</text>
+  <text x="885" y="264" fill="#323130" font-size="14">class plus inherited mayContain</text>
+  <text x="885" y="288" fill="#323130" font-size="14">plus auxiliary contributions</text>
+  <text x="865" y="322" fill="#323130" font-size="15">Legal parents:</text>
+  <text x="885" y="348" fill="#323130" font-size="14">effective possible superiors</text>
+
+  <line x1="445" y1="551" x2="825" y2="300" stroke="#0078D4" stroke-width="4" marker-end="url(#inherit-arrow)"/>
+
+  <rect x="620" y="455" width="525" height="220" rx="12" fill="#FFF4CE" stroke="#8A6D1D" stroke-width="2"/>
+  <text x="882" y="492" text-anchor="middle" fill="#5C4B00" font-size="20" font-weight="700">User instance: Alex</text>
+  <text x="650" y="532" fill="#323130" font-size="15" font-weight="700">objectClass</text>
+  <text x="790" y="532" fill="#323130" font-size="15">top, person, organizationalPerson, user</text>
+  <text x="650" y="572" fill="#323130" font-size="15" font-weight="700">objectCategory</text>
+  <text x="790" y="572" fill="#323130" font-size="15">One indexed category distinguished name</text>
+  <text x="650" y="612" fill="#323130" font-size="15" font-weight="700">objectGUID</text>
+  <text x="790" y="612" fill="#323130" font-size="15">Stable identity for this instance</text>
+  <text x="650" y="650" fill="#323130" font-size="15">The instance can store only attributes allowed by its effective class contract.</text>
+
+  <line x1="445" y1="576" x2="610" y2="576" stroke="#0078D4" stroke-width="4" marker-end="url(#inherit-arrow)"/>
+</svg>

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.model-data-relationships-azure-documentdb.model-many-to-many
+title: Model many-to-many relationships
+metadata:
+  title: Model Many-to-Many Relationships
+  description: "Implement many-to-many relationship patterns in Azure DocumentDB using one-way references, two-way references, denormalization, and consistency strategies."
+  ms.date: 04/15/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-model-many-to-many.md)]

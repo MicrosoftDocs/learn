@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.devrel.understand-windows-packet-monitor
+metadata:
+  title: Capture and Inspect Windows Server Network Traffic with Packet Monitor
+  description: Use Packet Monitor to discover network components, filter traffic, collect counters and packets, validate evidence, and convert a bounded Windows Server capture.
+  ms.date: 07/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+title: Capture and inspect Windows Server network traffic with Packet Monitor
+summary: Learn a repeatable Packet Monitor workflow for collecting focused, host-local network evidence on Windows Server.
+abstract: |
+  By the end of this module, you're able to:
+  - Explain when Packet Monitor is useful, how cross-component capture differs from network-adapter-only capture, and what local observations can prove.
+  - Discover network components and create a narrow filter for a known address, protocol, and port.
+  - Select counters-only or packet logging, component scope, packet size, file size, and bounded logging options.
+  - Collect and validate a focused trace, then convert the original event trace log to text and packet capture next generation format.
+  - Record collection context, retain evidence safely, clean up Packet Monitor state, and recognize when advanced analysis is required.
+prerequisites: |
+  - Basic knowledge of Internet Protocol addresses, Transmission Control Protocol, User Datagram Protocol, Internet Control Message Protocol, and ports.
+  - Familiarity with network adapters and inbound and outbound traffic.
+  - Experience running commands in Windows PowerShell or Command Prompt.
+  - Awareness that packet captures can contain sensitive information.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows-server
+subjects:
+- networking
+- infrastructure
+units:
+- learn.devrel.understand-windows-packet-monitor.introduction
+- learn.devrel.understand-windows-packet-monitor.understand-packet-monitor-capture
+- learn.devrel.understand-windows-packet-monitor.prepare-discover-network-components
+- learn.devrel.understand-windows-packet-monitor.create-useful-packet-filters
+- learn.devrel.understand-windows-packet-monitor.choose-collection-options
+- learn.devrel.understand-windows-packet-monitor.convert-inspect-capture-output
+- learn.devrel.understand-windows-packet-monitor.knowledge-check
+- learn.devrel.understand-windows-packet-monitor.summary
+badge:
+  uid: learn.devrel.understand-windows-packet-monitor.badge

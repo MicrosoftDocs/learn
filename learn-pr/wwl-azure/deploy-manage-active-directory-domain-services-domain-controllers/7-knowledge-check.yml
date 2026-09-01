@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 06/18/2024
+  ms.date: 07/01/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: orthomas
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3
@@ -47,4 +47,4 @@ quiz:
       explanation: "That's correct. Domain naming master is a forest-level operations master."
     - content: "RID"
       isCorrect: false
-      explanation: "That's incorrect. RID master is a domain-level operations master."
+      explanation: "That's incorrect. RID master is a domain-level operations master."

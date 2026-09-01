@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-azure-netapp-files-security.route-traffic-azure-firewall
+title: Route Azure NetApp Files traffic from on-premises using Azure Firewall
+metadata:
+  unitType: learning-module
+  title: Route Azure NetApp Files traffic from on-premises using Azure Firewall
+  description: Learn how to route Azure NetApp Files traffic from on-premises using Azure Firewall.
+  ms.date: 07/23/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-route-traffic-azure-firewall.md)]

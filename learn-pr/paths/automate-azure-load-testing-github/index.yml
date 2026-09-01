@@ -23,7 +23,7 @@ roles:
 - developer
 products:
 - github
-- azure-load-testing
+- azure-app-testing
 subjects:
 - automation
 modules:

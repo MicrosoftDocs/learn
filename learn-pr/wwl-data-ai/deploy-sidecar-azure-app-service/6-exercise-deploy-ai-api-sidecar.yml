@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-sidecar-azure-app-service.exercise-deploy-ai-api-sidecar
+title: "Exercise: Deploy an AI API with a local model-serving sidecar"
+metadata:
+  title: "Exercise: Deploy an AI API With a Local Model-Serving Sidecar"
+  description: Deploy and validate a Python AI API with a local model-serving sidecar on Azure App Service.
+  ms.date: 08/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-deploy-ai-api-sidecar.md)]

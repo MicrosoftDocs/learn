@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-domain-name-system.establish-known-good-baseline
+title: Establish a known-good baseline
+metadata:
+  title: Establish a Known-Good Baseline
+  description: Evaluate client, server, zone, delegation, site, update, replication, and resilience configuration.
+  ms.date: 08/03/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-establish-known-good-baseline.md)]

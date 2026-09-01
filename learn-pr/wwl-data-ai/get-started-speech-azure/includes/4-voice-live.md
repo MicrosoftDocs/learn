@@ -9,16 +9,17 @@
 
 ::: zone pivot="text"
 
-**AI agents** are software programs that can understand information, make decisions, and take actions on their own to help users achieve specific goals. A common goal for AI agents is to be able to conduct real-time spoken conversations just like you would with a human. 
+**AI agents** are software programs that can understand information, make decisions, and take actions on their own to help users achieve specific goals. A common goal for AI agents is to be able to conduct real-time spoken conversations just like you would with a human.
 
 **Speech‑to‑speech** is a capability that lets an application take spoken audio as input and produce spoken audio as output, without requiring the user to read or type text. The user experience feels like a natural voice conversation.
 
 Speech‑to‑speech enables systems to:
+
 - Listen to a person speaking
 - Understand or transform what was said
 - Respond with *synthetic speech*
 
-Speech‑to‑speech combines speech‑to‑text and text‑to‑speech into a single conversational experience. Speech‑to‑speech is built as a pipeline of speech and language capabilities. The pipeline completes: 
+Speech‑to‑speech combines speech‑to‑text and text‑to‑speech into a single conversational experience. Speech‑to‑speech is built as a pipeline of speech and language capabilities. The pipeline completes:
 
 1. **Speech‑to‑Text**: Converting the user’s spoken audio into text.
 2. **Processing or reasoning**: Analyzing, translating, and summarizing the text, or used by an AI agent to decide what to say next.
@@ -40,25 +41,23 @@ Instead of building and connecting many separate pieces—like speech‑to‑tex
 
 Azure fully manages *VoiceLive*, which means you don’t need to set up or maintain the backend systems yourself. When you send audio into VoiceLive, it sends back spoken responses. VoiceLive can also return visuals, such as avatars, and trigger actions when needed. Azure handles the models and infrastructure behind the scenes, so you can focus on building the voice experience.
 
-Azure speech-to-speech solutions utilize: 
+Azure speech-to-speech solutions utilize:
 
 - **Azure Speech** which provides the speech‑to‑text and text‑to‑speech capabilities.
 - **Agents or application logic** which makes decisions on responses.
 - **Foundry Tools or MCP servers** which can expose speech as callable tools so agents don’t manage SDKs or APIs directly.
 
-You can explore *Voice Live* in a playground in Foundry portal. The Foundry playground includes some preconfigured voice samples that you can try out, or you can create a new solution of your own. When you create a solution, importantly, you need to choose a generative AI model for your agent to use. Azure Speech Voice Live uses the generative AI model *alongside* its own acoustic models to have a live conversation with the user. You can configure many settings in the playground. For example, you can enable proactive engagement, so the agent can initiate conversations. 
-
-:::image type="content" source="../media/voice-live-playground.png" alt-text="Screenshot of voice live in the Foundry playground." lightbox="../media/voice-live-playground.png":::
+You can explore *Voice Live* in a playground in Foundry portal. The Foundry playground includes some preconfigured voice samples that you can try out, or you can create a new solution of your own. When you create a solution, importantly, you need to choose a generative AI model for your agent to use. Azure Speech Voice Live uses the generative AI model *alongside* its own acoustic models to have a live conversation with the user. You can configure many settings in the playground. For example, you can enable proactive engagement, so the agent can initiate conversations.
 
 You can also enable **Voice mode** for a Microsoft Foundry agent in the playground, which integrates Azure Speech Voice Live into the agent definition. This approach means that speech configuration is encapsulated in the agent itself, reducing the client code required to use it.
 
-:::image type="content" source="../media/voice-live-agent.png" alt-text="Screenshot of a voice-enabled agent." lightbox="../media/voice-live-agent.png":::
+:::image type="content" source="../media/speech-session.png" alt-text="Screenshot of a voice-enabled agent." lightbox="../media/voice-live-agent.png":::
 
 ## Using Voice Live in an application
 
-To develop a custom app that uses the agent, we need to write some code. To create an application in Python, you need the `azure-ai-voicelive` package. 
+To develop a custom app that uses the agent, we need to write some code. To create an application in Python, you need the `azure-ai-voicelive` package.
 
-The package can be installed in the Visual Studio Code *terminal* using: 
+The package can be installed in the Visual Studio Code *terminal* using:
 
 ```bash
 pip install azure-ai-voicelive
@@ -71,7 +70,7 @@ You can find sample code for a speech-to-speech application in the Foundry porta
 
 :::image type="content" source="../media/voice-live-playground-code.png" alt-text="Screenshot of voice live in the Foundry playground sample code." lightbox="../media/voice-live-playground-code.png":::
 
-You can take the sample code into your own code editor and install the proper packages. When you run the application, a real‑time voice assistant streams your microphone audio to Azure Voice Live, receives the assistant’s spoken audio response back, and plays it through your speakers. 
+You can take the sample code into your own code editor and install the proper packages. When you run the application, a real‑time voice assistant streams your microphone audio to Azure Voice Live, receives the assistant’s spoken audio response back, and plays it through your speakers.
 
 ![Screenshot of the result of the VoiceLive Python script.](../media/voice-live-result.png)
 

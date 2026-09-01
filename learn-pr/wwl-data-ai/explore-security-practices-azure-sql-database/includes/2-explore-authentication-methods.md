@@ -37,7 +37,7 @@ Microsoft Entra authentication uses identities in Microsoft Entra ID to access d
 
 When you set the `Authentication` connection property in the connection string, clients can choose their preferred Microsoft Entra authentication mode.
 
-- **Password authentication:** `Active Directory Password` authentication mode allows native or federated Microsoft Entra users to authenticate to Azure data sources using Microsoft Entra ID. In this mode, user credentials must be included in the connection string.
+- **Password authentication (deprecated):** `Active Directory Password` authentication mode allows native or federated Microsoft Entra users to authenticate to Azure data sources using Microsoft Entra ID. In this mode, user credentials must be included in the connection string. This mode is deprecated as of `Microsoft.Data.SqlClient` 7.0; for new applications use `Active Directory Managed Identity` (for Azure-hosted workloads) or `Active Directory Service Principal` (for service-to-service scenarios) instead.
     ```
     Server=myserver.database.windows.net;Authentication=Active Directory Password; Encrypt=True; Database=mydb;User Id=user@domain.com; Password=***";    
     ```

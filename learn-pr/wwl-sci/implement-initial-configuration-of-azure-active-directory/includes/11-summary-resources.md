@@ -1,4 +1,4 @@
-Now that you have reviewed this module, you should be able to:
+Now that you reviewed this module, you're able to:
 
 - Configure and manage Microsoft Entra roles.
 - Configure and manage custom domains.

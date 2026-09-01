@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.explore-microsoft-copilot-business-users.introduction
-title: Introduction
+title: "Introduction"
 metadata:
-  title: Introduction
-  description: "Explore Microsoft Copilot and how to use it to increase your productivity."
-  ms.date: 06/10/2026
+  title: "Introduction"
+  description: "Discover the basics of AI and learn how Microsoft 365 Copilot can enhance your work. Understand AI's value without needing technical expertise."
+  ms.date: 08/17/2026
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-  ms.custom:
-  - N/A
+  zone_pivot_groups: video-or-text
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

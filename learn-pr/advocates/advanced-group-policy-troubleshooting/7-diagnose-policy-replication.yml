@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.advanced-group-policy-troubleshooting.diagnose-policy-replication
+title: Diagnose Group Policy Container, Template, SYSVOL, and replication inconsistencies
+metadata:
+  title: Diagnose Group Policy Container, Template, SYSVOL, and Replication Inconsistencies
+  description: Diagnose inconsistent Group Policy Container and Group Policy Template state across AD DS and DFSR/SYSVOL replicas and the domain controller path used by a client.
+  ms.date: 08/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 18
+content: |
+  [!include[](includes/7-diagnose-policy-replication.md)]

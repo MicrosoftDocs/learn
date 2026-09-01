@@ -1,14 +1,7 @@
-Now, it's your chance to explore how to create and run pipelines in Azure Machine Learning.
+Now it's your turn to create and run a pipeline in Azure Machine Learning.
 
-In this exercise, you learn how to:
-
-- Create components.
-- Build a pipeline.
-- Run a pipeline.
-- Schedule a pipeline.
-
-## Instructions
+In this exercise, you create components and use them to build, run, and schedule a pipeline.
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/09-Run-pipelines.html?azure-portal=true)
+:::image type="content" source="../media/launch-exercise.png" alt-text="Illustration of a button that opens the Azure Machine Learning pipeline exercise in a new browser tab." link="https://go.microsoft.com/fwlink/?LinkId=2378000&azure-portal=true":::

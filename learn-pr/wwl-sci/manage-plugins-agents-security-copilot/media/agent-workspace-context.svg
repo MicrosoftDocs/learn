@@ -14,9 +14,9 @@
   <rect x="14"  y="12" width="316" height="18" fill="white"/>
   <text x="17"  y="26" font-size="15" font-weight="bold" fill="#000000">SOC Workspace | Dedicated SOC capacity</text>
 
-  <!-- Agent box 1 – Threat Hunting Agent -->
+  <!-- Agent box 1 – Threat Hunting Assistant -->
   <rect x="20"  y="48" width="210" height="112" rx="4" ry="4" fill="#2869C9"/>
-  <text x="30"  y="85"  font-size="15" font-weight="bold" fill="#FFFFFF">Threat Hunting Agent</text>
+  <text x="30"  y="85"  font-size="15" font-weight="bold" fill="#FFFFFF">Threat Hunting Assistant</text>
   <text x="30"  y="107" font-size="15" fill="#FFFFFF">Plug-ins: Defender</text>
   <text x="30"  y="129" font-size="15" fill="#FFFFFF">XDR, Sentinel</text>
 

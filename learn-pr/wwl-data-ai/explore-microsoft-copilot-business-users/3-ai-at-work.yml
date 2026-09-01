@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-microsoft-copilot-business-users.ai-at-work
+title: "AI at work"
+metadata:
+  title: "AI at Work"
+  description: "Discover how AI tools like Microsoft 365 Copilot can streamline tasks, boost efficiency, and support decision-making in your daily work."
+  ms.date: 08/17/2026
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-ai-at-work.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-security-policies.configure-account-policies
+title: Configure account policies
+metadata:
+  title: Configure Account Policies
+  description: Configure Password, Account Lockout, and Kerberos policies, and understand the domain-scope rule and fine-grained password policies.
+  ms.date: 07/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-configure-account-policies.md)]

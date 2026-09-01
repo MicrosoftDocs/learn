@@ -2,11 +2,12 @@
 uid: learn.wwl.apply-task-decomposition-multi-agent-azure.configure-agent-handoff-collaboration-protocols
 title: Design agent handoff message schemas
 metadata:
+  zone_pivot_groups: video-or-text
   title: Design Agent Handoff Message Schemas
   description: "Design agent handoff message schemas."
-  ms.date: 05/26/2026
-  author: chrishowd
-  ms.author: cahowd
+  ms.date: 7/27/2026
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 8
 content: |

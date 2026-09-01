@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-decision-making-python.create-complex-conditions-with-logical-operators
+title: Create complex conditions with logical operators (and, or, not)
+metadata:
+  title: Create Complex Conditions with Logical Operators (and, or, not)
+  description: "Learn how to combine multiple conditions using the `and`, `or`, and `not` logical operators."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-create-complex-conditions-with-logical-operators.md)]

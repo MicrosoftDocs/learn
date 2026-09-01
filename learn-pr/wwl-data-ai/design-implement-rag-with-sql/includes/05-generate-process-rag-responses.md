@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a2b72f21-ff8e-4b73-909c-0c1c788e7b67]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A customer wants to know which pedals fit their Mountain-500 bike. You use vector search to find the relevant products, formatted them as JSON, and built a prompt with grounding instructions. The retrieval and augmentation steps are done. Now comes the "G" in RAG: generation. This step is where you send everything to a language model and get back an answer.
 
 Think about it like this: you gathered all the ingredients (retrieved data), prepared the recipe (augmented prompt), and now you're putting it in the oven (calling the model) to bake the final dish (the response). The model uses the context you provided to generate a grounded answer.
@@ -180,3 +191,5 @@ You completed the RAG pipeline in T-SQL. A customer asks "Which pedals work with
 ## Key takeaways
 
 The *generation* step is where your RAG pipeline delivers value. You send the augmented prompt to Azure OpenAI using `sp_invoke_external_rest_endpoint`, which handles the HTTP communication without leaving T-SQL. Authentication uses the same database scoped credentials you set up when creating external models. When the response comes back, `JSON_VALUE` pulls out the assistant's answer. Build in error handling because network calls fail in ways that local queries don't. With all three RAG steps running in T-SQL, your database becomes more than storage. It becomes an intelligent service that answers questions using your data.
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e528aae0-5699-450c-af03-6bb35e98dd34]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Monitor collects tenant-tagged consumption metrics from agent workloads—model token usage, container compute time, and storage operations—giving you the granular data needed to calculate fair cost allocations. Combined with Microsoft Cost Management, it powers the monthly chargeback reports and optimization dashboards that make AI spending visible and accountable across development teams.
 
 ## Understand multi-dimensional cost attribution
@@ -239,3 +250,5 @@ Chargeback reporting changes the conversation from "our AI bill is large" to "te
 - **Instrumented metering** emits custom Azure Monitor metrics at every cost-accruing interaction—model API calls, agent compute duration, and storage writes—tagged with tenant context.
 - **Monthly chargeback calculation** combines Microsoft Cost Management totals with per-tenant usage ratios from custom metrics to generate proportional cost reports.
 - **Cost dashboards** display per-team breakdowns with optimization recommendations—like model downgrades, off-peak scheduling, and semantic caching—that drive actionable spending reductions.
+
+::: zone-end

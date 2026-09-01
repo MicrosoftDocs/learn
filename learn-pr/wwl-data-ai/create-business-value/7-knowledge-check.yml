@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 06/04/2026
+  ms.date: 07/09/2026
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -19,7 +19,7 @@ quiz:
   questions:
   - content: "Which driver is about creating the right environment—leadership, skills, and ways of working—that enables teams to adopt AI effectively?"
     choices:
-    - content: "AI governance."
+    - content: "AI governance and security."
       isCorrect: false
     - content: "Organization and culture."
       isCorrect: true

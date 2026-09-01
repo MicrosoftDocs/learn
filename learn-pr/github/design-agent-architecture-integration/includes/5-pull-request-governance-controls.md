@@ -12,6 +12,7 @@ Pull requests are the primary control mechanism for agent execution in GitHub. I
 
 A common safe workflow looks like this:
 
+```
 Agent creates branch
 
     ↓
@@ -33,6 +34,7 @@ All checks pass + approvals complete
     ↓
 
 Pull request can be merged
+```
 
 This structure ensures that execution is gated by both automation and human review.
 

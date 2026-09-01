@@ -2,7 +2,7 @@ In this activity, learn how to create personalized prompts and refine them to ge
 
 
 > [!NOTE]
-> Your experience with Microsoft 365 Copilot may differ from what is presented in this exercise. See [What Copilot license do I have?](https://support.microsoft.com/en-us/topic/what-copilot-license-do-i-have-5058f273-5e28-4a9d-9de6-bf07478ae152?azure-portal=true) for reference.
+> Your experience with Microsoft Copilot may differ from what is presented in this exercise. See [What Copilot license do I have?](https://support.microsoft.com/en-us/topic/what-copilot-license-do-i-have-5058f273-5e28-4a9d-9de6-bf07478ae152?azure-portal=true) for reference.
 
 **Before you start**
 

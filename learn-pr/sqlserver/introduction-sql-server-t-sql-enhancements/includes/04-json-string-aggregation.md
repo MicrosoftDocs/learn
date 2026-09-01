@@ -10,8 +10,8 @@ Creates a JSON array from the values of an expression. Each row’s value become
 ### JSON_OBJECTAGG  
 Creates a JSON object from key-value pairs. The first argument defines the key, and the second defines the value. This value-pairing makes it easy to build JSON documents directly from query results.
 
-### STRING_CONCAT_WS  
-Concatenates strings with a specified separator while skipping NULL values. The function’s name stands for *String CONCAT With Separator*. It provides an efficient way to join values like names, tags, or comma-delimited lists.
+### STRING_AGG  
+`STRING_AGG` is an aggregate function that concatenates values from multiple rows into a single delimited string, using a specified separator while automatically skipping `NULL` values. It provides an efficient way to aggregate values such as names, tags, or lists within a `GROUP BY` query. `STRING_AGG` has been available since SQL Server 2017.
 
 ### String concatenation operator ||
 
@@ -20,6 +20,9 @@ SQL Server 2025 introduces the ANSI-standard `||` operator as an alternative to 
 ### UNISTR function
 
 `UNISTR()` returns a Unicode string based on escape sequences, enabling you to insert characters by code point or escape notation. It’s useful when authoring scripts that include nonprintable or multilingual characters.
+
+> [!NOTE]
+> `JSON_ARRAYAGG` and `JSON_OBJECTAGG` are in preview for SQL Server 2025 (17.x) and require `PREVIEW_FEATURES` to be enabled: `ALTER DATABASE SCOPED CONFIGURATION SET PREVIEW_FEATURES = ON;`. They are generally available on Azure SQL Database, Azure SQL Managed Instance, and SQL database in Microsoft Fabric.
 
 ## Example 1: Build JSON Arrays and Objects from Query Results
 
@@ -53,9 +56,9 @@ GROUP BY C.CustomerID, C.FirstName, C.LastName;
 
 In this example, `JSON_ARRAYAGG` collects all order IDs for each customer into a JSON array, and `JSON_OBJECTAGG` wraps the result into a JSON object with clear key-value pairs. The entire structure is produced in one T-SQL query.
 
-## Example 2: Format Text Output Using STRING_CONCAT_WS
+## Example 2: format text output using STRING_AGG
 
-The marketing team needs a list of each customer’s purchased product names separated by commas for an email campaign. The `STRING_CONCAT_WS` function can generate these results cleanly, omitting any NULL values.
+The marketing team needs a list of each customer’s purchased product names separated by commas for an email campaign. The `STRING_AGG` function can generate these results cleanly, omitting any NULL values.
 
 ### Query: Join Product Names with a Separator
 
@@ -65,9 +68,7 @@ The following query retrieves each customer along with a comma-separated list of
 SELECT
     C.CustomerID,
     C.FirstName + ' ' + C.LastName AS CustomerName,
-    STRING_CONCAT_WS(', ',
-        P.Name
-    ) AS ProductsPurchased
+    STRING_AGG(P.Name, ', ') AS ProductsPurchased
 FROM Sales.Customer AS C
 JOIN Sales.SalesOrderHeader AS SOH
     ON C.CustomerID = SOH.CustomerID
@@ -86,7 +87,7 @@ GROUP BY C.CustomerID, C.FirstName, C.LastName;
 | 11002 | Alicia Tran | Road-250 Yellow, 44, Mountain-200 Red, 48 |
 | 11003 | Marco Diaz | Touring-3000 Blue, 62 |
 
-Here, `STRING_CONCAT_WS` joins product names with commas and ignores NULL entries automatically, avoiding manual `COALESCE`, or `ISNULL` logic.
+Here, `STRING_AGG` joins product names with commas and ignores NULL entries automatically, avoiding manual `COALESCE`, or `ISNULL` logic.
 
 ## Example 3: Combine JSON and Delimited Text for API Output
 
@@ -97,7 +98,7 @@ SELECT
     JSON_ARRAYAGG(
         JSON_OBJECTAGG(
             'Customer' : C.FirstName + ' ' + C.LastName,
-            'Products' : STRING_CONCAT_WS(', ', P.Name)
+            'Products' : STRING_AGG(P.Name, ', ')
         )
     ) AS ApiOutput
 FROM Sales.Customer AS C
@@ -124,4 +125,4 @@ An application directly consumes this structure or exports it as a JSON document
 
 ## Summary
 
-SQL Server 2025 adds `JSON_ARRAYAGG`, `JSON_OBJECTAGG`, and `STRING_CONCAT_WS` to simplify building structured text and JSON output within T-SQL. These functions let you generate application-ready data from queries without external code. Whether you’re preparing JSON payloads, constructing reports, or formatting API responses, these aggregation features make SQL Server 2025 a more versatile platform for modern data applications.
+SQL Server 2025 adds `JSON_ARRAYAGG`, `JSON_OBJECTAGG`, and `STRING_AGG` support to simplify building structured text and JSON output within T-SQL. These functions let you generate application-ready data from queries without external code. Whether you’re preparing JSON payloads, constructing reports, or formatting API responses, these aggregation features make SQL Server 2025 a more versatile platform for modern data applications.

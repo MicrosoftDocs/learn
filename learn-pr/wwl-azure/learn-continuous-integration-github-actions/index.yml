@@ -4,8 +4,8 @@ metadata:
   title: Learn continuous integration with GitHub Actions
   description: "Learn continuous integration with GitHub Actions through hands-on practice with workflows, environment variables, artifacts, secrets, and best practices for secure CI/CD pipelines."
   ms.date: 09/26/2025
-  author: LuizMacedo
-  ms.author: lumac
+  author: petender
+  ms.author: petender
   ms.topic: module
   ai-usage: ai-assisted
   ms.service: github

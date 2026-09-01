@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.active-directory-authentication-kerberos-hardening.kerberos
+title: Analyze SSPI, NTLM, and Kerberos flow
+metadata:
+  title: Analyze SSPI, NTLM, and Kerberos Flow
+  description: Analyze how SSPI and Negotiate select Kerberos or NTLM for Windows integrated authentication.
+  ms.date: 08/10/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/2-protocol-kerberos.md)]

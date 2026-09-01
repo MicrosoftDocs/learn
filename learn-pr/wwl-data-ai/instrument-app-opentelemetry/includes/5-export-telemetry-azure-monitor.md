@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=023eabac-907d-4da6-bf23-863e0a0f27c1]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 After you instrument your application with the OpenTelemetry SDK and create custom spans, the next step is ensuring that telemetry data flows reliably to Azure Monitor Application Insights. This unit covers how the export pipeline works, how to configure sampling to manage costs, and how to verify that your telemetry data arrives correctly.
 
 > [!NOTE]
@@ -102,6 +113,8 @@ requests
 ```
 
 This query returns the 20 most recent requests from the last hour, showing the operation name, duration, success status, and the cloud role name of the service that handled the request. If you see results, your telemetry pipeline is working end to end. If you see requests from multiple services, context propagation is also functioning correctly, and you can proceed to analyze distributed traces.
+
+::: zone-end
 
 ## Additional resources
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.work-smarter-copilot-legal.day-starts
+title: Start the day by catching up on priorities
+metadata:
+  title: Start the Day by Catching Up on Priorities
+  description: This content is part of the "Work smarter with Copilot prompts for legal professionals" module.
+  ms.date: 07/21/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-day-starts.md)]

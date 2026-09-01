@@ -9,19 +9,31 @@ As long as the view continues to present the same structure to the calling appli
 
 ## Create a view
 
-To create a view, you use the CREATE VIEW statement to name and store a single SELECT statement. You'd create a view using the following syntax:
+To create a view, you use the `CREATE VIEW` statement to name and store a single `SELECT` statement. You'd create a view using the following syntax:
 
 ```sql
-CREATE VIEW <schema_name.view_name> [<column_alias_list>] 
-[WITH <view_options>]
-AS select_statement;
+CREATE [ OR ALTER ] VIEW [ schema_name . ] view_name [ ( column [ ,...n ] ) ]
+[ WITH <view_attribute> [ ,...n ] ]
+AS select_statement
+[ WITH CHECK OPTION ]
+[ ; ]
 ```
 
+Use `OR ALTER` to create a new view or redefine an existing one without a separate `DROP VIEW` step. `WITH CHECK OPTION` prevents `INSERT` or `UPDATE` operations through the view from producing rows that fall outside the view's `SELECT` criteria.
+
+The `WITH` clause supports the following view attributes:
+
+| Option | Description |
+|---|---|
+| `SCHEMABINDING` | Binds the view to the schema of its base tables, preventing changes that would break the view. Required for indexed views. |
+| `ENCRYPTION` | Encrypts the view definition in the system catalog so it can't be read. |
+| `VIEW_METADATA` | Returns view metadata (rather than base-table metadata) to client APIs. |
+
 > [!NOTE]
-> The ORDER BY clause is not permitted in a view definition unless the view uses a TOP, OFFSET/FETCH, or FOR XML element.
+> The `ORDER BY` clause is not permitted in a view definition unless the view uses a TOP, OFFSET/FETCH, or FOR XML element.
 
 
-For example, to create a view named **Sales.CustOrders** based on a custom SELECT statement that encompasses multiple tables, you could write the following query:
+For example, to create a view named **Sales.CustOrders** based on a custom `SELECT` statement that encompasses multiple tables, you could write the following query:
 
 ```sql
 CREATE VIEW Sales.CustOrders
@@ -36,11 +48,11 @@ FROM Sales.Orders AS O
 GROUP BY custid, DATEADD(month, DATEDIFF(month, 0, O.orderdate), 0);
 ```
 
-Notice that most of the code within the example consists of your SELECT statement. The SELECT statements inside view definitions can be as complex or simple as you want them to be.
+Notice that most of the code within the example consists of your `SELECT` statement. The `SELECT` statements inside view definitions can be as complex or simple as you want them to be.
 
 ## Query a view
 
-To query a view and retrieve results from it, refer to it in the FROM clause of a SELECT statement, as you would refer to a table. For example, to return the customer ID, the order month, and the quantity of items from each order in your **Sales.CustOrders** view, you could run the following query:
+To query a view and retrieve results from it, refer to it in the `FROM` clause of a `SELECT` statement, as you would refer to a table. For example, to return the customer ID, the order month, and the quantity of items from each order in your **Sales.CustOrders** view, you could run the following query:
 
 ```sql
 SELECT custid, ordermonth, qty

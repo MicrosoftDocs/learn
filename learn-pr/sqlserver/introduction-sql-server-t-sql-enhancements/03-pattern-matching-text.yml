@@ -4,9 +4,9 @@ title: Pattern matching and text extraction
 metadata:
   title: Pattern matching and text extraction
   description: "Use REGEXP and SUBSTRING to find, extract, and manipulate text patterns in T-SQL."
-  ms.date: 10/14/2025
-  author: MScalopez
-  ms.author: calopez
+  ms.date: 08/11/2026
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 7
 content: |

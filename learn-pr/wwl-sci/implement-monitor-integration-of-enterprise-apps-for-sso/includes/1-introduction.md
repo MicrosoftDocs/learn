@@ -2,7 +2,7 @@ In this module, you learn how to implement token customizations and implement an
 
 ## Learning objectives
 
-In this module, you'll:
+In this module, you:
 
 - Implement token customizations
 - Implement and configure consent settings

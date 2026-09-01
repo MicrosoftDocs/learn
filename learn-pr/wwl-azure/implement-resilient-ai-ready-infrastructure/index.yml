@@ -5,7 +5,7 @@ metadata:
   description: "This module explains building resilient, multi-region AI infrastructure using Microsoft Foundry hubs, geo-redundant storage, and Azure Container Registry geo-replication. It shows how coordinated replication and failover protect data, model images, and AI services during regional outages."
   ms.date: 02/03/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure
 title: "Implement resilient AI-ready infrastructure"

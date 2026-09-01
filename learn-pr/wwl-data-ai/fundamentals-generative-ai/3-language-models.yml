@@ -6,9 +6,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Large language models (LLMs)
   description: Large language models (LLMs) are the foundation of generative AI. Let's explore how they work.
-  author: sherzyang
-  ms.author: sheryang
-  ms.date: 10/04/2025
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 07/21/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

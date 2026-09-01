@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-sre-agent.when-to-use-azure-sre-agent
+title: When to use Azure SRE Agent
+metadata:
+  title: When to use Azure SRE Agent
+  description: Apply practical criteria to decide whether Azure SRE Agent fits your operational workflows, governance needs, and environment.
+  ms.date: 08/06/2026
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-when-to-use-azure-sre-agent.md)]

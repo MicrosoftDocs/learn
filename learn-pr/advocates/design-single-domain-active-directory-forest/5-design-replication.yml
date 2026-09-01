@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-single-domain-active-directory-forest.replication-topology
+title: Design the replication topology
+metadata:
+  title: Design the Replication Topology
+  description: Design KCC-managed site links, convergence, SYSVOL replication, change notification, and failure behavior.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-design-replication.md)]

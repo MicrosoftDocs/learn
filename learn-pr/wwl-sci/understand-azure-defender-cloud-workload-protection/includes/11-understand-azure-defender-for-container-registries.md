@@ -22,7 +22,7 @@ Defender for Containers protects your clusters whether they're running in:
 
 Defender for Cloud continuously assesses the configurations of your clusters and compares them with the initiatives applied to your subscriptions. When it finds misconfigurations, Defender for Cloud generates security recommendations. Use Defender for Cloud's recommendations page to view recommendations and remediate issues.
 
-For Kubernetes clusters on EKS, you'll need to connect your AWS account to Microsoft Defender for Cloud via the environment settings page (as described in Connect your AWS accounts to Microsoft Defender for Cloud). Then ensure you've enabled the CSPM plan.
+For Kubernetes clusters on EKS, you need to connect your AWS account to Microsoft Defender for Cloud via the environment settings page (as described in Connect your AWS accounts to Microsoft Defender for Cloud). Then ensure you've enabled the CSPM plan.
 
 ### Environment hardening
 To receive a bundle of recommendations to protect the workloads of your Kubernetes containers, install the Azure Policy for Kubernetes. By default, auto provisioning is enabled when you enable Defender for Containers.
@@ -34,7 +34,7 @@ For example, you can mandate that privileged containers shouldn't be created, an
 ### View vulnerabilities for running images
 Defender for Containers expands on the registry scanning features of the Defender for container registries plan by introducing the preview feature of run-time visibility of vulnerabilities powered by the Defender profile, or an extension.
 
-The new recommendation, "running container images should have vulnerability findings resolved", only shows vulnerabilities for running images. The recommendation relies on the Defender security profile, or extension to discover which images are currently running. This recommendation groups running images that have vulnerabilities, and provides details about the issues discovered, and how to remediate them. The Defender profile, or extension is used to gain visibility into vulnerable containers that are active.
+The new recommendation, "running container images should have vulnerability findings resolved," only shows vulnerabilities for running images. The recommendation relies on the Defender security profile, or extension to discover which images are currently running. This recommendation groups running images that have vulnerabilities, and provides details about the issues discovered, and how to remediate them. The Defender profile, or extension is used to gain visibility into vulnerable containers that are active.
 
 This recommendation shows running images, and their vulnerabilities based on ACR images. Images that are deployed from a non ACR registry, won't be scanned, and will appear under the Not applicable tab.
 
@@ -43,4 +43,4 @@ Defender for Cloud provides real-time threat protection for your containerized e
 
 Threat protection at the cluster level is provided by the Defender profile and analysis of the Kubernetes audit logs. Examples of events at this level include exposed Kubernetes dashboards, creation of high-privileged roles, and the creation of sensitive mounts.
 
-In addition, our threat detection goes beyond the Kubernetes management layer. Defender for Containers includes host-level threat detection with over 60 Kubernetes-aware analytics, AI, and anomaly detections based on your runtime workload. Our global team of security researchers constantly monitor the threat landscape. They add container-specific alerts and vulnerabilities as they're discovered. Together, this solution monitors the growing attack surface of multi-cloud Kubernetes deployments and tracks the MITRE ATT&CK® matrix for Containers. A framework that was developed by the Center for Threat-Informed Defense in close partnership with Microsoft and other partners.
+In addition, threat detection goes beyond the Kubernetes management layer. Defender for Containers includes host-level threat detection with over 60 Kubernetes-aware analytics, AI, and anomaly detections based on your runtime workload. Microsoft's global team of security researchers constantly monitors the threat landscape. They add container-specific alerts and vulnerabilities as they're discovered. Together, this solution monitors the growing attack surface of multicloud Kubernetes deployments and tracks the MITRE ATT&CK® matrix for Containers. A framework that was developed by the Center for Threat-Informed Defense in close partnership with Microsoft and other partners.

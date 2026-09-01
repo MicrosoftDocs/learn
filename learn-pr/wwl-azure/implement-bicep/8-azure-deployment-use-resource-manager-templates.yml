@@ -5,8 +5,8 @@ metadata:
   title: Deployments Using Azure Bicep Templates
   description: "Understand how Bicep integrates with Azure Resource Manager, the deployment process, and best practices for production deployments."
   ms.date: 10/08/2025
-  author: LuizMacedo
-  ms.author: lumac
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ms.custom:
     - sfi-ga-nochange

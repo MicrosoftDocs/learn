@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-database.trace-directory-replication
+title: Trace Active Directory Domain Services replication
+metadata:
+  title: Trace Active Directory Domain Services Replication
+  description: Trace logical directory changes between replicas without treating database files as replication payloads.
+  ms.date: 07/24/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-trace-directory-replication.md)]

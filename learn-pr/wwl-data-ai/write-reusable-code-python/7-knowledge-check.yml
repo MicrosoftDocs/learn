@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-reusable-code-python.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Check your learning on writing reusable code with functions in Python."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What keyword is used to define a function in Python?"
+    choices:
+    - content: "function"
+      isCorrect: false
+      explanation: "Incorrect. Python doesn't use the `function` keyword—that's from JavaScript."
+    - content: "def"
+      isCorrect: true
+      explanation: "Correct. Functions are defined with the `def` keyword, followed by a name and parentheses."
+    - content: "func"
+      isCorrect: false
+      explanation: "Incorrect. Python uses `def`, not `func`."
+  - content: "What does a function return if it has no `return` statement?"
+    choices:
+    - content: "0"
+      isCorrect: false
+      explanation: "Incorrect. Python doesn't default to a numeric value."
+    - content: "An empty string"
+      isCorrect: false
+      explanation: "Incorrect. The result isn't an empty string."
+    - content: "None"
+      isCorrect: true
+      explanation: "Correct. A function with no `return` statement returns `None` by default."
+  - content: "You have code in a file named `math_utils.py`. How do you use its `add()` function from another file in the same folder?"
+    choices:
+    - content: "`import math_utils` and then call `math_utils.add(...)`."
+      isCorrect: true
+      explanation: "Correct. Importing the module by its file name (without the `.py`) lets you access its functions using dot notation."
+    - content: "`include math_utils.py` and then call `add(...)`."
+      isCorrect: false
+      explanation: "Incorrect. Python uses `import`, not `include`, and doesn't include the `.py` extension."
+    - content: "You must copy the `add()` function into every file that needs it."
+      isCorrect: false
+      explanation: "Incorrect. The whole point of modules is that you don't have to duplicate code."

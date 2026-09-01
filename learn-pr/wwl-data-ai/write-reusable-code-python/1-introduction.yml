@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-reusable-code-python.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Learn why functions and modules are the foundation of well-organized, reusable Python code."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

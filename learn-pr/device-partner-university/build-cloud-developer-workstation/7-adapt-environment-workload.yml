@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.build-cloud-developer-workstation.adapt-environment-workload
+title: Adapting your environment to your workload
+metadata:
+  title: Adapting Your Environment to Your Workload
+  description: This content is part of the "Build your first cloud-based developer workstation using Windows 365" module.
+  ms.date: 07/22/2026
+  author: Sheridan-Connor
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-adapt-environment-workload.md)]

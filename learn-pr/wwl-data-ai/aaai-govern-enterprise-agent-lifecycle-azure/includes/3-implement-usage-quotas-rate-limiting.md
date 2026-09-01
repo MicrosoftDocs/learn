@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2fbe7404-0bb7-4482-bf3c-20f5e83a7069]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure API Management and Azure OpenAI work together to enforce token-based quotas across tenants sharing model deployments, preventing any single tenant from monopolizing capacity. In this unit, you configure multi-level quota controls, APIM token-limit policies, and resilient retry logic to keep resource allocation fair across all enterprise customers.
 
 ## Understand the quota storm problem
@@ -259,3 +270,5 @@ Quota governance makes shared Azure OpenAI deployments viable at scale. When eac
 - **APIM rate limiting** applies tenant-specific token quotas using the `llm-token-limit` policy that enforces tier-based tokens-per-minute rates and monthly token ceilings at the API gateway.
 - **Priority-tier allocation** reserves capacity proportionally—sixty percent for premium, thirty percent for standard, ten percent for developer—with dynamic enforcement during high-demand periods.
 - **Exponential backoff with jitter** prevents thundering herd retries when quota is exceeded, spreading retry attempts over time to avoid amplifying load spikes.
+
+::: zone-end

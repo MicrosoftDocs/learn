@@ -34,7 +34,7 @@ You can clone the GitHub repository you created by following these steps.
 
 In Visual Studio Code, set up a new database project and save the project in the same folder where you cloned the GitHub repository.
 
-For more information about creating a Database Project in Visual Studio Code, see [SQL Server Development with Visual Studio Code](/sql/tools/visual-studio-code/sql-server-develop-use-vscode?azure-portal=true).
+For more information about creating a Database Project in Visual Studio Code, see [SQL Database Projects extension](/sql/tools/visual-studio-code-extensions/sql-database-projects/sql-database-projects-extension?azure-portal=true).
 
 Once you created your database project, add code to modify your Azure SQL Database. Then commit them back to your GitHub repository to ensure they're tracked and integrated into your version control system.
 
@@ -52,7 +52,7 @@ The **Set up authentication** configures GitHub secrets, and the second section 
 First you need to create a service principal with the `az ad sp create-for-rbac` command in the Azure CLI. Use Azure Cloud Shell in the Azure portal to run the following Azure CLI code. Replace the placeholders with your subscription ID, resource group name, and app name.
 
 ```AzureCLI
-az ad sp create-for-rbac --name "myML" --role contributor --scopes /subscriptions/<subscription-id>/resourceGroups/<group-name> --json-auth
+az ad sp create-for-rbac --name "myApp" --role contributor --scopes /subscriptions/<subscription-id>/resourceGroups/<group-name> --json-auth
 ```
 
 The output is a JSON object with the role assignment credentials. Save the file as it saves as a GitHub secret.
@@ -72,7 +72,7 @@ In your GitHub repository, you add secrets in **Settings** > **Security** -> **S
 You're now ready to create your workflow.
 
 > [!NOTE]
-> In a production environment, consider using Managed Identities for your GitHub Action to access the database instead of SQL authentication. For more information, see the [Managed identities in Microsoft Entra for Azure SQL](/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?azure-portal=true).
+> In a production environment, use [OpenID Connect (OIDC) with a federated identity credential](/azure/azure-sql/database/connect-github-actions-sql-db?azure-portal=true) so no long-lived secret is stored in your repository. You can also use [Managed identities in Microsoft Entra for Azure SQL](/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity?azure-portal=true) to control database access without SQL passwords.
 
 #### Create a GitHub workflow
 
@@ -85,7 +85,7 @@ You can now build your YAML file. For detailed syntax and guidelines, refer to t
 
 ## Azure SQL Database deployment with Azure DevOps Services
 
-You can also deploy updates to an Azure SQL Database using Azure DevOps Services. To get started, you'll need an Azure DevOps Services account, a version control system (such as Azure Repos or GitHub), and Visual Studio Code with the [SQL Database extension](/sql/tools/visual-studio-code/sql-server-develop-use-vscode?azure-portal=true) installed.
+You can also deploy updates to an Azure SQL Database using Azure DevOps Services. To get started, you'll need an Azure DevOps Services account, a version control system (such as Azure Repos or GitHub), and Visual Studio Code with the [SQL Database Projects extension](/sql/tools/visual-studio-code-extensions/sql-database-projects/sql-database-projects-extension?azure-portal=true) installed.
 
 Azure DevOps Services includes Azure Pipelines, which automatically build, test, and deploy code. By using Azure Pipelines, you can support continuous integration and continuous deployment (CI/CD) of Azure SQL Database modifications within your project. This integration ensures that your database changes are consistently and reliably applied.
 

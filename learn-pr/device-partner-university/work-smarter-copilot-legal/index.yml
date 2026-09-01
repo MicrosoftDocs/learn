@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.dpu.work-smarter-copilot-legal
+title: Work smarter with Copilot prompts for legal professionals
+metadata:
+  title: Work Smarter With Copilot Prompts For Legal Professionals
+  description: In this module, you'll learn how to use Microsoft 365 Copilot and Copilot+ PC experiences to streamline legal workflows such as contract review, compliance analysis, stakeholder communication, and leadership reporting.
+  ms.date: 07/21/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Learn how legal professionals can use Microsoft 365 Copilot and Copilot+ PC experiences to streamline contract reviews, compliance analysis, stakeholder communications, and leadership reporting. Through a day-in-the-life scenario, you'll explore how AI-powered tools can help prioritize work, find information faster, collaborate more effectively, and focus more time on legal analysis and decision-making.
+abstract: |
+  By the end of this module, you’ll be able to:
+  - Use Copilot in Outlook, Teams, and Microsoft 365 Copilot Chat to prioritize legal work and coordinate follow-up activities.
+  - Use Copilot in Word, Excel, and PowerPoint to review legal documents, analyze compliance information, and prepare stakeholder communications.
+  - Apply Copilot+ PC experiences such as Improved Windows Search, Click to Do, Live Captions, Recall, and Windows Studio Effects to support legal workflows and collaboration.
+  - Explain how Microsoft 365 Copilot and Copilot+ PC experiences work together to streamline legal workflows.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/work-smarter-copilot-legal.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-leader
+  - business-owner
+  - business-user
+products:
+  - windows-11
+  - microsoft-365-copilot
+units:
+  - learn.dpu.work-smarter-copilot-legal.introduction
+  - learn.dpu.work-smarter-copilot-legal.content-brief
+  - learn.dpu.work-smarter-copilot-legal.day-starts
+  - learn.dpu.work-smarter-copilot-legal.review-contracts
+  - learn.dpu.work-smarter-copilot-legal.communicate-findings
+  - learn.dpu.work-smarter-copilot-legal.regain-context
+  - learn.dpu.work-smarter-copilot-legal.meeting-collaboration
+  - learn.dpu.work-smarter-copilot-legal.policy-management
+  - learn.dpu.work-smarter-copilot-legal.day-ends
+  - learn.dpu.work-smarter-copilot-legal.knowledge-check
+  - learn.dpu.work-smarter-copilot-legal.summary
+badge:
+  uid: learn.dpu.work-smarter-copilot-legal.badge

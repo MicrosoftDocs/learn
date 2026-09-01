@@ -2,16 +2,16 @@
 uid: learn.wwl.design-machine-learning-model-training-solution
 metadata:
   title: Get started with machine learning in Azure
-  description: Design a machine learning model training solution with Azure Machine Learning.
-  author: wwlpublish
+  description: Choose this module if you want to design a machine learning training solution and select Azure Machine Learning services and compute.
+  author: madiepev
   ms.author: madiepev
-  ms.date: 12/01/2025
+  ms.date: 08/27/2026
   ms.service: azure-machine-learning
   ms.topic: module
   ms.collection:
     - wwl-ai-copilot
 title: Get started with machine learning in Azure
-summary: Learn how to design a model training solution for machine learning projects.
+summary: Choose this module if you want to design a machine learning training solution and select Azure Machine Learning services and compute.
 abstract: |
   In this module, you learn how to:
   - Design a solution to get and prepare data.
@@ -37,9 +37,7 @@ units:
 - learn.wwl.design-machine-learning-model-training-solution.choose-service-train
 - learn.wwl.design-machine-learning-model-training-solution.use-automated-machine-learning
 - learn.wwl.design-machine-learning-model-training-solution.decide-between-compute-options
-- learn.wwl.design-machine-learning-model-training-solution.exercise
 - learn.wwl.design-machine-learning-model-training-solution.knowledge-check
 - learn.wwl.design-machine-learning-model-training-solution.summary
 badge:
   uid: learn.wwl.design-machine-learning-model-training-solution.badge
-

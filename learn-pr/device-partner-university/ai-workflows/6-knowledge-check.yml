@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.ai-workflows.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Check your understanding of AI-powered productivity experiences in Windows 11.
+  ms.date: 08/21/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "How can voice-based AI experiences help improve productivity?"
+    choices:
+    - content: "By requiring users to learn specialized commands."
+      isCorrect: false
+      explanation: "Incorrect. Voice-based AI experiences are designed to support natural interactions, allowing users to communicate with AI using everyday language."
+    - content: "By allowing users to interact with AI using natural language while staying focused on their work."
+      isCorrect: true
+      explanation: "Correct. Voice experiences help users capture ideas, request summaries, and complete tasks without interrupting their workflow."
+    - content: "By replacing all written communication."
+      isCorrect: false
+      explanation: "Incorrect. Voice experiences complement existing ways of working and can help users draft and refine content, but they don't replace written communication."
+    - content: "By eliminating the need to review AI-generated content."
+      isCorrect: false
+      explanation: "Incorrect. Users should continue to review AI-generated content to ensure it meets their needs and organizational requirements."
+
+  - content: "What is a benefit of semantic, meaning-based search?"
+    choices:
+    - content: "Users must remember exact file names."
+      isCorrect: false
+      explanation: "Incorrect. Semantic search is designed to reduce reliance on exact file names by understanding the meaning behind a user's request."
+    - content: "Search is limited to a single folder."
+      isCorrect: false
+      explanation: "Incorrect. Semantic search can help users locate relevant content across supported locations rather than restricting results to a single folder."
+    - content: "Users can describe the information they need and receive relevant results based on intent."
+      isCorrect: true
+      explanation: "Correct. Semantic search helps connect users with information based on the meaning of a request rather than exact keywords."
+    - content: "Search results only include locally stored files."
+      isCorrect: false
+      explanation: "Incorrect. Improved Windows Search can help locate content from supported indexed locations and supported sources."
+
+  - content: "How does Ask Copilot in File Explorer differ from Improved Windows Search?"
+    choices:
+    - content: "Improved Windows Search summarizes files, while Ask Copilot locates them."
+      isCorrect: false
+      explanation: "Incorrect. Improved Windows Search helps users find content, while Ask Copilot in File Explorer helps users understand file contents."
+    - content: "Both experiences perform the same function."
+      isCorrect: false
+      explanation: "Incorrect. The experiences complement one another but serve different purposes."
+    - content: "Improved Windows Search helps users locate files, while Ask Copilot in File Explorer helps users understand file contents."
+      isCorrect: true
+      explanation: "Correct. Search helps users find relevant content, while Ask Copilot helps users gather context and understand the information contained within a file."
+    - content: "Ask Copilot in File Explorer can only be used with images."
+      isCorrect: false
+      explanation: "Incorrect. Ask Copilot in File Explorer can help users understand and interact with supported file types using natural language."
+
+  - content: "How can AI-powered actions help reduce friction in everyday work?"
+    choices:
+    - content: "By adding extra steps to existing workflows."
+      isCorrect: false
+      explanation: "Incorrect. The purpose of AI-powered actions is to simplify workflows and reduce unnecessary effort."
+    - content: "By requiring users to manually recreate information."
+      isCorrect: false
+      explanation: "Incorrect. AI-powered experiences can help reduce repetitive tasks such as manually reentering or recreating information."
+    - content: "By helping users act on information directly and reducing repetitive tasks."
+      isCorrect: true
+      explanation: "Correct. AI-powered actions can help users move more quickly from information to action, reducing manual effort."

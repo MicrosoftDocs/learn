@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.organize-data-with-collections-python.store-organize-data-with-dictionaries
+title: Store and organize data with dictionaries
+metadata:
+  title: Store and Organize Data with Dictionaries
+  description: "Learn how to store labeled data using Python dictionaries, and how to access, add, and update key-value pairs."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-store-organize-data-with-dictionaries.md)]

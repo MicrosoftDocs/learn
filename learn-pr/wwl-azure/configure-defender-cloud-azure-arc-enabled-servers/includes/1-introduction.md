@@ -1,22 +1,17 @@
-This module covers Microsoft Defender for Cloud, a cloud-native application protection platform (CNAPP) designed to protect cloud-based applications from various cyber threats and vulnerabilities.
+Microsoft Defender for Cloud is a cloud-native application protection platform (CNAPP) that manages security posture and workload protection across Azure, hybrid, and multicloud environments. In this module, you focus on protecting on-premises Windows and Linux servers by connecting them to Azure Arc and enabling Defender for Servers.
 
 ## Scenario
 
-Imagine you're a security manager at a large organization that uses cloud-based applications extensively. You're constantly facing challenges in protecting your applications from various cyber threats and vulnerabilities. You need a comprehensive solution that can provide security across Azure Arc-enabled servers to prevent breaches, and offer specific protections for servers and other workloads. This is where Microsoft Defender for Cloud comes into play.
+You're a security administrator for an organization that runs Windows and Linux servers on-premises. You need to bring these servers into Azure's management plane, apply Defender for Servers protection, and verify that each server reports to both Azure Arc and Defender for Cloud.
 
 ## Learning objectives
 
-The topics covered in this module include:
+After completing this module, you'll be able to:
 
- -  Securing cloud applications for Arc-enabled servers.<br>
- -  Protecting cloud workloads for Arc-enabled servers.
- -  Connecting your non-Azure machines to Microsoft Defender for Cloud.
- -  Connecting on-premises machines by using Azure Arc.
- -  Connecting on-premises machines by using the Azure portal.
- -  Onboard a Windows server.
- -  Onboard a Linux server.
- -  Verify that Arc-enabled machines are connected.
+- Explain how Defender for Cloud and Defender for Servers protect hybrid machines.
+- Compare Defender for Servers Plan 1 and Plan 2 for Azure Arc-enabled servers.
+- Enable Defender for Servers for an Azure subscription.
+- Generate and run Azure Arc onboarding scripts for Windows and Linux servers.
+- Verify Azure Arc connectivity and Defender for Cloud coverage.
 
-## Goals
-
-By the end of this module, you'll be able to understand how Microsoft Defender for Cloud for Azure Arc-enabled servers can help you protect your cloud-based applications from various cyber threats.
+This module uses portal-based onboarding for individual servers. For production deployments at scale, use a service principal and an automation method that protects onboarding credentials.

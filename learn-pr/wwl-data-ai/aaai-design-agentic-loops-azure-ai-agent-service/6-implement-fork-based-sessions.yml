@@ -2,11 +2,12 @@
 uid: learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.implement-fork-based-sessions
 title: Implement fork-based sessions and conversation resumption
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement Fork-Based Sessions and Conversation Resumption
   description: "Implement fork-based sessions and conversation resumption."
-  ms.date: 05/20/2026
-  author: chrishowd
-  ms.author: cahowd
+  ms.date: 7/27/2026
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 7
 content: |

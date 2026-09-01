@@ -1,0 +1,103 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.active-directory-backup-recovery.module-assessment
+metadata:
+  title: Module Assessment
+  description: Assess backup selection, recovery scope, domain and forest recovery, virtualization, and return-to-service decisions.
+  ms.date: 08/12/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-assisted
+title: Module assessment
+durationInMinutes: 10
+quiz:
+  questions:
+  - content: "A writable domain controller fails, but two healthy writable replication partners remain. Which action is normally least disruptive?"
+    choices:
+    - content: "Rebuild the failed server, clean stale metadata if necessary, then promote it as a new domain controller."
+      isCorrect: true
+      explanation: "Correct. Healthy partners provide the authoritative directory state. Reprovisioning avoids unnecessary restoration risk."
+    - content: "Restore every domain controller from the newest snapshot."
+      isCorrect: false
+      explanation: "Incorrect. Simultaneous snapshot restoration expands scope and can leave SYSVOL without an authoritative source."
+    - content: "Start forest recovery."
+      isCorrect: false
+      explanation: "Incorrect. One failed domain controller with healthy partners doesn't justify forest recovery."
+  - content: "Which backup is the strongest last-known-safe candidate after suspected privileged compromise?"
+    choices:
+    - content: "The newest backup, regardless of incident timing."
+      isCorrect: false
+      explanation: "Incorrect. The newest backup can contain attacker changes."
+    - content: "A tested writable-domain-controller backup taken before the earliest plausible compromise, supported by health, replication, catalog, key, and change evidence."
+      isCorrect: true
+      explanation: "Correct. Safety, compatibility, test evidence, and expected data loss matter more than recency alone."
+    - content: "A recent read-only domain controller backup."
+      isCorrect: false
+      explanation: "Incorrect. A read-only domain controller backup can't restore a writable domain controller."
+  - content: "During forest recovery, what is the correct SYSVOL authority design for each recovered domain?"
+    choices:
+    - content: "Make every restored domain controller nonauthoritative."
+      isCorrect: false
+      explanation: "Incorrect. The domain would have no authoritative SYSVOL source."
+    - content: "Make every restored domain controller authoritative."
+      isCorrect: false
+      explanation: "Incorrect. Multiple authoritative sources can create conflicts."
+    - content: "Make the first restored writable domain controller authoritative, then synchronize later domain controllers nonauthoritatively or promote them cleanly."
+      isCorrect: true
+      explanation: "Correct. Each recovered domain needs one authoritative SYSVOL source."
+  - content: "A child domain has widespread object corruption. Schema and configuration partitions remain trustworthy. Healthy forest-root services remain available. What should responders do first?"
+    choices:
+    - content: "Evaluate a domain-scoped recovery with isolation, trusted backup selection, DNS, and trust dependency controls."
+      isCorrect: true
+      explanation: "Correct. Damage confined to one domain naming context can permit domain-scoped recovery."
+    - content: "Always recover the entire forest."
+      isCorrect: false
+      explanation: "Incorrect. Forest recovery is required only when shared forest state or trust can't be established."
+    - content: "Reconnect the affected domain controllers and wait for convergence."
+      isCorrect: false
+      explanation: "Incorrect. Replication can spread or preserve unsafe changes."
+  - content: "Which operations master action is valid on the selected first writable domain controller in a domain other than the Active Directory root domain?"
+    choices:
+    - content: "Seize all five roles, including Schema Master and Domain Naming Master."
+      isCorrect: false
+      explanation: "Incorrect. The two forest roles exist only in the forest-root domain."
+    - content: "Seize the PDC Emulator, RID Master, and Infrastructure Master roles for that domain."
+      isCorrect: true
+      explanation: "Correct. Those three roles are domain-specific."
+    - content: "Transfer roles back immediately to former holders."
+      isCorrect: false
+      explanation: "Incorrect. Former holders must not return without approved cleanup or rebuild."
+  - content: "A snapshot containing a suspended virtualized domain controller is restored on a supported VM-Generation ID hypervisor. What special action can be required?"
+    choices:
+    - content: "Disable VM-Generation ID."
+      isCorrect: false
+      explanation: "Incorrect. VM-Generation ID provides rollback safeguards."
+    - content: "Restore the same snapshot to a second connected virtual machine."
+      isCorrect: false
+      explanation: "Incorrect. That can create duplicate domain controller identity."
+    - content: "Restart Active Directory Domain Services to trigger a new RID pool request, then validate invocation identity and replication."
+      isCorrect: true
+      explanation: "Correct. This action applies only to the documented suspended-state scenario and interrupts authentication on that controller."
+  - content: "What does successful forest recovery prove after identity compromise?"
+    choices:
+    - content: "The directory has a selected trusted state, but attacker eviction and persistence remediation still require separate evidence."
+      isCorrect: true
+      explanation: "Correct. Directory restoration doesn't prove that every persistence mechanism is removed."
+    - content: "Resetting the forest-root krbtgt account removes every attacker foothold."
+      isCorrect: false
+      explanation: "Incorrect. Each affected domain and every adjacent persistence surface needs a specific decision."
+    - content: "All certificates, federation systems, endpoints, and backup infrastructure are trusted automatically."
+      isCorrect: false
+      explanation: "Incorrect. Adjacent systems have separate owners, evidence, and return-to-service gates."
+  - content: "Which validation result is sufficient to reconnect recovered identity services?"
+    choices:
+    - content: "A successful server boot."
+      isCorrect: false
+      explanation: "Incorrect. Boot success doesn't establish directory health."
+    - content: "Passing replication, SYSVOL, DNS, time, authentication, security, trust, application, and incident gates with obsolete controllers blocked."
+      isCorrect: true
+      explanation: "Correct. Reconnection requires technical and security evidence across every dependency."
+    - content: "One successful user sign-in."
+      isCorrect: false
+      explanation: "Incorrect. A single sign-in doesn't validate forest health or security."

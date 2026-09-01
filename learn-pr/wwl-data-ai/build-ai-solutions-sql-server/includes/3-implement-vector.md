@@ -17,8 +17,8 @@ The [vector data type](/sql/t-sql/data-types/vector-data-type?azure-portal=true)
 ### Explore key characteristics
 
 - **Optimized storage format:** Vectors are stored in an optimized binary format internally but exposed as JSON arrays for ease of use and compatibility.
-- **Flexible precision:** Each element in the vector can be stored using single-precision (4-byte) or half-precision (2-byte) floating-point values, allowing you to balance accuracy and storage efficiency.
-- **Dimension support:** SQL Server 2025 supports vectors with up to 1998 dimensions for single-precision and 3,996 dimensions for half-precision, accommodating a wide range of embedding models.
+- **Flexible precision:** Each element in the vector is stored using single-precision (4-byte) floating-point values by default. Half-precision (2-byte) `float16` storage is also supported but is currently in preview in SQL Server 2025 — it requires the `PREVIEW_FEATURES` database-scoped configuration to be enabled.
+- **Dimension support:** SQL Server 2025 supports vectors with up to 1,998 dimensions for single-precision. When using half-precision (preview), vectors can have up to 3,996 dimensions.
 
 ### Create and store vectors
 
@@ -109,6 +109,9 @@ For larger datasets, approximate nearest neighbor (ANN) search provides a balanc
 Recall measures the proportion of true nearest neighbors that an ANN algorithm identifies compared to exact search. A recall of 1.0 (100%) means the approximate search returns the same results as exact search. In practice, recall values above 0.95 often provide excellent results for AI applications while offering significant performance improvements.
 
 ### Create vector indexes
+
+> [!NOTE]
+> `CREATE VECTOR INDEX` and `VECTOR_SEARCH` are preview features in SQL Server 2025. Before using them, enable the preview features database-scoped configuration option: `ALTER DATABASE SCOPED CONFIGURATION SET PREVIEW_FEATURES = ON;`
 
 To enable ANN search, create a [vector index](/sql/t-sql/statements/create-vector-index-transact-sql?azure-portal=true) on your vector column:
 
@@ -230,7 +233,7 @@ This query combines vector search with full-text search. It finds products seman
 
 When implementing vector search in SQL Server 2025:
 
-- **Choose the right precision:** Use half-precision for larger dimensions when storage is a concern
+- **Choose the right precision:** Use half-precision (float16, preview in SQL Server 2025) for larger dimensions when storage efficiency is a concern
 - **Index strategically:** Create vector indexes on columns that are frequently searched
 - **Monitor recall:** Test your ANN queries to ensure acceptable recall rates for your use case
 - **Optimize queries:** Use appropriate filters to reduce the search space before vector operations

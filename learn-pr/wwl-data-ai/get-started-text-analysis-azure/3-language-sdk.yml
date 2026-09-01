@@ -6,7 +6,7 @@ metadata:
   description: "Create a client application that analyzes text with both the OpenAI responses API and the Azure Language SDK."
   ms.date: 04/10/2026
   author: wwlpublish
-  ms.author: sheryang
+  ms.author: gmalc
   ms.topic: unit
   zone_pivot_groups: video-or-text
 durationInMinutes: 9

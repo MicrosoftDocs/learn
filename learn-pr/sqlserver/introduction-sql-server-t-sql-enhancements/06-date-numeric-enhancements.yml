@@ -4,9 +4,9 @@ title: Date and numeric enhancements
 metadata:
   title: Date and numeric enhancements
   description: "Work with CURRENT_DATE, bigint DATEADD, and PRODUCT() for precise date and math operations."
-  ms.date: 10/14/2025
-  author: MScalopez
-  ms.author: calopez
+  ms.date: 08/11/2026
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 6
 content: |

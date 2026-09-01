@@ -1,13 +1,15 @@
-Any VMs that you deploy as part of Contoso's Azure subscription need to be secure. You can use the Change Tracking and Inventory feature, part of Azure Automation, to help secure Contoso's Windows Server IaaS VMs **in Azure**.
+Any VMs that you deploy as part of Contoso's Azure subscription need to be secure. You can use Azure Change Tracking and Inventory to audit configuration changes and maintain an inventory of Contoso's Windows Server infrastructure.
 
 ## What is Change Tracking and Inventory?
 
-*Azure Change Tracking and Inventory* is a feature that enables you to track changes in both your VMs and your server infrastructure. This can help you to pinpoint operational and environmental issues with software managed by the Distribution Package Manager. You can track the following Windows Server items using Change Tracking and Inventory:
+Azure Change Tracking and Inventory is an Azure service that monitors configuration changes and provides inventory logs for Azure VMs, Azure Arc-enabled servers, and virtual machine scale sets. It can help you detect configuration drift, investigate unexpected changes, and maintain visibility into system assets.
+
+On Windows machines, Change Tracking and Inventory tracks:
 
 - Windows software
 - Windows files
 - Windows registry keys
-- Microsoft services
+- Windows services
 
 In addition, you can track the following Linux components:
 
@@ -15,133 +17,60 @@ In addition, you can track the following Linux components:
 - Linux software (packages)
 - Linux files
 
-Azure Tracking and Inventory relies on Log Analytics to collect information on monitoring components to a Log Analytics workspace. If you connect your VMs to a Log Analytics workspace, on monitored servers, you can use Log Analytics agents to collect data about changes to:
+The current version uses the Azure Monitor Agent (AMA), the Change Tracking extension, and a data collection rule (DCR). The DCR defines what data is collected and the Log Analytics workspace where Azure Monitor stores it. Change metadata is stored in the `ConfigurationChange` table, and inventory metadata is stored in the `ConfigurationData` table.
 
-- Installed software
-- Microsoft services
-- Windows registry and files
+> [!IMPORTANT]
+> The legacy Change Tracking and Inventory implementation that used the Log Analytics agent and Azure Automation was retired on August 31, 2024. Use the AMA-based service for new and existing deployments.
 
-The Log Analytics agents send collected data to Azure Monitor for processing. Azure Monitor then applies logic to that data, records the data and makes it available to you.
-
-> [!NOTE]  
-> Change Tracking and Inventory obtains its data from [Azure Monitor](https://aka.ms/azure-monitor-overview?azure-portal=true).
+For more information about the service architecture, see [Azure Change Tracking and Inventory overview](/azure/azure-change-tracking-inventory/overview-monitoring-agent).
 
 ### Limitations
 
-Change Tracking and Inventory doesn't support certain items and has some limitations, as detailed in the following table.
+Change Tracking and Inventory has the following limitations:
 
-|Issue|Details|
-|----|----|
-|No support|There's no support for Windows registry tracking recursion support, network file systems, or Windows executable (*.exe) files.|
-|Limitations|The Max File Size column and values are unused in the current implementation; if you collect more than 2,500 files in a 30-minute collection cycle, Change Tracking and Inventory performance might be degraded. When network traffic is high, change records can take up to six hours to display. If you modify a configuration while a computer is shut down, the computer might post changes belonging to the previous configuration.|
+- It doesn't support recursive Windows registry tracking, registry hives other than `HKEY_LOCAL_MACHINE`, or network file systems.
+- It tracks up to 500 files and 250 registry keys per machine.
+- Tracked files must be 5 MB or smaller.
+- Collecting more than 2,500 files during a 30-minute cycle can reduce performance.
+- Change records can take up to six hours to appear during periods of high network traffic.
+
+For current limits, collection frequencies, and supported regions, see the [Change Tracking and Inventory support matrix](/azure/azure-change-tracking-inventory/change-tracking-inventory-support-matrix).
 
 ## Requirements for Change Tracking and Inventory
 
-Change tracking and inventory has several requirements.
-
-### Automation account
-
-Change Tracking and Inventory relies on Azure Automation. When you start Azure Automation for the first time, you must create an Automation account. The Automation account enables you to isolate your Automation resources and related items from the resources relating to other accounts. An Azure Automation account is different from both your Microsoft account and any accounts you create in your Azure subscription. Create an Azure Automation account in the Azure portal, **Azure Automation account** blade.
-
-To learn how to create an Automation account, visit [Create an Azure Automation account](/azure/automation/quickstarts/create-azure-automation-account-portal).
+To enable Change Tracking and Inventory, you need an Azure subscription and a supported Azure VM or Azure Arc-enabled server. The onboarding process configures AMA, the Change Tracking extension, a DCR, and a Log Analytics workspace. An Azure Automation account isn't required.
 
 ### Supported operating systems
 
-Change Tracking and Inventory supports all Windows OSs that meet the Log Analytics agent requirements. These operating systems are:
-
-- Windows Server 2025
-- Windows Server 2022
-- Windows Server 2019
-- Windows Server 2016, version 1709 and 1803
-- Windows Server 2012 and Windows Server 2012 R2
-- Windows 11 Enterprise (including multi-session) and Windows 11 Pro
-- Windows 10 Enterprise (including multi-session) and Windows 10 Pro
-
-> [!NOTE]  
-> Change Tracking and Inventory is also available for supported Linux operating systems.
+Change Tracking and Inventory supports Windows and Linux operating systems that meet the current AMA requirements. Because agent support changes over time, verify the operating system version in [Azure Monitor Agent supported operating systems](/azure/azure-monitor/agents/agents-overview#supported-operating-systems) before onboarding a machine.
 
 ### Network requirements
 
-Change Tracking and Inventory also has a number of network requirements based on the requirements of both the underlying Log Analytics workspace and Linux and Windows agents. The agent communicates with the Azure Monitor service using TCP port 443. 
-
-Typical settings for on-premises servers being monitored are described in the following table.
-
-|Component|Traffic description|
-|----|----|
-|Windows agent|Uses TCP port 5723 to communicate with Microsoft Operations Manager, which monitors services, devices, and operations for many computers from a single console.|
-|Linux agent|Uses TCP port 22 and TCP port 1270 to communicate with Operations Manager.|
-|Operations Manager|Uses TCP port 8080 to communicate with the Log Analytics gateway. The Log Analytics gateway sends data to Azure Automation and a Log Analytics workspace in Azure Monitor on behalf of the computers that can't directly connect to the internet.|
-|VMs|Use TCP port 8080 to communicate with the Log Analytics gateway.|
-|Log Analytics gateway| Uses TCP port 443 to communicate with the configured Log Analytics workspace.|
-
-### Firewall requirements
-
-Change Tracking and Inventory requires access through your firewall to certain resources as outlined in the following table.
-
-|Azure Resource|Ports|Direction|Bypass HTTPS inspection|
-|----|----|----|----|
-| `*.ods.opinsights.azure.com` | Port 443 | Outbound |Yes |
-| `*.oms.opinsights.azure.com` | Port 443 | Outbound|Yes |
-| `*.blob.core.windows.net` | Port 443 |Outbound |Yes |
-| `*.azure-automation.net` | Port 443 |Outbound |Yes |
+Machines must meet the [Azure Monitor Agent network requirements](/azure/azure-monitor/agents/azure-monitor-agent-network-configuration). AMA sends data to Azure Monitor over outbound TCP port 443. If your organization uses private links, proxies, or firewalls, allow the endpoints required for AMA, Azure Monitor, and the selected Log Analytics workspace.
 
 ### Azure region requirements
 
-You must link Change Tracking and Inventory to a Log Analytics workspace and an Automation account in your Azure subscription. However, only certain regions are supported for these links, as described in the following table.
-
-|Log Analytics workspace region|Azure Automation region|
-|----|----|
-|EastUS|EastUS2|
-|WestUS2|WestUS2|
-|WestCentralUS|WestCentralUS|
-|CanadaCentral|CanadaCentral|
-|AustraliaSoutheast|AustraliaSoutheast|
-|SoutheastAsia|SoutheastAsia|
-|CentralIndia|CentralIndia|
-|ChinaEast2|ChinaEast2|
-|JapanEast|JapanEast|
-|UKSouth|UKSouth|
-|WestEurope|WestEurope|
-|USGovVirginia|USGovVirginia|
-|USGovArizona|USGovArizona|
-
-> [!TIP]
-> Your Log Analytics workspace and Automation account must be in the same subscription as one another.
+The AMA-based service supports Log Analytics workspaces in specific Azure regions. Region support isn't based on Automation account and workspace pairings. Review the current regional list in the [Change Tracking and Inventory support matrix](/azure/azure-change-tracking-inventory/change-tracking-inventory-support-matrix#supported-regions-and-mappings-for-change-tracking-and-inventory-with-the-azure-monitor-agent).
 
 ## Enable Change Tracking and Inventory
 
-You can enable Change Tracking and Inventory in the following ways:
-
-- By using the Azure portal
-- By using an Azure VM
-- From an Automation account
-- From a runbook
+You can enable Change Tracking and Inventory for individual or multiple Azure VMs and Azure Arc-enabled servers. For larger deployments, use Azure Policy to deploy the required resources consistently.
 
 ### Enable Change Tracking and Inventory from the Azure portal
 
-Use the following high-level procedure to enable Change Tracking and Inventory using the Azure portal:
+Use the following high-level procedure to enable Change Tracking and Inventory for a single Azure VM:
 
-1. In the Azure portal, navigate to **Virtual machines**.
-2. Use the checkboxes to choose the virtual machines to add to Change Tracking and Inventory.
-3. Select **Services**, and then select **Change Tracking** or **Inventory**.
+1. In the Azure portal, go to **Virtual machines**, and then select the VM.
+2. Search for and select **Change tracking** to open the **Change Tracking and Inventory** pane.
+3. Select **Enable change tracking and inventory feature with AMA**.
+4. Select **Enable**.
 
-   > [!TIP]
-   > Azure filters the list of VMs to list only the VMs that are in the same subscription and location. You can change this behavior.
-
-4. Azure selects an existing Log Analytics workspace and Automation account (if available). If you want to use a different Log Analytics workspace and Automation account, select **CUSTOM** to select them from the Custom Configuration page.
-5. Select **Enable** to enable the feature you've selected.
-
-   > [!NOTE] 
-   > The setup can take up to 15 minutes to complete.
+Onboarding usually takes two to three minutes. During enablement, Azure associates a DCR with the VM and deploys the required monitoring components.
 
 ## Additional reading
 
 To learn more, review the following documents:
 
-- [Enable Change Tracking and Inventory from an Azure VM](https://aka.ms/enable-changes-from-vm?azure-portal=true)
-- [Enable Change Tracking and Inventory from an Automation account](https://aka.ms/enable-changes-from-auto-acct?azure-portal=true)
-- [Enable Change Tracking and Inventory from a runbook](https://aka.ms/enable-changes-from-runbook?azure-portal=true)
-- [Operations Manager](https://aka.ms/scom-welcome?azure-portal=true).
-- [Connect computers without internet access by using the Log Analytics gateway in Azure Monitor](https://aka.ms/Log-Analytics-gateway?azure-portal=true).
-- [Create a Log Analytics workspace in the Azure portal](https://aka.ms/quick-create-workspace?azure-portal=true).
-- [Log Analytics agent overview](https://aka.ms/log-analytics-agent?azure-portal=true).
+- [Enable Change Tracking and Inventory for machines](/azure/azure-change-tracking-inventory/quickstart-monitor-changes-collect-inventory-azure-change-tracking-inventory)
+- [Create a Change Tracking and Inventory data collection rule](/azure/azure-change-tracking-inventory/create-data-collection-rule)
+- [Manage Change Tracking and Inventory by using Azure Policy](/azure/azure-change-tracking-inventory/enable-change-tracking-at-scale-policy)

@@ -11,5 +11,5 @@ Supplemental Resources:
 - [Microsoft Dynamics Documentation](https://aka.ms/dynamics365docs) 
 - [Microsoft Dynamics 365 Customer Service](https://aka.ms/dynamics365customerservice)
 - [Microsoft Dynamics 365 Blog](https://aka.ms/cloudblogs)
-- [MB-920 Study Guide](https://aka.ms/MB920StudyGuide)
+- [MB-920 Study Guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/mb-920)
 - [Exam MB-920: Microsoft Dynamics 365 Fundamentals (ERP)](https://aka.ms/MB920Exam) 

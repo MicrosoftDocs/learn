@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=31ec8b9e-4a33-458d-9428-025b5d68fac1]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The Microsoft Foundry Evaluation SDK integrates directly into continuous integration/continuous deployment (CI/CD) pipelines, letting you enforce automated quality gates that compare each new agent version against a gold baseline before deployment. Unlike traditional software where quality only changes with code modifications, AI agents drift without any code changes.
 
 ## Design regression test suite composition
@@ -292,3 +303,5 @@ The `check_regression_pass.py` script exits with code 0 if evaluation passed and
 - **Comparison thresholds** define acceptable degradation limits (for example, 2% task completion drop) calibrated from historical variation to balance false positive and false negative risks.
 - **Production drift monitoring** samples 1% of live interactions for continuous evaluation, detecting gradual quality degradation between deployments using 7-day rolling averages.
 - **CI/CD deployment gates** integrate regression evaluation directly into GitHub Actions workflows, automatically blocking deployments that fail quality thresholds.
+
+::: zone-end

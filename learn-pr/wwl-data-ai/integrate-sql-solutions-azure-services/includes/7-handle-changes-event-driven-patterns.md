@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c2aec618-642c-4be1-99c7-0608ad50e4be]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Modern applications often need to respond to database changes in real time. When a customer places an order, updates their profile, or when inventory levels change, downstream systems need notification. SQL Server and Azure SQL provide several mechanisms for capturing and streaming these changes, each with different characteristics for latency, throughput, and implementation complexity.
 
 Data API Builder integrates with these change mechanisms through Azure Functions SQL trigger bindings. Understanding when to use each approach helps you build responsive, event-driven architectures that react to data changes efficiently.
@@ -167,3 +178,5 @@ Use **change event streaming** when:
 - You're building real-time analytics pipelines
 
 Consider combining approaches. Use CDC for audit and compliance while using Functions triggers for real-time notifications. This pattern provides both historical records and immediate responses.
+
+::: zone-end

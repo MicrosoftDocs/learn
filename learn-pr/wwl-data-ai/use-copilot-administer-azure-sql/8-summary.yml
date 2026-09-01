@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-copilot-administer-azure-sql.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary of Microsoft Copilot tools for Azure SQL database administrators.
+  ms.date: 06/02/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]

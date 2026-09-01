@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Governed schema change lifecycle</title>
+  <desc id="desc">A schema change moves through justification, design, identifier allocation, isolated testing, schema-master deployment, cache and replication convergence, then application validation and documentation. A warning states that schema additions have no simple schema-only rollback.</desc>
+  <defs>
+    <marker id="life-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+    <marker id="warning-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#D83B01"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="720" fill="#FFFFFF"/>
+  <text x="700" y="42" text-anchor="middle" fill="#1A1A1A" font-size="27" font-weight="700">Treat every schema extension as a forest change</text>
+
+  <rect x="40" y="120" width="190" height="150" rx="12" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="135" y="157" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">1. Justify</text>
+  <text x="135" y="190" text-anchor="middle" fill="#323130" font-size="14">Reuse an attribute?</text>
+  <text x="135" y="216" text-anchor="middle" fill="#323130" font-size="14">Use an application store?</text>
+  <text x="135" y="242" text-anchor="middle" fill="#323130" font-size="14">Define ownership?</text>
+
+  <rect x="270" y="120" width="190" height="150" rx="12" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="365" y="157" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">2. Design</text>
+  <text x="365" y="190" text-anchor="middle" fill="#323130" font-size="14">Syntax, range, classes</text>
+  <text x="365" y="216" text-anchor="middle" fill="#323130" font-size="14">Security, query pattern</text>
+  <text x="365" y="242" text-anchor="middle" fill="#323130" font-size="14">Replication cost</text>
+
+  <rect x="500" y="120" width="190" height="150" rx="12" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="595" y="157" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">3. Allocate</text>
+  <text x="595" y="190" text-anchor="middle" fill="#323130" font-size="14">Naming prefix</text>
+  <text x="595" y="216" text-anchor="middle" fill="#323130" font-size="14">Object identifiers</text>
+  <text x="595" y="242" text-anchor="middle" fill="#323130" font-size="14">Stable GUID values</text>
+
+  <rect x="730" y="120" width="190" height="150" rx="12" fill="#FFF4CE" stroke="#8A6D1D" stroke-width="2"/>
+  <text x="825" y="157" text-anchor="middle" fill="#5C4B00" font-size="18" font-weight="700">4. Test</text>
+  <text x="825" y="190" text-anchor="middle" fill="#323130" font-size="14">Isolated forest</text>
+  <text x="825" y="216" text-anchor="middle" fill="#323130" font-size="14">Exact package</text>
+  <text x="825" y="242" text-anchor="middle" fill="#323130" font-size="14">Dependency order</text>
+
+  <rect x="960" y="120" width="190" height="150" rx="12" fill="#E1EFFF" stroke="#0078D4" stroke-width="3"/>
+  <text x="1055" y="157" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">5. Deploy</text>
+  <text x="1055" y="190" text-anchor="middle" fill="#323130" font-size="14">Schema master</text>
+  <text x="1055" y="216" text-anchor="middle" fill="#323130" font-size="14">Temporary privilege</text>
+  <text x="1055" y="242" text-anchor="middle" fill="#323130" font-size="14">Captured logs</text>
+
+  <rect x="1190" y="120" width="170" height="150" rx="12" fill="#E1EFFF" stroke="#0078D4" stroke-width="3"/>
+  <text x="1275" y="157" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">6. Converge</text>
+  <text x="1275" y="190" text-anchor="middle" fill="#323130" font-size="14">Cache refresh</text>
+  <text x="1275" y="216" text-anchor="middle" fill="#323130" font-size="14">Forest replication</text>
+  <text x="1275" y="242" text-anchor="middle" fill="#323130" font-size="14">Remote validation</text>
+
+  <line x1="230" y1="195" x2="260" y2="195" stroke="#0078D4" stroke-width="4" marker-end="url(#life-arrow)"/>
+  <line x1="460" y1="195" x2="490" y2="195" stroke="#0078D4" stroke-width="4" marker-end="url(#life-arrow)"/>
+  <line x1="690" y1="195" x2="720" y2="195" stroke="#0078D4" stroke-width="4" marker-end="url(#life-arrow)"/>
+  <line x1="920" y1="195" x2="950" y2="195" stroke="#0078D4" stroke-width="4" marker-end="url(#life-arrow)"/>
+  <line x1="1150" y1="195" x2="1180" y2="195" stroke="#0078D4" stroke-width="4" marker-end="url(#life-arrow)"/>
+
+  <rect x="235" y="350" width="930" height="168" rx="14" fill="#F2F8FD" stroke="#0078D4" stroke-width="2"/>
+  <text x="700" y="390" text-anchor="middle" fill="#005A9E" font-size="21" font-weight="700">7. Validate application behavior</text>
+  <text x="285" y="430" fill="#323130" font-size="15">Schema objects and defining properties match.</text>
+  <text x="285" y="460" fill="#323130" font-size="15">Representative reads, writes, searches, permissions, catalog results, and read-only replicas behave as designed.</text>
+  <text x="285" y="490" fill="#323130" font-size="15">The extension manifest records identifiers, package version, evidence, ownership, and removal behavior.</text>
+
+  <path d="M1275 270 C1275 320, 1100 335, 1050 350" fill="none" stroke="#0078D4" stroke-width="4" marker-end="url(#life-arrow)"/>
+
+  <rect x="210" y="580" width="980" height="90" rx="12" fill="#FDE7E1" stroke="#D83B01" stroke-width="3"/>
+  <text x="700" y="616" text-anchor="middle" fill="#A4262C" font-size="20" font-weight="700">No simple schema-only rollback</text>
+  <text x="700" y="646" text-anchor="middle" fill="#323130" font-size="16">Test before deployment. Preserve recovery readiness. Use isDefunct only within supported limits.</text>
+
+  <line x1="700" y1="518" x2="700" y2="570" stroke="#D83B01" stroke-width="4" marker-end="url(#warning-arrow)"/>
+</svg>

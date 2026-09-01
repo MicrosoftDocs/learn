@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4783cd4a-093d-4ba5-a0f9-04eb1afacd0e]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Fabrikam's multi-agent code review system processes proprietary enterprise customer code—the most sensitive asset many companies possess. A cross-tenant data breach where Customer A's source code leaks to Customer B would be catastrophic: legal liability, regulatory penalties, reputation damage, and immediate customer churn. Traditional perimeter-based security models assume trust within the network boundary. Zero-trust architecture assumes no component ever has inherent trust—every request, from any source, requires explicit authentication and authorization.
 
 Implementing zero-trust for multi-agent systems means applying security controls at every agent interaction boundary, not just at the external API gateway. One agent calling another agent must authenticate with cryptographic proof of identity. Network policies prevent compromised agents from communicating with unrelated agents. Data isolation ensures tenant context propagates through every operation. In this module, you learn how to design zero-trust identity architecture for multi-agent networks with per-agent managed identities and least-privilege access, design network controls to prevent lateral movement between agents, implement multitenant data isolation architectures with tenant context propagation, and configure compliance controls that map regulatory requirements to agent behaviors.
@@ -15,3 +23,8 @@ For AI-specific threats that go beyond classical infrastructure threats—prompt
 The security controls in this module generate data: managed identity audit logs, network flow logs, tenant-context processing records, and compliance evidence. Individually, these data streams support compliance reportings. Aggregated into a Security Information and Event Management (SIEM) system, they enable unified threat detection across the entire agent ecosystem.
 
 OpenTelemetry traces, structured operation logs, and immutable audit records (capturing agent ID, timestamp, and action taken) should feed enterprise security tooling such as Microsoft Sentinel (SIEM) for unified threat detection and SOAR (Security Orchestration, Automation, and Response) platforms for automated incident response. When a compromised agent generates anomalous call patterns, the same OpenTelemetry trace data that supports debugging also enables Sentinel to correlate the anomaly across tenants and trigger an automated containment runbook.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

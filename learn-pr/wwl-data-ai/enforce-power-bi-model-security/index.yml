@@ -2,8 +2,8 @@
 uid: learn.wwl.enforce-power-bi-model-security
 metadata:
   title: Enforce Power BI model security
-  description: Enforce model security in Power BI using row-level security and object-level security.
-  ms.date: 09/25/2024
+  description: Restrict access to Power BI model data by implementing row-level security (RLS) and object-level security (OLS) to protect sensitive information.
+  ms.date: 06/12/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: module

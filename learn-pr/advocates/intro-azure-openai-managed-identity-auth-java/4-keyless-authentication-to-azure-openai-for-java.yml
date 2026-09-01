@@ -5,8 +5,8 @@ metadata:
   title: Keyless authentication to Azure OpenAI for Java
   description: Learn how to use Microsoft Entra ID and managed identities for keyless authentication to Azure OpenAI from Java applications.
   ms.date: 05/20/2026
-  author: sarah-yo
-  ms.author: sayoung
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 3
 content: |

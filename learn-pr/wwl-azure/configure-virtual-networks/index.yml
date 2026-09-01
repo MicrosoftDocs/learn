@@ -5,9 +5,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure Virtual Networks
   description: "Learn how to configure virtual networks and subnets, including IP addressing."
-  ms.date: 03/20/2026
+  ms.date: 06/20/2026
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: robbarefoot
   ms.topic: module
   ms.collection: N/A
   ms.custom:

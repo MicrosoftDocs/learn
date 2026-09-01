@@ -1,18 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions.explore-solution-architecture
-title: Explore the solution architecture
+title: Apply trunk-based development
 metadata:
-  title: Explore the solution architecture
-  description: Explore the solution architecture
-  author: wwlpublish
+  title: Apply trunk-based development
+  description: Learn how short-lived branches, pull requests, reviews, and branch protection support trunk-based development.
+  author: madiepev
   ms.author: madiepev
-  ms.date: 12/01/2025
+  ms.date: 08/27/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 azureSandbox: false
 labModal: false
-durationInMinutes: 4
+durationInMinutes: 5
 content: |
   [!include[](includes/3-explore-solution-architecture.md)]
-

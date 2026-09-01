@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-windows-packet-monitor.choose-collection-options
+title: Choose collection options
+metadata:
+  title: Choose Collection Options
+  description: Choose counters-only or packet logging, component scope, packet size, file size, and bounded logging options.
+  ms.date: 07/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-choose-collection-options.md)]

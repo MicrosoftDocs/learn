@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-visual-studio-code-python.install-python-vs-code
+title: Install Python and VS Code
+metadata:
+  title: Install Python and VS Code
+  description: "Step through installing Python and Visual Studio Code to set up your development environment."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-install-python-vs-code.md)]

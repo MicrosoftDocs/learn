@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.model-data-relationships-azure-documentdb
+metadata:
+  title: Model Data Relationships in Azure DocumentDB
+  description: "Model data relationships effectively in Azure DocumentDB. Analyze entity relationships using access patterns and cardinality, apply the embed-vs-reference decision framework, and implement one-to-one, one-to-many, and many-to-many relationship patterns with practical e-commerce examples."
+  ms.date: 06/20/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-documentdb
+  ai-usage: ai-assisted
+title: Model data relationships in Azure DocumentDB
+summary: Model data relationships effectively in Azure DocumentDB. Analyze entity relationships using access patterns and cardinality, apply the embed-vs-reference decision framework, and implement one-to-one, one-to-many, and many-to-many relationship patterns with practical e-commerce examples.
+abstract: |
+  After completing this module, you'll be able to:
+  - Analyze entity relationships by identifying cardinality, access patterns, and update frequency.
+  - Apply the embed-vs-reference decision framework to determine the optimal modeling strategy.
+  - Implement one-to-one, one-to-many, and many-to-many relationship patterns including hybrid approaches.
+prerequisites: |
+  - Familiarity with database concepts such as queries, indexes, and data models.
+  - Basic understanding of MongoDB or document-oriented databases.
+  - Experience with insert, query, update, and delete operations in Azure DocumentDB or MongoDB.
+  - An Azure subscription.
+  - An Azure DocumentDB cluster.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-documentdb
+subjects:
+- databases
+units:
+- learn.wwl.model-data-relationships-azure-documentdb.introduction
+- learn.wwl.model-data-relationships-azure-documentdb.identify-analyze-data-relationships
+- learn.wwl.model-data-relationships-azure-documentdb.choose-between-embedding-referencing
+- learn.wwl.model-data-relationships-azure-documentdb.model-one-to-one-one-to-many
+- learn.wwl.model-data-relationships-azure-documentdb.model-many-to-many
+- learn.wwl.model-data-relationships-azure-documentdb.exercise-design-relationship-model
+- learn.wwl.model-data-relationships-azure-documentdb.knowledge-check
+- learn.wwl.model-data-relationships-azure-documentdb.summary
+badge:
+  uid: learn.wwl.model-data-relationships-azure-documentdb.badge

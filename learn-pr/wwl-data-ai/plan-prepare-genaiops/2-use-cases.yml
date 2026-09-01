@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-prepare-genaiops.use-cases
-title: Explore use cases for GenAIOps
+title: Define agent specifications
 metadata:
-  title: Explore use cases for GenAIOps
-  description: Explore use cases for GenAIOps.
+  title: Define agent specifications
+  description: Define the specifications for a generative AI agent, including user intent, prompts, capabilities, evaluation, and test data.
   author: madiepev
   ms.author: madiepev
-  ms.date: 02/21/2025
+  ms.date: 07/18/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 6
+durationInMinutes: 7
 content: |
   [!include[](includes/2-use-cases.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.work-smarter-copilot-legal.review-contracts
+title: Review contracts and summarize key issues with Copilot in Word
+metadata:
+  title: Review Contracts and Summarize Key Issues with Copilot in Word
+  description: This content is part of the "Work smarter with Copilot prompts for legal professionals" module.
+  ms.date: 07/21/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-review-contracts.md)]

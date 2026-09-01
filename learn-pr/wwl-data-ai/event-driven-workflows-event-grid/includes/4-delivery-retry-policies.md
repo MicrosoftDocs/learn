@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5dfc5386-a043-487c-ba58-4f94858131ba]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI pipeline endpoints don't always respond successfully on the first attempt. Model services restart, serverless functions experience cold starts, and downstream dependencies go offline temporarily. This unit covers how Event Grid handles delivery failures through its retry mechanism, how to customize retry policies for different AI workload patterns, how to configure dead-letter destinations for events that can't be delivered, and how to monitor delivery outcomes.
 
 ## Understand how Event Grid delivers events
@@ -122,6 +133,8 @@ Event Grid publishes delivery metrics through [Azure Monitor](/azure/event-grid/
 - **Dead-lettered events:** Events sent to the dead-letter destination after exhausting retries
 
 You can set alerts on these metrics to detect systemic issues in your pipeline. A sudden increase in dead-lettered events might indicate that a model service is down, a handler endpoint URL changed, or a deployment introduced a bug. A drop in matched events might mean that your event source stopped publishing or that a filter configuration changed unexpectedly. Monitoring these metrics alongside your application logs provides a complete picture of event flow health across your AI solution.
+
+::: zone-end
 
 ## Additional resources
 

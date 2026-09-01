@@ -6,7 +6,7 @@ metadata:
   description: "Examine the .NET type system"
   ms.date: 02/06/2025
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: buzahid
   ms.topic: unit
 durationInMinutes: 9
 content: |

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.ai-workflows.flow
+title: Keep AI in the flow of work
+metadata:
+  title: Keep AI in the Flow of Work
+  description: 'This content is part of the "Frontier Firms: Bring AI into everyday work with Windows 11" module.'
+  ms.date: 08/21/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-flow.md)]

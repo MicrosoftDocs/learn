@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ad17d4b6-18fa-40e0-b79d-6867334a1c99]
+
+::: zone-end
+
+::: zone pivot="text"
+
 [SQL Server](/sql/sql-server/sql-server-technical-documentation?azure-portal=true) provides several programmability objects that help you encapsulate logic, improve code reusability, and enforce business rules within your database. These objects—[views](/sql/relational-databases/views/views?azure-portal=true), [stored procedures](/sql/relational-databases/stored-procedures/stored-procedures-database-engine?azure-portal=true), [functions](/sql/relational-databases/user-defined-functions/user-defined-functions?azure-portal=true), and [triggers](/sql/relational-databases/triggers/dml-triggers?azure-portal=true)—each serve distinct purposes and offer unique capabilities for database development.
 
 ## Scenario
@@ -22,3 +30,8 @@ In this module, you'll explore the core programmability objects in SQL Server:
 - **Triggers** - Automatic responses to data modifications or database events
 
 You'll also learn decision criteria for choosing the right programmability object based on your specific requirements.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

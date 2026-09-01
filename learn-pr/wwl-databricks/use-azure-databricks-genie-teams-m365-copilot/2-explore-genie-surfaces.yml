@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-databricks-genie-teams-m365-copilot.explore-genie-surfaces
+title: Explore the ways you can use Genie
+metadata:
+  title: Explore the ways you can use Genie
+  description: "Learn about the full family of Azure Databricks Genie surfaces: Genie Agents, Genie One, the Genie mobile app, the Databricks Genie app in Microsoft Teams, and Genie on Microsoft 365 Copilot."
+  ms.date: 08/25/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-genie-surfaces.md)]

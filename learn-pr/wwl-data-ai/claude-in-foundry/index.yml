@@ -3,7 +3,7 @@ uid: learn.wwl.claude-in-foundry
 metadata:
   title: Get started with Claude in Microsoft Foundry
   description: Anthropic Claude models and Microsoft Foundry create a powerful combination for developing generative AI applications and agents.
-  ms.date: 05/25/2026
+  ms.date: 08/01/2026
   author: graememalcolm
   ms.author: gmalc
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics

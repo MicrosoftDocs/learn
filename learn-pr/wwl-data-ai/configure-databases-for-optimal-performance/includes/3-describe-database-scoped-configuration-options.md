@@ -22,7 +22,7 @@ Many options previously configured on the server can now be configured at the da
 
 - **Maximum Degree of Parallelism –** Allows for a database to configure its own MaxDOP setting and override the server’s setting.
 
-- **Legacy Cardinality Estimation –** Allows for the database to use the older cardinality estimator. Some queries may have degraded performance under the newer cardinality estimator, and may benefit from it. You should note that if you use this option with a newer compatibility level, you can still get the benefits of Intelligent Query Processing in compatibility level 140 or 150.
+- **Legacy Cardinality Estimation –** Allows for the database to use the older cardinality estimator. Some queries may have degraded performance under the newer cardinality estimator, and may benefit from it. You should note that if you use this option with a newer compatibility level, you can still get the benefits of Intelligent Query Processing in compatibility level 140, 150, or 160.
 
 - **Last Query Plan Stats –** Allows you to capture the values of the last actual execution plan for a query. This feature is only active in compatibility level 150.
 
@@ -34,4 +34,4 @@ Each database has its own compatibility level, which controls the behavior of th
 
 You can manage this setting when upgrading SQL Server to ensure that your queries have similar execution plans to the older version.
 
-Microsoft supports running on an older compatibility level for an extended period. You should upgrade to a newer compatibility level if possible, as many of the new features in Intelligent Query Processing are only available in compatibility level 140 or 150.
+Microsoft supports running on an older compatibility level for an extended period. You should upgrade to a newer compatibility level if possible, as many of the new features in Intelligent Query Processing are only available in compatibility level 140, 150, or 160.

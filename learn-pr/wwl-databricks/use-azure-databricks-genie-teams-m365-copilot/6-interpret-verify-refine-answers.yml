@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-databricks-genie-teams-m365-copilot.interpret-verify-refine-answers
+title: Interpret, verify, and refine Genie's answers
+metadata:
+  title: Interpret, Verify, and Refine Genie's Answers
+  description: "Apply an inspect-verify-refine workflow to Genie responses: check filters and assumptions, handle ambiguous or uncertain answers, and translate a verified answer into a decision or next action."
+  ms.date: 08/25/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-interpret-verify-refine-answers.md)]

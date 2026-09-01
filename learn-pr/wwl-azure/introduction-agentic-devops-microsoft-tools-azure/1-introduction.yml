@@ -2,9 +2,10 @@
 uid: learn.wwl.introduction-agentic-devops-microsoft-tools-azure.introduction
 title: Introduction to agentic DevOps for Microsoft environments
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction to agentic DevOps for Microsoft environments
   description: "Overview of agentic DevOps and what this module covers for Microsoft DevOps Engineers on Azure."
-  ms.date: 04/03/2026
+  ms.date: 8/24/2026
   author: petender
   ms.author: petender
   ms.topic: unit

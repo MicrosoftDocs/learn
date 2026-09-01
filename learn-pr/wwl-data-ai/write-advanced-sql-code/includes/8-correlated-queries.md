@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4d363c13-1f14-4331-b10f-487b3aa325e9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Correlated queries are subqueries that reference columns from the outer query, creating a dependency that causes the subquery to execute once for each row processed by the outer query. While this might sound inefficient, correlated queries are useful for row-by-row comparisons and calculations that are difficult or impossible to express otherwise.
 
 ## Understand correlated subquery execution
@@ -279,3 +290,5 @@ Follow these guidelines to optimize correlated subquery performance:
 > Always review execution plans when working with correlated subqueries on large tables. The optimizer may transform them efficiently, but complex correlations might benefit from query rewrites.
 
 For more information about subqueries, see [Subqueries (Transact-SQL)](/sql/relational-databases/performance/subqueries?azure-portal=true) and [EXISTS (Transact-SQL)](/sql/t-sql/language-elements/exists-transact-sql?azure-portal=true).
+
+::: zone-end

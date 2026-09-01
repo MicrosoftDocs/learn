@@ -4,7 +4,7 @@ title: Configure and manage Microsoft Purview Audit
 metadata:
   title: Configure and Manage Microsoft Purview Audit
   description: "Configure and manage Microsoft Purview Audit."
-  ms.date: 08/15/2025
+  ms.date: 07/23/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
@@ -16,14 +16,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the main difference in subscription requirements between Microsoft Purview Audit (Standard) and Audit (Premium)?"
+  - content: "The healthcare compliance team just upgraded to Microsoft 365 E5 to get access to `MailItemsAccessed`. A week later, they search for the physician's message-level access and get no records. What's the most likely cause?"
     choices:
-    - content: "Audit (Premium) requires higher-tier plans such as Microsoft 365 E5 or Office 365 E5."
+    - content: "The upgrade is too recent. Audit (Premium) records take 30 days to start populating after a license change."
+      isCorrect: false
+      explanation: "Incorrect. Premium events start logging within 24 hours of Advanced Auditing being enabled on the user. The license upgrade itself doesn't enable per-user Advanced Auditing."
+    - content: "`MailItemsAccessed` requires **Microsoft 365 Advanced Auditing** to be enabled per user, and the E5 upgrade alone doesn't turn it on automatically."
       isCorrect: true
-      explanation: "Correct: Audit (Premium) requires subscriptions to higher-tier plans like Microsoft 365 E5 to access its advanced features."
-    - content: "Both versions require the same types of subscriptions."
+      explanation: "Correct. Microsoft 365 E5, Office 365 E5, and E5 Compliance licensing include the Advanced Auditing service plan, but it isn't turned on automatically. Someone has to enable it per user, and records only exist from the enablement date forward."
+    - content: "The team needs to purchase the **10-Year Audit Log Retention** add-on before Premium events start logging."
       isCorrect: false
-      explanation: "Incorrect: Audit (Premium) requires more comprehensive subscription plans compared to Audit (Standard)."
-    - content: "Audit (Standard) requires an Office 365 E1 subscription, while Audit (Premium) doesn't."
-      isCorrect: false
-      explanation: "Incorrect: Both versions have specific subscription requirements, but Audit (Premium) generally requires higher-tier plans."
+      explanation: "Incorrect. The 10-Year Audit Log Retention add-on extends how long records are kept. It doesn't affect whether `MailItemsAccessed` records get created."

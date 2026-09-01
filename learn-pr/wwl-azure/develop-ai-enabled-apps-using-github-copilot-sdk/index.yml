@@ -4,8 +4,8 @@ metadata:
   title: "Develop AI-Enabled Apps using the GitHub Copilot SDK"
   description: "This module covers how to develop AI-enabled applications using the GitHub Copilot SDK. You install the SDK, explore its features, and build AI agents that can be integrated into your applications to automate tasks and enhance functionality."
   ms.date: 02/13/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module
   ms.service: github-copilot
 title: "Develop AI-enabled apps using the GitHub Copilot SDK"

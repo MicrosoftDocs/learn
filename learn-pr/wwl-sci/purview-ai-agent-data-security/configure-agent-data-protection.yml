@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-agent-data-security.configure-agent-data-protection
+title: Configure agent-specific data protection controls
+metadata:
+  title: Configure Agent-Specific Data Protection Controls
+  description: "Configure DLP policies to include agent instances and address Agent 365 sensitivity label requirements for data protection."
+  ms.date: 06/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/configure-agent-data-protection.md)]

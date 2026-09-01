@@ -4,7 +4,7 @@ title: Explore high availability and disaster recovery solution for IaaS
 metadata:
   title: Explore high availability and disaster recovery solution for IaaS
   description: "Explore high availability and disaster recovery solution for IaaS"
-  ms.date: 03/27/2025
+  ms.date: 08/10/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 11
 content: |
-  [!include[](includes/6-explore-iaas-high-availability-disaster-recovery-solution.md)]
+  [!include[](includes/6-explore-iaas-high-availability-disaster-recovery-solution.md)]

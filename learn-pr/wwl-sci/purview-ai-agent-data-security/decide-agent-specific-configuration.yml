@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-agent-data-security.decide-agent-specific-configuration
+title: Decide where policies need agent-specific configuration
+metadata:
+  title: Decide Where Policies Need Agent-Specific Configuration
+  description: "Evaluate existing protection and detection policies against active agent types and determine where agent-specific configuration is needed versus where policies already cover agent interactions."
+  ms.date: 06/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/decide-agent-specific-configuration.md)]

@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-foundry-iq.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your understanding of Microsoft Foundry IQ."
+  ms.date: 07/31/2026
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+    - content: "What is the primary purpose of Microsoft Foundry IQ?"
+      choices:
+        - content: "To provide a managed knowledge layer that agents can use to retrieve permission-aware enterprise information."
+          isCorrect: true
+          explanation: "Correct. Foundry IQ connects agents to reusable knowledge bases containing enterprise and web knowledge sources."
+        - content: "To train a new foundation model from every document in an organization."
+          isCorrect: false
+          explanation: "Incorrect. Foundry IQ retrieves relevant information at query time; it doesn't train a new foundation model from the knowledge base."
+        - content: "To replace AI agents with a traditional keyword search page."
+          isCorrect: false
+          explanation: "Incorrect. Foundry IQ supplies relevant knowledge to agents and applications; it doesn't replace them."
+    - content: "What does a Foundry IQ knowledge base contain?"
+      choices:
+        - content: "One or more knowledge sources and settings that control retrieval behavior."
+          isCorrect: true
+          explanation: "Correct. A knowledge base organizes knowledge sources and orchestrates how Foundry IQ retrieves from them."
+        - content: "Only the conversation history for a single agent."
+          isCorrect: false
+          explanation: "Incorrect. A knowledge base organizes connected enterprise or web content and can be shared by multiple agents."
+        - content: "Only documents uploaded directly to a language model."
+          isCorrect: false
+          explanation: "Incorrect. Knowledge sources can connect indexed or remote content from multiple supported systems."
+    - content: "What does agentic retrieval do with a complex user question?"
+      choices:
+        - content: "It can decompose the question, search relevant sources in parallel, rerank results, and return cited evidence."
+          isCorrect: true
+          explanation: "Correct. Agentic retrieval plans and executes searches, then aggregates the most relevant results with source references."
+        - content: "It permanently adds the question and answer to the model's training data."
+          isCorrect: false
+          explanation: "Incorrect. Retrieval supplies context at run time and doesn't modify the model's training data."
+        - content: "It searches every source with an exact keyword match and returns results without ranking."
+          isCorrect: false
+          explanation: "Incorrect. Foundry IQ can use keyword, vector, or hybrid search and semantic reranking."
+    - content: "Why should an agent be instructed to cite knowledge base sources?"
+      choices:
+        - content: "Citations help users trace and verify the evidence supporting a response."
+          isCorrect: true
+          explanation: "Correct. Source attribution improves transparency and enables users to verify claims."
+        - content: "Citations allow the agent to bypass permissions on the source documents."
+          isCorrect: false
+          explanation: "Incorrect. Citations don't bypass permissions; authorization must be enforced throughout retrieval."
+        - content: "Citations cause the language model to retrain itself after every response."
+          isCorrect: false
+          explanation: "Incorrect. Citations identify retrieved sources and don't retrain the model."
+    - content: "Which practice helps protect enterprise information in a Foundry IQ solution?"
+      choices:
+        - content: "Use identities and access controls so retrieval returns only content the caller is authorized to access."
+          isCorrect: true
+          explanation: "Correct. Permission-aware retrieval depends on properly configured identities, roles, and source-level access controls."
+        - content: "Copy every source into one public index so all agents retrieve the same content."
+          isCorrect: false
+          explanation: "Incorrect. Making enterprise content public would undermine access controls and data governance."
+        - content: "Trust retrieved document text as agent instructions."
+          isCorrect: false
+          explanation: "Incorrect. Retrieved content should be treated as untrusted data, not as instructions that can override the agent's rules."

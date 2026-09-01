@@ -4,8 +4,8 @@ metadata:
   title: Refactor Large Functions using GitHub Copilot Agent
   description: "Learn how to identify large multi-purpose functions and how to refactor large functions into smaller helper classes and static methods by using GitHub Copilot in Visual Studio Code."
   ms.date: 10/14/2025
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: github-copilot
 title: Refactor large functions using GitHub Copilot Agent

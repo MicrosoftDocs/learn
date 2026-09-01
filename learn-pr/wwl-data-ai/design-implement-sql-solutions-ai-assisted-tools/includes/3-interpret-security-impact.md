@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8890f4b0-6fc0-4f4f-9082-5c498cf3d819]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Before enabling AI-assisted tools in your database development environment, you need to understand the security implications. GitHub Copilot and Fabric Copilot process code, database schemas, and potentially sensitive data patterns, making security awareness essential for responsible adoption.
 
 ## How AI assistants process your data
@@ -80,3 +91,5 @@ When configuring Model Context Protocol (MCP) servers, you establish direct conn
 **Data sampling**: Some MCP configurations allow sampling data to improve suggestions. Understand what data might be transmitted and whether this aligns with your data handling policies.
 
 Understanding these security considerations prepares you to implement AI-assisted tools in a way that aligns with your organization's security posture. The next unit guides you through the actual process of enabling GitHub Copilot and Fabric Copilot with security best practices in mind.
+
+::: zone-end

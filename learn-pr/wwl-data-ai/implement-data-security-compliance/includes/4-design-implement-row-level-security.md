@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ef16b3b6-038b-4475-a2a9-694fe329b738]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 [Row-Level Security (RLS)](/sql/relational-databases/security/row-level-security?azure-portal=true) enables you to control access to rows in a database table based on the characteristics of the user executing a query. Unlike table-level permissions that grant or deny access to entire tables, RLS filters rows dynamically so users see only the data they're authorized to access.
 
 This capability is useful when multiple users or tenants share the same tables but should only see their own data. Sales representatives see their own customer records, managers see their team's data, and regional directors see all data for their region. The filtering happens automatically without requiring application code changes.
@@ -6,7 +17,7 @@ This capability is useful when multiple users or tenants share the same tables b
 
 Row-Level Security uses two components that work together: security predicates and security policies.
 
-:::image type="content" source="../media/row-level-security.png" alt-text="Diagram showing Row-Level Security in a multitenant database where three users query the same Customers table but each sees only their tenant's rows, filtered by a Security Policy component.":::
+:::image type="content" source="../media/row-level-security.png" alt-text="Diagram showing Row-Level Security in a multitenant database: three users query the same Customers table, filtered by a Security Policy component.":::
 
 A **security predicate** is an inline table-valued function that returns 1 (true) or 0 (false) for each row. It receives the current user context and row values, then decides whether that user should see the row. Think of it as your business logic for data access, packaged as a function.
 
@@ -154,3 +165,5 @@ INNER JOIN sys.objects o ON pred.target_object_id = o.object_id;
 > When troubleshooting RLS issues, temporarily disable the security policy and compare results. This helps determine whether unexpected results come from the RLS predicates or other query logic.
 
 Row-Level Security works transparently with views, stored procedures, and other database objects that query the protected tables. Users accessing data through any path receive consistently filtered results based on their security context.
+
+::: zone-end

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.inclusive-surface-hardware.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Reduce workplace barriers with inclusive Surface hardware" module.
+  ms.date: 08/26/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

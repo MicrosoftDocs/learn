@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-cicd-sql-database-projects.create-build-validate-sql-database-projects
-title: Create, build, and validate SQL Database Projects
+title: Create, build, and validate SQL database projects
 metadata:
-  title: Create, build, and validate SQL Database Projects
+  zone_pivot_groups: video-or-text
+  title: Create, Build, and Validate SQL Database Projects
   description: Learn to create, build, and validate SQL Database Projects using SDK-style projects, .dacpac artifacts, and SqlPackage deployment.
   author: calopez
   ms.author: calopez
-  ms.date: 07/14/2025
+  ms.date: 7/13/2026
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 10

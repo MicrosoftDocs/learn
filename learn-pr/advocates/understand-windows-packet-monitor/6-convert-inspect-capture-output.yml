@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-windows-packet-monitor.convert-inspect-capture-output
+title: Convert and inspect capture output
+metadata:
+  title: Convert and Inspect Capture Output
+  description: Convert the original Packet Monitor log, inspect packet identity and size fields, and preserve the evidence context.
+  ms.date: 07/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-convert-inspect-capture-output.md)]

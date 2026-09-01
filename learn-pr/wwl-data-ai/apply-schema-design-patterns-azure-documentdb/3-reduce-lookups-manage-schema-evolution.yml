@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-schema-design-patterns-azure-documentdb.reduce-lookups-manage-schema-evolution
+title: Reduce lookups and manage schema evolution
+metadata:
+  title: Reduce Lookups and Manage Schema Evolution
+  description: "Use the extended reference and schema versioning patterns to reduce cross-collection lookups and manage schema evolution in Azure DocumentDB."
+  ms.date: 04/15/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-reduce-lookups-manage-schema-evolution.md)]

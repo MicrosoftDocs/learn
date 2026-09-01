@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.active-directory-backup-recovery.understand-recovery
+metadata:
+  title: Understand Active Directory Recovery
+  description: Select the narrowest supported recovery scope and identify conditions that require escalation or containment.
+  ms.date: 08/12/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Understand Active Directory recovery
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-understand-recovery.md)]

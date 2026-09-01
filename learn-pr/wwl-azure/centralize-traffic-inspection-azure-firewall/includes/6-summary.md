@@ -15,4 +15,4 @@ Now that network traffic is segmented and centrally inspected, the next module a
 - [Azure Firewall rule processing](/azure/firewall/rule-processing)
 - [Azure Firewall Policy overview](/azure/firewall-manager/policy-overview)
 - [Secured Virtual Hub](/azure/firewall-manager/secured-virtual-hub)
-- [Routing intent configuration](/azure/firewall-manager/how-to-configure-routing-intent-portal)
+- [Routing intent configuration](/azure/virtual-wan/how-to-routing-policies)

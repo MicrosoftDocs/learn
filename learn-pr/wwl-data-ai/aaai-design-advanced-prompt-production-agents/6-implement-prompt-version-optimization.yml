@@ -2,11 +2,12 @@
 uid: learn.wwl.design-advanced-prompting-production-agents.implement-prompt-version-optimization
 title: Implement prompt versioning and optimization
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement Prompt Versioning and Optimization
   description: "Implement prompt versioning and optimization."
-  ms.date: 05/26/2026
-  author: chrishowd
-  ms.author: cahowd
+  ms.date: 7/31/2026
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 8
 content: |

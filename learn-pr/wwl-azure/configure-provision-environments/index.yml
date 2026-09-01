@@ -4,8 +4,8 @@ metadata:
   title: Configure and Provision Environments
   description: "Learn environment provisioning, service connection configuration, and automated testing infrastructure setup."
   ms.date: 10/01/2025
-  author: LuizMacedo
-  ms.author: lumac
+  author: petender
+  ms.author: petender
   ms.topic: module
   ms.custom:
     - N/A

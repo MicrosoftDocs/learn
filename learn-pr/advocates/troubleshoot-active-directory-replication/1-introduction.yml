@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.troubleshoot-active-directory-replication.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Recognize the impact of Active Directory Domain Services replication failure and the safety boundaries for diagnosis.
+  ms.date: 07/20/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

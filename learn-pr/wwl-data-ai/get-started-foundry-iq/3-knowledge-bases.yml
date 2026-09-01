@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-foundry-iq.knowledge-bases
+title: Knowledge bases
+metadata:
+  title: Knowledge bases
+  description: "Explore knowledge bases, knowledge sources, and permission-aware access."
+  ms.date: 07/31/2026
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-knowledge-bases.md)]

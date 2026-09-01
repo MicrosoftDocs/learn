@@ -1,0 +1,90 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.manage-ai.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Check your understanding of AI governance, Microsoft Intune, Microsoft Agent 365, and AI management considerations.
+  ms.date: 08/21/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Why should organizations establish governance before broadly deploying AI experiences?"
+    choices:
+    - content: "To limit employee access to productivity tools."
+      isCorrect: false
+      explanation: "Incorrect. The goal of AI governance isn't to restrict productivity. Governance helps organizations manage and scale AI experiences responsibly while still enabling employees to benefit from them."
+    - content: "To ensure AI is used only by IT teams."
+      isCorrect: false
+      explanation: "Incorrect. AI is intended to support employees across the organization. Governance helps define how AI is deployed and managed, not restrict its use to IT personnel."
+    - content: "To provide consistent, manageable, and trusted AI experiences across the organization."
+      isCorrect: true
+      explanation: "Correct. Establishing governance early helps organizations define how AI capabilities are deployed, managed, and used. This approach supports consistency, oversight, and user trust."
+    - content: "To prevent employees from using AI in everyday work."
+      isCorrect: false
+      explanation: "Incorrect. The goal is to help employees use approved AI experiences effectively and responsibly, not prevent adoption."
+
+  - content: "How can governance help organizations manage AI adoption at scale?"
+    choices:
+    - content: "By eliminating AI licensing requirements."
+      isCorrect: false
+      explanation: "Incorrect. Governance doesn't eliminate licensing requirements. Instead, it helps organizations manage and track AI usage, licensing, and associated costs."
+    - content: "By preventing employees from using approved AI tools."
+      isCorrect: false
+      explanation: "Incorrect. Governance helps organizations enable appropriate AI adoption while maintaining oversight and control."
+    - content: "By helping organizations manage AI usage, licensing, and associated costs."
+      isCorrect: true
+      explanation: "Correct. Governance helps organizations understand how AI is being used, manage licensing requirements, and control costs as adoption expands."
+    - content: "By removing the need for oversight and policies."
+      isCorrect: false
+      explanation: "Incorrect. Governance depends on policies, oversight, and management practices to help ensure AI is used responsibly."
+
+  - content: "What is a primary role of Microsoft Intune?"
+    choices:
+    - content: "Creating AI-generated content."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Intune is a management solution rather than a content-creation tool."
+    - content: "Managing AI agents directly."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Agent 365 is used to help govern and manage AI agents."
+    - content: "Managing devices, policies, applications, and AI experiences across Windows devices."
+      isCorrect: true
+      explanation: "Correct. Microsoft Intune helps organizations manage devices, applications, settings, access policies, and AI experiences across managed environments."
+    - content: "Training large language models."
+      isCorrect: false
+      explanation: "Incorrect. Training AI models is not a primary role of Microsoft Intune."
+
+  - content: "How does Microsoft Agent 365 help organizations?"
+    choices:
+    - content: "Replaces device management tools."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Agent 365 complements device management solutions rather than replacing them."
+    - content: "Provides search capabilities within Windows."
+      isCorrect: false
+      explanation: "Incorrect. Search experiences are provided through Windows features rather than Microsoft Agent 365."
+    - content: "Helps onboard, govern, secure, and manage AI agents."
+      isCorrect: true
+      explanation: "Correct. Microsoft Agent 365 helps organizations observe, govern, secure, and manage AI agents throughout their lifecycle."
+    - content: "Manages Windows updates."
+      isCorrect: false
+      explanation: "Incorrect. Windows update management is not a primary function of Microsoft Agent 365."
+
+  - content: "Why is a proactive approach to AI governance important?"
+    choices:
+    - content: "It delays AI adoption until all policies are finalized."
+      isCorrect: false
+      explanation: "Incorrect. A proactive approach supports adoption by establishing appropriate controls before AI experiences are broadly deployed."
+    - content: "It removes the need for organizational policies."
+      isCorrect: false
+      explanation: "Incorrect. A proactive approach relies on governance policies and controls to guide AI adoption."
+    - content: "It helps establish controls and expectations before AI experiences are broadly deployed."
+      isCorrect: true
+      explanation: "Correct. Proactive governance helps organizations define how AI should be deployed, managed, and used before adoption scales across the business."
+    - content: "It prevents employees from using AI tools."
+      isCorrect: false
+      explanation: "Incorrect. The goal is to help employees use approved AI tools responsibly and consistently, not prevent their use."
+      

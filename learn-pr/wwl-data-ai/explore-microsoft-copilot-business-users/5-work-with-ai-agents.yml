@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-microsoft-copilot-business-users.work-with-ai-agents
+title: "Work with AI agents"
+metadata:
+  title: "Work with AI Agents"
+  description: "Discover how AI agents can streamline workflows by coordinating tasks, analyzing data, and supporting decision-making with human oversight."
+  ms.date: 08/17/2026
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-work-with-ai-agents.md)]

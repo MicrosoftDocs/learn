@@ -81,7 +81,7 @@ SELECT SUM(Sales) FROM SalesAmount;
 
 Batch mode can provide performance increase over traditional row processing. While batch mode for rowstore doesn't have the same level of read performance as a columnstore index, analytical queries may see up to a 5x performance improvement.
 
-Another advantage of columnstore indexes for data warehouse workloads is the optimized load path for bulk insert operations of 102,400 rows or more. While 102,400 is the minimum value to load directly into the columnstore, each collection of rows, called a rowgroup, can be up to approximately 1,024,000 rows. Having fewer, but fuller, rowgroups makes your `SELECT` queries more efficient because fewer rowgroups need to be scanned to retrieve the requested records. These loads occur in memory and are directly loaded into the index. For smaller volumes, data is written to a b-tree structure called a delta store and asynchronously loaded into the index.
+Another advantage of columnstore indexes for data warehouse workloads is the optimized load path for bulk insert operations of 102,400 rows or more. While 102,400 is the minimum value to load directly into the columnstore, each collection of rows, called a rowgroup, can be up to 1,048,576 rows. Having fewer, but fuller, rowgroups makes your `SELECT` queries more efficient because fewer rowgroups need to be scanned to retrieve the requested records. These loads occur in memory and are directly loaded into the index. For smaller volumes, data is written to a b-tree structure called a delta store and asynchronously loaded into the index.
 
 :::image type="content" source="../media/module-55-optimize-queries-final-15.png" alt-text="Columnstore Index Load Example":::
 

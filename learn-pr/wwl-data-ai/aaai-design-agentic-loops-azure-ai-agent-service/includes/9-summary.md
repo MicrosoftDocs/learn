@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=36f6e199-15f4-4fa1-ae1e-444ed9f230a7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Production agent systems require architectural patterns that go beyond basic request-response loops. Stateful agentic loops manage complex run lifecycles, implement multi-pass reasoning through reflection cycles, architect persistent session state, and enable workflow branching through fork-based patterns. As Microsoft Foundry introduces the Agents v2 Responses API, understanding both generations—and the migration path between them—is essential for building durable production systems.
 
 You explored how the run status taxonomy determines agent behavior in Agents v1—handling `requires_action` for tool submission, managing `failed` states with error-specific recovery strategies, and implementing loop termination conditions that keep costs predictable. You then learned how the Foundry Responses API simplifies this with a synchronous `responses.create()` model that returns output items directly, eliminating the polling loop entirely.
@@ -23,3 +34,5 @@ The patterns you implemented support Contoso Capital's production multi-agent pl
 ## Learn more
 
 - [Microsoft Foundry Agent Service documentation](https://learn.microsoft.com/azure/foundry/agents/overview)
+
+::: zone-end

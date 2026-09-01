@@ -4,8 +4,8 @@ metadata:
   title: Consolidate Duplicate Logic using GitHub Copilot Agent
   description: "This module teaches you how to identify and consolidate duplicate logic in your codebase using GitHub Copilot Agent. You learn best practices for refactoring duplicate code and improving code quality."
   ms.date: 10/14/2025
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: github-copilot
 title: Consolidate duplicate logic using GitHub Copilot Agent

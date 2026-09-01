@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.facilitator-in-microsoft-teams.meeting-collaboration
+title: Explain how Facilitator improves meeting collaboration
+metadata:
+  title: Explain How Facilitator Improves Meeting Collaboration
+  description: This content is part of the "Improve meeting collaboration with Facilitator in Microsoft Teams" module.
+  ms.date: 06/23/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-meeting-collaboration.md)]

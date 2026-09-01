@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.dpu.facilitator-in-microsoft-teams
+title: Improve meeting collaboration with Facilitator in Microsoft Teams
+metadata:
+  title: Improve Meeting Collaboration With Facilitator In Microsoft Teams
+  description: Learn how Facilitator in Microsoft Teams helps improve meeting collaboration by generating collaborative notes, capturing decisions, and documenting action items. Explore how to use Facilitator before, during, and after meetings to help teams stay aligned and organized.
+  ms.date: 06/23/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module-standard-concept-based
+  ms.service: microsoft-365-business
+summary: >
+  Learn how Facilitator in Microsoft Teams helps improve meeting collaboration by generating collaborative notes, capturing decisions, and documenting action items. Explore how to use Facilitator before, during, and after meetings to help teams stay aligned and organized.
+abstract: |2+
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/facilitator-in-microsoft-teams.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - m365-business
+units:
+  - learn.dpu.facilitator-in-microsoft-teams.introduction
+  - learn.dpu.facilitator-in-microsoft-teams.facilitator-overview
+  - learn.dpu.facilitator-in-microsoft-teams.meeting-collaboration
+  - learn.dpu.facilitator-in-microsoft-teams.use-facilitator
+  - learn.dpu.facilitator-in-microsoft-teams.review-outcomes
+  - learn.dpu.facilitator-in-microsoft-teams.knowledge-check
+  - learn.dpu.facilitator-in-microsoft-teams.summary
+badge:
+  uid: learn.dpu.facilitator-in-microsoft-teams.badge

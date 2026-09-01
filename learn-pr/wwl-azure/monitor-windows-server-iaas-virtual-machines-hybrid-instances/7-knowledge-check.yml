@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 01/01/2025
+  ms.date: 08/16/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
@@ -17,25 +17,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Maria at Contoso has been tasked with enabling Azure Monitor on an on-premises VM workload. What information does Maria need to complete the process of installing the Log Analytics agent?"
+  - content: "Maria needs to monitor a Windows Server hosted in Contoso's datacenter by using Azure Monitor Agent. What should she do first?"
     choices:
-    - content: "Maria needs ONLY the Workspace ID."
-      isCorrect: false
-      explanation: "Incorrect. Maria needs both the Workspace ID and the Primary key."
-    - content: "Maria needs ONLY the Primary key."
-      isCorrect: false
-      explanation: "Incorrect. Maria needs both the Workspace ID and the Primary key."
-    - content: "Maria needs BOTH the Workspace ID and the Primary key."
+    - content: "Connect the server to Azure Arc-enabled servers."
       isCorrect: true
-      explanation: "Correct. Maria needs both of these to configure the agent."
-  - content: "Maria decides to enable monitoring on a VM in Azure that's running Windows Server. She opens the Azure portal, navigates to the required VM, and selects the **Insights** page, but she can't enable monitoring. Which of the following options is the most likely reason?"
+      explanation: "Correct. A machine outside Azure must be Arc-enabled before Azure Monitor Agent can be installed as an extension."
+    - content: "Copy the Log Analytics workspace ID and primary key."
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitor Agent on an Arc-enabled server uses managed identity instead of workspace ID and key authentication."
+    - content: "Import the Service Map management pack into Operations Manager."
+      isCorrect: false
+      explanation: "Incorrect. Service Map and VM insights Map aren't the current onboarding path and are being retired."
+  - content: "Which configuration tells Azure Monitor Agent what guest operating system data to collect and where to send it?"
     choices:
-    - content: "Maria must install the Log Analytics agent first."
-      isCorrect: false
-      explanation: "Incorrect. Maria doesn't need to install this agent."
-    - content: "Maria must install the Dependency agent."
+    - content: "A data collection rule"
       isCorrect: true
-      explanation: "Correct. Without this agent, you can't enable monitoring."
-    - content: "Maria must shut down the VM first."
+      explanation: "Correct. A data collection rule defines data sources, processing, and destinations for Azure Monitor Agent."
+    - content: "An Operations Manager management pack"
       isCorrect: false
-      explanation: "Incorrect. The VM must be running."
+      explanation: "Incorrect. Management packs configure Operations Manager, not Azure Monitor Agent."
+    - content: "A workspace shared key"
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitor Agent doesn't use a shared key to define data collection."
+  - content: "Contoso must continue using Operations Manager for a critical management pack while adopting Azure Monitor. Which approach supports both requirements?"
+    choices:
+    - content: "Run Azure Monitor Agent alongside the Operations Manager agent, and configure Azure Monitor Agent with data collection rules."
+      isCorrect: true
+      explanation: "Correct. The agents can coexist while each platform uses its own configuration model."
+    - content: "Use the connected Operations Manager management group alone to enable VM insights and data collection rules."
+      isCorrect: false
+      explanation: "Incorrect. A connected management group uses the legacy agent and doesn't support data collection rules or VM insights without direct onboarding."
+    - content: "Install the Dependency Agent and import the Service Map management pack for every new server."
+      isCorrect: false
+      explanation: "Incorrect. Dependency Agent and VM insights Map are deprecated and shouldn't be used for new deployments."

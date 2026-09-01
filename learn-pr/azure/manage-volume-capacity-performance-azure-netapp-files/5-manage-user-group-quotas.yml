@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-volume-capacity-performance.manage-user-group-quotas
+title: Manage default and individual user and group quotas for a volume
+metadata:
+  title: Manage default and individual user and group quotas for a volume
+  description: Learn quota behavior, considerations, and management actions for Azure NetApp Files volumes.
+  ms.date: 06/10/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-manage-user-group-quotas.md)]

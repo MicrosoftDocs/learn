@@ -2,11 +2,12 @@
 uid: learn.wwl.implement-cicd-multi-agent-systems-github-actions.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Introduction."
-  ms.date: 06/01/2026
-  author: chrishowd
-  ms.author: cahowd
+  ms.date: 8/3/2026
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 3

@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.github.github-copilot-across-environments
 metadata:
-  title: "GitHub Copilot Across Environments: IDE, Chat, GitHub.com, and Command Line Techniques"
-  description: "GitHub Copilot Across Environments: IDE, Chat, GitHub.com, and Command Line Techniques explore the versatile integration of GitHub's AI-powered coding assistance across your entire development workflow. It covers effective use of Copilot's auto-suggestions and multiple panes in IDEs, using natural language interactions in Copilot Chat, and streamlining command-line workflows. The guide delves into optimizing prompts, understanding context-aware code generation, and customizing Copilot's behavior to accelerate code changes and automate routine development tasks across different coding environments."
+  title: "GitHub Copilot Across Environments: IDE, Chat, GitHub.com, Command Line Techniques, and the GitHub Copilot App"
+  description: "GitHub Copilot Across Environments: IDE, Chat, GitHub.com, Command Line Techniques, and the GitHub Copilot App explore the versatile integration of GitHub's AI-powered coding assistance across your entire development workflow. It covers effective use of Copilot's auto-suggestions and multiple panes in IDEs, using natural language interactions in Copilot Chat, and streamlining command-line workflows. The guide delves into optimizing prompts, understanding context-aware code generation, and customizing Copilot's behavior to accelerate code changes and automate routine development tasks across different coding environments."
   ms.date: 10/08/2024
   ms.update-cycle: 180-days
   author: a-a-ron
@@ -10,7 +10,7 @@ metadata:
   ms.topic: module
   ms.collection: github-ai-copilot
   ms.service: github-copilot
-title: "GitHub Copilot Across Environments: IDE, Chat, GitHub.com, and Command Line Techniques"
+title: "GitHub Copilot Across Environments: IDE, Chat, GitHub.com, Command Line Techniques, and the GitHub Copilot App"
 summary: Explore the multifaceted capabilities of GitHub Copilot across various development environments. Learn to harness AI-assisted coding in your IDE, engage in natural language conversations for complex tasks, enhance your command-line productivity, and accelerate your development workflow from code creation to pull request completion.
 abstract: |
   At the end of this module, you are able to: 
@@ -20,6 +20,7 @@ abstract: |
   -	Understand how to improve the relevance of GitHub Copilot Chat's suggestions by using scope referencing, slash commands, and agents to quickly complete routine development tasks.
   -	Understand how to use GitHub Copilot on GitHub.com for repository exploration, pull request assistance, issue management, and collaborative code review workflows.
   -	Understand how to interact with GitHub Copilot in CLI to get command explanations, suggestions, and execute commands to automate terminal workflows.
+    -	Understand how to interact GitHub Copilot App and it's usecases.
 prerequisites: |
   - Basic coding knowledge.
   -	GitHub Copilot Access: To use it, you can install the GitHub Copilot extension available to you in the following Integrated Development Environments (IDEs):
@@ -45,6 +46,7 @@ units:
 - learn.github.github-copilot-across-environments.git-hub-copilot-chat
 - learn.github.github-copilot-across-environments.git-hub-copilot-github-web
 - learn.github.github-copilot-across-environments.git-hub-copilot-for-the-command-line
+- learn.github.github-copilot-across-environments.github-copilot-app
 - learn.github.github-copilot-across-environments.knowledge-check
 - learn.github.github-copilot-across-environments.summary
 badge:

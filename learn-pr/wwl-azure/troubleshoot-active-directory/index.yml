@@ -4,18 +4,19 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Troubleshoot Active Directory
-  description: "Learn how to troubleshoot AD DS service failures or degraded performance. Learn how to recover deleted security objects and the AD DS database, and how to troubleshoot hybrid authentication issues."
-  ms.date: 03/11/2026
+  description: "Learn how to troubleshoot Active Directory including recovering deleted objects with AD Recycle Bin, managing the AD DS database with NtdsUtil, restoring SYSVOL, troubleshooting replication, and diagnosing hybrid authentication with Microsoft Entra Connect."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.collection: N/A
   ms.custom:
   - N/A
-  ms.service: azure-active-directory
+  ms.service: entra-id
   ai-usage: human-only
 title: Troubleshoot Active Directory
-summary: Learn how to troubleshoot AD DS service failures or degraded performance. Learn how to recover deleted security objects and the AD DS database, and how to troubleshoot hybrid authentication issues.
+summary: |
+  This module covers how to troubleshoot Active Directory Domain Services (AD DS) and hybrid authentication issues. You learn how to recover deleted objects using tombstone reanimation with Ldp.exe or Active Directory Recycle Bin, manage and recover the AD DS database (Ntds.dit) using NtdsUtil, perform authoritative restore of SYSVOL for Group Policy recovery, troubleshoot AD DS replication across domain, configuration, schema, and application partitions, and diagnose hybrid authentication issues with Microsoft Entra Connect including directory synchronization, password hash sync, and pass-through authentication.
 abstract: |
   After completing this module, you'll be able to:
 

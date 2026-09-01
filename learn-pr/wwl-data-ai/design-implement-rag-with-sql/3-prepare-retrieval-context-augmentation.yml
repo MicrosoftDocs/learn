@@ -2,10 +2,11 @@
 uid: learn.wwl.design-implement-rag-with-sql.prepare-retrieval-context-augmentation
 title: Prepare retrieval context for augmentation
 metadata:
-  title: Prepare retrieval context for augmentation
+  zone_pivot_groups: video-or-text
+  title: Prepare Retrieval Context for Augmentation
   description: Learn how to shape SQL query results into JSON context suitable for LLM processing.
-  ms.date: 02/04/2026
-  author: wwlpublish
+  ms.date: 07/17/2026
+  author: calopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-assisted

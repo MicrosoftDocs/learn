@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-domain-name-system.diagnose-directory-service-failures
+title: Diagnose directory service failures
+metadata:
+  title: Diagnose Directory Service Failures
+  description: Apply a layered workflow to isolate Domain Name System causes, consequences, and unrelated faults.
+  ms.date: 08/03/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/7-diagnose-directory-service-failures.md)]

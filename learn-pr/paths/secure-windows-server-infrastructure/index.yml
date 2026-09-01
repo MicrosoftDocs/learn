@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.wwl.secure-windows-server-infrastructure
+metadata:
+  title: Secure Windows Server Infrastructure
+  description: Learn how to secure the Windows Server operating system and Active Directory Domain Services using security features, policies, and hardening techniques.
+  ms.date: 08/31/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: learning-path
+title: Secure Windows Server infrastructure
+summary: |
+  This learning path covers how to secure Windows Server infrastructure and Active Directory Domain Services. You learn how to harden Windows Server using security baselines, LAPS, and Privileged Access Workstations, configure Microsoft Defender for Endpoint and built-in Windows client protections, and manage Group Policy security settings and audit policies. You also secure Active Directory by managing user rights, authentication policies, Protected Users, and service accounts including gMSA and dMSA, and monitor for threats with Microsoft Defender for Identity.
+
+  This learning path helps you prepare for [Exam AZ-802: Administering Windows Server](/credentials/certifications/exams/az-802/).
+prerequisites: |
+  - Experience administering Windows Server operating systems
+  - Familiarity with Active Directory Domain Services (AD DS) concepts
+  - Basic knowledge of PowerShell and Group Policy
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows-server
+subjects:
+- security
+modules:
+# 6.1 Secure Windows Server operating system
+- learn.wwl.hardening-windows-server # Primary - LAPS, PAWs, securing DCs, SCT baselines, SMB encryption
+- learn.wwl.manage-defender-endpoint # Cross-check - Exploit Protection, WDAC/Device Guard, System Guard
+- learn.wwl.manage-defender-windows-client # Cross-check - SmartScreen via Windows Security Center
+- learn.devrel.understand-active-directory-security-policies # GP security settings, account policies, audit policy, OSConfig baselines
+# 6.2 Secure Active Directory Domain Services (AD DS)
+- learn.wwl.manage-security-active-directory # Primary - user rights, delegation, Protected Users, NTLM blocking
+- learn.devrel.understand-windows-server-service-accounts # Service account types, sMSA/gMSA/dMSA selection and configuration
+- learn.wwl.secure-windows-server-user-accounts # Supplementary - authentication policy silos
+- learn.wwl.manage-security-controls-identity-access # Cross-check - Entra Password Protection for AD DS
+- learn.wwl.security-monitoring-and-governance # Cross-check - Defender for Identity (MDI)
+trophy:
+  uid: learn.wwl.secure-windows-server-infrastructure.trophy

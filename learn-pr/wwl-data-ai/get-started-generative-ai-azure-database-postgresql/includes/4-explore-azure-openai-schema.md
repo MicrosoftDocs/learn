@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=41dac7ba-8a07-45fc-9e2d-9c135933dda8]
+
+::: zone-end
+
+::: zone pivot="text"
+
 By incorporating Azure OpenAI into your PostgreSQL database, you can create highly scalable AI-powered apps. This integration allows you to use the familiar SQL language and the flexibility of PostgreSQL to build intelligent solutions within your database layer. Whether natural language processing, recommendation systems, or content generation, Azure OpenAI empowers your applications.
 
 The `azure_openai` schema installed by the `azure_ai` extension allows you to connect to and interact with an Azure OpenAI Service instance. This schema enables seamless integration with the Azure OpenAI service, allowing you to create powerful generative AI applications directly from your PostgreSQL database.
@@ -77,3 +85,5 @@ SET description_vector = azure_openai.create_embeddings('{your-deployment-name}'
 ```
 
 Each embedding is a vector of floating-point numbers, so the distance between two embeddings in the vector space is correlated with the semantic similarity between two inputs in the original format.
+
+::: zone-end

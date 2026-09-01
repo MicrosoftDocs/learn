@@ -5,7 +5,7 @@ The ability to connect SQL Server to external AI services means you can use mode
 
 ## Connect to external AI models using REST APIs
 
-SQL Server 2025 builds on the [`sp_invoke_external_rest_endpoint`](/sql/relational-databases/system-stored-procedures/sp-invoke-external-rest-endpoint-transact-sql?azure-portal=true) system stored procedure (introduced in SQL Server 2022) to enable integration with AI services. This capability allows you to call REST APIs directly from T-SQL for integrating with AI services like [Azure OpenAI](/azure/ai-services/openai/overview?azure-portal=true), [Microsoft Foundry](/azure/ai-studio/what-is-ai-studio?azure-portal=true), and custom AI endpoints without leaving the database context.
+SQL Server 2025 builds on the [`sp_invoke_external_rest_endpoint`](/sql/relational-databases/system-stored-procedures/sp-invoke-external-rest-endpoint-transact-sql?azure-portal=true) system stored procedure (introduced in SQL Server 2022) to enable integration with AI services. This capability allows you to call REST APIs directly from T-SQL for integrating with AI services like [Azure OpenAI](/azure/ai-services/openai/overview?azure-portal=true), [Microsoft Foundry](/azure/foundry/what-is-foundry?azure-portal=true), and custom AI endpoints without leaving the database context.
 
 ### Invoke REST endpoints for AI inference
 
@@ -124,21 +124,11 @@ This approach uses the managed identity assigned to your SQL Server instance for
 
 SQL Server 2025 integrates with the full suite of [Foundry Tools](/azure/ai-services/what-are-ai-services?azure-portal=true), enabling AI scenarios directly from your database.
 
-### Connect to Azure OpenAI Service
+### Connect to Azure OpenAI
 
-[Azure OpenAI](/azure/ai-services/openai/overview?azure-portal=true) provides access to language models like GPT-4, GPT-3.5, and embedding models:
+[Azure OpenAI](/azure/ai-services/openai/overview?azure-portal=true) provides access to language models like GPT-4, GPT-3.5, and embedding models. For chat completion calls, use `sp_invoke_external_rest_endpoint` directly — `CREATE EXTERNAL MODEL` only supports embedding endpoints:
 
 ```sql
--- Create a model for GPT-4
-CREATE EXTERNAL MODEL GPT4Model
-WITH (
-    LOCATION = 'https://myopenai.openai.azure.com/openai/deployments/gpt-4/chat/completions?api-version=2024-02-15-preview',
-    API_FORMAT = 'Azure OpenAI',
-    MODEL_TYPE = EMBEDDINGS,
-    MODEL = 'gpt-4',
-    CREDENTIAL = [MyAzureOpenAICredential]
-);
-
 -- Use GPT-4 for text generation via REST endpoint
 DECLARE @prompt NVARCHAR(MAX) = JSON_OBJECT(
     'messages': JSON_ARRAY(
@@ -158,26 +148,16 @@ EXEC sp_invoke_external_rest_endpoint
 SELECT JSON_VALUE(@response, '$.result.choices[0].message.content') AS ai_response;
 ```
 
-This example creates an external model definition for GPT-4 and demonstrates calling the chat completion API. The response is parsed using JSON functions to extract the AI-generated text, which can then be used in your application logic or stored for later use.
+This example demonstrates calling the Azure OpenAI chat completion API. The response is parsed using JSON functions to extract the AI-generated text, which can then be used in your application logic or stored for later use.
 
 ### Use Microsoft Foundry
 
-[Microsoft Foundry](/azure/ai-studio/what-is-ai-studio?azure-portal=true) provides a comprehensive platform for building, training, and deploying custom AI models that address specific business requirements beyond what general-purpose models can offer. While Azure OpenAI provides access to pretrained models like GPT-4 and text-embedding-ada-002, Microsoft Foundry enables you to create specialized models trained on your proprietary data, industry-specific terminology, and unique use cases.
+[Microsoft Foundry](/azure/foundry/what-is-foundry?azure-portal=true) provides a comprehensive platform for building, training, and deploying custom AI models that address specific business requirements beyond what general-purpose models can offer. While Azure OpenAI provides access to pretrained models like GPT-4 and text-embedding-ada-002, Microsoft Foundry enables you to create specialized models trained on your proprietary data, industry-specific terminology, and unique use cases.
 
 The integration between SQL Server 2025 and Microsoft Foundry allows you to bring domain-specific intelligence directly to your data without data movement or synchronization. For example, you might train a custom classification model to categorize customer support tickets based on your company's specific products and services, or create a sentiment analysis model tuned to your industry's language patterns. Once deployed in Microsoft Foundry, these models become accessible through the same `CREATE EXTERNAL MODEL` syntax you use for Azure OpenAI.
 
 ```sql
--- Connect to a custom classification model in Microsoft Foundry
-CREATE EXTERNAL MODEL CustomClassifier
-WITH (
-    LOCATION = 'https://myaifoundry.cognitiveservices.azure.com/models/classifier/predict?api-version=1.0',
-    API_FORMAT = 'Azure OpenAI',
-    MODEL_TYPE = EMBEDDINGS,
-    MODEL = 'classifier',
-    CREDENTIAL = [AzureAIFoundryCredential]
-);
-
--- Use the custom model for domain-specific predictions
+-- Call a custom classification model deployed in Microsoft Foundry
 DECLARE @input_text NVARCHAR(MAX) = N'Customer reports slow query performance in production database';
 DECLARE @request NVARCHAR(MAX) = JSON_OBJECT('input': @input_text);
 DECLARE @response NVARCHAR(MAX);
@@ -212,11 +192,12 @@ WITH (
     API_FORMAT = 'ONNX Runtime',
     MODEL_TYPE = EMBEDDINGS,
     MODEL = 'sentiment-model',
+    PARAMETERS = '{"valid":"JSON"}',
     LOCAL_RUNTIME_PATH = 'C:\onnx_runtime\'
 );
 ```
 
-This approach suits scenarios where you need low-latency inference, want to avoid external network calls, or have compliance requirements that prevent data from leaving your infrastructure. The `LOCATION` should point to the directory containing the model.onnx and tokenizer.json files, while `LOCAL_RUNTIME_PATH` points to the directory containing the ONNX runtime DLL files.
+This approach suits scenarios where you need low-latency inference, want to avoid external network calls, or have compliance requirements that prevent data from leaving your infrastructure. The `LOCATION` should point to the directory containing the model.onnx and tokenizer.json files, while `LOCAL_RUNTIME_PATH` points to the directory containing the ONNX runtime DLL files. The `PARAMETERS` placeholder is required in SQL Server 2025.
 
 ## Apply security best practices
 

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Active Directory Domain Services dependency on Domain Name System</title>
+  <desc id="desc">A top-to-bottom sequence shows a member querying internal DNS, receiving domain controller targets, sending locator pings, and using directory services.</desc>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0 0L0 6L9 3z" fill="#243A5E"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0 0L0 6L9 3z" fill="#7A3E00"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0 0L0 6L9 3z" fill="#006B5A"/>
+    </marker>
+    <style>
+      .network{fill:#eef5ff;stroke:#506A8A;stroke-width:2;stroke-dasharray:7 5}
+      .group{fill:#f7f9fc;stroke:#506A8A;stroke-width:2}
+      .box{fill:#fff;stroke:#243A5E;stroke-width:2}
+      .step{fill:#243A5E}
+      .stepText{font:700 15px Segoe UI,Arial,sans-serif;fill:#fff;text-anchor:middle}
+      .heading{font:700 19px Segoe UI,Arial,sans-serif;fill:#172B4D;text-anchor:middle}
+      .text{font:15px Segoe UI,Arial,sans-serif;fill:#172B4D;text-anchor:middle}
+      .small{font:14px Segoe UI,Arial,sans-serif;fill:#172B4D;text-anchor:middle}
+      .label{fill:#fff;stroke:#b8c4d6;stroke-width:1}
+      .flow{stroke:#243A5E;stroke-width:2.5;fill:none;marker-end:url(#arrow-blue)}
+      .query{stroke:#7A3E00;stroke-width:2.5;fill:none;marker-end:url(#arrow-orange)}
+      .reply{stroke:#006B5A;stroke-width:2.5;fill:none;marker-end:url(#arrow-green)}
+      .replication{stroke:#243A5E;stroke-width:2.5;fill:none;marker-start:url(#arrow-blue);marker-end:url(#arrow-blue)}
+    </style>
+  </defs>
+
+  <rect x="25" y="25" width="1150" height="705" rx="14" class="network"/>
+  <text x="600" y="60" class="heading">Contoso Research internal network</text>
+
+  <!-- Step 1 -->
+  <rect x="450" y="85" width="300" height="105" rx="12" class="box"/>
+  <circle cx="482" cy="117" r="19" class="step"/>
+  <text x="482" y="122" class="stepText">1</text>
+  <text x="600" y="122" class="heading">Affected member</text>
+  <text x="600" y="153" class="text">BNE-APP7, Brisbane site</text>
+  <text x="600" y="177" class="text">10.20.15.27</text>
+
+  <!-- Step 2 -->
+  <rect x="420" y="255" width="360" height="120" rx="12" class="box"/>
+  <circle cx="452" cy="287" r="19" class="step"/>
+  <text x="452" y="292" class="stepText">2</text>
+  <text x="600" y="292" class="heading">Internal DNS service</text>
+  <text x="600" y="325" class="text">corp.contoso.com</text>
+  <text x="600" y="350" class="text">_msdcs.contoso.com</text>
+
+  <!-- Step 3 -->
+  <rect x="300" y="465" width="600" height="205" rx="12" class="group"/>
+  <circle cx="332" cy="497" r="19" class="step"/>
+  <text x="332" y="502" class="stepText">3</text>
+  <text x="600" y="502" class="heading">Candidate domain controllers</text>
+
+  <rect x="345" y="535" width="225" height="100" rx="10" class="box"/>
+  <text x="457" y="571" class="heading">BNE-DC1</text>
+  <text x="457" y="600" class="text">Directory services</text>
+  <text x="457" y="624" class="text">Brisbane site</text>
+
+  <rect x="630" y="535" width="225" height="100" rx="10" class="box"/>
+  <text x="742" y="571" class="heading">PER-DC1</text>
+  <text x="742" y="600" class="text">Directory services</text>
+  <text x="742" y="624" class="text">Perth site</text>
+
+  <!-- Ordered DNS flow in the center gutter -->
+  <path d="M600 190V255" class="query"/>
+  <rect x="455" y="207" width="130" height="28" rx="5" class="label"/>
+  <text x="520" y="226" class="small">Service query</text>
+
+  <path d="M600 375V465" class="reply"/>
+  <rect x="615" y="401" width="185" height="28" rx="5" class="label"/>
+  <text x="707" y="420" class="small">Targets and addresses</text>
+
+  <!-- Locator ping uses the clear left gutter -->
+  <path d="M450 137H125V585H345" class="flow"/>
+  <rect x="52" y="321" width="146" height="52" rx="5" class="label"/>
+  <text x="125" y="342" class="small">
+    <tspan x="125">Locator ping to</tspan>
+    <tspan x="125" dy="18">a candidate</tspan>
+  </text>
+
+  <!-- Replication lookup and traffic use the clear right gutter -->
+  <path d="M855 585H1060V315H780" class="query"/>
+  <rect x="982" y="395" width="156" height="70" rx="5" class="label"/>
+  <text x="1060" y="417" class="small">
+    <tspan x="1060">GUID CNAME and</tspan>
+    <tspan x="1060" dy="18">host lookup before</tspan>
+    <tspan x="1060" dy="18">replication</tspan>
+  </text>
+
+  <path d="M570 650H630" class="replication"/>
+  <rect x="533" y="682" width="134" height="28" rx="5" class="label"/>
+  <text x="600" y="701" class="small">AD replication</text>
+</svg>

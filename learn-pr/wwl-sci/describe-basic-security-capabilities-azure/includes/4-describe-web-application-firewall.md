@@ -23,6 +23,7 @@ By using a centralized WAF, you can patch newly discovered vulnerabilities in on
 Azure Web Application Firewall can be deployed with several Microsoft services, giving you flexibility to protect web applications wherever they're hosted:
 
 - **Azure Application Gateway**: Provides regional WAF protection for web applications hosted behind the gateway. Application Gateway WAF includes deep HTTP packet inspection and supports complex routing decisions—making it well suited for applications hosted in a single Azure region.
+- **Azure Application Gateway for Containers**: Extends WAF protection to containerized workloads managed through Application Gateway for Containers, bringing application-layer security to modern container-based architectures.
 - **Azure Front Door**: Microsoft's global content delivery network (CDN) and application delivery platform. WAF on Azure Front Door provides global protection, blocking attacks closer to the source before traffic reaches your infrastructure. This is useful for globally distributed applications that need consistent protection across all regions.
 - **Azure Content Delivery Network**: WAF on Azure CDN extends protection to static and dynamic content delivered through the CDN.
 

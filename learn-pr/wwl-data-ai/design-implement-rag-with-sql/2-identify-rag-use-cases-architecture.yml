@@ -2,10 +2,11 @@
 uid: learn.wwl.design-implement-rag-with-sql.identify-rag-use-cases-architecture
 title: Identify RAG use cases and architecture
 metadata:
-  title: Identify RAG use cases and architecture
+  zone_pivot_groups: video-or-text
+  title: Identify RAG Use Cases and Architecture
   description: Learn when to use RAG, understand its architecture, and identify scenarios where database grounding improves LLM responses.
-  ms.date: 02/04/2026
-  author: wwlpublish
+  ms.date: 07/17/2026
+  author: calopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-assisted

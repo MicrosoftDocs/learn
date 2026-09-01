@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.repeat-actions-loops-python.controlling-loop-execution-with-break-continue
+title: Controlling loop execution with break and continue
+metadata:
+  title: Controlling Loop Execution with break and continue
+  description: "Learn how to exit a loop early with break and skip iterations with continue."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-controlling-loop-execution-with-break-continue.md)]

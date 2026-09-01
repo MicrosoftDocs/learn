@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-database.investigate-directory-data-stores
+title: Investigate the directory database and system volume
+metadata:
+  title: Investigate the Directory Database and System Volume
+  description: Use supported read-only evidence to classify an inconsistency across directory replication, file replication, Group Policy, or client access.
+  ms.date: 07/24/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-investigate-directory-data-stores.md)]

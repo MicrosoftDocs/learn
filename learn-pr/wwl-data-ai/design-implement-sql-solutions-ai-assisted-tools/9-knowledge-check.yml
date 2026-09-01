@@ -3,11 +3,11 @@ uid: learn.wwl.design-implement-sql-solutions-ai-assisted-tools.knowledge-check
 title: Module assessment
 metadata:
   ai_generated_module_assessment: true
-  title: Module assessment
+  title: Module Assessment
   description: Knowledge check for designing and implementing SQL solutions using AI-assisted tools
-  ms.date: 02/02/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/03/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
   module_assessment: false
 azureSandbox: false

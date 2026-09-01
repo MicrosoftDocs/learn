@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-copilot-administer-azure-sql.automate-dba-work-github-copilot
+title: Automate DBA work with GitHub Copilot
+metadata:
+  title: Automate DBA Work with GitHub Copilot
+  description: Generate Bicep templates, PowerShell scripts, Azure CLI commands, and SQL Agent job scripts for DBA automation tasks using GitHub Copilot.
+  ms.date: 06/12/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-automate-dba-work-github-copilot.md)]

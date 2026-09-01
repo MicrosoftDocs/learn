@@ -18,11 +18,12 @@ Each item that supports sensitivity labels can only have one label applied to it
 
 Sensitivity labels can be configured to:
 
-- **Encrypt emails and documents.** Encryption prevents unauthorized people from accessing labeled content. You can specify which users or groups have permissions to perform which actions and for how long.
-- **Mark the content** when Office apps are used. Content markings include adding watermarks, headers, or footers. Headers or footers can be added to emails or documents. Watermarks can be applied to documents but not to email.
+- **Encrypt emails, meeting invites, and documents.** Encryption prevents unauthorized people from accessing labeled content. You can specify which users or groups have permissions to perform which actions and for how long.
+- **Mark the content** when Office apps are used. Content markings include adding watermarks, headers, or footers. Headers or footers can be added to emails, meeting invites, or documents. Watermarks can be applied to documents and Loop components and pages, but not to email or meeting invites.
 - **Apply the label automatically** in Office apps or recommend a label. Admins choose the types of sensitive information to trigger the label. The label can be applied automatically or configured to prompt users to apply the recommended label.
-- **Protect content in containers** such as SharePoint sites, Teams sites, and Microsoft 365 groups. This configuration doesn't result in documents being automatically labeled. Instead, the label settings protect content by controlling access to the container where documents are stored.
+- **Protect content in containers** such as Teams, Microsoft 365 Groups, SharePoint sites, Viva Engage communities, and Loop workspaces. This configuration doesn't result in documents being automatically labeled. Instead, the label settings protect content by controlling access to the container where documents are stored.
 - **Extend sensitivity labels to third-party apps and services.** The Microsoft Information Protection SDK enables third-party apps to read sensitivity labels and apply protection settings.
+- **Set the default sharing link type** for SharePoint sites and individual documents. This setting helps prevent oversharing by controlling the default scope and permissions when users share documents from SharePoint and OneDrive.
 - **Classify content without using any protection settings.** A classification can be assigned to content as a tag that persists and roams with the content as it's used and shared. The classification generates usage reports and activity data for sensitive content.
 
 ### Label scopes
@@ -32,7 +33,7 @@ When you create a sensitivity label, you configure its scope, which determines w
 - **Files & other data assets**: Covers files in Word, Excel, PowerPoint, and PDF, as well as items in Microsoft Fabric and Power BI. This scope is selected by default for all new labels.
 - **Emails**: Covers Outlook emails. Many labeling features require both Files and Emails to be selected, since emails frequently contain file attachments that share the same sensitivity.
 - **Meetings**: Covers calendar events, Teams meeting options, and Teams chat. Requires the Files and Emails scopes to also be selected.
-- **Groups & sites**: Covers SharePoint sites, Teams sites, Microsoft 365 groups, and Viva Engage communities. Labels applied at this scope protect the container by controlling access settings, but don't automatically label the individual items inside.
+- **Groups & sites**: Covers SharePoint sites, Teams sites, Microsoft 365 groups, Viva Engage communities, and Loop workspaces. Labels applied at this scope protect the container by controlling access settings, but don't automatically label the individual items inside.
 
 This scope configuration means you can have sensitivity labels designed specifically for documents and emails, and separate labels for protecting team collaboration spaces. Users only see the labels that are published to them and that apply to the type of content they're working with.
 

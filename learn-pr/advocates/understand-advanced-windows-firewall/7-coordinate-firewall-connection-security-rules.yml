@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-advanced-windows-firewall.coordinate-firewall-connection-security-rules
+title: Coordinate firewall connection security rules
+metadata:
+  title: Coordinate Firewall Connection Security Rules
+  description: Coordinate traffic authorization with compatible peer security negotiation.
+  ms.date: 08/05/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-coordinate-firewall-connection-security-rules.md)]

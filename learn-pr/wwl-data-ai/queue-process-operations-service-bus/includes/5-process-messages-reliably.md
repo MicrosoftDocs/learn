@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=41da185d-ec0d-49e0-9ea2-d9d15bfd6050]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Reliable message processing ensures that your AI pipeline handles every inference request exactly as intended, even when processors crash, models return errors, or payloads contain unexpected data. Azure Service Bus provides receive modes, message settlement operations, dead-letter queues, and lock management features that give developers fine-grained control over delivery guarantees. This unit covers how to receive and process messages with the appropriate reliability level for AI workloads.
 
 ## Choose a receive mode
@@ -177,6 +188,8 @@ with ServiceBusClient(
 ```
 
 For long operations that consistently exceed even the extended renewal period, consider a two-phase processing approach. In the first phase, the processor receives the message, records the request in a tracking store, and completes the message quickly. In the second phase, a separate process picks up work from the tracking store and performs the long-running inference. This approach avoids lock management entirely for the long-running portion and uses the queue solely for reliable initial delivery.
+
+::: zone-end
 
 ## Additional resources
 

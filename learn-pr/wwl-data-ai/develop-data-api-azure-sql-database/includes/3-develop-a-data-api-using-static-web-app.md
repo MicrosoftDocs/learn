@@ -9,7 +9,8 @@ Azure Static Web Apps is a service in Azure designed to make it simpler to code 
 
 :::image type="content" source="../media/3-azure-static-web-apps-overview.png" alt-text="Diagram showing how Azure Static Web Apps eases the deployment of static web apps from repositories." lightbox="../media/3-azure-static-web-apps-overview.png":::
 
-Because the Data API Builder (DAB) is designed to work seamlessly with Azure Static Web Apps, it's simple to host your database APIs in this service. All you have to do is use the configuration file to tell DAB about your Azure Static Web Apps instance and deploy it to a repository. Azure Static Web Apps will host your API and users can start calling its methods.
+> [!NOTE]
+> The **Database Connections** feature that previously let Azure Static Web Apps host Data API builder (DAB) directly was retired on **November 30, 2025**. The current pattern is to host DAB as a standalone service in Azure Container Apps or Azure App Service (see the next unit), and have your Static Web App front end call that endpoint over HTTPS. For details, see [Database Connections retirement](/azure/static-web-apps/database-overview?azure-portal=true).
 
 ## Create a static web app
 
@@ -21,41 +22,45 @@ Next, choose your **Subscription** and either select an existing **Resource Grou
 
 Under **Deployment details**, specify the type of repository that contains your app. You need to sign into GitHub or select the repository and branch in Azure DevOps. Finally, review your settings by selecting **Review + create**, and then select **Create** to complete the process.
 
-## Create a Data API builder configuration file
+## Deploy the data API separately
 
-To deploy your database API to Azure Static Web Apps, you must create the DAB configuration file correctly. You can complete this task with two command line tools:
+Because DAB is no longer hosted inside Azure Static Web Apps, deploy it as its own service. The two supported options are:
 
-- `swa`: Use this CLI to initialize a new DAB configuration file.
-- `dab`: Use this CLI to add one or more databases to the file.
+- **Azure Container Apps** — recommended for most workloads. Uses the official `mcr.microsoft.com/azure-databases/data-api-builder` container image and integrates with managed identity, Key Vault, and revisions.
+- **Azure App Service** — useful if you already run other web workloads on App Service and want to standardize on it.
 
-Before you begin, either clone the GitHub repository to your local machine, or use GitHub Codespaces to open a command prompt in GitHub itself.
+The next unit walks through the Azure Container Apps deployment step by step. When the deployment finishes, note the public FQDN of your DAB endpoint — for example, `https://<container-app-name>.<region>.azurecontainerapps.io`. You reference this URL from the Static Web App.
 
-1. To initialize the DAB configuration file in the root folder of the repository, run the following command.
+## Configure the front end to call the DAB endpoint
 
-    ```dotnetcli
-    swa db init --database-type "<database-type>"
+Once your DAB service is deployed, you can call its REST or GraphQL endpoints from JavaScript running in the Static Web App.
+
+1. **Enable CORS on DAB.** In the DAB configuration file, add the Static Web App origin to `runtime.host.cors.origins` so the browser allows the front end to call the API.
+
+    ```json
+    "runtime": {
+      "host": {
+        "cors": {
+          "origins": [ "https://<your-static-web-app>.azurestaticapps.net" ],
+          "allow-credentials": false
+        }
+      }
+    }
     ```
 
-    Replace `<database type>` with your database server. For example, if your database is hosted in Azure SQL Database, use `mssql`. If it's in MySQL, use `mysql`.
-1. To add a database to the configuration file, run the following command.
+1. **Reference the DAB endpoint from your front-end code.** Store the base URL in a config file or build-time variable, then call the REST or GraphQL endpoint with `fetch`. For example, to read the `Address` entity:
 
-    ```dotnetcli
-    dab add "<database-name>" --source "<schema>.<table>" --permissions "anonymous:*" -config "swa-db-connections/staticwebapp.database.config.json"
+    ```javascript
+    const DAB_ENDPOINT = "https://<container-app-name>.<region>.azurecontainerapps.io";
+    const response = await fetch(`${DAB_ENDPOINT}/api/Address`);
+    const data = await response.json();
     ```
-
-    Replace `<database-name>` with a descriptive name and `<schema>.<table>` with the schema and table name in your database.
-
-These steps create a configuration file in the repository named **swa-db-connections/staticwebapp.database.config.json**. Review this file before you commit your changes to the repository.
-
-## Configure the connection to the database
-
-To configure the connection to the database in your static web app, start by opening the static web app in the [Azure portal](https://portal.azure.com?azure-portal=true). Navigate to the **Settings** section and select **Database connection**. Under **Production**, choose to link an existing database. Select the appropriate database type, resource group, and database name. Finally, choose your preferred authentication type and link the database.
 
 > [!NOTE]
-> We recommend you use a system-assigned managed identity or user-assigned managed identity to authenticate because the connection string doesn't include an authorization key.
+> To avoid exposing your DAB endpoint to anonymous callers on the public internet, restrict inbound traffic to the Static Web App's outbound IPs, or protect the endpoint with Microsoft Entra ID authentication and validate the caller's token in DAB.
 
 ## Validate access to the API
 
-To validate access to the API, start by opening the static web app you created in the [Azure portal](https://portal.azure.com?azure-portal=true). Navigate to the **Essentials** section and select the **URL** to browse the website. In the browser's address bar, add `/data-api` to the URL and press *Enter*. 
+To validate that the two services work together, browse the Static Web App URL from the [Azure portal](https://portal.azure.com?azure-portal=true) **Essentials** section. Confirm that the page loads and that the browser network log shows successful requests to the DAB endpoint (HTTP 200 responses containing your entity JSON).
 
-You should see a page indicating that the DAB container is healthy. To browse entities from your database, append `/data-api/rest/` to the URL. This sends an HTTP GET request and display the JSON response.
+You can also test the DAB endpoint directly by opening `https://<container-app-name>.<region>.azurecontainerapps.io/api/Address` in a browser or with `curl` — you should receive a JSON response listing rows from the `Address` table.

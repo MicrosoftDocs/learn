@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-schema-design-patterns-azure-documentdb.organize-optimize-documents
+title: Organize and optimize documents
+metadata:
+  title: Organize and Optimize Documents
+  description: "Apply the inheritance, computed, and approximation patterns to optimize document structure and read/write performance in Azure DocumentDB."
+  ms.date: 04/15/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-organize-optimize-documents.md)]

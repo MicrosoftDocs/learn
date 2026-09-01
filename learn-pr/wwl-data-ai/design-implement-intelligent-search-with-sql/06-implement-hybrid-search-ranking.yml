@@ -2,11 +2,12 @@
 uid: learn.wwl.design-implement-intelligent-search-with-sql.implement-hybrid-search-ranking
 title: Implement hybrid search and ranking
 metadata:
-  title: Implement hybrid search and ranking
+  zone_pivot_groups: video-or-text
+  title: Implement Hybrid Search and Ranking
   description: Learn how to implement hybrid search combining full-text and vector search, and use Reciprocal Rank Fusion for result ranking.
   author: calopez
   ms.author: calopez
-  ms.date: 02/03/2026
+  ms.date: 07/17/2026
   ms.topic: unit
 durationInMinutes: 10
 content: |

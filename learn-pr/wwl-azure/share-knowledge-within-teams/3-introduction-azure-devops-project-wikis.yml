@@ -5,8 +5,8 @@ metadata:
   title: Introduction to Azure DevOps Project Wikis
   description: "Learn to create and manage Azure DevOps project wikis for team documentation. Explore wiki permissions, Markdown formatting, GitHub Flavored Markdown (GFM) syntax, Mermaid diagram creation, file attachments, and video embedding for comprehensive technical documentation and knowledge sharing."
   ms.date: 10/21/2025
-  author: LuizMacedo
-  ms.author: lumac
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 4
 content: |

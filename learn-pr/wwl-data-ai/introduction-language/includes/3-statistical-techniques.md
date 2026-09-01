@@ -101,7 +101,7 @@ From these results, it's clearer that sample A is about declarative agent creati
 
 *Bag-of-words* is the name given to a feature extraction technique that represents text tokens as a vector of word frequencies or occurrences, ignoring grammar and word order. This representation becomes the input for machine learning algorithms like Naive Bayes, a probabilistic classifier that applies Bayes’ theorem to predict the probable class of a document based on word frequency.
 
-For example, you might use this technique to train a machine learning model that performs email spam filtering. The words `"miracle cure"`, `"lose weight fast"`, and `"anti-aging`` may appear more frequently in spam emails about dubious health products than your regular emails, and a trained model might flag messages containing these words as potential spam.
+For example, you might use this technique to train a machine learning model that performs email spam filtering. The words `"miracle cure"`, `"lose weight fast"`, and `"anti-aging"` may appear more frequently in spam emails about dubious health products than your regular emails, and a trained model might flag messages containing these words as potential spam.
 
 You can implement *sentiment analysis* by using the same method to classify text by emotional tone. The bag-of-words provides the features, and model uses those features to estimate probabilities and assign sentiment labels like "positive" or "negative".
 

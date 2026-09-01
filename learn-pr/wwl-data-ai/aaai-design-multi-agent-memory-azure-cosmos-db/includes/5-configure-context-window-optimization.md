@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=808e98bd-2a23-48bb-87a4-a7b64594bb83]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB's vector similarity queries return memories ranked by relevance, but deciding how many to inject requires careful token budget management across competing content types. The context window is your most constrained resource—GPT-4o's 128K token limit must simultaneously accommodate system prompts, retrieved memories, document content, conversation history, and response generation space.
 
 | Content Type | Typical Size | Priority | Allocation Strategy |
@@ -306,3 +317,5 @@ When troubleshooting context-window quality issues in production, use these diag
 - **Importance-based ranking** selects which memories to inject based on a combination of importance score, recency, and relevance to the current query.
 - **Hybrid selection** combines recency and importance signals to prevent both stale-context and important-context-dropped failure modes.
 - **Quality measurement** tracks how memory injection affects accuracy, token consumption, and latency to guide optimization decisions.
+
+::: zone-end

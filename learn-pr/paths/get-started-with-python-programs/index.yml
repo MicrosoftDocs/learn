@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.get-started-with-python-programs
+metadata:
+  title: "Get Started with Python Programming: Part 2 - Building Programs"
+  description: Learn the fundamentals of programming in Python.
+  ms.date: 07/15/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: learning-path
+title: "Get started with Python programming: Part 2 - building programs"
+summary: |
+  Python is one of the world's most popular and versatile programming languages. This learning path walks you through the fundamentals--from understanding loops and data collections to writing reusable code with functions. By the end of this learning path, you'll have the foundational skills needed to build real-world Python applications.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+subjects:
+  - app-development
+modules:
+  - learn.wwl.repeat-actions-loops-python
+  - learn.wwl.organize-data-with-collections-python
+  - learn.wwl.read-write-files-python
+  - learn.wwl.write-reusable-code-python
+trophy:
+  uid: learn.wwl.get-started-with-python-programs.trophy

@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=e019306b-6380-4412-b371-6fc89fce4a20]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=dd37563e-edc6-48fe-9c81-159c328723ee]
 
 > [!NOTE]
 > See the **Text and images** tab for more details
@@ -11,43 +11,21 @@
 
 Before deploying AI in Microsoft Foundry, you need to choose your model. This decision is worth considering thoughtfully because more intelligent models typically cost more to run. The key is finding the right balance between capability and cost for your specific use case.
 
-The following Claude models are available Microsoft Foundry:
+Microsoft Foundry offers multiple Claude models, each designed for different types of workloads.
 
-### Claude Opus - Maximum capability
+Let's start with **Claude Haiku**. Haiku is Anthropic's fastest model and is optimized for high-volume scenarios where speed and cost efficiency matter most. It's ideal for tasks such as classification, extraction, routing, summarization, and agent orchestration. If you're making thousands of model calls and each task is relatively simple, Haiku is often the best choice. Anthropic describes it as its fastest model, delivering near-frontier intelligence with very low latency.
 
-**Opus** is Claude's most capable model, designed for the hardest problems. Use Opus when you need:
+Next is **Claude Sonnet**, which Anthropic positions as the best combination of speed and intelligence. Sonnet is the workhorse model for most applications, offering strong performance across coding, writing, analysis, research, and agent-based workflows. If you're building a new AI solution and aren't sure where to begin, Sonnet is usually the best starting point.
 
-- **Multi-step reasoning** - Complex logical chains and sophisticated analysis
-- **Advanced agents** - Autonomous systems that need to plan and execute complex workflows
-- **Complex code work** - Large-scale refactoring, architecture design, or intricate debugging
-- **Financial analysis** - Detailed modeling, risk assessment, and strategic planning
-- **Security analysis** - Threat detection, vulnerability assessment, and security auditing
+For more demanding workloads, there's **Claude Opus**. Opus is designed for complex agentic coding and enterprise scenarios that require sophisticated reasoning and deeper analysis. If you're tackling challenging software engineering tasks, advanced business analysis, or agent workflows that require sustained reasoning, Opus may provide the additional capability you need.
 
-Opus typically runs slower and costs more than the other tiers, but it's often worth the investment when the task is genuinely difficult and requires the highest level of intelligence.
+Above Opus is **Claude Fable**, Anthropic's most capable generally available model. Fable is designed for long-running agents and the most challenging tasks, helping systems work more autonomously toward complex goals. When you need the highest capability available to most customers, Fable is the model to evaluate.
 
-### Claude Sonnet - The workhorse model
-
-**Sonnet** strikes the ideal balance for most production workloads. It delivers:
-
-- **Frontier-level intelligence** - Near-Opus quality for most tasks
-- **Production speed** - Fast enough for real-time applications
-- **Production cost** - Economical for high-volume usage
-
-> [!TIP]
-> For most teams, Sonnet is an excellent starting point. It provides sophisticated capabilities without the premium cost of Opus, making it suitable for a wide range of enterprise applications.
-
-### Claude Haiku - Speed and scale
-
-**Haiku** is optimized for speed and volume. It excels at:
-
-- **Classification** - Categorizing content, sentiment analysis, tagging
-- **Extraction** - Pulling specific information from documents
-- **Routing** - Directing requests to appropriate handlers or workflows
-- **Sub-agents** - Fast decision-making components within larger systems
-
-When you're making thousands of calls and each individual task is relatively straightforward, Haiku delivers the performance and cost efficiency you need.
+Finally **Claude Mythos** shares the same specifications as Fable, but Anthropic currently offers it only through limited availability to approved customers.
 
 ## How to choose the right model
+
+A practical approach is to start with the smallest model that might meet your needs. Take twenty to thirty examples from your real workload and run them through Haiku. If the quality is sufficient, you've achieved the best possible cost and performance profile. If the task requires additional capability, move up to Sonnet. For more demanding reasoning or agentic workloads, evaluate Opus. And for your most important or most complex applications, consider Fable. The goal is not to use the largest model by default, but to find the smallest model that consistently delivers the quality your scenario requires.
 
 Rather than guessing which model to use, follow this systematic approach:
 
@@ -63,7 +41,11 @@ Rather than guessing which model to use, follow this systematic approach:
 
 ## Claude in Foundry Models
 
-In Microsoft Foundry, all three Claude model tiers are available in the model catalog. The catalog provides:
+In Microsoft Foundry, Claude models are available in the model catalog.
+
+![Screenshot of Claude models in the Foundry Models catalog.](../media/foundry-models.png)
+
+The catalog provides:
 
 - **Complete model listings** - Browse all available Claude models
 - **Model comparison tools** - Compare models across multiple attributes:

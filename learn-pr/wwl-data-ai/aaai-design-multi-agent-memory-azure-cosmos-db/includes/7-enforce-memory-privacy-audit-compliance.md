@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8489eb67-30e0-4478-a59b-164d2bc724e2]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB's partition key design enforces patient data isolation at the storage level, preventing cross-patient memory access even when application code passes incorrect identifiers. This unit covers how to configure patient-scoped memory operations, implement session-bound access controls, and maintain the audit trail that HIPAA compliance requires.
 
 ## Enforce patient data isolation and access controls
@@ -133,3 +144,5 @@ Now that you've designed comprehensive memory privacy controls and audit complia
 - **Right-to-deletion** support enables complete removal of a patient's memories with audit logging, satisfying HIPAA compliance requirements.
 - **Comprehensive audit trails** log every memory operation (retrieve, store, update, delete) with sufficient detail to reconstruct events during compliance investigations, persisting with 7-10 year retention.
 - **Audit middleware** intercepts all memory operations before execution, ensuring no access goes unlogged regardless of which code path triggered the operation.
+
+::: zone-end

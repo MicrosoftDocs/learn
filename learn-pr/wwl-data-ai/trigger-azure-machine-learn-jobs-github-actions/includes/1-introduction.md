@@ -1,14 +1,7 @@
-Imagine you're a machine learning engineer, working together with a data science team on a diabetes classification model. The workflow created by the data science team preprocesses data and trains the model. You want to automatically execute the workflow. By doing so, you'll enable automated training (and retraining) of the classification model in different environments, driven by different events. 
+Training a machine learning model manually works once. It doesn't scale when your team iterates daily, needs to retrain on fresh data, or must demonstrate that every model version traces back to a reviewed and approved change.
 
-Automation is an important part in machine learning operations (MLOps). Similar to DevOps, MLOps allows for rapid development and delivery of machine learning artifacts to consumers of those artifacts. An effective MLOps strategy allows for the creation of automated workflows to train, test, and deploy machine learning models while also ensuring model quality is maintained.
+Imagine you're a data scientist at Proseware. Your team is developing a mobile app that helps practitioners identify patients who may need further diabetes screening or treatment. You have a training script for the classification model, but every run requires someone to remember the right command, supply credentials, and watch the output. When a colleague changes how patient data is prepared, there's no automatic check that the model still trains successfully or meets its accuracy requirement.
 
-Using GitHub Actions, you'll automatically execute an Azure Machine Learning job to train a model. To execute your Azure Machine Learning jobs with GitHub Actions, you'll save your Azure credentials as a secret in GitHub. You'll then define the GitHub Action using YAML.
+This module builds the automation layer from the ground up. You start with source control — what to version and what to keep in purpose-built stores. You then explore trunk-based development as a way to protect production code while the team iterates. From there, you look at how GitHub Actions validates proposed changes automatically before they merge, how to connect those workflows to Azure securely, and how to trigger Azure Machine Learning jobs from GitHub events and Azure-side signals.
 
-## Learning objectives
-
-In this module, you'll learn how to:
-
-- Create and assign a service principal the permissions needed to run an Azure Machine Learning job.
-- Store Azure credentials securely using secrets in GitHub.
-- Create a GitHub Action using YAML that uses the stored Azure credentials to run an Azure Machine Learning job. 
-
+By the end of this module, you can identify which machine learning assets belong in Git, describe how trunk-based development governs changes, and explain how a GitHub Actions workflow validates code, authenticates to Azure, and submits Azure Machine Learning jobs.

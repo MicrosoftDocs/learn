@@ -12,7 +12,7 @@ metadata:
 title: Manage and implement authentication methods in Microsoft Entra ID
 summary: Learn to plan, deploy, and manage secure authentication in Microsoft Entra ID. This module covers authentication methods, MFA with Conditional Access, passwordless options, and self-service password reset.
 abstract: |
- After completing this module, you'll be able to:
+ After completing this module, you're able to:
   - Describe Microsoft Entra ID authentication methods and authentication strength concepts.
   - Configure multifactor authentication using Conditional Access policies and named locations.
   - Implement passwordless authentication methods, including Windows Hello for Business, passkeys, and FIDO2 security keys.

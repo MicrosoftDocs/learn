@@ -2,9 +2,10 @@
 uid: learn-wwl.get-started-sql-database-microsoft-fabric.simplify-data-management
 title: Simplify data management with mirroring and virtualization
 metadata:
+  zone_pivot_groups: video-or-text
   title: Simplify data management with mirroring and virtualization
   description: "Learn how to simply data management with mirroring and virtualization."
-  ms.date: 08/07/2025
+  ms.date: 8/27/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

@@ -49,9 +49,9 @@ quiz:
       - content: Dynamic Threat Detection Agent
         isCorrect: false
         explanation: "Incorrect. The Dynamic Threat Detection Agent is an always-on service that uncovers hidden threats by correlating alerts, events, and threat intelligence. It is not designed for triaging user-reported phishing emails."
-      - content: Threat Hunting Agent
+      - content: Threat Hunting Assistant
         isCorrect: false
-        explanation: "Incorrect. The Threat Hunting Agent enables investigation using natural language and KQL queries. It is not specifically designed for classifying user-reported phishing incidents."
+        explanation: "Incorrect. The Threat Hunting Assistant enables investigation using natural language and KQL queries. It is not specifically designed for classifying user-reported phishing incidents."
       - content: Security Alert Triage Agent
         isCorrect: true
         explanation: "Correct. The Security Alert Triage Agent (formerly the Phishing Triage Agent) autonomously triages and classifies alerts, including user-reported phishing emails, provides transparent rationale for its verdicts, and can incorporate analyst feedback to tune its analysis."

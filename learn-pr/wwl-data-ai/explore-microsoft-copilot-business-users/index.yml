@@ -1,46 +1,40 @@
 ### YamlMime:Module
 uid: learn.explore-microsoft-copilot-business-users
 metadata:
-  title: Work Smarter with AI using Microsoft Copilot
-  description: "Learn how to be more productive with Microsoft Copilot."
-  ms.date: 06/10/2026
+  title: "Work Smarter With AI"
+  description: "Discover how to use AI to support workplace tasks like summarizing, drafting, and analyzing. Learn to use AI effectively and responsibly."
+  ms.date: 08/17/2026
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: module-standard-task-based
-  ms.collection: wwl-ai-copilot
-  ms.custom:
-  - N/A
+  ms.topic: module
   ms.service: microsoft-copilot
-  ai-usage: ai-assisted
-title: Work smarter with AI using Microsoft Copilot
-summary: Microsoft Copilot is an AI-powered assistant that you can use for personal projects and work.
+title: "Work smarter with AI"
+summary: Curious about how AI can help at work? In this module, you'll learn the basics of generative AI, explore how AI supports workplace tasks, understand why grounding improves AI-generated responses, discover when AI agents can help, and learn how to responsibly use AI with confidence.
 abstract: |
-  By the end of this module, you'll be able to:
-
-  -   Describe Microsoft Copilot and Microsoft 365 Copilot
-
-  -   Identify tasks with which Microsoft Copilot can assist
-
-  -   Describe how Microsoft Copilot works.
-
-  -   Write effective prompts for Microsoft Copilot
-prerequisites: '-   Familiarity with Microsoft productivity applications like Word, Excel, PowerPoint, and Outlook.'
-iconUrl: /training/achievements/data-ai/explore-microsoft-copilot-business-users.svg
+  After completing this module, you will be able to:
+  - Explain what AI and generative AI are, and how they differ from traditional tools.
+  - Describe how AI and AI agents support everyday work, and why grounding improves results.
+  - Review AI-generated content and apply responsible AI practices with confidence.
+prerequisites: |
+  - Familiarity with productivity applications like Word, Excel, PowerPoint, and Outlook.
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
 - business-user
 products:
-- ms-copilot
+- microsoft-365-copilot
 subjects:
 - artificial-intelligence
+- generative-ai
 units:
 - learn.explore-microsoft-copilot-business-users.introduction
-- learn.explore-microsoft-copilot-business-users.what-is-copilot
-- learn.explore-microsoft-copilot-business-users.copilot-uses
-- learn.explore-microsoft-copilot-business-users.how-copilot-works
-- learn.explore-microsoft-copilot-business-users.copilot-prompts
-- learn.explore-microsoft-copilot-business-users.exercise-explore-copilot
+- learn.explore-microsoft-copilot-business-users.what-is-ai
+- learn.explore-microsoft-copilot-business-users.ai-at-work
+- learn.explore-microsoft-copilot-business-users.why-grounding-matters
+- learn.explore-microsoft-copilot-business-users.work-with-ai-agents
+- learn.explore-microsoft-copilot-business-users.use-ai-with-confidence
+- learn.explore-microsoft-copilot-business-users.exercise-review-ai-generated-content
 - learn.explore-microsoft-copilot-business-users.knowledge-check
 - learn.explore-microsoft-copilot-business-users.summary
 badge:

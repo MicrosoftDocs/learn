@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4e6f07dd-4ca7-412b-8970-887ad54f1081]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Vector indexes enable fast similarity search by organizing vectors into data structures that eliminate the need to compare every stored vector against each query. Choosing the right index type and configuring its parameters correctly determines whether your AI application meets its performance targets.
 
 > [!NOTE]
@@ -93,6 +104,8 @@ Build times vary with hardware, but these rough estimates help with planning: IV
 Index quality degrades when data distribution changes significantly. Signs that reindexing might help include query latency that has increased without data growth explaining it, recall measurements showing degradation, or large portions of data that have been replaced or updated. Reindex using `REINDEX INDEX CONCURRENTLY idx_products_embedding;`. For IVFFlat indexes, reindexing updates the cluster centroids to match current data distribution. For HNSW indexes, it rebuilds the graph structure.
 
 Check index size and usage statistics to monitor index health. Query `pg_stat_user_indexes` to see index sizes with `SELECT indexrelname, pg_size_pretty(pg_relation_size(indexrelid)) AS size FROM pg_stat_user_indexes WHERE relname = 'products';`. Check if indexes are being used with `SELECT indexrelname, idx_scan, idx_tup_read FROM pg_stat_user_indexes WHERE relname = 'products';`. Low `idx_scan` counts suggest the index isn't being used. Verify that query operators match the index operator class.
+
+::: zone-end
 
 ## Additional resources
 

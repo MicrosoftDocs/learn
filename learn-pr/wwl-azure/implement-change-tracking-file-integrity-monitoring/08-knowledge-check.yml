@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 01/01/2025
+  ms.date: 08/16/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
@@ -16,36 +16,36 @@ durationInMinutes: 4
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following statements about enabling Change Tracking and Inventory is true?"
+  - content: "Which components does the current Azure Change Tracking and Inventory service use to collect and route change data?"
     choices:
-    - content: "An administrator can use a Microsoft account as their Automation account providing it's in the same resource group as your Log Analytics workspace."
-      isCorrect: false
-      explanation: "Incorrect. An Azure Automation account is different from both your Microsoft account and any accounts you create  in your Azure subscription."
-    - content: "A Log Analytics workspace must be in the same resource group as the Automation account."
-      isCorrect: false
-      explanation: "Incorrect. Your Log Analytics workspace and Automation account must be in the same subscription."
-    - content: "Monitored Azure VMs can exist in any region, no matter the location of the Automation account."
+    - content: "Azure Monitor Agent, the Change Tracking extension, and a data collection rule."
       isCorrect: true
-      explanation: "Correct. Your VMs can in exist in any region."
-  - content: "Julia, an administrator at Contoso, wants to create an alert on registry changes to a VM named **ContosoVM1**. How should she configure the alert?"
+      explanation: "Correct. The current service uses AMA, the Change Tracking extension, and a DCR that sends data to a Log Analytics workspace."
+    - content: "An Azure Automation account and the Microsoft Monitoring Agent."
+      isCorrect: false
+      explanation: "Incorrect. This combination belongs to the retired legacy implementation."
+    - content: "Microsoft Defender for Endpoint and agentless scanning."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Endpoint and agentless scanning collect File Integrity Monitoring data, not Change Tracking and Inventory data."
+  - content: "What must an administrator enable before using File Integrity Monitoring in Microsoft Defender for Cloud?"
     choices:
-    - content: "From the home page of the Azure portal, select **Virtual machines**, and then select **ContosoVM1**. Under **Settings**, select **Security**, and then select **New alert rule**."
-      isCorrect: false
-      explanation: "Incorrect. She can't access the File Integrity Monitoring alerts in this way. She must use Security Center from the home page, and then select File Integrity Monitoring."
-    - content: "Select **Security Center**, then select **File Integrity Monitoring**. On the dashboard, select the appropriate workspace, and then select **ContosoVM1**. Then on the toolbar, select **New alert rule**."
+    - content: "Defender for Servers Plan 2 on the subscription."
       isCorrect: true
-      explanation: "Correct."
-    - content: "Select **Security Center**, then select **File Integrity Monitoring**. On the dashboard, select **ContosoVM1**. Then on the toolbar, select **New alert rule**."
+      explanation: "Correct. File Integrity Monitoring is a feature of Defender for Servers Plan 2 and uses the Microsoft Defender for Endpoint agent and agentless scanning."
+    - content: "The Standard tier on each Log Analytics workspace."
       isCorrect: false
-      explanation: "Incorrect. She must select the appropriate workspace before selecting the VM."
-  - content: "An administrator at Contoso reviews the **File Integrity Monitoring** blade in Security Center, which has the following returned output. There are five workspaces. One is marked with UPGRADE PLAN, two are marked ENABLE, and two have both servers and changes listed. To enable File Integrity Monitoring on **ContosoWorkspace**, which currently displays the status of UPGRADE PLAN, what must the administrator do?"
+      explanation: "Incorrect. The workspace stores change logs but doesn't require a separate Standard-tier upgrade."
+    - content: "An Azure Automation account linked to the workspace."
+      isCorrect: false
+      explanation: "Incorrect. Current File Integrity Monitoring doesn't require an Azure Automation account."
+  - content: "Which approach produces the most useful File Integrity Monitoring signal?"
     choices:
-    - content: "They must upgrade the workspace to Security Center Standard tier."
+    - content: "Monitor critical files and registry keys that aren't expected to change without planning."
       isCorrect: true
-      explanation: "Correct. Workspaces that they intend to use for File Integrity Monitoring must be in Security Center's Standard tier."
-    - content: "Nothing. They can use the workspace as is."
+      explanation: "Correct. Focusing on stable, security-sensitive resources reduces noise and makes suspicious changes easier to identify."
+    - content: "Monitor every file on every drive with a broad wildcard."
       isCorrect: false
-      explanation: "Incorrect. In this case, they must upgrade the workspace to Security Center's Standard tier"
-    - content: "It's not possible to use the specified workspace. They must choose one that's displaying the status ENABLE."
+      explanation: "Incorrect. Broad rules generate excessive expected changes and make suspicious activity harder to identify."
+    - content: "Monitor only log files and temporary files because they change frequently."
       isCorrect: false
-      explanation: "Incorrect. They can use workspaces displaying UPGRADE PLAN status for File Integrity Monitoring after upgrade the workspace to use Security Center's Standard tier."
+      explanation: "Incorrect. Frequently changing files create noise and usually provide less useful security signal."

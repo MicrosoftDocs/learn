@@ -4,9 +4,9 @@ title: Configure MLflow for model tracking in notebooks
 metadata:
   title: Configure MLflow for model tracking in notebooks
   description: Learn how to configure MLflow for model tracking when experimenting in notebooks in Azure Machine Learning.
-  author: wwlpublish
+  author: madiepev
   ms.author: madiepev
-  ms.date: 03/11/2026
+  ms.date: 08/27/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

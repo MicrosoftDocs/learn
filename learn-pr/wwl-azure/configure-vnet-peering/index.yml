@@ -5,9 +5,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure Azure Virtual Network Peering
   description: "Learn to configure an Azure Virtual Network peering connection and address transit and connectivity concerns."
-  ms.date: 03/23/2026
+  ms.date: 06/23/2026
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: robbarefoot
   ms.topic: module
   ms.collection: N/A
   ms.custom:

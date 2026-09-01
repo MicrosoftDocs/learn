@@ -5,9 +5,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Design and Implement Azure ExpressRoute
   description: "You learn how to design and implement Azure ExpressRoute, ExpressRoute Global Reach, ExpressRoute FastPath."
-  ms.date: 03/23/2026
+  ms.date: 06/23/2026
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: robbarefoot
   ms.topic: module
   ms.collection: N/A
   ms.custom:

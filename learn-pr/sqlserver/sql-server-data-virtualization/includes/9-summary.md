@@ -12,5 +12,5 @@ You now have a good understanding of:
 
 For more information about data virtualization and PolyBase, see:
 
-- [Introducing data virtualization with PolyBase](/sql/relational-databases/polybase/polybase-guide)
+- [Data virtualization with PolyBase](/sql/relational-databases/polybase/overview)
 - [Monitor and troubleshoot PolyBase](/sql/relational-databases/polybase/polybase-troubleshooting)

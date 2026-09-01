@@ -4,12 +4,11 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: Introduction
-  ms.date: 01/05/2024
+  description: Learn how Azure Firewall can restrict outbound traffic from Azure Virtual Desktop session hosts.
+  ms.date: 08/17/2026
   author: vhorne
-  ms.author: victorh
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-

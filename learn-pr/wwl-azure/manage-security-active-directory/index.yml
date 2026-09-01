@@ -2,18 +2,19 @@
 uid: learn.wwl.manage-security-active-directory
 metadata:
   title: Manage security in Active Directory
-  description: "This module focuses on maintaining security in an Active Directory environment. It covers things from permissions management to authentication methods to identifying problematic accounts."
-  ms.date: 08/12/2025
+  description: "Learn how to manage security in Active Directory, including configuring user rights with least privilege, delegating permissions, using the Protected Users group and Credential Guard, blocking NTLM authentication, and finding problematic accounts."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.collection: N/A
   ms.custom:
   - N/A
-  ms.service: azure-active-directory
+  ms.service: entra-id
   ai-usage: ai-assisted
 title: Manage security in Active Directory
-summary: This module focuses on maintaining security in an Active Directory environment. It covers things from permissions management to authentication methods to identifying problematic accounts.
+summary: |
+  This module covers how to manage security in an Active Directory Domain Services (AD DS) environment. You learn how to configure user account rights following the principle of least privilege, restrict privileged accounts from dangerous sign-in methods, delegate AD permissions to non-administrative users for tasks like password resets, add accounts to the Protected Users group to prevent credential caching and enforce Kerberos-only authentication, deploy Windows Defender Credential Guard to isolate credentials against Pass-the-Hash and Pass-the-Ticket attacks, block legacy NTLM authentication in favor of Kerberos, and find and remediate problematic accounts including inactive users and accounts with non-expiring passwords.
 abstract: |
   By the end of this module, you'll be able to:
 

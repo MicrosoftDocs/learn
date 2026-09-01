@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.dpu.windows-studio-effects
+title: Enhance video and audio with Windows Studio Effects
+metadata:
+  title: Enhance Video And Audio With Windows Studio Effects
+  description: In this module, you'll learn how Windows Studio Effects helps you communicate more clearly by enhancing audio and video, reducing distractions, and applying consistent, AI-powered improvements across your apps and environments.
+  ms.date: 06/15/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Learn how Windows Studio Effects helps you communicate more clearly by enhancing audio and video, reducing distractions, and applying consistent, AI-powered improvements across your apps and environments.
+abstract: |
+  By the end of this module, you’ll be able to:
+  - Use Windows Studio Effects to improve video and audio quality during calls  
+  - Configure key effects such as background blur, eye contact, and voice focus  
+  - Access and adjust Studio Effects using Quick Settings, Settings, and the Camera app  
+  - Apply Studio Effects in real-world collaboration scenarios  
+  - Identify which Windows Studio Effects are most useful for different video and audio scenarios 
+prerequisites: |
+  - None
+iconUrl: /training/achievements/windows-studio-effects.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.windows-studio-effects.introduction
+  - learn.dpu.windows-studio-effects.definition
+  - learn.dpu.windows-studio-effects.how-to-use
+  - learn.dpu.windows-studio-effects.why-it-matters
+  - learn.dpu.windows-studio-effects.scenarios
+  - learn.dpu.windows-studio-effects.when-to-use
+  - learn.dpu.windows-studio-effects.knowledge-check
+  - learn.dpu.windows-studio-effects.summary
+badge:
+  uid: learn.dpu.windows-studio-effects.badge
+

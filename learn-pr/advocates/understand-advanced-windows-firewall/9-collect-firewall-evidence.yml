@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-advanced-windows-firewall.collect-firewall-evidence
+title: Collect firewall evidence
+metadata:
+  title: Collect Firewall Evidence
+  description: Configure firewall logging for discovery, troubleshooting, incident response, and policy validation.
+  ms.date: 08/05/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-collect-firewall-evidence.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.optimize-pc-gaming.how-to-use-exercise
+title: Exercise — Enhance your gameplay with Windows and Xbox app features
+metadata:
+  title: Exercise — Enhance Your Gameplay With Windows And Xbox App Features
+  description: This content is part of the "Optimize your Windows gaming experience with the Xbox app" module.
+  ms.date: 06/15/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-how-to-use-exercise.md)]

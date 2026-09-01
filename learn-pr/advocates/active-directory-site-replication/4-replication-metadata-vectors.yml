@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.site-topology-replication.replication-metadata-vectors
+title: Explain USNs, replication vectors, and object metadata
+metadata:
+  title: Explain USNs, replication vectors, and object metadata
+  description: Explain USNs, high-watermark and up-to-dateness vectors, and inspect linked-value and deleted-object replication metadata.
+  ms.date: 04/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 35
+content: |
+  [!include[](includes/4-replication-metadata-vectors.md)]

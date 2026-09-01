@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.surface-5g
+title: Get started with 5G on Surface for Business devices
+metadata:
+  title: Get Started With 5G On Surface For Business Devices
+  description: 'In this module, you''ll learn how to get started with 5G on Surface for Business devices. You''ll learn about the benefits of 5G, how to prepare your network for 5G, and how to activate 5G service on your Surface device.'
+  ms.date: 07/08/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  In this module, you'll learn how to get started with 5G on Surface for Business devices. You'll learn about the benefits of 5G, how to prepare your network for 5G, and how to activate 5G service on your Surface device.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand the benefits of 5G on Surface for Business devices.
+  - Prepare your network for 5G.
+  - Activate 5G service on your Surface device.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/surface-5g-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.surface-5g.introduction
+  - learn.dpu.surface-5g.understand-5g-on-surface
+  - learn.dpu.surface-5g.network-preparation
+  - learn.dpu.surface-5g.activate-service
+  - learn.dpu.surface-5g.surface-5g-real-world-scenarios
+  - learn.dpu.surface-5g.knowledge-check
+  - learn.dpu.surface-5g.summary
+badge:
+  uid: learn.dpu.surface-5g.badge

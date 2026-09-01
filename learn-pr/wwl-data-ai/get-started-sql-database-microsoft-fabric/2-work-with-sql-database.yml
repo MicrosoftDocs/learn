@@ -2,9 +2,10 @@
 uid: learn-wwl.get-started-sql-database-microsoft-fabric.work-with-sql-database
 title: Work with SQL databases
 metadata:
+  zone_pivot_groups: video-or-text
   title: Work with SQL databases
   description: "Learn to work with SQL databases."
-  ms.date: 08/07/2025
+  ms.date: 8/27/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

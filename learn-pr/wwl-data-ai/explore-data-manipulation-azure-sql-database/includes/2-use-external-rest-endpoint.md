@@ -8,7 +8,7 @@ Let's explore some of the key use cases and scenarios where this functionality c
 
 - **Data processing with Azure Functions:** You can use `sp_invoke_external_rest_endpoint` to call an Azure Function that processes data. For example, you might send a batch of data to an Azure Function for complex calculations or transformations, and then store the results back in your database.
 
-- **Integration with Cognitive Services:** You can call Cognitive Services APIs to perform tasks such as sentiment analysis, image recognition, or language translation. For instance, you might send text data to the Text Analytics API to analyze customer feedback and store the sentiment scores in your database.
+- **Integration with Azure AI Services:** You can call Azure AI Services APIs to perform tasks such as sentiment analysis, image recognition, or language translation. For instance, you might send text data to the Azure AI Language API to analyze customer feedback and store the sentiment scores in your database.
 
 - **Event-driven workflows:** Use `sp_invoke_external_rest_endpoint` to trigger workflows in Logic Apps or Power Automate. This can be useful for automating business processes, such as sending notifications or updating records in other systems based on changes in your database.
 
@@ -23,7 +23,7 @@ REST endpoints often require authentication, which can be done via key-value pai
 The created DATABASE SCOPED CREDENTIAL can be used via the `@credential` parameter in the `sp_invoke_external_rest_endpoint` stored procedure. The authentication information must be provided via the SECRET parameter in a flat JSON format.
 
 ```sql
-CREATE DATABASE SCOPED CREDENTIAL [https://.azurewebsites.net/api/]
+CREATE DATABASE SCOPED CREDENTIAL [https://<your-function-app>.azurewebsites.net/api/]
 WITH IDENTITY = 'HTTPEndpointHeaders', SECRET = '{"x-functions-key":"<your-function-key>"}';
 ```
 

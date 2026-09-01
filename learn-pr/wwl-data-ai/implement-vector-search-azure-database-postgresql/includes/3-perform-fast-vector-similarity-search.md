@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=72aa7f48-ae49-4bf1-ac19-1fa344cfcad9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 As your vector dataset grows, similarity queries that scan every row become too slow for production use. A table with one million vectors requires one million distance calculations for each query, resulting in latency measured in seconds rather than milliseconds. Vector indexes solve this problem by organizing embeddings into structures that enable fast approximate search.
 
 This unit covers the indexing strategies available in pgvector: IVFFlat and HNSW. You learn how each algorithm works, when to use each type, and how to configure indexes for your performance requirements.
@@ -118,3 +129,5 @@ If you see "Seq Scan" instead of "Index Scan," check that:
 2. The index exists and is valid
 3. The table has enough rows (PostgreSQL might choose a sequential scan for small tables)
 4. The LIMIT clause is present (indexes are most effective with ORDER BY and LIMIT)
+
+::: zone-end

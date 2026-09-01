@@ -55,6 +55,8 @@ As with most supervised machine learning techniques, you should define separate 
 The following code defines two data loaders; one for training and the other for testing. The source data for each loader in this example is assumed to be a Numpy array of feature values and a Numpy array of corresponding label values.
 
 ```python
+import torch.utils.data as td
+
 # Create a dataset and loader for the training data and labels
 train_x = torch.Tensor(x_train).float()
 train_y = torch.Tensor(y_train).long()
@@ -70,7 +72,7 @@ test_loader = td.DataLoader(test_ds, batch_size=20,
     shuffle=False, num_workers=1)
 ```
 
-The loaders in this example split the data into batches of 30, which are passed to the **forward** function during training or inference.
+The loaders in this example split the data into batches of 20, which are passed to the **forward** function during training or inference.
 
 ## Choose a loss criterion and optimizer algorithm
 

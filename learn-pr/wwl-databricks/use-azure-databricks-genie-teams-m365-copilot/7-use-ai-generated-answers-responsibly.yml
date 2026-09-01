@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-databricks-genie-teams-m365-copilot.use-ai-generated-answers-responsibly
+title: Use AI-generated data answers responsibly
+metadata:
+  title: Use AI-Generated Data Answers Responsibly
+  description: "Understand the limits of AI-generated data answers: what Genie can and can't answer, how to recognize AI error risks, visibility considerations when sharing results, and when to escalate to a domain expert."
+  ms.date: 08/25/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-use-ai-generated-answers-responsibly.md)]

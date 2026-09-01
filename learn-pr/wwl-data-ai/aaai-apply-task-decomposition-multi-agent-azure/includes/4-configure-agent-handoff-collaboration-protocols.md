@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3d035cdc-bc46-4760-bb48-bc4d79a8a609]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Agent Framework provides built-in handoff orchestration for the multi-agent pipelines in this unit. You use it to define specialist agents, specify handoff conditions through agent instructions, and build workflows where agents transfer control autonomously—without routing every decision through a central hub.
 
 ## Understand when handoff protocols are necessary
@@ -146,3 +157,5 @@ Explicit routing rules prevent unexpected handoff paths and help the framework d
 - **Handoff protocols** enable peer-to-peer agent transfers when one specialist discovers a task better suited for another, improving routing efficiency over always returning to a central hub.
 - **Handoff schemas are defined through agent instructions**—the source agent describes what context it passes, the target agent describes its domain and expected output format. Agent Framework enforces context completeness by broadcasting full conversation history to all participants automatically.
 - **Acknowledgment** is implicit in agent instructions: target agents respond based on their described domain. Explicit routing rules via `.add_handoff()` constrain which transfers are permitted and give the framework enough information to catch circular routing before it executes.
+
+::: zone-end

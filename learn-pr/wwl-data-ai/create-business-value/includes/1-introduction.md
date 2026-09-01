@@ -4,7 +4,7 @@ AI is no longer a nice to have—it’s a competitive necessity. In this module,
 - Technology and Data Strategy
 - AI Strategy and Experience
 - Organization and Culture
-- AI Governance
+- AI Governance and Security
 
 These drivers align with the pillars of Microsoft's agentic AI adoption maturity model, giving you a consistent approach whether you're deploying copilots, agents, or custom AI solutions.
 

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f3a5257f-fdd6-4c18-9356-c67c85b2dc21]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB and Application Insights provide the persistent audit infrastructure that multi-agent systems need to satisfy regulatory requirements and prove that human oversight is meaningful. Every auditable decision generates an immutable record—capturing context, reviewer identity, rationale, and execution outcome—that supports compliance reviews, incident investigations, and exception reporting.
 
 ## Decision taxonomy for audit requirements
@@ -155,3 +166,5 @@ With comprehensive audit trails, exception reporting, regulatory compliance docu
 - **Exception reporting** runs monthly KQL queries analyzing approval patterns by agent, approver, request category, and SLA compliance to identify optimization opportunities and compliance risks.
 - **Regulatory compliance** requires demonstrating meaningful human oversight through genuine review scrutiny, override capability, sufficient reviewer context, and adequate review time.
 - **Decision reversal** enables corrections within 30 days through compensating actions and linked audit records, with reversal rate tracking serving as a key compliance health metric.
+
+::: zone-end

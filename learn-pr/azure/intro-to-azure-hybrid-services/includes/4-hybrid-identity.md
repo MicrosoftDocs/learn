@@ -8,7 +8,7 @@ In this unit, you learn about the different ways to implement hybrid identity.
 
 The simplest way to provide the same AD DS environment in Azure that an organization has on-premises is to:
 
-1. Deploy a pair of AD DS domain controllers on a subnet on an Azure virtual network.
+1. Deploy a pair of AD DS domain controllers on a subnet on an Azure Virtual Network.
 1. Connect that virtual network to the on-premises network.
 1. Configure that subnet as a new AD DS site, as shown in the following image.
 
@@ -34,8 +34,12 @@ If Tailwind Traders plans to adopt Microsoft 365 technologies such as Exchange O
 
 You can use Microsoft Entra Domain Services to project a Microsoft Entra domain onto an Azure virtual subnet. When you employ this configuration, services like domain join, Group Policy, Lightweight Directory Access Protocol (LDAP), and Kerberos and NTLM authentication become available to any VM deployed on the subnet. 
 
-Microsoft Entra Domain Services allows you to have a basic managed Active Directory environment available to VMs without worrying about managing, maintaining, and paying for the VMs that run as domain controllers. Microsoft Entra Domain Services also allows you to use on-premises identities through Microsoft Entra Connect to interact with VMs running on a specially configured Azure Virtual Network subnet. 
+Microsoft Entra Domain Services allows you to have a basic managed Active Directory environment available to VMs without worrying about managing, maintaining, and paying for the VMs that run as domain controllers. Microsoft Entra Domain Services also allows you to use on-premises identities through Microsoft Entra Connect to interact with VMs running on a specially configured Azure Virtual Network subnet.
 
-One drawback to Microsoft Entra Domain Services is that the Group Policy implementation is basic. It includes a fixed set of policies and offers no ability to create Group Policy Objects (GPOs). Even though the identities used on-premises are available in Azure, any policies configured on-premises aren't available.
+Microsoft Entra Domain Services provides a managed AD DS domain with standard Windows Group Policy support. It includes built-in GPOs for the **AADDC Users** and **AADDC Computers** OUs. Members of **AAD DC Administrators** can use GPMC and RSAT from a domain-joined management computer to edit these policies or create custom GPOs and OUs.
+
+GPO processing works much like on-premises AD DS, including computer and user settings, inheritance, link order, security filtering, sign-in processing, and periodic refresh.  Administrators cannot access the domain controllers, extend the schema, add domain controllers, or receive Domain Admin or Enterprise Admin privileges.
+
+Entra Domain Services also has a flatter and more restricted OU structure. Users and groups synchronized from Microsoft Entra ID remain in **AADDC Users** and cannot be moved into custom OUs. Custom OUs can contain computers, service accounts, and other objects created directly in the managed domain.
 
 For Tailwind Traders, Microsoft Entra Domain Services provides a good middle ground for hybrid workloads. It enables domain-joined identity usage and a substantial amount of Group Policy configuration. But it doesn't support applications that require complex Active Directory functionality such as custom domain partitions and schema extensions.

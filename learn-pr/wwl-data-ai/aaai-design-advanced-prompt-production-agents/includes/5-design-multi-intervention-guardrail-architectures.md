@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=85446dfb-df48-4a03-a2da-600b9d34dd6d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry's built-in guardrail tools—including Azure AI Content Safety, the AI Red Teaming Agent, and structured output validation—each protect a different surface of your agent pipeline. In this unit, you design a coordinated four-surface guardrail strategy that integrates these tools into a single architecture.
 
 Northwind Health's clinical agents processed 12,000 patient document reviews last month. Injection defenses in Unit 3 blocked 47 direct injection attempts and 12 indirect injections from PDF uploads. But three incidents slipped through: a manipulated tool response caused the medication-safety agent to skip a contraindication check; a crafted patient document caused the output to include patient-identifying information in a section visible to the wrong clinician tier; and a borderline output passed the output filter but contained language a pharmacist flagged as resembling a definitive prescription recommendation rather than an advisory. Individual surface defenses worked. The coordinated multisurface strategy didn't exist.
@@ -94,3 +105,5 @@ Guardrails require systematic testing before deployment—a guardrail with high 
 **Audit-trail requirements:** For regulated environments (HIPAA and high-risk scenarios under the EU AI Act), every guardrail invocation that blocks or modifies an output must be logged in an immutable audit record that uses a standardized schema. Auditors verify that guardrail coverage operates continuously, not only at deployment time.
 
 **Cost considerations:** Each additional detection layer (classifier, LLM judge) adds latency and token cost. Profile your guardrail cascade against your latency and cost optimization budget. For example, if the LLM judge adds 400ms and runs on 30% of outputs, it contributes 120ms to average latency and adds significant monthly token cost. Size your guardrail cascade to your actual threat distribution, not the worst-case threat model.
+
+::: zone-end

@@ -6,7 +6,7 @@ metadata:
   description: "Explore CodeQL in GitHub"
   ms.date: 06/30/2023
   author: wwlpublish
-  ms.author: lumac
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 2
 content: |

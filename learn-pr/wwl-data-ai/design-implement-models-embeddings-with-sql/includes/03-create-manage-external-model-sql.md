@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6b3ec472-8dfa-4ffc-b724-955fd858579c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 External models provide a way to reference AI models from within SQL Server and Azure SQL using Transact-SQL. An external model represents a connection to a model endpoint and defines how SQL built-in AI functions invoke that model.
 
 By creating external models, you make AI capabilities available directly inside the database engine without embedding model-specific logic in application code.
@@ -93,3 +104,5 @@ Treating external models as first-class database objects helps ensure consistenc
 ## Key takeaways
 
 External models are database objects that store metadata about AI model endpoints, allowing SQL Server to call external AI services without embedding connection details in application code. You create them with `CREATE EXTERNAL MODEL`, update them with `ALTER EXTERNAL MODEL`, and reference them in built-in AI functions like `AI_GENERATE_EMBEDDINGS`. Because they're database-scoped, you can manage permissions, lifecycle, and deployment alongside your other schema objects.
+
+::: zone-end

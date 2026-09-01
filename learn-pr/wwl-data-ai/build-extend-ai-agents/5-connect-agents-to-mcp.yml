@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-extend-ai-agents.connect-agents-to-mcp
+title: Connect an agent to MCP servers
+metadata:
+  title: Connect an agent to MCP servers
+  description: "Connect an agent to remote Model Context Protocol (MCP) servers and handle tool-approval requests."
+  ms.date: 08/21/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-connect-agents-to-mcp.md)]

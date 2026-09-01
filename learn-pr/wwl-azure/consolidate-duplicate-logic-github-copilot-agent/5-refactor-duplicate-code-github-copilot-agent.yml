@@ -5,10 +5,9 @@ metadata:
   title: Refactor Duplicate Code using GitHub Copilot Agent
   description: Refactor duplicate code using GitHub Copilot Agent
   ms.date: 10/14/2025
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: unit
-  ms.service: github-copilot
 durationInMinutes: 8
 content: |
   [!include[](includes/5-refactor-duplicate-code-github-copilot-agent.md)]

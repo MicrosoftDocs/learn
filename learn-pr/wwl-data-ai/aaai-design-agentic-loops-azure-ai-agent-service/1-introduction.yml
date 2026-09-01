@@ -2,11 +2,12 @@
 uid: learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Introduction."
-  ms.date: 05/20/2026
-  author: chrishowd
-  ms.author: cahowd
+  ms.date: 7/27/2026
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 2
 content: |

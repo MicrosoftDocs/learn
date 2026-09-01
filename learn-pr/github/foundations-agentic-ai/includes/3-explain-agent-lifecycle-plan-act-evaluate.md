@@ -79,4 +79,3 @@ The lifecycle of planning, acting, and evaluating is the operational core of age
 
 Once you understand how an agent behaves, the next question becomes where that behavior is controlled. In the next unit, you'll examine GitHub as the system of record and control plane for agent workflows.
 
-I would recommend mentioning this earlier, either in the Evaluate section or in the intro, to make it immediately clear that plan/act/evaluate is a loop and not a linear sequence. It would help learners to know this from the start instead of discovering it in the scenario.

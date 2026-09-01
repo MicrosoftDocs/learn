@@ -3,9 +3,9 @@ uid: learn.wwl.configure-app-service-plans
 metadata:
   title: Configure Azure App Service Plans
   description: "Configure Azure App Service plans"
-  ms.date: 02/10/2026
+  ms.date: 06/10/2026
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: robbarefoot
   ms.topic: module
   ms.collection: N/A
   ms.custom:

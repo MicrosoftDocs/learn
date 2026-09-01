@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.verify-machines-connected
-title: Verify that your machines are connected
+title: Verify Azure Arc and Defender for Servers status
 metadata:
-  title: Verify that your machines are connected
-  description: "Verify that your machines are connected"
-  ms.date: 06/11/2024
+  title: Verify Azure Arc and Defender for Servers status
+  description: "Verify Azure Arc connectivity and Defender for Servers coverage"
+  ms.date: 08/16/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: unit
   ms.custom:
   - N/A

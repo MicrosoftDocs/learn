@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.intro-project-perception-agentic-security.perception-capabilities
+title: What Project Perception can do today
+metadata:
+  title: What Project Perception can do today
+  description: "The core capabilities Project Perception provides in the preview: threat intelligence extraction, attack path analysis, posture prioritization, incident investigation, and detection authoring, coordinated by playbooks and gated by human approval."
+  ms.date: 08/07/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/perception-capabilities.md)]

@@ -2,11 +2,12 @@
 uid: learn.wwl.design-human-in-loop-approval-workflows.configure-audit-workflows-regulated-decisions
 title: Configure audit workflows for regulated decisions
 metadata:
+  zone_pivot_groups: video-or-text
   title: Configure Audit Workflows for Regulated Decisions
   description: "Configure audit workflows for regulated decisions."
-  ms.date: 06/05/2026
-  author: chrishowd
-  ms.author: cahowd
+  ms.date: 8/5/2026
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

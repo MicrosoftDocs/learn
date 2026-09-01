@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-query-performance-indexes-azure-documentdb.exercise-build-indexing-strategy
+title: "Exercise - Build an indexing strategy for the e-commerce platform"
+metadata:
+  title: "Exercise - Build an Indexing Strategy for the E-Commerce Platform"
+  description: "Build an indexing strategy for an e-commerce platform in Azure DocumentDB. Create compound indexes using the ESR rule and verify performance improvements with the explain() command."
+  ms.date: 04/17/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-build-indexing-strategy.md)]

@@ -4,9 +4,9 @@ title: JSON and string aggregation
 metadata:
   title: JSON and string aggregation
   description: "Create JSON arrays, objects, and delimited strings with new T-SQL aggregation functions."
-  ms.date: 10/14/2025
-  author: MScalopez
-  ms.author: calopez
+  ms.date: 08/11/2026
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 6
 content: |

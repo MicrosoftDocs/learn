@@ -60,7 +60,7 @@ Security Copilot includes agents that are seamlessly integrated with Microsoft s
 
 - **[Security Alert Triage Agent](/defender-xdr/security-alert-triage-agent)**: Helps security teams triage alerts at scale using AI-driven reasoning, identifying which alerts represent real attacks and which are false positives. This agent evolved from the Phishing Triage Agent and now supports email, identity, and cloud alerts.
 - **[Threat Intelligence Briefing Agent](/defender-xdr/threat-intel-briefing-agent-defender)**: Also available in the Defender portal, this agent gathers and synthesizes threat intelligence data to deliver concise and actionable insights to security operations teams.
-- **[Threat Hunting Agent](/defender-xdr/advanced-hunting-security-copilot-threat-hunting-agent)**: Enables threat hunting using natural language, generates KQL queries, interprets results, and guides analysts through full hunting sessions.
+- **[Threat Hunting Assistant](/defender-xdr/advanced-hunting-security-copilot-threat-hunting-assistant)**: Enables threat hunting using natural language, generates KQL queries, interprets results, and guides analysts through full hunting sessions.
 - **[Dynamic Threat Detection Agent](/defender-xdr/dynamic-threat-detection-agent)**: An always-on adaptive service that uncovers hidden threats across Defender and Microsoft Sentinel environments by correlating alerts, events, and threat intelligence.
 - **[Security Analyst Agent](/copilot/security/security-analyst-agent)**: Accessible in the Advanced hunting experience in the Defender portal, this agent helps security analysts quickly identify, assess, and prioritize risks by analyzing data from Microsoft Defender XDR, Microsoft Sentinel Log Analytics, or Microsoft Sentinel Data Lake.
 

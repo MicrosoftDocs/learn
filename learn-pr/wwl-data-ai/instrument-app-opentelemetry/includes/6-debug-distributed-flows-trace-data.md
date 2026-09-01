@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=87b91fdf-e227-4a04-8bd7-e0d3848eb2a7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Collecting and exporting telemetry is only valuable when you can use that data to find and fix problems. This unit covers how to use Application Insights tools and KQL queries to navigate distributed traces, identify performance bottlenecks, and diagnose issues specific to AI workloads.
 
 ## Navigate the Application Map
@@ -82,6 +93,8 @@ Building proactive monitoring around these patterns improves reliability. You ca
 - Set alerts in Application Insights for latency thresholds on specific operations.
 - Use workbooks to create dashboards that display AI pipeline health metrics.
 - Correlate trace data with custom metrics to identify trends before they affect users.
+
+::: zone-end
 
 ## Additional resources
 

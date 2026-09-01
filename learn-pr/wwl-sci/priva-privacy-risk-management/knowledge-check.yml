@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 01/17/2025
+  ms.date: 08/14/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
@@ -17,23 +17,23 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the primary reason your organization chose Microsoft Priva Privacy Risk Management?"
+  - content: "Two weeks after activating a Data overexposure policy, your team sees 340 new alerts on the **Alerts** page. The **Active alerts over time** card on the Reports page shows the spike is coming from that one policy, while other active policies show normal volumes. What's the most likely explanation?"
     choices:
-    - content: "To ensure compliance with privacy regulations by managing personal data risks proactively"
+    - content: "The policy's conditions are too broad or its alert frequency is set to per-match."
       isCorrect: true
-      explanation: "Correct: Privacy Risk Management helps organizations manage personal data risks and comply with privacy regulations."
-    - content: "To enforce disciplinary actions for employees who mishandle data"
+      explanation: "Correct: A spike traceable to a single policy usually points to a tuning problem. Microsoft's docs recommend the condition-based frequency option (**Alert when one of the conditions below is met**) to keep volume manageable."
+    - content: "A real overexposure event is happening organization-wide."
       isCorrect: false
-      explanation: "Incorrect: Privacy Risk Management focuses on mitigating risks and enabling corrective actions, not disciplinary enforcement."
-    - content: "To create retention labels for archiving older data"
+      explanation: "Incorrect: A real organizational event usually generates matches across multiple policies at once, not concentrated in one. A spike from a single policy points to tuning, not a real event."
+    - content: "The policy needs to be deleted and recreated to reset its alert history."
       isCorrect: false
-      explanation: "Incorrect: While retention labels can be applied, Privacy Risk Management is primarily about mitigating privacy risks, not archiving data."
+      explanation: "Incorrect: Editing the policy preserves settings and history and is the documented path for tuning. Deletion is appropriate when the policy no longer maps to any risk, not when it needs adjustment."
 
   - content: "Which policy type should you prioritize to address the overexposure of Social Security numbers and medical histories in internal file shares?"
     choices:
-    - content: "Data minimization"
+    - content: "Subject rights requests"
       isCorrect: false
-      explanation: "Incorrect: Data minimization policies focus on identifying and managing older, unused personal data, not overexposure."
+      explanation: "Incorrect: Subject rights requests help fulfill data subject requests for personal data. They aren't a Privacy Risk Management policy type."
     - content: "Data overexposure"
       isCorrect: true
       explanation: "Correct: Data overexposure policies detect when sensitive data is accessible to more users than necessary."
@@ -41,29 +41,29 @@ quiz:
       isCorrect: false
       explanation: "Incorrect: Data transfer policies monitor the movement of personal data, not access within file shares."
 
-  - content: "How can you ensure the effectiveness of a newly created data overexposure policy before it starts generating alerts?"
+  - content: "A team member wants to pause a Privacy Risk Management policy for two weeks while investigating whether its alert volume reflects a real risk pattern or over-broad conditions. Which action fits?"
     choices:
-    - content: "Enable test mode to review matches and refine conditions"
+    - content: "Turn off the policy."
       isCorrect: true
-      explanation: "Correct: Test mode allows you to evaluate a policy's performance and adjust settings before activation."
-    - content: "Activate the policy immediately and monitor alerts in real time"
+      explanation: "Correct: Turning off pauses detection without deleting the policy or its history. When the investigation is done, the team can turn it back on from the same location."
+    - content: "Delete the policy and recreate it after the investigation."
       isCorrect: false
-      explanation: "Incorrect: Activating the policy without testing could lead to unnecessary alerts and missed opportunities for refinement."
-    - content: "Set thresholds for immediate alerts without running the policy in test mode"
+      explanation: "Incorrect: Deletion is permanent. It's the right action when a policy no longer maps to any risk, not for a temporary pause during investigation."
+    - content: "Keep the policy active and filter the Alerts page to hide items during the investigation."
       isCorrect: false
-      explanation: "Incorrect: Test mode provides essential insights that help refine thresholds and conditions."
+      explanation: "Incorrect: Filtering hides items in the view but doesn't stop the policy from generating new alerts, notifications, or downstream activity. Turning off is what pauses detection."
 
-  - content: "What insights can be gained from the 'Instances of sensitive info types' report in Privacy Risk Management?"
+  - content: "Your team activated an overexposure policy 30 days ago. The **Overexposed personal data** trend line on the Reports page has stayed flat, even though the team has been actively working alerts and applying remediation actions. What's the most likely explanation?"
     choices:
-    - content: "The number of sensitive information types detected and their locations."
+    - content: "The policy's conditions are probably too narrow, so remediation is closing individual issues without changing the environment-wide overexposure baseline."
       isCorrect: true
-      explanation: "Correct: The report highlights the count of sensitive information types and where they're stored."
-    - content: "The total number of employees with access to sensitive data."
+      explanation: "Correct: When trend lines stay flat during active remediation, the policy conditions usually aren't catching all the actual overexposure. Editing the policy to broaden its data sources, classification groups, or condition types is the next step."
+    - content: "Remediation actions don't affect the overexposure trend line because it's tracked separately."
       isCorrect: false
-      explanation: "Incorrect: The report doesn't track user access, only the presence and location of sensitive information."
-    - content: "The types of personal data shared outside the organization."
+      explanation: "Incorrect: The trend line reflects environment-wide overexposure, which remediation actions should be reducing. A flat trend line despite active remediation is a signal that the policy isn't catching enough content."
+    - content: "The Reports page has a 30-day delay before showing changes."
       isCorrect: false
-      explanation: "Incorrect: This information is captured by data transfer policies, not this report."
+      explanation: "Incorrect: Priva reports update as new data is collected. Microsoft's docs note it can take up to 48 hours after activation for data to come through, not 30 days."
 
   - content: "What feature in Privacy Risk Management can notify content owners of potential risks and suggest remediation actions?"
     choices:

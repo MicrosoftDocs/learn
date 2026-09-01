@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement and Manage External Identities
   description: "Inviting external users to use company Azure resources is a great benefit, but you want to do it in a secure way. Explore how to enable secure external collaboration."
-  ms.date: 04/08/2025
+  ms.date: 08/20/2026
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
@@ -17,7 +17,7 @@ metadata:
 title: Implement and manage external identities
 summary: Inviting external users to use company Azure resources is a great benefit, but you want to do it in a secure way. Explore how to enable secure external collaboration.
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you're able to:
 
   -   Manage external collaboration settings in Microsoft Entra ID
 

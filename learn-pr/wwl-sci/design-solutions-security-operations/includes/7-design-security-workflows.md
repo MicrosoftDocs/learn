@@ -89,7 +89,7 @@ Microsoft Security Copilot integrates across security workflows to accelerate an
 |----------------|------------------------------|
 | **Incident triage** | Summarize incidents in natural language, identify attack scope, provide guided response actions with recommended next steps |
 | **Investigation** | Generate investigation queries, analyze scripts and files for malicious behavior, explain complex attack chains, correlate related alerts |
-| **Threat hunting** | Use the Threat Hunting Agent for conversational hunting and multistep investigations, or the query assistant to create KQL queries from natural language descriptions |
+| **Threat hunting** | Use the Threat Hunting Assistant for conversational hunting and multistep investigations, or the query assistant to create KQL queries from natural language descriptions |
 | **Response** | Provide step-by-step remediation guidance, generate response playbook recommendations |
 | **Reporting** | Create executive summaries, generate post-incident reports for stakeholders |
 

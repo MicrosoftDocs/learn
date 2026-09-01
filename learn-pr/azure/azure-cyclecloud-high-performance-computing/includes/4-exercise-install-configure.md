@@ -27,8 +27,8 @@ Start by creating a Managed Identity.
     | --- | --- |
     | Subscription | Select the name of the Azure subscription you're using in this module. |
     | Resource group | Select **Create new**. In the **Name** text box, enter **cyclecloud-rg**, and select **OK**. |
-    | Region | Select the name of the Azure region in which you intend to deploy your clusters. |
     | Name | Enter **locker-mi** |
+    | Region | Select the name of the Azure region in which you intend to deploy your clusters. |
 
 1. On the **Basics** tab of the **Create User Assigned Managed Identity** pane, select **Review + Create**, wait for the validation process to complete, and then select **Create**.
 
@@ -47,11 +47,19 @@ Next, create a storage account and assign the **Storage Blob Data Reader** role 
     | Subscription | Select the name of the Azure subscription you're using in this module. |
     | Resource group | Select the **cyclecloud-rg** entry |
     | Storage account name | Enter any globally unique name between 3 and 24 characters in length, consisting of letters and digits, and starting with a letter. |
-    | Location | Select the name of the Azure region in which you intend to deploy your clusters. |
+    | Region | Select the name of the Azure region in which you intend to deploy your clusters. |
+    | Primary service | Select the **Azure Blob Storage or Azure Data Lake Storage** option. |
     | Performance | Select the **Standard** option. |
     | Redundancy | Select the **Locally redundant storage (LRS)** entry. |
 
-1. On the **Basics** tab of the **Create storage account** pane, select **Review + Create**, wait for the validation process to complete, and then select **Create**.
+1. On the **Security** tab of the **Create storage account** pane, configure the following settings (leave others with their default values):
+
+    | Setting | Value |
+    | --- | --- |
+    | Enable storage account key access | If present and enabled, clear the checkbox. |
+    | Default to Microsoft Entra authorization in the Azure portal | Select the checkbox. |
+
+1. On the **Security** tab of the **Create storage account** pane, select **Review + Create**, wait for the validation process to complete, and then select **Create**.
 
     > [!NOTE]
     > Wait for the storage account provisioning to complete. This should take about one minute.
@@ -96,7 +104,6 @@ Next, deploy an Azure virtual machine that hosts the Azure CycleCloud applicatio
     | Availability options | **No infrastructure redundancy required** |
     | Security type | **Standard** |
     | Image | Accept the default image selection determined by the marketplace plan you chose in the previous step. |
-    | Azure Spot instance | Leave the checkbox unselected. |
     | Size | Select **See all sizes**. On the **Select a VM size** pane, select the **Standard E4s v3** entry, and then enter **Select**. |
 
     > [!NOTE]

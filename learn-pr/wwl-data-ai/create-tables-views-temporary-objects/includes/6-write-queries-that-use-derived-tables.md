@@ -1,6 +1,6 @@
 Derived tables allow you to write Transact-SQL statements that are more modular, helping you to break down complex queries into more manageable parts. Using derived tables in your queries can also provide workarounds for some of the restrictions imposed by the logical order of query processing, such as the use of column aliases.
 
-Like subqueries, you create derived tables in the FROM clause of an outer SELECT statement. Unlike subqueries, you write derived tables using a named expression that is logically equivalent to a table and may be referenced as a table elsewhere in the outer query.
+Like subqueries, you create derived tables in the `FROM` clause of an outer `SELECT` statement. Unlike subqueries, you write derived tables using a named expression that is logically equivalent to a table and may be referenced as a table elsewhere in the outer query.
 
 Derived tables are not stored in the database. Therefore, no special security privileges are required to write queries using derived tables, other than the rights to select from the source objects.
 A derived table is created at the time of execution of the outer query and goes out of scope when the outer query ends.
@@ -53,9 +53,9 @@ GO
 
 When writing queries that use derived tables, keep the following guidelines in mind:
 
-- The nested SELECT statement that defines the derived table must have an alias assigned to it. The outer query will use the alias in its SELECT statement in much the same way you refer to aliased tables joined in a FROM clause.
-- All columns referenced in the derived table's SELECT clause should be assigned aliases, a best practice that is not always required in Transact-SQL. Each alias must be unique within the expression. The column aliases may be declared inline with the columns or externally to the clause.
-- The SELECT statement that defines the derived table expression may not use an ORDER BY clause, unless it also includes a TOP operator, an OFFSET/FETCH clause, or a FOR XML clause. As a result, there is no sort order provided by the derived table. You sort the results in the outer query.
-- The SELECT statement that defines the derived table may be written to accept arguments in the form of local variables. If the SELECT statement is embedded in a stored procedure, the arguments may be written as parameters for the procedure.
+- The nested `SELECT` statement that defines the derived table must have an alias assigned to it. The outer query will use the alias in its `SELECT` statement in much the same way you refer to aliased tables joined in a `FROM` clause.
+- All columns referenced in the derived table's `SELECT` clause should be assigned aliases, a best practice that is not always required in Transact-SQL. Each alias must be unique within the expression. The column aliases may be declared inline with the columns or externally to the clause.
+- The `SELECT` statement that defines the derived table expression may not use an `ORDER BY` clause, unless it also includes a TOP operator, an OFFSET/FETCH clause, or a FOR XML clause. As a result, there is no sort order provided by the derived table. You sort the results in the outer query.
+- The `SELECT` statement that defines the derived table may be written to accept arguments in the form of local variables. If the `SELECT` statement is embedded in a stored procedure, the arguments may be written as parameters for the procedure.
 - Derived table expressions that are nested within an outer query can contain other derived table expressions. Nesting is permitted, but it is not recommended due to increased complexity and reduced readability.
-- A derived table may not be referred to multiple times within an outer query. If you need to manipulate the same results, you will need to define the derived table expression every time, such as on each side of a JOIN operator.
+- A derived table may not be referred to multiple times within an outer query. If you need to manipulate the same results, you will need to define the derived table expression every time, such as on each side of a `JOIN` operator.

@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.work-smarter-copilot-finance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Work smarter with Copilot prompts for finance professionals" module.
+  ms.date: 07/20/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "According to the module, how can Microsoft 365 Copilot Chat help finance professionals protect focus time before important reviews and deadlines?"
+    choices:
+        - content: "By identifying suggested focus windows around meetings and key deadlines"
+          isCorrect: true
+          explanation: "Correct. The module explains that Copilot Chat can use calendar and work data to help identify focus windows around key deadlines and meetings."
+        - content: "By automatically rewriting PowerPoint slides"
+          isCorrect: false
+          explanation: "Incorrect. Rewriting content is discussed as a Click to Do capability, not a Copilot Chat scheduling capability."
+        - content: "By translating audio from external webinars"
+          isCorrect: false
+          explanation: "Incorrect. The module describes Live Captions as the feature used to translate spoken audio."
+        - content: "By generating searchable meeting transcripts"
+          isCorrect: false
+          explanation: "Incorrect. Searchable transcripts are associated with Teams captions and meeting experiences, not the Copilot Chat workflow for focus time."
+  - content: "What does the module recommend finance professionals do with Copilot-generated insights in Excel?"
+    choices:
+        - content: "Validate the insights before using them"
+          isCorrect: true
+          explanation: "Correct. The module explicitly states that Copilot-generated insights should be validated before use."
+        - content: "Automatically publish them to stakeholders"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't recommend automatically publishing insights without review."
+        - content: "Replace all existing financial analysis with them"
+          isCorrect: false
+          explanation: "Incorrect. The module presents Copilot as an assistant that helps identify patterns and summarize insights, not as a replacement for analysis."
+        - content: "Export them directly into Teams transcripts"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't describe exporting Excel insights into Teams transcripts."
+  - content: "When is natural language most helpful in Improved Windows Search?"
+    choices:
+        - content: "When you know what you are looking for but not what it's called or where it's located"
+          isCorrect: true
+          explanation: "Correct. The module states that natural language search is most useful when you know the content you need but not its name or location."
+        - content: "When you know the exact file name and folder path"
+          isCorrect: false
+          explanation: "Incorrect. The module indicates traditional filtering is more useful when you already know specific file details."
+        - content: "When you need to enable Focus mode"
+          isCorrect: false
+          explanation: "Incorrect. Focus mode is discussed in the Agent in Settings workflow."
+        - content: "When you want to create meeting summaries"
+          isCorrect: false
+          explanation: "Incorrect. Meeting summaries are covered in the Copilot in Teams section."
+  - content: "Which statement accurately describes Live Captions and Teams captions?"
+    choices:
+        - content: "Live Captions work across device audio, while Teams captions are designed for Teams meetings"
+          isCorrect: true
+          explanation: "Correct. The module explains that Live Captions are device-wide and Teams captions apply to spoken conversation in Teams meetings."
+        - content: "Live Captions provide speaker attribution, while Teams captions don't"
+          isCorrect: false
+          explanation: "Incorrect. The module states that speaker attribution is available with Teams captions, not Live Captions."
+        - content: "Live Captions create meeting recaps, while Teams captions only display text"
+          isCorrect: false
+          explanation: "Incorrect. Teams captions can support transcripts, recaps, and collaboration features."
+        - content: "Live Captions only work inside Teams meetings"
+          isCorrect: false
+          explanation: "Incorrect. The module describes Live Captions as a device-wide feature that can work with any audio playing on the PC."
+  - content: "What must be active for Copilot in Teams to analyze a meeting and respond to prompts?"
+    choices:
+        - content: "Transcription or recording"
+          isCorrect: true
+          explanation: "Correct. The module notes that Copilot can only analyze meeting content if transcription or recording is actively running."
+        - content: "Windows Studio Effects"
+          isCorrect: false
+          explanation: "Incorrect. Windows Studio Effects enhances camera and audio experiences but isn't required for Copilot meeting analysis."
+        - content: "Improved Windows Search"
+          isCorrect: false
+          explanation: "Incorrect. Improved Windows Search is used for finding files, not analyzing meetings."
+        - content: "Click to Do"
+          isCorrect: false
+          explanation: "Incorrect. Click to Do supports actions on content displayed on the screen and is unrelated to meeting transcription requirements."

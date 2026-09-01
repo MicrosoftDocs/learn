@@ -4,8 +4,8 @@ metadata:
   title: Guided project - Debug and handle exceptions in a C# console application using Visual Studio Code
   description: "This module guides you through the code verification process for a C# console application. Hands-on activities provide experience identifying logic issues, debugging the application, and implementing exception handling. Step-by-step instructions are provided."
   ms.date: 12/15/2025
-  author: ChrisHowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module
   ms.custom:
   - N/A

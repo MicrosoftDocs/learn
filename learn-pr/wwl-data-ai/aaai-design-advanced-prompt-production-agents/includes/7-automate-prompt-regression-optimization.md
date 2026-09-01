@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0cb3f0cc-3c0d-41ef-afd2-72ed9836c673]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Manual evaluation catches obvious regressions, but subtle quality degradation across edge cases only shows up at scale and across many commits. The Azure AI Evaluation SDK integrates directly into your CI/CD pipeline, turning your evaluation test suite into a quality gate on every prompt change.
 
 ## Automate regression testing in CI/CD pipelines
@@ -126,3 +137,5 @@ Revert to v1.1.0 if:
 Decision logs create institutional memory. New team members understand why the system prompt is designed in the way it is. Regulatory audits have documented evidence for optimization decisions. Future prompt engineers don't repeat experiments that already failed.
 
 These versioning and optimization workflows form the operational backbone that keeps agent quality measurable and improvable over time.
+
+::: zone-end

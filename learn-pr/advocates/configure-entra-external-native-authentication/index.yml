@@ -3,7 +3,7 @@ uid: learn.intro-entra-external-native-auth
 metadata:
   ms.author: orthomas
   author: S2FrdQ
-  ms.date: 04/10/2025
+  ms.date: 07/25/2026
   title: Guided project - Add sign-up in an Android mobile app and iOS/macOS app using native authentication
   description: Discover how Microsoft Entra native authentication allows you to have full control over the design of your mobile and desktop application sign-in experiences. With this approach, you can fully customize the user interface, including design elements, logo placement, and layout, ensuring a consistent and branded look while also providing a secure, seamless sign-in experience for your consumers and business customers.
   ms.topic: module

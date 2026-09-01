@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-data-fundamentals-explore-core-data-concepts
 metadata:
-  title: 'Introduction to Microsoft Azure Data core data concepts'
-  description: 'Introduction to Microsoft Azure Data core data concepts'
+  title: 'Introduction to Microsoft Azure Data Core Data Concepts'
+  description: 'Data is the foundation on which all software is built. Learn about common data formats, workloads, roles, and services, which are vital to data professionals.'
   ms.date: 05/04/2026
   author: weslbo
   ms.author: wedebols

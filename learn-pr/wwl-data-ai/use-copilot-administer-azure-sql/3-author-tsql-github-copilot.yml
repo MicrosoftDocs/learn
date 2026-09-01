@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-copilot-administer-azure-sql.author-tsql-github-copilot
+title: Write T-SQL with GitHub Copilot in SSMS
+metadata:
+  title: Write T-SQL with GitHub Copilot in SSMS
+  description: Use GitHub Copilot in SSMS and the VS Code mssql extension to write, explain, optimize, and refactor T-SQL for DBA tasks.
+  ms.date: 06/12/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-author-tsql-github-copilot.md)]

@@ -3,7 +3,7 @@ uid: learn.wwl.design-machine-learning-solution
 metadata:
   title: Design a machine learning solution
   description: Design a machine learning solution with Azure Machine Learning v2
-  ms.date: 12/01/2025
+  ms.date: 08/27/2026
   author: wwlpublish
   ms.author: madiepev
   ms.topic: learning-path
@@ -28,8 +28,6 @@ subjects:
 - machine-learning
 modules:
 - learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects
-- learn.wwl.design-machine-learning-model-training-solution
 - learn.wwl.design-model-deployment-solution
-- learn.wwl.design-machine-learning-operations-solution
 trophy:
   uid: learn.wwl.design-machine-learning-solution.trophy

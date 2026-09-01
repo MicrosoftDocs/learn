@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=59ded646-51c2-4ec8-ac38-eb100e9f1692]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Once you understand the basic KQL operators, the next step is applying them to real investigation scenarios. When an AI pipeline experiences errors or performance degradation, developers need to identify what's failing, correlate issues across services, and measure the impact on dependent systems. This unit covers the KQL patterns and Application Insights tools that developers use to investigate application errors and analyze performance bottlenecks.
 
 ## Investigate application errors with KQL
@@ -84,6 +95,8 @@ The Failures view groups failed operations by type and displays the top three re
 The Performance view shows all operations with their response time distributions and request counts. You can access this view from **Investigate > Performance**. The view displays a summary of operations ranked by duration or count, and selecting an operation reveals the duration distribution chart. This chart shows the range of response times for that operation, making it easy to spot bimodal distributions where most requests are fast but a subset is consistently slow.
 
 KQL queries are the right tool when you need to join across tables, build custom aggregations, filter by dimensions that the built-in views don't expose, or create visualizations for dashboards. The built-in views are the right tool when you need a quick investigation starting point or want to drill into a specific transaction's end-to-end timeline. In practice, developers often start with the built-in views to identify the general problem area, then switch to KQL to dig deeper into specific patterns and root causes.
+
+::: zone-end
 
 ## Additional resources
 

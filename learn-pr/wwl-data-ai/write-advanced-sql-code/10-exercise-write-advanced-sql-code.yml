@@ -2,11 +2,11 @@
 uid: learn.wwl.write-advanced-sql-code.exercise-write-advanced-sql-code
 title: Exercise - Work with JSON functions
 metadata:
-  title: Exercise - Work with JSON functions
+  title: Exercise - Work with JSON Functions
   description: Practice building JSON output and parsing JSON data using the AdventureWorksLT database.
-  ms.date: 01/28/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/02/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 durationInMinutes: 30
 content: |

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-azure-documentdb.what-azure-documentdb
+title: What is Azure DocumentDB?
+metadata:
+  title: What Is Azure DocumentDB?
+  description: "Learn what Azure DocumentDB is, its open-source foundation, MongoDB compatibility, and how it relates to Azure Cosmos DB."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-azure-documentdb.md)]

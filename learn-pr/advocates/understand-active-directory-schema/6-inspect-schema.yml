@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-schema.inspect-schema
+title: Inspect the schema
+metadata:
+  title: Inspect the Schema
+  description: Use supported read-only tools to discover, query, export, compare, and interpret schema state.
+  ms.date: 07/30/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-inspect-schema.md)]

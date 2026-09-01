@@ -2,9 +2,9 @@
 uid: learn.wwl.choose-power-bi-model-framework
 metadata:
   title: Choose a Power BI model framework
-  description: "Choose a Power BI model framework"
-  ms.date: 01/11/2023
-  author: wwlpublish
+  description: "Learn about Power BI model frameworks including import, DirectQuery, and composite models. Understand the benefits and limitations of each to optimize your data models."
+  ms.date: 06/12/2026
+  author: angierudduck
   ms.author: anrudduc
   ms.topic: module
   ms.service: powerbi

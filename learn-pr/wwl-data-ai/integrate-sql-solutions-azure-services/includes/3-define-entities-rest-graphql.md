@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b869e5ef-e7d9-405d-b257-b436e79019ed]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Entities are the core building blocks of Data API Builder. Each entity maps to a database object and defines how that object appears through your REST and GraphQL APIs. When you define entities properly, you control what data clients can access, what operations they can perform, and how the data appears in API responses.
 
 Building on the configuration file you created, the `entities` section is where you specify the tables, views, and other database objects that DAB exposes. You configure each entity with source mappings, field customizations, and relationship definitions that shape your API surface.
@@ -327,3 +338,5 @@ Each entity can have GraphQL-specific configuration that differs from REST:
 The `type` property customizes the GraphQL type names. By default, DAB uses the entity name, but you can specify different singular and plural forms.
 
 The `operation` property determines where mutations appear. Use `query` for read-only entities (like views) or `mutation` for entities that support write operations.
+
+::: zone-end

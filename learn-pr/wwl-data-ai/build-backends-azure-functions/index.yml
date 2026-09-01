@@ -3,7 +3,7 @@ uid: learn.wwl.build-backends-azure-functions
 metadata:
   title: Build Serverless AI Backends with Azure Functions
   description: Learn how to use Azure Functions as lightweight serverless compute for AI workloads, including inference endpoints, event processors, and integration with Azure services.
-  ms.date: 02/13/2026
+  ms.date: 06/15/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

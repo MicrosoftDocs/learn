@@ -72,6 +72,7 @@ az acr create \
 1. Install [**DAB CLI**](/azure/data-api-builder/how-to-install-cli?azure-portal=true).
 
     ```azurecli
+    RUN dotnet new tool-manifest
     RUN dotnet tool install Microsoft.DataApiBuilder
     ```
 
@@ -82,14 +83,13 @@ az acr create \
     ```
 1. Copy the configuration file to the final **mcr.microsoft.com/azure-databases/data-api-builder** container image.
 1. Build the image as an Azure container registry task by running the `az acr build` to build your image.
-1. Configure the container app to use the container registry.
+1. Configure the container app to use the container registry. Because the registry was created with `--admin-enabled false`, use the container app's system-assigned managed identity (which has the `AcrPull` role assigned in the previous step) instead of admin credentials.
     ```bash
     az containerapp registry set \
       --name <container-app-name> \
       --resource-group <resource-group-name> \
       --server <container-registry-login-server> \
-      --username <container-registry-username> \
-      --password <container-registry-password>
+      --identity system-environment
     ```
 1. Create a secret with the Azure SQL connection string.
     ```bash

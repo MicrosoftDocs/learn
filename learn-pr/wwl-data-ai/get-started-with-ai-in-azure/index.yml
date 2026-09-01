@@ -4,8 +4,8 @@ metadata:
   title: Get started with AI in Azure
   description: "This module introduces Azure and its capabilities for building AI solutions. Explore the key features and benefits of using Microsoft Foundry for AI development."
   ms.date: 03/24/2026
-  author: sherzyang
-  ms.author: sheryang
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: module
   ms.service: microsoft-foundry
 title: Get started with AI in Azure

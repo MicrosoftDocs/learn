@@ -1,20 +1,21 @@
-To onboard your on-premises machines by using the Azure portal, do this procedure.
+The Windows onboarding script includes the Azure cloud, connectivity, resource, and authentication settings you selected in the Azure portal. It doesn't require Log Analytics workspace credentials.
 
-1.  Select **Windows servers**.
-    
-    :::image type="content" source="../media/windows-servers-added-d15c1de0.png" alt-text="Displays a screenshot of the controls for selecting Windows Servers." lightbox="../media/windows-servers-added-d15c1de0.png":::
-    
-    
-    When you add a Windows server, you need to get the information on the Agents management page and download the appropriate agent file (32 bit or 64 bit).
-2.  Select the **Download Windows Agent** link that's applicable to your computer processor type to download the setup file.
-3.  From the **Agents management** page, copy the **Workspace ID** and **Primary Key** values into Notepad.
-4.  Copy the downloaded setup file to the target computer and run it.
-5.  Follow the installation wizard (select **Next &gt; I Agree &gt; Next &gt; Next**).
-6.  On the **Azure Log Analytics** page, paste the Workspace ID and Primary Key values that you copied into Notepad.
-7.  If the computer should report to a Log Analytics workspace in the Azure Government cloud, select **Azure US Government** from the **Azure Cloud** dropdown list.
-8.  If the computer needs to communicate through a proxy server to the Log Analytics service, select **Advanced**. Then provide the URL and port number of the proxy server.
-9.  When you finish entering all of the configuration settings, select **Next**.
-10. On the **Ready to Install** page, review the settings to be applied and select **Install**.
-11. On the **Configuration completed successfully** page, select **Finish**.
+To connect a Windows server:
 
-When the process is complete, **Microsoft Monitoring agent** appears in Control Panel. You can review your configuration there and verify that the agent is connected.
+1. Copy `OnboardingScript.ps1` to the target server.
+2. Sign in to the server with an account that's a member of the local Administrators group.
+3. Open an elevated 64-bit Windows PowerShell prompt.
+4. Change to the folder that contains the script, and then run it:
+
+    ```powershell
+    .\OnboardingScript.ps1
+    ```
+
+5. Complete the interactive Azure sign-in when the script prompts you.
+6. Run the following command and confirm that **Agent Status** is **Connected**:
+
+    ```powershell
+    azcmagent show
+    ```
+
+Alternatively, verify the connection on the **Machines - Azure Arc** page in the Azure portal. If onboarding fails, review the logs in `%ProgramData%\AzureConnectedMachineAgent\Log`.

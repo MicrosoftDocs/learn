@@ -2,21 +2,22 @@
 uid: learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances
 metadata:
   title: Monitor Windows Server IaaS Virtual Machines and hybrid instances
-  description: "Monitor Windows Server IaaS Virtual Machines and hybrid instances"
-  ms.date: 01/23/2026
+  description: "Learn how to monitor Windows Server IaaS VMs and hybrid instances using Azure Monitor, Log Analytics workspaces, the Dependency Agent for service maps, and integration with Microsoft Operations Manager."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Monitor Windows Server IaaS Virtual Machines and hybrid instances
-summary: Learn to implement Azure Monitor for IaaS VMs in Azure, implement Azure Monitor in on-premises environments, and use dependency maps.
+summary: |
+  This module covers how to monitor Windows Server IaaS virtual machines and hybrid instances using Azure Monitor. You learn how to enable Azure Monitor for VMs with Log Analytics workspaces and the Dependency Agent for service maps, monitor VM performance, health, and dependencies through the Azure portal, configure Azure Monitor in hybrid scenarios to extend monitoring to on-premises servers using the Log Analytics agent, collect monitoring data from Windows computers in hybrid environments, and integrate Azure Monitor with Microsoft Operations Manager for organizations using existing System Center investments.
 abstract: |
   After completing this module, you'll be able to:
   - Enable Azure Monitor for VMs.
   - Monitor an Azure VM with Azure Monitor.
   - Enable Azure Monitor in hybrid scenarios.
   - Collect data from a Windows computer in a hybrid environment.
-  - Integrate Azure Monitor with Microsoft Operations Manager.
+  - Plan Azure Monitor and Operations Manager coexistence.
 prerequisites: |
   In order to get the best learning experience from this module, it's important that you have knowledge and experience of the following:
   - Managing the Windows Server operating system (OS) and Windows Server workloads in on-premises scenarios including AD DS, Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services.

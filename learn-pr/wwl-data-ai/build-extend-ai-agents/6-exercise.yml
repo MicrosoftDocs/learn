@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-extend-ai-agents.exercise
+title: Exercise - Build and extend an AI agent
+metadata:
+  title: Exercise - Build and extend an AI agent
+  description: "Get hands-on experience building a grounded agent and extending it with tools using MCP."
+  ms.date: 08/21/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise.md)]

@@ -55,38 +55,6 @@ We can refer to the [Basic Configuration](https://playwright.dev/docs/test-confi
 - [`use`](https://playwright.dev/docs/api/class-testconfig#test-config-use): Set [global options](https://playwright.dev/docs/test-use-options) for all tests (can be overridden at project or test scope).
 - [`projects`](https://playwright.dev/docs/api/class-testconfig#test-config-projects): Run tests in multiple configurations (browsers, emulators, options).
 
-## Run the demo todo app tests
-
-The *tests-examples* folder contains tests for a demo todo app. First, copy that spec file (*demo-todo-app.spec.ts*) and paste it into your *tests* folder.
-
-Run your tests:
-
-```bash
-npx playwright test
-```
-
-This time, Playwright will run tests from both spec files in our tests folder.
-
-```bash
-Running 78 tests using 5 workers
-  78 passed (15.4s)
-
-To open last HTML report run:
-  npx playwright show-report
-```
-
-Wow, that's several tests. To see what happened, let's open the HTML report.
-
-```bash
-npx playwright show-report
-```
-
-:::image type="content" source="../media/run-report.png" alt-text="A screenshot of an HTML report showing 2 test files.":::
-
-The report tells us that all tests were run on the three different browser engines: `Chromium`, `Firefox`, and `Webkit`.
-
-You can remove the *demo-todo-app.spec.ts* file from your *tests* folder.
-
 ## Configure projects
 
 A project is a group of tests that run with the same configuration and can be used to run tests on different browsers and devices. In the last section, we learned how to run a test on the Chromium browser by adding the `-- project` option after the test command in the CLI.
@@ -126,7 +94,7 @@ Let's run the `show-report` command and note how the report now only shows us th
 
 ## Explore Emulation
 
-Playwright supports [Emulation](https://playwright.dev/docs/emulation) for mobile testing. You can select device profiles from the [supported emulation profiles](https://github.com/microsoft/playwright/blob/main/packages/playwright-core/src/server/deviceDescriptorsSource.json) and add it as a new project in the configuration file.
+Playwright supports [Emulation](https://playwright.dev/docs/emulation) for mobile testing. You can select device profiles from the [supported emulation profiles](https://github.com/microsoft/playwright/blob/main/packages/isomorphic/deviceDescriptorsSource.json) and add it as a new project in the configuration file.
 
 You might notice that the default configuration file (*playwright.config.ts*) has a commented-out section for testing against mobile viewports. Let's uncomment out the project for Mobile Safari.
 
@@ -144,7 +112,7 @@ You might notice that the default configuration file (*playwright.config.ts*) ha
   ],
 ```
 
-Here's what the [profile description](https://github.com/microsoft/playwright/blob/main/packages/playwright-core/src/server/deviceDescriptorsSource.json) for the iPhone 12 Pro looks like:
+Here's what the [profile description](https://github.com/microsoft/playwright/blob/main/packages/isomorphic/deviceDescriptorsSource.json) for the iPhone 12 Pro looks like:
 
 ```json
   "iPhone 12 Pro": {

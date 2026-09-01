@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=add329e2-2b2c-4233-9d35-8836b2379d2a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Semantic retrieval finds documents based on meaning rather than exact keyword matches. This capability powers applications like knowledge base search, document discovery, and recommendation systems. Effective semantic retrieval combines vector similarity with metadata filtering, distance thresholds, and query patterns that return contextually relevant results.
 
 This unit covers practical query patterns for semantic retrieval scenarios. You learn to filter results by metadata, set quality thresholds, handle complex queries, and combine vector search with full-text search for hybrid retrieval.
@@ -110,3 +121,5 @@ LIMIT 10;
 To speed up keyword matching, create a GIN index on the full-text search vector. For frequently searched columns, storing the tsvector in a generated column avoids recomputing it for every query.
 
 Hybrid search adds complexity and computation. Use it when users search for specific terms that must match exactly, when your corpus includes technical jargon where synonyms don't capture the right meaning, or when you want to boost results that match both semantically and lexically. For pure semantic search where meaning matters more than specific words, vector-only search is simpler and often sufficient.
+
+::: zone-end

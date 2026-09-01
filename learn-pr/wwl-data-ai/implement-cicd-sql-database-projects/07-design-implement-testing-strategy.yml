@@ -2,11 +2,12 @@
 uid: learn.wwl.implement-cicd-sql-database-projects.design-implement-testing-strategy
 title: Design and implement a testing strategy
 metadata:
-  title: Design and implement a testing strategy
+  zone_pivot_groups: video-or-text
+  title: Design and Implement a Testing Strategy
   description: Design and implement a database testing strategy with SQL Server unit tests, integration tests, and CI/CD pipeline integration.
   author: calopez
   ms.author: calopez
-  ms.date: 07/14/2025
+  ms.date: 7/13/2026
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 10

@@ -16,4 +16,3 @@ Detailed resources:
 
 - Deploy microservices with Azure Container Apps - [/azure/architecture/example-scenario/serverless/microservices-with-container-apps](/azure/architecture/example-scenario/serverless/microservices-with-container-apps)
 
-- Azure Container Apps example scenario - [https://github.com/mspnp/container-apps-fabrikam-dronedelivery#expected-results](https://github.com/mspnp/container-apps-fabrikam-dronedelivery#expected-results)

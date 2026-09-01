@@ -4,12 +4,12 @@ title: Describe Azure database migration options
 metadata:
   title: Describe Azure database migration options
   description: "Describe Azure database migration options"
-  ms.date: 04/15/2022
-  author: wwlpublish
+  ms.date: 08/04/2026
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-describe-azure-database-migration-options.md)]
+  [!include[](includes/4-describe-azure-database-migration-options.md)]

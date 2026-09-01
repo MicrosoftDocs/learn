@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.design-multi-domain-active-directory-forest.plan-advanced-replication-capacity
+title: Plan advanced replication and capacity
+metadata:
+  title: Plan Advanced Replication and Capacity
+  description: Plan urgent replication, lingering-object controls, bridgehead behavior, Windows Server 2025 replication features, and domain controller capacity.
+  ms.date: 07/15/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-plan-advanced-replication-capacity.md)]

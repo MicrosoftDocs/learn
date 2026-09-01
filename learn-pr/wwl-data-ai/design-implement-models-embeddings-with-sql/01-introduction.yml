@@ -2,11 +2,12 @@
 uid: learn.wwl.design-implement-models-embeddings-with-sql.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: Get started with AI models and embeddings in Azure SQL Database for intelligent applications.
   author: calopez
   ms.author: calopez
-  ms.date: 02/02/2026
+  ms.date: 07/16/2026
   ms.topic: unit
 durationInMinutes: 3
 content: |

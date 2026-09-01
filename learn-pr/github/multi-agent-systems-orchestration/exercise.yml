@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.multi-agent-systems-orchestration.exercise
+title: Exercise - Build an AI dream team with GitHub Copilot CLI custom agents
+metadata:
+  title: Exercise - Build an AI dream team with GitHub Copilot CLI custom agents
+  description: Learn how to use GitHub Copilot CLI and custom agents in GitHub Codespaces to plan, design, build, and validate a Project Pulse dashboard.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 08/17/2026
+  ms.update-cycle: 180-days
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/exercise.md)]

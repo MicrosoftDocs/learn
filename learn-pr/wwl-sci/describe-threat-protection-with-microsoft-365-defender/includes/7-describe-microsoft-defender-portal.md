@@ -15,6 +15,14 @@ The Microsoft Defender portal allows you to tailor the navigation pane to meet d
 
 The left navigation pane provides easy access to the suite of Microsoft Defender XDR services. You also get access to Microsoft Sentinel and many other capabilities  The sections that follow provide a brief description of the capabilities accessible from the left navigation bar in the Microsoft Defender portal.
 
+### Interactive guide: Explore the Microsoft Defender portal
+
+In this interactive guide, which takes approximately 15 minutes to complete, you explore the Microsoft Defender portal.
+
+Select the image below to get started.
+
+[![Thumbnail for the Explore the Microsoft Defender portal.](../media/defender-portal-simulation-thumbnail.png)](https://microsoftlearning.github.io/click-throughs/docs/IG/interactive_guide_explore_the_microsoft_defender_portal_web/story.html?azure-portal=true)
+
 ### Defender Experts
 
 Microsoft Defender Experts for XDR is a managed extended detection and response service that helps your security operations centers (SOCs) focus and accurately respond to incidents that matter. Microsoft Defender Experts for XDR is sold separately from other Microsoft Defender XDR products. 

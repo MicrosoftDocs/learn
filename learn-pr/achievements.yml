@@ -5,6 +5,36 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.wwl.guided-project-create-sk-assistant.badge
+  type: badge
+  title: Guided project - Create a DevOps Assistant with the Semantic Kernel SDK 
+  summary: This module guides you through the steps required to develop a proof-of-concept AI DevOps assistant with the Semantic Kernel SDK.  
+  iconUrl: /training/achievements/generic-badge.svg 
+- uid: learn.wwl.combine-prompts-functions.badge
+  type: badge
+  title: Apply filters on functions 
+  summary: This module demonstrates how&nbsp;to combine functions and prompts with the Semantic Kernel SDK. Nesting functions&nbsp;within prompts can allow your code to complete tasks large language models can't typically complete on their own. 
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.give-your-ai-agent-skills.badge 
+  type: badge
+  title: Create Semantic Kernel plugins 
+  summary: This module explores native functions in the Semantic Kernel SDK. Learn how native functions can accomplish customized tasks, effectively giving your AI agent a &quot;skill.&quot; 
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.create-plugins-semantic-kernel.badge
+  type: badge
+  title: Run prompts with Semantic Kernel 
+  summary: "This module explores Semantic Kernel SDK plugins. Learn how plugins to the SDK are used to accomplish customized tasks and create intelligent applications." 
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.build-your-kernel.badge 
+  type: badge
+  title: Build your kernel
+  summary: This module introduces the Semantic Kernel SDK. Learn how the kernel connects code to large language models to extend functionality with generative artificial intelligence.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.aks-app-scaling-keda.badge
+  type: badge
+  title: Scale container applications in Azure Kubernetes Services using KEDA  
+  summary: Scale a containerized application hosted on Azure Kubernetes Services (AKS) using KEDA.
+  iconUrl: /training/achievements/aks-app-scale-keda.svg
 - uid: learn.analyze-logs-with-kql.badge
   type: badge
   title: Guided project - Analyze logs in Azure Monitor with KQL
@@ -180,6 +210,183 @@ achievements:
   title: Analyze monitoring data with Kusto Query Language
   summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.deploy-on-premise-based-tools.trophy
+  type: trophy
+  title: MD-102 Deploy using on-premises based tools
+  summary: |
+    Students are introduced to deployment using the Microsoft Deployment Toolkit and Configuration Manager.
+  iconUrl: /training/achievements/deploy-on-premise-based-tools.svg
+- uid: learn.wwl.deployment-readiness.badge
+  type: badge
+  title: Assess deployment readiness
+  summary: Discusses some of the tools that you can use to perform detailed assessments of existing deployments, and describes some of the challenges that you may face.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.deploy-microsoft-deployment-toolkit.badge
+  type: badge
+  title: Deploy using the Microsoft Deployment Toolkit
+  summary: Discusses the shifts from traditional to modern management and where on-premises solutions best fit in today's enterprise.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.deploy-microsoft-configuration-manager.badge
+  type: badge
+  title: Deploy using Microsoft Configuration Manager
+  summary: This module explains the common day to day tasks that Administrators would use Configuration Manager to perform.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-azure-virtual-desktop.badge
+  type: badge
+  title: Manage Azure Virtual Desktop
+  summary: Learn to manage Azure Virtual Desktop, a cloud-based VDI solution providing personalized, secure Windows 11 experiences. Understand key features, management, security, and deployment options for optimizing your environment.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.deploy-cloud-based-tools.trophy
+  type: trophy
+  title: MD-102 Deploy using cloud based tools
+  summary: |
+    Students will learn about using Windows Autopilot and deployment using Microsoft Intune. Students will also learn how co-management can be used to transition to modern management.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.deploy-devices-windows-autopilot.badge
+  type: badge
+  title: Deploy Devices using Windows Autopilot
+  summary: Use Autopilot to deploy new hardware or refreshing an existing hardware with the organizationΓÇÖs desired configuration, without using the traditional imaging process.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.implement-dynamic-deployment.badge
+  type: badge
+  title: Implement dynamic deployment methods
+  summary: Use dynamic provisioning methods such as Subscription Activation, Provisioning packages, and Microsoft Entra join to reconfigure an existing operating system.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.plan-transition-modern-endpoint-management.badge
+  type: badge
+  title: Plan a transition to modern endpoint management
+  summary: Explore considerations and review the planning of transitioning to modern management, focusing on migration and newly provisioned devices.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-windows-365.badge
+  type: badge
+  title: Manage Windows 365
+  summary: This module teaches managing Microsoft's cloud-based PC management solution, Windows 365, offering personalized, secure Windows 11 experience from any device. Learn features, setup, management, security, deployment options, and licensing to optimize your environment.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.execute-device-enrollment.trophy
+  type: trophy
+  title: MD-102 Execute device enrollment
+  summary: |
+    This learning path will cover Microsoft Entra join and will introduce Microsoft Endpoint Manager. We'll also discuss how to configure policies for enrolling devices to Configuration Manager and Microsoft Intune.
+  iconUrl: /training/achievements/execute-device-enrollment.svg
+- uid: learn.wwl.administer-device-authentication.badge
+  type: badge
+  title: Manage device authentication
+  summary: In this module, you learn about device authentication and management in Microsoft Entra ID.
+  iconUrl: /training/achievements/administer-device-authentication.svg
+- uid: learn.wwl.enroll-devices-using-endpoint-configuration-manager.badge
+  type: badge
+  title: Enroll devices using Microsoft Configuration Manager
+  summary: This module introduces students to client deployment options and some of the high-level management and monitoring options that are available using Configuration Manager.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.enroll-devices-using-intune.badge
+  type: badge
+  title: Enroll devices using Microsoft Intune
+  summary: Students will learn how to configure and setup Intune to more easily manage Windows, Android, and iOS devices.
+  iconUrl: /training/achievements/enroll-devices-use-intune.svg
+- uid: learn.wwl.explore-endpoint-management.trophy
+  type: trophy
+  title: MD-102 Explore endpoint management
+  summary: |
+    This learning path is designed to provide a comprehensive understanding of enterprise desktops, Windows editions, and Microsoft Entra ID. It includes exploring various Windows editions, including their features and installation methods. It delves into Microsoft Entra ID, highlighting its similarities and differences with AD DS and how to synchronize the two. Furthermore, learners will better understand managing Microsoft Entra identities. Overall, this learning path equips learners with the necessary knowledge and skills to effectively support enterprise desktops and manage Microsoft Entra identities.
+  iconUrl: /training/achievements/explore-endpoint-management.svg
+- uid: learn.wwl.explore-enterprise-desktop.badge
+  type: badge
+  title: Explore the Enterprise Desktop
+  summary: This module covers modern endpoint management and enterprise desktop lifecycle concepts. It teaches the stages of the lifecycle (planning, deployment, maintenance) and provides a foundation for future learning.
+  iconUrl: /training/achievements/enterprise-examine-desktop.svg
+- uid: learn.wwl.explore-windows-editions.badge
+  type: badge
+  title: Explore Windows Editions
+  summary: This module covers Windows OS editions, features, and installation methods. Learners gain a deeper understanding of the available editions and corresponding installation processes.
+  iconUrl: /training/achievements/windows-client-explore.svg
+- uid: learn.wwl.manage-azure-active-directory-identities.badge
+  type: badge
+  title: Manage Microsoft Entra identities
+  summary: This module teaches how to use Microsoft Entra ID effectively. You'll learn about RBAC, user roles, creating and managing users and groups, using PowerShell cmdlets, and synchronizing objects from AD DS to Microsoft Entra ID.
+  iconUrl: /training/achievements/azure-active-directory-manage-identities.svg
+- uid: learn.wwl.manage-endpoint-security.trophy
+  type: trophy
+  title: MD-102 Manage endpoint security
+  summary: |
+    In this learning path, students will learn about data protection and protecting endpoints against threats. This path will also cover the key capabilities of Microsoft Defender solutions.
+  iconUrl: /training/achievements/manage-endpoint-security.svg
+- uid: learn.wwl.deploy-device-data-protection.badge
+  type: badge
+  title: Deploy device data protection
+  summary: This module describes how you can use Intune to create and manage WIP policies that manage this protection. The module also covers implementing BitLocker and Encrypting File System.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-microsoft-defender-cloud-apps.badge
+  type: badge
+  title: Manage Microsoft Defender for Cloud Apps
+  summary: This module covers Microsoft Defender for Cloud Apps, focusing on securing sensitive data, its relevance in dynamic work settings, and effective utilization for improved security posture.
+  iconUrl: /training/achievements/microsoft-defender-module.svg
+- uid: learn.wwl.authentication-compliance.trophy
+  type: trophy
+  title: MD-102 Manage authentication and compliance
+  summary: |
+    This learning path covers the various solutions for managing authentication. Students will also learn about the different types of VPNs, as well as compliance and conditional access policies.
+  iconUrl: /training/achievements/authentication-compliance.svg
+- uid: learn.wwl.protect-identities-azure-acative-directory.badge
+  type: badge
+  title: Protect identities in Microsoft Entra ID
+  summary: This module introduces students to the various authentication methods used to protect identities.
+  iconUrl: /training/achievements/entra-module.svg
+- uid: learn.wwl.organizational-access.badge
+  type: badge
+  title: Enable organizational access
+  summary: This module describes how clients can be configured to access organizational resources using a virtual private network (VPN).
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.implement-device-compliance.badge
+  type: badge
+  title: Implement device compliance
+  summary: This module describes how to use compliance and conditional access policies to help protect access to organizational resources.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.inventory-compliance-reports.badge
+  type: badge
+  title: Generate inventory and compliance reports
+  summary: This module describes how to use Microsoft Endpoint Manager and Power BI to create compliance and custom reports.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.configure-profiles-user-device.trophy
+  type: trophy
+  title: MD-102 Configure profiles for user and devices
+  summary: |
+    This learning path explores Intune device profiles, the benefits of user profiles and how to synchronize profile data across multiple devices.
+  iconUrl: /training/achievements/onfigure-profiles-user-device.svg
+- uid: learn.wwl.execute-device-profiles.badge
+  type: badge
+  title: Execute device profiles
+  summary: Students learn about the various types of device profiles, and how to create and manage them.
+  iconUrl: /training/achievements/execute-device-profiles.svg
+- uid: learn.wwl.oversee-device-profiles.badge
+  type: badge
+  title: Oversee device profiles
+  summary: This module introduces students to monitoring profiles to ensure correct assignments and resolving conflicts when multiple profiles are applied.
+  iconUrl: /training/achievements/oversee-device-profiles.svg
+- uid: learn.wwl.maintain-user-profiles.badge
+  type: badge
+  title: Maintain user profiles
+  summary: Students learn about the benefits of various Windows user profiles, how to manage them, and how to facilitate profile data synchronization across multiple devices.
+  iconUrl: /training/achievements/maintain-user-profiles.svg
+- uid: learn.wwl.administer-endpoint-applications.badge
+  type: badge
+  title: Administer endpoint applications
+  summary: Learn how to manage applications on Intune-managed devices, deploy Microsoft 365 Apps, configure Internet Explorer mode in Microsoft Edge, and review app inventory options.
+  iconUrl: /training/achievements/administer-endpoint-applications.svg
+- uid: learn.wwl.deploy-applications.badge
+  type: badge
+  title: Deploy and update applications
+  summary: In this module, you'll master deploying applications using Intune, Configuration Manager, Group Policy, and Microsoft Store Apps. These powerful tools and techniques will equip you to manage and maintain diverse applications across your organization effectively.
+  iconUrl: /training/achievements/deploy-and-update-applications.svg
+- uid: learn.wwl.execute-mobile-application-management.badge
+  type: badge
+  title: Execute mobile application management
+  summary: This module introduces Mobile Application Management (MAM). Students will learn about considerations for implementing MAM and will be introduced to the management of MAM using Intune and Configuration Manager.
+  iconUrl: /training/achievements/execute-mobile-application-management.svg
+- uid: learn.wwl.examine-application-management.trophy
+  type: trophy
+  title: MD-102 Examine application management
+  summary: Learners will examine application management methods using on-premises and cloud-based solutions.
+  iconUrl: /training/achievements/examine-application-management.svg
 - uid: learn.wwl.explore-iot-hub-monitoring.badge
   type: badge
   title: Guided project - Explore Azure IoT Hub monitoring
@@ -8110,4 +8317,542 @@ achievements:
   type: trophy
   title: Work with semantic models in Microsoft Fabric
   summary: Designing reports for enterprise scale requires more than just connecting to data. Understanding semantic models and strategies for scalability and lifecycle management are key to a successful enterprise implementation. This learning path helps you prepare for the [Fabric Analytics Engineer Certification](/credentials/certifications/exams/dp-600/).
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.administer-containers-in-azure.trophy
+  type: trophy
+  title: Administer containers in Azure
+  summary: Azure Container Instances are the quickest and easiest way to run containers in Azure. This learning path will teach you how to create and manage your containers, and how ACI can be used to provide elastic scale for Kubernetes.
+  iconUrl: /training/achievements/administer-containers-in-azure.svg
+- uid: learn.administer-infrastructure-resources-in-azure.trophy
+  type: trophy
+  title: Administer infrastructure resources in Azure
+  summary: Learn how to create, manage, secure and scale virtual machine resources.
+  iconUrl: /training/achievements/administer-infrastructure-resources-in-azure.svg
+- uid: learn.architect-compute-infrastructure.trophy
+  type: trophy
+  title: Architect compute infrastructure in Azure
+  summary: Learn how to architect compute infrastructure and solutions to automate your business processes in Azure.
+  iconUrl: /training/achievements/architect-compute-infrastructure.svg
+- uid: learn.architect-modern-apps.trophy
+  type: trophy
+  title: Architect modern applications in Azure
+  summary: Learn how to build modern applications using PaaS services for applications, caching, containers and Kubernetes in Azure.
+  iconUrl: /training/achievements/architect-modern-apps.svg
+- uid: learn.architect-network-infrastructure.trophy
+  type: trophy
+  title: Architect network infrastructure in Azure
+  summary: Learn how to architect a secure, flexible, network infrastructure in Azure and connect on-premises networks to your Azure resources.
+  iconUrl: /training/achievements/architect-network-infrastructure.svg
+- uid: learn.azure-linux.trophy
+  type: trophy
+  title: Linux on Azure
+  summary: This comprehensive learning path reviews deployment and management of Linux on Azure. Learn about cloud computing concepts, Linux IaaS and PaaS solutions and benefits and Azure cloud services. Discover how to migrate and extend your Linux-based workloads on Azure with improved scalability, security, and privacy.
+  iconUrl: /training/achievements/azure-linux.svg
+- uid: learn.azure-common-linux-server-configurations.trophy
+  type: trophy
+  title: Common Linux server configurations
+  summary: This learning path provides an overview for deploying common Linux server functions on Azure virtual machines. Learn how to deploy a SQL Server, a web application server using the MEAN stack, perform a database migration, and manage your IT operations with Azure Automanage.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.azure.cna-architect-modern-apps.trophy
+  type: trophy
+  title: Create cloud native apps with Azure and open-source software
+  summary: Cloud-native apps represent a modern approach to app development, where software systems are designed with cloud scale and capabilities in mind. Cloud-native apps build on open source technologies where feasible, with a focus on architectural modularity.
+  iconUrl: /training/achievements/create-cloud-native-apps-with-azure-open-source.svg
+- uid: learn.deploy-a-website-with-azure-virtual-machines.trophy
+  type: trophy
+  title: Deploy a website with Azure virtual machines
+  summary: "If your web hosting requirements aren't directly supported by the Azure Web app platform, you can leverage virtual machines to customize and control every aspect of the web server. Learn how to create, configure, and manage virtual machines on Linux and Windows that host web apps. This learning path can help you prepare for the [Microsoft Certified: Azure Developer Associate certification](/certifications/azure-developer)."
+  iconUrl: /training/achievements/deploy-a-website-with-azure-virtual-machines.svg
+- uid: learn.generic-trophy-2.trophy
+  type: trophy
+  title: Develop and deploy applications on Kubernetes
+  summary: In this learning path, you'll understand how to develop, build, deploy, and automatically maintain cloud native applications designed to work with Azure Kubernetes Service from the scratchpad to the deployment pipeline.
+  iconUrl: /training/achievements/develop-and-deploy-applications-on-kubernetes.svg
+- uid: learn.security.implement-host-security.trophy
+  type: trophy
+  title: Implement virtual machine host security in Azure
+  summary: "Learn how to protect and harden your virtual machines in Azure. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer)."
+  iconUrl: /training/achievements/implement-host-security.svg
+- uid: learn.intro-to-kubernetes-on-azure.trophy
+  type: trophy
+  title: Introduction to Kubernetes on Azure
+  summary: Learn about the basics of Docker containers, container orchestration with Kubernetes, and managed clusters on Azure Kubernetes Service.
+  iconUrl: /training/achievements/intro-to-kubernetes-on-azure.svg
+- uid: learn.researcher-introduction-to-cloud-computing.trophy
+  type: trophy
+  title: "Azure for Researchers part 1: Introduction to Cloud Computing"
+  summary: When you're working on research projects, it's helpful to have a basic understanding of cloud computing concepts. In this learning path, you study the general terminology and services that of cloud computing, which should be useful to you when you're working on research tasks. You learn how to create virtual machine and how to use it, and how to pick the best storage solution to persist your data.
+  iconUrl: /training/achievements/researcher-introduction-to-cloud-computing.svg
+- uid: learn.learn.researcher-cloud-security-cost-management.trophy
+  type: trophy
+  title: "Azure for Researchers part 2: Cloud Security and Cost Management"
+  summary: In this learning path, you'll learn how to ensure your Azure consumption is planned and predictable by using cost prediction and budgets, and how to ensure your application secrets and virtual machines are safe from unauthorized access.
+  iconUrl: /training/achievements/researcher-cloud-security-cost-management.svg
+- uid: learn.store-data-in-azure.trophy
+  type: trophy
+  title: Store data in Azure learning path
+  summary: This learning path gets you started with the basics of storage management in Azure, Storage Account creation, and choices for data storage.
+  iconUrl: /training/achievements/store-data-in-azure.svg
+- uid: learn.aks-deploy-container-app.badge
+  type: trophy
+  title: Deploy a containerized application on Azure Kubernetes Service
+  summary: "Deploy a containerized application hosted on Azure Container Services or any other registrar to Azure Kubernetes Service by using declarative manifest files."
+  iconUrl: /training/achievements/aks-deploy-container-app.svg
+- uid: learn.aks-manage-application-state.badge
+  type: trophy
+  title: Deploy and manage a stateful application by using Azure Cosmos DB and Azure Kubernetes Service
+  summary: "Learn how to create a stateful application managed by an external data source with Azure Cosmos DB and AKS with the best architecture practices."
+  iconUrl: /training/achievements/aks-manage-application-state.svg
+- uid: learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.badge
+  type: trophy
+  title: Build and run a web application with the MEAN stack on an Azure Linux virtual machine
+  summary: "Learn how to set up a MEAN-based web application on a new Azure Linux virtual machine."
+  iconUrl: /training/achievements/build-a-web-app-with-mean-on-a-linux-vm.svg
+- uid: learn.azure-container-registry.badge
+  type: trophy
+  title: Build and store container images with Azure Container Registry
+  summary: "Azure Container Registry is a managed Docker registry service based on the open-source Docker Registry 2.0. Container Registry is private, hosted in Azure, and allows you to build, store, and manage images for all types of container deployments. Learn how to build and store container images with Azure Container Registry."
+  iconUrl: /training/achievements/build-and-store-container-images.svg
+- uid: learn.create-azure-storage-account.badge
+  type: trophy
+  title: Create an Azure Storage account
+  summary: "Create an Azure Storage account with the correct options for your business needs."
+  iconUrl: /training/achievements/create-azure-storage-account.svg
+- uid: learn.create-a-windows-vm-in-azure.badge
+  type: trophy
+  title: Create a Windows virtual machine in Azure
+  summary: "Azure virtual machines (VMs) enable you to create dedicated compute resources in minutes that can be used just like a physical desktop or server machine."
+  iconUrl: /training/achievements/create-windows-virtual-machine-in-azure.svg
+- uid: learn.intro-to-azure-kubernetes-service.badge
+  type: trophy
+  title: Introduction to Azure Kubernetes Service
+  summary: "Determine the types of business problems that can be solved using Azure Kubernetes Service. Describe the benefits of container orchestration with features like deployment management, automatic updates, and self-healing."
+  iconUrl: /training/achievements/intro-to-azure-kubernetes-service.svg
+- uid: learn.intro-to-docker-containers.badge
+  type: trophy
+  title: Introduction to Docker containers
+  summary: "Describe the benefits of using Docker containers as a containerization platform. Discuss the infrastructure provided by the Docker platform."
+  iconUrl: /training/achievements/intro-to-docker-containers-social.png
+- uid: learn.intro-to-kubernetes.badge
+  type: trophy
+  title: Introduction to Kubernetes
+  summary: "Determine the types of business problems that you can solve by using Kubernetes. Describe the benefits of container orchestration with features like deployment management, automatic updates, and self-healing."
+  iconUrl: /training/achievements/introduction-to-kubernetes.svg
+- uid: learn.introduction-to-linux-on-azure-badge
+  type: trophy
+  title: Introduction to Linux on Azure
+  summary: "This module helps you understand the types of services and platforms Azure provides for Linux environments. Perhaps you're exploring the migration of Linux-based workloads to the cloud or you're looking at rearchitecting Linux-based applications to increase agility and reduce time to market. After reviewing this material, you should be able to choose which types of services you'll need to start planning your Linux environment."
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.intro-to-cloud-native-apps.badge
+  type: trophy
+  title: Introduction to cloud-native apps on Azure
+  summary: "This module teaches concepts and ideas associated with cloud-native apps. We cover selecting Open-Source Software (OSS) components like Kubernetes and PostgreSQL, and unique Azure tools like Cosmos DB. We also identify situations that call for building cloud-native apps, and review selecting components in an example scenario."
+  iconUrl: /training/achievements/intro-to-cloud-native-apps.svg
+- uid: learn.introduction-migrating-aws-azure.badge
+  type: trophy
+  title: Introduction to migrating from Amazon Web Services to Microsoft Azure
+  summary: "When planning a transition from AWS to Azure it's helpful to understand what the equivalent services are on each platform, and where services differ. You need to know the differences in terminology, how Azure handles the tasks you're familiar with in AWS, and where to go to get more detailed information."
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.introduction-migrating-gcp-azure.badge
+  type: trophy
+  title: Introduction to Migrating from Google Cloud to Microsoft Azure
+  summary: "If you're familiar with Google Cloud and its services, the terminology in Microsoft Azure can be disorienting. The approach to common cloud problems in Azure is also different from Google Cloud's approach. In this module, learn how technologies and solutions in Google Cloud map to their equivalents in Azure."
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.manage-vms-with-azure-cli-data.badge
+  type: trophy
+  title: Manage virtual machines with the Azure CLI
+  summary: "Learn how to use the cross-platform Azure CLI to create, start, stop, and perform other management tasks related to virtual machines in Azure."
+  iconUrl: /training/achievements/manage-virtual-machines-with-azure-cli.svg
+- uid: learn.plan-your-linux-environment-in-azure-badge
+  type: trophy
+  title: Plan your Linux environment in Azure
+  summary: "Learn about standards and practices for planning, deploying, managing, and optimizing Linux VMs in Azure."
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.provision-linux-virtual-machine-in-azure-badge
+  type: trophy
+  title: Provisioning a Linux virtual machine in Microsoft Azure
+  summary: "Azure allows you to use several common provisioning tools to deploy Linux virtual machines (VMs), to include Terraform, Bicep, the Azure portal, and the Azure CLI. In this module, you'll learn how to deploy a Linux virtual machine using each of these methods."
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.secure-and-isolate-with-nsg-and-service-endpoints.badge
+  type: trophy
+  title: Secure and isolate access to Azure resources by using network security groups and service endpoints
+  summary: "Network security groups and service endpoints help you secure your virtual machines and Azure services from unauthorized network access."
+  iconUrl: /training/achievements/secure-and-isolate-with-nsg-and-service-endpoints.svg
+- uid: learn.upload-download-and-manage-data-with-azure-storage-explorer.badge
+  type: trophy
+  title: Upload, download, and manage data with Azure Storage Explorer
+  summary: "Azure Storage Explorer allows you to quickly view all the storage services under your account. You can browse through, read, and edit data stored in those services through a user-friendly graphical interface."
+  iconUrl: /training/achievements/upload-download-and-manage-data-with-azure-storage-explorer.svg
+- uid: learn.architect-storage-infrastructure.trophy
+  type: trophy
+  title: Architect storage infrastructure in Azure
+  summary: Learn how to architect storage solutions for your applications in Azure.
+  iconUrl: /training/achievements/architect-storage-infrastructure.svg
+- uid: learn-wwl.enable-digital-transformation.badge
+  type: badge
+  title: Enabling digital transformation
+  summary: Digital transformation is a business innovation fueled by the explosion of the cloud, artificial intelligence (AI), and the Internet of things (IoT), providing organizations with new ways to understand, manage, and transform their business.
+  iconUrl: /training/achievements/enable-digital-transformation.svg
+- uid: learn.design-scalable-semantic-models.badge
+  type: badge
+  title: Design scalable semantic models
+  summary: "Good modeling practices lead to scalable semantic models that simplify analysis and reporting of large, complex data, enhancing Power BI reports for an optimal user experience."
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.create-manage-power-bi-assets.badge
+  type: badge
+  title: Create and manage Power BI assets
+  summary: Create Power BI assets for your analytics environment for structure and consistency, such as Power BI template and project files. Reusable assets and using the XMLA endpoint support application lifecycle management, including continuous integration and deployment.
+  iconUrl: /training/achievements/create-manage-power-bi-assets.svg
+- uid: learn.wwl.configure-web-app-settings.badge
+  type: badge
+  title: Configure web app settings
+  summary: Learn how to create and manage application settings, install SSL/TLS certificates to secure web traffic, enable diagnostic logging, create virtual app to directory mappings, and manage app features.
+  iconUrl: /training/achievements/app-service-configure.svg
+- uid: learn.wwl.create-azure-app-service-web-apps.trophy
+  type: trophy
+  title: Implement Azure App Service web apps
+  summary: Learn how Azure App Service functions and how to create and update an app. Explore App Service authentication and authorization, configuring app settings, scale apps, and how to use deployment slots.
+  iconUrl: /training/achievements/azure-app-service-create-web-apps.svg
+- uid: learn.wwl.understand-app-service-deployment-slots.badge
+  type: badge
+  title: Explore Azure App Service deployment slots
+  summary: In this module you'll learn how slot swapping operates and how to perform a swap. You'll also learn how to route traffic to different slots manually and automatically.
+  iconUrl: /training/achievements/app-service-deployment-slots.svg
+- uid: learn.wwl.introduction-to-azure-app-service.badge
+  type: badge
+  title: Explore Azure App Service
+  summary: Learn about the key components of Azure App Service and how App Service can help you create, maintain, and deploy web apps more efficiently.
+  iconUrl: /training/achievements/azure-app-introduction.svg
+- uid: learn.wwl.scale-apps-app-service.badge
+  type: badge
+  title: Scale apps in Azure App Service
+  summary: Learn how autoscale operates in App Service and how to identify autoscale factors, enable autoscale, and how to create sound autoscale conditions.
+  iconUrl: /training/achievements/app-service-scale-apps.svg
+- uid: learn.wwl.introduction-to-open-source-database-migration-on-azure.badge
+  type: badge
+  title: Introduction to open-source database migration on Azure
+  summary: In this module, you'll learn about the issues and considerations for migrating on-premises open-source databases to Azure, the services that Azure provides to help you migrate your databases, and how to plan a migration.
+  iconUrl: /training/achievements/introduction-to-open-source-database-migration-on-azure.svg
+- uid: learn.wwl.migrate-on-premises-mysql-databases-to-azure-database-for-mysql.badge
+  type: badge
+  title: Migrate on-premises MySQL databases to Azure Database for MySQL
+  summary: In this module, you'll learn about the benefits of migrating MySQL workloads to Azure, you'll see how to create an Azure Database for MySQL instance, and learn how to migrate on-premises MySQL databases to Azure.
+  iconUrl: /training/achievements/migrate-on-premises-mysql-databases-to-azure-database-for-mysql.svg
+- uid: learn.wwl.migrating-open-source-workloads-to-azure.trophy
+  type: trophy
+  title: Migrate open-source databases to Azure
+  summary: Learn how to migrate open-source workloads from PostgreSQL and MySQL databases to the equivalent services in Azure. Explore the processes and tools, and learn how to validate application dependencies to support a successful migration.
+  iconUrl: /training/achievements/migrating-open-source-workloads-to-azure-dp0-70.svg
+- uid: learn.wwl.migrate-on-premises-postgresql-databases-to-azure-database-for-postgresql.badge
+  type: badge
+  title: Migrate on-premises PostgreSQL databases to Azure Database for PostgreSQL
+  summary: In this module, you'll learn about the benefits of migrating PostgreSQL workloads to Azure, you'll see how to create an Azure Database for PostgreSQL instance and how to migrate on-premises PostgreSQL databases to Azure.
+  iconUrl: /training/achievements/migrate-onpremises-postgresql-db-azure-db.svg
+- uid: learn.wwl.protecting-monitoring-and-tuning-a-migrated-database.badge
+  type: badge
+  title: Protect, monitor, and tune a migrated database
+  summary: In this module, you'll learn how to use the Azure features available for protect, monitor, and tune a database.
+  iconUrl: /training/achievements/protecting-monitoring-and-tuning-a-migrated-database.svg
+- uid: learn.wwl.explore-mysql-architecture.badge
+  type: badge
+  title: Explore MySQL Architecture
+  summary: Explore the component parts of MySQL, and learn how to find your way around Azure Database for MySQL.
+  iconUrl: /training/achievements/explore-mysql-architecture.svg
+- uid: learn.wwl.secure-mysql.badge
+  type: badge
+  title: Secure MySQL
+  summary: Learn about security and encryption in Azure Database for MySQL.
+  iconUrl: /training/achievements/secure-mysql.svg
+- uid: learn.wwl.understand-client-server-communication-mysql.badge
+  type: badge
+  title: Understand client-server communication in MySQL
+  summary: Learn about connection handling in MySQL, back up and restore, and the client interface options available for MySQL.
+  iconUrl: /training/achievements/understand-client-server-communication-mysql.svg
+- uid: learn.wwl.work-mysql-databases-azure.trophy
+  type: trophy
+  title: Work with MySQL Databases on Azure
+  summary: >-
+    Azure Database for MySQL is a fully managed database platform. In this learning path you'll find out how to manage and optimize Azure Database for MySQL.
+  
+    After completing this learning path, you'll be able to:
+  
+    - Understand Azure Database for MySQL options
+  
+    - Describe the MySQL client query interfaces
+  
+    - Work with MySQL storage engines
+  
+    - Secure your Azure Database for MySQL server
+  
+    - Understand concurrency in MySQL
+  iconUrl: /training/achievements/work-mysql-databases-azure.svg
+- uid: learn.wwl.understand-concurrency-mysql.badge
+  type: badge
+  title: Understand concurrency in MySQL
+  summary: Learn about concurrency in MySQL, including how to limit the number of connections, and when to use thread pools.
+  iconUrl: /training/achievements/understand-concurrency-mysql.svg
+- uid: learn.wwl.understand-mysql-storage-engine.badge
+  type: badge
+  title: Understand the MySQL storage engine
+  summary: Learn about MySQL’s pluggable storage engine model, common storage engines, and storage engines supported by Azure Database for MySQL.
+  iconUrl: /training/achievements/understand-mysql-storage-engine.svg
+- uid: learn.wwl.az-204-implement-authentication-authorization.trophy
+  type: trophy
+  title: Implement user authentication and authorization
+  summary: Learn how to implement authentication and authorization to resources by using the Microsoft identity platform, Microsoft Authentication Library, shared access signatures, and use Microsoft Graph.
+  iconUrl: /training/achievements/authentication-authorization.svg
+- uid: learn.wwl.az-204-implement-secure-cloud-solutions.trophy
+  type: trophy
+  title: Implement secure Azure solutions
+  summary: Learn how to more securely deploy apps in Azure by using Azure Key Vault, managed identities, and Azure App Configuration.
+  iconUrl: /training/achievements/cloud-solutions-implement.svg
+- uid: learn.wwl.explore-microsoft-identity-platform.badge
+  type: badge
+  title: Explore the Microsoft identity platform
+  summary: Learn the core features and functionality of the Microsoft identity platform including authentication, libraries, and app management tools.
+  iconUrl: /training/achievements/identity-platform-explore.svg
+- uid: learn.wwl.implement-azure-key-vault.badge
+  type: badge
+  title: Implement Azure Key Vault
+  summary: Learn how Azure Key Vault can help you keep your apps more secure, and how to set and retrieve secrets programmatically, and with Azure CLI.
+  iconUrl: /training/achievements/azure-key-vault-implement.svg
+- uid: learn.wwl.implement-managed-identities.badge
+  type: badge
+  title: Implement managed identities
+  summary: Learn how managed identities can help you deploy secure solutions on Azure without the need to manage credentials.
+  iconUrl: /training/achievements/manage-identities-implement.svg
+- uid: learn.wwl.implement-authentication-by-using-microsoft-authentication-library.badge
+  type: badge
+  title: Implement authentication by using the Microsoft Authentication Library
+  summary: Learn how to implement authentication by using the Microsoft Authentication Library.
+  iconUrl: /training/achievements/authentication-library.svg
+- uid: learn.wwl.implement-azure-app-configuration.badge
+  type: badge
+  title: Implement Azure App Configuration
+  summary: Learn how to use Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features.
+  iconUrl: /training/achievements/azure-app-implement-configuration.svg
+- uid: learn.wwl.implement-shared-access-signatures.badge
+  type: badge
+  title: Implement shared access signatures
+  summary: Learn how to use shared access signatures to authorize access to storage resources.
+  iconUrl: /training/achievements/signatures-shared-access.svg
+- uid: learn.wwl.microsoft-graph.badge
+  type: badge
+  title: Explore Microsoft Graph
+  summary: Learn how Microsoft Graph facilitates the access and flow of data and how to form queries through REST and code.
+  iconUrl: /training/achievements/microsoft-graph-explore.svg
+- uid: learn.wwl.az-204-develop-solutions-that-use-azure-cosmos-db.trophy
+  type: trophy
+  title: Develop solutions that use Azure Cosmos DB
+  summary: Learn how to create Azure Cosmos DB resources with the appropriate consistency levels, and perform data operations by using the .NET SDK V3 for Azure Cosmos DB.
+  iconUrl: /training/achievements/az-204-develop-solutions-that-use-azure-cosmos-db.svg
+- uid: learn.wwl.az-204-implement-iaas-solutions.trophy
+  type: trophy
+  title: Implement containerized solutions
+  summary: Learn how to create and deploy containerized solutions to Azure by using the Azure Container Registry, Azure Container Instances, and Azure Container Apps.
+  iconUrl: /training/achievements/iaas-implement-solutions.svg
+- uid: learn.wwl.explore-azure-cosmos-db.badge
+  type: badge
+  title: Explore Azure Cosmos DB
+  summary: Learn the core features and functionality of Azure Cosmos DB.
+  iconUrl: /training/achievements/1-explore-azure-cosmos-db.svg
+- uid: learn.wwl.explore-azure-functions.badge
+  type: badge
+  title: Explore Azure Functions
+  summary: Learn how Azure Functions can be a great solution for data processing, systems integration, and building simple APIs and microservices.
+  iconUrl: /training/achievements/1-explore-azure-functions.svg
+- uid: learn.wwl.implement-azure-functions.trophy
+  type: trophy
+  title: Implement Azure Functions
+  summary: Learn how to create and deploy Azure Functions. Explore hosting options, bindings, and triggers.
+  iconUrl: /training/achievements/az-204-implement-azure-functions.svg
+- uid: learn.wwl.create-run-container-images-azure-container-instances.badge
+  type: badge
+  title: Run container images in Azure Container Instances
+  summary: Learn how Azure Container Instances can help you quickly deploy containers, how to set environment variables, and specify container restart policies.
+  iconUrl: /training/achievements/azure-container-instances-images.svg
+- uid: learn.wwl.develop-azure-functions.badge
+  type: badge
+  title: Develop Azure Functions
+  summary: Learn how to create and deploy Azure Functions.
+  iconUrl: /training/achievements/2-develop-azure-functions.svg
+- uid: learn.wwl.implement-azure-container-apps.badge
+  type: badge
+  title: Implement Azure Container Apps
+  summary: Learn how Azure Container Apps can help you deploy and manage microservices and containerized apps on a serverless platform that runs on top of Azure Kubernetes Service.
+  iconUrl: /training/achievements/implement-azure-container-apps.svg
+- uid: learn.wwl.publish-container-image-to-azure-container-registry.badge
+  type: badge
+  title: Manage container images in Azure Container Registry
+  summary: Learn how to use Azure Container Registry to store your container images, and automate builds and deployments.
+  iconUrl: /training/achievements/azure-container-registry-publish.svg
+- uid: learn.wwl.work-with-cosmos-db.badge
+  type: badge
+  title: Work with Azure Cosmos DB
+  summary: Learn how to develop client and server-side programming solutions on Azure Cosmos DB.
+  iconUrl: /training/achievements/3-work-with-azure-cosmos-db.svg
+- uid: learn.wwl.az-204-develop-event-based-solutions.trophy
+  type: trophy
+  title: Develop event-based solutions
+  summary: Learn how to build applications with event-based architectures by integrating Azure Event Grid and Azure Event Hubs in to your solution.
+  iconUrl: /training/achievements/az-204-develop-event-based-solutions.svg
+- uid: learn.wwl.az-204-develop-message-based-solutions.trophy
+  type: trophy
+  title: Develop message-based solutions
+  summary: Learn how to build applications with message-based architectures by integrating Azure Service Bus and Azure Queue Storage in to your solution.
+  iconUrl: /training/achievements/message-develop-solutions.svg
+- uid: learn.wwl.az-204-implement-api-management.trophy
+  type: trophy
+  title: Implement API Management
+  summary: Learn how the API Management service functions, how to transform and secure APIs, and how to create a backend API.
+  iconUrl: /training/achievements/az-204-implement-api-management.svg
+- uid: learn.wwl.az-204-instrument-solutions-to-support-monitoring-logging.trophy
+  type: trophy
+  title: Troubleshoot solutions by using Application Insights
+  summary: Learn how to instrument apps to enable Application Insights to monitor performance and help troubleshoot issues.
+  iconUrl: /training/achievements/monitoring-instrument-solutions.svg
+- uid: learn.wwl.azure-event-grid.badge
+  type: badge
+  title: Explore Azure Event Grid
+  summary: Learn how to integrate Azure Event Grid in to your solution, implement access control to events, and how to route custom events to web endpoint by using Azure CLI.
+  iconUrl: /training/achievements/1-explore-azure-event-grid.svg
+- uid: learn.wwl.azure-event-hubs.badge
+  type: badge
+  title: Explore Azure Event Hubs
+  summary: Learn how Azure Event Hubs captures events and how to scale your processing application.
+  iconUrl: /training/achievements/2-explore-azure-event-hubs.svg
+- uid: learn.wwl.discover-azure-message-queue.badge
+  type: badge
+  title: Discover Azure message queues
+  summary: Learn how to integrate Azure Service Bus and Azure Queue storage in to your solution, and how to send and receive message by using .NET.
+  iconUrl: /training/achievements/discover-message-queue.svg
+- uid: learn.wwl.explore-api-management.badge
+  type: badge
+  title: Explore API Management
+  summary: Learn how the API Management service functions, how to transform and secure APIs, and how to create a backend API.
+  iconUrl: /training/achievements/1-explore-api-management.svg
+- uid: learn.wwl.monitor-app-performance.badge
+  type: badge
+  title: Monitor app performance
+  summary: Learn how to use the tools offered in Application Insights to enhance the performance and stability of your applications.
+  iconUrl: /training/achievements/monitoring-app-performance.svg
+- uid: learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.badge
+  type: badge
+  title: Examine backup security licensing and support considerations for SAP HANA on Azure (Large Instances)
+  summary: Considerations for backup, security, licensing, and support of SAP HANA on Azure (Large Instances).
+  iconUrl: /training/achievements/sap-hana-backup-security-licensing.svg
+- uid: learn.wwl.examine-sap-hana-azure-large-instances-sample-architecture.badge
+  type: badge
+  title: Examine SAP HANA on Azure (Large Instances) sample architecture
+  summary: Examine SAP HANA on Azure (Large Instances) sample architecture and workflow.
+  iconUrl: /training/achievements/sap-hana-sample-architecture.svg
+- uid: learn.wwl.explore-sap-hana-azure-large-instances.trophy
+  type: trophy
+  title: Explore SAP HANA on Azure (Large Instances)
+  summary: SAP HANA on Azure (Large Instances) represent many of the largest SAP workloads. These modules explore the unique requirements for architecture, planning, migration, and run, monitor, and support of HANA Large Instances.
+  iconUrl: /training/achievements/sap-hana-explore.svg
+- uid: learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.badge
+  type: badge
+  title: Identify SAP HANA on Azure (Large Instances) certified offerings
+  summary: Examine SAP HANA on Azure (Large Instances) certified offerings and deployment offerings.
+  iconUrl: /training/achievements/sap-hana-certified-offerings.svg
+- uid: learn.wwl.implement-business-continuity-disaster-recovery-backup.badge
+  type: badge
+  title: Implement business continuity, disaster recovery, and backup for SAP HANA on Azure (Large Instances)
+  summary: Investigate business continuity, disaster recovery, and backup of SAP HANA on Azure (Large Instances).
+  iconUrl: /training/achievements/9-implement-business-continuity-disaster-recovery-and-backup.svg
+- uid: learn.wwl.implement-deploy-sap-hana-azure-large-instances.badge
+  type: badge
+  title: Implement and deploy SAP HANA on Azure (Large Instances)
+  summary: Deploy, validate, and install SAP HANA on Azure (Large Instances).
+  iconUrl: /training/achievements/sap-hana-implement-deploy.svg
+- uid: learn.wwl.introduction-to-azure-database-administration.trophy
+  type: trophy
+  title: Introduction to Azure database administration
+  summary: Microsoft Azure provides a set of seamless capabilities for SQL databases. Explore the different database offerings, and services available to help you get started.
+  iconUrl: /training/achievements/introduction-to-azure-database-administration.svg
+- uid: learn.wwl.manage-sap-hana-azure-large-instances.badge
+  type: badge
+  title: Manage SAP HANA on Azure (Large Instances)
+  summary: Explore methods to connect to and manage SAP HANA on Azure (Large Instances).
+  iconUrl: /training/achievements/sap-hana-manage-azure.svg
+- uid: learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.badge
+  type: badge
+  title: Monitor and troubleshoot SAP HANA on Azure (Large Instances)
+  summary: Investigate monitoring tools and methods used for SAP HANA on Azure (Large Instances).
+  iconUrl: /training/achievements/8-monitor-and-troubleshoot-sap-hana-on-azure-large-instances.svg
+- uid: learn.wwl.plan-sap-hana-azure-large-instances-deployments.badge
+  type: badge
+  title: Plan SAP HANA on Azure (Large Instances) deployments
+  summary: Deploy SAP HANA on Azure (Large Instances) using Azure resources that include virtual machines, virtual networks, storage accounts, and Microsoft Entra ID.
+  iconUrl: /training/achievements/sap-hana-deployment.svg
+- uid: learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.badge
+  type: badge
+  title: Plan SAP HANA on Azure (Large Instances) high availability and disaster recovery
+  summary: Considerations to plan for SAP HANA on Azure (Large Instances) high availability and disaster recovery.
+  iconUrl: /training/achievements/sap-hana-high-availability-disaster.svg
+- uid: learn.wwl.prepare-to-maintain-sql-databases-azure.badge
+  type: badge
+  title: Prepare to maintain SQL Server-based databases on Azure
+  summary: Explore the role of a database administrator on Azure. Describe SQL Server-based offerings on Azure.
+  iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
+- uid: learn.wwl.define-microsoft-ai-strategy-finance.badge
+  type: badge
+  title: Define a Microsoft AI strategy to create business value in finance
+  summary: This module is designed to help finance professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+  iconUrl: /training/achievements/define-microsoft-ai-strategy-finance.svg
+- uid: learn.wwl.define-microsoft-ai-strategy-healthcare.badge
+  type: badge
+  title: Define a Microsoft AI strategy to create business value in healthcare
+  summary: This module is designed to help healthcare professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+  iconUrl: /training/achievements/define-microsoft-ai-strategy-healthcare.svg
+- uid: learn.wwl.define-microsoft-ai-strategy-sustainability.badge
+  type: badge
+  title: Define a Microsoft AI strategy to create business value in sustainability
+  summary: This module is designed to help sustainability professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.discover-microsoft-ai-leaders-financial-industry.trophy
+  type: trophy
+  title: Discover AI for leaders in finance
+  summary: In this learning path, FSI business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and finance use cases.
+  iconUrl: /training/achievements/discover-microsoft-ai-leaders-financial-industry.svg
+- uid: learn.wwl.discover-microsoft-ai-leaders-healthcare-industry.trophy
+  type: trophy
+  title: Discover AI for leaders in healthcare
+  summary: In this learning path, healthcare business leaders will find the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and healthcare use cases.
+  iconUrl: /training/achievements/discover-microsoft-ai-leaders-healthcare-industry.svg
+- uid: learn.wwl.discover-microsoft-ai-leaders-sustainability.trophy
+  type: trophy
+  title: Discover AI for leaders in sustainability
+  summary: In this learning path, sustainability business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and sustainability use cases.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.badge
+  type: badge
+  title: Define a Microsoft AI strategy to create business value in nonprofit
+  summary: This module is designed to help nonprofit professionals adopt and implement Microsoft AI solutions. It discusses common use cases and real customer stories.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.define-microsoft-ai-strategy-manufacturing.badge
+  type: badge
+  title: Define a Microsoft AI strategy to create business value in manufacturing
+  summary: This module is designed to help manufacturing professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.define-microsoft-ai-strategy-retail.badge
+  type: badge
+  title: Define a Microsoft AI strategy to create business value in retail
+  summary: This module is designed to help retail professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.discover-ai-leaders-nonprofit.trophy
+  type: trophy
+  title: Discover AI for leaders in nonprofit
+  summary: In this learning path, nonprofit business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and nonprofit use cases.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.discover-microsoft-ai-leaders-manufacturing.trophy
+  type: trophy
+  title: Discover AI for leaders in manufacturing
+  summary: In this learning path, manufacturing business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and manufacturing use cases.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.discover-microsoft-ai-leaders-retail.trophy
+  type: trophy
+  title: Discover AI for leaders in retail
+  summary: In this learning path, retail business leaders find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and retail use cases.
   iconUrl: /training/achievements/generic-trophy.svg

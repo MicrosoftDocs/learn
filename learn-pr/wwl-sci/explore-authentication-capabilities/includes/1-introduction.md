@@ -2,7 +2,7 @@ Authentication is the process of verifying an identity to be legitimate. Passwor
 
 In this module, you learn about the authentication capabilities of Microsoft Entra ID, including the range of authentication methods available, from passwords and phone-based options to passwordless and phishing-resistant methods. You learn about multifactor authentication and how it improves security by requiring multiple verification factors. You also learn about self-service password reset (SSPR) and account recovery, and how Microsoft Entra password protection helps prevent weak passwords.
 
-After completing this module, you'll be able to:
+After completing this module, you're able to:
 
 - Describe the authentication methods of Microsoft Entra ID.
 - Describe multifactor authentication (MFA) in Microsoft Entra ID.

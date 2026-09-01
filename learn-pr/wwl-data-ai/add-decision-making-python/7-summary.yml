@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-decision-making-python.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Reflect on what you learned about adding decision-making to Python programs."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.inclusive-surface-hardware.knowledge-check
+title: Module assessment
+metadata:
+  module_assessment: true
+  title: Module assessment
+  description: This content is part of the "Reduce workplace barriers with inclusive Surface hardware" module.
+  ms.date: 08/26/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary purpose of Adaptive touch mode on supported Surface devices?"
+    choices:
+        - content: "To provide tactile feedback when users select or drag items"
+          isCorrect: false
+          explanation: "Incorrect. This describes the role of haptic touchpads, which provide tactile feedback during interactions."
+        - content: "To help users customize how touchpad input is recognized and responded to"
+          isCorrect: true
+          explanation: "Correct. Adaptive touch mode allows users to adjust settings such as sensitivity, select timing, and interaction regions so the touchpad responds more effectively to how they naturally interact with the device."
+        - content: "To increase keyboard contrast and visibility in low-light environments"
+          isCorrect: false
+          explanation: "Incorrect. This describes the purpose of the Bold keyset, which features larger, high-contrast key legends."
+        - content: "To synchronize haptic feedback with audio notifications"
+          isCorrect: false
+          explanation: "Incorrect. While haptics can be aligned with other forms of feedback, this isn't the primary purpose of Adaptive touch mode."
+  - content: "According to the module, how do haptic touchpads help support workplace productivity?"
+    choices:
+        - content: "By automatically correcting typing errors"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't state that haptic touchpads correct typing errors."
+        - content: "By enlarging touchpad controls for users with low vision"
+          isCorrect: false
+          explanation: "Incorrect. The module focuses on tactile confirmation of interactions rather than enlarging controls."
+        - content: "By providing consistent tactile feedback that helps users confirm actions"
+          isCorrect: true
+          explanation: "Correct. Haptic touchpads provide software-driven tactile feedback that helps users confirm select, taps, window snapping, drag-and-drop actions, and other interactions."
+        - content: "By replacing the need for visual or audio feedback"
+          isCorrect: false
+          explanation: "Incorrect. The module notes that haptic feedback can be combined with visual and audio feedback."
+  - content: "Which feature of the Bold keyset is designed to support users who rely on touch?"
+    choices:
+        - content: "Raised indicators on the F4 and F8 keys and a tactile bump on the down arrow key"
+          isCorrect: true
+          explanation: "Correct. The module explains that these tactile landmarks help users locate keys by feel and support workflows that rely on touch, including screen reader use."
+        - content: "Automatic touchpad sensitivity adjustments"
+          isCorrect: false
+          explanation: "Incorrect. This capability is related to Adaptive touch mode rather than the Bold keyset."
+        - content: "Software-driven tactile feedback across the touchpad area"
+          isCorrect: false
+          explanation: "Incorrect. This describes how haptic touchpads work."
+        - content: "Visual notifications when a key is pressed"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't describe this as a feature of the Bold keyset."
+  - content: "Which of the following is identified as a design principle that helps explain why haptics can improve usability?"
+    choices:
+        - content: "Use haptics only when audio feedback is unavailable"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't recommend limiting haptics in this way."
+        - content: "Increase the delay between user actions and feedback"
+          isCorrect: false
+          explanation: "Incorrect. The module states that delays can weaken the connection between action and feedback."
+        - content: "Replace visual signals with haptic feedback whenever possible"
+          isCorrect: false
+          explanation: "Incorrect. The module discusses aligning haptic, visual, and audio feedback rather than replacing one type with another."
+        - content: "Provide feedback that's timely, meaningful, and consistent"
+          isCorrect: true
+          explanation: "Correct. The module explains that haptics improve usability when feedback is timely, meaningful, and consistent."
+  - content: "Which workplace barrier is the optional Bold keyset designed to help address?"
+    choices:
+        - content: "Difficulty using standard touchpad gestures consistently"
+          isCorrect: false
+          explanation: "Incorrect. This barrier is addressed by Adaptive touch mode."
+        - content: "Uncertainty about whether touchpad actions were completed"
+          isCorrect: false
+          explanation: "Incorrect. This barrier is addressed by haptic touchpad feedback."
+        - content: "Key legends that are difficult to see because of low lighting, visual fatigue, or low vision"
+          isCorrect: true
+          explanation: "Correct. The Bold keyset is designed with larger, high-contrast key legends and clearer visual separation to make keys easier to identify."
+        - content: "Difficulty hearing notification sounds during meetings"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't identify this as a barrier addressed by the Bold keyset."

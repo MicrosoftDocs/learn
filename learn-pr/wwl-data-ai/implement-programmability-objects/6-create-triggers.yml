@@ -2,11 +2,12 @@
 uid: learn.wwl.implement-programmability-objects.create-triggers
 title: Create triggers
 metadata:
-  title: Create triggers
+  zone_pivot_groups: video-or-text
+  title: Create Triggers
   description: Learn how to create DML and DDL triggers in SQL Server to automate database operations, enforce business rules, and maintain data integrity.
-  ms.date: 01/22/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 6/30/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

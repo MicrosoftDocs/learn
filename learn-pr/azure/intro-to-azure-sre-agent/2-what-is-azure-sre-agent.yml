@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-sre-agent.what-is-azure-sre-agent
+title: What is Azure SRE Agent?
+metadata:
+  title: What is Azure SRE Agent?
+  description: Explore how Azure SRE Agent connects operational systems to investigate issues, automate work, and retain useful knowledge.
+  ms.date: 08/06/2026
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-what-is-azure-sre-agent.md)]

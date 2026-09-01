@@ -6757,6 +6757,46 @@
       "redirect_url": "/azure/ai-foundry/concepts/prompt-flow"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/index.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/1-introduction.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/2-assess-models.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/3-manual-evaluations.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/3b-automated-evaluations.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/5-exercise.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/7-summary.yml",
+      "redirect_url": "/training/modules/model-catalog-evaluate/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/connect-agent-to-mcp-tools/4-exercise.yml",
       "redirect_url": "/training/modules/connect-agent-to-mcp-tools/5-exercise"
     },
@@ -6957,6 +6997,186 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/10-summary.yml",
       "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-azure-machine-learn-job-for-automation/index.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-azure-machine-learn-job-for-automation/1-introduction.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-azure-machine-learn-job-for-automation/2-understand-business-problem.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-azure-machine-learn-job-for-automation/3-explore-solution-architecture.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-azure-machine-learn-job-for-automation/4-create-pipelines.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-azure-machine-learn-job-for-automation/5-exercise.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-azure-machine-learn-job-for-automation/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-azure-machine-learn-job-for-automation/7-summary.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/trigger-github-actions-trunk-based-development/index.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/trigger-github-actions-trunk-based-development/1-introduction.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/trigger-github-actions-trunk-based-development/2-understand-business-problem.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/trigger-github-actions-trunk-based-development/3-explore-solution-architecture.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/trigger-github-actions-trunk-based-development/4-trigger-workflow.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/trigger-github-actions-trunk-based-development/5-exercise.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/trigger-github-actions-trunk-based-development/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/trigger-github-actions-trunk-based-development/7-summary.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-linting-unit-test-github-actions/index.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-linting-unit-test-github-actions/1-introduction.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-linting-unit-test-github-actions/2-understand-business-problem.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-linting-unit-test-github-actions/3-explore-solution-architecture.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-linting-unit-test-github-actions/4-run.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-linting-unit-test-github-actions/5-exercise.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-linting-unit-test-github-actions/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-linting-unit-test-github-actions/7-summary.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-environments-github-actions/index.yml",
+      "redirect_url": "/training/modules/deploy-model-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-environments-github-actions/1-introduction.yml",
+      "redirect_url": "/training/modules/deploy-model-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-environments-github-actions/2-understand-business-problem.yml",
+      "redirect_url": "/training/modules/deploy-model-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-environments-github-actions/3-explore-solution-architecture.yml",
+      "redirect_url": "/training/modules/deploy-model-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-environments-github-actions/4-set-up-environments.yml",
+      "redirect_url": "/training/modules/deploy-model-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-environments-github-actions/5-exercise.yml",
+      "redirect_url": "/training/modules/deploy-model-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-environments-github-actions/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/deploy-model-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/work-environments-github-actions/7-summary.yml",
+      "redirect_url": "/training/modules/deploy-model-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.use-azure-machine-learning-job-for-automation.badge.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.trigger-github-actions-trunk-based-development.badge.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.work-linting-unit-testing-github-actions.badge.yml",
+      "redirect_url": "/training/modules/trigger-azure-machine-learn-jobs-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.work-environments-github-actions.badge.yml",
+      "redirect_url": "/training/modules/deploy-model-github-actions/",
       "redirect_document_id": false
     }
   ]

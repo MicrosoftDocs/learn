@@ -2,13 +2,13 @@
 uid: learn.wwl.manage-azure-updates.deploy-updates
 title: Deploy updates
 metadata:
-  title: Deploy updates
-  description: "Deploy updates"
-  ms.date: 09/24/2020
+  title: Deploy Updates
+  description: "Deploy one-time and recurring updates by using Azure Update Manager."
+  ms.date: 08/16/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
-  [!include[](includes/4-deploy-updates.md)]
+  [!include[](includes/4-deploy-updates.md)]

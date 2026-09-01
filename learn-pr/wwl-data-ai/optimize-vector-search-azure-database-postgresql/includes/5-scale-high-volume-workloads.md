@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9273ffe8-d42b-4568-bc8f-11347117b3d5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 As vector workloads grow beyond what a single database server can handle efficiently, you need strategies to scale capacity while managing costs. Azure Database for PostgreSQL provides several scaling options that address different aspects of the performance challenge.
 
 ## Vertical scaling on Azure
@@ -83,6 +94,8 @@ Azure offers significant discounts (up to 65%) for one-year or three-year reserv
 Storage costs accumulate for large vector datasets. Remove unused indexes (each HNSW index adds ~50% to vector storage). Archive old vectors that are rarely queried. Use appropriate precision (float4 vs float8) for your accuracy needs.
 
 Non-production environments don't need production-scale resources. Use Burstable tier for development. Scale down staging when not in active testing. Use smaller datasets in non-production (representative samples, not full copies).
+
+::: zone-end
 
 ## Additional resources
 

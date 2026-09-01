@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a42677e9-08c0-4caf-9bfa-71f858d4197e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 [**Triggers**](/sql/relational-databases/triggers/dml-triggers?azure-portal=true) are special stored procedures that automatically execute when specific events occur in your database. You define triggers to maintain data integrity, enforce business rules, and automate database operations without requiring application-level code.
 
 ## Understand trigger fundamentals
@@ -133,3 +144,5 @@ END;
 Document your triggers thoroughly. Other developers need to understand why triggers exist and what they do, since they execute invisibly during normal database operations.
 
 Now that you understand how to create and implement triggers, you're ready to explore how they integrate with other programmability objects to build comprehensive database solutions.
+
+::: zone-end

@@ -5,7 +5,7 @@ metadata:
   description: "This module explores using Microsoft Defender for Endpoint to provide additional protection and monitor devices against threats."
   ms.date: 04/23/2024
   author: wwlpublish
-  ms.author: rstearman
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: microsoft-intune
   ai-usage: human-only

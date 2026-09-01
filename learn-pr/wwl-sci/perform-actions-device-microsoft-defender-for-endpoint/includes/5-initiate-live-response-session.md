@@ -10,7 +10,7 @@ With live response, analysts can do all of the following tasks:
 
 - Download files such as malware samples and outcomes of PowerShell scripts.
 
-- Download files in the background (new!).
+- Download files in the background.
 
 - Upload a PowerShell script or executable to the library and run it on a device from a tenant level.
 
@@ -36,7 +36,14 @@ Allowing the use of unsigned scripts may increase your exposure to threats. Runn
 
 **Ensure that you have the appropriate permissions**
 
-Only users who have been provisioned with the appropriate permissions can initiate a session. The option to upload a file to the library is only available to users with the appropriate Role-based access control (RBAC) permissions. The button is greyed out for users with only delegated permissions. Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users' permissions are controlled by RBAC custom role.
+Only users who have been provisioned with the appropriate permissions can initiate a session. The option to upload a file to the library is only available to users with the appropriate Role-based access control (RBAC) permissions. The button is greyed out for users with only delegated permissions. Depending on the role that's been granted to you, you can run basic or advanced live response commands.
+
+Defender for Endpoint supports two RBAC models:
+
+- **Microsoft Defender XDR unified RBAC** (recommended): Assign the **Security operations > Security data > Response (manage)** permission to allow live response access. This is the preferred model for organizations using the full Microsoft Defender XDR suite.
+- **Defender for Endpoint standalone RBAC**: Permissions are assigned via custom roles in the Defender for Endpoint settings. Users can run basic or advanced commands based on the role assigned.
+
+Contact your security administrator if you're unsure which RBAC model your organization uses.
 
 ## Live response dashboard overview
 

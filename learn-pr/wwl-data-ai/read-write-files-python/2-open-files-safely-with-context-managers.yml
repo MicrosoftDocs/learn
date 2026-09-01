@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.read-write-files-python.open-files-safely-with-context-managers
+title: Open files safely with context managers
+metadata:
+  title: Open Files Safely with Context Managers
+  description: "Learn how to use the with statement to open files safely and let Python close them for you."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-open-files-safely-with-context-managers.md)]

@@ -24,4 +24,4 @@ To configure your on-premises servers that support the **Hybrid Runbook Worker**
 For more information on installing and removing **Hybrid Runbook Workers** and groups, see:
 
 - [Automate resources in your datacenter or cloud by using Hybrid Runbook Worker.](/azure/automation/automation-hybrid-runbook-worker#installing-hybrid-runbook-worker)
-- [Hybrid Management in Azure Automation](https://azure.microsoft.com/blog/hybrid-management-in-azure-automation/)
+- [Hybrid Management in Azure Automation](https://learn.microsoft.com/azure/automation/automation-hybrid-runbook-worker)

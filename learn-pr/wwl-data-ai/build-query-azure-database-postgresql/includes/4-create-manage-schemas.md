@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=223f44ee-eec8-4169-b979-63272a40d5b2]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Database schema design determines how effectively your application stores and retrieves data. A well-designed schema enforces data integrity through constraints, enables efficient queries through appropriate data types, and supports application evolution through thoughtful structure. For AI applications that store conversation history, task state, and metadata, schema design choices directly affect both performance and maintainability.
 
 ## Database and schema organization
@@ -109,6 +120,8 @@ COMMIT;
 ```
 
 If any statement fails, you can `ROLLBACK` to leave the schema unchanged. Most DDL statements in PostgreSQL are transactional, unlike some other databases.
+
+::: zone-end
 
 ## Additional resources
 

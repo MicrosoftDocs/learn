@@ -4,7 +4,7 @@ While implementation of CSV is straightforward, you should first carefully plan 
 
 To use CSV, your storage and disks must satisfy the following requirements:
 
-- File system format and disk configuration. A disk or storage space for a CSV volume must use a basic disk in either NTFS or ReFS format. When using storage spaces, you can use configure a simple space, a mirror space, or a parity space.
+- File system format and disk configuration. A disk or Storage Space for a CSV volume must use a basic disk in either NTFS or ReFS format. When using Storage Spaces, you can use configure a simple space, a mirror space, or a parity space.
 - Physical Disk cluster resources. CSV volume relies on the Physical Disk resource type. To create Physical Disk resource type, you need to add a disk or storage space to cluster storage.
 
 Additional planning considerations include:
@@ -21,27 +21,3 @@ As a best practice, you should configure CSVs before you make any VMs highly ava
 
 - If you decide to convert a shared disk to CSV, keep in mind that the corresponding drive letter or mount point is automatically removed. This means that you must recreate all VMs that reside on the shared storage. If you must retain the same virtual machine settings, consider exporting the VMs, switching to CSV, and then importing the VMs. Alternatively, you can use storage migration to move virtual machines temporarily to another location until you switch the volume to CSV.
 - You can't add shared storage to CSV if it is in use. If you have a running virtual machine that is using a cluster disk, you must shut down the virtual machine, and then add the disk to CSV.
-
-## Demonstration
-
-The following video demonstrates how to:
-
-- Identify implementation prerequisites for CSV.
-- Provision CSV.
-
-The main steps in the process are:
-
-1. Create AD DS environment. Create a single-domain AD DS forest including three domain member servers with the third server containing four data disks each.
-1. Create a Windows Server failover cluster by using Windows PowerShell. Use the first two domain member servers to create a two-node cluster.
-1. Set up an iSCSI target. Use the third domain member servers to set up an iSCSI target.
-1. Set up iSCSI storage. On the third domain member server, create an iSCSI virtual disk and make it available to iSCSI initiators on the cluster nodes.
-1. Set up iSCSI Initiator. Configure iSCSI initiators on the cluster nodes to set up shared storage.
-1. Configure CSV. Use Failover Cluster Manager to configure CSV.
-
- > [!VIDEO https://learn-video.azurefd.net/vod/player?id=1fa54eb1-234d-4f9c-928a-90baf88f9a9a]
-
----
-
-
-
----

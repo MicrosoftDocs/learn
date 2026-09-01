@@ -2,19 +2,19 @@ PolyBase is the feature that SQL Server uses to enable the data virtualization c
 
 The following table lists the first SQL Server version to support various PolyBase features.
 
-|SQL Server 2016|SQL Server 2017|SQL Server 2019|SQL Server 2025|
-|-----|-----|-----|-----|
-|• Hadoop<br>• Azure Blob Storage|• OPENROWSET enhancements<br>• CSV for Azure Blob Storage<br>• Database Scoped Credential|• SQL Server<br>• Oracle<br>• Azure Cosmos DB<br>• MongoDB<br>• Teradata<br>• Linux support<br>• Generic ODBC|• New connector framework<br>• Object storage integration<br>• CSV<br>• Parquet<br>• Delta<br>• CETAS|
+|SQL Server 2016|SQL Server 2017|SQL Server 2019|SQL Server 2022|SQL Server 2025|
+|-----|-----|-----|-----|-----|
+|• Hadoop (removed in 2022)<br>• Azure Blob Storage (`wasbs`)|• OPENROWSET enhancements<br>• CSV for Azure Blob Storage<br>• Database Scoped Credential|• SQL Server<br>• Oracle<br>• Azure Cosmos DB<br>• MongoDB<br>• Teradata<br>• Linux support<br>• Generic ODBC|• S3-compatible object storage<br>• Azure Blob Storage connector (`abs`)<br>• Azure Data Lake Storage connector (`adls`)<br>• Parquet<br>• Delta (read-only)<br>• CETAS<br>• Hadoop removed|• Native CSV, Parquet, & Delta without PolyBase services<br>• Managed Identity (Azure Arc or Azure VM)<br>• TDS 8.0 support<br>• Generic ODBC on Linux|
 
 For more information about PolyBase, see [PolyBase features and limitations](/sql/relational-databases/polybase/polybase-versioned-feature-summary).
 
 ## PolyBase enhancements in SQL Server 2025
 
-- **Native support for CSV, Parquet, & Delta 1**:  PolyBase Query Service for External Data installation is no longer required to use OPENROWSET, CREATE EXTERNAL TABLE, or CREATE EXTERNAL TABLE AS SELECT with the following types of external data: Parquet, Delta, Azure Blob Storage (ABS), Azure Data Lake Storage (ADLS), or S3-Compatible Object storage.
+- **Native support for CSV, Parquet, & Delta**:  PolyBase Query Service for External Data installation is no longer required to use OPENROWSET, CREATE EXTERNAL TABLE, or CREATE EXTERNAL TABLE AS SELECT with the following types of external data: Parquet, Delta, Azure Blob Storage (ABS), Azure Data Lake Storage (ADLS), or S3-Compatible Object storage.
 
 - **Use generic ODBC data sources on Linux**:  For more information, see [Configure PolyBase to access external data with ODBC generic types](/sql/relational-databases/polybase/polybase-configure-odbc-generic).
 
-- **TDS 8.0 support**:  When using Microsoft ODBC Driver 18 for SQL Server, TDS 8.0 isn't supported for SQL Server as an external data source.
+- **TDS 8.0 support**:  SQL Server 2025 defaults to Microsoft ODBC Driver 18 for SQL Server for PolyBase `sqlserver` data sources, and TDS 8.0 is now supported. PolyBase uses a secure-by-default configuration with `Encrypt=Yes` (Mandatory). To enforce TLS 1.3 and strict encryption, set `Encrypt=Strict` and `TrustServerCertificate=No` in `CONNECTION_OPTIONS`. For more information, see [TDS 8.0](/sql/relational-databases/security/networking/tds-8).
 
 ## S3-compatible object storage
 
@@ -44,17 +44,15 @@ To use PolyBase, you must install the **PolyBase Query Service for External Data
   - Service executable: `mpdwsvc.exe -dweng`
   - Parses queries.
   - Generates query plans.
-  - Distributes work to compute nodes (SQL Server 2019).
-  - Processes compute node results and results back to the client (SQL Server 2019).
 
 - **SQL Server PolyBase Data Movement**
   - Service executable: `mpdwsvc.exe -dms`
-  - Transfers data between external data sources and between PolyBase head and compute nodes (SQL Server 2019).
+  - Transfers data between SQL Server and external RDBMS data sources.
   - Inserts data into other data sources, such as Azure Storage.
 
-Data sources like SQL Server, Oracle, MongoDB, or ODBC-based sources use these PolyBase services. Data sources that use the SQL Server 2025 REST API-based PolyBase architecture don't require these services to be running or configured, but the **PolyBase Query Service for External Data** must still be installed and enabled.
+Data sources like SQL Server, Oracle, MongoDB, or ODBC-based sources use these PolyBase services. Data sources that use the SQL Server 2025 REST API-based PolyBase architecture—Azure Blob Storage, Azure Data Lake Storage, and S3-compatible object storage—don't require these services to be running or configured. In SQL Server 2025, the **PolyBase Query Service for External Data** installation is also no longer required for file-based data sources (Parquet, Delta, and CSV). RDBMS data sources such as SQL Server, Oracle, Teradata, MongoDB, and ODBC still require PolyBase services to be installed and running.
 
-You can use the PolyBase REST APIs to access Azure Data Lake Storage, Azure Blob Storage, any S3-compatible object storage, and file formats such as Parquet, Delta, and CSV files. Previously supported data sources still use the **SQL Server PolyBase Engine** and **SQL Server PolyBase Data Movement** services.
+You can use the PolyBase REST APIs to access Azure Data Lake Storage, Azure Blob Storage, any S3-compatible object storage, and file formats such as Parquet, Delta, and CSV files. Previously supported RDBMS data sources still use the **SQL Server PolyBase Engine** and **SQL Server PolyBase Data Movement** services.
 
 |Data source |PolyBase services |PolyBase REST API feature|
 |---------|---------|---------|

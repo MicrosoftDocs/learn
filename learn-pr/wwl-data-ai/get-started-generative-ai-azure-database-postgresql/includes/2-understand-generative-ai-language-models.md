@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=807e2f4b-b88e-40b4-966b-3a6150d0b128]
+
+::: zone-end
+
+::: zone pivot="text"
+
 ## Understand Generative AI?
 
 Generative AI, or GenAI, is an artificial intelligence algorithm capable of learning from existing data and creating new, original content across various domains. These algorithms function like creative engines, generating fresh text, images, and even music, and they are among the most promising advancements in artificial intelligence. GenAI's ability to customize and adapt its outputs to meet different needs makes it a versatile tool for various applications. The algorithms can be tailored to fit specific requirements and preferences using prompts and fine-tuning. This customizability means that users can describe the desired output in everyday language, and the model responds by generating appropriate text, images, or code.
@@ -30,3 +38,5 @@ In the Margie's Travel application scenario, GenAI language models can enhance u
 - **Dynamic ranking and scoring**: Generative AI language models can dynamically rank listings based on user query relevance. Price, availability, and user preferences can be considered to score and order the recommendations.
 
 Generative AI language models can enhance the rental property recommendation process by adding a better understanding of user queries, generating content, analyzing reviews, and providing personalized suggestions. Travelers seeking their ideal stay in Seattle can benefit from these intelligent recommendations!
+
+::: zone-end

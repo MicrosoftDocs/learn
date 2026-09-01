@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  zone_pivot_groups: video-or-text
 durationInMinutes: 2
 content: |
   [!include[](includes/10-summary.md)]

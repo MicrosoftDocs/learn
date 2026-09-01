@@ -34,12 +34,12 @@ The link feature uses [distributed availability group](/sql/database-engine/avai
 
 The link feature provides two types of replication:
 
-- **One-way replication**. One-way replication is available for SQL Server versions 2016, 2019, and 2022, allowing you to replicate data one way from a SQL Server instance to your managed instance. 
+- **One-way replication**. One-way replication is available for SQL Server versions 2016, 2017, and 2019, allowing you to replicate data one way from a SQL Server instance to your managed instance.
 
-- **Two-way replication**. SQL Server 2025 provides enhanced two-way replication capabilities, where you can replicate data between your managed instance and SQL Server instances, manually fail over during a disaster, and fail back after the disaster is mitigated. SQL Server 2025 includes improvements to the failback process with better performance monitoring and reduced downtime during failover operations.
+- **Two-way replication**. SQL Server 2022 and SQL Server 2025 both support two-way replication, where either SQL Server or SQL Managed Instance can be the initial primary. You can replicate data between your managed instance and SQL Server instances, manually fail over during a disaster, and fail back after the disaster is mitigated. To establish a link or fail over from SQL Managed Instance to SQL Server 2025, your managed instance must be configured with the [SQL Server 2025 update policy](/azure/azure-sql/managed-instance/update-policy?azure-portal=true#sql-server-2025-update-policy).
 
 > [!NOTE]
-> SQL Server 2025 supports both online failover and failback capabilities. Check the latest Azure SQL Managed Instance documentation for current feature availability and enhancements.
+> When failing back to SQL Server, you can choose to fail back *online* by using the Managed Instance link directly, or *offline* by restoring a backup from SQL Managed Instance to your SQL Server instance.
 
 ### Enable the link feature
 

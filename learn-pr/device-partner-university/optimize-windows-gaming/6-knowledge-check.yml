@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.optimize-pc-gaming.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Optimize your Windows gaming experience with the Xbox app" module.
+  ms.date: 06/15/2026
+  author: connor-sheridan
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary purpose of the Xbox app in this module?"
+    choices:
+        - content: "To replace all other game platforms"
+          isCorrect: false
+          explanation: "Incorrect. The Xbox app integrates games from multiple platforms rather than replacing them."
+        - content: "To serve as a central hub for accessing and managing PC games"
+          isCorrect: true
+          explanation: "Correct. The module emphasizes using the Xbox app as a unified place to access, launch, and manage games."
+        - content: "To improve internet connectivity for gaming"
+          isCorrect: false
+          explanation: "Incorrect. The Xbox app focuses on game access and features, not network performance."
+        - content: "To install new operating systems"
+          isCorrect: false
+          explanation: "Incorrect. Installing operating systems is unrelated to the Xbox app's function."
+  - content: "How does the Xbox app simplify access to games installed from different platforms?"
+    choices:
+        - content: "By requiring manual import of every game"
+          isCorrect: false
+          explanation: "Incorrect. The Xbox app integrates with Windows to detect games automatically."
+        - content: "By automatically displaying installed games from multiple platforms"
+          isCorrect: true
+          explanation: "Correct. The app surfaces installed games regardless of where they were acquired."
+        - content: "By uninstalling duplicate games"
+          isCorrect: false
+          explanation: "Incorrect. The app doesn't focus on removing duplicates."
+        - content: "By limiting access to Xbox-only titles"
+          isCorrect: false
+          explanation: "Incorrect. The app includes games from multiple platforms, not just Xbox."
+  - content: "What is one function of Windows Game Mode as described in the module?"
+    choices:
+        - content: "It installs new games automatically"
+          isCorrect: false
+          explanation: "Incorrect. Game Mode focuses on system performance, not installing games."
+        - content: "It disables all applications permanently"
+          isCorrect: false
+          explanation: "Incorrect. Game Mode only temporarily limits background processes during gameplay."
+        - content: "It reduces game graphics quality"
+          isCorrect: false
+          explanation: "Incorrect. Game Mode helps improve performance, not reduce quality."
+        - content: "It temporarily disables background processes to improve performance"
+          isCorrect: true
+          explanation: "Correct. Game Mode reduces distractions and allocates more system resources to the game."
+  - content: "Which feature allows players to access system controls and social tools during gameplay without leaving the game?"
+    choices:
+        - content: "Xbox Store"
+          isCorrect: false
+          explanation: "Incorrect. The Xbox Store is used to purchase games, not access in-game tools."
+        - content: "Windows Update"
+          isCorrect: false
+          explanation: "Incorrect. Windows Update manages system updates, not gameplay features."
+        - content: "Windows Game Bar"
+          isCorrect: true
+          explanation: "Correct. The Game Bar provides access to system settings, performance tools, and social features during gameplay."
+        - content: "Device Manager"
+          isCorrect: false
+          explanation: "Incorrect. Device Manager is used for hardware management, not gaming tools."
+  - content: "What is one benefit of using Auto HDR in Windows for gaming?"
+    choices:
+        - content: "It increases internet speed"
+          isCorrect: false
+          explanation: "Incorrect. Auto HDR doesn't affect network performance."
+        - content: "It improves control input responsiveness"
+          isCorrect: false
+          explanation: "Incorrect. Auto HDR focuses on visuals, not input performance."
+        - content: "It enhances visuals by increasing color range and brightness"
+          isCorrect: true
+          explanation: "Correct. Auto HDR improves the visual experience by expanding color and brightness for supported displays."
+        - content: "It reduces the size of game files"
+          isCorrect: false
+          explanation: "Incorrect. Auto HDR doesn't affect file size."

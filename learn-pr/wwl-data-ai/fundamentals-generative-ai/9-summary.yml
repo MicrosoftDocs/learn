@@ -6,9 +6,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Summary
   description: Let's review what you've learned in this module.
-  author: sherzyang
-  ms.author: sheryang
-  ms.date: 10/5/2025
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 07/21/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -16,4 +16,3 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
-

@@ -10,11 +10,15 @@ In this exercise you:
 
 ## Install PolyBase
 
+> [!NOTE]
+> In SQL Server 2025, installing the **PolyBase Query Service for External Data** feature is not required to query Parquet, Delta, or CSV files on Azure Blob Storage, Azure Data Lake Storage, or S3-compatible object storage. These capabilities are native to the SQL Server 2025 engine. The installation and enablement steps in this section are only required if you also need to connect to RDBMS sources (SQL Server, Oracle, Teradata, MongoDB, ODBC).
+
 You can install PolyBase with the SQL Server installation executable during initial setup, or add it as a feature later. On the **Feature Selection** page of SQL Server *setup.exe*, select **PolyBase Query Service for External Data**.
 
 :::image type="content" source="../media/polybase-setup-during-sql-server-install.png" alt-text="Diagram of the setup executable of SQL Server showing the PolyBase option." lightbox="../media/polybase-setup-during-sql-server-install.png":::
 
-PolyBase services require firewall ports to be enabled in order to connect to external data sources. By default, PolyBase uses ports ranging from 16450 to 16460.
+> [!NOTE]
+> The port range 16450–16460 shown in earlier SQL Server setup screens applied only to PolyBase scale-out groups, which were retired in SQL Server 2022 and are not available in SQL Server 2025. SQL Server 2025 runs PolyBase as a scale-up (single-node) feature. No additional firewall ports are required solely for PolyBase external data access.
 
 :::image type="content" source="../media/polybase-port-ranges.png" alt-text="Diagram of the setup executable of SQL Server showing the PolyBase port range configuration.":::
 
@@ -35,7 +39,7 @@ RECONFIGURE;
 :::image type="content" source="../media/enable-polybase-t-sql.png" alt-text="Diagram of enabling PolyBase using T-SQL in SQL Server Management Studio.":::
 
 > [!NOTE]
-> In this exercise, you query Apache Parquet files by using the PolyBase REST API, so you don't need to enable or configure the **SQL Server PolyBase Data Movement** or **SQL Server PolyBase Engine** services.
+> In SQL Server 2025, you don't need to install or enable PolyBase to query Parquet files from Azure Blob Storage—these capabilities are native to the SQL Server 2025 engine. If you skipped the installation and enablement steps above, you can proceed directly to creating the database. The Install and Enable steps only apply when you also need RDBMS connectivity (SQL Server, Oracle, Teradata, MongoDB, ODBC).
 
 ## Create a database
 
@@ -109,7 +113,7 @@ WITH (
 );
 ```
 
-- For a complete list of data sources and corresponding prefixes, see [CREATE EXTERNAL DATA SOURCE](/sql/t-sql/statements/create-external-data-source-transact-sql?view=sql-server-ver16&preserve-view=true&tabs=dedicated#location--prefixpathport-3).
+- For a complete list of data sources and corresponding prefixes, see [CREATE EXTERNAL DATA SOURCE](/sql/t-sql/statements/create-external-data-source-transact-sql#location--prefixpathport-3).
 - For more information on the public dataset, see [Bing COVID-19](/azure/open-datasets/dataset-bing-covid-19).
 
 ## Query the data with OPENROWSET

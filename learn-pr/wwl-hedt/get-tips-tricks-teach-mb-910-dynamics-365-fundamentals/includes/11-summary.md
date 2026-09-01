@@ -14,5 +14,5 @@ Supplemental Resources:
 - [Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123)
 - [MSLE Training and Tools](https://aka.ms/MSLEtrainingtools)
 - [MB-910 Learning Path](https://aka.ms/collectionsmb910)
-- [MB-910 study guide](https://aka.ms/MB910StudyGuide)
+- [MB-910 study guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/mb-910)
 - [Exam MB-910: Microsoft Dynamics 365 Fundamentals (CRM)](https://aka.ms/MB910Exam)

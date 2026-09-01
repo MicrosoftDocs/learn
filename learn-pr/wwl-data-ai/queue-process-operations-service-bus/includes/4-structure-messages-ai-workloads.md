@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1113bbe0-0092-443c-9c3e-08592558d2a1]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 How you structure a Service Bus message determines how efficiently your AI pipeline processes requests, how effectively you can trace failures, and how well your system handles payloads of varying sizes. A well-structured message carries all the information the processor needs, includes metadata for routing and tracking, and stays within the size limits of your Service Bus tier. This unit covers message anatomy, payload serialization, correlation tracking, large payload handling, TTL configuration, and batch sending.
 
 ## Understand message anatomy
@@ -164,6 +175,8 @@ with client.get_queue_sender("inference-requests") as sender:
 ```
 
 The `add_message()` method raises a `MessageSizeExceededError` when the message would exceed the batch's size limit. The previous pattern handles this by sending the full batch and starting a new one. This approach ensures that all messages are sent even when the full list doesn't fit in a single batch. For AI workloads that generate many small inference requests in a short period, such as a document processing pipeline that splits a large document into page-level requests, batching significantly reduces send latency.
+
+::: zone-end
 
 ## Additional resources
 

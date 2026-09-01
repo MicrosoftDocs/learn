@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=43418500-d15d-47ca-a9ad-7633c7482d61]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 GitHub Actions and Azure Monitor work together to detect quality regressions and trigger automated rollbacks before they affect users at scale. Even with progressive deployment and quality gates in place, some issues only emerge with specific customer data patterns or at production load levels. When Azure Monitor signals a regression, the GitHub Actions rollback workflow redeploys the last stable version automatically—reducing mean time to recovery (MTTR) from hours to minutes.
 
 | Rollback Trigger | Detection Method | Typical Threshold | Response Time |
@@ -152,3 +163,5 @@ This documentation becomes organizational learning. Over time, you build a knowl
 - **Automated rollback workflows** re-deploy the previous stable version via GitHub Actions without manual approval, reducing mean time to recovery to minutes.
 - **Partial rollbacks** roll back only the failing agent—plus its dependents—while preserving forward progress for unaffected agents.
 - **Blameless postmortems** document what failed, which signal triggered rollback, root cause, and prevention measures to build organizational learning.
+
+::: zone-end

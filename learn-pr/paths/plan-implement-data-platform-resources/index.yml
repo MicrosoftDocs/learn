@@ -3,7 +3,7 @@ uid: learn.wwl.plan-implement-data-platform-resources
 metadata:
   title: Plan and implement data platform resources
   description: Plan and implement data platform resources
-  ms.date: 2/25/2022
+  ms.date: 8/4/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: learning-path
@@ -30,7 +30,6 @@ subjects:
 - data-engineering
 - data-management
 modules:
-- learn.wwl.prepare-to-maintain-sql-databases-azure
 - learn.wwl.deploy-iaas-solutions-with-azure-sql
 - learn.wwl.deploy-paas-solutions-with-azure-sql
 - learn-wwl.migrate-sql-workloads-azure-sql-databases

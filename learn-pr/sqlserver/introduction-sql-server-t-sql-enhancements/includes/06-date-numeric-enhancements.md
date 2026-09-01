@@ -19,6 +19,14 @@ It complements `SUM()` and `AVG()` by allowing multiplicative aggregation, for e
 
 SQL Server 2025 adds the system procedure `sp_invoke_external_rest_endpoint`, allowing T-SQL to call external REST APIs directly. This enables integration with external data sources or services without leaving the database engine.
 
+> [!NOTE]
+> `sp_invoke_external_rest_endpoint` is disabled by default on SQL Server 2025. Enable it with server-level permissions before use:
+>
+> ```sql
+> EXECUTE sp_configure 'external rest endpoint enabled', 1;
+> RECONFIGURE WITH OVERRIDE;
+> ```
+
 ## Example 1: Using CURRENT_DATE for Simpler Date Logic
 
 Before SQL Server 2025, retrieving today’s date required an expression like `CAST(GETDATE() AS DATE)`. Now, you can get it directly with `CURRENT_DATE`.

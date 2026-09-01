@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Active Directory Domain Services and system-volume two-store architecture</title>
+  <desc id="desc">Clients use Lightweight Directory Access Protocol or Remote Procedure Call to reach the directory service and Server Message Block to reach the system volume. Each domain controller has a local directory database and a local system-volume hierarchy. Domain controllers exchange logical directory changes through Active Directory Domain Services replication and file changes through Distributed File System Replication. File-replication configuration is stored in the directory.</desc>
+  <defs>
+    <marker id="blue-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+    <marker id="green-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#107C10"/>
+    </marker>
+    <marker id="purple-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#5C2D91"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="760" fill="#FFFFFF"/>
+  <text x="600" y="38" text-anchor="middle" fill="#1A1A1A" font-size="26" font-weight="700">One domain, two local data stores</text>
+
+  <rect x="35" y="100" width="210" height="540" rx="14" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="140" y="138" text-anchor="middle" fill="#1A1A1A" font-size="20" font-weight="700">Clients and tools</text>
+
+  <rect x="62" y="180" width="156" height="92" rx="9" fill="#E1EFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="140" y="216" text-anchor="middle" fill="#005A9E" font-size="17" font-weight="700">Directory clients</text>
+  <text x="140" y="244" text-anchor="middle" fill="#323130" font-size="15">LDAP or RPC</text>
+
+  <rect x="62" y="430" width="156" height="92" rx="9" fill="#E7F4E4" stroke="#107C10" stroke-width="2"/>
+  <text x="140" y="466" text-anchor="middle" fill="#0B6A0B" font-size="17" font-weight="700">File clients</text>
+  <text x="140" y="494" text-anchor="middle" fill="#323130" font-size="15">SMB</text>
+
+  <rect x="290" y="78" width="395" height="610" rx="16" fill="#FAFAFA" stroke="#605E5C" stroke-width="2"/>
+  <rect x="290" y="78" width="395" height="62" rx="16" fill="#323130"/>
+  <rect x="290" y="122" width="395" height="18" fill="#323130"/>
+  <text x="488" y="117" text-anchor="middle" fill="#FFFFFF" font-size="21" font-weight="700">Domain controller A</text>
+
+  <rect x="330" y="172" width="315" height="112" rx="10" fill="#E1EFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="488" y="207" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">Directory service</text>
+  <text x="488" y="235" text-anchor="middle" fill="#323130" font-size="15">Objects, attributes, security, schema</text>
+  <text x="488" y="260" text-anchor="middle" fill="#323130" font-size="15">Supported directory interfaces</text>
+
+  <rect x="330" y="310" width="315" height="116" rx="10" fill="#F2F8FD" stroke="#0078D4" stroke-width="2"/>
+  <text x="488" y="345" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">Local Extensible Storage Engine</text>
+  <text x="488" y="373" text-anchor="middle" fill="#323130" font-size="15">NTDS.dit, transaction logs, checkpoint</text>
+  <text x="488" y="400" text-anchor="middle" fill="#323130" font-size="15">Hosted directory replicas only</text>
+
+  <line x1="488" y1="284" x2="488" y2="302" stroke="#0078D4" stroke-width="3" marker-end="url(#blue-arrow)"/>
+
+  <rect x="330" y="482" width="315" height="150" rx="10" fill="#E7F4E4" stroke="#107C10" stroke-width="2"/>
+  <text x="488" y="519" text-anchor="middle" fill="#0B6A0B" font-size="18" font-weight="700">Local system volume</text>
+  <text x="488" y="548" text-anchor="middle" fill="#323130" font-size="15">Policies, scripts, and gpt.ini</text>
+  <text x="488" y="575" text-anchor="middle" fill="#323130" font-size="15">SYSVOL and NETLOGON shares</text>
+  <text x="488" y="602" text-anchor="middle" fill="#323130" font-size="15">Distributed File System Replication state</text>
+
+  <rect x="760" y="78" width="395" height="610" rx="16" fill="#FAFAFA" stroke="#605E5C" stroke-width="2"/>
+  <rect x="760" y="78" width="395" height="62" rx="16" fill="#323130"/>
+  <rect x="760" y="122" width="395" height="18" fill="#323130"/>
+  <text x="958" y="117" text-anchor="middle" fill="#FFFFFF" font-size="21" font-weight="700">Domain controller B</text>
+
+  <rect x="800" y="172" width="315" height="112" rx="10" fill="#E1EFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="958" y="207" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">Directory service</text>
+  <text x="958" y="235" text-anchor="middle" fill="#323130" font-size="15">Independent local replica</text>
+  <text x="958" y="260" text-anchor="middle" fill="#323130" font-size="15">Logical changes received and committed</text>
+
+  <rect x="800" y="310" width="315" height="116" rx="10" fill="#F2F8FD" stroke="#0078D4" stroke-width="2"/>
+  <text x="958" y="345" text-anchor="middle" fill="#005A9E" font-size="18" font-weight="700">Local Extensible Storage Engine</text>
+  <text x="958" y="373" text-anchor="middle" fill="#323130" font-size="15">Separate NTDS.dit and log set</text>
+  <text x="958" y="400" text-anchor="middle" fill="#323130" font-size="15">Database files aren't replication payloads</text>
+
+  <line x1="958" y1="284" x2="958" y2="302" stroke="#0078D4" stroke-width="3" marker-end="url(#blue-arrow)"/>
+
+  <rect x="800" y="482" width="315" height="150" rx="10" fill="#E7F4E4" stroke="#107C10" stroke-width="2"/>
+  <text x="958" y="519" text-anchor="middle" fill="#0B6A0B" font-size="18" font-weight="700">Local system volume</text>
+  <text x="958" y="548" text-anchor="middle" fill="#323130" font-size="15">Independent local file replica</text>
+  <text x="958" y="575" text-anchor="middle" fill="#323130" font-size="15">Files received through file replication</text>
+  <text x="958" y="602" text-anchor="middle" fill="#323130" font-size="15">Clients read through SMB</text>
+
+  <line x1="218" y1="226" x2="320" y2="226" stroke="#0078D4" stroke-width="4" marker-end="url(#blue-arrow)"/>
+  <text x="269" y="211" text-anchor="middle" fill="#005A9E" font-size="14" font-weight="600">LDAP or RPC</text>
+
+  <line x1="218" y1="476" x2="320" y2="536" stroke="#107C10" stroke-width="4" marker-end="url(#green-arrow)"/>
+  <text x="267" y="480" text-anchor="middle" fill="#0B6A0B" font-size="14" font-weight="600">SMB</text>
+
+  <line x1="655" y1="228" x2="790" y2="228" stroke="#0078D4" stroke-width="4" marker-end="url(#blue-arrow)"/>
+  <line x1="790" y1="258" x2="655" y2="258" stroke="#0078D4" stroke-width="4" marker-end="url(#blue-arrow)"/>
+  <rect x="665" y="185" width="115" height="28" rx="14" fill="#FFFFFF" stroke="#0078D4"/>
+  <text x="722" y="204" text-anchor="middle" fill="#005A9E" font-size="13" font-weight="700">Logical changes</text>
+
+  <line x1="655" y1="536" x2="790" y2="536" stroke="#107C10" stroke-width="4" marker-end="url(#green-arrow)"/>
+  <line x1="790" y1="576" x2="655" y2="576" stroke="#107C10" stroke-width="4" marker-end="url(#green-arrow)"/>
+  <rect x="668" y="493" width="109" height="28" rx="14" fill="#FFFFFF" stroke="#107C10"/>
+  <text x="722" y="512" text-anchor="middle" fill="#0B6A0B" font-size="13" font-weight="700">File changes</text>
+
+  <path d="M560 284 C680 330, 700 410, 800 500" fill="none" stroke="#5C2D91" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#purple-arrow)"/>
+  <rect x="617" y="430" width="220" height="46" rx="9" fill="#F5F0FA" stroke="#5C2D91" stroke-width="1.5"/>
+  <text x="727" y="449" text-anchor="middle" fill="#5C2D91" font-size="13" font-weight="700">File-replication configuration</text>
+  <text x="727" y="468" text-anchor="middle" fill="#323130" font-size="12">is stored in directory objects</text>
+
+  <rect x="290" y="712" width="865" height="34" rx="17" fill="#FFF4CE" stroke="#8A6D1D"/>
+  <text x="723" y="735" text-anchor="middle" fill="#5C4B00" font-size="15" font-weight="600">Independent health: a clean directory path doesn't prove a clean system-volume path, and the reverse is also true.</text>
+</svg>

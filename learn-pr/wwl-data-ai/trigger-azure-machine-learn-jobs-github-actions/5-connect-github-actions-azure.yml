@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions.connect-github-actions-azure
+title: Connect GitHub Actions to Azure Machine Learning securely
+metadata:
+  title: Connect GitHub Actions to Azure Machine Learning securely
+  description: Learn how GitHub secrets and variables store workflow configuration, how workload identities authenticate workflows to Azure, and how authentication differs from Git tracking in Azure Machine Learning.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 08/27/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-connect-github-actions-azure.md)]

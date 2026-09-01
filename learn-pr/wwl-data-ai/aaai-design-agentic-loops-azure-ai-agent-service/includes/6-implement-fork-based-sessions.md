@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=52aeefec-5d07-41bf-8055-3a930b7e6768]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Agent workflows often require exploring multiple reasoning paths from the same starting context. An analyst examining an investment opportunity might want to explore bull-case and bear-case scenarios simultaneously without re-running the entire data collection phase. **Fork-based sessions** enable this branching pattern through thread state management.
 
 ## Understand the fork pattern and its use cases
@@ -216,7 +227,7 @@ Forking adds operational complexity—multiple threads to track, lifecycle polic
 
 In the Contoso Capital scenario, forking makes sense for scenario analysis where shared data collection is expensive, but not for sequential stock screening where each stock is independent with no shared context worth preserving.
 
-## Fork sessions using the Responses API (v2)
+## Fork sessions using the responses API (v2)
 
 The v1 fork pattern uses Cosmos DB serialization: serialize thread messages, create a new thread per branch, deserialize into each thread. In Agents v2, two simpler approaches eliminate the serialization step.
 
@@ -321,3 +332,5 @@ while jobs:
 - **Fork selectively**—only use forking when shared setup is expensive and parallel exploration adds value; for independent tasks with no shared context, separate threads from the start are simpler.
 - **Agents v2 eliminates fork serialization overhead**—fork by pointing multiple `responses.create()` calls at the same `previous_response_id`, with no thread creation or Cosmos DB serialization required.
 - **Background mode enables parallel branch execution in v2**—launch both branches with `background=True`, store the response IDs, and poll for completion concurrently.
+
+::: zone-end

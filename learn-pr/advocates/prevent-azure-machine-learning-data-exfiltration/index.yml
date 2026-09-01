@@ -3,7 +3,7 @@ uid: learn.prevent-data-exfiltration-azure-ai-workloads
 metadata:
   ms.author: viniap
   author: Orin-Thomas
-  ms.date: 07/01/2025
+  ms.date: 07/25/2026
   ms.update-cycle: 180-days
   title: Prevent data exfiltration from Azure AI workloads
   description: Overview of how to prevent data exfiltration for AI workloads running on Microsoft Azure.

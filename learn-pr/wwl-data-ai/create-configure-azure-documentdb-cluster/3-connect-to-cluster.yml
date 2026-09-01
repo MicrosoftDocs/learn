@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-azure-documentdb-cluster.connect-to-cluster
+title: Connect to your cluster
+metadata:
+  title: Connect to Your Cluster
+  description: "Learn how to connect to an Azure DocumentDB cluster using MongoDB Shell, connection strings, and the Azure portal Quick Start experience."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-connect-to-cluster.md)]

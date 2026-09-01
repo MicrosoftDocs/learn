@@ -1,6 +1,9 @@
-In this module, you explored how Microsoft OneLake provides a unified storage layer for all data in Microsoft Fabric. You learned how to discover data across workspaces using the OneLake catalog, which provides searchable access to lakehouses, warehouses, and semantic models with endorsement and sensitivity metadata. You also learned to create shortcuts that reference data without duplication and to use the SQL analytics endpoint for validation. Real-Time hub extends these discovery capabilities to streaming data by providing a centralized catalog of eventstreams and KQL tables. Together, these tools enable you to efficiently locate and connect to the data you need for analytical solutions.
+You can't build on data you can't find. OneLake gives your organization one storage layer where all Fabric data lives. The OneLake catalog shows you what exists across workspaces, and shortcuts let you connect to it without creating copies. For data that flows continuously, Real-Time hub provides the same discovery experience for eventstreams and KQL tables.
 
-### Further learning
+Now you know how to find stored data, evaluate whether it fits your needs, and connect to it. You also know where to look when data arrives in real time instead of batches.
 
+## Learn more
+
+- [OneLake catalog overview](/fabric/governance/onelake-catalog-overview)
 - [OneLake shortcuts](/fabric/onelake/onelake-shortcuts)
 - [Get started with Fabric Real-Time hub](/fabric/real-time-hub/get-started-real-time-hub)

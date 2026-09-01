@@ -60,7 +60,7 @@ Elastic jobs can be used in the following scenarios:
 - Deploy schema changes seamlessly.
 - Move data efficiently.
 - Collect and aggregate data for reporting or other purposes.
-- Load data from Azure Blob storage.
+- Load data from Azure Blob Storage.
 - Configure jobs to execute across multiple databases on a recurring basis, such as during off-peak hours.
 - Process data across numerous databases, such as telemetry collection, and compile results into a single destination table for further analysis.
 

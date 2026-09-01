@@ -92,7 +92,7 @@ To deploy the model, use the `ManagedOnlineDeployment` class and run the followi
 ```python
 from azure.ai.ml.entities import ManagedOnlineDeployment, CodeConfiguration
 
-model = Model(path="./model",
+model = Model(path="./model")
 
 blue_deployment = ManagedOnlineDeployment(
     name="blue",
@@ -109,7 +109,7 @@ blue_deployment = ManagedOnlineDeployment(
 ml_client.online_deployments.begin_create_or_update(blue_deployment).result()
 ```
 
-> [!Tip]
+> [!TIP]
 > Explore the reference documentation to [create a managed online deployment with the Python SDK v2](/python/api/azure-ai-ml/azure.ai.ml.entities.managedonlinedeployment?azure-portal=true).
 
 You can deploy multiple models to an endpoint. To route traffic to a specific deployment, use the following code:

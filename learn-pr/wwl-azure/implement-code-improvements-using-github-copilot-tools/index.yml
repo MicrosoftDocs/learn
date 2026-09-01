@@ -5,8 +5,8 @@ metadata:
   description: "This module explores using GitHub Copilot Chat to develop improvements for an existing codebase. Exercises provide practical experience implementing GitHub Copilot suggestions that improve code quality, reliability, performance, and security."
   ms.date: 04/16/2026
   ms.update-cycle: 180-days
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module-standard-task-based
   ms.collection: wwl-ai-copilot
   ms.custom:

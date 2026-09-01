@@ -2,11 +2,12 @@
 uid: learn.wwl.design-enterprise-agent-communication-a2a.implement-distributed-shared-state-management
 title: Implement distributed shared state management
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement Distributed Shared State Management
   description: "Implement distributed shared state management."
-  ms.date: 05/22/2026
-  author: chrishowd
-  ms.author: cahowd
+  ms.date: 7/30/2026
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 9
 content: |

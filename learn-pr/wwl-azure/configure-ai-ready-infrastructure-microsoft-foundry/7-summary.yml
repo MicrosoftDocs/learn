@@ -3,10 +3,10 @@ uid: learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry.summary
 title: "Summary"
 metadata:
   title: "Summary"
-  description: "Learn how Azure Microsoft Foundry's hub-and-project model simplifies governance, enhances security, and optimizes AI infrastructure management."
-  ms.date: 02/02/2026
+  description: "Review how Foundry resources, projects, role assignments, and connections support governed AI infrastructure."
+  ms.date: 08/18/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 3
 content: |

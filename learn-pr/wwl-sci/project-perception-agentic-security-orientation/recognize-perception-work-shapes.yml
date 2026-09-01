@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.project-perception-agentic-security-orientation.recognize-perception-work-shapes
+title: Recognize which areas of work a situation touches
+metadata:
+  title: Recognize Which Areas of Work a Situation Touches
+  description: "Practice diagnosing security situations by naming the areas of work the immediate need touches and picking the shape that fits: work that stays inside one area, a coordinated playbook across several areas, or both at once."
+  ms.date: 08/03/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/recognize-perception-work-shapes.md)]

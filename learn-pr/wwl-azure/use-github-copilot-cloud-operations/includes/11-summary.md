@@ -9,7 +9,7 @@ You also used GitHub Copilot to generate Azure CLI and Azure PowerShell scripts 
 ## Learn more
 
 - [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview)
-- [What is Bicep?](/azure-resource-manager/bicep/overview)
+- [What is Bicep?](/azure/azure-resource-manager/bicep/overview)
 - [Azure CLI documentation](/cli/azure/)
 - [Azure PowerShell documentation](/powershell/azure/)
-- [Bicep MCP server](https://github.com/Azure/bicep-mcp)
+- [Bicep MCP server](/azure/azure-resource-manager/bicep/bicep-mcp-server)

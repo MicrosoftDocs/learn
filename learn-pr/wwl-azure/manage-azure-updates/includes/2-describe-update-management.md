@@ -1,53 +1,38 @@
+Azure Update Manager is a unified service for managing operating system updates on Windows and Linux machines. It supports Azure virtual machines (VMs) and servers outside Azure that you connect by using Azure Arc.
 
+## Azure Update Manager capabilities
 
-Updates to Windows are, of course, a recurring series of events. Updates can come quickly and frequently when newly discovered security flaws or attack vectors are addressed. Updates also arrive periodically based on events such as changes in device drivers or planned roll-outs of new system features.
+Update Manager provides these capabilities from the Azure portal:
 
-Contoso IT support staff realize that there is no set time that an urgent security update might become available, and it's imperative in many cases to deploy such an update as soon as possible. This approach applies whether the system is a physical host, an on-premises VM, or an Azure VM. They must be vigilant when reviewing Windows Updates to their Azure VMs.
+- View update compliance for Azure VMs and Azure Arc-enabled servers.
+- Check for updates on demand or use periodic assessment to check every 24 hours.
+- Install selected updates immediately with a one-time deployment.
+- Schedule recurring deployments within maintenance windows.
+- Target machines individually or use dynamic scopes based on Azure subscriptions, resource groups, locations, operating systems, and tags.
+- Review assessment and deployment history and build reports from Azure Resource Graph data.
 
-## Azure Automation and Update Management
+Update Manager is native to Azure VMs and Azure Arc-enabled servers. It doesn't depend on Azure Automation, Log Analytics, or Azure Monitor Agent. Azure automatically installs the required update extension when you start an Update Manager operation.
 
-Azure Automation helps you manage OS updates for Azure VMs running the Windows operating system. The Update Management feature is free, and the only cost is the cost of log storage in Azure Log Analytics.
+Azure RBAC controls access to Update Manager operations at the resource level. Use built-in roles or create a custom role with only the permissions required for specific update operations.
 
-The following table describes how Update Management features can help with updates for your Azure VMs.
+## Understand update sources
 
-|Feature|How it can help|
-|------------------------------------------------------------ |------------------------------------------------------------ |
-|Review the status of updates on your VMs|The service includes a cloud-based console where you can review the status of updates across your Azure organization and for a specific VM.|
-|Configure dynamic groups of VMs to target|It also allows you to define a query based on a computer group. A *computer group* is a group of computers that are defined based on another query or imported from another source such as WSUS or Microsoft Endpoint Configuration Manager.|
-|Search the Azure Monitor logs|Update Management collects records from the Azure Monitor Logs.|
+Update Manager orchestrates assessment and installation, but it doesn't publish updates. Each machine uses its configured update source:
 
-To implement Azure Update Management in your hybrid environment, you must complete the following high-level steps:
+- Windows machines use the Windows Update client and connect to Windows Update, Microsoft Update, or WSUS.
+- Linux machines use their package manager and configured repositories.
 
-1. Create an Azure Automation account.
-2. Enable Update Management.
-3. Onboard your on-premises servers.
-4. Select the machines to manage.
-5. Schedule updates
+The updates available in Update Manager reflect the updates returned by these sources. Network rules must allow each machine to reach its configured source.
 
-> [!NOTE]
-> These steps are the same for on-premises physical servers and VMs, and Azure VMs running Windows Server.
+### Use WSUS with Update Manager
 
-## Interaction with Windows Update
+Contoso can continue to use WSUS to download, test, and approve updates while Update Manager assesses and patches machines. Configure the Windows Update client to use the appropriate WSUS server through Group Policy or another management method.
 
-Azure Automation Update Management relies on the Windows Update client to download and install Windows updates. There are specific settings that are used by the Windows Update client when connecting to WSUS or Windows Update. You can manage many of these settings by:
+When WSUS is the configured source, Update Manager only installs updates that WSUS approves and offers to the machine. A deployment can't install an update that isn't approved in WSUS.
 
-- Using Local Group Policy Editor
-- Using Group Policy
-- Using Windows PowerShell
-- Editing the Registry directly
+> [!IMPORTANT]
+> Update Manager doesn't override Windows Update client settings. Review policies that control update sources, automatic installation, and restarts before you schedule deployments.
 
-Update Management respects many of the settings specified to control the Windows Update client.
+## Store and query update data
 
-> [!TIP]
-> If you use settings to enable non-Windows updates, Update Management also manages those updates.
-
-### Configure WSUS for managing updates
-
-WSUS improves the security of the systems at Contoso by applying security updates to Microsoft products and third-party products in a timely manner. It provides the infrastructure to download, test, and approve security updates. Applying security updates quickly helps prevent security incidents that are a result of known vulnerabilities. While implementing WSUS, you must keep in mind the hardware and software requirements for WSUS, the settings to configure, and the updates to approve or remove according to Contoso’s needs.
-
-Update Management in Azure supports WSUS settings. You can specify sources for scanning and downloading updates using instructions in **Specify intranet Microsoft Update service location**. By default, the Windows Update client is configured to download updates from Windows Update. When you specify a WSUS server as a source for your machines, if the updates aren't approved in WSUS, update deployment fails.
-
-![A screenshot of the Group Policy Editor in Windows. The administrator has navigated to the Windows Update folder and configured the Configure Automatic Updates, Specify intranet Microsoft Update service location, and Do not connect to any Windows Update Internet locations values.](../media/m3-windows-update.png)
-
-> [!TIP]
-> To restrict machines to the internal update service, set **Do not connect to any Windows Update Internet locations**.
+Update Manager stores assessment and deployment data in Azure Resource Graph. Use the built-in views for daily operations, or create Azure Workbooks and Resource Graph queries for custom compliance reports. This data model doesn't require a Log Analytics workspace.

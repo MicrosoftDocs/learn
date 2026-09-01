@@ -4,12 +4,12 @@ title: Understand Azure preview features
 metadata:
   title: Understand Azure preview features
   description: "Understand Azure preview features"
-  ms.date: 04/15/2022
-  author: wwlpublish
+  ms.date: 08/04/2026
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-understand-azure-preview-features.md)]
+  [!include[](includes/3-understand-azure-preview-features.md)]

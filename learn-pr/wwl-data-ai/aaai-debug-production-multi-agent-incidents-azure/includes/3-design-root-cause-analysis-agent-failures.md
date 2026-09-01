@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4a1028b0-2c1e-4678-ba3d-311651e1cb7b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Application Insights collects distributed trace data across every span in a multi-agent pipeline, giving engineers the observability foundation needed to perform systematic root cause analysis. KQL queries against this trace data reconstruct the precise sequence of agent calls, model responses, and tool interactions that connect an underlying change to a customer-visible failure.
 
 Root cause analysis in multi-agent systems requires structured, systematic investigation rather than intuition-driven guessing. When Adventure Works' checkout completion rate dropped 15%, the immediate symptom—customers abandoning at payment step—pointed to the payment agent. But investigating the payment agent in isolation revealed nothing wrong. The actual root cause was three services upstream. The pricing agent had been updated with a new model deployment that occasionally returned prices formatted with currency symbols ("$99.99" instead of "99.99"). The payment processing API rejected these non-numeric values, causing silent failures that only surfaced when customers attempted checkout. Finding this causal chain required systematic hypothesis testing across the entire agent ecosystem rather than focusing on the obvious failure point.
@@ -116,3 +127,5 @@ Systematic hypothesis testing, timeline reconstruction, and canary analysis give
 - **Timeline reconstruction** uses distributed traces and KQL queries to correlate failed vs. successful requests, revealing differential behavior patterns that pinpoint the problem area.
 - **Canary analysis** segments failures by customer attributes, request characteristics, and infrastructure dimensions to determine whether an issue is isolated or systemic.
 - **Blameless postmortems** document findings with a focus on system failures and missing guardrails, producing assigned action items that prevent recurrence.
+
+::: zone-end

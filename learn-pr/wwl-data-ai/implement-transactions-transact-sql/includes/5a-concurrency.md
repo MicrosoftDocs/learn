@@ -5,7 +5,7 @@ Concurrency occurs at the transaction level. A writing transaction can block oth
 There are many specific transaction isolation levels that can be used to define how a database system handles multiple users. For the purposes of this module, we'll look at broad categories of isolation level, optimistic locking, and pessimistic locking.
 
 > [!NOTE]
-> The full detail of transaction locking beyond concurrency is related more to performance and not only dependent on the code - although good code performs better. Please review the in-depth [SQL Server Transaction Locking and Row Versioning Guide](/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide?) for more details. For information about blocking, also review the [SQL Server Performance documentation](/troubleshoot/sql/performance/understand-resolve-blocking).
+> The full detail of transaction locking beyond concurrency is related more to performance and not only dependent on the code—although good code performs better. For deeper detail, review the [SQL Server transaction locking and row versioning guide](/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide). For information about blocking, also review the [SQL Server Performance documentation](/troubleshoot/sql/performance/understand-resolve-blocking).
 
 ## Optimistic concurrency
 
@@ -21,25 +21,24 @@ It's important to consider the nature of your data and the queries running on th
 
 ## Snapshot isolation
 
-There are five different isolation levels in SQL Server, but for this module we'll concentrate on just READ_COMMITTED_SNAPSHOT_OFF and READ_COMMITTED_SNAPSHOT_ON. READ_COMMITTED_SNAPSHOT_OFF is the default isolation level for SQL Server. READ_COMMITTED_SNAPSHOT_ON is the default isolation level for Azure SQL Database.
+SQL Server supports five transaction isolation levels—`READ UNCOMMITTED`, `READ COMMITTED`, `REPEATABLE READ`, `SNAPSHOT`, and `SERIALIZABLE`—set per session with `SET TRANSACTION ISOLATION LEVEL`. Separately, `READ_COMMITTED_SNAPSHOT` is a *database-level option* (set with `ALTER DATABASE`) that changes how the `READ COMMITTED` isolation level behaves. For this module we focus on those two database-option settings, because they determine whether the default `READ COMMITTED` transactions use pessimistic locking or row versioning.
 
-READ_COMMITTED_SNAPSHOT_OFF will hold locks on the affected rows until the end of the transaction if query is using the read committed transaction isolation level. While it's possible for some updates to occur, such as the creation of a new row, this will prevent most conflicting changes to the data being read or updated. This is pessimistic concurrency.
+- With `READ_COMMITTED_SNAPSHOT OFF` (the default for SQL Server), `READ COMMITTED` transactions acquire shared locks on rows they read and hold them until the read completes. This prevents most conflicting changes to the data being read and is a form of **pessimistic concurrency**.
+- With `READ_COMMITTED_SNAPSHOT ON` (the default for Azure SQL Database and Azure SQL Managed Instance), `READ COMMITTED` transactions use **row versioning** stored in `tempdb`. Each statement sees the last committed version of each row as of when that statement started, so readers never block writers and writers never block readers. Writers still acquire standard exclusive locks, so concurrent writes to the same row still block each other. This is a form of **optimistic concurrency for reads**—but note there's no automatic commit-time conflict detection for writes; that behavior belongs to the separate `SNAPSHOT` isolation level.
 
-READ_COMMITTED_SNAPSHOT_ON takes a snapshot of the data. Updates are then done on that snapshot allowing other connections to query the original data. At the end of the transaction the current state of the data is compared to the snapshot. If the data is the same, the transaction is committed. If the data differs, the transaction is rolled back.
-
-To change the isolation level to READ_COMMITTED_SNAPSHOT_ON issue the following command:
-
-```sql
-ALTER DATABASE *db_name* SET READ_COMMITTED_SNAPSHOT ON;
-```
-
-To change the isolation level to READ_COMMITTED_SNAPSHOT_OFF issue the following command:
+To turn `READ_COMMITTED_SNAPSHOT` on, run:
 
 ```sql
-ALTER DATABASE *db_name* SET READ_COMMITTED_SNAPSHOT OFF;
+ALTER DATABASE <db_name> SET READ_COMMITTED_SNAPSHOT ON;
 ```
 
-If the database has been altered to turn on read committed snapshot, any transaction that uses the default read committed isolation level will use optimistic locking.
+To turn it off:
+
+```sql
+ALTER DATABASE <db_name> SET READ_COMMITTED_SNAPSHOT OFF;
+```
+
+If the database has been altered to turn on read committed snapshot, any transaction that uses the default `READ COMMITTED` isolation level uses row versioning instead of shared read locks.
 
 > [!NOTE]
-> Snapshot isolation only occurs for read committed transactions. Transactions that use other isolation levels are not affected.
+> The `READ_COMMITTED_SNAPSHOT` database option only affects transactions running at the `READ COMMITTED` isolation level. Transactions explicitly using other isolation levels (`REPEATABLE READ`, `SERIALIZABLE`, or `SNAPSHOT`) aren't affected by this option.

@@ -1,10 +1,10 @@
-The data loss prevention (DLP) **Alerts dashboard** in Microsoft Purview helps security teams review the details of policy matches, analyze user behavior, and take appropriate actions.
+When a DLP alert doesn't involve other security signals and you need to check what matched, why, and whether the policy needs adjusting, the **Alerts dashboard** in Microsoft Purview is where you start.
 
 ## Where DLP alerts appear
 
-Alerts appear in the **Microsoft Purview Alerts dashboard** when a user action matches a DLP policy condition. The dashboard provides a centralized view of recent alerts and supports filtering, investigation, and triage actions.
+Alerts appear in the **Microsoft Purview Alerts dashboard** when a user action matches a DLP policy condition. From there, you can filter, investigate, and triage.
 
-By default, alerts remain in the dashboard for **30 days**. If your organization needs longer visibility, audit log retention settings can be adjusted separately in the Microsoft Purview Audit solution.
+How long alerts remain visible in the dashboard depends on your organization's audit log retention policy. If you need alerts retained longer than the default, adjust your retention settings in the Microsoft Purview Audit solution.
 
 ## Workloads supported
 
@@ -47,7 +47,7 @@ You can also see the workload where the match occurred, such as Exchange, ShareP
 
 ### Step 3: View related user activity
 
-If your organization has integrated **Insider Risk Management**, the **User activity summary** tab becomes available. This summary tab provides all the exfiltration activities the user engaged in (up to the past 120 days). It helps analysts identify whether the alert is part of a larger pattern of risky behavior.
+If your organization has integrated **Insider Risk Management**, the **User activity summary** tab becomes available. For this tab to appear, [data sharing must be turned on in Insider Risk Management settings](/purview/insider-risk-management-settings-share-data?azure-portal=true), and the user must be in scope of an Insider Risk Management policy. Once enabled, the tab shows exfiltration activities the user engaged in over the past 120 days, so you can determine whether the alert is part of a larger pattern.
 
 :::image type="content" source="../media/data-loss-prevention-activity-summary.png" alt-text="Screenshot showing user activity summary in a data loss prevention alert." lightbox="../media/data-loss-prevention-activity-summary.png":::
 
@@ -84,7 +84,7 @@ After reviewing the alert and any related user activity or events:
 
 ## Use Microsoft Security Copilot
 
-Security Copilot is integrated into the DLP Alerts dashboard for organizations with access to the preview feature. It provides AI-generated summaries of alert context, including:
+Security Copilot is integrated into the DLP Alerts dashboard. Select **Summarize with Copilot** on any alert to generate an AI summary of the alert context, including:
 
 - Triggered policy and rule
 - File involved and access path
@@ -125,5 +125,3 @@ From the dashboard, some alerts allow you to download emails involved in the inc
 - Both internal sender and recipient deleted the message
 
 These limitations apply to Exchange-based DLP events.
-
-The DLP Alerts dashboard gives security teams visibility into policy violations across Microsoft 365 services. It supports fast investigation, contextual analysis, and direct resolution, all from one place. With tools like Security Copilot and shareable links, teams can respond to potential risks quickly and collaboratively.

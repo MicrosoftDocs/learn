@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.design-machine-learning-operations-solution
 metadata:
-  title: Design a machine learning operations solution
-  description: Design machine learning operations MLOps solution with Azure Machine Learning Python SDK v2.
-  author: wwlpublish
+  title: Design a machine learning operations solution (MLOps)
+  description: Choose this module if you want to design an MLOps architecture for monitoring and retraining production models.
+  author: madiepev
   ms.author: madiepev
-  ms.date: 12/01/2025
+  ms.date: 08/27/2026
   ms.service: azure-machine-learning
   ms.topic: module
   ms.custom: ai-learning-hub
   ms.collection:
     - wwl-ai-copilot
-title: Design a machine learning operations solution
-summary: Learn about machine learning operations or MLOps to bring a model from development to production. Identify options for monitoring and retraining when preparing a model for production.
+title: Design a machine learning operations solution (MLOps)
+summary: Choose this module if you want to design an MLOps architecture for monitoring and retraining production models.
 abstract: |
-  In this module, you will:
+  In this module, you:
   - Explore an MLOps architecture.
   - Design for monitoring.
   - Design for retraining.
@@ -37,4 +37,3 @@ units:
 - learn.wwl.design-machine-learning-operations-solution.summary
 badge:
   uid: learn.wwl.design-machine-learning-operations-solution.badge
-

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-copilot.explore-capabilities
+title: Explore Azure Copilot capabilities
+metadata:
+  title: Explore Azure Copilot capabilities
+  description: Discover the ways Azure Copilot helps you perform tasks, get information, troubleshoot resources, and find recommendations.
+  ms.date: 06/23/2026
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-explore-capabilities.md)]

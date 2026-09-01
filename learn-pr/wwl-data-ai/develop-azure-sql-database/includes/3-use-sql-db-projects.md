@@ -1,4 +1,4 @@
-The [SQL Database Projects extension](/sql/tools/visual-studio-code/sql-server-develop-use-vscode?azure-portal=true) is a developer tool that can be installed in Visual Studio Code. This extension is designed to facilitate the development and management of SQL databases in a project-based environment. It's compatible with several SQL platforms, including SQL Server, Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse SQL.
+The [SQL Database Projects extension](/sql/tools/visual-studio-code-extensions/sql-database-projects/sql-database-projects-extension?azure-portal=true) is a developer tool that can be installed in Visual Studio Code. This extension is designed to facilitate the development and management of SQL databases in a project-based environment. It's compatible with several SQL platforms, including SQL Server, Azure SQL Database, Azure SQL Managed Instance, Azure Synapse SQL, Fabric Data Warehouse, and SQL database in Fabric.
 
 Database schemas can be created or changed, and the changes are saved in a *.dacpac* file format. You can publish the SQL Database project either using the SQL Database Projects extension or by publishing the *.dacpac* with the command line interface [SqlPackage](/sql/tools/sqlpackage/sqlpackage-publish?azure-portal=true).
 
@@ -6,7 +6,7 @@ With the SQL Database Projects extension you can either create a new empty proje
 
 ## Install the Database Projects extension
 
-The SQL Database Projects extension is installed as part of the [mssql extension](/sql/tools/visual-studio-code/sql-server-develop-use-vscode?azure-portal=true). The mssql extension for Visual Studio Code enables you to connect to a SQL Server, query databases with T-SQL, and view the results.
+The SQL Database Projects extension is installed as part of the [mssql extension](/sql/tools/visual-studio-code-extensions/mssql/mssql-extension-visual-studio-code?azure-portal=true). The mssql extension for Visual Studio Code enables you to connect to a SQL Server, query databases with T-SQL, and view the results.
 
 :::image type="content" source="../media/3-sql-database-projects-extension.png" alt-text="Screenshot showing the SQL Database Projects extension installed.":::
 
@@ -48,7 +48,7 @@ Creating a new SQL Database project from an existing database allows you to impo
 1. Browse to your folder under **Select location or create project**.
 1. Select **Schema/Object Type** under **Select folder structure**.
 1. Select **No (default)** under **Include permissions in project**.
-1. Select **Yes (recommended)** under **SDK-style project (Preview)**.
+1. Select **Yes (recommended)** under **SDK-style project**.
 1. When prompted, select **Yes** to trust the authors of the files.
 1. Expand the database objects tree to see the tables and other objects.
 1. To modify the schema, select an object.

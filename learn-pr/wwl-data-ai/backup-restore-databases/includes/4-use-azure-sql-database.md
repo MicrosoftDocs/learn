@@ -16,7 +16,7 @@ Both SQL Database, and SQL Managed Instance have a feature called Accelerated Da
 > [!NOTE]
 > You can't restore SQL Database Azure SQL Managed Instance backups on SQL Database.
 
-Automated database backups are also avaialable on [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/automated-backups-overview). SQL Server database engine backups are automatically managed by Microsoft, and stored on Microsoft-managed Azure storage accounts.
+Automated database backups are also avaialable on [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/automated-backups-overview). SQL Server Database Engine backups are automatically managed by Microsoft, and stored on Microsoft-managed Azure Storage accounts.
 
 ### Point in time restore
 

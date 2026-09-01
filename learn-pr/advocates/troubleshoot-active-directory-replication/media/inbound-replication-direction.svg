@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 270" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Inbound replication direction</title>
+  <desc id="desc">Inbound replication carries directory changes from the source domain controller on the right to the destination domain controller on the left.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="270" fill="#FFFFFF"/>
+
+  <rect x="45" y="65" width="255" height="145" rx="12" fill="#F7FBFF" stroke="#0078D4" stroke-width="2"/>
+  <rect x="70" y="91" width="48" height="78" rx="6" fill="#E1EFFF" stroke="#0078D4" stroke-width="2"/>
+  <line x1="80" y1="108" x2="108" y2="108" stroke="#0078D4" stroke-width="3"/>
+  <line x1="80" y1="124" x2="108" y2="124" stroke="#0078D4" stroke-width="3"/>
+  <circle cx="85" cy="151" r="4" fill="#107C10"/>
+  <text x="139" y="119" fill="#1A1A1A" font-size="20" font-weight="700">Destination DC</text>
+  <text x="139" y="149" fill="#424242" font-size="15">Receives changes</text>
+  <text x="172" y="190" text-anchor="middle" fill="#005A9E" font-size="14" font-weight="600">Read this DC first</text>
+
+  <rect x="600" y="65" width="255" height="145" rx="12" fill="#F7FBFF" stroke="#0078D4" stroke-width="2"/>
+  <rect x="625" y="91" width="48" height="78" rx="6" fill="#E1EFFF" stroke="#0078D4" stroke-width="2"/>
+  <line x1="635" y1="108" x2="663" y2="108" stroke="#0078D4" stroke-width="3"/>
+  <line x1="635" y1="124" x2="663" y2="124" stroke="#0078D4" stroke-width="3"/>
+  <circle cx="640" cy="151" r="4" fill="#107C10"/>
+  <text x="694" y="119" fill="#1A1A1A" font-size="20" font-weight="700">Source DC</text>
+  <text x="694" y="149" fill="#424242" font-size="15">Supplies changes</text>
+
+  <line x1="588" y1="137" x2="312" y2="137" stroke="#0078D4" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="350" y="83" width="200" height="36" rx="18" fill="#FFFFFF" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="450" y="107" text-anchor="middle" fill="#005A9E" font-size="16" font-weight="700">Inbound replication</text>
+  <text x="450" y="169" text-anchor="middle" fill="#424242" font-size="14">Directory changes</text>
+</svg>

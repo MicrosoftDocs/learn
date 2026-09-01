@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3d4c4af5-da84-4756-be69-78d3928e2a55]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB supports all three memory tiers that clinical agents use—working, episodic, and semantic—each with different storage, query, and retention characteristics. Selecting the right tier for each type of clinical information determines retrieval performance, storage cost, and compliance posture.
 
 | Memory Type | Retention Period | Query Pattern | Storage Approach | Clinical Example |
@@ -70,3 +81,5 @@ Now that you understand the taxonomy of memory types and architectural patterns 
 - **Semantic memory** extracts patterns and generalizations from multiple episodes, supporting personalization without storing every detail.
 - **Memory architecture selection** depends on agent function: routing agents need minimal memory, specialist agents need episodic recall, and personalization agents need all three tiers.
 - **Privacy and compliance** must be designed into the architecture upfront—partition keys, access controls, and right-to-deletion support can't be retrofitted.
+
+::: zone-end

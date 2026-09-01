@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=69e26b05-be6b-4aed-a113-43fc5df98e63]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Fabrikam's multi-agent code review system processes proprietary enterprise source code containing business logic, security implementations, and integration patterns that represent significant competitive value. As code flows through eight specialized agents—from preprocessing to security analysis to quality assessment—each processing stage creates privacy exposure points. Multi-agent workflows amplify privacy risks because data crosses multiple model boundaries, storage stages, and processing contexts. Configuring comprehensive privacy protection requires detecting sensitive information before agent processing, minimizing data exposure at each stage, enforcing consent and purpose limitations, and controlling data residency throughout the workflow. The Azure AI Language Service detects and redacts sensitive information before it reaches the agent pipeline, while Microsoft Foundry project settings enforce consent boundaries and data residency requirements.
 
 The following table illustrates how multi-agent workflows multiply privacy exposure points compared to single-agent processing:
@@ -164,3 +175,5 @@ For customers with different residency requirements, you maintain regional deplo
 > A developer commits code containing a hardcoded API key inside a comment that also references a colleague by name. The code flows through your eight-agent review pipeline. How would you design the PII detection stage to handle both the credential and the personal reference without losing the code review's technical value?
 
 With comprehensive privacy protection in place—PII detection before agent processing, data minimization per agent function, consent and purpose enforcement, and regional data residency controls—you ensure Fabrikam's multi-agent system respects the confidentiality of enterprise source code. The final governance dimension establishes accountability mechanisms that prove the system operates as designed and enables continuous improvement through audit feedback.
+
+::: zone-end

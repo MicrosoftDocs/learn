@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=71aa98ef-895b-484b-92f4-fb665038d318]
+
+::: zone-end
+
+::: zone pivot="text"
+
 The [azure_ai extension](/azure/postgresql/flexible-server/generative-ai-azure-overview) is a powerful tool created by the Microsoft Postgres team that provides seamless integration between your Azure Database for PostgreSQL flexible server instance and various Azure AI Services. This integration streamlines the development process and enables you to incorporate AI features into your applications effortlessly.
 
 You can access Azure AI Services such as natural language processing, text analytics, and generative AI language models from your SQL queries using a simple function call. This extension allows you to use the power of Azure AI and Machine Learning to add advanced analytics and insights to your applications without leaving your PostgreSQL database.
@@ -90,3 +98,5 @@ Here's a quick example of how easy it's to use the `azure_ai` extension within a
     ```
 
 - **Additional features**: You can add vector columns to tables, create HNSW (Hierarchical Navigable Small World) indexes, and perform semantic searches - all powered by the `azure_ai` extension.
+
+::: zone-end

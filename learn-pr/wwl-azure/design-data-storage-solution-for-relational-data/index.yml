@@ -5,9 +5,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Design a Data Storage Solution for Relational Data
   description: "Azure Architects design and recommend relational data storage solutions."
-  ms.date: 03/23/2026
+  ms.date: 06/23/2026
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: robbarefoot
   ms.topic: module
   ms.collection: N/A
   ms.custom:

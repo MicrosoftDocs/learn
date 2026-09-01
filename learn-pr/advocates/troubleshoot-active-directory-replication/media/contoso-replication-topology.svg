@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Contoso intersite replication topology</title>
+  <desc id="desc">SEA-DC-01 at 10.10.1.20 in the Seattle site is the source in the failed replication relationship. It connects over the SEA-BNE site link to BNE-DC-01 at 10.40.1.10 in the Brisbane site, which is the destination.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="360" fill="#FFFFFF"/>
+
+  <rect x="35" y="35" width="350" height="290" rx="12" fill="#F7FBFF" stroke="#0078D4" stroke-width="2"/>
+  <path d="M47 35h326a12 12 0 0 1 12 12v48H35V47a12 12 0 0 1 12-12z" fill="#0078D4"/>
+  <text x="210" y="73" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="700">Seattle site</text>
+
+  <rect x="615" y="35" width="350" height="290" rx="12" fill="#F7FBFF" stroke="#0078D4" stroke-width="2"/>
+  <path d="M627 35h326a12 12 0 0 1 12 12v48H615V47a12 12 0 0 1 12-12z" fill="#0078D4"/>
+  <text x="790" y="73" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="700">Brisbane site</text>
+
+  <rect x="82" y="122" width="256" height="112" rx="9" fill="#FFFFFF" stroke="#5B9BD5" stroke-width="2"/>
+  <rect x="102" y="143" width="44" height="69" rx="5" fill="#E1EFFF" stroke="#0078D4" stroke-width="2"/>
+  <line x1="111" y1="158" x2="137" y2="158" stroke="#0078D4" stroke-width="3"/>
+  <line x1="111" y1="173" x2="137" y2="173" stroke="#0078D4" stroke-width="3"/>
+  <circle cx="116" cy="195" r="4" fill="#107C10"/>
+  <text x="166" y="167" fill="#1A1A1A" font-size="18" font-weight="700">SEA-DC-01</text>
+  <text x="166" y="196" fill="#424242" font-size="16">10.10.1.20</text>
+
+  <rect x="662" y="122" width="256" height="112" rx="9" fill="#FFFFFF" stroke="#5B9BD5" stroke-width="2"/>
+  <rect x="682" y="143" width="44" height="69" rx="5" fill="#E1EFFF" stroke="#0078D4" stroke-width="2"/>
+  <line x1="691" y1="158" x2="717" y2="158" stroke="#0078D4" stroke-width="3"/>
+  <line x1="691" y1="173" x2="717" y2="173" stroke="#0078D4" stroke-width="3"/>
+  <circle cx="696" cy="195" r="4" fill="#107C10"/>
+  <text x="746" y="167" fill="#1A1A1A" font-size="18" font-weight="700">BNE-DC-01</text>
+  <text x="746" y="196" fill="#424242" font-size="16">10.40.1.10</text>
+
+  <rect x="82" y="258" width="256" height="42" rx="21" fill="#E1EFFF"/>
+  <text x="210" y="285" text-anchor="middle" fill="#005A9E" font-size="15" font-weight="600">Source in failed relationship</text>
+
+  <rect x="662" y="258" width="256" height="42" rx="21" fill="#E1EFFF"/>
+  <text x="790" y="285" text-anchor="middle" fill="#005A9E" font-size="15" font-weight="600">Destination in failed relationship</text>
+
+  <line x1="385" y1="178" x2="605" y2="178" stroke="#0078D4" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="411" y="126" width="178" height="34" rx="17" fill="#FFFFFF" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="500" y="149" text-anchor="middle" fill="#005A9E" font-size="16" font-weight="700">SEA-BNE site link</text>
+  <text x="500" y="211" text-anchor="middle" fill="#424242" font-size="14">Replication path</text>
+</svg>

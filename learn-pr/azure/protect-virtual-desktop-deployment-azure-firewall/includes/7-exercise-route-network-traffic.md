@@ -1,14 +1,11 @@
-In the previous exercise, you deployed Azure Firewall. Now you need to route all network traffic through the firewall, and filter the traffic by using firewall rules. When you're done, Azure Firewall will protect outbound network traffic for Azure Virtual Desktop.
+In the previous exercise, you deployed Azure Firewall with a Firewall Policy. Now you'll create the required policy rules before you configure outbound routing through the firewall. Creating the rules first prevents an interruption when the default route becomes active.
 
-## Route all traffic through the firewall
+## Prepare the route table
 
-For the subnet the host pool uses, configure the outbound default route to go through the firewall. You'll complete the following three steps:
+Create and associate a route table with the session-host subnet. Don't add routes yet. You'll add them after the firewall rules are ready.
 
 1. Create a route table in the same resource group as your host pool VMs and firewall.
 1. Associate the route table to the subnet that your host pool VMs use.
-1. On the route table, add the route to the firewall.
-
-After you complete those steps, all traffic will route to Azure Firewall.
 
 ### Create route table
 
@@ -47,122 +44,164 @@ Now, you'll associate *firewall-route* to the host pool's subnet.
 
 1. Select **OK** and wait until the association is added.
 
-### Add route to route table
+## Create an application rule collection
 
-The last step is to add a route to Azure Firewall on the route table. After you complete this step, all network traffic on the host pool virtual network will route through Azure Firewall.
+By default, the firewall denies access to everything, so you need to configure conditions under which traffic is allowed through the firewall.
 
+Create application rule collections in the Firewall Policy to allow the required Azure Virtual Desktop fully qualified domain names (FQDNs). Before using these rules in production, compare them with [Required FQDNs and endpoints for Azure Virtual Desktop](/azure/virtual-desktop/required-fqdn-endpoint), because the endpoint list can change.
+
+1. In the Azure portal, search for and select **Firewall Policies**.
+1. Select **learn-fw-policy**.
+1. Under **Settings**, select **Application rules**, and then select **Add a rule collection**.
+1. Enter the following information:
+
+    | Field | Value |
+    | --- | --- |
+    | Name | **avd-application-rules** |
+    | Priority | **200** |
+    | Rule collection action | **Allow** |
+    | Rule collection group | **DefaultApplicationRuleCollectionGroup** |
+
+### Add the application rules
+
+1. Under **Rules**, add the following rule for the managed Azure Virtual Desktop FQDN tag:
+
+    | Field | Value |
+    | --- | --- |
+    | Name | **allow-avd-service** |
+    | Source type | **IP address** |
+    | Source | **10.0.0.0/16** |
+    | Protocol:port | **https:443** |
+    | Destination type | **FQDN tag** |
+    | Destination | **WindowsVirtualDesktop** |
+
+1. Add a rule for the supporting HTTPS endpoints:
+
+    | Field | Value |
+    | --- | --- |
+    | Name | **allow-avd-support-https** |
+    | Source type | **IP address** |
+    | Source | **10.0.0.0/16** |
+    | Protocol:port | **https:443** |
+    | Destination type | **FQDN** |
+    | Destination | `login.microsoftonline.com`, `catalogartifact.azureedge.net`, `*.prod.warm.ingest.monitor.core.windows.net`, `gcs.prod.monitoring.core.windows.net`, `mrsglobalsteus2prod.blob.core.windows.net`, `wvdportalstorageblob.blob.core.windows.net`, `*.service.windows.cloud.microsoft`, `*.windows.cloud.microsoft`, `*.windows.static.microsoft` |
+
+1. Add a rule for certificate validation endpoints:
+
+    | Field | Value |
+    | --- | --- |
+    | Name | **allow-certificate-validation** |
+    | Source type | **IP address** |
+    | Source | **10.0.0.0/16** |
+    | Protocol:port | **http:80** |
+    | Destination type | **FQDN** |
+    | Destination | `oneocsp.microsoft.com`, `www.microsoft.com`, `*.aikcertaia.microsoft.com`, `azcsprodeusaikpublish.blob.core.windows.net`, `*.microsoftaik.azure.net`, `ctldl.windowsupdate.com` |
+
+1. Select **Add**.
+
+> [!IMPORTANT]
+> Don't enable TLS inspection for Azure Virtual Desktop traffic.
+
+## Create a network rule collection
+
+Create a network rule for Windows activation. The `WindowsVirtualDesktop` service-tag route provides direct relayed Remote Desktop Protocol (RDP) connectivity on UDP port 3478. Domain Name System (DNS) requests from the session host go to the firewall DNS proxy that you configured in the previous exercise.
+
+1. On **learn-fw-policy**, under **Settings**, select **Network rules**, and then select **Add a rule collection**.
+1. Enter the following information:
+
+    | Field | Value |
+    | --- | --- |
+    | Name | **avd-network-rules** |
+    | Priority | **200** |
+    | Rule collection action | **Allow** |
+    | Rule collection group | **DefaultNetworkRuleCollectionGroup** |
+
+1. Under **Rules**, add the following Windows activation Key Management Services (KMS) rule:
+
+    | Field | Value |
+    | --- | --- |
+    | Name | **allow-kms** |
+    | Source type | **IP address** |
+    | Source | **10.0.0.0/16** |
+    | Protocol | **TCP** |
+    | Destination ports | **1688** |
+    | Destination type | **FQDN** |
+    | Destination | `azkms.core.windows.net` |
+
+1. Select **Add**.
+
+## Add outbound routes
+
+The firewall policy now allows the required traffic. Add a default route to Azure Firewall and a more specific route that provides direct access to the Azure Virtual Desktop gateway and broker.
+
+### Add the default route
+
+1. In the Azure portal, search for and select **Route tables**, and then select **firewall-route**.
 1. Under **Settings**, select **Routes**.
 
     :::image type="content" source="../media/7-firewall-route-routes.png" alt-text="Screenshot that shows the routes option under settings on the firewall route table.":::
+
 1. Select **+ Add**.
 1. Enter the following values:
 
-    |Field |Value  |
-    |---------|---------|
-    |Route name    |  fw-rt       |
-    |Destination type | IP Addresses |
-    |Destination IP addresses/CIDR ranges |  0.0.0.0/0       |
-    |Next hop type   |  Virtual appliance     |
-    |Next hop address   |  Paste in the **Firewall private IP address** from the previous exercise unit. This can be found under your Firewall page, listed as Firewall private IP.    |
+    | Field | Value |
+    | --- | --- |
+    | Route name | **firewall-default-route** |
+    | Destination type | **IP Addresses** |
+    | Destination IP addresses or CIDR ranges | `0.0.0.0/0` |
+    | Next hop type | **Virtual appliance** |
+    | Next hop address | The **Firewall private IP** address from the previous exercise |
 
     :::image type="content" source="../media/7-add-route.png" alt-text="Screenshot that shows the information to include when adding a route.":::
 
 1. Select **Add**.
 
-## Create an application rule collection
+### Add the Azure Virtual Desktop service route
 
-By default, the firewall denies access to everything, so you need to configure conditions under which traffic is allowed through the firewall.
+1. Select **+ Add** again, and enter the following values:
 
-Create an application rule collection with rules to allow Azure Virtual Desktop access to several fully qualified domain names (FQDNs).
+    | Field | Value |
+    | --- | --- |
+    | Route name | **avd-service-route** |
+    | Destination type | **Service tag** |
+    | Destination service tag | **WindowsVirtualDesktop** |
+    | Next hop type | **Internet** |
 
-1. In the Azure portal, search for and select **Firewalls**.
-1. Select the **learn-fw** firewall.
-1. Under **Settings**, select **Rules (classic)**.
-:::image type="content" source="../media/7-firewall-rules-classic.png" alt-text="Screenshot that shows the rules classic option under settings in the firewall.":::
-1. Select the **Application rule collection** tab, and select **Add application rule collection**.
-:::image type="content" source="../media/7-firewall-rules-classic-application-rule-collection.png" alt-text="Screenshot that shows the application rule collection tab with the add application rule collection option.":::
-1. Enter the following information:
-
-    |Field  |Value  |
-    |---------|---------|
-    |Name     |     app-coll01    |
-    |Priority    |    200     |
-    |Action     |  Allow       |
-1. Under **Rules**, in the **FQDNs tags** section, enter the following information:
-
-    |Field  |Value  |
-    |---------|---------|
-    |Name     |     allow-virtual-desktop    |
-    |Source type    | IP address        |
-    |Source     |   Address space for hostVNet, like 10.0.0.0/16     |
-    |FQDN tags    |  Windows Virtual Desktop       |
-
-1. Under **Rules**, in the **Target FQDNs** section, enter the following information:
-
-    |Field  |Value  |
-    |---------|---------|
-    |Name     |     allow-storage-service-bus-accounts    |
-    |Source type    | IP address        |
-    |Source     |   Address space for hostVNet, like 10.0.0.0/16     |
-    |Protocol:Port   |   https     |
-    |Target FQDNs   | `*xt.blob.core.windows.net`, `*eh.servicebus.windows.net`, `*xt.table.core.windows.net`   |
-
-1. When you're done, the form looks like the following image:
-:::image type="content" source="../media/7-firewall-rules-classic-application-rule-collection-form.png" alt-text="Screenshot that shows the application rule collection form filled out.":::
 1. Select **Add**.
 
-## Create a network rule collection
-
-Let's say our scenario uses Microsoft Entra Domain Services (Microsoft Entra Domain Services), so you don't need to create a network rule to allow DNS. However, you do need to create a rule to allow traffic from your Azure Virtual Desktop VMs to the Windows activation service. For our network rule to allow Key Management Services (KMS), use the destination IP address of the KMS server for the Azure global cloud.
-
-1. On **learn-fw** >  **Rules (classic)**, select **Network rule collection**.
-1. Select the **Network rule collection** tab, and then select **Add network  rule collection**.
-:::image type="content" source="../media/7-firewall-rules-add-network-collection.png" alt-text="Screenshot that shows the network rule collection tab with the add network rule collection option.":::
-1. Enter the following information:
-
-    |Field  |Value  |
-    |---------|---------|
-    |Name     |     net-coll01    |
-    |Priority    |    200     |
-    |Action     |  Allow       |
-
-1. Under **Rules**, in the **IP Addresses** section, enter the following information:
-
-    |Field  |Value  |
-    |---------|---------|
-    |Name     |     allow-kms    |
-    |Protocol|TCP|
-    |Source type    | IP address        |
-    |Source     |   Address space for hostVNet, like 10.0.0.0/16     |
-    |Destination type  |  IP address      |
-    |Destination Address    |   23.102.135.246   |
-    |Destination Ports    |   1688   |
-
-1. When you're done, the form looks like the following image:
-:::image type="content" source="../media/7-firewall-rule-network-rule-collection-rule.png" alt-text="Screenshot that shows the network rule collection form filled out.":::
-1. Select **Add**.
+Azure uses the most specific matching route. The service-tag route sends gateway and broker traffic directly to the service, which avoids disconnections during Azure Firewall scale-in. Traffic without a more specific route follows the `0.0.0.0/0` default route to the firewall.
 
 ## Check your work
 
-At this point, you've routed all network traffic for Azure Virtual Desktop through the firewall. Let's make sure the firewall is working as expected. Outbound network traffic from the host pool should filter through the firewall to the Azure Virtual Desktop service. You can verify that the firewall allows traffic through to the service by checking the status of the service components.
+At this point, traffic without a more specific route uses the firewall, while gateway and broker traffic uses the direct service-tag route. Use the Azure Virtual Desktop Agent URL Tool on the session host to validate access to the required endpoints.
 
-1. In Azure Cloud Shell, run the following command:
+1. In the Azure portal, search for and select **Virtual machines**.
+1. Select the session-host VM whose name starts with **learnhost**.
+1. Under **Operations**, select **Run command** > **RunPowerShellScript**.
+1. Enter and run the following script:
 
-    ```powershell
-    "rdgateway", "rdbroker","rdweb"|% `
-    {Invoke-RestMethod -Method:Get `
-    -Uri https://$_.wvd.microsoft.com/api/health}|ft `
-    -Property Health,TimeStamp,ClusterUrl
+     ```powershell
+     $urlTool = Get-ChildItem 'C:\Program Files\Microsoft RDInfra' `
+         -Filter WVDAgentUrlTool.exe `
+         -File `
+         -Recurse |
+             Sort-Object {
+                 [version]($_.Directory.Name -replace '^RDAgent_', '')
+             } -Descending |
+             Select-Object -First 1
+
+     if (-not $urlTool) {
+         throw 'The Azure Virtual Desktop Agent URL Tool was not found.'
+     }
+
+     & $urlTool.FullName
      ```
 
-1. You should get something like the following results, where all three component services are listed as healthy:
+1. Review the output and confirm that every required endpoint is accessible.
 
-    ```output
-    Health               TimeStamp           ClusterUrl
-    ------               ---------           ----------
-    RDGateway is Healthy 7/2/2021 6:00:00 PM https://rdgateway-c101-cac-r1.wvd.microsoft.com/
-    RDBroker is Healthy  7/2/2021 6:00:00 PM https://rdbroker-c100-cac-r1.wvd.microsoft.com/
-    RDWeb is Healthy     7/2/2021 6:00:00 PM https://rdweb-c100-cac-r1.wvd.microsoft.com/
-    ```
+If a required endpoint is inaccessible:
 
-    If one or more components are not healthy, the firewall isn't working as expected.
+1. Compare the failed endpoint with the current required endpoint list.
+1. Confirm that the endpoint is in the correct application rule and that the protocol and port match.
+1. If name resolution fails, confirm that DNS proxy is enabled and that **hostVNet** uses the firewall private IP address as its DNS server.
+1. Correct the configuration, rerun the tool, and confirm that the endpoint is accessible.

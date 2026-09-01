@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.live-captions.how-live-captions-work
+title: How Live Captions work
+metadata:
+  title: How Live Captions Work
+  description: This content is part of the "Use Live Captions in Windows to better understand audio" module.
+  ms.date: 06/15/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-how-live-captions-work.md)]

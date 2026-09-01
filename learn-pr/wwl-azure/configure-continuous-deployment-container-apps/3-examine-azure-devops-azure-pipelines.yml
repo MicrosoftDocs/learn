@@ -6,10 +6,10 @@ metadata:
   description: "Examine Azure DevOps and Azure Pipelines"
   ms.date: 02/29/2024
   author: wwlpublish
-  ms.author: cahowd
+  ms.author: petender
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-examine-azure-devops-azure-pipelines.md)]
+  [!include[](includes/3-examine-azure-devops-azure-pipelines.md)]

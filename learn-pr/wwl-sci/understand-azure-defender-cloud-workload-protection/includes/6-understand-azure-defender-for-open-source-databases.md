@@ -4,9 +4,8 @@ This Defender for Cloud plan brings threat protections for the following open-so
 
 - Azure Database for PostgreSQL
 - Azure Database for MySQL
-- Azure Database for MariaDB
 
-When you enable this plan, Microsoft Defender for Cloud will provide alerts when it detects anomalous database access and query patterns and suspicious database activities.
+When you enable this plan, Microsoft Defender for Cloud provides alerts when it detects anomalous database access and query patterns and suspicious database activities.
 
 :::image type="content" source="../media/defender-alerts.png" alt-text="Screenshot of alert screen with open-source database alerts.":::
 
@@ -15,6 +14,6 @@ When you enable this plan, Microsoft Defender for Cloud will provide alerts when
 Threat intelligence enriched security alerts are triggered when there are:
 
 - **Anomalous database access and query patterns** For example, an abnormally high number of failed sign-in attempts with different credentials (a brute force attempt)
-- **Suspicious database activities** For example, a legitimate user accessing an SQL Server from a breached computer that communicated with a crypto-mining C&C server
+- **Suspicious database activities** For example, a legitimate user accessing a SQL Server from a breached computer that communicated with a crypto-mining C&C server
 - **Brute-force attacks** With the ability to separate simple brute force from brute force on a valid user or a successful brute force.
 

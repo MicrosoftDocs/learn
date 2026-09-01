@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740" role="img" aria-labelledby="title desc">
+  <title id="title">Directory service Domain Name System diagnostic decision tree</title>
+  <desc id="desc">The tree checks the symptom, client configuration, authoritative responses, locator records, site selection, registration, replication, correction, and verification.</desc>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto">
+      <path d="M0 0L0 6L8 3z" fill="#243A5E"/>
+    </marker>
+    <style>
+      .box{fill:#fff;stroke:#243A5E;stroke-width:2}
+      .decision{fill:#fff5df;stroke:#7A3E00;stroke-width:2}
+      .success{fill:#edf8f1;stroke:#006B5A;stroke-width:2}
+      .heading{font:700 15px Segoe UI,Arial,sans-serif;fill:#172B4D;text-anchor:middle}
+      .text{font:13px Segoe UI,Arial,sans-serif;fill:#172B4D;text-anchor:middle}
+      .line{stroke:#243A5E;stroke-width:2;fill:none;marker-end:url(#arrow)}
+      .fault{stroke:#7A3E00}
+    </style>
+  </defs>
+
+  <rect x="430" y="20" width="340" height="60" rx="9" class="box"/>
+  <text x="600" y="55" class="heading">Define the exact directory service symptom</text>
+
+  <rect x="430" y="110" width="340" height="80" rx="9" class="decision"/>
+  <text x="600" y="138" class="heading">
+    <tspan x="600">Are the client suffix and</tspan>
+    <tspan x="600" dy="19">resolver list valid?</tspan>
+  </text>
+  <text x="600" y="177" class="text">Capture ipconfig evidence</text>
+
+  <rect x="430" y="220" width="340" height="80" rx="9" class="decision"/>
+  <text x="600" y="248" class="heading">
+    <tspan x="600">Does the exact query return</tspan>
+    <tspan x="600" dy="19">authoritative data?</tspan>
+  </text>
+  <text x="600" y="287" class="text">Check SOA, NS, and direct answers</text>
+
+  <rect x="430" y="330" width="340" height="80" rx="9" class="decision"/>
+  <text x="600" y="358" class="heading">
+    <tspan x="600">Are locator targets and</tspan>
+    <tspan x="600" dy="19">host data valid?</tspan>
+  </text>
+  <text x="600" y="397" class="text">Check SRV, CNAME, A, and AAAA records</text>
+
+  <rect x="430" y="440" width="340" height="80" rx="9" class="decision"/>
+  <text x="600" y="468" class="heading">
+    <tspan x="600">Are locator capabilities and</tspan>
+    <tspan x="600" dy="19">site selection correct?</tspan>
+  </text>
+  <text x="600" y="507" class="text">Use nltest and test reachability</text>
+
+  <rect x="40" y="330" width="310" height="80" rx="9" class="decision"/>
+  <text x="195" y="363" class="heading">Is an expected record missing?</text>
+  <text x="195" y="389" class="text">Test registration, updates, and ownership</text>
+
+  <rect x="850" y="330" width="310" height="80" rx="9" class="decision"/>
+  <text x="1005" y="363" class="heading">Do authoritative answers differ?</text>
+  <text x="1005" y="389" class="text">Test directory replication convergence</text>
+
+  <rect x="430" y="550" width="340" height="60" rx="9" class="box"/>
+  <text x="600" y="585" class="heading">Correct the root cause at the owning layer</text>
+
+  <rect x="350" y="650" width="500" height="70" rx="9" class="success"/>
+  <text x="600" y="678" class="heading">
+    <tspan x="600">Verify the query, locator result,</tspan>
+    <tspan x="600" dy="20">original operation, and replication</tspan>
+  </text>
+
+  <path d="M600 80V110" class="line"/>
+  <path d="M600 190V220" class="line"/>
+  <path d="M600 300V330" class="line"/>
+  <path d="M600 410V440" class="line"/>
+  <path d="M600 520V550" class="line"/>
+  <path d="M600 610V650" class="line"/>
+
+  <path d="M430 260H195V330" class="line fault"/>
+  <text x="300" y="249" class="text">No expected record</text>
+  <path d="M770 260H1005V330" class="line fault"/>
+  <text x="900" y="249" class="text">Inconsistent data</text>
+
+  <path d="M195 410V580H430" class="line"/>
+  <path d="M1005 410V580H770" class="line"/>
+  <path d="M430 150H390V580H430" class="line fault"/>
+  <text x="350" y="139" class="text">No: correct the client path</text>
+
+  <text x="620" y="210" class="text">Yes</text>
+  <text x="620" y="320" class="text">Yes</text>
+  <text x="620" y="430" class="text">Yes</text>
+  <text x="620" y="540" class="text">Yes</text>
+</svg>

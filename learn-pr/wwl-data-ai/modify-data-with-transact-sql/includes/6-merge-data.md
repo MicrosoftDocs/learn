@@ -36,3 +36,6 @@ WHEN NOT MATCHED THEN
     INSERT (SalesOrderID, CustomerID, OrderDate, PurchaseOrderNumber, TotalDue)
     VALUES (s.SalesOrderID, s.CustomerID, s.OrderDate, s.PurchaseOrderNumber, s.TotalDue);
 ```
+
+> [!NOTE]
+> The `MERGE` statement uses locking mechanisms that differ from discrete `INSERT`, `UPDATE`, and `DELETE` statements. At scale, `MERGE` might introduce complicated concurrency issues, so thoroughly test any `MERGE` statement before deploying it to production. When you're simply updating one table based on the rows of another, separate `INSERT`, `UPDATE`, and `DELETE` statements can offer better performance and scalability. For more information, see [Concurrency considerations for MERGE](/sql/t-sql/statements/merge-transact-sql#concurrency-considerations-for-merge).

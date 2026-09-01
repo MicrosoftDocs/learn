@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-copilot-administer-azure-sql.exercise-diagnose-slow-query-copilot
+title: "Exercise: Diagnose a slow query and generate a fix with Copilot"
+metadata:
+  title: "Exercise: Diagnose a Slow Query and Generate a Fix with Copilot"
+  description: "End-to-end exercise: use Copilot in the Azure SQL Database portal and GitHub Copilot in SSMS to identify a slow query, generate an index recommendation, validate it, and apply it."
+  ms.date: 06/02/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-diagnose-slow-query-copilot.md)]

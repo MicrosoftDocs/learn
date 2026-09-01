@@ -34,5 +34,13 @@ modules:
   - learn.azure.manage-nfs-volumes
   - learn.azure.manage-smb-volumes
   - learn.azure.manage-dual-volumes
+  - learn.azure.manage-volume-access
+  - learn.azure.mount-azure-netapp-files-volumes
+  - learn.azure.manage-volume-capacity-performance
+  - learn.azure.manage-application-volume-groups-sap-hana
+  - learn.azure.manage-application-volume-groups-oracle
+  - learn.azure.manage-data-protection-azure-netapp-files
+  - learn.azure.manage-azure-netapp-files-security
+  - learn.azure.troubleshoot-azure-netapp-files
 trophy:
   uid: learn.azure.managing-azure-netapp-files.trophy

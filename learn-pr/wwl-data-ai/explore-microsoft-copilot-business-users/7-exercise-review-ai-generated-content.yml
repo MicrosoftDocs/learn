@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-microsoft-copilot-business-users.exercise-review-ai-generated-content
+title: "Exercise: Review AI-generated content"
+metadata:
+  title: "Exercise: Review AI-Generated Content"
+  description: "Learn how to review AI-generated content, identify potential issues, and refine outputs to ensure accuracy, clarity, and alignment with your goals."
+  ms.date: 08/17/2026
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-review-ai-generated-content.md)]

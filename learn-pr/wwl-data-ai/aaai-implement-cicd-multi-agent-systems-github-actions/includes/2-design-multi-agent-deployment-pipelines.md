@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9f9f9399-0486-49b3-90b5-403bb09c5056]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 GitHub Actions coordinates multi-agent deployments by modeling each agent as a dependent job in a shared workflow. Where single-agent CI/CD follows a linear path—test, build, deploy—multi-agent systems require a dependency graph that enforces deployment order and validates contract compatibility before any agent reaches production. Each agent's pipeline connects to the others through explicit dependency declarations and automated contract tests.
 
 | Deployment Aspect | Single Agent | Multi-Agent System |
@@ -213,3 +224,5 @@ Run these contract tests in your validation job before deploying any agent chang
 - **Contract testing** validates that updated agents maintain compatible tool schemas before deployment proceeds.
 - **Ordered deployments** use GitHub Actions `needs` keyword to deploy agents in dependency-graph order automatically.
 - **Compatibility validation** catches breaking changes—like new required parameters or removed tools—before they reach production.
+
+::: zone-end

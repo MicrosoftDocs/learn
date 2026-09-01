@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.repeat-actions-loops-python
+metadata:
+  title: Repeat Actions with Loops
+  description: Learn how to repeat actions in Python using for and while loops, and control loop execution with break and continue.
+  ms.date: 07/15/2026
+  ms.service: visual-studio
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
+title: Repeat actions with loops
+summary: Learn how to repeat actions in Python using for and while loops, and control loop execution with break and continue.
+abstract: |
+  After completing this module, you're able to:
+  - Repeat actions a set number of times using a for loop.
+  - Repeat actions while a condition is True using a while loop.
+  - Control loop execution using break and continue.
+  - Store and iterate over multiple values using lists.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+subjects:
+  - app-development
+units:
+- learn.wwl.repeat-actions-loops-python.introduction
+- learn.wwl.repeat-actions-loops-python.choose-between-for-while-loops
+- learn.wwl.repeat-actions-loops-python.controlling-loop-execution-with-break-continue
+- learn.wwl.repeat-actions-loops-python.exercise-number-game
+- learn.wwl.repeat-actions-loops-python.knowledge-check
+- learn.wwl.repeat-actions-loops-python.summary
+badge:
+  uid: learn.wwl.repeat-actions-loops-python.badge

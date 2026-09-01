@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4192184f-d46f-4b08-a53f-65bd62a18c24]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Getting the right documents into the initial result set is only part of the challenge—the harder part is putting the most useful ones first. Azure AI Search's semantic ranker rescores those initial candidates using a language model, without requiring any changes to your index. Combined with cross-encoder models and Large Language Model (LLM) based scoring, it forms the foundation of a multi-stage pipeline that progressively narrows results to the documents that genuinely answer the query.
 
 Hybrid search returns a ranked list of potentially relevant documents, but the initial ranking reflects a general-purpose scoring algorithm that doesn't understand your specific query context. When a clinician asks "What are the monitoring requirements for a patient starting warfarin therapy?" hybrid search might rank documents about warfarin pharmacology, general anticoagulation guidelines, and laboratory testing procedures—all potentially relevant, but not all equally useful. Reranking applies more sophisticated relevance scoring to select the documents that best answer the specific question.
@@ -150,3 +161,5 @@ Reranking improves how results are ordered within a search. When your RAG pipeli
 - **Cross-encoder models** score query-document pairs jointly for domain-specific refinement—effective for specialized clinical terminology but too expensive for large candidate sets
 - **LLM-as-reranker** achieves the highest accuracy by reasoning about whether documents answer the specific question, but cost and latency limit it to final selection on small candidate sets
 - **Maximum Marginal Relevance (MMR)** balances precision with diversity by penalizing candidates similar to already-selected documents, ensuring agents receive multi-perspective context rather than redundant excerpts
+
+::: zone-end

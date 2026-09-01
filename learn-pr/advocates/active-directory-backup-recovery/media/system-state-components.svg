@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Domain controller system-state components</title>
+  <desc id="desc">Eight ordered component boxes connect with horizontal lines to a central Volume Shadow Copy Service coordination box, which connects vertically to an application-consistent backup.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#243a5e"/>
+    </marker>
+    <style>
+      .component-box {
+        fill: #eef5ff;
+        stroke: #365f91;
+        stroke-width: 3;
+      }
+      .coordination-box {
+        fill: #fff4ce;
+        stroke: #8a6d1d;
+        stroke-width: 3;
+      }
+      .backup-box {
+        fill: #e8f5e9;
+        stroke: #286c2f;
+        stroke-width: 3;
+      }
+      .note-box {
+        fill: #fde7e9;
+        stroke: #a4262c;
+        stroke-width: 3;
+      }
+      .connector {
+        fill: none;
+        stroke: #243a5e;
+        stroke-width: 3;
+        marker-end: url(#arrow);
+      }
+      .diagram-title {
+        fill: #17253d;
+        font: 700 30px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .box-title {
+        fill: #17253d;
+        font: 700 21px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .box-text {
+        fill: #17253d;
+        font: 17px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+      .small-text {
+        fill: #4a5568;
+        font: 16px "Segoe UI", Arial, sans-serif;
+        text-anchor: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- Opaque background -->
+  <rect x="0" y="0" width="1600" height="1100" fill="#ffffff"/>
+
+  <text class="diagram-title" x="800" y="48">Windows Server 2025 domain controller system state</text>
+
+  <!-- Row 1 -->
+  <rect class="component-box" x="60" y="100" width="450" height="112" rx="18" ry="18"/>
+  <text class="box-title" x="285" y="140">1. Directory database</text>
+  <text class="box-text" x="285" y="172">
+    <tspan x="285" dy="0">NTDS.dit, transaction logs,</tspan>
+    <tspan x="285" dy="24">and directory metadata</tspan>
+  </text>
+
+  <rect class="component-box" x="1090" y="100" width="450" height="112" rx="18" ry="18"/>
+  <text class="box-title" x="1315" y="140">2. Registry</text>
+  <text class="box-text" x="1315" y="172">
+    <tspan x="1315" dy="0">Operating system configuration,</tspan>
+    <tspan x="1315" dy="24">service state, and protected settings</tspan>
+  </text>
+
+  <!-- Row 2 -->
+  <rect class="component-box" x="60" y="260" width="450" height="112" rx="18" ry="18"/>
+  <text class="box-title" x="285" y="300">3. SYSVOL</text>
+  <text class="box-text" x="285" y="332">
+    <tspan x="285" dy="0">Group Policy files, scripts,</tspan>
+    <tspan x="285" dy="24">and Distributed File System state</tspan>
+  </text>
+
+  <rect class="component-box" x="1090" y="260" width="450" height="112" rx="18" ry="18"/>
+  <text class="box-title" x="1315" y="300">4. Boot files</text>
+  <text class="box-text" x="1315" y="332">
+    <tspan x="1315" dy="0">Startup configuration</tspan>
+    <tspan x="1315" dy="24">and boot dependencies</tspan>
+  </text>
+
+  <!-- Row 3 -->
+  <rect class="component-box" x="60" y="420" width="450" height="112" rx="18" ry="18"/>
+  <text class="box-title" x="285" y="460">5. Protected system files</text>
+  <text class="box-text" x="285" y="492">
+    <tspan x="285" dy="0">Critical operating system</tspan>
+    <tspan x="285" dy="24">files required by the server</tspan>
+  </text>
+
+  <rect class="component-box" x="1090" y="420" width="450" height="112" rx="18" ry="18"/>
+  <text class="box-title" x="1315" y="460">6. Directory-integrated DNS</text>
+  <text class="box-text" x="1315" y="492">
+    <tspan x="1315" dy="0">Zones stored in domain, DomainDnsZones,</tspan>
+    <tspan x="1315" dy="24">or ForestDnsZones partitions</tspan>
+  </text>
+
+  <!-- Row 4 -->
+  <rect class="component-box" x="60" y="580" width="450" height="112" rx="18" ry="18"/>
+  <text class="box-title" x="285" y="620">7. Component Services data</text>
+  <text class="box-text" x="285" y="652">
+    <tspan x="285" dy="0">Class registration</tspan>
+    <tspan x="285" dy="24">and system component state</tspan>
+  </text>
+
+  <rect class="component-box" x="1090" y="580" width="450" height="112" rx="18" ry="18"/>
+  <text class="box-title" x="1315" y="620">8. Installed role data</text>
+  <text class="box-text" x="1315" y="652">
+    <tspan x="1315" dy="0">Writer-managed data for installed roles,</tspan>
+    <tspan x="1315" dy="24">including Certificate Services when present</tspan>
+  </text>
+
+  <!-- Central coordination box -->
+  <rect class="coordination-box" x="585" y="100" width="430" height="592" rx="22" ry="22"/>
+  <text class="box-title" x="800" y="298">9. VSS coordination</text>
+  <text class="box-text" x="800" y="340">
+    <tspan x="800" dy="0">Writers prepare application data.</tspan>
+    <tspan x="800" dy="30">The snapshot preserves a consistent set.</tspan>
+    <tspan x="800" dy="30">Windows Server Backup records the catalog.</tspan>
+  </text>
+  <text class="small-text" x="800" y="465">
+    <tspan x="800" dy="0">Validate writer state, included items,</tspan>
+    <tspan x="800" dy="24">warnings, exclusions, and completion.</tspan>
+  </text>
+
+  <!-- Horizontal connectors: left components -->
+  <path class="connector" d="M510 156 L585 156"/>
+  <path class="connector" d="M510 316 L585 316"/>
+  <path class="connector" d="M510 476 L585 476"/>
+  <path class="connector" d="M510 636 L585 636"/>
+
+  <!-- Horizontal connectors: right components -->
+  <path class="connector" d="M1090 156 L1015 156"/>
+  <path class="connector" d="M1090 316 L1015 316"/>
+  <path class="connector" d="M1090 476 L1015 476"/>
+  <path class="connector" d="M1090 636 L1015 636"/>
+
+  <!-- Vertical output flow -->
+  <path class="connector" d="M800 692 L800 770"/>
+
+  <rect class="backup-box" x="500" y="770" width="600" height="122" rx="18" ry="18"/>
+  <text class="box-title" x="800" y="814">10. Application-consistent system-state backup</text>
+  <text class="box-text" x="800" y="848">
+    <tspan x="800" dy="0">Cataloged, protected, tested, and matched</tspan>
+    <tspan x="800" dy="24">to a supported recovery path</tspan>
+  </text>
+
+  <!-- Boundary note -->
+  <rect class="note-box" x="300" y="945" width="1000" height="105" rx="18" ry="18"/>
+  <text class="box-title" x="800" y="984">Not substitutes for system-state backup</text>
+  <text class="box-text" x="800" y="1018">
+    <tspan x="800" dy="0">Copied database files, directory exports, unsupported snapshots,</tspan>
+    <tspan x="800" dy="24">and file-backed DNS data without its separate recovery plan</tspan>
+  </text>
+</svg>

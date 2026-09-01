@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=4c7a912c-3071-4e42-83de-5816334a4bed]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f7aa666c-7ccd-4cbf-8076-20b3c4816ad8]
 
 > [!NOTE]
 > See the **Text and images** tab for more details
@@ -22,9 +22,11 @@ Throughout this module, you learned about:
 
 ### Claude models
 
-- **Claude Opus** - Maximum capability for complex reasoning, sophisticated agents, and critical analysis
-- **Claude Sonnet** - The workhorse that balances frontier intelligence with production speed and cost
-- **Claude Haiku** - Optimized for speed and volume in classification, extraction, and routing tasks
+- **Claude Haiku** - Optimized for speed and volume in classification, extraction, and routing tasks.
+- **Claude Sonnet** - The workhorse that balances frontier intelligence with production speed and cost.
+- **Claude Opus** - Advanced capabilities for complex reasoning, sophisticated agents, and critical analysis.
+- **Claude Fable** - Anthropic's most capable generally available model, for long-running agents and the most challenging tasks.
+- **Claude Mythos** - A restricted-access model with the same capabilities as Fable, but fewer constraints.
 
 ### Deployment and testing
 

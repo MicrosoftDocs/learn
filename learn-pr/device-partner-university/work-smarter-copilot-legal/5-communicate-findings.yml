@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.work-smarter-copilot-legal.communicate-findings
+title: Communicate your findings
+metadata:
+  title: Communicate Your Findings
+  description: This content is part of the "Work smarter with Copilot prompts for legal professionals" module.
+  ms.date: 07/21/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-communicate-findings.md)]

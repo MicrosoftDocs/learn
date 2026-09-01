@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-databricks-genie-teams-m365-copilot.use-genie-teams
+title: Use Genie in Microsoft Teams
+metadata:
+  title: Use Genie in Microsoft Teams
+  description: "Find and use the Databricks Genie app in Microsoft Teams through direct messages and channel mentions, and understand its supported response features."
+  ms.date: 08/25/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-use-genie-teams.md)]

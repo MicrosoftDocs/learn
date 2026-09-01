@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=86cbb122-feec-497c-9570-306308456377]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Object-level permissions control what actions users can perform on database objects like tables, views, stored procedures, and functions. While Row-Level Security filters data within objects, object-level permissions determine whether a user can access an object at all and what operations they can perform.
 
 A well-designed permission model goes hand-in-hand with secure authentication. This unit covers both: how to grant the right permissions and how to ensure users authenticate securely, preferably without passwords.
@@ -149,3 +160,5 @@ SELECT * FROM fn_my_permissions('Sales.Orders', 'OBJECT');
 ```
 
 Make it a habit to audit permission assignments regularly to ensure they still align with current job functions. And remember, object-level permissions work best when combined with other security features like Row-Level Security and Dynamic Data Masking for comprehensive protection.
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=eb189eca-9b31-4fe9-a3b1-9fe749ccc01f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry Agent Service enforces agent behavior through system prompts, which you structure as constitutional documents defining identity, constraints, scope, and escalation logic. In this unit, you build a five-section system prompt framework and validate it with test-driven development.
 
 The system prompt is your agent's constitution—it defines identity, behavioral boundaries, decision rules, and failure modes. A weak system prompt produces inconsistent behavior where the agent responds differently to the same clinical scenario depending on phrasing nuances or context timing. A well-engineered system prompt produces predictable, auditable behavior where the agent's decisions follow documented logic that regulatory reviews can validate.
@@ -248,3 +259,5 @@ Map Northwind Health's clinical agent: chronic care analysis with routine lab in
 The behavioral constraints section of your system prompt encodes the autonomy level: full-auto agents have minimal "won't execute without" rules; approval-required agents have explicit "WON'T proceed to execution until receiving approval token" rules. Escalation triggers section encodes the human-oversight gates that translate supervised and approval-required modes into runtime behavior.
 
 Cross-reference: Human-in-the-loop approval workflow design covers the approval-gate implementation used by the approval-required autonomy level. Unit 5 of this module (guardrail architectures, introduced next) covers how guardrails enforce the output boundaries that supervised and approval-required modes depend on.
+
+::: zone-end

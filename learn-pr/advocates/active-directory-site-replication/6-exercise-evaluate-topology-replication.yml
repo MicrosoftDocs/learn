@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.site-topology-replication.exercise-evaluate-topology-replication
+title: Exercise - Evaluate site topology and replication
+metadata:
+  title: Exercise - Evaluate site topology and replication
+  description: Evaluate a site topology, validate DC Locator, read replication metadata, diagnose a failure, and apply Replication Priority Boost in an isolated lab.
+  ms.date: 04/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 50
+content: |
+  [!include[](includes/6-exercise-evaluate-topology-replication.md)]

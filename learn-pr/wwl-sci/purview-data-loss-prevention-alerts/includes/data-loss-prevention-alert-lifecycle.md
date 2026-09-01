@@ -1,4 +1,4 @@
-Data loss prevention (DLP) alerts follow a structured path from detection through resolution. Understanding each step in the alert lifecycle helps ensure that potential data risks are handled consistently and that DLP policies continue to improve over time.
+Data loss prevention (DLP) alerts follow a structured path from detection through resolution. Each stage has a specific purpose and a different set of decisions.
 
 ## Trigger
 
@@ -27,7 +27,7 @@ Triage is about reviewing new alerts and deciding what to do next. You decide if
 
 The Microsoft Defender portal groups related alerts into incidents. This gives you a broader view of the user's actions. For example, if a user downloads a file from SharePoint, uploads it to a personal OneDrive, and then shares it externally, those events are grouped into one incident. This makes it easier to focus on what matters.
 
-You can use tags, comments, and filters to manage the incident queue. To focus only on DLP-related alerts, filter by **Service source: Data Loss Prevention**.
+You can use tags, comments, and filters to manage the incident queue. To focus only on DLP-related alerts, select **Add filter**, choose **Service/detection sources**, and select **Microsoft Data Loss Prevention**.
 
 If your organization shares Insider Risk Management signals with Defender, you can also see the user's insider risk severity level next to their DLP alerts. This helps prioritize which alerts might require immediate action.
 
@@ -37,14 +37,14 @@ Microsoft Security Copilot is also available in some tenants and can help analyz
 
 Once a triage owner is assigned, the next step is to investigate the alert further. This means gathering evidence, reviewing activity logs, and deciding on a remediation plan.
 
-You can use several tools for this:
+Where you start depends on what you're trying to answer:
 
-- **Microsoft Defender portal**: For viewing incidents, correlating alerts, tagging users, and taking immediate action.
-- **Microsoft Purview alerts dashboard**: For reviewing the alert's full context, updating its status, and sharing with others.
-- **Activity explorer**: For filtering and viewing user actions.
-- **Content explorer**: For deeper review of the file or content that triggered the alert.
+- **Start in Microsoft Defender** when you need to see whether the DLP alert is part of a broader pattern. Defender correlates DLP alerts with signals from endpoints, email, identity, and cloud apps, so it's the right place when the user's behavior looks like more than a one-off policy match.
+- **Start in the Microsoft Purview alerts dashboard** when you already know which policy fired and want to review the specific match, check the file content, or decide whether the policy needs tuning.
+- **Use Activity explorer** when you need to filter and compare user actions over time without opening individual alerts.
+- **Use Content explorer** when you need to inspect the actual file or message content that triggered the match.
 
-If enabled, you can also access a **User activity summary** that shows up to 120 days of user behavior, including risky actions like exfiltrating files or bypassing policy warnings.
+If your organization has enabled data sharing in Insider Risk Management settings and the user is in scope of an Insider Risk policy, you can also access a **User activity summary** that shows up to 120 days of user behavior, including risky actions like exfiltrating files or bypassing policy warnings.
 
 ## Remediate
 
@@ -74,4 +74,4 @@ The final step in the alert lifecycle is tuning your DLP policy. Once you respon
 - Notification settings
 - Whether certain low-risk actions should trigger alerts at all
 
-Tuning helps reduce false positives and improve detection over time. You can revisit your policy intent and compare it to actual outcomes to decide what changes are needed.
+Tuning reduces false positives and improves detection accuracy over time. You can revisit your policy intent and compare it to actual outcomes to decide what changes are needed.

@@ -2,11 +2,12 @@
 uid: learn.wwl.optimize-database-performance.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
-  description: Get started with optimizing database performance in Azure SQL Database.
+  description: Get Started With Optimizing Database Performance in Azure SQL Database.
   author: calopez
   ms.author: calopez
-  ms.date: 07/07/2025
+  ms.date: 7/13/2026
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 3

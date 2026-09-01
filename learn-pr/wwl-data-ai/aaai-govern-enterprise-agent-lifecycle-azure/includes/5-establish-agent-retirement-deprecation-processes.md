@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b2212841-313d-44eb-8dec-d1df42cd84b6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The Microsoft Foundry Control Plane gives you visibility into every deployed agent—its version, operational status, error rate, and monthly cost—making it the central tool for identifying and decommissioning agents that are no longer needed. In this unit, you use the Foundry portal alongside retirement checklists, graceful deprecation patterns, and governance processes to manage the full agent lifecycle through to safe decommissioning.
 
 ## Recognize hidden costs of zombie agents
@@ -185,3 +196,5 @@ A retirement decision is only as good as its execution. The governance framework
 - **Retirement checklists** verify tenant version pins, orchestrator dependencies, data archival, managed identity status, and documentation updates before decommissioning.
 - **Graceful deprecation** returns HTTP 410 with migration instructions for new users while continuing to serve pinned tenants during their migration window.
 - **Governance committees** make retirement decisions balancing operational efficiency against customer commitments, with minimum 90-day migration windows.
+
+::: zone-end

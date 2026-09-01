@@ -917,7 +917,6 @@ If you aggregate your SIEM related data into Microsoft Sentinel, it provides ext
 AWS implementation and extra context:
 
 - [Traffic Mirroring](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-how-it-works.html)
-- [Creating EBS volume backups with AMIs and EBS snapshots](https://docs.aws.amazon.com/prescriptive-guidance/latest/backup-recovery/ec2-backup.html)
 - [Use Immutable Storage](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/use-immutable-storage.html)
 
 GCP guidance: The data sources for investigation are the centralized logging sources that collect from the in-scope services and running systems, but can also include:

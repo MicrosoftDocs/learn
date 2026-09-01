@@ -5,7 +5,7 @@ metadata:
   description: This course teaches how to build production‑ready AI infrastructure using Microsoft Foundry Hubs and Projects, applying enterprise security controls, network isolation, managed identities, and container governance to enable compliant, scalable AI development across organizations.
   ms.date: 02/12/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: learning-path
 title: Secure AI-ready infrastructure
 prerequisites: |

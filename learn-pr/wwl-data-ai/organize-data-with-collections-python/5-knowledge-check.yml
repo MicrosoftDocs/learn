@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.organize-data-with-collections-python.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Check your learning on organizing data with lists and dictionaries in Python."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Which collection type is best for storing an ordered sequence of items?"
+    choices:
+    - content: "Dictionary"
+      isCorrect: false
+      explanation: "Incorrect. Dictionaries store key-value pairs and are optimized for lookup by key, not for ordered iteration by position."
+    - content: "List"
+      isCorrect: true
+      explanation: "Correct. Lists maintain the order in which items are added and are indexed by position."
+    - content: "String"
+      isCorrect: false
+      explanation: "Incorrect. Strings hold text, not general-purpose collections of items."
+  - content: "How do you access the value associated with the key 'name' in a dictionary called `user`?"
+    choices:
+    - content: "user('name')"
+      isCorrect: false
+      explanation: "Incorrect. Parentheses are used for function calls, not for dictionary access."
+    - content: "user.name"
+      isCorrect: false
+      explanation: "Incorrect. Dot notation accesses attributes; dictionary values are accessed with square brackets."
+    - content: "user['name']"
+      isCorrect: true
+      explanation: "Correct. Dictionary values are accessed using the key inside square brackets."
+  - content: "Which method adds a new item to the end of a list?"
+    choices:
+    - content: ".add()"
+      isCorrect: false
+      explanation: "Incorrect. Lists don't have an .add() method—that method belongs to sets."
+    - content: ".append()"
+      isCorrect: true
+      explanation: "Correct. The .append() method adds the given value to the end of the list."
+    - content: ".insert()"
+      isCorrect: false
+      explanation: "Incorrect. .insert() adds an item at a specific index; it works but isn't the standard way to add to the end."

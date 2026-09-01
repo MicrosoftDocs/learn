@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-visual-studio-code-python.understand-environments-packages
+title: Understand environments and packages
+metadata:
+  title: Understand Environments and Packages
+  description: "Learn how virtual environments keep projects isolated and how to install packages using pip."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-understand-environments-packages.md)]

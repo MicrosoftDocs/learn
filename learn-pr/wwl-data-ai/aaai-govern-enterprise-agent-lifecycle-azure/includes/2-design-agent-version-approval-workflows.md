@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=be028bc7-2186-4175-9892-7883dc5fc1f0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry stores agent configurations—model deployments, system prompts, and tool settings—as versioned artifacts managed through controlled deployment workflows. In this unit, you design the version manifests, approval gates, and tenant rollout controls that govern how those configuration changes propagate safely into production.
 
 ## Understand agent version complexity
@@ -149,3 +160,5 @@ Version governance transforms what could be an unpredictable multi-agent environ
 - **Rollout tiers** deploy approved versions to aggressive adopters immediately, standard adopters after 7 days, and conservative adopters after 30 days of production validation.
 - **Version pinning** lets enterprise customers freeze on a specific version for up to 90 days, with security exceptions that override pins for critical CVEs.
 - **EU AI Act obligations** require high-risk AI systems to maintain a technical file for each approved version; version manifests—with `eu_ai_act_risk_classification` and `material_change_assessment` fields added to the schema—serve as that artifact, aligning governance tooling with regulatory requirements.
+
+::: zone-end

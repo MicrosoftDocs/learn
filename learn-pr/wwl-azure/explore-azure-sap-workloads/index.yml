@@ -5,7 +5,7 @@ metadata:
   description: "Explore how the Microsoft and SAP partnership allows fully supported SAP applications to run across development, test, and production scenarios in Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 08/01/2024
   author: bradjoseph
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.custom:
   - N/A

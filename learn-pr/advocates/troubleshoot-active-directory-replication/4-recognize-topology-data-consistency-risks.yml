@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.troubleshoot-active-directory-replication.recognize-topology-data-consistency-risks
+title: Recognize topology and data consistency risks
+metadata:
+  title: Recognize Topology and Data Consistency Risks
+  description: Recognize stale domain controllers, lingering objects, unsupported restore, and rollback warning signs.
+  ms.date: 07/20/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-recognize-topology-data-consistency-risks.md)]

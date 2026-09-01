@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6bd31918-e870-48d9-92e3-dd795b3e1107]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 After you design how embeddings represent your data, you need to generate them and keep them in sync as data changes.
 
 SQL Server provides built-in AI functions to generate embeddings from text stored in database columns. Generating embeddings is typically not a one-time operation. When source data changes, embeddings may need to be regenerated so they continue to reflect the current state of the data.
@@ -72,3 +83,5 @@ Some solutions favor immediate updates, while others prioritize batching or exte
 ## Key takeaways
 
 Generating embeddings with `AI_GENERATE_EMBEDDINGS` is only the first step. As source data changes, stored vectors can fall out of sync, so you need a maintenance strategy. Options range from triggers and Change Tracking for tightly coupled updates to Change Data Capture, Change Event Streaming, and Azure Functions for asynchronous or decoupled approaches. The right choice depends on your data volume, latency requirements, and where embedding generation fits in your overall architecture.
+
+::: zone-end

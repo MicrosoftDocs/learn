@@ -3,7 +3,7 @@ uid: learn.wwl.implement-vector-search-azure-database-postgresql
 metadata:
   title: Implement Vector Search with Azure Database for PostgreSQL
   description: Learn how to implement vector search in Azure Database for PostgreSQL using the pgvector extension for semantic search, recommendations, and RAG pipelines.
-  ms.date: 01/29/2026
+  ms.date: 06/15/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=aa957d01-c00f-48e5-9871-07cc4e4c72a8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Real-world data rarely matches perfectly. Customer names might be misspelled, addresses abbreviated differently, or product descriptions entered inconsistently. Fuzzy string matching functions help you find records that are similar but not identical, enabling data quality improvements, duplicate detection, and more flexible search capabilities.
 
 ## Understand string similarity concepts
@@ -15,7 +26,7 @@ Consider these examples:
 - "Microsoft" → "Microsft": edit distance = 1 (delete 'o')
 
 > [!NOTE]
-> Fuzzy matching is computationally expensive compared to exact matching. Use it strategically, typically on candidate sets that have been pre-filtered using other criteria.
+> Fuzzy matching is computationally expensive compared to exact matching. Use it strategically, typically on candidate sets that are prefiltered using other criteria.
 
 ## Calculate edit distance with `EDIT_DISTANCE`
 
@@ -97,7 +108,7 @@ ORDER BY EDIT_DISTANCE_SIMILARITY(@searchTerm, Name) DESC;
 
 ## Calculate phonetic similarity with `JARO_WINKLER_DISTANCE`
 
-The Jaro-Winkler algorithm is specifically designed for comparing names and short strings. It gives higher scores to strings that match from the beginning, making it particularly effective for person names where prefixes are more significant:
+The Jaro-Winkler algorithm is designed for comparing names and short strings. It gives higher scores to strings that match from the beginning, making it effective for person names where prefixes are more significant:
 
 ```sql
 SELECT 
@@ -135,7 +146,7 @@ ORDER BY CombinedScore DESC;
 
 ## Performance considerations
 
-Fuzzy matching functions examine every character in both strings, making them computationally intensive. Exact string comparison can stop as soon as characters differ, and indexed lookups use efficient B-tree traversal. In contrast, fuzzy algorithms must calculate similarity scores character by character. For a table with one million rows, an unoptimized fuzzy search might perform one million similarity calculations, each involving dozens of character comparisons.
+Fuzzy matching functions examine every character in both strings, making them computationally intensive. Exact string comparison can stop as soon as characters differ, and indexed lookups use efficient B-tree traversal. In contrast, fuzzy algorithms must calculate similarity scores character by character. For a table with 1,000,000 rows, an unoptimized fuzzy search might perform 1,000,000 similarity calculations, each involving dozens of character comparisons.
 
 The key to efficient fuzzy matching is reducing the candidate set before applying the expensive fuzzy functions. Use indexed columns with `LIKE` patterns, exact matches on related fields, or range filters to narrow results first. Only then apply fuzzy matching to the smaller candidate set.
 
@@ -163,3 +174,5 @@ WHERE FirstName LIKE 'Jo%'
 > Fuzzy string matching functions like `EDIT_DISTANCE`, `EDIT_DISTANCE_SIMILARITY`, and `JARO_WINKLER_DISTANCE` are available in SQL Server 2025 and later, Azure SQL Database, and SQL databases in Microsoft Fabric. Check your platform's documentation for specific feature availability.
 
 For more information about fuzzy string matching, see [String Functions](/sql/t-sql/functions/string-functions-transact-sql?azure-portal=true).
+
+::: zone-end

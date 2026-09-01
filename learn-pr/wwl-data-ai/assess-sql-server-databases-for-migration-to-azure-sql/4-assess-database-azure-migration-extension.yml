@@ -4,7 +4,7 @@ title: Assess SQL Server with Azure Arc
 metadata:
   title: Assess SQL Server with Azure Arc
   description: "Assess SQL Server instances for migration to Azure using SQL Server enabled by Azure Arc."
-  ms.date: 1/19/2026
+  ms.date: 07/23/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f315a2f9-2381-4165-998c-3c57172e363b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure-hosted MCP servers depend on external APIs that can fail, slow down, or become temporarily unavailable. Retry patterns, circuit breakers, and graceful degradation responses keep your MCP server functional when dependencies fail, preventing cascading failures that disrupt entire agent workflows.
 
 | Error Type | Retry Strategy | Example Scenario |
@@ -258,3 +269,5 @@ Now that you understand reliability patterns for individual tools—retry, circu
 - **Circuit breakers** maintain three states (Closed, Open, Half-Open) to fail fast when services are down—open after N consecutive failures, test recovery after a timeout, and close after successful test requests
 - **Graceful degradation fallbacks** preserve workflow continuity by returning structured guidance (like "consult pharmacist") rather than generic errors, enabling agents to escalate appropriately when automated checks fail
 - **Health check endpoints** enable proactive circuit management by detecting dependency failures before real tool invocations fail, allowing monitoring systems to trigger scaling responses preemptively
+
+::: zone-end

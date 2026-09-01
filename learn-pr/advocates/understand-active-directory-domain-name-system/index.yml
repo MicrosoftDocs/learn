@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.devrel.understand-active-directory-domain-name-system
+metadata:
+  title: Understand How Active Directory Domain Services Uses DNS
+  description: Trace service discovery, interpret directory locator records, evaluate directory-integrated zones, and diagnose Domain Name System failures that affect Active Directory Domain Services.
+  ms.date: 08/03/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+title: Understand how Active Directory Domain Services uses DNS
+summary: Diagnose the Domain Name System mechanisms that Active Directory Domain Services requires for service discovery, site-aware domain controller selection, secure registration, and replication.
+abstract: |
+  By the end of this module, you can:
+  - Explain how Active Directory Domain Services uses Domain Name System for service discovery and replication prerequisites.
+  - Trace domain controller location through service records, Lightweight Directory Access Protocol User Datagram Protocol ping, site selection, and caching.
+  - Interpret the zones and resource records that domain controllers register and consume.
+  - Explain directory-integrated zones, application directory partitions, secure dynamic update, and replication convergence.
+  - Evaluate client, server, zone, delegation, registration, and site configuration against a known-good baseline.
+  - Diagnose and verify recovery from a Domain Name System-related directory service failure.
+prerequisites: |
+  - Knowledge of Domain Name System namespaces, zones, delegations, recursion, forwarding, caching, and common record types.
+  - Knowledge of Active Directory Domain Services forests, domains, domain controllers, sites, subnets, replication, global catalogs, and operations master roles.
+  - Experience with Internet Protocol configuration, firewalls, Windows Server administration, PowerShell, Event Viewer, Domain Name System Manager, and directory service administration tools.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+- support-engineer
+products:
+- windows-server
+subjects:
+- identity-access
+- infrastructure
+- networking
+units:
+- learn.devrel.understand-active-directory-domain-name-system.introduction
+- learn.devrel.understand-active-directory-domain-name-system.explain-directory-service-dependency
+- learn.devrel.understand-active-directory-domain-name-system.interpret-domain-name-system-records
+- learn.devrel.understand-active-directory-domain-name-system.trace-domain-controller
+- learn.devrel.understand-active-directory-domain-name-system.explain-directory-integrated-domain-name-system
+- learn.devrel.understand-active-directory-domain-name-system.establish-known-good-baseline
+- learn.devrel.understand-active-directory-domain-name-system.diagnose-directory-service-failures
+- learn.devrel.understand-active-directory-domain-name-system.guided-troubleshooting-exercise
+- learn.devrel.understand-active-directory-domain-name-system.knowledge-check
+- learn.devrel.understand-active-directory-domain-name-system.summary
+badge:
+  uid: learn.devrel.understand-active-directory-domain-name-system.badge

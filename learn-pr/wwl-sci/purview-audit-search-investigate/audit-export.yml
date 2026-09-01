@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-audit-search-investigate.audit-export
-title: Export audit log data
+title: Analyze and report on audit results
 metadata:
-  title: Export Audit Log Data
-  description: "Export audit log data."
-  ms.date: 08/15/2025
+  title: Analyze and Report on Audit Results
+  description: "Turn audit search results into findings you can share with the investigation team."
+  ms.date: 07/23/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
@@ -16,14 +16,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the maximum number of entries that can be exported to a CSV file from a single audit log search in Microsoft Purview Audit?"
+  - content: "The healthcare investigation returns roughly 200,000 `MailItemsAccessed` records the team needs to correlate with Microsoft Entra sign-in logs in Excel. The tenant has Audit (Premium). What's the practical export path?"
     choices:
-    - content: "10,000 entries."
-      isCorrect: false
-      explanation: "Incorrect: The limit is higher than 10,000 entries."
-    - content: "50,000 entries."
+    - content: "Export from the portal. A single Audit (Premium) export supports up to 1,000,000 rows."
       isCorrect: true
-      explanation: "Correct: Up to 50,000 entries can be downloaded to a CSV file from a single audit log search."
-    - content: "100,000 entries."
+      explanation: "Correct. Audit (Premium) exports support up to 1,000,000 rows in a single portal export. 200,000 records fit comfortably. Audit (Standard) caps at 50,000 rows per export."
+    - content: "Split the search into four smaller portal exports because a single portal export caps at 50,000 rows regardless of tier."
       isCorrect: false
-      explanation: "Incorrect: The limit isn't as high as 100,000 entries for a single export."
+      explanation: "Incorrect. The 50,000-row cap is the Audit (Standard) limit. Audit (Premium) supports up to 1,000,000 rows per export."
+    - content: "Use `Search-UnifiedAuditLog` in PowerShell only. Portal exports are limited to 5,000 rows for all tenants."
+      isCorrect: false
+      explanation: "Incorrect. Portal exports handle the row counts described here. `Search-UnifiedAuditLog` returns a maximum of 5,000 rows per call and 100 by default, and needs the pagination pattern to go further. It's a scale and automation option, not the only path."

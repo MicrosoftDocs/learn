@@ -1,5 +1,7 @@
-A notebook is ideal for experimentation and development. Once you've developed a machine learning model and it's ready for production, you want to train it with a script. You can run a script as a command job.
+Now it's your turn to run a training script and track a model with MLflow.
 
-In this exercise, you test a script and then run it as a command job. You also use MLflow in the script to track model training.
+In this exercise, you test a training script, run it as a command job, and use MLflow to track the model.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2356423&azure-portal=true)
+Launch the exercise and follow the instructions.
+
+:::image type="content" source="../media/launch-exercise.png" alt-text="Illustration of a button that opens the model training and tracking exercise in a new browser tab." link="https://go.microsoft.com/fwlink/?linkid=2356423&azure-portal=true":::

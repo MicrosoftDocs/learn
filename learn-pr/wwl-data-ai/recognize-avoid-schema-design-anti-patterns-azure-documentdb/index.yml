@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb
+metadata:
+  title: Recognize and Avoid Schema Design Anti-Patterns in Azure DocumentDB
+  description: "Identify and fix common schema design mistakes in Azure DocumentDB, including unbounded arrays, collection sprawl, unnecessary indexes, over-normalization, and case-sensitivity issues."
+  ms.date: 06/20/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-documentdb
+  ai-usage: ai-assisted
+title: Recognize and avoid schema design anti-patterns in Azure DocumentDB
+summary: Identify and fix common schema design mistakes in Azure DocumentDB, including unbounded arrays, collection sprawl, unnecessary indexes, over-normalization, and case-sensitivity issues.
+abstract: |
+  After completing this module, you'll be able to:
+  - Identify the unbounded arrays and collection sprawl anti-patterns and apply structural fixes.
+  - Recognize unnecessary indexes and over-normalization, and apply performance-focused solutions.
+  - Detect and resolve case-sensitivity issues that cause duplicate data and failed lookups.
+prerequisites: |
+  - Familiarity with database concepts such as queries, indexes, and data models.
+  - Basic understanding of MongoDB or document-oriented databases.
+  - Experience with insert, query, update, and delete operations in Azure DocumentDB or MongoDB.
+  - Understanding of data relationship modeling with embedding and referencing strategies.
+  - An Azure subscription.
+  - An Azure DocumentDB cluster.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-documentdb
+subjects:
+- databases
+units:
+- learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb.introduction
+- learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb.avoid-unbounded-arrays-collection-sprawl
+- learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb.identify-unnecessary-indexes-over-normalization
+- learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb.handle-case-sensitivity
+- learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb.exercise-identify-fix-anti-patterns
+- learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb.knowledge-check
+- learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb.summary
+badge:
+  uid: learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb.badge

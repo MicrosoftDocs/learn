@@ -9,4 +9,4 @@ After taking this module, you'll understand:
 - How to implement row level security and dynamic data masking
 - Understand the usage of Microsoft Defender for SQL
 - How Ledger works
-- Explore Azure Purview supported capabilities 
+- Explore Microsoft Purview supported capabilities 

@@ -1,4 +1,4 @@
-You should have learned how to send Syslog log data to the Microsoft Sentinel workspace using the provided data connector.
+In this module, you learned how to send Syslog log data to the Microsoft Sentinel workspace using the Azure Monitor Agent and a Data Collection Rule.
 
 You should now be able to:
 

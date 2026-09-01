@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-manipulate-data-azure-documentdb.insert-create-documents
+title: Insert and create documents
+metadata:
+  title: Insert and Create Documents
+  description: "Learn how to insert single and multiple documents into Azure DocumentDB collections using insertOne and insertMany."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-insert-create-documents.md)]

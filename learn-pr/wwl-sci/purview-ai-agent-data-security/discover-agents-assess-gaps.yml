@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-agent-data-security.discover-agents-assess-gaps
+title: Discover active agents and assess coverage gaps
+metadata:
+  title: Discover Active Agents and Assess Coverage Gaps
+  description: "Use DSPM and AI observability to discover active agents in your organization, interpret risk signals, and identify where policy coverage is incomplete."
+  ms.date: 06/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/discover-agents-assess-gaps.md)]

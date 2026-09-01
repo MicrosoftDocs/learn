@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-schema-design-patterns-azure-documentdb.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Check your understanding of schema design patterns in Azure DocumentDB."
+  ms.date: 04/15/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 5
+quiz:
+  title: ""
+  questions:
+  - content: "An e-commerce platform stores books, electronics, and clothing in separate collections. A developer needs to build a search page that queries all product types by price and availability. Which schema design pattern should the developer apply?"
+    choices:
+    - content: "The computed pattern, precomputing search results for each product type."
+      isCorrect: false
+      explanation: "The computed pattern precomputes aggregated values like counts and averages. It doesn't solve the problem of querying across multiple collections for different product types."
+    - content: "The inheritance pattern, storing all product types in a single collection with a type discriminator field."
+      isCorrect: true
+      explanation: "The inheritance pattern stores all related types in one collection with a discriminator field such as 'type.' This task allows cross-type queries on shared fields like price and availability while preserving type-specific fields for each product type."
+    - content: "The subset pattern, embedding a subset of each collection's documents into a search collection."
+      isCorrect: false
+      explanation: "The subset pattern embeds a bounded subset of child items in a parent document. It doesn't address the problem of querying across multiple collections of related entity types."
+  - content: "A product page displays the total review count and average rating. Currently, the application runs an aggregation pipeline against the reviews collection on every page load. With 50,000 page views per day, this approach causes high CPU usage. Which pattern reduces the read-time computation?"
+    choices:
+    - content: "The approximation pattern, updating the review count every 100 page views instead of on every view."
+      isCorrect: false
+      explanation: "The approximation pattern reduces write frequency for high-volume counters. The problem here's expensive read-time computation, not excessive writes. The review count and average rating need to be precomputed during writes, not approximated during reads."
+    - content: "The computed pattern, precomputing the review count and average rating during write operations and storing them in the product document."
+      isCorrect: true
+      explanation: "The computed pattern calculates aggregated values during write operations and stores them in the document. The product page reads the precomputed stats in a single query instead of running an aggregation pipeline on every page load."
+    - content: "The extended reference pattern, embedding review data in the product document."
+      isCorrect: false
+      explanation: "The extended reference pattern embeds frequently displayed fields from a referenced document to avoid lookups. It doesn't address the need to precompute aggregated statistics like counts and averages."
+  - content: "An order confirmation page needs to display the customer's name and the product name for each line item. The full customer profile includes a biography, sign in history, and preferences that the order page never uses. Which pattern should the developer apply?"
+    choices:
+    - content: "The extended reference pattern, embedding only the customer's name and product names in the order document alongside their reference ID."
+      isCorrect: true
+      explanation: "The extended reference pattern embeds only the frequently displayed fields from a referenced document while keeping the full document in its source collection. This embedding eliminates extra queries for common page loads without duplicating unnecessary data."
+    - content: "The single collection pattern, storing orders and customer profiles in the same collection."
+      isCorrect: false
+      explanation: "The single collection pattern stores related entity types with a discriminator field for unified querying. Orders and customer profiles have different access patterns and don't benefit from being in the same collection."
+    - content: "The schema versioning pattern, adding a version field to track which customer fields the order document includes."
+      isCorrect: false
+      explanation: "The schema versioning pattern manages schema evolution over time with a version field. It doesn't address the problem of reducing cross-collection lookups for display data."
+  - content: "A developer's user profile schema needs to evolve: the address field must change from a single string to a structured object with street, city, state, and zip fields. The collection has 2 million existing documents. Which pattern allows this change without downtime?"
+    choices:
+    - content: "The archive pattern, moving old-format documents to an archive collection and inserting new documents with the updated schema."
+      isCorrect: false
+      explanation: "The archive pattern moves infrequently accessed data to separate collections for lifecycle management. It doesn't address schema evolution. Old documents aren't inactive. They just have an outdated format."
+    - content: "The outlier pattern, flagging documents that still use the old address format."
+      isCorrect: false
+      explanation: "The outlier pattern handles documents that exceed normal size or complexity bounds. Documents with an older schema version aren't outliers. They represent the entire existing dataset that needs migration."
+    - content: "The schema versioning pattern, adding a schemaVersion field and migrating documents lazily on read or in batches."
+      isCorrect: true
+      explanation: "The schema versioning pattern adds a schemaVersion field to track which format each document uses. Application code normalizes documents to the latest version on read (lazy migration) or a background process converts them in batches. Both approaches avoid downtime."
+  - content: "An IoT application receives temperature readings from 100 sensors every 10 seconds. Storing each reading as a separate document creates over 300 million documents per year. Which pattern reduces the document count while preserving access to individual readings?"
+    choices:
+    - content: "The approximation pattern, recording only every 100th reading to reduce document volume."
+      isCorrect: false
+      explanation: "The approximation pattern reduces write frequency by batching counter updates, but it discards individual data points. The requirement is to preserve access to all readings while reducing document count."
+    - content: "The computed pattern, storing only daily summary statistics instead of individual readings."
+      isCorrect: false
+      explanation: "The computed pattern precomputes aggregated values, but it doesn't preserve individual data points. The requirement specifies that individual readings must remain accessible."
+    - content: "The bucket pattern, grouping readings into hourly documents with preaggregated statistics and an array of individual measurements."
+      isCorrect: true
+      explanation: "The bucket pattern groups time-series data into fixed-interval documents. An hourly bucket for each sensor stores up to 360 readings in an array with preaggregated statistics. This grouping reduces document count from 300+ million to under 900,000 per year while preserving every individual reading."

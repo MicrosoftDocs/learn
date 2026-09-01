@@ -3,7 +3,7 @@ uid: learn-wwl.develop-data-api-azure-sql-database
 metadata:
   title: Develop a data API for Azure SQL Database
   description: "Learn how to create modern REST data API for Azure SQL Database. We'll delve into Data API Builder, a powerful cross-platform that simplifies the creation of endpoints for your Azure SQL Database. With features like automatic query generation, granular security controls, and seamless integration with other Azure services, the Data API Builder can effortlessly transform your database into a versatile API."
-  ms.date: 08/06/2025
+  ms.date: 08/11/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based
@@ -14,7 +14,7 @@ summary: We'll explore the use of Azure's Data API Builder, a powerful tool that
 abstract: |
   By the end of this module, you'll be able to:
     - Use Data API Builder to create a data API for Azure SQL Database.
-    - Develop a data API using a static Azure web app.
+    - Use Azure Static Web Apps as a front end for a data API.
     - Develop a data API using Azure Web Apps.
 prerequisites: |
   * Experience using the Azure portal to create resources.

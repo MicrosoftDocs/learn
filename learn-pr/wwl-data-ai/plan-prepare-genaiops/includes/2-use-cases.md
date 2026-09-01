@@ -1,45 +1,53 @@
-Generative AI applications are rapidly evolving across multiple industries. Understanding how these applications can be deployed across different use cases can help you to better design solutions that are both effective and scalable. Let's explore some examples, highlighting the specific requirements and challenges that shape the architecture of GenAI solutions.
+The Adventure Works team is tempted to open a chat playground and start writing prompts. But a vague idea like *"an agent that helps shoppers"* leads to endless rework: every reviewer imagines a different agent, and no one can agree on when it's *good enough* to launch.
 
-## Enhance customer support in retail
+Instead, they write an **agent specification** first. Think of it as the blueprint, or job description, for your agent. It captures what the agent does, how it behaves, and how you know it works, before a single line of code is written.
 
-In retail, GenAI applications can help you to create personalized experiences by providing support to customers whenever they need it.
+A complete specification answers five questions, each building on the one before.
 
-Imagine the fictitious Contoso Outdoors, an enterprise retail website that sells hiking and camping gear to adventure-seekers. When you go on an adventure, it's essential that you bring the appropriate gear. Contoso Outdoors wants to help its customers by integrating a chat application with their website, allowing customers to ask any question they have, at any time of day.
+:::image type="content" source="../media/agent-spec-five-elements-flow.png" alt-text="Diagram that shows an agent specification made up of five elements: user intent, suggested prompts, capabilities, evaluation, and test data.":::
 
-For example, a customer can navigate to the website and search for a backpack, but find that there are many backpacks in various shapes and sizes. To understand better the type of backpack the customer still needs, they can ask for advice based on previous purchases.
+The team works through them in order, from why the agent exists to how they'll prove it works. Consider how each applies to your own use case as you read.
 
-To respond to the customer in real-time, Contoso Outdoors can integrate GenAI to generate an answer, which needs to be based on their own product and customer data.
+## User intent
 
-Let's explore the GenAIOps architecture for Contoso Outdoors.
+Start with *why the agent exists*: capture the agent's **job description**, its **target audience**, and the **pain points** it addresses.
 
-:::image type="content" source="../media/contoso-chat-architecture.png" alt-text="Diagram of the Contoso Chat application architecture." lightbox="../media/contoso-chat-architecture.png":::
+:::image type="content" source="../media/user-intent.png" alt-text="Diagram that shows the three parts of user intent: job description, target audience, and pain points.":::
 
-The custom chat application is hosted in Azure Container Apps (ACA). ACA exposes an API endpoint. This endpoint is accessed by an authenticated application, such as the website where customers sign in.
+For Adventure Works, the agent's job is to recommend gear to website shoppers, who are often outdoor beginners overwhelmed by dozens of similar products. Naming the audience keeps the tone and reading level appropriate.
 
-Any messages in the chat window are requests. These requests are forwarded to the chat application. The application uses GenAI models and the Retrieval Augmented Generation (RAG) design pattern. It retrieves product and customer data before generating a response. The chat application interacts with Azure OpenAI models like GPT-4, Azure AI Search for product retrieval, and Cosmos DB for customer data. Finally, the system returns the generated response to the customer in the chat window.
+## Suggested prompts
 
-> [!Tip]
-> Learn more about this use case in the [Azure Samples repository for Contoso Chat](https://github.com/Azure-Samples/contoso-chat?tab=readme-ov-file&azure-portal=true).
+Next, decide how people interact with the agent.
 
-## Generate product specific articles
+:::image type="content" source="../media/suggested-prompts.png" alt-text="Diagram that shows the two parts of suggested prompts: display prompt and command prompt.":::
 
-Now imagine you need to create high quality articles for your website. The articles for the Contoso Outdoors website must be well-researched and include product-specific information to engage customers effectively.
+The **display prompt** is the example question a shopper sees and can click, such as *"Which tent should I buy for winter camping?"* The **command prompt** is the underlying instruction that tells the agent how to behave. Writing these together keeps what the user expects aligned with what the agent actually does.
 
-To streamline this process, you can develop a creative writer app that allows any writer to generate a new article by entering key details, such as the products they want to feature.
+## Capabilities
 
-Once the information is submitted, the app processes it through an AI-driven agent workflow, which automates the research, writing, and refinement of the article. A writer can then review the generated article before finalizing and publishing the article to the website.
+Now define what the agent can and can't do.
 
-To understand what is happening behind the scenes, let's explore the architecture for the Contoso Creative Writer app.
+:::image type="content" source="../media/capabilities.png" alt-text="Diagram that shows the three parts of capabilities: primary functions, tools and data, and restrictions.":::
 
-:::image type="content" source="../media/creative-writer-architecture.png" alt-text="Diagram of the Contoso Creative Writer application architecture." lightbox="../media/creative-writer-architecture.png":::
+List its **primary functions** (recommend products, compare two items), the **tools and data access** it needs (the product catalog through a Foundry IQ knowledge base, purchase history in Cosmos DB), and its **restrictions**. Restrictions matter: the Adventure Works agent must never invent discounts or give safety advice it can't ground in real data.
 
-When an authenticated user inputs the required information, the Creative Writer app uses a combination of multiple agents to generate the article:
+## Evaluation
 
-- A **research** agent that uses the [Bing Grounding Tool](/azure/ai-services/agents/how-to/tools/bing-grounding?azure-portal=true) in [Foundry Agent Service](/azure/ai-services/agents/overview?azure-portal=true) to research the product, and uses [Azure AI Search](/azure/search) to do a semantic similarity search for related products from a vector store.
-- A **writer** agent that combines the researched and retrieved product information into a helpful article.
-- An **editor** agent that refines the article before presenting it to the user.
+Decide how you judge quality *before* you build.
 
-Contoso Creative Writer simplifies and accelerates the content creation process by integrating these AI-powered agents, making it easier than ever to generate high-quality, product-focused articles.
+:::image type="content" source="../media/evaluation.png" alt-text="Diagram that shows the two parts of evaluation: a rubric scoring relevance, groundedness, tone, and safety, and shadow rating.":::
 
-> [!Tip]
-> Learn more about this use case in the [Azure Samples repository for Contoso Creative Writer](https://github.com/Azure-Samples/contoso-creative-writer?tab=readme-ov-file&azure-portal=true).
+A **rubric** is a scoring guide: a set of named criteria, each with a description of what a good answer looks like, so different reviewers grade the same response the same way. For the Adventure Works agent, the rubric scores each answer on relevance, groundedness, and friendly tone. **Shadow rating** runs the agent silently alongside human support staff so you can compare answers without risking a live customer.
+
+## Test data
+
+Finally, prepare the data that proves the agent works.
+
+:::image type="content" source="../media/test-data.png" alt-text="Diagram that shows the three parts of test data: smoke tests, automated evaluation, and coverage mix.":::
+
+**Smoke tests** are a short, quick check you run after every small update, like *"Do you sell waterproof jackets?"* with a known good answer. Because they're fast, you can run them constantly to catch obvious breakage right away. Before a bigger change, you run a full **automated evaluation** first: a larger dataset that scores the agent at scale.
+
+To trust those scores, use a deliberate **coverage mix**. This means choosing test questions that reflect the full range of real use, not just the easy ones. Include the common questions shoppers ask every day, along with rare edge cases like ambiguous requests, out-of-stock items, or questions the agent should refuse. A good coverage mix keeps a high score from hiding failures that only show up in the situations you forgot to test.
+
+With this specification in hand, the Adventure Works team can now make design choices, like which model to use, with clear targets to aim for.

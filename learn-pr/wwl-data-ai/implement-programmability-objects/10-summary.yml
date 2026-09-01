@@ -4,9 +4,9 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary of implementing programmability objects in SQL Server"
-  ms.date: 01/22/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 6/30/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 2

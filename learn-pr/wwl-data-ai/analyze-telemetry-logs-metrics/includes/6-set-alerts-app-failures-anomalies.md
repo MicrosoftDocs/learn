@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1bffa38d-cbdd-40a4-89a1-d448301268e1]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Dashboards and workbooks provide visibility into application health, but they require someone to be watching. Alert rules proactively notify your team when telemetry indicates a problem, ensuring that failures and performance degradation are detected even when no one is actively monitoring. This unit covers how developers configure Azure Monitor alert rules to detect application issues, set up action groups for notifications, and use smart detection for automatic anomaly identification.
 
 ## Understand the alert rule structure
@@ -61,6 +72,8 @@ Failure anomaly detection monitors the rate of failed requests and compares the 
 Performance anomaly detection identifies response time degradation, dependency duration slowdowns, and abnormal exception volume increases. Smart detection recognizes gradual degradation patterns that might not trigger a fixed threshold alert because the values never exceed a specific number. Instead, it detects that performance is worse than its historical norm, which is often the earliest signal of an emerging problem.
 
 Smart detection and manual alert rules serve different purposes and work best when used together. Smart detection is ideal for catching unexpected problems that developers wouldn't anticipate with static thresholds, such as a new type of exception that suddenly appears or a dependency that gradually degrades over weeks. Manual log search alerts are better for enforcing specific SLA thresholds or business rules, such as "the 95th-percentile response time must stay below three seconds" or "fewer than one percent of requests should fail." Using both approaches together provides comprehensive coverage: manual alerts enforce known operational boundaries while smart detection watches for novel problems.
+
+::: zone-end
 
 ## Additional resources
 

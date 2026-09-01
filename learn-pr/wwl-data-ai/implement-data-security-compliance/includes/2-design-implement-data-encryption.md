@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7f11b9dd-5f41-450d-b701-0aab01878b6b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Data encryption forms the foundation of database security. Even if attackers gain access to your underlying storage, encryption keeps your sensitive information unreadable. Microsoft's SQL platforms offer multiple encryption options, from protecting data at rest to securing data while it's being processed.
 
 Understanding when to use each method helps you balance protection with performance. Let's explore the encryption technologies available in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric.
@@ -6,7 +17,7 @@ Understanding when to use each method helps you balance protection with performa
 
 Database encryption operates at different layers, each solving a specific problem. [Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?azure-portal=true) encrypts data at rest—think of it as protecting your database files on disk. [Column-level encryption](/sql/relational-databases/security/encryption/encrypt-a-column-of-data?azure-portal=true) targets specific sensitive columns, while [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine?azure-portal=true) goes further by protecting data throughout its lifecycle, even during query processing.
 
-:::image type="content" source="../media/encryption.png" alt-text="Diagram comparing three encryption layers: TDE at the database file level, column-level encryption at specific columns, and Always Encrypted with encryption keys held outside the database at the client application level.":::
+:::image type="content" source="../media/encryption.png" alt-text="Diagram that shows the three encryption layers: TDE, column-level encryption, and Always Encrypted.":::
 
 When you enable TDE, SQL Server automatically encrypts database files, transaction logs, and backups. Your applications don't need any code changes—encryption happens transparently behind the scenes. TDE uses a database encryption key protected by a certificate stored in the `master` database.
 
@@ -18,7 +29,7 @@ Always Encrypted takes yet another approach by keeping encryption keys outside t
 
 Always Encrypted ensures the database engine never processes plaintext values. Your client applications hold the encryption keys and handle all encryption and decryption. This separation means that even someone with administrative access to the database can't view the protected data.
 
-:::image type="content" source="../media/sql-data-flow.png" alt-text="Diagram showing the data flow for Always Encrypted, where client applications encrypt and decrypt data while the database engine only processes ciphertext.":::
+:::image type="content" source="../media/sql-data-flow.png" alt-text="Diagram showing the Always Encrypted data flow, where client applications encrypt/decrypt data while the database engine only processes ciphertext.":::
 
 To get started with Always Encrypted, you first create a column master key (CMK) that protects your column encryption keys. Store the CMK in a secure [key store](/sql/relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted?azure-portal=true) such as Azure Key Vault, Windows Certificate Store, or a hardware security module.
 
@@ -129,3 +140,5 @@ Which encryption method should you use? It depends on your security requirements
 > You can combine encryption methods. For example, enable TDE for baseline protection of data at rest, then add Always Encrypted for your most sensitive columns.
 
 For SQL databases in Microsoft Fabric, TDE is enabled by default and managed automatically. Focus your encryption design decisions on column-level protection using Always Encrypted or symmetric key encryption based on your application requirements.
+
+::: zone-end

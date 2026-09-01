@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-domain-name-system.explain-directory-integrated-domain-name-system
+title: Explain directory-integrated Domain Name System
+metadata:
+  title: Explain Directory-Integrated Domain Name System
+  description: Explain directory storage, replication scope, multimaster updates, secure registration, ownership, and convergence.
+  ms.date: 08/03/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-explain-directory-integrated-domain-name-system.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-azure-netapp-files-security.exercise-manage-azure-netapp-files-security
+title: Exercise - Manage Azure NetApp Files security
+metadata:
+  unitType: learning-module
+  title: Exercise - Manage Azure NetApp Files Security
+  description: Practice configuring customer-managed keys for Azure NetApp Files volume encryption.
+  ms.date: 07/23/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-manage-azure-netapp-files-security.md)]

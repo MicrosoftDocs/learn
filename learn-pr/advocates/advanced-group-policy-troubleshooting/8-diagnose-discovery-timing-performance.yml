@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.advanced-group-policy-troubleshooting.diagnose-discovery-timing-performance
+title: Diagnose discovery, connectivity, timing, and performance
+metadata:
+  title: Diagnose Discovery, Connectivity, Timing, and Performance
+  description: Diagnose domain controller discovery, DNS, connectivity, authentication, processing mode, slow links, foreground requirements, and Group Policy performance.
+  ms.date: 08/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/8-diagnose-discovery-timing-performance.md)]

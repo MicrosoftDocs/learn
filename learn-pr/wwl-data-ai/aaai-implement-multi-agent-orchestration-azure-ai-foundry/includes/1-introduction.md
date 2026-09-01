@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f6ffd119-6ec0-40fc-b3c2-117e1f78a90d]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso Capital's investment research platform started with basic orchestration patterns—concurrent agents analyzing market data, sequential handoffs between analysis and reporting. These patterns worked well for proof-of-concept scenarios with three or four agents. Now the platform scales to production: 12 specialized agents handle equities, fixed income, derivatives, geopolitical risk, regulatory compliance, and ESG analysis. When one agent times out, the entire workflow crashes. When market conditions change mid-execution, there's no mechanism to re-route the workflow. These flat orchestration patterns can't handle enterprise-grade requirements for fault tolerance, dynamic coordination, and hierarchical decision-making.
 
 You're the senior AI engineer responsible for evolving Contoso Capital's orchestration architecture. You need patterns that coordinate specialized agents at scale, manage partial failures gracefully, and handle complex dependencies between agent outputs. This module teaches you how to implement advanced multi-agent orchestration patterns in Microsoft Foundry.
@@ -11,3 +19,8 @@ In this module, you learn to:
 - Evaluate orchestration frameworks (Semantic Kernel, LangGraph, AutoGen, CrewAI) for Microsoft Foundry integration
 
 You start by clarifying what "multi-agent" means as an architectural commitment—and when a single-agent solution remains the right choice—before exploring the orchestration patterns that make multi-agent systems work at enterprise scale.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

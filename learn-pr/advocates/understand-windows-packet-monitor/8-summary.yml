@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-windows-packet-monitor.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review the focused Packet Monitor workflow, evidence limits, conversion choices, and safe cleanup requirements.
+  ms.date: 07/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

@@ -11,10 +11,10 @@ In this case study module, you:
 
 - [Microsoft Entra Identity Protection](/entra/id-protection/overview-identity-protection)
 - [What are lifecycle workflows?](/entra/id-governance/what-are-lifecycle-workflows)
-- [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
+- [Learn about data loss prevention](/purview/dlp-learn-about-dlp)
 - [What is Microsoft Sentinel?](/azure/sentinel/overview)
 - [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure)
-- [What is Conditional Access?](/azure/active-directory/conditional-access/overview)
+- [What is Conditional Access?](/entra/identity/conditional-access/overview)
 
 
 

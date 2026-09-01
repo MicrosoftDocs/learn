@@ -8,6 +8,7 @@ metadata:
   author: jeffkoms
   ms.author: jeffko
   ms.topic: unit
+  zone_pivot_groups: video-or-text
 durationInMinutes: 15
 content: |
   [!include[](includes/2-tune-postgresql-pgvector.md)]

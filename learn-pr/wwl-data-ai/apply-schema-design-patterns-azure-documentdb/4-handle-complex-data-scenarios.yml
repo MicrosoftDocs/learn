@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-schema-design-patterns-azure-documentdb.handle-complex-data-scenarios
+title: Handle complex data scenarios
+metadata:
+  title: Handle Complex Data Scenarios
+  description: "Implement the single collection, subset, bucket, outlier, and archive patterns for complex data scenarios in Azure DocumentDB."
+  ms.date: 04/15/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-handle-complex-data-scenarios.md)]

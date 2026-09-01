@@ -2,15 +2,16 @@
 uid: learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles
 metadata:
   title: Manage AD DS domain controllers and FSMO roles
-  description: "Manage AD DS domain controllers and FSMO roles"
-  ms.date: 01/23/2026
+  description: "Learn how to deploy and manage AD DS domain controllers, maintain availability with backup and recovery, manage the global catalog role, and transfer or seize FSMO roles including schema master, domain-naming master, RID master, infrastructure master, and PDC emulator."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: entra-id
   ms.subservice: domain-services
 title: Manage AD DS domain controllers and FSMO roles
-summary: Learn about essential AD DS domain controllers management and maintenance tasks, including their deployment, backup and recovery, and schema management. Find out about design considerations for optimal number, roles, and location of domain controllers.
+summary: |
+  This module covers how to deploy and manage AD DS domain controllers and FSMO roles. You learn how to deploy domain controllers in on-premises environments using Server Manager and the AD DS Configuration Wizard, maintain domain controller availability through backup and recovery procedures, manage the global catalog role and its placement across sites, understand and manage the five FSMO roles (schema master, domain-naming master, RID master, infrastructure master, and PDC emulator), transfer FSMO roles between domain controllers and seize roles in emergency scenarios, and manage and extend the AD DS schema.
 abstract: |
   After completing this module, you'll be able to:
   - Deploy AD DS domain controllers.

@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.devrel.active-directory-authentication-kerberos-hardening
+metadata:
+  title: Active Directory Domain Services Authentication and Kerberos Hardening
+  description: Analyze Windows authentication internals and harden Kerberos for Windows Server 2025.
+  ms.date: 08/10/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+title: Active Directory Domain Services authentication and Kerberos hardening
+summary: Learn how to troubleshoot and strengthen Windows authentication in Active Directory environments.
+abstract: |
+  In this module, you'll:
+  - Explain how Security Support Provider Interface (SSPI), Negotiate, NTLM, and Kerberos interact.
+  - Trace Kerberos authentication from Ticket Granting Ticket (TGT) issuance through service ticket presentation and authorization.
+  - Diagnose Service Principal Names (SPN), delegation, PAC, encryption type, and NTLM fallback issues.
+  - Plan a staged migration from NTLM to Kerberos.
+  - Audit and remediate RC4 usage before and after Windows Server 2025 domain controller deployment.
+  - Plan for PKINIT agility, Kerberos encryption policy, SMB NTLM blocking, and password-change hardening.
+prerequisites: |
+  - Familiarity with Kerberos, NTLM, SPNs, and Windows security logs.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- identity-access-admin
+products:
+- windows-server
+units:
+- learn.devrel.active-directory-authentication-kerberos-hardening.introduction
+- learn.devrel.active-directory-authentication-kerberos-hardening.kerberos
+- learn.devrel.active-directory-authentication-kerberos-hardening.migrate-kerberos
+- learn.devrel.active-directory-authentication-kerberos-hardening.kerberos-hardening
+- learn.devrel.active-directory-authentication-kerberos-hardening.knowledge-check
+- learn.devrel.active-directory-authentication-kerberos-hardening.summary
+badge:
+  uid: learn.devrel.active-directory-authentication-kerberos-hardening.badge

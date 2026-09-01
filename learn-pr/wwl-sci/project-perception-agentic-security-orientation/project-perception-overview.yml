@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.project-perception-agentic-security-orientation.project-perception-overview
+title: Map Project Perception onto the coordinated defense model
+metadata:
+  title: Map Project Perception onto the Coordinated Defense Model
+  description: "Meet Project Perception's named agents grouped as Red, Blue, and Green teams, and locate the Agentic security surface in the Microsoft Defender portal where coordinated playbooks combine agents and their capabilities into one workflow."
+  ms.date: 08/03/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/project-perception-overview.md)]

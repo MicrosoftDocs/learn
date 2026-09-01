@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-reusable-code-python.exercise-create-calculator
+title: Exercise - Create a calculator
+metadata:
+  title: Exercise - Create a Calculator
+  description: "Build a calculator that uses functions to organize its operations."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/6-exercise.md)]

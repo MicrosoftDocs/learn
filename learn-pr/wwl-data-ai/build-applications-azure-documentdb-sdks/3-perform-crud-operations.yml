@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-applications-azure-documentdb-sdks.perform-crud-operations
+title: Perform CRUD operations with MongoDB drivers
+metadata:
+  title: Perform CRUD Operations with MongoDB Drivers
+  description: "Learn how to insert, read, update, and delete documents in Azure DocumentDB using the MongoDB driver for Python, .NET, or JavaScript."
+  ms.date: 04/10/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-node-python
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-perform-crud-operations.md)]

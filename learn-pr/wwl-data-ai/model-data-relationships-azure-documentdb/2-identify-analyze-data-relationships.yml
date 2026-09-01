@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.model-data-relationships-azure-documentdb.identify-analyze-data-relationships
+title: Identify and analyze data relationships
+metadata:
+  title: Identify and Analyze Data Relationships
+  description: "Learn how to identify entity relationships, analyze cardinality and access patterns, and evaluate ownership to guide data modeling decisions in Azure DocumentDB."
+  ms.date: 04/15/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-identify-analyze-data-relationships.md)]

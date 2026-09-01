@@ -7,7 +7,7 @@ metadata:
   author: Justinha
   ms.author: justinha
   ms.topic: module
-  ms.service: azure-active-directory
+  ms.service: entra-id
 title: Allow users to reset their password with Microsoft Entra self-service password reset
 summary: Evaluate self-service password reset to allow users in your organization to reset their passwords or unlock their accounts. Set up, configure, and test self-service password reset.
 abstract: | 
@@ -38,4 +38,4 @@ units:
 - learn.azure.allow-users-to-reset-their-password.exercise-customize-directory-branding
 - learn.azure.allow-users-to-reset-their-password.summary
 badge:
-  uid: learn.azure.allow-users-to-reset-their-password.badge
+  uid: learn.azure.allow-users-to-reset-their-password.badge

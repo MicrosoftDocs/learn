@@ -4,7 +4,7 @@ title: Azure Machine Learning data exfiltration prevention
 metadata:
   title: Azure Machine Learning Data Exfiltration Prevention
   description: Prevent data exfiltration in Azure Machine Learning by implementing best practices and security measures.
-  ms.date: 07/01/2025
+  ms.date: 07/25/2026
   author: Orin-Thomas
   ms.author: viniap
   ms.topic: unit

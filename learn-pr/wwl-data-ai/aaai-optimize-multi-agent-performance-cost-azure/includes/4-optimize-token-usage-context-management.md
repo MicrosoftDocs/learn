@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d4417216-895b-4105-85b0-e92ee9582851]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure OpenAI Service meters usage by input and output tokens, making token consumption a direct cost driver in multi-agent systems that process long conversation chains.
 
 A customer contacts Adventure Works about a complex return situation. The orchestrator agent analyzes the request and routes to the order lookup agent, which finds the order and passes context to the eligibility agent, which checks return policy and consults the exception handling agent, which escalates to the approval agent. By the time the fifth agent in the chain processes the request, the accumulated context includes: the original customer message (150 tokens), the order lookup results (400 tokens), the policy retrieval (800 tokens), the exception analysis (300 tokens), and conversation history (500 tokens). Total context: 2,150 tokens. The actual question the approval agent needs to answer requires maybe 200 tokens of relevant context. Token waste at scale creates cost overruns—Adventure Works needs systematic context management to keep token budgets under control.
@@ -198,3 +209,5 @@ Token budget optimization is the final pillar of cost control. Combined with int
 - Logging and analyzing budget violations helps identify optimization opportunities.
 - Tool result schema redesign can significantly reduce the token usage of multi-agent systems.
 - Balancing cost optimizations with quality and latency requirements is crucial for maintaining customer experience.
+
+::: zone-end

@@ -5,8 +5,8 @@ metadata:
   title: Integrate GitHub Spec Kit into CI/CD and DevOps practices
   description: "Integrate GitHub Spec Kit into CI/CD and DevOps practices."
   ms.date: 1/28/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: unit
 durationInMinutes: 11
 content: |

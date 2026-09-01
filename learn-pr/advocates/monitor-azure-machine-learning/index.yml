@@ -3,7 +3,7 @@ uid: learn.introduction-to-azure-machine-learning-monitoring
 metadata:
   ms.author: viniap
   author: Orin-Thomas
-  ms.date: 03/15/2025
+  ms.date: 07/25/2026
   ms.update-cycle: 180-days
   title: Introduction to Azure Machine Learning Monitoring
   description: Get an introduction to what you need to know about monitoring Azure Machine Learning deployments.

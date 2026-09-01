@@ -1,60 +1,35 @@
-Customers such as Contoso, who are running Operations Manager 2016 or newer and that want to leverage Azure Monitor capabilities, can integrate their existing deployment with Log Analytics. This provides the benefits described earlier in this module, while also using Operations Manager to:
+Organizations can use System Center Operations Manager and Azure Monitor as independent monitoring platforms during a gradual modernization. Operations Manager remains useful for management-pack-based monitoring of on-premises applications and infrastructure. Azure Monitor provides cloud-scale metrics, logs, insights, workbooks, and alerting for Azure and Arc-enabled resources.
 
-- Monitor the health of on-premises services.
-- Integrate with on-premises ITSM Connector solutions, including incident and problem management.
-- Manage agents deployed to on-premises systems.
+## Compare coexistence options
 
-## Overview
+Choose a coexistence approach based on the monitoring features you need.
 
-Integrating Azure Monitor with Operations Manager builds synergy between these two services. The resulting solution has the Azure Monitor speed and efficiency in collecting, storing, and analyzing data within the scope configurable by Operations Manager. Azure Monitor compliments Operations Manager capabilities with its query engine and reporting capabilities that facilitate analyzing performance, event, and alert data.
+| Approach | Guidance |
+|---|---|
+| Azure Monitor Agent alongside the Operations Manager agent | This is the recommended coexistence model. The agents can run on the same machine. Azure Monitor Agent uses DCRs, while the Operations Manager agent continues to use management packs and the management group. |
+| Connected Operations Manager management group | A connected management group can forward legacy agent data to a Log Analytics workspace. This model requires the legacy agent, doesn't support DCR-based collection, and doesn't enable VM insights unless you onboard each machine directly to Azure Monitor. |
+| Azure management pack | The Azure management pack provides selected Azure resource health information in the Operations console. It requires configuration for the Azure resources you want to monitor. |
 
-For example, if you implement the Azure Monitor for VMs' Map feature in combination with Operations Manager, you can use the latter to create distributed application diagrams based on the dynamic dependency maps in Azure Monitor. In addition, you can deploy the Service Map management pack to all Windows computers reporting to the management group, which will have a subset of the Service Map features within the Operations Manager console.
+Don't use a connected management group as the onboarding path for new Azure Monitor deployments. Connect hybrid machines to Azure Arc, install Azure Monitor Agent, and associate DCRs directly with those machines.
 
-Agents reporting to an Operations Manager management group collect data from servers based on Log Analytics data source settings and solutions enabled in the corresponding Log Analytics workspace.
+## Plan a gradual transition
 
-> [!TIP]
-> You can configure a Windows agent to report to one or more workspaces, even while it's reporting to an Operations Manager management group.
+Use these steps to plan coexistence or migration:
 
-Solution-specific settings determine whether data is sent to an Operations Manager management server or to the Log Analytics workspace. In case of the former, the management server forwards data to the Log Analytics workspace.
+1. Inventory the management packs, rules, monitors, alerts, reports, and business processes that your organization uses.
+2. Identify the events, performance counters, and logs required for each critical monitoring scenario.
+3. Configure Azure Monitor Agent and DCRs for machines that Azure Monitor will monitor.
+4. Re-create required alert behavior with Azure Monitor alert rules and action groups.
+5. Compare results from both platforms and tune collection and alert thresholds.
+6. Retire management-pack workflows only after Azure Monitor or another service meets the operational requirement.
 
-> [!NOTE]
-> The Windows agent can report up to four workspaces. However, a management group can be connected to only one Log Analytics workspace.
+Azure Monitor separates data collection from alert evaluation. DCRs define the data to collect, while alert rules evaluate metrics or logs. This differs from Operations Manager management packs, which can combine collection, health evaluation, and alerting in one workflow.
 
-If a management server loses connectivity to Azure Monitor, it temporarily caches collected data locally until access to the Log Analytics workspace is re-established. If one of the management servers is offline as a result of planned maintenance or an unplanned outage, another management server in the same management group takes over communication with Azure Monitor.
+> [!IMPORTANT]
+> The VM insights Map and Dependency Agent are deprecated and retire on June 30, 2028. Don't design new Operations Manager integrations around Service Map or the VM insights Map experience.
 
-> [!NOTE]
-> If on-premises security policies don't allow computers to connect directly to the internet, you can configure management servers to connect to the Log Analytics gateway to retrieve Azure Monitor configuration settings, and then forward collected data.
+## Learn more
 
-## Implement Azure Monitor integration with Operations Manager
-
-In general, to implement integration between Operations Manager and a Log Analytics workspace, you must register the Microsoft Operations Management Suite (OMS) connection by using the **Operations Management Suite Onboarding Wizard**, available from the Operations Manager console. During the registration process, you are prompted to provide the target Azure tenant, subscription, and Log Analytics workspace.
-
-After you register Operations Manager with an Azure Log Analytics workspace, you must designate agent-managed computers that will collect log data for Azure Monitor.
-
-> [!TIP]
-> These agent-managed computers can be either individual computer objects or groups containing Windows computer objects.
-
-> [!CAUTION]
-> If you don't designate the computers, Log Analytics won't collect data from the agents reporting to your management group.
-
-After configuration is complete, the Operations Manager management group establishes a persistent connection to Azure Monitor. That connection is used to retrieve management packs corresponding to the Azure Monitor solutions that you decided to implement.
-
-Operations Manager automatically downloads and imports these management packs after they're enabled.
-
-> [!TIP]
-> As with any management pack, you have the option of configuring overrides and rules that enable you to control the updates schedule, or disable them completely.
-
-In some cases, additional configuration might be required. For example, to implement the Map feature for on-premises servers that are part of an Operations Manager management group, you must import the Service Map management pack, which will add the Service Map node to the Operations Management Suite in the **Administration** pane of the Operations Manager Operations console.
-
-> [!NOTE]
-> The node provides the ability to designate the target Log Analytics workspace by using the **Add Microsoft Operations Management Suite Workspace Wizard**.
-
-The registration process adds the Service Map node to the **Administration** pane.
-
-From the Service Map node, you can monitor:
-
-- Active alerts
-- List monitored servers
-- Display groups created by using the **Service Map** feature in Azure Monitor, and their dependencies
-
-These views  facilitate creating distributed applications in Operations Manager.
+- [Migrate from System Center Operations Manager to Azure Monitor](/azure/azure-monitor/fundamentals/azure-monitor-operations-manager)
+- [Monitor virtual machines with Azure Monitor](/azure/azure-monitor/vm/monitor-virtual-machine)
+- [Migrate management pack logic for VM workloads](/azure/azure-monitor/vm/monitor-virtual-machine-management-packs)

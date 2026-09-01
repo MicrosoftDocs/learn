@@ -4,7 +4,7 @@ title: Exfiltration prevention for Azure AI services
 metadata:
   title: Exfiltration Prevention for Azure AI Services
   description: Prevent data exfiltration in Azure AI services by implementing best practices and security measures.
-  ms.date: 07/01/2025
+  ms.date: 07/25/2026
   author: Orin-Thomas
   ms.author: viniap
   ms.topic: unit

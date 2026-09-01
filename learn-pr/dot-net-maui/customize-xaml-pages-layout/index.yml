@@ -8,7 +8,7 @@ metadata:
   ms.author: masoucou
   manager: coxford
   ms.topic: module
-  ms.service: dotnet-mobile
+  ms.service: dotnet-mobile-development
   ms.subservice: dotnet-maui
 title: Customize layout in .NET MAUI XAML pages
 summary: Create consistent user interfaces across different devices by using StackLayout and Grid in .NET Multi-platform App UI (MAUI) Extensible Application Markup Language (XAML) pages.

@@ -2,11 +2,11 @@
 uid: learn.wwl.implement-programmability-objects.exercise-implement-programmability-objects
 title: 'Exercise: Implement programmability objects in SQL Server'
 metadata:
-  title: 'Exercise: Implement programmability objects in SQL Server'
+  title: 'Exercise: Implement Programmability Objects in SQL Server'
   description: "Practice creating views, stored procedures, functions, and triggers in SQL Server."
-  ms.date: 01/22/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 6/30/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 45

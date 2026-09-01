@@ -1,78 +1,84 @@
-Microsoft Priva Privacy Risk Management allows organizations to create custom policies tailored to address specific privacy risks. Unlike template-based policies, custom policies provide the flexibility to configure all aspects of a policy, including conditions, notifications, and alerts. These policies can be designed for **data overexposure**, **data transfers**, and **data minimization**, each addressing unique privacy scenarios. This approach is ideal for organizations with unique privacy scenarios requiring tailored configurations.
+Template defaults don't fit every organization. The classification groups a template ships with might catch content your organization doesn't consider sensitive, or the policy might watch sources where the actual risk is low. Custom policies use the same two templates as a starting point (**Data overexposure** or **Data transfers**), but the wizard steps through every setting you can move: which data sources to include, which sensitive information types or trainable classifiers to look for, which users are in scope, and how alerts and notifications behave. The goal is still to create detection, but the wizard exposes every setting rather than starting from defaults.
 
 ### Steps to create a custom policy
 
-1. Sign in to the [Priva portal (preview)](https://purview.microsoft.com/priva?azure-portal=true) using your admin credentials.
+1. Sign in to the [Priva portal](https://purview.microsoft.com/priva?azure-portal=true) using your admin credentials.
 1. Navigate to the **Privacy Risk Management** solution card then select **Policies**.
-1. Select **Create a policy**, then choose the **Custom** option to launch the policy creation wizard.
-1. On the **Name your policy and choose a template** page, select a desired policy template, enter a descriptive name and optional description for the policy. Select **Next**.
+1. Select **Create a policy**. In the **Custom** box on the flyout, select **Create** to open the policy creation wizard.
+1. On the **Name and type** page, select the **Data overexposure** or **Data transfers** template, enter a descriptive name and optional description for the policy, then select **Next**.
 
    :::image type="content" source="../media/name-policy-choose-template.png" alt-text="Screenshot showing selecting a policy template with a name and description for a Data overexposure policy." lightbox="../media/name-policy-choose-template.png":::
 
-1. On the **Choose data sources to apply the policy** page, select the types of personal data the policy detects. The available data sources depend on the policy template you select. Use the table to understand which data sources are supported for each policy type:
+1. On the **Data sources** page, select the Microsoft 365 sources where the policy looks for matches. The available sources depend on the template you selected:
 
-   | Data source | Data overexposure | Data transfers | Data minimization |
-   |-----|-----|-----|-----|
-   | Exchange | Not available | ✓ | ✓ |
-   | SharePoint sites | ✓ | ✓ | ✓ |
-   | OneDrive accounts | ✓  | ✓ | ✓ |
-   | Teams chat and channel messages | Not available | ✓ | ✓ |
-   | Azure Storage (preview) | ✓ | Not available | Not available |
-   | Azure SQL (preview) | ✓ | Not available | Not available |
-   | Amazon S3 (preview)| ✓ | Not available | Not available |
+   | Data source | Data overexposure | Data transfers |
+   | --- | --- | --- |
+   | Exchange | Not available | ✓ |
+   | SharePoint sites | ✓ | ✓ |
+   | OneDrive accounts | ✓ | ✓ |
+   | Teams chat and channel messages | Not available | ✓ |
 
-   After selecting data sources, select **Next**.
+   For SharePoint, you can choose **All SharePoint sites** or **Specific SharePoint sites** and add site URLs. After selecting data sources, select **Next**.
 
-1. On the **Choose data to monitor** page, select the types of personal data the policy detects. Options include:
+1. On the **Data to monitor** page, choose the type of personal data the policy detects:
 
-   - **Classification groups**: Predefined groupings of sensitive information types.
-   - **Sensitive information types or trainable classifiers**: Customizable options for specific data types or machine learning-based classifiers.
+   - **Classification groups**: Predefined groupings of sensitive information types tied to regulations or common personal-data categories.
+   - **Sensitive information types or trainable classifiers**: Individual sensitive info types (for example, Social Security numbers) or trainable classifiers. A single group can mix both.
 
    When finished, select **Next**.
 
-1. On the **Choose users and groups covered by this policy**, choose to apply the policy to all users or specific users and groups. Select **Next**.
+1. On the **Users and groups** page, apply the policy to all users and groups or to specific users and groups. Select **Next**.
 
-1. On the **Choose conditions for the policy** page, define the conditions specific to your selected policy type. Conditions determine the scenarios the policy detects, such as public access, external sharing, or inactivity. The conditions available depend on the policy template selected:
-
-   - **Data overexposure**:
-     - Public access: Detects when anyone with a link can access the data.
-     - External access: Detects when external users or guests have access.
-     - Internal access: Detects when all users in the organization have access.
-   - **Data transfers**:
-     - Transfers outside the organization: Tracks external sharing.
-     - Transfers across regions: Monitors data movement between geographic regions.
-     - Transfers between users or groups: Detects movement of data between specific departments or roles.
-   - **Data minimization**:
-     - Inactivity: Detects items that haven’t been modified for a specified number of days (for example, 30, 60, 90, or 120 days).
-
-   After defining conditions, select **Next**.
-
-1. On the **Define outcomes when a policy match is detected** page, configure user notifications and remediation actions specific to the selected policy template. Examples include:
+1. On the **Conditions** page, define the conditions for detecting a match. The available conditions depend on the template:
 
    - **Data overexposure**:
-     - Notifications prompt content owners to restrict access or make items private.
-     - Multicloud support (preview) extends protection to Azure Storage, Azure SQL, and Amazon S3.
+     - **Public**: Anyone with a link can access the content.
+     - **External**: Specific people outside the organization have access.
+     - **Internal**: All users in the organization have access.
    - **Data transfers**:
-     - Notifications in Teams and email provide remediation options like revoking access or keeping the item.
-     - Microsoft Teams notifications offer in-the-moment guidance.
-   - **Data minimization**:
-     - Users receive notifications prompting them to delete or keep the data.
+     - Transfers outside the organization.
+     - Transfers between geographic regions.
+     - Transfers between users, based on Microsoft Entra attributes like department, postal code, or job title.
+     - Transfers between Microsoft 365 groups, covering the Exchange mailboxes and SharePoint sites associated with those groups.
+     - Transfers between SharePoint sites, when an item containing personal data is copied or moved from one site to another.
 
-   After defining outcomes, select **Next**.
+   Selecting more than one condition widens the scope of matches. After defining conditions, select **Next**.
 
-1. On the **Specify alerts and thresholds** page, set thresholds and severity levels for admin alerts. Select **Next**.
+1. On the **Outcomes** page, configure what happens when a match is detected. Options vary by template and can include Microsoft Teams tips that give users in-the-moment guidance when their action would generate a policy match, and admin remediation actions such as **Notify owner**, **Make private**, **Apply retention label**, or **Apply sensitivity label**. When finished, select **Next**.
 
-1. On the **Decide policy mode** page, choose to **Test it out first** or **Turn it on right away**. Select **Next**.
+1. On the **Alerts** page, turn on admin alerts and set frequency, threshold, and severity:
 
-1. Review your settings and select **Submit** to create the policy.
+   - **Frequency**: Alert on each match, when a threshold is reached, or when a recommended condition is met (for example, a high volume of personal data, or personal data covered by specific regulations).
+   - **Severity**: Low, Medium, or High.
 
-After a few seconds, you'll see a confirmation that the policy was created. Select **Done** on the confirmation page, which takes you to the **Policies** page where you see the new policy at the top of the page.
+   If you selected a trainable classifier in the **Data to monitor** step, the **High volume of personal data** threshold isn't available for this policy, because trainable classifier detections are counted per item rather than per instance. The other frequency options still work.
+
+   Select **Next**.
+
+1. On the **Mode** page, choose **Test it out first** or **Turn it on right away**, then select **Next**.
+
+1. On the **Finish** page, review your settings. Select **Edit** under any section to adjust its settings. When you're satisfied, select **Submit** to create the policy.
+
+After a few seconds, you see a confirmation that the policy was created. Select **Done** on the confirmation page to return to the **Policies** page, where the new policy appears at the top of the list.
 
 ### Refine and activate policies
 
-Custom policies can begin in **test mode**, allowing you to review and refine conditions without generating alerts. Insights such as matches by location, user, or data type help validate the policy’s effectiveness. Once satisfied, activate the policy to enforce conditions and trigger alerts.
+Custom policies typically start in **test mode**, which evaluates the last 30 days of activity and lets you review matches without generating alerts or notifications. Microsoft recommends running a policy in test mode for at least five days before turning it on. Insights such as matches by location, user, or data type help you validate the policy's conditions before you activate it.
 
-Custom policies empower organizations to address unique privacy risks, ensuring comprehensive protection and compliance while safeguarding trust.
+### Worked example: shape of a Data overexposure policy
+
+An organization protecting medical histories in SharePoint and OneDrive could build a Data overexposure policy from the wizard options alone. It might look like this:
+
+- **Name and type**: Data overexposure template.
+- **Data sources**: SharePoint sites (scoped to the specific sites holding patient records) and OneDrive accounts.
+- **Data to monitor**: The HIPAA classification group, optionally combined with a trainable classifier or sensitive information types specific to the organization's medical record format.
+- **Users and groups**: Limit to the departments handling patient data, rather than all users, to keep the initial signal focused.
+- **Conditions**: Public and External. Adding Internal would broaden the scope significantly and is a call to make once test mode data is in.
+- **Outcomes**: Notify owner as the default remediation, with a sensitivity label applied when a match is confirmed as real risk.
+- **Alerts**: condition-based frequency to keep volume manageable, with severity Medium or High depending on the classification group triggered.
+- **Mode**: Test for at least five days to see what the policy catches before turning it on.
+
+The specific choices are illustrative. What generalizes is the shape: a regulation-aligned classification group, the access conditions the organization treats as risky, and test mode data driving the final settings before activation.
 
 ## Legal disclaimer
 

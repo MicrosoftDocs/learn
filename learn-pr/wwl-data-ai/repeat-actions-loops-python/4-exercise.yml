@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.repeat-actions-loops-python.exercise-number-game
+title: Exercise - Create a guess the number game
+metadata:
+  title: Exercise - Create a Guess the Number Game
+  description: "Build a Guess the Number game that uses a while loop to keep asking until the player guesses correctly."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/4-exercise.md)]

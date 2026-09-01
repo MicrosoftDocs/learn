@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ec89d4bb-e559-48e6-a75b-3683f72831ff]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Writing KQL queries is essential for investigating specific problems, but teams also need a persistent visual summary that shows the health of their application at a glance. Azure dashboards provide a shared surface where developers and operations teams pin metrics charts, log query results, and other tiles into a single view that answers the question "is the system healthy right now?" This unit covers how to build dashboards that combine Application Insights data into an operational monitoring view for your AI solution.
 
 ## Understand Azure dashboards for monitoring
@@ -68,6 +79,8 @@ When designing dashboards for AI application monitoring, consider these best pra
 - **Limit tile count:** Keep dashboards focused on 5 to 10 tiles that answer the most important operational questions. Too many tiles create visual clutter and dilute attention.
 - **Use descriptive tile titles:** Rename each tile to describe what it shows ("Classification Service P95 Latency" rather than "Query 3"). Team members who didn't create the dashboard need clear titles to understand each tile's purpose.
 - **Include a Markdown tile for context:** Add a Markdown tile at the top of the dashboard that describes the application being monitored, links to runbooks, and lists on-call contacts.
+
+::: zone-end
 
 ## Additional resources
 

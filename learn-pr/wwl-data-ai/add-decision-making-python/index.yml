@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.add-decision-making-python
+metadata:
+  title: Add decision-making to your code
+  description: Learn how to control the flow of your Python programs using Booleans, comparison operators, conditional logic, and logical operators.
+  ms.date: 07/15/2026
+  ms.service: visual-studio
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
+title: Add decision-making to your code
+summary: Learn how to control the flow of your Python programs using Booleans, comparison operators, conditional logic, and logical operators.
+abstract: |
+  After completing this module, you're able to:
+  - Evaluate conditions using Boolean values and comparison operators.
+  - Control code flow using if, elif, and else statements.
+  - Build complex conditions using logical operators (and, or, not).
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+subjects:
+  - app-development
+units:
+- learn.wwl.add-decision-making-python.introduction
+- learn.wwl.add-decision-making-python.evaluate-conditions-with-booleans-comparison-operators
+- learn.wwl.add-decision-making-python.control-code-flow-with-conditional-logic
+- learn.wwl.add-decision-making-python.create-complex-conditions-with-logical-operators
+- learn.wwl.add-decision-making-python.exercise
+- learn.wwl.add-decision-making-python.knowledge-check
+- learn.wwl.add-decision-making-python.summary
+badge:
+  uid: learn.wwl.add-decision-making-python.badge

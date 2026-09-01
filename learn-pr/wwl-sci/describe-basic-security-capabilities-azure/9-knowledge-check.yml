@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/31/2026
+  ms.date: 06/12/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
@@ -26,7 +26,7 @@ quiz:
     - content: "There's nothing the admin can do, RDP traffic isn't supported with NSGs."
       isCorrect: false
       explanation: "Incorrect. NSG rules can be set allow RDP traffic"
-  - content: "The security admin wants to protect Azure resources from DDoS attacks and needs logging, alerting, and telemetry capabilities. which Azure service can provide these capabilities?"
+  - content: "The security admin wants to protect Azure resources from DDoS attacks and needs logging, alerting, and telemetry capabilities. Which Azure service can provide these capabilities?"
     choices:
     - content: "Default DDoS infrastructure protection."
       isCorrect: false

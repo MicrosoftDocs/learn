@@ -10,5 +10,5 @@ After completing this module, you'll be able to:
 
 - Describe the deployment models available on Azure
 - Deploy database resources using PowerShell and Azure CLI
-- Deploy an Azure Resource Manager template and Bicep
+- Deploy Azure SQL resources using Bicep files and Azure Resource Manager templates
 - Understand the difference between multiple command-line options

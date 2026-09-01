@@ -25,7 +25,6 @@ products:
 subjects:
 - cloud-computing
 modules:
-- learn.wwl.explore-api-management
 #- learn.azure.improve-api-performance-with-apim-caching-policy
 #- learn.protect-apis-on-api-management
 #- learn.control-authentication-with-apim

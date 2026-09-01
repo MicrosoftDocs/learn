@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8f3ab81d-fba9-41fe-86f3-c02fab16ba86]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 ## Why flat orchestration patterns don't scale
 
 Once you've decided multi-agent earns its complexity for a given workload, the next question is *how the agents coordinate*. Five foundational orchestration patterns form the baseline: concurrent orchestration (multiple agents run simultaneously), sequential orchestration (strict ordering with result passing), group chat (agents collaborate in shared conversation), handoff (one agent transfers control to another), and Magentic-One (general-purpose orchestrator with specialist subagents). These patterns share a common architectural characteristic—all agents operate at one hierarchical level with peer-to-peer relationships.
@@ -76,3 +87,5 @@ The same pattern may appear under different vocabulary in different sources; the
 - **Hierarchical orchestration** isolates complexity through suborchestrators that manage agent clusters, enabling independent evolution of subworkflows without changing top-level logic.
 - **Supervisor patterns** shift from prescriptive to reactive—watching agent outputs and conditionally routing to retry, escalation, or the next step based on quality criteria.
 - **Architecture selection** depends on workflow predictability, failure tolerance, and domain boundaries—hub-and-spoke for static workflows, hierarchical for organizational boundaries, supervisor for uncertain quality.
+
+::: zone-end

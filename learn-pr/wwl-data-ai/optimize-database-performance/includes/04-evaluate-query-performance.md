@@ -1,10 +1,21 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f472595a-3753-460f-9d60-553f078f9460]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When a query runs slower than expected, the first step is understanding *how* the database engine executes it. Execution plans show you the exact operators, data access methods, and resource costs the optimizer chose for a query. Dynamic management views (DMVs) complement that by exposing runtime performance data across all queries in the database, so you can find the most expensive ones before diving into any single plan.
 
 ## Read execution plans
 
 An **execution plan** is the set of instructions the query optimizer produces to retrieve and process data. It defines which tables to access first, whether to use indexes or scan tables, and how to join, filter, sort, and aggregate results. The optimizer evaluates multiple candidate plans and selects the one with the lowest estimated cost.
 
-![Screenshot of a graphical actual execution plan in SQL Server Management Studio showing operators, arrows indicating data flow, and cost percentages for each step.](../media/actual-execution-plan.png)
+:::image type="content" source="../media/actual-execution-plan.png" alt-text="Screenshot of a graphical actual execution plan in SQL Server Management Studio.":::
 
 There are two types of execution plans:
 
@@ -127,3 +138,5 @@ Execution plans and DMVs give you a complete picture of query behavior. Start wi
 ## Key takeaways
 
 Execution plans reveal the optimizer's strategy for a query, and actual plans include runtime metrics that expose discrepancies between estimated and actual row counts. When you read a plan, focus on operator types (seek vs. scan), row count estimates, warnings, and Key Lookup operators. DMVs provide system-wide performance data: use `sys.dm_exec_query_stats` to find the most expensive queries, `sys.dm_exec_requests` for currently running queries, and the missing index DMVs for optimization opportunities. Start broad with DMVs to identify where the biggest problems are, then drill into individual execution plans to understand why.
+
+::: zone-end

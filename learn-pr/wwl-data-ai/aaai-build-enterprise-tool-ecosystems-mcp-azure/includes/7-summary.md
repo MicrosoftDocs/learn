@@ -12,7 +12,7 @@ These patterns give your team a repeatable way to evolve MCP tools without break
 
 ## Learn more
 
-- [Model Context Protocol specification](https://spec.modelcontextprotocol.io/)
+- [Model Context Protocol specification](https://modelcontextprotocol.io/specification/2025-11-25)
 - [Azure Managed Identity documentation](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview)
 - [Azure Container Apps documentation](https://learn.microsoft.com/azure/container-apps/overview)
 - [Semantic Versioning specification](https://semver.org/)

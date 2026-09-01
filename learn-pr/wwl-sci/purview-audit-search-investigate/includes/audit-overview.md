@@ -1,65 +1,40 @@
-Data security and compliance require clear visibility into user and admin activity. Microsoft Purview Audit records activities across Microsoft 365 services so you can analyze events, investigate issues, and meet regulatory requirements.
+Microsoft Purview Audit records much of what users and administrators do in Microsoft 365. That includes sending mail, sharing a file, changing a setting, and prompting Copilot. You investigate incidents and answer compliance questions by searching those records. Coverage isn't uniform across every service, and some workloads log less than others, so an empty result doesn't always mean the activity didn't happen.
 
-## Microsoft Purview auditing solutions
+To run useful searches, you first need a working model of how audit records are created, stored, and retrieved.
 
-Audit (Standard) is on by default for most tenants and lets you search thousands of activities across Microsoft 365. Audit (Premium) builds on this with audit log retention policies, longer retention, intelligent insights, and higher bandwidth for the Office 365 Management Activity API.
+## Vocabulary that carries through every search
 
-## Key capabilities at a glance
+Two terms show up in every audit search you'll run. _Record type_ is the category the activity belongs to, like `SharePointFileOperation` or `Copilot`. _Operation_ is the specific action, like `FileAccessed` or `CopilotInteraction`. Those are the filter values you'll reach for again and again.
 
-| Capability | Audit (Standard) | Audit (Premium) |
-|-----|-----|-----|
-| Enabled by default | ✔ | ✔ |
-| Search thousands of activities | ✔ | ✔ |
-| Export search results to CSV | ✔ | ✔ |
-| `Search-UnifiedAuditLog` PowerShell cmdlet | ✔ | ✔ |
-| Office 365 Management Activity API access  | ✔ | ✔ |
-| Higher API bandwidth allocation | | ✔ |
-| Default retention up to 180 days | ✔ | ✔ |
-| Default 1-year retention for Microsoft Entra ID, Exchange, SharePoint, OneDrive | | ✔ |
-| Audit log retention policies (up to 10 years with add-on) | | ✔ |
-| Intelligent insights (for high-value events such as mail access) | | ✔ |
-| Audit Search Graph API | ✔ | ✔ |
+## One log, many services
 
-## Audit (Standard) in Microsoft Purview
+All Microsoft 365 workloads write to the same unified audit log. Exchange, SharePoint, OneDrive, Teams, Microsoft Entra ID, and Microsoft Copilot all go to the same place. One search interface answers questions that span mail, files, admin changes, and AI app activity at the same time.
 
-Audit (Standard) logs and makes searchable a wide range of activities performed by users and administrators across Microsoft 365 services. This supports forensic investigations, IT troubleshooting, and compliance reviews.
+## Two things that shape what your searches can find
 
-- **Enabled by default**: No manual setup is required for activity logging in organizations with eligible subscriptions. You only need to assign permissions for users to access the audit search tool in the Microsoft Purview portal.
-- **Thousands of searchable audit events**: Includes events from multiple Microsoft 365 services, allowing a broad view of user and admin activity.
-- **Searchability**: Audit logs are searchable in the Microsoft Purview portal by activity, user, or timeframe. You can also use the `Search-UnifiedAuditLog` cmdlet in Exchange Online PowerShell for advanced or automated searches.
-- **Export to CSV**: Search results can be exported for deeper analysis in Excel or other tools.
-- **API access**: The Office 365 Management Activity API allows integration with SIEM systems or long-term storage.
-- **180-day retention**: By default, audit records are retained for 180 days.
-
-## Audit (Premium) in Microsoft Purview
-
-Audit (Premium) includes all capabilities from Audit (Standard) and adds advanced tools for managing audit data and performing detailed investigations.
-
-- **Audit log retention policies**: Configure policies to retain records up to one year, or up to 10 years with the required add-on license.
-- **Longer default retention**: Records from Microsoft Entra ID, Exchange, SharePoint, and OneDrive are retained for one year by default. Other workloads follow the standard 180-day retention unless covered by a custom policy.
-- **Intelligent insights**: Includes high-value events that capture deeper context, such as when a labeled mail item is accessed or when a user performs searches in Exchange Online or SharePoint Online.
-- **Higher API bandwidth**: Premium users get roughly twice the bandwidth allocation for the Office 365 Management Activity API compared to Standard.
-
-### Long-term retention of audit logs
-
-- **One-year default**: Applies automatically to Microsoft Entra ID, Exchange, SharePoint, and OneDrive audit records.
-- **Up to 10-year option**: With the add-on license, you can retain specified audit records for up to 10 years. This setting applies from the time the policy is created and doesn't retroactively extend older data.
-
-### Audit log retention policies
-
-Retention policies can be scoped by service, activity type, or user. Policies have priorities to control which one applies when scopes overlap. Changing a policy only affects data going forward; previously logged data keeps its original expiration date.
-
-### Audit (Premium) activities
-
-Audit (Premium) can record more granular activities, such as:
-
-- **Exchange Online**: Logs mail item access, including details for items with sensitivity labels.
-- **Microsoft Teams**: Captures chat interactions, meeting participation details, and message modifications or deletions.
-
-## Copilot and AI application auditing
-
-Interactions with **Microsoft Copilot and supported AI apps** are logged in the unified audit log when auditing is enabled. You can search by friendly name or operation (for example, the **CopilotInteraction** event and related record types). Schema fields include context like thread IDs and accessed resources.
+- **Enablement timing**. Records exist only from the moment auditing was turned on. That applies at both the tenant level and, for Audit (Premium) events like `MailItemsAccessed`, at the per-user level. Turning auditing on today doesn't backfill yesterday.
+- **Retention**. Records age out on a schedule that depends on your tier and any retention policies you create. The default is 180 days for most activity.
 
 ## Where you work
 
-Use the **Microsoft Purview portal** to run targeted searches, save them, and export results. You can also use PowerShell for scripted queries and automation, and the Unified Audit Log Retention cmdlets to create and manage retention policies.
+The same audit log is exposed through the Microsoft Purview portal, the `Search-UnifiedAuditLog` cmdlet in Exchange Online PowerShell, and the Office 365 Management Activity and Audit Search Graph APIs.
+
+## What the tiers change
+
+Audit (Standard) covers thousands of activities across Microsoft 365 with 180-day default retention. Audit (Premium) adds the capabilities most investigations lean on: retention policies, longer default retention for key workloads, high-value events like `MailItemsAccessed` that show which specific messages a user opened, and higher bandwidth for the Management Activity API.
+
+| Capability | Audit (Standard) | Audit (Premium) |
+| --- | --- | --- |
+| Search user and admin activity across Microsoft 365 | ✔ | ✔ |
+| Default retention | 180 days | 180 days, or 1 year for Microsoft Entra ID, Exchange, SharePoint, and OneDrive |
+| Audit log retention policies up to 10 years | | ✔ |
+| High-value events, such as `MailItemsAccessed` | | ✔ |
+| Higher Management Activity API bandwidth | | ✔ |
+
+The tier your organization has decides which questions the audit log can answer. The interface you use to ask questions stays the same across both tiers.
+
+For current licensing details, see [Microsoft Purview auditing solutions](/purview/audit-solutions-overview?azure-portal=true#licensing-requirements).
+
+## What audit isn't
+
+Audit is built for searching records of past activity. It isn't the tool for real-time monitoring, alerting, applying holds, preventing actions, or scoring behavior. Those jobs belong to other Microsoft Purview and Microsoft security tools that pair with audit in real investigations.

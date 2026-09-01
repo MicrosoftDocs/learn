@@ -9,59 +9,66 @@
 
 ::: zone pivot="text"
 
-An AI agent is a program that uses generative AI to interpret data, make decisions, and perform tasks on behalf of users or other applications. AI agents rely on large language models to perform their tasks. Unlike traditional programs, AI agents can function autonomously, handling complex workflows and automating processes without requiring continuous human oversight.
+The **Microsoft Agent Framework** is the next generation of both Semantic Kernel and AutoGen, built by the same engineering teams. It combines AutoGen's intuitive agent abstractions with Semantic Kernel's enterprise-grade features—including session-based state management, type safety, execution filters, and telemetry.
 
-AI Agents can be developed using many different tools and platforms, including the Microsoft Agent Framework. The Microsoft Agent Framework is an open-source SDK that enables developers to easily integrate the latest AI models into their applications. This framework provides a comprehensive foundation for creating functional agents that can use natural language processing to complete tasks and collaborate with other agents.
+The framework introduces graph-based workflows to give developers explicit control over multi-agent execution paths. Every agent is derived from a unified `Agent` base class, giving you a consistent interface regardless of which underlying model provider you use.
 
-## Microsoft Agent Framework core components
+## Architecture and key features
 
-The Microsoft Agent Framework offers different components that can be used individually or combined.
+Rather than requiring you to manually wire together separate libraries for memory, tool integration, and model access, the Microsoft Agent Framework bundles these components into a set of composable building blocks. You can use them individually or combine them as your solution grows in complexity.
 
-- **Agents** - provides a consistent interface and enables different features like multi-agent orchestration. Out of the box, agents support function calling, multi-turn conversations with chat history, service-provided tools, structured outputs, and streaming responses.
+| Feature | Description |
+|---|---|
+| **Model clients** | A single, unified interface to connect with multiple AI providers |
+| **Agent session** | Native state management for persistent conversation context across multi-turn interactions |
+| **Context providers** | Plug-and-play memory components that surface relevant information to agents dynamically |
+| **Function tools** | Custom functions automatically registered with agents, with schema generation handled by the framework |
+| **MCP clients** | Built-in support for the Model Context Protocol, enabling dynamic tool discovery at runtime |
+| **Middleware** | Hooks to intercept, log, or modify agent actions before and after execution |
+| **Workflow orchestration** | Graph-based workflows for managing sequential, concurrent, group chat, and agent handoff patterns |
 
-- **Chat providers** - provide abstractions for connecting to AI services from different providers under a common interface. Supported providers include Azure OpenAI, OpenAI, Anthropic, Copilot, and more through the `BaseAgent` abstraction.
+## What agents can do
 
-- **Function tools** - containers for custom functions that extend agent capabilities. Agents can automatically invoke functions to integrate with external APIs and services.
+Because all agents share the same `Agent` base class, you get a consistent set of capabilities regardless of which provider powers your agent. This means you can focus on your application logic rather than adapting to provider-specific APIs.
 
-- **Built-in tools** - prebuilt capabilities including Code Interpreter for Python execution, File Search for document analysis, and Web Search for internet access.
+Out of the box, every agent in the framework supports:
 
-- **Conversation management** - structured message system with roles (USER, ASSISTANT, SYSTEM, TOOL) and `AgentSession` for persistent conversation context across interactions.
+- **Function calling**—automatically invoke registered tools to interact with external APIs and services
+- **Multi-turn conversations**—maintain chat history either locally or via service-provided history management
+- **Structured outputs**—generate type-safe, schema-validated responses
+- **Streaming responses**—receive results incrementally as they're generated
+- **Service-provided tools**—use built-in capabilities such as code execution, file search, and web search where supported by the provider
 
-- **Workflow orchestration** - supports sequential workflows, concurrent execution, group chat, and handoff patterns for complex multi-agent collaboration.
 
-The Microsoft Agent Framework helps streamline the creation of agents and allows multiple agents to work together in conversations while including human input. The framework supports different types of agents from multiple providers, including Microsoft Foundry, Azure OpenAI, OpenAI, Microsoft Copilot Studio, and Anthropic agents.
+## Using the Microsoft Agent Framework with AI Foundry
 
-### What Is a Microsoft Foundry Agent?
+The Microsoft Agent Framework is designed to work seamlessly with your Azure AI Foundry projects. It provides a consistent interface for connecting to Foundry, managing agent sessions, and integrating with tools and services.
 
-Microsoft Foundry Agents provide enterprise-level capabilities using the Microsoft Foundry Agent Service. These agents offer advanced features for complex enterprise scenarios. Key benefits include:
+By authenticating with your Azure credentials, you can connect to your Foundry project and create agents that use the capabilities of the Foundry Agent Service. These capabilities include persistent chat history, dynamic tool discovery, and integration with Azure services.
 
-- **Enterprise-level capabilities** – Built for Azure environments with advanced AI features including code interpreter, function tools integration, and Model Context Protocol (MCP) support.
+### Why Foundry is the recommended provider
 
-- **Automatic tool invocation** – Agents can automatically call and execute tools, integrating seamlessly with Azure AI Search, Azure Functions, and other Azure services.
+A key differentiator of the Foundry Agent Service is its support for **service-side chat history**. With service-side history, the agent session persists across turns automatically—you don't need to manage conversation state yourself. Service-side history makes Foundry the recommended provider for production scenarios where maintaining context is critical.
 
-- **Thread and conversation management** – Provides built-in mechanisms for managing persistent conversation states across sessions, ensuring smooth multi-agent interactions.
+## Provider matrix
 
-- **Secure enterprise integration** – Enables secure and compliant AI agent development with Azure CLI authentication, RBAC, and customizable storage options.
+One of the practical benefits of the Agent Framework's common interface is provider flexibility. As models improve or your requirements change, you can switch the underlying inference service without rewriting your agent logic—only the client configuration changes.
 
-When you use Microsoft Foundry Agents, you get the full power of enterprise Azure capabilities combined with the features of the Microsoft Agent Framework. These features can help you create robust AI-driven workflows that can scale efficiently across business applications.
+The framework supports the following providers:
 
-### Agent framework core concepts
+| Provider | Service chat history |
+|---|---|
+| Foundry Agent Service | Yes |
+| Azure OpenAI Responses | Yes |
+| OpenAI Responses | Yes |
+| Azure OpenAI Chat Completion | No |
+| OpenAI Chat Completion | No |
+| Anthropic Claude | No |
+| Amazon Bedrock | No |
+| GitHub Copilot | No |
+| Ollama (OpenAI-compatible) | No |
 
-- **BaseAgent** - the foundation for all agents with consistent methods, providing a unified interface across all agent types.
-
-- **Agent session** - manage persistent conversation context and store conversation history across sessions using the `AgentSession` class.
-
-- **Chat messages** - organized structure for agent communication using role-based messaging (USER, ASSISTANT, SYSTEM, TOOL) that enables smooth communication and integration.
-
-- **Workflow orchestration** - supports sequential workflows, running multiple agents in parallel, group conversations between agents, and transferring control between specialized agents.
-
-- **Multi-modal support** - allows agents to work with text, images, and structured outputs, including vision capabilities and type-safe response generation.
-
-- **Function tools** - let you add custom capabilities to agents by including custom functions with automatic schema generation from Python functions.
-
-- **Authentication methods** - supports multiple authentication methods including Azure CLI credentials, API keys, MSAL for Microsoft business authentication, and role-based access control.
-
-This framework supports autonomous, multi-agent AI behaviors while maintaining a flexible architecture that lets you mix and match agents, tools, and workflows as needed. The design lets you switch between OpenAI, Azure OpenAI, Anthropic, and other providers without changing your code, making it easy to build AI systems—from simple chatbots to complex business solutions.
+This module focuses on the **Foundry Agent Service** provider, which offers enterprise-grade capabilities including persistent chat history, Model Context Protocol (MCP) tool support, and integration with Azure services.
 
 ::: zone-end
 

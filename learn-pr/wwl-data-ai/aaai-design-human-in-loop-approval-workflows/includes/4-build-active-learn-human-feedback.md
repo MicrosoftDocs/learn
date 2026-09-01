@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=834af206-aa3a-4f91-ba10-e3b282fb5f0b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry's evaluation pipeline turns human approval decisions into structured test cases that continuously improve agent quality. Every rejected proposal becomes a labeled example that validates prompt updates before deployment and tracks whether the improvement actually reduces future escalation rates.
 
 ## Two complementary types of human feedback
@@ -225,3 +236,5 @@ Active learning from human feedback transforms agents from static models into co
 - **Feedback-to-test-case pipeline** converts monthly approval rejections into structured evaluation test cases that validate prompt improvements and prevent regressions.
 - **Active learning prioritization** scores feedback examples by confidence-outcome mismatch, novelty, and frequency to focus improvement efforts on the highest-impact patterns.
 - **Prompt optimization loop** analyzes rejection patterns monthly, updates system prompts to address top issues, validates fixes against expanded regression suites, and monitors rejection rates post-deployment.
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=61b5bfd0-e0f9-4bb2-b6f1-439f9e8fc647]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry agents evaluate their own confidence before executing high-stakes decisions, and you can configure escalation thresholds to route low-confidence or high-impact actions to human reviewers automatically. Effective escalation combines multiple signals—model confidence, financial impact, policy exceptions, and request ambiguity—so human review activates only when it's genuinely needed.
 
 ## When agents should escalate to human review
@@ -180,3 +191,5 @@ When confidence calibration, risk stratification, and clear escalation messaging
 - **Risk-stratified thresholds** require higher calibrated confidence for higher-stakes decisions: 0.60 for low-risk, 0.75 for moderate, and 0.88 for high-risk actions.
 - **Graceful escalation UX** communicates what's being escalated, sets time expectations, offers continued help with other aspects, and provides a tracking reference for follow-up.
 - **Escalation pattern tracking** identifies optimization opportunities by monitoring which agents, categories, and triggers generate the most escalations over time.
+
+::: zone-end

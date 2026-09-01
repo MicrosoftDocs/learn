@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-advanced-windows-firewall.explain-internet-protocol-security
+title: Explain Internet Protocol security
+metadata:
+  title: Explain Internet Protocol Security
+  description: Explain peer authentication, integrity, confidentiality, replay protection, and security association behavior.
+  ms.date: 08/05/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 18
+content: |
+  [!include[](includes/5-explain-internet-protocol-security.md)]

@@ -3,7 +3,7 @@
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=b5422f51-2fe1-4a46-a0e8-42640fe9a935]
 
 > [!TIP]
-> The video for this section is also available in text-based form below.
+> See the **Text and images** tab for more details!
 
 ::: zone-end
 

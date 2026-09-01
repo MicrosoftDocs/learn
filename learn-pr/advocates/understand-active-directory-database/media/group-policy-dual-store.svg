@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Group Policy Object across directory and system-volume stores</title>
+  <desc id="desc">Group Policy Management writes a Group Policy container to the Active Directory Domain Services domain partition and a matching Group Policy template to the system volume. The components share one globally unique identifier but replicate independently. A client reads the container through Lightweight Directory Access Protocol and the template through Server Message Block.</desc>
+  <defs>
+    <marker id="policy-blue-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+    <marker id="policy-green-arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#107C10"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="760" fill="#FFFFFF"/>
+  <text x="600" y="40" text-anchor="middle" fill="#1A1A1A" font-size="26" font-weight="700">One Group Policy Object, two replicated components</text>
+
+  <rect x="350" y="75" width="500" height="88" rx="12" fill="#F7F7F7" stroke="#605E5C" stroke-width="2"/>
+  <text x="600" y="111" text-anchor="middle" fill="#1A1A1A" font-size="19" font-weight="700">Group Policy Management</text>
+  <text x="600" y="139" text-anchor="middle" fill="#323130" font-size="15">Creates or edits both components through supported interfaces</text>
+
+  <rect x="248" y="190" width="704" height="48" rx="24" fill="#F5F0FA" stroke="#5C2D91" stroke-width="2"/>
+  <text x="600" y="221" text-anchor="middle" fill="#5C2D91" font-size="16" font-weight="700">Shared identifier: {C8A3B9F4-8A72-4E6B-A9A8-11384B1C6E57}</text>
+
+  <line x1="600" y1="163" x2="600" y2="180" stroke="#5C2D91" stroke-width="3"/>
+  <line x1="420" y1="238" x2="372" y2="252" stroke="#0078D4" stroke-width="4" marker-end="url(#policy-blue-arrow)"/>
+  <line x1="780" y1="238" x2="828" y2="252" stroke="#107C10" stroke-width="4" marker-end="url(#policy-green-arrow)"/>
+
+  <rect x="75" y="265" width="470" height="232" rx="14" fill="#F2F8FD" stroke="#0078D4" stroke-width="2"/>
+  <text x="310" y="302" text-anchor="middle" fill="#005A9E" font-size="20" font-weight="700">Group Policy container</text>
+  <text x="310" y="331" text-anchor="middle" fill="#323130" font-size="15">Active Directory Domain Services domain partition</text>
+  <line x1="110" y1="351" x2="510" y2="351" stroke="#B3D6F2" stroke-width="2"/>
+  <text x="115" y="382" fill="#323130" font-size="15">• display name and status</text>
+  <text x="115" y="410" fill="#323130" font-size="15">• gPCFileSysPath</text>
+  <text x="115" y="438" fill="#323130" font-size="15">• versionNumber</text>
+  <text x="115" y="466" fill="#323130" font-size="15">• security and extension attributes</text>
+
+  <rect x="655" y="265" width="470" height="232" rx="14" fill="#E7F4E4" stroke="#107C10" stroke-width="2"/>
+  <text x="890" y="302" text-anchor="middle" fill="#0B6A0B" font-size="20" font-weight="700">Group Policy template</text>
+  <text x="890" y="331" text-anchor="middle" fill="#323130" font-size="15">System-volume Policies folder</text>
+  <line x1="690" y1="351" x2="1090" y2="351" stroke="#A9D7A3" stroke-width="2"/>
+  <text x="695" y="382" fill="#323130" font-size="15">• gpt.ini and Version</text>
+  <text x="695" y="410" fill="#323130" font-size="15">• Machine and User folders</text>
+  <text x="695" y="438" fill="#323130" font-size="15">• registry policy and extension files</text>
+  <text x="695" y="466" fill="#323130" font-size="15">• scripts and security settings when configured</text>
+
+  <rect x="96" y="528" width="428" height="62" rx="10" fill="#E1EFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="310" y="554" text-anchor="middle" fill="#005A9E" font-size="16" font-weight="700">Logical directory replication</text>
+  <text x="310" y="578" text-anchor="middle" fill="#323130" font-size="14">Replicates the container and versionNumber</text>
+
+  <rect x="676" y="528" width="428" height="62" rx="10" fill="#E7F4E4" stroke="#107C10" stroke-width="2"/>
+  <text x="890" y="554" text-anchor="middle" fill="#0B6A0B" font-size="16" font-weight="700">Distributed File System Replication</text>
+  <text x="890" y="578" text-anchor="middle" fill="#323130" font-size="14">Replicates template files and gpt.ini</text>
+
+  <line x1="310" y1="497" x2="310" y2="518" stroke="#0078D4" stroke-width="4" marker-end="url(#policy-blue-arrow)"/>
+  <line x1="890" y1="497" x2="890" y2="518" stroke="#107C10" stroke-width="4" marker-end="url(#policy-green-arrow)"/>
+
+  <rect x="220" y="625" width="760" height="100" rx="12" fill="#FFF4CE" stroke="#8A6D1D" stroke-width="2"/>
+  <text x="600" y="655" text-anchor="middle" fill="#5C4B00" font-size="18" font-weight="700">Client processing crosses both paths</text>
+  <text x="600" y="683" text-anchor="middle" fill="#323130" font-size="15">LDAP reads the container. SMB retrieves the template.</text>
+  <text x="600" y="708" text-anchor="middle" fill="#323130" font-size="15">The two writes and replication paths aren't one cross-store atomic transaction.</text>
+
+  <line x1="310" y1="590" x2="410" y2="625" stroke="#0078D4" stroke-width="3" marker-end="url(#policy-blue-arrow)"/>
+  <line x1="890" y1="590" x2="790" y2="625" stroke="#107C10" stroke-width="3" marker-end="url(#policy-green-arrow)"/>
+</svg>

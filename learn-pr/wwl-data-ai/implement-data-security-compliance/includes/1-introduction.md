@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b2c3dcf3-3fbf-4824-a2a1-90e347e66b3c]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Data security isn't just about preventing external attackers. You must protect sensitive information from unauthorized internal access, maintain compliance with regulations, and create accountability through detailed audit trails. Microsoft's SQL platforms provide built-in security features that address these requirements without requiring extensive application changes.
 
 Modern development practices require you to build security into your database designs from the start. When you create tables that store personal information, you need to consider who should see that data and how to protect it. When you write stored procedures, you must think about what permissions they require and whether they could expose sensitive information. Security decisions made during development are far easier to implement than adding them later.
@@ -23,3 +31,8 @@ In this module, you'll learn how to:
 - Familiarity with database security concepts such as authentication and authorization
 - Understanding of Microsoft Entra ID (formerly Azure Active Directory) basics
 - Access to a SQL Server, Azure SQL Database, or SQL database in Microsoft Fabric for testing
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

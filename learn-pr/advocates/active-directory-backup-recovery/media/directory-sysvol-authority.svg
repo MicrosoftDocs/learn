@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Directory database and SYSVOL authority matrix</title>
+  <desc id="desc">Three ordered recovery scenarios show directory database authority and SYSVOL authority.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#243a5e"/>
+    </marker>
+    <style>
+      .scenario { fill:#eef5ff; stroke:#365f91; stroke-width:2; rx:10; }
+      .database { fill:#e8f5e9; stroke:#286c2f; stroke-width:2; rx:10; }
+      .sysvol { fill:#fff4ce; stroke:#8a6d1d; stroke-width:2; rx:10; }
+      .line { stroke:#243a5e; stroke-width:2.5; fill:none; marker-end:url(#arrow); }
+      .title { font:700 24px "Segoe UI", Arial, sans-serif; fill:#17253d; text-anchor:middle; }
+      .text { font:600 18px "Segoe UI", Arial, sans-serif; fill:#17253d; text-anchor:middle; }
+      .sub { font:15px "Segoe UI", Arial, sans-serif; fill:#17253d; text-anchor:middle; }
+    </style>
+  </defs>
+  <rect width="1200" height="650" fill="#ffffff"/>
+  <text class="title" x="600" y="42">Select database authority separately from SYSVOL authority</text>
+
+  <rect class="scenario" x="50" y="92" width="330" height="95"/>
+  <text class="text" x="215" y="126">1. Routine controller restore</text>
+  <text class="sub" x="215" y="151">Healthy writable partners exist</text>
+  <path class="line" d="M215 187 L215 240"/>
+  <rect class="database" x="50" y="240" width="330" height="90"/>
+  <text class="text" x="215" y="274">Directory database</text>
+  <text class="sub" x="215" y="302">Nonauthoritative</text>
+  <path class="line" d="M215 330 L215 383"/>
+  <rect class="sysvol" x="50" y="383" width="330" height="90"/>
+  <text class="text" x="215" y="417">SYSVOL</text>
+  <text class="sub" x="215" y="445">Normally nonauthoritative</text>
+
+  <rect class="scenario" x="435" y="92" width="330" height="95"/>
+  <text class="text" x="600" y="126">2. First controller per domain</text>
+  <text class="sub" x="600" y="151">Forest recovery</text>
+  <path class="line" d="M600 187 L600 240"/>
+  <rect class="database" x="435" y="240" width="330" height="90"/>
+  <text class="text" x="600" y="274">Directory database</text>
+  <text class="sub" x="600" y="302">Nonauthoritative</text>
+  <path class="line" d="M600 330 L600 383"/>
+  <rect class="sysvol" x="435" y="383" width="330" height="90"/>
+  <text class="text" x="600" y="417">SYSVOL</text>
+  <text class="sub" x="600" y="445">Authoritative</text>
+
+  <rect class="scenario" x="820" y="92" width="330" height="95"/>
+  <text class="text" x="985" y="126">3. Later controller</text>
+  <text class="sub" x="985" y="151">Recovered domain</text>
+  <path class="line" d="M985 187 L985 240"/>
+  <rect class="database" x="820" y="240" width="330" height="90"/>
+  <text class="text" x="985" y="274">Directory database</text>
+  <text class="sub" x="985" y="302">Replicate or promote cleanly</text>
+  <path class="line" d="M985 330 L985 383"/>
+  <rect class="sysvol" x="820" y="383" width="330" height="90"/>
+  <text class="text" x="985" y="417">SYSVOL</text>
+  <text class="sub" x="985" y="445">Nonauthoritative or clean promotion</text>
+
+  <rect x="255" y="535" width="690" height="72" fill="#fde7e9" stroke="#a4262c" stroke-width="2" rx="8"/>
+  <text class="text" x="600" y="565">Do not add authoritative SYSVOL to routine recovery.</text>
+  <text class="sub" x="600" y="590">Do not make every recovered controller authoritative.</text>
+</svg>

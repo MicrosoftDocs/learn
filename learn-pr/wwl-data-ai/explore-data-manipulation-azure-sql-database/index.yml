@@ -3,7 +3,7 @@ uid: learn-wwl.explore-data-manipulation-azure-sql-database
 metadata:
   title: Explore data manipulation options in Azure SQL Database
   description: "Learn how to invoke REST endpoints in Azure SQL Database and manipulate data using Azure Functions. Also, explore various tools and options for importing and exporting data to and from Azure SQL Database."
-  ms.date: 5/15/2025
+  ms.date: 08/11/2026
   author: jupadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based

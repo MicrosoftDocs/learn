@@ -4,8 +4,8 @@ metadata:
   title: Iterate Through a Code Block using for Statement in C#
   description: "Use the for iteration statement to loop a pre-set number of times and control the iteration process."
   ms.date: 12/15/2025
-  author: ChrisHowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: module
   ms.custom:
   - N/A

@@ -1,28 +1,39 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-azure-updates.manage-updates-for-your-azure-vms
-title: Manage updates for your Azure Virtual Machines
+title: Manage updates at scale
 metadata:
-  title: Manage updates for your Azure Virtual Machines
-  description: "Manage updates for your Azure Virtual Machines"
-  ms.date: 09/24/2020
+  title: Manage Updates at Scale
+  description: "Manage machine settings, deployment history, reports, and alerts across your server fleet."
+  ms.date: 08/16/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
-durationInMinutes: 8
+durationInMinutes: 5
 content: |
   [!include[](includes/6-manage-updates-azure-virtual-machines.md)]
 quiz:
   title: "Quick quiz"
   questions:
-  - content: "During the demonstration, the instructor created a new alert rule. What's the purpose of such a rule?"
+  - content: "Where should an administrator review the detailed results of one-time and scheduled update deployments?"
     choices:
-    - content: "An alert rule can configure update deployments."
-      isCorrect: false
-      explanation: "That's incorrect. An alert rule monitors update deployments."
-    - content: "An alert rule can monitor update deployments."
+    - content: "The **History** page in Azure Update Manager."
       isCorrect: true
-      explanation: "That's correct. An alert rule can monitor update deployments"
-    - content: "An alert rule can create update deployments."
+      explanation: "That's correct. The **History** page shows deployment status and per-machine update results."
+    - content: "The **Agents** page in a Log Analytics workspace."
       isCorrect: false
-      explanation: "That's incorrect. An alert rule monitors update deployments."
+      explanation: "That's incorrect. Azure Update Manager doesn't require a Log Analytics workspace."
+    - content: "The **Runbooks** page in Azure Automation."
+      isCorrect: false
+      explanation: "That's incorrect. Update Manager deployment results aren't stored in Azure Automation runbooks."
+  - content: "An operations team creates an Azure Update Manager alert rule based on an Azure Resource Graph query. What access must the team configure for the alert rule?"
+    choices:
+    - content: "A managed identity with the **Reader** role on the target resources."
+      isCorrect: true
+      explanation: "That's correct. The alert rule uses a managed identity to read the resources evaluated by the query."
+    - content: "A user account with the **Owner** role on a Log Analytics workspace."
+      isCorrect: false
+      explanation: "That's incorrect. Update Manager alert queries read Azure Resource Graph data and don't require a Log Analytics workspace."
+    - content: "A service principal with the **Contributor** role on an Automation account."
+      isCorrect: false
+      explanation: "That's incorrect. Update Manager alerts don't depend on an Azure Automation account."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.site-topology-replication.site-link-design
+title: Design sites, site links, and the replication topology
+metadata:
+  title: Design sites, site links, and the replication topology
+  description: Design sites, subnets, site links, and costs, and explain how the KCC, ISTG, bridgeheads, and connection objects build the replication topology.
+  ms.date: 04/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/2-site-link-design.md)]

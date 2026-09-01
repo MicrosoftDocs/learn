@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-agent-data-security.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 06/15/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "The administrator wants to configure data loss prevention (DLP) to block the Security Copilot agent from sharing exfiltrated data. What should they do?"
+    choices:
+    - content: "Add the Security Copilot agent instance to an existing DLP policy's user scope."
+      isCorrect: false
+      explanation: "Incorrect. DLP isn't available for Security Copilot agents. The coverage matrix shows only data classification is supported for this agent type. Adding it to a DLP policy has no effect."
+    - content: "Create a new DLP policy specifically for Security Copilot agents with exfiltration conditions."
+      isCorrect: false
+      explanation: "Incorrect. No DLP policy, whether new or existing, can cover Security Copilot agents. This is a coverage boundary, not a configuration gap."
+    - content: "Configure Insider Risk Management or communication compliance to detect the risk instead, because DLP isn't available for this agent type."
+      isCorrect: true
+      explanation: "Correct. Security Copilot agents only support data classification. DLP can't cover this agent type regardless of configuration. Detection through IRM or communication compliance is the only signal available."
+  - content: "The administrator checks the Agent 365 instance and finds it has no policy coverage. However, audit events for the agent's interactions are already appearing in Activity Explorer. Why?"
+    choices:
+    - content: "Auditing, data classification, and Compliance Manager assessments activate automatically when an Agent 365 instance is created. No configuration is needed for these three capabilities."
+      isCorrect: true
+      explanation: "Correct. These three capabilities are automatic. Everything else, including DLP, sensitivity label permissions, IRM, and communication compliance, requires the agent instance to be explicitly included in policies."
+    - content: "Someone already configured an audit policy for this agent instance."
+      isCorrect: false
+      explanation: "Incorrect. Auditing doesn't require explicit configuration for Agent 365 instances. It activates automatically when the agent instance is created."
+    - content: "Agent 365 instances inherit audit coverage from their parent app's existing policies."
+      isCorrect: false
+      explanation: "Incorrect. Agent 365 instances don't inherit policies from their parent app. Auditing is automatic specifically for Agent 365, not inherited through policy scope."
+  - content: "The administrator adds the Agent 365 instance to a DLP policy and a sensitivity label grants encryption using 'Add all users and groups in your organization.' The agent still can't access encrypted files. What must be addressed to resolve the access failure?"
+    choices:
+    - content: "Only the file sharing requirement. The agent instance needs explicit access to the files through sharing."
+      isCorrect: false
+      explanation: "Incorrect. File sharing is required, but it doesn't resolve the encryption access failure. 'Add all users and groups in your organization' isn't sufficient for Agent 365 instances. Both explicit encryption rights and file sharing must be in place."
+    - content: "Both the encryption permissions and file sharing. The label must explicitly grant the agent instance VIEW and EXTRACT rights, and the files must be explicitly shared with the agent."
+      isCorrect: true
+      explanation: "Correct. Agent 365 requires explicit VIEW and EXTRACT rights on the sensitivity label. Broad permission settings like 'all users and groups' don't include agent instances. The files must also be explicitly shared because Agent 365 can't inherit user permissions through Microsoft Graph."
+    - content: "Only the encryption permissions. Replacing 'all users and groups' with the specific agent instance resolves the issue."
+      isCorrect: false
+      explanation: "Incorrect. Fixing encryption permissions alone isn't enough. Agent 365 instances also can't inherit user file permissions through Microsoft Graph, so files must be explicitly shared with the agent instance. Both conditions must be met."
+  - content: "After configuring DLP for the Agent 365 instance, the policy matches and blocks a sensitive interaction. The agent owner reports the agent is producing incomplete results but no one received a notification. What's happening?"
+    choices:
+    - content: "The DLP policy is misconfigured and should be generating user notifications."
+      isCorrect: false
+      explanation: "Incorrect. Agent 365 instances are unaware of DLP block actions by design. The block works, but the agent receives no notification and continues operating in a broken state."
+    - content: "The agent needs to be removed from the DLP policy scope because blocking breaks agent functionality."
+      isCorrect: false
+      explanation: "Incorrect. The block is working as intended by preventing sensitive data exposure. The solution is to add alert review, not remove protection."
+    - content: "The block action prevented the data from being shared, but Agent 365 instances don't receive block notifications. The agent owner needs DLP alert notifications to detect these situations."
+      isCorrect: true
+      explanation: "Correct. Agent 365 is unaware of block actions. The sensitive data is protected, but the agent continues operating without knowledge of the block. Configuring DLP alerts with the agent owner as a notification recipient is the required alert review workflow."
+  - content: "The Copilot Studio agent is generating sensitive responses in Teams. The administrator wants to detect inappropriate content in those interactions. Which approach is correct?"
+    choices:
+    - content: "Configure a communication compliance policy with the Microsoft Copilot experiences location selected to detect inappropriate content in agent interactions."
+      isCorrect: true
+      explanation: "Correct. Communication compliance detects inappropriate content in agent-to-human and human-to-agent interactions. Selecting the Microsoft Copilot experiences location covers Copilot Studio agents."
+    - content: "Add the Copilot Studio agent instance to an Insider Risk Management policy using the Risky AI usage template."
+      isCorrect: false
+      explanation: "Incorrect. IRM detects risky patterns like prompt injection and data exfiltration, not inappropriate content in conversations. The Risky Agents policy is also already active for Copilot Studio agents by default."
+    - content: "Configure a DLP policy with sensitive information type conditions to block sensitive responses."
+      isCorrect: false
+      explanation: "Incorrect. DLP blocks sensitive data based on content patterns, but it doesn't detect inappropriate language, harassment, or unethical communication. Communication compliance is the correct solution for content violations."

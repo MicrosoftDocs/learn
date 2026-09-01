@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-sre-agent.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Check your understanding of Azure SRE Agent capabilities, controls, and adoption criteria.
+  ms.date: 08/06/2026
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "An on-call team spends time switching among monitoring, source control, and incident systems to understand service degradation. Which Azure SRE Agent capability best addresses this challenge?"
+      choices:
+        - content: "Correlate signals from connected systems and present a grounded investigation with proposed mitigations."
+          isCorrect: true
+          explanation: "Correct. Azure SRE Agent can bring evidence from connected operational systems into one investigation and recommend a response."
+        - content: "Replace each operational system with a new monitoring platform managed by the agent."
+          isCorrect: false
+          explanation: "Incorrect. Azure SRE Agent connects to operational systems; it doesn't require replacing them with a single monitoring platform."
+        - content: "Run the same remediation script for every alert without considering context."
+          isCorrect: false
+          explanation: "Incorrect. The agent reasons over evidence and context before it recommends or executes an action."
+    - content: "Your organization wants to pilot mitigations in production while requiring an engineer to approve every write action. Which approach should you choose?"
+      choices:
+        - content: "Use Autonomous mode and assign broad subscription-level permissions."
+          isCorrect: false
+          explanation: "Incorrect. Autonomous mode can execute permitted actions without approval, and broad permissions increase the pilot's scope."
+        - content: "Use Review mode and grant the managed identity only the permissions required at the smallest practical scope."
+          isCorrect: true
+          explanation: "Correct. Review mode keeps a person in the approval loop, while least-privilege RBAC limits what the agent can change."
+        - content: "Use ReadOnly mode and expect the agent to restart a service after approval."
+          isCorrect: false
+          explanation: "Incorrect. ReadOnly mode is suitable for investigation and monitoring, but it doesn't permit mitigation actions."
+    - content: "A team needs a daily health review that checks resource status and reports findings to an incident channel. Why is Azure SRE Agent a reasonable fit?"
+      choices:
+        - content: "It can schedule recurring operational workflows and send results through connected systems."
+          isCorrect: true
+          explanation: "Correct. Scheduled tasks support recurring health checks and can surface results through connected incident or notification systems."
+        - content: "It guarantees that every AI-generated conclusion is correct without human review."
+          isCorrect: false
+          explanation: "Incorrect. AI-generated conclusions can be wrong, so teams must define controls and review consequential actions."
+        - content: "It removes the need to grant any identity access to the resources being checked."
+          isCorrect: false
+          explanation: "Incorrect. The agent uses a managed identity and requires appropriate RBAC permissions to access Azure resources."
+    - content: "Which situation is the strongest reason to delay adopting Azure SRE Agent?"
+      choices:
+        - content: "The team wants to preserve investigation knowledge across on-call shifts."
+          isCorrect: false
+          explanation: "Incorrect. Persistent operational knowledge is a capability that supports this goal."
+        - content: "The team has recurring incidents involving signals from several supported operational systems."
+          isCorrect: false
+          explanation: "Incorrect. Cross-system investigation and incident automation are strong candidate scenarios."
+        - content: "The organization hasn't approved the required data handling, identity permissions, or regional availability for its environment."
+          isCorrect: true
+          explanation: "Correct. Governance, access, data, and availability requirements should be resolved before the organization adopts the service."

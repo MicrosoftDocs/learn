@@ -17,4 +17,4 @@ Learning Path 5 Tips and Tricks
 - When describing generative AI, show some examples with either Microsoft Copilot in Bing or Azure OpenAI’s playground
 
 Learning Path 5 Exercise
-- [Exercise 01: Explore generative AI with Microsoft Copilot](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Exercises/02-generative-ai.html)
+- Exercise 01: Explore generative AI with Microsoft Copilot

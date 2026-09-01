@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=99b41173-8c6f-4f9d-bd0c-e8b5db4fb8fe]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure AI Foundry Agent Service coordinates conflict resolution by routing contradictory agent outputs through priority rules, consensus checks, or a synthesis agent depending on the conflict type. Azure Cosmos DB stores the complete audit trail for every conflict and resolution decision, providing the accountability record that regulated financial platforms require.
 
 ## Apply resolution strategies by conflict type
@@ -136,3 +147,5 @@ With enterprise-scale discovery, distributed state management, context isolation
 - **Resolution strategies vary by conflict type**: priority-based resolution selects the highest-authority agent's output, consensus-based resolution aggregates multiple agent judgments, and orchestrator synthesis generates a unified recommendation when neither approach is sufficient.
 - **Confidence-weighted resolution** selects the higher-confidence output when analytical perspectives conflict, with explicit justification logging for transparency.
 - **Audit trails** log every conflict detection, resolution strategy applied, winning/losing outputs, and justification—creating a complete accountability record for regulatory review and system improvement.
+
+::: zone-end

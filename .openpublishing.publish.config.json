@@ -43,18 +43,6 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "blazing-pizza-main",
-      "url": "https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr",
-      "branch": "main",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "blazing-pizza-signalr",
-      "url": "https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr",
-      "branch": "signalr",
-      "branch_mapping": {}
-    },
-    {
       "path_to_root": "csharp-null-safety-main",
       "url": "https://github.com/MicrosoftDocs/mslearn-csharp-null-safety",
       "branch": "main",

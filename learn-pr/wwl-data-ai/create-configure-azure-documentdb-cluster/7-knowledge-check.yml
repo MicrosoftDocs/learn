@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-azure-documentdb-cluster.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Check your understanding of creating, connecting to, and configuring an Azure DocumentDB cluster."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: ""
+  questions:
+  - content: "A development team wants to reduce costs for their test environment cluster. Which action achieves cost reduction without losing existing data?"
+    choices:
+    - content: "Change the compute tier from M50 to M25 burstable"
+      isCorrect: false
+      explanation: "Azure DocumentDB doesn't support downgrading from a provisioned tier (M50) to a burstable tier (M25)."
+    - content: "Reduce the storage size from 256 GiB to 128 GiB"
+      isCorrect: false
+      explanation: "Storage size can only be increased in Azure DocumentDB. It can't be decreased after provisioning."
+    - content: "Change the compute tier from M50 to M30"
+      isCorrect: true
+      explanation: "Azure DocumentDB supports downgrading between provisioned compute tiers (for example, M50 to M30) without downtime or data loss, reducing vCores and RAM allocation and lowering costs."
+  - content: "Which network configuration provides the strongest security isolation for an Azure DocumentDB cluster in a production environment?"
+    choices:
+    - content: "Public access with firewall rules restricted to the application's IP addresses"
+      isCorrect: false
+      explanation: "Firewall rules restrict access by IP address, but traffic still crosses the public internet. Private endpoints provide stronger isolation."
+    - content: "Azure Private Link with a private endpoint in the application's virtual network"
+      isCorrect: true
+      explanation: "Azure Private Link routes traffic through private IP addresses in the application's virtual network, eliminating exposure to the public internet."
+    - content: "Public access with Azure services allowed and no firewall rules"
+      isCorrect: false
+      explanation: "This configuration allows connections from all Azure services and doesn't restrict external access, providing minimal security isolation."
+  - content: "What warning appears when a client connects to Azure DocumentDB using MongoDB Shell, and what does it mean?"
+    choices:
+    - content: "'Non-Genuine MongoDB Detected' because the cluster is running an emulated protocol that may be incompatible."
+      isCorrect: false
+      explanation: "The warning appears because the connection string contains 'cosmos.azure', but Azure DocumentDB provides over 99% MongoDB compatibility. The warning is safe to ignore."
+    - content: "'Non-Genuine MongoDB Detected' because the connection string contains 'cosmos.azure', but it's safe to ignore."
+      isCorrect: true
+      explanation: "MongoDB Shell generates this warning when it detects a non-MongoDB server. Azure DocumentDB is a native Azure PaaS offering with over 99% MongoDB compatibility. The warning is safe to ignore."
+    - content: "'Connection Insecure' because Transport Layer Security (TLS) isn't configured properly."
+      isCorrect: false
+      explanation: "Azure DocumentDB requires TLS and the connection string includes tls=true. The warning that appears is about 'Non-Genuine MongoDB Detected', not TLS."
+  - content: "Which authentication method does Azure DocumentDB support in addition to SCRAM-SHA-256 for production environments?"
+    choices:
+    - content: "API keys only"
+      isCorrect: false
+      explanation: "Azure DocumentDB doesn't use API keys. It supports SCRAM-SHA-256 and Microsoft Entra ID authentication."
+    - content: "Microsoft Entra ID with managed identities and role-based access control (RBAC)"
+      isCorrect: true
+      explanation: "Azure DocumentDB supports Microsoft Entra ID authentication alongside SCRAM-SHA-256. This authentication method enables managed identities and role-based access control for production workloads."
+    - content: "OAuth 2.0 bearer tokens only"
+      isCorrect: false
+      explanation: "Azure DocumentDB uses SCRAM-SHA-256 and Microsoft Entra ID authentication, not generic OAuth 2.0 bearer tokens."
+  - content: "What is the maximum number of shards that can be deployed without a support ticket?"
+    choices:
+    - content: "5 shards"
+      isCorrect: false
+      explanation: "Azure DocumentDB supports up to 10 shards without a support ticket."
+    - content: "10 shards"
+      isCorrect: true
+      explanation: "Up to 10 shards can be deployed without a support ticket. Deployments with more than 10 shards require contacting Azure support."
+    - content: "Unlimited shards"
+      isCorrect: false
+      explanation: "Deployments with more than 10 shards require a support ticket. There isn't an unlimited shard option."

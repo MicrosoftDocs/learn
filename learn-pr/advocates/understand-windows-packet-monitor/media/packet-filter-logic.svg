@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Packet filter matching logic</title>
+  <desc id="desc">Each filter requires all of its conditions to match. A packet is captured when it matches filter one or filter two.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="520" fill="#FFFFFF"/>
+  <text x="500" y="38" text-anchor="middle" fill="#1A1A1A" font-size="24" font-weight="700">Conditions use AND; separate filters use OR</text>
+
+  <rect x="35" y="70" width="650" height="170" rx="14" fill="#F7FBFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="65" y="102" fill="#005A9E" font-size="19" font-weight="700">Filter one</text>
+
+  <rect x="65" y="125" width="165" height="70" rx="9" fill="#FFFFFF" stroke="#5C2D91" stroke-width="2"/>
+  <text x="147" y="151" text-anchor="middle" fill="#1A1A1A" font-size="15" font-weight="600">Internet Protocol</text>
+  <text x="147" y="175" text-anchor="middle" fill="#424242" font-size="15">192.0.2.20</text>
+
+  <text x="253" y="167" text-anchor="middle" fill="#D83B01" font-size="16" font-weight="700">AND</text>
+
+  <rect x="275" y="125" width="165" height="70" rx="9" fill="#FFFFFF" stroke="#5C2D91" stroke-width="2"/>
+  <text x="357" y="151" text-anchor="middle" fill="#1A1A1A" font-size="15" font-weight="600">Protocol</text>
+  <text x="357" y="175" text-anchor="middle" fill="#424242" font-size="15">User Datagram</text>
+
+  <text x="463" y="167" text-anchor="middle" fill="#D83B01" font-size="16" font-weight="700">AND</text>
+
+  <rect x="485" y="125" width="165" height="70" rx="9" fill="#FFFFFF" stroke="#5C2D91" stroke-width="2"/>
+  <text x="567" y="151" text-anchor="middle" fill="#1A1A1A" font-size="15" font-weight="600">Port</text>
+  <text x="567" y="175" text-anchor="middle" fill="#424242" font-size="15">50000</text>
+
+  <rect x="35" y="280" width="650" height="170" rx="14" fill="#F7FBFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="65" y="312" fill="#005A9E" font-size="19" font-weight="700">Filter two</text>
+
+  <rect x="65" y="335" width="270" height="70" rx="9" fill="#FFFFFF" stroke="#107C10" stroke-width="2"/>
+  <text x="200" y="361" text-anchor="middle" fill="#1A1A1A" font-size="15" font-weight="600">Protocol</text>
+  <text x="200" y="385" text-anchor="middle" fill="#424242" font-size="15">Internet Control Message</text>
+
+  <text x="358" y="377" text-anchor="middle" fill="#D83B01" font-size="16" font-weight="700">AND</text>
+
+  <rect x="380" y="335" width="270" height="70" rx="9" fill="#FFFFFF" stroke="#107C10" stroke-width="2"/>
+  <text x="515" y="361" text-anchor="middle" fill="#1A1A1A" font-size="15" font-weight="600">Internet Protocol address</text>
+  <text x="515" y="385" text-anchor="middle" fill="#424242" font-size="15">192.0.2.20</text>
+
+  <line x1="685" y1="155" x2="775" y2="222" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="685" y1="365" x2="775" y2="298" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <polygon points="815,205 870,260 815,315 760,260" fill="#FFF4CE" stroke="#D83B01" stroke-width="2"/>
+  <text x="815" y="268" text-anchor="middle" fill="#8A2C0A" font-size="22" font-weight="700">OR</text>
+
+  <line x1="870" y1="260" x2="930" y2="260" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="930" y="218" width="52" height="84" rx="9" fill="#DFF6DD" stroke="#107C10" stroke-width="2"/>
+  <text x="956" y="248" text-anchor="middle" fill="#0B5A0B" font-size="14" font-weight="700">Report</text>
+  <text x="956" y="271" text-anchor="middle" fill="#0B5A0B" font-size="14" font-weight="700">the</text>
+  <text x="956" y="294" text-anchor="middle" fill="#0B5A0B" font-size="14" font-weight="700">packet</text>
+</svg>

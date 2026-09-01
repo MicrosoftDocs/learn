@@ -2,11 +2,12 @@
 uid: learn.wwl.design-enterprise-agent-communication-a2a.design-agent-agent-ecosystems-scale
 title: Design A2A agent ecosystems at scale
 metadata:
+  zone_pivot_groups: video-or-text
   title: Design A2A Agent Ecosystems at Scale
   description: "Design A2A agent ecosystems at scale."
-  ms.date: 05/22/2026
-  author: chrishowd
-  ms.author: cahowd
+  ms.date: 7/30/2026
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 9
 content: |

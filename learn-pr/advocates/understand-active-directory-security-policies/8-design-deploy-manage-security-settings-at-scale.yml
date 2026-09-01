@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-security-policies.design-deploy-manage-security-settings-at-scale
+title: Design, deploy, and manage security settings at scale
+metadata:
+  title: Design, Deploy, and Manage Security Settings at Scale
+  description: Target, baseline, test, and operate security settings across many servers by using GPO design, the OSConfig baseline, and validation tools.
+  ms.date: 07/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-design-deploy-manage-security-settings-at-scale.md)]

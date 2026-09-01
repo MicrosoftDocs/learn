@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d6188027-8b8b-42dc-b7c9-e9e0b76c79da]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Event Grid is a fully managed event-routing service that connects event sources to event handlers with low latency and per-event pricing. For AI solutions, Event Grid eliminates the need to poll for state changes by delivering events directly to your application endpoints as those changes occur. This unit introduces the core Event Grid components and explains how event-driven architecture addresses common challenges in AI backends.
 
 ## Understand what Azure Event Grid provides
@@ -83,6 +94,8 @@ For most AI workflows, you use both system topics and custom topics. System topi
 | **Schema** | Predefined by the Azure service | You define the event type and data schema |
 
 In a content moderation platform, you would use a system topic to receive `Microsoft.Storage.BlobCreated` events when users upload content. Your classification service would then consume these events, process the content, and publish a custom event like `com.contoso.ai.ContentClassified` to a custom topic. Downstream services such as the notification service and the analytics dashboard would subscribe to that custom topic independently.
+
+::: zone-end
 
 ## Additional resources
 

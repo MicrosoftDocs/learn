@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.passwordless-authentication.security-keys
+title: Use security keys for passwordless authentication
+metadata:
+  title: Use Security Keys for Passwordless Authentication
+  description: This content is part of the "Replace passwords with secure authentication methods" module.
+  ms.date: 06/25/2026
+  author: sheridan-connor
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-security-keys.md)]

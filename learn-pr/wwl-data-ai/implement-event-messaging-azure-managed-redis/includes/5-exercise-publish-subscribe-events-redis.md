@@ -1,13 +1,13 @@
-In this exercise, you create an Azure Managed Redis resource and complete the code for a console-based publisher and a subscriber app. The publisher app sends event messages to Redis channels, while the subscriber app listens for those messages using a graphical interface built with **tkinter**. You implement core pub/sub patterns including direct channel subscriptions, wildcard pattern matching, message formatting, and background message listening.
+In this exercise, you deploy an Azure Managed Redis resource and complete a Python Flask web app that publishes and subscribes to Redis channels from a single page. You add code to connect to Redis with Microsoft Entra ID, publish event messages, broadcast to every channel, format received messages, listen for messages on a background thread, and subscribe to channels and patterns. You then run the app and watch messages arrive live as you publish them.
 
 Tasks performed in this exercise:
 
 - Download the project starter files
 - Create an Azure Managed Redis resource
-- Add code to complete both the publisher and subscriber apps
-- Run the publisher and subscriber apps to send and receive messages
+- Add code to the starter files to complete the app
+- Run the app to publish and subscribe to messages
 
-This exercise takes approximately **40** minutes to complete.
+This exercise takes approximately **30-40** minutes to complete.
 
 ## Before you start
 

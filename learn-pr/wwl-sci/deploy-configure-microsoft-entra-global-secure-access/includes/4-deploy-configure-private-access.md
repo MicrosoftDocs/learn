@@ -14,9 +14,9 @@ Connectors are lightweight agents that sit on a server in a private network and 
 
 #### Configuring the Windows Server for connectors
 
-The Microsoft Entra private network connector requires a server running Windows Server 2012 R2 or later. You install the private network connector on the server. This connector server needs to connect to the Microsoft Entra Private Access service and application proxy service and the private resources or applications that you plan to publish.
+The Microsoft Entra private network connector requires a server running Windows Server 2016 or later. You install the private network connector on the server. This connector server needs to connect to the Microsoft Entra Private Access service and application proxy service and the private resources or applications that you plan to publish.
 - For high availability in your environment, we recommend having more than one Windows server.
-- The minimum .NET version required for the connector is v4.7.1+.
+- The minimum .NET version required for the connector is v4.7.2+.
 - Require Transport Layer Security (TLS) 1.2 be enabled on Windows Server.
 
 Open ports for **outbound**

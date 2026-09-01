@@ -7,4 +7,4 @@ After completing this module, you'll be able to:
 - Describe the language elements of T-SQL used for simple programming tasks.
 - Describe batches and how they're handled by SQL Server.
 - Declare and assign variables and synonyms.
-- Use IF and WHILE blocks to control program flow.
+- Use `IF` and `WHILE` blocks to control program flow.

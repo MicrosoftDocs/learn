@@ -3,7 +3,7 @@ uid: learn.wwl.queue-process-operations-service-bus
 metadata:
   title: Queue and Process AI Operations with Azure Service Bus
   description: Learn how to use Azure Service Bus to queue, distribute, and reliably process AI workloads using queues, topics, subscriptions, and dead-letter queues.
-  ms.date: 06/26/2025
+  ms.date: 06/15/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

@@ -32,9 +32,9 @@ quiz:
     - content: "The **Pipelines** tab of Azure DevOps."
       isCorrect: false
       explanation: "Incorrect. When all jobs run successfully, no error messages will show."
-    - content: "The **Experiments** tab in Azure Machine Learning."
+    - content: "The **Jobs** tab in Azure Machine Learning."
       isCorrect: true
-      explanation: "Correct. Error messages are stored with the output of an experiment run."
+      explanation: "Correct. Error messages are stored with the output of a job run."
     - content: "The **Models** tab in Azure Machine Learning."
       isCorrect: false
       explanation: "Incorrect. Only trained and registered models are visible in the Models tab."

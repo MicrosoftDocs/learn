@@ -2,11 +2,12 @@
 uid: learn.wwl.write-advanced-sql-code.fuzzy-string-matching
 title: Find approximate matches with fuzzy string functions
 metadata:
-  title: Find approximate matches with fuzzy string functions
+  zone_pivot_groups: video-or-text
+  title: Find Approximate Matches with Fuzzy String Functions
   description: Learn how to use EDIT_DISTANCE, EDIT_DISTANCE_SIMILARITY, and JARO_WINKLER_DISTANCE functions to find approximate string matches in SQL Server.
-  ms.date: 01/28/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/02/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 durationInMinutes: 12
 content: |

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-query-performance-indexes-azure-documentdb.work-multi-key-specialized-index
+title: Work with multi-key and specialized index types
+metadata:
+  title: Work with Multi-key and Specialized Index Types
+  description: "Create multi-key, wildcard, partial, sparse, text, and vector indexes in Azure DocumentDB. Select the right specialized index type for each query pattern."
+  ms.date: 04/17/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-work-multi-key-specialized-index.md)]

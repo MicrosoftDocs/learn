@@ -2,11 +2,12 @@
 uid: learn.wwl.debug-production-multi-agent-incidents-azure.implement-agent-replay-production-debug
 title: Implement agent replay for production debugging
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement Agent Replay for Production Debugging
   description: "Implement agent replay for production debugging."
-  ms.date: 06/05/2026
-  author: chrishowd
-  ms.author: cahowd
+  ms.date: 8/5/2026
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

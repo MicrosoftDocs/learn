@@ -12,13 +12,17 @@ It should be noted that this refers to severe errors, such as hardware or networ
 
 There are different types of transactions:
 
+## Autocommit transactions
+
+Autocommit is the default transaction management mode in SQL Server. Every T-SQL statement is treated as its own transaction: on success it's automatically committed; on failure it's rolled back. You don't need `BEGIN TRANSACTION`, `COMMIT`, or `ROLLBACK` for ad-hoc statements—they're implicit.
+
 ## Explicit transactions
 
-The keywords BEGIN TRANSACTION and either COMMIT or ROLLBACK start and end each batch of statements. This allows you to specify which statements must be either committed or rolled back together.
+The keywords `BEGIN TRANSACTION` and either `COMMIT` or `ROLLBACK` start and end each batch of statements. This allows you to specify which statements must be either committed or rolled back together.
 
 ## Implicit transactions
 
-A transaction is started when the previous transaction has completed. Each transaction is explicitly completed with a COMMIT or ROLLBACK statement.
+Implicit transaction mode is opt-in via `SET IMPLICIT_TRANSACTIONS ON`. When enabled, SQL Server automatically starts a new transaction as soon as the previous one completes—no explicit `BEGIN TRANSACTION` is required, but each transaction must still be explicitly ended with `COMMIT` or `ROLLBACK`. Implicit transaction mode is uncommon in new code and most often shows up when `SET ANSI_DEFAULTS ON` is active.
 
 ## ACID characteristics
 Online Transactional Processing (OLTP) systems require transactions to meet "ACID" characteristics:

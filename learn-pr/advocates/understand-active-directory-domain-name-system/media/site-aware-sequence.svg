@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Site-aware domain controller locator sequence</title>
+  <desc id="desc">Seven ordered stages show an application request, DNS discovery, locator pings, site-specific discovery, domain controller selection, and caching.</desc>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0 0L0 6L9 3z" fill="#243A5E"/>
+    </marker>
+    <style>
+      .request{fill:#eef5ff;stroke:#243A5E;stroke-width:2}
+      .response{fill:#edf8f1;stroke:#006B5A;stroke-width:2}
+      .decision{fill:#fff5df;stroke:#7A3E00;stroke-width:2}
+      .badge{fill:#243A5E}
+      .badgeText{font:700 17px Segoe UI,Arial,sans-serif;fill:#fff;text-anchor:middle}
+      .title{font:700 23px Segoe UI,Arial,sans-serif;fill:#172B4D;text-anchor:middle}
+      .heading{font:700 17px Segoe UI,Arial,sans-serif;fill:#172B4D;text-anchor:middle}
+      .text{font:14px Segoe UI,Arial,sans-serif;fill:#172B4D;text-anchor:middle}
+      .flow{stroke:#243A5E;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+
+  <text x="600" y="44" class="title">Site-aware domain controller locator sequence</text>
+
+  <!-- Step 1 -->
+  <circle cx="215" cy="105" r="23" class="badge"/>
+  <text x="215" y="111" class="badgeText">1</text>
+  <rect x="265" y="70" width="670" height="70" rx="11" class="request"/>
+  <text x="600" y="98" class="heading">Application to local Netlogon</text>
+  <text x="600" y="123" class="text">Request a domain controller by using DsGetDcName.</text>
+
+  <path d="M600 140V165" class="flow"/>
+
+  <!-- Step 2 -->
+  <circle cx="215" cy="200" r="23" class="badge"/>
+  <text x="215" y="206" class="badgeText">2</text>
+  <rect x="265" y="165" width="670" height="70" rx="11" class="request"/>
+  <text x="600" y="193" class="heading">Netlogon to internal DNS</text>
+  <text x="600" y="218" class="text">Query the domain-wide service location record.</text>
+
+  <path d="M600 235V260" class="flow"/>
+
+  <!-- Step 3 -->
+  <circle cx="215" cy="295" r="23" class="badge"/>
+  <text x="215" y="301" class="badgeText">3</text>
+  <rect x="265" y="260" width="670" height="70" rx="11" class="response"/>
+  <text x="600" y="288" class="heading">Internal DNS to Netlogon</text>
+  <text x="600" y="313" class="text">Return BNE-DC1 and PER-DC1 as candidate targets.</text>
+
+  <path d="M600 330V355" class="flow"/>
+
+  <!-- Step 4 -->
+  <circle cx="215" cy="400" r="23" class="badge"/>
+  <text x="215" y="406" class="badgeText">4</text>
+  <rect x="265" y="355" width="670" height="90" rx="11" class="decision"/>
+  <text x="600" y="383" class="heading">Netlogon evaluates candidate domain controllers</text>
+  <text x="600" y="408" class="text">Send LDAP UDP locator pings to the candidates.</text>
+  <text x="600" y="431" class="text">A response identifies the client site as Brisbane.</text>
+
+  <path d="M600 445V470" class="flow"/>
+
+  <!-- Step 5 -->
+  <circle cx="215" cy="505" r="23" class="badge"/>
+  <text x="215" y="511" class="badgeText">5</text>
+  <rect x="265" y="470" width="670" height="70" rx="11" class="request"/>
+  <text x="600" y="498" class="heading">Netlogon to internal DNS</text>
+  <text x="600" y="523" class="text">Query the Brisbane site-specific service location record.</text>
+
+  <path d="M600 540V565" class="flow"/>
+
+  <!-- Step 6 -->
+  <circle cx="215" cy="610" r="23" class="badge"/>
+  <text x="215" y="616" class="badgeText">6</text>
+  <rect x="265" y="565" width="670" height="90" rx="11" class="response"/>
+  <text x="600" y="593" class="heading">BNE-DC1 confirms suitability</text>
+  <text x="600" y="618" class="text">The site-specific query returns BNE-DC1.</text>
+  <text x="600" y="641" class="text">Its locator response includes the required capabilities and CLOSE_SITE.</text>
+
+  <path d="M600 655V680" class="flow"/>
+
+  <!-- Step 7 -->
+  <circle cx="215" cy="725" r="23" class="badge"/>
+  <text x="215" y="731" class="badgeText">7</text>
+  <rect x="265" y="680" width="670" height="90" rx="11" class="response"/>
+  <text x="600" y="708" class="heading">Netlogon returns the selected domain controller</text>
+  <text x="600" y="733" class="text">Return BNE-DC1 to the application.</text>
+  <text x="600" y="756" class="text">Cache the locator result for subsequent requests.</text>
+
+  <rect x="185" y="815" width="830" height="42" rx="8" class="request"/>
+  <text x="600" y="842" class="text">Forced rediscovery bypasses the cached locator result, but it doesn't prove that DNS data is current.</text>
+</svg>

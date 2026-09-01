@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-for-developers.support-cross-platform
+title: Support cross-platform development on Windows
+metadata:
+  title: Support Cross-Platform Development on Windows
+  description: This content is part of the "Streamline development workflows with Windows 11" module.
+  ms.date: 07/20/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit 
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-support-cross-platform.md)]

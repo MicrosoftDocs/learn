@@ -1,7 +1,7 @@
 
 In T-SQL, as with other programming languages, variables are objects that allow temporary storage of a value for later use. You have already encountered variables when you used them to pass parameter values to stored procedures and functions.
 
-In T-SQL, variables must be declared before they can be used. They may be assigned a value, or initialized, when they are declared. Declaring a variable includes providing a name and a data type, as shown below.  To declare a variable, you must use the DECLARE statement.
+In T-SQL, variables must be declared before they can be used. They may be assigned a value, or initialized, when they are declared. Declaring a variable includes providing a name and a data type, as shown below.  To declare a variable, you must use the `DECLARE` statement.
 
 ```sql
 --Declare and initialize the variables.
@@ -17,9 +17,12 @@ Variables must be declared in the same batch in which they're referenced. In oth
 
 Once you've declared a variable, you must initialize it, or assign it a value. You can do that in three ways:
 
-- In SQL Server 2008 or later, you may initialize a variable using the DECLARE statement.
-- In any version of SQL Server, you may assign a single (scalar) value using the SET statement.
-- In any version of SQL Server, you can assign a value to a variable using a SELECT statement. Be sure that the SELECT statement returns exactly one row. An empty result will leave the variable with its original value; more than one result will return the last result. 
+- You can initialize a variable at declaration time using the `DECLARE` statement.
+- You can assign a single (scalar) value using the `SET` statement. `SET` is the preferred approach for assigning scalar variable values.
+- You can assign a value to a variable using a `SELECT` statement. Be sure that the `SELECT` statement returns exactly one row. An empty result leaves the variable with its original value (not `NULL`); more than one result silently returns the last row's value.
+
+> [!TIP]
+> When possible, use `SET` to assign scalar variable values. Reserve `SELECT @var = col FROM ...` for situations where assigning from a query result is intentional and you've confirmed the query returns exactly one row.
 
 The following example shows the three ways of declaring and assigning values to variables:
 
@@ -51,7 +54,7 @@ Synonyms can be used to make a remote object appear local or to provide an alter
 > [!NOTE]
 > You can create a synonym which points to an object that does not yet exist. This is called deferred name resolution. The SQL Server engine will not check for the existence of the actual object until the synonym is used at runtime.
 
-To manage synonyms, use the data definition language (DDL) commands CREATE SYNONYM, ALTER SYNONYM, and DROP SYNONYM, as in the following example:
+To manage synonyms, use the data definition language (DDL) commands `CREATE SYNONYM` and `DROP SYNONYM`. There's no `ALTER SYNONYM` statement in T-SQL; to rename or retarget a synonym you must drop it and recreate it, as in the following example:
 
 ```sql
 CREATE SYNONYM dbo.ProdsByCategory FOR TSQL.Production.ProdsByCategory;

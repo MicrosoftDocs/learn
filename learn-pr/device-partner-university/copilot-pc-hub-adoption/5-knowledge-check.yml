@@ -1,0 +1,87 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-pc-hub-adoption.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Use the Copilot+ PC Hub to get started with Copilot+ PCs" module.
+  ms.date: 06/15/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "A user wants a central place to explore Copilot+ PC features, role-based scenarios, and guided learning resources. Which resource should they use?"
+    choices:
+    - content: "Windows Settings"
+      isCorrect: false
+      explanation: "Incorrect. Windows Settings can help users manage device settings, but it isn't the central destination for exploring Copilot+ PC adoption resources."
+    - content: "File Explorer"
+      isCorrect: false
+      explanation: "Incorrect. File Explorer helps users browse and manage files, but it isn't designed to guide Copilot+ PC feature discovery or adoption."
+    - content: "Copilot+ PC Hub"
+      isCorrect: true
+      explanation: "Correct. The Copilot+ PC Hub provides a central place to explore Copilot+ PC experiences, role-based scenarios, and continued learning resources."
+    - content: "Microsoft Store"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Store is used to browse and install applications, but it isn't designed to guide Copilot+ PC feature exploration."
+
+  - content: "A user wants to find a file but only remembers what the file was about, not the exact file name. Which Copilot+ PC experience would be most helpful in this scenario?"
+    choices:
+    - content: "Windows Studio Effects"
+      isCorrect: false
+      explanation: "Incorrect. Windows Studio Effects helps improve video and meeting experiences, not file discovery."
+    - content: "Live Captions with translation"
+      isCorrect: false
+      explanation: "Incorrect. Live Captions with translation support captions and translation for audio experiences, not file search."
+    - content: "Click to Do"
+      isCorrect: false
+      explanation: "Incorrect. Click to Do helps users take quick actions on content, but it isn't primarily designed for file discovery."
+    - content: "Improved Windows Search"
+      isCorrect: true
+      explanation: "Correct. Improved Windows Search helps users find files and content using natural language descriptions instead of exact file names."
+
+  - content: "A user regularly joins meetings with colleagues who speak different languages and wants help following conversations more easily. Which Copilot+ PC experience is the best fit for this scenario?"
+    choices:
+    - content: "Recall (preview)"
+      isCorrect: false
+      explanation: "Incorrect. Recall (preview) helps users rediscover previously viewed content, but it isn't designed for multilingual meeting support."
+    - content: "Live Captions with translation"
+      isCorrect: true
+      explanation: "Correct. Live Captions with translation can help users follow live or recorded audio with captions and translation support."
+    - content: "Agent in Settings"
+      isCorrect: false
+      explanation: "Incorrect. Agent in Settings helps users locate and manage settings using natural language."
+    - content: "Improved Windows Search"
+      isCorrect: false
+      explanation: "Incorrect. Improved Windows Search helps users find files and content, not translate live conversations."
+
+  - content: "A marketing user wants to revisit a presentation or visual reference they viewed earlier but doesn’t remember where it was saved. Which Copilot+ PC experience should they explore?"
+    choices:
+    - content: "Recall (preview)"
+      isCorrect: true
+      explanation: "Correct. Recall (preview) can help users rediscover previously viewed content using natural language descriptions and visual context."
+    - content: "Windows Studio Effects"
+      isCorrect: false
+      explanation: "Incorrect. Windows Studio Effects supports video and meeting quality, not rediscovering previously viewed content."
+    - content: "Live Captions with translation"
+      isCorrect: false
+      explanation: "Incorrect. Live Captions with translation supports captions and translation for audio experiences."
+    - content: "Click to Do"
+      isCorrect: false
+      explanation: "Incorrect. Click to Do helps users take quick actions on content, but it isn't designed to rediscover previously viewed information."
+
+  - content: "A user wants to continue learning about Copilot+ PC experiences as new capabilities become available over time. What should the user do?"
+    choices:
+    - content: "Continue using the Copilot+ PC Hub as a self-paced learning resource"
+      isCorrect: true
+      explanation: "Correct. The Copilot+ PC Hub supports continued learning by helping users explore feature walkthroughs, role-based scenarios, and updated learning resources over time."
+    - content: "Only use the Copilot+ PC Hub during initial device setup"
+      isCorrect: false
+      explanation: "Incorrect. The Copilot+ PC Hub is designed to support continued exploration and learning."
+    - content: "Focus only on technical deployment documentation"
+      isCorrect: false
+      explanation: "Incorrect. Technical deployment documentation may support IT planning, but this module focuses on feature discovery and everyday workflows."
+    - content: "Wait for new Windows device releases before exploring additional experiences"
+      isCorrect: false
+      explanation: "Incorrect. Users can continue exploring new experiences and updated learning resources over time through the Copilot+ PC Hub."

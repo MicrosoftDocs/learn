@@ -24,10 +24,10 @@ Security alerts are triggered when there's:
 
 - **Uploads of malicious content** - such as potential malware files (based on hash reputation analysis) or hosting of phishing content
 
-Alerts include details of the incident that triggered them, and recommendations on how to investigate and remediate threats. Alerts can be exported to Azure Sentinel or any other third-party SIEM or any other external tool.
+Alerts include details of the incident that triggered them, and recommendations on how to investigate and remediate threats. Alerts can be exported to Microsoft Sentinel or any other third-party SIEM or any other external tool.
 
 ## What is hash reputation analysis for malware?
 
 To determine whether an uploaded file is suspicious, Defender for Storage uses hash reputation analysis supported by Microsoft Threat Intelligence. The threat protection tools don’t scan the uploaded files. Rather they examine the storage logs and compare the hashes of newly uploaded files with the hashes of known viruses, trojans, spyware, and ransomware.
 
-When a file is suspected of containing malware, Security Center displays an alert and can optionally email the storage owner for approval to delete the suspicious file. To set up this automatic removal of files containing malware indicated by hash reputation analysis, deploy a workflow automation to trigger on alerts containing "Potential malware uploaded to a storage account”.
+When a file is suspected of containing malware, Microsoft Defender for Cloud displays an alert and can optionally email the storage owner for approval to delete the suspicious file. To set up this automatic removal of files containing malware indicated by hash reputation analysis, deploy a workflow automation to trigger on alerts containing "Potential malware uploaded to a storage account."

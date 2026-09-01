@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2ca159cf-e74b-4a75-8e60-5259398029af]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Large language models can answer questions, summarize content, and generate text. But they only know what they learned during training. Ask about your company's products, customer orders, or compatible components, and the model has no useful answer. Retrieval Augmented Generation (RAG) solves this problem by giving the model access to your data at query time. Instead of hoping the model knows your product catalog, you retrieve the relevant products from your database and include them in the prompt. The model then generates a response grounded in actual, current information.
 
 RAG keeps AI processing inside the database layer, where your data already lives. This approach avoids moving data between systems and lets you use Transact-SQL to control what context the model receives. The result is an application that can answer specific questions using real, up-to-date information from your tables.
@@ -11,3 +19,8 @@ After completing this module, you'll be able to:
 - Construct prompts that combine instructions with database context.
 - Call LLM endpoints from SQL.
 - Parse LLM responses and return answers to your application.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

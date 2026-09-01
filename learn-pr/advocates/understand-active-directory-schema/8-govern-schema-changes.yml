@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-schema.govern-schema-changes
+title: Govern schema changes
+metadata:
+  title: Govern Schema Changes
+  description: Decide whether to extend the schema and establish ownership, identifiers, security, testing, recovery, and approval controls.
+  ms.date: 07/30/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-govern-schema-changes.md)]

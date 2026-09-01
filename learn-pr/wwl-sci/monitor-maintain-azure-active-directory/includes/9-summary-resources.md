@@ -1,6 +1,6 @@
-Once you have implemented an identity solution in Azure, you have to monitor it. There are several tools from Microsoft Sentinel to log files to support your organization in this process.
+Once you implemented an identity solution in Azure, you have to monitor it. There are several tools from Microsoft Sentinel to log files to support your organization in this process.
 
-Now that you've reviewed this module, you should be able to:
+Now that you reviewed this module, you're able to:
 
  - Analyze and investigate sign-in logs to troubleshoot access issues.
  - Review and monitor Microsoft Entra audit logs.

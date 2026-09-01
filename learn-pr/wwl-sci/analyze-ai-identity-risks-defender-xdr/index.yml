@@ -3,7 +3,7 @@ uid: learn.wwl.analyze-ai-identity-risks-defender-xdr
 metadata:
   title: Analyze AI Identity Risks Using Microsoft Defender XDR
   description: "Discover AI agents in your environment and assess the identity-based risks they present using Microsoft Defender XDR. Identify agent blast radius and analyze attack paths to understand the scope of exposure from a compromised agent identity."
-  ms.date: 04/21/2026
+  ms.date: 08/21/2026
   author: r-c-stewart
   ms.author: roberts
   ms.topic: module

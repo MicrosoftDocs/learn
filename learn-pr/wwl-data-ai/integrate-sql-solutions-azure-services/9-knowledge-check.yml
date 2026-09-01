@@ -3,11 +3,11 @@ uid: learn.wwl.integrate-sql-solutions-azure-services.knowledge-check
 title: Module assessment
 metadata:
   ai_generated_module_assessment: true
-  title: Module assessment
+  title: Module Assessment
   description: Knowledge check for integrating SQL solutions with Azure services using Data API Builder
-  ms.date: 02/05/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 7/14/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
   module_assessment: false
 azureSandbox: false

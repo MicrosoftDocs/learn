@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.site-topology-replication.replication-priority-boost
+title: Diagnose replication failures and apply Replication Priority Boost
+metadata:
+  title: Diagnose replication failures and apply Replication Priority Boost
+  description: Diagnose AD DS replication failures and apply Windows Server 2025 Replication Priority Boost to prioritize specific partners and naming contexts.
+  ms.date: 04/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-replication-priority-boost.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.azure-local-small-form-factor.how-small-form-factor-deployments-work
+title: How small form factor deployments of Azure Local (preview) work
+metadata:
+  title: How Small Form Factor Deployments of Azure Local (Preview) Work
+  description: This content is part of the "Introduction to small form factor deployments of Azure Local (preview)" module.
+  ms.date: 07/09/2026
+  author: sheridan-connor
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-how-small-form-factor-deployments-work.md)]

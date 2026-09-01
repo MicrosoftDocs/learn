@@ -18,4 +18,4 @@ To complete this exercise, you need:
 > [!NOTE]
 > Microsoft Entra ID P2 is required for the Identity Protection MFA registration policy in Task 1. Microsoft Entra ID P1 or P2 is required for the Conditional Access policies in Tasks 2 and 3.
 
-[Launch Lab - Configure MFA and Passkeys](https://github.com/MicrosoftLearning/mslearn-sec-identity/blob/master/Instructions/Labs/01-mfa-ssrp-passkey.md)
+

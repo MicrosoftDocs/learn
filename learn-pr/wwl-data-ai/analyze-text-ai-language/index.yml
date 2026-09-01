@@ -5,9 +5,9 @@ metadata:
   description: Use Azure Language in Foundry Tools to built text analysis solutions.
   author: ivorb
   ms.author: berryivor
-  ms.date: 03/10/2026
+  ms.date: 07/08/2026
   ms.topic: module-standard-task-based
-  ms.service: azure-ai-services
+  ms.service: foundry-tools
   ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot

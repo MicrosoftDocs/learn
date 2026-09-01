@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-azure-netapp-files.diagnose-solve-problems-tool
+title: Troubleshooting Azure NetApp Files using diagnose and solve problems tool
+metadata:
+  title: Troubleshooting Azure NetApp Files Using Diagnose and Solve Problems Tool
+  description: Learn how to use Azure diagnose and solve problems tool to troubleshoot issues of Azure NetApp Files.
+  ms.date: 07/24/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-diagnose-solve-problems-tool.md)]

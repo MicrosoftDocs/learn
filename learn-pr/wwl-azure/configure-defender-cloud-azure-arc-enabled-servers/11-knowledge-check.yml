@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 06/11/2024
+  ms.date: 08/16/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: unit
   ms.custom:
   - N/A
@@ -17,36 +17,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A team is working on securing their cloud servers. They are considering using Microsoft Defender for Endpoint or extended protection with just in time network access, file integrity monitoring, vulnerability assessment, and more. What is this process called?"
+  - content: "An organization needs Microsoft Defender for Endpoint integration and file integrity monitoring for its on-premises Azure Arc-enabled servers. Which Defender for Servers plan should the organization enable?"
     choices:
-    - content: "Defender for Storage"
+    - content: "Defender for Servers Plan 1"
       isCorrect: false
-      explanation: "Incorrect. Defender for Storage is used to protect storage resources, not servers."
-    - content: "Defender for Containers"
-      isCorrect: false
-      explanation: "Incorrect. Defender for Containers is used to secure containers, not servers."
-    - content: "Defender for Servers"
+      explanation: "Incorrect. Plan 1 includes Microsoft Defender for Endpoint integration, but it doesn't include file integrity monitoring."
+    - content: "Defender for Servers Plan 2"
       isCorrect: true
-      explanation: "Correct. Defender for Servers is used to provide server protections."
-  - content: "A team is integrating their on-premises machines with Azure and wants to verify the connection. They sign in to the Azure portal, select Microsoft Defender for Cloud, and view the asset inventory. What should they do next to complete the verification?"
+      explanation: "Correct. Plan 2 includes Microsoft Defender for Endpoint integration and file integrity monitoring for supported Azure Arc-enabled servers."
+    - content: "Foundational CSPM"
+      isCorrect: false
+      explanation: "Incorrect. Foundational CSPM provides posture-management capabilities but doesn't provide Defender for Servers workload protection."
+  - content: "Which Defender for Servers Plan 2 capability doesn't support on-premises Azure Arc-enabled servers?"
     choices:
-    - content: "Filter the page to view irrelevant resource types"
-      isCorrect: false
-      explanation: "Incorrect. Filtering the page to view irrelevant resource types will not help in verifying the connection."
-    - content: "Enable Microsoft Defender XDR"
-      isCorrect: false
-      explanation: "Incorrect. Enabling Microsoft Defender XDR is not necessary for verifying the connection of on-premises machines with Azure."
-    - content: "Filter the page to view the relevant resource types"
+    - content: "Agentless malware scanning"
       isCorrect: true
-      explanation: "Correct. They should filter the page to view the relevant resource types to verify the connection."
-  - content: "A security analyst needs to monitor the security posture of non-Azure machines. They decide to connect these machines to Azure. Which method is recommended for onboarding these machines?"
+      explanation: "Correct. Agentless machine scanning supports Azure VMs and connected AWS and Google Cloud compute instances, but not on-premises Azure Arc-enabled servers."
+    - content: "File integrity monitoring"
+      isCorrect: false
+      explanation: "Incorrect. Plan 2 supports file integrity monitoring on Azure Arc-enabled servers."
+    - content: "Operating-system update assessment"
+      isCorrect: false
+      explanation: "Incorrect. Plan 2 supports operating-system update assessment on Azure Arc-enabled servers."
+  - content: "An administrator needs to verify Azure Arc connectivity and Defender for Servers coverage for an on-premises server. Which two checks provide the most direct evidence?"
     choices:
-    - content: "Using the Azure portal"
-      isCorrect: false
-      explanation: "Incorrect. The Azure portal can be used, but it is not the recommended method for onboarding non-Azure machines."
-    - content: "Onboarding directly with Microsoft Defender for Endpoint"
-      isCorrect: false
-      explanation: "Incorrect. While this is a method, it is not the recommended one for connecting non-Azure machines."
-    - content: "Onboarding with Azure Arc"
+    - content: "Confirm that azcmagent show reports Connected and that the server appears in Defender for Cloud inventory"
       isCorrect: true
-      explanation: "Correct. Azure Arc enabled servers is the recommended method for onboarding non-Azure machines."
+      explanation: "Correct. The local agent status verifies the Azure Arc connection, and the Defender for Cloud inventory verifies that Defender for Cloud recognizes the resource."
+    - content: "Confirm that the server appears in Microsoft Entra ID and that Azure Monitor has a workspace"
+      isCorrect: false
+      explanation: "Incorrect. Neither check directly verifies the Azure Arc connection and Defender for Servers coverage."
+    - content: "Confirm that the administrator has the Owner role and that the server responds to a network ping"
+      isCorrect: false
+      explanation: "Incorrect. The Owner role isn't required for onboarding, and a network ping doesn't verify Azure Arc or Defender for Servers status."

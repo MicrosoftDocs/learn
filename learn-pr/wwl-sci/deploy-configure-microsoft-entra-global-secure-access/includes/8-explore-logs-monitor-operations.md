@@ -45,15 +45,10 @@ The Enriched Office 365 logs provide you with the information you need to gain i
  - Accurate IP address
 
 #### How to view the logs
-Viewing the enriched Microsoft 365 logs is a two-step process. First, you need to enable the log enrichment from Global Secure Access. Second, you need to configure Microsoft Entra diagnostic settings to route the logs to an endpoint, such as a Log Analytics workspace.
+Viewing enriched Microsoft 365 audit logs is a one-time, two-step process. First, collect Global Secure Access Network Traffic logs and Microsoft 365 Unified Audit logs to the same endpoint (Microsoft Sentinel is the recommended workspace). Second, create your own join query to correlate the two tables, or use the out-of-the-box Global Secure Access Enriched Microsoft 365 Logs workbook that already applies the required queries.
 
-#### Enable the log enrichment
-To enable the Enriched Microsoft 365 logs:
-
-1. Sign in to the Microsoft Entra admin center as a Global Administrator.
-1. Browse to Global Secure Access > Global settings > Logging.
-1. Select the type of Microsoft 365 logs you want to enable.
-1. Select Save.
+> [!NOTE]
+> Instead of a separate enriched log stream, use the two existing log tables — Microsoft 365 **OfficeActivity** and Global Secure Access **NetworkAccessTraffic** — and combine the data by using a Unique Token ID. At this time, only SharePoint Online logs are available for log enrichment.
 
 #### Send logs to an endpoint
 
@@ -61,7 +56,7 @@ To enable the Enriched Microsoft 365 logs:
 1. Browse to Identity > Monitoring & health > Diagnostic settings.
 1. Select Add Diagnostic setting.
 1. Give your diagnostic setting a name.
-1. Select EnrichedOffice365AuditLogs.
+1. Select **NetworkAccessTrafficLogs**.
 1. Select the Destination details for where you'd like to send the logs. Choose any or all of the following destinations:
    - Send to Log Analytics workspace.
    - Archive to a storage account.

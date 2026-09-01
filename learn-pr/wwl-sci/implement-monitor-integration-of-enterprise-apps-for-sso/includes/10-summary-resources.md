@@ -1,4 +1,4 @@
-You finished this module, you should be able to:
+After finishing this module, you're able to:
 
 - Implement token customizations
 - Implement and configure consent settings

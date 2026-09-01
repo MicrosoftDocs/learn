@@ -2,11 +2,12 @@
 uid: learn.wwl.build-enterprise-tool-ecosystems-mcp-azure.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Introduction."
-  ms.date: 05/27/2026
-  author: chrishowd
-  ms.author: cahowd
+  ms.date: 7/31/2026
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 2
 content: |

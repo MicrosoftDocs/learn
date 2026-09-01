@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.model-data-relationships-azure-documentdb.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "This unit summarizes the key takeaways from the data relationship modeling module for Azure DocumentDB."
+  ms.date: 04/15/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

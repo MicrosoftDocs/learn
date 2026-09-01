@@ -2,11 +2,11 @@
 uid: learn.wwl.design-implement-sql-solutions-ai-assisted-tools.exercise-design-implement-sql-solutions-ai-assisted-tools
 title: Exercise - Configure AI-assisted tools for database development
 metadata:
-  title: Exercise - Configure AI-assisted tools for database development
+  title: Exercise - Configure AI-assisted Tools for Database Development
   description: Hands-on exercise to create custom GitHub Copilot instruction files and configure MCP server connections in Visual Studio Code.
-  ms.date: 02/03/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/03/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 durationInMinutes: 15
 content: |

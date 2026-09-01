@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-sidecar-azure-app-service.connect-containers-share-files
+title: Connect containers and share files
+metadata:
+  title: Connect Containers and Share Files
+  description: Connect App Service containers through localhost and exchange files through the default shared home volume.
+  ms.date: 08/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-connect-containers-share-files.md)]

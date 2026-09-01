@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-copilot-administer-azure-sql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Knowledge check for using Microsoft Copilot to administer Azure SQL.
+  ms.date: 06/02/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ai-usage: ai-generated
+  module_assessment: true
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "You use Copilot in the Azure SQL Database portal to investigate a performance issue. Copilot suggests that a stored procedure experienced a plan regression at 14:02 UTC yesterday and recommends forcing the previous plan. What should you do next?"
+    choices:
+    - content: "Immediately force the previous plan using Query Store in the portal."
+      isCorrect: false
+      explanation: "Incorrect. Applying the recommendation immediately without validation risks introducing a plan change to production based on a single snapshot. Copilot's suggestion is a starting point, not a confirmed fix."
+    - content: "Validate the recommendation in Query Store in SSMS, confirm the plan regression occurred, check the plan difference, and test the forced plan in a nonproduction environment first."
+      isCorrect: true
+      explanation: "Correct. Copilot identifies candidates and hypotheses; the DBA validates before acting. Always confirm the plan regression in Query Store and test any plan forcing in nonproduction."
+    - content: "Dismiss the recommendation. Copilot portal diagnostics aren't reliable for production databases."
+      isCorrect: false
+      explanation: "Incorrect. Copilot in Azure SQL Database is generally available and reads real diagnostic data from your database. The recommendation is worth investigating, but requires validation before applying."
+  - content: "You ask GitHub Copilot in SSMS to generate a stored procedure. The generated code includes `GRANT EXECUTE ON SCHEMA::dbo TO AppServiceAccount`. What should you do?"
+    choices:
+    - content: "Accept the grant. Schema-level permission is standard practice."
+      isCorrect: false
+      explanation: "Incorrect. Schema-level EXECUTE grants permission on every object in the schema, not just the one procedure. This violates least-privilege principles."
+    - content: "Replace the schema-level grant with an object-level grant on the specific stored procedure."
+      isCorrect: true
+      explanation: "Correct. Least-privilege requires granting the minimum permission scope. Grant EXECUTE on the specific stored procedure, not on the entire schema."
+    - content: "Replace the grant with `db_owner` membership for simplicity."
+      isCorrect: false
+      explanation: "Incorrect. `db_owner` grants far broader permissions than executing a single procedure. This makes the permission scope even wider, not narrower."
+  - content: "You use GitHub Copilot to generate an Azure CLI command to set a long-term retention policy. Before you run the command in production, what is the most important thing to verify?"
+    choices:
+    - content: "The command was generated from a descriptive enough comment."
+      isCorrect: false
+      explanation: "Incorrect. Comment quality affects suggestion quality but isn't the production validation step. The output is what needs to be verified."
+    - content: "The Azure CLI parameter names and syntax match the current CLI release, since Copilot's training data may be behind the current version."
+      isCorrect: true
+      explanation: "Correct. CLI parameter names change between releases. Always verify Copilot-generated CLI commands against `az sql --help` or the current Microsoft documentation before running in production."
+    - content: "You ran the command in production first to verify it works."
+      isCorrect: false
+      explanation: "Incorrect. Testing in production first is a safety anti-pattern. Always validate in a nonproduction environment."

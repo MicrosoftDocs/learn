@@ -4,8 +4,8 @@ Here you'll cover basic T-SQL error handling, including how you can raise errors
 
 After completing this lesson, you'll be able to: 
 
-- Raise errors using the RAISERROR statement.
-- Raise errors using the THROW statement.
-- Use the @@ERROR system variable.
+- Raise errors using the `RAISERROR` statement.
+- Raise errors using the `THROW` statement.
+- Use the `@@ERROR` system variable.
 - Create custom errors.
 - Create alerts that fire when errors occur.

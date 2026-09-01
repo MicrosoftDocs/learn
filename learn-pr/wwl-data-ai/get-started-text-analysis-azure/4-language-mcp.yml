@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to use the Azure Language MCP to connect agents to text analysis capabilities."
   ms.date: 04/10/2026
   author: wwlpublish
-  ms.author: sheryang
+  ms.author: gmalc
   ms.topic: unit
   zone_pivot_groups: video-or-text
 durationInMinutes: 3

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8e89d6e7-4042-4411-9a85-bb8d94d5c3ec]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Data modeling decisions significantly affect vector search performance. How you structure tables, choose data types for metadata, and create supporting indexes determines whether queries execute efficiently as your dataset grows.
 
 > [!NOTE]
@@ -162,6 +173,8 @@ For multitenant applications or product catalogs with natural categories, list o
 Create indexes on the parent table to automatically create matching indexes on all partitions using `CREATE INDEX ON products USING hnsw (embedding vector_cosine_ops);`. Each partition has its own index, which can be built or rebuilt independently. This is valuable for large datasets where rebuilding a single global index would take hours.
 
 Partitioning adds complexity. Queries that span many partitions might be slower than on a single table. Cross-partition unique constraints require the partition key in the constraint. Application logic might need awareness of partition boundaries. Evaluate whether your query patterns align with potential partition keys before implementing partitioning.
+
+::: zone-end
 
 ## Additional resources
 

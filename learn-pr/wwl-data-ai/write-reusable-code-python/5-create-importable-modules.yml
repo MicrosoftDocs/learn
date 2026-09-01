@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-reusable-code-python.create-importable-modules
+title: Create importable modules
+metadata:
+  title: Create Importable Modules
+  description: "Learn how to split your code across multiple files and reuse it by importing your own modules."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-create-importable-modules.md)]

@@ -1,4 +1,4 @@
-Alert settings in a data loss prevention (DLP) policy control how and when security teams are notified about risky activity. The configuration choices determine whether alerts are triggered for every policy match or only when certain thresholds are met. Understanding how to configure alerts and when to use different alert types is key to managing data risk effectively. Licensing also affects which alert options are available. Making the right choices ensures the right people are informed at the right time, without generating unnecessary noise.
+Alert settings in a data loss prevention (DLP) policy control how and when you're notified about risky activity. The configuration determines whether alerts fire for every policy match or only when certain thresholds are met. Licensing affects which options are available, and the wrong threshold can mean either alert fatigue or missed incidents.
 
 ## When do you configure alerts in a DLP policy?
 
@@ -11,7 +11,9 @@ To configure alerts when creating or editing a DLP policy:
 1. Create a new DLP policy or select an existing policy to modify.
 1. **Choose where to apply the policy** in locations such as Exchange, SharePoint, or devices.
 1. Create a new rule or edit an existing rule.
-1. After defining conditions and actions, configure incident reports and alerting behavior:
+1. After defining conditions and actions, configure incident reports and alerting behavior.
+
+   This is where you choose between single-event and aggregate alerts. Use single-event for anything where one match warrants immediate review. Use aggregate when the signal only becomes meaningful at volume.
 
    :::image type="content" source="../media/configure-incident-reports.png" alt-text="Screenshot showing the configuration options for incident reports in a data loss prevention policy." lightbox="../media/configure-incident-reports.png":::
 
@@ -20,10 +22,10 @@ To configure alerts when creating or editing a DLP policy:
 
 ## Types of DLP alerts
 
-There are two types of DLP alerts you can configure in Microsoft Purview:
+DLP alerts in Microsoft Purview come in two types:
 
-- **Single-event alerts** generate an alert every time a policy rule match occurs. These alerts are best for low-volume, high-sensitivity events—like when a user emails a file containing multiple credit card numbers.
-- **Aggregate-event alerts** generate alerts only when a threshold is met, such as 10 matching events within 24 hours. This configuration helps reduce alert fatigue in high-volume environments.
+- **Single-event alerts** generate an alert every time a policy rule match occurs. These alerts are best for low-volume, high-sensitivity events, like a user emailing a file that contains multiple credit card numbers.
+- **Aggregate-event alerts** generate alerts only when a threshold is met, such as 10 matching events within 24 hours. This reduces alert fatigue in high-volume environments.
 
 You can set thresholds by:
 
@@ -37,9 +39,9 @@ To prevent alert overload, policy matches on the same item in the same location 
 What you can configure depends on your Microsoft 365 license:
 
 - **Single-event alerts**: Available with E1, F1, G1, E3, or G3 licenses.
-- **Aggregate-event alerts**: Requires an E5 license or one of the following add-ons for E3/G3:
+- **Aggregate-event alerts**: Requires an E5 or G5 license, or one of the following add-ons for E1/E3/G1/G3:
   - Office 365 Advanced Threat Protection Plan 2
-  - Microsoft 365 E5 Compliance
+  - Microsoft Purview Suite (formerly Microsoft 365 E5 Compliance)
   - Microsoft 365 eDiscovery and Audit add-on
 
 Licensing also affects the aggregation time window:
@@ -70,8 +72,7 @@ Email notifications deliver alerts and also display them in two key locations:
 
 ## How alerts behave after deployment
 
-- Alerts, incident reports, and user notifications only trigger once per document, even if the same content is shared or accessed multiple times.
+- For a given policy match, alert emails, incident reports, and user notifications are sent once per document. If the same document triggers the same rule again within the aggregation window, it's grouped into the existing alert rather than generating a new one.
 - It can take up to 3 hours for a new or updated policy to begin generating alerts.
 - If your tenant uses Endpoint DLP or Teams DLP, alerts from those services also appear in the DLP alerts dashboard.
-
-These behaviors help set expectations for how and when alerts are delivered, so that teams can act confidently on the signals they receive.
+- If your tenant has **user-and-rule-based alert aggregation** enabled (currently in preview), single-event alerts are also grouped by user. When the same person triggers the same rule multiple times within a configurable window of 15 to 60 minutes, those matches are combined into a single alert rather than generating separate ones. This means fewer alerts in the queue, but each alert can contain more events. Confirm whether this is enabled under **Data Loss Prevention** > **Settings** in the Microsoft Purview portal.

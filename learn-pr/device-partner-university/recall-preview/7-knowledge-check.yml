@@ -1,0 +1,102 @@
+### YamlMime:ModuleUnit
+
+uid: learn.dpu.recall-preview.knowledge-check
+
+title: Knowledge check 
+
+metadata: 
+
+  title: Knowledge Check 
+
+  description: Knowledge check for Recall (preview). 
+
+  ms.date: 06/15/2026 
+
+  author: Stephanie-Rosenzweig 
+
+  ms.author: v-stephanier 
+
+  ms.topic: unit 
+
+durationInMinutes: 5 
+
+quiz: 
+
+  title: Check your knowledge 
+
+  questions: 
+
+  - content: "What is the primary purpose of Recall (preview)?"
+    choices:
+    - content: "A. To replace file storage"
+      isCorrect: false
+      explanation: "Incorrect. Recall (preview) doesn’t replace file storage—it helps users find previously viewed content."
+    - content: "B. To capture and search previously viewed content"
+      isCorrect: true
+      explanation: "Correct. Recall (preview) helps users retrace their steps by capturing and searching previously seen content."
+    - content: "C. To organize folders automatically"
+      isCorrect: false
+      explanation: "Incorrect. Recall (preview) doesn’t manage or organize folders."
+    - content: "D. To manage system settings"
+      isCorrect: false
+      explanation: "Incorrect. Recall (preview) isn’t used for system configuration."
+
+  - content: "How do users typically find content with Recall (preview)?"
+    choices:
+    - content: "A. By entering exact file names"
+      isCorrect: false
+      explanation: "Incorrect. Recall (preview) doesn’t require exact file names."
+    - content: "B. By browsing only folders"
+      isCorrect: false
+      explanation: "Incorrect. Recall (preview) isn’t limited to folder navigation."
+    - content: "C. By using natural language descriptions"
+      isCorrect: true
+      explanation: "Correct. Users can describe what they remember to find content."
+    - content: "D. By enabling indexing"
+      isCorrect: false
+      explanation: "Incorrect. Indexing isn’t how Recall (preview) is used directly."
+
+  - content: "Where are Recall (preview) snapshots stored and processed?"
+    choices:
+    - content: "A. In the cloud only"
+      isCorrect: false
+      explanation: "Incorrect. Recall (preview) processes and stores snapshots locally on the device."
+    - content: "B. On external drives"
+      isCorrect: false
+      explanation: "Incorrect. External drives aren’t required."
+    - content: "C. Locally on the device"
+      isCorrect: true
+      explanation: "Correct. Recall (preview) stores and analyzes snapshots on the device."
+    - content: "D. In email attachments"
+      isCorrect: false
+      explanation: "Incorrect. Snapshots aren’t stored in email."
+
+  - content: "When is Recall (preview) most useful?"
+    choices:
+    - content: "A. When managing device drivers"
+      isCorrect: false
+      explanation: "Incorrect. Recall (preview) isn’t used for device management."
+    - content: "B. When installing applications"
+      isCorrect: false
+      explanation: "Incorrect. Installation workflows aren’t related to Recall (preview)."
+    - content: "C. When trying to find something previously seen"
+      isCorrect: true
+      explanation: "Correct. Recall (preview) is designed to help users rediscover previously viewed content."
+    - content: "D. When updating Windows"
+      isCorrect: false
+      explanation: "Incorrect. Updates are handled separately from Recall (preview)."
+
+  - content: "What control options are available with Recall (preview)?"
+    choices:
+    - content: "A. No controls are available"
+      isCorrect: false
+      explanation: "Incorrect. Users can manage what is captured."
+    - content: "B. Users can filter or exclude captured content"
+      isCorrect: true
+      explanation: "Correct. Recall (preview) provides controls to manage captured content."
+    - content: "C. It automatically shares data externally"
+      isCorrect: false
+      explanation: "Incorrect. Recall (preview) doesn’t automatically share data externally."
+    - content: "D. It only captures files"
+      isCorrect: false
+      explanation: "Incorrect. Recall (preview) captures broader on-screen activity, not just files."

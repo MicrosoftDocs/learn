@@ -19,5 +19,5 @@ To deepen your understanding of AI-powered solutions with SQL Server 2025, explo
 - [`VECTOR_DISTANCE (Transact-SQL)`](/sql/t-sql/functions/vector-distance-transact-sql?azure-portal=true)
 - [`VECTOR_SEARCH (Transact-SQL)`](/sql/t-sql/functions/vector-search-transact-sql?azure-portal=true)
 - [Microsoft Fabric mirroring for SQL Server](/fabric/database/mirrored-database/overview?azure-portal=true)
-- [Azure OpenAI Service documentation](/azure/ai-services/openai/?azure-portal=true)
+- [Azure OpenAI documentation](/azure/ai-foundry/openai/?azure-portal=true)
 

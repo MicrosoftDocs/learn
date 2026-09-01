@@ -4,9 +4,9 @@ title: 'Exercise: Implement error handling with Transact-SQL'
 metadata:
   title: 'Exercise: Implement error handling with Transact-SQL'
   description: "Exercise: Implement error handling with Transact-SQL"
-  ms.date: 10/23/2024
-  author: wwlpublish
-  ms.author: rcaper
+  ms.date: 08/11/2026
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
   zone_pivot_groups: sql-database
 durationInMinutes: 30

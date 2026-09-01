@@ -4,8 +4,8 @@ metadata:
   title: Perform Code Maintenance Tasks using GitHub Copilot Agent
   description: Learn how to accelerate common code maintenance tasks using GitHub Copilot Agent. This training covers how to resolve issues quickly and accurately by using GitHub Copilot Agent to refactor code in a Visual Studio Code environment.
   ms.date: 03/05/2026
-  author: chrishowd
-  ms.author: cahowd
+  author: buzahid
+  ms.author: buzahid
   ms.topic: learning-path
 title: Perform code maintenance tasks using GitHub Copilot Agent
 prerequisites: |

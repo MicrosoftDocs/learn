@@ -26,7 +26,7 @@ Before you deploy an HPC cluster, you should first ensure that you have sufficie
 
 1. On the **cyclecloud-rg-vnet \| Subnets** pane, select **+ Subnet**.
 
-1. On the **Add subnet** pane, in the **Name** text box, enter **contoso-slurm-lab-cluster-subnet**, accept the default subnet range, and select **Save**.
+1. On the **Add subnet** pane, in the **Name** text box, enter **contoso-slurm-lab-cluster-subnet**, accept the default subnet range, and select **Add**.
 
     > [!NOTE]
     > We recommend separating the subnet hosting the CycleCloud Azure VM from the subnets hosting cluster compute resources. For larger clusters, you should allocate sufficiently-sized IP address ranges.
@@ -74,25 +74,23 @@ Now you have the CycleCloud web application installed in an Azure VM, enough vCP
 
     | Setting | Value |
     | --- | --- |
-    | Max HPC Cores | Enter **100** |
-    | Max HTC Cores | Enter **100** |
-    | Max VMs per Scaleset | Enter **40** |
+    | Max HPC Nodes | Enter **100** |
+    | Max HTC Nodes | Enter **100** |
+    | Max VMs per VMSS | Enter **40** |
     | Subnet ID | Select **cyclecloud-rg: cyclecloud-rg-vnet-contoso-slurm-lab-cluster-subnet** |
 
     :::image type="content" source="../media/u5-cyclecloud-create-new-cluster-required-settings.png" alt-text="Screenshot that shows the Required Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
 
     > [!NOTE]
-    > The **Max VMs per Scaleset** setting limits the maximum size of a Message Passing Interface job that can run on the cluster, since the scaleset is currently the InfiniBand fabric boundary.
+    > The **Max VMs per VMSS** setting limits the maximum size of a Message Passing Interface job that can run on the cluster, since the VMSS is currently the InfiniBand fabric boundary.
 
-1. On the **Network Attached Storage** tab of the **New Slurm Cluster** page, verify that the **NFS Type** is set to **Builtin**. Accept the default value of **Size (GB)** set to **100**, and select **Next**.
+1. On the **Network Attached Storage** tab of the **New Slurm Cluster** page, verify that the **Use Builtin NFS** checkboxes are selected for both **File-system Mount for /sched** and **File-system Mount for /shared**. Accept the default values of **Size (GB)** set to **30** and **100**, respectively, and select **Next**.
 
     :::image type="content" source="../media/u5-cyclecloud-create-new-cluster-network-attached-storage.png" alt-text="Screenshot that shows the Network Attached Storage tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
 
-1. On the **Advanced Settings** tab of the **New Slurm Cluster** page, review the available options without making any changes, and then select **Next**.
+1. On the remaining tabs of the **New Slurm Cluster** page, review the available options without making any changes, and then select **Save** once you're done.
 
     :::image type="content" source="../media/u5-cyclecloud-create-new-cluster-advanced-settings.png" alt-text="Screenshot that shows the Advanced Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." border="false":::
-
-1. On the **Cloud-init** tab of the **New Slurm Cluster** page, review the available options without making any changes, and then select **Save**.
 
 ## Task 3: Configure and start an HPC cluster by using Azure CycleCloud
 

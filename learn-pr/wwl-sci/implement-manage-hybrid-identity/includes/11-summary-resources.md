@@ -1,4 +1,4 @@
-Now that you've reviewed this module, you should be able to:
+Now that you reviewed this module, you're able to:
 
 - Plan, design, and implement Microsoft Entra Directory Connect (AADC), including password hash synchronization (PHS), pass-through authentication (PTA), seamless single-sign-on (Seamless SSO), and federation
 - Manage Microsoft Entra Directory Connect (AADC)

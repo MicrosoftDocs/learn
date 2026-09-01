@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ebcddd9c-47cb-42de-ab51-31fad49be8b4]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Large Language Models (LLM) don't know your organization. Your products, customers, policies. None of that exists in their training data. When a customer asks "Which pedals fit the mountain bike I bought last month?", the model can only guess.
 
 Retrieval Augmented Generation (RAG) fixes this issue by feeding the model your data when it needs to answer. You retrieve information from your database, add it to the prompt, and let the model respond based on what you provided. The model doesn't need to "know" your catalog because you give it what it needs for each question.
@@ -10,7 +21,7 @@ RAG combines three steps. First, retrieve relevant data from your database. For 
 
 The following diagram shows a RAG architecture with SQL Database. A natural language chat sends a prompt to a RAG orchestration layer, which runs similarity and hybrid searches against the database. The database exchanges vectors and embeddings with an embedding model. The orchestration layer forwards the prompt plus search results to a language model, which returns a grounded response.
 
-![Diagram showing a RAG flow where a chat prompt passes through an orchestration layer that searches a database, retrieves vectors, and calls a language model.](../media/rag-sql-architecture.png)
+:::image type="content" source="../media/rag-sql-architecture.png" alt-text="Diagram showing a RAG flow where a chat prompt passes through an orchestration layer." lightbox="../media/rag-sql-architecture.png":::
 
 This approach differs from fine-tuning, which retrains a model on your data. Fine-tuning bakes knowledge in permanently. RAG keeps data in your database and supplies only what each request needs. When specs change or new components arrive, answers reflect those changes immediately.
 
@@ -28,7 +39,7 @@ RAG applies wherever users need answers that depend on your specific data. Here 
 
 - **Customer support**: A customer asks "Can I return the bike I ordered three weeks ago?" The system retrieves their order history, checks your return policy, and generates an answer that cites the specific order and applicable policy terms.
 
-- **Product configuration**: A shopper says "Build me a complete mountain biking setup under $2,000." RAG retrieves compatible frames, components, and accessories from your catalog, checks current inventory and pricing, and assembles a configuration that meets the budget.
+- **Product configuration**: A shopper says "Build me a complete mountain biking setup under 2,000." RAG retrieves compatible frames, components, and accessories from your catalog, checks current inventory and pricing, and assembles a configuration that meets the budget.
 
 - **Internal knowledge base**: An employee needs the expense reimbursement process for international travel. RAG searches policy documents stored in your database and summarizes the relevant steps with links to forms.
 
@@ -50,3 +61,5 @@ The LLM runs elsewhere, for example Azure OpenAI. Your T-SQL orchestrates the fl
 ## Key takeaways
 
 RAG grounds model responses in your database by combining retrieval, augmentation, and generation. It fits when data changes often, when you need traceable answers, or when privacy requires keeping data in your control. SQL handles retrieval and orchestration; the model handles generation. Next, you prepare context as JSON, construct prompts, and call LLM endpoints.
+
+::: zone-end

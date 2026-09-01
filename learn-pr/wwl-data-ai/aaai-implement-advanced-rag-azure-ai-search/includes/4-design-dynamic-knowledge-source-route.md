@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6ce583e3-8e43-409b-b62e-8672f18aef8a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Not every clinical query needs to search every knowledge base. Azure AI Search supports separate indexes for different content types, and querying only the relevant ones reduces both computational cost and result noise. Intent-based routing automates this decision by classifying what the query is seeking before any search runs.
 
 Northwind Health maintains three specialized knowledge bases: a drug formulary with medication details and pricing, clinical practice guidelines from medical societies, and laboratory reference ranges with test interpretation guidance. When a clinician asks "What is the normal range for hemoglobin A1c in diabetic patients?" searching all three indexes wastes computational resources and risks surfacing less relevant content from the formulary or clinical guidelines. Intent-based routing directs each query to only the knowledge sources likely to contain the answer.
@@ -202,3 +213,5 @@ Routing controls where searches run. What you can retrieve still depends on what
 - **Parallel conditional execution** searches multiple selected sources concurrently with score normalization and cross-source reranking to produce a unified result ranking
 - **Dynamic source availability** separates classification intent from execution capability—the classifier indicates relevance while health checks determine which sources can actually be queried
 - **Routing telemetry** captures confidence scores, sources searched, and result counts per query, enabling continuous classifier improvement and cost-savings measurement
+
+::: zone-end

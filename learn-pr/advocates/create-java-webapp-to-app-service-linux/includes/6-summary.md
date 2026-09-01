@@ -14,7 +14,7 @@ az group delete --name <your-resource-group> --yes --no-wait
 
 * [Azure App Service](/azure/app-service/)
 * [Quickstart: Create a Java app on Azure App Service](/azure/app-service/quickstart-java).
-* [Deploy Java Tomcat apps to Azure App Service](/azure/developer/java/ee/tomcat-on-app-service).
+* [Deploy Java Tomcat apps to Azure App Service](/azure/developer/java/identity/deploy-tomcat-to-app-service).
 * [Configure a Java app for Azure App Service](/azure/app-service/configure-language-java-deploy-run).
 * [Get started with autoscale in Azure](/azure/azure-monitor/autoscale/autoscale-get-started).
 * [Deploy to App Service using GitHub Actions](/azure/app-service/deploy-github-actions?tabs=userlevel).

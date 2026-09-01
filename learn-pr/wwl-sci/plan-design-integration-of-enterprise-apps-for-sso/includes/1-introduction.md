@@ -2,7 +2,7 @@ In this module, you discover apps used within your environment. Then, you design
 
 ## Learning objectives
 
-In this module, you'll:
+In this module, you:
 
 - Discover apps by using Defender for Cloud Apps app discovery.
 - Design and implement access management for apps.
@@ -13,4 +13,4 @@ In this module, you'll:
 ## Prerequisites
 
 - Solid usage experience of admin centers within the Microsoft Cloud.
-- Experience with using application in the cloud
+- Experience with using applications in the cloud

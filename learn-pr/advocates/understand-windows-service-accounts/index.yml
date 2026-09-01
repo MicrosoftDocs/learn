@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.devrel.understand-windows-server-service-accounts
+metadata:
+  title: Understand Windows Server service accounts
+  description: Describe the purpose and common problems of Windows Server service accounts, and select and configure the correct local or managed account type, including the Windows Server 2025 delegated Managed Service Account (dMSA).
+  ms.date: 07/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+title: Understand Windows Server service accounts
+summary: Service accounts provide the security context that Windows services, scheduled tasks, and applications use to reach local and network resources. Learn what service accounts are, the problems they cause, and how to choose and configure the correct local or managed account type on Windows Server 2025.
+abstract: |
+  By the end of this module, you're able to:
+  - Describe the purpose of Windows Server service accounts and the common problems associated with them.
+  - Identify and configure the local service account types.
+  - Compare the managed service account types (sMSA, gMSA, and dMSA) and select the correct one for a workload.
+prerequisites: |
+  - Experience administering Windows Server 2025 and Active Directory Domain Services (AD DS).
+  - Familiarity with Windows security principals, security identifiers (SIDs), and access tokens.
+  - Working knowledge of Kerberos authentication and service principal names (SPNs).
+  - Access to a Windows Server 2025 AD DS environment and Windows PowerShell for the procedures.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+products:
+- windows-server
+subjects:
+- identity-access
+- security
+units:
+- learn.devrel.understand-windows-server-service-accounts.introduction
+- learn.devrel.understand-windows-server-service-accounts.understand-local-service-account-types
+- learn.devrel.understand-windows-server-service-accounts.understand-managed-service-account-types
+- learn.devrel.understand-windows-server-service-accounts.service-account-best-practices
+- learn.devrel.understand-windows-server-service-accounts.knowledge-check
+- learn.devrel.understand-windows-server-service-accounts.summary
+badge:
+  uid: learn.devrel.understand-windows-server-service-accounts.badge

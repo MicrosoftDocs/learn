@@ -3,7 +3,7 @@ uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines
 metadata:
   title: Migrate SQL Server workloads to Azure Virtual Machine
   description: "Discover the tools and features available to migrate SQL workloads from on-premises to Azure Virtual Machines (VMs)."
-  ms.date: 08/26/2025
+  ms.date: 07/23/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-extend-ai-agents.choose-development-approach
+title: Choose a development approach
+metadata:
+  title: Choose a development approach
+  description: "Compare the Foundry portal, Visual Studio Code, and code-first approaches to building agents."
+  ms.date: 08/21/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-choose-development-approach.md)]

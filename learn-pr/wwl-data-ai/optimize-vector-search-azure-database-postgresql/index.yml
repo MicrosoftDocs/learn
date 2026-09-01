@@ -3,7 +3,7 @@ uid: learn.wwl.optimize-vector-search-azure-database-postgresql
 metadata:
   title: Optimize Vector Search in Azure Database for PostgreSQL
   description: Tune pgvector configuration, select vector indexes, design efficient data layouts, and scale Azure Database for PostgreSQL for high-performance AI workloads.
-  ms.date: 01/26/2026
+  ms.date: 06/15/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

@@ -28,16 +28,16 @@ A pull request review model makes this explicit: the system can propose, but hum
 
 Early-stage agent systems commonly fail in predictable ways:
 
-- Planless execution
+- Planless execution:
  The agent begins changing code without a clear, inspectable approach.
 
-- Over-permissioned agents
+- Over-permissioned agents:
  The agent (or its workflow token/tooling credentials) has broader access than necessary.
 
-- Hidden reasoning
+- Hidden reasoning:
  The workflow exposes only outputs (the diff) without intermediate artifacts (plan, assumptions, decision points, execution context).
 
-- Blind trust in automation
+- Blind trust in automation:
  Passing CI matters, but checks only validate what they're designed to detect. A passing build does not automatically mean the change is complete, appropriate, or low risk.
 
 ### Implementation mapping: risk → GitHub mitigation

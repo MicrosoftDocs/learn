@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb.identify-unnecessary-indexes-over-normalization
+title: Identify unnecessary indexes and over-normalization
+metadata:
+  title: Identify Unnecessary Indexes and Over-Normalization
+  description: "Recognize the unnecessary indexes and over-normalization anti-patterns in Azure DocumentDB and apply fixes using the ESR rule, partial indexes, and denormalization."
+  ms.date: 04/16/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-identify-unnecessary-indexes-over-normalization.md)]

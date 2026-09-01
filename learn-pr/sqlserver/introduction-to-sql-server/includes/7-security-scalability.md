@@ -6,7 +6,7 @@ SQL Server 2025 provides security features for data protection, identity managem
 
 ## Implement encryption and password protection
 
-[SQL Server encryption](/sql/relational-databases/security/encryption/sql-server-encryption) now includes support for OAEP (Optimal Asymmetric Encryption Padding) is now available, providing stronger encryption for sensitive data and aligning with modern cryptographic standards. SQL Server 2025 also introduces PBKDF (Password-Based Key Derivation Function) password hashing, which makes stored passwords more resistant to brute-force and dictionary attacks by using advanced hashing algorithms and configurable iteration counts.
+[SQL Server encryption](/sql/relational-databases/security/encryption/sql-server-encryption) now includes support for OAEP (Optimal Asymmetric Encryption Padding) is now available, providing stronger encryption for sensitive data and aligning with modern cryptographic standards. SQL Server 2025 also introduces PBKDF2 (Password-Based Key Derivation Function 2) password hashing, which makes stored passwords more resistant to brute-force and dictionary attacks by using advanced hashing algorithms and configurable iteration counts, in compliance with NIST SP 800-63b.
 
 ## Use managed identities
 

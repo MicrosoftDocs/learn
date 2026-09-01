@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.integrate-sql-solutions-azure-services.create-configuration-files-data-api-builder
-title: Create configuration files for Data API Builder
+title: Create configuration files for data API builder
 metadata:
-  title: Create configuration files for Data API Builder
+  zone_pivot_groups: video-or-text
+  title: Create Configuration Files for Data API Builder
   description: Learn how to create and configure Data API Builder configuration files for SQL database integration with REST and GraphQL endpoints.
-  ms.date: 02/05/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 7/14/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 durationInMinutes: 10
 content: |

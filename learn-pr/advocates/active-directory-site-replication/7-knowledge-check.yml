@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.site-topology-replication.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding of Active Directory site topology design, replication metadata, and Windows Server 2025 replication and DC Locator behavior.
+  ms.date: 04/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "You're performing an over-the-wire promotion of a new Windows Server 2025 domain controller and want the destination DC to converge the domain naming context from one specific partner ahead of its peers. How do you apply Replication Priority Boost?"
+    choices:
+    - content: "On the destination DC, write the `setPriorityBoost` RootDSE modifier using the form `<naming context>:<partner DC GUID>:<boost factor>`."
+      isCorrect: true
+      explanation: "Correct. Replication Priority Boost is applied on the Windows Server 2025 destination DC as a RootDSE modifier and read back through the `msDS-PriorityBoost` attribute."
+    - content: "On the source DC, lower the site link cost so the partner becomes the least-cost route."
+      isCorrect: false
+      explanation: "Incorrect. Site link cost shapes the replication topology, not the per-partner priority queue, and the boost is set on the destination DC rather than the source."
+    - content: "Raise the forest functional level to Windows Server 2025 to unlock per-partner priority."
+      isCorrect: false
+      explanation: "Incorrect. Replication Priority Boost has no special functional level requirement; only the destination DC needs to run Windows Server 2025."
+  - content: "After you deploy Windows Server 2025 domain controllers, a legacy application that located DCs through NetBIOS mailslot broadcasts can no longer find one. What is the most likely cause?"
+    choices:
+    - content: "The `BlockNetBIOSDiscovery` policy is enabled by default, so DC Locator uses DNS-based discovery only, with no NetBIOS fallback."
+      isCorrect: true
+      explanation: "Correct. Windows Server 2025 blocks NetBIOS-based discovery by default, so clients must locate DCs through DNS SRV records."
+    - content: "The application's subnet was added to the wrong site link."
+      isCorrect: false
+      explanation: "Incorrect. Site link membership affects replication routing between sites, not whether NetBIOS-based discovery is available to a client."
+    - content: "The configuration naming context hasn't replicated the application's connection object yet."
+      isCorrect: false
+      explanation: "Incorrect. Connection objects govern DC-to-DC replication, not how a client application locates a domain controller."
+  - content: "A destination DC sends its up-to-dateness vector (UTDVEC) to a source DC at the start of a replication cycle. What does the source DC use it for?"
+    choices:
+    - content: "To skip changes the destination has already received by another replication path, providing propagation dampening."
+      isCorrect: true
+      explanation: "Correct. The UTDVEC records the highest originating USN seen from each originating DSA by any path, letting the source avoid resending changes the destination already has."
+    - content: "To resume from the highest USN the destination previously received from that one source partner."
+      isCorrect: false
+      explanation: "Incorrect. That is the role of the high-watermark vector, which is per-source-partner bookkeeping rather than forest-wide dampening."
+    - content: "To decide whether to compress the replication payload for the WAN."
+      isCorrect: false
+      explanation: "Incorrect. Compression is a transport behavior tied to inter-site replication, not a function of the up-to-dateness vector."
+  - content: "With Bridge All Site Links enabled, how does the KCC combine site link properties along the transitive path NewYork to Chicago to Denver?"
+    choices:
+    - content: "Costs are added, the replication interval is the maximum of the links, and options are combined with a bitwise AND."
+      isCorrect: true
+      explanation: "Correct. Cost accrues along the path, the slowest interval governs, and a behavior such as inter-site change notification applies only if every link on the path enables it."
+    - content: "Costs are averaged, the interval is the minimum, and the schedule is the union of the link schedules."
+      isCorrect: false
+      explanation: "Incorrect. Costs are added rather than averaged, the maximum interval applies, and the usable schedule is the overlap of the link schedules, not their union."
+    - content: "Only the properties of the highest-cost link apply end to end."
+      isCorrect: false
+      explanation: "Incorrect. Every link on the path contributes to the combined properties; a single link's values don't override the rest."
+  - content: "A domain controller is brought back online after being disconnected for longer than the tombstone lifetime. Why can this reintroduce lingering objects?"
+    choices:
+    - content: "It still holds objects that were deleted and garbage-collected on other DCs, and its metadata predates the partners' up-to-dateness vectors."
+      isCorrect: true
+      explanation: "Correct. The DC never received the deletions, so it reintroduces objects the rest of the forest already removed. They're detected because their originating metadata is older than the partners' UTDVEC."
+    - content: "Its invocation ID was reset, so partners ignore all of its updates."
+      isCorrect: false
+      explanation: "Incorrect. An invocation ID reset is USN-rollback protection after a restore; it doesn't create lingering objects."
+    - content: "The KCC rebuilds every connection object, which duplicates the domain naming context."
+      isCorrect: false
+      explanation: "Incorrect. The KCC recalculating connections doesn't duplicate objects; lingering objects come from deletions the offline DC never received."

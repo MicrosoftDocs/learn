@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.create-analyze-surface.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Create, communicate, and analyze with Surface and Microsoft 365" module.
+  ms.date: 07/29/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How do Surface devices and Microsoft 365 work together to support everyday productivity workflows?"
+    choices:
+        - content: "Surface replaces the need for Microsoft 365 apps by providing built-in tools for presentations, email, and data analysis."
+          isCorrect: false
+          explanation: "Incorrect. The module explains that Microsoft 365 provides apps and services such as Outlook, Excel, Word, PowerPoint, Teams, OneDrive, and Copilot, while Surface provides device capabilities that complement those experiences."
+        - content: "Surface provides hardware capabilities such as touch, pen input, microphones, displays, and adaptable form factors that complement Microsoft 365 apps and services."
+          isCorrect: true
+          explanation: "Correct. The module describes Surface hardware features such as touch, pen input, Studio Microphones, PixelSense displays, and adaptable form factors as capabilities that make Microsoft 365 experiences feel more natural and flexible."
+        - content: "Microsoft 365 improves Surface performance by automatically upgrading device hardware features."
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't state that Microsoft 365 upgrades Surface hardware. Instead, it explains that Microsoft 365 software and Surface hardware complement each other."
+        - content: "Surface devices are mainly used to store Microsoft 365 files offline without supporting collaboration."
+          isCorrect: false
+          explanation: "Incorrect. The module states that Microsoft 365 supports secure access, file sharing, and collaboration so work can continue across locations and devices."
+  - content: "In the PowerPoint scenario, which Surface feature is used to annotate and refine slide content while working with Copilot?"
+    choices:
+        - content: "OneDrive file sharing"
+          isCorrect: false
+          explanation: "Incorrect. OneDrive supports file sharing and collaboration but isn't the feature used to annotate PowerPoint slides."
+        - content: "Outlook Summary by Copilot"
+          isCorrect: false
+          explanation: "Incorrect. Summary by Copilot is an Outlook feature used for email threads, not slide annotation."
+        - content: "Excel PivotTables"
+          isCorrect: false
+          explanation: "Incorrect. PivotTables are discussed in the Excel scenario rather than the PowerPoint scenario."
+        - content: "Surface Slim Pen 2nd Edition"
+          isCorrect: true
+          explanation: "Correct. The module explains that Surface Slim Pen 2nd Edition can be used to highlight content and work with Copilot to refine slide text for clarity, tone, or conciseness."
+  - content: "What is a best practice for using Copilot in Excel according to the module?"
+    choices:
+        - content: "Format the data as a table before using Copilot in Excel."
+          isCorrect: true
+          explanation: "Correct. The module states that formatting data as a table is a best practice because Copilot in Excel relies on structured, tabular data."
+        - content: "Avoid asking follow-up questions after Copilot identifies a trend."
+          isCorrect: false
+          explanation: "Incorrect. The module encourages users to ask follow-up questions to gain deeper insights into the data."
+        - content: "Manually build formulas and charts before asking Copilot questions."
+          isCorrect: false
+          explanation: "Incorrect. The module explains that users can ask plain-language questions and generate insights without writing formulas."
+        - content: "Use Copilot only to draft email replies before analyzing workbook data."
+          isCorrect: false
+          explanation: "Incorrect. Drafting email replies is part of the Outlook scenario, not a requirement for Excel analysis."

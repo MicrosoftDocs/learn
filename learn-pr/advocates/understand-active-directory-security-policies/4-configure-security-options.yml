@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-security-policies.configure-security-options
+title: Configure security options
+metadata:
+  title: Configure Security Options
+  description: Understand the Security Options settings and configure the highest-impact authentication and hardening controls on Windows Server 2025.
+  ms.date: 07/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 18
+content: |
+  [!include[](includes/4-configure-security-options.md)]

@@ -1,13 +1,17 @@
-You can use the Azure Machine Learning CLI (v2) to deploy trained machine learning models automatically as part of machine learning operations (MLOps).
+Deploying a trained machine learning model is only the midpoint of the model's life cycle. After deployment, you still need to promote a model safely and keep watching how it behaves in production. This module walks through that path, from registering a trained model to monitoring it after it serves live traffic.
 
-The data science team you work with has trained a classification model that is able to predict whether someone has diabetes, based on some medical information. Your work as a machine learning engineer, is to establish a process that can automatically deploy the trained model to production.
+At Proseware, Inc., a health care technology company, you work with a data science team that trains a classification model to predict whether a patient is likely to miss an upcoming clinic appointment. Clinic staff want to use these no-show risk scores to decide who to call ahead of time and confirm, reducing wasted appointment slots. Your job as the machine learning engineer is to take the trained model from the data science team and get it running reliably in production, with a repeatable, automated process the team can trust as the model evolves.
 
-Using the Azure Machine Learning CLI (v2), you want to set up an automated workflow that will be triggered when a new model is registered. Once the workflow is triggered, the new registered model will be deployed to the production environment. 
+In this module, you explore how to register and manage MLflow model versions in Azure Machine Learning. You deploy and troubleshoot a managed online endpoint, then safely promote or roll back a model version. You use GitHub environments to protect production promotion and GitHub Actions to automate deployment. You also explore how monitoring signals guide investigation and retraining.
+
+By the end of this module, you're able to take an MLflow model from registration through automated deployment and ongoing monitoring in Azure Machine Learning.
 
 ## Learning objectives
 
-In this module, you'll learn how to:
+In this module, you learn how to:
 
-- Deploy a model to a managed endpoint.
-- Trigger model deployment with GitHub Actions.
-- Test the deployed model.
+- Register, version, and archive MLflow models throughout their lifecycle.
+- Use GitHub environments to control access and require approval before production promotion.
+- Deploy and troubleshoot a managed online endpoint, safely promote a model, and roll back to a previous version.
+- Automate model deployment and testing with GitHub Actions.
+- Monitor a deployed model and recognize signals that call for investigation or retraining.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-domain-name-system.interpret-domain-name-system-records
+title: Interpret Domain Name System records
+metadata:
+  title: Interpret Domain Name System Records
+  description: Interpret directory zones, locator records, authority records, and registration ownership.
+  ms.date: 08/03/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-interpret-domain-name-system-records.md)]

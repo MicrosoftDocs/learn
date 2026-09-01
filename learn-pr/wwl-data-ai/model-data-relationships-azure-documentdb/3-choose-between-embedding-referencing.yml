@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.model-data-relationships-azure-documentdb.choose-between-embedding-referencing
+title: Choose between embedding and referencing
+metadata:
+  title: Choose Between Embedding and Referencing
+  description: "Apply the embed-vs-reference decision framework to determine whether to store related data inside a document or in a separate collection in Azure DocumentDB."
+  ms.date: 04/15/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-choose-between-embedding-referencing.md)]

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.dpu.microsoft-adaptive-accessories
+title: Configure Microsoft Adaptive Accessories for accessible productivity
+metadata:
+  title: Configure Microsoft Adaptive Accessories for accessible productivity
+  description: "In this module, you'll learn how to configure Microsoft Adaptive Accessories for accessible productivity."
+  ms.date: 08/27/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  In this module, you'll learn how to configure Microsoft Adaptive Accessories for accessible productivity.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Identify the Microsoft Adaptive Accessories that can help improve accessibility and productivity for people with disabilities.
+  - Explain how to configure Microsoft Adaptive Accessories for accessible productivity.
+  - Demonstrate how to use Microsoft Adaptive Accessories to improve productivity and collaboration for all employees.
+  - Identify the benefits of using Microsoft Adaptive Accessories for both employees and organizations.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/microsoft-adaptive-accessories-update-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.microsoft-adaptive-accessories.introduction
+  - learn.dpu.microsoft-adaptive-accessories.microsoft-adaptive-accessories
+  - learn.dpu.microsoft-adaptive-accessories.surface-adaptive-kit
+  - learn.dpu.microsoft-adaptive-accessories.module-assessment
+  - learn.dpu.microsoft-adaptive-accessories.summary
+badge:
+  uid: learn.dpu.microsoft-adaptive-accessories.badge

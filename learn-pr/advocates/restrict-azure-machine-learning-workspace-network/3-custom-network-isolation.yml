@@ -4,7 +4,7 @@ title: Custom network isolation
 metadata:
   title: Custom network isolation
   description: Learn how to isolate Azure Machine Learning workspaces in custom virtual networks.
-  ms.date: 06/20/2025
+  ms.date: 07/25/2026
   author: Orin-Thomas
   ms.author: viniap
   ms.topic: unit

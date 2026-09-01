@@ -1,6 +1,19 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=36f9a22a-ff40-40e2-8a1f-40a9d971ab31]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this module, you learned how to use Azure Database for PostgreSQL as a data foundation for AI applications. You explored the service architecture, including compute tiers, high availability options, and managed capabilities such as automated backups, PgBouncer connection pooling, and server extensions. You established secure connections using Microsoft Entra authentication with DefaultAzureCredential and configured TLS encryption for data in transit. You designed database schemas with tables, constraints, and data types suited for AI workloads, including JSONB for flexible structured data and appropriate indexes for query performance.
 
 You also learned SQL techniques for querying and manipulating data, including filtering with WHERE clauses and JSONB operators, joining tables, using aggregation with GROUP BY, and building reusable queries with Common Table Expressions. You integrated PostgreSQL into Python applications using the psycopg library, implementing parameterized queries, connection management, and error handling. Finally, you built a practical AI agent tool backend that persists conversation history and task state, demonstrating how these concepts work together in a real scenario.
+
+::: zone-end
 
 ## Additional resources
 

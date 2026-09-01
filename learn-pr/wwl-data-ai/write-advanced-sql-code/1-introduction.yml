@@ -2,11 +2,12 @@
 uid: learn.wwl.write-advanced-sql-code.introduction
 title: Introduction
 metadata:
-  title: Introduction to advanced T-SQL coding techniques
+  zone_pivot_groups: video-or-text
+  title: Introduction to Advanced T-SQL Coding Techniques
   description: Learn why advanced T-SQL features like CTEs, window functions, JSON, regex, and error handling are essential for modern database development.
-  ms.date: 01/28/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/02/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 durationInMinutes: 2
 content: |

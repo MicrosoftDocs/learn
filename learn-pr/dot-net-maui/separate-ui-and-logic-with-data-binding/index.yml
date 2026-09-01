@@ -8,7 +8,7 @@ metadata:
   ms.author: masoucou
   manager: coxford
   ms.topic: module-standard-task-based
-  ms.service: dotnet-mobile
+  ms.service: dotnet-mobile-development
   ms.subservice: dotnet-maui
 title: Create a UI that uses data binding in .NET MAUI.
 summary: |

@@ -1,24 +1,25 @@
-It's important to know  whether your files have been modified. It's also important to know how they've been changed. In this unit, you learn how to enable file content tracking, how to view file modified file content, and how to enable alerts on file changes in your Windows VMs.
+It's important to know whether your files have been modified and how they changed. Change Tracking and Inventory can store the before and after contents of tracked files and use Azure Monitor alerts to notify you about critical changes.
 
 ## Enable file content tracking
 
 With file content tracking, you can compare file contents before and after a tracked change. To enable and use file content tracking, use the following procedure:
 
-1. In the Azure portal, select **Automation Accounts**.
-2. Select the appropriate automation account, and then under the **Configuration Management** heading, select **Change tracking**.
-3. On the toolbar, select **Edit Settings**, and then on the **Workspace Configuration** blade, select the **File Content** tab.
-4. Select **Link**, and then select the appropriate subscription and Storage account.
-5. If you want to enable file content tracking for all existing tracked files, for the **Upload file content for all settings** setting, select **On**, and then select **Save**.
+1. In the Azure portal, go to **Virtual machines**, and then select a monitored VM.
+2. Under **Operations**, select **Change tracking**, and then select **Settings**.
+3. On the **Data Collection Rule Configuration** pane, select **File Content** > **Link**.
+4. Select the subscription and storage account that will store file contents.
+5. Confirm the managed identity used to access the storage account.
+6. Turn on **Upload file content for all settings**, and then select **Save**.
 
 > [!TIP] 
-> You must create a storage account to use file content tracking.  
+> File content tracking requires a storage account. Grant the VM's managed identity the **Storage Blob Data Contributor** role for the content container.
 
 ### Review the contents of a tracked file
 
 After Change Tracking and Inventory detects a change for a tracked file, you can review the file contents on the **Change Details** pane. Use the following procedure:
 
-1. In the Azure portal, open your **Automation account**, and then under **Configuration Management**, select **Change Tracking**.
-2. Choose a file in the list of changes and then select **View File Content Changes** to review the file contents.
+1. In the Azure portal, open the VM's **Change tracking** pane.
+2. Select a file in the list of changes, and then select **View File Content Changes**.
 
   > [!NOTE] 
   > The change details pane displays the before and after file information for each property.
@@ -31,22 +32,23 @@ You can configure alerts on file changes. For example, if someone edited the Hos
 
 To configure an alert on a file change similar to this, use the following procedure:
 
-1. In your automation account, on the **Change tracking** blade, select **Log Analytics**.
-2. In the Logs search, enter the following query:
+1. On the VM's **Change tracking** pane, open **Logs**.
+2. Enter the following query:
 
    ```
    ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
    ```
 
-3. When the query is complete, select **New alert rule** in the log search to open the **Alert creation** page. Check your query again and modify the **alert logic**.
+3. Select **New alert rule** to open the alert creation page. Review the query and configure the alert logic.
 
    > [!TIP] 
    > In this case, because the file is critical, you want the alert to be triggered if there's even one change detected across all the machines in the environment.
 
-4. Configure the Action group settings, and then customize actions. In this example, an action group called CreateTicket will run and prompt Azure to email the Azure Resource Manager Role holder.
+4. Select or create an action group, and then configure the notification or automation action.
 
 ## Additional reading
 
 To learn more, review the following document.
 
-- [Create and manage action groups in the Azure portal](https://aka.ms/action-groups?azure-portal=true).
+- [Configure Change Tracking and Inventory data collection rules](/azure/azure-change-tracking-inventory/tutorial-change-workspace-configure-data-collection-rule)
+- [Create and manage action groups in the Azure portal](/azure/azure-monitor/alerts/action-groups)

@@ -2,11 +2,12 @@
 uid: learn.wwl.implement-cicd-sql-database-projects.manage-branching-pull-requests-conflict-resolution
 title: Manage branching, pull requests, and conflict resolution
 metadata:
-  title: Manage branching, pull requests, and conflict resolution
+  zone_pivot_groups: video-or-text
+  title: Manage Branching, Pull Requests, and Conflict Resolution
   description: Use feature branches, pull request reviews, and conflict resolution strategies for SQL Database Projects.
   author: calopez
   ms.author: calopez
-  ms.date: 07/14/2025
+  ms.date: 7/13/2026
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 8

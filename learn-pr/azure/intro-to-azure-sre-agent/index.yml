@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-sre-agent
+metadata:
+  moduleType: introduction
+  title: Introduction to Azure SRE Agent
+  description: Learn how Azure SRE Agent supports operational investigations, automation, and controlled mitigation, and evaluate when to use it.
+  ms.date: 08/06/2026
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: module
+  ms.custom: team=cloud_advocates
+  ms.service: azure-sre-agent
+title: Introduction to Azure SRE Agent
+summary: Describe how Azure SRE Agent investigates operational issues, automates recurring work, and executes controlled mitigations. Evaluate whether it fits your reliability engineering needs.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe Azure SRE Agent and the operational challenges it addresses.
+    - Explain how Azure SRE Agent investigates issues, automates work, and controls access to resources.
+    - Evaluate whether Azure SRE Agent is appropriate for your reliability engineering scenarios.
+prerequisites: |
+  - Familiarity with basic site reliability engineering and incident response concepts
+  - Familiarity with Azure resources and Azure Monitor
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - devops-engineer
+products:
+  - azure
+subjects:
+  - devops
+  - cloud-computing
+units:
+  - learn.intro-to-azure-sre-agent.introduction
+  - learn.intro-to-azure-sre-agent.what-is-azure-sre-agent
+  - learn.intro-to-azure-sre-agent.how-azure-sre-agent-works
+  - learn.intro-to-azure-sre-agent.explore-operational-capabilities
+  - learn.intro-to-azure-sre-agent.evaluate-security-and-control
+  - learn.intro-to-azure-sre-agent.when-to-use-azure-sre-agent
+  - learn.intro-to-azure-sre-agent.knowledge-check
+  - learn.intro-to-azure-sre-agent.summary
+badge:
+  uid: learn.intro-to-azure-sre-agent.badge

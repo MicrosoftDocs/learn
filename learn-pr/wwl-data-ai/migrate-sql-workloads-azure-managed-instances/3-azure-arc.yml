@@ -4,7 +4,7 @@ title: Migrate using Azure Arc
 metadata:
   title: Migrate using Azure Arc
   description: "Learn to migrate SQL Server databases to Azure SQL Managed Instance using Azure Arc"
-  ms.date: 01/19/2026
+  ms.date: 07/23/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

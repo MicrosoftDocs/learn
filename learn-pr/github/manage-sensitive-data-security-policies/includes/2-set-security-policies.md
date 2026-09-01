@@ -2,7 +2,7 @@ In this unit, you’ll learn how to set up preventive measures, document vulnera
 
 Imagine you’re an admin onboarding new collaborators: you want them in the right repos, reporting issues clearly, and following consistent standards. Let’s set your security policies.
 
-:::image type="content" source="../media/setting-security-policies.png" alt-text="Three screenshots stacked on each other, slightly offset, which show community health files in a repository and settings for an organization.":::
+:::image type="content" source="../media/setting-security-policies.png" alt-text="Screenshot that shows community health files in a repository and organization settings.":::
 
 ## Why security policies matter
 Security policies maintain your GitHub ecosystem’s integrity by:
@@ -42,10 +42,18 @@ Choose trust vs. control based on team size: small teams might use broad permiss
 - **Enterprise-level:** Your enterprises > Policies > Repository policies  
 Enterprise rules override org rules; org owners can’t change locked settings.
 
-> [!NOTE]
-> Features and required interactions vary by repo type and license.
+[!NOTE] Features and required interactions vary by repo type and license. 
 
-:::image type="content" source="../media/availability-interaction.png" alt-text="Diagram of a four-quadrant graph, divided by x and y axes, which categorizes security settings by availability to users (x axis) and required level of interaction (y axis).":::
+| Feature | Enable once | Configure | Monitor | Review / Remediate |
+|---------|-------------|-----------|---------|--------------------|
+| Dependency graph | Yes | | | |
+| Security advisories | Yes | | Yes | Yes |
+| Dependabot alerts | Yes | | Yes | Yes |
+| Dependency review | | Yes | | Yes |
+| Secret scanning | | Yes | Yes | Yes |
+| Code scanning | | Yes | Yes | Yes |
+| Autofix | | Yes | | Review generated PRs |
+| Security campaigns | | Yes | Yes | Coordinate teams |
 
 ### Available security tools
 - **All repos:** Access controls, SECURITY.md, Dependabot alerts/updates, advisories
@@ -135,7 +143,7 @@ The table below provides an overview of various security policies categorized by
 - **Enterprises & Regulated Industries:** High control with SAML SSO, audit logging, security rulesets, and strict repo controls.
 - **Open Source Projects:** Low to moderate control with code scanning, dependency updates, and community guidance.
 
-## Defining Organization and Enterprise policies
+## Defining organization and enterprise policies
 
 Organization policies and enterprise policies set governance, access, and workflow rules to ensure security and compliance.
 

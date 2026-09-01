@@ -2,6 +2,9 @@ Automatic tuning is a monitoring and analysis feature that continuously learns a
 
 The automatic tuning recommendations are based on the data collected from Query Store. Execution plans evolve over time due to schema changes, index modifications, or changes to the data that cause updates to the statistics. This evolution can cause queries to perform poorly as the execution plan no longer meets the demands of the given query.
 
+> [!NOTE]
+> Query Store is enabled by default for new databases in SQL Server 2022 and Azure SQL Database, so automatic tuning features like automatic plan correction can be enabled without any extra setup on those platforms. For older SQL Server versions, you must enable Query Store manually before automatic tuning can use it.
+
 Furthermore, automatic tuning allows for the gathering and applying machine learning services against performance metrics to provide suggested improvements or even allow for self-correction.
 
 Whether on-premises or in the cloud, automatic tuning allows you to identify issues caused by query execution plan regression. Additionally, in Azure SQL Database you can improve query performance by index tuning. Azure SQL Database automatic tuning can identify indexes that should be added or even removed from the database to enhance query performance.

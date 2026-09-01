@@ -23,6 +23,7 @@ In this case study module, you:
 - [Workload identity federation concepts](/entra/workload-id/workload-identity-federation)
 - [What is Azure Private Link?](/azure/private-link/private-link-overview)
 - [Threat detection in Microsoft Sentinel](/azure/sentinel/threat-detection)
+- [Microsoft unified security operations platform](/unified-secops/overview-unified-security)
 - [Automate container image builds and maintenance with Azure Container Registry tasks](/azure/container-registry/container-registry-tasks-overview)
 - [What is Azure Policy?](/azure/governance/policy/overview)
 - [Microsoft Threat Modeling Tool](/azure/security/develop/threat-modeling-tool)

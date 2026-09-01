@@ -2,11 +2,12 @@
 uid: learn.wwl.design-multi-agent-memory-azure-cosmos-db.implement-semantic-memory-vector-storage
 title: Implement semantic memory with vector storage
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement Semantic Memory with Vector Storage
   description: "Implement semantic memory with vector storage."
-  ms.date: 05/28/2026
-  author: chrishowd
-  ms.author: cahowd
+  ms.date: 8/3/2026
+  author: petender
+  ms.author: petender
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 8

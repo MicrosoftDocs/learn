@@ -1,0 +1,7 @@
+With your Azure DocumentDB cluster up and running, you're ready to start working with data. The MongoDB Query Language (MQL) is how you create, retrieve, update, and delete documents in your databases. Because Azure DocumentDB supports the MongoDB wire protocol, you use the same query syntax and operators that millions of MongoDB developers already know.
+
+Suppose you work for an outdoor sporting goods retailer whose e-commerce team provisions an Azure DocumentDB cluster to power its online store. The catalog spans hundreds of products organized into categories and subcategories, and the business tracks customers, sales orders, and order line items across multiple sales territories. Your team needs to insert product documents into the catalog and query them by category and price. You also update inventory and customer records as orders come in. Finally, you build aggregation pipelines that summarize revenue by product category and territory. All of these tasks use MQL commands that run in MongoDB Shell or through application drivers.
+
+In this module, you learn how to insert documents into collections. You query and filter data using comparison and logical operators. You also update and delete documents with field and array operators. Finally, you build aggregation pipelines that transform and analyze your data.
+
+By the end of this module, you're able to write queries that create, read, update, and delete documents in Azure DocumentDB and build aggregation pipelines to produce summarized results from your data.

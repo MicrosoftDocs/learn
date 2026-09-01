@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-models-embeddings-with-sql
 metadata:
-  title: Design and implement models and embeddings with SQL
+  title: Design and Implement Models and Embeddings With SQL
   description: Integrate AI models with Azure SQL Database using external models, the vector data type, and built-in AI functions. Design embedding strategies, generate embeddings from text, and implement maintenance patterns.
-  ms.date: 02/02/2026
+  ms.date: 07/16/2026
   author: calopez
   ms.author: calopez
   ms.topic: module

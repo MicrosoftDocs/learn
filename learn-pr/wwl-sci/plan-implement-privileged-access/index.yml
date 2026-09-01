@@ -17,7 +17,7 @@ metadata:
 title: Plan and implement privileged access
 summary: Ensuring that administrative roles are protected and managed to increase your Azure solution security is a must. Explore how to use PIM to protect your data and resources.
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you're able to:
 
   -   Define a privileged access strategy for administrative users (resources, roles, approvals, and thresholds)
 

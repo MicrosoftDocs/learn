@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bcdd0702-5490-4a6e-9ef0-6df7e2950cd2]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Functions stores configuration as application settings, which the runtime injects into the process as environment variables. For AI backends, these settings typically include service endpoints, model identifiers, connection strings, and feature flags. Managing these values securely across development, staging, and production environments require a layered approach that separates nonsecret configuration from sensitive credentials and provides auditability for secret access.
 
 ## Use application settings for configuration
@@ -83,6 +94,8 @@ func settings encrypt
 ```
 
 For day-to-day development, maintain separate configuration values that point to local resources. Set `AzureWebJobsStorage` to `UseDevelopmentStorage=true` for Azurite, configure Cosmos DB connection strings to target the local emulator endpoint, and use local Redis or PostgreSQL instances. When the app is deployed, these values are replaced by production application settings, Key Vault references, or identity-based connections. This separation ensures that local development never accidentally touches production data or services.
+
+::: zone-end
 
 ## Additional resources
 

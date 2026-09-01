@@ -47,22 +47,17 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | `st1<xxxxx>` | Storage account | Storage account used by the VM, where *\<xxxxx>* represents a random string generated to create a unique storage account name. |
     | `vnet1` | Virtual network | Virtual network for the VM. |
 
-## Configure Microsoft Sentinel connectors
+## Configure Azure Activity logs
 
-In this task, you deploy a Microsoft Sentinel connector to Azure Activity.
+In this task, you use a diagnostic setting to send the Azure Activity log to the Microsoft Sentinel workspace.
 
-1. In the Azure portal, search for and select **Microsoft Sentinel**, and then select the previously created Microsoft Sentinel workspace.
-1. On the **Microsoft Sentinel** page, on the menu bar, in the **Configuration** section, select **Data connectors**.
-1. On the **Data connectors** pane, search for and select **Azure Activity**. On the details pane, select **Open connector page**.
-1. Review the **Prerequisites**. You need to have the owner role assigned for Azure Policy assignment scopes.
-1. If you have a subscription connected with the *legacy method*, you're directed to disconnect it using the **Configuration** instructions for "1. Disconnect your subscriptions from the legacy method".
-1. If you didn't have the connector configured with the legacy method, proceed to "2. Connect your subscriptions..." in the **Configuration** area.
-1. Select **Launch Azure Policy Assignment Wizard>**.
-1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and choose your subscription from the drop-down list. Then choose **Select**.
-1. Select the **Parameters** tab, choose your *uniquename-sentinel* workspace from the **Primary Log Analytics workspace** drop-down list.
-1. Select the **Remediation** tab and check the **Create a remediation task** box.
-1. Select the **Review + Create** button to review the configuration.
-1. Select **Create** to finish.
+1. In the Azure portal, search for and select **Monitor**.
+1. On the **Monitor** page, select **Activity log**, and then select **Export Activity Logs**.
+1. Select the subscription that contains the exercise resources, and then select **Add diagnostic setting**.
+1. Enter a name for the diagnostic setting.
+1. Under **Categories**, select the activity log categories that you want to collect.
+1. Under **Destination details**, select **Send to Log Analytics workspace**, and then select the subscription and workspace that you created for Microsoft Sentinel.
+1. Select **Save**.
 
 > [!NOTE]
-> The connector for Azure Activity uses policy assignments, so it might take 15 to 30 minutes to display a status of **Connected**.
+> Azure Activity log data can take up to 90 minutes to begin flowing to the workspace.

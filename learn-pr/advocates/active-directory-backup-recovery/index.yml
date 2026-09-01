@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.devrel.active-directory-backup-recovery
+metadata:
+  title: Advanced Active Directory Back Up and Recovery
+  description: Design, validate, and execute supported backup and recovery decisions for Active Directory Domain Services in Windows Server 2025.
+  ms.date: 08/12/2026
+  author: orthomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+  ai-usage: ai-assisted
+title: Advanced Active Directory back up and recovery
+summary: Learn how to perform advanced Active Directory Domain Services backup and recovery operations.
+abstract: |
+  After completing this module, you'll be able to:
+  - Design secure AD DS backups around RTO, RPO, topology, retention, and Tier 0 trust boundaries.
+  - Evaluate backup usability using health, replication, compatibility, security, and restore-test evidence.
+  - Select the narrowest appropriate recovery scope: object, domain controller, domain, or forest.
+  - Recover deleted objects, attributes, hierarchies, domain controllers, DNS, and SYSVOL correctly.
+  - Plan domain and forest recovery sequencing, including operations master roles, RID state, global catalogs, and trusts.
+  - Safely recover virtualized domain controllers using VM-Generation ID safeguards and controlled snapshot practices.
+  - Validate replication, DNS, SYSVOL, time, authentication, security, applications, and business approval before reconnection.
+prerequisites: |
+  - Advanced administration experience with Active Directory Domain Services.
+  - Working knowledge of replication metadata, sites, directory partitions, operations master roles, global catalogs, DNS, Kerberos, trusts, and SYSVOL.
+  - Experience with Windows Server Backup, Volume Shadow Copy Service, PowerShell, event logs, Directory Services Restore Mode, and Windows recovery options.
+  - Familiarity with privileged access workstations, recovery time objectives, recovery point objectives, incident response, and change control.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- security-engineer
+- solution-architect
+products:
+- windows-server
+subjects:
+- identity-access
+- threat-protection
+- storage
+units:
+- learn.devrel.active-directory-backup-recovery.introduction
+- learn.devrel.active-directory-backup-recovery.frame-directory-recovery
+- learn.devrel.active-directory-backup-recovery.understand-backup
+- learn.devrel.active-directory-backup-recovery.understand-recovery
+- learn.devrel.active-directory-backup-recovery.perform-domain-controller-recovery
+- learn.devrel.active-directory-backup-recovery.recover-domains-forests
+- learn.devrel.active-directory-backup-recovery.validate-restored-directory-services
+- learn.devrel.active-directory-backup-recovery.module-assessment
+- learn.devrel.active-directory-backup-recovery.summary
+badge:
+  uid: learn.devrel.active-directory-backup-recovery.badge

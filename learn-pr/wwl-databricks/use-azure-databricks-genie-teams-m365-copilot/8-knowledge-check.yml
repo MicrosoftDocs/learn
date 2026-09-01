@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-databricks-genie-teams-m365-copilot.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 08/25/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 4
+quiz:
+  title: ""
+  questions:
+  - content: "A sales manager wants to ask Genie for last quarter's total revenue by product category, displayed as a table. Which SPARK question is most likely to produce the right result?"
+    choices:
+    - content: "Show me revenue."
+      isCorrect: false
+      explanation: "This question is missing a period, an aggregation method, a result format, and a key metric. Genie has to make assumptions for all of them, which increases the chance of getting a result that doesn't match your intent."
+    - content: "What was total revenue in dollars by product category for Q2 2026, shown as a table?"
+      isCorrect: true
+      explanation: "This question covers all five SPARK elements: scope (revenue by product category), period (Q2 2026), aggregation (total), result (table), and key metric (dollars). That specificity removes ambiguity and produces a reliable answer."
+    - content: "Give me the latest revenue numbers with as much detail as possible."
+      isCorrect: false
+      explanation: "This question doesn't specify a period, aggregation method, or output format. 'As much detail as possible' is ambiguous, and 'latest' could mean today, this week, or this quarter depending on Genie's interpretation."
+  - content: "You ask Genie a question and the answer looks unexpectedly low. After checking the source citation, you notice Genie filtered to 'active' customers only. You expected results for all customers. What is the best next step?"
+    choices:
+    - content: "Accept the answer because Genie's filters are always correct."
+      isCorrect: false
+      explanation: "Genie applies filters based on its interpretation of your question. When a filter doesn't match your intent, you should clarify or rephrase the question—not assume the filter is correct."
+    - content: "Dismiss the answer and wait for a human analyst to run the report."
+      isCorrect: false
+      explanation: "This is unnecessary. You have enough information to correct the issue yourself by asking a follow-up question that removes the filter you didn't intend."
+    - content: "Ask a follow-up question that explicitly includes all customers, for example: 'What was total revenue for Q2 2026 for all customers, including inactive ones, shown as a table?'"
+      isCorrect: true
+      explanation: "Asking a follow-up question that makes your scope explicit is the most efficient path. You've identified the issue (the filter) and corrected it with a SPARK-structured question."
+  - content: "A colleague mentions Genie told them 'why the Southern region underperformed in Q1.' Should you rely on that interpretation in a formal report?"
+    choices:
+    - content: "Yes—Genie's causal analysis is verified against the data, so it's reliable."
+      isCorrect: false
+      explanation: "Genie answers factual questions using your organization's data. It doesn't reliably analyze causes or provide recommendations. Treat any causal interpretation as unverified until a domain expert confirms it."
+    - content: "No—for standard data queries, Genie retrieves and reports data but doesn't analyze causes or give recommendations. You should treat any causal interpretation with skepticism and verify it with a domain expert."
+      isCorrect: true
+      explanation: "Genie is designed to answer factual questions using available data. Interpretive or causal answers are outside its reliable scope. For a formal report, verify causal claims with a domain expert or your data team."
+    - content: "Only if the answer is labeled Trusted."
+      isCorrect: false
+      explanation: "The Trusted label means a domain expert reviewed and confirmed a specific factual answer. It doesn't make a causal or interpretive response reliable."
+  - content: "You want to use Genie to answer a one-off data question during a broader Microsoft 365 Copilot conversation without switching to a dedicated agent session. Which method should you use?"
+    choices:
+    - content: "Open a dedicated agent conversation via More agents and select Databricks Genie."
+      isCorrect: false
+      explanation: "The More agents path opens a persistent, scoped conversation dedicated to Genie. It's better suited for multiple exchanges on a data topic, not a single question within a broader conversation."
+    - content: "Type @Databricks and select Databricks Genie in a new Microsoft 365 Copilot chat."
+      isCorrect: true
+      explanation: "The @mention approach is designed for ephemeral, one-off data questions within a broader Copilot chat. It lets you get a Genie answer without committing to a dedicated agent session."
+    - content: "Open the Databricks Genie app directly in Azure Databricks."
+      isCorrect: false
+      explanation: "Opening Azure Databricks requires switching to a different tool entirely. The question asks how to get a Genie answer within an ongoing Microsoft 365 Copilot conversation."
+  - content: "You're working in a high-traffic public Teams channel. A colleague mentions @Databricks Genie and shares a number from the answer in the channel. Who is accountable for decisions made based on that number?"
+    choices:
+    - content: "Databricks, because Genie generated the answer."
+      isCorrect: false
+      explanation: "AI tools like Genie generate answers to assist human decision-making. Accountability for decisions based on AI-generated data rests with the people who use that data—not with the technology."
+    - content: "The channel members who act on the number, because each person is accountable for their own decisions made from AI-generated answers."
+      isCorrect: true
+      explanation: "Genie accelerates access to data, but the decisions made from that data remain the responsibility of the people making them. Each person who uses the answer should verify it is appropriate for their specific decision before acting."
+    - content: "No one—AI-generated answers have no accountability chain."
+      isCorrect: false
+      explanation: "Using AI-generated answers doesn't remove human accountability. The people who use and act on data answers are responsible for verifying those answers and for the decisions they make."

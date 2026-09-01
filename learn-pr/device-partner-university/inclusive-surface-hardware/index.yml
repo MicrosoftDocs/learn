@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.inclusive-surface-hardware
+title: Reduce workplace barriers with inclusive Surface hardware
+metadata:
+  title: Reduce workplace barriers with inclusive Surface hardware
+  description: 'In this module, you''ll learn how inclusive Surface hardware can help reduce workplace barriers for people with disabilities. You''ll also learn about the accessibility features of Surface devices and how to use them to create a more inclusive work environment.'
+  ms.date: 08/26/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  In this module, you'll learn how inclusive Surface hardware can help reduce workplace barriers for people with disabilities. You'll also learn about the accessibility features of Surface devices and how to use them to create a more inclusive work environment.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Identify the accessibility features of Surface devices that can help reduce workplace barriers for people with disabilities.
+  - Explain how to use inclusive Surface hardware to create a more inclusive work environment.
+  - Demonstrate how to use the accessibility features of Surface devices to improve productivity and collaboration for all employees.
+  - Identify the benefits of using inclusive Surface hardware for both employees and organizations.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/inclusive-surface-hardware-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.inclusive-surface-hardware.introduction
+  - learn.dpu.inclusive-surface-hardware.inclusive-hardware
+  - learn.dpu.inclusive-surface-hardware.adaptive-touch-mode
+  - learn.dpu.inclusive-surface-hardware.engineered-design
+  - learn.dpu.inclusive-surface-hardware.large-high-contrast-keyboard-options
+  - learn.dpu.inclusive-surface-hardware.knowledge-check
+  - learn.dpu.inclusive-surface-hardware.summary
+badge:
+  uid: learn.dpu.inclusive-surface-hardware.badge

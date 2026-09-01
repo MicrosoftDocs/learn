@@ -3,11 +3,12 @@ uid: learn.wwl.connect-syslog-data-sources-to-azure-sentinel
 metadata:
   title: Connect syslog data sources to Microsoft Sentinel
   description: "Connect syslog data sources to Microsoft Sentinel"
-  ms.date: 03/07/2025
-  author: wwlpublish
+  ms.date: 06/16/2026
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: microsoft-sentinel
+  ai-usage: ai-assisted
 title: Connect syslog data sources to Microsoft Sentinel
 summary: Learn about the Azure Monitor Agent Linux Syslog Data Collection Rule configuration options, which enable you to parse Syslog data.
 abstract: |

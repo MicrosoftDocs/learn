@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-azure-documentdb-cluster.configure-security-networking
+title: Configure security and networking
+metadata:
+  title: Configure Security and Networking
+  description: "Learn how to configure network access, authentication, encryption, and monitoring for an Azure DocumentDB cluster."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-configure-security-networking.md)]

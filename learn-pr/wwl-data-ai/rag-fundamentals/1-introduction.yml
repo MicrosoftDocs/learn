@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.rag-fundamentals.introduction
+title: Introduction
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Introduction
+  description: Introduction to retrieval-augmented generation concepts.
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 07/31/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  zone_pivot_groups: video-or-text
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

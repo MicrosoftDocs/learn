@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fabric-prepare-semantic-layer.enterprise-ontology
-title: From semantic models to enterprise ontology
+title: Decide when to extend a semantic model with Fabric IQ
 metadata:
-  title: From Semantic Models to Enterprise Ontology
-  description: "Understand how semantic models connect to Fabric IQ ontology and the intelligent data platform."
-  ms.date: 04/06/2026
+  title: Decide When to Extend a Semantic Model with Fabric IQ
+  description: "Decide when to use Fabric IQ to share stable semantic model entities across teams through an ontology."
+  ms.date: 08/19/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 3
 content: |
   [!include[](includes/5-enterprise-ontology.md)]

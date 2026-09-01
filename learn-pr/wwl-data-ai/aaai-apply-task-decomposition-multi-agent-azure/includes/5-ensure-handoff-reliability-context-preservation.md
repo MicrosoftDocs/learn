@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=cf9da47b-c3ca-4166-9b98-d2604c445f18]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Agent Framework automatically synchronizes full conversation history across all participants in a handoff workflow. This built-in context broadcast is the foundation for the reliability patterns in this unit—you design agents that depend on shared history rather than manually compressed summaries, and structure recovery when handoffs fail.
 
 ## Preserve context through partial handoffs
@@ -105,3 +116,5 @@ For Contoso Capital, handoff failure logging revealed that the International Ris
 - **Chain depth limits** (three to four handoffs maximum) prevent context management from becoming unwieldy—consolidate results to the hub when chains reach the limit.
 - **Failure recovery** follows a three-step escalation: retry same agent → reroute to alternative → escalate to hub. Limit to two attempts before escalation.
 - **Handoff failure logging** provides the audit trail needed to diagnose protocol issues and improve capability descriptions over time.
+
+::: zone-end

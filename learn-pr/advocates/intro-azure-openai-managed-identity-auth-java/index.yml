@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.intro-azure-openai-managed-identity-auth-java
 metadata:
-  ms.author: sayoung
-  author: sarah-yo
+  ms.author: orthomas
+  author: orin-thomas
   ms.date: 05/20/2026
   ms.update-cycle: 180-days
   title: Implement Azure OpenAI keyless authentication with Java

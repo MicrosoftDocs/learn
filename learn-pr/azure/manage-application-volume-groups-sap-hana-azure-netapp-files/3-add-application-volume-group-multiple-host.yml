@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-application-volume-groups-sap-hana.add-application-volume-group-multiple-host
+title: Add an application volume group to a multiple-host SAP HANA system
+metadata:
+  title: Add an application volume group to a multiple-host SAP HANA system
+  description: Learn how to add application volume groups to a multiple-host SAP HANA system in Azure NetApp Files.
+  ms.date: 07/18/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-add-application-volume-group-multiple-host.md)]

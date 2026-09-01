@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0af74657-a0d6-47a4-bff2-0cf949fdc747]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Before you can automate deployments, run tests, or detect schema drift, you need something a pipeline can actually build. That something is a SQL database project.
 
 ## Understand SQL database projects
@@ -98,3 +109,5 @@ The `Script` action produces the exact T-SQL that would run. The `DeployReport` 
 ## Key takeaways
 
 A SQL database project stores every database object as a declarative `.sql` file, and the build compiles them into a single `.dacpac` artifact. SDK-style projects (`Microsoft.Build.Sql`) support .NET 8+, cross-platform builds, NuGet package references, and default globbing for `.sql` files. The build process validates object references and T-SQL syntax against the target platform before anything reaches a database. SqlPackage calculates the difference between the `.dacpac` and the target database, generating only the statements needed to close the gap. Use the `Script` and `DeployReport` actions to preview planned changes before deploying to production. The SQL database project, its `.dacpac` artifact, and SqlPackage form the foundation for everything ahead, including source control, CI/CD pipelines, schema drift detection, and testing.
+
+::: zone-end

@@ -10,7 +10,7 @@ The Query Store consists of three stores:
 
 ## Enable the Query Store
 
-The Query Store is enabled by default in Azure SQL databases. If you want to use it with SQL Server and Azure Synapse Analytics, you need to enable it first. To enable the Query Store feature, use the following query valid for your environment:
+The Query Store is enabled by default in Azure SQL databases and for new databases in SQL Server 2022 and later. If you want to use it with SQL Server 2016 through 2019 and Azure Synapse Analytics, you need to enable it first. To enable the Query Store feature, use the following query valid for your environment:
 
 ```SQL
 -- SQL Server
@@ -122,7 +122,7 @@ The **Tracking Query** view allows analyzing a specific query based on an entere
 
 When the performance of a system begins to degrade, it makes sense to consult query wait statistics to potentially identify a cause. In addition to identifying queries that need to tune, it can also shed light on potential infrastructure upgrades that would be beneficial.
 
-The SQL Query Store provides the **Query Wait Statistics** view to provide insight into the top wait categories for the database. Currently, there are [23 wait categories](/sql/relational-databases/system-catalog-views/sys-query-store-wait-stats-transact-sql).
+The SQL Query Store provides the **Query Wait Statistics** view to provide insight into the top wait categories for the database. Currently, there are [24 wait categories](/sql/relational-databases/system-catalog-views/sys-query-store-wait-stats-transact-sql).
 
 A bar chart displays the most impactful wait categories for the database when you open the Query Wait Statistics view. In addition, a filter located in the toolbar of the wait categories pane allows for the wait statistics to be calculated based on total wait time (default), average wait time, minimum wait time, maximum wait time, or standard deviation wait time.
 

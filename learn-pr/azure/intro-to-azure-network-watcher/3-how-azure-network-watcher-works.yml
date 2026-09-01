@@ -5,8 +5,8 @@ metadata:
   title: How Azure Network Watcher works
   description: Learn how Azure Network Watcher works and how to implement it in your organization.
   ms.date: 09/23/2025
-  author: halkazwini
-  ms.author: halkazwini
+  author: wwlpublish
+  ms.author: cynthist
   ms.topic: unit
 durationInMinutes: 5
 content: |

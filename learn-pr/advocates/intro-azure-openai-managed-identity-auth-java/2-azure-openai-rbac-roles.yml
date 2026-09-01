@@ -5,8 +5,8 @@ metadata:
   title: Azure OpenAI RBAC roles
   description: Learn about Azure OpenAI RBAC roles for least-privilege keyless inference and resource management.
   ms.date: 05/20/2026
-  author: sarah-yo
-  ms.author: sayoung
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 7
 content: |

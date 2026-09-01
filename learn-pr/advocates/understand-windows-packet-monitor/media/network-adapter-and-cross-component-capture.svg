@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Network-adapter-only and cross-component packet capture</title>
+  <desc id="desc">The left panel shows capture at only the network adapter. The right panel shows the same packet recorded as three appearances at a protocol component, filter driver, and network adapter.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="520" fill="#FFFFFF"/>
+
+  <text x="250" y="38" text-anchor="middle" fill="#1A1A1A" font-size="22" font-weight="700">Network-adapter-only capture</text>
+  <text x="750" y="38" text-anchor="middle" fill="#1A1A1A" font-size="22" font-weight="700">Cross-component capture</text>
+
+  <rect x="25" y="58" width="450" height="420" rx="14" fill="#F7FBFF" stroke="#B3D6F2" stroke-width="2"/>
+  <rect x="525" y="58" width="450" height="420" rx="14" fill="#F7FBFF" stroke="#B3D6F2" stroke-width="2"/>
+
+  <g>
+    <rect x="105" y="88" width="290" height="58" rx="9" fill="#FFFFFF" stroke="#5C2D91" stroke-width="2"/>
+    <text x="250" y="124" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="600">Application</text>
+
+    <rect x="105" y="176" width="290" height="58" rx="9" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+    <text x="250" y="212" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="600">Protocol processing</text>
+
+    <rect x="105" y="264" width="290" height="58" rx="9" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+    <text x="250" y="300" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="600">Filter processing</text>
+
+    <rect x="105" y="352" width="290" height="58" rx="9" fill="#E1EFFF" stroke="#0078D4" stroke-width="3"/>
+    <text x="250" y="388" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">Network adapter</text>
+
+    <line x1="250" y1="146" x2="250" y2="170" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="250" y1="234" x2="250" y2="258" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="250" y1="322" x2="250" y2="346" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <circle cx="418" cy="381" r="17" fill="#107C10"/>
+    <text x="418" y="387" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">1</text>
+    <text x="250" y="448" text-anchor="middle" fill="#424242" font-size="16">One observation at the host boundary</text>
+  </g>
+
+  <g>
+    <rect x="605" y="88" width="290" height="58" rx="9" fill="#FFFFFF" stroke="#5C2D91" stroke-width="2"/>
+    <text x="750" y="124" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="600">Application</text>
+
+    <rect x="605" y="176" width="290" height="58" rx="9" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+    <text x="750" y="212" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="600">Protocol processing</text>
+
+    <rect x="605" y="264" width="290" height="58" rx="9" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+    <text x="750" y="300" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="600">Filter processing</text>
+
+    <rect x="605" y="352" width="290" height="58" rx="9" fill="#E1EFFF" stroke="#0078D4" stroke-width="3"/>
+    <text x="750" y="388" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">Network adapter</text>
+
+    <line x1="750" y1="146" x2="750" y2="170" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="750" y1="234" x2="750" y2="258" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="750" y1="322" x2="750" y2="346" stroke="#0078D4" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <circle cx="918" cy="205" r="17" fill="#107C10"/>
+    <text x="918" y="211" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">1</text>
+    <circle cx="918" cy="293" r="17" fill="#107C10"/>
+    <text x="918" y="299" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">2</text>
+    <circle cx="918" cy="381" r="17" fill="#107C10"/>
+    <text x="918" y="387" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">3</text>
+
+    <text x="750" y="448" text-anchor="middle" fill="#424242" font-size="16">One packet with several local appearances</text>
+  </g>
+</svg>

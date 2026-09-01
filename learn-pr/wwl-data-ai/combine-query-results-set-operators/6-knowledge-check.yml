@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/14/2024
-  author: wwlpublish
-  ms.author: rcaper
+  ms.date: 08/12/2026
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
   ms.custom:
   - N/A
@@ -36,7 +36,7 @@ quiz:
       explanation: "That's correct. The INTERSECT set operator returns rows that are in both result sets."
     - content: "OUTER APPLY"
       isCorrect: false
-      explanation: "That's incorrect. OUTER APPLY is a table operator returns rows from two result sets."
+      explanation: "That's incorrect. OUTER APPLY is a table operator that applies a table expression to each row of the left input, returning all left-side rows even when the right side returns no matches — it doesn't compare rows to find common values."
   - content: "What type of result does the APPLY operator return?"
     choices:
     - content: "Table-valued"

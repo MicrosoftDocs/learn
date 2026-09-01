@@ -1,75 +1,31 @@
-GitHub Actions is a platform that allows you to automate tasks triggered by events that occur within a GitHub repository. A GitHub Actions workflow consist of **jobs**. A job groups a **set of steps** that you can define. One of these steps can use the CLI (v2) to run an **Azure Machine Learning job** to train a model.
+With trunk-based development in place, every proposed change goes through a pull request. That pull request is also the natural moment to run automated checks. A change that breaks the training script shouldn't reach `main`, and a reviewer shouldn't have to catch every code error manually.
 
-To automate model training with GitHub Actions, you'll need to:
+## Workflows, triggers, and the quality gate
 
-- Create a service principal using the Azure CLI.
-- Store the Azure credentials in a GitHub secret.
-- Define a GitHub Action in YAML.
+A GitHub Actions **workflow** is a YAML file stored in your repository under `.github/workflows/`. It defines what to run, when to run it, and in what sequence. A **trigger** (the `on:` key) tells GitHub when to start it.
 
-## Create a service principal
+For the Proseware validation workflow, the `pull_request` trigger fits the task. By default, it runs when a pull request opens, reopens, or receives new commits. Its outcome appears as a **status check** on the pull request.
 
-When you use GitHub Actions to automate Azure Machine Learning jobs, you need to use a service principal to authenticate GitHub to manage the Azure Machine Learning workspace. For example, to train a model using Azure Machine Learning compute, you or any tool that you use, needs to be authorized to use that compute.
+## Jobs, runners, and steps
 
-> [!Tip]
-> Learn more about how to [use GitHub Actions to connect to Azure](/azure/developer/github/connect-from-azure)
+A workflow organizes work into **jobs**. Each job runs on a **runner** — a virtual machine provided by GitHub or one your organization manages. A job contains ordered **steps** that check out the repository, install tools, and run commands.
 
-## Store the Azure credentials
+For the Proseware training code, a validation job might:
 
-The Azure credentials you need to authenticate should not be stored in your code or plain text and should instead be stored in a GitHub secret. 
+1. Check out the repository.
+2. Install a linter (such as Flake8 for Python) and run it against the training scripts.
+3. Run unit tests (such as Pytest) to verify that script functions behave correctly.
 
-To add a secret to your GitHub repository:
+These steps run automatically on every pull request. No one has to remember to run them locally.
 
-1. Navigate to the **Settings** tab. 
+## Making checks required
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot of settings tab in GitHub repository.](../media/04-01-settings.png)
+Running checks automatically is only half the protection. The other half is making those checks *blocking*. In branch protection settings, the **Require status checks to pass before merging** option lets you name specific jobs. A pull request can't merge until those named jobs succeed.
 
-2. In the **Settings** tab, under **Security**, expand the **Secrets** option and select **Actions**.
+Together, trunk-based development and required status checks form a quality gate: the data scientist opens a pull request, the workflow runs, and the merge button stays disabled until the code passes.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot of secrets option in security section.](../media/04-02-secrets.png)
+> [!TIP]
+> The status check is identified by the **job name** in the workflow file. Use a clear, stable name so it's easy to find in branch protection settings.
 
-3. Enter your Azure credentials as a secret and name the secret `AZURE_CREDENTIALS`. 
-4. To use a secret containing Azure credentials in a GitHub Action, refer to the secret in the YAML file.
-
-   ```yml
-   on: [push]
-
-   name: Azure Login Sample
-
-   jobs:
-     build-and-deploy:
-       runs-on: ubuntu-latest
-       steps:
-         - name: Log in with Azure
-           uses: azure/login@v1
-           with:
-             creds: '${{secrets.AZURE_CREDENTIALS}}'
-   ```
-
-## Define the GitHub Action
-
-To define a workflow, you'll need to create a YAML file. You can trigger the workflow to train a model manually or with a push event. Manually triggering the workflow is ideal for testing, while automating it with an event is better for automation.
-
-To configure a GitHub Actions workflow so that you can trigger it manually, use `on: workflow_dispatch`. To trigger a workflow with a push event, use `on: [push]`. 
-
-Once the GitHub Actions workflow is triggered, you can add various steps to a job. For example, you can use a step to run an Azure Machine Learning job:
-
-```yml
-name: Manually trigger an Azure Machine Learning job
-
-on:
-  workflow_dispatch:
-
-jobs:
-  train-model:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Trigger Azure Machine Learning job
-      run: |
-        az ml job create --file src/job.yml
-```
-
-> [!Tip]
-> Learn more about [GitHub Actions, including core concepts and essential terminology.](https://docs.github.com/actions/learn-github-actions/understanding-github-actions).
-
+> [!TIP]
+> Think about a preprocessing change with valid Python syntax but incorrect output. Which check could catch style problems, and which check must verify behavior?

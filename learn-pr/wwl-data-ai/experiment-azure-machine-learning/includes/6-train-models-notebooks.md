@@ -26,7 +26,7 @@ MLflow supports automatic logging for popular machine learning libraries. When y
 
 You can turn on autologging by calling `mlflow.autolog()` before your training code. You can also use the framework-specific method, such as `mlflow.xgboost.autolog()`, for more granular control.
 
-> [!Tip]
+> [!TIP]
 > Find a list of [all supported frameworks for autologging in the official MLflow documentation](https://mlflow.org/docs/latest/ml/tracking/#automatic-logging?azure-portal=true).
 
 A notebook cell that trains and tracks a classification model using autologging can be similar to the following code example:
@@ -42,7 +42,7 @@ with mlflow.start_run():
 
 ```
 
-As soon as `mlflow.xgboost.autolog()` is called, MLflow starts a run within an experiment in Azure Machine Learning to start tracking the experiment's run.
+Within the active run, `mlflow.autolog()` logs the parameters, metrics, artifacts, and model selected by the framework integration.
 
 When the job completes, you can review all logged metrics in the studio.
 
@@ -52,7 +52,7 @@ When the job completes, you can review all logged metrics in the studio.
 
 Additionally, you can manually log your model with MLflow. Manually logging models is helpful when you want to log supplementary or custom information that isn't logged through autologging. 
 
-> [!Note]
+> [!NOTE]
 > You can choose to only use custom logging, or use custom logging in combination with autologging.
 
 Common functions used with custom logging are:
@@ -64,7 +64,7 @@ Common functions used with custom logging are:
 - `mlflow.log_artifact()`: Logs any existing file as an artifact.
 - `mlflow.log_model()`: Logs a model. Use this function to create a MLflow model, which can include a custom signature, environment, and input examples.
 
-> [!Tip]
+> [!TIP]
 > Learn more about how to track models with MLflow by exploring the [official MLflow documentation](https://mlflow.org/docs/latest/ml/tracking/?azure-portal=true), or the [Azure Machine Learning documentation](/azure/machine-learning/how-to-log-view-metrics?azure-portal=true)
 
 To use custom logging in a notebook, start a run and log any metric you want:

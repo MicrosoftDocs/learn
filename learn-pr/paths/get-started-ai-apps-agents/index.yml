@@ -4,9 +4,9 @@ metadata:
   title: Get started with AI applications and agents on Azure
   description: Learn how to get started with AI workloads and solutions in Microsoft Foundry.
   brand: azure
-  ms.date: 02/22/2026
-  author: sherzyang
-  ms.author: sheryang
+  ms.date: 07/31/2026
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: learning-path
 title: Get started with AI applications and agents on Azure
 summary: |
@@ -16,25 +16,27 @@ summary: |
   - Speech
   - Computer vision
   - Information extraction
+  - Knowledge retrieval with Foundry IQ
 prerequisites: |
   Before starting this learning path, you should already have a basic understanding of computing concepts and Python.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-- beginner
+  - beginner
 roles:
-- ai-engineer
-- developer
+  - ai-engineer
+  - developer
 subjects:
-- artificial-intelligence
+  - artificial-intelligence
 products:
-- microsoft-foundry
+  - microsoft-foundry
 modules:
-- learn.wwl.get-started-with-ai-in-azure
-- learn.wwl.get-started-with-generative-ai-and-agents
-- learn.wwl.get-started-with-text-analysis-in-azure
-- learn.wwl.get-started-with-speech-in-azure
-- learn.wwl.get-started-with-computer-vision-in-azure
-- learn.wwl.get-started-information-extraction
+  - learn.wwl.get-started-with-ai-in-azure
+  - learn.wwl.get-started-with-generative-ai-and-agents
+  - learn.wwl.get-started-with-text-analysis-in-azure
+  - learn.wwl.get-started-with-speech-in-azure
+  - learn.wwl.get-started-with-computer-vision-in-azure
+  - learn.wwl.get-started-information-extraction
+  - learn.wwl.get-started-foundry-iq
 
 trophy:
   uid: learn.get-started-ai-apps-agents.trophy

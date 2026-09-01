@@ -1,0 +1,4 @@
+
+So far, each variable you've worked with has held a single value. But most real programs need to manage groups of related values—a shopping cart, a list of scores, a user profile, or a table of settings. Python provides two essential built-in collection types for organizing this kind of data: **lists** and **dictionaries**.
+
+In this module, you learn how to store ordered items in a list and access them by position, how to store labeled data in a dictionary and access it by key, and how to decide which structure is right for a given problem. You'll apply both to build an app that tracks a customer's order.

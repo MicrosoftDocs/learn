@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0072b6be-4e24-47d7-81f0-bdbc716e1194]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Blob Storage and Azure OpenAI Service work together to enable deterministic replay debugging for multi-agent production failures. Azure Blob Storage stores complete execution snapshots—model versions, system prompts, tool call responses, and trace context—that the replay framework uses to reproduce the exact conditions of a production failure in an isolated environment.
 
 Production bugs in multi-agent systems are frustratingly nondeterministic. A customer reports a checkout failure, but when the support engineer tries the same product in staging, checkout completes successfully. The original failure involved a specific combination of model version, cached prompt, customer context, and tool response timing that's difficult to recreate manually. Traditional debugging—"try to reproduce it and add logging"—fails because you can't reliably reproduce the conditions. Agent replay debugging solves this by capturing complete execution context from production failures and replaying it deterministically in an isolated environment. Engineers can then step through execution, modify inputs, and identify exactly where behavior diverged from expectations.
@@ -241,3 +252,5 @@ Deterministic replay gives engineers something traditional debugging can't: the 
 - **Mock tool interceptors** replace live API calls with predefined responses during replay, preventing side effects like charging credit cards or decrementing inventory while preserving response structure.
 - **Bisection debugging** enables engineers to pause between agent steps, inject modifications, and systematically narrow which specific input or version change caused a failure.
 - **Safe replay environments** use isolated Azure resources with separate model deployments, test storage, and restricted permissions to ensure replay can't cause production side effects.
+
+::: zone-end

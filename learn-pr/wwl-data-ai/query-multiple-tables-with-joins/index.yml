@@ -3,7 +3,7 @@ uid: learn.wwl.query-multiple-tables-with-joins
 metadata:
   title: Combine multiple tables with JOINs in T-SQL
   description: "Combine multiple tables with JOINs in T-SQL"
-  ms.date: 08/06/2025
+  ms.date: 08/10/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based

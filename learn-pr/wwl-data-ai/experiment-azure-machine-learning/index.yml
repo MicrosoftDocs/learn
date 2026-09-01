@@ -2,16 +2,16 @@
 uid: learn.wwl.experiment-azure-machine-learning
 metadata:
   title: Experiment with Azure Machine Learning
-  description: Learn how to find the best machine learning model with automated machine learning (AutoML), MLflow-tracked notebooks, and the Responsible AI dashboard.
-  author: wwlpublish
+  description: Choose this module if you want to compare models by using automated machine learning, MLflow, and the Responsible AI dashboard.
+  author: madiepev
   ms.author: madiepev
-  ms.date: 03/11/2026
+  ms.date: 08/27/2026
   ms.service: azure-machine-learning
   ms.topic: module
   ms.collection:
     - wwl-ai-copilot
 title: Experiment with Azure Machine Learning
-summary: Learn how to find the best machine learning model with automated machine learning (AutoML), MLflow-tracked notebooks, and the Responsible AI dashboard.
+summary: Choose this module if you want to compare models by using automated machine learning, MLflow, and the Responsible AI dashboard.
 abstract: |
   In this module, you learn how to:
   - Prepare your data to use AutoML for classification.

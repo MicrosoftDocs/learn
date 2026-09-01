@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.build-cloud-developer-workstation.consistent-environment
+title: How Cloud PCs are prepared before first sign-in
+metadata:
+  title: How Cloud PCs Are Prepared Before First Sign-In
+  description: This content is part of the "Build your first cloud-based developer workstation using Windows 365" module.
+  ms.date: 07/22/2026
+  author: Sheridan-Connor
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-consistent-environment.md)]

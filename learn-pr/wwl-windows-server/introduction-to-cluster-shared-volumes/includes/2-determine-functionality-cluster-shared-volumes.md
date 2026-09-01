@@ -2,7 +2,11 @@ To accommodate a wide range of high-availability scenarios, clustering technolog
 
 ## What are Cluster Shared Volumes?
 
-CSV is a general-purpose clustered file system (referred to as CSVFS) that enables cluster nodes to simultaneously read from and write to the same set of NT File System (NTFS) or Resilient File System (ReFS) volumes. CSV consolidates volumes hosted on disks connected to cluster nodes into a single namespace that's accessible in the uniform manner on each cluster node. Allowing concurrent volume access provides more balanced load distribution and considerably increases failover speed by eliminating the need for drive ownership changes or dismounting and remounting volumes.
+A **Cluster Shared Volume (CSV)** is a shared disk volume that all servers in a Windows failover cluster can access simultaneously.A **Cluster Shared Volume (CSV)** lets every node in a failover cluster access the same volume simultaneously through a consistent path such as:
+
+`C:\ClusterStorage\Volume1`
+
+One node acts as the **CSV coordinator**, primarily handling file-system metadata changes. CSV is a general-purpose clustered file system (referred to as CSVFS) that enables cluster nodes to simultaneously read from and write to the same set of NT File System (NTFS) or Resilient File System (ReFS) volumes. CSV consolidates volumes hosted on disks connected to cluster nodes into a single namespace that's accessible in the uniform manner on each cluster node. Allowing concurrent volume access provides more balanced load distribution and considerably increases failover speed by eliminating the need for drive ownership changes or dismounting and remounting volumes.
 
 Additionally, CSV offers the following capabilities:
 

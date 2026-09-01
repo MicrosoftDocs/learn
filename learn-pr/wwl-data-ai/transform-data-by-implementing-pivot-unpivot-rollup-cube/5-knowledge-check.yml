@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/18/2024
-  author: wwlpublish
-  ms.author: rcaper
+  ms.date: 08/12/2026
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 4
@@ -35,7 +35,7 @@ quiz:
     - content: "ROLLUP"
       isCorrect: true
       explanation: "Correct. Use this subclause to infer a hierarchy."
-  - content: "You've pivoted a dataset with aggregation, what happens if you try to use UNPIVOT restore the original data?"
+  - content: "You've pivoted a dataset with aggregation, what happens if you try to use UNPIVOT to restore the original data?"
     choices:
     - content: "Unpivoting can't restore the original data."
       isCorrect: true

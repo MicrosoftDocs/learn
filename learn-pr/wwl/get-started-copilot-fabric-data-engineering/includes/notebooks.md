@@ -1,26 +1,22 @@
-Copilot for Fabric Data Engineering assists with writing code in notebooks. It works with Lakehouse tables and files, and it can reference the dataframes you're working with. 
+Copilot for Fabric Data Engineering assists with writing code in notebooks. It uses notebook context, including attached lakehouses, available schemas, tables, files, existing code, and runtime information.
 
-There are multiple ways to interact with Copilot for Fabric Data Engineering, including:
+You can interact with Copilot in two ways:
 
-- **Magic commands** are special commands that you can use in your notebook cells to perform specific tasks. They start with a double percent sign (`%%`) or a single percent sign (`%`).
-- **Copilot chat pane**: You can ask Copilot for help in plain English, and it generates code for you based on your request. This is best for multi-step workflows, building logic across cells, and reviewing generated code with diff view.
-- **In-cell Copilot**: You can interact with Copilot directly above any individual code cell using a text box and slash commands. This is best for focused, single-cell actions like fixing errors or explaining logic.
+- **Copilot chat pane**: Ask questions in natural language and work across multiple notebook cells. Copilot can generate, edit, run, explain, and validate code while maintaining the context of your workflow.
+- **In-cell Copilot**: Enter a request above an individual code cell. Use this experience for focused tasks such as generating code or explaining, fixing, commenting, and optimizing existing code.
 
-## Magic commands
+## Use the Copilot chat pane
 
-Chat commands are special commands you can use in your Microsoft Fabric notebooks to interact with Copilot. Here's a list of the most commonly used commands:
+To start a notebook-wide conversation with Copilot:
 
-| Command | Description |
-| ------- | ----------- |
-| `%%chat` | Ask questions about the state of your notebook. |
-| `%%code` | Code generation for data manipulation or visualization. |
-| `%show_chat_history` | Show the chat history. |
-| `%clear_chat_history` | Clear the chat history. |
-| `%set_output` | Change the default for how magic commands provide output. Choose where to place the generated code, from options like <br>- current cell<br>- new cell<br>- cell output<br>- into a variable<br> |
-| `%describe` | Provides summaries and descriptions of loaded dataframes. |
-| `%%add_comments` | Add comments to your code. |
+1. Create or open a notebook.
+1. Attach a lakehouse to provide schema and data context.
+1. On the notebook ribbon, select **Copilot**. The chat pane opens on the right side of the notebook.
+1. Enter a prompt in the chat box, or select a suggested prompt.
+1. Review each requested action. Select **Allow** to let Copilot add or edit code and run cells, or select **Skip** to decline the action.
+1. After Copilot completes the task, review the result and the diff view. Select **Keep** to retain the changes or **Undo** to revert them.
 
-In addition, there are also several commands allowing you to fix errors, configure privacy settings, and manage dataframes. See [Use the Copilot chat pane in Microsoft Fabric notebooks](/fabric/data-engineering/copilot-notebooks-chat-pane) for more information.
+Copilot can ask for approval before each action. You can change this behavior in the chat pane's approval settings. High-risk actions, such as installing packages or running multiple cells, always require approval. For more information, see [Use the Copilot for Data Engineering and Data Science chat pane](/fabric/data-engineering/copilot-notebooks-chat-pane).
 
 ## In-cell Copilot
 
@@ -37,26 +33,24 @@ The available slash commands are:
 
 Use in-cell Copilot when you want to refine a specific cell — for example, understanding what a transformation does, fixing a syntax error, or documenting code before sharing the notebook. For multi-step workflows or cross-cell tasks, switch to the Copilot chat pane instead.
 
-## Example
+## Use Copilot to prepare data
 
-In this example, we use Copilot for Fabric Data Engineering to load, transform, and save data in a Lakehouse. Let's imagine Contoso Health, a multi-specialty hospital network, wants to expand its services in the EU and wants to analyze projected population data. This example uses the [Eurostat](https://ec.europa.eu/eurostat/web/main/home) (statistical office of the European Union) population projection dataset.
+In this example, you use Copilot for Fabric Data Engineering to load, transform, and save data in a lakehouse. Contoso Health, a multispecialty hospital network, wants to analyze projected population data as it considers expanding its services in the European Union (EU). This example uses a population projection dataset from [Eurostat](https://ec.europa.eu/eurostat/web/main/home), the statistical office of the European Union.
 
 Source: EUROPOP2023 Population on January 1 by age, sex, and type of projection [[proj_23np](https://ec.europa.eu/eurostat/databrowser/product/view/proj_23np?category=proj.proj_23n)], Last updated June 28, 2023.
 
 ### Load data
 
-Begin in a fresh notebook that's attached to your Lakehouse. In a new cell, you might try the following prompt. Prefixing with `%%code` signals to Copilot that you'd like generated code. Run it whenever you're ready to see what Copilot proposes.
+Begin in a notebook that's attached to your lakehouse. Open the **Copilot** chat pane, enter the following prompt, and submit it:
 
 ```copilot-prompt
-%%code
-
 Download the following file from this URL:
 https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/proj_23np$defaultview/?format=TSV
 
 Then write the file to the default lakehouse into a temporary folder. Create the temporary folder if it doesn't exist yet.
 ```
  
-Copilot generates code, which might differ slightly depending on your environment and the latest updates to Copilot.
+When Copilot requests permission to add and run a code cell, review the requested actions and select **Allow**. Copilot generates code that might differ from the following example:
 
 ```python
 #### ATTENTION: AI-generated code can include errors or operations you didn't intend. Review the code in this cell carefully before running it.
@@ -81,19 +75,17 @@ shutil.move(file_path, os.path.join(lakehouse_temp_folder, "proj_23np.tsv"))
 print(f"File successfully written to {os.path.join(lakehouse_temp_folder, 'proj_23np.tsv')}")
 ```
 
-After running the cell, you should find the file downloaded and placed in the temporary folder of your Lakehouse.
+After the cell runs, the file appears in the temporary folder of your lakehouse. Review the result and select **Keep** in the Copilot pane.
 
-In another new cell, you could ask Copilot to load the data like this:
+In the Copilot chat box, enter and submit the following prompt:
 
 ```copilot-prompt
-%%code
-
 Load the file 'Files/temp/proj_23np.tsv' into a spark dataframe.
 The fields are separated with a tab.
 Show the contents of the DataFrame using display method.
 ```
 
-The resulting dataframe will contain the contents of the TSV file. One possible generated script could look like:
+Review and allow the requested actions. The resulting dataframe contains the contents of the TSV file. The generated code might resemble this example:
 
 ```python
 #### ATTENTION: AI-generated code can include errors or operations you didn't intend. Review the code in this cell carefully before running it.
@@ -120,11 +112,9 @@ Here's an example of what the output might look like:
 
 ### Transform data
 
-Next, consider transforming the data: splitting the combined first field into separate columns, cleaning up unused fields, standardizing data types, and applying a bit of filtering. A prompt like the following in a new cell can guide Copilot:
+Next, ask Copilot to split the combined first field into separate columns, remove unused fields, standardize data types, and filter the data. Enter and submit the following prompt in the chat pane:
 
 ```copilot-prompt
-%%code
-
 Now transform this dataframe spark_df and split the first field 'freq,projection,sex,age,unit,geo\TIME_PERIOD' using a comma into 6 separate fields.
 
 Then, remove the fields 'freq', 'age', 'unit'.
@@ -151,7 +141,7 @@ Convert the data type of all the year fields to integer.
 Display (Render) the DataFrame.
 ```
 
-Copilot generates code, which might differ slightly depending on your environment and the latest updates to Copilot.
+Review and allow the requested actions. Copilot generates code that might differ from the following example:
 
 ```python
 from pyspark.sql.functions import split, col
@@ -174,7 +164,7 @@ columns_to_drop = ['freq', 'age', 'unit', 'freq,projection,sex,age,unit,geo\TIME
 spark_df = spark_df.drop(*columns_to_drop)
 
 # Reorder the columns, placing 'projection', 'sex', 'geo' first
-columns_order = ['projection', 'sex', 'geo']  |  [col for col in spark_df.columns if col not in ['projection', 'sex', 'geo']]
+columns_order = ['projection', 'sex', 'geo'] + [column for column in spark_df.columns if column not in ['projection', 'sex', 'geo']]
 spark_df = spark_df.select(*columns_order)
 
 # Replace projection field codes with values
@@ -219,15 +209,13 @@ Here's an example of what the output might look like:
 
 ### Save data
 
-With transformations in place, you may want to persist the result to the Lakehouse. For instance, a cell prompt like this will have Copilot generate save logic:
+After you transform the data, ask Copilot to save the result to the lakehouse. Enter and submit the following prompt in the chat pane:
 
 ```copilot-prompt
-%%code
- 
 Save the dataframe as a new table named 'Population' in the default lakehouse.
 ```
 
-Copilot generates code, which might differ slightly depending on your environment and the latest updates to Copilot.
+Review and allow the requested actions. Copilot generates code that might differ from the following example:
 
 ```python
 #### ATTENTION: AI-generated code can include errors or operations you didn't intend. Review the code in this cell carefully before running it.
@@ -237,7 +225,7 @@ spark_df.write.format("delta").saveAsTable("Population")
 
 ### Validation
 
-To check that the table saved as expected, expand the Tables list in your Lakehouse and review its contents. You can also turn to the **Copilot chat panel** for quick exploratory questions; Copilot will reply with explanations or runnable code. For example:
+To check that the table saved as expected, expand the **Tables** list in your lakehouse and review its contents. You can also use the **Copilot chat pane** for exploratory questions. Copilot responds with explanations or requests permission to add and run code. For example:
 
 ```copilot-prompt
 What is the projected population for geo BE in 2050?
@@ -263,7 +251,8 @@ result_df = spark_df.filter((spark_df['geo'] == 'BE') & (spark_df['projection'] 
 result_df.show()
 ```
 
-## Best practices
+## Apply Copilot best practices
+
 - Copilot is currently strongest with data engineering and data science scenarios, so framing questions in those domains tends to yield clearer results.
 - Giving Copilot concrete references to your data assets (file paths, table names, column names) usually improves the specificity and usefulness of generated answers.
-- Loading data as DataFrames or pinning datasets in your Lakehouse supplies richer context, enabling more accurate analysis and transformations.
+- Loading data as DataFrames or pinning datasets in your lakehouse supplies richer context, enabling more accurate analysis and transformations.

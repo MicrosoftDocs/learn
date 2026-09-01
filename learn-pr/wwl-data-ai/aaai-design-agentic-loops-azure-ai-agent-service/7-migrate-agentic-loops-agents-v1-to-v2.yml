@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.migrate-agentic-loops-agents-v1-to-v2
-title: Migrate stateful agentic loops from Agents v1 to Agents v2
+title: Migrate stateful agentic loops from agents v1 to agents v2
 metadata:
+  zone_pivot_groups: video-or-text
   title: Migrate Stateful Agentic Loops from Agents v1 to Agents v2
   description: "Migrate production agentic loop code from the Agents v1 SDK to the Agents v2 Responses API. Update SDK packages, rewrite client initialization, migrate threads and runs to conversations and responses, and adapt tool handling to the v2 output item model."
-  ms.date: 05/20/2026
-  author: chrishowd
-  ms.author: cahowd
+  ms.date: 7/27/2026
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 10
 content: |

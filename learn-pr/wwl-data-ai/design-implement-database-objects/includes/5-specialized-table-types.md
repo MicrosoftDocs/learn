@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8b36903b-1b5c-4c25-995c-f0d5e0b5db44]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 SQL Server support specialized table types designed for specific scenarios and workloads beyond standard disk-based tables. These table types, including [in-memory](/sql/relational-databases/in-memory-oltp/overview-and-usage-scenarios?azure-portal=true), [temporal](/sql/relational-databases/tables/temporal-tables?azure-portal=true), [external](/sql/t-sql/statements/create-external-table-transact-sql?azure-portal=true), [LEDGER](/sql/relational-databases/security/ledger/ledger-overview?azure-portal=true), and [GRAPH](/sql/relational-databases/graphs/sql-graph-overview?azure-portal=true), solve particular performance, compliance, or architectural challenges that standard tables can't address efficiently.
 
 Understanding when and how to use these specialized table types is crucial for designing effective database solutions that meet your application's requirements.
@@ -205,3 +216,5 @@ AND Person1.id = 1;
 When you create node and edge tables, SQL Server automatically manages the hidden system columns that enable efficient graph traversal queries.
 
 Each specialized table type comes with trade-offs: in-memory tables need RAM, temporal tables double storage, external tables add network latency, ledger tables prevent deletion, and graph tables require new syntax. We recommend choosing the right table type during design as these decisions are hard to change after deployment.
+
+::: zone-end

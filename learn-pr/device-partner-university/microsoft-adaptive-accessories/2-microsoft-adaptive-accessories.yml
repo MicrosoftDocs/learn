@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.microsoft-adaptive-accessories.microsoft-adaptive-accessories
+title: Microsoft Adaptive Accessories
+metadata:
+  title: Microsoft Adaptive Accessories
+  description: This content is part of the "Configure Microsoft Adaptive Accessories for accessible productivity" module.
+  ms.date: 08/27/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/2-microsoft-adaptive-accessories.md)]

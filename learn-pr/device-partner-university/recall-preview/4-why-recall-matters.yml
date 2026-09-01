@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.recall-preview.why-recall-matters
+title: Why Recall (preview) matters
+metadata:
+  title: Why Recall (preview) Matters
+  description: This content is part of the "Retrace your steps with Recall (preview)" module.
+  ms.date: 06/15/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-why-recall-matters.md)]

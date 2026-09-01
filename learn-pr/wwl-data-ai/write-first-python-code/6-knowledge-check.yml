@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-first-python-code.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Check your learning on writing your first Python code."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Which function is used to display text output in Python?"
+    choices:
+    - content: "input()"
+      isCorrect: false
+      explanation: "Incorrect. The input() function accepts user input; it doesn't display output."
+    - content: "print()"
+      isCorrect: true
+      explanation: "Correct. The print() function displays text output to the console."
+    - content: "display()"
+      isCorrect: false
+      explanation: "Incorrect. Python doesn't have a built-in display() function for console output."
+  - content: "What data type does the input() function always return?"
+    choices:
+    - content: "int"
+      isCorrect: false
+      explanation: "Incorrect. Even if the user types a number, input() always returns a string."
+    - content: "bool"
+      isCorrect: false
+      explanation: "Incorrect. The input() function returns a string, not a Boolean."
+    - content: "str"
+      isCorrect: true
+      explanation: "Correct. The input() function always returns the user's input as a string."
+  - content: "Which Python feature lets you embed variable values directly inside a string?"
+    choices:
+    - content: "String concatenation with +"
+      isCorrect: false
+      explanation: "Incorrect. Concatenation works, but f-strings are the cleaner, purpose-built way to embed variables."
+    - content: "f-strings"
+      isCorrect: true
+      explanation: "Correct. f-strings let you embed variable values inside a string by placing them in curly braces {}."
+    - content: "The format() method"
+      isCorrect: false
+      explanation: "Incorrect. format() works but is not as concise as f-strings for embedding variables."

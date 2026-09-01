@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-active-directory-domain-name-system.guided-troubleshooting-exercise
+title: Guided troubleshooting exercise
+metadata:
+  title: Guided Troubleshooting Exercise
+  description: Diagnose one directory service incident from supplied client, query, locator, and server evidence.
+  ms.date: 08/03/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/8-guided-troubleshooting-exercise.md)]

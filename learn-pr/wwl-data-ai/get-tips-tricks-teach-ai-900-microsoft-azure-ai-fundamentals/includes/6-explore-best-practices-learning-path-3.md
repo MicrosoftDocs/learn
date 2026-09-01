@@ -18,8 +18,8 @@ Learning Path 3 Tips and Tricks
 
 Learning Path 3 Demos
 
-- [Demo 03: Explore Speech Studio](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Exercises/04-speech.html)
+- Demo 03: Explore Speech Studio
 
 Learning Path 3 Exercise
 
-- [Exercise 01: Analyze text with Language Studio](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Exercises/03-text-analysis.html)
+- Exercise 01: Analyze text with Language Studio

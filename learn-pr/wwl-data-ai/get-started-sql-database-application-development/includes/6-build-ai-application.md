@@ -32,6 +32,6 @@ Key concepts for implementing RAG with Azure SQL Database and Azure OpenAI inclu
 - [**Vector embeddings**](/azure/cosmos-db/gen-ai/vector-embeddings) - Vectors, or embeddings, are mathematical representations of data in a high-dimensional space, used by machine learning models to process various types of information like text, images, and audio.
 - [**Vector search:**](/azure/search/vector-search-overview) Finding all vectors in a dataset that are semantically similar to a specific query vector.
 
-Azure SQL Database supports columnstore indexes and batch mode execution, allowing for efficient storage and querying of vector embeddings. This integration minimizes the need to manage data synchronization and accelerates time-to-market for AI application development.
+Azure SQL Database now supports a native `vector` data type for efficient storage of embeddings, together with `VECTOR_DISTANCE` and `VECTOR_SEARCH` functions that enable similarity search directly in T-SQL. This eliminates the need to manage data synchronization to a separate vector store and accelerates time-to-market for AI application development.
 
 For more information on using Azure SQL Database with Azure OpenAI, including generating images, using OpenAI REST Endpoints, and leveraging vector search, see [Intelligent applications with Azure SQL Database](/azure/azure-sql/database/ai-artificial-intelligence-intelligent-applications).

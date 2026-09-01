@@ -10,7 +10,7 @@ Use Transact-SQL statements to create tables for your databases so that you can 
     USE OnlineShop;
     ```
 
-1. You can then use CREATE TABLE to create your table in your chosen database. For example, to create a Products table, you can run the following statement:
+1. You can then use `CREATE TABLE` to create your table in your chosen database. For example, to create a Products table, you can run the following statement:
 
     ```sql
     CREATE TABLE Products  
@@ -30,18 +30,18 @@ Use Transact-SQL statements to create tables for your databases so that you can 
 To successfully create a table, you must provide a name for your table, the names of the columns for your table, and the data type for each column.
 
 > [!NOTE]
-> You must have the CREATE TABLE and ALTER SCHEMA permissions to create tables.
+> You must have the `CREATE TABLE` and ALTER SCHEMA permissions to create tables.
 
 ## Insert and read data from a table 
 
-Once you've created your table, you'll want to populate it with data. You can do this with Transact-SQL using the INSERT statement. For example, to add a product to a **Products** table, you could run the following statement:
+Once you've created your table, you'll want to populate it with data. You can do this with Transact-SQL using the `INSERT` statement. For example, to add a product to a **Products** table, you could run the following statement:
 
 ```sql
 INSERT Products (ProductID, ProductName, ProductDescription)  
     VALUES (1, 'The brown fox and the yellow bear', 'A popular book for children.');
 ```
 
-To read data from your table, you use the SELECT statement. For instance, to fetch the names and descriptions for all the products in your **Products** table, you'd run the following statement:
+To read data from your table, you use the `SELECT` statement. For instance, to fetch the names and descriptions for all the products in your **Products** table, you'd run the following statement:
 
 ```sql
 SELECT ProductName, ProductDescription

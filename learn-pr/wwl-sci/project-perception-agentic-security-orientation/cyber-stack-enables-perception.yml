@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.project-perception-agentic-security-orientation.cyber-stack-enables-perception
+title: Understand what makes cross-agent coordination possible
+metadata:
+  title: Understand What Makes Cross-Agent Coordination Possible
+  description: "Walk through the six layers of the Cyber Stack (signals, security context, models, harness, agents, actuators) and see how the shared security context makes agent handoffs happen at machine speed."
+  ms.date: 08/03/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/cyber-stack-enables-perception.md)]

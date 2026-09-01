@@ -1,4 +1,4 @@
-Governance and security are the backbone of responsible AI. This unit shows how to design policies, controls, and oversight that protect your organization while enabling innovation.
+Governance and security are the backbone of responsible AI. This unit shows how to design policies, controls, and oversight that protect your organization while enabling innovation at scale.
 
 :::image type="content" source="../media/06-ai-governance.png" alt-text="Screenshot of a skyscraper building in a city.":::
 
@@ -27,6 +27,15 @@ Start with a minimum viable set of guardrails, then evolve them as your AI footp
 - Establish usage policies, access controls, and model transparency requirements.
 - Automate enforcement where possible, such as data labels and approval gates.
 - Review and update policies as risks evolve.
+
+## Embed security by design
+
+As AI agents gain autonomy and access business data, security must be built in from the start—not bolted on after deployment. Treat identity and data access controls as foundational requirements.
+
+- Enforce identity and access management so agents operate within defined permissions.
+- Ensure data access is governed: agents should only retrieve and act on data they're authorized to use.
+- Apply environment separation (development, test, production) for agent deployments.
+- Make agent behavior observable through logs, telemetry, and audit trails.
 
 ## Build trust through transparency
 

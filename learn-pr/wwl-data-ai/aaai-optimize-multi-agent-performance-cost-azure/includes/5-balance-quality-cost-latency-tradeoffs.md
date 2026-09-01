@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=da74f0cd-7891-466d-8e8b-aabbc6734728]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry's deployment and evaluation capabilities let you configure model tiers, monitor quality signals, and run A/B tests to find the optimal balance between quality, cost, and latency for each customer segment.
 
 Optimization creates tension. Adventure Works can achieve the lowest possible cost by routing everything to GPT-4o-mini, caching aggressively with loose similarity thresholds, and pruning context to bare minimums—but customer satisfaction would collapse. Conversely, maximizing quality by using GPT-4o for everything, maintaining full conversation history, and bypassing caches delivers excellent experiences but destroys the budget. Real-world multi-agent systems require deliberate, measured tradeoffs that balance quality, cost, and latency based on business priorities and customer expectations.
@@ -99,3 +110,5 @@ Instrument parallel workflows with distributed tracing span data to identify whi
 - Parallelism is a powerful technique for reducing task duration and improving latency, but it introduces the risk of increased peak quota consumption.
 - When designing parallel workflows, it's important to consider the impact on token quota usage and plan accordingly.
 - Instrumentation and monitoring are essential for identifying the critical path in parallel workflows and optimizing performance.
+
+::: zone-end

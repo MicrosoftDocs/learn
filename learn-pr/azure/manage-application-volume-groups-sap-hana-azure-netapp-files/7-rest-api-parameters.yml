@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-application-volume-groups-sap-hana.rest-api-parameters
+title: Configure application volume groups using REST API
+metadata:
+  title: Configure application volume groups using REST API
+  description: Learn the REST API parameters for creating and configuring SAP HANA application volume groups in Azure NetApp Files.
+  ms.date: 07/18/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-rest-api-parameters.md)]

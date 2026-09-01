@@ -3,7 +3,7 @@ uid: learn.wwl.analyze-telemetry-logs-metrics
 metadata:
   title: Analyze App Telemetry with Logs and Metrics
   description: Query, visualize, and act on application telemetry collected in Application Insights to detect failures, identify performance trends, and maintain operational visibility for AI solutions on Azure.
-  ms.date: 02/19/2026
+  ms.date: 06/15/2026
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

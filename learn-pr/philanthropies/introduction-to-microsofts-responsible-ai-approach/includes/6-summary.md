@@ -10,7 +10,7 @@ To continue your learning journey, go to:
 - [AI Guidelines in the Creative Process](https://medium.com/microsoft-design/ai-guidelines-in-the-creative-process-807b6d31cda2)
 - [Collaborating to bring AI innovation to education](https://educationblog.microsoft.com/2023/06/collaborating-to-bring-ai-innovation-to-education#:~:text=%5BSolution%5D%20Responsible%20AI%20in%20Microsoft%201%20Put%20responsible,responsible%20AI%20through%20our%20work%20with...%20See%20More.)
 - [Prepare for the implications of responsible AI](/training/modules/embrace-responsible-ai-principles-practices/2-prepare-implications-responsible-ai)
-- [Microsoft Responsible AI Standard, V2](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE5cmFl?url=http%3A%2F%2Fgo.pardot.com%2Fe%2F153401%2Ftoolkit%2Fpqrvpt%2F998442024%2Fh%2FwDR5dUAOyFfmSXJdMajUTJDvPKMidpMBmWwF6piYiOA&data=05%7C01%7Cv-marydownes%40microsoft.com%7Cad37c936a3c04469641608dbd2a9451b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638335396682342090%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=IiV2wzljZ%2BlMX4PkAgBVXloQ9kI%2FRoaqOndxKr2VIvI%3D&reserved=0)
+- [Microsoft Responsible AI Standard, V2](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Microsoft-Responsible-AI-Standard-General-Requirements.pdf?utm_source=chatgpt.com)
 
 ## Bibliography
 

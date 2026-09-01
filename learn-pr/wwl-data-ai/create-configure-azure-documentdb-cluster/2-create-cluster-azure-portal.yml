@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-azure-documentdb-cluster.create-cluster-azure-portal
+title: Create a cluster in the Azure portal
+metadata:
+  title: Create a Cluster in the Azure Portal
+  description: "Learn how to create an Azure DocumentDB cluster in the Azure portal, including configuring compute, storage, networking, and admin credentials."
+  ms.date: 04/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-create-cluster-azure-portal.md)]

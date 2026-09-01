@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-applications-azure-documentdb-sdks.manage-connections-handle-errors
+title: Manage connections and handle errors
+metadata:
+  title: Manage Connections and Handle Errors
+  description: "Learn how to manage connection lifecycles, handle common database errors, and secure connection strings in Azure DocumentDB applications."
+  ms.date: 04/10/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-node-python
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-manage-connections-handle-errors.md)]

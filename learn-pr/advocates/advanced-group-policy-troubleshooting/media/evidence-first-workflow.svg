@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1410" viewBox="0 0 1400 1410" role="img" aria-labelledby="title desc">
+  <title id="title">Symptom-driven Group Policy evidence decision tree</title>
+  <desc id="desc">A root question branches to eight labeled symptom cards. Each card asks an evidence question and routes to one or more earliest unproved diagnostic domains. Confirmed named-replica divergence is required before taking the replication exit. Every branch rejoins a common evidence-first path that preserves evidence, compares a peer, tests one hypothesis, passes the safety gate, makes the smallest correction, and validates policy and behavior separately.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L0,6 L9,3 z" fill="#243A5E"/>
+    </marker>
+    <style>
+      .font { font-family: "Segoe UI", Arial, sans-serif; }
+      .card { fill: #FFFFFF; stroke: #243A5E; stroke-width: 3; }
+      .question { fill: #F7F9FC; stroke: #5C2D91; stroke-width: 2; }
+      .exit { fill: #FFFFFF; stroke: #005A9E; stroke-width: 2; }
+      .branch { fill: none; stroke: #243A5E; stroke-width: 2; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1400" height="1410" fill="#FFFFFF"/>
+  <text x="700" y="40" text-anchor="middle" class="font" font-size="29" font-weight="700" fill="#172B4D">Start with the symptom, then test the earliest unproved boundary</text>
+
+  <rect x="450" y="68" width="500" height="72" rx="12" fill="#243A5E"/>
+  <text x="700" y="112" text-anchor="middle" class="font" font-size="25" font-weight="700" fill="#FFFFFF">Which symptom is present?</text>
+
+  <g fill="none" stroke="#243A5E" stroke-width="3">
+    <path d="M700 140 L700 164"/>
+    <path d="M700 164 L25 164 L25 1085"/>
+    <path d="M700 164 L1375 164 L1375 1085"/>
+  </g>
+
+  <!-- A: GPO absent -->
+  <g class="font" transform="translate(55 185)">
+    <rect class="card" width="620" height="235" rx="12"/>
+    <rect width="620" height="48" rx="10" fill="#E8F3FC"/>
+    <rect y="38" width="620" height="10" fill="#E8F3FC"/>
+    <circle cx="27" cy="24" r="17" fill="#005A9E"/>
+    <text x="27" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">A</text>
+    <text x="310" y="31" text-anchor="middle" font-size="21" font-weight="700" fill="#172B4D">GPO absent from actual results</text>
+    <rect class="question" x="70" y="68" width="480" height="76" rx="12"/>
+    <text x="310" y="106" text-anchor="middle" font-size="17" font-weight="700" fill="#172B4D">Selected DC, named-replica scope,</text>
+    <text x="310" y="130" text-anchor="middle" font-size="17" font-weight="700" fill="#172B4D">and GPC/GPT reads correct?</text>
+    <path class="branch" d="M310 144 L310 171"/>
+    <rect class="exit" x="20" y="178" width="135" height="42" rx="7"/>
+    <rect class="exit" x="168" y="178" width="135" height="42" rx="7"/>
+    <rect class="exit" x="316" y="178" width="135" height="42" rx="7"/>
+    <rect class="exit" x="464" y="178" width="135" height="42" rx="7"/>
+    <text x="87" y="204" text-anchor="middle" font-size="14" font-weight="700" fill="#172B4D">Discovery</text>
+    <text x="235" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Scope or</text>
+    <text x="235" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Definition</text>
+    <text x="383" y="204" text-anchor="middle" font-size="14" font-weight="700" fill="#172B4D">Retrieval</text>
+    <text x="531" y="197" text-anchor="middle" font-size="12" font-weight="700" fill="#172B4D">Replication only if</text>
+    <text x="531" y="212" text-anchor="middle" font-size="12" font-weight="700" fill="#172B4D">replicas differ</text>
+  </g>
+
+  <!-- B: Denied -->
+  <g class="font" transform="translate(725 185)">
+    <rect class="card" width="620" height="235" rx="12"/>
+    <rect width="620" height="48" rx="10" fill="#E8F3FC"/>
+    <rect y="38" width="620" height="10" fill="#E8F3FC"/>
+    <circle cx="27" cy="24" r="17" fill="#005A9E"/>
+    <text x="27" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">B</text>
+    <text x="310" y="31" text-anchor="middle" font-size="21" font-weight="700" fill="#172B4D">GPO present but denied</text>
+    <rect class="question" x="55" y="68" width="510" height="76" rx="12"/>
+    <text x="310" y="108" text-anchor="middle" font-size="18" font-weight="700" fill="#172B4D">What denial reason do actual</text>
+    <text x="310" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="#172B4D">RSoP and events record?</text>
+    <path class="branch" d="M310 144 L310 171"/>
+    <rect class="exit" x="45" y="178" width="160" height="42" rx="7"/>
+    <rect class="exit" x="230" y="178" width="160" height="42" rx="7"/>
+    <rect class="exit" x="415" y="178" width="160" height="42" rx="7"/>
+    <text x="125" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Security, token,</text>
+    <text x="125" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Read and Apply</text>
+    <text x="310" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Scope: WMI, side,</text>
+    <text x="310" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">link or status</text>
+    <text x="495" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Retrieval:</text>
+    <text x="495" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">GPC/GPT access</text>
+  </g>
+
+  <!-- C: Precedence -->
+  <g class="font" transform="translate(55 445)">
+    <rect class="card" width="620" height="235" rx="12"/>
+    <rect width="620" height="48" rx="10" fill="#F3E8FD"/>
+    <rect y="38" width="620" height="10" fill="#F3E8FD"/>
+    <circle cx="27" cy="24" r="17" fill="#5C2D91"/>
+    <text x="27" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">C</text>
+    <text x="310" y="31" text-anchor="middle" font-size="21" font-weight="700" fill="#172B4D">Result or precedence unexpected</text>
+    <rect class="question" x="100" y="68" width="420" height="76" rx="12"/>
+    <text x="310" y="121" text-anchor="middle" font-size="19" font-weight="700" fill="#172B4D">Single-winner setting?</text>
+    <path class="branch" d="M240 144 L240 166 L160 166 L160 175"/>
+    <path class="branch" d="M380 144 L380 166 L460 166 L460 175"/>
+    <text x="190" y="158" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">YES</text>
+    <text x="430" y="158" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">NO</text>
+    <rect class="exit" x="45" y="178" width="230" height="42" rx="7"/>
+    <rect class="exit" x="345" y="178" width="230" height="42" rx="7"/>
+    <text x="160" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Precedence, links, Enforced,</text>
+    <text x="160" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Block and loopback</text>
+    <text x="460" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">All contributors plus CSE</text>
+    <text x="460" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">merge and order semantics</text>
+  </g>
+
+  <!-- D: CSE work -->
+  <g class="font" transform="translate(725 445)">
+    <rect class="card" width="620" height="235" rx="12"/>
+    <rect width="620" height="48" rx="10" fill="#F3E8FD"/>
+    <rect y="38" width="620" height="10" fill="#F3E8FD"/>
+    <circle cx="27" cy="24" r="17" fill="#5C2D91"/>
+    <text x="27" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">D</text>
+    <text x="310" y="31" text-anchor="middle" font-size="21" font-weight="700" fill="#172B4D">Expected CSE work absent, failed, or deferred</text>
+    <rect class="question" x="55" y="68" width="510" height="76" rx="12"/>
+    <text x="310" y="106" text-anchor="middle" font-size="17" font-weight="700" fill="#172B4D">Content, eligibility, trigger, and paired</text>
+    <text x="310" y="130" text-anchor="middle" font-size="17" font-weight="700" fill="#172B4D">CSE start/completion present?</text>
+    <path class="branch" d="M310 144 L310 171"/>
+    <rect class="exit" x="20" y="178" width="135" height="42" rx="7"/>
+    <rect class="exit" x="168" y="178" width="135" height="42" rx="7"/>
+    <rect class="exit" x="316" y="178" width="135" height="42" rx="7"/>
+    <rect class="exit" x="464" y="178" width="135" height="42" rx="7"/>
+    <text x="87" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Definition or</text>
+    <text x="87" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Scope</text>
+    <text x="235" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">CSE return,</text>
+    <text x="235" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">timeout or local</text>
+    <text x="383" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Retrieval after</text>
+    <text x="383" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">CSE start</text>
+    <text x="531" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">If complete, test</text>
+    <text x="531" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">effective state</text>
+  </g>
+
+  <!-- E: Active value -->
+  <g class="font" transform="translate(55 705)">
+    <rect class="card" width="620" height="235" rx="12"/>
+    <rect width="620" height="48" rx="10" fill="#E7F6E7"/>
+    <rect y="38" width="620" height="10" fill="#E7F6E7"/>
+    <circle cx="27" cy="24" r="17" fill="#107C10"/>
+    <text x="27" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">E</text>
+    <text x="310" y="31" text-anchor="middle" font-size="21" font-weight="700" fill="#172B4D">Active Windows value not yet proved</text>
+    <rect class="question" x="85" y="68" width="450" height="76" rx="12"/>
+    <text x="310" y="108" text-anchor="middle" font-size="18" font-weight="700" fill="#172B4D">Supported on this target and active</text>
+    <text x="310" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="#172B4D">in the setting-specific subsystem?</text>
+    <path class="branch" d="M240 144 L240 166 L160 166 L160 175"/>
+    <path class="branch" d="M380 144 L380 166 L460 166 L460 175"/>
+    <text x="190" y="158" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">NO</text>
+    <text x="425" y="158" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">SUPPORTED</text>
+    <rect class="exit" x="45" y="178" width="230" height="42" rx="7"/>
+    <rect class="exit" x="345" y="178" width="230" height="42" rx="7"/>
+    <text x="160" y="204" text-anchor="middle" font-size="14" font-weight="700" fill="#172B4D">Definition/supportability</text>
+    <text x="460" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Effective state: CSE, persistence,</text>
+    <text x="460" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">activation or competing authority</text>
+  </g>
+
+  <!-- F: Behavior -->
+  <g class="font" transform="translate(725 705)">
+    <rect class="card" width="620" height="235" rx="12"/>
+    <rect width="620" height="48" rx="10" fill="#E7F6E7"/>
+    <rect y="38" width="620" height="10" fill="#E7F6E7"/>
+    <circle cx="27" cy="24" r="17" fill="#107C10"/>
+    <text x="27" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">F</text>
+    <text x="310" y="31" text-anchor="middle" font-size="21" font-weight="700" fill="#172B4D">Intended active value proved; behavior wrong</text>
+    <rect class="question" x="85" y="68" width="450" height="76" rx="12"/>
+    <text x="310" y="108" text-anchor="middle" font-size="18" font-weight="700" fill="#172B4D">Activation complete and consumer</text>
+    <text x="310" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="#172B4D">supports the enforced state?</text>
+    <path class="branch" d="M240 144 L240 166 L160 166 L160 175"/>
+    <path class="branch" d="M380 144 L380 166 L460 166 L460 175"/>
+    <text x="190" y="158" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">NO</text>
+    <text x="430" y="158" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">YES</text>
+    <rect class="exit" x="45" y="178" width="230" height="42" rx="7"/>
+    <rect class="exit" x="345" y="178" width="230" height="42" rx="7"/>
+    <text x="160" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Effective state:</text>
+    <text x="160" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">reload or restart pending</text>
+    <text x="460" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Application compatibility:</text>
+    <text x="460" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">consumer rejects or ignores</text>
+  </g>
+
+  <!-- G: Varies -->
+  <g class="font" transform="translate(55 965)">
+    <rect class="card" width="620" height="235" rx="12"/>
+    <rect width="620" height="48" rx="10" fill="#FFF4CE"/>
+    <rect y="38" width="620" height="10" fill="#FFF4CE"/>
+    <circle cx="27" cy="24" r="17" fill="#8A6D00"/>
+    <text x="27" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">G</text>
+    <text x="310" y="31" text-anchor="middle" font-size="21" font-weight="700" fill="#172B4D">Results vary between comparable targets</text>
+    <rect class="question" x="85" y="68" width="450" height="76" rx="12"/>
+    <text x="310" y="108" text-anchor="middle" font-size="18" font-weight="700" fill="#172B4D">Do named-DC link, GPC, or GPT</text>
+    <text x="310" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="#172B4D">data actually diverge?</text>
+    <path class="branch" d="M240 144 L240 166 L160 166 L160 175"/>
+    <path class="branch" d="M380 144 L380 166 L460 166 L460 175"/>
+    <text x="190" y="158" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">YES</text>
+    <text x="430" y="158" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">NO</text>
+    <rect class="exit" x="45" y="178" width="230" height="42" rx="7"/>
+    <rect class="exit" x="345" y="178" width="230" height="42" rx="7"/>
+    <text x="160" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Replication hypothesis;</text>
+    <text x="160" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">confirm convergence evidence</text>
+    <text x="460" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Discovery, retrieval, scope/token,</text>
+    <text x="460" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">supportability, or CSE trigger</text>
+  </g>
+
+  <!-- H: Slow -->
+  <g class="font" transform="translate(725 965)">
+    <rect class="card" width="620" height="235" rx="12"/>
+    <rect width="620" height="48" rx="10" fill="#FFF4CE"/>
+    <rect y="38" width="620" height="10" fill="#FFF4CE"/>
+    <circle cx="27" cy="24" r="17" fill="#8A6D00"/>
+    <text x="27" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">H</text>
+    <text x="310" y="31" text-anchor="middle" font-size="21" font-weight="700" fill="#172B4D">Processing is slow</text>
+    <rect class="question" x="70" y="68" width="480" height="76" rx="12"/>
+    <text x="310" y="108" text-anchor="middle" font-size="18" font-weight="700" fill="#172B4D">Which paired phase or CSE events</text>
+    <text x="310" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="#172B4D">contain the elapsed time?</text>
+    <path class="branch" d="M310 144 L310 171"/>
+    <rect class="exit" x="20" y="178" width="135" height="42" rx="7"/>
+    <rect class="exit" x="168" y="178" width="135" height="42" rx="7"/>
+    <rect class="exit" x="316" y="178" width="135" height="42" rx="7"/>
+    <rect class="exit" x="464" y="178" width="135" height="42" rx="7"/>
+    <text x="87" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Discovery:</text>
+    <text x="87" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">site or DC</text>
+    <text x="235" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Retrieval or</text>
+    <text x="235" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">WMI eligibility</text>
+    <text x="383" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Named CSE or</text>
+    <text x="383" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">dependency</text>
+    <text x="531" y="197" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">Effective state or</text>
+    <text x="531" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#172B4D">application startup</text>
+  </g>
+
+  <g class="font">
+    <rect x="105" y="1225" width="1190" height="64" rx="10" fill="#FDE7E9" stroke="#A4262C" stroke-width="3"/>
+    <text x="700" y="1252" text-anchor="middle" font-size="17" font-weight="700" fill="#A4262C">COLLECT FIRST</text>
+    <text x="700" y="1275" text-anchor="middle" font-size="16" fill="#172B4D">Do not refresh, restart, move objects, change links or permissions, or alter replication before preserving the failing instance.</text>
+
+    <path d="M700 1289 L700 1308" fill="none" stroke="#243A5E" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="75" y="1312" width="1250" height="78" rx="12" fill="#243A5E"/>
+    <text x="700" y="1342" text-anchor="middle" font-size="19" font-weight="700" fill="#FFFFFF">Every branch rejoins the evidence-first path</text>
+    <text x="700" y="1371" text-anchor="middle" font-size="17" fill="#FFFFFF">Preserve -> compare peer -> test one hypothesis -> safety gate -> smallest correction -> validate policy and behavior</text>
+  </g>
+</svg>

@@ -2,11 +2,12 @@
 uid: learn.wwl.apply-task-decomposition-multi-agent-azure.design-prompt-chain-workflows
 title: Design prompt chaining workflows
 metadata:
+  zone_pivot_groups: video-or-text
   title: Design Prompt Chaining Workflows
   description: "Design prompt chaining workflows."
-  ms.date: 05/26/2026
-  author: chrishowd
-  ms.author: cahowd
+  ms.date: 7/27/2026
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 8
 content: |

@@ -1,4 +1,4 @@
-In SQL Server 2017 and 2019, and with Azure SQL, Microsoft has introduced many new features into compatibility levels 140 and 150. Many of these features correct what were formerly anti-patterns like using user defined scalar value functions and using table variables. 
+In SQL Server 2017, 2019, and 2022, and with Azure SQL, Microsoft has introduced many new features into compatibility levels 140, 150, and 160. Many of these features correct what were formerly anti-patterns like using user defined scalar value functions and using table variables. 
 
 These features break down into a few families of features:
 
@@ -6,10 +6,10 @@ These features break down into a few families of features:
 
 Intelligent query processing includes features that improve existing workload performance with minimal implementation effort.
 
-To make workloads automatically eligible for intelligent query processing, change the applicable database compatibility level to 150. For example:
+To make workloads automatically eligible for intelligent query processing, change the applicable database compatibility level to 150 or higher. For SQL Server 2022 and Azure SQL, use compatibility level 160 to enable the full set of IQP features. For example:
 
 ```sql
-ALTER DATABASE [WideWorldImportersDW] SET COMPATIBILITY_LEVEL = 150;
+ALTER DATABASE [WideWorldImportersDW] SET COMPATIBILITY_LEVEL = 160;
 ```
 
 ## Adaptive query processing
@@ -22,7 +22,7 @@ Adaptive query processing includes many options that make query processing more 
 
 - **Memory Grant Feedback –** SQL Server generates a memory grant in the initial plan of the query, based on row count estimates from statistics. Severe data skew could lead to either over- or under-estimates of row counts, which can cause over-grants of memory that decrease concurrency, or under-grants, which can cause the query to spill data to tempdb. With Memory Grant Feedback, SQL Server detects these conditions and decreases or increases the amount of memory granted to the query to either avoid the spill or overallocation.
 
-These features are all automatically enabled under compatibility mode 150 and require no other changes to enable.
+These features are automatically enabled under compatibility level 140 or higher and require no other changes to enable.
 
 ## Table variable deferred compilation
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.project-perception-agentic-security-orientation.ai-era-security-paradigm-shift
+title: How coordinated multi-agent defense works
+metadata:
+  title: How Coordinated Multi-Agent Defense Works
+  description: "Understand why running security operations tasks as separate human-paced projects can't keep up with machine-paced attackers, and learn how coordinated multi-agent defense runs those tasks as one continuous workflow, handled by Red, Blue, and Green team agents."
+  ms.date: 08/03/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/ai-era-security-paradigm-shift.md)]

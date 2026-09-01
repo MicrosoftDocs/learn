@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-azure-netapp-files-security.knowledge-check
+title: Module assessment
+metadata:
+  unitType: knowledge_check
+  title: Module Assessment
+  description: Test your knowledge of managing Azure NetApp Files security.
+  ms.date: 07/23/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+    - content: "Which of the following options allows you to configure customer managed keys for encryption of Azure NetApp Files volumes?"
+      choices:
+        - content: "Azure Disk Encryption"
+          isCorrect: false
+          explanation: "Incorrect. Azure Disk Encryption isn't directly applicable to configuring customer managed keys for Azure NetApp Files volumes. It's primarily used for encrypting Azure virtual machine disks."
+        - content: "Azure Key Vault"
+          isCorrect: true
+          explanation: "Correct. Azure Key Vault allows you to configure customer managed keys for encryption of Azure NetApp Files volumes. By utilizing Azure Key Vault, you can centrally manage and control the encryption keys used to encrypt and decrypt the data within your Azure NetApp Files volumes."
+        - content: "Azure Storage Service Encryption"
+          isCorrect: false
+          explanation: "Incorrect. Azure Storage Service Encryption is a built-in encryption feature provided by Azure Storage that automatically encrypts data at rest within Azure NetApp Files volumes. It doesn't involve customer managed keys."
+        - content: "Azure Virtual Network"
+          isCorrect: false
+          explanation: "Incorrect. Azure Virtual Network Encryption is used to encrypt data in transit within an Azure virtual network, but it doesn't specifically relate to configuring customer managed keys for Azure NetApp Files volumes."
+    - content: "What is required before you create your first Azure NetApp Files volume that uses a customer-managed key?"
+      choices:
+        - content: "A platform-managed key must be exported from Azure and stored in the NetApp account."
+          isCorrect: false
+          explanation: "Incorrect. Platform-managed keys are generated, stored, and managed by Azure. They aren't exported or stored in the NetApp account by the customer."
+        - content: "An Azure Key Vault with at least one RSA key, soft delete and purge protection enabled, and a private endpoint in the same VNet as the Azure NetApp Files delegated subnet."
+          isCorrect: true
+          explanation: "Correct. Before creating a customer-managed key volume, you need an Azure Key Vault with at least one RSA key, soft delete and purge protection enabled, and an Azure Private Endpoint in the same VNet as the subnet delegated to Azure NetApp Files."
+        - content: "A public endpoint for Azure Key Vault in a different VNet from the Azure NetApp Files delegated subnet."
+          isCorrect: false
+          explanation: "Incorrect. The key vault must have an Azure Private Endpoint, and the private endpoint must be in the same VNet as the subnet delegated to Azure NetApp Files."
+        - content: "A volume encryption key generated manually by the storage administrator and uploaded to each Azure NetApp Files volume."
+          isCorrect: false
+          explanation: "Incorrect. Azure NetApp Files uses a key hierarchy and wraps the account encryption key with the customer-managed key. You don't manually generate and upload a volume encryption key for each volume."

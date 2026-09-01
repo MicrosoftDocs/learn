@@ -1,10 +1,21 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6bf1017b-74d5-4c6b-96c0-8f6b26b66262]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Agent Framework provides the model client and agent infrastructure for the dynamic task decomposition patterns in this unit. A meta-agent planner connects to a model hosted in Microsoft Foundry to analyze incoming requests and generate adaptive execution plans—selecting specialist agents and sequencing their tasks based on what each query actually requires.
 
 ## Distinguish static and dynamic decomposition approaches
 
 Static decomposition designs task workflows at development time—you decide in advance that equity research requests follow a three-step Extract-Benchmark-Analyze sequence. This approach works well when request patterns are predictable and relatively uniform. Dynamic decomposition inverts this model: an LLM analyzes the incoming task description and decides how to decompose it at runtime.
 
-For Contoso Capital's research platform, dynamic decomposition handles inherent request variability. A research request that asks "What's ACME Corp's current stock price?" needs one simple lookup. A request asking "Should we invest in ACME Corp given current macroeconomic conditions and sector trends?" requires multi-step analysis: retrieve financial data, analyze sector performance, assess economic indicators, synthesize investment thesis. The complexity difference is substantial, and a static decomposition forces you to either over-engineer simple tasks or under-serve complex ones.
+For Contoso Capital's research platform, dynamic decomposition handles inherent request variability. A research request that asks "What's Contoso's current stock price?" needs one simple lookup. A request asking "Should we invest in Contoso given current macroeconomic conditions and sector trends?" requires multi-step analysis: retrieve financial data, analyze sector performance, assess economic indicators, synthesize investment thesis. The complexity difference is substantial, and a static decomposition forces you to either over-engineer simple tasks or under-serve complex ones.
 
 | Decomposition type | When to use | Strengths | Limitations |
 |--------------------|-------------|-----------|-------------|
@@ -252,3 +263,5 @@ Now that you understand how to decompose tasks dynamically with meta-agent plann
 - **Reflection and replanning** enable agents to revise their plan when intermediate results reveal the initial decomposition was wrong—but limit replan cycles (typically one) to prevent infinite loops.
 - **Dynamic agent selection** matches subtasks to the best available agent based on capability fit and current load rather than hardcoded routing.
 - **Confidence scoring** in the planner's output flags low-certainty subtasks for validation, preventing wasted execution on speculative decompositions.
+
+::: zone-end

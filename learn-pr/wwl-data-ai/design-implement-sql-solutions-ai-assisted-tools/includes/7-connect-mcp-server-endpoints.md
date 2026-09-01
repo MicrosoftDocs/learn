@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=cb41493b-eade-45ac-88b0-c52802a09d0c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Model Context Protocol (MCP) servers provide AI assistants with direct access to your data sources, enabling more accurate and contextual suggestions. Building on the MCP concepts from the previous units, this unit covers how to connect to MCP server endpoints for Microsoft SQL Server, Azure SQL databases, and Fabric Lakehouse environments.
 
 ## Connect to SQL Server MCP endpoints
@@ -60,7 +71,7 @@ Azure SQL databases require network configuration for MCP connections:
 }
 ```
 
-## Connect to Fabric Lakehouse MCP endpoints
+## Connect to Fabric lakehouse MCP endpoints
 
 Microsoft Fabric provides MCP server capabilities through data agents, allowing AI assistants to query lakehouses, warehouses, and semantic models.
 
@@ -145,3 +156,5 @@ After configuring MCP endpoints, verify the connection is working:
 > Start with a development or test database when learning MCP configuration. Once you're comfortable with the setup, extend to additional environments as needed.
 
 With MCP endpoints configured, your AI assistant now has real-time access to your database schemas and metadata. Combined with custom instruction files from the previous unit, you have a fully configured, contextual AI development environment for your Microsoft SQL platforms.
+
+::: zone-end

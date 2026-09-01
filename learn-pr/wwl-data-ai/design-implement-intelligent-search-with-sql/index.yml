@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-intelligent-search-with-sql
 metadata:
-  title: Design and implement intelligent search with SQL
+  title: Design and Implement Intelligent Search With SQL
   description: Implement intelligent search capabilities in SQL Server and Azure SQL by combining traditional full-text search with semantic vector search. Learn to choose search approaches, prepare SQL for vector search, and implement vector, hybrid, and ranking-based search patterns.
-  ms.date: 02/03/2026
+  ms.date: 07/17/2026
   author: calopez
   ms.author: calopez
   ms.topic: module

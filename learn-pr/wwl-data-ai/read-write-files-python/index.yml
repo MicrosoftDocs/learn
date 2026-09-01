@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.read-write-files-python
+metadata:
+  title: Read and Write Files
+  description: Learn how to read from and write to files in Python using context managers to keep your code safe and clean.
+  ms.date: 08/19/2026
+  ms.service: visual-studio
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
+title: Read and write files
+summary: Learn how to read from and write to files in Python using context managers to keep your code safe and clean. 
+abstract: |
+  After completing this module, you're able to:
+  - Open files safely using context managers.
+  - Read data from text files.
+  - Write and append data to text files.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+subjects:
+  - app-development
+units:
+- learn.wwl.read-write-files-python.introduction
+- learn.wwl.read-write-files-python.open-files-safely-with-context-managers
+- learn.wwl.read-write-files-python.read-data-from-files
+- learn.wwl.read-write-files-python.write-data-to-files
+- learn.wwl.read-write-files-python.exercise-build-todo-list
+- learn.wwl.read-write-files-python.knowledge-check
+- learn.wwl.read-write-files-python.summary
+badge:
+  uid: learn.wwl.read-write-files-python.badge

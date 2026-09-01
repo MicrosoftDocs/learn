@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: "Introduction to knowledge sharing within development teams, importance of preserving organizational learning, and overview of Azure DevOps Wikis, GitHub documentation, and Microsoft Teams integration for effective collaboration and knowledge retention."
   ms.date: 10/21/2025
-  author: LuizMacedo
-  ms.author: lumac
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 2
 content: |

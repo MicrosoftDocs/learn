@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1088e655-0f29-4129-aec6-015347452aef]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 You've spent the preceding units learning v1 production patterns and v2 equivalents side by side. This unit brings it together as a structured migration guide. You'll update SDK packages, rewrite client initialization, migrate each API surface, and verify the result—with side-by-side code for every major change.
 
 > [!NOTE]
@@ -104,7 +115,7 @@ In production, call `create_version()` during deployment, not on every request. 
 
 This section covers the most significant code changes: thread creation, message injection, run creation, and the polling loop.
 
-### Thread creation → Conversation creation
+### Thread creation → conversation creation
 
 **Before (Agents v1):**
 ```python
@@ -133,7 +144,7 @@ openai.conversations.items.create(
 )
 ```
 
-### Run creation and polling → Response creation
+### Run creation and polling → response creation
 
 The v1 polling loop—the most complex code in any v1 agent—is replaced by a single synchronous call.
 
@@ -181,7 +192,7 @@ The `AgentRunStatus` taxonomy (`queued`, `in_progress`, `completed`, `requires_a
 
 ## Migrate tool handling
 
-### `requires_action` loop → output item iteration
+### `requires_action` Loop → output item iteration
 
 The v1 tool submission pattern—polling for `requires_action`, calling `submit_tool_outputs_and_poll()`—is replaced by iterating output items.
 
@@ -289,3 +300,5 @@ After updating your code, run through this verification checklist before promoti
 - **The polling loop is eliminated**—replace `run.status` polling and `AgentRunStatus` checks with a single synchronous `responses.create()` call; handle failures with standard exception handling.
 - **Tool handling** moves from `requires_action` + `submit_tool_outputs_and_poll()` to iterating `response.output` for `function_call` items and passing `function_call_output` results as input to the next response.
 - **Tool availability changes require architectural decisions**—Azure Functions tool is removed in v2 (migrate to Function tool via MCP), while Web Search, Image Generation, and A2A are new additions exclusive to v2.
+
+::: zone-end

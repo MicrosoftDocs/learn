@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e103bc3b-7e61-4a71-a218-13fa5cf5283b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Monitor detects anomalies, threshold breaches, and failure signatures in multi-agent production systems, triggering automated remediation through Azure Automation runbooks. Together, these services reduce mean time to recovery for well-understood failure patterns—from manual investigation that can span 45 minutes or more to automated resolution in under two minutes.
 
 Adventure Works has diagnosed the same payment gateway timeout failure three times in six months. Each time, an engineer spends 45 minutes investigating, identifies that the gateway's health endpoint is returning 503, manually fails over to the backup payment provider, and files a support ticket with the payment vendor. This repetitive manual response wastes engineering time and delays customer service restoration. For well-understood failure patterns that recur predictably, automated detection and remediation can reduce mean time to recovery from 45 minutes to under 2 minutes while freeing engineers to focus on novel incidents that require human problem-solving.
@@ -213,3 +224,5 @@ MTTR and MTBF are the SLIs that measure Adventure Works' incident-response effec
 - **Circuit breakers** detect repeated tool failures over a sliding window and automatically route traffic to fallback services, preventing cascading failures across the agent ecosystem.
 - **Safety constraints** ensure runbooks are idempotent, time-limited, rate-limited, and comprehensively logged, with novel failures always requiring human judgment.
 - **Escalation ladders** define explicit response tiers (L1, L2, service owner) with automatic escalation when acknowledgment SLAs aren't met, preventing incidents from falling through the cracks.
+
+::: zone-end

@@ -5,11 +5,11 @@ metadata:
   title: Summary
   description: "Get a summary of what you learned about developing your first AI
     agent with Microsoft Foundry."
-  ms.date: 4/29/2026
+  ms.date: 7/27/2026
   author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: unit
   zone_pivot_groups: video-or-text
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]

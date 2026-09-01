@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-reusable-code-python.return-values-from-functions
+title: Return values from functions
+metadata:
+  title: Return Values from Functions
+  description: "Learn how to return values from functions and use them in the rest of your program."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-return-values-from-functions.md)]

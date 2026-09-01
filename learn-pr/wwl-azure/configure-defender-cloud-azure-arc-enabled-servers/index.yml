@@ -2,35 +2,25 @@
 uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers
 metadata:
   title: Configure Microsoft Defender for Cloud for Azure Arc-enabled servers
-  description: "By the end of this module, you'll understand how Microsoft Defender for Cloud for Azure Arc-enabled servers can help you protect your cloud-based applications from various cyber threats."
-  ms.date: 06/11/2024
+  description: "Configure Defender for Servers for on-premises Windows and Linux servers, connect the servers to Azure Arc, and verify their protection status."
+  ms.date: 08/16/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.custom:
   - N/A
   ms.service: azure
   ai-usage: human-only
 title: Configure Microsoft Defender for Cloud for Azure Arc-enabled servers
-summary: By the end of this module, you'll understand how Microsoft Defender for Cloud for Azure Arc-enabled servers can help you protect your cloud-based applications from various cyber threats.
+summary: Learn how to enable Defender for Servers, connect on-premises Windows and Linux servers to Azure Arc, and verify Defender for Cloud coverage.
 abstract: |
   After completing this module, you'll be able to:
 
-  -   Explain Microsoft Defender for Cloud.
-
-  -   Secure cloud applications with&nbsp;Defender for Cloud.
-
-  -   Protect cloud workloads with&nbsp;Defender for Cloud.
-
-  -   Connect your non-Azure machines to Microsoft Defender for Cloud.
-
-  -   Connect on-premises machines by using Azure Arc.
-
-  -   Connect on-premises machines by using the Azure portal.
-
-  -   Onboard a Windows server.
-
-  -   Onboard a Linux server.
+  - Explain how Defender for Cloud and Defender for Servers protect hybrid machines.
+  - Compare Defender for Servers Plan 1 and Plan 2 for Azure Arc-enabled servers.
+  - Enable Defender for Servers for an Azure subscription.
+  - Generate and run Azure Arc onboarding scripts for Windows and Linux servers.
+  - Verify Azure Arc connectivity and Defender for Cloud coverage.
 prerequisites: None
 iconUrl: /training/achievements/microsoft-defender-module.svg
 levels:

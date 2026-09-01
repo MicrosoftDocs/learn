@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.convert-oracle-schema-azure-database-postgresql-ai.run-schema-conversion
+title: Run a schema conversion
+metadata:
+  title: Run a schema conversion
+  description: "Walk through the Migration Wizard to create a migration project, configure connections, run the schema conversion, and interpret the conversion report."
+  ms.date: 07/17/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-run-schema-conversion.md)]

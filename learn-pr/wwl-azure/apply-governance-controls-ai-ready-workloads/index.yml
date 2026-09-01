@@ -5,7 +5,7 @@ metadata:
   description: "Discover classify AI assets enforce Azure Policy guardrails track data lineage and implement hands‑on governance controls securing compliant auditable AI deployments across infrastructure pipelines and sensitive data workflows."
   ms.date: 02/02/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure
 title: "Apply governance controls to AI-ready workloads"

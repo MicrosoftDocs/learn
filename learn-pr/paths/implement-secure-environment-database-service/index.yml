@@ -3,8 +3,8 @@ uid: learn.wwl.implement-secure-environment-database-service
 metadata:
   title: Implement a secure environment for a database service
   description: Implement a secure environment for a database service
-  ms.date: 05/06/2022
-  author: wwlpublish
+  ms.date: 08/04/2026
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: learning-path
 title: Implement a secure environment for a database service
@@ -14,7 +14,7 @@ prerequisites: |
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
   - Experience creating and configuring resources using the Azure portal
 summary: |
-  Implement SQL Server-based options for authentication and authorization, as well as Azure options for securing Azure SQL databases.  Explore encryption, firewalls and advanced threat protection.
+  Implement SQL Server-based options for authentication and authorization, and Azure options for securing Azure SQL databases. Explore encryption, firewalls, and advanced threat protection.
 iconUrl: /training/achievements/implement-a-secure-environment-for-a-database-service.svg
 levels:
 - intermediate

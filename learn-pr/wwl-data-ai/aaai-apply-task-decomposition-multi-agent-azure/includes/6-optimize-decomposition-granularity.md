@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9ad4b80b-2cec-4769-a4c3-7f5e7cc71c96]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry Agent Service supports everything from single-agent execution to complex multi-agent pipelines, so decisions about how many agents to use and where to draw task boundaries directly affect cost, latency, and output quality. This unit walks through how to measure those trade-offs and make decomposition decisions based on data rather than intuition.
 
 ## Understand the granularity tension
@@ -27,9 +38,12 @@ The data reveals decomposition's actual cost. For Contoso Capital, medium decomp
 | Total latency | 42s | 50s (+19%) | 61s (+45%) |
 | Token consumption | 8,200 | 10,600 (+29%) | 14,300 (+74%) |
 | Quality score (0-100) | 72 | 89 (+24%) | 92 (+28%) |
-| Cost per query | $0.16 | $0.21 (+31%) | $0.29 (+81%) |
+| Relative resource index (baseline=1.00) | 1.00 | 1.31 (+31%) | 1.81 (+81%) |
 
-The quality gain from medium to fine decomposition is 3 points (89 to 92) while cost increases by 38% ($0.21 to $0.29). For most use cases, medium decomposition provides better quality-to-cost ratio. Reserve fine decomposition for high-stakes analyses where maximum quality justifies the cost.
+> [!NOTE]
+> The values in this table are illustrative sample metrics for teaching purposes. They aren't official product pricing or guaranteed performance values.
+
+The quality gain from medium to fine decomposition is 3 points (89 to 92) while relative resource use increases by 38% (1.31 to 1.81). For most use cases, medium decomposition provides a better quality-to-resource ratio. Reserve fine decomposition for high-stakes analyses where maximum quality justifies the extra overhead.
 
 ## Draw task boundaries at capability interfaces
 
@@ -106,3 +120,5 @@ Present these trade-offs transparently to stakeholders. Product managers need to
 - **Draw task boundaries at capability interfaces** where one agent's expertise ends and another's begins, not at arbitrary step divisions.
 - **Avoid over-decomposition**—when multiple subtasks share the same context window and capability requirements, they should remain in one agent.
 - **Cost-quality trade-off analysis** with empirical data replaces subjective architecture debates with evidence-based decisions.
+
+::: zone-end

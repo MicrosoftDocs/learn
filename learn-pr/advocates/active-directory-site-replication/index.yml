@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.site-topology-replication
+metadata:
+  title: Active Directory sites, topology, and replication
+  description: Design Active Directory site topology and analyze Active Directory replication metadata, including Windows Server 2025 replication priority control.
+  ms.date: 04/28/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+title: Active Directory sites, topology, and replication
+summary: Build and validate Active Directory site topology and troubleshoot the replication that flows over it, including Windows Server 2025 priority boost.
+abstract: |
+  In this module, you'll:
+  - Design Active Directory sites, subnets, site links, and costs.
+  - Explain Knowledge Consistency Checker (KCC), Inter-Site Topology Generator (ISTG), bridgeheads, and connection objects.
+  - Identify topology anti-patterns and validate Domain Controller (DC) Locator and replication behavior for Windows Server 2025 readiness.
+  - Explain Update Sequence Numbers (USNs), high-watermarks, and up-to-dateness vectors and inspect linked-value and deleted-object metadata.
+  - Diagnose replication failures and apply replication priority boost in controlled scenarios.
+prerequisites: |
+  - Experience with Active Directory Sites and Services and Active Directory Domain Services (AD DS) replication concepts.
+  - Experience with `Repadmin`, AD DS replication, and domain controller operations.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+products:
+- windows-server
+units:
+- learn.wwl.site-topology-replication.introduction
+- learn.wwl.site-topology-replication.site-link-design
+- learn.wwl.site-topology-replication.topology-antipatterns
+- learn.wwl.site-topology-replication.replication-metadata-vectors
+- learn.wwl.site-topology-replication.replication-priority-boost
+- learn.wwl.site-topology-replication.exercise-evaluate-topology-replication
+- learn.wwl.site-topology-replication.knowledge-check
+- learn.wwl.site-topology-replication.summary
+badge:
+  uid: learn.wwl.site-topology-replication.badge

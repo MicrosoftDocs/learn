@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Introduction to keyless authentication for Java applications that use Azure OpenAI in Microsoft Foundry.
   ms.date: 05/20/2026
-  author: sarah-yo
-  ms.author: sayoung
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 1
 content: |

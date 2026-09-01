@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=24b7add4-af9e-4e84-98d6-3909561ef2c3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A SQL database project that builds successfully doesn't mean the stored procedures inside it return the right results. A procedure can compile with no errors and still calculate the wrong totals or skip a validation check. Testing catches these problems before they reach production.
 
 ## Understand database testing levels
@@ -125,3 +136,5 @@ When a test fails, the pipeline stops and the change doesn't reach staging or pr
 ## Key takeaways
 
 Database testing spans three levels: build validation for structural correctness, unit tests for logic verification, and integration tests for end-to-end workflows. SQL Server unit tests follow a three-phase structure of test preactions, test actions, and test post-actions. To verify stored procedure and function behavior, use test conditions like `Scalar Value`, `Row Count`, and `Expected Schema`. To test methods that should validate error handling paths, add the `ExpectedSqlException` attribute. Wire test projects into your CI/CD pipeline so a failing test blocks the deployment before changes reach staging or production. Together, these three layers form a safety net that lets your team deploy database changes with confidence instead of anxiety.
+
+::: zone-end

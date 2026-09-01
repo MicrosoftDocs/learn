@@ -5,8 +5,8 @@ metadata:
   title: Interpret Alerts from Scanner Tools
   description: "Understand CVSS scoring, assess exploitability, manage false positives, prioritize vulnerabilities, and establish security bug bars for effective remediation."
   ms.date: 10/22/2025
-  author: LuizMacedo
-  ms.author: lumac
+  author: petender
+  ms.author: petender
   ms.topic: unit
 durationInMinutes: 11
 content: |

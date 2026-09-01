@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.dpu.microsoft-365-school-productivity
+title: Use Microsoft 365 to stay productive throughout your school day
+metadata:
+  title: Use Microsoft 365 To Stay Productive Throughout Your School Day
+  description: Explore how Microsoft 365 can help you stay organized, manage assignments, and stay productive throughout the school day.
+  ms.date: 06/29/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-365
+summary: >
+  Explore how Microsoft 365 can help you stay organized, manage assignments, and stay productive throughout the school day.
+abstract: |
+prerequisites: |
+  - None
+iconUrl: /training/achievements/microsoft-365-school-productivity.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - m365
+units:
+- learn.dpu.microsoft-365-school-productivity.introduction
+- learn.dpu.microsoft-365-school-productivity.organize-your-day
+- learn.dpu.microsoft-365-school-productivity.exercise-plan-prioritize-word
+- learn.dpu.microsoft-365-school-productivity.research-draft-copilot
+- learn.dpu.microsoft-365-school-productivity.exercise-draft-assignment
+- learn.dpu.microsoft-365-school-productivity.knowledge-check
+- learn.dpu.microsoft-365-school-productivity.summary
+badge:
+  uid: learn.dpu.microsoft-365-school-productivity.badge

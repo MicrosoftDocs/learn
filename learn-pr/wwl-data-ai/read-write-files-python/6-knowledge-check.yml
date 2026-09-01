@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.read-write-files-python.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Check your learning on reading and writing files in Python."
+  ms.date: 06/18/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Why is it a best practice to open files using the `with` statement?"
+    choices:
+    - content: "It makes the file open faster."
+      isCorrect: false
+      explanation: "Incorrect. The `with` statement doesn't change how fast a file opens."
+    - content: "It automatically closes the file when the block finishes, even if an error occurs."
+      isCorrect: true
+      explanation: "Correct. A context manager guarantees the file is closed cleanly, which prevents resource leaks and data loss."
+    - content: "It converts the file contents into a list of strings."
+      isCorrect: false
+      explanation: "Incorrect. The `with` statement doesn't read or transform the file's contents on its own."
+  - content: "Which mode opens a file for writing and erases any existing content?"
+    choices:
+    - content: "\"r\""
+      isCorrect: false
+      explanation: "Incorrect. \"r\" opens a file for reading only."
+    - content: "\"a\""
+      isCorrect: false
+      explanation: "Incorrect. \"a\" opens a file for appending, which adds to existing content instead of erasing it."
+    - content: "\"w\""
+      isCorrect: true
+      explanation: "Correct. \"w\" opens a file for writing and clears any existing content when the file is opened."
+  - content: "What does the `.readlines()` method return?"
+    choices:
+    - content: "A single string containing the entire file."
+      isCorrect: false
+      explanation: "Incorrect. That's what `.read()` returns."
+    - content: "A list of strings, one for each line in the file."
+      isCorrect: true
+      explanation: "Correct. `.readlines()` returns each line as a separate string in a list, with newline characters included."
+    - content: "The number of lines in the file."
+      isCorrect: false
+      explanation: "Incorrect. `.readlines()` returns the actual lines, not a count. You can count them with `len()` after reading."

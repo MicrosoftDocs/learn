@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.devrel.understand-active-directory-schema
+metadata:
+  title: Understand the Active Directory Domain Services Schema
+  description: Understand how the Active Directory Domain Services schema defines directory data, controls behavior, replicates through a forest, and supports governed extensions.
+  ms.date: 07/30/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+title: Understand the Active Directory Domain Services Schema
+summary: Understand how the forest-wide schema defines classes, attributes, syntax, security, search behavior, and global catalog content. Inspect schema state safely, assess extension designs, trace deployment, and classify replication failures without changing a live directory.
+abstract: |
+  In this module, you'll:
+  - Explain how the schema defines and constrains directory objects across an Active Directory Domain Services forest.
+  - Interpret class definitions, attribute definitions, inheritance, links, identifiers, search behavior, and security metadata.
+  - Locate the schema partition, schema master, schema cache, and version by using supported read-only tools.
+  - Decide whether a requirement belongs in the schema, an existing attribute, or an external data store.
+  - Explain the permanence, governance, testing, deployment, cache, and replication requirements of a schema change.
+  - Evaluate indexing, global catalog, read-only domain controller, storage, replication, and access-control effects.
+  - Diagnose schema-version, cache, identifier, permission, and replication problems.
+prerequisites: |
+  - Familiarity with Active Directory Domain Services forests, domains, domain controllers, users, groups, and computers.
+  - Familiarity with distinguished names and basic Windows PowerShell syntax.
+  - Understanding of least privilege and controlled production change.
+  - Ability to interpret supplied command output without changing a live directory.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- windows-server
+subjects:
+- identity-access
+units:
+- learn.devrel.understand-active-directory-schema.introduction
+- learn.devrel.understand-active-directory-schema.build-schema-mental-model
+- learn.devrel.understand-active-directory-schema.locate-schema-partition
+- learn.devrel.understand-active-directory-schema.interpret-object-classes
+- learn.devrel.understand-active-directory-schema.interpret-schema-attributes
+- learn.devrel.understand-active-directory-schema.inspect-schema
+- learn.devrel.understand-active-directory-schema.track-schema-versions
+- learn.devrel.understand-active-directory-schema.govern-schema-changes
+- learn.devrel.understand-active-directory-schema.apply-schema-extensions
+- learn.devrel.understand-active-directory-schema.evaluate-schema-performance
+- learn.devrel.understand-active-directory-schema.protect-schema-data
+- learn.devrel.understand-active-directory-schema.troubleshoot-schema-replication
+- learn.devrel.understand-active-directory-schema.knowledge-check
+- learn.devrel.understand-active-directory-schema.summary
+badge:
+  uid: learn.devrel.understand-active-directory-schema.badge

@@ -3,9 +3,9 @@ uid: learn.az-104-manage-identities-governance
 metadata:
   title: 'AZ-104: Manage identities and governance in Azure'
   description: 'AZ-104: Manage identities and governance in Azure'
-  ms.date: 12/30/2025
+  ms.date: 06/23/2026
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: robbarefoot
   ms.topic: learning-path
 title: 'AZ-104: Manage identities and governance in Azure'
 prerequisites: |

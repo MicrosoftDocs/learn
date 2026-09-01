@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5835dafb-feea-4496-b5ca-320f30105b93]
+
+::: zone-end
+
+::: zone pivot="text"
+
 The [Azure AI Language service](/azure/ai-services/language-service/overview) provides powerful tools and generative AI language models for working with text data. The integrations in the `azure_cognitive` schema of the `azure_ai` extension offer access to this rich set of natural language understanding and processing features accessible directly from the database. The functionalities include sentiment analysis, language detection and translation, key phrase extraction, entity recognition, and text summarization. Here are the key aspects:
 
 **Sentiment analysis** predicts a given text's sentiment (positive, negative, or neutral). It assigns confidence scores to each sentiment label, helping you understand the emotional tone of user-generated content, reviews, or social media posts.
@@ -66,3 +74,5 @@ If performing text translation using the `translate` function, you must also pro
 -- the region setting is only required for the translate function
 SELECT azure_ai.set_setting('azure_cognitive.region', '{region}');
 ```
+
+::: zone-end

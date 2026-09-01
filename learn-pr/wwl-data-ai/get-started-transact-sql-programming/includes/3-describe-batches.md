@@ -7,7 +7,7 @@ Batches are delimited by the client application. How you mark the end of a batch
 In this example, there are two distinct batches each terminated with a `GO` statement:
 
 ```sql
-CREATE NEW <view_name>
+CREATE VIEW <view_name>
 AS ...
 GO
 CREATE PROCEDURE <procedure_name>
@@ -15,7 +15,7 @@ AS ...
 GO
 ```
 
-The batch terminator **GO** isn't a T-SQL keyword, but is one recognized by SSMS to indicate the end of a batch.
+The batch terminator `GO` isn't a T-SQL keyword; it's a command recognized by SSMS, the `sqlcmd` utility, and the mssql extension for Visual Studio Code to signal the end of a batch.
 
 Keep two important considerations in mind when you work with T-SQL batches:
 

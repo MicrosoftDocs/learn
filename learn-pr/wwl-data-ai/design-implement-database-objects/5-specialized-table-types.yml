@@ -2,11 +2,12 @@
 uid: learn.wwl.design-implement-database-objects.specialized-table-types
 title: Use specialized table types
 metadata:
-  title: Use specialized table types
+  zone_pivot_groups: video-or-text
+  title: Use Specialized Table Types
   description: "Learn how to implement in-memory, temporal, external, LEDGER, and GRAPH tables"
-  ms.date: 02/24/2026
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 07/01/2026
+  author: calopez
+  ms.author: calopez
   ms.topic: unit
 azureSandbox: false
 labModal: false

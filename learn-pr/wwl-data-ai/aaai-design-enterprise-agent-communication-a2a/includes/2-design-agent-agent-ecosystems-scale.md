@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=37836522-4e24-4c6b-9b45-b8e8b5403e3e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure AI Foundry Agent Service hosts A2A agents as independently deployable services, each advertising its capabilities through an authenticated agent card at the `agentCard/v0.3` endpoint. Azure Cosmos DB provides the central discovery registry where agents register on startup and clients query at runtime—eliminating hardcoded endpoint dependencies and supporting ecosystems that scale to hundreds of agents across regions.
 
 | Challenge | Impact | Solution Pattern |
@@ -156,3 +167,5 @@ With a scalable discovery registry and capability-based routing in place, the ne
 - **Capability-based routing** matches incoming tasks to agents by what they can do, not by their deployment address—enabling transparent scaling and failover.
 - **Load distribution** across equivalent agent instances uses round-robin, least-connections, or weighted routing to prevent hotspots.
 - **Dynamic registration and deregistration** support zero-downtime deployments where new agent versions register, receive traffic, and old versions drain gracefully.
+
+::: zone-end

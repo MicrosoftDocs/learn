@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.advanced-group-policy-troubleshooting.automate-evidence-collection
+title: Automate evidence collection and prepare safe recovery
+metadata:
+  title: Automate Evidence Collection and Prepare Safe Recovery
+  description: Automate repeatable Group Policy inventory, reporting, comparison, backup, change evidence, and sanitized support collection without automating unsafe changes.
+  ms.date: 08/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/10-automate-evidence-collection.md)]

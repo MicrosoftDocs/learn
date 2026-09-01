@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.work-smarter-copilot-it.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Work smarter with Copilot prompts for IT professionals" module.
+  ms.date: 06/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary purpose of the Microsoft 365 Copilot Chat prompt used in the \"Plan the day\" workflow?"
+    choices:
+        - content: "To block focused time for system maintenance and add buffers around on-call meetings"
+          isCorrect: true
+          explanation: "Correct. The prompt is designed to use calendar, incident, and change workflow information to schedule focused maintenance time while accounting for on-call meetings."
+        - content: "To automatically resolve active incidents"
+          isCorrect: false
+          explanation: "Incorrect. The workflow helps organize and schedule work but doesn't resolve incidents."
+        - content: "To generate an incident summary and root cause analysis"
+          isCorrect: false
+          explanation: "Incorrect. Incident summaries are generated later using Copilot in Word or OneNote."
+        - content: "To create a stakeholder update email"
+          isCorrect: false
+          explanation: "Incorrect. Stakeholder updates are part of a separate incident communication workflow."
+  - content: "What does Copilot in Word or OneNote help an IT professional create during incident investigation?"
+    choices:
+        - content: "A one-page incident summary using ticket details, logs, and notes"
+          isCorrect: true
+          explanation: "Correct. The module describes using Copilot to consolidate ticket details, logs, and notes into a one-page incident summary that includes impact, root cause hypotheses, and next steps."
+        - content: "A completed ticket closure report with final approval"
+          isCorrect: false
+          explanation: "Incorrect. The module discusses summarizing incident information, not automatically generating approved closure reports."
+        - content: "A maintenance schedule for future system updates"
+          isCorrect: false
+          explanation: "Incorrect. Maintenance scheduling is covered in the planning workflow, not incident investigation."
+        - content: "A translated version of the incident in multiple languages"
+          isCorrect: false
+          explanation: "Incorrect. Translation capabilities are discussed separately in the Live Captions section."
+  - content: "Why does the module recommend reviewing content rewritten with Click to Do before sharing it externally?"
+    choices:
+        - content: "To confirm it's accurate, appropriate for the audience, and aligned with organizational policies"
+          isCorrect: true
+          explanation: "Correct. The module specifically advises reviewing rewritten content before sharing externally."
+        - content: "To ensure the original text is permanently deleted"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't mention deleting the original text."
+        - content: "To enable the content to be shared outside Microsoft Teams"
+          isCorrect: false
+          explanation: "Incorrect. No sharing restriction of this kind is described."
+        - content: "To allow Click to Do to complete the rewrite process"
+          isCorrect: false
+          explanation: "Incorrect. The rewrite process is already complete before the review step."
+  - content: "How does Improved Windows Search help IT professionals find previous incident resources?"
+    choices:
+        - content: "It can surface files based on their content using natural-language searches"
+          isCorrect: true
+          explanation: "Correct. The module explains that Improved Windows Search can find relevant files based on content, not just file names."
+        - content: "It searches only file names and folder names"
+          isCorrect: false
+          explanation: "Incorrect. The module explicitly states that search results can be based on file content."
+        - content: "It's limited to finding PowerShell scripts"
+          isCorrect: false
+          explanation: "Incorrect. A PowerShell script is provided only as an example search query."
+        - content: "It searches only email attachments"
+          isCorrect: false
+          explanation: "Incorrect. The module describes searching across supported file types, not only attachments."
+  - content: "What important guidance does the module provide when using Copilot in Teams for meeting summaries and follow-up communications?"
+    choices:
+        - content: "Review Copilot-generated notes for accuracy, and understand that automated emailing depends on permissions and tenant configuration"
+          isCorrect: true
+          explanation: "Correct. The module advises reviewing generated summaries for accuracy and notes that automated emailing depends on organizational configuration and permissions."
+        - content: "Allow Copilot to send all follow-up emails automatically without review"
+          isCorrect: false
+          explanation: "Incorrect. The module explicitly recommends reviewing generated content before sharing."
+        - content: "Use Copilot only during live meetings because summaries can't be accessed afterward"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't state any such limitation."
+        - content: "Avoid using Copilot for tracking decisions and next steps"
+          isCorrect: false
+          explanation: "Incorrect. Tracking decisions and next steps is described as one of Copilot's benefits in Teams."

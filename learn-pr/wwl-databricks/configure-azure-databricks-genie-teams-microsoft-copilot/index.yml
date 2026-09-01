@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot
+metadata:
+  title: Configure Azure Databricks Genie for Microsoft Teams and Microsoft Copilot
+  description: "Prepare Azure Databricks and Microsoft 365 so business users can access governed data through Databricks Genie in Microsoft Teams and Microsoft Copilot."
+  ms.date: 08/26/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: azure-databricks
+  ai-usage: ai-generated
+title: Configure Azure Databricks Genie for Microsoft Teams and Microsoft Copilot
+summary: Prepare and deploy the Databricks Genie app so business users can query governed Azure Databricks data from Microsoft Teams and Microsoft Copilot.
+abstract: |
+  After completing this module, you can:
+  - Explain the architecture and administrative responsibilities for the Databricks Genie integration.
+  - Assess whether Azure Databricks and Microsoft 365 meet the integration prerequisites.
+  - Prepare an Azure Databricks workspace for collaboration-platform access.
+  - Validate that a Genie Agent and Unity Catalog permissions provide governed access.
+  - Review the Microsoft permissions and consent requirements for the Databricks Genie app.
+  - Deploy and configure the Databricks Genie app for selected users and Teams channels.
+prerequisites: |
+  - Familiarity with Azure Databricks workspaces, Unity Catalog, and SQL warehouses.
+  - Familiarity with Microsoft Teams app administration.
+  - Basic understanding of Microsoft Entra consent and enterprise applications.
+iconUrl: /learn/achievements/azure-databricks.svg
+levels:
+- intermediate
+roles:
+- administrator
+- data-engineer
+products:
+- azure-databricks
+- ms-copilot
+- m365
+- office-teams
+subjects:
+- artificial-intelligence
+- data-management
+- identity-access
+units:
+- learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.introduction
+- learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.explain-architecture-ownership
+- learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.assess-deployment-readiness
+- learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.prepare-azure-databricks-workspace
+- learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.validate-genie-agent-data-access
+- learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.review-app-permissions-security
+- learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.deploy-configure-databricks-genie
+- learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.knowledge-check
+- learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.summary
+badge:
+  uid: learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot.badge

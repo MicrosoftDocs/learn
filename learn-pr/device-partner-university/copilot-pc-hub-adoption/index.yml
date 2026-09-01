@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.dpu.copilot-pc-hub-adoption
+metadata:
+  title: "Use the Copilot+ PC Hub to get started with Copilot+ PCs"
+  description: "Learn how to use the Copilot+ PC Hub to explore Copilot+ PC experiences, discover role-based workflows, and continue learning through guided feature walkthroughs and workplace scenarios."
+  ms.date: 06/15/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module
+  ms.service: windows-11
+title: "Use the Copilot+ PC Hub to get started with Copilot+ PCs"
+summary: "Learn how to use the Copilot+ PC Hub to explore Copilot+ PC experiences, discover role-based workflows, and continue learning through guided feature walkthroughs and workplace scenarios."
+abstract: |
+  In this module, you learn how to:
+  - Identify Copilot+ PC experiences available through the hub
+  - Describe the purpose of the Copilot+ PC Hub
+  - Explore role-based scenarios and productivity workflows
+  - Explain how the hub can be used as a continued learning resource for Copilot+ PC adoption
+prerequisites: |
+  - Familiarity with Windows devices
+  - Access to the Copilot+ PC Hub
+iconUrl: /training/achievements/copilot-pc-hub-adoption.svg
+levels:
+- beginner
+roles:
+- business-user
+products:
+- windows
+subjects:
+- productivity
+units:
+- learn.dpu.copilot-pc-hub-adoption.introduction
+- learn.dpu.copilot-pc-hub-adoption.explore-copilot-pc-hub
+- learn.dpu.copilot-pc-hub-adoption.discover-experiences
+- learn.dpu.copilot-pc-hub-adoption.role-based-workflows
+- learn.dpu.copilot-pc-hub-adoption.knowledge-check
+- learn.dpu.copilot-pc-hub-adoption.summary
+badge:
+  uid: learn.dpu.copilot-pc-hub-adoption.badge

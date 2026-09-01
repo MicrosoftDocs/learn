@@ -37,6 +37,9 @@ Here is an example of a custom error message using this syntax:
 sp_addmessage 50001, 10, N’Unexpected value entered’;
 ```
 
+> [!NOTE]
+> `sp_addmessage` is supported on SQL Server only. On Azure SQL Database and Azure SQL Managed Instance, `sp_addmessage` isn't supported, so you can't reference a `msg_id` greater than 50000. On those platforms, use inline `RAISERROR` with a message string, or `THROW` combined with `FORMATMESSAGE()`, instead.
+
 In addition, you can define custom error messages, members of the *sysadmin server* role can also use an additional parameter, **@with_log**. When set to TRUE, the error will also be recorded in the Windows Application log. Any message written to the Windows Application log is also written to the SQL Server error log. Be judicious with the use of the @with_log option because network and system administrators tend to dislike applications that are “chatty” in the system logs. However, if the error needs to be trapped by an alert, the error must first be written to the Windows Application log.
 
 > [!NOTE]
@@ -51,20 +54,23 @@ The messages are customizable and different ones can be added for the same error
 
 ## Raise errors using RAISERROR
 
-Both PRINT and RAISERROR can be used to return information or warning messages to applications. RAISERROR allows applications to raise an error that could then be caught by the calling process.
+> [!NOTE]
+> `RAISERROR` is deprecated for new development. Use `THROW` for new T-SQL code. `RAISERROR` remains useful for legacy code, for raising severity levels above 16 (which `THROW` can't do directly), and for `printf`-style dynamic message formatting (the modern alternative is `FORMATMESSAGE()` combined with `THROW`).
+
+Both `PRINT` and `RAISERROR` can be used to return information or warning messages to applications. `RAISERROR` allows applications to raise an error that could then be caught by the calling process.
 
 ### RAISERROR
 
-The ability to raise errors in T-SQL makes error handling in the application easier, because it's sent like any other system error. RAISERROR is used to:
+The ability to raise errors in T-SQL makes error handling in the application easier, because it's sent like any other system error. `RAISERROR` is used to:
 
 - Help troubleshoot T-SQL code.
 - Check the values of data.
 - Return messages that contain variable text.
 
 > [!NOTE]
-> Using a PRINT statement is similar to raising an error of severity 10.
+> Using a `PRINT` statement is similar to raising an error of severity 10.
 
-Here is an example of a custom error message using RAISERROR.
+Here is an example of a custom error message using `RAISERROR`.
 
 ```sql
 RAISERROR (N'%s %d', -- Message text,
@@ -84,27 +90,30 @@ In the previous example, *%d* is a placeholder for a number and *%s* is a placeh
 
 ## Raise errors using THROW
 
-The THROW statement offers a simpler method of raising errors in code. Errors must have an error number of at least 50000.
+The `THROW` statement offers a simpler method of raising errors in code and is the recommended approach for new T-SQL development. Errors must have an error number of at least 50000.
 
 ### THROW
 
-THROW differs from RAISERROR in several ways:
+`THROW` differs from `RAISERROR` in several ways:
 
-- Errors raised by THROW are always severity 16.
-- The messages returned by THROW aren't related to any entries in sys.sysmessages.
-- Errors raised by THROW only cause transaction abort when used in conjunction with SET XACT_ABORT ON and the session is terminated.
+- When `THROW` raises a new exception, the severity is always 16. When `THROW` is used to rethrow an existing exception (parameterless `THROW` inside a `CATCH` block), the original exception's severity is preserved—this is why parameterless `THROW` is preferred for rethrowing system errors from a `CATCH` block.
+- The messages returned by `THROW` aren't related to any entries in `sys.messages`.
+- `THROW` honors `SET XACT_ABORT`. When `SET XACT_ABORT ON` is active, an exception raised by `THROW` automatically rolls back the current transaction. `RAISERROR` doesn't honor `SET XACT_ABORT`—this is one of the main reasons `THROW` is preferred for new development.
+
+> [!IMPORTANT]
+> The statement immediately before `THROW` must end with a semicolon (`;`), otherwise you get a syntax error. This is a common stumbling block when adopting `THROW` in existing code that omits semicolons.
 
 ```sql
-THROW 50001, 'An Error Occured',0
+; THROW 50001, 'An error occurred', 1;
 ```
 
 ## Capture error codes using @@Error
 
-Most traditional error handling code in SQL Server applications has been created using @@ERROR. Structured exception handling was introduced in SQL Server 2005 and provides a strong alternative to using @@ERROR. It will be discussed in the next lesson. A large amount of existing SQL Server error handling code is based on @@ERROR, so it is important to understand how to work with it.
+Most traditional error handling code in SQL Server applications has been created using `@@ERROR`. Structured exception handling provides a more powerful alternative to using `@@ERROR` and is the recommended approach for new T-SQL code. It will be discussed in the next lesson. A large amount of existing SQL Server error handling code is based on `@@ERROR`, so it is important to understand how to work with it.
 
 ### @@ERROR
 
-@@ERROR is a system variable that holds the error number of the last error that has occurred. One significant challenge with @@ERROR is that the value it holds is quickly reset as each additional statement is executed.
+`@@ERROR` is a system variable that holds the error number of the last error that has occurred. One significant challenge with `@@ERROR` is that the value it holds is quickly reset as each additional statement is executed.
 
 For example, consider the following code:
 
@@ -123,8 +132,8 @@ Message
 Error=0
 ```
 
-The error was raised but the message printed was “Error=0”. In the first line of the output, you can see that the error, as expected, was actually 50000, with a message passed to RAISERROR. This is because the IF statement that follows the RAISERROR statement was executed successfully and caused the @@ERROR value to be reset.
-For this reason, when working with @@ERROR, it's important to capture the error number into a variable as soon as it's raised, and then continue processing with the variable.
+The error was raised but the message printed was “Error=0”. In the first line of the output, you can see that the error, as expected, was actually 50000, with a message passed to `RAISERROR`. This is because the `IF` statement that follows the `RAISERROR` statement was executed successfully and caused the `@@ERROR` value to be reset.
+For this reason, when working with `@@ERROR`, it's important to capture the error number into a variable as soon as it's raised, and then continue processing with the variable.
 
 Look at the following code that demonstrates this:
 
@@ -148,7 +157,7 @@ The error number is correctly reported now.
 
 ### Centralizing error handling
 
-One other significant issue with using @@ERROR for error handling is that it's difficult to centralize within your T-SQL code. Error handling tends to end up scattered throughout the code. It would be possible to centralize error handling using @@ERROR to some extent, by using labels and GOTO statements. However, this would be frowned upon by most developers' today as a poor coding practice.
+One other significant issue with using `@@ERROR` for error handling is that it's difficult to centralize within your T-SQL code. Error handling tends to end up scattered throughout the code. It would be possible to centralize error handling using `@@ERROR` to some extent, by using labels and `GOTO` statements. However, this would be frowned upon by most developers' today as a poor coding practice.
 
 ## Create error alerts
 
@@ -158,4 +167,4 @@ For certain categories of errors, administrators might create SQL Server alerts,
 
 Alerts can be created for specific error messages. The alerting service works by registering itself as a callback service with the event logging service. This means that alerts only work on logged errors.
 
-There are two ways to make an error raise an alert—you can use the WITH LOG option when raising the error or the message can be altered to make it logged by executing sp_altermessage. The WITH LOG option affects only the current statement. Using sp_altermessage changes the error behavior for all future use. Modifying system errors via sp_altermessage is only possible from SQL Server 2005 SP3 or SQL Server 2008 SP1 onwards.
+There are two ways to make an error raise an alert—you can use the WITH LOG option when raising the error or the message can be altered to make it logged by executing sp_altermessage. The WITH LOG option affects only the current statement. Using sp_altermessage changes the error behavior for all future use.

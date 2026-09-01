@@ -1,11 +1,9 @@
 
 Tailwind Traders must ensure that the same file share content is reliably available in each branch office. However, its existing file server infrastructure makes that a challenge. Some smaller branch offices, such as the company's retail outlet in Wangaratta, Australia, don't have local file server endpoints. Access for retail outlets to files and folders occurs across a VPN connection to a file server in the Melbourne office.
 
-Another challenge for Tailwind Traders is that users are creating new files all the time. The volumes that host the file shares regularly end up full and require administrator intervention to free up disk space. 
+Another challenge for Tailwind Traders is that users are creating new files all the time. The volumes that host the file shares regularly end up full and require administrator intervention to free up disk space.
 
-This storage problem isn't limited to the volumes that host file shares. Several on-premises SQL databases keep expanding to the point that they consume existing storage capacity and database administrators must regularly add storage.
-
-In this unit, you learn how certain hybrid technologies allow Tailwind Traders to address its challenges with file server and SQL database replication and storage.
+In this unit, you learn how certain hybrid technologies allow Tailwind Traders to address its challenges with file server storage.
 
 ## What is an Azure file share?
 
@@ -33,12 +31,4 @@ The following image shows a basic Azure File Sync deployment.
 
 :::image type="content" source="../media/7-sync-deployment.png" alt-text="Diagram that shows on-premises file servers synchronized with Azure file shares in the cloud through storage sync agents." border="false" lightbox="../media/7-sync-deployment.png":::
 
-The Tailwind Traders company currently uses a distributed file system (DFS) to replicate a set of file shares across its locations in Australia and New Zealand. Azure File Sync would allow the company to replace DFS as the file-replication mechanism. The advantage is that it would allow Tailwind Traders to enable cloud tiering. This solution would solve its problems regarding file servers' space constraints when new files are created and stored regularly.
-
-## What is SQL Stretch Database?
-
-Microsoft SQL Server Stretch Database allows you to automatically migrate rarely accessed data transparently and securely to Azure. When a query is made against this migrated data, the query results return, but there's an increased delay over query time compared to data retrieved from tables stored on-premises.
-
-The advantage of SQL Server Stretch Database over other solutions in removing infrequently accessed data from the database is that the data remains online. It's not necessary to modify any existing queries, and the application remains unaware of the location of data.
-
-Tailwind Traders can enable Stretch Database on databases where the company needs to keep adding storage to accommodate table growth. When Stretch Database is enabled, infrequently accessed table data is transparently migrated to Azure on a continuous basis. Enabling Stretch Database allows new data to be written to tables, remaining on-premises, and close to the application that's performing the query while shifting colder data into Azure.
+The Tailwind Traders company currently uses a Distributed File System (DFS) to replicate a set of file shares across its locations in Australia and New Zealand. Azure File Sync would allow the company to replace DFS as the file-replication mechanism. The advantage is that it would allow Tailwind Traders to enable cloud tiering. This solution would solve its problems regarding file servers' space constraints when new files are created and stored regularly.

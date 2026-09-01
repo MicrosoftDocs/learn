@@ -4,18 +4,19 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Create and manage Active Directory objects
-  description: "This module focuses on the tasks associated with managing Active Directory objects and AD domain services domain controllers."
-  ms.date: 08/12/2025
+  description: "Learn how to create and manage Active Directory users, groups, organizational units, managed service accounts, and perform bulk management tasks and domain controller backup and restore operations."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.collection: N/A
   ms.custom:
   - N/A
-  ms.service: azure-active-directory
+  ms.service: entra-id
   ai-usage: ai-assisted
 title: Create and manage Active Directory objects
-summary: This module focuses on the tasks associated with creating and managing Active Directory objects and AD domain services domain controllers.
+summary: |
+  This module covers how to create and manage the core objects in Active Directory Domain Services (AD DS). You learn how to create and configure user accounts, security groups, organizational units (OUs), and managed service accounts including group managed service accounts (gMSA). You also perform bulk management tasks such as moving accounts and forcing password resets, and maintain domain controller availability through multi-master replication, Active Directory Recycle Bin, and authoritative and nonauthoritative restore operations.
 abstract: |
   By the end of this module, you'll be able to:
 

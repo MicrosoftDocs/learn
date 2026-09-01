@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-data-protection-azure-netapp-files.knowledge-check
+title: Module assessment
+metadata:
+  unitType: knowledge_check
+  title: Module Assessment
+  description: Test your knowledge of managing data protection with Azure NetApp Files.
+  ms.date: 07/22/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+    - content: "You're managing a critical production system that relies on a primary volume for data storage. The system experiences a hardware failure on the primary server, and you need to ensure minimal downtime and data loss. What needs to be done to fail over to the destination volume?"
+      choices:
+        - content: "Manually transfer the data from the primary volume to a new volume."
+          isCorrect: false
+          explanation: "Incorrect. Fail over to destination volume creates a redundant copy of the data on a secondary volume. This ensures data is replicated to the secondary volume and remains available if the primary volume fails, with no manual transfer required."
+        - content: "Redirect network traffic to a different destination using load balancers until the primary server is restored."
+          isCorrect: false
+          explanation: "Incorrect. Fail over to destination volume feature to create a redundant copy of the data on a secondary volume. This ensures data is replicated to the secondary volume and remains available if the primary volume fails, without requiring traffic redirection through load balancers."
+        - content: "Break replication peering then mount the destination volume."
+          isCorrect: true
+          explanation: "Correct. Failover is a manual process. When you need to activate the destination volume, you need to break replication peering then mount the destination volume."  
+        - content: "Create a redundant copy of the data on a secondary volume using the 'Fail over to destination volume' feature."
+          isCorrect: false
+          explanation: "Incorrect. Fail over to destination volume creates a redundant copy of the data on a secondary volume. This ensures that the data is replicated and available on the secondary volume if there's a failure on the primary volume and no need for creating a redundant copy of the data is required."
+    - content: "You're responsible for monitoring the replication health and status of a critical data replication relationship in Azure. You need to ensure that the replication is functioning correctly and take appropriate actions if any issues arise. Which information about replication status and health displays that the future transfer isn't disabled?"
+      choices:
+        - content: "Relationship status showing Idle"
+          isCorrect: true
+          explanation: "Correct. Relationship status shows one of the following values: Idle (no transfer operation is in progress and future transfers aren't disabled) or Transferring (a transfer operation is in progress and future transfers aren't disabled)."
+        - content: "End point type"
+          isCorrect: false
+          explanation: "Incorrect. End point type identifies whether the volume is the source or destination of replication."
+        - content: "Health"
+          isCorrect: false
+          explanation: "Incorrect. Health displays the overall health status of the replication relationship."
+        - content: "Replication schedule"
+          isCorrect: false
+          explanation: "Incorrect. Replication schedule shows how frequently incremental mirroring updates are performed when initialization is complete."

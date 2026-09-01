@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a0255aa6-1cc9-4a52-9035-539940c8cdcd]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB and Azure Managed Redis work together to manage shared state for multi-agent workflows. Cosmos DB provides durable, globally replicated storage for task state that must survive process restarts, while Managed Redis provides a low-latency cache and pub/sub channel for fast reads and real-time invalidation.
 
 | State Pattern | Use Case | Trade-offs |
@@ -252,3 +263,5 @@ The distributed state management patterns—durable storage in Cosmos DB, hot ca
 - **Hot caching in Redis** provides sub-millisecond reads for frequently accessed state, with TTL-based expiration to prevent stale data.
 - **Optimistic concurrency** with Cosmos DB ETags detects concurrent modifications and rejects conflicting writes rather than silently overwriting.
 - **Pub/sub cache invalidation** notifies agents when shared state changes, reducing polling overhead and ensuring sequential pipeline stages read current data.
+
+::: zone-end

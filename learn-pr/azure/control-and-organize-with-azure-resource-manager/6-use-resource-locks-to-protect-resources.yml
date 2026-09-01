@@ -5,8 +5,8 @@ metadata:
   title: Use resource locks to protect resources
   description: In this unit, we'll discuss how to use resource locks to protect resources.
   ms.date: 10/29/2024
-  author: mumian
-  ms.author: jgao
+  author: wwlpublish
+  ms.author: cynthist
   ms.topic: unit
 durationInMinutes: 7
 content: |

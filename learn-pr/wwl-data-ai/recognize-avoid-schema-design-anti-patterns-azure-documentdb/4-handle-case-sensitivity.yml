@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb.handle-case-sensitivity
+title: Handle case sensitivity in queries and data
+metadata:
+  title: Handle Case Sensitivity in Queries and Data
+  description: "Detect and resolve case-sensitivity issues in Azure DocumentDB that cause duplicate data and failed lookups by normalizing fields on write and applying unique indexes."
+  ms.date: 04/16/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-handle-case-sensitivity.md)]

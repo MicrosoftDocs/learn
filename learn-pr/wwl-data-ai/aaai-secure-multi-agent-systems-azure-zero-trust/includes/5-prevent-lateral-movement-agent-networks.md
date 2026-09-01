@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ec3f1eca-46b8-448b-bdaa-1781d1985f26]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Kubernetes Service network policies, Azure Private Link, and Microsoft Sentinel work together to prevent compromised agents from moving laterally through your infrastructure. In this unit, you define explicit traffic allow-lists, eliminate public endpoints, enforce mutual TLS between agent services, and detect anomalous communication patterns.
 
 | Network Control | Defense Mechanism | Implementation Technology |
@@ -259,3 +270,5 @@ With network lateral movement defenses in place, the next security layer is mult
 - **Private endpoints** eliminate public-facing agent APIs, routing all traffic through Azure Private Link within virtual networks.
 - **Mutual TLS** between all agent services ensures both sides of every connection authenticate, preventing man-in-the-middle interception.
 - **Anomaly monitoring** detects unusual lateral communication patterns (new destinations, unusual protocols, traffic volume spikes) as early indicators of compromised agents.
+
+::: zone-end
