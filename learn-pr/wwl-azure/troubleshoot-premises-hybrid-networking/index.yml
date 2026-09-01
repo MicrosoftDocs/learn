@@ -2,8 +2,8 @@
 uid: learn.wwl.troubleshoot-premises-hybrid-networking
 metadata:
   title: Troubleshoot on-premises and hybrid networking
-  description: "Learn to troubleshoot on-premises connectivity and hybrid network connectivity. Diagnose common issues with DHCP, name resolution, IP configuration, and routing that can cause reliability and connectivity problems in an on-premises and a hybrid environment."
-  ms.date: 01/23/2026
+  description: "Learn how to troubleshoot on-premises and hybrid networking issues including DHCP authorization and scopes, DNS zone data and replication, IP configuration and routing tables, Packet Monitor, and Azure Network Watcher."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module-standard-task-based
@@ -13,7 +13,8 @@ metadata:
   ms.subservice: networking
   ai-usage: human-only
 title: Troubleshoot on-premises and hybrid networking
-summary: Learn to troubleshoot on-premises connectivity and hybrid network connectivity. Diagnose common issues with DHCP, name resolution, IP configuration, and routing that can cause reliability and connectivity problems in an on-premises and a hybrid environment.
+summary: |
+  This module covers how to troubleshoot on-premises and hybrid networking issues in Windows Server. You learn how to diagnose DHCP problems including server authorization, scope availability, and relay agent configuration, troubleshoot DNS issues including zone data accuracy and AD DS replication, apply a structured IP troubleshooting methodology to isolate connectivity problems, understand routing tables and traffic delivery between networks and subnets, use Packet Monitor to intercept and analyze network packets at multiple stack levels, and use Azure Network Watcher to diagnose and log metrics for virtual networks and IaaS resources.
 abstract: |
   After completing this module, you'll be able to:
 

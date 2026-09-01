@@ -2,14 +2,15 @@
 uid: learn.wwl.implement-hybrid-identity-with-windows-server
 metadata:
   title: Implement hybrid identity with Windows Server
-  description: "Implement hybrid identity with Windows Server"
-  ms.date: 01/23/2026
+  description: "Learn how to implement hybrid identity by integrating on-premises AD DS with Microsoft Entra ID using directory synchronization, password hash sync, pass-through authentication, seamless SSO, and Microsoft Entra Domain Services."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Implement hybrid identity with Windows Server
-summary: In this module, learn to configure an Azure environment so that Windows IaaS workloads requiring Active Directory are supported. Also learn to integrate on-premises Active Directory Domain Services (AD DS) environment into Azure.
+summary: |
+  This module covers how to implement hybrid identity by integrating on-premises AD DS with Microsoft Entra ID. You learn how to select from Microsoft Entra integration models including extending AD DS to Azure, directory synchronization, password hash sync, and federation with AD FS, plan and prepare on-premises AD DS for synchronization with Microsoft Entra Connect, configure seamless single sign-on (SSO) and pass-through authentication, enable Microsoft Entra ID login for Azure VMs, and implement Microsoft Entra Domain Services for Kerberos authentication, LDAP, and Group Policy in the cloud without deploying domain controllers.
 abstract: |
   After completing this module, you'll be able to:
   - Select a Microsoft Entra integration model.

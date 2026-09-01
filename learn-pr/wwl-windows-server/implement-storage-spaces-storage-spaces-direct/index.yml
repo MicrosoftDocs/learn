@@ -2,15 +2,16 @@
 uid: learn.wwl.implement-storage-spaces-storage-spaces-direct
 metadata:
   title: Implement Storage Spaces and Storage Spaces Direct
-  description: Implement Storage Spaces and Storage Spaces Direct
-  ms.date: 01/23/2026
+  description: "Learn how to implement Storage Spaces and Storage Spaces Direct in Windows Server, including storage pools, resiliency levels, storage tiers, thin provisioning, Cluster Shared Volumes (CSVs), and the Software Storage Bus."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
   ms.subservice: storage-spaces
 title: Implement Storage Spaces and Storage Spaces Direct
-summary: Learn about the core functionality, benefits, use cases, and implementation of Storage Spaces and Storage Spaces Direct in Windows Server.
+summary: |
+  This module covers how to implement Storage Spaces and Storage Spaces Direct in Windows Server. You learn how to create storage pools from physical disks and configure virtual disks with simple, mirror, and parity resiliency, use storage tiers to combine SSDs and HDDs, choose between fixed and thin provisioning, and deploy Storage Spaces Direct for hyper-converged storage using Cluster Shared Volumes (CSVs), the Software Storage Bus, and ReFS, configured through Windows Admin Center or PowerShell.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the architecture and components of Storage Spaces.

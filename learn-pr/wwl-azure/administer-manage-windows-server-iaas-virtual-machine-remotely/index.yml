@@ -2,14 +2,15 @@
 uid: learn.wwl.administer-manage-windows-server-iaas-vm-remotely
 metadata:
   title: Administer and manage Windows Server IaaS Virtual Machine remotely
-  description: "Administer and manage Windows Server IaaS Virtual Machine remotely"
-  ms.date: 01/23/2026
+  description: "Learn how to remotely administer Windows Server IaaS VMs in Azure using the Azure portal, Windows Admin Center, Azure PowerShell, Azure CLI, Azure Bastion for secure RDP/SSH, and Just-In-Time (JIT) VM access."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Administer and manage Windows Server IaaS Virtual Machine remotely
-summary: You're able to use suitable tools and techniques to manage Windows IaaS VMs remotely. You'll also be able to restrict administrative connections to those VMs.
+summary: |
+  This module covers how to remotely administer and manage Windows Server IaaS VMs in Azure. You learn how to select the appropriate remote administration tool from the Azure portal, Windows Admin Center, Azure PowerShell, Azure CLI, and Azure Cloud Shell, connect to Azure VMs securely using Azure Bastion without exposing public IP addresses, and configure Just-In-Time (JIT) VM access through Microsoft Defender for Cloud to lock down inbound management ports and reduce attack surface.
 abstract: |
   After completing this module, you'll be able to:
   - Select appropriate remote administration tools.
