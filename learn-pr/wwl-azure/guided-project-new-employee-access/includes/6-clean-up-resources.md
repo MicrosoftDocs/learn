@@ -1,44 +1,12 @@
-Complete these steps to remove the resources and identities you created in this project.
+This guided project consists of the following exercises:
 
-> [!WARNING]
-> Resource deletion is permanent. Verify that you're deleting only resources created for this guided project before you proceed.
+- Exercise 1: Create user and group
+- Exercise 2: Assign RBAC role at scope
+- Exercise 3: Verify least-privilege model
+- **Clean up resources**
 
-## Delete the resource group
+Congratulations — you've completed the exercises in this project. In this final step, you remove all the resources and identities you created. It's important to clean up to avoid unexpected charges in your Azure subscription.
 
-Deleting the resource group removes all resources and RBAC role assignments scoped to it.
+Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
-1.  In the portal search bar, search for **Resource groups** and select **Resource groups**.
-2.  Select **rg-gp-access-model** from the list.
-3.  Select **Delete resource group** from the top menu bar.
-4.  In the confirmation field, type **rg-gp-access-model** and select **Delete**.
-5.  In the confirmation dialog that appears, select **Delete** again to confirm.
-6.  Wait for the notification that confirms the resource group is deleted.
-
-## Delete the user and group
-
-1.  In the portal search bar, search for **Microsoft Entra ID** and select **Microsoft Entra ID**.
-2.  In the left menu under **Manage**, select **Users**.
-3.  Find and select **Alex Guided Project**.
-4.  Select **Delete** from the top menu bar and confirm the deletion.
-5.  In the portal search bar, search for **Microsoft Entra ID** and select **Microsoft Entra ID**.
-6.  In the left menu under **Manage**, select **Groups**.
-7.  Select **All groups**.
-8.  Find and select **gp-rg-readers**.
-9.  Select **Delete** from the top menu bar and confirm the deletion.
-
-## Disable Temporary Access Pass (if enabled)
-
-> [!NOTE]
-> Only complete this section if you enabled Temporary Access Pass during this project. If TAP was already enabled in your tenant before you started, skip this section.
-
-1.  In the portal search bar, search for **Authentication methods** and select **Authentication methods** (under Microsoft Entra ID).
-2.  Select **Policies**.
-3.  Select **Temporary Access Pass**.
-4.  Set **Enable** to **Off**.
-5.  Select **Save**.
-
-## Verify cleanup
-
-1.  In the portal search bar, search for **Resource groups** and confirm **rg-gp-access-model** no longer appears in the list.
-2.  In **Microsoft Entra ID** > **Users**, confirm the user account no longer appears.
-3.  In **Microsoft Entra ID** > **Groups**, confirm **gp-rg-readers** no longer appears.
+[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::](https://microsoftlearning.github.io/Set-up-new-employee-access-Entra-ID-and-RBAC/Instructions/Labs/6-clean-up-resources.html)
