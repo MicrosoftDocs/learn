@@ -3,13 +3,15 @@ uid: learn.wwl.manage-storage-file-services
 metadata:
   title: Manage Storage and File Services
   description: Learn how to configure and manage Azure Files, Windows Server file shares, and Windows Server storage including Storage Spaces and Storage Spaces Direct.
-  ms.date: 07/07/2026
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: learning-path
 title: Manage storage and file services
 summary: |
-  Learn how to configure and manage Azure Files and Azure File Sync, manage Windows Server file shares including DFS and SMB over QUIC, and configure Windows Server storage including Storage Spaces, Storage Spaces Direct, Storage Replica, Data Deduplication, and iSCSI.
+  This learning path covers how to manage storage and file services in on-premises and hybrid environments. You learn how to deploy Azure File Sync, migrate file servers using Storage Migration Services, and manage Windows Server file shares including DFS, FSRM, and SMB security. You also configure storage technologies including Storage Spaces, Storage Spaces Direct, Storage Replica, Data Deduplication, and iSCSI.
+
+  This learning path helps you prepare for [Exam AZ-802: Administering Windows Server](/credentials/certifications/exams/az-802/).
 prerequisites: |
   - Experience administering Windows Server operating systems
   - Familiarity with storage concepts and file server management
@@ -40,6 +42,5 @@ modules:
 # Cross-check: SMB Direct (RDMA) covered in manage-windows-server-file-servers (unit)
 # Cross-check: Storage QoS covered in configure-manage-hyper-v-virtual-machines (unit)
 # Cross-check: NTFS vs ReFS covered in manage-windows-server-file-servers (unit)
-# GAP: Configure disks and volumes - Disk Management, New-Volume, volume types (no module)
 trophy:
   uid: learn.wwl.manage-storage-file-services.trophy

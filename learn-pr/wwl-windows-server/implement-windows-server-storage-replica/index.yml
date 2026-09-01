@@ -2,14 +2,15 @@
 uid: learn.wwl.implement-windows-server-storage-replica
 metadata:
   title: Implement Windows Server Storage Replica
-  description: "Implement Windows Server Storage Replica"
-  ms.date: 01/23/2026
+  description: "Learn how to implement Storage Replica in Windows Server for block-level, synchronous or asynchronous volume replication across servers or sites for disaster recovery and high availability."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server 
 title: Implement Windows Server Storage Replica
-summary: Learn about the core functionality, benefits, use cases, and implementation of Storage Replica in Windows Server.
+summary: |
+  This module covers how to implement Storage Replica in Windows Server for disaster recovery and high availability. You learn how Storage Replica performs block-level replication between volumes using replication groups and partnerships, choose between synchronous and asynchronous replication modes, configure stretch failover clusters spanning two physical sites, validate prerequisites with Test-SRTopology, and deploy replication using Windows Admin Center or PowerShell with New-SRPartnership.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the functionality and components of Storage Replica.

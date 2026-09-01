@@ -2,8 +2,8 @@
 uid: learn.wwl.deploy-manage-dhcp
 metadata:
   title: Deploy and manage DHCP
-  description: "Deploy and manage DHCP"
-  ms.date: 01/23/2026
+  description: "Learn how to deploy and manage DHCP in Windows Server, including DHCP scopes, options, reservations, lease management, DHCP Failover for high availability, and DHCPv6 for IPv6 environments."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module-standard-task-based
@@ -13,7 +13,8 @@ metadata:
   ms.subservice: networking
   ai-usage: human-only
 title: Deploy and manage DHCP
-summary: Learn to implement automatic IP configuration with Dynamic Host Configuration Protocol (DHCP) in Windows Server 2019.
+summary: |
+  This module covers how to deploy and manage Dynamic Host Configuration Protocol (DHCP) in Windows Server. You learn how DHCP automates IP configuration using the four-step lease process (DISCOVER, OFFER, REQUEST, ACK) and lease renewal, install and configure the DHCP Server role including server authorization in AD DS, configure DHCP options at the server, scope, and reservation levels for DNS servers, default gateways, and other settings, create and manage DHCP scopes with address ranges, exclusions, and reservations, select high availability options including DHCP Failover with hot standby and load balance modes, and implement DHCP Failover for fault tolerance across multiple DHCP servers.
 abstract: |
   After completing this module, you'll be able to:
 

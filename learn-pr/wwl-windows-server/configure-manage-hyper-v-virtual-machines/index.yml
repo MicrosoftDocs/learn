@@ -2,15 +2,16 @@
 uid: learn.wwl.configure-manage-hyper-v-virtual-machines
 metadata:
   title: Configure and manage Hyper-V virtual machines
-  description: "Configure and manage Hyper-V virtual machines"
-  ms.date: 01/23/2026
+  description: "Learn how to configure Hyper-V virtual machines in Windows Server, including VM generations, VHD and VHDX formats, storage options, shared virtual hard disks, VHD Sets, and guest clustering for high availability."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
   ms.subservice: hyper-v
 title: Configure and manage Hyper-V virtual machines
-summary: Learn about configuring and managing Hyper-V virtual machines in Windows Server.
+summary: |
+  This module covers how to configure and manage Hyper-V virtual machines in Windows Server. You learn how to choose between Generation 1 and Generation 2 VMs, work with VHD and VHDX virtual hard disk formats, configure VM hardware settings including processors, memory, NUMA topology, and virtual TPM, select storage options such as local disks, Fibre Channel SANs, and SMB 3.0 file shares, and implement shared VHDs and VHD Sets for guest failover clustering.
 abstract: |
   After completing this module, you'll be able to:
   - Describe settings, configuration, and generation versions available for VMs in Windows Server.

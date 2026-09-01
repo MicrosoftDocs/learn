@@ -1,46 +1,43 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.monitor-troubleshoot-windows-server-environments
 metadata:
-  title: Monitor and troubleshoot Windows Server environments
-  description: Monitor and troubleshoot Windows Server environments
-  ms.date: 01/23/2026
+  title: Monitor and Troubleshoot Windows Server Environments
+  description: Learn how to monitor Windows Server environments using built-in tools and Azure services, and troubleshoot Windows Server networking, Active Directory, and system issues.
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: learning-path
 title: Monitor and troubleshoot Windows Server environments
 prerequisites: |
-  *   Knowledge of core Microsoft compute, storage, networking, and virtualization technologies
-  *   Working knowledge of common Windows Server management tools
-  *   Some experience of typical Windows Server workloads
-  *   Basic knowledge of Windows PowerShell.
-  *   Experience implementing and managing infrastructure as a service (IaaS) services in Azure
-  *   Experience working with Active Directory Domain Services (AD DS)
-  *   Experience working with Azure Active Directory (Azure AD)
+  - Experience administering Windows Server operating systems
+  - Familiarity with Active Directory Domain Services (AD DS) and core networking technologies
+  - Basic knowledge of PowerShell and Azure monitoring services
 summary: |
-  Learn to use monitoring and troubleshooting tools, processes, and best practices to streamline app performance and availability of your Windows Server environment and your Windows Server IaaS VMs and hybrid instances.
+  This learning path covers how to monitor and troubleshoot Windows Server environments. You learn how to use Performance Monitor, Event Viewer, and auditing tools to track server health and compliance, and extend monitoring into Azure with Azure Monitor and VM Insights. You also troubleshoot on-premises and hybrid networking issues including DHCP, DNS, and routing, manage server updates with WSUS and Azure Update Management, and troubleshoot Active Directory including replication failures, Group Policy processing, and hybrid authentication.
+
+  This learning path helps you prepare for [Exam AZ-802: Administering Windows Server](/credentials/certifications/exams/az-802/).
 iconUrl: /training/achievements/monitor-and-troubleshoot-windows-server-environments.svg
 levels:
 - intermediate
 roles:
 - administrator
-- solution-architect
-- technology-manager
 products:
-- azure
-- entra-id
 - windows-server
+- azure-monitor
 subjects:
 - it-management-monitoring
-- networking
 modules:
-- learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances
-- learn.azure.monitor-azure-vm-using-diagnostic-data
-- learn.wwl.monitor-windows-server-performance
-- learn.wwl.manage-monitor-event-logs
-- learn.wwl.implement-windows-server-auditing-diagnostics
-- learn.wwl.troubleshoot-premises-hybrid-networking
-- learn.wwl.troubleshoot-windows-server-virtual-machines-azure
-- learn.wwl.windows-server-update-management
-- learn.wwl.troubleshoot-active-directory
+# 7.1 Monitor using Windows Server tools and Azure services
+- learn.wwl.monitor-windows-server-performance # Primary - Performance Monitor, Resource Monitor, counters
+- learn.wwl.manage-monitor-event-logs # Primary - Event Viewer, event subscriptions, log management
+- learn.wwl.implement-windows-server-auditing-diagnostics # Supplementary - audit policies, diagnostic tools
+- learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances # Supplementary - Azure Monitor, Log Analytics, VM Insights
+- learn.azure.monitor-azure-vm-using-diagnostic-data # Supplementary - Azure VM diagnostic data
+# 7.2 Troubleshoot Windows Server issues
+- learn.wwl.troubleshoot-premises-hybrid-networking # Primary - DNS, DHCP, IP, VPN, hybrid connectivity
+- learn.wwl.troubleshoot-windows-server-virtual-machines-azure # Supplementary - Azure VM troubleshooting
+- learn.wwl.windows-server-update-management # Supplementary - WSUS, Windows Update, update troubleshooting
+# 7.3 Troubleshoot Active Directory
+- learn.wwl.troubleshoot-active-directory # Primary - AD replication, GPO processing, authentication
 trophy:
   uid: learn.wwl.monitor-troubleshoot-windows-server-environments.trophy
