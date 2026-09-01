@@ -64,7 +64,7 @@ CREATE TABLE Employee (
     FirstName NVARCHAR(50),      -- ~2-100 bytes (avg 40)
     LastName NVARCHAR(50),       -- ~2-100 bytes (avg 40)
     HireDate DATE,               -- 3 bytes
-    Salary DECIMAL(10,2)         -- 5 bytes
+    Salary DECIMAL(10,2)         -- 9 bytes
 );  
 -- Estimated row size: 4 + 40 + 40 + 3 + 5 = ~92 bytes
 -- Plus row overhead (~7 bytes) = ~99 bytes per row
