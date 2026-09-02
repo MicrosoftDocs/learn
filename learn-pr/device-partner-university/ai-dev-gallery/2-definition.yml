@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.ai-dev-gallery.definition
+title: What is AI Dev Gallery (Preview)?
+metadata:
+  title: What Is AI Dev Gallery (Preview)?
+  description: 'This content is part of the "Get started using Foundry on Windows: AI Dev Gallery (Preview)" module.'
+  ms.date: 09/01/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-definition.md)]
