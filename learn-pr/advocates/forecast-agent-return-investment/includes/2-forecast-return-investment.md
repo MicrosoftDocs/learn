@@ -73,13 +73,14 @@ $$
 
 A 42.86% ROI means the AI agent is expected to return nearly 43% more value than it costs over the investment period.
 
-## Evaluating ROI from a Multi-Year Perspective Using NPV
+## Evaluating Multi-Year Investments Using NPV
 
-ROI calculation should embed Net Present Value (NPV) to reflect the time value of money as AI agents' investments are often assessed over a 3 to
-5-year horizon. Indeed, future benefits are worth less than they appear today due to the cost of capital, inflation and risks.
+The simple ROI calculated in the previous section compares total benefits with total costs over the investment period. It's a useful high-level percentage, but it doesn't account for when benefits and costs occur.
 
-That's why we calculate ROI using the NPV of both benefits and costs, discounting future cash flows to their present value. This approach
-ensures a more realistic and financially sound assessment of multi-year investments in AI agents.
+For multi-year investments, calculate Net Present Value (NPV) alongside simple ROI to account for the time value of money. NPV discounts future net cash flows to their present value using a rate that reflects factors such as the organization's cost of capital and investment risk.
+
+> [!NOTE]
+> The 42.86% example uses simple, undiscounted ROI. The NPV calculation that follows is a complementary measure, not an input to that ROI calculation. If your organization also reports discounted ROI, label it explicitly and apply discounted benefits and costs consistently.
 
 ## Step-by-Step Guide to Calculate Net Present Value (NPV)
 
@@ -131,7 +132,7 @@ Let's say:
 
 Then:
 
-![A diagram showing showing NPV values over 5 years.](../media/net-present-value-table.png)
+![Diagram showing NPV values over five years.](../media/net-present-value-table.png)
 
 The 5-year discounted cash flow impact (NPV) is 19,781 dollars. Without applying the discount rate, the cash flow impact would be 50,000 dollars.
 
@@ -144,7 +145,7 @@ The 5-year discounted cash flow impact (NPV) is 19,781 dollars. Without applying
 
 AI investments often involve uncertainty around key variables such as adoption rates, operational costs, and performance outcomes. Sensitivity analysis is a technique used to evaluate how changes in these assumptions affect the projected return on investment (ROI). By modeling different scenarios, such as optimistic, conservative, and baseline, organizations can better understand the risk exposure and potential rewards of deploying AI agents. This approach helps decision-makers identify which variables have the greatest impact on ROI and where to focus mitigation strategies or further research.
 
-### Step-by-Step Guide to Conducting Sensitivity Analysis
+## Step-by-Step Guide to Conducting Sensitivity Analysis
 
 ### Step 1: Identify Key Variables
 
