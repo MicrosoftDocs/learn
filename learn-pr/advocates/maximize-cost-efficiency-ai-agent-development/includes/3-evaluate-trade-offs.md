@@ -52,7 +52,7 @@ Pro-code environments like Visual Studio and GitHub are designed for professiona
 - Higher technical complexity
 - Requires ongoing support and governance
 
-## Strategic Decision-Making
+## Strategic decision making
 
 When choosing between Copilot and pro-code, consider:
 
@@ -66,7 +66,7 @@ When choosing between Copilot and pro-code, consider:
 |Governance     |Built-in         |Requires setup         |
 |Ideal users     |Business teams         |Developers and IT         |
 
-## Hybrid Approach
+## Hybrid approach
 
 Many organizations benefit from a hybrid strategy, using Microsoft Copilot Studio for rapid, low-code development and pro-code tools for solutions that require custom architecture, orchestration, or integrations. The supported integration paths are directional: a Copilot Studio agent can [connect to an external Microsoft Foundry agent](/microsoft-copilot-studio/add-agent-foundry-agent), and a Microsoft Foundry agent can be [published to Microsoft 365 Copilot and Microsoft Teams](/azure/foundry/agents/how-to/publish-copilot). Microsoft Foundry and Microsoft Foundry Toolkit for Visual Studio Code help developers move from portal-based experimentation to code-based implementation. Code generated from playground configurations is a starting point that requires customization, testing, deployment, and governance before production use.
 

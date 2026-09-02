@@ -6,16 +6,16 @@ The tools listed in this unit aren't mutually exclusive. Developers can code an 
 
 ## Copilot Studio: Empowering business users
 
-### Built on Microsoft. Connected to everything
+### Built on Microsoft: Connected to everything
 
 Multiply capacity by easily connecting agents to your data, tools, and systems so that they can work for you. Microsoft manages the infrastructure and optimizes AI performance behind the scenes, so you can achieve your goals faster.
 
-### Build any agent. From simple to sophisticated
+### Build any agent: From simple to sophisticated
 
 Reduce development time and costs on custom agents with an intuitive platform. Build the right agent to deliver outcomes by using natural
 language and selecting from your choice of models, knowledge, tools, and channels.
 
-### Govern every agent. Secure every action
+### Govern every agent: Secure every action
 
 Gain peace of mind with enterprise-grade governance, security, and visibility at every layer. From managing data access to controlling
 agent sprawl, compliance, and risk---Microsoft gives you the tools to stay in control while scaling innovation.
@@ -57,7 +57,7 @@ Microsoft Foundry unifies agents, models, and tools under a single management gr
 including tracing, monitoring, evaluations, and customizable enterprise setup configurations. The platform provides streamlined management
 through unified Role-based access control (RBAC), networking, and policies under one Azure resource provider namespace.
 
-[![Screenshot of Microsoft Foundry.](../media/ai-foundry-screenshot.png)](../media/ai-foundry-screenshot.png#lightbox)
+[![Screenshot of Microsoft Foundry web interface with models displayed.](../media/ai-foundry-screenshot.png)](../media/ai-foundry-screenshot.png#lightbox)
 
 ### Strategic considerations for cost efficiency
 
@@ -70,7 +70,7 @@ through unified Role-based access control (RBAC), networking, and policies under
 
 1. Access Microsoft Foundry.
 1. Choose your preferred model or bring your own.
-1. Build native agents in Microsoft Foundry, either with a low-code approach (through the UI in the Foundry Portal) or with a code-first approach (by using the Microsoft Foundry SDK/Microsoft Agent Framework with Visual Studio/VS Code and GitHub). 
+1. Build native agents in Microsoft Foundry, either with a low-code approach (through the UI in the Foundry portal) or with a code-first approach (by using the Microsoft Foundry SDK/Microsoft Agent Framework with Visual Studio/VS Code and GitHub). 
 1. Use built-in tools to monitor performance, manage deployments, and enforce safeguards.
 1. Scale across departments with centralized controls and analytics.
 
