@@ -2,24 +2,40 @@ When aiming to prioritize high impact AI agent use cases, it's a good
 idea to identify effective solutions that can be delivered quickly to
 ensure the project success.
 
-Use the following categories to help spot cost-effective AI agents that
-help you achieve quick wins.
+Before prioritizing a use case, confirm that an AI agent is the appropriate
+solution. Agents are suited to scenarios that require adaptive decisions,
+multistep reasoning, dynamic tool use, or autonomous workflow execution. For
+predictable workflows, static question-and-answer scenarios, or tasks that
+don't require these capabilities, consider conventional code, workflow
+automation, nongenerative AI, or grounded question answering instead.
+
+After confirming agent fit, use the following categories to identify
+cost-effective opportunities for quick wins. For more information, see [Plan a
+business strategy for AI
+agents](/azure/cloud-adoption-framework/ai-agents/business-strategy-plan).
 
 ## Low implementation complexity
 
-Choose use cases with fewer integration requirements and clear data
-inputs. Look for tasks that don't require deep hooks into legacy systems
-or cross-departmental coordination and instead choose use cases that can
-be built on top of existing SaaS platforms or internal tools with
-exposed APIs. Favor use cases with structured, accessible data over
-unstructured or siloed data.
+Choose use cases with fewer integration requirements and clear data inputs.
+Look for tasks that don't require deep integration with legacy systems or
+cross-departmental coordination. Favor use cases that can build on existing
+SaaS platforms or internal tools with exposed APIs and that use structured,
+accessible data instead of unstructured or siloed data.
 
 ## High financial impact
 
-Estimate ROI based on cost savings, efficiency gains, or revenue uplift.
-Define what metrics are important to you to meet these goals and then
-consider use cases based upon the results. An example might be similar
-to this:
+Estimate potential benefits from cost savings, efficiency gains, or revenue
+uplift. Establish baseline measurements, target adoption, unit values, and
+attribution assumptions, and then define the metrics used to measure each
+benefit.
+
+Calculate ROI by comparing attributed benefits with total investment and
+operating costs. Include build and integration effort, licensing or
+consumption, ongoing operations, governance, and user enablement. For more
+information, see [Define value before you build your
+agent](/microsoft-copilot-studio/guidance/agent-business-value-define-value).
+
+The following table provides examples of benefit categories and metrics:
 
 |Value lever  |Example metrics  |Example AI use cases  |
 |---------|---------|---------|
@@ -43,17 +59,22 @@ more difficult.
 
 ## Estimate delivery timelines
 
-Realistic timeline estimation enables effective resource planning and
-stakeholder management while ensuring project success. Timeline accuracy
-depends on project complexity, organizational maturity, and resource
-availability. You must base timeline estimates on empirical data from
-your proof of concepts and organizational capabilities.
+Estimate each phase of the delivery lifecycle separately. A proof of concept
+can provide useful evidence, but its timeline might not represent the effort
+required to build, govern, deploy, and operate a production solution.
 
-To create realistic timeline estimates:
+Include time for:
 
-- Use proof of concept results to estimate implementation timelines for
-  each use case.
-- Account for organizational maturity and complexity factors in timeline
-  planning.
-- Build in buffer time for learning, iteration, and unexpected
-  challenges.
+- Discovery, requirements, and solution design.
+- Production development and integration.
+- Testing with production-representative data, tools, and workloads.
+- Agent evaluation against defined quality, safety, and performance criteria.
+- Security, privacy, compliance, and governance reviews.
+- Deployment, capacity planning, and operational readiness.
+- Pilot rollout, user enablement, and change management.
+- Production monitoring, incident response, maintenance, and improvement.
+
+Use proof of concept results and organizational delivery data to validate
+these estimates. Account for dependencies, organizational maturity, resource
+availability, iteration, and unexpected challenges. For more information, see
+[AI agent deployment lifecycle](/agents/architecture/deployment-lifecycle) and [Agent evaluation frameworks](/agents/architecture/evaluation-frameworks).

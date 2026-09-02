@@ -11,8 +11,8 @@ In this module, you learned how to:
 For more information, see:
 
 - [Find customer stories](https://www.microsoft.com/en-us/customers/search/?filters=product%3Aai-microsoft-copilot&sortBy=PublishedDate+Desc)
-- [Cloud Adoption Framework AI Strategy](/azure/cloud-adoption-framework/scenarios/ai/strategy)
-- Estimate delivery timelines section in [Plan for AI adoption](/azure/cloud-adoption-framework/scenarios/ai/plan)
+- [Cloud Adoption Framework AI Strategy](/azure/cloud-adoption-framework/ai/strategy)
+- [Create AI proof of concepts](/azure/cloud-adoption-framework/ai/plan#create-ai-proof-of-concepts)
 
 Customer success stories:
 

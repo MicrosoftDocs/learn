@@ -17,7 +17,7 @@ Steps to find more AI customer stories:
 - Navigate to **Search Customer Success** Stories from the **Learn more**
   section, in the **Summary**.
 
-[![A screenshot showing a browser window listing customer stories.](../media/find-customer-stories.png)](../media/find-customer-stories-big.png#lightbox)
+[![Screenshot showing a browser window listing customer stories.](../media/find-customer-stories.png)](../media/find-customer-stories-big.png#lightbox)
 
 - Use the filters on the left-hand side to search by industry, product,
   region, and more. You can also use the search bar to enter
@@ -30,11 +30,20 @@ for your specific situation.
 
 ## Collaborate with cross-functional teams
 
-To maximize the cost efficiency of AI agents, you should look at both
-costs and benefits. To identify the greatest potential benefits, you
-should collaborate with cross-functional teams to uncover operational
-pain points, analyze existing workflows to identify automation
-opportunities, gather customer feedback to find use cases that improve
-customer satisfaction, and conduct an internal assessment to identify
-challenges and inefficiencies that AI can address. You can then research
-industry use cases using defined goals and objectives.
+Collaborate with business owners, finance, operations, security, governance,
+and technical teams to assess the costs and benefits of each candidate use
+case:
+
+- Define the business goal, measurable KPIs, and success criteria.
+- Capture baseline data, including work volume, cycle time, error rates,
+   escalation rates, and cost per transaction.
+- Identify potential benefits by reviewing workflow pain points, automation
+   opportunities, customer feedback, and industry use cases.
+- Estimate implementation and integration effort, licensing or consumption,
+   ongoing operations, monitoring, governance, enablement, and change
+   management costs.
+- Forecast adoption and usage, and apply attribution when other changes
+   contribute to the expected outcome.
+- Compare projected benefits with total costs. After deployment, use
+   production telemetry to compare measured results with the baseline and
+   update the business case.
