@@ -3,7 +3,7 @@ uid: learn.maximize-cost-efficiency-ai-agent-development
 metadata:
   title: Maximize Cost Efficiency by Choosing the Right AI Agent Development Approach on Azure
   description: "Evaluate when to develop custom AI agents tailored to your needs and when to deploy prebuilt solutions from trusted platforms. Learn how to assess trade-offs in time-to-value, complexity, customization, and operational cost. This module also guides you in selecting the right models for your AI agents, from lightweight task-specific agents to advanced multi-modal agents."
-  ms.date: 10/1/2025
+  ms.date: 09/1/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
