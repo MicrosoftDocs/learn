@@ -27,7 +27,7 @@ agent sprawl, compliance, and risk---Microsoft gives you the tools to stay in co
 - Reduced training overhead by using familiar Microsoft environments.
 - Scalable governance with built-in compliance and monitoring tools.
 
-### How to Get Started
+### How to get started
 
 1. Access Copilot Studio via Microsoft 365 or Power Platform.
 1. Choose a template or start from scratch.
@@ -47,7 +47,7 @@ comprehensive platform for designing, customizing, and managing AI applications 
 
 ![Diagram showing services powered by Microsoft Foundry.](../media/ai-foundry.png)
 
-### What Is Microsoft Foundry?
+### What is Microsoft Foundry?
 
 Microsoft Foundry is a unified Azure platform-as-a-service offering for enterprise AI operations, model builders, and application development.
 This foundation combines production-grade infrastructure with friendly interfaces, enabling developers to focus on building applications rather
