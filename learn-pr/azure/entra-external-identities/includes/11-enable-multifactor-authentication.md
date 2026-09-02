@@ -37,7 +37,7 @@
 
     [ ![Screenshot of New Conditional Access policy blade highlighting On for Enable policy at the bottom.](../media/enable-multifactor-authentication/7_inline.png) ](../media/enable-multifactor-authentication/7.png#lightbox)
     
-    ***Well done!** You created a Conditional access policy that requires users to complete MFA. To check the user experience, sign-in to your application.*
+    ***Well done!** You created a Conditional Access policy that requires users to complete MFA. To check the user experience, sign-in to your application.*
 ::: zone-end
 
 ::: zone pivot="microsoft-graph-api"
