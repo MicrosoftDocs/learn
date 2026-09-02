@@ -55,7 +55,7 @@ Windows is designed as a platform for work, where interoperability, management c
 Here's how Windows ecosystem design translates to practice:
 
 - **Broad hardware choice:** Organizations can select devices based on roles, performance needs, budget, and durability  
-- **Identity at the platform level:** Microsoft Entra ID integrates deeply into authentication, conditional access, and security posture  
+- **Identity at the platform level:** Microsoft Entra ID integrates deeply into authentication, Conditional Access, and security posture  
 - **Integrated management:** Intune and Autopilot provides consistent, cloud-ready provisioning across diverse hardware fleets  
 - **Enterprise security model:** Hardware-rooted protections, OS safeguards, and Defender intelligence work together as a unified threat posture  
 - **Ecosystem-wide AI:** Windows supports hybrid AI with local NPUs and cloud AI through Microsoft 365 Copilot and Windows experiences  

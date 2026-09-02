@@ -76,7 +76,7 @@ Using Windows ecosystem capabilities, the IT team can:
 
 - Deploy devices remotely using Windows Autopilot with zero-touch provisioning
 - Enforce consistent security and compliance policies through Microsoft Intune
-- Apply conditional access rules through Microsoft Entra ID based on user role and location
+- Apply Conditional Access rules through Microsoft Entra ID based on user role and location
 - Monitor device health and update compliance from a centralized dashboard
 
 This approach enables the organization to scale without increasing manual IT overhead at each location.
