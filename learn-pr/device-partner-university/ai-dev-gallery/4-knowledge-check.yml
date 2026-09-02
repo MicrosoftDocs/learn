@@ -1,0 +1,92 @@
+### YamlMime:ModuleUnit 
+
+uid: learn.dpu.ai-dev-gallery.knowledge-check 
+
+title: Module assessment 
+
+metadata: 
+  title: Module Assessment 
+  module_assessment: true
+  description: 'This content is part of the "Get started using Foundry on Windows: AI Dev Gallery (Preview)" module.'
+  ms.date: 09/01/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit 
+durationInMinutes: 5 
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary purpose of AI Dev Gallery (Preview)?"
+    choices:
+    - content: "Manage cloud infrastructure for AI services"
+      isCorrect: false
+      explanation: "Incorrect. AI Dev Gallery isn't designed to manage cloud infrastructure or cloud-based AI services. Instead, it helps users explore and experiment with AI experiences that run locally."
+    - content: "Discover, download, and experiment with AI models and scenarios locally"
+      isCorrect: true
+      explanation: "Correct. AI Dev Gallery provides a central place to discover AI-powered scenarios, download supported models, and explore local AI capabilities on Windows devices."
+    - content: "Create Windows user accounts"
+      isCorrect: false
+      explanation: "Incorrect. User account management is a Windows administrative function and isn't a feature of AI Dev Gallery."
+    - content: "Monitor network security events"
+      isCorrect: false
+      explanation: "Incorrect. Monitoring security events requires security and management tools. AI Dev Gallery focuses on AI models, samples, and APIs."
+
+  - content: "Which three core experiences are available in AI Dev Gallery (Preview)?"
+    choices:
+    - content: "Samples, Dashboards, and Reports"
+      isCorrect: false
+      explanation: "Incorrect. Dashboards and Reports aren't core experiences in AI Dev Gallery. The application focuses on AI scenarios, models, and APIs."
+    - content: "Models, Copilot, and Settings"
+      isCorrect: false
+      explanation: "Incorrect. While these might be related to AI experiences, they aren't the three core experiences available in AI Dev Gallery."
+    - content: "Samples, Models, and AI APIs"
+      isCorrect: true
+      explanation: "Correct. Samples, Models, and AI APIs are the three core experiences that help users explore AI scenarios, discover models, and learn about Windows AI capabilities."
+    - content: "Projects, Files, and Workspaces"
+      isCorrect: false
+      explanation: "Incorrect. Projects, Files, and Workspaces aren't part of the core AI Dev Gallery experience."
+
+  - content: "What hardware component on Copilot+ PCs is designed to run advanced AI workloads directly on the device?"
+    choices:
+    - content: "CPU"
+      isCorrect: false
+      explanation: "Incorrect. The CPU can process AI workloads, but it isn't specifically designed to accelerate modern AI tasks."
+    - content: "GPU"
+      isCorrect: false
+      explanation: "Incorrect. GPUs can accelerate AI workloads, but Copilot+ PCs are designed to take advantage of NPUs for efficient on-device AI processing."
+    - content: "SSD"
+      isCorrect: false
+      explanation: "Incorrect. An SSD provides storage for applications and data but doesn't perform AI processing."
+    - content: "NPU"
+      isCorrect: true
+      explanation: "Correct. A Neural Processing Unit (NPU) is specialized hardware designed to efficiently run AI workloads directly on the device."
+
+  - content: "What is a key benefit of running AI models locally with AI Dev Gallery?"
+    choices:
+    - content: "Increased dependence on cloud connectivity"
+      isCorrect: false
+      explanation: "Incorrect. Running models locally reduces reliance on cloud connectivity rather than increasing it."
+    - content: "Reduced latency and reduced cloud dependency"
+      isCorrect: true
+      explanation: "Correct. Local AI processing can improve responsiveness and reduce the need to rely on cloud-based compute resources."
+    - content: "Automatic creation of Windows applications"
+      isCorrect: false
+      explanation: "Incorrect. AI Dev Gallery helps users explore AI capabilities, but it doesn't automatically create applications."
+    - content: "Elimination of the need for AI models"
+      isCorrect: false
+      explanation: "Incorrect. AI experiences still require AI models. Local execution changes where the model runs, not whether a model is needed."
+
+  - content: "What is the key benefit of running supported AI workloads locally?"
+    choices:
+    - content: "Make AI more accessible by bringing intelligence to the endpoint"
+      isCorrect: true
+      explanation: "Correct. Running AI workloads on supported devices brings intelligent experiences closer to users and helps make AI more accessible."
+    - content: "Increase dependence on cloud-based AI processing"
+      isCorrect: false
+      explanation: "Incorrect. One advantage of local AI is reducing reliance on cloud-based processing when supported workloads can run on the device."
+    - content: "Limit AI experiences to developers only"
+      isCorrect: false
+      explanation: "Incorrect. Local AI capabilities can benefit a wide range of users and applications, not just developers."
+    - content: "Replace Windows applications with AI models"
+      isCorrect: false
+      explanation: "Incorrect. AI models enhance applications and experiences, but they don't replace Windows applications."
