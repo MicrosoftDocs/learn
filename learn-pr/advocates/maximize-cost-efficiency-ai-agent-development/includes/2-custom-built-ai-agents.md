@@ -1,9 +1,8 @@
 Microsoft offers a flexible developer ecosystem that empowers organizations to build AI agents tailored to their needs, whether through building simple to complex agents with Copilot Studio or using pro-code environments for professional developers. This flexibility is essential for scaling AI across departments and roles, and it directly contributes to cost efficiency by reducing development time, leveraging existing skill sets, and minimizing rework.
 
-The tools listed in this unit aren't exclusive to each other. Many developers will code an agent in VS Code, store the code in a GitHub repository, and store and manage the agent in AI Foundry. There's native integration between the tools. For example, there's an
-Microsoft Foundry extension for VS Code lets you manage models and agents directly from the editor and AI Foundry projects and agents can be versioned and managed through GitHub repositories.
+The tools listed in this unit aren't mutually exclusive. Developers can code an agent in VS Code, store its code in a GitHub repository, and manage the agent in Microsoft Foundry. Microsoft Foundry Toolkit for Visual Studio Code lets developers work with local and Foundry resources without leaving the editor. Agent code can be versioned and managed in GitHub repositories.
 
-![A diagram comparing Copilot Studio with AI Foundry showing that Copilot Studio is for IT and end users and AI Foundry is for developers.](../media/agent-tools.png)
+![Diagram comparing Copilot Studio and Microsoft Foundry. Copilot Studio is for IT professionals and end users, and Microsoft Foundry is for developers.](../media/agent-tools.png)
 
 ## Copilot Studio: Empowering business users
 
@@ -46,7 +45,7 @@ agent sprawl, compliance, and risk---Microsoft gives you the tools to stay in co
 Microsoft Foundry is a robust platform to build, test, deploy, scale, manage, and govern agents across the enterprise. It's Microsoft's
 comprehensive platform for designing, customizing, and managing AI applications and agents at scale.
 
-![A diagram showing services powered by AI Foundry.](../media/ai-foundry.png)
+![Diagram showing services powered by Microsoft Foundry.](../media/ai-foundry.png)
 
 ### What Is Microsoft Foundry?
 
@@ -58,7 +57,7 @@ Microsoft Foundry unifies agents, models, and tools under a single management gr
 including tracing, monitoring, evaluations, and customizable enterprise setup configurations. The platform provides streamlined management
 through unified Role-based access control (RBAC), networking, and policies under one Azure resource provider namespace.
 
-[![Screenshot of AI Foundry.](../media/ai-foundry-screenshot.png)](../media/ai-foundry-screenshot.png#lightbox)
+[![Screenshot of Microsoft Foundry.](../media/ai-foundry-screenshot.png)](../media/ai-foundry-screenshot.png#lightbox)
 
 ### Strategic considerations for cost efficiency
 
@@ -93,8 +92,7 @@ Visual Studio Code (VS Code) is a lightweight, fast, and extensible cross-platfo
 
 Developers can use the **Microsoft 365 Agents Toolkit** and **Microsoft 365 Agents SDK** in Visual Studio to build agents that integrate seamlessly with Microsoft 365 services like Outlook, Teams, and OneDrive. The Agents Toolkit simplifies the setup process and offers templates and tools to accelerate development within the Visual Studio environment. With the Agents SDK, developers can connect agents to Microsoft Graph and use contextual data such as emails, calendars, and documents. These tools together enable the creation of custom copilots that provide personalized assistance, automate workflows, and enhance productivity across Microsoft 365 applications.
 
-Developers can also integrate Microsoft Foundry in Visual Studio and publish agents to Microsoft 365 Copilot. Also, the **AI Toolkit for Visual Studio Code** helps to explore, compare, fine-tune generative AI models using a streamlined, code-first experience. Developers can manage
-models, datasets, and prompts directly within their development workflow.
+Developers can also integrate Microsoft Foundry with Visual Studio and publish agents to Microsoft 365 Copilot. The **Microsoft Foundry Toolkit for Visual Studio Code** helps developers explore, compare, and fine-tune generative AI models through a streamlined, code-first experience. Developers can manage models, datasets, and prompts directly within their development workflow.
 
 ### Strategic considerations for cost efficiency
 
@@ -107,7 +105,7 @@ models, datasets, and prompts directly within their development workflow.
 1. Download and install Visual Studio or Visual Studio Code.
 1. Set up a new project using your preferred language and framework.
 1. Integrate Azure SDKs and APIs for AI capabilities.
-1. In case of the AI toolkit mentioned above, download the AI Toolkit for Visual Studio Code extension.
+1. If you plan to use Foundry Toolkit, install the Microsoft Foundry Toolkit for Visual Studio Code extension.
 1. Use GitHub or Azure DevOps for version control and CI/CD.
 1. Deploy your agent to Azure or other cloud environments.
 
