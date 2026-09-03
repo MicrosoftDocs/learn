@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.architect-scalable-ai-agent-solutions.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module Assessment
   description: Check your understanding of architecting scalable, cost-efficient AI agent solutions on Azure.
-  ms.date: 8/11/2025
+  ms.date: 09/01/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -25,35 +25,34 @@ quiz:
       explanation: "Landing zones emphasize automation and DevOps practices like CI/CD and Infrastructure as Code—not manual centralization."
   - content: "Which orchestration pattern is best suited for dynamic, unpredictable AI tasks that require flexible routing and real-time decision-making?"
     choices:
-    - content: "Event-driven orchestration"
-      isCorrect: true
-      explanation: "Event-driven orchestration enables agents to respond to triggers and delegate tasks based on context, making it ideal for adaptive, complex scenarios."
     - content: "Workflow-based orchestration"
       isCorrect: false
       explanation: "Workflow-based orchestration follows a fixed sequence and is better suited for structured, predictable tasks."
+    - content: "Event-driven orchestration"
+      isCorrect: true
+      explanation: "Event-driven orchestration enables agents to respond to triggers and delegate tasks based on context, making it ideal for adaptive, complex scenarios."
     - content: "Manual orchestration"
       isCorrect: false
       explanation: "Manual orchestration isn't a scalable or recommended pattern for coordinating AI agents in production environments."
   - content: "Which tagging strategy helps ensure consistent cost attribution across nested Azure AI resources?"
     choices:
-    - content: "Apply tag inheritance to automatically propagate parent tags to child resources."
-      isCorrect: true
-      explanation: "Tag inheritance in Microsoft Cost Management cascades subscription or resource group tags to nested resources, reducing manual errors and ensuring consistent cost attribution."
     - content: "Enforce mandatory cost tags using Azure Policy to require tags on each resource."
       isCorrect: false
       explanation: "Requiring tags ensures every resource is tagged but doesn't automate propagation to child resources, so manual tagging errors can still occur."
     - content: "Standardize tag formats by defining naming conventions for tag values."
       isCorrect: false
       explanation: "Standardizing formats improves reporting and queryability but doesn't automate tag inheritance or eliminate manual tagging omissions."
+    - content: "Apply tag inheritance to automatically propagate parent tags to child resources."
+      isCorrect: true
+      explanation: "Tag inheritance in Microsoft Cost Management cascades subscription or resource group tags to nested resources, reducing manual errors and ensuring consistent cost attribution."
   - content: "Which AI type should you choose to differentiate with unique experiences by building bespoke models trained on domain-specific data?"
     choices:
-    - content: "Custom AI solutions"
-      isCorrect: true
-      explanation: "Custom AI solutions enable the creation of bespoke models trained on domain-specific data to solve niche challenges and deliver unique experiences."
     - content: "AI assistants"
       isCorrect: false
       explanation: "AI assistants automate repetitive tasks, summarize content, and generate drafts, rather than focusing on bespoke model development."
+    - content: "Custom AI solutions"
+      isCorrect: true
+      explanation: "Custom AI solutions enable the creation of bespoke models trained on domain-specific data to solve niche challenges and deliver unique experiences."
     - content: "Extended agents"
       isCorrect: false
       explanation: "Extended agents integrate with proprietary data and adapt to existing systems but aren't primarily designed for building and training custom models."
-
