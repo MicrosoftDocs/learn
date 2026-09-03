@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-optimize-agent-investment-azure.monitor-optimize-agent-use
-title: Monitor and analyze AI Agent usage and performance
+title: Monitor and analyze AI agent usage and performance
 metadata:
   title: Monitor and Analyze AI Agent Usage and Performance
   description: This unit explores the tools and techniques available in Microsoft Foundry to gain deep insights into agent behavior, user interactions, and cost trends, enabling organizations to make informed decisions and enhance their AI investments.
-  ms.date: 10/1/2025
+  ms.date: 09/01/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
