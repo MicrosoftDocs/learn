@@ -2,15 +2,15 @@
 uid: learn.wwl.fabric-prepare-semantic-layer
 metadata:
   title: Prepare Semantic Models for AI in Power BI and Microsoft Fabric
-  description: "Prepare semantic models for reliable AI use in Power BI and Microsoft Fabric, and evaluate when Fabric IQ should extend stable business meaning across domains."
-  ms.date: 08/19/2026
+  description: "Design gold layers, semantic models, and documentation that enable Copilot, data agents, and enterprise ontologies to deliver accurate, business-relevant insights."
+  ms.date: 09/03/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: module
   ms.service: fabric
   ai-usage: ai-generated
 title: Prepare semantic models for AI in Power BI and Microsoft Fabric
-summary: Prepare semantic models for reliable AI use in Power BI and Microsoft Fabric, and evaluate when Fabric IQ should extend stable business meaning across domains.
+summary: Design gold layers, semantic models, and documentation that enable Copilot, data agents, and enterprise ontologies to deliver accurate, business-relevant insights.
 abstract: |
   By the end of this module, you're able to:
   - Explain how semantic model context guides Copilot answers.
