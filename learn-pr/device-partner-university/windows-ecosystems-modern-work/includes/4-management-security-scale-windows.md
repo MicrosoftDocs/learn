@@ -44,7 +44,7 @@ Core security components include:
 
 - **Hardware-rooted protections**, such as TPM and secure boot  
 - **OS-level security**, including Microsoft Defender, exploit protection, and credential safeguards  
-- **Conditional access policies** enforced through Microsoft Entra ID  
+- **Conditional Access policies** enforced through Microsoft Entra ID  
 - **Cloud-driven threat detection** powered by Microsoft Defender for Endpoint  
 - **Integrated update channels** that help devices stay protected against emerging threats  
 
@@ -76,7 +76,7 @@ Using Windows ecosystem capabilities, the IT team can:
 
 - Deploy devices remotely using Windows Autopilot with zero-touch provisioning
 - Enforce consistent security and compliance policies through Microsoft Intune
-- Apply conditional access rules through Microsoft Entra ID based on user role and location
+- Apply Conditional Access rules through Microsoft Entra ID based on user role and location
 - Monitor device health and update compliance from a centralized dashboard
 
 This approach enables the organization to scale without increasing manual IT overhead at each location.
@@ -92,7 +92,7 @@ The table below reflects how Windows ecosystems support large-scale operations:
 | **Role diversity** | Different teams require different device capabilities | Wide range of OEM hardware, performance tiers, and specialized options |
 | **Geographic distribution** | Need consistent management across regions | Intune enables global, cloud-based governance |
 | **Application mix** | Departments may rely on legacy and modern apps | Broad compatibility with Win32, web, and modern applications |
-| **Varied compliance and regional requirements** | Security and regulatory standards differ across roles and regions | Conditional access and role-based policies support region-specific controls |
+| **Varied compliance and regional requirements** | Security and regulatory standards differ across roles and regions | Conditional Access and role-based policies support region-specific controls |
 | **Large device fleets** | Requires efficient, predictable operations | Automated updates, device telemetry, and scalable management |
 
 This flexibility helps organizations align ecosystem capabilities with the needs of each team—without fragmenting their platform strategy.
