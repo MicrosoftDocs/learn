@@ -1,123 +1,92 @@
-In this exercise, you use the Microsoft Authentication Library for Java (MSAL4J) to add authentication in a sample Java web application and allow users to sign in with their Microsoft Entra accounts.
+This walkthrough traces a sign-in request through illustrative Java servlet code. It explains how the browser, Microsoft Entra ID, MSAL4J, and the application's session helpers interact.
 
-The sample application you use in this exercise is a Java servlet application that allows users to sign in and displays the user name and basic profile information. It also allows you to call the Microsoft Graph API to show some user information.
+> [!NOTE]
+> These fragments aren't a complete application or a production-ready implementation. They omit surrounding servlet code, imports, configuration, and some error handling to focus on the flow. No application needs to be built or run to complete this unit.
 
-## Create a Java web application
+## Identify the application-defined helpers
 
-From your shell or command line:
+MSAL4J supplies the token-acquisition APIs. The application supplies the surrounding code that coordinates browser redirects, callback processing, and sessions. The fragments use these illustrative helpers:
 
-1. Create a folder for the application.
+| Helper | Role in the examples |
+|---|---|
+| `Config` | Supplies application settings. `REDIRECT_URI` represents the registered callback URI, and `SCOPES` contains the single Microsoft Graph scope `User.Read`. |
+| `getConfidentialClientInstance` and `AuthHelper.getConfidentialClientInstance` | Return a configured `ConfidentialClientApplication`. |
+| `contextAdapter` | Connects the HTTP request and response to the application's session context. Its `redirectUser` method redirects the browser. |
+| `IdentityContextData` and `context` | Hold data associated with a sign-in request and session, including the nonce, token claims, authentication result, and serialized token cache. |
 
-   ```bash
-   mkdir ~/javawebapp
-   ```
+These names and their helper methods are application-defined, not MSAL4J APIs. Their roles are explained in the walkthrough, but their implementations aren't included.
 
-1. Clone the sample application from the GitHub repository into the new folder.
+## An authorization URL starts browser interaction
 
-   ```bash
-   git clone https://github.com/Azure-Samples/ms-identity-java-servlet-webapp-authentication.git ~/javawebapp
-   ```
+The first fragment shows how the application creates an authorization URL and redirects the browser. The helper supplies a configured confidential client. The application has also generated fresh, unpredictable `state` and `nonce` values for this sign-in request and retained them for later comparison.
 
-1. Change into the folder where the sample application for this exercise is located.
+```java
+final ConfidentialClientApplication client = getConfidentialClientInstance();
+AuthorizationRequestUrlParameters parameters = AuthorizationRequestUrlParameters
+                                                    .builder(Config.REDIRECT_URI, Collections.singleton(Config.SCOPES))
+                                                    .responseMode(ResponseMode.QUERY)
+                                                    .prompt(Prompt.SELECT_ACCOUNT)
+                                                    .state(state)
+                                                    .nonce(nonce)
+                                                    .build();
 
-   ```bash
-   cd ~/javawebapp/ms-identity-java-servlet-webapp-authentication/2-Authorization-I/call-graph
-   ```
+final String authorizeUrl = client.getAuthorizationRequestUrl(parameters).toString();
+contextAdapter.redirectUser(authorizeUrl);
+```
 
-## Configure the application
+`AuthorizationRequestUrlParameters` describes the callback URI, requested scope, and protocol options. `Collections.singleton` is appropriate here because `Config.SCOPES` contains one scope, rather than a space-separated list of multiple scopes. MSAL adds the standard OpenID Connect scopes `openid`, `profile`, and `offline_access` by default.
 
-To configure the code, open the application project in your preferred IDE like IntelliJ or VS Code.
+With MSAL4J 1.9.1, `ResponseMode.QUERY` places the authorization response parameters in the callback's query string. `Prompt.SELECT_ACCOUNT` requests account selection. `state` helps correlate the response with the sign-in request, while `nonce` binds the ID token to that request.
 
-1. Open the **./src/main/resources/authentication.properties** file.
+> [!NOTE]
+> Starting with [MSAL4J 1.24.0](https://github.com/AzureAD/microsoft-authentication-library-for-java/blob/c084f2f50f217126f0c7a19d879b7f46cecd222a/changelog.txt), `ResponseMode.QUERY` is deprecated. When passed this value, `AuthorizationRequestUrlParameters.Builder.responseMode` substitutes `ResponseMode.FORM_POST` and logs a warning. This is a library behavior change; Microsoft Entra still supports [query-mode authorization code responses at the protocol level](/entra/identity-platform/v2-oauth2-auth-code-flow#request-an-authorization-code).
+>
+> For form-post responses, a servlet callback needs POST-capable handling, such as `doPost`, rather than relying only on `doGet`. Callback processing must still preserve the associated session, `state` and `nonce` validation, and error handling. Changing only the response-mode enum doesn't address these responsibilities.
 
-1. In the `aad.authority` property, find the string `{enter-your-tenant-id-here}`. Replace the existing value with the **Directory (tenant) ID** value - as shown in the following image - because the app was registered with the **Accounts in this organizational directory only** option.
+`getAuthorizationRequestUrl` constructs the URL; `redirectUser` is the application-defined helper that redirects the browser. Neither operation redeems an authorization code.
 
-1. In the `aad.clientId` property, find the string `{enter-your-client-id-here}` and replace the existing value with the **Application (client) ID** value - the `clientId` value - of the registered application copied from the Azure portal.
+> [!IMPORTANT]
+> The illustrated request includes delegated Microsoft Graph `User.Read` during sign-in. A consent prompt appears only when consent is needed and tenant policy allows the user to grant it; prior user or administrator consent can mean no prompt appears. A **Need admin approval** message indicates that an authorized administrator must review the request through the organization's approved process. The appropriate response isn't to weaken tenant-wide consent policy. See [User and admin consent](/entra/identity/enterprise-apps/user-admin-consent-overview).
 
-   :::image type="content" source="../media/app-registration-blade.png" alt-text="Screenshot highlighting the App ID of an app registered with Microsoft Entra ID on Azure portal.":::
+## The callback exchanges a code for tokens
 
-1. In the `aad.secret` property, find the string `{enter-your-client-secret-here}` and replace the existing value with the **key** value you saved during the creation of the app in the Azure portal.
+After a successful authorization response, Microsoft Entra ID redirects the browser to the application's callback URI with an authorization code. The following fragment focuses on redemption, after the callback has validated `state`, handled error responses, and extracted `authCode`. It doesn't show the entire callback implementation.
 
-## Run the application
+```java
+final AuthorizationCodeParameters authParams = AuthorizationCodeParameters
+                                                    .builder(authCode, new URI(Config.REDIRECT_URI))
+                                                    .scopes(Collections.singleton(Config.SCOPES))
+                                                    .build();
 
-1. Make certain that your Tomcat server is running and you have privileges to deploy a web app to it. Make certain that your server host address is `http://localhost:8080`.
+final ConfidentialClientApplication client = AuthHelper.getConfidentialClientInstance();
+final IAuthenticationResult result = client.acquireToken(authParams).get();
+```
 
-1. Compile and package the project using **Maven**:
+`AuthorizationCodeParameters` connects the received code to the callback URI and requested scope. The redirect URI must match the one used in the authorization request and the app registration. The confidential client authenticates the application while exchanging the code at the token endpoint.
 
-   ```bash
-   cd ~/javawebapp/2-Authorization-I/call-graph
-   mvn clean package
-   ```
+`acquireToken` returns a future, and `.get()` waits for its result in this example. Successful redemption produces an `IAuthenticationResult`; a failed exchange must be handled as an error. Authorization codes are short-lived and single-use, not reusable credentials for later API calls.
 
-1. Find the resulting **.war** file at **./target/msal4j-servlet-graph.war**. To deploy to Tomcat, copy this **.war** file to the **/webapps/** directory in your Tomcat installation directory and start the Tomcat server.
+> [!NOTE]
+> For new implementations, follow the [current authorization code flow guidance](/entra/identity-platform/v2-oauth2-auth-code-flow#request-an-authorization-code): Microsoft recommends Proof Key for Code Exchange (PKCE) for all application types, including confidential web apps. PKCE is required for single-page applications (SPAs), but isn't a platform requirement for the confidential web app illustrated here.
+>
+> The explicit MSAL4J URL-construction and code-redemption APIs shown here don't generate PKCE inputs automatically. Generate a fresh, unpredictable verifier for each sign-in request and retain it securely for the matching callback. On the authorization-request builder, supply its S256-derived challenge as `codeChallenge` and set `codeChallengeMethod("S256")`; on the redemption builder, supply the matching `codeVerifier`. PKCE doesn't replace client authentication or `state` and `nonce` validation. The fragments above omit these PKCE inputs.
 
-1. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. You're redirected to sign in with Microsoft Entra ID. On successful sign-in, you should see a page like the following:
+## The application associates the result with a session
 
-   :::image type="content" source="../media/app-sign-in.png" alt-text="Screenshot showing user name displayed on the page after successfully signing in to sample application.":::
+The next fragment illustrates the boundary between receiving tokens and treating a session as authenticated. Here, `context` is an application-defined `IdentityContextData` instance.
 
-1. Select the **ID Token Details** button to see some of the ID token's decoded claims.
+```java
+context.setIdTokenClaims(result.idToken());
+validateNonce(context);
+context.setAuthResult(result, client.tokenCache().serialize());
+```
 
-## Overview of authentication code
+The first call makes the ID-token claims available to the application's nonce validation. The application-defined `validateNonce` helper compares the returned nonce with the value retained for the original request and stops processing if validation fails. The final call records the authentication result and serialized token cache in the application context, which the surrounding code associates with the session.
 
-You can find most of the authentication code in the sample application under the project's `java/com/microsoft/azuresamples/msal4j/` directory. It contains multiple servlets that provide the authentication endpoints in the application for signing in, signing out, and handling the redirect callback from Microsoft Entra ID. These servlets use the helper classes in the directory **java/com/microsoft/azuresamples/msal4j/helpers/** to call the authentication methods provided by MSAL. There's a servlet filter defined in `AuthenticationFilter.java` that redirects unauthenticated requests to protected routes to a 401 unauthorized HTTP error page.
+These helpers don't replace the application's broader security responsibilities. A complete implementation also needs correct response processing, secure session and token-cache storage, appropriate error handling, and authorization for protected operations.
 
-To add authentication to your application, you need to include the servlet classes under `java/com/microsoft/azuresamples/msal4j/authservlets` and `java/com/microsoft/azuresamples/msal4j/authwebapp` directories, the helper classes in the directory **java/com/microsoft/azuresamples/msal4j/helpers/** and the authentication servlet filter `AuthenticationFilter.java` in your projects. Here are more details of the MSAL authentication code.
-  
-1. MSAL4J is available on Maven. You need to add MSAL4J as a dependency in the project's **pom.xml** file:
+## Connect the flow
 
-   ```xml
-   <dependency>
-       <groupId>com.microsoft.azure</groupId>
-       <artifactId>msal4j</artifactId>
-       <version>1.17.2</version>
-   </dependency>
-   ```
+The browser carries the user through sign-in and returns an authorization code. The server redeems that code with MSAL4J, processes the result, and maintains the application's session. Later Microsoft Graph calls use an access token, not the authorization code or ID token.
 
-1. The first step of the sign-in process is to send a request to the Microsoft Entra tenant's `/authorize` endpoint. The MSAL4J `ConfidentialClientApplication` instance is leveraged to construct an authorization request URL. The app redirects the browser to this URL, which is where the user signs in. The following code is an excerpt from the implementation of the `redirectToAuthorizationEndpoint` method in the `AuthHelper` class.
-
-   ```java
-   final ConfidentialClientApplication client = getConfidentialClientInstance();
-   AuthorizationRequestUrlParameters parameters = AuthorizationRequestUrlParameters
-                                                       .builder(Config.REDIRECT_URI, Collections.singleton(Config.SCOPES))
-                                                       .responseMode(ResponseMode.QUERY).prompt(Prompt.SELECT_ACCOUNT).state(state).nonce(nonce).build();
-
-   final String authorizeUrl = client.getAuthorizationRequestUrl(parameters).toString();
-   contextAdapter.redirectUser(authorizeUrl);
-   ```
-
-   - `AuthorizationRequestUrlParameters`: Parameters that must be set in order to build an `AuthorizationRequestUrl`.
-   - `REDIRECT_URI`: The redirect URI is the URI the identity provider sends the security tokens back to. Microsoft Entra ID redirects the browser - along with auth code - to this URI after collecting user credentials. It must match the redirect URI in the Microsoft Entra app registration.
-   - `SCOPES`: Scopes are permissions requested by the application. Normally, the three scopes `openid profile offline_access` suffice for receiving an ID token response for a user sign in and are set by default by MSAL.
-
-1. The user is presented with a sign-in prompt by Microsoft Entra ID. If the sign-in attempt is successful, the user's browser is redirected to our app's redirect endpoint with a valid **authorization code** in the endpoint. The `ConfidentialClientApplication` instance then exchanges this authorization code for an ID Token and Access Token from Microsoft Entra ID. The following code is an excerpt from the implementation of the `processAADCallback` method in the `AuthHelper` class.
-
-   ```java
-   // First, validate the state, then parse any error codes in response, then extract the authCode. Then:
-   // build the auth code params:
-   final AuthorizationCodeParameters authParams = AuthorizationCodeParameters
-                                                       .builder(authCode, new URI(Config.REDIRECT_URI)).scopes(Collections.singleton(Config.SCOPES)).build();
-
-   // Get a client instance and leverage it to acquire the token:
-   final ConfidentialClientApplication client = AuthHelper.getConfidentialClientInstance();
-   final IAuthenticationResult result = client.acquireToken(authParams).get();
-   ```
-
-   - `AuthorizationCodeParameters`: Parameters that must be set in order to exchange the Authorization Code for an ID and/or access token.
-   - `authCode`: The authorization code that was received at the redirect endpoint.
-   - `REDIRECT_URI`: The redirect URI used in the previous step must be passed again.
-   - `SCOPES`: The scopes used in the previous step must be passed again.
-
-1. If `acquireToken` is successful, the token claims are extracted. If the nonce check passes, the results are placed in `context` - an instance of `IdentityContextData` - and saved to the session. The application can then instantiate this from the session - by way of an instance of `IdentityContextAdapterServlet` - whenever it needs access to it:
-
-   ```java
-   // parse IdToken claims from the IAuthenticationResult:
-   // (the next step - validateNonce - requires parsed claims)
-   context.setIdTokenClaims(result.idToken());
-
-   // if nonce is invalid, stop immediately! this could be a token replay!
-   // if validation fails, throws exception and cancels auth:
-   validateNonce(context);
-
-   // set user to authenticated:
-   context.setAuthResult(result, client.tokenCache().serialize());
-   ```
+For more information about the library APIs, see [MSAL4J authorization code URL builder](/entra/msal/java/advanced/authorization-code-url-builder) and [Acquire tokens with authorization codes](/entra/msal/java/getting-started/acquiring-tokens-with-authorization-codes).

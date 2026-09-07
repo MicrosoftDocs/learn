@@ -4,8 +4,8 @@ title: Summary
 metadata:
   unitType: summary
   title: Summary
-  description: Summary
-  ms.date: 11/21/2023
+  description: Summarize the relationships among app registration, MSAL4J sign-in, delegated permissions, and illustrative Microsoft Graph calls.
+  ms.date: 09/01/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -14,4 +14,3 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/9-summary.md)]
-
