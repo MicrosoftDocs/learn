@@ -2,9 +2,9 @@
 uid: learn.improve-reliability-modern-operations
 metadata:
   title: Improve your reliability with modern operations practices
-  description: The reliability of your systems, services and products has a direct impact on your success. Learn the modern operations principles and practices (and the Azure features that support them) that will help you achieve the level of reliability you need.
+  description: Learn the modern operations principles and practices that will help you achieve the level of reliability you need.
   brand: azure
-  ms.date: 05/19/2020
+  ms.date: 05/19/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: learning-path
@@ -13,7 +13,7 @@ metadata:
   ms.custom:
   - team=cloud_advocates
 title: Improve your reliability with modern operations practices
-summary: The reliability of your systems, services and products has a direct impact on your success. Learn the modern operations principles and practices (and the Azure features that support them) that will help you achieve the level of reliability you need.
+summary: Learn the modern operations principles and practices that will help you achieve the level of reliability you need.
 prerequisites: None
 iconUrl: /training/achievements/improve-reliability-modern-operations.svg
 levels: 
