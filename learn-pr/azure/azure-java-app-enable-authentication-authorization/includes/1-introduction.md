@@ -1,21 +1,21 @@
-Organizations build applications to serve various use cases. While most application developers are focused on implementing the business logic, there are also requirements to secure the access to the application. The responsibility of identity and access management requires additional expertise and comes with complexity.
+Organizations need applications that can recognize users and control access to information. Microsoft Entra ID provides identity and access management services, while the Microsoft Authentication Library for Java (MSAL4J) provides APIs that help Java applications participate in authentication and token acquisition.
 
-Microsoft Entra ID and the Microsoft Authentication Library (MSAL) simplify this. Microsoft Entra ID lets you handle these requirements by providing identity and access management (IAM) as a service. The Microsoft Authentication Library provides convenient APIs for developers to implement the authentication and authorization features in their applications.
+This module explains those responsibilities through a company-portal scenario and annotated code samples. All code is illustrative: the fragments show how the components interact, not complete applications to build or run. No Azure subscription, tenant access, credentials, IDE, or installed development environment is required.
 
 ## Example scenario
 
-Imagine you're building a portal for employees in your company to access company information and helpful resources to perform their work. You need to ensure that this application is only accessible to users within your organization. You want to build a Java web application that signs in the employees with their work accounts and displays some information from their company profile.
+Consider a Java web application that displays information from a signed-in user's company profile. The organization wants the portal's sign-in audience to be accounts in its Microsoft Entra workforce tenant, including guest accounts. The portal also needs permission to read the signed-in user's profile through Microsoft Graph.
 
-Microsoft Entra ID allows you to secure your applications by signing in users with their organizational accounts. The Microsoft Authentication Library (MSAL) provides various methods for developers to authenticate users and get authorized access to applications secured by Microsoft Entra ID.
+The scenario has three distinct concerns: identifying the application, authenticating the user, and obtaining authorized access to an API. An application registration, MSAL4J, and Microsoft Graph each address a different part of that design.
 
-## What will we be doing?
+## What you'll learn
 
 In this module, you:
 
-- Register a web application with Microsoft Entra ID.
-- Sign in users in a Microsoft Entra tenant to a Java web application.
-- Authorize access to data in a Microsoft API.
+- Explain how an application registration defines a Java web app's identity and sign-in audience.
+- Trace an authorization-code sign-in flow through illustrative MSAL4J samples.
+- Explain how delegated permissions and access tokens enable Microsoft Graph calls.
 
-## What is the main goal?
+## What's the main goal?
 
-The main goal is to learn how to secure your application with Microsoft Entra ID and use the Microsoft Authentication Library to sign in users and get authorized access to data in a Java web application.
+The goal is to understand the relationships among app registration, browser sign-in, server-side token acquisition, and API authorization. The examples help distinguish what Microsoft Entra ID, MSAL4J, the application, and the Microsoft Graph SDK do, without requiring a hands-on lab.
