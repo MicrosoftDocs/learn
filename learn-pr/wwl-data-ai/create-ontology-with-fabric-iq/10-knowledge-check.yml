@@ -6,9 +6,9 @@ metadata:
   module_assessment: true
   ai_generated_module_assessment: false
   description: "Check your knowledge of creating ontologies with Fabric IQ"
-  ms.date: 02/27/2026
-  author: theresa-i
-  ms.author: theresai
+  ms.date: 09/08/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false
@@ -41,9 +41,9 @@ quiz:
       explanation: "Incorrect. Time series properties are optional. Many entity types use only static properties. The required component is the entity type key."
   - content: "How does a time series binding differ from a static binding?"
     choices:
-    - content: "Time series bindings connect to eventhouse streams with a timestamp column, while static bindings connect to lakehouse tables"
+    - content: "Time series bindings connect to streaming or time-stamped columnar data with a timestamp column, while static bindings connect to lakehouse tables"
       isCorrect: true
-      explanation: "Correct. Static bindings connect entity properties to lakehouse tables containing data that changes infrequently. Time series bindings connect to eventhouse streams containing continuously arriving observations, requiring a timestamp column to order the measurements."
+      explanation: "Correct. Static bindings connect entity properties to lakehouse tables containing data that changes infrequently. Time series bindings connect to time-stamped columnar data\u2014from an eventhouse or a lakehouse table formatted as timestamped observations\u2014requiring a timestamp column to order the measurements over time."
     - content: "Time series bindings can be added before static bindings"
       isCorrect: false
       explanation: "Incorrect. Time series bindings require an existing static binding first because they need the key property from the static binding to link streaming measurements back to entity instances."
