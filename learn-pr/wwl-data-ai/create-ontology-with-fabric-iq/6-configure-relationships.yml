@@ -4,9 +4,9 @@ title: Configure ontology relationships
 metadata:
   title: Configure Ontology Relationships
   description: "Learn how to configure relationship data sources to connect entity instances"
-  ms.date: 02/27/2026
-  author: theresa-i
-  ms.author: theresai
+  ms.date: 09/08/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

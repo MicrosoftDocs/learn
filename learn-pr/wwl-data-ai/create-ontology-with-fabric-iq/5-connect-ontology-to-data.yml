@@ -4,9 +4,9 @@ title: Connect an ontology to data
 metadata:
   title: Connect an Ontology to Data
   description: "Learn how to bind entity types to lakehouse tables and eventhouse streams using static and time series data bindings"
-  ms.date: 02/27/2026
-  author: theresa-i
-  ms.author: theresai
+  ms.date: 09/08/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false
