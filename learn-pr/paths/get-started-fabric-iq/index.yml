@@ -4,8 +4,8 @@ metadata:
   title: Get Started with Fabric IQ
   description: Learn how to use Fabric IQ to model business concepts in an ontology, bind them to data sources, visualize relationships, and build data agents grounded in your business vocabulary.
   ms.date: 06/12/2026
-  author: theresa-i
-  ms.author: theresai
+  author: weslbo
+  ms.author: wedebols
   ms.topic: learning-path
 title: Get started with Fabric IQ
 prerequisites: |

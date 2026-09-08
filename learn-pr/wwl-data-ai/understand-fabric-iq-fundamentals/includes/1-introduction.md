@@ -1,12 +1,18 @@
-Imagine you're a data analyst at Lamna Healthcare, responsible for helping clinical operations teams understand patient care patterns across your facility.
+Imagine you're a data analyst at Contoso Offshore, a fictional company that specializes in offshore construction, wind-farm installation, and marine engineering. You help project planning, fleet management, and maintenance teams understand whether vessels and equipment are ready for scheduled foundation installations.
 
-Patient records sit in lakehouse tables while vital signs stream continuously from ICU monitoring equipment into an eventhouse. When hospital administrators ask questions like "Which patients in the ICU have elevated vital signs?" or "How many beds are occupied on the surgical floor?", you need to manually join lakehouse tables with eventhouse streams, translate business terms into technical column names, and write complex queries.
+## Connect maintenance data to project readiness
 
-Business users can't explore the data themselves—they depend on you to write queries each time they have a question. By the time you deliver answers, clinical conditions may have already changed.
+Project schedules, vessel records, equipment registers, and maintenance orders sit in separate lakehouse tables. Equipment measurements arrive in an eventhouse. When a project manager asks, "Which planned foundation installations are at risk tomorrow because required equipment is unavailable?", you need to connect records across systems and translate business terms into technical column names.
 
-Fabric IQ solves this challenge by letting you define business vocabulary in an ontology, then bind those concepts to your data sources in OneLake. You define concepts such as Patient, Department, and Room with their properties and relationships, creating a semantic layer. Business users can then ask questions in natural language through data agents or visually explore relationships through Graph in Microsoft Fabric—exploring the data themselves without needing you to write queries. 
+:::image type="content" source="../media/offshore-maintenance-example.png" alt-text="Diagram showing an offshore maintenance example linking projects, tasks, vessels, equipment, and maintenance orders." lightbox="../media/offshore-maintenance-example.png":::
 
-In this module, you'll discover what Fabric IQ is and how it works. You'll explore the components that work together—ontology items, data agents, Graph in Microsoft Fabric, and Power BI semantic models—and learn when to use each one. You'll also see how ontology modeling shifts your approach from use-case-driven thinking to concept-driven thinking, fundamentally changing how teams collaborate around data. 
+For example, task T001 in project P001 installs foundation F001 using crane E001 on vessel V001. An open maintenance order blocks the crane during the planned installation window. You need shared definitions of which equipment a task requires and which maintenance orders block operation to explain why the task is at risk.
+
+Fabric IQ helps you define that business vocabulary in an ontology and bind its concepts to prepared data. You define Project, Vessel, Equipment, Foundation, InstallationTask, and MaintenanceOrder with their properties and relationships. Business users then explore those connections through Graph in Microsoft Fabric or ask natural-language questions through data agents. Identifying task risk still requires an explicit rule that checks whether operation-blocking maintenance overlaps the planned use of required equipment.
+
+## Explore the module
+
+In this module, you discover what Fabric IQ is and how it works. You explore the components that work together, including ontology items, data agents, Graph in Microsoft Fabric, and Power BI semantic models. You also learn how ontology modeling shifts your approach from use-case-driven thinking to concept-driven thinking, so teams share business definitions across reports and agents.
 
 > [!IMPORTANT]
 > Fabric IQ is currently in [preview](/fabric/fundamentals/preview).
