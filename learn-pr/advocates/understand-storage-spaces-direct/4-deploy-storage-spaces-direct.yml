@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-storage-spaces-direct.deploy-storage-spaces-direct
+title: Deploy Storage Spaces Direct
+metadata:
+  title: Deploy Storage Spaces Direct
+  description: Validate cluster readiness, install required features, create a failover cluster, configure quorum, enable Storage Spaces Direct, and verify deployment.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-deploy-storage-spaces-direct.md)]

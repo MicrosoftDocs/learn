@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Hybrid cache layout across four nodes</title>
+  <desc id="desc">Four numbered nodes each contain two fast cache devices above four HDD capacity devices. Local arrows show cache binding. Network arrows connect each node to the Software Storage Bus.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#44546a"/>
+    </marker>
+    <style>
+      .node { fill:#f7f7f7; stroke:#4a4a4a; stroke-width:2; rx:10; }
+      .cache { fill:#fce5cd; stroke:#b45f06; stroke-width:2; rx:7; }
+      .capacity { fill:#d9eaf7; stroke:#245a7a; stroke-width:2; rx:7; }
+      .bus { fill:#d9ead3; stroke:#38761d; stroke-width:2; rx:10; }
+      .text { font-family:Segoe UI,Arial,sans-serif; font-size:17px; fill:#1f1f1f; text-anchor:middle; }
+      .small { font-family:Segoe UI,Arial,sans-serif; font-size:14px; fill:#404040; text-anchor:middle; }
+      .line { stroke:#44546a; stroke-width:3; fill:none; marker-end:url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1200" height="680" fill="#ffffff"/>
+  <text x="600" y="34" class="text" font-weight="700">Four-node hybrid cache layout</text>
+
+  <g transform="translate(35,65)">
+    <rect width="255" height="430" class="node"/>
+    <text x="127" y="32" class="text" font-weight="700">1. Node S2D01</text>
+    <rect x="28" y="58" width="199" height="76" class="cache"/>
+    <text x="127" y="88" class="text">Fast cache</text>
+    <text x="127" y="112" class="small">Two NVMe or SSD devices</text>
+    <line x1="127" y1="140" x2="127" y2="180" class="line"/>
+    <rect x="28" y="188" width="199" height="150" class="capacity"/>
+    <text x="127" y="223" class="text">HDD capacity</text>
+    <text x="127" y="249" class="small">Drive 1</text>
+    <text x="127" y="273" class="small">Drive 2</text>
+    <text x="127" y="297" class="small">Drive 3</text>
+    <text x="127" y="321" class="small">Drive 4 or more</text>
+    <text x="127" y="374" class="small">Cache binds only to</text>
+    <text x="127" y="396" class="small">capacity in this node</text>
+  </g>
+
+  <g transform="translate(325,65)">
+    <rect width="255" height="430" class="node"/>
+    <text x="127" y="32" class="text" font-weight="700">2. Node S2D02</text>
+    <rect x="28" y="58" width="199" height="76" class="cache"/>
+    <text x="127" y="88" class="text">Fast cache</text>
+    <text x="127" y="112" class="small">Two NVMe or SSD devices</text>
+    <line x1="127" y1="140" x2="127" y2="180" class="line"/>
+    <rect x="28" y="188" width="199" height="150" class="capacity"/>
+    <text x="127" y="223" class="text">HDD capacity</text>
+    <text x="127" y="249" class="small">Drive 1</text>
+    <text x="127" y="273" class="small">Drive 2</text>
+    <text x="127" y="297" class="small">Drive 3</text>
+    <text x="127" y="321" class="small">Drive 4 or more</text>
+    <text x="127" y="374" class="small">Cache binds only to</text>
+    <text x="127" y="396" class="small">capacity in this node</text>
+  </g>
+
+  <g transform="translate(615,65)">
+    <rect width="255" height="430" class="node"/>
+    <text x="127" y="32" class="text" font-weight="700">3. Node S2D03</text>
+    <rect x="28" y="58" width="199" height="76" class="cache"/>
+    <text x="127" y="88" class="text">Fast cache</text>
+    <text x="127" y="112" class="small">Two NVMe or SSD devices</text>
+    <line x1="127" y1="140" x2="127" y2="180" class="line"/>
+    <rect x="28" y="188" width="199" height="150" class="capacity"/>
+    <text x="127" y="223" class="text">HDD capacity</text>
+    <text x="127" y="249" class="small">Drive 1</text>
+    <text x="127" y="273" class="small">Drive 2</text>
+    <text x="127" y="297" class="small">Drive 3</text>
+    <text x="127" y="321" class="small">Drive 4 or more</text>
+    <text x="127" y="374" class="small">Cache binds only to</text>
+    <text x="127" y="396" class="small">capacity in this node</text>
+  </g>
+
+  <g transform="translate(905,65)">
+    <rect width="255" height="430" class="node"/>
+    <text x="127" y="32" class="text" font-weight="700">4. Node S2D04</text>
+    <rect x="28" y="58" width="199" height="76" class="cache"/>
+    <text x="127" y="88" class="text">Fast cache</text>
+    <text x="127" y="112" class="small">Two NVMe or SSD devices</text>
+    <line x1="127" y1="140" x2="127" y2="180" class="line"/>
+    <rect x="28" y="188" width="199" height="150" class="capacity"/>
+    <text x="127" y="223" class="text">HDD capacity</text>
+    <text x="127" y="249" class="small">Drive 1</text>
+    <text x="127" y="273" class="small">Drive 2</text>
+    <text x="127" y="297" class="small">Drive 3</text>
+    <text x="127" y="321" class="small">Drive 4 or more</text>
+    <text x="127" y="374" class="small">Cache binds only to</text>
+    <text x="127" y="396" class="small">capacity in this node</text>
+  </g>
+
+  <rect x="185" y="570" width="830" height="70" class="bus"/>
+  <text x="600" y="600" class="text">5. Software Storage Bus over redundant SMB paths</text>
+  <text x="600" y="625" class="small">Cross-node reads, writes, placement, repair, and resynchronization</text>
+  <path d="M162,501 L162,535 L330,535 L330,562" class="line"/>
+  <path d="M452,501 L452,562" class="line"/>
+  <path d="M742,501 L742,562" class="line"/>
+  <path d="M1032,501 L1032,535 L870,535 L870,562" class="line"/>
+</svg>
