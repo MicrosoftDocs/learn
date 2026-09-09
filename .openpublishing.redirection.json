@@ -72551,6 +72551,11 @@
       "source_path": "learn-pr/paths/discover-microsoft-ai-leaders-retail/index.md",
       "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/develop-asp-core-api/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }

@@ -8856,3 +8856,8 @@ achievements:
   title: Discover AI for leaders in retail
   summary: In this learning path, retail business leaders find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and retail use cases.
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.develop-asp-core-api.trophy
+  type: trophy
+  title: Develop an ASP.NET Core web app that consumes an API
+  summary: Learn how to gather information from API documentation and perform HTTP operations in an&nbsp;[ASP.NET](https://asp.net/)&nbsp;Core Blazor web app.
+  iconUrl: /training/achievements/generic-trophy.svg
