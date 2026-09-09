@@ -1,0 +1,115 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-storage-spaces-direct.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Assess your understanding of Storage Spaces Direct design, deployment, volume provisioning, monitoring, maintenance, troubleshooting, and recovery.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+durationInMinutes: 9
+content: Choose the best response for each question.
+quiz:
+  questions:
+  - content: "In a converged Storage Spaces Direct deployment, how do separate compute hosts access the storage cluster's data?"
+    choices:
+    - content: "Through Scale-Out File Server SMB 3 shares hosted by the storage cluster."
+      isCorrect: true
+      explanation: "Correct. In a converged deployment, Scale-Out File Server exposes the storage to separate compute hosts over SMB 3. The compute hosts don't access the storage pool directly."
+    - content: "Through direct access to the storage pool from each separate compute host."
+      isCorrect: false
+      explanation: "Incorrect. Separate compute hosts aren't participating nodes in the storage cluster. Their workload data access uses the file-serving layer rather than direct access to the pool."
+    - content: "Through a shared SAN that exposes the same capacity drives to both clusters."
+      isCorrect: false
+      explanation: "Incorrect. Storage Spaces Direct pools drives attached to its cluster nodes. The module's converged design serves that storage over SMB shares rather than through shared SAN capacity drives."
+  - content: "You need a two-node Storage Spaces Direct cluster to retain local data redundancy on the surviving node after the other node fails. Which layout meets this requirement?"
+    choices:
+    - content: "Two-way mirror."
+      isCorrect: false
+      explanation: "Incorrect. A normal two-way mirror places one copy on each node. If one node fails, the surviving copy has no local redundancy."
+    - content: "Three-way mirror."
+      isCorrect: false
+      explanation: "Incorrect. A standard three-way mirror requires at least three nodes to separate its copies across server fault domains. It isn't a layout for a two-node cluster."
+    - content: "Nested two-way mirror."
+      isCorrect: true
+      explanation: "Correct. Nested two-way mirror keeps two copies inside each node, for four copies in total. After one node fails, two copies remain on the surviving node."
+  - content: "Cluster validation identifies an unsupported storage controller before you enable Storage Spaces Direct. What should you do next?"
+    choices:
+    - content: "Continue if every intended capacity drive reports `CanPool` as `True`."
+      isCorrect: false
+      explanation: "Incorrect. `CanPool` indicates drive eligibility, but it doesn't establish that the hardware and cluster configuration are supported or that validation passed."
+    - content: "Resolve the supportability failure and rerun validation before continuing."
+      isCorrect: true
+      explanation: "Correct. Unsupported controllers must be rejected or corrected. Rerun the required validation tests, retain the report, and resolve failures before enabling Storage Spaces Direct."
+    - content: "Enable the storage pool and use a `Healthy` status instead of the validation report."
+      isCorrect: false
+      explanation: "Incorrect. A healthy storage state doesn't establish supportability or override a validation failure. Validation must precede enablement."
+  - content: "The failover cluster and quorum witness are configured, and validation passes. Which cmdlet enables Storage Spaces Direct and creates its cluster storage pool?"
+    choices:
+    - content: "`Test-Cluster`"
+      isCorrect: false
+      explanation: "Incorrect. `Test-Cluster` runs validation tests. It doesn't enable Storage Spaces Direct or create its cluster storage pool."
+    - content: "`New-Volume`"
+      isCorrect: false
+      explanation: "Incorrect. `New-Volume` creates a virtual disk, partition, file system, and Cluster Shared Volume in an existing storage pool."
+    - content: "`Enable-ClusterStorageSpacesDirect`"
+      isCorrect: true
+      explanation: "Correct. `Enable-ClusterStorageSpacesDirect` enables Storage Spaces Direct, discovers eligible drives, creates the cluster storage pool, and configures applicable cache and tier settings."
+  - content: "You need a mirror-accelerated parity volume in the module's four-node HDD-capacity scenario. How should you select storage tier templates?"
+    choices:
+    - content: "Select templates by their friendly names without examining their media type or resiliency settings."
+      isCorrect: false
+      explanation: "Incorrect. Friendly names alone don't establish the required layout. Default, legacy, or custom names must be checked against the templates' actual media and resiliency settings."
+    - content: "Use `Get-StorageTier` to select mirror and parity templates with the required media type and redundancy."
+      isCorrect: true
+      explanation: "Correct. Inspect `MediaType`, `ResiliencySettingName`, and `PhysicalDiskRedundancy`. The selected templates must provide the intended mirror and parity layouts for the capacity media."
+    - content: "Select two mirror templates and use one as the capacity tier for the mirror-accelerated parity volume."
+      isCorrect: false
+      explanation: "Incorrect. Mirror-accelerated parity combines mirror and parity tiers. Two mirror templates don't provide the intended parity capacity tier."
+  - content: "A failed drive is replaced, and Storage Spaces Direct starts repairing redundancy. Which information best shows whether the repair is progressing?"
+    choices:
+    - content: "Storage job state, completion percentage, and processed-byte counters."
+      isCorrect: true
+      explanation: "Correct. `Get-StorageJob` reports `JobState`, `PercentComplete`, `BytesProcessed`, and related progress information. Use these values to track repair progress and detect stalled work."
+    - content: "CSV owner-node assignments and the number of clustered virtual machines."
+      isCorrect: false
+      explanation: "Incorrect. Ownership and workload placement don't measure repair progress. Storage job counters show the work being processed."
+    - content: "Provisioned volume sizes and the configured file-system labels."
+      isCorrect: false
+      explanation: "Incorrect. Volume sizes and labels describe the volumes, not the progress of an active repair."
+  - content: "You're following the module's rolling maintenance workflow. Storage repair is still running after the serviced node resumes. What should you do before servicing the next node?"
+    choices:
+    - content: "Continue as soon as the serviced node reports `Up`, regardless of the storage job state."
+      isCorrect: false
+      explanation: "Incorrect. A node being `Up` doesn't mean that storage redundancy is restored. Active repair still affects the cluster's exposure to another fault."
+    - content: "Continue once clustered workloads have moved, even if storage repair is still active."
+      isCorrect: false
+      explanation: "Incorrect. Moving workloads and restoring storage redundancy are separate operations. Workload movement alone doesn't complete the storage maintenance checks."
+    - content: "Wait for repair and resynchronization to finish, then verify that the virtual disks are healthy."
+      isCorrect: true
+      explanation: "Correct. Complete repair and resynchronization, and confirm virtual-disk health before servicing another node. Follow the supported maintenance procedure for the release and hardware."
+  - content: "Storage latency and CPU usage rise after a network change. You suspect that SMB Direct isn't being used. Which pair of commands best investigates that storage-network hypothesis?"
+    choices:
+    - content: "`Get-VirtualDisk` and `Get-Volume`"
+      isCorrect: false
+      explanation: "Incorrect. These commands inspect virtual disks and volumes. They don't directly show the SMB connections and RDMA adapter state needed for this investigation."
+    - content: "`Get-SmbMultichannelConnection` and `Get-NetAdapterRdma`"
+      isCorrect: true
+      explanation: "Correct. Inspect active SMB connections and RDMA adapter state to investigate missing paths, unexpected TCP fallback, or disabled RDMA."
+    - content: "`Get-StoragePool` and `Get-StorageTier`"
+      isCorrect: false
+      explanation: "Incorrect. These commands inspect storage pools and tiers. They don't establish whether the storage network is using SMB Direct."
+  - content: "Which recovery requirement makes independent backups necessary even when Storage Spaces Direct uses mirroring?"
+    choices:
+    - content: "Recovering earlier data after accidental deletion or ransomware changes."
+      isCorrect: true
+      explanation: "Correct. Mirroring protects current data against hardware faults but can replicate unwanted changes. It doesn't provide historical recovery, so recoverable backups remain necessary."
+    - content: "Rebuilding redundant data after replacing a failed capacity drive."
+      isCorrect: false
+      explanation: "Incorrect. Storage Spaces Direct can repair redundancy from surviving copies or parity data when healthy resources and repair capacity are available. Routine repair isn't a substitute for historical recovery."
+    - content: "Allowing virtual machines on different nodes to use common CSV paths."
+      isCorrect: false
+      explanation: "Incorrect. Cluster Shared Volumes provide common paths across cluster nodes. Backups serve recovery needs rather than enabling shared volume access."

@@ -1,0 +1,75 @@
+### YamlMime:Module
+uid: learn.devrel.understand-storage-spaces-direct
+metadata:
+  title: Understand Storage Spaces Direct
+  description: Learn how to plan, deploy, provision, monitor, maintain, and troubleshoot Storage Spaces Direct clusters in Windows Server 2025.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+  ai-usage: ai-assisted
+title: Understand Storage Spaces Direct
+summary: |
+  **Storage Spaces Direct (S2D)** is a software-defined storage technology for Windows Server clusters. Storage Spaces Direct combines locally attached drives across Windows Server cluster nodes into one software-defined storage pool. It combines local drives from **2–16 servers** into one shared, highly available storage pool that can be used by Windows Server computers for high availability scenarios, without requiring the deployment and maintenance of a separate traditional storage area network (SAN).
+
+  S2D uses Failover Clustering, SMB 3, the Software Storage Bus, Storage Spaces, Cluster Shared Volumes, and ReFS to provide resilient shared storage without a SAN.
+
+  S2D provides the following:
+
+  - **Hyperconverged deployment:** Compute and storage run on the same servers.
+  - **Converged deployment:** Storage runs on a dedicated cluster and serves another compute cluster.
+  - **Resiliency:** Data is mirrored or parity-encoded across servers and drives.
+  - **Automatic recovery:** Rebalances and repairs data after hardware failures.
+  - **Performance:** Uses fast drives as cache and supports storage tiers.
+  - **Scalability:** Capacity and performance increase by adding drives or servers.
+
+  S2D requires supported hardware, reliable high-speed networking, the Datacenter edition of Windows Server, and careful capacity planning. You can manage S2D through Windows Admin Center, PowerShell, Failover Clustering, and System Center. Storage Spaces Direct requires Windows Server Datacenter edition.
+abstract: |
+  After completing this module, you'll be able to:
+
+  - Explain the Storage Spaces Direct data path.
+  - Select supported hardware, networking, resiliency, and volume designs.
+  - Validate cluster readiness.
+  - Deploy Storage Spaces Direct.
+  - Provision resilient volumes.
+  - Monitor health, performance, capacity, and repair activity.
+  - Maintain nodes, drives, and pool capacity.
+  - Diagnose common storage, network, and cluster faults.
+  - Define availability and recovery boundaries.
+prerequisites: |
+  To get the most out of this module, you should already understand:
+
+  - Windows Server 2025 administration.
+  - Failover Clustering and quorum.
+  - Hyper-V and Cluster Shared Volumes.
+  - SMB 3, SMB Direct, SMB Multichannel, RDMA, VLANs, and data center bridging.
+  - ReFS and Storage Spaces.
+  - PowerShell remoting and object pipelines.
+
+  > [!NOTE]
+  > You can experiment with S2D on unsupported hardware and even spin up a test environment in a Hyper-V lab, creating an S2D cluster using virtual hard disks. Just remember that configurations without supported hardware should never be used in production deployments.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows-server
+subjects:
+- storage
+- infrastructure
+units:
+- learn.devrel.understand-storage-spaces-direct.introduction
+- learn.devrel.understand-storage-spaces-direct.design-storage-spaces-direct-networking
+- learn.devrel.understand-storage-spaces-direct.storage-spaces-direct-resiliency
+- learn.devrel.understand-storage-spaces-direct.deploy-storage-spaces-direct
+- learn.devrel.understand-storage-spaces-direct.provision-resilient-volumes
+- learn.devrel.understand-storage-spaces-direct.monitor-cluster-health
+- learn.devrel.understand-storage-spaces-direct.cluster-maintenance
+- learn.devrel.understand-storage-spaces-direct.troubleshoot-storage-spaces-direct
+- learn.devrel.understand-storage-spaces-direct.knowledge-check
+- learn.devrel.understand-storage-spaces-direct.summary
+badge:
+  uid: learn.devrel.understand-storage-spaces-direct.badge

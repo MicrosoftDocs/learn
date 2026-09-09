@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="860" viewBox="0 0 1000 860" role="img" aria-labelledby="title desc">
+  <title id="title">Layered Storage Spaces Direct troubleshooting flow</title>
+  <desc id="desc">Seven numbered boxes descend from workload scope through escalation. Arrows occupy clear gaps between boxes.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#44546a"/>
+    </marker>
+    <style>
+      .box { fill:#eaf2f8; stroke:#245a7a; stroke-width:2; rx:9; }
+      .final { fill:#d9ead3; stroke:#38761d; stroke-width:2; rx:9; }
+      .text { font-family:Segoe UI,Arial,sans-serif; font-size:17px; fill:#1f1f1f; text-anchor:middle; }
+      .small { font-family:Segoe UI,Arial,sans-serif; font-size:14px; fill:#404040; text-anchor:middle; }
+      .line { stroke:#44546a; stroke-width:3; marker-end:url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1000" height="860" fill="#ffffff"/>
+  <text x="500" y="34" class="text" font-weight="700">Layered troubleshooting sequence</text>
+
+  <rect x="210" y="60" width="580" height="75" class="box"/>
+  <text x="500" y="91" class="text" font-weight="700">1. Define workload scope</text>
+  <text x="500" y="116" class="small">One virtual machine, one volume, one node, or the full cluster</text>
+
+  <line x1="500" y1="141" x2="500" y2="165" class="line"/>
+  <rect x="210" y="171" width="580" height="75" class="box"/>
+  <text x="500" y="202" class="text" font-weight="700">2. Inspect volume state</text>
+  <text x="500" y="227" class="small">Cluster Shared Volumes, ReFS, redirection, ownership</text>
+
+  <line x1="500" y1="252" x2="500" y2="276" class="line"/>
+  <rect x="210" y="282" width="580" height="75" class="box"/>
+  <text x="500" y="313" class="text" font-weight="700">3. Inspect virtual-disk resiliency</text>
+  <text x="500" y="338" class="small">Health, operational state, detached reason, copy availability</text>
+
+  <line x1="500" y1="363" x2="500" y2="387" class="line"/>
+  <rect x="210" y="393" width="580" height="75" class="box"/>
+  <text x="500" y="424" class="text" font-weight="700">4. Inspect pool capacity</text>
+  <text x="500" y="449" class="small">Free space, thin allocation, repair destination, active jobs</text>
+
+  <line x1="500" y1="474" x2="500" y2="498" class="line"/>
+  <rect x="210" y="504" width="580" height="75" class="box"/>
+  <text x="500" y="535" class="text" font-weight="700">5. Inspect physical drives</text>
+  <text x="500" y="560" class="small">Serial number, slot, health, reliability, controller events</text>
+
+  <line x1="500" y1="585" x2="500" y2="609" class="line"/>
+  <rect x="210" y="615" width="580" height="75" class="box"/>
+  <text x="500" y="646" class="text" font-weight="700">6. Inspect storage network</text>
+  <text x="500" y="671" class="small">SMB paths, RDMA state, VLAN, switch behavior, cluster network</text>
+
+  <line x1="500" y1="696" x2="500" y2="720" class="line"/>
+  <rect x="210" y="726" width="580" height="95" class="final"/>
+  <text x="500" y="758" class="text" font-weight="700">7. Correct or escalate</text>
+  <text x="500" y="784" class="small">Protect remaining copies before changing state</text>
+  <text x="500" y="806" class="small">Provide logs, diagnostics, topology, versions, and timeline</text>
+</svg>

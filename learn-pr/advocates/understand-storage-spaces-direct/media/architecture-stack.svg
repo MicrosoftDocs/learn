@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760" role="img" aria-labelledby="title desc">
+  <title id="title">Storage Spaces Direct component stack</title>
+  <desc id="desc">Eight numbered layers run from physical media through Hyper-V or Scale-Out File Server workloads.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#44546a"/>
+    </marker>
+    <style>
+      .box { fill:#eaf2f8; stroke:#245a7a; stroke-width:2; rx:8; }
+      .accent { fill:#d9ead3; stroke:#38761d; stroke-width:2; rx:8; }
+      .text { font-family:Segoe UI,Arial,sans-serif; font-size:18px; fill:#1f1f1f; text-anchor:middle; }
+      .small { font-family:Segoe UI,Arial,sans-serif; font-size:14px; fill:#404040; text-anchor:middle; }
+      .line { stroke:#44546a; stroke-width:3; marker-end:url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1100" height="760" fill="#ffffff"/>
+  <text x="550" y="34" class="text" font-weight="700">Storage Spaces Direct component stack</text>
+
+  <rect x="260" y="60" width="580" height="58" class="accent"/>
+  <text x="550" y="86" class="text">8. Hyper-V or Scale-Out File Server</text>
+  <text x="550" y="106" class="small">Consumes resilient volumes</text>
+
+  <line x1="550" y1="124" x2="550" y2="145" class="line"/>
+  <rect x="260" y="151" width="580" height="58" class="box"/>
+  <text x="550" y="177" class="text">7. Cluster Shared Volumes</text>
+  <text x="550" y="197" class="small">Presents one cluster namespace</text>
+
+  <line x1="550" y1="215" x2="550" y2="236" class="line"/>
+  <rect x="260" y="242" width="580" height="58" class="box"/>
+  <text x="550" y="268" class="text">6. ReFS or NTFS</text>
+  <text x="550" y="288" class="small">Formats each volume</text>
+
+  <line x1="550" y1="306" x2="550" y2="327" class="line"/>
+  <rect x="260" y="333" width="580" height="58" class="box"/>
+  <text x="550" y="359" class="text">5. Storage Spaces virtual disks</text>
+  <text x="550" y="379" class="small">Applies mirror, parity, or tiered placement</text>
+
+  <line x1="550" y1="397" x2="550" y2="418" class="line"/>
+  <rect x="260" y="424" width="580" height="58" class="box"/>
+  <text x="550" y="450" class="text">4. Cluster storage pool</text>
+  <text x="550" y="470" class="small">Combines eligible drives</text>
+
+  <line x1="550" y1="488" x2="550" y2="509" class="line"/>
+  <rect x="260" y="515" width="580" height="58" class="box"/>
+  <text x="550" y="541" class="text">3. Software Storage Bus</text>
+  <text x="550" y="561" class="small">Carries cross-node storage over SMB 3</text>
+
+  <line x1="550" y1="579" x2="550" y2="600" class="line"/>
+  <rect x="260" y="606" width="580" height="58" class="box"/>
+  <text x="550" y="632" class="text">2. Storage Bus Layer cache</text>
+  <text x="550" y="652" class="small">Binds fast media to local capacity media</text>
+
+  <line x1="550" y1="670" x2="550" y2="691" class="line"/>
+  <rect x="260" y="697" width="580" height="48" class="accent"/>
+  <text x="550" y="727" class="text">1. Direct-attached physical media</text>
+</svg>

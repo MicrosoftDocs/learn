@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-storage-spaces-direct.troubleshoot-storage-spaces-direct
+title: Troubleshoot Storage Spaces Direct
+metadata:
+  title: Troubleshoot Storage Spaces Direct
+  description: Diagnose storage, network, capacity, and cluster faults and define backup, quorum, and recovery boundaries for Storage Spaces Direct.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-troubleshoot-storage-spaces-direct.md)]
