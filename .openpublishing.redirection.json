@@ -72556,6 +72556,111 @@
       "source_path": "learn-pr/paths/develop-asp-core-api/index.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/interact-api/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/interact-api/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/interact-api/2-explore-asp-net-core-api.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/interact-api/3-document-api-swashbuckle.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/interact-api/4-exercise-explore-api-documentation.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/interact-api/5-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/interact-api/6-summary.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-http-operations-asp-razor/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-http-operations-asp-razor/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-http-operations-asp-razor/2-explore-http-clients.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-http-operations-asp-razor/3-make-http-requests.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-http-operations-asp-razor/4-exercise-implement-http-requests-asp-razor.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-http-operations-asp-razor/5-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-http-operations-asp-razor/6-summary.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/render-api-responses-razor-pages/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/render-api-responses-razor-pages/1-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/render-api-responses-razor-pages/2-explore-asp-core-razor-pages.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/render-api-responses-razor-pages/3-discover-razor-syntax.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/render-api-responses-razor-pages/4-exercise-render-api-responses-razor-pages.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/render-api-responses-razor-pages/5-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/render-api-responses-razor-pages/6-summary.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }

@@ -8861,3 +8861,18 @@ achievements:
   title: Develop an ASP.NET Core web app that consumes an API
   summary: Learn how to gather information from API documentation and perform HTTP operations in an&nbsp;[ASP.NET](https://asp.net/)&nbsp;Core Blazor web app.
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.implement-http-operations-asp-razor.badge
+  type: badge
+  title: Implement HTTP operations in ASP.NET Core Blazor Web apps
+  summary: Learn how to implement HTTP clients based on `HttpClient` and `IHttpClientFactory`. And how to implement code to perform HTTP operations in [ASP.NET](https://ASP.NET) Core Blazor Web apps.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.interact-api.badge
+  type: badge
+  title: Interact with an ASP.NET Core minimal API
+  summary: Learn how APIs are implemented in ASP.NET Core, and how to use API documentation to learn the APIs requirements.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.render-api-responses-razor-pages.badge
+  type: badge
+  title: Render API responses in ASP.NET Core Blazor Web apps
+  summary: Learn how to render API responses in ASP.NET Core Blazor Web apps.
+  iconUrl: /training/achievements/generic-badge.svg
