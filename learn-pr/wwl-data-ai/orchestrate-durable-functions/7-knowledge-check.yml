@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-durable-functions.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 09/02/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "An orchestrator directly calls a model endpoint and branches on the response. The orchestration later fails during replay because the model returns a different result. How should you redesign the workflow?"
+    choices:
+    - content: "Move the model call to an activity function and branch on the recorded activity result in the orchestrator"
+      isCorrect: true
+      explanation: "Correct. Activity functions perform nondeterministic input/output operations. Durable Functions records the activity result, so the orchestrator can replay the same deterministic branch."
+    - content: "Keep the model call in the orchestrator and replace the endpoint with a synchronous deployment"
+      isCorrect: false
+      explanation: "Incorrect. A synchronous endpoint is still an external input/output operation and can return a different result during replay. The call belongs in an activity function."
+    - content: "Keep the model call in the orchestrator and use context.current_utc_datetime before each request"
+      isCorrect: false
+      explanation: "Incorrect. The orchestration-safe clock makes time-based decisions deterministic, but it doesn't make an external model call replay-safe."
+
+  - content: "A workflow processes thousands of independent documents, but the model deployment has limited request capacity. Which fan-out/fan-in design best protects the dependency while preserving parallel processing?"
+    choices:
+    - content: "Yield each activity immediately so the orchestrator processes every document sequentially"
+      isCorrect: false
+      explanation: "Incorrect. Sequential processing avoids a burst, but it removes parallelism and can increase total batch latency unnecessarily."
+    - content: "Divide the documents into bounded batches and use context.task_all() for each batch before scheduling the next one"
+      isCorrect: true
+      explanation: "Correct. Bounded batches preserve parallel work within each group while limiting the number of activities scheduled at once. You select the batch size from observed function and downstream capacity."
+    - content: "Schedule every activity at once and rely on the orchestration history to enforce the model rate limit"
+      isCorrect: false
+      explanation: "Incorrect. Orchestration history records durable tasks, but it doesn't enforce a downstream request rate. An unbounded burst can exceed the model deployment's capacity."
+
+  - content: "A document workflow must wait up to 24 hours for an adjuster's decision without holding compute resources. Which orchestration pattern should you use?"
+    choices:
+    - content: "Call time.sleep() in the orchestrator and check the approval database after the delay"
+      isCorrect: false
+      explanation: "Incorrect. Language-native sleep blocks execution and isn't replay-safe in an orchestrator. Repeated polling also wastes resources while no decision is available."
+    - content: "Call an approval activity with a 24-hour client request timeout"
+      isCorrect: false
+      explanation: "Incorrect. A long-running activity holds an invocation while it waits and couples the workflow to one request. Human interaction should use a durable wait."
+    - content: "Race wait_for_external_event() against a durable timer with context.task_any() and cancel the pending timer when the event wins"
+      isCorrect: true
+      explanation: "Correct. The external event resumes the orchestration when a decision arrives, while the durable timer defines the deadline without holding a worker. Canceling the losing timer lets the orchestration finish cleanly."
+
+  - content: "An activity writes a result blob, but the host restarts before Durable Functions records the activity completion. The activity runs again. Which design prevents a duplicate result?"
+    choices:
+    - content: "Use a stable operation ID as the blob name, create the blob without overwrite, and return the existing result when the blob already exists"
+      isCorrect: true
+      explanation: "Correct. Durable Functions provides at-least-once activity execution, so stable operation keys and conditional writes make repeated execution produce the same business result."
+    - content: "Generate a new UUID inside the activity for each write so every retry has a unique blob name"
+      isCorrect: false
+      explanation: "Incorrect. A new UUID makes each retry appear to be different work, which creates duplicate results instead of detecting the earlier write."
+    - content: "Enable orchestrator replay logging so Durable Functions suppresses the second blob write"
+      isCorrect: false
+      explanation: "Incorrect. Replay-aware logging prevents duplicate telemetry from the orchestrator. It doesn't provide deduplication for activity side effects."
+
+  - content: "A document activity exhausts its bounded retries after a transient dependency failure, and an earlier step already created provisional external state. How should the orchestration handle the failure?"
+    choices:
+    - content: "Return a Completed status after logging the error so the batch can continue"
+      isCorrect: false
+      explanation: "Incorrect. Returning Completed hides the technical failure and leaves provisional state without an explicit recovery outcome."
+    - content: "Schedule an idempotent compensation activity for completed side effects, then rethrow the original failure"
+      isCorrect: true
+      explanation: "Correct. Compensation applies a new business action to address completed external work. Rethrowing preserves the failed orchestration status instead of presenting compensation as normal success."
+    - content: "Retry the entire orchestration instance without recording which forward operations completed"
+      isCorrect: false
+      explanation: "Incorrect. Repeating the workflow without tracking completed operations can duplicate side effects and can compensate the wrong steps. The workflow should record progress and make both forward and compensation activities idempotent."

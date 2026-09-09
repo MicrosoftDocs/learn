@@ -3,11 +3,11 @@ uid: learn.wwl.fabric-govern-analytics-data.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary of governing analytics data in Microsoft Fabric."
-  ms.date: 04/06/2026
+  description: "Review how classification, endorsement, documentation, and the OneLake catalog work together to govern analytics data."
+  ms.date: 09/02/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
