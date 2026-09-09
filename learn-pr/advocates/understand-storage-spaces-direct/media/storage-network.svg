@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Redundant Storage Spaces Direct network</title>
+  <desc id="desc">Four numbered cluster nodes connect through two separate storage switches. SMB Multichannel uses both paths. RDMA operates on each validated path.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#44546a"/>
+    </marker>
+    <style>
+      .node { fill:#eaf2f8; stroke:#245a7a; stroke-width:2; rx:10; }
+      .switch { fill:#d9ead3; stroke:#38761d; stroke-width:2; rx:10; }
+      .note { fill:#fff2cc; stroke:#bf9000; stroke-width:2; rx:10; }
+      .text { font-family:Segoe UI,Arial,sans-serif; font-size:17px; fill:#1f1f1f; text-anchor:middle; }
+      .small { font-family:Segoe UI,Arial,sans-serif; font-size:14px; fill:#404040; text-anchor:middle; }
+      .pathA { stroke:#2b78e4; stroke-width:4; fill:none; marker-end:url(#arrow); }
+      .pathB { stroke:#cc0000; stroke-width:4; fill:none; marker-end:url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1200" height="680" fill="#ffffff"/>
+  <text x="600" y="34" class="text" font-weight="700">Redundant east-west storage network</text>
+
+  <rect x="40" y="80" width="250" height="120" class="node"/>
+  <text x="165" y="112" class="text" font-weight="700">1. Node S2D01</text>
+  <text x="165" y="140" class="small">Storage adapter A</text>
+  <text x="165" y="165" class="small">Storage adapter B</text>
+
+  <rect x="910" y="80" width="250" height="120" class="node"/>
+  <text x="1035" y="112" class="text" font-weight="700">2. Node S2D02</text>
+  <text x="1035" y="140" class="small">Storage adapter A</text>
+  <text x="1035" y="165" class="small">Storage adapter B</text>
+
+  <rect x="40" y="450" width="250" height="120" class="node"/>
+  <text x="165" y="482" class="text" font-weight="700">3. Node S2D03</text>
+  <text x="165" y="510" class="small">Storage adapter A</text>
+  <text x="165" y="535" class="small">Storage adapter B</text>
+
+  <rect x="910" y="450" width="250" height="120" class="node"/>
+  <text x="1035" y="482" class="text" font-weight="700">4. Node S2D04</text>
+  <text x="1035" y="510" class="small">Storage adapter A</text>
+  <text x="1035" y="535" class="small">Storage adapter B</text>
+
+  <rect x="425" y="160" width="350" height="90" class="switch"/>
+  <text x="600" y="194" class="text" font-weight="700">5. Storage switch A</text>
+  <text x="600" y="220" class="small">Path A failure domain</text>
+
+  <rect x="425" y="350" width="350" height="90" class="switch"/>
+  <text x="600" y="384" class="text" font-weight="700">6. Storage switch B</text>
+  <text x="600" y="410" class="small">Path B failure domain</text>
+
+  <path d="M290,125 L415,185" class="pathA"/>
+  <path d="M910,125 L785,185" class="pathA"/>
+  <path d="M290,485 L415,225" class="pathA"/>
+  <path d="M910,485 L785,225" class="pathA"/>
+
+  <path d="M290,165 L415,375" class="pathB"/>
+  <path d="M910,165 L785,375" class="pathB"/>
+  <path d="M290,525 L415,415" class="pathB"/>
+  <path d="M910,525 L785,415" class="pathB"/>
+
+  <rect x="300" y="595" width="600" height="58" class="note"/>
+  <text x="600" y="620" class="text">7. SMB Multichannel selects both validated paths</text>
+  <text x="600" y="642" class="small">SMB Direct uses RDMA when adapter, host, and switch configuration agree</text>
+</svg>
