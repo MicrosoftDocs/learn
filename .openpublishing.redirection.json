@@ -72661,6 +72661,46 @@
       "source_path": "learn-pr/wwl-azure/render-api-responses-razor-pages/6-summary.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+       {
+      "source_path": "learn-pr/wwl/administer-fabric/index.md",
+      "redirect_url": "/fabric/admin/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/administer-fabric/1-introduction.md",
+      "redirect_url": "/fabric/admin/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/administer-fabric/2-fabric-admin-model.md",
+      "redirect_url": "/fabric/admin/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/administer-fabric/3-configure-tenant-settings.md",
+      "redirect_url": "/fabric/admin/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/administer-fabric/4-manage-user-access-licensing.md",
+      "redirect_url": "/fabric/admin/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/administer-fabric/5-monitor-govern.md",
+      "redirect_url": "/fabric/admin/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/administer-fabric/6-knowledge-check.md",
+      "redirect_url": "/fabric/admin/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/administer-fabric/7-summary.md",
+      "redirect_url": "/fabric/admin/",
+      "redirect_document_id": false
     }
   ]
 }

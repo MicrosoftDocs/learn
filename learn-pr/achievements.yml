@@ -8876,3 +8876,8 @@ achievements:
   title: Render API responses in ASP.NET Core Blazor Web apps
   summary: Learn how to render API responses in ASP.NET Core Blazor Web apps.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.administer-fabric.badge
+  type: badge
+  title: Administer a Microsoft Fabric environment
+  summary: Learn how to configure and manage a Microsoft Fabric environment. Explore the admin hierarchy, configure tenant settings, delegate admin rights, manage user licenses, and monitor platform health.
+  iconUrl: /training/achievements/administer-microsoft-fabric.svg
