@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-durable-functions.separate-orchestrator-activity-responsibilities
+title: Separate orchestration logic from activity work
+metadata:
+  title: Separate Orchestration Logic from Activity Work
+  description: Separate orchestration logic from activity work
+  ms.date: 09/02/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-separate-orchestrator-activity-responsibilities.md)]

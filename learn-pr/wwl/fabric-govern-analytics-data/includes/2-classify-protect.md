@@ -1,57 +1,26 @@
-Before you can endorse assets or make data discoverable, you need to ensure that confidential information is properly classified and controlled. Microsoft Fabric integrates with Microsoft Purview Information Protection to provide sensitivity labels that classify, protect, and govern your data across the platform. You might not configure these labels yourself, but you play a critical role in identifying which data needs protection and understanding how labels should be applied.
+Without classification, nothing prevents someone from using sensitive data they shouldn't have access to. A lakehouse containing employee salary data might sit in a workspace where anyone with viewer access can export it to Excel and share it in a meeting deck. **Classification makes the sensitivity visible** before someone opens or exports the data.
 
-## Understand sensitivity labels
+## What sensitivity labels do
 
-Sensitivity labels are metadata tags from Microsoft Purview Information Protection that you apply to Fabric items. Each label represents a classification level that your organization defines, such as Public, General, Confidential, or Highly Confidential. Labels communicate the classification level to users and can enforce protection policies that control access.
+Sensitivity labels are metadata tags that classify Fabric items by sensitivity level. Common levels include Public, General, Confidential, and Highly Confidential. Your organization defines these levels and the policies behind them.
 
-When a sensitivity label is applied to a Fabric item, the label:
+Sensitivity labels are visible in the Fabric portal for all item types, so users can make informed decisions. Labels can enforce access restrictions through protection policies that control who opens the item.
 
-- Appears visually on the item in the Fabric portal, so users understand the data's classification at a glance.
-- Can enforce access control through Microsoft Purview protection policies.
-- Travels with data when exported through supported paths, such as Excel, PDF, PowerPoint, and Power BI Desktop (.pbix) files.
+In a typical workflow, data moves from a lakehouse through a warehouse or SQL analytics endpoint, into a semantic model, and into reports. Labels flow with that data automatically through inheritance. Labels also travel with the data when exported through supported paths like Excel, PDF, PowerPoint, and Power BI Desktop files.
 
-Sensitivity labels work across all Fabric item types, including lakehouses, warehouses, semantic models, reports, notebooks, and pipelines.
+:::image type="content" source="../media/label-inheritance-flow.png" alt-text="Diagram of a sensitivity label applied at the lakehouse flowing downstream through warehouse, semantic model, and report.":::
 
-> [!NOTE]
-> Sensitivity labels require Microsoft Purview Information Protection licensing and configuration by your organization's Purview administrator. If your organization doesn't use Purview, you can still govern data using endorsement, documentation, and the OneLake catalog features covered later in this module.
+This means **classification can start at the source**. Labeling a lakehouse at ingestion time can protect every item built from it.
 
-## Identify data that needs classification
+## When to classify data
 
-As the person who discovers, transforms, and models data, you're often the first to recognize when a dataset contains sensitive information. The following example uses common classification labels as a thought exercise. When evaluating whether data needs a sensitivity label, consider these questions:
+Classification matters most when data contains information that could cause harm if misused. Personally identifiable information like names and addresses, financial data like salaries or account numbers, health records, and internal business data not meant for external audiences all warrant explicit classification.
 
-| Question | Typical classification |
-|----------|------------------------|
-| Does the data contain personally identifiable information (PII) such as names, addresses, or email addresses? | Confidential or higher. |
-| Does the data include financial information such as salaries, revenue, or account numbers? | Confidential or higher. |
-| Does the data contain health records or other regulated information? | Highly Confidential. |
-| Is the data intended for public use, such as published reports or marketing metrics? | Public or General. |
-| Is the data experimental or exploratory, without a defined audience? | General (apply a baseline label to prevent it from being unlabeled). |
+Even exploratory or experimental data benefits from a baseline label. An unlabeled item gives consumers no information about its sensitivity, which creates uncertainty.
 
-Document your findings and share them with the team responsible for label configuration to ensure labels reflect the actual data landscape.
+## If labels aren't available
 
-## Understand how labels affect your workflow
-
-Even when someone else configures labels, they directly affect how you work with data in Fabric:
-
-- **Visibility:** Labeled items display their classification in the Fabric portal. When you browse a workspace or the OneLake catalog, you can see which items are classified and at what level. This helps you choose the right source data for your semantic models.
-- **Export behavior:** When you export labeled data through supported paths (Excel, PDF, PowerPoint, .pbix), the label and its protections travel with the exported file. Exports to CSV or TXT files don't carry label protection, and Fabric displays a warning.
-- **Access restrictions:** If a label is associated with a Purview protection policy, only users in the permitted security groups can access the item. If you can't open a lakehouse or semantic model, a protection policy on its label might be the reason.
-
-## Understand how labels propagate through lineage
-
-In a typical analytics workflow, data flows from a lakehouse through a warehouse or SQL analytics endpoint, into a semantic model, and finally into reports. Downstream inheritance means that applying a single label at the lakehouse level can protect every item in that chain. For example, a lakehouse labeled Confidential passes that label to any SQL analytics endpoint, semantic model, or report built from it.
-
-Fabric provides several automatic labeling capabilities that reduce the need for manual action:
-
-- **Default labeling:** New items automatically receive a baseline label if no label is applied during creation.
-- **Mandatory labeling:** When enabled, users can't save Power BI items without applying a label, preventing unlabeled content from reaching consumers. Support for non-Power BI Fabric items is limited.
-- **Downstream inheritance:** Labels propagate automatically from upstream to downstream items.
-- **Inheritance upon creation:** New items created from labeled parents inherit the parent's label.
-- **Inheritance from data sources:** Power BI semantic models inherit labels from labeled data sources.
-
-Because of this propagation, your labeling strategy can focus on source items. Label lakehouses and warehouses at the point of ingestion, and let inheritance protect downstream assets. Additionally, enable default labeling so new items always receive baseline classification, and use the OneLake catalog's Govern tab to track items that lack labels.
+Sensitivity labels require configuration by your organization's security team. If labels aren't set up yet, you can still make sensitivity visible by using clear item descriptions, workspace naming conventions, and tags. These approaches don't enforce access controls, but they give consumers information they wouldn't otherwise have.
 
 > [!TIP]
-> If your organization doesn't use Microsoft Purview, you can still classify data informally by using workspace naming conventions, item descriptions, and tags. These approaches provide visibility without the enforcement that sensitivity labels offer, but they're better than no classification at all.
-
-With classification in place, you're ready to signal which assets are trustworthy through endorsement and documentation.
+> Think about the data assets in your workspace. Which ones contain information that someone outside your team shouldn't see? Would a consumer know that just by looking at the item in the catalog?
