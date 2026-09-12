@@ -53,7 +53,7 @@ The following table compares Microsoft 365 Business Standard, Microsoft Office H
 | Microsoft Defender for Business        | ❌                             | ❌                              | ✅                             |
 | Azure Active Directory Premium         | ❌                             | ❌                              | ✅                             |
 | Data loss prevention (DLP)             | ❌                             | ❌                              | ✅                             |
-| Conditional access and compliance      | ❌                             | ❌                              | ✅                             |
+| Conditional Access and compliance      | ❌                             | ❌                              | ✅                             |
 | Copilot add-on support                 | ✅                             | ❌                              | ✅                             |
 | Admin center and user management       | ✅                             | ❌                              | ✅                             |
 | Web versions of Office apps            | ✅                             | ❌                              | ✅                             |

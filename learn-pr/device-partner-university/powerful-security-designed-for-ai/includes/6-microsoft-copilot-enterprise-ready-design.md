@@ -9,7 +9,7 @@ This integrated approach helps organizations manage AI experiences while maintai
 Copilot+ PCs can be managed using familiar tools and frameworks:
 
 - **Microsoft Intune** for device management, compliance policies, and configuration of on-device AI experiences  
-- **Microsoft Entra ID** for identity, authentication, and conditional access  
+- **Microsoft Entra ID** for identity, authentication, and Conditional Access  
 - **Zero-touch deployment** for streamlined provisioning at scale  
 
 These tools enable IT administrators to control how AI features are enabled, configured, and used across devices.

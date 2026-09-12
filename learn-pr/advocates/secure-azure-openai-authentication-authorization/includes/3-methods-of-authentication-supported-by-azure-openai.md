@@ -42,7 +42,7 @@ Client IDs, tenant IDs, and object IDs are identifiers, not secrets. A leaked cl
 Microsoft recommends Microsoft Entra ID authentication where possible because it enables centralized identity controls and RBAC. Compared with key-based authentication, Microsoft Entra ID authentication can:
 
 - Grant least-privilege access to users, apps, and managed identities instead of sharing a resource key.
-- Use conditional access, identity governance, auditing, and credential lifecycle controls available in Microsoft Entra.
+- Use Conditional Access, identity governance, auditing, and credential lifecycle controls available in Microsoft Entra.
 - Avoid storing long-lived API keys in app settings, configuration files, scripts, or deployment pipelines.
 - Let you rotate or revoke credentials for one identity without replacing a shared key across every workload.
 

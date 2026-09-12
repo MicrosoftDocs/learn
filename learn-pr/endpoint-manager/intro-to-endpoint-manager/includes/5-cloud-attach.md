@@ -22,7 +22,7 @@ There are two main paths to co-management:
 
 When you enroll existing Configuration Manager clients in co-management, you immediately gain the following capabilities:
 
-- Conditional access with device compliance
+- Conditional Access with device compliance
 - Intune-based remote actions, such as restart, remote control, or factory reset
 - Centralized device health visibility
 - Microsoft Entra ID to link users, devices, and apps

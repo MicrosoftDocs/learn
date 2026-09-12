@@ -13,7 +13,7 @@ prerequisites: |
   - Familiarity with Microsoft 365, Microsoft Intune, and Microsoft Entra ID
   - (Optional) Access to Microsoft Intune and Microsoft Security Copilot for hands-on practice
 summary: |
-  In this learning path, you will learn how to prepare your environment for device management, enroll and validate devices, configure and secure endpoints, protect data with conditional access, harden security with Defender for Endpoint, and accelerate remediation using Microsoft Security Copilot. Gain hands-on experience with real-world labs and practical scenarios to implement Zero Trust principles and modern endpoint security.
+  In this learning path, you will learn how to prepare your environment for device management, enroll and validate devices, configure and secure endpoints, protect data with Conditional Access, harden security with Defender for Endpoint, and accelerate remediation using Microsoft Security Copilot. Gain hands-on experience with real-world labs and practical scenarios to implement Zero Trust principles and modern endpoint security.
 iconUrl: /training/achievements/copilot-learning-path.svg
 levels:
 - intermediate
