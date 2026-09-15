@@ -8881,3 +8881,23 @@ achievements:
   title: Administer a Microsoft Fabric environment
   summary: Learn how to configure and manage a Microsoft Fabric environment. Explore the admin hierarchy, configure tenant settings, delegate admin rights, manage user licenses, and monitor platform health.
   iconUrl: /training/achievements/administer-microsoft-fabric.svg
+- uid: learn.wwl.develop-solutions-that-use-blob-storage.trophy
+  type: trophy
+  title: Develop solutions that use Blob storage
+  summary: Learn how to create Azure Blob storage resources, manage data through the blob storage lifecycle, and work with containers and items by using the Azure Blob storage client library V12 for .NET.
+  iconUrl: /training/achievements/develop-solutions-that-use-blob-storage.svg
+- uid: learn.wwl.explore-azure-blob-storage.badge
+  type: badge
+  title: Explore Azure Blob storage
+  summary: Learn the core features and functionality of Azure Blob storage.
+  iconUrl: /training/achievements/1-explore-azure-blob-storage.svg
+- uid: learn.wwl.manage-azure-blob-storage-lifecycle.badge
+  type: badge
+  title: Manage the Azure Blob storage lifecycle
+  summary: Learn how to manage data availability throughout the Azure Blob storage lifecycle.
+  iconUrl: /training/achievements/2-manage-the-azure-blob-storage-lifecycle.svg
+- uid: learn.wwl.work-azure-blob-storage.badge
+  type: badge
+  title: Work with Azure Blob storage
+  summary: Learn how to use the Azure Blob storage client library to create and update Blob storage resources.
+  iconUrl: /training/achievements/3-work-with-azure-blob-storage.svg
