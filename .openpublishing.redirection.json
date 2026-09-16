@@ -72966,6 +72966,236 @@
       "source_path": "learn-pr/paths/use-azure-machine-learning-pipelines-for-automation/index.md",
       "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-developer-tools-for-workspace-interaction/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-developer-tools-for-workspace-interaction/5-exercise.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-developer-tools-for-workspace-interaction/4-explore-cli.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-developer-tools-for-workspace-interaction/3-explore-python-sdk.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-developer-tools-for-workspace-interaction/2-explore-studio.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-developer-tools-for-workspace-interaction/1-introduction.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-developer-tools-for-workspace-interaction/6-knowledge-check.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-developer-tools-for-workspace-interaction/7-summary.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/make-data-available-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/make-data-available-azure-machine-learning/4-create-data-asset.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/make-data-available-azure-machine-learning/3-create-datastore.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/make-data-available-azure-machine-learning/5-exercise.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/make-data-available-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/make-data-available-azure-machine-learning/6-knowledge-check.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/make-data-available-azure-machine-learning/7-summary.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/make-data-available-azure-machine-learning/2-understand-uris.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/track-model-training-jupyter-notebooks-mlflow/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/track-model-training-jupyter-notebooks-mlflow/4-exercise-track-model-training.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/track-model-training-jupyter-notebooks-mlflow/1-introduction.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/track-model-training-jupyter-notebooks-mlflow/5-knowledge-check.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/track-model-training-jupyter-notebooks-mlflow/6-summary.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/track-model-training-jupyter-notebooks-mlflow/3-train-models-notebooks.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/track-model-training-jupyter-notebooks-mlflow/2-use-mlflow-model-tracking.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-models-training-mlflow-jobs/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-models-training-mlflow-jobs/4-exercise-use-mlflow-track-training-jobs.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-models-training-mlflow-jobs/1-introduction.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-models-training-mlflow-jobs/5-knowledge-check.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-models-training-mlflow-jobs/6-summary.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-models-training-mlflow-jobs/2-track-metrics-mlflow.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-models-training-mlflow-jobs/3-view-metrics-evaluate-models.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-compute-resources-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-compute-resources-azure-machine-learning/2-compute-targets.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-compute-resources-azure-machine-learning/4-create-use-compute-cluster.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-compute-resources-azure-machine-learning/3-create-use-compute-instance.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-compute-resources-azure-machine-learning/5-exercise.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-compute-resources-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-compute-resources-azure-machine-learning/6-knowledge-check.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-compute-resources-azure-machine-learning/7-summary.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-environments-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-environments-azure-machine-learning/4-create-use-custom-environments.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-environments-azure-machine-learning/5-exercise.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-environments-azure-machine-learning/3-explore-use-curated-environments.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-environments-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-environments-azure-machine-learning/6-knowledge-check.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-environments-azure-machine-learning/7-summary.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-environments-azure-machine-learning/2-understand-environments.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
     }
   ]
 }

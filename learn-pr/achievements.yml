@@ -8931,3 +8931,33 @@ achievements:
   title: Optimize model training with Azure Machine Learning
   summary: Learn how to optimize model training in Azure Machine Learning by using scripts, jobs, components and pipelines.
   iconUrl: /training/achievements/use-azure-machine-learning-pipelines-for-automation.svg
+- uid: learn.wwl.explore-developer-tools-for-workspace-interaction.badge
+  type: badge
+  title: Explore developer tools for workspace interaction
+  summary: Learn how you can interact with the Azure Machine Learning workspace. You can use the Azure Machine Learning studio, the Python SDK (v2), or the Azure CLI (v2).
+  iconUrl: /training/achievements/explore-developer-tools-for-workspace-interaction.svg
+- uid: learn.wwl.make-data-available-azure-machine-learning.badge
+  type: badge
+  title: Make data available in Azure Machine Learning
+  summary: Learn about how to connect to data from the Azure Machine Learning workspace. You're introduced to datastores and data assets.
+  iconUrl: /training/achievements/make-data-available-azure-machine-learning.svg
+- uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow.badge
+  type: badge
+  title: Track model training in Jupyter notebooks with MLflow
+  summary: Learn how to use MLflow for model tracking when experimenting in notebooks.
+  iconUrl: /training/achievements/track-model-training-jupyter-notebooks-mlflow.svg
+- uid: learn.wwl.train-models-training-mlflow-jobs.badge
+  type: badge
+  title: Track model training with MLflow in jobs
+  summary: Learn how to track model training with MLflow in jobs when running scripts.
+  iconUrl: /training/achievements/track-model-training-with-mlflow-in-jobs.svg
+- uid: learn.wwl.work-compute-resources-azure-machine-learning.badge
+  type: badge
+  title: Work with compute targets in Azure Machine Learning
+  summary: Learn how to work with compute targets in Azure Machine Learning. Compute targets allow you to run your machine learning workloads. Explore how and when you can use a compute instance or compute cluster.
+  iconUrl: /training/achievements/work-compute-resources-azure-machine-learning.svg
+- uid: learn.wwl.work-environments-azure-machine-learning.badge
+  type: badge
+  title: Work with environments in Azure Machine Learning
+  summary: Learn how to use environments in Azure Machine Learning to run scripts on any compute target.
+  iconUrl: /training/achievements/work-with-environments-in-azure-machine-learning.svg
