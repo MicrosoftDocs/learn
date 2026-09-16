@@ -4,10 +4,10 @@ title: Exercise - Ingest data with a pipeline
 metadata:
   title: Exercise - Ingest data with a pipeline
   description: "Exercise - Ingest data with a pipeline"
-  ms.date: 05/23/2025
-  author: theresa-i
-  ms.author: theresai
+  ms.date: 9/16/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
-durationInMinutes: 60
+durationInMinutes: 45
 content: |
   [!include[](includes/6-exercise-pipelines.md)]
