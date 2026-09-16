@@ -2,12 +2,13 @@
 uid: learn.wwl.use-data-factory-pipelines-fabric.run-monitor-pipelines
 title: Run and monitor pipelines
 metadata:
+  zone_pivot_groups: video-or-text
   title: Run and monitor pipelines
   description: "Run and monitor pipelines"
-  ms.date: 05/23/2025
-  author: theresa-i
-  ms.author: theresai
+  ms.date: 9/16/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
   [!include[](includes/5-run-monitor-pipelines.md)]

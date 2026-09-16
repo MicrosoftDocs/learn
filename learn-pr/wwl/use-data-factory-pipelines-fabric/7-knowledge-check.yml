@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/23/2025
-  author: theresa-i
-  ms.author: theresai
+  ms.date: 9/16/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3
@@ -23,13 +23,13 @@ quiz:
       explanation: "Correct. A pipeline consists of activities to ingest and transform data."
     - content: "A saved Power Query"
       isCorrect: false
-      explanation: "Incorrect. Though, a dataflow (Gen2) is a Power Query based encapsulation of data transfer and transformation steps that can be included in a pipeline."
+      explanation: "Incorrect. A Dataflow Gen2 uses Power Query to define data transfer and transformation steps that can run in a pipeline."
   - content: "You want to use a pipeline to copy data to a folder with a specified name for each run. What should you do?"
     choices:
-    - content: "Create multiple pipelines - one for each folder name"
+    - content: "Create multiple pipelines, one for each folder name"
       isCorrect: false
       explanation: "Incorrect. This is an inefficient way to accomplish the goal."
-    - content: "Use a Dataflow (Gen2)"
+    - content: "Use a Dataflow Gen2"
       isCorrect: false
       explanation: "Incorrect. Using a dataflow doesn't inherently enable dynamic folder naming."
     - content: "Add a parameter to the pipeline and use it to specify the folder name for each run"
@@ -42,7 +42,7 @@ quiz:
       explanation: "Incorrect. This approach wouldn't show the timings for the previous run."
     - content: "View the run details in the run history."
       isCorrect: true
-      explanation: "Correct. The run history details show the time taken for each activity - optionally as a Gantt chart."
-    - content: "View the **Refreshed** value for your lakehouse's default dataset"
+      explanation: "Correct. The run details show the duration of each activity."
+    - content: "View the properties of the destination lakehouse table."
       isCorrect: false
-      explanation: "Incorrect. The refreshed value shows the timestamp when the dataset was last refreshed, not the elapsed time for pipeline activities."
+      explanation: "Incorrect. Lakehouse table properties don't show the duration of activities in a previous pipeline run."

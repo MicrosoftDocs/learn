@@ -2,11 +2,12 @@
 uid: learn.wwl.use-data-factory-pipelines-fabric.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Introduction"
-  ms.date: 05/23/2025
-  author: theresa-i
-  ms.author: theresai
+  ms.date: 9/16/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 durationInMinutes: 1
 content: |
