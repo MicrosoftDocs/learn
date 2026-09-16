@@ -25,7 +25,6 @@ modules:
 - learn.wwl.make-data-available-azure-machine-learning
 - learn.wwl.work-compute-resources-azure-machine-learning
 - learn.wwl.work-environments-azure-machine-learning
-- learn.wwl.run-training-script-command-job-azure-machine-learning
 - learn.wwl.train-models-training-mlflow-jobs
 - learn.wwl.register-mlflow-model-azure-machine-learning
 - learn.wwl.deploy-model-managed-online-endpoint

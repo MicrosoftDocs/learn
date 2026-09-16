@@ -8901,3 +8901,33 @@ achievements:
   title: Work with Azure Blob storage
   summary: Learn how to use the Azure Blob storage client library to create and update Blob storage resources.
   iconUrl: /training/achievements/3-work-with-azure-blob-storage.svg
+- uid: learn.wwl.automate-machine-learning-model-selection-azure-machine-learning.trophy
+  type: trophy
+  title: Experiment with Azure Machine Learning
+  summary: Learn how to find the best model with automated machine learning (AutoML) and by experimenting in notebooks.
+  iconUrl: /training/achievements/automate-machine-learning-model-selection-azure-machine-learning.svg
+- uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets.badge
+  type: badge
+  title: Explore Azure Machine Learning workspace resources and assets
+  summary: As a data scientist, you can use Azure Machine Learning to train and manage your machine learning models. Learn what Azure Machine Learning is, and get familiar with all its resources and assets.
+  iconUrl: /training/achievements/explore-azure-machine-learning-workspace-resources-assets.svg
+- uid: learn.wwl.explore-azure-machine-learning-workspace.trophy
+  type: trophy
+  title: Explore and configure the Azure Machine Learning workspace
+  summary: Throughout this learning path you explore and configure the Azure Machine Learning workspace. Learn how you can create a workspace and what you can do with it. Explore the various developer tools you can use to interact with the workspace. Configure the workspace for machine learning workloads by creating data assets and compute resources.
+  iconUrl: /training/achievements/explore-azure-machine-learning-workspace.svg
+- uid: learn.wwl.find-best-classification-model-automated-machine-learning.badge
+  type: badge
+  title: Find the best classification model with Automated Machine Learning
+  summary: Learn how to find the best classification model with automated machine learning (AutoML). You'll use the Python SDK (v2) to configure and run an AutoML job.
+  iconUrl: /training/achievements/find-best-classification-model-automated-machine-learning.svg
+- uid: learn.wwl.run-training-script-command-job-azure-machine-learning.badge
+  type: badge
+  title: Run a training script as a command job in Azure Machine Learning
+  summary: Learn how to convert your code to a script and run it as a command job in Azure Machine Learning.
+  iconUrl: /training/achievements/run-training-script-command-job-azure-machine-learning.svg
+- uid: learn.wwl.use-azure-machine-learning-pipelines-for-automation.trophy
+  type: trophy
+  title: Optimize model training with Azure Machine Learning
+  summary: Learn how to optimize model training in Azure Machine Learning by using scripts, jobs, components and pipelines.
+  iconUrl: /training/achievements/use-azure-machine-learning-pipelines-for-automation.svg
