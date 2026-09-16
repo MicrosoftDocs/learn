@@ -9011,3 +9011,8 @@ achievements:
   title: Register an MLflow model in Azure Machine Learning
   summary: Learn how to log and register an MLflow model in Azure Machine Learning.
   iconUrl: /training/achievements/register-an-mlflow-model-in-azure-machine-learning.svg
+- uid: learn.wwl.design-machine-learning-operations-solution.badge
+  type: badge
+  title: Design a machine learning operations solution (MLOps)
+  summary: Choose this module if you want to design an MLOps architecture for monitoring and retraining production models.
+  iconUrl: /training/achievements/design-a-machine-learning-operations-solution.svg

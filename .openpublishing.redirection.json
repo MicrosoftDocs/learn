@@ -73456,6 +73456,41 @@
       "source_path": "learn-pr/wwl-azure/register-mlflow-model-azure-machine-learning/3-understand-mlflow-model-format.md",
       "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-machine-learning-operations-solution/index.md",
+      "redirect_url": "/training/modules/design-machine-learning-model-training-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-machine-learning-operations-solution/5-case-study.md",
+      "redirect_url": "/training/modules/design-machine-learning-model-training-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-machine-learning-operations-solution/3-design-monitoring.md",
+      "redirect_url": "/training/modules/design-machine-learning-model-training-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-machine-learning-operations-solution/4-design-retraining.md",
+      "redirect_url": "/training/modules/design-machine-learning-model-training-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-machine-learning-operations-solution/2-explore-machine-learning-operations-solution-architecture.md",
+      "redirect_url": "/training/modules/design-machine-learning-model-training-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-machine-learning-operations-solution/1-introduction.md",
+      "redirect_url": "/training/modules/design-machine-learning-model-training-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-machine-learning-operations-solution/6-summary.md",
+      "redirect_url": "/training/modules/design-machine-learning-model-training-solution/",
+      "redirect_document_id": false
     }
   ]
 }

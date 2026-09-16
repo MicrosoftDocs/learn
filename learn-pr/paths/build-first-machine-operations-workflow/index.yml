@@ -31,7 +31,6 @@ modules:
 - learn.wwl.run-training-scripts-track-models-mlflow
 - learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines
 - learn.wwl.run-pipelines-azure-machine-learning
-- learn.wwl.design-machine-learning-operations-solution
 - learn.wwl.trigger-azure-machine-learn-jobs-github-actions
 - learn.wwl.deploy-model-github-actions
 trophy:
