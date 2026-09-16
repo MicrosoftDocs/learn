@@ -73301,6 +73301,161 @@
       "source_path": "learn-pr/paths/train-deploy-machine-learning-model/index.md",
       "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-managed-online-endpoint/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-managed-online-endpoint/3-deploy-your-mlflow-model-managed-online-endpoint.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-managed-online-endpoint/4-eploy-custom-model-managed-online-endpoint.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-managed-online-endpoint/6-exercise-deploy-mlflow-model-online-endpoint.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-managed-online-endpoint/2-explore-managed-online-endpoints.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-managed-online-endpoint/1-introduction.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-managed-online-endpoint/7-knowledge-check.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-managed-online-endpoint/5-monitor-online-endpoints.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-managed-online-endpoint/8-summary.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-data-ingestion-strategy-for-machine-learning-projects/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-data-ingestion-strategy-for-machine-learning-projects/3-choose-how-serve-data-workflows.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-data-ingestion-strategy-for-machine-learning-projects/5-exercise.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-data-ingestion-strategy-for-machine-learning-projects/2-identify-your-data-source-format.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-data-ingestion-strategy-for-machine-learning-projects/1-introduction.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-data-ingestion-strategy-for-machine-learning-projects/6-knowledge-check.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-data-ingestion-strategy-for-machine-learning-projects/4-solution.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-data-ingestion-strategy-for-machine-learning-projects/7-summary.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-model-deployment-solution/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-model-deployment-solution/3-decide-real-time-batch-deployment.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-model-deployment-solution/1-introduction.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-model-deployment-solution/4-knowledge-check.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-model-deployment-solution/5-summary.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-model-deployment-solution/2-understand-how-model-consumed.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/register-mlflow-model-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/register-mlflow-model-azure-machine-learning/5-exercise-register-mlflow-model.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/register-mlflow-model-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/register-mlflow-model-azure-machine-learning/6-knowledge-check.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/register-mlflow-model-azure-machine-learning/2-log-mlflow-model.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/register-mlflow-model-azure-machine-learning/4-register-model.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/register-mlflow-model-azure-machine-learning/7-summary.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/register-mlflow-model-azure-machine-learning/3-understand-mlflow-model-format.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
     }
   ]
 }

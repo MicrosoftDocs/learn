@@ -8991,3 +8991,23 @@ achievements:
   title: Train and manage a machine learning model with Azure Machine Learning
   summary: To train a machine learning model with Azure Machine Learning, you need to make data available and configure the necessary compute. After training your model and tracking model metrics with MLflow, you can decide to deploy your model to an online endpoint for real-time predictions. Throughout this learning path, you explore how to set up your Azure Machine Learning workspace, after which you train and manage a machine learning model.
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.deploy-model-managed-online-endpoint.badge
+  type: badge
+  title: Deploy a model to a managed online endpoint
+  summary: Learn how to deploy models to a managed online endpoint for real-time inferencing.
+  iconUrl: /training/achievements/deploy-model-managed-online-endpoint.svg
+- uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.badge
+  type: badge
+  title: Design a data ingestion strategy for machine learning projects
+  summary: Learn how to design a data ingestion solution for training data used in machine learning projects.
+  iconUrl: /training/achievements/design-data-ingestion-strategy-for-machine-learning-projects.svg
+- uid: learn.wwl.design-model-deployment-solution.badge
+  type: badge
+  title: Design a model deployment solution
+  summary: Learn how to design a model deployment solution and how the requirements of the deployed model can affect the way you train a model.
+  iconUrl: /training/achievements/design-model-deployment-solution.svg
+- uid: learn.wwl.register-mlflow-model-azure-machine-learning.badge
+  type: badge
+  title: Register an MLflow model in Azure Machine Learning
+  summary: Learn how to log and register an MLflow model in Azure Machine Learning.
+  iconUrl: /training/achievements/register-an-mlflow-model-in-azure-machine-learning.svg
