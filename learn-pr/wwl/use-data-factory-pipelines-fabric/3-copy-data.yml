@@ -2,11 +2,12 @@
 uid: learn.wwl.use-data-factory-pipelines-fabric.copy-data
 title: Use the Copy Data activity
 metadata:
+  zone_pivot_groups: video-or-text
   title: Use the Copy Data activity
   description: "Use the Copy Data activity"
-  ms.date: 05/23/2025
-  author: theresa-i
-  ms.author: theresai
+  ms.date: 9/16/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 durationInMinutes: 3
 content: |

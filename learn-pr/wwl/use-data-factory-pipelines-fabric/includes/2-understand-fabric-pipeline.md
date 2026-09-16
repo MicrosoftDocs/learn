@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=97381fc3-760d-4b1f-b30b-6afa7e38d6a3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Pipelines in Microsoft Fabric encapsulate a sequence of *activities* that perform data movement and processing tasks. You can use a pipeline to define data transfer and transformation activities, and orchestrate these activities through control flow activities that manage branching, looping, and other typical processing logic. The graphical pipeline *canvas* in the Fabric user interface enables you to build complex pipelines with minimal or no coding required.
 
 ![Screenshot of a pipeline in Microsoft Fabric.](../media/pipeline.png)
@@ -10,16 +21,16 @@ Before building pipelines in Microsoft Fabric, you should understand a few core 
 
 Activities are the executable tasks in a pipeline. You can define a flow of activities by connecting them in a sequence. The outcome of a particular activity (success, failure, or completion) can be used to direct the flow to the next activity in the sequence.
 
-There are two broad categories of activity in a pipeline.
+There are three broad categories of activity in a pipeline.
 
-- **Data transformation activities** - activities that encapsulate data transfer operations, including simple **Copy Data** activities that extract data from a source and load it to a destination, and more complex **Data Flow** activities that encapsulate dataflows (Gen2) that apply transformations to the data as it is transferred. Other data transformation activities include **Notebook** activities to run a Spark notebook, **Stored procedure** activities to run SQL code, **Delete data** activities to delete existing data, and others. In OneLake, you can configure the destination to a lakehouse, warehouse, SQL database, or other options.
+- **Data movement activities** - activities that move data between supported sources and destinations. For example, a **Copy Data** activity can extract data from an external source and load it into a lakehouse, warehouse, SQL database, or another supported destination.
+
+- **Data transformation activities** - activities that process and transform data. These activities include **Dataflow Gen2** activities that run dataflows, **Notebook** activities that run Spark code, **Stored procedure** activities that run SQL code, and **Delete data** activities that delete existing data.
 
 - **Control flow activities** - activities that you can use to implement loops, conditional branching, or manage variable and parameter values. The wide range of control flow activities enables you to implement complex pipeline logic to orchestrate data ingestion and transformation flow.
 
 > [!TIP]
 > For details about the complete set of pipeline activities available in Microsoft Fabric, see [Activity overview](/fabric/data-factory/activity-overview) in the Microsoft Fabric documentation.
-
-<!-- Update URL for release -->
 
 ### Parameters
 
@@ -29,4 +40,6 @@ Using parameters increases the reusability of your pipelines, enabling you to cr
 
 ### Pipeline runs
 
-Each time a pipeline is executed, a *data pipeline run* is initiated. Runs can be initiated on-demand in the Fabric user interface or scheduled to start at a specific frequency. Use the unique run ID to review run details to confirm they completed successfully and investigate the specific settings used for each execution.
+Each time a pipeline is executed, a *data pipeline run* is initiated. You can start a run on demand in the Fabric user interface, on a schedule, or in response to an event. Use the unique run ID to review run details, confirm that activities completed successfully, and investigate the settings used for each execution.
+
+::: zone-end
