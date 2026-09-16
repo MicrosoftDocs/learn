@@ -8961,3 +8961,33 @@ achievements:
   title: Work with environments in Azure Machine Learning
   summary: Learn how to use environments in Azure Machine Learning to run scripts on any compute target.
   iconUrl: /training/achievements/work-with-environments-in-azure-machine-learning.svg
+- uid: learn.wwl.deploy-consume-models-azure-machine-learning.trophy
+  type: trophy
+  title: Deploy and consume models with Azure Machine Learning
+  summary: Learn how to deploy a model to an endpoint. When you deploy a model, you can get real-time or batch predictions by calling the endpoint.
+  iconUrl: /training/achievements/deploy-consume-models-azure-machine-learning.svg
+- uid: learn.wwl.deploy-model-batch-endpoint.badge
+  type: badge
+  title: Deploy a model to a batch endpoint
+  summary: Learn how to deploy models to a batch endpoint. When you invoke a batch endpoint, you trigger a batch scoring job.
+  iconUrl: /training/achievements/deploy-a-model-to-a-batch-endpoint.svg
+- uid: learn.wwl.design-machine-learning-solution.trophy
+  type: trophy
+  title: Design a machine learning solution
+  summary: There are many options on Azure to train and consume machine learning models. Which service best fits your scenario can depend on a myriad of factors. Learn how to identify important requirements and when to use which service when you want to use machine learning models.
+  iconUrl: /training/achievements/design-machine-learning-solution.svg
+- uid: learn.wwl.manage-compare-models-azure-machine-learning.badge
+  type: badge
+  title: Create and explore the Responsible AI dashboard for a model in Azure Machine Learning
+  summary: Explore model explanations, error analysis, counterfactuals, and causal analysis by creating a Responsible AI dashboard. You'll create and run the pipeline in Azure Machine Learning using the Python SDK v2 to generate the dashboard.
+  iconUrl: /training/achievements/manage-compare-models-in-azure-machine-learning.svg
+- uid: learn.wwl.manage-review-models-azure-machine-learning.trophy
+  type: trophy
+  title: Manage and review models in Azure Machine Learning
+  summary: Learn how to manage and review models in Azure Machine Learning by using MLflow to store your model files and using responsible AI features to evaluate your models.
+  iconUrl: /training/achievements/manage-review-models-azure-machine-learning.svg
+- uid: learn.wwl.train-deploy-machine-learning-model.trophy
+  type: trophy
+  title: Train and manage a machine learning model with Azure Machine Learning
+  summary: To train a machine learning model with Azure Machine Learning, you need to make data available and configure the necessary compute. After training your model and tracking model metrics with MLflow, you can decide to deploy your model to an online endpoint for real-time predictions. Throughout this learning path, you explore how to set up your Azure Machine Learning workspace, after which you train and manage a machine learning model.
+  iconUrl: /training/achievements/generic-trophy.svg

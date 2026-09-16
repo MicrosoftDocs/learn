@@ -73196,6 +73196,111 @@
       "source_path": "learn-pr/wwl-azure/work-environments-azure-machine-learning/2-understand-environments.md",
       "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/deploy-consume-models-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-batch-endpoint/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-batch-endpoint/4-deploy-custom-model-batch-endpoint.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-batch-endpoint/3-deploy-your-mlflow-model-batch-endpoint.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-batch-endpoint/6-exercise-deploy-mlflow-model-batch-endpoint.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-batch-endpoint/2-explore-batch-endpoints.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-batch-endpoint/1-introduction.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-batch-endpoint/7-knowledge-check.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-batch-endpoint/5-monitor-batch-endpoints.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-model-batch-endpoint/8-summary.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/design-machine-learning-solution/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-compare-models-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-compare-models-azure-machine-learning/3-create-responsible-dashboard.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-compare-models-azure-machine-learning/5-exercise-explore-responsible-dashboard.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-compare-models-azure-machine-learning/4-explore-responsible-dashboard.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-compare-models-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-compare-models-azure-machine-learning/6-knowledge-check.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-compare-models-azure-machine-learning/7-summary.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-compare-models-azure-machine-learning/2-understand-responsible-ai.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/manage-review-models-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/train-deploy-machine-learning-model/index.md",
+      "redirect_url": "/training/paths/build-first-machine-operations-workflow/",
+      "redirect_document_id": false
     }
   ]
 }
