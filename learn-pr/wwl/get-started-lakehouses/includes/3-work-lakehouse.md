@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=81f3d7eb-505f-4b1a-80ca-ce70846a1010]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Your lakehouse needs data before it can deliver insights. Whether you're loading files from local storage, connecting to data across clouds, or building transformation pipelines, understanding ingestion and transformation techniques is essential. Start by creating a lakehouse and exploring the tools available to get your data in and ready for analysis.
 
 ## Create and explore a lakehouse
@@ -24,7 +35,7 @@ You can work with your lakehouse in two modes:
 Ingesting data into your lakehouse is the first step in your ETL (extract, transform, load) process. Use any of the following methods to bring data into your lakehouse.
 
 - **Upload**: Upload local files or folders directly through the lakehouse explorer.
-- **Load to Table**: Select a file or folder in the lakehouse explorer and choose **Load to Table** to create a Delta table without writing code. This no-code option supports Parquet and CSV files, and lets you append or overwrite data in new or existing tables.
+- **Load to tables**: Select a file or folder in the lakehouse explorer and choose **Load to tables** to create a Delta table without writing code. This no-code option supports Parquet and CSV files, and lets you append or overwrite data in new or existing tables.
 - **Dataflows Gen2**: Import and transform data using Power Query.
 - **Notebooks**: Use Apache Spark to ingest, transform, and load data programmatically.
 - **Data Factory pipelines**: Use the Copy data activity to move data from external sources.
@@ -52,3 +63,5 @@ Most data requires transformation before loading into tables. You might ingest r
 - **Notebooks** are favored by data engineers familiar with programming languages including PySpark, SQL, and Scala. Copilot in notebooks can generate transformation code from natural language descriptions and explain existing Spark code.
 - **Dataflows Gen2** are suited for users familiar with Power BI or Excel, since they use the Power Query interface.
 - **Pipelines** provide a visual interface to orchestrate ETL processes. Pipelines can include multiple activities that run in sequence or parallel.
+
+::: zone-end

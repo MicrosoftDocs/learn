@@ -6,9 +6,9 @@ metadata:
   ai_generated_module_assessment: false
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/04/2026
-  author: theresa-i
-  ms.author: theresai
+  ms.date: 9/17/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
   ai-usage: ai-assisted
@@ -53,9 +53,9 @@ quiz:
     - content: "A notebook with PySpark code"
       isCorrect: false
       explanation: "Incorrect. While notebooks can load data, they require writing code."
-    - content: "Load to Table"
+    - content: "Load to tables"
       isCorrect: true
-      explanation: "Correct. Load to Table is a no-code option that creates Delta tables from Parquet or CSV files directly in the lakehouse explorer."
+      explanation: "Correct. Load to tables is a no-code option that creates Delta tables from Parquet or CSV files directly in the lakehouse explorer."
     - content: "The SQL analytics endpoint"
       isCorrect: false
       explanation: "Incorrect. The SQL analytics endpoint is read-only and can't create tables."
