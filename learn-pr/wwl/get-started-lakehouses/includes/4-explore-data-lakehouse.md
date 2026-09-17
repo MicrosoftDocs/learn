@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e0ed6df5-ad09-46a0-b03d-82af7f18e8ed]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 After you ingest and transform data, it's ready for analysis. A lakehouse in Microsoft Fabric provides multiple ways to query and analyze data, so you can choose the right tool for each task. Whether you prefer SQL for familiar querying patterns or Spark for complex analysis, the lakehouse accommodates your workflow.
 
 ## Query data using the SQL analytics endpoint
@@ -16,6 +27,15 @@ The SQL analytics endpoint also supports **row-level security** and **column-lev
 
 > [!TIP]
 > Copilot for SQL queries can help you write T-SQL queries from natural language descriptions. You can describe what you want to analyze, and Copilot suggests query code to accomplish your goal. This approach accelerates query authoring and helps you learn T-SQL patterns.
+
+## Explore data using Lakehouse Query Explorer
+
+Lakehouse Query Explorer provides a Spark SQL editor directly in the Lakehouse explorer. Use it to inspect data, test joins, create views, and visualize query results without creating a notebook or switching to the SQL analytics endpoint. Unlike the read-only SQL analytics endpoint, Query Explorer supports Spark SQL statements that read and modify lakehouse data.
+
+Query Explorer works well for focused Spark SQL tasks. It supports cross-schema and cross-lakehouse queries, multiple query tabs, and inline charts. For workflows that require PySpark, Scala, R, reusable code, or scheduled execution, use a notebook instead.
+
+> [!NOTE]
+> For more information, see [Query data by using the Lakehouse Query Explorer](/fabric/data-engineering/lakehouse-query-explorer).
 
 ## Query data using Spark notebooks
 
@@ -49,3 +69,5 @@ Power BI can connect to lakehouse data in two ways:
 When you build reports on a lakehouse semantic model, Power BI uses **Direct Lake** mode by default. Direct Lake reads data directly from Delta Lake Parquet files without importing or copying data. This approach provides fast query performance while ensuring reports always reflect the current lakehouse data.
 
 Semantic models also support downstream intelligent experiences. When you define clear relationships and business measures in a semantic model, Copilot in Power BI can generate visualizations and answer business questions by reasoning over your lakehouse data.
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fdb11666-0ef9-4200-a831-42844540551b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Traditional analytics architectures often force you to choose between two approaches. Data lakes offer flexibility and scalability but lack the structure and performance needed for business analytics. Data warehouses provide strong analytical capabilities but struggle with diverse data formats and can be costly to scale. **Lakehouses** bridge this gap by bringing database-like capabilities directly to your data lake, eliminating the need to maintain separate systems for different workloads.
 
 ![Diagram of a lakehouse, displaying the folder structure of a data lake and the relational capabilities of a data warehouse.](../media/lakehouse-components.png)
@@ -57,3 +68,5 @@ When you create tables with clear schemas, consistent naming conventions, and de
 Copilot capabilities in Fabric also benefit from well-structured lakehouse data. Copilot in Power BI can generate reports and answer business questions when it can reason over clearly defined tables and relationships. The same lakehouse data can feed semantic models that support natural language exploration across Microsoft 365 experiences.
 
 This means the investment you make in organizing, naming, and structuring lakehouse data pays dividends beyond your immediate analytics needs. Good data engineering practices in the lakehouse create a reusable foundation for intelligent experiences across the platform.
+
+::: zone-end
