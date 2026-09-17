@@ -9,7 +9,7 @@ In this exercise, you perform the following tasks:
 - Create a visual query
 
 > [!NOTE]
-> You need a Microsoft Fabric trial license with the Fabric preview enabled in your tenant. See [**Getting started with Fabric**](/fabric/get-started/fabric-trial) to enable your Fabric trial license.
+> You need access to a workspace assigned to a Fabric capacity, Power BI Premium capacity, or Fabric trial capacity. For more information, see [Try Microsoft Fabric for free](/fabric/fundamentals/fabric-trial).
 
 Launch the exercise and follow the instructions.
 
