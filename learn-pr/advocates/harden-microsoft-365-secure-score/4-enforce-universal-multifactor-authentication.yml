@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.harden-microsoft-365-secure-score.enforce-universal-multifactor-authentication
+title: Enforce universal multifactor authentication
+metadata:
+  title: Enforce Universal Multifactor Authentication
+  description: Assess authentication registration, configure an all-user multifactor authentication policy, and validate staged enforcement.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-enforce-universal-multifactor-authentication.md)]

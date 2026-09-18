@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.harden-microsoft-365-secure-score.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Interpret Microsoft Secure Score recommendations, scoring methods, and detection delays before implementing tenant security controls.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/1-introduction.md)]
