@@ -1,6 +1,6 @@
-GitHub Actions is a powerful feature that helps you to go from code to cloud, all from the comfort and convenience of your own repository. Here, you'll learn about the different types of GitHub actions and the metadata, syntax, and workflow commands to create custom GitHub actions. 
+GitHub Actions is a powerful feature that helps you to go from code to cloud, all from the comfort and convenience of your own repository. Here, you'll learn about the different types of GitHub Actions and the metadata, syntax, and workflow commands to create custom GitHub Actions.
 
-## Types of GitHub actions
+## Types of GitHub Actions
 
 :::image type="content" source="../media/action-types.png" alt-text="Diagram of the three types of GitHub Actions; Docker, JavaScript, and composite run steps actions." border="false":::
 
@@ -33,15 +33,15 @@ The steps to build a JavaScript action are minimal and straightforward:
 
 Composite run steps actions allow you to reuse actions by using shell scripts. You can even mix multiple shell languages within the same action. If you have many shell scripts to automate several tasks, you can now easily turn them into an action and reuse them for different workflows. Sometimes it's easier to just write a shell script than using JavaScript or wrapping your code in a Docker container.
 
-# Packaged composite action
+## Packaged composite action
 
 Packaged composite actions bundle multiple steps into a reusable unit. These actions are defined in a repository and can be referenced in workflows across different repositories. Packaging a composite action simplifies workflows, reduces duplication, and improves maintainability.
 
 When creating a packaged composite action, the steps are defined in a single `action.yml` file. This file specifies the inputs, outputs, and the sequence of commands or actions to execute. Packaged composite actions are particularly useful for automating repetitive tasks or combining multiple shell commands into a single reusable action.
 
-## Create a composite qction
+## Create a composite action
 
-### 1. Set Up a directory for the composite action
+### 1. Set up a directory for the composite action
 
 You must place your composite action in its own directory inside the repository.
 
@@ -76,7 +76,8 @@ runs:
       with:
         node-version: ${{ inputs.node-version }}
 ```        
-**Note:** The using: **"composite"** field indicates that this action is a composite action.
+> [!NOTE]
+> The using: **"composite"** field indicates that this action is a composite action.
 
 ### 3. Use the composite action in a workflow  
 Once the composite action is created, it can be referenced in a GitHub Actions workflow.
@@ -176,7 +177,7 @@ A **CLI setup action** is a **JavaScript-based action** that installs and config
 
 ### Steps to create the action:
 
-### Step 1: Set Up the Action Directory
+### Step 1: Set up the action directory
 To manually create the directory for your CLI setup action, follow these steps:
 
 1. **Navigate to your repository**  
@@ -198,7 +199,7 @@ To manually create the directory for your CLI setup action, follow these steps:
   │   │   ├── my-cli-action/
   ```
 
-:::image type="content" source="../media/javascript-action-directory.png" alt-text="Screenshot of directory structure for a JavaScript action inside '.github/actions.' " border="false":::
+:::image type="content" source="../media/javascript-action-directory.png" alt-text="Screenshot of the directory structure for a JavaScript action inside the .github/actions folder." border="false":::
 
 You are now ready to proceed with creating the `action.yml` file and other necessary files for your CLI setup action.
 
@@ -324,7 +325,7 @@ This ensures that subsequent runs reuse the cached CLI installation, reducing se
 | **Cache CLI Installation** | Optimize workflow performance using `actions/cache`.                       |
 | **Provide Documentation**  | Explain usage and inputs in `README.md`.                                    |
 
-# Troubleshoot JavaScript actions
+## Troubleshoot JavaScript actions
 
 When working with JavaScript-based GitHub Actions, you may encounter unexpected behavior, errors, or failures during workflow execution. This unit provides techniques and tools to help you identify and resolve issues in your JavaScript actions.
 
@@ -338,7 +339,7 @@ When working with JavaScript-based GitHub Actions, you may encounter unexpected 
 | File not found | Missing relative paths | Use `__dirname` or full paths to files |
 | Cache is not restored | Wrong `key` or `path` values | Check cache configuration and keys |
 
-## Use Logging for Debugging
+## Use logging for debugging
 
 ### Log messages with `core.info`, `core.debug`, and `console.log`
 
@@ -415,7 +416,7 @@ try {
 | **Use try/catch**        | Prevent workflows from failing silently.                                    |
 
 
-# Troubleshoot Docker container actions
+## Troubleshoot Docker container actions
 Docker container actions are powerful for encapsulating complex tools and environments in GitHub Actions workflows. However, debugging these actions can be more challenging than JavaScript actions due to their isolated runtime environment. This unit will guide you through identifying, diagnosing, and resolving issues with Docker-based actions.
 
 ## Common issues in Docker container actions
@@ -433,38 +434,39 @@ Docker container actions are powerful for encapsulating complex tools and enviro
 
 Before troubleshooting, it's helpful to understand how Docker container actions run.
 
-### 1. Workflow Trigger
+### 1. Workflow trigger
 
 A GitHub Actions workflow starts in response to a configured event—such as a `push`, `pull_request`, or manual `workflow_dispatch`.
 
-### 2. Runner Setup
+### 2. Runner setup
 
 GitHub provisions a fresh virtual machine (the **runner**) to execute the workflow. The runner prepares the environment by downloading action definitions and resolving dependencies.
 
-### 3. Action Resolution
+### 3. Action resolution
 
 If the action specifies `runs.using: docker` in its `action.yml` file, GitHub recognizes it as a Docker-based action.
 
-### 4. Image Build or Pull
+### 4. Image build or pull
 
 GitHub builds the Docker image defined in the action’s `Dockerfile` or pulls a prebuilt image if specified. This image defines the environment in which the action code runs.
 
-### 5. Container Execution
+### 5. Container execution
 
 The runner launches the Docker container, mounts the workspace, and injects environment variables, including secrets and inputs defined in the workflow.
 
-### 6. Entrypoint Runs
+### 6. Entrypoint runs
 
 GitHub executes the `entrypoint` command from the Dockerfile inside the container. This is where the custom action logic runs, typically a script or application.
 
-### 7. Result Handling
+### 7. Result handling
 
 Any outputs set by the container action are captured by the runner and passed along to subsequent steps in the workflow. Once complete, the container shuts down and the runner is discarded.
 
-> Note: Docker container actions run in a clean, isolated environment. File system state, installed tools, and environment variables must all be defined within the Dockerfile.
+> [!NOTE]
+> Docker container actions run in a clean, isolated environment. File system state, installed tools, and environment variables must all be defined within the Dockerfile.
 
 ### Debugging techniques
-#### 1. Add Logging
+#### 1. Add logging
 Use echo, printf, or logging statements in your entrypoint script:
 
 ```bash
@@ -488,7 +490,7 @@ act -j test-job
 ```
 Great for testing Docker actions in workflows without pushing to GitHub.
 
-#### 4. Validate Dockerfile configuration
+#### 4. Validate dockerfile configuration
 Ensure you define either ENTRYPOINT or CMD.
 Copy your scripts into the image and give them execute permission:
 ```dockerfile
