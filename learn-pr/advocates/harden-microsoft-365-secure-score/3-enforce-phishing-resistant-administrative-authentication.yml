@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.harden-microsoft-365-secure-score.enforce-phishing-resistant-administrative-authentication
+title: Enforce phishing-resistant administrative authentication
+metadata:
+  title: Enforce Phishing-Resistant Administrative Authentication
+  description: Deploy phishing-resistant administrative authentication through a staged Conditional Access policy with verified emergency access exclusions.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-enforce-phishing-resistant-administrative-authentication.md)]

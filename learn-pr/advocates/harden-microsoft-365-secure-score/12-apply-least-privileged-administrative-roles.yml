@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.harden-microsoft-365-secure-score.apply-least-privileged-administrative-roles
+title: Apply least-privileged administrative roles
+metadata:
+  title: Apply Least-Privileged Administrative Roles
+  description: Replace broad standing administrative privilege with scoped, eligible role assignments and recurring access reviews.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/12-apply-least-privileged-administrative-roles.md)]

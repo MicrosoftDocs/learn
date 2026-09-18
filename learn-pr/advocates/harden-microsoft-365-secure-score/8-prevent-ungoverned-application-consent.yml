@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.harden-microsoft-365-secure-score.prevent-ungoverned-application-consent
+title: Prevent ungoverned application consent
+metadata:
+  title: Prevent Ungoverned Application Consent
+  description: Restrict future user consent, configure the administrator consent workflow, and review existing application permission grants.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-prevent-ungoverned-application-consent.md)]
