@@ -24,9 +24,9 @@ quiz:
     - content: "A model powered by machine learning."
       isCorrect: false
       explanation: "Incorrect. Although GitHub Copilot is powered by machine learning, this description is too broad and doesn't accurately define its primary function as a coding assistant."
-    - content: "An assistant for coding, powered by OpenAI."
+    - content: "An AI coding assistant that helps you write code faster and with less effort."
       isCorrect: true
-      explanation: "Correct. GitHub Copilot is an AI-powered coding assistant developed by OpenAI, which helps developers by suggesting code completions and snippets."
+      explanation: "Correct. GitHub Copilot is an AI coding assistant that helps developers write code faster and with less effort by suggesting code completions and snippets."
     - content: "A service for web hosting."
       isCorrect: false
       explanation: "Incorrect. GitHub Copilot isn't a web hosting service. It's an AI-powered tool for assisting with code writing."
@@ -114,8 +114,3 @@ quiz:
     - content: "Avoiding examples in the prompt to not restrict Copilot's creativity."
       isCorrect: false
       explanation: "Incorrect. Providing examples can clarify requirements and expectations, leading to better code suggestions."
-
-
-
-
-
