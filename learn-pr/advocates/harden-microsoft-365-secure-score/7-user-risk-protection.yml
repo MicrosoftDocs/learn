@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.harden-microsoft-365-secure-score.user-risk-protection
+title: User risk protection
+metadata:
+  title: User Risk Protection
+  description: Configure user risk protection and validate remediation for password-backed, passwordless, and synchronized identities.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-user-risk-protection.md)]

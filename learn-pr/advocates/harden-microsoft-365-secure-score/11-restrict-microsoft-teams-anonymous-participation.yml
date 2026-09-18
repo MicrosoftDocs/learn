@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.harden-microsoft-365-secure-score.restrict-microsoft-teams-anonymous-participation
+title: Restrict Microsoft Teams anonymous participation
+metadata:
+  title: Restrict Microsoft Teams Anonymous Participation
+  description: Restrict anonymous Microsoft Teams participation while testing authenticated guest and external access separately.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/11-restrict-microsoft-teams-anonymous-participation.md)]

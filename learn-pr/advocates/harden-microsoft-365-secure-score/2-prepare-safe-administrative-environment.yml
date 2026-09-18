@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.harden-microsoft-365-secure-score.prepare-safe-administrative-environment
+title: Prepare a safe administrative environment
+metadata:
+  title: Prepare a Safe Administrative Environment
+  description: Prepare licensing, least-privileged operator roles, emergency access accounts, pilot identities, PowerShell connections, and rollback data.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-prepare-safe-administrative-environment.md)]

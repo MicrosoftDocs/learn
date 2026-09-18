@@ -1,0 +1,62 @@
+### YamlMime:Module
+uid: learn.devrel.harden-microsoft-365-secure-score
+title: Harden a Microsoft 365 tenant with Microsoft Secure Score
+metadata:
+  title: Harden a Microsoft 365 Tenant with Microsoft Secure Score
+  description: Implement commonly flagged Microsoft Secure Score recommendations by using staged identity, application, privilege, recovery, and meeting controls.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-365-admin
+summary: |
+  Implement commonly flagged Microsoft Secure Score recommendations by using staged identity, application, privilege, recovery, and meeting controls.
+abstract: |
+  By the end of this module, you'll be able to:
+
+  - Interpret Microsoft Secure Score points, states, and refresh behavior.
+  - Prepare emergency access, pilot users, permissions, and recovery data.
+  - Enforce strong authentication for administrators and standard users.
+  - Block legacy authentication.
+  - Remediate risky sign-ins and risky identities.
+  - Prevent ungoverned delegated application consent.
+  - Restrict lobby bypass, presenter privileges, and anonymous meeting access.
+  - Replace broad standing roles with scoped, time-bound roles.
+  - Enable self-service password reset for every user.
+  - Validate effective behavior independently from score refresh.
+prerequisites: |
+  - Experience administering a Microsoft 365 tenant.
+  - Familiarity with Microsoft Entra Conditional Access, Microsoft Teams meeting policies, and PowerShell.
+  - To perform the configuration steps, access to a test tenant with the licenses and administrative roles described in this module.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- m365
+- entra-id
+- office-teams
+subjects:
+- security
+units:
+- learn.devrel.harden-microsoft-365-secure-score.introduction
+- learn.devrel.harden-microsoft-365-secure-score.prepare-safe-administrative-environment
+- learn.devrel.harden-microsoft-365-secure-score.enforce-phishing-resistant-administrative-authentication
+- learn.devrel.harden-microsoft-365-secure-score.enforce-universal-multifactor-authentication
+- learn.devrel.harden-microsoft-365-secure-score.block-legacy-authentication
+- learn.devrel.harden-microsoft-365-secure-score.sign-risk-protection
+- learn.devrel.harden-microsoft-365-secure-score.user-risk-protection
+- learn.devrel.harden-microsoft-365-secure-score.prevent-ungoverned-application-consent
+- learn.devrel.harden-microsoft-365-secure-score.configure-invited-participant-lobby-access
+- learn.devrel.harden-microsoft-365-secure-score.restrict-microsoft-teams-presentation-privileges
+- learn.devrel.harden-microsoft-365-secure-score.restrict-microsoft-teams-anonymous-participation
+- learn.devrel.harden-microsoft-365-secure-score.apply-least-privileged-administrative-roles
+- learn.devrel.harden-microsoft-365-secure-score.enable-self-service-password-reset
+- learn.devrel.harden-microsoft-365-secure-score.validate-security-controls
+- learn.devrel.harden-microsoft-365-secure-score.knowledge-check
+- learn.devrel.harden-microsoft-365-secure-score.summary
+badge:
+  uid: learn.devrel.harden-microsoft-365-secure-score.badge
