@@ -1,28 +1,31 @@
 ### YamlMime:Module
 uid: learn.github.github-copilot-code-agent
-title: Accelerate development with GitHub Copilot Cloud Agent 
+title: Accelerate development with GitHub Copilot cloud agent
 metadata:
-  title: Accelerate development with GitHub Copilot Cloud Agent 
-  description: This module introduces GitHub Copilot Cloud Agent , showing how it automates routine tasks, manages pull requests, and integrates into your development workflow.
+  title: Accelerate Development with GitHub Copilot Cloud Agent
+  description: Learn how GitHub Copilot cloud agent automates routine tasks, manages pull requests, and supports your development workflow.
   author: camihmerhar
   ms.author: camhernandez
   ms.date: 09/22/2025
   ms.update-cycle: 180-days
   ms.service: github
   ms.topic: module
-summary: This module explains how to use Copilot Cloud Agent  to assign tasks, streamline development, and combine automation with your team's expertise for faster, higher-quality outcomes.
+summary: Learn how to delegate tasks to GitHub Copilot cloud agent. Use automation to streamline development while your team maintains control.
 
 abstract: |
   By the end of this module, you'll be able to:
-  - Explain what the Copilot Cloud Agent  is, how it differs from IDE assistants, and how to enable and budget for it.
-  - Describe the agent's built-in protections, main risks, mitigations, and its workflow and compatibility limits.
-  - Assign issues to Copilot, track its pull-request sessions, iterate with @copilot comments, and troubleshoot problems.
-  - Preconfigure the agent's environment, extend its capabilities with MCP, and test and validate its output before merging.
-  - Apply responsible-use practices, scope tasks effectively, secure environments, and improve performance.
+  - Explain how GitHub Copilot cloud agent differs from IDE assistants.
+  - Enable the agent, monitor its usage, and manage costs.
+  - Describe the agent's safeguards, risks, and limitations.
+  - Assign issues to Copilot and track its pull request sessions.
+  - Request changes with @copilot comments and troubleshoot problems.
+  - Configure the agent's environment and extend its capabilities with MCP.
+  - Test and validate the agent's output before merging.
+  - Apply responsible use practices to define tasks, secure environments, and improve performance.
 
 prerequisites: |
   - GitHub account with Copilot Pro, Copilot Pro+, Copilot Business, or Copilot Enterprise
-  - Repositories hosted on GitHub (agent does not work on non-GitHub hosts)
+  - A repository hosted on GitHub
   - Basic familiarity with issues, pull requests, Actions, and repository rulesets
 
 iconUrl: /training/achievements/generic-badge.svg
@@ -42,6 +45,7 @@ units:
   - learn.github.github-copilot-code-agent.customize-extend-validate-copilot-code-agent
   - learn.github.github-copilot-code-agent.responsible-use-github-copilot-code-agent-github
   - learn.github.github-copilot-code-agent.exercise-expand-team-copilot-code-agent
+  - learn.github.github-copilot-code-agent.knowledge-check
   - learn.github.github-copilot-code-agent.summary
 badge:
   uid: learn.github.github-copilot-code-agent.badge

@@ -1,109 +1,135 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.mcp-server.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge Check
-  description: Test your knowledge of GitHub MCP Server
+  title: Module Assessment
+  description: Evaluate your understanding of GitHub MCP Server.
   unitType: knowledge_check
   author: camihmerhar
   ms.author: camhernandez
   ms.date: 08/25/2025
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 quiz:
+  title: Check your knowledge
   questions:
     - content: What does MCP stand for in the context of GitHub MCP Server?
       choices:
         - content: Model Collaboration Platform
           isCorrect: false
+          explanation: Incorrect. MCP doesn't stand for Model Collaboration Platform.
         - content: Model Context Protocol
           isCorrect: true
+          explanation: Correct. MCP stands for Model Context Protocol, a standard way for AI models to connect to tools and data sources.
         - content: Multicloud Provider
           isCorrect: false
+          explanation: Incorrect. MCP doesn't stand for Multicloud Provider.
         - content: Modular Code Process
           isCorrect: false
-          explanation: MCP stands for **Model Context Protocol**, a standard way for AI models to connect to tools and data sources.
+          explanation: Incorrect. MCP doesn't stand for Modular Code Process.
 
-    - content: What is a primary benefit of using the GitHub MCP Server over local MCP servers?
+    - content: What is a key benefit of using GitHub MCP Server instead of a local MCP server?
       choices:
-        - content: Requires manual configuration for each project
+        - content: It requires manual configuration for each project.
           isCorrect: false
-        - content: Eliminates the need for Docker or config files
+          explanation: Incorrect. GitHub MCP Server reduces manual setup.
+        - content: It eliminates the need for Docker or configuration files.
           isCorrect: true
-        - content: Only works on mobile devices
+          explanation: Correct. GitHub MCP Server makes setup faster by removing the need for Docker or configuration files.
+        - content: It works only on mobile devices.
           isCorrect: false
-        - content: Lacks support for enterprise authentication
+          explanation: Incorrect. GitHub MCP Server isn't limited to mobile devices.
+        - content: It doesn't support enterprise authentication.
           isCorrect: false
-          explanation: GitHub MCP Server removes the need for Docker or manual config, making setup faster and simpler.
+          explanation: Incorrect. GitHub MCP Server supports enterprise authentication options.
 
     - content: Which authentication methods are supported by GitHub MCP Server in Visual Studio Code?
       choices:
-        - content: Only OAuth
+        - content: Only OAuth is supported.
           isCorrect: false
-        - content: Only Personal Access Token (PAT)
+          explanation: Incorrect. GitHub MCP Server also supports personal access tokens.
+        - content: Only a personal access token (PAT) is supported.
           isCorrect: false
-        - content: OAuth and PAT
+          explanation: Incorrect. GitHub MCP Server also supports OAuth.
+        - content: OAuth and a personal access token (PAT) are supported.
           isCorrect: true
-        - content: Username and password
+          explanation: Correct. You can authenticate with OAuth or a personal access token.
+        - content: A username and password are supported.
           isCorrect: false
-          explanation: Both **OAuth** and **PAT** authentication are supported.
+          explanation: Incorrect. GitHub MCP Server doesn't use username-and-password authentication.
 
-    - content: Why would you use a local MCP server setup with Docker?
+    - content: Why might you run a local MCP server in Docker?
       choices:
-        - content: To avoid using PATs for authentication
+        - content: To avoid using personal access tokens for authentication.
           isCorrect: false
-        - content: To access resources or APIs restricted by enterprise policy
+          explanation: Incorrect. Running a local MCP server doesn't remove the need for supported authentication.
+        - content: To access resources or APIs that enterprise policy restricts.
           isCorrect: true
-        - content: To enable OAuth authentication only
+          explanation: Correct. A local MCP server can provide access to resources and APIs that enterprise policies restrict.
+        - content: To enable only OAuth authentication.
           isCorrect: false
-        - content: To disable all external integrations
+          explanation: Incorrect. A local MCP server isn't limited to OAuth authentication.
+        - content: To disable all external integrations.
           isCorrect: false
-          explanation: Local MCP setup with Docker allows access to APIs/resources restricted by enterprise policies.
+          explanation: Incorrect. An MCP server enables integrations instead of disabling them.
 
-    - content: What is the purpose of Copilot's agent mode when combined with MCP Server?
+    - content: What can Copilot do when you combine agent mode with MCP Server?
       choices:
-        - content: To run security scans only
+        - content: It can run only security scans.
           isCorrect: false
-        - content: To allow Copilot to independently plan and execute multi-step workflows
+          explanation: Incorrect. Agent mode isn't limited to security scans.
+        - content: It can independently plan and execute multistep workflows.
           isCorrect: true
-        - content: To limit Copilot to single-step commands
+          explanation: Correct. Agent mode can use MCP Server tools to plan and execute multistep workflows.
+        - content: It can perform only single-step commands.
           isCorrect: false
-        - content: To restrict Copilot to code summarization
+          explanation: Incorrect. Agent mode supports multistep workflows.
+        - content: It can perform only code summarization.
           isCorrect: false
-          explanation: Agent mode lets Copilot plan, execute, and adapt workflows independently.
+          explanation: Incorrect. Agent mode can perform tasks beyond code summarization.
 
-    - content: How do you ensure your Personal Access Token (PAT) is securely used in MCP Server configuration?
+    - content: How should you securely use a personal access token (PAT) in an MCP Server configuration?
       choices:
-        - content: Hardcode the token in your source files
+        - content: Hardcode the token in your source files.
           isCorrect: false
-        - content: Enter the token via a secure input prompt
+          explanation: Incorrect. Hardcoding a token can expose it in source control.
+        - content: Enter the token through a secure input prompt.
           isCorrect: true
-        - content: Share the token publicly in your repository
+          explanation: Correct. A secure input prompt helps prevent the token from being exposed.
+        - content: Share the token publicly in your repository.
           isCorrect: false
-        - content: Save the token in plain text in your workspace
+          explanation: Incorrect. Never publish a personal access token in a repository.
+        - content: Save the token as plain text in your workspace.
           isCorrect: false
-          explanation: Tokens should always be entered via secure input prompts to prevent exposure.
+          explanation: Incorrect. Plain-text storage can expose the token.
 
-    - content: Which troubleshooting step should you try first if MCP Server tools aren't working in VS Code?
+    - content: What should you do first if MCP Server tools don't work in Visual Studio Code?
       choices:
-        - content: Reinstall Docker
+        - content: Reinstall Docker.
           isCorrect: false
-        - content: Confirm you're signed into your GitHub account in VS Code
+          explanation: Incorrect. First, check whether you're signed in to GitHub.
+        - content: Confirm that you're signed in to your GitHub account in Visual Studio Code.
           isCorrect: true
-        - content: Delete your PAT
+          explanation: Correct. Authentication is a common cause of MCP Server connection problems.
+        - content: Delete your personal access token.
           isCorrect: false
-        - content: Remove all server configurations
+          explanation: Incorrect. First, confirm your sign-in status before changing credentials.
+        - content: Remove all server configurations.
           isCorrect: false
-          explanation: The most common issue isn't being signed into your GitHub account in VS Code.
+          explanation: Incorrect. First, check your sign-in status without removing the configuration.
 
-    - content: What is an example of how MCP Server extends Copilot's capabilities in agent mode?
+    - content: Which task can Copilot perform when you combine agent mode with MCP Server?
       choices:
-        - content: Copilot can only suggest code completions
+        - content: Copilot can suggest only code completions.
           isCorrect: false
-        - content: Copilot can open issues, manage workflows, and execute tasks across platforms
+          explanation: Incorrect. MCP Server extends Copilot beyond code completions.
+        - content: Copilot can open issues, manage workflows, and execute tasks across platforms.
           isCorrect: true
-        - content: Copilot can't interact with GitHub repositories
+          explanation: Correct. MCP Server tools enable Copilot to work with issues, workflows, and tasks across platforms.
+        - content: Copilot can't interact with GitHub repositories.
           isCorrect: false
-        - content: Copilot disables semantic search
+          explanation: Incorrect. MCP Server enables Copilot to interact with GitHub repositories.
+        - content: Copilot disables semantic search.
           isCorrect: false
-          explanation: With MCP + agent mode, Copilot can manage issues, workflows, and tasks across platforms.
+          explanation: Incorrect. Combining MCP Server with agent mode doesn't disable semantic search.
