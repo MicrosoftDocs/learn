@@ -2,14 +2,15 @@
 uid: learn.wwl.describe-windows-server-administration-tools
 metadata:
   title: Describe Windows Server administration tools
-  description: "Describe Windows Server administration tools"
-  ms.date: 01/23/2026
+  description: "Learn how to select and use Windows Server administration tools including Windows Admin Center, Server Manager, Remote Server Administration Tools (RSAT), and Windows PowerShell remoting for local and remote server management."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server 
 title: Describe Windows Server administration tools
-summary: Select the most appropriate Windows Server administration tool for a given situation and learn how to use that tool.
+summary: |
+  This module covers the tools available for administering Windows Server in on-premises and remote scenarios. You learn how to install and use Windows Admin Center for web-based server management, use Server Manager for role and feature management, install and configure Remote Server Administration Tools (RSAT) on Windows client operating systems, and use Windows PowerShell remoting with WinRM to run commands and scripts against remote servers.
 abstract: |
   After completing this module, you'll be able to:
   - Describe Windows Admin Center.

@@ -2,14 +2,15 @@
 uid: learn.wwl.implement-hybrid-file-server-infrastructure
 metadata:
   title: Implement a hybrid file server infrastructure
-  description: Implement a hybrid file server infrastructure using Azure Files and Azure File Sync, and migrate SMB file servers to Azure.
-  ms.date: 01/23/2026
+  description: Implement a hybrid file server infrastructure using Azure Files and Azure File Sync, including cloud tiering, DFS Replication migration, and Storage Migration Services.
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: azure-file-storage
 title: Implement a hybrid file server infrastructure
-summary: In this module, learn to deploy Azure File Sync, migrate from DFS, and use Storage Migration Services to migrate file servers to Azure.
+summary: |
+  This module covers how to implement a hybrid file server infrastructure using Azure Files and Azure File Sync. You learn how to create and configure Azure file shares with identity-based authentication and NTFS permissions, deploy Azure File Sync with Storage Sync Service, sync groups, and server endpoints, configure cloud tiering policies to cache frequently accessed files locally while tiering cool files to Azure, and migrate from DFS Replication to Azure File Sync.
 abstract: |
   After completing this module, you'll be able to:
   - Describe Azure Files.

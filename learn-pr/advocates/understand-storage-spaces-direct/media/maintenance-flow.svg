@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Safe Storage Spaces Direct node maintenance flow</title>
+  <desc id="desc">Six numbered boxes run left to right from health validation through final baseline capture.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#44546a"/>
+    </marker>
+    <style>
+      .box { fill:#eaf2f8; stroke:#245a7a; stroke-width:2; rx:9; }
+      .stop { fill:#f4cccc; stroke:#990000; stroke-width:2; rx:9; }
+      .text { font-family:Segoe UI,Arial,sans-serif; font-size:16px; fill:#1f1f1f; text-anchor:middle; }
+      .small { font-family:Segoe UI,Arial,sans-serif; font-size:13px; fill:#404040; text-anchor:middle; }
+      .line { stroke:#44546a; stroke-width:3; marker-end:url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1200" height="430" fill="#ffffff"/>
+  <text x="600" y="34" class="text" font-weight="700">One-node-at-a-time maintenance flow</text>
+
+  <rect x="25" y="95" width="165" height="120" class="box"/>
+  <text x="107" y="128" class="text" font-weight="700">1. Validate</text>
+  <text x="107" y="155" class="small">Health normal</text>
+  <text x="107" y="178" class="small">Jobs complete</text>
+
+  <line x1="196" y1="155" x2="225" y2="155" class="line"/>
+  <rect x="232" y="95" width="165" height="120" class="box"/>
+  <text x="314" y="128" class="text" font-weight="700">2. Drain</text>
+  <text x="314" y="155" class="small">Move workloads</text>
+  <text x="314" y="178" class="small">Confirm owners</text>
+
+  <line x1="403" y1="155" x2="432" y2="155" class="line"/>
+  <rect x="439" y="95" width="165" height="120" class="box"/>
+  <text x="521" y="128" class="text" font-weight="700">3. Protect</text>
+  <text x="521" y="155" class="small">Enter required</text>
+  <text x="521" y="178" class="small">maintenance mode</text>
+
+  <line x1="610" y1="155" x2="639" y2="155" class="line"/>
+  <rect x="646" y="95" width="165" height="120" class="box"/>
+  <text x="728" y="128" class="text" font-weight="700">4. Service</text>
+  <text x="728" y="155" class="small">Patch or replace</text>
+  <text x="728" y="178" class="small">Restart once</text>
+
+  <line x1="817" y1="155" x2="846" y2="155" class="line"/>
+  <rect x="853" y="95" width="165" height="120" class="box"/>
+  <text x="935" y="128" class="text" font-weight="700">5. Resume</text>
+  <text x="935" y="155" class="small">Exit maintenance</text>
+  <text x="935" y="178" class="small">Resume node</text>
+
+  <line x1="1024" y1="155" x2="1053" y2="155" class="line"/>
+  <rect x="1060" y="95" width="115" height="120" class="box"/>
+  <text x="1117" y="128" class="text" font-weight="700">6. Verify</text>
+  <text x="1117" y="155" class="small">Wait for</text>
+  <text x="1117" y="178" class="small">repair</text>
+
+  <rect x="300" y="290" width="600" height="85" class="stop"/>
+  <text x="600" y="320" class="text" font-weight="700">Stop condition</text>
+  <text x="600" y="347" class="small">Lost redundancy, blocked repair, low reserve, failed path, or unknown backup state</text>
+</svg>

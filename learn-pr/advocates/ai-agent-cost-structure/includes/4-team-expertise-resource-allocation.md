@@ -26,7 +26,7 @@ and GitHub Copilot are central to enabling cost-efficient development workflows.
 | Tool/platform           | Purpose                                      | Cost drivers                                  |
 |-------------------------|----------------------------------------------|-----------------------------------------------|
 | **GitHub Copilot**      | Code generation, refactoring, documentation.  | Per-user licensing, usage quotas.              |
-| **Microsoft Foundry**    | Model catalog, benchmarking, orchestration.   | Workspace provisioning, compute usage.         |
+| **Microsoft Foundry**    | Model catalog, benchmarking, orchestration.   | Foundry resource and project setup, plus usage-based costs for deployed models and connected Azure services. |
 | **Microsoft Teams**     | Cross-role communication and coordination.    | Licensing tiers, integration with DevOps.      |
 | **Azure DevOps**        | CI/CD pipelines, version control.             | Storage, build minutes, user license.            |
 

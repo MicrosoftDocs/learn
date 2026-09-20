@@ -2,14 +2,15 @@
 uid: learn.wwl.monitor-windows-server-performance
 metadata:
   title: Monitor Windows Server performance
-  description: "Learn to use a range of Windows Server tools to monitor the operating system and applications on a server computer. You'll also learn to configure your system to optimize efficiency and to troubleshoot problems."
-  ms.date: 01/23/2026
+  description: "Learn how to monitor Windows Server performance using Performance Monitor, Resource Monitor, Reliability Monitor, data collector sets, System Insights for capacity forecasting, and Windows Admin Center."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Monitor Windows Server performance
-summary: Learn to use a range of Windows Server tools to monitor the operating system and applications on a server computer. You'll also learn to configure your system to optimize efficiency and to troubleshoot problems.
+summary: |
+  This module covers how to monitor Windows Server performance and plan for capacity. You learn how to use Performance Monitor for real-time and historical analysis with built-in and custom counters, use Resource Monitor for process-level CPU, disk, network, and memory tracking, establish performance baselines and implement trend analysis, create custom data collector sets with performance counters and event traces, monitor DNS, DHCP, and Hyper-V infrastructure using Resource Metering, and use Windows Admin Center and System Insights for performance monitoring and capacity forecasting.
 abstract: |
   After completing this module, you'll be able to:
   - Use built-in tools in Windows Server to monitor server performance

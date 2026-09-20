@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-storage-spaces-direct.storage-spaces-direct-resiliency
+title: Storage Spaces Direct resiliency
+metadata:
+  title: Storage Spaces Direct Resiliency
+  description: Compare mirroring, parity, nested resiliency, fault domains, file systems, and campus cluster requirements for Storage Spaces Direct.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-storage-spaces-direct-resiliency.md)]

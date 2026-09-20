@@ -30,11 +30,12 @@ Example:
 |Cost to maintain (5 yrs)     |$45,000         |$60,000         |$50,000         |
 |Total benefit (5 yrs)     |$150,000         |$240,000         |$180,000         |
 |Cash flow impact ($)     |$45,000         |$90,000         |$30,000         |
-|Discounted cash flow impact, for example, NPV (4)     |$23,847         |$53,738         |$3,810         |
-|ROI (%)     |25%         |39%         |3%         |
+|Discounted cash flow impact (NPV, 8% discount rate)     |$23,847         |$53,738         |$3,810         |
+|ROI (%)     |42.9%         |60.0%         |20.0%         |
 |Strategic value (1-10)     |7.5         |9.0         |6.5         |
 
 > [!NOTE]
+> NPV assumes the cost to achieve occurs at year zero. Total benefits and maintenance costs are distributed evenly as end-of-year cash flows over years 1–5. Annual net cash flow is calculated as `(total five-year benefits - total five-year maintenance cost) / 5`, discounted at 8%, and NPV is rounded to the nearest dollar.
 > In the comparison table, we estimated the cost to achieve and cost to maintain each AI use case based on typical implementation and operational expenses. For example, the "use case 1" has lower upfront costs due to simpler integration, while the "use case 2" requires more
 > customization and training. The total benefits were forecasted by estimating the value of time saved, increased revenue, and reduced errors over a 5-year period. These values were then plugged into the basic ROI formula:
 
@@ -57,8 +58,7 @@ A sensitivity analysis table assists with assessing NPV range:
 |Benefits       |$320,000      |$240,000      |$200,000      |$160,000|
 |NPV            |$137,621      |$53,738       |$1,796        |-$50,146|
 
-The example sensitivity analysis table shows how each use case performs under different scenarios: optimistic, baseline, conservative, and worst-case. These scenarios were modeled by adjusting key variables such as adoption rate, operational efficiency, and unexpected costs impacting
-the cost to achieve and the benefits.
+The example sensitivity analysis table shows how each use case performs under different scenarios: optimistic, baseline, conservative, and worst-case. These scenarios were modeled by adjusting key variables such as adoption rate, operational efficiency, and unexpected costs impacting the cost to achieve and the benefits.
 
 In the optimistic case, we assumed higher adoption and lower development cost, leading to higher NPV. In the worst-case scenario, we assumed low usage and higher-than-expected development costs, which significantly reduced the financial return.
 
@@ -71,4 +71,4 @@ This helps illustrate how risk and uncertainty can affect the outcome, and why i
 ### Step 4: Interpret the Results
 
 - Use case 2 shows non-negative financial outcome (NPV) even in a conservative scenario. 
-- To achieve a positive financial outcome given a development cost of 90,000 dollars, use case 2 will need to generate at least 200,000 dollars in benefits over 5 years.
+- With a baseline cost to achieve of $90,000 and a five-year maintenance cost of $60,000, use case 2 requires approximately $172,705 in total five-year benefits to reach NPV break-even under the stated 8% discount-rate and cash-flow-timing assumptions. Benefits above this amount produce a positive NPV.

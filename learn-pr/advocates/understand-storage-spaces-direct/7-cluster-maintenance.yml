@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-storage-spaces-direct.cluster-maintenance
+title: Cluster maintenance
+metadata:
+  title: Cluster Maintenance
+  description: Prepare for Storage Spaces Direct maintenance, service nodes, replace drives, expand capacity, remove nodes, and apply rolling updates.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-cluster-maintenance.md)]

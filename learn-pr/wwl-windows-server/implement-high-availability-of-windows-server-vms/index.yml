@@ -2,14 +2,15 @@
 uid: learn.wwl.implement-high-availability-of-windows-server-vms
 metadata:
   title: Implement high availability of Windows Server VMs
-  description: "Implement high availability of Windows Server VMs"
-  ms.date: 01/23/2026
+  description: "Learn how to implement high availability for Hyper-V virtual machines using host clustering, guest clustering, Network Load Balancing, live migration with CredSSP or Kerberos authentication, and storage migration."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Implement high availability of Windows Server VMs
-summary: Learn about the core functionality, benefits, use cases, and implementation of highly available Microsoft Hyper-V virtual machines (VMs) in Windows Server.
+summary: |
+  This module covers how to implement high availability for Hyper-V virtual machines in Windows Server. You learn how to choose between host clustering, guest clustering, and Network Load Balancing (NLB) for different workload types, configure and perform live migration to move running VMs between Hyper-V hosts using CredSSP or Kerberos authentication, and perform storage migration to relocate VM virtual hard disk files without downtime.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the Hyper-V high availability options.

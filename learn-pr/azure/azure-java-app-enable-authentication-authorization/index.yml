@@ -2,30 +2,26 @@
 uid: learn.azure.azure-java-app-enable-authentication-authorization
 metadata:
   moduleType: standard
-  title: Sign in users with Microsoft Entra ID in a Java web app
-  description: Learn how to authenticate users with Microsoft Entra ID and get authorized access to data in a Java web app using Microsoft Authentication Library.
-  manager: mkluck
-  ms.date: 11/21/2023
+  title: Understand Sign-In with Microsoft Entra ID in Java Web Apps
+  description: Understand Microsoft Entra ID sign-in and Microsoft Graph authorization through explained Java code samples, without a hands-on lab.
+  ms.date: 09/01/2026
   author: Orin-Thomas
   ms.author: orthomas
-  ms.topic: module-standard-task-based
+  ms.topic: module
   ms.service: entra-id
-title: Sign in users with Microsoft Entra ID in a Java web app
-summary: Learn how to authenticate users with Microsoft Entra ID and get authorized access to data in a Java web app using Microsoft Authentication Library.
+title: Understand sign-in with Microsoft Entra ID in Java web apps
+summary: Understand Microsoft Entra ID sign-in and Microsoft Graph authorization through explained Java code samples, without a hands-on lab.
 abstract: | 
   By the end of this module, you'll be able to:
 
-  - Register a web application with Microsoft Entra ID.
-  - Sign in users in a Microsoft Entra tenant to a Java web application.
-  - Authorize access to data in a Microsoft API.
+  - Explain how an application registration defines a Java web app's identity and sign-in audience.
+  - Trace an authorization-code sign-in flow through illustrative MSAL4J samples.
+  - Explain how delegated permissions and access tokens enable Microsoft Graph calls.
 
 prerequisites: | 
-  - Tomcat 9 is installed and running on the development machine
-  - Maven 3 is installed and running on the development machine
-  - Java 8 or above is installed on the development machine
-  - Familiarity with building Java web application with Maven and running it on a Tomcat server
-  - An Azure subscription and Microsoft Entra tenant
-  - An IDE like Visual Studio Code to edit code
+  - Familiarity with Java syntax, methods, and classes
+  - Basic knowledge of HTTP requests and responses and server-side web applications
+  - No Azure subscription, tenant access, credentials, or installed development environment is required
 
 iconUrl: /training/achievements/azure-java-app-enable-authentication-authorization.svg
 levels:

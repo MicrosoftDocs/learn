@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-durable-functions.design-reliable-workflow-steps
+title: Design reliable workflow steps
+metadata:
+  title: Design Reliable Workflow Steps
+  description: Design reliable workflow steps
+  ms.date: 09/02/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 11
+content: |
+  [!include[](includes/5-design-reliable-workflow-steps.md)]

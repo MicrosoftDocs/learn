@@ -2,8 +2,8 @@
 uid: learn.wwl.implement-windows-server-iaas-vm-network-security
 metadata:
   title: Implement Windows Server IaaS VM network security
-  description: "Implement Windows Server IaaS VM network security"
-  ms.date: 01/23/2026
+  description: "Learn how to implement network security for Windows Server IaaS VMs using network security groups (NSGs), Azure Firewall, Windows Defender Firewall, and Azure Network Watcher for traffic capture and flow logging."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
@@ -13,7 +13,8 @@ metadata:
   ms.service: windows-server
   ai-usage: human-only
 title: Implement Windows Server IaaS VM network security
-summary: In this module, you'll focus on how to improve the network security for Windows Server infrastructure as a service (IaaS) virtual machines (VMs) and how to diagnose network security issues with those VMs.
+summary: |
+  This module covers how to implement network security for Windows Server IaaS virtual machines in Azure. You learn how to configure network security groups (NSGs) with inbound and outbound security rules, priority-based processing, and default rules, deploy and configure Azure Firewall for centralized network traffic filtering, configure Windows Defender Firewall with Advanced Security for host-level protection, choose the appropriate filtering solution from NSGs, Azure Firewall, and Windows Defender Firewall, and use Azure Network Watcher to capture network traffic and log network flows for diagnostics.
 abstract: |
   After completing this module, you'll be able to:
 

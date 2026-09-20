@@ -1,46 +1,48 @@
-You're ready to set up your web application to authenticate using Microsoft Entra ID and secure access to employees in your company. The first step to enable authentication is to register your application with Microsoft Entra ID.
+An application registration supplies the identity and configuration that a Java web application uses when communicating with Microsoft Entra ID. In this unit, you interpret registration settings for an illustrative company portal rather than create a registration.
 
-In this unit, you register your application with Microsoft Entra ID.
+> [!NOTE]
+> A single-tenant app's sign-in audience includes both user and guest accounts in that tenant. Employee-only access requires additional authorization for a curated set of employee users or groups; the scenario doesn't implement that policy. Tenant membership, email domain, and member/guest classification don't prove employment. For more information, see [Single and multitenant apps](/entra/identity-platform/single-and-multi-tenant-apps).
 
 <a name='register-your-application-with-azure-active-directory'></a>
 
-## Register your application with Microsoft Entra ID
+## Interpret the registration settings
 
-Registering your application establishes a trust relationship between your application and the identity provider, which is Microsoft Entra ID in this case.
+The following table describes the settings relevant to the portal. The identifiers and example URI are explanatory placeholders, not values that the learner needs to configure.
 
-Use the following steps to register your application on the Azure portal:
+| Setting | Role in the example |
+|---|---|
+| Name | A human-readable label for the application. It isn't the application's protocol identifier. |
+| Application (client) ID | Identifies the application. Code samples refer to this value as `CLIENT_ID`. |
+| Directory (tenant) ID | Identifies the workforce tenant. The tenant-specific authority directs authentication requests to that tenant. |
+| Supported account types | A single-tenant audience allows user and guest accounts in the selected directory, subject to applicable access policies. |
+| Web redirect URI | Identifies the server endpoint that receives the authorization response. An illustrative value is `https://app.example.com/auth/callback`. |
+| Application credential | Lets the confidential web application authenticate itself when redeeming an authorization code for tokens. |
 
-1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-1. If you have access to multiple tenants, in the top menu, use the **Directory + subscription** filter to select the tenant in which you want to register an application.
-1. Search for and select **Microsoft Entra ID**.
-1. Under **Manage**, select **App registrations**, then select the  **+ New registration** button.
+The following image illustrates how client and tenant identifiers appear in an app registration's overview. It's reference material, not a screen that needs to be opened to complete the module.
 
-   :::image type="content" source="../media/app-registration-menu.png" alt-text="Screenshot showing the menu of Microsoft Entra ID on the Azure portal.":::
+:::image type="content" source="../media/app-registration-blade.png" alt-text="Screenshot of an app registration overview showing the application client ID and directory tenant ID fields.":::
 
-   :::image type="content" source="../media/app-registration-new-reg.png" alt-text="Screenshot showing the new registration button of Microsoft Entra ID on the Azure portal.":::
+## Relate the redirect URI to the sign-in flow
 
-1. In the **Register an application page** that appears, enter your application's registration information:
+In the authorization-code flow, the application sends the browser to a Microsoft Entra authorization endpoint. After a successful authorization response, the browser returns to the registered redirect URI with an **authorization code**.
 
-   - In the **Name** section, enter a meaningful application name that's displayed to users of the app - for example, `java-servlet-webapp-authentication`.
-   - Under **Supported account types**, select an option.
-     - For this exercise module, select **Accounts in this organizational directory only** because you are building an application for use only by users in the organizational tenant (**single-tenant**).  
+The callback URI must match the web redirect URI in the registration and the URI used in the authorization request. The server then redeems the code at the token endpoint. The browser callback doesn't receive the Microsoft Graph access token in this flow.
 
-   - In the **Redirect URI** section, select **Web** in the combo-box and enter your web application's redirect URI. This is the URI where your application wants to handle the authentication response after the user signs in. For this exercise, enter the following redirect URI of the sample application: `http://localhost:8080/msal4j-servlet-graph/auth/redirect`.
+In later samples, `Config.REDIRECT_URI` represents this callback address. It's an application configuration value, not a method provided by MSAL4J.
 
-   :::image type="content" source="../media/app-registration-new.png" alt-text="Screenshot showing registration of a new app with Microsoft Entra ID on Azure portal.":::
+## Distinguish identifiers from credentials
 
-1. Select **Register** to create the application.
-1. In the app's registration screen, find and note the **Application (client) ID**. You use this value in your app's configuration file(s) later in your code.
+The client ID identifies the application, but doesn't prove its identity. A confidential web application also presents a credential during token acquisition.
 
-   :::image type="content" source="../media/app-registration-blade.png" alt-text="Screenshot highlighting the App ID of an app registered with Microsoft Entra ID on Azure portal.":::
+A client secret is one possible credential. Its **Value** is the secret material; its **Secret ID** is an identifier, not the value used for client authentication. The Azure portal displays a newly created secret's value only once. These distinctions explain the `CLIENT_SECRET` placeholder in the next unit; no secret is needed for this module.
 
-1. In the app's registration screen, select the **Certificates & secrets** blade in the left to open the page to generate secrets and upload certificates. In the **Client secrets** section, select the **+ New client secret** button:
+> [!IMPORTANT]
+> Secret-based code samples illustrate the API shape, not a production credential-storage design. Secrets and populated configuration files must stay out of source control, screenshots, and logs. Production confidential web applications should use a certificate or an appropriately configured federated credential, with secure storage for credential material. A managed identity isn't a drop-in replacement for this user sign-in flow. See [Application credential guidance](/entra/identity-platform/security-best-practices-for-app-registration#credentials-including-certificates-and-secrets).
 
-   - Type a key description (for instance: `app secret`),
-   - Select one of the available key durations as per your security concerns.
-   - The generated key value is displayed when you select the **Add** button. Copy the generated value for use in the steps later.
-   - You need this key later in your code's configuration files. This key value isn't displayed again, and isn't retrievable by any other means, so make sure to note it from the Azure portal before navigating to any other screen or pane.
+## Registration management and API access are separate concerns
 
-   :::image type="content" source="../media/app-registration-credentials.png" alt-text="Screenshot highlighting the certificates & secrets blade of an app registered with Microsoft Entra ID on Azure portal":::
+The ability to manage registrations is governed by tenant permissions. Member users can normally register apps, but tenant policy can restrict this. Appropriate access, such as the **Application Developer** role or administrator assistance, can be necessary in a real implementation. This is an administrative consideration, not a learner prerequisite.
 
-You've now successfully registered a web application with Microsoft Entra ID.
+Registration also doesn't grant every API permission that an application might request. The portal's Microsoft Graph access depends on its requested scopes and the applicable consent grants, which are explained later in the module.
+
+For reference, [Register an application](/entra/identity-platform/quickstart-register-app) describes the registration settings and their management.

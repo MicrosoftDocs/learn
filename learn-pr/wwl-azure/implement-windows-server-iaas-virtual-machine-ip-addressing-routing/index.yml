@@ -2,14 +2,15 @@
 uid: learn.wwl.implement-windows-server-iaas-vm-ip-addressing-routing
 metadata:
   title: Implement Windows Server IaaS VM IP addressing and routing
-  description: "Implement Windows Server IaaS VM IP addressing and routing"
-  ms.date: 01/23/2026
+  description: "Learn how to implement IP addressing and routing for Windows Server IaaS VMs, including Azure VNets, subnets, public and private IP allocation, network interfaces, system routes, user-defined routes, and IPv6 for Azure VNet."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Implement Windows Server IaaS VM IP addressing and routing
-summary: In this module, you'll learn how to manage Microsoft Azure virtual networks (VNets) and IP address configuration for Windows Server infrastructure as a service (IaaS) virtual machines (VM)s.
+summary: |
+  This module covers how to implement IP addressing and routing for Windows Server IaaS virtual machines in Azure. You learn how to implement Azure virtual networks (VNets) with subnets and private IP address spaces, configure private and public IP addresses using dynamic and static allocation methods, manage network interfaces and assign IP configurations during VM creation, understand system routes and implement user-defined routes for custom traffic flow between subnets and networks, and implement IPv6 for Azure VNet to support dual-stack networking.
 abstract: |
   After completing this module, you'll be able to:
   - Implement an Azure virtual network

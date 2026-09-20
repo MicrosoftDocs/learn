@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-java-app-enable-authentication-authorization.exercise-authorize-access-to-api
-title: Exercise - Authorize access to Microsoft Graph API with MSAL
+title: Interpret a Microsoft Graph request
 metadata:
-  unitType: exercise
-  title: Exercise - Authorize access to Microsoft Graph API with MSAL
-  description: In this exercise, you will use MSAL in your application to get authorized access to Microsoft Graph API.
-  ms.date: 11/21/2023
+  unitType: learning-content
+  title: Interpret a Microsoft Graph Request
+  description: Read illustrative HTTP, Java, and JSON samples to understand how delegated access enables a Microsoft Graph request.
+  ms.date: 09/01/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -14,4 +14,3 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/7-exercise-authorize-access-to-api.md)]
-

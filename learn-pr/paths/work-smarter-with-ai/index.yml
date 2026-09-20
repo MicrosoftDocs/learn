@@ -12,6 +12,9 @@ prerequisites: |
   Familiarity with Microsoft productivity applications, like Word, Excel, Outlook, and PowerPoint.
 summary: |
   Curious about how AI can help at work? In this learning path, you'll explore how to use AI to support workplace tasks.
+video:
+  title: Work smarter with AI
+  url: https://learn-video.azurefd.net/vod/player?id=7f89f745-3268-4268-b666-9e59de2d6f72
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner

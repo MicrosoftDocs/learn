@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.harden-microsoft-365-secure-score.sign-risk-protection
+title: Sign-in risk protection
+metadata:
+  title: Sign-in Risk Protection
+  description: Configure sign-in risk protection to require fresh strong authentication for medium-risk and high-risk sign-ins.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-sign-risk-protection.md)]

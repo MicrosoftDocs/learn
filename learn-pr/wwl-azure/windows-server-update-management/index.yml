@@ -2,14 +2,15 @@
 uid: learn.wwl.windows-server-update-management
 metadata:
   title: Windows Server update management
-  description: "Learn how to use Windows Server Update Services to deploy operating system updates to computers on your network. Select the appropriate deployment option and combine WSUS with Microsoft Azure Update Management to manage server updates."
-  ms.date: 01/23/2026
+  description: "Learn how to deploy and manage Windows Server Update Services (WSUS) for centralized update management, including deployment topologies, computer groups, and integration with Azure Automation Update Management for hybrid environments."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Windows Server update management
-summary: Learn how to use Windows Server Update Services to deploy operating system updates to computers on your network. Select the appropriate deployment option and combine WSUS with Microsoft Azure Update Management to manage server updates.
+summary: |
+  This module covers how to manage updates for Windows Server using WSUS and Azure Automation Update Management. You learn how to deploy WSUS in various topologies including single server, server hierarchies, and disconnected environments, follow the four-phase update management process (assess, identify, evaluate and plan, deploy), configure computer groups and approval rules for staged update deployments, and extend update management to cloud and hybrid environments using Azure Automation Update Management with the Log Analytics agent.
 abstract: |
   After completing this module, you'll be able to:
   *   Describe the role of Windows Server Update Services (WSUS)

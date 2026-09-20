@@ -2,14 +2,15 @@
 uid: learn.wwl.implement-windows-server-dns
 metadata:
   title: Implement Windows Server DNS
-  description: "Implement Windows Server DNS"
-  ms.date: 01/23/2026
+  description: "Learn how to deploy and configure DNS in Windows Server, including DNS architecture, forward and reverse lookup zones, AD-integrated zones, zone transfers, forwarders, conditional forwarding, and stub zones."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Implement Windows Server DNS
-summary: Learn to deploy and configure name resolution with Windows Server DNS.
+summary: |
+  This module covers how to deploy and configure the DNS Server role in Windows Server. You learn how DNS name resolution works, create and manage forward and reverse lookup zones using standard file-based or Active Directory-integrated storage, configure zone replication scopes and zone transfers between primary and secondary servers, and implement forwarding strategies including forwarders, conditional forwarders, and stub zones for resolving names across domain boundaries.
 abstract: |
   After completing this module, you'll be able to:
   - Describe Windows Server DNS.

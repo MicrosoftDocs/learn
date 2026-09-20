@@ -3,11 +3,11 @@ uid: learn.wwl.fabric-govern-analytics-data.classify-protect
 title: Classify and protect data in Microsoft Fabric
 metadata:
   title: Classify and Protect Data in Microsoft Fabric
-  description: "Learn how to apply sensitivity labels from Microsoft Purview Information Protection to classify and protect data in Microsoft Fabric."
-  ms.date: 04/06/2026
+  description: "Apply sensitivity labels to classify Fabric items and make data sensitivity visible across the platform."
+  ms.date: 09/02/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-durationInMinutes: 6
+durationInMinutes: 3
 content: |
   [!include[](includes/2-classify-protect.md)]

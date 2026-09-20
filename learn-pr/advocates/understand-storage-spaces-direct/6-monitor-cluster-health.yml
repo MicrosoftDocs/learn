@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-storage-spaces-direct.monitor-cluster-health
+title: Monitor cluster health
+metadata:
+  title: Monitor Cluster Health
+  description: Monitor Storage Spaces Direct health, repair jobs, capacity, drive reliability, performance, and network paths using actionable thresholds.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-monitor-cluster-health.md)]

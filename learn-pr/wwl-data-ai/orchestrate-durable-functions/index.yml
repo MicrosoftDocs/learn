@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.orchestrate-durable-functions
+metadata:
+  title: Orchestrate Durable AI Workflows with Azure Durable Functions
+  description: Learn how to use Azure Durable Functions to coordinate reliable, long-running AI workflows with deterministic orchestration, parallel activities, human approval, retries, and compensation.
+  ms.date: 09/08/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-functions
+title: Orchestrate durable AI workflows with Azure Durable Functions
+summary: |
+  Learn how Azure Durable Functions preserves state and coordinates long-running AI workflows. Design deterministic orchestrations that process work in parallel, wait for human decisions, and recover from failures without duplicating external side effects.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain how Durable Functions coordinates reliable, long-running AI workflows.
+    - Separate deterministic orchestration logic from activity functions that call AI models and external services.
+    - Implement fan-out/fan-in processing for independent documents or media items.
+    - Build human approval flows with external events and durable timers.
+    - Apply retries, timeouts, idempotency, and compensation to failed workflow steps.
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with Python.
+  - Basic understanding of Azure Functions and cloud computing concepts.
+  - Familiarity with asynchronous programming and distributed systems concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-functions
+subjects:
+- serverless-computing
+units:
+- learn.wwl.orchestrate-durable-functions.introduction
+- learn.wwl.orchestrate-durable-functions.separate-orchestrator-activity-responsibilities
+- learn.wwl.orchestrate-durable-functions.apply-fan-out-fan-in
+- learn.wwl.orchestrate-durable-functions.wait-human-approval-external-events
+- learn.wwl.orchestrate-durable-functions.design-reliable-workflow-steps
+- learn.wwl.orchestrate-durable-functions.exercise-build-durable-document-processing-workflow
+- learn.wwl.orchestrate-durable-functions.knowledge-check
+- learn.wwl.orchestrate-durable-functions.summary
+badge:
+  uid: learn.wwl.orchestrate-durable-functions.badge

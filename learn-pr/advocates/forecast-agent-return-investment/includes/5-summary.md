@@ -5,4 +5,4 @@ This module introduced you to practical frameworks for quantifying and communica
 For more information, see:
 
 - [A Framework for Calculating ROI for Agentic AI Apps](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/a-framework-for-calculating-roi-for-agentic-ai-apps/4369169)
-- [Analyze the business impact of agents in Viva Insights](/power-platform/release-plan/2025wave1/microsoft-copilot-studio/analyze-business-impact-agents-viva-insights)
+- [Copilot Studio agents report in Viva Insights](/viva/insights/advanced/analyst/templates/copilot-studio-agents)

@@ -8856,3 +8856,163 @@ achievements:
   title: Discover AI for leaders in retail
   summary: In this learning path, retail business leaders find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and retail use cases.
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.develop-asp-core-api.trophy
+  type: trophy
+  title: Develop an ASP.NET Core web app that consumes an API
+  summary: Learn how to gather information from API documentation and perform HTTP operations in an&nbsp;[ASP.NET](https://asp.net/)&nbsp;Core Blazor web app.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.implement-http-operations-asp-razor.badge
+  type: badge
+  title: Implement HTTP operations in ASP.NET Core Blazor Web apps
+  summary: Learn how to implement HTTP clients based on `HttpClient` and `IHttpClientFactory`. And how to implement code to perform HTTP operations in [ASP.NET](https://ASP.NET) Core Blazor Web apps.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.interact-api.badge
+  type: badge
+  title: Interact with an ASP.NET Core minimal API
+  summary: Learn how APIs are implemented in ASP.NET Core, and how to use API documentation to learn the APIs requirements.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.render-api-responses-razor-pages.badge
+  type: badge
+  title: Render API responses in ASP.NET Core Blazor Web apps
+  summary: Learn how to render API responses in ASP.NET Core Blazor Web apps.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.administer-fabric.badge
+  type: badge
+  title: Administer a Microsoft Fabric environment
+  summary: Learn how to configure and manage a Microsoft Fabric environment. Explore the admin hierarchy, configure tenant settings, delegate admin rights, manage user licenses, and monitor platform health.
+  iconUrl: /training/achievements/administer-microsoft-fabric.svg
+- uid: learn.wwl.develop-solutions-that-use-blob-storage.trophy
+  type: trophy
+  title: Develop solutions that use Blob storage
+  summary: Learn how to create Azure Blob storage resources, manage data through the blob storage lifecycle, and work with containers and items by using the Azure Blob storage client library V12 for .NET.
+  iconUrl: /training/achievements/develop-solutions-that-use-blob-storage.svg
+- uid: learn.wwl.explore-azure-blob-storage.badge
+  type: badge
+  title: Explore Azure Blob storage
+  summary: Learn the core features and functionality of Azure Blob storage.
+  iconUrl: /training/achievements/1-explore-azure-blob-storage.svg
+- uid: learn.wwl.manage-azure-blob-storage-lifecycle.badge
+  type: badge
+  title: Manage the Azure Blob storage lifecycle
+  summary: Learn how to manage data availability throughout the Azure Blob storage lifecycle.
+  iconUrl: /training/achievements/2-manage-the-azure-blob-storage-lifecycle.svg
+- uid: learn.wwl.work-azure-blob-storage.badge
+  type: badge
+  title: Work with Azure Blob storage
+  summary: Learn how to use the Azure Blob storage client library to create and update Blob storage resources.
+  iconUrl: /training/achievements/3-work-with-azure-blob-storage.svg
+- uid: learn.wwl.automate-machine-learning-model-selection-azure-machine-learning.trophy
+  type: trophy
+  title: Experiment with Azure Machine Learning
+  summary: Learn how to find the best model with automated machine learning (AutoML) and by experimenting in notebooks.
+  iconUrl: /training/achievements/automate-machine-learning-model-selection-azure-machine-learning.svg
+- uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets.badge
+  type: badge
+  title: Explore Azure Machine Learning workspace resources and assets
+  summary: As a data scientist, you can use Azure Machine Learning to train and manage your machine learning models. Learn what Azure Machine Learning is, and get familiar with all its resources and assets.
+  iconUrl: /training/achievements/explore-azure-machine-learning-workspace-resources-assets.svg
+- uid: learn.wwl.explore-azure-machine-learning-workspace.trophy
+  type: trophy
+  title: Explore and configure the Azure Machine Learning workspace
+  summary: Throughout this learning path you explore and configure the Azure Machine Learning workspace. Learn how you can create a workspace and what you can do with it. Explore the various developer tools you can use to interact with the workspace. Configure the workspace for machine learning workloads by creating data assets and compute resources.
+  iconUrl: /training/achievements/explore-azure-machine-learning-workspace.svg
+- uid: learn.wwl.find-best-classification-model-automated-machine-learning.badge
+  type: badge
+  title: Find the best classification model with Automated Machine Learning
+  summary: Learn how to find the best classification model with automated machine learning (AutoML). You'll use the Python SDK (v2) to configure and run an AutoML job.
+  iconUrl: /training/achievements/find-best-classification-model-automated-machine-learning.svg
+- uid: learn.wwl.run-training-script-command-job-azure-machine-learning.badge
+  type: badge
+  title: Run a training script as a command job in Azure Machine Learning
+  summary: Learn how to convert your code to a script and run it as a command job in Azure Machine Learning.
+  iconUrl: /training/achievements/run-training-script-command-job-azure-machine-learning.svg
+- uid: learn.wwl.use-azure-machine-learning-pipelines-for-automation.trophy
+  type: trophy
+  title: Optimize model training with Azure Machine Learning
+  summary: Learn how to optimize model training in Azure Machine Learning by using scripts, jobs, components and pipelines.
+  iconUrl: /training/achievements/use-azure-machine-learning-pipelines-for-automation.svg
+- uid: learn.wwl.explore-developer-tools-for-workspace-interaction.badge
+  type: badge
+  title: Explore developer tools for workspace interaction
+  summary: Learn how you can interact with the Azure Machine Learning workspace. You can use the Azure Machine Learning studio, the Python SDK (v2), or the Azure CLI (v2).
+  iconUrl: /training/achievements/explore-developer-tools-for-workspace-interaction.svg
+- uid: learn.wwl.make-data-available-azure-machine-learning.badge
+  type: badge
+  title: Make data available in Azure Machine Learning
+  summary: Learn about how to connect to data from the Azure Machine Learning workspace. You're introduced to datastores and data assets.
+  iconUrl: /training/achievements/make-data-available-azure-machine-learning.svg
+- uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow.badge
+  type: badge
+  title: Track model training in Jupyter notebooks with MLflow
+  summary: Learn how to use MLflow for model tracking when experimenting in notebooks.
+  iconUrl: /training/achievements/track-model-training-jupyter-notebooks-mlflow.svg
+- uid: learn.wwl.train-models-training-mlflow-jobs.badge
+  type: badge
+  title: Track model training with MLflow in jobs
+  summary: Learn how to track model training with MLflow in jobs when running scripts.
+  iconUrl: /training/achievements/track-model-training-with-mlflow-in-jobs.svg
+- uid: learn.wwl.work-compute-resources-azure-machine-learning.badge
+  type: badge
+  title: Work with compute targets in Azure Machine Learning
+  summary: Learn how to work with compute targets in Azure Machine Learning. Compute targets allow you to run your machine learning workloads. Explore how and when you can use a compute instance or compute cluster.
+  iconUrl: /training/achievements/work-compute-resources-azure-machine-learning.svg
+- uid: learn.wwl.work-environments-azure-machine-learning.badge
+  type: badge
+  title: Work with environments in Azure Machine Learning
+  summary: Learn how to use environments in Azure Machine Learning to run scripts on any compute target.
+  iconUrl: /training/achievements/work-with-environments-in-azure-machine-learning.svg
+- uid: learn.wwl.deploy-consume-models-azure-machine-learning.trophy
+  type: trophy
+  title: Deploy and consume models with Azure Machine Learning
+  summary: Learn how to deploy a model to an endpoint. When you deploy a model, you can get real-time or batch predictions by calling the endpoint.
+  iconUrl: /training/achievements/deploy-consume-models-azure-machine-learning.svg
+- uid: learn.wwl.deploy-model-batch-endpoint.badge
+  type: badge
+  title: Deploy a model to a batch endpoint
+  summary: Learn how to deploy models to a batch endpoint. When you invoke a batch endpoint, you trigger a batch scoring job.
+  iconUrl: /training/achievements/deploy-a-model-to-a-batch-endpoint.svg
+- uid: learn.wwl.design-machine-learning-solution.trophy
+  type: trophy
+  title: Design a machine learning solution
+  summary: There are many options on Azure to train and consume machine learning models. Which service best fits your scenario can depend on a myriad of factors. Learn how to identify important requirements and when to use which service when you want to use machine learning models.
+  iconUrl: /training/achievements/design-machine-learning-solution.svg
+- uid: learn.wwl.manage-compare-models-azure-machine-learning.badge
+  type: badge
+  title: Create and explore the Responsible AI dashboard for a model in Azure Machine Learning
+  summary: Explore model explanations, error analysis, counterfactuals, and causal analysis by creating a Responsible AI dashboard. You'll create and run the pipeline in Azure Machine Learning using the Python SDK v2 to generate the dashboard.
+  iconUrl: /training/achievements/manage-compare-models-in-azure-machine-learning.svg
+- uid: learn.wwl.manage-review-models-azure-machine-learning.trophy
+  type: trophy
+  title: Manage and review models in Azure Machine Learning
+  summary: Learn how to manage and review models in Azure Machine Learning by using MLflow to store your model files and using responsible AI features to evaluate your models.
+  iconUrl: /training/achievements/manage-review-models-azure-machine-learning.svg
+- uid: learn.wwl.train-deploy-machine-learning-model.trophy
+  type: trophy
+  title: Train and manage a machine learning model with Azure Machine Learning
+  summary: To train a machine learning model with Azure Machine Learning, you need to make data available and configure the necessary compute. After training your model and tracking model metrics with MLflow, you can decide to deploy your model to an online endpoint for real-time predictions. Throughout this learning path, you explore how to set up your Azure Machine Learning workspace, after which you train and manage a machine learning model.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.deploy-model-managed-online-endpoint.badge
+  type: badge
+  title: Deploy a model to a managed online endpoint
+  summary: Learn how to deploy models to a managed online endpoint for real-time inferencing.
+  iconUrl: /training/achievements/deploy-model-managed-online-endpoint.svg
+- uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.badge
+  type: badge
+  title: Design a data ingestion strategy for machine learning projects
+  summary: Learn how to design a data ingestion solution for training data used in machine learning projects.
+  iconUrl: /training/achievements/design-data-ingestion-strategy-for-machine-learning-projects.svg
+- uid: learn.wwl.design-model-deployment-solution.badge
+  type: badge
+  title: Design a model deployment solution
+  summary: Learn how to design a model deployment solution and how the requirements of the deployed model can affect the way you train a model.
+  iconUrl: /training/achievements/design-model-deployment-solution.svg
+- uid: learn.wwl.register-mlflow-model-azure-machine-learning.badge
+  type: badge
+  title: Register an MLflow model in Azure Machine Learning
+  summary: Learn how to log and register an MLflow model in Azure Machine Learning.
+  iconUrl: /training/achievements/register-an-mlflow-model-in-azure-machine-learning.svg
+- uid: learn.wwl.design-machine-learning-operations-solution.badge
+  type: badge
+  title: Design a machine learning operations solution (MLOps)
+  summary: Choose this module if you want to design an MLOps architecture for monitoring and retraining production models.
+  iconUrl: /training/achievements/design-a-machine-learning-operations-solution.svg

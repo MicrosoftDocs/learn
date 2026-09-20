@@ -2,14 +2,15 @@
 uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure
 metadata:
   title: Troubleshoot Windows Server Virtual Machines in Azure
-  description: "Learn to troubleshoot configuration issues that affect connectivity to your Azure-hosted Windows Server virtual machines (VMs). Explore approaches to resolve issues with VM startup, extensions, performance, storage, and encryption."
-  ms.date: 01/23/2026
+  description: "Learn how to troubleshoot Azure-hosted Windows Server VMs, including provisioning and allocation failures, boot diagnostics, VM Agent and extension issues, RDP connectivity, performance monitoring, and storage tier selection."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: azure-virtual-machines
 title: Troubleshoot Windows Server Virtual Machines in Azure
-summary: Learn to troubleshoot configuration issues that affect connectivity to your Azure-hosted Windows Server virtual machines (VMs). Explore approaches to resolve issues with VM startup, extensions, performance, storage, and encryption.
+summary: |
+  This module covers how to troubleshoot Windows Server virtual machines hosted in Azure. You learn how to diagnose provisioning failures and allocation errors, use boot diagnostics with screenshots and serial logs to identify startup problems, check VM Agent status and extension provisioning state using PowerShell, troubleshoot RDP and SSH connectivity via the Azure portal and test connection tools, monitor VM performance using Performance Monitor, Windows Admin Center, and System Insights, and understand Azure storage tiers and managed vs. unmanaged disk approaches.
 abstract: |
   After completing this module, you're able to:
   *   Troubleshoot VM deployment and extension issues

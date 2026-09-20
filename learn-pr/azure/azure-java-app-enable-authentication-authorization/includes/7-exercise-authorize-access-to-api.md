@@ -1,48 +1,62 @@
-In this exercise, you configure the application with permissions and use MSAL to access user-profile information from the Microsoft Graph (MS Graph) API.
+This walkthrough explains how a Java web application can read the signed-in user's profile from Microsoft Graph. The request, Java fragment, and response below are illustrative samples with explanations, not a lab or a requirement to send a real API request.
 
-## Add Microsoft Graph permissions to App registration
+## Relate configuration, scopes, and consent
 
-Web services secured by Microsoft Entra ID define a set of permissions that provide access to the API functionality and data exposed by that service. Before an application can access data or act on a user's behalf, it must request these permissions to be approved by the users. You can assign these API permissions to your app registration from the Azure portal. Here are the steps to assign Microsoft Graph API permissions to your application.
+The reference servlet sample uses delegated `User.Read`. Its `aad.scopes` configuration property supplies that value to `Config.SCOPES`, which the authentication code requests during sign-in.
 
-1. On the **App registrations** screen, select **API permissions** to add access to the APIs that your application needs.
+The app registration's **API permissions** list describes configured permissions. The following screenshot is an example of that view, not an instruction to change a registration.
 
-   :::image type="content" source="../media/api-permissions.png" alt-text="Screenshot that shows the menu of API permissions pane of an app registered with Microsoft Entra ID on Azure portal." lightbox="../media/api-permissions.png":::
+:::image type="content" source="../media/api-permissions.png" alt-text="Screenshot of the API permissions page for an application registration." lightbox="../media/api-permissions.png":::
 
-   - Select **Add a permission**.
+Three facts explain the authorization context:
 
-   - Ensure that the **Microsoft APIs** tab is selected.
+- The code requests delegated `User.Read` for Microsoft Graph.
+- Consent can come from the user or an authorized administrator, depending on tenant policy and existing grants.
+- Adding a permission to the registration doesn't itself grant consent or change the code's requested scopes.
 
-   - In the **Commonly used Microsoft APIs** section, select **Microsoft Graph**, then select **Delegated permissions**.
+The sample requests this permission during sign-in, so there isn't a separate assumption that every Graph request displays a consent prompt.
 
-   - In the **Delegated permissions** section, scroll down and select **User.Read** in the list. This particular permission is for accessing the information of the signed-in user from the `https://graph.microsoft.com/v1.0/me` endpoint.
+## Read the HTTP request
 
-   - Select **Add permissions**.
+The following HTTP sample shows the essential parts of a profile request. `<graph-access-token>` is an explanatory placeholder, not a token to obtain or paste into a tool.
 
-     :::image type="content" source="../media/api-add-permissions.png" alt-text="Screenshot that shows the API permissions pane of an app registered with Microsoft Entra ID on Azure portal." lightbox="../media/api-add-permissions.png":::
+```http
+GET /v1.0/me HTTP/1.1
+Host: graph.microsoft.com
+Authorization: Bearer <graph-access-token>
+```
 
-## Run the application
+The request uses HTTPS to reach `https://graph.microsoft.com/v1.0/me`. `/me` identifies the signed-in user in a delegated context. The `Authorization` header carries an access token intended for Microsoft Graph; it doesn't carry the application's ID token, an authorization code, or a client secret.
 
-You can try the Graph API call on the application that you have running from the previous exercise.
+`User.Read` is sufficient for the illustrated operation of reading the signed-in user's profile. It doesn't authorize arbitrary access to other users' information. The [Get a user API reference](/graph/api/user-get?view=graph-rest-1.0&preserve-view=true) describes the endpoint and permissions.
 
-1. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. If you're not already signed in, you're redirected to sign in with Microsoft Entra ID. On successful sign-in, you should see a page as shown in the following image.
+## Read the Java SDK equivalent
 
-   :::image type="content" source="../media/app-sign-in.png" alt-text="Screenshot that shows the button to call graph displayed on the page after successfully signing in to sample application.":::
+The historical sample's `CallGraphServlet` handles its own `/call_graph` route and uses the Microsoft Graph SDK to make the API request. The following fragment illustrates that call after token acquisition has succeeded.
 
-1. Select **Call Graph** to make a call to Microsoft Graph's `/me` endpoint and see the user details displayed.
+```java
+User user = GraphHelper.getGraphClient(contextAdapter).me().buildRequest().get();
+```
 
-## Overview of code for Microsoft Graph access
+`GraphHelper` is a helper defined by the sample, not a built-in MSAL4J API. It creates a `GraphServiceClient` whose authentication provider supplies the signed-in user's Graph access token from the sample's authenticated context. `contextAdapter` connects the current request to that application context.
 
-You can find the code to access Microsoft Graph API in the servlet class `CallGraphServlet.java` under the sample project's **msal4j/callgraphwebapp/** directory. It defines the `/call_graph` endpoint in the application, which makes authorized calls to the Microsoft Graph API's `https://graph.microsoft.com/v1.0/me` endpoint to retrieve the profile information of the signed-in user. Here are more details of the Graph access code.
+In this SDK version, `me()` selects the signed-in-user endpoint, `buildRequest()` creates the request, and `get()` sends it and deserializes the response into a Microsoft Graph `User` model. The fragment omits the surrounding servlet, imports, session handling, and error processing; it isn't a complete application.
 
-1. In the **./src/main/resources/authentication.properties** file, the value of `aad.scopes` is set to the **User.Read** scope.
+> [!NOTE]
+> This fragment reflects the historical sample's Microsoft Graph SDK for Java **5.5.0** syntax. The v6 SDK changes the request pattern, client construction, authentication integration, and model access. The [Microsoft Graph Java SDK v6 upgrade guide](https://github.com/microsoftgraph/msgraph-sdk-java/blob/main/docs/upgrade-to-v6.md) explains those differences. A v6-only request expression isn't compatible with the sample's v5 dependency and helper code.
 
-   Scopes tell Microsoft Entra ID the level of access that the application is requesting and map to the permissions in the app registration. Based on the requested scopes, Microsoft Entra ID presents a consent dialogue to the user upon signing in. If the user consents to one or more scopes, they're encoded into the resulting `access_token` returned in the authentication response.
+## Interpret an illustrative response
 
-1. When the user navigates to `/call_graph`, the application creates an instance of the IGraphServiceClient (Microsoft Graph SDK Java), passing along the signed-in user's access token. The Graph client from here on places the access token in the Authorization headers of its requests. The app then asks the Graph Client to call the Microsoft Graph's `/me` endpoint to yield details for the currently signed-in user.
+A shortened example response could contain the following profile fields. The values are fictional and aren't output that the learner needs to reproduce.
 
-   The following code is all that is required for an application developer to write for accessing the `/me` endpoint, provided that they already have a valid access token for Graph Service with the `User.Read` scope.
+```json
+{
+  "displayName": "Avery Rivera",
+  "jobTitle": "Service specialist",
+  "mail": "avery@example.com"
+}
+```
 
-   ```java
-   //CallGraphServlet.java
-   User user = GraphHelper.getGraphClient(contextAdapter).me().buildRequest().get();
-   ```
+The application can use these fields to present profile information. Actual values depend on the user's directory profile, and fields can be absent or null. A profile field isn't proof of employment or a substitute for the application's authorization policy.
+
+The overall division of responsibilities is important: Microsoft Entra ID issues a token under the applicable permission and consent rules, MSAL4J acquires that token, and the Graph SDK or an HTTP client uses it to request data. Merely constructing a Graph client doesn't grant access.

@@ -2,8 +2,8 @@
 uid: learn.wwl.hardening-windows-server
 metadata:
   title: Hardening Windows Server
-  description: "Learn how to harden the security configuration of your Windows Server operating system environment. Secure administrative access to Privileged Access Workstations (PAWs), apply security baselines, and secure domain controllers and SMB traffic."
-  ms.date: 01/23/2026
+  description: "Learn how to harden the Windows Server operating system using LAPS for local admin password management, Privileged Access Workstations (PAWs), domain controller hardening with Server Core and BitLocker, security baselines with the Microsoft Security Compliance Toolkit, and SMB encryption."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
@@ -13,7 +13,8 @@ metadata:
   ms.service: windows-server
   ai-usage: human-only
 title: Hardening Windows Server
-summary: Learn how to harden the security configuration of your Windows Server operating system environment. Secure administrative access to Privileged Access Workstations (PAWs), apply security baselines, and secure domain controllers and SMB traffic.
+summary: |
+  This module covers how to harden the security configuration of your Windows Server environment. You learn how to deploy Windows LAPS to centrally manage local administrator passwords, configure Privileged Access Workstations (PAWs) for secure administration, harden domain controllers using Server Core, TPM, BitLocker, and Device Guard with RDP restrictions, apply and analyze security baselines using the Microsoft Security Compliance Toolkit with Policy Analyzer and LGPO, and secure file-sharing traffic with SMB 3.1.1 encryption and preauthentication integrity.
 abstract: |
   After completing this module, you will be able to:
 

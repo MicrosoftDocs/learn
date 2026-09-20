@@ -2,14 +2,15 @@
 uid: learn.wwl.implement-windows-server-data-deduplication
 metadata:
   title: Implement Windows Server Data Deduplication
-  description: "Implement Windows Server Data Deduplication"
-  ms.date: 01/23/2026
+  description: "Learn how to implement Data Deduplication in Windows Server to reduce storage consumption for file shares, VDI deployments, software distribution, and backup volumes."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Implement Windows Server Data Deduplication
-summary: Learn about the core functionality, benefits, use cases, and implementation of Data Deduplication in Windows Server.
+summary: |
+  This module covers how to implement Data Deduplication in Windows Server. You learn how deduplication replaces duplicate data chunks with references to a chunk store, identify ideal candidates such as user documents, VDI libraries, software deployment shares, and backup volumes, install and enable deduplication using Windows Admin Center, Server Manager, or PowerShell, configure usage types and optimization schedules, and run optimization, garbage collection, and scrubbing jobs.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the architecture, components, and Data Deduplication functionality, components, and use cases of Data Deduplication.

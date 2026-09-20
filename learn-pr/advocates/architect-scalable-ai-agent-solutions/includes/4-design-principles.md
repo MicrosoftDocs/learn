@@ -1,112 +1,119 @@
 AI workloads present unique challenges due to their data-centric nature, nondeterministic behavior, and operational complexity. To maximize cost efficiency while maintaining performance and scalability, apply the following principles and strategies:
 
-1. Cost-aware AI model selection. Choose models that balance performance and cost.
-1. Apply Azure Policy to enforce cost-related rules in AI governance.
-1. Add cost visibility and transparency with tagging strategies.
-1. Efficient data management by minimizing data movement across regions to reduce egress costs.
-1. Evaluate pay-as-you-go vs. commitment plans for Azure AI workloads.
+- Cost-aware AI model selection. Choose models that balance performance and cost.
+- Apply Azure Policy to enforce cost-related rules in AI governance.
+- Add cost visibility and transparency with tagging strategies.
+- Efficient data management by minimizing unnecessary data movement.
+- Evaluate pay-per-token and provisioned throughput options.
 
-## 1. Cost-aware AI model selection: Choose models that balance performance and cost
+## Cost-aware AI model selection: choose models that balance performance and cost
 
-Selecting the right AI model is both a technical and financial decision. With the rise of Model-as-a-Service (MaaS) offerings and serverless APIs, Azure’s AI Model Catalog provides curated access to foundation models optimized for cost-effective deployment. Selecting the ideal model involves key strategies to balance performance, scalability, and budget.
+Selecting a model is both a technical and financial decision. Microsoft
+Foundry Models provides a catalog for discovering, evaluating, and deploying
+models. The catalog has two main categories:
 
-- **Model Categories**
-  - Models direct from Azure
-    - Simplified licensing & support
-    - Lower operational friction
-    - Pay-as-you-go and provisioned throughput options
-  - Models from partner & community
-    - Unmatched breadth
-    - Innovate with the best
-    - Managed compute (bring your infra) or pay-as-you-go deployment options
-- **Hosted fine-tuning**
-  - Customize foundation models using your data
-  - Cost varies by model and data volume; ideal for high-value
-    personalization
+- **Foundry Models sold by Azure:** Models that Microsoft sells and supports
+  under Microsoft product terms, with deep Azure integration. Available
+  deployment types and features vary by model and region.
+- **Foundry Models from partners and community:** Models supplied by external
+  providers and communities. Support, licensing, and deployment options such
+  as serverless deployment or managed compute vary by provider and model.
+
+Evaluate models with workload-specific quality, safety, latency, throughput,
+data-boundary, availability, and cost tests. Use the model card and current
+pricing documentation rather than assuming that model size alone determines
+cost.
 
 ### Pricing considerations
 
-You should consider the following cost drivers when assessing the cost of an AI agent deployment:
+The following table summarizes the cost drivers to evaluate when selecting a model.
 
-| Cost driver         | Description                                                             |
-|--------------------|-------------------------------------------------------------------------|
-| Token usage        | Inference costs scale with number of tokens processed.                  |
-| Fine-tuning volume | Charges based on data used to customize models.                         |
-| Model type         | Larger models (for example, Mistral Large, Llama 3) typically cost more.       |
-| Region             | Pricing may vary by Azure region.                                       |
+| Cost driver | What to evaluate |
+|---|---|
+| Inference | The selected model's input, output, cached-token, request, or other applicable meters |
+| Fine-tuning | Training charges, hourly hosting while a fine-tuned deployment exists even when idle, and inference charges |
+| Deployment option and type | Serverless or managed compute, and standard, provisioned, batch, or other supported deployment types |
+| Region and availability | Current model, feature, quota, and capacity availability in the required processing boundary |
+| Complete solution | Agent runtime, tools, data stores, retrieval, networking, observability, and application hosting |
 
-### Model selection strategies
+Match the model to the task, but validate smaller models rather than assuming
+they meet quality requirements. Compare candidates with representative
+evaluations and production-like traffic, and review the current meter for each
+candidate.
 
-Model selection strategies should include matching the model to the
-complexity of the task, evaluating the cost-to-performance ratio, and
-leveraging preoptimized models.
+### Model router
 
-When matching a model to task complexity, use smaller models for
-classification, summarization, or retrieval and reserve large models for
-nuanced generation or strategic reasoning.
+Model router is a trained language-model selector that you deploy as one model
+endpoint. It selects an eligible underlying model for each request. Configure
+the routing mode as **Balanced**, **Cost**, or **Quality**, and restrict the
+allowed model subset when cost, capability, context-window, or compliance
+requirements demand it.
 
-When evaluating the cost-to-performance ratio, compare models using
-metrics like cost-per-inference or accuracy-per-dollar, and use Azure
-usage analytics and open benchmarks to guide selection.
+> [!IMPORTANT]
+> Model router supports **Global Standard** and **Data Zone Standard**
+> deployments. Routing mode and model subset are custom-deployment settings:
+> the subset limits which models are eligible, while the deployment type
+> determines the data-processing boundary. If processing must remain in one
+> Azure region, use a supported fixed-model **Standard** deployment. If the
+> workload requires provisioned throughput, use an appropriate fixed-model
+> provisioned deployment. To route requests to Claude models, deploy those
+> models separately before adding them to the subset.
 
-When planning to leverage prebuilt models, consider that Azure AI
-Foundry Models includes models from OpenAI, Microsoft Research, Meta,
-Mistral AI, xAI, Black Forest Labs, Cohere, NVIDIA, HuggingFace and
-more, which are prepackaged for rapid deployment and reduced
-operational overhead.
-
-You should also consider model router. The model router in Azure AI
-Foundry is a powerful orchestration layer that dynamically selects the
-most appropriate model for a given task, optimizing both performance and
-cost. Rather than hardcoding model choices, developers can define
-routing logic based on input characteristics, such as task type,
-complexity, or domain. This enables intelligent delegation, sending
-simple classification tasks to lightweight models while reserving
-high-capacity LLMs for nuanced synthesis or reasoning. The router
-supports fallback strategies, quota enforcement, and observability,
-making it a critical component for scalable, cost-effective, multi-agent
-systems. By abstracting model selection, it empowers teams to evolve
-their architecture without disrupting agent logic or user experience.
+Evaluate model router against a fixed-model baseline for quality, latency, and
+end-to-end cost. Model router selects models; it doesn't coordinate agents,
+functions, or business workflow steps. Use explicit application workflows or
+an orchestration framework such as Microsoft Agent Framework for those
+responsibilities.
 
 ### AI model selection best practices
 
-- Use Azure Machine Learning for cost tracking and autoscaling.
-- Apply grounding and input filtering to reduce token usage.
+- Estimate complete solution costs with the Azure pricing calculator, and
+  monitor deployed resource costs with Microsoft Cost Management. Configure
+  autoscaling only for the compute or endpoint technology that hosts the
+  workload. Size Foundry provisioned model deployments in PTUs, and then
+  validate quota and available capacity.
+- Treat retrieved grounding data as input-token overhead. Retrieve only
+  concise, relevant passages; filter, rank, or summarize context; limit
+  conversation history and output length; and use prompt caching when the
+  selected model and deployment support it.
 - Monitor usage patterns and retrain only when performance degrades.
 
-## 2.  Applying Azure Policy to enforce cost-related rules in AI governance
+## Applying Azure Policy to enforce cost-related rules in AI governance
 
 As AI workloads scale across cloud environments, enforcing cost
 discipline becomes essential, not just for budget control, but for
 sustainable operations. Azure Policy provides a powerful mechanism to
 embed cost-awareness directly into your governance boundaries.
 
-### Azure Policy for cost enforcement
+### Azure Policy for cost governance
 
-Azure Policy enables automated rule enforcement across your environment.
-For cost governance, consider the following strategies:
+Azure Policy can audit, deny, modify, or remediate resource configurations.
+Use it to enforce approved technical guardrails that support cost governance:
 
-- Restrict high-cost SKUs.
-  - Deny or audit use of premium VM sizes, GPU instances, or
-    high-throughput storage.
-  - Example: Use the "Not allowed resource types" policy to block
-    costly SKUs in dev/test.
-- Enforce budget tags.
-  - Require tagging of resources with cost center, environment, or owner
-    metadata.
-  - Enables granular cost reporting and accountability.
-- Limit Resource Locations.
-  - Restrict deployments to cost-optimized regions or those with
-    reserved capacity.
-  - This reduces pricing variability and avoids quota-related
-    escalations.
-- Control AI Service usage.
-  - Apply policies to Microsoft Foundry, Azure OpenAI, and Azure AI
-    Search.
-  - Limit usage to approved models or endpoints to prevent uncontrolled
-    consumption.
-- Use Azure Landing Zones.
-  - Use governance, automation, and standardized deployment practices.
+- **Restrict compute SKUs:** Use the built-in **Allowed virtual machine size
+  SKUs** policy for virtual machine sizes. For other services, use a
+  service-specific built-in policy or a custom policy that evaluates the
+  relevant SKU property. A resource-type policy can't distinguish individual
+  VM sizes.
+- **Require cost-allocation tags:** Audit, deny, or add required tags such as
+  cost center, environment, owner, and workload, according to the
+  organization's tagging standard.
+- **Restrict locations:** Limit deployments to approved regions for
+  governance, data residency, service availability, or operational
+  standardization. Evaluate current pricing as one input, not as the only
+  selection criterion.
+- **Restrict services, models, or deployment types:** Use available built-in
+  policies or tested custom definitions to allow only approved AI resources
+  and deployment configurations.
+- **Inherit landing-zone guardrails:** Start with the Azure landing-zone
+  policy baseline, then add workload-specific controls at the appropriate
+  management-group or subscription scope.
+
+> [!IMPORTANT]
+> A location policy doesn't reserve model capacity or remove quota
+> requirements. Azure Reservations provide a billing discount and don't
+> guarantee capacity. Validate model and feature availability, quota, and
+> deployable capacity separately before enforcing a regional design.
 
 ### AI-specific policy examples
 
@@ -116,22 +123,22 @@ Consider the following policy types to ensure cost effective AI agent solutions:
 |-------------------------|------------------------------------|----------------------------------|
 | VM SKU restriction      | Prevent use of expensive compute   | Internal-only workloads          |
 | Tag enforcement         | Ensure cost attribution            | All AI resources                 |
-| Region restriction      | Optimize for pricing and availability | Training workloads            |
+| Region restriction      | Enforce approved regions for governance, data residency, and service availability | Workloads with location requirements |
 | Service access control  | Limit use of high-cost AI services | Dev/test environments            |
 
-### Azure policy best practices
+### Azure Policy best practices
 
 - Start with baseline policies from Azure landing zones, then layer AI-specific cost controls.
 - Monitor policy compliance using **Azure Policy Insights**.
 - Review policy impact regularly to balance cost control with innovation flexibility.
 
-## 3. Adding cost visibility and transparency with tagging strategies
+## Adding cost visibility and transparency with tagging strategies
 
 As AI workloads scale across Azure environments, maintaining cost
 visibility becomes essential for financial accountability and
 operational efficiency. Tagging strategies offer a simple yet powerful
 way to attribute cloud costs to specific projects, teams, or workloads,
-enabling granular tracking, budget enforcement, and informed
+enabling granular tracking, budget monitoring, and informed
 decision-making.
 
 Tagging enables organizations to identify high-cost workloads and
@@ -166,161 +173,181 @@ Use Azure Policy to require tags such as:
 - Environment (for example, dev, test, prod)
 - Owner or Team
 
-This ensures every resource is traceable to a responsible entity and
-aligns with organizational budgeting structures.
+> [!NOTE]
+> Not all resource types support tags or include tags in cost reports. Verify
+> both capabilities in the tag-support matrix. Required tags improve
+> attribution for supported resources, but they don't guarantee complete
+> resource or billing traceability. Cost Management tag inheritance applies to
+> usage records and excludes purchases and resources that don't emit usage at
+> subscription scope.
 
-#### Apply tag inheritance
+#### Apply tags to resources and cost records
 
-Enable tag inheritance in Microsoft Cost Management to automatically apply
-subscription, resource group, or billing account tags to child
-resources. This reduces manual tagging errors and ensures consistent
-attribution across nested resources.
+Use Azure Policy when tags must be required, added to, or corrected on Azure
+resources. Separately, enable tag inheritance in Microsoft Cost Management
+when subscription, resource-group, or supported billing-scope tags should be
+added to child-resource usage records for cost reporting. Cost Management tag
+inheritance enriches usage records; it doesn't write tags to the resources.
 
 #### Standardize tag formats
 
-Define and enforce naming conventions for tag values to support
-automated reporting. For example:
+Define and enforce naming conventions for tag values so reports and
+automation can group costs consistently. For example:
 
-```
+```text
 CostCenter: FIN-001
 Environment: Production
 Owner: ai-team@company.com
 ```
 
-Consistent formats improve queryability and integration with financial
-systems.
-
 ### Tagging best practices
 
-- **Use Azure Policy definitions** to audit and enforce tagging rules across subscriptions.
-- **Deploy tagging templates** via Azure Blueprints or Bicep modules to standardize across teams.
-- **Integrate tags into CI/CD pipelines** to ensure resources are tagged at creation.
-- **Monitor tag coverage** using Azure Policy Insights and Cost Management dashboards.
+- Use Azure Policy definitions to audit, require, add, or remediate resource
+  tags at the appropriate scopes.
+- Deploy standardized Bicep or ARM templates through deployment stacks. Use
+  Template Specs when centrally stored and versioned templates are useful.
+- Integrate tags into CI/CD pipelines so resources are tagged at creation.
+- Monitor resource-tag compliance with Azure Policy and analyze inherited
+  usage-record tags in Microsoft Cost Management.
 
-## 4. Efficient data management: Minimize data movement across regions to reduce egress costs
+## Efficient data management: Minimize unnecessary data movement
 
-Data movement across regions can significantly impact cloud spending,
-especially in AI workloads that rely on large-scale data processing.
-Efficient data management practices, particularly minimizing
-cross-region transfers, are essential for controlling egress costs and
-optimizing overall cloud economics.
+Data-transfer charges depend on the source, destination, direction, and Azure
+service. Data transfer between Azure services in the same region is generally
+not charged as bandwidth, but service-specific processing, storage, retrieval,
+or networking meters can still apply. Inter-region transfers and outbound
+internet traffic can incur charges. Placing data near users can reduce latency,
+but it doesn't by itself eliminate internet egress.
 
-### Why data movement matters
+### Design from actual data flows
 
-When data is transferred between Azure regions or out of Azure entirely,
-it incurs egress charges. These costs can accumulate quickly in
-distributed architectures, especially when:
+- **Map each transfer path:** Document movement among users, applications,
+  models, indexes, storage, tools, backup targets, and external systems.
+- **Select the model processing boundary:** Global deployment types can
+  process inference data in any Azure region. Data Zone deployment types keep
+  processing within the selected Microsoft-defined data zone. **Standard**
+  and **Regional Provisioned** deployment types process in the deployment
+  region.
+- **Co-locate dependent services where appropriate:** Place the application,
+  retrieval index, and storage close to the selected model processing
+  boundary when latency, compliance, reliability, and service availability
+  allow it.
+- **Cache deliberately:** Use application caches or a content delivery
+  network for suitable content, with explicit freshness, privacy, and
+  invalidation rules.
+- **Review replication and recovery traffic:** Choose zone or regional
+  replication from reliability and compliance requirements, and include its
+  data-transfer and storage effects in the estimate.
+- **Measure current meters:** Use service logs and Microsoft Cost Management
+  to identify high-volume paths, then validate the applicable service and
+  bandwidth pricing.
 
-- AI models are trained in one region, but access data stored in
-  another.
-- Applications frequently query or replicate data across geographic
-  boundaries.
-- Backups or analytics pipelines span multiple regions without
-  optimization.
+> [!IMPORTANT]
+> The region of the Foundry resource, application, and storage account alone
+> doesn't guarantee single-region inference processing. If processing must
+> remain in one region, use **Standard** or **Regional Provisioned** where the
+> required model is supported, and verify current availability before
+> deployment.
 
-Reducing unnecessary data movement is a direct lever for cost savings.
+### Trade-offs and risks
 
-### Key strategies to minimize data movement
+- Regional consolidation can conflict with availability, disaster recovery,
+  data residency, or model availability requirements.
+- Caching reduces repeated transfers but introduces freshness and data-handling
+  responsibilities.
+- Cross-region replication can be necessary for recovery objectives even when
+  it adds cost.
 
-- **Place data close to its users.**
-  - Deploy data storage in the same region as the consuming application or
-  user base.
-  - Reduces latency and avoids cross-region egress fees.
-  - Ideal for inference workloads, dashboards, and real-time analytics.
-- **Use caching and content delivery networks (CDNs).**
-  - Cache frequently accessed static data near users.
-  - CDNs reduce repeated long-distance transfers and offload bandwidth
-  usage.
-  - Useful for read-heavy workloads and public-facing AI
-  services.
-- **Consolidate workloads regionally.**
-  - Colocate compute, storage, and AI services within the same region.
-  - Avoid fragmented deployments that trigger inter-region traffic.
-  - Use Azure Resource Graph or Microsoft Purview to audit resource
-  distribution.
-- **Optimize replication and backup strategies.**
-  - Evaluate whether cross-region replication is necessary for all
-  workloads.
-  - Use zone redundancy when regional replication isn't required.
-  - Apply compression and deduplication to reduce replication volume.
+## Evaluate pay-per-token and provisioned throughput options
 
-### Data management best practices
+Microsoft Foundry Models deployment types differ in billing, throughput, and
+data-processing boundary. Select the processing boundary and performance
+characteristics first, then compare the applicable billing options.
 
-- **Audit data flows**: Use access logs and system generated data to identify
-  high-volume transfers.
-- **Apply policies**: Use Azure Policy to restrict resource deployment
-  to approved regions.
-- **Automate placement**: Integrate region-aware logic into CI/CD
-  pipelines and provisioning scripts.
-- **Monitor costs**: Use Microsoft Cost Management to track egress charges
-  and identify optimization opportunities.
+The following table compares deployment choices, billing, and capacity behavior for common workload patterns.
 
-### Trade-offs and risks**
+| Workload pattern | Deployment choice | Billing and capacity behavior |
+|---|---|---|
+| Variable or bursty online traffic | **Global Standard**, **Data Zone Standard**, or **Standard** | Pay per token according to the selected model and deployment meter |
+| Short benchmark or temporary event that needs provisioned throughput | The matching **Global Provisioned**, **Data Zone Provisioned**, or **Regional Provisioned** deployment with hourly billing | Pay for every deployed PTU-hour, whether used or idle |
+| Predictable, sustained, high-volume production traffic | A provisioned deployment covered by an Azure Reservation | Pay for deployed PTU capacity, with a term-based discount applied to matching usage |
 
-- Over-consolidation may reduce fault tolerance or violate compliance
-  requirements.
-- Caching introduces data freshness trade-offs. Ensure cache
-  invalidation is well-managed.
-- Regional restrictions must align with business continuity and disaster
-  recovery plans.
+Use a standard pay-per-token deployment type for variable or bursty demand.
+Use hourly Provisioned Throughput for short benchmarking or temporary events,
+not as an elastic production-scaling strategy. Provisioned deployments are
+billed for their deployed PTUs, can't be paused, and stop accruing hourly
+deployment charges only when deleted. Scaling down releases capacity, and the
+same capacity might not be available if you later scale up.
 
-## 5. Evaluating pay-as-you-go vs. commitment plans for Azure AI workloads
+### Provisioned throughput reservations
 
-As AI adoption accelerates, organizations face growing pressure to
-manage cloud costs without compromising performance. Azure offers two
-primary pricing models for AI deployments: pay-as-you-go and
-commitment-based plans through Provisioned Throughput reservations.
-Understanding the trade-offs between these models is essential for
-cost-effective scaling.
+Azure Reservations provide a billing discount compared with hourly PTU
+billing for matching provisioned deployments. PTUs are model-independent, so
+model family isn't a reservation-matching dimension. Select the matching
+**Global**, **Data Zone**, or **Regional** reservation, choose a one-month or
+one-year term and an appropriate assignment scope, and verify the current
+portal quote rather than publishing a fixed savings percentage.
 
-### Pay-as-you-go: flexibility with variable cost
+Create and validate the provisioned deployment before purchasing its
+reservation. A reservation is a billing construct and doesn't guarantee that
+model capacity is available.
 
-The pay-as-you-go model charges hourly rates for Provisioned Throughput
-Units (PTUs), allowing teams to scale usage dynamically. This is ideal
-for:
+Reservation matching has three independent dimensions:
 
-- **Short-term experimentation**: No upfront commitment, perfect for
-  testing new models or workloads.
-- **Unpredictable demand**: Supports variable usage patterns without
-  overprovisioning.
-- **Rapid prototyping**: Enables fast deployment without financial
-  lock-in.
+- **Deployment type:** Global, Data Zone, and Regional reservations are
+   separate and aren't interchangeable.
+- **Region:** Data Zone and Regional deployments must match the reservation
+   region. Global reservations aren't region-specific and can cover matching
+   Global deployments across multiple regions.
+- **Assignment scope:** The reservation scope determines which matching
+   resource groups, subscriptions, management groups, or eligible shared
+   billing scope can receive the discount.
 
-However, this flexibility comes at a premium. Hourly rates can be
-higher than reserved pricing, especially for sustained
-workloads.
+Monitor reservation utilization and deployed PTUs in Microsoft Cost
+Management. If deployed PTUs exceed the reservation quantity, the excess is
+billed at the hourly rate; unused reserved quantity doesn't carry forward.
 
-### Commitment plans: cost savings through reservations
+> [!IMPORTANT]
+> When a reservation expires, the provisioned deployment continues to run and
+> is billed at the hourly rate. Automatic renewal maintains discount coverage
+> and budget predictability; it isn't an availability or capacity mechanism.
 
-Microsoft Foundry Provisioned Throughput reservations allow organizations
-to prepurchase PTUs for one-month or one-year terms. Key benefits
-include:
+## Strategic alignment
 
-- **Up to 70% cost savings** compared to hourly pricing for steady
-  usage.
-- **Budget predictability** through fixed-term pricing aligned with
-  financial planning.
-- **Streamlined billing** with automatic application of discounts to
-  matching deployments.
+As AI adoption accelerates, strategic alignment helps organizations avoid technology-first investments and connect AI capabilities to measurable business outcomes and return on investment (ROI).
 
-Reservations are scoped by deployment type (Global, Data Zone, Regional) and region, but are model-agnostic, offering flexibility across AI workloads.
+ROI isn't limited to cost savings. It can also include employee satisfaction, operational efficiency, and time saved on tasks.
 
-### Comparison summary
+Microsoft's Responsible AI principles of fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability guide how teams govern, map, measure, and manage risk throughout the AI lifecycle. These principles don't automatically implement compliance, access control, or threat detection. Teams must design, configure, monitor, and continuously improve the security, privacy, compliance, safety, and oversight controls for each workload.
 
-| Feature                     | Pay-as-you-go                     | Commitment (Reservation)             |
-|----------------------------|-----------------------------------|--------------------------------------|
-| Cost per PTU               | Higher hourly rate                | Discounted fixed rate                |
-| Flexibility                | High                              | Moderate (fixed term, scoped region) |
-| Ideal for                  | Testing, burst workloads          | Production, steady usage             |
-| Budget control             | Variable                          | Predictable                          |
-| Setup complexity           | Minimal                           | Requires planning and alignment      |
+## Match solution paths to business outcomes
 
-### Best practices for commitment plans
+Start with the business problem and measurable outcome. Classify the use case as individual work or business automation, decide whether generative or nongenerative AI is appropriate, and then choose among the Cloud Adoption Framework adoption models: ready-to-use Copilots, low-code SaaS development, managed PaaS development, or Azure infrastructure.
 
-- **Deploy first**: Ensure workloads are active before purchasing reservations to avoid overcommitment.
-- **Match attributes**: Align reservation scope, region, and deployment
-  type with actual usage.
-- **Monitor utilization**: Use Microsoft Cost Management to track
-  reservation coverage and set budget alerts.
-- **Plan renewals**: Enable autorenewal to maintain savings without
-  service disruption.
+| Business need | Solution path | Selection guidance |
+|---|---|---|
+| Improve individual productivity in existing applications | Ready-to-use Microsoft Copilots or in-product Copilots | Use when a supported product already provides the required capability and data access |
+| Extend Microsoft 365 Copilot with organizational knowledge or actions | Low-code SaaS development or a Microsoft 365 Copilot agent | Use a declarative agent when Copilot's models and orchestrator are sufficient; use a custom engine agent when custom models or orchestration are required |
+| Automate and integrate a business process | Copilot Studio or managed PaaS development with Microsoft Foundry | Choose single-agent, multi-agent, workflow, or conventional code from boundaries, determinism, integration, quality, and operating requirements |
+| Build a differentiated solution or run a custom model/runtime | Managed PaaS development with Microsoft Foundry or AI on Azure infrastructure | Accept greater engineering and operational ownership only when the required control or customization justifies it |
+
+Complexity alone doesn't justify autonomous action. Assess the consequence and reversibility of each action, permissions, data sensitivity, ambiguity, and required oversight. Apply least privilege, audit logging, bounded execution, circuit breakers, and human approval for high-risk or irreversible actions.
+
+> [!IMPORTANT]
+> Don't grant an agent unsupervised authority over a material business, security, financial, or customer-impacting action solely because the workflow has multiple steps.
+
+Use **prompt engineering** to refine instructions, examples, and context at inference time. Use **fine-tuning** only when evaluation shows a need to train model weights with a curated dataset and the additional training, hosting, and operational costs are justified.
+
+For example, Fujitsu increased sales-proposal productivity by 67% using Azure AI Agent Service (now Microsoft Foundry Agent Service). Carvana reduced inbound calls per sale by more than 45% over two years by combining its Sebastian agent with the CARE conversation-analysis platform.
+
+## Design and operate for sustained value
+
+Modularity, security, and scalability are useful design qualities, but they aren't sufficient measures of production readiness or long-term ROI. Review and operate each workload across all five Azure Well-Architected Framework pillars:
+
+- **Reliability:** Meet availability, recovery, and resilience targets.
+- **Security:** Protect identities, data, models, tools, and communication paths.
+- **Cost Optimization:** Measure complete solution cost and continuously align consumption with business value.
+- **Operational Excellence:** Use automated delivery, observability, evaluation, incident response, and safe change practices.
+- **Performance Efficiency:** Test latency, throughput, scaling, and capacity against expected demand.
+
+Treat **Govern**, **Secure**, and **Manage** as continuous Cloud Adoption Framework practices. Revisit strategy, planning, and environment readiness as business goals, risks, models, data, usage, and service capabilities change.

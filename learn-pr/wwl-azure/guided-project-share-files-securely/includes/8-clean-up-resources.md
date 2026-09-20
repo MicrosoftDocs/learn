@@ -1,24 +1,14 @@
-Complete these steps to avoid ongoing charges from the resources you created in this project.
+This guided project consists of the following exercises:
 
-> [!WARNING]
-> Resource deletion is permanent. Verify that you're deleting only resources created for this guided project before you proceed.
+- Exercise 1: Create storage and upload file
+- Exercise 2: Create an access policy and generate a SAS link
+- Exercise 3: Test partner access behavior
+- Exercise 4: Revoke partner access
+- Exercise 5: Configure lifecycle management
+- **Clean up resources**
 
-## Delete the resource group
+Congratulations — you've completed the exercises in this project. In this final step, you remove all the resources you created. It's important to clean up to avoid unexpected charges in your Azure subscription.
 
-Deleting the resource group removes the storage account, the **partner-drop** container, all blobs, and the lifecycle management rule.
+Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
-1.  In the portal search bar, search for **Resource groups** and select **Resource groups**.
-2.  Select **rg-gp-file-exchange** from the list.
-3.  Select **Delete resource group** from the top menu bar.
-4.  In the confirmation field, type **rg-gp-file-exchange** and select **Delete**.
-5.  In the confirmation dialog that appears, select **Delete** again to confirm.
-6.  Wait for the notification that confirms the resource group is deleted.
-
-## Clean up local and shared artifacts
-
-1.  Delete the **monthly-report.txt** file from your local machine if you no longer need it.
-2.  Clear any copied SAS URLs from your notes, clipboard, or shared documents. Expired SAS URLs no longer grant access, but removing them is good security hygiene.
-
-## Verify cleanup
-
-In the portal search bar, search for **Resource groups** and confirm **rg-gp-file-exchange** no longer appears in the list.
+[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::](https://microsoftlearning.github.io/Share-files-securely/Instructions/Labs/8-clean-up-resources.html)

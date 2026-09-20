@@ -1,25 +1,21 @@
-You've registered your web application with Microsoft Entra ID. You're now ready to add the authentication code to sign in users in your application and would like to use an SDK that can handle the authentication details for you. In this unit, you learn about the Microsoft Authentication Library for Java (MSAL4J) and how it helps with authentication.
+MSAL4J connects application configuration to Microsoft identity platform authentication and token-acquisition APIs. This unit explains a client-construction sample and the library's role in a web application's sign-in flow.
 
 ## Microsoft Authentication Library for Java
 
-The Microsoft Authentication Library for Java (MSAL4J) enables applications to sign in users or apps with Microsoft identities (Microsoft Entra ID, Microsoft accounts, and Azure Active Directory B2C accounts) and obtain tokens to call Microsoft APIs or your own APIs registered with Microsoft Entra ID. It's built using industry-standard OAuth2 and OpenID Connect protocols.
+The Microsoft Authentication Library for Java (MSAL4J) enables applications to authenticate with Microsoft identities and obtain tokens for protected APIs. It supports scenarios involving Microsoft Entra ID, personal Microsoft accounts, and Azure AD B2C, using OAuth 2.0 and OpenID Connect.
 
-The library provides convenient APIs that enable authentication with Microsoft Entra ID for different types of applications:
+> [!NOTE]
+> Existing Azure AD B2C customers can continue using the service. It hasn't been available for purchase by new customers since May 1, 2025, and support continues until at least May 2030. Azure AD B2C P2 was discontinued for all customers on March 15, 2026; continuing service support doesn't cover retired P2-only features.
+>
+> For new customer identity projects, use Microsoft Entra External ID. The scenario in this module concerns a Microsoft Entra workforce tenant, not an Azure AD B2C tenant or an External ID external tenant. For details, see the [Azure AD B2C end-of-sale FAQ](/azure/active-directory-b2c/faq#azure-ad-b2c-end-of-sale).
 
-- Web applications
-- Daemon services
-- Command-line applications
-- Desktop applications
+MSAL4J supports several application types, including web applications, background services, command-line applications, and desktop applications. The appropriate client type and token-acquisition flow depend on the application's environment.
 
-### Initialize the MSAL object
+## A confidential client represents the server application
 
-To start using MSAL, you need to initialize and configure the MSAL object in your application code.
+MSAL distinguishes **public clients**, which can't reliably keep application credentials confidential, from **confidential clients**, which can authenticate themselves using securely held credentials. A server-side Java web application is a confidential client.
 
-MSAL represents client applications as public clients and confidential clients, distinguished by their ability to authenticate securely with the authorization server and maintain the confidentiality of their client credentials.
-
-**Confidential client** applications are apps that run on servers (web apps, web API apps, or even service/daemon apps). Confidential clients can hold configuration-time application secrets.
-
-You can create an instance of the Confidential client as follows:
+The following illustrative fragment constructs that client. The uppercase names are configuration placeholders, not real identifiers or secrets. Imports, surrounding application code, and exception handling aren't shown.
 
 ```java
 IClientCredential credential = ClientCredentialFactory.createFromSecret(CLIENT_SECRET);
@@ -29,27 +25,32 @@ ConfidentialClientApplication app = ConfidentialClientApplication
                                         .build();
 ```
 
-- **CLIENT_ID**: The client ID is the unique application (client) ID assigned to your app by Microsoft Entra ID when the app was registered.
-- **CLIENT_SECRET**: The client secret for the confidential client app, created when registering the app.
-- **AUTHORITY**: The authority is a URL that indicates a directory that MSAL can request tokens from. It's composed of the identity provider instance and sign-in audience for the app.
+The fragment connects three inputs:
 
-### Acquire authentication tokens with MSAL
+| Input | Meaning |
+|---|---|
+| `CLIENT_ID` | The application identifier from the registration. |
+| `CLIENT_SECRET` | A placeholder for secret material supplied to the server. This illustrates one credential factory, not a request to create or embed a secret. |
+| `AUTHORITY` | The identity-provider URL and sign-in audience. In the single-tenant scenario, it identifies the selected Microsoft Entra tenant. |
 
-MSAL provides `acquireToken` methods to initiate the authentication flow and return an `AuthenticationResult` containing the authentication tokens.
+`ClientCredentialFactory` creates a credential object, and the builder associates that credential with the application's client ID and authority. Calling `build()` constructs the MSAL client; it doesn't sign in a user or send the browser anywhere.
 
-When a user completes sign in, an ID token is returned in the authentication result containing some basic authentication claims like user principle name, email, and so on.
+## MSAL's role in the authorization-code flow
 
-Here's an example of acquiring tokens with MSAL:
+A confidential client authenticates the application, while the browser interaction authenticates the user. The application coordinates these parts of the flow:
 
-```java
-final AuthorizationCodeParameters authParams = AuthorizationCodeParameters
-                                                    .builder(authCode, new URI(Config.REDIRECT_URI)).scopes(Collections.singleton(Config.SCOPES))
-                                                    .build();
+| Phase | MSAL API | Application responsibility |
+|---|---|---|
+| Start browser sign-in | `getAuthorizationRequestUrl` | Construct an authorization request and redirect the browser to it. |
+| Redeem an authorization code | `acquireToken` with `AuthorizationCodeParameters` | Process the callback, validate the response, and exchange the received code for tokens. |
+| Obtain a token for a later API call | `acquireTokenSilently` with `SilentParameters` | Supply the account and appropriate token-cache context, and handle cases that require user interaction. |
 
-final IAuthenticationResult result = app.acquireToken(authParams).get();
-```
+For this web application, the callback receives an authorization code, not the Microsoft Graph access token. Code redemption happens through a server-to-server request to the token endpoint.
 
-- **REDIRECT_URI**: The redirect URI is the URI to which the identity provider sends the security tokens back. It must match the redirect URI in the Microsoft Entra app registration.
-- **SCOPES**: Scopes are permissions the application requested. Normally, the three scopes `openid profile offline_access` suffice for receiving an ID token response for a user sign in and are set by default by MSAL.
+## Interpret the authentication result
 
-Use the `acquireToken` methods in your application when initiating a sign-in flow for users and calling APIs to access data.
+Successful code redemption returns an `IAuthenticationResult`. In this OpenID Connect scenario, the result provides an ID token for the application and an access token for the requested API. It also provides information used to manage the account and token lifetime.
+
+The ID token contains identity claims; the access token enables a request to its intended API. An ID token isn't a substitute for a Microsoft Graph access token. MSAL4J acquires tokens, but the application or an API-specific SDK makes the subsequent business API call.
+
+The next unit follows these responsibilities through annotated servlet code. The [MSAL overview](/entra/identity-platform/msal-overview) provides additional context about supported scenarios and token management.

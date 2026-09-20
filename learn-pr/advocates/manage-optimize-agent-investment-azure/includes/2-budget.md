@@ -3,62 +3,90 @@ usage, and respond to cost anomalies, ultimately improving ROI and operational e
 
 ## Create and manage budgets in Microsoft Cost Management
 
-Creating and managing budgets in Microsoft Cost Management is a key strategy for improving the ROI of AI agents by enabling proactive financial oversight and control. Budgets allow organizations to set spending limits for specific subscriptions, resource groups, or services, helping teams stay aligned with financial goals. By monitoring actual usage against these predefined thresholds, stakeholders can detect overspending early, adjust resource allocation, and avoid unexpected charges. Budget alerts also ensure that decision-makers are notified when costs approach or exceed limits, allowing for timely
-intervention. This disciplined approach to cost tracking not only prevents waste but also ensures that AI investments are delivering value within acceptable financial boundaries.
+Microsoft Cost Management budgets compare accumulated costs with an amount that you define. They can notify stakeholders when actual or forecasted costs cross configured thresholds, but they don't stop resources, consumption, or billing. Create a budget at a supported Cost Management scope, such as a management group, subscription, resource group, or supported billing scope for your agreement. Use filters to narrow the evaluated costs to a service, resource group, resource, or tag. A service, resource, or tag is a filter within a supported scope, not a budget scope.
 
 ### Steps
 
-1. Navigate to **Cost Management + Billing** in the Azure portal.
-1. Select **Budgets** under the **Cost Management** section.
-1. Click **Add** to create a new budget.
-1. Define the scope (subscription, resource group, etc.), set the budget amount, and choose the time period (monthly, quarterly, annually).
-1. Configure alerts to notify stakeholders when spending reaches specific thresholds (for example, 80%, 100%). Budget alerts support automated actions through run books and web hooks.
+1. In the Azure portal, open the scope that should own the budget, such as a management group, subscription, or resource group, and then select **Budgets**. You can also open **Cost Management + Billing** and use the **Scope** selector to move to an available scope.
+1. Select **Add**. Confirm the **Scope**, and add any required filters. For available filter fields, see [Group and filter properties](/azure/cost-management-billing/costs/group-filter#group-and-filter-properties).
+1. Enter the budget name and amount. Select the **Reset period**, such as **Monthly**, **Quarterly**, or **Annually**, and set the expiration date. The reset period determines when evaluated cost starts again at zero; the expiration date determines when the budget stops evaluating costs and is deleted.
+1. Select **Next**. Configure at least one threshold and corresponding email recipient. For each threshold, set **Type** to:
+    - **Actual** to compare accrued cost with the budget amount.
+    - **Forecasted** to notify recipients when projected cost is expected to exceed the threshold.
+1. Optional: For a subscription or resource-group budget, attach an Azure Monitor action group to a notification condition. Action groups aren't supported for other budget scopes. Treat any runbook, function, logic app, or webhook as a separately designed, authorized, and tested remediation workflow; the budget itself doesn't enforce spending. For an example, see [Azure billing and cost management budget scenario](/azure/cost-management-billing/manage/cost-management-budget-scenario).
+1. Review and create the budget.
+
+> [!IMPORTANT]
+> Cost and usage data is typically available within 8-24 hours, and budgets evaluate that data every 24 hours. Notifications are normally sent within an hour after an evaluation finds that a threshold is met. Don't rely on a budget for real-time protection or as a hard spending cap.
 
 ### Benefits
 
-- Prevents budget overruns.
-- Enables financial accountability across teams.
-- Supports forecasting and planning.
+- Establishes financial accountability at an appropriate organizational or billing scope.
+- Provides actual-cost and forecast-based early warning.
+- Can start a separately configured response workflow at supported scopes.
 
 ## Create and manage quotas in Microsoft Foundry
 
-Creating and managing quotas in Microsoft Foundry is essential for improving the ROI of AI agents by ensuring controlled and efficient use of compute resources. Azure uses quotas and limits to prevent budget overruns due to fraud and to honor Azure capacity constraints. Quota management also supports scalability by allowing teams to request increases only when justified by performance or business needs. This disciplined approach helps align technical operations with financial goals, ensuring that AI agents deliver value without exceeding budget constraints.
+Microsoft Foundry quota governs model rate limits and deployment-capacity allocation; it isn't an accumulated-spend limit. For standard Azure OpenAI deployments, quota is assigned per subscription, region, model, and deployment type in tokens per minute (TPM). Assigning TPM to a deployment sets its TPM rate limit and a corresponding requests-per-minute limit. The token estimate used for rate limiting isn't the token count used for billing.
+
+For provisioned deployments, PTU quota is a no-cost policy limit. A provisioned deployment holds dedicated capacity and is billed for the number of deployed PTUs, whether or not requests are being made. Quota can constrain deployment scale or request throughput, but it doesn't replace Cost Management budgets and alerts, and having PTU quota doesn't guarantee that model capacity is currently available.
+
+### Required access
+
+- To view quota allocations, assign **Cognitive Services Usages Reader** at subscription scope.
+- To edit allocations in the Foundry portal, assign **Cognitive Services Contributor** together with **Cognitive Services Usages Reader**.
+- To request quota increases, use **Owner** or **Contributor** at subscription scope.
 
 ### Steps
 
-1. In the **AI Foundry portal**, go to **Management Center**.
-1. Select **Quota** from the left menu.
-1. Use the **Show all quota** toggle to view allocated and available quotas.
-1. Group quotas by **Region**, **Model**, or **Quota Type** for better visibility.
-1. To request more quota:
-    - Click the **pencil icon** to edit existing allocations.
-    - Use the **Request quota** button to submit a quota increase request.
-1. Use the **Provisioned Throughput** calculator to estimate capacity needs.
+1. Sign in to Microsoft Foundry, make sure the **New Foundry** toggle is on, and open the project to manage.
+1. In the upper-right navigation, select **Manage**, and then select **Quota** in the left pane.
+1. Select the appropriate tab:
+    - **Token per minute** for TPM allocations used by standard deployments.
+    - **Provisioned throughput unit** for PTU allocations used by provisioned deployments and for capacity-estimation tools.
+1. Select a deployment to open its details pane. Under **Affiliated deployments using shared quota**, select the pencil icon in the **Actions** column to reduce an unused allocation or increase an allocation when quota is available.
+1. For a standard deployment, select **Request quota** where that action is supported for the model and region. After an allocation edit or an approved increase, allow up to 15 minutes for the change to propagate, and then refresh the **Quota** page.
+1. For provisioned throughput sizing, open the capacity calculator from the **Quota** page. Enter the **Model**, **Version**, **Peak calls per min**, **Tokens in prompt call**, **Tokens in model response**, and **Cache rate**. Treat the result as an estimate and validate it with representative workload tests. For the sizing method, see [Determine PTU sizing for a workload](/azure/foundry/openai/how-to/provisioned-throughput-sizing).
 
 ### Best practices
 
-- Use shared quota pools for testing.
-- Request dedicated quota for production workloads.
-- Monitor quota usage with interactive charts.
+- Use shared quota only for temporary test endpoints; request dedicated quota for production endpoints.
+- Reallocate unused TPM before requesting an increase.
+- Verify model capacity before creating or scaling a provisioned deployment because quota doesn't guarantee capacity.
+- Track and govern financial cost separately in Microsoft Cost Management.
 
-## Create and manage alerts in Azure Monitor
+## Create and manage alerts for cost and operational signals
 
-Creating and managing alerts in Azure Monitor is a crucial tactic for improving the ROI of AI agents by enabling real-time cost and performance oversight. Alerts allow teams to respond immediately to anomalies such as unexpected spikes in usage or degraded performance. By setting up automated notifications based on custom metrics, such as daily spend, quota consumption, or model latency, organizations can prevent costly incidents before they escalate. This proactive monitoring reduces downtime, optimizes resource allocation, and ensures that AI agents operate within defined financial and operational boundaries. Ultimately, Azure Monitor alerts help maintain control, reduce waste, and ensure that AI investments deliver consistent value.
+Cost, platform metrics, and quota are separate signal types. Use the service that owns each signal instead of treating daily spend or quota allocation as native Azure Monitor platform metrics.
 
-### Steps
+### Cost Management budgets and anomaly alerts
 
-1. In the Azure portal, go to **Monitor**.
-1. Select **Alerts** and click **New Alert Rule**.
-1. Choose a **scope** (for example, subscription or resource group).
-1. Define a **condition**, such as cost exceeding a certain amount.
-1. Set up an **action group** to notify stakeholders via email, SMS, or webhook.
-1. Review and create the alert rule.
+- Use [Cost Management budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) for actual-cost and forecasted-cost threshold notifications.
+- Use [Cost Management anomaly alerts](/azure/cost-management-billing/understand/analyze-unexpected-charges#create-an-anomaly-alert) for unexpected daily cost patterns. In the Azure portal, open **Cost Management**, select a subscription scope, select **Cost alerts** > **+ Add**, set **Alert type** to **Anomaly**, add the required recipients, and create the rule.
+- Cost Management alerts aren't Azure Monitor metric alert rules and aren't real-time spending enforcement.
 
-> [!NOTE]
-> You should use dynamic thresholds for metrics that vary a lot, such as latencies and error rates. Dynamic thresholds enable the alert to learn how a metric typical varies over time and reduce false positives.
+### Azure Monitor platform-metric alerts
+
+1. In the Azure portal, select **Monitor** > **Alerts** > **+ Create** > **Alert rule**.
+1. Select the Foundry resource, Azure OpenAI resource, or another supported Azure resource that emits the metric you want to monitor.
+1. On **Condition**, select a supported platform metric from **Signal name**:
+    - Foundry Models signals include **Model Requests**, **Input Tokens**, **Output Tokens**, **Total Tokens**, supported latency metrics such as **Time To Response**, and **Provisioned Utilization**.
+    - Azure OpenAI signals include **Azure OpenAI Requests**, **Processed Prompt Tokens**, **Generated Completion Tokens**, supported latency metrics such as **Time to Response** and **Time to Last Byte**, and **Provisioned-managed Utilization V2**.
+1. Configure the aggregation, threshold, evaluation frequency, and lookback period. Use a static threshold unless the selected signal supports a dynamic threshold and has enough representative history.
+1. On **Actions**, optionally select or create an action group for notifications or automation.
+1. Enter the alert rule details, select **Review + create**, and then select **Create**.
+
+### Quota and API-derived data
+
+- View and change quota allocations in Microsoft Foundry under **Manage** > **Quota**, or use the applicable management API.
+- Quota allocation and daily cost don't automatically become Azure Monitor metric signals. If an Azure Monitor alert is required for API-derived data, build a collection process and publish a custom metric against an Azure resource, or send the data to Azure Monitor Logs, before creating an alert rule. See [Send metrics to Azure Monitor by using a REST API](/azure/azure-monitor/metrics/metrics-store-custom-rest-api).
+
+> [!IMPORTANT]
+> Use dynamic thresholds only for a supported signal with representative history and when significant-deviation detection is appropriate. A dynamic-threshold rule doesn't alert until it has at least three days and 30 samples, and it needs at least three weeks of history to learn weekly seasonality. Dynamic thresholds can miss slow drift, aren't available for every metric, and can't be used in alert rules that monitor multiple conditions. Use a static threshold when detection must start immediately or must detect gradual change.
 
 ### Use cases
 
-- Alert when daily spend exceeds a threshold.
-- Detect anomalies in usage patterns.
-- Notify finance teams of budget breaches.
+- Notify finance or workload owners about actual or forecasted budget thresholds: Cost Management budget alert.
+- Detect an unexpected daily cost pattern: Cost Management anomaly alert.
+- Detect request, token, supported latency, availability, or provisioned-utilization conditions: Azure Monitor platform-metric alert.
+- Inspect or change quota allocation: Microsoft Foundry **Manage** > **Quota** or the applicable management API.

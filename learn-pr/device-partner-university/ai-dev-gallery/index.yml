@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dpu.ai-dev-gallery
+title: 'Get started using Foundry on Windows: AI Dev Gallery (Preview)'
+metadata:
+  title: 'Get Started Using Foundry On Windows: AI Dev Gallery (preview)'
+  description: In this module, you'll use AI Dev Gallery (Preview) to explore, run, and demonstrate local AI experiences on a Copilot+ PC. You'll learn how Foundry on Windows enables on-device AI through samples, models, and AI APIs that help reduce reliance on cloud-based processing.
+  ms.date: 09/01/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+ Learn how to install and use AI Dev Gallery (Preview) to explore local AI models, APIs, and sample experiences on Copilot+ PCs. Discover how Foundry on Windows enables responsive, on-device AI workloads powered by the NPU.
+abstract: |
+ By the end of this module, you'll be able to:
+ - Download and access AI Dev Gallery (Preview) from the Microsoft Store
+ - Learn about AI with local models and APIs for Windows apps
+ - Discover scenarios and models such as Phi, Mistral, and others
+ - Explain and showcase how the models and scenarios in AI Dev Gallery (Preview) can be used by partners and customers to understand AI workloads on-device
+prerequisites: |
+  - None
+iconUrl: /training/achievements/ai-dev-gallery.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.ai-dev-gallery.introduction
+  - learn.dpu.ai-dev-gallery.definition
+  - learn.dpu.ai-dev-gallery.scenarios
+  - learn.dpu.ai-dev-gallery.knowledge-check
+  - learn.dpu.ai-dev-gallery.summary
+badge:
+  uid: learn.dpu.ai-dev-gallery.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-durable-functions.exercise-build-durable-document-processing-workflow
+title: Exercise - Build a durable document-processing workflow
+metadata:
+  title: Exercise - Build a Durable Document-Processing Workflow
+  description: Exercise - Build a durable document-processing workflow
+  ms.date: 09/02/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-build-durable-document-processing-workflow.md)]

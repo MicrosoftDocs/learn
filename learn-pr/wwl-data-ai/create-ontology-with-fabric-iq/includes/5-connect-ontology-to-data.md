@@ -16,11 +16,11 @@ Both binding types establish an entity type key—the property or properties uni
 
 ## Configure static data bindings
 
-Static data bindings connect entity properties to lakehouse tables. Selecting an entity type opens the configuration pane where the Bindings tab manages data connections.
+Static data bindings connect entity properties to lakehouse tables. To start a binding, you can use either of two entry points: on the Home configuration canvas, select **...** next to an entity type name and choose **Bind data**; or open the entity type's **Configure** page and select **Manage property bindings > Add binding and properties**.
 
-:::image type="content" source="../media/binding-configuration.png" alt-text="Screenshot showing the Entity type configuration pane open on the Bindings tab, showing the Add data to entity type button." lightbox="../media/binding-configuration.png":::
+:::image type="content" source="../media/binding-configuration.png" alt-text="Screenshot showing the Entity type configuration pane open on the Bindings tab, showing the Add binding and properties button." lightbox="../media/binding-configuration.png":::
 
-Selecting **Add data to entity type** opens the OneLake catalog, where you choose your data source. For static bindings, select the lakehouse. 
+On the binding page, select **Add data binding** and choose the type of OneLake data source that contains the data for the entity. For static bindings, select the lakehouse. 
 
 :::image type="content" source="../media/onelake-catalog-picker.png" alt-text="Screenshot showing the OneLake catalog picker showing LamnaHealthcareLH (Lakehouse) and LamnaHealthcareEH (Eventhouse) as available data sources." lightbox="../media/onelake-catalog-picker.png":::
 
@@ -32,17 +32,16 @@ After you select the table, the interface maps source columns to entity properti
 
 :::image type="content" source="../media/binding-completed.png" alt-text="Screenshot showing the property binding screen showing source columns fully mapped to entity property names with data types displayed." lightbox="../media/binding-completed.png":::
 
-After saving, you configure the entity type key to identify which property uniquely identifies each instance, as shown below.
-
-:::image type="content" source="../media/entity-key-configuration.png" alt-text="Screenshot showing the key configuration screen showing property selection for the entity type key." lightbox="../media/entity-key-configuration.png":::
-
 Each entity type needing static data—hospitals, departments, rooms, patients—follows this binding process to connect structure to lakehouse tables.
+
+> [!NOTE]
+> Each entity type supports exactly one static data binding. You can't combine static data from multiple lakehouse sources for a single entity type. Multiple time series bindings from different eventhouse or lakehouse sources are supported.
 
 ## Add time series data bindings
 
 Some entities need both static data (information that rarely changes) and time-series data (measurements arriving continuously). For example, vital sign monitoring equipment has static attributes like which patient it's monitoring and what type of equipment it is, plus streaming measurements like current heart rate and oxygen levels updating every few seconds.
 
-This requires binding the entity to two different tables: static data from a lakehouse table and time-series measurements from an eventhouse table.
+Time series data can come from an eventhouse table or a lakehouse table formatted as columnar timestamped observations. In the Lamna Healthcare scenario, the VitalSignsReadings data streams into an eventhouse, so the time series binding points there. Either way, the binding requires a timestamp column to order the measurements over time.
 
 ### Understand the dual-binding pattern
 
@@ -71,7 +70,7 @@ You need both bindings because the time-series data intentionally doesn't duplic
 
 ### Configure a time series binding
 
-To configure a time series data binding, follow the same steps as a static binding—select **Add data to entity type**, choose the *eventhouse* (LamnaHealthcareEH) from the OneLake catalog, then select the VitalSignsReadings table. The difference appears on the **Configure data binding** screen.
+To configure a time series data binding, use the same **Manage property bindings > Add binding and properties** entry point—select the *eventhouse* (LamnaHealthcareEH) from the OneLake catalog, then select the VitalSignsReadings table. The difference appears on the **Configure data binding** screen.
 
 Select **Timeseries** as the binding type, then choose the timestamp column—in this case, **Timestamp**. The interface then separates properties into two groups: **Static** (for the linking key, EquipmentId) and **Timeseries** (for the measured values, such as HeartRate and OxygenSaturation), as shown below.
 

@@ -4,9 +4,9 @@ title: Preview the ontology
 metadata:
   title: Preview the ontology
   description: "Verify ontology by viewing entity instances, relationship graphs, and property charts"
-  ms.date: 02/27/2026
-  author: theresa-i
-  ms.author: theresai
+  ms.date: 09/08/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

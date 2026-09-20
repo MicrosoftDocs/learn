@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-durable-functions.apply-fan-out-fan-in
+title: Process independent work with fan-out/fan-in
+metadata:
+  title: Process Independent Work with Fan-Out/Fan-In
+  description: Process independent work with fan-out/fan-in
+  ms.date: 09/02/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-apply-fan-out-fan-in.md)]

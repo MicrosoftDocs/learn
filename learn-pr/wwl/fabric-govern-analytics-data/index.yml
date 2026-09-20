@@ -2,22 +2,21 @@
 uid: learn.wwl.fabric-govern-analytics-data
 metadata:
   title: Govern Analytics Data in Microsoft Fabric
-  description: "Implement Fabric-native governance practices including data classification, sensitivity labels, endorsement, and documentation to ensure data assets are trustworthy and governed for both human and AI consumption."
-  ms.date: 04/06/2026
+  description: "Apply governance controls in Microsoft Fabric to classify sensitive data, signal trust with endorsement, and monitor governance posture using the OneLake catalog."
+  ms.date: 08/24/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: module
   ms.service: fabric
   ai-usage: ai-generated
 title: Govern analytics data in Microsoft Fabric
-summary: Implement Fabric-native governance practices including data classification, sensitivity labels, endorsement, and documentation. Ensure data assets are trustworthy and governed for both human and AI consumption.
+summary: Apply governance controls in Microsoft Fabric to classify sensitive data, signal trust with endorsement, and monitor governance posture using the OneLake catalog.
 abstract: |
   By the end of this module, you're able to:
-  - Apply data classification and sensitivity labels to Fabric items.
-  - Use endorsement (promoted, certified, and master data) as a governance mechanism.
-  - Implement documentation practices for data discoverability.
-  - Describe how governance controls affect AI agent data consumption.
-  - Use OneLake catalog features for data estate management.
+  - Apply sensitivity labels to classify and protect Fabric items.
+  - Use endorsement, tags, and documentation to signal trust and improve discoverability.
+  - Monitor governance posture using the OneLake catalog's Govern section.
+  - Understand how the Secure section provides centralized access management.
 prerequisites: |
   - Experience working with Microsoft Fabric workspaces.
   - Familiarity with security concepts in Microsoft Fabric.
@@ -26,6 +25,7 @@ levels:
 - intermediate
 roles:
 - data-engineer
+- data-analyst
 products:
 - fabric
 subjects:

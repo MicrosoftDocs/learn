@@ -2,7 +2,7 @@ You should prioritize your use cases to focus on ones that have the most
 business impact and are the most cost efficient. Consider the following
 factors:
 
-[![A diagram showing icons that represent business needs and AI use cases.](../media/identify-business-needs.png)](../media/identify-business-needs-big.png#lightbox)
+[![Diagram showing icons that represent business needs and AI use cases.](../media/identify-business-needs.png)](../media/identify-business-needs-big.png#lightbox)
 
 ## Reduce overhead
 
@@ -24,34 +24,39 @@ pushed to the EHR system.
 
 You should identify use cases that optimize resource efficiency.
 
-You should focus on use cases with a precisely designed scope to avoid
-over-engineering, potentially using multiple, modular, agents rather
-than one complex, monolithic, agent. You should consider use cases that
-use lightweight models and task-specific models, where appropriate,
-rather than always turning to large general-purpose models, to increase
-resource efficiency.
+Define a precise scope to avoid over-engineering. For low-complexity or
+cost-sensitive use cases, start with a single-agent prototype and measure
+whether it meets the requirements. A multi-agent architecture can separate
+responsibilities, but it also adds coordination, token usage, latency, state
+management, monitoring, security considerations, and failure points. Use
+multiple agents only when requirements such as security or compliance
+boundaries, organizational ownership, independent scaling, or expected growth
+justify this overhead. Select lightweight or task-specific models when they
+meet the required quality.
 
-For example, you could deploy multiple, modular factory line
-optimization agents. In manufacturing, resource efficiency is critical,
-not just in energy or materials, but in compute and operational
-overhead. Instead of deploying a single, monolithic AI agent to manage
-the entire production line, companies are increasingly using modular,
-task-specific agents that each handle a distinct function.
+For example, start factory line optimization with a single agent for a
+well-defined workflow. Introduce separate agents only when distinct production
+functions require independent permissions, ownership, or scaling.
 
 ## Improve scalability
 
 Select use cases that enable growth without proportional increases in
 cost or complexity.
 
-You should focus on use cases that can automatically scale on demand and
-that continually learn and adapt, without the need for retraining.
+Evaluate operational capacity and behavioral improvement separately.
+Infrastructure can be configured to scale capacity as demand changes.
+However, deployed agents don't automatically learn from feedback or real-time
+data. Improving behavior requires a controlled process to monitor feedback,
+update prompts, tools, retrieval data, rules, memory, or models, evaluate the
+changes, create a new version, and republish it.
 
-For example, insurance claims processing agents could handle the entire
-claims workflow, from First Notice of Loss (FNOL) to verification and
-settlement recommendations, without requiring constant retraining. The
-agents could adapt through feedback loops and real-time data ingestion
-to automatically scale during high-claim periods, for example, after a
-natural disaster.
+For example, an insurance claims processing agent could use
+[autoscaling](/azure/machine-learning/how-to-autoscale-endpoints) to handle
+increased demand after a natural disaster. Feedback from claim reviews could
+inform controlled improvements, which must be evaluated and versioned before
+deployment. For more information, see the [agent development
+lifecycle](/azure/foundry/agents/concepts/development-lifecycle).
+
 
 ## Drive productivity gains
 
@@ -61,14 +66,15 @@ employee output.
 You should consider use cases that automate repetitive tasks and agents
 that apply intelligent decision-making to improve efficiency.
 
-For example, AI agents for automated expense management could streamline
-the entire expense reporting workflow, from receipt capture to policy
-compliance checks and reimbursement, without human bottlenecks. The
-agents would combine automation with intelligent decision-making to
-eliminate repetitive tasks like manual data entry and receipt matching,
-apply policy logic to flag anomalies or noncompliant expenses, learn
-from corrections to improve future accuracy without retraining, and
-integrate with ERP systems.
+For example, AI agents for automated expense management could streamline the
+expense reporting workflow, from receipt capture to policy compliance checks
+and reimbursement. The agents could automate data entry and receipt matching,
+apply policy rules to flag anomalies or noncompliant expenses, and integrate
+with ERP systems. User corrections can be captured as feedback for a monitored
+improvement process. Any resulting changes to prompts, rules, retrieval
+sources, memory, tools, or models should be evaluated, versioned, and deployed
+through the [agent development
+lifecycle](/azure/foundry/agents/concepts/development-lifecycle).
 
 ## Enhance customer satisfaction
 
@@ -102,16 +108,30 @@ installation guides, VPN setup, and printer troubleshooting.
 
 This is cost effective because it has:
 
-- **Low training cost** Use pretrained models fine-tuned on internal
-  documentation.
+- **Maintainable knowledge integration** Ground a pretrained model in approved
+  internal documentation by using [retrieval-augmented generation
+  (RAG)](/azure/foundry/concepts/retrieval-augmented-generation). Update the
+  retrieval index as documentation changes. Consider fine-tuning only when
+  evaluation demonstrates a need to change model behavior or task
+  performance.
 
 - **24/7 availability** There's no need for shift work or overtime pay.
 
-- **Quick ROI** Deflects 50% of tier1 support tickets, reducing wait
-  times and allowing support staff to deal with more complex issues.
+- **Measurable support impact** Establish a baseline and define a target for
+  the percentage of Tier 1 support tickets that the agent should resolve
+  without human assistance. Measure resolution, escalation, abandonment, and
+  [deflection
+  rates](/microsoft-copilot-studio/guidance/deflection-overview) against the
+  target.
 
 - **Scalability** The chatbot can be adapted to new products, tasks,
   languages, or markets.
+
+
+> [!NOTE]
+> A value such as 50% ticket deflection is a hypothetical target, not a
+> standard result. The achievable rate depends on the organization's request
+> mix, knowledge quality, agent capabilities, adoption, and escalation design.
 
 **Predictive AI system to manage stock levels**
 

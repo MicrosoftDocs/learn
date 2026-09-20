@@ -2,14 +2,15 @@
 uid: learn.wwl.manage-monitor-event-logs
 metadata:
   title: Manage and monitor Windows Server event logs
-  description: "Learn how Event Viewer provides a convenient and accessible location for you to observe events that occur. Access event information quickly and conveniently. Learn how to interpret the data in the event log."
-  ms.date: 01/23/2026
+  description: "Learn how to manage and monitor Windows Server event logs using Event Viewer, Windows Admin Center, Server Manager, custom views, and event subscriptions for centralized log collection."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Manage and monitor Windows Server event logs
-summary: Learn how Event Viewer provides a convenient and accessible location for you to observe events that occur. Access event information quickly and conveniently. Learn how to interpret the data in the event log.
+summary: |
+  This module covers how to manage and monitor event logs in Windows Server. You learn how to use Event Viewer to review application, security, system, and role-specific logs, review events across multiple servers using Windows Admin Center and Server Manager, create custom views that filter events by time, level, event ID, user, and computer across multiple logs, and configure event subscriptions using collector-initiated and source-initiated modes with WinRM for centralized event collection.
 abstract: |
   After completing this module, you'll be able to:
   *   Describe event logs

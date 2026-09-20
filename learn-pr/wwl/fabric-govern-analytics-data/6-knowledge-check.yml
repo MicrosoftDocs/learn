@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge Check
   description: "Knowledge check for governing analytics data in Microsoft Fabric."
-  ms.date: 04/06/2026
+  ms.date: 09/02/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
@@ -36,17 +36,17 @@ quiz:
     - content: "Master data"
       isCorrect: true
       explanation: "Master data designates that an item contains core organizational reference data and serves as the single source of truth for that data category."
-  - content: "A governance lead reviews the OneLake catalog and notices that many items lack descriptions and sensitivity labels. Which tab in the OneLake catalog provides recommended actions to improve governance posture?"
+  - content: "A governance lead reviews the OneLake catalog and notices that many items lack descriptions and sensitivity labels. Which section in the OneLake catalog provides recommended actions to improve governance posture?"
     choices:
-    - content: "Explore tab"
+    - content: "Explore"
       isCorrect: false
-      explanation: "The Explore tab helps users browse and filter items across the environment, but it doesn't surface governance improvement recommendations."
-    - content: "Govern tab"
+      explanation: "The Explore section helps users browse and filter items across the environment, but it doesn't surface governance improvement recommendations."
+    - content: "Govern"
       isCorrect: true
-      explanation: "The Govern tab provides insights about the governance posture of data you own and presents recommended actions to improve governance status, such as adding descriptions or applying labels."
-    - content: "Secure tab"
+      explanation: "The Govern section provides insights about the governance posture of data you own and presents recommended actions to improve governance status, such as adding descriptions or applying labels."
+    - content: "Secure"
       isCorrect: false
-      explanation: "The Secure tab centralizes security management for workspace roles and OneLake security roles, but it doesn't provide governance posture recommendations."
+      explanation: "The Secure section centralizes security management for workspace roles and OneLake security roles, but it doesn't provide governance posture recommendations."
   - content: "An organization deploys a data agent that answers executive questions about quarterly revenue. The agent has access to both a certified semantic model and an unpromoted experimental dataset. How does endorsement affect the agent's behavior?"
     choices:
     - content: "The agent ignores endorsement metadata and queries both sources equally."

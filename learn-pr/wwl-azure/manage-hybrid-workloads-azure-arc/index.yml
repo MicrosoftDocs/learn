@@ -2,14 +2,15 @@
 uid: learn.wwl.manage-hybrid-workloads-with-azure-arc
 metadata:
   title: Manage hybrid workloads with Azure Arc
-  description: "Manage hybrid workloads with Azure Arc"
-  ms.date: 01/23/2026
+  description: "Learn how to use Azure Arc to manage hybrid workloads by onboarding on-premises Windows Server and Linux machines, deploying extensions, applying Azure Policy guest configuration, and restricting access with RBAC."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: azure-arc
 title: Manage hybrid workloads with Azure Arc
-summary: You learn to describe Azure Arc, implement Azure Arc with on-premises server instances, deploy Azure policies with Azure Arc, and use role-based access control (RBAC) to restrict access to Log Analytics data.
+summary: |
+  This module covers how to manage hybrid workloads using Azure Arc. You learn how to describe Azure Arc capabilities for managing Windows Server, Linux, Kubernetes clusters, and SQL Server across hybrid and multicloud environments, onboard on-premises server instances to Azure Arc using the Azure Connected Machine agent, connect hybrid machines to Azure from the Azure portal using interactive scripts or at-scale service principal deployments, manage extensions and monitor Arc-enabled servers through Azure Resource Manager, and restrict access to Arc-enabled resources using role-based access control (RBAC).
 abstract: |
   After completing this module, you'll be able to:
   - Describe Azure Arc.

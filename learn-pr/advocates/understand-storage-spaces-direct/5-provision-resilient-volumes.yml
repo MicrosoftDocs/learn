@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-storage-spaces-direct.provision-resilient-volumes
+title: Provision resilient volumes
+metadata:
+  title: Provision Resilient Volumes
+  description: Create mirror, parity, tiered, thin-provisioned, and nested-resiliency volumes while preserving repair capacity in Storage Spaces Direct.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-provision-resilient-volumes.md)]

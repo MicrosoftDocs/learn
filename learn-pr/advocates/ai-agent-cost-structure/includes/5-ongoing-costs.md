@@ -81,7 +81,7 @@ Performance monitoring costs for AI agents are closely tied to the token-based a
 | **Application Insights**      | Performance Metrics & Tracing  | Tracks performance metrics, billed by data volume                           |
 | **Cost Management Tools**     | Free Tier Available            | Microsoft Cost Management helps forecast and monitor usage                      |
 | **Custom Dashboards**         | Storage + Query Costs          | Using Log Analytics or Power BI incurs storage and query execution fees     |
-| **Context Window Monitoring** | Token Limit Awareness          | GPT-4.1 supports up to 32K tokens; exceeding limits may cause failures       |
+| **Context Window Monitoring** | Token Limit Awareness          | Track the context-window and maximum-output-token limits for the deployed model version and deployment type; requests that exceed applicable limits can fail.       |
 | **Prompt Efficiency Audits**  | Token Optimization             | Reviewing prompt design to reduce token usage                               |
 | **Retention Policies**        | Storage Tier Costs             | Long-term log retention incurs additional storage fees                      |
 
@@ -91,7 +91,7 @@ Performance monitoring costs for AI agents are closely tied to the token-based a
 - **Track token usage efficiently.** Since token consumption directly impacts cost, monitor input/output token volumes per request to identify inefficiencies and optimize prompt design.
 - **Use free and built-in tools first.** Microsoft Cost Management and basic logging features offer free or low-cost ways to track usage trends before investing in advanced telemetry solutions.
 - **Set retention policies wisely.** Long-term storage of logs and metrics can be expensive. Define retention durations based on compliance and operational needs to avoid unnecessary storage fees.
-- **Monitor context window utilization.** Keep track of how close requests come to the model's token limit (for example, 32K for GPT-4.1) to prevent failures and reduce retry costs.
+- **Monitor context window utilization.** Track input, generated output, and any other tokens that share the deployed model's available context budget. Verify the limits for the exact model version and deployment type to prevent failures and reduce retry costs.
 - **Audit prompt efficiency regularly.** Inefficient prompts lead to higher token usage and slower response times. Periodic audits can help reduce both performance and financial overhead.
 - **Leverage custom dashboards judiciously.** While tools like Power BI and log analytics offer rich visualization, they can incur query and compute costs. Use them for high-value metrics only.
 - **Automate alerts for cost spikes.** Set up automated alerts for unusual token usage or latency spikes to catch issues early and avoid runaway costs.

@@ -2,15 +2,16 @@
 uid: learn.wwl.manage-advanced-features-of-ad-ds
 metadata:
   title: Manage advanced features of AD DS
-  description: "Manage advanced features of AD DS"
-  ms.date: 01/23/2026
+  description: "Learn how to create trust relationships between AD DS forests and domains, implement Enhanced Security Administrative Environment (ESAE) forests, monitor and troubleshoot AD DS replication, and create custom AD DS partitions."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.subservice: ad-ds
   ms.service: windows-server
 title: Manage advanced features of AD DS
-summary: Learn about advanced AD DS administration tasks, including creating trust relationships, implementing Enhanced Security Administrative Environment (ESAE) forests, monitoring and troubleshooting AD DS replication, and creating custom AD DS partitions.
+summary: |
+  This module covers advanced Active Directory Domain Services (AD DS) administration tasks. You learn how to create and manage trust relationships including external, forest, and realm trusts, implement Enhanced Security Administrative Environment (ESAE) forests to protect privileged accounts using the clean-source principle, monitor and troubleshoot AD DS replication using Performance Monitor, Repadmin.exe, and Dcdiag.exe, and create custom AD DS application partitions using NtdsUtil.exe.
 abstract: |
   After completing this module, you'll be able to:
   - Identify the purpose, types, and the process of creating trust relationships.

@@ -9,6 +9,13 @@ metadata:
   ms.topic: module
   ms.service: azure
   ai-usage: human-only
+  role: operations
+  level: 100
+  modality: module
+  product:
+    - azure
+    - azure-devops
+    - github
 title: Introduction to DevOps
 summary: This module explores the fundamental concepts organizations need to understand to start their DevOps transformation journey. Students learn to define DevOps as the union of people, process, and products for continuous value delivery. The content covers identifying transformation teams, establishing shared goals and timelines, understanding cycle time optimization, and implementing validated learning approaches. Key topics include Azure DevOps and GitHub platform introductions, source control fundamentals with Git, and practical strategies for organizational change management. The module emphasizes data-informed decision making, shortened cycle times, and continuous improvement practices that form the foundation of successful DevOps adoption.
 abstract: |

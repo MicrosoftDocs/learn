@@ -27,6 +27,5 @@ modules:
 - learn-wwl.implement-cicd-in-fabric
 - learn.wwl.monitor-fabric-items
 - learn-wwl.secure-data-access-in-fabric
-- learn.wwl.administer-fabric
 trophy:
   uid: learn.wwl.manage-microsoft-fabric-environment.trophy

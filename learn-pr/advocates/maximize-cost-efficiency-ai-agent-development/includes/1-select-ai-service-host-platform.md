@@ -25,7 +25,7 @@ domain-specific, tasks.
 - **Extensibility tools**. You can customize Copilot with declarative agents and connectors.
 - **Skills required**. General IT or business user.
 - **Data needs**. Mostly business data, often via Microsoft Graph.
-- **Cost factors**. Licensing, subscriptions, or compute units (For example: Copilot for Security).
+- **Cost factors**. Licensing, subscriptions, or compute units (For example: Microsoft Security Copilot).
 
 ## Platform as a Service (PaaS)
 
@@ -39,7 +39,7 @@ data orchestration.
   - **Microsoft Foundry Agent Service**. Create, deploy, and manage agents that use large language models and enterprise data to delivercontext-aware, task-oriented assistance.
   - **Microsoft Foundry Models**. Consume prebuilt models from model providers such as OpenAI, Mistral, and Cohere or fine-tune them
     within Microsoft Foundry.
-  - **Azure Machine Learning**. Train and deploy ML models with custom data.
+- **Azure Machine Learning**. Train and deploy ML models with custom data.
 - **Microsoft Fabric**. ML and data workflows in integrated environments.
 - **Microsoft Copilot Studio**. As well as being a SaaS solution, Copilot Studio is also a PaaS solution that allows you to build and
   customize agents.

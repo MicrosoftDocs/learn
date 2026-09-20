@@ -4,9 +4,9 @@ title: Build an ontology manually
 metadata:
   title: Build an Ontology Manually
   description: "Learn how to create entity types with properties and keys, and define relationship types between entities"
-  ms.date: 02/27/2026
-  author: theresa-i
-  ms.author: theresai
+  ms.date: 09/08/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

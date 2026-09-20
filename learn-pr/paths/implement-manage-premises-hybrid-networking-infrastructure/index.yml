@@ -3,13 +3,15 @@ uid: learn.wwl.implement-manage-premises-hybrid-networking-infrastructure
 metadata:
   title: Implement and Manage an On-Premises and Hybrid Networking Infrastructure
   description: Learn how to implement on-premises and hybrid name resolution with DNS and manage IP addressing with DHCP in hybrid scenarios.
-  ms.date: 07/07/2026
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: learning-path
 title: Implement and manage an on-premises and hybrid networking infrastructure
 summary: |
-  Learn how to implement on-premises and hybrid name resolution, including DNS integration with Active Directory, DNS zones, forwarding, policies, and DNSSEC, and manage IP addressing using DHCP in on-premises and hybrid scenarios.
+  This learning path covers how to implement and manage networking infrastructure in on-premises and hybrid environments. You learn how to deploy and configure Windows Server DNS, including zones, forwarding, conditional forwarders, DNS policies, and DNSSEC, and integrate DNS with Azure for hybrid name resolution. You also deploy and manage DHCP including scopes, options, and failover, and use IP Address Management (IPAM) to centrally manage your DNS and DHCP infrastructure.
+
+  This learning path helps you prepare for [Exam AZ-802: Administering Windows Server](/credentials/certifications/exams/az-802/).
 prerequisites: |
   - Experience administering Windows Server operating systems
   - Familiarity with core networking technologies including DNS and DHCP

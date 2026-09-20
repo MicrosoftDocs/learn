@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fabric-govern-analytics-data.govern-ai
-title: Govern data for AI consumption
+title: Monitor and manage governance
 metadata:
-  title: Govern Data for AI Consumption
-  description: "Learn how governance practices like sensitivity labels, endorsement, and documentation affect AI agent behavior and data consumption in Microsoft Fabric."
-  ms.date: 04/06/2026
+  title: Monitor and Manage Governance
+  description: "Use the OneLake catalog's Govern and Secure sections to assess governance posture, close gaps, and manage access roles."
+  ms.date: 09/02/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 3
 content: |
   [!include[](includes/4-govern-ai.md)]

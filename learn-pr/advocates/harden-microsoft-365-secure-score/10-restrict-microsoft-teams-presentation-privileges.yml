@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.harden-microsoft-365-secure-score.restrict-microsoft-teams-presentation-privileges
+title: Restrict Microsoft Teams presentation privileges
+metadata:
+  title: Restrict Microsoft Teams Presentation Privileges
+  description: Restrict default Microsoft Teams presenter privileges and validate organizer-controlled promotion.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/10-restrict-microsoft-teams-presentation-privileges.md)]

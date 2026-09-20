@@ -1,0 +1,114 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.harden-microsoft-365-secure-score.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Assess your understanding of Microsoft Secure Score tenant hardening, staged enforcement, identity protection, and recovery controls.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 10
+content: |
+quiz:
+  questions:
+  - content: What does Microsoft Secure Score measure?
+    choices:
+    - content: The statistical probability that the tenant will be breached
+      isCorrect: false
+      explanation: Incorrect. Secure Score measures implemented recommendations. It doesn't guarantee security or certify compliance.
+    - content: The percentage of recommended controls or tasks detected as complete
+      isCorrect: true
+      explanation: Correct. Secure Score measures implemented recommendations. It doesn't guarantee security or certify compliance.
+    - content: The tenant's formal regulatory compliance status
+      isCorrect: false
+      explanation: Incorrect. Secure Score measures implemented recommendations. It doesn't guarantee security or certify compliance.
+  - content: Why exclude emergency access accounts from baseline Conditional Access?
+    choices:
+    - content: Emergency accounts don't need strong security
+      isCorrect: false
+      explanation: Incorrect. The accounts preserve recovery. They still require strong authentication, restricted custody, monitoring, and periodic testing.
+    - content: Exclusion preserves a recovery path after policy misconfiguration
+      isCorrect: true
+      explanation: Correct. The accounts preserve recovery. They still require strong authentication, restricted custody, monitoring, and periodic testing.
+    - content: Exclusion prevents the accounts from receiving administrative roles
+      isCorrect: false
+      explanation: Incorrect. The accounts preserve recovery. They still require strong authentication, restricted custody, monitoring, and periodic testing.
+  - content: When should a tenant use security defaults?
+    choices:
+    - content: At the same time as an equivalent custom baseline
+      isCorrect: false
+      explanation: Incorrect. Security defaults suit tenants that need a managed baseline. Custom Conditional Access supports granular policy. Don't layer equivalent baseline models.
+    - content: When it needs separate risk, device, application, and role policies
+      isCorrect: false
+      explanation: Incorrect. Security defaults suit tenants that need a managed baseline. Custom Conditional Access supports granular policy. Don't layer equivalent baseline models.
+    - content: When it needs a Microsoft-managed baseline without custom Conditional Access
+      isCorrect: true
+      explanation: Correct. Security defaults suit tenants that need a managed baseline. Custom Conditional Access supports granular policy. Don't layer equivalent baseline models.
+  - content: Why use separate sign-in risk and user risk policies?
+    choices:
+    - content: They represent different risk objects and remediation flows
+      isCorrect: true
+      explanation: Correct. Sign-in risk evaluates one authentication request. User risk evaluates likely identity compromise. Separate policies keep remediation predictable.
+    - content: Conditional Access permits only one risk condition per tenant
+      isCorrect: false
+      explanation: Incorrect. Sign-in risk evaluates one authentication request. User risk evaluates likely identity compromise. Separate policies keep remediation predictable.
+    - content: They require different Microsoft 365 tenants
+      isCorrect: false
+      explanation: Incorrect. Sign-in risk evaluates one authentication request. User risk evaluates likely identity compromise. Separate policies keep remediation predictable.
+  - content: What remains after user consent is disabled?
+    choices:
+    - content: Existing delegated grants
+      isCorrect: true
+      explanation: Correct. The setting blocks future user consent. Existing grants and administrator consent require separate review.
+    - content: No service principals
+      isCorrect: false
+      explanation: Incorrect. The setting blocks future user consent. Existing grants and administrator consent require separate review.
+    - content: No administrator-consented permissions
+      isCorrect: false
+      explanation: Incorrect. The setting blocks future user consent. Existing grants and administrator consent require separate review.
+  - content: Which participant is anonymous in Microsoft Teams?
+    choices:
+    - content: A guest authenticated through a tenant guest account
+      isCorrect: false
+      explanation: Incorrect. Guests and external access users are authenticated identities. Anonymous participants aren't verified through those identity paths.
+    - content: A participant without a verifiable signed-in identity
+      isCorrect: true
+      explanation: Correct. Guests and external access users are authenticated identities. Anonymous participants aren't verified through those identity paths.
+    - content: A user authenticated by a permitted external organization
+      isCorrect: false
+      explanation: Incorrect. Guests and external access users are authenticated identities. Anonymous participants aren't verified through those identity paths.
+  - content: When should a broad role assignment be removed?
+    choices:
+    - content: Only after the Secure Score recommendation updates
+      isCorrect: false
+      explanation: Incorrect. Test the replacement against the real task. Then remove the broad assignment with a rollback path.
+    - content: Immediately after identifying a narrower role name
+      isCorrect: false
+      explanation: Incorrect. Test the replacement against the real task. Then remove the broad assignment with a rollback path.
+    - content: After assigning and testing a least-privileged replacement
+      isCorrect: true
+      explanation: Correct. Test the replacement against the real task. Then remove the broad assignment with a rollback path.
+  - content: Why doesn't `AllowedToUseSspr` satisfy the all-user recommendation?
+    choices:
+    - content: It disables authentication method reporting
+      isCorrect: false
+      explanation: Incorrect. Use the Microsoft Entra admin center to set the non-administrator password reset scope to **All**.
+    - content: It configures Microsoft Teams passwords
+      isCorrect: false
+      explanation: Incorrect. Use the Microsoft Entra admin center to set the non-administrator password reset scope to **All**.
+    - content: It controls password reset for tenant administrators only
+      isCorrect: true
+      explanation: Correct. Use the Microsoft Entra admin center to set the non-administrator password reset scope to **All**.
+  - content: Why can Microsoft Teams points remain unchanged after correct configuration?
+    choices:
+    - content: Recommendation detection can refresh monthly
+      isCorrect: true
+      explanation: Correct. Validate effective policy immediately. Allow for the documented product refresh before diagnosing a score mismatch.
+    - content: PowerShell changes are excluded from scoring
+      isCorrect: false
+      explanation: Incorrect. Validate effective policy immediately. Allow for the documented product refresh before diagnosing a score mismatch.
+    - content: Microsoft Teams controls never contribute to Secure Score
+      isCorrect: false
+      explanation: Incorrect. Validate effective policy immediately. Allow for the documented product refresh before diagnosing a score mismatch.

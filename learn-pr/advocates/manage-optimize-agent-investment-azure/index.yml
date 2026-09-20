@@ -3,7 +3,7 @@ uid: learn.manage-optimize-agent-investment-azure
 metadata:
   title: Manage and Optimize AI Agent Investments on Azure
   description: Managing and optimizing AI agent investments on Azure is now more streamlined and powerful with the built-in observability capabilities in Microsoft Foundry. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale. These tools provide enterprise-grade observability, governance, and performance optimization capabilities essential for deploying intelligent, goal-driven agents at scale.
-  ms.date: 10/1/2025
+  ms.date: 09/01/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics

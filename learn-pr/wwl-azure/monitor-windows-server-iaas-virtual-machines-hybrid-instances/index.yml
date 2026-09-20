@@ -2,14 +2,15 @@
 uid: learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances
 metadata:
   title: Monitor Windows Server IaaS Virtual Machines and hybrid instances
-  description: "Monitor Windows Server IaaS Virtual Machines and hybrid instances"
-  ms.date: 08/16/2026
+  description: "Learn how to monitor Windows Server IaaS VMs and hybrid instances using Azure Monitor, Log Analytics workspaces, the Dependency Agent for service maps, and integration with Microsoft Operations Manager."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Monitor Windows Server IaaS Virtual Machines and hybrid instances
-summary: Learn to monitor Azure VMs and Azure Arc-enabled servers by using Azure Monitor Agent and data collection rules.
+summary: |
+  This module covers how to monitor Windows Server IaaS virtual machines and hybrid instances using Azure Monitor. You learn how to enable Azure Monitor for VMs with Log Analytics workspaces and the Dependency Agent for service maps, monitor VM performance, health, and dependencies through the Azure portal, configure Azure Monitor in hybrid scenarios to extend monitoring to on-premises servers using the Log Analytics agent, collect monitoring data from Windows computers in hybrid environments, and integrate Azure Monitor with Microsoft Operations Manager for organizations using existing System Center investments.
 abstract: |
   After completing this module, you'll be able to:
   - Enable Azure Monitor for VMs.

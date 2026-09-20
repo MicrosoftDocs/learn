@@ -2,14 +2,15 @@
 uid: learn.wwl.implement-windows-server-auditing-diagnostics
 metadata:
   title: Implement Windows Server auditing and diagnostics
-  description: "Learn to audit and diagnose your Windows Server environment for regulatory compliance, user activity, and troubleshooting. Implement security best practices through regular audits of your network environment to gain early warning of potential malicious activity."
-  ms.date: 01/23/2026
+  description: "Learn how to implement Windows Server auditing for regulatory compliance and security, including basic and advanced audit policies, User Access Logging (UAL), and Setup and Boot Event Collection."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Implement Windows Server auditing and diagnostics
-summary: Learn to audit and diagnose your Windows Server environment for regulatory compliance, user activity, and troubleshooting. Implement security best practices through regular audits of your network environment to gain early warning of potential malicious activity.
+summary: |
+  This module covers how to implement auditing and diagnostics in Windows Server for compliance and security. You learn how to configure the nine basic audit policy categories including account logon, object access, and privilege use, implement advanced auditing with granular policy settings for precise event tracking, use User Access Logging (UAL) to quantify unique client requests for installed server roles, and enable Setup and Boot Event Collection to monitor startup, driver loading, and system readiness events.
 abstract: |
   After completing this module, you'll be able to:
   *   Audit Windows Server events

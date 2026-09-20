@@ -31,28 +31,25 @@ Microsoft's Cloud Adoption Framework (CAF), provide an environment based
 on a reference architecture designed for scalability, modularity, and
 repeatable deployments.
 
-Azure Landing Zones help reduce costs and optimize performance by
-providing a structured framework that combines governance, automation,
-and standardized deployment practices. Built-in tools like Azure Policy
-and Role-Based Access Control (RBAC) enforce cost-saving rules, prevent
-resource sprawl, and ensure workloads are right-sized for actual usage.
-Automation and Infrastructure-as-Code (IaC) can reduce manual effort and
-errors, supporting consistent, cost-efficient deployments across
-environments.
+Azure landing zones support cost-efficient operations through consistent
+governance, automation, and standardized deployment practices. Azure
+Policy evaluates resources against organizational rules and can audit,
+deny, or remediate noncompliant configurations. Azure role-based access
+control (RBAC) authorizes who can perform actions at a given scope; it
+doesn't enforce resource configuration, right-size workloads, or cap
+spending.
 
-Additionally, Azure Landing Zones can offer insights into resource usage
-and spending through tools like Azure Monitor and Cost Management. These
-tools enable architects to identify inefficiencies, shut down unused
-resources, and optimize workload placement across regions. By supporting
-scalable and repeatable architectures, Azure Landing Zones allow
-organizations to grow their cloud footprint in a controlled,
-budget-conscious manner.
+Use Azure Advisor for right-sizing and cost recommendations, and use
+Microsoft Cost Management for cost analysis, budgets, and alerts. Combine
+these services with Azure Monitor, automation, and infrastructure as code
+(IaC) to identify inefficiencies, reduce manual errors, and deploy
+repeatable environments.
 
 The following diagram shows the Azure landing zone conceptual
 architecture. Use this opinionated target architecture as a starting
 point, which you can tailor to meeting your requirements:
 
-[![A diagram showing an Azure Landing Zone architecture.](../media/azure-landing-zone-architecture-diagram-hub-spoke.png)](../media/azure-landing-zone-architecture-diagram-hub-spoke-big.png#lightbox)
+[![Diagram that shows the Azure landing zone conceptual architecture.](../media/azure-landing-zone-architecture-diagram-hub-spoke.png)](../media/azure-landing-zone-architecture-diagram-hub-spoke-big.png#lightbox)
 
 An Azure landing zone implements eight design areas, shown in the diagram:
 
@@ -86,9 +83,12 @@ An Azure landing zone implements eight design areas, shown in the diagram:
 - **Security:** Recommendations in this design area implement
   encryption, identity protection, threat detection, vulnerability
   management, and security monitoring to protect resources and data. For
-  example, you should consider using Entra Connect cloud synchronization
-  to provide single sign-on (SSO) for your Active Directory users. In
-  the diagram, this area corresponds to the label **F**.
+  hybrid identity, choose Microsoft Entra Connect Sync or Microsoft
+  Entra Cloud Sync for identity synchronization, and select the
+  authentication method separately, such as password hash
+  synchronization, pass-through authentication, or federation. Configure
+  single sign-on according to the selected authentication design. In the
+  diagram, this area corresponds to the label **F**.
 
 - **Management:** Recommendations in this design area create a
   management baseline to provide visibility, operations compliance, and
@@ -103,10 +103,10 @@ An Azure landing zone implements eight design areas, shown in the diagram:
   and **D**.
 
 > [!NOTE]
-> > The Governance design area is most closely related to cost
-> > management and efficiency in Azure Landing Zones. This design area is
-> > where you can most effectively reduce unnecessary expenditure because
-> > you can use governance tools like policy definition and enforcement.
+> The Governance design area is most closely related to cost management
+> and efficiency in Azure Landing Zones. This design area is where you can
+> most effectively reduce unnecessary expenditure because you can use
+> governance tools like policy definition and enforcement.
 
 - **Platform automation and DevOps:** Recommendations in this design
   area emphasize automating infrastructure deployments, continuous
@@ -114,46 +114,55 @@ An Azure landing zone implements eight design areas, shown in the diagram:
   Infrastructure as Code (IaC). For example, you should consider a rollback strategy to mitigate the impact of erroneously deployed bugs. In
   the diagram, this area corresponds to the label **I**.
 
-The conceptual architecture organizes subscriptions (show as yellow
-boxes in the diagram above) by their management group. There are two
-types of landing zone shown:
+The conceptual architecture organizes subscriptions under a
+management-group hierarchy and separates the centralized platform
+foundation from workload-owned environments:
 
-- **Platform landing zone**: A subscription that provides shared
-  services to multiple applications. A platform landing zone ensures the
-  cloud infrastructure is secure, compliant, and scalable.
+- **Platform landing zone:** The centralized foundation for governance,
+  security, subscription vending, and shared capabilities such as
+  connectivity, identity, and management. Most organizations have one
+  platform landing zone per Microsoft Entra tenant. It includes a
+  management-group hierarchy and, where required, multiple
+  function-specific platform subscriptions.
 
-- **Application landing zone**: A subscription for hosting an
-  application. An application landing zone optimizes infrastructure for
-  the specific needs of an individual application or service.
+- **Application landing zone:** The environment boundary in which a
+  workload team deploys and operates a workload. Each workload has one
+  application landing zone containing its development, test, production,
+  and other environments. Each environment can use one or more
+  subscriptions according to ownership, isolation, quota, and scale
+  requirements.
 
-The subscriptions under the "Platform" management group represent the
-platform landing zones. The subscriptions under the "Landing zone"
-management group represent the application landing zones. A single Azure
-landing zone includes both platform landing zones and application
-landing zones.
+In the diagram, subscriptions under the **Platform** management group
+provide centralized platform capabilities. Subscriptions under the
+**Landing zones** management group host workload environments and inherit
+the applicable governance and security guardrails.
 
-Decommissioned landing zones contain applications that are no longer
-used but you may need, for example, to provide support for customers.
-Sandboxed landing zones are isolated environments in which you can test
-and experiment with code and components without risking any impact on
-production environments.
+The **Decommissioned** management group is a temporary holding location
+for canceled landing-zone subscriptions before they're deleted,
+typically after 30-60 days. The **Sandbox** management group contains
+isolated subscriptions for testing and exploration with guardrails
+appropriate to nonproduction use.
+
+> [!NOTE]
+> If legal, regulatory, audit, or customer-support requirements require
+> retention, preserve the required data and records through a separate
+> retention process before deleting the subscription. Don't use the
+> Decommissioned management group as an archive.
 
 ## Deploying AI workloads in Azure landing zones
 
-If you're using AI workloads in an Azure landing zone architecture, you
-can choose from two approaches:
+When you deploy AI workloads in an Azure landing zone architecture, use
+workload-aligned placement.
 
-- **Deploy AI workloads into existing application landing zones:** The
-  landing zone design areas provide sufficient guidance to govern AI
-  workloads well, just as they do for non-AI workloads. Therefore, you
-  can deploy AI workloads into the existing application landing zone for
-  the application they service. This approach keeps the AI workloads
-  organized with the applications that use them.
+Deploy AI resources in the application landing zone for the workload
+they support. This placement keeps the models, data, application
+components, ownership, lifecycle, and inherited governance controls
+within one workload boundary.
 
-- **Deploy AI workloads into a dedicated application landing zone:** Alternatively, you can choose to place all your AI workloads
-  in a dedicated application landing zone. This approach applies
-  policies and recommendations to all AI workloads consistently
-  regardless of the application that use them.
+Create a separate application landing zone only when the AI solution is
+itself a distinct workload with a common owner, lifecycle, data boundary,
+and governance requirements. Don't consolidate unrelated AI resources
+into one landing zone solely because they use AI.
 
 Azure Landing Zones drive cost efficiency by combining technical best
 practices with governance, automation, and monitoring. They help
@@ -165,30 +174,38 @@ constraints.
 
 Microsoft's baseline Microsoft Foundry reference architecture is a set
 of recommendations for building AI-enabled enterprise chat applications.
-Typically, these chat apps have four elements:
+Typically, these chat applications have four elements:
 
-- **A chat user interface (UI):** This component interacts with the user
-  through text or speech. For example, this UI may be implemented with
-  the Azure OpenAI web app.
+- **A chat user interface (UI):** A workload-owned web or mobile
+  application through which users interact by text or speech. In the
+  baseline architecture, the web application is hosted on Azure App
+  Service.
 
-- **Data repositories:** These stores of information contain data on the
-  subject or domain the chat app targets. For example, they may be Azure
-  Cosmos DB databases or Azure Storage subscriptions.
+- **Data repositories:** Workload knowledge is retrieved through configured
+  agent tools; this baseline uses Azure AI Search. The standard Agent Service
+  setup also requires dedicated customer-owned Azure Cosmos DB, Azure Storage,
+  and Azure AI Search resources for agent state and conversations, files, and
+  service-managed search indexes. Foundry Agent Service manages these required
+  resources exclusively, so other workload components shouldn't use them.
 
-- **Language models:** These components reason with data from the
-  repositories to build conversational and relevant responses. For
-  example, you may use Microsoft Foundry Models.
+- **Language models:** This baseline uses an Azure OpenAI model deployed
+  through Microsoft Foundry to reason over retrieved context and generate
+  relevant responses. Before selecting another model from the Foundry model
+  catalog, verify that Foundry Agent Service supports the model in the target
+  region and that the model is compatible with every required tool.
 
-- **An orchestrator or agent:** This component governs interactions
-  between the previous three components and the user. For example, you
-  can use an Microsoft Foundry Agent Service.
+- **An orchestrator or agent:** Application logic that coordinates user
+  requests, retrieval, model calls, and tools. Microsoft Foundry Agent
+  Service is one managed option for implementing agents.
 
 The Microsoft Foundry chat reference architecture gives you a baseline
 generalized structure for a chat app, which you can trust and adapt to
 your needs. It describes a secure, zone-redundant, highly available app
 deployed to the Azure App Service.
 
-The following diagram shows the Microsoft Foundry chat reference
-conceptual architecture.
+The following diagram shows the Baseline Microsoft Foundry chat reference
+architecture in an Azure landing zone. It extends the workload baseline
+with an application landing-zone subscription, subscription-vending
+resources, and shared connectivity and platform subscriptions.
 
-[![An Architecture diagram of the workload, including select platform subscription resources.](../media/chat-agent-reference-architecture.png)](../media/chat-agent-reference-architecture-big.png#lightbox)
+[![Diagram that shows the Microsoft Foundry chat workload within Azure landing zone application and platform subscriptions.](../media/chat-agent-reference-architecture.png)](../media/chat-agent-reference-architecture-big.png#lightbox)

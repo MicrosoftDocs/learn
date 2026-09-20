@@ -1,32 +1,40 @@
-Microsoft Entra ID provides authentication and authorization service by supporting modern authentication protocols, such as OAuth 2.0 and OpenID Connect, in a standards-compliant way. You can use open-source libraries such as Microsoft Authentication Library (MSAL) and other standard-compliant libraries with Microsoft Entra ID. 
+Microsoft Entra ID supports modern identity protocols, including OAuth 2.0 and OpenID Connect. Libraries such as MSAL4J help applications use those protocols without implementing every protocol interaction themselves.
 
-In the employee-portal scenario, you learn that your organization uses Microsoft Entra ID as the Identity provider for authentication and authorization.
-
-In this unit, you learn about authentication, authorization, and how they're supported in Microsoft Entra ID.
+In the company-portal scenario, Microsoft Entra ID is the identity provider. The portal relies on it to authenticate accounts and issue tokens, but the portal still has responsibilities for its own sessions and authorization decisions.
 
 ## Authentication
 
-**Authentication** refers to the process of establishing and verifying the identity of the end user who is accessing an application.
+**Authentication** establishes and verifies an identity. For a user-facing application, it answers the question, "Who's this user?"
 
-Microsoft Entra ID uses the OpenID Connect protocol to handle authentication. OpenID Connect allows applications to obtain basic information about the authenticated user and session.
+OpenID Connect adds an identity layer to OAuth 2.0. An application can receive an **ID token** containing claims about an authenticated user and the authentication event. The ID token is intended for the client application; it isn't the token that the application sends to Microsoft Graph.
 
 ## Authorization
 
-**Authorization** is the process of ensuring that an authenticated user has the permission to perform some operation or access some data.
+**Authorization** determines whether an identity has permission to perform an operation or access data. It answers the question, "What's this user or application allowed to do?"
 
-The OAuth 2.0 protocol is used to provide authorization flows for different application in Microsoft Entra ID.
+OAuth 2.0 provides flows for obtaining **access tokens** for protected APIs. In the portal scenario, a Microsoft Graph access token allows the portal to request specific data on behalf of the signed-in user, subject to the granted permissions.
+
+The following table distinguishes the portal's authentication and authorization responsibilities.
+
+| Concern | Example in the portal |
+|---|---|
+| Authentication | Microsoft Entra ID authenticates an account and the portal receives an ID token through the sign-in flow. |
+| API authorization | A Microsoft Graph access token carries delegated permission to read the signed-in user's profile. |
+| Application authorization | The portal applies any additional rules that control access to its own pages or business operations. |
+
+Successful authentication doesn't automatically grant access to every page or API. For example, tenant membership alone doesn't establish that a person is an employee.
 
 ## Application registration
 
-Microsoft Entra ID requires you to register your application before it can provide identity and access management services. Registering your application establishes a trust relationship between the application and the Identity provider. You can create an application registration through the Azure portal, using the Azure CLI, and even programmatically using Microsoft Graph APIs.
+An **application registration** describes an application to Microsoft Entra ID. It establishes the application's identity and records settings such as its sign-in audience and redirect URIs. Registrations can be managed through the Azure portal, Azure CLI, or Microsoft Graph APIs; no registration is created in this module.
 
-The application registration allows you to specify your application's name, the application type (web, desktop, and so on), and the sign-in audience, which is the user accounts to which you want to allow access. The sign-in audience includes:
+The supported account types define the sign-in audience:
 
-- **Accounts in this organizational directory only** if you're building an application for use only by users in the organizational tenant (**single-tenant**).
-- **Accounts in any organizational directory** if you'd like users in any Microsoft Entra tenant to use your application (**multi-tenant**).
-- **Accounts in any organizational directory and personal Microsoft accounts** for the widest set of customers (**multi-tenant** that also supports Microsoft personal accounts).
-- **Personal Microsoft accounts** for use only by users of personal Microsoft accounts (for example, Hotmail, Live, Skype, and Xbox accounts).
+- **Accounts in this organizational directory only** identifies a single-tenant audience, including user and guest accounts in the selected tenant.
+- **Accounts in any organizational directory** allows accounts from Microsoft Entra tenants in a multitenant design.
+- **Accounts in any organizational directory and personal Microsoft accounts** also allows personal Microsoft accounts.
+- **Personal Microsoft accounts** limits the audience to personal Microsoft accounts, such as Outlook.com accounts.
 
-You can also configure credentials, redirect URIs and other authentication settings on the application registration.
+The registration has an **Application (client) ID** that identifies the application in protocol requests. A confidential web application also uses an application credential to authenticate itself during token acquisition. The client ID and the credential have different purposes: an identifier isn't a secret.
 
-When an application registration is complete, you receive an **Application (client) ID** that uniquely identifies your application in Microsoft Entra ID. This ID is used in your application code or in the authentication library as part of the requests made to Microsoft Entra ID.
+The next unit interprets an example registration and connects its settings to the code samples.

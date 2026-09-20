@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Storage Spaces Direct resiliency layouts</title>
+  <desc id="desc">Four ordered panels compare three-way mirror, dual parity, nested resiliency, and campus four-copy mirror placement.</desc>
+  <style>
+    .panel { fill:#f7f7f7; stroke:#4a4a4a; stroke-width:2; rx:12; }
+    .copyA { fill:#cfe2f3; stroke:#245a7a; stroke-width:2; rx:6; }
+    .copyB { fill:#d9ead3; stroke:#38761d; stroke-width:2; rx:6; }
+    .copyC { fill:#fce5cd; stroke:#b45f06; stroke-width:2; rx:6; }
+    .copyD { fill:#eadcf8; stroke:#674ea7; stroke-width:2; rx:6; }
+    .text { font-family:Segoe UI,Arial,sans-serif; font-size:17px; fill:#1f1f1f; text-anchor:middle; }
+    .small { font-family:Segoe UI,Arial,sans-serif; font-size:14px; fill:#404040; text-anchor:middle; }
+  </style>
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <text x="600" y="34" class="text" font-weight="700">Resiliency placement patterns</text>
+
+  <rect x="35" y="65" width="545" height="300" class="panel"/>
+  <text x="307" y="98" class="text" font-weight="700">1. Three-way mirror</text>
+  <text x="307" y="124" class="small">Three independent copies across node fault domains</text>
+  <rect x="75" y="165" width="130" height="95" class="copyA"/>
+  <text x="140" y="205" class="text">Node 1</text>
+  <text x="140" y="232" class="small">Copy A</text>
+  <rect x="225" y="165" width="130" height="95" class="copyB"/>
+  <text x="290" y="205" class="text">Node 2</text>
+  <text x="290" y="232" class="small">Copy B</text>
+  <rect x="375" y="165" width="130" height="95" class="copyC"/>
+  <text x="440" y="205" class="text">Node 3</text>
+  <text x="440" y="232" class="small">Copy C</text>
+  <text x="307" y="314" class="small">Low latency; approximately one-third raw efficiency</text>
+
+  <rect x="620" y="65" width="545" height="300" class="panel"/>
+  <text x="892" y="98" class="text" font-weight="700">2. Dual parity</text>
+  <text x="892" y="124" class="small">Data fragments plus two parity fragments</text>
+  <rect x="655" y="165" width="105" height="95" class="copyA"/>
+  <text x="707" y="205" class="text">Data</text>
+  <text x="707" y="232" class="small">Fragment 1</text>
+  <rect x="775" y="165" width="105" height="95" class="copyB"/>
+  <text x="827" y="205" class="text">Data</text>
+  <text x="827" y="232" class="small">Fragment 2</text>
+  <rect x="895" y="165" width="105" height="95" class="copyC"/>
+  <text x="947" y="205" class="text">Parity</text>
+  <text x="947" y="232" class="small">Fragment 1</text>
+  <rect x="1015" y="165" width="105" height="95" class="copyD"/>
+  <text x="1067" y="205" class="text">Parity</text>
+  <text x="1067" y="232" class="small">Fragment 2</text>
+  <text x="892" y="314" class="small">Higher efficiency; greater small-write cost</text>
+
+  <rect x="35" y="405" width="545" height="300" class="panel"/>
+  <text x="307" y="438" class="text" font-weight="700">3. Two-node nested resiliency</text>
+  <text x="307" y="464" class="small">Cross-node copy plus local protection</text>
+  <rect x="75" y="505" width="205" height="130" class="copyA"/>
+  <text x="177" y="535" class="text">Node 1</text>
+  <rect x="95" y="555" width="75" height="50" class="copyB"/>
+  <text x="132" y="586" class="small">Local A</text>
+  <rect x="185" y="555" width="75" height="50" class="copyC"/>
+  <text x="222" y="586" class="small">Local B</text>
+  <rect x="335" y="505" width="205" height="130" class="copyA"/>
+  <text x="437" y="535" class="text">Node 2</text>
+  <rect x="355" y="555" width="75" height="50" class="copyB"/>
+  <text x="392" y="586" class="small">Local A</text>
+  <rect x="445" y="555" width="75" height="50" class="copyC"/>
+  <text x="482" y="586" class="small">Local B</text>
+  <text x="307" y="672" class="small">Survives one node loss plus a drive loss in the survivor</text>
+
+  <rect x="620" y="405" width="545" height="300" class="panel"/>
+  <text x="892" y="438" class="text" font-weight="700">4. Campus four-copy mirror</text>
+  <text x="892" y="464" class="small">Two copies in each rack-level fault domain</text>
+  <rect x="655" y="505" width="215" height="130" class="copyA"/>
+  <text x="762" y="535" class="text">Rack 1</text>
+  <rect x="675" y="555" width="75" height="50" class="copyB"/>
+  <text x="712" y="586" class="small">Node 1</text>
+  <rect x="770" y="555" width="75" height="50" class="copyC"/>
+  <text x="807" y="586" class="small">Node 2</text>
+  <rect x="915" y="505" width="215" height="130" class="copyA"/>
+  <text x="1022" y="535" class="text">Rack 2</text>
+  <rect x="935" y="555" width="75" height="50" class="copyB"/>
+  <text x="972" y="586" class="small">Node 3</text>
+  <rect x="1030" y="555" width="75" height="50" class="copyC"/>
+  <text x="1067" y="586" class="small">Node 4</text>
+  <text x="892" y="672" class="small">All-flash design; strict campus prerequisites</text>
+</svg>

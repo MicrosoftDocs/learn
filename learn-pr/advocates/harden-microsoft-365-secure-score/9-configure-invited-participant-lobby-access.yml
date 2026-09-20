@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.harden-microsoft-365-secure-score.configure-invited-participant-lobby-access
+title: Configure invited-participant lobby access
+metadata:
+  title: Configure Invited-Participant Lobby Access
+  description: Configure Microsoft Teams lobby defaults for invited participants and test meeting policy scope.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-configure-invited-participant-lobby-access.md)]

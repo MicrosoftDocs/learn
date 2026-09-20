@@ -2,14 +2,15 @@
 uid: learn.wwl.secure-windows-server-dns
 metadata:
   title: Secure Windows Server DNS
-  description: "Secure Windows Server DNS"
-  ms.date: 01/23/2026
+  description: "Learn how to secure Windows Server DNS using split-horizon DNS, DNS policies for traffic management and geo-location routing, DNS cache locking, DNS socket pool, and DNSSEC for cryptographic zone signing."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Secure Windows Server DNS
-summary: Learn how to secure Windows Server DNS to help protect your network name resolution infrastructure and also learn how to implement DNS policies.
+summary: |
+  This module covers how to secure Windows Server DNS to protect your name resolution infrastructure. You learn how to implement split-horizon DNS to separate internal Active Directory-integrated DNS from internet-facing DNS servers, create DNS policies for scenarios including traffic management, geo-location-based routing, application load balancing, and split-brain DNS, implement and manage DNS policies using PowerShell cmdlets for granular query and zone transfer control, apply DNS security features including cache locking, DNS socket pool, and response rate limiting, and implement DNSSEC to cryptographically sign DNS zones and protect against spoofing and cache tampering.
 abstract: |
   After completing this module, you'll be able to:
   - Describe split-horizon DNS and explain how to implement it.

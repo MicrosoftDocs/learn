@@ -2,15 +2,16 @@
 uid: learn.wwl.configure-manage-hyper-v
 metadata:
   title: Configure and manage Hyper-V
-  description: Configure and manage Hyper-V
-  ms.date: 01/23/2026
+  description: "Learn how to install and configure the Hyper-V role in Windows Server, including virtual switch types, advanced networking features such as NIC Teaming, SR-IOV, and SET, and nested virtualization."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
   ms.subservice: hyper-v
 title: Configure and manage Hyper-V
-summary: Learn about virtualization and the Microsoft Hyper-V role with Windows Server. Learn about best practices for preparing Hyper-V hosts, in addition to Hyper-V networking features and implementing nested virtualization.
+summary: |
+  This module covers how to install and configure the Hyper-V role in Windows Server. You learn how to prepare Hyper-V hosts following best practices, use Hyper-V Manager for VM and host management, create and configure virtual switches (external, internal, and private) with VLAN support, implement advanced networking features including NIC Teaming, SR-IOV, bandwidth management, DHCP Guard, port mirroring, and Switch Embedded Teaming (SET), and configure nested virtualization for running Hyper-V inside a VM.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the functionality and features of Hyper-V on Windows Server.

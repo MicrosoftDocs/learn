@@ -17,7 +17,7 @@ By understanding and quantifying these layers of value, organizations
 can make data-driven decisions, prioritize high-impact initiatives, and
 ensure that AI investments align with broader business goals.
 
-[![A diagram showing concepts used to forcast return of investment for AI agents.](../media/forecasting-return-investment.png)](../media/forecasting-return-investment-big.png#lightbox)
+[![Diagram showing concepts used to forecast return of investment for AI agents.](../media/forecasting-return-investment.png)](../media/forecasting-return-investment-big.png#lightbox)
 
 ## Quantified cash flow impact
 

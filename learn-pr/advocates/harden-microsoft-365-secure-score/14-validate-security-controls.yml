@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.harden-microsoft-365-secure-score.validate-security-controls
+title: Validate security controls
+metadata:
+  title: Validate Security Controls
+  description: Validate effective security controls, retain implementation evidence, and account for Secure Score refresh delays.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/14-validate-security-controls.md)]

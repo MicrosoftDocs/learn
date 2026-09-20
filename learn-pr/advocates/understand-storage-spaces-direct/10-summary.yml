@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-storage-spaces-direct.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review the requirements for reliable Storage Spaces Direct deployments and explore additional Windows Server storage resources.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-summary.md)]

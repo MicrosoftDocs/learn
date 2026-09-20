@@ -2,7 +2,7 @@ Building and deploying AI agents involves multiple cost centers beyond model sel
 organizations must account for development, testing, integration, and hosting expenses. This unit breaks down each stage with actionable
 guidance.
 
-![Conceptual diagram of icons for development integration costs.](../media/development-integration-costs.png)
+![Diagram of icons for development integration costs.](../media/development-integration-costs.png)
 
 ## Model development and customization
 
@@ -13,11 +13,14 @@ selection.
 
 | Factor  | Description  |
 |-------------------------------|-----------------------------------------------------------------------------|
-| **Compute type**              | GPU-optimized VMs (for example, ND-series) for training and fine-tuning.  |
+| **Compute type**              | GPU-accelerated VMs for applicable training and fine-tuning workloads (for example, the `ND_A100_v4` series for high-end distributed deep-learning training). |
 | **Environment tools**       | Azure Machine Learning, CycleCloud, or Databricks for batch scheduling.  |
 | **Model selection**           | Smaller models (for example, Phi, Hugging Face) reduce training time and cost.  |
 | **Transient usage**           | Use spot instances or serverless compute for interruptible workloads.  |
 | **Benchmarking**              | Model benchmark feature in Microsoft Foundry enables model comparison to optimize cost-performance.  |
+
+> [!NOTE]
+> Azure GPU VM families have multiple hardware generations with different workload characteristics and lifecycle states. A VM series or size might not be available in every region or subscription, and deployment also requires sufficient regional and VM-family vCPU quota. Verify the current generation, regional availability, capacity, quota, and price before selecting a GPU VM.
 
 ### Strategic considerations to improve cost efficiency
 

@@ -14,7 +14,7 @@ prerequisites: |
   - Familiarity with distributed systems concepts and event-driven architectures.
   - Familiarity with REST APIs and asynchronous messaging patterns.
 summary: |
-  This learning path teaches you how to build and integrate backend services that support AI solutions on Azure. You start by using Azure Service Bus to decouple AI application components, queue inference requests, and process messages reliably with queues, topics, and dead-letter queues. You then build event-driven workflows with Azure Event Grid to route events between services with low latency, configure delivery policies, and publish custom events from AI applications. Finally, you create serverless AI backends with Azure Functions, including inference endpoints, event processors, and secure integrations with other Azure services.
+  This learning path teaches you how to build and integrate backend services that support AI solutions on Azure. You start by using Azure Service Bus to decouple AI application components, queue inference requests, and process messages reliably with queues, topics, and dead-letter queues. You then build event-driven workflows with Azure Event Grid to route events between services with low latency, configure delivery policies, and publish custom events from AI applications. Finally, you create serverless AI backends with Azure Functions and use Durable Functions to coordinate long-running workflows with parallel processing, human approval, and reliable failure recovery.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
@@ -31,5 +31,6 @@ modules:
 - learn.wwl.queue-process-operations-service-bus
 - learn.wwl.event-driven-workflows-event-grid
 - learn.wwl.build-backends-azure-functions
+- learn.wwl.orchestrate-durable-functions
 trophy:
   uid: learn.wwl.integrate-backend-services-ai-solutions.trophy

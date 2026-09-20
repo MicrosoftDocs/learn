@@ -2,14 +2,15 @@
 uid: learn.wwl.secure-windows-server-user-accounts
 metadata:
   title: Secure Windows Server user accounts
-  description: "Protect your Active Directory environment by securing user accounts to least privilege and placing them in the Protected Users group. Learn how to limit authentication scope and remediate potentially insecure accounts."
-  ms.date: 01/23/2026
+  description: "Learn how to secure Active Directory user accounts using least privilege, Protected Users group, authentication policy silos, Windows Defender Credential Guard, NTLM blocking, and account remediation techniques."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Secure Windows Server user accounts
-summary: Protect your Active Directory environment by securing user accounts to least privilege and placing them in the Protected Users group. Learn how to limit authentication scope and remediate potentially insecure accounts.
+summary: |
+  This module covers how to secure user accounts in an Active Directory environment. You learn how to configure user account rights following least privilege, use the Protected Users group and authentication policy silos to limit authentication scope for privileged accounts, configure Windows Defender Credential Guard hardware prerequisites and deployment, implement NTLM blocking by auditing NTLM traffic and then configuring deny policies, and locate and remediate problematic accounts such as inactive users and accounts with permanent passwords.
 abstract: |
   After completing this module, you'll be able to:
   *   Configure and manage user accounts to limit security threats across an organization

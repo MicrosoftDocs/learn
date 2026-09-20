@@ -16,19 +16,19 @@ Regardless of how you created your ontology, every relationship type requires co
 
 Creating a relationship type starts by defining the connection you want to model. You give the relationship a name that describes the connection—like *monitoredBy* or *contains* or *admittedTo*—and specify which two entity types it connects, as shown below.
 
-:::image type="content" source="../media/add-relationship-type.png" alt-text="Screenshot showing the Add relationship type dialog showing the name field and source and target entity type dropdowns." lightbox="../media/add-relationship-type.png":::
+:::image type="content" source="../media/add-relationship-type.png" alt-text="Screenshot showing the Add new relationship dialog showing the name field and origin and target entity type dropdowns." lightbox="../media/add-relationship-type.png":::
 
-The source and target entity types must be different. For a relationship showing which vital sign equipment monitors which patients, VitalSignEquipment is the source entity type and Patient is the target entity type. The relationship name you choose becomes part of how users query and understand the ontology.
+The origin and target entity types must be different. For a relationship showing which vital sign equipment monitors which patients, VitalSignEquipment is the **Origin entity type** and Patient is the **Target entity type**. The relationship name you choose becomes part of how users query and understand the ontology.
 
 After you create the relationship type, the next step is configuration—specifying the source table and mapping its columns to the entity type keys that identify each end of the relationship.
 
 ## Configure relationship source data
 
-Configuration connects the relationship type definition to actual data. Under **Source data**, select the workspace, lakehouse, and table that contains identifying information for both entity types—each row references both a source entity and a target entity by ID.
+Configuration connects the relationship type definition to actual data. Under **Source data**, select the workspace, lakehouse, and table that contains identifying information for both entity types—each row references both an origin entity and a target entity by ID.
 
 For a *contains* relationship between Hospital and Department, the source table is departments. This table contains HospitalId (identifying which hospital each department belongs to) and DepartmentId (identifying each department), so each row can link a specific hospital to a specific department.
 
-After selecting the table, select a **Source column** for each entity type—the column whose values match that entity type's key. For Hospital, select HospitalId. For Department, select DepartmentId, as shown below.
+After selecting the table, select a **Matched** column for each entity type—the column whose values match that entity type's key. For Hospital (origin), select HospitalId. For Department (target), select DepartmentId, as shown below.
 
 :::image type="content" source="../media/relationship-configuration.png" alt-text="Screenshot of Relationship configuration with departments table and HospitalId and DepartmentId mapped to entity keys." lightbox="../media/relationship-configuration.png":::
 

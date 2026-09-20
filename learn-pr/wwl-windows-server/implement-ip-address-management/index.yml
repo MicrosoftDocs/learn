@@ -2,8 +2,8 @@
 uid: learn.wwl.implement-ip-address-management
 metadata:
   title: Implement IP Address Management
-  description: "Implement IP Address Management"
-  ms.date: 01/23/2026
+  description: "Learn how to deploy and configure IP Address Management (IPAM) in Windows Server to centrally manage DHCP servers, DNS zones, and IP address space with role-based access control and GPO-based provisioning."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module-standard-task-based
@@ -13,7 +13,8 @@ metadata:
   ms.subservice: networking
   ai-usage: human-only
 title: Implement IP Address Management
-summary: Learn to implement IPAM to help manage your organization’s DHCP and DNS servers and to manage IP address space.
+summary: |
+  This module covers how to deploy and use IP Address Management (IPAM) in Windows Server. You learn how to install IPAM on a dedicated member server with WID or SQL Server storage, configure GPO-based provisioning for DHCP, DNS, and domain controller discovery, manage DNS zones and records, DHCP scopes and failover, and IP address blocks and ranges from a single console, and control access using built-in RBAC roles and access scopes.
 abstract: |
   After completing this module, you'll be able to:
 

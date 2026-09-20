@@ -2,14 +2,15 @@
 uid: learn.wwl.perform-windows-server-secure-administration
 metadata:
   title: Perform Windows Server secure administration
-  description: "Perform Windows Server secure administration"
-  ms.date: 01/23/2026
+  description: "Learn how to apply the principle of least privilege, delegate administrative control in Active Directory, implement Privileged Access Workstations (PAWs) with Windows Defender security features, and configure jump servers for secure remote administration."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Perform Windows Server secure administration
-summary: Understand the principle of least privilege, know when to use privileged access workstations, and be able to identify built-in privileged accounts.
+summary: |
+  This module covers how to apply secure administration practices in Windows Server environments. You learn how to implement the principle of least privilege by identifying and restricting membership in built-in privileged groups such as Enterprise Admins and Domain Admins, delegate administrative control using the Delegation of Control Wizard and Restricted Groups, deploy Privileged Access Workstations (PAWs) with Windows Defender Application Control, Credential Guard, and Device Guard, and configure jump servers for controlled remote access to sensitive infrastructure.
 abstract: |
   After completing this module, you'll be able to:
   - Explain least privilege administrative models.

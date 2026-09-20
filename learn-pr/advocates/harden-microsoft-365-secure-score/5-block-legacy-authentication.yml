@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.harden-microsoft-365-secure-score.block-legacy-authentication
+title: Block legacy authentication
+metadata:
+  title: Block Legacy Authentication
+  description: Identify legacy authentication dependencies, migrate clients, and safely enforce a Conditional Access block policy.
+  ms.date: 09/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-block-legacy-authentication.md)]

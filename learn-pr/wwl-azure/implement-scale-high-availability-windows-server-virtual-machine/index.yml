@@ -2,14 +2,15 @@
 uid: learn.wwl.implement-scale-high-availability-with-windows-server-vm
 metadata:
   title: Implement scale and high availability with Windows Server VM
-  description: "Learn how to implement scaling for virtual machine scale sets and load-balanced VMs. Also learn how to implement Azure Site Recovery."
-  ms.date: 01/23/2026
+  description: "Learn how to implement scaling and high availability for Windows Server VMs using virtual machine scale sets with horizontal and vertical scaling, Azure Load Balancer, and Azure Site Recovery for disaster recovery."
+  ms.date: 08/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Implement scale and high availability with Windows Server VM
-summary: Learn how to implement scaling for virtual machine scale sets and load-balanced VMs. Also learn how to implement Azure Site Recovery.
+summary: |
+  This module covers how to implement scaling and high availability for Windows Server virtual machines in Azure. You learn how to describe virtual machine scale sets and their use cases for fluctuating workloads, implement horizontal scaling (adding/removing VMs) and vertical scaling (increasing VM resources) with automated rules based on metrics, configure load-balanced virtual machines using Azure Load Balancer with frontend IP configurations, describe Azure Site Recovery capabilities for disaster recovery and business continuity, and implement Azure Site Recovery to replicate and protect Azure VMs.
 abstract: |
   After completing this module, you'll be able to:
   - Describe virtual machine scale sets.
