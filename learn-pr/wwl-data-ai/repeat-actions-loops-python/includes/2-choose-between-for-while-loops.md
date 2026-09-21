@@ -1,5 +1,16 @@
-
-Programs become more useful when they can automate repetitive tasks. Instead of writing the same code over and over, you can use a **loop** to repeat a block of code automatically. 
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9db37935-3aee-40b6-819b-96fe04d04bdc]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
+Programs become more useful when they can automate repetitive tasks. Instead of writing the same code over and over, you can use a **loop** to repeat a block of code automatically.
 
 Python has two types of loops: `for` loops and `while` loops. Choosing the right one depends on whether you know how many times to repeat ahead of time.
 
@@ -81,3 +92,5 @@ Choose a `while` loop when:
 - The total number of repetitions depends on a variable state.
 - You're waiting for something specific to happen before stopping the loop (e.g., user input).
 - You need control over when the loop stops, rather than a fixed number of repetitions.
+
+::: zone-end

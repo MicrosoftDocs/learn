@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-ai-in-foundry.mai-thinking
+title: MAI-Thinking
+metadata:
+  title: MAI-Thinking
+  description: "Explore the MAI-Thinking reasoning model in Foundry."
+  ms.date: 09/18/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 4
+content: |
+  [!include[](includes/03-mai-thinking.md)]

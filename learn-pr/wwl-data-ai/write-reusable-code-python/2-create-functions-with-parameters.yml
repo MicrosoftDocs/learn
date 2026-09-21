@@ -2,9 +2,10 @@
 uid: learn.wwl.write-reusable-code-python.create-functions-with-parameters
 title: Create functions with parameters
 metadata:
+  zone_pivot_groups: video-or-text
   title: Create Functions with Parameters
   description: "Learn how to define functions in Python and pass data to them using positional, keyword, and default parameters."
-  ms.date: 06/18/2026
+  ms.date: 09/21/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit

@@ -1,4 +1,15 @@
-
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=292d09ba-6930-461b-b383-9f741b98dc49]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 To work with a file in Python, you first need to **open** it. Opening a file gives you a file object you can read from or write to. When you're finished, you need to **close** the file so the operating system can release its resources and any pending writes are saved.
 
 ## The problem with forgetting to close a file
@@ -43,3 +54,5 @@ Pick the mode that matches what you want to do—using the wrong mode is a commo
 ## A safer default
 
 For the rest of this module, always open files using `with`. It's the safest pattern and the one you'll see in almost every real Python codebase.
+
+::: zone-end

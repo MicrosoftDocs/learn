@@ -3,7 +3,7 @@ uid: learn.wwl.read-write-files-python
 metadata:
   title: Read and Write Files
   description: Learn how to read from and write to files in Python using context managers to keep your code safe and clean.
-  ms.date: 08/19/2026
+  ms.date: 09/16/2026
   ms.service: visual-studio
   author: wwlpublish
   ms.author: buzahid

@@ -1,4 +1,16 @@
-
+
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7ced8db5-a8c6-45dc-9585-ce0c416e7efb]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Once your program has more than a handful of functions, keeping everything in a single file becomes hard to navigate. Python solves this with **modules**. A module is just a `.py` file whose functions and variables can be reused from other files.
 
 ## Creating your own module
@@ -74,3 +86,5 @@ This pattern lets a file work both as a standalone script *and* as an importable
 - They keep each file focused on one responsibility.
 - They make code easier to test, since functions live in one place.
 - They make it natural to share and reuse code across projects.
+
+::: zone-end
