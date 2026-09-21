@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.microsoft-ai-in-foundry
+metadata:
+  title: Get started with Microsoft AI models in Foundry
+  description: Discover, evaluate, and use Microsoft AI models in Microsoft Foundry.
+  ms.date: 09/18/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
+  ms.service: artificial-intelligence
+title: Get started with Microsoft AI models in Foundry
+summary: Discover Microsoft AI models in Foundry and identify the right model for reasoning, image, transcription, and voice workloads.
+abstract: |
+  After completing this module, you'll be able to:
+  - Find and evaluate Microsoft AI models in the Foundry model catalog.
+  - Describe how MAI-Thinking supports complex reasoning workloads.
+  - Describe how MAI-Image generates and edits visual content.
+  - Describe how MAI-Transcribe converts speech to text.
+  - Describe how MAI-Voice creates natural, expressive speech.
+prerequisites: |
+  Before starting this module, you should have:
+  - Conceptual knowledge of generative AI.
+  - Familiarity with Microsoft Foundry projects.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - ai-engineer
+products:
+  - foundry-models
+subjects:
+  - artificial-intelligence
+units:
+  - learn.wwl.microsoft-ai-in-foundry.introduction
+  - learn.wwl.microsoft-ai-in-foundry.microsoft-ai-models
+  - learn.wwl.microsoft-ai-in-foundry.mai-thinking
+  - learn.wwl.microsoft-ai-in-foundry.mai-image
+  - learn.wwl.microsoft-ai-in-foundry.mai-transcribe
+  - learn.wwl.microsoft-ai-in-foundry.mai-voice
+  - learn.wwl.microsoft-ai-in-foundry.exercise
+  - learn.wwl.microsoft-ai-in-foundry.knowledge-check
+  - learn.wwl.microsoft-ai-in-foundry.summary
+badge:
+  uid: learn.wwl.microsoft-ai-in-foundry.badge

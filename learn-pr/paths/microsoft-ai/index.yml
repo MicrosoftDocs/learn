@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl.microsoft-ai
+metadata:
+  title: Introduction to Microsoft AI models
+  description: Learn how Microsoft AI (MAI) models work and how to use them in your applications.
+  ms.date: 09/21/2026
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: learning-path
+title: Introduction to Microsoft AI models
+prerequisites: |
+  Familiarity with generative AI concepts.
+  Experience with Microsoft Foundry.
+summary: |
+  Learn how Microsoft AI (MAI) models work and how to use them in your applications.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - student
+  - ai-engineer
+  - developer
+  - data-scientist
+products:
+  - microsoft-foundry
+subjects:
+  - artificial-intelligence
+modules:
+  - learn.wwl.microsoft-ai-models
+  - learn.wwl.microsoft-ai-in-foundry
+trophy:
+  uid: learn.wwl.microsoft-ai.trophy

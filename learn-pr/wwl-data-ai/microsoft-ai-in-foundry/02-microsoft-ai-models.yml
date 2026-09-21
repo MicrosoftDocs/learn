@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-ai-in-foundry.microsoft-ai-models
+title: Microsoft AI models in Foundry
+metadata:
+  title: Microsoft AI models in Foundry
+  description: "Discover and evaluate Microsoft AI models in Foundry."
+  ms.date: 09/18/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 4
+content: |
+  [!include[](includes/02-microsoft-ai-models.md)]
