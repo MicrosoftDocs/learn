@@ -1,4 +1,14 @@
 
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ebd1933d-87d5-40ce-8a0d-e2b0186deeca]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Python gives you several ways to read text from a file. The best choice depends on the size of the file and what you want to do with it.
 
@@ -49,3 +59,5 @@ This pattern is recommended for large files because only one line is held in mem
 | Work with the entire file as one string | `.read()` |
 | Get a list of lines you can index into | `.readlines()` |
 | Process each line one at a time efficiently | `for line in file` |
+
+::: zone-end

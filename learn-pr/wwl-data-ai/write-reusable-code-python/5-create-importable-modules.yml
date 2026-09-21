@@ -2,9 +2,10 @@
 uid: learn.wwl.write-reusable-code-python.create-importable-modules
 title: Create importable modules
 metadata:
+  zone_pivot_groups: video-or-text
   title: Create Importable Modules
   description: "Learn how to split your code across multiple files and reuse it by importing your own modules."
-  ms.date: 06/18/2026
+  ms.date: 09/21/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit

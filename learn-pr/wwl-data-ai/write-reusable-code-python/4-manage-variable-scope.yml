@@ -2,9 +2,10 @@
 uid: learn.wwl.write-reusable-code-python.manage-variable-scope
 title: Manage variable scope
 metadata:
+  zone_pivot_groups: video-or-text
   title: Manage Variable Scope
   description: "Learn how variable scope works in Python and how to avoid common bugs caused by mixing local and global variables."
-  ms.date: 06/18/2026
+  ms.date: 09/21/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit

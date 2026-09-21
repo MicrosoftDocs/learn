@@ -1,4 +1,16 @@
-
+
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=215d82f7-45d2-479f-9fe7-6c80e2467b33]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A **function** is a named, reusable block of code that runs when you call it. Functions let you write logic once and use it as many times as you need—with different inputs each time.
 
 ## Defining a function
@@ -56,3 +68,5 @@ greet(name="Alex", greeting="Welcome")
 ```
 
 Keyword arguments can appear in any order, as long as they come after any positional arguments.
+
+::: zone-end

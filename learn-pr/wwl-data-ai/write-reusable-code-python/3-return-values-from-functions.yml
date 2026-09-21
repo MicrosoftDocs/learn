@@ -2,9 +2,10 @@
 uid: learn.wwl.write-reusable-code-python.return-values-from-functions
 title: Return values from functions
 metadata:
+  zone_pivot_groups: video-or-text
   title: Return Values from Functions
   description: "Learn how to return values from functions and use them in the rest of your program."
-  ms.date: 06/18/2026
+  ms.date: 09/21/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit

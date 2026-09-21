@@ -1,4 +1,16 @@
-
+
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6a33324b-a315-4889-b0e9-196cce0df029]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Most useful functions don't just do something—they produce a **result** the caller can use. That result is passed back with the `return` statement.
 
 ## Returning a value
@@ -64,3 +76,5 @@ print(result)   # Output: None
 ```
 
 That's fine when the function's purpose is to *do* something (like print or write to a file) rather than produce a value.
+
+::: zone-end

@@ -2,9 +2,10 @@
 uid: learn.wwl.organize-data-with-collections-python.summary
 title: Summary
 metadata:
+  zone_pivot_groups: video-or-text
   title: Summary
   description: "Reflect on what you learned about organizing data with lists and dictionaries in Python."
-  ms.date: 06/18/2026
+  ms.date: 9/10/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit

@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  zone_pivot_groups: video-or-text
 durationInMinutes: 6
 content: |
   [!include[](includes/3-controlling-loop-execution-with-break-continue.md)]

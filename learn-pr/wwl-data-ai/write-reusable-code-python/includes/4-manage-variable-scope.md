@@ -1,4 +1,16 @@
-
+
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=30eb5725-cb00-4989-920a-fe6430ee9516]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 **Scope** is the region of your code where a variable exists and can be used. Understanding scope helps you write functions that don't accidentally interfere with each other—and helps you avoid a whole class of confusing bugs.
 
 ## Local variables
@@ -72,3 +84,5 @@ print(count)   # Output: 1
 - Local variables keep functions **independent**—a variable in one function can't mess up another.
 - Reading globals is fine for constants like configuration values.
 - Writing to globals from inside functions is a common source of hard-to-find bugs. Prefer parameters and return values.
+
+::: zone-end
