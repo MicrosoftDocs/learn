@@ -1,4 +1,15 @@
-
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e99dc588-8bbc-484e-ba69-0274a84f521a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A **dictionary** stores data as **key-value pairs**. Instead of accessing items by position (like a list), you access them by a meaningful label called a **key**. Dictionaries are perfect for representing something with named properties—a user, a settings profile, a product record.
 
 ## Creating a dictionary
@@ -80,3 +91,5 @@ Both are collections, but they solve different problems:
 | Order matters | Each value has a meaningful label |
 | You access items by position | You access values by key |
 | You have a sequence of similar items | You have a set of named properties |
+
+::: zone-end

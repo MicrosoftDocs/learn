@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-ai-in-foundry.mai-voice
+title: MAI-Voice
+metadata:
+  title: MAI-Voice
+  description: "Explore MAI-Voice speech synthesis models in Foundry."
+  ms.date: 09/18/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 4
+content: |
+  [!include[](includes/06-mai-voice.md)]

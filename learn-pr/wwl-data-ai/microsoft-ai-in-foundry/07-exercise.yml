@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-ai-in-foundry.exercise
+title: Exercise - Use MAI models in Foundry
+metadata:
+  title: Exercise - Use MAI models in Foundry
+  description: "Use Microsoft AI models in Foundry."
+  ms.date: 09/18/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/07-exercise.md)]

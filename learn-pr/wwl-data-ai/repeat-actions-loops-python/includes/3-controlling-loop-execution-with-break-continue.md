@@ -1,6 +1,16 @@
 
+::: zone pivot="video"
 
-Although loops are designed to repeat a block of code, sometimes you need more granular control over how the loop executes. For example, you might want to exit a loop early, or skip certain iterations without stopping the loop entirely. 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0b7e9abc-d8d4-41a2-a507-7b8413708bb2]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
+Although loops are designed to repeat a block of code, sometimes you need more granular control over how the loop executes. For example, you might want to exit a loop early, or skip certain iterations without stopping the loop entirely.
 
 Python gives you precise control over loop execution with two statements: `break` and `continue`.
 
@@ -109,4 +119,6 @@ for i in range(3):
         break
 else:
     print(f"Sorry, the correct answer is {color}.")
+
+::: zone-end
 ```

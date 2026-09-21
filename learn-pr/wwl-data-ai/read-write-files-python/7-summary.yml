@@ -2,9 +2,10 @@
 uid: learn.wwl.read-write-files-python.summary
 title: Summary
 metadata:
+  zone_pivot_groups: video-or-text
   title: Summary
   description: "Reflect on what you learned about reading and writing files in Python."
-  ms.date: 06/18/2026
+  ms.date: 09/16/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit

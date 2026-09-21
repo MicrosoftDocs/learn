@@ -1,4 +1,15 @@
-
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=cd8f36c8-a4cf-4508-8526-f3fb45240bfb]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Writing to a file lets your program save results, keep logs, or persist data between runs. Python offers two main modes for putting data into a file: **write** and **append**.
 
 ## Writing to a file with `"w"`
@@ -45,3 +56,5 @@ with open("tasks.txt", "w") as file:
 | You want to start fresh each time | You want to keep the existing content |
 | You're saving the final result of a process | You're recording new events or entries |
 | Overwriting is intentional | Preserving history matters |
+
+::: zone-end

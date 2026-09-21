@@ -1,4 +1,15 @@
-
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=878622d8-da70-4b8f-9f1b-355baae147b9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A **list** is an ordered collection of values, written inside square brackets `[]` with items separated by commas. Lists are one of the most commonly used data structures in Python because they can hold any type of value and can be modified after creation.
 
 ## Creating a list
@@ -73,3 +84,5 @@ Output:
 76
 91
 ```
+
+::: zone-end

@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-ai-in-foundry.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your learning about Microsoft AI models in Foundry."
+  ms.date: 09/18/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+    - content: "Which Foundry resource should you review first to understand a model's intended uses, limitations, and deployment options?"
+      choices:
+        - content: "The model card"
+          isCorrect: true
+          explanation: "Correct. A model card describes the model, its intended uses and limitations, and relevant deployment information."
+        - content: "The deployment endpoint"
+          isCorrect: false
+          explanation: "Incorrect. An endpoint provides access to a deployed model, but it doesn't replace the model card's guidance."
+        - content: "The application trace log"
+          isCorrect: false
+          explanation: "Incorrect. Trace logs help diagnose an application after it runs; they don't provide the model's intended-use guidance."
+    - content: "Which model should you evaluate for an application that must analyze a complex problem through multiple reasoning steps?"
+      choices:
+        - content: "MAI-Thinking-1"
+          isCorrect: true
+          explanation: "Correct. MAI-Thinking-1 is designed for complex reasoning workloads such as mathematics, coding, planning, and analysis."
+        - content: "MAI-Transcribe-1.5"
+          isCorrect: false
+          explanation: "Incorrect. MAI-Transcribe-1.5 converts spoken audio into text."
+        - content: "MAI-Voice-2-Flash"
+          isCorrect: false
+          explanation: "Incorrect. MAI-Voice-2-Flash generates speech for latency-sensitive interactions."
+    - content: "You're building an interactive voice assistant. Which combination provides speech input and a low-latency spoken response?"
+      choices:
+        - content: "MAI-Transcribe-1.5 and MAI-Voice-2-Flash"
+          isCorrect: true
+          explanation: "Correct. MAI-Transcribe-1.5 converts the user's speech to text, and MAI-Voice-2-Flash generates a low-latency spoken response."
+        - content: "MAI-Image-2.5 and MAI-Voice-2"
+          isCorrect: false
+          explanation: "Incorrect. MAI-Image-2.5 works with images and doesn't transcribe speech input."
+        - content: "MAI-Thinking-1 and MAI-Image-2.5-Flash"
+          isCorrect: false
+          explanation: "Incorrect. Neither model converts speech to text or generates spoken audio."
