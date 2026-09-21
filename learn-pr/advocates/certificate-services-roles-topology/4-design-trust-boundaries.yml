@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-roles-topology.design-trust-boundaries
+title: Design trust boundaries
+metadata:
+  title: Design Trust Boundaries
+  description: Distinguish root trust, chain validation, directory authentication authorization, and application trust across forest, extranet, and non-domain boundaries.
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.date: 09/20/2026
+  ms.topic: unit
+durationInMinutes: 40
+content: |
+  [!include[](includes/4-design-trust-boundaries.md)]

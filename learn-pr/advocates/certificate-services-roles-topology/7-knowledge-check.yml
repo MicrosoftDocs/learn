@@ -1,0 +1,149 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-roles-topology.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Check your understanding of certificate service topology, role placement, trust authorization, service availability, key custody, and recovery.
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.date: 09/20/2026
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Module assessment
+  questions:
+    - content: A production proposal uses one online enterprise root because there are only 500 users. Which response best addresses the topology decision?
+      choices:
+        - content: Add an online policy authority without assessing custody or recovery requirements.
+          isCorrect: false
+          explanation: An extra tier adds complexity without protecting an online root. Each tier needs a documented policy or custody boundary and a recovery plan.
+        - content: Accept the proposal because the user count limits the impact of a root compromise.
+          isCorrect: false
+          explanation: User count doesn't determine the scope of a root compromise. Every certificate and trust relationship in the hierarchy can be affected.
+        - content: Assess assurance, compromise impact, recovery, renewal, and trust replacement. Start with a protected offline standalone root and an online enterprise issuer.
+          isCorrect: true
+          explanation: User count alone is irrelevant to the scope of a root compromise. Assess assurance, compromise impact, recovery, renewal, and trust replacement. A protected offline standalone root with an online enterprise issuer is the safer production starting point.
+    - content: Web Enrollment, NDES, CES, Online Responder, and the CA are installed on one issuing server, but only autoenrollment is used. What should the design authority do?
+      choices:
+        - content: Keep every service installed so future workloads can use it without design review.
+          isCorrect: false
+          explanation: Unused services add attack surface, patching, monitoring, and recovery obligations without supporting a documented flow.
+        - content: Map each service to a workload, retire unused services through change control, and separate required web, registration-authority, or responder roles where practical.
+          isCorrect: true
+          explanation: Map each service to a workload; retire unused services through change control. Separate any required web/RA/responder role from the CA where practical and document its identity, TLS, monitoring, and recovery.
+        - content: Put a load balancer in front of the server and keep all installed roles.
+          isCorrect: false
+          explanation: A load balancer doesn't remove unused services or separate the signing authority from web, registration-authority, or responder roles.
+    - content: Two issuing CAs publish the same template. CA01 is down, but some renewals don't move to CA02. Which set of design gaps should be investigated?
+      choices:
+        - content: Missing replication of the CA01 database into CA02, missing shared serial numbers, and different private keys.
+          isCorrect: false
+          explanation: Issuing authorities are independent identities with separate keys and authoritative databases. Publishing the same template doesn't make them replicas.
+        - content: The root must be online, the template must be renamed, and all clients must clear their trusted root stores.
+          isCorrect: false
+          explanation: These changes don't address issuer selection or pending request ownership. A protected root can remain offline during normal leaf issuance.
+        - content: Untested client or enrollment-service selection, different configuration or permissions on CA02, and pending requests bound to CA01 or issuer-pinned workloads.
+          isCorrect: true
+          explanation: Client/enrollment-service CA selection was not tested, CA02 configuration/permissions differ, requests are pending or bound to CA01, or the workload pins an issuer. Same template publication is not state replication.
+    - content: A smart-card certificate chains to a trusted root and validates for time and revocation, but only one domain controller rejects sign-in. The command `certutil.exe -enterprise -viewstore ntauth` on that controller lacks the renewed issuing CA certificate. What should be checked before adding anything locally?
+      choices:
+        - content: The forest NTAuth object, configuration-partition replication, Group Policy or autoenrollment processing, and the local enterprise NTAuth cache.
+          isCorrect: true
+          explanation: Verify the forest NTAuth object, configuration-partition replication, Group Policy/autoenrollment processing, and local enterprise NTAuth cache. Correct controlled publication/replication; do not use a local root-store workaround.
+        - content: Whether revocation checking can be disabled on the affected domain controller.
+          isCorrect: false
+          explanation: The scenario already establishes acceptable revocation status. Disabling a validation control doesn't authorize the renewed issuing certificate.
+        - content: Whether installing the issuing certificate in the local trusted root store bypasses the rejection.
+          isCorrect: false
+          explanation: Root trust and Enterprise NTAuth authorization are separate decisions. A local root-store workaround doesn't correct forest authorization or replication.
+    - content: An application pins `<IssuingCA01Name>`, while AD DS authentication uses certificates from `<IssuingCA02Name>`. Does adding CA02 to NTAuth satisfy the application?
+      choices:
+        - content: Yes, once both issuing authorities publish the same template.
+          isCorrect: false
+          explanation: Common template publication doesn't make the issuing certificates identical or satisfy a pin to another issuer.
+        - content: Yes. NTAuth membership overrides an application's issuer pin.
+          isCorrect: false
+          explanation: NTAuth authorizes eligible issuers for directory authentication. It doesn't override an application's private trust decision.
+        - content: No. The application's pin or trust policy is independent and must be deliberately changed and tested.
+          isCorrect: true
+          explanation: No. NTAuth is AD DS authentication authorization. The application's pin/trust policy is independent and must be deliberately changed and tested.
+    - content: Forest A trusts Forest B at the AD DS level. Can Forest B's issuing CA immediately issue smart-card certificates accepted by Forest A?
+      choices:
+        - content: No. Explicitly design enrollment authorization, root and chain distribution, issuer authorization in Forest A, mapping, revocation, and incident governance.
+          isCorrect: true
+          explanation: No. Design identity/enrollment authorization, distribute root/chain trust, publish the eligible issuer to Forest A's NTAuth under change control, validate mapping/revocation, and govern cross-forest incident authority.
+        - content: Yes, after installing only the root certificate in Forest A.
+          isCorrect: false
+          explanation: Root trust is only one requirement. Enrollment authorization, issuer authorization, mapping, revocation, and governance remain separate.
+        - content: Yes. The directory trust automatically shares templates, root trust, and NTAuth authorization.
+          isCorrect: false
+          explanation: A directory trust doesn't merge forest configuration objects or automatically grant certificate authentication authority.
+    - content: Two issuing CAs use separate partitions on one network HSM administered by one team. Which availability claim is unsafe?
+      choices:
+        - content: The authorities have distinct keys but share dependencies that require recovery planning.
+          isCorrect: false
+          explanation: This claim correctly distinguishes key separation from shared hardware, network, firmware, and administrative dependencies.
+        - content: The authorities are fully independent failure domains because their keys are in different partitions.
+          isCorrect: true
+          explanation: They are not fully independent failure domains. Chassis, firmware, network, security officer, capacity, or vendor outage can stop both. Record the common-mode risk and design HA/recovery accordingly.
+        - content: A shared hardware or administrative failure can interrupt both authorities.
+          isCorrect: false
+          explanation: This is a valid risk statement. Separate partitions don't eliminate shared chassis, network, firmware, or administrative failures.
+    - content: A team proposes a policy CA between the root and issuers but can't name a separate policy, custodian, legal boundary, or removal requirement. Should the design be approved?
+      choices:
+        - content: Yes. An extra tier always improves assurance even when its controls are identical.
+          isCorrect: false
+          explanation: Extra path depth isn't evidence of better assurance. Each tier must enforce a boundary that the organization can operate and audit.
+        - content: Yes. A policy tier removes the need to recover the root authority.
+          isCorrect: false
+          explanation: The root remains the trust anchor and ultimate delegation authority. Adding a policy tier doesn't remove root recovery requirements.
+        - content: No. Require evidence of a meaningful boundary before accepting another tier.
+          isCorrect: true
+          explanation: No. It adds path, CRL, renewal, ceremony, monitoring, and recovery complexity without a demonstrated assurance boundary.
+    - content: Both issuing CAs are healthy, but clean non-domain clients fail validation after a web-server outage. Which service objective failed?
+      choices:
+        - content: Certificate issuance availability, because healthy authorities can't publish new templates.
+          isCorrect: false
+          explanation: The failure concerns validation by clean clients after a publication outage, not template publication or issuance.
+        - content: Validation publication availability.
+          isCorrect: true
+          explanation: Validation publication availability. Restore redundant AIA/CDP/OCSP content and test from clean clients; CA service health does not compensate.
+        - content: Administrative availability, because the offline root must approve every client chain.
+          isCorrect: false
+          explanation: Clients validate chains using trust and published artifacts. An offline root doesn't approve each validation transaction.
+    - content: The Enterprise Admin group is permanently local administrator on both issuing CAs, controls templates, and holds all HSM quorum tokens. What is the design problem?
+      choices:
+        - content: One identity plane can change policy, operate the authorities, and use or recover keys without independent controls.
+          isCorrect: true
+          explanation: One identity plane can change policy, operate the CAs, and use/recover keys. Apply dedicated tiered accounts, separate forest PKI/template/CA/HSM roles, quorum custody, and audited break glass.
+        - content: The group can't administer certificate templates because templates are local to each issuing authority.
+          isCorrect: false
+          explanation: Enterprise certificate templates reside in the directory configuration partition. The problem is excessive combined authority, not local template storage.
+        - content: Quorum custody makes forest-level privileges unnecessary to review.
+          isCorrect: false
+          explanation: A quorum doesn't provide meaningful separation when one group holds all tokens and also controls the authorities and issuance policy.
+    - content: The root is offline, but no one has tested its HSM since the last CRL publication 11 months ago. The next CRL expires in two weeks. Is offline status providing sufficient assurance?
+      choices:
+        - content: No. Invoke the approved ceremony early, verify hardware, quorum, and backups, publish with overlap, and shorten the test interval.
+          isCorrect: true
+          explanation: Not by itself. The design has created deadline and recoverability risk. Invoke the approved ceremony early, verify hardware/quorum/backups, publish with overlap, and shorten the test interval.
+        - content: Yes. Keeping the root powered off guarantees that its next publication operation will succeed.
+          isCorrect: false
+          explanation: Offline status doesn't establish hardware health, token availability, recoverability, or readiness to meet publication deadlines.
+        - content: Yes. Online issuing authorities can sign a replacement root CRL if the root doesn't start.
+          isCorrect: false
+          explanation: Issuing authorities can't replace the root's signing authority. Root publication and recovery must be planned independently.
+    - content: In the applied two-issuer design, which failure does the second issuer not solve?
+      choices:
+        - content: A planned maintenance window on the first issuer when critical profiles and client failover have been tested on the second.
+          isCorrect: false
+          explanation: A tested second issuer can preserve critical enrollment during maintenance for profiles it is authorized and configured to issue.
+        - content: A shared publication outage or another common trust, hardware, network, administrative, or configuration failure.
+          isCorrect: true
+          explanation: Shared failures such as root loss, AD DS configuration/NTAuth replication, publication outage, shared HSM/network/admin compromise, incompatible clients, or common template misconfiguration. Each needs an independent control.
+        - content: Loss of the first issuer for a workload already authorized and tested to enroll through the second.
+          isCorrect: false
+          explanation: Independent issuers can preserve enrollment for supported workloads. They don't eliminate shared failure dependencies.

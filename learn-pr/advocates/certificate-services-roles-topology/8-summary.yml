@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-roles-topology.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review certificate service role placement, hierarchy design, trust boundaries, key protection, and recovery, with references for further learning.
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.date: 09/20/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-summary.md)]
