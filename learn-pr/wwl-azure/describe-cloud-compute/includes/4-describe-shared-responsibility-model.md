@@ -18,32 +18,28 @@ The following diagram highlights how the Shared Responsibility Model informs who
 
 :::image type="content" source="../media/shared-responsibility-model.png" alt-text="Diagram showing how responsibility shifts from customer to cloud provider across On-Premises, IaaS, PaaS, and SaaS service models.":::
 
-
-When using a cloud provider, you’ll always be responsible for:
-
 ## What always stays with you
 
+When using a cloud provider, you’ll always be responsible for:
  -  The information and data stored in the cloud
  -  Devices that are allowed to connect to your cloud (cell phones, computers, and so on)
  -  The accounts and identities of the people, services, and devices within your environment
 
-The cloud provider is always responsible for:
-
 ## What the provider always owns
 
+The cloud provider is always responsible for:
  -  The physical datacenter
  -  The physical network
  -  The physical hosts
-
-Your service model will determine responsibility for things like:
+ -  Infrastructure
 
 ## What depends on the service type
 
+Your service model will determine responsibility for things like:
  -  Operating systems
  -  Network controls
  -  Applications
  -  Identity and access
- -  Infrastructure
 
 For example, identity and access is shared in PaaS and SaaS—you manage your own users, roles, and policies, while the provider runs the authentication platform (such as Microsoft Entra ID). Infrastructure, on the other hand, shifts entirely to the provider as soon as you move off-premises to IaaS.
 

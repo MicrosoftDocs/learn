@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-roles-topology.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Explore certificate service roles, placement principles, and enterprise versus standalone certification authorities for Windows Server 2025.
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.date: 09/20/2026
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/1-introduction.md)]

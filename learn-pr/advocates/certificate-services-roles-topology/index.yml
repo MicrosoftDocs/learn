@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.windows-server.certificate-services-roles-topology
+title: Active Directory Certificate Services roles and topology
+metadata:
+  title: Active Directory Certificate Services Roles and Topology
+  description: Design Active Directory Certificate Services topologies with suitable role placement, trust boundaries, availability, key protection, and recovery.
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.date: 09/20/2026
+  ms.topic: module-standard-concept-based
+  ms.service: windows-server
+summary: Turn business, assurance, availability, and boundary requirements into an Active Directory Certificate Services topology for Windows Server 2025.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Select the AD CS role services needed for each enrollment and validation population.
+  - Choose enterprise or standalone CA operating models and an appropriate hierarchy depth.
+  - Defend a protected offline root with one or more online enterprise issuing CAs as the usual production starting point.
+  - Scale issuance and enrollment services without confusing service availability with CA identity or revocation availability.
+  - Design across forest, extranet, domain, non-domain, and application trust boundaries.
+  - Separate root trust, chain construction, Enterprise NTAuth authorization, and application-specific trust.
+  - Place hardware security module (HSM) services and administrative roles according to assurance, availability, and recovery objectives.
+  - Plan a controlled root ceremony and offline custody model.
+prerequisites: |
+  Before starting this module, you should have experience with:
+  - Public key infrastructure design.
+  - Active Directory Domain Services configuration partitions, replication, sites, and services.
+  - Enterprise administrative tiers.
+  - DNS, HTTP, LDAP, RPC/DCOM, Transport Layer Security (TLS), firewalls, and load balancing.
+  - Backup and recovery concepts.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - advanced
+roles:
+  - administrator
+  - security-engineer
+products:
+  - windows-server
+subjects:
+  - security
+units:
+  - learn.windows-server.certificate-services-roles-topology.introduction
+  - learn.windows-server.certificate-services-roles-topology.choose-hierarchy-depth
+  - learn.windows-server.certificate-services-roles-topology.design-service-availability
+  - learn.windows-server.certificate-services-roles-topology.design-trust-boundaries
+  - learn.windows-server.certificate-services-roles-topology.protect-certificate-authority-operations
+  - learn.windows-server.certificate-services-roles-topology.apply-topology-decision-matrix
+  - learn.windows-server.certificate-services-roles-topology.knowledge-check
+  - learn.windows-server.certificate-services-roles-topology.summary
+badge:
+  uid: learn.windows-server.certificate-services-roles-topology.badge

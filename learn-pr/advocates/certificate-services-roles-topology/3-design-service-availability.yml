@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-roles-topology.design-service-availability
+title: Design service availability
+metadata:
+  title: Design Service Availability
+  description: Plan independent issuing authorities, geographic placement, enrollment load balancing, and database capacity to meet certificate service objectives.
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.date: 09/20/2026
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/3-design-service-availability.md)]

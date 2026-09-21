@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-roles-topology.protect-certificate-authority-operations
+title: Protect certificate authority operations
+metadata:
+  title: Protect Certificate Authority Operations
+  description: Separate certificate authority administration, place hardware security modules, and plan controlled root ceremonies with recoverable key custody.
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.date: 09/20/2026
+  ms.topic: unit
+durationInMinutes: 40
+content: |
+  [!include[](includes/5-protect-certificate-authority-operations.md)]
