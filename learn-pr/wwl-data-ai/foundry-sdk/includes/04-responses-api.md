@@ -307,7 +307,7 @@ for event in stream:
 
 ### Async usage
 
-For high-performance applications, you can use an asynchronous client that allows you to make non-blocking API calls. Asynchronous usage is ideal for long-running requests or when you want to handle multiple requests concurrently without blocking your application. To use it, import `AsyncOpenAI` instead of `OpenAI` and use `await` with each API call:
+For high-performance applications, you can use an asynchronous client that allows you to make non-blocking API calls. The real benefit of `AsyncOpenAI` appears when you run multiple requests concurrently: while one call is waiting on the network, your application can issue other calls or perform other async work rather than blocking. To use it, import `AsyncOpenAI` instead of `OpenAI` and use `await` with each API call:
 
 ```python
 import asyncio
@@ -318,15 +318,28 @@ client = AsyncOpenAI(
     api_key=token_provider,
 )
 
-async def main():
+async def ask(prompt):
     response = await client.responses.create(
         model="gpt-4.1",
-        input="Explain quantum computing briefly."
+        input=prompt
     )
-    print(response.output_text)
+    return response.output_text
+
+async def main():
+    # Issue three requests concurrently instead of one after another
+    prompts = [
+        "Explain quantum computing briefly.",
+        "Summarize the benefits of async I/O.",
+        "Give a one-sentence definition of machine learning."
+    ]
+    results = await asyncio.gather(*(ask(p) for p in prompts))
+    for prompt, output in zip(prompts, results):
+        print(f"Q: {prompt}\nA: {output}\n")
 
 asyncio.run(main())
 ```
+
+A single `await` wrapped in `asyncio.run()` completes in about the same time as the synchronous client, because `asyncio.run()` still waits for the coroutine to finish. Use `asyncio.gather()` (or run the API call alongside other awaitable work) to actually overlap requests and see the async client's benefit.
 
 Async streaming works the same way:
 
