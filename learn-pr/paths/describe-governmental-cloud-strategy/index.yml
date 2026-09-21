@@ -19,7 +19,7 @@ levels:
 roles:
 - business-owner
 products:
-- azure-sovereign-us
+- azure-us-government
 subjects:
 - cloud-computing
 modules:

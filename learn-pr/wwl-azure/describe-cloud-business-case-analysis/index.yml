@@ -35,7 +35,7 @@ levels:
 roles:
 - business-user
 products:
-- azure-sovereign-us
+- azure-us-government
 subjects:
 - cloud-computing
 - data-analytics
@@ -49,4 +49,4 @@ units:
 - learn.wwl.describe-cloud-business-case-analysis.knowledge-check
 - learn.wwl.describe-cloud-business-case-analysis.summary
 badge:
-  uid: learn.wwl.describe-cloud-business-case-analysis.badge
+  uid: learn.wwl.describe-cloud-business-case-analysis.badge
