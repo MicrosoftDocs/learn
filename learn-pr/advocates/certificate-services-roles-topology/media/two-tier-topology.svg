@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="1600" viewBox="0 0 1800 1600">
+  <title>Reference two-tier Active Directory Certificate Services topology</title>
+  <desc>A top-to-bottom numbered topology showing a protected offline standalone root, a controlled artifact-transfer gate, two independent online enterprise issuing certification authorities, separate AD DS, enrollment, and publication services, and the enrolled and relying populations.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="18" markerHeight="18" refX="18" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 18 9 L 0 18 z" fill="#17365d"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1800" height="1600" fill="#ffffff"/>
+
+  <g fill="none" stroke-width="4" stroke-dasharray="14 10">
+    <rect x="430" y="40" width="940" height="300" rx="24" stroke="#6f1212"/>
+    <rect x="430" y="360" width="940" height="270" rx="24" stroke="#7a4f00"/>
+    <rect x="120" y="680" width="1560" height="320" rx="24" stroke="#17365d"/>
+    <rect x="80" y="1060" width="1640" height="500" rx="24" stroke="#0e5a61"/>
+  </g>
+
+  <g stroke="#17365d" stroke-width="5" fill="none" marker-end="url(#arrow)">
+    <line x1="900" y1="275" x2="900" y2="442"/>
+  </g>
+  <g stroke="#17365d" stroke-width="5" fill="none">
+    <line x1="900" y1="610" x2="900" y2="700"/>
+    <line x1="900" y1="700" x2="500" y2="700"/>
+    <line x1="900" y1="700" x2="1300" y2="700"/>
+  </g>
+  <g stroke="#17365d" stroke-width="5" fill="none" marker-end="url(#arrow)">
+    <line x1="500" y1="700" x2="500" y2="772"/>
+    <line x1="1300" y1="700" x2="1300" y2="772"/>
+  </g>
+
+  <g stroke="#17365d" stroke-width="5" fill="none">
+    <line x1="500" y1="960" x2="500" y2="1030"/>
+    <line x1="1300" y1="960" x2="1300" y2="1030"/>
+    <line x1="345" y1="1030" x2="1455" y2="1030"/>
+  </g>
+  <g stroke="#17365d" stroke-width="5" fill="none" marker-end="url(#arrow)">
+    <line x1="345" y1="1030" x2="345" y2="1142"/>
+    <line x1="900" y1="1030" x2="900" y2="1142"/>
+    <line x1="1455" y1="1030" x2="1455" y2="1142"/>
+  </g>
+
+  <g stroke="#17365d" stroke-width="5" fill="none">
+    <line x1="345" y1="1320" x2="345" y2="1370"/>
+    <line x1="900" y1="1320" x2="900" y2="1370"/>
+    <line x1="1455" y1="1320" x2="1455" y2="1370"/>
+    <line x1="345" y1="1370" x2="1455" y2="1370"/>
+  </g>
+  <line x1="900" y1="1370" x2="900" y2="1412" stroke="#17365d" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <g font-family="Arial, sans-serif" fill="#10243e">
+    <g>
+      <rect x="465" y="60" width="330" height="48" rx="10" fill="#ffffff" stroke="#6f1212" stroke-width="3"/>
+      <text x="490" y="92" font-size="18" font-weight="700">Offline root security boundary</text>
+    </g>
+    <g>
+      <rect x="650" y="130" width="500" height="145" rx="18" fill="#fde8e7" stroke="#8b1e1e" stroke-width="4"/>
+      <text x="690" y="178" font-size="28" font-weight="700">1. Offline standalone root CA</text>
+      <text x="690" y="218" font-size="18">
+        <tspan x="690" dy="0">Offline; non-domain joined; HSM/quorum custody;</tspan>
+        <tspan x="690" dy="28">signs subordinate CAs and root CRLs only.</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="465" y="378" width="330" height="48" rx="10" fill="#ffffff" stroke="#7a4f00" stroke-width="3"/>
+      <text x="490" y="410" font-size="18" font-weight="700">Controlled transfer boundary</text>
+    </g>
+    <g>
+      <rect x="650" y="450" width="500" height="160" rx="18" fill="#fff4d6" stroke="#7a4f00" stroke-width="4"/>
+      <text x="690" y="492" font-size="25" font-weight="700">2. Ceremony and artifact gate</text>
+      <text x="690" y="534" font-size="18">
+        <tspan x="690" dy="0">Approved requests and signed artifacts;</tspan>
+        <tspan x="690" dy="24">hashes, dual custody, malware controls,</tspan>
+        <tspan x="690" dy="24">logs, and no root networking.</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="155" y="700" width="330" height="48" rx="10" fill="#ffffff" stroke="#17365d" stroke-width="3"/>
+      <text x="180" y="732" font-size="21" font-weight="700">Online Tier 0 CA boundary</text>
+    </g>
+    <g>
+      <rect x="260" y="780" width="480" height="180" rx="18" fill="#e8f1fb" stroke="#17365d" stroke-width="4"/>
+      <text x="300" y="830" font-size="27" font-weight="700">3A. Enterprise issuing CA 01</text>
+      <text x="300" y="870" font-size="18">
+        <tspan x="300" dy="0">Independent key, database, logs, CRL,</tspan>
+        <tspan x="300" dy="29">backup, monitoring, and recovery.</tspan>
+        <tspan x="300" dy="29">Publishes only approved profiles.</tspan>
+      </text>
+    </g>
+    <g>
+      <rect x="1060" y="780" width="480" height="180" rx="18" fill="#e8f1fb" stroke="#17365d" stroke-width="4"/>
+      <text x="1100" y="830" font-size="27" font-weight="700">3B. Enterprise issuing CA 02</text>
+      <text x="1100" y="870" font-size="18">
+        <tspan x="1100" dy="0">Separate key and failure domain where feasible;</tspan>
+        <tspan x="1100" dy="29">tested for resilience or intentional</tspan>
+        <tspan x="1100" dy="29">workload segmentation--not a replica.</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="480" y="1080" width="380" height="48" rx="10" fill="#ffffff" stroke="#0e5a61" stroke-width="3"/>
+      <text x="505" y="1112" font-size="18" font-weight="700">Online service and trust boundaries</text>
+    </g>
+    <g>
+      <rect x="120" y="1150" width="450" height="170" rx="18" fill="#eef7ed" stroke="#1f5b32" stroke-width="4"/>
+      <text x="155" y="1198" font-size="25" font-weight="700">4A. AD DS PKI objects</text>
+      <text x="155" y="1238" font-size="18">
+        <tspan x="155" dy="0">Templates, Enrollment Services, AIA, CDP,</tspan>
+        <tspan x="155" dy="29">Certification Authorities, and NTAuth;</tspan>
+        <tspan x="155" dy="29">forest replication and ACLs are monitored.</tspan>
+      </text>
+    </g>
+    <g>
+      <rect x="675" y="1150" width="450" height="170" rx="18" fill="#f2ebfa" stroke="#5b2c83" stroke-width="4"/>
+      <text x="710" y="1198" font-size="25" font-weight="700">4B. Enrollment and status tier</text>
+      <text x="710" y="1238" font-size="18">
+        <tspan x="710" dy="0">Separate CEP/CES, NDES, Web Enrollment,</tspan>
+        <tspan x="710" dy="29">or Online Responder only when required;</tspan>
+        <tspan x="710" dy="29">HTTPS, identity, and recovery are explicit.</tspan>
+      </text>
+    </g>
+    <g>
+      <rect x="1230" y="1150" width="450" height="170" rx="18" fill="#e7f6f7" stroke="#0e5a61" stroke-width="4"/>
+      <text x="1265" y="1198" font-size="25" font-weight="700">4C. Publication service</text>
+      <text x="1265" y="1238" font-size="18">
+        <tspan x="1265" dy="0">&lt;PkiWebHost&gt; publishes HTTP AIA/CDP.</tspan>
+        <tspan x="1265" dy="29">It remains available independently of CAs</tspan>
+        <tspan x="1265" dy="29">and holds public artifacts--never CA keys.</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="300" y="1420" width="1200" height="110" rx="18" fill="#f3f4f6" stroke="#374151" stroke-width="4"/>
+      <text x="350" y="1467" font-size="27" font-weight="700">5. Enrollment clients and relying parties</text>
+      <text x="350" y="1504" font-size="19">
+        <tspan x="350" dy="0">Domain members, remote and non-domain systems, managed devices, applications, network appliances, and recovery tools.</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

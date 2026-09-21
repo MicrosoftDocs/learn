@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-roles-topology.apply-topology-decision-matrix
+title: Apply the topology decision matrix
+metadata:
+  title: Apply the Topology Decision Matrix
+  description: Evaluate certificate authority designs against cost, complexity, assurance, availability, and recovery in a two-tier enterprise topology scenario.
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.date: 09/20/2026
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-apply-topology-decision-matrix.md)]

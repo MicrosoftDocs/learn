@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="2200" height="1250" viewBox="0 0 2200 1250">
+  <title>Certificate trust boundaries for AD DS and applications</title>
+  <desc>A left-to-right shared validation sequence separates configured root trust from chain validation, then branches to application-specific trust or Enterprise NTAuth authorization and domain-controller account mapping.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#17365d"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="2200" height="1250" fill="#ffffff"/>
+
+  <g stroke="#17365d" stroke-width="5" fill="none" marker-end="url(#arrow)">
+    <line x1="330" y1="550" x2="372" y2="550"/>
+    <line x1="680" y1="550" x2="722" y2="550"/>
+    <line x1="1090" y1="550" x2="1132" y2="550"/>
+  </g>
+
+  <path d="M 1440 550 L 1510 550 L 1510 230" fill="none" stroke="#17365d" stroke-width="5"/>
+  <path d="M 1510 550 L 1510 820" fill="none" stroke="#17365d" stroke-width="5"/>
+  <g stroke="#17365d" stroke-width="5" fill="none" marker-end="url(#arrow)">
+    <line x1="1510" y1="230" x2="1572" y2="230"/>
+    <line x1="1510" y1="820" x2="1572" y2="820"/>
+    <line x1="1855" y1="340" x2="1855" y2="382"/>
+    <line x1="1855" y1="950" x2="1855" y2="1002"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" fill="#10243e">
+    <g>
+      <rect x="50" y="450" width="280" height="200" rx="18" fill="#f3f4f6" stroke="#374151" stroke-width="4"/>
+      <text x="82" y="500" font-size="19" font-weight="700">1. Certificate presented</text>
+      <text x="82" y="542" font-size="20">
+        <tspan x="82" dy="0">Leaf identity and key</tspan>
+        <tspan x="82" dy="29">Issuer and serial</tspan>
+        <tspan x="82" dy="29">Purpose and policies</tspan>
+        <tspan x="82" dy="29">Candidate chain objects</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="380" y="450" width="300" height="200" rx="18" fill="#e8f1fb" stroke="#17365d" stroke-width="4"/>
+      <text x="412" y="500" font-size="26" font-weight="700">2. Root trust gate</text>
+      <text x="412" y="542" font-size="19">
+        <tspan x="412" dy="0">Is the terminating anchor</tspan>
+        <tspan x="412" dy="29">trusted in the effective OS,</tspan>
+        <tspan x="412" dy="29">device, browser, or private</tspan>
+        <tspan x="412" dy="29">application trust store?</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="730" y="450" width="360" height="200" rx="18" fill="#eef7ed" stroke="#1f5b32" stroke-width="4"/>
+      <text x="765" y="500" font-size="25" font-weight="700">3. Chain validation gate</text>
+      <text x="765" y="542" font-size="19">
+        <tspan x="765" dy="0">Build the intended issuer path;</tspan>
+        <tspan x="765" dy="29">verify signatures and time;</tspan>
+        <tspan x="765" dy="29">check constraints and extensions;</tspan>
+        <tspan x="765" dy="29">apply policy; check revocation.</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="1140" y="450" width="300" height="200" rx="18" fill="#fff4d6" stroke="#7a4f00" stroke-width="4"/>
+      <text x="1172" y="500" font-size="26" font-weight="700">4. Route by use</text>
+      <text x="1172" y="542" font-size="20">
+        <tspan x="1172" dy="0">Generic chain success is</tspan>
+        <tspan x="1172" dy="29">necessary, not sufficient.</tspan>
+        <tspan x="1172" dy="29">Apply the authorization</tspan>
+        <tspan x="1172" dy="29">boundary for this use.</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="1580" y="120" width="550" height="220" rx="18" fill="#f2ebfa" stroke="#5b2c83" stroke-width="4"/>
+      <text x="1620" y="170" font-size="24" font-weight="700">5A. Application-specific trust gate</text>
+      <text x="1620" y="208" font-size="19">
+        <tspan x="1620" dy="0">Evaluate the application's trust bundle or pin,</tspan>
+        <tspan x="1620" dy="26">SAN/name, EKU, policy, and algorithm rules,</tspan>
+        <tspan x="1620" dy="26">revocation behavior, tenant/resource authorization,</tspan>
+        <tspan x="1620" dy="26">and application-specific failure handling.</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="1580" y="390" width="550" height="170" rx="18" fill="#e5f5e8" stroke="#1f6b34" stroke-width="4"/>
+      <text x="1620" y="440" font-size="23" font-weight="700">6A. Accept or reject the application use</text>
+      <text x="1620" y="480" font-size="19">
+        <tspan x="1620" dy="0">Root or NTAuth membership cannot override</tspan>
+        <tspan x="1620" dy="27">this decision. Log the selected chain and</tspan>
+        <tspan x="1620" dy="27">the rule that accepted the identity.</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="1580" y="690" width="550" height="260" rx="18" fill="#fde8e7" stroke="#8b1e1e" stroke-width="4"/>
+      <text x="1620" y="740" font-size="23" font-weight="700">5B. Enterprise NTAuth authorization gate</text>
+      <text x="1620" y="780" font-size="18">
+        <tspan x="1620" dy="0">Is the issuing CA certificate authorized in:</tspan>
+        <tspan x="1620" dy="26">CN=NTAuthCertificates,CN=Public Key Services,</tspan>
+        <tspan x="1620" dy="26">CN=Services,CN=Configuration,&lt;ForestDN&gt;?</tspan>
+        <tspan x="1620" dy="26">Domain controllers consume forest authorization</tspan>
+        <tspan x="1620" dy="26">through the enterprise NTAuth store/cache;</tspan>
+        <tspan x="1620" dy="26">replication and refresh affect the result.</tspan>
+      </text>
+    </g>
+
+    <g>
+      <rect x="1580" y="1010" width="550" height="170" rx="18" fill="#e7f6f7" stroke="#0e5a61" stroke-width="4"/>
+      <text x="1620" y="1060" font-size="22" font-weight="700">6B. Domain controller maps and authorizes</text>
+      <text x="1620" y="1098" font-size="19">
+        <tspan x="1620" dy="0">Enforce purpose and strong account binding,</tspan>
+        <tspan x="1620" dy="27">mapping, protocol rules, account state,</tspan>
+        <tspan x="1620" dy="27">and authentication policy.</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

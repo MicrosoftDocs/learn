@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-roles-topology.choose-hierarchy-depth
+title: Choose hierarchy depth
+metadata:
+  title: Choose Hierarchy Depth
+  description: Compare certificate authority hierarchy depths and select the simplest topology that meets custody, policy, availability, and recovery requirements.
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.date: 09/20/2026
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/2-choose-hierarchy-depth.md)]
