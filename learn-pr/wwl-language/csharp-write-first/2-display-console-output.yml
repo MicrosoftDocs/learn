@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-write-first.display-console-output
+title: Display console output
+metadata:
+  title: Display Console Output
+  description: "Learn how to display text in the console with Console.WriteLine and Console.Write."
+  ms.date: 09/21/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-display-console-output.md)]

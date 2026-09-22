@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-literals-variables.declare-assign-variables
+title: Declare and assign variables
+metadata:
+  title: Declare and Assign Variables
+  description: "Learn how to declare, assign, and use variables in C#."
+  ms.date: 09/21/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-declare-assign-variables.md)]

@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-literals-variables
 metadata:
-  title: Store and retrieve data using literal and variable values in C#
+  title: Store data with variables in C#
   description: "Use data in your applications by creating literal values and variable values of different data types."
-  ms.date: 11/10/2025
+  ms.date: 09/21/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -12,7 +12,7 @@ metadata:
   ms.service: dotnet-csharp
   ms.devlang: csharp
   ai-usage: human-only
-title: Store and retrieve data using literal and variable values in C#
+title: Store data with variables in C#
 summary: Use data in your applications by creating literal values and variable values of different data types.
 abstract: |
   After you complete this module, you'll be able to:
@@ -41,11 +41,9 @@ products:
 units:
 - learn.languages.csharp-literals-variables.introduction
 - learn.languages.csharp-literals-variables.exercise-literal-values
-- learn.languages.csharp-literals-variables.declaring-variables
-- learn.languages.csharp-literals-variables.exercise-variables
-- learn.languages.csharp-literals-variables.implicitly-typed-local-variables
-- learn.languages.csharp-literals-variables.challenge
-- learn.languages.csharp-literals-variables.solution
+- learn.languages.csharp-literals-variables.declare-assign-variables
+- learn.languages.csharp-literals-variables.use-var-keyword
+- learn.languages.csharp-literals-variables.exercise-literals-variables
 - learn.languages.csharp-literals-variables.knowledge-check
 - learn.languages.csharp-literals-variables.summary
 badge:

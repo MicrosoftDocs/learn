@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-literals-variables.exercise-literals-variables
+title: Exercise - Work with literals and variables
+metadata:
+  title: Exercise - Work with Literals and Variables
+  description: "Practice creating, assigning, and displaying literal values and variables."
+  ms.date: 09/21/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-exercise-literals-variables.md)]

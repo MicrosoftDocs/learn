@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-write-first.exercise-welcome-message
+title: Exercise - Create a personalized greeting
+metadata:
+  title: Exercise - Create a Personalized Greeting
+  description: "Practice console output, user input, and string interpolation in a C# program."
+  ms.date: 09/21/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-welcome-message.md)]

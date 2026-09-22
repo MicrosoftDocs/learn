@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-basic-operations.perform-math-operations
+title: Perform math operations
+metadata:
+  title: Perform Math Operations
+  description: "Learn how to use arithmetic, compound assignment, and increment operators in C#."
+  ms.date: 09/21/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-perform-math-operations.md)]

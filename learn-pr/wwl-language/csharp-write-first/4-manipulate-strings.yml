@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-write-first.manipulate-strings
+title: Manipulate strings
+metadata:
+  title: Manipulate Strings
+  description: "Learn how to combine, format, and modify text with C# strings."
+  ms.date: 09/21/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-manipulate-strings.md)]
