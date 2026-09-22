@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-if-elseif-else.challenge
+title: Challenge - Display a subscription renewal message
+metadata:
+  title: Challenge - Display a Subscription Renewal Message
+  description: "Apply if, else if, and else statements to solve a subscription renewal business problem."
+  ms.date: 09/21/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-challenge-subscription-renewal.md)]

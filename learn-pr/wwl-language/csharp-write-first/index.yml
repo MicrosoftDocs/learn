@@ -3,7 +3,7 @@ uid: learn.languages.csharp-write-first
 metadata:
   title: Write your first C# code
   description: "Get started by writing code examples to learn the basics of the C# syntax."
-  ms.date: 11/10/2025
+  ms.date: 09/21/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -33,10 +33,11 @@ products:
 - dotnet
 units:
 - learn.languages.csharp-write-first.introduction
-- learn.languages.csharp-write-first.exercise-hello-world
-- learn.languages.csharp-write-first.how-it-works
-- learn.languages.csharp-write-first.challenge
-- learn.languages.csharp-write-first.review-solution-print-messages
+- learn.languages.csharp-write-first.display-console-output
+- learn.languages.csharp-write-first.accept-user-input
+- learn.languages.csharp-write-first.manipulate-strings
+- learn.languages.csharp-write-first.exercise-welcome-message
+- learn.languages.csharp-write-first.challenge-user-interaction
 - learn.languages.csharp-write-first.knowledge-check
 - learn.languages.csharp-write-first.summary
 badge:

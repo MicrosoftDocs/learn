@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-if-elseif-else.evaluate-conditions-with-boolean-expressions
+title: Evaluate conditions with Boolean expressions
+metadata:
+  title: Evaluate Conditions with Boolean Expressions
+  description: "Learn how to use Boolean expressions, comparison operators, and the if statement in C#."
+  ms.date: 09/21/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-evaluate-conditions-with-boolean-expressions.md)]

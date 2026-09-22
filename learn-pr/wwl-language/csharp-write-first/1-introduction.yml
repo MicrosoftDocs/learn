@@ -3,8 +3,8 @@ uid: learn.languages.csharp-write-first.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 11/10/2025
+  description: "Learn how to display console output, accept user input, and work with text in C#."
+  ms.date: 09/21/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit

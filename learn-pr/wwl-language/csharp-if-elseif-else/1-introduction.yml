@@ -3,8 +3,8 @@ uid: learn.languages.csharp-if-elseif-else.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 12/15/2025
+  description: "Learn how to add decision logic to your C# code using Boolean expressions and if statements."
+  ms.date: 09/21/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: unit
