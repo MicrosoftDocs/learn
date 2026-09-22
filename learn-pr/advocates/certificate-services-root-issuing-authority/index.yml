@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.windows-server.certificate-services-root-issuing-authority
+metadata:
+  title: Deploy Offline Root and Issuing Active Directory Certificate Services Certification Authorities
+  description: Deploy, harden, publish, validate, back up, and plan renewal for a two-tier Active Directory Certificate Services hierarchy.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-task-based
+  ms.service: windows-server
+title: Deploy offline root and issuing Active Directory Certificate Services certification authorities
+summary: Deploy, harden, publish, and validate an offline root certification authority with enterprise issuing certification authorities.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Prepare role-specific `CAPolicy.inf` files and explain installation, renewal, and non-retroactive behavior.
+  - Install standalone root and enterprise subordinate certification authorities.
+  - Complete a controlled offline root signing workflow.
+  - Configure certificate publication, revocation, policy, exit module, and service baselines.
+  - Publish certification authority artifacts to directory and web locations.
+  - Validate trust, chain building, certificate retrieval, and revocation retrieval from clean clients.
+  - Export a protected baseline, back up certification authority state, and define renewal plans.
+prerequisites: |
+  - Familiarity with Windows Server administration.
+  - Familiarity with Active Directory Domain Services.
+  - Understanding of public key infrastructure concepts.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - intermediate
+roles:
+  - administrator
+products:
+  - windows-server
+subjects:
+  - security
+  - infrastructure
+units:
+  - learn.windows-server.certificate-services-root-issuing-authority.introduction
+  - learn.windows-server.certificate-services-root-issuing-authority.install-offline-root
+  - learn.windows-server.certificate-services-root-issuing-authority.deploy-issuing-certification-authority-role
+  - learn.windows-server.certificate-services-root-issuing-authority.perform-offline-root-signing-ceremony
+  - learn.windows-server.certificate-services-root-issuing-authority.complete-issuing-certification-authority-configuration
+  - learn.windows-server.certificate-services-root-issuing-authority.publish-trust-data-validate-clients
+  - learn.windows-server.certificate-services-root-issuing-authority.capture-post-install-baseline-plan-renewal-validate-acceptance
+  - learn.windows-server.certificate-services-root-issuing-authority.knowledge-check
+  - learn.windows-server.certificate-services-root-issuing-authority.summary
+badge:
+  uid: learn.windows-server.certificate-services-root-issuing-authority.badge

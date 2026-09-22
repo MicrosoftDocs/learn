@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-root-issuing-authority.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review the skills covered in the offline root and issuing certification authority deployment module.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]

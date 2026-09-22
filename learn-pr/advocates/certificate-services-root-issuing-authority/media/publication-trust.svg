@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1792" viewBox="0 0 1440 1792" role="img" aria-labelledby="title" aria-describedby="desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Diagram of separate PKI publication, trust distribution, and client validation workflows.</title>
+  <desc id="desc">
+    Ten numbered steps separate artifact verification, directory publication,
+    HTTP publication, trust distribution, and client validation.
+    1. Verify approved artifact names, signatures, validity, CRL freshness,
+    hashes, custody, and change authorization.
+    The workflow then branches into independent AD DS and HTTP paths.
+    2. Publish to the AD DS Certification Authorities, AIA, CDP, and
+    Enrollment Services locations, and to NTAuthCertificates only when authorized.
+    3. Independently copy CA certificates and CRLs to the HTTP content path,
+    with a separate write identity and read-only web access.
+    4. Serve HTTP content with correct MIME types, bounded caching,
+    anonymous read, no directory listing, and monitoring.
+    5. Verify forest configuration replication and inspect Root, CA, and
+    NTAuth enterprise stores on representative domain controllers and
+    administration hosts. This follows AD DS publication in step 2.
+    6. Retrieve exact certificate URLs from each client network. Check
+    status, content type, length, signature, This Update, Next Update,
+    cache headers, and file freshness. This follows HTTP steps 3 and 4.
+    Both publication paths lead to step 7: distribute root trust by population.
+    Use AD DS or GPO for domain members, configuration management for managed
+    systems, and platform, device, browser, app, or manual trust for non-domain systems.
+    8. Test a clean domain client: process policy, confirm root and NTAuth
+    visibility, build the chain, and retrieve AIA and CRLs without prior caches.
+    9. Independently test a clean non-domain client: install trust through its
+    approved mechanism and verify the chain, AIA, and CRLs through its real
+    DNS, proxy, and firewall path.
+    Both client checks feed step 10, the evidence gate: approve production
+    issuance only after publication, trust, and client checks pass.
+  </desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#334e68"/>
+    </marker>
+    <marker id="arrow-directory" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#17365d"/>
+    </marker>
+    <marker id="arrow-http" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#246b3e"/>
+    </marker>
+    <style>
+      .step-title { font-size: 23px; font-weight: 700; }
+      .step-body { font-size: 20px; }
+      .step-number { font-size: 20px; font-weight: 700; text-anchor: middle; fill: #ffffff; }
+      .card { stroke-width: 2; }
+      .verification, .trust { fill: #4d3200; }
+      .verification .card, .trust .card { fill: #fff3d6; stroke: #7a4f01; }
+      .verification .badge, .trust .badge { fill: #7a4f01; }
+      .directory { fill: #102a43; }
+      .directory .card { fill: #e8f1fb; stroke: #17365d; }
+      .directory .badge { fill: #17365d; }
+      .http, .approval { fill: #174d2d; }
+      .http .card, .approval .card { fill: #e4f5ea; stroke: #246b3e; }
+      .http .badge, .approval .badge { fill: #246b3e; }
+      .connector, .branch { fill: none; stroke: #334e68; stroke-width: 3; stroke-linejoin: round; }
+      .connector { marker-end: url(#arrow); }
+      .directory-arrow { stroke: #17365d; marker-end: url(#arrow-directory); }
+      .http-arrow { stroke: #246b3e; marker-end: url(#arrow-http); }
+    </style>
+  </defs>
+
+  <rect id="background" x="0" y="0" width="1440" height="1792" fill="#ffffff"/>
+
+  <text x="48" y="52" font-size="32" font-weight="700" fill="#102a43">Publication and trust are separate control planes</text>
+  <text x="48" y="88" font-size="20" fill="#334e68">Verify artifacts, publish separately, distribute trust, and validate both client populations.</text>
+
+  <rect x="32" y="352" width="456" height="640" rx="16" fill="#f2f7fc" stroke="#9fb3c8" stroke-width="2"/>
+  <text x="60" y="384" font-size="20" font-weight="700" fill="#17365d">AD DS publication</text>
+  <rect x="500" y="352" width="908" height="640" rx="16" fill="#f2faf5" stroke="#82b594" stroke-width="2"/>
+  <text x="520" y="384" font-size="20" font-weight="700" fill="#246b3e">HTTP publication</text>
+
+  <g aria-hidden="true">
+    <path class="branch" d="M720 298 V332"/>
+    <path class="connector directory-arrow" d="M720 332 H260 V394"/>
+    <path class="connector http-arrow" d="M720 332 V394"/>
+    <circle cx="720" cy="332" r="4" fill="#334e68"/>
+    <path class="connector http-arrow" d="M930 516 H970"/>
+    <path class="connector directory-arrow" d="M260 638 V694"/>
+    <path class="connector http-arrow" d="M1180 638 V694"/>
+    <path class="branch" d="M260 970 V1024 H720"/>
+    <path class="branch" d="M950 970 V1024 H720"/>
+    <path class="connector" d="M720 1024 V1062"/>
+    <circle cx="720" cy="1024" r="4" fill="#334e68"/>
+    <path class="branch" d="M720 1250 V1288"/>
+    <path class="connector directory-arrow" d="M720 1288 H372 V1326"/>
+    <path class="connector http-arrow" d="M720 1288 H1068 V1326"/>
+    <circle cx="720" cy="1288" r="4" fill="#334e68"/>
+    <path class="branch" d="M372 1554 V1600 H720"/>
+    <path class="branch" d="M1068 1554 V1600 H720"/>
+    <path class="connector" d="M720 1600 V1640"/>
+    <circle cx="720" cy="1600" r="4" fill="#334e68"/>
+  </g>
+
+  <g id="step-1" class="step verification">
+    <rect class="card" x="360" y="136" width="720" height="152" rx="12"/>
+    <circle class="badge" cx="394" cy="172" r="20"/>
+    <text class="step-number" x="394" y="179">1</text>
+    <text class="step-title" x="428" y="179">Verify artifacts</text>
+    <text class="step-body" x="384" y="218">
+      <tspan x="384" dy="0">Check approved names, signatures, validity, CRL freshness,</tspan>
+      <tspan x="384" dy="32">hashes, custody, and change authorization.</tspan>
+    </text>
+  </g>
+
+  <g id="step-2" class="step directory">
+    <rect class="card" x="60" y="404" width="400" height="224" rx="12"/>
+    <circle class="badge" cx="94" cy="440" r="20"/>
+    <text class="step-number" x="94" y="447">2</text>
+    <text class="step-title" x="128" y="447">Publish to AD DS</text>
+    <text class="step-body" x="84" y="486">
+      <tspan x="84" dy="0">Certification Authorities, AIA, CDP,</tspan>
+      <tspan x="84" dy="32">Enrollment Services, and,</tspan>
+      <tspan x="84" dy="32">only when authorized,</tspan>
+      <tspan x="84" dy="32">NTAuthCertificates.</tspan>
+    </text>
+  </g>
+  <g id="step-3" class="step http">
+    <rect class="card" x="520" y="404" width="400" height="224" rx="12"/>
+    <circle class="badge" cx="554" cy="440" r="20"/>
+    <text class="step-number" x="554" y="447">3</text>
+    <text class="step-title" x="588" y="447">Publish to HTTP</text>
+    <text class="step-body" x="544" y="486">
+      <tspan x="544" dy="0">Copy CA certificates and CRLs to</tspan>
+      <tspan x="544" dy="32">the content path with a separate</tspan>
+      <tspan x="544" dy="32">write identity and read-only</tspan>
+      <tspan x="544" dy="32">web access.</tspan>
+    </text>
+  </g>
+  <g id="step-4" class="step http">
+    <rect class="card" x="980" y="404" width="400" height="224" rx="12"/>
+    <circle class="badge" cx="1014" cy="440" r="20"/>
+    <text class="step-number" x="1014" y="447">4</text>
+    <text class="step-title" x="1048" y="447">Serve safely</text>
+    <text class="step-body" x="1004" y="486">
+      <tspan x="1004" dy="0">Correct MIME types, bounded</tspan>
+      <tspan x="1004" dy="32">caching, anonymous read,</tspan>
+      <tspan x="1004" dy="32">no directory listing,</tspan>
+      <tspan x="1004" dy="32">and monitoring.</tspan>
+    </text>
+  </g>
+
+  <g id="step-5" class="step directory">
+    <rect class="card" x="60" y="704" width="400" height="256" rx="12"/>
+    <circle class="badge" cx="94" cy="740" r="20"/>
+    <text class="step-number" x="94" y="747">5</text>
+    <text class="step-title" x="128" y="747">
+      <tspan x="128" dy="0">Replicate and inspect</tspan>
+      <tspan x="128" dy="34">directory state</tspan>
+    </text>
+    <text class="step-body" x="84" y="814">
+      <tspan x="84" dy="0">Check forest configuration</tspan>
+      <tspan x="84" dy="32">replication. Inspect Root, CA, and</tspan>
+      <tspan x="84" dy="32">NTAuth enterprise stores. Confirm</tspan>
+      <tspan x="84" dy="32">intended values on representative</tspan>
+      <tspan x="84" dy="32">domain controllers and admin hosts.</tspan>
+    </text>
+  </g>
+  <g id="step-6" class="step http">
+    <rect class="card" x="520" y="704" width="860" height="256" rx="12"/>
+    <circle class="badge" cx="554" cy="740" r="20"/>
+    <text class="step-number" x="554" y="747">6</text>
+    <text class="step-title" x="588" y="747">Retrieve and inspect web content</text>
+    <text class="step-body" x="544" y="800">
+      <tspan x="544" dy="0">Use exact certificate URLs from each client network.</tspan>
+      <tspan x="544" dy="32">Check status, content type, length, signature, This Update,</tspan>
+      <tspan x="544" dy="32">Next Update, cache headers, and file freshness.</tspan>
+    </text>
+  </g>
+
+  <g id="step-7" class="step trust">
+    <rect class="card" x="240" y="1072" width="960" height="168" rx="12"/>
+    <circle class="badge" cx="274" cy="1108" r="20"/>
+    <text class="step-number" x="274" y="1115">7</text>
+    <text class="step-title" x="308" y="1115">Distribute root trust by population</text>
+    <text class="step-body" x="264" y="1158">
+      <tspan x="264" dy="0">Domain members: AD DS or GPO. Managed systems: configuration management.</tspan>
+      <tspan x="264" dy="32">Non-domain systems: platform, device, browser, app, or manual trust.</tspan>
+    </text>
+  </g>
+
+  <g id="step-8" class="step directory">
+    <rect class="card" x="60" y="1336" width="624" height="208" rx="12"/>
+    <circle class="badge" cx="94" cy="1372" r="20"/>
+    <text class="step-number" x="94" y="1379">8</text>
+    <text class="step-title" x="128" y="1379">Test a clean domain client</text>
+    <text class="step-body" x="84" y="1420">
+      <tspan x="84" dy="0">Process policy; confirm root and NTAuth visibility.</tspan>
+      <tspan x="84" dy="32">Build the chain and retrieve AIA and CRLs without</tspan>
+      <tspan x="84" dy="32">relying on prior caches.</tspan>
+    </text>
+  </g>
+  <g id="step-9" class="step http">
+    <rect class="card" x="756" y="1336" width="624" height="208" rx="12"/>
+    <circle class="badge" cx="790" cy="1372" r="20"/>
+    <text class="step-number" x="790" y="1379">9</text>
+    <text class="step-title" x="824" y="1379">Test a clean non-domain client</text>
+    <text class="step-body" x="780" y="1420">
+      <tspan x="780" dy="0">Install trust through its approved mechanism, then</tspan>
+      <tspan x="780" dy="32">verify the chain and retrieve AIA and CRLs over the</tspan>
+      <tspan x="780" dy="32">client's real DNS, proxy, and firewall path.</tspan>
+    </text>
+  </g>
+
+  <g id="step-10" class="step approval">
+    <rect class="card" x="240" y="1650" width="960" height="110" rx="12"/>
+    <circle class="badge" cx="274" cy="1686" r="20"/>
+    <text class="step-number" x="274" y="1693">10</text>
+    <text class="step-title" x="308" y="1693">Evidence gate: approve production</text>
+    <text class="step-body" x="264" y="1732">Approve production issuance only after publication, trust, and client checks pass.</text>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-root-issuing-authority.publish-trust-data-validate-clients
+title: Publish trust data, validate clients
+metadata:
+  title: Publish Trust Data, Validate Clients
+  description: Publish certification authority artifacts to directory and web locations, distribute trust, manage enterprise authentication authorization, and validate clean clients.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/6-publish-trust-data-validate-clients.md)]

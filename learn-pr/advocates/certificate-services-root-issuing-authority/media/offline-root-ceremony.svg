@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1536" viewBox="0 0 1440 1536" role="img" aria-labelledby="title" aria-describedby="desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Diagram of the ten-step offline root certificate ceremony.</title>
+  <desc id="desc">
+    Follow steps 1 through 10. Read each row from left to right, then continue
+    with the next row. Steps 1 through 6 take place in the offline trusted zone.
+    1. Authorize the ceremony: approve the request and roles, establish quorum
+    and a change record, and prepare the serial log, controlled media, rollback,
+    and expected outputs.
+    2. Prepare the trusted system: verify physical custody, time, CAPolicy.inf,
+    configuration, HSM, and malware-controlled media.
+    3. Inspect the CA request: match the subject, key, hash, basic constraints,
+    policy, and request hash to the approved design.
+    4. Submit the request, record RequestId, obtain authorized approval, issue,
+    and verify the subordinate certificate.
+    5. Generate a current root CRL and export RootCA.cer, RootCA.crl, and
+    IssuingCA.cer with ceremony data.
+    6. Record SHA-256 hashes out of band, seal media under custody, stop
+    CertSvc, power off, and secure the root.
+    7. Transfer custody: log the handoff, destination, people, timestamps,
+    media identifier, and tamper-evident seal condition.
+    Steps 8 through 10 take place in the domain-connected zone.
+    8. Scan media without changing files, recalculate hashes, and compare
+    them with the independent ceremony record.
+    9. Publish to AD DS from an authorized workstation and independently
+    copy files to the HTTP endpoint.
+    10. Check AD DS replication and HTTP content, verify trust, AIA, CRL,
+    and the chain, and record evidence and sign-off.
+    The root never joins the domain or connects to AD DS, the publication
+    server, or an untrusted network. Arrows represent workflow and artifact
+    transfer, not network connections. Never bridge the zones for convenience;
+    transfer artifacts, not network connectivity or administrative credentials.
+  </desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#334e68"/>
+    </marker>
+    <style>
+      .step-title { font-size: 23px; font-weight: 700; }
+      .step-body { font-size: 20px; }
+      .step-number { font-size: 20px; font-weight: 700; text-anchor: middle; fill: #ffffff; }
+      .card { stroke-width: 2; }
+      .offline { fill: #4d3200; }
+      .offline .card { fill: #fff3d6; stroke: #7a4f01; }
+      .offline .badge { fill: #7a4f01; }
+      .transfer { fill: #1f2937; }
+      .transfer .card { fill: #f3f4f6; stroke: #4b5563; }
+      .transfer .badge { fill: #4b5563; }
+      .admin { fill: #102a43; }
+      .admin .card { fill: #e8f1fb; stroke: #17365d; }
+      .admin .badge { fill: #17365d; }
+      .publication { fill: #174d2d; }
+      .publication .card { fill: #e4f5ea; stroke: #246b3e; }
+      .publication .badge { fill: #246b3e; }
+      .connector { fill: none; stroke: #334e68; stroke-width: 3; stroke-linejoin: round; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect id="background" x="0" y="0" width="1440" height="1536" fill="#ffffff"/>
+
+  <text x="48" y="52" font-size="32" font-weight="700" fill="#102a43">Offline root ceremony: controlled signing and transfer</text>
+  <text x="48" y="88" font-size="20" fill="#334e68">The root never joins the domain or connects to AD DS, the publication server, or an untrusted network.</text>
+
+  <rect x="32" y="128" width="1376" height="626" rx="16" fill="#fffbf2" stroke="#be9130" stroke-width="2"/>
+  <text x="60" y="170" font-size="24" font-weight="700" fill="#6b4600">Offline trusted zone | Steps 1-6</text>
+  <text x="1380" y="170" text-anchor="end" font-size="18" fill="#6b4600">Read each row from left to right.</text>
+
+  <rect x="32" y="1034" width="1376" height="332" rx="16" fill="#f2f7fc" stroke="#9fb3c8" stroke-width="2"/>
+  <text x="60" y="1076" font-size="24" font-weight="700" fill="#17365d">Domain-connected administration and publication | Steps 8-10</text>
+
+  <g aria-hidden="true">
+    <path class="connector" d="M470 316 H510"/>
+    <path class="connector" d="M930 316 H970"/>
+    <path class="connector" d="M1180 438 V466 H260 V494"/>
+    <path class="connector" d="M470 616 H510"/>
+    <path class="connector" d="M930 616 H970"/>
+    <path class="connector" d="M1180 738 V806"/>
+    <path class="connector" d="M50 894 H16 V1224 H50"/>
+    <path class="connector" d="M470 1224 H510"/>
+    <path class="connector" d="M930 1224 H970"/>
+  </g>
+
+  <g id="step-1" class="step offline">
+    <rect class="card" x="60" y="204" width="400" height="224" rx="12"/>
+    <circle class="badge" cx="94" cy="240" r="20"/>
+    <text class="step-number" x="94" y="247">1</text>
+    <text class="step-title" x="128" y="247">Authorize ceremony</text>
+    <text class="step-body" x="84" y="286">
+      <tspan x="84" dy="0">Approved request and roles;</tspan>
+      <tspan x="84" dy="32">quorum and change record;</tspan>
+      <tspan x="84" dy="32">serial log and controlled media;</tspan>
+      <tspan x="84" dy="32">rollback and expected outputs.</tspan>
+    </text>
+  </g>
+  <g id="step-2" class="step offline">
+    <rect class="card" x="520" y="204" width="400" height="224" rx="12"/>
+    <circle class="badge" cx="554" cy="240" r="20"/>
+    <text class="step-number" x="554" y="247">2</text>
+    <text class="step-title" x="588" y="247">Prepare trusted system</text>
+    <text class="step-body" x="544" y="286">
+      <tspan x="544" dy="0">Verify physical custody, time,</tspan>
+      <tspan x="544" dy="32">CAPolicy.inf, configuration, HSM,</tspan>
+      <tspan x="544" dy="32">and malware-controlled media.</tspan>
+    </text>
+  </g>
+  <g id="step-3" class="step offline">
+    <rect class="card" x="980" y="204" width="400" height="224" rx="12"/>
+    <circle class="badge" cx="1014" cy="240" r="20"/>
+    <text class="step-number" x="1014" y="247">3</text>
+    <text class="step-title" x="1048" y="247">Inspect CA request</text>
+    <text class="step-body" x="1004" y="286">
+      <tspan x="1004" dy="0">Match subject, key, hash, basic</tspan>
+      <tspan x="1004" dy="32">constraints, policy, and request</tspan>
+      <tspan x="1004" dy="32">hash to the approved design.</tspan>
+    </text>
+  </g>
+
+  <g id="step-4" class="step offline">
+    <rect class="card" x="60" y="504" width="400" height="224" rx="12"/>
+    <circle class="badge" cx="94" cy="540" r="20"/>
+    <text class="step-number" x="94" y="547">4</text>
+    <text class="step-title" x="128" y="547">Approve and issue</text>
+    <text class="step-body" x="84" y="586">
+      <tspan x="84" dy="0">Submit and record RequestId.</tspan>
+      <tspan x="84" dy="32">Require authorized approval,</tspan>
+      <tspan x="84" dy="32">issue, and verify the</tspan>
+      <tspan x="84" dy="32">subordinate certificate.</tspan>
+    </text>
+  </g>
+  <g id="step-5" class="step offline">
+    <rect class="card" x="520" y="504" width="400" height="224" rx="12"/>
+    <circle class="badge" cx="554" cy="540" r="20"/>
+    <text class="step-number" x="554" y="547">5</text>
+    <text class="step-title" x="588" y="547">Export signed artifacts</text>
+    <text class="step-body" x="544" y="586">
+      <tspan x="544" dy="0">Generate a current root CRL.</tspan>
+      <tspan x="544" dy="32">Export RootCA.cer, RootCA.crl,</tspan>
+      <tspan x="544" dy="32">and IssuingCA.cer with</tspan>
+      <tspan x="544" dy="32">the ceremony data.</tspan>
+    </text>
+  </g>
+  <g id="step-6" class="step offline">
+    <rect class="card" x="980" y="504" width="400" height="224" rx="12"/>
+    <circle class="badge" cx="1014" cy="540" r="20"/>
+    <text class="step-number" x="1014" y="547">6</text>
+    <text class="step-title" x="1048" y="547">Hash, seal, shut down</text>
+    <text class="step-body" x="1004" y="586">
+      <tspan x="1004" dy="0">Record SHA-256 out of band.</tspan>
+      <tspan x="1004" dy="32">Seal media under custody;</tspan>
+      <tspan x="1004" dy="32">stop CertSvc, power off,</tspan>
+      <tspan x="1004" dy="32">and secure the root.</tspan>
+    </text>
+  </g>
+
+  <g id="step-7" class="step transfer">
+    <rect class="card" x="60" y="816" width="1320" height="156" rx="12"/>
+    <circle class="badge" cx="94" cy="852" r="20"/>
+    <text class="step-number" x="94" y="859">7</text>
+    <text class="step-title" x="128" y="859">Transfer custody</text>
+    <text x="1356" y="857" text-anchor="end" font-size="18" font-weight="700">CONTROLLED TRANSFER</text>
+    <text class="step-body" x="84" y="899">
+      <tspan x="84" dy="0">Log handoff, destination, people, timestamps, and the media identifier.</tspan>
+      <tspan x="84" dy="32">Record the tamper-evident seal condition.</tspan>
+    </text>
+  </g>
+
+  <g id="step-8" class="step admin">
+    <rect class="card" x="60" y="1110" width="400" height="228" rx="12"/>
+    <circle class="badge" cx="94" cy="1146" r="20"/>
+    <text class="step-number" x="94" y="1153">8</text>
+    <text class="step-title" x="128" y="1153">Verify on admin host</text>
+    <text class="step-body" x="84" y="1192">
+      <tspan x="84" dy="0">Scan media without changing files.</tspan>
+      <tspan x="84" dy="32">Recalculate hashes and compare</tspan>
+      <tspan x="84" dy="32">them with the independent</tspan>
+      <tspan x="84" dy="32">ceremony record.</tspan>
+    </text>
+  </g>
+  <g id="step-9" class="step publication">
+    <rect class="card" x="520" y="1110" width="400" height="228" rx="12"/>
+    <circle class="badge" cx="554" cy="1146" r="20"/>
+    <text class="step-number" x="554" y="1153">9</text>
+    <text class="step-title" x="588" y="1153">Publish separately</text>
+    <text class="step-body" x="544" y="1192">
+      <tspan x="544" dy="0">Use an authorized workstation</tspan>
+      <tspan x="544" dy="32">for AD DS publication.</tspan>
+      <tspan x="544" dy="32">Independently copy files</tspan>
+      <tspan x="544" dy="32">to the HTTP endpoint.</tspan>
+    </text>
+  </g>
+  <g id="step-10" class="step publication">
+    <rect class="card" x="980" y="1110" width="400" height="228" rx="12"/>
+    <circle class="badge" cx="1014" cy="1146" r="20"/>
+    <text class="step-number" x="1014" y="1153">10</text>
+    <text class="step-title" x="1048" y="1153">Validate and close</text>
+    <text class="step-body" x="1004" y="1192">
+      <tspan x="1004" dy="0">Check AD DS replication;</tspan>
+      <tspan x="1004" dy="32">inspect HTTP content;</tspan>
+      <tspan x="1004" dy="32">verify trust, AIA, CRL, and chain;</tspan>
+      <tspan x="1004" dy="32">record evidence and sign-off.</tspan>
+    </text>
+  </g>
+
+  <g id="isolation-warning">
+    <rect x="32" y="1400" width="1376" height="96" rx="12" fill="#fde8e8" stroke="#9b1c1c" stroke-width="2"/>
+    <text x="60" y="1440" font-size="23" font-weight="700" fill="#7f1d1d">Never bridge the zones to make publication convenient.</text>
+    <text x="60" y="1474" font-size="20" fill="#7f1d1d">Transfer artifacts, not network connectivity or administrative credentials.</text>
+  </g>
+</svg>
