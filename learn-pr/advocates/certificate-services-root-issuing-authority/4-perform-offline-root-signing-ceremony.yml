@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-root-issuing-authority.perform-offline-root-signing-ceremony
+title: Perform the offline root signing ceremony
+metadata:
+  title: Perform the Offline Root Signing Ceremony
+  description: Sign a subordinate request during a controlled offline root ceremony, verify public artifacts, and transfer them securely.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-perform-offline-root-signing-ceremony.md)]

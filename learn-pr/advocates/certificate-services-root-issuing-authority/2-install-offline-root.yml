@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-root-issuing-authority.install-offline-root
+title: Install the offline root
+metadata:
+  title: Install the Offline Root
+  description: Prepare, install, harden, configure, and verify an offline root certification authority.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/2-install-offline-root.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-root-issuing-authority.capture-post-install-baseline-plan-renewal-validate-acceptance
+title: Capture the post-install baseline, plan renewal, validate acceptance
+metadata:
+  title: Capture the Post-Install Baseline, Plan Renewal, Validate Acceptance
+  description: Capture the effective configuration, back up certification authority state, plan renewal, and apply two-tier acceptance criteria.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-capture-post-install-baseline-plan-renewal-validate-acceptance.md)]

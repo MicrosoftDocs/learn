@@ -1,0 +1,126 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-root-issuing-authority.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Assess your understanding of certification authority configuration, publication, trust, storage, recovery, and renewal decisions.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 10
+content: |
+quiz:
+  questions:
+    - content: Why should the offline root and issuing certification authority use separate `CAPolicy.inf` files?
+      choices:
+        - content: The files must be identical so that certificate extensions remain consistent.
+          isCorrect: false
+          explanation: Root and subordinate certification authorities have different policy and extension requirements.
+        - content: Each role has different certificate policy, constraint, renewal, and publication requirements.
+          isCorrect: true
+          explanation: Separate files apply the correct settings for each certification authority role.
+        - content: Empty authority information access and certificate revocation list sections on the subordinate control the certificate signed by the root.
+          isCorrect: false
+          explanation: The signing root determines the extensions in the subordinate certification authority certificate.
+    - content: What happens to existing certificates after an administrator corrects an authority information access address in `CAPolicy.inf`?
+      choices:
+        - content: Existing certificates remain unchanged.
+          isCorrect: true
+          explanation: Certificate and extension changes aren't retroactive.
+        - content: Certificate Services updates existing certificates after the next service restart.
+          isCorrect: false
+          explanation: Restarting Certificate Services doesn't rewrite certificates.
+        - content: Domain clients replace the address during the next policy refresh.
+          isCorrect: false
+          explanation: Client policy processing doesn't modify issued certificates.
+    - content: What should an operator do after `certreq.exe -submit` reports that a request was taken under submission?
+      choices:
+        - content: Submit the request again until the certificate is issued automatically.
+          isCorrect: false
+          explanation: Repeated submission can create duplicate requests and doesn't provide the required approval.
+        - content: Restart Certificate Services, then copy the request directly to the issuing server.
+          isCorrect: false
+          explanation: A restart doesn't approve a pending request or produce a signed certificate.
+        - content: Record the request identifier, inspect the request, approve it, then retrieve the certificate.
+          isCorrect: true
+          explanation: A standalone root commonly holds requests for authorized review and issuance.
+    - content: Why is `EDITF_ATTRIBUTESUBJECTALTNAME2` a material certification authority setting?
+      choices:
+        - content: It changes the certification authority key length during renewal.
+          isCorrect: false
+          explanation: Key length is controlled by key and renewal configuration, not this policy flag.
+        - content: It permits subject alternative names from request attributes across the certification authority.
+          isCorrect: true
+          explanation: The flag can bypass assumptions in certificate template subject-name settings.
+        - content: It automatically publishes certificate revocation lists to web servers.
+          isCorrect: false
+          explanation: Publication locations and flags control certificate revocation list publication.
+    - content: Why might a non-domain appliance reject a certificate even when the root certificate is published in Active Directory Domain Services?
+      choices:
+        - content: Active Directory publication always blocks non-domain certificate validation.
+          isCorrect: false
+          explanation: Active Directory publication doesn't block validation, but non-domain systems don't consume it automatically.
+        - content: The issuing certification authority must be configured as an enterprise root.
+          isCorrect: false
+          explanation: Changing the certification authority role isn't the correct trust-distribution solution.
+        - content: The appliance needs the root through its own operating system, application, or device trust mechanism.
+          isCorrect: true
+          explanation: Non-domain populations require a trust-distribution method that they support.
+    - content: What additional authorization layer should you verify when a certificate chains to a trusted root but certificate-based domain sign-in fails?
+      choices:
+        - content: Enterprise authentication certification authority authorization, replication, certificate usage, mapping, validity, and revocation.
+          isCorrect: true
+          explanation: Root trust alone doesn't authorize a certification authority for certificate-based domain authentication.
+        - content: Only the local Trusted Root Certification Authorities store.
+          isCorrect: false
+          explanation: A trusted chain doesn't prove enterprise authentication authorization or account mapping.
+        - content: Only the web server MIME type for the root certificate.
+          isCorrect: false
+          explanation: MIME configuration doesn't establish domain authentication authorization.
+    - content: What does configuring authority information access and certificate revocation list distribution point extensions not do?
+      choices:
+        - content: Add retrieval addresses to newly issued certificates.
+          isCorrect: false
+          explanation: Adding retrieval addresses is a primary purpose of extension configuration.
+        - content: Copy certification authority certificates and revocation lists to the web publication location.
+          isCorrect: true
+          explanation: Artifact publication is a separate, authorized file deployment operation.
+        - content: Define the locations that clients use for chain building and revocation checking.
+          isCorrect: false
+          explanation: The configured extensions define those client retrieval locations.
+    - content: When should the certification authority database and transaction logs use separate storage failure domains?
+      choices:
+        - content: Whenever separate drive letters can be created on the same physical disk.
+          isCorrect: false
+          explanation: Separate drive letters on one failure domain don't provide independent recovery behavior.
+        - content: Only when the certification authority uses a hardware security module.
+          isCorrect: false
+          explanation: Key protection doesn't determine database and transaction-log storage requirements.
+        - content: When measured performance, recovery, backup, or independent failure objectives justify the design.
+          isCorrect: true
+          explanation: Storage separation should address documented operational and recovery objectives.
+    - content: What should operators do when Certificate Services repeatedly restarts while the hardware security module reports unavailable key storage?
+      choices:
+        - content: Stop the restart loop, preserve evidence, recover the dependency, then verify the key and service.
+          isCorrect: true
+          explanation: Repeated restarts can't recover an unavailable key provider and can obscure the failure.
+        - content: Increase the number of automatic restart attempts indefinitely.
+          isCorrect: false
+          explanation: An endless restart loop doesn't repair the hardware security module or key association.
+        - content: Disable hardware security module event logging.
+          isCorrect: false
+          explanation: Event evidence is required to diagnose and recover the failed dependency.
+    - content: When can an old issuing certification authority certificate be removed from enterprise authentication authorization after renewal?
+      choices:
+        - content: Immediately after the replacement certificate is published.
+          isCorrect: false
+          explanation: Existing authentication certificates might still depend on the old certification authority certificate.
+        - content: After dependent certificates are replaced or expire and replication, clients, authentication, and rollback are validated.
+          isCorrect: true
+          explanation: Overlap prevents authentication outages during the transition.
+        - content: Only after removing the trusted root certificate from every client.
+          isCorrect: false
+          explanation: Root trust removal and enterprise authentication authorization removal are separate operations.
