@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-root-issuing-authority.complete-issuing-certification-authority-configuration
+title: Complete the issuing certification authority configuration
+metadata:
+  title: Complete the Issuing Certification Authority Configuration
+  description: Install the subordinate certificate, configure publication extensions and revocation settings, then validate policy and service behavior.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-complete-issuing-certification-authority-configuration.md)]

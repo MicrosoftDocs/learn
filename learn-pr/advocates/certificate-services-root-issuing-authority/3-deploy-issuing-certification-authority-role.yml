@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.certificate-services-root-issuing-authority.deploy-issuing-certification-authority-role
+title: Deploy the issuing certification authority role
+metadata:
+  title: Deploy the Issuing Certification Authority Role
+  description: Install the issuing certification authority role, create the subordinate request, and inspect its identity and cryptographic properties.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-deploy-issuing-certification-authority-role.md)]
