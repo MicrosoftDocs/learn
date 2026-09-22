@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-basic-operations.exercise-calculator
+title: Exercise - Build a tip calculator
+metadata:
+  title: Exercise - Build a Tip Calculator
+  description: "Practice numeric calculations, type conversion, and formatted output by building a tip calculator."
+  ms.date: 09/21/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-calculator.md)]

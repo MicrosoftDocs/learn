@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-basic-operations.challenge-temperature-conversion
+title: Challenge - Convert Fahrenheit to Celsius
+metadata:
+  title: Challenge - Convert Fahrenheit to Celsius
+  description: "Apply numeric data types and arithmetic operations to convert Fahrenheit to Celsius."
+  ms.date: 09/21/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-challenge-temperature-conversion.md)]

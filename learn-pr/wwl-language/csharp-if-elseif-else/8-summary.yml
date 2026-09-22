@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-if-elseif-else.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Review how to add decision logic to your C# code using if, else if, else, and logical operators."
+  ms.date: 09/21/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

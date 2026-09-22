@@ -3,7 +3,7 @@ uid: learn.languages.csharp-if-elseif-else
 metadata:
   title: Add Decision Logic to your Code using `if`, `else`, and `else if` Statements in C#
   description: "Learn to branch your code's execution path by evaluating Boolean expressions."
-  ms.date: 12/15/2025
+  ms.date: 09/21/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: module
@@ -26,13 +26,11 @@ abstract: |
 
   -   Nest code blocks within other code blocks.
 prerequisites: |
-  -   Experience declaring, initializing, setting, and retrieving variables by using the int data type.
+  -   Experience declaring, initializing, and using variables with the int and bool data types.
 
-  -   Experience printing messages to output by using Console.WriteLine().
+  -   Experience printing messages to output by using Console.WriteLine() and string interpolation.
 
-  -   Experience with string interpolation to combine variables into literal strings.
-
-  -   Experience working with the System. Random class to generate random numbers.
+  -   Experience working with the Random class to generate random numbers.
 iconUrl: /training/achievements/csharp-if-elseif-else.svg
 levels:
 - beginner
@@ -43,15 +41,15 @@ roles:
 - student
 products:
 - dotnet
-- vs-code
 subjects:
 - app-development
 units:
 - learn.languages.csharp-if-elseif-else.introduction
-- learn.languages.csharp-if-elseif-else.exercise-if
-- learn.languages.csharp-if-elseif-else.exercise-elseif-else
+- learn.languages.csharp-if-elseif-else.evaluate-conditions-with-boolean-expressions
+- learn.languages.csharp-if-elseif-else.control-flow-with-if-else
+- learn.languages.csharp-if-elseif-else.combine-conditions-with-logical-operators
+- learn.languages.csharp-if-elseif-else.exercise-dice-game
 - learn.languages.csharp-if-elseif-else.challenge
-- learn.languages.csharp-if-elseif-else.solution
 - learn.languages.csharp-if-elseif-else.knowledge-check
 - learn.languages.csharp-if-elseif-else.summary
 badge:

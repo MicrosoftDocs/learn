@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-literals-variables.exercise-literal-values
+title: Work with literal values
+metadata:
+  title: Work with Literal Values
+  description: "Learn how to create and use literal values for common C# data types."
+  ms.date: 09/21/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-literal-values.md)]

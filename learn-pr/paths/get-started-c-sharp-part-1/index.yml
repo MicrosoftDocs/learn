@@ -25,9 +25,7 @@ products:
 modules:
 - learn.languages.csharp-write-first
 - learn.languages.csharp-literals-variables
-- learn.languages.csharp-basic-formatting
 - learn.languages.csharp-basic-operations
-- learn.wwl.guided-project-calculate-print-student-grades
-- learn.wwl.guided-project-calculate-final-gpa
+- learn.languages.csharp-if-elseif-else
 trophy:
   uid: learn.wwl.get-started-c-sharp-part-1.trophy

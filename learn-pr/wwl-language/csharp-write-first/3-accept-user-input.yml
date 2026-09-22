@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-write-first.accept-user-input
+title: Accept user input
+metadata:
+  title: Accept User Input
+  description: "Learn how to accept console input and store it in C# variables."
+  ms.date: 09/21/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-accept-user-input.md)]

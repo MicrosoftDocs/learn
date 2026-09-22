@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-literals-variables.use-var-keyword
+title: Use the var keyword
+metadata:
+  title: Use the var Keyword
+  description: "Learn how C# infers a variable type when you use the var keyword."
+  ms.date: 09/21/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-use-var-keyword.md)]

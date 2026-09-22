@@ -63,7 +63,6 @@ products:
 modules:
 - learn.wwl.install-configure-visual-studio-code
 - learn.languages.csharp-call-methods
-- learn.languages.csharp-if-elseif-else
 - learn.languages.csharp-arrays
 - learn.languages.csharp-readable-code
 - learn.wwl.guided-project-arrays-iteration-selection
