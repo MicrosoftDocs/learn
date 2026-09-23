@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-pro-12-inch-2nd-edition.modern-experiences-for-flexible-work
+title: Modern experiences for flexible work
+metadata:
+  title: Modern Experiences For Flexible Work
+  description: This content is part of the "Enable productive work from anywhere with Surface Pro for Business, 12-inch (2nd Edition)" module.
+  ms.date: 09/22/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-modern-experiences-for-flexible-work.md)]
