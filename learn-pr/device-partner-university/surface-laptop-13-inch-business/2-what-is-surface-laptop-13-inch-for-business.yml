@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-laptop-13-inch-business.what-is-surface-laptop-13-inch-for-business
+title: What is Surface Laptop 13-inch for Business?
+metadata:
+  title: What Is Surface Laptop 13-Inch For Business?
+  description: This content is part of the "Support mobile productivity with Surface Laptop for Business 13-inch" module.
+  ms.date: 09/23/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-what-is-surface-laptop-13-inch-for-business.md)]

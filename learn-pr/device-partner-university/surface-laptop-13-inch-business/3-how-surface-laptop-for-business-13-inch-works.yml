@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-laptop-13-inch-business.how-surface-laptop-for-business-13-inch-works
+title: How Surface Laptop for Business 13-inch works
+metadata:
+  title: How Surface Laptop For Business 13-Inch Works
+  description: This content is part of the "Support mobile productivity with Surface Laptop for Business 13-inch" module.
+  ms.date: 09/23/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-how-surface-laptop-for-business-13-inch-works.md)]
