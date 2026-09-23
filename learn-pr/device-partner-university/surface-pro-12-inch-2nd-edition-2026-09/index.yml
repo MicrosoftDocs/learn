@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.surface-pro-12-inch-2nd-edition-2026-09
+title: Enable productive work from anywhere with Surface Pro for Business, 12-inch (2nd Edition)
+metadata:
+  title: Enable Productive Work From Anywhere with Surface Pro for Business, 12-inch (2nd Edition)
+  description: "In this module, you'll learn how to enable productive work from anywhere with Surface Pro for Business, 12-inch (2nd Edition)."
+  ms.date: 09/22/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: > 
+  In this module, you'll learn how to enable productive work from anywhere with Surface Pro for Business, 12-inch (2nd Edition).
+
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the key features and capabilities of Surface Pro for Business, 12-inch (2nd Edition).
+  - Explain how Surface Pro for Business supports productive work from anywhere.
+  - Identify the modern experiences that enable flexible work across different scenarios.
+  - Determine when Surface Pro for Business, 12-inch (2nd Edition), is the right device for an organization.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/surface-pro-12-inch-2nd-edition-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.surface-pro-12-inch-2nd-edition.introduction
+  - learn.dpu.surface-pro-12-inch-2nd-edition.what-is-surface-pro-for-business-12-inch-2nd-edition
+  - learn.dpu.surface-pro-12-inch-2nd-edition.how-surface-pro-for-business-12-inch-2nd-edition-works
+  - learn.dpu.surface-pro-12-inch-2nd-edition.modern-experiences-for-flexible-work
+  - learn.dpu.surface-pro-12-inch-2nd-edition.when-to-use-surface-pro-for-business-12-inch-2nd-edition
+  - learn.dpu.surface-pro-12-inch-2nd-edition.summary
+badge:
+  uid: learn.dpu.surface-pro-12-inch-2nd-edition-2026-09.badge
