@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.surface-laptop-13-inch-business
+title: Support mobile productivity with Surface Laptop for Business 13-inch
+metadata:
+  title: Support Mobile Productivity With Surface Laptop For Business 13-Inch
+  description: "In this module, you'll learn how to support mobile productivity with Surface Laptop for Business 13-inch."
+  ms.date: 09/23/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  In this module, you'll learn how to support mobile productivity with Surface Laptop for Business 13-inch.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the key features and benefits of Surface Laptop for Business 13-inch.
+  - Explain how Surface Laptop for Business 13-inch supports mobile productivity.
+  - Identify adaptable work experiences enabled by the device.
+  - Determine when Surface Laptop for Business 13-inch is an appropriate choice.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/surface-laptop-13-inch-business-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.surface-laptop-13-inch-business.introduction
+  - learn.dpu.surface-laptop-13-inch-business.what-is-surface-laptop-13-inch-for-business
+  - learn.dpu.surface-laptop-13-inch-business.how-surface-laptop-for-business-13-inch-works
+  - learn.dpu.surface-laptop-13-inch-business.adaptable-work-experiences
+  - learn.dpu.surface-laptop-13-inch-business.when-to-use-surface-laptop-for-business-13-inch
+  - learn.dpu.surface-laptop-13-inch-business.module-assessment
+  - learn.dpu.surface-laptop-13-inch-business.summary
+badge:
+  uid: learn.dpu.surface-laptop-13-inch-business.badge

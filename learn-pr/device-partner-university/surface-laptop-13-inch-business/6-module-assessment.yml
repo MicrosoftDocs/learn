@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-laptop-13-inch-business.module-assessment
+title: Module assessment
+metadata:
+  module_assessment: true
+  title: Module Assessment
+  description: This content is part of the "Support mobile productivity with Surface Laptop for Business 13-inch" module.
+  ms.date: 09/23/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Module Assessment
+  questions:
+  - content: "A business user needs to connect a Surface Laptop for Business 13-inch to two external 4K monitors. Which device capability supports this scenario?"
+    choices:
+        - content: "The USB-A 3.2 port supports two 4K monitors at 60 Hz."
+          isCorrect: false
+          explanation: "Incorrect. The USB-A port is intended for peripherals such as mice, keyboards, and portable hard drives."
+        - content: "DisplayPort 1.4a supports up to two 4K monitors at 60 Hz."
+          isCorrect: true
+          explanation: "Correct. Surface Laptop for Business 13-inch supports DisplayPort 1.4a with support for up to two 4K monitors at 60 Hz."
+        - content: "Bluetooth 5.4 supports two wireless 4K monitors at 60 Hz."
+          isCorrect: false
+          explanation: "Incorrect. Bluetooth 5.4 is used for connecting accessories such as wireless keyboards and mice."
+        - content: "The 3.5-mm headphone port supports two 4K monitors at 60 Hz."
+          isCorrect: false
+          explanation: "Incorrect. The headphone port is used for wired audio devices such as headphones or speakers."
+  - content: "A user remembers the topic of a presentation but not its exact file name. Which feature helps locate the file using natural language?"
+    choices:
+        - content: "Windows Hello for Business"
+          isCorrect: false
+          explanation: "Incorrect. Windows Hello for Business provides secure sign-in and authentication."
+        - content: "Windows Studio Effects"
+          isCorrect: false
+          explanation: "Incorrect. Windows Studio Effects enhances video and camera experiences for meetings."
+        - content: "Microsoft Defender"
+          isCorrect: false
+          explanation: "Incorrect. Microsoft Defender provides security and threat protection."
+        - content: "Improved Windows Search"
+          isCorrect: true
+          explanation: "Correct. Improved Windows Search uses natural language and on-device AI to find files and settings without requiring exact file names, phrasing, or spelling."
+  - content: "What happens after a user ends a Copilot Voice conversation?"
+    choices:
+        - content: "A text transcript of the conversation is made available."
+          isCorrect: true
+          explanation: "Correct. The module states that a text transcript is available after the conversation ends."
+        - content: "Copilot Vision automatically begins observing the entire display."
+          isCorrect: false
+          explanation: "Incorrect. Copilot Vision must be explicitly enabled by starting a Vision session and sharing content."
+        - content: "The conversation is converted into a file in File Explorer."
+          isCorrect: false
+          explanation: "Incorrect. The module does not state that Copilot Voice creates a file in File Explorer."
+        - content: "The microphone remains enabled until the device restarts."
+          isCorrect: false
+          explanation: "Incorrect. Ending the conversation disengages Copilot Voice and stops it from listening."
+  - content: "Which security component integrates protection directly into the device silicon and works with TPM 2.0 and BitLocker support?"
+    choices:
+        - content: "PC Manager"
+          isCorrect: false
+          explanation: "Incorrect. PC Manager helps optimize system performance and is not a silicon-based security processor."
+        - content: "Windows Studio Effects"
+          isCorrect: false
+          explanation: "Incorrect. Windows Studio Effects provides camera enhancements for meetings."
+        - content: "Microsoft Pluton"
+          isCorrect: true
+          explanation: "Correct. Microsoft Pluton integrates protection directly into the device silicon and works with enterprise-grade TPM 2.0 and BitLocker support."
+        - content: "Improved Windows Search"
+          isCorrect: false
+          explanation: "Incorrect. Improved Windows Search helps users locate files and settings and is not a security processor."
+  - content: "An education user needs to manage large numbers of research documents and quickly locate notes without remembering exact file names. Which capability best supports this need?"
+    choices:
+        - content: "Microsoft Defender and the Surface Studio Camera"
+          isCorrect: false
+          explanation: "Incorrect. These features focus on security and video experiences rather than locating documents."
+        - content: "Improved Windows Search and natural-language search"
+          isCorrect: true
+          explanation: "Correct. Improved Windows Search helps users find files and settings using natural language without needing exact file names."
+        - content: "The headphone port and Windows Hello fingerprint recognition"
+          isCorrect: false
+          explanation: "Incorrect. These features support audio connectivity and secure sign-in, not file discovery."
+        - content: "Windows Studio Effects and Bluetooth 5.4"
+          isCorrect: false
+          explanation: "Incorrect. These features support meetings and accessory connectivity rather than searching for documents and notes."
