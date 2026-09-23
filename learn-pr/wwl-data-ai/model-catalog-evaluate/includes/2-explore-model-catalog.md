@@ -53,7 +53,7 @@ For scenarios requiring higher performance in complex tasks like mathematics, co
 
 The catalog also includes task-specific models:
 
-**Embedding models** like Ada and Cohere convert text into numerical representations. These models enable semantic search, recommendation systems, and Retrieval Augmented Generation (RAG) scenarios where you need to find relevant information based on meaning rather than exact keyword matches.
+**Embedding models** like `text-embedding-3-large`, `text-embedding-3-small`, and Cohere's embedding models convert text into numerical representations. These models enable semantic search, recommendation systems, and Retrieval Augmented Generation (RAG) scenarios where you need to find relevant information based on meaning rather than exact keyword matches.
 
 **Image generation models** like GPT-image-1 create images from text descriptions. Use these for generating marketing materials, illustrations, or design mockups.
 

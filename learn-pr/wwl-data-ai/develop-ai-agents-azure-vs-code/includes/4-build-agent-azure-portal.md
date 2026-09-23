@@ -43,8 +43,8 @@ To test your agent, select the Playground tab and start a conversation. The play
 Before deployment, you can enhance your agent with tools from the tool catalog in the **Tools** section of the agent configuration (also accessible via **Build > Tools** in the portal). The catalog organizes tools into three categories:
 
 - **Configured** - Built-in tools ready to use immediately, such as Code Interpreter and File Search
-- **Catalog** - Additional tools you can add, including Bing Web Search, Azure AI Search, SharePoint, and more
-- **Custom** - Your own tools added through OpenAPI specifications or MCP servers
+- **Catalog** - Additional tools you can add from a registry, including Bing Web Search, Azure AI Search, SharePoint, and MCP servers
+- **Custom** - Your own tools added through OpenAPI specifications or custom implementations
 
 Tool capabilities and configuration are explored in detail in the *Extend agent capabilities* unit later in this module.
 
