@@ -52,11 +52,11 @@ completion = openai_client.chat.completions.create(
     messages=conversation_messages
 )
 assistant_message = completion.choices[0].message.content
-print("Assistant:", assistant_text)
+print("Assistant:", assistant_message)
 
 # Append the response to the conversation
 conversation_messages.append(
-    {"role": "assistant", "content": assistant_text}
+    {"role": "assistant", "content": assistant_message}
 )
 
 # Add the next user message
@@ -71,7 +71,7 @@ completion = openai_client.chat.completions.create(
     messages=conversation_messages
 )
 assistant_message = completion.choices[0].message.content
-print("Assistant:", assistant_text)
+print("Assistant:", assistant_message)
 
 # and so on...
 ```
