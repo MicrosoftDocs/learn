@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.dynamic-sessions-azure-container-apps
+metadata:
+  title: Run AI-Generated Code Securely in Azure Container Apps Dynamic Sessions
+  description: Learn how to use Azure Container Apps dynamic sessions to isolate AI-generated code, configure secure session pools, exchange files, and handle execution failures.
+  ms.date: 09/23/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-container-apps
+title: Run AI-generated code securely in Azure Container Apps dynamic sessions
+summary: Use Azure Container Apps dynamic sessions to execute AI-generated and user-submitted code in isolated environments. Configure secure session pools, integrate application code, exchange files, and manage session lifecycle and failures.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain how Azure Container Apps dynamic sessions isolate AI-generated and user-submitted code.
+    - Choose between a built-in code interpreter and a custom container session pool.
+    - Configure session capacity, lifecycle, and outbound network access for an AI workload.
+    - Use session identifiers to execute code and exchange files from application code.
+    - Handle session expiration, execution limits, timeouts, and failed executions.
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with Python.
+  - Familiarity with HTTP requests and JSON responses.
+  - Basic understanding of Azure Container Apps and container concepts.
+  - Basic understanding of Microsoft Entra authentication and Azure role-based access control.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-container-apps
+subjects:
+- artificial-intelligence
+- backend-development
+units:
+- learn.wwl.dynamic-sessions-azure-container-apps.introduction
+- learn.wwl.dynamic-sessions-azure-container-apps.choose-dynamic-session-pool
+- learn.wwl.dynamic-sessions-azure-container-apps.configure-secure-session-pool
+- learn.wwl.dynamic-sessions-azure-container-apps.execute-code-exchange-files
+- learn.wwl.dynamic-sessions-azure-container-apps.manage-lifecycle-failures
+- learn.wwl.dynamic-sessions-azure-container-apps.exercise-execute-code-dynamic-session
+- learn.wwl.dynamic-sessions-azure-container-apps.knowledge-check
+- learn.wwl.dynamic-sessions-azure-container-apps.summary
+badge:
+  uid: learn.wwl.dynamic-sessions-azure-container-apps.badge

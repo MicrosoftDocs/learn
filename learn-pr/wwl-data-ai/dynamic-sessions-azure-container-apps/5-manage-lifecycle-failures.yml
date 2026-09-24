@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.dynamic-sessions-azure-container-apps.manage-lifecycle-failures
+title: Manage lifecycle and execution failures
+metadata:
+  title: Manage Lifecycle and Execution Failures
+  description: Manage lifecycle and execution failures
+  ms.date: 09/21/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 13
+content: |
+  [!include[](includes/5-manage-lifecycle-failures.md)]
