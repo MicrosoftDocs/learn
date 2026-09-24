@@ -11,6 +11,5 @@ Learn more
 - [Configure Azure CNI networking in AKS](/azure/aks/configure-azure-cni)
 - [Container networking concepts in AKS Hybrid](/azure/aks/hybrid/concepts-container-networking)
 - [Deploy an ingress controller in AKS Hybrid](/azure/aks/hybrid/create-ingress-controller)
-- [Secure traffic between pods with network policies in AKS Hybrid](/azure/aks/hybrid/calico-networking-policy)
 - [Advanced network options in Windows](/virtualization/windowscontainers/container-networking/advanced)
 - [Best practices for network connectivity and security in AKS](/azure/aks/operator-best-practices-network)
