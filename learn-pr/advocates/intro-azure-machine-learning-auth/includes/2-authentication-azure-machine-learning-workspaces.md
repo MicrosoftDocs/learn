@@ -15,7 +15,7 @@ Users authenticate to an Azure Machine Learning workspace using one of the follo
 
 - **Managed identity**: When using the Azure Machine Learning SDK v2 on a compute instance or on an Azure Virtual Machine, users can use a managed identity for Azure. This workflow allows the VM to connect to the workspace using the managed identity, without storing credentials in Python code or prompting the user to authenticate. Azure Machine Learning compute clusters can also be configured to use a managed identity to access the workspace when training models. Whenever possible, using a managed identity is the preferred method and best practice.
 
-You can use Microsoft Entra Conditional Access to further control or restrict access to the workspace for each authentication workflow. For example, you can configure conditional access so that an administrator is only able to access an Azure Machine Learning workspace from a managed device.
+You can use Microsoft Entra Conditional Access to further control or restrict access to the workspace for each authentication workflow. For example, you can configure Conditional Access so that an administrator is only able to access an Azure Machine Learning workspace from a managed device.
 
 Azure Machine Learning can authenticate with other services using the following methods:
 
