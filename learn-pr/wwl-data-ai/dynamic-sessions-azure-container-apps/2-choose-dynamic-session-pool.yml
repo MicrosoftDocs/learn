@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.dynamic-sessions-azure-container-apps.choose-dynamic-session-pool
+title: Choose a dynamic session pool
+metadata:
+  title: Choose a Dynamic Session Pool
+  description: Choose a dynamic session pool
+  ms.date: 09/21/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-choose-dynamic-session-pool.md)]
