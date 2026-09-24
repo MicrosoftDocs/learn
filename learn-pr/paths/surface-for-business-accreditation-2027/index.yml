@@ -24,8 +24,8 @@ products:
 modules:
   - learn.dpu.introduction-to-microsoft-surface-laptop-8th-edition
   - learn.dpu.introduction-surface-pro-12th-edition
-  - learn.dpu.introduction-surface-laptop-13-1st-edition
-  - learn.dpu.introduction-to-surface-pro-12-inch
+  - learn.dpu.surface-laptop-13-inch-business
+  - learn.dpu.surface-pro-12-inch-2nd-edition-2026-09
   - learn.dpu.choose-best-surface-business
 trophy:
   uid: learn.dpu.surface-for-business-accreditation-2026-2027.trophy
