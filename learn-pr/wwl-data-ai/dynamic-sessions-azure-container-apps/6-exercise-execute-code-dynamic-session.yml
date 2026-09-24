@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.dynamic-sessions-azure-container-apps.exercise-execute-code-dynamic-session
+title: Exercise - Execute AI-generated code securely in Azure Container Apps dynamic sessions
+metadata:
+  title: Exercise - Execute AI-generated code securely in Azure Container Apps dynamic sessions
+  description: Exercise - Execute AI-generated code securely in a dynamic session
+  ms.date: 09/23/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-execute-code-dynamic-session.md)]

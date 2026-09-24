@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.dynamic-sessions-azure-container-apps.configure-secure-session-pool
+title: Configure a secure session pool
+metadata:
+  title: Configure a Secure Session Pool
+  description: Configure a secure session pool
+  ms.date: 09/21/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-configure-secure-session-pool.md)]
