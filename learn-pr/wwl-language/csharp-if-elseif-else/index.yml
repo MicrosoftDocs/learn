@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-if-elseif-else
 metadata:
-  title: Add Decision Logic to your Code using `if`, `else`, and `else if` Statements in C#
+  title: Add Decision Logic to your Code in C#
   description: "Learn to branch your code's execution path by evaluating Boolean expressions."
-  ms.date: 09/21/2026
+  ms.date: 9/24/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: module
@@ -13,7 +13,7 @@ metadata:
   ms.service: dotnet-csharp
   ms.devlang: csharp
   ai-usage: human-only
-title: Add decision logic to your code using `if`, `else`, and `else if` statements in C#
+title: Add decision logic to your code in C#
 summary: Learn to branch your code's execution path by evaluating Boolean expressions.
 abstract: |
   In this module, you will:

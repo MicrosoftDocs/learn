@@ -1,4 +1,15 @@
 
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c1154e6f-6aac-44e0-ba8c-23a2d3e8251d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Congratulations! You've completed your exploration of literals and variables in C#. Here's what you've learned:
 
 ## Key concepts
@@ -24,3 +35,5 @@ Keep practicing by creating small programs that use variables and literals. The 
 ## Get a free verified certification
  
 Microsoft and freeCodeCamp.org offer a training and certification combo on foundational C#. By completing this Learn module, you're already started. Explore freeCodeCamp's Foundational C# with Microsoft certification here: [https://aka.ms/csharp-certification](https://aka.ms/csharp-certification).
+
+::: zone-end

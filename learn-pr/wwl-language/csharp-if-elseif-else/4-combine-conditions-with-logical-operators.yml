@@ -2,9 +2,10 @@
 uid: learn.languages.csharp-if-elseif-else.combine-conditions-with-logical-operators
 title: Combine conditions with logical operators
 metadata:
+  zone_pivot_groups: video-or-text
   title: Combine Conditions with Logical Operators
   description: "Learn how to combine multiple Boolean expressions using the &&, ||, and ! operators."
-  ms.date: 09/21/2026
+  ms.date: 9/24/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: unit
