@@ -21,7 +21,7 @@ GitHub automatically enables Dependabot security updates for newly created repos
 You can enable Dependabot security updates manually on your repositories that don't meet the prerequisites mentioned in the section above. Make sure you've enabled the dependency graph and Dependabot alerts, then follow these steps to manually enable Dependabot security updates as well:
 
 1. Sign in to your GitHub account and select your profile photo from the upper-right.
-2. Select **Settings**, then select **Code security and analysis** under **Security** in the left-side menu.
+2. Select **Settings**, then select **Code security** under **Security** in the left-side menu.
 3. Select **Enable all** for Dependabot security updates.
 4. If you'd like these settings to be applied to all new repositories, select the **Automatically enable for new repositories** checkbox.
 5. Select **Enable Dependabot security updates** to enable the feature for all the repositories you own.

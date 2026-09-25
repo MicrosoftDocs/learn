@@ -27,7 +27,7 @@ Dependabot alerts aren't enabled for public or private repositories by default. 
 To enable Dependabot alerts for public and private repositories, you need to enable both the dependency graph and Dependabot alerts. Follow these steps for each feature:
 
 1. Sign in to your GitHub account and select your profile photo from the upper right.
-1. Select **Settings**, then select **Code security and analysis** under **Security** in the left-side menu.
+1. Select **Settings**, then select **Code security** under **Security** in the left-side menu.
 1. Select **Enable all** to the right of the feature you want to enable.
 1. If you'd like these settings to be applied to all new repositories, then select the **Automatically enable for new repositories** checkbox.
 1. Select **Enable FEATURE** to enable the feature for all the repositories you own.
@@ -62,7 +62,7 @@ If you're an enterprise owner, you can enable or disable Dependabot alerts for a
 
 GitHub Enterprise customers can also enable Dependabot alerts. If you're a GitHub Enterprise owner who's also an owner of the connected GitHub Cloud organization or enterprise account, you can use GitHub Connect to enable the dependency graph and Dependabot alerts for your GitHub Server instance. GitHub Connect lets you share certain features and data between your GitHub Enterprise Server instance and your GitHub Enterprise Cloud organization or enterprise account on GitHub.com.
 
-For more information, see [Managing GitHub Connect](https://docs.github.com/en/enterprise-server@3.12/admin/configuration/configuring-github-connect/managing-github-connect?azure-portal=true).
+For more information, see [Enabling GitHub Connect for GitHub.com](https://docs.github.com/en/admin/configuring-settings/configuring-github-connect/managing-github-connect?azure-portal=true).
 
 ## Grant access to Dependabot alerts
 
