@@ -1,4 +1,15 @@
 
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ed17ed60-ad5f-4089-a1f4-535b81650333]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Congratulations! You've learned how to work with data and perform operations in C#. Here's what you've covered:
 
 ## Key concepts
@@ -23,3 +34,5 @@ Keep practicing! Modify the tip calculator and temperature converter you built t
 ## Get a free verified certification
  
 Microsoft and freeCodeCamp.org offer a training and certification combo on foundational C#. By completing this Learn module, you're already started. Explore freeCodeCamp's Foundational C# with Microsoft certification here: [https://aka.ms/csharp-certification](https://aka.ms/csharp-certification).
+
+::: zone-end

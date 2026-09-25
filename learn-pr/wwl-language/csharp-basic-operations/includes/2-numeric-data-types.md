@@ -1,3 +1,15 @@
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0ae7b371-dbfc-45b4-9158-f39db7313aad]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Every value in C# has a **data type**. For numbers, C# provides several types depending on whether you need whole numbers, decimals, or a wider range of values. Choosing the right type helps you write accurate calculations.
 
 ## Common numeric types
@@ -47,3 +59,6 @@ Console.WriteLine(c / d);        // Output: 3.5 (keeps the decimal)
 ```
 
 When both values are integers, C# performs integer division and drops the decimal portion. To keep decimal precision, you need to use a decimal type. You'll learn how to convert between types in a later section.
+
+::: zone-end
+

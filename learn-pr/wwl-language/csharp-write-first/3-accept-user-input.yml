@@ -2,9 +2,10 @@
 uid: learn.languages.csharp-write-first.accept-user-input
 title: Accept user input
 metadata:
+  zone_pivot_groups: video-or-text
   title: Accept User Input
   description: "Learn how to accept console input and store it in C# variables."
-  ms.date: 09/21/2026
+  ms.date: 9/24/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit

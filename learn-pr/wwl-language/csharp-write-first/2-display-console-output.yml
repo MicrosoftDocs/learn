@@ -2,9 +2,10 @@
 uid: learn.languages.csharp-write-first.display-console-output
 title: Display console output
 metadata:
+  zone_pivot_groups: video-or-text
   title: Display Console Output
   description: "Learn how to display text in the console with Console.WriteLine and Console.Write."
-  ms.date: 09/21/2026
+  ms.date: 9/24/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit

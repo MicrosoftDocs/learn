@@ -2,9 +2,10 @@
 uid: learn.languages.csharp-literals-variables.declare-assign-variables
 title: Declare and assign variables
 metadata:
+  zone_pivot_groups: video-or-text
   title: Declare and Assign Variables
   description: "Learn how to declare, assign, and use variables in C#."
-  ms.date: 09/21/2026
+  ms.date: 9/25/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit

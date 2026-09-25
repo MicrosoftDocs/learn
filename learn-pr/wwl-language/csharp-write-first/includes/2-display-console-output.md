@@ -1,3 +1,15 @@
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3989802b-c3d7-4d1d-b879-b5d60f712bd8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The most fundamental thing a program can do is communicate with you. In C#, you display output to the console using the `Console.WriteLine()` method.
 
 ## Using Console.WriteLine()
@@ -74,3 +86,6 @@ Hello
 
 world!
 ```
+
+::: zone-end
+

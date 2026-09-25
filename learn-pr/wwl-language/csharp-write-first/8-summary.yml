@@ -2,9 +2,10 @@
 uid: learn.languages.csharp-write-first.summary
 title: Summary
 metadata:
+  zone_pivot_groups: video-or-text
   title: Summary
   description: "Review the C# console input, output, and string techniques covered in this module."
-  ms.date: 09/21/2026
+  ms.date: 9/24/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit

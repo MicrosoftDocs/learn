@@ -2,9 +2,10 @@
 uid: learn.languages.csharp-basic-operations.convert-data-types
 title: Convert data types
 metadata:
+  zone_pivot_groups: video-or-text
   title: Convert Data Types
   description: "Learn how to convert values between strings and numeric data types in C#."
-  ms.date: 09/21/2026
+  ms.date: 9/25/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit

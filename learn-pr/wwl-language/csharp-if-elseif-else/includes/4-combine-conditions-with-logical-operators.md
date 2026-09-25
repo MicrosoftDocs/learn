@@ -1,4 +1,15 @@
 
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=34e18c08-4fe9-4a6c-98b1-7c5cfa6d5b1b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Sometimes a single condition isn't enough to make a decision. You might want to check whether two things are both true, or whether at least one of them is true. C#'s **logical operators** let you combine multiple conditions into one expression.
 
 ## The three logical operators
@@ -68,3 +79,6 @@ if ((roll1 == roll2) || (roll2 == roll3) || (roll1 == roll3))
 ```
 
 Here, three comparisons are combined with `||`, so the message displays if **any** two of the three dice match. In the next unit, you use this expression to build a dice game.
+
+::: zone-end
+

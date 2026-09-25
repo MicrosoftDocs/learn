@@ -1,4 +1,15 @@
 
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=891ce198-81a1-4c00-b3bb-4f38663d20e5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 So far, you've explicitly declared the data type of each variable. But C# has a shorthand: the `var` keyword, which lets the compiler figure out the type for you.
 
 ## Using the var keyword
@@ -54,3 +65,6 @@ Console.WriteLine(average);
 ```
 
 The `var` keyword is a convenience feature that saves typing, but it's optional. You can always use explicit types if you prefer.
+
+::: zone-end
+

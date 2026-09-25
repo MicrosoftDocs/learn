@@ -1,3 +1,15 @@
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=84bf4139-99d5-4ae5-bd8a-9c9c1c95b0cf]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Congratulations! You've completed your first steps with C#. Let's recap what you've learned:
 
 ## What you've accomplished
@@ -25,3 +37,5 @@ The best way to keep learning is to keep practicing. Modify the programs you've 
 ## Get a free verified certification
  
 Microsoft and freeCodeCamp.org offer a training and certification combo on foundational C#. By completing this Learn module, you're already started. Explore freeCodeCamp's Foundational C# with Microsoft certification here: [https://aka.ms/csharp-certification](https://aka.ms/csharp-certification).
+
+::: zone-end
