@@ -12,14 +12,13 @@ By default, users receive notifications in the following manner:
 - **In your inbox**: As web notifications. A web notification is sent when Dependabot is enabled for a repository, when a new manifest file is committed to the repository, and when a new vulnerability with a critical or high severity is found (**On GitHub** option).
 - **On GitHub Mobile**: As web notifications.
 
->[!NOTE]
-> The email and web/GitHub Mobile notifications are:
->
-> - *Per repository* when Dependabot is enabled on the repository, or when a new manifest file is committed to the repository.
-> - *Per organization* when a new vulnerability is discovered.
-> - Sent when a new vulnerability is discovered. GitHub doesn't send notifications when vulnerabilities are updated.
+The email and web/GitHub Mobile notifications are:
 
->[!Tip]
+- *Per repository* when Dependabot is enabled on the repository, or when a new manifest file is committed to the repository.
+- *Per organization* when a new vulnerability is discovered.
+- Sent when a new vulnerability is discovered. GitHub doesn't send notifications when vulnerabilities are updated.
+
+>[!TIP]
 > You can sync your web and mobile notifications so that taking action on a notification in one inbox will automatically change its status in the other. For example, reading a notification on mobile would change its status to *Read* for the web inbox as well. To sync your web and mobile inboxes, make sure that your email client can view images from `notifications@github.com`.
 
 ## Configure notifications for Dependabot alerts
@@ -55,13 +54,13 @@ Dependabot auto-triage rules allow you to instruct Dependabot to automatically t
 
 There are two types of Dependabot auto-triage rules:
 
-1. **GitHub presets**: Curated by GitHub and available for all repositories.
-1. **Custom auto-triage rules**: Create your own rules to automatically dismiss or reopen alerts.
+- **GitHub presets**: Curated by GitHub and available for all repositories.
+- **Custom auto-triage rules**: Create your own rules to automatically dismiss or reopen alerts.
 
 For example, to create a custom Dependabot rule to auto-dismiss low severity alerts until a patch is available:
 
 1. Go to your repository and select **Settings**.
-1. Select **Code security and analysis** under **Security** in the left-side menu.
+1. Under **Security and quality** in the left sidebar, select **Advanced Security**.
 1. Select the **gear** icon for **Dependabot rules** under **Dependabot alerts**.
 1. Select **New rule**.
 1. Enter a **Rule name**; for example, "Auto-dismiss low severity alerts until a patch is available."
@@ -70,7 +69,7 @@ For example, to create a custom Dependabot rule to auto-dismiss low severity ale
 1. Select **Dismiss alerts** and **Until a patch is available** in the **Rules** section.
 1. Select **Create rule**.
 
-![Screenshot of new custom dependabot rule.](../media/new-custom-dependabot-rule.png)
+:::image type="content" source="../media/new-custom-dependabot-rule.png" alt-text="Screenshot of a new custom Dependabot rule.":::
 
 ## View dependency information with the GraphQL API
 
@@ -92,7 +91,7 @@ The GraphQL API has a single endpoint that doesn't change:
 
 `https://api.github.com/graphql`
 
-### GraphQL Explorer
+### Explore GraphQL queries
 
 The GraphQL Explorer is the recommended tool for communicating with the GraphQL API. The GraphQL Explorer is a "graphical interactive in-browser GraphQL IDE". The Explorer is an instance of [GraphiQL App](https://github.com/skevy/graphiql-app?azure-portal=true).
 

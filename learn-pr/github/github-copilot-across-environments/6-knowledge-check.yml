@@ -4,30 +4,30 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: This content is part of the "GitHub Copilot Across Environments - IDE, Chat, and Command Line Techniques" module.
-  ms.date: 10/08/2024
+  ms.date: 09/18/2026
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
   module_assessment: true
-  no-loc: ['Python', 'JavaScript', 'Rust', 'Ruby', '/generate', '/test', '/tests', '/unittest', 'gh copilot', 'suggest', 'explain', 'clarify', 'describe']
+  no-loc: ['/generate', '/test', '/tests', '/unittest', 'gh copilot', 'suggest', 'explain', 'clarify', 'describe']
 durationInMinutes: 15
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following choices isn't mentioned as one of the programming languages receiving strong support from GitHub Copilot?"
+  - content: "How can GitHub Copilot Chat help when you encounter an error in your code?"
     choices:
-    - content: "Python"
-      isCorrect: false
-      explanation: "Incorrect. Python is mentioned as one of the languages receiving strong support from GitHub Copilot."
-    - content: "JavaScript"
-      isCorrect: false
-      explanation: "Incorrect. JavaScript is mentioned as one of the languages receiving strong support from GitHub Copilot."
-    - content: "Rust"
+    - content: "It can analyze the error, suggest possible fixes, and answer follow-up questions."
       isCorrect: true
-      explanation: "Correct. Rust isn't mentioned in the list of languages receiving strong support from GitHub Copilot."
-    - content: "Ruby"
+      explanation: "Correct. GitHub Copilot Chat can help you understand an error, explore possible fixes, and continue the conversation as you debug."
+    - content: "It automatically accepts and runs every suggested fix."
       isCorrect: false
-      explanation: "Incorrect. Ruby is mentioned as one of the languages receiving strong support from GitHub Copilot."
+      explanation: "Incorrect. You decide whether to apply a suggestion and should review and test any changes."
+    - content: "It can debug code only after the code is added to a pull request."
+      isCorrect: false
+      explanation: "Incorrect. You can use GitHub Copilot Chat while working with code in a supported IDE; a pull request isn't required."
+    - content: "It replaces the need to review and test suggested changes."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot Chat assists with debugging, but you remain responsible for reviewing and testing suggested changes."
   - content: "Which slash command in GitHub Copilot Chat is used to generate unit tests for selected code?"
     choices:
     - content: "/generate"
