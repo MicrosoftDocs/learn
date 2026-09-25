@@ -1,3 +1,15 @@
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=808f8f0e-548f-4bc0-aad4-0573f77b6578]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Text is one of the most common types of data in programming. In C#, text is represented as a **string**—a sequence of characters enclosed in double quotes. C# provides many built-in ways to manipulate and format strings.
 
 ## Concatenation (joining strings together)
@@ -77,3 +89,6 @@ Welcome, ALEX!
 ```
 
 Notice how `.ToUpper()` converted the user's input to uppercase, and string interpolation made it easy to combine everything together.
+
+::: zone-end
+

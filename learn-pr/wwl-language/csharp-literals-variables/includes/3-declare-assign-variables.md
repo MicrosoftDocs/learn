@@ -1,4 +1,15 @@
 
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2cfa3322-64c2-4054-9527-6d0c30d32781]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A **variable** is a container that holds a value. Unlike hard-coded literals, variables can change as your program runs. Variables let you store information from users, calculations, or other sources, then use that information later in your code.
 
 ## Declaring a variable
@@ -52,3 +63,6 @@ Keep these conventions in mind when naming variables:
 - Use **full words**, not abbreviations (`name` instead of `nm`)
 
 Good variable names make your code easier to read and understand.
+
+::: zone-end
+

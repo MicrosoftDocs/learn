@@ -1,3 +1,15 @@
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f0119d96-be1f-4d29-bc6c-3846a098c90c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Programs become truly powerful when they can interact with the people using them. C#'s `Console.ReadLine()` method lets you pause your program, wait for the user to type something, and capture that information.
 
 ## Using Console.ReadLine()
@@ -53,3 +65,6 @@ Console.WriteLine(age + 1); // This causes an error!
 If you run this code and type `25`, the program won't print `26`. Instead, it tries to add `1` to the text `"25"`, which C# doesn't allow. This is a common beginner mistake!
 
 To do math with user input, you'd need to convert the text to a number first—but we'll cover that later. For now, remember: whatever the user types is always treated as text.
+
+::: zone-end
+

@@ -1,4 +1,15 @@
 
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=284b6b3d-def1-4058-873a-fcd10ee0b310]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Before your code can make a decision, it needs a way to ask a question and get a yes-or-no answer. C# answers this kind of question with **Boolean expressions** and comparison operators.
 
 ## Boolean expressions
@@ -42,3 +53,6 @@ if (total >= 15)
 If the expression `total >= 15` is `false`, C# skips the code block entirely and continues with the next line.
 
 You can try this yourself in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor).
+
+::: zone-end
+

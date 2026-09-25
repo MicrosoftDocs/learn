@@ -1,3 +1,15 @@
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6c13f8bf-d3cc-40f1-8568-107e7f47f65b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Since C# is strongly typed, you sometimes need to explicitly convert a value from one data type to another. This is especially important when working with user input, because `Console.ReadLine()` always returns text (a `string`)—even when the user types a number.
 
 ## Why conversion matters
@@ -75,3 +87,6 @@ int number = Convert.ToInt32("hello");    // ERROR: Input string was not in a co
 ```
 
 For now, just make sure the value can be converted before you try. Later, you'll learn how to handle errors gracefully.
+
+::: zone-end
+

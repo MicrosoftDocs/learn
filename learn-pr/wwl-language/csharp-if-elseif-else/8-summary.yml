@@ -2,9 +2,10 @@
 uid: learn.languages.csharp-if-elseif-else.summary
 title: Summary
 metadata:
+  zone_pivot_groups: video-or-text
   title: Summary
   description: "Review how to add decision logic to your C# code using if, else if, else, and logical operators."
-  ms.date: 09/21/2026
+  ms.date: 9/24/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: unit

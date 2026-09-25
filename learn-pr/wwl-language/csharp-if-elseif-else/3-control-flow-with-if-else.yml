@@ -2,9 +2,10 @@
 uid: learn.languages.csharp-if-elseif-else.control-flow-with-if-else
 title: Control code flow with if, else if, and else
 metadata:
+  zone_pivot_groups: video-or-text
   title: Control Code Flow with if, else if, and else
   description: "Learn how to use else, else if, and nested if statements to control code flow in C#."
-  ms.date: 09/21/2026
+  ms.date: 9/24/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: unit

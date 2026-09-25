@@ -2,7 +2,7 @@
 uid: learn.wwl.deploy-manage-apps-azure-container-apps
 metadata:
   title: Deploy and Manage Apps on Azure Container Apps
-  description: Learn how to deploy, manage, and scale containerized applications on Azure Container Apps.
+  description: Learn how to deploy, manage, and scale containerized applications and securely run AI-generated code on Azure Container Apps.
   ms.date: 01/27/2026
   author: jeffkoms
   ms.author: jeffko
@@ -13,7 +13,7 @@ prerequisites: |
   - Familiarity with container concepts.
   - Familiarity with command-line tools including Azure CLI.
 summary: |
-  This learning path guides you through the complete lifecycle of running containerized applications on Azure Container Apps. You start by deploying container apps to environments, configuring runtime settings with environment variables and secrets, and setting up registry authentication. You then manage the day-two lifecycle by updating images, managing revisions, monitoring logs, and configuring health probes. Finally, you learn to configure automatic horizontal scaling using HTTP rules, KEDA scalers, and traffic management to optimize performance and cost.
+  This learning path guides you through the complete lifecycle of running containerized applications on Azure Container Apps. You start by deploying container apps to environments, configuring runtime settings with environment variables and secrets, and setting up registry authentication. You then manage the day-two lifecycle by updating images, managing revisions, monitoring logs, and configuring health probes. Next, you configure automatic horizontal scaling using HTTP rules, KEDA scalers, and traffic management to optimize performance and cost. Finally, you use Azure Container Apps dynamic sessions to securely execute AI-generated and user-submitted code in isolated environments, exchange files, and manage session lifecycle and failures.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
@@ -27,5 +27,6 @@ modules:
 - learn.wwl.deploy-containers-azure-container-apps
 - learn.wwl.manage-containers-azure-container-apps
 - learn.wwl.scale-containers-azure-container-apps
+- learn.wwl.dynamic-sessions-azure-container-apps
 trophy:
   uid: learn.wwl.deploy-manage-apps-azure-container-apps.trophy

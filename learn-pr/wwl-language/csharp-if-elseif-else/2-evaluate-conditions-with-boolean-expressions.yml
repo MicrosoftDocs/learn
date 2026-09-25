@@ -2,9 +2,10 @@
 uid: learn.languages.csharp-if-elseif-else.evaluate-conditions-with-boolean-expressions
 title: Evaluate conditions with Boolean expressions
 metadata:
+  zone_pivot_groups: video-or-text
   title: Evaluate Conditions with Boolean Expressions
   description: "Learn how to use Boolean expressions, comparison operators, and the if statement in C#."
-  ms.date: 09/21/2026
+  ms.date: 9/24/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: unit

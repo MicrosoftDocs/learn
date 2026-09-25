@@ -1,4 +1,15 @@
 
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0bd5d366-4f81-4c2e-9972-3f728e473ae5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A single `if` statement can only handle one outcome. To handle alternative outcomes, C# provides the `else` and `else if` keywords.
 
 ## Adding an alternative path with else
@@ -75,3 +86,6 @@ if (hasTicket)
     }
 }
 ```
+
+::: zone-end
+

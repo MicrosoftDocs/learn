@@ -1,3 +1,15 @@
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a9d3650c-2782-4dbc-94c6-a488fbbb64be]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 At their core, computers are incredibly fast calculators. C# supports all the standard math operations you'd expect, allowing you to perform calculations and save the results in variables.
 
 ## Arithmetic operators
@@ -100,3 +112,6 @@ Console.WriteLine(result);     // Output: 3.5
 ```
 
 This is why choosing the right data type matters for your calculations. In the next section, you learn how to convert between types when you need to.
+
+::: zone-end
+

@@ -1,4 +1,15 @@
 
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3ce559f7-6f83-4cfa-8c2d-43402f967ba5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A **literal** is a hard-coded value that never changes. When you write `Console.WriteLine("Hello");`, the text `"Hello"` is a literal—it's exactly what you want to display, no more, no less.
 
 ## Common literal data types
@@ -44,3 +55,6 @@ Console.WriteLine(42 + 1);         // Math: 43
 ```
 
 Understanding the difference between types helps you write correct code from the start.
+
+::: zone-end
+
