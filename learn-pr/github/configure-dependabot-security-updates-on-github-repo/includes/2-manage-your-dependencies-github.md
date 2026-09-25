@@ -8,7 +8,7 @@ In this unit, you learn about the GitHub tools for managing your dependencies:
 - Dependabot
 - Dependency review
 
-## The Dependency graph
+## The dependency graph
 
 :::image type="content" source="../media/dependency-graph.png" alt-text="Screenshot of Dependencies of the Dependency graph.":::
 
@@ -30,7 +30,7 @@ As a repository administrator, you can also choose to enable the dependency grap
 
 1. Go to your GitHub repository.
 2. Select your repository **Settings**.
-3. On the left-hand menu under **Security**, select **Advanced Security**.
+3. On the left-hand menu under **Security and quality**, select **Advanced Security**.
 4. In the **Dependency graph** section, select **Enable**.
 
 >[!NOTE]
@@ -70,7 +70,7 @@ We generally recommend lock files in your repository, because they define the ex
 | Swift Package Manager | Swift | `Package.resolved` | `Package.resolved` |
 | Yarn | JavaScript | `yarn.lock` | `package.json`, `yarn.lock` |
 
-## The GitHub Advisory database
+## Find security advisories
 
 ![Screenshot of the GitHub Advisory Database.](../media/github-advisory-database.png)
 
