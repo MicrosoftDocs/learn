@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.manage-user-computer-certificates.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Understand certificate structure, identity, purpose, validity, trust, revocation, plus private-key use.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/1-introduction.md)]

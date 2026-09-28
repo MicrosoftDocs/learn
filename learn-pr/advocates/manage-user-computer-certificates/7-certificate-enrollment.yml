@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.manage-user-computer-certificates.certificate-enrollment
+title: Certificate enrollment
+metadata:
+  title: Certificate Enrollment
+  description: Enroll user or computer certificates through enterprise templates, certificate consoles, plus certreq.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-certificate-enrollment.md)]

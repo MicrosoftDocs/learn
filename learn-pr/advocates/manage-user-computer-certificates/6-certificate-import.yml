@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.manage-user-computer-certificates.certificate-import
+title: Certificate import
+metadata:
+  title: Certificate Import
+  description: Import public certificates or protected private-key packages into the intended account context plus store.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-certificate-import.md)]

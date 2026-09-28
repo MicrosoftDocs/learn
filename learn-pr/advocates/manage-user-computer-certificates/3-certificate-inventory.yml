@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.manage-user-computer-certificates.certificate-inventory
+title: Certificate inventory
+metadata:
+  title: Certificate Inventory
+  description: Inspect exact certificate objects, find certificates by purpose or expiry, then produce an actionable inventory.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-certificate-inventory.md)]
