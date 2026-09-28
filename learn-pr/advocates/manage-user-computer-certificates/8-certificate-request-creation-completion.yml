@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.manage-user-computer-certificates.certificate-request-creation-completion
+title: Certificate request creation, completion
+metadata:
+  title: Certificate Request Creation, Completion
+  description: Create custom certificate requests, submit them to an issuer, retrieve responses, then associate certificates with keys.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/8-certificate-request-creation-completion.md)]

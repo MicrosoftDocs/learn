@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="970" viewBox="0 0 1200 970" role="img" aria-labelledby="title" aria-describedby="description" style="background-color: white">
+  <title id="title">Certificate request workflow: preserve the private key</title>
+  <desc id="description">Six numbered steps show a certificate request and response. The target Windows computer generates a key pair, retains the private key, and creates a signed CSR containing the public key and requested identity. The issuing CA validates the request against policy and issues a signed certificate after approval. The computer accepts the matching certificate in the original user or machine context, associates it with the retained private key, and configures the application. Only the CSR and issued certificate travel between the computer and CA; neither transfers the private key.</desc>
+  <defs>
+    <marker id="arrowhead" markerWidth="14" markerHeight="14" viewBox="0 0 14 14" refX="14" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 14 7 L 0 14 Z" fill="#0067b8"/>
+    </marker>
+    <style>
+      .heading { font: 600 28px "Segoe UI", Arial, sans-serif; fill: #ffffff; }
+      .subheading { font: 18px "Segoe UI", Arial, sans-serif; fill: #ffffff; }
+      .box-title { font: 600 24px "Segoe UI", Arial, sans-serif; fill: #172b4d; }
+      .body { font: 20px "Segoe UI", Arial, sans-serif; fill: #323130; }
+      .label { font: 600 18px "Segoe UI", Arial, sans-serif; fill: #005a9e; }
+      .computer-box { fill: #f3f9fd; stroke: #0078d4; stroke-width: 2; }
+      .ca-box { fill: #f0f7f0; stroke: #107c10; stroke-width: 2; }
+      .connector { fill: none; stroke: #0067b8; stroke-width: 3; marker-end: url(#arrowhead); }
+    </style>
+  </defs>
+
+  <rect id="background" x="0" y="0" width="1200" height="970" fill="#ffffff"/>
+
+  <g id="computer-heading">
+    <rect x="60" y="40" width="440" height="86" rx="8" fill="#005a9e"/>
+    <text class="heading" x="280" y="78" text-anchor="middle">Target Windows computer</text>
+    <text class="subheading" x="280" y="108" text-anchor="middle">Original user or machine context</text>
+  </g>
+  <g id="ca-heading">
+    <rect x="700" y="40" width="440" height="86" rx="8" fill="#005a9e"/>
+    <text class="heading" x="920" y="78" text-anchor="middle">Issuing CA</text>
+    <text class="subheading" x="920" y="108" text-anchor="middle">Certification authority</text>
+  </g>
+
+  <g id="step-1-generate-key">
+    <rect class="computer-box" x="60" y="166" width="440" height="128" rx="10"/>
+    <text class="box-title" x="84" y="202">1. Generate a key pair</text>
+    <text class="body" x="84" y="236">Create the public and private keys.</text>
+    <text class="body" x="84" y="270">Keep the private key on this computer.</text>
+  </g>
+
+  <g id="step-2-create-request">
+    <rect class="computer-box" x="60" y="350" width="440" height="138" rx="10"/>
+    <text class="box-title" x="84" y="388">2. Create the CSR</text>
+    <text class="body" x="84" y="421">Include the public key and requested</text>
+    <text class="body" x="84" y="455">identity; sign with the private key.</text>
+  </g>
+
+  <g id="step-3-validate-request">
+    <rect class="ca-box" x="700" y="350" width="440" height="138" rx="10"/>
+    <text class="box-title" x="724" y="388">3. Validate the request</text>
+    <text class="body" x="724" y="421">Check the request against CA policy.</text>
+    <text class="body" x="724" y="455">Continue only after approval.</text>
+  </g>
+
+  <g id="step-4-issue-certificate">
+    <rect class="ca-box" x="700" y="552" width="440" height="138" rx="10"/>
+    <text class="box-title" x="724" y="590">4. Issue the certificate</text>
+    <text class="body" x="724" y="623">Sign the certificate containing</text>
+    <text class="body" x="724" y="657">the submitted public key.</text>
+  </g>
+
+  <g id="step-5-accept-certificate">
+    <rect class="computer-box" x="60" y="552" width="440" height="138" rx="10"/>
+    <text class="box-title" x="84" y="590">5. Accept the issued certificate</text>
+    <text class="body" x="84" y="623">Use the original account context.</text>
+    <text class="body" x="84" y="657">Associate it with the retained key.</text>
+  </g>
+
+  <g id="step-6-configure-application">
+    <rect class="computer-box" x="60" y="754" width="440" height="138" rx="10"/>
+    <text class="box-title" x="84" y="792">6. Configure the application</text>
+    <text class="body" x="84" y="825">Select or bind the certificate.</text>
+    <text class="body" x="84" y="859">Verify access to the private key.</text>
+  </g>
+
+  <g id="connections">
+    <line class="connector" x1="280" y1="304" x2="280" y2="340"/>
+    <text class="label" x="600" y="377" text-anchor="middle">Send CSR</text>
+    <text class="label" x="600" y="405" text-anchor="middle">No private key</text>
+    <line class="connector" x1="510" y1="430" x2="690" y2="430"/>
+    <line class="connector" x1="920" y1="498" x2="920" y2="542"/>
+    <text class="label" x="600" y="579" text-anchor="middle">Return certificate</text>
+    <text class="label" x="600" y="607" text-anchor="middle">No private key</text>
+    <line class="connector" x1="690" y1="632" x2="510" y2="632"/>
+    <line class="connector" x1="280" y1="700" x2="280" y2="744"/>
+  </g>
+
+  <text class="body" x="600" y="938" text-anchor="middle">The private key stays on the target computer in the original user or machine context.</text>
+</svg>

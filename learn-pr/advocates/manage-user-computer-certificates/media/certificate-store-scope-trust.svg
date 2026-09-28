@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title description" style="background-color: white">
+  <title id="title">Certificate store scope and trust inheritance</title>
+  <desc id="description">The Local Computer Personal store and Current User Personal store remain separate. Local Computer root and intermediate certificate stores contribute to the current user's effective trust view, which also includes user-specific certificates and applicable policy.</desc>
+  <defs>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#0067b8"/>
+    </marker>
+    <style>
+      .heading { font: 600 28px "Segoe UI", Arial, sans-serif; fill: #ffffff; }
+      .box-title { font: 600 24px "Segoe UI", Arial, sans-serif; fill: #172b4d; }
+      .body { font: 20px "Segoe UI", Arial, sans-serif; fill: #323130; }
+      .label { font: 600 19px "Segoe UI", Arial, sans-serif; fill: #005a9e; }
+      .separation-label { font: 600 18px "Segoe UI", Arial, sans-serif; fill: #a4262c; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="680" fill="#ffffff"/>
+
+  <rect x="60" y="40" width="500" height="68" rx="8" fill="#005a9e"/>
+  <text class="heading" x="310" y="83" text-anchor="middle">Local computer</text>
+
+  <rect x="640" y="40" width="500" height="68" rx="8" fill="#005a9e"/>
+  <text class="heading" x="890" y="83" text-anchor="middle">Current user</text>
+
+  <rect x="60" y="150" width="500" height="150" rx="10" fill="#f3f9fd" stroke="#0078d4" stroke-width="3"/>
+  <text class="box-title" x="310" y="196" text-anchor="middle">Personal store (My)</text>
+  <text class="body" x="310" y="238" text-anchor="middle">Machine certificates</text>
+  <text class="body" x="310" y="270" text-anchor="middle">and private-key links</text>
+
+  <rect x="640" y="150" width="500" height="150" rx="10" fill="#f3f9fd" stroke="#0078d4" stroke-width="3"/>
+  <text class="box-title" x="890" y="196" text-anchor="middle">Personal store (My)</text>
+  <text class="body" x="890" y="238" text-anchor="middle">User certificates</text>
+  <text class="body" x="890" y="270" text-anchor="middle">and private-key links</text>
+
+  <line x1="570" y1="215" x2="630" y2="215" stroke="#a4262c" stroke-width="3" stroke-dasharray="7 6"/>
+  <line x1="590" y1="202" x2="610" y2="228" stroke="#a4262c" stroke-width="4"/>
+  <line x1="610" y1="202" x2="590" y2="228" stroke="#a4262c" stroke-width="4"/>
+  <text class="separation-label" x="600" y="332" text-anchor="middle">Separate stores</text>
+  <text class="body" x="600" y="361" text-anchor="middle">No Personal-store inheritance</text>
+
+  <rect x="60" y="420" width="500" height="178" rx="10" fill="#f0f7f0" stroke="#107c10" stroke-width="3"/>
+  <text class="box-title" x="310" y="466" text-anchor="middle">Machine trust stores</text>
+  <text class="body" x="310" y="508" text-anchor="middle">Trusted Root Certification Authorities</text>
+  <text class="body" x="310" y="540" text-anchor="middle">Intermediate Certification Authorities</text>
+  <text class="body" x="310" y="572" text-anchor="middle">and applicable machine policy</text>
+
+  <rect x="640" y="420" width="500" height="178" rx="10" fill="#f0f7f0" stroke="#107c10" stroke-width="3"/>
+  <text class="box-title" x="890" y="466" text-anchor="middle">Effective user trust-store view</text>
+  <text class="body" x="890" y="508" text-anchor="middle">Inherited machine trust</text>
+  <text class="body" x="890" y="540" text-anchor="middle">plus user-specific certificates</text>
+  <text class="body" x="890" y="572" text-anchor="middle">and applicable user policy</text>
+
+  <text class="label" x="600" y="393" text-anchor="middle">Machine trust contributes to user trust</text>
+  <line x1="570" y1="509" x2="622" y2="509" stroke="#0067b8" stroke-width="4" marker-end="url(#arrowhead)"/>
+
+  <text class="body" x="600" y="646" text-anchor="middle">Application policy can further restrict the trust that an application uses.</text>
+</svg>

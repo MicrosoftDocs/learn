@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.manage-user-computer-certificates.certificate-renewal-backup-recovery
+title: Certificate renewal, backup, recovery
+metadata:
+  title: Certificate Renewal, Backup, Recovery
+  description: Renew certificates safely, switch applications during overlap, back up keys, then preserve decryption capability.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/11-certificate-renewal-backup-recovery.md)]

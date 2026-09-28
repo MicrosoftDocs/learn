@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.manage-user-computer-certificates.self-signed-test-certificates
+title: Self-signed test certificates
+metadata:
+  title: Self-Signed Test Certificates
+  description: Create short-lived self-signed certificates for isolated testing without introducing production trust.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/10-self-signed-test-certificates.md)]
