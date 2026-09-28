@@ -79,7 +79,6 @@ Additionally, we explored critical infrastructure components like power and cool
 - [Databank: The Role of Data Storage in Modern Data Centers](https://www.databank.com/resources/blogs/the-role-of-data-storage-in-modern-data-centers/)
 - [Dgtl Infra: Data Center Monitoring: A Comprehensive Guide](https://dgtlinfra.com/data-center-monitoring/)
 - [Comparitech: The Best Data Center Monitoring Tools](https://www.comparitech.com/net-admin/best-data-center-monitoring-tools/)
-- [Data Center Info: The Role of Redundancy in Data Center Architecture](https://datacenterinfo.com/the-role-of-redundancy-in-data-center-architecture/)
 - [Dgtl Infra: Data Center Redundancy: N, N+1, 2N, and 2N+1 Explained](https://dgtlinfra.com/data-center-redundancy/)
 - [Cisco: What Is Data Center Security?](https://www.cisco.com/site/us/en/learn/topics/security/what-is-data-center-security.html)
 - [IronMountain: What is a secure data center?](https://www.ironmountain.com/resources/blogs-and-articles/d/data-centers-everything-you-need-to-know-about-data-center-security)
