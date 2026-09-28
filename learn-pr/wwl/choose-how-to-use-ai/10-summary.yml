@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-how-to-use-ai.summary
+title: "Summary"
+metadata:
+  title: "Summary"
+  description: "Learn how to choose the right support, including AI and other resources, to prepare for tasks like job interviews. Stay in control of your choices."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-summary.md)]

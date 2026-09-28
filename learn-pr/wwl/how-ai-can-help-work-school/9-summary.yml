@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.how-ai-can-help-work-school.summary
+title: "Summary"
+metadata:
+  title: "Summary"
+  description: "Discover how AI simplifies tasks, organizes activities, and enhances productivity at work, school, and daily life. Learn to use AI effectively."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]

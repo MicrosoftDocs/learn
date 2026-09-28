@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-how-to-use-ai.practice-activity
+title: "Practice activity: Choose the right support"
+metadata:
+  title: "Practice Activity: Choose the Right Support"
+  description: "Practice choosing the right support for a job interview by weighing AI, another person, and the tools you already use."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-practice-activity.md)]

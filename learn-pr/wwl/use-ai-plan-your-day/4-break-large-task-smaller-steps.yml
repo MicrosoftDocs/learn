@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-plan-your-day.break-large-task-smaller-steps
+title: "Break a large task into smaller steps"
+metadata:
+  title: "Break a Large Task into Smaller Steps"
+  description: "Learn how to use AI to break down large tasks into smaller, manageable steps, create checklists, and adapt plans as things change."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-break-large-task-smaller-steps.md)]

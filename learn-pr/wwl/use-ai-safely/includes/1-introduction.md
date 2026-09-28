@@ -1,0 +1,1 @@
+Using AI safely includes not sharing personal or private information with AI. It also means checking AI answers before using them and knowing how to respond when a message, request, or answer may be unsafe. AI can be helpful, but it should never pressure a person to share information, send money, open a link, or act quickly.

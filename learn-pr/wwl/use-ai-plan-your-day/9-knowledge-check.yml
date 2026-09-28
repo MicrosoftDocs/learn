@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-plan-your-day.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "What information makes a plan the most useful to start with?"
+    choices:
+    - content: "Times and activities that cannot easily change, such as work hours or an appointment."
+      isCorrect: true
+      explanation: "Correct. A useful plan starts with the times and activities that are already known and cannot easily change."
+    - content: "Activities that could happen on any day of the week."
+      isCorrect: false
+      explanation: "Incorrect. Activities without a set time are easier to move, so they aren't the best starting point."
+    - content: "A list of tasks with no times included."
+      isCorrect: false
+      explanation: "Incorrect. Copilot can organize a plan better when times and details are included."
+  - content: "A person has an appointment at 2:00 PM and the bus ride takes 35 minutes. What should the plan include?"
+    choices:
+    - content: "Travel time, so the person knows when to leave."
+      isCorrect: true
+      explanation: "Correct. A schedule should include the time needed to get from one place to another."
+    - content: "Only the time the appointment starts."
+      isCorrect: false
+      explanation: "Incorrect. Without travel time, the person may leave too late."
+    - content: "A longer appointment time."
+      isCorrect: false
+      explanation: "Incorrect. The length of the appointment doesn't tell the person when to leave."
+  - content: "A student has an assignment due tomorrow, a quiz next week, and a backpack to pack. How can Copilot help?"
+    choices:
+    - content: "Copilot can suggest an order for the tasks, and the student can change it."
+      isCorrect: true
+      explanation: "Correct. Copilot can suggest what to do first, and the person decides what's most important."
+    - content: "Copilot can finish the assignment for the student."
+      isCorrect: false
+      explanation: "Incorrect. Copilot helps plan the work, but the student still completes the tasks."
+    - content: "Copilot can change the due dates."
+      isCorrect: false
+      explanation: "Incorrect. Copilot can't change a due date set by a teacher."
+  - content: "A large task such as 'get ready for work' feels hard to start. What can Copilot do?"
+    choices:
+    - content: "Break the task into smaller steps or a checklist."
+      isCorrect: true
+      explanation: "Correct. Copilot can break a large task into smaller steps that are easier to start."
+    - content: "Remove steps from the task so there's less to do."
+      isCorrect: false
+      explanation: "Incorrect. The steps still need to happen. Copilot helps organize them."
+    - content: "Wait until the person finishes the task."
+      isCorrect: false
+      explanation: "Incorrect. Copilot can help before the task starts."

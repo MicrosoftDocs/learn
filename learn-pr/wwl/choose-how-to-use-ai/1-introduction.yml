@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-how-to-use-ai.introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: "Discover how to make informed choices about using AI for tasks. Learn when to use AI, collaborate, or opt for alternative tools."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

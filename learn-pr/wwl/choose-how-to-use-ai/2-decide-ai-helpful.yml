@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-how-to-use-ai.decide-ai-helpful
+title: "Decide if AI is helpful"
+metadata:
+  title: "Decide if AI is Helpful"
+  description: "Learn how to decide when AI tools like Copilot can add value by helping with tasks such as planning, organizing, or drafting. Get started now!"
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-decide-ai-helpful.md)]

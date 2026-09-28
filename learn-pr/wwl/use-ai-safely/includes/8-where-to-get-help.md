@@ -1,0 +1,3 @@
+A trusted person can help decide what is safe to share, check whether a message is real, and respond if something has already happened. Help may come from a family member, friend, teacher, supervisor, job coach, support professional, bank, service provider, or the organization that provided the training.
+
+If money, account access, or private information was shared, ask for help right away. Contact the bank or service provider using a trusted phone number or app. Change affected passwords with support if needed. Save the message or take a screenshot before blocking or deleting it, unless doing so would cause more risk.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-how-to-use-ai.choose-another-support-needed
+title: "Choose another support when needed"
+metadata:
+  title: "Choose Another Support When Needed"
+  description: "Learn when to choose alternative support over AI, such as for private info, official answers, or tasks requiring human understanding."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-choose-another-support-needed.md)]

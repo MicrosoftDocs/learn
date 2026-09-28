@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.use-ai-to-communicate
+metadata:
+  title: "Use AI to Communicate"
+  description: "Learn how to use AI tools like Microsoft Copilot to create clear, concise, and professional messages for work, school, or personal use."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: module
+  ms.service: microsoft-copilot
+title: "Use AI to communicate"
+summary: Learn how to use AI tools to create clear, concise, and professional messages.
+abstract: |
+  After completing this module, you will be able to:
+  - Use AI to start a message.
+  - Make a message shorter.
+  - Rewrite a message using clearer words.
+  - Ask for help with writing a message.
+  - Organize thoughts before writing.
+prerequisites: |
+  - Basic familiarity with communication tools.
+  - Interest in improving written communication skills.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- school-leader
+- k-12-educator
+- higher-ed-educator
+- parent-guardian
+- business-leader
+products:
+- ai-builder
+- azure-openai
+- power-platform
+- azure
+- azure-face
+subjects:
+- communication
+- generative-ai
+- business-applications
+- automation
+- knowledge-management
+units:
+- learn.wwl.use-ai-to-communicate.introduction
+- learn.wwl.use-ai-to-communicate.ai-action
+- learn.wwl.use-ai-to-communicate.make-message-shorter
+- learn.wwl.use-ai-to-communicate.use-clearer-words
+- learn.wwl.use-ai-to-communicate.ask-help
+- learn.wwl.use-ai-to-communicate.keep-conversation-going
+- learn.wwl.use-ai-to-communicate.try-these-prompts-copilot
+- learn.wwl.use-ai-to-communicate.practice-activity
+- learn.wwl.use-ai-to-communicate.knowledge-check
+- learn.wwl.use-ai-to-communicate.summary
+badge:
+  uid: learn.wwl.use-ai-to-communicate.badge

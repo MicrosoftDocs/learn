@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-safely.introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: "Learn how to use AI safely by protecting personal information, verifying AI responses, and recognizing unsafe messages or requests."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

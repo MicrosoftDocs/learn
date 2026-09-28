@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.how-ai-can-help-work-school
+metadata:
+  title: "How AI Can Help With Work and School"
+  description: "Discover how AI tools like Microsoft Copilot can help you organize tasks, create checklists, and write messages for work, school, and daily life."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: v-pablorod
+  ms.topic: module
+  ms.service: microsoft-copilot
+title: "How AI can help with work and school"
+summary: Learn how AI tools can assist with organizing tasks, creating checklists, and writing messages for work, school, and daily life.
+abstract: |
+  After completing this module, you will be able to:
+  - Use AI to simplify instructions and create task lists.
+  - Plan and prioritize tasks for work, school, and home.
+  - Write and refine short, professional messages.
+  - Organize information and track completed tasks.
+prerequisites: |
+  - Basic familiarity with AI tools.
+  - Interest in improving task management and communication.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- student
+- school-leader
+- k-12-educator
+- higher-ed-educator
+- business-owner
+products:
+- office-exchange
+- office-exchange-online
+- office-sp
+- document-processing-m365
+subjects:
+- communication
+- business-applications
+- productivity
+- knowledge-management
+- collaboration
+units:
+- learn.wwl.how-ai-can-help-work-school.introduction
+- learn.wwl.how-ai-can-help-work-school.ai-in-action
+- learn.wwl.how-ai-can-help-work-school.make-instructions-easier-to-understand
+- learn.wwl.how-ai-can-help-work-school.plan-what-to-do-first
+- learn.wwl.how-ai-can-help-work-school.keep-conversation-going
+- learn.wwl.how-ai-can-help-work-school.work-school-daily-life
+- learn.wwl.how-ai-can-help-work-school.try-these-prompts-copilot
+- learn.wwl.how-ai-can-help-work-school.knowledge-check
+- learn.wwl.how-ai-can-help-work-school.summary
+badge:
+  uid: learn.wwl.how-ai-can-help-work-school.badge

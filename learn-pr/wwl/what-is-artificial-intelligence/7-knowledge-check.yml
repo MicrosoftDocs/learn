@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.what-is-artificial-intelligence.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Module Assessment"
+  description: "Knowledge check"
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "What does AI give people when they ask it for help?"
+    choices:
+    - content: "Suggestions"
+      isCorrect: true
+      explanation: "AI gives suggestions based on the information it receives. AI does not make final decisions or rules. People decide what to use."
+    - content: "Final decisions"
+      isCorrect: false
+      explanation: "AI does not make final decisions. People are responsible for making decisions based on the suggestions provided by AI."
+    - content: "Rules that must be followed"
+      isCorrect: false
+      explanation: "AI does not enforce rules. It provides suggestions, and people decide how to act on them."
+  - content: "Which task can Copilot help with?"
+    choices:
+    - content: "Making a checklist for the morning"
+      isCorrect: true
+      explanation: "Copilot can help with everyday tasks like writing messages, making checklists, and planning tasks. It does not do physical tasks, and it only responds when a person asks."
+    - content: "Driving a person to work"
+      isCorrect: false
+      explanation: "Copilot cannot perform physical tasks like driving. It is designed to assist with digital and organizational tasks."
+    - content: "Paying a person's bills without being asked"
+      isCorrect: false
+      explanation: "Copilot only responds when a person asks. It does not perform tasks autonomously without user input."
+  - content: "A person asks Copilot what time the bus arrives. What should the person do next?"
+    choices:
+    - content: "Leave the house right away and trust the answer"
+      isCorrect: false
+      explanation: "AI can get information wrong or provide outdated answers. It is important to verify the information before acting on it."
+    - content: "Check the official bus schedule"
+      isCorrect: true
+      explanation: "The official bus schedule has the most current and accurate information. AI responses should be verified for reliability."
+    - content: "Ask Copilot the same question again and use the second answer"
+      isCorrect: false
+      explanation: "Repeatedly asking AI may result in inconsistent answers. It is better to verify the information using official sources."
+  - content: "Which information should stay private when using AI?"
+    choices:
+    - content: "A favorite color"
+      isCorrect: false
+      explanation: "Sharing a favorite color is generally safe and does not pose a privacy risk."
+    - content: "A password or home address"
+      isCorrect: true
+      explanation: "Keep passwords, a home address, private health information, and bank or Social Security numbers private to ensure security and privacy."
+    - content: "A grocery list"
+      isCorrect: false
+      explanation: "Sharing a grocery list is unlikely to compromise privacy or security."
+  - content: "Copilot suggests a checklist, but one step is missing. What can the person do?"
+    choices:
+    - content: "Use the checklist exactly as written"
+      isCorrect: false
+      explanation: "AI suggestions are not always perfect. It is important to review and adjust them as needed."
+    - content: "Stop using AI for checklists"
+      isCorrect: false
+      explanation: "AI is a tool that can be helpful. If a suggestion is incomplete, it can be adjusted or refined rather than abandoning AI entirely."
+    - content: "Change the checklist or ask for a different one"
+      isCorrect: true
+      explanation: "AI is a tool. A person can use a suggestion, change it, ask for a different one, or decide not to use it."

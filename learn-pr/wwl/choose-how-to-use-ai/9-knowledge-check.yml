@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-how-to-use-ai.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Which statement best describes using AI for a task?"
+    choices:
+    - content: "AI is optional, and the person decides when to use it."
+      isCorrect: true
+      explanation: "Correct. No one needs to use AI for every task. The right choice may be different for each person and each task."
+    - content: "AI should be used for every task."
+      isCorrect: false
+      explanation: "Incorrect. AI is one option among several supports."
+    - content: "AI must be used alone, without help from another person."
+      isCorrect: false
+      explanation: "Incorrect. A person can use AI with help from someone they trust."
+  - content: "What is a good question to ask before using Copilot for a task?"
+    choices:
+    - content: "\"Would another support work better?\""
+      isCorrect: true
+      explanation: "Correct. Thinking about other supports helps a person decide whether AI adds value."
+    - content: "\"How fast can Copilot answer?\""
+      isCorrect: false
+      explanation: "Incorrect. Speed doesn't show whether the answer is useful or correct."
+    - content: "\"How many words will the answer have?\""
+      isCorrect: false
+      explanation: "Incorrect. The length of the answer doesn't help a person decide whether AI is the right choice."
+  - content: "A worker needs to know tomorrow's start time. What is the best choice?"
+    choices:
+    - content: "Check the official schedule or ask a supervisor."
+      isCorrect: true
+      explanation: "Correct. The answer must come from a trusted workplace source. AI may not have the current schedule."
+    - content: "Ask Copilot and use the answer without checking."
+      isCorrect: false
+      explanation: "Incorrect. AI may not have the current schedule, so the information should come from an official source."
+    - content: "Guess based on last week's schedule."
+      isCorrect: false
+      explanation: "Incorrect. A current, official source gives the correct start time."
+  - content: "A trusted person helps someone use Copilot. Who decides what to ask and what to use?"
+    choices:
+    - content: "The learner decides."
+      isCorrect: true
+      explanation: "Correct. Getting help doesn't take away the learner's choice."
+    - content: "The trusted person decides."
+      isCorrect: false
+      explanation: "Incorrect. The helper can assist, but the learner stays in control."
+    - content: "Copilot decides."
+      isCorrect: false
+      explanation: "Incorrect. Copilot gives suggestions, and the person chooses what to use."

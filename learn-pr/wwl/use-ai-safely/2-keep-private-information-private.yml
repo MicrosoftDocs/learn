@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-safely.keep-private-information-private
+title: "Keep private information private"
+metadata:
+  title: "Keep Private Information Private"
+  description: "Learn how to protect private information when using AI tools. Avoid sharing sensitive data like passwords, addresses, or financial details."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-keep-private-information-private.md)]
