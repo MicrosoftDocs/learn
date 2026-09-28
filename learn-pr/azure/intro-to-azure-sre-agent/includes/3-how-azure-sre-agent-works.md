@@ -15,7 +15,7 @@ This lifecycle distinguishes an agent-assisted workflow from a fixed script. A s
 
 ## Set up a new SRE Agent
 
-SRE Agent can be accessed by its own portal at https://sreagent.azure.com or through the Azure portal. The service is available in supported regions, and you can create multiple agents for different workloads or teams. When you create a new agent, you define its basic configuration:
+SRE Agent can be accessed by its own portal at https://sre.azure.com or through the Azure portal. The service is available in supported regions, and you can create multiple agents for different workloads or teams. When you create a new agent, you define its basic configuration:
 
 :::image type="content" source="../media/create-agent.jpg" alt-text="Screenshot of Basics at Create Agent Wizard.":::
 

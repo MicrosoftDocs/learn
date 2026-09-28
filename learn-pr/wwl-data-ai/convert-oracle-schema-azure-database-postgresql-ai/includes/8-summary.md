@@ -19,5 +19,3 @@ The AI accelerates conversion and focuses your effort where it matters most. The
 - [Schema conversion reports for Oracle to Azure Database for PostgreSQL](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-reports)
 - [Oracle to Azure Database for PostgreSQL schema conversion limitations](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-limitations)
 - [FAQ: Oracle to Azure Database for PostgreSQL schema conversion](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-faq)
-- [Oracle to Azure Database for PostgreSQL application conversion](/azure/postgresql/migrate/oracle-conversions-application/)
-- [Migrate to Azure Database for PostgreSQL](/azure/postgresql/migrate/)

@@ -39,9 +39,12 @@ Let's see the outcome of FMA done for the components of the Contoso Shoes checko
 
 To design a chaos experiment, pick a few failure cases. The choice can be based on the likelihood that the failure occurs or on the possible impact.
 
+> [!NOTE]
+> This unit uses Chaos Studio Experiments (classic), which is being replaced by [Chaos Studio Workspaces](/azure/chaos-studio/chaos-studio-workspaces-overview). Workspaces provides built-in [Scenario templates](/azure/chaos-studio/chaos-studio-scenarios) for common outage patterns. For more information, see [Move from Experiments (classic) to Chaos Studio Workspaces](/azure/chaos-studio/chaos-studio-migrate-from-classic).
+
 The goal of the experiment is to validate resiliency measures that you implemented in your application. For an example hypothesis, suppose you run your application on App Service and enable zone redundancy. If all the underlying instances in a zone go down, you expect your application to still be running.
 
-Use Chaos Studio to inject the faults into the relevant components. Chaos Studio offers a [library of faults](/azure/chaos-studio/chaos-studio-fault-library) for you to choose from. However, because the fault library doesn't cover everything, you might need to adjust your scenario. Or you might need to find more tools to help you inject the failure.
+Use Chaos Studio to inject the faults into the relevant components. Chaos Studio offers a [library of faults](/azure/chaos-studio/chaos-studio-fault-library) for Experiments (classic) for you to choose from. However, because the fault library doesn't cover everything, you might need to adjust your scenario. Or you might need to find more tools to help you inject the failure.
 
 > [!IMPORTANT]
 > Target only a non-production environment during your experiments. Injecting faults into your production environment can be risky and requires experience and planning.
