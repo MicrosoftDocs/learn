@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.how-ai-can-help-work-school.introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: "Discover how Microsoft Copilot helps you stay organized and complete tasks efficiently at work, school, or home. Learn more today!"
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

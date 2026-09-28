@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-safely.ai-can-make-mistakes
+title: "AI can make mistakes"
+metadata:
+  title: "AI Can Make Mistakes"
+  description: "Learn how to recognize and verify AI-generated information to avoid acting on incorrect, incomplete, or outdated data. Ensure safety and accuracy."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-ai-can-make-mistakes.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.what-is-artificial-intelligence.try-these-prompts-copilot
+title: "Try these prompts in Copilot"
+metadata:
+  title: "Try These Prompts in Copilot"
+  description: "Explore practical prompts for Copilot to organize tasks, create lists, plan schedules, and generate ideas. Learn how to customize them for your needs."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-try-these-prompts-copilot.md)]

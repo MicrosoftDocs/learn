@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.what-is-artificial-intelligence.people-make-decisions
+title: "People make decisions"
+metadata:
+  title: "People Make Decisions"
+  description: "Learn how AI can suggest ideas while keeping decision-making in your hands. Explore tips for using AI safely and effectively."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-people-make-decisions.md)]

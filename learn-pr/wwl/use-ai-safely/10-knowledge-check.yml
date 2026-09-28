@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-safely.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Which information should never be typed, uploaded, or pasted into AI?"
+    choices:
+    - content: "A password, one-time security code, or account number."
+      isCorrect: true
+      explanation: "Correct. Private information can be used to enter an account, take money, or pretend to be that person."
+    - content: "The time an appointment starts."
+      isCorrect: false
+      explanation: "Incorrect. A time can be shared when no name, address, or other private detail is included."
+    - content: "How long a bus trip takes."
+      isCorrect: false
+      explanation: "Incorrect. This gives AI useful information without identifying the person."
+  - content: "A person wants help planning when to leave for a 2:00 PM appointment. Which prompt is safer?"
+    choices:
+    - content: "\"My appointment is at 2:00 PM. The trip takes 30 minutes. What time should I leave?\""
+      isCorrect: true
+      explanation: "Correct. This gives Copilot the information it needs without sharing a home address."
+    - content: "\"My home address is 123 Main Street. Help me plan when to leave for my appointment.\""
+      isCorrect: false
+      explanation: "Incorrect. The home address isn't needed to answer the question."
+    - content: "\"My name is Sam Jones and I live at 123 Main Street. When should I leave?\""
+      isCorrect: false
+      explanation: "Incorrect. A name and address are private details that aren't needed for the task."
+  - content: "A text message says an account will be closed unless gift cards are bought today. What should the person do?"
+    choices:
+    - content: "Stop, check with the company using a known contact, and ask a trusted person for help."
+      isCorrect: true
+      explanation: "Correct. Stop, check another way, and ask a trusted person before taking any action."
+    - content: "Reply to the message to ask whether it's real."
+      isCorrect: false
+      explanation: "Incorrect. Replying can confirm the number is active and lead to more pressure."
+    - content: "Buy the gift cards to protect the account."
+      isCorrect: false
+      explanation: "Incorrect. Requests for gift cards, cryptocurrency, wire transfers, or cash are common scam warning signs."
+  - content: "Copilot gives a bus departure time. What should the person do before leaving?"
+    choices:
+    - content: "Check the current schedule from the bus company."
+      isCorrect: true
+      explanation: "Correct. AI answers can be wrong, incomplete, or out of date, so check important information another way."
+    - content: "Trust the answer because Copilot sounded confident."
+      isCorrect: false
+      explanation: "Incorrect. A response can sound clear and confident and still be wrong."
+    - content: "Ask Copilot the same question again."
+      isCorrect: false
+      explanation: "Incorrect. Asking again doesn't confirm the information with an official source."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.how-ai-can-help-work-school.keep-conversation-going
+title: "Keep the conversation going"
+metadata:
+  title: "Keep the Conversation Going"
+  description: "Learn how to use follow-up prompts with Copilot to refine responses, organize tasks, and improve communication for school, work, and home."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-keep-conversation-going.md)]

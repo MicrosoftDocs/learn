@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.what-is-artificial-intelligence.summary
+title: "Summary"
+metadata:
+  title: "Summary"
+  description: "Discover how AI provides suggestions, helps with tasks, and empowers decision-making. Learn how to use AI tools like Copilot effectively."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]

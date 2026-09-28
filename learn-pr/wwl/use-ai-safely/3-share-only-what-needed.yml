@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-safely.share-only-what-needed
+title: "Share only what is needed"
+metadata:
+  title: "Share Only What Is Needed"
+  description: "Learn how to safely share information with AI by providing only what's necessary, protecting your privacy, and avoiding scams. Get started now."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-share-only-what-needed.md)]

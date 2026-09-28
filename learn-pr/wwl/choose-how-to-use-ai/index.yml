@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.choose-how-to-use-ai
+metadata:
+  title: "Choose How to Use AI"
+  description: "Learn how to decide when to use AI, combine it with other supports, and stay in control of your choices to achieve your goals effectively."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: module
+  ms.service: copilot-studio
+title: "Choose how to use AI"
+summary: Learn how to decide when and how to use AI effectively, combine it with other supports, and stay in control of your decisions.
+abstract: |
+  After completing this module, you will be able to:
+  - Decide when AI is helpful for a task.
+  - Identify when other supports are better suited than AI.
+  - Use AI in combination with existing tools and supports.
+  - Stay in control of your choices when using AI.
+prerequisites: |
+  - Basic understanding of AI and its capabilities.
+  - Familiarity with using digital tools or supports.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- student
+- school-leader
+- k-12-educator
+- business-owner
+- business-leader
+products:
+- power-platform
+- power-apps
+- azure
+- azure-speech
+- azure-translator-speech
+subjects:
+- generative-ai
+- business-applications
+- knowledge-management
+- automation
+- artificial-intelligence
+units:
+- learn.wwl.choose-how-to-use-ai.introduction
+- learn.wwl.choose-how-to-use-ai.decide-ai-helpful
+- learn.wwl.choose-how-to-use-ai.choose-another-support-needed
+- learn.wwl.choose-how-to-use-ai.use-ai-support
+- learn.wwl.choose-how-to-use-ai.keep-supports-already-work
+- learn.wwl.choose-how-to-use-ai.stay-control
+- learn.wwl.choose-how-to-use-ai.try-prompts-copilot
+- learn.wwl.choose-how-to-use-ai.practice-activity
+- learn.wwl.choose-how-to-use-ai.knowledge-check
+- learn.wwl.choose-how-to-use-ai.summary
+badge:
+  uid: learn.wwl.choose-how-to-use-ai.badge

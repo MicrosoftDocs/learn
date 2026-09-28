@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-to-communicate.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 4
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "A person finished a work task and wants to tell their supervisor. How can Copilot help?"
+    choices:
+    - content: "Copilot can write a draft message that the person reviews and sends."
+      isCorrect: true
+      explanation: "Correct. Copilot creates a draft. The person decides what to keep, change, or remove."
+    - content: "Copilot sends the message to the supervisor by itself."
+      isCorrect: false
+      explanation: "Incorrect. The person decides what to send. Copilot only helps write the message."
+    - content: "Copilot finishes the work task for the person."
+      isCorrect: false
+      explanation: "Incorrect. Copilot helps with writing messages, not with doing the work task."
+  - content: "A message is longer than it needs to be. Which prompt asks Copilot to fix this?"
+    choices:
+    - content: "Make this message shorter: [paste the message]."
+      isCorrect: true
+      explanation: "Correct. This prompt asks Copilot to shorten the message while keeping the main idea."
+    - content: "Make this message more friendly: [paste the message]."
+      isCorrect: false
+      explanation: "Incorrect. This prompt changes the tone of the message, not the length."
+    - content: "Write a short message to my teacher."
+      isCorrect: false
+      explanation: "Incorrect. This prompt starts a new message instead of shortening an existing one."
+  - content: "A message is confusing and hard to understand. What should the person ask Copilot to do?"
+    choices:
+    - content: "Rewrite the message using clear words."
+      isCorrect: true
+      explanation: "Correct. Copilot can rewrite a message with simpler and clearer words."
+    - content: "Add more words to the message."
+      isCorrect: false
+      explanation: "Incorrect. Adding more words can make a confusing message harder to understand."
+    - content: "Send the message without changing it."
+      isCorrect: false
+      explanation: "Incorrect. A confusing message should be made clearer before it's sent."
+  - content: "Copilot writes a message, but the person wants it to sound friendlier. What can they do?"
+    choices:
+    - content: "Ask Copilot a follow-up prompt, such as \"Make the message more friendly.\""
+      isCorrect: true
+      explanation: "Correct. A follow-up prompt asks Copilot for one small change to the message."
+    - content: "Start over and ask a completely new question."
+      isCorrect: false
+      explanation: "Incorrect. The person can keep the conversation going with a follow-up prompt instead of starting over."
+    - content: "Accept the message as it is, because Copilot can't change it."
+      isCorrect: false
+      explanation: "Incorrect. The person can change any part of the message or ask Copilot to change it."
+  - content: "What should a person always do before sending a message that Copilot helped write?"
+    choices:
+    - content: "Read the message to make sure it says what they want."
+      isCorrect: true
+      explanation: "Correct. Always read the message first and make sure it's clear and respectful."
+    - content: "Send it right away so the reply is faster."
+      isCorrect: false
+      explanation: "Incorrect. Sending a message without reading it can lead to mistakes."
+    - content: "Ask Copilot to send the message for them."
+      isCorrect: false
+      explanation: "Incorrect. The person decides what to send, not Copilot."

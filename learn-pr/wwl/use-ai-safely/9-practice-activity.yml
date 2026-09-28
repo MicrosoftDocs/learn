@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-safely.practice-activity
+title: "Practice activity: Use AI safely"
+metadata:
+  title: "Practice Activity: Use AI Safely"
+  description: "Take private details out of a prompt, rewrite it safely, and check whether AI still has enough to answer your question."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-practice-activity.md)]

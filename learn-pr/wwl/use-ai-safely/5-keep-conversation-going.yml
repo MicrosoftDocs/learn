@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-safely.keep-conversation-going
+title: "Keep the conversation going"
+metadata:
+  title: "Keep the Conversation Going"
+  description: "Use short follow-up prompts to remove private details, spot warning signs in a message, and check work instructions with Copilot."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-keep-conversation-going.md)]

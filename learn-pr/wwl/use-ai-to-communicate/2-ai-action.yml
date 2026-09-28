@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-to-communicate.ai-action
+title: "Write effective messages using AI tools"
+metadata:
+  title: "Write Effective Messages Using AI Tools"
+  description: "Learn how to use AI tools like Copilot to craft effective messages for workplace communication. Get started with practical examples and tips."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-ai-action.md)]

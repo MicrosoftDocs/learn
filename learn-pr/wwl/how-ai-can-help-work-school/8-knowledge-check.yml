@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.how-ai-can-help-work-school.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Module assessment"
+  description: "Knowledge check"
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each question."
+quiz:
+  questions:
+  - content: "Which AI prompt is most useful when a person has a long set of instructions to complete?"
+    choices:
+    - content: "Explain the instructions using short, clear steps."
+      isCorrect: true
+      explanation: "Correct. This prompt helps break down complex instructions into manageable steps, making them easier to follow."
+    - content: "Write a poem about the topic."
+      isCorrect: false
+      explanation: "Incorrect. Writing a poem does not help clarify or simplify instructions."
+    - content: "Ignore the instructions and start over."
+      isCorrect: false
+      explanation: "Incorrect. Ignoring the instructions does not address the task at hand."
+    - content: "Summarize the instructions in one word."
+      isCorrect: false
+      explanation: "Incorrect. Summarizing instructions in one word does not provide sufficient clarity or guidance."
+
+  - content: "Which prompt best helps someone organize school or work tasks?"
+    choices:
+    - content: "Make a checklist for these tasks and put them in a clear order."
+      isCorrect: true
+      explanation: "Correct. Creating a checklist and organizing tasks in order helps improve productivity and clarity."
+    - content: "Tell me a joke about school."
+      isCorrect: false
+      explanation: "Incorrect. Telling a joke does not contribute to organizing tasks."
+    - content: "Guess what I should do without reading the task list."
+      isCorrect: false
+      explanation: "Incorrect. Guessing tasks without reviewing the list is not an effective strategy."
+    - content: "Rewrite my schedule as a story."
+      isCorrect: false
+      explanation: "Incorrect. Rewriting a schedule as a story does not help with task organization."
+
+  - content: "What is the best practice before using or sending an AI-generated message?"
+    choices:
+    - content: "Send it immediately without reading it."
+      isCorrect: false
+      explanation: "Incorrect. Sending a message without reviewing it may lead to errors or miscommunication."
+    - content: "Read it, check for accuracy, and change it if needed."
+      isCorrect: true
+      explanation: "Correct. Reviewing and editing AI-generated messages ensures accuracy and appropriateness."
+    - content: "Share it with everyone in the class or workplace."
+      isCorrect: false
+      explanation: "Incorrect. Sharing messages without review may result in unintended consequences."
+    - content: "Copy it exactly without reviewing it."
+      isCorrect: false
+      explanation: "Incorrect. Blindly copying AI-generated messages can lead to errors or miscommunication."
+
+  - content: "Which example shows responsible AI use for personal information?"
+    choices:
+    - content: "Sharing passwords, private records, or other sensitive details."
+      isCorrect: false
+      explanation: "Incorrect. Sharing sensitive information is not a responsible use of AI."
+    - content: "Removing only details that are not needed and checking the school or workplace rules."
+      isCorrect: true
+      explanation: "Correct. Removing unnecessary details and adhering to rules ensures responsible handling of personal information."
+    - content: "Using AI to decide private health issues without talking to a trusted person."
+      isCorrect: false
+      explanation: "Incorrect. Important health decisions should involve trusted individuals and professionals."
+    - content: "Posting private information for a wider audience to review."
+      isCorrect: false
+      explanation: "Incorrect. Sharing private information publicly is not responsible AI use."
