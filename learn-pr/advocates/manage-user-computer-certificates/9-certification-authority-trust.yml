@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.manage-user-computer-certificates.certification-authority-trust
+title: Certification authority trust
+metadata:
+  title: Certification Authority Trust
+  description: Verify certification authority certificates, deploy roots or intermediates correctly, then replace trust deliberately.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/9-certification-authority-trust.md)]

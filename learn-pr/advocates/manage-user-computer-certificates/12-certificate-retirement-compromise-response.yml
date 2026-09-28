@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.manage-user-computer-certificates.certificate-retirement-compromise-response
+title: Certificate retirement, compromise response
+metadata:
+  title: Certificate Retirement, Compromise Response
+  description: Retire exact certificate objects safely, distinguish deletion from revocation, then respond to key compromise.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/12-certificate-retirement-compromise-response.md)]

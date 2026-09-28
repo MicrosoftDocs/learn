@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.manage-user-computer-certificates.certificate-stores-management-tools
+title: Certificate stores, management tools
+metadata:
+  title: Certificate Stores, Management Tools
+  description: Select the correct Windows certificate store, account context, console, plus native command-line tool.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-certificate-stores-management-tools.md)]

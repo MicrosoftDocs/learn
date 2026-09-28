@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.manage-user-computer-certificates.certificate-export
+title: Certificate export
+metadata:
+  title: Certificate Export
+  description: Export public certificates or protected private-key packages with the correct scope, format, plus safeguards.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-certificate-export.md)]

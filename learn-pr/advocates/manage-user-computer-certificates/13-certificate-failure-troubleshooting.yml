@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.manage-user-computer-certificates.certificate-failure-troubleshooting
+title: Certificate failure troubleshooting
+metadata:
+  title: Certificate Failure Troubleshooting
+  description: Diagnose certificate selection, trust, identity, enrollment, key access, revocation, plus application failures.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/13-certificate-failure-troubleshooting.md)]

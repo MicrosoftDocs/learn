@@ -1,0 +1,148 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.manage-user-computer-certificates.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Assess Windows certificate store, enrollment, request, trust, lifecycle, recovery, plus troubleshooting decisions.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 10
+content: |
+quiz:
+  questions:
+    - content: "A support administrator imports a server private-key package through the current-user certificate console. The certificate appears valid, but a service that searches Local Computer Personal cannot find it. What should the administrator do?"
+      choices:
+        - content: "Restart the service repeatedly until the certificate appears."
+          isCorrect: false
+          explanation: "Restarting the service does not change the store that contains the certificate."
+        - content: "Install the certificate plus private key in the service's intended machine context, then configure key access plus application selection."
+          isCorrect: true
+          explanation: "A service that searches Local Computer Personal needs the certificate and key in that machine context."
+        - content: "Add the issuing certification authority certificate to the Trusted Root Certification Authorities store."
+          isCorrect: false
+          explanation: "Trust configuration does not move a certificate or its private key between account contexts."
+    - content: "A workgroup client must trust an approved private certification authority. Which material should an administrator distribute?"
+      choices:
+        - content: "An end-entity server certificate imported into the Trusted Root Certification Authorities store."
+          isCorrect: false
+          explanation: "An end-entity certificate is not a replacement for the approved trust anchor plus intermediate chain."
+        - content: "The verified root public certificate plus any required intermediate public certificates."
+          isCorrect: true
+          explanation: "Clients need approved public certification authority certificates, not the certification authority private key."
+        - content: "The certification authority private-key package."
+          isCorrect: false
+          explanation: "Distributing the private key would expose certification authority signing capability."
+    - content: "An external certification authority returns a certificate for a request generated in a server's machine context. An administrator imports the certificate on another workstation and sees no private key. What should the administrator do?"
+      choices:
+        - content: "Accept the response on the originating server in machine context."
+          isCorrect: true
+          explanation: "The originating server retains the matching private key and outstanding request."
+        - content: "Ask the certification authority to export the requester's private key."
+          isCorrect: false
+          explanation: "A normal certificate signing request does not send the private key to the certification authority."
+        - content: "Import the returned certificate into the workstation's Trusted Root Certification Authorities store."
+          isCorrect: false
+          explanation: "Changing the destination store cannot create the missing private-key association."
+    - content: "A certificate viewer reports that a corresponding private key exists, and an administrator can use it. A service still receives access denied. What is the correct response?"
+      choices:
+        - content: "Reissue the certificate immediately without checking the service identity."
+          isCorrect: false
+          explanation: "Reissuance does not address a key permission problem by itself."
+        - content: "Identify the service account that performs the operation, then grant only the required key access through the supported provider interface."
+          isCorrect: true
+          explanation: "Key association and administrator access do not prove that the service identity can use the key."
+        - content: "Grant every local user access to the private key."
+          isCorrect: false
+          explanation: "Broad key permissions violate least privilege and are not required."
+    - content: "A leaf certificate chains to an approved root, but the client lacks the issuing intermediate and cannot retrieve it. What should an administrator do?"
+      choices:
+        - content: "Import the leaf certificate into the Trusted Root Certification Authorities store."
+          isCorrect: false
+          explanation: "The leaf certificate is not a trust anchor."
+        - content: "Import the intermediate into the Trusted Root Certification Authorities store."
+          isCorrect: false
+          explanation: "Promoting an intermediate to a root changes the trust model and is not the correct repair."
+        - content: "Distribute the correct intermediate to Intermediate Certification Authorities or repair its approved retrieval path."
+          isCorrect: true
+          explanation: "The client needs the missing intermediate to construct the intended chain."
+    - content: "A certificate autoenrollment trigger succeeds, but no new computer certificate appears. The template grants Enroll permission but not Autoenroll permission. What should an administrator conclude?"
+      choices:
+        - content: "Autoenroll permission, effective computer policy, template publication, connectivity, plus client events require investigation."
+          isCorrect: true
+          explanation: "Autoenrollment depends on all applicable permissions, policy, publication, connectivity, and issuance conditions."
+        - content: "The certification authority is necessarily unavailable."
+          isCorrect: false
+          explanation: "A successful trigger without issuance can result from eligibility or policy configuration."
+        - content: "The trigger bypasses template permissions, so the certificate should already exist."
+          isCorrect: false
+          explanation: "The trigger starts processing but does not bypass template or policy requirements."
+    - content: "A certificate request command reports a pending disposition plus a certification authority request identifier. What should the requester do?"
+      choices:
+        - content: "Generate repeated requests until one returns a certificate."
+          isCorrect: false
+          explanation: "Repeated submissions do not satisfy approval and create unnecessary keys plus request records."
+        - content: "Bind the pending request to the application."
+          isCorrect: false
+          explanation: "A pending request is not an issued certificate."
+        - content: "Preserve the request identifier, follow the approval process, retrieve the response after issuance, then accept it in the original context."
+          isCorrect: true
+          explanation: "This preserves the association between the pending request, its private key, and the eventual response."
+    - content: "A renewed server certificate has the same subject as the old certificate, but the website still presents the old certificate. What should an administrator do first?"
+      choices:
+        - content: "Delete the old certificate immediately."
+          isCorrect: false
+          explanation: "Immediate deletion can disrupt service or remove a needed rollback option."
+        - content: "Import the renewed certificate into the Trusted Root Certification Authorities store."
+          isCorrect: false
+          explanation: "A server certificate belongs in the application's intended certificate store, not the root trust store."
+        - content: "Update the application's binding or selection rule, verify replacement-key access, apply the documented reload, then test the presented certificate."
+          isCorrect: true
+          explanation: "A matching subject does not update a thumbprint binding or other application selection rule."
+    - content: "An expired user certificate remains after a replacement is issued. The old certificate was used for encrypted files plus email. What should an administrator do?"
+      choices:
+        - content: "Delete the expired certificate plus key because the replacement has the same subject."
+          isCorrect: false
+          explanation: "A replacement certificate does not automatically decrypt or re-encrypt historical data."
+        - content: "Move the expired certificate into the Trusted Root Certification Authorities store."
+          isCorrect: false
+          explanation: "Changing the store does not preserve or restore the required decryption behavior."
+        - content: "Keep the old certificate plus private key until historical decryption and recovery requirements are satisfied."
+          isCorrect: true
+          explanation: "Existing encrypted data can depend on the historical private key."
+    - content: "A production private-key package is exposed outside approved storage. An administrator deletes the local certificate from one server. What additional action is required?"
+      choices:
+        - content: "Coordinate incident response, issue a replacement with a new key, update consumers, then request revocation through the certification authority owner."
+          isCorrect: true
+          explanation: "Exposure requires replacement plus coordinated revocation because other copies can still be used."
+        - content: "No action is required because local deletion invalidates every exported copy."
+          isCorrect: false
+          explanation: "Deleting one local certificate does not invalidate other copies of the private key."
+        - content: "Reimport the exposed package with a stronger password."
+          isCorrect: false
+          explanation: "Changing import handling does not remove the compromise of the existing private key."
+    - content: "A certificate validates for a user but fails for a service. The only manually installed root is user-scoped. What should an administrator do?"
+      choices:
+        - content: "Disable trust validation for the service."
+          isCorrect: false
+          explanation: "Skipping trust validation creates a security vulnerability and does not correct the deployment scope."
+        - content: "Determine the service's trust context, obtain approval for the required trust deployment, then validate in machine context."
+          isCorrect: true
+          explanation: "User-scoped trust does not establish that a machine service trusts the same certification authority."
+        - content: "Copy the service certificate into the user's Personal store."
+          isCorrect: false
+          explanation: "Moving the service certificate does not supply the service's required trust context."
+    - content: "An obsolete root returns after an administrator deletes it locally. The approved retirement record requires removing trust in that hierarchy. What should the administrator do?"
+      choices:
+        - content: "Identify plus update the authoritative trust source, such as the targeted Group Policy object, after assessing dependencies."
+          isCorrect: true
+          explanation: "Policy-managed trust must be removed from the source that redeploys it."
+        - content: "Revoke one leaf certificate at the certification authority."
+          isCorrect: false
+          explanation: "Revoking one leaf does not remove trust in the certification authority hierarchy."
+        - content: "Delete every leaf certificate that chains to the root."
+          isCorrect: false
+          explanation: "Leaf deletion does not change the authoritative trust deployment."

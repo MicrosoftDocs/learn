@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.manage-user-computer-certificates.certificate-file-formats
+title: Certificate file formats
+metadata:
+  title: Certificate File Formats
+  description: Distinguish certificate encodings, containers, requests, public certificate files, plus private-key packages.
+  ms.date: 09/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-certificate-file-formats.md)]
