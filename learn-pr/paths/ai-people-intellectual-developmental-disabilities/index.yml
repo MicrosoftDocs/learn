@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.wwl.ai-people-intellectual-developmental-disabilities
+metadata:
+  title: AI for People with Intellectual and Developmental Disabilities
+  description: Learn what AI is and how to use Microsoft Copilot to write messages, plan your day, and stay safe online, while you stay in charge of every choice.
+  ms.date: 9/28/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: learning-path
+title: AI for people with intellectual and developmental disabilities
+summary: |
+  AI tools like Microsoft Copilot can help with everyday tasks at work, at school, and at home. This learning path explains what AI is, shows what it does well, and points out where it can get things wrong. You practice writing prompts, checking the answers you get back, and keeping your private information private.
+
+  AI gives suggestions. You decide what to use. Every module keeps that choice with you, including the choice not to use AI at all.
+
+  After completing this learning path, you will be able to:
+  - Describe what AI is, what Microsoft Copilot can help with, and why AI answers need checking.
+  - Use AI to explain instructions, build checklists, and organize tasks for work and school.
+  - Write, shorten, and clarify messages with AI, then review them before sending.
+  - Plan a day with AI, including known times, travel time, breaks, and changes to the plan.
+  - Keep private information private, recognize scams and pressure, and know who to ask for help.
+  - Decide when AI is helpful, when another support fits better, and when to skip AI.
+prerequisites: |
+  - No previous experience with AI is needed.
+  - Access to Microsoft Copilot, or another AI tool, to try the example prompts.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- administrator
+- student
+products:
+- m365
+subjects:
+- accessibility
+modules:
+- learn.wwl.what-is-artificial-intelligence
+- learn.wwl.how-ai-can-help-work-school
+- learn.wwl.use-ai-to-communicate
+- learn.wwl.use-ai-plan-your-day
+- learn.wwl.use-ai-safely
+- learn.wwl.choose-how-to-use-ai
+trophy:
+  uid: learn.wwl.ai-people-intellectual-developmental-disabilities.trophy
