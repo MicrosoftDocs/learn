@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-how-to-use-ai.keep-supports-already-work
+title: "Keep supports that already work"
+metadata:
+  title: "Keep Supports That Already Work"
+  description: "Learn how to integrate AI with tools and supports you already use, like planners, apps, or schedules, without replacing them. Explore more."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-keep-supports-already-work.md)]

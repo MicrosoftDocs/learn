@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-safely.try-these-prompts-copilot
+title: "Try these prompts in Copilot"
+metadata:
+  title: "Try These Prompts in Copilot"
+  description: "Learn how to use prompts to protect your information, spot scams, and check messages safely when interacting with AI tools."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-try-these-prompts-copilot.md)]

@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.use-ai-plan-your-day
+metadata:
+  title: "Use AI to plan your day"
+  description: "Learn how to use AI to create schedules, prioritize tasks, and manage your day effectively with personalized plans and checklists."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: module
+  ms.service: copilot-studio
+title: "Use AI to plan your day"
+summary: Learn how to use AI to create schedules, prioritize tasks, and manage your day effectively.
+abstract: |
+  After completing this module, you will be able to:
+  - Use AI to create daily schedules and checklists.
+  - Prioritize tasks based on importance and deadlines.
+  - Break large tasks into smaller, manageable steps.
+  - Adjust plans dynamically as your day changes.
+  - Integrate AI with other planning tools like calendars and reminders.
+prerequisites: |
+  - Basic familiarity with AI tools like Copilot.
+  - Ability to identify daily tasks and priorities.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- student
+- school-leader
+- k-12-educator
+- higher-ed-educator
+- business-owner
+products:
+- office
+- office-add-ins
+- power-platform
+- power-apps
+subjects:
+- business-applications
+- productivity
+- resource-management
+- communication
+- knowledge-management
+units:
+- learn.wwl.use-ai-plan-your-day.introduction
+- learn.wwl.use-ai-plan-your-day.start-what-already-known
+- learn.wwl.use-ai-plan-your-day.decide-what-needs-happen-first
+- learn.wwl.use-ai-plan-your-day.break-large-task-smaller-steps
+- learn.wwl.use-ai-plan-your-day.keep-supports-already-work
+- learn.wwl.use-ai-plan-your-day.keep-conversation
+- learn.wwl.use-ai-plan-your-day.try-prompts-copilot
+- learn.wwl.use-ai-plan-your-day.practice-activity
+- learn.wwl.use-ai-plan-your-day.knowledge-check
+- learn.wwl.use-ai-plan-your-day.summary
+badge:
+  uid: learn.wwl.use-ai-plan-your-day.badge

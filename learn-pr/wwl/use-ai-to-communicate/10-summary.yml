@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-to-communicate.summary
+title: "Summary"
+metadata:
+  title: "Summary"
+  description: "Learn how AI can assist in writing clear, respectful messages. Explore prompts, refine drafts, and decide what to send with confidence."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-summary.md)]

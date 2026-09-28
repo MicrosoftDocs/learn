@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-to-communicate.make-message-shorter
+title: "Shorten a message using AI tools"
+metadata:
+  title: "Shorten a Message Using AI Tools"
+  description: "Learn how to use AI tools to shorten messages while keeping the main idea intact. Ensure clarity and respect before sending your message."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-make-message-shorter.md)]

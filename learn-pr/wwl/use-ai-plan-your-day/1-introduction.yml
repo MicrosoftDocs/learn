@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-plan-your-day.introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: "Learn how to plan your day effectively with AI. Discover how Copilot helps create schedules for tasks like work, appointments, and more."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

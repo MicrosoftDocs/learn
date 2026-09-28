@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.what-is-artificial-intelligence.ai-does-not-always-get-everything-right
+title: "AI does not always get everything right"
+metadata:
+  title: "AI Does Not Always Get Everything Right"
+  description: "Learn why it's important to review AI responses for accuracy. Understand how AI can make mistakes and how to verify its outputs effectively."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-ai-does-not-always-get-everything-right.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.how-ai-can-help-work-school.work-school-daily-life
+title: "Work, school, and daily life"
+metadata:
+  title: "Work, School, and Daily Life"
+  description: "Learn how AI tools like Copilot can help you create study plans, organize tasks, and draft professional messages for work and school."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-work-school-daily-life.md)]

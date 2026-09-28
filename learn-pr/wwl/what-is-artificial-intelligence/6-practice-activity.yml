@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.what-is-artificial-intelligence.practice-activity
+title: "Practice activity: Try AI for yourself"
+metadata:
+  title: "Practice Activity: Try AI for Yourself"
+  description: "Practice using AI by choosing an everyday task, writing a prompt, and reviewing the suggestion you get back."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-practice-activity.md)]

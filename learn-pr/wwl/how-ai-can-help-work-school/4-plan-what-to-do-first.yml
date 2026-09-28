@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.how-ai-can-help-work-school.plan-what-to-do-first
+title: "Plan what to do first with Copilot"
+metadata:
+  title: "Plan What to Do First With Copilot"
+  description: "Learn how Copilot can help you organize tasks by suggesting an order and drafting messages for school or work. Get started today!"
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-plan-what-to-do-first.md)]

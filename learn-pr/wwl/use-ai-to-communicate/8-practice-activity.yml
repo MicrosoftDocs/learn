@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-to-communicate.practice-activity
+title: "Practice activity: Use AI to write a thank-you message"
+metadata:
+  title: "Practice Activity: Use AI to Write a Thank-You Message"
+  description: "Practice using Copilot to write a thank-you message, refine it with a follow-up prompt, and review the draft before sending it."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-practice-activity.md)]

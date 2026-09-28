@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.use-ai-safely
+metadata:
+  title: "Use AI Safely"
+  description: "Learn how to use AI safely by protecting private information, identifying scams, and verifying AI responses before taking action."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: module
+  ms.service: privacy
+title: "Use AI safely"
+summary: Learn to use AI responsibly by protecting private information, identifying scams, and verifying AI-generated responses.
+abstract: |
+  After completing this module, you will be able to:
+  - Identify private information that should not be shared with AI.
+  - Create safer prompts for AI interactions.
+  - Recognize warning signs of scams and unsafe requests.
+  - Verify AI-generated responses for accuracy and safety.
+  - Take appropriate steps to protect yourself and seek help when needed.
+prerequisites: |
+  - Basic understanding of AI and its applications.
+  - Familiarity with online communication and digital tools.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- student
+products:
+- power-platform
+- ai-builder
+- azure
+- azure-openai
+- azure-iot
+subjects:
+- security
+- cloud-security
+- information-protection-governance
+- identity-access
+- fraud-protection
+units:
+- learn.wwl.use-ai-safely.introduction
+- learn.wwl.use-ai-safely.keep-private-information-private
+- learn.wwl.use-ai-safely.share-only-what-needed
+- learn.wwl.use-ai-safely.ai-can-make-mistakes
+- learn.wwl.use-ai-safely.keep-conversation-going
+- learn.wwl.use-ai-safely.try-these-prompts-copilot
+- learn.wwl.use-ai-safely.exercise-what-safe-to-share
+- learn.wwl.use-ai-safely.where-to-get-help
+- learn.wwl.use-ai-safely.practice-activity
+- learn.wwl.use-ai-safely.knowledge-check
+- learn.wwl.use-ai-safely.summary
+badge:
+  uid: learn.wwl.use-ai-safely.badge

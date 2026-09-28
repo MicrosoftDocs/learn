@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.what-is-artificial-intelligence
+metadata:
+  title: "What Is Artificial Intelligence"
+  description: "Learn what artificial intelligence is, how it works, and how tools like Microsoft Copilot can help with everyday tasks and decision-making."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: module
+  ms.service: microsoft-copilot
+title: "What is Artificial Intelligence (AI)?"
+summary: Learn how AI, including Microsoft Copilot, can assist with everyday tasks, provide suggestions, and help you make informed decisions.
+abstract: |
+  After completing this module, you will be able to:
+  - Define artificial intelligence and its applications.
+  - Understand how AI tools like Microsoft Copilot assist with daily tasks.
+  - Identify the limitations of AI and the importance of human decision-making.
+  - Use AI prompts effectively for organization, planning, and learning.
+prerequisites: |
+  - Basic familiarity with technology and digital tools.
+  - Interest in learning about artificial intelligence and its applications.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- student
+products:
+- power-platform
+- ai-builder
+- azure
+- azure-openai
+- azure-iot
+subjects:
+- security
+- business-applications
+- knowledge-management
+- resource-management
+units:
+- learn.wwl.what-is-artificial-intelligence.introduction
+- learn.wwl.what-is-artificial-intelligence.ai-action
+- learn.wwl.what-is-artificial-intelligence.ai-does-not-always-get-everything-right
+- learn.wwl.what-is-artificial-intelligence.people-make-decisions
+- learn.wwl.what-is-artificial-intelligence.try-these-prompts-copilot
+- learn.wwl.what-is-artificial-intelligence.practice-activity
+- learn.wwl.what-is-artificial-intelligence.knowledge-check
+- learn.wwl.what-is-artificial-intelligence.summary
+badge:
+  uid: learn.wwl.what-is-artificial-intelligence.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-to-communicate.keep-conversation-going
+title: "Keep the conversation going with AI"
+metadata:
+  title: "Keep the Conversation Going With AI"
+  description: "Learn how to use AI to refine messages, ask for help, and adjust tone effectively. Explore prompts and tips to improve communication skills."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-keep-conversation-going.md)]

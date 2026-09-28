@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-how-to-use-ai.try-prompts-copilot
+title: "Try these prompts in Copilot"
+metadata:
+  title: "Try These Prompts in Copilot"
+  description: "Learn how to use prompts to evaluate AI responses effectively. Compare options, simplify answers, and verify information with ease."
+  ms.date: 09/17/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-try-prompts-copilot.md)]
