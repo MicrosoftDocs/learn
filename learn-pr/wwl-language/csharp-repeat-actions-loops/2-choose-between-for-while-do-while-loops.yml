@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-repeat-actions-loops.choose-between-for-while-do-while-loops
+title: Choose between for, while, and do-while loops
+metadata:
+  title: Choose Between for, while, and do-while Loops
+  description: "Learn when to use a for loop, a while loop, or a do-while loop, and how each one works."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-choose-between-for-while-do-while-loops.md)]
