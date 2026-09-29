@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-repeat-actions-loops.exercise-guess-number
+title: Exercise - Create a guess the number game
+metadata:
+  title: Exercise - Create a Guess the Number Game
+  description: "Practice using a while loop, conditional logic, and break by building a Guess the Number game."
+  ms.date: 9/29/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/4-exercise-guess-number.md)]

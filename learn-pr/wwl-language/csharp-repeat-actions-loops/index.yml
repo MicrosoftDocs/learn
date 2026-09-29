@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.languages.csharp-repeat-actions-loops
+metadata:
+  title: Repeat actions with loops in C#
+  description: "Learn how to repeat actions in C# using for, while, and do-while loops, and control loop execution with break and continue."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
+  ms.devlang: csharp
+  ai-usage: human-only
+title: Repeat actions with loops in C#
+summary: Learn how to repeat actions in C# using for, while, and do-while loops, and control loop execution with break and continue.
+abstract: |
+  After you complete this module, you'll be able to:
+
+  -   Repeat actions a set number of times using a for loop
+
+  -   Repeat actions while a condition is true using a while loop
+
+  -   Repeat actions at least once using a do-while loop
+
+  -   Control loop execution using break and continue
+prerequisites: |
+  -   Beginner level experience with basic C# syntax rules
+
+  -   Beginner level experience with displaying a message to a console using the Console.WriteLine() and Console.Write() methods
+
+  -   Beginner level experience with creating literal values and declaring variables of basic data types like string, int, and decimal
+
+  -   Beginner level experience with evaluating Boolean expressions and using if, else if, and else statements
+iconUrl: /training/achievements/csharp-repeat-actions-loops.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+units:
+- learn.languages.csharp-repeat-actions-loops.introduction
+- learn.languages.csharp-repeat-actions-loops.choose-between-for-while-do-while-loops
+- learn.languages.csharp-repeat-actions-loops.controlling-loop-execution-with-break-continue
+- learn.languages.csharp-repeat-actions-loops.exercise-guess-number
+- learn.languages.csharp-repeat-actions-loops.knowledge-check
+- learn.languages.csharp-repeat-actions-loops.summary
+badge:
+  uid: learn.languages.csharp-repeat-actions-loops.badge
