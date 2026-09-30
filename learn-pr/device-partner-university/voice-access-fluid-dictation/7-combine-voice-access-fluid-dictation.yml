@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.voice-access-fluid-dictation.combine-voice-access-fluid-dication
+title: Combine Voice Access and Fluid Dictation in everyday workflows
+metadata:
+  title: Combine Voice Access And Fluid Dictation In Everyday Workflows
+  description: This content is part of the "Boost productivity with Voice Access and Fluid Dictation on Copilot+ PCs" module.
+  ms.date: 09/29/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-combine-voice-access-fluid-dictation.md)]
