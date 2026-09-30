@@ -1,0 +1,90 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.ai-workload-visibility.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Check your knowledge of AI workload visibility and AI hardware utilization in Windows Task Manager.
+  ms.date: 09/30/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Why is understanding AI workloads becoming increasingly important on Windows devices?"
+    choices:
+    - content: "Because AI workloads can only run on cloud infrastructure"
+      isCorrect: false
+      explanation: "Incorrect. Many AI workloads can run locally on Windows devices using CPUs, GPUs, and NPUs."
+    - content: "Because organizations need insight into how AI applications use device resources and hardware accelerators"
+      isCorrect: true
+      explanation: "Correct. As AI becomes a larger part of the Windows experience, organizations need visibility into hardware utilization, resource consumption, and workload behavior to better understand how AI-enabled applications use available hardware and support informed decision-making."
+    - content: "Because AI workloads replace traditional system monitoring"
+      isCorrect: false
+      explanation: "Incorrect. AI monitoring complements traditional monitoring rather than replacing it."
+    - content: "Because all Windows applications now require an NPU"
+      isCorrect: false
+      explanation: "Incorrect. Many Windows applications don't require an NPU and can run without dedicated AI hardware."
+
+  - content: "While testing an AI-enabled application, Task Manager shows high CPU utilization but little or no NPU activity. The application documentation indicates that the feature normally uses the NPU on supported devices. What is the most reasonable conclusion?"
+    choices:
+    - content: "The application has stopped functioning correctly"
+      isCorrect: false
+      explanation: "Incorrect. High CPU utilization alone doesn't confirm that the application has failed."
+    - content: "The workload might be using a fallback processing path and should be investigated further"
+      isCorrect: true
+      explanation: "Correct. When NPU activity is expected but not observed, the workload might be using the CPU or another processing path instead. This observation doesn't identify the cause, but it provides a starting point for further investigation."
+    - content: "The NPU hardware is damaged"
+      isCorrect: false
+      explanation: "Incorrect. The observed activity doesn't provide enough information to determine whether there's a hardware problem."
+    - content: "The application is making effective use of the NPU"
+      isCorrect: false
+      explanation: "Incorrect. Little or no NPU activity when NPU usage is expected may indicate that the workload isn't using the intended AI accelerator."
+
+  - content: "Which Task Manager tab provides a system-wide view of NPU and GPU utilization over time?"
+    choices:
+    - content: "Startup apps"
+      isCorrect: false
+      explanation: "Incorrect. The Startup apps tab is used to manage applications that launch when Windows starts."
+    - content: "Processes"
+      isCorrect: false
+      explanation: "Incorrect. The Processes tab shows resource usage for individual running applications rather than historical system-wide utilization."
+    - content: "Details"
+      isCorrect: false
+      explanation: "Incorrect. The Details tab provides detailed process information but not overall utilization graphs."
+    - content: "Performance"
+      isCorrect: true
+      explanation: "Correct. The Performance tab provides system-wide views and utilization graphs for supported hardware resources, including NPUs and GPUs."
+
+  - content: "Why might two applications that provide similar AI features have different effects on device performance and battery life?"
+    choices:
+    - content: "Because AI workloads always use the same hardware resources"
+      isCorrect: false
+      explanation: "Incorrect. AI workloads can run on different processors, including CPUs, GPUs, GPU neural engines, and NPUs."
+    - content: "Because the hardware used to process AI workloads can have different performance and power characteristics"
+      isCorrect: true
+      explanation: "Correct. Similar AI features can have different effects on responsiveness, power consumption, and battery life depending on whether the workload uses dedicated AI hardware or general-purpose processors."
+    - content: "Because applications that use AI don't consume system resources"
+      isCorrect: false
+      explanation: "Incorrect. AI workloads consume system resources regardless of where they're processed."
+    - content: "Because battery life is determined only by screen brightness"
+      isCorrect: false
+      explanation: "Incorrect. Battery life can be affected by many factors, including how AI workloads are processed."
+
+  - content: "Why are NPUs important for supporting local AI workloads on Windows devices?"
+    choices:
+    - content: "They provide additional storage capacity for AI models"
+      isCorrect: false
+      explanation: "Incorrect. NPUs are designed to accelerate AI processing, not increase storage capacity."
+    - content: "They replace CPUs for all computing tasks"
+      isCorrect: false
+      explanation: "Incorrect. CPUs continue to perform many system and application tasks alongside NPUs."
+    - content: "They are designed to perform AI computations efficiently, helping improve performance and power efficiency"
+      isCorrect: true
+      explanation: "Correct. NPUs are specialized processors designed specifically for AI workloads and can perform many AI computations efficiently compared to general-purpose processors."
+    - content: "They allow AI applications to run without memory resources"
+      isCorrect: false
+      explanation: "Incorrect. AI applications still require memory and other system resources regardless of the processor being used."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.design-manage-certificate-templates.template-renewal-replacement-retirement
+title: Template renewal, replacement, retirement
+metadata:
+  title: Template Renewal, Replacement, Retirement
+  description: Plan certificate profile changes, cryptographic transitions, overlap, supersedence, unpublication, plus safe retirement.
+  ms.date: 09/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/7-template-renewal-replacement-retirement.md)]

@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.windows-server.design-manage-certificate-templates
+metadata:
+  title: Design and Manage Active Directory Certificate Services Certificate Templates
+  description: Design secure certificate templates, control enrollment, manage template publication, validate certificate profiles, plan lifecycle changes, plus recover archived encryption keys.
+  ms.date: 09/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-task-based
+  ms.service: windows-server
+title: Design and manage Active Directory Certificate Services certificate templates
+summary: Design secure, compatible certificate templates, then manage their issuance, replacement, retirement, attestation, archival, plus recovery across an enterprise.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Select a template version plus compatibility level that certification authorities, recipients, providers, plus tools support.
+  - Authorize subject identity across the request path, template, certification authority policy module, plus enrollment interface.
+  - Design minimal-purpose transport layer security, domain controller, network access, encryption, enrollment-agent, plus trusted-platform profiles.
+  - Publish, replace, supersede, plus retire templates without assuming that old certificates disappear.
+  - Configure key archival, then recover an archived encryption key while protecting recovery authority plus recovered material.
+prerequisites: |
+  - Familiarity with Windows Server administration.
+  - Familiarity with Active Directory Domain Services.
+  - Basic understanding of public key infrastructure plus certificate enrollment.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - intermediate
+roles:
+  - administrator
+  - security-engineer
+products:
+  - windows-server
+subjects:
+  - security
+  - infrastructure
+units:
+  - learn.windows-server.design-manage-certificate-templates.introduction
+  - learn.windows-server.design-manage-certificate-templates.available-certificate-templates
+  - learn.windows-server.design-manage-certificate-templates.holistic-certificate-profile
+  - learn.windows-server.design-manage-certificate-templates.certificate-template-properties
+  - learn.windows-server.design-manage-certificate-templates.authentication-profiles
+  - learn.windows-server.design-manage-certificate-templates.enrollment-authorization-remediation
+  - learn.windows-server.design-manage-certificate-templates.template-renewal-replacement-retirement
+  - learn.windows-server.design-manage-certificate-templates.advanced-assurance-reference-profiles-key-recovery
+  - learn.windows-server.design-manage-certificate-templates.knowledge-check
+  - learn.windows-server.design-manage-certificate-templates.summary
+badge:
+  uid: learn.windows-server.design-manage-certificate-templates.badge

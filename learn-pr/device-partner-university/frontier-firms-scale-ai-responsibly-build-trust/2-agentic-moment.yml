@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.frontier-firms-scale-ai-responsibly-build-trust.agentic-moment
+title: The agentic moment changes AI governance
+metadata:
+  title: The Agentic Moment Changes AI Governance
+  description: 'This content is part of the "Frontier Firms: Scale AI Responsibly and Build Trust" module.'
+  ms.date: 09/29/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-agentic-moment.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.voice-access-fluid-dictation.exercise-develop-product-recommendation-dictation
+title: Exercise - Develop a product recommendation with Fluid Dictation
+metadata:
+  title: Exercise - Develop A Product Recommendation With Fluid Dictation
+  description: This content is part of the "Boost productivity with Voice Access and Fluid Dictation on Copilot+ PCs" module.
+  ms.date: 09/29/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-exercise-develop-product-recommendation-dictation.md)]

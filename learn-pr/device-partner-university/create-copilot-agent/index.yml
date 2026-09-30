@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.create-copilot-agent
+title: Build your first agent in Microsoft 365 Copilot Chat
+metadata:
+  title: Build Your First Agent In Microsoft 365 Copilot Chat
+  description: Learn how to create a task-focused agent in Microsoft 365 Copilot Chat with clear instructions and relevant knowledge, test its responses, and refine its configuration based on the results.
+  ms.date: 09/29/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module-build-your-first
+  ms.service: microsoft-365-copilot
+summary: >
+  Create and refine your first agent in Microsoft 365 Copilot Chat by defining its purpose, instructions, knowledge, and expected output.
+abstract: |
+ By the end of this module, you'll be able to:
+
+ - Identify a focused, repeatable task that is appropriate for a first agent.
+ - Create an agent in Microsoft 365 Copilot Chat by defining its purpose, instructions, knowledge, and expected output.
+ - Test an agent with typical, incomplete, and out-of-scope requests.
+ - Refine an agent's instructions based on the results of testing.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/create-copilot-agent.svg
+ratingEnabled: false
+levels:
+  - intermediate
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - microsoft-365-copilot
+units:
+  - learn.dpu.create-copilot-agent.introduction
+  - learn.dpu.create-copilot-agent.plan-your-agent
+  - learn.dpu.create-copilot-agent.exercise-create-agent
+  - learn.dpu.create-copilot-agent.evaluate-agent-responses
+  - learn.dpu.create-copilot-agent.exercise-test-refine-agent
+  - learn.dpu.create-copilot-agent.knowledge-check
+  - learn.dpu.create-copilot-agent.summary
+badge:
+  uid: learn.dpu.create-copilot-agent.badge

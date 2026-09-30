@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.frontier-firms-scale-ai-responsibly-build-trust.agentic-ai-deployment
+title: 'Exercise: Evaluate an agentic AI deployment'
+metadata:
+  title: 'Exercise: Evaluate an Agentic AI Deployment'
+  description: 'This content is part of the "Frontier Firms: Scale AI Responsibly and Build Trust" module.'
+  ms.date: 09/29/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-agentic-ai-deployment.md)]

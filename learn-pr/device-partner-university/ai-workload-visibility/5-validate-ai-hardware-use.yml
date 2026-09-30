@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.ai-workload-visibility.validate-ai-hardware-use
+title: Validate AI hardware use
+metadata:
+  title: Validate AI Hardware Use
+  description: This content is part of the "Gain visibility into AI workloads with Windows Task Manager" module.
+  ms.date: 09/30/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-validate-ai-hardware-use.md)]

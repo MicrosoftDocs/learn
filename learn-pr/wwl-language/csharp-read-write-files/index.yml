@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.languages.csharp-read-write-files
+metadata:
+  title: Read and write files in C#
+  description: "Learn how to read from and write to files in C# using the using statement and the File class to keep your code safe and clean."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
+  ms.devlang: csharp
+  ai-usage: human-only
+title: Read and write files in C#
+summary: Learn how to read from and write to files in C# using the using statement and the File class to keep your code safe and clean.
+abstract: |
+  After you complete this module, you'll be able to:
+
+  -   Open files safely using the using statement and the File class
+
+  -   Read data from text files
+
+  -   Write and append data to text files
+prerequisites: |
+  -   Beginner level experience with basic C# syntax rules
+
+  -   Beginner level experience with creating literal values and declaring variables of basic data types like string, int, and decimal
+
+  -   Beginner level experience with repeating actions using for, while, and do-while loops
+
+  -   Beginner level experience with storing data using arrays and `List<T>`
+
+  -   Beginner level experience with creating methods, parameters, and return values
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+units:
+- learn.languages.csharp-read-write-files.introduction
+- learn.languages.csharp-read-write-files.open-close-files-safely-with-using
+- learn.languages.csharp-read-write-files.read-data-from-files
+- learn.languages.csharp-read-write-files.write-data-to-files
+- learn.languages.csharp-read-write-files.exercise-log-file-viewer
+- learn.languages.csharp-read-write-files.knowledge-check
+- learn.languages.csharp-read-write-files.summary
+badge:
+  uid: learn.languages.csharp-read-write-files.badge

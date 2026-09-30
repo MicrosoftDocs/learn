@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.voice-access-fluid-dictation.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: This content is part of the "Boost productivity with Voice Access and Fluid Dictation on Copilot+ PCs" module.
+  ms.date: 09/29/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary role of Voice Access on a Copilot+ PC?"
+    choices:
+        - content: "Create and edit content using natural speech"
+          isCorrect: false
+          explanation: "Incorrect. This describes the role of Fluid Dictation."
+        - content: "Navigate Windows and interact with applications using spoken commands"
+          isCorrect: true
+          explanation: "Correct. Voice Access enables users to navigate Windows and interact with applications using spoken commands."
+        - content: "Summarize meetings automatically"
+          isCorrect: false
+          explanation: "Incorrect. The module describes using voice-powered tools to support productivity workflows, but not automatic meeting summarization."
+        - content: "Analyze customer feedback and generate recommendations"
+          isCorrect: false
+          explanation: "Incorrect. Recommendations are created by the user as part of a workflow, not automatically by Voice Access."
+  - content: "According to the module, what is Fluid Dictation designed to help users do?"
+    choices:
+        - content: "Open applications and switch between windows"
+          isCorrect: false
+          explanation: "Incorrect. These are examples of tasks supported by Voice Access."
+        - content: "Manage Windows settings with voice commands"
+          isCorrect: false
+          explanation: "Incorrect. The module focuses on navigation and content creation, not Settings management."
+        - content: "Create and edit content using natural speech"
+          isCorrect: true
+          explanation: "Correct. Fluid Dictation helps users create and edit content by speaking naturally."
+        - content: "Locate supporting resources across applications"
+          isCorrect: false
+          explanation: "Incorrect. Finding and accessing resources is a Voice Access scenario."
+  - content: "In the workflow described throughout the module, how do Voice Access and Fluid Dictation work together?"
+    choices:
+        - content: "Voice Access creates content while Fluid Dictation manages applications"
+          isCorrect: false
+          explanation: "Incorrect. The responsibilities of the two tools are reversed in this statement."
+        - content: "Voice Access gathers information and Fluid Dictation turns that information into content"
+          isCorrect: true
+          explanation: "Correct. Voice Access helps users reach information, while Fluid Dictation helps transform information into useful content."
+        - content: "Both tools perform exactly the same functions"
+          isCorrect: false
+          explanation: "Incorrect. The module explains that each tool addresses a different part of the productivity workflow."
+        - content: "Fluid Dictation gathers information and Voice Access writes recommendations"
+          isCorrect: false
+          explanation: "Incorrect. The module assigns these roles in the opposite way."
+  - content: "Why does the module recommend reviewing and refining content after using Fluid Dictation?"
+    choices:
+        - content: "To produce high-quality communication before sharing it"
+          isCorrect: true
+          explanation: "Correct. The module states that thoughtful review remains important for producing high-quality communication."
+        - content: "To enable Voice Access commands"
+          isCorrect: false
+          explanation: "Incorrect. Reviewing content is unrelated to enabling Voice Access."
+        - content: "To replace spoken content with keyboard input"
+          isCorrect: false
+          explanation: "Incorrect. The module encourages refining content, not replacing dictation with typing."
+        - content: "To organize application windows more efficiently"
+          isCorrect: false
+          explanation: "Incorrect. Organizing windows is associated with navigation rather than content review."
+  - content: "Which workplace challenge can be reduced by combining Voice Access and Fluid Dictation?"
+    choices:
+        - content: "Installing software updates"
+          isCorrect: false
+          explanation: "Incorrect. Software updates are not discussed as a use case for these tools."
+        - content: "Context switching between finding information and creating content"
+          isCorrect: true
+          explanation: "Correct. The module explains that combining Voice Access and Fluid Dictation can help reduce context switching and support focused productivity."
+        - content: "Managing hardware peripherals"
+          isCorrect: false
+          explanation: "Incorrect. Hardware management is not a focus of the module."
+        - content: "Scheduling meetings automatically"
+          isCorrect: false
+          explanation: "Incorrect. The module does not describe these tools as scheduling meetings automatically."

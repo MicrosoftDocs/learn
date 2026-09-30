@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-read-write-files.write-data-to-files
+title: Write data to files
+metadata:
+  title: Write Data to Files
+  description: "Learn how to write and append data to text files in C#, and understand the difference between the two."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-write-data-to-files.md)]

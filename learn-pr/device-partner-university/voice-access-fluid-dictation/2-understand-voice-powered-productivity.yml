@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.voice-access-fluid-dictation.understand-voice-powered-productivity
+title: Understand voice-powered productivity on Copilot+ PCs
+metadata:
+  title: Understand Voice-Powered Productivity On Copilot+ PCs
+  description: This content is part of the "Boost productivity with Voice Access and Fluid Dictation on Copilot+ PCs" module.
+  ms.date: 09/29/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-understand-voice-powered-productivity.md)]

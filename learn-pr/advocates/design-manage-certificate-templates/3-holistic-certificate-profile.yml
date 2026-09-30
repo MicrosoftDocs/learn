@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.design-manage-certificate-templates.holistic-certificate-profile
+title: Build a holistic certificate profile
+metadata:
+  title: Build a Holistic Certificate Profile
+  description: Design certificate identity, purpose, cryptography, policy, private-key controls, enrollment requirements, plus permissions as one profile.
+  ms.date: 09/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 18
+content: |
+  [!include[](includes/3-holistic-certificate-profile.md)]
