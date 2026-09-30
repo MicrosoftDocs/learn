@@ -1,0 +1,4 @@
+- AI can help format and adapt verified content. It cannot perform discovery, observation, or decision-making.
+- Create materials with the employee, not simply for the employee.
+- Keep safety-critical translation separate and require competent human verification.
+- Use the review standard established in the previous module to ensure consistency, rather than introducing a separate checklist.

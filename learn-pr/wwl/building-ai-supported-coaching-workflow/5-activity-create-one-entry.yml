@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.building-ai-supported-coaching-workflow.activity-create-one-entry
+title: "Practice activity: Create one entry"
+metadata:
+  title: "Practice Activity: Create One Entry"
+  description: "Learn how to create a reusable prompt for AI-supported workflows, including writing prompts, adding follow-ups, and defining review checks."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-activity-create-one-entry.md)]

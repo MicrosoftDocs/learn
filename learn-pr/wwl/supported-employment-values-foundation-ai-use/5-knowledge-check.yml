@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.supported-employment-values-foundation-ai-use.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Module Assessment"
+  description: "Check what you know about decision ownership, transparency and consent, confidentiality, and how to judge whether an AI tool fits your practice."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 4
+content: "Choose the best response for each of the questions below."
+quiz:
+  questions:
+  - content: "An employee tells their job coach they want to move from the stockroom to a customer-facing role. The coach asks an approved AI tool to review the employee's notes and recommend whether the employee is ready for the change. Why is this an inappropriate use of AI?"
+    choices:
+    - content: "AI tools can't process information about retail work routines."
+      isCorrect: false
+      explanation: "Incorrect. AI tools can handle information about retail work routines. That isn't the problem in this scenario."
+    - content: "AI shouldn't decide what an employee wants or whether a person can succeed. Those decisions belong to the employee and the job coach."
+      isCorrect: true
+      explanation: "Correct. AI may help draft a checklist, organize non-identifying notes, or create options for a conversation. It shouldn't decide what an employee wants, whether a person can succeed, or which support is right. The employee leads decisions about their work and support, and the job coach brings observation, relationships, local knowledge, and professional judgment."
+    - content: "The coach should have asked the employer to make the decision instead."
+      isCorrect: false
+      explanation: "Incorrect. The employee and the job coach decide together whether a role change makes sense. The employer doesn't make that call."
+    - content: "AI can only be used before an employee starts a job, not after."
+      isCorrect: false
+      explanation: "Incorrect. AI can be used at various stages of employment, but it must be used appropriately and ethically."
+  - content: "A job coach plans to use an AI tool to draft a workplace support plan that describes an employee's routines and adjustments. Which action best reflects the values of transparency and consent?"
+    choices:
+    - content: "Draft the plan first, then share the finished version so the employee isn't confused by early versions."
+      isCorrect: false
+      explanation: "Incorrect. Transparency and consent mean involving the employee from the start, not only sharing the finished version."
+    - content: "Use the tool without mentioning it, because the coach reviews and edits everything before it's shared."
+      isCorrect: false
+      explanation: "Incorrect. Transparency means telling the employee that the coach is using AI, not hiding it."
+    - content: "Tell the employee that AI is being used to create material about them, invite their participation, respect a decision to decline, and confirm how the information may be used."
+      isCorrect: true
+      explanation: "Correct. Transparency and consent mean telling the employee when AI is used to create material about them or for them, inviting participation, respecting a decision to decline, and confirming how information may be used."
+    - content: "Ask the employer for approval to use AI, since the plan affects the workplace."
+      isCorrect: false
+      explanation: "Incorrect. Although employer input can help, the employee's consent and participation come first."
+  - content: "A job coach wants to use an AI tool to draft a visual checklist for a delivery routine. Which approach best protects confidentiality?"
+    choices:
+    - content: "Include the employee's full name and diagnosis so the draft is accurate."
+      isCorrect: false
+      explanation: "Incorrect. The draft doesn't need identifying details, and adding them breaks confidentiality."
+    - content: "Use the least amount of information needed, keep it non-identifying, and follow organizational policy."
+      isCorrect: true
+      explanation: "Correct. Confidentiality means using the least amount of information needed and following organizational policy. In the stockroom example, the coach uses non-identifying information to request a draft, then checks and adapts it with the employee and supervisor."
+    - content: "Share the employee's full support file so the tool has complete context."
+      isCorrect: false
+      explanation: "Incorrect. Sharing the full support file is excessive and breaches confidentiality."
+    - content: "Avoid AI entirely, because any use of AI breaches confidentiality."
+      isCorrect: false
+      explanation: "Incorrect. AI can be used ethically and in compliance with confidentiality policies when handled appropriately."
+  - content: "A job coach is considering a new AI tool for their supported employment practice. Which question best assesses whether the tool is appropriate?"
+    choices:
+    - content: "Does the tool reduce the number of hours the job coach spends in the workplace?"
+      isCorrect: false
+      explanation: "Incorrect. A tool should support the employee and the employer, not simply cut the hours a coach spends on site."
+    - content: "Does the tool let the coach complete documentation without involving the employer?"
+      isCorrect: false
+      explanation: "Incorrect. A good tool strengthens the partnership with the employer rather than working around it."
+    - content: "Does the tool lower expectations so the employee has fewer tasks to learn?"
+      isCorrect: false
+      explanation: "Incorrect. Presumed competence means using support to remove barriers, not lower expectations."
+    - content: "Does the tool help the employee and the employer succeed, build skills, exercise choice, and participate fully in the workplace without creating new barriers or dependence?"
+      isCorrect: true
+      explanation: "Correct. A useful way to assess any tool is to ask whether it helps the employee and/or the employer succeed, build skills, exercise choice, and participate fully in the workplace. A tool should remove barriers, not create new ones or make the employee dependent on a system that doesn't fit their needs."

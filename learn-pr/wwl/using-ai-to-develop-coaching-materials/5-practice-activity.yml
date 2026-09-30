@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.using-ai-to-develop-coaching-materials.practice-activity
+title: "Practice activity"
+metadata:
+  title: "Practice Activity"
+  description: "Learn how to draft coaching materials using AI tools, verify information, and improve accessibility for workplace use. Get started today!"
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-practice-activity.md)]

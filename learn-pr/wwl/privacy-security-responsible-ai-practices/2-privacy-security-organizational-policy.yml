@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.privacy-security-responsible-ai-practices.privacy-security-organizational-policy
+title: "Privacy, security, and organizational policy"
+metadata:
+  title: "Privacy, Security, and Organizational Policy"
+  description: "Learn how to ensure privacy and security by following organizational policies, permissions, and retention rules when using approved tools."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-privacy-security-organizational-policy.md)]

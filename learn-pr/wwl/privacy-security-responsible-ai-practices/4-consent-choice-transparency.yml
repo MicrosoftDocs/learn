@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.privacy-security-responsible-ai-practices.consent-choice-transparency
+title: "Consent, choice, and transparency"
+metadata:
+  title: "Consent, Choice, and Transparency"
+  description: "Learn how to explain AI's intended use, invite participation, and respect employee decisions to ensure consent, choice, and transparency."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-consent-choice-transparency.md)]

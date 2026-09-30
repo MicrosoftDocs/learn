@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.using-ai-to-develop-coaching-materials.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Module Assessment"
+  description: "Knowledge check"
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each of the questions below."
+quiz:
+  questions:
+  - content: "A job coach has raw discovery notes and asks an AI tool to turn them into a vocational profile for an employee. Why is this inappropriate?"
+    choices:
+    - content: "AI tools can't produce one-page summaries."
+      isCorrect: false
+      explanation: ""
+    - content: "AI shouldn't turn keywords or raw notes into a vocational profile, speak in the employee's voice, or decide what's shared. The full profile is developed through discovery and partnership, and the employee owns it."
+      isCorrect: true
+      explanation: "AI may reorganize or simplify a profile the employee and job coach have already developed. It must not replace discovery, a full vocational profile, direct observation, job analysis, or decisions about fit and support."
+    - content: "Profiles must always be handwritten to be valid."
+      isCorrect: false
+      explanation: ""
+    - content: "The employer, not the job coach, should create the profile."
+      isCorrect: false
+      explanation: ""
+  - content: "A coach uses AI to draft a numbered task analysis from verified employer instructions. What must people still lead?"
+    choices:
+    - content: "Choosing the font and layout of the printed steps."
+      isCorrect: false
+      explanation: ""
+    - content: "Deciding how many steps the draft should contain."
+      isCorrect: false
+      explanation: ""
+    - content: "Observing the task, confirming the sequence matches the worksite, and checking safety and quality requirements."
+      isCorrect: true
+      explanation: "For task analysis, AI can turn verified employer instructions into a numbered draft, but people observe the task, confirm the sequence, and check safety and quality."
+    - content: "Rewriting every step so none of the AI wording remains."
+      isCorrect: false
+      explanation: ""
+  - content: "An employee's workplace instructions include safety-critical steps, and the employee reads most comfortably in another language. What's the correct approach?"
+    choices:
+    - content: "Use AI translation and ask the employee to flag anything confusing."
+      isCorrect: false
+      explanation: ""
+    - content: "Skip translation and rely on visual steps only."
+      isCorrect: false
+      explanation: ""
+    - content: "Use AI translation for the safety steps but keep the original nearby."
+      isCorrect: false
+      explanation: ""
+    - content: "Don't rely on AI translation for safety-critical instructions unless a competent speaker verifies the complete translated version."
+      isCorrect: true
+      explanation: "Safety-critical translation must be kept separate and requires competent human verification."
+  - content: "A coach uses AI to organize a draft support plan from an approved task analysis. Which instruction belongs in the prompt?"
+    choices:
+    - content: "Choose the most effective support for each step and explain why."
+      isCorrect: false
+      explanation: ""
+    - content: "List possible visual, gestural, verbal, coworker, supervisor, or environmental supports, beginning with the least intrusive. Do not decide which support to use."
+      isCorrect: true
+      explanation: "AI can organize a draft support plan, but people select the least intrusive support, include coworker supports, and adjust through observation."
+    - content: "Recommend which steps the employee should skip."
+      isCorrect: false
+      explanation: ""
+    - content: "Rank the employee's likelihood of succeeding at each step."
+      isCorrect: false
+      explanation: ""

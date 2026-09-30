@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.privacy-security-responsible-ai-practices.activity
+title: "Practice activity"
+metadata:
+  title: "Practice Activity"
+  description: "Learn how to identify privacy, security, and consent issues when using AI tools, and develop safer approaches aligned with organizational policies."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-activity.md)]

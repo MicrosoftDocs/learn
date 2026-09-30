@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.supported-employment-values-foundation-ai-use
+metadata:
+  title: "Supported Employment Values as the Foundation for AI Use"
+  description: "Learn how AI can support job coaching by upholding dignity, self-determination, and workplace inclusion for employees and employers."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: module
+  ms.service: frontline-worker-solutions
+title: "Supported employment values as the foundation for AI use"
+summary: Learn how AI can enhance job coaching while respecting employee autonomy, dignity, and workplace inclusion.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe the values that should guide AI use.
+  - Explain how AI can enhance job coaching without replacing relationships or judgment.
+  - Identify when AI can assist and when people must lead.
+prerequisites: |
+  - Basic understanding of job coaching principles.
+  - Familiarity with workplace inclusion concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- school-leader
+- business-leader
+products:
+- azure
+subjects:
+- business-applications
+- employee-engagement
+- employee-management
+units:
+- learn.wwl.supported-employment-values-foundation-ai-use.introduction
+- learn.wwl.supported-employment-values-foundation-ai-use.supported-employment-values
+- learn.wwl.supported-employment-values-foundation-ai-use.example-ai-supporting-independence
+- learn.wwl.supported-employment-values-foundation-ai-use.practice-activity
+- learn.wwl.supported-employment-values-foundation-ai-use.knowledge-check
+- learn.wwl.supported-employment-values-foundation-ai-use.summary
+badge:
+  uid: learn.wwl.supported-employment-values-foundation-ai-use.badge

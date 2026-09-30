@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.building-ai-supported-coaching-workflow.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Module Assessment"
+  description: "Check what you know about choosing the right task, building a prompt library, and keeping employee partnership at the center of the workflow."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "A job coach wants to start using AI more consistently. Which task is the best candidate for the repeatable workflow?"
+    choices:
+    - content: "Deciding whether an employee is a good match for an open role."
+      isCorrect: false
+      explanation: "Incorrect. People lead job matching, not AI."
+    - content: "Rewriting verified workplace instructions in plain language, because it's repeated, draft-based, and appropriate for AI."
+      isCorrect: true
+      explanation: "Correct. The first step of the workflow is to choose the right task: work that's repeated, draft-based, and appropriate for AI."
+    - content: "Conducting discovery with a new employee."
+      isCorrect: false
+      explanation: "Incorrect. People lead discovery, not AI."
+    - content: "Resolving a disagreement between an employee and a supervisor."
+      isCorrect: false
+      explanation: "Incorrect. People lead conflict resolution, not AI."
+  - content: "A coach saves a prompt that worked well, storing only the prompt wording. What's missing from a useful prompt library entry?"
+    choices:
+    - content: "Nothing, since the wording is what gets reused."
+      isCorrect: false
+      explanation: "Incorrect. The wording alone doesn't tell you when to use the prompt or what to check before you use the output."
+    - content: "The full AI response, so it can be copied next time."
+      isCorrect: false
+      explanation: "Incorrect. A prompt library stores reusable wording, not past AI responses."
+    - content: "The inputs allowed, review checks, best use, follow-ups, and an owner and review date."
+      isCorrect: true
+      explanation: "Correct. A prompt library records task, prompt, best use, inputs allowed, review checks, follow-ups, and owner and review date."
+    - content: "The employee's name, so the entry can be matched to the right person."
+      isCorrect: false
+      explanation: "Incorrect. Never save personal details such as an employee's name in a prompt library."
+  - content: "At the job matching and job analysis stage, which part must people lead?"
+    choices:
+    - content: "Comparing verified task requirements with employee-approved strengths."
+      isCorrect: false
+      explanation: "Incorrect. AI can help with this comparison, so it isn't the part that people must lead."
+    - content: "Formatting the comparison into a readable table."
+      isCorrect: false
+      explanation: "Incorrect. AI can handle formatting."
+    - content: "Drafting questions to ask during a worksite visit."
+      isCorrect: false
+      explanation: "Incorrect. AI can draft these questions for you to review."
+    - content: "Determining fit, analyzing the job, and deciding whether a skills gap can be addressed."
+      isCorrect: true
+      explanation: "Correct. People determine fit, analyze the job, and decide whether they can address a skills gap."
+  - content: "Before using an AI-assisted material, which question best keeps partnership at the center?"
+    choices:
+    - content: "Did the AI tool produce the draft faster than writing it manually?"
+      isCorrect: false
+      explanation: "Incorrect. Speed isn't the point. A faster draft can still miss the employee's goals."
+    - content: "Could a coworker, supervisor, accessible tool, or training approach provide a better support?"
+      isCorrect: true
+      explanation: "Correct. Before you use an AI-assisted material, ask whether it supports the employee's stated goal, whether the employee took part when it concerns them, and whether it fits the real workplace. Ask, too, whether another support would work better and whether you can explain what AI did and what you verified."
+    - content: "Does the material look similar to what other coaches produce?"
+      isCorrect: false
+      explanation: "Incorrect. Matching what other coaches produce says nothing about whether the material fits this employee."
+    - content: "Was the prompt saved to the library for reuse?"
+      isCorrect: false
+      explanation: "Incorrect. Saving a prompt helps you work consistently, but it doesn't keep partnership at the center."

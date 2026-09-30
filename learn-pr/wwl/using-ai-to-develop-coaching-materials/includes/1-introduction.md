@@ -1,0 +1,3 @@
+Job coaches already build strong materials through discovery, observation, conversation, and partnership with employees and employers. This module looks at what happens next: how AI can help you organize, format, compare, or simplify content you have already verified.
+
+AI supports the material, but people lead the work. Discovery, direct observation, job analysis, and decisions about fit and support remain yours, and materials about an employee are created with them, not simply for them.

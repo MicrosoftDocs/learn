@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.building-ai-supported-coaching-workflow.introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: "Discover how AI fits into workflows, build prompt libraries, and learn to lead effectively while adapting to varying terminology and stages."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

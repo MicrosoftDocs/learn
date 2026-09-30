@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.using-ai-to-develop-coaching-materials.review-standard
+title: "Reviewing AI-generated materials: the standard"
+metadata:
+  title: "Reviewing AI-Generated Materials: The Standard"
+  description: "Check accuracy, accessibility, tone, workplace and local fit, privacy, bias, and employee ownership before using AI-generated coaching materials."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-review-standard.md)]

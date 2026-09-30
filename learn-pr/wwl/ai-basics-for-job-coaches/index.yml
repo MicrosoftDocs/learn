@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.ai-basics-for-job-coaches
+metadata:
+  title: "AI Basics for Job Coaches"
+  description: "Discover how job coaches can use AI to draft, organize, and refine workplace materials while ensuring accuracy, privacy, and local compliance."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: v-pablorod
+  ms.topic: module
+  ms.service: artificial-intelligence
+title: "AI basics for job coaches"
+summary: Learn how job coaches can effectively use AI tools to support workplace tasks while maintaining accuracy, privacy, and compliance.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe what AI is and recognize common uses.
+  - Write a clear prompt using a five-part structure.
+  - Use a five-step workflow to create and review a draft.
+  - Recognize inaccurate, biased, or unsupported output.
+prerequisites: |
+  - Basic understanding of workplace processes and supported employment.
+  - Familiarity with drafting workplace materials.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- school-leader
+- technology-manager
+- business-owner
+- support-engineer
+- business-leader
+products:
+- azure
+subjects:
+- accessibility
+- generative-ai
+- artificial-intelligence
+- natural-language-processing
+- machine-learning
+units:
+- learn.wwl.ai-basics-for-job-coaches.introduction
+- learn.wwl.ai-basics-for-job-coaches.what-ai-does-well-where-falls-short
+- learn.wwl.ai-basics-for-job-coaches.five-part-prompt-structure
+- learn.wwl.ai-basics-for-job-coaches.five-step-workflow
+- learn.wwl.ai-basics-for-job-coaches.reviewing-ai-output
+- learn.wwl.ai-basics-for-job-coaches.activity-build-improve-one-prompt
+- learn.wwl.ai-basics-for-job-coaches.knowledge-check
+- learn.wwl.ai-basics-for-job-coaches.summary
+badge:
+  uid: learn.wwl.ai-basics-for-job-coaches.badge

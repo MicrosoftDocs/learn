@@ -1,0 +1,4 @@
+- Use one repeatable workflow rather than a different process for every material.
+- A useful prompt library includes permitted inputs and review checks, not only prompt text.
+- Integrate coworker supports, employee partnership, and career progression into the workflow.
+- Start with one appropriate task, review carefully, and expand only when the approach works.

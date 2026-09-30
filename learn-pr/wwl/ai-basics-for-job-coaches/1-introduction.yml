@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-basics-for-job-coaches.introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: "Discover how AI enhances supported employment by drafting, organizing, and summarizing information. Learn safe practices for using AI tools."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: v-pablorod
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

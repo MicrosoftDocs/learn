@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.using-ai-to-develop-coaching-materials.what-ai-support
+title: "What AI can support"
+metadata:
+  title: "What AI Can Support"
+  description: "Learn how AI can assist job coaches in organizing, formatting, and simplifying materials while ensuring people lead critical decisions and processes."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-ai-support.md)]
