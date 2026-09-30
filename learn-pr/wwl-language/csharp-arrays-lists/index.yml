@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.languages.csharp-arrays-lists
+metadata:
+  title: Organize data with arrays and lists in C#
+  description: "Learn how to store and manage groups of related data in C# using arrays and `List<T>`, and choose the right structure for the job."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
+  ms.devlang: csharp
+  ai-usage: human-only
+title: Organize data with arrays and lists in C#
+summary: Learn how to store and manage groups of related data in C# using arrays and `List<T>`, and choose the right structure for the job.
+abstract: |
+  After you complete this module, you'll be able to:
+
+  -   Store and access a fixed-size sequence of items using an array
+
+  -   Store and manage a resizable sequence of items using a `List<T>`
+
+  -   Choose between an array and a `List<T>` for the data you're working with
+prerequisites: |
+  -   Beginner level experience with basic C# syntax rules
+
+  -   Beginner level experience with creating literal values and declaring variables of basic data types like string, int, and decimal
+
+  -   Beginner level experience with evaluating Boolean expressions and using if, else if, and else statements
+
+  -   Beginner level experience with repeating actions using for, while, and do-while loops
+iconUrl: /training/achievements/csharp-arrays-lists.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+units:
+- learn.languages.csharp-arrays-lists.introduction
+- learn.languages.csharp-arrays-lists.store-manage-data-with-arrays
+- learn.languages.csharp-arrays-lists.store-manage-data-with-lists
+- learn.languages.csharp-arrays-lists.exercise-top-scores
+- learn.languages.csharp-arrays-lists.knowledge-check
+- learn.languages.csharp-arrays-lists.summary
+badge:
+  uid: learn.languages.csharp-arrays-lists.badge

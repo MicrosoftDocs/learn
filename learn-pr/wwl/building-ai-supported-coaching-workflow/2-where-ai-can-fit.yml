@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.building-ai-supported-coaching-workflow.where-ai-can-fit
+title: "Where AI can fit"
+metadata:
+  title: "Where AI Can Fit"
+  description: "Learn how AI can support various stages of supported employment, from planning to follow-up, while ensuring people remain at the center."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-where-ai-can-fit.md)]

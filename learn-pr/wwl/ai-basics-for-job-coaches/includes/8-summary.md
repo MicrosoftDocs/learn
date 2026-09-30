@@ -1,0 +1,3 @@
+- Clear prompts improve drafts, but they do not remove the need for review.
+- Use one consistent review standard for every AI output.
+- Verify local requirements outside the AI tool and follow organizational policy.

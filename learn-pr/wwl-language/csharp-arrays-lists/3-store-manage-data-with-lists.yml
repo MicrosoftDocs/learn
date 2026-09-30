@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-arrays-lists.store-manage-data-with-lists
+title: Store and manage data with lists
+metadata:
+  title: Store and Manage Data with Lists
+  description: "Learn how to store a resizable sequence of items using a C# `List<T>`, and how to add, remove, and update items."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-store-manage-data-with-lists.md)]

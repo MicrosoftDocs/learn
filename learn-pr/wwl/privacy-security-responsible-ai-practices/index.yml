@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.privacy-security-responsible-ai-practices
+metadata:
+  title: "Privacy, Security, and Responsible AI Practices"
+  description: "Learn how to use AI responsibly in supported employment, ensuring privacy, security, transparency, and accountability in every task."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: module
+  ms.service: privacy
+title: "Privacy, security, and responsible AI practices"
+summary: Learn to apply AI responsibly while maintaining privacy, security, transparency, and accountability in supported employment tasks.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand the role of AI in supported employment.
+  - Apply privacy and security principles to AI-assisted tasks.
+  - Ensure transparency and consent when using AI with employees.
+  - Identify and mitigate bias and unsupported claims in AI outputs.
+  - Follow organizational policies for responsible AI use.
+prerequisites: |
+  - Basic understanding of supported employment practices.
+  - Familiarity with organizational policies on privacy and security.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- privacy-manager
+- administrator
+- student
+- developer
+- maker
+products:
+- azure
+subjects:
+- security
+- information-protection-governance
+- identity-access
+- artificial-intelligence
+- machine-learning
+units:
+- learn.wwl.privacy-security-responsible-ai-practices.introduction
+- learn.wwl.privacy-security-responsible-ai-practices.privacy-security-organizational-policy
+- learn.wwl.privacy-security-responsible-ai-practices.what-not-to-put-prompt
+- learn.wwl.privacy-security-responsible-ai-practices.consent-choice-transparency
+- learn.wwl.privacy-security-responsible-ai-practices.review-for-bias-unsupported-claims
+- learn.wwl.privacy-security-responsible-ai-practices.when-ai-should-not-be-used
+- learn.wwl.privacy-security-responsible-ai-practices.responsible-ai-checklist
+- learn.wwl.privacy-security-responsible-ai-practices.activity
+- learn.wwl.privacy-security-responsible-ai-practices.knowledge-check
+- learn.wwl.privacy-security-responsible-ai-practices.summary
+badge:
+  uid: learn.wwl.privacy-security-responsible-ai-practices.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.privacy-security-responsible-ai-practices.introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: "Discover how AI supports drafting in supported employment while people retain choice, judgment, relationships, and accountability. Learn more."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

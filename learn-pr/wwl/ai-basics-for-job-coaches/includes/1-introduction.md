@@ -1,0 +1,3 @@
+AI is software that can generate text, recognize speech and images, translate language, summarize documents, and respond to plain-language requests. It finds patterns in data and produces an answer based on the request. It does not understand an employee, workplace, program, or local rules unless relevant information is provided.
+
+You may already use AI in live captions, dictation, suggested replies, read-aloud tools, translation, image descriptions, and searches that help find a file. In supported employment, AI can help draft, organize, summarize, compare, or reword information. Use only approved tools and do not upload workplace or employee documents unless your organization permits it.

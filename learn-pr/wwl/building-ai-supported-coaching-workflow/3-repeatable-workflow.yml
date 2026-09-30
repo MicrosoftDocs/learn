@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.building-ai-supported-coaching-workflow.repeatable-workflow
+title: "The repeatable workflow"
+metadata:
+  title: "The Repeatable AI-Supported Workflow"
+  description: "Learn how to build a repeatable AI-supported workflow by selecting tasks, preparing inputs, prompting clearly, refining, and saving results."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-repeatable-workflow.md)]

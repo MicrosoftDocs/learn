@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-arrays-lists.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Check your learning on organizing data with arrays and lists in C#."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which collection type has a fixed size that can't change after it's created?"
+    choices:
+    - content: "`List<T>`"
+      isCorrect: false
+      explanation: "Incorrect. A `List<T>` is resizable. You can add or remove items after it's created."
+    - content: "Array"
+      isCorrect: true
+      explanation: "Correct. An array's size is set when it's created and can't change. To add or remove items, you need to create a new array."
+    - content: "string"
+      isCorrect: false
+      explanation: "Incorrect. A string holds text, not a general-purpose collection of items."
+  - content: "Which method adds a new item to the end of a `List<T>`?"
+    choices:
+    - content: ".Append()"
+      isCorrect: false
+      explanation: "Incorrect. `List<T>` doesn't have an .Append() method."
+    - content: ".Add()"
+      isCorrect: true
+      explanation: "Correct. The .Add() method adds the given value to the end of the list."
+    - content: ".Insert()"
+      isCorrect: false
+      explanation: "Incorrect. .Insert() adds an item at a specific index. It works, but isn't the standard way to add to the end."
+  - content: "Given `string[] scores = { \"A\", \"B\", \"C\" };`, how do you access the third item?"
+    choices:
+    - content: "scores[3]"
+      isCorrect: false
+      explanation: "Incorrect. Array indexes start at 0, so index 3 is out of range for a 3-item array."
+    - content: "scores(2)"
+      isCorrect: false
+      explanation: "Incorrect. Parentheses are used for method calls, not for array access."
+    - content: "scores[2]"
+      isCorrect: true
+      explanation: "Correct. Array indexes start at 0, so the third item is at index 2."
+  - content: "You're writing a program to track an unknown number of player names as they join a game. Which structure fits best?"
+    choices:
+    - content: "Array"
+      isCorrect: false
+      explanation: "Incorrect. An array's size is fixed at creation, which makes it awkward when the number of items isn't known ahead of time."
+    - content: "A single string variable"
+      isCorrect: false
+      explanation: "Incorrect. A single variable can only hold one value at a time, so it can't track a growing list of player names."
+    - content: "`List<T>`"
+      isCorrect: true
+      explanation: "Correct. A `List<T>` can grow or shrink as players join, without you having to manage its size."

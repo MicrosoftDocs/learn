@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.privacy-security-responsible-ai-practices.what-not-to-put-prompt
+title: "What not to put in a prompt"
+metadata:
+  title: "What Not to Put in a Prompt"
+  description: "Learn how to identify sensitive information that should not be included in AI prompts to ensure responsible use in supported employment."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-what-not-to-put-prompt.md)]

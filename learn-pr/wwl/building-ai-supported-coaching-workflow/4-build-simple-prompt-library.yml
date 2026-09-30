@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.building-ai-supported-coaching-workflow.build-simple-prompt-library
+title: "Build a simple prompt library"
+metadata:
+  title: "Build a Simple Prompt Library"
+  description: "Learn how to build a simple prompt library for AI workflows. Save reusable wording, ensure compliance, and streamline your coaching processes."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-build-simple-prompt-library.md)]

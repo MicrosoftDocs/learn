@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-basics-for-job-coaches.five-step-workflow
+title: "The five-step workflow"
+metadata:
+  title: "The Five-Step Workflow"
+  description: "Learn how to follow a five-step workflow for effective AI coaching, from identifying goals to refining and finalizing content for workplace success."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: v-pablorod
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-five-step-workflow.md)]

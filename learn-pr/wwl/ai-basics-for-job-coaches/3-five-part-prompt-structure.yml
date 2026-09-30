@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-basics-for-job-coaches.five-part-prompt-structure
+title: "Prompt structure"
+metadata:
+  title: "Prompt Structure"
+  description: "Learn how to structure AI prompts for job coaching tasks using role, task, audience, format, and constraints to get clear, usable drafts."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: v-pablorod
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-five-part-prompt-structure.md)]

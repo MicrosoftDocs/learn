@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.privacy-security-responsible-ai-practices.review-for-bias-unsupported-claims
+title: "Review for bias and unsupported claims"
+metadata:
+  title: "Review for Bias and Unsupported Claims"
+  description: "Learn how to identify and remove bias, verify facts, and ensure AI outputs focus on workplace tasks and supports, not personal traits."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-review-for-bias-unsupported-claims.md)]

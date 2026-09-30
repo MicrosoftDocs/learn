@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-arrays-lists.exercise-top-scores
+title: Exercise - Create a Top 5 leaderboard
+metadata:
+  title: Exercise - Create a Top 5 Leaderboard
+  description: "Practice using `List<T>` methods and a fixed-size array by building a Top 5 leaderboard."
+  ms.date: 9/29/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/4-exercise-top-scores.md)]

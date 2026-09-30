@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.using-ai-to-develop-coaching-materials
+metadata:
+  title: "Using AI to Develop Coaching Materials"
+  description: "Learn how AI can help job coaches organize, format, and simplify verified content while ensuring human-led discovery and decision-making."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: module
+  ms.service: frontline-worker-solutions
+title: "Using AI to develop coaching materials"
+summary: Learn how AI supports job coaches in creating organized and accessible materials while maintaining human-led decision-making and safety standards.
+abstract: |
+  After completing this module, you will be able to:
+  - Use AI to organize, format, and simplify verified content.
+  - Ensure human-led discovery, observation, and decision-making.
+  - Create employee-approved profiles and support plans.
+  - Adapt workplace instructions and practice scenarios using AI.
+  - Apply shared review standards for accuracy, accessibility, and fit.
+prerequisites: |
+  - Basic understanding of vocational profiling and job coaching.
+  - Familiarity with workplace safety and accessibility standards.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- business-owner
+- business-leader
+- school-leader
+- business-user
+products:
+- azure
+subjects:
+- accessibility
+- security
+- employee-engagement
+- business-applications
+- knowledge-management
+units:
+- learn.wwl.using-ai-to-develop-coaching-materials.introduction
+- learn.wwl.using-ai-to-develop-coaching-materials.what-ai-support
+- learn.wwl.using-ai-to-develop-coaching-materials.try-it-with-copilot
+- learn.wwl.using-ai-to-develop-coaching-materials.review-standard
+- learn.wwl.using-ai-to-develop-coaching-materials.practice-activity
+- learn.wwl.using-ai-to-develop-coaching-materials.knowledge-check
+- learn.wwl.using-ai-to-develop-coaching-materials.summary
+badge:
+  uid: learn.wwl.using-ai-to-develop-coaching-materials.badge

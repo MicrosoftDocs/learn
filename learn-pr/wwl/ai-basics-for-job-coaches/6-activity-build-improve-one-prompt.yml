@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-basics-for-job-coaches.activity-build-improve-one-prompt
+title: "Practice activity: Build and improve one prompt"
+metadata:
+  title: "Practice Activity: Build and Improve One Prompt"
+  description: "Learn how to create and refine prompts for job coaching tasks, including drafting check-ins or modifying checklists, with actionable steps."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: v-pablorod
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-activity-build-improve-one-prompt.md)]

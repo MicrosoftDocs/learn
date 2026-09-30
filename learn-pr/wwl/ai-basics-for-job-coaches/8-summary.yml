@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-basics-for-job-coaches.summary
+title: "Summary"
+metadata:
+  title: "Summary"
+  description: "Learn how to refine AI outputs with clear prompts, consistent reviews, and organizational policies. Save successful prompts for future use."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: v-pablorod
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]
