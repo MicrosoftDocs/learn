@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920" role="img" aria-labelledby="title desc">
+  <title id="title">Certificate template effective authorization stack</title>
+  <desc id="desc">Five numbered layers show how the enrollment interface, request, template, certification authority policy, and final disposition combine to authorize or deny a certificate.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#17365d"/>
+    </marker>
+    <style>
+      .heading { font: 700 30px "Segoe UI", Arial, sans-serif; fill: #10253f; }
+      .label { font: 700 21px "Segoe UI", Arial, sans-serif; fill: #10253f; }
+      .body { font: 17px "Segoe UI", Arial, sans-serif; fill: #172b3a; }
+      .number { font: 700 24px "Segoe UI", Arial, sans-serif; fill: #ffffff; text-anchor: middle; dominant-baseline: middle; }
+      .arrow { stroke: #17365d; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1400" height="920" fill="#ffffff"/>
+  <text x="700" y="55" class="heading" text-anchor="middle">Effective authorization is the intersection of every layer</text>
+  <text x="700" y="88" class="body" text-anchor="middle">A safe template cannot compensate for an unsafe CA flag, request path, or delegated principal.</text>
+
+  <rect x="80" y="125" width="1240" height="115" rx="16" fill="#e8f2fb" stroke="#1769aa" stroke-width="3"/>
+  <circle cx="125" cy="182" r="27" fill="#1769aa"/>
+  <text x="125" y="182" class="number">1</text>
+  <text x="170" y="165" class="label">Enrollment interface and authentication boundary</text>
+  <text x="170" y="197" class="body">
+    <tspan x="170" dy="0">MMC, autoenrollment, certreq.exe, CEP/CES, Web Enrollment, or NDES determines transport,</tspan>
+    <tspan x="170" dy="25">caller authentication, delegation, supported request types, and which attributes can arrive.</tspan>
+  </text>
+
+  <path d="M700 240 L700 280" class="arrow"/>
+
+  <rect x="165" y="280" width="1070" height="115" rx="16" fill="#eef7e8" stroke="#3b7d23" stroke-width="3"/>
+  <circle cx="210" cy="337" r="27" fill="#3b7d23"/>
+  <text x="210" y="337" class="number">2</text>
+  <text x="255" y="320" class="label">Request contents and request attributes</text>
+  <text x="255" y="352" class="body">
+    <tspan x="255" dy="0">Subject, SAN, template name, renewal reference, key proof, and enrollment-on-behalf-of signature</tspan>
+    <tspan x="255" dy="25">must be treated as untrusted input until policy proves the requester may assert each identity.</tspan>
+  </text>
+
+  <path d="M700 395 L700 435" class="arrow"/>
+
+  <rect x="250" y="435" width="900" height="120" rx="16" fill="#fff4d6" stroke="#b77900" stroke-width="3"/>
+  <circle cx="295" cy="495" r="27" fill="#b77900"/>
+  <text x="295" y="495" class="number">3</text>
+  <text x="340" y="474" class="label">Certificate template controls</text>
+  <text x="340" y="506" class="body">
+    <tspan x="340" dy="0">Read, Enroll, Autoenroll; subject/SAN source; EKUs and policies; cryptography;</tspan>
+    <tspan x="340" dy="25">authorized signatures, manager approval, key archival, and compatibility.</tspan>
+  </text>
+
+  <path d="M700 555 L700 595" class="arrow"/>
+
+  <rect x="285" y="595" width="830" height="125" rx="16" fill="#f5eafa" stroke="#7b2f91" stroke-width="3"/>
+  <circle cx="330" cy="657" r="27" fill="#7b2f91"/>
+  <text x="330" y="657" class="number">4</text>
+  <text x="375" y="635" class="label">CA publication, permissions, and policy module</text>
+  <text x="375" y="667" class="body">
+    <tspan x="375" dy="0">Template must be issued by this CA; requester needs CA Request Certificates;</tspan>
+    <tspan x="375" dy="25">policy EditFlags and disposition rules can allow, rewrite, pend, or deny fields.</tspan>
+  </text>
+
+  <path d="M700 720 L700 760" class="arrow"/>
+
+  <rect x="455" y="760" width="490" height="110" rx="18" fill="#e7f5f2" stroke="#00796b" stroke-width="4"/>
+  <circle cx="500" cy="815" r="27" fill="#00796b"/>
+  <text x="500" y="815" class="number">5</text>
+  <text x="545" y="802" class="label">Issue, pend, or deny</text>
+  <text x="545" y="833" class="body">
+    <tspan x="545" dy="0">Issue only when identity, purpose, key,</tspan>
+    <tspan x="545" dy="24">permissions, and assurance all agree.</tspan>
+  </text>
+</svg>

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.design-manage-certificate-templates.certificate-template-properties
+title: Certificate template properties
+metadata:
+  title: Certificate Template Properties
+  description: Review certificate template tabs, settings, dependencies, security consequences, plus validation requirements.
+  ms.date: 09/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/4-certificate-template-properties.md)]

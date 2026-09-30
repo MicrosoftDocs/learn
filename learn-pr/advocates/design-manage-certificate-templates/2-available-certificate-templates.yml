@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.design-manage-certificate-templates.available-certificate-templates
+title: Available certificate templates
+metadata:
+  title: Available Certificate Templates
+  description: Review built-in certificate templates, then publish or unpublish templates on an enterprise certification authority.
+  ms.date: 09/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-available-certificate-templates.md)]

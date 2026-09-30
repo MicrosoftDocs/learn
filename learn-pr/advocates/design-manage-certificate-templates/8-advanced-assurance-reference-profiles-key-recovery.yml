@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.design-manage-certificate-templates.advanced-assurance-reference-profiles-key-recovery
+title: Advanced assurance, reference profiles, and key recovery
+metadata:
+  title: Advanced Assurance, Reference Profiles, and Key Recovery
+  description: Apply advanced assurance controls, trusted-platform attestation, approved reference profiles, key archival, plus key recovery.
+  ms.date: 09/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/8-advanced-assurance-reference-profiles-key-recovery.md)]

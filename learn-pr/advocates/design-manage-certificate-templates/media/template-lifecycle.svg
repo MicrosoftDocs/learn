@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="940" viewBox="0 0 1500 940" role="img" aria-labelledby="title desc">
+  <title id="title">Certificate template lifecycle</title>
+  <desc id="desc">Six numbered stages move from requirements and duplication through review, issuance, replacement, and explicit retirement of old certificates.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#17365d"/>
+    </marker>
+    <style>
+      .heading { font: 700 30px "Segoe UI", Arial, sans-serif; fill: #10253f; }
+      .label { font: 700 20px "Segoe UI", Arial, sans-serif; fill: #10253f; text-anchor: middle; }
+      .body { font: 17px "Segoe UI", Arial, sans-serif; fill: #172b3a; text-anchor: middle; }
+      .number { font: 700 24px "Segoe UI", Arial, sans-serif; fill: #ffffff; text-anchor: middle; dominant-baseline: middle; }
+      .arrow { stroke: #17365d; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+      .feedback { stroke: #6b7280; stroke-width: 3; fill: none; stroke-dasharray: 9 7; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1500" height="940" fill="#ffffff"/>
+  <text x="750" y="58" class="heading" text-anchor="middle">Controlled template lifecycle: replacement is not retirement</text>
+  <text x="750" y="92" class="body">Record ownership and evidence at every gate; allow AD DS replication before publication or rollback.</text>
+
+  <rect x="75" y="145" width="390" height="175" rx="18" fill="#e8f2fb" stroke="#1769aa" stroke-width="3"/>
+  <circle cx="120" cy="188" r="27" fill="#1769aa"/>
+  <text x="120" y="188" class="number">1</text>
+  <text x="270" y="187" class="label">Define the profile</text>
+  <text x="270" y="226" class="body">
+    <tspan x="270" dy="0">Owner, relying parties, identity source,</tspan>
+    <tspan x="270" dy="25">EKUs, policies, cryptography, lifetime,</tspan>
+    <tspan x="270" dy="25">enrollment, renewal, and exit criteria</tspan>
+  </text>
+
+  <path d="M465 232 L540 232" class="arrow"/>
+
+  <rect x="540" y="145" width="390" height="175" rx="18" fill="#eef7e8" stroke="#3b7d23" stroke-width="3"/>
+  <circle cx="585" cy="188" r="27" fill="#3b7d23"/>
+  <text x="585" y="188" class="number">2</text>
+  <text x="735" y="187" class="label">Duplicate and configure</text>
+  <text x="735" y="226" class="body">
+    <tspan x="735" dy="0">Copy the closest built-in; choose the</tspan>
+    <tspan x="735" dy="25">lowest compatible version; configure</tspan>
+    <tspan x="735" dy="25">the complete profile, never one tab alone</tspan>
+  </text>
+
+  <path d="M930 232 L1005 232" class="arrow"/>
+
+  <rect x="1005" y="145" width="420" height="175" rx="18" fill="#fff4d6" stroke="#b77900" stroke-width="3"/>
+  <circle cx="1050" cy="188" r="27" fill="#b77900"/>
+  <text x="1050" y="188" class="number">3</text>
+  <text x="1215" y="187" class="label">Review, replicate, publish</text>
+  <text x="1215" y="226" class="body">
+    <tspan x="1215" dy="0">Review template plus CA EditFlags;</tspan>
+    <tspan x="1215" dy="25">wait for Configuration partition convergence;</tspan>
+    <tspan x="1215" dy="25">publish only on approved issuing CAs</tspan>
+  </text>
+
+  <path d="M1215 320 L1215 475" class="arrow"/>
+
+  <rect x="1005" y="475" width="420" height="175" rx="18" fill="#e7f5f2" stroke="#00796b" stroke-width="3"/>
+  <circle cx="1050" cy="518" r="27" fill="#00796b"/>
+  <text x="1050" y="518" class="number">4</text>
+  <text x="1215" y="517" class="label">Pilot, issue, validate</text>
+  <text x="1215" y="556" class="body">
+    <tspan x="1215" dy="0">Test as the real identity; inspect subject,</tspan>
+    <tspan x="1215" dy="25">SAN, EKUs, policy, key provider, chain,</tspan>
+    <tspan x="1215" dy="25">private-key association, and service use</tspan>
+  </text>
+
+  <path d="M1005 562 L930 562" class="arrow"/>
+
+  <rect x="540" y="475" width="390" height="175" rx="18" fill="#f5eafa" stroke="#7b2f91" stroke-width="3"/>
+  <circle cx="585" cy="518" r="27" fill="#7b2f91"/>
+  <text x="585" y="518" class="number">5</text>
+  <text x="735" y="517" class="label">Replace and unpublish</text>
+  <text x="735" y="556" class="body">
+    <tspan x="735" dy="0">Deploy the new profile with overlap;</tspan>
+    <tspan x="735" dy="25">verify relying services; stop new issuance</tspan>
+    <tspan x="735" dy="25">from the old template on every CA</tspan>
+  </text>
+
+  <path d="M540 562 L465 562" class="arrow"/>
+
+  <rect x="75" y="475" width="390" height="175" rx="18" fill="#fdecec" stroke="#b42318" stroke-width="3"/>
+  <circle cx="120" cy="518" r="27" fill="#b42318"/>
+  <text x="120" y="518" class="number">6</text>
+  <text x="270" y="517" class="label">Retire issued certificates</text>
+  <text x="270" y="556" class="body">
+    <tspan x="270" dy="0">Inventory active use; replace bindings;</tspan>
+    <tspan x="270" dy="25">revoke only with approved consequence;</tspan>
+    <tspan x="270" dy="25">remove old certificates, then retain/delete object</tspan>
+  </text>
+
+  <path d="M270 475 L270 390 L735 390 L735 320" class="feedback"/>
+  <text x="505" y="378" class="body">Lessons and changed requirements feed the next version</text>
+
+  <rect x="180" y="740" width="1140" height="125" rx="16" fill="#fff8e6" stroke="#b77900" stroke-width="3"/>
+  <text x="750" y="782" class="label">Supersedence is selection metadata, not cleanup</text>
+  <text x="750" y="820" class="body">
+    <tspan x="750" dy="0">It can influence enrollment and autoenrollment, but it does not revoke, delete, unbind,</tspan>
+    <tspan x="750" dy="25">or remove an old certificate. Define those actions explicitly and verify their effect.</tspan>
+  </text>
+</svg>
