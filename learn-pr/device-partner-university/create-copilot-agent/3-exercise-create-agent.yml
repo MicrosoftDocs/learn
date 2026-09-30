@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.create-copilot-agent.exercise-create-agent
+title: Exercise - Create your first agent
+metadata:
+  title: Exercise - Create Your First Agent
+  description: This content is part of the "Build your first agent in Microsoft 365 Copilot Chat" module.
+  ms.date: 09/29/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-exercise-create-agent.md)]
