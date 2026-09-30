@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.frontier-firms-scale-ai-responsibly-build-trust
+title: 'Frontier Firms: Scale AI responsibly and build trust'
+metadata:
+  title: 'Frontier Firms: Scale AI Responsibly And Build Trust'
+  description: In this module, you'll learn how to evaluate and govern agentic AI deployments using a risk-based approach. Apply governance concepts related to capability, authority, human oversight, security, monitoring, and continuous governance to help scale AI responsibly and build trust.
+  ms.date: 09/29/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Learn how increasingly capable and agentic AI systems change governance requirements. Explore how to apply risk-based governance practices that address access, authority, oversight, security, monitoring, and continuous improvement throughout the AI lifecycle.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain why increasingly capable and agentic AI systems require more dynamic governance.
+  - Evaluate governance considerations related to access, authority, oversight, security, and monitoring across the AI lifecycle.
+  - Apply risk-based governance considerations to an AI deployment scenario.
+  - Recommend appropriate safeguards, human oversight, and monitoring practices based on identified risks.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/frontier-firms-scale-ai-responsibly-build-trust.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.frontier-firms-scale-ai-responsibly-build-trust.introduction
+  - learn.dpu.frontier-firms-scale-ai-responsibly-build-trust.agentic-moment
+  - learn.dpu.frontier-firms-scale-ai-responsibly-build-trust.risk-based-governance
+  - learn.dpu.frontier-firms-scale-ai-responsibly-build-trust.provider-safeguards
+  - learn.dpu.frontier-firms-scale-ai-responsibly-build-trust.agentic-ai-deployment
+  - learn.dpu.frontier-firms-scale-ai-responsibly-build-trust.continuous-governance
+  - learn.dpu.frontier-firms-scale-ai-responsibly-build-trust.knowledge-check
+  - learn.dpu.frontier-firms-scale-ai-responsibly-build-trust.summary
+badge:
+  uid: learn.dpu.frontier-firms-scale-ai-responsibly-build-trust.badge

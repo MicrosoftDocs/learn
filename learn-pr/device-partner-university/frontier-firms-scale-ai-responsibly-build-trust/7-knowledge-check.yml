@@ -1,0 +1,89 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.frontier-firms-scale-ai-responsibly-build-trust.knowledge-check
+title: Module assessment
+metadata:
+  module_assessment: true
+  title: Module Assessment
+  description: Check your knowledge of enterprise governance strategies for AI systems and agents.
+  ms.date: 09/29/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which governance question becomes especially important as AI systems become more capable and agentic?"
+    choices:
+    - content: "How quickly can the model generate a response?"
+      isCorrect: false
+      explanation: "Incorrect. Response speed might affect user experience, but governance focuses on issues such as access, authority, actions, and oversight."
+    - content: "What information can the system access and what actions can it perform?"
+      isCorrect: true
+      explanation: "Correct. As AI systems gain the ability to interact with data, tools, and applications, organizations need to understand both what the system can access and what it is allowed to do."
+    - content: "Which programming language was used to develop the system?"
+      isCorrect: false
+      explanation: "Incorrect. Development technologies aren't typically a primary governance consideration."
+    - content: "How many users can access the system at the same time?"
+      isCorrect: false
+      explanation: "Incorrect. Capacity planning may be important operationally, but it doesn't address the core governance questions raised by agentic AI."
+
+  - content: "A support agent can retrieve company information and automatically update records in a business system. Which statement best describes the relationship between capability and authority?"
+    choices:
+    - content: "Capability and authority always increase together."
+      isCorrect: false
+      explanation: "Incorrect. A system might have the capability to perform an action without being granted permission to perform it."
+    - content: "Capability describes what the system can do, while authority describes what it is permitted to do."
+      isCorrect: true
+      explanation: "Correct. Capability refers to the system's potential actions, while authority refers to the permissions and access granted within a specific environment."
+    - content: "Capability refers to business risk, while authority refers to security controls."
+      isCorrect: false
+      explanation: "Incorrect. Capability and authority describe different aspects of what a system can do and what it is allowed to do."
+    - content: "Capability and authority only apply to fully autonomous systems."
+      isCorrect: false
+      explanation: "Incorrect. These concepts can be applied to any AI deployment, regardless of its level of autonomy."
+
+  - content: "Why should organizations apply a risk-based approach to AI governance?"
+    choices:
+    - content: "Every AI deployment requires the same safeguards."
+      isCorrect: false
+      explanation: "Incorrect. Different AI deployments can present different levels of risk and therefore require different controls."
+    - content: "Risk-based governance eliminates the need for human oversight."
+      isCorrect: false
+      explanation: "Incorrect. Higher-risk scenarios may require more human oversight, not less."
+    - content: "Governance decisions should reflect the deployment's capabilities, authority, context, and potential impact."
+      isCorrect: true
+      explanation: "Correct. Risk-based governance means applying safeguards and oversight that are proportionate to the risks associated with a specific deployment."
+    - content: "Risk-based governance is only necessary when sensitive data is involved."
+      isCorrect: false
+      explanation: "Incorrect. Organizations should assess risk in all AI deployments, even when sensitive data isn't involved."
+
+  - content: "Which scenario is most likely to require additional human oversight?"
+    choices:
+    - content: "An AI system drafts a meeting summary that a user reviews before sharing."
+      isCorrect: false
+      explanation: "Incorrect. Human review is already built into the process, which can reduce risk."
+    - content: "An AI system categorizes help desk requests that can be easily rerouted if errors occur."
+      isCorrect: false
+      explanation: "Incorrect. Mistakes may have limited consequences and can often be corrected easily."
+    - content: "An AI system recommends knowledge articles to employees."
+      isCorrect: false
+      explanation: "Incorrect. Recommendations may require governance, but they generally have less impact than higher-risk actions."
+    - content: "An AI system automatically closes customer complaints without human review."
+      isCorrect: true
+      explanation: "Correct. Incorrectly closing complaints could significantly affect customers and business outcomes, making additional oversight appropriate."
+
+  - content: "Why should governance continue after an AI system is deployed?"
+    choices:
+    - content: "Governance ends once safeguards have been implemented."
+      isCorrect: false
+      explanation: "Incorrect. AI systems, environments, and risks can change over time, requiring ongoing governance."
+    - content: "Governance is only necessary when the system is updated."
+      isCorrect: false
+      explanation: "Incorrect. Monitoring and reassessment should occur throughout the system's lifecycle, not only after updates."
+    - content: "Governance should continue because capabilities, authority, risks, and system usage can change over time."
+      isCorrect: true
+      explanation: "Correct. Organizations should reassess governance decisions as systems evolve, gain new capabilities, receive new permissions, or operate in changing environments."
+    - content: "Governance only applies to AI agents that can take actions."
+      isCorrect: false
+      explanation: "Incorrect. Governance considerations apply to a wide range of AI deployments, although the specific controls may differ."

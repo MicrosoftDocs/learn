@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.frontier-firms-scale-ai-responsibly-build-trust.provider-safeguards
+title: Build on provider safeguards
+metadata:
+  title: Build on Provider Safeguards
+  description: 'This content is part of the "Frontier Firms: Scale AI Responsibly and Build Trust" module.'
+  ms.date: 09/29/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-provider-safeguards.md)]
