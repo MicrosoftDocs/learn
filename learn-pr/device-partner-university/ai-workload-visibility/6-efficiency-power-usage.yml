@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.ai-workload-visibility.efficiency-power-usage
+title: Efficiency power usage
+metadata:
+  title: Efficiency Power Usage
+  description: This content is part of the "Gain visibility into AI workloads with Windows Task Manager" module.
+  ms.date: 09/30/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-efficiency-power-usage.md)]
