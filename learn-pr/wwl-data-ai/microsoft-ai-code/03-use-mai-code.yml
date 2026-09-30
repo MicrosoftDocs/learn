@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-ai-code.generate-code
+title: Use an MAI Code model to generate code
+metadata:
+  title: Use an MAI Code model to generate code
+  description: Select and use an MAI-Code model in Microsoft Copilot Code and GitHub Copilot.
+  ms.date: 09/30/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 6
+content: |
+  [!include[](includes/03-use-mai-code.md)]

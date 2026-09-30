@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-ai-code.get-to-know
+title: Get to know the Microsoft AI Code model
+metadata:
+  title: Get to know the Microsoft AI Code model
+  description: Explore the capabilities and intended uses of MAI-Code models.
+  ms.date: 09/30/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 5
+content: |
+  [!include[](includes/02-model-overview.md)]
