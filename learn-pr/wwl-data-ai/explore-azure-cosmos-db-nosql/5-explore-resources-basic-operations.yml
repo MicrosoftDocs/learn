@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-cosmos-db-nosql.explore-resources-basic-operations
+title: Explore resources and basic operations
+metadata:
+  title: Explore Resources and Basic Operations
+  description: "Navigate accounts, databases, containers, and items in Data Explorer and perform basic read and write operations."
+  ms.date: 08/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-explore-resources-basic-operations.md)]

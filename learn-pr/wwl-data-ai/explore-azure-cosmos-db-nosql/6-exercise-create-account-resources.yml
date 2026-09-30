@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-cosmos-db-nosql.exercise-create-account-resources
+title: 'Exercise: Create an account and resources'
+metadata:
+  title: 'Exercise: Create an Account and Resources'
+  description: "Provision an Azure Cosmos DB for NoSQL account and create a database, container, and items."
+  ms.date: 09/11/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise-create-account-resources.md)]
