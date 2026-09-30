@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-arrays-lists.store-manage-data-with-arrays
+title: Store and manage data with arrays
+metadata:
+  title: Store and Manage Data with Arrays
+  description: "Learn how to store a fixed-size sequence of items using a C# array, and how to access and update its elements."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-store-manage-data-with-arrays.md)]

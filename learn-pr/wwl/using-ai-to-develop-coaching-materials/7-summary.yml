@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.using-ai-to-develop-coaching-materials.summary
+title: "Summary"
+metadata:
+  title: "Summary"
+  description: "Learn how AI supports content creation by adapting verified materials, emphasizing collaboration, and ensuring safety-critical accuracy."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

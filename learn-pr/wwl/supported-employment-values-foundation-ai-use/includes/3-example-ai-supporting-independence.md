@@ -1,0 +1,3 @@
+An employee starts work in a retail stockroom. During the first few shifts, the job coach helps them learn the space, understand labels, and follow the delivery routine. Together, the coach and employee decide that a visual checklist would help.
+
+The coach uses non-identifying information to ask an approved AI tool for a draft. Every step goes to the supervisor for confirmation, and the employee chooses the wording, order, photographs, and layout. The final checklist reflects how the store works and how the employee prefers to receive information. The coach then watches how the checklist works on the floor and adjusts the support with the employee. A coworker or supervisor can step in when the employee finds that useful and agrees to it.

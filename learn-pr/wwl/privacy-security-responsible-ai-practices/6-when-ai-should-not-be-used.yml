@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.privacy-security-responsible-ai-practices.when-ai-should-not-be-used
+title: "When AI should not be used"
+metadata:
+  title: "When AI Should Not Be Used"
+  description: "Learn when AI should not be used in supported employment, including decisions on readiness, profiling, accommodations, and safety-critical tasks."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-when-ai-should-not-be-used.md)]

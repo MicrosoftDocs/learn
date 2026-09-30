@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.using-ai-to-develop-coaching-materials.introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: "Discover how AI enhances coaching materials by organizing, formatting, and simplifying verified content while keeping people at the forefront."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

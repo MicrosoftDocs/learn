@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.building-ai-supported-coaching-workflow
+metadata:
+  title: "Building an AI-Supported Coaching Workflow"
+  description: "Learn to create AI-supported workflows for coaching, build prompt libraries, and integrate employee partnership into repeatable processes."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: module
+  ms.service: frontline-worker-solutions
+title: "Build an AI-supported coaching workflow"
+summary: Learn to create repeatable workflows using AI to support coaching tasks and employee partnership.
+abstract: |
+  After completing this module, you will be able to:
+  - Identify appropriate AI uses across supported employment activities.
+  - Use a repeatable five-step workflow.
+  - Create and maintain a simple prompt library.
+  - Choose one responsible next step for work.
+prerequisites: |
+  - Basic understanding of AI capabilities and limitations.
+  - Familiarity with coaching or supported employment processes.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- privacy-manager
+- administrator
+- student
+- developer
+- maker
+products:
+- azure
+subjects:
+- generative-ai
+- business-applications
+- employee-engagement
+units:
+- learn.wwl.building-ai-supported-coaching-workflow.introduction
+- learn.wwl.building-ai-supported-coaching-workflow.where-ai-can-fit
+- learn.wwl.building-ai-supported-coaching-workflow.repeatable-workflow
+- learn.wwl.building-ai-supported-coaching-workflow.build-simple-prompt-library
+- learn.wwl.building-ai-supported-coaching-workflow.activity-create-one-entry
+- learn.wwl.building-ai-supported-coaching-workflow.knowledge-check
+- learn.wwl.building-ai-supported-coaching-workflow.summary
+badge:
+  uid: learn.wwl.building-ai-supported-coaching-workflow.badge

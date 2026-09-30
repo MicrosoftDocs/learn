@@ -1,0 +1,49 @@
+### YamlMime:LearningPath
+uid: learn.wwl.ai-job-coaches-supported-employment
+metadata:
+  title: AI for Job Coaches in Supported Employment
+  description: Use AI to draft coaching materials without giving up professional judgment, employee choice, or privacy. Written for job coaches in supported employment.
+  ms.date: 9/29/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: learning-path
+title: AI for Job Coaches in Supported Employment
+summary: |
+  Job coaches make hundreds of decisions about communication, documentation, planning, and workplace supports. AI can draft and organize much of that material, but it cannot observe a worksite, build a relationship, or decide what an employee wants. This learning path shows where that line sits and how to work on the right side of it.
+
+  You start with the values that govern the work, learn to write and review prompts, then apply both to real coaching materials: task analyses, profile summaries, support plans, workplace instructions, and practice scenarios. You finish with a repeatable workflow and a prompt library you can keep using.
+
+  AI supports drafting. People retain choice, judgment, relationships, and accountability.
+
+  After completing this learning path, you will be able to:
+  - Apply dignity, self-determination, presumed competence, confidentiality, and transparency to decisions about AI use.
+  - Recognize what AI drafts well and where it falls short, and write prompts using role, task, audience, format, and constraints.
+  - Draft coaching materials with AI and review them against a shared standard for accuracy, accessibility, tone, fit, privacy, bias, and employee ownership.
+  - Protect privacy and security, seek consent, check for bias, and recognize when not to use AI at all.
+  - Build a repeatable workflow and a prompt library that records permitted inputs and required review checks.
+
+  This course was developed in collaboration with:
+  - British Association for Supported Employment (BASE)
+  - Policy Connect
+  - Washington Initiative for Supported Employment (WISE)
+prerequisites: |
+  - Working knowledge of supported employment practice and the job coach role.
+  - Access to an organization-approved AI tool, such as Microsoft Copilot, to try the example prompts.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- administrator
+- student
+products:
+- m365
+subjects:
+- accessibility
+modules:
+- learn.wwl.supported-employment-values-foundation-ai-use
+- learn.wwl.ai-basics-for-job-coaches
+- learn.wwl.using-ai-to-develop-coaching-materials
+- learn.wwl.privacy-security-responsible-ai-practices
+- learn.wwl.building-ai-supported-coaching-workflow
+trophy:
+  uid: learn.wwl.ai-job-coaches-supported-employment.trophy

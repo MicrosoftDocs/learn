@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.supported-employment-values-foundation-ai-use.example-ai-supporting-independence
+title: "Example: AI supporting independence"
+metadata:
+  title: "Example: AI Supporting Independence"
+  description: "Learn how AI can support employee independence through tools like personalized visual checklists."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-example-ai-supporting-independence.md)]

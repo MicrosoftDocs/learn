@@ -1,0 +1,3 @@
+- Use AI only when it supports the employee's goals, rights, and workplace participation.
+- AI may draft and organize. People observe, decide, build relationships, and remain accountable.
+- Discuss AI use with the employee when material is about them or for them.

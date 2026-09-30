@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-basics-for-job-coaches.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Module Assessment"
+  description: "Knowledge check"
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: v-pablorod
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 4
+content: "Choose the best response for each of the questions below."
+quiz:
+  questions:
+  - content: "A job coach asks an AI tool to summarize a funder's eligibility rules and list the program deadlines for their region. What should the coach do with the response?"
+    choices:
+    - content: "Use it as written, because summarizing documents is something AI does well."
+      isCorrect: false
+      explanation: "AI is often useful for drafting, organizing, and summarizing, but facts, dates, numbers, citations, current policy, funder rules, and local labor-market details need careful review. AI may help adjust surface wording, but it shouldn't be the source of local requirements."
+    - content: "Treat it as a draft and verify the rules, dates, and local requirements with an authoritative local source."
+      isCorrect: true
+      explanation: "AI is often useful for drafting, organizing, and summarizing, but facts, dates, numbers, citations, current policy, funder rules, and local labor-market details need careful review. AI may help adjust surface wording, but it shouldn't be the source of local requirements."
+    - content: "Ask the AI tool to confirm its own answer is accurate, then use it."
+      isCorrect: false
+      explanation: "AI is often useful for drafting, organizing, and summarizing, but facts, dates, numbers, citations, current policy, funder rules, and local labor-market details need careful review. AI may help adjust surface wording, but it shouldn't be the source of local requirements."
+    - content: "Discard it, because AI shouldn't be used for anything involving policy."
+      isCorrect: false
+      explanation: "AI is often useful for drafting, organizing, and summarizing, but facts, dates, numbers, citations, current policy, funder rules, and local labor-market details need careful review. AI may help adjust surface wording, but it shouldn't be the source of local requirements."
+  - content: "A coach writes this prompt: 'Write a checklist for the new employee.' Which part of the five-part prompt structure is most clearly missing?"
+    choices:
+    - content: "Role, because the prompt doesn't say what the checklist is for."
+      isCorrect: false
+      explanation: "A clear prompt covers role, task, audience, format, and constraints. This prompt states a task but gives no perspective, reader, structure, or limits, and constraints are what tell the tool what it must include or avoid."
+    - content: "Task, because the prompt doesn't say what to produce."
+      isCorrect: false
+      explanation: "A clear prompt covers role, task, audience, format, and constraints. This prompt states a task but gives no perspective, reader, structure, or limits, and constraints are what tell the tool what it must include or avoid."
+    - content: "Constraints, because the prompt doesn't say what the draft must include or avoid, such as using only the notes provided and no personal details."
+      isCorrect: true
+      explanation: "A clear prompt covers role, task, audience, format, and constraints. This prompt states a task but gives no perspective, reader, structure, or limits, and constraints are what tell the tool what it must include or avoid."
+    - content: "None, because a short prompt always produces a better draft."
+      isCorrect: false
+      explanation: "A clear prompt covers role, task, audience, format, and constraints. This prompt states a task but gives no perspective, reader, structure, or limits, and constraints are what tell the tool what it must include or avoid."
+  - content: "Which action best matches the 'decide and own the final' step of the five-step workflow?"
+    choices:
+    - content: "Send the AI draft to the employer so they can check it for errors."
+      isCorrect: false
+      explanation: "The final step of the workflow is to decide and own the final: verify the content, involve the employee when appropriate, and use only what's accurate and useful. Accountability stays with the job coach."
+    - content: "Verify the content, involve the employee when appropriate, and use only what's accurate and useful."
+      isCorrect: true
+      explanation: "The final step of the workflow is to decide and own the final: verify the content, involve the employee when appropriate, and use only what's accurate and useful. Accountability stays with the job coach."
+    - content: "Keep prompting until the tool produces a version that needs no edits."
+      isCorrect: false
+      explanation: "The final step of the workflow is to decide and own the final: verify the content, involve the employee when appropriate, and use only what's accurate and useful. Accountability stays with the job coach."
+    - content: "Save the draft unchanged so there's a record of what AI produced."
+      isCorrect: false
+      explanation: "The final step of the workflow is to decide and own the final: verify the content, involve the employee when appropriate, and use only what's accurate and useful. Accountability stays with the job coach."
+  - content: "An AI-drafted task list for an employee uses simple wording but suggests removing two duties 'to keep things manageable,' even though the employee is learning them successfully. Which review criterion does this most clearly fail?"
+    choices:
+    - content: "Accessibility, because the wording is too simple for the reader."
+      isCorrect: false
+      explanation: "When reviewing AI output, check accuracy, accessibility, tone, workplace fit, local fit, privacy and security, and bias. Removing duties the employee is already learning introduces an assumption that lowers expectations."
+    - content: "Privacy and security, because the draft names specific duties."
+      isCorrect: false
+      explanation: "When reviewing AI output, check accuracy, accessibility, tone, workplace fit, local fit, privacy and security, and bias. Removing duties the employee is already learning introduces an assumption that lowers expectations."
+    - content: "Workplace fit, because the employer's process wasn't mentioned in the prompt."
+      isCorrect: false
+      explanation: "When reviewing AI output, check accuracy, accessibility, tone, workplace fit, local fit, privacy and security, and bias. Removing duties the employee is already learning introduces an assumption that lowers expectations."
+    - content: "Bias, because the output introduces assumptions that lower expectations."
+      isCorrect: true
+      explanation: "When reviewing AI output, check accuracy, accessibility, tone, workplace fit, local fit, privacy and security, and bias. Removing duties the employee is already learning introduces an assumption that lowers expectations."

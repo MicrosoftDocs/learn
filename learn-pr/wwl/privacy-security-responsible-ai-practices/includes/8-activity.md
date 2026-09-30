@@ -1,0 +1,1 @@
+Review this situation: A coach wants to paste a full progress note into a public AI tool to improve the writing. Identify the privacy, security, consent, approval, and accuracy issues. Then write a safer approach that follows organizational policy and uses only permitted, non-identifying information.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.supported-employment-values-foundation-ai-use.introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: "Discover supported employment, inclusive workplaces, and how AI enhances job coaching while empowering employees to lead decisions."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

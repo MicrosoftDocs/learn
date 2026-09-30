@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.privacy-security-responsible-ai-practices.responsible-ai-checklist
+title: "Responsible AI checklist"
+metadata:
+  title: "Responsible AI Checklist"
+  description: "Learn how to use the responsible AI checklist to ensure ethical and effective AI practices in supported employment. Get started today!"
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-responsible-ai-checklist.md)]

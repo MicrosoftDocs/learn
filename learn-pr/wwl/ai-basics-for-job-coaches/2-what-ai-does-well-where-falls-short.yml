@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-basics-for-job-coaches.what-ai-does-well-where-falls-short
+title: "What AI does well and where it falls short"
+metadata:
+  title: "What AI Does Well and Where It Falls Short"
+  description: "Learn how AI excels in drafting and organizing tasks but requires careful review for accuracy, policy, and sensitive contexts. Explore key use cases."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: v-pablorod
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-ai-does-well-where-falls-short.md)]

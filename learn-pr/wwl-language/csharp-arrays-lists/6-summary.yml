@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-arrays-lists.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Reflect on what you learned about organizing data with arrays and lists in C#."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

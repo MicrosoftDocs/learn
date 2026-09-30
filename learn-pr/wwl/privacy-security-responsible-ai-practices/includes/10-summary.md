@@ -1,0 +1,4 @@
+- Privacy and security are related but different. Both matter.
+- Use approved tools only as allowed and share the least information needed.
+- Be transparent and involve the employee when AI is used about them or for them.
+- AI supports drafting. People retain choice, judgment, relationships, and accountability.

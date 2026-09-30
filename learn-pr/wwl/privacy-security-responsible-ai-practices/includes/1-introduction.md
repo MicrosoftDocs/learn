@@ -1,0 +1,3 @@
+AI can support your work in supported employment, but it does not carry the responsibility that comes with it. Every prompt you write involves someone's information, and every output you use reflects on the employee, the employer, and your organization.
+
+Work through a common scenario and finish with a checklist you can apply before, during, and after any AI-assisted task. The guiding principle is simple, AI supports drafting, while people retain choice, judgment, relationships, and accountability.

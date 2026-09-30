@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.privacy-security-responsible-ai-practices.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Module Assessment"
+  description: "Knowledge check"
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 2
+content: "Choose the best response for each of the questions below."
+quiz:
+  questions:
+  - content: "A job coach uses an organization-approved AI tool and wants to paste an employee's case notes, including diagnosis and benefit details, to get a better draft. What's the correct approach?"
+    choices:
+    - content: "Paste the notes, because the tool is approved and protected."
+      isCorrect: false
+      explanation: "Approval of a tool doesn't mean every type of information may be entered. The minimum-information rule says to use only the information needed for the task, and deleting a chat or file doesn't remove every organizational record or system copy."
+    - content: "Paste the notes but delete the chat afterward so no record remains."
+      isCorrect: false
+      explanation: "Approval of a tool doesn't mean every type of information may be entered. The minimum-information rule says to use only the information needed for the task, and deleting a chat or file doesn't remove every organizational record or system copy."
+    - content: "Enter only the information needed for the task, using a neutral role such as 'employee' and leaving out identifiers, disability, medical history, and account details."
+      isCorrect: true
+      explanation: "Approval of a tool doesn't mean every type of information may be entered. The minimum-information rule says to use only the information needed for the task, and deleting a chat or file doesn't remove every organizational record or system copy."
+    - content: "Paste the notes and ask the tool not to store them."
+      isCorrect: false
+      explanation: "Approval of a tool doesn't mean every type of information may be entered. The minimum-information rule says to use only the information needed for the task, and deleting a chat or file doesn't remove every organizational record or system copy."
+  - content: "An employee agrees that AI can be used to help draft an accessible version of their support material, then changes their mind two weeks later. What should the job coach do?"
+    choices:
+    - content: "Continue, because consent was already given for this material."
+      isCorrect: false
+      explanation: "When AI helps create material about an employee, represent them, or produce something for them, explain the intended use, invite participation, ask what information may be used or shared, and respect a decision to decline. The employee can change their mind."
+    - content: "Respect the decision, since the employee can change their mind, and remember that consent never replaces organizational approval or privacy requirements."
+      isCorrect: true
+      explanation: "When AI helps create material about an employee, represent them, or produce something for them, explain the intended use, invite participation, ask what information may be used or shared, and respect a decision to decline. The employee can change their mind."
+    - content: "Ask the supervisor to decide whether the work should continue."
+      isCorrect: false
+      explanation: "When AI helps create material about an employee, represent them, or produce something for them, explain the intended use, invite participation, ask what information may be used or shared, and respect a decision to decline. The employee can change their mind."
+    - content: "Continue but stop telling the employee when AI is used."
+      isCorrect: false
+      explanation: "When AI helps create material about an employee, represent them, or produce something for them, explain the intended use, invite participation, ask what information may be used or shared, and respect a decision to decline. The employee can change their mind."
+  - content: "An AI draft describes an employee as 'struggling with independence' and recommends constant supervision, though observation shows the employee completes the routine with a visual checklist. Which review action applies?"
+    choices:
+    - content: "Keep the wording, since AI compared it with similar situations."
+      isCorrect: false
+      explanation: "Review AI output to remove assumptions that aren't supported by observation or verified information, and look for lower expectations, deficit-focused wording, patronizing tone, and one-size-fits-all support. Output should focus on workplace tasks and supports rather than diagnosis or personal traits."
+    - content: "Share it with the employer for a second opinion before editing."
+      isCorrect: false
+      explanation: "Review AI output to remove assumptions that aren't supported by observation or verified information, and look for lower expectations, deficit-focused wording, patronizing tone, and one-size-fits-all support. Output should focus on workplace tasks and supports rather than diagnosis or personal traits."
+    - content: "Ask the AI tool to justify the recommendation and use the justification."
+      isCorrect: false
+      explanation: "Review AI output to remove assumptions that aren't supported by observation or verified information, and look for lower expectations, deficit-focused wording, patronizing tone, and one-size-fits-all support. Output should focus on workplace tasks and supports rather than diagnosis or personal traits."
+    - content: "Remove the assumption, because it isn't supported by observation and it uses deficit-focused wording that lowers expectations."
+      isCorrect: true
+      explanation: "Review AI output to remove assumptions that aren't supported by observation or verified information, and look for lower expectations, deficit-focused wording, patronizing tone, and one-size-fits-all support. Output should focus on workplace tasks and supports rather than diagnosis or personal traits."
+  - content: "Which of these is an appropriate use of AI in supported employment?"
+    choices:
+    - content: "Deciding whether an employee is ready for work or likely to succeed."
+      isCorrect: false
+      explanation: "AI shouldn't be used to judge readiness or likely success, conduct discovery or assessment from keywords, make decisions about disclosure, accommodations, job match, or support without the employee, replace observation and relationship-building, or translate safety-critical information without competent human verification. AI supports drafting; people retain choice, judgment, relationships, and accountability."
+    - content: "Producing a vocational profile from a list of keywords."
+      isCorrect: false
+      explanation: "AI shouldn't be used to judge readiness or likely success, conduct discovery or assessment from keywords, make decisions about disclosure, accommodations, job match, or support without the employee, replace observation and relationship-building, or translate safety-critical information without competent human verification. AI supports drafting; people retain choice, judgment, relationships, and accountability."
+    - content: "Drafting a plain-language version of verified workplace instructions that the coach and employee then review and adjust."
+      isCorrect: true
+      explanation: "AI shouldn't be used to judge readiness or likely success, conduct discovery or assessment from keywords, make decisions about disclosure, accommodations, job match, or support without the employee, replace observation and relationship-building, or translate safety-critical information without competent human verification. AI supports drafting; people retain choice, judgment, relationships, and accountability."
+    - content: "Deciding on disclosure and accommodations so the employee doesn't have to."
+      isCorrect: false
+      explanation: "AI shouldn't be used to judge readiness or likely success, conduct discovery or assessment from keywords, make decisions about disclosure, accommodations, job match, or support without the employee, replace observation and relationship-building, or translate safety-critical information without competent human verification. AI supports drafting; people retain choice, judgment, relationships, and accountability."

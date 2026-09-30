@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.supported-employment-values-foundation-ai-use.supported-employment-values
+title: "Supported employment, the job coach role, and values"
+metadata:
+  title: "Supported Employment, the Job Coach Role, and Values"
+  description: "Learn how supported employment, job coaching, and values such as dignity and self-determination shape where AI fits and where people lead."
+  ms.date: 09/25/2026
+  author: wwlpublish
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-supported-employment-values.md)]
