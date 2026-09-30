@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-read-write-files.open-close-files-safely-with-using
+title: Open and close files safely with using
+metadata:
+  title: Open and Close Files Safely with using
+  description: "Learn how to use the using statement and the File class to open files safely and let C# close them for you."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-open-close-files-safely-with-using.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-read-write-files.read-data-from-files
+title: Read data from files
+metadata:
+  title: Read Data from Files
+  description: "Learn different ways to read text from a file: all at once, as an array of lines, or one line at a time."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-read-data-from-files.md)]

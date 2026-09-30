@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-read-write-files.exercise-log-file-viewer
+title: Exercise - Create a log file viewer
+metadata:
+  title: Exercise - Create a Log File Viewer
+  description: "Practice File.AppendAllText() and a StreamReader ReadLine() loop by building a log file viewer."
+  ms.date: 9/29/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/5-exercise-log-file-viewer.md)]

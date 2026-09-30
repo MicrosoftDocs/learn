@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.design-manage-certificate-templates.enrollment-authorization-remediation
+title: Enrollment authorization remediation
+metadata:
+  title: Enrollment Authorization Remediation
+  description: Evaluate template permissions, certification authority permissions, issuance controls, subject authorization, plus unsafe enrollment paths.
+  ms.date: 09/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/6-enrollment-authorization-remediation.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.design-manage-certificate-templates.authentication-profiles
+title: Authentication profiles
+metadata:
+  title: Authentication Profiles
+  description: Design certificate profiles for domain controllers, servers, network policy servers, computers, plus users.
+  ms.date: 09/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-authentication-profiles.md)]

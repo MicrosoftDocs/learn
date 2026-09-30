@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.dpu.voice-access-fluid-dictation
+title: Boost productivity with Voice Access and Fluid Dictation on Copilot+ PCs
+metadata:
+  title: Boost Productivity With Voice Access And Fluid Dictation On Copilot+ PCs
+  description: 'In this module, you learn how Voice Access and Fluid Dictation on Copilot+ PCs can help you boost productivity by navigating Windows and interacting with applications using spoken commands, and creating and editing content using natural speech.'
+  ms.date: 09/29/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: module
+  ms.service: windows-11
+summary: >2+
+  Learn how to use Voice Access and Fluid Dictation on Windows 11 and supported Copilot+ PCs to navigate applications, create and refine content, and streamline everyday productivity workflows using natural speech.
+abstract: |2+
+  By the end of this module, you'll be able to:
+  - Navigate Windows and manage applications by using Voice Access on a Windows 11 PC.
+  - Create, capture, and refine content efficiently by using Fluid Dictation on a supported Copilot+ PC.
+  - Use Voice Access and Fluid Dictation together to complete common productivity tasks between meetings.
+  - Identify workplace scenarios where voice-powered workflows can help reduce context switching and improve productivity.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - intermediate
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.voice-access-fluid-dictation.introduction
+  - learn.dpu.voice-access-fluid-dictation.understand-voice-powered-productivity
+  - learn.dpu.voice-access-fluid-dictation.use-voice-access-to-navigate
+  - learn.dpu.voice-access-fluid-dictation.exercise-prepare-status-briefing
+  - learn.dpu.voice-access-fluid-dictation.create-edit-content-fluid-dictation
+  - learn.dpu.voice-access-fluid-dictation.exercise-develop-product-recommendation-dictation
+  - learn.dpu.voice-access-fluid-dictation.combine-voice-access-fluid-dication
+  - learn.dpu.voice-access-fluid-dictation.knowledge-check
+  - learn.dpu.voice-access-fluid-dictation.summary
+badge:
+  uid: learn.dpu.voice-access-fluid-dictation.badge

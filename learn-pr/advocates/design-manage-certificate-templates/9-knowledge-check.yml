@@ -1,0 +1,93 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.design-manage-certificate-templates.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Assess certificate template architecture, security, compatibility, lifecycle, attestation, publication, plus recovery decisions.
+  ms.date: 09/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 10
+content: |
+quiz:
+  questions:
+    - content: "Two issuing certification authorities show different results after a certificate template edit. What should an administrator test before editing the template again?"
+      choices:
+        - content: "Only the display name of the certificate template."
+          isCorrect: false
+          explanation: "The display name doesn't establish replication convergence, publication, refresh, or compatibility."
+        - content: "Configuration partition replication, site convergence, template publication, policy refresh, plus compatibility."
+          isCorrect: true
+          explanation: "Replication, publication, cache refresh, plus compatibility can cause different certification authorities to observe different effective template states."
+        - content: "Only whether both certification authorities use the same certificate revocation list period."
+          isCorrect: false
+          explanation: "Revocation list timing doesn't explain different certificate template state."
+    - content: "A template grants Domain Users Enroll permission, accepts requester-supplied identity, includes client plus server authentication purposes, permits key export, while the certification authority accepts subject alternative name request attributes. What is the first containment action?"
+      choices:
+        - content: "Delete every certificate template in the forest."
+          isCorrect: false
+          explanation: "Broad deletion is unnecessary, disruptive, plus doesn't preserve the unsafe template for investigation."
+        - content: "Increase the certificate validity period so administrators have more time to investigate."
+          isCorrect: false
+          explanation: "A longer validity period increases exposure rather than containing unsafe issuance."
+        - content: "Unpublish the template, preserve evidence, then inspect issued certificates plus certification authority policy."
+          isCorrect: true
+          explanation: "Unpublication stops new issuance while preserving the template object plus evidence for investigation."
+    - content: "Enrollment succeeds after a profile moves from an RSA cryptographic service provider to an elliptic curve key storage provider, but the service fails. What should an administrator investigate?"
+      choices:
+        - content: "Provider access, private-key permissions, certificate selection, protocol algorithm support, plus relying-party chain support."
+          isCorrect: true
+          explanation: "Successful issuance proves certificate policy acceptance, not application or relying-party compatibility."
+        - content: "Only whether the certificate template display name contains the service name."
+          isCorrect: false
+          explanation: "The display name doesn't prove that the service can access or use the key."
+        - content: "Whether the old certificate was archived by a key recovery agent."
+          isCorrect: false
+          explanation: "Key archival doesn't establish compatibility with the replacement provider or algorithm."
+    - content: "Autoenrollment issues a certificate from a superseding template. Can operations delete the old certificate immediately?"
+      choices:
+        - content: "Yes. Supersedence automatically revokes every certificate from the predecessor template."
+          isCorrect: false
+          explanation: "Supersedence influences enrollment selection but doesn't revoke existing certificates."
+        - content: "No. Verify identity, purpose, key properties, live service selection, relying-party acceptance, overlap, plus rollback first."
+          isCorrect: true
+          explanation: "Supersedence doesn't remove the old certificate or prove that the replacement is active."
+        - content: "Yes. The newest issuance time always controls application certificate selection."
+          isCorrect: false
+          explanation: "Applications can use explicit bindings or selection rules that continue to choose the old certificate."
+    - content: "`certutil.exe -catemplates` omits a template that appears in the certificate template console. What boundary should an administrator investigate?"
+      choices:
+        - content: "The local user's browser cache."
+          isCorrect: false
+          explanation: "A browser cache doesn't control certification authority template publication."
+        - content: "The certificate holder's personal certificate store."
+          isCorrect: false
+          explanation: "The personal store doesn't determine the certification authority publication list."
+        - content: "Certification authority publication, directory replication, plus template compatibility."
+          isCorrect: true
+          explanation: "The forest object can exist while a specific certification authority hasn't published it, observed replication, or accepted its compatibility."
+    - content: "The assurance requirement mandates hardware-bound keys, but only half of the pilot devices can complete trusted-platform attestation. Should the template use the setting that requires attestation only when the client is capable?"
+      choices:
+        - content: "No. Keep attestation required, diagnose prerequisites, then authorize exceptions through a separate profile."
+          isCorrect: true
+          explanation: "Conditional attestation creates mixed assurance within one certificate profile."
+        - content: "Yes. Conditional attestation guarantees hardware protection for every issued certificate."
+          isCorrect: false
+          explanation: "Incapable clients can receive certificates without attestation under that setting."
+        - content: "Yes. Attestation requirements affect only the display of the certificate template."
+          isCorrect: false
+          explanation: "Attestation is an issuance control, not a display preference."
+    - content: "A user loses a private key used for port-based network authentication. Should a key recovery agent recover it?"
+      choices:
+        - content: "Yes. Every authentication key should be archived for convenience."
+          isCorrect: false
+          explanation: "Archiving authentication keys increases impersonation risk without a normal data-recovery justification."
+        - content: "No. Authentication keys normally shouldn't be archived; issue a new key, then retire or revoke the old credential as required."
+          isCorrect: true
+          explanation: "Recovery is normally reserved for encryption keys whose loss would prevent access to protected business data."
+        - content: "Yes. Key recovery automatically changes the old certificate purpose to encryption."
+          isCorrect: false
+          explanation: "Recovery doesn't change certificate purpose or key usage."

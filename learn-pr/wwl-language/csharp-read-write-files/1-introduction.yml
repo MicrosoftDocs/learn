@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-read-write-files.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Learn why reading and writing files is essential for building C# programs that persist and share data."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.create-copilot-agent.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: This content is part of the "Build your first agent in Microsoft 365 Copilot Chat" module.
+  ms.date: 09/29/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which task is the strongest candidate for a first agent?"
+    choices:
+        - content: "Preparing a recurring customer meeting brief from approved information"
+          isCorrect: true
+          explanation: ""
+        - content: "Designing a one-time company logo from an open-ended request"
+          isCorrect: false
+          explanation: ""
+        - content: "Managing every customer relationship without review or defined boundaries"
+          isCorrect: false
+          explanation: ""
+        - content: "Making business decisions on behalf of a sales manager"
+          isCorrect: false
+          explanation: ""
+  - content: "Which combination provides an agent with a reusable foundation for its assigned task?"
+    choices:
+        - content: "A name, an icon, and a general welcome message"
+          isCorrect: false
+          explanation: ""
+        - content: "A purpose, clear instructions, and relevant approved knowledge"
+          isCorrect: true
+          explanation: ""
+        - content: "A broad topic, several unrelated tasks, and unrestricted information"
+          isCorrect: false
+          explanation: ""
+        - content: "A single prompt with no defined purpose or knowledge sources"
+          isCorrect: false
+          explanation: ""
+  - content: "How should a meeting preparation agent respond when a request omits the customer name and meeting goal?"
+    choices:
+        - content: "Create a complete meeting brief by assuming the missing details"
+          isCorrect: false
+          explanation: ""
+        - content: "Provide a generic sales presentation that applies to every customer"
+          isCorrect: false
+          explanation: ""
+        - content: "Ask for the customer name and meeting goal before creating the brief"
+          isCorrect: true
+          explanation: ""
+        - content: "Use unsupported customer details to complete each section"
+          isCorrect: false
+          explanation: ""
+  - content: "Which group of prompts provides the most complete test of an agent's behavior?"
+    choices:
+        - content: "A typical request, an incomplete request, and an out-of-scope request"
+          isCorrect: true
+          explanation: ""
+        - content: "Three identical requests submitted during the same agent conversation"
+          isCorrect: false
+          explanation: ""
+        - content: "Three formatting requests that contain complete and similar information"
+          isCorrect: false
+          explanation: ""
+        - content: "One typical request that produces a polished response"
+          isCorrect: false
+          explanation: ""
+  - content: "Which refinement best addresses an agent that produces meeting briefs with an inconsistent structure?"
+    choices:
+        - content: "Change the agent's name and replace its current icon"
+          isCorrect: false
+          explanation: ""
+        - content: "Add unrelated knowledge sources covering additional business topics"
+          isCorrect: false
+          explanation: ""
+        - content: "Add required section headings and their order to the instructions"
+          isCorrect: true
+          explanation: ""
+        - content: "Expand the agent's purpose to include every step of the customer relationship"
+          isCorrect: false
+          explanation: ""

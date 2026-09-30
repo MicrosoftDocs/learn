@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.dpu.ai-workload-visibility
+title: Gain visibility into AI workloads with Windows Task Manager
+metadata:
+  title: Gain Visibility Into AI Workloads With Windows Task Manager
+  description: In this module, you'll explore how Windows Task Manager provides visibility into AI workloads running on supported devices. You'll learn how to monitor NPU and GPU neural engine utilization, identify AI resource usage, and use these insights to investigate performance, power efficiency, and workload behavior.
+  ms.date: 09/30/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  As AI becomes integrated into more Windows experiences, organizations need to understand how AI workloads use device resources. In this module, you'll explore how Windows Task Manager helps IT professionals, developers, and users monitor AI processing activity, understand hardware utilization, identify workload fallback scenarios, and investigate the performance and power characteristics of AI-enabled applications.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain why understanding AI workloads is important as AI becomes a core part of the Windows experience.
+  - Describe the role of NPUs and GPU neural engines in accelerating AI workloads on Windows devices.
+  - Identify and interpret the AI-related metrics available in Windows Task Manager.
+  - Assess whether observed activity is consistent with an application using dedicated AI hardware or an alternative processing path.
+  - Explain how AI workload utilization can influence performance and power behavior.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/ai-workload-visibility.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.ai-workload-visibility.introduction
+  - learn.dpu.ai-workload-visibility.unmetered-intelligence
+  - learn.dpu.ai-workload-visibility.ai-processing
+  - learn.dpu.ai-workload-visibility.monitor-ai-workloads
+  - learn.dpu.ai-workload-visibility.validate-ai-hardware-use
+  - learn.dpu.ai-workload-visibility.efficiency-power-usage
+  - learn.dpu.ai-workload-visibility.knowledge-check
+  - learn.dpu.ai-workload-visibility.summary
+badge:
+  uid: learn.dpu.ai-workload-visibility.badge

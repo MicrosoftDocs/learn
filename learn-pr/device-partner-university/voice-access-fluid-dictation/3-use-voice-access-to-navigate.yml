@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.voice-access-fluid-dictation.use-voice-access-to-navigate
+title: Use Voice Access to navigate Windows and applications
+metadata:
+  title: Use Voice Access To Navigate Windows And Applications
+  description: This content is part of the "Boost productivity with Voice Access and Fluid Dictation on Copilot+ PCs" module.
+  ms.date: 09/29/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-use-voice-access-to-navigate.md)]

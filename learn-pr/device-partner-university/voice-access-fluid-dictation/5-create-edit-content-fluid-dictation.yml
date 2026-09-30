@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.voice-access-fluid-dictation.create-edit-content-fluid-dictation
+title: Create and edit content with Fluid Dictation
+metadata:
+  title: Create And Edit Content With Fluid Dictation
+  description: This content is part of the "Boost productivity with Voice Access and Fluid Dictation on Copilot+ PCs" module.
+  ms.date: 09/29/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-create-edit-content-fluid-dictation.md)]

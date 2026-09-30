@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-read-write-files.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Check your learning on reading and writing files in C#."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Why is it a best practice to open files using the using statement in C#?"
+    choices:
+    - content: "It makes the file open faster."
+      isCorrect: false
+      explanation: "Incorrect. The using statement doesn't change how fast a file opens."
+    - content: "It converts the file contents into an array of strings."
+      isCorrect: false
+      explanation: "Incorrect. The using statement doesn't read or transform the file's contents on its own."
+    - content: "It automatically closes the file when the block finishes, even if an error occurs."
+      isCorrect: true
+      explanation: "Correct. The using statement guarantees the file is closed and its resources released cleanly, which prevents resource leaks and data loss."
+  - content: "Which File method overwrites a file's existing content?"
+    choices:
+    - content: "File.AppendAllText()"
+      isCorrect: false
+      explanation: "Incorrect. File.AppendAllText() adds to existing content instead of erasing it."
+    - content: "File.ReadAllText()"
+      isCorrect: false
+      explanation: "Incorrect. File.ReadAllText() only reads a file. It doesn't write to it."
+    - content: "File.WriteAllText()"
+      isCorrect: true
+      explanation: "Correct. File.WriteAllText() creates a new file, or clears the existing content of a file with the same name, before writing."
+  - content: "What does File.ReadAllLines() return?"
+    choices:
+    - content: "A single string containing the entire file."
+      isCorrect: false
+      explanation: "Incorrect. That's what File.ReadAllText() returns."
+    - content: "An array of strings, one for each line in the file."
+      isCorrect: true
+      explanation: "Correct. File.ReadAllLines() returns each line as a separate string in an array."
+    - content: "The number of lines in the file."
+      isCorrect: false
+      explanation: "Incorrect. File.ReadAllLines() returns the actual lines, not a count. You can count them with .Length after reading."
+  - content: "What does StreamReader.ReadLine() return once there are no more lines to read?"
+    choices:
+    - content: "An empty string"
+      isCorrect: false
+      explanation: "Incorrect. An empty string would be indistinguishable from a genuinely blank line in the file."
+    - content: "It throws an exception."
+      isCorrect: false
+      explanation: "Incorrect. Reaching the end of a file is a normal condition, not an error."
+    - content: "null"
+      isCorrect: true
+      explanation: "Correct. ReadLine() returns null once it reaches the end of the file, which is why a while loop checks for null to know when to stop."

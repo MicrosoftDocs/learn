@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.windows-server.design-manage-certificate-templates.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn certificate template architecture, schema versions, compatibility effects, management tools, plus forest catalog behavior.
+  ms.date: 09/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/1-introduction.md)]
