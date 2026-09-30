@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.explore-azure-cosmos-db-nosql
+metadata:
+  title: Explore Azure Cosmos DB for NoSQL
+  description: "Evaluate whether Azure Cosmos DB for NoSQL fits your application, including AI workloads, and create your first account, database, container, and items."
+  ms.date: 08/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Explore Azure Cosmos DB for NoSQL
+summary: Evaluate whether Azure Cosmos DB for NoSQL is right for your application, including AI workloads, and create your first account, database, container, and items.
+abstract: |
+  After completing this module, you're able to:
+  - Describe what Azure Cosmos DB for NoSQL is and how it works.
+  - Evaluate whether Azure Cosmos DB for NoSQL is appropriate for an application, including AI workloads.
+  - Create an account, database, and container, and perform basic resource operations.
+prerequisites: |
+  - Experience building cloud applications with C# or Python
+  - Basic familiarity with JSON and the Azure portal
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- cloud-computing
+- databases
+units:
+- learn.wwl.explore-azure-cosmos-db-nosql.introduction
+- learn.wwl.explore-azure-cosmos-db-nosql.what-is-azure-cosmos-db-nosql
+- learn.wwl.explore-azure-cosmos-db-nosql.how-azure-cosmos-db-nosql-works
+- learn.wwl.explore-azure-cosmos-db-nosql.evaluate-azure-cosmos-db-for-workload
+- learn.wwl.explore-azure-cosmos-db-nosql.explore-resources-basic-operations
+- learn.wwl.explore-azure-cosmos-db-nosql.exercise-create-account-resources
+- learn.wwl.explore-azure-cosmos-db-nosql.knowledge-check
+- learn.wwl.explore-azure-cosmos-db-nosql.summary
+badge:
+  uid: learn.wwl.explore-azure-cosmos-db-nosql.badge
