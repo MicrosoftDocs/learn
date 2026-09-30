@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-cosmos-db-nosql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Answer questions to validate your understanding of Azure Cosmos DB for NoSQL, its data model, and adoption fit."
+  ms.date: 08/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "A team is designing a globally distributed application with unpredictable traffic spikes, JSON data whose shape changes over time, and a plan to add AI retrieval features later. Which characteristic of Azure Cosmos DB for NoSQL most directly supports the plan to add AI retrieval without adding a separate data store?"
+    choices:
+    - content: "The account replicates data across multiple Azure regions."
+      isCorrect: false
+      explanation: "Incorrect. Global replication reduces latency and increases availability, but it doesn't determine whether vectors and operational data live together."
+    - content: "The NoSQL API stores vectors alongside operational data in the same documents."
+      isCorrect: true
+      explanation: "Correct. Because vectors live in the same documents as operational data, one store serves both operational and retrieval workloads, so no separate vector database is needed."
+    - content: "Throughput is expressed in request units per second."
+      isCorrect: false
+      explanation: "Incorrect. Request units describe throughput cost; they don't address how vector data is stored relative to operational data."
+  - content: "A developer created an Azure Cosmos DB for NoSQL account but no resources inside it yet. Which resource must exist before a container can be created?"
+    choices:
+    - content: "An item"
+      isCorrect: false
+      explanation: "Incorrect. Items are stored inside a container, so they're created after the container exists, not before."
+    - content: "An indexing policy"
+      isCorrect: false
+      explanation: "Incorrect. An indexing policy is an optional container setting, not a separate resource that must exist beforehand."
+    - content: "A database"
+      isCorrect: true
+      explanation: "Correct. A container is a child of a database, so a database must exist first."
+  - content: "While the developer chooses a partition key path for a new container, the developer wants the container to scale smoothly as data and request volume grow. Which partition key characteristic best supports that goal?"
+    choices:
+    - content: "A property with many distinct values that spreads storage and requests evenly."
+      isCorrect: true
+      explanation: "Correct. A key with many distinct values distributes data and requests across partitions evenly, which lets the container scale."
+    - content: "A property that has the same value for most items."
+      isCorrect: false
+      explanation: "Incorrect. A key shared by most items concentrates data and requests on a few partitions, which limits scale."
+    - content: "A property that changes value each time an item is updated."
+      isCorrect: false
+      explanation: "Incorrect. A partition key value is immutable once an item is created, so a property that changes when the item is updated can't serve as the partition key."
+  - content: "A workload depends on complex joins across many related tables and strict relational integrity in a single region with steady traffic. Based on the fit signals for Azure Cosmos DB for NoSQL, what's the most appropriate conclusion?"
+    choices:
+    - content: "Azure Cosmos DB for NoSQL is the best fit because it supports flexible schema."
+      isCorrect: false
+      explanation: "Incorrect. Flexible schema is a strength, but this workload's relational needs and lack of scale or global requirements point away from the NoSQL API."
+    - content: "The MongoDB API for Azure Cosmos DB should be used to handle the joins."
+      isCorrect: false
+      explanation: "Incorrect. Switching APIs doesn't change the underlying document model; a relational database is the better match for complex joins and relational integrity."
+    - content: "A relational database is likely a better fit than Azure Cosmos DB for NoSQL."
+      isCorrect: true
+      explanation: "Correct. Highly relational data with complex joins and strict integrity, plus steady single-region traffic, matches few fit signals, so a relational database suits it better."
+  - content: "During an adoption review, a developer wants to estimate how much throughput to provision for Azure Cosmos DB for NoSQL. Which approach reflects how the service measures the cost of operations?"
+    choices:
+    - content: "Count the number of databases the account contains."
+      isCorrect: false
+      explanation: "Incorrect. The number of databases doesn't determine throughput; throughput is provisioned and measured in request units."
+    - content: "Estimate the expected mix of reads, writes, and queries and sum their request unit costs."
+      isCorrect: true
+      explanation: "Correct. Each operation has a known request unit cost, so capacity is estimated from the expected mix of operations, expressed in request units per second."
+    - content: "Measure the physical partitions and provision one request unit per partition."
+      isCorrect: false
+      explanation: "Incorrect. The service manages physical partitions automatically, and throughput isn't derived by assigning a fixed request unit per partition."

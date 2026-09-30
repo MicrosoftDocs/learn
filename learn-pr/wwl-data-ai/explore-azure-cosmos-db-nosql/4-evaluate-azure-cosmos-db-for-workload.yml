@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-cosmos-db-nosql.evaluate-azure-cosmos-db-for-workload
+title: Evaluate Azure Cosmos DB for your workload
+metadata:
+  title: Evaluate Azure Cosmos DB for Your Workload
+  description: "Decide whether Azure Cosmos DB for NoSQL fits a workload, including AI use cases, and recognize when another option fits better."
+  ms.date: 08/09/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-evaluate-azure-cosmos-db-for-workload.md)]
