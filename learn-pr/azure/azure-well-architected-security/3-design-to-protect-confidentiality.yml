@@ -5,8 +5,8 @@ metadata:
   title: Design to protect confidentiality
   description: Learn how to design your workload to protect confidential data safely and securely.
   ms.date: 07/07/2025
-  author: PageWriter-MSFT
-  ms.author: prwilk
+  author: Rob-Barefoot
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 10
 content: |

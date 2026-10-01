@@ -7,8 +7,8 @@ metadata:
   title: Azure Well-Architected Framework pillars
   description: Learn about the five pillars in the Azure Well-Architected Framework.
   ms.date: 05/15/2025
-  author: PageWriter-MSFT
-  ms.author: prwilk
+  author: Rob-Barefoot
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 10
 content: |
