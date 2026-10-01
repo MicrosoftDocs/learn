@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-cosmos-db-nosql-operations.execute-transactional-batch
+title: Execute transactional batch operations
+metadata:
+  title: Execute Transactional Batch Operations
+  description: "Group same-partition writes into an atomic transactional batch, review per-operation results, and work within the batch limits."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-execute-transactional-batch.md)]

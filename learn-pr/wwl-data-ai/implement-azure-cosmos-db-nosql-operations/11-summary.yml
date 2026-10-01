@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-cosmos-db-nosql-operations.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Review the operation toolbox and the cost and correctness decisions that select among point reads, writes, patch, batch, and bulk."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-summary.md)]
