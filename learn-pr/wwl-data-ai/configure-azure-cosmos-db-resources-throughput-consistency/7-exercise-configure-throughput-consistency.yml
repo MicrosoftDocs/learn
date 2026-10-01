@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.exercise-configure-throughput-consistency
+title: Exercise - Configure throughput and consistency
+metadata:
+  title: Exercise - Configure throughput and consistency
+  description: "Configure autoscale throughput, set default and per-request consistency, and configure time to live, observing the effects on cost and behavior."
+  ms.date: 09/30/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+labModal: true
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-configure-throughput-consistency.md)]

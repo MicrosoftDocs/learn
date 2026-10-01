@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Frame throughput, consistency, and retention as levers that balance cost and performance in Azure Cosmos DB for NoSQL."
+  ms.date: 09/30/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

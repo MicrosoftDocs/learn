@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Recap throughput models, consistency levels, and time to live as levers that balance cost and performance, with links to learn more."
+  ms.date: 09/30/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]
