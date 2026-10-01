@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.enterprise-ai-strategy.governance-model
+title: Establish a governance model for AI agents
+metadata:
+  title: Establish a Governance Model for AI Agents
+  description: This content is part of the "Prepare an enterprise governance strategy for AI agents" module.
+  ms.date: 09/30/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-governance-model.md)]

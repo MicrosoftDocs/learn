@@ -1,0 +1,5 @@
+AI agents are changing how work gets done. An AI agent is a system that can reason, make decisions, and take actions to achieve a goal, often with limited human intervention. Unlike AI experiences that only provide information, agents can use tools, interact with applications, and take actions on behalf of users. As enterprises adopt more agents, they need new ways to govern how those agents access resources, interact with systems, and operate within established security and management boundaries.
+
+Preparing for AI agent adoption requires more than deploying new technology. Organizations also need a governance strategy that helps them identify risks, apply appropriate controls, and maintain visibility into agent activity as adoption expands.
+
+In this module, you'll explore how AI agents change enterprise governance requirements, learn how identity, containment, and management support agent governance, evaluate governance controls based on agent risk, and apply the Audit, Define, Refresh framework to build an agent-ready strategy.
