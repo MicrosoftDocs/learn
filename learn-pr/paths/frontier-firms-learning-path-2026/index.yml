@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.dpu.frontier-firms-learning-path-2026
+title: Frontier Firms learning path 2026
+metadata:
+  title: Frontier Firms Learning Path 2026
+  description: This learning path introduces the concepts, strategies, and technologies behind Frontier Firms, organizations that combine human expertise with AI-powered assistants and agents to transform the way work gets done. Learners explore how AI is being integrated into everyday business processes, how organizations can scale AI adoption responsibly, and how leaders can build a foundation for long-term business transformation. Through real-world scenarios and practical guidance, this Learning Path examines the processes and technologies that help organizations improve productivity, enhance decision-making, and create sustainable value with AI.
+  ms.date: 10/01/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: learning-path
+summary: >
+  Discover how Frontier Firms are transforming work by combining human expertise with AI-powered assistance and agents. This Learning Path explores the strategies, technologies, and real-world practices that help organizations embed AI into everyday workflows, improve productivity, and drive business transformation.
+prerequisites: None
+iconUrl: /training/achievements/frontier-firms-learning-path-2026.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - technology-manager
+products:
+  - intune
+  - windows-11
+  - microsoft-365-copilot
+  - microsoft-agents
+  - m365-agents
+modules:
+  - learn.dpu.ai-workflows
+  - learn.dpu.manage-ai
+  - learn.dpu.frontier-firms-scale-ai-responsibly-build-trust
+trophy:
+  uid: learn.dpu.frontier-firms-learning-path-2026.trophy

@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-azure-cosmos-db-nosql-sdk.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Answer questions to validate your understanding of authentication, the client singleton pattern, connectivity modes, the emulator, and error handling in the Azure Cosmos DB SDK."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "A team deploys a web API to Azure App Service with a managed identity assigned, and the API needs to read from Azure Cosmos DB. Which approach to authentication matches the guidance for an Azure-hosted workload?"
+    choices:
+    - content: "Construct the client with `ManagedIdentityCredential` configured for the App Service managed identity, so authentication uses that identity without a stored application secret."
+      isCorrect: true
+      explanation: "`ManagedIdentityCredential` selects the configured managed identity instead of trying a chain of environment and developer credentials. That identity needs an appropriate Azure Cosmos DB data-plane role. `DefaultAzureCredential` is useful during development, but an earlier credential in its chain can take precedence over managed identity. A specific credential makes production identity selection deterministic."
+    - content: "Copy the primary key from the account's Keys blade into an app setting, because keys work immediately and need no role assignment."
+      isCorrect: false
+      explanation: "An account key does work, but it's a long-lived secret that has to be stored securely and rotated on a schedule. Keys are a reasonable fit for local tooling, scripts, and the emulator. For an application running in Azure, Microsoft Entra ID removes the secret from the deployment altogether."
+    - content: "Use the emulator's well-known key, since it's a documented public constant rather than a private secret."
+      isCorrect: false
+      explanation: "The well-known key authenticates only against a local emulator instance. It carries no meaning for a cloud account, and an account created with key-based authentication disabled rejects key authentication of any kind."
+  - content: "A .NET web API creates a new `CosmosClient` inside the request-handler method, so a fresh client is instantiated for every incoming HTTP request. What is the most likely effect on application performance?"
+    choices:
+    - content: "Each request benefits from a clean connection state, improving reliability."
+      isCorrect: false
+      explanation: "Frequent instantiation discards the connection pool and address cache on every request. The SDK re-establishes connections and refetches partition routing information for each new client, which increases latency and resource usage rather than improving them."
+    - content: "The address cache and connection pool are discarded and rebuilt on every request, adding latency and resource overhead."
+      isCorrect: true
+      explanation: "CosmosClient manages TCP (Transmission Control protocol) connections and an address cache that maps partition key ranges to the addresses of their replica sets. Discarding and recreating the client per request throws away that state and rebuilds it from scratch, adding connection setup and routing discovery cost to every operation."
+    - content: "The SDK detects multiple instances and shares their connection state automatically."
+      isCorrect: false
+      explanation: "There's no cross-instance state sharing. Each CosmosClient maintains its own independent connection pool and address cache."
+  - content: "A .NET application runs inside a container where the corporate network policy blocks all outbound TCP traffic except on port 443. The developer configures `ConnectionMode.Direct`. What is the expected outcome?"
+    choices:
+    - content: "Connection attempts to the storage partition replicas fail because direct mode requires TCP ports beyond 443."
+      isCorrect: true
+      explanation: "Direct mode routes data requests to partition replicas over TCP for lower latency. It still contacts the gateway for routing metadata at startup and again whenever replica movement or maintenance invalidates the cached replica addresses. Public and service endpoints require TCP ports 10000 through 20000 in addition to port 443; private endpoints can use ports 0 through 65535. `ConnectionMode.Gateway` is the appropriate choice when the network permits only HTTPS on port 443."
+    - content: "Direct mode uses only HTTPS port 443, so the policy has no effect."
+      isCorrect: false
+      explanation: "Direct mode communicates with storage partition replicas over TCP on other ports beyond 443. Only gateway mode routes all traffic through the standard HTTPS port 443."
+    - content: "The SDK automatically detects the network restriction and falls back to gateway mode."
+      isCorrect: false
+      explanation: "The SDK doesn't automatically switch connectivity modes. If direct mode is configured but the required TCP ports are blocked, requests fail rather than transparently switching to gateway mode."
+  - content: "A development team wants to run integration tests locally without Azure costs or network access. Which Azure Cosmos DB feature is designed for this scenario?"
+    choices:
+    - content: "A serverless capacity Azure Cosmos DB account, which has no minimum throughput charge."
+      isCorrect: false
+      explanation: "A serverless account still runs in the cloud and requires a network connection. It isn't suitable for offline development."
+    - content: "A shared-throughput database, which reduces cost by distributing request units per second (RU/s) across containers."
+      isCorrect: false
+      explanation: "A shared-throughput database reduces cloud cost but still runs in Azure and requires a network connection. It doesn't support offline development."
+    - content: "The Azure Cosmos DB emulator, which runs locally and replicates the NoSQL API wire protocol."
+      isCorrect: true
+      explanation: "The emulator runs on a local machine or in a container, uses the same APIs as the cloud service, and requires no Azure subscription or network connection. It's designed exactly for local development and testing scenarios."
+  - content: "The SDK receives an HTTP 429 response on a write operation. Which statement accurately describes the shared responsibility between the SDK and the application in this scenario?"
+    choices:
+    - content: "The SDK doesn't retry write operations at all, so the application must implement every retry itself."
+      isCorrect: false
+      explanation: "The SDK does retry 429 on writes. A rate-limited request is rejected before the service processes it, so no partial mutation can occur and retrying is safe. Write timeouts with an unknown outcome aren't retried by default. The Python SDK offers opt-in `retry_write` for applications that tolerate or detect duplicate effects."
+    - content: "The SDK retries the write automatically, but those retries are bounded. When the limit is reached, the 429 surfaces and the application decides what to do next."
+      isCorrect: true
+      explanation: "Because a 429 means the request was rejected before processing, the SDK retries it automatically even for writes. In the .NET SDK, MaxRetryAttemptsOnRateLimitedRequests and MaxRetryWaitTimeOnRateLimitedRequests bound that behavior. Once either limit is reached, the exception reaches the code, where the code can retry with back-off using the RetryAfter value, queue the work, or shed load."
+    - content: "HTTP 429 on a write is a permanent error; the application should surface it to the user immediately without retrying."
+      isCorrect: false
+      explanation: "HTTP 429 (Too Many Requests) is a transient, rate-limiting error. The service is asking the client to slow down and retry. It isn't a permanent failure and is appropriate to retry with back-off after the suggested delay."

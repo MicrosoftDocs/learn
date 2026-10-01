@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-nosql.understand-sql-query-language
+title: Understand the SQL query language
+metadata:
+  title: Understand the SQL Query Language
+  description: "Read Azure Cosmos DB for NoSQL queries over JSON items, including FROM aliases, undefined properties, type and case sensitivity, type-checking functions, and what drives query cost."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-understand-sql-query-language.md)]

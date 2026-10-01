@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-cosmos-db-nosql-operations.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Answer questions to validate your understanding of point reads, write semantics, partial document patch, item time to live, optimistic concurrency, transactional batch, and bulk execution."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "A service retrieves a single order roughly 5,000 times a minute. The code has the customer identifier, which is the container's partition key value, and the order identifier, which is stored as the item's `id`. It currently runs a SQL query that filters on both values. To reduce the request-unit cost of this operation, what is the most effective change?"
+    choices:
+    - content: "Add the queried properties to the container's indexing policy so the query resolves from the index."
+      isCorrect: false
+      explanation: "With consistent indexing, the `id` property is already indexed. The partition key scopes the query, but the query engine still plans and executes the query and assembles a result set. Indexing changes don't turn the query into a point read."
+    - content: "Increase the query page size so the query returns in a single round-trip."
+      isCorrect: false
+      explanation: "A larger page size doesn't remove query-engine work. A query can return empty pages or require multiple executions even when it returns few items. A point read avoids query execution when the id and partition key are known."
+    - content: "Replace the query with a point read that passes the `id` and partition key value."
+      isCorrect: true
+      explanation: "A point read requires the item id and partition key value. Reading a 1-KB item costs about 1 request unit (RU). The request goes directly to the physical partition. The request doesn't use the query engine. A query returning the same item costs several times as much, because it compiles a plan and assembles a result set."
+  - content: "An order document is 400 KB and contains hundreds of line items. A warehouse event needs to change only the `status` property to `shipped`. The current code reads the item, sets the property, and calls replace. Which benefit does a single patch operation provide?"
+    choices:
+    - content: "Patch operations are billed at a fixed discounted rate regardless of the document size."
+      isCorrect: false
+      explanation: "There's no fixed or discounted rate for patch. The write costs about the same as replacing the same document, regardless of its size. The service reads and rewrites the stored item internally."
+    - content: "The request carries only the operation instead of the whole document, and no separate read is needed."
+      isCorrect: true
+      explanation: "Patch sends the list of operations, so the 400-KB document never travels up with the request, and the read that the replace pattern requires disappears. Both savings grow with document size: a larger document costs more to upload, and the point read it replaces would have cost more request units (RUs)."
+    - content: "Patch writes only to the primary replica, so it skips the replication cost that a replace incurs."
+      isCorrect: false
+      explanation: "Every write, including a patch, is replicated according to the account's consistency and replication configuration. Patch changes what travels over the network and how much the client does, not how the service replicates the write."
+  - content: "Two support agents open the same order, each change a different field, and each write the full document back. The second write succeeds and the first agent's change disappears with no error. Which change to the write path detects this situation?"
+    choices:
+    - content: "Capture the `_etag` value returned by the read and send it as an `If-Match` precondition on the write."
+      isCorrect: true
+      explanation: "The service regenerates the `_etag` on every write. Sending the ETag from the read as a precondition makes the service apply the write only if the item is unchanged. A mismatch returns 412 Precondition Failed, which surfaces the conflict instead of hiding it."
+    - content: "Switch the write from replace to upsert so the operation succeeds regardless of the item's state."
+      isCorrect: false
+      explanation: "Upsert makes the overwrite more likely to succeed, not less. It carries no precondition, so it silently replaces whatever the other agent wrote. It addresses the wrong problem."
+    - content: "Configure the container to use strong consistency so concurrent writers see each other's changes."
+      isCorrect: false
+      explanation: "Consistency level governs what a read observes across replicas and regions. It doesn't prevent a later write from overwriting an earlier one. Both agents read a valid, current document. The problem is the gap between reading and writing, which optimistic concurrency control addresses."
+  - content: "A checkout must write an order header and a stock reservation together, and neither may exist without the other. Both documents use `customerId` as their partition key value. Which approach satisfies the requirement?"
+    choices:
+    - content: "Enable bulk execution on the client and issue both writes concurrently."
+      isCorrect: false
+      explanation: "Bulk execution optimizes throughput for independent operations and provides no atomicity. Each write succeeds or fails on its own, so a failure can leave an order header with no matching reservation."
+    - content: "Execute both writes in a transactional batch scoped to the shared partition key value."
+      isCorrect: true
+      explanation: "A transactional batch commits all its operations or none of them, and it requires every operation to target the same logical partition key value. Because both documents use the same `customerId`, the batch is available and it guarantees the two writes stay consistent."
+    - content: "Issue the two writes sequentially and roll back the first one if the second fails."
+      isCorrect: false
+      explanation: "A manual compensating write isn't atomic. If the process fails between the two operations, no code runs to compensate and the container is left in an inconsistent state."
+  - content: "A nightly job loads 300,000 catalog items spread evenly across many partition key values. The items are independent of one another and the job runs unattended. Which approach best reduces total elapsed time?"
+    choices:
+    - content: "Split the items into transactional batches of 100 and execute the batches sequentially."
+      isCorrect: false
+      explanation: "A transactional batch is limited to a single logical partition key value, so items spread across many partition key values can't be grouped this way. Batches also provide atomicity the job doesn't need, and executing them sequentially adds no parallelism."
+    - content: "Await each write individually so the SDK's automatic retry logic handles throttling responses in order."
+      isCorrect: false
+      explanation: "Awaiting each write serializes the entire load, leaving one operation in flight at a time and no opportunity for the SDK to group requests. Throttling responses are retried automatically either way, so this approach gives up the throughput without gaining anything."
+    - content: "Use bulk execution so the SDK groups concurrent operations by physical partition into fewer service requests."
+      isCorrect: true
+      explanation: "Bulk execution is designed for exactly this workload: many independent operations, spread across partitions, on a background path where total throughput matters more than the latency of any individual write. The .NET SDK groups operations by physical partition and dispatches each group as one request. The Python SDK has no bulk flag, and the equivalent there's to drive the operations concurrently with the async client."

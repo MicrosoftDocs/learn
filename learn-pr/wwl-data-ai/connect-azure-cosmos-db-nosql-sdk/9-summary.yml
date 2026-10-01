@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-azure-cosmos-db-nosql-sdk.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Recap SDK setup, the client singleton pattern, connectivity mode, the emulator, and connection error handling, with links to learn more."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]

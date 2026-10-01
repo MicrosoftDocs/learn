@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-nosql.exercise-author-page-queries
+title: Exercise - Author and page queries
+metadata:
+  title: Exercise - Author and Page Queries
+  description: "Load the CosmicWorks catalog, write parameterized and projected queries with built-in functions, add a correlated subquery and a cross-product query, and page results with continuation tokens."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+labModal: true
+durationInMinutes: 45
+content: |
+  [!include[](includes/7-exercise-author-page-queries.md)]

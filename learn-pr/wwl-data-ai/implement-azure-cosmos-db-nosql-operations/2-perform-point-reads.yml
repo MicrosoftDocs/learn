@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-cosmos-db-nosql-operations.perform-point-reads
+title: Perform point read operations
+metadata:
+  title: Perform Point Read Operations
+  description: "Retrieve an item by id and partition key with a point read, handle missing items, read several known items at once, and compare the cost against a query."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-perform-point-reads.md)]

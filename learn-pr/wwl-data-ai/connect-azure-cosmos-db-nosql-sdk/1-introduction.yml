@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-azure-cosmos-db-nosql-sdk.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Set up the context for connecting and configuring the Azure Cosmos DB SDK, introducing the Contoso web-API scenario and the topics covered in the module."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

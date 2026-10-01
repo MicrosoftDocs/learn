@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-nosql.create-cross-product-queries
+title: Create cross-product queries
+metadata:
+  title: Create Cross-Product Queries
+  description: "Expand nested arrays with JOIN inside a single item, filter before or after the cross-product, understand how multiple joins multiply results, and run them from the SDK."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-create-cross-product-queries.md)]

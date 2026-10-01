@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.configure-ttl-data-retention
+title: Configure time to live for data retention
+metadata:
+  title: Configure time to live for data retention
+  description: "Configure container-level time to live and per-item overrides to expire data automatically and reduce storage cost."
+  ms.date: 09/30/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-configure-time-to-live-data-retention.md)]

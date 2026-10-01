@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency
+metadata:
+  title: Configure Resources, Throughput, and Consistency
+  description: "Evaluate request-unit and consistency requirements and configure Azure Cosmos DB for NoSQL throughput, consistency, and time-to-live settings that balance cost and performance."
+  ms.date: 09/30/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Configure resources, throughput, and consistency
+summary: Evaluate request-unit, throughput, and consistency needs in Azure Cosmos DB for NoSQL. Configure provisioned or serverless capacity, standard or autoscale throughput, consistency levels, and time to live. Balance cost and performance through account and container settings.
+abstract: |
+  After completing this module, you're able to:
+  - Evaluate request-unit consumption and select an appropriate throughput model.
+  - Configure throughput at the database and container levels and set time to live.
+  - Evaluate consistency levels and configure default and per-request consistency.
+prerequisites: |
+  - Familiarity with Azure Cosmos DB for NoSQL, or completion of the module on exploring Azure Cosmos DB for NoSQL
+  - Experience building cloud applications with C# or Python
+  - Basic familiarity with JSON and the Azure portal
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- cloud-computing
+- databases
+units:
+- learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.introduction
+- learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.evaluate-throughput-ru-requirements
+- learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.choose-throughput-model
+- learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.configure-throughput-scope
+- learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.evaluate-configure-consistency
+- learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.configure-ttl-data-retention
+- learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.exercise-configure-throughput-consistency
+- learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.knowledge-check
+- learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.summary
+badge:
+  uid: learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.badge

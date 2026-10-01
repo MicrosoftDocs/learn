@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-cosmos-db-nosql-operations.configure-item-ttl
+title: Configure item time to live
+metadata:
+  title: Configure Item Time to Live
+  description: "Enable expiration on a container, set time to live on individual items, and exempt items from a container default."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-configure-item-time-to-live.md)]

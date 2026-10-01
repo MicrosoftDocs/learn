@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-cosmos-db-nosql-operations.exercise-implement-data-operations
+title: Exercise - Implement data operations
+metadata:
+  title: Exercise - Implement Data Operations
+  description: "Perform point reads, writes, a conditional patch, an ETag-guarded replace, item time to live, a transactional batch, and a bulk load, comparing request-unit costs."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+labModal: true
+durationInMinutes: 45
+content: |
+  [!include[](includes/9-exercise-implement-data-operations.md)]

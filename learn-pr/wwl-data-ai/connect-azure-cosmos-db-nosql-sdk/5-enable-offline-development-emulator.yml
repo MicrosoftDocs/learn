@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-azure-cosmos-db-nosql-sdk.enable-offline-development-emulator
+title: Enable offline development with the emulator
+metadata:
+  title: Enable offline development with the emulator
+  description: "Connect the Azure Cosmos DB SDK to the local emulator for cost-free offline development and testing, and switch between emulator and cloud endpoints."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-enable-offline-development-emulator.md)]

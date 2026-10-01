@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Answer questions to validate your understanding of throughput models, consistency levels, and time to live in Azure Cosmos DB for NoSQL."
+  ms.date: 09/30/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "A container serves variable traffic throughout the day and requires predictable throughput backed by a service-level agreement (SLA). The team measured peak demand and wants capacity to scale automatically within a configured maximum. Which throughput configuration best fits this workload?"
+    choices:
+    - content: "Provisioned throughput with a standard (manual) value in request units per second (RU/s)."
+      isCorrect: false
+      explanation: "Incorrect. Standard throughput holds a fixed RU/s, so unpredictable spikes above it get rate-limited while a value high enough to absorb spikes wastes money during quiet periods. It suits steady, predictable traffic instead."
+    - content: "Serverless."
+      isCorrect: false
+      explanation: "Incorrect. Serverless fits intermittent workloads, but it doesn't provide the predictable throughput guarantee required in this scenario. Provisioned throughput provides that guarantee."
+    - content: "Provisioned throughput with autoscale."
+      isCorrect: true
+      explanation: "Correct. Autoscale scales RU/s automatically between 10% of a configured maximum and that maximum. Billing uses hourly peak throughput, with a 10% floor; dynamic scaling tracks each partition and region separately. Requests can still be rate-limited if demand exceeds the maximum or a partition's allocation."
+  - content: "A developer sets the account default consistency to session. A read in the same SDK session must reflect that session's preceding write. Another read tolerates stale data and doesn't need the session guarantee. How should the developer configure consistency for these two reads?"
+    choices:
+    - content: "Leave the strict read at the session default and relax the tolerant read to eventual per request."
+      isCorrect: true
+      explanation: "Correct. A `ConsistencyLevel` override can only relax consistency. Session provides read-your-own-writes within the session, while the tolerant read can use eventual. Session and eventual reads have the same request unit (RU) cost, so this change doesn't reduce the request charge."
+    - content: "Relax the 'strict read' to 'strong' per request and leave the tolerant read at the default."
+      isCorrect: false
+      explanation: "Incorrect. A `ConsistencyLevel` override can't raise consistency above the account default, only lower it. Strong is stronger than the session default, so this request-level change isn't available."
+    - content: "Set the account default to eventual and strengthen the strict read to session per request."
+      isCorrect: false
+      explanation: "Incorrect. Because a `ConsistencyLevel` override can only relax consistency, the consistency can't raise a read above an eventual default. The account default must be at least as strong as the strongest read any operation requires."
+  - content: "A team is designing an account with several containers and is considering provisioning throughput once at the database level so that every container draws from the same pool. What is the main risk of that approach?"
+    choices:
+    - content: "Shared database throughput caps each container at 400 RU/s no matter how large the pool is."
+      isCorrect: false
+      explanation: "Incorrect. The 400 RU/s figure is the minimum that can be provisioned on a shared-throughput database, not a per-container ceiling. Containers draw from the whole pool, which is exactly why one of them can starve the others."
+    - content: "Containers in a shared-throughput database have no individual throughput guarantee, so one busy container can consume the pool and rate-limit the others."
+      isCorrect: true
+      explanation: "Correct. Shared database throughput provides no per-container guarantee. For this reason, container-level throughput is the recommended starting point, and shared throughput suits only teams that understand and accept the trade-off."
+    - content: "Shared database throughput can't be combined with autoscale."
+      isCorrect: false
+      explanation: "Incorrect. A shared-throughput database supports autoscale, scaling between 100 and 1,000 RU/s at the minimum setting. The real risk is the absence of a per-container guarantee."
+  - content: "A container has DefaultTimeToLive not set (Time to Live disabled). A developer adds a ttl of 3600 to individual items expecting them to expire in one hour, but nothing expires. What explains this behavior?"
+    choices:
+    - content: "An item's ttl has no effect unless the container enables Time to Live (TTL) by setting DefaultTimeToLive to a positive value or to -1."
+      isCorrect: true
+      explanation: "Correct. Per-item ttl only applies when TTL is enabled on the container. With DefaultTimeToLive not set, TTL is disabled entirely, so the item-level values are ignored."
+    - content: "Per-item ttl values are always ignored; expiration can only be set at the container level."
+      isCorrect: false
+      explanation: "Incorrect. Items can override the container default through their own ttl property, but only when the container has TTL enabled first."
+    - content: "A ttl of 3600 means the item never expires, so no expiration occurs."
+      isCorrect: false
+      explanation: "Incorrect. A positive ttl of 3,600 requests expiration 3,600 seconds after last modification. The value that means 'never expire' is -1, not a positive number. The real cause is that TTL is disabled on the container."
+  - content: "A developer wants an accurate figure for how many request units a specific query consumes in production rather than relying on a paper estimate. Which approach yields the most reliable number?"
+    choices:
+    - content: "Multiply the item size in kilobytes by the number of items returned to compute the RU cost."
+      isCorrect: false
+      explanation: "Incorrect. Query RU cost depends on complexity, items scanned, and index usage, not a simple size-times-count formula, so this calculation produces an unreliable estimate."
+    - content: "Run the query once against a single physical partition and use that charge as the production figure."
+      isCorrect: false
+      explanation: "Incorrect. A single-partition test isn't sufficient unless it represents the production data volume and partition distribution. Measurements must reflect the workload being estimated."
+    - content: "Run the query against representative data and partition distribution, and sum the request charges across all result pages."
+      isCorrect: true
+      explanation: "Correct. Each query response reports the charge for that page. Summing all page charges gives the total query cost, and representative data and partition distribution make the measurement useful for production estimates."
