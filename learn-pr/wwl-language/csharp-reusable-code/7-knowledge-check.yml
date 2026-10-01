@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-reusable-code.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Check your learning on writing reusable code with methods and namespaces in C#."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What return type do you use when a method doesn't return a value?"
+    choices:
+    - content: "null"
+      isCorrect: false
+      explanation: "Incorrect. null is a value, not a return type."
+    - content: "void"
+      isCorrect: true
+      explanation: "Correct. A method declared with void performs an action but doesn't hand back a value."
+    - content: "empty"
+      isCorrect: false
+      explanation: "Incorrect. C# doesn't have an `empty` return type."
+  - content: "What happens if you try to store the result of a call to a void method in a variable?"
+    choices:
+    - content: "The variable is set to null."
+      isCorrect: false
+      explanation: "Incorrect. C# doesn't allow this at all, so no value is ever assigned."
+    - content: "The code doesn't compile."
+      isCorrect: true
+      explanation: "Correct. A void method doesn't produce a value, so trying to assign its result to a variable is a compile error."
+    - content: "The variable is set to the default value of its type."
+      isCorrect: false
+      explanation: "Incorrect. The code won't compile in the first place."
+  - content: "Which statement about local variables is true?"
+    choices:
+    - content: "A local variable declared inside one method can be used inside another method."
+      isCorrect: false
+      explanation: "Incorrect. A local variable only exists within the method where it's declared."
+    - content: "A local variable is shared across every method in the file."
+      isCorrect: false
+      explanation: "Incorrect. Each method has its own separate set of local variables."
+    - content: "A local variable only exists while its method is running."
+      isCorrect: true
+      explanation: "Correct. Local variables are created when a method starts and cleaned up when it ends."
+  - content: "You want to use the StringBuilder type from the System.Text namespace. What do you add to your file?"
+    choices:
+    - content: "import System.Text;"
+      isCorrect: false
+      explanation: "Incorrect. `import` is Python syntax. C# uses a different keyword."
+    - content: "include System.Text;"
+      isCorrect: false
+      explanation: "Incorrect. C# doesn't use an `include` directive."
+    - content: "using System.Text;"
+      isCorrect: true
+      explanation: "Correct. The using directive brings a namespace's types into scope so you can refer to them by their short names."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-reusable-code.organize-code-with-namespaces
+title: Organize code with namespaces
+metadata:
+  title: Organize Code with Namespaces
+  description: "Learn how to use the using directive to bring in code from the .NET Class Library, and how namespaces organize your own code."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-organize-code-with-namespaces.md)]
