@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-nosql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Answer questions to validate your understanding of query construction, projection, correlated subqueries, cross-product queries, and continuation-token paging."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "A catalog API takes a category, a maximum price, and a sort column from the incoming request, and builds its query text by concatenating all three. Which of those values can a parameterized query carry, and how should the rest be handled?"
+    choices:
+    - content: "The category and the maximum price can travel as parameters. The sort column is an identifier, so map the incoming value against a fixed allow list and build it into the query text."
+      isCorrect: true
+      explanation: "Parameters substitute values, not identifiers. A property name, an alias, and a sort direction are all structural parts of the query, so they must be present in the text before the service parses it. An allow list keeps the client's choice from reaching the query as raw input."
+    - content: "All three can travel as parameters, because the SDK escapes every value it's given before sending the request."
+      isCorrect: false
+      explanation: "Parameterization isn't escaping. A parameter carries its value alongside the query text so the value is never parsed as query syntax at all, but that mechanism applies only where a value is legal. An identifier position isn't one."
+    - content: "None of them can travel as parameters, because parameters are supported only in equality comparisons in a `WHERE` clause."
+      isCorrect: false
+      explanation: "Parameters aren't restricted to equality comparisons. Both filters here accept them: an equality comparison on the category and a range comparison on the price."
+  - content: "A partner feed loads products where `price` is stored as the string `\"63.50\"` rather than a number. The query `SELECT p.name FROM product p WHERE p.price < 100` returns no error, but those partner products never appear in the results. What explains the behavior?"
+    choices:
+    - content: "The query engine skips items whose property types don't match the container's inferred schema until the indexing policy is rebuilt."
+      isCorrect: false
+      explanation: "Azure Cosmos DB for NoSQL has no container schema to match against, and the indexing policy indexes properties regardless of their type. Nothing about the index causes these items to be skipped."
+    - content: "Comparisons don't coerce across types, so a string value never satisfies a numeric comparison and the item silently fails the filter."
+      isCorrect: true
+      explanation: "The comparison doesn't evaluate to true or false, so the item drops out of the result set with no error. The same silent behavior occurs when a property is missing entirely and evaluates to undefined."
+    - content: "String values are compared lexically, so `\"63.50\"` sorts after `100` and falls outside the filter range."
+      isCorrect: false
+      explanation: "The service evaluates the comparison. If the values use different data types, the result is undefined instead of true or false. The item then fails the filter. The service doesn't compare the item's order with the number."
+  - content: "A promotions page needs the list of products that carry a specific tag. Each product appears exactly once, and products in the category that have no tags at all are irrelevant. Which construct fits?"
+    choices:
+    - content: "A `JOIN` over the `tags` array with the tag name in the `WHERE` clause."
+      isCorrect: false
+      explanation: "A `JOIN` forms a cross-product and returns one result per matching array element. One matching tag and four nonmatching tags produce one final row, not five. If multiple elements match the requested tag, the product appears multiple times. `EXISTS` avoids that duplication."
+    - content: "An `ARRAY` expression that projects the matching tags alongside each product."
+      isCorrect: false
+      explanation: "An `ARRAY` expression shapes the output but doesn't filter items. Every product in the category is still returned, and products without the tag come back with an empty array rather than being excluded."
+    - content: "An `EXISTS` clause containing a correlated subquery over the `tags` array."
+      isCorrect: true
+      explanation: "EXISTS returns true as soon as the subquery produces one result, so each product appears exactly once regardless of how many tags match. Products with no matching tag are filtered out."
+  - content: "A developer sets `MaxItemCount` to 20 and stops reading when a page returns 14 items, assuming the result set is exhausted. Users report that products are missing from the catalog. What's wrong with the assumption?"
+    choices:
+    - content: "`MaxItemCount` is a ceiling rather than a guarantee, so a short or even empty page can be returned while more results remain."
+      isCorrect: true
+      explanation: "The service might return a smaller page if the response is too large or the operation takes too long. It might also return a smaller page if the container is throttled or fewer results improve efficiency. Only the iterator, through `HasMoreResults` in .NET or the end of the page iterator in Python, indicates that a query is finished."
+    - content: "`MaxItemCount` applies per physical partition, so the total page size is the value multiplied by the partition count."
+      isCorrect: false
+      explanation: "`MaxItemCount` caps the items returned in a single response to the client, not per partition. Misreading it this way would predict pages larger than 20, which is the opposite of the reported behavior."
+    - content: "The page was truncated because the projection returned fewer properties than the query requested."
+      isCorrect: false
+      explanation: "Projection size can affect how many items fit in a response. However, a short page doesn't mean the service drops matching items or fails to return requested properties. More results can remain, so the developer must continue reading until the iterator is exhausted."
+  - content: "A catalog service serves sequential pages of a long, filtered result set through a stateless HTTP API. Requests for later pages are noticeably more expensive than requests for early ones, and the query uses `OFFSET` and `LIMIT`. What change addresses the cost curve?"
+    choices:
+    - content: "Add `ORDER BY` on an indexed property so the engine can seek directly to the requested offset."
+      isCorrect: false
+      explanation: "`ORDER BY` changes the order in which results are produced, but the engine still processes the items ahead of the offset. An index seek finds a key value, not an arbitrary result position. Sorting doesn't remove the skipped-item cost."
+    - content: "Return the continuation token with each page and pass it back on the next request."
+      isCorrect: true
+      explanation: "A continuation token records the query's progress, so each request resumes without repeating the work of skipping earlier results. The request still consumes request units for index and document processing. `OFFSET` repeats the skipped-item work on every request, which is why deep pages cost progressively more."
+    - content: "Reduce `MaxItemCount` so each request returns fewer items and costs fewer request units."
+      isCorrect: false
+      explanation: "Lowering the page size caps response size but doesn't remove the skipped-item cost that `OFFSET` incurs. Serving the same range in smaller pages means more requests, each still paying to skip everything ahead of its offset."

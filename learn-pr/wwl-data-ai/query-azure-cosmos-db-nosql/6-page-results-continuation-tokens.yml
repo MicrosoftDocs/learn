@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-nosql.page-results-continuation-tokens
+title: Page results with continuation tokens
+metadata:
+  title: Page Results with Continuation Tokens
+  description: "Control page size, drain a query iterator correctly, resume a query across stateless requests with continuation tokens, and know where tokens and OFFSET paging fall short."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-page-results-continuation-tokens.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.configure-throughput-scope
+title: Configure database- and container-level throughput
+metadata:
+  title: Configure database- and container-level throughput
+  description: "Provision shared database throughput or dedicated container throughput in the portal and with the SDK, weighing cost against isolation."
+  ms.date: 09/30/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-configure-throughput-scope.md)]

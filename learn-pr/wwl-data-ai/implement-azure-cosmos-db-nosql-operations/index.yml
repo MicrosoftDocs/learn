@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.implement-azure-cosmos-db-nosql-operations
+metadata:
+  title: Implement Azure Cosmos DB Operations with the SDK
+  description: "Read and write data in Azure Cosmos DB for NoSQL with the SDK for .NET and Python: point reads, create, replace, upsert, delete, partial document patch, item time to live, optimistic concurrency, transactional batch, and bulk operations."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Implement Azure Cosmos DB operations with the SDK
+summary: Read and write data with the Azure Cosmos DB for NoSQL SDK. Use point reads and the create, replace, upsert, and delete operations. Apply partial document patch, item time to live, optimistic concurrency, transactional batch, and bulk operations. Build correct, efficient data layers in C# and Python.
+abstract: |
+  After completing this module, you're able to:
+  - Perform point read operations and create, replace, update, patch, and delete items.
+  - Configure item time to live and implement optimistic concurrency control.
+  - Implement transactional batch and bulk operations.
+prerequisites: |
+  - A configured Azure Cosmos DB SDK connection, or completion of the module on connecting to Azure Cosmos DB with the SDK
+  - Programming experience with C# or Python
+  - Familiarity with Azure Cosmos DB accounts, databases, containers, items, and partition keys
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- cloud-computing
+- databases
+units:
+- learn.wwl.implement-azure-cosmos-db-nosql-operations.introduction
+- learn.wwl.implement-azure-cosmos-db-nosql-operations.perform-point-reads
+- learn.wwl.implement-azure-cosmos-db-nosql-operations.create-replace-upsert-delete
+- learn.wwl.implement-azure-cosmos-db-nosql-operations.update-with-patch
+- learn.wwl.implement-azure-cosmos-db-nosql-operations.configure-item-ttl
+- learn.wwl.implement-azure-cosmos-db-nosql-operations.implement-optimistic-concurrency
+- learn.wwl.implement-azure-cosmos-db-nosql-operations.execute-transactional-batch
+- learn.wwl.implement-azure-cosmos-db-nosql-operations.process-bulk-operations
+- learn.wwl.implement-azure-cosmos-db-nosql-operations.exercise-implement-data-operations
+- learn.wwl.implement-azure-cosmos-db-nosql-operations.knowledge-check
+- learn.wwl.implement-azure-cosmos-db-nosql-operations.summary
+badge:
+  uid: learn.wwl.implement-azure-cosmos-db-nosql-operations.badge

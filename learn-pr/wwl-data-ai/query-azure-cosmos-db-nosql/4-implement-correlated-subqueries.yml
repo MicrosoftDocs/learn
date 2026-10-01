@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-nosql.implement-correlated-subqueries
+title: Implement correlated subqueries
+metadata:
+  title: Implement Correlated Subqueries
+  description: "Query nested arrays with correlated subqueries, filter items with EXISTS, test membership with ARRAY_CONTAINS, project trimmed arrays with ARRAY expressions, and use indexed outer filters to control cost."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-implement-correlated-subqueries.md)]

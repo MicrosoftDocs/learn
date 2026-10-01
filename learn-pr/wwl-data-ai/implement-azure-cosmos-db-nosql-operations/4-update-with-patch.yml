@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-cosmos-db-nosql-operations.update-with-patch
+title: Update items with partial document patch
+metadata:
+  title: Update Items with Partial Document Patch
+  description: "Apply partial updates with patch operations, use conditional patch with a filter predicate, and decide between patch and a full replace."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-update-with-patch.md)]

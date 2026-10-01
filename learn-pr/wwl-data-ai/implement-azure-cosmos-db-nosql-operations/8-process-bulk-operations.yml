@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-cosmos-db-nosql-operations.process-bulk-operations
+title: Process bulk operations
+metadata:
+  title: Process Bulk Operations
+  description: "Run high-throughput independent writes with bulk execution in .NET and concurrent async operations in Python, and manage throttling during ingest."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/8-process-bulk-operations.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency.choose-throughput-model
+title: Choose a throughput model
+metadata:
+  title: Choose a throughput model
+  description: "Choose between provisioned and serverless, and between standard and autoscale throughput, based on a workload's traffic pattern."
+  ms.date: 09/30/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-choose-throughput-model.md)]

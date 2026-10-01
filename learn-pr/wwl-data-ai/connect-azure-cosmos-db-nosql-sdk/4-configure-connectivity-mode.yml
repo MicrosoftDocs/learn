@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-azure-cosmos-db-nosql-sdk.configure-connectivity-mode
+title: Configure connectivity mode and settings
+metadata:
+  title: Configure connectivity mode and settings
+  description: "Compare gateway and direct connectivity modes and configure CosmosClientOptions for timeouts, retries, and preferred regions."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-configure-connectivity-mode.md)]
