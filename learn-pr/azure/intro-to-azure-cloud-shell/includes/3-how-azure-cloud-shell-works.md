@@ -59,11 +59,11 @@ Here’s a list of all add-ons available to you within a Cloud Shell session:
 
 | Category | Name |
 |---|---|
-| **Linux tools** | bash<br>zsh<br>sh<br>tmux<br>dig |
-| **Azure tools** | [Azure CLI](/cli/azure/)<br>AzCopy<br>Azure Functions CLI<br>Service Fabric CLI<br>Batch Shipyard<br>blobxfer |
-| **Text editors** | code (Cloud Shell editor)<br>vim<br>nano<br>emacs |
-| **Source control** | git |
-| **Build tools** | make<br>maven<br>npm<br>pip |
-| **Containers** | Docker Machine<br>Kubectl<br>Helm<br>DC/OS CLI |
-| **Databases** | MySQL client<br>PostgreSql client<br>sqlcmd Utility<br>mssql-scripter |
-| **Other** | iPython Client<br>Cloud Foundry CLI<br>Terraform<br>Ansible<br>Chef InSpec<br>Puppet Bolt<br>HashiCorp Packer<br>Office 365 CLI |
+| **Linux tools** | `bash`<br>`zsh`<br>`sh`<br>`tmux`<br>`dig` |
+| **Azure tools** | [`Azure CLI`](/cli/azure/)<br>`AzCopy`<br>`Azure Functions CLI`<br>`Service Fabric CLI`<br>`Batch Shipyard`<br>`blobxfer` |
+| **Text editors** | `code (Cloud Shell editor)`<br>`vim`<br>`nano`<br>`emacs` |
+| **Source control** | `git` |
+| **Build tools** | `make`<br>`maven`<br>`npm`<br>`pip` |
+| **Containers** | `Docker Machine`<br>`Kubectl`<br>`Helm`<br>`DC/OS CLI` |
+| **Databases** | `MySQL client`<br>`PostgreSql client`<br>`sqlcmd Utility`<br>`mssql-scripter` |
+| **Other** | `iPython Client`<br>`Cloud Foundry CLI`<br>`Terraform`<br>`Ansible`<br>`Chef InSpec`<br>`Puppet Bolt`<br>`HashiCorp Packer`<br>`Office 365 CLI` |
