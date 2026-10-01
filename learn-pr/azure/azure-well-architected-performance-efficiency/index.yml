@@ -4,8 +4,8 @@ metadata:
   title: 'Microsoft Azure Well-Architected Framework - Performance Efficiency'
   description: Learn how to optimize your workload to meet performance requirements while balancing costs, reliability, and security.
   ms.date: 05/28/2025
-  author: PageWriter-MSFT
-  ms.author: prwilk
+  author: Rob-Barefoot
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure-waf
 title: 'Microsoft Azure Well-Architected Framework - Performance Efficiency'
