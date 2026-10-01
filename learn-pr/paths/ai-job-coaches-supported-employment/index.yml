@@ -22,10 +22,13 @@ summary: |
   - Protect privacy and security, seek consent, check for bias, and recognize when not to use AI at all.
   - Build a repeatable workflow and a prompt library that records permitted inputs and required review checks.
 
+  *For information on definitions and terminology related to Supported Employment, please review the [Supported Employment Glossary](https://aka.ms/SupportedEmploymentGlossary).*
+  
   This course was developed in collaboration with:
   - British Association for Supported Employment (BASE)
   - Policy Connect
   - Washington Initiative for Supported Employment (WISE)
+  
 prerequisites: |
   - Working knowledge of supported employment practice and the job coach role.
   - Access to an organization-approved AI tool, such as Microsoft Copilot, to try the example prompts.

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.microsoft-ai-code
+metadata:
+  title: Use a Microsoft AI Code model for AI-assisted coding
+  description: Learn how Microsoft AI Code models support AI-assisted software development and how to use an MAI-Code model in coding tools.
+  ms.date: 09/30/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
+  ms.service: artificial-intelligence
+title: Use a Microsoft AI Code model for AI-assisted coding
+summary: Learn how to select and use an MAI-Code model to plan, generate, explain, and improve code with AI-assisted coding tools.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe the capabilities of Microsoft AI Code models.
+  - Identify software development tasks that are well suited to an MAI-Code model.
+  - Select an MAI-Code model in Microsoft Copilot Code and GitHub Copilot.
+  - Apply effective prompting and validation practices when generating code.
+prerequisites: |
+  Before starting this module, you should have:
+  - Familiarity with software development concepts.
+  - Experience using a code editor or integrated development environment.
+  - Access to an AI-assisted coding tool that offers an MAI-Code model.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - ai-engineer
+products:
+  - foundry-models
+subjects:
+  - artificial-intelligence
+units:
+  - learn.wwl.microsoft-ai-code.introduction
+  - learn.wwl.microsoft-ai-code.get-to-know
+  - learn.wwl.microsoft-ai-code.generate-code
+  - learn.wwl.microsoft-ai-code.exercise
+  - learn.wwl.microsoft-ai-code.knowledge-check
+  - learn.wwl.microsoft-ai-code.summary
+badge:
+  uid: learn.wwl.microsoft-ai-code.badge
