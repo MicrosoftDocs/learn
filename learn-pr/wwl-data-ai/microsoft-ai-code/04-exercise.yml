@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-ai-code.exercise
+title: Exercise - Use a Microsoft AI Code model to generate an application
+metadata:
+  title: Exercise - Use a Microsoft AI Code model to generate an application
+  description: Use an MAI-Code model to generate and validate an application.
+  ms.date: 09/30/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/04-exercise.md)]

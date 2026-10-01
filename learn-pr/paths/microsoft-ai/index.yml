@@ -3,7 +3,7 @@ uid: learn.wwl.microsoft-ai
 metadata:
   title: Introduction to Microsoft AI models
   description: Learn how Microsoft AI (MAI) models work and how to use them in your applications.
-  ms.date: 09/21/2026
+  ms.date: 09/30/2026
   author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: learning-path
@@ -11,6 +11,7 @@ title: Introduction to Microsoft AI models
 prerequisites: |
   Familiarity with generative AI concepts.
   Experience with Microsoft Foundry.
+  Familiarity with AI-assisted coding tools and concepts.
 summary: |
   Learn how Microsoft AI (MAI) models work and how to use them in your applications.
 iconUrl: /training/achievements/generic-badge.svg
@@ -23,10 +24,13 @@ roles:
   - data-scientist
 products:
   - microsoft-foundry
+  - github-copilot
+  - microsoft-365-copilot
 subjects:
   - artificial-intelligence
 modules:
   - learn.wwl.microsoft-ai-models
   - learn.wwl.microsoft-ai-in-foundry
+  - learn.wwl.microsoft-ai-code
 trophy:
   uid: learn.wwl.microsoft-ai.trophy
