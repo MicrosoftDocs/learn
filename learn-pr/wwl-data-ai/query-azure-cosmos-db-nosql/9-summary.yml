@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-nosql.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Review query construction, projection, correlated subqueries, cross-product queries, and continuation-token paging, and find resources for further learning."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]

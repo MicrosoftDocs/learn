@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.query-azure-cosmos-db-nosql
+metadata:
+  title: Query Data in Azure Cosmos DB for NoSQL
+  description: "Author Azure Cosmos DB for NoSQL queries with the SDK for .NET and Python: parameterized queries, projections, built-in functions, correlated subqueries, cross-product queries, and continuation-token paging."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Query data in Azure Cosmos DB for NoSQL
+summary: Author Azure Cosmos DB for NoSQL queries using parameters, projections, and built-in functions, reach into nested data with correlated subqueries and cross-product queries, and page large result sets with continuation tokens in C# and Python.
+abstract: |
+  After completing this module, you're able to:
+  - Create and execute parameterized queries, project results, and use built-in functions.
+  - Implement correlated subqueries and cross-product queries.
+  - Page query results using continuation tokens.
+prerequisites: |
+  - A configured Azure Cosmos DB SDK connection, or completion of the module on connecting to Azure Cosmos DB with the SDK
+  - Programming experience with C# or Python
+  - Familiarity with Azure Cosmos DB accounts, databases, containers, items, and partition keys
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- cloud-computing
+- databases
+units:
+- learn.wwl.query-azure-cosmos-db-nosql.introduction
+- learn.wwl.query-azure-cosmos-db-nosql.understand-sql-query-language
+- learn.wwl.query-azure-cosmos-db-nosql.create-execute-queries
+- learn.wwl.query-azure-cosmos-db-nosql.implement-correlated-subqueries
+- learn.wwl.query-azure-cosmos-db-nosql.create-cross-product-queries
+- learn.wwl.query-azure-cosmos-db-nosql.page-results-continuation-tokens
+- learn.wwl.query-azure-cosmos-db-nosql.exercise-author-page-queries
+- learn.wwl.query-azure-cosmos-db-nosql.knowledge-check
+- learn.wwl.query-azure-cosmos-db-nosql.summary
+badge:
+  uid: learn.wwl.query-azure-cosmos-db-nosql.badge

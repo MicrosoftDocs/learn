@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-nosql.create-execute-queries
+title: Create and execute queries
+metadata:
+  title: Create and Execute Queries
+  description: "Write parameterized queries, project results with aliases, object literals, VALUE, and DISTINCT, apply built-in functions, and execute queries with the SDK for .NET and Python."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-create-execute-queries.md)]
