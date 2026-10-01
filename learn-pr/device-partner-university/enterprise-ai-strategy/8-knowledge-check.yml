@@ -1,0 +1,90 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.enterprise-ai-strategy.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Check your knowledge of AI agent governance concepts, including identity, containment, management, and the relationship between governance controls and execution environments.
+  ms.date: 09/30/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "An AI agent can access a business application and update records on behalf of a user. What makes this different from an AI experience that only generates a response?"
+    choices:
+    - content: "The agent always requires a separate physical device."
+      isCorrect: false
+      explanation: "Incorrect. Agents don't require dedicated physical devices. They can operate across different environments depending on how they're deployed."
+    - content: "The agent can use its access to perform actions."
+      isCorrect: true
+      explanation: "Correct. AI agents can interact with applications, use tools, and perform tasks on behalf of users. This creates a need to govern both access and actions."
+    - content: "The agent can't interact with business data."
+      isCorrect: false
+      explanation: "Incorrect. Agents often need access to business data to perform their assigned tasks."
+    - content: "The agent only operates when a security administrator is present."
+      isCorrect: false
+      explanation: "Incorrect. Agent operation doesn't depend on direct supervision by a security administrator."
+
+  - content: "An organization wants to establish a governance approach for an AI agent. Which three areas does the resource identify as the foundation of the governance model?"
+    choices:
+    - content: "Hardware, licensing, and procurement"
+      isCorrect: false
+      explanation: "Incorrect. These considerations can support AI adoption, but they aren't the foundation of the governance model described in the module."
+    - content: "Development, marketing, and deployment"
+      isCorrect: false
+      explanation: "Incorrect. These are business and operational activities, not the governance framework discussed in the module."
+    - content: "Authentication, productivity, and device refresh"
+      isCorrect: false
+      explanation: "Incorrect. While authentication and device planning are important, they aren't the three core governance areas identified in the module."
+    - content: "Identity, containment, and management"
+      isCorrect: true
+      explanation: "Correct. Identity establishes how an agent is identified and what it can access. Containment limits where and how it operates. Management provides visibility, policy, monitoring, and audit capabilities."
+
+  - content: "A security operations agent can investigate threats, modify configurations, and execute response actions. Why might this workload require stronger containment than a marketing research agent?"
+    choices:
+    - content: "Security agents don't require an identity."
+      isCorrect: false
+      explanation: "Incorrect. Security agents still require identity controls so their activity can be governed, monitored, and audited."
+    - content: "Marketing agents can't be governed."
+      isCorrect: false
+      explanation: "Incorrect. All agents can be governed. The difference is that some workloads require stronger controls than others."
+    - content: "It has a greater potential impact if it behaves unexpectedly."
+      isCorrect: true
+      explanation: "Correct. Containment should reflect an agent's capabilities, access, and potential impact. Workloads that can affect security operations or critical systems may require stronger isolation."
+    - content: "Security agents always require a physical server."
+      isCorrect: false
+      explanation: "Incorrect. The need for stronger containment is related to risk and impact, not a requirement for dedicated hardware."
+
+  - content: "Which statement best describes the relationship between the control plane and Windows execution layer?"
+    choices:
+    - content: "Windows replaces the control plane."
+      isCorrect: false
+      explanation: "Incorrect. The control plane and execution layer serve different purposes and work together as part of the governance model."
+    - content: "The control plane is only used to review agents after they finish their work."
+      isCorrect: false
+      explanation: "Incorrect. The control plane is used to define policies, manage identities, and monitor activity throughout the agent lifecycle."
+    - content: "The control plane establishes governance, while Windows provides the environment where agent activity occurs and policies can be enforced."
+      isCorrect: true
+      explanation: "Correct. The control plane provides centralized governance, visibility, and policy management, while Windows serves as the environment where agent workloads operate within those controls."
+    - content: "Windows is responsible for registering every agent in the organization."
+      isCorrect: false
+      explanation: "Incorrect. Agent discovery, governance, and visibility are functions of the control plane, not the Windows execution layer."
+
+  - content: "An organization discovers several AI agents already operating across different business units. What should it do first when building an agent-ready strategy?"
+    choices:
+    - content: "Purchase Copilot+ PCs for all employees."
+      isCorrect: false
+      explanation: "Incorrect. Hardware decisions should be based on workload requirements and the organization's AI roadmap. Visibility into existing agents should come first."
+    - content: "Audit existing agents and their access."
+      isCorrect: true
+      explanation: "Correct. Organizations should first establish visibility into which agents already exist, who owns them, and what systems and data they can access. This creates the baseline needed to identify governance gaps and make informed decisions."
+    - content: "Deploy additional agents and monitor their activity."
+      isCorrect: false
+      explanation: "Incorrect. Expanding agent adoption before understanding the current environment can increase governance risks. Organizations should first identify existing agents and their access."
+    - content: "Define governance requirements for future agents before understanding the current environment."
+      isCorrect: false
+      explanation: "Incorrect. Governance requirements are most effective when informed by an organization's existing agent landscape. Auditing helps identify risks, ownership gaps, and access patterns before standards are established."

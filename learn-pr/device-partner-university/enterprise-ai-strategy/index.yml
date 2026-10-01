@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.enterprise-ai-strategy
+title: Prepare an enterprise governance strategy for AI agents
+metadata:
+  title: Prepare An Enterprise Governance Strategy For AI Agents
+  description: In this module, you'll explore how AI agents change enterprise security and management requirements, and learn how identity, containment, and management support agent governance. You'll also evaluate governance controls based on agent risk and apply the Audit, Define, Refresh framework to build an agent-ready strategy.
+  ms.date: 09/30/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Learn how AI agents change enterprise security and management needs and how to develop a governance strategy that supports secure AI adoption at scale.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain how AI agents introduce a new need for enterprise governance strategies.
+  - Describe how identity, containment, and management support agent governance.
+  - Determine appropriate controls based on an agent's capabilities, access, and potential impact.
+  - Identify the key steps of the Audit, Define, Refresh framework for building an agent-ready strategy.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/enterprise-ai-strategy.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.enterprise-ai-strategy.introduction
+  - learn.dpu.enterprise-ai-strategy.understand-change
+  - learn.dpu.enterprise-ai-strategy.why-agent-governance
+  - learn.dpu.enterprise-ai-strategy.governance-model
+  - learn.dpu.enterprise-ai-strategy.match-controls-risk
+  - learn.dpu.enterprise-ai-strategy.governance-enforced
+  - learn.dpu.enterprise-ai-strategy.agent-ready-strategy
+  - learn.dpu.enterprise-ai-strategy.knowledge-check
+  - learn.dpu.enterprise-ai-strategy.summary
+badge:
+  uid: learn.dpu.enterprise-ai-strategy.badge

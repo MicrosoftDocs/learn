@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.enterprise-ai-strategy.match-controls-risk
+title: Match governance controls to agent risk
+metadata:
+  title: Match Governance Controls to Agent Risk
+  description: This content is part of the "Prepare an enterprise governance strategy for AI agents" module.
+  ms.date: 09/30/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-match-controls-risk.md)]
