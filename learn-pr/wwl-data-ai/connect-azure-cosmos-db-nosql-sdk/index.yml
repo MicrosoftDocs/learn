@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.connect-azure-cosmos-db-nosql-sdk
+metadata:
+  title: Connect to Azure Cosmos DB with the SDK
+  description: "Initialize and configure the Azure Cosmos DB SDK for .NET and Python. Connect with a client singleton and tune connectivity mode. Enable offline development, and handle connection errors to build reliable data access."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Connect to Azure Cosmos DB with the SDK
+summary: "Initialize and configure the Azure Cosmos DB SDK for .NET and Python. Connect with a client singleton and tune connectivity mode. Enable offline development, and handle connection errors to build reliable data access."
+abstract: |
+  After completing this module, you're able to:
+  - Integrate the SDK and connect to an Azure Cosmos DB account using a singleton client.
+  - Configure connectivity mode and enable offline development with the emulator.
+  - Diagnose connection errors and configure logging and parallelism.
+prerequisites: |
+  - An Azure Cosmos DB for NoSQL account, or completion of the module on exploring Azure Cosmos DB for NoSQL
+  - Experience building cloud applications with C# or Python
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- cloud-computing
+- databases
+units:
+- learn.wwl.connect-azure-cosmos-db-nosql-sdk.introduction
+- learn.wwl.connect-azure-cosmos-db-nosql-sdk.understand-import-sdk
+- learn.wwl.connect-azure-cosmos-db-nosql-sdk.connect-client-singleton
+- learn.wwl.connect-azure-cosmos-db-nosql-sdk.configure-connectivity-mode
+- learn.wwl.connect-azure-cosmos-db-nosql-sdk.enable-offline-development-emulator
+- learn.wwl.connect-azure-cosmos-db-nosql-sdk.handle-errors-logging-parallelism
+- learn.wwl.connect-azure-cosmos-db-nosql-sdk.exercise-connect-app
+- learn.wwl.connect-azure-cosmos-db-nosql-sdk.knowledge-check
+- learn.wwl.connect-azure-cosmos-db-nosql-sdk.summary
+badge:
+  uid: learn.wwl.connect-azure-cosmos-db-nosql-sdk.badge

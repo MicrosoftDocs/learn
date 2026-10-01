@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-azure-cosmos-db-nosql-sdk.exercise-connect-app
+title: Exercise - Connect an app to Azure Cosmos DB
+metadata:
+  title: Exercise - Connect an app to Azure Cosmos DB
+  description: "Import the SDK, create a singleton client, run against the emulator, switch to a cloud account, and add basic logging and error handling."
+  ms.date: 10/01/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+labModal: true
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-connect-app.md)]
