@@ -5,8 +5,8 @@ metadata:
   title: Design for resilience
   description: Learn how to design your workload to be resilient to malfunction, platform outages, performance degradations and other faults.
   ms.date: 05/15/2025
-  author: PageWriter-MSFT
-  ms.author: prwilk
+  author: Rob-Barefoot
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 20
 content: |

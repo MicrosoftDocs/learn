@@ -5,8 +5,8 @@ metadata:
   title: Design to protect availability
   description: Learn how use security controls to protect your workload's availability.
   ms.date: 07/07/2025
-  author: PageWriter-MSFT
-  ms.author: prwilk
+  author: Rob-Barefoot
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 10
 content: |

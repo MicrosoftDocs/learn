@@ -5,8 +5,8 @@ metadata:
   title: Design to protect integrity
   description: Learn how to employ strategies to protect the integrity of the data and resources within your workload.
   ms.date: 07/07/2025
-  author: PageWriter-MSFT
-  ms.author: prwilk
+  author: Rob-Barefoot
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 10
 content: |

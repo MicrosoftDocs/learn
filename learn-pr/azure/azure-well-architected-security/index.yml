@@ -4,8 +4,8 @@ metadata:
   title: Microsoft Azure Well-Architected Framework - Security
   description: Discover the tools that Azure provides to help you design a secure environment throughout your infrastructure, data, network, and applications.
   ms.date: 07/07/2025
-  author: PageWriter-MSFT
-  ms.author: prwilk
+  author: Rob-Barefoot
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure-waf
   ms.subservice: waf-pillar-security

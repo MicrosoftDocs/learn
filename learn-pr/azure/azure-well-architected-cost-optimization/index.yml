@@ -4,8 +4,8 @@ metadata:
   title: Microsoft Azure Well-Architected Framework - Cost Optimization
   description: Apply cost optimization guidance in your architecture to sustain and improve your return on investment (ROI).
   ms.date: 07/07/2025
-  author: PageWriter-MSFT
-  ms.author: prwilk
+  author: Rob-Barefoot
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: azure-waf
 title: Microsoft Azure Well-Architected Framework - Cost Optimization
