@@ -40,7 +40,7 @@ You can identify a workflow trigger event in multiple ways:
   - You can print the information in a step for debugging:
 
     ```yml
-    -name: Show event trigger
+    - name: Show event trigger
       run: echo "Triggered by ${{ github.event_name }}"
     ```
 
@@ -285,24 +285,34 @@ For more information about using artifacts in workflows, see [Storing workflow d
 
 ## Automate reviews in GitHub by using workflows
 
-In addition to starting a workflow via GitHub events like `push` and `pull-request`, you can run a workflow on a schedule or after some event outside GitHub.
+Use `pull_request_review` to add an `approved` label when a reviewer approves a pull request. This example uses the GitHub CLI, which is preinstalled on GitHub-hosted Ubuntu runners.
 
-You might want a workflow to run only after a user completes a specific action, such as after a reviewer approves a pull request. For this scenario, you can trigger on `pull-request-review`.
-
-Another action you can take is to add a label to the pull request. In this case, use the pullreminders/label-when-approved-action action.
-
-For example:
+Create an `approved` label and save this workflow as `.github/workflows/label-approved.yml` on the default branch. Test with a new pull request from a branch in the same repository, approved by another user. You can't approve your own pull request.
 
 ```yml
+name: Label approved pull requests
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  label-approved:
+    if: github.event.review.state == 'approved'
+    runs-on: ubuntu-latest
     steps:
-     - name: Label when approved
-       uses: pullreminders/label-when-approved-action@main
-       env:
-         APPROVALS: "1"
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-         ADD_LABEL: "approved"
+      - name: Add approved label
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: gh pr edit "$PR_NUMBER" --add-label approved --repo "$GITHUB_REPOSITORY"
 ```
 
-In the `env` block, you set the environment variables for the action. For example, you can set the number of approvers required to run the workflow. In this example, it's one. The `secrets.GITHUB_TOKEN` authentication variable is required because the action must make changes to your repository by adding a label. Finally, you enter the name of the label to add.
+The `if` condition runs the job only for approvals. `GH_TOKEN` authenticates the CLI, and `--repo` identifies the repository without a checkout. After another user approves the pull request, confirm that the `approved` label appears and check the run in the **Actions** tab. The label records one approval; it doesn't enforce review requirements or track dismissed approvals.
 
-Adding a label might be an event that starts another workflow, such as a merge. We cover this event in the next module, which describes using continuous delivery in GitHub Actions.
+> [!NOTE]
+> Adding a label with `GITHUB_TOKEN` doesn't trigger workflows listening for `pull_request` events of type `labeled`. To trigger those workflows, add the label using a GitHub App installation access token or a personal access token instead.
