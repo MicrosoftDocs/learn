@@ -31,8 +31,8 @@ Begin with a request that provides enough information for the agent to prepare a
 1. On the **Try it** tab, select **New chat** if a previous conversation is displayed.
 1. Enter the following request:
 
-```
-Prepare a meeting brief for Contoso Outdoor Equipment.
+    ```text
+    Prepare a meeting brief for Contoso Outdoor Equipment.
 
     The goal of the meeting is to discuss how the customer can improve productivity and security for its hybrid sales team.
 
@@ -42,7 +42,7 @@ Prepare a meeting brief for Contoso Outdoor Equipment.
     - Several employee devices are reaching the end of their lifecycle.
     - The IT team wants to simplify device deployment and management.
     - Leadership is concerned about protecting company information on remote devices.
-```
+    ```
 
 1. Submit the request.
 1. Review the response.
@@ -58,9 +58,9 @@ An effective agent should recognize when it doesn't have enough information to c
 1. On the **Try it** tab, select **New chat**.
 1. Enter the following request:
 
-```
-Help me prepare for a customer meeting.
-```
+    ``` text
+    Help me prepare for a customer meeting.
+    ```
 
 1. Submit the request.
 1. Review how the agent responds.
@@ -76,9 +76,9 @@ Testing an unrelated request helps you determine whether the agent remains focus
 1. Select **New chat**.
 1. Enter the following request:
 
-```
-Create a complete annual sales strategy for my organization.
-```
+    ``` text
+    Create a complete annual sales strategy for my organization.
+    ```
 
 1. Submit the request.
 1. Review the response.
@@ -93,8 +93,8 @@ Use what you observed during testing to make the agent's output more consistent.
 1. Select the **Describe** tab.
 1. Enter the following refinement:
 
-```
-Update the agent's instructions so every customer meeting preparation brief uses these headings in this order:
+    ``` text
+    Update the agent's instructions so every customer meeting preparation brief uses these headings in this order:
 
     1. Customer overview
     2. Meeting goal
@@ -105,7 +105,7 @@ Update the agent's instructions so every customer meeting preparation brief uses
     7. Missing information
 
     If information for a section isn't available, clearly state that more information is needed. Don't create or assume customer details that weren't provided by the user or found in the agent's approved knowledge sources.
-```
+    ```
 
 1. Submit the refinement.
 1. Review Agent Builder's response.
@@ -130,8 +130,8 @@ Repeat the original test to determine whether the updated instructions improved 
 1. Select **New chat**.
 1. Enter the following request:
 
-```
-Prepare a meeting brief for Contoso Outdoor Equipment.
+    ``` text
+    Prepare a meeting brief for Contoso Outdoor Equipment.
 
     The goal of the meeting is to discuss how the customer can improve productivity and security for its hybrid sales team.
 
@@ -141,7 +141,7 @@ Prepare a meeting brief for Contoso Outdoor Equipment.
     - Several employee devices are reaching the end of their lifecycle.
     - The IT team wants to simplify device deployment and management.
     - Leadership is concerned about protecting company information on remote devices.
-```
+    ```
 
 1. Submit the request.
 1. Compare the new response with the response from your first test.

@@ -95,8 +95,7 @@ Knowledge sources might include:
 - Approved websites or SharePoint content
 
 >[!IMPORTANT]
-> Don't enter sensitive, confidential, regulated, or personal customer information in an agent or prompt unless your organization has approved both the information and the selected environment for that use. Use only approved information sources, and follow your organization's data-handling policies.
-> Only add files, sites, and other knowledge sources that are approved for use by your organization. Don't add or manually enter sensitive customer information unless your organization has approved both the information and the selected environment for that use.
+> Don't enter sensitive, confidential, regulated, or personal customer information in an agent, prompt, or knowledge source unless your organization has approved both the information and the selected environment for that use. Use only approved files, sites, and other information sources, and follow your organization's data-handling policies.
 
 Review agent responses before using or sharing them, and test agents thoroughly before making them available to others.
 
@@ -115,4 +114,4 @@ You can now combine the scenario details into a simple agent plan. This plan wil
 
 Before moving forward, make sure you can describe your agent's job in one or two sentences. If the purpose includes several unrelated tasks, narrow it to the most important repeatable job.
 
-In the next unit, you'll use this plan to create the customer meeting preparation agent in Microsoft 365 Copilot Chat
+In the next unit, you'll use this plan to create the customer meeting preparation agent in Microsoft 365 Copilot Chat.
