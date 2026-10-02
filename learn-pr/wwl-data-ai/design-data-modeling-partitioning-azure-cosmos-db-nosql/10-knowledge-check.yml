@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Answer the following questions to check your understanding of access-pattern modeling. Review when to embed or reference data. Check your knowledge of partition key selection and common anti-patterns. The questions also cover hierarchical and synthetic keys."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "A subscription service stores a `subscriber` item with 40 static profile properties and a `lastSeenAt` timestamp that the application updates with a Replace operation on every page view. Page views are the highest-volume operation in the workload. What does the current model cost, and what fixes it?"
+    choices:
+    - content: "Every timestamp write replaces the entire item, so each page view pays the request unit charge for all 40 static properties. Split the volatile timestamp into a separate item."
+      isCorrect: true
+      explanation: "A Replace operation writes the full item, and its request charge scales with item size. When a small, frequently written value shares an item with a large, static body, each replacement also writes the static properties. The Patch API modifies selected paths and sends less data over the wire, but the request unit (RU) reduction isn't necessarily significant. Splitting the volatile property into a smaller item reduces the data involved in each replacement. Measure the write charge to confirm the savings."
+    - content: "The timestamp write conflicts with concurrent profile reads, so each page view waits for a read lock on the item."
+      isCorrect: false
+      explanation: "Reads in Azure Cosmos DB don't block writes and writes don't block reads. The problem here's the request charge of rewriting a large item, not contention."
+    - content: "The item exceeds the 2-megabyte (MB) item limit once the timestamp history accumulates, so writes eventually fail."
+      isCorrect: false
+      explanation: "A single timestamp property is overwritten rather than appended, so the item doesn't grow. Unbounded growth is a real anti-pattern, but it applies to arrays that accumulate entries, not to a scalar that's replaced."
+  - content: "An analytics team proposes denormalizing a product's current inventory count onto every item in an order history container, so a report avoids a second query. The count changes several times a minute. What's the strongest argument against it?"
+    choices:
+    - content: "Only the change feed can maintain denormalized values, and the change feed doesn't surface numeric properties."
+      isCorrect: false
+      explanation: "The change feed surfaces the whole changed item, including numeric properties. Nothing about the data type prevents the copy from being maintained."
+    - content: "Order history items are immutable once written, so Azure Cosmos DB rejects updates to them."
+      isCorrect: false
+      explanation: "Azure Cosmos DB has no notion of an immutable item; any item can be replaced or patched. Immutability here would be an application convention, not a service behavior, and it isn't the reason this copy is a bad idea."
+    - content: "Each inventory change fans out into a write against every item carrying the copy, so a value that changes several times a minute turns one write into a continuous stream of them."
+      isCorrect: true
+      explanation: "Denormalization trades write cost for read efficiency. It pays when the avoided read cost exceeds the cost of maintaining the copies. Frequent inventory changes across many history items can make maintenance expensive because that cost scales with both change frequency and the number of copies."
+  - content: "A ticketing container is partitioned on `/eventDate`. The catalog spans four years, so the property has well over a thousand distinct values. Under load, the container is rate limited at roughly a third of its provisioned throughput while average utilization stays low. What explains it?"
+    choices:
+    - content: "Date values sort lexically rather than chronologically, so the hash function distributes them unevenly across physical partitions."
+      isCorrect: false
+      explanation: "Azure Cosmos DB hashes the partition key value and allocates the hash space evenly, so the ordering or format of the value has no bearing on placement. The skew comes from where the traffic goes, not from how the values sort."
+    - content: "Cardinality is measured across the whole history, but at any given moment nearly all writes target the current date, so one logical partition absorbs the traffic while the rest sit idle."
+      isCorrect: true
+      explanation: "A monotonically increasing key accumulates distinct values over time, which makes the cardinality criterion look satisfied in review. The criterion that fails is even distribution of requests, because the active value at any moment is a single date. Provisioned throughput divides evenly across physical partitions, so a container concentrating traffic on one is limited to that partition's share."
+    - content: "The container has too few physical partitions for its provisioned throughput, so adding throughput resolves the rate limiting."
+      isCorrect: false
+      explanation: "Low average utilization alongside concentrated current-date traffic indicates skew, not simply too few physical partitions. Increasing throughput can temporarily help if the busy partition receives less than 10,000 request units per second (RU/s), and it doesn't always require new partitions. It can't raise one logical partition's maximum above 10,000 RU/s or remove the underlying concentration of writes on one date."
+  - content: "A telemetry container uses a hierarchical partition key of `/tenantId`, `/deviceId`, `/id`. A new dashboard queries `SELECT * FROM c WHERE c.deviceId = @device`. The query is far more expensive than the team expected. Why?"
+    choices:
+    - content: "Hierarchical keys support routing only when all three levels appear in the filter, so any partial filter fans out."
+      isCorrect: false
+      explanation: "A prefix filter routes efficiently. Naming the tenant alone reaches only the partitions holding that tenant's data, which is a central benefit of subpartitioning. The problem is the missing first level, not the missing third."
+    - content: "The `/id` level makes each logical partition hold exactly one item, so any query has to read every logical partition individually."
+      isCorrect: false
+      explanation: "Using the item identifier as the final level does produce single-item logical partitions, which is exactly why it guarantees the full key never approaches 20 gigabytes (GB). Queries are routed by physical partition, and a routable prefix still reaches only the relevant subset."
+    - content: "Filtering on the second level without the first provides no routable prefix, so the query fans out to every physical partition."
+      isCorrect: true
+      explanation: "Routing works on a leading run of the hierarchy. A filter on the tenant, or on both the tenant and device, targets only a subset of partitions. If the filter omits the first partition key level, the query engine cannot target specific partitions. The query then behaves as if the container did not use subpartitions."
+  - content: "A platform hosts 8,000 tenants of broadly similar size in one container, and per-tenant queries dominate the workload. A second platform hosts 12 tenants whose writes arrive in heavy bursts, and reads are point reads by item identifier. Which partitioning approach fits each?"
+    choices:
+    - content: "The first platform suits a hierarchical key rooted at the tenant identifier; the second suits a synthetic key or the item identifier."
+      isCorrect: true
+      explanation: "Hierarchical keys need high first-level cardinality and similar usage per value, which 8,000 comparable, query-scoped tenants provide. The workload has only 12 tenants, and writes occur in bursts. A tenant identifier can't distribute this load evenly. Use a synthetic key or the item identifier to distribute writes. Point reads do not benefit from the routing provided by a hierarchical partition key."
+    - content: "Both should use a hierarchical key rooted at the tenant identifier, since both isolate data by tenant."
+      isCorrect: false
+      explanation: "Hierarchical keys colocate all items sharing a first-level value on the same physical partition until it splits. With 12 tenants, those keys concentrate burst ingestion on a handful of partitions, which is the opposite of what a write-heavy workload needs."
+    - content: "The first platform suits a synthetic key combining tenant and date; the second suits a hierarchical key rooted at the tenant identifier."
+      isCorrect: false
+      explanation: "This reverses both choices. A synthetic key on the first platform would break the tenant-scoped query routing that already works, and a hierarchical key on the second would concentrate bursts on the few partitions holding each tenant's data."

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.select-partition-key
+title: Select a partition key
+metadata:
+  title: Select a Partition Key
+  description: "Evaluate partition key candidates against cardinality, storage and request distribution, query routing, and immutability, and understand what changing a key later costs."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-select-partition-key.md)]

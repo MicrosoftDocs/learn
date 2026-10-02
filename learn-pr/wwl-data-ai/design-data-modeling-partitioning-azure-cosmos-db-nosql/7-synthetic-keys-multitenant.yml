@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.synthetic-keys-multitenant
+title: Implement synthetic keys and multitenant partitioning
+metadata:
+  title: Implement Synthetic Keys and Multitenant Partitioning
+  description: "Construct synthetic partition keys with concatenation and stable precalculated suffixes, and apply container-level multitenant partitioning without starving smaller tenants."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-synthetic-keys-multitenant.md)]
