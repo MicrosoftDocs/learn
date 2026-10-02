@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-azure-horizondb.exercise-create-connect-cluster
+title: 'Exercise: Create and connect to an Azure HorizonDB cluster'
+metadata:
+  title: 'Exercise: Create and connect to an Azure HorizonDB cluster'
+  description: "Create your first Azure HorizonDB cluster in the Azure portal, configure client access, and connect with psql from Azure Cloud Shell to run a query."
+  ms.date: 09/29/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/5-exercise-create-connect-cluster.md)]

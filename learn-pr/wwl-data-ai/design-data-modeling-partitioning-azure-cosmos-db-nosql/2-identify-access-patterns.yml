@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.identify-access-patterns
+title: Identify aggregate boundaries and access patterns
+metadata:
+  title: Identify Access Patterns for Your Data
+  description: "Build an access-pattern inventory that records operation type, frequency, filters, and result shape, and use it to drive every modeling and partitioning decision."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-identify-access-patterns.md)]

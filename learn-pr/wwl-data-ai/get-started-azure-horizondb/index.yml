@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-azure-horizondb
+metadata:
+  title: Get started with Azure HorizonDB
+  description: "Learn what Azure HorizonDB is, how its disaggregated compute-and-storage and database-as-a-log architecture works, and when to use this AI-ready, PostgreSQL-compatible database service for transactional, AI, and read-scale workloads."
+  ms.date: 09/29/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: module-intro-to-product
+  ms.service: azure-horizondb
+  ai-usage: ai-assisted
+title: Get started with Azure HorizonDB
+summary: Learn what Azure HorizonDB is and when to use it. Explore how its disaggregated compute-and-storage, database-as-a-log architecture delivers predictable performance, high availability, and elastic scale for transactional, AI, and large read-scale workloads on a fully managed, PostgreSQL-compatible platform.
+abstract: |
+  By the end of this module, you're able to:
+  - Describe what Azure HorizonDB is and the mission-critical workloads it's designed for.
+  - Explain how the disaggregated compute-and-storage and database-as-a-log architecture delivers predictable performance and high availability.
+  - Identify the core components of an Azure HorizonDB cluster, including compute replicas, WAL and data storage fleets, and zone-resilient blob storage.
+  - Evaluate when Azure HorizonDB is the right choice for transactional, AI, and large-scale read workloads.
+  - Create an Azure HorizonDB cluster in the Azure portal and connect to it to run a query.
+prerequisites: |
+  - Familiarity with relational databases and PostgreSQL concepts.
+  - Basic understanding of cloud computing and Azure services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- database-administrator
+- solution-architect
+products:
+- azure
+subjects:
+- databases
+- artificial-intelligence
+units:
+- learn.wwl.get-started-azure-horizondb.introduction
+- learn.wwl.get-started-azure-horizondb.what-is-azure-horizondb
+- learn.wwl.get-started-azure-horizondb.how-azure-horizondb-works
+- learn.wwl.get-started-azure-horizondb.when-to-use-azure-horizondb
+- learn.wwl.get-started-azure-horizondb.exercise-create-connect-cluster
+- learn.wwl.get-started-azure-horizondb.knowledge-check
+- learn.wwl.get-started-azure-horizondb.summary
+badge:
+  uid: learn.wwl.get-started-azure-horizondb.badge

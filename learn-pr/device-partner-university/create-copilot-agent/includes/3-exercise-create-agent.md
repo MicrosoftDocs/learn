@@ -28,18 +28,20 @@ Use natural language to provide the agent's name, purpose, instructions, and exp
 
 1. In the message box, enter the following prompt:
 
-*"Create an agent named Customer Meeting Prep that helps sales team members prepare for customer meetings.*
+   ```text
+   Create an agent named Customer Meeting Prep that helps sales team members prepare for customer meetings.
 
-*When a user asks for a meeting brief:*
+   When a user asks for a meeting brief:
 
-- *Ask for the customer name and meeting goal if they aren't provided.*
-- *Summarize the customer information provided by the user.*
-- *Identify customer priorities, needs, and potential discussion topics.*
-- *Connect those priorities to relevant information from approved knowledge sources.*
-- *Suggest questions the sales team member can ask during the meeting.*
-- *Organize the response as a structured meeting preparation brief.*
+   - Ask for the customer name and meeting goal if they aren't provided.
+   - Summarize the customer information provided by the user.
+   - Identify customer priorities, needs, and potential discussion topics.
+   - Connect those priorities to relevant information from approved knowledge sources.
+   - Suggest questions the sales team member can ask during the meeting.
+   - Organize the response as a structured meeting preparation brief.
 
-*Use only the information provided by the user or available in the agent's knowledge sources. Clearly identify when information is missing, and don't create unsupported customer details."*
+   Use only the information provided by the user or available in the agent's knowledge sources. Clearly identify when information is missing, and don't create unsupported customer details.
+   ```
 
 1. Submit the description.
 1. Review the response from Agent Builder.

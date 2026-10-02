@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-azure-horizondb.how-azure-horizondb-works
+title: Explain how Azure HorizonDB works
+metadata:
+  zone_pivot_groups: video-or-text
+  title: Explain how Azure HorizonDB works
+  description: "Explain the disaggregated compute-and-storage and database-as-a-log architecture, and identify the components of an Azure HorizonDB cluster."
+  ms.date: 09/29/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-how-azure-horizondb-works.md)]
