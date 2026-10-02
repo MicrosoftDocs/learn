@@ -14,7 +14,7 @@ Between these extremes, you find tools like **Auto Loader** for cloud storage fi
 
 ## Lakeflow Connect
 
-Lakeflow Connect represents the modern approach to data ingestion in Azure Databricks. It offers both fully managed connectors and standard connectors that integrate with Lakeflow Spark Declarative Pipelines for a streamlined experience.
+Lakeflow Connect represents the modern approach to data ingestion in Azure Databricks. It offers both fully managed connectors and standard connectors that integrate with Lakeflow pipelines for a streamlined experience.
 
 Managed connectors are organized into three types:
 
@@ -66,7 +66,7 @@ Key capabilities of Auto Loader include:
 - **Scalability**: Efficiently handles billions of files for backfills or migrations.
 - **Format support**: Processes JSON, CSV, Parquet, Avro, ORC, XML, text, and binary files.
 
-Auto Loader fits scenarios where data arrives as files in cloud storage—common patterns include log files, exports from upstream systems, and data landing zones. You can use Auto Loader with Lakeflow Spark Declarative Pipelines for a managed experience or with Structured Streaming for more control.
+Auto Loader fits scenarios where data arrives as files in cloud storage—common patterns include log files, exports from upstream systems, and data landing zones. You can use Auto Loader with Lakeflow pipelines for a managed experience or with Structured Streaming for more control.
 
 ## COPY INTO
 
@@ -145,7 +145,7 @@ For **relational databases** with supported types, Lakeflow Connect offers two m
 
 For **files in cloud storage**, Auto Loader provides efficient incremental discovery and processing. Use COPY INTO for simpler batch scenarios or when you prefer SQL-first workflows.
 
-For **streaming data** from message buses (Kafka, Event Hubs, Pub/Sub), standard connectors with Lakeflow Spark Declarative Pipelines balance automation with flexibility. For complex streaming requirements, Structured Streaming offers maximum control.
+For **streaming data** from message buses (Kafka, Event Hubs, Pub/Sub), standard connectors with Lakeflow pipelines balance automation with flexibility. For complex streaming requirements, Structured Streaming offers maximum control.
 
 For **Azure ecosystem sources** requiring coordination with other services, Azure Data Factory can orchestrate data landing into your lakehouse. Keep transformation logic within Azure Databricks rather than in ADF data flows.
 

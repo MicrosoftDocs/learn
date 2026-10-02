@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.relight-microsoft-photos.exercise-prepare-portrait
+title: 'Exercise: Prepare your portrait for the event'
+metadata:
+  title: 'Exercise: Prepare Your Portrait For The Event'
+  description: This content is part of the "Enhance a professional portrait using Relight in Microsoft Photos on a Copilot" module.
+  ms.date: 10/01/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-exercise-prepare-portrait.md)]

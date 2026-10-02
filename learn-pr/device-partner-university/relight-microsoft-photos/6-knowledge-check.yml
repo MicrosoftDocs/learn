@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.relight-microsoft-photos.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: This content is part of the "Enhance a professional portrait using Relight in Microsoft Photos on a Copilot" module.
+  ms.date: 10/01/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which portrait is the strongest candidate for using Relight?"
+    choices:
+        - content: "A well-composed portrait with uneven lighting across the subject"
+          isCorrect: true
+          explanation: ""
+        - content: "A blurry portrait with balanced lighting"
+          isCorrect: false
+          explanation: ""
+        - content: "A portrait with important details cropped out"
+          isCorrect: false
+          explanation: ""
+        - content: "A portrait with an expression that doesn't fit the intended audience"
+          isCorrect: false
+          explanation: ""
+  - content: "You reposition a virtual light source and find a direction that improves facial visibility. What should you do next to refine the lighting effect?"
+    choices:
+        - content: "Adjust the brightness and softness"
+          isCorrect: true
+          explanation: ""
+        - content: "Change the composition and crop"
+          isCorrect: false
+          explanation: ""
+        - content: "Increase the brightness as much as possible"
+          isCorrect: false
+          explanation: ""
+        - content: "Replace the photo without evaluating the result"
+          isCorrect: false
+          explanation: ""
+  - content: "After applying Relight, the portrait looks too dramatic. Which adjustment should you make?"
+    choices:
+        - content: "Reduce the brightness or increase the softness"
+          isCorrect: true
+          explanation: ""
+        - content: "Increase the brightness and reduce the softness"
+          isCorrect: false
+          explanation: ""
+        - content: "Move immediately to Save as copy"
+          isCorrect: false
+          explanation: ""
+        - content: "Replace the portrait because Relight can't be adjusted further"
+          isCorrect: false
+          explanation: ""
+  - content: "When validating an edited professional portrait, which result best indicates that the Relight adjustments were successful?"
+    choices:
+        - content: "The subject is easier to see and the lighting looks balanced and believable"
+          isCorrect: true
+          explanation: ""
+        - content: "The edited image is noticeably brighter than the original"
+          isCorrect: false
+          explanation: ""
+        - content: "The lighting effect draws attention to the edit itself"
+          isCorrect: false
+          explanation: ""
+        - content: "The portrait looks substantially different from the original"
+          isCorrect: false
+          explanation: ""
+  - content: "Why should you use Save as copy after the portrait meets your editing goal?"
+    choices:
+        - content: "It creates a new version while preserving the original photo"
+          isCorrect: true
+          explanation: ""
+        - content: "It automatically increases the brightness of the final portrait"
+          isCorrect: false
+          explanation: ""
+        - content: "It replaces the original so only the enhanced version remains"
+          isCorrect: false
+          explanation: ""
+        - content: "It corrects problems such as blur and awkward framing"
+          isCorrect: false
+          explanation: ""

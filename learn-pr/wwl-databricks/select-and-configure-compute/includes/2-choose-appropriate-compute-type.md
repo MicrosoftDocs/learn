@@ -14,7 +14,7 @@ Serverless compute requires **Unity Catalog** and is available for:
 
 - **Notebooks**: Interactive Python and SQL development with automatic resource allocation
 - **Jobs**: Automated workflows that run without infrastructure setup
-- **Pipelines**: Lakeflow Spark Declarative Pipelines with on-demand scaling
+- **Pipelines**: Lakeflow pipelines with on-demand scaling
 - **SQL warehouses**: Optimized SQL query execution with intelligent workload management
 
 Serverless works best for exploratory analysis, ETL pipelines, business intelligence workloads, and scenarios where startup latency matters. The versionless runtime means Azure Databricks automatically applies upgrades, so you always run on the latest features without migration effort.
