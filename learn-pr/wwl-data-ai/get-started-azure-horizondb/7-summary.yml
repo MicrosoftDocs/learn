@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-azure-horizondb.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary of what you learned about Azure HorizonDB, an AI-ready, PostgreSQL-compatible database service."
+  ms.date: 09/29/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

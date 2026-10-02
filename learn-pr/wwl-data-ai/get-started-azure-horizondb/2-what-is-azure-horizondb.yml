@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-azure-horizondb.what-is-azure-horizondb
+title: Understand Azure HorizonDB
+metadata:
+  zone_pivot_groups: video-or-text
+  title: Understand Azure HorizonDB
+  description: "Describe Azure HorizonDB as a cloud-native, fully managed, AI-ready database service built on PostgreSQL, and the mission-critical workloads it targets."
+  ms.date: 09/29/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-what-is-azure-horizondb.md)]
