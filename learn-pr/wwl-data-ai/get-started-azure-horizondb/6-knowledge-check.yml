@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-azure-horizondb.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check for the Get started with Azure HorizonDB module."
+  ms.date: 09/29/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Azure HorizonDB is built on which database engine, giving it compatibility with existing applications, drivers, and tools?"
+    choices:
+    - content: "PostgreSQL"
+      isCorrect: true
+      explanation: "Correct. Azure HorizonDB is built on PostgreSQL and retains full PostgreSQL compatibility, so existing PostgreSQL applications, drivers, and tools work without code rewrites."
+    - content: "MySQL"
+      isCorrect: false
+      explanation: "Incorrect. Azure HorizonDB is built on PostgreSQL, not MySQL."
+    - content: "Microsoft SQL Server"
+      isCorrect: false
+      explanation: "Incorrect. Azure HorizonDB is built on PostgreSQL, not SQL Server."
+  - content: "In the Azure HorizonDB database-as-a-log architecture, what does the compute layer write to the storage layer?"
+    choices:
+    - content: "Only the write-ahead log (WAL); storage nodes reconstruct data pages by applying it."
+      isCorrect: true
+      explanation: "Correct. In the database-as-a-log design, only the WAL is written from compute to storage. The WAL is the authoritative source of truth, and storage nodes reconstruct page state by applying it, which removes checkpoint I/O bottlenecks."
+    - content: "Full data pages on every checkpoint."
+      isCorrect: false
+      explanation: "Incorrect. Data pages aren't written from the compute replicas to the storage layer. Only the WAL is written, and storage reconstructs pages from it."
+    - content: "Both the WAL and data pages at the same time for redundancy."
+      isCorrect: false
+      explanation: "Incorrect. Only the WAL is written from compute to storage; writing data pages as well would reintroduce the write amplification the architecture is designed to avoid."
+  - content: "A team needs to scale out read throughput for an Azure HorizonDB workload. Which approach does the architecture support?"
+    choices:
+    - content: "Add readable standby replicas that share the same zone-resilient storage, and route reads through the read-only endpoint."
+      isCorrect: true
+      explanation: "Correct. Because compute and storage are separate, you can add readable replicas that share the same storage—no data copy is needed—and the read-only endpoint load-balances reads across them."
+    - content: "Copy the database to a second cluster and keep the two in sync manually."
+      isCorrect: false
+      explanation: "Incorrect. Azure HorizonDB scales reads by adding replicas that share the cluster's storage; a manually synchronized second copy isn't required."
+    - content: "Increase backup retention so reads can be served from backups."
+      isCorrect: false
+      explanation: "Incorrect. Backups aren't a read-scale mechanism. Reads scale out through readable replicas and the read-only endpoint."

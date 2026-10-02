@@ -62,10 +62,9 @@ products:
 - vs-code
 modules:
 - learn.wwl.install-configure-visual-studio-code
-- learn.languages.csharp-call-methods
-- learn.languages.csharp-arrays
-- learn.languages.csharp-readable-code
-- learn.wwl.guided-project-arrays-iteration-selection
-- learn.wwl.challenge-project-arrays-iteration-selection
+- learn.languages.csharp-repeat-actions-loops
+- learn.languages.csharp-arrays-lists
+- learn.languages.csharp-reusable-code
+- learn.languages.csharp-read-write-files
 trophy:
   uid: learn.wwl.get-started-c-sharp-part-2.trophy

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.implement-hierarchical-partition-keys
+title: Implement hierarchical partition keys
+metadata:
+  title: Implement Hierarchical Partition Keys
+  description: "Create subpartitioned containers with up to three key levels, write and read items with composite keys, and route prefix queries to a subset of physical partitions."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-implement-hierarchical-partition-keys.md)]

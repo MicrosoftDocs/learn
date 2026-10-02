@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.exercise-design-model-partitioning
+title: Exercise - Design a model and partition strategy
+metadata:
+  title: Exercise - Design a Model and Partition Strategy
+  description: "Model the CosmicWorks entities for a set of access patterns, create a container with a hierarchical partition key, and validate that prefix queries route efficiently."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: true
+durationInMinutes: 45
+content: |
+  [!include[](includes/9-exercise-design-model-partitioning.md)]

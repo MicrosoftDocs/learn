@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql
+metadata:
+  title: Design a Data Modeling and Partitioning Strategy for Azure Cosmos DB for NoSQL
+  description: "Model Azure Cosmos DB for NoSQL data around access patterns and select partition keys, including hierarchical, synthetic, and multitenant strategies, that scale and distribute load evenly."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Design a data modeling and partitioning strategy
+summary: Design data models for Azure Cosmos DB for NoSQL based on your access patterns. Select partition keys that scale and distribute the workload evenly. Choose an appropriate hierarchical, synthetic, or multitenant partitioning strategy. Avoid costly design anti-patterns.
+abstract: |
+  After completing this module, you're able to:
+  - Design data models based on access patterns, choosing when to embed or reference.
+  - Select partition keys based on cardinality, access patterns, and write distribution.
+  - Implement hierarchical, synthetic, and multitenant partitioning strategies and identify anti-patterns.
+prerequisites: |
+  - Familiarity with Azure Cosmos DB containers, items, request units, and the change feed
+  - Experience querying an Azure Cosmos DB for NoSQL container
+  - Programming experience with C# or Python
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- cloud-computing
+- databases
+units:
+- learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.introduction
+- learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.identify-access-patterns
+- learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.embed-or-reference
+- learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.optimize-data-reads
+- learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.select-partition-key
+- learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.implement-hierarchical-partition-keys
+- learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.synthetic-keys-multitenant
+- learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.identify-antipatterns-estimate-cost
+- learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.exercise-design-model-partitioning
+- learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.knowledge-check
+- learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.summary
+badge:
+  uid: learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.badge

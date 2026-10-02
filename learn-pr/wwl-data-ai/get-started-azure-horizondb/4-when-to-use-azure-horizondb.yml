@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-azure-horizondb.when-to-use-azure-horizondb
+title: Decide when to use Azure HorizonDB
+metadata:
+  zone_pivot_groups: video-or-text
+  title: Decide when to use Azure HorizonDB
+  description: "Evaluate when Azure HorizonDB is the right choice by mapping its capabilities to transactional, AI, read-scale, and hybrid workloads, and account for preview limitations."
+  ms.date: 09/29/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-when-to-use-azure-horizondb.md)]

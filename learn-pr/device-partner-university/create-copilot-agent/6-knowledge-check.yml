@@ -9,76 +9,81 @@ metadata:
   ms.author: v-homerreyes
   ms.topic: unit
 durationInMinutes: 5
+
 quiz:
   title: Check your knowledge
   questions:
   - content: "Which task is the strongest candidate for a first agent?"
     choices:
-        - content: "Preparing a recurring customer meeting brief from approved information"
-          isCorrect: true
-          explanation: ""
-        - content: "Designing a one-time company logo from an open-ended request"
-          isCorrect: false
-          explanation: ""
-        - content: "Managing every customer relationship without review or defined boundaries"
-          isCorrect: false
-          explanation: ""
-        - content: "Making business decisions on behalf of a sales manager"
-          isCorrect: false
-          explanation: ""
+      - content: "Preparing a recurring customer meeting brief from approved information"
+        isCorrect: true
+        explanation: "Correct. This task is repeatable, follows a defined process, and uses approved information."
+      - content: "Designing a one-time company logo from an open-ended request"
+        isCorrect: false
+        explanation: "Incorrect. A one-time creative task isn't an ideal starting scenario for a reusable agent."
+      - content: "Managing every customer relationship without review or defined boundaries"
+        isCorrect: false
+        explanation: "Incorrect. Agents should operate within clearly defined responsibilities and oversight."
+      - content: "Making business decisions on behalf of a sales manager"
+        isCorrect: false
+        explanation: "Incorrect. Agents can assist decision-making but shouldn't make business decisions independently."
+
   - content: "Which combination provides an agent with a reusable foundation for its assigned task?"
     choices:
-        - content: "A name, an icon, and a general welcome message"
-          isCorrect: false
-          explanation: ""
-        - content: "A purpose, clear instructions, and relevant approved knowledge"
-          isCorrect: true
-          explanation: ""
-        - content: "A broad topic, several unrelated tasks, and unrestricted information"
-          isCorrect: false
-          explanation: ""
-        - content: "A single prompt with no defined purpose or knowledge sources"
-          isCorrect: false
-          explanation: ""
+      - content: "A name, an icon, and a general welcome message"
+        isCorrect: false
+        explanation: "Incorrect. These elements affect presentation but don't define how the agent performs its task."
+      - content: "A purpose, clear instructions, and relevant approved knowledge"
+        isCorrect: true
+        explanation: "Correct. Purpose, instructions, and knowledge provide the foundation for consistent agent behavior."
+      - content: "A broad topic, several unrelated tasks, and unrestricted information"
+        isCorrect: false
+        explanation: "Incorrect. Effective agents have focused responsibilities and trusted information sources."
+      - content: "A single prompt with no defined purpose or knowledge sources"
+        isCorrect: false
+        explanation: "Incorrect. Agents need clear guidance and supporting knowledge to perform reliably."
+
   - content: "How should a meeting preparation agent respond when a request omits the customer name and meeting goal?"
     choices:
-        - content: "Create a complete meeting brief by assuming the missing details"
-          isCorrect: false
-          explanation: ""
-        - content: "Provide a generic sales presentation that applies to every customer"
-          isCorrect: false
-          explanation: ""
-        - content: "Ask for the customer name and meeting goal before creating the brief"
-          isCorrect: true
-          explanation: ""
-        - content: "Use unsupported customer details to complete each section"
-          isCorrect: false
-          explanation: ""
+      - content: "Create a complete meeting brief by assuming the missing details"
+        isCorrect: false
+        explanation: "Incorrect. Agents shouldn't invent important information that wasn't provided."
+      - content: "Provide a generic sales presentation that applies to every customer"
+        isCorrect: false
+        explanation: "Incorrect. A generic response doesn't address the specific request."
+      - content: "Ask for the customer name and meeting goal before creating the brief"
+        isCorrect: true
+        explanation: "Correct. The agent should request the necessary information before proceeding."
+      - content: "Use unsupported customer details to complete each section"
+        isCorrect: false
+        explanation: "Incorrect. Agents should rely on provided and approved information."
+
   - content: "Which group of prompts provides the most complete test of an agent's behavior?"
     choices:
-        - content: "A typical request, an incomplete request, and an out-of-scope request"
-          isCorrect: true
-          explanation: ""
-        - content: "Three identical requests submitted during the same agent conversation"
-          isCorrect: false
-          explanation: ""
-        - content: "Three formatting requests that contain complete and similar information"
-          isCorrect: false
-          explanation: ""
-        - content: "One typical request that produces a polished response"
-          isCorrect: false
-          explanation: ""
+      - content: "A typical request, an incomplete request, and an out-of-scope request"
+        isCorrect: true
+        explanation: "Correct. Testing multiple scenarios helps validate expected behavior and boundaries."
+      - content: "Three identical requests submitted during the same agent conversation"
+        isCorrect: false
+        explanation: "Incorrect. Repeating the same request doesn't test a variety of behaviors."
+      - content: "Three formatting requests that contain complete and similar information"
+        isCorrect: false
+        explanation: "Incorrect. Similar requests provide limited insight into how the agent handles edge cases."
+      - content: "One typical request that produces a polished response"
+        isCorrect: false
+        explanation: "Incorrect. A single successful response doesn't fully validate the agent."
+
   - content: "Which refinement best addresses an agent that produces meeting briefs with an inconsistent structure?"
     choices:
-        - content: "Change the agent's name and replace its current icon"
-          isCorrect: false
-          explanation: ""
-        - content: "Add unrelated knowledge sources covering additional business topics"
-          isCorrect: false
-          explanation: ""
-        - content: "Add required section headings and their order to the instructions"
-          isCorrect: true
-          explanation: ""
-        - content: "Expand the agent's purpose to include every step of the customer relationship"
-          isCorrect: false
-          explanation: ""
+      - content: "Change the agent's name and replace its current icon"
+        isCorrect: false
+        explanation: "Incorrect. Changing branding elements doesn't improve output consistency."
+      - content: "Add unrelated knowledge sources covering additional business topics"
+        isCorrect: false
+        explanation: "Incorrect. Additional unrelated knowledge won't solve a formatting issue."
+      - content: "Add required section headings and their order to the instructions"
+        isCorrect: true
+        explanation: "Correct. Clear instructions about structure help produce consistent meeting briefs."
+      - content: "Expand the agent's purpose to include every step of the customer relationship"
+        isCorrect: false
+        explanation: "Incorrect. Broadening the scope can make the agent less focused and consistent."
