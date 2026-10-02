@@ -2,7 +2,7 @@
 
 Data pipelines often encounter records with missing values, duplicate identifiers, or values that fall outside acceptable ranges. Without validation checks in place, these data quality issues propagate downstream, causing incorrect analytics, failed reports, and unreliable business decisions. Validation checks catch these problems at the point of data ingestion, ensuring that only quality data flows through your pipeline.
 
-In this unit, you learn how to implement validation checks for nullability, data cardinality, and range checking using Lakeflow Spark Declarative Pipelines expectations and Delta Lake table constraints.
+In this unit, you learn how to implement validation checks for nullability, data cardinality, and range checking using Lakeflow pipelines expectations and Delta Lake table constraints.
 
 ## Understand validation approaches in Azure Databricks
 
@@ -10,7 +10,7 @@ Azure Databricks provides two primary mechanisms for implementing validation che
 
 :::image type="content" source="../media/2-understand-validation-approaches.png" alt-text="Diagram explaining validation approaches in Azure Databricks." border="false" lightbox="../media/2-understand-validation-approaches.png":::
 
-**Pipeline expectations** apply validation during data transformations in Lakeflow Spark Declarative Pipelines. Expectations let you warn, drop invalid records, or fail the pipeline when data violates your rules. This approach works well for streaming tables and materialized views where you need real-time quality control.
+**Pipeline expectations** apply validation during data transformations in Lakeflow pipelines. Expectations let you warn, drop invalid records, or fail the pipeline when data violates your rules. This approach works well for streaming tables and materialized views where you need real-time quality control.
 
 **Table constraints** enforce rules directly on Delta Lake tables. Constraints reject invalid data at write time, preventing bad records from ever entering your tables. This approach suits batch processing and scenarios requiring strict data integrity guarantees.
 

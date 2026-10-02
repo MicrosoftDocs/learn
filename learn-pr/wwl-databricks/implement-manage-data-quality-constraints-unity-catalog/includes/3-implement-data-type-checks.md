@@ -130,7 +130,7 @@ This pattern ensures your pipeline continues processing valid data while preserv
 
 ## Use pipeline expectations for type checking
 
-Lakeflow Spark Declarative Pipelines provides **expectations** that allow you to define data quality rules directly in your pipeline definitions. You can use expectations to check that values can be cast to expected types:
+Lakeflow pipelines provide **expectations** that allow you to define data quality rules directly in your pipeline definitions. You can use expectations to check that values can be cast to expected types:
 
 ```python
 from pyspark import pipelines as dp

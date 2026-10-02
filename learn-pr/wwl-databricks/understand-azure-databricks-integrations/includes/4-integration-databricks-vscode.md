@@ -26,7 +26,7 @@ Beyond interactive debugging, the extension supports running Python tests with `
 
 The Databricks extension simplifies deployment through **Declarative Automation Bundles** (formerly known as Databricks Asset Bundles), which package your code, configurations, and dependencies into deployable units.
 
-Declarative Automation Bundles define **Lakeflow Jobs**, **Lakeflow Spark Declarative Pipelines (SDP)**, and **MLOps Stacks** using configuration files. You specify compute settings, schedule triggers, and task dependencies in YAML format. The extension provides a UI for creating, validating, and deploying these bundles without leaving Visual Studio Code.
+Declarative Automation Bundles define **Lakeflow Jobs**, **Lakeflow pipelines**, and **MLOps Stacks** using configuration files. You specify compute settings, schedule triggers, and task dependencies in YAML format. The extension provides a UI for creating, validating, and deploying these bundles without leaving Visual Studio Code.
 
 :::image type="content" source="../media/bundle-deployment.png" alt-text="Diagram showing the Azure Databricks VS Code Bundle Deployment capability." border="false" lightbox="../media/bundle-deployment.png":::
 

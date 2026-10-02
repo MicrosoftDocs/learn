@@ -128,7 +128,7 @@ Data that doesn't match the schema—including new columns, type mismatches, and
 
 ## Implement error handling strategies
 
-Beyond automatic schema management, you need strategies for handling records that violate your data quality rules. Lakeflow Spark Declarative Pipelines provides expectations that let you define constraints and specify how to handle violations.
+Beyond automatic schema management, you need strategies for handling records that violate your data quality rules. Lakeflow pipelines provide expectations that let you define constraints and specify how to handle violations.
 
 ### Drop invalid records
 
