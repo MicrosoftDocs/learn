@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.languages.csharp-reusable-code
+metadata:
+  title: Write reusable code in C#
+  description: "Learn how to write reusable code in C# using methods, parameters, return values, variable scope, and namespaces."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
+  ms.devlang: csharp
+  ai-usage: human-only
+title: Write reusable code in C#
+summary: Learn how to write reusable code in C# using methods, parameters, return values, variable scope, and namespaces.
+abstract: |
+  After you complete this module, you'll be able to:
+
+  -   Create methods that accept parameters
+
+  -   Return values from methods
+
+  -   Understand how variable scope affects your code
+
+  -   Organize code using namespaces and the using directive
+prerequisites: |
+  -   Beginner level experience with basic C# syntax rules
+
+  -   Beginner level experience with creating literal values and declaring variables of basic data types like string, int, and decimal
+
+  -   Beginner level experience with evaluating Boolean expressions and using if, else if, and else statements
+
+  -   Beginner level experience with repeating actions using for, while, and do-while loops
+
+  -   Beginner level experience with storing data using arrays and `List<T>`
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+units:
+- learn.languages.csharp-reusable-code.introduction
+- learn.languages.csharp-reusable-code.create-methods-with-parameters
+- learn.languages.csharp-reusable-code.return-values-from-methods
+- learn.languages.csharp-reusable-code.manage-variable-scope
+- learn.languages.csharp-reusable-code.organize-code-with-namespaces
+- learn.languages.csharp-reusable-code.exercise-create-billing-calculator
+- learn.languages.csharp-reusable-code.knowledge-check
+- learn.languages.csharp-reusable-code.summary
+badge:
+  uid: learn.languages.csharp-reusable-code.badge

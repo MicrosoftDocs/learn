@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.relight-microsoft-photos.understand-relight-benefits
+title: Understand Relight and its benefits
+metadata:
+  title: Understand Relight And Its Benefits
+  description: This content is part of the "Enhance a professional portrait using Relight in Microsoft Photos on a Copilot" module.
+  ms.date: 10/01/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-understand-relight-benefits.md)]

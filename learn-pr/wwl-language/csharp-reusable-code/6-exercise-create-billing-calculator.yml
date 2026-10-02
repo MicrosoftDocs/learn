@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-reusable-code.exercise-create-billing-calculator
+title: Exercise - Create a billing calculator
+metadata:
+  title: Exercise - Create a Billing Calculator
+  description: "Practice methods with parameters, default values, named arguments, return values, and namespaces by building a billing calculator."
+  ms.date: 9/29/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/6-exercise-create-billing-calculator.md)]

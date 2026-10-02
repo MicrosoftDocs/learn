@@ -122,7 +122,7 @@ Each task type has recommended compute options that affect both capability and c
 | ------------------------------------ | --------------------------- |
 | Notebooks, Python scripts            | Serverless jobs compute     |
 | SQL queries and files                | Serverless SQL warehouse    |
-| Lakeflow Spark Declarative Pipelines | Serverless pipeline compute |
+| Lakeflow pipelines | Serverless pipeline compute |
 | JAR and Spark Submit                 | Classic jobs compute        |
 
 Tasks within the same job can use different compute resources. A common pattern assigns SQL tasks to a SQL warehouse while notebook-based transformations run on jobs compute.

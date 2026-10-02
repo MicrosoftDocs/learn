@@ -24,7 +24,7 @@ This approach offers several advantages for data engineers:
 
 ## Process CDC with the AUTO CDC API
 
-Azure Databricks provides the AUTO CDC API in Lakeflow Spark Declarative Pipelines to simplify change data processing. This API handles the complexity of out-of-order records, deduplication, and change application automatically.
+Azure Databricks provides the AUTO CDC API in Lakeflow pipelines to simplify change data processing. This API handles the complexity of out-of-order records, deduplication, and change application automatically.
 
 To implement CDC processing, you first create a streaming table as the target. Then you define a flow that reads change records from your source and applies them using the appropriate slowly changing dimension (SCD) type.
 

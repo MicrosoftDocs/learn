@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.relight-microsoft-photos
+title: Enhance a professional portrait using Relight in Microsoft Photos on a Copilot
+metadata:
+  title: Enhance A Professional Portrait Using Relight In Microsoft Photos On A Copilot
+  description: 'In this module, you learn how Relight can help you enhance portrait photos by adjusting lighting sources while maintaining a natural appearance.'
+  ms.date: 10/01/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: module
+  ms.service: windows-11
+summary: >2+
+  Learn how to use Relight in Microsoft Photos on a Copilot+ PC to enhance a professional portrait by repositioning virtual light sources and adjusting their brightness and softness. Explore how to reduce distracting shadows, improve facial visibility, and make restrained adjustments that keep your portrait looking balanced, natural, and authentic. You also learn how to determine when Relight is the right solution and validate that your enhanced photo is ready for professional use.
+abstract: |2+
+  By the end of this module, you can:
+  - Describe how Relight enhances portrait photos.
+  - Identify situations where Relight can improve professional images.
+  - Adjust virtual lighting by using Relight in Microsoft Photos.
+  - Apply best practices to create a natural-looking professional portrait.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/relight-microsoft-photos.svg
+ratingEnabled: false
+levels:
+  - intermediate
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.relight-microsoft-photos.introduction
+  - learn.dpu.relight-microsoft-photos.understand-relight-benefits
+  - learn.dpu.relight-microsoft-photos.explore-relight-controls
+  - learn.dpu.relight-microsoft-photos.exercise-prepare-portrait
+  - learn.dpu.relight-microsoft-photos.determine-photo-solution
+  - learn.dpu.relight-microsoft-photos.knowledge-check
+  - learn.dpu.relight-microsoft-photos.summary
+badge:
+  uid: learn.dpu.relight-microsoft-photos.badge

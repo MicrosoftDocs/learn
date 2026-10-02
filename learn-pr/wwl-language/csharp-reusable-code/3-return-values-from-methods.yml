@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-reusable-code.return-values-from-methods
+title: Return values from methods
+metadata:
+  title: Return Values from Methods
+  description: "Learn how to return values from methods, including multiple values, and use them in the rest of your program."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-return-values-from-methods.md)]
