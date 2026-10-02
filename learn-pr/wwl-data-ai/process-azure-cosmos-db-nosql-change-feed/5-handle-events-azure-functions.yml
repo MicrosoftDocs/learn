@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.process-azure-cosmos-db-nosql-change-feed.handle-events-azure-functions
+title: Handle events with Azure Functions
+metadata:
+  title: Handle Events with Azure Functions
+  description: "Run change feed logic with the Azure Cosmos DB trigger without hosting a processor, configure an identity-based connection, and share a lease container across functions."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-handle-events-azure-functions.md)]

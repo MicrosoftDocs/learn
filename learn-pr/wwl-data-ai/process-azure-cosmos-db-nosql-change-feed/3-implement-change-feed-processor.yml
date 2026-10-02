@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.process-azure-cosmos-db-nosql-change-feed.implement-change-feed-processor
+title: Implement a change feed consumer
+metadata:
+  title: Implement a Change Feed Consumer
+  description: "Configure a lease container, write a delegate that handles batches of changes, control where processing starts, and scale a change feed consumer across instances."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-implement-change-feed-processor.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.process-azure-cosmos-db-nosql-change-feed.choose-change-feed-mode
+title: Choose a change feed mode
+metadata:
+  title: Choose a Change Feed Mode
+  description: "Compare latest version mode with all versions and deletes mode, weigh the account requirements each carries, and match a mode to what a consumer has to act on."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-choose-change-feed-mode.md)]
