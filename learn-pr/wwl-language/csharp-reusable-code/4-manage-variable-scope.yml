@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-reusable-code.manage-variable-scope
+title: Manage variable scope
+metadata:
+  title: Manage Variable Scope
+  description: "Learn how local and block scope work in C# and how to avoid common bugs caused by variables leaking between methods."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-manage-variable-scope.md)]

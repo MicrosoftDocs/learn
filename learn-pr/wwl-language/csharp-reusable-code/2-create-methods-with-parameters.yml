@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-reusable-code.create-methods-with-parameters
+title: Create methods with parameters
+metadata:
+  title: Create Methods with Parameters
+  description: "Learn how to define methods in C# and pass data to them using parameters, default values, and named arguments."
+  ms.date: 09/23/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-create-methods-with-parameters.md)]
