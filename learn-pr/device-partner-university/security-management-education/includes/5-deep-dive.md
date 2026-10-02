@@ -28,10 +28,10 @@ Its endpoint detection and response capabilities enable institutions to monitor 
 
 ## Microsoft Entra ID
 
-[Microsoft Entra ID](/entra/fundamentals/what-is-entra) secures access to resources through strong identity management. It supports single sign-on, multifactor authentication, conditional access, and lifecycle management for students, staff, and visitors.
+[Microsoft Entra ID](/entra/fundamentals/what-is-entra) secures access to resources through strong identity management. It supports single sign-on, multifactor authentication, Conditional Access, and lifecycle management for students, staff, and visitors.
 By detecting unusual sign-in behavior and enabling passwordless authentication, Microsoft Entra ID reduces the risk of compromised accounts.
 
-Microsoft Entra ID pairs with Windows Hello to provide secure, passwordless access on managed devices, while also supporting personal devices through conditional access policies. This flexibility allows institutions to maintain security without hindering user experience, even in hybrid learning environments.
+Microsoft Entra ID pairs with Windows Hello to provide secure, passwordless access on managed devices, while also supporting personal devices through Conditional Access policies. This flexibility allows institutions to maintain security without hindering user experience, even in hybrid learning environments.
 
 **Example:** A teacher travels abroad and attempts to sign in to the school network. Microsoft Entra ID identifies the unfamiliar location and prompts for multifactor authentication to verify the user’s identity before granting access.
 

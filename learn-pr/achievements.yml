@@ -324,7 +324,7 @@ achievements:
   type: trophy
   title: MD-102 Manage authentication and compliance
   summary: |
-    This learning path covers the various solutions for managing authentication. Students will also learn about the different types of VPNs, as well as compliance and conditional access policies.
+    This learning path covers the various solutions for managing authentication. Students will also learn about the different types of VPNs, as well as compliance and Conditional Access policies.
   iconUrl: /training/achievements/authentication-compliance.svg
 - uid: learn.wwl.protect-identities-azure-acative-directory.badge
   type: badge
@@ -339,7 +339,7 @@ achievements:
 - uid: learn.wwl.implement-device-compliance.badge
   type: badge
   title: Implement device compliance
-  summary: This module describes how to use compliance and conditional access policies to help protect access to organizational resources.
+  summary: This module describes how to use compliance and Conditional Access policies to help protect access to organizational resources.
   iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.wwl.inventory-compliance-reports.badge
   type: badge
