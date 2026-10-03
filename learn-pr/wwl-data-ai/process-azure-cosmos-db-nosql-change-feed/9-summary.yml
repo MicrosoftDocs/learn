@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.process-azure-cosmos-db-nosql-change-feed.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Recap the change feed read models, mode selection, the Azure Functions trigger, and container copy jobs, with links for further learning and cleanup guidance."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.process-azure-cosmos-db-nosql-change-feed.exercise-process-changes-copy-data
+title: Exercise - Process changes and copy data
+metadata:
+  title: Exercise - Process Changes and Copy Data
+  description: "Run a change feed consumer against a lease container, react to changes with an Azure Functions trigger, and copy a container onto a new partition key with a copy job."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: true
+durationInMinutes: 45
+content: |
+  [!include[](includes/7-exercise-process-changes-copy-data.md)]
