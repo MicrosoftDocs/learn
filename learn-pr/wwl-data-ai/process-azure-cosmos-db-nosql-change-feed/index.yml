@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.process-azure-cosmos-db-nosql-change-feed
+metadata:
+  title: Process the Azure Cosmos DB for NoSQL Change Feed
+  description: "Read the Azure Cosmos DB for NoSQL change feed with the processor and pull models, react to changes with Azure Functions, and move container data with copy jobs."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Process the Azure Cosmos DB for NoSQL change feed
+summary: Read the Azure Cosmos DB for NoSQL change feed with the processor and pull models. Choose the change feed mode a workload needs, react to changes with Azure Functions, and move container data with container copy jobs.
+abstract: |
+  After completing this module, you're able to:
+  - Differentiate the change feed processor and pull models and configure lease containers.
+  - Choose between latest version mode and all versions and deletes mode for a workload.
+  - Handle change feed events with Azure Functions and move data with container copy jobs.
+prerequisites: |
+  - Experience creating and configuring an Azure Cosmos DB for NoSQL client with the SDK
+  - Experience performing point operations and queries against an Azure Cosmos DB for NoSQL container
+  - Programming experience with C# or Python
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+- azure-functions
+subjects:
+- cloud-computing
+- databases
+units:
+- learn.wwl.process-azure-cosmos-db-nosql-change-feed.introduction
+- learn.wwl.process-azure-cosmos-db-nosql-change-feed.understand-change-feed
+- learn.wwl.process-azure-cosmos-db-nosql-change-feed.implement-change-feed-processor
+- learn.wwl.process-azure-cosmos-db-nosql-change-feed.choose-change-feed-mode
+- learn.wwl.process-azure-cosmos-db-nosql-change-feed.handle-events-azure-functions
+- learn.wwl.process-azure-cosmos-db-nosql-change-feed.move-data-container-copy-jobs
+- learn.wwl.process-azure-cosmos-db-nosql-change-feed.exercise-process-changes-copy-data
+- learn.wwl.process-azure-cosmos-db-nosql-change-feed.knowledge-check
+- learn.wwl.process-azure-cosmos-db-nosql-change-feed.summary
+badge:
+  uid: learn.wwl.process-azure-cosmos-db-nosql-change-feed.badge

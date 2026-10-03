@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.process-azure-cosmos-db-nosql-change-feed.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your understanding of change feed read models and mode selection with the following questions. Review how lease containers and the Azure Functions trigger work. Check your knowledge of container copy jobs."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "A Python team needs a consumer that runs continuously. The consumer must capture every change in an Azure Cosmos DB for NoSQL container, including deletions. It writes each change to a compliance audit log. Which approach meets the requirement?"
+    choices:
+    - content: "Use the Azure Functions trigger with a Python function configured for all versions and deletes mode."
+      isCorrect: false
+      explanation: "The Azure Functions trigger supports all versions and deletes mode only in the .NET isolated worker model, with version 4.16.1 or later of the Azure Cosmos DB extension. A Python function can use the trigger, but only in latest version mode, which never reports deletions."
+    - content: "Read the feed with the pull model in all versions and deletes mode, persisting a continuation token after each batch."
+      isCorrect: true
+      explanation: "The change feed processor ships only in the .NET SDK and the Java SDK, so a Python consumer reads the feed directly. The Python SDK supports all versions and deletes mode in the pull model from version 4.9.1b1 onward, which is what captures deletions. The team owns the polling loop and the continuation token in exchange."
+    - content: "Run the change feed processor in Python and register a delegate that inspects the operation type on each change."
+      isCorrect: false
+      explanation: "The change feed processor library exists only in the .NET V3 SDK and the Java V4 SDK. No amount of delegate configuration makes it available to a Python application."
+  - content: "A change feed processor with an existing checkpoint processes a batch and hits an unhandled exception on one malformed document. Hours later, downstream data is stale and the processor's logs show the same document repeating. What's happening, and what resolves it?"
+    choices:
+    - content: "Delivery is at-least-once, so the failing batch is redelivered indefinitely and blocks newer changes on that lease. Catch the exception and write the failing change to a separate store."
+      isCorrect: true
+      explanation: "The lease advances only on success, so a permanently failing change becomes a poison batch that stalls its range while newer changes queue behind it. Handling the exception inside the delegate and persisting the failing change elsewhere lets processing continue without losing the record."
+    - content: "The malformed document was skipped and the lease advanced past it, so the staleness comes from a separate problem in the downstream write path."
+      isCorrect: false
+      explanation: "The processor resumes from the existing checkpoint after the delegate fails. It retries this batch rather than advancing past it. A failure on the first-ever delegate execution can behave differently because no previous checkpoint exists."
+    - content: "The lease expired while the delegate was running, so another instance took ownership and restarted the batch. Increasing the lease expiration interval resolves it."
+      isCorrect: false
+      explanation: "A lease handoff would move processing to a different instance rather than repeat the same failure on the same one, and it wouldn't produce indefinite repetition. Lengthening the expiration interval delays recovery from real host failures without addressing the unprocessable document."
+  - content: "To build an audit trail, a team enables all versions and deletes mode on their account. The team then asks a developer to backfill the log with every deletion from the past two years. The account has a seven-day continuous backup retention period. What should the developer tell the team?"
+    choices:
+    - content: "The backfill works if they configure the consumer to start from the beginning of the container, because the feed retains changes for the life of the container."
+      isCorrect: false
+      explanation: "That behavior belongs to latest version mode. All versions and deletes mode can start only from now or from a saved lease or continuation token, and it has a finite retention window."
+    - content: "The backfill works after raising the continuous backup retention period to two years, which retroactively extends the feed."
+      isCorrect: false
+      explanation: "Changing the retention period affects what's retained going forward. The service can't recreate change records from a period when the account didn't retain them. The feed also doesn't include deletions that occurred before the team enabled the mode."
+    - content: "A new consumer starts from now unless it has a valid saved checkpoint. The seven-day retention window doesn't allow an arbitrary historical backfill."
+      isCorrect: true
+      explanation: "All versions and deletes mode supports starting from now or resuming from a saved lease or continuation token within the retention window. It doesn't support starting from the beginning of the container or an arbitrary timestamp. A seven-day window also excludes the requested two-year history."
+  - content: "Two Azure Functions monitor the same Azure Cosmos DB container and are configured with the same lease container. One receives every batch and the other receives nothing. What's the correct fix?"
+    choices:
+    - content: "Set a distinct lease container prefix on each function so their lease documents stay independent."
+      isCorrect: true
+      explanation: "Functions sharing a monitored container and a lease container compete for the same lease documents, and a lease has exactly one owner. A distinct prefix per function keeps two independent sets of positions in the same container. A separate lease container per function also works, and lease containers can use shared database throughput."
+    - content: "Set `CreateLeaseContainerIfNotExists` to `true` on the idle function so it provisions its own lease container at startup."
+      isCorrect: false
+      explanation: "That property creates a container only when one doesn't exist, and it's a control-plane operation that fails outright when the function authenticates with a managed identity. It doesn't separate two functions that are already pointed at the same lease container."
+    - content: "Increase `MaxItemsPerInvocation` on the idle function so it competes for larger batches."
+      isCorrect: false
+      explanation: "That setting caps how many items arrive per invocation once a function already owns a lease. It has no bearing on which function acquires the lease in the first place."
+  - content: "A catalog container partitioned on `/categoryId` has to move onto a hierarchical partition key. The storefront must accept writes during the copy but can pause writes briefly for the final cutover. Which plan fits the constraint?"
+    choices:
+    - content: "Run an offline copy job and repoint the application when the processed count reaches the total count."
+      isCorrect: false
+      explanation: "Offline copy requires writes on the source to stop before the job starts. Updates and deletes made during the job might not be captured, leaving the destination with missing or duplicated data, so this plan doesn't keep the storefront writable during the copy."
+    - content: "Enable continuous backups, all versions and deletes mode, and online copy on the source account. Then, run an online copy job. Pause writes briefly before running the completion command."
+      isCorrect: true
+      explanation: "Online copy consumes the all-versions-and-deletes feed, so it replicates incremental changes while the source stays writable, and it inherits that mode's account requirements. Enabling online copy adds a 50 to 100 percent request unit surcharge to replace and delete operations on the source account; creates aren't affected. To finish the job, stop writes, wait 5 to 10 minutes for remaining changes to flush, and run the completion command."
+    - content: "Change the container's partition key definition in place and let the service redistribute the existing items in the background."
+      isCorrect: false
+      explanation: "Changing a partition key isn't an in-place edit that redistributes existing items. The data has to be copied into a container created with the new key, which is why copy jobs exist for this scenario. The portal's guided flow reaches the same result by running a copy job underneath."

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.process-azure-cosmos-db-nosql-change-feed.move-data-container-copy-jobs
+title: Move data with container copy jobs
+metadata:
+  title: Move Data with Container Copy Jobs
+  description: "Create, monitor, and complete offline and online container copy jobs to move data onto a container with a different partition key, unique keys, or throughput model."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-move-data-container-copy-jobs.md)]

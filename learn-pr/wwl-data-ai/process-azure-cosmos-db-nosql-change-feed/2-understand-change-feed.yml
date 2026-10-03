@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.process-azure-cosmos-db-nosql-change-feed.understand-change-feed
+title: Understand the change feed
+metadata:
+  title: Understand the Change Feed
+  description: "Compare the change feed processor and pull models, learn which languages each supports, and measure consumer lag with the change feed estimator."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-understand-change-feed.md)]
