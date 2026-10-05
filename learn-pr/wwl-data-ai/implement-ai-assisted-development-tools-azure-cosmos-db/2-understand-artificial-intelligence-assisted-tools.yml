@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.understand-ai-assisted-toolset
+title: Understand the AI-assisted Azure Cosmos DB toolset
+metadata:
+  title: Understand the AI-Assisted Azure Cosmos DB Toolset
+  description: "Compare the Model Context Protocol servers and the agent toolkits for Azure Cosmos DB, and learn which storage and retrieval patterns each one encodes."
+  ms.date: 08/19/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-understand-artificial-intelligence-assisted-tools.md)]
