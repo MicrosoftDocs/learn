@@ -170,6 +170,16 @@ achievements:
   title: Strengthen cloud security by using the Cloud Adoption Framework
   summary: Organizations that move to the cloud often find that they need to modernize security practices and tooling to keep up with continuous changes in cloud platforms, business requirements, and security threats. The Cloud Adoption Framework for Azure consists of eight methodologies. This module focuses on the Secure methodology, which provides guidance for the security modernization journey.
   iconUrl: /training/achievements/cloud-adoption-framework-security.svg
+- uid: learn.wwl.use-delta-lake-azure-databricks.badge
+  type: badge
+  title: Use Delta Lake in Azure Databricks
+  summary: Use Delta Lake in Azure Databricks
+  iconUrl: /training/achievements/work-dataframes-azure-databricks-social.png
+- uid: learn.wwl.data-engineer-azure-databricks.trophy
+  type: trophy
+  title: Data engineering with Azure Databricks
+  summary: Data engineering with Azure Databricks
+  iconUrl: /training/achievements/data-engineer-azure-databricks-social.png
 - uid: learn.cloud-adoption-framework.trophy
   type: trophy
   title: Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure
