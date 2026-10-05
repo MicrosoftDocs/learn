@@ -1,0 +1,9 @@
+A search box that returns results is not the same as a search box that answers well. The Contoso product knowledge base now runs keyword and semantic retrieval against one container, and the query logs show where each one gives up. A shopper who types *something to see the road at night* wants the three lights in the catalog. Keyword search can't find them, because no product name or category contains the words *see* or *night*, while 96 items contain the word *road*. A shopper who types *Touring-1000 Blue, 50* wants that one bike. Semantic search can't guarantee it, because the catalog holds four near-identical size variants of the same model.
+
+Both results are correct for the method that produced them. Keyword search scores documents on the terms they contain, so it can't reach a phrase that shares no words with the catalog. Vector search scores documents on meaning, so it has no notion of an exact token. Real users type both kinds of query into one box, and the gap between the two methods is where answer quality goes missing.
+
+Azure Cosmos DB for NoSQL closes that gap in the query language. The `RRF` function fuses two or more ranked result sets into one ranking, so a single query returns what keyword search finds and what similarity search finds, ordered together. Weights bias the fusion toward whichever method suits your corpus. And because production retrieval is judged on cost, latency, and relevance, the same query language carries the dials that keep all three inside a budget you set.
+
+In this module, you choose a retrieval strategy, write and weight hybrid queries with `RRF`, optimize a retrieval pipeline for relevance alongside request charge, and isolate a search workload from transactional traffic with a global secondary index.
+
+By the end of this module, you can build and tune a hybrid retrieval pipeline in Azure Cosmos DB for NoSQL that holds relevance, cost, and latency inside a production budget.

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Frame retrieval quality as a production concern, where keyword and semantic search each miss what the other finds and hybrid retrieval closes the gap."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]
