@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-agent-memory-azure-cosmos-db.implement-conversation-state
+title: Implement conversation state
+metadata:
+  title: Implement Conversation State
+  description: "Model a conversation turn as one item, write and read it in Azure Cosmos DB for NoSQL, resume a thread across sessions, and expire the log with time to live instead of a cleanup job."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-implement-conversation-state.md)]

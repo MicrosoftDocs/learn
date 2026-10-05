@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.design-implement-agent-memory-azure-cosmos-db
+metadata:
+  title: Design and Implement Agent Memory Stores in Azure Cosmos DB
+  description: "Design durable agent memory on Azure Cosmos DB for NoSQL: separate conversation state from long-term memory, distill turns into facts searchable by meaning, budget a context window, and set retention, reconciliation, and erasure policies."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Design and implement agent memory stores in Azure Cosmos DB
+summary: Give an agent something to remember. Separate short-term conversation state from long-term memory, distill raw turns into facts a later session can find by meaning, and set the retention, reconciliation, and erasure policies that keep a memory store trustworthy as it grows.
+abstract: |
+  After completing this module, you're able to:
+  - Design short-term and long-term memory architectures for agent use cases.
+  - Implement conversation state in Azure Cosmos DB for NoSQL and expire it with time to live.
+  - Implement semantic memory by distilling turns into embedded, individually correctable facts.
+  - Retrieve the right memory into a limited context window and inject it safely.
+  - Design memory retention, pruning, consolidation, and erasure policies.
+prerequisites: |
+  - Experience running vector and full-text queries in Azure Cosmos DB for NoSQL
+  - Familiarity with vector embeddings and calling an embedding API such as Azure OpenAI
+  - Working knowledge of Azure Cosmos DB for NoSQL partitioning, queries, and request units
+  - Programming experience with Python
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+- ai-engineer
+products:
+- azure-cosmos-db
+- azure-openai
+subjects:
+- databases
+- artificial-intelligence
+units:
+- learn.wwl.design-implement-agent-memory-azure-cosmos-db.introduction
+- learn.wwl.design-implement-agent-memory-azure-cosmos-db.understand-agent-memory-architectures
+- learn.wwl.design-implement-agent-memory-azure-cosmos-db.implement-conversation-state
+- learn.wwl.design-implement-agent-memory-azure-cosmos-db.implement-semantic-memory
+- learn.wwl.design-implement-agent-memory-azure-cosmos-db.optimize-memory-retrieval-context-injection
+- learn.wwl.design-implement-agent-memory-azure-cosmos-db.design-memory-retention-pruning
+- learn.wwl.design-implement-agent-memory-azure-cosmos-db.exercise-build-memory-store
+- learn.wwl.design-implement-agent-memory-azure-cosmos-db.knowledge-check
+- learn.wwl.design-implement-agent-memory-azure-cosmos-db.summary
+badge:
+  uid: learn.wwl.design-implement-agent-memory-azure-cosmos-db.badge
