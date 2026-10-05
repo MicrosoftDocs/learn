@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.monitor-mirroring
+title: Monitor mirroring
+metadata:
+  title: Monitor Mirroring
+  description: "Read replication status and row counts, tell a stalled mirror from an idle one, interpret how mirroring reconciles changing document schemas, and monitor beyond the portal with the REST API and workspace monitoring."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-monitor-mirroring.md)]

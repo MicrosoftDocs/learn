@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db
+metadata:
+  title: Implement Operational Analytics with Microsoft Fabric
+  description: "Run analytics on operational Azure Cosmos DB data with no ETL: choose between Azure Cosmos DB and Cosmos DB in Microsoft Fabric, mirror a database into OneLake, monitor replication health, and query the result with Transact-SQL (T-SQL) and Spark."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Implement operational analytics with Microsoft Fabric
+summary: Answer analytical questions about operational data without touching the workload that serves it. Mirror an Azure Cosmos DB for NoSQL database continuously into Microsoft Fabric OneLake, verify the copy is trustworthy, and query it with T-SQL and Spark.
+abstract: |
+  After completing this module, you're able to:
+  - Choose between Azure Cosmos DB and Cosmos DB in Microsoft Fabric for a workload.
+  - Configure mirroring from an Azure Cosmos DB for NoSQL account into Microsoft Fabric.
+  - Monitor replication status and interpret how mirroring handles schema changes.
+  - Query mirrored data with T-SQL and Spark, including nested JSON.
+prerequisites: |
+  - Working knowledge of Azure Cosmos DB for NoSQL containers, partitioning, and request units
+  - Familiarity with the Azure portal and Microsoft Entra ID role assignments
+  - Basic familiarity with Microsoft Fabric workspaces and Structured Query Language
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+- data-engineer
+products:
+- azure-cosmos-db
+- fabric
+subjects:
+- databases
+- data-analytics
+units:
+- learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.introduction
+- learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.choose-cosmos-db-or-fabric
+- learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.configure-mirroring-into-fabric
+- learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.monitor-mirroring
+- learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.query-mirrored-data-tsql-spark
+- learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.exercise-mirror-and-query
+- learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.knowledge-check
+- learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.summary
+badge:
+  uid: learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.badge
