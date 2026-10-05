@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.exercise-build-native-search
+title: 'Exercise: Build native search over a product catalog'
+metadata:
+  title: "Exercise: Build Native Search Over a Product Catalog"
+  description: "Load the CosmicWorks catalog with searchable text and embeddings, run BM25 and VectorDistance queries against one container, and refresh a stale embedding from the change feed."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/7-exercise-build-native-search.md)]

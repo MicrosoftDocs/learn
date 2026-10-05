@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.configure-account-failover
+title: Configure account failover
+metadata:
+  title: Configure Account Failover
+  description: "Set failover priorities on an Azure Cosmos DB account and choose between changing the write region, forcing a failover, and service-managed failover during a region outage."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-configure-account-failover.md)]

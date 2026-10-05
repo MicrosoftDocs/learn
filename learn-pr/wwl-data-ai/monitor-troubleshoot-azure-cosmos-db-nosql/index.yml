@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql
+metadata:
+  title: Monitor and Troubleshoot Azure Cosmos DB
+  description: "Interpret Azure Cosmos DB response codes, diagnose the four causes of a 429, monitor latency and partition utilization against service objectives, and configure Azure Monitor alerts and diagnostic logs."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Monitor and troubleshoot Azure Cosmos DB
+summary: Diagnose an Azure Cosmos DB for NoSQL incident from the evidence the service already produces, and put alerts in place so the next one announces itself before your users do.
+abstract: |
+  After completing this module, you're able to:
+  - Interpret response codes and diagnose throttling and transient errors.
+  - Monitor physical partition utilization and end-to-end latency against service objectives.
+  - Configure Azure Monitor alerts and analyze diagnostic logs in Log Analytics.
+prerequisites: |
+  - Experience using the Azure Cosmos DB SDK to read and write items in C# or Python
+  - Knowledge of request units and provisioned throughput in Azure Cosmos DB, including manual and autoscale throughput
+  - Knowledge of partitioning in Azure Cosmos DB, including logical and physical partitions
+  - Basic familiarity with Azure Monitor and the Azure portal
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+- azure-monitor
+subjects:
+- cloud-computing
+- databases
+units:
+- learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.introduction
+- learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.interpret-response-codes-throttling
+- learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.monitor-latency-partition-utilization
+- learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.configure-azure-monitor-alerts
+- learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.analyze-diagnostic-logs
+- learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.exercise-diagnose-alert
+- learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.knowledge-check
+- learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.summary
+badge:
+  uid: learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.badge

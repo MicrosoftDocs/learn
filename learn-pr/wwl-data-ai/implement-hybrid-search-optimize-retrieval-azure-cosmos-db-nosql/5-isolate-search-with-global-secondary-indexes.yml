@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.isolate-search-with-gsi
+title: Isolate search workloads with global secondary indexes
+metadata:
+  title: Isolate Search Workloads with Global Secondary Indexes
+  description: "Move retrieval onto a read-only index container with its own indexes, throughput, and partition key, and weigh the write surcharge and propagation lag that isolation costs."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-isolate-search-with-global-secondary-indexes.md)]

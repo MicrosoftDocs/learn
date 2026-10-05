@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your ability to choose between the two Cosmos DB implementations, grant the permission mirroring requires, interpret replication status, choose the right recovery for one stalled table, and expand nested JSON without losing rows."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A retailer runs a production catalog on an Azure Cosmos DB for NoSQL account in two specific Azure regions required by a data residency agreement. Several partner integrations authenticate with account keys, and the partners can't change their clients this year. The analytics team wants the catalog available for reporting in Microsoft Fabric. Which approach fits these constraints?"
+    choices:
+    - content: "Keep the Azure Cosmos DB account and mirror its database into Fabric."
+      isCorrect: true
+      explanation: "Correct. Mirroring leaves the operational account exactly where it is, so the regional placement and the key-based partner clients are unaffected, and it replicates the data into OneLake for the analytics team."
+    - content: "Migrate the catalog to Cosmos DB in Microsoft Fabric so the operational data and the analytics live in one workspace."
+      isCorrect: false
+      explanation: "Cosmos DB in Fabric authenticates with Microsoft Entra ID only and has no primary or secondary keys to give the partner clients, and it runs in the region where the Fabric capacity is configured rather than in regions the retailer chooses. Both constraints rule it out."
+    - content: "Run the reporting queries against the existing containers and provision extra throughput to absorb the load."
+      isCorrect: false
+      explanation: "This approach is the contention problem mirroring exists to solve. Aggregate queries across containers consume request units the transactional workload needs, and buying more throughput raises the cost without isolating the two workloads from each other."
+  - content: "A team enables mirroring with Microsoft Entra ID authentication and assigns the Cosmos DB Built-in Data Contributor role to the identity Fabric connects with. Replication fails with an authorization error. What explains the failure?"
+    choices:
+    - content: "Built-in Data Contributor grants write actions, and mirroring rejects an identity that can modify the source data."
+      isCorrect: false
+      explanation: "Mirroring doesn't reject an over-permissioned identity. Replication is read-only in effect, but nothing checks that the connecting identity lacks write actions, so the extra permissions aren't what causes the error."
+    - content: "Mirroring requires the `readAnalytics` data action, which neither built-in data role includes, so a custom role definition has to grant it alongside `readMetadata`."
+      isCorrect: true
+      explanation: "Correct. Fabric requires both `Microsoft.DocumentDB/databaseAccounts/readMetadata` and `Microsoft.DocumentDB/databaseAccounts/readAnalytics`. Built-in Data Reader and Built-in Data Contributor both cover the first and neither covers the second, so a custom role definition has to grant both actions."
+    - content: "Data plane role assignments apply only to containers, so the assignment has to be repeated for every container being mirrored."
+      isCorrect: false
+      explanation: "A native role assignment can be scoped at the account, database, or container level, and account scope is the normal choice here. Narrowing the scope wouldn't add the missing action, which is the actual cause."
+  - content: "An analyst reports that a Power BI report built on a mirrored table looks out of date. The Monitor replication view shows the database and every table as Running, and the **Last completed** value on the relevant table is from two days ago. What's the most likely explanation to check first?"
+    choices:
+    - content: "Replication stalls silently, because a healthy mirror refreshes its tables on a schedule regardless of source activity."
+      isCorrect: false
+      explanation: "Mirroring is change-driven rather than scheduled. There's no periodic refresh that would advance the timestamp on a container nobody is writing to, so an old timestamp isn't evidence of a stall on its own."
+    - content: "The Fabric capacity was paused, which is why the table stopped refreshing."
+      isCorrect: false
+      explanation: "A paused and resumed capacity shows up explicitly: the database-level status reads **Paused**, not **Running**. The status here is Running, so the capacity isn't the explanation."
+    - content: "The source container might have had no writes for two days, because **Last completed** advances only when the source changes."
+      isCorrect: true
+      explanation: "Correct. This column reports the last time the table was refreshed from a source that had something to send, so it stops moving on an idle container while the mirror stays healthy. Confirm by writing one item to the source and watching the timestamp advance."
+  - content: "Several hours after mirroring a database with six containers, five tables show Running with the expected row counts and one shows zero rows replicated. What's the appropriate first action?"
+    choices:
+    - content: "Stop replication on the mirrored database and start it again."
+      isCorrect: false
+      explanation: "Stopping replication disables mirroring completely, and starting it again reseeds every target table from scratch rather than resuming. That reseed rebuilds five healthy tables to fix one, and leaves everything querying them in an inconsistent state while it runs."
+    - content: "Deselect the affected container in the mirrored database and then reselect it."
+      isCorrect: true
+      explanation: "Correct. The documented first remedy for a container that appears stuck restarts replication for that one table and leaves the other five untouched. Escalate to stopping and starting replication only if it doesn't recover."
+    - content: "Delete the container in Azure Cosmos DB and recreate it so mirroring detects it as a new container."
+      isCorrect: false
+      explanation: "To fix an analytics symptom, this action destroys operational data. It also replaces the warehouse table's contents with only the new container's data, so any rows that had replicated wouldn't survive as history."
+  - content: "A catalog listing report reads a mirrored product table and expands the nested `tags` array with `OPENJSON` and `CROSS APPLY`. Reviewers notice that products the merchandising team knows exist are missing from the report. What change fixes it?"
+    choices:
+    - content: "Declare the element shape in an `OPENJSON` `WITH` clause instead of relying on auto schema inference."
+      isCorrect: false
+      explanation: "Declaring the shape changes the columns the query returns and their types, not which source rows survive the operation. A product with an empty array is dropped either way."
+    - content: "Increase the declared column length to `varchar(max)` so longer tag values aren't truncated."
+      isCorrect: false
+      explanation: "Widening the column doesn't restore missing rows, and `varchar(max)` is the option to avoid where a bounded `varchar(n)` works, because it degrades query performance."
+    - content: "Use `OUTER APPLY` rather than `CROSS APPLY`, so products with an empty `tags` array are kept with null tag columns."
+      isCorrect: true
+      explanation: "Correct. `CROSS APPLY` behaves like an inner join and drops every row whose array produced nothing, which silently removes untagged products from a listing. `OUTER APPLY` keeps them with nulls in the expanded columns."

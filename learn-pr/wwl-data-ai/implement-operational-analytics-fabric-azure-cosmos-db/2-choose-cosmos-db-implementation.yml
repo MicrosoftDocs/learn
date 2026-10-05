@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.choose-cosmos-db-or-fabric
+title: Choose Azure Cosmos DB or Cosmos DB in Microsoft Fabric
+metadata:
+  title: Choose Azure Cosmos DB or Cosmos DB in Microsoft Fabric
+  description: "Compare the two implementations of the Cosmos DB engine on billing, authentication, licensing, connection mode, and regional control, and decide which one an analytics workload belongs to."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-choose-cosmos-db-implementation.md)]

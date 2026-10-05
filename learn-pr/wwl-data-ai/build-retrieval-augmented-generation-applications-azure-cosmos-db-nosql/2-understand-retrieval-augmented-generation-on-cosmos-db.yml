@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.understand-retrieval-augmented-generation-on-cosmos-db
+title: Understand the RAG loop on Azure Cosmos DB
+metadata:
+  title: Understand the RAG Loop on Azure Cosmos DB
+  description: "Work through the retrieval, assembly, and generation stages of a RAG request, see why one store for the record, the text, and the vector removes a synchronization problem, and learn why retrieved content sits on the data side of the trust boundary."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-understand-retrieval-augmented-generation-on-cosmos-db.md)]

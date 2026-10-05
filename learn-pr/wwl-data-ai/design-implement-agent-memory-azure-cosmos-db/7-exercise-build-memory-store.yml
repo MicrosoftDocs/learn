@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-agent-memory-azure-cosmos-db.exercise-build-memory-store
+title: 'Exercise: Build a durable agent memory store'
+metadata:
+  title: 'Exercise: Build a Durable Agent Memory Store'
+  description: "Write conversation turns that expire on their own, distill durable facts and embed them, recall one by meaning in a new session, measure what memory costs in a prompt, then supersede a contradiction and erase the user."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/7-exercise-build-memory-store.md)]

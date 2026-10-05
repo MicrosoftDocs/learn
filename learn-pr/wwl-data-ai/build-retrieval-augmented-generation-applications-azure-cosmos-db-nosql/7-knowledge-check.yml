@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your ability to diagnose a failing grounded answer, separate embedded text from grounding text, place retrieved content correctly in a prompt, resolve a follow-up question, and judge when multi-step retrieval earns its cost."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A grounded assistant answers most questions correctly, but for one recurring question it replies that it doesn't have the information. The team confirms that a document in the container does answer that question, and that the system prompt already instructs the model to answer from the provided context. Where should the investigation start?"
+    choices:
+    - content: "With retrieval, by running the question against the retrieval stage alone and checking whether the document appears in the candidates."
+      isCorrect: true
+      explanation: "Retrieval sets the ceiling on the request. No instruction can use a document that never reaches the prompt, and the reply the assistant gives is the correct behavior for a prompt that lacks the evidence. Running the retrieval stage in isolation separates a retrieval problem from a prompt problem before anyone rewrites a system message."
+    - content: "With the system prompt, by strengthening the instruction that tells the model to answer from the context."
+      isCorrect: false
+      explanation: "The instruction is already producing the behavior it describes. The model is declining because the context doesn't contain the answer, which is exactly what it was told to do, so a stronger instruction either changes nothing or pushes the model into inventing."
+    - content: "With the chat model, by raising the temperature so the model draws on a wider range of possible responses."
+      isCorrect: false
+      explanation: "Temperature controls variation in wording, not what evidence is available. Raising it in a grounded pipeline makes answers drift further from the retrieved text, which is the opposite of what a grounding failure needs."
+  - content: "A team builds an assistant over service records. Each record holds a long free-text fault description, a customer identifier, a repair cost, and a warranty expiry date. Retrieval works well, but the assistant can't state a repair cost when asked, even though the correct record is retrieved every time. What's the most likely cause?"
+    choices:
+    - content: "The embedding model truncated the record, so the cost was never converted into the vector."
+      isCorrect: false
+      explanation: "Truncation would degrade retrieval, and retrieval is returning the right record every time. It would also be the wrong explanation regardless, because a vector isn't what the model reads when it composes an answer."
+    - content: "The vector index is approximate, so the retrieved record is a near match rather than the record that holds the cost."
+      isCorrect: false
+      explanation: "The team confirmed the correct record is retrieved. Approximate indexes affect which items come back, and the symptom here appears after the right item comes back."
+    - content: "The grounding block renders only the text that was embedded, so the cost field never reaches the prompt."
+      isCorrect: true
+      explanation: "The embedding describes what a record is about so similarity search can find it, and the grounding block is what the model reads. Nothing requires them to be the same string, and using the embedded text as the grounding text is what leaves an answer unable to quote fields that were deliberately kept out of the vector."
+  - content: "A reviewer finds that an application appends each retrieved document to the prompt as its own system message, alongside the message holding the assistant's rules. The retrieved documents include product descriptions edited by external partners. Why should the reviewer ask for a change?"
+    choices:
+    - content: "It places partner-authored text in the channel the model treats as authoritative instruction, so a directive written into a description arrives with the same standing as the application's own rules."
+      isCorrect: true
+      explanation: "The prompt carries three kinds of text at three levels of trust: the rules the developer wrote, the question the user wrote, and evidence neither person wrote. Collapsing evidence into the system channel gives externally authored content instruction authority, which is precisely the entry point a document attack relies on."
+    - content: "It exceeds the number of system messages a chat request accepts, so the request fails once enough documents are retrieved."
+      isCorrect: false
+      explanation: "A request accepts multiple messages of any role. The problem here isn't that the request breaks. It's that it succeeds while quietly promoting untrusted text, which is a harder defect to notice than a failure."
+    - content: "It prevents the model from citing the documents, because content in a system message can't be referenced in an answer."
+      isCorrect: false
+      explanation: "A model can refer to anything in the prompt regardless of which role carried it. Citation depends on the identifiers the application renders into the text and the instruction to use them, not on the message role."
+  - content: "A shopper asks *which headlight is brightest*, reads the answer, then asks *does it come in a cheaper version*. The assistant returns products unrelated to headlights. Which change addresses the cause?"
+    choices:
+    - content: "Increase the number of retrieved candidates, so the headlight products appear somewhere in the wider result set."
+      isCorrect: false
+      explanation: "Widening the result set helps when the ranking buries a relevant item. Here, the query vector describes cheapness in the abstract, so the headlights aren't ranked low. They aren't what the search is looking for at all."
+    - content: "Rewrite the follow-up into a standalone question using the conversation, and retrieve on the rewrite."
+      isCorrect: true
+      explanation: "The second question contains no retrievable content, because the noun it refers to is in the previous turn. Resolving the reference before the embedding call gives retrieval a question that describes the products it should return, which is why a resolve stage sits ahead of embedding in the pipeline."
+    - content: "Include the conversation history in the grounding block so the model can see which product the shopper means."
+      isCorrect: false
+      explanation: "That history helps the model phrase an answer, and it arrives too late. Retrieval already ran and returned unrelated products, so the grounding block holds evidence about the wrong items no matter what else accompanies it."
+  - content: "A team is choosing between a one-shot pipeline and a multi-step one for an assistant whose users mostly ask single-topic questions, with a minority asking questions that compare two products across several attributes. Which approach best fits, and why?"
+    choices:
+    - content: "Multi-step for every question, because iterative retrieval produces better evidence and consistency is worth more than latency."
+      isCorrect: false
+      explanation: "Multi-step costs several model calls and several retrievals per answer, so applying it to most questions that one pass already answers correctly buys nothing and charges for it on every request."
+    - content: "One-shot for every question, because a comparison can be handled by retrieving more candidates in the single pass."
+      isCorrect: false
+      explanation: "Retrieving more candidates doesn't change what the search is looking for. A single similarity search over a comparison question returns items resembling the whole sentence rather than items answering each half of it, and no value of top N changes what the search is looking for."
+    - content: "One-shot as the default, measured against real questions, with multi-step reserved for the comparison questions it demonstrably improves."
+      isCorrect: true
+      explanation: "One shot is the right default because it answers most questions at one embedding call, one query, and one model call. The comparison questions are the structural case multi-step exists for, and running the one-shot pipeline against real questions first is what identifies which ones justify the extra calls."

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.describe-azure-backup-for-cosmos-db
+title: Describe Azure backup for Azure Cosmos DB
+metadata:
+  title: Describe Azure Backup for Azure Cosmos DB
+  description: "Explain vaulted backup for Azure Cosmos DB, including immutable recovery points, long-term retention, policy structure, and current supported scenarios."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-describe-azure-backup-for-cosmos-db.md)]

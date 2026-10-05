@@ -4,9 +4,9 @@ title: What is AI red teaming?
 metadata:
   title: What is AI red teaming?
   description: Learn what AI red teaming is, how it differs from traditional security testing, and why it requires different approaches for probabilistic AI systems.
-  ms.author: ceperezb
-  author: ceperezb
-  ms.date: 04/24/2026
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 10/01/2026
   ms.topic: unit
 durationInMinutes: 7
 content: |

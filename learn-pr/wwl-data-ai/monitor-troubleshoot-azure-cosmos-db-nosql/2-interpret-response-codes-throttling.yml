@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.interpret-response-codes-throttling
+title: Interpret response codes and diagnose throttling
+metadata:
+  title: Interpret Response Codes and Diagnose Throttling
+  description: "Read Azure Cosmos DB status and substatus codes, configure SDK retry behavior for rate-limited requests, distinguish the four causes of a 429, and capture client-side diagnostics."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/2-interpret-response-codes-throttling.md)]

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.implement-vector-search
+title: Implement vector search
+metadata:
+  title: Implement Vector Search
+  description: "Rank items by similarity with the VectorDistance system function, narrow the search with metadata and partition key filters, and trade recall against request charge."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-implement-vector-search.md)]

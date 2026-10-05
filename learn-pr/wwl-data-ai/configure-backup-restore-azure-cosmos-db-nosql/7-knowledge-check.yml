@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your ability to choose a backup mode and tier, configure continuous backup, select a restore target, and place vaulted backup for Azure Cosmos DB."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Contoso needs to recover a catalog account to the second before an accidental delete, and the development team must perform the recovery without opening a support request. The account uses periodic backup mode with a four-hour interval. Which change meets both requirements?"
+    choices:
+    - content: "Migrate the account to continuous backup mode and select a retention tier."
+      isCorrect: true
+      explanation: "Continuous backup restores to any second within the configured tier, and the team starts the restore itself from the portal, the Azure CLI, or Azure PowerShell."
+    - content: "Reduce the periodic backup interval to one hour and raise retention to 30 days."
+      isCorrect: false
+      explanation: "A shorter interval produces more snapshots but still recovers only to whenever a snapshot ran. Periodic restores also begin with a support request rather than a self-service operation."
+    - content: "Keep periodic mode and rely on the 30-day retention of snapshots for deleted resources."
+      isCorrect: false
+      explanation: "That retention determines how long a deleted resource's snapshots survive. It doesn't provide second-level recovery points, and the restore still requires a support request."
+  - content: "A team provisions an account with `az cosmosdb create --backup-policy-type Continuous` and doesn't pass a tier argument. Two months later, finance asks why the account carries a backup storage charge. What explains the charge?"
+    choices:
+    - content: "Continuous backup charges for backup storage at every tier, so the charge is unavoidable."
+      isCorrect: false
+      explanation: "The 7-day tier has no backup storage charge. Only the restore operation is charged at that tier."
+    - content: "The account defaulted to the 7-day tier, which charges for backup storage in the account's write region."
+      isCorrect: false
+      explanation: "The 7-day tier isn't the default, and it doesn't incur a backup storage charge in any region."
+    - content: "The account defaulted to the 30-day tier, and the 30-day and 35-day tiers are charged for backup storage."
+      isCorrect: true
+      explanation: "Omitting the tier provisions `Continuous30Days`. That tier and the 35-day tier are charged per gigabyte of backup storage in each region where the account exists."
+  - content: "A container in Contoso's account still exists, but a script corrupted its records an hour ago. The account uses continuous backup. Which approach recovers the state from before the corruption?"
+    choices:
+    - content: "Run a same-account restore of the container with a restore timestamp before the corruption."
+      isCorrect: false
+      explanation: "Same-account restore recovers deleted databases and containers only. It doesn't roll back a live container to an earlier state or overwrite its current contents."
+    - content: "Restore the account to a new account at a timestamp before the corruption, then reconcile the recovered records."
+      isCorrect: true
+      explanation: "A live resource holding wrong data is recovered through a new-account restore. The recovered copy is separate, so the team decides how to reconcile it with production data."
+    - content: "Switch the account to the 35-day continuous tier so earlier versions of the items become available."
+      isCorrect: false
+      explanation: "Changing tiers alters the length of the restore window. It doesn't expose item versions, and extending the window doesn't retroactively add coverage."
+  - content: "After a successful restore into a new account, Contoso's application reports authorization failures against the recovered container. Which explanation matches the documented restore behavior?"
+    choices:
+    - content: "A new-account restore doesn't return data-plane role assignments, so the team must assign the required roles on the target account."
+      isCorrect: true
+      explanation: "A new-account restore excludes data-plane role assignments, firewall rules, and network configuration. The team must configure access to the recovered data on the target account."
+    - content: "The restore reapplies role assignments asynchronously, so the failures resolve once backup replication catches up."
+      isCorrect: false
+      explanation: "Data-plane role assignments aren't included in a new-account restore, so waiting doesn't restore the missing assignments. The team reapplies them explicitly."
+    - content: "The restored resource inherits the source account's firewall rules, which block the application until its address is added again."
+      isCorrect: false
+      explanation: "A new-account restore doesn't inherit firewall or network settings. Their absence is why the restore should set public network access explicitly."
+  - content: "Compliance requires Contoso to reproduce the catalog's state from 14 months ago and to keep those copies resistant to deletion by an account administrator. Which approach meets the requirement?"
+    choices:
+    - content: "Set the account's continuous backup tier to 35 days and export a monthly copy from the change feed to storage."
+      isCorrect: false
+      explanation: "The 35-day tier falls far short of 14 months, and a self-managed export offers no immutability guarantee for the exported copies."
+    - content: "Change the account to periodic backup mode and set backup retention to its maximum of 720 hours."
+      isCorrect: false
+      explanation: "The periodic maximum of 720 hours is 30 days. Migration to continuous mode is also one-way, so an account already in continuous mode can't return to periodic."
+    - content: "Keep native continuous backup and add Azure Backup for Azure Cosmos DB, which stores immutable vaulted recovery points for up to 10 years."
+      isCorrect: true
+      explanation: "Vaulted backup layers long-term retention and write-once, read-many immutability outside the source account, and it requires the account to remain in native continuous backup mode."

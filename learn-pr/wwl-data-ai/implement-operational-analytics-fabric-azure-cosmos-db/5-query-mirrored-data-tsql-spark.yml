@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.query-mirrored-data-tsql-spark
+title: Query mirrored data with Transact-SQL and Spark
+metadata:
+  title: Query Mirrored Data with Transact-SQL and Spark
+  description: "Query mirrored Azure Cosmos DB data through the SQL analytics endpoint and from Spark: aggregates, nested JSON with OPENJSON, cross-source joins, OneLake shortcuts, and when the Cosmos DB Spark connector applies instead."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-query-mirrored-data-tsql-spark.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-cosmos-db-fleets.exercise-create-monitor-fleet
+title: Exercise - Create and monitor a fleet
+metadata:
+  title: Exercise - Create and Monitor a Fleet
+  description: "Create a fleet and a pooled fleetspace, enroll two Azure Cosmos DB accounts, read pool and dedicated throughput in Azure Monitor, and send fleet analytics to Data Lake Storage Gen2."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-exercise-create-monitor-fleet.md)]

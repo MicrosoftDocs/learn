@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Check your understanding of AI security controls including content filters, metaprompts, data security, and monitoring.
-  ms.date: 04/24/2026
-  author: ceperezb
-  ms.author: ceperezb
+  ms.date: 10/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 5

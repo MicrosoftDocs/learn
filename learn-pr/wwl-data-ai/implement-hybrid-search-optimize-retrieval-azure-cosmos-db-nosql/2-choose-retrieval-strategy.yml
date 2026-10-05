@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.choose-retrieval-strategy
+title: Choose a retrieval strategy
+metadata:
+  title: Choose a Retrieval Strategy
+  description: "Compare what BM25 and vector similarity rank on, audit the indexed text before you commit to a method, and decide when hybrid retrieval earns its extra cost."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-choose-retrieval-strategy.md)]

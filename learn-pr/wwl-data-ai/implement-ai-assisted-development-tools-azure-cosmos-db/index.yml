@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db
+metadata:
+  title: Implement AI-Assisted Development Tools for Azure Cosmos DB
+  description: "Connect an AI assistant to Azure Cosmos DB with a Model Context Protocol server, add durable memory and multi-step retrieval with the agent toolkits, and choose the right tool for a scenario."
+  ms.date: 08/19/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Implement AI-assisted development tools for Azure Cosmos DB
+summary: Connect an AI assistant to Azure Cosmos DB with a Model Context Protocol server, add durable memory and multi-step retrieval with the agent toolkits, choose the right tool for a scenario, and separate what each tool covers from what you design yourself.
+abstract: |
+  After completing this module, you're able to:
+  - Select the right AI-assisted tool, a Model Context Protocol server or an agent toolkit, for a scenario.
+  - Follow recommended Azure Cosmos DB solutions by using AI-assisted tools.
+  - Distinguish what the tools cover from the decisions you own.
+prerequisites: |
+  - Experience creating and configuring an Azure Cosmos DB for NoSQL client with the SDK
+  - Familiarity with generative AI, agents, and retrieval-augmented generation concepts
+  - Programming experience with Python
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+- azure-openai
+subjects:
+- artificial-intelligence
+- databases
+- cloud-computing
+units:
+- learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.introduction
+- learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.understand-ai-assisted-toolset
+- learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.use-cosmos-db-mcp-server
+- learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.use-agent-toolkits
+- learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.choose-tool-understand-scope
+- learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.exercise-inspect-azure-cosmos-db-azure-mcp-server
+- learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.knowledge-check
+- learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.summary
+badge:
+  uid: learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.badge

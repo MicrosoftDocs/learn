@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-cosmos-db-fleets.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your ability to choose between fleets and container-level multitenancy, apply fleetspace membership rules, calculate a physical partition's pooled throughput ceiling, decide which accounts can share a pool, and read the fleet analytics schema."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A software provider serves 40 small customers from a single Azure Cosmos DB container partitioned by a tenant identifier. None of the customers has a contractual or regulatory requirement for a separate account, but the operations team wants central reporting on usage per customer. What's the appropriate response?"
+    choices:
+    - content: "Create a fleet and enroll the account, then use a throughput pool so each customer's traffic is billed separately."
+      isCorrect: false
+      explanation: "A pool supplies shared throughput to resources in a fleetspace; it doesn't separate billing by tenant identifier within a shared container. Pool capacity is separate from each resource's dedicated throughput, so pooling doesn't lend unused dedicated capacity between accounts."
+    - content: "Split each customer into a dedicated account, then group the accounts into a fleet so the estate can be managed centrally."
+      isCorrect: false
+      explanation: "This response takes on the operational cost that fleets exist to reduce, in order to solve a reporting problem, and adds a pool floor of 100,000 request units per second (RU/s) if the fleetspace uses pooling. Account-level isolation is worth its overhead when something requires it, and nothing here does."
+    - content: "Keep the shared container and answer the reporting question from per-partition-key metrics and the application's own telemetry."
+      isCorrect: true
+      explanation: "Fleets address account-level multitenancy, where isolation requirements force a dedicated account per tenant. With 40 tenants in one container and no isolation requirement, the existing design is the cheaper one, and per-tenant reporting is a question for partition key metrics and application telemetry rather than a reason to restructure the estate."
+  - content: "A platform team enrolls an Azure Cosmos DB account into the `production-eastus` fleetspace of their `retail` fleet. A month later, they want that account to sit in a new `production-eastus-premium` fleetspace in the same fleet. What has to happen?"
+    choices:
+    - content: "Add the account to the new fleetspace, which supersedes the earlier registration automatically."
+      isCorrect: false
+      explanation: "There's no supersede behavior. An account that's already registered in a fleetspace can't be added to another one, and the portal doesn't offer it as an option."
+    - content: "Delete the account's fleetspace account registration in `production-eastus`, and then register it in the new fleetspace."
+      isCorrect: true
+      explanation: "An account belongs to exactly one fleetspace and exactly one fleet, and the membership has to be removed before a new one can be created. Moving an account between fleetspaces is a delete followed by a create, which is why the fleetspace layout is worth designing before any account is enrolled."
+    - content: "Delete and recreate the Azure Cosmos DB account, because fleetspace membership is fixed for the lifetime of the account."
+      isCorrect: false
+      explanation: "The registration is a reference to the account, not a property baked into it. Deleting the fleetspace account releases the account for re-enrollment, and the account itself, along with its data and endpoint, is untouched throughout."
+  - content: "A container in a pooled fleetspace has one physical partition and an autoscale maximum of 8,000 RU/s. The fleetspace pool has a minimum of 200,000 RU/s and available capacity during a spike. What's the most that physical partition can consume?"
+    choices:
+    - content: "10,000 RU/s, because a physical partition's combined dedicated and pooled consumption is capped."
+      isCorrect: true
+      explanation: "Two limits apply together: a physical partition draws at most 5,000 extra RU/s from the pool, and its dedicated plus pooled consumption can't exceed 10,000 RU/s in total. With 8,000 RU/s dedicated, the second limit binds first, so the partition reaches 10,000 rather than 13,000."
+    - content: "13,000 RU/s, because a physical partition adds up to 5,000 RU/s from the pool to its dedicated throughput."
+      isCorrect: false
+      explanation: "The 5,000 RU/s allowance is real, but it isn't the only limit. A second cap holds a physical partition's total consumption to 10,000 RU/s regardless of how much the pool has available, and 8,000 plus 5,000 exceeds it."
+    - content: "200,000 RU/s, because any resource in the fleetspace can consume the pool's full capacity."
+      isCorrect: false
+      explanation: "Pool capacity is shared across the fleetspace, but no single physical partition can absorb it. Therefore, pooling smooths uneven demand across tenants rather than rescuing a hot partition inside one tenant."
+  - content: "An operations team wants four accounts in one throughput pool: two single-region write accounts in East US, one single-region write account replicated to East US and West US, and one multi-region write account in East US. How many fleetspaces do these accounts require?"
+    choices:
+    - content: "One, because all four accounts include East US in their regional configuration."
+      isCorrect: false
+      explanation: "Sharing a pool requires the same regional configuration, not an overlapping one. An account replicated to two regions doesn't match an account in one region, even when one of the regions is the same."
+    - content: "Three, because each distinct combination of regional configuration and service tier needs a fleetspace of its own."
+      isCorrect: true
+      explanation: "The two single-region East US accounts match each other and share one fleetspace. The account replicated to two regions has a different regional configuration, so it needs a second. The multi-region write account maps to the Business critical service tier rather than General purpose, so it needs a third."
+    - content: "Two, one for the single-region write accounts and one for the multi-region write account."
+      isCorrect: false
+      explanation: "This grouping gets the service tier split right and the regional split wrong. All three single-region write accounts share a tier, but the account replicated to East US and West US doesn't share a regional configuration with the two that sit in East US alone."
+  - content: "To find the largest consumers of storage, an analyst queries `FactResourceUsageHourly` in a fleet analytics dataset. The results come back with correct storage figures, but every row is identified only by a `ResourceId` value. What resolves this problem?"
+    choices:
+    - content: "Join the results to `DimResource`, which maps each `ResourceId` to a subscription, account name, region, database, and container."
+      isCorrect: true
+      explanation: "The dataset uses a star schema, so fact tables carry measurements and identifiers while dimension tables carry names. `DimResource` is the table that turns a `ResourceId` into an account a customer can be billed for, which is why nearly every useful fleet analytics query joins to it."
+    - content: "Query `FactAccountHourly` instead, because resource usage figures are duplicated there with account names attached."
+      isCorrect: false
+      explanation: "`FactAccountHourly` holds account configuration such as consistency level, backup settings, and key rotation dates rather than storage measurements, and it identifies its rows by `ResourceId` in exactly the same way. Swapping fact tables doesn't supply the names."
+    - content: "Re-enable the destination with account names included, because the exported columns are configurable per fleet."
+      isCorrect: false
+      explanation: "The exported schema is fixed and documented, and there's no per-fleet column selection to configure. The names are already in the dataset, in the dimension tables, waiting to be joined."

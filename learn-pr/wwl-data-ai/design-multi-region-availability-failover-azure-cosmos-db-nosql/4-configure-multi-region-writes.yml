@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.configure-multi-region-writes
+title: Configure multi-region writes
+metadata:
+  title: Configure Multi-Region Writes
+  description: "Enable multi-region writes on an Azure Cosmos DB account, understand the hub region and confirmed writes, and configure the .NET and Python SDKs to write locally."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-configure-multi-region-writes.md)]

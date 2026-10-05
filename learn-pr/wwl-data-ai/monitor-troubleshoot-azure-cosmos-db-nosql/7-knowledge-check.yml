@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your ability to diagnose the cause of a 429 response, explain a gap between service and application error counts, choose a latency metric, read normalized request unit (RU) consumption, and pick a log category."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An order service writes through transactional batches, and several instances write to the same logical partition key at once. It starts returning 429 responses carrying the message `TXN_WAIT_FOR_TRANSACTION_END`. Normalized RU consumption on the container averages 22 percent. What resolves the throttling?"
+    choices:
+    - content: "Reduce the scope and duration of each transaction, add backoff, and redistribute the writes across more logical partition keys."
+      isCorrect: true
+      explanation: "Azure Cosmos DB processes one transactional operation at a time for a given logical partition key, so a second batch can't start while the first is still running. The remedy is to shorten the contended window and spread the writes, not to buy capacity the container clearly isn't using."
+    - content: "Raise the provisioned throughput on the container so the concurrent batches have enough request units to complete."
+      isCorrect: false
+      explanation: "Normalized RU consumption at 22 percent shows the container has capacity to spare, and `TXN_WAIT_FOR_TRANSACTION_END` reports contention rather than exhaustion. More request units would change nothing about how many transactions can run against one logical partition key at a time."
+    - content: "Increase the SDK's maximum retry attempts on rate-limited requests so the batches eventually succeed."
+      isCorrect: false
+      explanation: "More retries hide the symptom while the contention persists, and each waiting batch holds its own resources for longer. Retries are a reasonable stopgap for a brief spike, but they don't address writes that are serialized by design."
+  - content: "Azure Monitor reports several thousand 429 responses on a container during an hour when the application's own logs recorded none. Both sources are correct. What explains the difference?"
+    choices:
+    - content: "Azure Monitor counts metadata operations that the application never issues, so the two sources measure unrelated request populations."
+      isCorrect: false
+      explanation: "Metadata rate limiting is a real and separate cause of 429 responses, but it appears in the **Metadata Requests By Status Code** chart rather than in the data-plane request count, and it wouldn't account for the application seeing nothing at all."
+    - content: "The SDK retried each rate-limited request automatically and the retry succeeded, so the 429 never reached the application code."
+      isCorrect: true
+      explanation: "The software development kits (SDKs) retry a rate-limited request up to nine times by default, honoring the `x-ms-retry-after-ms` header between attempts. The service counts every rejected attempt, while the application sees only requests that exhaust the retries. This gap is expected, and a low overall rate of 429 responses is a healthy sign of full throughput utilization."
+    - content: "Azure Monitor metrics aggregate across all containers in the account, so the count includes throttling in containers the application doesn't use."
+      isCorrect: false
+      explanation: "Metrics carry `DatabaseName` and `CollectionName` dimensions, so a chart can be filtered to a single container, and the scenario already scopes the count to one. Aggregation isn't what's hiding the responses from the application."
+  - content: "A team runs a catalog service on the Python SDK for Azure Cosmos DB and wants to establish whether the service or their own application is responsible for a latency increase. Which metric gives them the service's contribution?"
+    choices:
+    - content: "Normalized RU Consumption, because latency rises as a container approaches its provisioned throughput."
+      isCorrect: false
+      explanation: "Normalized RU consumption reports how fully throughput is used, not how long requests take. Saturation and latency often move together, but the metric can't identify how much of an operation's duration the service accounted for."
+    - content: "Server Side Latency Direct, because it measures the time the service spends on the request rather than the round trip."
+      isCorrect: false
+      explanation: "The metric measures the right duration, but the wrong connection mode. Direct mode is available only in the .NET and Java SDKs, so a Python client connects through the gateway and reports nothing against this metric."
+    - content: "Server Side Latency Gateway, because the Python SDK connects in gateway mode."
+      isCorrect: true
+      explanation: "Server-side latency is reported separately for the two connection modes, and every SDK other than .NET and Java connects through the gateway. Comparing that figure against the elapsed time the client measures splits the total between the service and everything outside it."
+  - content: "A container using autoscale shows Normalized RU Consumption at 100 percent for several intervals, yet the provisioned throughput metric shows it never scaled to its maximum request units per second. What accounts for this?"
+    choices:
+    - content: "The autoscale maximum was reached but not recorded, because provisioned throughput is sampled less frequently than normalized RU consumption."
+      isCorrect: false
+      explanation: "Both metrics report the interval accurately. The apparent contradiction comes from what normalized RU consumption measures rather than from a sampling gap between the two."
+    - content: "Normalized RU consumption reports 100 percent when any partition key range uses its full allowance for a single second, while autoscale raises throughput to the maximum only after consumption stays at 100 percent across a sustained five-second interval."
+      isCorrect: true
+      explanation: "The metric is the maximum utilization across all partition key ranges in the interval, so one momentary spike on one range drives it to 100 percent. The sustained five-second condition applies to scaling to the maximum. A brief spike can cause a partial scale-up below that maximum."
+    - content: "The container has only one physical partition, and autoscale doesn't apply to single-partition containers."
+      isCorrect: false
+      explanation: "Autoscale applies regardless of how many physical partitions a container has. The number of partitions changes how throughput is divided, not whether the scaling logic runs."
+  - content: "An investigation confirmed a hot partition from the Normalized RU Consumption chart split by partition key range, but the team still needs to know which specific partition key value is responsible. Which diagnostic log category identifies that value?"
+    choices:
+    - content: "`PartitionKeyRUConsumption`, because it records request unit consumption per logical partition key."
+      isCorrect: true
+      explanation: "Metrics report per physical partition, which is enough to confirm skew but not to name its source. `PartitionKeyRUConsumption` aggregates request units per logical partition key each second, so summing it by `PartitionKey` puts the responsible value at the top of the result."
+    - content: "`PartitionKeyStatistics`, because it reports the storage each logical partition key consumes."
+      isCorrect: false
+      explanation: "This category answers a related but different question. It surfaces logical partition keys approaching the 20-GB storage limit, and it samples rather than recording every key. Storage skew and throughput skew are separate problems with separate evidence."
+    - content: "`ControlPlaneRequests`, because it records the account-level changes that produce uneven throughput allocation."
+      isCorrect: false
+      explanation: "Control-plane logs record changes to the account itself, such as indexing policy and throughput updates. They're useful for answering what changed, but they contain no per-request or per-partition-key consumption data."

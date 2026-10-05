@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.exercise-inspect-azure-cosmos-db-azure-mcp-server
+title: Exercise - Inspect Azure Cosmos DB with Azure MCP Server
+metadata:
+  title: Exercise - Inspect Azure Cosmos DB with Azure MCP Server
+  description: "To inspect the CosmicWorks catalog, query items, and verify the tool calls and results, use Azure MCP Server in Visual Studio Code."
+  ms.date: 09/11/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: true
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-exercise-inspect-azure-cosmos-db-azure-mcp-server.md)]

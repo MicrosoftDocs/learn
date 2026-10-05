@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-agent-memory-azure-cosmos-db.implement-semantic-memory
+title: Implement semantic memory with vector storage
+metadata:
+  title: Implement Semantic Memory with Vector Storage
+  description: "Distill conversation turns into correctable facts, store and search them in Azure Cosmos DB for NoSQL, and choose between application-owned processing and the Agent Memory Toolkit's processing backends."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-implement-semantic-memory.md)]

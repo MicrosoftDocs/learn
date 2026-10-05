@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-agent-memory-azure-cosmos-db.design-memory-retention-pruning
+title: Design memory retention, pruning, and consolidation
+metadata:
+  title: Design Memory Retention, Pruning, and Consolidation
+  description: "Set retention per memory type with time to live, retire contradictory facts with a supersession pointer instead of deleting them, and make erasure cascade across every derived layer of a memory store."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-design-memory-retention.md)]

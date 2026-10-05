@@ -4,9 +4,9 @@ title: Implement AI data security
 metadata:
   title: Implement AI data security
   description: Learn about AI data security, including the four types of data in AI systems, agent identity management, and access control strategies.
-  ms.date: 04/24/2026
-  author: ceperezb
-  ms.author: ceperezb
+  ms.date: 10/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 6
 content: |

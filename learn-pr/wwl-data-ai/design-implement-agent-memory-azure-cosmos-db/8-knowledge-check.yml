@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-agent-memory-azure-cosmos-db.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your ability to partition a memory store, configure time to live correctly, place recalled memory in a prompt, resolve a contradiction without losing the audit trail, and scope an erasure request across derived memory."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A team stores long-term agent memory in one container partitioned on the conversation thread identifier, matching the container that holds their conversation turns. Recall works in testing and gets steadily slower in production, and the request charge for recalling a returning customer's preferences grows with the length of that customer's history with the product. What explains the pattern?"
+    choices:
+    - content: "The vector index is approximate, so its recall degrades as the number of stored vectors rises."
+      isCorrect: false
+      explanation: "An approximate index trades a little accuracy for speed, and it gets relatively more useful as a container grows rather than less. It also wouldn't produce a cost that tracks one customer's tenure, because the index covers every customer's vectors equally."
+    - content: "Long-term memory items are larger than conversation turns, so each one costs more request units to read."
+      isCorrect: false
+      explanation: "A distilled fact is a sentence and a vector, which is smaller than a turn holding a full exchange. Item size also wouldn't explain a charge that grows with the length of the relationship rather than with the size of any individual record."
+    - content: "Long-term memory is read across threads for one person, so partitioning on the thread scatters that person's memories across as many logical partitions as there are conversations for that person, and every recall fans out across all of them."
+      isCorrect: true
+      explanation: "The partition key has to match the access pattern, and the access patterns of the two tiers are opposite. Conversation state is read one thread at a time, so the thread is the right key for it. Long-term memory is read for one person across every thread they opened, so it belongs on the user, or on a hierarchy whose first level is the user."
+  - content: "A developer sets a `ttl` of 2592000 on every conversation turn they write, expecting turns to disappear after 30 days. Months later, the container still holds every turn ever written. The items carry the `ttl` property with the correct value, and the container was created with no time to live configuration. What's the fix?"
+    choices:
+    - content: "Change the item `ttl` to `-1`, which is the value that enables expiry for an individual item."
+      isCorrect: false
+      explanation: "`-1` is the value that means never expire. Setting it on the items would make the current behavior explicit rather than change it."
+    - content: "Set `DefaultTimeToLive` on the container, either to `-1` so each item's own `ttl` decides, or to a positive default the items can override."
+      isCorrect: true
+      explanation: "An item's `ttl` only takes effect when time to live is enabled on the parent container. With `DefaultTimeToLive` missing, time to live is disabled for the container and every item in it, whatever the items say. Setting it to `-1` enables the feature while expiring nothing by default, which is what lets per-item values decide."
+    - content: "Add a background job that queries for turns older than 30 days and deletes them, because time to live doesn't apply to items written by an SDK."
+      isCorrect: false
+      explanation: "Time to live applies to every item regardless of how it was written, and building a deletion job to work around a one-line container setting adds request unit consumption and code the platform already provides."
+  - content: "An assistant recalls memories about the user and places them in the system message alongside its own instructions, because the system message is where the rules live. A user types a sentence containing an instruction. The extraction step stores it as a fact, and from then on, the assistant follows it in every session, including sessions the user isn't part of. Which characteristic of this failure makes it more serious than the same text arriving in a retrieved document?"
+    choices:
+    - content: "The system message is processed before the user turn, so an instruction placed there always takes precedence over anything the user asks."
+      isCorrect: false
+      explanation: "Message ordering isn't the mechanism, and a model doesn't guarantee that earlier content wins. Moving the text out of the system message is a real part of the defense, but the ordering claim isn't what makes this failure worse than a document attack."
+    - content: "Embedding the text makes it retrievable by meaning, so it matches a wider range of questions than a keyword-matched document would."
+      isCorrect: false
+      explanation: "Broader matching does raise how often the entry is recalled, but a retrieved document in a vector-indexed corpus has exactly the same property. It isn't the distinction between the two cases."
+    - content: "The instruction is persistent: it was written into durable storage, so it survives the conversation that planted it and reaches sessions the person who planted it never joins."
+      isCorrect: true
+      explanation: "A document attack has to be retrieved to act, and it acts on whoever retrieves it. Memory adds durability and reach: an entry written once is recalled indefinitely, for that user, in every future session. That durability is the argument for constraining what can be stored, keeping memory in the user turn, and never letting recalled text select a tool or authorize an action."
+  - content: "A memory store holds a fact stating a customer's budget cap, and a later conversation establishes a higher cap. The team wants retrieval to stop returning the old value. A developer proposes deleting the old record because the new one replaces it. What's the stronger design, and why?"
+    choices:
+    - content: "Keep the old record and set a supersession pointer on it to the new record's identifier, then filter out superseded records from retrieval queries."
+      isCorrect: true
+      explanation: "The old record stops competing for a place in the prompt the moment retrieval filters it, which is the outcome the team wants. Keeping it preserves how the belief changed, which is the only way to answer why the assistant said something after the fact, and it makes a bad reconciliation reversible. That reversibility matters because reconciliation is itself a model call."
+    - content: "Delete the old record, because a store holding two contradictory facts about the same subject can return either one, and removing the conflict is the only way to make retrieval deterministic."
+      isCorrect: false
+      explanation: "Filtering achieves the same retrieval behavior without discarding anything. Deletion also destroys the provenance trail at exactly the moment it becomes valuable, and it makes an incorrect reconciliation unrecoverable."
+    - content: "Keep both records active and lower the confidence on the older one, so ranking naturally prefers the newer value."
+      isCorrect: false
+      explanation: "Confidence is a measure of how sure the extractor was, not of how current a fact is, so overloading it conflates two different signals. The older record also stays eligible for retrieval, so a query whose wording favors it can still surface a value the customer replaced."
+  - content: "A customer invokes their right to erasure. An engineer runs a delete against every conversation turn belonging to that customer and reports the request complete. A week later, the assistant greets the same customer by name and refers to a preference they stated last year. What was missed?"
+    choices:
+    - content: "Time to live had already expired most of the turns, so the delete found fewer items than expected and left the rest behind."
+      isCorrect: false
+      explanation: "Expiry removes items rather than preserving them, so it would leave less data behind, not more. It also can't explain content the assistant still recalls, because an expired turn is gone from query results immediately."
+    - content: "Long-term memory is derived from the turns, so the facts, summaries, and profile built from them are separate copies in separate containers and survive the deletion of their source."
+      isCorrect: true
+      explanation: "Every derivation is the same information in another shape, in another container, under another key. Erasure has to cascade over each of them. The background processing has to be suspended first so it can't write new facts from turns mid-deletion, and the store has to be confirmed empty afterward. A partition key that groups one person's records is what makes that cascade cheap."
+    - content: "The delete removed the items but not their vector embeddings, which are stored in the vector index rather than in the container."
+      isCorrect: false
+      explanation: "The embedding is a property of the item and the vector index is built over that property, so deleting the item removes both. The surviving content is in other documents, not in the index."

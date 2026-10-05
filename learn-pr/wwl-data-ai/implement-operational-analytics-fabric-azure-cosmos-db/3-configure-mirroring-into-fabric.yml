@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.configure-mirroring-into-fabric
+title: Configure mirroring into Microsoft Fabric
+metadata:
+  title: Configure Mirroring Into Microsoft Fabric
+  description: "Enable mirroring of an Azure Cosmos DB for NoSQL database into Microsoft Fabric: continuous backup, the custom role that grants readAnalytics, connection setup, and what mirroring one database commits you to."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-configure-mirroring-into-fabric.md)]

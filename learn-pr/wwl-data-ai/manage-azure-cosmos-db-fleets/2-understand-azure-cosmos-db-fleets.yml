@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-cosmos-db-fleets.understand-azure-cosmos-db-fleets
+title: Understand Azure Cosmos DB fleets
+metadata:
+  title: Understand Azure Cosmos DB Fleets
+  description: "Explain what fleets, fleetspaces, fleetspace accounts, pools, and fleet analytics are, learn the default limits, and decide when a fleet suits a multitenant workload."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-understand-azure-cosmos-db-fleets.md)]

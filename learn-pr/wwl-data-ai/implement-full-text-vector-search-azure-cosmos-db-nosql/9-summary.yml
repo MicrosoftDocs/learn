@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Recap native keyword and semantic retrieval in Azure Cosmos DB for NoSQL, and find further reading on full-text policies, vector indexes, and embedding refresh."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]

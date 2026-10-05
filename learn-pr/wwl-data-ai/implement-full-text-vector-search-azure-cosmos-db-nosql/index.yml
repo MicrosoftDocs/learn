@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql
+metadata:
+  title: Implement Full-Text and Vector Search in Azure Cosmos DB for NoSQL
+  description: "Configure full-text policies and indexes and rank text with BM25, design vector data and vector indexes, run similarity queries with VectorDistance, and keep embeddings current with the change feed."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Implement full-text and vector search in Azure Cosmos DB for NoSQL
+summary: Add keyword and semantic retrieval to an Azure Cosmos DB for NoSQL container without adding a search service. Configure full-text and vector policies, rank results with BM25 and vector similarity, and keep embeddings aligned with the text they came from.
+abstract: |
+  After completing this module, you're able to:
+  - Configure full-text policies and indexes and query text with BM25 scoring functions.
+  - Design vector data and configure vector indexes, including vector partitioning.
+  - Implement vector search with the VectorDistance function and keep embeddings current with the change feed.
+prerequisites: |
+  - Familiarity with vector embeddings and their role in AI applications, and experience calling an embedding API such as Azure OpenAI
+  - Working knowledge of Azure Cosmos DB for NoSQL containers, items, indexing policies, and queries
+  - Programming experience with Python or C#
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- developer
+- ai-engineer
+products:
+- azure-cosmos-db
+- azure-openai
+subjects:
+- databases
+- artificial-intelligence
+units:
+- learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.introduction
+- learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.implement-full-text-search
+- learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.design-vector-data-policies
+- learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.configure-vector-indexes-partitioning
+- learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.implement-vector-search
+- learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.refresh-embeddings-change-feed
+- learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.exercise-build-native-search
+- learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.knowledge-check
+- learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.summary
+badge:
+  uid: learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.badge

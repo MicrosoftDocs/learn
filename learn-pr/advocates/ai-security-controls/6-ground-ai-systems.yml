@@ -4,9 +4,9 @@ title: Ground AI systems
 metadata:
   title: Ground AI systems
   description: Learn how grounding reduces hallucinations and security risks by connecting AI responses to verified data sources through RAG and other techniques.
-  ms.date: 04/24/2026
-  author: ceperezb
-  ms.author: ceperezb
+  ms.date: 10/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 5
 content: |

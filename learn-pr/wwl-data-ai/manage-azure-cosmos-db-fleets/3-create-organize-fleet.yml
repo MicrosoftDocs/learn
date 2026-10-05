@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-cosmos-db-fleets.create-organize-fleet
+title: Create and organize a fleet
+metadata:
+  title: Create and Organize a Fleet
+  description: "Create a fleet and a fleetspace in the Azure portal and with the Azure CLI, enroll Azure Cosmos DB accounts that span subscriptions, and choose a fleet and fleetspace layout."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-create-organize-fleet.md)]

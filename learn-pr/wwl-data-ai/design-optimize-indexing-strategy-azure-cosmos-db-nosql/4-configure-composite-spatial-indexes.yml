@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.configure-composite-spatial-indexes
+title: Configure composite and spatial indexes
+metadata:
+  title: Configure Composite and Spatial Indexes
+  description: "Define composite indexes for multi-property sorting and filtering, add spatial indexes for geospatial queries, and choose the index type a query needs."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-configure-composite-spatial-indexes.md)]

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.evaluate-request-unit-high-cost-queries
+title: Evaluate request unit consumption and high-cost queries
+metadata:
+  title: Evaluate Request Unit Consumption and High-Cost Queries
+  description: "Read the request charge of point operations and queries in C# and Python, baseline a workload before tuning it, and use Azure Monitor to find the operations that dominate consumption."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-evaluate-request-unit-high-cost-queries.md)]

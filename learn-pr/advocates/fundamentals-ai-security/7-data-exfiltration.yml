@@ -4,9 +4,9 @@ title: Data exfiltration
 metadata:
   title: Data exfiltration
   description: Learn about model, training data, and interaction data exfiltration attacks and how to prevent them.
-  ms.date: 04/24/2026
-  author: ceperezb
-  ms.author: ceperezb
+  ms.date: 10/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 6
 content: |

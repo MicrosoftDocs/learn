@@ -4,9 +4,9 @@ title: Content filters
 metadata:
   title: Content filters
   description: Learn how content filters detect and block harmful content in AI systems, including input and output filtering pipelines and configuration strategies.
-  ms.date: 04/24/2026
-  author: ceperezb
-  ms.author: ceperezb
+  ms.date: 10/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 5
 content: |

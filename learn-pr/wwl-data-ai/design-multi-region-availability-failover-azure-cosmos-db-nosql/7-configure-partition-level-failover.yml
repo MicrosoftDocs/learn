@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.configure-partition-level-failover
+title: Configure partition-level failover
+metadata:
+  title: Configure Partition-Level Failover
+  description: "Check the prerequisites for per-partition automatic failover in Azure Cosmos DB, enable it, configure the client for circuit breaking and hedging, and rehearse it with an injected fault."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/7-configure-partition-level-failover.md)]

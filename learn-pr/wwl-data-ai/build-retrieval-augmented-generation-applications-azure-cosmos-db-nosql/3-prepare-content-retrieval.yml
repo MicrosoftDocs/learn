@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.prepare-content-retrieval
+title: Prepare and embed content for retrieval
+metadata:
+  title: Prepare and Embed Content for Retrieval
+  description: "Size a retrieval unit so each result answers something on its own, separate the text you embed from the text you ground on, and store the metadata that lets a generated answer cite its sources."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-prepare-content-retrieval.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-agent-memory-azure-cosmos-db.understand-agent-memory-architectures
+title: Understand agent memory architectures
+metadata:
+  title: Understand Agent Memory Architectures
+  description: "Separate short-term conversation state from long-term memory, name the record types worth writing, and lay out the containers and partition keys that make both retrievable in Azure Cosmos DB for NoSQL."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-understand-agent-memory-architectures.md)]
