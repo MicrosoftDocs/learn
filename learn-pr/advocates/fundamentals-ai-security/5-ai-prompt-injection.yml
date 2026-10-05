@@ -4,9 +4,9 @@ title: AI prompt injection
 metadata:
   title: AI prompt injection
   description: Learn about direct and indirect prompt injection attacks and strategies to mitigate them.
-  ms.date: 04/24/2026
-  author: ceperezb
-  ms.author: ceperezb
+  ms.date: 10/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 6
 content: |

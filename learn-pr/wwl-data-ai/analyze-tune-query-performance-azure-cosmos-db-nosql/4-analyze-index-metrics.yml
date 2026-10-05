@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.analyze-index-metrics
+title: Analyze index performance metrics
+metadata:
+  title: Analyze Index Performance Metrics
+  description: "Compare retrieved and output document counts, enable index metrics in C# and Python, and read utilized and potential indexed paths to find filters the index can't serve."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-analyze-index-metrics.md)]

@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql
+metadata:
+  title: Design and Optimize an Indexing Strategy in Azure Cosmos DB
+  description: "Tune indexing policies for read-heavy and write-heavy workloads, add composite and spatial indexes, define and index computed properties, and use global secondary indexes to avoid cross-partition queries."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Design and optimize an indexing strategy in Azure Cosmos DB
+summary: Fit an Azure Cosmos DB for NoSQL indexing policy to its workload, add the composite, spatial, and computed-property indexes that specific query shapes need, and use global secondary indexes to turn cross-partition queries into single-partition ones.
+abstract: |
+  After completing this module, you're able to:
+  - Configure indexing policies for read-heavy and write-heavy workloads.
+  - Configure composite and spatial indexes and computed properties.
+  - Implement global secondary indexes to convert cross-partition queries into single-partition queries.
+prerequisites: |
+  - Experience writing queries against Azure Cosmos DB for NoSQL
+  - Experience using the Azure Cosmos DB SDK to read and write items in C# or Python
+  - Knowledge of partitioning in Azure Cosmos DB, including logical and physical partitions
+  - Basic knowledge of Azure resource management with the Azure CLI
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- cloud-computing
+- databases
+units:
+- learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.introduction
+- learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.understand-indexing-policies
+- learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.configure-indexing-policies-workloads
+- learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.configure-composite-spatial-indexes
+- learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.configure-computed-properties
+- learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.implement-global-secondary-indexes
+- learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.exercise-optimize-indexing
+- learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.knowledge-check
+- learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.summary
+badge:
+  uid: learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.badge

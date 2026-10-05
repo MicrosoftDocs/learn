@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.configure-indexing-policies-workloads
+title: Configure indexing policies for workloads
+metadata:
+  title: Configure Indexing Policies for Workloads
+  description: "Choose an include or exclude strategy, tune an indexing policy for read-heavy and write-heavy workloads, and apply the change while tracking the index transformation."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-configure-indexing-policies-workloads.md)]

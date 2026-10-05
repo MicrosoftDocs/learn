@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.use-agent-toolkits
+title: Use the agent toolkits
+metadata:
+  title: Use the Agent Toolkits
+  description: "Use the Agent Memory Toolkit and Agentic Retrieval, identify their prerequisites and integration options, and distinguish toolkit behavior from application responsibilities."
+  ms.date: 09/11/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-use-agent-toolkits.md)]

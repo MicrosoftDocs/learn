@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.fundamentals-of-ai-security
 metadata:
-  ms.author: ceperezb
-  author: ceperezb
-  ms.date: 04/24/2026
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 10/01/2026
   ms.update-cycle: 180-days
   title: Fundamentals of AI Security 
   description: Learn about AI security fundamentals including how AI security differs from traditional cybersecurity, the three-layer AI architecture model, and AI-specific attack techniques like jailbreaking, prompt injection, and data exfiltration.

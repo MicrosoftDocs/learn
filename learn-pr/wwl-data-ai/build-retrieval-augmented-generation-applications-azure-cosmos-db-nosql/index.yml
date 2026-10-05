@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql
+metadata:
+  title: Build RAG Applications with Azure Cosmos DB for NoSQL
+  description: "Work through the retrieval-augmented generation loop on Azure Cosmos DB for NoSQL: prepare content for retrieval, ground and cite a generated answer, defend the boundary between evidence and instruction, and orchestrate the pipeline for multi-turn and multi-step questions."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Build RAG applications with Azure Cosmos DB for NoSQL
+summary: Turn retrieval into answers. Prepare content so each result answers something on its own, assemble prompts that cite their sources and refuse when the evidence runs out, and wire the stages into a pipeline that survives a follow-up question.
+abstract: |
+  After completing this module, you're able to:
+  - Explain the RAG loop and the role Azure Cosmos DB for NoSQL plays in it.
+  - Prepare and embed content so retrieval returns evidence an answer can be built from.
+  - Retrieve context, ground a generated response, and keep retrieved text on the data side of the trust boundary.
+  - Orchestrate a RAG pipeline, including follow-up question resolution and multi-step retrieval.
+prerequisites: |
+  - Experience running vector, full-text, and hybrid queries in Azure Cosmos DB for NoSQL
+  - Familiarity with vector embeddings and calling an embedding API such as Azure OpenAI
+  - Working knowledge of Azure Cosmos DB for NoSQL queries, partitioning, and request units
+  - Programming experience with Python or C#
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- developer
+- ai-engineer
+products:
+- azure-cosmos-db
+- azure-openai
+subjects:
+- databases
+- artificial-intelligence
+units:
+- learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.introduction
+- learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.understand-retrieval-augmented-generation-on-cosmos-db
+- learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.prepare-content-retrieval
+- learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.retrieve-context-ground-responses
+- learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.orchestrate-retrieval-augmented-generation-pipeline
+- learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.exercise-build-retrieval-augmented-generation-assistant
+- learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.knowledge-check
+- learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.summary
+badge:
+  uid: learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.badge

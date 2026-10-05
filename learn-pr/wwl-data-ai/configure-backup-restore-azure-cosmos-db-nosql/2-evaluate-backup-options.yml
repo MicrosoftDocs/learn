@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.evaluate-backup-options
+title: Evaluate backup options
+metadata:
+  title: Evaluate Backup Options
+  description: "Compare periodic and continuous backup modes in Azure Cosmos DB, choose a continuous retention tier, and account for restore gaps and account conditions."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-evaluate-backup-options.md)]

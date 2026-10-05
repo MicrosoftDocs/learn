@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-agent-memory-azure-cosmos-db.optimize-memory-retrieval-context-injection
+title: Optimize memory retrieval and context injection
+metadata:
+  title: Optimize Memory Retrieval and Context Injection
+  description: "Divide a context window between history, retrieved knowledge, and memory, rank memories on confidence, recency, and similarity, and inject recalled text where it can't act as an instruction."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-optimize-memory-retrieval-context-injection.md)]

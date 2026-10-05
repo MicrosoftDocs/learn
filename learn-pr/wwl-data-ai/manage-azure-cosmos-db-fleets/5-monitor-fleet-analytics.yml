@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-cosmos-db-fleets.monitor-fleet-analytics
+title: Monitor a fleet with fleet analytics
+metadata:
+  title: Monitor a Fleet with Fleet Analytics
+  description: "Export hourly usage, configuration, and cost data for every account in a fleet to Microsoft Fabric or Data Lake Storage Gen2, and query the star schema it produces."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/5-monitor-fleet-analytics.md)]

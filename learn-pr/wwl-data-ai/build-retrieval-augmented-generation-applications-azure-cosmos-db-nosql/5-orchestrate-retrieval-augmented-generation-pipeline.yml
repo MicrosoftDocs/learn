@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.orchestrate-retrieval-augmented-generation-pipeline
+title: Orchestrate a RAG pipeline
+metadata:
+  title: Orchestrate a RAG Pipeline
+  description: "Assemble the RAG stages as replaceable functions, resolve a follow-up question into a standalone one before retrieving it, and decide when a question earns a multi-step retrieval pass."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/5-orchestrate-retrieval-augmented-generation-pipeline.md)]

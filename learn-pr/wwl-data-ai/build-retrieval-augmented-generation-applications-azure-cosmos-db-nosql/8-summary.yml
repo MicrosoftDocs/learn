@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Recaps the retrieval-augmented generation loop, retrieval unit sizing, grounded prompt assembly, and pipeline orchestration on Azure Cosmos DB for NoSQL, and links to further reading."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Review the AI-assisted development toolset for Azure Cosmos DB, how to choose among the tools, and the decisions each one leaves to you."
+  ms.date: 08/19/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]

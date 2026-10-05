@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Answer questions to validate your understanding of tool selection, Model Context Protocol (MCP) server scope, the Agent Memory Toolkit, agentic retrieval, and developer-owned decisions."
+  ms.date: 09/11/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "A developer joins a team that owns an unfamiliar Azure Cosmos DB for NoSQL account. Before writing any application code, they want their AI assistant in Visual Studio Code to describe the containers and sample the documents inside them. Which tool fits, and what does the developer still have to configure?"
+    choices:
+    - content: "The Agent Memory Toolkit, after installing the package and running its Azure Developer CLI template."
+      isCorrect: false
+      explanation: "The Agent Memory Toolkit is a Python library that gives an application durable memory. It doesn't connect an assistant to an existing account, and its template provisions new containers for memory rather than describing containers that already exist."
+    - content: "The Azure MCP Server, after signing in with the Azure CLI and receiving a data-plane role assignment on the account."
+      isCorrect: true
+      explanation: "The Azure MCP Server is the design-time surface. It runs alongside the editor and discovers credentials from local tooling such as the Azure CLI, so a single sign-in covers authentication. Signing in isn't sufficient on its own, because Azure Cosmos DB authorizes data-plane reads through a separate role assignment that must be created explicitly."
+    - content: "The Azure Cosmos DB MCP Toolkit, after deploying it to Azure Container Apps and issuing a bearer token."
+      isCorrect: false
+      explanation: "That toolkit does expose the right kind of operations, but it's the run-time surface for a deployed agent. Standing up a container app, an application registration, and a token to explore a container during development is far more setup than the scenario needs."
+  - content: "An agent uses the Azure MCP Server text-search tool on an indexed description property. A `CONTAINS` query in Data Explorer finds a partial-word match, but the tool doesn't. What explains the difference?"
+    choices:
+    - content: "The server's identity holds the reader role instead of the contributor role, so text search operations are rejected."
+      isCorrect: false
+      explanation: "Every Azure Cosmos DB tool the server exposes is read-only, so the reader role covers all of them. An insufficient role produces an authorization failure rather than an empty result set."
+    - content: "Schema inference didn't detect the property, so the server excluded it from the search."
+      isCorrect: false
+      explanation: "Schema inference is a separate, independent tool that samples documents and reports properties. It doesn't gate what other tools can search, and nothing about running it or skipping it changes a search result."
+    - content: "The tool uses tokenized full-text matching, while `CONTAINS` can match substrings."
+      isCorrect: true
+      explanation: "The tool uses `FullTextContains`, which matches tokens according to the configured language rules. `CONTAINS` searches for a substring. A matching substring alone doesn't establish a full-text match. An index supports efficient text search but doesn't make the two matching rules equivalent."
+  - content: "A team wants its shopping assistant to recall user preferences across sessions without implementing its own memory-processing pipeline. Which tool best fits this requirement?"
+    choices:
+    - content: "Store conversations, derive memories, and retrieve relevant user context with the Agent Memory Toolkit."
+      isCorrect: true
+      explanation: "The Agent Memory Toolkit provides durable storage and processing for conversational memory. It supports recall across sessions while the application retains responsibility for identity, access, and how it uses the results."
+    - content: "Inspect catalog documents and query product information through an editor with Azure MCP Server."
+      isCorrect: false
+      explanation: "Azure MCP Server connects an assistant to database operations. Inspecting and querying existing data doesn't add a conversation-memory processing pipeline to the application."
+    - content: "Search product documents and combine evidence across retrieval passes with the Agentic Retrieval Toolkit."
+      isCorrect: false
+      explanation: "The Agentic Retrieval Toolkit addresses questions that need evidence from a document corpus. That retrieval workflow doesn't replace storing and deriving memories from user conversations."
+  - content: "A product team is deciding between the Agentic Retrieval Toolkit and a single vector search for a support assistant. Most questions are direct lookups answered by one document, but roughly one in 20 spans several documents. What's the sound recommendation?"
+    choices:
+    - content: "Use agentic retrieval for every question, because a consistent retrieval path is easier to operate than two paths."
+      isCorrect: false
+      explanation: "Iterative retrieval issues multiple retrieval passes and multiple model calls per question. Applying it to the 95 percent of questions a single query answers correctly multiplies latency and token cost with no gain in answer quality."
+    - content: "Use a single query for the direct lookups and route only the multi-document questions to the iterative pipeline."
+      isCorrect: true
+      explanation: "Iterative retrieval earns its cost on questions where the first pass can't surface everything needed. Direct lookups don't benefit from drafting an answer, detecting gaps, and retrieving again, so routing by question type keeps the expensive path for the cases that need it."
+    - content: "Use a single query for everything and raise the number of retrieved documents, because more context makes the multi-document questions answerable."
+      isCorrect: false
+      explanation: "Retrieving more results from one query tends to return near-duplicates of the top match rather than the different evidence a multi-topic question needs. The purpose of sub-question generation is closing that gap, with optional diversity selection alongside it."
+  - content: "A team adopts the Agent Memory Toolkit and the Agentic Retrieval Toolkit, then asks which responsibilities the toolkits take over. Which statement correctly describes the boundary?"
+    choices:
+    - content: "The toolkits own security, because both authenticate with Microsoft Entra ID by default and reach the account through managed identities."
+      isCorrect: false
+      explanation: "Entra ID authentication is the recommended path, but the team still chooses which role each identity holds and at what scope. An identity granted a role at the account root can read every container in the account, which is a decision the toolkit never makes."
+    - content: "The toolkits own the data model, because the memory toolkit provisions its containers with a hierarchical partition key."
+      isCorrect: false
+      explanation: "The memory toolkit models only its own containers. The catalog or corpus those memories and retrievals describe is still the team's to model, and the retrieval toolkit explicitly asks for a partition key path per configured source."
+    - content: "The toolkits own the storage and retrieval patterns, while throughput, indexing policy, the scope of data-plane role assignments, and answer quality remain the team's responsibility."
+      isCorrect: true
+      explanation: "Each toolkit encodes a pattern, such as the memory taxonomy or the iterative retrieval loop, along with the containers it provisions for itself. For the containers the team owns, it issues requests without deciding capacity mode, provisioned throughput, or indexing policy. It doesn't scope role assignments, and no toolkit can judge whether its answers are correct against a specific corpus."

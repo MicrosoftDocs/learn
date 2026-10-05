@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.exercise-recover-recovery-point
+title: 'Exercise - Recover from a recovery point'
+metadata:
+  title: 'Exercise - Recover from a Recovery Point'
+  description: Enable continuous backup on an Azure Cosmos DB for NoSQL account, delete a product and its container, and restore both to a recorded point in time.
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-exercise-recover-recovery-point.md)]

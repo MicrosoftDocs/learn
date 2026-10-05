@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.use-cosmos-db-mcp-server
+title: Use the Azure Cosmos DB MCP server
+metadata:
+  title: Use the Azure Cosmos DB MCP Server
+  description: "Connect an AI assistant to Azure Cosmos DB with a Model Context Protocol server, review the available tools, and learn where the server's read-only boundaries sit."
+  ms.date: 09/06/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-use-cosmos-db-mcp-server.md)]

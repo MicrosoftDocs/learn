@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.exercise-mirror-and-query
+title: Exercise - Mirror an Azure Cosmos DB database and query it in Microsoft Fabric
+metadata:
+  title: Exercise - Mirror an Azure Cosmos DB Database and Query It in Microsoft Fabric
+  description: "Grant the custom role mirroring needs, mirror a database into Microsoft Fabric, read the replication status, query the mirrored tables with Transact-SQL including nested JSON, watch a change replicate, and read the same tables from Spark."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-exercise-mirror-query.md)]

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.implement-global-secondary-indexes
+title: Implement global secondary indexes
+metadata:
+  title: Implement Global Secondary Indexes
+  description: "Enable global secondary indexes, define an index container and its projection query, budget for the write surcharge, and monitor propagation latency."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-implement-global-secondary-indexes.md)]

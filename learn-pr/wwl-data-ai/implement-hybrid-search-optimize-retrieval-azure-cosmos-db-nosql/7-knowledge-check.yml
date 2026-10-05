@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your ability to select a retrieval strategy, reason about positional reciprocal rank fusion (RRF) weights, place scoring functions correctly, diagnose a filter that undoes a fusion, and weigh the cost of search isolation."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A support portal's search box receives two kinds of query: exact error codes such as `0x80070005`, and descriptions such as *the app closes when I attach a file*. Each knowledge base article stores its error codes in a `code` property and its prose in a `body` property, both covered by the full-text policy, and each article carries an embedding of its body. Which retrieval design serves both kinds of query?"
+    choices:
+    - content: "Rank with `VectorDistance` over the embedding alone, because an embedding handles exact strings as well as it handles paraphrase."
+      isCorrect: false
+      explanation: "An embedding measures resemblance and has no notion of an exact token. An error code embeds as an unremarkable short string that sits close to other short strings, so the one article a user needs isn't reliably separated from its neighbors."
+    - content: "Fuse a `FullTextScore` over the text paths with a `VectorDistance` over the embedding, using `RRF` in an `ORDER BY RANK` clause."
+      isCorrect: true
+      explanation: "The two query kinds have opposite requirements. Error codes are exact terms that BM25 scores precisely, and descriptions use vocabulary the articles might not contain, which is where similarity ranking works. Fusing both rankings covers each kind without the application having to classify the query first."
+    - content: "Rank with `FullTextScore` over both text paths alone, because the full-text policy already covers every property that holds text."
+      isCorrect: false
+      explanation: "Covering both paths decides what keyword search can match, not whether it can match. A description of a symptom often shares no terms with the article that explains it, and BM25 can't rank an article whose text lacks the query's words."
+  - content: "A developer tunes a hybrid query so keyword evidence counts twice as much as semantic evidence, writing `RRF(FullTextScore(c.body, @term), VectorDistance(c.vector, @queryVector), [2, 1])`. A later refactor reorders the two functions to put `VectorDistance` first and leaves the weights array unchanged. What's the result?"
+    choices:
+    - content: "The query fails, because the weights array no longer matches the order the functions were originally written in."
+      isCorrect: false
+      explanation: "Nothing in the query records the original order. The weights array is valid as long as it holds a number for each scoring function, so the query parses and runs exactly as before the refactor."
+    - content: "Nothing changes, because `RRF` associates each weight with the function it was written for."
+      isCorrect: false
+      explanation: "There's no association by name to fall back on. Both arguments are scoring function expressions rather than named parameters, so the only link between a weight and a function is its position in the list."
+    - content: "The query still runs and now weights semantic evidence twice as heavily as keyword evidence."
+      isCorrect: true
+      explanation: "Weights correspond to the scoring functions positionally. Moving `VectorDistance` to the first position hands it the weight of `2`, which reverses the bias the developer set. The query returns plausible results either way, so nothing reports the change and the two edits have to be reviewed together."
+  - content: "A team wants their search API to return a relevance score beside each result, so they add `RRF(...) AS score` to the `SELECT` list of a hybrid query that already works. What happens, and what should they do instead?"
+    choices:
+    - content: "The query returns the fused score as long as `TOP N` is also present, because the engine ranks the whole result set without it."
+      isCorrect: false
+      explanation: "`TOP N` limits how many items are returned, not how many candidates the engine can examine or rank. It doesn't permit `RRF` in the projection, which is rejected with or without the limit."
+    - content: "The query is rejected, because `RRF` and `FullTextScore` can't appear in the `SELECT` projection. The API can return the result order or a projectable signal such as `VectorDistance`, but not the fused score."
+      isCorrect: true
+      explanation: "`RRF` and `FullTextScore` order results and can't be projected. That design constraint isn't a syntax preference: a fused rank has no meaning outside the result set it ordered, so an absolute cutoff built on it wouldn't transfer between queries anyway."
+    - content: "The query returns null for every score, because `RRF` produces a value only when a weights array is supplied."
+      isCorrect: false
+      explanation: "The weights array is optional, and an unweighted `RRF` still produces a fused rank. The failure is about where the function is allowed to appear, not about whether it produced a value."
+  - content: "A team reduces the request charge of a hybrid query by more than half by adding `WHERE FullTextContainsAll(c.searchText, @term1, @term2)` ahead of the `RRF` clause. Within a day, users report that the search stopped finding items it used to find. What explains the regression?"
+    choices:
+    - content: "The filter removes every item that lacks the terms, including the items the vector half was added to find, so the fusion can only reorder a keyword result set."
+      isCorrect: true
+      explanation: "A `WHERE` clause runs before ranking, so it decides what gets ranked at all. Requiring the query's terms reimposes exactly the limitation that the semantic half exists to escape, and the fused query becomes a keyword query with extra steps. Filters belong to rules such as permissions or stock status, and relevance belongs in the ranking."
+    - content: "`FullTextContainsAll` can't be combined with `RRF`, so the engine silently drops the vector function from the fusion."
+      isCorrect: false
+      explanation: "The filtering functions and the scoring functions occupy different clauses and combine without conflict. Nothing is dropped, and an invalid combination would raise an error rather than change the results quietly."
+    - content: "The filter invalidates the vector index, so the similarity half falls back to a full scan and returns fewer candidates."
+      isCorrect: false
+      explanation: "A filter narrows the search scope rather than invalidating the index, and a full scan would raise the request charge instead of halving it. The charge dropped because far fewer items were ranked."
+  - content: "An order container takes a sustained heavy write load and also serves a product search feature. A team proposes moving retrieval onto a global secondary index that carries the vector and full-text indexes. Which cost matters most when deciding whether to approve it?"
+    choices:
+    - content: "The index container has to use the source container's partition key, so search queries can't be routed any better than they are today."
+      isCorrect: false
+      explanation: "An index container has its own partition key, and choosing a different one is a large part of why the feature exists. Queries that fan out on the source can route to a single partition on the index."
+    - content: "The definition query has to call the embedding model for every item, so the write path absorbs an extra model call per write."
+      isCorrect: false
+      explanation: "A definition query is a projection and can't call system functions or user-defined functions at all, let alone an external model. The searchable text and the embedding have to exist on the source item already so the definition can project them."
+    - content: "Once an index exists, replace and delete operations on the source container carry a request unit surcharge of 50 to 100 percent, which a write-heavy container pays on every one of them."
+      isCorrect: true
+      explanation: "The service persists both the previous and current versions of a changed item so the change propagates reliably, and that surcharge scales with item size. Create operations are unaffected. Isolation moves read cost off the source and adds write cost onto it, so the trade is favorable for a read-heavy catalog and needs justifying for a write-heavy container."

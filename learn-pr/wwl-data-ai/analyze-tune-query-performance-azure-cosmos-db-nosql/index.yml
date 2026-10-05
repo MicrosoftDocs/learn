@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql
+metadata:
+  title: Analyze and Tune Query and Operation Performance in Azure Cosmos DB
+  description: "Measure request unit consumption, read server-side query and index metrics to find scans and hot partitions, and reduce the cost of queries that span physical partitions."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Analyze and tune query and operation performance in Azure Cosmos DB
+summary: Diagnose an expensive Azure Cosmos DB for NoSQL query from the metrics it returns, distinguish a scan from a fan-out, and apply the remediation the evidence points to instead of raising throughput.
+abstract: |
+  After completing this module, you're able to:
+  - Evaluate request unit consumption and identify recurring high-cost queries.
+  - Analyze query performance metrics, including physical partition utilization and throttling.
+  - Analyze index performance metrics and optimize cross-partition queries.
+prerequisites: |
+  - Experience writing queries against Azure Cosmos DB for NoSQL
+  - Experience using the Azure Cosmos DB SDK to read and write items in C# or Python
+  - Knowledge of indexing policies in Azure Cosmos DB, including included and excluded paths and composite indexes
+  - Knowledge of partitioning in Azure Cosmos DB, including logical and physical partitions
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+- azure-monitor
+subjects:
+- cloud-computing
+- databases
+units:
+- learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.introduction
+- learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.evaluate-request-unit-high-cost-queries
+- learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.analyze-query-metrics
+- learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.analyze-index-metrics
+- learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.optimize-cross-partition-queries
+- learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.exercise-tune-query
+- learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.knowledge-check
+- learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.summary
+badge:
+  uid: learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.badge

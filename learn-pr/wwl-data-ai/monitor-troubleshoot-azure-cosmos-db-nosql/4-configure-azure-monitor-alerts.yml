@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.configure-azure-monitor-alerts
+title: Configure Azure Monitor alerts
+metadata:
+  title: Configure Azure Monitor Alerts
+  description: "Build metric, log, and activity log alert rules for an Azure Cosmos DB account, filter a rule by the StatusCode dimension, and choose a threshold that fires only when something is wrong."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-configure-azure-monitor-alerts.md)]

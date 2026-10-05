@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.configure-computed-properties
+title: Configure computed properties
+metadata:
+  title: Configure Computed Properties
+  description: "Define computed properties within their naming and query constraints, index them for filters, grouping, and sorting, and reference them in queries."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-configure-computed-properties.md)]

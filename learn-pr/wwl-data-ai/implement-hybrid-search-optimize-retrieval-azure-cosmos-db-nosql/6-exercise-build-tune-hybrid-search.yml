@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.exercise-build-tune-hybrid-search
+title: 'Exercise: Build and tune hybrid search'
+metadata:
+  title: 'Exercise: Build and Tune Hybrid Search'
+  description: "Load a catalog with searchable text and embeddings, measure keyword and semantic retrieval separately, fuse them with RRF, weight the fusion, and optimize the query against measured request charges."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-exercise-build-tune-hybrid-search.md)]

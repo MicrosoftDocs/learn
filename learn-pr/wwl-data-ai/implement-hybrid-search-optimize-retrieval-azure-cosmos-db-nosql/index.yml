@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql
+metadata:
+  title: Implement Hybrid Search and Optimize AI Retrieval in Azure Cosmos DB for NoSQL
+  description: "Choose a retrieval strategy, fuse keyword and vector rankings with the reciprocal rank fusion (RRF) function, weight and optimize hybrid queries for relevance and cost, and isolate search workloads with global secondary indexes."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Implement hybrid search and optimize AI retrieval in Azure Cosmos DB for NoSQL
+summary: Combine keyword and semantic retrieval in one query with Reciprocal Rank Fusion, and then tune the result for relevance, request charge, and latency. Isolate the search workload from transactional traffic when retrieval and writes compete for the same container.
+abstract: |
+  After completing this module, you're able to:
+  - Choose a full-text, vector, or hybrid retrieval strategy for a scenario.
+  - Implement hybrid search with the RRF function, including weighted hybrid queries.
+  - Optimize full-text and vector retrieval and isolate search workloads with global secondary indexes.
+prerequisites: |
+  - Experience configuring full-text policies, vector policies, and their indexes in Azure Cosmos DB for NoSQL
+  - Familiarity with vector embeddings and calling an embedding API such as Azure OpenAI
+  - Working knowledge of Azure Cosmos DB for NoSQL queries, partitioning, and request units
+  - Programming experience with Python or C#
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- developer
+- ai-engineer
+products:
+- azure-cosmos-db
+- azure-openai
+subjects:
+- databases
+- artificial-intelligence
+units:
+- learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.introduction
+- learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.choose-retrieval-strategy
+- learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.implement-hybrid-search-rrf
+- learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.optimize-fulltext-vector-performance
+- learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.isolate-search-with-gsi
+- learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.exercise-build-tune-hybrid-search
+- learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.knowledge-check
+- learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.summary
+badge:
+  uid: learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.badge

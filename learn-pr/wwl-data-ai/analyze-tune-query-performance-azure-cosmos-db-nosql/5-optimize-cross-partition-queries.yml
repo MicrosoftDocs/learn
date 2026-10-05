@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.optimize-cross-partition-queries
+title: Optimize cross-partition queries
+metadata:
+  title: Optimize Cross-Partition Queries
+  description: "Understand why a query fans out across physical partitions, scope queries to a partition key value in C# and Python, and tune the client options for queries that can't be scoped."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-optimize-cross-partition-queries.md)]

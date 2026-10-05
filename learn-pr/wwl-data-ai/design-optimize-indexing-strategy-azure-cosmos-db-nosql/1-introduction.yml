@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Frame indexing as the primary lever on query cost and latency in Azure Cosmos DB for NoSQL, and set the catalog tuning scenario the module works through."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

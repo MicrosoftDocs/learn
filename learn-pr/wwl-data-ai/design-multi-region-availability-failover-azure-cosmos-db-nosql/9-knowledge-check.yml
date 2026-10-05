@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your ability to route reads to a region, choose a failover operation, configure conflict resolution, qualify an account for per-partition automatic failover, and reason about region cost and recovery objectives."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Contoso adds North Europe as a read region to an account whose write region is West US 2, then deploys the storefront to North Europe without changing any client code. Read latency from Europe doesn't improve, and the bill goes up. What explains the result?"
+    choices:
+    - content: "Read regions serve reads only after the account is enabled for multi-region writes, so the new region isn't yet serving traffic."
+      isCorrect: false
+      explanation: "A read region serves reads as soon as replication completes. Multi-region writes governs where writes are accepted, not whether a region can serve reads."
+    - content: "A client with no configured region preference sends every request to the account's primary region, so the European deployment still reads from West US 2."
+      isCorrect: true
+      explanation: "Region selection is a client decision. Without `ApplicationPreferredRegions`, `ApplicationRegion`, or `preferred_locations`, the SDK connects to the primary region, and the new region is billed while serving nothing."
+    - content: "Replication to a newly added region is asynchronous, so reads are redirected to the write region until the replication lag clears."
+      isCorrect: false
+      explanation: "A region isn't marked available until every item replicates and commits into it. After that point, it serves reads normally, and no redirection is applied."
+  - content: "An Azure Cosmos DB account with a single write region loses that region to an outage. The on-call engineer wants write availability restored in the next few minutes. Which operation meets that requirement?"
+    choices:
+    - content: "Perform a forced failover to take the affected region offline, which promotes the read region with the highest failover priority in seconds."
+      isCorrect: true
+      explanation: "Forced failover, shown as Offline region in the portal, is the outage operation. It completes in seconds and the engineer chooses when to run it, at the risk of losing writes that hadn't replicated."
+    - content: "Perform a change write region operation to promote the healthy region, which completes without data loss."
+      isCorrect: false
+      explanation: "Change write region runs a consistency check that needs connectivity between the source and destination regions. That check can't succeed while a region is down, so the operation isn't available during an outage."
+    - content: "Enable service-managed failover on the account so the service promotes the next region by priority."
+      isCorrect: false
+      explanation: "Service-managed failover has to be enabled in advance, and declaring the outage and triggering the promotion can take an hour or more. It doesn't meet a few-minute requirement."
+  - content: "A team enables multi-region writes and sets a container's conflict resolution path to a version number their application maintains. Weeks later, some conflicts resolve on the version number and others appear to resolve on write time. What most likely explains the inconsistency?"
+    choices:
+    - content: "Conflicts arriving at a satellite region use the configured path, while conflicts arriving at the hub region always fall back to the system timestamp."
+      isCorrect: false
+      explanation: "The hub region arbitrates every conflict using the container's configured policy. Where a write first arrives determines whether it's tentative or confirmed, not which policy resolves it."
+    - content: "The conflict resolution path applies only to replace conflicts, and insert conflicts always resolve on the system timestamp."
+      isCorrect: false
+      explanation: "Last writer wins compares the configured path for both insert and replace conflicts. Only delete conflicts are special, because a delete wins regardless of the path's value."
+    - content: "Some items are written without the version property or with a non-numeric value, and the policy silently falls back to `_ts` for those items."
+      isCorrect: true
+      explanation: "When the conflict resolution path is missing or holds a value that isn't numeric, the policy defaults to `_ts` without raising an error, so a partially applied version number produces exactly this mix of outcomes."
+  - content: "An operations team plans to enable per-partition automatic failover on a production account. Most application instances run a current SDK, but a reporting service still runs an older one that the team plans to upgrade next quarter. What's the consequence of enabling the feature now?"
+    choices:
+    - content: "The reporting service loses the benefit of partition-level failover but continues to operate correctly through one, because unsupported clients fall back to account-level behavior."
+      isCorrect: false
+      explanation: "There's no fallback path. An unsupported client has no way to learn that a single partition moved, so it can't route around a partition-level failover."
+    - content: "The reporting service can keep sending writes to a region that no longer owns the affected partition, causing failed writes during the event the feature exists to survive."
+      isCorrect: true
+      explanation: "The SDK floor applies to every instance connecting to the account. Enabling the feature with a client that doesn't implement the logic can cause availability problems during a partition-level failover, so inventory the clients first."
+    - content: "The feature can't be enabled at all, because the service validates the SDK version of every connected client before applying the setting."
+      isCorrect: false
+      explanation: "The service doesn't gate the setting on connected client versions. Confirming that every instance runs a supported SDK is the operator's responsibility."
+  - content: "Contoso must guarantee that a regional outage costs no committed data at all, and separately wants writes accepted close to users on three continents. Which assessment of these two requirements is correct?"
+    choices:
+    - content: "They conflict, because a recovery point objective of zero requires strong consistency, and strong consistency can't be used with multi-region writes."
+      isCorrect: true
+      explanation: "Strong consistency is the only level with a recovery point objective (RPO) of zero for a region outage, and it isn't available on accounts configured for multiple write regions. The team has to choose which requirement takes priority."
+    - content: "They're compatible, because enabling multi-region writes makes every region a committed copy and therefore reaches a recovery point objective of zero on its own."
+      isCorrect: false
+      explanation: "With multiple write regions, a write is acknowledged after committing locally and replicates afterward, so unreplicated writes can be lost. Losing unreplicated writes is the opposite of an RPO of zero."
+    - content: "They're compatible if the account uses bounded staleness, because its staleness bounds cap data loss at zero for multi-region write accounts."
+      isCorrect: false
+      explanation: "Bounded staleness caps loss at its configured versions or time interval, not at zero, and for multiple-region accounts the minimum bounds are 100,000 write operations or 300 seconds."

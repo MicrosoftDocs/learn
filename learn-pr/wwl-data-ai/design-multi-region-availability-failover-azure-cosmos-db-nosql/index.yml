@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql
+metadata:
+  title: Design Multi-Region Availability and Failover in Azure Cosmos DB
+  description: "Distribute Azure Cosmos DB data across regions, route reads and writes from the SDK, resolve write conflicts, and configure account-level and partition-level failover."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Design multi-region availability and failover in Azure Cosmos DB
+summary: Add regions to an Azure Cosmos DB account, route reads and writes to the closest region from the SDK, resolve conflicts between write regions, and choose the failover behavior that matches your recovery objectives.
+abstract: |
+  After completing this module, you're able to:
+  - Distribute data across regions and evaluate the cost of global distribution.
+  - Configure multi-region reads and writes, including conflict resolution policies.
+  - Configure service-managed, forced, and partition-level failover.
+prerequisites: |
+  - Experience creating Azure Cosmos DB for NoSQL accounts, databases, and containers
+  - Experience using the Azure Cosmos DB SDK to read and write items in C# or Python
+  - Knowledge of Azure Cosmos DB consistency levels and their trade-offs
+  - Basic knowledge of Azure resource management with the Azure CLI
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- cloud-computing
+- databases
+units:
+- learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.introduction
+- learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.explore-global-distribution
+- learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.add-regions-configure-reads
+- learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.configure-multi-region-writes
+- learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.resolve-write-conflicts
+- learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.configure-account-failover
+- learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.configure-partition-level-failover
+- learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.exercise-configure-regions-failover
+- learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.knowledge-check
+- learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.summary
+badge:
+  uid: learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.badge
