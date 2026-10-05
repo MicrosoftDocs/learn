@@ -25,7 +25,7 @@ levels:
 roles:
 - business-owner
 products:
-- azure-sovereign-us
+- azure-us-government
 units:
 - learn.wwl.describe-government-its-structure.introduction
 - learn.wwl.describe-government-its-structure.define-levels-of-government
@@ -42,4 +42,3 @@ units:
 - learn.wwl.describe-government-its-structure.summary
 badge:
   uid: learn.wwl.describe-government-its-structure.badge
-
