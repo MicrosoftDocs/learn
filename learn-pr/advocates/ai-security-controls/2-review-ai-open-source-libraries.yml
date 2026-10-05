@@ -4,9 +4,9 @@ title: Review AI open-source libraries
 metadata:
   title: Review AI open-source libraries
   description: Learn how to evaluate open-source AI libraries for security risks, including AI-specific supply chain threats like model provenance and serialization vulnerabilities.
-  ms.date: 04/24/2026
-  author: ceperezb
-  ms.author: ceperezb
+  ms.date: 10/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 5
 content: |

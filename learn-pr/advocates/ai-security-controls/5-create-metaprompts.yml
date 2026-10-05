@@ -4,9 +4,9 @@ title: Create metaprompts
 metadata:
   title: Create metaprompts
   description: Learn how to design effective metaprompts (system prompts) as a security control, including role definition, safety rules, grounding instructions, and anti-manipulation techniques.
-  ms.date: 04/24/2026
-  author: ceperezb
-  ms.author: ceperezb
+  ms.date: 10/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 5
 content: |

@@ -4,9 +4,9 @@ title: Summary
 metadata:
   title: Summary
   description: Summary of AI security controls covered in this module, including supply chain security, content filtering, data security, metaprompts, grounding, and monitoring.
-  ms.date: 04/24/2026
-  author: ceperezb
-  ms.author: ceperezb
+  ms.date: 10/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 2
 content: |

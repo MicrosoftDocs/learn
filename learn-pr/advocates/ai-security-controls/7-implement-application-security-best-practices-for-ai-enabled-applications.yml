@@ -4,9 +4,9 @@ title: Implement application security best practices for AI enabled applications
 metadata:
   title: Implement application security best practices for AI enabled applications
   description: Learn how to apply application security best practices to AI-enabled applications, including secure SDLC, agent tool security, and monitoring.
-  ms.date: 04/24/2026
-  author: ceperezb
-  ms.author: ceperezb
+  ms.date: 10/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 6
 content: |
