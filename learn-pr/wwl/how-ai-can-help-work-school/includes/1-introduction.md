@@ -1,3 +1,5 @@
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=eab9fff2-ebd0-49bc-913a-fd98e978028e]
+
 Microsoft Copilot can help people complete tasks and stay organized at work, school, or home.
 
 People can use AI to:
