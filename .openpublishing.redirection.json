@@ -222,6 +222,11 @@
       "redirect_document_id": false
     },
     {
+       "source_path_from_root": "/learn-pr/paths/data-engineer-azure-databricks/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-databricks-data-engineer-prepare-process-data/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl/deploy-microsoft-configuration-manager/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/understand-intune-strategies/",
       "redirect_document_id": false

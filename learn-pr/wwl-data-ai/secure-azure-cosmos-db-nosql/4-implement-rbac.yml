@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-azure-cosmos-db-nosql.implement-rbac
+title: Implement role-based access control
+metadata:
+  title: Implement Role-Based Access Control
+  description: "Distinguish Azure Cosmos DB control-plane and data-plane permissions, assign a least-privilege role to a managed identity, and verify its access."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-implement-rbac.md)]

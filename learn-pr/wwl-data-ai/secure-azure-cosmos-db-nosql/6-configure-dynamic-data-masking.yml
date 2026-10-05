@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-azure-cosmos-db-nosql.configure-dynamic-data-masking
+title: Configure dynamic data masking
+metadata:
+  title: Configure Dynamic Data Masking
+  description: "Configure Azure Cosmos DB for NoSQL dynamic data masking policies and managed identity permissions, and validate masked responses and feature limitations."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-configure-dynamic-data-masking.md)]

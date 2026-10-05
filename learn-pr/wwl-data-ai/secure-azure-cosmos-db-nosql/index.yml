@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.secure-azure-cosmos-db-nosql
+metadata:
+  title: Secure an Azure Cosmos DB Solution
+  description: "Secure an Azure Cosmos DB account with Microsoft Entra authentication, key rotation, scoped role assignments, network isolation, and dynamic data masking."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Secure an Azure Cosmos DB solution
+summary: Secure an Azure Cosmos DB account by configuring Microsoft Entra and key-based authentication, role-based access control across the control and data planes, network isolation, and dynamic data masking.
+abstract: |
+  After completing this module, you're able to:
+  - Implement Microsoft Entra authentication and configure key-based authentication with key rotation.
+  - Differentiate control-plane and data-plane access and implement role-based access control.
+  - Configure private endpoints, service endpoints, firewall rules, and dynamic data masking.
+prerequisites: |
+  - Experience creating Azure Cosmos DB for NoSQL accounts, databases, and containers
+  - Experience using the Azure Cosmos DB SDK to read items and run queries in C# or Python
+  - Basic knowledge of Azure identities, role assignments, and virtual networking
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- cloud-computing
+- databases
+units:
+- learn.wwl.secure-azure-cosmos-db-nosql.introduction
+- learn.wwl.secure-azure-cosmos-db-nosql.implement-entra-authentication
+- learn.wwl.secure-azure-cosmos-db-nosql.configure-key-authentication-rotation
+- learn.wwl.secure-azure-cosmos-db-nosql.implement-rbac
+- learn.wwl.secure-azure-cosmos-db-nosql.configure-network-security
+- learn.wwl.secure-azure-cosmos-db-nosql.configure-dynamic-data-masking
+- learn.wwl.secure-azure-cosmos-db-nosql.exercise-secure-account
+- learn.wwl.secure-azure-cosmos-db-nosql.knowledge-check
+- learn.wwl.secure-azure-cosmos-db-nosql.summary
+badge:
+  uid: learn.wwl.secure-azure-cosmos-db-nosql.badge

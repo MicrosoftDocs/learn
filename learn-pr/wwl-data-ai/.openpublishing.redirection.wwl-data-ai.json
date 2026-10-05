@@ -2622,6 +2622,146 @@
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-data-storage-processing-azure/index.md",
       "redirect_url": "/training/modules/explore-azure-synapse-analytics/"
     },
+     {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/build-data-pipeline-with-delta-live-tables/1-introduction.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/build-data-pipeline-with-delta-live-tables/2-explore-delta-live-tables.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/build-data-pipeline-with-delta-live-tables/3-data-ingestion-and-integration.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/build-data-pipeline-with-delta-live-tables/4-real-time-processing.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/build-data-pipeline-with-delta-live-tables/5-exercise-data-pipeline.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/build-data-pipeline-with-delta-live-tables/6-knowledge-check.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/build-data-pipeline-with-delta-live-tables/7-summary.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/build-data-pipeline-with-delta-live-tables/index.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/deploy-workloads-with-databricks-workflows/1-introduction.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/deploy-workloads-with-databricks-workflows/2-what-are-azure-databricks-workflows.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/deploy-workloads-with-databricks-workflows/3-key-components-of-azure-databricks-workflows.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/deploy-workloads-with-databricks-workflows/4-benefits-of-azure-databricks-workflows.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/deploy-workloads-with-databricks-workflows/5-deploying-workloads-using-azure-databricks-workflows.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/deploy-workloads-with-databricks-workflows/6-exercise-workflows.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/deploy-workloads-with-databricks-workflows/7-knowledge-check.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/deploy-workloads-with-databricks-workflows/8-summary.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/deploy-workloads-with-databricks-workflows/index.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/perform-data-analysis-azure-databricks/01-introduction.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/perform-data-analysis-azure-databricks/02-ingest-data.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/perform-data-analysis-azure-databricks/03-data-exploration-tools.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/perform-data-analysis-azure-databricks/04-data-analysis.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/perform-data-analysis-azure-databricks/05-exercise.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/perform-data-analysis-azure-databricks/06-knowledge-check.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/perform-data-analysis-azure-databricks/07-summary.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/perform-data-analysis-azure-databricks/index.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/use-delta-lake-azure-databricks/01-introduction.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/use-delta-lake-azure-databricks/02-understand-delta-lake.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/use-delta-lake-azure-databricks/03-manage-acid-transactions.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/use-delta-lake-azure-databricks/04-implement-schema-enforcement.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/use-delta-lake-azure-databricks/05-data-versioning-and-time-travel-in-delta-lake.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/use-delta-lake-azure-databricks/06-data-integrity-with-delta-lake.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/use-delta-lake-azure-databricks/07-exercise-use-delta-lake.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/use-delta-lake-azure-databricks/08-knowledge-check.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/use-delta-lake-azure-databricks/09-summary.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/use-delta-lake-azure-databricks/index.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-prepare-process-data/"
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-differential-privacy/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/manage-compare-models-azure-machine-learning/"
