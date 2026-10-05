@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.explore-global-distribution
+title: Explore global distribution and availability
+metadata:
+  title: Explore Global Distribution and Availability
+  description: "Examine how Azure Cosmos DB replicates data through replica sets and partition sets, compare zone redundancy with regional redundancy, and weigh region cost against recovery objectives."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-explore-global-distribution.md)]

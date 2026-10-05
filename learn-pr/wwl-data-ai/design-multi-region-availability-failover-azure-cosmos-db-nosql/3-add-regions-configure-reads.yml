@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.add-regions-configure-reads
+title: Add regions and route reads
+metadata:
+  title: Add Regions and Route Reads
+  description: "Add and remove regions on an Azure Cosmos DB account, set failover priorities, and configure a preferred region list in the .NET and Python SDKs so clients read from the closest region."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-add-regions-configure-reads.md)]

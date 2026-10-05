@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.resolve-write-conflicts
+title: Resolve write conflicts
+metadata:
+  title: Resolve Write Conflicts
+  description: "Choose a conflict resolution policy for an Azure Cosmos DB container, write a merge stored procedure, and read unresolved conflicts from the conflict feed."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-resolve-write-conflicts.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Recap global distribution, read region routing, multi-region writes, conflict resolution, account failover, and per-partition automatic failover in Azure Cosmos DB."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-summary.md)]
