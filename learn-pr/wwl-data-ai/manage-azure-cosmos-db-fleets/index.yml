@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.manage-azure-cosmos-db-fleets
+metadata:
+  title: Manage Azure Cosmos DB at Scale with Fleets
+  description: "Organize many Azure Cosmos DB accounts into a fleet, share throughput across accounts and subscriptions with fleetspace pools, and analyze estate-wide usage and cost with fleet analytics."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Manage Azure Cosmos DB at scale with fleets
+summary: Run a multitenant Azure Cosmos DB estate as one unit. Group accounts into a fleet, share throughput with a pool instead of provisioning every tenant for its peak, and answer estate-wide usage and cost questions from a single dataset.
+abstract: |
+  After completing this module, you're able to:
+  - Describe how Azure Cosmos DB fleets organize multitenant workloads across accounts and subscriptions.
+  - Configure fleet-level throughput management by using fleetspaces and pools.
+  - Configure fleet monitoring with fleet analytics.
+prerequisites: |
+  - Knowledge of request units and throughput models in Azure Cosmos DB, including manual and autoscale throughput
+  - Knowledge of monitoring Azure Cosmos DB with metrics in Azure Monitor
+  - Basic understanding of multitenant application patterns
+  - Basic familiarity with Azure subscriptions, resource groups, and the Azure portal
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+- azure-monitor
+subjects:
+- cloud-computing
+- databases
+units:
+- learn.wwl.manage-azure-cosmos-db-fleets.introduction
+- learn.wwl.manage-azure-cosmos-db-fleets.understand-azure-cosmos-db-fleets
+- learn.wwl.manage-azure-cosmos-db-fleets.create-organize-fleet
+- learn.wwl.manage-azure-cosmos-db-fleets.configure-fleet-throughput-pools
+- learn.wwl.manage-azure-cosmos-db-fleets.monitor-fleet-analytics
+- learn.wwl.manage-azure-cosmos-db-fleets.exercise-create-monitor-fleet
+- learn.wwl.manage-azure-cosmos-db-fleets.knowledge-check
+- learn.wwl.manage-azure-cosmos-db-fleets.summary
+badge:
+  uid: learn.wwl.manage-azure-cosmos-db-fleets.badge

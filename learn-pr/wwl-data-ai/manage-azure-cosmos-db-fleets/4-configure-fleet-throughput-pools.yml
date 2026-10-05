@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-cosmos-db-fleets.configure-fleet-throughput-pools
+title: Configure fleet-level throughput with pools
+metadata:
+  title: Configure Fleet-Level Throughput with Pools
+  description: "Share request units across accounts with a fleetspace pool, size and price the pool, apply the rules that decide which accounts can share one, and confirm consumption in Azure Monitor."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-configure-fleet-throughput-pools.md)]

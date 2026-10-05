@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-cosmos-db-fleets.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Frame the operational cost of running one Azure Cosmos DB account per tenant, and introduce fleets as the way to manage throughput and monitoring across the whole estate."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]
