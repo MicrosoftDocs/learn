@@ -1,0 +1,39 @@
+Contoso uses managed identity as the default for its application, but an integration still requires an Azure Cosmos DB account key. You need to protect that credential and replace it without interrupting dependent workloads. Unlike the identity-based connection in the previous unit, this connection introduces a secret that your team manages. Your task is to choose an appropriate key, control its distribution, and prove that consumers use its replacement before retiring the old value.
+
+## Choose the appropriate account key
+
+Azure Cosmos DB provides primary and secondary **read-write keys**, and primary and secondary **read-only keys**. Read-write keys allow full control of account resources, including reading and changing data. Read-only keys allow reads across the account without data changes. Within either pair, primary and secondary provide equivalent access. Secondary doesn't mean lower privilege or automatic failover. The two slots let you replace one credential while applications use the other.
+
+For Contoso's read-only integration, choose a read-only key rather than a read-write key. However, that choice doesn't limit access to the `cosmicworks` database or the `product` container. Unlike a scoped data-plane role assignment, an account key doesn't express permissions for an individual application or container. Any holder of the key shares its broad access. Use Microsoft Entra authentication when you need identity-specific permissions and narrower resource scope.
+
+This distinction also explains why keys remain a fallback, not a repair for an incorrect role assignment. Don't replace the managed identity connection merely because a request fails. When an integration genuinely requires keys, configure its account endpoint separately from the secret and protect both its distribution and use. A valid key doesn't bypass account network restrictions.
+
+## Separate secret storage from database access
+
+Store the account key as a **secret in Azure Key Vault**, not in source code, deployment output, or logs. Authenticate the application's access to Key Vault with Microsoft Entra identity. For supported Azure hosts, retain the previous unit's production pattern of an explicit `ManagedIdentityCredential`. For local development, use `DefaultAzureCredential` with the intended developer identity and verify that identity's access.
+
+There are two separate authorization boundaries. Key Vault secret permissions determine whether the identity can retrieve the stored credential. Azure Cosmos DB then accepts the account key for database requests. Permission to read the vault secret doesn't create a Cosmos DB data-plane role assignment, although possession of the retrieved key enables the access that key permits. Likewise, permission to list or regenerate Cosmos DB account keys is a separate account-management permission. The consuming application doesn't need key-regeneration permission merely to retrieve a secret and connect.
+
+Key Vault storage alone doesn't regenerate Cosmos DB account keys or refresh credentials inside existing application clients. Assign responsibility for both operations. The rotation operator needs appropriate account-management and secret-update permissions, while the application needs only the secret access required for its work. Determine how each consumer reloads configuration or replaces its client credential. Updating a vault secret without that application behavior leaves cached values in use.
+
+## Rotate through an inactive key
+
+For routine rotation, start with evidence about which key each consumer uses. The following sequence assumes every consumer of the selected pair currently uses primary. Apply it independently to the read-write or read-only pair. If secondary is active instead, reverse the names. If consumers use both slots, first coordinate their move to one current key and verify that the other is unused. Don't regenerate either slot based on its name alone.
+
+1. **Inventory consumers and confirm the inactive slot.** Include application instances, deployment slots, background jobs, scheduled processes, and operational tools. Record each consumer's key slot and configuration source without recording key values. Check cached secrets and client configuration, not only the central secret store.
+2. **Regenerate the inactive secondary key.** Wait for the account's regeneration operation to complete. Regeneration can take from 1 minute to multiple hours, depending on account size. Check operation completion rather than assuming a fixed sleep interval guarantees readiness. Keep primary unchanged throughout this stage.
+3. **Store and validate the new secondary value.** Put the replacement in Key Vault through your approved secret-handling process. Test a consumer explicitly configured with that new value from its intended environment. For a read-only integration, read an existing product using its actual item ID and partition key. Don't invent dataset values or treat client construction as proof of access.
+4. **Switch every consumer to secondary.** Update secret references or configuration and execute each application's credential-refresh process. Reload cached secrets and refresh or replace affected clients as the application requires. Include long-running processes and jobs that don't participate in the main application rollout.
+5. **Validate the completed rollout.** Confirm successful workload requests from all consumers and verify their active configuration identifies the replacement. Check background jobs when they execute, or explicitly validate their configuration and credential-loading behavior before proceeding. A healthy web application alone doesn't prove that an overnight job no longer depends on primary.
+6. **Regenerate the former primary key.** Proceed only after no consumer depends on its old value. If validation fails earlier, keep primary valid while you correct the rollout. Once you regenerate primary, its old value is no longer a recovery option. Again, wait for regeneration to complete.
+7. **Secure the new standby value.** Update the stored primary value and validate it through a controlled check. Leave production consumers on secondary and record primary as the inactive slot for the next rotation. Don't distribute the standby credential to unrelated consumers.
+
+Learn more about [rotating Azure Cosmos DB account keys](/azure/cosmos-db/how-to-rotate-keys).
+
+## Make rotation an operational routine
+
+For Contoso's release evidence, record the active slot, secret version identifiers, consumer owners, validation results, and regeneration completion times. Keep key values out of that record. This record gives operations a way to distinguish a completed rollout from a secret update, while security reviewers can check who retrieves and rotates credentials. Product owners also get evidence that the integration's required operations continue during the change, rather than an unsupported promise of zero downtime.
+
+If every consumer migrates to Microsoft Entra authentication, have an authorized account administrator set `disableLocalAuth` to `true` to reject key-based requests. First, verify each consumer's identity-based operations, including scheduled jobs and operational tools. This setting affects the entire account, so keep key access enabled while Contoso's fallback integration still needs it. After the change, confirm that identity-based requests succeed and key-based requests fail. See [disable key-based authentication](/azure/cosmos-db/how-to-connect-role-based-access-control#disable-key-based-authentication).
+
+Authentication establishes how the application connects, but permissions determine the scope of its access. The next unit examines role-based access control across the account-management and data planes, including the permissions that govern access to account keys.

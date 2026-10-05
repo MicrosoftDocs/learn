@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-azure-cosmos-db-nosql.exercise-secure-account
+title: 'Exercise - Secure an account'
+metadata:
+  title: 'Exercise - Secure an Account'
+  description: Secure an Azure Cosmos DB for NoSQL account with Microsoft Entra authentication, a managed identity, scoped data-plane roles, and network access restrictions.
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/7-exercise-secure-account.md)]

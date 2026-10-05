@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-azure-cosmos-db-nosql.configure-network-security
+title: Configure network security
+metadata:
+  title: Configure Network Security
+  description: "Configure Azure Cosmos DB private endpoints, service endpoints, and IP firewall rules, and verify allowed and denied network access."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-configure-network-security.md)]
