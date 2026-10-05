@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.exercise-diagnose-alert
+title: "Exercise: Diagnose throttling and configure an alert"
+metadata:
+  title: "Exercise: Diagnose Throttling and Configure an Alert"
+  description: "Enable diagnostic logging, drive a container past its provisioned throughput, confirm the rate limiting from client diagnostics, Azure Monitor metrics, and Log Analytics, then create an alert rule."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-exercise-diagnose-alert.md)]
