@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your ability to tune an indexing policy for a workload, design a composite index, index a computed property, qualify an account for global secondary indexes, and sequence an indexing policy change."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A container takes heavy write traffic. Its items carry a long `description` string and a `tags` array, and no query filters or sorts on either one. The team wants to cut the write charge without losing any query capability. Which policy change cuts the write charge without losing any query capability?"
+    choices:
+    - content: "Set the indexing mode to `none`, because the container is written far more often than it's queried."
+      isCorrect: false
+      explanation: "Setting the mode to `none` disables indexing entirely. Filters can require full scans, and `ORDER BY` queries fail without their required indexes. It also blocks time to live, which can't be active on a container whose indexing mode is `none`."
+    - content: "Exclude the root path `/*` and leave the included paths empty, so only the system properties are indexed."
+      isCorrect: false
+      explanation: "An opt-in policy with no included paths also removes indexes from user-defined properties that existing queries need. Filters on those properties can require full scans, and sorting on an unindexed property fails. The automatic indexes on `id` and `_ts` remain."
+    - content: "Keep `/*` in the included paths and add `/description/?` and `/tags/*` to the excluded paths."
+      isCorrect: true
+      explanation: "An opt-out policy removes the two unqueried paths from the index while continuing to index everything else, including properties added to the model later. Write charges fall and no existing query changes behavior."
+  - content: "An application runs `SELECT * FROM c WHERE c.categoryId = @id ORDER BY c.categoryId, c.price DESC` against a container that spans several physical partitions, and the query fails. Which composite index makes it succeed?"
+    choices:
+    - content: "`(price DESC, categoryId ASC)`, because the sorted property has to be defined before the filtered one."
+      isCorrect: false
+      explanation: "The sequence of composite paths has to match the sequence of properties in the `ORDER BY` clause. A composite index that reverses that sequence can't serve the query."
+    - content: "`(categoryId ASC, price DESC)`, matching both the sequence and the sort direction of the `ORDER BY` clause."
+      isCorrect: true
+      explanation: "An `ORDER BY` on two or more properties requires a composite index whose paths appear in the same sequence with matching order values. This index also serves the fully reversed clause, `categoryId DESC, price ASC`."
+    - content: "A range index on `/price/?`, because the default policy already indexes `categoryId` and only the sorted property is missing."
+      isCorrect: false
+      explanation: "Range indexes serve an `ORDER BY` on a single property. Sorting on two properties needs a composite index regardless of which range indexes exist."
+  - content: "A team defines a computed property named `cp_primaryCategory` and adds it to the container. Queries that use it in a `WHERE` clause return correct results, but `SELECT *` never shows the property and an `ORDER BY cp_primaryCategory` query fails. What explains both symptoms?"
+    choices:
+    - content: "Wildcard projections don't return computed properties, and computed properties have to be indexed explicitly before a query can order by them."
+      isCorrect: true
+      explanation: "Wildcard projections return persisted properties only, so a computed property has to be named in the `SELECT` clause. Ordering on any property requires an index, and the `/*` wildcard doesn't cover computed properties, so the path needs adding to the indexing policy."
+    - content: "The computed property's query is nondeterministic, so the service evaluates it only when a filter forces it to."
+      isCorrect: false
+      explanation: "A nondeterministic query is rejected when the computed property is created, so a definition using something like `GetCurrentDateTime` never reaches the container in the first place."
+    - content: "The container is at its limit of 20 computed properties, so the newest definition is evaluated for filters but not persisted for projection or sorting."
+      isCorrect: false
+      explanation: "Exceeding the limit of 20 computed properties fails the container update outright. There's no partial mode in which a computed property works for filters and not for other clauses."
+  - content: "An operations team wants to add a global secondary index to a production container that's replaced thousands of times an hour. The account was created with the default backup policy. What has to be true before this plan can go ahead?"
+    choices:
+    - content: "The source container has to be migrated to autoscale throughput, because the synchronization job reads the change feed from it."
+      isCorrect: false
+      explanation: "Autoscale throughput is required on the index container, not on the source. The source keeps whatever throughput model it already uses."
+    - content: "The account has to be switched to a single write region, because change feed reads and index writes can only run in one region."
+      isCorrect: false
+      explanation: "Accounts with multiple write regions are supported. Change feed reads and index writes run in one of the write regions and move with the write region after a failover."
+    - content: "The account has to be moved to continuous backups, and because that migration can't be reversed, the team has to accept it as a permanent change."
+      isCorrect: true
+      explanation: "Continuous backups are a prerequisite for enabling global secondary indexes. An account on the periodic policy can be migrated to continuous mode, but that migration is one way. The team also has to budget for the 50 to 100 percent surcharge that replaces and deletes on the source incur once an index exists."
+  - content: "A developer plans to replace a single-property index on `/price/?` with a composite index on `(categoryId, price)`. What's the safe sequence, and why?"
+    choices:
+    - content: "Remove the single-property index first, so the transformation has less work to do when the composite index is added."
+      isCorrect: false
+      explanation: "Removing an index takes effect immediately. Queries relying on that path can fall back to a full scan or fail while the composite index is still building."
+    - content: "Add the composite index, wait for the index transformation to complete, then remove the single-property index in a second update."
+      isCorrect: true
+      explanation: "Adding an index requires a transformation before queries benefit from it, while removing one takes effect at once. Confirm that the composite index supports every affected query. Then add it, wait for the transformation to complete, and only then remove the old index."
+    - content: "Submit both changes in one update, because a single transformation always returns consistent results and completes faster than two."
+      isCorrect: false
+      explanation: "Grouping changes into one update is the right advice for multiple removals. Pairing a removal with an addition in one update still leaves the removed path unusable while the new index builds."

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.exercise-optimize-indexing
+title: 'Exercise: Optimize an indexing strategy'
+metadata:
+  title: "Exercise: Optimize an Indexing Strategy"
+  description: "Measure a baseline, trim an indexing policy, add a composite index, and create a global secondary index, comparing the request charge after each change."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/7-exercise-optimize-indexing.md)]

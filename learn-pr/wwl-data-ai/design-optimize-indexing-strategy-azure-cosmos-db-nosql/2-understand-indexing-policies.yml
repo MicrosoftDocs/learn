@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql.understand-indexing-policies
+title: Understand indexing policies
+metadata:
+  title: Understand Indexing Policies
+  description: "Examine how Azure Cosmos DB builds an inverted index, what the default indexing policy covers, how included and excluded paths work, and how the query engine uses the index."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-understand-indexing-policies.md)]
