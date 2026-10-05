@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.exercise-tune-query
+title: "Exercise: Tune a high-cost query"
+metadata:
+  title: "Exercise: Tune a High-Cost Query"
+  description: "Baseline three operations against a product catalog, prove a scan with query metrics, rewrite the filter so the index serves it, add a composite index, and compare fan-out with single-partition routing."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-exercise-tune-query.md)]

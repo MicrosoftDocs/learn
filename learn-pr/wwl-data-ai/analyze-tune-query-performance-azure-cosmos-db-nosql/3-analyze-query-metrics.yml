@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.analyze-query-metrics
+title: Analyze query performance metrics
+metadata:
+  title: Analyze Query Performance Metrics
+  description: "Read the server-side query metrics an Azure Cosmos DB for NoSQL query returns, compare the request charge across physical partitions, and distinguish the four causes of a 429 response."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-analyze-query-metrics.md)]

@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Check your ability to read query and index metrics, diagnose a 429 response, choose a remediation for a high-cost query, and predict how a filter routes across physical partitions."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A query returns 40 items and charges 380 request units (RU). Its metrics report a retrieved document count of 92,000, an output document count of 40, and an index lookup time near zero. What does this pattern indicate?"
+    choices:
+    - content: "The query fans out across every physical partition, so adding the partition key to the filter is the remediation."
+      isCorrect: false
+      explanation: "A query can fan out and scan documents at the same time. These metrics point to document scanning, but they don't establish how many physical partitions the query visits. A count gap also doesn't mean that every part of the filter lacks an index."
+    - content: "The container's provisioned throughput is too low for the query, so raising the throughput reduces the charge."
+      isCorrect: false
+      explanation: "Provisioned throughput sets how many request units are available per second. Raising it doesn't remove the work that makes this query expensive. To reduce that work, tune the query or its indexes."
+    - content: "At least one part of the filter couldn't use the index, so the engine loaded documents and evaluated the filter against each one."
+      isCorrect: true
+      explanation: "A retrieved count far above the output count is the signature of a scan. The near-zero index lookup time confirms it, because the engine spent no meaningful time in the index layer. Look for a filter the index can't serve, such as a case-conversion function, or a queried path the indexing policy excludes."
+  - content: "Two containers each report 8 percent of requests returning a 429 status code. In the first, every partition key range sits near 95 percent normalized RU consumption. In the second, one range sits at 100 percent while the rest stay below 25 percent. What's the correct remediation for the second container?"
+    choices:
+    - content: "Investigate the partition key, because a single physical partition is absorbing a disproportionate share of the requests."
+      isCorrect: true
+      explanation: "Throughput is distributed evenly across partition key ranges, so a single range pinned at 100 percent while the others idle means the request volume is skewed toward a small set of logical partition key values. Adding throughput spreads the extra capacity evenly and mostly lands where it isn't needed."
+    - content: "Raise the provisioned throughput on the container, because 8 percent of requests exceeding capacity is above the healthy range."
+      isCorrect: false
+      explanation: "Raising throughput is the right answer for the first container, where every range is near capacity. In the second container, it buys capacity for idle partitions while the hot one receives only its even share of the increase."
+    - content: "Take no action, because the SDK retries rate-limited requests automatically and the application never observes the error."
+      isCorrect: false
+      explanation: "Each SDK retries automatically, which is why 429 responses appear in metrics that the application never sees. Retries still add latency, and 8 percent sits above the 1 to 5 percent range that indicates healthy full use of provisioned throughput."
+  - content: "Index metrics for a query list `/status/?` under **Potential Single Indexes** with an index impact score of **High**. Almost every item in the container has the same value for `status`. What conclusion is correct?"
+    choices:
+    - content: "The path is guaranteed to reduce the query's request charge, because the impact score already accounts for how many items match the filter."
+      isCorrect: false
+      explanation: "The index impact score is computed from the query shape alone, before any data is considered. It can't account for how selective the filter turns out to be against real data."
+    - content: "The path is a hypothesis worth testing, because a High score reflects the query shape rather than the selectivity of the data."
+      isCorrect: true
+      explanation: "Potential indexed paths are recommendations rather than evidence, and the impact score describes the likelihood based on how the filter is written. When nearly every item matches the filter, the index has little to exclude, so add the path, rerun the query, and compare the charge against the baseline."
+    - content: "The path is already in use, so no policy change is needed and the metrics are reporting it for completeness."
+      isCorrect: false
+      explanation: "The paths the query used appear under the utilized sections. Anything listed as potential isn't in the indexing policy yet, or the query as written doesn't use it."
+  - content: "A `product` container is partitioned on `/categoryId` and has four physical partitions. Which filter forces the query to check every physical partition's index?"
+    choices:
+    - content: "`WHERE c.categoryId = 'AE48F0AA-4F65-4734-A4CF-D48B8F82267F' AND c.price > 1000`"
+      isCorrect: false
+      explanation: "An equality filter on the partition key lets the service hash the value and route the query to the single physical partition that owns that hash range. The price filter is evaluated inside that one partition."
+    - content: "`WHERE c.categoryId IN ('AE48F0AA-4F65-4734-A4CF-D48B8F82267F', '75BF1ACB-168D-469C-9AA3-1FD26BB4EA4C')`"
+      isCorrect: false
+      explanation: "An `IN` filter listing partition key values resolves to the partitions owning those values, so the query checks one or two partitions rather than all of them."
+    - content: "`WHERE c.categoryId > 'AE48F0AA-4F65-4734-A4CF-D48B8F82267F'`"
+      isCorrect: true
+      explanation: "Partitioning is hash-based, so a range of partition key values has no relationship to a range of hash values and the service can't exclude any partition. A range comparison on the partition key fans out exactly as a query with no partition key filter does."
+  - content: "A developer wants to prove that rewriting a query reduced its cost. Which measurement gives a reliable before-and-after comparison?"
+    choices:
+    - content: "The request charge, summed across every page of results, with the page size held constant between runs."
+      isCorrect: true
+      explanation: "Request charge measures query cost directly. Use the same data and account settings when comparing the two query versions, and keep the query options stable. Sum the charges across all pages. Page size and page count can affect the total charge."
+    - content: "The wall-clock time the call takes to return, averaged over several executions."
+      isCorrect: false
+      explanation: "End-to-end latency mixes server-side execution with network transit and client-side merging, and it varies between runs on identical work. It's useful for confirming a latency fix, but it can't isolate the effect of a query change on cost."
+    - content: "The normalized RU consumption percentage reported for the container during the test."
+      isCorrect: false
+      explanation: "Normalized RU consumption reports the highest utilization across partition key ranges in a one-minute interval. It describes how close the container is to its provisioned capacity, not what an individual query costs."
