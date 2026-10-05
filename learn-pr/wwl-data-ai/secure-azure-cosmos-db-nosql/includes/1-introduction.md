@@ -1,0 +1,9 @@
+Securing an Azure Cosmos DB solution starts with decisions about who connects, what they can do, where requests originate, and which customer fields they need to see. As a developer, you make these choices before an account enters production and revisit them as application requirements change.
+
+Suppose you're a developer at Contoso preparing an account for production. The application needs an identity, permissions limited to its work, and access from approved networks. The team also needs to consider masking sensitive customer fields. These choices illustrate the security decisions you face in your own applications. They aren't a sequence of tasks to follow against a shared account or dataset.
+
+This module starts with Microsoft Entra authentication and managed identities for application access. You then examine key-based authentication and key rotation for applications that use account keys. Building on authentication, you distinguish control-plane permissions for managing the account from data-plane permissions for working with its data. You use that distinction to apply role-based access control (RBAC) and choose least-privilege roles for each identity.
+
+Next, you examine private endpoints, service endpoints, and firewall rules as network controls. You also consider dynamic data masking in relation to sensitive field exposure. C# provides the primary examples, with Python alternatives. The module concludes with an exercise, an assessment, and a summary of the security decisions.
+
+By the end of this module, you can select authentication methods, plan key rotation, distinguish and apply permissions across both planes, and choose network controls while accounting for sensitive customer field exposure.

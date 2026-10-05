@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-azure-cosmos-db-nosql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your ability to choose authentication, role assignments, network controls, and masking permissions for an Azure Cosmos DB solution."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Contoso replaces its Azure application host during deployments. The application needs an identity that retains its role assignments across host replacements without storing credentials. Which approach meets this requirement?"
+    choices:
+    - content: "Enable a system-assigned identity on each replacement host and treat it as the same principal."
+      isCorrect: false
+      explanation: "A system-assigned identity belongs to its host. A replacement host has a different principal, so the previous host's role assignments don't transfer to it."
+    - content: "Configure each replacement host to use the developer's signed-in identity as its production credential."
+      isCorrect: false
+      explanation: "A developer identity represents a person, not the deployed workload. Depending on that person's session doesn't provide an independently managed application identity."
+    - content: "Attach the same user-assigned identity to each replacement host and select it explicitly in application credentials."
+      isCorrect: true
+      explanation: "A user-assigned managed identity has a lifecycle independent of its host. Reusing that identity preserves its principal and role assignments without application-managed secrets."
+  - content: "Every consumer of a Cosmos DB account's read-only key pair uses primary, and secondary is confirmed unused. Which routine rotation sequence maintains access while replacing both key values?"
+    choices:
+    - content: "Regenerate secondary, validate it, switch and verify every consumer, then regenerate primary and secure its replacement."
+      isCorrect: true
+      explanation: "The unused slot provides a replacement while primary remains valid. Verifying every consumer's switch before regenerating primary prevents invalidating a credential still in use."
+    - content: "Regenerate primary, update the vault secret, verify every consumer, then regenerate secondary and secure its replacement."
+      isCorrect: false
+      explanation: "Regenerating primary first invalidates the credential consumers still use. Updating a vault secret afterward doesn't prevent failures or automatically refresh cached client credentials."
+    - content: "Regenerate secondary, update the vault secret, regenerate primary, then verify that all consumers reload the secret."
+      isCorrect: false
+      explanation: "A secret update doesn't prove that consumers use the replacement. Long-running clients and scheduled jobs can still depend on primary when it is regenerated."
+  - content: "An application's managed identity needs to read items and run queries only in the cosmicworks product container. It has no data-plane role assignments. Which assignment supplies the required access at the narrowest supported scope?"
+    choices:
+    - content: "Assign Cosmos DB Built-in Data Contributor at /dbs/cosmicworks scope."
+      isCorrect: false
+      explanation: "Data Contributor allows writes and the database scope includes other containers. Both the actions and resource scope exceed this application's requirements."
+    - content: "Assign Cosmos DB Built-in Data Reader at account scope."
+      isCorrect: false
+      explanation: "Reader supplies read and query actions, but account scope extends access across databases and containers. The application's requirement is limited to one container."
+    - content: "Assign Cosmos DB Built-in Data Reader at /dbs/cosmicworks/colls/product scope."
+      isCorrect: true
+      explanation: "Reader includes the metadata, item-read, query, and change-feed permissions required by the SDK. Container scope limits those permissions to the intended container."
+  - content: "Contoso requires its application to access Cosmos DB through private addresses and reject public access. Which configuration meets both requirements?"
+    choices:
+    - content: "Enable a service endpoint on the application subnet, allow that subnet, and remove public IP exceptions."
+      isCorrect: false
+      explanation: "A service endpoint identifies an allowed subnet but still uses the public service endpoint. It doesn't provide the required private addressing."
+    - content: "Approve a private endpoint, configure private DNS and connectivity, and explicitly disable public network access."
+      isCorrect: true
+      explanation: "The private endpoint and DNS provide the private path. Explicitly disabling public network access blocks public and service-endpoint paths even when allow rules exist."
+    - content: "Approve a private endpoint, configure private DNS and connectivity, and retain the existing public IP exceptions."
+      isCorrect: false
+      explanation: "Private endpoints can coexist with permitted public sources. Retaining those exceptions without disabling public access doesn't establish the required private-only boundary."
+  - content: "To read original customer values from a container with dynamic data masking, a review service uses a managed identity. It needs read and query access without permission to change items. Which role design fits this requirement?"
+    choices:
+    - content: "Assign a custom role with Reader's actions plus items/unmask at the customer container scope."
+      isCorrect: true
+      explanation: "Adding the unmask data action to Reader's actions permits original-value reads without granting item writes. Container scope limits that access to the intended data."
+    - content: "Assign the built-in Data Contributor role with its item wildcard at the customer container scope."
+      isCorrect: false
+      explanation: "Data Contributor includes unmask permission, but it also allows writes. Its item wildcard grants more actions than this read-only service requires."
+    - content: "Assign the built-in Data Reader role with its unchanged actions at the customer container scope."
+      isCorrect: false
+      explanation: "Data Reader lacks the unmask action. With a masking policy applied, its read and query permissions don't grant access to the original masked values."

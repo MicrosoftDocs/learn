@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-azure-cosmos-db-nosql.configure-key-authentication-rotation
+title: Configure key-based authentication and rotation
+metadata:
+  title: Configure Key-Based Authentication and Rotation
+  description: "Choose an Azure Cosmos DB account key, protect it in Key Vault, and coordinate key rotation with application credential updates."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-configure-key-authentication-rotation.md)]

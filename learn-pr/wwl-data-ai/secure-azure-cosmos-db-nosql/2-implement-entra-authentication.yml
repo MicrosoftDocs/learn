@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-azure-cosmos-db-nosql.implement-entra-authentication
+title: Implement Microsoft Entra authentication
+metadata:
+  title: Implement Microsoft Entra Authentication
+  description: "Connect to Azure Cosmos DB with Microsoft Entra credentials, choose a managed identity, and verify application access with an item read."
+  ms.date: 10/02/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-implement-entra-authentication.md)]
