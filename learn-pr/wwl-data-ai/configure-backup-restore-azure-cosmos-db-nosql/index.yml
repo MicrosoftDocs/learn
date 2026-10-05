@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.configure-backup-restore-azure-cosmos-db-nosql
+metadata:
+  title: Configure Backup and Restore in Azure Cosmos DB
+  description: "Evaluate periodic and continuous backup for Azure Cosmos DB, configure continuous backup, perform point-in-time recovery, and describe Azure Backup for Azure Cosmos DB."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+  ai-usage: ai-generated
+title: Configure backup and restore in Azure Cosmos DB
+summary: Choose between periodic and continuous backup for an Azure Cosmos DB account, enable continuous backup, recover data to a point in time, and describe vaulted backup for long-term retention.
+abstract: |
+  After completing this module, you're able to:
+  - Evaluate periodic and continuous backup options and choose a retention tier.
+  - Configure continuous backup and perform point-in-time recovery.
+  - Describe Azure Backup for Azure Cosmos DB capabilities.
+prerequisites: |
+  - Experience creating Azure Cosmos DB for NoSQL accounts, databases, and containers
+  - Experience using the Azure Cosmos DB SDK to read items and run queries in C# or Python
+  - Basic knowledge of Azure resource management with the Azure CLI or Azure PowerShell
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+- azure-backup
+subjects:
+- cloud-computing
+- databases
+units:
+- learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.introduction
+- learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.evaluate-backup-options
+- learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.configure-continuous-backup
+- learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.perform-point-in-time-recovery
+- learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.describe-azure-backup-for-cosmos-db
+- learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.exercise-recover-recovery-point
+- learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.knowledge-check
+- learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.summary
+badge:
+  uid: learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.badge

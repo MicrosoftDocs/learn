@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.configure-continuous-backup
+title: Configure continuous backup
+metadata:
+  title: Configure Continuous Backup
+  description: "Enable continuous backup on a new Azure Cosmos DB account, migrate an account from periodic mode, and verify the policy and the restorable window."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-configure-continuous-backup.md)]

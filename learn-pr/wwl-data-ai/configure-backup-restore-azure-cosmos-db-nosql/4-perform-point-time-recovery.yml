@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.perform-point-in-time-recovery
+title: Perform point-in-time recovery
+metadata:
+  title: Perform Point-in-Time Recovery
+  description: "Choose a restore target, identify a restore point from the event feed, run a same-account or new-account restore, and validate the recovered data."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-perform-point-time-recovery.md)]
