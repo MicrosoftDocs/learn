@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.retrieve-context-ground-responses
+title: Retrieve context and ground responses
+metadata:
+  title: Retrieve Context and Ground Responses
+  description: "Narrow a retrieval result into a grounding block with the Semantic Reranker, assemble a prompt that cites its sources and refuses when it can't answer, and defend the boundary between retrieved evidence and instructions."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-retrieve-context-ground-responses.md)]

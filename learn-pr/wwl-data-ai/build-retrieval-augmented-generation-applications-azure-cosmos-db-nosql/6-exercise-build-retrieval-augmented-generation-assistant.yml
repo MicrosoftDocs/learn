@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.exercise-build-retrieval-augmented-generation-assistant
+title: 'Exercise: Build a grounded RAG assistant'
+metadata:
+  title: "Exercise: Build a Grounded RAG Assistant"
+  description: "Load the CosmicWorks catalog with embeddings, compare an ungrounded answer with a grounded one, test the refusal path, and observe what a prompt does with an instruction planted in retrieved data."
+  ms.date: 10/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-exercise-build-retrieval-augmented-generation-assistant.md)]
