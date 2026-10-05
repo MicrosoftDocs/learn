@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.configure-vector-indexes-partitioning
+title: Configure vector indexes and partitioning
+metadata:
+  title: Configure Vector Indexes and Partitioning
+  description: "Choose between the flat, quantizedFlat, and diskANN vector index types, tune the index build, and partition a vector container so queries compare fewer vectors."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-configure-vector-indexes-partitioning.md)]

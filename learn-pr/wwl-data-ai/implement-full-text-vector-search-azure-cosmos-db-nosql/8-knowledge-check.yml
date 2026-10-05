@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your ability to choose what to index for full-text search, select a vector index type from the search scope, place FullTextScore correctly, diagnose a self-feeding embedding refresh, and respond to a vector policy that has to change."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A retail team enables full-text search on a product container and indexes the `description` property. Every product's description holds a generated sentence of the form `The product called \"<product name>\"`. Searches for *helmet* match the expected products, but searches for category words absent from product names don't find them. The team wants one indexed text property to cover both names and categories. What's the appropriate response?"
+    choices:
+    - content: "Add the remaining product properties to the full-text policy so that every path is searchable."
+      isCorrect: false
+      explanation: "Adding policy paths alone doesn't combine their text into the property the query searches. BM25 scores the words in that property, and unrelated numeric or identifier fields don't supply the category words missing from the description."
+    - content: "Build a property that concatenates the words shoppers use, such as the product name and category, and index that property instead."
+      isCorrect: true
+      explanation: "The template still contains distinct product-name terms, so BM25 can distinguish matches. It doesn't include category words missing from those names. Combining the name and category makes both available to one full-text query."
+    - content: "Switch the queries from `FullTextContains` to `CONTAINS` so that matching works on the raw characters."
+      isCorrect: false
+      explanation: "`CONTAINS` matches literal substrings and provides no relevance score. It can scan a range index, but switching functions can't make absent category words searchable."
+  - content: "An application stores 1,536-dimension embeddings for 2,000,000 documents in one container, partitioned by tenant. Every search query filters to a single tenant, and the largest tenant holds about 20,000 documents. Which vector index type fits this workload?"
+    choices:
+    - content: "`quantizedFlat`, because the filter narrows each search to roughly 20,000 vectors."
+      isCorrect: true
+      explanation: "Index selection follows the size of the search scope rather than the size of the container. A partition key filter routes the query to one physical partition, so each search compares against one tenant's vectors. That scope sits inside the roughly 50,000-vector range where `quantizedFlat` performs well, and it supports 4,096 dimensions."
+    - content: "`flat`, because it gives 100 percent recall and the per-query scope is small."
+      isCorrect: false
+      explanation: "A `flat` index is limited to 505 dimensions, so a 1,536-dimension embedding can't use it regardless of how selective the filter is. The dimension limit settles this choice before the corpus size is considered."
+    - content: "`diskANN`, because the container holds far more than 50,000 vectors in total."
+      isCorrect: false
+      explanation: "`diskANN` works here, but the total item count is the wrong number to decide on. The guidance is stated against the vectors a query compares, and a well-filtered query in this design never sees the other 1,980,000."
+  - content: "A developer writes `SELECT TOP 10 c.name, FullTextScore(c.searchText, \"mountain\") AS relevance FROM c ORDER BY RANK FullTextScore(c.searchText, \"mountain\")` and the query is rejected. What explains the failure?"
+    choices:
+    - content: "The same system function can't appear twice in one query, so the projection has to be removed and replaced by a second query."
+      isCorrect: false
+      explanation: "Repeating a function is fine, and the vector equivalent depends on it: `VectorDistance` is routinely written in both the `SELECT` list and the `ORDER BY` clause of the same query. The restriction here is specific to the full-text score."
+    - content: "`FullTextScore` is valid only inside an `ORDER BY RANK` clause or as an argument to `RRF`, so it can't be projected in the `SELECT` list."
+      isCorrect: true
+      explanation: "The function's placement is restricted by design: it can't be projected, and it can't appear in a `WHERE` clause. Relevance reaches the caller as the order of the results rather than as a number, which is also why a fixed BM25 threshold isn't something an application can apply."
+    - content: "The container is missing a full-text index on `/searchText`, and the score can only be projected once the index exists."
+      isCorrect: false
+      explanation: "`FullTextScore` requires a full-text index. That requirement is separate from its placement restriction: adding the index still doesn't permit a score in the `SELECT` list."
+  - content: "A change feed consumer regenerates an embedding for each change it reads and writes back the updated item to the same container. After one catalog update, it keeps running indefinitely, calling the embedding model continuously even though nothing else writes to the container. Checkpoints advance successfully, and each cycle reads a newer version of the item. What's happening?"
+    choices:
+    - content: "The lease container is misconfigured, so the processor never records a checkpoint and reprocesses the same changes."
+      isCorrect: false
+      explanation: "Checkpoint failures can replay batches and repeat embedding calls. The scenario instead shows successful checkpoint progress and new item versions, which points to writes generated by the consumer."
+    - content: "Latest-version mode replays the full history of each item, so a single update produces one change per previous version."
+      isCorrect: false
+      explanation: "Latest-version mode surfaces the most recent state of changed items rather than a version history. An item that changed once appears once, so the mode isn't the source of the extra changes."
+    - content: "The consumer's own write is a change, so it reappears in the feed the consumer is reading and triggers another refresh."
+      isCorrect: true
+      explanation: "Writing back to the container being watched creates a feedback loop. The standard guard is a content hash stored in the same operation as the vector: the second pass computes the hash of the current text, finds it matches what's stored, and skips the item, which ends the loop after one round."

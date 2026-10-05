@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.implement-full-text-search
+title: Implement full-text search
+metadata:
+  title: Implement Full-Text Search
+  description: "Configure a container full-text policy and full-text index, then filter with FullTextContains and rank results by BM25 relevance with FullTextScore."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-implement-full-text-search.md)]

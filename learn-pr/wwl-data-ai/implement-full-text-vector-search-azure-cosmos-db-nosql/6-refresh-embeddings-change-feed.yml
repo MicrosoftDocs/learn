@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.refresh-embeddings-change-feed
+title: Keep embeddings current with the change feed
+metadata:
+  title: Keep Embeddings Current with the Change Feed
+  description: "Use the change feed and a stored content hash to regenerate embeddings when source text changes, without re-embedding unchanged items or looping on your own writes."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-refresh-embeddings-change-feed.md)]

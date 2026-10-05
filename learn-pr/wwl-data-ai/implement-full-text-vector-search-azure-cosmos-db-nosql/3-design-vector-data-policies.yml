@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.design-vector-data-policies
+title: Design vector data and policies
+metadata:
+  title: Design Vector Data and Policies
+  description: "Explain what an integrated vector store is and define a container vector policy with the path, data type, dimension count, and distance function your embedding model requires."
+  ms.date: 10/03/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-design-vector-data-policies.md)]
