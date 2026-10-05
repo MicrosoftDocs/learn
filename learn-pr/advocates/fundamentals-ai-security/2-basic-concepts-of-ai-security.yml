@@ -4,9 +4,9 @@ title: Basic concepts of AI security
 metadata:
   title: Basic concepts of AI security
   description: Learn how AI security differs from traditional cybersecurity and explore frameworks like OWASP Top 10 for LLMs and MITRE ATLAS.
-  ms.date: 04/24/2026
-  author: ceperezb
-  ms.author: ceperezb
+  ms.date: 10/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 7
 content: |
