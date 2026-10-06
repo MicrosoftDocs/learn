@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.certificate-autoenrollment.network-device-registration-authority
+title: Configure network device registration authority
+metadata:
+  title: Configure Network Device Registration Authority
+  description: Configure a registration authority for managed devices with protected challenges, narrow template mappings, secure web endpoints, and monitored credentials.
+  ms.date: 10/05/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-network-device-registration-authority.md)]
