@@ -98,7 +98,19 @@ ghe-support-bundle -o /path/to/directory/
 
 Locate the `.tar.gz` file in the specified directory.
 
+### What's Included in Diagnostic Files? 
 
+Diagnostic files collect information about the health and configuration of a GitHub Enterprise Server instance. Administrators can use this information to assess system status and help identify potential issues before or during troubleshooting. 
+
+Diagnostic files can include information such as: 
+
+- System configuration 
+- Service status 
+- Network configuration 
+- Storage and resource information 
+- Environment settings 
+
+GitHub Support may request diagnostic files, along with a support bundle, when investigating issues such as performance problems, authentication failures, upgrade issues, or unexpected system behavior. 
 
 ## Uploading Support Bundles Securely
 
