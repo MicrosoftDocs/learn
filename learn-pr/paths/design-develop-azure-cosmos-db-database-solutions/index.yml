@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.wwl.design-develop-azure-cosmos-db-database-solutions
+metadata:
+  title: Design and Develop Azure Cosmos DB Database Solutions
+  description: "Build applications on Azure Cosmos DB for NoSQL: configure throughput and consistency, connect with the SDK, query data, design a partitioning strategy, process the change feed, and use AI-assisted development tools."
+  ms.date: 10/05/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: learning-path
+title: Design and develop Azure Cosmos DB database solutions
+prerequisites: |
+  - Experience building cloud applications with C# or Python
+  - Basic familiarity with JSON and the Azure portal
+summary: |
+  This learning path builds the skills to design and develop applications on Azure Cosmos DB for NoSQL. You start by evaluating whether the service fits an application, creating your first account and container, and configuring the throughput and consistency settings a workload needs.
+
+  You then connect from code: initializing the SDK with a client singleton, performing point operations and transactional batches, and writing queries whose request unit cost you can predict. With that foundation in place, you design a data model and partitioning strategy, which is the decision that most determines how an Azure Cosmos DB application scales.
+
+  The path closes with two capabilities that AI applications depend on. You process the change feed to build event-driven integrations and keep denormalized data in sync, then select and apply the AI-assisted development tools that connect an assistant to your data and give an agent durable memory.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+- azure-functions
+- microsoft-foundry
+subjects:
+- cloud-computing
+- databases
+- artificial-intelligence
+modules:
+- learn.wwl.explore-azure-cosmos-db-nosql
+- learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency
+- learn.wwl.connect-azure-cosmos-db-nosql-sdk
+- learn.wwl.implement-azure-cosmos-db-nosql-operations
+- learn.wwl.query-azure-cosmos-db-nosql
+- learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql
+- learn.wwl.process-azure-cosmos-db-nosql-change-feed
+- learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db
+trophy:
+  uid: learn.wwl.design-develop-azure-cosmos-db-database-solutions.trophy
