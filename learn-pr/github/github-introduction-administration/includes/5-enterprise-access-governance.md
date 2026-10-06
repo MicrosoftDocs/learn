@@ -113,6 +113,22 @@ By planning ahead, you can ensure a smooth integration that keeps your organizat
 
 As your enterprise scales, automating the management of permissions across multiple organizations is essential for maintainability.
 
+## Enterprise GitHub App ownership and API-driven automation 
+
+Enterprise-owned GitHub Apps provide a centralized way to manage trusted integrations across an enterprise. An enterprise-owned app can only be installed on the enterprise or organizations within the enterprise, which helps administrators control where the app is used and who can authorize it. 
+
+GitHub Apps can be used with GitHub APIs to automate administrative tasks at scale. For example, administrators can use automation to help manage repository settings, review access, collect audit information, or apply consistent configuration across multiple organizations. 
+
+GitHub provides both REST and GraphQL APIs for automation. The REST API can be used to create integrations, retrieve data, and automate workflows, while the GraphQL API allows more precise and flexible queries. Together, GitHub Apps and APIs help administrators reduce manual work and manage enterprise environments more consistently. 
+ 
+## Granular bypass permissions 
+
+Repository rulesets help administrators enforce consistent rules for branches, tags, and push activity. In some cases, specific roles, teams, or GitHub Apps may need permission to bypass a ruleset for operational or administrative reasons. 
+
+Granular bypass permissions allow administrators to define which actors can bypass a ruleset instead of relying only on broad administrator access. For example, a trusted release team or automation app might be allowed to bypass a rule when completing a controlled release process. 
+
+By using bypass permissions carefully, administrators can maintain strong governance while still allowing approved exceptions for specific users, teams, roles, or apps. 
+
 #### Key Practices
 
 This section highlights key practices for scripting and automation to manage permissions consistently and securely as your enterprise grows. Following these practices helps streamline administration, minimize manual errors, and maintain strong governance.
