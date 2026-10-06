@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.create-copilot-studio-agent.exercise-plan-agent
+title: 'Exercise: Create a plan for a support agent'
+metadata:
+  title: 'Exercise: Create A Plan For A Support Agent'
+  description: This content is part of the "Create an agent in Microsoft Copilot Studio" module.
+  ms.date: 10/06/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-plan-agent.md)]

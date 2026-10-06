@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.create-copilot-studio-agent.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Create an agent in Microsoft Copilot Studio" module.
+  ms.date: 10/06/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A support team plans an agent that answers employee questions by using approved internal procedures. Which planning decision most directly determines the information the agent should use?"
+    choices:
+        - content: "Knowledge source"
+          isCorrect: true
+          explanation: ""
+        - content: "Audience"
+          isCorrect: false
+          explanation: ""
+        - content: "Escalation approach"
+          isCorrect: false
+          explanation: ""
+        - content: "Validation criteria"
+          isCorrect: false
+          explanation: ""
+  - content: "An employee submits the request 'My computer isn't working.' How should a well-configured support agent respond?"
+    choices:
+        - content: "Ask a clarifying question to gather more details"
+          isCorrect: true
+          explanation: ""
+        - content: "Provide troubleshooting steps immediately"
+          isCorrect: false
+          explanation: ""
+        - content: "Direct the employee to human support"
+          isCorrect: false
+          explanation: ""
+        - content: "Tell the employee to submit the request again"
+          isCorrect: false
+          explanation: ""
+  - content: "Which instruction best helps an agent respond consistently to unclear requests?"
+    choices:
+        - content: "Ask the employee to identify the affected device and provide any error message"
+          isCorrect: true
+          explanation: ""
+        - content: "Be helpful whenever possible"
+          isCorrect: false
+          explanation: ""
+        - content: "Try multiple answers until one seems appropriate"
+          isCorrect: false
+          explanation: ""
+        - content: "Answer every request as quickly as possible"
+          isCorrect: false
+          explanation: ""
+  - content: "A request is within the agent's intended purpose, but the approved knowledge source doesn't contain enough information to answer it. Which outcome is most appropriate?"
+    choices:
+        - content: "Acknowledge the knowledge gap and direct the user to an appropriate source of assistance"
+          isCorrect: true
+          explanation: ""
+        - content: "Create a response based on general assumptions"
+          isCorrect: false
+          explanation: ""
+        - content: "Expand the scope of the agent automatically"
+          isCorrect: false
+          explanation: ""
+        - content: "Search for information outside the approved source and present it as an answer"
+          isCorrect: false
+          explanation: ""
+  - content: "Which activity best validates whether an agent satisfies its planned requirements?"
+    choices:
+        - content: "Testing representative requests and comparing the results with validation criteria"
+          isCorrect: true
+          explanation: ""
+        - content: "Reviewing the agent's name and description only"
+          isCorrect: false
+          explanation: ""
+        - content: "Adding additional knowledge sources without testing"
+          isCorrect: false
+          explanation: ""
+        - content: "Publishing the agent to users immediately"
+          isCorrect: false
+          explanation: ""

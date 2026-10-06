@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.create-copilot-studio-agent
+title: Create an agent in Microsoft Copilot Studio
+metadata:
+  title: Create An Agent In Microsoft Copilot Studio
+  description: Create and configure an agent for a defined business scenario in Microsoft Copilot Studio. Practice planning, connecting knowledge sources, testing responses, and refining agent behavior.
+  ms.date: 10/06/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-365-copilot
+summary: >
+  Create and configure an agent for a defined business scenario in Microsoft Copilot Studio. Practice planning, connecting knowledge sources, testing responses, and refining agent behavior.
+abstract: |
+ By the end of this module, you'll be able to:
+    - Plan an agent by defining its purpose, audience, scope, knowledge, and expected behavior.
+    - Create and configure an agent in Microsoft Copilot Studio by using instructions and approved knowledge sources.
+    - Test and refine an agent by validating its responses against defined requirements.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - microsoft-365-copilot
+units:
+  - learn.dpu.create-copilot-studio-agent.introduction
+  - learn.dpu.create-copilot-studio-agent.plan-agent
+  - learn.dpu.create-copilot-studio-agent.exercise-plan-agent
+  - learn.dpu.create-copilot-studio-agent.create-configure-agent
+  - learn.dpu.create-copilot-studio-agent.exercise-build-agent
+  - learn.dpu.create-copilot-studio-agent.knowledge-check
+  - learn.dpu.create-copilot-studio-agent.summary
+badge:
+  uid: learn.dpu.create-copilot-studio-agent.badge
+
