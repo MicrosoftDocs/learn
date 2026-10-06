@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.certificate-autoenrollment.remote-certificate-enrollment
+title: Configure remote certificate enrollment
+metadata:
+  title: Configure Remote Certificate Enrollment
+  description: Configure secure certificate policy, enrollment, renewal, authentication, delegation, and failover for remote Windows clients.
+  ms.date: 10/05/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-remote-certificate-enrollment.md)]

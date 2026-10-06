@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.certificate-autoenrollment.certificate-enrollment
+title: Configure certificate enrollment
+metadata:
+  title: Configure Certificate Enrollment
+  description: Configure certificate enrollment through the Certificates console, Group Policy autoenrollment, policy refresh, pending requests, and supersedence.
+  ms.date: 10/05/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/2-certificate-enrollment.md)]

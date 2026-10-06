@@ -1,0 +1,47 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-ai-analytics-capabilities-azure-cosmos-db
+metadata:
+  title: Implement AI and Analytics Capabilities in Azure Cosmos DB
+  description: "Build AI and analytics capabilities on Azure Cosmos DB for NoSQL: full-text, vector, and hybrid search, retrieval tuning, retrieval-augmented generation, durable agent memory, and no-ETL operational analytics with Microsoft Fabric mirroring."
+  ms.date: 10/05/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: learning-path
+title: Implement AI and analytics capabilities in Azure Cosmos DB
+prerequisites: |
+  - Completion of the Design and develop Azure Cosmos DB database solutions learning path, or equivalent experience building applications on Azure Cosmos DB for NoSQL
+  - Familiarity with vector embeddings and calling an embedding API such as Azure OpenAI
+  - Programming experience with Python, which is the primary language throughout this path
+  - Basic familiarity with Microsoft Fabric workspaces and SQL
+summary: |
+  This learning path builds the AI and analytics capabilities that distinguish Azure Cosmos DB for NoSQL from a general-purpose document store. You start with retrieval, configuring full-text policies and vector policies on a container, choosing a vector index type against its dimension and volume limits, and running each kind of search against real catalog data.
+
+  You then combine them. Hybrid search fuses keyword and semantic results with reciprocal rank fusion, and you learn to account for its cost separately across each stage, avoid the filter placement that quietly removes the results the semantic half exists to find, and measure relevance against a fixed evaluation set rather than by impression.
+
+  With retrieval working, you ground a language model on it. You size a retrieval unit, separate the text you embed from the text you send to the model, assemble a prompt with verifiable citations, and treat retrieved content as evidence rather than instruction, which is the trust boundary that keeps a retrieved document from rewriting the system prompt.
+
+  The path closes with the two capabilities that make an application durable and measurable. You design an agent memory store that separates short-lived conversation state from long-term facts a later session can find by meaning, and you mirror operational data into Microsoft Fabric OneLake so analysts can query it with T-SQL and Spark without consuming a request unit on the database that serves your users.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+- advanced
+roles:
+- developer
+- ai-engineer
+- data-engineer
+products:
+- azure-cosmos-db
+- microsoft-foundry
+- fabric
+subjects:
+- databases
+- artificial-intelligence
+- data-analytics
+modules:
+- learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql
+- learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql
+- learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql
+- learn.wwl.design-implement-agent-memory-azure-cosmos-db
+- learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db
+trophy:
+  uid: learn.wwl.implement-ai-analytics-capabilities-azure-cosmos-db.trophy

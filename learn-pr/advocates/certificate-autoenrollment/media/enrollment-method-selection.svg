@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1280" viewBox="0 0 1500 1280" role="img" aria-labelledby="title desc">
+  <title id="title">Certificate enrollment method selection</title>
+  <desc id="desc">Follow the numbered decision flow from top to bottom. Define the enrollment population at 1. At 2, a managed device using a SCEP profile takes the Yes branch to NDES and SCEP at 3; otherwise continue to 4. At 4, a remote, non-domain, or cross-forest native Windows client takes the Yes branch to CEP and CES at 5; otherwise continue to 6. At 6, a domain-joined population with a repeatable automatic lifecycle takes the Yes branch to Group Policy autoenrollment at 8; the No branch leads to MMC or certreq at 7. Legacy Web Enrollment is restricted to exceptional manual upload cases.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="16" markerHeight="14" refX="16" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L16,7 L0,14 Z" fill="#17365d"/>
+    </marker>
+    <style>
+      .heading { font: 700 30px "Segoe UI", Arial, sans-serif; fill: #10253f; }
+      .label { font: 700 19px "Segoe UI", Arial, sans-serif; fill: #10253f; text-anchor: middle; }
+      .body { font: 16px "Segoe UI", Arial, sans-serif; fill: #172b3a; text-anchor: middle; }
+      .edge { font: 700 15px "Segoe UI", Arial, sans-serif; fill: #17365d; }
+      .number { font: 700 22px "Segoe UI", Arial, sans-serif; fill: #ffffff; text-anchor: middle; dominant-baseline: middle; }
+      .arrow { stroke: #17365d; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1500" height="1280" fill="#ffffff"/>
+  <text x="750" y="55" class="heading" text-anchor="middle">Select by identity, key custody, renewal, and trust boundary</text>
+  <text x="750" y="88" class="body">Being able to submit a request is necessary, but never sufficient.</text>
+
+  <g id="step-1">
+    <rect x="510" y="120" width="480" height="140" rx="18" fill="#e8f2fb" stroke="#1769aa" stroke-width="3"/>
+    <circle cx="555" cy="165" r="23" fill="#1769aa"/>
+    <text x="555" y="165" class="number">1</text>
+    <text x="785" y="170" class="label">Define the enrollment population</text>
+    <text x="750" y="212" class="body">
+      <tspan x="750" dy="0">Identity, location, key hardware,</tspan>
+      <tspan x="750" dy="25">scale, renewal, assurance</tspan>
+    </text>
+  </g>
+
+  <path d="M750 268 L750 312" class="arrow"/>
+
+  <g id="step-2">
+    <polygon points="750,320 990,430 750,540 510,430" fill="#fff4d6" stroke="#b77900" stroke-width="3"/>
+    <circle cx="750" cy="373" r="23" fill="#b77900"/>
+    <text x="750" y="373" class="number">2</text>
+    <text x="750" y="430" class="label">Managed device uses</text>
+    <text x="750" y="457" class="label">SCEP profile?</text>
+  </g>
+
+  <path d="M998 430 L1092 430" class="arrow"/>
+  <text x="1030" y="410" class="edge">Yes</text>
+  <g id="step-3">
+    <rect x="1100" y="340" width="340" height="180" rx="16" fill="#eef7e8" stroke="#3b7d23" stroke-width="3"/>
+    <circle cx="1145" cy="385" r="23" fill="#3b7d23"/>
+    <text x="1145" y="385" class="number">3</text>
+    <text x="1290" y="392" class="label">NDES / SCEP</text>
+    <text x="1270" y="452" class="body">
+      <tspan x="1270" dy="0">Separate RA; TLS; controlled OTP;</tspan>
+      <tspan x="1270" dy="26">fixed template mapping; MDM policy</tspan>
+    </text>
+  </g>
+
+  <path d="M750 548 L750 602" class="arrow"/>
+  <text x="775" y="584" class="edge">No</text>
+
+  <g id="step-4">
+    <polygon points="750,610 990,720 750,830 510,720" fill="#f5eafa" stroke="#7b2f91" stroke-width="3"/>
+    <circle cx="750" cy="663" r="23" fill="#7b2f91"/>
+    <text x="750" y="663" class="number">4</text>
+    <text x="750" y="720" class="label">Native Windows client is remote,</text>
+    <text x="750" y="747" class="label">non-domain, or cross-forest?</text>
+  </g>
+
+  <path d="M998 720 L1092 720" class="arrow"/>
+  <text x="1030" y="700" class="edge">Yes</text>
+  <g id="step-5">
+    <rect x="1100" y="630" width="340" height="180" rx="16" fill="#e7f5f2" stroke="#00796b" stroke-width="3"/>
+    <circle cx="1145" cy="675" r="23" fill="#00796b"/>
+    <text x="1145" y="675" class="number">5</text>
+    <text x="1290" y="682" class="label">CEP + CES over HTTPS</text>
+    <text x="1270" y="742" class="body">
+      <tspan x="1270" dy="0">Choose auth and delegation;</tspan>
+      <tspan x="1270" dy="26">use renewal-only or KBR where justified</tspan>
+    </text>
+  </g>
+
+  <path d="M750 838 L750 892" class="arrow"/>
+  <text x="775" y="874" class="edge">No</text>
+
+  <g id="step-6">
+    <polygon points="750,900 990,1010 750,1120 510,1010" fill="#e8f2fb" stroke="#1769aa" stroke-width="3"/>
+    <circle cx="750" cy="953" r="23" fill="#1769aa"/>
+    <text x="750" y="953" class="number">6</text>
+    <text x="750" y="1010" class="label">Domain-joined and repeatable</text>
+    <text x="750" y="1037" class="label">with automatic lifecycle?</text>
+  </g>
+
+  <path d="M502 1010 L408 1010" class="arrow"/>
+  <text x="438" y="990" class="edge">No</text>
+  <g id="step-7">
+    <rect x="60" y="920" width="340" height="180" rx="16" fill="#fff4d6" stroke="#b77900" stroke-width="3"/>
+    <circle cx="105" cy="965" r="23" fill="#b77900"/>
+    <text x="105" y="965" class="number">7</text>
+    <text x="250" y="972" class="label">MMC or certreq.exe</text>
+    <text x="230" y="1032" class="body">
+      <tspan x="230" dy="0">Controlled one-off, scripted INF,</tspan>
+      <tspan x="230" dy="26">offline file transfer, or pending retrieval</tspan>
+    </text>
+  </g>
+
+  <path d="M998 1010 L1092 1010" class="arrow"/>
+  <text x="1030" y="990" class="edge">Yes</text>
+  <g id="step-8">
+    <rect x="1100" y="920" width="340" height="180" rx="16" fill="#eef7e8" stroke="#3b7d23" stroke-width="3"/>
+    <circle cx="1145" cy="965" r="23" fill="#3b7d23"/>
+    <text x="1145" y="965" class="number">8</text>
+    <text x="1290" y="960" class="label">
+      <tspan x="1290" dy="0">Group Policy</tspan>
+      <tspan x="1290" dy="27">autoenrollment</tspan>
+    </text>
+    <text x="1270" y="1032" class="body">
+      <tspan x="1270" dy="0">Preferred for domain users, computers,</tspan>
+      <tspan x="1270" dy="26">and servers with controlled templates</tspan>
+    </text>
+  </g>
+
+  <rect x="150" y="1160" width="1200" height="85" rx="14" fill="#fdecec" stroke="#b42318" stroke-width="3"/>
+  <text x="750" y="1193" class="label">CA Web Enrollment is an exceptional interactive upload path--not a CES substitute.</text>
+  <text x="750" y="1221" class="body">Prohibit it for automatic lifecycle, device bootstrap, or any design that depends on modern policy discovery.</text>
+</svg>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Certificate enrollment diagnostic stages</title>
+  <desc id="desc">Eight numbered stages trace enrollment, with the primary evidence to inspect at each boundary. Read each row from left to right: stages 1 through 4 are policy discovery, template selection, key and request, and submission. The connector leads to stages 5 through 8 on the next row: CA disposition, retrieval, install and associate, and activate and clean up.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="16" markerHeight="14" refX="16" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L16,7 L0,14 Z" fill="#17365d"/>
+    </marker>
+    <style>
+      .heading { font: 700 30px "Segoe UI", Arial, sans-serif; fill: #10253f; }
+      .label { font: 700 18px "Segoe UI", Arial, sans-serif; fill: #10253f; text-anchor: middle; }
+      .body { font: 15px "Segoe UI", Arial, sans-serif; fill: #172b3a; text-anchor: middle; }
+      .number { font: 700 22px "Segoe UI", Arial, sans-serif; fill: #ffffff; text-anchor: middle; dominant-baseline: middle; }
+      .arrow { stroke: #17365d; stroke-width: 3; stroke-linejoin: round; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1600" height="900" fill="#ffffff"/>
+  <text x="800" y="56" class="heading" text-anchor="middle">Diagnose enrollment as eight separate stages</text>
+  <text x="800" y="88" class="body">Stop at the first failed boundary; later symptoms rarely identify the original cause.</text>
+  <text x="800" y="120" class="body">Read each row from left to right: stages 1-4, then stages 5-8.</text>
+
+  <g id="stage-1">
+    <rect x="70" y="150" width="320" height="185" rx="17" fill="#e8f2fb" stroke="#1769aa" stroke-width="3"/>
+    <circle cx="110" cy="192" r="22" fill="#1769aa"/>
+    <text x="110" y="192" class="number">1</text>
+    <text x="250" y="198" class="label">Policy discovery</text>
+    <text x="230" y="247" class="body">
+      <tspan x="230" dy="0">AD DS or CEP source, priority,</tspan>
+      <tspan x="230" dy="23">reachability, authentication</tspan>
+      <tspan x="230" dy="29">Evidence: policy UI, event log</tspan>
+    </text>
+  </g>
+
+  <path d="M398 242 L442 242" class="arrow"/>
+
+  <g id="stage-2">
+    <rect x="450" y="150" width="320" height="185" rx="17" fill="#eef7e8" stroke="#3b7d23" stroke-width="3"/>
+    <circle cx="490" cy="192" r="22" fill="#3b7d23"/>
+    <text x="490" y="192" class="number">2</text>
+    <text x="630" y="198" class="label">Template selection</text>
+    <text x="610" y="247" class="body">
+      <tspan x="610" dy="0">Published, readable, compatible,</tspan>
+      <tspan x="610" dy="23">Enroll/Autoenroll, supersedence</tspan>
+      <tspan x="610" dy="29">Evidence: enrollment wizard, CA list</tspan>
+    </text>
+  </g>
+
+  <path d="M778 242 L822 242" class="arrow"/>
+
+  <g id="stage-3">
+    <rect x="830" y="150" width="320" height="185" rx="17" fill="#fff4d6" stroke="#b77900" stroke-width="3"/>
+    <circle cx="870" cy="192" r="22" fill="#b77900"/>
+    <text x="870" y="192" class="number">3</text>
+    <text x="1010" y="198" class="label">Key and request</text>
+    <text x="990" y="247" class="body">
+      <tspan x="990" dy="0">Provider, algorithm, ACL, subject,</tspan>
+      <tspan x="990" dy="23">SAN, attestation, request signature</tspan>
+      <tspan x="990" dy="29">Evidence: certreq output, key store</tspan>
+    </text>
+  </g>
+
+  <path d="M1158 242 L1202 242" class="arrow"/>
+
+  <g id="stage-4">
+    <rect x="1210" y="150" width="320" height="185" rx="17" fill="#f5eafa" stroke="#7b2f91" stroke-width="3"/>
+    <circle cx="1250" cy="192" r="22" fill="#7b2f91"/>
+    <text x="1250" y="192" class="number">4</text>
+    <text x="1390" y="198" class="label">Submission</text>
+    <text x="1370" y="247" class="body">
+      <tspan x="1370" dy="0">RPC/DCOM, HTTPS, or SCEP;</tspan>
+      <tspan x="1370" dy="23">TLS, proxy, delegation, request ID</tspan>
+      <tspan x="1370" dy="29">Evidence: client, IIS, firewall logs</tspan>
+    </text>
+  </g>
+
+  <path d="M1370 343 V410 H230 V477" class="arrow"/>
+
+  <g id="stage-5">
+    <rect x="70" y="485" width="320" height="185" rx="17" fill="#fdecec" stroke="#b42318" stroke-width="3"/>
+    <circle cx="110" cy="527" r="22" fill="#b42318"/>
+    <text x="110" y="527" class="number">5</text>
+    <text x="250" y="533" class="label">CA disposition</text>
+    <text x="230" y="582" class="body">
+      <tspan x="230" dy="0">Issue, pend, or deny after policy,</tspan>
+      <tspan x="230" dy="23">permissions, signatures, approval</tspan>
+      <tspan x="230" dy="29">Evidence: CA database and events</tspan>
+    </text>
+  </g>
+
+  <path d="M398 577 L442 577" class="arrow"/>
+
+  <g id="stage-6">
+    <rect x="450" y="485" width="320" height="185" rx="17" fill="#e7f5f2" stroke="#00796b" stroke-width="3"/>
+    <circle cx="490" cy="527" r="22" fill="#00796b"/>
+    <text x="490" y="527" class="number">6</text>
+    <text x="630" y="533" class="label">Retrieval</text>
+    <text x="610" y="582" class="body">
+      <tspan x="610" dy="0">Retrieve by request ID or client state;</tspan>
+      <tspan x="610" dy="23">confirm correct certificate and chain</tspan>
+      <tspan x="610" dy="29">Evidence: issued certificate fields</tspan>
+    </text>
+  </g>
+
+  <path d="M778 577 L822 577" class="arrow"/>
+
+  <g id="stage-7">
+    <rect x="830" y="485" width="320" height="185" rx="17" fill="#e8f2fb" stroke="#1769aa" stroke-width="3"/>
+    <circle cx="870" cy="527" r="22" fill="#1769aa"/>
+    <text x="870" y="527" class="number">7</text>
+    <text x="1010" y="533" class="label">Install and associate</text>
+    <text x="990" y="582" class="body">
+      <tspan x="990" dy="0">Correct store and identity;</tspan>
+      <tspan x="990" dy="23">private key present and accessible</tspan>
+      <tspan x="990" dy="29">Evidence: key icon, provider, ACL</tspan>
+    </text>
+  </g>
+
+  <path d="M1158 577 L1202 577" class="arrow"/>
+
+  <g id="stage-8">
+    <rect x="1210" y="485" width="320" height="185" rx="17" fill="#eef7e8" stroke="#3b7d23" stroke-width="3"/>
+    <circle cx="1250" cy="527" r="22" fill="#3b7d23"/>
+    <text x="1250" y="527" class="number">8</text>
+    <text x="1390" y="533" class="label">Activate and clean up</text>
+    <text x="1370" y="582" class="body">
+      <tspan x="1370" dy="0">Service selects intended certificate;</tspan>
+      <tspan x="1370" dy="23">old binding, certificate, and status handled</tspan>
+      <tspan x="1370" dy="29">Evidence: live handshake and inventory</tspan>
+    </text>
+  </g>
+
+  <rect x="160" y="730" width="1280" height="120" rx="16" fill="#fff8e6" stroke="#b77900" stroke-width="3"/>
+  <text x="800" y="770" class="label">Test with the real user, computer, service, or device identity</text>
+  <text x="800" y="806" class="body">
+    <tspan x="800" dy="0">An administrator can discover a template, access a provider, or cross a delegation boundary that the target cannot.</tspan>
+    <tspan x="800" dy="25">Record stage-specific evidence before changing policy; do not mask an identity failure with broader permissions.</tspan>
+  </text>
+</svg>

@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.wwl.secure-optimize-deploy-azure-cosmos-db-solutions
+metadata:
+  title: Secure, Optimize, and Deploy Azure Cosmos DB Solutions
+  description: "Run Azure Cosmos DB for NoSQL in production: configure authentication, authorization, and network security, protect and recover data, design for multi-region availability, tune indexing and queries, monitor and troubleshoot, and manage many accounts with fleets."
+  ms.date: 10/05/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: learning-path
+title: Secure, optimize, and deploy Azure Cosmos DB solutions
+prerequisites: |
+  - Completion of the Design and develop Azure Cosmos DB database solutions learning path, or equivalent experience building applications on Azure Cosmos DB for NoSQL
+  - Basic knowledge of Azure identities, role assignments, and virtual networking
+  - Basic familiarity with the Azure CLI, Azure Monitor, and the Azure portal
+summary: |
+  This learning path builds the skills to operate Azure Cosmos DB for NoSQL in production. It starts with the security surface: authenticating with Microsoft Entra ID instead of account keys, separating control-plane from data-plane permissions, restricting network access, and masking sensitive values in query results.
+
+  From there you protect the data and keep it available. You choose between periodic and continuous backup, recover from a mistake with a point-in-time restore, and design a multi-region topology, including the four failover mechanisms and the rules that decide which one you can run during an outage.
+
+  The middle of the path is performance. You design an indexing policy for the queries an application actually runs, then measure what those queries cost and reduce it, reading server-side metrics and index utilization rather than guessing. Monitoring follows: interpreting response codes and the four distinct causes of a 429, tracking latency against a service-level objective, and alerting on the signals that predict a problem.
+
+  The path closes at fleet scale, where you manage throughput and analytics across many Azure Cosmos DB accounts from one place instead of account by account.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+- azure-backup
+- azure-monitor
+subjects:
+- cloud-computing
+- databases
+modules:
+- learn.wwl.secure-azure-cosmos-db-nosql
+- learn.wwl.configure-backup-restore-azure-cosmos-db-nosql
+- learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql
+- learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql
+- learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql
+- learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql
+- learn.wwl.manage-azure-cosmos-db-fleets
+trophy:
+  uid: learn.wwl.secure-optimize-deploy-azure-cosmos-db-solutions.trophy
