@@ -1,0 +1,92 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.certificate-autoenrollment.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Check your understanding of certificate enrollment methods, request diagnostics, remote enrollment, device registration, renewal, and replacement.
+  ms.date: 10/05/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "A workgroup Windows server on the internet needs initial certificate enrollment and unattended renewal while its private key remains in a trusted platform module. Which approach should an administrator use?"
+    choices:
+    - content: "Use native certificate policy and enrollment web services over HTTPS with controlled bootstrap, then use certificate-based renewal."
+      isCorrect: true
+      explanation: "Correct. This approach keeps the key on the endpoint, supports controlled initial enrollment, and permits later certificate-based renewal without repeatedly exposing a password."
+    - content: "Publish the certification authority remote procedure call endpoint directly to the internet."
+      isCorrect: false
+      explanation: "Incorrect. Certification authority remote procedure call traffic should remain on protected internal networks rather than being exposed to the internet."
+    - content: "Use certification authority web enrollment as an unattended renewal service."
+      isCorrect: false
+      explanation: "Incorrect. Certification authority web enrollment is a manual legacy workflow and doesn't provide the required automated renewal lifecycle."
+  - content: "A remote client retrieves certificate enrollment policy successfully, but request submission fails. What has already been proven?"
+    choices:
+    - content: "The certificate request was accepted and issued by the certification authority."
+      isCorrect: false
+      explanation: "Incorrect. Successful policy retrieval doesn't prove submission, disposition, retrieval, or installation."
+    - content: "Policy discovery and template visibility have been proven, but enrollment service authentication, transport, delegation, certification authority access, and disposition still require testing."
+      isCorrect: true
+      explanation: "Correct. Policy retrieval proves the policy stage only. Request submission and certification authority processing are separate stages."
+    - content: "The client can communicate directly with the certification authority over remote procedure call."
+      isCorrect: false
+      explanation: "Incorrect. The web service tier, not the remote client, communicates with the certification authority over the internal transport."
+  - content: "A network device registration service uses one broad general-purpose template and exposes its administrative challenge endpoint to the internet. Which change is most important?"
+    choices:
+    - content: "Grant the service account enrollment permission on every published template."
+      isCorrect: false
+      explanation: "Incorrect. Broad template access increases the impact of a compromised registration service."
+    - content: "Replace one-time challenges with a reusable shared challenge."
+      isCorrect: false
+      explanation: "Incorrect. A reusable challenge weakens enrollment authorization and can enable unauthorized requests."
+    - content: "Use narrow templates with required usages, restrict subject data, protect service credentials, and limit the challenge endpoint to authorized management systems."
+      isCorrect: true
+      explanation: "Correct. Narrow authorization and protected challenge issuance reduce the risk of unauthorized device certificates."
+  - content: "certreq.exe returns a request identifier and a pending disposition. Why does immediately accepting issued.cer fail?"
+    choices:
+    - content: "No issued certificate exists yet; an authorized approval must occur before retrieving the same request from the same certification authority."
+      isCorrect: true
+      explanation: "Correct. A pending request must be issued and retrieved before the certificate can be accepted on the endpoint that owns the private key."
+    - content: "The request must be recreated with an exportable private key."
+      isCorrect: false
+      explanation: "Incorrect. Exportability isn't required to accept a certificate on the endpoint that created the private key."
+    - content: "The certificate must be accepted on the certification authority first."
+      isCorrect: false
+      explanation: "Incorrect. The certificate is accepted on the requesting endpoint so Windows can associate it with the original private key."
+  - content: "Autoenrollment reports no eligible templates, but a certification authority administrator can enroll manually. What is the most likely testing problem?"
+    choices:
+    - content: "The certification authority must always be restarted after publishing a template."
+      isCorrect: false
+      explanation: "Incorrect. The evidence points to a context or eligibility difference rather than a routine restart requirement."
+    - content: "The test used an administrator identity instead of the target user or computer identity."
+      isCorrect: true
+      explanation: "Correct. Administrator permissions and local access can hide target identity, policy, provider, and authorization failures."
+    - content: "Autoenrollment can process only certificates that use exportable private keys."
+      isCorrect: false
+      explanation: "Incorrect. Autoenrollment supports nonexportable keys and commonly uses them for stronger protection."
+  - content: "A renewed certificate has a different thumbprint from its predecessor. What does this result prove?"
+    choices:
+    - content: "It proves that the private key was rotated."
+      isCorrect: false
+      explanation: "Incorrect. Same-key renewal still produces a certificate with a new thumbprint."
+    - content: "It proves that the relying service is using the new certificate."
+      isCorrect: false
+      explanation: "Incorrect. Installation doesn't prove service binding or live use."
+    - content: "It proves only that the certificate is different; compare provider, key container, or public-key material to determine whether the key changed."
+      isCorrect: true
+      explanation: "Correct. A new certificate always has a different thumbprint, including when it reuses the existing private key."
+  - content: "A team proposes certification authority web enrollment because it accepts certificate signing requests over HTTPS. Why is this approach insufficient for automated remote enrollment?"
+    choices:
+    - content: "Request transport alone doesn't provide native policy discovery, automated provisioning, provider orchestration, renewal lifecycle, endpoint failover, or enrollment service delegation behavior."
+      isCorrect: true
+      explanation: "Correct. A secure enrollment design must cover the complete identity, key, policy, transport, renewal, and activation lifecycle."
+    - content: "Web enrollment can issue only certificates that contain no subject alternative names."
+      isCorrect: false
+      explanation: "Incorrect. The limitation is the missing automated lifecycle and policy integration, not a universal prohibition on subject alternative names."
+    - content: "Web enrollment requires the private key to be generated on the certification authority."
+      isCorrect: false
+      explanation: "Incorrect. A requester can generate the key and certificate signing request externally, but that doesn't make the workflow suitable for automated remote enrollment."

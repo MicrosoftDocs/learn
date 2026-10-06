@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.certificate-autoenrollment.certificate-request-diagnostics
+title: Diagnose certificate requests
+metadata:
+  title: Diagnose Certificate Requests
+  description: Create staged certificate requests with certreq.exe and diagnose failures across policy, key creation, submission, disposition, retrieval, installation, and activation.
+  ms.date: 10/05/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-certificate-request-diagnostics.md)]
