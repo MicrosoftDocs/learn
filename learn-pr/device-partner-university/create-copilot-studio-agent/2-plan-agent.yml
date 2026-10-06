@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.create-copilot-studio-agent.plan-agent
+title: Plan an agent
+metadata:
+  title: Plan An Agent
+  description: This content is part of the "Create an agent in Microsoft Copilot Studio" module.
+  ms.date: 10/06/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-plan-agent.md)]
