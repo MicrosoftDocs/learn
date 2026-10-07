@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.nvidia-spark-rtx.nvidia-rtx-spark-user-personas
+title: Nvidia RTX Spark user personas
+metadata:
+  title: Nvidia RTX Spark User Personas
+  description: This content is part of the "Explore NVIDIA RTX Spark for Windows PCs" module.
+  ms.date: 10/06/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-nvidia-rtx-spark-user-personas.md)]

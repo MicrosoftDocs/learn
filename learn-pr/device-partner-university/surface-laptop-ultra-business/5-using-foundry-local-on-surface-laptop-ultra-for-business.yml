@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-laptop-ultra-business.using-foundry-local-on-surface-laptop-ultra-for-business
+title: Using Foundry Local on Surface Laptop Ultra for Business
+metadata:
+  title: Using Foundry Local on Surface Laptop Ultra for Business
+  description: This content is part of the "Understand local AI and high-performance workflows with Microsoft Surface Laptop Ultra for Business" module.
+  ms.date: 10/05/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-using-foundry-local-on-surface-laptop-ultra-for-business.md)]

@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.dpu.surface-laptop-ultra-business
+title: Understand local AI and high-performance workflows with Microsoft Surface Laptop Ultra for Business
+metadata:
+  title: Understand local AI and high-performance workflows with Microsoft Surface Laptop Ultra for Business
+  description: 'In this module, you will learn about local AI and high-performance workflows with Microsoft Surface Laptop Ultra for Business.'
+  ms.date: 10/05/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  Learn about local AI and high-performance workflows with Microsoft Surface Laptop Ultra for Business.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand local AI and high-performance workflows with Microsoft Surface Laptop Ultra for Business.
+  - Identify scenarios where Surface Laptop Ultra for Business can enhance productivity.
+  - Use Foundry Local to run supported AI models on Surface Laptop Ultra for Business.
+  - Choose high-performance workflows that support productivity with Surface Laptop Ultra for Business.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/surface-laptop-ultra-business-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.surface-laptop-ultra-business.introduction
+  - learn.dpu.surface-laptop-ultra-business.unmetered-intelligence-local-ai
+  - learn.dpu.surface-laptop-ultra-business.what-is-surface-laptop-ultra-for-business
+  - learn.dpu.surface-laptop-ultra-business.how-surface-laptop-ultra-for-business-works
+  - learn.dpu.surface-laptop-ultra-business.using-foundry-local-on-surface-laptop-ultra-for-business
+  - learn.dpu.surface-laptop-ultra-business.when-to-use-surface-laptop-ultra-for-business
+  - learn.dpu.surface-laptop-ultra-business.module-assessment
+  - learn.dpu.surface-laptop-ultra-business.summary
+badge:
+  uid: learn.dpu.surface-laptop-ultra-business.badge

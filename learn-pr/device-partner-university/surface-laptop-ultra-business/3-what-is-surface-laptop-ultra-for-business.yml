@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-laptop-ultra-business.what-is-surface-laptop-ultra-for-business
+title: What is Surface Laptop Ultra for Business?
+metadata:
+  title: What is Surface Laptop Ultra for Business?
+  description: This content is part of the "Understand local AI and high-performance workflows with Microsoft Surface Laptop Ultra for Business" module.
+  ms.date: 10/05/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-what-is-surface-laptop-ultra-for-business.md)]

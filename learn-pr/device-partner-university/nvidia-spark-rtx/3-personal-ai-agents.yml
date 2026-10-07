@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.nvidia-spark-rtx.personal-ai-agents
+title: Personal AI agents
+metadata:
+  title: Personal AI Agents
+  description: This content is part of the "Explore NVIDIA RTX Spark for Windows PCs" module.
+  ms.date: 10/06/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-personal-ai-agents.md)]
