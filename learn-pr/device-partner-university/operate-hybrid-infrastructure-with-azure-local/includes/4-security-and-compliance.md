@@ -16,7 +16,7 @@ From encryption and threat detection to role-based access controls and complianc
 
 - Integrate with Microsoft Entra ID (formerly Azure AD) for identity-based access.  
 - Apply role-based access control (RBAC) consistently across environments.  
-- Use conditional access policies for stronger authentication.  
+- Use Conditional Access policies for stronger authentication.  
 
 ## Compliance alignment
 
@@ -30,7 +30,7 @@ Beyond built-in protections, Azure Local also supports operational security meas
 
 - **Patch automation:** Use update rings to automatically roll out patches in waves, minimizing disruption.  
 - **Log monitoring:** Centralize logs in Azure Monitor or Microsoft Sentinel for continuous visibility and threat hunting.  
-- **Access auditing:** Regularly review role assignments and conditional access policies to ensure least-privilege principles are followed.  
+- **Access auditing:** Regularly review role assignments and Conditional Access policies to ensure least-privilege principles are followed.  
 
 ## Real-world example
 

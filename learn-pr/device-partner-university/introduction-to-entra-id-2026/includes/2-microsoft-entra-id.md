@@ -36,9 +36,9 @@ Organizations face increasing complexity in securing user identities due to evol
   - Operational efficiency
   - User convenience
 
-## Benefits of Entra ID
+## Benefits of Microsoft Entra ID
 
-Entra ID:
+Microsoft Entra ID:
 
 - Provides enhanced security through granular access controls, improved visibility, and adherence to established security practices.
 - Improves productivity by enabling streamlined access to organizational resources.
@@ -48,7 +48,7 @@ Entra ID:
 
 ## Secure adaptive access
 
-Entra ID enables organizations to protect access to resources and data using strong authentication mechanisms and conditional access policies based on risk signals. These measures are designed to maintain security without negatively impacting user experience.
+Microsoft Entra ID enables organizations to protect access to resources and data using strong authentication mechanisms and Conditional Access policies based on risk signals. These measures are designed to maintain security without negatively impacting user experience.
 
 ## Seamless user experiences
 

@@ -141,4 +141,4 @@ This model works especially well when device refresh timelines are uncertain or 
 
 Windows 365 shifts much of the desktop delivery model away from physical device dependency and toward identity, access, and network performance. This can simplify provisioning for new users, contractors, or seasonal workers, since desktops can be assigned and decommissioned without shipping hardware.
 
-However, this model also places increased importance on identity management, network resiliency, and cloud governance. IT teams adopting Windows 365 should consider how user access, conditional access policies, and endpoint security tooling align with a cloud-first desktop experience.
+However, this model also places increased importance on identity management, network resiliency, and cloud governance. IT teams adopting Windows 365 should consider how user access, Conditional Access policies, and endpoint security tooling align with a cloud-first desktop experience.
