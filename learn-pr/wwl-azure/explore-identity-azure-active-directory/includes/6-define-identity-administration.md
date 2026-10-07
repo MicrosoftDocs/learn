@@ -15,13 +15,21 @@ You have a user by the name of Juan. Juan is given an account in your company an
 There are many common tasks performed during identity administration.
 
 **Identity Proliferation** - deals with the storage of identity objects within the environment. Often, organizations have identities in places such as Active Directory, other directory services, and application specific identity stores. 
+
 **Provision and Deprovision** - are actually two separate capabilities. Provisioning speaks towards how identity objects are created within a system. Deprovision focuses on the removal of an identity from having access (deletion, disablement of security principle or removal of access). 
+
 **Identity Updates** - surrounds how identity information is updated throughout the environment. The idea is to move away from a manual effort to a more automated and streamlined approach.
+
 **Synchronization** - is ensuring that identity systems within an environment are up to date with the latest identity information. This information is often crucial for determining access. The key things that influence this capability are how synchronization is performed whether it's manual, time-based, or event driven.
+
 **Password Management** - focuses on where and how passwords are set throughout the identity infrastructure. In most organizations, the Service Desk is still the focal point for forgotten passwords.
+
 **Group Management** - focuses on how an organization manages groups (for example, Active Directory) within their environment. Groups are one of the most common form for determining access permissions to resources and are expensive to manage and operate. 
+
 **Application Entitlement Management** - defines on how identities are granted access to applications. It focuses on providing coarse-grained application entitlements that are enforced as a capability contained within the Authorization pillar. On the other hand, fine-grained entitlements are managed as attributes relating to an identity.
+
 **User Interface** - is how the end user is able to request, or make, updates to their identity information. In many environments, users continue to contact the Service Desk for any updates to their identity information. 
+
 **Change Control** - capability focuses on how changes flow through the environment whether manually completed by a Service Desk professional. There can be automation with or without workflow, which drives the change process. Some organizations still send emails to complete requests while others have rich and mature processes to execute the change.
 
 ## Identity management automation
