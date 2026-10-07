@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-laptop-ultra-business.module-assessment
+title: Module assessment
+metadata:
+  module_assessment: true
+  title: Module assessment
+  description: This content is part of the "Understand local AI and high-performance workflows with Microsoft Surface Laptop Ultra for Business" module.
+  ms.date: 10/05/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "An organization wants routine, supported AI workloads to run on its devices while continuing to use cloud AI for more complex scenarios. Which approach best aligns with the module?"
+    choices:
+        - content: "Move every AI workload to local devices, regardless of its computing requirements."
+          isCorrect: false
+          explanation: ""
+        - content: "Run appropriate workloads locally and reserve cloud AI for scenarios requiring additional scale or capabilities."
+          isCorrect: true
+          explanation: ""
+        - content: "Use local processing only when a cloud AI service is unavailable."
+          isCorrect: false
+          explanation: ""
+        - content: "Send routine workloads to the cloud and reserve device hardware for data storage."
+          isCorrect: false
+          explanation: ""
+  - content: "A video editor regularly works with 8K footage, AI-assisted effects, HDR content, and multiple external displays. Which combination of Surface Laptop Ultra for Business features most directly supports this workflow?"
+    choices:
+        - content: "Facial recognition, TPM 2.0, and a replaceable keyboard"
+          isCorrect: false
+          explanation: ""
+        - content: "Adaptive touch, a headphone port, and Microsoft Account backup"
+          isCorrect: false
+          explanation: ""
+        - content: "An SD card reader, Windows Update, and a Full HD front-facing camera"
+          isCorrect: false
+          explanation: ""
+        - content: "High Unified Memory configurations, fast SSD storage, advanced graphics, a color-accurate display, and multi-monitor support"
+          isCorrect: true
+          explanation: ""
+  - content: "A developer wants to evaluate supported local AI models by visually browsing a catalog, entering prompts, and comparing results without first building an application or using command-line tools. What should the developer use?"
+    choices:
+        - content: "AI Dev Gallery"
+          isCorrect: true
+          explanation: ""
+        - content: "Windows Hello"
+          isCorrect: false
+          explanation: ""
+        - content: "Surface UEFI"
+          isCorrect: false
+          explanation: ""
+        - content: "The Surface app's Touchpad settings"
+          isCorrect: false
+          explanation: ""
+  - content: "An employee wants to customize the Surface haptic touchpad to meet their mobility and dexterity needs. Which feature should they enable?"
+    choices:
+        - content: "Enhanced Sign-in Security"
+          isCorrect: false
+          explanation: ""
+        - content: "Automatic framing"
+          isCorrect: false
+          explanation: ""
+        - content: "Adaptive touch"
+          isCorrect: true
+          explanation: ""
+        - content: "Dynamic refresh rate"
+          isCorrect: false
+          explanation: ""
+  - content: "A data scientist is evaluating an AI workflow for a customer insights project. They want to compare outputs locally before deciding which parts of the solution require cloud-scale processing. Why is Surface Laptop Ultra for Business a strong fit for this scenario?"
+    choices:
+        - content: "It can run suitable tests locally, helping the data scientist validate the workflow before scaling selected parts to the cloud."
+          isCorrect: true
+          explanation: ""
+        - content: "It requires all model testing to be completed through a cloud-hosted service."
+          isCorrect: false
+          explanation: ""
+        - content: "It automatically converts locally tested models into completed enterprise applications."
+          isCorrect: false
+          explanation: ""
+        - content: "It removes the need to decide which workloads should run locally and which should move to the cloud."
+          isCorrect: false
+          explanation: ""

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-laptop-ultra-business.how-surface-laptop-ultra-for-business-works
+title: How Surface Laptop Ultra for Business works
+metadata:
+  title: How Surface Laptop Ultra for Business works
+  description: This content is part of the "Understand local AI and high-performance workflows with Microsoft Surface Laptop Ultra for Business" module.
+  ms.date: 10/05/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-how-surface-laptop-ultra-for-business-works.md)]
