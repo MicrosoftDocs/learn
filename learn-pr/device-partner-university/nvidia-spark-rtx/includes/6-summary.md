@@ -1,0 +1,9 @@
+In this module, you explored how NVIDIA RTX Spark™ helps prepare Windows PCs for AI-enabled workflows that rely on local compute, high-performance graphics, and large unified memory. You reviewed the hardware components that support demanding AI, creative, and technical workloads, then examined how on-device personal AI agents can help users delegate multi-step tasks while maintaining greater control over performance, privacy, and data handling. You also considered the types of users who benefit most from RTX Spark™, including developers, creative professionals, and knowledge workers in high-compliance industries.
+
+## Key takeaways
+
+- RTX Spark™ is designed for local AI performance. Its Blackwell RTX GPU,  CPU, unified memory, and FP4 AI performance help support responsive on-device AI, creative, and technical workloads.
+- Unified memory helps reduce bottlenecks. By allowing the CPU and GPU to access a shared memory pool, RTX Spark™ can better support large local models, complex 3D assets, and data-intensive workflows.
+- Personal AI agents shift work from manual execution to guided delegation. Instead of managing every step across applications, users can give a high-level goal and review the agent's output before taking action.
+- On-device agents can support privacy, speed, and personalization. Running AI tasks locally can help reduce latency, limit reliance on cloud processing, and keep sensitive files or code within the device boundary when appropriate.
+- RTX Spark™ is built for demanding users who want one Windows PC for AI, creation, develoipment, and everyday work. Developers, AI engineers, creative professionals, and other power users benefit from high-performance local AI compute and up to 128 GB of unified memory, giving them more headroom for large models, complex creative workfloes, and technical workloads.

@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.nvidia-spark-rtx.module-assessment
+title: Module assessment
+metadata:
+  module_assessment: true
+  title: Module assessment
+  description: This content is part of the "Explore NVIDIA RTX Spark for Windows PCs" module.
+  ms.date: 10/06/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Module assessment
+  questions:
+  - content: "How does unified memory help NVIDIA RTX Spark™ support demanding local workloads?"
+    choices:
+        - content: "It gives the CPU and GPU access to a shared pool of high-speed memory."
+          isCorrect: true
+          explanation: ""
+        - content: "It transfers every workload from the CPU to the GPU."
+          isCorrect: false
+          explanation: ""
+        - content: "It increases the number of CPU and CUDA cores available."
+          isCorrect: false
+          explanation: ""
+        - content: "It stores AI models in the cloud until they are needed."
+          isCorrect: false
+          explanation: ""
+  - content: "What distinguishes a personal AI agent from a traditional step-by-step software workflow?"
+    choices:
+        - content: "It requires the user to move information manually between applications."
+          isCorrect: false
+          explanation: ""
+        - content: "It can interpret a high-level goal, plan the required steps, and complete a multi-step workflow."
+          isCorrect: true
+          explanation: ""
+        - content: "It can complete only one action before requiring another instruction."
+          isCorrect: false
+          explanation: ""
+        - content: "It is limited to searching files and cannot interact with applications."
+          isCorrect: false
+          explanation: ""
+  - content: "A company needs to analyze sensitive documents without uploading them to a public cloud AI service. Which RTX Spark™ benefit most directly addresses this requirement?"
+    choices:
+        - content: "High-resolution gaming performance"
+          isCorrect: false
+          explanation: ""
+        - content: "Automatic access to every file on the device"
+          isCorrect: false
+          explanation: ""
+        - content: "Cloud-based processing of confidential documents"
+          isCorrect: false
+          explanation: ""
+        - content: "Local processing that can keep sensitive information within the device boundary"
+          isCorrect: true
+          explanation: ""
+  - content: "A video editor regularly works with high-resolution media, complex visual content, and local AI generation. Which RTX Spark™ component most directly supports these graphics and parallel-computing workloads?"
+    choices:
+        - content: "Windows Taskbar integration"
+          isCorrect: false
+          explanation: ""
+        - content: "The NVIDIA Grace CPU"
+          isCorrect: false
+          explanation: ""
+        - content: "The NVIDIA Blackwell RTX GPU"
+          isCorrect: true
+          explanation: ""
+        - content: "Windows security primitives"
+          isCorrect: false
+          explanation: ""
+  - content: "Why might a software developer use an RTX Spark™-powered PC for an AI coding assistant?"
+    choices:
+        - content: "It can index codebases and run AI-assisted development workflows locally without sending confidential code to an external server."
+          isCorrect: true
+          explanation: ""
+        - content: "It automatically replaces the developer's existing development tools."
+          isCorrect: false
+          explanation: ""
+        - content: "It requires models and repositories to be hosted in a public cloud."
+          isCorrect: false
+          explanation: ""
+        - content: "It limits coding assistants to autocomplete and prevents background tasks."
+          isCorrect: false
+          explanation: ""

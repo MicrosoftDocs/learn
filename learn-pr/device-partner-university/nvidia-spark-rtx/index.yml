@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.nvidia-spark-rtx
+title: Explore NVIDIA RTX Spark for Windows PCs
+metadata:
+  title: Explore NVIDIA RTX Spark for Windows PCs
+  description: "In this module, you'll explore NVIDIA RTX Spark for Windows PCs and learn how to leverage its capabilities for personal AI agents and other advanced features."
+  ms.date: 10/06/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: windows-11
+summary: > 
+  In this module, you'll explore NVIDIA RTX Spark for Windows PCs and learn how to leverage its capabilities for personal AI agents and other advanced features.
+
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand the capabilities of NVIDIA RTX Spark for Windows PCs.
+  - Leverage NVIDIA RTX Spark for personal AI agents.
+  - Identify the hardware requirements for NVIDIA RTX Spark.
+  - Recognize different user personas for NVIDIA RTX Spark.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/nvidia-spark-rtx-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.nvidia-spark-rtx.introduction
+  - learn.dpu.nvidia-spark-rtx.hardware-overview
+  - learn.dpu.nvidia-spark-rtx.personal-ai-agents
+  - learn.dpu.nvidia-spark-rtx.nvidia-rtx-spark-user-personas
+  - learn.dpu.nvidia-spark-rtx.module-assessment
+  - learn.dpu.nvidia-spark-rtx.summary
+badge:
+  uid: learn.dpu.nvidia-spark-rtx.badge
