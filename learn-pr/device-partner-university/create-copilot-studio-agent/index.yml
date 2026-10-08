@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.dpu.create-copilot-studio-agent
-title: Create an agent in Microsoft Copilot Studio
+title: Work smarter with an agent in Microsoft Copilot Studio
 metadata:
-  title: Create An Agent In Microsoft Copilot Studio
+  title: Work smarter with an agent in Microsoft Copilot Studio
   description: Create and configure an agent for a defined business scenario in Microsoft Copilot Studio. Practice planning, connecting knowledge sources, testing responses, and refining agent behavior.
   ms.date: 10/06/2026
   author: hhreyes21
@@ -19,7 +19,7 @@ abstract: |
 
 prerequisites: |
   - None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/create-copilot-studio-agent.svg
 ratingEnabled: false
 levels:
   - beginner
