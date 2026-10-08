@@ -60,7 +60,7 @@ After Copilot Studio creates the initial agent, review the generated configurati
    For the Contoso example, the name could be:
 
    ```text
-   IT Support Assistant
+   Contoso IT Support
    ```
 
 1. Review the generated description.
