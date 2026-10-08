@@ -3,7 +3,7 @@ uid: learn.dpu.create-copilot-studio-agent.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge Check
-  description: This content is part of the "Create an agent in Microsoft Copilot Studio" module.
+  description: This content is part of the "Work smarter with an agent in Microsoft Copilot Studio" module.
   ms.date: 10/06/2026
   author: hhreyes21
   ms.author: v-homerreyes
@@ -12,73 +12,91 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: "A support team plans an agent that answers employee questions by using approved internal procedures. Which planning decision most directly determines the information the agent should use?"
-    choices:
+    - content: "A support team plans an agent that answers employee questions by using approved internal procedures. Which planning decision most directly determines the information the agent should use?"
+      choices:
         - content: "Knowledge source"
           isCorrect: true
-          explanation: ""
+          explanation: "Correct. The knowledge source determines the information the agent can use when responding."
         - content: "Audience"
           isCorrect: false
-          explanation: ""
+          explanation: "Incorrect. The audience helps shape the design of the agent but doesn't determine its information source."
         - content: "Escalation approach"
           isCorrect: false
-          explanation: ""
+          explanation: "Incorrect. Escalation defines how issues are handed off, not what information the agent uses."
         - content: "Validation criteria"
           isCorrect: false
-          explanation: ""
-  - content: "An employee submits the request 'My computer isn't working.' How should a well-configured support agent respond?"
-    choices:
+          explanation: "Incorrect. Validation criteria measure success but don't define the agent's knowledge."
+
+    - content: "An employee submits the request 'My computer isn't working.' How should a well-configured support agent respond?"
+      choices:
         - content: "Ask a clarifying question to gather more details"
           isCorrect: true
-          explanation: ""
+          explanation: "Correct. Clarifying questions help the agent collect the information needed to assist effectively."
         - content: "Provide troubleshooting steps immediately"
           isCorrect: false
-          explanation: ""
+          explanation: "Incorrect. The request is too vague to provide accurate troubleshooting steps."
         - content: "Direct the employee to human support"
           isCorrect: false
-          explanation: ""
+          explanation: "Incorrect. The agent should first attempt to gather more information."
         - content: "Tell the employee to submit the request again"
           isCorrect: false
-          explanation: ""
-  - content: "Which instruction best helps an agent respond consistently to unclear requests?"
-    choices:
+          explanation: "Incorrect. The agent should continue the conversation by asking for more details."
+
+    - content: "Which instruction best helps an agent respond consistently to unclear requests?"
+      choices:
         - content: "Ask the employee to identify the affected device and provide any error message"
           isCorrect: true
-          explanation: ""
+          explanation: "Correct. Specific instructions help the agent gather the details needed to respond consistently."
         - content: "Be helpful whenever possible"
           isCorrect: false
-          explanation: ""
+          explanation: "Incorrect. This instruction is too general to guide consistent behavior."
         - content: "Try multiple answers until one seems appropriate"
           isCorrect: false
-          explanation: ""
+          explanation: "Incorrect. Agents should follow defined behavior instead of guessing."
         - content: "Answer every request as quickly as possible"
           isCorrect: false
-          explanation: ""
-  - content: "A request is within the agent's intended purpose, but the approved knowledge source doesn't contain enough information to answer it. Which outcome is most appropriate?"
-    choices:
+          explanation: "Incorrect. Speed alone doesn't ensure accurate or consistent responses."
+
+    - content: "A request is within the agent's intended purpose, but the approved knowledge source doesn't contain enough information to answer it. Which outcome is most appropriate?"
+      choices:
+        - content: "Escalate the request to human support"
+          isCorrect: true
+          explanation: "Correct. When the agent lacks sufficient information, escalating to human support ensures the request is handled appropriately."
+        - content: "Provide a best-guess answer"
+          isCorrect: false
+          explanation: "Incorrect. The agent should not guess when it lacks the necessary knowledge."
+        - content: "Ignore the request"
+          isCorrect: false
+          explanation: "Incorrect. Ignoring the request would leave the user without assistance."
+        - content: "Ask the user to rephrase the request"
+          isCorrect: false
+          explanation: "Incorrect. Rephrasing won't help if the knowledge source doesn't contain the needed information."
+    - content: "When approved knowledge doesn't contain enough information, how should the agent respond?"
+      choices:
         - content: "Acknowledge the knowledge gap and direct the user to an appropriate source of assistance"
           isCorrect: true
-          explanation: ""
+          explanation: "Correct. Agents should be transparent when approved information isn't available."
         - content: "Create a response based on general assumptions"
           isCorrect: false
-          explanation: ""
+          explanation: "Incorrect. Agents shouldn't generate answers that aren't supported by approved information."
         - content: "Expand the scope of the agent automatically"
           isCorrect: false
-          explanation: ""
+          explanation: "Incorrect. Agent scope should be intentionally planned and managed."
         - content: "Search for information outside the approved source and present it as an answer"
           isCorrect: false
-          explanation: ""
-  - content: "Which activity best validates whether an agent satisfies its planned requirements?"
-    choices:
+          explanation: "Incorrect. Responses should be based on approved knowledge sources."
+
+    - content: "Which activity best validates whether an agent satisfies its planned requirements?"
+      choices:
         - content: "Testing representative requests and comparing the results with validation criteria"
           isCorrect: true
-          explanation: ""
+          explanation: "Correct. Testing against defined criteria helps verify that requirements are met."
         - content: "Reviewing the agent's name and description only"
           isCorrect: false
-          explanation: ""
+          explanation: "Incorrect. Names and descriptions don't demonstrate agent performance."
         - content: "Adding additional knowledge sources without testing"
           isCorrect: false
-          explanation: ""
+          explanation: "Incorrect. Changes should be tested to confirm they achieve the intended outcome."
         - content: "Publishing the agent to users immediately"
           isCorrect: false
-          explanation: ""
+          explanation: "Incorrect. Validation should occur before publishing an agent."
