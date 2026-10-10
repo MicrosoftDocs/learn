@@ -1,0 +1,28 @@
+### YamlMime:LearningPath
+uid: learn.dpu.ai-success-build-ai-agents
+title: 'AI Success: Build AI agents with Microsoft Copilot'
+metadata:
+  title: 'AI Success: Build AI agents with Microsoft Copilot'
+  description:  This learning path introduces the fundamentals of building AI agents with Microsoft Copilot. Learn how to create and configure agents, connect knowledge sources, define agent behavior through instructions, and test your solutions. By completing these modules, you'll gain practical experience building and using AI agents to improve productivity and streamline everyday work.
+  ms.date: 10/09/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: learning-path
+summary: >
+  Discover how to create, configure, and use AI agents with Microsoft Copilot. Learn how agents use instructions, knowledge, and actions to automate tasks, answer questions, and help improve productivity.
+prerequisites: None
+iconUrl: /training/achievements/ai-success-build-ai-agents.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - microsoft-365-copilot
+modules:
+  - learn.dpu.create-copilot-agent
+  - learn.dpu.create-copilot-studio-agent
+trophy:
+  uid: learn.dpu.ai-success-build-ai-agents.trophy
