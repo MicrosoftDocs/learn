@@ -3,7 +3,7 @@ uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog
 metadata:
   title: Cleanse, Transform, and Load Data into Unity Catalog
   description: Learn how to cleanse, transform, and load data into Unity Catalog tables in Azure Databricks by profiling data, handling duplicates and nulls, applying transformations, and using various loading strategies.
-  ms.date: 05/11/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module
@@ -12,7 +12,7 @@ metadata:
 title: Cleanse, transform, and load data into Unity Catalog
 summary: Data engineering requires transforming raw data into clean, well-structured formats ready for analysis. This module explores techniques for profiling data quality, selecting appropriate column types, resolving duplicates and null values, applying filtering and aggregation transformations, combining datasets with joins and set operators, reshaping data through pivoting and denormalization, and loading transformed data using append, overwrite, and merge strategies.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   - Profile data using SQL commands and data profiling features to assess data quality
   - Choose appropriate column data types to optimize storage and ensure data integrity
   - Identify and resolve duplicate, missing, and null values in datasets

@@ -86,7 +86,7 @@ FROM orders
 WHERE order_amount IS NOT NULL;
 ```
 
-For comprehensive null handling that removes entire rows containing null values, use the `dropna()` method covered in the unit on resolving duplicate and missing values:
+For null handling that removes entire rows containing null values, use the `dropna()` method covered in the unit on resolving duplicate and missing values:
 
 ```python
 # Remove rows where order_amount is null
@@ -216,4 +216,4 @@ This approach improves readability and lets Spark optimize the entire operation 
 > [!TIP]
 > When chaining transformations, place filters early in the pipeline to reduce the data volume that subsequent operations must process.
 
-Understanding filtering, grouping, and aggregating prepares you to build efficient transformation pipelines. These operations combine naturally with joins and other transformations to create comprehensive data processing workflows.
+Understanding filtering, grouping, and aggregating prepares you to build efficient transformation pipelines. These operations combine naturally with joins and other transformations to create data processing workflows.
