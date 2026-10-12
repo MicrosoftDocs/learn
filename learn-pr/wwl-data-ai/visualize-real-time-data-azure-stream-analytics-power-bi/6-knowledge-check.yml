@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 04/03/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -25,15 +25,15 @@ quiz:
       explanation: "Correct. A Power BI output creates a dataset with a table of streaming data in a Power BI workspace."
   - content: "You want to use an output to write the results of a Stream Analytics query to a table named **device-events** in a dataset named **realtime-data** in a Power BI workspace named **analytics workspace**. What should you do?"
     choices:
-    - content: "Create only the workspace. The dataset and table will be created automatically."
+    - content: "Create only the workspace. The dataset and table are created automatically."
       isCorrect: true
-      explanation: "Correct. The dataset and table will be created dynamically by the output."
+      explanation: "Correct. The dataset and table are created dynamically by the output."
     - content: "Create the workspace and dataset. The table is created automatically."
       isCorrect: false
-      explanation: "Incorrect. The dataset and table will be created dynamically by the output."
+      explanation: "Incorrect. The dataset and table are created dynamically by the output."
     - content: "Create the workspace, dataset, and table before creating the output."
       isCorrect: false
-      explanation: "Incorrect. The dataset and table will be created dynamically by the output."
+      explanation: "Incorrect. The dataset and table are created dynamically by the output."
   - content: "You want to create a visualization that updates dynamically based on a table in a streaming dataset in Power BI. What should you do?"
     choices:
     - content: "Create a report from the dataset."
