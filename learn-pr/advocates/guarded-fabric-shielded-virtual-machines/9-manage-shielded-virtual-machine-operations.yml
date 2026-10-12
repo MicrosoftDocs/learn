@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.guarded-fabrics-shielded-virtual-machines.manage-shielded-virtual-machine-operations
+title: Manage shielded virtual machine operations
+metadata:
+  title: Manage Shielded Virtual Machine Operations
+  description: Manage owner-authenticated guest access, protected migration, failover, checkpoints, replication, and backups for shielded virtual machines.
+  ms.date: 10/08/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/9-manage-shielded-virtual-machine-operations.md)]

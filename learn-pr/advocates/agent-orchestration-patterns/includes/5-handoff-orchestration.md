@@ -7,7 +7,7 @@ The handoff orchestration pattern addresses scenarios where:
 
 The handoff orchestration pattern enables intelligent routing and ensures that tasks reach the most capable agent. Agents in this pattern don't typically work in parallel. Full control transfers from one agent to another agent.
 
-[![A diagram of the handoff orchestration pattern.](../media/handoff-orchestration.png)](../media/handoff-orchestration-big.png#lightbox)
+[![Diagram that shows the handoff orchestration pattern.](../media/handoff-orchestration.png)](../media/handoff-orchestration-big.png#lightbox)
 
 An example of where it's appropriate to implement the agent handoff orchestration pattern is with a  customer support web portal. An initial agent begins helping customers but discovers that it needs specialized expertise during the conversation. The initial agent passes the task to the most appropriate agent to address the customer's concern. Only one agent at a time operates on the original input, and the handoff chain results in a single result.
 
@@ -15,7 +15,7 @@ In this system, the _triage support agent_ interprets the request and tries to h
 
 Each agent is capable of completing the conversation if it determines that customer success has been achieved or that no other agent can further benefit the customer. Some agents are also designed to hand off the user experience to a human support agent when the problem is important to solve but no AI agent currently has the capabilities to address it.
 
-[![A diagram of handoff orchestration in the example application.](../media/handoff-orchestration-example.png)](../media/handoff-orchestration-example-big.png)
+[![Diagram that shows handoff orchestration in the example application.](../media/handoff-orchestration-example.png)](../media/handoff-orchestration-example-big.png)
 
 Consider the agent handoff pattern in the following scenarios:
 

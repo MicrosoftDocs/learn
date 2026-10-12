@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.agent-orchestration-patterns.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge Check
+  title: Module Assessment
   description: Test your knowledge
-  ms.date: 08/13/2025
+  ms.date: 10/09/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

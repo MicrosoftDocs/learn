@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.guarded-fabrics-shielded-virtual-machines.recover-guarded-fabrics
+title: Recover guarded fabrics
+metadata:
+  title: Recover Guarded Fabrics
+  description: Plan fallback services, offline caching, independent backups, service recovery, and owner-controlled recovery of protected guest data.
+  ms.date: 10/08/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/12-recover-guarded-fabrics.md)]

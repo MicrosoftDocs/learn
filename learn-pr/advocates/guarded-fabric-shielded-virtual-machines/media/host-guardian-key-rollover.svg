@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1210" viewBox="0 0 1100 1210" role="img" aria-labelledby="title description">
+  <title id="title">HGS key rollover without stranding existing VM state</title>
+  <desc id="description">Read five stages downward. HGS administrators stage new keys and prove private-key access on every node. They select the new primary keys and publish authenticated metadata. VM owners update existing key protectors without replacing their protected secret. Teams test current VMs and retained recovery states, including negative authorization tests. Only then are old keys disabled and retired according to approved retention and compromise decisions. New primary selection does not rewrite old VMs or backups.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#155a86"/>
+    </marker>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; fill: #172b4d; }
+      .title { font-size: 30px; font-weight: 700; }
+      .heading { font-size: 25px; font-weight: 700; }
+      .body { font-size: 21px; }
+      .card { fill: #eef5fb; stroke: #286086; stroke-width: 2; }
+      .protected { fill: #edf7f2; stroke: #28624a; stroke-width: 2; }
+      .connector { stroke: #155a86; stroke-width: 3; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect id="background" x="0" y="0" width="1100" height="1210" fill="#ffffff"/>
+  <text class="title" x="40" y="52">Key rollover: preserve authorization through change</text>
+  <text class="body" x="40" y="86">Primary-key selection alone does not rewrite existing VMs or backups.</text>
+
+  <g class="node" id="step-1">
+    <rect class="card" x="60" y="120" width="980" height="160" rx="8"/>
+    <text class="heading" x="84" y="157">1. HGS administrators stage new keys</text>
+    <text class="body" x="84" y="194">Check the required KSP certificate profile and approved key identities.</text>
+    <text class="body" x="84" y="228">Prove usable signing and encryption private keys on every HGS node.</text>
+    <text class="body" x="84" y="262">Provision HSM or thumbprint-based key access per node as required.</text>
+  </g>
+  <line class="connector" x1="550" y1="290" x2="550" y2="310"/>
+  <g class="node" id="step-2">
+    <rect class="card" x="60" y="320" width="980" height="160" rx="8"/>
+    <text class="heading" x="84" y="357">2. Select primary keys and publish metadata</text>
+    <text class="body" x="84" y="394">Make the approved keys primary for the intended operations.</text>
+    <text class="body" x="84" y="428">Owners authenticate the new fabric guardian identities out of band.</text>
+    <text class="body" x="84" y="462">Existing protected state can still depend on the old keys.</text>
+  </g>
+  <line class="connector" x1="550" y1="490" x2="550" y2="510"/>
+  <g class="node" id="step-3">
+    <rect class="protected" x="60" y="520" width="980" height="160" rx="8"/>
+    <text class="heading" x="84" y="557">3. Owners update existing key protectors</text>
+    <text class="body" x="84" y="594">Keep each VM off during the approved KP exchange.</text>
+    <text class="body" x="84" y="628">Grant or revoke guardian access without replacing the protected secret.</text>
+    <text class="body" x="84" y="662">Creating a new PDK does not update deployed VM key protectors.</text>
+  </g>
+  <line class="connector" x1="550" y1="690" x2="550" y2="710"/>
+  <g class="node" id="step-4">
+    <rect class="card" x="60" y="720" width="980" height="160" rx="8"/>
+    <text class="heading" x="84" y="757">4. Test current and retained recovery states</text>
+    <text class="body" x="84" y="794">Cover VMs, PDKs, checkpoints, replicas, and retained backups.</text>
+    <text class="body" x="84" y="828">Prove authorized starts and rejection by unauthorized destinations.</text>
+    <text class="body" x="84" y="862">Inspect old KPs before reconnecting a restored VM.</text>
+  </g>
+  <line class="connector" x1="550" y1="890" x2="550" y2="910"/>
+  <g class="node" id="step-5">
+    <rect class="protected" x="60" y="920" width="980" height="160" rx="8"/>
+    <text class="heading" x="84" y="957">5. Disable, then retire old keys deliberately</text>
+    <text class="body" x="84" y="994">Meet the approved transition and recovery-retention conditions first.</text>
+    <text class="body" x="84" y="1028">Routine rotation may allow a controlled overlap; compromise differs.</text>
+    <text class="body" x="84" y="1062">Never silently restore compromised trust to make a backup start.</text>
+  </g>
+  <text class="body" x="40" y="1133">Same-key renewal and new-key rollover have different recovery consequences.</text>
+  <text class="body" x="40" y="1170">A matching certificate subject name is not the same cryptographic key.</text>
+</svg>

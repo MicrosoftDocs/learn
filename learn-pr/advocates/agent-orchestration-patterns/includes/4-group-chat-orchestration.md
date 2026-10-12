@@ -4,7 +4,7 @@ This pattern addresses scenarios that are best accomplished through group discus
 
 This pattern works well for human-in-the-loop scenarios where humans can optionally take on dynamic chat manager responsibilities and guide conversations toward productive outcomes. In this orchestration pattern, agents are typically in a _read-only_ mode. They don't use tools to make changes in running systems.
 
-[![A diagram of the group chat orchestration pattern.](../media/group-chat-orchestration.png)](../media/group-chat-orchestration-big.png#lightbox)
+[![Diagram that shows the group chat orchestration pattern.](../media/group-chat-orchestration.png)](../media/group-chat-orchestration-big.png#lightbox)
 
 The maker-checker loop is a specific type of group chat orchestration where one agent, the _maker_, creates or proposes something. Another agent, the _checker_, provides a critique of the result. This pattern is iterative, with the checker agent pushing the conversation back to the maker agent to make updates and repeat the process. Although the group chat pattern doesn't require agents to _take turns_ chatting, the maker-checker loop requires a formal turn-based sequence that the chat manager drives.
 
@@ -17,7 +17,7 @@ Each agent may have the following approach:
 - The _budget and operations agent_ analyzes construction costs, ongoing maintenance expenses, staffing requirements, and long-term operational sustainability
 - The chat manager facilitates structured debate where agents challenge each other's recommendations and defend their reasoning. A parks department employee participates in the chat thread to add insight and respond to agents' knowledge requests in real time. This process enables the employee to update the original proposal to address identified concerns and better prepare for community feedback
 
-[![A diagram of group chat orchestration in the example application.](../media/group-chat-orchestration-example.png)](../media/group-chat-orchestration-example.png#lightbox)
+[![Diagram that shows group chat orchestration in the example application.](../media/group-chat-orchestration-example.png)](../media/group-chat-orchestration-example.png#lightbox)
 
 Consider group chat orchestration when your scenario can be solved through spontaneous or guided collaboration or iterative maker-checker loops. All of these approaches support real-time human oversight or participation. Because all agents and humans in the loop emit output into a single accumulating thread, this pattern provides transparency and auditability. It's useful in the following scenarios:
 

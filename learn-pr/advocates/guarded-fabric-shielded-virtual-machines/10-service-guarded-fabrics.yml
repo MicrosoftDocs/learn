@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.guarded-fabrics-shielded-virtual-machines.service-guarded-fabrics
+title: Service guarded fabrics
+metadata:
+  title: Service Guarded Fabrics
+  description: Plan controlled servicing, monitor the guarded fabric, rotate service keys, and retire infrastructure without losing recovery authority.
+  ms.date: 10/08/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/10-service-guarded-fabrics.md)]

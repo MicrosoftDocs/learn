@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.guarded-fabrics-shielded-virtual-machines.evaluate-host-key-attestation
+title: Evaluate host-key attestation
+metadata:
+  title: Evaluate Host-Key Attestation
+  description: Evaluate host-key assurance, rotate host identities, and plan controlled changes to the active Host Guardian Service attestation mode.
+  ms.date: 10/08/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-evaluate-host-key-attestation.md)]

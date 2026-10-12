@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1390" viewBox="0 0 1000 1390" role="img" aria-labelledby="title description">
+  <title id="title">Shielded VM startup and key-release sequence</title>
+  <desc id="description">Read eight numbered steps from top to bottom. The guarded host collects evidence. HGS Attestation evaluates policy and issues a health certificate. The host presents the certificate and VM key protector to Key Protection Service. KPS checks both host evidence and VM authorization, then returns key material encrypted to host VBS. The protected environment enables the vTPM, and the guest uses it to unlock its BitLocker OS volume. Passing attestation alone does not authorize every VM.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#155a86"/>
+    </marker>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; fill: #172b4d; }
+      .title { font-size: 30px; font-weight: 700; }
+      .heading { font-size: 24px; font-weight: 700; }
+      .body { font-size: 20px; }
+      .card { fill: #eef5fb; stroke: #286086; stroke-width: 2; }
+      .protected { fill: #edf7f2; stroke: #28624a; stroke-width: 2; }
+      .connector { stroke: #155a86; stroke-width: 3; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect id="background" x="0" y="0" width="1000" height="1390" fill="#ffffff"/>
+  <text class="title" x="40" y="52">Startup: two authorization decisions before unlock</text>
+  <text class="body" x="40" y="84">Read from top to bottom. Arrows connect stages, not administrator permissions.</text>
+
+  <g class="node" id="step-1">
+    <rect class="card" x="60" y="120" width="880" height="110" rx="8"/>
+    <text class="heading" x="84" y="155">1. Guarded host collects evidence</text>
+    <text class="body" x="84" y="186">TPM identity, measured boot, and code integrity state.</text>
+    <text class="body" x="84" y="215">Evidence must represent the actual approved host configuration.</text>
+  </g>
+  <line class="connector" x1="500" y1="240" x2="500" y2="265"/>
+  <g class="node" id="step-2">
+    <rect class="card" x="60" y="275" width="880" height="110" rx="8"/>
+    <text class="heading" x="84" y="310">2. HGS Attestation evaluates host policy</text>
+    <text class="body" x="84" y="341">Identity and security evidence must satisfy the active attestation mode.</text>
+    <text class="body" x="84" y="370">An unapproved host is rejected at this decision.</text>
+  </g>
+  <line class="connector" x1="500" y1="395" x2="500" y2="420"/>
+  <g class="node" id="step-3">
+    <rect class="card" x="60" y="430" width="880" height="110" rx="8"/>
+    <text class="heading" x="84" y="465">3. HGS issues a health certificate</text>
+    <text class="body" x="84" y="496">The certificate provides limited-validity evidence of host acceptance.</text>
+    <text class="body" x="84" y="525">It is not permission to unlock every VM.</text>
+  </g>
+  <line class="connector" x1="500" y1="550" x2="500" y2="575"/>
+  <g class="node" id="step-4">
+    <rect class="card" x="60" y="585" width="880" height="110" rx="8"/>
+    <text class="heading" x="84" y="620">4. Host requests this VM's protected key material</text>
+    <text class="body" x="84" y="651">The request includes the health certificate and VM key protector (KP).</text>
+    <text class="body" x="84" y="680">The KP identifies authorized guardian keys.</text>
+  </g>
+  <line class="connector" x1="500" y1="705" x2="500" y2="730"/>
+  <g class="node" id="step-5">
+    <rect class="card" x="60" y="740" width="880" height="110" rx="8"/>
+    <text class="heading" x="84" y="775">5. Key Protection Service checks VM authorization</text>
+    <text class="body" x="84" y="806">KPS validates the certificate and whether its keys can serve this KP.</text>
+    <text class="body" x="84" y="835">A healthy host can still be denied this particular VM.</text>
+  </g>
+  <line class="connector" x1="500" y1="860" x2="500" y2="885"/>
+  <g class="node" id="step-6">
+    <rect class="protected" x="60" y="895" width="880" height="110" rx="8"/>
+    <text class="heading" x="84" y="930">6. KPS returns material protected for host VBS</text>
+    <text class="body" x="84" y="961">Released material is encrypted for the host's isolated environment.</text>
+    <text class="body" x="84" y="990">HTTPS transport does not replace this authorization or protection.</text>
+  </g>
+  <line class="connector" x1="500" y1="1015" x2="500" y2="1040"/>
+  <g class="node" id="step-7">
+    <rect class="protected" x="60" y="1050" width="880" height="110" rx="8"/>
+    <text class="heading" x="84" y="1085">7. Protected host components enable the vTPM</text>
+    <text class="body" x="84" y="1116">The VM's existing protected state and KP must remain consistent.</text>
+    <text class="body" x="84" y="1145">The physical host TPM and guest vTPM have different identities.</text>
+  </g>
+  <line class="connector" x1="500" y1="1170" x2="500" y2="1195"/>
+  <g class="node" id="step-8">
+    <rect class="protected" x="60" y="1205" width="880" height="110" rx="8"/>
+    <text class="heading" x="84" y="1240">8. Guest BitLocker unlocks the OS volume</text>
+    <text class="body" x="84" y="1271">Guest policy uses the vTPM to support release of the volume key.</text>
+    <text class="body" x="84" y="1300">The owner separately verifies guest access and data-volume protection.</text>
+  </g>
+  <text class="body" x="40" y="1362">Periodic attestation is not continuous guest monitoring or instant revocation.</text>
+</svg>

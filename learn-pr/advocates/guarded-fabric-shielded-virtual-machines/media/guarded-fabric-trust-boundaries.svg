@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1180" viewBox="0 0 1240 1180" role="img" aria-labelledby="title description">
+  <title id="title">Four responsibility domains in a guarded fabric</title>
+  <desc id="description">Domain 1 is the VM owner, who retains private owner keys and authorizes fabrics and images. Domain 2 is the image publisher, who signs a prepared template. Domain 3 is the isolated HGS administration boundary, containing Attestation and Key Protection services. Domain 4 is fabric administration, containing a guarded host, its TPM evidence, VBS-protected key handling, and a shielded guest. Host evidence goes to Attestation. A health certificate supports the Key Protection Service decision. Authorized key material goes to host VBS, enabling the guest vTPM and BitLocker unlock. The guest itself is not contained inside host VBS.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#155a86"/>
+    </marker>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; fill: #172b4d; }
+      .title { font-size: 30px; font-weight: 700; }
+      .heading { font-size: 25px; font-weight: 700; }
+      .subheading { font-size: 22px; font-weight: 700; }
+      .body { font-size: 20px; }
+      .small { font-size: 18px; }
+      .boundary { fill: #ffffff; stroke: #526575; stroke-width: 2; stroke-dasharray: 9 6; }
+      .card { fill: #eef5fb; stroke: #286086; stroke-width: 2; }
+      .protected { fill: #edf7f2; stroke: #28624a; stroke-width: 2; }
+      .connector { fill: none; stroke: #155a86; stroke-width: 3; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect id="background" x="0" y="0" width="1240" height="1180" fill="#ffffff"/>
+  <text class="title" x="40" y="52">Guarded fabric: four responsibility domains</text>
+  <text class="body" x="40" y="84">Numbers identify separate authorities, not startup order.</text>
+
+  <g class="node" id="owner">
+    <rect class="protected" x="40" y="120" width="540" height="170" rx="10"/>
+    <text class="heading" x="64" y="157">1. VM owner</text>
+    <text class="body" x="64" y="196">Approves fabrics, images, and guest policy</text>
+    <text class="body" x="64" y="226">Retains private owner keys and credentials</text>
+    <text class="body" x="64" y="256">Controls recovery and key protector changes</text>
+  </g>
+  <g class="node" id="publisher">
+    <rect class="card" x="660" y="120" width="540" height="170" rx="10"/>
+    <text class="heading" x="684" y="157">2. Image publisher</text>
+    <text class="body" x="684" y="196">Prepares and signs an approved template</text>
+    <text class="body" x="684" y="226">Supplies the VHDX and signature catalog</text>
+    <text class="body" x="684" y="256">Signing does not prove that code is benign</text>
+  </g>
+
+  <g class="domain" id="hgs-domain">
+    <rect class="boundary" x="40" y="345" width="500" height="775" rx="10"/>
+    <text class="heading" x="64" y="386">3. HGS administration</text>
+    <text class="body" x="64" y="421">Isolated forest and three-node service</text>
+    <g class="node" id="attestation">
+      <rect class="card" x="64" y="465" width="452" height="165" rx="8"/>
+      <text class="subheading" x="86" y="503">Attestation service</text>
+      <text class="body" x="86" y="543">Evaluates host identity and evidence</text>
+      <text class="body" x="86" y="575">Issues a limited-validity health</text>
+      <text class="body" x="86" y="604">certificate when policy is satisfied</text>
+    </g>
+    <line class="connector" x1="290" y1="640" x2="290" y2="680"/>
+    <text class="small" x="309" y="665">Health certificate</text>
+    <g class="node" id="key-protection">
+      <rect class="card" x="64" y="695" width="452" height="175" rx="8"/>
+      <text class="subheading" x="86" y="734">Key Protection Service</text>
+      <text class="body" x="86" y="775">Checks the health certificate and</text>
+      <text class="body" x="86" y="807">this VM's guardian authorization</text>
+      <text class="body" x="86" y="839">Protects key release to host VBS</text>
+    </g>
+    <text class="body" x="64" y="952">Controls enrollment and service keys.</text>
+    <text class="body" x="64" y="984">Does not hold owner private keys.</text>
+    <text class="body" x="64" y="1059">Separate from routine fabric authority.</text>
+  </g>
+
+  <g class="domain" id="fabric-domain">
+    <rect class="boundary" x="700" y="345" width="500" height="775" rx="10"/>
+    <text class="heading" x="724" y="386">4. Fabric administration</text>
+    <text class="body" x="724" y="421">Guarded host, storage, and VM lifecycle</text>
+    <g class="node" id="host-evidence">
+      <rect class="card" x="724" y="465" width="452" height="165" rx="8"/>
+      <text class="subheading" x="746" y="503">Physical host evidence</text>
+      <text class="body" x="746" y="543">TPM 2.0 identity and measured boot</text>
+      <text class="body" x="746" y="575">Secure Boot and code integrity state</text>
+      <text class="body" x="746" y="604">Host enrollment is not VM shielding</text>
+    </g>
+    <g class="node" id="vbs">
+      <rect class="protected" x="724" y="695" width="452" height="175" rx="8"/>
+      <text class="subheading" x="746" y="734">VBS-protected host components</text>
+      <text class="body" x="746" y="775">Receive authorized key material</text>
+      <text class="body" x="746" y="807">Protect access to vTPM backing state</text>
+      <text class="body" x="746" y="839">Not blanket hardware RAM encryption</text>
+    </g>
+    <line class="connector" x1="950" y1="880" x2="950" y2="920"/>
+    <g class="node" id="guest">
+      <rect class="protected" x="724" y="930" width="452" height="160" rx="8"/>
+      <text class="subheading" x="746" y="969">Shielded Windows Server guest</text>
+      <text class="body" x="746" y="1008">Guest vTPM supports BitLocker unlock</text>
+      <text class="body" x="746" y="1040">Owner authenticates to guest services</text>
+      <text class="small" x="746" y="1070">Guest is separate from host VBS</text>
+    </g>
+  </g>
+
+  <text class="body" x="620" y="523" text-anchor="middle">Evidence</text>
+  <line class="connector" x1="714" y1="555" x2="526" y2="555"/>
+  <text class="body" x="620" y="749" text-anchor="middle">To VBS</text>
+  <line class="connector" x1="526" y1="782" x2="714" y2="782"/>
+  <text class="body" x="40" y="1160">Guest applications still require patching, access control, and network protection.</text>
+</svg>
