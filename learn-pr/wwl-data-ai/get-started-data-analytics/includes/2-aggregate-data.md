@@ -16,6 +16,6 @@ The following functions are commonly used in data analysis:
 
 The type of function used depends on the data in the column being aggregated. Temperature values in a column wouldn't work with a summary aggregation, but would be ideal for minimum, maximum, or average. In a sales order table, the total column might be summarized, or you could use the minimum, maximum, or average functions.
 
-In this video, you'll see how aggregate functions can be applied to data to return summarized results:
+This video shows how aggregate functions can be applied to data to return summarized results:
 
 > [!VIDEO c0438c09-3c78-483f-9e85-63a128564c08]
