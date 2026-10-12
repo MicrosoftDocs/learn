@@ -9,7 +9,7 @@ Copilot in Power BI enables users to ask natural language questions and receive 
 - Required permissions for the relevant Fabric data agents and Power BI items
 
 > [!NOTE]
-> When using the Copilot search experience (where Copilot automatically scans and suggests data agents), the **Standalone Copilot experience** must be enabled in Power BI tenant settings (**Tenant settings** > **Copilot** > **Standalone Copilot experience**).
+> When using the Copilot search experience (where Copilot automatically scans and suggests data agents), the standalone Copilot experience must be enabled in the Fabric admin portal tenant settings (**Users can access a standalone, cross-item Power BI Copilot experience**).
 
 ## Ways to Use Fabric data agents in Copilot
 
@@ -25,7 +25,7 @@ When you ask a question in Copilot, it automatically scans all items you have ac
 
 If you already know which data agent you want to use, you can manually add it to your Copilot session. Start by selecting **Add items for better results**, then choose **Data agents** to open the OneLake catalog. 
 
-From there, select the desired data agent from the list. Once added, the data agent is attached to your question, and Copilot will use it for relevant follow-up questions. 
+From there, select the desired data agent from the list. Once added, the data agent is attached to your question, and Copilot uses it for relevant follow-up questions.
 
 > [![Screenshot of adding a Fabric data agent to the Copilot search experience.](../media/power-bi-add-data-agent.png)](../media/power-bi-add-data-agent.png#lightbox)
 
