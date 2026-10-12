@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 04/30/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -35,7 +35,7 @@ quiz:
       explanation: "Incorrect. SSMS is used to manage and deploy SSIS packages and migrate SQL Server Agent jobs, but it doesn't provide a built-in cloud compatibility assessment for SSIS packages. SQL Server Data Tools (SSDT) provides this capability."
     - content: "Azure Database Migration Service."
       isCorrect: false
-      explanation: "Incorrect. Azure Database Migration Service is used for large-scale database migrations to Azure SQL. SQL Server Data Tools (SSDT) provides the built-in SSIS package assessment and Azure execution capability."
+      explanation: "Incorrect. Azure Database Migration Service is used to migrate databases to Azure SQL. It doesn't migrate a source SSISDB or provide the built-in SSIS package assessment and Azure execution capability. SQL Server Data Tools (SSDT) provides that capability."
   - content: "Which tool is used to create and deploy SQL Server Integration Packages on an Azure-SSIS integration runtime, or for on-premises SQL Server?"
     choices:
     - content: "SQL Server Data Tools."

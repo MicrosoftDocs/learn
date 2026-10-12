@@ -4,7 +4,7 @@ title: Run SSIS packages in Azure Data Factory
 metadata:
   title: Run SSIS Packages in Azure Data Factory
   description: "Run SSIS packages in Azure Data Factory"
-  ms.date: 04/30/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

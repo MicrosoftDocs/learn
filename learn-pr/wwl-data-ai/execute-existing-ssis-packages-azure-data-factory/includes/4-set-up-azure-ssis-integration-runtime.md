@@ -1,14 +1,14 @@
-Perform the following steps to set up an Integration Runtime
+Perform the following steps to set up an integration runtime.
 
-## Set up an Azure-SSIS Integration Runtime
+## Set up an Azure-SSIS integration runtime
 
-1. In the Azure Data Factory designer, select the **Manage** tab.
-1. in the **General** panel. Select on the **Integration Runtimes** tab to view existing Integration Runtimes in your data factory.
+1. In the Azure Data Factory UI, select the **Manage** tab.
+1. On the **Connections** pane, select the **Integration runtimes** tab to view existing integration runtimes in your data factory.
 
     ![Screenshot showing how to navigate to Integration Runtimes.](../media/select-integration-runtime.png)
 
-1. Select  **+ New** to create an Azure-SSIS IR and open the **Integration Runtime setup** pane.
-1. In the **Integration Runtime setup** pane, select the **Azure-SSIS: Lift-and-shift existing SSIS packages to execute in Azure** tile.
+1. Select  **+ New** to create an Azure-SSIS IR and open the **Integration runtime setup** pane.
+1. In the **Integration runtime setup** pane, select the **Lift-and-shift existing SSIS packages to execute in Azure** tile.
 1. Select the **Continue** button at the bottom of the panel.
 
 ### General settings page
@@ -27,16 +27,16 @@ Perform the following steps to set up an Integration Runtime
 
 1. For **Node Number**, select the number of nodes in your Integration Runtime cluster.
 
-1. For **Edition/License**, select the SQL Server edition for your Integration Runtime.
+1. For **Edition/License**, select the SQL Server edition for your Integration Runtime: Standard or Enterprise. Select Enterprise if you want to use advanced features on your Integration Runtime.
 
 1. For **Save Money**, select the Azure Hybrid Benefit option for your Integration Runtime: Select **Yes** if you want to bring your own SQL Server license with Software Assurance to benefit from cost savings with hybrid use.
 
-1. Select **Next**.
+1. Select **Continue**.
 
 ### Deployment settings page
 1. On the **Deployment settings** page of **Integration Runtime setup** pane, complete the following steps.
 
-1. Select the **Create SSIS catalog (SSISDB) hosted by Azure SQL Database server/Managed Instance to store your projects/packages/environments/execution logs** check box to choose the package deployment mode.
+1. Select the **Create SSIS catalog (SSISDB) hosted by Azure SQL Database server/Managed Instance to store your projects/packages/environments/execution logs** check box to deploy your packages into SSISDB (Project Deployment Model).
 
     ![Screenshot showing how to create an SSIS catalog (SSISDB) hosted by Azure SQL Database server/SQL Managed Instance.](../media/create-ssis-catalog.png)
 
@@ -59,7 +59,7 @@ Perform the following steps to set up an Integration Runtime
 
 1. For **Catalog Database Service Tier**, select the service tier for your database server to host SSISDB. Select the Basic, Standard, or Premium tier, or select an elastic pool name.
 
-The alternative approach is to:
+Alternatively, if you want to deploy your packages into the file system, Azure Files, or MSDB hosted by Azure SQL Managed Instance (Package Deployment Model), you don't need to create SSISDB. Instead:
 
 1. Select the **Create package stores to manage your packages that are deployed into file system/Azure Files/SQL Server database (MSDB) hosted by Azure SQL Managed Instance** check box to choose whether you want to manage your packages that are deployed into MSDB, file system, or Azure Files (Package Deployment Model) with Azure-SSIS IR package stores.
 
@@ -82,7 +82,7 @@ The alternative approach is to:
 
 1. You can ignore **Connect via Integration Runtime**, since we always use your Azure-SSIS IR to fetch the access information for package stores.
 
-1. If you select **Azure File Storage**, complete the following steps.
+1. If you select **Azure File Storage**, for **Authentication method**, select **Basic** (the Azure-SSIS IR package store supports only Basic authentication with this linked service type), and then complete the following steps.
 
 1. For **Account selection method**, select **From Azure subscription** or **Enter manually**.
 
@@ -93,8 +93,9 @@ The alternative approach is to:
     > [!NOTE]
     > There are different settings if you select **Azure SQL Managed Instance**, or **File System**
 
-1. Select **Test connection** when applicable and if it's successful, select **Next**.
- 
+1. Select **Test connection** when applicable and if it's successful, select **Create**.
+
+1. After you configure SSISDB, package stores, or both, select **Continue** on the **Deployment settings** page.
 ### Advanced settings page
 
 1. On the **Advanced settings** page of **Integration Runtime setup** pane, complete the following steps.
