@@ -8,6 +8,6 @@ A dataset is a collection of data that is organized in rows and columns, often r
 
 It's important that you understand the data in your dataset before analyzing it. You can then choose the correct analytical functions to apply to the types of data you're working with.
 
-In this video, you'll see an example of a dataset and how the different types of date, string, and numeric fields combine into rows and columns. You'll learn how analysis can be done on a dataset to understand patterns within the data:
+In this video, you see an example of a dataset and how the different types of date, string, and numeric fields combine into rows and columns. You learn how analysis can be done on a dataset to understand patterns within the data:
 
 > [!VIDEO 032a24f6-573c-45c3-b93c-35ecd04180c2]

@@ -1,4 +1,4 @@
-SQL Server Data Tools (SSDT) is typically used to create and deploy SQL Server Integration Services (SSIS) packages. It can be used for both on-premises SSIS packages, and for packages that will be used in Azure through Azure Data Factory. When creating a new SSIS package that is to be used in Azure, you first should select an Azure-enabled Integration Services Project, which will prompt you to connect to an instance of Azure Data Factory.
+SQL Server Data Tools (SSDT) is typically used to create and deploy SQL Server Integration Services (SSIS) packages. It can be used for both on-premises SSIS packages, and for packages that run in Azure through Azure Data Factory. When you create a new SSIS package that runs in Azure, first select the **Integration Services Project (Azure-Enabled)** template, which prompts you to connect to SSIS in Azure Data Factory.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot showing the Create a new project in SSDT.](../media/create-new-project-ssdt.png)
@@ -11,7 +11,7 @@ This opens up the Azure-Enabled Project Wizard where you can select the Visual S
 
 ## SSIS in ADF connection wizard
 
-Lifting and shifting SSIS packages is achieved by running the SSIS in ADF Connection Wizard. This is a two-step wizard that takes SSIS projects stored in SSIS, and store them in Azure Files in a storage account that can then be run in an Azure-SSIS Integration Runtime.
+Lifting and shifting SSIS packages is achieved by running the SSIS in ADF Connection Wizard. This wizard connects an Azure-enabled project to an Azure-SSIS IR and to an Azure Storage account. SSDT uploads the packages of the project into Azure Files in that storage account, where they can run on the Azure-SSIS IR.
 
 On the **SSIS in ADF Introduction** page, review the introduction and select the **Next** button to continue.
 
@@ -25,7 +25,7 @@ On the **Select Azure Storage** page, select your existing Azure Storage account
 
 ![Screenshot showing how to select Azure Storage.](../media/select-azure-storage.png)
 
-Select on the **Connect** button to complete your connection.
+Select the **Connect** button to complete your connection.
 
 ## Executing SSIS packages 
 
@@ -43,9 +43,9 @@ Provide credentials in the **Windows Authentication Credentials** editor.
 
 ![Screenshot showing how to configure Windows Authentication.](../media/configure-windows-authentication.png)
 
-With these settings configured, you can then execute the packages in Azure from within SSDT by either clicking on the Start button, and then clicking on Execute in Azure. Alternatively right-click on the package node in Solution Explorer panel of SSDT to pop up a menu and select the **Execute Package in Azure** menu item.
+With these settings configured, you can then execute the packages in Azure from within SSDT by selecting the Start button, and then selecting **Execute in Azure**. Alternatively right-click on the package node in Solution Explorer panel of SSDT to pop up a menu and select the **Execute Package in Azure** menu item.
 
-![Screenshot showing the Execut Packages in Azure menu item.](../media/execute-packages.png)
+![Screenshot showing the Execute Package in Azure menu item.](../media/execute-packages.png)
 
 ## Command-line execution with AzureDTExec
 

@@ -8,9 +8,9 @@ Sometimes, you don't want to debug the whole pipeline but test a part of the pip
 
 ## Debug and publish a pipeline
 
-As you create or modify a pipeline that's running, you can see the results of each activity in the Output tab of the pipeline canvas.
+As a debug run executes, you can see the results of each activity in the Output tab of the pipeline canvas.
 
-After a test run succeeds, and you're satisfied with the results, you can add more activities to the pipeline and continue debugging in an iterative manner. When you aren't satisfied, or like to stop the pipeline from debugging, you can cancel a test run while it is in progress. Be aware that by selecting the debug slider, it will actually run the pipeline. Therefore, if the pipeline contains, for example, a copy activity, the test run will copy data from source to destination.
+After a test run succeeds, and you're satisfied with the results, you can add more activities to the pipeline and continue debugging in an iterative manner. When you aren't satisfied, or like to stop the pipeline from debugging, you can cancel a test run while it is in progress. Be aware that selecting **Debug** actually runs the pipeline. Therefore, if the pipeline contains, for example, a copy activity, the test run copies data from source to destination.
 
 A best practice is to use test folders in your copy activities and other activities when debugging, such that when you're satisfied with the results and have debugged the pipeline, you switch to the actual folders for your normal operations.
 
@@ -27,18 +27,18 @@ After the pipeline can run successfully, in the top toolbar, select **Publish al
 > [!div class="mx-imgBorder"]
 > [![Screenshot showing how to publish all changes and entities in Azure Data Factory.](../media/azure-data-factory-publish-all.png)](../media/azure-data-factory-publish-all.png#lightbox)
 
-Wait until you see the successfully published message. To see notification messages, select the **Show Notifications** (bell icon) on the top-right of the portal (bell button).
+Wait until you see the successfully published message. To see notification messages, select the **Show Notifications** (bell icon) on the top-right of the portal.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot showing the bell button for notifications in Azure Data Factory.](../media/azure-data-factory-alert-bell.png)](../media/azure-data-factory-alert-bell.png#lightbox)
 
-## Map dataflow debug
+## Mapping data flow debug
 
-During the building of Mapping Data Flows, you can interactively watch how the data shapes and transformations are executing so that you can debug them. To use this functionality, it's first necessary to turn on the “Data Flow Debug” feature.
+During the building of mapping data flows, you can interactively watch how the data shapes and transformations are executing so that you can debug them. To use this functionality, it's first necessary to turn on the **Data Flow Debug** feature.
 
-The debug session can be used both in Data Flow design sessions, and during pipeline debug execution of data flows. After the debug mode is on, you'll actually build the data flow with an active Spark Cluster. The Spark cluster will close once the debug is off. You do have a choice in what compute you're going to use. When you use an existing debug cluster, it will reduce the start-up time. However, for complex or parallel workloads you might want to spin up your own just-in-time cluster.
+The debug session can be used both in data flow design sessions, and during pipeline debug execution of data flows. After the debug mode is on, you build the data flow with an active Spark cluster. The Spark cluster closes once the debug is off. You have a choice in what compute you use. When you use an existing debug cluster, it reduces the start-up time. However, for complex or parallel workloads, use the activity runtime to start your own just-in-time cluster.
 
-Best practices for debugging data flows are to keep the debug mode on, and to check and validate the business logic included in the data flow. Visually viewing the data transformations and shapes helps you see the changes.
+A best practice is to build your data flows in debug mode so that you can check and validate the business logic included in the data flow. Visually viewing the data transformations and shapes helps you see the changes. You're charged hourly for as long as a debug session is on, including the time to live (TTL), so turn debug mode off when you finish.
 
 If you want to test the dataflow in a pipeline that you've created, it's best to use the **Debug** button on the pipeline panel. While data preview doesn't write data, a debug run within your dataflow will write data, just like debugging a pipeline, to your sink destination.
 
@@ -46,27 +46,25 @@ If you want to test the dataflow in a pipeline that you've created, it's best to
 
 As previously described, each debug session that is started from the Azure Data Factory user interface, is considered a new session with its own Spark cluster. To monitor the sessions, you can use the monitoring view for the debug session to manage your debug sessions per the Data Factory that has been set up.
 
-To see whether a Spark cluster is ready for debugging, you can check the cluster status indication at the top of the design surface. If it's green, it's ready. If the cluster wasn't running when you entered debug mode, the waiting time could be around 5 - 7 minutes because the clusters need to spin up.
+To see whether a Spark cluster is ready for debugging, you can check the cluster status indication at the top of the design surface. If it's green, it's ready. If the cluster wasn't running when you entered debug mode, the indicator spins until the cluster finishes starting.
 
 It's a best practice that after you finish debugging, you switch off the debug mode so that the Spark cluster terminates.
 
-When you're debugging, you can edit the preview of data in a data flow by selecting **Debug Setting**. Examples of changing the data preview could be a row limit or file source in case you use source transformations. When you select the staging linked service, you can specify a supported data store as a staging source.
+When you're debugging, you can edit the preview of data in a data flow by selecting **Debug Settings**. Examples of changing the data preview could be a row limit or file source in case you use source transformations. When you select the staging linked service, you can specify a supported data store as a staging source.
 
 If you have parameters in your Data Flow or any of its referenced datasets, you can specify what values to use
 during debugging by selecting the **Parameters** tab. During debugging, sinks aren't required and are ignored in the dataflow. If you want to test and write the transformed data to your sink, you can execute the data flow from a pipeline, and use the debug execution from the pipeline.
 
 As previously described, within Azure Data Factory, it's possible to only debug up to a certain point or an activity. To do so, you can use a breakpoint on the activity up to where you want to test, and then select **Debug**. A **Debug Until** option appears as an empty red circle at the upper right corner of the element.
-After you select the **Debug Until** option, it changes to a filled red circle to indicate the breakpoint is enabled. Azure Data Factory will then make sure that the test only runs until that breakpoint activity in the pipeline. This feature is useful when you want to test only a subset of the activities in a pipeline.
+After you select the **Debug Until** option, it changes to a filled red circle to indicate the breakpoint is enabled. Azure Data Factory then makes sure that the test only runs until that breakpoint activity in the pipeline. This feature is useful when you want to test only a subset of the activities in a pipeline.
 
 In most scenarios, the debug features in Azure Data Factory are sufficient. However, sometimes it's necessary to test changes in a pipeline in a cloned sandbox environment. A use-case to do so is when you have parameterized ETL pipelines that you'd like to test how they would behave when they trigger a file arrival versus over tumbling time window. In this case, the cloning of a sandbox environment might be more suitable.
 
-A good thing to know about Azure Data Factory might be that because it's mostly only charged by the number of runs, a second Data Factory doesn't have to lead to additional charges.
-
 ## Monitor debug runs
 
-To monitor debug runs, you can check the output tab, but only for the most recent run that occurred in the browsing session, because it won't show the history. If you would like to get a view of the history of debug runs, or see all the active debug runs, you can go to the **Monitor** tab.
+To monitor debug runs, you can check the output tab, but only for the most recent run that occurred in the browsing session, because it doesn't show the history. If you would like to get a view of the history of debug runs, or see all the active debug runs, you can go to the **Monitor** tab.
 
-One thing to take in mind is that the Azure Data Factory service only keeps debug run history for 15 days. In relation to monitoring your data flow debug sessions, you would also go to the **Monitor** tab.
+One thing to take in mind is that the Azure Data Factory service only keeps debug run history for 15 days. In relation to monitoring your data flow debug sessions, you also go to the **Monitor** tab.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot showing how to monitor debug run Azure Data Factory.](../media/azure-data-factory-monitor-pipeline-debug.png)](../media/azure-data-factory-monitor-pipeline-debug.png#lightbox)

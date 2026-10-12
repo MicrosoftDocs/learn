@@ -12,4 +12,6 @@ Copilot can handle typos or infer context based on your schema, but it's importa
 
 Currently, natural language to SQL supports **English** to T-SQL. Ensure your prompts are written in English to take full advantage of this feature.
 
-By following these best practices, you can effectively use Copilot to streamline your SQL query generation and improve your overall productivity.
+Copilot uses only your warehouse schema metadata, such as table, view, and column names and key relationships. It doesn't use the data in your tables. Copilot responses can include inaccurate or low-quality content, so review generated T-SQL before you run it or use it in your work.
+
+By following these best practices, you can use Copilot to streamline SQL query generation.

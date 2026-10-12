@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 03/27/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "They allow users to ask questions in plain English and receive context-rich answers from enterprise data."
       isCorrect: true
-      explanation: "Correct.Microsoft  Fabric Data Agents make data insights accessible through natural language queries."
+      explanation: "Correct. Microsoft Fabric Data Agents make data insights accessible through natural language queries."
     - content: "They require users to write complex SQL queries for every data request."
       isCorrect: false
       explanation: "Incorrect. Microsoft Fabric Data Agents eliminate the need for technical query languages."
@@ -53,9 +53,9 @@ quiz:
       explanation: "Incorrect. Example queries don't affect data source access."
   - content: "When integrating Microsoft Foundry with Microsoft Fabric Data Agents, what is required for secure data access?"
     choices:
-    - content: "Users must have the Azure AI User RBAC role, read access to the data agent, and appropriate source-level permissions—including Build permission for Power BI semantic models."
+    - content: "Users must have the Foundry User Azure RBAC role, read access to the data agent, and the minimum permission on each underlying data source, such as Read on a Power BI semantic model."
       isCorrect: true
-      explanation: "Correct. The Azure AI User RBAC role is required in Foundry. Each underlying source also requires minimum permissions—notably, Power BI semantic models require Build permission, not Read alone."
+      explanation: "Correct. The Foundry User Azure RBAC role (previously Azure AI User) is required in Foundry. Each underlying source also requires minimum permissions, such as Read on a Power BI semantic model."
     - content: "Users only need access to the Azure portal."
       isCorrect: false
       explanation: "Incorrect. More specific permissions are required."

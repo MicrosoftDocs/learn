@@ -1,6 +1,6 @@
 Learn how to orchestrate data movement and transformations in Azure Data Factory.
 
-After completing this module, you'll be able to:
+After completing this module, you're able to:
 
 * Understand the data factory control flow
 * Work with data factory pipelines

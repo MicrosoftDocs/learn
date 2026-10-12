@@ -3,7 +3,7 @@ uid: learn.wwl.use-apache-spark-azure-databricks
 metadata:
   title: Use Apache Spark in Azure Databricks
   description: Use Apache Spark in Azure Databricks
-  ms.date: 04/27/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module
@@ -11,7 +11,7 @@ metadata:
 title: Use Apache Spark in Azure Databricks
 summary: Azure Databricks is built on Apache Spark and enables data engineers and analysts to run Spark jobs to transform, analyze and visualize data at scale.
 abstract: |
-  In this module, you'll learn how to:
+  In this module, you learn how to:
   - Describe key elements of the Apache Spark architecture.
   - Create and configure a Spark cluster.
   - Describe use cases for Spark.

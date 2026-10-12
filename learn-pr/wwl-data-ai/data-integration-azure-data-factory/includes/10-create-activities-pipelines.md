@@ -1,4 +1,4 @@
-Activities within Azure Data Factory define the actions that will be performed on the data and there are three categories including:
+Activities within Azure Data Factory define the actions that are performed on the data. There are three categories:
 
 - Data movement activities
 - Data transformation activities
@@ -10,7 +10,7 @@ Data movement activities simply move data from one data store to another. You ca
 
 ## Data transformation activities
 
-Data transformation activities can be performed natively within the authoring tool of Azure Data Factory using the Mapping Data Flow. Alternatively, you can call a compute resource to change or enhance data through transformation, or perform analysis of the data. These include compute technologies such as Azure Databricks, Azure Batch, Azure SQL Database, Machine Learning Services, Azure Virtual machines, and HDInsight. You can make use of any existing SQL Server Integration Services (SSIS) Packages stored in a Catalog to execute in Azure
+Data transformation activities can be performed natively within the authoring tool of Azure Data Factory using the Mapping Data Flow. Alternatively, you can call a compute resource to change or enhance data through transformation, or perform analysis of the data. These include compute technologies such as Azure Databricks, Azure Batch, Azure Functions, Azure SQL Database, Azure Machine Learning, and HDInsight. You can also run existing SQL Server Integration Services (SSIS) packages in Azure by using an Azure-SSIS integration runtime.
 
 As this list is always evolving, you can get the [latest information here](/azure/data-factory/concepts-pipelines-activities#data-transformation-activities).
 
@@ -66,9 +66,9 @@ The following table describes properties in the above JSON:
 | Property        | Description           | Required  |
 | ------------- |-------------| -----|
 | name    | Name of the activity. |Yes |
-| description     | Text describing what the activity or is used for.   |   No |
+| description     | Text describing what the activity is used for.   |   Yes |
 | type | Defines the type of the activity.     |    Yes |
-| linkedServiceName | Name of the linked service used by the activity.   |    Yes for HDInsight, Machine Learning Batch Scoring Activity and Stored Procedure Activity|
+| linkedServiceName | Name of the linked service used by the activity.   |    Yes for HDInsight and Stored Procedure activities. No for most others. |
 | typeProperties | Properties in the typeProperties section depend on each type of activity.      |    No |
 | policy | Policies that affect the run-time behavior of the activity. This property includes timeout and retry behavior.      |    No |
 | dependsOn | This property is used to define activity dependencies, and how subsequent activities depend on previous activities.      |    No |
@@ -96,7 +96,7 @@ The following table describes properties in the above JSON:
 | Property        | Description           | Required  |
 | ------------- |-------------| -----|
 | name    | Name of the activity. |Yes |
-| description     | Text describing what the activity or is used for.   |   Yes |
+| description     | Text describing what the activity is used for.   |   Yes |
 | type | Defines the type of the activity.     |    Yes |
 | typeProperties | Properties in the typeProperties section depend on each type of activity.      |    No |
 | dependsOn | This property is used to define activity dependencies, and how subsequent activities depend on previous activities.      |    No |
@@ -131,9 +131,7 @@ The following table describes properties in the above JSON:
 
 ## Example
 
-The following JSON defines pipeline named "MyFirstPipeline" that contains one activity type of HDInsightHive that will call a query from a script name "partitionweblogs.hql" that is stored in the  linked service named "StorageLinkedService", with an input named "AzureBlobInput" and an output named "AzureBlobOutput". It executes this against the compute resource defined in the linked service named "HDInsightOnDemandLinkedService" 
-
-The pipeline is scheduled to execute on a monthly basis, and will attempt to execute three times should it fail. 
+The following JSON defines a pipeline named "MyFirstPipeline" that contains one activity of type HDInsightHive. The activity runs a Hive script named "partitionweblogs.hql" that's stored in the storage account referenced by the linked service "StorageLinkedService". It runs against the compute resource defined in the linked service "HDInsightOnDemandLinkedService". The activity policy attempts the activity up to three more times if it fails. To run the pipeline on a schedule, associate a trigger with it.
 
 ```JSON
 {
@@ -142,42 +140,29 @@ The pipeline is scheduled to execute on a monthly basis, and will attempt to exe
         "description": "My first Azure Data Factory pipeline",
         "activities": [
             {
+                "name": "RunSampleHiveActivity",
+                "description": "Run a Hive script to partition web logs",
                 "type": "HDInsightHive",
+                "linkedServiceName": {
+                    "referenceName": "HDInsightOnDemandLinkedService",
+                    "type": "LinkedServiceReference"
+                },
                 "typeProperties": {
                     "scriptPath": "adfgetstarted/script/partitionweblogs.hql",
-                    "scriptLinkedService": "StorageLinkedService",
+                    "scriptLinkedService": {
+                        "referenceName": "StorageLinkedService",
+                        "type": "LinkedServiceReference"
+                    },
                     "defines": {
                         "inputtable": "wasb://adfgetstarted@ctostorageaccount.blob.core.windows.net/inputdata",
                         "partitionedtable": "wasb://adfgetstarted@ctostorageaccount.blob.core.windows.net/partitioneddata"
                     }
                 },
-                "inputs": [
-                    {
-                        "name": "AzureBlobInput"
-                    }
-                ],
-                "outputs": [
-                    {
-                        "name": "AzureBlobOutput"
-                    }
-                ],
                 "policy": {
-                    "concurrency": 1,
                     "retry": 3
-                },
-                "scheduler": {
-                    "frequency": "Month",
-                    "interval": 1
-              },
-                "name": "RunSampleHiveActivity",
-                "linkedServiceName": "HDInsightOnDemandLinkedService"
+                }
             }
-        ],
-        "start": "2017-04-01T00:00:00Z",
-        "end": "2017-04-02T00:00:00Z",
-        "isPaused": false,
-        "hubName": "ctogetstarteddf_hub",
-        "pipelineMode": "Scheduled"
+        ]
     }
 }
 ```

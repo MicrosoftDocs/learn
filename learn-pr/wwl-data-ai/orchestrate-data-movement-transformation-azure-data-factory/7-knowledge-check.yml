@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 04/30/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -39,6 +39,6 @@ quiz:
       explanation: "Incorrect. The until activity functionality is similar to a do-until loop used in programming. What it does is running a set of activities (do) in a loop until the condition (until) is met. Therefore it isn't an example of a branching activity."
     - content: "Lookup-condition"
       isCorrect: false
-      explanation: "Incorrect. The Lookup activity will read or look up a record or table name value from any external source. This output can further be referenced by succeeding activities. However, it isn't an example of a branching activity."
+      explanation: "Incorrect. The Lookup activity reads or looks up a record or table name value from any external source. This output can further be referenced by succeeding activities. However, it isn't an example of a branching activity."
 
 

@@ -9,15 +9,16 @@ You should monitor its usage to avoid overconsumption that can lead to throttlin
 **Capacity Unit Consumption**: Requests to Copilot consume Fabric Capacity Units (CU). The consumption rates are as follows:
 
 - **Input Prompt**: 100 CU seconds per 1,000 tokens
+- **Cached Input Prompt**: 10 CU seconds per 1,000 tokens. Prompt caching applies automatically when a request shares a common prefix with a recent request.
 - **Output Completion**: 400 CU seconds per 1,000 tokens
 
 For example, assume each Copilot request has 2,000 input tokens and 500 output tokens. The price for one Copilot request is calculated as follows: (2,000 × 100 + 500 × 400) / 1,000 = 400.00 CU seconds = 6.67 CU minutes.
 
 Fabric is designed to provide high performance by allowing operations to access more CU (Capacity Units) resources than are allocated to capacity. Fabric smooths or averages the CU usage of an "interactive job" over a minimum of 5 minutes and a "background job" over a 24-hour period. According to the Fabric throttling policy, the first phase of throttling begins when a capacity has consumed all its available CU resources for the next 10 minutes.
 
-Since Copilot is a background job, each Copilot request (~6.67 CU minute job) consumes only one CU minute of each hour of a capacity. For a customer on F64 who has 64 * 24 CU Hours (1,536) in a day, and each Copilot job consumes (6.67 CU mins / 60 mins) = 0.11 CU Hours, customers can run over 13,824 requests before they exhaust the capacity. However, once the capacity is exhausted, all operations will shut down.
+Since Copilot is a background job, each Copilot request (~6.67 CU minute job) consumes only one CU minute of each hour of a capacity. For a customer on F64 who has 64 * 24 CU Hours (1,536) in a day, and each Copilot job consumes (6.67 CU mins / 60 mins) = 0.11 CU Hours, customers can run over 13,824 requests before they exhaust the capacity. However, once the capacity is exhausted, all operations shut down.
 
-When a capacity sustains high usage over time, it can enter a state of CU debt called *carryforward*. Because Copilot is smoothed as a background operation across a 24-hour window, heavy Copilot usage can accumulate carryforward even when individual requests seem modest. Once carryforward builds up sufficiently, background jobs—including all Copilot requests—are rejected until the capacity recovers. Monitoring carryforward trends early in the **Fabric Capacity Metrics app Item History** page helps you act before disruption occurs.
+When a capacity sustains high usage over time, it can enter a state of CU debt called *carryforward*. Because Copilot is smoothed as a background operation across a 24-hour window, heavy Copilot usage can accumulate carryforward even when individual requests seem modest. Once carryforward builds up sufficiently, background jobs—including all Copilot requests—are rejected until the capacity recovers. Monitoring carryforward trends early in the **Item history** page (preview) of the **Fabric Capacity Metrics app** helps you act before disruption occurs.
 
 Administrators can use the **Fabric Capacity Metrics app** to monitor Copilot usage, providing insights into capacity consumption and helping manage resources effectively.
 
@@ -26,7 +27,7 @@ Administrators can use the **Fabric Capacity Metrics app** to monitor Copilot us
 
 ## Data processing considerations
 
-**Data Residency**: Data processed by Copilot in Fabric stays within your tenant's geographic region, unless you explicitly allow data to be processed outside your region.
+**Data Residency**: Data processed by Copilot in Fabric stays within your capacity's geographic region, unless you explicitly allow data to be processed outside your region.
 
 To allow data to be processed outside your capacity's geographic region, turn on the related setting, "Data sent to Azure OpenAI can be processed outside your capacity's geographic region, compliance boundary, or national cloud instance."
 

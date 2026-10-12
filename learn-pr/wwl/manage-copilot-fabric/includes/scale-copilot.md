@@ -10,13 +10,13 @@ To ensure a smooth and controlled adoption of Copilot, organizations could initi
 
 ### 2. Capacity scaling approaches
 
-**Proactive scaling** involves planning and adjusting capacity ahead of time based on anticipated needs. Organizations should analyze usage trends to predict when additional capacity will be required. They can make seasonal adjustments for periods of expected high Copilot usage. Scaling capacity in advance also helps accommodate projected user base growth.
+**Proactive scaling** involves planning and adjusting capacity ahead of time based on anticipated needs. Organizations should analyze usage trends to predict when additional capacity is required. They can make seasonal adjustments for periods of expected high Copilot usage. Scaling capacity in advance also helps accommodate projected user base growth.
 
 **Reactive scaling** addresses capacity needs as they arise. Organizations can temporarily increase capacity by scaling to higher SKUs during peak usage periods, providing short-term relief from throttling and performance issues. It's important to weigh the temporary increase in costs against potential productivity losses when making reactive scaling decisions.
 
 ### 3. Dedicated Copilot capacity
 
-For large organizations with high Copilot usage, isolating Copilot consumption from other Fabric workloads can be beneficial. By allocating a separate F64 or higher SKU exclusively for Copilot experiences, organizations ensure that Copilot activity doesn't affect business-critical workloads on other capacities. This separation provides clearer cost attribution and improved governance over Copilot-related expenses, but it also requires purchasing and managing multiple capacity SKUs, which may increase overall costs.
+For large organizations with high Copilot usage, isolating Copilot consumption from other Fabric workloads can be beneficial. By allocating a separate capacity (F2 or higher) exclusively for Copilot experiences, organizations can keep Copilot activity from affecting business-critical workloads on other capacities. This separation provides clearer cost attribution and improved governance over Copilot-related expenses, but it also requires purchasing and managing multiple capacity SKUs, which may increase overall costs.
 
 > [!div class="mx-imgBorder"]
 > [![Copilot split capacity strategy diagram.](../media/copilot-split-capacity-strategy.png)](../media/copilot-split-capacity-strategy.png#lightbox)

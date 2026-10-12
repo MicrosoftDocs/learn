@@ -114,6 +114,9 @@ CREATE TABLE schedules (
 
 The `TIMESTAMP` type converts values to UTC for storage and applies the session timezone when retrieving values. This behavior ensures consistent ordering across time zones but can cause confusion if you expect values to remain unchanged.
 
+> [!NOTE]
+> `TIMESTAMP_NTZ` is in Public Preview. When you create a new Delta table with a `TIMESTAMP_NTZ` column, Azure Databricks enables the `timestampNtz` table feature and upgrades the table protocol.
+
 [![Diagram explains choosing temporal types correctly.](../media/3-choose-temporal-types-correctly.png)](../media/3-choose-temporal-types-correctly.png#lightbox)
 
 ## Work with complex types

@@ -14,7 +14,7 @@ Business intelligence systems provide historical, current, and predictive views 
 
 ## What is data visualization?
 
-Data visualization is the graphical representation of information and data. By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way to spot and understand trends, outliers, and patterns in data. If you are using Azure, the most popular data visualization tool is Power BI. 
+Data visualization is the graphical representation of information and data. By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way to spot and understand trends, outliers, and patterns in data. If you work with data on Azure, Power BI is a data visualization tool you can use. 
 
 Using Power BI, you can connect to multiple different sources of data, and combine them into a data model. This data model lets you build visuals, and collections of visuals you can share as reports, with other people inside your organization. 
 
@@ -42,7 +42,7 @@ Data visualization helps you to focus on the meaning of data, rather than lookin
     > [!div class="mx-imgBorder"]
     > ![Diagram of Example of a Matrix Visual.](../media/3-matrix.png)
 
-- *Key influencers*: A key influencer chart displays the major contributors to a selected result or value. Key influencers are a great choice to help you understand the factors that influence a key metric. For example, what influences customers to place a second order or why sales were so high last June.
+- *Key influencers*: A key influencer chart displays the major contributors to a selected result or value. Use key influencers to understand the factors that influence a key metric. For example, what influences customers to place a second order or why sales were so high last June.
 
     > [!div class="mx-imgBorder"]
     > ![Diagram of Example of a Key influencers Visual.](../media/3-influencer.png)

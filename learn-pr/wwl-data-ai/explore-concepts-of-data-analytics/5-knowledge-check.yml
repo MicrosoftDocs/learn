@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 04/30/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -32,10 +32,10 @@ quiz:
     choices:
     - content: "Key influencers"
       isCorrect: true
-      explanation: "That's correct. A key influencer chart displays the major contributors to a selected result or value. Key influencers are a great choice to help you understand the factors that influence a key metric."
+      explanation: "That's correct. A key influencer chart displays the major contributors to a selected result or value. Use key influencers to understand the factors that influence a key metric."
     - content: "Column and bar chart"
       isCorrect: false
-      explanation: "That's incorrect. You use a bar chart to see how a set of variables change over time."
+      explanation: "That's incorrect. You use a bar or column chart to see how a set of variables changes across categories."
     - content: "Matrix chart"
       isCorrect: false
       explanation: "That's incorrect. A matrix chart summarizes data across multiple dimensions."
@@ -49,4 +49,4 @@ quiz:
       explanation: "That's incorrect. Prescriptive analytics helps answer questions about what actions should be taken to achieve a goal or target."
     - content: "Predictive analytics"
       isCorrect: false
-      explanation: "That's incorrect. Predictive analytics helps answer questions about what will happen in the future."
+      explanation: "That's incorrect. Predictive analytics helps answer questions about what is likely to happen in the future."

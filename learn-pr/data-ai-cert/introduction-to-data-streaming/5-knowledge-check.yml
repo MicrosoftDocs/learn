@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 04/03/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -24,7 +24,7 @@ quiz:
       explanation: "Incorrect. Collecting and processing data periodically as a batch is referred to as batch processing."
     - content: "Data that's incomplete or contains errors is redirected to separate storage for correction by a human operator."
       isCorrect: false
-      explanation: "Incorrect. When incomplete or erroneous data is often logged, but isn't usually analyzed as a stream."
+      explanation: "Incorrect. Incomplete or erroneous data is often logged, but isn't usually analyzed as a stream."
   - content: "You need to process a stream of sensor data, aggregating values over one-minute windows and storing the results in a data lake. Which service should you use?"
     choices:
     - content: "Azure SQL Database"
@@ -43,7 +43,7 @@ quiz:
       explanation: "Incorrect. Sliding windows aren't contiguous."
     - content: "Session"
       isCorrect: false
-      explanation: "Incorrect. Session windows only include concurrent events."
+      explanation: "Incorrect. Session windows group events that arrive at similar times and filter out periods with no data, so they aren't fixed-length."
     - content: "Tumbling"
       isCorrect: true
       explanation: "Correct. Tumbling windows define contiguous, fixed-length, nonoverlapping windows."

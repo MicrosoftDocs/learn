@@ -1,7 +1,7 @@
-Now it's your opportunity to explore Azure Stream Analytics in a sample solution that aggregates streaming data events.
+Now it's your opportunity to explore Azure Stream Analytics in a sample solution that analyzes streaming phone call data to detect fraudulent calls.
 
 > [!NOTE]
-> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) in which you have administrative access.
+> To complete this lab, you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) and a Power BI account.
 
 Launch the exercise and follow the instructions.
 

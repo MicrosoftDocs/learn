@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 03/27/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -53,9 +53,9 @@ quiz:
     - content: "Only data processing is paused, but reporting continues"
       isCorrect: false
       explanation: "Sorry, that's incorrect. All operations are affected."
-    - content: "All operations will shut down until capacity is available again"
+    - content: "All operations shut down until capacity is available again"
       isCorrect: true
       explanation: "That's correct. Operations stop when capacity is exhausted."
-    - content: "Copilot will continue to work but with limited features"
+    - content: "Copilot continues to work but with limited features"
       isCorrect: false
       explanation: "Sorry, that's incorrect. All operations stop when capacity is exhausted."

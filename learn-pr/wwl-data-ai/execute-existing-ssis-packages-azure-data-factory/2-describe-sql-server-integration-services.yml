@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory.describe-sql-server-integration-services
-title: Describe SQL Server integration services
+title: Describe SQL Server Integration Services
 metadata:
-  title: Describe SQL Server integration services
-  description: "Describe SQL Server integration services"
-  ms.date: 04/30/2026
+  title: Describe SQL Server Integration Services
+  description: "Describe SQL Server Integration Services"
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -4,8 +4,8 @@ You can use a calculation to create a derived column, which can be summarized. I
 
 A derived column can be based on a condition. For example, if you want to report weekend sales compared to weekday sales, you could create a new field based on the date. If the weekday value of the date was Monday through Friday, then the value in the derived column would be Weekday. Otherwise, the value would be Weekend.
 
-Values with a column can also be altered to make the data consistent and easier to analyze.
+Values within a column can also be altered to make the data consistent and easier to analyze.
 
-In this video, you'll see how a new column is added to a dataset using the current data. Then you'll learn how to add summary data by aggregating the values in the new column:
+In this video, you see how a new column is added to a dataset using the current data. Then you learn how to add summary data by aggregating the values in the new column:
 
 > [!VIDEO c35e9faa-3dd5-4b35-916f-af95420b82a7]

@@ -3,7 +3,7 @@ uid: learn.data-ai.introduction-to-azure-data-lake-storage
 metadata:
   title: Introduction to Azure Data Lake Storage Gen2
   description: "Discover how Data Lake Storage provides a repository where you can upload and store unstructured data bringing new efficiencies to processing big data analytics."
-  ms.date: 04/03/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module
@@ -11,7 +11,7 @@ metadata:
 title: Introduction to Azure Data Lake Storage Gen2
 summary: Data lakes are a core element of data analytics architectures. Azure Data Lake Storage Gen2 provides a scalable, secure, cloud-based solution for data lake storage.
 abstract: |
-  In this module you will learn how to:
+  In this module, you learn how to:
     - Describe the key features and benefits of Azure Data Lake Storage Gen2
     - Enable Azure Data Lake Storage Gen2 in an Azure Storage account
     - Compare Azure Data Lake Storage Gen2 and Azure Blob storage

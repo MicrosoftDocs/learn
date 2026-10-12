@@ -9,6 +9,7 @@ The following fundamental concepts describe how Copilot for Data Engineering and
 With **code explanation**, Copilot can clarify what a block of code does, making it easier to understand complex queries or unfamiliar scripts. For example, if you encounter a multi-step data transformation and aren't sure how it works, Copilot provides a plain-language summary, helping you learn and avoid mistakes.
 
 **Visualization** support allows you to create charts and graphs from your data. If you’re unsure how to plot trends or compare categories, ask Copilot to visualize your dataset. This feature helps users who find it challenging to select the right visualization or write plotting code, making data exploration more intuitive.
+
 **Inline code completion** offers real-time suggestions as you type in a notebook cell, without opening the chat pane. Adding a comment above your code helps guide the suggestion direction. This complements the chat-based assistant for more fluid, continuous code authoring.
 
 ## Data science
@@ -22,9 +23,9 @@ Here's an example of how you can interact with Copilot in the Notebook:
 > [!div class="mx-imgBorder"]
 > [![Screenshot of copilot in a Fabric Notebook.](../media/copilot-notebook.png)](../media/copilot-notebook.png#lightbox)
 
-We’ll explore this topic in more detail in a later module.
+A later module explores this topic in more detail.
 
-### Benefits
+## Benefits
 
 By using Copilot for Data Engineering and Data Science, you can perform common tasks, reduce some errors, and focus on deriving insights and building models from your data. Here are some areas where it can help:
 

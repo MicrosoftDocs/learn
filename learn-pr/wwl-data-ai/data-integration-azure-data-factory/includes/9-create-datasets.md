@@ -6,10 +6,10 @@ A dataset in Data Factory can be defined as an object within the Copy Data Activ
 {
     "name": "<name of dataset>",
     "properties": {
-        "type": "<type of dataset: AzureBlob, AzureSql etc...>",
+        "type": "<type of dataset: DelimitedText, AzureSqlTable etc...>",
         "linkedServiceName": {
                 "referenceName": "<name of linked service>",
-                "type": "LinkedServiceReference",
+                "type": "LinkedServiceReference"
         },
         "schema": [
             {
@@ -19,7 +19,7 @@ A dataset in Data Factory can be defined as an object within the Copy Data Activ
         ],
         "typeProperties": {
             "<type specific property>": "<value>",
-            "<type specific property 2>": "<value 2>",
+            "<type specific property 2>": "<value 2>"
         }
     }
 }
@@ -30,7 +30,7 @@ The following table describes properties in the above JSON:
 | Property        | Description           | Required  |
 | ------------- |-------------| -----|
 | name    | Name of the dataset. |Yes |
-| type     | Type of the dataset. Specify one of the types supported by Data Factory (for example: AzureBlob, AzureSqlTable).   |   Yes |
+| type     | Type of the dataset. Specify one of the types supported by Data Factory (for example: DelimitedText, AzureSqlTable).   |   Yes |
 | Schema | Schema of the dataset.     |    No |
 | typeProperties | The type properties are different for each type (for example: Azure Blob, Azure SQL table).   |    Yes|
 
@@ -38,7 +38,7 @@ The following table describes properties in the above JSON:
 
 ### Azure Blob
 
-In this procedure, you create two datasets: InputDataset and OutputDataset. These datasets are of type Binary. They refer to the Azure Storage linked service named AzureStorageLinkedService. The input dataset represents the source data in the input folder. In the input dataset definition, you specify the blob container (adftutorial), the folder (input), and the file (emp.txt) that contain the source data. The output dataset represents the data that's copied to the destination. In the output dataset definition, you specify the blob container (adftutorial), the folder (output), and the file to which the data is copied.
+In this procedure, you create two datasets: InputDataset and OutputDataset. These datasets are of type Binary. They refer to the Azure Storage linked service named AzureStorageLinkedService, and they use the `$DataFactory` and `$ResGrp` variables, which the [PowerShell quickstart](/azure/data-factory/quickstart-create-data-factory-powershell) defines. The input dataset represents the source data in the input folder. In the input dataset definition, you specify the blob container (adftutorial), the folder (input), and the file (emp.txt) that contain the source data. The output dataset represents the data that's copied to the destination. In the output dataset definition, you specify the blob container (adftutorial), the folder (output), and the file to which the data is copied.
 
 1. In your desktop, create a folder named ADFv2QuickStartPSH in your C drive.
 
@@ -107,7 +107,7 @@ In this procedure, you create two datasets: InputDataset and OutputDataset. Thes
     }
     ```
 
-1. Run the Set-AzDataFactoryV2Dataset cmdlet to create the OutDataset.
+1. Run the Set-AzDataFactoryV2Dataset cmdlet to create the OutputDataset.
 
     ```Powershell
     Set-AzDataFactoryV2Dataset -DataFactoryName $DataFactory.DataFactoryName `

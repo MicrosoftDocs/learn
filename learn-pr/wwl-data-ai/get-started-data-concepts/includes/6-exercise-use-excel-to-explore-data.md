@@ -1,4 +1,4 @@
-OK, now it's your chance to get hands on with data. In this lab, you'll use Microsoft Excel for the web to explore a simple dataset.
+OK, now it's your chance to get hands on with data. In this lab, you use Microsoft Excel for the web to explore a simple dataset.
 
 ## Before you start
 
@@ -8,11 +8,11 @@ If you don't already have a Microsoft account (for example a `hotmail.com`, `liv
 
 Rosie Reeves is an entrepreneurial middle-school student who sells homemade lemonade from a stand at the park near her house. To promote her lemonade stand, she distributes leaflets in the park. Rosie records details of her sales and flyer (leaflet) distribution, along with weather measurements including the temperature and rainfall each day.
 
-In this lab, you'll explore and visualize the data Rosie recorded.
+In this lab, you explore and visualize the data Rosie recorded.
 
 ## Exercise 1: View a table of data in Excel
 
-In this exercise, you'll upload the Excel workbook containing Rosie's data to the OneDrive cloud storage account associated with your Microsoft account, and then explore the data in Microsoft Excel for the web.
+In this exercise, you upload the Excel workbook containing Rosie's data to the OneDrive cloud storage account associated with your Microsoft account, and then explore the data in Microsoft Excel for the web.
 
 ### Upload the workbook to OneDrive
 
@@ -21,13 +21,13 @@ In this exercise, you'll upload the Excel workbook containing Rosie's data to th
     :::image type="content" source="../media/one-drive.png" alt-text="Screenshot showing One Drive My Files folder." lightbox="../media/one-drive.png":::
 
 2. On the **&#65291; New** menu, select **Folder** to create a new folder. You can name this anything you like, for example **DataFund**. When your new folder appears, select it to open it.
-3. In your new empty folder, on the **&#10514; Upload** menu, select **Files**. Then when prompted, in the **File name** box, enter the following address (you can copy and paste it from here!):
+3. Download the Excel file containing Rosie's lemonade data from the following address to your computer:
 
     ```
     https://github.com/MicrosoftLearning/mslearn-data-concepts/raw/main/labfiles/Lemonade.xlsx
     ```
 
-    Then select **Open** to upload the Excel file containing Rosie's lemonade data, as shown here:
+    In your new empty folder, on the **&#10514; Upload** menu, select **Files**. Then when prompted, select the downloaded **Lemonade.xlsx** file and select **Open** to upload it, as shown here:
 
     :::image type="content" source="../media/upload-files.png" alt-text="Screenshot showing the file uploads dialog box." lightbox="../media/upload-files.png":::
 
@@ -41,7 +41,7 @@ In this exercise, you'll upload the Excel workbook containing Rosie's data to th
 
     :::image type="content" source="../media/lemonade-workbook.png" alt-text="Screenshot of Lemonade workbook in Excel." lightbox="../media/lemonade-workbook.png":::
 
-2. The dates in column **A** may be too wide to be displayed, so the cells may contain ***#######*** as shown previously. To see the dates, double-click the line between the **A** and **B** column headers. The dates will then be shown in the format for the locale associated with your Microsoft account. For example, in the following image, the dates are shown in UK format (*dd/MM/yyyy*).
+2. The dates in column **A** may be too wide to be displayed, so the cells may contain ***#######*** as shown previously. To see the dates, double-click the line between the **A** and **B** column headers. The dates then appear in the format for the locale associated with your Microsoft account. For example, in the following image, the dates are shown in UK format (*dd/MM/yyyy*).
 
     :::image type="content" source="../media/widened-column.png" alt-text="Screenshot of Column A widened to show dates." lightbox="../media/widened-column.png":::
 
@@ -61,12 +61,12 @@ In this exercise, you'll upload the Excel workbook containing Rosie's data to th
 
     The table of data is filtered to show only the records for weekend days (Saturday and Sunday).
 
-4. Select the drop-down arrow for the **Rainfall** column and select **Sort Largest to Smallest**. The table of data is sorted in descending order of rainfall, so the first row contains the data for the weekend day with the most rain. This was a Sunday on which there was 2.50 cm of rain as shown here:
+3. Select the drop-down arrow for the **Rainfall** column and select **Sort Largest to Smallest**. The table of data is sorted in descending order of rainfall, so the first row contains the data for the weekend day with the most rain. This was a Sunday on which there was 2.50 cm of rain as shown here:
 
     :::image type="content" source="../media/sorted-rainfall.png" alt-text="Screenshot of data sorted in descending order of rainfall." lightbox="../media/sorted-rainfall.png":::
 
-5. Select the drop-down arrow for the **Day** column again and then select **Clear Filter from 'Day'**. The table now shows all the data.
-6. Select the drop-down arrow for **Date** and select **Sort Oldest to Newest** to reorder the data into chronological order.
+4. Select the drop-down arrow for the **Day** column again and then select **Clear Filter from 'Day'**. The table now shows all the data.
+5. Select the drop-down arrow for **Date** and select **Sort Oldest to Newest** to reorder the data into chronological order.
 
 ### Challenge: Find the weekday with the lowest temperature
 
@@ -75,15 +75,15 @@ In this exercise, you'll upload the Excel workbook containing Rosie's data to th
 
 ## Exercise 2: Using formulas to explore data in Excel
 
-In this exercise, you'll use formulas to create derived columns that extend the data recorded by Rosie.
+In this exercise, you use formulas to create derived columns that extend the data recorded by Rosie.
 
 ### Add derived columns
 
 1. On the **Home** tab, at the right side of the menu area, use the *Switch Ribbons* (**v**) button to expand the ribbon and show the full **Classic Ribbon** toolbar:
 
-    :::image type="content" source="../media/ribbon.png" alt-text="Screenshot of the Insert Columns to the Left menu option with Switch Ribbon selected." lightbox="../media/ribbon.png":::
+    :::image type="content" source="../media/ribbon.png" alt-text="Screenshot of the Switch Ribbons button on the Home tab of the ribbon." lightbox="../media/ribbon.png":::
 
-2. Select the **B** column header to select the entire **B** column. Then on the **Home** tab of the ribbon, in the **Cells** section, in the **Insert** drop-down menu, select **Insert Columns to the Left** (depending on the size of your browser window, you may need to expand a **Cells** menu to see the **Insert** menu.
+2. Select the **B** column header to select the entire **B** column. Then on the **Home** tab of the ribbon, in the **Cells** section, in the **Insert** drop-down menu, select **Insert Columns to the Left** (depending on the size of your browser window, you may need to expand a **Cells** menu to see the **Insert** menu).
 
     :::image type="content" source="../media/insert-sheet-columns.png" alt-text="Screenshot of the Insert Sheet Columns menu option with Insert selected." lightbox="../media/insert-sheet-columns.png":::
 
@@ -91,7 +91,7 @@ In this exercise, you'll use formulas to create derived columns that extend the 
 
     :::image type="content" source="../media/column-1.png" alt-text="Screenshot of new Column 1 added to the worksheet." lightbox="../media/column-1.png":::
 
-3. In cell **B1**, rename **Column1** to **Month**. Then with cell **B2**selected, in the ***fx*** bar above the data, enter the following formula:
+3. In cell **B1**, rename **Column1** to **Month**. Then with cell **B2** selected, in the ***fx*** bar above the data, enter the following formula:
 
     ```
     =TEXT(A2, "mmmm")
@@ -128,7 +128,7 @@ In this exercise, you'll use formulas to create derived columns that extend the 
 
     This formula references **Revenue** as a named column in the table and calculates the total of the values in that column. You could achieve the same result by entering `=SUM(I2:I366)` but by using the AutoSum function, the resulting value is included in the definition of the table (you may need to widen column **I** to see the value):
 
-    :::image type="content" source="../media/revenue-total.png" alt-text=" Screenshot of revenue total in the table." lightbox="../media/revenue-total.png":::
+    :::image type="content" source="../media/revenue-total.png" alt-text="Screenshot of revenue total in the table." lightbox="../media/revenue-total.png":::
 
 7. Filter the **Month** column to show only the records for **July**, and then look at the subtotal at the bottom of the **Revenue** column (you may need to scroll to find it). It now shows the total revenue for July.
 
@@ -143,11 +143,11 @@ In this exercise, you'll use formulas to create derived columns that extend the 
 
 ## Exercise 3: Using conditional formatting to explore data
 
-In this exercise, you'll apply conditional formatting to data to highlight key values of interest.
+In this exercise, you apply conditional formatting to data to highlight key values of interest.
 
 ### Highlight extremes and outliers
 
-1. Select cell **D2** and then hold the **Shift** and **Ctrl** keys and press the **Down-Arrow** key to select all the values in the **Temperature** column (if you're using a Mac OSX computer, hold the **Shift** and **&#8984;** keys, and press the **Down-Arrow** key).
+1. Select cell **D2** and then hold the **Shift** and **Ctrl** keys and press the **Down-Arrow** key to select all the values in the **Temperature** column (if you're using a macOS computer, hold the **Shift** and **&#8984;** keys, and press the **Down-Arrow** key).
 2. On the **Home** tab of the ribbon, in the **Conditional Formatting** drop-down list, point to **Color Scales**, and select the **Red-White-Blue Color Scale** (with red at the top, white in the middle, and blue at the bottom). The **Temperature** cells are reformatted so that the hottest days are colored an intense red, and the coolest days are deep blue. Scrolling through the data now, it's easier to find days that are particularly hot or cool.
 
     :::image type="content" source="../media/temperature-colors.png" alt-text="Screenshot of color scaled temperatures." lightbox="../media/temperature-colors.png":::
@@ -177,4 +177,4 @@ In this exercise, you'll apply conditional formatting to data to highlight key v
 
 Now that you've highlighted the cells, you can more easily make visual comparisons between temperature, rainfall, and sales values.
 
-Scroll through the data, and just by looking at the visual formatting you've added, try to see if you can spot any relationship between temperature, rainfall, and sales that might form the basis of a hypothesis you'll want to investigate more thoroughly.
+Scroll through the data, and just by looking at the visual formatting you've added, try to see if you can spot any relationship between temperature, rainfall, and sales that might form the basis of a hypothesis to investigate more thoroughly.

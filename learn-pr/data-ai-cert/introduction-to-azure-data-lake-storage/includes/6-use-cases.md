@@ -1,16 +1,16 @@
-Azure Data Lake Store Gen2 is an enabling technology for multiple data analytics use cases. Let's explore a few common types of analytical workload, and identify how Azure Data Lake Storage Gen2 works with other Azure services to support them.
+Azure Data Lake Storage Gen2 is an enabling technology for multiple data analytics use cases. This unit describes a few common types of analytical workload and identifies how Azure Data Lake Storage Gen2 works with other Azure services to support them.
 
 ## Big data processing and analytics
 
-Big data scenarios usually refer to analytical workloads that involve massive *volumes* of data in a *variety* of formats that needs to be processed at a fast *velocity* - the so-called "three v's". Azure Data Lake Storage Gen 2 provides a scalable and secure distributed data store on which big data services such as Azure Databricks and Microsoft Fabric can apply data processing frameworks such as Apache Spark. The distributed nature of the storage and the processing compute enables tasks to be performed in parallel, resulting in high-performance and scalability even when processing huge amounts of data.
+Big data scenarios usually refer to analytical workloads that involve massive *volumes* of data in a *variety* of formats that needs to be processed at a fast *velocity* - the so-called "three v's". Azure Data Lake Storage Gen2 provides a scalable and secure distributed data store on which big data services such as Azure Databricks and Microsoft Fabric can apply data processing frameworks such as Apache Spark. The distributed nature of the storage and the processing compute enables tasks to be performed in parallel, resulting in high-performance and scalability even when processing huge amounts of data.
 
 ## Data warehousing
 
-![Diagram of Azure Data Lake Storage Gen2 being used to support a data warehousing solution in Microsoft Fabric.](../media/data-warehouse.png)
+![Diagram of Azure Data Lake Storage Gen2 being used to support a data warehousing solution in Azure Synapse Analytics.](../media/data-warehouse.png)
 
 Data warehousing has evolved in recent years to integrate large volumes of data stored as files in a data lake with relational tables in a data warehouse. In a typical example of a data warehousing solution, data is extracted from operational data stores, such as Azure SQL database or Azure Cosmos DB, and transformed into structures more suitable for analytical workloads. Often, the data is staged in a data lake in order to facilitate distributed processing before being loaded into a data warehouse. In some cases, the data warehouse uses *external* tables to define a relational metadata layer over files in the data lake and create a hybrid "data lakehouse" or "lake database" architecture. The data warehouse can then support analytical queries for reporting and visualization.
 
-There are multiple ways to implement this kind of data warehousing architecture. The diagram shows a solution in which Microsoft Fabric hosts *pipelines* to perform *extract, transform, and load* (ETL) processes. These processes extract data from operational data sources and load it into a data lake hosted in an Azure Data Lake Storage Gen2 container. The data is then processed and loaded into a warehouse in Microsoft Fabric, from where it can support data visualization and reporting using Microsoft Power BI.
+There are multiple ways to implement this kind of data warehousing architecture. The diagram shows a solution in which Azure Synapse Analytics hosts *pipelines* to perform *extract, transform, and load* (ETL) processes. These processes extract data from operational data sources and load it into a data lake hosted in an Azure Data Lake Storage Gen2 container. The data is then processed and loaded into a data warehouse in Azure Synapse Analytics, from where it can support data visualization and reporting using Microsoft Power BI. Microsoft Fabric provides comparable capabilities with pipelines and a warehouse item.
 
 ## Real-time data analytics
 
@@ -24,6 +24,6 @@ Streaming events are often captured in a queue for processing. There are multipl
 
 ![Diagram of Azure Data Lake Storage Gen2 being used as a source for Azure Machine Learning.](../media/machine-learning.png)
 
-Data science involves the statistical analysis of large volumes of data, often using tools such as Apache Spark and scripting languages such as Python. Azure Data Lake Storage Gen 2 provides a highly scalable cloud-based data store for the volumes of data required in data science workloads.
+Data science involves the statistical analysis of large volumes of data, often using tools such as Apache Spark and scripting languages such as Python. Azure Data Lake Storage Gen2 provides a highly scalable cloud-based data store for the volumes of data required in data science workloads.
 
 Machine learning is a subarea of data science that deals with training predictive models. Model training requires huge amounts of data, and the ability to process that data efficiently. Azure Machine Learning is a cloud service in which data scientists can run Python code in notebooks using dynamically allocated distributed compute resources. The compute processes data in Azure Data Lake Storage Gen2 containers to train models, which can then be deployed as production web services to support predictive analytical workloads.

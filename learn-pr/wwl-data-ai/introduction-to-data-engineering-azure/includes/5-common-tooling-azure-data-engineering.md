@@ -12,6 +12,8 @@ This operational data must be captured, ingested, and consolidated into analytic
 - Azure Data Factory
 - Azure Databricks
 
-Microsoft Fabric is a unified, end-to-end SaaS analytics platform built on OneLake that brings together data engineering, data factory, data science, data warehousing, real-time intelligence, databases, business intelligence, and IQ in a single integrated environment. IQ is a workload for unifying business semantics across data, models, and systems to power intelligent agents and decisions grounded in a live, holistic view of the business.
+Microsoft Fabric is a unified, end-to-end SaaS analytics platform built on OneLake that brings together data engineering, data factory, data science, data warehousing, real-time intelligence, databases, business intelligence, and Fabric IQ (preview) in a single integrated environment. Fabric IQ is a workload for unifying business semantics across data, models, and systems.
 
-The analytical data stores that are populated with data produced by data engineering workloads support data modeling and visualization for reporting and analysis, often using sophisticated visualization tools such as Microsoft Power BI.
+The diagram also includes Azure Synapse Analytics. Microsoft Fabric provides guidance for migrating Azure Synapse workloads to Fabric.
+
+The analytical data stores that are populated with data produced by data engineering workloads support data modeling and visualization for reporting and analysis, often using visualization tools such as Microsoft Power BI.

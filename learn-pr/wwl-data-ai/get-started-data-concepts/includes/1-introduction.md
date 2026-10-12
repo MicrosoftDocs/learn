@@ -2,11 +2,11 @@ Data is generated as a by-product of our digital lifestyles and its importance h
 
 Collecting data enables us to measure critical goals or milestones, and make predictions about the future. However, data is typically stored in a raw format that's not clear to read or to derive much knowledge from, especially when there are thousands or even millions of rows. When the techniques of data analysis are applied, data becomes more readable and enlightening.
   
-As you begin your journey to learn about analysis, you'll discover how powerful data can be. Understanding the basic concepts of data enables you to work with it to uncover patterns and discover trends.
+As you begin your journey to learn about analysis, you discover the value of data. Understanding the basic concepts of data enables you to work with it to uncover patterns and discover trends.
 
 ## Learning objectives
 
-After completing this module, you'll be able to:
+After completing this module, you can:
 
 - Describe the different types of data that comprise a dataset.
 - Sort and filter data to answer a business question.

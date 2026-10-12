@@ -14,7 +14,7 @@ FROM
 
 The results of the query determine the schema of the table in the output dataset in Power BI.
 
-Alternatively, you might use your query to filter and/or aggregate the data, sending only relevant or summarized data to the Power BI dataset. For example, the following query calculates the maximum reading for each sensor other than sensor *0* for each consecutive minute in which an event occurs.
+Alternatively, you might use your query to filter and/or aggregate the data, sending only relevant or summarized data to the Power BI dataset. For example, the following query calculates the maximum reading for each sensor other than sensor *0* for each one-minute window that contains more than one event.
 
 ```sql
 SELECT
@@ -31,7 +31,7 @@ GROUP BY SensorID, TumblingWindow(second, 60)
 HAVING COUNT(*) > 1
 ```
 
-When working with window functions (such as the **TumblingWindow** function in the previous example), consider that Power BI is capable of handling a call every second. Additionally, streaming visualizations support packets with a maximum size of 15 KB. As a general rule, use window functions to ensure data is sent to Power BI no more frequently than every second, and minimize the fields included in the results to optimize the size of the data load.
+When working with window functions (such as the **TumblingWindow** function in the previous example), consider that you can call Power BI roughly once per second. Additionally, streaming visualizations support packets with a maximum size of 15 KB. As a general rule, use window functions to ensure data is sent to Power BI no more frequently than every second, and minimize the fields included in the results to optimize the size of the data load.
 
 > [!NOTE]
 > For more information about Power BI output limitations, see [Power BI output from Azure Stream Analytics](/azure/stream-analytics/power-bi-output?azure-portal=true#limitations-and-best-practices) in the Azure Stream Analytics documentation.

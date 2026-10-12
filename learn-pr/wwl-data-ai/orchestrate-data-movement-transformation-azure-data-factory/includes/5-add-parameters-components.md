@@ -6,7 +6,7 @@ It's also possible to parameterize other properties of the linked service like a
 
 If you decide to parameterize linked services in Azure Data Factory, you can do this in the Azure Data Factory user interface, the Azure portal, or a programming interface of your preference.
 
-If you choose to author the linked service through the user interface, Data Factory provides built-in parameterization for over 50 connector types, including commonly used connectors such as:
+If you choose to author the linked service through the user interface, Data Factory provides built-in parameterization for about 50 connector types, including commonly used connectors such as:
 
 * Azure SQL Database
 * Azure SQL Managed Instance
@@ -21,7 +21,7 @@ If you choose to author the linked service through the user interface, Data Fact
 
 For the full list of natively supported connectors, see [Parameterize linked services in Azure Data Factory](/azure/data-factory/parameterize-linked-services#supported-linked-service-types).
 
-If you go to the creation/edit blade of the linked service, you'll find the options for parameterizing.
+If you go to the creation/edit blade of the linked service, you find the options for parameterizing.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot showing the parameter settings in Linked Service.](../media/azure-data-factory-edit-linked-service-parameter-settings.png)](../media/azure-data-factory-edit-linked-service-parameter-settings.png#lightbox)
@@ -39,7 +39,7 @@ Or, after you create a linked service without parameterization, in the **Managem
 
 Setting global parameters in an Azure Data Factory pipeline allows you to use these constants for consumption in pipeline expressions. A use-case for setting global parameters is when you have multiple pipelines where the parameters names and values are identical.
 
-If you use the continuous integration and continuous (CI/CD) deployment process with Azure Data Factory, the global parameters can be overridden, if you want, for each environment that you have created.
+If you use the continuous integration and continuous deployment (CI/CD) process with Azure Data Factory, you can override the global parameters for each environment.
 
 ## Create global parameters in Azure Data Factory
 
@@ -58,20 +58,15 @@ When using global parameters in a pipeline in Azure Data Factory, it's mostly re
 
 ## Global parameters in CI/CD
 
-When you integrate global parameters in a pipeline using CI/CD with Azure Data Factory, you have two ways in order to do so:
+Include global parameters in the Azure Resource Manager (ARM) template when you use CI/CD with Azure Data Factory. This approach integrates natively with CI/CD, where each global parameter is added as an ARM template parameter that you can override for each environment, such as test or production.
 
-* Include global parameters in the Azure Resource Manager template
-* Deploy global parameters via a PowerShell script
+To include global parameters in the ARM template, go to the **Manage** hub, select **ARM template**, and then select **Include global parameters in an ARM template**. This option is available only in Git mode. The current mechanism doesn't conflict with or override factory-level settings, so it doesn't require a separate PowerShell script to deploy global parameters.
 
-In most CI/CD practices, it's beneficial to include global parameters in the Azure Resource Manager template. It's recommended because of their native integration with CI/CD, where global parameters are added as an Azure Resource Manager Template parameter. This is due to changes in several environments that are worked in.
-
-To enable global parameters in an Azure Resource Manager template, go to the **Management** hub. Be aware that after you add global parameters to an Azure Resource Manager template, it adds an Azure Data Factory level setting, which can override other settings like git configs.
-
-The use-case for deploying global parameters through a PowerShell script could be because you might have the previously described settings enabled in an elevated environment, like UAT or PROD.
+The older approach, which uses **Include in ARM template** on the **Global parameters** tab together with a PowerShell script to deploy global parameters, continues to work for existing solutions.
 
 ## Parameterize mapping dataflows
 
-Within Azure Data Factory, you can use mapping data flows, which enable you to use parameters. If you set parameters inside a data flow definition, you can use the parameters in expressions. The parameter values will be set by the calling pipeline through the Execute Data Flow activity.
+Within Azure Data Factory, you can use mapping data flows, which enable you to use parameters. If you set parameters inside a data flow definition, you can use the parameters in expressions. The parameter values are set by the calling pipeline through the Execute Data Flow activity.
 
 There are three options for setting the values in the data flow activity expressions:
 
@@ -85,7 +80,7 @@ The reason for parameterizing mapping data flows is to make sure that your data 
 
 To add parameters to your data flow, select the blank portion of the data flow canvas to see the general properties.
 
-In the **Settings** pane, you'll see a **Parameter** tab.
+In the **Settings** pane, you see a **Parameter** tab.
 
 Select **New** to generate a new parameter. For each parameter, you must assign a name, select a type, and optionally set a default value.
 
@@ -96,6 +91,6 @@ Select **New** to generate a new parameter. For each parameter, you must assign 
 
 If you have created a data flow in which you have set parameters, it's possible to execute it from a pipeline using the Execute Data Flow Activity.
 
-After you have added the activity to the pipeline canvas, you'll find the data flow parameters in the activity's **Parameters** tab.
+After you have added the activity to the pipeline canvas, you find the data flow parameters in the activity's **Parameters** tab.
 
 Assigning parameter values, ensures that you're able to use the parameters in a pipeline expression language or data flow expression language based on spark types. You can also combine the two, that is, the pipeline and data flow expression parameters.

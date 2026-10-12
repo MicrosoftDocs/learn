@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai-introduction-to-azure-data-lake-storage.azure-data-lake-and-blob-storage
-title: Compare Azure Data Lake Store to Azure Blob storage
+title: Compare Azure Data Lake Storage to Azure Blob storage
 metadata:
-  title: Compare Azure Data Lake Store to Azure Blob storage
-  description: "Compare Azure Data Lake Store to Azure Blob storage"
-  ms.date: 04/03/2026
+  title: Compare Azure Data Lake Storage to Azure Blob storage
+  description: "Compare Azure Data Lake Storage to Azure Blob storage"
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

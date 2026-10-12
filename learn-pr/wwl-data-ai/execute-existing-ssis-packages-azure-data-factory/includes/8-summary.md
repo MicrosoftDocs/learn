@@ -1,4 +1,4 @@
-SQL Server Integration Services (SSIS) has provided many organizations with a platform for developing Extract, Transformation, and Load (ETL) solutions for on-premises data warehouses, analytical solutions and in some cases migration projects. Azure Data Factory provides the capability to lift and shift SSIS solutions to the cloud so that they can be utilized immediately. Furthermore, you have learned the tools to assess the compatibility of existing packages. You have also learned the tools you can use to identify compatibility issues. 
+SQL Server Integration Services (SSIS) has provided many organizations with a platform for developing Extract, Transformation, and Load (ETL) solutions for on-premises data warehouses, analytical solutions and in some cases migration projects. Azure Data Factory provides the capability to lift and shift SSIS solutions to the cloud so that you can use them immediately. Furthermore, you have learned the tools to assess the compatibility of existing packages and to migrate them to Azure. 
 
 In this module, you have learned:
 

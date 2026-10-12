@@ -1,8 +1,8 @@
-Microsoft Copilot in Fabric is a generative AI assistive technology designed to enhance the data analytics experience. Understanding how Copilot works is essential for administrators and users to effectively manage, govern, and utilize this powerful tool.
+Microsoft Copilot in Fabric is a generative AI assistive technology designed to enhance the data analytics experience. Understanding how Copilot works is essential for administrators and users to effectively manage, govern, and use this tool.
 
 ## The Copilot architecture overview
 
-Copilot in Microsoft Fabric follows a structured five-step process to transform user inputs into meaningful outputs. This process ensures that responses are contextually relevant, secure, and appropriate for the specific Fabric workload being used.
+Copilot in Microsoft Fabric follows a structured process to transform user inputs into outputs. This process ensures that responses are contextually relevant, secure, and appropriate for the specific Fabric workload being used.
 
 > [!div class="mx-imgBorder"]
 > [![Diagram showing the process flow of how Copilot in Fabric works.](../media/copilot-fabric-overview-diagram.png)](../media/copilot-fabric-overview-diagram.png#lightbox)
@@ -29,4 +29,4 @@ The following steps describe how Copilot in Microsoft Fabric processes user inpu
 
 10. The final output is returned to the user, who should review it before use, as Copilot outputs don't guarantee reliability, accuracy, or trustworthiness.
 
-This architectural understanding enables organizations to effectively deploy, manage, and govern Copilot in Microsoft Fabric while maximizing its benefits and minimizing risks.
+This architectural understanding helps organizations deploy, manage, and govern Copilot in Microsoft Fabric.

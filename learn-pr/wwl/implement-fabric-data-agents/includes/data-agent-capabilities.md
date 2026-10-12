@@ -2,7 +2,7 @@ Fabric data agents are designed to help organizations interact with their data b
 
 ## Interact with your data
 
-The data agent enables natural interaction with your data by allowing you to ask questions in plain English and receive structured, human-readable responses. It analyzes your input, determines the most appropriate data source—such as a Lakehouse, Warehouse, Power BI dataset, or KQL database—and automatically selects the right tool to generate, validate, and execute the corresponding queries.
+The data agent enables natural interaction with your data by allowing you to ask questions in plain English and receive structured, human-readable responses. It analyzes your input, determines the most appropriate data source—such as a lakehouse, warehouse, Power BI semantic model, or KQL database—and automatically selects the right tool to generate, validate, and execute the corresponding queries.
 
 By eliminating the need to understand query languages like SQL (Structured Query Language), DAX (Data Analysis Expressions), or KQL (Kusto Query Language), the data agent makes data insights accessible across the organization, regardless of technical skill level.
 

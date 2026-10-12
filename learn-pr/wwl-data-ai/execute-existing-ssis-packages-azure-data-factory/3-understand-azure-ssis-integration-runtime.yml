@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory.understand-azure-ssis-integration-runtime
-title: Understand the Azure SSIS Integration Runtime
+title: Understand the Azure-SSIS integration runtime
 metadata:
   title: Understand the Azure SSIS Integration Runtime
   description: "Understand the Azure SSIS Integration Runtime"
-  ms.date: 04/30/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
