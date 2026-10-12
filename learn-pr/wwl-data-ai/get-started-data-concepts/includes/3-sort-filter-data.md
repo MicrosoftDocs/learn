@@ -6,6 +6,6 @@ By sorting the dataset, we can find the highest or lowest value within a column.
 
 Outliers are values that are unusually high or low compared to the other values in the dataset. When an outlier is included in an aggregate function, such as an average, it can create misleading results.
 
-In this video, you'll see how a dataset can be filtered to answer a question, and how columns can be sorted to discover the highest and lowest values within a range:
+In this video, you see how a dataset can be filtered to answer a question, and how columns can be sorted to discover the highest and lowest values within a range:
 
 > [!VIDEO d93ab60c-9d59-4a1e-80fb-eca80b33b68f]
