@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.guarded-fabrics-shielded-virtual-machines.diagnose-guarded-fabric-failures
+title: Diagnose guarded-fabric failures
+metadata:
+  title: Diagnose Guarded-Fabric Failures
+  description: Diagnose connectivity, attestation, key release, provisioning, and migration failures without weakening guarded-fabric protections.
+  ms.date: 10/08/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/13-diagnose-guarded-fabric-failures.md)]

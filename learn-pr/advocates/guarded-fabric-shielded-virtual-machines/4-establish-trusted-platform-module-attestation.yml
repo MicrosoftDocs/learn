@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.guarded-fabrics-shielded-virtual-machines.establish-trusted-platform-module-attestation
+title: Establish trusted platform module attestation
+metadata:
+  title: Establish Trusted Platform Module Attestation
+  description: Prepare trusted host configurations, register attestation evidence, and verify policy versions and guarded-host acceptance.
+  ms.date: 10/08/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-establish-trusted-platform-module-attestation.md)]

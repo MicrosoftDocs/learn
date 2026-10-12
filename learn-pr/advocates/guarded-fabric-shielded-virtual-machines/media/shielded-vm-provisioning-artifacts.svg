@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1140" viewBox="0 0 1120 1140" role="img" aria-labelledby="title description">
+  <title id="title">Owner-controlled artifacts through shielded VM provisioning</title>
+  <desc id="description">Five numbered stages proceed downward. The publisher protects a copied template and exports its volume signature catalog. The owner authenticates fabric guardians, approves the catalog, and creates an encrypted shielding data file while retaining private keys. The fabric stages the template and shielding data and supplies approved nonsecret specialization. A guarded host must pass attestation and VM authorization; secure provisioning validates the actual disk and applies owner policy. The owner then verifies guest identity, access, and OS and data-volume encryption.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#155a86"/>
+    </marker>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; fill: #172b4d; }
+      .title { font-size: 30px; font-weight: 700; }
+      .heading { font-size: 25px; font-weight: 700; }
+      .body { font-size: 21px; }
+      .card { fill: #eef5fb; stroke: #286086; stroke-width: 2; }
+      .protected { fill: #edf7f2; stroke: #28624a; stroke-width: 2; }
+      .connector { stroke: #155a86; stroke-width: 3; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect id="background" x="0" y="0" width="1120" height="1140" fill="#ffffff"/>
+  <text class="title" x="40" y="52">Provisioning: keep secrets with the owner</text>
+  <text class="body" x="40" y="86">Follow five stages; each operator handles only its assigned artifacts.</text>
+
+  <g class="node" id="step-1">
+    <rect class="card" x="60" y="120" width="1000" height="150" rx="8"/>
+    <text class="heading" x="84" y="157">1. Publisher prepares and signs</text>
+    <text class="body" x="84" y="193">Preserve an unprotected servicing source before protecting a copied VHDX.</text>
+    <text class="body" x="84" y="224">Export a volume signature catalog (VSC) for the signed template.</text>
+    <text class="body" x="84" y="254">Signing establishes identity and integrity, not a guarantee of benign code.</text>
+  </g>
+  <line class="connector" x1="560" y1="280" x2="560" y2="305"/>
+  <g class="node" id="step-2">
+    <rect class="protected" x="60" y="315" width="1000" height="150" rx="8"/>
+    <text class="heading" x="84" y="352">2. Owner approves and packages</text>
+    <text class="body" x="84" y="388">Approve the VSC, fabric guardians, answer file, and shielded VM policy.</text>
+    <text class="body" x="84" y="419">Create encrypted shielding data (PDK); retain owner private keys.</text>
+    <text class="body" x="84" y="449">Decide which image versions and recovery fabrics are authorized.</text>
+  </g>
+  <line class="connector" x1="560" y1="475" x2="560" y2="500"/>
+  <g class="node" id="step-3">
+    <rect class="card" x="60" y="510" width="1000" height="150" rx="8"/>
+    <text class="heading" x="84" y="547">3. Fabric stages nonsecret deployment data</text>
+    <text class="body" x="84" y="583">Stage the approved protected template and the owner's encrypted PDK.</text>
+    <text class="body" x="84" y="614">Supply only approved nonsecret placeholders through specialization data.</text>
+    <text class="body" x="84" y="644">Prepare storage, networking, and an eligible destination host.</text>
+  </g>
+  <line class="connector" x1="560" y1="670" x2="560" y2="695"/>
+  <g class="node" id="step-4">
+    <rect class="card" x="60" y="705" width="1000" height="150" rx="8"/>
+    <text class="heading" x="84" y="742">4. Guarded host performs secure provisioning</text>
+    <text class="body" x="84" y="778">Host attestation and the VM's guardian authorization must both succeed.</text>
+    <text class="body" x="84" y="809">Validate the actual template and apply owner policy, KP, and vTPM state.</text>
+    <text class="body" x="84" y="839">PDK/VSC applicability alone does not validate a replaced VHDX.</text>
+  </g>
+  <line class="connector" x1="560" y1="865" x2="560" y2="890"/>
+  <g class="node" id="step-5">
+    <rect class="protected" x="60" y="900" width="1000" height="150" rx="8"/>
+    <text class="heading" x="84" y="937">5. Owner accepts the deployed guest</text>
+    <text class="body" x="84" y="973">Verify guest identity, authenticated access, and OS-volume protection.</text>
+    <text class="body" x="84" y="1004">Protect data volumes separately and escrow their recovery information.</text>
+    <text class="body" x="84" y="1034">Retain the original PDK and consistent protected-state recovery artifacts.</text>
+  </g>
+  <text class="body" x="40" y="1102">A visible or running VM is not sufficient evidence of successful protected provisioning.</text>
+</svg>

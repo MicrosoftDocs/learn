@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.guarded-fabrics-shielded-virtual-machines.deploy-host-guardian-service
+title: Deploy Host Guardian Service
+metadata:
+  title: Deploy Host Guardian Service
+  description: Plan and deploy an isolated Host Guardian Service, configure certificates and additional nodes, and delegate secure administration.
+  ms.date: 10/08/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/3-deploy-host-guardian-service.md)]
