@@ -10,9 +10,7 @@ In **serverless workspaces**, default storage also serves as the primary storage
 
 ## Where is default storage available?
 
-**Creating new catalogs in default storage** is available exclusively in serverless workspaces. Classic workspaces can access catalogs stored in default storage, but only when using serverless compute.
-
-:::image type="content" source="../media/default-storage.png" alt-text="Screenshot showing configuration for default storage." border="false" lightbox="../media/default-storage.png":::
+**Creating new catalogs in default storage** is available exclusively in serverless workspaces. Classic workspaces can access catalogs stored in default storage when the catalog is bound to them, but only when using serverless compute.
 
 Serverless workspaces use default storage for three key areas. First, they use it for internal workspace operations and workspace system data. Second, they store workspace-level files and artifacts there. Third, catalogs you create can use default storage to store managed tables and volumes.
 

@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/11/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -64,10 +64,10 @@ quiz:
     choices:
     - content: "The data files are immediately deleted from cloud storage"
       isCorrect: false
-      explanation: "Incorrect. Unity Catalog marks the files for deletion after eight days, not immediately."
-    - content: "The data files are marked for deletion after eight days"
+      explanation: "Incorrect. Unity Catalog retains the files for a 7-day recovery window before an asynchronous purge permanently deletes them."
+    - content: "The data files are retained for a 7-day recovery window and then permanently deleted"
       isCorrect: true
-      explanation: "Correct. When you drop a managed table, Unity Catalog automatically marks the underlying data files for deletion after eight days."
+      explanation: "Correct. When you drop a managed table, Unity Catalog retains the underlying data files for 7 days so you can recover the table, and then an asynchronous purge process permanently deletes them."
     - content: "The data files remain in cloud storage and must be manually deleted"
       isCorrect: false
       explanation: "Incorrect. Unity Catalog manages the lifecycle of managed table data, including automatic cleanup."

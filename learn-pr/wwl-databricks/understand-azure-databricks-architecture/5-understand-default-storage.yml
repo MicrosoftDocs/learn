@@ -4,7 +4,7 @@ title: Understand default storage
 metadata:
   title: Understand Default Storage
   description: Learn what default storage is in Azure Databricks, where it's available across workspace types, its benefits, and key considerations including the serverless compute requirement for catalog access.
-  ms.date: 05/11/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
