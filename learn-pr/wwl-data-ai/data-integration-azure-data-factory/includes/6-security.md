@@ -1,7 +1,7 @@
 To create Data Factory instances, the user account that you use to sign in to Azure must be a member of the _contributor_ or _owner_ role, or an _administrator_ of the Azure subscription.
 
 To create and manage Data Factory objects including datasets, linked services, pipelines, triggers, and integration runtimes, the following requirements must be met:
-- To create and manage child resources in the Azure portal, you must belong to the _Data Factory Contributor_ role at the resource group level or above.
+- To create and manage child resources in the Azure portal, you must belong to the _Data Factory Contributor_ role or the _Contributor_ role at the resource group level or above.
 - To create and manage resources with PowerShell or the SDK, the _contributor_ role at the resource level or above is sufficient.
 
 ## Data Factory Contributor role
@@ -25,7 +25,7 @@ Azure Data Factory supports two types of managed identity:
 - **System-assigned**: Automatically created when the data factory is provisioned and deleted when the factory is deleted. Each factory has exactly one system-assigned managed identity.
 - **User-assigned**: A standalone Azure resource that you create independently and assign to one or more data factories. Useful when you need to share an identity across multiple factories or manage its lifecycle separately.
 
-To grant a managed identity access to a resource, assign the appropriate Azure RBAC role to the managed identity on the target resource. For example, assign the **Storage Blob Data Contributor** role on a storage account, or the **db_datareader** database role on an Azure SQL Database.
+To grant a managed identity access to a resource, assign the appropriate Azure RBAC role to the managed identity on the target resource. For example, assign the **Storage Blob Data Contributor** role on a storage account. For Azure SQL Database, create a contained database user for the managed identity and add it to a database role, such as **db_datareader**.
 
 For credentials that can't use managed identity authentication, store them in **Azure Key Vault** and reference the secret in your linked service definition. This avoids embedding sensitive values in pipeline configuration.
 

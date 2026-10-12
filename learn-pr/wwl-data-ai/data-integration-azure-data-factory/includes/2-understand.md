@@ -7,10 +7,10 @@ Azure Data Factory is the cloud-based ETL and data integration service that allo
 
 ## What is meant by orchestration
 
-To use an analogy, think about a symphony orchestra. The central member of the orchestra is the conductor. The conductor doesn't play the instruments, they simply lead the symphony members through the entire piece of music that they perform. The musicians use their own skills to produce particular sounds at various stages of the symphony, so they may only learn certain parts of the music. The conductor orchestrates the entire piece of music, and therefore is aware of the entire score that's being performed. They'll also use specific arm movements that provide instructions to the musicians how a piece of music should be played.
+To use an analogy, think about a symphony orchestra. The central member of the orchestra is the conductor. The conductor doesn't play the instruments, they simply lead the symphony members through the entire piece of music that they perform. The musicians use their own skills to produce particular sounds at various stages of the symphony, so they might only learn certain parts of the music. The conductor orchestrates the entire piece of music, and therefore is aware of the entire score that's being performed. They also use specific arm movements that instruct the musicians how to play a piece of music.
 
-ADF can use a similar approach, while it has native functionality to ingest and transform data, sometimes it will instruct another service to perform the actual work required on its behalf, such as a Databricks to execute a transformation query. So, in this case, it would be Databricks that performs the work, not ADF. ADF merely orchestrates the execution of the query, and then provides the pipelines to move the data onto the next step or destination.
+ADF uses a similar approach. While it has native functionality to ingest and transform data, sometimes it instructs another service to perform the actual work on its behalf, such as Azure Databricks running a transformation query. In this case, Azure Databricks performs the work, not ADF. ADF orchestrates the execution of the query, and then provides the pipelines to move the data onto the next step or destination.
 
-It also provides rich visualizations to display the lineage and dependencies between your data pipelines, and monitor all your data pipelines from a single unified view to easily pinpoint issues and setup monitoring alerts.
+ADF also has built-in support for pipeline monitoring through Azure Monitor, an API, PowerShell, Azure Monitor logs, and health panels in the Azure portal.
 
 ![Diagram showing the Data Factory platform.](../media/hydrid-data-integration-scale.png)

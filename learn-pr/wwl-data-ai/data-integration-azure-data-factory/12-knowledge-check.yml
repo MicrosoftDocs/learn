@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 04/30/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "Linked Services"
       isCorrect: false
-      explanation: "Incorrect. Linked Services is objects that are used to define the connection to data stores or compute resources in Azure."
+      explanation: "Incorrect. Linked services are objects that define the connection to data stores or compute resources."
     - content: "Datasets"
       isCorrect: false
       explanation: "Incorrect. Datasets represent data structures within the data store that's being referenced by the Linked Service object."
@@ -32,7 +32,18 @@ quiz:
       explanation: "Incorrect. Azure-SSIS IR is used when lifting and shifting existing SSIS packages to execute in Azure."
     - content: "Azure"
       isCorrect: true
-      explanation: "Correct. When copying data between two Azure cloud data stores, the Azure Integration Runtime is used. It automatically determines the appropriate region for the copy."
+      explanation: "Correct. When copying data between two Azure cloud data stores, the Azure Integration Runtime is used. By default, it detects the location of the sink data store on a best-effort basis to choose the region for the copy."
     - content: "Self-hosted"
       isCorrect: false
       explanation: "Incorrect. Self-hosted IR is used when copying data between private network resources and the cloud, not between two Azure cloud data stores."
+  - content: "Which type of managed identity is deleted automatically when the data factory is deleted?"
+    choices:
+    - content: "User-assigned managed identity"
+      isCorrect: false
+      explanation: "Incorrect. A user-assigned managed identity is a standalone Azure resource that you manage separately from the data factories that use it."
+    - content: "System-assigned managed identity"
+      isCorrect: true
+      explanation: "Correct. A system-assigned managed identity is tied to the lifecycle of the data factory, so Azure deletes the identity when you delete the factory."
+    - content: "Service principal"
+      isCorrect: false
+      explanation: "Incorrect. A service principal is a separate Microsoft Entra object that isn't tied to the lifecycle of the data factory."
