@@ -9,7 +9,7 @@ In short, the Integration Runtime (IR) is the compute infrastructure used by Azu
 - **Activity dispatch**: Dispatch and monitor transformation activities running on various compute services such as Azure Databricks, Azure HDInsight, Azure Machine Learning, Azure SQL Database, SQL Server, and more.
 - **SSIS package execution**: Natively execute SQL Server Integration Services (SSIS) packages in a managed Azure compute environment.
 
-Whenever an Azure Data Factory instance is created, a default Integration Runtime environment is created that supports operations on cloud data stores and compute services in public network. This can be viewed when the integration runtime is set to Auto-Resolve
+Whenever an Azure Data Factory instance is created, a default Integration Runtime environment is created that supports operations on cloud data stores and compute services in public network. This can be viewed when the integration runtime is set to Auto-Resolve.
 
 ## Integration runtime types
 
@@ -34,7 +34,7 @@ The following table describes the capabilities and network support for each of t
 
 ## Determining which integration runtime to use
 
-There are a range of factors that affect the Integration Runtime that you'll use. The following is a guide that will help you select the right IR
+There are a range of factors that affect the Integration Runtime that you use. The following guide helps you select the right IR.
 
 ### Copy activity
 

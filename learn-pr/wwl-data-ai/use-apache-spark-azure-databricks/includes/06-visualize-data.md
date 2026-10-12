@@ -6,7 +6,7 @@ When you display a dataframe or run a SQL query in a Spark notebook in Azure Dat
 
 ![A screenshot of a notebook displaying a visualization of product counts by category.](../media/notebook-chart.png)
 
-### Visualization Types
+### Visualization types
 
 These are the different kinds of visualizations you can make in Databricks, each good for certain kinds of data-insights. Key points:
 

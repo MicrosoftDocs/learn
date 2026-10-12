@@ -10,8 +10,8 @@ There are several steps involved in creating, validating, and sharing a Fabric d
 Before you begin, make sure that:
 
 - You have a paid F2 or higher Fabric capacity.
-- You have the [Fabric data agent tenant](/fabric/data-science/data-agent-tenant-settings) settings and [Copilot tenant switch](/fabric/data-science/data-agent-tenant-settings) enabled
-- You have at least one of these: A warehouse, a lakehouse, one or more Power BI semantic models, or a KQL database with data.
+- You have the [Fabric data agent tenant settings](/fabric/data-science/data-agent-tenant-settings) enabled, including the Copilot and Azure OpenAI Service tenant switch and, if your capacity region requires them, the cross-geo processing and storing settings for AI.
+- You have at least one of these with data, and read access to it: a warehouse, a lakehouse, one or more Power BI semantic models, a KQL database, a mirrored database, or an ontology.
 
 ## 1. Create a Fabric data agent
 
@@ -60,9 +60,7 @@ The Fabric data agent provides various configuration options that let you tailor
 
 You can provide specific instructions to guide the AI’s behavior, helping it better understand how to interpret and respond to queries. Any predefined examples (for example, sample questions and answers) or specific instructions, help refine the AI's understanding of the question, and guide how the AI interacts with the data. You can write up to 15,000 characters in plain English-language text.
 
-To add them in the Fabric data agent instructions pane, select **AI instructions** as shown in the following screenshot:
-
-> [![Screenshot of AI instructions in a Fabric data agent.](../media/fabric-data-agent-ai-instructions.png)](../media/fabric-data-agent-ai-instructions.png#lightbox)
+To add them in the Fabric data agent instructions pane, select **Data agent instructions**.
 
 For example, you can specify the exact data source to use for certain types of questions. Or, provide descriptions for certain tables or columns.
 
@@ -72,7 +70,7 @@ You can improve the accuracy of Fabric data agent responses by providing example
 
 > [!NOTE]
 > 
-> Power BI semantic model data don't support adding sample query/question pairs at this time. 
+> Power BI semantic model data and ontologies don't support adding sample query/question pairs at this time.
 
 To add or edit example queries, select the **Example queries** button to open the example queries pane, as shown in the following screenshot:
 
@@ -88,7 +86,7 @@ When you're satisfied with the data agent's functionality, select **Publish** to
 
 > [![Screenshot of selecting the Publish button in a Fabric data agent.](../media/fabric-data-agent-publish-button.png)](../media/fabric-data-agent-publish-button.png#lightbox)
 
-After you publish the Fabric data agent, you'll have two versions of it. One version is the current draft version, which you can continue to refine and improve. The second version is the published version, which you can share with your colleagues who want to query the Fabric data agent to get answers to their questions. 
+After you publish the Fabric data agent, you have two versions of it. One version is the current draft version, which you can continue to refine and improve. The second version is the published version, which you can share with your colleagues who want to query the Fabric data agent to get answers to their questions. 
 
 ## 5. Consume the Fabric data agent
 

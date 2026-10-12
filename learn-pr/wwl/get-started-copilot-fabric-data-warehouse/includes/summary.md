@@ -1,6 +1,6 @@
-In this module, we explored the foundational concepts of working with Copilot in the context of a data warehouse. We began by understanding the capabilities of Copilot Fabric and how it integrates with data warehouse workflows. We explored generating T-SQL queries, receiving intelligent code completions, and gaining actionable insights based on your warehouse schema and metadata.
+In this module, you learned about the capabilities of Copilot in Fabric Data Warehouse and how it fits into data warehouse workflows. You explored generating T-SQL queries with the chat pane, receiving code completions, using the Explain and Fix quick actions, and applying best practices that improve Copilot's accuracy.
 
-By mastering these topics, you're now equipped to effectively utilize Copilot Fabric in your data warehouse projects.
+With these skills, you can use Copilot in Fabric to write, understand, and fix T-SQL in your data warehouse projects.
 
 Learn more:
 

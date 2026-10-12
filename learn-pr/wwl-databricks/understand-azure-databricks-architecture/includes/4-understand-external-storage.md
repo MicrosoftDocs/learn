@@ -10,7 +10,7 @@ An external location specifies which storage credential to use and which **cloud
 
 :::image type="content" source="../media/storage-location-mapping.png" alt-text="Diagram explaining storage location and credential mapping." border="false" lightbox="../media/storage-location-mapping.png":::
 
-External locations can reference storage in Azure Data Lake Storage containers, AWS S3 buckets (read-only), or Cloudflare R2 buckets. For Azure Databricks workloads, you'll typically use Azure Data Lake Storage containers because they integrate natively with Unity Catalog and support both read and write operations.
+External locations can reference storage in Azure Data Lake Storage containers, AWS S3 buckets (read-only), or Cloudflare R2 buckets. For Azure Databricks workloads, you typically use Azure Data Lake Storage containers because they integrate natively with Unity Catalog and support both read and write operations.
 
 ## Why do we need external locations?
 
@@ -34,12 +34,12 @@ Before you can create external locations, you need **storage credentials**—Uni
 
 **Azure managed identities** are the recommended authentication mechanism. A managed identity is an Azure resource that provides an identity for applications connecting to resources that support Microsoft Entra ID authentication. Azure automatically manages the credential lifecycle—no passwords, no secrets to rotate, and support for storage accounts protected by network firewalls.
 
-**Service principals** are a legacy alternative. They require you to create an application identity in Microsoft Entra ID and manage client secrets manually, including periodic rotation. Managed identities are preferred for these reasons.
+**Service principals** are an alternative. They require you to create an application identity in Microsoft Entra ID and manage client secrets manually, including periodic rotation. Managed identities are preferred for these reasons.
 
 Storage credentials are metastore-level objects available to all attached workspaces. Only users with appropriate privileges can use them to create external locations.
 
 > [!NOTE]
-> A detailed walkthrough of creating and configuring external storage will be covered in a subsequent module.
+> A detailed walkthrough of creating and configuring external storage is covered in a subsequent module.
 
 ## Workspace binding for external locations
 

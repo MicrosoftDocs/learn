@@ -8,10 +8,10 @@ Common visualizations include:
 
 - **Bar chart** - Bar charts, also known as column charts, compare numeric values across categories. You can have multiple series or conditions and, like a line chart, the bar chart includes an X and Y axis. Again, it's good practice to include a title on your chart, and a legend if you have multiple series.
 
-- **Scatter chart** - You can use scatter charts when you need to compare two numeric values. Rather than using time along the X axis, you've used another field. For example, you could measure the sales of a product depending on an exchange rate, with the rate scaled along the X axis, and the sales value plotted along the Y axis. 
+- **Scatter chart** - You can use scatter charts when you need to compare two numeric values. Rather than using time along the X axis, you use another field. For example, you could measure the sales of a product depending on an exchange rate, with the rate scaled along the X axis, and the sales value plotted along the Y axis.
 
 Other visualizations, such as a map, help to show data patterns that would otherwise be hidden. The choice of chart that you use affects how the story behind the data is revealed. Dashboards are a useful tool for displaying a dataset using different visualizations to uncover trends.
 
-In this video, you'll see how data can be represented using different types of visualizations, and how easy it makes reading the patterns within a dataset:
+This video shows how data can be represented using different types of visualizations, and how this makes it easier to read the patterns within a dataset:
 
 > [!VIDEO 20f02e48-0af5-40b0-8b9d-ce1a26663261]

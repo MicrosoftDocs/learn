@@ -3,13 +3,13 @@ uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory
 metadata:
   title: Orchestrating data movement and transformation in Azure Data Factory
   description: "Orchestrate data movement and transformation in Azure Data Factory"
-  ms.date: 04/30/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module-standard-task-based
   ms.service: azure-data-factory
 title: Orchestrate data movement and transformation in Azure Data Factory
-summary: In this module, you will learn how Azure Data Factory can orchestrate large scale data movement by using other Azure Data Platform and Machine Learning technologies.
+summary: In this module, you learn how Azure Data Factory can orchestrate large scale data movement by using other Azure Data Platform and Machine Learning technologies.
 abstract: |
   * Introduction
   * Understand data factory control flow

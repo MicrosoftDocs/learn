@@ -5,5 +5,5 @@ With Microsoft Fabric data agents, users can ask questions about their data in p
 ## Best practices
 
 - Use clear, domain-specific instructions.
-- Integrate with Microsoft Foundry for advanced AI capabilities and secure, permission-based data access.
+- Integrate with Microsoft Foundry to use Fabric data agents in Foundry agents with secure, permission-based data access.
 - Use Copilot in Power BI to support natural language interactions with Fabric resources.

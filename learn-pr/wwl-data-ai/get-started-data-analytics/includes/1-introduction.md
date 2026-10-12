@@ -2,7 +2,7 @@ Viewing data in its raw format rarely provides useful insights into the patterns
 
 ## Learning objectives
 
-After completing this module, you'll be able to:
+After completing this module, you're able to:
 
 - Describe data aggregation.
 - Describe grouping of data.

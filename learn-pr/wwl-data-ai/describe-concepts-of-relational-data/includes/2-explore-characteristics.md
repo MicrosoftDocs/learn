@@ -1,6 +1,6 @@
 One of the main benefits of computer databases is that they make it easy to store information so it's quick and easy to find. For example, an ecommerce system might use a database to record information about the products an organization sells, and the details of customers and the orders they've placed. A relational database provides a model for storing the data, and a query capability that enables you to retrieve data quickly.
 
-In this unit, you'll learn more about the characteristics of relational data, and how you can store this information and query it in a relational database.
+In this unit, you learn more about the characteristics of relational data, and how you can store this information and query it in a relational database.
 
 ## Understand the characteristics of relational data
 
@@ -42,7 +42,7 @@ SELECT CustomerID, CustomerName, CustomerAddress
 FROM Customers
 ```
 
-Rather than retrieve every row, you can filter data by using a *WHERE* clause. The next query fetches the order ID and product ID for all orders placed by customer 1.
+Rather than retrieve every row, you can filter data by using a *WHERE* clause. The next query fetches the order ID and product ID for all orders placed by customer C1.
 
 ```SQL
 SELECT OrderID, ProductID
@@ -66,7 +66,7 @@ You can find full details about SQL on the Microsoft website, on the [Structured
 
 You can use a relational database any time you can easily model your data as a collection of tables with a fixed set of columns. In theory, you could model almost any dataset in this way, but some scenarios lend themselves to the relational model better than others.
 
-For example, if you have a collection of music, video, or other media files, attempting to force this data into the relational model could be difficult. You may be better off using unstructured storage, such as that available in Azure Blob storage. Similarly, social networking sites use databases to store data about millions of users, each of whom can be linked to any number of other users in a highly complex web of relationships. This type of data lends itself more to a graph database structure rather than a collection of relational tables.
+For example, if you have a collection of music, video, or other media files, attempting to force this data into the relational model could be difficult. You may be better off using unstructured storage, such as that available in Azure Blob Storage. Similarly, social networking sites use databases to store data about millions of users, each of whom can be linked to any number of other users in a highly complex web of relationships. This type of data lends itself more to a graph database structure rather than a collection of relational tables.
 
 Relational databases are commonly used in ecommerce systems, but one of the major use cases for using relational databases is Online Transaction Processing (OLTP). OLTP applications are focused on transaction-oriented tasks that process a very large number of transactions per minute. Relational databases are well suited for OLTP applications because they naturally support insert, update, and delete operations. A relational database can often be tuned to make these operations fast. Also, the nature of SQL makes it easy for users to perform ad-hoc queries over data.
 

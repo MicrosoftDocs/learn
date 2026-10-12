@@ -9,6 +9,6 @@ You have explored:
 ## Learn more
 
 - [Create reports and dashboards in Power BI - documentation](/power-bi/create-reports/)
-- [Azure Databricks](https://azure.microsoft.com/services/databricks/)
+- [What is Azure Databricks?](/azure/databricks/introduction/)
 - [Azure AI Services](/azure/ai-services/what-are-ai-services)
 - [Extract, transform, and load (ETL)](/azure/architecture/data-guide/relational-data/etl)

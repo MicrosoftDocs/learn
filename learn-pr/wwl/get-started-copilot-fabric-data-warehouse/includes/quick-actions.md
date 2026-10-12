@@ -43,4 +43,4 @@ GROUP BY
 
 ## Summary
 
-The **Explain** and **Fix** quick actions in Copilot are powerful tools for simplifying SQL query development and debugging. By using these features, you can enhance your productivity and gain deeper insights into your queries.
+The **Explain** and **Fix** quick actions in Copilot help simplify SQL query development and debugging. By using these features, you can understand your queries faster and resolve errors more efficiently.

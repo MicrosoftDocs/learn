@@ -8,11 +8,11 @@ The workflow usually follows three steps:
    
 3. **Write** the results back to storage in a chosen format.
 
-Working with files in Spark is designed to be consistent across small and large datasets. The same code used to test a small CSV file will also work on much larger datasets, since Spark distributes the work across the cluster. This makes it easier to scale up from quick exploration to more complex data processing.
+Working with files in Spark is designed to be consistent across small and large datasets. The same code used to test a small CSV file also works on much larger datasets, since Spark distributes the work across the cluster. This makes it easier to scale up from quick exploration to more complex data processing.
 
 ## Loading data into a dataframe
 
-Let's explore a hypothetical example to see how you can use a dataframe to work with data. Suppose you have the following data in a comma-delimited text file named **products.csv** stored in a Unity Catalog volume:
+Consider a hypothetical example to see how you can use a dataframe to work with data. Suppose you have the following data in a comma-delimited text file named **products.csv** stored in a Unity Catalog volume:
 
 ```csv
 ProductID,ProductName,Category,ListPrice
@@ -25,26 +25,27 @@ ProductID,ProductName,Category,ListPrice
 In a Spark notebook, you could use the following PySpark code to load the data into a dataframe and display the first 10 rows:
 
 ```python
-%pyspark
+%python
 df = spark.read.load('/Volumes/my_catalog/my_schema/my_volume/products.csv',
     format='csv',
-    header=True
+    header=True,
+    inferSchema=True
 )
 display(df.limit(10))
 ```
 
-The `%pyspark` line at the beginning is called a *magic*, and tells Spark that the language used in this cell is PySpark. Here's the equivalent Scala code for the products data example:
+The `%python` line at the beginning is called a *magic*, and tells Spark that the language used in this cell is Python. Here's the equivalent Scala code for the products data example:
 
 ```scala
-%spark
-val df = spark.read.format("csv").option("header", "true").load("/Volumes/my_catalog/my_schema/my_volume/products.csv")
+%scala
+val df = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("/Volumes/my_catalog/my_schema/my_volume/products.csv")
 display(df.limit(10))
 ```
 
 > [!NOTE]
-> Files in Azure Databricks are accessed via Unity Catalog volumes using paths in the format `/Volumes/<catalog>/<schema>/<volume>/<path>`. This is the recommended pattern for file storage and access. DBFS (`/data/...`) is a legacy approach and no longer recommended.
+> Files in Azure Databricks are accessed via Unity Catalog volumes using paths in the format `/Volumes/<catalog>/<schema>/<volume>/<path>`. This is the recommended pattern for file storage and access. The DBFS root and DBFS mounts are deprecated and no longer recommended.
 
-The magic `%spark` is used to specify Scala.
+The magic `%scala` is used to specify Scala.
 
 > [!TIP]
 > You can also select the language you want to use for each cell in the Notebook interface.
@@ -60,7 +61,7 @@ Both of the examples shown previously would produce output like this:
 
 ## Specifying a dataframe schema
 
-In the previous example, the first row of the CSV file contained the column names, and Spark was able to infer the data type of each column from the data it contains. You can also specify an explicit schema for the data, which is useful when the column names aren't included in the data file, like this CSV example:
+In the previous example, the first row of the CSV file contained the column names, and Spark inferred the data type of each column from the data it contains because the code set the `header` and `inferSchema` options. You can also specify an explicit schema for the data, which is useful when the column names aren't included in the data file, like this CSV example:
 
 ```csv
 771,"Mountain-100 Silver, 38",Mountain Bikes,3399.9900
@@ -100,7 +101,7 @@ The results would once again be similar to:
 
 ## Filtering and grouping dataframes
 
-You can use the methods of the Dataframe class to filter, sort, group, and otherwise manipulate the data it contains. For example, the following code example uses the `select` method to retrieve the **ProductName** and **ListPrice** columns from the **df** dataframe containing product data in the previous example:
+You can use the methods of the Dataframe class to filter, sort, group, and otherwise manipulate the data it contains. For example, the following code example uses the `select` method to retrieve the **ProductID** and **ListPrice** columns from the **df** dataframe containing product data in the previous example:
 
 ```python
 pricelist_df = df.select("ProductID", "ListPrice")
@@ -137,7 +138,7 @@ The results from this code example would look something like this:
 | Road-750 Black, 52 | 539.9900 |
 | ... | ... |
 
-To group and aggregate data, you can use the `groupby` method and aggregate functions. For example, the following PySpark code counts the number of products for each category:
+To group and aggregate data, you can use the `groupBy` method and aggregate functions. For example, the following PySpark code counts the number of products for each category:
 
 ```python
 counts_df = df.select("ProductID", "Category").groupBy("Category").count()
@@ -163,7 +164,7 @@ The Dataframe API is part of a Spark library named Spark SQL, which enables data
 
 ### Creating database objects in the Spark catalog
 
-The Spark catalog is a metastore for relational data objects such as views and tables. The Spark runtime can use the catalog to seamlessly integrate code written in any Spark-supported language with SQL expressions that may be more natural to some data analysts or developers.
+The Spark catalog is a metastore for relational data objects such as views and tables. The Spark runtime can use the catalog to integrate code written in any Spark-supported language with SQL expressions that may be more natural to some data analysts or developers.
 
 One of the simplest ways to make data in a dataframe available for querying in the Spark catalog is to create a temporary view, as shown in the following code example:
 
@@ -174,11 +175,11 @@ df.createOrReplaceTempView("products")
 A *view* is temporary, meaning that it's automatically deleted at the end of the current session. You can also create *tables* that are persisted in the catalog to define a database that can be queried using Spark SQL.
 
 > [!NOTE]
-> We won't explore Spark catalog tables in depth in this module, but it's worth taking the time to highlight a few key points:
+> This module doesn't explore Spark catalog tables in depth, but it's worth highlighting a few key points:
 > 
-> - You can create an empty table by using the `spark.catalog.createTable` method. Tables are metadata structures that store their underlying data in the storage location associated with the catalog. Deleting a table also deletes its underlying data.
+> - You can create an empty table by using the `spark.catalog.createTable` method. Managed tables are metadata structures that store their underlying data in the storage location associated with the catalog. Deleting a managed table also deletes its underlying data.
 > - You can save a dataframe as a table by using its `saveAsTable` method.
-> - You can create an *external* table by using the `spark.catalog.createExternalTable` method. External tables define metadata in the catalog but get their underlying data from an external storage location; typically a folder in a data lake. Deleting an external table doesn't delete the underlying data.
+> - You can create an *external* table by specifying a storage location when you create the table, for example by using the `LOCATION` clause in SQL. External tables define metadata in the catalog but get their underlying data from an external storage location; typically a folder in a data lake. Deleting an external table doesn't delete the underlying data.
 
 ### Using the Spark SQL API to query data
 

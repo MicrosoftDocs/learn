@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 04/27/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -30,20 +30,20 @@ quiz:
     - content: "Load the parquet file into a dataframe."
       isCorrect: true
       explanation: "Correct. You can load data from files in many formats, including parquet, into a Spark dataframe."
-    - content: "Import the data into a table in a serverless SQL pool."
+    - content: "Import the data into a separate relational database."
       isCorrect: false
-      explanation: "Incorrect. You do not need to load the data into a SQL pool in order to analyze it with Spark."
+      explanation: "Incorrect. You don't need to load the data into a relational database in order to analyze it with Spark."
     - content: "Convert the data to CSV format."
       isCorrect: false
       explanation: "Incorrect. While you could load the data into Spark from a CSV file, you do not need to convert the data from parquet format in order to use it in Spark."
   - content: "You want to write code in a notebook cell that uses a SQL query to retrieve data from a view in the Spark catalog. Which magic should you use?"
     choices:
-    - content: "%spark"
+    - content: "%scala"
       isCorrect: false
-      explanation: "Incorrect. The %spark magic instructs Spark to interpret the code in the cell as Scala."
-    - content: "%pyspark"
+      explanation: "Incorrect. The %scala magic instructs Spark to interpret the code in the cell as Scala."
+    - content: "%python"
       isCorrect: false
-      explanation: "Incorrect. The %pyspark magic instructs Spark to interpret the code in the cell as Python."
+      explanation: "Incorrect. The %python magic instructs Spark to interpret the code in the cell as Python."
     - content: "%sql"
       isCorrect: true
       explanation: "Correct. The %sql magic instructs Spark to interpret the code in the cell as SQL."

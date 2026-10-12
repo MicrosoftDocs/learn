@@ -4,7 +4,7 @@ The term *data analytics* is a catch-all that covers a range of activities, each
 
 :::image type="content" source="../media/4-analytics-table.png" alt-text="Diagram of Categories of analytics.":::
 
-In this unit, you'll learn about these categories of data analytics.
+This unit describes these categories of data analytics.
 
 ## Descriptive analytics
 
@@ -24,7 +24,7 @@ Diagnostic analytics helps answer questions about why things happened. Diagnosti
 
 ## Predictive analytics
 
-Predictive analytics helps answer questions about what will happen in the future. Predictive analytics techniques use historical data to identify trends and determine if they're likely to recur. Predictive analytical tools provide valuable insight into what may happen in the future. Techniques include a variety of statistical and machine learning techniques such as neural networks, decision trees, and regression.
+Predictive analytics helps answer questions about what is likely to happen in the future. Predictive analytics techniques use historical data to identify trends and determine if they're likely to recur. Predictive analytical tools provide valuable insight into what may happen in the future. Techniques include a variety of statistical and machine learning techniques such as neural networks, decision trees, and regression.
 
 ## Prescriptive analytics
 
@@ -36,4 +36,4 @@ Cognitive analytics attempts to draw inferences from existing data and patterns,
 
 Inferences aren't structured queries based on a rules database, rather they're unstructured hypotheses gathered from a number of sources, and expressed with varying degrees of confidence. Effective cognitive analytics depends on machine learning algorithms. It uses several NLP (Natural Language Processing) concepts to make sense of previously untapped data sources, such as call center conversation logs and product reviews.
 
-Theoretically, by tapping the benefits of massive parallel/distributed computing and the falling costs of data storage and computing power, there's no limit to the cognitive development that these systems can achieve.
+Cognitive analytics benefits from massively parallel and distributed computing, and from the falling costs of data storage and computing power.

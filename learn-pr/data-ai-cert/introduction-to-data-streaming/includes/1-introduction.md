@@ -8,4 +8,4 @@ Some typical examples of streaming data workloads include:
 
 *Azure Stream Analytics* provides a cloud-based stream processing engine that you can use to filter, aggregate, and otherwise process a real-time stream of data from various sources. The results of this processing can then be used to trigger automated activity by a service or application, generate real-time visualizations, or integrate streaming data into an enterprise analytics solution.
 
-In this module, you'll learn how to get started with Azure Stream Analytics, and use it to process a stream of event data.
+In this module, you learn how to get started with Azure Stream Analytics, and use it to process a stream of event data.

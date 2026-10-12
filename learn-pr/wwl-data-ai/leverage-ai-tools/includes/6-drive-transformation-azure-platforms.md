@@ -16,7 +16,7 @@ Azure helps organizations outpace competition, build securely, and deliver diffe
 
 A unified data estate is essential for AI-driven insights and decision-making. Microsoft Azure simplifies data management, ensures compliance, and accelerates analytics with integrated solutions like:
 
-- **Microsoft Fabric**. A unified SaaS platform for data analytics, enabling ingestion, storage, and analysis in OneLake—a single, open data lake. Integrates with Power BI, Azure Synapse, and Data Factory for seamless experiences across data engineering and business intelligence.
+- **Microsoft Fabric**. A unified SaaS platform for data analytics, enabling ingestion, storage, and analysis in OneLake—a single, open data lake. Workloads such as Power BI, Data Factory, Data Engineering, Data Warehouse, and Real-Time Intelligence share the same platform, and Fabric integrates with Microsoft Foundry for AI and machine learning scenarios.
 - **Azure Databricks**. An open lakehouse architecture supporting structured and unstructured data, collaborative workflows, and built-in AI tools like Mosaic AI for model development and deployment.
 - **Azure Databases**. Scalable, secure, and AI-optimized services (Azure SQL, PostgreSQL, Cosmos DB) with vector search and Retrieval Augmented Generation (RAG) support.
 - **Microsoft Purview**. Unified data governance with metadata discovery, lineage tracking, and compliance integration across Fabric and Databricks.
@@ -46,7 +46,8 @@ Modernizing IT infrastructure unlocks agility and lays the foundation for AI inn
 Building intelligent applications is central to digital transformation. Azure offers a rich set of AI services and developer tools to create custom solutions that enhance productivity and customer engagement:
 
 - **Microsoft Foundry**: Unified platform for building, testing, and deploying AI apps and agents—bringing together models, tools, and enterprise-readiness capabilities in one environment.
-- **Azure OpenAI Service**: Access to powerful language models like GPT-4o and GPT-4 for natural language understanding and generation.
+- **Foundry Models**: A catalog of thousands of models from Microsoft, OpenAI, Anthropic, Meta, and others, including Azure OpenAI models for natural language understanding and generation. Models have published lifecycle and retirement dates, so plan to move to newer versions as older ones are retired.
+- **Foundry Agent Service**: Managed service for building, deploying, and scaling AI agents—from declarative prompt agents to hosted agents that run your own code.
 - **GitHub Copilot**: AI-assisted coding to accelerate development and automate routine tasks.
 - **Azure AI Search**: Intelligent search experiences with semantic ranking, vector search, and RAG capabilities.
 - **Azure Document Intelligence**: Extract structured data from documents for automation and decision-making.

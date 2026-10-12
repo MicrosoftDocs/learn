@@ -29,7 +29,7 @@ This query returns all combinations of `customer_id` and `email` that appear mul
 
 ### Use QUALIFY with window functions
 
-The `QUALIFY` clause provides a more elegant approach by filtering the results of window functions directly, without requiring subqueries. This approach is particularly useful when you need to see the actual duplicate rows, not just counts.
+The `QUALIFY` clause provides a simpler approach by filtering the results of window functions directly, without requiring subqueries. This approach is particularly useful when you need to see the actual duplicate rows, not just counts.
 
 ```sql
 SELECT *
@@ -93,7 +93,7 @@ Once you've identified duplicates, you can choose a resolution strategy based on
 
 ### Remove duplicates in PySpark
 
-The `dropDuplicates()` method removes duplicate rows based on specified columns, keeping only the first occurrence:
+The `dropDuplicates()` method removes duplicate rows based on specified columns and keeps one row for each combination. When rows differ in other columns, the row that remains isn't guaranteed:
 
 ```python
 df_clean = df.dropDuplicates(["customer_id", "email"])
@@ -169,7 +169,7 @@ The `how` parameter controls the behavior: `"any"` drops rows with at least one 
 The `fillna()` method replaces null values with specified defaults:
 
 ```python
-# Fill all null values with a single value
+# Fill null values with a single value (applies only to columns whose data type matches)
 df_filled = df.fillna(0)
 
 # Fill specific columns with different values

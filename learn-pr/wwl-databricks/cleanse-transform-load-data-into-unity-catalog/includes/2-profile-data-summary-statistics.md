@@ -51,9 +51,9 @@ df = spark.table("sales.transactions")
 df.describe().show()
 ```
 
-The `describe()` method returns count, mean, standard deviation, min, and max for numeric columns.
+The `describe()` method returns count, mean, standard deviation, min, and max for numeric and string columns.
 
-The output shows the table's size in bytes and row count, confirming that profiling has been performed. For Unity Catalog managed tables, predictive optimization automatically runs `ANALYZE` to keep statistics current.
+The `DESCRIBE TABLE EXTENDED` output includes a `Statistics` row that shows the table's size in bytes and, after you run `ANALYZE TABLE ... COMPUTE STATISTICS`, the row count. For Unity Catalog managed tables, predictive optimization automatically runs `ANALYZE` to keep statistics current.
 
 > [!TIP]
 > Run `ANALYZE TABLE` after bulk data loads or significant changes to ensure the query optimizer has accurate statistics for planning efficient queries.
@@ -62,10 +62,10 @@ The output shows the table's size in bytes and row count, confirming that profil
 
 Beyond SQL commands, Azure Databricks provides **data quality monitoring** in Unity Catalog—an umbrella that covers two distinct capabilities:
 
-- **Anomaly detection** monitors all tables in a schema automatically. It analyzes historical patterns to evaluate each table's freshness (how recently it was updated) and completeness (whether the expected number of rows arrived). You enable it once at the schema level in Catalog Explorer, and Azure Databricks handles the rest using intelligent scanning. Use anomaly detection for broad, automated coverage across all your tables without per-table configuration.
+- **Anomaly detection** (Public Preview) monitors all tables in a schema automatically. It analyzes historical patterns to evaluate each table's freshness (how recently it was updated) and completeness (whether the expected number of rows arrived). You enable it once at the schema level in Catalog Explorer, and Azure Databricks determines how often to scan each table. Use anomaly detection for broad, automated coverage across all your tables without per-table configuration.
 - **Data profiling** provides deep per-table statistical analysis—tracking distributions, null percentages, drift metrics, and model performance over time. You configure it individually for each table. Use data profiling for your most critical tables where you need detailed historical trends.
 
-For data engineering work focused on cleansing and quality, you'll use both: anomaly detection as an early-warning system across all tables, and data profiling for in-depth monitoring of key tables.
+For data engineering work focused on cleansing and quality, use both: anomaly detection as an early-warning system across all tables, and data profiling for in-depth monitoring of key tables.
 
 [![Diagram explains how to use data profiling in Unity Catalog.](../media/2-use-data-profiling-in-unity-catalog.png)](../media/2-use-data-profiling-in-unity-catalog.png#lightbox)
 
@@ -91,7 +91,7 @@ To create a profile in Catalog Explorer:
 4. In the **Data Quality Monitoring** dialog, in the **Data profiling** field, select **Configure**.
 5. Choose your profile type and configure options like granularity and scheduling.
 
-The profile generates two metric tables: a profile metrics table with summary statistics and a drift metrics table tracking distribution changes over time.
+The profile generates a profile metrics table with summary statistics and a drift metrics table that tracks distribution changes over time. Azure Databricks populates the drift metrics table when a baseline table or a consecutive time window is available.
 
 ### Create a profile using the API
 

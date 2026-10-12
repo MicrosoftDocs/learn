@@ -1,9 +1,9 @@
 Copilot in Fabric for Data Warehouse provides context-based T-SQL code suggestions directly in the query editor. It uses your warehouse schema and query context to offer inline completions, from finishing a line to generating larger code blocks. It can help you write SQL, reduce repetitive typing, and catch some errors. Whether you're new to SQL or experienced, Copilot can assist with routine code so you can focus on design and optimization tasks.
 
 ## Prerequisites
-To get started, ensure your administrator has enabled the Copilot tenant switch and that your capacity is in a supported region. Paid SKUs (F2 or higher or a P SKU) are required, as trial SKUs aren't supported. If your tenant settings restrict data processing to specific geographic regions, confirm that the necessary permissions are enabled.
+To get started, ensure your administrator has enabled the Copilot tenant switch and that your capacity is in a supported region. Paid SKUs (F2 or higher, or P1 or higher) are required, as trial SKUs aren't supported. If your tenant or capacity is outside the US or France, Copilot is disabled by default unless your Fabric tenant admin enables the tenant setting that allows data sent to Azure OpenAI to be processed outside your capacity's geographic region.
 
-Next, make sure you have a warehouse created in your Fabric workspace. In this learn module, we'll use the [**sample warehouse**](/fabric/data-warehouse/create-warehouse-sample) provided by Microsoft. 
+Next, make sure you have a warehouse created in your Fabric workspace. This module uses the [**sample warehouse**](/fabric/data-warehouse/create-warehouse-sample) provided by Microsoft. 
 
 ## How to use Copilot code completion
 

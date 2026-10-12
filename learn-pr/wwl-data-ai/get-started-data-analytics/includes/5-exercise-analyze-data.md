@@ -1,4 +1,4 @@
-Now let's put some of the data analysis principles and techniques you've learned into action. In this lab, you'll use Excel Online to analyze and visualize data.
+Put some of the data analysis principles and techniques you've learned into action. In this lab, you use Excel for the web to analyze and visualize data.
 
 In this lab, you analyze Rosie's lemonade sales, and create visualizations to help you gain insights from the data.
 
@@ -7,7 +7,7 @@ In this lab, you analyze Rosie's lemonade sales, and create visualizations to he
 > [!NOTE]
 > If you have completed the previous module in this learning path, you can skip this **Before you start** section and go straight to **Exercise 1: Analyze data with a PivotTable**.
 
-If you don't already have a Microsoft account (for example a `hotmail.com`, `live.com`. or `outlook.com` account), sign up for one at [https://signup.live.com](https://signup.live.com).
+If you don't already have a Microsoft account (for example a `hotmail.com`, `live.com`, or `outlook.com` account), sign up for one at [https://signup.live.com](https://signup.live.com).
 
 ### Upload the workbook to OneDrive
 
@@ -32,17 +32,17 @@ If you don't already have a Microsoft account (for example a `hotmail.com`, `liv
 
 ## Exercise 1: Analyze data with a PivotTable
 
-PivotTables are an excellent way to *slice and dice* data, summarizing numeric measures by one or more dimensions. In this exercise, you'll use a PivotTable to view the lemonade data, aggregated in various ways.
+PivotTables are an excellent way to *slice and dice* data, summarizing numeric measures by one or more dimensions. In this exercise, you use a PivotTable to view the lemonade data, aggregated in various ways.
 
 ### Create a PivotTable
 
-1. If you haven't already done so, in your web browser, navigate to [https://onedrive.live.com](https://onedrive.live.com), and sign in using your Microsoft account credentials. If you completed the previous module in this learning path, then open the **Lemonade.xlsx** workbook, otherwise open the **Lemonade-formatted.xlsx** in the folder where you uploaded it in the **Before you start** section. Your workbook should look like this:
+1. If you haven't already done so, in your web browser, navigate to [https://onedrive.live.com](https://onedrive.live.com), and sign in using your Microsoft account credentials. If you completed the previous module in this learning path, then open the **Lemonade.xlsx** workbook, otherwise open the **Lemonade_formatted.xlsx** in the folder where you uploaded it in the **Before you start** section. Your workbook should look like this:
 
-    :::image type="content" source="../media/conditional-bottom-ten.png" alt-text="Screenshot of Lemonade workbook in Excel Online.":::
+    :::image type="content" source="../media/conditional-bottom-ten.png" alt-text="Screenshot of Lemonade workbook in Excel for the web.":::
 
 2. Select any cell in the table of data, and on the **Insert** tab of the ribbon, click **PivotTable**, and create a PivotTable from your table of data in a new worksheet. Excel adds a new worksheet with a PivotTable that looks like this:
 
-    :::image type="content" source="../media/pivot-table.png" alt-text="Screenshot of an empty Pivot Table in Excel Online.":::
+    :::image type="content" source="../media/pivot-table.png" alt-text="Screenshot of an empty Pivot Table in Excel for the web.":::
 
 3. In the **PivotTable Fields** pane, select **Month**. Excel automatically adds **Month** to the **Rows** area of the PivotTable and displays the month names in chronological order.
 4. In the **PivotTable Fields** pane, select **Sales**. Excel automatically adds **Sum of Sales** to the **Values** area of the PivotTable and displays the total number (sum) of lemonade sales for each month, like this:
@@ -99,8 +99,8 @@ It can often be easier to identify trends and relationships in data by creating 
 
 2. Using the following instructions, select the cells containing the date, daily sales, and temperature values only, but **not** the **Date**, **Sum of Sales**, and **Sum of Temperature** header cells or the **Grand Total** footer cells:
     - Click cell **A4**, which should contain the date value for January 1 2017.
-    - Then press SHIFT + CTRL + **&#8680;** (SHIFT + **&#8984;** + **&#8681;** on Mac OSX) to extend the selection to include the sales and temperature values.
-    - Then press SHIFT + CTRL + **&#8681;** (SHIFT + **&#8984;** + **&#8681;** on Mac OSX) to select the rows beneath the current selection.
+    - Then press SHIFT + CTRL + **&#8680;** (SHIFT + **&#8984;** + **&#8680;** on macOS) to extend the selection to include the sales and temperature values.
+    - Then press SHIFT + CTRL + **&#8681;** (SHIFT + **&#8984;** + **&#8681;** on macOS) to select the rows beneath the current selection.
     - Finally press SHIFT + **&#8679;** to de-select the grand totals.
 
 3. On the **Home** tab of the ribbon, click the **Copy** button (&#128464;) to copy the selected cells to the clipboard.
@@ -124,7 +124,7 @@ It can often be easier to identify trends and relationships in data by creating 
 
 9. Select the chart and double-click the chart title. Then in the **Chart** pane on the **Format** tab, expand **Chart Title** and change the chart title to *Sales and Temperature*:
 
-    :::image type="content" source="../media/edit-chart-title.png" alt-text="Screenshot of editing the chart title in Excel Online.":::
+    :::image type="content" source="../media/edit-chart-title.png" alt-text="Screenshot of editing the chart title in Excel for the web.":::
 
 10. Close the **Chart** pane.
 

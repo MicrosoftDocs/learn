@@ -71,18 +71,23 @@ Delta Lake also supports selective overwrites with the `REPLACE WHERE` clause, w
 ```sql
 -- Replace transactions for a specific date range
 INSERT INTO sales.transactions
-REPLACE WHERE transaction_date BETWEEN '2026-01-01' AND '2026-01-07'
+REPLACE WHERE transaction_date >= '2026-01-01' AND transaction_date <= '2026-01-07'
 SELECT * FROM staging.corrected_transactions;
 ```
 
-In PySpark, use `overwrite` mode for full table replacement:
+By default, every row that the query returns must match the `REPLACE WHERE` predicate. If any row falls outside the predicate, the statement fails and writes nothing.
+
+In PySpark, use `overwrite` mode for full table replacement, and add the `replaceWhere` option to replace only the rows that match a condition:
 
 ```python
 # Overwrite entire table
 df_refreshed.write.mode("overwrite").saveAsTable("sales.daily_summary")
 
-# Overwrite specific partition
-df_january.write.mode("overwrite").partitionBy("report_month").saveAsTable("sales.monthly_report")
+# Replace only the January 2026 rows
+(df_january.write
+    .mode("overwrite")
+    .option("replaceWhere", "report_month = '2026-01'")
+    .saveAsTable("sales.monthly_report"))
 ```
 
 > [!IMPORTANT]
@@ -101,18 +106,18 @@ INSERT INTO sales.monthly_report
   GROUP BY region, product_category, report_month;
 ```
 
-The `REPLACE USING` clause atomically deletes rows in `sales.monthly_report` that match incoming rows on `report_month`, then inserts the new rows. Rows that don't match the specified columns are left untouched. In Databricks Runtime 16.3–17.1, the `USING` columns must be the table's full set of partition columns (legacy behavior). In Databricks Runtime 17.2 and above, any columns on any table type—including unpartitioned tables and tables with liquid clustering—are supported.
+The `REPLACE USING` clause atomically deletes rows in `sales.monthly_report` that match incoming rows on `report_month`, then inserts the new rows. Rows that don't match the specified columns are left untouched. In Databricks Runtime 16.3–17.1, the `USING` columns must be the table's full set of partition columns (legacy behavior). In Databricks Runtime 17.2 and above, any columns on any table type—including unpartitioned tables and tables with liquid clustering—are supported. The SQL `REPLACE USING` clause requires Databricks Runtime 16.3 or above, and the Python and Scala `replaceUsing` option requires Databricks Runtime 18.2 or above. Because `REPLACE USING` uses regular equality, rows with `NULL` values in the `USING` columns don't match and aren't removed from the target table.
 
 When you need more flexible matching—such as replacing rows based on a custom condition or treating NULL values as equal—use `REPLACE ON` instead:
 
 ```sql
 -- Replace rows matching a user-defined condition across source and target
-INSERT INTO sales.transactions
+INSERT INTO sales.transactions AS target
   REPLACE ON (target.transaction_id = source.transaction_id)
-  SELECT * FROM staging.corrected_transactions AS source;
+  (SELECT * FROM staging.corrected_transactions) AS source;
 ```
 
-`REPLACE ON` requires Databricks Runtime 17.1 and above. Use `REPLACE WHERE` (covered earlier) when you need condition-based replacement without a source table reference.
+`REPLACE ON` requires Databricks Runtime 17.1 and above for SQL, and Databricks Runtime 18.2 and above for the Python and Scala `replaceOn` option. Use `REPLACE WHERE` (covered earlier) when you need condition-based replacement without a source table reference.
 
 ## Merge data for upsert operations
 
@@ -206,6 +211,6 @@ Your choice of loading operation depends on the relationship between source and 
 | Custom-condition row replacement | REPLACE ON | Row-level overwrites with NULL-safe or complex matching conditions |
 
 > [!IMPORTANT]
-> MERGE operations require a unique match between source and target rows. If multiple source rows match the same target row, the operation fails. Deduplicate your source data before merging.
+> MERGE operations fail if more than one source row matches the same target row, because it's unclear which source row to apply. Unconditional `DELETE` actions are the exception. Deduplicate your source data before merging.
 
 Understanding these loading patterns prepares you to build reliable data pipelines that maintain data integrity while efficiently processing both new and changed records.

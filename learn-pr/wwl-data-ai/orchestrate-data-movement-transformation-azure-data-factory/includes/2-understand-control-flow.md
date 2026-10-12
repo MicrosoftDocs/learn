@@ -33,7 +33,7 @@ The looping containers umbrella of control flow such as the ForEach activity  de
 
 ## Trigger-based flows
 
-Pipelines can be triggered by on-demand (event-based, for example, blob post) or wall-clock time.
+Pipelines can be triggered on demand (event-based, for example, blob post) or by wall-clock time.
 
 ## Invoke a pipeline from another pipeline
 
@@ -41,14 +41,14 @@ The Execute Pipeline activity with Azure Data Factory allows a Data Factory pipe
 
 ## Delta flows
 
-Use-cases related to using delta flows are delta loads. Delta loads in ETL patterns will only load data that has changed since a previous iteration of a pipeline. Capabilities such as lookup activity, and flexible scheduling helps handling delta load jobs. In the case of using a Lookup activity, it will read or look up a record or table name value from any external source. This output can further be referenced by succeeding activities.
+Use-cases related to using delta flows are delta loads. Delta loads in ETL patterns only load data that has changed since a previous iteration of a pipeline. Capabilities such as the Lookup activity and flexible scheduling help handle delta load jobs. The Lookup activity reads or looks up a record or table name value from any external source. This output can further be referenced by succeeding activities.
 
 ## Other control flows
 
 There are many more control flow activities. See the following items for other useful activities:
 
 * Web activity:
-   The web activity in Azure Data Factory using control flows, can call a custom RESTendpoint from a Data Factory pipeline.
+   The web activity in Azure Data Factory using control flows, can call a custom REST endpoint from a Data Factory pipeline.
    Datasets and linked services can be passed in order to get consumed by the activity.
 
 * Get metadata activity:

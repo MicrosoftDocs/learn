@@ -28,7 +28,24 @@ Each join type serves a specific purpose in data transformation:
 
 ### Join tables with SQL
 
-The `JOIN` clause combines tables based on a condition specified with `ON` or `USING`. Consider employee and department tables where you want to match employees to their departments:
+The `JOIN` clause combines tables based on a condition specified with `ON` or `USING`. The following examples use employee and department tables:
+
+```sql
+CREATE TEMP VIEW employee(id, name, deptno) AS
+    VALUES (105, 'Chloe', 5),
+           (103, 'Paul',  3),
+           (101, 'John',  1),
+           (102, 'Lisa',  2),
+           (104, 'Evan',  4),
+           (106, 'Amy',   6);
+
+CREATE TEMP VIEW department(deptno, deptname) AS
+    VALUES (3, 'Engineering'),
+           (2, 'Sales'),
+           (1, 'Marketing');
+```
+
+To match employees to their departments, use an inner join:
 
 ```sql
 -- Inner join: only employees with matching departments
@@ -89,7 +106,7 @@ When the join column has the same name in both DataFrames, pass the column name 
 
 ### Filter data with semi and anti joins
 
-Semi and anti joins are powerful for filtering data based on existence in another table. A semi join returns rows from the left table that have matches, without including columns from the right table:
+Semi and anti joins filter data based on existence in another table. A semi join returns rows from the left table that have matches, without including columns from the right table:
 
 ```sql
 -- Find employees who belong to listed departments

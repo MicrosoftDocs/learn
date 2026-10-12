@@ -1,4 +1,4 @@
-Integrating **Microsoft Foundry Agents** with **Microsoft Fabric data agents** enables organizations to use advanced data analysis and conversational AI capabilities. By connecting these two services, you can expose enterprise data through interactive Q&A, allowing users to explore and retrieve information via natural language.
+Integrating **Microsoft Foundry Agents** with **Microsoft Fabric data agents** enables organizations to combine data analysis and conversational AI. By connecting these two services, you can expose enterprise data through interactive Q&A, allowing users to explore and retrieve information via natural language.
 
 ## Why integrate Microsoft Foundry with Fabric Data Agents?
 
@@ -8,18 +8,21 @@ With **Identity Passthrough** (On-Behalf-Of) authorization, all data access is g
 
 The integration also reduces the steps required to **connect AI agents to enterprise data**, lowering development effort and complexity.
 
+> [!NOTE]
+> This integration is currently in preview.
+
 ## Prerequisites
 
 Before you begin, make sure that:
 
 - You have created and **published** a Fabric data agent endpoint.
-- Developers and end users in Microsoft Foundry have at least the **Azure AI User** RBAC role assigned.
+- Developers and end users in Microsoft Foundry have at least the **Foundry User** Azure RBAC role assigned (previously named **Azure AI User**).
 - Developers and end users have at least **read access** to the Fabric data agent.
 - Developers and end users have the minimum permission on each underlying data source:
 
   | Data source | Minimum permission |
   |---|---|
-  | Power BI semantic model | **Build** (includes Read). Read alone isn't sufficient because the agent generates model queries that require Build. |
+  | Power BI semantic model | **Read**. Row-level security and column-level security continue to apply. |
   | Lakehouse | Read on the lakehouse item |
   | Warehouse | Read (SELECT on relevant tables) |
   | KQL database | Reader role on the database |
@@ -52,7 +55,7 @@ Under the “Knowledge” section, select “Add” and choose “Microsoft Fabr
 
 Follow the prompts to add the Fabric tool. You can only add one Fabric tool per agent.
 
-To connect, you’ll need the workspace-id and artifact-id from your published Fabric data agent endpoint (for example, `https://fabric.microsoft.com/groups/<workspace_id>/aiskills/<artifact-id>`).
+To connect, you need the workspace-id and artifact-id from your published Fabric data agent endpoint (for example, `https://fabric.microsoft.com/groups/<workspace_id>/aiskills/<artifact-id>`).
 
 > [![Screenshot of creating a connection in Microsoft Foundry agent.](../media/ai-foundry-agent-create-connection.png)](../media/ai-foundry-agent-create-connection.png#lightbox)
 

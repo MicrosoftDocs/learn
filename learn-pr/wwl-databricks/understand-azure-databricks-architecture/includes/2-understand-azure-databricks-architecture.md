@@ -39,9 +39,7 @@ The separation between control and compute planes allows Azure Databricks to man
 
 ## Workspace storage
 
-Workspace storage is handled differently depending on your workspace type. **Classic workspaces** have an associated **workspace storage account** that resides in your Azure subscription. **Serverless workspaces** use **default storage**—a fully managed storage location within your Azure Databricks account, not in your own Azure subscription. You'll explore default storage in detail in a later unit.
-
-:::image type="content" source="../media/workspace-storage.png" alt-text="Diagram showing workspace storage." border="false" lightbox="../media/workspace-storage.png":::
+Workspace storage is handled differently depending on your workspace type. **Classic workspaces** have an associated **workspace storage account** that resides in your Azure subscription. **Serverless workspaces** use **default storage**—a fully managed storage location within your Azure Databricks account, not in your own Azure subscription. A later unit covers default storage in detail.
 
 Regardless of workspace type, workspace storage contains two categories of data.
 

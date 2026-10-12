@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 04/03/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -21,7 +21,7 @@ quiz:
       explanation: "That's correct. Relational databases contain structured data in tables."
     - content: "Semi-structured"
       isCorrect: false
-      explanation: "That's incorrect. Semi-structured data is typically stored in NoSQL data stores, such as Azure Cosmos DB."
+      explanation: "That's incorrect. Semi-structured data, such as JSON, doesn't follow a fixed table schema, and is often stored in NoSQL data stores such as Azure Cosmos DB."
     - content: "Unstructured"
       isCorrect: false
       explanation: "That's incorrect. Unstructured data may be stored in a relational database, but a table isn't unstructured."

@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 03/27/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -36,7 +36,7 @@ quiz:
       explanation: "That's correct. Comments help Copilot understand what you want to generate."
     - content: "By renaming your database tables."
       isCorrect: false
-      explanation: "Sorry, that's incorrect. Table names don't directly guide Copilot in this way."
+      explanation: "Sorry, that's incorrect. Renaming tables doesn't describe the intent of a specific query. Use comments to state that intent."
   - content: "What does the 'Explain' quick action do in the SQL query editor?"
     choices:
     - content: "It executes the query and explains the results."

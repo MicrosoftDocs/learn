@@ -21,7 +21,7 @@ Here's an example of how you can interact with Copilot in the Fabric Warehouse e
 > [!div class="mx-imgBorder"]
 > [![Screenshot of copilot in a Fabric Warehouse editor.](../media/copilot-data-warehouse.png)](../media/copilot-data-warehouse.png#lightbox)
 
-We’ll explore this topic in more detail in a later module.
+A later module explores this topic in more detail.
 
 ## Benefits
 
@@ -29,5 +29,5 @@ Using Copilot for Data Warehouse can support SQL workflows. Key areas where it c
 
 - **Efficiency**: Automates parts of query generation and provides code completions.  
 - **Accessibility**: Allows you to interact with the data warehouse using natural language, reducing the need for advanced SQL knowledge.  
-- **Error reduction**: Offers quick fixes and explanations for SQL queries, helping you debug and optimize their code.  
+- **Error reduction**: Offers quick fixes and explanations for SQL queries, helping you debug and optimize your code.  
 - **Privacy**: Operates based on schema and metadata without accessing the actual data, ensuring data security.  

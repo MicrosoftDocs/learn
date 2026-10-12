@@ -42,7 +42,7 @@ Data engineers are responsible for designing and implementing relational data wa
 
 A lakehouse combines the scalability of a data lake with the querying capabilities of a data warehouse. Rather than maintaining two separate systems—one for raw file storage and one for structured analytics—a lakehouse stores all data in a single location using the Delta Lake format, which provides ACID transactions, schema enforcement, and support for both structured and unstructured data.
 
-This means data engineers can use Apache Spark and notebooks to ingest and transform raw data, while analysts can query the same data using familiar SQL tools—without moving data between systems. The lakehouse architecture has become central to modern data engineering on Microsoft Azure, and is the primary data store pattern used in Microsoft Fabric.
+This means data engineers can use Apache Spark and notebooks to ingest and transform raw data, while analysts can query the same data using familiar SQL tools—without moving data between systems. The lakehouse architecture is a core pattern in Microsoft Fabric.
 
 ## Apache Spark
 
