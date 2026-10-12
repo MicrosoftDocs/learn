@@ -15,21 +15,21 @@ In addition to Azure SQL services, Azure data services are available for other p
 
 MySQL and PostgreSQL are relational database management systems that are tailored for different specializations.
 
-MySQL started life as a simple-to-use open-source database management system. It's the leading open source relational database for *Linux, Apache, MySQL, and PHP* (LAMP) stack apps. It's available in several editions; Community, Standard, and Enterprise. The Community edition is available free-of-charge, and has historically been popular as a database management system for web applications, running under Linux. Versions are also available for Windows. Standard edition offers higher performance, and uses a different technology for storing data. Enterprise edition provides a comprehensive set of tools and features, including enhanced security, availability, and scalability. The Standard and Enterprise editions are the versions most frequently used by commercial organizations, although these versions of the software aren't free.
+MySQL started life as a simple-to-use open-source database management system. It's a popular open source relational database for *Linux, Apache, MySQL, and PHP* (LAMP) stack apps. It's available in several editions; Community, Standard, and Enterprise. The Community edition is available free-of-charge, and has historically been popular as a database management system for web applications, running under Linux. Versions are also available for Windows. Enterprise edition provides a comprehensive set of tools and features, including enhanced security, availability, and scalability. The Standard and Enterprise editions are commercial versions of the software and aren't free.
 
-PostgreSQL is a hybrid relational-object database. You can store data in relational tables, but a PostgreSQL database also enables you to store custom data types, with their own nonrelational properties. The database management system is extensible; you can add code modules to the database, which can be run by queries. Another key feature is the ability to store and manipulate geometric data, such as lines, circles, and polygons.
+PostgreSQL is an object-relational database. You can store data in relational tables, but a PostgreSQL database also enables you to store custom data types, with their own nonrelational properties. The database management system is extensible; you can add code modules to the database, which can be run by queries. Another key feature is the ability to store and manipulate geometric data, such as lines, circles, and polygons.
 
-PostgreSQL has its own query language called *pgsql*. This language is a variant of the standard relational query language, SQL, with features that enable you to write stored procedures that run inside the database.
+PostgreSQL has its own procedural language called *PL/pgSQL*. This language extends the standard relational query language, SQL, with features that enable you to write stored procedures that run inside the database.
 
 ## Azure Database for MySQL
 
 Azure Database for MySQL is a PaaS implementation of MySQL in the Azure cloud, based on the MySQL Community Edition.
 
-The Azure Database for MySQL service includes high availability at no additional cost, and scalability as required. You only pay for what you use. Automatic backups are provided, with point-in-time restore for up to 35 days (seven days by default).
+The Azure Database for MySQL service supports high availability with automatic failover, and scalability as required. You only pay for what you use. Automatic backups are provided, with point-in-time restore for up to 35 days (seven days by default).
 
-The server provides connection security to enforce firewall rules and, optionally, require SSL connections. Many server parameters enable you to configure server settings such as lock modes, maximum number of connections, and timeouts.
+The server provides connection security to enforce firewall rules and, optionally, require TLS connections. Many server parameters enable you to configure server settings such as lock modes, maximum number of connections, and timeouts.
 
-Azure Database for MySQL provides a global database system that scales up to large databases without the need to manage hardware, network components, virtual servers, software patches, and other underlying components.
+Azure Database for MySQL scales to large databases without the need to manage hardware, network components, virtual servers, software patches, and other underlying components.
 
 Certain operations aren't available with Azure Database for MySQL. These functions are primarily concerned with security and administration. Azure manages these aspects of the database server itself.
 
@@ -50,13 +50,13 @@ Azure Database for MySQL servers provides monitoring functionality to add alerts
 
 ### Azure Database for MySQL Flexible Server
 
-The flexible-server deployment option is a fully managed database service designed to provide more granular control and flexibility over database management functions and configuration settings. It provides cost optimization controls and is the recommended deployment option for new workloads. With an Azure free account, you can use Flexible Server free for 12 months.
+The flexible-server deployment option is a fully managed database service designed to provide more granular control and flexibility over database management functions and configuration settings. It provides cost optimization controls. With an Azure free account, you can use Flexible Server free for 12 months.
 
 ## Azure Database for PostgreSQL
 
 If you prefer PostgreSQL, you can choose Azure Database for PostgreSQL to run a PaaS implementation of PostgreSQL in the Azure Cloud. This service provides the same availability, performance, scaling, security, and administrative benefits as the MySQL service.
 
-Some features of on-premises PostgreSQL databases aren't available in Azure Database for PostgreSQL. These features are mostly concerned with the extensions that users can add to a database to perform specialized tasks, such as writing stored procedures in various programming languages (other than pgsql, which is available), and interacting directly with the operating system. A core set of the most frequently used extensions is supported, and the list of available extensions is under continuous review.
+Some features of on-premises PostgreSQL databases aren't available in Azure Database for PostgreSQL. These features are mostly concerned with the extensions that users can add to a database to perform specialized tasks. Azure Database for PostgreSQL supports a set of extensions and modules. For the current list, see [Extensions and modules in Azure Database for PostgreSQL](/azure/postgresql/extensions/concepts-extensions-by-engine).
 
 ### Azure Database for PostgreSQL Flexible Server
 
@@ -68,6 +68,6 @@ Azure Database for PostgreSQL is a highly available service. It contains built-i
 
 Users of PostgreSQL are familiar with the **pgAdmin** tool, which you can use to manage and monitor a PostgreSQL database. You can continue to use this tool to connect to Azure Database for PostgreSQL. However, some server-focused functionality, such as performing server backup and restore, aren't available because the server is managed and maintained by Microsoft.
 
-Azure Database for PostgreSQL records information about queries run against databases on the server, and saves them in a database named *azure_sys*. You query the *query_store.qs_view* view to see this information, and use it to monitor the queries that users are running. This information can prove invaluable if you need to fine-tune the queries performed by your applications.
+When you enable query store, Azure Database for PostgreSQL records information about queries run against databases on the server, and saves them in a database named *azure_sys*. You query the *query_store.qs_view* view to see this information, and use it to monitor the queries that users are running. This information can help you fine-tune the queries performed by your applications.
 
 ::: zone-end
