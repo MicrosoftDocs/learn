@@ -49,9 +49,7 @@ The **Copilot and Azure OpenAI Service** tenant settings group includes addition
 The **Users can access a standalone, cross-item Power BI Copilot experience** setting enables a full-screen Copilot experience accessible from the Power BI left navigation bar. Users can ask questions about any report, semantic model, or Fabric data agent they have permission to access—without opening a specific report first. This setting also enables the **Power BI agent** in Microsoft 365.
 
 > [!IMPORTANT]
-> As of September 2025, this setting is **enabled by default** for all tenants where Copilot is already turned on. To opt out and hide the Copilot icon from the left navigation, an admin must turn this setting off manually. The standalone experience requires the main Copilot setting to be enabled at the **tenant level** (not just at the capacity level). The experience is only available for tenants in supported Fabric regions.
-
-**Default:** Enabled (as of September 2025)
+> This setting is in preview, and its default state has changed over time. Check the setting in your tenant before rollout. To hide the Copilot icon from the left navigation, an admin turns this setting off. The standalone experience requires the main Copilot setting to be enabled at the **tenant level** (not just at the capacity level). The experience is only available for tenants in supported Fabric regions.
 
 The **Only show approved items in the standalone Copilot in Power BI experience** setting restricts the standalone Copilot search to items explicitly marked as **Approved for Copilot** by content owners. Tenant admins can enable this to limit exposure; workspace admins can then broaden content availability for their own workspaces. This setting applies to both the standalone Copilot experience and the Power BI agent.
 

@@ -8,7 +8,7 @@ Copilot for Microsoft Fabric is an AI-based assistant embedded within Microsoft 
 
 ## Data teams and Microsoft Copilot for Microsoft Fabric
 
-Copilot brings new ways to transform and analyze data, generate insights, and create visualizations and reports in Microsoft Fabric and Power BI. Core Copilot experiences for Power BI—including the report Copilot pane, narrative visuals, and report summarization—are generally available. Copilot experiences across other Fabric workloads, such as Data Factory, Data Engineering, Data Science, Data Warehouse, and Real-Time Intelligence, remain in preview and aren't intended for production use. These capabilities are designed to empower all data practitioners, including:
+Copilot brings new ways to transform and analyze data, generate insights, and create visualizations and reports in Microsoft Fabric and Power BI. Core Copilot experiences for Power BI—including the report Copilot pane, narrative visuals, and report summarization—are generally available, as are Copilot experiences for Data Factory, Real-Time Intelligence, and SQL database. Copilot experiences for Data Engineering, Data Science, and Data Warehouse are in preview. Release status changes over time, so check [Release status of AI and Copilot experiences in Fabric](/fabric/fundamentals/copilot-ai-feature-state) before you plan a production rollout. These capabilities are designed to support all data practitioners, including:
 
 **Data engineers** can ingest, transform, and load large amounts of data into OneLake and present it in whichever data store makes most sense. Data loading patterns are simplified by using natural language to articulate your requirements for creating data integration solutions using Dataflow Gen2.
 
@@ -21,4 +21,4 @@ Copilot brings new ways to transform and analyze data, generate insights, and cr
 **Low-to-no-code users** and **citizen developers** can now answer data questions in Power BI and create DAX (Data Analysis Expressions) queries without being dependent on data engineers.
 
 > [!IMPORTANT]
-> Copilot in Fabric aims to *augment* the abilities and intelligence of human users. Copilot can't and doesn't aim to *replace* the people who today create and manage reports or other Fabric items. To get the most out of Copilot in Fabric, you should consider how you'll enable these individuals and teams to make their work more efficient or improve their outcomes.
+> Copilot in Fabric aims to *augment* the abilities and intelligence of human users. Copilot can't and doesn't aim to *replace* the people who today create and manage reports or other Fabric items. To get the most out of Copilot in Fabric, consider how you enable these individuals and teams to make their work more efficient or improve their outcomes.
