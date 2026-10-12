@@ -4,6 +4,7 @@ In this module, you learned how to:
 
 - Understand data streams.
 - Understand event processing.
+- Understand window functions.
 - Get started with Azure Stream Analytics.
 
 To learn more about the capabilities of Azure Stream Analytics, see the [Azure Stream Analytics documentation](/azure/stream-analytics/).

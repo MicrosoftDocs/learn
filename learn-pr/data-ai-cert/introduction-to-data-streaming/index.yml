@@ -3,7 +3,7 @@ uid: learn.data-ai.introduction-to-data-streaming
 metadata:
   title: Get Started With Azure Stream Analytics
   description: "Get started with Azure Stream Analytics"
-  ms.date: 04/03/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module-standard-task-based
@@ -11,7 +11,7 @@ metadata:
 title: Get started with Azure Stream Analytics
 summary: Azure Stream Analytics enables you to process real-time data streams and integrate the data they contain into applications and analytical solutions.
 abstract: |
-  In this module, you'll learn how to:
+  In this module, you learn how to:
   - Understand data streams.
   - Understand event processing.
   - Understand window functions.
