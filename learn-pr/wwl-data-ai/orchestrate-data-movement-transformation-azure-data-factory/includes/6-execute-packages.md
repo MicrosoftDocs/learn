@@ -1,4 +1,4 @@
-Azure Data Factory enables you to execute packages for SSIS. With Azure Data Factory, you can provision an Azure-SQL Server Integration Services (SSIS) integration runtime (IR).
+Azure Data Factory enables you to execute SQL Server Integration Services (SSIS) packages. With Azure Data Factory, you can provision an Azure-SSIS integration runtime (IR).
 
 An Azure-SSIS IR supports:
 
