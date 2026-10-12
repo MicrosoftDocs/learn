@@ -7,7 +7,7 @@ The data a company uses can come from many sources. There could be a mass of his
 > [!NOTE]
 > *Wrangling* is the process by which you transform and map raw data into a more useful format for analysis. It can involve writing code to capture, filter, clean, combine, and aggregate data from many sources.
 
-In this unit, you'll learn about two important stages in data analytics: data ingestion, and data processing. The diagram below shows how these stages fit together. 
+This unit describes two important stages in data analytics: data ingestion, and data processing. The diagram below shows how these stages fit together. 
 
 > [!div class="mx-imgBorder"]
 > ![Diagram of A typical data analytics architecture depicting data ingestion, processing, and exploration.](../media/2-data-process.png)
@@ -40,12 +40,12 @@ The data processing mechanism can take two approaches to retrieving the ingested
 ETL stands for *Extract, Transform, and Load*. The raw data is retrieved and transformed before being saved. The extract, transform, and load steps can be performed as a continuous pipeline of operations. It is suitable for systems that only require simple models, with little dependency between items. For example, this type of process is often used for basic data cleaning tasks, deduplicating data, and reformatting the contents of individual fields.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram of Image showing the ETL process.](../media/2-extract-transform-load.png)
+> ![Diagram showing the ETL process.](../media/2-extract-transform-load.png)
 
 An alternative approach is *ELT*. ELT is an abbreviation of *Extract, Load, and Transform*. The process differs from ETL in that the data is stored before being transformed. The data processing engine can take an iterative approach, retrieving and processing the data from storage, before writing the transformed data and models back to storage. ELT is more suitable for constructing complex models that depend on multiple items in the database, often using periodic batch processing.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram of Image showing the ELT process.](../media/2-extract-load-transform.png)
+> ![Diagram showing the ELT process.](../media/2-extract-load-transform.png)
 
 ELT is a scalable approach that is suitable for the cloud because it can make use of the extensive processing power available. The more stream-oriented approach of ETL places more emphasis on throughput. However, ETL can filter data before it's stored. In this way, ETL can help with data privacy and compliance, removing sensitive data before it arrives in your analytical data models.
 
