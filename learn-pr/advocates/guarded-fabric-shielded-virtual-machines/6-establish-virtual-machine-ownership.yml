@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.guarded-fabrics-shielded-virtual-machines.establish-virtual-machine-ownership
+title: Establish virtual machine ownership
+metadata:
+  title: Establish Virtual Machine Ownership
+  description: Separate owner and fabric guardians, protect private keys, update existing key protectors, and preserve recovery artifacts.
+  ms.date: 10/08/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-establish-virtual-machine-ownership.md)]

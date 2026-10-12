@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1230" viewBox="0 0 1100 1230" role="img" aria-labelledby="title description">
+  <title id="title">Guarded-fabric recovery dependency order</title>
+  <desc id="description">Six numbered recovery stages proceed downward. Start with clean independent recovery authority and protected key and backup materials. Restore power, network, DNS, time, and required AD identity services. Rebuild and initialize HGS, restore approved state, and recover every node's private-key access and TLS configuration. Establish host and storage readiness and test attestation. Restore a consistent VM, key protector, vTPM state, disks, and checkpoint set while inspecting old authorization. Finally the owner verifies guest and application recovery, encryption, recovery point, and recovery time. Avoid dependencies on the same unavailable shielded VMs.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#155a86"/>
+    </marker>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; fill: #172b4d; }
+      .title { font-size: 30px; font-weight: 700; }
+      .heading { font-size: 25px; font-weight: 700; }
+      .body { font-size: 21px; }
+      .card { fill: #eef5fb; stroke: #286086; stroke-width: 2; }
+      .protected { fill: #edf7f2; stroke: #28624a; stroke-width: 2; }
+      .connector { stroke: #155a86; stroke-width: 3; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect id="background" x="0" y="0" width="1100" height="1230" fill="#ffffff"/>
+  <text class="title" x="40" y="52">Recover dependencies before protected workloads</text>
+  <text class="body" x="40" y="86">Restore usable cryptography and intended trust, not merely a successful boot.</text>
+
+  <g class="node" id="step-1">
+    <rect class="protected" x="60" y="120" width="980" height="135" rx="8"/>
+    <text class="heading" x="84" y="157">1. Establish clean recovery authority and materials</text>
+    <text class="body" x="84" y="195">Retrieve approved HGS state, private keys, original PDKs, and VM backups.</text>
+    <text class="body" x="84" y="229">Keep owner authority independent of compromised fabric administration.</text>
+  </g>
+  <line class="connector" x1="550" y1="265" x2="550" y2="285"/>
+  <g class="node" id="step-2">
+    <rect class="card" x="60" y="295" width="980" height="135" rx="8"/>
+    <text class="heading" x="84" y="332">2. Restore foundational services</text>
+    <text class="body" x="84" y="370">Provide power, network, DNS, time, and the required AD identity services.</text>
+    <text class="body" x="84" y="404">Recovery must not depend on starting the same unavailable shielded VMs.</text>
+  </g>
+  <line class="connector" x1="550" y1="440" x2="550" y2="460"/>
+  <g class="node" id="step-3">
+    <rect class="card" x="60" y="470" width="980" height="135" rx="8"/>
+    <text class="heading" x="84" y="507">3. Rebuild and restore clean HGS</text>
+    <text class="body" x="84" y="545">Initialize the service, import reviewed state, and recover private-key access.</text>
+    <text class="body" x="84" y="579">Reestablish TLS and service identities; verify every node independently.</text>
+  </g>
+  <line class="connector" x1="550" y1="615" x2="550" y2="635"/>
+  <g class="node" id="step-4">
+    <rect class="card" x="60" y="645" width="980" height="135" rx="8"/>
+    <text class="heading" x="84" y="682">4. Establish host and storage readiness</text>
+    <text class="body" x="84" y="720">Use known-clean hosts, correct security policy, and available storage.</text>
+    <text class="body" x="84" y="754">Prove host attestation and the intended key-release path.</text>
+  </g>
+  <line class="connector" x1="550" y1="790" x2="550" y2="810"/>
+  <g class="node" id="step-5">
+    <rect class="card" x="60" y="820" width="980" height="135" rx="8"/>
+    <text class="heading" x="84" y="857">5. Restore a consistent VM recovery point</text>
+    <text class="body" x="84" y="895">Preserve configuration, KP, vTPM state, disks, and checkpoint relationships.</text>
+    <text class="body" x="84" y="929">Inspect old guardians; do not silently restore withdrawn or compromised trust.</text>
+  </g>
+  <line class="connector" x1="550" y1="965" x2="550" y2="985"/>
+  <g class="node" id="step-6">
+    <rect class="protected" x="60" y="995" width="980" height="135" rx="8"/>
+    <text class="heading" x="84" y="1032">6. Owner verifies workload recovery</text>
+    <text class="body" x="84" y="1070">Check guest identity, application consistency, and OS/data-volume protection.</text>
+    <text class="body" x="84" y="1104">Measure achieved recovery point and time against the approved objectives.</text>
+  </g>
+  <text class="body" x="40" y="1178">An HGS export does not automatically recover external HSM keys, AD, or TLS.</text>
+  <text class="body" x="40" y="1210">Owner guest recovery is a separate authority and procedure.</text>
+</svg>

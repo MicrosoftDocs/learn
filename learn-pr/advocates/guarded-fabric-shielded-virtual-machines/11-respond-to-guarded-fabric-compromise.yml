@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.guarded-fabrics-shielded-virtual-machines.respond-to-guarded-fabric-compromise
+title: Respond to guarded-fabric compromise
+metadata:
+  title: Respond to Guarded-Fabric Compromise
+  description: Contain compromised hosts, withdraw authorization across primary and fallback services, and respond to service-key or owner-key compromise.
+  ms.date: 10/08/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/11-respond-to-guarded-fabric-compromise.md)]

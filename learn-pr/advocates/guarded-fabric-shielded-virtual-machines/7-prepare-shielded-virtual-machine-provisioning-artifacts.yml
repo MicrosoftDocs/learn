@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.guarded-fabrics-shielded-virtual-machines.prepare-shielded-virtual-machine-provisioning-artifacts
+title: Prepare shielded virtual machine provisioning artifacts
+metadata:
+  title: Prepare Shielded Virtual Machine Provisioning Artifacts
+  description: Prepare signed virtual machine templates, create owner-approved shielding data, and define secure fabric specialization inputs.
+  ms.date: 10/08/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-prepare-shielded-virtual-machine-provisioning-artifacts.md)]

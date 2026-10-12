@@ -1,8 +1,8 @@
 The concurrent orchestration pattern is appropriate when you need multiple AI agents to run simultaneously on the same task. You choose this approach when each agent needs to provide independent analysis or processing from its unique perspective or specialization.
 
-The concurrent orchestration pattern has all agents work in parallel. Each agent can independently produce its own results within the workload, such as invoking tools to accomplish tasks or updating different data stores in parallel. Agents operate independently and don't hand off results to each other. An agent might invoke extra AI agents by using its own orchestration approach as part of its independent processing. The available agents must know which agents are available for processing. This pattern supports both deterministic calls to all registered agents and dynamic selection of which agents to invoke based on the task requirements.
+The concurrent orchestration pattern has all agents work in parallel. Each agent can independently produce its own results within the workload, such as invoking tools to accomplish tasks or updating different data stores in parallel. Agents operate independently and don't hand off results to each other. An agent might invoke extra AI agents by using its own orchestration approach as part of its independent processing. The orchestrator must know which agents it can invoke; individual worker agents don't need to know which other workers participate. This pattern supports both deterministic calls to all registered agents and dynamic selection of which agents to invoke based on the task requirements.
 
-[![A diagram of the concurrent orchestration pattern.](../media/concurrent-orchestration.png)](../media/concurrent-orchestration-big.png#lightbox)
+[![Diagram that shows the concurrent orchestration pattern.](../media/concurrent-orchestration.png)](../media/concurrent-orchestration-big.png#lightbox)
 
 An example of concurrent orchestration is a financial services firm that needs an intelligent application that uses concurrent agents that specialize in different types of analysis to evaluate the same stock simultaneously. Each agent contributes insights from its specialized perspective.
 
@@ -14,7 +14,7 @@ The system processes stock analysis requests by dispatching the same ticker symb
 - The environmental, social, and governance (ESG) agent reviews environmental impact, social responsibility, and governance practice reports to evaluate sustainability risks and opportunities.
 - These independent results are then combined into a comprehensive investment recommendation, which enables portfolio managers to make informed decisions quickly.
 
-[![A diagram of concurrent orchestration in the example application.](../media/concurrent-orchestration-example.png)](../media/concurrent-orchestration-example-big.png#lightbox)
+[![Diagram that shows concurrent orchestration in the example application.](../media/concurrent-orchestration-example.png)](../media/concurrent-orchestration-example-big.png#lightbox)
 
 The concurrent orchestration pattern is appropriate in the following scenarios:
 

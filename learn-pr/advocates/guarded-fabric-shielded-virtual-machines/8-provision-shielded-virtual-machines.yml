@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.guarded-fabrics-shielded-virtual-machines.provision-shielded-virtual-machines
+title: Provision shielded virtual machines
+metadata:
+  title: Provision Shielded Virtual Machines
+  description: Use approved provisioning tools to deploy shielded virtual machines, verify guest protection, and assess existing-machine conversion.
+  ms.date: 10/08/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/8-provision-shielded-virtual-machines.md)]

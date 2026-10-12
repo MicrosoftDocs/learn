@@ -1,0 +1,68 @@
+### YamlMime:Module
+uid: learn.devrel.guarded-fabrics-shielded-virtual-machines
+metadata:
+  title: Design, Operate, and Recover Hyper-V Guarded Fabrics and Shielded Virtual Machines
+  description: Design, deploy, operate, and recover guarded fabrics and shielded virtual machines on Windows Server 2025 while preserving host trust and owner key custody.
+  ms.date: 10/08/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+title: Design, operate, and recover Hyper-V guarded fabrics and shielded virtual machines
+summary: |
+  Guarded fabrics and shielded virtual machines provide Hyper-V's strongest built-in protections against fabric-administrator inspection and tampering when configured with hardware-backed host attestation. 
+  
+  - Host Guardian Service verifies cryptographic evidence of host identity, measured boot, and code integrity policy against approved requirements before releasing virtual machine key material. 
+  - Signed templates, encrypted provisioning data, and enforced shielding settings protect deployment integrity and prevent fabric administrators from weakening virtual machine security settings. 
+  - BitLocker encrypts the Windows guest's operating system volume, while Hyper-V encrypts sensitive saved state and live-migration traffic.
+
+  A guarded fabric separates control of virtualization infrastructure from authority to read protected workloads. That separation is useful when a virtual machine (VM) owner must protect guest secrets from a compromised, malicious, or curious fabric administrator. A guarded fabric requires more than an encrypted virtual disk: Hyper-V host eligibility, VM policy, key custody, and recovery must work together.
+
+  > [!NOTE]
+  > Microsoft lists guarded fabrics and shielded VMs as **no longer in development**, while explicitly retaining support.
+abstract: |
+  After completing this module, you'll be able to:
+
+  - Explain which attacks shielding addresses, which administrators remain trusted, and which risks require other controls.
+  - Choose attestation, editions, hardware, identities, networks, certificates, and availability dependencies for the required assurance.
+  - Explain HGS initialization, Hyper-V host enrollment, policy versions, active modes, and attestation evidence.
+  - Design guardians, key protectors, trusted templates, shielding data, and an owner-approved provisioning path.
+  - Plan servicing, migration, key rollover, trust withdrawal, and incident containment without silently weakening policy.
+  - Distinguish HGS recovery, whole-VM recovery, guest recovery, fallback services, and offline key caching.
+  - Separate connectivity, attestation, key release, provisioning, migration authentication, and guest failures.
+prerequisites: |
+  Understanding of:
+
+  - Hyper-V and AD DS administration
+  - Public key infrastructure (PKI), BitLocker, and Secure Boot
+  - Backup and recovery concepts
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - advanced
+roles:
+  - administrator
+  - security-engineer
+products:
+  - windows-server
+subjects:
+  - security
+  - infrastructure
+units:
+  - learn.devrel.guarded-fabrics-shielded-virtual-machines.introduction
+  - learn.devrel.guarded-fabrics-shielded-virtual-machines.evaluate-platform-prerequisites
+  - learn.devrel.guarded-fabrics-shielded-virtual-machines.deploy-host-guardian-service
+  - learn.devrel.guarded-fabrics-shielded-virtual-machines.establish-trusted-platform-module-attestation
+  - learn.devrel.guarded-fabrics-shielded-virtual-machines.evaluate-host-key-attestation
+  - learn.devrel.guarded-fabrics-shielded-virtual-machines.establish-virtual-machine-ownership
+  - learn.devrel.guarded-fabrics-shielded-virtual-machines.prepare-shielded-virtual-machine-provisioning-artifacts
+  - learn.devrel.guarded-fabrics-shielded-virtual-machines.provision-shielded-virtual-machines
+  - learn.devrel.guarded-fabrics-shielded-virtual-machines.manage-shielded-virtual-machine-operations
+  - learn.devrel.guarded-fabrics-shielded-virtual-machines.service-guarded-fabrics
+  - learn.devrel.guarded-fabrics-shielded-virtual-machines.respond-to-guarded-fabric-compromise
+  - learn.devrel.guarded-fabrics-shielded-virtual-machines.recover-guarded-fabrics
+  - learn.devrel.guarded-fabrics-shielded-virtual-machines.diagnose-guarded-fabric-failures
+  - learn.devrel.guarded-fabrics-shielded-virtual-machines.knowledge-check
+  - learn.devrel.guarded-fabrics-shielded-virtual-machines.summary
+badge:
+  uid: learn.devrel.guarded-fabrics-shielded-virtual-machines.badge

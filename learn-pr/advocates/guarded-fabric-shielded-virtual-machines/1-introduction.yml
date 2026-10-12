@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.guarded-fabrics-shielded-virtual-machines.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Explore guarded-fabric trust boundaries, host attestation, workload protection policies, and the limits of shielding on Windows Server 2025.
+  ms.date: 10/08/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/1-introduction.md)]

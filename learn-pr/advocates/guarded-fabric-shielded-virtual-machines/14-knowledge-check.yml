@@ -1,0 +1,211 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.guarded-fabrics-shielded-virtual-machines.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Assess guarded-fabric architecture, attestation, key custody, provisioning, servicing, incident response, availability, and recovery decisions.
+  ms.date: 10/08/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 20
+content: |
+quiz:
+  questions:
+    - content: |
+        **Scenario 1: Protect against a malicious fabric administrator**
+
+        Contoso's Hyper-V hosts meet the TPM prerequisites. The owner wants protection from fabric-administrator inspection of guest secrets. Which design fits?
+      choices:
+        - content: "Any attestation mode, provided every VM has a local vTPM."
+          isCorrect: false
+          explanation: "A local vTPM is a virtual device, not the complete guarded-fabric trust system. It doesn't establish HGS-backed host authorization or a shielded workload policy."
+        - content: "TPM-trusted attestation and shielded policy, with separate HGS and owner authority."
+          isCorrect: true
+          explanation: "Hyper-V host eligibility and VM policy are independent decisions. TPM-trusted attestation supplies measured-health assurance. Shielded policy supplies the intended workload restrictions. Separation preserves their authority boundaries."
+        - content: "Host-key attestation and encryption-supported policy, with owner keys on the Hyper-V hosts."
+          isCorrect: false
+          explanation: "Host-key attestation lacks TPM-based measured-health assurance. Encryption-supported policy and owner keys on Hyper-V hosts weaken workload protection and key custody."
+    - content: |
+        **Scenario 2: A registered Hyper-V host runs an unapproved driver**
+
+        An operator registered the Hyper-V host's public key yesterday. Today the Hyper-V host runs an unapproved driver. What can be concluded?
+      choices:
+        - content: "Registration automatically switched HGS away from TPM mode."
+          isCorrect: false
+          explanation: "Registering a public key doesn't change the active HGS attestation mode."
+        - content: "Key possession isn't measured-health evidence, and registration alone doesn't establish the active mode."
+          isCorrect: true
+          explanation: "Host-key attestation establishes a different assurance boundary from TPM attestation. Inspect mode and evaluate the actual policy; enrollment alone doesn't establish either measured health or the active mode."
+        - content: "The registration proves the current driver state is approved."
+          isCorrect: false
+          explanation: "Registering a host's public key doesn't approve or measure its current driver state."
+    - content: |
+        **Scenario 3: Version 2 is preferred but version 1 remains**
+
+        HGS prefers version 2, yet matching legacy version 1 artifacts remain. Which change closes the unintended fallback path?
+      choices:
+        - content: "Rely on the HGS operating-system version to make fallback impossible."
+          isCorrect: false
+          explanation: "The HGS operating-system version is distinct from the policy-artifact version. Retained compatible version 1 artifacts can still permit fallback."
+        - content: "Rename the legacy policies so they no longer mention version 1."
+          isCorrect: false
+          explanation: "Renaming legacy policies doesn't change their semantics or remove their ability to support fallback."
+        - content: "Inventory and deliberately retire unapproved version 1 artifacts after proving the version 2 path."
+          isCorrect: true
+          explanation: "The available compatible artifacts influence fallback. Verify the version 2 path, then deliberately retire unapproved version 1 artifacts."
+    - content: |
+        **Scenario 4: One VM fails on a healthy Hyper-V host**
+
+        Attestation passes and other protected VMs start. `App01` fails during key release after an HGS key change. What should you investigate first?
+      choices:
+        - content: "Replace App01's KP with one extracted from a new PDK."
+          isCorrect: false
+          explanation: "Replacing the existing key protector with one from a new PDK can replace the protected secret associated with the VM's existing vTPM state."
+        - content: "Inspect App01's existing KP, its guardians, the KPS endpoint, and private-key availability on each HGS node."
+          isCorrect: true
+          explanation: "The evidence narrows the failure toward VM-specific authorization or key access. Inspect the existing key protector, authorized guardians, endpoint, and each HGS node's private-key availability."
+        - content: "Disable CI attestation checks."
+          isCorrect: false
+          explanation: "Attestation already passed. Disabling code integrity checks weakens an unrelated layer without repairing VM-specific key authorization."
+    - content: |
+        **Scenario 5: Servicing changes measured evidence**
+
+        An approved firmware and driver update causes attestation rejection on one Hyper-V host. What's the appropriate response?
+      choices:
+        - content: "Verify the intended change, update approved evidence through change control, test, and retire obsolete artifacts afterward."
+          isCorrect: true
+          explanation: "An approved change can require new evidence, but the actual state must still be explained. Use change control, test approved evidence, and retire obsolete artifacts."
+        - content: "Temporarily allow all code and leave the broad policy in place for the rollout."
+          isCorrect: false
+          explanation: "Leaving an allow-all policy in place turns a servicing issue into a permanent admission weakness."
+        - content: "Capture that Hyper-V host's current evidence immediately and authorize it without review."
+          isCorrect: false
+          explanation: "Authorizing current measurements without explaining them can approve unrelated drift or compromise."
+    - content: |
+        **Scenario 6: The template was modified after signing**
+
+        The PDK and VSC pass their preliminary applicability check, but the VHDX was changed afterward. Which outcome is required?
+      choices:
+        - content: "Change the PDK to accept all later images without investigating."
+          isCorrect: false
+          explanation: "Broadening the PDK's trust doesn't explain or repair an unauthorized template modification."
+        - content: "The VSC's existence is enough to trust any disk with the same filename."
+          isCorrect: false
+          explanation: "A filename and the existence of a catalog don't establish the current disk's cryptographic identity."
+        - content: "Actual provisioning rejects the altered template despite preliminary applicability."
+          isCorrect: true
+          explanation: "Applicability isn't verification of the actual disk's current integrity. Secure provisioning must reject a template altered after signing."
+    - content: |
+        **Scenario 7: Certificate renewal changes the key**
+
+        An administrator proposes an HGS certificate using a legacy CSP and calls a new key pair a same-key renewal because the subject name is unchanged. What must change?
+      choices:
+        - content: "Use the required KSP-based HGS certificate profile and treat the new key pair as a rollover with dependent-artifact planning."
+          isCorrect: true
+          explanation: "Provider and certificate-profile requirements matter, and cryptographic identity is the key, not just the subject. Use a KSP-based profile and plan the new key pair as a rollover."
+        - content: "Use the HTTPS certificate for every signing and encryption purpose."
+          isCorrect: false
+          explanation: "The HTTPS certificate provides transport identity. It isn't interchangeable with HGS signing, HGS encryption, or owner identities."
+        - content: "Nothing. Subject-name continuity preserves access to old KPs."
+          isCorrect: false
+          explanation: "An unchanged subject name doesn't preserve the old cryptographic key or access to existing key protectors."
+    - content: |
+        **Scenario 8: New HGS primary keys are active**
+
+        New primary keys are available on every HGS node. When can the old keys be retired?
+      choices:
+        - content: "After owners update affected existing KPs and the approved recovery plan covers retained backups, checkpoints, replicas, and PDKs."
+          isCorrect: true
+          explanation: "The dependency population extends beyond current provisioning. Update affected existing key protectors and cover retained backups, checkpoints, replicas, and PDKs before retiring old keys."
+        - content: "After issuing a new PDK, regardless of deployed VMs or backups."
+          isCorrect: false
+          explanation: "A new PDK addresses future provisioning, not every existing virtual machine or retained recovery artifact."
+        - content: "Immediately, because primary selection rewrites every existing KP."
+          isCorrect: false
+          explanation: "Selecting primary keys doesn't automatically rewrite existing virtual machine key protectors."
+    - content: |
+        **Scenario 9: A deauthorized stolen Hyper-V host keeps running a shielded VM**
+
+        The Hyper-V host was removed from primary HGS, but a shielded VM continues running on it. Recovery HGS wasn't changed. What's the correct response?
+      choices:
+        - content: "Wait for certificate expiry because it immediately erases every released secret."
+          isCorrect: false
+          explanation: "Certificate expiration doesn't immediately erase released secrets or stop running virtual machines, and eligible cached material also requires consideration."
+        - content: "Restore its registration because continued execution proves the withdrawal failed."
+          isCorrect: false
+          explanation: "Continued execution doesn't prove that future-admission withdrawal failed. Restoring the registration would restore unwanted trust without containing the compromise."
+        - content: "Contain the Hyper-V host, preserve evidence, withdraw applicable authorization at every HGS service, assess released/cached material, and recover on clean infrastructure."
+          isCorrect: true
+          explanation: "Future key-release policy and immediate incident containment are different controls. Contain the host, withdraw authorization from every applicable HGS service, and assess running state and released or cached material."
+    - content: |
+        **Scenario 10: HGS is unreachable during a cold start**
+
+        The primary HGS site is unavailable. What determines whether a protected VM can start?
+      choices:
+        - content: "Fallback should ignore attestation policy whenever the primary rejects the Hyper-V host."
+          isCorrect: false
+          explanation: "Fallback handles service unavailability. Ignoring a primary attestation rejection would turn it into an admission bypass."
+        - content: "A reachable authorized fallback path or an eligible offline cache for that Hyper-V host and shielded VM state is required. Otherwise the shielded VM's start remains blocked."
+          isCorrect: true
+          explanation: "Availability depends on a valid key-release path or an eligible host-specific and VM-specific offline cache. Without either, startup remains blocked."
+        - content: "Any Hyper-V host that can read the VHDX can start it."
+          isCorrect: false
+          explanation: "Storage access alone doesn't provide the key material and authorization needed to start a shielded virtual machine."
+    - content: |
+        **Scenario 11: Migration breaks after a Windows Server 2025 upgrade**
+
+        The destination Hyper-V host passes attestation and is authorized by the VM. CredSSP migration fails after upgrade. Which action fits the evidence?
+      choices:
+        - content: "Investigate Credential Guard's effect on delegation and configure a supported Kerberos delegation design, while retaining independent destination checks."
+          isCorrect: true
+          explanation: "Migration authentication is a separate layer. Investigate delegation, configure supported Kerberos delegation, and retain independent destination attestation and authorization checks."
+        - content: "Disable Credential Guard as the standard long-term fix."
+          isCorrect: false
+          explanation: "Disabling Credential Guard removes a security control without establishing the intended supported authentication path."
+        - content: "Replace the destination Hyper-V host's TPM identity."
+          isCorrect: false
+          explanation: "Changing the destination host's TPM identity doesn't repair the observed migration credential-delegation failure."
+    - content: |
+        **Scenario 12: Every HGS node is lost**
+
+        The team has an HGS state export but used HSM-backed encryption keys. What's the recovery requirement?
+      choices:
+        - content: "Rebuild and initialize clean HGS, restore approved state, recover HSM/private-key access on every node, and reconstruct identity, DNS, cluster, and TLS dependencies."
+          isCorrect: true
+          explanation: "The HGS state export is valuable but incomplete as a recovery system. Restore approved state, recover external private-key access, and reconstruct identity, DNS, cluster, and TLS dependencies."
+        - content: "Import the XML and assume all external keys, AD, and TLS are included."
+          isCorrect: false
+          explanation: "The export doesn't automatically contain external HSM keys, Active Directory configuration, or TLS dependencies."
+        - content: "Generate unrelated encryption keys with the old certificate subject names."
+          isCorrect: false
+          explanation: "Unrelated new keys with old subject names don't preserve the cryptographic keys needed by existing key protectors."
+    - content: |
+        **Scenario 13: Restore a backup from before key rollover**
+
+        A consistent backup contains an old KP that authorizes a now-compromised guardian. What's the safe approach?
+      choices:
+        - content: "Keep only the VHDX and discard its associated protected state."
+          isCorrect: false
+          explanation: "Discarding associated protected state can lose the vTPM and key-protector relationships needed to recover encrypted data."
+        - content: "Re-enable that guardian in production solely to make the restore convenient."
+          isCorrect: false
+          explanation: "Re-enabling a compromised guardian restores the compromise path, even if it makes recovery more convenient."
+        - content: "Restore in isolation, inspect authorization, and use clean owner-authorized recovery/reprotection without silently restoring withdrawn trust."
+          isCorrect: true
+          explanation: "Consistency and authorization review are both required. Restore in isolation and use clean owner-authorized recovery or reprotection without silently restoring withdrawn trust."
+    - content: |
+        **Scenario 14: Recover a Windows guest's BitLocker material**
+
+        An eligible shielded guest can't unlock its OS volume. Which recovery materials and authority are required by the documented owner recovery path?
+      choices:
+        - content: "Fabric administrator rights alone. A newly generated PDK is sufficient."
+          isCorrect: false
+          explanation: "Fabric administration isn't owner recovery authority, and a newly generated PDK doesn't replace the matching original PDK."
+        - content: "The matching original eligible PDK, owner guardian private keys, and a consistent disk in an isolated recovery environment, with protected handling of the decrypted `.bek` file."
+          isCorrect: true
+          explanation: "Eligibility, matching original artifacts, and owner authority are essential. Protect the decrypted .bek file. Without usable keys or another valid recovery path, the data can be unrecoverable."
+        - content: "Any HGS export, because it includes every owner's private keys."
+          isCorrect: false
+          explanation: "HGS state exports don't contain every owner's private keys. Owner and HGS key custody must remain separate."
