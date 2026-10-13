@@ -20,7 +20,7 @@ Structured data is data that adheres to a fixed *schema*, so all of the data has
 > [!div class="mx-imgBorder"]
 > ![Diagram showing how structured data is represented in tables.](../media/customer-product-tables.png)
 
-Structured data is often stored in a database in which multiple tables can reference one another by using key values in a *relational* model; which we'll explore in more depth later.
+Structured data is often stored in a database in which multiple tables can reference one another by using key values in a *relational* model, which a later unit explores in more depth.
 
 ## Semi-structured data
 
@@ -86,7 +86,7 @@ Not all data is structured or even semi-structured. For example, documents, imag
 > [!div class="mx-imgBorder"]
 > ![Diagram showing unstructured data in documents.](../media/unstructured-and-vector-data.png)
 
-Organizations are also increasingly working with **vector data** (also called *embeddings*)—the data type that enables AI assistants to answer questions over your own documents and data.
+Organizations are also increasingly working with **vector data** (also called *embeddings*), which is a numerical representation of content such as text or images. AI applications use vector data to find content that's semantically similar.
 
 ## Data stores
 
@@ -97,6 +97,6 @@ There are two broad categories of data store in common use:
 - File stores
 - Databases
 
-We'll explore both of these types of data store in subsequent topics.
+The next units explore both of these types of data store.
 
 ::: zone-end
