@@ -21,22 +21,22 @@ When you create a workspace, you must specify:
   > The Standard tier is no longer available for new workspaces as of April 1, 2026. All new workspaces are created on the Premium tier.
 
 - **Workspace type**:
-  - **Serverless** - Pre-configured with serverless compute and managed storage. Recommended for most use cases.
-  - **Hybrid** (also called Classic) - Provisions compute and storage in your Azure subscription. Best for custom networking or on-premises connectivity.
+  - **Serverless** - Pre-configured with serverless compute and default storage. Azure Databricks recommends a serverless workspace for the simplest quick start.
+  - **Hybrid** (also called Classic) - Provisions compute and storage in your Azure subscription.
 - **Managed Resource Group name** (optional): an automatically created resource group where Azure provisions and manages the infrastructure resources needed for your Databricks workspace.
 
 > [!TIP]
-> A **Free Edition** is available for students and educators with no time limit and no payment required, though it has daily usage limits and no access to classic compute. See [Sign up for Azure Databricks](/azure/databricks/getting-started/free-trial-vs-free-edition) for a comparison.
+> A **Free Edition** is available for students, educators, and anyone learning or experimenting with data and AI. It has no time limit and requires no payment, though it has daily usage limits and no access to classic compute. See [Sign up for Azure Databricks](/azure/databricks/getting-started/free-trial-vs-free-edition) for a comparison.
 
 ![Screenshot of Azure Databricks in the Azure Portal.](../media/01-azure-databricks.png)
 
-If you decide to create an Azure Databricks deployment using the Azure CLI, this would be the [az databricks workspace](/cli/azure/ext/databricks/databricks/workspace) command to remember:
+To create an Azure Databricks workspace using the Azure CLI, use the [az databricks workspace](/cli/azure/databricks/workspace) command:
 
 ```
-az databricks workspace create
+az databricks workspace create \
     --resource-group myresourcegroup \
-    --name mydatabricksws  \
-    --location westus2  \
+    --name mydatabricksws \
+    --location westus2 \
     --sku premium
 ```
 
@@ -46,19 +46,19 @@ The equivalent [New-AzDatabricksWorkspace](/powershell/module/az.databricks/new-
 New-AzDatabricksWorkspace -Name mydatabricksws -ResourceGroupName myresourcegroup -Location westus2 -ManagedResourceGroupName databricks-group -Sku premium
 ```
 
-## Navigating the Azure Databricks Workspace UI
+## Navigating the Azure Databricks workspace UI
 
 After you provision an Azure Databricks workspace, you can use the workspace UI to work with data and compute resources. The workspace UI is a web-based user interface where you can create and manage workspace resources, such as Spark clusters, and use notebooks and queries to work with data in files and tables.
 
 ![Screenshot of the Azure Databricks Workspace user interface.](../media/02-azure-databricks-portal.png)
 
-The homepage provides shortcuts to common tasks and workspace objects to you help you get started. You can import data, create a notebook, create a query and configure an AutoML experiment.
+The homepage provides shortcuts to common tasks and workspace objects to help you get started. It includes **Ask Genie**, where you can ask data questions, search for workspace objects, or start a Genie Code conversation, and sections that show suggested, favorited, and popular objects.
 
-The sidebar shows common Databricks categories (Workspace, Recents, Catalog, Jobs & Pipelines, Compute, Marketplace). It then breaks out by product area:
+The sidebar shows common Databricks categories (Workspace, Recents, Catalog, Jobs & Pipelines, Compute, Discover, Marketplace). It then breaks out by product area:
 
-- **SQL**: SQL Editor, Queries, Dashboards, Genie, Alerts, Query History, SQL Warehouses
-- **Data Engineering**: Job Runs, Data Ingestion
-- **Machine Learning**: Playground, Experiments, Features, Models, Serving
+- **SQL**: SQL Editor, Queries, Dashboards, Genie Agents, Alerts, Query History, SQL Warehouses
+- **Data Engineering**: Runs, Data Ingestion
+- **AI/ML**: Playground, Agents, AI Gateway, Experiments, Features, Models, Serving
 
 Select **+ New** to:
 
@@ -79,6 +79,6 @@ The workspace is available in **multiple languages.** To change the workspace la
 
 It can assist with a wide range of tasks, including identifying and correcting errors, creating data visualizations, diagnosing job issues, and filtering or analyzing data using natural language prompts. Genie Code can surface relevant guidance from the Azure Databricks documentation.
 
-Genie Code also includes **Agent mode**, which is generally available for data science, data engineering, and dashboard authoring. Agent mode extends Genie Code with agentic capabilities so it can autonomously plan and complete multi-step data tasks on your behalf.
+Genie Code also runs in **Agent mode**, which plans solutions, retrieves relevant assets, runs code, uses cell outputs to improve results, and fixes errors across multi-step data tasks. Genie Code asks for your approval before it uses tools such as running code or editing a notebook.
 
 By using Unity Catalog metadata, it personalizes its responses based on your organization’s data assets—tables, columns, and descriptions—making it easier to explore and work with your data.

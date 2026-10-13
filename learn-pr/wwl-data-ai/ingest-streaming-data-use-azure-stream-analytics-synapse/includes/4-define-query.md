@@ -43,7 +43,7 @@ A common pattern for streaming queries is to aggregate event data over temporal 
 - **Hopping** — overlapping scheduled windows that advance by a fixed hop interval. Events can belong to more than one window.
 - **Sliding** — fire only when the window content changes (when an event arrives or leaves). Every window contains at least one event.
 - **Session** — variable-length windows grouped by inactivity gap between events. Useful for IoT and user-activity scenarios where event bursts are separated by idle periods.
-- **Snapshot** — groups events that share the same timestamp using `System.Timestamp()`. Typically used after a preceding window function to further aggregate its output.
+- **Snapshot** — groups events that share the same timestamp by adding `System.Timestamp()` to the `GROUP BY` clause.
 
 > [!TIP]
 > For more information about window functions, see [Introduction to Stream Analytics windowing functions](/azure/stream-analytics/stream-analytics-window-functions?azure-portal=true) in the Azure Stream Analytics documentation.
@@ -52,8 +52,8 @@ The following example groups streaming sensor readings into 1 minute tumbling (s
 
 ```sql
 SELECT
-    DateAdd(second, -60, System.TimeStamp) AS StartTime,
-    System.TimeStamp AS EndTime,
+    DateAdd(second, -60, System.Timestamp()) AS StartTime,
+    System.Timestamp() AS EndTime,
     SensorID,
     MAX(ReadingValue) AS MaxReading
 INTO

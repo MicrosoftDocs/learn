@@ -25,13 +25,13 @@ Users can consume reports, dashboards, and apps in the Power BI service through 
 
 ## Power BI in Microsoft Fabric
 
-Power BI is fully integrated into **Microsoft Fabric**, Microsoft's unified analytics platform. Within Fabric, Power BI content lives in shared **workspaces** alongside other data engineering and analytics items, all backed by the same **OneLake** storage layer. Key Fabric-specific capabilities include:
+Power BI is integrated into **Microsoft Fabric**, Microsoft's unified analytics platform. Within Fabric, Power BI content lives in shared **workspaces** alongside other data engineering and analytics items, all backed by the same **OneLake** storage layer. Key Fabric-specific capabilities include:
 
 - **Workspaces**: shared environments where teams collaborate on reports and **semantic models** in a browser, without needing desktop software.
 
 - **Semantic models**: a semantic model defines the measures, relationships, and hierarchies that reports are built on, and can be shared across multiple reports.
 
-- **Direct Lake mode**: a storage mode that lets Power BI query data directly from OneLake files, combining the speed of in-memory analysis with the scale of a data lake—without requiring a separate data import or refresh cycle.
+- **Direct Lake mode**: a storage mode that loads data directly from Delta tables in OneLake into memory, combining the speed of in-memory analysis with the scale of a data lake—without copying the data into the semantic model. A lightweight refresh operation, called framing, updates the model to reference the latest data.
 
 - **Web-based report editing**: analysts can create and update reports entirely in the browser, making Power BI accessible without installing Power BI Desktop.
 
@@ -41,17 +41,17 @@ Power BI includes built-in AI features that help analysts work more efficiently.
 
 ### Copilot in Power BI
 
-Copilot capabilities require Fabric capacity (F2 or higher) or Power BI Premium (P1 or higher) and are available in both Power BI Desktop and the Power BI service:
+Copilot capabilities require a workspace on a paid Fabric capacity (F2 or higher) or Power BI Premium capacity (P1 or higher), or a Fabric Copilot capacity, and are available in both Power BI Desktop and the Power BI service:
 
 - **Summarize a report**: Copilot generates a plain-language summary of what a report shows.
 - **Create report pages**: Copilot creates report pages and selects appropriate chart types based on your data and prompt.
-- **Generate DAX measures**: Copilot writes DAX measure expressions from a natural-language description.
+- **Write DAX**: Copilot writes DAX queries and helps refine DAX measures from a natural-language description.
 
 ### Other AI features
 
 The following AI-powered features are available without a Copilot license:
 
-- **Smart narrative visual**: automatically generates a text summary that describes what the data in a report shows, and updates dynamically as data changes.
+- **Custom smart narrative**: the Narrative visual can automatically generate a text summary that describes what the data in a report shows, and updates dynamically as data changes. The Copilot mode of the Narrative visual requires a Copilot license.
 
 These features make AI a natural part of the analyst's day-to-day workflow within Power BI and Microsoft Fabric.
 

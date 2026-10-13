@@ -1,4 +1,4 @@
-Once the creation of the Data Factory instance is complete, you can go to the resource where you can begin to create your data pipelines by selecting **Launch Studio** on the **Open Azure Data Factory Studio** tile. This opens up the following screen:
+Once the creation of the Data Factory instance is complete, you can go to the resource where you can begin to create your data pipelines by selecting **Launch Studio** on the **Azure Data Factory Studio** tile. This opens the following screen:
 
 > [!div class="mx-imgBorder"]  
 > ![Screenshot that shows the Azure Data Factory Studio authoring canvas.](../media/author-azure-data-factory.png) 
@@ -35,7 +35,7 @@ With the Copy Activity added, you then start to define the source data
     > [!div class="mx-imgBorder"]  
     > ![Screenshot that shows the Set Properties window, with filter highlighted under Linked service.](../media/data-source-file-format.png)
 
-1. Specific to the S3 Linked Service configuration pane, specify your S3 **access key** and **secret key**. The Data Factory service encrypts credentials with certificates managed by Microsoft. For more information, see Data Movement Security Considerations. To verify your credentials are valid, select **Test Connection**. Select **Create** when finished. 
+1. Specific to the S3 Linked Service configuration pane, specify your S3 **access key** and **secret key**. The Data Factory service encrypts credentials with certificates managed by Microsoft. For more information, see [Security considerations for data movement in Azure Data Factory](/azure/data-factory/data-movement-security-considerations). To verify your credentials are valid, select **Test Connection**. Select **Create** when finished.
     > [!div class="mx-imgBorder"]  
     > ![Screenshot that shows the S3 linked service configuration pane with the access key and secret key fields.](../media/set-data-source-access-keys.png)
 
@@ -47,7 +47,7 @@ With the Copy Activity added, you then start to define the source data
     > [!div class="mx-imgBorder"]
     > ![Screenshot that shows the Preview Data pane with a sample of the source data.](../media/preview-data.png)
 
-With the source data defined, then you'll define the sink into which the data will be loaded. In this example the sink will be Azure Data Lake Storage Gen2 by performing the following steps:
+With the source data defined, you define the sink into which the data is loaded. In this example, the sink is Azure Data Lake Storage Gen2. Complete the following steps:
 
 1. In the **Sink** tab, select **+ New**  
     > [!div class="mx-imgBorder"]  

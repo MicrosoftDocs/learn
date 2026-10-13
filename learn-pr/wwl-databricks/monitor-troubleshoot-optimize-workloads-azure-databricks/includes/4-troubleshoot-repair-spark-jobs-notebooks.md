@@ -12,7 +12,7 @@ Spark jobs can fail for various reasons, and understanding these patterns helps 
 
 **Resource bottlenecks** occur when jobs consume more CPU, memory, or disk than available. You might see out-of-memory (OOM) errors, slow shuffle operations, or tasks that fail repeatedly. These issues often require adjusting cluster configuration or optimizing your code.
 
-**Environmental issues** involve cluster startup failures, network problems, or external data source unavailability. A cluster might fail to acquire cloud instances due to account limits or spot instance reclamation.
+**Environmental issues** involve cluster startup failures, network problems, or external data source unavailability. A cluster might fail to acquire cloud instances because of subscription quota limits or spot VM eviction.
 
 ## Use the Spark UI to diagnose issues
 
@@ -45,7 +45,7 @@ Resource bottlenecks manifest differently depending on which resource is constra
 
 **Network bottlenecks** appear as high shuffle read/write volumes with slow execution. Reduce network overhead by filtering data earlier in your pipeline, using broadcast joins for small tables, or repartitioning data to minimize cross-node transfers.
 
-To access compute metrics, select your cluster from the **Compute** page and select the **Metrics** tab. The **Server load distribution** visualization uses color coding—red indicates heavily loaded nodes, while blue shows idle resources. If the driver node appears red while workers are blue, the driver is overloaded and may need a larger instance type.
+To access compute metrics, select your cluster from the **Compute** page and select the **Metrics** tab. The **Server load distribution** visualization on the **Spark** metrics view shows the CPU utilization of each node over the past minute. If the driver node shows much higher utilization than the workers, the driver is overloaded and might need a larger instance type.
 
 :::image type="content" source="../media/4-server-metrics.png" alt-text="Screenshot of the compute metrics tab." lightbox="../media/4-server-metrics.png":::
 
@@ -53,7 +53,7 @@ To access compute metrics, select your cluster from the **Compute** page and sel
 
 Sometimes a cluster encounters problems that require a restart to resolve. Resource exhaustion, malfunctioning executors, or stale container images can all necessitate a fresh cluster start.
 
-Before restarting, determine whether a restart is appropriate. Check the **Event log** tab on the cluster details page for lifecycle events that might explain the problem. Look for messages about instance acquisition failures, spot instance reclamation, or executor terminations.
+Before restarting, determine whether a restart is appropriate. Check the **Event log** tab on the cluster details page for lifecycle events that might explain the problem. Look for messages about instance acquisition failures, spot VM eviction, or executor terminations.
 
 To restart a cluster using the UI, select your cluster from the **Compute** page and select **Restart**. 
 
@@ -68,6 +68,6 @@ databricks clusters restart CLUSTER_ID
 Replace `CLUSTER_ID` with your cluster's identifier, which you can find on the cluster configuration page or by running `databricks clusters list`.
 
 > [!IMPORTANT]
-> Restarting a cluster terminates any running jobs and resets the Spark UI history. Save any diagnostic information you need before restarting. For long-running clusters processing streaming data, consider scheduling regular restarts during maintenance windows to ensure the cluster runs on current images.
+> Restarting a cluster interrupts any running jobs and notebooks attached to it. Save any diagnostic information you need before restarting. For long-running clusters processing streaming data, consider scheduling regular restarts during maintenance windows so the cluster runs on current images.
 
 After making changes—whether adjusting cluster configuration, fixing code, or resolving external dependencies—validate your fix by monitoring the next job run. Check that execution times return to expected levels and that no new errors appear in the Spark UI or job output.

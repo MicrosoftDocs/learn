@@ -3,12 +3,12 @@ Suppose a manufacturing company captures real-time telemetry data from factory f
 
 Azure Stream Analytics is a fully managed, cloud-based stream processing service that enables you to build real-time analytics pipelines. It connects to streaming data sources such as Azure Event Hubs, Azure IoT Hub, and Azure Data Lake Storage, processes data using a SQL-based query language, and writes results to a wide range of output destinations.
 
-![A diagram of a data stream in Azure Event Hubs being queried by Azure Stream Analytics and loaded into multiple output destinations.](../media/stream-ingestion.png)
+![Diagram of a data stream captured in Azure Event Hubs, processed by Azure Stream Analytics, and loaded into Azure Synapse Analytics.](../media/stream-ingestion.png)
 
-A typical pattern for real-time data processing in Azure consists of the following sequence:
+A typical pattern for real-time data processing in Azure includes these stages:
 
-1. A real-time source of data is captured in an event ingestor, such as Azure Event Hubs or Azure IoT Hub.
-2. The captured data is perpetually filtered, aggregated, or enriched by an Azure Stream Analytics query.
-3. The results of the query are written to one or more output destinations—such as a data lake, a relational database, another event hub, or a real-time dashboard.
+- A real-time source of data is captured in an event ingestor, such as Azure Event Hubs or Azure IoT Hub.
+- The captured data is perpetually filtered, aggregated, or enriched by an Azure Stream Analytics query.
+- The results of the query are written to one or more output destinations—such as a data lake, a relational database, or another event hub.
 
-In this module, you'll learn how to configure Azure Stream Analytics jobs to process streaming data and route the results to a variety of output destinations.
+In this module, you learn how to configure Azure Stream Analytics jobs to process streaming data and route the results to a variety of output destinations.

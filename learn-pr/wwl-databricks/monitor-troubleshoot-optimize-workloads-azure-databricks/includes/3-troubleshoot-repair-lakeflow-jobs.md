@@ -10,8 +10,8 @@ A job run can result in several states:
 
 - **Failed**: One or more leaf tasks didn't complete successfully.
 - **Succeeded with failures**: Some tasks failed, but all leaf tasks completed successfully.
-- **Skipped**: The job didn't run because it exceeded maximum concurrent runs for the job or workspace.
-- **Timed Out**: The job exceeded its configured maximum duration.
+- **Skipped**: The job run was skipped, for example because it exceeded the maximum concurrent runs for the job or workspace.
+- **Timed Out**: The job run took too long to complete and timed out.
 - **Canceled**: A user or automated process stopped the run.
 
 Individual tasks can also show a **Disabled** status. A task is disabled when you explicitly disable it in the job settings, or when Lakeflow Jobs automatically disables it because an upstream dependency task is disabled. Disabled tasks appear with a circle-off icon in the DAG view. During a repair run, the run state—not the disabled state—determines what gets re-run; you can force a disabled task to run by including it explicitly in the repair request.
@@ -56,8 +56,8 @@ To repair a failed run:
 
 1. Select the failed run in the **Start time** column or from the matrix view.
 2. Select **Repair run** to open the repair dialog.
-3. Review the list of tasks that will re-run—this includes all failed tasks plus any dependent tasks.
-4. Optionally, modify task parameters in the dialog. These values override the original settings for this repair run only.
+3. Review the list of tasks that re-run—this includes all unsuccessful tasks plus any dependent tasks.
+4. Optionally, modify task parameters in the dialog. Parameters you enter override the existing values.
 5. Select **Repair run** to start.
 
 :::image type="content" source="../media/3-repair-failed-task.png" alt-text="Screenshot of the failed task." lightbox="../media/3-repair-failed-task.png":::
@@ -66,6 +66,9 @@ After the repair completes, the matrix view adds a new column showing the repair
 
 > [!NOTE]
 > Repair is available only for jobs with two or more tasks. If tasks share a job cluster, the repair creates a new cluster instance (for example, `my_job_cluster_v1`) so you can compare settings between the original and repaired runs.
+
+> [!IMPORTANT]
+> A repair re-runs each unsuccessful task from the beginning. If a task wrote part of its output before it failed, re-running it can duplicate that data. Use idempotent operations, such as overwrite or merge instead of append, where duplicate data is a concern.
 
 ## Stop and restart job runs
 
@@ -85,6 +88,6 @@ Reactive troubleshooting works, but proactive monitoring prevents many failures 
 
 - **Configure notifications**: Set up email, Slack, or webhook alerts for job failures so you learn about issues immediately.
 - **Review run history regularly**: The matrix view reveals patterns over time. Frequent failures in specific tasks indicate areas needing attention.
-- **Use system tables**: Query the `system.lakeflow` schema to analyze job performance across your account and identify trends before they become critical issues.
+- **Use system tables**: If an account admin enables the `system.lakeflow` schema, query it to analyze job performance across your account and identify trends before they become critical issues.
 
 Combining proactive monitoring with efficient troubleshooting skills helps you maintain reliable data pipelines that your organization can depend on.

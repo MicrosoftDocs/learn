@@ -20,14 +20,14 @@ Some popular dialects of SQL include:
 
 - *Transact-SQL (T-SQL)*. This version of SQL is used by Microsoft SQL Server, Azure SQL Database, Azure SQL Managed Instance, and SQL Server on Azure Virtual Machines.
 
-- *pgSQL*. This is the dialect, with extensions implemented in PostgreSQL.
+- *PL/pgSQL*. This is the procedural language dialect implemented in PostgreSQL.
 
 - *PL/SQL*. This is the dialect used by Oracle. PL/SQL stands for Procedural Language/SQL.
 
 Users who plan to work specifically with a single database system should learn the intricacies of their preferred SQL dialect and platform.
 
 > [!NOTE]
-> Azure SQL Database includes AI features you can use to write and understand SQL queries using natural language.
+> Microsoft Copilot in Azure includes capabilities for Azure SQL Database that you can use to ask questions about your database and generate T-SQL queries using natural language.
 
 > [!NOTE]
 > The SQL code examples in this module are based on the Transact-SQL dialect, unless otherwise indicated. The syntax for other dialects is generally similar, but may vary in some details.
@@ -54,7 +54,7 @@ The most common DDL statements are:
 | `RENAME` | Rename an existing object. |
 
 > [!WARNING]
-> The **DROP** statement is very powerful. When you drop a table, all the rows in that table are lost. Unless you have a backup, you won't be able to retrieve this data. 
+> The **DROP** statement permanently removes an object. When you drop a table, all the rows in that table are lost. Unless you have a backup, you can't retrieve this data.
 
 The following example creates a new database table. The items between the parentheses specify the details of each column, including the name, the data type, whether the column must always contain a value (NOT NULL), and whether the data in the column is used to uniquely identify a row (PRIMARY KEY). Each table should have a primary key, although SQL doesn't enforce this rule.
 
@@ -70,7 +70,7 @@ CREATE TABLE Product
 );
 ```
 
-The datatypes available for columns in a table will vary between database management systems. However, most database management systems support numeric types such as INT (an integer, or whole number), DECIMAL (a decimal number), and string types such as VARCHAR (*VARCHAR* stands for variable length character data). For more information, see the documentation for your selected database management system.
+The datatypes available for columns in a table vary between database management systems. However, most database management systems support numeric types such as INT (an integer, or whole number), DECIMAL (a decimal number), and string types such as VARCHAR (*VARCHAR* stands for variable length character data). For more information, see the documentation for your selected database management system.
 
 ### DCL statements
 
@@ -105,7 +105,7 @@ The four main DML statements are:
 | `UPDATE`  | Modify data in existing rows |
 | `DELETE`  | Delete existing rows |
 
-The basic form of an **INSERT** statement will insert one row at a time. By default, the **SELECT**, **UPDATE**, and **DELETE** statements are applied to every row in a table. You usually apply a **WHERE** clause with these statements to specify criteria; only rows that match these criteria will be selected, updated, or deleted.
+The basic form of an **INSERT** statement inserts one row at a time. By default, the **SELECT**, **UPDATE**, and **DELETE** statements are applied to every row in a table. You usually apply a **WHERE** clause with these statements to specify criteria; only rows that match these criteria are selected, updated, or deleted.
 
 > [!WARNING]
 > SQL doesn't provide *are you sure?* prompts, so be careful when using DELETE or UPDATE without a WHERE clause because you can lose or modify a lot of data.
@@ -127,7 +127,7 @@ WHERE City = 'Seattle';
 ```
 
 
-If a query returns many rows, they don't necessarily appear in any specific sequence. If you want to sort the data, you can add an **ORDER BY** clause. The data will be sorted by the specified column:
+If a query returns many rows, they don't necessarily appear in any specific sequence. If you want to sort the data, you can add an **ORDER BY** clause. The data is sorted by the specified column:
 
 ```SQL
 SELECT FirstName, LastName, Address, City
@@ -138,11 +138,11 @@ ORDER BY LastName;
 
 You can also run SELECT statements that retrieve data from multiple tables using a **JOIN** clause. Joins indicate how the rows in one table are connected with rows in the other to determine what data to return. A typical join condition matches a foreign key from one table and its associated primary key in the other table.
 
-The following query shows an example that joins **Customer** and **Order** tables. The query makes use of table *aliases* to abbreviate the table names when specifying which columns to retrieve in the **SELECT** clause and which columns to match in the **JOIN** clause.
+The following query shows an example that joins **Customer** and **Order** tables. The query makes use of table *aliases* to abbreviate the table names when specifying which columns to retrieve in the **SELECT** clause and which columns to match in the **JOIN** clause. Because ORDER is a reserved keyword in Transact-SQL, the table name is enclosed in square brackets.
 
 ```SQL
 SELECT o.OrderNo, o.OrderDate, c.Address, c.City
-FROM Order AS o
+FROM [Order] AS o
 JOIN Customer AS c
 ON o.Customer = c.ID
 ```
@@ -156,7 +156,7 @@ WHERE ID = 1;
 ```
 
 > [!WARNING]
-> If you omit the **WHERE** clause, an **UPDATE** statement will modify **every** row in the table.
+> If you omit the **WHERE** clause, an **UPDATE** statement modifies **every** row in the table.
 
 Use the **DELETE** statement to remove rows. You specify the table to delete from, and a **WHERE** clause that identifies the rows to be deleted:
 
@@ -166,9 +166,9 @@ WHERE ID = 162;
 ```
 
 > [!WARNING]
-> If you omit the **WHERE** clause, a **DELETE** statement will remove **every** row from the table.
+> If you omit the **WHERE** clause, a **DELETE** statement removes **every** row from the table.
 
-The **INSERT** statement takes a slightly different form. You specify a table and columns in an **INTO** clause, and a list of values to be stored in these columns. Standard SQL only supports inserting one row at a time, as shown in the following example. Some dialects allow you to specify multiple **VALUES** clauses to add several rows at a time:
+The **INSERT** statement takes a slightly different form. You specify a table and columns in an **INTO** clause, and a list of values to be stored in these columns. The following example inserts one row. Some dialects, including Transact-SQL, also allow you to specify multiple lists of values to add several rows in one statement:
 
 ```SQL
 INSERT INTO Product(ID, Name, Price)
@@ -176,6 +176,6 @@ VALUES (99, 'Drill', 4.99);
 ```
 
 > [!NOTE]
-> This topic describes some basic SQL statements and syntax in order to help you understand how SQL is used to work with objects in a database. If you want to learn more about querying data with SQL, review the [Get Started Querying with Transact-SQL](/training/paths/get-started-querying-with-transact-sql?azure-portal=true) learning path on Microsoft Learn.
+> This topic describes some basic SQL statements and syntax in order to help you understand how SQL is used to work with objects in a database. If you want to learn more about querying data with SQL, review the [Query and modify data with Transact-SQL](/training/paths/get-started-querying-with-transact-sql?azure-portal=true) learning path on Microsoft Learn.
 
 ::: zone-end

@@ -1,11 +1,11 @@
-Connectors are Azure Data Factory objects that enable your Linked Services and Datasets to connect to a wide variety of data sources and sinks. These can include connections to Azure resources and third-party connectors such as Amazon S3 or Google cloud. There are over 100 connectors available, and they work with the Copy, Data Flow, Look up, Get Metadata, and Delete activities that can be found within Azure Data Factory.
+Connectors are Azure Data Factory objects that enable your Linked Services and Datasets to connect to a wide variety of data sources and sinks. These can include connections to Azure resources and third-party connectors such as Amazon S3 or Google Cloud Storage. There are over 100 connectors available, and they work with the Copy, Data Flow, Look up, Get Metadata, and Delete activities that can be found within Azure Data Factory.
 
 The file formats that are supported include:
 -	Avro format
 -	Binary format
 -	Delimited text format
 -	Excel format
--	Iceberg format (Azure Data Lake Storage Gen2 only)
+-	Iceberg format (sink only; Azure Data Lake Storage Gen2 only)
 -	JSON format
 -	ORC format
 -	Parquet format
@@ -15,11 +15,11 @@ There are too many data stores to list, but the following table lists the catego
 
 | Category          | Data Store example                             |
 | ----------------- | ---------------------------------------------- |
-| Azure             | Azure Data Lake Store, Azure Synapse Analytics |
+| Azure             | Azure Data Lake Storage Gen2, Azure Synapse Analytics |
 | Databases         | Netezza, Greenplum                             |
 | NoSQL stores      | Cassandra, MongoDB                             |
 | File              | FTP, Google Cloud Storage                      |
 | Generic protocols | REST, ODBC                                     |
-| Services & Apps   | Dynamics, SalesForce                           |
+| Services & Apps   | Dynamics, Salesforce                           |
 
 The list of connectors is constantly evolving. You can keep up to date with the latest list, and the activity support by looking at the [connectors overview page](/azure/data-factory/connector-overview)

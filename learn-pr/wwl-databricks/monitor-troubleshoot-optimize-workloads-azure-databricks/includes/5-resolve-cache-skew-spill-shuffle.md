@@ -45,7 +45,7 @@ Data skew occurs when some partitions contain significantly more data than other
 
 :::image type="content" source="../media/5-investigate-data-skew.png" alt-text="Diagram showing how to investigate data skew." border="false" lightbox="../media/5-investigate-data-skew.png":::
 
-To identify skew in the Spark UI, navigate to the stage's page and scroll to **Summary Metrics**. Compare the **Max** duration to the **75th percentile**. If the Max is more than 50% higher than the 75th percentile, you likely have skew.
+To identify skew in the Spark UI, navigate to the stage's page and scroll to **Summary Metrics**. Compare the **Max** duration to the **75th percentile**. If the Max is more than 50% higher than the 75th percentile, you might have skew.
 
 Common causes of skew include:
 
@@ -55,7 +55,7 @@ Common causes of skew include:
 
 To resolve skew:
 
-- **Enable Adaptive Query Execution (AQE)**, which dynamically handles skewed joins. Verify it's enabled:
+- **Enable Adaptive Query Execution (AQE)**, which dynamically handles skewed sort-merge and shuffle hash joins. AQE is enabled by default. Verify it's enabled:
 
 ```python
 spark.conf.get("spark.databricks.optimizer.adaptive.enabled")
@@ -100,12 +100,12 @@ Reduce unnecessary shuffle with these approaches:
 
 - **Filter data early** before joins or aggregations to reduce the data that must be shuffled.
 
-- **Use broadcast joins** when one table is small (under 30 MB by default). AQE can automatically convert sort-merge joins to broadcast joins when it detects a small table at runtime.
+- **Use broadcast joins** when one table is small. AQE can automatically convert sort-merge joins to broadcast joins at runtime when a table is smaller than `spark.databricks.adaptive.autoBroadcastJoinThreshold` (30 MB by default).
 
 - **Avoid unnecessary repartitioning**. Each call to `repartition()` triggers a full shuffle.
 
 - **Colocate related data**. If you frequently join two tables on the same key, consider bucketing or partitioning them similarly to minimize shuffle at query time.
 
-The query profile in SQL warehouses visualizes shuffle as **Exchange** nodes in the DAG. Select these nodes to see metrics like data size and number of partitions exchanged.
+The query profile in SQL warehouses shows shuffle as **Shuffle** operators in the DAG. Select these operators to see metrics like data size and number of partitions exchanged.
 
 By systematically checking for skew and spill in the Spark UI, reviewing shuffle metrics, and understanding your caching behavior, you can diagnose most performance issues and apply targeted fixes.

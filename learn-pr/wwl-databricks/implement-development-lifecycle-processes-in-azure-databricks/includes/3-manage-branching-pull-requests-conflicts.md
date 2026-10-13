@@ -13,10 +13,10 @@ Azure Databricks Git folders provide a visual Git client that integrates directl
 To create a new branch:
 
 1. Open the Git dialog by selecting the branch button next to your notebook name.
-2. Select **Create branch** and enter a descriptive name.
+2. Select **Create Branch** and enter a descriptive name.
 3. Base your branch on the appropriate source branch, typically `main`.
 
-:::image type="content" source="../media/3-create-branch.png" alt-text="Screenshot of the create branch dialog." lightbox="../media/3-create-branch.png":::
+:::image type="content" source="../media/3-create-branch.png" alt-text="Screenshot of the dialog for creating a Git branch." lightbox="../media/3-create-branch.png":::
 
 Use a **consistent naming convention** for branches to identify work clearly. Common patterns include:
 
@@ -69,7 +69,7 @@ After a pull request merges, you can sync the changes to your local workspace by
 
 When a conflict occurs, the Git folders UI displays a list of conflicting files with resolution options:
 
-**Keep current or take incoming changes**: Use this approach when you know you want all changes from one side. Select the kebab menu next to the file and choose **Keep all current changes** or **Take all incoming changes**.
+**Keep current or take incoming changes**: Use this approach when you know you want all changes from one side. Select **Keep all current changes** or **Take all incoming changes**.
 
 **Manual resolution**: For complex conflicts, edit the file directly. Git marks conflicting sections with markers:
 

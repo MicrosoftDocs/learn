@@ -21,9 +21,9 @@ Azure Blob Storage supports three different types of blob:
 
 - **Block blobs**. A block blob is handled as a set of blocks. Each block can vary in size, up to 4,000 MiB. A block blob can contain up to 190.7 TiB (4,000 MiB X 50,000 blocks). The block is the smallest amount of data that can be read or written as an individual unit. Block blobs are best used to store discrete, large, binary objects that change infrequently.
 
-- **Page blobs**. A page blob is organized as a collection of fixed size 512-byte pages. A page blob is optimized to support random read and write operations; you can fetch and store data for a single page if necessary. A page blob can hold up to 8 TB of data. Azure uses page blobs to implement virtual disk storage for virtual machines.
+- **Page blobs**. A page blob is organized as a collection of fixed size 512-byte pages. A page blob is optimized to support random read and write operations; you can fetch and store data for a single page if necessary. A page blob can hold up to 8 TiB of data. Azure uses page blobs to implement virtual disk storage for virtual machines.
 
-- **Append blobs**. An append blob is a block blob optimized to support append operations. You can only add blocks to the end of an append blob; updating or deleting existing blocks isn't supported. Each block can vary in size, up to 4 MB. The maximum size of an append blob is just over 195 GB.
+- **Append blobs**. An append blob is a block blob optimized to support append operations. You can only add blocks to the end of an append blob; updating or deleting existing blocks isn't supported. Each block can vary in size, up to 4 MiB. The maximum size of an append blob is just over 195 GiB.
 
 ![Diagram explaining different types of blob storage.](../media/azure-blob-types.png)
 
@@ -35,7 +35,7 @@ Blob storage provides four access tiers, which help to balance access latency an
 
 - The **Cold** tier is optimized for storing data that is rarely accessed or modified, but still requires fast retrieval. The Cold tier has lower storage costs and higher access costs compared to the Cool tier. Data should remain in the Cold tier for a minimum of 90 days to avoid early deletion penalties. Use this tier for data such as short-term backups, disaster recovery data, or large datasets that need cost-effective storage.
 
-- The **Archive** tier provides the lowest storage cost, but with increased latency. The Archive tier is intended for historical data that mustn't be lost, but is required only rarely. Data should remain in the Archive tier for a minimum of 180 days to avoid early deletion penalties. Blobs in the Archive tier are effectively stored in an offline state. Typical reading latency for the Hot, Cool, and Cold tiers are a few milliseconds, but for the Archive tier, it can take up to 15 hours for the data to become available. To retrieve a blob from the Archive tier, you must change the access tier to Hot, Cool, or Cold. The blob will then be rehydrated. You can read the blob only when the rehydration process is complete.
+- The **Archive** tier provides the lowest storage cost, but with increased latency. The Archive tier is intended for historical data that mustn't be lost, but is required only rarely. Data should remain in the Archive tier for a minimum of 180 days to avoid early deletion penalties. Blobs in the Archive tier are effectively stored in an offline state. Typical reading latency for the Hot, Cool, and Cold tiers are a few milliseconds, but for the Archive tier, it can take up to 15 hours for the data to become available. To retrieve a blob from the Archive tier, you must change the access tier to Hot, Cool, or Cold. The blob is then rehydrated. You can read the blob only when the rehydration process is complete.
 
 ![Diagram explaining different access tiers of blob storage.](../media/azure-blob-access-tiers.png)
 

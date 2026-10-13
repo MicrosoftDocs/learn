@@ -33,7 +33,7 @@ Samir,Nadoy,samir@northwind.com
 
 ## JavaScript Object Notation (JSON)
 
-JSON is a ubiquitous format in which a hierarchical document schema is used to define data entities (objects) that have multiple attributes. Each attribute might be an object (or a collection of objects); making JSON a flexible format that's good for both structured and semi-structured data.
+JSON is a widely used format in which a hierarchical document schema is used to define data entities (objects) that have multiple attributes. Each attribute might be an object (or a collection of objects); making JSON a flexible format that's good for both structured and semi-structured data.
 
 The following example shows a JSON document containing a collection of customers. Each customer has three attributes (*firstName*, *lastName*, and *contact*), and the *contact* attribute contains a collection of objects that represent one or more contact methods (email or phone). Objects are enclosed in braces (**{..}**) and collections are enclosed in square brackets (**[..]**). Attributes are represented by *name* **:** *value* pairs and separated by commas (**,**).
 
@@ -103,12 +103,12 @@ While human-readable formats for structured and semi-structured data can be usef
 
 Some common optimized file formats you might see include *Parquet* and *Avro*:
 
-- *Parquet* is a columnar data format and the de facto standard for modern data lakehouses. It's an Apache project. A Parquet file contains row groups. Data for each column is stored together in the same row group. Each row group contains one or more chunks of data. A Parquet file includes metadata that describes the set of rows found in each chunk. An application can use this metadata to quickly locate the correct chunk for a given set of rows, and retrieve the data in the specified columns for these rows. Parquet specializes in storing and processing nested data types efficiently and supports efficient compression and encoding schemes.
+- *Parquet* is a columnar data format that's widely used in data lakes and lakehouses. It's an Apache project. A Parquet file contains row groups. Data for each column is stored together in the same row group. Each row group contains one or more chunks of data. A Parquet file includes metadata that describes the set of rows found in each chunk. An application can use this metadata to quickly locate the correct chunk for a given set of rows, and retrieve the data in the specified columns for these rows. Parquet specializes in storing and processing nested data types efficiently and supports efficient compression and encoding schemes.
 
 > [!div class="mx-imgBorder"]
 > ![Diagram showing Parquet format.](../media/parquet.png)
 
-- *Avro* is a row-based format. It was created by Apache. Each file contains a header that describes the structure of the data in the file. This header is stored as JSON. The data is stored as binary information in one or more blocks of records. An application uses the information in the header to parse the binary data and extract the fields it contains. Avro is a good format for compressing data and minimizing storage and network bandwidth requirements.
+- *Avro* is a row-based format. It's an Apache project. Each file contains a header that describes the structure of the data in the file. This header is stored as JSON. The data is stored as binary information in one or more blocks of records. An application uses the information in the header to parse the binary data and extract the fields it contains. Avro is a good format for compressing data and minimizing storage and network bandwidth requirements.
 
 > [!div class="mx-imgBorder"]
 > ![Diagram showing Avro format.](../media/row-based-storage.png)

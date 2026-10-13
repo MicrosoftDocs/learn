@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/11/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -26,7 +26,7 @@ quiz:
       explanation: "Correct. Autotermination shuts down idle clusters after a specified period of inactivity, preventing costs from accumulating overnight or over weekends."
     - content: "Budget alerts"
       isCorrect: false
-      explanation: "Incorrect. Budget alerts notify you when spending approaches or exceeds limits, but they don't automatically stop clusters."
+      explanation: "Incorrect. Budget alerts notify you when spending exceeds a threshold, but they don't automatically stop clusters."
   - content: "Which Azure Databricks feature allows a data engineer to rerun only the failed tasks and their dependents in a multi-task job?"
     choices:
     - content: "Job restart"
@@ -45,7 +45,7 @@ quiz:
       explanation: "Incorrect. When all tasks complete in similar durations, data is evenly distributed across partitions, indicating no skew."
     - content: "The maximum task duration is significantly higher than the 75th percentile"
       isCorrect: true
-      explanation: "Correct. Data skew is indicated when comparing the Max duration to the 75th percentile in the Summary Metrics. If the Max is more than 50% higher than the 75th percentile, you likely have skew."
+      explanation: "Correct. Data skew is indicated when comparing the Max duration to the 75th percentile in the Summary Metrics. If the Max is more than 50% higher than the 75th percentile, you might have skew."
     - content: "High CPU utilization across all worker nodes"
       isCorrect: false
       explanation: "Incorrect. High CPU utilization indicates compute-intensive work but doesn't specifically indicate data skew."
@@ -60,14 +60,14 @@ quiz:
     - content: "Spill"
       isCorrect: true
       explanation: "Correct. Spill happens when Spark runs out of memory during processing and writes intermediate data to disk. This disk I/O significantly slows down operations."
-  - content: "Which Azure service receives diagnostic and audit logs when log streaming is configured for Azure Databricks?"
+  - content: "Which Azure service do you send Azure Databricks diagnostic logs to so that you can query them with KQL and create log-based alerts?"
     choices:
     - content: "Azure Blob Storage"
       isCorrect: false
-      explanation: "Incorrect. While Azure Blob Storage can store data, Azure Log Analytics is the destination for centralized log streaming and KQL queries."
+      explanation: "Incorrect. A diagnostic setting can archive logs to a storage account, but Azure Blob Storage doesn't provide KQL queries or log-based alerts."
     - content: "Azure Log Analytics"
       isCorrect: true
-      explanation: "Correct. Log streaming sends diagnostic data from Azure Databricks to Azure Log Analytics in near real-time, enabling powerful KQL queries, alerts, and dashboards."
+      explanation: "Correct. Sending diagnostic logs to a Log Analytics workspace enables KQL queries, alerts, and dashboards."
     - content: "Azure Event Hubs"
       isCorrect: false
-      explanation: "Incorrect. Event Hubs is used for streaming event data, but Azure Log Analytics is the destination for Databricks diagnostic log streaming."
+      explanation: "Incorrect. A diagnostic setting can stream logs to an event hub for external consumers, but Azure Event Hubs doesn't provide KQL queries or log-based alerts."

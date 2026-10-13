@@ -12,13 +12,13 @@ These governance challenges directly affect the value organizations can derive f
 
 - A lack of built-in intelligence restricts broader use of data and AI platforms, particularly for nontechnical users. This slows down innovation, delays decision-making, and prevents organizations from fully realizing the benefits of their data and AI investments.
 
-Azure Databricks, combined with Unity Catalog and Microsoft Purview, provides a robust solution for managing and governing data effectively. 
+Azure Databricks, combined with Unity Catalog and Microsoft Purview, provides a solution for managing and governing data effectively. 
 
 ## Unity Catalog 
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=72b4857c-6be6-421e-a53f-c672e53c5d33]
 
-Unity Catalog provides a centralized way to manage access, discovery, lineage, audit logs, and quality monitoring across data and AI assets within Azure Databricks. It applies consistently across all workspaces in a region.
+Unity Catalog provides a centralized way to manage access, discovery, lineage, audit logs, and quality monitoring across data and AI assets within Azure Databricks. It applies consistently across all workspaces attached to the same metastore.
 
 ![Diagram of the Unity Catalog components.](../media/06-azure-databricks-with-unity-catalog.png)
 
@@ -34,9 +34,9 @@ catalog.schema.table_or_other_object
 - **Schemas** (also known as databases) are subdivisions within catalogs, organizing assets more granularly—for example by project or use case.
 - **Objects** in schemas include tables (managed or external), views, volumes, functions, and models.
 
-Tables can be either managed or external. With **managed tables**, Unity Catalog handles both governance and storage (always Delta Lake format). With **external tables**, Unity Catalog manages access from Databricks, but data lifecycle/storage is managed externally. This supports multiple formats (Delta, CSV, JSON, Parquet, etc.)
+Tables can be either managed or external. With **managed tables**, Unity Catalog handles both governance and storage (Delta or Apache Iceberg format). With **external tables**, Unity Catalog manages access from Databricks, but data lifecycle/storage is managed externally. This supports multiple formats (Delta, CSV, JSON, Parquet, etc.)
 
-Unity Catalog implements **fine-grained access control** via ANSI SQL commands across multiple levels—metastore, catalog, schema, down to rows and columns. For example, the following command gives the 'finance-team' user group the permission to create new tables in the 'myschema' within the 'mycatalog' database.
+Unity Catalog implements **fine-grained access control** via ANSI SQL commands across multiple levels—metastore, catalog, schema, down to rows and columns. For example, the following command gives the 'finance-team' user group the permission to create new tables in the 'myschema' schema within the 'mycatalog' catalog.
 
 ```sql
 GRANT CREATE TABLE ON SCHEMA mycatalog.myschema TO `finance-team`;
@@ -46,7 +46,7 @@ Exploring data assets in Unity Catalog is straightforward. You can use the **Cat
 
 Unity Catalog provides a complete picture of your data's history. It logs access, audit trails, and lineage—right down to the column level.
 
-In most accounts, Unity Catalog is enabled by default when you create a workspace. You can get started using Unity Catalog with the default settings. There are optional configurations that you might want to enable, however. 
+Unity Catalog is automatically enabled for workspaces created after November 9, 2023. You can get started using Unity Catalog with the default settings. There are optional configurations that you might want to enable, however. 
 
 ## Microsoft Purview
 

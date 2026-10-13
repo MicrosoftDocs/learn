@@ -4,7 +4,7 @@ title: Configure and package Declarative Automation Bundles
 metadata:
   title: Configure and Package Declarative Automation Bundles
   description: Learn how to configure and customize Declarative Automation Bundles for deployment automation, including bundle configuration structure, variables, resources, and deployment targets.
-  ms.date: 05/11/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

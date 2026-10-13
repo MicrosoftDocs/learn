@@ -20,7 +20,7 @@ CREATE VIEW Deliveries
 AS
 SELECT o.OrderNo, o.OrderDate,
        c.FirstName, c.LastName, c.Address, c.City
-FROM Order AS o JOIN Customer AS c
+FROM [Order] AS o JOIN Customer AS c
 ON o.Customer = c.ID;
 ```
 
@@ -74,7 +74,7 @@ The index creates a tree-based structure that the database system's query optimi
 > [!div class="mx-imgBorder"]
 > ![Screenshot of an example index that creates a tree-based structure.](../media/index.png)
 
-For a table containing few rows, using the index is probably not any more efficient than simply reading the entire table and finding the rows requested by the query (in which case the query optimizer will ignore the index). However, when a table has many rows, indexes can dramatically improve the performance of queries.
+For a table containing few rows, using the index is probably not any more efficient than simply reading the entire table and finding the rows requested by the query (in which case the query optimizer ignores the index). However, when a table has many rows, indexes can dramatically improve the performance of queries.
 
 You can create many indexes on a table. So, if you also wanted to find products based on price, creating another index on the **Price** column in the **Product** table might be useful. However, indexes aren't free. An index consumes storage space, and each time you insert, update, or delete data in a table, the indexes for that table must be maintained. This additional work can slow down insert, update, and delete operations. You must strike a balance between having indexes that speed up your queries versus the cost of performing other operations.
 

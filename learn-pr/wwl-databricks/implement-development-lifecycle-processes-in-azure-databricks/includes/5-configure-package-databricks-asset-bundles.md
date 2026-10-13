@@ -3,7 +3,7 @@
 When you work on data engineering projects, you need a systematic way to define, package, and deploy your Databricks resources across environments. **Declarative Automation Bundles** (formerly known as Databricks Asset Bundles) provide an **infrastructure-as-code** approach that lets you describe jobs, pipelines, and other resources in YAML configuration files. By configuring and customizing these bundles, you can **automate deployments** and ensure consistency between development and production workspaces.
 
 > [!NOTE]
-> Bundle configuration can also be expressed in Python (Public Preview), which lets you define jobs and resources as Python code instead of YAML. This unit focuses on YAML-based configuration, which is the most common approach. To learn more, see [Bundle configuration in Python](/azure/databricks/dev-tools/bundles/python/).
+> Bundle configuration can also be expressed in Python, which lets you define jobs and resources as Python code instead of YAML. This unit focuses on YAML-based configuration, which is the most common approach. To learn more, see [Bundle configuration in Python](/azure/databricks/dev-tools/bundles/python/).
 
 :::image type="content" source="../media/5-configure-package-databricks-asset-bundles.png" alt-text="Diagram explaining Declarative Automation Bundles." border="false" lightbox="../media/5-configure-package-databricks-asset-bundles.png":::
 
@@ -122,7 +122,7 @@ resources:
 Each task specifies its type, such as **notebook_task** for running notebooks or **spark_python_task** for Python scripts. The `depends_on` setting creates **task dependencies**, ensuring tasks run in the correct order. Parameters passed through `base_parameters` let you customize task behavior at runtime.
 
 > [!IMPORTANT]
-> When configuring tasks, use paths relative to the bundle's root directory. The Databricks CLI resolves these paths when deploying the bundle to your workspace.
+> When configuring tasks, use paths relative to the location of the configuration file in which you declare them. The Databricks CLI resolves these paths when deploying the bundle to your workspace.
 
 For compute configuration, you can reference existing clusters or define job clusters:
 
@@ -133,7 +133,7 @@ resources:
       job_clusters:
         - job_cluster_key: shared-cluster
           new_cluster:
-            spark_version: 14.3.x-scala2.12
+            spark_version: 16.4.x-scala2.12
             node_type_id: Standard_DS3_v2
             num_workers: 2
       tasks:
@@ -168,7 +168,7 @@ targets:
       host: https://adb-prod.7.azuredatabricks.net
 ```
 
-In production mode, the CLI validates that your local Git branch matches the specified branch and recommends using **service principals** for deployments. You can customize these behaviors with the **presets** mapping:
+In production mode, the CLI validates that your local Git branch matches the branch specified for the target (the optional `git` mapping) and recommends using **service principals** for deployments. You can customize these behaviors with the **presets** mapping:
 
 ```yaml
 targets:
