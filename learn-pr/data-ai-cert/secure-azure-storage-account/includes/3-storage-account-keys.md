@@ -1,17 +1,17 @@
 Much of Contoso's data is generated or consumed by custom applications. The applications are written in various languages.
 
-Azure Storage accounts can create authorized apps in Active Directory to control access to the data in blobs and queues. This authentication approach is the best solution for apps that use Blob storage or Queue storage.
+Azure Storage supports authorizing requests with Microsoft Entra ID, which is the recommended approach for apps that use Blob storage or Queue storage.
 
-For other storage models, clients can use a *shared key*, or shared secret. This authentication option is one of the easiest to use, and it supports blobs, files, queues, and tables. The client embeds the shared key in the HTTP `Authorization` header of every request, and the Storage account validates the key.
+As an alternative, clients can use *Shared Key* authorization, which relies on a shared secret. This authentication option is one of the easiest to use, and it supports blobs, files, queues, and tables. The client signs every request with the shared key and sends the signature in the HTTP `Authorization` header, and the Storage account validates the signature.
 
 For example, an application can issue a `GET` request against a blob resource:
 
 ```
-GET http://myaccount.blob.core.windows.net/?restype=service&comp=stats
+GET https://myaccount.blob.core.windows.net/?restype=service&comp=stats
 
 ```
 
-HTTP headers control the version of the REST API, the date, and the encoded shared key:
+HTTP headers control the version of the REST API, the date, and the signature that's computed with the shared key:
 
 ```
 x-ms-version: 2018-03-28  
@@ -24,27 +24,29 @@ Authorization: SharedKey myaccount:CY1OP3O3jGFpYFbTCBimLn0Xov0vt0khH/E5Gy0fXvg=
 
 In Azure Storage accounts, shared keys are called *storage account keys*. Azure creates two of these keys (primary and secondary) for each storage account you create. The keys allow access to *everything* in the account.
 
-You'll find the storage account keys in the Azure portal view of the storage account. In the left menu pane of your storage account, select **Security + networking** > **Access keys**.
+Find the storage account keys in the Azure portal view of the storage account. In the left menu pane of your storage account, select **Security + networking** > **Access keys**.
 
 ![Screenshot that shows the access keys in the Azure portal.](../media/3-storage-keys.png)
 
 ## Protect shared keys
 
-The storage account has only two keys, and they provide full access to the account. Because these keys are powerful, use them only with trusted in-house applications that you control completely.
+The storage account has only two keys, and they provide full access to the account. Because of this access level, use them only with trusted in-house applications that you control completely.
 
-If the keys are compromised, change the key values in the Azure portal. Here are several reasons to regenerate your storage account keys:
+If the keys are compromised, regenerate the key values in the Azure portal. Here are several reasons to regenerate your storage account keys:
 
 - For security reasons, you might regenerate keys periodically.
 - If someone hacks into an application and gets the key that was hard-coded or saved in a configuration file, regenerate the key. The compromised key can give the hacker full access to your storage account.
-- If your team is using a Storage Explorer application that keeps the storage account key, and one of the team members leaves, regenerate the key. Otherwise, the application will continue to work, giving the former team member access to your storage account.
+- If your team is using a Storage Explorer application that keeps the storage account key, and one of the team members leaves, regenerate the key. Otherwise, the application continues to work, giving the former team member access to your storage account.
 
-To refresh keys:
+To rotate keys:
 
-- Change each trusted app to use the secondary key.
-- Refresh the primary key in the Azure portal. This will be the new secondary key value.
+1. Change each trusted app to use the secondary key.
+1. Regenerate the primary key in the Azure portal.
+1. Change each trusted app to use the new primary key.
+1. Regenerate the secondary key.
 
 > [!IMPORTANT]
-> After you refresh keys, any client that attempts to use the old key value will be refused. Make sure you identify all clients that use the shared key and update them to keep them operational.
+> After you regenerate keys, any client that attempts to use the old key value is refused. Regenerating a key also invalidates account and service shared access signatures (SAS) that were signed with it. Make sure you identify all clients that use the shared key and update them to keep them operational.
 
 ## Disable Shared Key authorization
 
@@ -53,4 +55,4 @@ Beyond rotating keys, you can remove Shared Key authorization entirely. When you
 Disabling Shared Key is the strongest protection against unauthorized key use, and it's a required step before you can apply Microsoft Entra Conditional Access policies to a storage account. Before disabling, migrate your applications to use Microsoft Entra ID-based authorization (preferably with managed identities) so that their access isn't interrupted.
 
 > [!TIP]
-> Microsoft recommends disabling Shared Key access if it isn't required to prevent its inadvertent use. Use Microsoft Entra ID with managed identities for workloads that support OAuth, Kerberos for Azure Files over SMB, and user delegation SAS tokens for other scenarios.
+> Microsoft recommends disabling Shared Key access if it isn't required to prevent its inadvertent use. Use Microsoft Entra ID with managed identities for workloads that support OAuth, Kerberos for Azure Files over SMB, and user delegation SAS tokens where Microsoft Entra ID authorization can't be used.

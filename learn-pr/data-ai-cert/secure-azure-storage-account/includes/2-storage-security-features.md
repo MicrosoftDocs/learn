@@ -16,11 +16,11 @@ All data written to Azure Storage is automatically encrypted by Storage Service 
 
 For virtual machines (VMs), Azure lets you encrypt virtual hard disks (VHDs) by using Azure Disk Encryption. This encryption uses BitLocker for Windows images, and uses dm-crypt for Linux.
 
-Azure Key Vault stores the keys automatically to help you control and manage the disk-encryption keys and secrets. So even if someone gets access to the VHD image and downloads it, they can't access the data on the VHD.
+Azure Disk Encryption integrates with Azure Key Vault to help you control and manage the disk-encryption keys and secrets. So even if someone gets access to the VHD image and downloads it, they can't access the data on the VHD.
 
 ## Encryption in transit
 
-Keep your data secure by enabling *transport-level security* between Azure and the client. Always use *HTTPS* to secure communication over the public internet. When you call the REST APIs to access objects in storage accounts, you can enforce the use of HTTPS by requiring [secure transfer](/azure/storage/storage-require-secure-transfer) for the storage account. After you enable secure transfer, connections that use HTTP will be refused. This flag will also enforce secure transfer over SMB by requiring SMB 3.0 for all file share mounts.
+Keep your data secure by enabling *transport-level security* between Azure and the client. Always use *HTTPS* to secure communication over the public internet. When you call the REST APIs to access objects in storage accounts, you can enforce the use of HTTPS by requiring [secure transfer](/azure/storage/common/storage-require-secure-transfer) for the storage account. When secure transfer is required, Azure Storage rejects requests that use HTTP. Connections to an Azure file share over SMB without encryption also fail. The **Secure transfer required** property is enabled by default when you create a storage account.
 
 ## CORS support
 
@@ -28,11 +28,11 @@ Contoso stores several website asset types in Azure Storage. These types include
 
 Azure Storage supports cross-domain access through cross-origin resource sharing (CORS). CORS uses HTTP headers so that a web application at one domain can access resources from a server at a different domain. By using CORS, web apps ensure that they load only authorized content from authorized sources.
 
-CORS support is an optional flag you can enable on Storage accounts. The flag adds the appropriate headers when you use HTTP GET requests to retrieve resources from the Storage account.
+CORS is disabled by default. To enable it, add CORS rules to the service properties of each storage service (Blob, File, Queue, or Table) that you want to expose. The rules specify the allowed origins, methods, and headers.
 
 ## Role-based access control
 
-To access data in a storage account, the client makes a request over HTTP or HTTPS. Every request to a secure resource must be authorized. The service ensures that the client has the permissions required to access the data. You can choose from several access options. Arguably, the most flexible option is role-based access.
+To access data in a storage account, the client makes a request over HTTP or HTTPS. Every request to a secure resource must be authorized. The service ensures that the client has the permissions required to access the data. You can choose from several access options. Microsoft recommends role-based access with Microsoft Entra ID.
 
 Azure Storage supports Microsoft Entra ID and role-based access control (RBAC) for both resource management and data operations. For security principals, you can assign RBAC roles that are scoped to the storage account. You can use Microsoft Entra ID to authorize resource management operations, such as configuration. Microsoft Entra ID is supported for data operations on Blob, File, Queue, and Table storage.
 
@@ -43,6 +43,6 @@ You can assign RBAC roles to a security principal or a managed identity for Azur
 
 ## Auditing access
 
-Auditing is another part of controlling access. You can audit Azure Storage access by using the built-in Storage Analytics service.
+Auditing is another part of controlling access. You can audit Azure Storage access by using Azure Storage logs in Azure Monitor. These resource logs record requests to the storage account, and you can search them for specific requests. You can filter based on the authentication mechanism, the success of the operation, or the resource that was accessed.
 
-Storage Analytics logs every operation in real time, and you can search the Storage Analytics logs for specific requests. You can filter based on the authentication mechanism, the success of the operation, or the resource that was accessed.
+The older Storage Analytics logs are still supported, but Microsoft recommends Azure Monitor logs instead.
