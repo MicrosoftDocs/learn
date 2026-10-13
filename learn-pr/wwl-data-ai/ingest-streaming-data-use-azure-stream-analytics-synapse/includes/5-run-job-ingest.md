@@ -36,7 +36,7 @@ You can monitor a running Stream Analytics job in the Azure portal. The job over
 - **Input events** — the number of events received from input sources.
 - **Output events** — the number of events written to outputs.
 - **Runtime errors** — errors encountered during query execution.
-- **Watermark delay** — the latency between event time and the time the event is processed.
+- **Watermark delay** — the maximum watermark delay across all partitions of all outputs in the job.
 
 > [!NOTE]
 > For more information about monitoring and troubleshooting Stream Analytics jobs, see [Monitor Azure Stream Analytics jobs](/azure/stream-analytics/monitor-azure-stream-analytics?azure-portal=true) in the Azure Stream Analytics documentation.

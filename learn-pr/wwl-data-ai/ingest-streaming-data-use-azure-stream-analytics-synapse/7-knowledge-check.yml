@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 04/15/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -33,7 +33,7 @@ quiz:
       explanation: "Correct. A Blob storage/ADLS Gen2 output writes data to files in Azure Data Lake Storage Gen2, which is suitable for batch analytics workloads."
     - content: "Power BI"
       isCorrect: false
-      explanation: "Incorrect. A Power BI output writes to a streaming dataset for near real-time visualization, not to file-based storage."
+      explanation: "Incorrect. A Power BI output writes to a Power BI dataset for visualization, not to file-based storage."
   - content: "You want to forward enriched events from a Stream Analytics job to a downstream application via a message hub. Which output type should you use?"
     choices:
     - content: "Azure Event Hubs"
