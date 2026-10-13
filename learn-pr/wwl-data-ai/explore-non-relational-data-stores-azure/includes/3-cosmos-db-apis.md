@@ -15,9 +15,9 @@ In the previous unit, you explored what Azure Cosmos DB is and how it organizes 
 
 When you create a Cosmos DB account, you choose which API to use. That choice determines how your application interacts with the database: what data format it sends, what query language it uses, and which client libraries it works with. Internally, Cosmos DB stores data in its own format; the API acts as an abstraction layer on top.
 
-The main benefit is portability. If your team already has an application built on MongoDB or Apache Cassandra, you can point it at Cosmos DB with minimal code changes — and gain global distribution, managed throughput, and the inherent SLA benefits in the process.
+The main benefit is portability. If your team already has an application built on MongoDB or Apache Cassandra, you can point it at Cosmos DB with minimal code changes—and gain global distribution, managed throughput, and SLA-backed availability in the process.
 
-The five supported APIs are: **NoSQL**, **MongoDB**, **Table**, **Apache Cassandra**, and **Apache Gremlin**. Each is designed for a different type of data or use case.
+The five supported APIs are: **NoSQL**, **MongoDB**, **Table**, **Apache Cassandra**, and **Apache Gremlin**. Each is designed for a different type of data or use case. Azure Cosmos DB for PostgreSQL is a separate offering on a retirement path, and isn't recommended for new projects.
 
 ![Diagram showing Azure Cosmos DB at the center with five APIs branching outward: NoSQL, MongoDB, Table, Apache Cassandra, and Apache Gremlin.](../media/cosmos-db-apis.png)
 
@@ -26,9 +26,9 @@ The five supported APIs are: **NoSQL**, **MongoDB**, **Table**, **Apache Cassand
 **Azure Cosmos DB for NoSQL** is the native Cosmos DB API. It stores data as JSON documents and lets you query with a SQL-like syntax.
 
 > [!NOTE]
-> This API was previously called the SQL API. It was renamed to the NoSQL API in 2023. If you see older documentation that refers to the "SQL API," it's the same service.
+> This API was previously called the SQL API. If you see older documentation that refers to the "SQL API," it's the same service.
 
-The NoSQL API is recommended for new applications.
+The NoSQL API is the native Cosmos DB API. Microsoft recommends it for high-scale scenarios that need a 99.999% availability SLA, instant autoscale, and automatic failover across multiple regions.
 
 A query looks like this:
 
@@ -52,7 +52,7 @@ The result is a JSON document:
 ```
 
 > [!TIP]
-> Cosmos DB for NoSQL supports Fabric mirroring, which replicates your operational data into Microsoft Fabric automatically — no pipeline required. This makes it easy to run analytics on live data without affecting your transactional workload.
+> Cosmos DB for NoSQL supports Fabric mirroring, which replicates your operational data into Microsoft Fabric with no ETL pipeline to build or manage. You can run analytics on near-real-time data without consuming request units or affecting your transactional workload.
 
 ## Cosmos DB for MongoDB
 
@@ -74,13 +74,16 @@ The result:
 }
 ```
 
-This API is a natural choice when your team already has MongoDB expertise or when you're migrating an existing MongoDB workload to a managed cloud service.
+This API is a fit when your team has MongoDB expertise and wants to use MongoDB drivers with the globally distributed, request-unit-based Cosmos DB model.
+
+> [!NOTE]
+> To migrate an existing MongoDB application or use the full set of MongoDB Query Language features, Microsoft recommends [Azure DocumentDB](/azure/documentdb/overview), a separate service with MongoDB wire protocol compatibility.
 
 ## Cosmos DB for Table
 
 **Azure Cosmos DB for Table** stores data as key-value pairs in tables, using the same programming model as Azure Table Storage. If you already have an Azure Table Storage application, it can connect to Cosmos DB for Table with minimal code changes.
 
-What you gain compared to Azure Table Storage includes greater scalability, global distribution, automatic secondary indexes, and instant autoscale. A table might look like this:
+What you gain compared to Azure Table Storage includes greater scalability, turnkey global distribution, and automatic indexing on all properties. A table might look like this:
 
 | PartitionKey | RowKey | Name        | Email               |
 | ------------ | ------ | ----------- | ------------------- |
@@ -94,7 +97,7 @@ https://endpoint/Customers(PartitionKey='1',RowKey='124')
 ```
 
 > [!TIP]
-> Azure Table Storage is still available and supported, but Cosmos DB for Table is the recommended choice for new workloads that need key-value storage at scale.
+> Azure Table Storage remains available. Cosmos DB for Table offers higher performance and availability, global distribution, and automatic secondary indexes, so consider it when your key-value workload needs those capabilities.
 
 ## Cosmos DB for Apache Cassandra
 
@@ -136,6 +139,6 @@ To retrieve all employee vertices in order of ID:
 g.V().hasLabel('employee').order().by('id')
 ```
 
-With five APIs to choose from, you can match Cosmos DB's interface to your data model, your team's existing skills, and your application code. In the next unit, you'll get hands-on experience with Cosmos DB directly.
+With five APIs to choose from, you can match Cosmos DB's interface to your data model, your team's existing skills, and your application code. In the next unit, you get hands-on experience with Cosmos DB directly.
 
 ::: zone-end

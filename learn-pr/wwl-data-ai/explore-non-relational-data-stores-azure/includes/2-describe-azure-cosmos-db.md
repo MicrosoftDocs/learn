@@ -9,7 +9,7 @@
 
 ::: zone pivot="text"
 
-In the previous unit, you learned that Azure Cosmos DB is a highly scalable cloud database service for NoSQL data. In this unit, you'll explore what makes it different from traditional relational databases, how it organizes data internally, and when it's the right choice for your application.
+In the previous unit, you learned that Azure Cosmos DB is a highly scalable cloud database service for NoSQL data. In this unit, you explore what makes it different from traditional relational databases, how it organizes data internally, and when it's the right choice for your application.
 
 ## What is Azure Cosmos DB?
 
@@ -17,13 +17,11 @@ In the previous unit, you learned that Azure Cosmos DB is a highly scalable clou
 
 Cosmos DB is **schema-agnostic**. Items stored in the same container don't need to share the same structure. One item might have five properties; another in the same container could have 15 entirely different ones. This flexibility makes Cosmos DB well suited to applications where data shapes change over time or vary between records.
 
-Microsoft uses Cosmos DB internally for some of its most demanding services, including Xbox Live, Microsoft 365, and core parts of Azure. Those services collectively handle billions of operations per day, which gives you a sense of the scale Cosmos DB is built for.
-
 ## How Azure Cosmos DB organizes data
 
 Cosmos DB uses a four-level resource hierarchy to organize your data:
 
-- **Account**: The top-level Azure resource. A single account can contain unlimited databases.
+- **Account**: The top-level Azure resource. A single account can manage an unlimited amount of data and provisioned throughput.
 - **Database**: A logical namespace that groups related containers together.
 - **Container**: The primary unit of storage and scaling. You configure the partition key, throughput, indexing policy, and an optional time-to-live (TTL) at the container level.
 - **Items**: Individual data entities stored inside a container. Depending on which API you use, items may be called documents, rows, nodes, or edges.
@@ -36,9 +34,9 @@ Cosmos DB automatically creates and maintains indexes on all item properties by 
 
 ## Global distribution and performance
 
-Cosmos DB is built for global distribution. Add Azure regions to your account at any time, and the service automatically replicates your data to each one. Users in different locations read from and write to the nearest regional replica, which keeps latency low no matter where they are.
+Cosmos DB is built for global distribution. Add Azure regions to your account at any time, and the service automatically replicates your data to each one. Users in different locations read from the nearest regional replica, and with multi-region writes enabled, they also write to the nearest region, which keeps latency low no matter where they are.
 
-Multi-region write accounts provide high availability guarantees. At the 99th percentile, reads typically complete in around 4 milliseconds and writes in around 5 milliseconds.
+Accounts with multi-region writes have a 99.999% availability SLA. Reads and writes are guaranteed to complete in less than 10 milliseconds at the 99th percentile. Average latency (at the 50th percentile) is typically 4 milliseconds or less for reads and 5 milliseconds or less for writes.
 
 Because replicas exist in multiple regions, you need to decide how consistent those replicas must be with each other. Cosmos DB offers five **consistency levels** so you can tune that trade-off:
 
@@ -50,40 +48,38 @@ Because replicas exist in multiple regions, you need to decide how consistent th
 | **Consistent prefix** | Reads never see out-of-order writes but may see stale data.                                   |
 | **Eventual**          | Replicas converge over time; the weakest guarantee but the highest availability.              |
 
-For most transactional applications, Session consistency is the recommended starting point.
+Session consistency is the most widely used level for both single-region and globally distributed applications.
 
 ![Diagram explaining global distribution and performance.](../media/cosmos-db-global-consistency.png)
 
 ## Throughput modes and pricing
 
-Cosmos DB measures capacity in **Request Units per second (RU/s)**. One RU/s roughly equals the cost of reading a 1-KB item. Every operation—reads, writes, queries, and deletes—consumes some number of RU/s, giving you a single metric to reason about both performance and cost.
+Cosmos DB measures capacity in **Request Units per second (RU/s)**. One request unit (RU) is roughly the cost of reading a single 1-KB item by its ID and partition key. Every operation—reads, writes, queries, and deletes—consumes some number of RUs, giving you a single metric to reason about both performance and cost.
 
-Three throughput modes are available:
+You can configure throughput in the following ways:
 
-| Throughput mode | Description                                                                                                    |
-| --------------- | -------------------------------------------------------------------------------------------------------------- |
-| **Dedicated**   | Throughput is reserved exclusively for a single container.                                                     |
-| **Shared**      | Throughput is provisioned at the database level and shared across up to 25 containers.                         |
-| **Serverless**  | No throughput to provision upfront; you pay per request. Best for workloads with unpredictable or low traffic. |
+| Throughput option | Description                                                                                                    |
+| ----------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Dedicated**     | Provisioned throughput is reserved exclusively for a single container.                                         |
+| **Shared**        | Provisioned throughput is set at the database level and shared across up to 25 containers.                     |
+| **Serverless**    | No throughput to provision upfront; you pay for the RUs your requests consume. Best for workloads with intermittent, unpredictable traffic. |
 
 > [!NOTE]
 > Serverless accounts are limited to a single Azure region. If your application requires global distribution across multiple regions, use a provisioned throughput account instead.
 
 The **autoscale** option lets you set a maximum RU/s, and Cosmos DB adjusts capacity automatically within that range based on actual demand.
 
-![Diagram comparing provisioned and autoscale throughput modes in Azure Cosmos DB, showing how RU/s capacity is allocated in each mode.](../media/cosmos-db-throughput-modes.png)
-
 ## When to use Cosmos DB
 
 Cosmos DB is a strong fit for applications that need flexible schema, global reach, and consistent low latency:
 
 - **IoT and telemetry**: Fast ingestion of high-frequency device data, available for near-real-time processing.
-- **Gaming**: Player profiles, leaderboards, and in-game stats that require single-digit millisecond response times.
+- **Gaming**: Player profiles, leaderboards, and in-game stats that require low-latency reads and writes.
 - **Retail and e-commerce**: Product catalogs, shopping carts, and order pipelines at any scale.
 - **Web and mobile apps**: Personalized user experiences, social features, and third-party integrations.
 
-Some workloads aren't a good fit. If your application depends on complex multi-table joins, Azure SQL Database is better suited. For large-scale historical analytics, consider Microsoft Fabric or Azure Synapse Analytics instead.
+Some workloads aren't a good fit. If your application depends on complex multi-table joins, Azure SQL Database is better suited. For large-scale analytical workloads, consider Microsoft Fabric instead.
 
-In the next unit, you'll look at the different APIs Cosmos DB supports and how each one lets you work with your data using familiar tools and query languages.
+In the next unit, you look at the different APIs Cosmos DB supports and how each one lets you work with your data using familiar tools and query languages.
 
 ::: zone-end
