@@ -17,7 +17,7 @@ A *data warehouse* is a relational database in which the data is stored in a sch
 
 ![Diagram explaining star schema and snowflake schema.](../media/star-snowflake-schema.png)
 
-A data warehouse is a great choice when you have transactional data that can be organized into a structured schema of tables, and you want to use SQL to query them.
+A data warehouse is a good choice when you have transactional data that can be organized into a structured schema of tables, and you want to use SQL to query them.
 
 ## Data lakes
 
@@ -25,7 +25,7 @@ A **data lake** is a file store, usually on a distributed file system for high p
 
 ![Diagram explaining data lake schema on read.](../media/data-lake.png)
 
-Data lakes are great for supporting a mix of structured, semi-structured, and even unstructured data that you want to analyze without the need for schema enforcement when the data is written to the store.
+Data lakes support a mix of structured, semi-structured, and even unstructured data that you want to analyze without the need for schema enforcement when the data is written to the store.
 
 ### Hybrid approaches
 
@@ -42,7 +42,7 @@ On Azure, there are several services that you can use to implement a large-scale
 **[Microsoft Fabric](https://www.microsoft.com/microsoft-fabric)** is a unified, end-to-end SaaS analytics platform built on **OneLake**. It offers two primary analytical store experiences:
 
 - **Fabric Lakehouse**: stores data in Delta Lake format on OneLake, supports notebooks and Spark for data science workloads, and exposes a SQL analytics endpoint for structured querying. It's the right choice when you work with mixed or semi-structured data or run machine-learning workflows.
-- **Fabric Warehouse**: a fully managed, SQL Server–compatible relational data warehouse also backed by OneLake. It's the right choice when your data is structured, your team writes SQL, and you need strong schema enforcement and concurrency for many simultaneous users.
+- **Fabric Warehouse**: a fully managed relational data warehouse that you query with T-SQL, also backed by OneLake. It's the right choice when your data is structured, your team writes SQL, and you need strong schema enforcement and concurrency for many simultaneous users.
 
 Fabric also includes built-in data pipelines (Fabric Data Factory) for data ingestion and transformation, and native Real-Time Intelligence for log and telemetry analytics. **Fabric Mirroring** lets you continuously replicate data from operational systems—including Azure Cosmos DB, Azure SQL Database, and Snowflake—directly into OneLake without building custom pipelines.
 

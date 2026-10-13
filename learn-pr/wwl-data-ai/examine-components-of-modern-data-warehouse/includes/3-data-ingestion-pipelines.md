@@ -24,7 +24,7 @@ Microsoft Fabric offers multiple ways to bring data into OneLake, covering every
 - **Pipelines**: orchestrate multi-step data movement and transformation workflows, chaining activities that run in sequence or in parallel.
 - **Dataflows Gen2**: a low-code, visual experience for building reusable data transformation logic using Power Query, without writing code.
 
-Pipelines consist of one or more *activities* that operate on data. An input dataset provides the source data, and activities can be defined as a data flow that incrementally manipulates the data until an output dataset is produced. Pipelines use *linked services* to connect to sources and destinations—enabling you to load data, run stored procedures, invoke notebooks, and apply custom logic in a single workflow. You can save the output to a Microsoft Fabric Lakehouse or Warehouse, or to any other supported destination. Pipelines can also include built-in activities that don't require a linked service.
+Pipelines consist of one or more *activities* that operate on data. Pipelines use *connections* to reach sources and destinations—enabling you to load data, run stored procedures, invoke notebooks, and apply custom logic in a single workflow. You can save the output to a Microsoft Fabric Lakehouse or Warehouse, or to any other supported destination.
 
 ### OneLake Shortcuts
 
@@ -32,11 +32,11 @@ A **shortcut** is a live reference to external storage—ADLS Gen2, Amazon S3, G
 
 ### Mirroring
 
-**Fabric Mirroring** continuously replicates an external database—Azure SQL Database, Snowflake, Azure Cosmos DB, and others—directly into OneLake in near-real-time. You configure the source connection once and Fabric handles change tracking and replication automatically, without any pipeline authoring. The replicated data lands in Delta Lake format and is immediately queryable through the Lakehouse SQL analytics endpoint.
+**Fabric Mirroring** continuously replicates an external database—Azure SQL Database, Snowflake, Azure Cosmos DB, and others—directly into OneLake in near-real-time. You configure the source connection once and Fabric handles change tracking and replication automatically, without any pipeline authoring. The replicated data lands in OneLake in an analytics-ready format and is queryable through a SQL analytics endpoint that Fabric creates for the mirrored database.
 
 ### Eventstream
 
-For real-time streaming ingestion, **Fabric Eventstream** connects to event sources such as Azure Event Hubs, Apache Kafka, Azure IoT Hub, and custom endpoints. It routes, filters, and transforms streaming events before landing them in a Fabric Lakehouse, KQL database (a time-series optimized store queried with Kusto Query Language), or Real-Time Intelligence destination—enabling near-real-time analytics on continuously arriving data.
+For real-time streaming ingestion, **Fabric Eventstream** connects to event sources such as Azure Event Hubs, Apache Kafka, Azure IoT Hub, and custom endpoints. It routes, filters, and transforms streaming events before landing them in a Fabric Lakehouse or an Eventhouse (which hosts KQL databases, time-series optimized stores queried with Kusto Query Language)—enabling near-real-time analytics on continuously arriving data.
 
 ### Fabric Notebooks
 
@@ -44,15 +44,15 @@ For real-time streaming ingestion, **Fabric Eventstream** connects to event sour
 
 ## Azure Data Factory
 
-**Azure Data Factory** is the standalone Azure service for building data integration pipelines outside of Fabric—for example, when your destination is Azure SQL Database or an external service, or when you're connecting to on-premises data sources in a hybrid environment. Like Fabric Data Factory, it uses the same pipeline-based model with linked services, so skills transfer between the two.
+**Azure Data Factory** is the standalone Azure service for building data integration pipelines outside of Fabric—for example, when your destination is Azure SQL Database or an external service, or when you're connecting to on-premises data sources in a hybrid environment. Like Fabric Data Factory, it uses a pipeline-based model (with linked services in place of Fabric connections), so skills transfer between the two.
 
 ## Azure Databricks
 
 Azure Databricks provides several ingestion approaches, ranging from declarative pipelines to ad-hoc notebooks and specialized file-loading mechanisms.
 
-### Lakeflow Declarative Pipelines
+### Lakeflow pipelines
 
-**Lakeflow Spark Declarative Pipelines** offers a declarative framework for building reliable, incrementally updated pipelines on **Delta Lake**. You define what the output tables should contain; Databricks handles execution ordering, dependency tracking, and incremental processing automatically. This is the recommended approach for production-grade, continuously running ingestion pipelines.
+**Lakeflow pipelines** offer a declarative framework for building reliable, incrementally updated pipelines on **Delta Lake**. You define what the output tables should contain; Databricks handles execution ordering, dependency tracking, and incremental processing automatically. This approach suits production-grade batch and streaming ingestion pipelines.
 
 ### Databricks Notebooks
 
