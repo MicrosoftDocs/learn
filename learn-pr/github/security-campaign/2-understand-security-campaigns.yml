@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.security-campaign.understand-security-campaigns
+title: Understand Security Campaigns
+metadata:
+  title: Understand Security Campaigns
+  description: This content is a part of the "Security Campaigns and Prevention-First Strategy" module.
+  ms.date: 10/08/2026
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-security-campaigns.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.security-campaign.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is a part of the "Security Campaigns and Prevention-First Strategy" module.
+  ms.date: 10/08/2026
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]
