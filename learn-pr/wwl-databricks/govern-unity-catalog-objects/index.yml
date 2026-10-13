@@ -3,22 +3,22 @@ uid: learn.wwl.govern-unity-catalog-objects
 metadata:
   title: Govern Unity Catalog Objects
   description: Learn how to govern data and AI assets in Azure Databricks using Unity Catalog, including access control, data lineage, audit logging, and secure sharing.
-  ms.date: 05/11/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module
   ms.service: azure-databricks
   ai-usage: ai-generated
 title: Govern Unity Catalog objects
-summary: This module covers essential governance practices in Unity Catalog, enabling you to secure, monitor, and manage your data estate effectively. You will learn how to implement fine-grained access control, track data lineage, configure audit logs, and share data securely.
+summary: This module covers essential governance practices in Unity Catalog, enabling you to secure, monitor, and manage your data estate effectively. You learn how to implement fine-grained access control, track data lineage, configure audit logs, and share data securely.
 abstract: |
-  By the end of this module, you'll be able to:
+  After completing this module, you can:
   - Create and preserve table and column definitions for better data discovery
   - Configure attribute-based access control (ABAC) using tags and policies
   - Apply data retention policies to manage data lifecycle
   - Set up and manage data lineage to track data flow
   - Configure audit logging for compliance and security monitoring
-  - Design a secure Delta Sharing strategy for external data collaboration
+  - Design a secure OpenSharing (formerly Delta Sharing) strategy for external data collaboration
 prerequisites: |
   The following prerequisites should be completed:
   * Basic understanding of Azure Databricks workspaces and Unity Catalog

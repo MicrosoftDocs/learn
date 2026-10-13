@@ -68547,8 +68547,13 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/8-secure-delta-sharing-strategy.md",
-      "redirect_url": "/training/modules/govern-unity-catalog-objects/7-secure-delta-sharing-strategy",
+      "redirect_url": "/training/modules/govern-unity-catalog-objects/7-secure-open-sharing-strategy",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/7-secure-delta-sharing-strategy.yml",
+      "redirect_url": "/training/modules/govern-unity-catalog-objects/7-secure-open-sharing-strategy",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-databricks/govern-unity-catalog-objects/9-summary.md",
