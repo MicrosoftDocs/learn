@@ -30,7 +30,7 @@ When a user or group needs to query a table, it isn't enough to grant SELECT dir
 
 ![Diagram showing permissions needed at each level in order to query a table.](../media/explicit-permissions-each-level.png)
 
-If any of these privileges are missing, the user can't successfully query the table. This approach is called as the *explicit privilege model* because permissions are granted individually at each level. It's inherently secure because access to other objects is never granted unintentionally, but it requires more administrative effort. For example, if there are thousands of tables in a schema, each table must be explicitly granted, which is time-consuming to maintain.
+If any of these privileges are missing, the user can't successfully query the table. This approach is called the *explicit privilege model* because permissions are granted individually at each level. It's inherently secure because access to other objects is never granted unintentionally, but it requires more administrative effort. For example, if there are thousands of tables in a schema, each table must be explicitly granted, which is time-consuming to maintain.
 
 ## Querying a table with inherited permissions from schema
 
@@ -132,7 +132,7 @@ If you want to see privileges for a specific principal, include the principal na
 SHOW GRANTS `finance-team` ON TABLE sales.reporting.monthly_revenue;
 ```
 
-When reviewing privileges, remember that **inherited grants** might not appear in the output for the specific table. If a user has SELECT granted at the schema or catalog level, that privilege applies to the table through inheritance, but SHOW GRANTS on the table itself might not display it. To get a complete picture, check grants at all levels of the hierarchy.
+When reviewing privileges, remember that **SHOW GRANTS** displays inherited, denied, and granted privileges that affect the object. If a user has SELECT granted at the schema or catalog level, the privilege appears in the output for the table, and the `objectType` and `objectKey` columns show the object where it was granted. Object owners hold all privileges implicitly, so SHOW GRANTS doesn't list `ALL PRIVILEGES` for an owner. Check the owner of the object as well when you audit access.
 
 ## Understand Access Control Lists (ACLs)
 
@@ -146,11 +146,11 @@ Access Control Lists (ACLs) are the backbone of Unity Catalog’s authorization 
 
 Privileges are the specific operations or actions that can be performed on securable objects. In Unity Catalog, different kinds of objects support different privilege sets. For example, for a **table** the allowed privileges include `SELECT`, `MODIFY`, `MANAGE`, `ALL PRIVILEGES` (which expands to all applicable privileges) among others. For a **schema**, privileges like `USE SCHEMA`, `CREATE TABLE`, `ALL PRIVILEGES`, and `MANAGE` apply. At the **catalog** level, you see privileges such as `USE CATALOG`, `CREATE SCHEMA`, `BROWSE`, `ALL PRIVILEGES`, and more. 
 
-Because not every privilege makes sense for every object (for example, `MODIFY` on a view is meaningless), Unity Catalog limits which privileges are valid on which securable types. The `ALL PRIVILEGES` shorthand is powerful in that it gives "every applicable privilege" on an object, and as new privileges are added over time, the `ALL PRIVILEGES` grant automatically covers those new privileges as well. 
+Because not every privilege makes sense for every object (for example, `USE SCHEMA` applies to schemas but not to tables), Unity Catalog limits which privileges are valid on which securable types. The `ALL PRIVILEGES` shorthand implies every applicable privilege on an object, but it doesn't include `MANAGE`, `READ METADATA`, `EXTERNAL USE SCHEMA`, or `EXTERNAL USE LOCATION`.
 
 ### Securables
 
-Securables are the objects to which you can grant or revoke privileges. In Unity Catalog, securables are hierarchical: the metastore (or catalog) is at the top, followed by catalogs, then schemas, then tables/views, and other object types such as functions, volumes, external locations, etc.
+Securables are the objects to which you can grant or revoke privileges. In Unity Catalog, securables are hierarchical: the metastore is at the top, followed by catalogs, then schemas, then tables/views, and other object types such as functions, volumes, external locations, etc.
 
 Because of this hierarchy, privileges can be inherited (if permitted) from higher levels down to lower levels. 
 
@@ -170,16 +170,16 @@ Or
 GRANT SELECT ON TABLE t TO `aaaaaaaa-bbbb-cccc-1111-222222222222`;  -- service principal  
 ```
 
-Also worth noting: `account users` is a built-in principal representing all users of the account; you can grant privileges to `account users` (though not to the `users` workspace-local group) in Unity Catalog. 
+Also worth noting: `account users` is a built-in system group that contains all users and service principals in the account. You can grant privileges to `account users` in Unity Catalog, but not to the workspace-level `users` system group or to other workspace-local groups.
 
 When you put these pieces together, the ACL is simply a statement like: *grant this privilege to that principal on this securable object*. At runtime, when a user tries to perform an operation (say select from a table), the system checks the ACLs along the hierarchy (catalog, schema, table) and evaluates whether the user (via group membership, explicit grants, or inherited grants) has the required combination of permissions to succeed.
 
 ### Microsoft Entra ID integration
 
-On Azure Databricks, Unity Catalog identities are managed through **Microsoft Entra ID**. This means that all users, service principals, and groups referenced in grants must exist in Microsoft Entra ID. Key points include:
+On Azure Databricks, Unity Catalog identities are account-level identities, and Databricks recommends syncing them from **Microsoft Entra ID**. Key points include:
 
-- **Users and Groups**: Unity Catalog does not support workspace-local users or groups. You must provision and manage them in Microsoft Entra ID, and Unity Catalog syncs them into the Azure Databricks account.
-- **Service Principals**: Programmatic identities are registered as Microsoft Entra applications and can be granted privileges in Unity Catalog. Credentials are typically stored in Azure Key Vault or accessed through managed identities. 
-- **Account Users**: The special built-in principal `account users` represents all Microsoft Entra ID users in the Azure Databricks account, and can be used when broad access is acceptable.
+- **Users and Groups**: Workspace-local groups can't be granted access to Unity Catalog data. Use account groups, and sync users and groups from Microsoft Entra ID into the Azure Databricks account.
+- **Service Principals**: Programmatic identities are registered as Microsoft Entra applications and can be granted privileges in Unity Catalog. Client secrets are typically stored in Azure Key Vault.
+- **Account Users**: The special built-in group `account users` contains all users and service principals in the Azure Databricks account, and can be used when broad access is acceptable.
 
-Because Unity Catalog relies on Microsoft Entra ID, administrators should coordinate closely with their Microsoft Entra ID administrators to ensure that group memberships and role assignments remain accurate.
+Because identities are typically synced from Microsoft Entra ID, administrators should coordinate closely with their Microsoft Entra ID administrators to ensure that group memberships remain accurate.

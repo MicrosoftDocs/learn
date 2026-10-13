@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/11/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -60,17 +60,17 @@ quiz:
     - content: "Clusters must be restarted to fetch the updated secret value"
       isCorrect: true
       explanation: "Correct. Clusters cache secret values when they start, so you must restart the cluster for it to retrieve the updated value from Azure Key Vault."
-  - content: "Why does Microsoft recommend managed identities over service principals for Unity Catalog storage credentials?"
+  - content: "Why are managed identities preferred over service principals for Unity Catalog storage credentials?"
     choices:
     - content: "Managed identities are less expensive than service principals"
       isCorrect: false
-      explanation: "Incorrect. Cost is not the primary reason for this recommendation."
+      explanation: "Incorrect. Cost isn't a documented benefit of managed identities over service principals."
     - content: "Managed identities eliminate the need to manage and rotate secrets and can access network-protected storage"
       isCorrect: true
       explanation: "Correct. Managed identities remove credential management overhead and can access storage accounts protected by network rules, which service principals cannot."
     - content: "Managed identities provide faster data access than service principals"
       isCorrect: false
-      explanation: "Incorrect. Performance is not the primary difference between these authentication methods."
+      explanation: "Incorrect. Performance isn't a documented difference between these authentication methods."
   - content: "Which Azure role should be assigned to a managed identity to enable Unity Catalog to read and write data in Azure Data Lake Storage?"
     choices:
     - content: "Reader"
@@ -81,4 +81,4 @@ quiz:
       explanation: "Correct. The Storage Blob Data Contributor role provides read and write access to blob data, which is required for Unity Catalog operations."
     - content: "Contributor"
       isCorrect: false
-      explanation: "Incorrect. While the Contributor role is powerful, the more specific Storage Blob Data Contributor role is the appropriate choice for blob data access."
+      explanation: "Incorrect. The Contributor role manages Azure resources but doesn't grant access to blob data. The more specific Storage Blob Data Contributor role is the appropriate choice for blob data access."
