@@ -57,10 +57,10 @@ You create a Data Lake Storage Gen2 account the same way you create an Azure Blo
     | Setting              | Value                                                                                                                                                                                                                                                                  |
     | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
     | **Project details**  |                                                                                                                                                                                                                                                                        |
-    | Subscription         | Same subscription as the *Data Lake Storage Gen2 account* you created.                                                                                                                                                                                                 |
+    | Subscription         | Same subscription as the *mslearn-datalake-test* resource group.                                                                                                                                                                                                       |
     | Resource group       | From the dropdown list, select *mslearn-datalake-test*                                                                                                                                                                                                                 |
     | **Instance details** |                                                                                                                                                                                                                                                                        |
-    | Storage account name | Enter a unique name for your storage account. The name must be unique across all of Azure. You might have to try a few variations to find a unique name. Try using the prefix *dlakedata* with some numbers. A green check mark indicates you've entered a valid name. |
+    | Storage account name | Enter a unique name for your storage account. The name must be unique across all of Azure. You might have to try a few variations to find a unique name. Try using the prefix *dlakedata* with some numbers. The name must be 3 to 24 characters long and can contain only numbers and lowercase letters. A green check mark indicates you've entered a valid name. |
     | **Region**           | From the dropdown list, select *(US) Central US*.                                                                                                                                                                                                                      |
 
 1. Accept the defaults for the remainder of the settings.
@@ -73,7 +73,7 @@ You create a Data Lake Storage Gen2 account the same way you create an Azure Blo
 
     | Setting                       | Value             |
     | ----------------------------- | ----------------- |
-    | **Data Lake Storage Gen2**    |                   |
+    | **Data Lake Storage**         |                   |
     | Enable hierarchical namespace | *check* (Enabled) |
   
    :::image type="content" source="../media/2-create-storage-account.png" alt-text="Screenshot that shows the Advanced tab on the Create a storage account page with the Enable hierarchical namespace option selected.":::
