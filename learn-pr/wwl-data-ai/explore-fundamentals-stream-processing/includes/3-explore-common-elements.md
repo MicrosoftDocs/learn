@@ -19,7 +19,7 @@ At its simplest, a high-level architecture for stream processing looks like this
 
 1. An event generates some data. This might be a signal being emitted by a sensor, a social media message being posted, a log file entry being written, or any other occurrence that results in some digital data.
 
-2. The generated data is captured in a streaming **source** for processing. In simple cases, the source may be a folder in a cloud data store or a table in a database. In more robust streaming solutions, the source may be a **queue** that encapsulates logic to ensure that event data is processed in order and that each event is processed only once.
+2. The generated data is captured in a streaming **source** for processing. In simple cases, the source may be a folder in a cloud data store or a table in a database. In more advanced streaming solutions, the source may be a **queue** that encapsulates logic to ensure that event data is processed in order and that each event is processed only once.
 
 3. The event data is processed, often by a **perpetual query** that operates on the event data to select data for specific types of events, project data values, or aggregate data values over temporal (time-based) periods (or **windows**) - for example, by counting the number of sensor emissions per minute.
 
@@ -29,11 +29,11 @@ At its simplest, a high-level architecture for stream processing looks like this
 
 Microsoft supports multiple technologies that you can use to implement real-time analytics of streaming data, including:
 
-- **Microsoft Fabric Real-Time Intelligence**: A complete, integrated toolset for real-time data built into Microsoft Fabric. It includes **Eventstreams** (to ingest, route, and transform streaming data), **Eventhouse** (a database optimized for time-series and event data, queried using KQL — Kusto Query Language, a query language designed for fast log and telemetry analysis), **Real-Time Dashboards** (for live data visualization), and **Activator** (to trigger automated actions when streaming data meets defined conditions). AI assistance in Fabric Real-Time Intelligence helps you generate KQL queries from natural-language questions.
+- **Microsoft Fabric Real-Time Intelligence**: An integrated set of tools for real-time data built into Microsoft Fabric. It includes **Eventstreams** (to ingest, route, and transform streaming data), **Eventhouse** (a database optimized for time-series and event data, queried using KQL — Kusto Query Language, a query language designed for fast log and telemetry analysis), **Real-Time Dashboards** (for live data visualization), and **Activator** (to trigger automated actions when streaming data meets defined conditions). AI assistance in Fabric Real-Time Intelligence helps you generate KQL queries from natural-language questions.
 
 - **Spark Structured Streaming**: An open-source library that enables you to develop complex streaming solutions on Apache Spark–based services, including **Azure Databricks** and Microsoft Fabric.
 
-- **Azure Stream Analytics**: A platform-as-a-service (PaaS) solution you can use to define **streaming jobs** that ingest data from a streaming source, apply a **perpetual query**, and write the results to an output. It's a solid option for standalone or hybrid streaming scenarios outside of Fabric.
+- **Azure Stream Analytics**: A platform-as-a-service (PaaS) solution you can use to define **streaming jobs** that ingest data from a streaming source, apply a **perpetual query**, and write the results to an output. You can use it for standalone or hybrid streaming scenarios outside of Fabric.
 
 ### **Sources** for stream processing
 
@@ -43,7 +43,7 @@ The following services are commonly used to ingest data for stream processing on
 
 - **Azure IoT Hub**: A data ingestion service similar to Azure Event Hubs, but optimized to manage event data from **Internet-of-things** (IoT) devices.
 
-- **Azure Data Lake Store Gen 2**: A highly scalable storage service often used in **batch processing** scenarios, but can also be used as a source of streaming data.
+- **Azure Data Lake Storage Gen2**: A scalable storage service often used in **batch processing** scenarios, but can also be used as a source of streaming data.
 
 - **Apache Kafka**: An open-source data ingestion solution commonly used together with Apache Spark.
 
@@ -53,7 +53,7 @@ The output from stream processing is often sent to the following services:
 
 - **Azure Event Hubs**: Used to queue the processed data for further downstream processing.
 
-- **Azure Data Lake Store Gen 2**, **Microsoft OneLake**, or **Azure blob storage**: Used to persist the processed results as a file.
+- **Azure Data Lake Storage Gen2**, **Microsoft OneLake**, or **Azure Blob Storage**: Used to persist the processed results as a file.
 
 - **Azure SQL Database**, **Azure Databricks**, or **Microsoft Fabric**: Used to persist the processed results in a table for querying and analysis.
 

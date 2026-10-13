@@ -20,7 +20,7 @@ In batch processing, newly arriving data elements are collected and stored, and 
 
 For example, suppose you want to analyze road traffic by counting the number of cars on a stretch of road. A batch processing approach to this would require that you collect the cars in a parking lot, and then count them in a single operation while they're at rest.
 
-[ ![Diagram of cars being counted in a parking lot.](../media/batch-processing.png) ](../media/batch-processing.png#lightbox)
+:::image type="content" source="../media/batch-processing.png" alt-text="Diagram of cars being counted in a parking lot." lightbox="../media/batch-processing.png":::
 
 If the road is busy, with a large number of cars driving along at frequent intervals, this approach may be impractical; and note that you don't get any results until you have parked a batch of cars and counted them.
 
@@ -83,6 +83,6 @@ The following diagram shows a **lambda architecture**—a common pattern for com
 7. Analytical and visualization tools are used to present and explore the real-time and historical data.
 
 > [!NOTE]
-> Commonly used solution architectures for combined batch and stream data processing include **lambda** and **delta** architectures. The **kappa** architecture is a simpler alternative that eliminates the separate batch layer entirely—treating all data as a continuous stream and replaying it when historical reprocessing is needed. Modern platforms such as Microsoft Fabric and Apache Kafka make kappa-style solutions increasingly practical. Details of these architectures are beyond the scope of this course.
+> Commonly used solution architectures for combined batch and stream data processing include **lambda** and **delta** architectures. The **kappa** architecture is a simpler alternative that eliminates the separate batch layer entirely—treating all data as a continuous stream and replaying it when historical reprocessing is needed. Details of these architectures are beyond the scope of this module.
 
 ::: zone-end

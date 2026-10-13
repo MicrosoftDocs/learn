@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/21/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: "Which definition of stream processing is correct?"
     choices:
-    - content: "Data is processed continually as new data records arrives"
+    - content: "Data is processed continually as new data records arrive"
       isCorrect: true
       explanation: "Correct. Stream processing is used to continually process new data as it arrives."
     - content: "Data is collected in a temporary store, and all records are processed together as a batch."
