@@ -23,7 +23,7 @@ The key job roles that deal with data in most organizations are:
 > [!NOTE]
 > The job *roles* define differentiated tasks and responsibilities. In some organizations, the same *person* might perform multiple roles; so in their role as database administrator they might provision a transactional database, and then in their role as a data engineer they might create a pipeline to transfer data from the database to a data warehouse for analysis.
 
-## Database Administrator
+## Database administrator
 
 A database administrator is responsible for the design, implementation, maintenance, and operational aspects of on-premises and cloud-based database systems. They're responsible for the overall availability and consistent performance and optimizations of databases. They work with stakeholders to implement policies, tools, and processes for backup and recovery plans to recover following a natural disaster or human-made error.
 
@@ -31,7 +31,7 @@ The database administrator is also responsible for managing the security of the 
 
 AI tools are increasingly used by database administrators to troubleshoot performance issues and draft queries using natural language, alongside the judgment and expertise the role requires.
 
-## Data Engineer
+## Data engineer
 
 A data engineer collaborates with stakeholders to design and implement data-related workloads, including data ingestion pipelines, cleansing and transformation activities, and data stores for analytical workloads. They use a wide range of data platform technologies, including relational and nonrelational databases, file stores, and data streams.
 
@@ -39,7 +39,7 @@ They're also responsible for ensuring that the privacy of data is maintained wit
 
 AI tools can assist data engineers with pipeline development tasks such as generating transformation code and suggesting configurations using natural language, alongside the architectural decisions and data quality judgment the role requires.
 
-## Data Analyst
+## Data analyst
 
 A data analyst enables businesses to maximize the value of their data assets. They're responsible for exploring data to identify trends and relationships, designing and building analytical models, and enabling advanced analytics capabilities through reports and visualizations.
 
@@ -47,7 +47,7 @@ A data analyst processes raw data into relevant insights based on identified bus
 
 AI tools can assist data analysts with tasks such as summarizing reports, suggesting visualizations, and generating analytical expressions using natural language, alongside the business understanding and communication skills the role requires.
 
-## AI Engineer
+## AI engineer
 
 An AI engineer builds and integrates AI-powered features into applications and data workflows. They work with large language models (LLMs)—AI systems trained on vast amounts of text that can understand and generate human language—as well as machine learning pipelines, and data sources to enable intelligent scenarios such as chat-over-your-data, content generation, and automated classification.
 

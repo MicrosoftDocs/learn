@@ -8,28 +8,28 @@ In this unit, you learn how to use Catalog Explorer to view and manage data line
 
 Unity Catalog automatically captures **runtime data lineage** across queries run on Azure Databricks. This lineage tracking works across all languages and captures relationships down to the **column level**. Lineage data includes the notebooks, jobs, and dashboards that interact with your tables.
 
-:::image type="content" source="../media/6-understand-lineage.png" alt-text="Screenshot of Unity Catalog lineage." lightbox="../media/6-understand-lineage.png":::
+:::image type="content" source="../media/6-understand-lineage.png" alt-text="Screenshot showing table lineage relationships in Unity Catalog." lightbox="../media/6-understand-lineage.png":::
 
 Consider a scenario where a sales analytics dashboard suddenly shows incorrect revenue figures. With lineage tracking, you can trace back through the data flow to identify which upstream table or transformation caused the issue. This capability transforms troubleshooting from guesswork into a systematic investigation.
 
 ### Configure compute to capture lineage
 
-For Unity Catalog to capture lineage automatically, queries must run on **Unity Catalog-enabled compute**. This includes:
+For Unity Catalog to capture lineage automatically, tables must be registered in a Unity Catalog metastore, and queries must use the Spark DataFrame or Databricks SQL interfaces (for example, notebooks or the SQL query editor) on Unity Catalog-enabled compute. This includes:
 
-- **Compute clusters** configured with Unity Catalog access mode (shared, single user, or serverless)
+- **Compute** that has access to Unity Catalog, such as standard or dedicated access mode clusters and serverless compute
 - **SQL warehouses** that have Unity Catalog enabled
-- **Jobs** running on Unity Catalog-enabled clusters
+- **Jobs** running on Unity Catalog-enabled compute
 
-When you create a cluster with access to Unity Catalog, the compute automatically captures lineage for all queries that read from or write to Unity Catalog tables. This happens without requiring additional configuration or code changes, making lineage capture seamless and requiring minimal administrative effort.
+When you create compute with access to Unity Catalog, it automatically captures lineage for all queries that read from or write to Unity Catalog tables. This happens without requiring additional configuration or code changes, which minimizes administrative effort.
 
-Clusters that are not Unity Catalog-enabled, or queries that access tables by direct file path instead of catalog names, do not generate lineage data. To ensure comprehensive lineage coverage, configure all production workloads to use Unity Catalog-enabled compute and reference tables using their three-level namespace (`catalog.schema.table`).
+Compute that isn't Unity Catalog-enabled doesn't generate lineage data. Column-level lineage is captured only when both the source and the target are referenced by table name rather than by path. To ensure comprehensive lineage coverage, configure all production workloads to use Unity Catalog-enabled compute and reference tables using their three-level namespace (`catalog.schema.table`).
 
 Lineage is aggregated across all workspaces attached to a Unity Catalog metastore. When you capture lineage in one workspace, users in other workspaces that share the same metastore can view that lineage information. This **cross-workspace visibility** is particularly valuable for organizations with distributed data teams.
 
 > [!NOTE]
 > Lineage data retention varies by access method. **Catalog Explorer and the lineage API** retain data indefinitely for events captured after September 1, 2024. **Lineage system tables** (`system.access.table_lineage` and `system.access.column_lineage`) retain a rolling one-year window; events older than one year are removed on a rolling basis. Use Catalog Explorer or the lineage API when you need access to historical lineage beyond one year.
 
-## View data lineage using Catalog Explorer
+## View lineage relationships
 
 **Catalog Explorer** provides a visual interface for exploring lineage relationships. To view lineage for a table:
 
@@ -40,7 +40,7 @@ Lineage is aggregated across all workspaces attached to a Unity Catalog metastor
 
 The lineage graph displays tables as nodes with arrows showing data flow direction. By default, one level of connections is visible. Select the **+** icon on any node to reveal more upstream or downstream connections.
 
-When you select an arrow connecting two nodes, the **Lineage connection** panel opens. This panel shows details about the connection, including source and target tables, the notebooks that created the relationship, and the jobs that ran the transformations.
+When you select an arrow connecting two nodes, the **Lineage details** panel opens. This panel shows details about the connection, including source and target tables, the notebooks that created the relationship, and the jobs that ran the transformations.
 
 ### Explore column-level lineage
 
@@ -70,9 +70,9 @@ To view or change ownership in Catalog Explorer:
 4. Search for and select a user, group, or service principal.
 5. Select **Save**.
 
-:::image type="content" source="../media/6-manage-table-ownership.png" alt-text="Screenshot of the set owner dialog." lightbox="../media/6-manage-table-ownership.png":::
+:::image type="content" source="../media/6-manage-table-ownership.png" alt-text="Screenshot showing the dialog for assigning a table owner in Catalog Explorer." lightbox="../media/6-manage-table-ownership.png":::
 
-Only the current owner or a **metastore admin** can transfer ownership. After transfer, the previous owner loses ownership privileges unless explicitly granted.
+Only the current owner, a user with the `MANAGE` privilege, the owner of the parent container, or a **metastore admin** can transfer ownership. After transfer, the previous owner loses ownership privileges unless explicitly granted.
 
 To view lineage, users need at least the `BROWSE` privilege on the parent catalog. Objects that a user doesn't have permission to access appear as **masked nodes** in the lineage graph. This security model ensures that lineage visibility respects your access control policies.
 
@@ -134,9 +134,9 @@ These queries help answer questions such as "who queries this table most often" 
 
 Lineage tracking has certain constraints you should be aware of:
 
-- Lineage is **not preserved for renamed objects**. If you rename a table, the lineage connection to its previous name is lost.
+- Lineage is **not preserved for renamed objects**. If you rename a catalog, schema, table, view, or column, the lineage connection to its previous name is lost.
 
-- Tables accessed by path rather than name (for example, `delta.'abfss://...'`) show only the path in lineage, not the table name.
+- Column-level lineage isn't captured when a source or target is referenced by path rather than by name (for example, `delta.'abfss://...'`).
 
 - Global temporary views and system tables under `system.information_schema` are not captured in lineage.
 

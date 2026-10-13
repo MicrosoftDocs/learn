@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/11/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -60,14 +60,14 @@ quiz:
     - content: "Up to one year"
       isCorrect: true
       explanation: "Correct. Azure Databricks retains audit logs for up to one year for security and fraud analysis purposes."
-  - content: "Which Delta Sharing approach should be used when sharing data with recipients who do not have access to Azure Databricks?"
+  - content: "Which OpenSharing approach should be used when sharing data with recipients who do not have access to Azure Databricks?"
     choices:
     - content: "Databricks-to-Databricks sharing with a sharing identifier"
       isCorrect: false
       explanation: "Incorrect. Databricks-to-Databricks sharing requires the recipient to have a Unity Catalog-enabled workspace."
     - content: "Open sharing with token authentication"
       isCorrect: true
-      explanation: "Correct. Open sharing with token authentication allows recipients without Azure Databricks access to consume shared data using the open Delta Sharing protocol."
+      explanation: "Correct. Open sharing with token authentication allows recipients without Azure Databricks access to consume shared data using the open sharing protocol."
     - content: "OIDC federation with JWT tokens"
       isCorrect: false
       explanation: "Incorrect. OIDC federation is used to exchange tokens for short-lived Databricks OAuth tokens, but still requires integration with the recipient's identity provider."

@@ -1,19 +1,19 @@
 PostgreSQL provides many tools you can use to connect to a PostgreSQL database and run queries. These tools include the **pgAdmin** graphical user interface, and the **psql** command-line utility. There are a large number of third-party utilities you can use as well. 
 
-In this unit, you'll see how to connect to a PostgreSQL database running in Azure Database for PostgreSQL - Flexible Server from the command line using **psql**. 
+In this unit, you see how to connect to a PostgreSQL database running in Azure Database for PostgreSQL flexible server from the command line using **psql**.
 
 ## Retrieve connection information for Azure Database for PostgreSQL
 
-To connect to a PostgreSQL database, you require the name of the server, and the credentials for an account that has access rights to connect to the server. You can find the server name and the name of the default administrator account on the **Overview** page for the Azure Database for PostgreSQL - Flexible Server instance in the Azure portal. Contact your administrator for the password.
+To connect to a PostgreSQL database, you require the name of the server, and the credentials for an account that has access rights to connect to the server. You can find the server name and the name of the default administrator account on the **Overview** page for the Azure Database for PostgreSQL flexible server instance in the Azure portal. Contact your administrator for the password.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the overview page for an Azure Database for PostgreSQL instance in the Azure portal.](../media/4-postgresql-azure.png)
 
-As with Azure SQL Database, you must open the PostgreSQL firewall to enable client applications to connect to the service. For detailed information, see [Networking in Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/network/concepts-networking-private)
+As with Azure SQL Database, if your server uses public access, you must add your client IP address to the PostgreSQL firewall rules to enable client applications to connect to the service. For detailed information, see [Networking with public access (allowed IP addresses) in Azure Database for PostgreSQL flexible server](/azure/postgresql/network/concepts-networking-public).
 
 ## Use psql to query a database
 
-The **psql** utility is available in the Azure Cloud Shell. You can also run it from a command prompt on your desktop computer, but you must download and install the psql client. You can find the psql client on the [postgresql.org](http://postgresql.org) website.
+The **psql** utility is available in the Azure Cloud Shell. You can also run it from a command prompt on your desktop computer, but you must download and install the psql client. You can find the psql client on the [PostgreSQL website](https://www.postgresql.org/download/).
 
 To connect to Azure Database for PostgreSQL using **psql**, perform the following operations:
 
@@ -28,7 +28,7 @@ To connect to Azure Database for PostgreSQL using **psql**, perform the followin
     > [!NOTE]
     > **postgres** is the default management database created with Azure Database for PostgreSQL. You can create additional databases using the **CREATE DATABASE** command from psql.
 
-1. If your connection is successful, you'll see the prompt `postgres=>`.
+1. If your connection is successful, you see the prompt `postgres=>`.
 
 1. You can create a new database with the following SQL command:
 
@@ -41,7 +41,7 @@ To connect to Azure Database for PostgreSQL using **psql**, perform the followin
 
 1. Inside psql, you can run the command `\c Adventureworks` to connect to the database.
 
-1. You can create tables and insert data using CREATE and INSERT commands, as shown in the following examples::
+1. You can create tables and insert data using CREATE and INSERT commands, as shown in the following examples:
 
     ```sql
     CREATE TABLE PEOPLE(NAME TEXT NOT NULL, AGE INT NOT NULL);

@@ -2,7 +2,7 @@ When you work with Azure Databricks, you often need to connect to external data 
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=42861336-44b7-4a6f-8a33-29ed03ae8e2a]
 
-As a data engineer working in Azure, you typically use Azure Key Vault rather than Databricks-backed secret scopes. This approach aligns with enterprise security practices and provides better integration with other Azure services. You can reference secrets stored in Azure Key Vault from your notebooks, jobs, and cluster configurations without exposing sensitive values.
+As a data engineer working in Azure, you typically use Azure Key Vault rather than Databricks-backed secret scopes. This approach lets you manage secrets centrally in Azure Key Vault. You can reference secrets stored in Azure Key Vault from your notebooks, jobs, and cluster configurations without exposing sensitive values.
 
 ## Understanding secret scopes in Azure Databricks
 
@@ -18,7 +18,7 @@ Azure Databricks supports two types of secret scopes:
   
 - **Azure Key Vault-backed scopes** provide a read-only interface to secrets stored in an Azure Key Vault instance. You manage the actual secrets in Azure Key Vault, while the scope in Azure Databricks provides controlled access.
 
-For production workloads, Azure Key Vault-backed scopes offer several advantages. They integrate with your organization's existing Azure security infrastructure. They support network restrictions that Databricks-backed scopes cannot. They eliminate the need to synchronize secrets across multiple systems. When you update a secret in Key Vault, all Azure Databricks workspaces that reference that scope automatically use the updated value after you restart your clusters.
+For production workloads, Azure Key Vault-backed scopes offer several advantages. They integrate with your organization's existing Azure security infrastructure. They eliminate the need to synchronize secrets across multiple systems. When you update a secret in Key Vault, the scope returns the updated value after you restart your clusters.
 
 > [!IMPORTANT]
 > Permissions on Azure Key Vault-backed scopes apply to all secrets in the linked Key Vault instance. If you need to restrict access to specific secrets, create separate Key Vault instances and link them to different secret scopes.
@@ -28,9 +28,9 @@ For production workloads, Azure Key Vault-backed scopes offer several advantages
 Before you create an Azure Key Vault-backed scope, you need an Azure Key Vault instance configured correctly. Your Key Vault must use the **Vault access policy** permission model rather than Azure role-based access control — Azure Databricks does not support the RBAC permission model for Key Vault-backed secret scopes.
 
 > [!IMPORTANT]
-> As of 2026, Azure Key Vault API version 2026-02-01 and later create new vaults with **Azure RBAC** as the default permission model. If you create a Key Vault through the Azure portal, Azure CLI, or SDK without explicitly setting the permission model, it defaults to RBAC and Databricks secret scope creation fails with a 403 authorization error. Before creating the Databricks scope, verify your Key Vault uses the Vault access policy model: in the Azure portal, go to your Key Vault → **Settings** → **Access configuration** → **Permission model** and confirm it is set to **Vault access policy**. You can change this setting before creating the secret scope.
+> As of 2026, Azure Key Vault API version 2026-02-01 and later create new vaults with **Azure RBAC** as the default permission model. If you create a Key Vault with that API version or later (the Azure portal already uses Azure RBAC by default) without explicitly setting the permission model, it uses RBAC and creating the Databricks secret scope fails. Before creating the Databricks scope, verify your Key Vault uses the Vault access policy model: in the Azure portal, go to your Key Vault → **Settings** → **Access configuration** → **Permission model** and confirm it is set to **Vault access policy**. You can change this setting before creating the secret scope.
 
-Under the Key Vault's networking settings, you must allow trusted Microsoft services to bypass the firewall, even if you restrict access to specific virtual networks.
+Under the Key Vault's networking settings, set **Allow access from** to **Allow public access from specific virtual networks and IP addresses** and select **Allow trusted Microsoft services to bypass this firewall**. You can also allow public access from all networks.
 
 You create the secret scope using a special URL in your Azure Databricks workspace. Navigate to `https://<databricks-instance>#secrets/createScope`, replacing `<databricks-instance>` with your workspace URL. This URL is case-sensitive—the `S` in `createScope` must be uppercase.
 
@@ -47,7 +47,7 @@ When you create the scope, Databricks automatically grants the Azure Databricks 
 
 ## Retrieving secrets in notebooks and jobs
 
-Once you create a secret scope, you access secrets in your notebooks using the `dbutils.secrets.get()` function. This function takes two parameters: the scope name and the secret key name. The function returns the secret value, which Azure Databricks automatically redacts in notebook outputs.
+Once you create a secret scope, you access secrets in your notebooks using the `dbutils.secrets.get()` function. This function takes two parameters: the scope name and the secret key name. The function returns the secret value, which Azure Databricks attempts to redact in notebook outputs.
 
 ```python
 username = dbutils.secrets.get(scope="jdbc", key="username")
@@ -65,7 +65,7 @@ df = (spark.read
 
 In this example, you retrieve database credentials from a secret scope named `jdbc`. The `username` and `password` variables contain the actual secret values, but if you print these variables or display them in notebook output, Azure Databricks replaces the values with `[REDACTED]`.
 
-This redaction provides protection against accidental exposure, but it doesn't prevent intentional access by authorized users. Any user with permission to run code on the cluster can access secret values programmatically. You control access to secrets by managing permissions on the secret scope and the cluster.
+This redaction provides protection against accidental exposure, but it doesn't prevent intentional access by authorized users or deliberate transformations of the secret value. Any user with permission to run code on the cluster can access secret values programmatically. You control access to secrets by managing permissions on the secret scope and the cluster.
 
 You can also list the secrets available in a scope to discover what keys exist:
 
@@ -99,13 +99,13 @@ OPTIONS (
 );
 ```
 
-The `secret()` function provides the same redaction behavior as `dbutils.secrets.get()`—secret values are replaced with `[REDACTED]` in query outputs. For cases where you want to return `NULL` instead of raising an error when a secret doesn't exist, use the `try_secret()` function.
+The `secret()` function applies the same best-effort redaction as `dbutils.secrets.get()`—secret values are replaced with `[REDACTED]` in query outputs where possible. For cases where you want to return `NULL` instead of raising an error when a secret doesn't exist, use the `try_secret()` function.
 
 ## Using secrets in Spark configurations
 
 Sometimes you need to reference secrets in cluster configurations rather than in notebook code. This is useful when you want to set Spark properties or environment variables that multiple notebooks on the cluster can access.
 
-You reference a secret in a **Spark configuration property** using double curly braces:
+You reference a secret in a **Spark configuration property** using double curly braces. This feature is in Public Preview:
 
 ```txt
 spark.storage.key {{secrets/storage/account-key}}
@@ -135,7 +135,7 @@ if [ -n "$STORAGE_KEY" ]; then
 fi
 ```
 
-Keep in mind that any user with CAN ATTACH TO permissions on the cluster can read environment variables and Spark configuration properties. This means they can access secrets even if they don't have direct permission to read from the secret scope. Use this approach only when the secrets need to be available to all cluster users.
+Keep in mind that any user with CAN ATTACH TO permissions on the cluster or Run permissions on a notebook can read environment variables, and can read Spark configuration properties when table access control isn't enabled on the cluster. This means they can access secrets even if they don't have direct permission to read from the secret scope. Use this approach only when the secrets need to be available to all cluster users.
 
 When you update a secret in Azure Key Vault, you must restart your cluster for Azure Databricks to fetch the new value. The cluster caches secret values when it starts, and it doesn't automatically detect changes in Key Vault.
 
@@ -177,4 +177,4 @@ databricks secrets delete-acl jdbc data-engineers
 > [!NOTE]
 > The ability to restrict MANAGE permission to only the creator (rather than all workspace users) requires the Premium plan. On the Standard plan, you must grant MANAGE permission to all workspace users when creating an Azure Key Vault-backed secret scope.
 
-With these capabilities, you can securely access Azure Key Vault secrets in your Databricks workflows while maintaining control over who can use those secrets. This integration strengthens your security posture and aligns with enterprise governance requirements.
+With these capabilities, you can securely access Azure Key Vault secrets in your Databricks workflows while controlling who can use those secrets.

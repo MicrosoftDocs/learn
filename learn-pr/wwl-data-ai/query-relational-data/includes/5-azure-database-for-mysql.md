@@ -1,15 +1,15 @@
 As with PostgreSQL, there are many tools available to connect to MySQL that enable you to create and run scripts of SQL commands. You can use the **mysql** command-line utility, which is also available in the Azure Cloud Shell, or you can use graphical tools from the desktop such as MySQL Workbench. 
 
-In this unit, you'll see how to connect to Azure Database for MySQL - Flexible Server using MySQL Workbench.
+In this unit, you see how to connect to Azure Database for MySQL - Flexible Server using MySQL Workbench.
 
 ## Retrieve connection information for Azure Database for MySQL
 
 Like SQL Database and PostgreSQL, you require the name of the server, and the credentials for an account that has access rights to connect to the server. You can find the server name and the name of the default administrator account on the **Overview** page for the Azure Database for MySQL - Flexible Server instance in the Azure portal. Contact your administrator for the password.
 
 > [!div class="mx-imgBorder"]
-> Screenshot of the overview page for an Azure Database for MySQL instance in the Azure portal.](../media/5-mysql-azure.png)
+> ![Screenshot of the overview page for an Azure Database for MySQL instance in the Azure portal.](../media/5-mysql-azure.png)
 
-You must also open the MySQL firewall to enable client applications to connect to the service. For detailed information, see [Manage firewall rules for Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/security-how-to-manage-firewall-portal).
+If your server uses public access, you must also add your client IP address to the MySQL firewall rules to enable client applications to connect to the service. For detailed information, see [Manage firewall rules for Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/security-how-to-manage-firewall-portal).
 
 ## Use MySQL Workbench to query a database
 
@@ -19,19 +19,19 @@ To connect to Azure MySQL Server by using MySQL Workbench, perform the following
 
 1. Start MySQL Workbench on your computer.
 
-1. On the **Welcome** page, select **Connect to Database**.
+1. On the **Welcome** page, next to **MySQL Connections**, select the **+** icon to open the **Setup New Connection** dialog box.
 
     > [!div class="mx-imgBorder"]
     >![Screenshot of the MySQL Workbench Welcome page. The user is creating a new database connection.](../media/5-connect-to-database.png)
 
-1. In the **Connect to Database** dialog box, enter the following information on the **Parameters** tab:
+1. In the **Setup New Connection** dialog box, enter the following information on the **Parameters** tab:
 
     > [!div class="mx-imgBorder"]
     >![Screenshot of the MySQL Workbench connection page.](../media/5-connection-info.png)
     
     |Setting |Description  |
     |---------|---------|
-    |Stored connection  | Leave blank  |
+    |Connection Name  | A label for this connection, such as *Demo Connection*  |
     |Connection Method  | Standard (TCP/IP)       |
     |Hostname     | Specify the fully qualified server name from the Azure portal |
     |Port     | 3306   |
@@ -39,7 +39,9 @@ To connect to Azure MySQL Server by using MySQL Workbench, perform the following
     |Password    | Select **Store in Vault**, and enter the administrator password specified when the server was created  |
 
 
-1. Select **OK** to create the connection. If the connection is successful, the query editor will open.
+1. Select **Test Connection** to check that the parameters are correct, and then select **OK** to save the connection.
+
+1. In the list of **MySQL Connections**, select the tile for your server. If the connection is successful, the query editor opens.
 
 
     > [!div class="mx-imgBorder"]
@@ -73,9 +75,9 @@ To connect to Azure MySQL Server by using MySQL Workbench, perform the following
     ```
 
     
-1. To run the sample SQL Code, select the lightning bolt icon in the toolbar
+1. To run the sample SQL code, select the lightning bolt icon in the toolbar.
 
     > [!div class="mx-imgBorder"]
-    >Screenshot of MySQL workbench executing a query.](../media/5-run-query.png)
+    >![Screenshot of MySQL workbench executing a query.](../media/5-run-query.png)
 
-    The query results appear in the **Result Grid** section in the middle of the page. The **Output** list at the bottom of the page shows the status of each command as it is run.
+    The query results appear in the **Result Grid** section in the middle of the page. The **Output** list at the bottom of the page shows the status of each command as it runs.

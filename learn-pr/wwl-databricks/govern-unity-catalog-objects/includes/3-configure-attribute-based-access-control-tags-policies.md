@@ -23,7 +23,7 @@ Governed tags serve as the foundation for ABAC policies. When you tag a table wi
 
 ### Create governed tags
 
-To create a governed tag, select **Catalog** > **Governance** > **Governed Tags**, then select **Create governed tag**. Enter a tag key, an optional description, and define the allowed values. Only these predefined values can be assigned to objects with this tag key.
+To create a governed tag, select **Catalog** > **Govern** > **Governed Tags**, then select **Create governed tag**. Enter a tag key, an optional description, and define the allowed values. Only these predefined values can be assigned to objects with this tag key.
 
 For example, you might create a governed tag with key `pii` and allowed values `ssn`, `email`, and `address`. This ensures consistent classification of personally identifiable information across your organization.
 
@@ -50,16 +50,16 @@ SET TAGS ('sensitivity' = 'high');
 Governed tags applied to catalogs or schemas automatically inherit to all objects within them. This inheritance simplifies governance across large data estates.
 
 > [!NOTE]
-> Tag inheritance applies only at the catalog and schema levels. Tags on individual table columns aren't inherited.
+> Tag inheritance applies to ABAC policy evaluation at the catalog and schema levels. Tags on individual table columns aren't inherited.
 
 ## Create row filter policies
 
 Row filter policies control which rows users can see based on governed tags. You define a user-defined function (UDF) that returns `TRUE` for rows the user should see and `FALSE` for rows to hide.
 
-Before creating a policy, you need a UDF that implements your filtering logic. The following example creates a function that filters out European addresses:
+Before creating a policy, you need a Unity Catalog UDF that implements your filtering logic, and you need the `EXECUTE` privilege on it. The following example creates a function that filters out European addresses:
 
 ```sql
-CREATE OR REPLACE FUNCTION filter_non_eu(address STRING)
+CREATE OR REPLACE FUNCTION sales.governance.filter_non_eu(address STRING)
 RETURNS BOOLEAN
 RETURN NOT (
     LOWER(address) LIKE '%eu%' OR
@@ -72,7 +72,7 @@ Now create a row filter policy that uses this function:
 ```sql
 CREATE POLICY hide_eu_customers
 ON CATALOG sales
-ROW FILTER filter_non_eu
+ROW FILTER sales.governance.filter_non_eu
 TO `analysts`
 FOR TABLES
 MATCH COLUMNS
@@ -93,7 +93,7 @@ Column mask policies control what values users see in specific columns. Like row
 Create a masking function that returns a redacted value:
 
 ```sql
-CREATE OR REPLACE FUNCTION mask_ssn(ssn STRING)
+CREATE OR REPLACE FUNCTION sales.governance.mask_ssn(ssn STRING)
 RETURNS STRING
 DETERMINISTIC
 RETURN '***-**-****';
@@ -103,9 +103,9 @@ Then create a column mask policy:
 
 ```sql
 CREATE POLICY mask_sensitive_ssn
-ON SCHEMA customers
-COLUMN MASK mask_ssn
-TO `all_users`
+ON SCHEMA sales.customers
+COLUMN MASK sales.governance.mask_ssn
+TO `account users`
 EXCEPT `compliance_team`
 FOR TABLES
 MATCH COLUMNS
@@ -113,7 +113,7 @@ MATCH COLUMNS
 ON COLUMN ssn_col;
 ```
 
-This policy masks SSN values for all users except the compliance team. Any column in the `customers` schema tagged with `pii=ssn` displays `***-**-****` instead of the actual value.
+This policy masks SSN values for all account users except the compliance team. Any column in the `sales.customers` schema tagged with `pii=ssn` displays `***-**-****` instead of the actual value.
 
 ## Follow UDF best practices
 
@@ -125,16 +125,17 @@ Follow these guidelines when writing UDFs for ABAC:
 - **Stay deterministic**: The same input should always produce the same output
 - **Avoid external calls**: Don't make API calls or lookups to other databases
 - **Reference only table columns**: This enables query optimization and predicate pushdown
-- **Test at scale**: Validate performance with at least 1 million rows
+- **Test at scale**: Validate performance with representative queries before deploying to production
 
 Avoid common performance pitfalls:
 
-- Calling `is_account_group_member()` or `is_member()` inside UDFs
-- Using complex subqueries or joins within the function
+- Calling external APIs or looking up data in other databases
+- Using Python UDFs instead of SQL UDFs
+- Using complex subqueries or joins against large tables within the function
 - Performing heavy regex operations on large text fields
 - Including non-deterministic logic that prevents caching
 
-Keep access control decisions in the policy definition, not the UDF. The policy specifies who the rules apply to; the UDF specifies how to transform the data.
+Use the policy's `TO` and `EXCEPT` clauses to decide who a policy applies to, and keep the UDF focused on how to filter or transform the data. The `EXCEPT` clause removes the policy for exempt users, so Azure Databricks doesn't run the UDF for them.
 
 > [!IMPORTANT]
 > When a user queries a view or function that accesses an ABAC-protected table, row filters and column masks are evaluated using the **session user's identity**—the identity of the person running the query, not the view or function owner. Users querying through views still don't need direct privileges on the underlying tables, but policies must be designed with the caller's identity in mind rather than assuming the view owner's permissions.
@@ -156,6 +157,6 @@ Only one row filter can apply to any given table, and only one column mask can a
 :::image type="content" source="../media/3-understand-policy-inheritance-scope.png" alt-text="Diagram explaining policy inheritance and scope." border="false" lightbox="../media/3-understand-policy-inheritance-scope.png":::
 
 > [!IMPORTANT]
-> You must use Databricks Runtime 16.4 or above, or serverless compute, to access tables secured by ABAC policies. Users not subject to the policy can use any runtime.
+> You must use Databricks Runtime 16.4 or above, or serverless compute, to access tables secured by ABAC policies. Queries from older runtimes fail unless the principal is listed in the `EXCEPT` clause of every policy that applies to the table.
 
 When you configure ABAC effectively, you create a governance model that scales with your organization. Adding the appropriate governed tag to a new table immediately brings it under the protection of existing policies, without requiring additional configuration.

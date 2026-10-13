@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.secure-azure-storage-account.advanced-threat-protection
-title: Understand Advanced Threat Protection for Azure Storage
+title: Understand advanced threat protection for Azure Storage
 metadata:
   title: Understand Advanced Threat Protection for Azure Storage
   description: "Understand Advanced Threat Protection for Azure Storage"
-  ms.date: 05/18/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

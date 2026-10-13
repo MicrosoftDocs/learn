@@ -8,16 +8,16 @@ A service principal is an identity created for applications and services to acce
 
 When your Databricks notebooks or jobs need to read data from Azure storage, they can authenticate using a service principal. This approach offers several advantages over using personal credentials. The authentication happens automatically without manual login, works consistently across different users and environments, and allows precise control over which storage locations the principal can access.
 
-A service principal consists of three key components you'll work with:
+A service principal consists of three key components you work with:
 
 * **Application (client) ID**: A unique identifier for the service principal
 * **Directory (tenant) ID**: The Microsoft Entra ID tenant where the service principal exists
 * **Client secret**: A password-like credential that proves the identity of the service principal
 
 > [!NOTE]
-> While service principals remain a valid authentication method, Microsoft recommends using **managed identities** for Unity Catalog storage credentials when possible. Managed identities eliminate the need to manage and rotate secrets and can access storage accounts protected by network rules. However, service principals are still useful in scenarios where managed identities aren't available or when you need more explicit control over credentials.
+> While service principals remain a valid authentication method, managed identities offer advantages for Unity Catalog storage credentials. Managed identities eliminate the need to manage and rotate secrets and can access storage accounts protected by network rules. However, service principals are still useful in scenarios where managed identities aren't available or when you need more explicit control over credentials.
 >
-> We will cover managed identities in the next unit.
+> The next unit covers managed identities.
 
 ## Using service principals with Unity Catalog
 
@@ -34,7 +34,7 @@ When you query a table or read from an external location governed by Unity Catal
 This approach offers important benefits. Your sensitive credentials never appear in notebook code or job configurations. Unity Catalog audit logs record which principal accessed which data and when. You can grant and revoke access to storage locations through Unity Catalog permissions without changing any code.
 
 > [!IMPORTANT]
-> As a data engineer, you typically won't create the storage credential itself—that's an administrative task. You'll work with existing storage credentials that have been configured by your workspace administrators or metastore admins. Your role focuses on using these credentials through external locations and tables.
+> As a data engineer, you typically won't create the storage credential itself—that's an administrative task. You work with existing storage credentials that have been configured by your workspace administrators or metastore admins. Your role focuses on using these credentials through external locations and tables.
 
 To access data through a Unity Catalog-managed external location, you simply query the table or reference the external location path. Unity Catalog handles the authentication automatically:
 
@@ -84,8 +84,8 @@ When working with service principals for data access, several security practices
 
 **Never hardcode secrets in notebooks or code**. Client secrets are sensitive credentials that grant access to your data. Always retrieve them from a secure secret store like Azure Key Vault or Databricks secrets. This practice prevents accidental exposure if you share notebooks or commit code to version control.
 
-**Understand that secrets require rotation**. Unlike managed identities, service principal client secrets have expiration dates and must be rotated periodically. As a data engineer, you should be aware that if a secret expires, your data access will fail. Work with your administrators to understand the rotation schedule and know who to contact if authentication suddenly stops working.
+**Understand that secrets require rotation**. Unlike managed identities, service principal client secrets have expiration dates and must be rotated periodically. As a data engineer, you should be aware that if a secret expires, your data access fails. Work with your administrators to understand the rotation schedule and know who to contact if authentication suddenly stops working.
 
 **Apply the principle of least privilege**. Each service principal should have access only to the specific storage locations and data it needs. If a service principal is compromised, limited permissions reduce the potential impact. When requesting access, specify exactly which storage accounts and containers you need rather than requesting broad permissions.
 
-As you move forward in your work with Unity Catalog, you'll discover that managed identities offer a more streamlined approach to authenticating data access. In the next unit, we'll explore how managed identities eliminate many of the challenges associated with service principals while providing enhanced security and simplified operations.
+Managed identities offer a more streamlined approach to authenticating data access. The next unit explains how managed identities eliminate many of the challenges associated with service principals while simplifying operations.

@@ -6,7 +6,7 @@ metadata:
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/20/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -41,14 +41,14 @@ quiz:
     - content: "Data Analyst"
       isCorrect: false
       explanation: "Incorrect. Data analysts focus on data modeling and reporting."
-  - content: "Which services would you use as a SaaS solution for data analytics?"
+  - content: "Which service would you use as a SaaS solution for data analytics?"
     choices:
     - content: "Azure SQL Database"
       isCorrect: false
       explanation: "Incorrect. Azure SQL Database isn't a SaaS service for analytics."
     - content: "Azure Databricks"
       isCorrect: false
-      explanation: "Incorrect. Azure Databricks is a PaaS service, not a SaaS solution."
+      explanation: "Incorrect. With Azure Databricks, you create and configure workspaces and compute, unlike the SaaS experience of Microsoft Fabric."
     - content: "Microsoft Fabric"
       isCorrect: true
       explanation: "Correct. Microsoft Fabric is a SaaS platform for data analytics."

@@ -3,13 +3,13 @@ uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory
 metadata:
   title: Code-free transformation at scale with Azure Data Factory
   description: "Perform code-free transformation at scale with Azure Data Factory"
-  ms.date: 05/18/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module
   ms.service: azure-data-factory
 title: Perform code-free transformation at scale with Azure Data Factory
-summary: In this module, you'll learn how to perform common data transformation and cleansing activities within Azure Data Factory without using code.
+summary: In this module, you learn how to perform common data transformation and cleansing activities within Azure Data Factory without using code.
 abstract: |
   * Introduction
   * Explain Data Factory transformation methods

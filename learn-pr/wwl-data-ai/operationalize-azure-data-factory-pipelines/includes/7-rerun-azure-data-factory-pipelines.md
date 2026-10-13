@@ -1,4 +1,4 @@
-To rerun a pipeline that has previously ran from the start, hover over the specific pipeline run and select **Rerun**. If you select multiple pipelines, you can use the **Rerun** button to run them all.
+To rerun a pipeline that previously ran from the start, hover over the specific pipeline run and select **Rerun**. If you select multiple pipelines, you can use the **Rerun** button to run them all.
 
 ![Screenshot of the Rerun option when hovering over a pipeline run in the monitoring view.](../media/rerun-pipeline.png)
 

@@ -8,14 +8,14 @@ The built-in roles most relevant to Data Factory are:
 
 | Role | Scope | What it allows |
 |---|---|---|
-| **Data Factory Contributor** | Resource group or factory | Create and manage all Data Factory resources; publish changes to the service |
+| **Data Factory Contributor** | Resource group or above | Create, edit, and delete data factories and child resources; deploy Resource Manager templates; publish changes to the service |
 | **Reader** | Factory | View factory resources and monitor runs; can't make changes or publish |
-| **Contributor** | Factory | Edit factory resources but can't access the **Publish** and **Publish All** buttons in the studio |
+| **Contributor** | Factory | Update the factory by using PowerShell or the SDK; can see resources in the Azure portal but can't access the **Publish** and **Publish All** buttons |
 
 For finer-grained control, you can create custom roles. For example, you might create a role that lets users test linked service connections and preview data without being able to modify pipelines or publish changes.
 
 > [!TIP]
-> When using Git integration, restrict who can publish to the Data Factory service by granting the **Data Factory Contributor** role only to a small group. All other contributors can work in Git branches and submit pull requests without being able to push directly to the live factory.
+> When using Git integration, restrict who can publish to the Data Factory service by granting the **Data Factory Contributor** role only to a small group on the resource group that contains the factory. Permissions on Azure Repos and GitHub are independent of Data Factory permissions, so all other contributors can work in Git branches and submit pull requests without being able to publish to the live factory.
 
 ## Authenticate to other services with managed identities
 
@@ -30,26 +30,26 @@ To use a managed identity, grant it an appropriate role on the target resource. 
 
 ## Protect secrets with Azure Key Vault
 
-For services that don't support managed identity authentication, store connection strings and passwords in Azure Key Vault rather than in Data Factory linked service definitions. Data Factory retrieves secrets from Key Vault at runtime using the factory's managed identity, so no credentials appear in the factory's Git repository or ARM templates.
+For services that don't support managed identity authentication, store connection strings and passwords in Azure Key Vault rather than in Data Factory linked service definitions. Data Factory retrieves secrets from Key Vault at runtime by using a managed identity, so no credentials appear in the factory's Git repository or ARM templates.
 
 > [!IMPORTANT]
 > For security reasons, Data Factory doesn't store linked service secrets in Git. Any changes to a linked service that contains a secret (such as a password or connection string) are published immediately and directly to the Data Factory service, bypassing the Git collaboration workflow.
 
 When setting up Key Vault integration for CI/CD pipelines across multiple environments, use a separate key vault for each environment (development, test, production). Keep the secret **names** the same across vaults, and only change the key vault name as a CI/CD parameter. This approach avoids parameterizing individual connection strings while still isolating environment credentials.
 
-## Encrypt factory metadata with customer-managed keys
+## Encrypt factory data with customer-managed keys
 
-By default, Azure Data Factory encrypts factory metadata using Microsoft-managed keys. If your organization requires control over the encryption key lifecycle—for example, to meet regulatory requirements—you can configure **customer-managed keys** (CMK) stored in Azure Key Vault.
+By default, Azure Data Factory encrypts data at rest, including entity definitions and any data cached while runs are in progress, by using a Microsoft-managed key that's uniquely assigned to your factory. If your organization requires control over the encryption key lifecycle—for example, to meet regulatory requirements—you can configure **customer-managed keys** (CMK) stored in Azure Key Vault.
 
-When CMK is enabled, Data Factory uses the factory's managed identity to authenticate to Key Vault and retrieve the key for encryption and decryption operations. The key vault must have **Soft Delete** and **Purge Protection** enabled to prevent accidental key deletion.
+When CMK is enabled, Data Factory uses a managed identity to authenticate to Key Vault and retrieve the key for encryption and decryption operations. The key vault must have **Soft Delete** and **Purge Protection** enabled to prevent accidental key deletion. The key vault and the factory must be in the same Microsoft Entra tenant and in the same region.
 
-CMK can be configured during factory creation in the Azure portal, or after creation from the Data Factory studio.
+You can configure CMK during factory creation in the Azure portal, where you assign a user-assigned managed identity, or after creation in the Data Factory UI, where the factory's system-assigned managed identity is used. A customer-managed key can only be configured on an empty data factory, so enable it right after you create the factory.
 
 ## Apply the principle of least privilege
 
 Across all security controls, apply least privilege consistently:
 
-- Assign built-in RBAC roles at the narrowest scope possible (factory level, not subscription level) and review role assignments regularly.
+- Assign built-in RBAC roles at the narrowest scope possible (for example, at the resource group level instead of the subscription level) and review role assignments regularly.
 - Grant managed identities only the specific permissions they need on downstream resources. Avoid assigning broad roles such as **Owner** or **Contributor** on storage accounts or databases.
 - Use separate Key Vault instances per environment to prevent production secrets from being accessible in development environments.
 - Audit activity logs regularly using Azure Monitor to detect unexpected access patterns.

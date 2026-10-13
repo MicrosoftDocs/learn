@@ -2,7 +2,7 @@
 
 Tracking who did what, when, and to which data objects is essential for governance, security, and compliance. When you configure **audit logging** in Azure Databricks, you gain visibility into every significant action across your workspace and account. This visibility helps you meet regulatory requirements, investigate security incidents, and maintain accountability across your data platform.
 
-Unity Catalog audit logging is **configured at the account level** and automatically applies to all workspaces within that account. This account-level configuration ensures consistent audit capture across your entire Databricks environment without requiring per-workspace setup.
+Unity Catalog events are recorded at the **account level**, so the audit log captures them across all workspaces attached to the metastore without per-workspace setup.
 
 In this unit, you learn how to access and query audit logs, understand what events are captured, and use these logs for common governance scenarios.
 
@@ -40,7 +40,6 @@ The audit log captures events across numerous services within Azure Databricks. 
 
 **Workspace-level services** log events for actions taken within a specific workspace:
 
-- **Unity Catalog**: Table creation, deletion, updates, and permission changes
 - **Notebooks**: Commands executed, notebooks created, modified, or deleted
 - **Clusters**: Cluster creation, resizing, and termination
 - **Jobs**: Job creation, runs, and failures
@@ -49,9 +48,10 @@ The audit log captures events across numerous services within Azure Databricks. 
 
 **Account-level services** capture events that span **multiple workspaces**:
 
+- **Unity Catalog**: Table creation, deletion, updates, and permission changes
 - **Account management**: User and group management across the account
 - **Billable usage**: Access to usage reports and aggregated metrics
-- **Delta Sharing**: Provider and recipient actions for shared data
+- **OpenSharing** (formerly Delta Sharing): Provider and recipient actions for shared data, logged under the `unityCatalog` service
 
 For example, when a user queries a table in Unity Catalog, the `unityCatalog` service logs a `getTable` action. If the same user runs a command in a notebook, the `notebook` service logs a `runCommand` action. Each service provides specific action names that describe precisely what occurred.
 
@@ -148,16 +148,19 @@ When you enable or disable verbose logging, Azure Databricks logs this configura
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=7cd58862-808c-4bbe-affb-53786093261e]
 
-While the audit log system table provides direct access within Databricks, many organizations route logs to external systems for centralized monitoring. Azure Databricks integrates with Azure diagnostic settings to deliver logs to multiple destinations, each optimized for different use cases:
+While the audit log system table provides direct access within Databricks, many organizations route logs to external systems for centralized monitoring. Azure Databricks integrates with Azure diagnostic settings to deliver workspace-level logs to multiple destinations, each optimized for different use cases:
 
-- **Azure Log Analytics**: Provides near-real-time ingestion (typically within 15 minutes), centralized storage, and powerful querying using Kusto Query Language (KQL). This makes it ideal for fast analysis, interactive investigations, and building custom dashboards for auditing Unity Catalog access events.
+- **Azure Log Analytics**: Provides centralized storage and querying using Kusto Query Language (KQL). This makes it a good fit for interactive investigations and custom dashboards.
 - **Azure Storage accounts**: Offers low-cost, long-term archival and batch analysis. Best suited for compliance scenarios where logs are accessed infrequently but must be retained for extended periods.
 - **Azure Event Hubs**: Enables real-time streaming to downstream consumers and processing systems. Ideal when you need to integrate audit logs with existing event-driven architectures or SIEM platforms.
 
-Platform administrators configure log delivery at the account level through the Azure portal. When building monitoring solutions, account for typical ingestion latency of approximately **15 minutes** in your alerting thresholds.
+You configure log delivery for each Azure Databricks workspace resource in the Azure portal, under **Monitoring** > **Diagnostic settings**. Diagnostic logs require the Premium plan.
+
+> [!IMPORTANT]
+> Azure diagnostic settings don't include account-level events, and the Unity Catalog and OpenSharing services aren't available through them. To audit Unity Catalog access events, use the audit log system table. Account for ingestion latency in your alerting thresholds when you build monitoring solutions on exported logs.
 
 :::image type="content" source="../media/7-diagnostic-setting.png" alt-text="Screenshot of Azure portal, showing diagnostic setting for Azure Databricks." lightbox="../media/7-diagnostic-setting.png":::
 
-The combination of the system table for interactive queries and external delivery for operational monitoring provides comprehensive coverage. You can use the system table for ad-hoc investigations while relying on your SIEM platform for continuous security monitoring.
+The combination of the system table for interactive queries and external delivery for operational monitoring provides broad coverage. You can use the system table for ad-hoc investigations while relying on your SIEM platform for continuous security monitoring of workspace-level events.
 
-Understanding audit logging capabilities positions you to support compliance requirements and respond quickly to security incidents. With the audit log system table, you have a powerful tool for tracking activity, investigating issues, and demonstrating governance controls to stakeholders.
+Understanding audit logging capabilities positions you to support compliance requirements and respond quickly to security incidents. With the audit log system table, you can track activity, investigate issues, and demonstrate governance controls to stakeholders.

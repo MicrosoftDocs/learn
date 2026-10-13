@@ -3,15 +3,15 @@ uid: learn.wwl.operationalize-your-azure-data-factory-pipelines
 metadata:
   title: Operationalize your Azure Data Factory pipelines
   description: "Operationalize your Azure Data Factory pipelines"
-  ms.date: 05/15/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module
   ms.service: azure-data-factory
 title: Operationalize your Azure Data Factory pipelines
-summary: In this module, you'll learn how you can publish your Azure Data Factory work between different environments.
+summary: In this module, you learn how to publish your Azure Data Factory work between different environments.
 abstract: |
-  In this module, you will:
+  In this module, you:
   - Configure a git repository with a development factory
   - Create and merge a feature branch
   - Deploy a release pipeline

@@ -1,4 +1,4 @@
-You run SQL commands from tools and utilities that connect to the appropriate database. The tooling available depends on the database management system you're using. In this unit, you'll learn about the tools you can use to connect to Azure SQL Database.
+You run SQL commands from tools and utilities that connect to the appropriate database. The tooling available depends on the database management system you're using. In this unit, you learn about the tools you can use to connect to Azure SQL Database.
 
 ## Retrieve connection information for Azure SQL Database
 
@@ -10,10 +10,10 @@ You can use any of these tools to query data held in Azure SQL Database:
 - Visual Studio Code
 - SQL Server Data Tools
 
-To use these tools, you first need to establish a connection to the database. You'll require the details of the server to connect to, an Azure SQL Database account (a username and password) that has access to this server, and the name of the database to use on this server. You can find the server name for a database using the Azure portal: go to the page for your database, and on the **Overview** page note the fully qualified server name in the **Server name** field.
+To use these tools, you first need to establish a connection to the database. You need the details of the server to connect to, an Azure SQL Database account (a username and password) that has access to this server, and the name of the database to use on this server. You can find the server name for a database using the Azure portal: go to the page for your database, and on the **Overview** page note the fully qualified server name in the **Server name** field.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the **Overview** page for a SQL Database instance in the Azure portal.](../media/3-azure-connect.png)
+> ![Screenshot of the Overview page for a SQL Database instance in the Azure portal.](../media/3-azure-connect.png)
 
 Some tools and applications require a connection string that identifies the server, database, account name, and password. You can find this information from the **Overview** page for a database in the Azure portal: select **Show database connection strings**.
 
@@ -22,12 +22,12 @@ Some tools and applications require a connection string that identifies the serv
 
 ## Use the Azure portal to query a database
 
-To access the query editor in the Azure portal, go to the page for your database and select **Query editor**. You'll be prompted for credentials. You can set the **Authorization type** to **SQL Server authentication** and enter the user name and password that you set up when you created the database. Or you can select **Microsoft Entra password authentication** and provide the credentials of an authorized user in Microsoft Entra ID. If Active Directory single sign-on is enabled, you can connect by using your Azure identity.
+To access the query editor in the Azure portal, go to the page for your database and select **Query editor**. On the sign-in screen, choose **SQL authentication** and enter the login and password for a user that has access to the database, such as the server admin account. Or choose **Microsoft Entra authentication** (recommended), which requires that Microsoft Entra authentication is configured for your database, and select **Continue as** your Microsoft Entra account.
 
  > [!div class="mx-imgBorder"]
  > ![Screenshot of the SQL Database sign-in page in the Azure portal.](../media/3-sign-in-annotated.png)
 
-You enter your SQL query in the query pane and then click **Run** to execute it. Any rows that are returned appear in the **Results** pane. The **Messages** pane displays information such as the number of rows returned, or any errors that occurred:
+You enter your SQL query in the query pane and then select **Run** to execute it. Any rows that are returned appear in the **Results** pane. The **Messages** pane displays information such as the number of rows returned, or any errors that occurred:
 
  > [!div class="mx-imgBorder"]
  > ![Screenshot of the query editor in the Azure portal with the various panes highlighted.](../media/3-query-editor-annotated.png)
@@ -45,7 +45,7 @@ The `sqlcmd` utility runs from the command line and is also available in the  Cl
 sqlcmd -S <server>.database.windows.net -d <database> -U <username> -P <password>
 ```
 
-If the sign-in command succeeds, you'll see a `1>` prompt. You can enter SQL commands, then type **GO** on a line by itself to run them.
+If the sign-in command succeeds, you see a `1>` prompt. You can enter SQL commands, then type **GO** on a line by itself to run them.
 
 ## Use SQL Server Management Studio
 
@@ -59,7 +59,7 @@ The first time you run SQL Server Management Studio the **Connect to Server** di
     |---------|---------|
     |Server type | Database Engine |
     |Server name	     | The fully qualified server name. You can find the server name in the Azure portal, as described earlier. |
-    |Authentication    | **Microsoft Entra - Password** (recommended) for Microsoft Entra accounts, or **SQL Server Authentication** for SQL logins. |
+    |Authentication    | **Microsoft Entra MFA** (recommended) for Microsoft Entra accounts, or **SQL Server Authentication** for SQL logins. |
     |Login   | The server admin account user name. Specify the user name from the account used to create the server.        |
     |Password    | The password you specified when you provisioned the server.  |
     
@@ -75,7 +75,7 @@ The first time you run SQL Server Management Studio the **Connect to Server** di
 The example below uses Transact-SQL commands to create a new database (CREATE DATABASE and ALTER DATABASE commands are part of the Transact-SQL dialect, and aren't part of standard SQL). The script then creates a new table named Customers, and inserts four rows into this table. Again, the version of the INSERT statement, with four VALUES clauses, is part of the Transact-SQL dialect. The `--` characters start a comment in Transact-SQL. The `[` and `]` characters surround identifiers, such as the name of a table, database, column, or data type. The `N` character in front of a string indicates that the string uses the Unicode character set.
 
 > [!NOTE]
-> You can't create new SQL databases from a connection in SQL Server Management Studio if you're running SQL Database single database or elastic pools. You can only create new databases in this way if you're using SQL Database managed instance.
+> In Azure SQL Database, you create a new database by running the `CREATE DATABASE` statement while connected to the `master` database of the logical server. The `USE` statement can't switch databases, so the script that follows works as written only on SQL Server or SQL Managed Instance. For a single database, connect directly to your database and run the statements from `CREATE TABLE` onward.
 
 ```SQL
 IF NOT EXISTS (
@@ -136,7 +136,7 @@ SQL Server Data Tools are available from the **Tools** menu in Visual Studio. To
 1. In the **Connect** dialog box, enter the following information, and then select **Connect**:
 
     |Setting | Value  |
-    |---------|---------|---------|
+   |---------|---------|
     |Server name	   | The fully qualified server name, from the **Overview** page in the Azure portal        |
     |Authentication     |SQL Server Authentication | 
     |Login     |  The user ID of the server admin account used to create the server        |
@@ -145,7 +145,7 @@ SQL Server Data Tools are available from the **Tools** menu in Visual Studio. To
 
 
     > [!div class="mx-imgBorder"]
-    > Screenshot of the **Connect** dialog box in Visual Studio.](../media/3-sql-sever-data-tool-connect.png)
+    > ![Screenshot of the Connect dialog box in Visual Studio.](../media/3-sql-sever-data-tool-connect.png)
 
 1. In the **Query** window, enter your SQL query, and then select the **Execute** button in the toolbar. The results appear in the **Results** pane.
 

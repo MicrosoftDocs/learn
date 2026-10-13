@@ -5,7 +5,7 @@ When using Azure Data Factory (ADF) to build your data integration solutions, it
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you:
 
 - Configure a git repository with a development factory
 - Create and merge a feature branch
@@ -20,7 +20,7 @@ In this module, you will:
 
 Before taking this module, it's recommended that the student is able to:
 
-* Log in to the Azure portal
+* Sign in to the Azure portal
 * Explain and create resource groups
 * Describe Azure Data Factory and its core components
 * Ingest data into Azure Data Factory using the Copy Activity
