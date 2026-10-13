@@ -21,7 +21,7 @@ An Azure integration runtime is capable of:
     - Validation activity
     - Web activity
 
-You can set a certain location of an Azure IR, in which case the data movement or activity dispatch will happen in that specific region. If you choose to use the autoresolve Azure IR, which is the default, ADF makes a best effort to automatically detect your sink and source data store to choose the best location either in the same region, if available, or the closest one in the same geography for the Copy Activity. For anything else, it uses the IR in the Data Factory region. Azure Integration Runtime also has support for virtual networks. 
+You can set a certain location of an Azure IR, in which case the data movement or activity dispatch happens in that specific region. If you choose to use the autoresolve Azure IR, which is the default, ADF makes a best effort to automatically detect the location of your sink data store to choose the best location, either in the same region, if available, or the closest one in the same geography for the Copy Activity. If the sink's region isn't detectable, or for other activities, it uses the IR in the Data Factory region. Azure Integration Runtime also supports connecting to data stores privately when you enable a managed virtual network.
 
 ## Create and configure Azure integration runtime
 
@@ -42,7 +42,7 @@ Use the following steps to create an Azure IR using Azure Data Factory UI.
     > [!div class="mx-imgBorder"]
     > ![Screenshot that shows the Integration runtime setup page with the name field for the new Azure integration runtime.](../media/finish-azure-integration-runtime.png)
 
-You'll see a pop-up notification when the creation completes. On the Integration runtimes page, make sure that you see the newly created IR in the list.
+You see a pop-up notification when the creation completes. On the Integration runtimes page, make sure that you see the newly created IR in the list.
 
 ## Automated deployments
 
@@ -54,4 +54,4 @@ You can also set up Azure IR via an Azure Resource Manager template, or by using
     Set-AzDataFactoryV2IntegrationRuntime -DataFactoryName "SampleV2DataFactory1" -Name "MySampleAzureIR" -ResourceGroupName "ADFV2SampleRG" -Type Managed -Location "West Europe"
     ```
 
-When Azure IR, the type must be set to Managed. You don't need to specify compute details because it's fully managed elastically in cloud.
+When you create an Azure IR, the type must be set to Managed. You don't need to specify compute details because it's fully managed elastically in cloud.

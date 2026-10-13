@@ -1,12 +1,12 @@
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=7cf24ded-3fc2-4406-b4fe-922c259cfb02]
 
-When your Azure Databricks environment grows beyond a single workspace, tracking what happens across clusters, jobs, and users becomes a challenge. **Log streaming to Azure Log Analytics** solves this by centralizing all your diagnostic and audit logs in one place, enabling powerful queries, alerts, and dashboards.
+When your Azure Databricks environment grows beyond a single workspace, tracking what happens across clusters, jobs, and users becomes a challenge. **Log streaming to Azure Log Analytics** solves this by centralizing all your diagnostic and audit logs in one place, enabling queries, alerts, and dashboards.
 
 In this unit, you learn how log streaming works, how to query Databricks logs in Azure Log Analytics, and how to create alerts for proactive monitoring.
 
 ## Understand the log streaming architecture
 
-Log streaming sends **diagnostic data** from Azure Databricks to Azure Log Analytics in **near real-time**. This integration uses **Azure diagnostic settings**, which capture events from your Azure Databricks workspace and route them to a Log Analytics workspace.
+Log streaming sends **diagnostic data** from Azure Databricks to Azure Log Analytics, typically within **15 minutes** of an event. This integration uses **Azure diagnostic settings**, which capture events from your Azure Databricks workspace and route them to a Log Analytics workspace. Diagnostic settings can also archive logs to a storage account or stream them to an event hub.
 
 Consider a typical scenario: Your organization runs multiple Azure Databricks workspaces across different teams. Without **centralized logging**, investigating a failed job requires connecting to each workspace individually and searching through scattered logs. With log streaming configured, you query all events from a **single interface**.
 
@@ -19,10 +19,10 @@ The data flow works as follows:
 
 :::image type="content" source="../media/6-understand-log-streaming.png" alt-text="Diagram explaining log streaming architecture." border="false" lightbox="../media/6-understand-log-streaming.png":::
 
-Platform administrators typically configure the diagnostic settings through the Azure portal. As a data engineer, you focus on using the logs for monitoring and troubleshooting.
+Platform administrators typically configure the diagnostic settings through the Azure portal by selecting **Diagnostic settings** in the **Monitoring** section of the Azure Databricks resource and choosing **Send to Log Analytics**. As a data engineer, you focus on using the logs for monitoring and troubleshooting.
 
 > [!NOTE]
-> Diagnostic logs require the **Azure Databricks Premium plan**. Logs typically become available in Log Analytics within **15 minutes** of the event occurring.
+> Diagnostic logs require the **Azure Databricks Premium plan**. Logs typically become available within **15 minutes** of the event occurring, but Azure Databricks doesn't guarantee a delivery time.
 
 > [!NOTE]
 > For querying audit logs within Azure Databricks itself, Databricks recommends using the `system.access.audit` system table. Log streaming to Azure Log Analytics is the preferred approach when you need cross-service centralized monitoring, KQL-based alerting, or integration with Azure Monitor and other Azure services.
@@ -38,8 +38,8 @@ The most commonly used tables include:
 | `DatabricksClusters`     | Cluster creation, termination, resizing, and configuration changes |
 | `DatabricksJobs`         | Job creation, runs, failures, and schedule modifications           |
 | `DatabricksNotebook`     | Notebook execution, creation, and modification events              |
-| `DatabricksSQL`          | SQL warehouse operations and query-related events                  |
-| `DatabricksTables`       | Table creation, deletion, access, and permission change events     |
+| `DatabricksSQL`          | SQL warehouse creation, modification, and related events           |
+| `DatabricksUnityCatalog` | Unity Catalog events, including table creation, deletion, and updates |
 | `DatabricksWorkspace`    | Workspace-level operations and administrative actions              |
 | `DatabricksSecrets`      | Secret scope and secret access events                              |
 
@@ -52,7 +52,7 @@ Each table contains **standard columns** for event tracking:
 - `RequestParams` - Details about the request
 - `Response` - The outcome including status codes
 
-Understanding these tables helps you target your queries efficiently. For job-related issues, start with `DatabricksJobs`. For security investigations, focus on `DatabricksSecrets` and `DatabricksTables`.
+Understanding these tables helps you target your queries efficiently. For job-related issues, start with `DatabricksJobs`. For security investigations, focus on `DatabricksSecrets` and `DatabricksUnityCatalog`.
 
 ## Query logs with Kusto Query Language
 
@@ -100,10 +100,10 @@ DatabricksClusters
 For security and compliance, track who is creating, modifying, or deleting tables across your workspaces:
 
 ```kusto
-DatabricksTables
+DatabricksUnityCatalog
 | where TimeGenerated > ago(24h)
-| where OperationName has "create" or OperationName has "delete" or OperationName has "update"
-| project TimeGenerated, Identity, OperationName, RequestParams
+| where ActionName in~ ("createTable", "deleteTable", "updateTables")
+| project TimeGenerated, Identity, ActionName, RequestParams
 | order by TimeGenerated desc
 ```
 
@@ -136,10 +136,10 @@ DatabricksJobs
 **Unusual table operations**: Alert when table create or delete operations occur outside business hours, which might indicate unauthorized data modification.
 
 ```kusto
-DatabricksTables
+DatabricksUnityCatalog
 | where TimeGenerated > ago(1h)
 | where hourofday(TimeGenerated) < 6 or hourofday(TimeGenerated) > 20
-| where OperationName has "create" or OperationName has "delete"
+| where ActionName in~ ("createTable", "deleteTable")
 | summarize OperationCount = count() by Identity
 | where OperationCount > 5
 ```
@@ -156,8 +156,8 @@ Log streaming transforms troubleshooting from **reactive investigation** to **sy
 
 **Investigating performance issues**: Query cluster events to identify scaling patterns. Look for frequent autoscaling events that might indicate undersized initial configurations.
 
-**Security incident response**: Use `DatabricksTables` and `DatabricksSecrets` tables to trace data access. Correlate with `SourceIPAddress` to identify unusual access locations.
+**Security incident response**: Use `DatabricksUnityCatalog` and `DatabricksSecrets` tables to trace data access. Correlate with `SourceIPAddress` to identify unusual access locations.
 
 **Cost attribution**: Combine cluster and job logs with Azure cost data to understand which teams or projects drive consumption.
 
-With logs centralized in Azure Log Analytics, you build comprehensive views of your Azure Databricks environment. This visibility supports both day-to-day operations and long-term planning decisions.
+With logs centralized in Azure Log Analytics, you build views of your Azure Databricks environment. This visibility supports both day-to-day operations and long-term planning decisions.

@@ -1,6 +1,6 @@
 To do one-off data transfers into an Azure Data Lake store, use Azure Storage Explorer.
 
-Storage Explorer is a free standalone application for Windows, macOS, and Linux that lets you manage Azure Storage data including blobs, queues, tables, file shares, and Azure Data Lake Storage Gen2. That's why we use it in this exercise.
+Storage Explorer is a free standalone application for Windows, macOS, and Linux that lets you manage Azure Storage data including blobs, queues, tables, file shares, and Azure Data Lake Storage Gen2. This exercise uses it for that reason.
 
 > [!NOTE]
 > Storage Explorer 1.42.0 and later requires a **.NET 10 runtime** that matches the architecture of your Storage Explorer installation. The installer adds .NET 10 if it isn't already present, but it's your responsibility to keep your .NET install up to date. You can download the latest runtime from the [.NET 10 download page](https://dotnet.microsoft.com/download/dotnet/10.0).
@@ -39,9 +39,9 @@ Storage Explorer loads the **Explorer** tab and shows all storage accounts assoc
 
 ## Create a file system in Storage Explorer
 
-Because blobs are always uploaded into folders, you can organize groups of blobs much like you organize files on your computer.
+Folders let you organize groups of files much like you organize files on your computer.
 
-In Data Lake Storage Gen2, you start by creating a _file system_. This defines the Blob storage container that holds your data lake. You create folders and files within this dedicated area.
+In Data Lake Storage Gen2, a _file system_ is a Blob Storage container. The container holds your data lake, and you create folders and files within it. Start by creating a container.
 
 1. In Storage Explorer, expand your subscription, and then expand your storage accounts.
 
@@ -69,7 +69,7 @@ A folder helps provide a hierarchical structure for your data. You can create mu
 
 ## Create a sample text file
 
-You'll need data to work with, so create a sample text file on your computer named **sales.txt**. Then paste the following text into the file:
+You need data to work with, so create a sample text file on your computer named **sales.txt**. Then paste the following text into the file:
 
 ```text
 #salaries Details
@@ -83,11 +83,11 @@ You'll need data to work with, so create a sample text file on your computer nam
 01-01-2019  c3   e6 7000
 ```
 
-You'll upload this data file in various ways. Keep in mind that this is a _simple_ example. Typically, you'll populate your data lake with much larger data samples from a variety of sources.
+You can upload this data file in various ways. Keep in mind that this is a _simple_ example. Typically, you populate your data lake with much larger data samples from a variety of sources.
 
 ## Upload a file
 
-You can upload files and folders from your local machine to directories in your file share right from Storage Explorer.
+You can upload files and folders from your local machine to directories in your storage container right from Storage Explorer.
 
 1. In Storage Explorer, double-click the **data** folder.
 
@@ -105,4 +105,4 @@ When you finish, the file appears on the list.
 
 ## Download a file
 
-To download a copy of a file from your file share, right-click the file, and then select **Download**. Choose where to put the file on your local machine, and then select **Save**. The download progress appears in the **Activities** pane at the bottom of the window.
+To download a copy of a file from your storage container, right-click the file, and then select **Download**. Choose where to put the file on your local machine, and then select **Save**. The download progress appears in the **Activities** pane at the bottom of the window.

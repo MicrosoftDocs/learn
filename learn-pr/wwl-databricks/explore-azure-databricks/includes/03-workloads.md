@@ -1,6 +1,6 @@
 Azure Databricks offers capabilities for various workloads including Machine Learning and Large Language Models (LLM), Data Science, Data Engineering, BI and Data Warehousing, and Streaming Processing.
 
-## Data Engineering
+## Data engineering
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=142999cd-f832-426e-b39c-02365db09957]
 
@@ -8,7 +8,7 @@ Azure Databricks provides capabilities for data scientists and engineers who nee
 
 :::image type="content" source="../media/03-azure-databricks-data-science-engineering.png" alt-text="Diagram of Databricks data ingestion & data sources screen." lightbox="../media/03-azure-databricks-data-science-engineering.png":::
 
-## Machine Learning
+## Machine learning
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=507d0d61-269c-460f-b17f-c8ab190041f7]
 
@@ -22,7 +22,7 @@ Azure Databricks supports building, training, and deploying machine learning mod
 
 Data analysts who primarily interact with data through SQL can use SQL warehouses in Azure Databricks. The Azure Databricks Workspace UI provides a familiar SQL editor, dashboards, and automatic visualization tools to analyze and visualize data directly within Azure Databricks. This workload is ideal for running quick ad-hoc queries and creating reports from large datasets.
 
-:::image type="content" source="../media/05-azure-databricks-sql.png" alt-text="Diagram of DatabricksSQL Editor screen." lightbox="../media/05-azure-databricks-sql.png":::
+:::image type="content" source="../media/05-azure-databricks-sql.png" alt-text="Diagram of Databricks SQL Editor screen." lightbox="../media/05-azure-databricks-sql.png":::
 
 > [!NOTE]
 > SQL warehouses require the Premium tier.

@@ -1,10 +1,10 @@
-The first stage of data integration work is to ingest source data from any number of systems into a destination, or an intermediary data store. Azure Data Factory provides differing ingestion methods that can connect to over a hundred different data connectors. The method you choose will largely depend on your current skillset, or preference for working with a technology to ingest data. 
+The first stage of data integration work is to ingest source data from any number of systems into a destination, or an intermediary data store. Azure Data Factory provides differing ingestion methods that can connect to over a hundred different data connectors. The method you choose largely depends on your current skillset, or preference for working with a technology to ingest data.
 
 Regardless of which method you choose, you must set up the appropriate infrastructure to support the data ingestion method through integration runtimes. In addition, you must also make sure that the data ingestion is secure in each data store, and while in transit.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you learn how to:
 
 - Describe the data ingestion methods
 - Understand the connectors that are available
@@ -14,4 +14,4 @@ In this module, you will:
 - Describe data ingestion security considerations
 
 > [!NOTE]
-> New data integration features are being delivered in [Data Factory in Microsoft Fabric](/fabric/data-factory/) first. Microsoft Fabric is the next generation of Azure Data Factory, offering a simpler architecture, built-in AI capabilities, and deeper integration across analytics workloads. If you're starting a new data integration project, consider evaluating Fabric Data Factory. Existing Azure Data Factory workloads continue to be fully supported.
+> [Data Factory in Microsoft Fabric](/fabric/data-factory/) is the next generation of Azure Data Factory, with a simpler architecture, built-in AI, and new features. If you're new to data integration, consider starting with Fabric Data Factory. Existing Azure Data Factory workloads can upgrade to Fabric Data Factory. For more information, see [Upgrade from Azure Data Factory to Data Factory in Microsoft Fabric](/fabric/data-factory/migrate-planning-azure-data-factory).

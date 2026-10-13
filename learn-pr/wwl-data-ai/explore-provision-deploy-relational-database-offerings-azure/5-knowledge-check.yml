@@ -5,7 +5,7 @@ metadata:
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/20/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -36,7 +36,7 @@ quiz:
       explanation: "Correct. Azure SQL Database automates most maintenance tasks."
     - content: "You must purchase a SQL Server license"
       isCorrect: false
-      explanation: "Incorrect. You don't need a SQL Server license to use Azure SQL Database - you pay by usage."
+      explanation: "Incorrect. You don't need to purchase a SQL Server license to use Azure SQL Database. The license is included in the price of the service."
     - content: "It can only support one database"
       isCorrect: false
       explanation: "Incorrect. You can use an elastic pool to support multiple databases."
@@ -44,10 +44,10 @@ quiz:
     choices:
     - content: "Azure SQL Managed Instance"
       isCorrect: false
-      explanation: "Incorrect. LAMP standard for Linux, Apache, MySQL, and PHP."
+      explanation: "Incorrect. LAMP stands for Linux, Apache, MySQL, and PHP. SQL Managed Instance is based on SQL Server, not MySQL."
     - content: "Azure Database for MySQL"
       isCorrect: true
-      explanation: "Correct. LAMP standard for Linux, Apache, MySQL, and PHP."
+      explanation: "Correct. LAMP stands for Linux, Apache, MySQL, and PHP. Azure Database for MySQL is the managed service for MySQL."
     - content: "Azure Database for PostgreSQL"
       isCorrect: false
-      explanation: "Incorrect. That's incorrect. LAMP standard for Linux, Apache, MySQL, and PHP."
+      explanation: "Incorrect. LAMP stands for Linux, Apache, MySQL, and PHP. Azure Database for PostgreSQL is for PostgreSQL, not MySQL."

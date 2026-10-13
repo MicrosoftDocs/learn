@@ -22,11 +22,11 @@ The metrics interface displays three categories of data:
 
 **Spark metrics** focus on job execution patterns. **Active tasks** show current parallelism levels. Failed and completed task counts reveal job health. **Shuffle read and write metrics** expose data movement between stages that can indicate performance issues.
 
-**GPU metrics** (available on Databricks Runtime ML 13.3 and later) track specialized compute utilization when running machine learning workloads.
+**GPU metrics** (available on Databricks Runtime ML 13.3 and later, for GPU-enabled instances) track specialized compute utilization when running machine learning workloads.
 
 :::image type="content" source="../media/2-cluster-metrics.png" alt-text="Screenshot of Azure Databricks cluster metrics." lightbox="../media/2-cluster-metrics.png":::
 
-You can filter metrics by time range using the date picker, viewing data from the past 30 days. Select individual nodes from the Compute dropdown to investigate specific worker performance, or view aggregated metrics across all nodes to understand overall cluster behavior.
+You can filter metrics by time range using the date picker, viewing data from the last 30 days. Select individual nodes from the **All nodes** dropdown to investigate specific worker performance, or view aggregated metrics across all nodes to understand overall cluster behavior. To view Spark or GPU metrics, use the **Hardware** dropdown.
 
 > [!NOTE]
 > Serverless compute for notebooks and jobs uses query insights instead of the metrics UI. The monitoring approach differs, but the goal remains the same: understanding resource consumption.
@@ -37,11 +37,11 @@ SQL warehouses have their own monitoring interface optimized for query analytics
 
 :::image type="content" source="../media/2-warehouse-monitoring-tab.png" alt-text="Screenshot of the Azure Databricks SQL warehouse monitoring tab." lightbox="../media/2-warehouse-monitoring-tab.png":::
 
-**Live statistics** at the top of the page show warehouse status, running queries, queued queries, and current cluster count. These metrics update in real-time and help you quickly assess whether the warehouse is keeping up with demand.
+**Live statistics** at the top of the page show warehouse status, running queries, queued queries, and current cluster count. These metrics help you quickly assess whether the warehouse is keeping up with demand.
 
 The **peak query count** chart displays the maximum number of concurrent queries—both running and queued—during your selected time frame. Spikes in this chart often indicate periods where the warehouse struggled to keep up with demand.
 
-The **running clusters** chart shows how many clusters were allocated over time. If you've enabled **autoscaling**, you'll see this number fluctuate based on query load. Clusters that remain at maximum capacity for extended periods suggest you might need to increase the maximum cluster count.
+The **running clusters** chart shows how many clusters were allocated over time. If you enable **autoscaling**, this number fluctuates based on query load. Clusters that remain at maximum capacity for extended periods suggest you might need to increase the maximum cluster count.
 
 The **query history** table lists individual queries with their start time, duration, and the user who ran them. Use filters to find **long-running queries** or identify users whose queries consume disproportionate resources.
 
@@ -49,13 +49,13 @@ The **query history** table lists individual queries with their start time, dura
 
 Monitoring reveals patterns; configuration changes act on those patterns. Two key settings help you manage cluster consumption automatically.
 
-**Auto-termination** shuts down idle clusters after a specified period of inactivity. For development environments, **30-60 minutes** is typically appropriate. The cluster terminates when no commands have run for the specified duration, preventing costs from accumulating overnight or over weekends.
+**Auto-termination** shuts down idle clusters after a specified period of inactivity. Choose a period that matches how long a cluster typically sits idle between uses. The inactivity period must be between 10 and 10,000 minutes. The cluster terminates when no commands have run for the specified duration, preventing costs from accumulating overnight or over weekends.
 
 :::image type="content" source="../media/2-configure-auto-termination-autoscaling.png" alt-text="Screenshot showing cluster auto-termination and autoscaling settings." lightbox="../media/2-configure-auto-termination-autoscaling.png":::
 
-To configure auto-termination, enable the setting during cluster creation or edit an existing cluster. Enter the number of minutes of inactivity before termination. Keep in mind that a cluster is considered inactive only when all commands—including Spark jobs, Structured Streaming, and JDBC calls—have finished executing.
+To configure auto-termination, enable the setting during cluster creation or edit an existing cluster. Enter the number of minutes of inactivity before termination. Keep in mind that a cluster is considered inactive only when all commands—including Spark jobs, Structured Streaming, JDBC calls, and web terminal activity—have finished executing.
 
-**Autoscaling** dynamically adjusts the number of worker nodes based on workload demand. Configure **minimum and maximum node counts** based on your workload analysis. The cluster adds workers during intensive processing and removes them during lighter periods, reducing costs by **20-40%** compared to fixed-size clusters.
+**Autoscaling** dynamically adjusts the number of worker nodes based on workload demand. Configure **minimum and maximum node counts** based on your workload analysis. The cluster adds workers during intensive processing and removes them during lighter periods, which can reduce costs compared to fixed-size clusters.
 
 > [!IMPORTANT]
 > Auto-termination doesn't monitor DStreams activity. If you run DStream workloads, either disable auto-termination or migrate to Structured Streaming.
@@ -64,16 +64,16 @@ To configure auto-termination, enable the setting during cluster creation or edi
 
 Beyond real-time monitoring, you need visibility into actual spending. Azure Databricks provides several tools for cost tracking.
 
-**Budgets** let you set financial targets and track spending across your account. Configure **email notifications** when spending approaches or exceeds your budget limits. You can apply filters to track spending by team, project, or workspace.
+**Budgets** let you set financial targets and track spending across your account. In the account console, select **Usage**, select the **Budgets** tab, and then select **Add budget**. Define up to four monthly spending thresholds and add **email addresses** to notify when spending exceeds a threshold. You can apply filters to track spending by workspace or custom tag.
 
 :::image type="content" source="../media/2-create-budget.png" alt-text="Screenshot showing the account console > usage > create budget." lightbox="../media/2-create-budget.png":::
 
-**System tables**, specifically `system.billing.usage`, provide detailed usage data you can query directly. Join this table with `compute.clusters` to identify which cluster owners consume the most **Databricks Units (DBUs)**. Use **custom tags** to attribute costs to specific business units or projects.
+**System tables**, specifically `system.billing.usage`, provide detailed usage data you can query directly. Join this table with `system.compute.clusters` to identify which cluster owners consume the most **Databricks Units (DBUs)**. Use **custom tags** to attribute costs to specific business units or projects.
 
-**Tags** propagate from clusters and workspaces to billing records, enabling accurate **chargeback**. Apply tags consistently from the start—you can't add tags retroactively to historical usage. Common tags include business unit, project, and environment (development, staging, production).
+**Custom tags** on compute resources and workspaces propagate to usage records, enabling accurate **chargeback**. Apply tags consistently from the start. Tag changes on existing compute apply only after you restart the compute resource. Common tags include business unit, project, and environment (development, staging, production).
 
 > [!NOTE]
-> You need **account admin permissions** to create and manage budgets. Workspace admins can view budgets but typically cannot create them.
+> You need **account admin permissions** to create and manage budgets across the account. Workspace admins can create and manage budgets scoped to workspaces they administer by using Governance Hub.
 
 The following example queries help you analyze usage patterns:
 
@@ -84,7 +84,7 @@ SELECT
   usage_date,
   sum(usage_quantity) as DBUs_Consumed
 FROM system.billing.usage
-WHERE sku_name = "STANDARD_ALL_PURPOSE_COMPUTE"
+WHERE billing_origin_product = "ALL_PURPOSE"
 GROUP BY usage_date
 ORDER BY usage_date ASC
 ```
@@ -101,14 +101,19 @@ GROUP BY job_id
 ORDER BY total_dbus DESC
 ```
 
-**Attribute costs to cluster owners** - Identify which team members or service accounts are responsible for the most resource consumption. This supports chargeback discussions and helps teams understand their footprint.
+**Attribute costs to cluster owners** - Identify which team members or service accounts are responsible for the most resource consumption. This supports chargeback discussions and helps teams understand their footprint. The `system.compute.clusters` table keeps a history of each cluster's configuration, so the query uses only the latest row for each cluster to avoid counting usage more than once.
 
 ```sql
+WITH latest_clusters AS (
+  SELECT cluster_id, owned_by
+  FROM system.compute.clusters
+  QUALIFY row_number() OVER (PARTITION BY cluster_id ORDER BY change_time DESC) = 1
+)
 SELECT
   c.owned_by,
   sum(u.usage_quantity) as total_dbus
 FROM system.billing.usage u
-JOIN system.compute.clusters c
+JOIN latest_clusters c
   ON u.usage_metadata.cluster_id = c.cluster_id
 WHERE u.usage_metadata.cluster_id IS NOT NULL
 GROUP BY c.owned_by
@@ -130,4 +135,4 @@ GROUP BY sku_name, usage_unit
 Reviewing monthly cost reports helps you catch anomalies early. Investigate unexpected increases before they become significant budget problems.
 
 > [!NOTE]
-> Serverless compute for notebooks and jobs uses a different cost model. In `system.billing.usage`, filter by `product_features.is_serverless = true` to isolate serverless usage. The `identity_metadata.run_as` column identifies which user or service principal ran the workload. Because of the distributed architecture, multiple billing records can appear for a single serverless job run—always use `SUM()` rather than expecting a single row per run.
+> Serverless compute for notebooks and jobs uses a different cost model. In `system.billing.usage`, filter by `product_features.is_serverless = true` to isolate serverless usage. The `identity_metadata.run_as` column identifies which user or service principal ran the workload. Multiple billing records can appear for a single serverless job run, including correction records, so aggregate with `SUM()` rather than expecting a single row per run.

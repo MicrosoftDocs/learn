@@ -23,7 +23,7 @@ For example, a model might include numeric measures for sales (such as revenue o
 
 When a fact table relates to one or more dimension tables, the design is called a **star schema**. If dimension tables further relate to additional detail tables—for example, a **Category** table linked to a **Product** table—the design is called a **snowflake schema**.
 
-When you load data into a semantic model, Power BI stores it in an efficient in-memory columnar store using the VertiPaq engine. Aggregations are calculated at query time, which delivers fast analysis and reporting.
+When you import data into a semantic model (Import mode), Power BI stores it in an efficient in-memory columnar store using the VertiPaq engine. Aggregations are calculated at query time, which delivers fast analysis and reporting.
 
 ## Attribute hierarchies
 
@@ -33,7 +33,7 @@ When you load data into a semantic model, Power BI stores it in an efficient in-
 - In the **Customer** table, a hierarchy might group customers by city.
 - In the **Time** table, a hierarchy might group days into months, and months into years.
 
-When you view total sales by year and then drill down to see a monthly breakdown, the VertiPaq engine computes aggregated values at each level at query time.
+When you view total sales by year and then drill down to see a monthly breakdown, the model computes aggregated values at each level at query time.
 
 ![Diagram of a data hierarchy.](../media/hierarchy.png)
 
@@ -43,6 +43,6 @@ In Power BI, you define a semantic model from tables imported from one or more d
 
 ![Screenshot of the Model view in Power BI Desktop.](../media/power-bi-model.png)
 
-If your data is stored in **OneLake**—Microsoft Fabric's shared data lake—use **Direct Lake** storage mode to connect your semantic model directly to the lake files. This gives you in-memory query performance without a separate data import step.
+If your data is stored in **OneLake**—Microsoft Fabric's shared data lake—use **Direct Lake** storage mode to load Delta tables from the lake directly into your semantic model's memory. This gives you in-memory query performance without copying the data into the model.
 
 ::: zone-end

@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/18/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -16,9 +16,9 @@ quiz:
   questions:
   - content: "In Azure Data Factory authoring tool, where would you find the Copy data activity?"
     choices:
-    - content: "Move & Transform"
+    - content: "Move and Transform"
       isCorrect: true
-      explanation: "Correct. The Move & Transform section contains activities that are specific to Azure Data Factory copying data and defining data flows."
+      explanation: "Correct. The Move and Transform section contains activities that are specific to Azure Data Factory copying data and defining data flows."
     - content: "Batch Service"
       isCorrect: false
       explanation: "Incorrect. The Batch Service section contains activities that are specific to Azure Data Factory interacting with Azure Batch activities."
@@ -36,14 +36,14 @@ quiz:
     - content: "Azure Integration Runtime"
       isCorrect: false
       explanation: "Incorrect. Azure IR provides a fully managed compute to natively perform data movement and dispatch data transformation activities to compute services."
-  - content: "By default, how long are the Azure Data Factory diagnostic logs retained for?"
+  - content: "By default, how long does Azure Data Factory store pipeline run data?"
     choices:
     - content: "15 days"
       isCorrect: false
-      explanation: "Incorrect. The Azure Data Factory diagnostic logs are retained for 45 days."
+      explanation: "Incorrect. Azure Data Factory stores pipeline run data for 45 days."
     - content: "30 days"
       isCorrect: false
-      explanation: "Incorrect. The Azure Data Factory diagnostic logs are retained for 45 days."
+      explanation: "Incorrect. Azure Data Factory stores pipeline run data for 45 days."
     - content: "45 days"
       isCorrect: true
-      explanation: "Correct. The Azure Data Factory diagnostic logs are retained for 45 days."
+      explanation: "Correct. Azure Data Factory stores pipeline run data for 45 days. To keep the data longer, use diagnostic settings to route the logs to Azure Monitor destinations such as a Log Analytics workspace or a storage account."

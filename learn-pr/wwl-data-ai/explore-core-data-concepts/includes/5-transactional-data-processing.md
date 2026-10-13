@@ -40,7 +40,7 @@ To accomplish this, OLTP systems enforce transactions that support so-called ACI
 > [!div class="mx-imgBorder"]
 > ![Diagram explaining the concept of isolation.](../media/isolation.png)
 
-- **Durability** – when a transaction has been committed, it will remain committed. After the account transfer transaction has completed, the revised account balances are persisted so that even if the database system were to be switched off, the committed transaction would be reflected when it's switched on again.
+- **Durability** – when a transaction has been committed, it remains committed. After the account transfer transaction has completed, the revised account balances are persisted so that even if the database system were to be switched off, the committed transaction would be reflected when it's switched on again.
 
 > [!div class="mx-imgBorder"]
 > ![Diagram explaining the concept of durability.](../media/durability.png)
