@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.github.security-remediation
+metadata:
+  title: Security Operations and Remediation Workflows with GitHub Advanced Security
+  description: This module guides you through the operational management of GitHub Advanced Security alerts. You'll learn how to apply a standardized alert lifecycle, prioritize vulnerabilities using CVE, CWE, and severity information, implement remediation workflows, establish governance for alert dismissal and risk acceptance, use Copilot Autofix, and integrate security practices into CI/CD workflows.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 10/06/2026
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+title: Security operations and remediation workflows with GitHub Advanced Security
+summary: Effective security operations require more than detecting vulnerabilities. In this module, you'll learn how to manage GitHub Advanced Security alerts through a structured lifecycle, prioritize and remediate vulnerabilities based on risk, establish governance for security decisions, and use automation such as Copilot Autofix and Dependabot. You'll also explore security metrics, CI/CD integration, and collaboration models that help development, security, and platform teams maintain a continuous remediation process across repositories.
+
+abstract: |
+  In this module, you'll learn to:
+  - Apply a standardized alert lifecycle model across secret scanning, code scanning, and supply chain security alerts
+  - Prioritize risk using CVE and CWE classifications and structured severity modeling
+  - Implement remediation workflows based on advisory severity
+  - Establish governance for alert dismissal and risk acceptance
+  - Operationalize Copilot Autofix using review and approval workflows
+  - Integrate continuous remediation patterns into CI/CD pipelines
+  - Track security metrics, SLA adherence, and overall security posture
+  - Establish collaboration models between developers and security teams for efficient triage and resolution
+  
+  To begin managing vulnerabilities effectively, teams must understand how security alerts move through a structured lifecycle. In the next unit, you'll explore how GitHub Advanced Security alerts progress from detection through remediation and closure.
+
+prerequisites: |
+  - A GitHub account
+
+iconUrl: /training/achievements/github/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- github
+- azure
+subjects:
+- collaboration
+units:
+- learn.github.security-remediation.introduction
+- learn.github.security-remediation.manage-security-alerts
+- learn.github.security-remediation.evaluate-vulnerability-risk
+- learn.github.security-remediation.prioritize-remediate-security-vulnerabilities
+- learn.github.security-remediation.governance-ai-assisted-security-remediation
+- learn.github.security-remediation.security-automation-metrics-collaboration
+- learn.github.security-remediation.summary
+badge:
+  uid: learn.github.security-remediation.badge
