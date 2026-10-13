@@ -4,7 +4,7 @@ Azure Databricks is a single service platform with multiple technologies that en
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=bd32efc6-01aa-4c6b-811c-14c5109d9a3c]
 
-A **workspace** in Azure Databricks is a secure, collaborative environment where your can access and organize all Databricks assets, such as notebooks, clusters, jobs, libraries, dashboards, and experiments. 
+A **workspace** in Azure Databricks is a secure, collaborative environment where you can access and organize all Databricks assets, such as notebooks, clusters, jobs, libraries, dashboards, and experiments. 
 
 You can open an Azure Databricks Workspace from the Azure portal, by selecting **Launch Workspace**.
 
@@ -12,7 +12,7 @@ You can open an Azure Databricks Workspace from the Azure portal, by selecting *
 
 It provides a web-based **user interface (UI)** as well as REST APIs for managing resources and workflows. Workspaces can be structured into folders to organize projects, data pipelines, or team assets, and permissions can be applied at different levels to control access. They support **collaboration** by allowing multiple users—such as data engineers, analysts, and data scientists—to work together on shared notebooks, track experiments, and manage dependencies. 
 
-In addition, workspaces are tied to **Unity Catalog** (when enabled) for centralized data governance, ensuring secure access to data across the organization. Each workspace is also linked to an **underlying Azure resource group** (including a managed resource group) that holds the compute, networking, and storage resources Databricks uses behind the scenes.
+In addition, workspaces are tied to **Unity Catalog** (when enabled) for centralized data governance, ensuring secure access to data across the organization. Classic workspaces are also linked to a **managed resource group** that holds the compute, networking, and storage resources Databricks uses behind the scenes.
 
 ## Notebooks
 
@@ -30,10 +30,10 @@ Notebooks contain a collection of two types of cells: **code cells** and **Markd
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=85a4a208-66db-4059-a4f0-9ba951818fc3]
 
-Azure Databricks leverages a two-layer architecture:
+Azure Databricks uses a two-layer architecture:
 
-- **Control Plane**: this internal layer, managed by Microsoft, handles backend services specific to your Azure Databricks account.
-- **Compute plane**: this is the external layer that processes the data and lives in your Azure Subscription. 
+- **Control plane**: this layer includes the backend services that Azure Databricks manages in your Azure Databricks account, such as the web application.
+- **Compute plane**: this layer processes the data. For classic compute, the compute plane lives in your Azure subscription. For serverless compute, it runs in your Azure Databricks account. 
 
 :::image type="content" source="../media/high-level-azure-databricks-architecture.png" alt-text="Diagram showing the Azure Databricks high level architecture." lightbox="../media/high-level-azure-databricks-architecture.png":::
 
@@ -51,14 +51,15 @@ This allows you to tailor compute to specific needs—from exploratory analysis 
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=0963a8a9-2beb-4b23-8edb-cc2401fbf74e]
 
-The **Databricks Runtime** is a set of customized builds of **Apache Spark** that include performance improvements and additional libraries. These runtimes make it easier to handle tasks such as **machine learning**, **graph processing**, and **genomics**, while still supporting general data processing and analytics.
+The **Databricks Runtime** is a set of customized builds of **Apache Spark** that include performance improvements and additional libraries. These runtimes make it easier to handle tasks such as **machine learning**, while still supporting general data processing and analytics.
 
-Databricks provides multiple runtime versions, including **long-term support (LTS)** releases. Each release specifies the underlying Apache Spark version, its release date, and when support will end. Over time, older runtime versions follow a lifecycle:
+Databricks provides multiple runtime versions, including **long-term support (LTS)** releases. Each release specifies the underlying Apache Spark version, its release date, and when support ends. Over time, each runtime version follows a lifecycle:
 
-- **Legacy** – available but no longer recommended.
-- **Deprecated** – marked for removal in a future release.
-- **End of Support (EoS)** – no further patches or fixes are provided.
-- **End of Life (EoL)** – retired and no longer available.
+- **Beta** – available for early evaluation and not recommended for production use.
+- **GA (feature development)** – generally available, with new features and fixes released under the same version number for approximately six months.
+- **Long-term support (LTS)** – major stability and security fixes are backported for three years.
+- **End of Support (EoS)** – no support or fixes are provided, and the version is no longer selectable when you create or update compute.
+- **End of Life (EoL)** – retired and no longer usable.
 
 If a maintenance update is released for a runtime version you're using, you can apply it by **restarting your cluster**.
 
@@ -87,7 +88,7 @@ Because they're repeatable and managed, jobs are critical for **production workl
 **Delta Lake** is an open-source storage framework that improves the reliability and scalability of data lakes by adding transactional features on top of cloud object storage, such as **Azure Data Lake Storage**. Traditional data lakes can suffer from issues like inconsistent data, partial writes, or difficulties managing concurrent access. Delta Lake addresses these problems by supporting:
 
 - **ACID transactions** (atomicity, consistency, isolation, durability) for reliable reads and writes.
-- **Scalable metadata handling** so tables can grow to billions of files without performance loss.
+- **Scalable metadata handling** so tables can scale to very large numbers of files.
 - **Data versioning and rollback**, enabling time travel queries and recovery of previous states.
 - **Unified batch and streaming processing**, so the same table can handle real-time ingestion and historical batch loads.
 
@@ -105,7 +106,7 @@ Databricks SQL is available only in the **Premium tier** of Azure Databricks. It
 - **Dashboards and visualization tools** for sharing insights.
 - Integration with external BI and analytics tools.
 
-## SQL Warehouses
+## SQL warehouses
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=fa507047-6226-4ba4-9a9a-c0d2a95ba01b]
 
