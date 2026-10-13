@@ -1,39 +1,39 @@
 Contoso has provisioned the SQL database and has imported all the inventory data into the data store. As lead developer, you've been asked to run some queries over the data.
 
-In this exercise, you'll query the database to find how many products are in the database, and the number of items in stock for a particular product.
+In this exercise, you query the database to find how many products are in the database, and the number of items in stock for a particular product.
 
 ## Setup
 
-To save time, the database is provisioned and populated running a script. You'll download the script from a GitHub repository. The script performs the following operations:
+To save time, you create the database server and an empty database by running commands in the Cloud Shell. The commands perform the following operations:
 
 - Creates an Azure SQL Database server.
-- Creates an Azure SQL database attached to the server.
-- Opens the firewall to allow SQL traffic from the internet.
-- Connects to the database and run a SQL script to create a table and insert data.
+- Creates an Azure SQL database named *Inventory* attached to the server.
+- Creates a server firewall rule that allows Azure services to connect to the server.
 
-1. Run the following *git clone* command in the Cloud Shell to clone the repository that contains the data and setup script in GitHub. The repository is copied to a local folder named *dp-900/sql*.
-
-    ```bash
-    git clone https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals dp-900
-    ```
-
-2. Run the following command to move to the *dp-900/sql* folder.
+1. Run the following commands in the Cloud Shell to create the Azure SQL server and database. The commands use the first resource group in your subscription or sandbox.
 
     ```bash
-    cd dp-900/sql
+    resource=$(az group list --query '[0].name' --output tsv)
+    location=$(az group list --query '[0].location' --output tsv)
+    server=contoso-server-$(openssl rand -hex 5)
+    database=Inventory
+    login=sampleLogin
+    password="Pw1-$(openssl rand -hex 8)"
+
+    az sql server create --name $server --resource-group $resource --location "$location" --admin-user $login --admin-password "$password"
+    az sql server firewall-rule create --resource-group $resource --server $server --name AllowYourIp --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0
+    az sql db create --resource-group $resource --server $server --name $database --edition Basic
+
+    echo "Server: $server.database.windows.net"
+    echo "User: $login"
+    echo "Password: $password"
     ```
 
-3. Run the **setup.sh** to create the Azure SQL database and server, as follows:
-
-    ```bash
-    bash setup.sh
-    ```
-
-The script takes a few minutes to run. When the script finishes, it will display the connection details for the database. Write down the username and password.
+    The commands take a few minutes to run. When they finish, the Cloud Shell displays the connection details for the database. Write down the username and password.
 
 ## Connect to the query editor
 
-You'll use the built-in Query editor in the Azure portal to connect to the database and query the data.
+You use the built-in query editor in the Azure portal to connect to the database and query the data.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
@@ -47,31 +47,63 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     > [!div class="mx-imgBorder"]
     >![Screenshot of the Overview page for the SQL Database instance. The user has selected Set server firewall.](../media/6-server-firewall.png)
 
-1. On the **Firewall settings** page, select **Add client IP**, and then select **Save**.
+1. On the **Networking** page, select **Add your client IP**, and then select **Save**.
 
     > [!div class="mx-imgBorder"]
-    >![Screenshot of the Firewall settings page for the SQL Database instance. The user has selected Add client IP.](../media/6-set-client-ip.png)
+    >![Screenshot of the firewall settings for the SQL Database instance. The user has selected the option to add the client IP.](../media/6-set-client-ip.png)
 
-1. Close the **Firewall settings** page, and return to the **Overview** page for your database.
+1. Close the **Networking** page, and return to the **Overview** page for your database.
 
-1. On the **Overview** page, select **Query editor (preview)** in the left menu.
+1. On the **Overview** page, select **Query editor** in the left menu.
 
-1. Enter the username and password you recorded earlier when the setup script ran, and then select **OK**.
+1. Under **SQL server authentication**, enter the username and password you recorded earlier when the setup commands ran, and then select **OK**.
 
     > [!div class="mx-imgBorder"]
     >![Screenshot of the SQL Database sign-in page in the Azure portal.](../media/6-query-editor-login.png)
 
-    You'll be presented with a screen similar to this example:
+    The query editor opens, similar to this example:
 
     > [!div class="mx-imgBorder"]
     >![Screenshot of the SQL Database Query Editor.](../media/6-simple-ui-query.png)
 
 > [!TIP]
-> Adding your client IP in this step will not account for any existing VPN connections. If you can't complete step 7,  disable any VPN connections or add the additional IP address manually from any errors displayed.
+> Adding your client IP in this step doesn't account for any existing VPN connections. If you can't connect to the query editor, disable any VPN connections or add the additional IP address manually from any errors displayed.
+
+## Create the tables and sample data
+
+1. Copy the following SQL script into the editor, and then select **Run**. The script creates the *Inventory* and *CustomerOrder* tables and inserts sample rows:
+
+    ```sql
+    CREATE TABLE Inventory (
+        Id int PRIMARY KEY,
+        Name VARCHAR(50),
+        Stock INTEGER
+    );
+
+    CREATE TABLE CustomerOrder (
+        Id int PRIMARY KEY,
+        CustomerName VARCHAR(50),
+        Quantity int,
+        Created DATETIME,
+        InventoryId int FOREIGN KEY REFERENCES Inventory(Id)
+    );
+
+    INSERT INTO Inventory (Id, Name, Stock) VALUES (1, 'banana', 150);
+    INSERT INTO Inventory (Id, Name, Stock) VALUES (2, 'orange', 154);
+    INSERT INTO Inventory (Id, Name, Stock) VALUES (3, 'apple', 23);
+    INSERT INTO Inventory (Id, Name, Stock) VALUES (4, 'lemon', 254);
+
+    INSERT INTO CustomerOrder (Id, CustomerName, InventoryId, Quantity, Created) VALUES (1, 'John Smith', 2, 5, GETDATE());
+    INSERT INTO CustomerOrder (Id, CustomerName, InventoryId, Quantity, Created) VALUES (2, 'Jane Brown', 2, 8, GETDATE());
+    INSERT INTO CustomerOrder (Id, CustomerName, InventoryId, Quantity, Created) VALUES (3, 'Stephen Stone', 3, 3, GETDATE());
+    INSERT INTO CustomerOrder (Id, CustomerName, InventoryId, Quantity, Created) VALUES (4, 'Claire Smith', 1, 1, GETDATE());
+    INSERT INTO CustomerOrder (Id, CustomerName, InventoryId, Quantity, Created) VALUES (5, 'Sarah Fedun', 4, 3, GETDATE());
+    INSERT INTO CustomerOrder (Id, CustomerName, InventoryId, Quantity, Created) VALUES (6, 'Graham Hinson', 3, 9, GETDATE());
+    ```
 
 ## Run queries against the database
 
-1. Copy the following SQL statement into the editor. Select **Run**, to check everything is working. You should see a list of four inventory items
+1. Replace the SQL script with the following statement. Select **Run**, to check everything is working. You should see a list of four inventory items.
 
     ```SQL
     SELECT * 
@@ -79,7 +111,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     ```
 
     > [!div class="mx-imgBorder"]
-    >![Screenshot showing hot to run a basic query in SQL Database Query Editor.](../media/6-run-basic-query.png)
+    >![Screenshot showing how to run a basic query in SQL Database Query Editor.](../media/6-run-basic-query.png)
 
 1. Replace the current SQL statement with the following statement to only show the number of bananas in stock:
 
@@ -158,5 +190,5 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 
     The answer should be 29.
 
-You've now seen how to run SQL queries against a SQL database. If you have time, try to add some more rows into both tables using **INSERT** statements, modify the rows using **UPDATE** statements, and remove rows using **DELETE** statements.
+You've now run SQL queries against a SQL database. If you have time, try to add some more rows into both tables using **INSERT** statements, modify the rows using **UPDATE** statements, and remove rows using **DELETE** statements.
 

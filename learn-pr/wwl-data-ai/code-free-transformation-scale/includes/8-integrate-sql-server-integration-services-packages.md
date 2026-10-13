@@ -1,22 +1,22 @@
-You may work in an organization where much of the transformation logic is currently held in existing SSIS packages that have been created on SQL Server. You have the ability to lift and shift SSIS package so you can execute them within Azure Data Factory, so you can make use in existing work. In order to do this you must set up an Azure-SSIS integration runtime.
+You may work in an organization where much of the transformation logic is currently held in existing SSIS packages that have been created on SQL Server. You have the ability to lift and shift SSIS packages so you can execute them within Azure Data Factory, so you can reuse existing work. To do this, you must set up an Azure-SSIS integration runtime.
 
 ## Azure-SSIS integration runtime
 
-In order to make use of the Azure-SSIS integration runtime, it's assumed that there's SSIS Catalog (SSISDB) deployed on a SQL Server SSIS instance. With that prerequisite met, the Azure-SSIS integration runtime is capable of:
+If you deploy packages by using the project deployment model, the Azure-SSIS integration runtime needs an SSIS catalog (SSISDB) hosted by Azure SQL Database or Azure SQL Managed Instance. If you deploy packages to the file system, Azure Files, or MSDB on Azure SQL Managed Instance (package deployment model), you don't need SSISDB. With the requirements met, the Azure-SSIS integration runtime is capable of:
 
 - Lift and shift existing SSIS workloads
 
 During the provisioning of the Azure-SSIS integration runtime, you specify the following options:
 
 - The node size (including the number of cores) and the number of nodes in the cluster.
-- The existing instance of Azure SQL Database to host the SSIS Catalog Database (SSISDB), and the service tier for the database.
+- The Azure SQL Database server or Azure SQL Managed Instance to host the SSIS Catalog Database (SSISDB), and the service tier for the database.
 - The maximum parallel executions per node.
 
 With the Azure-SSIS integration runtime enabled, you're able to manage, monitor, and schedule SSIS packages using tools such as SQL Server Management Studio (SSMS) or SQL Server Data Tools (SSDT).
 
 ## Create an Azure-SSIS integration runtime
 
-1. In the Azure Data Factory designer, in the **Edit** tab, select **Connections**. Select the **Integration Runtimes** tab to view existing integration runtimes in your data factory.
+1. In the Azure Data Factory Studio, select the **Manage** hub, and then select **Integration runtimes** under **Connections** to view existing integration runtimes in your data factory.
 
     [![Screenshot that shows the Integration Runtimes tab in the Azure Data Factory designer.](../media/data-flow-designer.png)](../media/data-flow-designer.png#lightbox)
 
@@ -46,16 +46,16 @@ With the Azure-SSIS integration runtime enabled, you're able to manage, monitor,
 
 1. For **Node Number**, select the number of nodes in your integration runtime cluster.
 
-1. For **Edition/License**, select the SQL Server edition for your integration runtime.
+1. For **Edition/License**, select the SQL Server edition for your integration runtime: Standard or Enterprise.
 
 1. For **Save Money**, select the Azure Hybrid Benefit option for your integration runtime: Select **Yes** if you want to bring your own SQL Server license with Software Assurance to benefit from cost savings with hybrid use.
 
-1. Select **Next**.
+1. Select **Continue**.
 
 ### Deployment settings page
 1. On the **Deployment settings** page of **Integration runtime setup** pane, complete the following steps.
 
-1. Select the **Create SSIS catalog (SSISDB) hosted by Azure SQL Database server/Managed Instance to store your projects/packages/environments/execution logs** check box to choose the package deployment mode.
+1. Select the **Create SSIS catalog (SSISDB) hosted by Azure SQL Database server/Managed Instance to store your projects/packages/environments/execution logs** check box to deploy your packages into SSISDB (project deployment model).
 
     ![Screenshot that shows the Create SSIS catalog check box selected in the Deployment settings page.](../media/create-sql-server-integration-services-catalog.png)
 
@@ -73,7 +73,9 @@ With the Azure-SSIS integration runtime enabled, you're able to manage, monitor,
 
 1. For **Catalog Database Service Tier**, select the service tier for your database server to host SSISDB. Select the Basic, Standard, or Premium tier, or select an elastic pool name.
 
-The alternative approach is to:
+Select **Test connection** when applicable and, if it's successful, select **Continue**.
+
+Alternatively, you can create package stores:
 
 1. Select the **Create package stores to manage your packages that are deployed into file system/Azure Files/SQL Server database (MSDB) hosted by Azure SQL Managed Instance** check box to choose whether you want to manage your packages that are deployed into MSDB, file system, or Azure Files (Package Deployment Model) with Azure-SSIS IR package stores.
 
@@ -93,9 +95,9 @@ The alternative approach is to:
 
 1. For **Type**, select **Azure File Storage**, **Azure SQL Managed Instance**, or **File System**.
 
-1. You can ignore **Connect via integration runtime**, since we always use your Azure-SSIS IR to fetch the access information for package stores.
+1. You can ignore **Connect via integration runtime**, since the Azure-SSIS IR is always used to fetch the access information for package stores.
 
-1. If you select **Azure File Storage**, complete the following steps.
+1. If you select **Azure File Storage**, for **Authentication method**, select **Basic**, and then complete the following steps. The Azure-SSIS IR package store supports only the **Basic** authentication method for the Azure File Storage linked service.
 
 1. For **Account selection method**, select **From Azure subscription** or **Enter manually**.
 
@@ -106,8 +108,9 @@ The alternative approach is to:
     > [!NOTE]
     > There are different settings if you select **Azure SQL Managed Instance**, or **File System**
 
-1. Select **Test connection** when applicable and if it's successful, select **Next**.
- 
+1. Select **Test connection** when applicable and if it's successful, select **Create**.
+
+1. On the **Deployment settings** page, select **Continue**.
 ### Advanced settings page
 
 1. On the **Advanced settings** page of **Integration runtime setup** pane, complete the following steps.
@@ -120,7 +123,7 @@ The alternative approach is to:
 
 1. Select the **Select a VNet for your Azure-SSIS Integration Runtime to join, allow ADF to create certain network resources, and optionally bring your own static public IP addresses** check box to choose whether you want to join your Azure-SSIS IR to a virtual network.
 
-1. Select the **Set up Self-Hosted Integration Runtime as a proxy for your Azure-SSIS Integration Runtime** check box to choose whether you want to configure a self-hosted IR as proxy for your Azure-SSIS IR. For more information.
+1. Select the **Set up Self-Hosted Integration Runtime as a proxy for your Azure-SSIS Integration Runtime** check box to choose whether you want to configure a self-hosted IR as proxy for your Azure-SSIS IR. For more information, see [Set up a self-hosted IR as proxy](/azure/data-factory/self-hosted-integration-runtime-proxy-ssis).
 
 1. Select **Continue**.
 
@@ -128,4 +131,4 @@ The alternative approach is to:
 
 1. On the **Connections** pane of **Manage** hub, switch to the **Integration runtimes** page and select **Refresh**.
 
-    ![Screenshot that shows the Linked service configuration page for the integration runtime.](../media/linked-service-page.png)
+    ![Screenshot that shows the Integration runtimes page in the Manage hub with an Azure-SSIS integration runtime listed.](../media/linked-service-page.png)

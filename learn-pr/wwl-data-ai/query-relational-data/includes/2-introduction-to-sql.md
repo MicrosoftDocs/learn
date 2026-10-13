@@ -3,7 +3,7 @@ SQL stands for Structured Query Language. SQL is used to communicate with a rela
 > [!NOTE]
 > SQL was originally standardized by the American National Standards Institute (ANSI) in 1986, and by the International Organization for Standardization (ISO) in 1987. Since then, the standard has been extended several times as relational database vendors have added new features to their systems. Additionally, most database vendors include their own proprietary extensions that aren't part of the standard, which has resulted in various dialects of SQL.
 
-In this unit, you'll learn about SQL. You'll see how it's used to query and maintain data in a database, and the different dialects that are available.
+In this unit, you learn about SQL. You see how it's used to query and maintain data in a database, and the different dialects that are available.
 
 ## Understand SQL dialects
 
@@ -13,7 +13,7 @@ Some popular dialects of SQL include:
 
 - *Transact-SQL (T-SQL)*. This version of SQL is used by Microsoft SQL Server and Azure SQL Database. 
 
-- *pgSQL*. This is the dialect, with extensions implemented in PostgreSQL.
+- *PL/pgSQL*. This is the procedural language, with extensions, implemented in PostgreSQL.
 
 - *PL/SQL*. This is the dialect used by Oracle. PL/SQL stands for Procedural Language/SQL.    
 
@@ -39,7 +39,7 @@ The four main DML statements are:
 | UPDATE  | Edit/Update existing rows  |
 | DELETE  | Delete existing rows in a table |
 
-The basic form of an **INSERT** statement will insert one row at a time. By default, the **SELECT**, **UPDATE**, and **DELETE** statements are applied to every row in a table. You usually apply a **WHERE** clause with these statements to specify criteria; only rows that match these criteria will be selected, updated, or deleted.
+The basic form of an **INSERT** statement inserts one row at a time. By default, the **SELECT**, **UPDATE**, and **DELETE** statements are applied to every row in a table. You usually apply a **WHERE** clause with these statements to specify criteria; only rows that match these criteria are selected, updated, or deleted.
 
 > [!WARNING]
 > SQL doesn't provide *are you sure?* prompts, so be careful when using DELETE or UPDATE without a WHERE clause because you can lose or modify a lot of data.
@@ -52,7 +52,7 @@ FROM MyTable
 WHERE MyColumn2 = 'contoso'
 ```
 
-If a query returns many rows, they don't necessarily appear in any specific sequence. If you want to sort the data, you can add an **ORDER BY** clause. The data will be sorted by the specified column:
+If a query returns many rows, they don't necessarily appear in any specific sequence. If you want to sort the data, you can add an **ORDER BY** clause. The data is sorted by the specified column:
 
 ```SQL
 SELECT *
@@ -92,7 +92,7 @@ WHERE MyColumn1 = 3
 ```
 
 > [!WARNING]
-> If you omit the **WHERE** clause, an **UPDATE** statement will modify **every** row in the table.
+> If you omit the **WHERE** clause, an **UPDATE** statement modifies **every** row in the table.
 
 Use the **DELETE** statement to remove rows. You specify the table to delete from, and a **WHERE** clause that identifies the rows to be deleted:
 
@@ -102,9 +102,9 @@ WHERE MyColumn2 = 'contoso'
 ```
 
 > [!WARNING]
-> If you omit the **WHERE** clause, a **DELETE** statement will remove **every** row from the table.
+> If you omit the **WHERE** clause, a **DELETE** statement removes **every** row from the table.
 
-The **INSERT** statement takes a slightly different form. You specify a table and columns in an **INTO** clause, and a list of values to be stored in these columns. Standard SQL only supports inserting one row at a time, as shown in the following example. Some dialects allow you to specify multiple **VALUES** clauses to add several rows at a time:
+The **INSERT** statement takes a slightly different form. You specify a table and columns in an **INTO** clause, and a list of values to be stored in these columns. The following example inserts one row. Many dialects also allow you to specify multiple **VALUES** clauses to add several rows at a time:
 
 ```SQL
 INSERT INTO MyTable(MyColumn1, MyColumn2, MyColumn3)
@@ -122,10 +122,10 @@ The most common DDL statements are:
 |CREATE | Create a new object in the database, such as a table or a view. |
 |ALTER |  Modify the structure of an object. For instance, altering a table to add a new column.  |
 |DROP | Remove an object from the database. |
-|RENAME | Rename an existing object. |
+|RENAME | Rename an existing object. The syntax for renaming varies between dialects. |
 
 > [!WARNING]
-> The **DROP** statement is very powerful. When you drop a table, all the rows in that table are lost. Unless you have a backup, you won't be able to retrieve this data. 
+> The **DROP** statement permanently removes objects. When you drop a table, all the rows in that table are lost. Unless you have a backup, you won't be able to retrieve this data.
 
 The following example creates a new database table. The items between the parentheses specify the details of each column, including the name, the data type, whether the column must always contain a value (NOT NULL), and whether the data in the column is used to uniquely identify a row (PRIMARY KEY). Each table should have a primary key, although SQL doesn't enforce this rule.
 
@@ -141,4 +141,4 @@ CREATE TABLE MyTable
 );
 ```
 
-The datatypes available for columns in a table will vary between database management systems. However, most database management systems support numeric types such as INT (an integer, or whole number), and string types such as VARCHAR (*VARCHAR* stands for variable length character data). For more information, see the documentation for your selected database management system.    
+The datatypes available for columns in a table vary between database management systems. However, most database management systems support numeric types such as INT (an integer, or whole number), and string types such as VARCHAR (*VARCHAR* stands for variable length character data). For more information, see the documentation for your selected database management system.

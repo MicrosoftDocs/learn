@@ -1,23 +1,25 @@
-Microsoft Defender for Storage provides an extra layer of security intelligence that detects unusual and potentially harmful attempts to access or exploit storage accounts. This layer of protection allows you to address threats without being a security expert or managing security-monitoring systems.
+Microsoft Defender for Storage provides an extra layer of security intelligence that detects unusual and potentially harmful attempts to access or exploit storage accounts. This layer of protection helps you address threats without being a security expert or managing security-monitoring systems.
 
-Security alerts are triggered when anomalies in activity occur. These security alerts are integrated with Microsoft Defender for Cloud, and are also sent via email to subscription administrators, with details of suspicious activity and recommendations on how to investigate and remediate threats.
+Security alerts are triggered when anomalies in activity occur. These security alerts are integrated with Microsoft Defender for Cloud. By default, subscription owners also receive email notifications for high-severity alerts, with details of the suspicious activity. You can change who receives the emails and which alert severities trigger them.
 
-Microsoft Defender for Storage is currently available for Blob storage, Azure Files, and Azure Data Lake Storage Gen2. Account types that support Microsoft Defender for Cloud include general-purpose v2, block blob, and Blob storage accounts. Microsoft Defender for Storage is available in all public clouds and US government clouds, but not in other sovereign or Azure Government cloud regions.
+Microsoft Defender for Storage protects Azure Blob Storage, Azure Files, and Azure Data Lake Storage Gen2. Activity monitoring is supported for standard blob, premium blob, page blob, Data Lake Storage Gen2, and SMB Azure file share storage accounts.
 
-The recommended approach is to enable Microsoft Defender for Storage at the subscription level, which automatically protects all existing and new storage accounts in that subscription. Follow these steps.
+The recommended approach is to enable Microsoft Defender for Storage at the subscription level, which protects all existing and new storage accounts in that subscription. Follow these steps.
 
-1. Launch the Azure portal and go to **Microsoft Defender for Cloud**.
+1. Sign in to the Azure portal and go to **Microsoft Defender for Cloud**.
 
 1. Select **Environment settings** and choose the subscription you want to protect.
 
-1. On the **Defender plans** pane, locate **Storage** in the list, set the toggle to **On**, and select **Save**.
+1. Select the three dots, and then select **Edit settings**.
+
+1. On the **Defender plans** pane, locate **Storage** in the list, select **On**, and then select **Save**.
 
 > [!NOTE]
-> The classic per-transaction Defender for Storage plan is no longer available for new subscriptions as of February 5, 2025. The current plan charges per storage account and includes malware scanning and sensitive data threat detection. Subscription-level enablement may take up to 24 hours to apply across all storage accounts.
+> The current Defender for Storage plan is priced per storage account. Malware scanning is a configurable feature that's priced per GB scanned, and sensitive data threat detection is configurable at no extra cost. Protection for storage accounts created after you enable the plan at the subscription level starts up to 24 hours after creation. If you use the classic per-transaction plan, consider migrating to the current plan.
 
 ## Explore security anomalies
 
-When storage activity anomalies occur, you'll receive an email notification with information about the suspicious security event. Details of the event include:
+When storage activity anomalies occur, you receive an email notification with information about the suspicious security event. Details of the event include:
 
 - Nature of the anomaly
 - Storage account name

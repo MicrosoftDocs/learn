@@ -2,15 +2,15 @@ Just as Azure Data Factory provides various methods for ingesting data, it also 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=80a1cbb9-afff-487b-8664-1d0111cb7085]
 
-## Transforming data using Mapping Data Flow
+## Transform data with mapping data flows
 
-Mapping Data Flows provide an environment for building a wide range of data transformations visually without the need to use code. The resulting data flows that are created are subsequently executed on scaled-out Apache Spark clusters that are automatically provisioned when you execute the Mapping Data Flow. Mapping Data Flows also provides the capability to monitor the execution of the transformations so that you can view how the transformations are progressing, or to understand any errors that may occur
+Mapping Data Flows provide an environment for building a wide range of data transformations visually without the need to use code. The resulting data flows that are created are subsequently executed on scaled-out Apache Spark clusters that are managed by Azure Data Factory. Mapping Data Flows also provide the capability to monitor the execution of the transformations so that you can view how the transformations are progressing, or to understand any errors that might occur.
 
 ## Transforming data using compute resources
 
 Azure Data Factory can also call on compute resources to transform data by a data platform service that may be better suited to the job. A great example of this is that Azure Data Factory can create a pipeline to an analytical data platform such as Azure Databricks clusters to perform a complex calculation using Python. Another example could be to send data to an Azure SQL Database instance to execute a stored procedure using Transact-SQL. There's a wide range of compute resource, and the associated activities that they can perform as shown in the following table:
 
-| Compute environment                                       | activities                                    |
+| Compute environment                                       | Activities                                    |
 | --------------------------------------------------------- | --------------------------------------------- |
 | On-demand HDInsight cluster or your own HDInsight cluster | Hive, Pig, Spark, MapReduce, Hadoop Streaming |
 | Azure Batch                                               | Custom activities                             |
@@ -19,6 +19,6 @@ Azure Data Factory can also call on compute resources to transform data by a dat
 | Azure Databricks                                          | Notebook, Jar, Python                         |
 | Azure Function                                            | Azure Function activity                       |
 
-## Transforming data using  SQL Server Integration Services (SSIS) packages
+## Transforming data using SQL Server Integration Services (SSIS) packages
 
-Many organizations have decades of development investment in SSIS packages that contain both ingestion and transformation logic from on-premises and cloud data stores. Azure Data Factory provides the ability to lift and shift existing SSIS workload, by creating an Azure-SSIS Integration Runtime to natively execute SSIS packages. Using Azure-SSIS Integration Runtime will enable you to deploy and manage your existing SSIS packages with little to no change using familiar tools such as SQL Server Data Tools (SSDT) and SQL Server Management Studio (SSMS), just like using SSIS on premises.
+Many organizations have decades of development investment in SSIS packages that contain both ingestion and transformation logic from on-premises and cloud data stores. Azure Data Factory provides the ability to lift and shift existing SSIS workload, by creating an Azure-SSIS Integration Runtime to natively execute SSIS packages. Using Azure-SSIS Integration Runtime enables you to deploy and manage your existing SSIS packages with little to no change using familiar tools such as SQL Server Data Tools (SSDT) and SQL Server Management Studio (SSMS), just like using SSIS on premises.

@@ -1,4 +1,4 @@
-Let's examine how Unity Catalog manages query execution, with particular attention to security and administrative controls. We'll walk step by step through what happens when a query is submitted against a Unity Catalog table, covering the interactions between compute, the control plane, the data plane, and cloud storage. 
+This unit examines how Unity Catalog manages query execution, with particular attention to security and administrative controls. It walks step by step through what happens when a query is submitted against a Unity Catalog table, covering the interactions between compute, the control plane, the data plane, and cloud storage.
 
 ## The query lifecycle in Unity Catalog
 
@@ -31,7 +31,7 @@ For every object referenced in the query, Unity Catalog assumes the appropriate 
 * For **external tables or files**, the credential corresponds to an external location governed by a defined storage credential.
 
 > [!NOTE]
-> In Azure, the preferred way to grant Unity Catalog access to Azure Data Lake Storage (ADLS Gen2) is via a **Managed Identity + Access Connector** (versus relying purely on service principals). They have the benefit of allowing Unity Catalog to access storage accounts protected by network rules, which isn’t possible using service principals, and they remove the need to manage and rotate secrets.
+> In Azure, use a **managed identity with an access connector** to grant Unity Catalog access to Azure Data Lake Storage (ADLS Gen2), rather than relying only on service principals. A managed identity allows Unity Catalog to access storage accounts protected by network rules, which isn’t possible using service principals, and it removes the need to manage and rotate secrets.
 
 ### Step 4: Issuing scoped tokens
 
@@ -42,7 +42,7 @@ Once credentials are validated, Unity Catalog generates a **scoped temporary acc
 The compute resource (cluster or SQL warehouse) uses the token and URL provided by Unity Catalog to request data directly from the underlying ADLS Gen2 endpoints (via `abfss://` or `dfs.core.windows.net` URL)
 
 > [!NOTE]
-> If your ADLS account has firewall or virtual network restrictions, you must explicitly allow the Azure Databricks access connector / managed identity to access the storage (in addition to allowing the compute nodes). If the storage account is locked down, even a valid token may be rejected if the identity is not allowed via firewall rules.
+> If your ADLS account has firewall or virtual network restrictions, you must allow network access from your compute. If the **Allow Azure services on the trusted services list to access this storage account** setting is disabled, you must also explicitly allow the access connector's managed identity. Otherwise, the firewall can reject the request even when the token is valid.
 
 ### Step 6: Data transfer
 

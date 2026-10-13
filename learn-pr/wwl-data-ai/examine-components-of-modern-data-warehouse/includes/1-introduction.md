@@ -6,11 +6,11 @@
 
 ::: zone pivot="text"
 
-Before exploring how large-scale analytics solutions are built, let's introduce the two main analytics platforms on Azure you'll encounter throughout this module.
+Before you explore how large-scale analytics solutions are built, this unit introduces the two main analytics platforms on Azure that this module covers.
 
 **Microsoft Fabric** is Microsoft's unified software-as-a-service (SaaS) analytics platform. It brings data engineering, data warehousing, real-time analytics, data science, and Power BI together in a single browser-based workspace on top of one shared storage layer called **OneLake**. You don't manage servers or clusters—you create workspaces and items, and Microsoft runs the infrastructure.
 
-**Azure Databricks** is a cloud analytics platform built on Apache Spark. It's optimized for large-scale data engineering, data science, and SQL analytics over open lakehouse formats. It uses **Delta Lake**—an open-source storage format that adds transactions, schema enforcement, and versioning on top of Parquet files—giving you lakehouse-style reliability at scale. Databricks runs as a managed service inside your Azure subscription and is a common choice for teams that need code-first Spark and notebook-based workflows.
+**Azure Databricks** is a cloud analytics platform built on Apache Spark. It's optimized for large-scale data engineering, data science, and SQL analytics over open lakehouse formats. It uses **Delta Lake**—an open-source storage format that adds transactions, schema enforcement, and versioning on top of Parquet files—giving you lakehouse-style reliability at scale. Azure Databricks is a managed Azure service and is a common choice for teams that need code-first Spark and notebook-based workflows.
 
 ## Large-scale analytics
 

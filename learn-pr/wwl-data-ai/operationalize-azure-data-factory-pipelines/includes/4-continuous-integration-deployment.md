@@ -1,6 +1,6 @@
 Continuous integration is the practice of testing each change made to your codebase automatically and as early as possible. Continuous delivery follows the testing that happens during continuous integration and pushes changes to a staging or production system.
 
-In Azure Data Factory, continuous integration and delivery (CI/CD) means moving Data Factory pipelines from one environment (development, test, production) to another. Azure Data Factory utilizes Azure Resource Manager templates to store the configuration of your various Azure Data Factory entities (pipelines, datasets, data flows, and so on). There are two suggested methods to promote a data factory to another environment:
+In Azure Data Factory, continuous integration and delivery (CI/CD) means moving Data Factory pipelines from one environment (development, test, production) to another. Azure Data Factory uses Azure Resource Manager templates to store the configuration of your various Azure Data Factory entities (pipelines, datasets, data flows, and so on). There are two suggested methods to promote a data factory to another environment:
 
 -    Automated deployment using Data Factory's integration with Azure Pipelines.
 -    Manually upload a Resource Manager template using Data Factory UX integration with Azure Resource Manager.
@@ -35,7 +35,7 @@ The following is a guide for setting up an Azure Pipelines release that automate
 
 ### Requirements
 
--   An Azure subscription linked to Visual Studio Team Foundation Server or Azure Repos that uses the Azure Resource Manager service endpoint
+-   An Azure subscription linked to Azure DevOps Server (formerly Visual Studio Team Foundation Server) or Azure Repos that uses the Azure Resource Manager service endpoint
 
 -   A data factory configured with Azure Repos Git integration.
 
@@ -82,7 +82,7 @@ The following is a guide for setting up an Azure Pipelines release that automate
     h. Select **Incremental** for the **Deployment mode**.
 
     > [!WARNING]
-    > In Complete deployment mode, resources that exist in the resource group but aren't specified in the new Resource Manager template will be **deleted**.
+    > In Complete deployment mode, resources that exist in the resource group but aren't specified in the new Resource Manager template are **deleted**.
     
     > [!div class="mx-imgBorder"]  
     > [![Screenshot of the Azure Resource Manager deployment task configuration for the production Data Factory.](../media/continuous-integration-image-9.png)](../media/continuous-integration-image-9.png#lightbox)
@@ -141,7 +141,7 @@ The Azure Key Vault task might fail with an Access Denied error if the correct p
 
 Deployment can fail if you try to update active triggers. To update active triggers, you need to manually stop them, and then restart them after the deployment. You can do this by using an Azure PowerShell task:
 
-1.  On the **Tasks** tab of the release, add an **Azure PowerShell** task. Choose task version 4.*. 
+1.  On the **Tasks** tab of the release, add an **Azure PowerShell** task. Choose the latest Azure PowerShell task version. 
 
 1.  Select the subscription your factory is in.
 
@@ -162,7 +162,7 @@ You can complete similar steps (with the `Start-AzDataFactoryV2Trigger` function
 
 If you're unable to use Azure DevOps or a different release management tool, you can manually promote a data factory using an ARM Template.
 
-1. In the **ARM Template** list, select **Export ARM Template** to export the Resource Manager template for your data factory in the development environment.
+1. Go to the **Manage** hub in your data factory, and select **ARM template** in the **Source control** section. Under **ARM template**, select **Export ARM template** to export the Resource Manager template for your data factory in the development environment.
 
    ![Screenshot of the ARM Template menu with the Export ARM Template option.](../media/continuous-integration-image-1.png)
 
@@ -170,13 +170,13 @@ If you're unable to use Azure DevOps or a different release management tool, you
 
    ![Screenshot of the custom deployment page with the Build your own template in the editor option.](../media/custom-deployment-build-own-template.png) 
 
-1. Select **Load file**, and then select the generated Resource Manager template. This is the **arm_template.json** file located in the .zip file exported in step 1.
+1. Select **Load file**, and then select the generated Resource Manager template. This is the **ARMTemplateForFactory.json** file located in the .zip file exported in step 1.
 
    ![Resource Manager template editor in the Azure portal.](../media/custom-deployment-edit-template.png)
 
-1. In the settings section, enter the configuration values, like linked service credentials. When you're done, select **Purchase** to deploy the Resource Manager template.
+1. In the **Custom deployment** section, enter the target subscription, region, and other details required for the deployment. When you're done, select **Review + create** to deploy the Resource Manager template.
 
-   ![Screenshot of the settings section for entering configuration values to deploy the Resource Manager template.](../media/continuous-integration-image-5.png)
+   ![Screenshot of the Custom deployment settings for entering the values to deploy the Resource Manager template.](../media/continuous-integration-image-5.png)
 
 ## Customize Azure Resource Manager template parameters
 
@@ -185,15 +185,15 @@ If your development factory has an associated git repository, you can override t
 * You use automated CI/CD and you want to change some properties during Resource Manager deployment, but the properties aren't parameterized by default.
 * Your factory is so large that the default Resource Manager template is invalid because it has more than the maximum allowed parameters (256).
 
-To override the default parameterization template, go to the management hub and select **Parameterization template** in the source control section. Select **Edit template** to open the parameterization template code editor. 
+To override the default parameterization template, go to the **Manage** hub and select **ARM template** in the **Source control** section. Under **ARM parameter configuration**, select the **Edit** icon to open the Resource Manager parameter configuration code editor. 
 
-![Screenshot of the management hub showing the Parameterization template option in the source control section.](../media/management-hub-custom-parameters.png)
+![Screenshot of the management hub showing the ARM template option in the source control section.](../media/management-hub-custom-parameters.png)
 
 Creating a custom parameterization template creates a file named **arm-template-parameters-definition.json** in the root folder of your git branch. You must use that exact file name.
 
 ![Screenshot of the custom parameters file arm-template-parameters-definition.json in the repository.](../media/custom-parameters.png)
 
-When publishing from the collaboration branch, Data Factory will read this file and use its configuration to generate which properties get parameterized. If no file is found, the default template is used.
+When publishing from the collaboration branch, Data Factory reads this file and uses its configuration to generate which properties get parameterized. If no file is found, the default template is used.
 
 When exporting a Resource Manager template, Data Factory reads this file from whichever branch you're currently working on, not the collaboration branch. You can create or edit the file from a private branch, where you can test your changes by selecting **Export ARM Template** in the UI. You can then merge the file into the collaboration branch.
 
@@ -212,7 +212,7 @@ The following are some guidelines to follow when you create the custom parameter
       * `-` means don't keep the default value for the parameter.
       * `|` is a special case for secrets from Azure Key Vault for connection strings or keys.
    * `<name>` is the name of the parameter. If it's blank, it takes the name of the property. If the value starts with a `-` character, the name is shortened. For example, `AzureStorage1_properties_typeProperties_connectionString` would be shortened to `AzureStorage1_connectionString`.
-   * `<stype>` is the type of parameter. If `<stype>` is blank, the default type is `string`. Supported values: `string`, `bool`, `number`, `object`, and `securestring`.
+   * `<stype>` is the type of parameter. If `<stype>` is blank, the default type is `string`. Supported values: `string`, `securestring`, `int`, `bool`, `object`, `secureobject`, and `array`.
 * Specifying an array in the definition file indicates that the matching property in the template is an array. Data Factory iterates through all the objects in the array by using the definition that's specified in the integration runtime object of the array. The second object, a string, becomes the name of the property, which is used as the name for the parameter for each iteration.
 * A definition can't be specific to a resource instance. Any definition applies to all resources of that type.
 * By default, all secure strings, like Key Vault secrets, and secure strings, like connection strings, keys, and tokens, are parameterized.
@@ -227,7 +227,7 @@ To use linked templates instead of the full Resource Manager template, update yo
 
 ## Hotfix production environment
 
-If you deploy a factory to production and realize there's a bug that needs to be fixed right away, but you can't deploy the current collaboration branch, you might need to deploy a hotfix. This approach is as known as quick-fix engineering or QFE.
+If you deploy a factory to production and realize there's a bug that needs to be fixed right away, but you can't deploy the current collaboration branch, you might need to deploy a hotfix. This approach is also known as quick-fix engineering or QFE.
 
 1.    In Azure DevOps, go to the release that was deployed to production. Find the last commit that was deployed.
 
@@ -253,7 +253,7 @@ If you deploy a factory to production and realize there's a bug that needs to be
 
 The CI/CD flow described above requires a manual step: a developer must open Azure Data Factory Studio and select **Publish** to generate the ARM templates and push them to the `adf_publish` branch before each deployment. This manual step removes the "continuous" from continuous integration.
 
-Azure Data Factory provides a newer, recommended approach that eliminates this manual step using the `@microsoft/azure-data-factory-utilities` npm package. This package adds a build pipeline that programmatically validates all Data Factory resources and generates the ARM template as a build artifact whenever code is merged into the collaboration branch.
+Azure Data Factory provides a newer approach that eliminates this manual step using the `@microsoft/azure-data-factory-utilities` npm package. This package adds a build pipeline that programmatically validates all Data Factory resources and generates the ARM template as a build artifact whenever code is merged into the collaboration branch.
 
 ### How the automated flow works
 
@@ -291,12 +291,12 @@ If you're using Git integration with your data factory and have a CI/CD pipeline
 -   **Pre- and post-deployment script**. Before the Resource Manager deployment step in CI/CD, you need to complete certain tasks, like stopping and restarting triggers and performing cleanup. We recommend that you use PowerShell scripts before and after the deployment task. Use [PrePostDeploymentScript.Ver2.ps1](https://github.com/Azure/Azure-DataFactory/blob/main/SamplesV2/ContinuousIntegrationAndDelivery/PrePostDeploymentScript.Ver2.ps1) from the Azure Data Factory GitHub repository — this version selectively stops and restarts only the triggers that were modified, minimizing downtime compared to stopping all triggers.
 
   > [!WARNING]
-  > Run the script using **PowerShell Core** in the Azure DevOps task to avoid deserialization errors. 
+  > Run the script using **PowerShell Core** in the Azure DevOps task. Use the latest versions of PowerShell and the Data Factory module to avoid deserialization errors. 
 
--   **Integration runtimes and sharing**. Integration runtimes don't change often and are similar across all stages in your CI/CD. So Data Factory expects you to have the same name and type of integration runtime across all stages of CI/CD. If you want to share integration runtimes across all stages, consider using a ternary factory just to contain the shared integration runtimes. You can use this shared factory in all of your environments as a linked integration runtime type.
+-   **Integration runtimes and sharing**. Integration runtimes don't change often and are similar across all stages in your CI/CD. So Data Factory expects you to have the same name, type, and subtype of integration runtime across all stages of CI/CD. If you want to share integration runtimes across all stages, consider using a ternary factory just to contain the shared integration runtimes. You can use this shared factory in all of your environments as a linked integration runtime type. Integration runtime sharing is only available for self-hosted integration runtimes. Azure-SSIS integration runtimes don't support sharing.
 
 -   **Managed private endpoint deployment**. If a private endpoint already exists in a factory and you try to deploy an ARM template that contains a private endpoint with the same name but with modified properties, the deployment fails. In other words, you can successfully deploy a private endpoint as long as it has the same properties as the one that already exists in the factory. If any property is different between environments, you can override it by parameterizing that property and providing the respective value during deployment.
 
--   **Key Vault**. When you use linked services whose connection information is stored in Azure Key Vault, it's recommended to keep separate key vaults for different environments. You can also configure separate permission levels for each key vault. For example, you might not want your team members to have permissions to production secrets. If you follow this approach, we recommend that you to keep the same secret names across all stages. If you keep the same secret names, you don't need to parameterize each connection string across CI/CD environments because the only thing that changes is the key vault name, which is a separate parameter.
+-   **Key Vault**. When you use linked services whose connection information is stored in Azure Key Vault, it's recommended to keep separate key vaults for different environments. You can also configure separate permission levels for each key vault. For example, you might not want your team members to have permissions to production secrets. If you follow this approach, we recommend that you keep the same secret names across all stages. If you keep the same secret names, you don't need to parameterize each connection string across CI/CD environments because the only thing that changes is the key vault name, which is a separate parameter.
 
 -  **Resource naming** Due to ARM template constraints, issues in deployment may arise if your resources contain spaces in the name. The Azure Data Factory team recommends using '_' or '-' characters instead of spaces for resources. For example, 'Pipeline_1' would be a preferable name over 'Pipeline 1'.

@@ -1,4 +1,4 @@
-**Well-documented table and column definitions** are the foundation of effective data governance. When you create and preserve comprehensive **metadata** for your data assets, you enable data consumers to discover, understand, and trust the data they need. This becomes especially important as AI-driven data discovery tools rely on high-quality metadata to surface relevant information.
+**Well-documented table** and **column definitions** are the foundation of effective data governance. When you create and preserve comprehensive **metadata** for your data assets, you enable data consumers to discover, understand, and trust the data they need. This becomes especially important as AI-driven data discovery tools rely on high-quality metadata to surface relevant information.
 
 In this unit, you learn how to create tables with descriptive comments and tags, and use discovery tools to explore your data assets in Unity Catalog.
 
@@ -55,20 +55,19 @@ Unity Catalog can automatically generate comments using AI-powered suggestions. 
 
 For column comments, select **AI generate** above the column list to generate suggestions for all columns.
 
-:::image type="content" source="../media/2-use-ai-generated-comments.png" alt-text="Screenshot of AI-generated comments." lightbox="../media/2-use-ai-generated-comments.png":::
+:::image type="content" source="../media/2-use-ai-generated-comments.png" alt-text="Screenshot showing AI-generated comments for a table in Catalog Explorer." lightbox="../media/2-use-ai-generated-comments.png":::
 
 > [!IMPORTANT]
-> **AI-generated comments** are suggestions based on schema analysis. Always review these comments before saving, as AI models might generate inaccurate descriptions. Don't rely on AI comments for data classification tasks like detecting personally identifiable information (PII).
+> **AI-generated comments** are suggestions based on schema analysis. Always review these comments before saving, as AI models might generate inaccurate descriptions. Don't rely on AI comments for data classification tasks like detecting personally identifiable information (PII). Saving a comment runs an `ALTER` statement, which can disrupt pipelines and jobs that use the object.
 
 ### Required permissions for comments
 
-To add or edit comments, you need:
+To add or edit comments on a table or column, you need either of the following:
 
-- Ownership of the object, or
-- `MODIFY` and `SELECT` privileges on the table
-- `USE CATALOG` and `USE SCHEMA` on the parent catalog and schema
+- Ownership of the table
+- `MODIFY` and `SELECT` privileges on the table, plus `USE CATALOG` and `USE SCHEMA` on the parent catalog and schema
 
-After adding comments, any user with the `BROWSE` privilege can view them in Catalog Explorer.
+To add or edit comments on a view or materialized view, you must be the owner of the view. After adding comments, any user with the `BROWSE` privilege can view them in Catalog Explorer.
 
 ## Apply tags for organization and discovery
 
@@ -109,16 +108,17 @@ System tags are a special type of governed tag predefined by Azure Databricks fo
 Keep these constraints in mind when working with tags:
 
 - Maximum 50 tags per securable object
-- Maximum 1,000 column tags per table
-- Tag keys have a 255-character limit
-- Tag values have a 1,000-character limit
+- Maximum 1,000 column tags in total per table
+- Tag keys and tag values have a 256-character limit
 - Tag keys are case-sensitive
+- Tag keys can't contain the characters `. , - = / :`
+- Leading and trailing spaces aren't allowed in tag keys or values
 
 ## Explore and discover database objects
 
 After you create and document your data assets, you need ways to find and explore them. Unity Catalog provides several tools for data discovery.
 
-### Use Catalog Explorer
+### Discover database objects
 
 **Catalog Explorer** provides a visual interface for navigating your data assets. When you select a table, you can:
 

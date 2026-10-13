@@ -1,19 +1,19 @@
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=409201db-815e-4c01-bd8a-1fb0e1c4eeaa]
 
-In the previous module, you looked at granting or denying access to entire tables. That works when every authorized user can see every row and column, but in real scenarios you often need to expose only part of a dataset. You might need to hide rows that a user isn't entitled to view, redact or mask specific columns that contain sensitive attributes, or partially transform values so that they remain useful without leaking full detail. Rather than duplicating tables or maintaining multiple extract copies, you can apply fine-grained access control. In Databricks Unity Catalog, you implement fine-grained control using one of two approaches: 
+In the previous unit, you looked at granting or denying access to entire tables. That works when every authorized user can see every row and column, but in real scenarios you often need to expose only part of a dataset. You might need to hide rows that a user isn't entitled to view, redact or mask specific columns that contain sensitive attributes, or partially transform values so that they remain useful without leaking full detail. Rather than duplicating tables or maintaining multiple extract copies, you can apply fine-grained access control. In Databricks Unity Catalog, you implement fine-grained control using one of two approaches:
 
-- **Row and Column Security**: the preferred, modern method, composed of column masking and row filtering.
+- **Row and Column Security**: the table-level method, composed of column masking and row filtering.
 - **Dynamic Views**: the earlier pattern that still has valid use cases. 
 
 ![Diagram illustrating the two approaches to fine grained access control.](../media/fine-grained-access-control-two-approaches.png)
 
-In this unit, you'll learn what each approach is, when to use it, and why one is generally favored today. You'll explore the specific SQL syntax in the next unit, so here we stay at the conceptual level.
+This unit explains what each approach is, when to use it, and why row and column security is often the better fit for single-table scenarios. The next unit covers the specific SQL syntax, so this unit stays at the conceptual level.
 
 ## Why fine-grained control matters
 
 You frequently have a single canonical table that must serve different audiences: application users, data analysts, compliance reviewers, or support staff. Creating separate physical tables for each audience leads to data duplication, stale copies, extra orchestration, and security drift. Views can help, but managing many views—each encoding slightly different masking or filtering—becomes difficult over time. Fine-grained access control lets you keep one authoritative table while tailoring what each principal actually sees at query time.
 
-Typical objectives you'll address:
+Typical objectives include:
 
 - **Column masking**: Show a column's presence but hide (or transform) its sensitive values for most users.
 - **Row filtering**: Suppress entire records that a user or group shouldn't see.
@@ -35,12 +35,11 @@ Key characteristics you should internalize:
 
 - **Centralized logic**: Rules live alongside the table definition, reducing drift between data and policy.
 - **Combinatorial flexibility**: A single set of masking and filtering functions handles all user combinations; you don't create separate artifacts per audience.
-- **Performance alignment**: Operating at the table layer avoids the overhead of stacking multiple view abstractions.
 - **Operational simplicity**: Fewer named objects to permission, audit, and lifecycle.
 
 ## Dynamic views
 
-Dynamic Views predate Row and Column Security. These have been with Azure Databricks for some time, and though they're no longer the preferred method for controlling access to rows and columns, they still have their place. You define a view that selects from one or more underlying tables and encodes conditional logic: CASE expressions to mask sensitive columns, predicates to exclude rows, or transformations that partially obfuscate values. Any user with permission on the view can query it without having direct access to the underlying tables, assuming the view owner has that access. This separation lets you shield source objects while presenting a curated projection.
+Dynamic Views predate Row and Column Security. These have been with Azure Databricks for some time, and though row and column security often replaces them for single-table scenarios, they still have their place. You define a view that selects from one or more underlying tables and encodes conditional logic: CASE expressions to mask sensitive columns, predicates to exclude rows, or transformations that partially obfuscate values. Any user with permission on the view can query it without having direct access to the underlying tables, assuming the view owner has that access. This separation lets you shield source objects while presenting a curated projection.
 
 ![Diagram illustrating the concept of a dynamic view.](../media/dynamic-views.png)
 
@@ -53,18 +52,16 @@ Characteristics to note:
 - **Read-only exposure**: Views can't themselves be updated; any data modification still requires access to the base tables.
 - **Object proliferation risk**: Each audience-specific variant typically requires a new view.
 
-## Why row and column security is preferred over dynamic views
+## Why choose row and column security over dynamic views
 
-When choosing between these two manual approaches, you should default to Row and Column Security because:
+When choosing between these two manual approaches, default to Row and Column Security for single-table scenarios because:
 
 - **Reduced object sprawl**: One table plus a small set of functions replaces a potentially expanding family of views.
 - **Easier maintenance**: Policy changes occur where the data resides, lowering chances of unsynchronized logic across parallel views.
-- **Performance advantages**: Enforcement happens at the source, avoiding extra resolution layers and enabling better optimization.
-- **Clearer governance**: Auditing and lineage focus on the primary table rather than a web of derivative objects.
 - **Flexible combinations**: You avoid creating a new physical or logical artifact for every unique mix of masking and filtering rules.
 
 > [!NOTE]
-> Both Row and Column Security and Dynamic Views are *manual*, per-table approaches. Databricks also provides **Attribute-Based Access Control (ABAC)**, which lets you define centralized policies that apply automatically to all tables matching a governed tag across an entire schema or catalog — without any per-table configuration. ABAC is now the recommended approach for most use cases. It is covered in detail in the *Govern Unity Catalog objects* module.
+> Both Row and Column Security and Dynamic Views are *manual*, per-table approaches. Databricks also provides **Attribute-Based Access Control (ABAC)**, which lets you define centralized policies that apply automatically to all tables matching a governed tag across an entire schema or catalog — without any per-table configuration. Databricks recommends ABAC when you need consistent row filtering and column masking across many tables. ABAC is covered in detail in the *Govern Unity Catalog objects* module.
 
 ## When dynamic views still make sense
 
@@ -84,7 +81,7 @@ Here's a comparison of the two manual approaches side by side, so you can see th
 | **Maintainability**      | Minimizes moving parts by enforcing security at the table level.                        | More objects to manage if multiple views are created.                               |
 | **Flexibility**          | Limited to what's stored in the table.                                                  | Can combine multiple tables directly for flexible compositions.                     |
 | **Object governance**    | Fewer objects overall; simplifies grants and audits.                                    | More objects to govern; grants may need to be managed at both view and table level. |
-| **Read/write patterns**  | Supports seamless querying and updating with masking or filtering applied at the table. | Typically read-only; write patterns require direct table access.                    |
+| **Read/write patterns**  | Supports querying and updating with masking or filtering applied at the table. | Typically read-only; write patterns require direct table access.                    |
 | **Abstraction boundary** | Exposes storage design more directly.                                                   | Provides a presentation layer decoupled from underlying storage.                    |
 
 ## Typical workflow

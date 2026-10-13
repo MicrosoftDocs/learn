@@ -4,7 +4,7 @@ Every organization faces the challenge of balancing data availability with compl
 
 In this unit, you learn how to configure retention settings, use **`VACUUM`** to remove obsolete data, handle deletion requests for compliance, and automate maintenance with **predictive optimization**.
 
-## Configure Delta Lake retention settings
+## Configure table retention settings
 
 **Delta Lake** maintains table history through **transaction logs** and **data files**. Two key properties control how long this historical data remains available:
 
@@ -28,7 +28,7 @@ SET TBLPROPERTIES (
 > [!IMPORTANT]
 > Increasing retention duration increases storage costs because more data files are preserved. Before adjusting these settings, evaluate your compliance requirements against storage budget constraints.
 >
-> You must set both of these properties to ensure table history is retained for longer duration for tables with frequent `VACUUM` operations
+> You must set both of these properties to retain table history for a longer duration on tables with frequent `VACUUM` operations.
 
 To view current retention settings for a table, use the following command:
 
@@ -50,10 +50,10 @@ VACUUM sales.customers.transactions RETAIN 168 HOURS;
 
 When you run `VACUUM`, Delta Lake identifies files associated with versions older than the retention threshold and removes them from storage. After this operation, time travel queries to those older versions fail because the underlying data no longer exists.
 
-For tables with **deletion vectors** enabled, you must also run `REORG TABLE ... APPLY (PURGE)` after deleting records to permanently remove the underlying data. `VACUUM` by itself does not remove data that deletion vectors have marked for deletion.
+For tables with **deletion vectors** enabled, you must also run `REORG TABLE ... APPLY (PURGE)` after deleting records to rewrite the data files that still contain the deleted rows. `VACUUM` by itself doesn't remove data that deletion vectors mark for deletion. After the purge, run `VACUUM` to remove the older files, which are deleted only after they pass the retention threshold.
 
 > [!NOTE]
-> **Deletion vectors** are a storage optimization feature you can enable on Delta Lake tables. By default, when a single row in a data file is deleted, the entire Parquet file containing the record must be rewritten. With deletion vectors enabled, it marks rows as deleted without rewriting the entire file. 
+> **Deletion vectors** are a storage optimization feature you can enable on Delta Lake tables. By default, when a single row in a data file is deleted, the entire Parquet file containing the record must be rewritten. With deletion vectors enabled, Delta Lake marks rows as deleted without rewriting the entire file.
 
 ## Handle compliance deletion requests
 
@@ -96,7 +96,7 @@ When you delete data in your bronze layer, you must also remove it from silver a
 spark.readStream.option('skipChangeCommits', 'true').table("bronze.users")
 ```
 
-After running deletion operations, execute `VACUUM` to permanently remove the data files from storage.
+After running deletion operations, execute `VACUUM` to permanently remove the data files from storage. `VACUUM` removes only files that are older than the retention threshold, so deleted data remains in storage until the `delta.deletedFileRetentionDuration` period passes.
 
 ## Automate retention with predictive optimization
 
@@ -126,7 +126,7 @@ DESCRIBE TABLE EXTENDED sales.customers.transactions;
 You can monitor predictive optimization operations through the system table `system.storage.predictive_optimization_operations_history`, which shows when maintenance ran, what operations completed, and associated costs.
 
 > [!NOTE]
-> Predictive optimization is enabled by default if your account was created on or after November 11, 2024. 
+> Predictive optimization is enabled by default for accounts created on or after November 11, 2024. Databricks is enabling existing accounts with a gradual rollout. It requires the Premium plan and applies only to Unity Catalog managed tables.
 
 ## Integrate with Azure Storage lifecycle policies
 
@@ -146,7 +146,7 @@ Lifecycle policies operate at the storage layer, while Delta Lake retention oper
 
 When implementing storage lifecycle policies with Delta Lake, you must account for how Delta Lake manages files:
 
-- **File creation time vs. modification time**: Azure Databricks typically relies on file creation time for lifecycle management. Operations like `UPDATE`, `MERGE`, `DELETE`, and `OPTIMIZE` rewrite Parquet files, which resets their creation time and can delay archival.
+- **File age and rewritten files**: Operations like `UPDATE`, `MERGE`, `DELETE`, and `OPTIMIZE` rewrite Parquet files, which creates new files that restart the lifecycle policy's age calculation and can delay archival.
 
 - **Querying archived data**:
   - **Offline tiers (Archive)**: Querying files in offline tiers fails unless they're restored
@@ -162,7 +162,7 @@ To overcome these challenges and implement a cost-effective archival strategy:
 
 - **Define storage lifecycle policies**: Configure Azure Storage lifecycle management rules to move older files to cool or archive tiers based on their age (for example, move to Cool after 30 days, Archive after 365 days).
 
-- **Set the `delta.timeUntilArchived` property**: Configure this table property to match your storage lifecycle policy. This informs Azure Databricks that files older than the specified period are archived, preventing the query optimizer from assuming they're immediately available.
+- **Set the `delta.timeUntilArchived` property**: Configure this table property to match your storage lifecycle policy. This informs Azure Databricks that files older than the specified period are archived, preventing the query optimizer from assuming they're immediately available. Archival support is in Public Preview, requires Databricks Runtime 13.3 LTS or above, and supports only the Azure Archive tier. Your lifecycle policy must not archive the `_delta_log` directory.
   
     ```sql
     ALTER TABLE sales_data 
