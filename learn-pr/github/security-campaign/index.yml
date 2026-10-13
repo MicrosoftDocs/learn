@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.github.security-campaign
+metadata:
+  title: Security Campaigns and Prevention-First Strategy
+  description: Learn how to coordinate security remediation across repositories using GitHub Advanced Security campaigns. You'll explore how to scope and manage security campaigns, assign remediation ownership, track alert resolution, measure campaign effectiveness, and apply prevention-first controls to reduce the introduction of new vulnerabilities.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 10/06/2026
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+title: Security campaigns and prevention-first strategy
+summary: Security campaigns help organizations coordinate the remediation of security alerts across repositories and teams. In this module, you'll learn how to identify and scope campaigns, coordinate remediation through pull requests and dependency updates, measure changes in alert volume and remediation speed, and use prevention-first controls such as push protection, code scanning, and dependency review to reduce future security risk. You'll also learn how campaign insights support a continuous security improvement cycle.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Define a security campaign in an organizational context
+  - Describe how to coordinate remediation efforts across teams using GitHub security insights
+  - Apply prevention-first principles using GitHub security capabilities
+  - Evaluate risk reduction using observable metrics and trends
+
+prerequisites: |
+  - A GitHub account
+  - Basic understanding of repositories, pull requests, and workflows on GitHub
+  - Familiarity with basic security concepts such as vulnerabilities and dependencies
+  - A GitHub Code Security plan 
+iconUrl: /training/achievements/github/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- github
+- azure
+subjects:
+- collaboration
+units:
+- learn.github.security-campaign.introduction
+- learn.github.security-campaign.understand-security-campaigns
+- learn.github.security-campaign.identify-scope-campaign
+- learn.github.security-campaign.coordinate-execute-remediation-scale
+- learn.github.security-campaign.measure-campaign-effectiveness
+- learn.github.security-campaign.knowledge-check
+- learn.github.security-campaign.summary
+badge:
+  uid: learn.github.security-campaign.badge

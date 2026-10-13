@@ -9,14 +9,14 @@
 
 ::: zone pivot="text"
 
-Apache Spark is a powerful data processing engine designed to handle very large amounts of data quickly. Rather than processing data on a single computer, Spark splits the work across many machines (a *cluster*) so everything runs in parallel. You can use Spark on Microsoft Azure in the following services:
+Apache Spark is a data processing engine designed to handle very large amounts of data quickly. Rather than processing data on a single computer, Spark splits the work across many machines (a *cluster*) so everything runs in parallel. You can use Spark on Microsoft Azure in the following services:
 
 - Microsoft Fabric
 - Azure Databricks
 
-Spark supports code written in Python, Scala, or Java, and can handle both batch processing and stream processing.
+Spark supports code written in languages such as Python, Scala, Java, R, and SQL, and can handle both batch processing and stream processing.
 
-## Spark Structured Streaming
+## Process streaming data with Spark
 
 **Spark Structured Streaming** is a library built into Spark that makes it straightforward to work with streaming data. Think of it as a way to treat a live data stream the same way you'd work with a table in a spreadsheet—except the table keeps growing in real time as new data arrives.
 
@@ -27,14 +27,14 @@ Here's how it works in practice:
 3. You write a **query** on that dataframe—for example, to count events per minute or calculate a running average.
 4. The query results are written to an **output** (a sink), such as a file, a database, or a dashboard.
 
-[ ![Diagram of streaming data flowing from a source into a dataframe, being queried, and written to a sink.](../media/spark-structured-streaming.png) ](../media/spark-structured-streaming.png#lightbox)
+:::image type="content" source="../media/spark-structured-streaming.png" alt-text="Diagram of streaming data flowing from a source into a dataframe, being queried, and written to a sink." lightbox="../media/spark-structured-streaming.png":::
 
 Spark Structured Streaming is a good choice when you're already using Spark for data processing and want to extend that work to include real-time data streams.
 
 > [!NOTE]
 > For more information about Spark Structured Streaming, see the [Spark Structured Streaming programming guide.](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)
 
-## Delta Lake
+## Store streaming data in Delta tables
 
 **Delta Lake** is an open-source storage format that improves how data is stored in a data lake. By default, a data lake is just a collection of files—there's no built-in way to ensure that data is complete, consistent, or correctly structured. Delta Lake adds those guarantees, making data lake storage behave more like a traditional database.
 

@@ -1,0 +1,7 @@
+Modern software development moves quickly-and security issues can scale just as fast. As organizations adopt platforms like GitHub Advanced Security, they gain visibility into vulnerabilities across code, dependencies, and secrets. However, identifying risks is only the first step. Without coordination, security alerts can accumulate across repositories, teams, and projects, making it difficult to prioritize and respond effectively.
+
+GitHub provides integrated security capabilities such as code scanning, secret scanning, and dependency management to help teams detect and remediate vulnerabilities. These capabilities are most effective when combined with structured processes that enable teams to act on insights at scale.
+
+Security campaigns provide a way to organize and coordinate remediation efforts across an organization. Instead of addressing alerts individually, teams can align around shared goals, prioritize high-impact risks, and track progress over time. At the same time, a prevention-first approach helps reduce the introduction of new vulnerabilities by integrating security checks earlier in the development workflow, such as during pull requests or before code is pushed.
+
+By combining coordinated remediation efforts with preventive controls, organizations can move from reactive security practices to a more sustainable model focused on long-term risk reduction.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.security-remediation.governance-ai-assisted-security-remediation
+title: Governance and AI-assisted security remediation
+metadata:
+  title: Governance and AI-Assisted Security Remediation
+  description: This content is a part of the "Security Operations and Remediation Workflows with GitHub Advanced Security" module.
+  ms.date: 10/08/2026
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-governance-ai-assisted-security-remediation.md)]

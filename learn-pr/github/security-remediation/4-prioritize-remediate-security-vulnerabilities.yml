@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.security-remediation.prioritize-remediate-security-vulnerabilities
+title: Prioritizing and remediating security vulnerabilities
+metadata:
+  title: Prioritizing and Remediating Security Vulnerabilities
+  description: This content is a part of the "Security Operations and Remediation Workflows with GitHub Advanced Security" module.
+  ms.date: 10/08/2026
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-prioritize-remediate-security-vulnerabilities.md)]
