@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/11/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -64,10 +64,10 @@ quiz:
     choices:
     - content: "databricks bundle check"
       isCorrect: false
-      explanation: "Incorrect. The correct command for validating bundle configuration is databricks bundle validate."
+      explanation: "Incorrect. The databricks bundle check command doesn't exist. Use databricks bundle validate to validate bundle configuration."
     - content: "databricks bundle validate"
       isCorrect: true
       explanation: "Correct. The databricks bundle validate command checks configuration files for syntax errors and completeness before deployment."
     - content: "databricks bundle test"
       isCorrect: false
-      explanation: "Incorrect. The databricks bundle test command is not used for configuration validation. Use databricks bundle validate instead."
+      explanation: "Incorrect. The databricks bundle test command doesn't exist. Use databricks bundle validate to validate bundle configuration."

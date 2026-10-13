@@ -8,7 +8,7 @@ In this unit, you learn how to implement a testing strategy that covers **unit t
 
 A well-designed testing strategy follows the **testing pyramid** concept. At the base, you have many fast, isolated unit tests. Moving up, you have fewer integration tests that verify component interactions. At the top, you have a small number of comprehensive end-to-end tests and UAT scenarios.
 
-:::image type="content" source="../media/4-understand-test-pyramid.png" alt-text="Diagram showing the testing pyramid." border="false" lightbox="../media/4-understand-test-pyramid.png":::
+:::image type="content" source="../media/4-understand-test-pyramid.png" alt-text="Diagram showing unit, integration, end-to-end, and acceptance tests in the testing pyramid." border="false" lightbox="../media/4-understand-test-pyramid.png":::
 
 This structure exists because different test types serve different purposes:
 
@@ -23,7 +23,7 @@ Starting with unit tests, you build confidence in your code's fundamental buildi
 
 ## Implement unit tests with pytest
 
-Unit tests focus on testing **individual functions in isolation**. In Azure Databricks, the **pytest** framework provides a powerful way to write and run unit tests for your Python code.
+Unit tests focus on testing **individual functions in isolation**. In Azure Databricks, the **pytest** framework provides a way to write and run unit tests for your Python code.
 
 Consider a data transformation function that filters records by country/region:
 
@@ -121,7 +121,7 @@ def test_daily_processing_pipeline():
     result = spark.sql(f"""
         SELECT COUNT(*) as row_count, 
                SUM(amount) as total_amount
-        FROM production.daily_summary
+        FROM test_catalog.test_schema.daily_summary
         WHERE process_date = '{test_date}'
     """)
     

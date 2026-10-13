@@ -3,7 +3,7 @@
 After your team configures a Declarative Automation Bundle, deploying it to Azure Databricks becomes your next responsibility. The **Databricks CLI** provides a direct path from your local development environment to production workspaces. You control when and where your pipelines, jobs, and other resources go live. Understanding this **deployment workflow** enables you to move code reliably across environments while maintaining consistency.
 
 > [!NOTE]
-> This unit focuses on CLI-based deployment, which is the recommended approach for CI/CD automation. Declarative Automation Bundles can also be managed through the Azure Databricks workspace UI (Public Preview), useful for ad-hoc collaboration without installing the CLI. See [Collaborate on bundles in the workspace](/azure/databricks/dev-tools/bundles/workspace).
+> This unit focuses on CLI-based deployment, which is the recommended approach for CI/CD automation. Declarative Automation Bundles can also be managed through the Azure Databricks workspace UI, which is useful for ad-hoc collaboration without installing the CLI. See [Collaborate on bundles in the workspace](/azure/databricks/dev-tools/bundles/workspace).
 
 :::image type="content" source="../media/6-deploy-bundle-databricks-cli.png" alt-text="Diagram explaining the different steps when deploying a bundle with Databricks CLI." border="false" lightbox="../media/6-deploy-bundle-databricks-cli.png":::
 
@@ -35,13 +35,13 @@ This output confirms the **bundle name**, **target environment**, and **workspac
 
 ## Preview deployment changes
 
-After validation, you can **preview exactly what the deployment will create, update, or remove** without making actual changes. The `bundle plan` command builds your bundle and displays the planned actions.
+After validation, you can **preview the resources that the deployment creates, updates, or removes** without making actual changes. The `bundle plan` command builds your bundle and displays the planned actions.
 
 ```bash
 databricks bundle plan
 ```
 
-The output shows what resources will be affected:
+The output lists the resources that the deployment affects:
 
 ```output
 Building python_artifact...
@@ -76,7 +76,7 @@ During deployment, the CLI **tracks which resources it creates** by storing stat
 - **Removed resources** that no longer appear in your configuration are deleted from the workspace
 
 > [!IMPORTANT]
-> Each bundle deployment has a unique identity based on the bundle name, target name, and the deploying user's identity. If multiple team members deploy the same bundle to the same target, their deployments will conflict. Coordinate with your team to establish who deploys to shared environments.
+> Each bundle deployment has a unique identity based on the bundle name, target name, and the deploying user's identity. If multiple team members deploy the same bundle to the same target, their deployments conflict. Coordinate with your team to establish who deploys to shared environments.
 
 For automated deployments in **CI/CD pipelines**, add the `--auto-approve` flag to skip confirmation prompts:
 
@@ -128,13 +128,13 @@ Even with careful preparation, deployments sometimes encounter problems. Here ar
 databricks auth login --host https://adb-1234567890123456.7.azuredatabricks.net
 ```
 
-**Lock conflicts**: When a deployment is in progress, Azure Databricks acquires a **lock** to prevent concurrent modifications. If a previous deployment was interrupted, you might see lock errors. Use the `--force-lock` flag to override.
+**Lock conflicts**: When a deployment is in progress, the Databricks CLI acquires a **lock** to prevent concurrent modifications. If a previous deployment was interrupted and left a stale lock, you might see lock errors. Use the `--force-lock` flag to override the lock, and only when you're sure no other deployment is running.
 
 ```bash
 databricks bundle deploy --force-lock
 ```
 
-**Active run conflicts**: If jobs or pipelines from your bundle are **currently running**, deployment fails by default to prevent disruption. You can choose to fail explicitly with the `--fail-on-active-runs` flag, or handle running resources in your deployment strategy.
+**Active run conflicts**: If jobs or pipelines from your bundle are **currently running**, a deployment can disrupt them. Add the `--fail-on-active-runs` flag to make the deployment fail when it finds active runs, or handle running resources in your deployment strategy.
 
 **Validation warnings**: If `bundle validate` reports warnings about unknown properties, your configuration might reference features not available in your current CLI version or workspace. Update your CLI or review the property names against the current schema.
 
