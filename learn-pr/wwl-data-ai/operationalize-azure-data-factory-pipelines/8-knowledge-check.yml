@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/15/2026
+  ms.date: 10/12/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -21,11 +21,11 @@ quiz:
       explanation: "Incorrect. Azure Data Factory doesn't integrate with Team Foundation Server."
     - content: "Source Safe."
       isCorrect: false
-      explanation: "Incorrect. Source Safe doesn't integrate with Team Foundation Server."
+      explanation: "Incorrect. Azure Data Factory doesn't integrate with Source Safe."
     - content: "Git repositories."
       isCorrect: true
-      explanation: "Correct. Azure Data Factory allows you to configure a Git repository with either Azure Repos or GitHub, and is a version control system that allows for easier change tracking and collaboration."
-  - content: "Which feature commits the changes of Azure Data Factory work in a custom branch created with the main branch in a Git repository?"
+      explanation: "Correct. Azure Data Factory lets you configure a Git repository with either Azure Repos or GitHub. Git is a version control system that allows for easier change tracking and collaboration."
+  - content: "Which feature do you use to get changes from a feature branch reviewed and merged into the collaboration branch of a Git repository?"
     choices:
     - content: "Repo."
       isCorrect: false
@@ -35,15 +35,15 @@ quiz:
       explanation: "Correct. After a developer is satisfied with their changes, they create a pull request from their feature branch to the main or collaboration branch to get their changes reviewed by peers."
     - content: "Commit."
       isCorrect: false
-      explanation: "Incorrect. A commit is an aspect of working with a Git repository that will commit the work that you do to the repository that you're working on."
+      explanation: "Incorrect. A commit saves your work to the repository you're working on. It doesn't request a review or merge changes into the collaboration branch."
   - content: "Which feature in alerts can be used to determine how an alert is fired?"
     choices:
     - content: "Add rule."
       isCorrect: false
-      explanation: "Incorrect. A rule is the main definition of the alert that includes a rule name and description."
+      explanation: "Incorrect. A rule is the main definition of the alert. You specify the rule name and severity, but the criteria determine when the alert fires."
     - content: "Add severity."
       isCorrect: false
-      explanation: "Incorrect. Severity is a mandatory field in the Alert window that enables you to assign the severity level of the alert being defined."
+      explanation: "Incorrect. Severity assigns the severity level of the alert being defined. It doesn't determine when the alert fires."
     - content: "Add criteria."
       isCorrect: true
-      explanation: "Correct. The add criteria feature enables you to determine how an alert is fired"
+      explanation: "Correct. The alert criteria determine the metric condition that fires the alert."

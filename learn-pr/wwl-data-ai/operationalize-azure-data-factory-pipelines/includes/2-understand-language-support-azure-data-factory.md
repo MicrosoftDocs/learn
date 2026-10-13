@@ -1,6 +1,6 @@
 While most Azure Data Factory users develop using the user interface, Azure Data Factory is available in a variety of software development kits (SDKs) for anyone who wishes to develop programmatically. When using an SDK, a user works directly against the Azure Data Factory service and all updates are immediately applied to the factory. 
 
-There are Azure Data Factory libraries for Python that enables you to perform the management of the service.
+Azure Data Factory libraries for Python enable you to manage the service.
 
 To use the Python SDK, install the following packages:
 
@@ -10,7 +10,7 @@ pip install azure-mgmt-datafactory
 pip install azure-identity
 ```
 
-Python 3.9 or later is required to use these packages. From there you can perform a range of activities, such as creating Azure Data Factory in your subscription on the East US region, as shown in the following code.
+These packages require a supported version of Python 3. From there you can perform a range of activities, such as creating a data factory in your subscription in the East US region, as shown in the following code.
 
 ```Python
 from azure.identity import DefaultAzureCredential
@@ -21,21 +21,19 @@ import time
 
 #Create a data factory
 subscription_id = '<Specify your Azure Subscription ID>'
+rg_name = '<Specify your resource group name>'
+df_name = '<Specify your data factory name>'
 credentials = DefaultAzureCredential()
 adf_client = DataFactoryManagementClient(credentials, subscription_id)
 
-rg_params = {'location':'eastus'}
-df_params = {'location':'eastus'}  
-
 df_resource = Factory(location='eastus')
 df = adf_client.factories.create_or_update(rg_name, df_name, df_resource)
-print_item(df)
 while df.provisioning_state != 'Succeeded':
     df = adf_client.factories.get(rg_name, df_name)
     time.sleep(1)
 ```
 
-In addition to Python, you can also programmatically interact with Azure Data Factory with the other languages and SDKs as listed:
+In addition to Python, you can also programmatically interact with Azure Data Factory with the following languages, SDKs, and tools:
 
 - .NET
 - REST APIs

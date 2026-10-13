@@ -5,7 +5,7 @@ By default, the Azure Data Factory user interface experience (UX) authors direct
 - The Data Factory service doesn't include a repository for storing the JSON entities for your changes. The only way to save changes is via the **Publish All** button and all changes are published directly to the data factory service.
 - The Data Factory service isn't optimized for collaboration and version control.
 
-To provide a better authoring experience, Azure Data Factory allows you to configure a Git repository with either Azure Repos or GitHub. Git is a version control system that allows for easier change tracking and collaboration. This article outlines how to configure and work in a git repository along with highlighting best practices and a troubleshooting guide.
+To provide a better authoring experience, Azure Data Factory allows you to configure a Git repository with either Azure Repos or GitHub. Git is a version control system that allows for easier change tracking and collaboration. This unit outlines how to configure and work in a git repository along with highlighting best practices and a troubleshooting guide.
 
 > [!NOTE]
 > Authoring directly with the Data Factory service is disabled in the Azure Data Factory UX when a Git repository is configured. Changes made via PowerShell or an SDK are published directly to the Data Factory service, and aren't entered into Git.
@@ -15,7 +15,7 @@ To provide a better authoring experience, Azure Data Factory allows you to confi
 
 Below is a list of some of the advantages git integration provides to the authoring experience:
 
--   **Source control:** As your data factory workloads become crucial, you would want to integrate your factory with Git to leverage several source control benefits like the following:
+-   **Source control:** As your data factory workloads become crucial, you would want to integrate your factory with Git to apply several source control benefits like the following:
     -   Ability to track/audit changes.
     -   Ability to revert changes that introduced bugs.
 -   **Partial saves:** When authoring against the data factory service, you can't save changes as a draft, and all publishes must pass data factory validation. Whether your pipelines aren't finished or you simply don't want to lose changes if your computer crashes, git integration allows for incremental changes of data factory resources regardless of what state they are in. Configuring a git repository allows you to save changes, letting you only publish when you have tested your changes to your satisfaction.
@@ -31,19 +31,19 @@ There are four different ways to connect a Git repository to your data factory f
 
 ### Configuration method 1: Home page
 
-In the Azure Data Factory home page, select **Set up Code Repository**.
+In the Azure Data Factory home page, select **Set up code repository** at the top.
 
 ![Screenshot of the Azure Data Factory home page showing the Set up Code Repository option.](../media/configure-repo.png)
 
 ### Configuration method 2: Authoring canvas
 
-In the Azure Data Factory UX authoring canvas, select the **Data Factory** drop-down menu, and then select **Set up Code Repository**.
+In the Azure Data Factory UX authoring canvas, select the **Data Factory** drop-down menu, and then select **Set up code repository**.
 
 ![Screenshot of the Azure Data Factory authoring canvas showing the Set up Code Repository option.](../media/configure-repo-2.png)
 
 ### Configuration method 3: Management hub
 
-Go to the management hub in the Azure Data Factory UX. Select **Git configuration** in the **Source control** section. If you have no repository connected, select **Set up code repository**.
+Go to the management hub in the Azure Data Factory UX. Select **Git configuration** in the **Source control** section. If you have no repository connected, select **Configure**.
 
 ![Screenshot of the management hub showing the Git configuration option in the Source control section.](../media/configure-repo-3.png)
 
@@ -70,7 +70,7 @@ When you're ready to merge the changes from your feature branch to your collabor
 
 ### Configure publishing settings
 
-By default, data factory generates the Resource Manager templates of the published factory and saves them into a branch called `adf_publish`. To configure a custom publish branch, add a `publish_config.json` file to the root folder in the collaboration branch. When publishing, Azure Data Factory reads this file, looks for the field `publishBranch`, and saves all Resource Manager templates to the specified location. If the branch doesn't exist, data factory will automatically create it. And example of what this file looks like is below:
+By default, data factory generates the Resource Manager templates of the published factory and saves them into a branch called `adf_publish`. To configure a custom publish branch, add a `publish_config.json` file to the root folder in the collaboration branch. When publishing, Azure Data Factory reads this file, looks for the field `publishBranch`, and saves all Resource Manager templates to the specified location. If the branch doesn't exist, data factory automatically creates it. An example of what this file looks like is below:
 
 ```json
 {
@@ -106,13 +106,13 @@ Typically you don't want every team member to have permissions to update the Dat
 *   All team members should have read permissions to the Data Factory.
 *   Only a select set of people should be allowed to publish to the Data Factory. To do so, they must have the **Data Factory contributor** role on the **Resource Group** that contains the Data Factory.
 
-It's recommended to not allow direct check-ins to the collaboration branch. This restriction can help prevent bugs as every check-in will go through a pull request review process.
+It's recommended to not allow direct check-ins to the collaboration branch. This restriction can help prevent bugs as every check-in goes through a pull request review process.
 
 ### Using passwords from Azure Key Vault
 
-It's recommended to use Azure Key Vault to store any connection strings or passwords or managed identity authentication for Data Factory Linked Services. For security reasons, data factory doesn't store secrets in Git. Any changes to Linked Services containing secrets such as passwords are published immediately to the Azure Data Factory service.
+It's recommended to use Azure Key Vault to store any connection strings or passwords, or to use managed identity authentication, for Data Factory linked services. For security reasons, data factory doesn't store secrets in Git. Any changes to linked services containing secrets such as passwords are published immediately to the Azure Data Factory service.
 
-Using Key Vault or MSI authentication also makes continuous integration and deployment easier as you won't have to provide these secrets during Resource Manager template deployment.
+Using Key Vault or managed identity authentication also makes continuous integration and deployment easier because you don't have to provide these secrets during Resource Manager template deployment.
 
 ## Switch to a different Git repository
 

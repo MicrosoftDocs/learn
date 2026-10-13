@@ -1,8 +1,8 @@
 In Azure Data Factory, you can raise alerts based upon metrics outputted by the monitoring service. Alerts allow you to get alerted for various scenarios such as, but not limited to, failed pipelines, large factory sizes, and integration runtime CPU utilization.
 
-Alerts in the monitoring experience are based upon high-level metrics such as pipeline failures. For custom alerting on specific conditions that may occur within a pipeline or based upon data quality, it's recommended to configure these using a pipeline activity.
+Alerts in the monitoring experience are based on metrics that the service emits, such as pipeline failures.
 
-To get started, go to the **Monitor** tab and select **Alerts & metrics**.
+To get started, select **Monitor** > **Alerts & metrics** in Azure Data Factory Studio.
 
 ## Create an alert
 
@@ -40,6 +40,6 @@ To get started, go to the **Monitor** tab and select **Alerts & metrics**.
 
     ![Screenshot of the Create alert rule button and alert summary.](../media/create-alert-rule.png)
 
-Once you create an alert, you'll get notified if the metric conditions are met.
+Once you create an alert, you get notified if the metric conditions are met.
 
 If you have integrated your data factory with Log Analytics, you can use Azure Monitor to send alerts as well.
