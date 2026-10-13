@@ -1,12 +1,12 @@
 ## Transforming data with the Mapping Data Flow
 
-You can natively perform data transformations with Azure Data Factory code free using the Mapping Data Flow task. Mapping Data Flows provide a fully visual experience with no coding required. Your data flows run on your own execution cluster for scaled-out data processing. Data flow activities can be operationalized via existing Data Factory scheduling, control, flow, and monitoring capabilities.
+You can natively perform data transformations with Azure Data Factory code free using the Mapping Data Flow task. Mapping Data Flows provide a fully visual experience with no coding required. Your data flows run on Azure Data Factory-managed execution clusters for scaled-out data processing. Data flow activities can be operationalized via existing Data Factory scheduling, control, flow, and monitoring capabilities.
 
-When building data flows, you can enable debug mode, which turns on a small interactive Spark cluster. Turn on debug mode by toggling the slider at the top of the authoring module. Debug clusters take a few minutes to warm up, but can be used to interactively preview the output of your transformation logic.
+When building data flows, you can enable debug mode, which turns on a small interactive Spark cluster. Turn on debug mode by toggling the slider at the top of the authoring canvas. Debug clusters take a few minutes to warm up, but can be used to interactively preview the output of your transformation logic.
 
 ![Screenshot that shows the control flow within the pipeline designer canvas.](../media/control-flow.png)
 
-With the Mapping Data Flow added, and the Spark cluster running, this enables you to perform the transformation, and run and preview the data. No coding is required as Azure Data Factory handles the code translation, path optimization, and execution of your data flow jobs.
+With the Mapping Data Flow added, and the Spark cluster running, you can perform the transformation, and run and preview the data. No coding is required as Azure Data Factory handles the code translation, path optimization, and execution of your data flow jobs.
 
 ## Adding source data to the Mapping Data Flow
 
@@ -19,16 +19,16 @@ There are a couple of points to note:
 - If your dataset is pointing at a folder with other files and you only want to use one file, you may need to create another dataset or utilize parameterization to make sure only a specific file is read
 - If you haven't imported your schema in your ADLS, but have already ingested your data, go to the dataset's 'Schema' tab and select 'Import schema' so that your data flow knows the schema projection.
 
-Mapping Data Flow follows an extract, load, transform (ELT) approach and works with staging datasets that are all in Azure. Currently the following datasets can be used in a source transformation:
+Mapping Data Flow follows an extract, load, transform (ELT) approach and works with staging datasets that are all in Azure. The following sources are some of the datasets that can be used in a source transformation:
 
-- Azure Blob Storage (JSON, Avro, Text, Parquet)
-- Azure Data Lake Storage Gen1 (JSON, Avro, Text, Parquet)
-- Azure Data Lake Storage Gen2 (JSON, Avro, Text, Parquet)
+- Azure Blob Storage (for example, Avro, delimited text, Delta, Excel, JSON, ORC, Parquet, and XML)
+- Azure Data Lake Storage Gen2 (for example, Avro, delimited text, Delta, Excel, JSON, ORC, Parquet, and XML)
 - Azure Synapse Analytics
 - Azure SQL Database
-- Azure Cosmos DB
+- Azure SQL Managed Instance
+- Azure Cosmos DB for NoSQL
 
-Azure Data Factory has access to over 80 native connectors. To include data from those other sources in your data flow, use the Copy Activity to load that data into one of the supported staging areas.
+For the complete list of supported sources, see [Source transformation in mapping data flows](/azure/data-factory/data-flow-source#supported-source-types). Azure Data Factory has access to more than 90 native connectors. To include data from those other sources in your data flow, use the Copy Activity to load that data into one of the supported staging areas.
 
 Once your debug cluster is warmed up, verify your data is loaded correctly via the Data Preview tab. Once you select the refresh button, Mapping Data Flow shows a snapshot of what your data looks like when it is at each transformation. 
 
@@ -41,26 +41,26 @@ Now that you have moved the data into Azure Data Lake Store Gen2, you're ready t
   
 The main tasks for this are as follows:
 
-1. Preparing the environment
+- Preparing the environment
 
-1. Adding a Data Source
+- Adding a data source
 
-1. Using Mapping Data Flow transformation
+- Using mapping data flow transformations
 
-1. Writing to a Data Sink
+- Writing to a data sink
 
 ### Task 1: Preparing the environment
 
-1. **Turn on Data Flow Debug** Turn the **Data Flow Debug** slider located at the top of the authoring module on. 
+1. **Turn on Data Flow Debug** Turn the **Data Flow Debug** slider located at the top of the authoring canvas on. 
 
     > [!NOTE]
     > Data Flow clusters take 5-7 minutes to warm up.
 
-1. **Add a Data Flow activity**. In the Activities pane, open the Move and Transform accordion and drag the **Data Flow** activity onto the pipeline canvas. In the blade that pops up, select **Create new Data Flow** and select **Mapping Data Flow** and then select **OK**. Select the  **pipeline1** tab and drag the green box from your Copy activity to the Data Flow Activity to create an on success condition. You'll see the following in the canvas:
+1. **Add a Data Flow activity**. In the Activities pane, open the Move and Transform accordion and drag the **Data Flow** activity onto the pipeline canvas. Drag the green box from your Copy activity to the Data Flow activity to create an on success condition. In the **Settings** tab of the Data Flow activity, select **New** next to the data flow field to create the mapping data flow. You see the following in the canvas:
 
     ![Screenshot that shows a Mapping Data Flow activity added to the pipeline canvas.](../media/add-mapping-data-flow.png)
 
-### Task 2: Adding a Data Source
+### Task 2: Add a data source
 
 1. **Add an ADLS source**. Double-select the Mapping Data Flow object in the canvas. Select the Add Source button in the Data Flow canvas. In the **Source dataset** dropdown, select your **ADLSG2** dataset used in your Copy activity
 
@@ -72,7 +72,7 @@ The main tasks for this are as follows:
 
     Once your debug cluster is warmed up, verify your data is loaded correctly via the Data Preview tab. Once you select the refresh button, Mapping Data Flow shows a snapshot of what your data looks like when it is at each transformation.
   
-### Task 3: Using Mapping Data Flow transformation
+### Task 3: Use mapping data flow transformations
 
 1. **Add a Select transformation to rename and drop a column**. In the preview of the data, you may have noticed that the "Rotton Tomatoes" column is misspelled. To correctly name it and drop the unused Rating column, you can add a [Select transformation](/azure/data-factory/data-flow-select) by selecting the + icon next to your ADLS source node and choosing Select under Schema modifier.
     
@@ -82,7 +82,7 @@ The main tasks for this are as follows:
 
     ![Screenshot that shows the Select transformation configured to rename the Rotton Tomatoes column.](../media/select-transformation.png)
 
-1. **Add a Filter Transformation to filter out unwanted years**. Say you're only interested in movies made after 1951. You can add a [Filter transformation](/azure/data-factory/data-flow-filter) to specify a filter condition by selecting the **+ icon** next to your Select transformation and choosing **Filter** under Row Modifier. Select the **expression box** to open up the [Expression builder](/azure/data-factory/concepts-data-flow-expression-builder) and enter in your filter condition. Using the syntax of the [Mapping Data Flow expression language](/azure/data-factory/data-flow-expression-functions), **toInteger(year) > 1950** will convert the string year value to an integer and filter rows if that value is above 1950.
+1. **Add a Filter Transformation to filter out unwanted years**. Say you're only interested in movies made after 1951. You can add a [Filter transformation](/azure/data-factory/data-flow-filter) to specify a filter condition by selecting the **+ icon** next to your Select transformation and choosing **Filter** under Row Modifier. Select the **expression box** to open up the [Expression builder](/azure/data-factory/concepts-data-flow-expression-builder) and enter in your filter condition. Using the syntax of the [Mapping Data Flow expression language](/azure/data-factory/data-flow-expression-functions), **toInteger(year) > 1950** converts the string year value to an integer and keeps rows where that value is above 1950.
 
     ![Screenshot that shows the Filter transformation configured with the year condition in the expression builder.](../media/filter-transformation.png)
 
@@ -98,7 +98,7 @@ The main tasks for this are as follows:
     In this scenario, you're trying to extract the first genre from the genres column, which is formatted as 'genre1|genre2|...|genreN'. Use the **locate** function to get the first 1-based index of the '|' in the genres string. Using the **iif** function, if this index is greater than 1, the primary genre can be calculated via the **left** function, which returns all characters in a string to the left of an index. Otherwise, the PrimaryGenre value is equal to the genres field. You can verify the output via the expression builder's Data preview pane.
 
    
-1. **Rank movies via a Window Transformation**. Say you're interested in how a movie ranks within its year for its specific genre. You can add a [Window transformation](/azure/data-factory/data-flow-window) to define window-based aggregations by selecting the **+ icon** next to your Derived Column transformation and selecting Window under Schema modifier. To accomplish this, specify what you are windowing over, what you are sorting by, what the range is, and how to calculate your new window columns. In this example, we'll window over PrimaryGenre and year with an unbounded range, sort by Rotten Tomato descending, and calculate a new column called RatingsRank that's equal to the rank each movie has within its specific genre-year.
+1. **Rank movies via a Window Transformation**. Say you're interested in how a movie ranks within its year for its specific genre. You can add a [Window transformation](/azure/data-factory/data-flow-window) to define window-based aggregations by selecting the **+ icon** next to your Derived Column transformation and selecting Window under Schema modifier. To accomplish this, specify what you are windowing over, what you are sorting by, what the range is, and how to calculate your new window columns. In this example, window over PrimaryGenre and year with an unbounded range, sort by Rotten Tomato descending, and calculate a new column called RatingsRank that's equal to the rank each movie has within its specific genre-year.
 
     ![Screenshot that shows the Window transformation Over settings with PrimaryGenre and year selected.](../media/window-over.png)
 
@@ -108,24 +108,24 @@ The main tasks for this are as follows:
 
     ![Screenshot that shows the Window transformation defining the RatingsRank column.](../media/window-rank.png)
 
-1. **Aggregate ratings with an Aggregate Transformation**. Now that you have gathered and derived all your required data, we can add an [Aggregate transformation](/azure/data-factory/data-flow-aggregate) to calculate metrics based on a desired group by selecting the **+ icon** next to your Window transformation and selecting Aggregate under Schema modifier. As you did in the window transformation, lets group movies by PrimaryGenre and year
+1. **Aggregate ratings with an Aggregate Transformation**. Now that you have gathered and derived all your required data, add an [Aggregate transformation](/azure/data-factory/data-flow-aggregate) to calculate metrics based on a desired group by selecting the **+ icon** next to your Window transformation and selecting Aggregate under Schema modifier. As you did in the window transformation, group movies by PrimaryGenre and year
 
     ![Screenshot that shows the Aggregate transformation added to the Mapping Data Flow.](../media/use-aggregate-transformation.png)
 
-    In the Aggregates tab, you can create aggregates calculated over the specified group by columns. For every genre and year, let's get the average Rotten Tomatoes rating, the highest and lowest rated movie (utilizing the windowing function), and the number of movies that are in each group. Aggregation significantly reduces the number of rows in your transformation stream and only propagates the group by and aggregate columns specified in the transformation.
+    In the Aggregates tab, you can create aggregates calculated over the specified group by columns. For every genre and year, get the average Rotten Tomatoes rating, the highest and lowest rated movie (utilizing the windowing function), and the number of movies that are in each group. Aggregation significantly reduces the number of rows in your transformation stream and only propagates the group by and aggregate columns specified in the transformation.
 
     ![Screenshot that shows the Aggregate transformation configured with group by columns and aggregate expressions.](../media/configure-aggregate-transformation.png)
 
     * To see how the aggregate transformation changes your data, use the Data Preview tab.
    
 
-1. **Specify Upsert condition via an Alter Row Transformation**. If you're writing to a tabular sink, you can specify insert, delete, update, and upsert policies on rows using the [Alter Row transformation](/azure/data-factory/data-flow-alter-row) by selecting the + icon next to your Aggregate transformation and selecting Alter Row under Row modifier. Since you're always inserting and updating, you can specify that all rows will always be upserted.
+1. **Specify Upsert condition via an Alter Row Transformation**. If you're writing to a tabular sink, you can specify insert, delete, update, and upsert policies on rows using the [Alter Row transformation](/azure/data-factory/data-flow-alter-row) by selecting the + icon next to your Aggregate transformation and selecting Alter Row under Row modifier. Since you're always inserting and updating, you can specify that all rows are always upserted.
 
     ![Screenshot that shows the Alter Row transformation configured with an upsert condition.](../media/alter-row-transformation.png)
 
     
 
-### Task 4: Writing to a Data Sink
+### Task 4: Write to a data sink
 
 1. **Write to a Azure Synapse Analytics Sink**. Now that you have finished all your transformation logic, you're ready to write to a Sink.
     1. Add a **Sink** by selecting the **+ icon** next to your Upsert transformation and selecting Sink under Destination.
@@ -147,7 +147,7 @@ At this point, you have finished building your eight transformation Mapping Data
 
 [![Screenshot that shows the completed Mapping Data Flow with all eight transformations connected.](../media/completed-mapping-data-flow.png)](../media/completed-mapping-data-flow.png#lightbox)
 
-## Task 5: Running the Pipeline
+## Task 5: Run the pipeline
 
 1. Go to the pipeline1 tab in the canvas. Because Azure Synapse Analytics in Data Flow uses [PolyBase](/sql/relational-databases/polybase/polybase-guide), you must specify a blob or ADLS staging folder. In the Execute Data Flow activity's settings tab, open up the PolyBase accordion and select your ADLS linked service and specify a staging folder path.
 
@@ -157,6 +157,6 @@ At this point, you have finished building your eight transformation Mapping Data
 
 1. Once both activities succeed, you can select the eyeglasses icon next to the Data Flow activity to get a more in depth look at the Data Flow run.
 
-1. If you used the same logic described in this lab, your Data Flow writes 737 rows to your SQL DW. You can go into [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) to verify the pipeline worked correctly and see what got written.
+1. If you used the same logic described in this lab, your Data Flow writes the aggregated rows to your Azure Synapse Analytics table. You can go into [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) to verify the pipeline worked correctly and see what got written.
 
     ![Screenshot that shows the query results displayed in SQL Server Management Studio.](../media/query-results.png)
