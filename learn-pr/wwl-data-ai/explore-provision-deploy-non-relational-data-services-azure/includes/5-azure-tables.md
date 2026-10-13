@@ -12,7 +12,7 @@
 **Azure Table Storage** is a **NoSQL** storage solution that makes use of tables containing **key/value** data items. Each item is represented by a row that contains columns for the data fields that need to be stored.
 
 > [!NOTE]
-> The concepts in this unit also apply to **Azure Cosmos DB for Table**, a newer service that stores data in the same key/value format but adds greater performance and global availability. For new workloads, Azure Cosmos DB for Table is the recommended choice.
+> The concepts in this unit also apply to **Azure Cosmos DB for Table**, a newer service that stores data in the same key/value format and offers higher performance and availability, global distribution, and automatic secondary indexes.
 
 However, don't be misled into thinking that an Azure Table Storage table is like a table in a relational database. An Azure Table enables you to store semi-structured data. All rows in a table must have a unique key (composed of a **partition key** and a **row key**), and when you modify data in a table, a **timestamp** column records the date and time the modification was made; but other than that, the columns in each row can vary. Azure Table Storage tables have no concept of foreign keys, relationships, stored procedures, views, or other objects you might find in a relational database. 
 
