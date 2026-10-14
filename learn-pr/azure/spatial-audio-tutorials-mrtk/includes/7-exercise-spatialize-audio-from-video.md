@@ -2,8 +2,6 @@ In this unit, you'll learn how to spatialize audio from a video source and test 
 
 ## Import a video and add a video player to the scene
 
-For this unit, you can use [this video](https://github.com/microsoft/spatialaudio-unity/blob/develop/Samples/MicrosoftSpatializerSample/Assets/Microsoft%20HoloLens%20-%20Spatial%20Sound-PTPvx7mDon4.mp4?raw=true) from the spatial audio sample project.
-
 1. To import the video into the unity project, select **Assets** > **Import New Asset** in the Unity menu.
 
     :::image type="content" source="../media/import-asset.png" alt-text="Screenshot of Importing Asset." lightbox="../media/import-asset.png":::

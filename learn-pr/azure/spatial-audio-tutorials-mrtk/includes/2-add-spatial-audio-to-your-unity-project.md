@@ -8,4 +8,4 @@ Processing audio using HRTF-based algorithms requires a large amount of speciali
 
 ## Microsoft spatializer
 
-Spatial sound on the HoloLens is enabled using an audio spatializer plugin. We recommend using the [Microsoft Spatializer plugin](https://github.com/microsoft/spatialaudio-unity), which you can add via the Mixed Reality Feature Tool.
+Spatial sound on the HoloLens is enabled using an audio spatializer plugin. We recommend using the Microsoft Spatializer plugin, which you can add via the Mixed Reality Feature Tool.
