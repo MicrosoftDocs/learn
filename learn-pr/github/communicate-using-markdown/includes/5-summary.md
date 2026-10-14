@@ -14,7 +14,7 @@ Here are some links to more information on the topics we discussed in this modul
 
 - [Basic writing and formatting syntax](https://docs.github.com/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax?azure-portal=true)
 - [GitHub-Flavored Markdown Spec](https://github.github.com/gfm/?azure-portal=true)
-- [Writing on GitHub](https://help.github.com/github/writing-on-github?azure-portal=true)
+- [Writing on GitHub](https://docs.github.com/get-started/writing-on-github?azure-portal=true)
 - [GitHub Markdown emojis](https://gist.github.com/rxaviers/7360908?azure-portal=true)
 - [Autolinked references and URLs](https://docs.github.com/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls?azure-portal=true)
 

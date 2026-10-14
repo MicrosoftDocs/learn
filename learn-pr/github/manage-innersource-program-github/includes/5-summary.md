@@ -20,7 +20,7 @@ Now that you have an InnerSource program together, learn to [Create an open-sour
 Here are some links to more information on the subjects we discussed in this module.
 
 - [An introduction to InnerSource](https://resources.github.com/whitepapers/introduction-to-innersource?azure-portal=true)
-- [Types of GitHub accounts](https://help.github.com/github/getting-started-with-github/types-of-github-accounts?azure-portal=true)
+- [Types of GitHub accounts](https://docs.github.com/get-started/learning-about-github/types-of-github-accounts?azure-portal=true)
 - [Setting base permissions for an organization](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/setting-base-permissions-for-an-organization?azure-portal=true)
 - [Managing access to your organization's repositories](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/managing-access-to-your-organizations-repositories?azure-portal=true)
 - [Git branching strategy](/azure/devops/repos/git/git-branching-guidance?azure-portal=true)
