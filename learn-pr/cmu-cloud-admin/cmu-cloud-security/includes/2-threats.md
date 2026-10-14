@@ -66,7 +66,7 @@ Malicious individuals may be capable of leveraging vulnerable aspects of the pub
 
 ### References
 
-1. _Cybersecurity Insiders (2019). *Cloud Security Report*. <https://crowdresearchpartners.com/2019-cloud-security-report/>._
+1. _Cybersecurity Insiders (2019). *Cloud Security Report*. <https://cdn.prod.website-files.com/609ce44d3dfdab98b5019cf9/615adb8780ab669449d869bd_CloudSecurityReport_TOF.pdf>._
 
 2. _Yubico. *YubiKey*. <https://www.yubico.com/products/yubikey-hardware/>._
 
@@ -74,7 +74,7 @@ Malicious individuals may be capable of leveraging vulnerable aspects of the pub
 
 4. _Cloud Security Alliance. *Cloud Security Alliance Guidance 4.0 project on GitHub*. <https://github.com/CloudSecurityAlliancePublic/CSA-Guidance/blob/master/Domain%201-%20Cloud%20Computing%20Concepts%20and%20Architectures.md>._
 
-[^1]:  <https://crowdresearchpartners.com/2019-cloud-security-report/>  "Cybersecurity Insiders (2019). *Cloud Security Report*."
+[^1]:  <https://cdn.prod.website-files.com/609ce44d3dfdab98b5019cf9/615adb8780ab669449d869bd_CloudSecurityReport_TOF.pdf>  "Cybersecurity Insiders (2019). *Cloud Security Report*."
 
 [^2]:  <https://www.yubico.com/products/yubikey-hardware/>  "Yubico. *YubiKey*."
 
