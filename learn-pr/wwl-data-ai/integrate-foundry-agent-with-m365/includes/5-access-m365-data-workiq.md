@@ -118,7 +118,7 @@ workiq accept-eula
 To use Work IQ, you need:
 
 - Node.js installed on your machine (if using the CLI locally)
-- A Microsoft 365 subscription with a Copilot license
+- A Microsoft 365 subscription with a Microsoft 365 Copilot license
 - Administrative consent for the Work IQ application in your Microsoft Entra tenant
 
 > [!IMPORTANT]
@@ -175,6 +175,6 @@ The MCP approach integrates workplace context seamlessly into your development w
 Both approaches access the same underlying data with the same permissions. Choose the CLI for scripting and quick terminal queries, or the MCP server for integrated AI assistant experiences.
 
 > [!NOTE]
-> Work IQ is currently in preview. Features and APIs may change as the product evolves.
+> Work IQ APIs reached general availability in June 2026. Work IQ also supports remote MCP server connections, enabling agents to securely invoke external tools and services through remote MCP-compatible endpoints.
 
 ::: zone-end

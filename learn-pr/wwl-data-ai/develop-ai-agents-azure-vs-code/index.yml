@@ -2,20 +2,20 @@
 uid: learn.wwl.develop-ai-agents-azure-vs-code
 metadata:
   title: Develop AI agents with Microsoft Foundry and Visual Studio Code
-  description: Learn how to build, test, and deploy AI agents using Microsoft Foundry Agent Service through both the Azure portal and Visual Studio Code extension.
+  description: Learn how to build, test, and deploy AI agents using Microsoft Foundry Agent Service through both the Azure portal and the Foundry Toolkit for Visual Studio Code.
   author: ivorb
   ms.author: berryivor
-  ms.date: 5/1/2026
+  ms.date: 10/16/2026
   ms.service: microsoft-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-generated
 title: Develop AI agents with Microsoft Foundry and Visual Studio Code
-summary: Learn how to build, test, and deploy AI agents using Microsoft Foundry Agent Service through both the Azure portal and Visual Studio Code extension.
+summary: Learn how to build, test, and deploy AI agents using Microsoft Foundry Agent Service through both the Azure portal and the Foundry Toolkit for Visual Studio Code.
 abstract: |
   By the end of this module, you'll be able to:
   - Describe the purpose and capabilities of AI agents
   - Explain the key features of Microsoft Foundry Agent Service
-  - Set up and configure the Microsoft Foundry extension in Visual Studio Code
+  - Set up and configure the Foundry Toolkit in Visual Studio Code
   - Build and configure AI agents using multiple development approaches
   - Extend agent capabilities with tools and functions
   - Test agents using integrated playgrounds

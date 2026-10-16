@@ -4,8 +4,8 @@ title: Set up Visual Studio Code for agent development
 metadata:
   zone_pivot_groups: video-or-text
   title: Set Up Visual Studio Code for Agent Development
-  description: Learn how to install and configure the Microsoft Foundry extension for Visual Studio Code.
-  ms.date: 5/1/2026
+  description: Learn how to install and configure the Foundry Toolkit for Visual Studio Code.
+  ms.date: 10/16/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

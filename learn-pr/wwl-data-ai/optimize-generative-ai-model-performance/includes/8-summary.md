@@ -28,10 +28,10 @@ For the travel agency scenario, the most effective solution might combine all th
 
 For more information about the topics discussed in this module, see the following resources:
 
-- [Getting started with customizing a large language model (LLM)](/azure/ai-foundry/openai/concepts/customizing-llms)
-- [Prompt engineering techniques](/azure/ai-foundry/openai/concepts/prompt-engineering)
-- [System message design](/azure/ai-foundry/openai/concepts/advanced-prompt-engineering)
-- [Retrieval Augmented Generation in Microsoft Foundry](/azure/ai-foundry/concepts/retrieval-augmented-generation)
-- [Customize a model with fine-tuning](/azure/ai-foundry/openai/how-to/fine-tuning)
-- [Microsoft Foundry fine-tuning considerations](/azure/ai-foundry/openai/concepts/fine-tuning-considerations)
+- [Getting started with customizing a large language model (LLM)](/azure/foundry-classic/openai/concepts/customizing-llms)
+- [Prompt engineering techniques](/azure/foundry/openai/concepts/prompt-engineering)
+- [System message design](/azure/foundry/openai/concepts/advanced-prompt-engineering)
+- [Retrieval Augmented Generation in Microsoft Foundry](/azure/foundry/concepts/retrieval-augmented-generation)
+- [Customize a model with fine-tuning](/azure/foundry/openai/how-to/fine-tuning)
+- [Microsoft Foundry fine-tuning considerations](/azure/foundry/openai/concepts/fine-tuning-considerations)
 - [Augment large language models with RAG or fine-tuning](/azure/developer/ai/augment-llm-rag-fine-tuning)

@@ -14,11 +14,17 @@ Foundry Content Safety features include:
 
 - **Moderate text** scans text across four categories: violence, hate speech, sexual content, and self-harm. A severity level from 0 to 7 is returned for each category. This level helps to prioritize what needs immediate attention by people, and how urgently. You can also create a blocklist to scan for terms specific to your situation.
 
-- **Prompt shields** is a unified API to identify and block jailbreak attacks from inputs to LLMs. It includes both user input and documents. These attacks are prompts to LLMs that attempt to bypass the model's in-built safety features. User prompts are tested to ensure the input to the LLM is safe. Documents are tested to ensure they don't contain unsafe instructions embedded within the text.
+- **Prompt shields** is a unified API to identify and block prompt injection attacks on LLMs. It detects two types of attack:
+  - *Direct attacks (jailbreaks)*: User prompts that attempt to bypass the model's in-built safety features.
+  - *Indirect attacks*: Malicious instructions hidden within documents or other external content processed by the model, which could cause unintended actions or information disclosure.
 
-- **Protected material detection** checks AI-generated text for protected text such as recipes, copyrighted song lyrics, or other original material.
+  Both user prompts and documents are analyzed to ensure inputs to the LLM are safe.
+
+- **Protected material detection** checks AI-generated text for protected text such as recipes, copyrighted song lyrics, or other original material. Protected material detection for code identifies AI-generated code that matches known code from public GitHub repositories.
 
 - **Groundedness detection** protects against inaccurate responses in AI-generated text by LLMs. Public LLMs use data available at the time they were trained. However, data can be introduced after the original training of the model or be built on private data. A grounded response is one where the model’s output is based on the source information. An ungrounded response is one where the model's output varies from the source information. Groundedness detection includes a *reasoning* option in the API response. This adds a *reasoning* field that explains any ungroundedness detection. However, reasoning increases processing time and costs.
+
+- **PII detection** identifies and redacts personally identifiable information (PII) in text, such as names, phone numbers, addresses, and financial identifiers. You can configure which entity types to detect and set confidence thresholds to control the sensitivity of detection.
 
 ## Safeguarding image content
 

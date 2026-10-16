@@ -52,7 +52,7 @@ A common approach to testing for potential harms or vulnerabilities in a softwar
 > [!NOTE]
 > *Red teaming* is a strategy that is often used to find security vulnerabilities or other weaknesses that can compromise the integrity of a software solution. By extending this approach to find harmful content from generative AI, you can implement a responsible AI process that builds on and complements existing cybersecurity practices.
 >
-> To learn more about Red Teaming for generative AI solutions, see [Introduction to red teaming large language models (LLMs)](/azure/cognitive-services/openai/concepts/red-teaming) in the Azure OpenAI Service documentation.
+> To learn more about Red Teaming for generative AI solutions, see [Introduction to red teaming large language models (LLMs)](/azure/foundry/openai/concepts/red-teaming) in the Azure OpenAI Service documentation.
 
 ## 4: Document and share details of harms
 

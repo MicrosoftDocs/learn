@@ -6,7 +6,7 @@ metadata:
   description: Summary of developing a text analysis agent with the Azure Language MCP server.
   author: ivorb
   ms.author: berryivor
-  ms.date: 03/13/2026
+  ms.date: 10/16/2026
   ms.topic: unit
   ai-usage: ai-generated
   zone_pivot_groups: video-or-text

@@ -61,10 +61,10 @@ The Microsoft Agent Framework is a lightweight development kit that you can use 
 
 ### AutoGen
 
-AutoGen is an open-source framework for developing agents rapidly. It's useful as a research and ideation tool when experimenting with agents. Note that the core concepts pioneered in AutoGen have been incorporated into Microsoft Agent Framework, which is the recommended path for production agent development going forward.
+AutoGen is an open-source framework for developing agents rapidly. It's useful as a research and ideation tool when experimenting with agents. Note that AutoGen is now in **maintenance mode** — it receives only bug fixes and security updates. The core concepts pioneered in AutoGen have been incorporated into Microsoft Agent Framework, which is the recommended path for production agent development going forward.
 
 > [!TIP]
-> For more information about AutoGen, see the **[AutoGen documentation](https://microsoft.github.io/autogen/stable/index.html)**. If you're looking to migrate from AutoGen to production-ready agent development, see the **[AutoGen to Microsoft Agent Framework migration guide](https://learn.microsoft.com/agent-framework/migration-guide/from-autogen/)**.
+> For more information about AutoGen, see the **[AutoGen documentation](https://microsoft.github.io/autogen/stable/index.html)**. If you're looking to migrate from AutoGen to production-ready agent development, see the **[AutoGen to Microsoft Agent Framework migration guide](/agent-framework/migration-guide/from-autogen/)**.
 
 ### Microsoft 365 agents SDK
 

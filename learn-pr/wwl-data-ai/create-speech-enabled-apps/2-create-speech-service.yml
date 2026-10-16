@@ -6,7 +6,7 @@ metadata:
   description: Azure Speech in Foundry Tools is accessed through a Microsoft Foundry resource.
   author: ivorb
   ms.author: berryivor
-  ms.date: 03/10/2026
+  ms.date: 10/16/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

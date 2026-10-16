@@ -46,4 +46,8 @@ Video accounts for a large volume of the data captured today, and you can use Co
 
 ![Screenshot of an video file being analyzed by Content Understanding.](../media/video-analysis.png)
 
+### Bring Your Own Model
+
+Content Understanding supports a *Bring Your Own Model* capability, enabling you to connect your own generative AI model deployments from Microsoft Foundry for use in custom analyzers. This provides flexibility to optimize for specific quality, latency, or cost requirements.
+
 ::: zone-end

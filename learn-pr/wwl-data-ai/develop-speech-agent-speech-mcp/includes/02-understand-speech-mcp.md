@@ -68,8 +68,8 @@ When you connect the Speech MCP server to your agent, you provide a **SAS URL** 
 To use the Azure Speech MCP server with an agent, you need:
 
 - An **Azure subscription**.
-- A **Foundry resource and project** — you need Contributor or Owner role on the resource group. Your Foundry resource includes speech capabilities.
-- An **Azure Storage account** with a blob container for storing audio files.
+- A **Foundry resource and project** in a supported region — you need Contributor or Owner role on the resource group. Your Foundry resource includes speech capabilities. If the Speech MCP tool doesn't appear in the catalog, verify that your resource is in a supported region.
+- An **Azure Storage account** with a blob container for storing audio files. Your account needs the **Storage Blob Data Contributor** role assigned.
 - A **SAS URL** for the blob container with read, write, add, create, and list permissions.
 
 ## Security considerations
