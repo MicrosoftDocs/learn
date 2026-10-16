@@ -3,7 +3,7 @@ uid: learn.devrel.website-application-virtual-directory
 metadata:
   ms.author: orthomas
   author: Orin-Thomas
-  ms.date: 03/26/2026
+  ms.date: 10/13/2026
   title: Configure Internet Information Services Websites and Applications
   description: Learn to configure Internet Information Services (IIS) websites and applications on Windows Server.
   ms.topic: module
