@@ -5,7 +5,7 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Understand Foundry agent publishing options
   description: Learn about the different channels and approaches for publishing Microsoft Foundry agents, including Microsoft 365, web applications, APIs, and third-party platforms.
-  ms.date: 5/29/2026
+  ms.date: 10/16/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

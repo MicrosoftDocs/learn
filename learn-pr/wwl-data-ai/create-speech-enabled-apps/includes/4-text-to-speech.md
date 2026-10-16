@@ -16,9 +16,9 @@ As with speech recognition, in practice most interactive speech-enabled applicat
 
 The pattern for implementing speech synthesis is similar to that of speech recognition:
 
-:::image type="content" source="../media/text-to-speech.png" alt-text="A diagram showing how a SpeechSynthesizer object is created from a SpeechConfig and AudioConfig, and its SpeakTextAsync method is used to call the Speech API.":::
+:::image type="content" source="../media/text-to-speech.png" alt-text="Diagram showing a SpeechSynthesizer created from a SpeechConfig and AudioConfig, and SpeakTextAsync calling the Speech API.":::
 
-1. Use a **SpeechConfig** object to encapsulate the information required to connect to your Azure Speech resource. Specifically, its **location** and **key**.
+1. Use a **SpeechConfig** object to encapsulate the information required to connect to your Foundry resource. Specifically, its **endpoint** (or **region**) and **key**.
 1. Optionally, use an **AudioConfig** to define the output device for the speech to be synthesized. By default, this is the default system speaker, but you can also specify an audio file, or by explicitly setting this value to a null value, you can process the audio stream object that is returned directly.
 1. Use the **SpeechConfig** and **AudioConfig** to create a **SpeechSynthesizer** object. This object is a proxy client for the **Text to speech** API.
 1. Use the methods of the **SpeechSynthesizer** object to call the underlying API functions. For example, the **SpeakTextAsync()** method uses the Azure Speech service to convert text to spoken audio.
@@ -49,12 +49,12 @@ speech_synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config,
 text = "My voice is my password!"
 speech_synthesis_result = speech_synthesizer.speak_text_async(text).get()
 
-# Did it succeeed?
+# Did it succeed?
 if speech_synthesis_result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
     # Yes!
     print("Speech synthesized for text [{}]".format(text))
 elif speech_synthesis_result.reason == speechsdk.ResultReason.Canceled:
-    # No - Ty to find out why not
+    # No - Try to find out why not
     cancellation_details = speech_synthesis_result.cancellation_details
     print("Speech synthesis canceled: {}".format(cancellation_details.reason))
     if cancellation_details.reason == speechsdk.CancellationReason.Error:

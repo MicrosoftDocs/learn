@@ -78,7 +78,7 @@ Azure AI Search supports several search techniques:
 - **Vector search**: Uses embeddings to find semantically similar content.
 - **Hybrid search**: Combines keyword, semantic, and vector search for the most accurate results. Hybrid search is recommended for generative AI applications.
 
-## Implement RAG with the Azure AI Foundry SDK
+## Implement RAG with the Microsoft Foundry SDK
 
 After you create an Azure AI Search index, you can connect it to a model through your Microsoft Foundry project. The `azure-ai-projects` SDK lets you get an authenticated OpenAI client and use the Responses API to generate grounded answers.
 

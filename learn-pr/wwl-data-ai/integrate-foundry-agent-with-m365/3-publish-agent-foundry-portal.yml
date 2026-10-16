@@ -5,7 +5,7 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Publish an agent from Foundry portal to Teams
   description: Learn the step-by-step process to publish a Microsoft Foundry agent to Microsoft Teams and Microsoft 365 Copilot.
-  ms.date: 5/29/2026
+  ms.date: 10/16/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

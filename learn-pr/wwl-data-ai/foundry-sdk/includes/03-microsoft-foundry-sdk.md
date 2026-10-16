@@ -34,11 +34,11 @@ The Microsoft Foundry SDK provides programmatic access to resources in your proj
 To use the Azure AI Projects library in Python, install the **azure-ai-projects** package from PyPI along with supporting packages:
 
 ```bash
-pip install azure-ai-projects azure-identity openai
+pip install azure-ai-projects
 ```
 
 > [!NOTE]
-> When using the Foundry SDK to develop a chat application, you also need to import the OpenAI SDK package - the chat client functionality in the Foundry SDK is derived from the OpenAI SDK.
+> The **azure-ai-projects** package includes **openai** and **azure-identity** as dependencies, so they are installed automatically. When using the Foundry SDK to develop a chat application, you also need to import the OpenAI SDK package - the chat client functionality in the Foundry SDK is derived from the OpenAI SDK.
 
 ### Connecting to the project endpoint
 
@@ -66,8 +66,7 @@ project_client = AIProjectClient(
 > [!NOTE]
 > The code uses default Azure credentials to authenticate. To enable this authentication, you need to install the **azure-identity** package (shown in the installation command earlier).
 
-> [!TIP]
-> To access the project successfully, the code must run in an authenticated Azure session. For example, you can use the Azure CLI `az login` command to sign in before running the code.
+To access the project successfully, the code must run in an authenticated Azure session. For example, you can use the Azure CLI `az login` command to sign in before running the code.
 
 The project client (`AIProjectClient`) provides access to Foundry-native operations that don't have OpenAI equivalents. Use the project client to:
 
