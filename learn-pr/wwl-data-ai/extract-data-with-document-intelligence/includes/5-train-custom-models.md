@@ -16,8 +16,6 @@ When prebuilt models don't cover your specific document types, you can train cus
 
 Azure Document Intelligence offers two types of custom extraction models, plus a classification model:
 
-<!-- TODO: Add screenshot showing the custom model training workflow or labeled documents in the current Document Intelligence Studio. -->
-
 ### Custom template models
 
 Custom template models rely on a consistent visual template to extract labeled data. They work best for structured forms where the layout is static from one document instance to the next, such as questionnaires, applications, or standard government forms.
@@ -81,12 +79,12 @@ To extract form data with a custom model, call the **Analyze document** function
 string endpoint = "<endpoint>";
 string apiKey = "<apiKey>";
 AzureKeyCredential credential = new AzureKeyCredential(apiKey);
-DocumentAnalysisClient client = new DocumentAnalysisClient(new Uri(endpoint), credential);
+DocumentIntelligenceClient client = new DocumentIntelligenceClient(new Uri(endpoint), credential);
 
 string modelId = "<modelId>";
 Uri fileUri = new Uri("<fileUri>");
 
-AnalyzeDocumentOperation operation = await client.AnalyzeDocumentFromUriAsync(WaitUntil.Completed, modelId, fileUri);
+AnalyzeDocumentOperation operation = await client.AnalyzeDocumentAsync(WaitUntil.Completed, modelId, fileUri);
 AnalyzeResult result = operation.Value;
 ```
 
@@ -99,11 +97,11 @@ key = "YOUR_DOC_INTELLIGENCE_KEY"
 model_id = "YOUR_CUSTOM_BUILT_MODEL_ID"
 formUrl = "YOUR_DOCUMENT"
 
-document_analysis_client = DocumentAnalysisClient(
+document_intelligence_client = DocumentIntelligenceClient(
     endpoint=endpoint, credential=AzureKeyCredential(key)
 )
 
-task = document_analysis_client.begin_analyze_document_from_url(model_id, formUrl)
+task = document_intelligence_client.begin_analyze_document(model_id, AnalyzeDocumentRequest(url_source=formUrl))
 result = task.result()
 ```
 

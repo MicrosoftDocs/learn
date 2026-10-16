@@ -20,10 +20,10 @@ Microsoft Foundry supports several deployment types, each offering different cha
 - **Global Standard** model deployments can use any Azure region on a pay-per-token basis. They're best for general workloads, and provide the highest quota.
 - **Global Provisioned** deployments can use any Azure region, and their use is based on a reserved *provision throughput units*(PTU) basis  to provide predictable high-throughput.
 - **Global Batch** deployments can use any Azure region at a 50% discount for large asynchronous jobs within 24-hours.
-- **Data Zone Standard** deployments ensure data stays within a specific data zone on a pay-per-token basis. They're best for scenarios where EU/US data zone compliance is required.
+- **Data Zone Standard** deployments ensure data stays within a specific data zone on a pay-per-token basis. They're best for scenarios where data zone compliance is required (for example, US, EU, or APAC).
 - **Data Zone Provisioned** deployments provide predictable throughput based on reserved PTUs within a data zone.
-- **Data Zone Batch** deployments are designed for large asynchronous batch jobs within a data zone/
-- **Standard** deployments are deployed within a single region on a pay-per-token basis. They're great when you need regional data residency compliance or for low-volume scenarios.
+- **Data Zone Batch** deployments are designed for large asynchronous batch jobs within a data zone.
+- **Regional Standard** deployments are deployed within a single region on a pay-per-token basis. They're great when you need regional data residency compliance or for low-volume scenarios.
 - **Regional Provisioned** deployments provide reserved PTUs within a single region.
 - **Developer** Developer deployments use any Azure region on a pay-per-token basis and are for fine-tuned model evaluation only.
 

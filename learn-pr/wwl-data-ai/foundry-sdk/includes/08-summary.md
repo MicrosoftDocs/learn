@@ -25,7 +25,7 @@ In this module, you learned how to:
 
 For more information about the topics discussed in this module, see the following resources:
 
-- [Microsoft Foundry SDK overview](/azure/ai-foundry/how-to/develop/sdk-overview)
-- [Responses API documentation](/azure/ai-foundry/openai/how-to/responses)
+- [Microsoft Foundry SDK overview](/azure/foundry/how-to/develop/sdk-overview)
+- [Responses API documentation](/azure/foundry/openai/how-to/responses)
 - [Microsoft Foundry Discord](https://aka.ms/azureaifoundry/discord)
 - [Microsoft Foundry Developer Forum](https://aka.ms/azureaifoundry/forum)

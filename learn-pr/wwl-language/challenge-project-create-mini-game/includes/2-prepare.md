@@ -4,7 +4,6 @@ You'll be using Visual Studio Code to develop a small mini-game. Your applicatio
 
 The Starter code project for this module includes a Program.cs file with the following code features:
 
-```Output
 - The code declares the following variables:
     - Variables to determine the size of the Terminal window.
     - Variables to track the locations of the player and food.
@@ -27,7 +26,6 @@ The Starter code project for this module includes a Program.cs file with the fol
     - Code to redisplay the food after it's consumed by the player.
     - Code to terminate execution if an unsupported key is entered.
     - Code to terminate execution if the terminal was resized.
-```
 
 Your goal in this challenge is to use the existing features and create the missing features to make the game playable.
 

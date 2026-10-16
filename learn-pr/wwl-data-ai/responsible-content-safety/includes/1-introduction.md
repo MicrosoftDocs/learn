@@ -12,7 +12,7 @@ The need for improving online content safety has four main drivers:
 - **Complex content**: Advances in technology are making it easier for users to post multimodal content and videos.
 
 > [!NOTE]
-> Microsoft Foundry Content Safety replaces Azure Content Moderator, which was deprecated in February 2024 and will be retired by February 2027.
+> Microsoft Foundry Content Safety replaces Azure Content Moderator, which was deprecated in February 2024 and will be retired on 15 March 2027.
 
 In this module, you'll learn about the key features of Microsoft Foundry Content Safety, and when each might be used.
 

@@ -38,57 +38,46 @@ Microsoft Foundry supports deploying agents from the portal or Visual Studio Cod
 
 ### Deploying from Visual Studio Code
 
-1. Open your agent in the AI Toolkit
+1. Open your agent in the Foundry Toolkit
 1. Select **Save to Foundry** to push configuration changes
 1. For hosted agents, open the **+Build** menu in the developer tools and select **Deploy to Microsoft Foundry**
-1. Select your container configuration and confirm
+1. Choose a deployment method:
+   - **Code (ZIP Code Deploy)** - Packages your source code and deploys directly without a container image
+   - **Container (BYOI)** - Deploy using a pre-built container image from Azure Container Registry
+1. Select your model and confirm
 
 Both approaches keep your agent within your project workspace where team members can access and test it.
 
 ## Publishing agents to an endpoint
 
-Publishing moves an agent from your project workspace into a managed Azure resource called an **Agent Application**. This step is what makes your agent externally callable through a stable endpoint.
+When you create an agent in Microsoft Foundry, it receives a stable endpoint, its own Entra agent identity, and an agent blueprint automatically. Publishing then refers to *distributing* the agent so that external consumers and applications — including Microsoft Teams and Microsoft 365 Copilot — can call it.
 
-### What publishing creates
+### What each agent includes
 
-When you publish an agent version, Foundry creates:
+Every agent created in Foundry is provisioned with:
 
-- **Agent Application** - An Azure resource with its own invocation URL, authentication policy, and Entra agent identity.
-- **Deployment** - A running instance of a specific agent version inside the application, with start/stop lifecycle management.
+- **Stable endpoint** - A production-ready invocation URL that remains constant even as you update agent versions.
+- **Entra agent identity** - A dedicated Microsoft Entra identity with its own RBAC scope, separate from the project's shared identity.
+- **Authentication policy** - Built-in Microsoft Entra ID authentication. Callers must have the **Foundry User** role on the agent resource. API key authentication isn't supported.
 
-The key difference between deploying and publishing is scope. Deploying keeps the agent within your project. Publishing creates a dedicated endpoint that external consumers can call without needing access to your Foundry project.
+> [!IMPORTANT]
+> Each agent receives its own dedicated Entra identity. Permissions don't transfer automatically from the project identity. You must assign RBAC roles to the agent identity for any resources the agent accesses. If you skip this step, tool calls that work during development fail with authorization errors once the agent is published.
 
-### Publishing from the Foundry portal
+### Publishing to Microsoft Teams and Microsoft 365 Copilot
 
-1. In the portal, select the agent version you want to publish
-1. Select **Publish** to create the Agent Application and deployment
+From the Foundry portal, you can publish agents to Microsoft Teams and Microsoft 365 Copilot with a single step — no rebuilding required. The agent moves through a unified pipeline into the applications where users already work.
 
-### Publishing from Visual Studio Code
+### The agent endpoint
 
-1. Open the Command Palette (**Ctrl+Shift+P**) and run **Microsoft Foundry: Deploy Hosted Agent** for hosted agents
-1. Select the target workspace and container configuration
-1. Confirm and deploy
+Agents expose a stable endpoint using the Responses API protocol:
 
-After publishing, the agent appears in the **Hosted Agents (Preview)** section of the AI Toolkit extension tree view.
-
-### The Agent Application endpoint
-
-Published agents expose a stable endpoint using the Responses API protocol:
-
-`https://<foundry-resource-name>.services.ai.azure.com/api/projects/<project-name>/applications/<app-name>/protocols/openai/responses`
+`https://<foundry-resource-name>.services.ai.azure.com/api/projects/<project-name>/agents/<agent-name>/endpoint/protocols/openai/responses`
 
 This URL stays the same even as you roll out new agent versions, so downstream consumers aren't disrupted by updates.
 
-### Authentication and identity
-
-Agent Applications use Microsoft Entra ID for authentication. Callers must have the **Azure AI User** role on the Agent Application resource. API key authentication isn't supported for Agent Applications.
-
-> [!IMPORTANT]
-> When you publish an agent, it receives its own dedicated Entra identity, separate from the project's shared identity. Permissions don't transfer automatically. You must reassign RBAC roles to the new agent identity for any resources the agent accesses. If you skip this step, tool calls that work during development fail with authorization errors once the agent is published.
-
 ### Verifying the endpoint
 
-After publishing, verify the endpoint works:
+After creating and configuring your agent, verify the endpoint works:
 
 1. Get an access token:
 
@@ -96,31 +85,31 @@ After publishing, verify the endpoint works:
    az account get-access-token --resource https://ai.azure.com
    ```
 
-1. Call the Agent Application endpoint:
+1. Call the agent endpoint:
 
    ```bash
    curl -X POST \
-     "https://<foundry-resource-name>.services.ai.azure.com/api/projects/<project-name>/applications/<app-name>/protocols/openai/responses?api-version=2025-11-15-preview" \
-     -H "Authorization: Bearer <access-token>" \
+     "https://<foundry-resource-name>.services.ai.azure.com/api/projects/<project-name>/agents/<agent-name>/endpoint/protocols/openai/responses?api-version=2025-11-15-preview" \
+     -H "Authorization: ******" \
      -H "Content-Type: application/json" \
      -d '{"input":"Say hello"}'
    ```
 
-If you receive `403 Forbidden`, confirm the caller has the **Azure AI User** role on the Agent Application resource.
+If you receive `403 Forbidden`, confirm the caller has the **Foundry User** role on the agent resource.
 
-### Updating published agents
+### Updating agents
 
 To roll out a new agent version:
 
 1. Make changes in your development environment and test thoroughly
-1. In the Foundry portal, select **Publish Updates** from the Agent playground
-1. The Agent Application routes 100% of traffic to the new version automatically
+1. In the Foundry portal, save the updated agent configuration
+1. The endpoint routes traffic to the new version automatically
 
 The endpoint URL remains unchanged, so existing integrations continue working.
 
 ## Generating integration code
 
-The Microsoft Foundry VS Code extension generates sample integration code to connect your application to a published agent:
+The Foundry Toolkit for VS Code generates sample integration code to connect your application to a published agent:
 
 1. Select your deployed agent in the My Resources view
 1. Select **View Code**
@@ -144,6 +133,6 @@ Running agents in production requires attention to several operational areas:
 - **Security** - Use managed identities for authentication, apply least-privilege access, and define data retention policies.
 - **Cost management** - Monitor token usage, set response length limits, and implement rate limiting to prevent unexpected spikes.
 - **Error handling** - Implement retry logic with exponential backoff for transient failures. Handle rate limiting with backoff strategies. Validate inputs before sending to agents.
-- **Conversation management** - Agent Application endpoints currently support only the stateless Responses API. Store conversation history in your client for multi-turn experiences.
+- **Conversation management** - Agent endpoints currently support only the stateless Responses API. Store conversation history in your client for multi-turn experiences.
 
 ::: zone-end

@@ -5,7 +5,7 @@ metadata:
   description: Create speech-enabled apps with Azure Speech in Microsoft Foundry Tools.
   author: ivorb
   ms.author: berryivor
-  ms.date: 03/10/2026
+  ms.date: 10/16/2026
   ms.topic: module-standard-task-based
   ms.service: foundry-tools
   ai-usage: ai-assisted

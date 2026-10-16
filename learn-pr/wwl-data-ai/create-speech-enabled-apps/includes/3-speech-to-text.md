@@ -10,9 +10,9 @@
 
 ::: zone pivot="text"
 
-Azure Speech in Foundry Tools supports speech recognition through the *Speech to text** API. While the specific details vary, depending on the SDK being used (Python, C#, and so on); there's a consistent pattern for using the **Speech to text** API:
+Azure Speech in Foundry Tools supports speech recognition through the **Speech to text** API. While the specific details vary, depending on the SDK being used (Python, C#, and so on); there's a consistent pattern for using the **Speech to text** API:
 
-:::image type="content" source="../media/speech-to-text.png" alt-text="A diagram showing how a SpeechRecognizer object is created from a SpeechConfig and AudioConfig, and its RecognizeOnceAsync method is used to call the Speech to text API.":::
+:::image type="content" source="../media/speech-to-text.png" alt-text="Diagram showing a SpeechRecognizer created from a SpeechConfig and AudioConfig, and RecognizeOnceAsync calling the Speech to text API.":::
 
 1. Use a **SpeechConfig** object to encapsulate the information required to connect to your Foundry resource. Specifically, its **endpoint** (or **region**) and **key**.
 1. Optionally, use an **AudioConfig** to define the input source for the audio to be transcribed. By default, this is the default system microphone, but you can also specify an audio file.
@@ -49,7 +49,7 @@ speech_recognizer = speech_sdk.SpeechRecognizer(speech_config=speech_config,
 
 result = speech_recognizer.recognize_once_async().get()
 
-# Did it succeeed
+# Did it succeed
 if result.reason == speech_sdk.ResultReason.RecognizedSpeech:
     # Yes!
     print(f"Transcription:\n{result.text}")

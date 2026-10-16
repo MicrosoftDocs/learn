@@ -31,7 +31,7 @@ Mitigations you can apply at the model layer include:
 
 ## 2: The *safety system* layer
 
-The safety system layer includes platform-level configurations and capabilities that help mitigate harm. For example, Microsoft Foundry includes support for *guardrails* that apply criteria to suppress prompts and responses based on *content filters* that classify content into four severity levels (*safe*, *low*, *medium*, and *high*) for five categories of potential harm (*hate and fairness*, *sexual*, *violence*, *self-harm*, and *task-adherence*).
+The safety system layer includes platform-level configurations and capabilities that help mitigate harm. For example, Microsoft Foundry includes support for *guardrails* that apply criteria to suppress prompts and responses based on *content filters* that classify content into four severity levels (*safe*, *low*, *medium*, and *high*) for four categories of potential harm (*hate and fairness*, *sexual*, *violence*, and *self-harm*). Additional guardrails such as *task-adherence* detection help ensure that agentic AI actions remain aligned with user intent.
 
 Other safety system layer mitigations in Foundry guardrails include *prompt shields* that use abuse detection algorithms to determine if the solution is being systematically abused (for example by a user attempting to subvert the system prompt).
 

@@ -17,6 +17,7 @@ After you understand the capabilities of the Azure Speech MCP server, the next s
 The Azure Speech MCP server requires an Azure Storage account to store audio files. You need to create a storage account and a blob container before connecting the tool.
 
 1. In the [Azure portal](https://portal.azure.com), create a new **Azure Storage account** (or use an existing one).
+1. Assign the **Storage Blob Data Contributor** role to your user account on the storage account so you can generate SAS URLs and manage blobs.
 1. In the storage account, expand **Data storage** and select **Containers**.
 1. Create a new container (for example, named **files**) to store the audio files your agent generates and reads.
 1. Generate a **SAS token** for the container with the following permissions: Read, Add, Create, Write, and List. Set the expiry time to the shortest practical duration.
@@ -40,16 +41,16 @@ The agent is now ready to receive tool connections.
 
 ## Connect the Azure Speech MCP server
 
-You connect the Azure Speech MCP server to your agent through the **Tools** page in the Foundry portal.
+You connect the Azure Speech MCP server to your agent through the agent's **Tools** section in the Foundry portal.
 
-1. In the navigation pane, select the **Tools** page.
-1. Select **Connect a tool** and choose **Azure Speech in Foundry Tools** from the catalog.
+1. Open your agent and select **Tools**, then select **Add** > **Add a new tool**.
+1. In the tool dialog, switch to the **Catalog** tab and select **Azure Speech MCP Server**.
 1. Configure the connection with the following settings:
     - **Foundry resource name**: The name of your Foundry resource (for example, `myproject-resource`).
     - **Bearer** (`Ocp-Apim-Subscription-Key`): The key for your Foundry project.
     - **X-Blob-Container-Url**: The SAS URL for your blob container.
 
-1. Wait for the connection to be created, then select **Use in an agent** and choose your agent.
+1. Select **Create** to add the tool to your agent.
 
 :::image type="content" source="../media/azure-speech-tool-config.png" alt-text="Screenshot of the Tools catalog in the Foundry portal showing the Azure Speech in Foundry Tools connection configuration.":::
 

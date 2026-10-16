@@ -29,7 +29,7 @@ The Azure portal provides immediate access to agent creation without installing 
 
 ## Visual Studio Code development
 
-The Microsoft Foundry extension for Visual Studio Code brings enterprise-grade AI capabilities directly into your development environment. This approach suits developers who prefer working in familiar code editors and want tight integration with their development workflows.
+The Foundry Toolkit for Visual Studio Code brings enterprise-grade AI capabilities directly into your development environment. This approach suits developers who prefer working in familiar code editors and want tight integration with their development workflows.
 
 ### Key capabilities of the VS Code extension
 
@@ -53,7 +53,7 @@ The extension organizes its features into three main sections:
 
 The extension also provides a visual **Agent Designer** for configuring agent properties, integrated **code generation** for application integration, and direct **YAML configuration** editing for precise control.
 
-![Screenshot of the Microsoft Foundry VS Code extension interface showing the Resources, Tools, and Help and Feedback sections.](../media/vs-code-agent.png)
+![Screenshot of the Foundry Toolkit for VS Code interface showing the Resources, Tools, and Help and Feedback sections.](../media/vs-code-agent.png)
 
 ### When to use Visual Studio Code
 

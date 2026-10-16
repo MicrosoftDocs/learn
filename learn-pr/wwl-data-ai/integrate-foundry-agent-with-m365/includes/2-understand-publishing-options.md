@@ -83,5 +83,6 @@ Before publishing an agent to Microsoft 365, ensure you have:
 - An Azure subscription where you can create Azure Bot Service resources
 - Permissions to register applications in Microsoft Entra ID
 - A Microsoft 365 tenant that allows custom apps and bots
+- A **Microsoft Agent 365 license** for agent security features including discovery, posture management, and real-time threat detection in Defender
 
 ::: zone-end

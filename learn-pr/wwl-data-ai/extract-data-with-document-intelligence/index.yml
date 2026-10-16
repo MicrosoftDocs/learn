@@ -5,7 +5,7 @@ metadata:
   description: Azure Document Intelligence uses OCR and deep learning to extract text, key-value pairs, tables, and structured data from documents. Learn how to use prebuilt models, train custom models, and build document processing solutions.
   author: ivorb
   ms.author: berryivor
-  ms.date: 03/11/2026
+  ms.date: 10/16/2026
   ms.service: azure-document-intelligence-foundry-tools
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted

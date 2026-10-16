@@ -5,7 +5,7 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Introduction
   description: "Introduction to building an agent with custom tools."
-  ms.date: 5/1/2026
+  ms.date: 10/16/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

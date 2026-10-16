@@ -14,6 +14,8 @@ In many scenarios, you need to identify and protect sensitive personal informati
 
 Azure Language provides PII detection and redaction capabilities to identify sensitive information such as names, addresses, phone numbers, email addresses, social security numbers, and credit card numbers. You can both extract PII entities for analysis and redact (mask) them to protect privacy.
 
+You can optionally specify a **confidence threshold** to filter results, so only entities detected with a confidence score equal to or above the threshold are returned. The service also supports additional entity types including passwords, PIN codes, and zip codes.
+
 As with all Azure Language functions, you can submit one or more documents for analysis:
 
 ```python

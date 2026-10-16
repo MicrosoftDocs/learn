@@ -18,7 +18,7 @@ The module covered publish scopes (shared for testing, organization for broad di
 ## Learn more
 
 - [Publish agents to Microsoft 365 Copilot and Microsoft Teams](/azure/ai-foundry/agents/how-to/publish-copilot)
-- [Microsoft Work IQ documentation](/microsoft-365-copilot/extensibility/workiq-overview)
+- [Microsoft Work IQ documentation](/microsoft-365/copilot/extensibility/work-iq/mcp/overview)
 - [Microsoft 365 Agents Toolkit overview](/microsoftteams/platform/toolkit/overview-agents-toolkit)
 - [Agent identity concepts in Microsoft Foundry](/azure/ai-foundry/agents/concepts/agent-identity)
 
