@@ -4,7 +4,7 @@ title: Advanced site configuration
 metadata:
   title: Advanced Site Configuration
   description: Learn about advanced site configuration options in Internet Information Services (IIS) on Windows Server, including how to configure custom error pages, MIME types, compression, and request filtering to optimize website performance, security, and user experience.
-  ms.date: 03/26/2026
+  ms.date: 10/13/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

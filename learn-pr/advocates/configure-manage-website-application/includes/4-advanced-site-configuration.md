@@ -2,12 +2,14 @@ Beyond basic site creation and bindings, IIS provides a rich set of per-site and
 
 ## Custom error pages
 
-By default, IIS returns a generic HTTP error page when a client encounters a `4xx` or `5xx` status code. Customizing error pages improves the user experience and prevents accidental disclosure of internal diagnostic details.
+By default, IIS uses `DetailedLocalOnly`: requests made on the local server receive detailed error information, while remote requests receive a custom error response. Customizing error pages improves the user experience and prevents accidental disclosure of internal diagnostic details.
 
 IIS supports two types of error responses:
 
 - **Detailed errors:** Full diagnostic information including stack traces. Appropriate only for local (same-machine) requests during development.
 - **Custom error pages:** Static HTML or a redirect to a custom URL. Always use for production and remote requests.
+
+Before using either procedure, deploy `/errors/404.html` to the target site and verify that it's accessible. For the `Contoso` site with content in `C:\inetpub\contoso`, the file is `C:\inetpub\contoso\errors\404.html`.
 
 To configure custom error pages in IIS Manager:
 
@@ -17,19 +19,41 @@ To configure custom error pages in IIS Manager:
 1. Select **Execute a URL on this site** and enter the path to your custom page (for example, `/errors/404.html`), or select **Respond with a 302 redirect** to redirect users to an absolute URL.
 1. For the overall error policy: in the Actions pane, select **Edit Feature Settings**. Set the behavior to **Detailed errors for local requests** and **Custom error pages for remote requests** as this is the recommended production configuration.
 
-To configure custom error pages with PowerShell:
+The following PowerShell example updates the generic 404 mapping on `Contoso` if it exists, or adds it if it doesn't:
 
 ```powershell
-Set-WebConfiguration `
-  -Filter "system.webServer/httpErrors/error[@statusCode='404']" `
-  -PSPath "IIS:\Sites\Contoso" `
-  -Value @{
-      statusCode    = 404
-      subStatusCode = 0
-      path          = "/errors/404.html"
-      responseMode  = "ExecuteURL"
-  }
+Import-Module WebAdministration -ErrorAction Stop
+$configuration = @{
+    PSPath = 'MACHINE/WEBROOT/APPHOST'
+    Location = 'Contoso'
+    ErrorAction = 'Stop'
+}
+$filter = "system.webServer/httpErrors/error[@statusCode='404' and @subStatusCode='-1']"
+$mapping = @{
+    statusCode = 404
+    subStatusCode = -1
+    path = '/errors/404.html'
+    responseMode = 'ExecuteURL'
+}
+$existing = Get-WebConfiguration @configuration -Filter $filter
+if ($null -ne $existing) {
+    Set-WebConfigurationProperty @configuration -Filter $filter `
+        -Name 'path' -Value $mapping.path
+    Set-WebConfigurationProperty @configuration -Filter $filter `
+        -Name 'responseMode' -Value $mapping.responseMode
+}
+else {
+    Add-WebConfigurationProperty @configuration `
+        -Filter 'system.webServer/httpErrors' -Name '.' -Value $mapping
+}
 ```
+
+> [!NOTE]
+> `subStatusCode="-1"` is the generic fallback. A deliberately configured mapping for a particular 404 substatus still takes precedence. Don't clear the whole error collection to change one response. With `DetailedLocalOnly`, use a remote test client to check the custom response; local requests can still show detailed errors.
+
+Request `/errors/404.html` directly first, then request a known nonexistent URL from a remote client. Confirm the intended custom content and the resulting HTTP status. This example doesn't change `existingResponse`, which controls how IIS handles an application's existing error response. Review that setting before changing the behavior.
+
+For more information, see [HTTP error mappings](/iis/configuration/system.webserver/httperrors/error) and [HTTP error response settings](/iis/configuration/system.webserver/httperrors/).
 
 ## MIME types
 
@@ -67,7 +91,7 @@ HTTP compression reduces response size, improving page load times and reducing b
 > [!NOTE]
 > Both features must be installed as IIS role services: **Static Content Compression** and **Dynamic Content Compression**. Install via Server Manager under **Web Server (IIS) > Web Server > Performance**.
 
-To enable compression in IIS Manager, perform the following steps:
+To enable compression at the server level in IIS Manager, perform the following steps:
 
 1. Select the server node in the Connections pane.
 1. Double-click **Compression** in the center features pane.
@@ -75,19 +99,27 @@ To enable compression in IIS Manager, perform the following steps:
 1. For static compression, configure the **Directory for temporary compressed files** and optionally set a **Per application pool disk space limit**.
 1. Select **Apply**.
 
-You enable compression with the `Set-WebConfigurationProperty` PowerShell cmdlet. For example, to enable static compression, run the following command:
+To enable both static and dynamic compression for the existing `Contoso` site, use PowerShell:
 
 ```powershell
-Set-WebConfigurationProperty `
-    -Filter "system.webServer/httpCompression" `
-    -PSPath "IIS:\" -Name "staticCompressionEnabled" -Value $true
-Set-WebConfigurationProperty `
-    -Filter "system.webServer/urlCompression" `
-    -PSPath "IIS:\" -Name "doStaticCompression" -Value $true
-Set-WebConfigurationProperty `
-    -Filter "system.webServer/urlCompression" `
-    -PSPath "IIS:\" -Name "doDynamicCompression" -Value $true
+Import-Module WebAdministration -ErrorAction Stop
+$compression = @{
+    PSPath = 'MACHINE/WEBROOT/APPHOST'
+    Location = 'Contoso'
+    Filter = 'system.webServer/urlCompression'
+    ErrorAction = 'Stop'
+}
+Set-WebConfigurationProperty @compression -Name doStaticCompression -Value $true
+Set-WebConfigurationProperty @compression -Name doDynamicCompression -Value $true
+Get-WebConfigurationProperty @compression -Name doStaticCompression
+Get-WebConfigurationProperty @compression -Name doDynamicCompression
 ```
+
+Both returned enablement values should be `True`. `-Location 'Contoso'` targets that site; omitting the location at `MACHINE/WEBROOT/APPHOST` changes server defaults.
+
+To verify actual compression, request eligible content with an `Accept-Encoding` header, such as `Accept-Encoding: gzip`, and inspect the response's `Content-Encoding` header. Eligibility depends on configured MIME types, size limits, CPU thresholds, and static-content hit-frequency rules. A small file or its first request isn't a reliable negative test.
+
+For more information, see [URL compression](/iis/configuration/system.webserver/urlcompression/) and [HTTP compression settings](/iis/configuration/system.webserver/httpcompression/).
 
 ## Request filtering
 
@@ -108,7 +140,9 @@ To configure Request Filtering in IIS Manager, perform the following steps:
    - **File Name Extensions** tab: Select **Deny Extension** to block a file type. For example, deny `.exe`, `.bat`, and `.ps1`.
    - **Rules** tab: Select **Add Filtering Rule** to block requests matching a specific URL string, extension, or HTTP header.
    - **HTTP Verbs** tab: Select **Deny Verb** to block specific HTTP methods (for example, deny `TRACE` and `TRACK`).
-   - **Request Limits** tab: Set maximum allowed values for URL length, query string length, and content length.
+1. In the **Actions** pane, select **Edit Feature Settings**. In **Edit Request Filtering Settings**, configure the maximum allowed content length, URL length, and query string length, and then select **OK**.
+
+For more information, see [General request-filter settings](/iis/manage/configuring-security/configure-request-filtering-in-iis#general-request-filter-settings).
 
 You configure request filtering with the `Add-WebConfigurationProperty` cmdlet. For example, to block `.exe`, `.bat`, and `.ps1` files, run the following commands:
 
@@ -139,9 +173,26 @@ Add-WebConfigurationProperty -PSPath $sitePath `
 
 ## Using the built-In HTTP redirect feature
 
-For simple whole-site redirects, IIS includes a built-in HTTP Redirect feature that doesn't require the URL Rewrite module:
+For simple whole-site redirects, IIS includes a built-in HTTP Redirect feature that doesn't require the URL Rewrite module.
+
+> [!NOTE]
+> HTTP Redirection is an optional IIS role service; it isn't installed by every IIS installation. In **Server Manager > Manage > Add Roles and Features**, select the target server, expand **Web Server (IIS) > Web Server > Common HTTP Features**, select **HTTP Redirection**, and finish installation. Refresh or reopen IIS Manager before continuing.
+
+As a Windows PowerShell alternative, install the role service with:
+
+```powershell
+Install-WindowsFeature -Name Web-Http-Redirect -ErrorAction Stop
+```
+
+Check the installation result and any restart requirement, then refresh or reopen IIS Manager.
+
+After installation, configure the redirect in IIS Manager:
 
 1. Select the site, double-click **HTTP Redirect**.
 1. Check **Redirect requests to this destination** and enter the target URL.
 1. Select the redirect status code (**301 Permanent** or **302 Found**).
 1. Select **Apply**.
+
+Use an HTTP client with automatic redirects disabled to inspect the response status and `Location` header. Confirm that the status matches your selected 301 or 302 response and that `Location` identifies the intended destination. Request the destination separately and check any subsequent redirects to confirm that they don't lead back to the original URL or form another loop.
+
+For more information, see [HTTP Redirection setup and configuration](/iis/configuration/system.webserver/httpredirect/).

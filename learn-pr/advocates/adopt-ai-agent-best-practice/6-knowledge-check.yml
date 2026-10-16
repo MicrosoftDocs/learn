@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.adopt-ai-agent-best-practice.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module Assessment
   description: Test your knowledge of best practices for adopting AI agents using frameworks like AI Center of Excellence, FinOps, GenAI Ops, Cloud Adoption Framework, and Well-Architected Framework.
-  ms.date: 10/1/2025
+  ms.date: 10/13/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
