@@ -67,12 +67,13 @@ The tool catalog includes many more tools for specialized scenarios:
 | **Deep Research** | Perform in-depth research across multiple sources |
 | **Agent-to-Agent** | Delegate tasks to other agents |
 | **Custom Code Interpreter** | Customizable code execution for specialized environments |
+| **Memory** | Store and retrieve information across sessions for personalized, context-aware interactions |
 
 The tool catalog continues to expand. Check the Foundry portal for the latest available tools.
 
 ## Adding tools in Visual Studio Code
 
-The Microsoft Foundry extension provides an intuitive interface for adding and configuring tools. You can add tools through either the visual designer or by editing the YAML file directly.
+The Foundry Toolkit extension provides an intuitive interface for adding and configuring tools. You can add tools through either the visual designer or by editing the YAML file directly.
 
 ### Using the visual designer
 
@@ -86,7 +87,7 @@ To add tools through the Agent Designer:
 1. Configure tool-specific settings if required
 1. Save your changes
 
-![Screenshot of the tool catalog interface in the Microsoft Foundry VS Code extension.](../media/vs-code-tools.png)
+![Screenshot of the tool catalog interface in the Foundry Toolkit for VS Code.](../media/vs-code-tools.png)
 
 When you add certain tools, the extension prompts you to configure related assets. For example, adding File Search lets you create or select a vector store for document indexing.
 
@@ -144,7 +145,7 @@ MCP servers provide several advantages:
 
 ### Using MCP servers in VS Code
 
-The Microsoft Foundry extension supports MCP server integration:
+The Foundry Toolkit extension supports MCP server integration:
 
 1. Browse available MCP servers through the extension's tool registry
 1. Add MCP servers to your agent configuration
@@ -163,6 +164,7 @@ Effective tool management ensures reliable agent performance:
 - **Provide clear instructions** - Tell your agent when and how to use each tool (for example, "Use Code Interpreter for any mathematical calculations") and when *not* to use them.
 - **Keep knowledge bases current** - When using File Search, update documents regularly. Outdated information leads to incorrect responses.
 - **Test tool behavior** thoroughly using the integrated playground. Send messages that should trigger tool usage, verify correct invocation, and test error scenarios.
+- **Consider using toolboxes** - For enterprise scenarios with multiple agents, toolboxes let you bundle tools behind a single managed MCP endpoint with centralized authentication, versioning, and governance. When you update a tool in the toolbox, all consuming agents see the change automatically without redeployment.
 
 Agents can use multiple tools together to handle complex scenarios. For example, a research agent might use Bing Web Search to gather current information, Code Interpreter to analyze data, and File Search to reference internal documentation — all orchestrated automatically based on the user's request.
 

@@ -12,7 +12,7 @@
 
 The Content Understanding API provides a programmatic interface that you can use to create, manage, and consume analyzers.
 
-To use the API, your client application submits HTTP calls to the Content Understanding endpoint for your Microsoft Foundry resource, passing one of the authorization keys in the header. You can obtain the endpoint and keys in the Azure portal or in the Microsoft Foundry portal. You can also use the Microsoft Foundry API to connect to the project programmatically with you Entra ID.
+To use the API, your client application submits HTTP calls to the Content Understanding endpoint for your Microsoft Foundry resource, passing one of the authorization keys in the header. You can obtain the endpoint and keys in the Azure portal or in the Microsoft Foundry portal. You can also use the Microsoft Foundry API to connect to the project programmatically with your Entra ID.
 
 ## Using the API to analyze content
 
@@ -51,7 +51,7 @@ Your client application must then use the operation ID that has been returned to
 GET {endpoint}/contentunderstanding/analyzerResults/1234abcd-1234-abcd-1234-abcd1234abcd?api-version=2025-11-01
 ```
 
-When the operation has completed successfully, the response contains a JSON payload representing the results of the analysis. The specific results depend on the content and schema.
+When the operation has completed successfully, the response contains a JSON payload representing the results of the analysis. The specific results depend on the content and schema. Results can include confidence scores and source grounding information for each extracted field when the analyzer is configured with the `estimateFieldSourceAndConfidence` option enabled.
 
 ::: zone-end
 
