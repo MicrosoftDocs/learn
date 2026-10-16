@@ -2,9 +2,9 @@
 uid: learn.devrel.deploy-configure-internet-information-services.install-web-server-role
 title: Installing the Internet Information Services web server role
 metadata:
-  title: Installing the Internet Information Services Web Server role
+  title: Installing the Internet Information Services Web Server Role
   description: Learn how to install the Internet Information Services (IIS) web server role on Windows Server using both the graphical user interface (GUI) and PowerShell command-line interface.
-  ms.date: 03/23/2026
+  ms.date: 10/13/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
