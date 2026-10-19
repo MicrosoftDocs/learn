@@ -11,6 +11,7 @@ Next, you build the application and configure it to connect to the PostgreSQL da
 By the end of this module, you'll be able to incorporate Quarkus applications into Container Apps and integrate them with a relational database.
 
 You'll use your own Azure subscription to deploy the resources in this module. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
+
 > [!IMPORTANT]
 > To avoid unnecessary charges in your Azure subscription, remember to deprovision your Azure resources when you finish this module.
 
@@ -27,5 +28,7 @@ By the end of this module, you'll be able to:
 You should be familiar with Java applications. Quarkus is explained as you follow along. As you complete the exercises in this module, you'll use a personal Azure account. Make sure that you have the following resources:
   
 - An Azure subscription
-- Local installations of Java JDK (17 or later), Maven (3.1), and the Azure CLI (2.57 or later)
-- Docker and Docker Desktop
+- Local installations of Java JDK 17, Maven 3.9.9, Azure CLI 2.87.0 or later, and curl
+- Docker, with Docker Desktop on macOS or Windows. For Docker Engine 29.x, complete the Docker API compatibility setup in the application exercise before starting Dev Services.
+
+Run the exercises in a local Bash shell on Linux or macOS, or in a [WSL 2 Linux distribution on Windows](/windows/wsl/install). Install the JDK, Maven, Azure CLI, and curl in that environment. Docker must be running and accessible from the same environment. On Windows, use Linux containers and [enable Docker Desktop integration for the selected WSL distribution](https://docs.docker.com/desktop/features/wsl/).

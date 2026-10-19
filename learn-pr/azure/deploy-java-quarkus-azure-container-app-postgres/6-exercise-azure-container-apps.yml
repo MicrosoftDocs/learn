@@ -2,9 +2,9 @@
 uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres.6-exercise-aca
 title: Deploy a Quarkus application to Azure Container Apps
 metadata:
-  title: Deploy a Quarkus application to Azure Container Apps
+  title: Deploy a Quarkus Application to Azure Container Apps
   description: In this exercise, you set up an Azure Container Apps environment and deploy a Quarkus Docker container.
-  ms.date: 03/06/2025
+  ms.date: 10/16/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -15,4 +15,3 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-azure-container-apps.md)]
-

@@ -2,9 +2,9 @@
 uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres.2-build
 title: Create a Quarkus application
 metadata:
-  title: Create a Quarkus application
+  title: Create a Quarkus Application
   description: Create a Quarkus application, test it, and run it locally.
-  ms.date: 03/05/2025
+  ms.date: 10/16/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -16,4 +16,3 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-build.md)]
-
