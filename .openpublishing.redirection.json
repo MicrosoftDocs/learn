@@ -1,6 +1,51 @@
 {
   "redirections": [
     {
+      "source_path": "learn-pr/contributors/become-learn-contributor/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributors/become-learn-contributor/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributors/become-learn-contributor/6-share-learn-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributors/become-learn-contributor/5-create-learn-collection.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributors/become-learn-contributor/4-contribute-microsoft-q-and-a.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributors/become-learn-contributor/3-review-documentation-github-issues.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributors/become-learn-contributor/2-what-is-learn-contributor.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributors/become-learn-contributor/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/contributors/become-learn-contributor/index.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/guided-project-create-sk-assistant/1-introduction.yml",
       "redirect_url": "/training/paths/develop-ai-agents-azure/",
       "redirect_document_id": false
