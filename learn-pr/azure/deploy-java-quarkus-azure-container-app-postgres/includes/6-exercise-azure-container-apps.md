@@ -1,4 +1,6 @@
-In this unit, you create the Azure Container Apps environment by using the Azure CLI.
+In this unit, you package the Quarkus application and deploy it to Azure Container Apps with its database password supplied as a runtime secret.
+
+Continue in the local Bash shell from the previous unit, in the generated `todo` project directory. Keep all the exported resource and database variables in that shell. Stop foreground Quarkus development mode with **Ctrl+C** before packaging, and don't rerun the random-name and password block.
 
 ## Set up the Dockerfile for the Quarkus application
 
@@ -32,18 +34,49 @@ ENV JAVA_APP_JAR="/deployments/quarkus-run.jar"
 ENTRYPOINT [ "/opt/jboss/container/java/run/run-java.sh" ]
 ```
 
-This Dockerfile expects the Quarkus application to be packaged as a *quarkus-run.jar* file. This name is the default name for the Quarkus application when it's packaged as a JAR file. You need to make sure that the Quarkus application is packaged as a JAR file. To do so, run the following Maven command:
+> [!IMPORTANT]
+> Don't put database credentials into source files, Docker build arguments, or images, and don't print or trace their values. An application secret separates the credential from the image, but authorized secret-reading principals can still retrieve it. For production, follow the [passwordless authentication guidance](/azure/developer/java/ee/deploy-java-quarkus-app) and [Key Vault secret guidance](/azure/container-apps/manage-secrets), and apply appropriate permissions.
+
+This Dockerfile expects the packaged Quarkus application in the *target/quarkus-app* folder, including the *quarkus-run.jar* launcher and its supporting directories. Keep the literal, profile-scoped expressions from the previous unit in `application.properties`. With Docker running and accessible from this Bash environment, run a clean package:
 
 ```bash
-./mvnw package    # On Mac or Linux
-mvnw.cmd package  # On Windows
+./mvnw clean package
 ```
 
-This command packages the Quarkus application into a JAR file and generates a *quarkus-run.jar* file in the *target/quarkus-app* folder.
+This command runs the automated tests against a separate PostgreSQL Dev Service and packages the application in *target/quarkus-app*. The `test` profile must not use the Azure database. Don't skip the tests; resolve any build or test failure before continuing. A clean package also avoids reusing old application build output that might contain literal credentials.
+
+Rebuilding the current image doesn't remove credentials from older images or source copies. If you previously distributed or exposed a credential-bearing artifact, rotate the credential and remove obsolete artifacts through your authorized cleanup process. The following deployment steps don't perform that rotation or remove old artifacts.
 
 ## Create the Container Apps environment and deploy the container
 
-Now that the Dockerfile is in the right location, you can create the Container Apps environment and deploy the container by using a single Azure CLI command. Run the following command at the root of the project:
+Deploy in three stages so that Quarkus doesn't start before its database secret and runtime settings are available. Use only the new, exercise-owned app named in `AZ_CONTAINERAPP`, in `AZ_RESOURCE_GROUP`. Don't run the bootstrap step against an unrelated or production app. Complete each command successfully before continuing.
+
+First, create the app and environment by using [Microsoft's public quickstart image](/azure/container-apps/get-started?tabs=bash). This temporary image listens on port 80 and doesn't need database credentials:
+
+```bash
+az containerapp up \
+    --name "$AZ_CONTAINERAPP" \
+    --environment "$AZ_CONTAINERAPP_ENV" \
+    --location "$AZ_LOCATION" \
+    --resource-group "$AZ_RESOURCE_GROUP" \
+    --image mcr.microsoft.com/k8se/quickstart:latest \
+    --ingress external \
+    --target-port 80
+```
+
+This call establishes the app, environment, and default Log Analytics workspace in the exercise resource group. It doesn't deploy your Quarkus application yet.
+
+Next, store the database password as a secret on the existing app before referencing it:
+
+```bash
+az containerapp secret set \
+    --name "$AZ_CONTAINERAPP" \
+    --resource-group "$AZ_RESOURCE_GROUP" \
+    --secrets "postgres-password=$AZ_POSTGRES_PASSWORD" \
+    --output none
+```
+
+Finally, from the `todo` project root, deploy the clean Quarkus application to that same app, environment, and resource group. The target port changes to 8080. The first two runtime values come from the current shell; the password is supplied through a [secret reference](/azure/container-apps/environment-variables):
 
 ```bash
 az containerapp up \
@@ -53,40 +86,24 @@ az containerapp up \
     --resource-group "$AZ_RESOURCE_GROUP" \
     --ingress external \
     --target-port 8080 \
-    --source .
+    --source . \
+    --env-vars \
+        "AZ_POSTGRES_JDBC_URL=$AZ_POSTGRES_JDBC_URL" \
+        "AZ_POSTGRES_USERNAME=$AZ_POSTGRES_USERNAME" \
+        "AZ_POSTGRES_PASSWORD=secretref:postgres-password"
 ```
 
-This command does several things:
+This [local-source deployment](/azure/container-apps/quickstart-code-to-cloud) creates an Azure container registry if needed, builds the Docker image from the root Dockerfile, pushes it to the registry, and updates the existing app with the Quarkus image and runtime configuration. It retains the database secret while configuring registry access. The commands can take several minutes to complete.
 
-* Creates a Container Apps environment if it doesn't exist
-* Creates an Azure registry if it doesn't exist
-* Creates a Log Analytics workspace if it doesn't exist
-* Builds the Docker image and pushes it to the Azure registry
-* Deploys the Docker image to the Container Apps environment
-
-The `az containerapp up` command takes some time to run. You should see output that's similar to the following:
-
-```bash
-Using resource group 'rgazure-deploy-quarkus'
-Creating ContainerAppEnvironment 'caeazure-deploy-quarkus' in resource group rgazure-deploy-quarkus
-No Log Analytics workspace provided.
-Generating a Log Analytics workspace with name "workspace-rgazuredeployquarkusEED7"
-Creating Azure Container Registry ca001ad52ae7acr in resource group rgazure-deploy-quarkus
-
-Run ID: ca3 was successful after 41s
-Creating Containerapp caazure-deploy-quarkus in resource group rgazure-deploy-quarkus
-Adding registry password as a secret with name "ca001ad52ae7acrazurecrio-ca001nxc57acr"
-
-Your container app caazure-deploy-quarkus has been created and deployed! Congrats! 
-```
+All resources created by this exercise remain in `AZ_RESOURCE_GROUP`, so the resource-group cleanup at the end of the module still applies. This password-based exercise retains the default registry-authentication flow of `az containerapp up`; it isn't a complete production security architecture.
 
 ## Validate the deployment
 
-You can validate that the deployment has succeeded in several ways. The easiest way is to search for your resource group on the [Azure portal](https://portal.azure.com). You should see resources similar to the following:
+First, confirm that the resources were created by searching for your resource group on the [Azure portal](https://portal.azure.com). You should see resources similar to the following; your generated names will differ:
 
-![Screenshot that shows the deployed application.](../media/azure-portal.png)
+![Screenshot of an Azure portal resource group listing the deployed container app and its supporting resources.](../media/azure-portal.png)
 
-You can also check the deployment by running the following command. It lists all the resources created by the `az containerapp up` command.
+You can also list the resources in the exercise resource group, including PostgreSQL and the resources created by `az containerapp up`:
 
 ```bash
 az resource list \
@@ -95,21 +112,23 @@ az resource list \
     --output table
 ```
 
-You should see output that's similar to this:
+You should see output similar to this example:
 
-```bash
-Name                                ResourceGroup           Location    Type                                       Status
-----------------------------------  ----------------------  ----------  -----------------------------------------  --------
-caea3a6e0afeacr                     rgazure-deploy-quarkus  eastus      Microsoft.ContainerRegistry/registries
-psqlazure-deploy-quarkus            rgazure-deploy-quarkus  eastus      Microsoft.DBforPostgreSQL/flexibleServers
-caazure-deploy-quarkus              rgazure-deploy-quarkus  eastus      Microsoft.App/containerApps
-caeazure-deploy-quarkus             rgazure-deploy-quarkus  eastus      Microsoft.App/managedEnvironments
-workspace-rgazuredeployquarkuscDD3  rgazure-deploy-quarkus  eastus      Microsoft.OperationalInsights/workspaces
+```output
+Name                               ResourceGroup        Location    Type                                       Status
+---------------------------------  -------------------  ----------  -----------------------------------------  --------
+caea3a6e0afeacr                     rgquarkus-12345678   eastus      Microsoft.ContainerRegistry/registries
+psqlquarkus-12345678                rgquarkus-12345678   eastus      Microsoft.DBforPostgreSQL/flexibleServers
+caquarkus-12345678                  rgquarkus-12345678   eastus      Microsoft.App/containerApps
+caequarkus-12345678                 rgquarkus-12345678   eastus      Microsoft.App/managedEnvironments
+workspace-rgquarkus12345678abcd     rgquarkus-12345678   eastus      Microsoft.OperationalInsights/workspaces
 ```
+
+Resource creation alone doesn't confirm application readiness. In the Azure portal, open your container app and inspect its active revision. Verify that it uses your newly built Quarkus image, not `mcr.microsoft.com/k8se/quickstart:latest`, and starts successfully. Resolve startup errors before continuing to the POST and GET checks. A working temporary quickstart page isn't proof that the Quarkus deployment succeeded.
 
 ## Verify the deployed application
 
-You can now verify the deployed application. First, you need to get the URL of the application. You can get it by running the following command:
+After the Quarkus revision is running, verify the application's API. First, get the complete ingress FQDN in the same Bash shell:
 
 ```bash
 export AZ_APP_URL=$(
@@ -123,22 +142,24 @@ export AZ_APP_URL=$(
 echo "AZ_APP_URL=$AZ_APP_URL"
 ```
 
-Your application is ready at `https://<app-name>.azurecontainerapps.io/`. Notice the `https` protocol. That protocol is used because the application is deployed with a TLS certificate. To test the application, you can use cURL:
+Use the complete FQDN returned in `AZ_APP_URL`; it includes the environment's DNS suffix. The application's to-do endpoint is `https://<the AZ_APP_URL value>/api/todos`. Container Apps provides [HTTPS/TLS termination](/azure/container-apps/ingress-overview) for this default endpoint.
+
+Create a to-do by using cURL. The `--include` option displays response headers so that you can check for HTTP 201 and the created item's JSON body:
 
 ```bash
-curl --header "Content-Type: application/json" \
+curl --include --header "Content-Type: application/json" \
     --request POST \
     --data '{"description":"Configuration","details":"Congratulations, you have set up your Quarkus application correctly!","done": "true"}' \
-    https://$AZ_APP_URL/api/todos
+    "https://$AZ_APP_URL/api/todos"
 ```
 
-Retrieve the data by using a new cURL request:
+Retrieve the data by using a new cURL request. Check for HTTP 200 and the items you created in this unit and the previous unit:
 
 ```bash
-curl https://$AZ_APP_URL/api/todos
+curl --include "https://$AZ_APP_URL/api/todos"
 ```
 
-This command returns the list of all to-do items from the database:
+The response body is a JSON array containing the items you created in the Azure database. Identifiers, timestamps, and order can vary. Repeating a POST creates another item; this sample is illustrative, not an exact response assertion:
 
 ```json
 [
@@ -146,24 +167,29 @@ This command returns the list of all to-do items from the database:
       "description" : "Take Quarkus MS Learn",
       "details" : "Take the MS Learn on deploying Quarkus to Azure Container Apps",
       "done" : true,
-      "id" : 1
+      "id" : 1,
+      "createdAt" : "2025-02-26T08:03:28.390854Z"
    },
    {
-      "description" : "Take Azure Container MS Learn",
+      "description" : "Take Azure Container Apps MS Learn",
       "details" : "Take the ACA Learn module",
       "done" : false,
-      "id" : 2
+      "id" : 2,
+      "createdAt" : "2025-02-26T08:03:34.142249Z"
    },
    {
       "description" : "Configuration",
       "details" : "Congratulations, you have set up your Quarkus application correctly!",
       "done" : true,
-      "id" : 3
+      "id" : 3,
+      "createdAt" : "2025-02-26T08:05:00.000000Z"
    }
 ]
 ```
 
-If you run this command, you can stream the logs for your container when you create new to-dos:
+Successful POST and GET responses from the Quarkus revision, with the expected descriptions, confirm the application check. Don't use the bootstrap page or resource list alone as the success criterion.
+
+To stream the container logs, run this command in the Bash shell containing your resource variables:
 
 ```bash
 az containerapp logs show \
@@ -172,11 +198,14 @@ az containerapp logs show \
     --follow
 ```
 
-Run more cURL commands. You should see the logs scrolling in the terminal.
+In a second local Bash terminal, replace `<returned-fqdn>` with the complete FQDN displayed earlier and send more requests while following the logs. This terminal needs only the application address, not the database password:
 
 ```bash
-curl https://$AZ_APP_URL/api/todos
+export AZ_APP_URL="<returned-fqdn>"
+curl --include "https://$AZ_APP_URL/api/todos"
 ```
 
+When you finish following the logs, press **Ctrl+C** in the original terminal. Keep that shell open with its resource variables for the next unit.
+
 > [!NOTE]
-> You can also open the URL in a web browser to return the list of to-do items.
+> To view the JSON list in a browser, open `https://<the AZ_APP_URL value>/api/todos`, replacing the placeholder with the returned FQDN. The module doesn't implement a to-do web page at `/`.

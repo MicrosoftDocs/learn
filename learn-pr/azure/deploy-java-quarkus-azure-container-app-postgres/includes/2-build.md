@@ -33,7 +33,9 @@ For example, to get the details of a subscription, you can use the following com
 az account show
 ```
 
-In this module, you use the Azure CLI to create the Container Apps environment and the Azure Database for PostgreSQL instance. You can access Azure CLI from a terminal or through Visual Studio Code. Or you can access it from [Azure Cloud Shell](https://azure.microsoft.com/get-started/azure-portal/cloud-shell). This browser-based shell is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with an Azure subscription.
+In this module, you use the Azure CLI from the configured local Bash environment to create the Container Apps environment and the Azure Database for PostgreSQL instance. You can use a terminal or the integrated terminal in Visual Studio Code.
+
+[Azure Cloud Shell](https://azure.microsoft.com/get-started/azure-portal/cloud-shell) is an optional way to perform Azure management operations. This browser-based shell is hosted in Azure, with the Azure CLI configured for use with an Azure subscription. This module's application build, Docker-backed development, and tests use the configured local Bash environment. Keep the exercise variables in that environment. The database-denial test later in the module also requires a non-Azure source network; Cloud Shell isn't suitable for that negative test.
 
 You use the Maven package manager to bootstrap your project. Maven also provides the Quarkus and Dev Services dependencies to enable you to develop and easily test your Quarkus application.
 

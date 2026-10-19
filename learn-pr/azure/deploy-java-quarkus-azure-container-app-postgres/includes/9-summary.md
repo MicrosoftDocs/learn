@@ -10,7 +10,7 @@ Your company wanted to deploy a Quarkus application to the cloud. You completed 
 
 1. Created an Azure Container Apps environment, deployed the Quarkus application container, and tested the application in the cloud.
 
-1. Updated the firewall rules to disable external calls to the database and allow only the Quarkus application to access it.
+1. Replaced the all-addresses PostgreSQL firewall rule with the Azure-services exception on the public database endpoint. The exception permits connection attempts from Azure resources, including the Quarkus application and resources in other customers' subscriptions. Database authentication is still required.
 
 You're now confident that you can recommend running your Quarkus application in Container Apps.
 
@@ -34,6 +34,7 @@ This command might take a minute to run.
 - [Quarkus guides](https://quarkus.io/guides)
 - [Azure Container Apps](https://azure.microsoft.com/products/container-apps)
 - [Azure Database for PostgreSQL documentation](/azure/postgresql/)
+- [PostgreSQL firewall rules](/azure/postgresql/security/security-firewall-rules)
 - [Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache)
 - [Azure for Java developers](/azure/developer/java)
 - [Compare Java application hosting options on Azure](/azure/architecture/guide/technology-choices/service-for-java-comparison)
