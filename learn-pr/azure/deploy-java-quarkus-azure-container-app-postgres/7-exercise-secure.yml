@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres.7-exercise-secure
-title: Exercise - Restrict access to the Azure Container Apps environment
+title: Exercise - Limit public database access to Azure services
 metadata:
-  title: Exercise - Restrict access to the Azure Container Apps environment
+  title: Exercise - Limit Public Database Access to Azure Services
   description: In this exercise, you restrict access to the PostgreSQL database environment by changing the firewall rules.
-  ms.date: 03/06/2025
+  ms.date: 10/16/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -13,4 +13,3 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/7-exercise-secure.md)]
-

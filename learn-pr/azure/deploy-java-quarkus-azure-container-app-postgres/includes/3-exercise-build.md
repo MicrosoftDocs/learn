@@ -1,4 +1,4 @@
-In this unit, you create a basic Quarkus application. You use Maven to bootstrap the application and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code. You use Docker to start a local PostgreSQL database so you can run and test the application locally.
+In this unit, you create a basic Quarkus application. You use Maven to bootstrap the application and an integrated development environment (IDE) of your choice to edit the code. Use the Bash environment configured in the prerequisites to run the code. You use Docker to start a local PostgreSQL database so you can run and test the application locally.
 
 ## Generate the Quarkus application by using Maven
 
@@ -10,11 +10,23 @@ You generate your application with several dependencies:
 * The `jackson` dependency to serialize and deserialize JSON
 * The `hibernate` dependency to interact with the database
 * The `postgresql` dependency to connect to the PostgreSQL database
-* The `docker` dependency to build a Docker image
+* The [`quarkus-container-image-docker`](https://quarkus.io/extensions/io.quarkus/quarkus-container-image-docker/) dependency to build a Docker image
 
 You don't need to specify Azure dependencies because you run your application locally first and then deploy a containerized version of it to Azure Container Apps.
 
-At a command prompt, generate the to-do application:
+> [!NOTE]
+> The commands in this module use [Bash syntax](/cli/azure/get-started-tutorial-2-environment-syntax). Don't paste them unchanged into PowerShell or Windows Command Prompt. On Windows, run the Bash commands in the configured WSL distribution. Use another local Bash terminal for HTTP requests while the application is running.
+
+Before generating the project, check that your Bash environment uses Java 17 and Maven 3.9.9:
+
+```bash
+java -version
+mvn --version
+```
+
+The initial generator command uses your installed Maven. The project's Maven wrapper is created afterward, so it doesn't replace this prerequisite. Select the required Java and Maven versions before continuing.
+
+From the directory where you want to create the project, generate the to-do application:
 
 ```bash
 mvn -U io.quarkus:quarkus-maven-plugin:3.19.0:create \
@@ -24,10 +36,10 @@ mvn -U io.quarkus:quarkus-maven-plugin:3.19.0:create \
     -DclassName="com.example.demo.TodoResource" \
     -Dpath="/api/todos" \
     -DjavaVersion=17 \
-    -Dextensions="resteasy-jackson, hibernate-orm-panache, jdbc-postgresql, docker"
+    -Dextensions="resteasy-jackson, hibernate-orm-panache, jdbc-postgresql, io.quarkus:quarkus-container-image-docker"
 ```
 
-This command creates a new Quarkus project. It generates a Maven directory structure (`src/main/java` for source code and `src/test/java` for tests). It creates some Java classes, some tests, and some Dockerfiles. It also generates a *pom.xml* file with all the needed dependencies (Hibernate, RESTEasy, Jackson, PostgreSQL, and Docker):
+This command creates a new Quarkus project in a directory named `todo`. It generates a Maven directory structure (`src/main/java` for source code and `src/test/java` for tests). It creates some Java classes, some tests, and some Dockerfiles. It also generates a *pom.xml* file with all the needed dependencies (Hibernate, RESTEasy, Jackson, PostgreSQL, and Docker):
 
 ```xml
   <dependencies>
@@ -126,8 +138,10 @@ import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
+import jakarta.ws.rs.NotFoundException;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 import jakarta.ws.rs.core.Response;
@@ -162,20 +176,42 @@ public class TodoResource {
         logger.info("Getting all todos");
         return Todo.listAll();
     }
+
+    @GET
+    @Path("/{id}")
+    public Todo getTodo(@PathParam("id") Long id) {
+        Todo todo = id == null ? null : Todo.findById(id);
+        if (todo == null) {
+            throw new NotFoundException();
+        }
+        return todo;
+    }
 }
 ```
+
+The POST method returns the new item's URI in the `Location` header. The item GET method serves that URI and returns HTTP 404 if the item isn't found. The null guard also handles path values that RESTEasy converts to a null identifier, without passing null to Panache.
 
 ## Run the application
 
 When you run the application in development mode, Docker needs to be running. That's because Quarkus detects that you need a PostgreSQL database (because of the PostgreSQL dependency `quarkus-jdbc-postgresql` declared in the *pom.xml* file), downloads the PostgreSQL Docker image, and starts a container with the database. It then automatically creates the `Todo` table in the database.
 
-Make sure Docker is running locally on your machine and run the to-do application by using this command:
+> [!NOTE]
+> The pinned Quarkus 3.18.4 platform uses Testcontainers 1.20.4, whose Java Docker client defaults to API 1.32. [Docker Engine 29.x](https://docs.docker.com/reference/api/engine/#api-version-matrix) no longer accepts that API version by default. If you're using Engine 29.x, run `docker version` and confirm that the server's supported API range includes 1.44. Only if it does, run the following command in this Bash shell before starting Quarkus or tests:
+>
+> ```bash
+> export JDK_JAVA_OPTIONS="${JDK_JAVA_OPTIONS:+$JDK_JAVA_OPTIONS }-Dapi.version=1.44"
+> ```
+>
+> Keep this setting in the same shell for the test and later package commands. [JDK_JAVA_OPTIONS](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html#using-the-jdk_java_options-launcher-environment-variable) supplies the Java system property to Java launcher processes without changing the pinned Quarkus versions. Setting `DOCKER_API_VERSION` alone doesn't configure this version of the Java Docker client. Don't force API 1.44 on a server whose supported range excludes it; use a separately validated compatible Docker and client configuration instead.
+
+Make sure Docker is running and accessible from your configured Bash environment. In the terminal where you generated the project, enter the `todo` directory and start the application:
 
 ```bash
 cd todo
-./mvnw quarkus:dev    # On Mac or Linux
-mvnw.cmd quarkus:dev  # On Windows
+./mvnw quarkus:dev
 ```
+
+Run all subsequent Maven commands from this generated `todo` directory.
 
 The Quarkus application should start and connect to your database. You should see the following output:
 
@@ -198,7 +234,7 @@ Press [e] to edit command line args (currently ''), [r] to resume testing, [o] T
 
 To test the application, you can use cURL.
 
-In a separate terminal, create a new to-do item in the database with the following command.  You should see the log in the Quarkus console:
+In a second local Bash terminal, create a new to-do item in the database with the following command. You should see the log in the Quarkus console:
 
 ```bash
 curl --header "Content-Type: application/json" \
@@ -228,7 +264,7 @@ Next, retrieve the data by using a new cURL request:
 curl http://127.0.0.1:8080/api/todos
 ```
 
-This command returns the list of to-do items, including the items you created:
+This command returns the list of to-do items, including the items you created. Each item also includes `createdAt`; the following example omits those timestamps for brevity:
 
 ```json
 [ 
@@ -239,15 +275,20 @@ This command returns the list of to-do items, including the items you created:
 
 ## Test the application
 
-To test the application, you can use the existing `TodoResourceTest` class. It needs to test the REST endpoint. To test the endpoint, it uses [RESTAssured](https://rest-assured.io/). Replace code in the `TodoResourceTest` class with the following code:
+After the HTTP checks, return to the terminal running Quarkus and press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop development mode. Keep this Bash shell open and stay in the `todo` directory for the test command.
+
+To test the application, you can use the existing `TodoResourceTest` class. It needs to test the REST endpoint. To test the endpoint, it uses [RESTAssured](https://rest-assured.io/). The tests retain the collection check, follow the `Location` returned by POST, and check missing and invalid item identifiers. Replace code in the `TodoResourceTest` class with the following code:
 
 ```java
 package com.example.demo;
 
 import io.quarkus.test.junit.QuarkusTest;
+import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 import static jakarta.ws.rs.core.HttpHeaders.CONTENT_TYPE;
 import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
 
 @QuarkusTest
@@ -268,20 +309,53 @@ class TodoResourceTest {
         todo.details = "Take the MS Learn on deploying Quarkus to Azure Container Apps";
         todo.done = true;
 
-        given().body(todo)
+        Response created = given().body(todo)
                 .header(CONTENT_TYPE, APPLICATION_JSON)
                 .when().post("/api/todos")
                 .then()
-                .statusCode(201);
+                .statusCode(201)
+                .extract().response();
+
+        String location = created.getHeader("Location");
+        assertNotNull(location);
+        long createdId = created.jsonPath().getLong("id");
+
+        Response retrieved = given()
+                .when().get(location)
+                .then()
+                .statusCode(200)
+                .extract().response();
+
+        assertEquals(createdId, retrieved.jsonPath().getLong("id"));
+        assertEquals(todo.description, retrieved.jsonPath().getString("description"));
+    }
+
+    @Test
+    void shouldReturnNotFoundForMissingTodo() {
+        given()
+                .when().get("/api/todos/-1")
+                .then().statusCode(404);
+    }
+
+    @Test
+    void shouldRejectInvalidTodoIds() {
+        given()
+                .when().get("/api/todos/not-a-number")
+                .then().statusCode(404);
+
+        given().urlEncodingEnabled(false)
+                .when().get("/api/todos/%20")
+                .then().statusCode(404);
     }
 }
 ```
 
-When you test the application, Docker Desktop needs to be running because Quarkus detects that it needs the PostgreSQL database for testing. Test the application by using this command:
+The create test reads the generated identifier from the POST response and compares both identifiers as `long` values. The invalid-identifier test disables automatic URL encoding for `%20` so that the request contains the deliberately encoded space.
+
+When you test the application, Docker needs to be running and accessible from the same Bash environment because Quarkus starts a separate PostgreSQL Dev Service for testing. In the terminal where you stopped Quarkus, test the application by using this command:
 
 ```bash
-./mvnw clean test    # On Mac or Linux
-mvnw.cmd clean test  # On Windows
+./mvnw clean test
 ```
 
 You should see output that looks similar to this:
@@ -294,9 +368,13 @@ You should see output that looks similar to this:
 [INFO] 
 [INFO] Results:
 [INFO] 
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
 ```
+
+Keep this Bash shell open for the database exercise. You'll set `AZ_POSTGRES_JDBC_URL`, `AZ_POSTGRES_USERNAME`, and `AZ_POSTGRES_PASSWORD` there, then restart Quarkus from that shell. Stop the remote-development process with <kbd>Ctrl</kbd>+<kbd>C</kbd> before the later `./mvnw clean package` and deployment steps. Keep the variables and don't repeat the resource-name and password setup between units.
+
+A process [inherits its environment when it starts](https://www.gnu.org/software/bash/manual/html_node/Environment.html). Exporting variables in another terminal doesn't update an already-running Quarkus process. Editing `application.properties` and relying on live reload isn't sufficient for the switch to Azure; restart the application from the shell where you set the variables.

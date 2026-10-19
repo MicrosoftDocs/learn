@@ -2,9 +2,9 @@
 uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres.5-exercise-rg-postgres
 title: Exercise - Set up Azure Container Apps
 metadata:
-  title: Exercise - Set up Azure Container Apps
+  title: Exercise - Set Up Azure Container Apps
   description: In this exercise, you set up the Azure Resource Group and the PostgreSQL database.
-  ms.date: 03/06/2025
+  ms.date: 10/16/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -15,4 +15,3 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-rg-postgres.md)]
-

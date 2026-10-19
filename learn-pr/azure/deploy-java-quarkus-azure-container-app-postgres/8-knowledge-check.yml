@@ -2,9 +2,9 @@
 uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres.8-knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: Knowledge check
-  ms.date: 03/06/2025
+  ms.date: 10/16/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -38,15 +38,14 @@ quiz:
     - content: "az containerapp deploy"
       isCorrect: false
       explanation: "This command doesn't exist."
-  - content: "Which range of IP addresses does a firewall need to specify to allow only Azure internal-IP addresses?"
+  - content: "What does an Azure Database for PostgreSQL flexible-server firewall rule with both addresses set to 0.0.0.0 permit?"
     choices:
-    - content: "From 0.0.0.0 to 255.255.255.255"
+    - content: "Connection attempts from all public IPv4 addresses"
       isCorrect: false
-      explanation: "This range allows all external and internal IP addresses."
-    - content: "From 0.0.0.0 to 0.0.0.0"
+      explanation: "The range 0.0.0.0 through 255.255.255.255 permits connection attempts from all public IPv4 addresses."
+    - content: "Connection attempts from Azure services and resources, including those in other customers' subscriptions"
       isCorrect: true
-      explanation: "Correct. This range allows only internal IP addresses."
-    - content: "From 255.255.255.255 to 255.255.255.255"
+      explanation: "Correct. This is the Azure-services exception. It isn't limited to one application or subscription, and clients must still authenticate."
+    - content: "Connection attempts only from this Container Apps environment"
       isCorrect: false
-      explanation: "This range isn't valid."
-
+      explanation: "This setting doesn't identify a specific Container Apps environment."
