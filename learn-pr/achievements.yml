@@ -5,6 +5,11 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.become-learn-contributor.badge
+  type: badge
+  title: Become a Microsoft Learn Contributor
+  summary: Discover how to contribute to Microsoft Learn! Become a contributor by improving documentation content, posting in Microsoft Q&A, creating a Collection, and sharing Microsoft Learn resources. 
+  iconUrl: /training/achievements/generic-badge.svg 
 - uid: learn.wwl.guided-project-create-sk-assistant.badge
   type: badge
   title: Guided project - Create a DevOps Assistant with the Semantic Kernel SDK 
