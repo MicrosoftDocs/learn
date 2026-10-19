@@ -29,5 +29,6 @@ By the end of this module, you'll be able to do the following tasks:
 
 As a Java developer, you're already familiar with building apps. As you complete the exercises in this module, you use a personal Azure account. Make sure that you have the following resources:
 
-- An Azure subscription with access to create, update, and remove resources.
-- Local installations of Docker CLI, Git CLI, and the Azure CLI, version 2.66 or later.
+- An Azure subscription with permission to create, update, and delete the exercise resources, plus permission to assign the AKS kubelet's pull role at the container registry scope.
+- A local Bash environment with Git and the latest supported Azure CLI installed and available.
+- Docker Desktop configured to run Linux containers, or Docker Engine on Linux, with the Docker CLI able to reach the running daemon from that Bash environment.

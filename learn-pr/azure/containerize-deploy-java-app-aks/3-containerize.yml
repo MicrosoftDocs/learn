@@ -3,9 +3,9 @@ uid: learn.containerize-deploy-java-app-aks.containerize
 title: Containerize a Java app
 metadata:
   unitType: Containerize a Java app
-  title: Containerize a Java app
+  title: Containerize a Java App
   description: Containerize a Java app.
-  ms.date: 02/12/2025
+  ms.date: 10/16/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

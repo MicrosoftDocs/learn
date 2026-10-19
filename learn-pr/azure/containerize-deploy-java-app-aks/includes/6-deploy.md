@@ -1,7 +1,9 @@
-In this unit, you deploy a container image to Azure Kubernetes Service (AKS). With AKS, you configure your Kubernetes cluster to run in a desired state via a *deployment*, which is the process of providing declarative updates to pods and ReplicaSets. This declaration of state is administered in the manifest YAML file, and the Kubernetes controller changes the current state to the declared state when instructed. You create this **deployment.yml** manifest file and instruct your AKS instance to run in a desired state with pods configured to pull and run the `flightbookingsystemsample` container image contained in the Azure container registry that you pushed in the previous unit. Without this manifest file, you have to manually create, update, and delete pods, instead of letting Kubernetes orchestrate the process.
+In this unit, you deploy a container image to Azure Kubernetes Service (AKS). With AKS, you configure your Kubernetes cluster to run in a desired state via a *deployment*, which is the process of providing declarative updates to pods and ReplicaSets. This declaration of state is administered in the manifest YAML file, and the Kubernetes controller changes the current state to the declared state when instructed. You create this **deployment.yml** manifest file and instruct your AKS instance to run in a desired state with pods configured to pull and run the `flightbookingsystemsample` container image contained in the Azure container registry that you pushed in the previous unit. This manifest declaratively defines a Deployment and a Service. Kubernetes uses the Deployment controller to manage the application's pods; you can also create a Deployment imperatively with `kubectl create deployment`.
 
 > [!NOTE]
 > If your session has idled out or you're doing this step at another point in time or from another CLI, you might have to reinitialize your environment variables and reauthenticate by using the following commands:
+>
+> Restore the resource-variable values used in setup. Replace `<your-subscription-ID>` below with the ID of the subscription you used for this module. If sign-in presents a subscription selector, choose that same subscription. Run the authentication commands one at a time. After `az account show`, confirm that the active subscription matches setup before continuing. If a command fails, stop and resolve the error.
 >
 > ```azurecli
 > export AZ_RESOURCE_GROUP=java-containerization-demo-rg
@@ -10,18 +12,16 @@ In this unit, you deploy a container image to Azure Kubernetes Service (AKS). Wi
 > export AZ_LOCATION=<your-Azure-region>
 > export AZ_KUBERNETES_CLUSTER_DNS_PREFIX=<your-unique-DNS-prefix-to-access-your-AKS-cluster>
 > az login
-> az acr login --name $AZ_CONTAINER_REGISTRY
+> az account set --subscription "<your-subscription-ID>"
+> az account show --output table
+> az acr login --name "$AZ_CONTAINER_REGISTRY"
 > ```
 
 ## Deploy a container image
 
-Now you deploy the `flightbookingsystemsample` container image to your AKS cluster. Within the root folder of your project, **Flight-Booking-System-JavaServlets_App/Project/Airlines**, create a file named **deployment.yml** by using the following command:
+Now you deploy the `flightbookingsystemsample` container image to your AKS cluster. In `containerize-and-deploy-Java-app-to-Azure/Project/Airlines`, use an installed text editor to create a file named **deployment.yml**. This path is relative to the parent directory where you cloned the repository. If you're already in `Project/Airlines`, stay there rather than changing into the full relative path again. Create the file and run the later `kubectl apply -f deployment.yml` command from this directory.
 
-```bash
-vi deployment.yml
-```
-
-Add the following contents to **deployment.yml**, and then save and exit. Be sure to replace the `<AZ_CONTAINER_REGISTRY>` placeholder with the value of the `AZ_CONTAINER_REGISTRY` environment variable value that you set earlier. To save and exit, press <kbd>ESC</kbd>, type **:wq!**, and then press <kbd>Enter</kbd>.
+Add the following contents to **deployment.yml**, and then save the file. Replace the `<AZ_CONTAINER_REGISTRY>` placeholder with the value of the `AZ_CONTAINER_REGISTRY` environment variable that you set earlier.
 
 ```yml
 apiVersion: apps/v1
@@ -38,6 +38,9 @@ spec:
       labels:
         app: flightbookingsystemsample
     spec:
+      nodeSelector:
+        kubernetes.io/os: linux
+        kubernetes.io/arch: amd64
       containers:
       - name: flightbookingsystemsample
         image: <AZ_CONTAINER_REGISTRY>.azurecr.io/flightbookingsystemsample:latest
@@ -65,17 +68,48 @@ spec:
 ```
 
 > [!NOTE]
-> Optionally, you can use the **deployment_solution.yml** file in the root folder of your project, which contains the contents you need. You might find it easier to rename or update the contents of that file.
+> If you use the **deployment_solution.yml** file in the root folder of your project as a starting point, update its image to the same registry image and `:latest` tag shown here. Also add the same Linux AMD64 `nodeSelector` under the Deployment's `spec.template.spec`, alongside `containers`. Don't use the alternative unchanged: its image and node selector must match this module's build platform.
 
 In the preceding **deployment.yml**, the file contains a deployment and a service. The deployment is used to administer a set of pods, and the service is used to allow network access to the pods. The pods are configured to pull a single image, `<AZ_CONTAINER_REGISTRY>.azurecr.io/flightbookingsystemsample:latest`, from Azure Container Registry. The service is configured to allow incoming HTTP pod traffic to port 8080, similar to the way you ran the container image locally with the `-p` port argument.
 
-If the deployment succeeded, you now have an AKS cluster. Configure your Azure CLI to access your AKS cluster via the `kubectl` command. Install `kubectl` locally by using the following command:
+The node selector restricts the pods to Linux AMD64 nodes, matching the `linux/amd64` image built earlier. It belongs to the Deployment, not the Service. A selector restricts scheduling; it doesn't make an incompatible image run on another architecture.
+
+Before configuring cluster access, ensure that the AKS cluster creation in the setup unit completed successfully. Check its provisioning state and current Kubernetes version:
 
 ```azurecli
-az aks install-cli
+az aks show \
+    --resource-group "$AZ_RESOURCE_GROUP" \
+    --name "$AZ_KUBERNETES_CLUSTER" \
+    --query '{provisioningState:provisioningState,currentKubernetesVersion:currentKubernetesVersion}' \
+    --output table
 ```
 
-Configure kubectl to connect to your AKS cluster by using the following command:
+Don't continue if the command fails, `provisioningState` isn't `Succeeded`, or `currentKubernetesVersion` isn't a nonempty version in `major.minor.patch` format.
+
+The following tool instructions apply to the local Linux, macOS, or WSL Bash session established in setup, not native PowerShell or Command Prompt. If you already have working `kubectl` and `kubelogin` installations in that session, retain them instead of reinstalling. Check them with `kubectl version --client` and `kubelogin --version`, and ensure that `kubectl` meets the [supported version-skew policy](https://kubernetes.io/releases/version-skew-policy/#kubectl) for the cluster.
+
+Otherwise, replace `<control-plane-version>` with the returned `currentKubernetesVersion`. Install that matching `kubectl` version and `kubelogin` into user-writable locations:
+
+```bash
+KUBECTL_VERSION="<control-plane-version>"
+if [[ "$KUBECTL_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+    mkdir -p "$HOME/.local/bin" &&
+    az aks install-cli \
+        --client-version "$KUBECTL_VERSION" \
+        --install-location "$HOME/.local/bin/kubectl" \
+        --kubelogin-install-location "$HOME/.local/bin/kubelogin" &&
+    export PATH="$HOME/.local/bin:$PATH" &&
+    kubectl version --client &&
+    kubelogin --version
+else
+    printf 'Stop: set KUBECTL_VERSION to the returned major.minor.patch version.\n' >&2
+    false
+fi
+```
+
+Both installation paths include the executable filename. The `PATH` export applies only to the current shell; repeat it in a new session or add it to the appropriate Bash startup configuration. Resolve any installation or version-check failure before continuing.
+
+After both tools are available and verified, configure `kubectl` to connect to your AKS cluster:
 
 ```azurecli
 az aks get-credentials \
@@ -89,7 +123,16 @@ The following output is typical:
 Merged AZ_KUBERNETES_CLUSTER as current context in ~/.kube/config
 ```
 
-Use AKS to apply **deployment.yml** changes to your cluster by using the following command:
+Check the actual node operating systems and architectures before applying the manifest:
+
+```bash
+kubectl get nodes \
+    -o custom-columns='NAME:.metadata.name,OS:.status.nodeInfo.operatingSystem,ARCH:.status.nodeInfo.architecture'
+```
+
+This module's `linux/amd64` build path requires Linux AMD64 nodes. If there are no matching nodes, stop and resolve the mismatch before continuing. Use a supported AMD64 node pool, or rebuild, run, and push the image for another supported Linux node architecture and update the Deployment's architecture selector to match. The Docker `--platform` option doesn't create or change an AKS node pool.
+
+From `containerize-and-deploy-Java-app-to-Azure/Project/Airlines`, apply **deployment.yml** to your cluster:
 
 ```azurecli
 kubectl apply -f deployment.yml
@@ -126,13 +169,16 @@ NAME                                                  DESIRED   CURRENT   READY 
 replicaset.apps/flightbookingsystemsample-b7fd6684f   1         1         1       37s
 ```
 
-If your `POD` status is `Running`, the app should be accessible. View the app logs within each pod by using the following command:
+A pod's `Running` status doesn't confirm that Tomcat has finished deploying the application or that HTTP requests succeed. Wait for the deployment rollout, then follow the application startup logs:
 
 ```bash
-kubectl logs pod/flightbookingsystemsample-<pod-identifier-from-your-running-pod>
+kubectl rollout status deployment/flightbookingsystemsample --timeout=300s &&
+kubectl logs deployment/flightbookingsystemsample --tail=100 --follow
 ```
 
-The following output is typical:
+A successful rollout checks Kubernetes availability. Because this manifest has no application readiness probe, the rollout isn't an HTTP health test. Follow the logs until Tomcat reports completed server startup and deployment of **AirlinesReservationSample.war** has completed without errors. Then press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop following the logs. This stops only the log stream, not the container. If the rollout or application startup fails or doesn't complete, inspect the logs and pod events instead of continuing to the browser check.
+
+The following historical output illustrates startup messages from an earlier Tomcat 10.1.33 image. It isn't output from the updated image in this module; use your own logs to verify startup rather than expecting the same versions, timestamps, or environment details:
 
 ```output
 kubectl logs pod/flightbookingsystemsample-b7fd6684f-4j8vf
@@ -187,10 +233,17 @@ WARNING:Error in the metadata of the table SEATS: table's row count in the metad
 15-Nov-2024 12:31:56.501 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4897] milliseconds
 ```
 
-Use the `EXTERNAL-IP` from your `kubectl get services flightbookingsystemsample` output to access the running app within AKS. The following output is typical:
+Watch the service for its external address:
+
+```bash
+kubectl get service flightbookingsystemsample --watch
+```
+
+The `EXTERNAL-IP` value can initially be `<pending>` while Azure provisions the load balancer. This can take several minutes and isn't evidence of a failed deployment by itself. When an address appears, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop watching. If provisioning doesn't complete, stop the watch and inspect the service events with `kubectl describe service flightbookingsystemsample`.
+
+The following illustrative output shows where the assigned address appears:
 
 ```output
-kubectl get services flightbookingsystemsample
 NAME                        TYPE           CLUSTER-IP    EXTERNAL-IP     PORT(S)          AGE
 flightbookingsystemsample   LoadBalancer   10.0.62.153   <external-IP>   8080:30534/TCP   3m28s
 ```
@@ -198,11 +251,24 @@ flightbookingsystemsample   LoadBalancer   10.0.62.153   <external-IP>   8080:30
 > [!NOTE]
 > Substitute the IP address `<external-IP>` in the following URL with your `EXTERNAL-IP` value from the command you previously executed:
 
-Open a browser and visit the Flight Booking System Sample landing page at `http://<external-IP>:8080/AirlinesReservationSample/`. Your browser should look similar to the following screenshot:
+Open a browser and visit the Flight Booking System Sample landing page at `http://<external-IP>:8080/AirlinesReservationSample/`. Confirm that the application page responds; a `Running` pod or an assigned IP alone doesn't prove application readiness. Your browser should look similar to the following screenshot:
 
-:::image type="content" source="../media/deploy.png" alt-text="Screenshot showing the running app.":::
+:::image type="content" source="../media/deploy.png" alt-text="Screenshot of the Flight Booking System landing page running on Azure Kubernetes Service in a browser.":::
 
 You can optionally sign in with any user from **tomcat-users.xml** - for example, `someuser@azure.com: password`.
+
+### Troubleshoot an image-platform mismatch
+
+For pod startup failures, inspect `kubectl describe pods -l app=flightbookingsystemsample`, `kubectl logs deployment/flightbookingsystemsample --tail=100`, and `kubectl get events --sort-by=.metadata.creationTimestamp`. A `CrashLoopBackOff` state can have several causes, including application errors; don't assume every failure is an architecture mismatch.
+
+If you confirm that an already-deployed image has the wrong platform, first repeat the build, local run, image inspection, registry tagging, and push steps with the matching platform settings. After the corrected image has been successfully rebuilt, retagged, and pushed under the same `:latest` tag, explicitly replace the running pods:
+
+```bash
+kubectl rollout restart deployment/flightbookingsystemsample &&
+kubectl rollout status deployment/flightbookingsystemsample --timeout=300s
+```
+
+For this manifest, `:latest` defaults to `imagePullPolicy: Always`, so replacement pods resolve the current registry tag. Reapplying an unchanged manifest alone doesn't trigger a rollout. If you customized the pull policy, use an updated image tag or digest and update the Deployment instead. Repeat the startup-log and application URL checks after the rollout.
 
 ## Clean up resources
 

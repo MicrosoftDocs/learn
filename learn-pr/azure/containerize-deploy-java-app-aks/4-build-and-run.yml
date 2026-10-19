@@ -3,9 +3,9 @@ uid: learn.containerize-deploy-java-app-aks.build-and-run
 title: Build and run a container image for the Java app
 metadata:
   unitType: Build and run a container image for the Java app
-  title: Build and run a container image for the Java app
+  title: Build and Run a Container Image for the Java App
   description: Build and run a container image for the Java app.
-  ms.date: 02/12/2025
+  ms.date: 10/16/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
