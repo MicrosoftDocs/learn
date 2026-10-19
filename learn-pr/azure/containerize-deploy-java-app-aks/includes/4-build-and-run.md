@@ -5,15 +5,17 @@ In this unit, you build and run the container image. As you learned earlier, a r
 Now that you successfully constructed a Dockerfile, you can instruct Docker to build a container image for you.
 
 > [!NOTE]
-> Ensure your Docker runtime is configured to build Linux containers. This configuration is important because the Dockerfile we're using references container images (JDK/JRE) for the Linux architecture.
+> Ensure your Docker runtime is configured to build Linux containers. The Dockerfile references Linux-based images.
+>
+> These commands build a Linux AMD64 image for AMD64 AKS nodes. On an ARM64 development machine, such as Apple Silicon, Docker Desktop can build and run this image using emulation, which can be slower. A standalone Docker Engine environment needs suitable emulation or a native AMD64 builder. Building a Linux container alone doesn't ensure that its CPU architecture matches the cluster.
 
-The command you use to build container images is `docker build`. You use the `-t` argument to specify a container label, and the `.` is the location for Docker to find the Dockerfile. Run the following command:
+The command you use to build container images is `docker build`. Use `--platform linux/amd64` to select the platform and `-t` to specify the image name and tag. The `.` is the build context containing your Dockerfile and application source. Run the following command from `containerize-and-deploy-Java-app-to-Azure/Project/Airlines`:
 
 ```bash
-docker build -t flightbookingsystemsample .
+docker build --platform linux/amd64 -t flightbookingsystemsample:latest .
 ```
 
-The following output is typical:
+The following historical build output is illustrative. It was captured with Tomcat 10.1.33 and the `17-mariner` image tag, not the updated Dockerfile. Versions, image tags, digests, and timings can differ. Use the preceding build command rather than the command shown in this captured output:
 
 ```output
 docker build -t flightbookingsystemsample .
@@ -66,7 +68,7 @@ Docker can also display the available images that are resident, which is helpful
 docker images
 ```
 
-The following output is typical:
+The following historical image listing is illustrative. Your image ID, creation time, and size can differ:
 
 ```output
 docker images
@@ -78,13 +80,13 @@ flightbookingsystemsample   latest   43d4ab3ab045 30 minutes ago 475MB
 
 Now that you successfully built a container image, you can run it.
 
-You use the `docker run` command to run a container image. The `-p ####:####` argument forwards localhost HTTP traffic - the first port, before the colon - to the container at runtime - the second port, after the colon. The Dockerfile specifies that the Tomcat app server is listening for HTTP traffic on port 8080. Therefore, that's the container port that you need to expose. Finally, you need the image tag `flightbookingsystemsample` to tell Docker which image to run. Run the following command:
+You use the `docker run` command to run a container image. The `-p ####:####` argument forwards localhost HTTP traffic - the first port, before the colon - to the container at runtime - the second port, after the colon. The Dockerfile specifies that the Tomcat app server is listening for HTTP traffic on port 8080. Therefore, that's the container port that you need to expose. Use `--platform linux/amd64` to select the same platform as the build, and `flightbookingsystemsample:latest` to identify the image to run. Run the following command:
 
 ```bash
-docker run -p 8080:8080 flightbookingsystemsample
+docker run --platform linux/amd64 -p 8080:8080 flightbookingsystemsample:latest
 ```
 
-The following output is typical:
+The following historical startup output is illustrative. It was captured with Tomcat 10.1.33, before the Dockerfile updates. Runtime versions, operating-system details, and timings can differ from the updated Dockerfile. Use the preceding run command rather than the command shown in this captured output:
 
 ```output
 docker run -p 8080:8080 flightbookingsystemsample
@@ -141,7 +143,7 @@ WARNING:Error in the metadata of the table SEATS: table's row count in the metad
 
 Open a browser window and visit the Flight Booking System for Airline Reservations landing page at `http://localhost:8080/AirlinesReservationSample/`. Your browser should look similar to the following screenshot:
 
-:::image type="content" source="../media/build-and-run.png" alt-text="Screenshot showing the running app.":::
+:::image type="content" source="../media/build-and-run.png" alt-text="Screenshot of the Flight Booking System landing page running locally in a browser.":::
 
 You can optionally sign in with any user from **tomcat-users.xml** - for example, `someuser@azure.com: password`.
 

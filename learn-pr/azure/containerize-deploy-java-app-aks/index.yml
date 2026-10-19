@@ -2,9 +2,9 @@
 uid: learn.containerize-deploy-java-app-aks
 metadata:
   moduleType: standard
-  title: Containerize and deploy a Java app to Azure
+  title: Containerize and Deploy a Java App to Azure
   description: Containerize a Java app, push the container image to Azure Container Registry, and then deploy to Azure Kubernetes Service.
-  ms.date: 02/12/2025
+  ms.date: 10/16/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module
@@ -19,8 +19,9 @@ abstract: |
   - Push the container image to Azure Container Registry.
   - Deploy the container image to Azure Kubernetes Service.
 prerequisites: |
-  - An Azure subscription with access to create, update & remove resources.
-  - Local installations of Docker CLI, Git CLI, and the Azure CLI, version 2.12 or later.
+  - An Azure subscription with permission to create, update, and delete the exercise resources, plus permission to assign the AKS kubelet's pull role at the container registry scope.
+  - A local Bash environment with Git and the latest supported Azure CLI installed and available.
+  - Docker Desktop configured to run Linux containers, or Docker Engine on Linux, with the Docker CLI able to reach the running daemon from that Bash environment.
 iconUrl: /training/achievements/containerize-deploy-java-app-aks.svg
 levels:
   - intermediate

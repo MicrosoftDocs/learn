@@ -3,6 +3,8 @@ In this unit, you use the Azure Container Registry service to push a container i
 > [!NOTE]
 > If your session has idled out or you're doing this step at another point in time or from another CLI, you might have to reinitialize your environment variables and reauthenticate by using the following commands:
 >
+> Restore the resource-variable values used in setup. Replace `<your-subscription-ID>` below with the ID of the subscription you used for this module. If sign-in presents a subscription selector, choose that same subscription. Run the authentication commands one at a time. After `az account show`, confirm that the active subscription matches setup before continuing. If a command fails, stop and resolve the error.
+>
 > ```azurecli
 > export AZ_RESOURCE_GROUP=java-containerization-demo-rg
 > export AZ_CONTAINER_REGISTRY=<your-container-registry>
@@ -10,7 +12,9 @@ In this unit, you use the Azure Container Registry service to push a container i
 > export AZ_LOCATION=<your-Azure-region>
 > export AZ_KUBERNETES_CLUSTER_DNS_PREFIX=<your-unique-DNS-prefix-to-access-your-AKS-cluster>
 > az login
-> az acr login --name $AZ_CONTAINER_REGISTRY
+> az account set --subscription "<your-subscription-ID>"
+> az account show --output table
+> az acr login --name "$AZ_CONTAINER_REGISTRY"
 > ```
 
 ## Push a container image
@@ -22,6 +26,15 @@ You can push your newly built container image to your Azure container registry. 
    ```azurecli
    az acr login
    ```
+
+1. Inspect the actual local image before tagging or pushing:
+
+   ```bash
+   docker image inspect flightbookingsystemsample:latest \
+     --format '{{.Os}}/{{.Architecture}}'
+   ```
+
+   For this path, the result must be `linux/amd64`. If it differs, rebuild and run the image with `--platform linux/amd64` as described in the previous unit before continuing. Tagging and pushing preserve the image platform; they don't change its architecture.
 
 1. Use the following command to tag the previously built container image with your Azure container registry:
 
@@ -43,7 +56,7 @@ You can push your newly built container image to your Azure container registry. 
        --image flightbookingsystemsample:latest
    ```
 
-The following output is typical:
+The following historical metadata is illustrative. Your image digest and timestamps can differ after you build and push the updated image:
 
 ```json
 {
