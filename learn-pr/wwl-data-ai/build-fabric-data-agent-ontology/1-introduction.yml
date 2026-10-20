@@ -3,10 +3,10 @@ uid: learn.wwl.build-fabric-data-agent-ontology.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to building a Fabric data agent with an ontology as its data source, letting clinical staff ask natural language questions and get governed answers without writing code.
-  ms.date: 04/17/2026
-  author: theresa-i
-  ms.author: theresai
+  description: Introduction to using ontology as business context for source-native queries in a Fabric data agent.
+  ms.date: 10/20/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false
