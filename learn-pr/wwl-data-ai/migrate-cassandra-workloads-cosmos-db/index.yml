@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-cassandra-workloads-cosmos-db
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 39
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+  skills:
+    - Databases
+    - "Data Administration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/index.yml
+  uid: 3f4de538-dc17-4094-b97c-664723de7aae
   title: Migrate Cassandra workloads to Cosmos DB
   description: "Migrate Cassandra workloads to Cosmos DB"
   ms.date: 02/01/2021

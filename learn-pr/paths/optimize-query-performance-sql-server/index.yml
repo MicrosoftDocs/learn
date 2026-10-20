@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.optimize-query-performance-sql-server
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - data-engineer
+  skills:
+    - SQL
+    - "Data Administration"
+    - Databases
+    - "Database Design"
+    - "Data Warehousing"
+    - "Infrastructure Management"
+    - "Cloud Administration"
+    - "Data Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/optimize-query-performance-sql-server/index.yml
+  uid: b2b5af33-0998-41d8-a083-621a91c93c0a
   title: Optimize query performance in Azure SQL
   description: Optimize query performance in Azure SQL
   ms.date: 08/05/2026

@@ -1,6 +1,42 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-ai-solutions-azure-database-postgresql
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - data-engineer
+    - database-administrator
+    - developer
+  skills:
+    - Databases
+    - SQL
+    - "Database Design"
+    - "Application Development"
+    - "Data Management"
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+    - "Vector Databases"
+    - "Embedding Models"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Database Development"
+    - "Data Engineering"
+    - "Generative AI"
+    - "Semantic Search"
+    - "AI Infrastructure"
+    - "Cloud Administration"
+    - "Python (Programming Language)"
+    - "Application Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/develop-ai-solutions-azure-database-postgresql/index.yml
+  uid: 8d705697-44e4-4c49-baad-eaf0d93633f4
   title: Develop AI Solutions with Azure Database for PostgreSQL
   description: Learn how to develop AI solutions using Azure Database for PostgreSQL, including vector search with pgvector for RAG pipelines and semantic retrieval.
   ms.date: 02/01/2026

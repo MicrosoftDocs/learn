@@ -1,6 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-sap-azure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - systems-administrator
+  skills:
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "Cloud Administration"
+    - Storage
+    - Automation
+    - "Solution Architecture"
+    - "Network Connectivity"
+    - "Identity and Access Management (IAM)"
+    - "IT Networking"
+    - "Platform Engineering"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/deploy-sap-azure/index.yml
+  uid: 0e8fd329-be75-4c47-9cd9-86a54485d688
   title: Deploy SAP on Azure
   description: Deploy SAP on Azure
   ms.date: 01/04/2024

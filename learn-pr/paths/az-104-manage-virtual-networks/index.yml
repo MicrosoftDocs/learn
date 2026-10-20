@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.az-104-manage-virtual-networks
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - network-engineer
+  skills:
+    - "Network Connectivity"
+    - "IT Networking"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - Cybersecurity
+    - "Security Architecture Design"
+    - "Solution Architecture"
+    - "Application Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-104-manage-virtual-networks/index.yml
+  uid: 47b7533b-7c04-44d4-9312-abe9138348e8
   title: 'AZ-104: Configure and manage virtual networks for Azure administrators'
   description: 'AZ-104: Configure and manage virtual networks for Azure administrators'
   ms.date: 06/23/2026

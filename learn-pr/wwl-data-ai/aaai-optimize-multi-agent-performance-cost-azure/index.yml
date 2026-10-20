@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.optimize-multi-agent-performance-cost-azure
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 40
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+    - azure
+    - azure-openai
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - solution-architect
+    - platform-engineer
+  skills:
+    - "Agent Operations"
+    - "Multi-Agent Orchestration"
+    - "AI Infrastructure"
+    - "AI Model Evaluation & Testing"
+    - "Model Hosting & Inference"
+    - "Data Management"
+    - Automation
+    - "Platform Engineering"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/aaai-optimize-multi-agent-performance-cost-azure/index.yml
+  uid: 55af79bd-0318-43c0-8e0d-d999dc8bfe44
   title: Optimize Multi-Agent Performance and Cost in Microsoft Foundry
   description: "Optimize multi-agent performance and cost in Microsoft Foundry. Design model routing strategies across agent ecosystems, implement multi-level caching architectures, optimize token usage and context management across agent chains, and systematically analyze quality-cost-latency trade-offs."
   ms.date: 8/5/2026

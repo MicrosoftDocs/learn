@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-information-extraction
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 43
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+  skills:
+    - "Information Extraction"
+    - "Multimodal AI"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-information-extraction/index.yml
+  uid: 052c0565-00d5-42b8-8c7c-8531d169314e
   title: Get started with AI-powered information extraction in Azure
   description: Learn how to use Azure Content Understanding in Foundry Tools to extract information from content.
   author: GraemeMalcolm

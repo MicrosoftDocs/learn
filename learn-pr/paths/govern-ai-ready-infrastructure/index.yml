@@ -1,6 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.govern-ai-ready-infrastructure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - ip-admin
+    - security-engineer
+  skills:
+    - "AI Governance"
+    - "AI Compliance"
+    - "AI Safety"
+    - "Cloud Infrastructure"
+    - "AI Risk Management"
+    - "Identity and Access Management (IAM)"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "AI Infrastructure"
+    - "Platform Engineering"
+    - "Data Security"
+    - "AI Security (Model-Level)"
+    - "Responsible AI"
+    - "Security Analytics"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/govern-ai-ready-infrastructure/index.yml
+  uid: da2614db-8105-4232-a987-d2cf9426a49f
   title: Govern AI-ready Infrastructure
   description: This course teaches how to govern AI-ready infrastructure with Microsoft Foundry by enforcing policies, secure access, managing costs, regulating model behavior, and monitor compliance through practical, real-world governance scenarios.
   ms.date: 02/11/2026

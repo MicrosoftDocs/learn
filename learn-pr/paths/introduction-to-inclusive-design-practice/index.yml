@@ -1,6 +1,25 @@
 ### YamlMime:LearningPath
 uid: learn.intro-to-inclusive-design-practice
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - m365
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Digital Accessibility"
+    - "Application Development"
+  solution.area: null
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/introduction-to-inclusive-design-practice/index.yml
+  uid: dcd690f4-45fd-4add-834e-1b04a49b5778
   title: Introduction to inclusive design in practice in collaboration with Teach Access
   description: Welcome to Inclusive Design in Practice. In this learning path, you’ll explore essential concepts of digital accessibility to ensure websites and apps are inclusive for all users.
   brand: m365

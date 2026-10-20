@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-databases-for-optimal-performance
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 51
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+  skills:
+    - "Data Administration"
+    - Databases
+    - SQL
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/configure-databases-for-optimal-performance/index.yml
+  uid: 78b19806-b898-4231-9ba5-d0bece11b827
   title: Configure databases for optimal performance
   description: Configure databases for optimal performance
   ms.date: 08/05/2026

@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-app-settings-app-config
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 79
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - devops-engineer
+    - security-engineer
+  skills:
+    - "Application Development"
+    - DevOps
+    - "Application Security"
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/manage-app-settings-app-config/index.yml
+  uid: 6efd55f0-3af4-41a4-8a19-6c7de9f31827
   title: Manage Application Settings with Azure App Configuration
   description: Learn how to use Azure App Configuration to store, organize, and retrieve application settings and feature flags in AI solutions on Azure, while securely referencing secrets stored in Azure Key Vault.
   ms.date: 02/17/2026

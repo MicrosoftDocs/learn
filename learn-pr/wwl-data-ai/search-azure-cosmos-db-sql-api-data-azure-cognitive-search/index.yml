@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 32
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Data Engineering"
+    - "Database Development"
+    - Databases
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/search-azure-cosmos-db-sql-api-data-azure-cognitive-search/index.yml
+  uid: bb4385f5-54c6-4ee7-9477-5b186710f49e
   title: Search Azure Cosmos DB for NoSQL data with Azure Cognitive Search
   description: "Index Azure Cosmos DB for NoSQL data with Azure Cognitive Search."
   ms.date: 04/02/2025

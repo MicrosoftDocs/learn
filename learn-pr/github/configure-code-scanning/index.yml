@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.github.configure-code-scanning 
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 33
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+  skills:
+    - "Application Security"
+    - DevOps
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/configure-code-scanning/index.yml
+  uid: 89651272-dba2-4137-868d-3e6a881df6db
   title: "Configure Code Scanning on GitHub"
   description: This module introduces you to code scanning and its features. You'll learn how to implement code scanning using CodeQL, third party tools, and GitHub Actions.
   manager: alicondah

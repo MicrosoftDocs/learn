@@ -2,6 +2,29 @@
 uid: learn.dpu.move-forward-windows-11
 title: Move forward with Windows 11 Pro post Windows 10 end of support
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 10
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+    - intune
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - it-professional
+    - technology-manager
+  skills:
+    - "Device Management"
+    - "Cloud Administration"
+    - Cybersecurity
+    - "Zero Trust Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/move-forward-windows-11/index.yml
+  uid: 46011923-8bfa-44f3-a779-3d9903525669
   title: Move forward with Windows 11 Pro Post Windows 10 End Of Support
   description: In this module, you learn how to respond now that Windows 10 support is ended and move forward securely with Windows 11 Pro. Discover why upgrading now is essential, explore the productivity and security benefits of Windows 11 Pro, and find tools to simplify deployment.
   ms.date: 07/29/2025

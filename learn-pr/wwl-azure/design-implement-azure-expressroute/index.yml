@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-azure-expressroute
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 57
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - network-engineer
+    - solution-architect
+    - platform-engineer
+  skills:
+    - "Network Connectivity"
+    - "IT Networking"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "Cloud Administration"
+    - "Security Architecture Design"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-implement-azure-expressroute/index.yml
+  uid: 0dfbcf14-8a1e-4594-af30-1ae7f8f71fff
   adobe-target: true
   prefetch-feature-rollout: true
   title: Design and Implement Azure ExpressRoute

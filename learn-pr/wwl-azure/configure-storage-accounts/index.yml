@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-storage-accounts
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 40
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - solution-architect
+  skills:
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - "Network Connectivity"
+    - "Solution Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-storage-accounts/index.yml
+  uid: c64e3c77-5da2-4a4e-aae2-b8c0b7392328
   adobe-target: true
   prefetch-feature-rollout: true
   title: Configure Storage Accounts

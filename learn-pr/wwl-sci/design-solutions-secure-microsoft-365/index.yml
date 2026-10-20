@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.design-solutions-secure-microsoft-365
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 66
+  last.refresh.date: null
+  modality: module
+  products:
+    - m365
+    - microsoft-defender
+    - intune
+    - microsoft-purview
+    - microsoft-365-copilot
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - ip-admin
+  skills:
+    - Cybersecurity
+    - "Security Architecture Design"
+    - "Zero Trust Security"
+    - "Data Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Identity and Access Management (IAM)"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/design-solutions-secure-microsoft-365/index.yml
+  uid: 92364f4e-e669-4e11-b97f-22779d8ba8c8
   title: Evaluate Solutions for Securing Microsoft 365
   description: "You learn how to evaluate security solutions for securing Microsoft 365."
   ms.date: 05/21/2026

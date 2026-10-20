@@ -3,6 +3,37 @@ uid: learn.sell-through-commercial-marketplace
 title: Sell through the commercial marketplace
 summary: The Microsoft commercial marketplace serves as a comprehensive catalog of cloud-based applications and services, featuring a diverse array of offerings from Microsoft and a global network of partners enrolled in the Microsoft AI Cloud Partner Program. By becoming a partner in the commercial marketplace, you can equip your business or organization with the knowledge and tools necessary to propel your organization forward in the cloud marketplace. This learning path will guide you through the process of launching and marketing your cloud solutions in the commercial marketplace, enabling you to connect with customers across the globe. 
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-owner
+    - marketing
+    - sales
+    - technology-manager
+  skills:
+    - "Communications Management"
+    - "Customer Relationship Management (CRM)"
+    - "Cloud Computing"
+    - "Organizational Effectiveness"
+    - "Business Insights"
+    - "Application Architecture"
+    - "Application Development"
+    - "Identity and Access Management (IAM)"
+    - Virtualization
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - Automation
+  solution.area: null
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/sell-through-commercial-marketplace/index.yml
+  uid: 601e331b-d7bc-4a75-9653-f40913271ef8
   title: Sell through the commercial marketplace
   description: The Microsoft commercial marketplace is a catalog of cloud applications and services that contains offerings from Microsoft and thousands of partners. In this learning path, you'll be introduced to concepts that will help your organization get ready to sell your cloud products and services through the commercial marketplace.
   ms.date: 07/09/2021

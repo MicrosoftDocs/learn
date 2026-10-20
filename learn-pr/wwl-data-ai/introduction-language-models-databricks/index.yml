@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-language-models-databricks
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 64
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-databricks
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+  skills:
+    - "Generative AI"
+    - "Natural Language Processing (NLP)"
+    - "AI Prompting"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/introduction-language-models-databricks/index.yml
+  uid: a4b82dcd-af5f-4b13-a5e9-cc67d67b01c6
   title: Get Started with Language Models in Azure Databricks
   description: Get started with language models in Azure Databricks
   ms.date: 06/17/2026

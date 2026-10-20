@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-microsoft-365-services-use-windows-powershell
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - m365
+    - entra
+    - office-sp
+    - office-teams
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - systems-administrator
+  skills:
+    - "Identity and Access Management (IAM)"
+    - Automation
+    - "Cloud Administration"
+    - "Collaboration Tools"
+    - "Infrastructure Management"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-microsoft-365-services-use-windows-powershell/index.yml
+  uid: 4c3164e4-687e-4c54-b5ad-ebbb17592158
   title: Manage Microsoft 365 services by using Windows PowerShell
   description: This learning path explains how to efficiently manage the most commonly used services in Microsoft 365, such as Microsoft Entra ID, Microsoft Exchange Online, Microsoft SharePoint Online, and Microsoft Teams.
   ms.date: 05/12/2026

@@ -2,6 +2,25 @@
 uid: learn.dpu.hotpatch-updates-2026
 title: Hotpatch updates for Windows client devices
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 10
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+    - intune
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - "Device Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/hotpatch-updates-2026/index.yml
+  uid: 99d9209d-e2fc-418a-8d6a-aca5daca6338
   title: Hotpatch Updates For Windows Client Devices
   description: In this module, you’ll explore how Windows hotpatching operates within the broader update ecosystem. You’ll review the configuration steps for enabling hotpatch updates, examine eligibility requirements for x64 and ARM64 devices, and see how ring deployment helps IT admins manage updates safely and efficiently.
   ms.date: 10/07/2025

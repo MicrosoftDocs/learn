@@ -1,6 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.introduction-machine-learn-operations
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure-machine-learning
+    - azure-devops
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - data-scientist
+  skills:
+    - DevOps
+    - "Machine Learning"
+    - Automation
+    - "Identity and Access Management (IAM)"
+    - "Data Science"
+    - "Application Development"
+    - "AI Model Evaluation & Testing"
+    - "Platform Engineering"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/introduction-machine-learn-operations/index.yml
+  uid: ac87d8ca-1700-4c65-bdba-91db662ba74d
   title: Introduction to machine learning operations (MLOps)
   description: Introduction to machine learning operations (MLOps)
   ms.date: 12/01/2025

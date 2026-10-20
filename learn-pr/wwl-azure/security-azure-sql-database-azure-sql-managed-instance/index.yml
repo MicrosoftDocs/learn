@@ -1,6 +1,39 @@
 ### YamlMime:Module
 uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 78
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - entra
+    - microsoft-purview
+    - defender-for-cloud
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - security-engineer
+    - identity-access-admin
+    - ip-admin
+    - administrator
+  skills:
+    - "Data Security"
+    - Databases
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Threat Management"
+    - "Security Analytics"
+    - "Network Connectivity"
+    - SQL
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/index.yml
+  uid: 97e6df42-9d9a-4389-83cf-660e2d183621
   title: Plan and implement security for Azure SQL Database and Azure SQL Managed Instance
   description: "This module is designed to empower administrators with the knowledge and skills needed to plan and implement robust security measures for Azure SQL Database and Azure SQL Managed Instance, ensuring data protection and regulatory compliance."
   ms.date: 02/24/2025

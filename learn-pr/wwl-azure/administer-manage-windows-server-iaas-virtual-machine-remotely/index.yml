@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.administer-manage-windows-server-iaas-vm-remotely
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 44
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - defender-for-cloud
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - it-professional
+  skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Network Connectivity"
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/administer-manage-windows-server-iaas-virtual-machine-remotely/index.yml
+  uid: 4b4828e5-8b69-4c9d-bee8-ff8f491f96fe
   title: Administer and manage Windows Server IaaS Virtual Machine remotely
   description: "Learn how to remotely administer Windows Server IaaS VMs in Azure using the Azure portal, Windows Admin Center, Azure PowerShell, Azure CLI, Azure Bastion for secure RDP/SSH, and Just-In-Time (JIT) VM access."
   ms.date: 08/31/2026

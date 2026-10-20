@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-significant-government-strategy-actions
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 78
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ip-admin
+    - risk-practitioner
+    - technology-manager
+  skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "IT Strategy"
+    - Cybersecurity
+    - "Cloud Computing"
+    - "Data Security"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-significant-government-strategy-actions/index.yml
+  uid: d5d00600-14e6-4eae-8bbd-22510685dbcf
   title: Describe significant government strategy actions
   description: Understand legislation, memoranda, executive orders, and policies that significantly set the government's cloud computing approach.
   ms.date: 04/29/2022

@@ -1,6 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.github-foundations-2
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+  skills:
+    - "Application Development"
+    - DevOps
+    - "Collaboration Tools"
+    - "Communications Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Application Security"
+    - "Security Automation"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Zero Trust Security"
+    - "Security Architecture Design"
+    - "Organizational Effectiveness"
+    - "AI-Augmented Software Development"
+    - "Python (Programming Language)"
+    - "Prompt Engineering"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/github-foundations-2/index.yml
+  uid: 0af80fc6-e940-41bd-ae0e-0ededcb38ad0
   title: GitHub Foundations Part 2 of 2
   description: The GitHub Foundations Learning Path Part 2 of 2 is a concise and beginner-friendly journey designed to introduce you to the fundamental concepts and products of GitHub.
   brand: github

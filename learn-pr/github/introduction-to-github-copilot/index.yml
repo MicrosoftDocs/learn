@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.github.introduction-to-github-copilot
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 19
+  last.refresh.date: null
+  modality: module
+  products:
+    - github-copilot
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - student
+  skills:
+    - "AI-Augmented Software Development"
+    - "AI Prompting"
+    - "AI Productivity"
+    - "Generative AI"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/introduction-to-github-copilot/index.yml
+  uid: a69d52c6-8a71-4e28-bb87-b2e4a38065b4
   title: Introduction to GitHub Copilot
   description: GitHub Copilot is an AI-powered coding assistant that helps you write, understand, refactor, and maintain code directly from your editor and chat interface.
   author: a-a-ron

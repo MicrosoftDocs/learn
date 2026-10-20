@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-deploy-administer-linux-virtual-machines-azure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 180
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - Storage
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/guided-project-deploy-administer-linux-virtual-machines-azure/index.yml
+  uid: a3addc10-0004-4c87-a87a-31138331a1be
   title: 'Guided Project: Deploy and administer Linux virtual machines on Azure'
   description: "You learn how to create and configure Linux virtual machines in Microsoft Azure."
   ms.date: 06/23/2026

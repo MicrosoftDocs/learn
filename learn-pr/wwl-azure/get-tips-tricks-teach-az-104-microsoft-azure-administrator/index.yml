@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-teach-az-104-microsoft-azure-administrator
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 130
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - faculty
+  skills:
+    - "Cloud Administration"
+    - "Organizational Effectiveness"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/get-tips-tricks-teach-az-104-microsoft-azure-administrator/index.yml
+  uid: 9e5ded34-6328-45ea-abd6-c784b9d09a7d
   title: Get tips and tricks for teaching AZ-104 Microsoft Azure Administrator
   description: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
   ms.date: 04/01/2024

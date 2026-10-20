@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-audit-search-investigate
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 57
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-purview
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ip-admin
+  skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Threat Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-audit-search-investigate/index.yml
+  uid: 2b277325-9319-4efd-883f-99f46d0c1bf3
   title: Conduct Investigations with Microsoft Purview Audit
   description: "Conduct investigations with Microsoft Purview Audit."
   ms.date: 07/23/2026

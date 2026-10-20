@@ -2,6 +2,27 @@
 uid: learn.dpu.how-windows-enables-ai-agents
 title: How Windows enables AI and agents
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 30
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+    - microsoft-365-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - technology-manager
+  skills:
+    - "AI Fluency"
+    - "AI Productivity"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/how-windows-enables-ai-agents/index.yml
+  uid: 621c8903-694b-4999-a5c8-875c56efe01c
   title: How Windows Enables AI And Agents
   description: Discover how Windows is evolving into a platform for AI and agents by integrating Copilot into familiar experiences, enabling advanced AI on Copilot+ PCs, and creating a secure foundation for people and agents to work together.
   ms.date: 01/21/2026

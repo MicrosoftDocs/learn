@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 28
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - network-engineer
+  skills:
+    - "Network Connectivity"
+    - Automation
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-network-service-settings-for-windows-devices-use-powershell-cmdlets/index.yml
+  uid: 720ce8db-3c1c-4fd4-be57-f3ff89ea319a
   title: Manage network service settings for Windows devices using PowerShell cmdlets
   description: "This module covers the PowerShell modules and cmdlets that are used to configure network settings for Windows devices."
   ms.date: 05/12/2026

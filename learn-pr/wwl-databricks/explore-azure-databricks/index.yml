@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-databricks
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 68
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-databricks
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - data-analyst
+    - data-scientist
+  skills:
+    - "Data Engineering"
+    - "Data Analytics"
+    - "Data Management"
+    - "Data Science"
+    - "Machine Learning"
+    - SQL
+    - "Data Warehousing"
+    - "Cloud Administration"
+    - "Python (Programming Language)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-databricks/explore-azure-databricks/index.yml
+  uid: 87ffb524-24a7-45ec-af4c-17d7505edbc3
   title: Explore Azure Databricks
   description: Explore Azure Databricks
   ms.date: 10/12/2026

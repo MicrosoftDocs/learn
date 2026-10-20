@@ -2,6 +2,30 @@
 uid: learn.dpu.cloud-native-myths
 title: 'Windows 11 and cloud-native concepts: myths, realities, and best practices'
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 21
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+    - intune
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - it-professional
+    - technology-manager
+  skills:
+    - "Cloud Computing"
+    - "Device Management"
+    - "IT Strategy"
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/cloud-native-myths/index.yml
+  uid: efcd554d-f9d2-45ed-bb2d-14c302aee029
   title: 'Windows 11 And Cloud-Native Concepts: Myths, Realities, And Best Practices'
   description: This module introduces cloud-native concepts, explains how Windows 11 supports both traditional and cloud-based management, and addresses common misconceptions about device management and application compatibility. It offers practical guidance for organizations planning upgrades or transitions, highlighting how cloud-native approaches can enhance flexibility and efficiency.
   ms.date: 10/29/2025

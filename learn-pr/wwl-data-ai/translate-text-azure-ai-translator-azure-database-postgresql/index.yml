@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 18
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Natural Language Processing (NLP)"
+    - SQL
+    - "Database Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/translate-text-azure-ai-translator-azure-database-postgresql/index.yml
+  uid: 2b4b07c7-07c5-416c-8b50-61dc63e496a7
   title: Translate Text with Azure Translator and Azure Database for PostgreSQL
   description: Learn how to translate Text with Azure Translator and Azure Database for PostgreSQL.
   author: wwlpublish

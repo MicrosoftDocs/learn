@@ -2,6 +2,31 @@
 uid: learn.dpu.introduction-to-surface-laptop-13-inch
 title: Introduction to Microsoft Surface Laptop 13-inch
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 25
+  last.refresh.date: null
+  modality: module
+  products:
+    - surface
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - technology-manager
+    - systems-administrator
+    - business-user
+    - student
+  skills:
+    - "Device Management"
+    - "AI Productivity"
+    - "Digital Accessibility"
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-surface-laptop-13-inch/index.yml
+  uid: 51c27d25-4bae-4ee8-98c9-b7fec2ccd4fb
   title: Introduction To Microsoft Surface Laptop 13-Inch
   description: Explore Microsoft Surface Laptop 13-inch, a Copilot+ PC. It's focused on AI-driven productivity, secure enterprise deployment, and flexible hardware-software integration for modern IT environments.
   ms.date: 09/29/2025

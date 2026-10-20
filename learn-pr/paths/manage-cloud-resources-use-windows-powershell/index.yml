@@ -1,6 +1,28 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-cloud-resources-use-windows-powershell
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - Automation
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - "Cloud Infrastructure"
+    - "Cloud Computing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-cloud-resources-use-windows-powershell/index.yml
+  uid: e9e02222-d829-47e2-81ea-cfc4e5ab317d
   title: Manage cloud resources by using Windows PowerShell
   description: This learning path explains how to install the necessary modules for cloud services management and use PowerShell commands to perform simple administrative tasks on cloud resources such as Azure virtual machines, Azure storage accounts, and Azure subscriptions. The learning path also covers how to use the Azure Cloud Shell environment to perform PowerShell-based or Bash-based administration directly from the Azure portal.
   ms.date: 05/12/2026

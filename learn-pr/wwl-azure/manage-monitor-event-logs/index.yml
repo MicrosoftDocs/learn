@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-monitor-event-logs
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 39
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - support-engineer
+  skills:
+    - "Infrastructure Management"
+    - "Data Analytics"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-monitor-event-logs/index.yml
+  uid: c37db203-01cf-48eb-9033-a0883b6a471e
   title: Manage and monitor Windows Server event logs
   description: "Learn how to manage and monitor Windows Server event logs using Event Viewer, Windows Admin Center, Server Manager, custom views, and event subscriptions for centralized log collection."
   ms.date: 08/31/2026

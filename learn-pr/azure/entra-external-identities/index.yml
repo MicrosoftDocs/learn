@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.microsoft-entra-external-identities.eeid-poc
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 108
+  last.refresh.date: null
+  modality: module
+  products:
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - identity-access-admin
+    - developer
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+    - "Application Development"
+    - "Cloud Administration"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/entra-external-identities/index.yml
+  uid: a378e16f-2bb8-44b6-98ef-c0953d65a604
   title: Guided project – Build a sample app to evaluate Microsoft Entra External ID for seamless and secure sign-up and sign-in for consumers and business customers
   description: Discover how Microsoft Entra External ID can provide secure, seamless sign-in experiences for your consumers and business customers. Explore tenant creation, app registration, flow customization, and account security.
   ms.date: 6/25/2024

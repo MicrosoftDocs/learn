@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.describe-purview-data-solutions
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 55
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-purview
+    - m365
+    - security-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ip-admin
+    - security-operations-analyst
+  skills:
+    - "Data Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Operations Management"
+    - "Threat Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/describe-purview-data-solutions/index.yml
+  uid: 01c73d88-d40c-49d1-87c9-018b857b41f5
   title: Describe the Data Security Solutions of Microsoft Purview
   description: "Describe the data security solutions of Microsoft Purview."
   ms.date: 06/22/2026

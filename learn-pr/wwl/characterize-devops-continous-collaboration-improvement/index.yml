@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.characterize-devops-continous-collaboration-improvement
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 17
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+  skills:
+    - DevOps
+    - "Organizational Culture"
+    - "Organizational Effectiveness"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/characterize-devops-continous-collaboration-improvement/index.yml
+  uid: 46eabb8c-57d4-42e0-ac79-a9885e6b1da8
   title: Characterize DevOps Continuous Collaboration and Continuous Improvement
   description: "Characterize DevOps Continuous Collaboration and Continuous Improvement"
   ms.date: 04/16/2021

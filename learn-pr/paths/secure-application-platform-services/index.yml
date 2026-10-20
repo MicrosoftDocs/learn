@@ -1,6 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.secure-application-platform-services
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+  skills:
+    - Cybersecurity
+    - "Threat Management"
+    - "Security Analytics"
+    - "Cloud Infrastructure"
+    - "Application Security"
+    - "Zero Trust Security"
+    - "Identity and Access Management (IAM)"
+    - "IT Networking"
+    - "API Management"
+    - "Cloud Administration"
+    - "AI Governance"
+    - "Network Connectivity"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/secure-application-platform-services/index.yml
+  uid: 499301a9-b80b-4e61-9162-fdee75bf6899
   title: Secure Azure Application Platform Services for the Cloud and AI Security Engineer
   description: "Implement security controls across Azure application platform services—from container workloads to the API layer. Configure Microsoft Defender for Containers, secure Azure Kubernetes Service (AKS), Azure Container Registry (ACR), Container Instances, and Container Apps. Then apply authentication, network access, and policy controls across Azure Function apps, Logic apps, App Services, Web Application Firewall, and Azure API Management."
   ms.date: 04/15/2026

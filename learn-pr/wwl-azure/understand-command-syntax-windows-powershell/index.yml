@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-command-syntax-windows-powershell
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 28
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+  skills:
+    - Automation
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/understand-command-syntax-windows-powershell/index.yml
+  uid: 312b0955-5bbd-487e-8b35-93a298a13563
   title: Understand the command syntax in Windows PowerShell
   description: "This module covers the cmdlet structure and parameters for using Windows PowerShell cmdlets. It also explains how to use tab completion and how to display About files content."
   ms.date: 05/12/2026

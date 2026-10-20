@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-migration-options
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 54
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - it-professional
+  skills:
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-migration-options/index.yml
+  uid: d5033daa-a650-4a6a-9bdb-329a888b20c7
   title: Explore migration options for SAP on Azure
   description: "This module explores strategies for migration of SAP workloads to Azure, including migration of on-premises SAP workloads to Azure in conjunction to performing an upgrade. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 08/01/2024

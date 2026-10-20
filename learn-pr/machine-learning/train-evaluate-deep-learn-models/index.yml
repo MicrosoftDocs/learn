@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.train-evaluate-deep-learn-models
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 47
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-scientist
+    - ai-engineer
+  skills:
+    - "Machine Learning"
+    - "Computer Vision"
+    - "Data Science"
+    - "AI Model Evaluation & Testing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/machine-learning/train-evaluate-deep-learn-models/index.yml
+  uid: c0e432f9-f79d-4e87-abf7-85bcc48e6d52
   title: Train and evaluate deep learning models
   description: "Train and evaluate deep learning models"
   ms.collection: TBD

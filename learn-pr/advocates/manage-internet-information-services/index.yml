@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.devrel.manage-internet-information-services
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 45
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - "Infrastructure Management"
+    - Automation
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/manage-internet-information-services/index.yml
+  uid: e52a93e2-760b-4b52-8108-04c5b6970717
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 04/03/2026

@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.quantum.qsharp-create-first-quantum-development-kit
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 33
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-quantum
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/quantum/qsharp-create-first-quantum-development-kit/index.yml
+  uid: 0a90d65d-088a-4426-b1e2-83fc860c51b5
   title: Create your first Q# program with the Microsoft Quantum Development Kit
   description: Get started with Q# programming by building a quantum random number generator.
   ms.date: 09/16/2025

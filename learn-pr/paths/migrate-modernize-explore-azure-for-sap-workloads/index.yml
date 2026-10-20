@@ -1,6 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.migrate-modernize-explore-azure-for-sap-workloads
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - entra
+    - power-bi
+    - power-platform
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - technology-manager
+    - systems-administrator
+  skills:
+    - "Cloud Computing"
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Identity and Access Management (IAM)"
+    - "Data Analytics"
+    - "Infrastructure Management"
+    - Virtualization
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/migrate-modernize-explore-azure-for-sap-workloads/index.yml
+  uid: d0f33b11-fed2-49b9-a388-59e3e8644bf8
   title: Migrate Modernize Explore Azure for SAP workloads
   description: Modernize and explore Azure for SAP workloads
   ms.date: 01/10/2024

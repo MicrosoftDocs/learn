@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.fundamentals-machine-learning
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 93
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-scientist
+    - ai-engineer
+  skills:
+    - "Machine Learning"
+    - "AI Model Evaluation & Testing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/fundamentals-machine-learning/index.yml
+  uid: 561081a4-fa63-4a0f-8d2a-c2f09620645b
   title: Introduction to Machine Learning Concepts
   description: "Machine learning is the basis for most modern artificial intelligence solutions. A familiarity with the core concepts on which machine learning is based is an important foundation for understanding AI."
   ms.date: 03/27/2026

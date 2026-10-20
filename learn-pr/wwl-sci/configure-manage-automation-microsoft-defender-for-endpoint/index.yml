@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 34
+  last.refresh.date: null
+  modality: module
+  products:
+    - defender-endpoint
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-operations-analyst
+    - security-engineer
+    - administrator
+  skills:
+    - "Security Automation"
+    - "Security Operations Management"
+    - Cybersecurity
+    - "Zero Trust Security"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/configure-manage-automation-microsoft-defender-for-endpoint/index.yml
+  uid: 71676d3d-80d6-4467-92ca-2b7e40815468
   title: Configure and manage automation using Microsoft Defender for Endpoint
   description: "Configure and manage automation using Microsoft Defender for Endpoint"
   ms.date: 09/12/2025

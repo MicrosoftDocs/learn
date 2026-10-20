@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.analyze-review-sentiment-with-keras
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 35
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-scientist
+    - developer
+    - student
+  skills:
+    - "Machine Learning"
+    - "Natural Language Processing (NLP)"
+    - "Data Science"
+    - "Python (Programming Language)"
+    - "AI Model Evaluation & Testing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/analyze-review-sentiment-with-keras/index.yml
+  uid: 731de8dc-0893-45e6-8b64-1b898618f0d9
   title: Analyze the sentiment of reviews with Keras
   description: Learn about Keras, a high-level deep learning API in Python, to build a neural network that scores text, such as user reviews, for sentiment.
   ms.date: 02/24/2019

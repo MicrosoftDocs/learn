@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.identify-security-risks-posture-management
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 35
+  last.refresh.date: null
+  modality: module
+  products:
+    - defender-for-cloud
+    - azure
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+  skills:
+    - "Security Analytics"
+    - "Threat Management"
+    - "AI Risk Management"
+    - "AI Security (Model-Level)"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/identify-security-risks-posture-management/index.yml
+  uid: 5a7a6d8a-7b1f-41f1-9374-06a289d7b49b
   title: Identify Security Risks by Using Cloud Security Posture Management
   description: "Learn to use Cloud Security Posture Management (CSPM) in Microsoft Defender for Cloud to identify, prioritize, and trace security risks across Azure cloud and AI workloads — including attack path analysis and proactive risk hunting."
   ms.date: 03/26/2026

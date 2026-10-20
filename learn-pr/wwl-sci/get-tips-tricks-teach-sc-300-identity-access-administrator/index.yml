@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-teach-sc-300-identity-access-administrator
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 79
+  last.refresh.date: null
+  modality: module
+  products:
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - higher-ed-educator
+    - identity-access-admin
+  skills:
+    - "Career Development"
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/get-tips-tricks-teach-sc-300-identity-access-administrator/index.yml
+  uid: 04ce8016-78a2-4ae8-8b06-b6fccd162bed
   title: 'Tips and tricks for teaching SC- 300: Microsoft Identity and Access Administrator'
   description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
   ms.date: 11/17/2023

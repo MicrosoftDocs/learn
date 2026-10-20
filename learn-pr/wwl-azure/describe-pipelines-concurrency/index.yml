@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-pipelines-concurrency
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 76
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-devops
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - platform-engineer
+  skills:
+    - DevOps
+    - Automation
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-pipelines-concurrency/index.yml
+  uid: 856f7088-5fa9-4758-9678-f532be0da727
   title: Describe Pipelines And Concurrency
   description: "Learn about Azure Pipelines parallel jobs, concurrency management, Visual Designer, and YAML pipeline configurations for efficient CI/CD workflows."
   ms.date: 09/26/2025

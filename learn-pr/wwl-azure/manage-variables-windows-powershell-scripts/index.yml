@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-variables-windows-powershell-scripts
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 37
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+  skills:
+    - Automation
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-variables-windows-powershell-scripts/index.yml
+  uid: 20a8241f-ecf0-4c7f-96be-a5dda4d7dfe4
   title: Manage variables in Windows PowerShell scripts
   description: "This module explains how to create variables, name them correctly, and assign the correct data type, while ensuring the data you store in variables is in the correct format and easily accessible."
   ms.date: 05/12/2026

@@ -1,6 +1,36 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-365-defender
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - microsoft-defender
+    - defender-endpoint
+    - entra
+    - security-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-operations-analyst
+    - security-engineer
+  skills:
+    - "Threat Management"
+    - "Security Operations Management"
+    - "Security Analytics"
+    - "Security Automation"
+    - "Generative AI"
+    - "Agent Operations"
+    - "AI Model Evaluation & Testing"
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "Data Security"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/sc-200-mitigate-threats-using-microsoft-365-defender/index.yml
+  uid: d3d79977-c487-47d4-b0ac-520a8afd8bcb
   title: 'Mitigate threats using Microsoft Defender XDR'
   description: 'Mitigate threats using Microsoft Defender XDR'
   ms.date: 11/26/2025

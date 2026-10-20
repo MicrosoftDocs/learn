@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-azure-cosmos-db-nosql-sdk
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 80
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Database Development"
+    - "Identity and Access Management (IAM)"
+    - "Python (Programming Language)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/connect-azure-cosmos-db-nosql-sdk/index.yml
+  uid: 126a476f-750c-4a1a-841e-9ddc5338b887
   title: Connect to Azure Cosmos DB with the SDK
   description: "Initialize and configure the Azure Cosmos DB SDK for .NET and Python. Connect with a client singleton and tune connectivity mode. Enable offline development, and handle connection errors to build reliable data access."
   ms.date: 10/01/2026

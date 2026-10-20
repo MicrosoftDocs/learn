@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.philanthropies.get-started-with-copilot
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 31
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+  skills:
+    - "AI Fluency"
+    - "AI Productivity"
+    - "Prompt Engineering"
+    - "Digital Accessibility"
+    - "Generative AI"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/get-started-with-copilot/index.yml
+  uid: 70e0b8e6-6af5-41a5-965c-2d4b3f0715d9
   author: yoosunee
   ms.author: anruss
   ms.date: 01/14/2025

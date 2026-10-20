@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-basic-formatting
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 54
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-basic-formatting/index.yml
+  uid: 167f463c-5dff-4963-8b21-b45f7fa3c5cc
   title: Perform basic string formatting in C#
   description: "Combine literal and variable text data that contain special characters, formatting, and Unicode into meaningful messages for the end user."
   ms.date: 11/10/2025

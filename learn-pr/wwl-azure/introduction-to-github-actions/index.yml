@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-github-actions
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 30
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+  skills:
+    - DevOps
+    - Automation
+    - "Infrastructure Management"
+    - "Application Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/introduction-to-github-actions/index.yml
+  uid: cc970d04-b088-4380-b3fc-0542f8921654
   title: Introduction to GitHub Actions
   description: "Learn GitHub Actions fundamentals including workflows, events, jobs, and runners to automate your development processes"
   ms.date: 09/29/2025

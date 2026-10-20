@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.cela-accessibility.accessibility-evaluation-and-testing
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 19
+  last.refresh.date: null
+  modality: module
+  products:
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - business-user
+  skills:
+    - "Digital Accessibility"
+    - "Application Development"
+    - "Organizational Culture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/accessibility-evaluation-and-testing/index.yml
+  uid: 87caae7e-c6af-4303-af94-7259b0c9951e
   title: Accessibility evaluation and testing
   description: Explore types of accessibility testing, how to evaluate and test for accessibility, and how to identify and address accessibility issues.
   ms.date: 11/01/2024

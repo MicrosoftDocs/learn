@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-incident-readiness
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 45
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - support-engineer
+    - systems-administrator
+  skills:
+    - "Cloud Administration"
+    - "Communications Management"
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-incident-readiness/index.yml
+  uid: cc25dfb1-ce8d-4805-bd4f-59a22a8f84f7
   title: Introduction to Azure Incident Readiness
   description: This Azure Incident Readiness module focuses on preparedness and proactive measures for managing Azure incidents.
   ms.date: 05/27/2025

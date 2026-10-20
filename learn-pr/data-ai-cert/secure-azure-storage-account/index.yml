@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.azure.secure-azure-storage-account
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 45
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - entra
+    - defender-for-cloud
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - systems-administrator
+    - data-engineer
+  skills:
+    - Storage
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+    - "Network Connectivity"
+    - "Threat Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/data-ai-cert/secure-azure-storage-account/index.yml
+  uid: c8c23d8c-4003-48b4-9686-3dadb10caa98
   title: Secure your Azure Storage account
   description: "Learn how Azure Storage provides multilayered security to protect your data with access keys, secure networks, and Advanced Threat Protection monitoring."
   ms.date: 10/12/2026

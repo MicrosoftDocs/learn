@@ -2,6 +2,25 @@
 uid: learn.dpu.k-12-ai-education
 title: AI‑enhanced K‑12 institutional concepts
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 23
+  last.refresh.date: null
+  modality: module
+  products:
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles: null
+  skills:
+    - "AI Strategy"
+    - "AI Transformation"
+    - "Organizational Effectiveness"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/k-12-ai-education/index.yml
+  uid: f056df14-511d-4426-8e87-6c09c3f661e3
   title: AI‑enhanced K‑12 Institutional Concepts
   description: In this module, you will learn how AI-powered solutions help decision makers create better learning experiences for students.
   ms.date: 04/09/2026

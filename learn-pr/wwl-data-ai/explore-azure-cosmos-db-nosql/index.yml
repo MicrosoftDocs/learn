@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-cosmos-db-nosql
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 63
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - solution-architect
+    - data-engineer
+    - database-administrator
+  skills:
+    - Databases
+    - "Database Design"
+    - "Cloud Computing"
+    - "Vector Databases"
+    - "Data Management"
+    - "Solution Architecture"
+    - "AI Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/explore-azure-cosmos-db-nosql/index.yml
+  uid: d7885f15-5396-47a5-b1ce-971c891bf8b0
   title: Explore Azure Cosmos DB for NoSQL
   description: "Evaluate whether Azure Cosmos DB for NoSQL fits your application, including AI workloads, and create your first account, database, container, and items."
   ms.date: 08/04/2026

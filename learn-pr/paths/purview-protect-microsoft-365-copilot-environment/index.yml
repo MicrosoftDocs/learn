@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.purview-protect-microsoft-365-copilot-environment
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - microsoft-purview
+    - microsoft-365-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ip-admin
+    - security-engineer
+  skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Threat Management"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Security Automation"
+    - "Security Analytics"
+    - "Data Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/purview-protect-microsoft-365-copilot-environment/index.yml
+  uid: 080d0c71-3435-4df6-95b3-d3128c363add
   title: 'Protect information in a Microsoft 365 Copilot environment using Microsoft Purview'
   description: 'Microsoft 365 Copilot accesses organizational data to generate responses, which introduces new risks for sensitive information exposure. Learn how to use Microsoft Purview audit, sensitivity labels, and data loss prevention to investigate, classify, and protect data in a Copilot-enabled environment.'
   ms.date: 05/14/2026

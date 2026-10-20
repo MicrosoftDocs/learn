@@ -1,6 +1,36 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.build-first-machine-operations-workflow
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure-machine-learning
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - data-scientist
+  skills:
+    - "Data Engineering"
+    - "Data Science"
+    - DevOps
+    - "Machine Learning"
+    - "Responsible AI"
+    - "AI Model Evaluation & Testing"
+    - "Python (Programming Language)"
+    - "Data Management"
+    - "AI Governance"
+    - Automation
+    - "Model Hosting & Inference"
+    - "Identity and Access Management (IAM)"
+    - "Solution Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/build-first-machine-operations-workflow/index.yml
+  uid: f6cc5f2e-e98c-41de-ba62-d90d636ce269
   title: Operationalize machine learning models (MLOps)
   description: Learn how to design, train, optimize, automate, deploy, and monitor machine learning models with Azure Machine Learning and GitHub Actions.
   ms.date: 08/27/2026

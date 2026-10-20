@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.github.upload-project-github
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 43
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - DevOps
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/upload-project-github/index.yml
+  uid: 384c139a-c95a-42bd-b08d-2d13c4d68575
   title: "Upload your project by using GitHub best practices"
   description: Learn to upload your existing project to GitHub.
   ms.date: 06/23/2025

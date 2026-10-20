@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.integrate-ai-services-enrich-azure-database-postgresql
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 72
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - azure-machine-learning
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - data-engineer
+    - ai-engineer
+    - solution-architect
+  skills:
+    - "Natural Language Processing (NLP)"
+    - "Machine Learning"
+    - "Model Hosting & Inference"
+    - Databases
+    - SQL
+    - "Data Engineering"
+    - "Data Security"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/integrate-ai-services-enrich-azure-database-postgresql/index.yml
+  uid: e7c93443-5265-4be5-863a-97c95015ce50
   title: Integrate AI Services to enrich your applications with intelligent features in Azure Database for PostgreSQL
   description: Learn to integrate Azure AI Services with Azure Database for PostgreSQL to add intelligent features like summarization and sentiment analysis.
   ms.date: 08/08/2025

@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.program-transact-sql
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - database-administrator
+    - developer
+  skills:
+    - SQL
+    - "Database Development"
+    - "Application Development"
+    - Databases
+    - "Data Security"
+    - "Data Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/program-transact-sql/index.yml
+  uid: 206f6baf-5046-4e6d-acd2-660733521b3b
   title: Program with Transact-SQL
   description: Program with Transact-SQL
   ms.date: 08/12/2026

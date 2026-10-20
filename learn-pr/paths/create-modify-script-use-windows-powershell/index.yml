@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.create-modify-script-use-windows-powershell
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - Automation
+    - "Security Automation"
+    - "Infrastructure Management"
+    - Cybersecurity
+    - "Application Security"
+    - "Process Automation"
+    - "Application Development"
+    - "Data Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/create-modify-script-use-windows-powershell/index.yml
+  uid: 9bdde86a-9452-4451-8574-b32de8e2ea1b
   title: Create and modify scripts by using Windows PowerShell
   description: This learning path explains how to create and modify scripts. It covers useful scripting techniques that include importing data from a file, accepting user input, and error handling.
   ms.date: 05/12/2026

@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-storage-account-security
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 21
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+  skills:
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-storage-account-security/index.yml
+  uid: 1a9d62ab-f483-4689-9a57-607f7e5e6d00
   title: Implement Security and Manage Access for Azure Storage
   description: "Implement account-level security controls and access governance for Azure Storage. Configure secure transfer settings, choose appropriate authorization models, apply stored access policies for SAS lifecycle management, and enforce Shared Key disable using Azure Policy."
   ms.date: 04/22/2026

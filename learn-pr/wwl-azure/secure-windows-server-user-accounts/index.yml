@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-windows-server-user-accounts
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 38
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - security-engineer
+    - identity-access-admin
+  skills:
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Zero Trust Security"
+    - "Infrastructure Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/secure-windows-server-user-accounts/index.yml
+  uid: 42c3f68f-d531-4c6a-afae-835ad4071466
   title: Secure Windows Server user accounts
   description: "Learn how to secure Active Directory user accounts using least privilege, Protected Users group, authentication policy silos, Windows Defender Credential Guard, NTLM blocking, and account remediation techniques."
   ms.date: 08/31/2026

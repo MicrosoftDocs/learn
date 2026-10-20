@@ -1,6 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.work-windows-powershell-pipeline
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - Automation
+    - "Infrastructure Management"
+    - "Data Management"
+    - "Application Development"
+    - "Process Automation"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/work-windows-powershell-pipeline/index.yml
+  uid: 3c8f8f2e-f29f-4e11-959a-e569115274b2
   title: Work with the Windows PowerShell pipeline
   description: This learning path explains the purpose and use of the PowerShell pipeline and use the pipeline to sort, filter, enumerate and display output data for PowerShell cmdlets.
   ms.date: 05/12/2026

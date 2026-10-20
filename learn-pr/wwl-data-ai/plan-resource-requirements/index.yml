@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-resource-requirements
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 23
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - solution-architect
+  skills:
+    - "Cloud Infrastructure"
+    - Databases
+    - Storage
+    - "Application Architecture"
+    - "Cloud Computing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/plan-resource-requirements/index.yml
+  uid: 78f7ed07-7e92-4b45-a091-df143187a349
   title: Plan Resource Requirements
   description: "Familiarize yourself with the various configuration options for a new Azure Cosmos DB for NoSQL account."
   ms.date: 04/02/2025

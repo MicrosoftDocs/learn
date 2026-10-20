@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn-wwl.develop-data-api-azure-sql-database
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 65
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Database Development"
+    - "Application Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/develop-data-api-azure-sql-database/index.yml
+  uid: ce66df79-52aa-4bfd-9275-15907afde71b
   title: Develop a data API for Azure SQL Database
   description: "Learn how to create modern REST data API for Azure SQL Database. We'll delve into Data API Builder, a powerful cross-platform that simplifies the creation of endpoints for your Azure SQL Database. With features like automatic query generation, granular security controls, and seamless integration with other Azure services, the Data API Builder can effortlessly transform your database into a versatile API."
   ms.date: 08/11/2026

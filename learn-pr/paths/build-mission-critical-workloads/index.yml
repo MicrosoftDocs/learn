@@ -3,6 +3,30 @@ uid: learn.build-mission-critical-workloads
 title: Build mission-critical workloads on Azure
 summary: Learn how to design highly reliable, available, and resilient workloads. Apply core design principles to workloads that typically target maximum uptime.
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - site-reliability-engineer
+  skills:
+    - "Solution Architecture"
+    - "Application Architecture"
+    - "Cloud Infrastructure"
+    - "Data Visualization"
+    - "Cloud Administration"
+    - "Data Analytics"
+    - DevOps
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/build-mission-critical-workloads/index.yml
+  uid: 2ed96849-577f-4a71-a5ed-e49c27bf0413
   title: Build mission-critical workloads on Azure
   description: Learn how to design highly reliable, available, and resilient workloads in Azure. Apply core design principles to workloads that typically target maximum uptime.
   ms.date: 01/12/2022

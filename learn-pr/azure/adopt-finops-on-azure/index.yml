@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure.adopt-finops-on-azure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 179
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - technology-manager
+    - business-owner
+  skills:
+    - "Cloud Computing"
+    - "Organizational Effectiveness"
+    - "Data Analytics"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/adopt-finops-on-azure/index.yml
+  uid: 91a413cf-b839-4728-9330-1475881cc769
   title: Adopt FinOps on Azure
   description: Learn how to implement FinOps on Azure.
   ms.date: 07/21/2025

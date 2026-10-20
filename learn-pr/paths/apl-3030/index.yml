@@ -2,6 +2,25 @@
 uid: learn.wwl.apl-3030-build-ai-app-foundry
 hidden: true
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+  skills:
+    - "Agent Development"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/apl-3030/index.yml
+  uid: 73477f0b-f4f7-48fe-baab-28ec2468bd34
   title: Develop a generative AI chat app using the Microsoft Foundry SDK (Microsoft Applied Skill)
   description: Learn how to build a generative AI chat app using Microsoft Foundry. (MAS-3030)
   ms.date: 06/16/2026

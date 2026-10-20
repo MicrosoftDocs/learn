@@ -2,6 +2,33 @@
 uid: learn.github.azure-devops-to-github-enterprise-migrations-part-ii-assessment-setup
 title: Azure Devops to GitHub Enterprise Migrations Part II - Source Environment Assessment and Target Environment Setup
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 26
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+    - azure-devops
+    - github-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - administrator
+    - solution-architect
+  skills:
+    - "Data Migration"
+    - DevOps
+    - "Solution Architecture"
+    - "Identity and Access Management (IAM)"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Analytics"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/ado-github-migrations-2/index.yml
+  uid: 6df0ba24-25f4-42e7-a222-8ceb96b7912a
   title: Azure Devops to GitHub Enterprise Migrations Part II - Source Environment Assessment and Target Environment Setup
   description: This module guides you through the critical preparation steps for migrating from Azure DevOps (ADO) to GitHub Enterprise Cloud (GHEC). You'll learn how to analyze the structure and dependencies of your ADO environment and translate that understanding into a secure, organized, and migration-ready GHEC setup.
   author: camihmerhar

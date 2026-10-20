@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.azure-databases.postgresql.basic-sql-simple-select
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 12
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-analyst
+    - developer
+  skills:
+    - SQL
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure-databases/postgresql/basic-sql-simple-select/index.yml
+  uid: 7e1efce2-78db-485d-8d92-ae74fbb69e9c
   title: "Getting started: An introduction to SQL and reading data"
   description: "Learn how to use the SQL SELECT statement in PostgreSQL to retrieve, filter, and format data with specific columns, DISTINCT, and expressions."
   ms.date: 05/23/2025
-  author: mpopovic
-  ms.author: mpopovic
+  author: markingmyname
+  ms.author: maghan
   ms.topic: module-standard-task-based
 ###########################################################################
 ###

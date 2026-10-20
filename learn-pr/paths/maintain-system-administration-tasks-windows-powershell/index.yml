@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.maintain-system-administration-tasks-windows-powershell
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - network-engineer
+    - security-engineer
+  skills:
+    - "Identity and Access Management (IAM)"
+    - Automation
+    - "Network Connectivity"
+    - Cybersecurity
+    - "Infrastructure Management"
+    - Virtualization
+    - "Device Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/maintain-system-administration-tasks-windows-powershell/index.yml
+  uid: c9fcef1a-660f-4d4b-ba07-de9078a3767d
   title: Maintain system administration tasks in Windows PowerShell
   description: This learning path covers cmdlets that are commonly used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
   ms.date: 05/12/2026

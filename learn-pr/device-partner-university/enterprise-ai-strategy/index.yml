@@ -2,6 +2,25 @@
 uid: learn.dpu.enterprise-ai-strategy
 title: Prepare an enterprise governance strategy for AI agents
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 29
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-leader
+  skills:
+    - "AI Strategy"
+    - "AI Transformation"
+    - "AI Governance"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/enterprise-ai-strategy/index.yml
+  uid: fd8594bb-154c-4583-b796-78bea75c534d
   title: Prepare An Enterprise Governance Strategy For AI Agents
   description: In this module, you'll explore how AI agents change enterprise security and management requirements, and learn how identity, containment, and management support agent governance. You'll also evaluate governance controls based on agent risk and apply the Audit, Define, Refresh framework to build an agent-ready strategy.
   ms.date: 09/30/2026

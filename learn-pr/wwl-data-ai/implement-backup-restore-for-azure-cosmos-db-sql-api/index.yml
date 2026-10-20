@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 42
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - developer
+    - data-engineer
+    - site-reliability-engineer
+  skills:
+    - "Data Administration"
+    - Databases
+    - "Data Management"
+    - Storage
+    - "Cloud Administration"
+    - "Data Migration"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-backup-restore-for-azure-cosmos-db-sql-api/index.yml
+  uid: d3f8a9d8-0c95-4b07-ace2-4fb14fb2de52
   title: Implement backup and restore for Azure Cosmos DB for NoSQL
   description: "Learn how to use the two backup models Azure Cosmos DB provides."
   ms.date: 02/27/2024

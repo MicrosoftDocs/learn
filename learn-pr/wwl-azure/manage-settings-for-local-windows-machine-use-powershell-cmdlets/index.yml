@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-settings-for-local-windows-machine-use-powershell-cmdlets
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 27
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - systems-administrator
+    - security-engineer
+  skills:
+    - "Device Management"
+    - Automation
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-settings-for-local-windows-machine-use-powershell-cmdlets/index.yml
+  uid: 481fa208-d2af-4cba-8db0-30cb4c9b74ed
   title: Manage settings for a local Windows machine using PowerShell cmdlets
   description: "This module covers common PowerShell cmdlets that can be used to perform tasks on a local Windows 10 or Windows 11 computer."
   ms.date: 05/12/2026

@@ -2,6 +2,27 @@
 uid: learn.dpu.inclusive-software-surface
 title: Support inclusive work with Windows accessibility features on Surface devices
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 26
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+    - surface
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+    - systems-administrator
+  skills:
+    - "Digital Accessibility"
+    - "Accessible AI"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/inclusive-software-surface/index.yml
+  uid: f076f3a0-9480-47da-a503-29aab00dceea
   title: Support Inclusive Work With Windows Accessibility Features On Surface Devices
   description: 'In this module, you''ll learn how to use Windows accessibility features on Surface devices to support inclusive work. You''ll explore the vision, hearing and comprehension, and mobility and input accessibility features available in Windows 11. You''ll also learn how to customize these features to meet your needs.'
   ms.date: 08/25/2026

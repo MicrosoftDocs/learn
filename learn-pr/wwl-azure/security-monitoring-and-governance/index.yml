@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.security-monitoring-and-governance
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 120
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - defender-for-cloud
+    - azure-devops
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - security-operations-analyst
+    - devops-engineer
+    - platform-engineer
+  skills:
+    - Cybersecurity
+    - "Security Analytics"
+    - DevOps
+    - "Application Security"
+    - "Identity and Access Management (IAM)"
+    - Automation
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/security-monitoring-and-governance/index.yml
+  uid: 2c888e2b-9ae8-495b-a90b-5edc420ad3c5
   title: Security monitoring and governance
   description: "Learn security monitoring and governance with Microsoft Defender for Cloud, Azure Policy, resource locks, Microsoft Defender for Identity, and GitHub Advanced Security integration for comprehensive DevSecOps protection."
   ms.date: 10/28/2025

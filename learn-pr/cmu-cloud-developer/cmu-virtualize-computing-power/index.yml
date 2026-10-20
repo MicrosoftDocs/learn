@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 33
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - it-professional
+    - systems-administrator
+  skills:
+    - Virtualization
+    - "Application Development"
+    - "Application Architecture"
+    - "Infrastructure Management"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-virtualize-computing-power/index.yml
+  uid: 18c253ea-4ea0-4c6a-92b8-477111260b21
   title: Virtualize computing power
   description: Carnegie Mellon University's Cloud Developer course. Learn about how computing power is virtualized using virtual CPUs. Covers different types of CPU virtualization.
   ms.date: 03/09/2022

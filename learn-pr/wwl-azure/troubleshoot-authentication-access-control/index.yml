@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-authentication-access-control
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 32
+  last.refresh.date: null
+  modality: module
+  products:
+    - entra
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - identity-access-admin
+    - support-engineer
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Security Analytics"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/troubleshoot-authentication-access-control/index.yml
+  uid: 560c3b50-6be6-4de9-a49f-464dcd85dd4c
   title: Troubleshoot authentication and access control issues in Microsoft Azure
   description: "Microsoft Azure has a sophisticated authentication and access control system to provide high security. Microsoft Entra authentication includes Self-service password reset, Multi-Factor Authentication, hybrid integration, and passwordless authentication. AZ720 AZ-720 az-720 networking"
   ms.date: 04/27/2023

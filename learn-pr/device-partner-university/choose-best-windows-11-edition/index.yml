@@ -2,6 +2,28 @@
 uid: learn.dpu.choose-best-windows-11-edition
 title: Choose the best Windows 11 edition built for your organization’s needs
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 27
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - technology-manager
+    - it-professional
+    - sales
+  skills:
+    - "Device Management"
+    - "IT Strategy"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/choose-best-windows-11-edition/index.yml
+  uid: d8b70b38-4735-4160-8bc9-f6e3966cdac7
   title: Choose The Best Windows 11 Edition Built For Your Organization’s Needs
   description: Learn how to evaluate Windows 11 Pro and Windows 11 Enterprise using organizational decision criteria such as security requirements, management complexity, operational scale, and governance needs.
   ms.date: 05/20/2026

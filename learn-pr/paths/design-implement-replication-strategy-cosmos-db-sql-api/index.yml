@@ -1,6 +1,26 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.design-implement-replication-strategy-cosmos-db-sql-api
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - Databases
+    - "Cloud Computing"
+    - "Application Development"
+    - "Database Development"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/design-implement-replication-strategy-cosmos-db-sql-api/index.yml
+  uid: 13b52c77-301c-4a38-9709-f72380e2d7fe
   title: Design and implement a replication strategy for Azure Cosmos DB for NoSQL
   description: Design and implement a replication strategy for Azure Cosmos DB for NoSQL
   ms.date: 04/02/2025

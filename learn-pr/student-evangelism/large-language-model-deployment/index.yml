@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.large-language-model-deployment
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 47
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-openai
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+  skills:
+    - "Model Hosting & Inference"
+    - "Generative AI"
+    - "AI Prompting"
+    - "Information Extraction"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/large-language-model-deployment/index.yml
+  uid: 68f1ee9d-1a06-4e8e-8e69-36d8b2ec1b60
   ms.author: chnoring
   author: softchris
   ms.date: 09/25/2024

@@ -1,6 +1,37 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-security-controls-identity-access
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 367
+  last.refresh.date: null
+  modality: module
+  products:
+    - entra
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - identity-access-admin
+    - systems-administrator
+    - security-operations-analyst
+    - solution-architect
+    - ip-admin
+  skills:
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Security Architecture Design"
+    - "Cloud Administration"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Analytics"
+    - Automation
+    - "Cloud Infrastructure"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-security-controls-identity-access/index.yml
+  uid: fdca4efa-57b4-4d45-ae25-7026be6facd5
   adobe-target: true
   prefetch-feature-rollout: true
   title: Manage Security Controls for Identity and Access

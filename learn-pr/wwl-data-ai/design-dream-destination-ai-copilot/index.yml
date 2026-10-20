@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.design-dream-destination-ai-copilot
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 53
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+    - student
+  skills:
+    - "Generative AI"
+    - "Prompt Engineering"
+    - "AI Prompting"
+    - "AI Fluency"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/design-dream-destination-ai-copilot/index.yml
+  uid: 67152cca-261a-4099-8b6e-027efa8f5bd8
   title: Design a dream destination using Microsoft Copilot
   description: "Interact with Microsoft Copilot to learn about the capabilities of generative AI. Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story. Use Microsoft Copilot to ideate, research, and generate content. Use tips and techniques to write good prompts. Apply format and tone."
   ms.date: 04/09/2025

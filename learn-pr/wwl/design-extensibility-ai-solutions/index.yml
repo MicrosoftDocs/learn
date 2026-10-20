@@ -1,6 +1,38 @@
 ### YamlMime:Module
 uid: learn.wwl.design-extensibility-ai-solutions
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 48
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-365-copilot
+    - m365
+    - microsoft-copilot-studio
+    - microsoft-foundry
+    - dynamics-365
+    - power-platform
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - ai-engineer
+    - developer
+  skills:
+    - "Solution Architecture"
+    - "Application Architecture"
+    - "Agentic AI"
+    - "AI Infrastructure"
+    - "AI Governance"
+    - "AI Risk Management"
+    - "Security Architecture Design"
+    - "Security Automation"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/design-extensibility-ai-solutions/index.yml
+  uid: 3571918a-ba2b-4f65-9535-8346c26d7454
   title: "Design Extensibility of AI Solutions"
   description: "Learn to design scalable, secure, and customizable AI solutions using Microsoft platforms. Explore extensibility strategies for enterprise AI."
   ms.date: 02/13/2026

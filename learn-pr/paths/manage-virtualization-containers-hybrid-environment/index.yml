@@ -1,6 +1,43 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-virtualization-containers-hybrid-environment
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - windows
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - solution-architect
+    - platform-engineer
+    - storage-admin
+    - security-engineer
+    - devops-engineer
+  skills:
+    - Virtualization
+    - "Infrastructure Management"
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Cloud Infrastructure"
+    - Storage
+    - "Solution Architecture"
+    - "Security Architecture Design"
+    - Cybersecurity
+    - "Data Security"
+    - "Cloud Administration"
+    - Automation
+    - "Identity and Access Management (IAM)"
+    - DevOps
+    - "Platform Engineering"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-virtualization-containers-hybrid-environment/index.yml
+  uid: 231d7e31-9877-4a06-8705-dfc9d345f930
   title: Manage virtualization and containers in a hybrid environment
   description: Manage virtualization and containers in a hybrid environment
   ms.date: 01/23/2026

@@ -2,6 +2,29 @@
 uid: learn.dpu.copilot-pc-business-users
 title: How Copilot+ PCs support modern business users
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 22
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+    - microsoft-365-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+    - technology-manager
+    - business-leader
+  skills:
+    - "AI Fluency"
+    - "AI Business & Vision"
+    - "Device Management"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/copilot-pc-business-users/index.yml
+  uid: a6df5a6a-6342-4bb0-84ff-2e38096e50b0
   title: How Copilot+ PCs Support Modern Business Users
   description: In this module, you learn how Copilot+ PCs support modern business users with on-device AI, built-in security, and capabilities that improve productivity across common work scenarios.
   ms.date: 08/04/2025

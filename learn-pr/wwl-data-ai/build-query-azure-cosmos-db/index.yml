@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.build-query-azure-cosmos-db
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 72
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - database-administrator
+  skills:
+    - "Database Development"
+    - "Database Design"
+    - SQL
+    - "Python (Programming Language)"
+    - Databases
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/build-query-azure-cosmos-db/index.yml
+  uid: aff0162c-fadb-40e1-826b-ad1f4fc871fe
   title: Build Queries for Azure Cosmos DB for NoSQL
   description: Learn how to connect to Azure Cosmos DB for NoSQL, use the SDK to perform CRUD operations, and write SQL queries to retrieve document data for AI applications.
   ms.date: 06/12/2026

@@ -2,6 +2,23 @@
 uid: learn.wwl.apl-2014-github-issues
 hidden: true
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - github-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "AI-Augmented Software Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/apl-2014-github-issues/index.yml
+  uid: f4aa479d-3e2f-42bf-90fa-d22f9bc336a0
   title: Resolve GitHub Issues using GitHub Copilot Agent
   description: Learn how to resolve GitHub Issues using GitHub Copilot's Ask and Agent modes. The training focuses on security vulnerabilities such as SQL injection, encryption, logging, and path traversal problems.
   ms.date: 03/05/2026

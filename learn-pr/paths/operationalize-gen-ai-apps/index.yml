@@ -1,6 +1,35 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.operationalize-gen-ai-apps
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+  skills:
+    - "Agent Development"
+    - "AI Model Evaluation & Testing"
+    - "Knowledge Grounding for AI"
+    - "Large Language Model Operations (LLMOps)"
+    - DevOps
+    - "Agent Operations"
+    - "Agentic AI"
+    - "Prompt Engineering"
+    - "Generative AI"
+    - "Synthetic Data Generation"
+    - "Application Development"
+    - "Python (Programming Language)"
+  solution.area: null
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/operationalize-gen-ai-apps/index.yml
+  uid: f62e64c3-406a-4241-a0a7-88302a54bba0
   title: Operationalize generative AI applications (GenAIOps)
   description: Learn the full GenAIOps lifecycle for generative AI applications, from planning and prompt management to evaluation, automated testing, monitoring, and tracing in production.
   ms.date: 02/23/2026

@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-windows-server-iscsi
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 45
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - storage-admin
+    - network-engineer
+    - solution-architect
+  skills:
+    - Storage
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Infrastructure Management"
+    - "Solution Architecture"
+    - Automation
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/implement-windows-server-iscsi/index.yml
+  uid: ae6a987c-f8f1-4a1b-87da-43c415211f80
   title: Implement Windows Server iSCSI
   description: "Learn how to implement iSCSI storage in Windows Server, including iSCSI Target Server, iSCSI initiator configuration, virtual disk creation, and Multipath I/O (MPIO) for network redundancy."
   ms.date: 08/31/2026

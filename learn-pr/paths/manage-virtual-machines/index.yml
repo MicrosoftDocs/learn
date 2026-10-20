@@ -1,6 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-virtual-machines
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - Virtualization
+    - Storage
+    - "Infrastructure Management"
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Security Architecture Design"
+    - Cybersecurity
+    - "Data Security"
+    - DevOps
+    - "Cloud Administration"
+    - Automation
+    - "Cloud Computing"
+    - "Application Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-virtual-machines/index.yml
+  uid: 3d15b2f3-01b4-4674-867a-309324d97495
   title: Manage Virtual Machines
   description: Learn how to manage Hyper-V and guest virtual machines on-premises and manage Windows Server virtual machines in Azure.
   ms.date: 08/31/2026

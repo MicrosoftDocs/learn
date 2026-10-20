@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.leverage-ai-tools
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 42
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+  skills:
+    - "AI Productivity"
+    - "Collaboration Tools"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/leverage-ai-tools/index.yml
+  uid: 361f80ac-1b25-4917-8da9-27043d7411fc
   title: "Leverage AI tools and resources for your business"
   description: "Learn how to use AI tools and resources for your business."
   ms.date: 10/08/2026

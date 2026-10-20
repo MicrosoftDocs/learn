@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.github.authenticate-authorize-user-identities-github
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 33
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - devops-engineer
+    - identity-access-admin
+    - security-engineer
+    - solution-architect
+  skills:
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Zero Trust Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Architecture Design"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/authenticate-authorize-user-identities-github/index.yml
+  uid: c5d82ea4-66a6-487c-9f7e-8427cb3c6967
   title: Authenticate and Authorize User Identities on GitHub 
   description: Learn how to manage the authentication and authorization of user identities on GitHub.
   ms.date: 04/18/2025

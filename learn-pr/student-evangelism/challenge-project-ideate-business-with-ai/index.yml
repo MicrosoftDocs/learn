@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.challenge-project-ideate-business-with-ai
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 32
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - student
+    - startup-founder
+    - business-owner
+  skills:
+    - "Prompt Engineering"
+    - "Generative AI"
+    - "AI Productivity"
+    - "Business Insights"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/challenge-project-ideate-business-with-ai/index.yml
+  uid: eb329df0-4881-44bc-a822-1e94ea6b418d
   title: Challenge project – Ideate with Microsoft Copilot
   description: Challenge Project - Use Microsoft Copilot (formerly Bing Chat), to Create the perfect idea for your Startup or business
   author: pablonunes

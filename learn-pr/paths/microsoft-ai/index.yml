@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.microsoft-ai
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+  skills:
+    - "Generative AI"
+    - "Multimodal AI"
+    - "Computer Vision"
+    - "Natural Language Processing (NLP)"
+    - "AI Model Evaluation & Testing"
+    - "Model Hosting & Inference"
+    - "Responsible AI"
+    - "AI-Augmented Software Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/microsoft-ai/index.yml
+  uid: 6158c113-2a9c-4c11-8818-f4342d77d7f9
   title: Introduction to Microsoft AI models
   description: Learn how Microsoft AI (MAI) models work and how to use them in your applications.
   ms.date: 09/30/2026

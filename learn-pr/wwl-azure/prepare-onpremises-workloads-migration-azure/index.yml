@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.prepare-onpremises-workloads-migration-azure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 35
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+  skills:
+    - "Data Migration"
+    - "Cloud Infrastructure"
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/prepare-onpremises-workloads-migration-azure/index.yml
+  uid: b510234b-1907-44dd-aa70-f7c7369393e5
   title: Prepare on-premises workloads for migration to Azure
   description: "Prepare on-premises workloads for migration to Azure"
   ms.date: 01/23/2026

@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.automate-identity-lifecycle-workflows
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 45
+  last.refresh.date: null
+  modality: module
+  products:
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+  skills:
+    - "Identity and Access Management (IAM)"
+    - Automation
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/automate-identity-lifecycle-workflows/index.yml
+  uid: 570c6979-2f68-491e-8ab5-2c38d3e8e022
   title: Automate Identity Lifecycle using Lifecycle Workflows in Microsoft Entra
   description: "Explore the configuration and deployment of Microsoft Entra Lifecycle Workflows. Learn the purpose of lifecycle workflows, their components, and how to implement them effectively."
   ms.date: 09/3/2025

@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.explore-foundations-of-identity-governance
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Security Architecture Design"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Zero Trust Security"
+    - Automation
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/explore-foundations-of-identity-governance/index.yml
+  uid: b4547379-14ab-4b66-b236-678d46fc333c
   title: Explore the foundations of identity and governance for SAP on Azure
   description: Explore the foundations of identity and governance for SAP on Azure
   ms.date: 01/11/2024

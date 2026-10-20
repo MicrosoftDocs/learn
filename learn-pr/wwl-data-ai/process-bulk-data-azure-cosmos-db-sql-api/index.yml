@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.process-bulk-data-azure-cosmos-db-sql-api
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 33
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - data-engineer
+  skills:
+    - "Application Development"
+    - "Database Development"
+    - Databases
+    - "Data Engineering"
+    - "Database Design"
+    - "Cloud Computing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/process-bulk-data-azure-cosmos-db-sql-api/index.yml
+  uid: 76855400-6aeb-4568-8baa-1e3fbd5eef06
   title: Process bulk data in Azure Cosmos DB for NoSQL
   description: "Perform bulk operations on Azure Cosmos DB in bulk from code using the SDK."
   ms.date: 04/02/2025

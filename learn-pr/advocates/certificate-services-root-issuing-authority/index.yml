@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.windows-server.certificate-services-root-issuing-authority
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 138
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - security-engineer
+    - identity-access-admin
+  skills:
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Security Operations Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/certificate-services-root-issuing-authority/index.yml
+  uid: ee0f7007-d778-49fc-880c-6054f675c996
   title: Deploy Offline Root and Issuing Active Directory Certificate Services Certification Authorities
   description: Deploy, harden, publish, validate, back up, and plan renewal for a two-tier Active Directory Certificate Services hierarchy.
   ms.date: 09/20/2026

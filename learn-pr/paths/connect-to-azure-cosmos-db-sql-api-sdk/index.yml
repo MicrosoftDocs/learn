@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.connect-to-azure-cosmos-db-sql-api-sdk
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - developer
+    - security-engineer
+  skills:
+    - "Application Development"
+    - "Database Development"
+    - Databases
+    - "Identity and Access Management (IAM)"
+    - "Python (Programming Language)"
+    - "Cloud Computing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/connect-to-azure-cosmos-db-sql-api-sdk/index.yml
+  uid: 6ffd3a94-b8d4-400e-876f-863335637767
   title: Connect to Azure Cosmos DB for NoSQL with the SDK
   description: Connect to Azure Cosmos DB for NoSQL with the SDK
   ms.date: 04/02/2025

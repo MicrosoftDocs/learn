@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn-wwl.responsible-conversational-ai
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 39
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - product-manager
+  skills:
+    - "Responsible AI"
+    - "Digital Accessibility"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/ai-school/responsible-conversational-ai/index.yml
+  uid: 69615026-f8d3-4e80-91be-5ecaa3e2c79c
   title: Discover Microsoft guidelines for responsible conversational AI development
   description: Learn Microsoft guidelines for the development of responsible conversational AI, such as chat bots and voice-controlled systems.
   ms.collection: TBD

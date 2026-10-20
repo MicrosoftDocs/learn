@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 44
+  last.refresh.date: null
+  modality: module
+  products:
+    - entra
+    - security-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - identity-access-admin
+    - security-engineer
+    - ip-admin
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Threat Management"
+    - "AI-Powered Workflow Automation"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/describe-identity-protection-governance-capabilities/index.yml
+  uid: 9069eb3a-8351-486c-8caa-10c24646af24
   title: Describe the Identity Protection and Governance Capabilities of Microsoft Entra
   description: "Describe the identity protection and governance capabilities of Microsoft Entra."
   ms.date: 06/09/2026

@@ -2,6 +2,29 @@
 uid: learn.dpu.azure-local-small-form-factor
 title: Introduction to small form factor deployments of Azure Local (preview)
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 20
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - technology-manager
+    - it-professional
+  skills:
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "AI Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/azure-local-small-form-factor/index.yml
+  uid: bd1c4c44-899d-4635-b685-63adb394abb9
   title: Introduction to Small Form Factor Deployments of Azure Local (Preview)
   description: 'In this module, you’ll explore how small form factor deployments of Azure Local (preview) can support scenarios that require low latency, distributed infrastructure, and real-time responsiveness.'
   ms.date: 07/09/2026

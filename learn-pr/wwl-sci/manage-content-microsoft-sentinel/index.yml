@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-content-microsoft-sentinel
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 15
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-sentinel
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-operations-analyst
+  skills:
+    - "Security Operations Management"
+    - DevOps
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/manage-content-microsoft-sentinel/index.yml
+  uid: 245a2976-8476-4045-af24-829d58b1ee09
   title: Manage content in Microsoft Sentinel
   description: "Manage content in Microsoft Sentinel"
   ms.date: 06/04/2025

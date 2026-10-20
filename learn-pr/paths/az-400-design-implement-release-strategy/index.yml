@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-design-implement-release-strategy
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - azure-devops
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+  skills:
+    - DevOps
+    - Automation
+    - "Process Automation"
+    - "Data Administration"
+    - "Cloud Infrastructure"
+    - "Application Security"
+    - "Application Development"
+    - "Security Automation"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-400-design-implement-release-strategy/index.yml
+  uid: a0a7bf3f-a305-4a51-ae37-27191e4f3b32
   title: "AZ-400: Design and Implement a Release Strategy"
   description: "Learn advanced release strategy design and implementation through comprehensive continuous delivery frameworks, deployment orchestration, and automated quality assurance methodologies"
   ms.date: 10/01/2025

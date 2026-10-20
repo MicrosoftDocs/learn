@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.dotnet-maui.use-shared-resources
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 46
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Architecture"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/dot-net-maui/use-shared-resources/index.yml
+  uid: 1496af63-b3f6-4702-9c14-382b15c05f64
   moduleType: standard
   title: "Design consistent .NET MAUI XAML pages by using shared resources"
   description: "Learn how to use static and dynamic shared resources to build a .NET Multi-platform App UI (MAUI) user interface. And see how styles can make the user interface both consistent and accessible."

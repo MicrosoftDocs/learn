@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.create-tables-views-temporary-objects
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 58
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - database-administrator
+  skills:
+    - SQL
+    - "Database Development"
+    - "Database Design"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/create-tables-views-temporary-objects/index.yml
+  uid: 659a9ace-c1c7-4d50-b64e-b0eaa4ab8bbd
   title: Create tables, views, and temporary objects
   description: "This content is a part of Create tables, views, and temporary objects."
   ms.date: 08/12/2026

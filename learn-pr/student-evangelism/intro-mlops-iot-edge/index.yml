@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.oxford.intro-mlops-iot-edge
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 36
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-machine-learning
+    - azure-devops
+    - github
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - data-scientist
+    - devops-engineer
+  skills:
+    - DevOps
+    - "Machine Learning"
+    - "AI Model Evaluation & Testing"
+    - "AI Governance"
+    - "Model Hosting & Inference"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/intro-mlops-iot-edge/index.yml
+  uid: 696d448b-626e-4fd5-916e-58360237b01d
   title: "Introduction to MLOps for IoT Edge"
   description: "Analyze the significance of MLOps in the development and deployment of machine learning models for IoT Edge. Describe the components of the MLOps pipeline and show how you can combine them to create models that can be retrained automatically for IoT Edge devices."
   ms.date: 05/12/2025

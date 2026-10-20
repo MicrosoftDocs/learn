@@ -1,6 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.azure-well-architected-framework
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+  skills:
+    - "Solution Architecture"
+    - "Application Architecture"
+    - "Cloud Administration"
+    - "Security Architecture Design"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+    - "Security Operations Management"
+    - "IT Strategy"
+    - DevOps
+    - Automation
+    - "Organizational Culture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/azure-well-architected-framework/index.yml
+  uid: a2c82cf1-4970-416d-b5fd-64f85c18534b
   title: Build great solutions with the Microsoft Azure Well-Architected Framework
   description: Learn how to design and build secure, scalable, high-performing solutions in Azure using the pillars of the Microsoft Azure Well-Architected Framework.
   brand: azure

@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-resources-windows-powershell
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 45
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - "Cloud Administration"
+    - Automation
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-azure-resources-windows-powershell/index.yml
+  uid: 4548b649-e45b-4103-a74b-de581d91f00d
   title: Manage Azure resources with Windows PowerShell
   description: "Learn to manage Azure resources with Windows PowerShell."
   ms.date: 05/12/2026

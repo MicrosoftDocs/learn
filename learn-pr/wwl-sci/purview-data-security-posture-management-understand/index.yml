@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-data-security-posture-management-understand
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 35
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-purview
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - risk-practitioner
+    - ip-admin
+  skills:
+    - "Data Security"
+    - "AI Risk Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-data-security-posture-management-understand/index.yml
+  uid: 2214b30b-b07b-4cf4-8b70-746486b17918
   title: Understand data security posture management in Microsoft Purview
   description: Understand data security posture management in Microsoft Purview.
   ms.date: 02/03/2026

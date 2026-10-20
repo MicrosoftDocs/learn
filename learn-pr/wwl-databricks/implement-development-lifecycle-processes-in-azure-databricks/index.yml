@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-development-lifecycle-processes-azure-databricks
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 87
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-databricks
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - devops-engineer
+  skills:
+    - DevOps
+    - "Data Engineering"
+    - Automation
+    - "Platform Engineering"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-databricks/implement-development-lifecycle-processes-in-azure-databricks/index.yml
+  uid: 428309a3-96f0-43d7-a5d1-94f56c35d214
   title: Implement Development Lifecycle Processes in Azure Databricks
   description: Learn how to implement development lifecycle processes in Azure Databricks, including Git version control, branching strategies, testing approaches, and Declarative Automation Bundle deployment using the CLI.
   ms.date: 10/12/2026

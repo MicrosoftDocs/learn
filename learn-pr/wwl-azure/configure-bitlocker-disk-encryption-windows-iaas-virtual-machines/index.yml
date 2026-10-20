@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 35
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - security-engineer
+  skills:
+    - "Data Security"
+    - "Cloud Administration"
+    - Cybersecurity
+    - Storage
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-bitlocker-disk-encryption-windows-iaas-virtual-machines/index.yml
+  uid: dbf0e709-b4d7-4d71-89cb-e3f355852280
   title: Configure BitLocker disk encryption for Windows IaaS Virtual Machines
   description: "Configure BitLocker disk encryption for Windows IaaS Virtual Machines"
   ms.date: 01/23/2026

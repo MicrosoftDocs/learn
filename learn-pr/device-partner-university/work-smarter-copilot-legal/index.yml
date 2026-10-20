@@ -2,6 +2,31 @@
 uid: learn.dpu.work-smarter-copilot-legal
 title: Work smarter with Copilot prompts for legal professionals
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 66
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-365-copilot
+    - m365
+    - windows
+    - office-teams
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - legal
+    - business-user
+  skills:
+    - "AI Productivity"
+    - "Generative AI"
+    - "Collaboration Tools"
+    - "Business Insights"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/work-smarter-copilot-legal/index.yml
+  uid: fd1d31df-a56a-419c-9cd5-1ed528f006bf
   title: Work Smarter With Copilot Prompts For Legal Professionals
   description: In this module, you'll learn how to use Microsoft 365 Copilot and Copilot+ PC experiences to streamline legal workflows such as contract review, compliance analysis, stakeholder communication, and leadership reporting.
   ms.date: 07/21/2026

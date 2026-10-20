@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.azure.introduction-elastic-azure
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 22
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - systems-administrator
+    - developer
+  skills:
+    - "Cloud Computing"
+    - "Solution Architecture"
+    - "Data Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/introduction-elastic-azure/index.yml
+  uid: 6f04c01f-060d-442d-b148-8463308c99bf
   moduleType: introduction
   title: Introduction to Elastic on Azure
   description: Evaluate whether Elastic on Azure is appropriate for your Linux workload.

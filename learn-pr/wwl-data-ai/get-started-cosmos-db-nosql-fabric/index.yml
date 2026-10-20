@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 42
+  last.refresh.date: null
+  modality: module
+  products:
+    - fabric
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - developer
+    - database-administrator
+    - solution-architect
+  skills:
+    - Databases
+    - "Database Development"
+    - "Data Engineering"
+    - SQL
+    - "Application Security"
+    - "Vector Databases"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-cosmos-db-nosql-fabric/index.yml
+  uid: d27ee7c1-6231-4fcd-a333-a1e0bc230e9e
   title: Get started with Cosmos DB Database in Microsoft Fabric
   description: "Learn how Cosmos DB Database in Microsoft Fabric works, the key concepts, and practical examples to help users Cosmos DB Database effectively as part of their analytics solutions."
   ms.date: 04/15/2025

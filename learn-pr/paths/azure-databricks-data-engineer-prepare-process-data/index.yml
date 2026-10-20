@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-databricks-data-engineer-prepare-process-data
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure-databricks
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+  skills:
+    - "Data Administration"
+    - "Data Management"
+    - "Data Engineering"
+    - "Data Warehousing"
+    - Databases
+    - SQL
+    - Automation
+    - "Python (Programming Language)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/azure-databricks-data-engineer-prepare-process-data/index.yml
+  uid: 4c45ca64-3ec6-4602-a8ae-2adc5397291b
   title: Prepare and Process Data with Azure Databricks
   description: Master the essential skills to build robust, scalable data engineering solutions with Azure Databricks and Unity Catalog. Learn to design effective data models, ingest data from diverse sources, transform raw data into analytics-ready formats, and ensure data quality across your lakehouse architecture.
   ms.date: 12/09/2025

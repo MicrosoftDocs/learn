@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.azure.customize-suse-linux-enterprise-server-azure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 37
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - "Infrastructure Management"
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/customize-suse-linux-enterprise-server-azure/index.yml
+  uid: 52052c07-349f-4b42-9497-8aff2888c72f
   moduleType: standard
   title: Customize a SUSE Linux Enterprise Server virtual machine on Azure
   description: Deploy and customize a SUSE Linux Enterprise Server (SLES) on Azure virtual machine (VM) using YaST admin and zypper package management tools to add RPM packages. Learn how SUSE groups packages and reconciles package dependencies to help ensure you run the latest updates and versions. Practice using YaST and zypper to install a LAMP stack on a SLES Azure VM.    

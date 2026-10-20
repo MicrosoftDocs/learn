@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.intro-to-transact-sql
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 56
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+  skills:
+    - SQL
+    - "Database Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/introduction-to-transact-sql/index.yml
+  uid: e353b20b-440b-4e0e-94d7-bfbf1b9e4acc
   title: Introduction to Transact-SQL
   description: "Introduction to Transact-SQL"
   ms.date: 08/10/2026

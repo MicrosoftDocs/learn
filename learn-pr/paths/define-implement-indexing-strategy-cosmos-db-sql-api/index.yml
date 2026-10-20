@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.define-implement-indexing-strategy-cosmos-db-sql-api
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - developer
+  skills:
+    - Databases
+    - "Data Management"
+    - "Application Development"
+    - SQL
+    - "Database Development"
+    - "Database Design"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/define-implement-indexing-strategy-cosmos-db-sql-api/index.yml
+  uid: fffb6625-1eac-4873-96cd-0e58cdf9ac05
   title: Define and implement an indexing strategy for Azure Cosmos DB for NoSQL
   description: Define and implement an indexing strategy for Azure Cosmos DB for NoSQL
   ms.date: 04/02/2025

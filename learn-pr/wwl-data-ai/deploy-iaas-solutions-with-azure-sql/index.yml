@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-iaas-solutions-with-azure-sql
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 81
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+  skills:
+    - Databases
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/deploy-iaas-solutions-with-azure-sql/index.yml
+  uid: 055f1043-01df-4d73-9b2f-b5ad290c7c1b
   adobe-target: true
   prefetch-feature-rollout: true
   title: Deploy IaaS solutions with Azure SQL

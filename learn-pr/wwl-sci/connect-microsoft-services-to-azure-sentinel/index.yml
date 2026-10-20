@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-microsoft-services-to-azure-sentinel
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 26
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - microsoft-sentinel
+    - entra
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-operations-analyst
+  skills:
+    - "Security Analytics"
+    - "Security Operations Management"
+    - "Threat Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/connect-microsoft-services-to-azure-sentinel/index.yml
+  uid: a98e1084-0839-4dc6-8fdb-d6ae675becd0
   title: Connect Microsoft services to Microsoft Sentinel
   description: "Connect Microsoft services to Microsoft Sentinel"
   ms.date: 05/21/2026

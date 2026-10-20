@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-foundry-iq
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 71
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+    - solution-architect
+    - data-engineer
+  skills:
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Knowledge Grounding for AI"
+    - "Semantic Search"
+    - "Agent Development"
+    - "AI Model Evaluation & Testing"
+    - "Prompt Engineering"
+    - "AI Governance"
+    - "Data Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/introduction-foundry-iq/index.yml
+  uid: 1869acc2-3101-411a-a4c4-8790070aff95
   title: Build knowledge-enhanced AI agents with Foundry IQ
   description: Learn how Foundry IQ transforms how AI agents access and reason over organizational data through its unified knowledge layer and Retrieval Augmented Generation (RAG) capabilities. Build a practical agent that leverages enterprise knowledge through Foundry IQ's agentic retrieval engine.
   ms.date: 5/29/2026

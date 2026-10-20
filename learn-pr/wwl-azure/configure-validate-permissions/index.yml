@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-validate-permissions
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 57
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-devops
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - security-engineer
+    - systems-administrator
+  skills:
+    - DevOps
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Security Operations Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-validate-permissions/index.yml
+  uid: 07e0557c-3036-4bf1-a75c-5a6361a5311a
   title: Configure and validate permissions
   description: Configure and validate permissions.
   ms.date: 01/18/2024

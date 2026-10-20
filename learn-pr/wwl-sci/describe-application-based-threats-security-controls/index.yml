@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-application-based-threats-security-controls
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 20
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+    - business-owner
+  skills:
+    - Cybersecurity
+    - "Threat Management"
+    - "Data Security"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/describe-application-based-threats-security-controls/index.yml
+  uid: 490a0c3e-db58-42d6-b3e0-967f5391b515
   title: Describe Application-Based Threats and How to Protect Against Them
   description: "Describe application-based threats and security controls."
   ms.date: 04/24/2026

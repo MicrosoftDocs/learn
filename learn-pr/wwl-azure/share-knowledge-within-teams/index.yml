@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.share-knowledge-within-teams
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 65
+  last.refresh.date: null
+  modality: module
+  products:
+    - office-teams
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+  skills:
+    - "Collaboration Tools"
+    - "Knowledge Grounding for AI"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/share-knowledge-within-teams/index.yml
+  uid: 552731b9-c85e-43a8-b07c-bd21f74c5cab
   title: Share Knowledge Within Teams
   description: "Learn to share knowledge effectively within development teams using Azure DevOps Wikis, GitHub documentation, and Microsoft Teams integration. Explore documentation strategies, wiki creation and management, Markdown formatting with Mermaid diagrams, and real-time collaboration tools to preserve organizational knowledge and improve team productivity."
   ms.date: 10/21/2025

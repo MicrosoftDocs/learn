@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.add-decision-making-python
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 51
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Python (Programming Language)"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/add-decision-making-python/index.yml
+  uid: b5865a27-6bcf-4dce-be33-e45efa355f28
   title: Add decision-making to your code
   description: Learn how to control the flow of your Python programs using Booleans, comparison operators, conditional logic, and logical operators.
   ms.date: 07/15/2026

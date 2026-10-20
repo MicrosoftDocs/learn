@@ -1,6 +1,36 @@
 ### YamlMime:LearningPath
 uid: learn.get-started-java-azure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Architecture"
+    - "Cloud Computing"
+    - "Application Development"
+    - Automation
+    - "Cloud Administration"
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Database Development"
+    - "Application Security"
+    - "Data Engineering"
+    - SQL
+    - "Identity and Access Management (IAM)"
+    - DevOps
+    - Virtualization
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-java-azure/index.yml
+  uid: 7a2d87d3-48ce-4532-8d40-470c17396c88
   title: Get started with Java on Azure
   description: Start here and learn how you can build, migrate and scale Java applications on Azure using Azure services. Use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
   ms.date: 11/29/2021

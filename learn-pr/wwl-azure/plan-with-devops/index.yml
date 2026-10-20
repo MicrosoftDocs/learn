@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-with-devops
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 64
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - product-manager
+  skills:
+    - DevOps
+    - "Organizational Culture"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/plan-with-devops/index.yml
+  uid: 89d7954e-91af-4764-a98b-5970f1d7ef2a
   title: "Plan with DevOps"
   description: "In this module you learn how to plan your software development projects agilely using GitHub Projects boards."
   ms.date: 02/06/2024

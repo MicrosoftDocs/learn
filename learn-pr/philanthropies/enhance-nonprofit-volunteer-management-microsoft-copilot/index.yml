@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 40
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-365-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+    - business-owner
+  skills:
+    - "Prompt Engineering"
+    - "AI Productivity"
+    - "Communications Management"
+    - "Organizational Effectiveness"
+    - "AI Workforce Applications"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/enhance-nonprofit-volunteer-management-microsoft-copilot/index.yml
+  uid: 21db1667-42ae-4e90-bbe6-205b84911d16
   title: Enhance nonprofit volunteer management with Microsoft Copilot
   description: This module demonstrates how to use Copilot to manage volunteers within your nonprofit organization. Learners review several prompts used for generating volunteer recruitment, training, and recognition materials, and then they practice using and generating their own prompts.
   author: CourtneyHMicrosoft

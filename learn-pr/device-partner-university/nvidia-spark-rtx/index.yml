@@ -2,6 +2,29 @@
 uid: learn.dpu.nvidia-spark-rtx
 title: Explore NVIDIA RTX Spark for Windows PCs
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 19
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+    - business-user
+  skills:
+    - "AI Infrastructure"
+    - "Agent Development"
+    - "Generative AI"
+    - "Model Hosting & Inference"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/nvidia-spark-rtx/index.yml
+  uid: 32ecea3d-ac9d-4021-b3e8-d6a76ac15e78
   title: Explore NVIDIA RTX Spark for Windows PCs
   description: "In this module, you'll explore NVIDIA RTX Spark for Windows PCs and learn how to leverage its capabilities for personal AI agents and other advanced features."
   ms.date: 10/06/2026

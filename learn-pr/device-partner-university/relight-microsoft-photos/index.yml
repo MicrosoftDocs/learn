@@ -2,6 +2,25 @@
 uid: learn.dpu.relight-microsoft-photos
 title: Enhance a portrait using Relight in Microsoft Photos on a Copilot+ PC
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 23
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+  skills:
+    - "AI Productivity"
+    - "Accessible AI"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/relight-microsoft-photos/index.yml
+  uid: 44ff9226-4e38-4a0a-ac26-2171f8ffe501
   title: Enhance a portrait using Relight in Microsoft Photos on a Copilot+ PC
   description: 'In this module, you learn how Relight can help you enhance portrait photos by adjusting lighting sources while maintaining a natural appearance.'
   ms.date: 10/01/2026

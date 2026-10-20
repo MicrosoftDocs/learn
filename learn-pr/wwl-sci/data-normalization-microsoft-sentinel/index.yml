@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.data-normalization-microsoft-sentinel
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 56
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-sentinel
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-operations-analyst
+    - security-engineer
+    - data-engineer
+  skills:
+    - "Security Analytics"
+    - Cybersecurity
+    - "Data Engineering"
+    - "Security Operations Management"
+    - "Cloud Administration"
+    - "Data Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/data-normalization-microsoft-sentinel/index.yml
+  uid: 1c84db30-346d-406d-93f7-26037b891d3c
   title: Data normalization in Microsoft Sentinel
   description: "Data normalization in Microsoft Sentinel"
   ms.date: 04/17/2026

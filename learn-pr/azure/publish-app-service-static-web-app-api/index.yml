@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.azure.publish-static-web-app-and-api
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 18
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - devops-engineer
+  skills:
+    - "Application Development"
+    - DevOps
+    - "Cloud Administration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/publish-app-service-static-web-app-api/index.yml
+  uid: e1188c91-4f96-4ac1-8871-2e082981b5ef
   title: Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps
   description: Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps. Use Visual Studio Code to create and run the web app locally.
   ms.date: 03/12/2025

@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.cela-accessibility.develop-products-with-screen-reader-support
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 99
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Digital Accessibility"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/develop-products-with-screen-reader-support/index.yml
+  uid: 221360bd-86d7-4703-ba9c-fe8c96bd04d4
   ms.author: erzelman
   author: erzelman
   ms.date: 02/06/2025

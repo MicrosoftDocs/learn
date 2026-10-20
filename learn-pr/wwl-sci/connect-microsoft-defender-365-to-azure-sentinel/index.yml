@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-microsoft-defender-365-to-azure-sentinel
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 29
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-defender
+    - microsoft-sentinel
+    - defender-for-cloud
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-operations-analyst
+  skills:
+    - "Security Analytics"
+    - "Security Operations Management"
+    - "Threat Management"
+    - "Security Automation"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/connect-microsoft-defender-365-to-azure-sentinel/index.yml
+  uid: d9f394d9-7099-4793-ad21-9aaec120f40c
   title: Connect Microsoft Defender XDR to Microsoft Sentinel
   description: "Connect Microsoft Defender XDR to Microsoft Sentinel"
   ms.date: 1/29/2026

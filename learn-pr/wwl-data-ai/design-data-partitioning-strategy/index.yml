@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.design-data-partitioning-strategy
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 51
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - solution-architect
+    - data-engineer
+  skills:
+    - "Database Design"
+    - Databases
+    - "Database Development"
+    - "Data Management"
+    - "Data Engineering"
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/design-data-partitioning-strategy/index.yml
+  uid: 33b009c3-37c9-4256-953d-f85c3eee2a82
   title: Design a data partitioning strategy
   description: "Design a data partitioning strategy"
   ms.date: 04/02/2025

@@ -1,6 +1,45 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.migrate-sql-workloads-to-azure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - defender-for-cloud
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - solution-architect
+    - data-engineer
+    - developer
+    - security-engineer
+    - ip-admin
+    - site-reliability-engineer
+  skills:
+    - "Data Migration"
+    - "Data Strategies"
+    - "Solution Architecture"
+    - "Data Administration"
+    - Databases
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - SQL
+    - Automation
+    - "Application Development"
+    - "Data Security"
+    - "Threat Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/migrate-sql-workloads-azure/index.yml
+  uid: e867c870-fd5f-447a-8bb2-9ccb6091c458
   title: Migrate SQL Server workloads to Azure SQL DP-3001
   description: Learn how to perform online and offline SQL Server migrations to Azure SQL. (DP-3001)
   ms.date: 07/23/2026

@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.just-enough-administration-windows-server
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 44
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - systems-administrator
+    - security-engineer
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - Cybersecurity
+    - "Security Architecture Design"
+    - "Infrastructure Management"
+    - Automation
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/just-enough-administration-windows-server/index.yml
+  uid: 7a30a2fd-7757-4a22-842e-ea2865074785
   title: Just Enough Administration in Windows Server
   description: "Learn how to configure Just Enough Administration (JEA) in Windows Server to restrict PowerShell remoting sessions to specific cmdlets, parameters, and values using role capability files and session configuration files."
   ms.date: 08/31/2026

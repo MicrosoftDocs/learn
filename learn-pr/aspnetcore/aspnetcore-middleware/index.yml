@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.aspnetcore-middleware
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 29
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/aspnetcore-middleware/index.yml
+  uid: bedd779a-1ff0-4028-b32e-ee2cdf05e4ba
   title: Customize ASP.NET Core behavior with middleware
   description: "Understand and implement middleware in an ASP.NET Core app. Use included middleware like HTTP logging and authentication. Create custom middleware to handle requests and responses."
   ms.date: 10/02/2024

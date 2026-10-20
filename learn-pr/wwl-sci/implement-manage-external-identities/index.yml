@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-manage-external-identities
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 72
+  last.refresh.date: null
+  modality: module
+  products:
+    - entra
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - identity-access-admin
+    - administrator
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "Security Architecture Design"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-manage-external-identities/index.yml
+  uid: e5705183-1164-4b6f-b146-281e19127dbd
   adobe-target: true
   prefetch-feature-rollout: true
   title: Implement and Manage External Identities

@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.create-stored-procedures-table-valued-functions
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 56
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - developer
+    - data-engineer
+    - data-professional
+  skills:
+    - SQL
+    - "Database Development"
+    - Databases
+    - "Data Security"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/create-stored-procedures-table-valued-functions/index.yml
+  uid: 1d2e36a0-2b7a-49b8-96a5-7629e4a5350e
   title: Create stored procedures and user-defined functions
   description: "This content is a part of Create stored procedures and user-defined functions."
   ms.date: 08/11/2026

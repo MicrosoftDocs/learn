@@ -1,6 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.work-smarter-with-copilot-in-microsoft-fabric
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - fabric
+    - power-bi
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - data-analyst
+  skills:
+    - "AI Productivity"
+    - "Data Analytics"
+    - "Data Engineering"
+    - "AI Prompting"
+    - "AI-Augmented Software Development"
+    - "Prompt Engineering"
+    - Automation
+    - SQL
+    - "Data Warehousing"
+    - "Knowledge Grounding for AI"
+    - "Data Visualization"
+    - "Agent Development"
+    - "Data Security"
+    - "AI Governance"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/work-smarter-with-copilot-in-microsoft-fabric/index.yml
+  uid: 3388e9c4-0c21-4243-8565-437497cbca1a
   title: Work smarter with Copilot in Microsoft Fabric
   description: Explore how to work smarter with Copilot in Microsoft Fabric. Learn how to integrate, transform, store data, and create insightful reports using Copilot in Microsoft Fabric.
   ms.date: 06/03/2025

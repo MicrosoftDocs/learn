@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.prevent-data-exfiltration-azure-ai-workloads
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 18
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - azure-machine-learning
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - systems-administrator
+  skills:
+    - "Data Security"
+    - "IT Networking"
+    - "Cloud Administration"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/prevent-azure-machine-learning-data-exfiltration/index.yml
+  uid: 799d0d26-6679-4ee0-8140-5e16fde2010f
   ms.author: viniap
   author: Orin-Thomas
   ms.date: 07/25/2026

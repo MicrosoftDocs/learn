@@ -1,6 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.az-400-facilitate-communication-collaboration
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+    - product-manager
+  skills:
+    - DevOps
+    - "IT Strategy"
+    - "Application Development"
+    - Automation
+    - "Solution Architecture"
+    - "Organizational Culture"
+    - "Organizational Effectiveness"
+    - "Cloud Administration"
+    - "Data Analytics"
+    - "Data Visualization"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-400-facilitate-communication-collaboration/index.yml
+  uid: 9317a387-c4c0-49f2-8d31-37810b8979df
   title: "Facilitate communication and collaboration"
   description: "Explore DevOps capabilities such as continuous planning and continuous collaboration and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
   brand: azure

@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.design-multi-agent-memory-azure-cosmos-db
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 53
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - solution-architect
+    - data-engineer
+  skills:
+    - "Agent Development"
+    - "Multi-Agent Orchestration"
+    - "Vector Databases"
+    - "AI Infrastructure"
+    - "Data Engineering"
+    - "AI Model Evaluation & Testing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/aaai-design-multi-agent-memory-azure-cosmos-db/index.yml
+  uid: 2cefdb9d-082d-487b-b6fb-91188cd1bbe6
   title: Design Multi-Agent Memory Architectures with Azure Cosmos DB
   description: "Design multi-agent memory architectures for production AI systems using Azure Cosmos DB. Implement semantic memory with vector storage, configure context window optimization strategies, design memory expiration and pruning policies, and build context-aware agent behaviors based on recalled history."
   ms.date: 8/3/2026

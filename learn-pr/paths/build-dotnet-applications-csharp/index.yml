@@ -1,6 +1,24 @@
 ### YamlMime:LearningPath
 uid: learn.build-dotnet-applications-csharp
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Data Management"
+    - Storage
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/build-dotnet-applications-csharp/index.yml
+  uid: 0916830c-234e-447c-aa07-c3e1cf7eb298
   title: 'Build .NET applications with C#'
   description: .NET is a free, cross-platform, open source developer platform for building many different types of applications. With .NET, you can use multiple languages, editors, and libraries to build for web, mobile, desktop, games, and IoT.
   ms.date: 10/14/2024

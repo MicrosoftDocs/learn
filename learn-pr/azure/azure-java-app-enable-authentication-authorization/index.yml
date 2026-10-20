@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure.azure-java-app-enable-authentication-authorization
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 39
+  last.refresh.date: null
+  modality: module
+  products:
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - security-engineer
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+    - "Application Development"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-java-app-enable-authentication-authorization/index.yml
+  uid: 22d4c34f-24fe-47fa-b08d-64561d2de16a
   moduleType: standard
   title: Understand Sign-In with Microsoft Entra ID in Java Web Apps
   description: Understand Microsoft Entra ID sign-in and Microsoft Graph authorization through explained Java code samples, without a hands-on lab.

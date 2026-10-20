@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 49
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - platform-engineer
+    - solution-architect
+  skills:
+    - Automation
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Cloud Infrastructure"
+    - Virtualization
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/automate-configuration-of-windows-server-iaas-virtual-machines/index.yml
+  uid: e54fe170-d37e-4d13-8750-a1e1155ea0ac
   title: Automate the configuration of Windows Server IaaS Virtual Machines
   description: "Learn how to deploy Desired State Configuration (DSC) extensions, implement those extensions to remediate noncompliant servers, and use custom script extension."
   ms.date: 01/23/2026

@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 91
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-databricks
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - devops-engineer
+  skills:
+    - "Data Engineering"
+    - DevOps
+    - "Cloud Administration"
+    - "Data Analytics"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-databricks/monitor-troubleshoot-optimize-workloads-azure-databricks/index.yml
+  uid: 9ffab436-1ed3-4bb5-875b-cd08257a0768
   title: Monitor, Troubleshoot and Optimize Workloads in Azure Databricks
   description: Learn how to monitor cluster consumption, troubleshoot job failures, diagnose Spark performance issues, and implement log streaming to Azure Log Analytics for centralized monitoring of Azure Databricks workloads.
   ms.date: 10/12/2026

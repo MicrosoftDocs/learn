@@ -1,6 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.eliminate-public-exposure-paas-private-link
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 43
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - azure-openai
+    - defender-for-cloud
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - network-engineer
+    - administrator
+    - solution-architect
+  skills:
+    - Cybersecurity
+    - "Network Connectivity"
+    - "Security Architecture Design"
+    - "Data Security"
+    - "Cloud Administration"
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "IT Networking"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/eliminate-public-exposure-paas-private-link/index.yml
+  uid: c0ce4c56-9f76-4445-929d-346aaa63b358
   title: Eliminate Public Network Exposure of Azure PaaS Services
   description: "Eliminate public network exposure of Azure PaaS and AI services using private endpoints and Azure Private Link. Configure private endpoints, integrate private DNS, expose internal services using Private Link service, and enforce private access adoption using Azure Policy and Defender for Cloud."
   ms.date: 05/10/2026

@@ -1,6 +1,37 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.secure-optimize-deploy-azure-cosmos-db-solutions
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - developer
+  skills:
+    - Databases
+    - "Data Administration"
+    - "Database Development"
+    - "Application Development"
+    - "Data Management"
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "Python (Programming Language)"
+    - "Database Design"
+    - "Cloud Administration"
+    - "Security Analytics"
+    - "Data Analytics"
+    - "Data Engineering"
+    - "Data Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/secure-optimize-deploy-azure-cosmos-db-solutions/index.yml
+  uid: a180164c-d3ad-42cc-843d-e37799744a79
   title: Secure, Optimize, and Deploy Azure Cosmos DB Solutions
   description: "Run Azure Cosmos DB for NoSQL in production: configure authentication, authorization, and network security, protect and recover data, design for multi-region availability, tune indexing and queries, monitor and troubleshoot, and manage many accounts with fleets."
   ms.date: 10/05/2026

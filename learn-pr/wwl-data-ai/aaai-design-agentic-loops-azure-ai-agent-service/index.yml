@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.design-agentic-loops-microsoft-foundry-agent-service
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 59
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - ai-engineer
+  skills:
+    - "Multi-Agent Orchestration"
+    - "Agentic AI"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/aaai-design-agentic-loops-azure-ai-agent-service/index.yml
+  uid: 72414b7a-cca1-4f30-b17c-626f23c260d9
   title: Design Stateful Agentic Loops with Microsoft Foundry Agent Service
   description: "Design production-grade stateful agentic loops with Microsoft Foundry Agent Service. Implement run-status handling and context accumulation, configure agent reflection and planning cycles, architect session state persistence, build fork-based session patterns, and migrate existing Agents v1 workloads to the Agents v2 Responses API."
   ms.date: 7/27/2026

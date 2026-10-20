@@ -1,6 +1,23 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-interfaces-new
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Application Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-interfaces-new/index.yml
+  uid: 31eb6f6d-9718-4dfa-a612-287b1b27f421
   title: Implement interfaces
   description: Implement interfaces
   ms.date: 02/15/2025

@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.oxford.intro-to-iot-hub
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 28
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - solution-architect
+    - security-engineer
+  skills:
+    - "Application Development"
+    - "Cloud Infrastructure"
+    - "Security Architecture Design"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/introduction-to-iot-hub/index.yml
+  uid: 2fc033a2-4b97-4c05-9033-c88d68a7b834
   title: "Introduction to Azure IoT Hub"
   description: "Learn how to assess the characteristics of Azure IoT Hub and determine scenarios when to use IoT Hub."
   ms.date: 05/10/2026

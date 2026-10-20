@@ -3,6 +3,24 @@ uid: learn.aspnet.build-blazor-webapps
 title: Build web apps with Blazor
 summary: Learn how to build your first web app with the Blazor web user-interface framework.
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Application Architecture"
+    - "Database Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/build-web-apps-with-blazor/index.yml
+  uid: 2b595b4d-e924-49d6-8393-43aad3cbd078
   title: Build web apps with Blazor learning path
   description: Learn how to build your first web app with the free and open-source Blazor web user-interface framework.
   ms.date: 01/26/2024

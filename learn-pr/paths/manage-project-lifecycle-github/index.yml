@@ -1,6 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.manage-project-lifecycle-github
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - devops-engineer
+    - solution-architect
+    - systems-administrator
+  skills:
+    - DevOps
+    - "Collaboration Tools"
+    - "Application Development"
+    - "Communications Management"
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+    - "API Management"
+    - "Security Automation"
+    - "Organizational Effectiveness"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-project-lifecycle-github/index.yml
+  uid: a2819055-4116-4800-b8a6-2cf360cd32e3
   title: Manage the lifecycle of your projects on GitHub
   description: Through work planning and tracking, effective branching strategies, and extending GitHub through its API, manage releases all the way from idea to working software in the hands of your users.
   brand: github

@@ -1,6 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.az-400-manage-source-control
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+  skills:
+    - DevOps
+    - "Collaboration Tools"
+    - "Data Migration"
+    - "Data Security"
+    - "Infrastructure Management"
+    - "Application Development"
+    - "Communications Management"
+    - "Organizational Effectiveness"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Application Security"
+    - "Security Automation"
+    - "Identity and Access Management (IAM)"
+    - "API Management"
+    - Automation
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-400-manage-source-control/index.yml
+  uid: fab73096-7386-4079-b091-60419605ae64
   title: "Manage source control"
   description: "Use GitHub to build a modern source control strategy and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
   brand: azure

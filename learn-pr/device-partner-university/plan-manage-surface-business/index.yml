@@ -2,6 +2,35 @@
 uid: learn.dpu.plan-manage-surface-business
 title: Plan and manage Surface for Business deployments
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 19
+  last.refresh.date: null
+  modality: module
+  products:
+    - surface
+    - intune
+    - windows
+    - office-teams
+    - office-onedrive
+    - microsoft-defender
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - technology-manager
+    - business-leader
+  skills:
+    - "Device Management"
+    - "Infrastructure Management"
+    - "Collaboration Tools"
+    - Cybersecurity
+    - "Digital Accessibility"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/plan-manage-surface-business/index.yml
+  uid: b7d6f9f0-f5e0-44af-9b51-01831a49e33c
   title: Plan And Manage Surface For Business Deployments
   description: Learn how to plan and manage Surface for Business deployments that enable secure, collaborative, and productive work environments using the Surface Management Portal.
   ms.date: 11/25/2025

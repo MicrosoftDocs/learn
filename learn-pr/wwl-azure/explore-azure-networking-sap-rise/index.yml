@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-networking-sap-rise
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 36
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - network-engineer
+  skills:
+    - "Network Connectivity"
+    - "Solution Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-azure-networking-sap-rise/index.yml
+  uid: 7ba4065a-74b7-41ac-8893-fc75a1f76272
   title: Explore Azure networking for SAP RISE
   description: "Your SAP RISE architecture running in SAP's Azure subscription and tenant is created and managed by SAP. This module shows you how to use your Azure networks to connect to your SAP RISE instance."
   ms.date: 12/23/2024

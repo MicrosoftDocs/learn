@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.azure.analyze-data-in-sentinel
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 70
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - microsoft-sentinel
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-operations-analyst
+  skills:
+    - "Security Analytics"
+    - "Threat Management"
+    - "Security Operations Management"
+    - "Security Automation"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/analyze-data-in-sentinel/index.yml
+  uid: 7ca4f6e1-4537-4eb3-86f1-eed74630349e
   title: Threat detection with Microsoft Sentinel analytics
   description: "Threat detection with Microsoft Sentinel analytics"
   ms.date: 06/09/2025

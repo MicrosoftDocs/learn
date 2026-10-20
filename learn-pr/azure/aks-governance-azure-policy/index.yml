@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.aks-governance-azure-policy
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 117
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - platform-engineer
+    - systems-administrator
+    - security-engineer
+  skills:
+    - "Cloud Administration"
+    - "Platform Engineering"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Automation"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/aks-governance-azure-policy/index.yml
+  uid: 2c70e00e-fb49-4c5a-abf6-53a6a85106c8
   title: Azure Kubernetes Services Governance with Azure Policy
   description: In this module, we discuss how to use Azure Policy for Kubernetes to enforce rules and detect noncompliance in AKS clusters.
   ms.date: 04/22/2024
@@ -28,8 +51,8 @@ levels:
 roles:
 - administrator
 - auditor
-- devops-engineer	
-- solution-architect	
+- devops-engineer
+- solution-architect
 products:
 - azure-kubernetes-service
 - azure-policy

@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-cloud-service-types
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 13
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+  skills:
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-cloud-service-types/index.yml
+  uid: 8edf35b3-7551-4bdb-ba77-e36e744ff794
   title: Describe Cloud Service Types
   description: "Introduction to cloud service types (Infrastructure, Platform, and Software as a Service models) and associated use cases for each."
   ms.date: 12/19/2025

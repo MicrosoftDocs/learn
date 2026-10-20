@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.create-configure-manage-identities
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 56
+  last.refresh.date: null
+  modality: module
+  products:
+    - entra
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - identity-access-admin
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+    - "Device Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/create-configure-manage-identities/index.yml
+  uid: cc4fd416-0069-476d-a5ea-32113d6a62f9
   title: Create, configure, and manage identities
   description: "Access to cloud-based workloads needs to be controlled centrally by providing a definitive identity for each user and resource. You can ensure employees and vendors have just enough access to do their job."
   ms.date: 03/16/2026

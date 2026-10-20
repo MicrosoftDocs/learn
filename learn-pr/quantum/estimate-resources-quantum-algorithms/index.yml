@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.quantum.estimate-resources-quantum-algorithms
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 41
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-quantum
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Python (Programming Language)"
+    - "Security Architecture Design"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/quantum/estimate-resources-quantum-algorithms/index.yml
+  uid: 4bf758bc-339f-450b-a04b-3a02fed97fec
   title: Estimate physical resource requirements for quantum algorithms with the Microsoft Quantum resource estimator
   description: Learn how to get started with Microsoft Quantum resource estimator.
   ms.date: 09/22/2025

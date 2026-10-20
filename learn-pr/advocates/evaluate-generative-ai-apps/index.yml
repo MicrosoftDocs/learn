@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.evaluate-generative-ai-apps
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 38
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+  skills:
+    - "AI Model Evaluation & Testing"
+    - "AI Safety"
+    - "Prompt Engineering"
+    - "Large Language Model Operations (LLMOps)"
+    - "Retrieval-Augmented Generation (RAG)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/evaluate-generative-ai-apps/index.yml
+  uid: a116c289-839a-4a62-bf22-88a06b050e96
   ms.author: apspeigh
   author: aprilgittens
   ms.date: 04/20/2026

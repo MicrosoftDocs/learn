@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.create-azure-resources-by-using-azure-cli
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 37
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - it-professional
+  skills:
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/create-azure-resources-by-using-azure-cli/index.yml
+  uid: 6ffdd108-1627-44f9-baa8-b0a3bd6cb008
   title: Create Azure Resources Using Azure CLI
   description: "Learn how to install and use Azure CLI to create and manage Azure resources interactively and through Bash scripts. Learn CLI syntax, authentication, resource management, and troubleshooting for efficient cloud automation."
   ms.date: 10/08/2025

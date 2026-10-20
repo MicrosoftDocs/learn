@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-requirements-ai-powered-business-solutions
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 25
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - business-analyst
+    - business-leader
+  skills:
+    - "AI Strategy"
+    - "Solution Architecture"
+    - "Data Strategies"
+    - "Knowledge Grounding for AI"
+    - "Agentic AI"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/analyze-requirements-ai-powered-business-solutions/index.yml
+  uid: 08b6ef30-3606-4335-a748-9b4622734abc
   title: "Analyze Requirements for AI-Powered Business Solutions"
   description: "Learn to analyze, design, and implement AI-powered business solutions using agents, generative AI, and Microsoft Copilot for productivity."
   ms.date: 02/04/2026

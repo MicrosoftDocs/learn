@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-azure-horizondb
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 53
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - solution-architect
+    - developer
+  skills:
+    - Databases
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+    - "Database Development"
+    - "Vector Databases"
+    - "AI Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-azure-horizondb/index.yml
+  uid: 237d5b89-2f7a-42ab-83b4-7328c37db5aa
   title: Get started with Azure HorizonDB
   description: "Learn what Azure HorizonDB is, how its disaggregated compute-and-storage and database-as-a-log architecture works, and when to use this AI-ready, PostgreSQL-compatible database service for transactional, AI, and read-scale workloads."
   ms.date: 09/29/2026

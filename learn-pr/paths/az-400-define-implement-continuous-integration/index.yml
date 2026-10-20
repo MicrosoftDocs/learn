@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.az-400-define-implement-continuous-integration
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+    - platform-engineer
+    - security-engineer
+  skills:
+    - DevOps
+    - Automation
+    - "Application Development"
+    - "Cloud Infrastructure"
+    - "Application Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-400-define-implement-continuous-integration/index.yml
+  uid: 421bbf54-0938-4729-9107-0ec3dc0dd958
   title: "Define and implement continuous integration"
   description: "Create automated pipelines that continuously build, test, and deploy your applications and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
   brand: azure

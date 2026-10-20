@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.enumerate-objects-pipeline
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 28
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/enumerate-objects-pipeline/index.yml
+  uid: 68a6a39b-62cc-4113-845a-911ec548db4a
   title: Enumerate objects in the pipeline
   description: "This module explains how to enumerate objects in the pipeline so that you can work with one object at a time during automation."
   ms.date: 05/12/2026

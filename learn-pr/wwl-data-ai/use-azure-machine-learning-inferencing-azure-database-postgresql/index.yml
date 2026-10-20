@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 14
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-machine-learning
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - ai-engineer
+  skills:
+    - "Model Hosting & Inference"
+    - "Database Development"
+    - "Machine Learning"
+    - "Application Development"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/use-azure-machine-learning-inferencing-azure-database-postgresql/index.yml
+  uid: 34c361da-8f0f-4c9f-9bc6-b4ec6c40b1fb
   title: Use Azure Machine Learning for inferencing from Azure Database for PostgreSQL
   description: Learn how to use Azure Machine Learning for inferencing from Azure Database for PostgreSQL.
   author: wwlpublish

@@ -6,7 +6,7 @@ metadata:
   description: "This unit introduces the importance of data summarization and analysis using aggregate functions in PostgreSQL. It explains how GROUP BY and HAVING clauses support meaningful reporting by transforming raw data into actionable insights."
   ms.date: 05/23/2025
   author: milenak
-  ms.author: mpopovic
+  ms.author: maghan
   ms.topic: unit
 ###########################################################################
 ###

@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.intro-to-endpoint-manager
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 23
+  last.refresh.date: null
+  modality: module
+  products:
+    - intune
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - technology-manager
+  skills:
+    - "Device Management"
+    - Cybersecurity
+    - "Cloud Computing"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/endpoint-manager/intro-to-endpoint-manager/index.yml
+  uid: baaf3963-8320-4987-89d7-aa9100171eb2
   title: Introduction to Microsoft Intune
   description: In this module, you learn about the basics of Microsoft Intune and about Intune and Configuration Manager endpoint management.
   ms.date: 06/10/2025

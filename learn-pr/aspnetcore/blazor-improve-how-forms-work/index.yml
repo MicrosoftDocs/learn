@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.use-forms-in-blazor-web-apps
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 34
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/blazor-improve-how-forms-work/index.yml
+  uid: 1983d901-0e0b-446b-973a-fbc02803763a
   moduleType: standard
   title: "Improve how forms and validation work in Blazor web apps"
   description: "Learn how to use DOM events, forms, and validation in a Blazor app"

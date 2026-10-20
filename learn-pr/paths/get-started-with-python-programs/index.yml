@@ -1,6 +1,23 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-with-python-programs
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Python (Programming Language)"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-with-python-programs/index.yml
+  uid: 82d05ffd-8d26-48f4-a795-937a4554ee44
   title: "Get Started with Python Programming: Part 2 - Building Programs"
   description: Learn the fundamentals of programming in Python.
   ms.date: 07/15/2026

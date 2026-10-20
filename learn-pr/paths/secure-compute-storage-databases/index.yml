@@ -1,6 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.secure-compute-storage-databases
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - defender-for-cloud
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+  skills:
+    - Cybersecurity
+    - "Security Architecture Design"
+    - "Identity and Access Management (IAM)"
+    - "Data Security"
+    - "Security Operations Management"
+    - "Cloud Infrastructure"
+    - "API Management"
+    - Databases
+    - SQL
+    - Storage
+    - "Zero Trust Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Threat Management"
+    - "Security Analytics"
+    - "Network Connectivity"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/secure-compute-storage-databases/index.yml
+  uid: 4b037371-db5f-4700-82ce-d329eeb2fcdd
   title: 'Protect compute, storage, and databases'
   description: 'Protect compute, storage, and databases'
   ms.date: 01/23/2026

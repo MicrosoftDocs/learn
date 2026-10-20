@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-azure-sql-database-security
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - security-engineer
+  skills:
+    - Databases
+    - "Data Administration"
+    - "Data Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Analytics"
+    - "Threat Management"
+    - "Cloud Administration"
+    - "Security Operations Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-azure-sql-database-security/index.yml
+  uid: 7d4beb7b-58f3-4e9f-8972-97700c151360
   title: Implement Security for Azure SQL Databases for the Cloud and AI Security Engineer
   description: Implement end-to-end security for Azure SQL Database and SQL Managed Instance. Configure Entra ID authentication with managed identity access, deploy private endpoints, and apply encryption and access controls to protect sensitive financial data. Establish compliant audit trails and enable Microsoft Defender for Databases to detect SQL injection, anomalous access, and vulnerability exposures.
   ms.date: 04/22/2026

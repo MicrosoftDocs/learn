@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.case-study-apps-data
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 38
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - security-engineer
+  skills:
+    - "Security Architecture Design"
+    - "Application Security"
+    - "Data Security"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/case-study-apps-data/index.yml
+  uid: 5fe20d65-6222-42f3-8851-62317455ca1d
   title: "Interactive Case Study: Securing Apps and Data"
   description: "Apply your cybersecurity architect skills on a real business scenario in the area of securing apps and data. Analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
   ms.date: 06/18/2026

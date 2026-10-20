@@ -2,6 +2,33 @@
 uid: learn.dpu.surface-for-business-accreditation-2025
 title: Surface for Business Accreditation 2025
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - surface
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - it-professional
+    - technology-manager
+  skills:
+    - "Device Management"
+    - "AI Productivity"
+    - "Digital Accessibility"
+    - Cybersecurity
+    - "AI Infrastructure"
+    - "Infrastructure Management"
+    - "Collaboration Tools"
+    - "Cloud Administration"
+    - "Zero Trust Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/surface-for-business-accreditation-2025/index.yml
+  uid: 624722f6-0148-4664-8f8f-9dde799ff941
   title: Surface For Business Accreditation 2025
   description: This Learning Path introduces Surface for Business solutions and how they help organizations thrive. Learn about the latest Surface for Business devices, how to choose the right models for different roles, modernizing confidently after Windows 10 end of support, and planning and managing deployment. This path is deal for IT decision makers, IT administrators, and business leaders guiding device strategy and rollout.
   ms.date: 12/09/2025

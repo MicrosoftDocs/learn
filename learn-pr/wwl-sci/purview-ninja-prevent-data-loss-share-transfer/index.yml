@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-ninja-prevent-data-loss-share-transfer
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 21
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-purview
+    - m365
+    - office-sp
+    - office-onedrive
+    - office-teams
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ip-admin
+    - risk-practitioner
+    - security-engineer
+  skills:
+    - "Data Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - Cybersecurity
+    - "Security Automation"
+    - "Security Operations Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-ninja-prevent-data-loss-share-transfer/index.yml
+  uid: 20b32274-8699-44ba-af38-8df3811e31e8
   title: Protect Sensitive Data with DLP in Exchange, SharePoint, OneDrive, and Teams
   description: "Protect sensitive data with DLP in Exchange, SharePoint, OneDrive, and Teams."
   ms.date: 08/21/2025

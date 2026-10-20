@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.create-saas-offer-commercial-marketplace
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 34
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-owner
+    - technology-manager
+    - developer
+  skills:
+    - "Cloud Computing"
+    - "Application Architecture"
+    - "Application Development"
+    - "Identity and Access Management (IAM)"
+    - "Customer Relationship Management (CRM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/commercial-marketplace/create-saas-offer-commercial-marketplace/index.yml
+  uid: d08af2eb-2848-4ed3-8c19-0d7c2c60a4cd
   title: Create a SaaS offer for the commercial marketplace
   description: This module provides a high-level overview of software as a service (SaaS) offers in the commercial marketplace.
   ms.date: 04/26/2024

@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.discover-data-onelake
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 45
+  last.refresh.date: null
+  modality: module
+  products:
+    - fabric
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - data-analyst
+  skills:
+    - "Data Engineering"
+    - "Data Analytics"
+    - Storage
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/discover-data-onelake/index.yml
+  uid: c32c5cb8-aa54-49e3-a5d5-b181e2932bd9
   title: Discover and Connect to Data in OneLake
   description: "Browse and connect to data using Microsoft OneLake's unified storage. Discover data across workspaces with the OneLake catalog, create shortcuts to reference existing data, and explore streaming sources in Real-Time hub."
   ms.date: 08/20/2026

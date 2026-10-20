@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-admin.secure-cloud-resources
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 40
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - security-engineer
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+    - "Application Security"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-admin/cmu-secure-cloud-resources/index.yml
+  uid: 77f84bad-28ff-4afc-be63-41473b382803
   title: Secure your cloud resources with access control
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Learn about digital identities and how they can be managed and synchronized within an organization.
   ms.date: 06/07/2022

@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.optimize-query-performance-indexes-azure-documentdb
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 83
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - database-administrator
+    - data-engineer
+  skills:
+    - Databases
+    - "Database Design"
+    - "Database Development"
+    - "Application Development"
+    - "Data Administration"
+    - "Vector Databases"
+    - "Semantic Search"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/optimize-query-performance-indexes-azure-documentdb/index.yml
+  uid: 7c239325-d496-4933-83a6-881e037faeca
   title: Optimize Query Performance Using Indexes in Azure DocumentDB
   description: "Optimize query performance in Azure DocumentDB by building effective indexing strategies. Create single-field, compound, multi-key, and specialized indexes. To maintain performance at scale, analyze query execution with the explain() command and monitor index health."
   ms.date: 06/20/2026

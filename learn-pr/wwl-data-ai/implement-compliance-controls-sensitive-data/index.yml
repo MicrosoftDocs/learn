@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-compliance-controls-for-sensitive-data
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 103
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - defender-for-cloud
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - security-engineer
+    - data-engineer
+  skills:
+    - "Data Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Management"
+    - SQL
+    - "Security Operations Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-compliance-controls-sensitive-data/index.yml
+  uid: 243f99ef-32bf-4c00-9e54-d12b091a5a09
   title: Implement compliance controls for sensitive data
   description: Implement compliance controls for sensitive data
   ms.date: 08/04/2026
