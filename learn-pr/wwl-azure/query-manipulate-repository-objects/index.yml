@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.query-manipulate-repository-objects
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 29
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - "Infrastructure Management"
+    - Automation
+    - "Device Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/query-manipulate-repository-objects/index.yml
+  uid: 8ce5d938-0174-45b2-9cc1-9caeeab3d95e
   title: Query and manipulate repository objects by using CIM and WMI methods
   description: "This module explains how to use CIM and WMI to make changes by using methods. The methods available vary depending on the type of object. Discovering and understanding these methods is an important step in querying and manipulating the repository information."
   ms.date: 05/12/2026

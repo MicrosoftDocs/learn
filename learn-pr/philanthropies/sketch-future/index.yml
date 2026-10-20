@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.philanthropies.sketch-future
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 86
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles: null
+  skills:
+    - "Generative AI"
+    - "Prompt Engineering"
+    - "AI Productivity"
+    - "AI Workforce Applications"
+    - "Communications Management"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/sketch-future/index.yml
+  uid: 8439ca01-22fd-421e-8de2-0fc817ccb856
   title: Sketch the Future - AI Concept Art with Microsoft Copilot and Designer
   description: "Explore how Microsoft Copilot and Designer can support pre-production planning for animated projects, from generating structured animation roadmaps to creating visual concept frames and style guides."
   ms.date: 4/28/2025

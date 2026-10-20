@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-threat-hunting-sentinel-with-notebooks
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 31
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-sentinel
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-operations-analyst
+  skills:
+    - "Security Analytics"
+    - "Threat Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/perform-threat-hunting-sentinel-with-notebooks/index.yml
+  uid: fb7308e4-df60-4de2-b05c-92723efbae00
   title: Hunt for threats using notebooks in Microsoft Sentinel
   description: "Hunt for threats using notebooks in Microsoft Sentinel"
   ms.date: 5/22/2025

@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.azure.pc-holographic-remoting-tutorials-mrtk
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 18
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/pc-holographic-remoting-tutorials/index.yml
+  uid: b0e734ac-a04c-42f2-8e64-f3e01b72ea54
   title: Create a Holographic Remoting app to visualize 3D content on HoloLens 2
   description: This course explores the use of PC holographic remoting by integrating to a HoloLens 2 application.
   ms.date: 01/03/2024

@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.implement-compliance-cloud-native-applications
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 32
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - ip-admin
+    - security-engineer
+  skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Security"
+    - "Application Security"
+    - "Application Development"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/language/dotnet-compliance-cloud-native-applications/index.yml
+  uid: c6e6dea6-d9af-4718-a4b5-df93adebf9a4
   title: Implement compliance in a cloud-native .NET 8 application
   description: Microservice applications, because of their distributed nature, can be difficult to secure. In this module, you'll learn how to classify sensitive data in a cloud-native application, redact sensitive data in log files, and generate compliance reports for a cloud-native application.
   ms.date: 11/30/2023

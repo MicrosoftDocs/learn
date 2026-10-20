@@ -2,6 +2,28 @@
 uid: learn.explore-azure-database-for-mysql-features-support-mission-critical-workloads
 
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 32
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - solution-architect
+  skills:
+    - "Data Administration"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+    - "Solution Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/explore-azure-database-for-mysql-features-that-support-mission-critical-workloads/index.yml
+  uid: 1694e5ac-52c3-4b24-9370-3898ece8cf5e
   title: "Explore Azure Database for MySQL - Flexible Server features that support mission-critical workloads"
   description: "Explore Azure Database for MySQL - Flexible Server features that support mission-critical workloads"
   ms.date: 08/27/2024

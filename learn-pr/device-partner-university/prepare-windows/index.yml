@@ -5,6 +5,26 @@ uid: learn.dpu.prepare-windows
 title: Prepare to deploy updates for Windows client and Microsoft 365 apps
 
 metadata: 
+  content.levels: 300
+  content.locale: en-us
+  duration: 44
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - it-professional
+  skills:
+    - "Device Management"
+    - "Cloud Administration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/prepare-windows/index.yml
+  uid: 974d1f61-43da-42a9-b0bc-1f2128857622
 
   title: Prepare to Deploy Updates for Windows Client and Microsoft 365 Apps
   description: In this module, you'll review recommended tasks and deliverables needed to prepare your organization for a Windows 11 upgrade.

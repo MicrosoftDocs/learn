@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-syslog-data-sources-to-azure-sentinel
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 28
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-sentinel
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-operations-analyst
+  skills:
+    - "Security Analytics"
+    - "Data Engineering"
+    - SQL
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/connect-syslog-data-sources-to-azure-sentinel/index.yml
+  uid: 80cf9587-04d0-4601-8769-105cbbeac849
   title: Connect syslog data sources to Microsoft Sentinel
   description: "Connect syslog data sources to Microsoft Sentinel"
   ms.date: 06/16/2026

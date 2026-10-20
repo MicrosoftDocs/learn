@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.deploy-manage-resource-manager-templates
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - systems-administrator
+  skills:
+    - DevOps
+    - Automation
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Identity and Access Management (IAM)"
+    - Storage
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/deploy-manage-resource-manager-templates/index.yml
+  uid: d6fd54cf-5f1a-4d1a-9b2d-63becf24de81
   title: Deploy and manage resources in Azure by using JSON ARM templates
   description: Learn how JSON ARM templates enable you to manage both basic and complex infrastructure deployments on Azure.
   brand: azure

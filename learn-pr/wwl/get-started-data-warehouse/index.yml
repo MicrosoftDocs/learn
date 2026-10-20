@@ -1,6 +1,37 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-data-warehouse
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 69
+  last.refresh.date: null
+  modality: module
+  products:
+    - fabric
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - data-analyst
+    - database-administrator
+    - solution-architect
+  skills:
+    - "Data Warehousing"
+    - "Data Engineering"
+    - "Database Design"
+    - SQL
+    - "Database Development"
+    - "Data Management"
+    - "Data Analytics"
+    - "Data Administration"
+    - "Data Security"
+    - "Data Visualization"
+    - "Solution Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/get-started-data-warehouse/index.yml
+  uid: 8231a345-ac7f-4e53-b53e-4e942fcfeb60
   title: Get Started with Data Warehouses in Microsoft Fabric
   description: "Understand the key components and design considerations for implementation of data warehouses in Microsoft Fabric."
   ms.date: 03/04/2026

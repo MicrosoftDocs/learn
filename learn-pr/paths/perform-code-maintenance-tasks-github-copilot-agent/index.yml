@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.perform-code-maintenance-tasks-github-copilot-agent
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - github
+    - github-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "AI-Augmented Software Development"
+    - "Application Development"
+    - "Application Architecture"
+    - Automation
+    - "Application Security"
+    - Cybersecurity
+    - "Security Operations Management"
+    - "Security Automation"
+    - "AI Prompting"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/perform-code-maintenance-tasks-github-copilot-agent/index.yml
+  uid: 000063cf-3f5b-4b1e-891e-977d83a5f91d
   title: Perform Code Maintenance Tasks using GitHub Copilot Agent
   description: Learn how to accelerate common code maintenance tasks using GitHub Copilot Agent. This training covers how to resolve issues quickly and accurately by using GitHub Copilot Agent to refactor code in a Visual Studio Code environment.
   ms.date: 03/05/2026

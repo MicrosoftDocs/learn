@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-collection-types
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 62
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Data Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-collection-types/index.yml
+  uid: a234d5f9-ecfd-4b5c-85e0-5f4529f8837c
   title: Implement Collection Types
   description: "Learn, to use C# tools for managing groups of objects dynamically, ensuring type safety and efficient data manipulation."
   ms.date: 03/28/2025

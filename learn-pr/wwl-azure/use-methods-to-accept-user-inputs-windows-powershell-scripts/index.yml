@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 41
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - it-professional
+  skills:
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/use-methods-to-accept-user-inputs-windows-powershell-scripts/index.yml
+  uid: b2ff2eec-8089-41fb-ba80-016e52992deb
   title: Use methods to accept user inputs in Windows PowerShell scripts
   description: "This method explains multiple methods for accepting user input in a Windows PowerShell script."
   ms.date: 05/12/2026

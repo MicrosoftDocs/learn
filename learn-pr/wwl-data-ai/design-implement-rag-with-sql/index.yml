@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-rag-with-sql
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 75
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - ai-engineer
+  skills:
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Knowledge Grounding for AI"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/design-implement-rag-with-sql/index.yml
+  uid: 90ac7031-398e-488c-96b8-d8254bbc2ec7
   title: Design and Implement RAG With SQL
   description: Learn how to implement Retrieval Augmented Generation (RAG) patterns using Azure SQL Database. Identify RAG use cases, prepare database context for Large Language Model (LLM) processing, construct augmented prompts, and process model responses.
   ms.date: 07/17/2026

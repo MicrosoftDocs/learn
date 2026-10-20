@@ -2,6 +2,36 @@
 uid: learn.philanthropies.introduction-to-ai-skills-for-nonprofits
 title: Introduction to AI Skills for nonprofits
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - microsoft-365-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - nonprofit-professionals
+    - business-user
+  skills:
+    - "AI Fluency"
+    - "AI Productivity"
+    - "Generative AI"
+    - "Responsible AI"
+    - "Agentic AI"
+    - "AI Prompting"
+    - "Knowledge Grounding for AI"
+    - "Communications Management"
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Business Insights"
+    - "Collaboration Tools"
+    - "Career Development"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/introduction-to-ai-skills-for-nonprofits/index.yml
+  uid: 5f0dc10e-be3b-413c-b3ba-6d2f85d272ba
   title: Introduction to AI Skills for nonprofits
   description: Learn how to boost productivity with AI by understanding how Microsoft Copilot works and how to craft effective prompts across Microsoft applications such as Word and Excel, plus Microsoft 365 Copilot Chat. The AI Skills for Nonprofits collection is designed as a comprehensive skilling path to enhance the digital capabilities of nonprofit organizations. This learning path is recommended for all nonprofit professionals.
   author: CourtneyHMicrosoft

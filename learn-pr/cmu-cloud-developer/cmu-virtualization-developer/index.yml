@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 21
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - it-professional
+  skills:
+    - Virtualization
+    - "Application Development"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-virtualization-developer/index.yml
+  uid: d7586d8b-690b-4ad9-81f1-a77d33e11e6c
   title: Understand virtualization
   description: Carnegie Mellon University's Cloud Developer course. Take a deep dive into virtualization by understanding its formal definition as well as the different types of virtual machines.
   ms.date: 03/09/2022

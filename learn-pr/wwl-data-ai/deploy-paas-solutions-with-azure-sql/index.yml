@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-paas-solutions-with-azure-sql
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 89
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+  skills:
+    - Databases
+    - "Data Administration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/deploy-paas-solutions-with-azure-sql/index.yml
+  uid: 7ca66419-4133-4843-ae5d-34b5a4b594f4
   adobe-target: true
   prefetch-feature-rollout: true
   title: Deploy PaaS solutions with Azure SQL

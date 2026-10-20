@@ -2,6 +2,30 @@
 uid: learn.dpu.resilient-foundations-windows-11
 title: Resilient foundations with Windows 11 Pro
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 30
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+    - intune
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - it-professional
+    - systems-administrator
+    - security-engineer
+  skills:
+    - "Device Management"
+    - "Infrastructure Management"
+    - Cybersecurity
+    - "Cloud Administration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/resilient-foundations-windows-11/index.yml
+  uid: f9073033-a93f-48b2-800b-4d7c0af04959
   title: Resilient Foundations With Windows 11 Pro
   description: In this module, you'll learn how Windows 11 Pro provides resilient foundations for modern work by enhancing performance, reliability, and security integration.
   ms.date: 01/26/2026

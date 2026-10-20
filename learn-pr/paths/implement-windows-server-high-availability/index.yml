@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-windows-server-high-availability
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles: null
+  skills:
+    - Storage
+    - "Infrastructure Management"
+    - Virtualization
+    - "Solution Architecture"
+    - "IT Networking"
+    - Automation
+    - "Cloud Infrastructure"
+    - "Platform Engineering"
+    - Cybersecurity
+    - "Cloud Computing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-windows-server-high-availability/index.yml
+  uid: bfc6c1b3-1ba2-40e2-9a06-9e900ad9c528
   title: Implement Windows Server high availability
   description: Implement Windows Server high availability
   ms.date: 01/23/2026

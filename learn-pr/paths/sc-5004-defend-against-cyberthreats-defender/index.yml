@@ -1,6 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.defend-against-cyberthreats-defender
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - microsoft-defender
+    - defender-endpoint
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - security-engineer
+    - security-operations-analyst
+  skills:
+    - "Security Operations Management"
+    - "Security Analytics"
+    - "Threat Management"
+    - "Security Automation"
+    - "Generative AI"
+    - Cybersecurity
+    - "Zero Trust Security"
+    - "Device Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/sc-5004-defend-against-cyberthreats-defender/index.yml
+  uid: b7dfa9b5-ed63-4117-9375-97ac0fbd4102
   title: 'Defend against cyberthreats with Microsoft Defender XDR'
   description: 'To earn this Microsoft Applied Skills credential, learners demonstrate the ability to use Microsoft Defender XDR to detect and respond to cyberthreats. Candidates for this credential should be familiar with investigating and gathering evidence about attacks on endpoints. They should also have experience using Microsoft Defender for Endpoint and Kusto Query Language (KQL).'
   ms.date: 11/8/2024

@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.visualize-real-time-data-azure-stream-analytics-power-bi
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 68
+  last.refresh.date: null
+  modality: module
+  products:
+    - power-bi
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-analyst
+    - data-engineer
+  skills:
+    - "Data Visualization"
+    - "Data Engineering"
+    - "Data Analytics"
+    - SQL
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/visualize-real-time-data-azure-stream-analytics-power-bi/index.yml
+  uid: ddaf9409-82e2-4608-a1dc-7daf2d019eb4
   title: Visualize Real-Time Data With Azure Stream Analytics and Power BI
   description: "By combining the stream processing capabilities of Azure Stream Analytics and the data visualization capabilities of Microsoft Power BI, you can create real-time data dashboards."
   ms.date: 10/12/2026

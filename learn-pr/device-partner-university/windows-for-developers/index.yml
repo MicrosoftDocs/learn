@@ -5,6 +5,28 @@ uid: learn.dpu.windows-for-developers
 title: Streamline development workflows with Windows 11
 
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 28
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - devops-engineer
+  skills:
+    - "Application Development"
+    - DevOps
+    - "AI-Augmented Software Development"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/windows-for-developers/index.yml
+  uid: 641b02e9-3d12-4ff3-b38b-7345361577ac
   title: Streamline Development Workflows with Windows 11
   description: In this module, you'll learn how Windows 11 capabilities support modern development workflows and help developers work more efficiently.
   ms.date: 07/20/2026

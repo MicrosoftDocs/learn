@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 56
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+    - azure
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - solution-architect
+    - security-engineer
+    - ai-engineer
+  skills:
+    - "AI Infrastructure"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Identity and Access Management (IAM)"
+    - "AI Governance"
+    - "Security Architecture Design"
+    - "Solution Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-ai-ready-infrastructure-microsoft-foundry/index.yml
+  uid: 042e9712-c62d-487c-8010-7c4c607ba682
   title: "Configure AI-Ready Infrastructure with Microsoft Foundry"
   description: "Microsoft Foundry uses a top-level resource and child projects to centralize governance while providing isolated development environments for AI teams."
   ms.date: 08/18/2026

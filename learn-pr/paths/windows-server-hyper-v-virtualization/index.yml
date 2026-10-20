@@ -1,6 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.windows-server-hyper-v-virtualization
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - solution-architect
+    - systems-administrator
+  skills:
+    - Virtualization
+    - "Infrastructure Management"
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Cloud Infrastructure"
+    - Storage
+    - "Solution Architecture"
+    - "Security Architecture Design"
+    - Cybersecurity
+    - "Data Security"
+    - DevOps
+    - "Cloud Administration"
+    - "Platform Engineering"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/windows-server-hyper-v-virtualization/index.yml
+  uid: 77c3543e-92c3-469e-b746-72c2d166399f
   title: Windows Server Hyper-V and Virtualization
   description: Windows Server Hyper-V and Virtualization
   ms.date: 01/23/2026

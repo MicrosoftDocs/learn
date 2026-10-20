@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-admin.cmu-orchestration
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 55
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - devops-engineer
+  skills:
+    - Automation
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - DevOps
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-admin/cmu-orchestration/index.yml
+  uid: 008e6e2c-ce24-40b6-9316-56fca2737bdf
   title: Automate cloud resource management
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Learn about how to automate cloud resource management with scripts and infrastructure-as-code tools like Terraform.
   ms.date: 06/07/2022

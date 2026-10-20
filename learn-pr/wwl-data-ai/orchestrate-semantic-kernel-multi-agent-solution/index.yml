@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.orchestrate-sk-multi-agent-solution
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 73
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+  skills:
+    - "Multi-Agent Orchestration"
+    - "Agent Development"
+    - "Application Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/index.yml
+  uid: 90aecc86-6c54-4b9a-a714-2f6abd54d17e
   title: Orchestrate a multi-agent solution using the Microsoft Agent Framework
   description: Learn how to design multi-agent solutions with the Microsoft Agent Framework SDK
   author: buzahid

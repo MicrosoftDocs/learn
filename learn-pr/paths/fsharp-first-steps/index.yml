@@ -1,6 +1,22 @@
 ### YamlMime:LearningPath
 uid: learn.languages.fsharp-first-steps
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/fsharp-first-steps/index.yml
+  uid: 917b57b1-790f-43a4-a95f-276447ffb440
   title: Take your first steps with F#
   description: F# is an open-source, cross-platform programming language that makes it easy to write succinct, performant, robust, and practical code. It's a general-purpose language that enables you to create many different types of applications like Web API, Desktop, IoT, Gaming and more. 
   brand: azure

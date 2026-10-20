@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.evaluate-costs-benefits-ai-powered-business-solution
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 34
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-copilot-studio
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - business-leader
+    - business-analyst
+  skills:
+    - "AI Business & Vision"
+    - "AI Strategy"
+    - "Solution Architecture"
+    - "Business Insights"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/evaluate-costs-benefits-ai-powered-business-solution/index.yml
+  uid: bce3c25f-fa64-41fd-88f3-0f54c202608f
   title: "Evaluate Costs and Benefits of AI Solutions"
   description: "Learn to assess costs and benefits of AI solutions. Develop ROI analyses, evaluate TCO, and decide to build, buy, or extend AI components."
   ms.date: 02/13/2026

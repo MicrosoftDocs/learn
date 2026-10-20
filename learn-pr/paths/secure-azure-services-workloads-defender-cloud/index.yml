@@ -1,6 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.secure-azure-services-workloads-defender-cloud
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - defender-for-cloud
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - systems-administrator
+  skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Operations Management"
+    - "Cloud Administration"
+    - Cybersecurity
+    - "Security Analytics"
+    - "Threat Management"
+    - "Cloud Infrastructure"
+    - "Security Architecture Design"
+    - "Network Connectivity"
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+    - "IT Networking"
+    - "Data Security"
+    - Databases
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/secure-azure-services-workloads-defender-cloud/index.yml
+  uid: 401a7ddb-8b0f-4e60-88e5-6ae1972bb9db
   title: Secure Azure services and workloads with Microsoft Defender for Cloud regulatory compliance controls SC-5002
   description: Explore network traffic filtering with Network Security Group, set up Microsoft Defender for Cloud, create a Log Analytics workspace, configure Log Analytics agent integration, Azure Key Vault networking, and connect an Azure SQL server using Azure Private Endpoint in the Azure portal. Enhance cloud security effectively. (SC-5002)
   ms.date: 01/23/2026

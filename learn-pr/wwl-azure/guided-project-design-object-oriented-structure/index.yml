@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-design-object-oriented-structure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 78
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/guided-project-design-object-oriented-structure/index.yml
+  uid: 22ea76bc-cc68-4353-b6b2-de1c280a778a
   title: 'Guided project: Design object-oriented structures'
   description: "This is a guided project about exception handling."
   ms.date: 09/11/2024

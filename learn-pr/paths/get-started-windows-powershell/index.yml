@@ -1,6 +1,23 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-windows-powershell
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles: null
+  skills:
+    - "Infrastructure Management"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-windows-powershell/index.yml
+  uid: cce0e246-a673-4805-a944-3ae17a6064c5
   title: Get started with Windows PowerShell
   description: This learning path introduces you to Windows PowerShell and provides an overview of the product’s functionality. It explains how to open and configure Windows PowerShell, run commands, and use its built-in Help system.
   ms.date: 05/12/2026

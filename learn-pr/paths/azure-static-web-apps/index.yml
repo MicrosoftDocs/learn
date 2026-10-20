@@ -1,6 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.azure-static-web-apps
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+  skills:
+    - "Application Development"
+    - DevOps
+    - "Cloud Administration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/azure-static-web-apps/index.yml
+  uid: b5be21ee-1de5-48bc-9340-160dde34a2f7
   title: Azure Static Web Apps
   description: Azure Static Web Apps is a modern web app service that offers streamlined full-stack development from source code to global high availability.
   brand: azure

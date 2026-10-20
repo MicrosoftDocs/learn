@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.cmu-cloud-admin.cmu-manage-cloud-resources
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - Virtualization
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+    - "IT Networking"
+    - "Cloud Administration"
+    - "Application Architecture"
+    - Automation
+    - "Infrastructure Management"
+    - DevOps
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/cmu-manage-cloud-resources/index.yml
+  uid: 92c71850-3a84-425a-b971-c90e693c9552
   title: Manage cloud resources
   description: The second learning path in a course on Cloud Administration from Carnegie Mellon University. Learn more about how the cloud works by exploring its underlying technology of virtualization, how to take advantage of the cloud for scale, and how to automate cloud resource management.
   brand: azure

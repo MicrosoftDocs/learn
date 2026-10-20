@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 50
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+  skills:
+    - "Cloud Infrastructure"
+    - Automation
+    - DevOps
+    - Databases
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/configure-automatic-deployment-azure-sql-database/index.yml
+  uid: c797d682-86c5-4860-b2fd-56caeef0e70f
   title: Automate database deployment
   description: "Automate database deployment"
   ms.date: 08/10/2026

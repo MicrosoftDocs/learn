@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.integrate-azure-pipelines
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 27
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-devops
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+    - platform-engineer
+  skills:
+    - DevOps
+    - Automation
+    - "Application Development"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/integrate-azure-pipelines/index.yml
+  uid: efd2e4f1-b973-42f8-82aa-3ac64bab80a6
   title: Integrate with Azure Pipelines
   description: "Learn Azure Pipelines integration by exploring advanced pipeline anatomy, structure, templates, YAML resources, and multi-repository workflows for comprehensive CI/CD solutions."
   ms.date: 09/29/2025

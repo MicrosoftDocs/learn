@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.github.developer-use-cases-for-ai-with-github-copilot
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 49
+  last.refresh.date: null
+  modality: module
+  products:
+    - github-copilot
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - devops-engineer
+    - technology-manager
+  skills:
+    - "AI-Augmented Software Development"
+    - "Application Development"
+    - "AI-Powered Workflow Automation"
+    - "AI Productivity"
+    - "AI Governance"
+    - "Data Analytics"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/developer-use-cases-for-ai-with-github-copilot/index.yml
+  uid: 0122680c-60f7-4cb7-8314-017e29f26745
   title: Developer use cases for AI with GitHub Copilot
   description: Developer Uses Cases for AI with GitHub Copilot explores ways developers can apply AI using GitHub Copilot to enhance productivity, ultimately enabling teams to save time, improve code quality, and boost developer satisfaction.
   ms.date: 10/09/2024

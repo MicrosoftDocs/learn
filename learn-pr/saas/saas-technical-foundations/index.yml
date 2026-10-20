@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.saas-technical-foundations
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 75
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+  skills:
+    - "Solution Architecture"
+    - "Application Architecture"
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/saas/saas-technical-foundations/index.yml
+  uid: e417cd5b-4f96-4ee9-ba79-8a69f5e8b7c5
   title: Technical foundations of SaaS            # Do not edit: title must be "Introduction to (product)"
   description: "Learn from Microsoft about SaaS (Software-as-a-Service) architecture foundations, such as tenancy models, deployment SaaS models, monolithic and microservices architecture, and authentication in SaaS."               # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 2/9/2024               # Date of commit to GitHub (do not use target publication date, cannot be in the future)

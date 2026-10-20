@@ -1,6 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.az104-admin-prerequisites
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - systems-administrator
+  skills:
+    - "Cloud Administration"
+    - DevOps
+    - Automation
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-104-administrator-prerequisites/index.yml
+  uid: 55132ea2-eabc-4d73-8d65-cc7e0ebc817d
   title: 'AZ-104: Prerequisites for Azure administrators'
   description: 'AZ-104: Prerequisites for Azure administrators'
   ms.date: 06/23/2026

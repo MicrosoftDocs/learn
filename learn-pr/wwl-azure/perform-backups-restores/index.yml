@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-backups-restores
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 65
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - database-administrator
+    - solution-architect
+    - systems-administrator
+    - site-reliability-engineer
+  skills:
+    - Storage
+    - Databases
+    - "Infrastructure Management"
+    - "Cloud Administration"
+    - Automation
+    - "Data Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/perform-backups-restores/index.yml
+  uid: 648c23a7-82df-4b86-9e57-d54d6d42534e
   title: Perform backups and restores for SAP workloads on Azure
   description: "This module explores backup and restore of Azure virtual machines and examines the steps and important considerations involved in backing up and restoring SAP workloads on Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 12/23/2024

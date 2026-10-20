@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.codebase-representation-codeql
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 33
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+    - github-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - devops-engineer
+    - security-engineer
+  skills:
+    - "Application Security"
+    - "Security Automation"
+    - DevOps
+    - "AI-Augmented Software Development"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/codebase-representation-codeql/index.yml
+  uid: 071839e4-ff7d-4ff1-8e0e-c3058fa90463
   title: "Identify security vulnerabilities in your codebase by using CodeQL"
   description: "Learn how to use CodeQL to analyze the code in your GitHub repository and identify security vulnerabilities." 
   ms.date: 07/01/2026

@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 50
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+  skills:
+    - "Database Design"
+    - Databases
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-mongodb-database-for-azure-cosmos-db/index.yml
+  uid: 070f8f60-3ff6-41dc-9df5-c44699463272
   title: Design an Azure Cosmos DB for MongoDB database
   description: "Design an Azure Cosmos DB for MongoDB database"
   ms.date: 12/28/2022

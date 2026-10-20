@@ -2,6 +2,32 @@
 uid: learn.github.introduction-to-github-copilot-for-business
 title: Introduction to GitHub Copilot Business
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 23
+  last.refresh.date: null
+  modality: module
+  products:
+    - github-copilot
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - technology-manager
+    - developer
+    - solution-architect
+  skills:
+    - "AI Productivity"
+    - "AI Workforce Applications"
+    - "Application Development"
+    - "Cloud Administration"
+    - "Responsible AI"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/introduction-to-github-copilot-for-business/index.yml
+  uid: 83346036-8aef-431a-aa90-3004168e396d
   title: Introduction to GitHub Copilot Business
   description: GitHub Copilot Business builds the power of generative AI into an editor extension that suggests code in real-time. By using context to provide and synthesize code to match, it allows developers to convert comments to code, autofill repetitive code, and show alternatives.
   author: a-a-ron

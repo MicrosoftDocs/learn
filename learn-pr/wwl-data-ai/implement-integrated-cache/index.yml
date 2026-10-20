@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-integrated-cache
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 24
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - Databases
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-integrated-cache/index.yml
+  uid: a8d2bd9e-51d0-4fee-86d6-5ab0e3bbc14a
   title: Implement integrated cache in Azure Cosmos DB for NoSQL
   description: "Implement integrated cache in Azure Cosmos DB for NoSQL"
   ms.date: 04/02/2025

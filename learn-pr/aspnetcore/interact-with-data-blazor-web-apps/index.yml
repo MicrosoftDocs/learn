@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.interact-with-data-blazor-web-apps
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 59
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Database Development"
+    - "Application Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/interact-with-data-blazor-web-apps/index.yml
+  uid: 704fef4d-7df0-4466-b8b9-1f6818f65a1a
   moduleType: standard
   title: Interact with data in Blazor web apps
   description: Learn how to create a graphical user interface in a Blazor web app by creating and assembling Blazor components. Access data and share it for display on multiple pages within your app.

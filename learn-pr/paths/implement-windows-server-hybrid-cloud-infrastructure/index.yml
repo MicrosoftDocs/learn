@@ -1,6 +1,41 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-windows-server-hybrid-cloud-infrastructure
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - solution-architect
+    - network-engineer
+    - identity-access-admin
+    - security-engineer
+  skills:
+    - "Network Connectivity"
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+    - Cybersecurity
+    - "Identity and Access Management (IAM)"
+    - "Infrastructure Management"
+    - "Security Architecture Design"
+    - "Data Migration"
+    - Virtualization
+    - "Cloud Administration"
+    - Storage
+    - "Data Security"
+    - Automation
+    - "Cloud Computing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-windows-server-hybrid-cloud-infrastructure/index.yml
+  uid: 112ea412-30f4-40d4-8d49-af3f084fd7c3
   title: Implement a Windows Server hybrid cloud infrastructure
   description: Hybrid cloud infrastructure implementation.
   ms.date: 01/23/2026

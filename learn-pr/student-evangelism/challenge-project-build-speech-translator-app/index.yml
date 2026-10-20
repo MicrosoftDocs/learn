@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.challenge-project-build-speech-translator-app
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 166
+  last.refresh.date: null
+  modality: module
+  products:
+    - power-apps
+    - power-automate
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - functional-consultant
+  skills:
+    - "Low-Code Development"
+    - "AI Solutions"
+    - "Database Design"
+    - "Natural Language Processing (NLP)"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/challenge-project-build-speech-translator-app/index.yml
+  uid: 1f6d4241-77bd-4944-bc70-00b3f129d4bb
   title: Challenge project - Build a speech translator app
   description: Learn how to build a speech translation app by using Microsoft Power Apps and integrate it with AI.
   author: theoyinbooke

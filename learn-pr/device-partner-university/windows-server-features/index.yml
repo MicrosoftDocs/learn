@@ -2,6 +2,27 @@
 uid: learn.dpu.windows-server-features
 title: Key features and innovations in Windows Server 2025
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 10
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - solution-architect
+  skills:
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/windows-server-features/index.yml
+  uid: 9b718531-1491-43b7-83f7-7930ec4c8ff0
   title: Key Features And Innovations In Windows Server 2025
   description: In this module, you explore the key features of Windows Server 2025.
   ms.date: 08/27/2025

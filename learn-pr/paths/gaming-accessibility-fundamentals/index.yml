@@ -1,6 +1,24 @@
 ### YamlMime:LearningPath
 uid: learn.gaming-accessibility-fundamentals
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Digital Accessibility"
+    - "Organizational Culture"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/gaming-accessibility-fundamentals/index.yml
+  uid: c0c75d7e-92c0-48e7-b028-5ab45d39f999
   title: Gaming accessibility fundamentals
   description: At Team Xbox, we believe that when everyone plays, we all win. We're committed to ensuring as many developers as possible have the tools needed to create accessible experiences. This learning path introduces foundational concepts about gaming accessibility for game, platform, and hardware developers looking to expand their knowledge in this space.
   brand: m365

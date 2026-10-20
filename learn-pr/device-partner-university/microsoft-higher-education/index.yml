@@ -2,6 +2,32 @@
 uid: learn.dpu.microsoft-higher-education
 title: Empowering higher education with Copilot+ PCs, Windows 11 Pro, and Microsoft 365
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 33
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+    - m365
+    - microsoft-365-copilot
+    - intune
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - student
+    - higher-ed-educator
+    - systems-administrator
+    - technology-manager
+  skills:
+    - "AI Productivity"
+    - "Device Management"
+    - "Collaboration Tools"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/microsoft-higher-education/index.yml
+  uid: e7decbce-0339-42a3-9243-3fb4945b5076
   title: Empowering Higher Education With Copilot+ PCs, Windows 11 Pro, And Microsoft 365
   description: 'Learn how Copilot+ PCs, Windows 11 Pro, and Microsoft 365 can empower higher education institutions to adapt to modern educational realities, keep students organized, enhance educator workflows, and secure device deployment for administrators.'
   ms.date: 03/17/2026

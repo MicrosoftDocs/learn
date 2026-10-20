@@ -1,6 +1,35 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-data-science-machine-learning-fabric
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - fabric
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-analyst
+    - data-engineer
+    - data-scientist
+  skills:
+    - "Data Analytics"
+    - "Data Engineering"
+    - "Data Management"
+    - "AI Fluency"
+    - "Data Science"
+    - "Machine Learning"
+    - "AI Model Evaluation & Testing"
+    - "Model Hosting & Inference"
+    - "Data Visualization"
+    - "Python (Programming Language)"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-data-science-machine-learning-fabric/index.yml
+  uid: f429fbf4-48b0-4934-b00f-7a14bba32259
   title: Implement a data science and machine learning solution for AI in Microsoft Fabric DP-604T00
   description: Explore the data science process and learn how to train machine learning models to accomplish artificial intelligence in Microsoft Fabric. (DP-604T00)
   ms.date: 1/27/2025

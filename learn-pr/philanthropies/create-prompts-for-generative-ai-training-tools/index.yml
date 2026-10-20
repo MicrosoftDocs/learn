@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.philanthropies.create-prompts-for-generative-ai-training-tools
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 20
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+  skills:
+    - "AI Prompting"
+    - "Prompt Engineering"
+    - "AI Productivity"
+    - "Responsible AI"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/create-prompts-for-generative-ai-training-tools/index.yml
+  uid: fe9e633a-ef0c-4709-9e07-accd875b0335
   title: Create effective prompts for generative AI training tools
   description: Learn how to craft engaging and informative prompts with Microsoft Copilot. This module will teach you the basic concepts of prompt engineering, the elements of an effective prompt, and best practices in prompting.
   author: yoosunee

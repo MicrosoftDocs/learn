@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.azure.secure-azure-arc-enabled-servers
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 38
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - defender-for-cloud
+    - defender-endpoint
+    - microsoft-sentinel
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - security-operations-analyst
+    - systems-administrator
+  skills:
+    - Cybersecurity
+    - "Security Analytics"
+    - "Threat Management"
+    - "Security Automation"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Cloud Administration"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/secure-azure-arc-enabled-servers/index.yml
+  uid: 259ab8ab-5740-4b4c-a9b3-5069880b3855
   title: Secure your hybrid and multicloud machines by using Azure Arc-enabled servers 
   description: Learn about the benefits of and how to onboard Azure Arc-enabled servers to Microsoft Defender for Cloud, Microsoft Defender for Servers, and Microsoft Sentinel.
   ms.date: 04/24/2024

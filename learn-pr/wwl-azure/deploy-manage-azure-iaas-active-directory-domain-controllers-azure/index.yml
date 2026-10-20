@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 39
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - identity-access-admin
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/deploy-manage-azure-iaas-active-directory-domain-controllers-azure/index.yml
+  uid: 05be3001-5df4-4977-9a77-675abb4a2192
   title: Deploy and manage Azure IaaS Active Directory domain controllers in Azure
   description: "Learn how to extend your on-premises Active Directory environment into Azure, including deploying replica domain controllers on Azure VMs, creating new AD DS forests in Azure, and configuring VPN or ExpressRoute connectivity, AD DS sites, trust relationships, and FSMO role placement."
   ms.date: 08/31/2026

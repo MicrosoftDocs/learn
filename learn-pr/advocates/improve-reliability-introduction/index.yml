@@ -2,6 +2,27 @@
 uid: learn.improve-reliability-introduction
 title: "Improve your reliability with modern operations practices: An introduction"
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 10
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - site-reliability-engineer
+    - devops-engineer
+    - technology-manager
+  skills:
+    - DevOps
+    - "Organizational Culture"
+    - "IT Strategy"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/improve-reliability-introduction/index.yml
+  uid: c8ece96f-1f42-4107-a15b-1930b92b1aa2
   title: "Improve your reliability with modern operations practices: An introduction"
   description: Discover a map for navigating reliability challenges and sustainably achieving the appropriate level of reliability in your systems, services, and products.
   ms.date: 04/12/2026

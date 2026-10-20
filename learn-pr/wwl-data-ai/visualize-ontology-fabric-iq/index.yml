@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.visualize-ontology-fabric-iq
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 46
+  last.refresh.date: null
+  modality: module
+  products:
+    - fabric
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-analyst
+  skills:
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Business Insights"
+    - "Data Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/visualize-ontology-fabric-iq/index.yml
+  uid: c8c8d974-2703-4583-88f4-c997cea79350
   title: Visualize Ontology Data with Microsoft Fabric IQ
   description: Learn how to explore entity instances, visualize entity connections in the relationship graph, and filter ontology data using the Query builder with filters and components in Microsoft Fabric IQ.
   ms.date: 04/13/2026

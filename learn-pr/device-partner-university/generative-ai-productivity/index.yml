@@ -2,6 +2,35 @@
 uid: learn.dpu.generative-ai-productivity
 title: Unlock productivity with generative AI
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 18
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-365-copilot
+    - microsoft-copilot-studio
+    - microsoft-foundry
+    - azure
+    - microsoft-purview
+    - defender-for-cloud
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+    - technology-manager
+  skills:
+    - "Generative AI"
+    - "AI Productivity"
+    - "Responsible AI"
+    - "AI Governance"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "AI Business & Vision"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/generative-ai-productivity/index.yml
+  uid: 49057c54-f026-4948-83e1-21f8815d3ddc
   title: Unlock Productivity With Generative AI
   description: Learn how generative AI enhances productivity, ensures responsible use, and empowers innovation through Microsoft tools like Copilot Studio and Azure AI. This module explores practical applications, security principles, and platform capabilities to help organizations confidently adopt and scale AI solutions.
   ms.date: 10/24/2025

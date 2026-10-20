@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.azure.introduction-to-azure-netapp-files
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 42
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - systems-administrator
+    - database-administrator
+  skills:
+    - Storage
+    - "Network Connectivity"
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/introduction-to-azure-netapp-files/index.yml
+  uid: d5e00871-f442-4319-a688-51ee5904a33d
   moduleType: introduction        
   title: Introduction to Azure NetApp Files         
   description: Evaluate whether Microsoft Azure NetApp Files is appropriate for migrating and running your organization's file-based workloads.       

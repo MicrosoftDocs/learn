@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.review-features-tools-for-azure-cloud-shell
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 35
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+  skills:
+    - "Cloud Administration"
+    - "Cloud Computing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/review-features-tools-for-azure-cloud-shell/index.yml
+  uid: a530fbe9-753b-4f4e-9255-561cac6c9b49
   title: Review the features and tools for Azure Cloud Shell
   description: "This module covers Azure Cloud Shell and its features."
   ms.date: 05/12/2026

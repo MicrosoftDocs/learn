@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.resolve-github-issues-github-copilot-agent
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 92
+  last.refresh.date: null
+  modality: module
+  products:
+    - github-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "AI-Augmented Software Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/resolve-github-issues-github-copilot-agent/index.yml
+  uid: 710b8732-a16b-4c81-8159-4f1267d7c900
   title: Resolve GitHub issues using GitHub Copilot Agent
   description: "This module covers how to identify and remediate GitHub issues using GitHub Copilot's Ask and Agent modes. The training focuses on security vulnerabilities such as SQL injection, encryption, logging, and path traversal problems."
   ms.date: 11/11/2025

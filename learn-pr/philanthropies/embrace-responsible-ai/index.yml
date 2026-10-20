@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.philanthropies.embrace-responsible-ai
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 99
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - k-12-educator
+    - higher-ed-educator
+    - business-user
+    - ai-engineer
+  skills:
+    - "Responsible AI"
+    - "AI Governance"
+    - "AI Risk Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/embrace-responsible-ai/index.yml
+  uid: ffc31984-d924-4c01-b590-2e7ae75e0615
   title: Guided project - Embrace responsible AI
   description: Go beyond theory and learn how to implement Responsible AI framework into a learning environment. Learn through real-world examples and interactive exercises. This module is designed to help integrate AI systems into various work environments.
   author: yoosunee

@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-sharepoint-online-use-windows-powershell
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 46
+  last.refresh.date: null
+  modality: module
+  products:
+    - office-sp
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+  skills:
+    - "Collaboration Tools"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-sharepoint-online-use-windows-powershell/index.yml
+  uid: a7be923a-7559-403b-b845-87090a3b9f8f
   title: Manage SharePoint Online by using Windows PowerShell
   description: "Manage SharePoint Online by using Windows PowerShell"
   ms.date: 05/12/2026

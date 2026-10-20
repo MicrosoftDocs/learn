@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 41
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - support-engineer
+    - solution-architect
+  skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Data Analytics"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-modernize-explore-monitoring-requirements-azure-sap-workloads/index.yml
+  uid: 23bebbe3-6275-4473-96b0-3bde6430d447
   title: Modernize and explore monitoring requirements of Azure for SAP workloads
   description: 'Explore monitoring of data from several Azure systems and tools to support SAP on Azure workloads. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/08/2024

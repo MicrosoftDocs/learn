@@ -2,6 +2,27 @@
 uid: learn.github.introduction-prompt-engineering-with-github-copilot
 title: Introduction to prompt engineering with GitHub Copilot
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 30
+  last.refresh.date: null
+  modality: module
+  products:
+    - github-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "AI Prompting"
+    - "AI Productivity"
+    - "Generative AI"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/introduction-prompt-engineering-with-github-copilot/index.yml
+  uid: d84a070d-7faa-442a-8062-bb1aaf41a7cb
   title: Introduction to prompt engineering with GitHub Copilot
   description: This module highlights the basic core principles of prompt engineering and explains the best practices to create prompts quickly and effectively in GitHub Copilot. Learn the strategies that transform comments into precise code, identify the steps within GitHub Copilot's prompt processing flow, and gain an understanding of the important role that Large Language Models (LLMs) play in enhancing suggestion quality. Discover advanced techniques like role prompting and chat history management to accelerate development workflows and optimize resource usage.
   author: a-a-ron

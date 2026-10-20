@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-sql-platform-security
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 21
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+  skills:
+    - Databases
+    - "Data Administration"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/configure-azure-sql-platform-security/index.yml
+  uid: 44fb2134-6c6d-4d93-847d-76c4cc09d2b7
   title: Configure Platform-Level Security for Azure SQL
   description: "Configure authentication, network isolation, encryption, and access controls for Azure SQL Database and SQL Managed Instance. Implement Microsoft Entra ID–only authentication with managed identity access for AI workloads, deploy private endpoints, and apply transparent data encryption, dynamic data masking, and row-level security to protect sensitive financial data."
   ms.date: 04/22/2026

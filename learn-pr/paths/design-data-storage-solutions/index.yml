@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.design-data-storage-solutions
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - solution-architect
+  skills:
+    - Storage
+    - "Solution Architecture"
+    - "Data Security"
+    - "Database Design"
+    - Databases
+    - "Data Management"
+    - "Cloud Infrastructure"
+    - "Data Engineering"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/design-data-storage-solutions/index.yml
+  uid: ea3ce683-2aec-49ea-9f4b-7271573c18a5
   title: 'AZ-305: Design data storage solutions'
   description: 'AZ-305: Design data storage solutions'
   ms.date: 06/23/2026

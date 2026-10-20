@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.data-ai.intro-to-ml-with-python
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-scientist
+    - developer
+  skills:
+    - "Data Science"
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Machine Learning"
+    - "Python (Programming Language)"
+    - "AI Model Evaluation & Testing"
+    - "Natural Language Processing (NLP)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/intro-to-ml-with-python/index.yml
+  uid: a4b8f5a2-72ba-402f-ae4e-1ef24ffb5c2a
   title: Introduction to machine learning with Python and Azure Notebooks
   description: In this learning path, learn how to predict patterns and identify trends using Python and associated libraries in Jupyter Notebooks running on Azure.
   brand: azure

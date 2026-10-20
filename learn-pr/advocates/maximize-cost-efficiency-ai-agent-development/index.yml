@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.maximize-cost-efficiency-ai-agent-development
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 28
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-copilot-studio
+    - microsoft-foundry
+    - vs
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - technology-manager
+    - ai-engineer
+  skills:
+    - "AI Strategy"
+    - "Solution Architecture"
+    - "Agent Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/maximize-cost-efficiency-ai-agent-development/index.yml
+  uid: 9f99c102-5363-4ba6-8b95-68a7f6b8083a
   title: Maximize Cost Efficiency by Choosing the Right AI Agent Development Approach on Azure
   description: "Evaluate when to develop custom AI agents tailored to your needs and when to deploy prebuilt solutions from trusted platforms. Learn how to assess trade-offs in time-to-value, complexity, customization, and operational cost. This module also guides you in selecting the right models for your AI agents, from lightweight task-specific agents to advanced multi-modal agents."
   ms.date: 09/1/2026

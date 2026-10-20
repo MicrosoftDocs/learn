@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.process-azure-cosmos-db-nosql-change-feed
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 103
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - data-engineer
+  skills:
+    - "Data Engineering"
+    - "Database Development"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/process-azure-cosmos-db-nosql-change-feed/index.yml
+  uid: bdc186f1-03bb-4b25-ba69-7e63fe36faa2
   title: Process the Azure Cosmos DB for NoSQL Change Feed
   description: "Read the Azure Cosmos DB for NoSQL change feed with the processor and pull models, react to changes with Azure Functions, and move container data with copy jobs."
   ms.date: 10/02/2026

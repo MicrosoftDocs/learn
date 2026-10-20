@@ -1,6 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.integrate-backend-services-ai-solutions
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - ai-engineer
+    - solution-architect
+  skills:
+    - "Application Architecture"
+    - "Python (Programming Language)"
+    - "Cloud Computing"
+    - "Generative AI"
+    - "Application Development"
+    - "AI Solutions"
+    - "Cloud Infrastructure"
+    - "API Management"
+    - "Identity and Access Management (IAM)"
+    - Automation
+    - "AI Infrastructure"
+    - "Application Security"
+    - "AI-Powered Workflow Automation"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/integrate-backend-services-ai-solutions/index.yml
+  uid: 7891fbf7-05be-4d32-a777-fe6bebd63253
   title: Integrate Backend Services for AI Solutions
   description: Learn how to integrate backend services for AI solutions on Azure.
   ms.date: 02/13/2026

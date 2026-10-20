@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-retention-recovery
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 55
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-purview
+    - m365
+    - office-sp
+    - office-onedrive
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ip-admin
+  skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-retention-recovery/index.yml
+  uid: 6e5341fb-bb08-4191-a1ef-ef63ef2687bb
   title: Implement and manage Microsoft 365 retention and recovery
   description: "Implement and manage Microsoft 365 retention and recovery."
   ms.date: 05/14/2025

@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.training-certification-course-planning-microsoft-learn-educators
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 47
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - higher-ed-educator
+  skills: null
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/training-certification-course-planning-microsoft-learn-educators/index.yml
+  uid: 6826e611-dce7-4908-bb86-4cbda5233e58
   title: Training, certification, and course planning for MSLE
   description: "The VEPS series covers the MSLE program providing an understanding of all aspects of the program from joining MSLE, preparing to teach a course, closing out a course, and participating in the MSLE Teams-based community."
   ms.date: 07/19/2024

@@ -1,6 +1,39 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-cicd-multi-agent-systems-github-actions
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 41
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+    - microsoft-foundry
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - ai-engineer
+    - platform-engineer
+    - solution-architect
+    - site-reliability-engineer
+  skills:
+    - DevOps
+    - "Agent Operations"
+    - "Multi-Agent Orchestration"
+    - "AI Infrastructure"
+    - Automation
+    - "Platform Engineering"
+    - "AI Model Evaluation & Testing"
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/aaai-implement-cicd-multi-agent-systems-github-actions/index.yml
+  uid: bae6da7f-ea97-4234-8f61-3004f04ee40b
   title: Implement CI/CD Pipelines for Multi-Agent Systems with GitHub Actions
   description: "Implement enterprise CI/CD pipelines for multi-agent systems using GitHub Actions and Microsoft Foundry. Design coordinated deployment pipelines with agent version compatibility validation, implement canary and blue-green deployment strategies, configure multi-environment strategies, and automate rollback triggered by quality regression metrics."
   ms.date: 8/3/2026

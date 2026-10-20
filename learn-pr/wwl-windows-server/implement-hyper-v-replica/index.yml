@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-hyper-v-replica
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 50
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - Virtualization
+    - "Infrastructure Management"
+    - "Cloud Administration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/implement-hyper-v-replica/index.yml
+  uid: 64fc0978-ae18-41fe-9427-d5ecef1b1694
   title: Implement Hyper-V Replica
   description: "Implement Hyper-V Replica"
   ms.date: 01/23/2026

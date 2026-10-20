@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.azure.azure-cyclecloud-high-performance-computing
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 78
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - platform-engineer
+    - systems-administrator
+  skills:
+    - "Cloud Administration"
+    - "Platform Engineering"
+    - "Cloud Infrastructure"
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-cyclecloud-high-performance-computing/index.yml
+  uid: 28dc3ca1-bb87-4299-83fa-a46492e931b6
   moduleType: standard
   title: Create, customize, and manage an HPC cluster in Azure with Azure CycleCloud
   description: Learn how to use Azure CycleCloud to create, customize, and manage high-performance computing (HPC) clusters in Azure.

@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.data-ai.implement-data-streaming-with-asa
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - power-bi
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-analyst
+    - data-engineer
+  skills:
+    - "Data Engineering"
+    - SQL
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-data-streaming-with-asa/index.yml
+  uid: 2166d7f2-67de-462f-9632-8cbeac3387d4
   title: Implement a Data Streaming Solution with Azure Stream Analytics
   description: Implement a Data Streaming Solution with Azure Stream Analytics
   ms.date: 05/18/2026

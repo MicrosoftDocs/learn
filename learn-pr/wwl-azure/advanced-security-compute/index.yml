@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.advanced-security-compute
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 82
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - defender-for-cloud
+    - microsoft-defender
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - systems-administrator
+    - devops-engineer
+    - solution-architect
+  skills:
+    - Cybersecurity
+    - "Security Architecture Design"
+    - "Identity and Access Management (IAM)"
+    - "Data Security"
+    - "Security Operations Management"
+    - "Cloud Infrastructure"
+    - "API Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/advanced-security-compute/index.yml
+  uid: 2ba9c179-9703-45ad-a13b-6dc5151e04ca
   title: Plan and Implement Advanced Security for Compute
   description: "This module is designed to provide administrators with the knowledge and skills needed to plan and implement advanced security measures for Azure compute resources, safeguarding applications and data against evolving security threats."
   ms.date: 01/07/2026

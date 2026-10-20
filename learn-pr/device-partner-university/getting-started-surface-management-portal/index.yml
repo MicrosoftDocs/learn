@@ -2,6 +2,27 @@
 uid: learn.dpu.getting-started-surface-management-portal
 title: Getting started with Surface Management Portal
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 12
+  last.refresh.date: null
+  modality: module
+  products:
+    - surface
+    - intune
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - identity-access-admin
+  skills:
+    - "Device Management"
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/getting-started-surface-management-portal/index.yml
+  uid: fe70ebd9-4399-403f-885e-c0f59548b340
   title: Getting started with Surface Management Portal
   description: 'In this module, learn how to get started with Surface Management Portal, including prerequisites for access, required roles and permissions, and how to verify access to the portal for managing your Surface devices effectively.'
   ms.date: 04/09/2026

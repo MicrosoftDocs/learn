@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-java-ee-app-to-app-service
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 47
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - systems-administrator
+  skills:
+    - "Cloud Administration"
+    - "Application Development"
+    - SQL
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/deploy-java-ee-app-to-jboss-app-service/index.yml
+  uid: 2fe751bb-87e3-4b84-9269-d6870c7b7079
   title: Deploy a Jakarta EE Application to Azure
   description: Deploy a Jakarta EE application to JBoss EAP on Azure App Service and bind it to Azure Database for MySQL.
   ms.date: 07/25/2026

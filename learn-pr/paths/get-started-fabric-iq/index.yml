@@ -1,6 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-fabric-iq
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - fabric
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-analyst
+    - data-analyst
+    - data-engineer
+  skills:
+    - "Data Analytics"
+    - "Business Insights"
+    - "Agentic AI"
+    - "Data Management"
+    - "Graph-based AI"
+    - "Knowledge Grounding for AI"
+    - "Data Visualization"
+    - "Agent Development"
+    - "AI Model Evaluation & Testing"
+    - "Identity and Access Management (IAM)"
+  solution.area: null
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-fabric-iq/index.yml
+  uid: 1fb006fd-3638-4fff-b108-9aa1e890cb29
   title: Get Started with Fabric IQ
   description: Learn how to use Fabric IQ to model business concepts in an ontology, bind them to data sources, visualize relationships, and build data agents grounded in your business vocabulary.
   ms.date: 06/12/2026

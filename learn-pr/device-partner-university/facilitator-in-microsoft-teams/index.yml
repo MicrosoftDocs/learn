@@ -2,6 +2,27 @@
 uid: learn.dpu.facilitator-in-microsoft-teams
 title: Improve meeting collaboration with Facilitator in Microsoft Teams
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 24
+  last.refresh.date: null
+  modality: module
+  products:
+    - office-teams
+    - microsoft-365-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+  skills:
+    - "Collaboration Tools"
+    - "AI Productivity"
+    - "AI Fluency"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/facilitator-in-microsoft-teams/index.yml
+  uid: c9802f6b-a001-4151-b799-c1cb0eca036a
   title: Improve Meeting Collaboration With Facilitator In Microsoft Teams
   description: Learn how Facilitator in Microsoft Teams helps improve meeting collaboration by generating collaborative notes, capturing decisions, and documenting action items. Explore how to use Facilitator before, during, and after meetings to help teams stay aligned and organized.
   ms.date: 06/23/2026

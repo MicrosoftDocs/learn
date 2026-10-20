@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.explain-control-system-helps-manage-files
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 13
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - DevOps
+    - "Collaboration Tools"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explain-control-system-helps-manage-files/index.yml
+  uid: 24f151f0-85a4-487d-b828-dc8c0b5fd446
   title: Explain how a source control system helps manage files
   description: "Explain how a source control system helps manage files"
   ms.date: 05/20/2024

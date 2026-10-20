@@ -2,6 +2,27 @@
 uid: learn.dpu.cloud-powered-experiences-windows-11-pro
 title: Cloud-powered experiences on Windows 11 Pro
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 31
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+    - microsoft-365-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+  skills:
+    - "AI Productivity"
+    - "AI Fluency"
+    - "Agentic AI"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/cloud-powered-experiences-windows-11-pro/index.yml
+  uid: 52c09c9d-eba6-42a1-b5e5-bc6d6b8eae3c
   title: Cloud-Powered Experiences On Windows 11 Pro
   description: In this module, you’ll learn how Windows 11 Pro uses hybrid execution models to balance responsiveness and capability, and how cloud-powered experiences like Copilot and AI agents support complex workflows within the Windows interface.
   ms.date: 01/27/2026

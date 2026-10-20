@@ -1,6 +1,48 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-ai-agents-azure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+    - solution-architect
+  skills:
+    - "Agentic AI"
+    - "Agent Development"
+    - "AI Solutions"
+    - "Prompt Engineering"
+    - "Application Development"
+    - "API Management"
+    - "AI Model Evaluation & Testing"
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+    - DevOps
+    - "AI-Powered Workflow Automation"
+    - Automation
+    - "AI Infrastructure"
+    - "Python (Programming Language)"
+    - "Solution Architecture"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Knowledge Grounding for AI"
+    - "Semantic Search"
+    - "AI Governance"
+    - "Data Management"
+    - "Agent Operations"
+    - "Multi-Agent Orchestration"
+    - "Low-Code Development"
+    - "Application Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/develop-ai-agents-azure/index.yml
+  uid: 635d478f-c5e6-41ac-94f5-25319bca8755
   title: Develop AI Agents on Azure 
   description: Learn how to develop AI agents on Azure using the Microsoft Foundry Agent Service and Microsoft Agent Framework. AI-3026
   ms.date: 02/18/2026

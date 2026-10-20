@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 95
+  last.refresh.date: null
+  modality: module
+  products:
+    - github-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "AI-Augmented Software Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-ai-assisted-development-tools-azure-cosmos-db/index.yml
+  uid: 588fa4a0-4c66-4f38-909a-ab0eced52f19
   title: Implement AI-Assisted Development Tools for Azure Cosmos DB
   description: "Connect an AI assistant to Azure Cosmos DB with a Model Context Protocol server, add durable memory and multi-step retrieval with the agent toolkits, and choose the right tool for a scenario."
   ms.date: 08/19/2026

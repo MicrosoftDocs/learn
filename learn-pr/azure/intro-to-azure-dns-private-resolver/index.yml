@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-dns-private-resolver
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 10
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - network-engineer
+    - solution-architect
+  skills:
+    - "IT Networking"
+    - "Network Connectivity"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-dns-private-resolver/index.yml
+  uid: f79146f4-423b-41e6-8559-a1b05dac6227
   moduleType: introduction        
   title: Intro to Azure DNS Private Resolver
   description: learn about Azure DNS Private Resolver and how to use it to resolve DNS queries from on-premises to cloud.

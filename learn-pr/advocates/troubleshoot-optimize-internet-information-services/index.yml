@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: "learn.devrel.troubleshoot-optimize-internet-information-services-performance"
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 32
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - site-reliability-engineer
+  skills:
+    - "Infrastructure Management"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/troubleshoot-optimize-internet-information-services/index.yml
+  uid: b3fcbbac-ca00-4c23-a387-516342f8f080
   title: "Troubleshoot and Optimize IIS Performance"
   description: "Learn how to diagnose common IIS failures and tune IIS for reliable performance."
   ms.date: "04/12/2026"

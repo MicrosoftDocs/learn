@@ -2,6 +2,27 @@
 uid: learn.dpu.surface-microsoft-365
 title: Maximize Microsoft 365 with Surface for Business
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 19
+  last.refresh.date: null
+  modality: module
+  products:
+    - surface
+    - microsoft-365-copilot
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+  skills:
+    - "AI Productivity"
+    - "Collaboration Tools"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/maximize-surface/index.yml
+  uid: dca8bb92-25ed-4014-9d0d-14fccff12948
   title: Maximize Microsoft 365 With Surface For Business
   description: "By the end of this module, you’ll be able to: Use Microsoft 365 Copilot on a Surface device to create a professional presentation efficiently, use Surface features like Surface Slim Pen, touch, and Studio Microphone to streamline content creation, and collaborate using Microsoft 365 apps while making the most of Copilot’s AI capabilities."
   ms.date: 12/05/2025

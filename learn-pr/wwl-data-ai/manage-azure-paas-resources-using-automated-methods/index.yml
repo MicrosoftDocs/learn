@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-paas-resources-using-automated-methods
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 68
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - administrator
+    - data-engineer
+  skills:
+    - Automation
+    - "Data Administration"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - SQL
+    - "Low-Code Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/manage-azure-paas-resources-using-automated-methods/index.yml
+  uid: 831d4c9b-95c8-4ca5-b5a9-b5507ba30705
   title: Manage Azure PaaS tasks using automation
   description: Manage Azure PaaS tasks using automation
   ms.date: 08/10/2026

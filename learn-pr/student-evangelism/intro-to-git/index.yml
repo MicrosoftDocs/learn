@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.introduction-to-git
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 86
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - student
+  skills:
+    - DevOps
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/intro-to-git/index.yml
+  uid: 0c940eed-eca6-418c-a404-4871ba9a73f3
   title: Introduction to Git
   description: Use Git to track changes and collaborate with other developers.
   ms.date: 04/14/2026

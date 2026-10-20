@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.azure.plan-deploy-azure-arc-enabled-servers
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 43
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - solution-architect
+    - security-engineer
+  skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Network Connectivity"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/plan-deploy-azure-arc-enabled-servers/index.yml
+  uid: 26ac258c-1219-4699-9e86-31b8b374b3e4
   title: Plan and deploy Azure Arc-enabled servers at scale 
   description: Understand the capabilities and architecture of Azure Arc-enabled servers. Learn how to test and select the right deployment method for your machines. Finally, adopt best practices and advanced security considerations for Azure Arc-enabled servers.
   ms.date: 06/25/2025

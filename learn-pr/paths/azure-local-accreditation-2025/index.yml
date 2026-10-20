@@ -2,6 +2,31 @@
 uid: learn.dpu.azure-local-accreditation-2025
 title: Azure Local Accreditation 2025
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - systems-administrator
+    - technology-manager
+  skills:
+    - Virtualization
+    - "Infrastructure Management"
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+    - Storage
+    - Cybersecurity
+    - "Cloud Administration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/azure-local-accreditation-2025/index.yml
+  uid: 6102c401-73e3-4f5e-a90d-6e76b956e094
   title: Azure Local Accreditation 2025
   description: This Learning Path introduces Azure Local, beginning with foundational concepts and progressing into the core technical principles of hyperconverged infrastructure. You’ll explore how Azure Local enables organizations to run virtualized workloads on-premises using tools and technologies that are familiar to IT professionals. This Learning Path also highlights key capabilities and deployment considerations to help you better understand how Azure Local fits into modern hybrid infrastructure strategies.
   ms.date: 09/18/2025

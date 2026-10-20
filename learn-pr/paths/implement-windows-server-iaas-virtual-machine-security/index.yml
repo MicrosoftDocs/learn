@@ -1,6 +1,37 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-windows-server-iaas-vm-security
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - systems-administrator
+  skills:
+    - Cybersecurity
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Threat Management"
+    - "Security Operations Management"
+    - "Security Analytics"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Device Management"
+    - Automation
+    - "Data Security"
+    - Storage
+    - "Application Security"
+    - "IT Networking"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-windows-server-iaas-virtual-machine-security/index.yml
+  uid: 7eae625c-220a-4988-9b17-e7c1a26e5aa2
   title: Implement Windows Server IaaS VM Security
   description: This learning path deals with securing your Azure resources. After completing the learning path, you’ll be able to determine if your Azure IaaS workloads have any security vulnerabilities, and remediate those potential security vulnerabilities.
   ms.date: 01/23/2026

@@ -1,6 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.azure.migrate-dotnet-apps-azure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - database-administrator
+    - data-engineer
+    - solution-architect
+  skills:
+    - "Application Development"
+    - "Cloud Infrastructure"
+    - DevOps
+    - "Python (Programming Language)"
+    - "Data Migration"
+    - "Data Administration"
+    - Databases
+    - SQL
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/migrate-dotnet-apps-azure/index.yml
+  uid: 62b7108c-3f63-4b69-b30a-4255c69b6afa
   title: Migrate ASP.NET Apps to Azure
   description: Migrate ASP.NET web applications and their data to Azure App Service and Azure SQL Database to take advantage of the cloud.
   author: msangapu-msft

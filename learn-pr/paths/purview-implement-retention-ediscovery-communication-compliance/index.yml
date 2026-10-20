@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.purview-implement-retention-ediscovery-communication-compliance
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - microsoft-purview
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ip-admin
+  skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Security"
+    - "Cloud Administration"
+    - "Data Management"
+    - "Data Administration"
+    - "Identity and Access Management (IAM)"
+    - "Security Analytics"
+    - "AI Compliance"
+    - Automation
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/purview-implement-retention-ediscovery-communication-compliance/index.yml
+  uid: 46553ec7-9810-4a17-aeab-24a27d106d9d
   title: 'Implement retention, eDiscovery, and Communication compliance in Microsoft Purview SC-5007'
   description: 'Manage data lifecycle, records management, eDiscovery, and communication compliance with Microsoft Purview. (SC-5007)'
   ms.date: 05/28/2025

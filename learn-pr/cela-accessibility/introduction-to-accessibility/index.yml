@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.cela-accessibility.introduction-to-accessibility
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 13
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+  skills:
+    - "Digital Accessibility"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/introduction-to-accessibility/index.yml
+  uid: e858cd79-4c97-4c8e-a4d4-9dbb8484f0bb
   title: Introduction to accessibility
   description: Explore definitions of accessibility and disability, an assistive technology overview, and why accessibility is important for people with disabilities.
   ms.date: 10/15/2024

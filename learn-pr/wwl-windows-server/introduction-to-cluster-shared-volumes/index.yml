@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-cluster-shared-volumes
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 45
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - systems-administrator
+    - storage-admin
+  skills:
+    - Storage
+    - "Infrastructure Management"
+    - Virtualization
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/introduction-to-cluster-shared-volumes/index.yml
+  uid: af4dc72f-4380-4d4a-b863-0a1e71cc7e2a
   title: Introduction to Cluster Shared Volumes
   description: "Introduction to Cluster Shared Volumes"
   ms.date: 08/01/2026

@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.introduction-github-app-modernization
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 48
+  last.refresh.date: null
+  modality: module
+  products:
+    - github-copilot
+    - azure
+    - vs
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "AI-Augmented Software Development"
+    - "Application Development"
+    - DevOps
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/intro-github-copilot-app-modernization/index.yml
+  uid: d10e90c9-09c6-48be-9e60-880c7d4cdc7d
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 02/17/2026

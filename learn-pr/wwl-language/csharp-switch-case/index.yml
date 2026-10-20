@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-switch-case
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 34
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-switch-case/index.yml
+  uid: c9b4bc29-f693-445d-92a1-b0070d6bbb5c
   title: Branch the Flow of Code using the switch-case Construct in C#
   description: "Learn how to add branching logic that matches one variable or expression against many possible values."
   ms.date: 12/15/2025

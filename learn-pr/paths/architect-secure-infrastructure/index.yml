@@ -1,6 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.architect-secure-infrastructure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - entra
+    - power-bi
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - identity-access-admin
+    - security-engineer
+    - security-operations-analyst
+    - systems-administrator
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Analytics"
+    - "Data Analytics"
+    - "Data Visualization"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/architect-secure-infrastructure/index.yml
+  uid: 8f11948a-221e-4678-9cfa-845530637061
   title: Architect secure infrastructure in Azure learning path
   description: Learn about the tools and services available on Azure to ensure your resources are secure.
   brand: azure

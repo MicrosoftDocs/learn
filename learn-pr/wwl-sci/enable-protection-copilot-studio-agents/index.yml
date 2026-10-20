@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.enable-realtime-protection-copilot-studio-agents
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 25
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-copilot-studio
+    - microsoft-defender
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+  skills:
+    - "AI Security (Model-Level)"
+    - "Security Automation"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/enable-protection-copilot-studio-agents/index.yml
+  uid: d1502b78-1025-4368-969b-a84a18ae5655
   title: Enable Real-Time Protection for Copilot Studio Agents
   description: "Enable and configure real-time runtime protection for Microsoft Copilot Studio agents using Microsoft Defender for Cloud Apps. Discover agents in your environment, enable protection through the Defender portal Security for AI settings, and verify that protection outputs flow into Microsoft Defender XDR."
   ms.date: 05/03/2026

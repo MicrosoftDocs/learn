@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.security-public-access-azure-resources
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 61
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - network-engineer
+    - solution-architect
+    - systems-administrator
+  skills:
+    - Cybersecurity
+    - "IT Networking"
+    - "Security Architecture Design"
+    - "Cloud Infrastructure"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/security-public-access-azure-resources/index.yml
+  uid: 9c6a5f89-9676-4b62-b53c-e6fded7ebdf6
   title: Plan and implement security for public access to Azure resources
   description: "Plan and implement security for public access to Azure resources"
   ms.date: 12/23/2025

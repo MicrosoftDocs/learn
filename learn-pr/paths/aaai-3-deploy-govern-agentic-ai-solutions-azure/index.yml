@@ -1,6 +1,48 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-govern-agentic-ai-solutions-azure
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - ip-admin
+    - devops-engineer
+    - solution-architect
+  skills:
+    - DevOps
+    - "Agent Operations"
+    - "Multi-Agent Orchestration"
+    - "AI Infrastructure"
+    - Automation
+    - "Platform Engineering"
+    - "AI Model Evaluation & Testing"
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "Security Architecture Design"
+    - "Data Security"
+    - "Network Connectivity"
+    - "Security Operations Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Responsible AI"
+    - "AI Governance"
+    - "AI Compliance"
+    - "AI Risk Management"
+    - "API Management"
+    - "Cloud Administration"
+  solution.area: null
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/aaai-3-deploy-govern-agentic-ai-solutions-azure/index.yml
+  uid: 2312d6e3-a58b-4853-9ac3-4501e31af2fa
   title: Deploy and Govern Enterprise Agentic AI Solutions on Azure
   description: Learn how to deploy multi-agent systems to Azure at enterprise scale and establish robust operational governance frameworks. Learners advance from foundational single-agent deployment and CI/CD patterns to coordinated multi-agent deployment pipelines, zero-trust security architecture across agent networks, enterprise-scale responsible AI governance, and full agent lifecycle management. AI-500
   ms.date: 06/16/2026

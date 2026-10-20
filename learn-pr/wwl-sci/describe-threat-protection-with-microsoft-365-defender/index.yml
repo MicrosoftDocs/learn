@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 125
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-defender
+    - defender-endpoint
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-operations-analyst
+    - security-engineer
+    - security-professional
+    - administrator
+  skills:
+    - "Threat Management"
+    - "Security Operations Management"
+    - Cybersecurity
+    - "Security Analytics"
+    - "Device Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/describe-threat-protection-with-microsoft-365-defender/index.yml
+  uid: 1ea02b24-a843-49ce-99af-5f64daf766a3
   title: Describe Threat Protection with Microsoft Defender XDR
   description: "Describe threat protection with Microsoft Defender XDR"
   ms.date: 06/23/2026

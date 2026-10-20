@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.transform-your-business-with-microsoft-ai
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-leader
+    - business-owner
+  skills:
+    - "AI Productivity"
+    - "Collaboration Tools"
+    - "AI Strategy"
+    - "AI Business & Vision"
+    - "AI Transformation"
+    - "AI Governance"
+    - "Responsible AI"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/transform-your-business-with-microsoft-ai/index.yml
+  uid: fa50a34b-cef4-4d0c-ac9a-6c36e7348c91
   title: Transform your business with AI
   description: In this learning path, business leaders will find the knowledge and resources to adopt AI in their organizations. It explores planning, strategizing, and scaling AI projects in a responsible way.
   ms.date: 07/10/2026

@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.serverless-go
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 26
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Cloud Infrastructure"
+    - Storage
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/serverless-go/index.yml
+  uid: 790c5801-4e76-4b7e-a342-ddc8258cadc1
   title: Build serverless apps with Go and custom handlers
   description: You can build serverless apps by using almost any programming language that supports HTTP primitives. By using custom handlers, you can choose a runtime that suits you.
   ms.date: 09/05/2025

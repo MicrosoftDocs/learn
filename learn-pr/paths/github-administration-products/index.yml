@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.github.github-administration-products-1
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+  skills:
+    - DevOps
+    - "Collaboration Tools"
+    - "Identity and Access Management (IAM)"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Application Security"
+    - "Security Automation"
+  solution.area: null
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/github-administration-products/index.yml
+  uid: b3132d59-96b8-4642-b0d0-1bc54651c492
   title: GitHub fundamentals - Administration basics and product features Part 1 of 2
   description: In this learning path, learn the basics of GitHub administration and discover the products that GitHub offers. This is the first learning path in a two part series.
   ms.date: 04/21/2024

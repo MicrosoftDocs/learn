@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-security-controls-containers
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 28
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - platform-engineer
+    - devops-engineer
+  skills:
+    - "Cloud Infrastructure"
+    - Cybersecurity
+    - "Application Security"
+    - "Identity and Access Management (IAM)"
+    - "IT Networking"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-security-controls-containers/index.yml
+  uid: ac10a3a6-760f-4a1d-9b22-000b52c4f7f7
   title: Implement Security Controls for Azure Container Registry, Container Instances, and Container Apps
   description: "Implement security controls across Azure Container Registry, Azure Container Instances, and Azure Container Apps. Configure RBAC, private endpoints, and content trust for ACR; apply managed identities and virtual network integration for Container Instances; and enforce ingress controls, managed identities, and secrets management for Container Apps environments."
   ms.date: 04/15/2026

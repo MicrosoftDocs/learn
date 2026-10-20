@@ -2,6 +2,26 @@
 uid: learn.dpu.introduction-to-surface-pro-12-inch
 title: Introduction to Microsoft Surface Pro for Business, 12-inch (1st Edition)
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 28
+  last.refresh.date: null
+  modality: module
+  products:
+    - surface
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - it-professional
+  skills:
+    - "Device Management"
+    - "AI Productivity"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-to-surface-pro-12-inch/index.yml
+  uid: d8bb319e-09eb-4a5c-a5c7-951b2052d890
   title: Introduction To Microsoft Surface Pro for Business, 12-inch (1st Edition)
   description: 'Explore Microsoft Surface Pro for Business, 12-inch (1st Edition), a Copilot+ PC focused on productivity, secure enterprise deployment, and flexible hardware-software integration for modern work environments.'
   ms.date: 11/06/2025

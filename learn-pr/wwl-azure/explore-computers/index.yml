@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-computers
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 30
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - student
+  skills:
+    - "Cloud Computing"
+    - "IT Networking"
+    - Storage
+    - "Identity and Access Management (IAM)"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-computers/index.yml
+  uid: f8b87321-a4f0-4922-8ba2-c4cd8bad1876
   title: Explore computers
   description: "Describes the fundamentals of computers and how they work on both a small and large scale."
   ms.date: 03/19/2024

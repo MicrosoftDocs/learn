@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-arrays-operations
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 58
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-arrays-operations/index.yml
+  uid: f29aa993-6aef-47ea-bd43-158917e4393d
   title: Perform operations on arrays using helper methods in C#
   description: "Use C# helper methods to perform reverse, resize, split and join operations on arrays."
   ms.date: 12/15/2025

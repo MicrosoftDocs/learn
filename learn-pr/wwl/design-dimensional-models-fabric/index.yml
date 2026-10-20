@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.design-dimensional-models-fabric
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 63
+  last.refresh.date: null
+  modality: module
+  products:
+    - fabric
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - data-analyst
+  skills:
+    - "Data Warehousing"
+    - "Database Design"
+    - "Data Engineering"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/design-dimensional-models-fabric/index.yml
+  uid: 0fc55c97-54cd-4770-b150-12cb53e7851a
   title: Design Dimensional Models for Analytics in Microsoft Fabric
   description: "Learn dimensional schema types, fact and dimension table design, and slowly changing dimension patterns for analytics workloads in Microsoft Fabric."
   ms.date: 02/24/2026

@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-secure-key-vault
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 27
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+  skills:
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Network Connectivity"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/configure-secure-key-vault/index.yml
+  uid: 84cd91ea-dc73-45a0-ae62-d9851d8cdc6c
   title: Configure and Secure Azure Key Vault
   description: "Configure a security-hardened Azure Key Vault for enterprise workloads. Apply soft delete and purge protection, enforce least-privilege RBAC access with just-in-time activation, and secure the network perimeter using firewall rules and private endpoints."
   ms.date: 04/13/2026

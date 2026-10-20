@@ -1,6 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.bicep-deploy-manage
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - systems-administrator
+  skills:
+    - "Cloud Infrastructure"
+    - Automation
+    - DevOps
+    - "Data Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/fundamentals-bicep/index.yml
+  uid: 46e2693c-8ef9-4561-b3e4-fdcb0f03a5ca
   title: Fundamentals of Bicep
   description: Learn how Bicep enables you to manage infrastructure deployments on Azure.
   brand: azure

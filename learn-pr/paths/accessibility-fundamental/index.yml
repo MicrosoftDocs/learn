@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.accessibility-fundamental
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+  skills:
+    - "Digital Accessibility"
+    - "AI Productivity"
+    - "Collaboration Tools"
+    - "Application Development"
+    - "Organizational Culture"
+    - "AI Fluency"
+    - "Generative AI"
+    - "Natural Language Processing (NLP)"
+    - "Computer Vision"
+    - "Responsible AI"
+    - "Accessible AI"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/accessibility-fundamental/index.yml
+  uid: d9b21c48-19c8-43d5-b190-be08059d88c8
   title: Accessibility fundamentals
   description: At Microsoft, we understand the power of technology, and that’s why we continue to innovate, create, and design in a way that gives everyone the ability to achieve more. Trainings like this learning path, which covers accessibility fundamentals, are an important and necessary part of Microsoft’s accessibility strategy to support customers of all abilities. Don’t forget to share your awards on social media after completing each module!
   brand: m365

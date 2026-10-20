@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 90
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-sentinel
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-operations-analyst
+  skills:
+    - "Security Operations Management"
+    - "Threat Management"
+    - "Security Automation"
+    - Cybersecurity
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/configure-siem-security-operations-using-microsoft-sentinel/index.yml
+  uid: f4b9b74d-912d-4115-b5a6-020ddd32cc77
   title: Configure SIEM security operations using Microsoft Sentinel
   description: "Configure security information and event management (SIEM) security operations using Microsoft Sentinel."
   ms.date: 06/29/2026

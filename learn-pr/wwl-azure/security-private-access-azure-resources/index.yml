@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.security-private-access-azure-resources
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 56
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - network-engineer
+    - administrator
+  skills:
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Security Architecture Design"
+    - "Application Security"
+    - "Identity and Access Management (IAM)"
+    - Databases
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/security-private-access-azure-resources/index.yml
+  uid: afa6956d-66e9-4120-a45e-c18dc4059715
   title: Plan and implement security for private access to Azure resources
   description: "This module focuses on equipping administrators with the knowledge and skills required to plan and implement robust security measures for private access to Azure resources, safeguarding sensitive data and enhancing network integrity."
   ms.date: 10/03/2024

@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.defender-iot-fine-tune-deployment
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 54
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-defender
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-operations-analyst
+    - security-engineer
+  skills:
+    - "Security Analytics"
+    - "Threat Management"
+    - "Security Operations Management"
+    - "Device Management"
+    - "IT Networking"
+    - Cybersecurity
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/defender-iot-fine-tune-deployment/index.yml
+  uid: 64d29fa6-e2cd-41be-8098-4b70982d20ec
   title: Fine-tune your Microsoft Defender for IoT OT sensor
   description: "Learn how to fine tune and calibrate your deployment of Microsoft Defender for IoT to monitor your OT network."
   ms.date: 5/23/2024

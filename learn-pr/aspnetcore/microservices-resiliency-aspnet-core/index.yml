@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.microservices-resiliency-aspnet-core
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 60
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - site-reliability-engineer
+  skills:
+    - "Application Development"
+    - "Application Architecture"
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/microservices-resiliency-aspnet-core/index.yml
+  uid: e21d1cab-2017-413c-b456-7fd9a35b68ed
   title: Implement Resiliency in a Cloud-Native Microservice
   description: This module guides you through implementing resiliency in an .NET microservices app in a Kubernetes Service.
   author: codemillmatt

@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.create-vm-offer-commercial-marketplace
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 31
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-owner
+    - systems-administrator
+    - technology-manager
+  skills:
+    - "Cloud Computing"
+    - Virtualization
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/commercial-marketplace/create-vm-offer-commercial-marketplace/index.yml
+  uid: 0ffd3386-c20b-4a37-9802-092c921db5ef
   title: Create a virtual machine offer for the commercial marketplace
   description: This module provides a high-level overview of VM offers in the commercial marketplace.
   ms.date: 04/25/2024

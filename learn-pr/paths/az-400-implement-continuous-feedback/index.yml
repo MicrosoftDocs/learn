@@ -1,6 +1,37 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-implement-continuous-feedback
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+  skills:
+    - DevOps
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Application Development"
+    - "Data Analytics"
+    - Automation
+    - "Cloud Infrastructure"
+    - "Platform Engineering"
+    - "Data Visualization"
+    - "Business Insights"
+    - "Collaboration Tools"
+    - "Knowledge Grounding for AI"
+    - "Security Analytics"
+    - "Application Architecture"
+    - "Organizational Culture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-400-implement-continuous-feedback/index.yml
+  uid: 6e64a709-0607-44fa-8f08-3058507c8bf8
   title: "AZ-400: Implement Continuous Feedback"
   description: "Learn to implement continuous feedback practices in DevOps using Azure Application Insights, monitoring dashboards, team knowledge sharing, automated analytics, and blameless retrospectives to create a culture of continuous improvement."
   ms.date: 10/21/2025

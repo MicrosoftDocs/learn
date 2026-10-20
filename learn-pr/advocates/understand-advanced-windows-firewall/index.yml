@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.devrel.understand-advanced-windows-firewall
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 140
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - network-engineer
+    - security-engineer
+    - systems-administrator
+  skills:
+    - "IT Networking"
+    - "Identity and Access Management (IAM)"
+    - "Security Architecture Design"
+    - "Security Operations Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/understand-advanced-windows-firewall/index.yml
+  uid: c4e50ff4-f35d-49a4-8f0f-cdead9df4f6b
   title: Understand Advanced Windows Firewall
   description: Design, secure, monitor, and troubleshoot advanced Windows Firewall policy for enterprise Windows environments.
   ms.date: 08/05/2026

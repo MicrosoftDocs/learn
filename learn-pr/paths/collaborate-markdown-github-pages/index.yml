@@ -1,6 +1,26 @@
 ### YamlMime:LearningPath
 uid: learn.collaborate-markdown-github-pages
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+  skills:
+    - DevOps
+    - "Collaboration Tools"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/collaborate-markdown-github-pages/index.yml
+  uid: 6284ac28-debe-4e3e-8927-f65e144f44fa
   title: Collaborate with others with Markdown and GitHub Pages
   description: Learn how to use Markdown to effectively communicate with others in your GitHub issues, pull requests, comments, and documentation. Then learn how to build project sites and blog posts to promote your projects with GitHub Pages.
   brand: github

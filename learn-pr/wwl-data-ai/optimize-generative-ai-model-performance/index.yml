@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.optimize-generative-ai-model-performance
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 131
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - data-scientist
+  skills:
+    - "Prompt Engineering"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Model Fine-Tuning"
+    - "Generative AI"
+    - "Semantic Search"
+    - "Embedding Models"
+    - "AI Model Evaluation & Testing"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/optimize-generative-ai-model-performance/index.yml
+  uid: a14cf945-3828-49cd-9ea9-c99d689fa084
   title: Optimize generative AI model performance with Microsoft Foundry
   description: Explore complementary strategies to optimize generative AI model
     performance, including prompt engineering, system messages, model

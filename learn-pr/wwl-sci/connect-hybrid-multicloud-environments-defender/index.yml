@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-hybrid-multicloud-environments-defender
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 52
+  last.refresh.date: null
+  modality: module
+  products:
+    - defender-for-cloud
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+  skills:
+    - "Security Architecture Design"
+    - "Network Connectivity"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/connect-hybrid-multicloud-environments-defender/index.yml
+  uid: 58a9e3d5-9296-44ed-9490-ea762a617c64
   title: Connect Hybrid and multicloud Environments to Microsoft Defender for Cloud
   description: "Connect on-premises servers, AWS accounts, and GCP projects to Microsoft Defender for Cloud to extend unified security coverage across a hybrid and multicloud estate. Learn how federated authentication secures connector access, plan connector strategy, and configure native connectors for AWS and GCP."
   ms.date: 04/01/2026

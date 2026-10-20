@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.azure.azure-netapp-files-data-protection
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 40
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - storage-admin
+  skills:
+    - Storage
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-netapp-files-data-protection/index.yml
+  uid: 79a55505-8e8b-4094-81f6-6e167a230572
   moduleType: introduction        
   title: Understand data protection and resiliency in Azure NetApp Files   
   description: This module teaches you about data protection options in Azure NetApp Files to help you improve the resiliency of your data.       

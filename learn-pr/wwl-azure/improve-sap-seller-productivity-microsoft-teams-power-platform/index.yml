@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 38
+  last.refresh.date: null
+  modality: module
+  products:
+    - office-teams
+    - power-automate
+    - power-platform
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - functional-consultant
+    - sales
+  skills:
+    - "Process Automation"
+    - "Information Extraction"
+    - "Collaboration Tools"
+    - "Enterprise Resource Planning (ERP)"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/improve-sap-seller-productivity-microsoft-teams-power-platform/index.yml
+  uid: 6da54ed6-a160-43d2-b194-62ccc4f62483
   title: Improve SAP seller productivity with Microsoft Teams and Power Platform
   description: "Integrate applications from SAP with the Microsoft 365 applications. Enable productivity and collaboration in &quot;SAP Sales and Service Core&quot; Teams app to support sales by building Power Automate flows."
   ms.date: 08/26/2022

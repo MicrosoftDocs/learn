@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 33
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - solution-architect
+  skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Data Administration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/protect-on-premises-infrastructure-with-azure-site-recovery/index.yml
+  uid: 1767ff11-57b9-4962-a42d-f36c998b1f30
   title: Protect your on-premises infrastructure from disasters with Azure Site Recovery
   description: Learn how to provide disaster recovery for your on-premises infrastructure by using Azure Site Recovery to manage and orchestrate replication. Use Site Recovery to perform failover and failback of VMware virtual machines, Hyper-V virtual machines, and physical servers.
   manager: jsuri

@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 51
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Database Development"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Application Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/deploy-java-quarkus-azure-container-app-postgres/index.yml
+  uid: 7ea20679-6493-4fd3-a716-8874b1981c8c
   title: Deploy a Quarkus Application to Azure Container Apps
   description: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy it to Azure Container Apps.
   ms.date: 10/16/2026

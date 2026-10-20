@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.design-data-storage-solution-for-relational-data
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 55
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - database-administrator
+    - data-engineer
+  skills:
+    - "Solution Architecture"
+    - "Database Design"
+    - Databases
+    - "Data Management"
+    - "Data Security"
+    - Storage
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-data-storage-solution-for-relational-data/index.yml
+  uid: bc6f4070-4900-4acc-9111-6bff360c57c5
   adobe-target: true
   prefetch-feature-rollout: true
   title: Design a Data Storage Solution for Relational Data

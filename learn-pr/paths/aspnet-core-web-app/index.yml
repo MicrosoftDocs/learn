@@ -1,6 +1,24 @@
 ### YamlMime:LearningPath
 uid: learn.aspnet-core-web-app
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Digital Accessibility"
+    - "Application Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/aspnet-core-web-app/index.yml
+  uid: e409355d-7693-461d-9043-c09c86042356
   title: Build web apps with ASP.NET Core for beginners
   description: Get started with web development using ASP.NET Core. In this beginner-friendly pathway, you'll learn the basics of C#, HTML, Razor Pages, and more!
   ms.date: 05/16/2022

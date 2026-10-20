@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-blue-green-deployment-feature-toggles
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 26
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+  skills:
+    - DevOps
+    - "Application Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-blue-green-deployment-feature-toggles/index.yml
+  uid: 21bdcc59-78c7-4828-99ea-5506904506d8
   title: Implement Blue-Green Deployment and Feature Toggles
   description: "Learn blue-green deployment strategies, Azure deployment slot management, and feature toggle implementation for progressive delivery and risk mitigation."
   ms.date: 10/23/2025

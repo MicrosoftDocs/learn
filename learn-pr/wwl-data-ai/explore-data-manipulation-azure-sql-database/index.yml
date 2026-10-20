@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn-wwl.explore-data-manipulation-azure-sql-database
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 65
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - solution-architect
+    - data-engineer
+  skills:
+    - "Application Development"
+    - "Database Development"
+    - "Data Migration"
+    - "Data Engineering"
+    - "API Management"
+    - SQL
+    - Automation
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/explore-data-manipulation-azure-sql-database/index.yml
+  uid: 3241fe6d-3f1d-4c91-ac50-0eb2b8b09c08
   title: Explore data manipulation options in Azure SQL Database
   description: "Learn how to invoke REST endpoints in Azure SQL Database and manipulate data using Azure Functions. Also, explore various tools and options for importing and exporting data to and from Azure SQL Database."
   ms.date: 08/11/2026

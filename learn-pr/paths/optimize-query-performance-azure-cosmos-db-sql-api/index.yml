@@ -1,6 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.optimize-query-performance-azure-cosmos-db-sql-api
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - SQL
+    - "Application Development"
+    - Databases
+    - "Database Design"
+    - "Data Administration"
+    - "Database Development"
+  solution.area: null
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/optimize-query-performance-azure-cosmos-db-sql-api/index.yml
+  uid: f293b4c7-9402-4613-9953-fa27642ca73c
   title: Optimize query and operation performance in Azure Cosmos DB for NoSQL
   description: Optimize query and operation performance in Azure Cosmos DB for NoSQL
   ms.date: 04/02/2025

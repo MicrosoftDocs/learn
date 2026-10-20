@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-microsoft-defender-servers
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 26
+  last.refresh.date: null
+  modality: module
+  products:
+    - defender-for-cloud
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - security-operations-analyst
+    - systems-administrator
+  skills:
+    - Cybersecurity
+    - "Security Operations Management"
+    - "Security Analytics"
+    - "Infrastructure Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Security"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-microsoft-defender-servers/index.yml
+  uid: 7d567f8f-e4ca-4cb3-8f43-118692f969ae
   title: Implement Microsoft Defender for Servers
   description: "Onboard Azure virtual machines and Arc-connected hybrid servers to Microsoft Defender for Servers. Select Plan 1 or Plan 2, configure vulnerability scanning using agentless and agent-based approaches. Then integrate Microsoft Defender for Endpoint, manage agentless scanning, and enable File Integrity Monitoring."
   ms.date: 05/11/2026

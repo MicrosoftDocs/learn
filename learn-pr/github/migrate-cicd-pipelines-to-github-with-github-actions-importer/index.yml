@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.migrate-cicd-pipelines-to-github-with-github-actions-importer
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 48
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+    - azure-devops
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+  skills:
+    - DevOps
+    - "Data Migration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/migrate-cicd-pipelines-to-github-with-github-actions-importer/index.yml
+  uid: 2335de49-c1ea-4970-a1ab-a2339258ec68
   title: Migrate your CI/CD pipelines to GitHub with GitHub Actions Importer
   description: Learn about GitHub Actions Importer and how it can help facilitate migrations from your current CI/CD tool to GitHub Actions.
   ms.date: 08/05/2024

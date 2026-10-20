@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.challenge-project-building-augmented-reality-app-hololens-two
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 261
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Digital Accessibility"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/challenge-project-building-augmented-reality-app-hololens-2/index.yml
+  uid: f80c7ddc-0e24-40ef-aa24-3dabc787bbe1
   title: Challenge project - Building an Augmented Reality app for HoloLens 2
   description: This module is a challenge project where you'll build an Augmented Reality app for HoloLens 2. It will guide a developer on how to build an app end-to-end with help from looking at an existing sample.
   ms.date: 7/25/2023

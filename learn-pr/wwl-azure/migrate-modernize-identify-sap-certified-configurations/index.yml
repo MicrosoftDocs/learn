@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-identify-sap-certified-configurations
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 16
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - systems-administrator
+  skills:
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - Virtualization
+    - "Cloud Computing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-modernize-identify-sap-certified-configurations/index.yml
+  uid: d944b3b6-b47f-4266-a5c6-ccb4ff138ff1
   title: Modernize and identify SAP-certified configurations
   description: 'This module helps to identify prerequisites, deployment options, and SAP-certified configurations that are available to you when deploying SAP products in Microsoft Azure. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/09/2024

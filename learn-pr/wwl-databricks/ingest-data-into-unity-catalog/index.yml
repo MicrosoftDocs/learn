@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.ingest-data-into-unity-catalog
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 101
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-databricks
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+  skills:
+    - "Data Engineering"
+    - "Data Management"
+    - "Data Warehousing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-databricks/ingest-data-into-unity-catalog/index.yml
+  uid: c8dc2711-bb90-48dd-9bd4-85fb8149afdd
   title: Ingest Data into Unity Catalog
   description: Learn how to ingest data from diverse sources into Unity Catalog tables in Azure Databricks using managed connectors, notebooks, SQL commands, streaming, and declarative pipelines.
   ms.date: 10/02/2026

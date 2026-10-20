@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-center-sap-solutions
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 54
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - platform-engineer
+    - solution-architect
+    - security-engineer
+  skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Cloud Infrastructure"
+    - Automation
+    - "Identity and Access Management (IAM)"
+    - "IT Networking"
+    - Storage
+    - "Platform Engineering"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-azure-center-sap-solutions/index.yml
+  uid: 083677ce-e887-431d-849d-228af0136c39
   title: Explore Azure Center for SAP solutions
   description: "SAP professionals work to manage SAP workloads efficiently on a secure, scalable, and reliable cloud platform. This module explores how Azure Center for SAP Solutions (ACSS) helps achieve these goals."
   ms.date: 12/23/2024

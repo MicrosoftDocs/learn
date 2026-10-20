@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-inheritance-abstraction-polymorphism
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 39
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Application Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/guided-project-inheritance-abstraction-polymorphism/index.yml
+  uid: 4dd7001a-19c4-4a89-a508-511ce1b28dad
   title: 'Guided Project: Inheritance, Abstraction, and Polymorphism'
   description: "This is the guided project for Inheritance, Abstraction, and Polymorphism."
   ms.date: 09/25/2024

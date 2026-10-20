@@ -1,6 +1,35 @@
 ### YamlMime:LearningPath
 uid: learn.azure.managing-azure-netapp-files
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - entra
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - storage-admin
+    - solution-architect
+    - security-engineer
+    - database-administrator
+  skills:
+    - "Cloud Administration"
+    - Storage
+    - "Network Connectivity"
+    - "Identity and Access Management (IAM)"
+    - "Data Security"
+    - "Solution Architecture"
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-azure-netapp-files/index.yml
+  uid: 88601408-c2f0-4205-bc57-d4e058b9e7c5
   title: Managing Azure NetApp Files
   description: Build your knowledge and skills in managing Azure NetApp Files. Start with fundamental setup tasks and registration steps needed to deploy and manage Azure NetApp Files resources.
   brand: azure

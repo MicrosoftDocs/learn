@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.integrate-data-azure-data-factory
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 62
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+  skills:
+    - "Data Engineering"
+    - "Data Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/data-integration-azure-data-factory/index.yml
+  uid: 632aaa96-a5a3-4ae7-81c4-f66381e53e5e
   title: Data integration with Azure Data Factory
   description: Integrate data with Azure Data Factory
   ms.date: 10/12/2026

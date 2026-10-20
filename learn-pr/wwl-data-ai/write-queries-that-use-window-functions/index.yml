@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.write-queries-that-use-window-functions
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 51
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - database-administrator
+  skills:
+    - SQL
+    - "Database Development"
+    - "Data Analytics"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/write-queries-that-use-window-functions/index.yml
+  uid: 2a8216be-2086-48b2-9af7-6240ecd8d8c4
   title: Write queries that use window functions
   description: "This content is a part of Write queries that use window functions."
   ms.date: 08/12/2026

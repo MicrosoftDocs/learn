@@ -2,6 +2,30 @@
 uid: learn.dpu.introduction-to-surface-laptop-business
 title: Introduction to Microsoft Surface Laptop for Business
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 25
+  last.refresh.date: null
+  modality: module
+  products:
+    - surface
+    - windows
+    - intune
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - technology-manager
+    - business-owner
+  skills:
+    - "Device Management"
+    - "AI Productivity"
+    - "Digital Accessibility"
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-to-surface-laptop-business/index.yml
+  uid: 599a8870-80fd-4866-af2b-e5649e22b7a2
   title: Introduction To Microsoft Surface Laptop For Business
   description: 'Explore Microsoft Surface Laptop for Business, a Copilot+ PC designed for business professionals focused on productivity, security, and performance.'
   ms.date: 11/18/2025

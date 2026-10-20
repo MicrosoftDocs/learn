@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-pipeline-agents-pools
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 77
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-devops
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - administrator
+  skills:
+    - DevOps
+    - "Infrastructure Management"
+    - Automation
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-azure-pipeline-agents-pools/index.yml
+  uid: 53bf3377-17cc-419f-b9b0-54bab3b77724
   title: Manage Azure Pipeline agents and pools
   description: "Learn to configure and manage Azure Pipeline agents and pools, including Microsoft-hosted and self-hosted options, security considerations, and deployment strategies."
   ms.date: 09/26/2025

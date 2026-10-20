@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.fsharp-first-steps
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 28
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - student
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/language/fsharp-first-steps/index.yml
+  uid: 2556557a-0a9a-4ee4-86a1-c38e63d7c471
   moduleType: standard
   title: "Write your first F# code"
   description: "Set up your F# development environment, write your first line of F# code, and build your first F# application" 

@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.philanthropies.explore-ai-basics
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 58
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles: null
+  skills:
+    - "AI Fluency"
+    - "Machine Learning"
+    - "Natural Language Processing (NLP)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/explore-ai-basics/index.yml
+  uid: 935814e0-43da-4b98-9126-4af8f57f41bb
   author: yoosunee
   ms.author: anruss
   ms.date: 01/14/2025

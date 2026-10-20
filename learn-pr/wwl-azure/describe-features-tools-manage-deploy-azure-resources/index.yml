@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-features-tools-manage-deploy-azure-resources
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 22
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - devops-engineer
+    - it-professional
+  skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-features-tools-manage-deploy-azure-resources/index.yml
+  uid: 8b93c0f1-06ce-4941-b153-08af01777ecf
   title: Describe features and tools for managing and deploying Azure resources
   description: "This module discusses tools and features that assist in managing and deploying resources within Azure."
   ms.date: 01/16/2026

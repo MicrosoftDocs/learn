@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.defender-iot-plan-deployment
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 23
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-defender
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - security-engineer
+    - network-engineer
+  skills:
+    - "Security Architecture Design"
+    - "Network Connectivity"
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "Security Operations Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/defender-iot-plan-deployment/index.yml
+  uid: 6bbb00e0-59e1-4e12-b12d-c6bdb971b1b1
   title: Plan to deploy Microsoft Defender for IoT to monitor operational technology networks
   description: "Learn how to plan your deployment of Microsoft Defender for IoT to monitor your OT network."
   ms.date: 11/29/2023

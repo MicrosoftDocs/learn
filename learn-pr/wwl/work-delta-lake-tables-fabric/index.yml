@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.work-delta-lake-tables-fabric
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 68
+  last.refresh.date: null
+  modality: module
+  products:
+    - fabric
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - database-administrator
+    - data-analyst
+  skills:
+    - "Data Engineering"
+    - "Database Development"
+    - "Data Management"
+    - SQL
+    - "Python (Programming Language)"
+    - "Data Administration"
+    - "Database Design"
+    - "Data Analytics"
+    - "Platform Engineering"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/work-delta-lake-tables-fabric/index.yml
+  uid: d5a48b45-a561-4ac8-9e1d-95f0dd855690
   title: Work with Delta Lake Tables in Microsoft Fabric
   description: "Tables in a Microsoft Fabric lakehouse are based on the Delta Lake technology commonly used in Apache Spark. By using the enhanced capabilities of delta tables, you can create advanced analytics solutions."
   ms.date: 05/23/2025

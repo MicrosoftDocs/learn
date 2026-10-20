@@ -2,6 +2,29 @@
 uid: learn.dpu.surface-for-business-accreditation-2026-2027
 title: Surface for Business Accreditation 2026-2027
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - surface
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+    - it-professional
+  skills:
+    - "Device Management"
+    - "AI Productivity"
+    - "Digital Accessibility"
+    - Cybersecurity
+    - "Cloud Computing"
+    - "AI Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/surface-for-business-accreditation-2027/index.yml
+  uid: 8484df4e-83cc-41c5-8e5c-de2733142e46
   title: Surface For Business Accreditation 2026-2027
   description: The Surface for Business Accreditation 2026-2027 provides a comprehensive overview of the Surface for Business ecosystem. Explore the latest Surface devices, hardware innovations, software experiences, and security and management capabilities that support modern work. You'll also learn how Surface solutions address the needs of different employee personas and business scenarios, helping you confidently identify and position the right devices for your customers and organizations.
   ms.date: 07/22/2026

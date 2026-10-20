@@ -1,6 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.design-business-continuity-solutions
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - database-administrator
+    - solution-architect
+    - storage-admin
+    - systems-administrator
+  skills:
+    - "Solution Architecture"
+    - "Data Management"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "Network Connectivity"
+    - Storage
+    - "Security Architecture Design"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/design-business-continuity-solutions/index.yml
+  uid: 37a824e6-089e-46e1-8a6d-d4957130674d
   title: 'AZ-305: Design business continuity solutions'
   description: 'AZ-305: Design business continuity solutions'
   ms.date: 06/23/2026

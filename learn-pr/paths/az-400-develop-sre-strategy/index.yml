@@ -1,6 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.az-400-develop-sre-strategy
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - "Infrastructure Management"
+    - "Organizational Culture"
+    - DevOps
+    - Automation
+    - "Cloud Administration"
+    - "Data Analytics"
+    - "Application Development"
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+    - "Application Architecture"
+    - "IT Networking"
+    - "Application Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-400-develop-sre-strategy/index.yml
+  uid: cf5068fd-f4c1-45a4-a605-79046d9f52f6
   title: "Develop a Site Reliability Engineering (SRE) strategy"
   description: "Sustainably achieve the appropriate level of reliability in your systems, services, and products and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
   brand: azure

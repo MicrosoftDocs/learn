@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.work-arrays-hash-tables-window-powershell-scripts
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 35
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+  skills:
+    - Automation
+    - "Application Development"
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/work-arrays-hash-tables-window-powershell-scripts/index.yml
+  uid: 566d6739-0b78-4335-81a0-3a234a92d95a
   title: Work with arrays and hash tables in Windows PowerShell scripts
   description: "This module explains how to use arrays and hash tables in Windows PowerShell scripts."
   ms.date: 05/12/2026

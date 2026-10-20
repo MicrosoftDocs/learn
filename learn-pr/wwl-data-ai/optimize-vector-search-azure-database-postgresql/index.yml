@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.optimize-vector-search-azure-database-postgresql
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 111
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - data-engineer
+    - ai-engineer
+    - developer
+    - solution-architect
+  skills:
+    - "Vector Databases"
+    - "Semantic Search"
+    - Databases
+    - "Database Development"
+    - SQL
+    - "AI Infrastructure"
+    - "Cloud Administration"
+    - "Python (Programming Language)"
+    - "Application Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/optimize-vector-search-azure-database-postgresql/index.yml
+  uid: 6192a178-4b0f-493b-ae59-eb72c279de83
   title: Optimize Vector Search in Azure Database for PostgreSQL
   description: Tune pgvector configuration, select vector indexes, design efficient data layouts, and scale Azure Database for PostgreSQL for high-performance AI workloads.
   ms.date: 06/15/2026

@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 33
+  last.refresh.date: null
+  modality: module
+  products:
+    - dynamics-365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - faculty
+  skills:
+    - "Enterprise Resource Planning (ERP)"
+    - "Organizational Effectiveness"
+    - "Career Development"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-hedt/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals/index.yml
+  uid: 2ab09ca1-8e1c-44b3-b527-e654fb84000e
   title: 'Get tips and tricks for teaching MB-920: Microsoft Dynamics 365 Fundamentals (ERP)'
   description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
   ms.date: 03/20/2023

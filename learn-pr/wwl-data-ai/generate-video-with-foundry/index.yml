@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.generate-video-with-foundry
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 48
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+    - azure-openai
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+  skills:
+    - "Generative AI"
+    - "Multimodal AI"
+    - "Prompt Engineering"
+    - "Model Hosting & Inference"
+    - "Python (Programming Language)"
+    - "Application Development"
+    - "AI Safety"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/generate-video-with-foundry/index.yml
+  uid: a2f51f75-c107-459e-952c-7c7699ff1829
   title: Generate videos with Microsoft Foundry
   description: "Learn how to generate videos from text prompts with Sora 2 in Microsoft Foundry."
   ms.date: 03/02/2026

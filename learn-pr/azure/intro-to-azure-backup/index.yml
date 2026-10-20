@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.introduction-to-azure-backup # Do not edit: uid must be globally unique
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 18
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - storage-admin
+    - database-administrator
+    - solution-architect
+  skills:
+    - Storage
+    - "Infrastructure Management"
+    - "Data Administration"
+    - "Data Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-backup/index.yml
+  uid: f54a7c52-5cd1-43ef-8331-0a7793c8d85c
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Azure Backup          # Do not edit: title must be "Introduction to <product>"
   description: "Evaluate whether Azure Backup is appropriate to use for your backup needs and describe how the features of Azure Backup work to provide backup solutions for your needs."                 # Copy your 'evaluate' Learning Objective here (see below)

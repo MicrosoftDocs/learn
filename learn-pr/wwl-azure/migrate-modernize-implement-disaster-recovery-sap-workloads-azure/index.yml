@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 57
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - solution-architect
+  skills:
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-modernize-implement-disaster-recovery-sap-workloads-azure/index.yml
+  uid: 90cfcf1d-e03d-4625-835c-8481423f5b4c
   title: Modernize and implement disaster recovery for SAP workloads in Azure
   description: 'Explore disaster recovery support of Azure for SAP workloads, including deployments within single and multiple Azure regions, multi-tier SAP NetWeaver. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/09/2024

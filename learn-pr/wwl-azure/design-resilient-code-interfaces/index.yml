@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.design-resilient-code-interfaces
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 58
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Application Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-resilient-code-interfaces/index.yml
+  uid: 8d198a33-548e-45ad-9384-dd164ad8dfec
   title: Design Resilient Code with Interfaces
   description: "In this module, you explore advanced concepts of interfaces in C#. You learn how to implement explicit interface members, combine multiple interfaces, and reduce code dependencies using interfaces."
   ms.date: 04/15/2025

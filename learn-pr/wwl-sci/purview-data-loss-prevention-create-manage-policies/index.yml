@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-data-loss-prevention-create-manage-policies
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 61
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-purview
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ip-admin
+  skills:
+    - "Data Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-data-loss-prevention-create-manage-policies/index.yml
+  uid: 8133ddb3-7a62-4c6e-ad04-5f3283399001
   title: Create and manage data loss prevention policies
   description: Create and manage data loss prevention policies.
   ms.date: 01/27/2026

@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-hdinsight 
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 33
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - solution-architect
+  skills:
+    - "Data Engineering"
+    - Storage
+    - "Data Warehousing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-hdinsight/index.yml
+  uid: 80fb2745-6cb0-4a35-9282-ff098a4180af
   moduleType: introduction        
   title: Introduction to Azure HDInsight
   description: Evaluate whether Azure HDInsight can help your organization process big data. Describe how Azure HDInsight uses popular open-source frameworks that support many scenarios including extract, transform, data warehousing, and others.

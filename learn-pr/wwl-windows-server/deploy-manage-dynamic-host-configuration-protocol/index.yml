@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-manage-dhcp
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 70
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - network-engineer
+    - systems-administrator
+    - administrator
+  skills:
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/deploy-manage-dynamic-host-configuration-protocol/index.yml
+  uid: 5c543f7e-7c1f-4a23-9525-976044c9bc01
   title: Deploy and manage DHCP
   description: "Learn how to deploy and manage DHCP in Windows Server, including DHCP scopes, options, reservations, lease management, DHCP Failover for high availability, and DHCPv6 for IPv6 environments."
   ms.date: 08/31/2026

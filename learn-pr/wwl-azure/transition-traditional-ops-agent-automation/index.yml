@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.transition-traditional-ops-agent-automation
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 86
+  last.refresh.date: null
+  modality: module
+  products:
+    - github-copilot
+    - azure
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - administrator
+    - solution-architect
+  skills:
+    - "Agentic AI"
+    - DevOps
+    - Automation
+    - "Cloud Administration"
+    - "Solution Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/transition-traditional-ops-agent-automation/index.yml
+  uid: 29a626d2-1b81-426b-8d27-0db450a7f6e4
   title: "Transition from Traditional Ops to Agentic DevOps Workflows"
   description: "Learn how to evolve traditional cloud administration and DevOps tasks into agentic AI workflows using agent instructions, skills, and multi-agent orchestration."
   ms.date: 6/11/2026

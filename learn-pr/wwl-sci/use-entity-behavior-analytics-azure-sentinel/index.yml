@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.use-entity-behavior-analytics-azure-sentinel
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 30
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-sentinel
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-operations-analyst
+    - security-engineer
+  skills:
+    - "Security Analytics"
+    - "Threat Management"
+    - "Security Operations Management"
+    - Cybersecurity
+    - "Security Automation"
+    - "Machine Learning"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/use-entity-behavior-analytics-azure-sentinel/index.yml
+  uid: 2e18cb0a-4345-4408-9ea1-d42fd224e3fb
   title: Identify threats with Behavioral Analytics
   description: "Identify threats with Behavioral Analytics"
   ms.date: 04/19/2026

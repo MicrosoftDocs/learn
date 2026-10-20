@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-azure-resources-bicep
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 56
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - systems-administrator
+  skills:
+    - "Cloud Infrastructure"
+    - Automation
+    - DevOps
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/build-first-bicep-file/index.yml
+  uid: 45ef7c74-b778-4c43-b972-56a399785d6e
   moduleType: standard
   title: Build your first Bicep file
   description: Learn how to create Bicep files and create reusable infrastructure as code.

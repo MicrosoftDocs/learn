@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-windows-server-storage-replica
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 45
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - administrator
+    - storage-admin
+  skills:
+    - Storage
+    - "Infrastructure Management"
+    - "IT Networking"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/implement-windows-server-storage-replica/index.yml
+  uid: 2a04a87c-54b8-45f9-aa11-d90e22b55e06
   title: Implement Windows Server Storage Replica
   description: "Learn how to implement Storage Replica in Windows Server for block-level, synchronous or asynchronous volume replication across servers or sites for disaster recovery and high availability."
   ms.date: 08/31/2026

@@ -1,6 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-fundamentals-describe-azure-architecture-services
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles: null
+  skills:
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - Storage
+    - Virtualization
+    - "Network Connectivity"
+    - "Cloud Computing"
+    - "Data Migration"
+    - "Data Security"
+    - "Zero Trust Security"
+    - "Application Architecture"
+    - "IT Networking"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+  solution.area: null
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/azure-fundamentals-describe-azure-architecture-services/index.yml
+  uid: 0f776152-9013-4f9c-a531-b27ff9120f54
   title: 'Introduction to Cloud Infrastructure: Describe Azure Architecture and Services'
   description: 'Architecture and services component of the Introduction to Cloud Infrastructure training'
   ms.date: 03/31/2026

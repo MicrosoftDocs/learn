@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.github.github-copilot-agent-mode
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 50
+  last.refresh.date: null
+  modality: module
+  products:
+    - github-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "AI-Augmented Software Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/github-copilot-agent-mode/index.yml
+  uid: 5c224bfa-4a2f-43cb-88b3-88ebefa96898
   title: Building Applications with GitHub Copilot Agent Mode
   description: GitHub Copilot Agent Mode is an AI-powered coding assistant that works on its own to analyze your entire project, handle tricky coding tasks, improve solutions over time, and help make your software development process faster and more collaborative.
   author: a-a-ron

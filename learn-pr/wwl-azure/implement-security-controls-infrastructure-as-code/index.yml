@@ -1,6 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-security-controls-infrastructure-as-code
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 23
+  last.refresh.date: null
+  modality: module
+  products:
+    - defender-for-cloud
+    - azure
+    - github
+    - azure-devops
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - devops-engineer
+    - platform-engineer
+    - ip-admin
+  skills:
+    - "Application Security"
+    - "Security Automation"
+    - DevOps
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - Cybersecurity
+    - "Cloud Infrastructure"
+    - "Platform Engineering"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-security-controls-infrastructure-as-code/index.yml
+  uid: 73731d8d-86c3-4237-b459-1d469e3a023a
   title: Implement Security Controls in Infrastructure as Code
   description: "Embed security controls into infrastructure as code pipelines to prevent noncompliant Azure resources from reaching production. Integrate IaC security scanning using Microsoft Defender for DevOps and the MSDO extension, and configure Azure Policy in a policy-as-code workflow to enforce security compliance at deployment time."
   ms.date: 04/23/2026

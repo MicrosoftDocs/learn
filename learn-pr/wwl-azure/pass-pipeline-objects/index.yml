@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.pass-pipeline-objects
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 50
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - Automation
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/pass-pipeline-objects/index.yml
+  uid: 8b6acbb7-6a4d-4c5d-96a4-48593ba0f9cc
   title: Pass pipeline objects
   description: This module explains how the Windows PowerShell command-line interface passes objects from one command to another in the pipeline.
   ms.date: 05/12/2026

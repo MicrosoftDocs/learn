@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-microsoft-teams-use-windows-powershell
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 27
+  last.refresh.date: null
+  modality: module
+  products:
+    - office-teams
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+  skills:
+    - "Cloud Administration"
+    - Automation
+    - "Collaboration Tools"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-microsoft-teams-use-windows-powershell/index.yml
+  uid: e4af609f-55c5-494a-bb4e-907640fa2aa6
   title: Manage Microsoft Teams by using Windows PowerShell
   description: "This module explains how to use Microsoft Teams PowerShell module to perform tasks such as creating teams and managing user permissions."
   ms.date: 05/12/2026

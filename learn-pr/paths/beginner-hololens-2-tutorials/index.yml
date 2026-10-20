@@ -1,6 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.azure.beginner-hololens-2-tutorials
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Digital Accessibility"
+    - "Natural Language Processing (NLP)"
+    - Storage
+    - "Computer Vision"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/beginner-hololens-2-tutorials/index.yml
+  uid: c7d480ca-ad60-4f2d-8b9c-b427000f7813
   title: 'HoloLens 2 fundamentals: develop mixed reality applications'
   description: Learn about the best practices for developing Azure-enabled mixed reality applications with the Mixed Reality Toolkit.
   ms.custom: kr2b-contr-experiment

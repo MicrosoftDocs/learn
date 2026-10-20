@@ -2,6 +2,29 @@
 uid: learn.dpu.microsoft-education-ai-learning
 title: Microsoft Education technology and AI learning concepts
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 24
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - technology-manager
+    - k-12-educator
+    - higher-ed-educator
+  skills:
+    - "Cloud Computing"
+    - Cybersecurity
+    - "Collaboration Tools"
+    - "Responsible AI"
+    - "AI Strategy"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/microsoft-education-ai-learning/index.yml
+  uid: 144b102e-1399-4fc3-9040-138c95d9c39c
   title: Microsoft Education Technology And AI Learning Concepts
   description: Explore foundational concepts for Microsoft education technology and AI-powered learning. Learn how institutions modernize securely, support teaching and learning, and align technology decisions with institutional goals.
   ms.date: 04/02/2026

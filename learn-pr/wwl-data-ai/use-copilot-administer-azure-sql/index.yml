@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.use-copilot-administer-azure-sql
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 67
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - github-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+  skills:
+    - "AI-Augmented Software Development"
+    - SQL
+    - Automation
+    - "AI Model Evaluation & Testing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/use-copilot-administer-azure-sql/index.yml
+  uid: 63b2995d-b42a-455b-9e2d-7377f092cbf3
   title: Accelerate Azure SQL tasks with Microsoft Copilot
   description: "Use Copilot in Azure SQL Database, GitHub Copilot in SSMS and VS Code, and GitHub Copilot for IaC to work faster as a DBA: diagnose performance issues, author T-SQL, automate deployments, and evaluate every suggestion before applying it."
   ms.date: 06/02/2026

@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.azure.power-apps-tutorial
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 64
+  last.refresh.date: null
+  modality: module
+  products:
+    - power-apps
+    - office-sp
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - functional-consultant
+  skills:
+    - "Low-Code Development"
+    - "Application Development"
+    - "Data Management"
+    - "Process Automation"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/power-apps-tutorial/index.yml
+  uid: 851e7fe6-9ae5-4061-a803-8f53b1cdcb99
   title: Build a 3D mobile app with Power Apps in mixed reality
   description: Learn about all the foundational elements required to build a mixed reality application using Power Apps.
   ms.date: 01/01/2022

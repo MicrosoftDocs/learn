@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.azure.accelerate-migration-journey
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 66
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - technology-manager
+    - business-analyst
+  skills:
+    - "Cloud Computing"
+    - "IT Strategy"
+    - "Solution Architecture"
+    - "Data Migration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/accelerate-azure-migration-journey/index.yml
+  uid: ef45ef88-2dd5-47dd-aa9e-7f3f06a7d99a
   title: Accelerate your Migration, Modernization, and Innovation Journey to Azure
   description: Learn how to accelerate your migration and modernization journey to Azure.
   manager: jsuri

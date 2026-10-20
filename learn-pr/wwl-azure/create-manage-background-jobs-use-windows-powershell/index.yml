@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.create-manage-background-jobs-use-windows-powershell
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 37
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - Automation
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/create-manage-background-jobs-use-windows-powershell/index.yml
+  uid: f75fc4db-7b8a-41f8-809b-bb9c00c94083
   title: Create and manage background jobs using Windows PowerShell
   description: "This module explains the three types of jobs: local jobs, Windows PowerShell remote jobs, and Common Information Model (CIM)/Windows Management Instrumentation (WMI) jobs. These job types form the basis of the Windows PowerShell job system."
   ms.date: 05/12/2026

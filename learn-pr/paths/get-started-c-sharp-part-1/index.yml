@@ -1,6 +1,22 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-c-sharp-part-1
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-c-sharp-part-1/index.yml
+  uid: d0cde69c-0dbe-49af-a545-cff434953803
   title: Write your first code using C# (Get started with C#, Part 1)
   description: Learn the basic syntax and thought processes required to build simple applications using C#.
   ms.date: 02/21/2024

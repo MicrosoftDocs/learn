@@ -1,6 +1,26 @@
 ﻿### YamlMime:Module
 uid: learn.wwl.enforce-semantic-model-security
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 67
+  last.refresh.date: null
+  modality: module
+  products:
+    - power-bi
+    - fabric
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-analyst
+  skills:
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/enforce-semantic-model-security/index.yml
+  uid: 0e814a90-7ded-492e-85c9-001408a12b07
   title: Enforce Semantic Model Security
   description: "Implement row-level security, object-level security, and dynamic security patterns to protect sensitive data in semantic models."
   ms.date: 04/15/2026

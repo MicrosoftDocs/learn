@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.specify-requirements-secure-saas-paas-iaas-services
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 70
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+  skills:
+    - "Security Architecture Design"
+    - "Network Connectivity"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/specify-requirements-securing-saas-paas-iaas-services/index.yml
+  uid: 93b13dfb-66c4-4db0-9e20-a6b2bc4c9fb8
   title: Specify Requirements for Securing SaaS, PaaS, and IaaS Services
   description: "You learn how to analyze security requirements for different cloud offerings (SaaS, PaaS, and IaaS), IoT workloads, web workloads, containers, and AI workloads."
   ms.date: 06/04/2026

@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.load-balancing-https-traffic-azure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 42
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - network-engineer
+    - solution-architect
+  skills:
+    - "Network Connectivity"
+    - "Solution Architecture"
+    - "Application Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/load-balancing-https-traffic-azure/index.yml
+  uid: 47bb89ab-2bdd-43aa-a2ce-d1fa26ef3a2d
   adobe-target: true
   prefetch-feature-rollout: true
   title: Load balance HTTP(S) traffic in Azure

@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.site-topology-replication
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 190
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - "Infrastructure Management"
+    - "IT Networking"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/active-directory-site-replication/index.yml
+  uid: bcd5c894-134f-4372-a86d-946f433ff7fc
   title: Active Directory sites, topology, and replication
   description: Design Active Directory site topology and analyze Active Directory replication metadata, including Windows Server 2025 replication priority control.
   ms.date: 04/28/2026

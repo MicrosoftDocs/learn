@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.sql-server-data-virtualization
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 62
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - data-engineer
+    - administrator
+  skills:
+    - Databases
+    - "Data Engineering"
+    - "Data Management"
+    - "Data Administration"
+    - SQL
+    - Storage
+    - "Data Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/sqlserver/sql-server-data-virtualization/index.yml
+  uid: c9a08dcc-e26b-4150-b0aa-9ceba98514e9
   title: Introduction to SQL Server 2025 Data Virtualization
   description: Learn about data virtualization, how to use Polybase to access and query external data, and enhanced Polybase features in SQL Server 2025.
   ms.date: 08/11/2026

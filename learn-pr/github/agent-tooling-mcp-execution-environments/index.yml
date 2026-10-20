@@ -2,6 +2,26 @@
 uid: learn.github.agent-tooling-mcp-execution-environments
 title: Tooling, MCP, and Agent Execution Environments
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 80
+  last.refresh.date: null
+  modality: module
+  products:
+    - github-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Agent Development"
+    - "API Management"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/agent-tooling-mcp-execution-environments/index.yml
+  uid: 680db48b-0eae-49d3-a751-fb7a9b4487a9
   title: Tooling, MCP, and Agent Execution Environments
   description: This module introduces how modern software agents interact with tools, APIs, and execution environments to perform meaningful tasks. It covers the role of Model Context Protocol (MCP), GitHub Actions, and agentic workflows in enabling scalable and controlled agent execution. You will also learn how GitHub ensures security and governance through defined execution boundaries and safeguards.
   author: camihmerhar

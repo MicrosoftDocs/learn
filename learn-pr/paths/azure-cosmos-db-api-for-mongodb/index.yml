@@ -1,6 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-cosmos-db-api-for-mongodb
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - database-administrator
+    - developer
+  skills:
+    - "Database Development"
+    - "Application Development"
+    - "Data Administration"
+    - "Cloud Computing"
+    - "Database Design"
+    - Databases
+    - "Data Engineering"
+    - "Cloud Administration"
+    - "Data Management"
+    - "Data Analytics"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/azure-cosmos-db-api-for-mongodb/index.yml
+  uid: 848bd67c-3305-4353-9497-576762ba0c05
   title: Azure Cosmos DB for MongoDB
   description: Azure Cosmos DB for MongoDB
   ms.date: 11/15/2022

@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.github.github-actions-automate-tasks
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 49
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+  skills:
+    - DevOps
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/github-actions-automate-tasks/index.yml
+  uid: 8c8b799a-812f-4a25-b4c6-b32877392c1a
   title: "Automate development tasks by using GitHub Actions"
   description: Create a basic GitHub Action and use that action in a workflow.
   ms.date: 10/08/2024

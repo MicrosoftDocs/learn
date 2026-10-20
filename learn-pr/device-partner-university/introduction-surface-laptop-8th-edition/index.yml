@@ -2,6 +2,27 @@
 uid: learn.dpu.introduction-to-microsoft-surface-laptop-8th-edition
 title: Introduction to Microsoft Surface Laptop for Business (8th Edition)
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 25
+  last.refresh.date: null
+  modality: module
+  products:
+    - surface
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+    - systems-administrator
+  skills:
+    - "Device Management"
+    - "AI Productivity"
+    - "Digital Accessibility"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-surface-laptop-8th-edition/index.yml
+  uid: 64922d32-dbd7-4121-8a6d-c295060a897d
   title: Introduction to Microsoft Surface Laptop for Business (8th Edition)
   description: >
     In this module, you'll learn about the new features and capabilities of the Microsoft Surface Laptop for Business (8th Edition), how it works, and when to use it.

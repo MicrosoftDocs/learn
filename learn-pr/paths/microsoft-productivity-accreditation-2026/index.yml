@@ -2,6 +2,33 @@
 uid: learn.dpu.microsoft-productivity-accreditation-2026
 title: Microsoft Productivity Accreditation 2026
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - m365
+    - microsoft-365-copilot
+    - office-teams
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+    - business-owner
+    - student
+  skills:
+    - "AI Productivity"
+    - "AI Prompting"
+    - "Generative AI"
+    - "Agentic AI"
+    - "Collaboration Tools"
+    - "Organizational Effectiveness"
+    - "Data Analytics"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/microsoft-productivity-accreditation-2026/index.yml
+  uid: 9e36ba2f-6b79-4d6f-8c3d-e258d8481bd8
   title: Microsoft Productivity Accreditation 2026
   description: "This learning path introduces Microsoft productivity solutions designed to support everyday work across personal and business scenarios. Learners explore how Microsoft Office Home 2024 and Office Home & Business 2024 provide core desktop applications through a one-time purchase model, including when each option is the right fit based on usage needs, features, and other considerations. The learning path also introduces Microsoft 365 Copilot workflows, demonstrating how AI can be used alongside familiar tools to streamline tasks such as summarizing content, analyzing data, and improving communication across apps. By completing this learning path, learners will be able to evaluate different productivity solutions, understand how they support common workflows, and apply AI-powered capabilities to work more effectively in everyday tasks."
   ms.date: 05/21/2026

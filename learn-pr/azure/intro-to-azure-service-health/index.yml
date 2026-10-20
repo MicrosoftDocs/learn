@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-service-health
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 15
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - support-engineer
+  skills:
+    - "Cloud Administration"
+    - "Communications Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-service-health/index.yml
+  uid: c8ed756d-d9b3-4e6c-9b84-c97f50f6da17
   moduleType: introduction        
   title: Introduction to Azure Service Health 
   description: Introduction to Azure Service Health and how to get information from Azure Platform health.             # Copy your 'evaluate' Learning Objective here (see below)

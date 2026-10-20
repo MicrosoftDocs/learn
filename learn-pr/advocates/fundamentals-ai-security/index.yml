@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.fundamentals-of-ai-security
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 53
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - ai-engineer
+  skills:
+    - "AI Security (Model-Level)"
+    - "Application Security"
+    - "Data Security"
+    - "Responsible AI"
+    - "Security Architecture Design"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/fundamentals-ai-security/index.yml
+  uid: b830f57a-f47b-4204-a800-470980b298aa
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 10/01/2026

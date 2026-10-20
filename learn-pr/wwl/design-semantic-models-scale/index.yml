@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.design-semantic-models-scale
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 65
+  last.refresh.date: null
+  modality: module
+  products:
+    - fabric
+    - power-bi
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-analyst
+    - data-engineer
+  skills:
+    - "Data Analytics"
+    - "Database Design"
+    - "Data Engineering"
+    - "Data Warehousing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/design-semantic-models-scale/index.yml
+  uid: 7084bf1b-e864-4fc0-b307-a294e5e1e822
   title: Design Semantic Models for Scale in Microsoft Fabric
   description: "Design semantic models for scale in Microsoft Fabric. Choose storage modes, design star schema relationships, create scalable calculation patterns, and configure settings for large datasets and concurrent consumption."
   ms.date: 04/06/2026

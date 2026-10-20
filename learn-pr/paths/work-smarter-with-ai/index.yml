@@ -1,6 +1,28 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.work-smarter-with-ai
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - microsoft-365-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+  skills:
+    - "AI Fluency"
+    - "AI Productivity"
+    - "Generative AI"
+    - "Responsible AI"
+    - "Agentic AI"
+    - "AI Prompting"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/work-smarter-with-ai/index.yml
+  uid: 551482a6-5e85-4f81-9c05-a238596b374e
   title: Work smarter with AI
   description: Get more done and unleash your creativity with Microsoft Copilot.
   ms.date: 11/19/2024

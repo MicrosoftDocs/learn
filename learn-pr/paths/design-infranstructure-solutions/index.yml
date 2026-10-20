@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.design-infranstructure-solutions
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+  skills:
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Application Architecture"
+    - "API Management"
+    - "Cloud Computing"
+    - Automation
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Data Migration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/design-infranstructure-solutions/index.yml
+  uid: c021c6a6-4e54-407e-a08a-10affa4465e0
   title: 'AZ-305: Design infrastructure solutions'
   description: 'AZ-305: Design infrastructure solutions'
   ms.date: 06/23/2026

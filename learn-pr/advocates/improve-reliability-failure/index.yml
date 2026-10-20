@@ -2,6 +2,29 @@
 uid: learn.improve-reliability-failure
 title: "Improve your reliability with modern operations practices: Learning from failure"
 metadata:
+  content.levels: 500
+  content.locale: en-us
+  duration: 36
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - office-teams
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - site-reliability-engineer
+    - technology-manager
+  skills:
+    - "Organizational Culture"
+    - "Organizational Effectiveness"
+    - "Communications Management"
+    - DevOps
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/improve-reliability-failure/index.yml
+  uid: 1c144bd8-9670-495f-9f77-b02a8e2a67bb
   title: "Improve your reliability with modern operations practices: Learning from failure"
   description: Learn about post-incident reviews, a practice necessary to help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
   ms.date: 04/17/2026

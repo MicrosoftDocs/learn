@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.prepare-teach-sc-900-academic-programs
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - higher-ed-educator
+  skills:
+    - "Career Development"
+    - "Collaboration Tools"
+    - "Digital Accessibility"
+    - Cybersecurity
+    - "Identity and Access Management (IAM)"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Zero Trust Security"
+    - "Threat Management"
+    - "Security Operations Management"
+    - "Communications Management"
+  solution.area: null
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/prepare-teach-sc-900-academic-programs/index.yml
+  uid: 1a896f2f-b98f-4517-8273-5266e5d0c1f0
   title: Prepare to teach SC-900 Microsoft Security, Compliance, and Identity Fundamentals in academic programs
   description: Prepare to teach SC-900 Microsoft Security, Compliance, and Identity Fundamentals in academic programs
   ms.date: 07/12/2022

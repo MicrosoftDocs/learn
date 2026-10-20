@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-basics-azure-business
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 30
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-owner
+    - business-leader
+    - executive
+  skills:
+    - "Cloud Computing"
+    - "IT Strategy"
+    - "Business Insights"
+    - "Organizational Effectiveness"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-basics-azure-business/index.yml
+  uid: 17c3af4d-edce-4005-a8a9-c32c96a645cc
   title: Describe the basics of Azure for business
   description: "This module describes what the cloud is and what Microsoft Azure is, and how businesses can grow and transform with Azure."
   ms.date: 09/19/2024

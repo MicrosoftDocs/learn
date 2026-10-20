@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.ai-security-fundamentals
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - security-engineer
+  skills:
+    - "AI Security (Model-Level)"
+    - "Application Security"
+    - "Data Security"
+    - "Responsible AI"
+    - "Security Architecture Design"
+    - "Prompt Engineering"
+    - "Knowledge Grounding for AI"
+    - "Security Operations Management"
+    - "AI Model Evaluation & Testing"
+    - "AI Risk Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/ai-security-fundamentals/index.yml
+  uid: 70812b8c-cfdd-4493-a29b-a95309ea27e3
   title: AI security fundamentals
   description: Learn the fundamental concepts of AI security.
   ms.date: 10/01/2026

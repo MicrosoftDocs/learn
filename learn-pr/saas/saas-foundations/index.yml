@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.saas-foundations
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 54
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - startup-founder
+    - business-owner
+    - product-manager
+    - developer
+    - site-reliability-engineer
+  skills:
+    - "Cloud Computing"
+    - "Business Insights"
+    - "Application Architecture"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/saas/saas-foundations/index.yml
+  uid: 49c4a76d-cc31-4333-b685-2b82595d2c51
   title: Foundations of SaaS
   description: Learn about Software as a Service (SaaS), service-level agreement (SLA) and service-level objectives (SLO), security and compliance, and pricing.
   ms.date: 05/28/2024

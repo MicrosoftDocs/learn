@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-cosmos-db-sql-api
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 36
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - Databases
+    - "Cloud Computing"
+    - "Application Architecture"
+    - "Database Design"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/configure-azure-cosmos-db-sql-api/index.yml
+  uid: 6c980a58-0de1-45be-9d14-50f0dd566175
   title: Configure Azure Cosmos DB for NoSQL
   description: "Select between the various throughput offerings in Azure Cosmos DB for NoSQL."
   ms.date: 04/02/2025

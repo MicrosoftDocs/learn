@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.design-container-build-strategy
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 60
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+  skills:
+    - DevOps
+    - "Application Architecture"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-container-build-strategy/index.yml
+  uid: b24a4c9f-4b5c-4b73-8277-72fc349c066a
   title: Design a Container Build Strategy
   description: Design a Container Build Strategy
   ms.date: 09/26/2025

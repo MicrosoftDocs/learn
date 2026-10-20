@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-vnet-peering
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 38
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - network-engineer
+    - security-engineer
+  skills:
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - "Security Architecture Design"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-vnet-peering/index.yml
+  uid: 8b8ba9d1-6908-4c1d-8fff-0ff16e3e5b31
   adobe-target: true
   prefetch-feature-rollout: true
   title: Configure Azure Virtual Network Peering

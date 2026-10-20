@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.entra-ai-understand
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 38
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - entra
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - identity-access-admin
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "AI Security (Model-Level)"
+    - "AI Risk Management"
+    - "Security Architecture Design"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/entra-ai-understand/index.yml
+  uid: 1ab230dd-f7c5-4b0a-a0c2-0c628bc0f017
   title: Understand identity architecture for AI workloads
   description: Explore how Microsoft Entra ID defines who can deploy, invoke, and manage AI workloads in Azure through identity types, authentication flows, and role scope decisions.
   ms.date: 02/13/2026

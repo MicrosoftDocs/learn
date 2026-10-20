@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.github.github-introduction-products
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 32
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - technology-manager
+    - devops-engineer
+  skills:
+    - DevOps
+    - "Identity and Access Management (IAM)"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Collaboration Tools"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/github-introduction-products/index.yml
+  uid: 268ea5d1-0f28-4cae-823c-3c126e3f252f
   title: Introduction to GitHub's products
   description: Overview of GitHub's products, plans, associated features, and billing. 
   ms.service: github

@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.enable-semantic-search-azure-database-postgresql
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 62
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-openai
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - database-administrator
+    - data-engineer
+  skills:
+    - "Semantic Search"
+    - "Vector Databases"
+    - Databases
+    - "Database Development"
+    - SQL
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/enable-semantic-search-azure-database-postgresql/index.yml
+  uid: 8538aa2a-c969-4560-984e-398cdf7c5ec1
   adobe-target: true
   prefetch-feature-rollout: true
   title: Enable semantic search in Azure Database for PostgreSQL
