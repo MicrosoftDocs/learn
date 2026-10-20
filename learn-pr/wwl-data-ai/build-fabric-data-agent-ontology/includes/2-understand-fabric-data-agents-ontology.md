@@ -1,43 +1,55 @@
-A Fabric data agent is a conversational interface to your data. It connects to data sources in your Fabric environment — people ask questions in natural language and get data-backed answers without writing queries or building reports. In this module, the focus is on using an ontology as the data source.
+A Fabric data agent provides a conversational way to ask questions about connected data. For Lamna Healthcare, an ontology adds the business context needed to interpret questions about departments, rooms, patients, and equipment.
 
-## What is a Fabric data agent?
+## Separate context from query execution
 
-When you ask a question, the agent identifies the relevant data source, generates a query in the appropriate language (SQL, DAX, KQL, or GQL depending on the source type), executes the query, and returns the result.
+An **ontology** describes business entities, their properties and relationships, and how those concepts map to physical data. Definitions and synonyms help express the vocabulary people use. Bindings connect that vocabulary to the sources that supply data.
 
-Each agent can connect to up to five data sources in any combination:
+A Fabric data agent uses the ontology as a **context source**, not as the endpoint that executes a query. The current integration separates three responsibilities:
 
-- **Lakehouses** — query Delta tables using SQL
-- **Warehouses** — query structured data using SQL
-- **KQL databases** — query event streams and time-series data using KQL
-- **Power BI semantic models** — query business metrics using DAX
-- **Ontologies** — query graph-structured domain models using GQL
-- **Microsoft Graph** — query organizational data (people, calendars, files) using Microsoft Graph APIs
+1. **The ontology provides meaning.** It describes the entities, relationships, terminology, mappings, and bindings relevant to a question.
+1. **The data agent interprets and orchestrates.** It uses the context to identify an underlying source and generate an appropriate query.
+1. **The underlying source executes.** It runs the generated query under the requesting user's permissions and returns data for the response.
 
-> [!NOTE]
-> The agent runs under the querying user's Entra ID identity — it can only reach data that user is authorized to view, and it's strictly read-only. For more information, see [Fabric data agent sharing and permission management](/fabric/data-science/data-agent-sharing#sharing-permission-models-and-required-source-access).
+This distinction matters when you investigate an answer. A correct business definition doesn't prove that the agent selects the right source or generates the right filter. You need to check both the semantic context and the query that retrieves the data.
 
-## What is an ontology?
+For details, see [Use ontology as context in Fabric data agent](/fabric/data-science/data-agent-ontology-sources).
 
-An **ontology** is a structured model that describes your business domain — the entity types, their properties, and how they relate to each other. Instead of raw column names like `rm_id` or `adm_flag` that you might find in a database schema, an ontology uses business terms like `Room`, `Patient`, and `admittedTo`.
+## Understand source-native queries
 
-The Lamna Healthcare ontology defines entity types like **Hospital**, **Department**, **Room**, **Patient**, and **VitalSignEquipment**. Each entity type has properties that describe its characteristics: a Room has properties like `roomNumber`, `capacity`, and `isOccupied`. Relationships connect entities in meaningful ways: a Patient is `admittedTo` a Room, and a Room is `inDepartment` a Department.
+The agent generates a query in the language supported by the selected underlying source. For ontology context, the documented languages are SQL, Kusto Query Language (KQL), and Data Analysis Expressions (DAX).
 
-**Connecting to the ontology** gives the agent a structured vocabulary so it maps natural language questions to defined entity types, properties, and relationship labels rather than guessing from raw column names. The Lamna ontology is bound to lakehouse tables and an eventhouse — when the agent queries through the ontology layer, it accesses real data while using the conceptual structure the ontology provides.
+| Underlying source | Query language | Example question topic |
+| --- | --- | --- |
+| Lakehouse or warehouse | SQL | Rooms associated with a department |
+| Eventhouse KQL database | KQL | Equipment readings during a time interval |
+| Power BI semantic model | DAX | A measure defined in the model |
 
-This combination of meaningful vocabulary and real data bindings makes the ontology a bridge between how clinical staff ask questions and how data is stored.
+The question topics are illustrative. The actual query depends on the ontology bindings, available source objects, and configured business definitions. Adding an ontology doesn't create missing tables, relationships, or measures in those sources.
 
-## How the agent uses the ontology
+Don't confuse ontology context with a direct graph connection. Fabric data agents also support graph models as a separate source category that uses Graph Query Language (GQL). That capability doesn't mean that an ontology-context question executes as GQL. See [supported data sources and query languages](/fabric/data-science/data-agent-add-datasources).
 
-When you use an ontology as the data source, the Fabric data agent generates **GQL (Graph Query Language)**. GQL is designed to traverse the graph structure of the ontology, following relationships between entities.
+In the Lamna scenario, consider "How many rooms in the Surgical Services department are occupied?" You first need an agreed definition of occupied. For example, the scenario might define an occupied room as a room with a current patient assignment. You then need mappings that identify the room, department, and assignment data.
 
-Here's how it works. When a nurse manager asks "Which departments have patients without vital sign equipment assigned?", the agent matches "departments" to the `Department` entity type, traverses the `inDepartment` relationship to find rooms, follows `admittedTo` to reach patients, and checks whether a `VitalSignEquipment` entity is linked to each patient's room. This semantic understanding guides the agent to generate GQL that retrieves the answer.
+The agent uses this context to generate a query against the appropriate bound source. When you validate the answer, check that it counts rooms rather than patient assignments. Those counts aren't necessarily equivalent. Don't assume that an occupancy property exists unless the actual ontology and source schema define one.
 
-The process relies on the ontology's structure. The agent interprets "ICU" as a department filter, "beds" as rooms, and "occupied" as the `isOccupied` property or the presence of an `admittedTo` relationship. This mapping happens because the ontology defines these concepts explicitly. But terms like "ICU" or "beds" aren't always exact matches to entity type names or property values. That's where **instructions** come in — natural language guidance you write when configuring the agent to explain how domain-specific vocabulary maps to ontology concepts.
+## Put business meaning in the right place
 
-The agent's ability to generate accurate GQL depends entirely on how well the ontology models your domain and how clearly your instructions explain common question patterns.
+Most shared semantic configuration belongs in the ontology. This includes entity definitions, synonyms, relationships, mappings, and bindings. If "occupied room" has an organization-wide definition, manage that definition as shared business context rather than inventing a different interpretation for each agent.
 
-## What the ontology layer provides
+Agent-specific configuration supplements that context. Agent instructions guide source choice and response behavior. For eligible underlying sources, source instructions and example queries provide additional guidance for query generation.
 
-The agent inherits the ontology's governance layer. Entity definitions, relationships, and data bindings all flow through the ontology — you manage these in one place rather than configuring them separately for each agent. When the clinical team adds a new entity type like `MedicalDevice`, the agent immediately understands questions about devices without reconfiguration.
+These configurations serve different purposes. A source instruction might explain a required filter or join path. An example query might demonstrate how to count distinct rooms. Neither configuration writes changes back to the ontology. Update the ontology itself when a shared relationship or mapping is wrong.
 
-This centralized structure also means every user who asks the same question gets the same interpretation. The ontology defines how domain vocabulary maps to data, so results are consistent and repeatable.
+Support depends on the underlying source type. Power BI semantic models don't support supplemental data-agent-specific context in this integration, and query generation might not use some ontology context when a semantic model is selected. Check the [ontology configuration limitations](/fabric/data-science/data-agent-ontology-sources#limitations) before you choose a tuning method.
+
+## Account for permissions and context refresh
+
+The agent executes generated queries using the requesting user's access to the underlying source. Users need access to the relevant ontology objects and the data objects needed to answer their question. Sharing the agent doesn't grant those permissions.
+
+For example, two colleagues can use the same published agent but have different access to the source data. Shared terminology doesn't override that difference. Treat ontology context as a way to promote consistent meaning, not as a guarantee of identical results for every person.
+
+Context changes also take time to reach the agent. The agent retrieves the latest ontology context every 10 minutes. A new entity or changed binding can take up to 10 minutes to appear unless you manually refresh the context.
+
+When a question doesn't reflect a recent change, inspect the context available to the agent before you add more instructions. Refresh that context and retest. This separates stale metadata from a problem with the definition, source data, or generated query.
+
+For the access requirements, see [Fabric data agent sharing and permission management](/fabric/data-science/data-agent-sharing#sharing-permission-models-and-required-source-access).
