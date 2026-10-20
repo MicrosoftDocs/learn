@@ -4,9 +4,9 @@ title: Create a custom namespace for Azure Kubernetes clusters
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Create a custom namespace for Azure Kubernetes clusters
+  title: Create a Custom Namespace for Azure Kubernetes Clusters
   description: "Create a custom namespace for Azure Kubernetes clusters"
-  ms.date: 05/15/2025
+  ms.date: 10/17/2026
   author: Orin-Thomas 
   ms.author: orthomas
   ms.topic: unit

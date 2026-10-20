@@ -4,9 +4,9 @@ title: Host-based encryption on Azure Kubernetes Service
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Host-based encryption on Azure Kubernetes Service
+  title: Host-Based Encryption on Azure Kubernetes Service
   description: "Host-based encryption on Azure Kubernetes Service"
-  ms.date: 05/15/2025
+  ms.date: 10/17/2026
   author: Orin-Thomas 
   ms.author: orthomas
   ms.topic: unit
