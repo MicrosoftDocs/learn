@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.introduction-to-hololens
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 33
+  last.refresh.date: null
+  modality: module
+  products:
+    - dynamics-365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - technology-manager
+    - business-owner
+    - business-analyst
+  skills:
+    - "Collaboration Tools"
+    - "IT Strategy"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/introduction-to-hololens/index.yml
+  uid: a9978ba0-088c-4f21-949d-6a86708a99e7
   title: Introduction to HoloLens
   description: This course provides a basic understanding of what HoloLens can do for an organization.
   ms.date: 03/01/2024

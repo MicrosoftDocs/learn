@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.describe-governmental-cloud-strategy
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - risk-practitioner
+  skills:
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "IT Strategy"
+    - Cybersecurity
+    - "Data Security"
+    - "Business Insights"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/describe-governmental-cloud-strategy/index.yml
+  uid: 0cbd1f00-33cf-4075-a78e-70dca26ba162
   title: Describe governmental cloud strategy
   description: Describe governmental cloud strategy
   ms.date: 04/29/2022

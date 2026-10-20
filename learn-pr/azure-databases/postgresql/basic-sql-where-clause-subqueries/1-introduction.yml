@@ -6,7 +6,7 @@ metadata:
   description: "This unit introduces the WHERE clause in PostgreSQL, teaching how to filter query results using conditions, logical operators, pattern matching, ranges, and subqueries."
   ms.date: 05/23/2025
   author: milenak
-  ms.author: mpopovic
+  ms.author: maghan
   ms.topic: unit
 ###########################################################################
 ###

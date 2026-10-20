@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.choose-power-bi-model-framework
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 46
+  last.refresh.date: null
+  modality: module
+  products:
+    - power-bi
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-analyst
+    - data-engineer
+  skills:
+    - "Data Analytics"
+    - "Data Management"
+    - "Database Design"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/choose-power-bi-model-framework/index.yml
+  uid: 7fe98c07-b55e-43cd-9bed-3bd7489e258a
   title: Choose a Power BI model framework
   description: "Learn about Power BI model frameworks including import, DirectQuery, and composite models. Understand the benefits and limitations of each to optimize your data models."
   ms.date: 06/12/2026

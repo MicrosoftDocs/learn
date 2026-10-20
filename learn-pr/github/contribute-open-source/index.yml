@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.github.contribute-opensource
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 27
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - devops-engineer
+    - student
+  skills:
+    - "Application Development"
+    - DevOps
+    - "Collaboration Tools"
+    - "Communications Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/contribute-open-source/index.yml
+  uid: dde51ce1-efa7-4c3a-be3a-c3c80e8cc02b
   title: Contribute to an open-source project on GitHub
   description: Learn how to contribute to an open-source project on GitHub.
   ms.date: 05/12/2022

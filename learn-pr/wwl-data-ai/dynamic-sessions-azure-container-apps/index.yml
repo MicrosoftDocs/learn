@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.dynamic-sessions-azure-container-apps
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 84
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - devops-engineer
+    - security-engineer
+  skills:
+    - "Application Development"
+    - "Cloud Infrastructure"
+    - Cybersecurity
+    - "Identity and Access Management (IAM)"
+    - "Python (Programming Language)"
+    - "AI Infrastructure"
+    - "Infrastructure Management"
+    - "Network Connectivity"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/dynamic-sessions-azure-container-apps/index.yml
+  uid: 353c4957-6f4f-4689-9ee4-b8436e5e885c
   title: Run AI-Generated Code Securely in Azure Container Apps Dynamic Sessions
   description: Learn how to use Azure Container Apps dynamic sessions to isolate AI-generated code, configure secure session pools, exchange files, and handle execution failures.
   ms.date: 09/23/2026

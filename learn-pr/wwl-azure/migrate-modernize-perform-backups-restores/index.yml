@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-perform-backups-restores
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 40
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - storage-admin
+    - database-administrator
+    - solution-architect
+  skills:
+    - Storage
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - Databases
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-modernize-perform-backups-restores/index.yml
+  uid: b517eba8-57d0-49b1-b111-72ce4c1a8a3c
   title: Modernize, perform backups and restores for SAP workloads on Azure
   description: 'This module explores backup and restore of Azure virtual machines and examines the steps and important considerations involved in backing up and restoring SAP workloads on Azure. This module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/09/2024

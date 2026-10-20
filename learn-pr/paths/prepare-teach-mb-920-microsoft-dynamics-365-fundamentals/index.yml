@@ -1,6 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.prepare-teach-mb-920-microsoft-dynamics-365-fundamentals
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - dynamics-365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - higher-ed-educator
+  skills:
+    - "Career Development"
+    - "Collaboration Tools"
+    - "Digital Accessibility"
+    - "Enterprise Resource Planning (ERP)"
+    - "Organizational Effectiveness"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/prepare-teach-mb-920-microsoft-dynamics-365-fundamentals/index.yml
+  uid: 63e5cae5-ea39-4f24-aaac-2649ab48da95
   title: 'Prepare to teach MB-920: Microsoft Dynamics 365 Fundamentals (ERP)'
   description: 'Prepare to teach MB-920: Microsoft Dynamics 365 Fundamentals (ERP)'
   ms.date: 08/08/2022

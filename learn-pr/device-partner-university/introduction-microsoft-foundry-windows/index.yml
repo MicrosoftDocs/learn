@@ -2,6 +2,27 @@
 uid: learn.dpu.introduction-microsoft-foundry-windows
 title: Introduction to Microsoft Foundry on Windows
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 32
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "AI Infrastructure"
+    - "Application Development"
+    - "Model Hosting & Inference"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-microsoft-foundry-windows/index.yml
+  uid: 4ef5eb10-f736-42de-bf67-3d073376a6dd
   title: Introduction To Microsoft Foundry On Windows
   description: Learn how Microsoft Foundry on Windows enables developers to build, run, and deploy AI-powered applications locally on Windows devices while supporting hybrid cloud scenarios.
   ms.date: 03/24/2026

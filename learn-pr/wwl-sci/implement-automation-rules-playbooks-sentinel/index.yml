@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-automation-rules-playbooks-sentinel
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 31
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-sentinel
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-operations-analyst
+    - security-engineer
+  skills:
+    - "Security Automation"
+    - "Process Automation"
+    - "Security Operations Management"
+    - "Cloud Administration"
+    - "Identity and Access Management (IAM)"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-automation-rules-playbooks-sentinel/index.yml
+  uid: f8b57912-0ae2-4b2e-b9c2-e62dec9599d2
   title: Implement Automation Rules and Playbooks in Microsoft Sentinel
   description: "Automate incident management in Microsoft Sentinel using automation rules and Logic Apps playbooks. Create automation rules to triage and route incidents, activate a prebuilt playbook from Content Hub, and author a custom Logic Apps playbook. The process implements an automated notification and response workflow."
   ms.date: 04/16/2026

@@ -2,6 +2,28 @@
 uid: learn.dpu.surface-support-service-provider
 title: Managing Surface support as a service provider or partner
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 12
+  last.refresh.date: null
+  modality: module
+  products:
+    - surface
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - support-engineer
+    - it-professional
+    - administrator
+  skills:
+    - "Device Management"
+    - "Identity and Access Management (IAM)"
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/surface-support-service-provider/index.yml
+  uid: bdb5f4be-4604-449d-8bec-857738e171a0
   title: Managing Surface Support As A Service Provider Or Partner
   description: 'In this module, you''ll learn how to manage Surface support as a service provider or partner. You''ll understand the different partner access models for Surface support and how to use a customer''s tenant or a partner tenant to manage Surface support. You''ll also learn how to manage multiple customer tenants safely and understand partner boundaries and escalation paths.'
   ms.date: 04/20/2026

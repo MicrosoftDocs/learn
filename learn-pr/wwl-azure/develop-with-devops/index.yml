@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-with-devops
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 53
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - devops-engineer
+  skills:
+    - DevOps
+    - Automation
+    - "Application Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/develop-with-devops/index.yml
+  uid: 5bba63ff-493d-481a-a2d9-34b41c8d763b
   title: "Develop with DevOps"
   description: "Streamline updates to your software development projects by applying version control with Git and GitHub. Your software lifecycle improves through the implementation of continuous integration, shift-left testing, and shift-left security."
   ms.date: 02/06/2024

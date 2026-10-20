@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-azure-compute-networking-services
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 33
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - developer
+    - solution-architect
+  skills:
+    - "Cloud Computing"
+    - Virtualization
+    - "Application Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-azure-compute-networking-services/index.yml
+  uid: 094cfedf-5371-44fc-b077-50d2676b75e7
   title: Describe Azure Compute Services
   description: "Introduction to Azure compute services (virtual machines, containers, Azure Functions), application hosting options, and AI/ML and IoT/Edge service categories."
   ms.date: 02/03/2026

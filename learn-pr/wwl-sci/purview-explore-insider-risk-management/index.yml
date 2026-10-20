@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-explore-insider-risk-management
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 28
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-purview
+    - m365
+    - microsoft-defender
+    - office-sp
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - risk-practitioner
+    - ip-admin
+    - privacy-manager
+    - administrator
+    - security-engineer
+  skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Security"
+    - "Security Analytics"
+    - Cybersecurity
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-explore-insider-risk-management/index.yml
+  uid: 763a855e-a010-4047-9338-debef93873f0
   title: Understand Microsoft Purview Insider Risk Management
   description: "Understand Microsoft Purview Insider Risk Management."
   ms.date: 1/3/2025

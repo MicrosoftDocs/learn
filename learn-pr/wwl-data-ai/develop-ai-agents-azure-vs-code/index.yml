@@ -1,6 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-ai-agents-azure-vs-code
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 95
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+    - solution-architect
+  skills:
+    - "Agentic AI"
+    - "Agent Development"
+    - "AI Solutions"
+    - "Prompt Engineering"
+    - "Application Development"
+    - "API Management"
+    - "AI Model Evaluation & Testing"
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+    - DevOps
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/develop-ai-agents-azure-vs-code/index.yml
+  uid: 67b87aaf-79e8-4824-a211-9651d0cc760e
   title: Develop AI agents with Microsoft Foundry and Visual Studio Code
   description: Learn how to build, test, and deploy AI agents using Microsoft Foundry Agent Service through both the Azure portal and the Foundry Toolkit for Visual Studio Code.
   author: ivorb

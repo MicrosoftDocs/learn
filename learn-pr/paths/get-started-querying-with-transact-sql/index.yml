@@ -1,6 +1,26 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-querying-with-transact-sql
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - developer
+  skills:
+    - SQL
+    - "Database Development"
+    - Databases
+    - "Data Analytics"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-querying-with-transact-sql/index.yml
+  uid: 65d4609e-638e-42c3-8ece-cc9f9fc63d96
   title: Query and modify data with Transact-SQL
   description: Learn how to use Transact-SQL (T-SQL) to interact with relational databases by querying and modifying data. This course covers essential operations such as inserting, updating, deleting, and merging data across tables. You'll also explore how to generate automatic values and apply changes efficiently using SQL Server or Azure SQL environments.
   ms.date: 08/10/2026

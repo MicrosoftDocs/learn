@@ -1,6 +1,56 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.architect-agentic-ai-business-solutions
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - microsoft-copilot-studio
+    - dynamics-365
+    - microsoft-365-copilot
+    - power-platform
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+  skills:
+    - "AI Strategy"
+    - "Agentic AI"
+    - "AI Solutions"
+    - "Solution Architecture"
+    - "Data Strategies"
+    - "Knowledge Grounding for AI"
+    - "AI Transformation"
+    - "AI Governance"
+    - "AI Business & Vision"
+    - "Business Insights"
+    - "Agent Development"
+    - "Application Architecture"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Prompt Engineering"
+    - "Responsible AI"
+    - "Low-Code Development"
+    - "Natural Language Processing (NLP)"
+    - "AI Infrastructure"
+    - "AI Risk Management"
+    - "Security Architecture Design"
+    - "Security Automation"
+    - "AI-Powered Workflow Automation"
+    - "Enterprise Resource Planning (ERP)"
+    - "Agent Operations"
+    - "AI Model Evaluation & Testing"
+    - "Data Analytics"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "AI Safety"
+    - "AI Compliance"
+    - "Data Management"
+    - "AI Security (Model-Level)"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/architect-agentic-ai-business-solutions/index.yml
+  uid: 8a537e08-fdaa-45fe-9ac9-cf92a61f9ac8
   title: "Architect AI Solutions For Business Productivity"
   description: "Learn how to design AI-powered business solutions using agents, generative AI, and Microsoft Copilot to enhance productivity and efficiency."
   ms.date: 02/20/2026

@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 54
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - it-professional
+    - systems-administrator
+    - developer
+    - solution-architect
+  skills:
+    - Virtualization
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-share-cloud-resources/index.yml
+  uid: 29212c4e-d059-4d7c-b126-33de3a808a64
   title: Share cloud resources
   description: Carnegie Mellon University's Cloud Developer course. Get an introduction to virtualization, one of the many technologies that power the cloud. Learn what virtualization is, its benefits, and how cloud resources are shared.
   ms.date: 03/09/2022

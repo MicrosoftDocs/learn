@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.manage-secrets-in-java-applications-zero-trust
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 34
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - systems-administrator
+    - security-engineer
+  skills:
+    - "Application Security"
+    - "Identity and Access Management (IAM)"
+    - "Application Development"
+    - "Cloud Administration"
+    - "Zero Trust Security"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/manage-secrets-java-applications-zero-trust/index.yml
+  uid: 2b1fad93-b22b-4f09-933a-d27fa74b46a4
   title: Manage secrets in Java applications - Zero Trust and Zero Secrets
   description: In this module, you learn about managing secrets in your Java applications on Azure. You'll explore best practices like Zero Trust and Zero Secrets, and see how to apply them to a hands-on Java project using Azure Key Vault.
   author: judubois

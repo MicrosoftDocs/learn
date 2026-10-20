@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-speech-agent-speech-mcp
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 52
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+  skills:
+    - "Agent Development"
+    - "Agentic AI"
+    - "Generative AI"
+    - "Application Development"
+    - "Python (Programming Language)"
+    - Storage
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/develop-speech-agent-speech-mcp/index.yml
+  uid: 1ad19b6e-3b9f-475f-8bf4-09ed29a68abf
   title: Develop a Speech Agent with the Azure Speech MCP Server
   description: Learn how to build an AI agent that uses the Azure Speech MCP server to perform speech-to-text and text-to-speech tasks.
   ms.date: 10/16/2026

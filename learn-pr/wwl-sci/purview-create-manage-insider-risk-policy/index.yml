@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-create-manage-insider-risk-policy
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 36
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-purview
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ip-admin
+  skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Threat Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-create-manage-insider-risk-policy/index.yml
+  uid: eab12089-c961-4d17-b423-5a19dd2fe6c1
   title: Create and manage Insider Risk Management policies
   description: "Create and manage Insider Risk Management policies."
   ms.date: 1/3/2025

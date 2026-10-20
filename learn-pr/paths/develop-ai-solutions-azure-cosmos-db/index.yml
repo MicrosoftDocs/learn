@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-ai-solutions-azure-cosmos-db
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Database Development"
+    - "Database Design"
+    - SQL
+    - "Python (Programming Language)"
+    - Databases
+    - "Vector Databases"
+    - "Semantic Search"
+    - "Application Development"
+    - "Knowledge Grounding for AI"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/develop-ai-solutions-azure-cosmos-db/index.yml
+  uid: aa584a08-d928-4cc0-bafc-5d2d15d31ee9
   title: Develop AI Solutions with Azure Cosmos DB for NoSQL
   description: Learn how to develop AI solutions using Azure Cosmos DB for NoSQL, including vector search and query optimization for RAG pipelines and semantic retrieval.
   ms.date: 02/08/2026

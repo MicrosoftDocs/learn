@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn-wwl.develop-azure-sql-database
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 72
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - github
+    - azure-devops
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - devops-engineer
+    - database-administrator
+  skills:
+    - "Database Development"
+    - DevOps
+    - Automation
+    - SQL
+    - "Application Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/develop-azure-sql-database/index.yml
+  uid: 043d8fe5-b7ab-4bd8-90b9-42b69421f754
   title: Develop for Azure SQL Database
   description: "Learn how to create and configure an Azure SQL Database. You'll use SQL Database Projects in VS Code, including installing the extension, importing, and modifying a schema. Additionally, you'll build and deploy database projects in GitHub Actions and Azure Pipelines, and automate and invoke the publishing of a database."
   ms.date: 08/11/2026

@@ -1,6 +1,47 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-fabric
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - fabric
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-analyst
+    - data-engineer
+  skills:
+    - "Data Analytics"
+    - "Data Engineering"
+    - "Data Management"
+    - "AI Fluency"
+    - Storage
+    - SQL
+    - "Data Warehousing"
+    - "Database Design"
+    - "Database Development"
+    - "Data Administration"
+    - "Data Security"
+    - "Data Visualization"
+    - "Solution Architecture"
+    - Automation
+    - Databases
+    - "Data Science"
+    - "Machine Learning"
+    - "AI Model Evaluation & Testing"
+    - "Model Hosting & Inference"
+    - "Python (Programming Language)"
+    - Virtualization
+    - "AI-Augmented Software Development"
+    - "Business Insights"
+    - "Agentic AI"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-fabric/index.yml
+  uid: e064c07e-ee41-45a4-8d36-edbd846510a5
   title: Get started with Microsoft Fabric
   description: Explore how to implement data analytics solutions on a single platform with Microsoft Fabric. Integrate, transform, and store data to train AI models and create insightful reports.
   ms.date: 05/01/2026

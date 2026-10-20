@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.schedule-tasks-using-sql-server-agent
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 49
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+  skills:
+    - "Data Administration"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/schedule-tasks-using-sql-server-agent/index.yml
+  uid: 372a6c03-9711-4398-b53b-da49a6a35c48
   title: Create and manage SQL Agent jobs
   description: Create and manage SQL Agent jobs
   ms.date: 08/10/2026

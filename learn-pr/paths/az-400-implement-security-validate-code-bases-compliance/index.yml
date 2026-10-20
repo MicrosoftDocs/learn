@@ -1,6 +1,36 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-implement-security-validate-code-basescompliance
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - azure-devops
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+    - security-engineer
+  skills:
+    - "Application Security"
+    - DevOps
+    - Cybersecurity
+    - "Security Architecture Design"
+    - Automation
+    - "Application Development"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Automation"
+    - "Security Analytics"
+    - "Identity and Access Management (IAM)"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-400-implement-security-validate-code-bases-compliance/index.yml
+  uid: 6d39ee95-9467-4f1d-81f0-5079d62a2afd
   title: "AZ-400: Implement security and validate code bases for compliance"
   description: "AZ-400: Implement security and validate code bases for compliance - Learn DevSecOps practices, secure pipeline implementation, open-source software security, software composition analysis, and comprehensive security monitoring with Microsoft Defender for Cloud, Azure Policy, and GitHub Advanced Security."
   ms.date: 10/22/2025

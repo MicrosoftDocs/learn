@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 40
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - security-engineer
+  skills:
+    - "AI Security (Model-Level)"
+    - "AI Model Evaluation & Testing"
+    - "Responsible AI"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/moderate-content-detect-harm-azure-ai-content-safety-studio/index.yml
+  uid: 99a662fd-4dee-478f-af58-5e8b4cb11fe7
   title: Implement generative AI guardrails in Azure AI Foundry
   description: Learn how to choose and configure generative AI guardrails in Azure AI Foundry.
   author: aprilgittens

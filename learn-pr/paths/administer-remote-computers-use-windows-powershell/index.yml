@@ -1,6 +1,28 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.administer-remote-computers-use-windows-powershell
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - "Infrastructure Management"
+    - Automation
+    - "IT Networking"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Network Connectivity"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/administer-remote-computers-use-windows-powershell/index.yml
+  uid: 68f629b7-7f3b-49c1-bde1-5dbd916e32bf
   title: Administer remote computers by using Windows PowerShell
   description: Administer remote computers by using Windows PowerShell
   ms.date: 05/12/2026

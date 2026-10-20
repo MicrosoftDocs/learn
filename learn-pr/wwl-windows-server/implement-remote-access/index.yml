@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-remote-access
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 59
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - network-engineer
+    - systems-administrator
+    - security-engineer
+  skills:
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/implement-remote-access/index.yml
+  uid: df97824a-ea58-47d7-9fee-5c4f9935d250
   title: Implement remote access
   description: "Implement remote access"
   ms.date: 01/23/2026

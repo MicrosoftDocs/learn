@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.purview-protect-ai
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - m365
+    - microsoft-purview
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ip-admin
+  skills:
+    - "Responsible AI"
+    - "AI Risk Management"
+    - "AI Compliance"
+    - "Data Security"
+    - "Agentic AI"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Analytics"
+    - "Data Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/purview-protect-ai/index.yml
+  uid: e0eeeff5-5287-4e0f-bb41-f12e50a39f27
   title: 'Secure AI Interactions and Environments with Microsoft Purview (SC-401)'
   description: 'AI is changing how people work and introduces new risks for data exposure. Explore how Microsoft Purview protects sensitive information in AI-enabled environments across Microsoft 365 Copilot, non-Microsoft AI apps, and developer AI scenarios. This learning path aligns with exam SC-401: Microsoft Information Security Administrator.'
   ms.date: 08/25/2025

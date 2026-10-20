@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 35
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - data-engineer
+    - developer
+  skills:
+    - Databases
+    - "Cloud Computing"
+    - "Data Administration"
+    - "Data Migration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/index.yml
+  uid: 280fafca-2a1e-4299-ae2d-fd693807887e
   title: Explore Relational Database Services in Azure
   description: "This content is a part of Explore relational database services in Azure."
   ms.date: 10/12/2026

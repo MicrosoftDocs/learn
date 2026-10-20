@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-azure-cosmos-db-sql-api
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 24
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - data-engineer
+    - database-administrator
+    - solution-architect
+  skills:
+    - Databases
+    - "Database Design"
+    - "Data Management"
+    - "Cloud Computing"
+    - "Vector Databases"
+    - "Solution Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/introduction-to-azure-cosmos-db-sql-api/index.yml
+  uid: 8f9410a2-168c-44f1-83e5-dcdf3cac1ce0
   title: Introduction to Azure Cosmos DB for NoSQL
   description: "Learn about the Azure Cosmos DB for NoSQL and determine if it is a good fit for your application."
   ms.date: 04/02/2025

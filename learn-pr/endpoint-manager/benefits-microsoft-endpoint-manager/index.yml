@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.benefits-microsoft-endpoint-manager
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 23
+  last.refresh.date: null
+  modality: module
+  products:
+    - intune
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - it-professional
+  skills:
+    - "Device Management"
+    - "Zero Trust Security"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/endpoint-manager/benefits-microsoft-endpoint-manager/index.yml
+  uid: 50161e0b-4998-4b0f-bffa-0b472e483ce8
   title: Benefits of Microsoft Intune
   description: In this module, you learn about the benefits of Microsoft Intune, including how it increases security and productivity, provides flexibility, and maximizes your investment. 
   ms.date: 11/08/2024

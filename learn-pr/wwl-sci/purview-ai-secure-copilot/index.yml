@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-ai-secure-copilot
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 54
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-purview
+    - security-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ip-admin
+  skills:
+    - "AI Compliance"
+    - "Data Security"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-ai-secure-copilot/index.yml
+  uid: 79bd03c2-37d3-479b-aaac-421c4e162a23
   title: Secure Microsoft 365 Copilot Interactions with Microsoft Purview
   description: AI tools like Microsoft 365 Copilot create new ways to interact with sensitive data, but they also introduce new risks. Learn how Microsoft Purview helps you apply security and compliance controls that protect data, manage AI activity, and support responsible use at scale.
   ms.date: 08/25/2025

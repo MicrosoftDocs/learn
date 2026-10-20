@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-desired-state-configuration-dsc
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 23
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - platform-engineer
+    - devops-engineer
+  skills:
+    - "Infrastructure Management"
+    - Automation
+    - "Cloud Administration"
+    - DevOps
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-desired-state-configuration-dsc/index.yml
+  uid: 97d43ae8-7675-474b-b63d-f4f1d85aefff
   title: Implement Desired State Configuration (DSC)
   description: "Learn to implement Desired State Configuration (DSC) with Azure Automation, including configuration drift management, DSC configurations, Linux automation, and hybrid management strategies."
   ms.date: 11/11/2025

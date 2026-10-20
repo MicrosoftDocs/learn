@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.devrel.troubleshoot-active-directory-replication
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 55
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - identity-access-admin
+  skills:
+    - "Infrastructure Management"
+    - "IT Networking"
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/troubleshoot-active-directory-replication/index.yml
+  uid: 1f4d9011-7798-4b75-802d-8a30bd905270
   title: Troubleshoot Active Directory Domain Services Replication
   description: Diagnose Active Directory Domain Services replication problems.
   ms.date: 07/20/2026

@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.restrict-azure-machine-learning-network-traffic
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 20
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-machine-learning
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - network-engineer
+    - systems-administrator
+  skills:
+    - "IT Networking"
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - "Data Security"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/restrict-azure-machine-learning-workspace-network/index.yml
+  uid: 9388ea6b-b624-4e53-beb4-f8798458cfa3
   ms.author: viniap
   author: Orin-Thomas
   ms.date: 07/25/2026

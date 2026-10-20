@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-windows-package-manager-tool
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 30
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - systems-administrator
+    - developer
+    - security-engineer
+  skills:
+    - "Device Management"
+    - Automation
+    - "Infrastructure Management"
+    - "Application Development"
+    - DevOps
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-windows-package-manager-tool/index.yml
+  uid: 1da6ed01-29cf-4103-ba8d-10ad10ddd8fb
   title: Explore the Windows Package Manager tool
   description: "Streamline the installation and maintenance of software on your computer by using Windows Package Manager. Explain the front-end components and commands, the Windows Package Manager repository, and how to contribute to the repository."
   ms.date: 01/23/2026

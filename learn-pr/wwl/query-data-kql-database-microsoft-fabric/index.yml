@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.query-data-kql-database-microsoft-fabric
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 60
+  last.refresh.date: null
+  modality: module
+  products:
+    - fabric
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - data-analyst
+  skills:
+    - "Data Engineering"
+    - "Data Analytics"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/query-data-kql-database-microsoft-fabric/index.yml
+  uid: c9cc9523-a5da-427f-a831-624ac537dd56
   title: Work with real-time data in an Eventhouse in Microsoft Fabric
   description: "Microsoft Fabric provides a scalable and flexible store for real-time data."
   ms.date: 09/10/2025

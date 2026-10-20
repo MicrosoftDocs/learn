@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-ai-agent-with-semantic-kernel
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 55
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+  skills:
+    - "Agent Development"
+    - "Application Development"
+    - "AI Solutions"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/develop-ai-agent-with-semantic-kernel/index.yml
+  uid: 267c42d3-9e3a-43d6-bd07-6338ec898134
   title: Develop an AI agent with Microsoft Agent Framework
   description: Learn how to start building agents with Microsoft Agent Framework
   author: buzahid

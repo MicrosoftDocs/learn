@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.introduction-to-polyglot-notebooks
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 45
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - student
+  skills:
+    - "Application Development"
+    - "Collaboration Tools"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/polyglot-notebooks/index.yml
+  uid: 627552fe-b3f0-4745-bf8c-62373c971f58
   title: Introduction to Polyglot Notebooks
   description: You can use Polyglot Notebooks to create and run code in multiple languages in a single document. This module introduces you to Polyglot Notebooks and shows you how to create and run code in multiple languages.
   author: japhletnwamu

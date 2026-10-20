@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.tune-hyperparameters-azure-databricks
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 45
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-databricks
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-scientist
+    - ai-engineer
+    - data-engineer
+  skills:
+    - "Machine Learning"
+    - "Model Fine-Tuning"
+    - "Data Science"
+    - "Python (Programming Language)"
+    - "AI Model Evaluation & Testing"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/tune-hyperparameters-azure-databricks/index.yml
+  uid: 173cf523-a4d9-466b-9f1d-7eb65c3681db
   title: Tune hyperparameters with Azure Databricks
   description: "Tune hyperparameters with Azure Databricks"
   ms.date: 03/27/2023

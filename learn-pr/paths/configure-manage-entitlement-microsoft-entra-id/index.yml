@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.configure-manage-entitlement-microsoft-entra-id
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - identity-access-admin
+    - security-engineer
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Zero Trust Security"
+    - "Security Automation"
+    - Automation
+    - Cybersecurity
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/configure-manage-entitlement-microsoft-entra-id/index.yml
+  uid: eab56f23-52de-4c10-9956-3d6f5185cdcf
   title: Configure and govern entitlement with Microsoft Entra ID SC-5008
   description: Use Microsoft Entra to manage access by using entitlements, access reviews, privileged access tools, and monitor access events. (SC-5008)
   ms.date: 01/23/2026

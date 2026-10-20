@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-disaster-recovery-windows-server-premises
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - systems-administrator
+  skills:
+    - Virtualization
+    - "Infrastructure Management"
+    - "Cloud Administration"
+    - Storage
+    - Cybersecurity
+    - "Data Administration"
+    - "Data Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-disaster-recovery-windows-server-premises/index.yml
+  uid: 9374cf15-a26e-44e6-aad7-4f5b03aac9a7
   title: Implement disaster recovery in Windows Server on-premises and hybrid environments
   description: Implement disaster recovery in Windows Server on-premises and hybrid environments
   ms.date: 01/23/2026

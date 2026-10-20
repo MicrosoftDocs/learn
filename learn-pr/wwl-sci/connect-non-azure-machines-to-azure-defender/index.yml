@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-non-azure-machines-to-azure-defender
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 44
+  last.refresh.date: null
+  modality: module
+  products:
+    - defender-for-cloud
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+  skills:
+    - "Security Architecture Design"
+    - "Network Connectivity"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/connect-non-azure-machines-to-azure-defender/index.yml
+  uid: 1c6ecc34-c6cc-49a6-b988-b1a76bb6fdd1
   title: Connect non-Azure resources to Microsoft Defender for Cloud
   description: "Connect non-Azure resources to Microsoft Defender for Cloud"
   ms.date: 05/20/2025

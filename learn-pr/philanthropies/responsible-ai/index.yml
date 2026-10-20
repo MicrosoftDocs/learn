@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.philanthropies.explore-responsible-ai
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 34
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+    - risk-practitioner
+  skills:
+    - "Responsible AI"
+    - "AI Safety"
+    - "AI Risk Management"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/responsible-ai/index.yml
+  uid: 9a047171-1bd5-418f-b187-5d239bae7aca
   author: yoosunee
   ms.author: anruss
   ms.date: 01/14/2025

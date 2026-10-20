@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.cela-accessibility.develop-keyboard-accessible-products
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 62
+  last.refresh.date: null
+  modality: module
+  products:
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Digital Accessibility"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/develop-keyboard-accessible-products/index.yml
+  uid: 6af9c7dc-907c-407b-94f1-e09511f4ea93
   author: erzelman
   ms.author: erzelman
   ms.date: 02/04/2025

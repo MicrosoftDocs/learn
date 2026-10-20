@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.oxford.explore-ai-specification
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 21
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - solution-architect
+    - business-analyst
+  skills:
+    - "Autonomous AI"
+    - "AI Solutions"
+    - "Solution Architecture"
+    - "Machine Learning"
+    - "AI Model Evaluation & Testing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/explore-ai-specification/index.yml
+  uid: 224a451f-708c-494b-b799-92681a88bf2e
   title: Explore AI Specification document
   description: We explain how to fill out AI Specification document for Autonomous AI use case.
   author: softchris

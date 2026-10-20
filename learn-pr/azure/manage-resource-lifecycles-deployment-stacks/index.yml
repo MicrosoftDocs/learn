@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure.manage-resource-lifecycles-deployment-stacks
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 50
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - systems-administrator
+  skills:
+    - "Infrastructure Management"
+    - DevOps
+    - "Cloud Administration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/manage-resource-lifecycles-deployment-stacks/index.yml
+  uid: 17906a53-55a9-41b0-9419-ab9e8c05b064
   title: Manage resource lifecycles with deployment stacks
   description: Understand how deployment stacks manage resources on your behalf, and how resources change as stacks are deployed, updated, and removed.
   ms.date: 08/01/2023

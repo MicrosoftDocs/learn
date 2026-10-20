@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-polymorphic-behavior
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 73
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-polymorphic-behavior/index.yml
+  uid: 3d54a945-faba-4ed6-84c5-d91e0cd515d9
   title: Implement polymorphic behavior
   description: "Learn the principles of polymorphism, how to implement polymorphic behavior by using either class inheritance or interface implementation, and how to choose between inheritance-based and interface-based approaches to polymorphism."
   ms.date: 03/10/2025

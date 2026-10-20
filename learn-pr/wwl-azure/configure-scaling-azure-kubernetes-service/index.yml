@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-scaling-azure-kubernetes-service
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 48
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - platform-engineer
+    - systems-administrator
+    - devops-engineer
+  skills:
+    - "Cloud Infrastructure"
+    - DevOps
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-scaling-azure-kubernetes-service/index.yml
+  uid: 1011c104-5670-4179-bd43-23f3e87684f7
   title: Configure Scaling in Azure Kubernetes Service
   description: This module covers how to scale applications in Azure Kubernetes Service (AKS), including manually scaling pods or nodes and integrating with Azure Container Instances (ACI).
   ms.date: 04/20/2026

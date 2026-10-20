@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-with-text-analysis-in-azure
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 45
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+    - azure-openai
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+    - data-scientist
+    - solution-architect
+  skills:
+    - "Natural Language Processing (NLP)"
+    - "Python (Programming Language)"
+    - "Application Development"
+    - "Agent Development"
+    - "Generative AI"
+    - "Application Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-text-analysis-azure/index.yml
+  uid: 7a80123c-9005-410a-bf59-a872e04764f4
   title: Get started with text analysis in Azure
   description: "Get started with text analysis in Azure"
   ms.date: 04/10/2026

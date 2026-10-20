@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.foundations-platform-engineering
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 57
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+  skills:
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/foundations-platform-engineering/index.yml
+  uid: 90eeaaeb-4e48-480d-a241-df34c5e6acb8
   title: Foundations of Platform Engineering
   description: "This module introduces the core concepts and importance of platform engineering. It explores how platform engineering enhances developer productivity, accelerates time to value, and supports digital transformation. Learners will understand the strategic value of platform engineering as the foundation for both technical success and alignment with broader business goals."
   ms.date: 01/14/2025

@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.microsoft-ai-in-foundry
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 57
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+    - data-scientist
+    - solution-architect
+  skills:
+    - "Generative AI"
+    - "Multimodal AI"
+    - "Computer Vision"
+    - "Natural Language Processing (NLP)"
+    - "AI Model Evaluation & Testing"
+    - "Model Hosting & Inference"
+    - "Responsible AI"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/microsoft-ai-in-foundry/index.yml
+  uid: e01e07d2-82f7-4ee5-a0d8-640c90b968cb
   title: Get started with Microsoft AI models in Foundry
   description: Discover, evaluate, and use Microsoft AI models in Microsoft Foundry.
   ms.date: 09/18/2026

@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.ai-knowledge-mining
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 68
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+    - data-engineer
+  skills:
+    - "Semantic Search"
+    - "Information Extraction"
+    - "AI Solutions"
+    - "Data Engineering"
+    - "Data Analytics"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/ai-knowldge-mining/index.yml
+  uid: d6c8cc61-0950-4108-9b78-ddf30119f37f
   title: Create a knowledge mining solution with Azure AI Search
   description: Unlock the hidden insights in your data with Azure AI Search.
   author: ivorb

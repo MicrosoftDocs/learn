@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-implement-administer-conditional-access
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 65
+  last.refresh.date: null
+  modality: module
+  products:
+    - entra
+    - microsoft-defender
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - identity-access-admin
+    - administrator
+    - security-engineer
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "Security Architecture Design"
+    - "Data Security"
+    - "Agentic AI"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/plan-implement-administer-conditional-access/index.yml
+  uid: ea4dbf6f-55f1-4723-9c63-124ee831462d
   adobe-target: true
   prefetch-feature-rollout: true
   title: Plan, Implement, and Administer Conditional Access

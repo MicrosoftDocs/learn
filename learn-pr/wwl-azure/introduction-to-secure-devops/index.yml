@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-secure-devops
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 66
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-devops
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - devops-engineer
+    - developer
+  skills:
+    - "Application Security"
+    - DevOps
+    - Cybersecurity
+    - "Security Architecture Design"
+    - Automation
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/introduction-to-secure-devops/index.yml
+  uid: a9ce2f9e-dd1e-42a0-b2d4-d8836c9d0442
   title: Introduction to Secure DevOps
   description: "Learn DevSecOps principles to integrate security throughout your development lifecycle. Understand common vulnerabilities like SQL injection, implement continuous security validation in pipelines, conduct threat modeling, and use tools like GitHub CodeQL for automated security analysis."
   ms.date: 10/21/2025

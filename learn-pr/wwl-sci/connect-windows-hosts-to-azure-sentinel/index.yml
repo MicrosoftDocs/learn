@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-windows-hosts-to-azure-sentinel
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 26
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-sentinel
+    - windows
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-operations-analyst
+    - security-engineer
+    - systems-administrator
+  skills:
+    - "Security Operations Management"
+    - "Security Analytics"
+    - "Cloud Administration"
+    - "Device Management"
+    - Cybersecurity
+    - "Infrastructure Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/connect-windows-hosts-to-azure-sentinel/index.yml
+  uid: d4182d5b-572a-4397-9fff-3eaf98e6d014
   title: Connect Windows hosts to Microsoft Sentinel
   description: "Connect Windows hosts to Microsoft Sentinel"
   ms.date: 04/11/2025

@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-multi-agent-systems-azure-zero-trust
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 71
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - microsoft-sentinel
+    - defender-for-cloud
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - ai-engineer
+    - solution-architect
+  skills:
+    - "Zero Trust Security"
+    - "Identity and Access Management (IAM)"
+    - "Security Architecture Design"
+    - "Data Security"
+    - "Network Connectivity"
+    - "Multi-Agent Orchestration"
+    - "Security Operations Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/aaai-secure-multi-agent-systems-azure-zero-trust/index.yml
+  uid: 6b19aa46-d4d3-4b0d-8c5e-f6ed4dacfec6
   title: Secure Multi-Agent Systems with Azure Zero-Trust Architecture
   description: "Secure production multi-agent systems using Azure zero-trust architecture principles. Apply per-agent managed identities with least-privilege access and design authentication flows covering managed identity, on-behalf-of (OBO), user-delegated, and key-based patterns. Manage secrets lifecycle with Azure Key Vault, including rotation and customer-managed keys (CMK) encryption, and design network controls to prevent lateral movement. Implement multitenant data isolation and configure compliance controls for enterprise regulatory requirements."
   ms.date: 8/3/2026

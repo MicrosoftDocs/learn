@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.how-ai-can-help-work-school
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 17
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+    - student
+  skills:
+    - "AI Fluency"
+    - "AI Productivity"
+    - "Prompt Engineering"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/how-ai-can-help-work-school/index.yml
+  uid: e54ba47d-7163-4b69-9e26-fe0e5c9f4020
   title: "How AI Can Help With Work and School"
   description: "Discover how AI tools like Microsoft Copilot can help you organize tasks, create checklists, and write messages for work, school, and daily life."
   ms.date: 09/17/2026

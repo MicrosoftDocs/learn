@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-code-improvements-using-github-copilot-tools
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 80
+  last.refresh.date: null
+  modality: module
+  products:
+    - github-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "AI-Augmented Software Development"
+    - "AI Prompting"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/index.yml
+  uid: b3b542e9-2a51-4cea-a29f-d6bb96635600
   title: Implement Code Improvements using GitHub Copilot Tools
   description: "This module explores using GitHub Copilot Chat to develop improvements for an existing codebase. Exercises provide practical experience implementing GitHub Copilot suggestions that improve code quality, reliability, performance, and security."
   ms.date: 04/16/2026

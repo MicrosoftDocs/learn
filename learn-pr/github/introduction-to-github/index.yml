@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.github.introduction-to-github
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 98
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - devops-engineer
+  skills:
+    - DevOps
+    - "Collaboration Tools"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/introduction-to-github/index.yml
+  uid: 3362933f-85f3-45fc-904f-e6300658136c
   title: "Introduction to GitHub"
   description: Learn to use key GitHub features, including issues, notifications, branches, commits, and pull requests.
   ms.date: 09/12/2024

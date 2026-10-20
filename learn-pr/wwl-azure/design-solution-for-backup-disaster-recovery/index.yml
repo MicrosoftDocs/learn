@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.design-solution-for-backup-disaster-recovery
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 47
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - systems-administrator
+    - storage-admin
+  skills:
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - Storage
+    - "Data Management"
+    - "Security Architecture Design"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-solution-for-backup-disaster-recovery/index.yml
+  uid: 0094fb3a-7df7-45e6-9fdc-ff63d8b3faca
   adobe-target: true
   prefetch-feature-rollout: true
   title: Design a solution for backup and disaster recovery

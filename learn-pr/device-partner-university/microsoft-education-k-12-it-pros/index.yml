@@ -2,6 +2,28 @@
 uid: learn.dpu.k-12-it-pros
 title: Microsoft Education for K-12 IT professionals
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 9
+  last.refresh.date: null
+  modality: module
+  products:
+    - m365
+    - microsoft-defender
+    - intune
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - it-professional
+  skills:
+    - "Device Management"
+    - Cybersecurity
+    - "Cloud Administration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/microsoft-education-k-12-it-pros/index.yml
+  uid: c804682b-c7a5-46d7-ac6d-fc32e6f2ec9e
   title: Microsoft Education For K-12 IT Professionals
   description: In this module, learners will examine how Microsoft Education solutions support IT professionals in K–12 institutions by improving operational efficiency, strengthening security, and enabling more strategic use of time and resources.
   ms.date: 08/21/2025

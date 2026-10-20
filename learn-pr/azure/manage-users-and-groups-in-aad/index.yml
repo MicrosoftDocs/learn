@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure-security.manage-users-and-groups-in-aad
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 50
+  last.refresh.date: null
+  modality: module
+  products:
+    - entra
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - security-engineer
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/manage-users-and-groups-in-aad/index.yml
+  uid: 0986b5f6-042b-4ac3-b55b-a0ab40ad4ae7
   title: Manage users and groups in Microsoft Entra ID
   description: Manage users and groups in Microsoft Entra ID
   ms.date: 11/04/2024

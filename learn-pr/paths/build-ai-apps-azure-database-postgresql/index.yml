@@ -1,6 +1,46 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.build-ai-apps-azure-database-postgresql
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - azure-openai
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - data-engineer
+    - developer
+  skills:
+    - "Generative AI"
+    - "Embedding Models"
+    - "Vector Databases"
+    - "Database Development"
+    - SQL
+    - "Natural Language Processing (NLP)"
+    - "Machine Learning"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Semantic Search"
+    - Databases
+    - "Model Hosting & Inference"
+    - "Data Engineering"
+    - "Data Security"
+    - "Application Development"
+    - "Knowledge Grounding for AI"
+    - "Agent Development"
+    - "Agentic AI"
+    - "Multi-Agent Orchestration"
+    - "AI Infrastructure"
+    - "Application Architecture"
+    - "AI-Augmented Software Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/build-ai-apps-azure-database-postgresql/index.yml
+  uid: b8638232-1a20-4321-b73a-66ccfb6d17ae
   title: Build AI Apps with Azure Database for PostgreSQL AI-3019
   description: Build AI Apps with Azure Database for PostgreSQL. (AI-3019)
   ms.date: 11/24/2024

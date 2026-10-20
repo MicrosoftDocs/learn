@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-app-services
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 44
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - administrator
+  skills:
+    - "Application Development"
+    - "Cloud Administration"
+    - "Application Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-azure-app-services/index.yml
+  uid: 6da3ca57-6eb7-48ed-9a8d-ae51e9dc684f
   adobe-target: true
   prefetch-feature-rollout: true
   title: Configure Azure App Service

@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.understand-data-concepts
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+    - data-analyst
+  skills:
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Business Insights"
+    - "Data Management"
+    - "Cloud Computing"
+    - "Career Development"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/understand-data-concepts/index.yml
+  uid: 113020a7-c396-4dc0-aeaa-2f8a6a13b4a1
   title: Understand data concepts
   description: Data is key to most business operations and services and an understanding of data is essential in many roles. This learning path covers data concepts, data analytics, and data roles, services, and products.
   ms.date: 04/30/2026

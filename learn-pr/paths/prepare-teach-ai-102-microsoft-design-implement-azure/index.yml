@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.prepare-teach-ai-102-microsoft-design-implement-azure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - higher-ed-educator
+  skills:
+    - "Career Development"
+    - "Collaboration Tools"
+    - "Digital Accessibility"
+    - "AI Solutions"
+    - "Responsible AI"
+    - "Communications Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/prepare-teach-ai-102-microsoft-design-implement-azure/index.yml
+  uid: f523b218-f974-4337-8e5e-5969a96a447a
   title: AI-102
   description: Prepare to teach AI-102 Designing and Implementing a Microsoft Azure AI Solution in the classroom
   ms.date: 08/26/2022

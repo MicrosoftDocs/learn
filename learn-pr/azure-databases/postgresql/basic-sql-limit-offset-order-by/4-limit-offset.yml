@@ -6,7 +6,7 @@ metadata:
   description: "This unit covers how to use LIMIT and OFFSET in PostgreSQL to control and paginate query results. Learn to retrieve specific portions of data efficiently, ideal for large datasets and web applications."
   ms.date: 05/23/2025
   author: milenak
-  ms.author: mpopovic
+  ms.author: maghan
   ms.topic: unit
 ###########################################################################
 ###

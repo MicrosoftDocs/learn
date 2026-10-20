@@ -2,6 +2,27 @@
 # Oxford University Module - Oxford responsible for ongoing maintenance
 uid: learn.oxford.void-detection-edge-devices-lva
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 53
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+  skills:
+    - "Computer Vision"
+    - "Machine Learning"
+    - "Model Hosting & Inference"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/void-detection-edge-devices-live-video-analytics/index.yml
+  uid: 274e5c25-66d3-4b58-a66b-cbe725f14c08
   title: "Void detection on Edge devices with Live Video Analytics using own images and video"
   description: "This module helps learner to deploy void detection solution using Live Video Analytics and Custom Vision"
   ms.date: 07/20/2024

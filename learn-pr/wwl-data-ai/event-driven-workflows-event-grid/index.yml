@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.event-driven-workflows-event-grid
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 84
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - solution-architect
+    - ai-engineer
+  skills:
+    - "Application Architecture"
+    - "Application Development"
+    - "AI Solutions"
+    - "Cloud Infrastructure"
+    - "API Management"
+    - "Identity and Access Management (IAM)"
+    - "Python (Programming Language)"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/event-driven-workflows-event-grid/index.yml
+  uid: 43d80ae3-a2e4-4eee-b16f-98087ac3e8c7
   title: Develop Event-Driven AI Workflows with Azure Event Grid
   description: Learn how to build event-driven AI workflows using Azure Event Grid to route events from sources to handlers with low latency, configure delivery policies, and publish custom events.
   ms.date: 06/15/2026

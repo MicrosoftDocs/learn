@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-format-strings
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 58
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-format-strings/index.yml
+  uid: 3d477b16-0135-44b1-b26d-b1566d1468b7
   title: Format alphanumeric data for presentation in C#
   description: "Explore basic methods in C# to format alphanumeric data."
   ms.date: 12/15/2025

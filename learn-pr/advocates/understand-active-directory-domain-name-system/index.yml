@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.devrel.understand-active-directory-domain-name-system
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 150
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - network-engineer
+  skills:
+    - "IT Networking"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/understand-active-directory-domain-name-system/index.yml
+  uid: d3daf2e7-3dde-4ff1-804c-f25b7dccd184
   title: Understand How Active Directory Domain Services Uses DNS
   description: Trace service discovery, interpret directory locator records, evaluate directory-integrated zones, and diagnose Domain Name System failures that affect Active Directory Domain Services.
   ms.date: 08/03/2026

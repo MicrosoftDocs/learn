@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.azure-mission-critical
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 130
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - site-reliability-engineer
+  skills:
+    - "Solution Architecture"
+    - "Application Architecture"
+    - "Cloud Infrastructure"
+    - "Data Visualization"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-mission-critical/index.yml
+  uid: fbabb17f-0cb8-416b-a70a-6a501e24d818
   title: Challenge Project - Design a mission-critical web application
   description: Learn to apply key principles in your workload to achieve a highly reliable design with health monitoring checks.
   ms.date: 08/14/2024

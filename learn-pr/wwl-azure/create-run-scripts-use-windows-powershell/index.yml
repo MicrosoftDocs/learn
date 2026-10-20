@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.create-run-scripts-use-windows-powershell
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 48
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - security-engineer
+    - devops-engineer
+  skills:
+    - Automation
+    - "Security Automation"
+    - "Infrastructure Management"
+    - Cybersecurity
+    - "Application Security"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/create-run-scripts-use-windows-powershell/index.yml
+  uid: ad9d6721-d4a9-48f3-8eb7-38d619352d20
   title: Create and run scripts by using Windows PowerShell
   description: "This module explains how to create and run scripts."
   ms.date: 05/12/2026

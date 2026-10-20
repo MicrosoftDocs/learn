@@ -1,6 +1,28 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.create-machine-learn-models
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-scientist
+  skills:
+    - "Computer Vision"
+    - "Data Science"
+    - "Machine Learning"
+    - "Python (Programming Language)"
+    - "Data Analytics"
+    - "Data Visualization"
+    - "AI Model Evaluation & Testing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/create-machine-learn-models/index.yml
+  uid: 838a6a69-62f4-4c35-b6e0-c40765280659
   title: Create machine learning models
   description: Machine learning is the foundation for predictive modeling and artificial intelligence. Learn some of the core principles of machine learning and how to use common tools and frameworks to train, evaluate, and use machine learning models.
   ms.date: 02/26/2026

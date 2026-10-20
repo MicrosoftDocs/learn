@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-defender-cloud-security-controls
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 21
+  last.refresh.date: null
+  modality: module
+  products:
+    - defender-for-cloud
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - ip-admin
+  skills:
+    - Cybersecurity
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Architecture Design"
+    - "Cloud Administration"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-defender-cloud-security-controls/index.yml
+  uid: fde17082-a376-4e6b-99a1-18f5a43d3201
   title: Configure Security Controls and Remediate Recommendations in Defender for Cloud
   description: "Configure Defender for Cloud security standards at management group scope and systematically deploy security controls to remediate recommendations at scale using Fix, governance rules, Policy remediation tasks, and exemptions."
   ms.date: 05/11/2026

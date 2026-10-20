@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.design-solutions-identity-access-management
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 111
+  last.refresh.date: null
+  modality: module
+  products:
+    - entra
+    - azure
+    - microsoft-defender
+    - microsoft-sentinel
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - identity-access-admin
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Security Architecture Design"
+    - "Zero Trust Security"
+    - "Data Security"
+    - "Agent Operations"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/design-solutions-identity-access-management/index.yml
+  uid: 283e3bc0-6dfe-4258-887d-c9cff0dc8094
   title: Design solutions for identity and access management
   description: "Learn how to design identity and access management solutions for cloud, hybrid, and multicloud environments, including external identities, Conditional Access, and secrets management."
   ms.date: 05/28/2026

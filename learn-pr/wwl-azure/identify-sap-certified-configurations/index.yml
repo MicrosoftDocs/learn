@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.identify-sap-certified-configurations
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 31
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+  skills:
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/identify-sap-certified-configurations/index.yml
+  uid: c37a9230-c17c-44f8-ba7b-df4786975bd5
   title: Identify SAP-certified configurations
   description: "Help identify prerequisites, deployment options, and SAP-certified configurations available to you when deploying SAP products in Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 09/19/2024

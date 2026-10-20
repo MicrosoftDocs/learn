@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-vector-storage-azure-managed-redis
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 80
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - ai-engineer
+  skills:
+    - "Vector Databases"
+    - "Semantic Search"
+    - "Embedding Models"
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-vector-storage-azure-managed-redis/index.yml
+  uid: 5a1396fb-0992-43e8-b3b9-ba3dec603d47
   title: Implement Vector Storage in Azure Managed Redis
   description: Learn how to implement vector storage and similarity search in Azure Managed Redis.
   ms.date: 06/12/2026

@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.tensorflow.intro-natural-language-processing
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 63
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - data-scientist
+  skills:
+    - "Natural Language Processing (NLP)"
+    - "Machine Learning"
+    - "Embedding Models"
+    - "Generative AI"
+    - "Python (Programming Language)"
+    - "AI Model Evaluation & Testing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/tensorflow/intro-natural-language-processing-tensorflow/index.yml
+  uid: 90dd19b1-1ad8-4090-ae3e-87aefd22636c
   title: Introduction to natural language processing with TensorFlow
   description: In this module, we explore different neural network architectures for processing natural language texts. 
   ms.date: 03/29/2026

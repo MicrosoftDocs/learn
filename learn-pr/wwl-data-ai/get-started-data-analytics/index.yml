@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-data-analytics
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 36
+  last.refresh.date: null
+  modality: module
+  products:
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-analyst
+    - business-user
+  skills:
+    - "Data Analytics"
+    - "Data Visualization"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-data-analytics/index.yml
+  uid: a99212e4-2a97-4980-a1b6-de44c5d0da83
   title: Get started with data analytics
   description: "This content is a part of Get started with data analytics."
   ms.date: 10/12/2026

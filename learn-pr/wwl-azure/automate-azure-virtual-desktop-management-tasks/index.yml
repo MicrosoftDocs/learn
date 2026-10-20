@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.automate-azure-virtual-desktop-management-tasks
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 38
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+  skills:
+    - Automation
+    - "Cloud Administration"
+    - Virtualization
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/automate-azure-virtual-desktop-management-tasks/index.yml
+  uid: e08b04b0-75f1-4e55-a560-4e94994612c5
   title: Automate Azure Virtual Desktop management tasks
   description: Automate Azure Virtual Desktop management tasks
   ms.date: 06/21/2023

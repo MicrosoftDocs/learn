@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.enforce-power-bi-model-security
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 81
+  last.refresh.date: null
+  modality: module
+  products:
+    - power-bi
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-analyst
+  skills:
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Data Analytics"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/enforce-power-bi-model-security/index.yml
+  uid: 970ba768-a60f-4f85-bed7-cdb4987ec071
   title: Enforce Power BI model security
   description: Restrict access to Power BI model data by implementing row-level security (RLS) and object-level security (OLS) to protect sensitive information.
   ms.date: 06/12/2026

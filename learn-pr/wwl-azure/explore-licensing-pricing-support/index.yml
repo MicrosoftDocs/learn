@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-licensing-pricing-support
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 12
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - support-engineer
+  skills:
+    - "Enterprise Resource Planning (ERP)"
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-licensing-pricing-support/index.yml
+  uid: a8bb7a5e-ee9f-4500-b2d5-53475c0bcaf7
   title: Explore licensing, pricing, and support for SAP on Azure virtual machines
   description: "This module explores Azure and SAP licensing requirements and licensing costs, and walks through the support request process for Azure virtual machines. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 08/01/2024

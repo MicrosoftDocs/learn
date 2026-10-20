@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-data-security-investigations-understand
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 30
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-purview
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - risk-practitioner
+    - security-operations-analyst
+  skills:
+    - "Data Security"
+    - "Security Analytics"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - Cybersecurity
+    - "Threat Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-data-security-investigations-understand/index.yml
+  uid: 4c1f90e1-45d5-47be-8b42-81563ce15174
   title: Understand Data Security Investigations
   description: Understand Data Security Investigations.
   ms.date: 01/15/2026

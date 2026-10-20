@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-disaster-recovery-for-sap-workloads-azure
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 74
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - systems-administrator
+  skills:
+    - "Cloud Infrastructure"
+    - Virtualization
+    - "Solution Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-disaster-recovery-for-sap-workloads-azure/index.yml
+  uid: a86b2e47-91bf-4f38-a5fc-973268f14d1d
   title: Implement disaster recovery for SAP workloads in Azure
   description: "This module explores disaster recovery support of Azure for SAP workloads, including deployments within single and multiple Azure regions, multi-tier SAP NetWeaver app deployment in Azure, and Azure services, such as Active Directory and DNS. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 12/23/2024

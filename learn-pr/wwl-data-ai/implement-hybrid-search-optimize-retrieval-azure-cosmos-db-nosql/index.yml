@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 98
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-openai
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - ai-engineer
+    - data-engineer
+    - solution-architect
+  skills:
+    - "Semantic Search"
+    - "Vector Databases"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Embedding Models"
+    - Databases
+    - "Database Development"
+    - "AI Model Evaluation & Testing"
+    - "Data Engineering"
+    - "AI Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql/index.yml
+  uid: 43ad88c6-bdd8-4845-9b68-ff3722d02791
   title: Implement Hybrid Search and Optimize AI Retrieval in Azure Cosmos DB for NoSQL
   description: "Choose a retrieval strategy, fuse keyword and vector rankings with the reciprocal rank fusion (RRF) function, weight and optimize hybrid queries for relevance and cost, and isolate search workloads with global secondary indexes."
   ms.date: 10/03/2026

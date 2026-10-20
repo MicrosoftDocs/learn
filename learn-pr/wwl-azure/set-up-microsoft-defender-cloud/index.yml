@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.set-up-microsoft-defender-cloud
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 248
+  last.refresh.date: null
+  modality: module
+  products:
+    - defender-for-cloud
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - security-operations-analyst
+    - systems-administrator
+  skills:
+    - Cybersecurity
+    - "Security Analytics"
+    - "Cloud Infrastructure"
+    - "Network Connectivity"
+    - "Identity and Access Management (IAM)"
+    - Automation
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/set-up-microsoft-defender-cloud/index.yml
+  uid: 93195f5d-1ab8-44d2-a4c4-e63e51bff611
   title: Set up Microsoft Defender for Cloud
   description: "Discover how to leverage Microsoft Defender for Cloud through the Azure portal to ensure the security of your Azure services and workloads, offering continuous threat detection and prevention."
   ms.date: 12/12/2025

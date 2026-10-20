@@ -1,6 +1,40 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.design-develop-azure-cosmos-db-database-solutions
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - Databases
+    - "Database Design"
+    - "Cloud Computing"
+    - "Vector Databases"
+    - "Data Management"
+    - "Solution Architecture"
+    - "AI Infrastructure"
+    - "Data Administration"
+    - "Application Development"
+    - "Cloud Administration"
+    - "Database Development"
+    - SQL
+    - "Python (Programming Language)"
+    - "Application Security"
+    - "Cloud Infrastructure"
+    - "Data Engineering"
+    - Automation
+    - "AI-Augmented Software Development"
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/design-develop-azure-cosmos-db-database-solutions/index.yml
+  uid: 19866464-08bf-43f2-93ed-a376c372d930
   title: Design and Develop Azure Cosmos DB Database Solutions
   description: "Build applications on Azure Cosmos DB for NoSQL: configure throughput and consistency, connect with the SDK, query data, design a partitioning strategy, process the change feed, and use AI-assisted development tools."
   ms.date: 10/05/2026

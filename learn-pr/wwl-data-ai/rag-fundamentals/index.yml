@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.rag-fundamentals
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 34
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+    - solution-architect
+  skills:
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Knowledge Grounding for AI"
+    - "Embedding Models"
+    - "Vector Databases"
+    - "AI Model Evaluation & Testing"
+    - "Generative AI"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/rag-fundamentals/index.yml
+  uid: 621a5d4e-cb23-44e3-a0a4-732e6747e94d
   adobe-target: true
   prefetch-feature-rollout: true
   title: Introduction to retrieval-augmented generation concepts

@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.filter-objects-out-of-pipeline
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 37
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - Automation
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/filter-objects-out-of-pipeline/index.yml
+  uid: 840faff9-9903-4304-a4ab-34d7392ed1d7
   title: Filter objects out of the pipeline
   description: "This module explains how to filter objects out of the pipeline by using the Where-Object cmdlet to specify various criteria."
   ms.date: 05/12/2026

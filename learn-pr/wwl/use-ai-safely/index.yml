@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.use-ai-safely
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 20
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+    - early-in-career-professionals
+  skills:
+    - "Responsible AI"
+    - "AI Risk Management"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/use-ai-safely/index.yml
+  uid: da2faf6f-5490-422f-9fde-fcdc58283bb8
   title: "Use AI Safely"
   description: "Learn how to use AI safely by protecting private information, identifying scams, and verifying AI responses before taking action."
   ms.date: 09/17/2026

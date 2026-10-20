@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-cloud-shell
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 20
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - "Cloud Administration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-cloud-shell/index.yml
+  uid: 4c6b85aa-96f6-4326-bd0e-15e83b001d92
   moduleType: introduction        
   title: Introduction to Azure Cloud Shell
   description: In this module, you learn what Azure Cloud Shell does, how it works, and when you should choose to use Azure Cloud Shell as a solution to meet your organization’s needs. 

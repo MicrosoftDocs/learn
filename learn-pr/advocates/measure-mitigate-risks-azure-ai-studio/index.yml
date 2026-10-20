@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.measure-mitigate-risks-azure-ai-studio
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 75
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+    - azure-openai
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - security-engineer
+  skills:
+    - "AI Model Evaluation & Testing"
+    - "AI Security (Model-Level)"
+    - "Prompt Engineering"
+    - "Retrieval-Augmented Generation (RAG)"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/measure-mitigate-risks-azure-ai-studio/index.yml
+  uid: d929d34f-8b18-4fa6-aec7-d80d7d8ba068
   ms.author: apspeigh
   author: aprilgittens
   ms.date: 04/20/2026

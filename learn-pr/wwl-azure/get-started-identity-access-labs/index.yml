@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-identity-access-labs
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 65
+  last.refresh.date: null
+  modality: module
+  products:
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - identity-access-admin
+    - administrator
+    - security-engineer
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - Cybersecurity
+    - "Cloud Administration"
+    - "Security Architecture Design"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/get-started-identity-access-labs/index.yml
+  uid: f003f399-28eb-441f-8e30-99ad27adcd37
   title: Get Started with Identity and Access Labs
   description: "Use interactive labs to explore the basics of identity and access using Microsoft Entra ID."
   ms.date: 04/02/2025

@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-git-branches-workflows
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 87
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+    - azure-devops
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+  skills:
+    - DevOps
+    - "Application Development"
+    - Automation
+    - "Application Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-git-branches-workflows/index.yml
+  uid: 300efde7-583b-431f-b4ce-c13145ac7001
   title: Design and Implement Branch Strategies and Workflows
   description: This module explores Git branching types, concepts, and models for the continuous delivery process. It helps companies defining their branching strategy and organization.
   ms.date: 09/02/2025

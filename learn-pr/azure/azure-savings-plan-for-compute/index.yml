@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.azure.azure-savings-plan-for-compute
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 27
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - technology-manager
+    - finance
+  skills:
+    - "Cloud Administration"
+    - "IT Strategy"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-savings-plan-for-compute/index.yml
+  uid: ae9f9ffa-9835-4dd7-8e9a-0acbc7a7e2e8
   title: 'Purchase Azure savings plan for compute'
   description: Purchase Azure savings plan for compute helps customers minimize their operational costs.
   ms.date: 11/14/2024

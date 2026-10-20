@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-relational-data-offerings
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 30
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-professional
+    - student
+  skills:
+    - Databases
+    - "Database Design"
+    - SQL
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/explore-relational-data-offerings/index.yml
+  uid: 0f5e7434-b352-4871-8e6c-8791f7ef0525
   title: Explore Fundamental Relational Data Concepts
   description: "This content is a part of Explore fundamental relational data concepts."
   ms.date: 10/12/2026

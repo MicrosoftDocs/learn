@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-authentication-authorization-cybersecurity
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 18
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+    - business-owner
+  skills:
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Threat Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/describe-authentication-authorization-cybersecurity/index.yml
+  uid: 7fef90cb-ca0b-405a-995e-f27a1bca5b72
   title: Describe Authentication and Authorization in Cybersecurity
   description: "Describe authentication and authorization in cybersecurity."
   ms.date: 04/24/2026

@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.azure.get-started-with-finops
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 20
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - finance
+    - technology-manager
+    - business-leader
+  skills:
+    - "IT Strategy"
+    - "Organizational Culture"
+    - "Organizational Effectiveness"
+    - "Cloud Computing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/get-started-with-finops/index.yml
+  uid: 94412b1e-1b5b-4717-a610-b31b9106257f
   title: Get started with FinOps
   description: Learn about the FinOps Framework and the impact of transitioning from a CapEx to an OpEx model.
   ms.date: 11/22/2024

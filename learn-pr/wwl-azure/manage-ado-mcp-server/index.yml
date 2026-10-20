@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-ado-mcp-server
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 127
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-devops
+    - github-copilot
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+    - platform-engineer
+    - administrator
+  skills:
+    - DevOps
+    - "AI-Augmented Software Development"
+    - "AI Prompting"
+    - Automation
+    - "Security Automation"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-ado-mcp-server/index.yml
+  uid: c5f864bf-7a98-4757-859d-8fe81334f61a
   title: Manage Azure DevOps By Using MCP Server
   description: "Use Azure DevOps MCP Server with GitHub Copilot to manage projects, work items, pull requests, and pipelines through natural language workflows."
   ms.date: 6/11/2026

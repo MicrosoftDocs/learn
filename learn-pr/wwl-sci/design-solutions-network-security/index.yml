@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.design-solutions-network-security
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 76
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - defender-for-cloud
+    - entra
+    - microsoft-sentinel
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - solution-architect
+  skills:
+    - "Security Architecture Design"
+    - "Zero Trust Security"
+    - "Identity and Access Management (IAM)"
+    - "Security Analytics"
+    - "Threat Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/design-solutions-network-security/index.yml
+  uid: f2779d0a-211c-4af2-9436-f91bb8b32136
   title: Design Solutions for Network Security
   description: "You learn how to design secure network solutions using techniques like network segmentation, traffic filtering, network monitoring, and posture management."
   ms.date: 05/20/2026

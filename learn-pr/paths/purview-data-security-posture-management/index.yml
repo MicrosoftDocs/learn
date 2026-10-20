@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.purview-data-security-posture-management
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - m365
+    - microsoft-purview
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ip-admin
+    - risk-practitioner
+  skills:
+    - "Data Security"
+    - "AI Risk Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "AI Compliance"
+    - "Security Analytics"
+    - "Security Operations Management"
+    - "Agentic AI"
+    - "Threat Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/purview-data-security-posture-management/index.yml
+  uid: 2440279f-4aa0-4d58-97ac-98a2cca3dafe
   title: Reduce Data Exposure Risk with Data Security Posture Management in Microsoft Purview
   description: Reduce data exposure risk by using Data Security Posture Management in Microsoft Purview to assess posture, protect sensitive data, and investigate risks.
   ms.date: 05/01/2026

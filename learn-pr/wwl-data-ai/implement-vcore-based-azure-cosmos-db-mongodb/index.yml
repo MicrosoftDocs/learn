@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 33
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - database-administrator
+    - solution-architect
+    - devops-engineer
+  skills:
+    - Databases
+    - "Cloud Infrastructure"
+    - "Vector Databases"
+    - "AI Infrastructure"
+    - Automation
+    - "Cloud Administration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-vcore-based-azure-cosmos-db-mongodb/index.yml
+  uid: 4eb74965-7d2d-4bc9-a8b1-5daf31b501e4
   title: Implement vCore-based Azure Cosmos DB for MongoDB
   description: "Implement vCore-based Azure Cosmos DB for MongoDB."
   ms.date: 11/24/2024

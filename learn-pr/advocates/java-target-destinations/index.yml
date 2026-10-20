@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.java-target-destinations
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 25
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - developer
+  skills:
+    - "Solution Architecture"
+    - "Application Architecture"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/java-target-destinations/index.yml
+  uid: e087d106-64e1-4f4e-94a9-b6bb8813c022
   title: Choose the right Azure service for deploying your Java application
   description: In this module, you learn about running your Java applications on Azure. You also choose the best service option among Azure Virtual Machines, Azure App Service, Azure Functions, Azure Kubernetes Service (AKS), and Azure Container Apps.
   author: Orin-Thomas

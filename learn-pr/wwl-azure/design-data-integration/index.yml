@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.design-data-integration
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 53
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+  skills:
+    - "Solution Architecture"
+    - "Data Engineering"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-data-integration/index.yml
+  uid: a8fc4c11-fb46-4f01-9a3d-d266e90ab608
   adobe-target: true
   prefetch-feature-rollout: true
   title: Design Data Integration

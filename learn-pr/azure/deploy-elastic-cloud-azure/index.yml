@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-elastic-cloud-on-azure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 31
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - data-professional
+  skills:
+    - "Cloud Administration"
+    - "Data Visualization"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/deploy-elastic-cloud-azure/index.yml
+  uid: 28a00b00-55dc-43e2-b289-f9ed109a9ba8
   moduleType: standard
   title: Deploy Elastic Cloud on Azure
   description: "Learn how to deploy Elastic Cloud on Azure. Elastic Cloud on Azure gives you the power of Elastic Enterprise Search, Elastic Observability, Elastic Security, and the ELK Stack (Elasticsearch, Kibana, Beats, and Logstash). You can quickly and easily search your environment for information, analyze data to observe insights, and protect your technology investment."

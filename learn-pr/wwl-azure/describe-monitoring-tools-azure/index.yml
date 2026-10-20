@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-monitoring-tools-azure
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 13
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - it-professional
+  skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-monitoring-tools-azure/index.yml
+  uid: e3120e47-8f47-4bab-813a-24ce0a04ca83
   title: Describe monitoring tools in Azure
   description: "Describe monitoring tools in Azure"
   ms.date: 03/23/2026

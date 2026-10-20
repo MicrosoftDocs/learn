@@ -2,6 +2,26 @@
 uid: learn.dpu.introduction-to-surface-pro-13-intel
 title: Introduction to Microsoft Surface Pro 13-inch (Intel)
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 32
+  last.refresh.date: null
+  modality: module
+  products:
+    - surface
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - it-professional
+  skills:
+    - "Device Management"
+    - "AI Productivity"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-to-surface-pro-13-intel/index.yml
+  uid: e7ea8db1-2ab2-4a56-ad0e-5d81e4315494
   title: Introduction To Microsoft Surface Pro 13-Inch (intel)
   description: 'Explore Microsoft Surface Pro 13-inch for Business (Intel), a Copilot+ PC designed for business professionals focused on productivity, security, and versatility.'
   ms.date: 11/07/2025

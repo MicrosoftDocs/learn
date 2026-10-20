@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-implement-manage-retention
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 85
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-purview
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ip-admin
+    - administrator
+  skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Security"
+    - "Cloud Administration"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-implement-manage-retention/index.yml
+  uid: 487d775a-1be4-4976-b1d2-7119f079c3c8
   title: Implement and manage retention with Microsoft Purview
   description: "Implement and manage retention with Microsoft Purview."
   ms.date: 06/10/2025

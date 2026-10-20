@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.architect-api-integration
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - azure-openai
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+  skills:
+    - "API Management"
+    - "Cloud Infrastructure"
+    - DevOps
+    - "Identity and Access Management (IAM)"
+    - "AI Infrastructure"
+    - "Generative AI"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/architect-api-integration/index.yml
+  uid: 02e2c1f9-5d2f-4eb4-af3e-c2a1ec57beb0
   title: Architect API integration in Azure learning path
   description: Learn how to architect API integration in Azure, and provide secure, scalable API access for your applications.
   brand: azure

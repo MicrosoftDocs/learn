@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-github-actions
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 62
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+  skills:
+    - DevOps
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-github-actions/index.yml
+  uid: a147b83e-e0b1-4b4d-ad94-7eb7f2f79f22
   title: Implement GitHub Actions
   description: "GitHub Actions is a powerful CI/CD platform that allows developers to automate their software development workflows. Learn how GitHub actions are implemented, how workflow files are structured, and how to control workflow execution."
   ms.date: 07/23/2026

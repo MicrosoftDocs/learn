@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-repeat-actions-loops
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 51
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-repeat-actions-loops/index.yml
+  uid: cf694164-e26c-4ef4-a2cd-58bb101296b0
   title: Repeat actions with loops in C#
   description: "Learn how to repeat actions in C# using for, while, and do-while loops, and control loop execution with break and continue."
   ms.date: 09/23/2026

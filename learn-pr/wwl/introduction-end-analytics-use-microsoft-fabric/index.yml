@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-end-analytics-use-microsoft-fabric
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 22
+  last.refresh.date: null
+  modality: module
+  products:
+    - fabric
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - data-analyst
+    - data-scientist
+  skills:
+    - "Data Analytics"
+    - "Data Engineering"
+    - "Data Management"
+    - "AI Fluency"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/introduction-end-analytics-use-microsoft-fabric/index.yml
+  uid: dc2cfae3-2c4d-4e57-8ebe-e54cb0e73c89
   title: Introduction to end-to-end analytics using Microsoft Fabric
   description: "Discover how Microsoft Fabric can meet your enterprise's analytics needs in one platform. Discover the capabilities Fabric has to offer, understand how it works, and identify how you can use Fabric for your analytics needs."
   ms.date: 03/04/2026

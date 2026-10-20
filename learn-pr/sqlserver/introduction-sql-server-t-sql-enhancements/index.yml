@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-sql-server-t-sql-enhancements
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 37
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - data-engineer
+    - developer
+  skills:
+    - SQL
+    - "Database Development"
+    - "Application Development"
+    - "Embedding Models"
+    - "Semantic Search"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/sqlserver/introduction-sql-server-t-sql-enhancements/index.yml
+  uid: 0d9a6041-c3a1-42c7-8f56-a758840bce5e
   title: Transform Development Workflows with T-SQL in SQL Server 2025
   description: "Explore the new T-SQL enhancements in SQL Server 2025, including AI integration, pattern matching, JSON aggregation, and more."
   ms.date: 08/11/2026

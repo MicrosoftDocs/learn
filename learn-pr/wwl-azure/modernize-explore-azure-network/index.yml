@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.modernize-explore-azure-network
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 49
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - network-engineer
+    - solution-architect
+    - systems-administrator
+  skills:
+    - "Network Connectivity"
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/modernize-explore-azure-network/index.yml
+  uid: a29dbf9b-b7a5-4a2d-9567-9a871ee8b8ab
   title: Modernize and explore Azure network for SAP
   description: 'This module explores the use of Azure network components to design scalable, performant, and resilient SAP deployments in Azure. This module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/09/2024

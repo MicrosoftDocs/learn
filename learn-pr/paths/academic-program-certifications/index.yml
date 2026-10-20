@@ -1,6 +1,28 @@
 ### YamlMime:LearningPath
 uid: learn.academic-program-certifications
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-leader
+    - higher-ed-educator
+  skills:
+    - "Career Development"
+    - "Organizational Effectiveness"
+    - "Cloud Computing"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Communications Management"
+    - "Business Insights"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/academic-program-certifications/index.yml
+  uid: a290f77f-4659-484c-9389-f55accb8af3b
   title: Implement certifications in academic programs
   description: Learn how to implement certifications in academic programs.
   ms.date: 07/21/2021

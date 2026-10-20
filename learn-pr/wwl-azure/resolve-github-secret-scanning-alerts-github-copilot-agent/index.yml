@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.resolve-github-secret-scanning-alerts-github-copilot-agent
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 110
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+    - github-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - security-engineer
+  skills:
+    - "Application Security"
+    - Cybersecurity
+    - "Security Operations Management"
+    - "Security Automation"
+    - "AI-Augmented Software Development"
+    - "AI Prompting"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/resolve-github-secret-scanning-alerts-github-copilot-agent/index.yml
+  uid: b52abe05-b2fe-4e1a-94c2-a3de0c138f9d
   title: Resolve GitHub Secret Scanning alerts using GitHub Copilot Agent
   description: "This module covers how to identify and remediate GitHub Secret Scanning alerts using GitHub Copilot's Ask and Agent modes. The training focuses on detecting hard-coded secrets in source code and implementing secure configuration patterns to replace them." 
   ms.date: 02/16/2026

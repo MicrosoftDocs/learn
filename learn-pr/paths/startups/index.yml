@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.startups
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-owner
+    - startup-founder
+    - student
+  skills:
+    - "Business Insights"
+    - "Career Development"
+    - "Organizational Effectiveness"
+    - "Customer Relationship Management (CRM)"
+    - "Communications Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/startups/index.yml
+  uid: 516733ec-cced-4257-9b68-b155b44df676
   title: Build an early-stage startup
   description: Learn how to launch a startup. Understand how to validate an idea and generate revenue. See tips on branding, team building, fundraising, and pitching.
   ms.date: 02/11/2022

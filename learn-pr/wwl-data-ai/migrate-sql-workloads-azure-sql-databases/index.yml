@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn-wwl.migrate-sql-workloads-azure-sql-databases
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 78
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - data-engineer
+    - administrator
+    - developer
+    - solution-architect
+  skills:
+    - "Data Migration"
+    - "Data Administration"
+    - Databases
+    - SQL
+    - "Cloud Infrastructure"
+    - Automation
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/index.yml
+  uid: 2caa6885-16e2-45e6-8e9b-695c967a1aee
   adobe-target: true
   prefetch-feature-rollout: true
   title: Migrate SQL Server workloads to Azure SQL Database

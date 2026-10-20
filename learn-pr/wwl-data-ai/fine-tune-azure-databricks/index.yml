@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.fine-tune-azure-databricks
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 55
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-databricks
+    - azure-openai
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - data-scientist
+  skills:
+    - "Model Fine-Tuning"
+    - "Large Language Model Operations (LLMOps)"
+    - "Data Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/fine-tune-azure-databricks/index.yml
+  uid: 80e3c2fc-62b6-49a2-8231-a07d6035d08a
   title: Fine-Tune Language Models with Azure Databricks
   description: Fine-tune language models with Azure Databricks
   ms.date: 06/17/2026

@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.azure.spatial-audio-tutorials-mrtk
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 23
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/spatial-audio-tutorials-mrtk/index.yml
+  uid: e6e67257-a538-41b1-a770-0afb2617de75
   title: Activate spatial audio for your HoloLens 2 application
   description: Activate spatial audio for your HoloLens 2 application
   ms.date: 02/12/2024

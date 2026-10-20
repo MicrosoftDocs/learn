@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 55
+  last.refresh.date: null
+  modality: module
+  products:
+    - entra
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - identity-access-admin
+    - developer
+    - security-engineer
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "AI Security (Model-Level)"
+    - "Application Security"
+    - "Cloud Administration"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/explore-basic-services-identity-types/index.yml
+  uid: 93dbdf93-0a0c-4142-897a-60d35052810b
   title: Describe the Function and Identity Types of Microsoft Entra ID
   description: "Describe the function and identity types of Microsoft Entra ID"
   ms.date: 06/12/2026

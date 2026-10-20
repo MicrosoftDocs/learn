@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.introduction-to-azure-machine-learning-monitoring
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 32
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-machine-learning
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - data-scientist
+  skills:
+    - "Cloud Administration"
+    - "Machine Learning"
+    - "AI Model Evaluation & Testing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/monitor-azure-machine-learning/index.yml
+  uid: 786e7368-82b0-4380-aa8c-8d7ab007c852
   ms.author: viniap
   author: Orin-Thomas
   ms.date: 07/25/2026

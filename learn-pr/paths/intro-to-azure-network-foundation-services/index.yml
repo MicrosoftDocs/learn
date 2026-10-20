@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.intro-to-azure-network-foundation-services
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - network-engineer
+    - it-professional
+    - solution-architect
+  skills:
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/intro-to-azure-network-foundation-services/index.yml
+  uid: c0c81f0f-e637-4315-9e50-dea0e12053df
   title: Introduction to Azure network foundation services
   description: Learn to manage and diagnose a network with Azure network foundation services.
   brand: azure

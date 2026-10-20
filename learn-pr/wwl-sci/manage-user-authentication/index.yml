@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-user-authentication
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 52
+  last.refresh.date: null
+  modality: module
+  products:
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+  skills:
+    - "Identity and Access Management (IAM)"
+    - Automation
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/manage-user-authentication/index.yml
+  uid: 2f02caa3-3494-4b87-94f5-09d394c06204
   adobe-target: true
   prefetch-feature-rollout: true
   title: Manage user authentication

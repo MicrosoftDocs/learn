@@ -1,6 +1,23 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.delegates-events-exceptions
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Application Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/delegates-events-exceptions/index.yml
+  uid: e49b1397-66a4-4f4d-968c-cb59a3d8f420
   title: Implement Delegates and Events
   description: Learn how to implement late binding using delegates, how to notify other classes or objects when something of interest occurs using events, and how to manage event publishers and subscribers in a C# application.
   ms.date: 04/25/2025

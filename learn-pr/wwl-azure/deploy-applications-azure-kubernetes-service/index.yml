@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-applications-azure-kubernetes-service
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 58
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - administrator
+    - platform-engineer
+  skills:
+    - "Cloud Administration"
+    - "Platform Engineering"
+    - Storage
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/deploy-applications-azure-kubernetes-service/index.yml
+  uid: e53a134f-6264-48b5-8825-45210958170a
   title: Deploy Applications to Azure Kubernetes Service
   description: Provision an Azure Kubernetes Service (AKS) cluster, enforce pod configuration with Azure Policy, evaluate AKS storage options, configure persistent storage with StorageClasses and PersistentVolumeClaims, and create and update Kubernetes Deployments.
   ms.date: 04/25/2026

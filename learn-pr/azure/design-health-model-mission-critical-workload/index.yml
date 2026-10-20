@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.design-health-model-mission-critical-workload
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 54
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - systems-administrator
+  skills:
+    - "Solution Architecture"
+    - "Cloud Administration"
+    - "Data Analytics"
+    - "Data Visualization"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/design-health-model-mission-critical-workload/index.yml
+  uid: c7dde182-df33-47c3-9510-5d659aa18464
   title: Design a health model for your mission-critical workload
   description: Improve your observability practices by defining a health model for mission-critical applications. A health model helps you quickly identify and troubleshoot issues that might affect the health of your mission-critical solution.
   ms.date: 08/05/2024

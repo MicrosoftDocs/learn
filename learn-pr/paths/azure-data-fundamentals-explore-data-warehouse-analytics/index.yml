@@ -1,6 +1,36 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-data-fundamentals-explore-data-warehouse-analytics
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - azure-databricks
+    - fabric
+    - power-bi
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-analyst
+    - data-engineer
+    - solution-architect
+  skills:
+    - "Data Warehousing"
+    - "Data Engineering"
+    - "Data Analytics"
+    - "Data Management"
+    - "Data Visualization"
+    - "Cloud Computing"
+    - Storage
+    - Automation
+    - "Business Insights"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/azure-data-fundamentals-explore-data-warehouse-analytics/index.yml
+  uid: ca223129-18b2-4bb1-a8e1-1f21d3c3b264
   title: 'Introduction to Microsoft Azure Data analytics in Azure'
   description: 'Introduction to Microsoft Azure Data analytics in Azure'
   ms.date: 05/04/2026

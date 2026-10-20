@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.distributed-programming.introduction
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 117
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - solution-architect
+    - data-engineer
+  skills:
+    - "Application Architecture"
+    - "Application Development"
+    - "Cloud Computing"
+    - "Data Engineering"
+    - "Infrastructure Management"
+    - "IT Networking"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-distributed-programming-introduction/index.yml
+  uid: 57c83c5b-ceb9-454d-afc5-3c79bb9dc542
   title: What is distributed programming?
   description: Carnegie Mellon University's Cloud Developer course. Learn about distributed programming and why it's useful for the cloud, including programming models, types of parallelism, and symmetrical vs. asymmetrical architecture.
   ms.date: 03/09/2022

@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-telemetry-logs-metrics
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 82
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - site-reliability-engineer
+    - devops-engineer
+    - data-analyst
+  skills:
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Security Operations Management"
+    - "Cloud Administration"
+    - "Application Development"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/analyze-telemetry-logs-metrics/index.yml
+  uid: 91e795ff-e624-4e95-a6b9-8a7431130042
   title: Analyze App Telemetry with Logs and Metrics
   description: Query, visualize, and act on application telemetry collected in Application Insights to detect failures, identify performance trends, and maintain operational visibility for AI solutions on Azure.
   ms.date: 06/15/2026

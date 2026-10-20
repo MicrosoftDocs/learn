@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.continuous-validate-test-mission-critical-workloads
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 38
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - azure-devops
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - solution-architect
+    - site-reliability-engineer
+  skills:
+    - DevOps
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/continuous-validate-test-mission-critical-workloads/index.yml
+  uid: 6ed43935-a675-429b-be2e-e412fe2179e3
   title: Continuously validate and test mission-critical workloads
   description: Learn how to automate Azure Load Testing and Azure Chaos Studio simultaneously as part of your CI/CD pipelines.
   ms.date: 07/31/2024
@@ -25,20 +48,20 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced
 roles:
--	administrator
--	solution-architect
--	devops-engineer
--	network-engineer
--	security-engineer
+- administrator
+- solution-architect
+- devops-engineer
+- network-engineer
+- security-engineer
 products:
--	azure-devops
--	azure-app-testing
+- azure-devops
+- azure-app-testing
 # - chaos-studio
 subjects:
--	site-reliability-engineering
--	architecture
--	solution-design
--	devops
+- site-reliability-engineering
+- architecture
+- solution-design
+- devops
 units:
 - learn.continuous-validate-test-mission-critical-workloads.introduction
 - learn.continuous-validate-test-mission-critical-workloads.define-load-tests

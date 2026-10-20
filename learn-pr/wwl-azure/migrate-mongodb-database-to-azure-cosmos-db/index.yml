@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-mongodb-database-to-azure-cosmos-db
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 79
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - database-administrator
+    - data-engineer
+  skills:
+    - "Data Administration"
+    - Databases
+    - "Data Engineering"
+    - "Cloud Administration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-mongodb-database-to-azure-cosmos-db/index.yml
+  uid: 4a4147df-56b4-4d25-b2ca-576eefa7dafa
   title: Migrate a MongoDB database to Azure Cosmos DB
   description: "Online and offline migration option to Azure Cosmos DB API for MongoDB."
   ms.date: 02/06/2023

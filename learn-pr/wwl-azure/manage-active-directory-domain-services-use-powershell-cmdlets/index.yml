@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-active-directory-domain-services-use-powershell-cmdlets
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 40
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - "Identity and Access Management (IAM)"
+    - Automation
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-active-directory-domain-services-use-powershell-cmdlets/index.yml
+  uid: 1d127ffd-8ed3-49fc-8323-2ed6e6277ca3
   title: Manage Active Directory Domain Services using PowerShell cmdlets
   description: "This module covers the cmdlets that are used to administer Active Directory Domain Services."
   ms.date: 05/12/2026

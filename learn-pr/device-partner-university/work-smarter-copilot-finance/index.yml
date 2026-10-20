@@ -2,6 +2,32 @@
 uid: learn.dpu.work-smarter-copilot-finance
 title: Work smarter with Copilot prompts for finance professionals
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 28
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-365-copilot
+    - m365
+    - windows
+    - office-teams
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - finance
+    - business-user
+  skills:
+    - "AI Prompting"
+    - "AI Productivity"
+    - "Data Analytics"
+    - "Collaboration Tools"
+    - "Digital Accessibility"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/work-smarter-copilot-finance/index.yml
+  uid: 17d2f74c-36f0-468a-9d31-e01cad1ac43f
   title: Work Smarter With Copilot Prompts For Finance Professionals
   description: >
     In this module, you'll learn how to use Microsoft 365 Copilot and Copilot+ PC to streamline your work as a finance professional. You'll explore how to plan your day, analyze data, create models and reports, and collaborate with stakeholders more effectively.

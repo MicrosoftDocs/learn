@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.audit-security-of-windows-server-iaas-vms
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 45
+  last.refresh.date: null
+  modality: module
+  products:
+    - defender-for-cloud
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - security-operations-analyst
+    - systems-administrator
+    - solution-architect
+  skills:
+    - Cybersecurity
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Threat Management"
+    - "Security Operations Management"
+    - "Security Analytics"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/audit-security-of-windows-server-iaas-virtual-machines/index.yml
+  uid: 38a9acda-1611-435f-aaee-13645ee6ece8
   title: Audit the security of Windows Server IaaS Virtual Machines
   description: "Learn about Microsoft Defender for Cloud and how to onboard Windows Server computers to Defender for Servers by using Azure Arc. Also learn about Microsoft Sentinel, security information and event management (SIEM), and security orchestration, automation, and response (SOAR)."
   ms.date: 07/01/2026

@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-classes-objects
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 71
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/get-started-classes-objects/index.yml
+  uid: c44f9ca7-e8b8-4a74-8a7b-bc7954580c0c
   title: Get Started with Classes and Objects
   description: "Learn how to create classes and instantiate objects that expose encapsulated field data by using class definitions, constructors, and the `new` operator."
   ms.date: 02/12/2025

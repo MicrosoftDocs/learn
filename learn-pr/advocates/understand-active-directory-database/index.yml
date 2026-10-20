@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.devrel.understand-active-directory-database
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 69
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+  skills:
+    - "Infrastructure Management"
+    - Databases
+    - "Data Security"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/understand-active-directory-database/index.yml
+  uid: dc620b62-f482-4091-88cc-3a69f984c836
   title: Understand the Active Directory Domain Services Database and SYSVOL
   description: Understand how Active Directory domain controllers store and replicate directory data and SYSVOL.
   ms.date: 07/24/2026

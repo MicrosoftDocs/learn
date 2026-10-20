@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-app-secrets-key-vault
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 74
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - security-engineer
+  skills:
+    - "Application Security"
+    - "Identity and Access Management (IAM)"
+    - "Application Development"
+    - "Security Automation"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/manage-app-secrets-key-vault/index.yml
+  uid: 27ae0dd1-71df-4ca6-992d-e2b8647b3a64
   title: Manage Application Secrets with Azure Key Vault
   description: Learn how to use Azure Key Vault to store, retrieve, version, rotate, and cache secrets in AI application code using the Python Azure SDK.
   ms.date: 02/17/2026

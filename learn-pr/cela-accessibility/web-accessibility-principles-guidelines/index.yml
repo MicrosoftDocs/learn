@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.cela-accessibility.web-accessibility-principles-guidelines
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 17
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Digital Accessibility"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/web-accessibility-principles-guidelines/index.yml
+  uid: eabd6267-1b03-4f99-964e-d15367357bb2
   title: Web accessibility principles and guidelines
   description: Explore the concept and importance of accessibility. Learn how levels of conformance to standards and regulations impact accessible design and development.
   ms.date: 11/12/2024

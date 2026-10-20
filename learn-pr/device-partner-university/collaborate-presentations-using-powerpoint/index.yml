@@ -2,6 +2,26 @@
 uid: learn.dpu.collaborate-presentations-using-powerpoint
 title: Collaborate on presentations using PowerPoint
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 22
+  last.refresh.date: null
+  modality: module
+  products:
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+  skills:
+    - "Collaboration Tools"
+    - "Communications Management"
+    - "Identity and Access Management (IAM)"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/collaborate-presentations-using-powerpoint/index.yml
+  uid: 44877877-27ff-446c-9046-be09c5b6ea81
   title: Collaborate On Presentations Using PowerPoint
   description: In this module, you learn how to collaborate in PowerPoint by sharing files, coauthoring slides in real time, and using comments to organize and resolve feedback
   ms.date: 09/25/2025

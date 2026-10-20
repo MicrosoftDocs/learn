@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.design-for-user-identities-profiles
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 64
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - solution-architect
+    - identity-access-admin
+  skills:
+    - Virtualization
+    - "Identity and Access Management (IAM)"
+    - "Cloud Infrastructure"
+    - Storage
+    - "Cloud Administration"
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-user-identities-profiles/index.yml
+  uid: 92c64346-c3a6-4f59-8a10-22e3a58c0275
   title: Design for user identities and profiles
   description: Design for user identities and profiles
   ms.date: 02/10/2023

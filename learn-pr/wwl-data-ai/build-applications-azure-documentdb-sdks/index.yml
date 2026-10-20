@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.build-applications-azure-documentdb-sdks
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 60
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Database Development"
+    - Databases
+    - "Python (Programming Language)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/build-applications-azure-documentdb-sdks/index.yml
+  uid: 2d3d1fe2-9ae5-40d3-b7ed-8799405bf96f
   title: Build Applications with Azure DocumentDB SDKs
   description: "Build applications that connect to Azure DocumentDB using the official MongoDB drivers for Python, .NET, and JavaScript. Perform CRUD operations programmatically and integrate database operations into your application code."
   ms.date: 06/20/2026

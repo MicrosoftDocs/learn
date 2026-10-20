@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.plan-implement-identity-governance-strategy
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - entra
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - identity-access-admin
+    - security-engineer
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Zero Trust Security"
+    - "Security Automation"
+    - Cybersecurity
+    - Automation
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/plan-implement-identity-governance-strategy/index.yml
+  uid: f05a3c1b-2d9a-4d15-a1dc-17e11dd275b5
   title: 'Plan and implement an identity governance strategy'
   description: 'Plan and implement an identity governance strategy'
   ms.date: 01/23/2026

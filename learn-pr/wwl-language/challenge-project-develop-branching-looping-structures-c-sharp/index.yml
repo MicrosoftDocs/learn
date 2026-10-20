@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.challenge-project-develop-branching-looping-structures-c-sharp
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 68
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/challenge-project-develop-branching-looping-structures-c-sharp/index.yml
+  uid: 0d5ca655-bebd-4075-9062-2d949c91f093
   title: Challenge Project - Develop Branching and Looping Structures in C#
   description: "Demonstrate your ability to develop a console app that implements selection and iteration statements to achieve app specifications."
   ms.date: 12/15/2025

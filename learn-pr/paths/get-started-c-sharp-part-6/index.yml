@@ -1,6 +1,22 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-c-sharp-part-6
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-c-sharp-part-6/index.yml
+  uid: cf4d4f4e-9cbe-45c0-859c-f83f2b45facb
   title: Debug C# console applications (Get started with C#, Part 6)
   description: Debug C# console applications (Get started with C#, Part 6)
   ms.date: 07/17/2023

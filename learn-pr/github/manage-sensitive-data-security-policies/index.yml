@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.github.manage-sensitive-data-security-policies
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 96
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - security-engineer
+    - devops-engineer
+  skills:
+    - "Application Security"
+    - "Data Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/manage-sensitive-data-security-policies/index.yml
+  uid: 69984713-7921-46ca-a78e-f542f517d909
   title: Manage Sensitive Data and Security Policies Within GitHub
   description: Familiarize yourself with GitHub's basic security tools, which prepare repositories for secure development and industry-standard response to threats.
   ms.service: github

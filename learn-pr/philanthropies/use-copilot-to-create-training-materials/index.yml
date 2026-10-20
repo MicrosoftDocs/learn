@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.philanthropies.use-copilot-to-create-training-materials
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 88
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+  skills:
+    - "AI Productivity"
+    - "AI Prompting"
+    - "Career Development"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/use-copilot-to-create-training-materials/index.yml
+  uid: 5f900a84-7afd-492a-bdf5-de4c21c27333
   title: Use Microsoft Copilot to create training materials
   description: Discover how Microsoft Copilot can enhance your training materials and resources. From content generation to image creation, experience a new era of engaging and effective learning.
   author: yoosunee

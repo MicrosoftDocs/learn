@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 112
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Application Architecture"
+    - "Data Visualization"
+    - Automation
+    - "Cloud Administration"
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/connect-iot-hololens-azure-digital-twins-unity/index.yml
+  uid: facd616f-1ce8-4b9f-9913-6133e1f9eab8
   title: Connect IoT data to mixed reality with Azure Digital Twins and Unity
   description: Stream simulated operational telemetry data from physical assets to Azure Digital Twins and visualize data in Unity and mixed reality. Learn how to use an ARM template, create a user interface in Unity, and identify performance events before deploying to a HoloLens 2.
   ms.date: 09/10/2024

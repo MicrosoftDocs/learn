@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-admin.cmu-cloud-elasticity
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 46
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - solution-architect
+  skills:
+    - "Cloud Computing"
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - "Application Architecture"
+    - "IT Networking"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-admin/cmu-cloud-elasticity/index.yml
+  uid: 94b4c98a-2c76-4efe-b927-6de27edee834
   title: Scale your cloud resources with elasticity
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Discover what cloud elasticity means and different ways to scale your cloud resources.
   ms.date: 06/07/2022

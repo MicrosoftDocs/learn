@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.azure.inclusive-design-principles
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 33
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - product-manager
+    - business-analyst
+  skills:
+    - "Digital Accessibility"
+    - "Organizational Culture"
+  solution.area: null
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/inclusive-design-principles/index.yml
+  uid: 135a66ec-f332-413d-b47d-881c55af565c
   title: Design with inclusivity in mind 
   description: Learn how to perform inclusive product design for users with diverse capabilities.
   ms.date: 05/23/2024

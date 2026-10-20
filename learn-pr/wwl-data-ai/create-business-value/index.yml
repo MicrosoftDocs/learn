@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.create-business-value
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 31
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-leader
+    - business-owner
+  skills:
+    - "AI Strategy"
+    - "AI Business & Vision"
+    - "AI Transformation"
+    - "AI Governance"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/create-business-value/index.yml
+  uid: d231b0b6-bb0b-4fa4-bb3f-195d951239d0
   title: "Create Business Value With AI"
   description: "Learn how to align AI to business strategy and ensure readiness using essential drivers for scalable, impactful, secure adoption."
   ms.date: 07/09/2026

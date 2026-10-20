@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-azure-documentdb
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 30
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - solution-architect
+  skills:
+    - Databases
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+    - "Data Migration"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/introduction-azure-documentdb/index.yml
+  uid: bb18f661-c7eb-465b-a01f-39f6c40c35e5
   title: Introduction to Azure DocumentDB
   description: "Explore the core features, architecture, and use cases for Azure DocumentDB, a fully managed MongoDB-compatible database service."
   ms.date: 06/20/2026

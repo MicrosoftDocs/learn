@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.intro-azure-openai-managed-identity-auth-python
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 29
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-openai
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+    - "Python (Programming Language)"
+    - "Application Development"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/intro-azure-openai-managed-identity-auth-python/index.yml
+  uid: 1a57eb19-6245-4e88-9f95-4ff7a0b9e5e8
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 05/20/2026

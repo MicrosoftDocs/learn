@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 117
+  last.refresh.date: null
+  modality: module
+  products:
+    - github-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "AI-Augmented Software Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/develop-ai-enabled-apps-using-github-copilot-sdk/index.yml
+  uid: 360df19a-76a8-4cb2-8c6a-5e9f30b98cc4
   title: "Develop AI-Enabled Apps using the GitHub Copilot SDK"
   description: "This module covers how to develop AI-enabled applications using the GitHub Copilot SDK. You install the SDK, explore its features, and build AI agents that can be integrated into your applications to automate tasks and enhance functionality."
   ms.date: 02/13/2026

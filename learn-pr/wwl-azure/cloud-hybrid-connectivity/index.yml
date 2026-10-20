@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.cloud-hybrid-connectivity
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 42
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - network-engineer
+  skills:
+    - "IT Networking"
+    - "Network Connectivity"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/cloud-hybrid-connectivity/index.yml
+  uid: d3d1f40e-6fa7-4bdb-af6c-d81fe57d0986
   title: Troubleshoot cloud and hybrid connectivity in Microsoft Azure
   description: "Troubleshooting cloud and hybrid connectivity includes Microsoft ExpressRoute, Azure virtual networks, and Azure Virtual WAN. This module enables you to manage and troubleshoot different network configurations to support your organization’s needs. AZ720 AZ-720 az-720 networking"
   ms.date: 04/27/2023

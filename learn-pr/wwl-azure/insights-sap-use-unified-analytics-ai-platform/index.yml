@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.insights-sap-use-unified-analytics-ai-platform
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 30
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-365-copilot
+    - microsoft-copilot-studio
+    - power-platform
+    - azure-openai
+    - security-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+  skills:
+    - "AI Transformation"
+    - "AI Workforce Applications"
+    - "Generative AI"
+    - "AI-Powered Workflow Automation"
+    - "Business Insights"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/insights-sap-use-unified-analytics-ai-platform/index.yml
+  uid: 8aa8a6e0-7c53-4e2a-b5f7-e2b7e97e6287
   title: Insights for SAP using unified analytics and AI platform
   description: "In this module, you learn about accelerating business transformation with Microsoft AI and SAP integration, enhancing business processes with Microsoft Copilot Studio, Power Platform, and SAP."
   ms.date: 03/20/2025

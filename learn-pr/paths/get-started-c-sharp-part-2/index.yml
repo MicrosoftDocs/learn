@@ -1,6 +1,23 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-c-sharp-part-2
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Application Architecture"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-c-sharp-part-2/index.yml
+  uid: 34dadda4-b0de-4b74-8ae3-4fcad2aef9b3
   title: Create and run simple C# console applications (Get started with C#, Part 2)
   description: Use Visual Studio Code to develop C# console applications that implement arrays, foreach loops, and if statements.
   ms.date: 05/29/2023

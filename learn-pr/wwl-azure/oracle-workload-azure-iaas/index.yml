@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.azure.oracle-workload-azure-iaas
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 26
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+  skills:
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/oracle-workload-azure-iaas/index.yml
+  uid: 3af3c491-2b11-4478-b8c4-99e9bd930cee
   title: "Migrate Oracle workloads to Azure IaaS virtual machines"
   description: "Learn how you can migrate your Oracle workloads to Azure IaaS virtual machines."
   ms.date: 05/01/2024

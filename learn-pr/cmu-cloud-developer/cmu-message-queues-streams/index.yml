@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.distributed-programming.message-queues-stream-processing
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 62
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - developer
+    - solution-architect
+  skills:
+    - "Data Engineering"
+    - "Application Architecture"
+    - "Application Development"
+    - Databases
+    - "Database Design"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-message-queues-streams/index.yml
+  uid: 2b48e69e-c0b6-4426-a949-c0a5255b36b3
   title: Message queues and stream processing
   description: Carnegie Mellon University's cloud developer course. The increase of available data has led to the rise of continuous streams of real-time data to process. Learn about different systems and techniques for consuming and processing real-time data streams.
   ms.date: 03/09/2022

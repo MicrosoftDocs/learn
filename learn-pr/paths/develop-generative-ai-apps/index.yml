@@ -1,6 +1,39 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-generative-ai-apps
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - data-scientist
+    - developer
+  skills:
+    - "AI Solutions"
+    - "Application Development"
+    - "Responsible AI"
+    - "AI Model Evaluation & Testing"
+    - "Model Hosting & Inference"
+    - "Generative AI"
+    - "Machine Learning"
+    - "API Management"
+    - "AI Fluency"
+    - "Prompt Engineering"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Model Fine-Tuning"
+    - "Semantic Search"
+    - "Embedding Models"
+    - "AI Governance"
+  solution.area: null
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/develop-generative-ai-apps/index.yml
+  uid: 78fd3d26-b572-467a-ad76-2d7868f97c83
   title: Develop generative AI apps on Microsoft Foundry
   description: Learn how to develop generative AI apps in Microsoft Foundry. (AI-3016)
   ms.date: 03/19/2026

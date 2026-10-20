@@ -1,6 +1,35 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.monitor-maintain-windows-server-iaas-vm
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - windows
+    - defender-for-cloud
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - it-professional
+  skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Network Connectivity"
+    - Cybersecurity
+    - "Data Analytics"
+    - "IT Strategy"
+    - Virtualization
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+    - Storage
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/monitor-maintain-windows-server-iaas-virtual-machine/index.yml
+  uid: 45b92511-4817-4f2b-b8d2-4289ae3885da
   title: Monitor and maintain Windows Server IaaS Virtual Machine
   description: In this learning path, you’ll learn how to implement remote administration and management in Azure. After completing this path, you’ll be able to monitor your Azure resources, and plan for scale and high-availability.
   ms.date: 01/23/2026

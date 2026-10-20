@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-arrays-iteration-selection
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 93
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - student
+  skills:
+    - "Application Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/guided-project-arrays-iteration-selection/index.yml
+  uid: 67819f61-d1e9-49bc-aa3e-d4fb82978369
   title: Guided Project - Develop foreach and if-elseif-else Structures to Process Array Data in C#
   description: "Gain experience developing a console app that implements arrays, foreach loops, and if statements to achieve app specifications."
   ms.date: 12/15/2025

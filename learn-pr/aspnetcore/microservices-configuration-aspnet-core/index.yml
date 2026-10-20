@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.microservices-configuration-aspnet-core
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 42
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Application Architecture"
+    - DevOps
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/microservices-configuration-aspnet-core/index.yml
+  uid: 97848a3f-533d-48cd-9c82-eefbaaa07f18
   title: Implement feature flags in a cloud-native ASP.NET Core microservices app
   description: This module guides you through implementing a feature flag in an ASP.NET Core microservices app using Azure App Configuration.
   author: codemillmatt

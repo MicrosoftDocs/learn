@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-security
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 24
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - Cybersecurity
+    - "Identity and Access Management (IAM)"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-security/index.yml
+  uid: 6eee8955-a7f2-489c-bcec-5a839ad63404
   title: Explore security
   description: "Explore security"
   ms.date: 09/23/2024

@@ -1,6 +1,39 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-microsoft-fabric-environment
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - fabric
+    - github
+    - azure-devops
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - data-engineer
+    - devops-engineer
+    - data-analyst
+    - platform-engineer
+    - security-engineer
+  skills:
+    - DevOps
+    - Automation
+    - "Data Engineering"
+    - "Platform Engineering"
+    - "API Management"
+    - "Data Analytics"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Data Administration"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-microsoft-fabric-environment/index.yml
+  uid: c2811244-4ecf-4f3f-8135-1983f265870f
   title: Manage a Microsoft Fabric Environment
   description: Learn how to manage a Microsoft Fabric environment through CI/CD, monitoring, security, and administration.
   ms.date: 06/12/2026

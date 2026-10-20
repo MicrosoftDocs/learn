@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.github.manage-github-actions-enterprise
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 61
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - systems-administrator
+    - security-engineer
+    - solution-architect
+    - developer
+  skills:
+    - DevOps
+    - "Infrastructure Management"
+    - "Application Security"
+    - "Identity and Access Management (IAM)"
+    - "IT Networking"
+    - "Data Security"
+    - "Security Operations Management"
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/manage-github-actions-enterprise/index.yml
+  uid: 50e14d91-a1bf-4f78-83de-dbe650a2bdd0
   title: Manage GitHub Actions in the enterprise 
   description: Learn how to manage GitHub Actions in the enterprise.
   ms.date: 11/21/2024

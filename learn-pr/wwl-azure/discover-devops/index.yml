@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.discover-devops
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 20
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - developer
+    - platform-engineer
+    - security-engineer
+  skills:
+    - DevOps
+    - "Application Development"
+    - "Cloud Infrastructure"
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/discover-devops/index.yml
+  uid: 56cd98e2-ccf1-49e4-baa9-e1e1847e9c6f
   title: "Discover DevOps"
   description: "This module explores how DevOps practices optimize application lifecycle management for accelerated time to market and operational stability."
   ms.date: 02/05/2024

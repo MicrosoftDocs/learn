@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-github-copilot
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 109
+  last.refresh.date: null
+  modality: module
+  products:
+    - github-copilot
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "AI-Augmented Software Development"
+    - "AI Productivity"
+    - "AI Prompting"
+    - "Application Development"
+    - "AI Model Evaluation & Testing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/get-started-github-copilot/index.yml
+  uid: 311da1c1-4711-404f-b955-ff055bd2a244
   title: Get Started with GitHub Copilot
   description: "This module introduces developers to the GitHub Copilot products, the benefits that GitHub Copilot provides to developers, the GitHub Copilot and GitHub Copilot Chat product features, and the GitHub Copilot extensions for Visual Studio Code."
   ms.date: 04/16/2026

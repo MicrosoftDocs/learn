@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.azure.using-eyetracking-and-voice-commands-mrtk
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 39
+  last.refresh.date: null
+  modality: module
+  products:
+    - windows
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Application Development"
+    - "Digital Accessibility"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/use-eye-tracking-voice-commands/index.yml
+  uid: 242f67a6-3ec3-4063-b083-58ef7bec234f
   title: Enable eye tracking and voice commands for objects on the HoloLens 2
   description: This course provides the user an overall understanding on how to use eye tracking and voice commands
   ms.date: 01/04/2023

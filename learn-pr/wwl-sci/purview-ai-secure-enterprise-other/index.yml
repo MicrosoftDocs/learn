@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-ai-secure-enterprise-other
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 53
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-purview
+    - m365
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ip-admin
+    - risk-practitioner
+  skills:
+    - "AI Compliance"
+    - "AI Risk Management"
+    - "Data Security"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-ai-secure-enterprise-other/index.yml
+  uid: 206a13cd-1a09-4472-bf9e-8f7e6c1ddfa1
   title: Secure Enterprise and Browser-based AI Apps with Microsoft Purview
   description: Secure enterprise and browser-based AI apps with Microsoft Purview
   ms.date: 08/25/2025

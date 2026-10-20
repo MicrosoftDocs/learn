@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.contribute-docs-browser
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 33
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Collaboration Tools"
+    - "Communications Management"
+    - DevOps
+    - "Career Development"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/contributors/contribute-to-docs-browser/index.yml
+  uid: dd0c00ae-e8f5-4f1d-aee2-efb39a8e905c
   title: Contribute to Microsoft Learn documentation in your browser
   description: Become a contributor to Microsoft Learn documentation by making edits with a web editor in GitHub. Make your changes, then create, validate, and submit pull requests to get your changes published.
   ms.date: 11/25/2024

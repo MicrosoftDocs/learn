@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.azure.azure-netapp-files-application-volume-group
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 19
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - storage-admin
+  skills:
+    - Storage
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-netapp-files-application-volume-group/index.yml
+  uid: 812b8484-0960-498c-8b8b-41b6c55fadd5
   moduleType: introduction        
   title: Using Azure NetApp Files application volume group   
   description: Learn how to use Azure NetApp Files application volume groups to optimize deployments with Oracle and SAP HANA.        

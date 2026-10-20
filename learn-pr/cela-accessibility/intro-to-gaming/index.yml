@@ -2,6 +2,23 @@
 #LP name: Module 1: Introduction to Gaming and Disability
 uid: learn.intro-to-gaming
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 61
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Digital Accessibility"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/intro-to-gaming/index.yml
+  uid: 57ec5645-0d82-459f-affd-32be76e59638
   title: Introduction to gaming and disability
   description: This module introduces accessibility concepts for game titles, gaming platforms, and gaming hardware. You learn about the core elements in gaming experiences that influence accessibility and how those elements can affect the experiences of gamers with visual, hearing, mobility, and cognitive disabilities. 
   ms.date: 10/09/2024

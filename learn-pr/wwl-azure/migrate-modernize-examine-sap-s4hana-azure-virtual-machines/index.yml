@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 23
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+  skills:
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-modernize-examine-sap-s4hana-azure-virtual-machines/index.yml
+  uid: eadaba4c-4045-4717-a313-914b7c27cde5
   title: Modernize and examine SAP S/4HANA on Azure Virtual Machines
   description: "Explore SAP S/4HANA on Azure virtual machines and learn to recognize the architecture's components. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
   ms.date: 01/08/2024

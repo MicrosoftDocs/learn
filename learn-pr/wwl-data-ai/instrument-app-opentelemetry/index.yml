@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.instrument-app-opentelemetry
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 79
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - ai-engineer
+    - devops-engineer
+  skills:
+    - "Python (Programming Language)"
+    - DevOps
+    - "Cloud Computing"
+    - "Generative AI"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/instrument-app-opentelemetry/index.yml
+  uid: ac2baef4-fd02-44bc-a5a8-fc65a42fef94
   title: Instrument an App with OpenTelemetry
   description: Learn how to instrument distributed applications with OpenTelemetry on Azure to capture distributed traces, diagnose latency issues, and gain deep observability into AI solution components.
   ms.date: 06/15/2026

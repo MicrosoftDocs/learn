@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.intro-azure-openai-managed-identity-auth-java
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 22
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-openai
+    - entra
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+    - "Application Development"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/intro-azure-openai-managed-identity-auth-java/index.yml
+  uid: 1e9efa54-65d7-4495-ae8d-ee0f700e3735
   ms.author: orthomas
   author: orin-thomas
   ms.date: 05/20/2026

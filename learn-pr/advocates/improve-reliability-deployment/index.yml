@@ -2,6 +2,27 @@
 uid: learn.improve-reliability-deployment
 title: "Improve your reliability with modern operations practices: Deployment"
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 18
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure-devops
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - devops-engineer
+    - site-reliability-engineer
+  skills:
+    - DevOps
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/improve-reliability-deployment/index.yml
+  uid: d201db70-6974-4ee6-af92-78e2c90c6309
   title: "Improve your reliability with modern operations practices: Deployment"
   description: Learn deployment practices that help you sustainably achieve the right level of reliability for your systems and services.
   ms.date: 04/17/2026

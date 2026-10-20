@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.discover-how-microsoft-datacenters-work
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 43
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - technology-manager
+    - systems-administrator
+    - solution-architect
+  skills:
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+    - "Network Connectivity"
+    - "Data Security"
+    - "IT Strategy"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/introduction-to-microsoft-datacenters/index.yml
+  uid: 2d9fb3d6-616c-4dcb-afce-4d3842459d9a
   title: Introduction to Microsoft Datacenters
   description: Describes the physical infrastructure of the Microsoft Cloud and its datacenters.
   ms.date: 07/17/2024

@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.devrel.advanced-group-policy-troubleshooting
 metadata:
+  content.levels: 400
+  content.locale: en-us
+  duration: 150
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - identity-access-admin
+  skills:
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - "IT Networking"
+    - Automation
+    - Cybersecurity
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/advanced-group-policy-troubleshooting/index.yml
+  uid: 1b598f81-353a-44b9-87cf-c334ec18d619
   title: Advanced Group Policy Troubleshooting
   description: Diagnose Group Policy scope, processing, replication, connectivity, performance, effective-state, and Windows Server 2025 hardening compatibility issues.
   ms.date: 08/01/2026

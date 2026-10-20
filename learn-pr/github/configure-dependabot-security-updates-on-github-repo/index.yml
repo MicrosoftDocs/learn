@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.configure-dependabot-security-updates-on-github-repo
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 36
+  last.refresh.date: null
+  modality: module
+  products:
+    - github
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+    - devops-engineer
+    - security-engineer
+  skills:
+    - "Application Security"
+    - Cybersecurity
+    - DevOps
+    - "Security Automation"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/configure-dependabot-security-updates-on-github-repo/index.yml
+  uid: 9222e74c-942f-4aa4-81e3-13f372a370a5
   moduleType: standard
   ms.service: github
   title: Configure Dependabot security updates on your GitHub repo

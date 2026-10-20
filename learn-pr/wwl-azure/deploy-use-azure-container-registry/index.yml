@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-use-azure-container-registry
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 39
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - platform-engineer
+  skills:
+    - "Cloud Infrastructure"
+    - DevOps
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/deploy-use-azure-container-registry/index.yml
+  uid: 2e7e844e-20e1-4ee3-80c5-9a392ec28e4c
   title: Deploy and Use Azure Container Registry
   description: Learn how to create a private registry service for building, storing, and managing container images and related artifacts.
   ms.date: 04/25/2026

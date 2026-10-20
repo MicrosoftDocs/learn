@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-monitoring-ai-ready-infrastructure
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 108
+  last.refresh.date: null
+  modality: module
+  products:
+    - azure
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - platform-engineer
+    - site-reliability-engineer
+    - systems-administrator
+  skills:
+    - "AI Infrastructure"
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "Data Analytics"
+    - "Security Analytics"
+    - Automation
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-monitoring-ai-ready-infrastructure/index.yml
+  uid: 197a560d-6b34-43a1-9a5a-a7e36c16791a
   title: "Manage monitoring for AI-Ready Infrastructure"
   description: "This module covers Azure Monitor fundamentals, including metrics collection, dashboards, alert and processing rules, and KQL-based log queries. Together, these capabilities enable faster root-cause analysis and improve operational reliability."
   ms.date: 02/02/2026

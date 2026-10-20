@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-center-cloud-service
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 40
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - systems-administrator
+    - developer
+  skills:
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - Automation
+    - Virtualization
+    - "Identity and Access Management (IAM)"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-data-center-cloud-service/index.yml
+  uid: b50ba3ca-8fcd-4ecb-b890-5b6054ad75f9
   title: Cloud management
   description: Carnegie Mellon University's Cloud Developer course. Get into the nitty-gritty of cloud computing to understand how resources are provisioned, billed, and monitored. Learn about how to orchestrate cloud infrastructure with examples.
   ms.date: 03/09/2022

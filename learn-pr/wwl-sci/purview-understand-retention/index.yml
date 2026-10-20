@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-understand-retention
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  duration: 24
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-purview
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ip-admin
+  skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Management"
+  solution.area: Security
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-understand-retention/index.yml
+  uid: 8821b2fc-9619-41cd-a4a4-dafc3730ccd9
   title: Understand retention in Microsoft Purview
   description: Understand retention in Microsoft Purview
   ms.date: 04/11/2025

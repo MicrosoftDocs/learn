@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.oxford.intro-machine-teaching
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  duration: 29
+  last.refresh.date: null
+  modality: module
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - solution-architect
+    - business-analyst
+  skills:
+    - "Autonomous AI"
+    - "Machine Learning"
+    - "Solution Architecture"
+    - "Process Automation"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-machine-teaching/index.yml
+  uid: 03ef74e7-fad8-4fdc-8040-056b37b3675c
   title: Introduction to Machine Teaching
   description: Learn the concept of Machine Teaching and evaluate when to use it.
   ms.date: 10/17/2022

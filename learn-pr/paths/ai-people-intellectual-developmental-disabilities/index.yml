@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.ai-people-intellectual-developmental-disabilities
 metadata:
+  content.levels: 100
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products: null
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - business-user
+    - student
+  skills:
+    - "AI Fluency"
+    - "AI Productivity"
+    - "AI Prompting"
+    - "Responsible AI"
+    - "Prompt Engineering"
+    - "Generative AI"
+    - "AI Risk Management"
+    - "Accessible AI"
+    - "Digital Accessibility"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/ai-people-intellectual-developmental-disabilities/index.yml
+  uid: 97065173-c05f-4b29-9d73-c2d21eb0d2bb
   title: AI for People with Intellectual and Developmental Disabilities
   description: Learn what AI is and how to use Microsoft Copilot to write messages, plan your day, and stay safe online, while you stay in charge of every choice.
   ms.date: 9/28/2026

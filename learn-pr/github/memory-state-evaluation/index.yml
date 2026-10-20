@@ -2,6 +2,25 @@
 uid: learn.github.memory-state-evaluation
 title: Memory, State, and Evaluation
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 50
+  last.refresh.date: null
+  modality: module
+  products:
+    - github-copilot
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - developer
+  skills:
+    - "Agent Operations"
+    - "AI Model Evaluation & Testing"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/memory-state-evaluation/index.yml
+  uid: 4cdd9cd0-c14b-4d40-a578-a43f0018797e
   title: Memory, State, and Evaluation
   description: This module introduces the foundations of agent memory, state management, and evaluation. You'll learn how to structure memory, persist progress through GitHub artifacts, maintain consistency across environments, and define clear signals for success.
   author: camihmerhar

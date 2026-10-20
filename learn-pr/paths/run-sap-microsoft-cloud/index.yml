@@ -1,6 +1,45 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.run-sap-microsoft-cloud
 metadata:
+  content.levels: 200
+  content.locale: en-us
+  last.refresh.date: null
+  modality: learning-path
+  products:
+    - azure
+    - office-teams
+    - power-platform
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+  skills:
+    - "Solution Architecture"
+    - "Enterprise Resource Planning (ERP)"
+    - "Cloud Infrastructure"
+    - "Application Architecture"
+    - "Data Engineering"
+    - "Cloud Computing"
+    - "Identity and Access Management (IAM)"
+    - "Process Automation"
+    - "AI-Powered Workflow Automation"
+    - "Collaboration Tools"
+    - "AI Transformation"
+    - "AI Workforce Applications"
+    - "Generative AI"
+    - "Business Insights"
+    - "Network Connectivity"
+    - "Zero Trust Security"
+    - "Security Operations Management"
+    - "Security Analytics"
+    - "Threat Management"
+    - "Security Automation"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  solution.area: null
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/run-sap-microsoft-cloud/index.yml
+  uid: 6228423c-2007-499e-9e8f-025337c99a06
   title: Run SAP on the Microsoft Cloud
   description: In this learning path, you learn about the relationship between Microsoft and SAP across the enterprise software landscape, driving technological innovation and delivering significant benefits to customers. Areas of focus include cloud migration with the RISE with SAP program, AI integration, enhancing workplace productivity, security enhancements, IoT collaboration, and data analytics.
   ms.date: 03/27/2025

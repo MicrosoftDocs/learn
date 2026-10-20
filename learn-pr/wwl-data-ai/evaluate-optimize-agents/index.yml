@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.evaluate-optimize-agents
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 66
+  last.refresh.date: null
+  modality: module
+  products:
+    - microsoft-foundry
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - ai-engineer
+    - developer
+  skills:
+    - "AI Model Evaluation & Testing"
+    - "Agentic AI"
+    - "Large Language Model Operations (LLMOps)"
+    - "Prompt Engineering"
+  solution.area: "Cloud & AI Platforms"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/evaluate-optimize-agents/index.yml
+  uid: 54ace95d-2701-4646-83bd-121142367aa9
   title: Evaluate and optimize AI agents through structured experiments
   description: Learn how to evaluate and optimize AI agents systematically through structured experiments that measure quality, cost, and performance. Design evaluation metrics, apply Git-based workflows, create consistent scoring rubrics, and make evidence-based optimization decisions.
   ms.date: 02/17/2026

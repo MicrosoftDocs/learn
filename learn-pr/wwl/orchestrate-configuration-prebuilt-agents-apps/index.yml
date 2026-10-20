@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.orchestrate-configuration-prebuilt-agents-apps
 metadata:
+  content.levels: 300
+  content.locale: en-us
+  duration: 57
+  last.refresh.date: null
+  modality: module
+  products:
+    - dynamics-365
+    - microsoft-365-copilot
+    - power-platform
+    - microsoft-copilot-studio
+  publish.locations: null
+  release.date: null
+  retire.date: null
+  reusable: null
+  roles:
+    - solution-architect
+    - functional-consultant
+  skills:
+    - "Solution Architecture"
+    - "Agentic AI"
+    - "AI-Powered Workflow Automation"
+    - "AI Governance"
+    - "Enterprise Resource Planning (ERP)"
+  solution.area: "AI Business Solutions"
+  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/orchestrate-configuration-prebuilt-agents-apps/index.yml
+  uid: 34021d83-57ca-4fd4-89f4-fcbcb913b0cc
   title: "Orchestrate Configuration of Prebuilt Agents and Apps"
   description: "Learn to orchestrate, configure, and extend AI-driven experiences in Dynamics 365 and Microsoft 365 Copilot for finance, supply chain, and customer service."
   ms.date: 02/13/2026
