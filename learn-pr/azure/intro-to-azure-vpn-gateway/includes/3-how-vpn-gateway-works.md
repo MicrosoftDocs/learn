@@ -42,42 +42,45 @@ Key features of route-based VPN gateways in Azure include:
 
 When configured to use dynamic routing, the source and destination networks aren't statically defined because they are in policy-based VPNs or even in route-based VPNs with static routing. Instead, data packets are encrypted based on network routing tables that are created dynamically using routing protocols such as Border Gateway Protocol (BGP).
 
-Azure VPN gateways only support the use pre-shared key method of authentication. Both route-based and policy-based types also rely on Internet Key Exchange (IKE) in either version 1 or version 2 and Internet Protocol Security (IPsec). IKE is used to set up a security association (an agreement of the encryption) between two endpoints. This association is then passed to the IPsec suite, which encrypts and decrypts data packets encapsulated in the VPN tunnel.
+Authentication depends on the connection type. Site-to-site connections use IPsec/IKE and can authenticate with a pre-shared key or, on supported non-Basic gateways, certificates. IKE negotiates the security associations that IPsec uses to protect the tunneled traffic. Point-to-site connections can use certificate, Microsoft Entra ID, or RADIUS authentication, subject to the selected VPN protocol and gateway SKU. Microsoft Entra ID authentication requires OpenVPN and the Azure VPN Client.
 
 ## Azure VPN gateway sizes
 
 When you create a virtual network gateway, you need to specify a gateway SKU. You should select a SKU that satisfies your requirements based on the types of workloads, throughput, features, and SLAs.
 
-| Gateway SKUs - Generation1 | Maximum site-to-site VPN tunnels | Aggregate throughput | BGP support |
+| Gateway SKUs - Generation1 | Maximum site-to-site VPN tunnels | Aggregate throughput benchmark | BGP support |
 |---|---|---|---|
-| Basic  | 10 | 100 Mbps | Not supported |
-| VpnGw1/Az | 30 | 650 Mbps | Supported |
-| VpnGw2/Az | 30 | 1 Gbps | Supported |
-| VpnGw3/Az  | 30 | 1.25 Gbps | Supported |
+| Basic | 10 (route-based); 1 (policy-based) | 100 Mbps | Not supported |
+| VpnGw1AZ | 30 | 650 Mbps | Supported |
+| VpnGw2AZ | 30 | 1 Gbps | Supported |
+| VpnGw3AZ | 30 | 1.25 Gbps | Supported |
 
-This table shows Generation1 SKUs. When working with Generation1 SKUs, you can migrate between the VpnGw1, VpnGw2, and VpnGw3 SKUs as necessary. You can't migrate from the Basic SKU without removing and redeploying the VPN gateway. You can also create VPN gateways using Generation 2 SKUs. For the latest information about SKUs, throughput, and supported features, reference the links in the Summary section of this module.
+This table shows Generation1 SKUs. Generation2 SKUs are also available and can have different throughput benchmarks. Use an AZ SKU for new deployments; new non-AZ VpnGw1 through VpnGw5 gateways can no longer be created. For an existing non-AZ gateway, follow the [SKU migration guidance](/azure/vpn-gateway/gateway-sku-consolidation) rather than assuming that normal resizing is available. To resize a supported gateway, use the [documented SKU upgrade process](/azure/vpn-gateway/gateway-sku-upgrade). Changing a Basic gateway to another gateway SKU requires deleting and recreating the gateway and causes downtime. For current throughput and supported features, see [About gateway SKUs](/azure/vpn-gateway/about-gateway-skus).
 
 ## VPN gateway requirements
 
-The following Azure resources need to be present before you can deploy an operational VPN gateway:
+The following resources are used for a site-to-site (S2S) connection. To create the VPN gateway itself, first create the virtual network, GatewaySubnet, and public IP resource or resources. S2S connectivity also uses a local network gateway and a connection resource; these aren't prerequisites for creating the VPN gateway resource.
 
 - **Virtual network**: An Azure virtual network with enough address space for the additional subnet that you'll need for the VPN gateway. The address space for this virtual network must not overlap with the on-premises network to which you'll be connecting.
-- **GatewaySubnet**: A subnet called GatewaySubnet for the VPN gateway. Requires at least a /27 address mask. This subnet can't be used for any other services.
-- **Public IP address**: A Basic-SKU dynamic public IP address if using a non-zone-aware gateway. This address provides a public-routable IP address as the target for your on-premises VPN device. This IP address is dynamic, but it won't change unless you delete and re-create the VPN gateway.
+- **GatewaySubnet**: A dedicated subnet named GatewaySubnet. All non-Basic gateway SKUs require a /27 or larger subnet, such as /26 or /25. Basic can use a subnet as small as /29, although /27 or larger provides room for future configurations. Don't deploy other services into this subnet.
+- **Public IP address**: Create Standard SKU public IP resources with static allocation for a new VPN gateway. These provide the gateway's public connection endpoints. An active/standby gateway uses one public IP address. An active/active gateway uses one public IP address for each gateway instance; if P2S is enabled, it also requires a third public IP address for the P2S endpoint.
 - **Local network gateway**: Create a local network gateway to define the on-premises network's configuration, where the VPN gateway will connect and to what it will connect. This configuration includes the on-premises VPN device's public IPv4 address and the on-premises routable networks. This information is used by the VPN gateway to route packets that are destined for on-premises networks through the IPsec tunnel.
 
-When these prerequisite components are present, you can create the virtual network gateway to route traffic between the virtual network and the on-premises datacenter or other virtual networks. After the virtual network gateway is deployed, you can then create a connection resource to create a logical connection between the VPN gateway and the local network gateway:
+Create the virtual network gateway after the virtual network, GatewaySubnet, and public IP resources are available. After the VPN gateway and local network gateway exist, create an S2S connection resource that links them. The connection uses the following endpoints:
 
-1. The connection is made to the on-premises VPN device's IPv4 address as defined by the local network gateway.
-1. The connection is made from the virtual network gateway and its associated public IP address.
+- The connection is made to the on-premises VPN device's IPv4 address as defined by the local network gateway.
+- The connection is made from the virtual network gateway and its associated public IP address.
 
 You can configure multiple connections, up to the limit defined by the SKU, for each Azure VPN gateway.
 
+> [!NOTE]
+> These connection resources describe an S2S design. Direct P2S connections use client address-pool, protocol, and authentication settings on the VPN gateway; P2S itself doesn't require an on-premises VPN device or a local network gateway. A native VNet-to-VNet connection links the two virtual network gateways, and Azure manages its local-network-gateway information automatically. For the different resource models, see [VPN Gateway topology and design](/azure/vpn-gateway/design).
+
 ## High availability
 
-Even though you only see one VPN gateway resource in Azure, VPN gateways are deployed as two instances of managed virtual machines in an active/standby configuration. When planned maintenance or unplanned disruption affects the active instance, the standby instance automatically assumes responsibility for connections without any user or administrator intervention. Connections are interrupted during this failover, but they're typically restored within a few seconds for planned maintenance and within 90 seconds for unplanned disruptions.
+Although Azure shows one VPN gateway resource, the gateway uses two managed virtual machine instances. In active/standby mode, the standby instance takes over automatically when planned maintenance or an unplanned disruption affects the active instance. S2S and VNet-to-VNet connections resume after a brief interruption. Microsoft documents expected recovery within 10 to 15 seconds for planned maintenance and about 1 to 3 minutes in the worst case for unplanned issues. P2S connections are disconnected during failover, and users need to reconnect from their client computers.
 
-Azure VPN gateways support the BGP routing protocol, which allows you to also deploy VPN gateways in an active/active configuration. In this configuration, you assign a unique public IP address to each instance. You then create separate tunnels from the on-premises device to each IP address. You can extend the high availability by deploying another VPN device on-premises.
+Route-based VPN gateways other than Basic can also use an active/active configuration. Each gateway instance has a unique public IP address, and you configure the on-premises VPN device with a separate tunnel to each instance. BGP is optional for this single-on-premises-device design. For dual redundancy, you can add a second on-premises VPN device; that design requires BGP, two local network gateways, and two connection resources. For the topology-specific requirements, see [Design highly available gateway connectivity](/azure/vpn-gateway/vpn-gateway-highlyavailable).
 
 > [!NOTE]
 > Many organizations that have ExpressRoute connections also have deployed site-to-site VPN connections for an additional layer of redundancy.

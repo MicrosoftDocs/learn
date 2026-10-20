@@ -2,9 +2,9 @@
 uid: learn.azure.intro-to-azure-vpn-gateway.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: Knowledge check.
-  ms.date: 05/14/2025
+  ms.date: 10/17/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom:
@@ -17,7 +17,6 @@ durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
   questions:
     - content: You are planning an Azure VPN gateway for an Azure virtual network. The Azure virtual network already includes an Azure ExpressRoute gateway. Which of the following Azure VPN gateway types can you deploy on this Azure virtual network?
       choices:
@@ -41,16 +40,16 @@ quiz:
         - content: GatewaySubnet
           explanation: Correct. A subnet named GatewaySubnet must be present on an Azure virtual network to support an Azure VPN gateway.
           isCorrect: true
-    - content: Adatum has determined that it wants to have its Azure VPN connections support an aggregate throughput of 1.25 Gbps. Which of the following Azure VPN gateway SKUs should Adatum deploy?
+    - content: Adatum is comparing Generation1 Azure VPN gateway SKUs. Which of the following SKUs has a published aggregate throughput benchmark of 1.25 Gbps?
       choices:
-        - content: VpnGw1
-          explanation: Incorrect. VpnGw1 supports an aggregate throughput of 650 Mbps.
+        - content: VpnGw1AZ
+          explanation: Incorrect. A Generation1 VpnGw1AZ gateway has an aggregate throughput benchmark of 650 Mbps.
           isCorrect: false
-        - content: VpnGw2
-          explanation: Incorrect. VpnGw2 supports an aggregate throughput of 1 Gbps.
+        - content: VpnGw2AZ
+          explanation: Incorrect. A Generation1 VpnGw2AZ gateway has an aggregate throughput benchmark of 1 Gbps.
           isCorrect: false
-        - content: VpnGw3
-          explanation: Correct. VpnGw3 supports an aggregate throughput of 1.25 Gbps.
+        - content: VpnGw3AZ
+          explanation: Correct. A Generation1 VpnGw3AZ gateway has an aggregate throughput benchmark of 1.25 Gbps.
           isCorrect: true
 
 
