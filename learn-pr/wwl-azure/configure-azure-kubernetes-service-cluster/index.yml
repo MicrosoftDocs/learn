@@ -3,9 +3,9 @@ uid: learn.wwl.configure-azure-kubernetes-service-cluster
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Configure an Azure Kubernetes Service cluster
+  title: Configure an Azure Kubernetes Service Cluster
   description: "Use Azure Policy to enforce policies and safeguards on your Kubernetes clusters at scale. Azure Policy Ensures that your cluster is secure, compliant, and consistent across your organization."
-  ms.date: 05/15/2025
+  ms.date: 10/17/2026
   author: Orin-Thomas 
   ms.author: orthomas
   ms.topic: module

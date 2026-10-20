@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 05/15/2025
+  ms.date: 10/17/2026
   author: Orin-Thomas 
   ms.author: orthomas
   ms.topic: unit
@@ -17,7 +17,7 @@ durationInMinutes: 6
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge"
+  title: "Module assessment"
   questions:
   - content: "What is the purpose of Azure Policy in relation to Kubernetes clusters?"
     choices:
