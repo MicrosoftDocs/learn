@@ -2,13 +2,13 @@
 uid: learn.wwl.build-fabric-data-agent-ontology.knowledge-check
 title: Module assessment
 metadata:
-  title: Module Assessment
+  title: Module assessment
   module_assessment: true
   ai_generated_module_assessment: false
-  description: Check your knowledge of creating, configuring, testing, and publishing a Fabric data agent with an ontology as its data source.
-  ms.date: 04/17/2026
-  author: theresa-i
-  ms.author: theresai
+  description: Check understanding of ontology context, source configuration, query validation, and publishing a Fabric data agent.
+  ms.date: 10/20/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false
@@ -17,47 +17,58 @@ durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What query language does a Fabric data agent generate when an ontology is the data source?"
+  - content: "A Fabric data agent uses ontology context to answer a question from a bound lakehouse. Where does the query execute?"
     choices:
-    - content: "GQL (Graph Query Language), because it traverses the graph structure of the ontology."
+    - content: "Against the lakehouse SQL endpoint, using a source-native SQL query."
       isCorrect: true
-      explanation: "Correct. When an ontology is the data source, the agent generates GQL to traverse entity types and relationships. SQL is used for lakehouses and warehouses; KQL is used for KQL databases; DAX is used for Power BI semantic models."
-    - content: "SQL, because the ontology is bound to lakehouse tables."
+      explanation: "The ontology supplies semantic context. The underlying lakehouse executes the SQL query under the requesting user's permissions."
+    - content: "Against the ontology item, using a graph-native GQL query."
       isCorrect: false
-      explanation: "Incorrect. Although the ontology binds to lakehouse tables, the agent queries the ontology layer using GQL, not SQL directly. GQL is designed to traverse the graph structure of entity types and relationships."
-    - content: "KQL, because the ontology includes an eventhouse data source."
+      explanation: "An ontology is a context source in this integration, not the query execution endpoint. Direct graph sources are a separate source category."
+    - content: "Against the agent's instruction text, using a source-independent query."
       isCorrect: false
-      explanation: "Incorrect. KQL is used when the agent queries a KQL database data source directly. When the data source is an ontology, the agent uses GQL regardless of what underlying sources the ontology binds to."
-  - content: "When an ontology is the data source for a Fabric data agent, how do you improve the agent's accuracy?"
+      explanation: "Instructions guide the agent's behavior but don't contain the source data or execute queries."
+  - content: "An agent generates an incorrect aggregation for an eligible SQL source associated with an ontology. The shared business definitions are correct. Which configuration provides a verified query pattern?"
     choices:
-    - content: "By refining agent instructions, which guide how the agent interprets terminology, reasoning steps, response behavior, and scope."
+    - content: "Change the published agent description to contain the expected count."
+      isCorrect: false
+      explanation: "The published description explains the agent's purpose. It doesn't provide a verified source query for query generation."
+    - content: "Edit the downloaded ontology context to contain the expected count."
+      isCorrect: false
+      explanation: "Downloaded ontology context is read-only. Editing the downloaded file doesn't change the agent's configuration."
+    - content: "Mount the underlying SQL source and add a validated question-query pair."
       isCorrect: true
-      explanation: "Correct. For ontology data sources, agent instructions are how you shape the agent's behavior. Instructions let you map user terminology to ontology concepts, define reasoning paths, set response format expectations, and constrain scope."
-    - content: "By adding example query/question pairs to the data source configuration."
-      isCorrect: false
-      explanation: "Incorrect. Example queries aren't supported for ontology data sources. They're available for lakehouses, warehouses, and KQL databases. For ontology sources, use agent instructions to guide interpretation."
-    - content: "By modifying the ontology entity type definitions to match user phrasing."
-      isCorrect: false
-      explanation: "Incorrect. Modifying entity type definitions changes the underlying data model, which affects all tools connected to the ontology. The correct approach is to write agent instructions that map user terminology to existing ontology concepts."
-  - content: "A colleague receives a shared link for a published Fabric data agent backed by an ontology. They have the default (no extra) permission on the data agent link, but no permissions on the ontology item or its underlying lakehouse. What happens when they try to query the agent?"
+      explanation: "Eligible mounted sources support example queries that pair natural-language questions with verified source-native queries, including aggregation patterns."
+  - content: "An agent still uses an old department synonym immediately after an ontology update. Which action makes the changed context available without waiting for the periodic retrieval?"
     choices:
-    - content: "Their queries fail or return empty results, because they lack the required Read permissions on the ontology and its underlying data sources."
+    - content: "Refresh the ontology context in the data agent and retest the question."
       isCorrect: true
-      explanation: "Correct. For ontology-backed data agents, users need Read permission on both the ontology item and the underlying data sources (such as the lakehouse and KQL database) bound to the ontology. The data agent link alone isn't sufficient."
-    - content: "Their queries succeed, because the default permission grants full read access to all connected data sources."
+      explanation: "The agent retrieves ontology context every 10 minutes. A manual refresh makes recent context changes available for retesting."
+    - content: "Add the new synonym to the downloaded context file and retest the question."
       isCorrect: false
-      explanation: "Incorrect. The default permission grants access to query the published version of the data agent only. Users still need separate Read permissions on the ontology item and its underlying data sources for queries to return results."
-    - content: "They can only see the draft version of the agent, not the published version."
+      explanation: "The downloaded file is an inspection copy. Editing it doesn't update the context used by the agent."
+    - content: "Change the recipient's sharing permission to View details and retest the question."
       isCorrect: false
-      explanation: "Incorrect. The default permission (no extra permissions) grants access to the published version only—not the draft version. However, without Read on the ontology and its data sources, queries against even the published version will fail."
-  - content: "After publishing a Fabric data agent, what happens to the draft version?"
+      explanation: "View details controls access to agent configuration and versions. It doesn't refresh ontology context."
+  - content: "A colleague can open a published agent with default sharing permissions but lacks access to its ontology and bound lakehouse. Which action enables authorized queries?"
     choices:
-    - content: "The draft version remains editable, allowing you to continue refining the agent without affecting the published version that colleagues use."
+    - content: "Grant Edit and view details on the data agent instead of source access."
+      isCorrect: false
+      explanation: "Agent editing permissions don't grant access to the ontology or its underlying data."
+    - content: "Grant the required Read access to the ontology and underlying lakehouse data."
       isCorrect: true
-      explanation: "Correct. Publishing creates a stable published version while leaving the draft version available for ongoing development. Changes to the draft don't affect the published version, so you can iterate safely."
-    - content: "The draft version is automatically deleted when you publish."
+      explanation: "Sharing an agent doesn't grant source permissions. The colleague needs access to the relevant ontology and source data for query execution."
+    - content: "Republish the data agent to include the author's permissions in the shared link."
       isCorrect: false
-      explanation: "Incorrect. Publishing does not delete the draft version. Both versions exist simultaneously after publishing — the draft for continued development and the published version for colleague access."
-    - content: "The draft version becomes read-only and can no longer be edited."
+      explanation: "The source executes queries using the requesting user's permissions, not permissions copied from the author during publication."
+  - content: "An author needs to test revised instructions without changing the agent configuration colleagues currently use. Which workflow meets this requirement?"
+    choices:
+    - content: "Edit the downloaded ontology context and distribute the file to colleagues."
       isCorrect: false
-      explanation: "Incorrect. The draft version remains fully editable after publishing. This is intentional — it lets you incorporate feedback and refine the agent over time without disrupting the stable published version."
+      explanation: "Downloaded ontology context is read-only and isn't a way to change or test agent instructions."
+    - content: "Update and test the draft, then publish the changes after validation."
+      isCorrect: true
+      explanation: "Draft configuration changes remain separate from the published version until the author publishes updates."
+    - content: "Publish each instruction change first, then compare the answers afterward."
+      isCorrect: false
+      explanation: "Publishing a configuration change makes it part of the version colleagues use. The draft provides a separate place to validate it first."

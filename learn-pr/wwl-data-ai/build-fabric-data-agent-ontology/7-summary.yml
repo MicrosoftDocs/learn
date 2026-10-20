@@ -3,10 +3,10 @@ uid: learn.wwl.build-fabric-data-agent-ontology.summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary of building, configuring, testing, and publishing a Fabric data agent with an ontology as its data source for natural language queries over governed hospital data.
-  ms.date: 04/17/2026
-  author: theresa-i
-  ms.author: theresai
+  description: Review ontology context, source-native queries, validation, and permission-aware sharing for a Fabric data agent.
+  ms.date: 10/20/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false
