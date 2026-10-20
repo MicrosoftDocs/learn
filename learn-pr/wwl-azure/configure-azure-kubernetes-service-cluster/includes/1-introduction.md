@@ -1,4 +1,4 @@
-Azure Policy is an add-on that enables centralized, consistent enforcement of policies and safeguards on Kubernetes clusters at scale.
+The Azure Policy add-on for Azure Kubernetes Service (AKS) enables centralized, consistent enforcement of policies and safeguards on AKS clusters at scale.
 
 ## Scenario
 

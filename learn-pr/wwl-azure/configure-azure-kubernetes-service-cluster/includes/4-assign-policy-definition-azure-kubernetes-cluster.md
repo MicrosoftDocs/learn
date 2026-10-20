@@ -7,12 +7,18 @@ Find the built-in policy definitions for managing your cluster using the Azure p
 > [!NOTE]
 > To complete this exercise you'll need an [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
-1.  Select in the left pane and then search for and select **Policy**.
-2.  In the left pane of the Azure Policy page, select **Definitions**. :::image type="content" source="../media/policy-definitions-list-392fc18a.png" alt-text="Screenshot of the Azure Policy definitions.":::
+1. In the Azure portal, search for and select **Policy**.
+2.  In the left pane of the Azure Policy page, select **Definitions**.
+
+    :::image type="content" source="../media/policy-definitions-list-392fc18a.png" alt-text="Screenshot of the Azure Policy definitions.":::
     
-3.  From the Category dropdown list box, use **Select all** to clear the filter and then select **Kubernetes**. :::image type="content" source="../media/kubernetes-policy-definitions-a786abcc.png" alt-text="Screenshot of the Azure Policy definitions for Kubernetes.":::
+3.  From the Category dropdown list box, use **Select all** to clear the filter and then select **Kubernetes**.
+
+    :::image type="content" source="../media/kubernetes-policy-definitions-a786abcc.png" alt-text="Screenshot of the Azure Policy definitions for Kubernetes.":::
     
-4.  Select the policy definition, then select the **Assign** button. :::image type="content" source="../media/policy-assign-definition-e2e4d5b7.png" alt-text="Screenshot of the policy assignment attributes.":::
+4.  Select the policy definition, then select the **Assign** button.
+
+    :::image type="content" source="../media/policy-assign-definition-e2e4d5b7.png" alt-text="Screenshot of the policy assignment attributes.":::
     
 5.  Set the **Scope** to the management group, subscription, or resource group of the Kubernetes cluster where the policy assignment applies.
     
@@ -25,12 +31,22 @@ Find the built-in policy definitions for managing your cluster using the Azure p
 7.  Set the Policy enforcement to one of the values.
     
     
-     -  **Enabled** \- Enforce the policy on the cluster. Kubernetes admission requests with violations are denied.
-     -  **Disabled** \- Don't enforce the policy on the cluster. Kubernetes admission requests with violations aren't denied. Compliance assessment results are still available. The *Disabled* option is helpful for testing the policy definition as admission requests with violations aren't denied.
-8.  Select **Next**.
-9.  Set **parameter values**
+     - **Enabled** - Apply the configured policy effect. A policy with the `Deny` effect rejects matching admission requests that violate the policy. A policy with the `Audit` effect reports noncompliance without rejecting those requests.
+     - **Disabled** - Do not enforce this assignment's effect during resource creation or updates. For `Audit` and `Deny` policies, compliance assessment continues. Other policy assignments and admission controls can still reject a request.
+
+    The **Disabled** enforcement mode differs from the `Disabled` policy effect, which turns off evaluation for that policy.
+
+8. Select the **Parameters** tab.
+9. Set the required parameter values for the selected policy. If the policy exposes an **Effect** parameter, choose a supported value appropriate to your goal, such as **Audit** for reporting without blocking or **Deny** to block violations. Setting **Policy enforcement** to **Enabled** does not change the selected effect.
 10. Select **Review + create**, and select **Create**.
-11. Select **Overview** in the left pane and then search for and select **Policy**.
-12. Under **Name**, view the compliance for the Policy definition. :::image type="content" source="../media/policy-compliance-list-78b0d08d.png" alt-text="Screenshot of the policy compliance status.":::
+11. In **Policy**, select **Compliance** in the left pane.
+
+    Use the **Scope** filter if needed to include the assignment's scope.
+
+    Assignment synchronization and compliance reporting are asynchronous. Policy assignments can take up to 20 minutes to synchronize into a cluster. Compliance data is updated separately through periodic evaluation and reporting, so the portal might not immediately reflect a new assignment or a recent resource change.
+
+12. Find the assignment you created in the **Name** column and select it to view its compliance details.
+
+    :::image type="content" source="../media/policy-compliance-list-78b0d08d.png" alt-text="Screenshot of the policy compliance status.":::
     
 
