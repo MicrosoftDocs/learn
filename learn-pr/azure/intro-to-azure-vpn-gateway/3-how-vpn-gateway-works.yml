@@ -2,9 +2,9 @@
 uid: learn.azure.intro-to-azure-vpn-gateway.how-vpn-gateway-works
 title: How Azure VPN Gateway works
 metadata:
-  title: How Azure VPN Gateway works
+  title: How Azure VPN Gateway Works
   description: Learn how Azure VPN Gateway works and how to implement it in your organization.
-  ms.date: 05/14/2025
+  ms.date: 10/17/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom:
