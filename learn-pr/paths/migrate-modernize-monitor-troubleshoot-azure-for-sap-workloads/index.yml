@@ -1,28 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.migrate-modernize-monitor-troubleshoot-azure-for-sap-workloads
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - support-engineer
-    - solution-architect
-  skills:
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Data Analytics"
-    - "Cloud Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/migrate-modernize-monitor-troubleshoot-azure-for-sap-workloads/index.yml
-  uid: 15a7b975-51ff-434f-91bc-e9edbce6c08a
   title: Modernize, monitor, and troubleshoot Azure for SAP workloads
   description: Modernize, monitor, and troubleshoot Azure for SAP workloads
   ms.date: 01/09/2024

@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-content-ai-api
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 60
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "Information Extraction"
-    - "Multimodal AI"
-    - "API Management"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/analyze-content-ai-api/index.yml
-  uid: e4014fab-8fc7-4d00-8829-062211e54a53
   title: Create an Azure Content Understanding client application 
   description: Use the Azure Content Understanding API for multimodal content analysis and information extraction.
   author: ivorb

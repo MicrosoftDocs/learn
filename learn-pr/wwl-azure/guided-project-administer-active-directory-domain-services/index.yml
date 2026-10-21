@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-administer-active-directory-domain-services
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 114
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - identity-access-admin
-    - security-engineer
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Infrastructure Management"
-    - Cybersecurity
-    - Virtualization
-    - "IT Networking"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/guided-project-administer-active-directory-domain-services/index.yml
-  uid: 01b57af8-d945-481b-b754-5c762568bb0f
   title: Guided project - Administer Active Directory Domain Services
   description: "This guided project helps prepare you to manage Active Directory Domain services, including creating and deploying domains, configuring group policy objects, establishing and enforcing passwords, and maintaining security of Active Directory."
   ms.date: 08/12/2024

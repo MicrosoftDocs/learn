@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.mitigate-incidents-microsoft-365-defender
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 82
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-defender
-    - defender-endpoint
-    - security-copilot
-    - microsoft-sentinel
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-    - security-engineer
-  skills:
-    - "Security Operations Management"
-    - "Security Analytics"
-    - "Threat Management"
-    - "Security Automation"
-    - "Generative AI"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/mitigate-incidents-microsoft-365-defender/index.yml
-  uid: f35bd34d-bcde-4249-94e9-e2cfe9e7de0d
   title: Mitigate incidents using Microsoft Defender
   description: "Mitigate incidents using Microsoft Defender"
   ms.date: 03/12/2026

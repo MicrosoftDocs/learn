@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.use-data-factory-pipelines-fabric
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 59
-  last.refresh.date: null
-  modality: module
-  products:
-    - fabric
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-  skills:
-    - "Data Engineering"
-    - "Process Automation"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/use-data-factory-pipelines-fabric/index.yml
-  uid: f1307dd0-5989-4641-8393-032b3c4d20e6
   title: Orchestrate Processes and Data Movement with Microsoft Fabric
   description: "Use Data Factory pipelines in Microsoft Fabric"
   ms.date: 9/16/2026

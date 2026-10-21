@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-data-security-posture-management-protect-remediate
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-purview
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ip-admin
-  skills:
-    - "AI Compliance"
-    - "Data Security"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-data-security-posture-management-protect-remediate/index.yml
-  uid: 959fa718-a1cc-4478-b22a-9ef7e94beaba
   title: Protect and Remediate Sensitive Data in Microsoft Purview
   description: "Use Data Security Posture Management (DSPM) objectives and remediation workflows to select protection approaches, configure one-click policies, and assess and remediate oversharing risks across the data estate."
   ms.date: 04/30/2026

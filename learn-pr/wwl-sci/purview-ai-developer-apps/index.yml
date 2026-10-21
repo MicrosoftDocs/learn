@@ -1,37 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-ai-developer-apps
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 63
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-purview
-    - m365
-    - entra
-    - microsoft-foundry
-    - microsoft-365-copilot
-    - fabric
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ip-admin
-    - security-engineer
-    - developer
-  skills:
-    - "AI Compliance"
-    - "Data Security"
-    - "AI Risk Management"
-    - "Agentic AI"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Security Analytics"
-    - "Data Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-ai-developer-apps/index.yml
-  uid: 207ee807-72c5-4902-8bc7-288ed5ac459e
   title: Secure Developer AI Environments with Microsoft Purview
   description: Microsoft Purview provides tools to secure developer AI environments by discovering apps, assessing data access, and applying appropriate protections. This includes detecting generative AI usage, assigning user risk levels, and applying dynamic enforcement based on user behavior and data sensitivity.
   ms.date: 08/26/2025

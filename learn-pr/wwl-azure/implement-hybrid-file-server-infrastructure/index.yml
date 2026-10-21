@@ -1,35 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-hybrid-file-server-infrastructure
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 92
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - storage-admin
-    - platform-engineer
-    - solution-architect
-  skills:
-    - Storage
-    - "Data Migration"
-    - "Cloud Infrastructure"
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Identity and Access Management (IAM)"
-    - "Network Connectivity"
-    - "Data Security"
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-hybrid-file-server-infrastructure/index.yml
-  uid: ce544572-78ec-4138-89b5-87282b49a891
   title: Implement a hybrid file server infrastructure
   description: Implement a hybrid file server infrastructure using Azure Files and Azure File Sync, including cloud tiering, DFS Replication migration, and Storage Migration Services.
   ms.date: 08/31/2026

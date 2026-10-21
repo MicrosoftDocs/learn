@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.introduction-to-azure-dns
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 28
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - network-engineer
-    - systems-administrator
-  skills:
-    - "IT Networking"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-dns/index.yml
-  uid: ce4967b8-6ebb-49c1-8bb8-9c24334c85e2
   title: Introduction to Azure DNS
   description: Azure DNS is a cloud service for hosting and managing domain name system (DNS) zones. A DNS zone contains DNS records for a domain.
   ms.date: 10/18/2026

@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.philanthropies.create-images-with-generative-ai
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 26
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - nonprofit-professionals
-  skills:
-    - "Generative AI"
-    - "AI Prompting"
-    - "Multimodal AI"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/create-images-with-generative-ai/index.yml
-  uid: 85d28608-cc9e-4d56-8566-deb64cba106e
   title: Create Images with Generative AI
   description: Discover AI-powered image generators. Learn about image creation tools like Microsoft Image Creator. Understand their potential applications in the workplace and training settings and discover best practices for optimal results. Enhance your skills and transform your creative process with AI-powered image generators.
   author: yoosunee

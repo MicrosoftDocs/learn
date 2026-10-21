@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-defender-windows-client
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 42
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-    - microsoft-defender
-    - intune
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - security-engineer
-    - administrator
-  skills:
-    - Cybersecurity
-    - "Device Management"
-    - "Security Architecture Design"
-    - "IT Networking"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/manage-defender-windows-client/index.yml
-  uid: 42309bd8-2589-49e9-a7c5-927315cda1a4
   title: MD-102 3-Manage Microsoft Defender in Windows client
   description: "This module explains the built-in security features of Windows clients and how to implement them using policies."
   ms.date: 05/10/2023

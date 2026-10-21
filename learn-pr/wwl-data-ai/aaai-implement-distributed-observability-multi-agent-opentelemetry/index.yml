@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-distributed-observability-multi-agent-opentelemetry
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 41
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - devops-engineer
-    - solution-architect
-  skills:
-    - "Agent Operations"
-    - "Large Language Model Operations (LLMOps)"
-    - "Cloud Administration"
-    - "Security Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/aaai-implement-distributed-observability-multi-agent-opentelemetry/index.yml
-  uid: 05b8d9c8-cb57-4396-bcb5-82efb5404086
   title: Implement Distributed Observability for Multi-Agent Solutions with OpenTelemetry
   description: "Implement distributed observability infrastructure for production multi-agent AI solutions using OpenTelemetry and Azure Monitor. Design distributed tracing architectures with correlation propagation, implement structured logging for agent decision paths, configure telemetry aggregation, and build anomaly detection for agent behavior patterns."
   ms.date: 8/4/2026

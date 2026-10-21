@@ -1,36 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.entra-ai-secure-workloads
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - microsoft-defender
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-    - security-engineer
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "AI Security (Model-Level)"
-    - "AI Risk Management"
-    - "Security Architecture Design"
-    - "Cloud Administration"
-    - "Application Security"
-    - "Zero Trust Security"
-    - "Data Security"
-    - "Agentic AI"
-    - "Security Automation"
-    - "Security Analytics"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/entra-ai-secure-workloads/index.yml
-  uid: 75f5254b-f885-4d72-9211-4130654b7e4b
   title: 'Secure AI identity infrastructure with Microsoft Entra'
   description: 'Learn how to secure identities used by AI workloads in Azure. Build skills in workload identity architecture, access management, Conditional Access, and identity risk response by using Microsoft Entra.'
   ms.date: 04/22/2026

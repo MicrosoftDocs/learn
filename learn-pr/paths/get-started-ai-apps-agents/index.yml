@@ -1,45 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-ai-apps-agents
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "Cloud Computing"
-    - "AI Infrastructure"
-    - "Application Development"
-    - "Agent Development"
-    - "Generative AI"
-    - "Application Security"
-    - "Cloud Infrastructure"
-    - "AI Solutions"
-    - "Natural Language Processing (NLP)"
-    - "Python (Programming Language)"
-    - "Computer Vision"
-    - "Multimodal AI"
-    - "Information Extraction"
-    - "Knowledge Grounding for AI"
-    - "Retrieval-Augmented Generation (RAG)"
-    - "Semantic Search"
-    - "Agentic AI"
-    - "Identity and Access Management (IAM)"
-    - "AI Security (Model-Level)"
-    - "AI Model Evaluation & Testing"
-    - "Data Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-ai-apps-agents/index.yml
-  uid: 50a7a2c1-24b4-4578-87e2-34fd4ce0d90b
   title: Get started with AI applications and agents on Azure
   description: Learn how to get started with AI workloads and solutions in Microsoft Foundry.
   brand: azure

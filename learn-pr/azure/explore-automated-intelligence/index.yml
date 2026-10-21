@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.explore-automated-intelligence
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 29
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - solution-architect
-  skills:
-    - Automation
-    - "Process Automation"
-    - "AI Solutions"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/explore-automated-intelligence/index.yml
-  uid: ae77fa53-83d6-4486-8d3b-de6b35181b4f
   title: Explore Automated Intelligence
   description: Learn automated intelligence methods and evaluate when to use it.
   author: softchris

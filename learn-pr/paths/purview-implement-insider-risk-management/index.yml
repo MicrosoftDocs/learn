@@ -1,32 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.purview-implement-insider-risk-management
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - microsoft-purview
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ip-admin
-    - risk-practitioner
-  skills:
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Data Security"
-    - "Security Analytics"
-    - Cybersecurity
-    - "Threat Management"
-    - "Security Operations Management"
-    - "AI Governance"
-    - "Security Automation"
-    - "Identity and Access Management (IAM)"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/purview-implement-insider-risk-management/index.yml
-  uid: fae42d0e-2931-4877-96bc-2c8af968c986
   title: 'Implement and manage Microsoft Purview Insider Risk Management (SC-401)'
   description: 'Implement Microsoft Purview Insider Risk Management to detect, investigate, and respond to internal risks while protecting data, ensuring compliance, and maintaining employee trust.'
   ms.date: 04/27/2026

@@ -2,27 +2,6 @@
 uid: learn.dpu.k-12-educators
 title: Microsoft Education for K-12 educators
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 20
-  last.refresh.date: null
-  modality: module
-  products:
-    - m365
-    - microsoft-365-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - k-12-educator
-  skills:
-    - "Digital Accessibility"
-    - "Accessible AI"
-    - "Generative AI"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/microsoft-education-k-12-educators/index.yml
-  uid: 10a1cd6e-4680-4ab7-860e-2503f17b464d
   title: Microsoft Education for K-12 educators
   description: In this module, you'll explore various Microsoft Education solutions for K-12 educators.
   ms.date: 07/17/2025

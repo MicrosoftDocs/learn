@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-government-its-structure
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 39
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - it-professional
-  skills:
-    - "Cloud Computing"
-    - "Cloud Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-government-its-structure/index.yml
-  uid: 9fb69386-0eab-4346-b07c-4bb93776e3a8
   title: Describe the government and its structure
   description: Understand government and how it is organized.
   ms.date: 04/29/2022

@@ -1,28 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-network-access-ai-workloads
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure-machine-learning
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - network-engineer
-    - systems-administrator
-  skills:
-    - "IT Networking"
-    - "Cloud Administration"
-    - "Cloud Infrastructure"
-    - "Data Security"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-network-access-ai-workloads/index.yml
-  uid: 0e204569-d812-47ce-89e6-518187407ef1
   title: Manage Network Access for AI workloads
   description: Strengthen your command over securing network access for AI workloads in Azure. This learning path is tailored for Cloud Administrators and IT professionals looking to enforce precise access controls and ensure isolation of sensitive AI resources. Learn how to implement private endpoints, configure virtual networks, and restrict exposure of Azure AI services and Azure Machine Learning workspaces. Whether you're designing robust hybrid networks or hardening cloud-native architectures, this path empowers you with practical skills to safeguard your AI infrastructure in today's security-first digital landscape. 
   ms.date: 07/08/2025

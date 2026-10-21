@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.github.github-actions-ci
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 81
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-    - platform-engineer
-    - security-engineer
-  skills:
-    - DevOps
-    - Automation
-    - "Application Development"
-    - "Cloud Infrastructure"
-    - "Application Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/github-actions-ci/index.yml
-  uid: 0dddfde8-794d-4636-8bf2-b49f9f079939
   title: "Build continuous integration workflows by using GitHub Actions"
   description: Learn how to create workflows to add continuous integration (CI) to your projects.
   ms.date: 11/15/2024

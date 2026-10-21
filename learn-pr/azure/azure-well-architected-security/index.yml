@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-security
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 54
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - solution-architect
-  skills:
-    - "Security Architecture Design"
-    - "Data Security"
-    - "Identity and Access Management (IAM)"
-    - "Application Security"
-    - "Security Operations Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-well-architected-security/index.yml
-  uid: 5648d77c-ec61-4f74-8f15-982dad094567
   title: Microsoft Azure Well-Architected Framework - Security
   description: Discover the tools that Azure provides to help you design a secure environment throughout your infrastructure, data, network, and applications.
   ms.date: 07/07/2025

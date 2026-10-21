@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-core-architectural-components-of-azure
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 28
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - it-professional
-    - administrator
-  skills:
-    - "Cloud Infrastructure"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-core-architectural-components-of-azure/index.yml
-  uid: 38bb12e2-42cc-49a0-ac26-eeec3029f507
   title: Describe the core architectural components of Azure
   description: "Describe the core architectural components of Azure"
   ms.date: 02/03/2026

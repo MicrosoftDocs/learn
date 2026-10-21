@@ -2,37 +2,6 @@
 uid: learn.intro-to-azure-operator-nexus
 hidden: true
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 205
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - platform-engineer
-    - network-engineer
-    - systems-administrator
-    - security-engineer
-    - technology-manager
-  skills:
-    - "Cloud Infrastructure"
-    - "Solution Architecture"
-    - "Infrastructure Management"
-    - "IT Networking"
-    - Virtualization
-    - Automation
-    - "Cloud Administration"
-    - "Security Architecture Design"
-    - "IT Strategy"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-operator-nexus/index.yml
-  uid: 5902c7a5-4435-4819-9f3e-4682f9a1154b
   title: Introduction to Azure Operator Nexus
   description: "Learn the functionalities of Azure Operator Nexus, which enables you to execute applications within a local infrastructure while offering access to Azure services within a Telco operator's data center."
   ms.date: 05/05/2023

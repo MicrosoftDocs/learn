@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.transform-data-by-implementing-pivot-unpivot-rollup-cube
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 50
-  last.refresh.date: null
-  modality: module
-  products:
-    - fabric
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-analyst
-    - data-engineer
-    - developer
-  skills:
-    - SQL
-    - "Data Analytics"
-    - Databases
-    - "Data Engineering"
-    - "Database Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/transform-data-by-implementing-pivot-unpivot-rollup-cube/index.yml
-  uid: 32d42673-81ee-49af-b685-116d0f1a7011
   title: Transform data by implementing pivot, unpivot, rollup, and cube
   description: "This content is a part of Transform data by implementing pivot, unpivot, rollup, and cube."
   ms.date: 08/12/2026

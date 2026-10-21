@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.extract-data-with-document-intelligence
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 71
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "Information Extraction"
-    - "Computer Vision"
-    - "Machine Learning"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/extract-data-with-document-intelligence/index.yml
-  uid: 01f19faf-e254-4359-bfae-ced94a3f99b7
   title: Extract data with Azure Document Intelligence
   description: Azure Document Intelligence uses OCR and deep learning to extract text, key-value pairs, tables, and structured data from documents. Learn how to use prebuilt models, train custom models, and build document processing solutions.
   author: ivorb

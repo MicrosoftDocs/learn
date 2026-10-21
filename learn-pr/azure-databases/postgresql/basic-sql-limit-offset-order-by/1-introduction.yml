@@ -6,7 +6,7 @@ metadata:
   description: "This unit introduces PostgreSQL clauses LIMIT, OFFSET, and ORDER BY for controlling, paginating, and sorting SQL query results efficiently."
   ms.date: 05/23/2025
   author: milenak
-  ms.author: maghan
+  ms.author: mpopovic
   ms.topic: unit
 ###########################################################################
 ###

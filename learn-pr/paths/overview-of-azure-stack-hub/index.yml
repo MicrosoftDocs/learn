@@ -1,37 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.overview-of-azure-stack-hub
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - network-engineer
-    - security-engineer
-    - devops-engineer
-  skills:
-    - "Cloud Computing"
-    - "Cloud Infrastructure"
-    - "Solution Architecture"
-    - "Infrastructure Management"
-    - "IT Networking"
-    - DevOps
-    - "Cloud Administration"
-    - "Network Connectivity"
-    - "Identity and Access Management (IAM)"
-    - Cybersecurity
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/overview-of-azure-stack-hub/index.yml
-  uid: 0bb51041-5460-469e-96a9-329958dff73d
   title: Overview of Azure Stack Hub
   description: Overview of Azure Stack Hub
   ms.date: 03/17/2022

@@ -1,37 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-hybrid-data-platform-sql-server
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 58
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - fabric
-    - entra
-    - defender-for-cloud
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-    - data-engineer
-    - administrator
-    - security-engineer
-  skills:
-    - "Cloud Infrastructure"
-    - "Cloud Administration"
-    - "Data Engineering"
-    - "Data Migration"
-    - Databases
-    - "Identity and Access Management (IAM)"
-    - Cybersecurity
-    - "Data Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/sqlserver/understand-hybrid-data-platform-sql-server/index.yml
-  uid: 31d465d4-959f-438e-8613-edb51de73a9d
   title: Understand Hybrid Data Platform on SQL Server 2025
   description: "This module helps users understand the hybrid data platform capabilities of SQL Server 2025."
   ms.date: 08/11/2026

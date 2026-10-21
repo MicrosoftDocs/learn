@@ -1,25 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.describe-purpose-use-source-control
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - DevOps
-    - "Collaboration Tools"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/describe-purpose-use-source-control/index.yml
-  uid: 9b8e865f-1f59-45f0-a6d7-f1dff0f05bf3
   title: Describe the purpose and use of source control
   description: Introduction to source control as a concept with practical application in the final module.
   ms.date: 06/07/2024

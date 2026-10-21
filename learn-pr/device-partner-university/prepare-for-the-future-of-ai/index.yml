@@ -2,26 +2,6 @@
 uid: learn.dpu.prepare-for-the-future-of-ai
 title: Prepare for the future of AI with Copilot+ PCs
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 16
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - technology-manager
-    - business-user
-  skills:
-    - "AI Infrastructure"
-    - "AI Productivity"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/prepare-for-the-future-of-ai/index.yml
-  uid: f0019782-43b6-483c-97ea-6d58773f4d88
   title: Prepare For The Future Of AI With Copilot+ PCs
   description: In this module, you'll learn what makes Copilot+ PCs a new class of AI-powered Windows 11 devices, including how their built-in Neural Processing Units (NPUs) enable faster, more private, and energy-efficient AI experiences.
   ms.date: 07/29/2025

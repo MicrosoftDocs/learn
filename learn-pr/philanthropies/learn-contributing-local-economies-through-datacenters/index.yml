@@ -2,25 +2,6 @@
 uid: learn.philanthropies.learn-contributing-local-economies-through-datacenters
 
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 57
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - it-professional
-  skills:
-    - "Cloud Computing"
-    - "Cloud Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/learn-contributing-local-economies-through-datacenters/index.yml
-  uid: 05aee86a-7dc5-44d3-b3b3-0e1bf18c0bf8
   title: Learn about contributing to local economies through datacenters
   description: In this module, you'll explore the vital role datacenters play in shaping local economies and communities. More than just hubs of technology, datacenters serve as engines of opportunity, driving investment, innovation, and long-term prosperity. You'll learn how these digital infrastructure sites contribute to job creation, enhance local services, and foster economic growth. Additionally, this module examines how datacenters collaborate with local organizations through education, workforce training, and corporate social responsibility (CSR) initiatives. By the end of this module, you'll have a deeper understanding of the transformative impact datacenters have on the regions they serve.
   ms.date: 05/08/2025

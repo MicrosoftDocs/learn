@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 8
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - developer
-    - solution-architect
-  skills:
-    - "Threat Management"
-    - "Security Architecture Design"
-    - "Application Security"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus/index.yml
-  uid: 4b9020e8-b63f-4a62-9cc8-0971b9439cea
   title: Approach your data-flow diagram with the right threat model focus
   description: Threat modeling is an effective technique to help you identify threats and ways to reduce or eliminate risk. We start by deciding to focus on either what needs to be protected or who it needs protection from.
   ms.date: 05/23/2023

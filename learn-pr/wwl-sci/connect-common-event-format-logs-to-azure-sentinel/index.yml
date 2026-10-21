@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-common-event-format-cef-logs-to-azure-sentinel
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 20
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-sentinel
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-    - security-engineer
-  skills:
-    - "Security Analytics"
-    - Cybersecurity
-    - "Cloud Administration"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/connect-common-event-format-logs-to-azure-sentinel/index.yml
-  uid: 77312fb6-6457-40fa-8d3a-25dd746aa203
   title: Connect Common Event Format logs to Microsoft Sentinel
   description: "Connect Common Event Format logs to Microsoft Sentinel"
   ms.date: 04/17/2026

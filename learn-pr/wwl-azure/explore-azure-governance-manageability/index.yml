@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-governance-manageability
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 54
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - defender-for-cloud
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - systems-administrator
-    - platform-engineer
-  skills:
-    - "Cloud Administration"
-    - "Cloud Infrastructure"
-    - "Identity and Access Management (IAM)"
-    - Automation
-    - Cybersecurity
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-azure-governance-manageability/index.yml
-  uid: 58ab008b-e785-4177-8164-dc46ba6ac23d
   title: Explore governance and manageability for SAP on Azure
   description: "This module explores using the Azure Governance collection of concepts and services that are designed to enable management of Azure resources at scale. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 08/02/2024

@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 82
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - data-engineer
-    - solution-architect
-  skills:
-    - Databases
-    - "Database Design"
-    - "Data Engineering"
-    - Storage
-    - "Application Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-case-study-nosql-databases/index.yml
-  uid: 14291a85-d004-40cb-8110-9fe0826dbda2
   title: 'Case studies: NoSQL databases and cloud object storage'
   description: Carnegie Mellon University's Cloud Developer course. Learn about two more types of storage - NoSQL databases and object storage - with case studies from industry.
   brand: azure

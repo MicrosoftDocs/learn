@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.run-cognitive-services-iot-edge
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 64
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - systems-administrator
-    - developer
-  skills:
-    - "AI Infrastructure"
-    - "Cloud Administration"
-    - "Model Hosting & Inference"
-    - "Natural Language Processing (NLP)"
-    - "Network Connectivity"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/run-cognitive-services-iot-edge/index.yml
-  uid: 6c4d90be-a3cc-4042-abf4-a186ccf5d8ea
   title: "Run Azure AI services on IoT Edge"
   description: Implement a cognitive service for performing language detection on an IoT Edge device.
   ms.date: 08/19/2025

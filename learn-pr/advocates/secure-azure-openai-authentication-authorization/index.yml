@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.secure-azure-openai-authentication-authorization
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 23
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-openai
-    - microsoft-foundry
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-    - developer
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Cloud Administration"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/secure-azure-openai-authentication-authorization/index.yml
-  uid: 6f5fb529-a396-4e08-b989-1ed70847b66c
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 05/22/2026

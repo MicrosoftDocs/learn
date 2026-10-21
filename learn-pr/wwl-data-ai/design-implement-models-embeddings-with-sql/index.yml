@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-models-embeddings-with-sql
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 61
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - azure-openai
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - data-engineer
-  skills:
-    - "Embedding Models"
-    - SQL
-    - "Database Development"
-    - "Vector Databases"
-    - "Retrieval-Augmented Generation (RAG)"
-    - "Data Engineering"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/design-implement-models-embeddings-with-sql/index.yml
-  uid: 9497077d-f692-4267-9d8c-46317a0c4064
   title: Design and Implement Models and Embeddings With SQL
   description: Integrate AI models with Azure SQL Database using external models, the vector data type, and built-in AI functions. Design embedding strategies, generate embeddings from text, and implement maintenance patterns.
   ms.date: 07/16/2026

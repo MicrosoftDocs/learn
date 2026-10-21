@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.github.automate-devops-github-apps
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 43
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-    - systems-administrator
-    - solution-architect
-  skills:
-    - DevOps
-    - "Identity and Access Management (IAM)"
-    - "Application Security"
-    - "API Management"
-    - "Security Automation"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/automate-devops-github-apps/index.yml
-  uid: 0cabf1f2-0fe0-447c-897b-fd163894ba85
   title: "Automate DevOps processes by using GitHub Apps"
   description: Learn to automate DevOps processes by using GitHub Apps that handle repetitive tasks, enforce team policies, and maintain a tidy repository.
   ms.date: 07/03/2025

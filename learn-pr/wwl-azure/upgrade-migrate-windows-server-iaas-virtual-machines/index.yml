@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 53
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - systems-administrator
-    - platform-engineer
-  skills:
-    - "Data Migration"
-    - "Cloud Infrastructure"
-    - Storage
-    - Virtualization
-    - "Network Connectivity"
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/upgrade-migrate-windows-server-iaas-virtual-machines/index.yml
-  uid: 6f165ccf-6059-4d8e-99c6-8721f9e06420
   title: Upgrade and migrate Windows Server IaaS virtual machines
   description: "Learn to migrate a workload running in Windows Server to an infrastructure as a service (IaaS) virtual machine (VM) and to Windows Server 2025 by using Windows Server migration tools or the Storage Migration Service."
   ms.date: 01/23/2026

@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.business-continuity
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 33
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - support-engineer
-    - administrator
-  skills:
-    - "Cloud Administration"
-    - Storage
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/business-continuity/index.yml
-  uid: a2163b24-63c5-4223-9a34-e3ae6944af79
   title: Troubleshoot business continuity with Microsoft Azure
   description: "Businesses rely on data for decision making, compliance, and for day-to-day operations. When systems fail for any reason, data backups must be reliable so that data can be recovered. This module covers some of the issues you may encounter when troubleshooting Azure backup and recovery. AZ720 AZ-720 az-720 networking"
   ms.date: 04/27/2023

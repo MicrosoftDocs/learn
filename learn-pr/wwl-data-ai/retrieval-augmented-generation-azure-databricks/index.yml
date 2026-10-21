@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.retrieval-augmented-generation-azure-databricks
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 62
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-databricks
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - ai-engineer
-  skills:
-    - "Knowledge Grounding for AI"
-    - "Embedding Models"
-    - "Vector Databases"
-    - "Data Engineering"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/retrieval-augmented-generation-azure-databricks/index.yml
-  uid: 2cf9c4da-fe79-40ce-9419-094f2d6b8756
   title: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
   description: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
   ms.date: 06/17/2026

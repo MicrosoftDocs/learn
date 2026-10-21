@@ -1,40 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.perform-basic-azure-management-tasks
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - defender-for-cloud
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - network-engineer
-    - systems-administrator
-    - platform-engineer
-    - security-operations-analyst
-  skills:
-    - Cybersecurity
-    - "Cloud Infrastructure"
-    - "Security Operations Management"
-    - DevOps
-    - "Application Security"
-    - "AI Security (Model-Level)"
-    - "IT Networking"
-    - "Security Architecture Design"
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Identity and Access Management (IAM)"
-    - "Data Security"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/perform-basic-azure-management-tasks/index.yml
-  uid: 46416371-c1cc-4269-9ec8-978c71d2d679
   title: Perform basic Azure Management Tasks (Security and Monitoring)
   description: Perform basic Azure Management Tasks (Security and Monitoring)
   ms.date: 01/23/2026

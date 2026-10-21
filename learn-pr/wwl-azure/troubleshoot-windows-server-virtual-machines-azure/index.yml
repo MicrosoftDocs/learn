@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 66
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - support-engineer
-    - systems-administrator
-    - platform-engineer
-  skills:
-    - "Cloud Administration"
-    - "Cloud Infrastructure"
-    - Storage
-    - "Network Connectivity"
-    - "Data Analytics"
-    - Cybersecurity
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/troubleshoot-windows-server-virtual-machines-azure/index.yml
-  uid: 0af0e215-8c3f-4b8e-9dfe-bc0039707e49
   title: Troubleshoot Windows Server Virtual Machines in Azure
   description: "Learn how to troubleshoot Azure-hosted Windows Server VMs, including provisioning and allocation failures, boot diagnostics, VM Agent and extension issues, RDP connectivity, performance monitoring, and storage tier selection."
   ms.date: 08/31/2026

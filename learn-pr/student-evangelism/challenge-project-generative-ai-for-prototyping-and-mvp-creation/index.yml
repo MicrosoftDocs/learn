@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.challenge-project-generative-ai-for-prototyping-and-mvp-creation
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 35
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - startup-founder
-  skills:
-    - "Generative AI"
-    - "AI Solutions"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/challenge-project-generative-ai-for-prototyping-and-mvp-creation/index.yml
-  uid: ac42b2fc-3c9b-416f-9a73-9df5b41db806
   title: Challenge project - Microsoft Copilot for Prototyping and MVP Creation
   description: In this challenge project, Microsoft Copilot guides you on how to create prototypes/ mock-ups of your solution and on implementing the project.
   author: bethanyjep

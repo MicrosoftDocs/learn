@@ -1,37 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.purview-ninja-safeguard-data
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - m365
-    - office-teams
-    - microsoft-purview
-    - office-sp
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ip-admin
-    - risk-practitioner
-    - security-engineer
-  skills:
-    - "Data Security"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Data Management"
-    - "Security Analytics"
-    - "Security Automation"
-    - "Identity and Access Management (IAM)"
-    - "Agentic AI"
-    - "AI Risk Management"
-    - Cybersecurity
-    - "Security Operations Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/purview-ninja-safeguard-data/index.yml
-  uid: 2543cdb9-dc19-4b96-99d9-04b951bdfb64
   title: 'Secure Sensitive Data with Microsoft Purview Ninja Training Scenarios'
   description: 'Discover how to classify data, apply sensitivity labels, enforce DLP policies, and use Security Copilot to protect information across Microsoft 365.'
   ms.date: 08/25/2025

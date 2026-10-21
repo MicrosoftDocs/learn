@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-admin.cmu-monitor-cloud-resources
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - technology-manager
-  skills:
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Data Analytics"
-    - "IT Strategy"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-admin/cmu-monitor-cloud-resources/index.yml
-  uid: e1f85e28-8252-44e3-8b25-abce5c1dfc6b
   title: Monitor cloud resources
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Monitoring how your cloud resources are performing is crucial to building reliable cloud applications. This module covers what monitoring is, why you need to do it, and how you can about monitoring your resources.
   ms.date: 06/07/2022

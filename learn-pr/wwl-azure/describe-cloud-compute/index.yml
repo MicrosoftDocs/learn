@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-cloud-compute
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 24
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-    - it-professional
-  skills:
-    - "Cloud Computing"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-cloud-compute/index.yml
-  uid: 6e236b8e-4ca4-4ec0-be69-df4a22924285
   title: Describe Cloud Computing
   description: "Introduction to concepts surrounding cloud computing. Mostly platform agnostic, focused instead on general concepts."
   ms.date: 02/03/2026

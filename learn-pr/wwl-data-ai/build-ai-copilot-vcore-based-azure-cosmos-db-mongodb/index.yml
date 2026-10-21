@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 73
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-openai
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - ai-engineer
-    - data-engineer
-  skills:
-    - "Retrieval-Augmented Generation (RAG)"
-    - "Generative AI"
-    - Databases
-    - "Application Development"
-    - "Data Management"
-    - "AI Prompting"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/build-ai-copilot-vcore-based-azure-cosmos-db-mongodb/index.yml
-  uid: 0918ed6a-127d-4583-bd28-ca649d6d954f
   title: Build your own AI copilot with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI
   description: Build your own AI copilot with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI.
   author: wwlpublish

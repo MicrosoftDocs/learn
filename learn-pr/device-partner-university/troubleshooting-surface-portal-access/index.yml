@@ -2,30 +2,6 @@
 uid: learn.dpu.troubleshooting-surface-portal-access
 title: Troubleshooting Surface Portal access issues
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 10
-  last.refresh.date: null
-  modality: module
-  products:
-    - surface
-    - intune
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - support-engineer
-    - identity-access-admin
-    - systems-administrator
-  skills:
-    - "Device Management"
-    - "Identity and Access Management (IAM)"
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/troubleshooting-surface-portal-access/index.yml
-  uid: 63d7f4ae-fb77-42aa-bcb8-d298e55fc0e6
   title: Troubleshooting Surface Portal access issues
   description: "In this module, you'll learn how to troubleshoot common access issues related to the Surface Management Portal and Surface Support Portal, ensuring that you can effectively manage your organization's Surface devices and support requests."
   ms.date: 04/20/2026

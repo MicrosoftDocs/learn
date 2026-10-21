@@ -1,37 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-enterprise-agent-communication-a2a
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 48
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - solution-architect
-    - platform-engineer
-    - security-engineer
-  skills:
-    - "Agentic AI"
-    - "Multi-Agent Orchestration"
-    - "Agent Operations"
-    - "AI Infrastructure"
-    - "Solution Architecture"
-    - "Platform Engineering"
-    - "Data Management"
-    - "Data Security"
-    - "Security Architecture Design"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/aaai-design-enterprise-agent-communication-a2a/index.yml
-  uid: c1be001c-ad38-45b0-84bc-9fdba17b4a35
   title: Design Enterprise-Scale Agent Communication with A2A in Azure
   description: "Design enterprise-scale agent communication architectures using the A2A protocol in Azure. Implement agent discovery registries with capability-based routing, design shared state management across distributed agent networks, configure context isolation for multitenant deployments, and build conflict detection and resolution mechanisms."
   ms.date: 7/30/2026

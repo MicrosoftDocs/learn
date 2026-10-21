@@ -1,29 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.migrate-modernize-deploy-sap-azure
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-  skills:
-    - "Cloud Computing"
-    - "Cloud Infrastructure"
-    - "Infrastructure Management"
-    - Automation
-    - "Cloud Administration"
-    - "Solution Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/migrate-modernize-deploy-sap-azure/index.yml
-  uid: ba5e622b-24f4-4b03-bab5-dcb744c8944e
   title: Modernize and deploy SAP on Azure
   description: Modernize and deploy SAP on Azure
   ms.date: 01/10/2024

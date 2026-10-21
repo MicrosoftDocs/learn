@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-optimize-indexing-strategy-azure-cosmos-db-nosql
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 101
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - database-administrator
-    - data-engineer
-  skills:
-    - Databases
-    - "Database Design"
-    - "Database Development"
-    - "Data Administration"
-    - "Cloud Administration"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/design-optimize-indexing-strategy-azure-cosmos-db-nosql/index.yml
-  uid: d4d3a696-72c3-4f09-8099-5a79f9ccca16
   title: Design and Optimize an Indexing Strategy in Azure Cosmos DB
   description: "Tune indexing policies for read-heavy and write-heavy workloads, add composite and spatial indexes, define and index computed properties, and use global secondary indexes to avoid cross-partition queries."
   ms.date: 10/03/2026

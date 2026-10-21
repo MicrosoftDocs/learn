@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.write-advanced-sql-code
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 141
-  last.refresh.date: null
-  modality: module
-  products:
-    - fabric
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - developer
-  skills:
-    - SQL
-    - "Database Development"
-    - Databases
-    - "Data Engineering"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/write-advanced-sql-code/index.yml
-  uid: 591850a8-df24-4638-b63f-15e25fef07d1
   title: Write Advanced T-SQL Code
   description: Learn how to write advanced T-SQL code including CTEs, window functions, JSON functions, regular expressions, fuzzy string matching, graph queries, correlated queries, and error handling.
   ms.date: 07/02/2026

@@ -1,33 +1,6 @@
 ### YamlMime:Module
 uid: learn.design-implement-sql-solutions-ai-assisted-tools
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 92
-  last.refresh.date: null
-  modality: module
-  products:
-    - github-copilot
-    - fabric
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - database-administrator
-    - data-engineer
-  skills:
-    - "Database Development"
-    - "Generative AI"
-    - SQL
-    - "Application Development"
-    - Cybersecurity
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/design-implement-sql-solutions-ai-assisted-tools/index.yml
-  uid: 776b3eb6-acc2-4c7c-a914-dbb37ee83c95
   title: Implement SQL Solutions by Using AI-assisted Tools
   description: Learn how to use GitHub Copilot and Fabric Copilot for AI-assisted database development on Microsoft SQL platforms, including SQL Server, Azure SQL, and Microsoft Fabric.
   ms.date: 07/03/2026

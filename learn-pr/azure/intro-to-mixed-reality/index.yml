@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.intro-to-mixed-reality
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 41
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-    - azure
-    - dynamics-365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - technology-manager
-  skills:
-    - "Application Development"
-    - "Collaboration Tools"
-    - "Cloud Computing"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-mixed-reality/index.yml
-  uid: fb98120d-a75b-4e62-83ab-ead8c5ea4281
   title: Introduction to Mixed Reality
   description: Learn about core concepts of augmented reality, virtual reality, and mixed reality. Learn about HoloLens and Windows mixed reality immersive headsets.
   ms.date: 04/04/2025

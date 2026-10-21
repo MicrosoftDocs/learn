@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-application-architecture
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 59
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-  skills:
-    - "Application Architecture"
-    - "Solution Architecture"
-    - "API Management"
-    - "Cloud Computing"
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-application-architecture/index.yml
-  uid: 9f0a24ae-3128-47e6-b70f-27eb5a749fac
   adobe-target: true
   prefetch-feature-rollout: true
   title: Design an Application Architecture

@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.compliance-endpoint-manager
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 26
-  last.refresh.date: null
-  modality: module
-  products:
-    - intune
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - support-engineer
-  skills:
-    - "Device Management"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Data Analytics"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/endpoint-manager/compliance-endpoint-manager/index.yml
-  uid: 55a83c9d-0eec-47a2-9edf-d7d86ba5a6dc
   title: Learn how to analyze and resolve compliance issues using Microsoft Intune
   description: In this module, you'll learn about analyzing and resolving compliance issues using Microsoft Intune. 
   ms.date: 11/05/2024

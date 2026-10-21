@@ -1,33 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.cmu-cloud-computing.distributed-programming
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - developer
-  skills:
-    - "Application Architecture"
-    - "Application Development"
-    - "Cloud Computing"
-    - "Data Engineering"
-    - "Infrastructure Management"
-    - "IT Networking"
-    - "Data Analytics"
-    - "Python (Programming Language)"
-    - "Machine Learning"
-    - Databases
-    - "Database Design"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/cmu-cloud-computing-distributed-programming/index.yml
-  uid: 7723fe61-8080-4606-afee-5944015b3d73
   title: Distributed programming on the cloud
   description: Carnegie Mellon University's Cloud Developer course. Gain a deep understanding of data and how it's stored on the cloud.
   brand: azure

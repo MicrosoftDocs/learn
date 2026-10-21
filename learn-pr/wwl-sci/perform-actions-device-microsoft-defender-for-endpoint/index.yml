@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-actions-device-microsoft-defender-for-endpoint
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 35
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-defender
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-    - security-engineer
-  skills:
-    - "Security Operations Management"
-    - "Threat Management"
-    - Cybersecurity
-    - "Device Management"
-    - "Security Automation"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/perform-actions-device-microsoft-defender-for-endpoint/index.yml
-  uid: f56cb3b0-5531-4df3-bf8a-cdfb7e132458
   title: Perform actions on a device using Microsoft Defender for Endpoint
   description: "Perform actions on a device using Microsoft Defender for Endpoint"
   ms.date: 06/22/2026

@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-windows-server-failover-clustering
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 63
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - solution-architect
-    - storage-admin
-    - network-engineer
-  skills:
-    - "Infrastructure Management"
-    - "Solution Architecture"
-    - Storage
-    - "IT Networking"
-    - Virtualization
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/implement-windows-server-failover-cluster/index.yml
-  uid: 749da35e-512d-4c2d-ae0f-d0c300af76b2
   title: Implement Windows Server failover clustering
   description: "Implement Windows Server failover clustering"
   ms.date: 01/23/2026

@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-azure-backup-for-sap-workloads-azure-vms
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 20
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles: null
-  skills:
-    - "Cloud Administration"
-    - "Cloud Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-azure-backup-sap-workloads-azure-virtual-machines/index.yml
-  uid: 05ceef8a-60a3-4aa4-8c32-a68200e680aa
   title: Implement Azure Backup for SAP HANA workloads on Azure VMs
   description: Discover methods for implementing Azure Backup on Azure Virtual Machines running SAP HANA workloads.
   ms.date: 03/27/2024

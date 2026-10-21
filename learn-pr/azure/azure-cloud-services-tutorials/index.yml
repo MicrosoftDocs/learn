@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.azure-cloud-services-tutorials-mrtk
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 27
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - ai-engineer
-  skills:
-    - "Application Development"
-    - Storage
-    - "Computer Vision"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-cloud-services-tutorials/index.yml
-  uid: 0dcc5f51-8e3d-4762-a41d-5c20f7b7c703
   title: Integrate Azure Cloud Services to your Unity project on HoloLens 2
   description: Add Azure Cloud Services such as Azure Storage and Azure Custom Vision for your mixed reality application.
   ms.date: 01/11/2024

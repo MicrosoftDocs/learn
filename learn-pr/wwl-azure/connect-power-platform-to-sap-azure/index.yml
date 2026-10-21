@@ -1,38 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-power-platform-to-sap-azure
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 33
-  last.refresh.date: null
-  modality: module
-  products:
-    - power-platform
-    - power-bi
-    - power-apps
-    - power-automate
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - functional-consultant
-    - solution-architect
-    - systems-administrator
-    - data-analyst
-  skills:
-    - "Enterprise Resource Planning (ERP)"
-    - "Low-Code Development"
-    - "Process Automation"
-    - "Data Analytics"
-    - "Data Visualization"
-    - "Identity and Access Management (IAM)"
-    - "Data Security"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/connect-power-platform-to-sap-azure/index.yml
-  uid: 6c7b5e9e-24ac-4031-b854-4bf10176fd26
   title: Connect Power Platform to SAP on Azure
   description: "Connect Power Platform to SAP on Azure"
   ms.date: 04/12/2021

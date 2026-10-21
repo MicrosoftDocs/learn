@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.extend-resource-manager-template-deployment-scripts
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 33
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - systems-administrator
-  skills:
-    - "Cloud Infrastructure"
-    - Automation
-    - DevOps
-    - "Identity and Access Management (IAM)"
-    - Storage
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/extend-resource-manager-template-deployment-scripts/index.yml
-  uid: e33f4eb1-eaad-42ca-bbcb-9ada65bb9635
   title: Extend Bicep and ARM templates using deployment scripts
   description: Learn how to add custom steps to your Azure Resource Manager templates
     (ARM templates) and Bicep files by using deployment scripts.

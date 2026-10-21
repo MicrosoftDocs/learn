@@ -1,37 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-windows-servers-workloads-hybrid-environment
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - windows
-    - azure
-    - defender-for-cloud
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - it-professional
-    - support-engineer
-    - security-engineer
-  skills:
-    - "Infrastructure Management"
-    - Automation
-    - "IT Networking"
-    - "Cloud Administration"
-    - "Network Connectivity"
-    - Cybersecurity
-    - "Identity and Access Management (IAM)"
-    - "Zero Trust Security"
-    - "Security Architecture Design"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-windows-servers-workloads-hybrid-environment/index.yml
-  uid: 20690d14-3bc3-42f6-8efe-f73d30cb5fd8
   title: Manage Windows Servers and Workloads in a Hybrid Environment
   description: Learn how to configure remote management for Windows Servers in hybrid environments and manage servers and workloads using Azure services including Azure Arc and Windows Admin Center.
   ms.date: 08/31/2026

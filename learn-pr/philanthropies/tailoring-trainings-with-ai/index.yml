@@ -2,26 +2,6 @@
 uid: learn.philanthropies.introduction-to-ai-for-trainers
 
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 17
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - k-12-educator
-    - higher-ed-educator
-  skills:
-    - "AI Fluency"
-    - "AI Solutions"
-    - "Generative AI"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/tailoring-trainings-with-ai/index.yml
-  uid: f3a1a178-9f3d-404c-9e69-9a0aa5c9d58c
   title: Tailoring Trainings with AI
   description: This module explores the dynamic integration of artificial intelligence (AI) in education.
   author: yoosunee

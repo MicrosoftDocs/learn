@@ -1,34 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 57
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-    - solution-architect
-    - systems-administrator
-    - database-administrator
-    - network-engineer
-  skills:
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Data Analytics"
-    - "Security Operations Management"
-    - Databases
-    - "IT Networking"
-    - Storage
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-monitoring-requirements-of-azure-for-sap-workloads/index.yml
-  uid: f0d10c19-9bbb-457e-b5f3-cd948428cd89
   title: Explore monitoring requirements of Azure for SAP workloads
   description: "This module covers monitoring of data from several Azure systems and tools to support SAP on Azure workloads. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 08/01/2024

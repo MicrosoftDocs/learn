@@ -1,35 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.ai-job-coaches-supported-employment
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "Responsible AI"
-    - "Accessible AI"
-    - "AI Workforce Applications"
-    - "AI Governance"
-    - "AI Risk Management"
-    - "AI Fluency"
-    - "Career Development"
-    - "Generative AI"
-    - "Prompt Engineering"
-    - "Digital Accessibility"
-    - "Data Security"
-    - "AI Safety"
-    - "AI Prompting"
-    - "Role focused AI Workflows"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/ai-job-coaches-supported-employment/index.yml
-  uid: 7e0b4de8-1693-4070-ab85-8f592d76c0fd
   title: AI for Job Coaches in Supported Employment
   description: Use AI to draft coaching materials without giving up professional judgment, employee choice, or privacy. Written for job coaches in supported employment.
   ms.date: 9/29/2026

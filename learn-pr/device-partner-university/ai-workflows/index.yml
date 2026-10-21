@@ -2,29 +2,6 @@
 uid: learn.dpu.ai-workflows
 title: 'Frontier Firms: Bring AI into everyday work with Windows 11'
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 32
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-    - microsoft-365-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "AI Productivity"
-    - "AI Workforce Applications"
-    - "Semantic Search"
-    - "Information Extraction"
-    - "Communications Management"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/ai-workflows/index.yml
-  uid: 54a57c6e-4f2a-46b4-8e58-79f7bf06ef5e
   title: 'Frontier Firms: Bring AI Into Everyday Work With Windows 11'
   description: In this module, you'll explore how Windows 11 integrates AI experiences into familiar workflows, helping users interact naturally with AI, find information faster, take action more efficiently, and stay productive throughout the workday. 
   ms.date: 08/21/2026

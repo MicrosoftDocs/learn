@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.claude-in-foundry
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 16
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "Generative AI"
-    - "Application Development"
-    - "Python (Programming Language)"
-    - "Identity and Access Management (IAM)"
-    - "AI Model Evaluation & Testing"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/claude-in-foundry/index.yml
-  uid: 81899411-9086-4bac-8b4c-b1eb190d1257
   title: Get started with Claude in Microsoft Foundry
   description: Anthropic Claude models and Microsoft Foundry create a powerful combination for developing generative AI applications and agents.
   ms.date: 08/01/2026

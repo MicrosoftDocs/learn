@@ -1,43 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-data-fundamentals-explore-core-data-concepts
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - azure-databricks
-    - fabric
-    - microsoft-foundry
-    - power-bi
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - data-analyst
-    - data-engineer
-    - database-administrator
-    - developer
-    - solution-architect
-  skills:
-    - "Data Management"
-    - Databases
-    - Storage
-    - "Data Engineering"
-    - "Data Analytics"
-    - "Data Warehousing"
-    - "Database Design"
-    - "Data Security"
-    - "Career Development"
-    - "Data Administration"
-    - "AI Solutions"
-    - "Cloud Computing"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/azure-data-fundamentals-explore-core-data-concepts/index.yml
-  uid: 8d6b6478-5220-46cc-9a8c-8e289bcc0b00
   title: 'Introduction to Microsoft Azure Data Core Data Concepts'
   description: 'Data is the foundation on which all software is built. Learn about common data formats, workloads, roles, and services, which are vital to data professionals.'
   ms.date: 05/04/2026

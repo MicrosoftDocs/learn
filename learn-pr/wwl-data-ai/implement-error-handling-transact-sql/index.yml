@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-error-handling-transact-sql
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 45
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - database-administrator
-    - data-engineer
-  skills:
-    - SQL
-    - "Database Development"
-    - "Application Development"
-    - Databases
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-error-handling-transact-sql/index.yml
-  uid: 352797a0-ac8e-4d5e-925a-94b0766ec72d
   title: Implement error handling with Transact-SQL
   description: "Implement error handling with Transact-SQL"
   ms.date: 08/11/2026

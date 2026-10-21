@@ -2,24 +2,6 @@
 uid: learn.philanthropies.choose-budgeting-tool
 
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 74
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - student
-  skills:
-    - "AI Fluency"
-    - "Business Insights"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/choose-budgeting-tool/index.yml
-  uid: b805cf9b-2b42-45f8-8b44-177e6394e955
   title: Choose a budgeting tool that fits your preferences and financial goals
   description: Discover budgeting tools and apps designed for middle schoolers. Learn how to make money management easy, engaging, and effective with tools that help you save, track expenses, and set financial goals.
   ms.date: 04/02/2025

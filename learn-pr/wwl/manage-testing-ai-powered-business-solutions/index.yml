@@ -1,34 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-testing-ai-powered-business-solutions
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 35
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-copilot-studio
-    - dynamics-365
-    - power-platform
-    - microsoft-365-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - ai-engineer
-    - developer
-  skills:
-    - "AI Model Evaluation & Testing"
-    - "Agent Operations"
-    - "Prompt Engineering"
-    - "Responsible AI"
-    - "AI Governance"
-    - "AI Safety"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/manage-testing-ai-powered-business-solutions/index.yml
-  uid: cfaf0e84-2b83-42f6-a98b-9b014a898827
   title: "Manage Testing AI-Powered Business Solutions"
   description: "Learn to validate and maintain AI-powered business solutions with structured testing frameworks, metrics, and governance for enterprise reliability."
   ms.date: 02/13/2026

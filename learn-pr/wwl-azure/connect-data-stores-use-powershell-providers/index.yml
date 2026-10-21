@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-data-stores-use-powershell-providers
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 24
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - Automation
-    - "Infrastructure Management"
-    - "Data Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/connect-data-stores-use-powershell-providers/index.yml
-  uid: 532b85c9-78cf-4996-b524-2be5c499c338
   title: Connect with data stores using PowerShell providers
   description: "This module covers PowerShell providers that connect Windows PowerShell to data stores. They offer an easier-to-understand and consistent interface for working with data stores."
   ms.date: 05/12/2026

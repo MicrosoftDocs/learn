@@ -1,38 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 80
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - intune
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - platform-engineer
-    - systems-administrator
-    - devops-engineer
-    - solution-architect
-    - developer
-  skills:
-    - "Platform Engineering"
-    - "Cloud Infrastructure"
-    - Automation
-    - "Infrastructure Management"
-    - "Identity and Access Management (IAM)"
-    - "Device Management"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "IT Networking"
-    - Virtualization
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-microsoft-dev-box-deployment-guidelines-best-practices/index.yml
-  uid: 5be5452c-1c17-478d-bec6-15a384fd356f
   title: Explore Microsoft Dev Box deployment guidelines and best practices
   description: "This module describes the details and the best practices for deploying Microsoft Dev Box in your organization."
   ms.date: 05/12/2025

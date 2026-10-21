@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-windows-server-settings-use-powershell-cmdlets
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 28
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - Automation
-    - "Infrastructure Management"
-    - Virtualization
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-windows-server-settings-use-powershell-cmdlets/index.yml
-  uid: e23a7c21-c6e0-4815-8a45-8800fd9bc0d2
   title: Manage Windows Server settings using PowerShell cmdlets
   description: "This module covers cmdlets that are used to configure settings related to Group Policy, Server Manager, Hyper-V, and Internet Information Services (IIS)."
   ms.date: 05/12/2026

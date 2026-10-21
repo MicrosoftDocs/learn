@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 36
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-  skills:
-    - Automation
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/troubleshoot-scripts-handle-errors-windows-powershell/index.yml
-  uid: dc0629c9-86b7-4b79-beca-2c0a88faeacc
   title: Troubleshoot scripts and handle errors in Windows PowerShell
   description: "This module covers troubleshooting PowerShell scripts and understanding error messages."
   ms.date: 05/12/2026

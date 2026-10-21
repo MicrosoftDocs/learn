@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-modify-content
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 75
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-modify-content/index.yml
-  uid: 5c4def3d-df15-4a68-a1e3-93fa0166ad82
   title: Modify the Content of Strings using built-in String Data Type Methods in C#
   description: "Explore using the built-in string data type methods in C# to modify strings."
   ms.date: 12/15/2025

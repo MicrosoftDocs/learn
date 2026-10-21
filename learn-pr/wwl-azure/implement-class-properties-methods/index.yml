@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-class-properties-methods
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 106
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-class-properties-methods/index.yml
-  uid: 67c4cc44-79ab-46c1-8a03-9a74e2c6433d
   title: Implement Class Properties and Methods
   description: "Learn how to implement read-write, read-only, and write-only class properties using property accessors and access modifiers, and how to implement methods and extension methods for a class."
   ms.date: 08/25/2025

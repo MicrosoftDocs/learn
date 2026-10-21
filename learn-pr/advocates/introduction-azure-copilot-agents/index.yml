@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.introduction-azure-copilot-agents
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 42
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - site-reliability-engineer
-  skills:
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Role focused AI Workflows"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/introduction-azure-copilot-agents/index.yml
-  uid: d65a6dcc-cfa2-496b-9821-98aba0794044
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 02/13/2026

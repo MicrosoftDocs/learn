@@ -2,28 +2,6 @@
 uid: learn.github.foundations-agentic-ai
 title: Foundations of Agentic AI in GitHub
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-    - github-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - devops-engineer
-  skills:
-    - "Agentic AI"
-    - "AI-Augmented Software Development"
-    - "AI Governance"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/foundations-agentic-ai/index.yml
-  uid: 07311d73-f88f-4a61-8dfc-23dfff24fb6d
   title: Foundations of Agentic AI in GitHub
   description: Explore how agentic AI changes the developer role from only writing code to guiding, reviewing, and validating systems that can take action across the SDLC. Understand GitHub's role as the system of record and control plane for safe, traceable agent workflows.
   author: camihmerhar

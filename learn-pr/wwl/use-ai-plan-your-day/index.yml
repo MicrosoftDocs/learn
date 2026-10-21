@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.use-ai-plan-your-day
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 18
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-    - student
-  skills:
-    - "AI Prompting"
-    - "AI Productivity"
-    - "AI Fluency"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/use-ai-plan-your-day/index.yml
-  uid: 6bca5b4a-31f4-44cb-8d5c-12696d9a9f36
   title: "Use AI to plan your day"
   description: "Learn how to use AI to create schedules, prioritize tasks, and manage your day effectively with personalized plans and checklists."
   ms.date: 09/17/2026

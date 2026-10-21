@@ -1,34 +1,6 @@
 ### YamlMime:Module
 uid: learn.github.security-remediation
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 21
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-    - github-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - developer
-    - devops-engineer
-    - platform-engineer
-    - systems-administrator
-  skills:
-    - "Application Security"
-    - "Security Operations Management"
-    - "Security Analytics"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - DevOps
-    - "Responsible AI"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/security-remediation/index.yml
-  uid: b2255025-505c-49f6-9cd9-4b41fb98ce78
   title: Security Operations and Remediation Workflows with GitHub Advanced Security
   description: This module guides you through the operational management of GitHub Advanced Security alerts. You'll learn how to apply a standardized alert lifecycle, prioritize vulnerabilities using CVE, CWE, and severity information, implement remediation workflows, establish governance for alert dismissal and risk acceptance, use Copilot Autofix, and integrate security practices into CI/CD workflows.
   author: a-a-ron

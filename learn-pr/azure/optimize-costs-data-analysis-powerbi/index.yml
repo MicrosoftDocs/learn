@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.optimize-costs-data-analysis-powerbi
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 27
-  last.refresh.date: null
-  modality: module
-  products:
-    - power-bi
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-analyst
-    - finance
-    - systems-administrator
-  skills:
-    - "Data Analytics"
-    - "Data Visualization"
-    - "Business Insights"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/optimize-costs-data-analysis-powerbi/index.yml
-  uid: 137f1e74-3f49-4964-a501-7f702f95c7d6
   title: Optimize Azure costs with data analysis in Power BI
   description: Use Power BI to understand where your money is being spent in Azure so you can help your organization to optimize its costs.
   ms.date: 11/11/2024

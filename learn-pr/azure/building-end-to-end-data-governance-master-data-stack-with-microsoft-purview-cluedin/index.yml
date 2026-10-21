@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 158
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-purview
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - data-professional
-  skills:
-    - "Data Engineering"
-    - "Data Management"
-    - "Identity and Access Management (IAM)"
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin/index.yml
-  uid: bb057800-3aae-4269-95fb-b03487bfd411
   title: Build an end to end data governance and master data management stack with Microsoft Purview and CluedIn.
   description: "This training module guides you in how to build a complete master data management and data governance stack end to end with Microsoft Purview and CluedIn. It includes developing golden records, deduplication, data lineage, and data quality strategies."
   ms.date: 05/28/2024

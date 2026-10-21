@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.host-a-web-application-with-azure-web-apps
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 31
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Cloud Infrastructure"
-    - DevOps
-    - "Python (Programming Language)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/host-a-web-app-with-azure-app-service/index.yml
-  uid: 3d550f98-e2a1-46f1-bef8-3ded081ac22e
   title: Host a web application with Azure App Service
   description: 'Create a website using C#, Java, Python, or Node.js and deploy it through the hosted web app platform in Azure App Service.'
   ms.date: 12/12/2025

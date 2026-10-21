@@ -2,27 +2,6 @@
 uid: learn.edge.publish-pwa-to-msft-store
 title: Test and publish Progressive Web Apps (PWAs) for Microsoft Store
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 22
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - DevOps
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Application Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/pwa/publish-pwa-microsoft-store/index.yml
-  uid: 49acf1b6-01ff-43ab-8be2-4651d63cd308
   title: Test and publish Progressive Web Apps (PWAs) for Microsoft Store
   description: Learn to test and publish Progressive Web Apps (PWAs) on various devices and platforms, ensuring seamless user experiences. Acquire test packages, test on different browsers and devices, and comply with guidelines. Utilize PWABuilder to package and submit PWAs to the Microsoft Store, reserve app names, and navigate the Microsoft Partner Center for successful publication. Enhance PWA development skills and boost app performance and reach with this informative guide.
   ms.date: 07/13/2023

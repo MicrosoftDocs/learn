@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.find-commands-get-help-windows-powershell
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 50
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - Automation
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/find-commands-get-help-windows-powershell/index.yml
-  uid: 386ec7c0-774a-451b-8562-2e659a5a2aea
   title: Find commands and Get-Help in Windows PowerShell
   description: "This module explains how to find Windows PowerShell cmdlets that you can use to perform specific tasks. It also covers how to use Get-Help to retrieve detailed information about a cmdlet and its parameters."
   ms.date: 05/12/2026

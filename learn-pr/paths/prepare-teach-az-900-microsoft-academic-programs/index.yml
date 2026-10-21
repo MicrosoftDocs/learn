@@ -1,31 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.prepare-teach-az-900-microsoft-academic-programs
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-  skills:
-    - "Career Development"
-    - "Collaboration Tools"
-    - "Digital Accessibility"
-    - "Cloud Computing"
-    - "Cloud Administration"
-    - "Identity and Access Management (IAM)"
-    - Storage
-    - "Network Connectivity"
-    - "Communications Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/prepare-teach-az-900-microsoft-academic-programs/index.yml
-  uid: d74210aa-6e5c-4b19-bde1-afaecc61165d
   title: AI-900
   description: Prepare to teach AZ-900 Microsoft Azure fundamentals in academic programs
   ms.date: 08/16/2022

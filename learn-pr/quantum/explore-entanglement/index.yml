@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.quantum.explore-entanglement
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 36
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-quantum
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Cloud Computing"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/quantum/explore-entanglement/index.yml
-  uid: a2c5e07f-2233-4c1f-b39b-528b489fee69
   title: Teleport entangled qubits with Q#
   description: Teleport entangled qubits with Q#
   ms.date: 09/18/2025

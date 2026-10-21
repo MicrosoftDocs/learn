@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.orchestrate-durable-functions
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 77
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - solution-architect
-    - site-reliability-engineer
-  skills:
-    - "AI-Powered Workflow Automation"
-    - "Application Architecture"
-    - "Application Development"
-    - "Cloud Computing"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/orchestrate-durable-functions/index.yml
-  uid: 0ee70b19-4373-49ab-a7e8-8c6e57378e4d
   title: Orchestrate Durable AI Workflows with Azure Durable Functions
   description: Learn how to use Azure Durable Functions to coordinate reliable, long-running AI workflows with deterministic orchestration, parallel activities, human approval, retries, and compensation.
   ms.date: 09/08/2026

@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.close-out-microsoft-learn-educators-course
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 26
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-  skills:
-    - "Career Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/close-out-microsoft-learn-educators-course/index.yml
-  uid: 68f4a072-1391-47a1-b376-74d30c9e5318
   title: Close out a Microsoft Learn for Educators course
   description: "The Microsoft Learn for Educators program can help you prepare to deliver a class and empower your students with the technical skills and industry recognized credentials needed to prepare them for their future careers."
   ms.date: 07/02/2024

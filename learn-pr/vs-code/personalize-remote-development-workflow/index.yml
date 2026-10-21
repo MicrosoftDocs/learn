@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.personalize-remote-development-workflow
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 23
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - devops-engineer
-  skills:
-    - "Application Development"
-    - DevOps
-    - "Collaboration Tools"
-    - "Cloud Computing"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/vs-code/personalize-remote-development-workflow/index.yml
-  uid: 6fc2b786-1489-4158-a85e-46fc6178a253
   title: Personalize your Visual Studio Code remote development workflow
   description: Use features in VS Code to personalize your development experience for various remote environments.
   ms.date: 11/28/2023

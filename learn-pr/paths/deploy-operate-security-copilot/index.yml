@@ -1,33 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-operate-security-copilot
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - security-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-  skills:
-    - "AI Prompting"
-    - "Security Operations Management"
-    - "Security Analytics"
-    - "Threat Management"
-    - "Identity and Access Management (IAM)"
-    - "AI Governance"
-    - "Cloud Administration"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Agent Operations"
-    - "Security Automation"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/deploy-operate-security-copilot/index.yml
-  uid: c4ef6df8-e789-4703-ae4e-246d01e53b54
   title: Deploy and Operate Microsoft Security Copilot
   description: Build hands-on expertise with Microsoft Security Copilot. Start with enabling the solution and writing effective prompts to configuring enterprise workspaces and managing plugins and agents at scale.
   ms.date: 04/30/2026

@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 61
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - "Infrastructure Management"
-    - "Cloud Administration"
-    - Storage
-    - Cybersecurity
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-hybrid-backup-recovery-windows-server-iaas/index.yml
-  uid: 59ad0f11-cb2f-47a3-9bff-a87a1a6c22a1
   title: Implement hybrid backup and recovery with Windows Server IaaS
   description: "Learn about Azure Backup before learning to implement Recovery Vaults and Azure Backup Policies. Learn to implement Windows IaaS VM recovery, perform backup and restore of on-premises workloads, and manage Azure VM backups."
   ms.date: 01/23/2026

@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-explore-azure-compute
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 36
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-  skills:
-    - "Cloud Infrastructure"
-    - "Solution Architecture"
-    - Storage
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-modernize-explore-azure-compute/index.yml
-  uid: 389f8411-176e-4409-8924-c1a4c5c6bd9d
   title: Modernize and explore Azure for SAP compute
   description: 'This module explores the design of scalable, performant, and resilient compute components for SAP deployments in Azure. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/08/2024

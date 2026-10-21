@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.microservices-devops-aspnet-core
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 34
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - github
-    - azure-devops
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-  skills:
-    - DevOps
-    - "Cloud Infrastructure"
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/microservices-devops-aspnet-core/index.yml
-  uid: 3040a654-68fc-4a43-bd9e-557e45d28bda
   title: Deploy a Cloud-Native .NET Microservice Automatically with GitHub Actions and Azure Pipelines
   description: Use a GitHub Actions CI/CD pipeline to build a container image and deploy it to Azure Kubernetes Service (AKS).
   ms.date: 07/14/2025

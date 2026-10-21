@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-protect-sensitive-data
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 34
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-purview
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ip-admin
-    - security-professional
-    - security-operations-analyst
-  skills:
-    - "Data Security"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Zero Trust Security"
-    - "AI Governance"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-protect-sensitive-data/index.yml
-  uid: 15c2fa98-46ae-4405-bfb4-0f40a2785c99
   title: Protect sensitive data in a digital world
   description: "Protect sensitive data in a digital world."
   ms.date: 06/16/2025

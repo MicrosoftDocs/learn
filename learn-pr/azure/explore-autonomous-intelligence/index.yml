@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.explore-autonomous-intelligence
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 17
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - data-scientist
-  skills:
-    - "Machine Learning"
-    - "Autonomous AI"
-    - "AI Solutions"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/explore-autonomous-intelligence/index.yml
-  uid: 7e63d024-0a26-4d4e-ad61-097e11d16a7f
   title: Explore Autonomous Intelligence
   description: Learn Autonomous Intelligence technologies and evaluate when to use it.
   author: softchris

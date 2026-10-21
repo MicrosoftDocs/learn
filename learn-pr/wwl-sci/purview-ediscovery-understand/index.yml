@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-ediscovery-understand
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 25
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-purview
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ip-admin
-  skills:
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Data Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-ediscovery-understand/index.yml
-  uid: 2ae85974-5c9d-42ff-8d84-ffea5d533ed3
   title: Understand Microsoft Purview eDiscovery
   description: "Understand Microsoft Purview eDiscovery."
   ms.date: 05/15/2025

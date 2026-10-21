@@ -1,38 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-core-data-concepts
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 28
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - fabric
-    - azure-databricks
-    - power-bi
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - data-analyst
-    - database-administrator
-    - solution-architect
-    - developer
-  skills:
-    - "Data Management"
-    - Databases
-    - Storage
-    - "Data Engineering"
-    - "Data Analytics"
-    - "Data Warehousing"
-    - "Database Design"
-    - "Data Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/explore-core-data-concepts/index.yml
-  uid: 6405bad7-c978-492e-b3d7-abc6c278e524
   title: Explore Core Data Concepts
   description: "This content is a part of Explore core data concepts."
   ms.date: 10/12/2026

@@ -2,26 +2,6 @@
 uid: learn.dpu.create-copilot-agent
 title: Build your first agent in Microsoft 365 Copilot Chat
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 37
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-365-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - sales
-  skills:
-    - "Agent Development"
-    - "Prompt Engineering"
-    - "AI Productivity"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/create-copilot-agent/index.yml
-  uid: 58da5439-2949-4269-9e08-f4b6a1e9773f
   title: Build Your First Agent In Microsoft 365 Copilot Chat
   description: Learn how to create a task-focused agent in Microsoft 365 Copilot Chat with clear instructions and relevant knowledge, test its responses, and refine its configuration based on the results.
   ms.date: 09/29/2026

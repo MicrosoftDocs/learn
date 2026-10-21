@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.manage-costs-partner-cost-management
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 34
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - finance
-    - systems-administrator
-  skills:
-    - "Cloud Administration"
-    - "Business Insights"
-    - "Data Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/manage-costs-partner-cost-management/index.yml
-  uid: 1091d8c2-376d-4c63-99ca-f5e450d46245
   title: Configure and manage costs as a Microsoft partner by using Microsoft Cost Management
   description: Learn how to reconcile your bill and analyze costs across your customers and resources by using Microsoft Cost Management as a partner.
   ms.date: 11/19/2024

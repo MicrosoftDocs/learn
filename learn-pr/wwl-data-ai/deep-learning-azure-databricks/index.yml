@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.deep-learning-azure-databricks
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 70
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-databricks
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - ai-engineer
-  skills:
-    - "Machine Learning"
-    - "Data Science"
-    - "AI Model Evaluation & Testing"
-    - "Python (Programming Language)"
-    - "AI Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/deep-learning-azure-databricks/index.yml
-  uid: ffd89e35-def9-47a1-b6ac-e809e8c26122
   title: Train deep learning models in Azure Databricks
   description: Learn how to use deep learning libraries like PyTorch in Azure Databricks, and to distribute training by using TorchDistributor
   author: JulianePadrao

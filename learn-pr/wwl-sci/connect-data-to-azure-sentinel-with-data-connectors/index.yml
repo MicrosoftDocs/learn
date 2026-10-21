@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-data-to-azure-sentinel-with-data-connectors
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 22
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-sentinel
-    - microsoft-defender
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-    - security-engineer
-    - administrator
-  skills:
-    - "Security Operations Management"
-    - "Security Analytics"
-    - "Data Engineering"
-    - "Cloud Administration"
-    - Cybersecurity
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/connect-data-to-azure-sentinel-with-data-connectors/index.yml
-  uid: db284eea-7fad-48bf-bfd1-9ed835beff0d
   title: Connect data to Microsoft Sentinel using data connectors
   description: "Connect data to Microsoft Sentinel using data connectors"
   ms.date: 06/11/2025

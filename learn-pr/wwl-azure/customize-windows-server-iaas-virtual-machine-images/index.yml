@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.customize-windows-server-iaas-vm-images
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 50
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - solution-architect
-    - platform-engineer
-  skills:
-    - "Cloud Administration"
-    - Virtualization
-    - Automation
-    - "Cloud Infrastructure"
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/customize-windows-server-iaas-virtual-machine-images/index.yml
-  uid: 60c192b5-ed2f-4cd5-8b30-a5558d889095
   title: Customize Windows Server IaaS Virtual Machine images
   description: "Learn to create new VMs from generalized images and use Azure Image Builder templates to create and manage images in Azure."
   ms.date: 01/23/2026

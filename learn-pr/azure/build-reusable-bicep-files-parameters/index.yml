@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.build-reusable-bicep-files-parameters
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 39
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - systems-administrator
-  skills:
-    - Automation
-    - DevOps
-    - "Cloud Infrastructure"
-    - "Data Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/build-reusable-bicep-files-parameters/index.yml
-  uid: 407e3bef-4302-4f9b-9fe8-63e38e8ae9e0
   moduleType: standard
   title: Build reusable Bicep files by using parameters
   description: Control and apply parameters to a Bicep file while protecting sensitive inputs.

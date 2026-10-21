@@ -1,26 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-perform-threat-hunting-azure-sentinel
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - microsoft-sentinel
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-  skills:
-    - "Security Analytics"
-    - "Threat Management"
-    - "Security Operations Management"
-    - "Data Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/sc-200-perform-threat-hunting-azure-sentinel/index.yml
-  uid: ed32657f-e006-4dcc-afe2-0f1631004a9a
   title: 'Perform threat hunting in Microsoft Sentinel'
   description: 'Perform threat hunting in Microsoft Sentinel'
   ms.date: 11/26/2025

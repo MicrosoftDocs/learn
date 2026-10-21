@@ -2,27 +2,6 @@
 uid: learn.dpu.getting-started-surface-support-portal
 title: Getting started with Surface Support Portal
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 14
-  last.refresh.date: null
-  modality: module
-  products:
-    - surface
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - identity-access-admin
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Device Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/getting-started-surface-support-portal/index.yml
-  uid: df28aa42-1666-4606-ba61-cf4cb5e6ba6a
   title: Getting started with Surface Support Portal
   description: 'In this module, learn how to get started with Surface Support Portal, including prerequisites for access, required roles and permissions, and how to verify access to the portal for managing your Surface support cases effectively.'
   ms.date: 04/13/2026

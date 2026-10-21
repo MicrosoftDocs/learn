@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.startups.revenue
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 27
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - startup-founder
-  skills:
-    - "Business Insights"
-    - "Organizational Effectiveness"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/startup/revenue/index.yml
-  uid: 970ed343-7f6a-4b0a-9018-de91ef5ca347
   title: The Path to Revenue
   description: Learn about the most common startup revenue models. See practical tips on how to get your startup to start generating revenue.
   ms.date: 06/16/2025

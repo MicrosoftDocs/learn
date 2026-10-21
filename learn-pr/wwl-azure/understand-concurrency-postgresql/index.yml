@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-concurrency-postgresql
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 33
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-    - developer
-  skills:
-    - Databases
-    - "Data Administration"
-    - SQL
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/understand-concurrency-postgresql/index.yml
-  uid: 814fab29-86f2-4caf-af1a-d72d468276ac
   title: Understand concurrency in PostgreSQL
   description: "Azure Database for PostgreSQL is a multi-user relational database solution. The ability to support many concurrent users enables PostgreSQL databases to scale out and enable applications that support many users and locations at the same time. The increase in users brings a risk of conflicts. For this reason, it's important to understand the concurrency systems that are in place in Azure Database for PostgreSQL to manage concurrency and conflicts. In this module, we look at both isolation levels and locking in Azure Database for PostgreSQL."
   ms.date: 05/09/2024

@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.get-started-with-object-interaction-tutorials-mrtk
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 54
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/get-started-with-object-interaction/index.yml
-  uid: e5929133-1973-49f8-801c-0d587f14fb0a
   title: Getting Started With 3D Object Interaction
   description: This course will provide steps and procedures to follow on how to manipulate and interact with 3D objects. 
   ms.date: 06/05/2025

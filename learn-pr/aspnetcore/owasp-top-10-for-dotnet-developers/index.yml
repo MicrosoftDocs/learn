@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.owasp-top-10-for-dotnet-developers
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 44
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - devops-engineer
-    - security-engineer
-  skills:
-    - "Application Security"
-    - "Identity and Access Management (IAM)"
-    - "Data Security"
-    - DevOps
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/owasp-top-10-for-dotnet-developers/index.yml
-  uid: 146e0b20-646c-4c6e-b8ff-88f976f73807
   title: "Guide to Secure .NET Development with OWASP Top 10"          # Do not edit: title must be "Introduction to (product)"
   description: "Evaluate security risks that come with insecure application development patterns and practices"             # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 06/18/2025             # Date of commit to GitHub (do not use target publication date, cannot be in the future)

@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.protect-virtual-machines-with-azure-backup
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 35
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - solution-architect
-  skills:
-    - "Cloud Administration"
-    - "Data Administration"
-    - Storage
-    - "Infrastructure Management"
-    - "Data Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/protect-virtual-machines-with-azure-backup/index.yml
-  uid: 9ed8ae5f-a1ba-48fe-b30b-8e4a2becc4fc
   title: Protect your virtual machines by using Azure Backup
   description: Use Azure Backup to help protect on-premises servers, virtual machines, SQL Server, Azure file shares, and other workloads.
   ms.date: 09/05/2024

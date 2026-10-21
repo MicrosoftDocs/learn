@@ -2,29 +2,6 @@
 uid: learn.dpu.introduction-to-arm-surface
 title: Introduction to Arm on Microsoft Surface
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 19
-  last.refresh.date: null
-  modality: module
-  products:
-    - surface
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - technology-manager
-    - systems-administrator
-    - business-user
-  skills:
-    - "Device Management"
-    - "Infrastructure Management"
-    - Cybersecurity
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introducton-to-arm-surface/index.yml
-  uid: e9ed8e32-e189-4d91-9a55-95fa72a5c722
   title: Introduction To Arm On Microsoft Surface
   description: 'Learn how Arm on Microsoft Surface enables modern business productivity. This module introduces the ARM processor architecture on Surface devices and explains how it delivers long battery life, efficient performance, and broad app compatibility.'
   ms.date: 02/17/2026

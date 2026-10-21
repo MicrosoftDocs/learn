@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.reactors.supervised-learning-regression
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 80
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - developer
-    - student
-  skills:
-    - "Machine Learning"
-    - "Data Science"
-    - "Data Visualization"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/reactors/supervised-learning-regression/index.yml
-  uid: 88c4a684-bdd0-4f79-82ff-aae4ad75c3f7
   title: 'Supervised learning: Regression'
   description: Learn about linear regression models, and how to interpret their results.
   ms.date: 05/15/2020

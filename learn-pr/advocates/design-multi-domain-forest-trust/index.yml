@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.devrel.design-multi-domain-active-directory-forest
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 80
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - identity-access-admin
-    - systems-administrator
-  skills:
-    - "Security Architecture Design"
-    - "Identity and Access Management (IAM)"
-    - "Infrastructure Management"
-    - "IT Networking"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/design-multi-domain-forest-trust/index.yml
-  uid: 5e91ab9a-ff0f-4224-82fa-caa6c2231539
   title: Design a Multi-Domain or Multi-Forest Active Directory Environment
   description: Design multi-domain and multi-forest AD DS structures, including trusts, delegation, global catalog placement, advanced replication, capacity planning, and RODC branch deployments.
   ms.date: 07/15/2026

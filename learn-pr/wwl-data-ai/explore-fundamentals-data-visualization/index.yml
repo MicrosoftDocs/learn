@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-fundamentals-of-data-visualization
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 39
-  last.refresh.date: null
-  modality: module
-  products:
-    - power-bi
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-analyst
-  skills:
-    - "Data Visualization"
-    - "Data Analytics"
-    - "Business Insights"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/explore-fundamentals-data-visualization/index.yml
-  uid: 9166b878-df48-485f-ad2f-41d8e50c80b7
   title: Explore Fundamentals of Data Visualization
   description: "Learn the fundamental principles of analytical data modeling and data visualization, using Microsoft Power BI as a platform to explore these principles in action."
   ms.date: 10/12/2026

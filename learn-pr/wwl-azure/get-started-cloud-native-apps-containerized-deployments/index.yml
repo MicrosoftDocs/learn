@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-cloud-native-apps-containerized-deployments
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 29
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - solution-architect
-    - developer
-  skills:
-    - "Cloud Infrastructure"
-    - DevOps
-    - "Solution Architecture"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/get-started-cloud-native-apps-containerized-deployments/index.yml
-  uid: 4e694643-31df-4f13-b384-5045dec9a158
   title: Get started with cloud native apps and containerized deployments
   description: Learn about cloud-native application concepts, containerized deployment benefits and challenges, deployment options, and Azure-specific best practices for managing and scaling containerized applications.
   ms.date: 02/26/2024

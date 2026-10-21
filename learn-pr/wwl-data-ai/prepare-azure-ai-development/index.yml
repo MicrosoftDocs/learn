@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.prepare-azure-ai-development
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 60
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "AI Solutions"
-    - "Application Development"
-    - "Responsible AI"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/prepare-azure-ai-development/index.yml
-  uid: 0aefc566-b7d6-4766-926e-49903c94e663
   title: Plan and Prepare to Develop AI Solutions on Azure
   description: Microsoft Azure offers multiple services that enable developers to
     build amazing AI-powered solutions. Proper planning and preparation involves

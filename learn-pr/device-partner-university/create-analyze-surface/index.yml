@@ -2,29 +2,6 @@
 uid: learn.dpu.create-analyze-surface
 title: Create, communicate, and analyze with Surface and Microsoft 365
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 18
-  last.refresh.date: null
-  modality: module
-  products:
-    - surface
-    - m365
-    - microsoft-365-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "AI Productivity"
-    - "AI Prompting"
-    - "Data Analytics"
-    - "Data Visualization"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/create-analyze-surface/index.yml
-  uid: 68e3ff5d-7361-4f30-ad64-2fb2ba4defbb
   title: Create, communicate, and analyze with Surface and Microsoft 365
   description: In this module, you'll learn how to use Microsoft Surface and Microsoft 365 to create presentations in PowerPoint, catch up on email in Outlook, and analyze data in Excel.
   ms.date: 07/29/2026

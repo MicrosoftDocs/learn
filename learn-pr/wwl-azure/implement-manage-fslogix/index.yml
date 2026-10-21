@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-manage-fslogix
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 56
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - Virtualization
-    - Storage
-    - "Device Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-manage-fslogix/index.yml
-  uid: 71061f11-c61e-4164-bf85-76e4f2a1617e
   title: Implement and manage FSLogix
   description: "FSLogix provides customers with both ease of configuration and various levels of flexibility."
   ms.date: 08/27/2024

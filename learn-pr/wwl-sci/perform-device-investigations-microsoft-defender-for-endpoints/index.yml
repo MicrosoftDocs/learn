@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 35
-  last.refresh.date: null
-  modality: module
-  products:
-    - defender-endpoint
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-  skills:
-    - "Security Analytics"
-    - "Threat Management"
-    - "Security Operations Management"
-    - "Device Management"
-    - Cybersecurity
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/perform-device-investigations-microsoft-defender-for-endpoints/index.yml
-  uid: 95fe628e-1310-4c25-b401-888ead3664d8
   title: Perform device investigations in Microsoft Defender for Endpoint
   description: "Perform device investigations in Microsoft Defender for Endpoint"
   ms.date: 05/06/2026

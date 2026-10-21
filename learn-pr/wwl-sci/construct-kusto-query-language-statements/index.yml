@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.construct-kql-statements
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 36
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-sentinel
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-  skills:
-    - "Data Analytics"
-    - "Security Analytics"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/construct-kusto-query-language-statements/index.yml
-  uid: b6aa2785-8aed-49c3-b9d2-984b3e5d5e5f
   title: Construct KQL statements for Microsoft Sentinel
   description: "Construct KQL statements for Microsoft Sentinel"
   ms.date: 05/02/2025

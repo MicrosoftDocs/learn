@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-solutions-secure-applications
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 78
-  last.refresh.date: null
-  modality: module
-  products:
-    - entra
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - solution-architect
-  skills:
-    - "Application Security"
-    - "Security Architecture Design"
-    - "API Management"
-    - "Identity and Access Management (IAM)"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/design-solutions-secure-applications/index.yml
-  uid: 15db3d52-f163-48d1-851d-38bc893f353e
   title: Design Solutions for Securing Applications
   description: "You learn how to secure applications, APIs and the development process using techniques like posture management, threat modeling, and secure access for workload identities."
   ms.date: 05/25/2026

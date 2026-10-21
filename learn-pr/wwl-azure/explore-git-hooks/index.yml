@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-git-hooks
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 14
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-devops
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-    - security-engineer
-    - platform-engineer
-  skills:
-    - DevOps
-    - Automation
-    - "Application Development"
-    - Cybersecurity
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-git-hooks/index.yml
-  uid: bbdb98d8-4b98-402f-bf3b-4dd154f05116
   title: Explore Git hooks
   description: "Learn how to create Git hooks that automatically check code quality, scan for security issues, and help teams follow coding rules."
   ms.date: 09/10/2025

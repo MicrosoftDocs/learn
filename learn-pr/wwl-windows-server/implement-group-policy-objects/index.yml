@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-group-policy-objects
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 55
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - it-professional
-  skills:
-    - "Infrastructure Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/implement-group-policy-objects/index.yml
-  uid: 8a982420-c25c-4b88-974b-cd206fadc795
   title: Implement Group Policy Objects
   description: "Implement Group Policy Objects"
   ms.date: 06/05/2026

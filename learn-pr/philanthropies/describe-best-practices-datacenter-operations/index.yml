@@ -2,31 +2,6 @@
 uid: learn.philanthropies.describe-best-practices-datacenter-operations
 
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 55
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - network-engineer
-    - platform-engineer
-    - security-engineer
-    - student
-  skills:
-    - "Infrastructure Management"
-    - "Cloud Infrastructure"
-    - "IT Networking"
-    - "Network Connectivity"
-    - "Security Operations Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/describe-best-practices-datacenter-operations/index.yml
-  uid: bf968465-4850-4abf-957f-aa53226c5954
   title: Describe the best practices for datacenter operations
   description: In this module, we'll explore the essential operations that ensure the efficiency, reliability, and security of datacenters. Topics include the importance of monitoring key systems like environmental conditions, performance, and security, using tools like the DCIM (Datacenter Infrastructure Management). You'll learn how KPIs such as uptime and energy efficiency are tracked to optimize performance. We'll also cover maintenance practices for hardware, software, cooling systems, and power systems to prevent downtime. The end of the module will touch on regulations, reliability strategies, and disaster recovery.
   ms.date: 05/07/2025

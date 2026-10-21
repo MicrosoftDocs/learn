@@ -1,28 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.create-server-side-programming-azure-cosmos-db-sql-api
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-    - developer
-  skills:
-    - Databases
-    - "Application Development"
-    - "Data Management"
-    - "Data Administration"
-    - "Database Development"
-    - SQL
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/create-server-side-programming-azure-cosmos-db-sql-api/index.yml
-  uid: a20d8e51-5c97-4381-803c-cc1a29a1e47c
   title: Create server-side programming constructs in Azure Cosmos DB for NoSQL
   description: Create server-side programming constructs in Azure Cosmos DB for NoSQL
   ms.date: 04/02/2025

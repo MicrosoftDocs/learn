@@ -2,46 +2,6 @@
 uid: learn.dpu.microsoft-education-accreditation-2026
 title: Microsoft Education Accreditation 2026
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - m365
-    - intune
-    - microsoft-365-copilot
-    - windows
-    - entra
-    - defender-endpoint
-    - microsoft-sentinel
-    - microsoft-purview
-    - security-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - technology-manager
-    - higher-ed-educator
-    - systems-administrator
-    - k-12-educator
-    - security-operations-analyst
-  skills:
-    - "Cloud Computing"
-    - Cybersecurity
-    - "Collaboration Tools"
-    - "Responsible AI"
-    - "AI Strategy"
-    - "AI Productivity"
-    - "Device Management"
-    - "AI Transformation"
-    - "Organizational Effectiveness"
-    - "Security Operations Management"
-    - "Identity and Access Management (IAM)"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: null
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/microsoft-education-accreditation-2026/index.yml
-  uid: bc2d26e0-febd-4655-996c-a597b3343230
   title: Microsoft Education Accreditation 2026
   description: "This Learning Path introduces the latest Microsoft Education solutions designed to support both K–12 and higher education institutions. It provides an overview of how administrators, educators, students, and IT professionals can use Microsoft tools to enhance teaching, learning, and institutional operations across primary, secondary, and postsecondary environments.\n\nLearners will explore capabilities across Microsoft Education offerings, including tools for content creation and assessment, as well as solutions that support accessibility, inclusivity, and personalized learning. The Learning Path also covers how institutions can maintain secure and compliant environments, manage devices and users, and leverage data insights to improve student outcomes and operational efficiency.\n\nBy the end of this Learning Path, participants will have a foundational understanding of how Microsoft Education solutions can be applied across roles to create engaging, secure, and effective learning experiences—empowering students, faculty, and staff to collaborate, innovate, and succeed throughout the educational journey."
   ms.date: 04/13/2026

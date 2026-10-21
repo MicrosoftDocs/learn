@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.review-principles-code-debugging-exception-handling-c-sharp
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 26
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/review-principles-code-debugging-exception-handling-c-sharp/index.yml
-  uid: 3973ee1c-43cf-4e7b-ba60-fb4b430efb23
   title: Review the principles of code debugging and exception handling
   description: "This module examines code validation using a combination of testing, debugging, and exception handling. The debugging process and benefits provided by code debugger are reviewed, along with the principals and processes behind exception handling."
   ms.date: 12/15/2025

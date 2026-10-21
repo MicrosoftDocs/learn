@@ -1,33 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.apply-manage-sensitivity-labels
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 70
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-purview
-    - m365
-    - office-teams
-    - office-sp
-    - power-bi
-    - microsoft-365-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ip-admin
-    - administrator
-    - security-professional
-  skills:
-    - "Data Security"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - Cybersecurity
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/apply-manage-sensitivity-labels/index.yml
-  uid: 22ebbf10-9f27-48f1-96c1-53cbff42fa22
   title: Apply sensitivity labels for data protection
   description: "Apply sensitivity labels for data protection."
   ms.date: 04/16/2026

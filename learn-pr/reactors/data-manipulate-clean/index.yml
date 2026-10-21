@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.reactors.data-manipulate-clean
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 80
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - data-analyst
-  skills:
-    - "Python (Programming Language)"
-    - "Data Science"
-    - "Data Analytics"
-    - "Data Visualization"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/reactors/data-manipulate-clean/index.yml
-  uid: 22735b90-d5c1-47e9-a9c5-5e8e9d08f1e7
   title: Manipulate and clean data in Python
   description: Learn how to manipulate and clean data and datasets in Python, pandas, and NumPy.
   ms.date: 04/08/2022

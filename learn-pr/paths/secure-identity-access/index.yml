@@ -1,41 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.secure-identity-access
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-    - ip-admin
-    - developer
-    - identity-access-admin
-    - security-engineer
-    - security-operations-analyst
-    - solution-architect
-    - systems-administrator
-  skills:
-    - "Identity and Access Management (IAM)"
-    - Cybersecurity
-    - "Security Architecture Design"
-    - "Cloud Administration"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Security Analytics"
-    - Automation
-    - "Cloud Infrastructure"
-    - "Zero Trust Security"
-    - "Application Security"
-    - "Network Connectivity"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/secure-identity-access/index.yml
-  uid: 893657f4-2a4b-47c5-9974-2c56d28b5a1e
   title: 'Protect identity and access in Azure'
   description: 'Protect identity and access in Azure'
   ms.date: 01/23/2026

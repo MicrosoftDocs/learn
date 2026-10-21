@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-advisor
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 16
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - solution-architect
-  skills:
-    - "Cloud Administration"
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-advisor/index.yml
-  uid: cf4a7a2e-159e-416c-984b-6b97f069ce08
   moduleType: introduction
   title: Introduction to Azure Advisor
   description: Introduction to Azure Advisor and how to get recommendations for Azure services.

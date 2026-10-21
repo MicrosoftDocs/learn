@@ -1,34 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.run-vmware-workloads-azure-vmware-solution
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - systems-administrator
-  skills:
-    - Virtualization
-    - "Cloud Infrastructure"
-    - "Infrastructure Management"
-    - "Network Connectivity"
-    - Storage
-    - "Solution Architecture"
-    - "Cloud Administration"
-    - "IT Networking"
-    - "Data Migration"
-    - Cybersecurity
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/run-vmware-workloads-azure-vmware-solution/index.yml
-  uid: 2d1362ab-0eb0-4c2c-bca3-b6072785d2f8
   title: Run VMware resources on Azure VMware Solution
   description: Learn about Azure VMware Solution, how to deploy the resource, and how to migrate VMware virtual machines on-premises.
   brand: azure

@@ -1,34 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-purview
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - microsoft-defender
-    - microsoft-purview
-    - security-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ip-admin
-    - security-operations-analyst
-  skills:
-    - "Data Security"
-    - "Security Operations Management"
-    - "Security Analytics"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Threat Management"
-    - "AI-Powered Workflow Automation"
-    - Cybersecurity
-    - "AI Governance"
-    - "Security Automation"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/sc-200-mitigate-threats-using-microsoft-purview/index.yml
-  uid: 76cded7b-ecd8-4e6f-ab9e-61adcb77e881
   title: 'Mitigate threats using Microsoft Purview'
   description: 'Use Microsoft Purview to discover, classify, and protect sensitive data in your organization. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.'
   ms.date: 07/01/2025

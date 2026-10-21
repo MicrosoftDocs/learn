@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.measure-index-azure-cosmos-db-sql-api
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 47
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Database Development"
-    - SQL
-    - "Data Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/measure-index-azure-cosmos-db-sql-api/index.yml
-  uid: b347b6db-40ee-4419-a94c-c582d29812ea
   title: Measure index performance in Azure Cosmos DB for NoSQL
   description: "Measure the performance of an indexing policy in Azure Cosmos DB for NoSQL."
   ms.date: 04/02/2025

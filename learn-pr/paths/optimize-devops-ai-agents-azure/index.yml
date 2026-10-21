@@ -1,44 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.optimize-devops-ai-agents-azure
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - azure-devops
-    - github
-    - github-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-  skills:
-    - DevOps
-    - "Agentic AI"
-    - "AI Governance"
-    - Automation
-    - "AI-Augmented Software Development"
-    - "AI-Powered Workflow Automation"
-    - "AI Prompting"
-    - "Security Automation"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Agent Operations"
-    - "Infrastructure Management"
-    - "Cloud Infrastructure"
-    - "Platform Engineering"
-    - "Prompt Engineering"
-    - Cybersecurity
-    - "Security Analytics"
-    - "Cloud Administration"
-    - "IT Networking"
-    - "Solution Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/optimize-devops-ai-agents-azure/index.yml
-  uid: beaea9d0-92c2-47b3-ad8c-0ebae652b89f
   title: "Optimize DevOps with AI agents on Azure"
   description: "Learn the concepts of agentic DevOps. Next, learn how to use GitHub Copilot, Azure DevOps MCP Server, and Azure SRE Agent to accelerate delivery, automate operations, and improve reliability across your DevOps workflows."
   ms.date: 04/28/2026

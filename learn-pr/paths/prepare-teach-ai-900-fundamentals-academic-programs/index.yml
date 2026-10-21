@@ -1,33 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.prepare-teach-ai-900-fundamentals-academic-programs
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-  skills:
-    - "Career Development"
-    - "Collaboration Tools"
-    - "Digital Accessibility"
-    - "AI Fluency"
-    - "Machine Learning"
-    - "Computer Vision"
-    - "Natural Language Processing (NLP)"
-    - "Generative AI"
-    - "Responsible AI"
-    - "Semantic Search"
-    - "Communications Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/prepare-teach-ai-900-fundamentals-academic-programs/index.yml
-  uid: 3575e7cd-811b-4dd7-810e-29c4f9e6d218
   title: AI-900
   description: Prepare to teach AI-900 Microsoft Azure AI fundamentals in academic programs
   ms.date: 08/16/2022

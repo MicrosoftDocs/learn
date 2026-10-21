@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.query-azure-cosmos-db-sql-api
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 61
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Database Development"
-    - Databases
-    - SQL
-    - "Application Development"
-    - "Python (Programming Language)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/query-azure-cosmos-db-sql-api/index.yml
-  uid: 7630b6d1-d278-4426-a796-373a71485a12
   title: Query the Azure Cosmos DB for NoSQL
   description: "Author queries for Azure Cosmos DB for NoSQL using the SQL query language."
   ms.date: 04/02/2025

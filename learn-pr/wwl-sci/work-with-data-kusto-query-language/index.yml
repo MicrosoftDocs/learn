@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.work-with-data-kql
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 36
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-sentinel
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-  skills:
-    - "Security Analytics"
-    - SQL
-    - "Data Analytics"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/work-with-data-kusto-query-language/index.yml
-  uid: c37abd31-793b-453c-8f17-bc443c5bd3a3
   title: Work with data in Microsoft Sentinel using Kusto Query Language
   description: "Work with data in Microsoft Sentinel using Kusto Query Language"
   ms.date: 06/12/2026

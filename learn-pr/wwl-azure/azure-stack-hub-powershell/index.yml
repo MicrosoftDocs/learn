@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.azure-stack-hub-powershell
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 28
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-    - solution-architect
-  skills:
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - Automation
-    - "Identity and Access Management (IAM)"
-    - "IT Networking"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/azure-stack-hub-powershell/index.yml
-  uid: 50e37235-2f5e-4e2b-bfae-d712d9c7f49a
   title: Azure Stack Hub PowerShell
   description: "Azure Stack Hub PowerShell"
   ms.date: 03/17/2022

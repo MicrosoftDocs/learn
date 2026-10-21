@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-ai-govern-usage
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 31
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-purview
-    - microsoft-365-copilot
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ip-admin
-  skills:
-    - "AI Governance"
-    - "AI Compliance"
-    - "Data Management"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "AI Risk Management"
-    - "Responsible AI"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-ai-govern-usage/index.yml
-  uid: e8546e19-47e5-45e2-9232-8ae8898bb6fe
   title: Govern AI usage with Microsoft Purview
   description: Learn how to apply policies and manage the lifecycle of AI-generated content using Microsoft Purview. This module shows how to retain, delete, investigate, and review content created in Microsoft 365 Copilot and other AI apps.
   ms.date: 04/10/2025

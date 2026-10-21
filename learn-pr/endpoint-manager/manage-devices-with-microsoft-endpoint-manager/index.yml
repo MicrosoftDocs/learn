@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.manage-devices-with-microsoft-endpoint-manager
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 50
-  last.refresh.date: null
-  modality: module
-  products:
-    - intune
-    - entra
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - identity-access-admin
-    - security-engineer
-  skills:
-    - "Device Management"
-    - "Identity and Access Management (IAM)"
-    - "Infrastructure Management"
-    - Cybersecurity
-    - "IT Networking"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/endpoint-manager/manage-devices-with-microsoft-endpoint-manager/index.yml
-  uid: cb7e6940-4be7-4797-a31c-06f94e31779d
   title: Understand device management using Microsoft Intune
   description: In this module, you learn about how your organization's devices can be provisioned and managed. Additionally, you learn about the different types of enrollment methods available using Microsoft Intune.
   ms.date: 10/15/2024

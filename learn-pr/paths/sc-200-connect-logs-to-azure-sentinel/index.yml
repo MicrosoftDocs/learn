@@ -1,35 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-connect-logs-to-azure-sentinel
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - microsoft-sentinel
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - security-operations-analyst
-  skills:
-    - "Security Operations Management"
-    - "Security Analytics"
-    - "Data Engineering"
-    - "Cloud Administration"
-    - Cybersecurity
-    - "Threat Management"
-    - "Security Automation"
-    - "Device Management"
-    - "Infrastructure Management"
-    - SQL
-    - "Identity and Access Management (IAM)"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/sc-200-connect-logs-to-azure-sentinel/index.yml
-  uid: f0d1d8d3-2e94-45cb-800a-08e8b59e1bae
   title: 'Connect logs to Microsoft Sentinel'
   description: 'Connect logs to Microsoft Sentinel'
   ms.date: 11/26/2025

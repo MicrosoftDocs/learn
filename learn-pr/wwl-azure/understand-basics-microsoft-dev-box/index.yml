@@ -1,34 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-basics-microsoft-dev-box
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 32
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - entra
-    - intune
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - platform-engineer
-    - administrator
-    - developer
-    - solution-architect
-  skills:
-    - "Platform Engineering"
-    - "Cloud Infrastructure"
-    - "Cloud Administration"
-    - "Identity and Access Management (IAM)"
-    - "Device Management"
-    - "Solution Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/understand-basics-microsoft-dev-box/index.yml
-  uid: 7ba44ece-96dd-4f0d-99a0-335c26d2e3cf
   title: Understand the Basics of Microsoft Dev Box
   description: "This module discusses the fundamentals of the Microsoft dev Box, its key concepts, and architecture."
   ms.date: 05/12/2025

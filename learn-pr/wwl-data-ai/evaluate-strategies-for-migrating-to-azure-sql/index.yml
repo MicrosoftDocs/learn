@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.evaluate-strategies-for-migrating-to-azure-sql
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 22
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-    - data-engineer
-  skills:
-    - "Data Migration"
-    - "Data Administration"
-    - Databases
-    - SQL
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-to-azure-sql/index.yml
-  uid: 71f6010a-96db-4e5e-8ba4-803473f769a9
   title: Evaluate strategies for migrating to Azure SQL
   description: "Evaluate strategies for migrating to Azure SQL"
   ms.date: 08/04/2026

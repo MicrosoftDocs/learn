@@ -1,24 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.access-local-files-asynchronously
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Data Management"
-    - Storage
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/access-local-files-asynchronously/index.yml
-  uid: ae1f9752-a8ba-48ec-beda-c9abebbd41db
   title: Access local files asynchronously
   description: Learn how to&nbsp;manage local files using the System.IO namespace and how to asynchronously back up and restore application data using the System.Text.Json namespace.&nbsp;
   ms.date: 04/08/2025

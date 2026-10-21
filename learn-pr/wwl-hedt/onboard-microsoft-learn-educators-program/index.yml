@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.onboard-microsoft-learn-educators-program
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products:
-    - office-teams
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-  skills:
-    - "Career Development"
-    - "Collaboration Tools"
-  solution.area: null
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-hedt/onboard-microsoft-learn-educators-program/index.yml
-  uid: 485a2a7d-c357-4c78-8b2d-f4c40436af53
   title: Onboard to Microsoft Learn for Educators program
   description: "Joining MSLE, getting certified in the content you'll be teaching, integrating Microsoft Official Course materials, and leveraging the various benefits will help ensure your students are well prepared for today’s job opportunities."
   ms.date: 08/08/2022

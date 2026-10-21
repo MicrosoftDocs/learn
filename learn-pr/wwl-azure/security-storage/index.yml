@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.security-storage
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 89
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - storage-admin
-  skills:
-    - "Data Security"
-    - "Identity and Access Management (IAM)"
-    - Storage
-    - "Zero Trust Security"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/security-storage/index.yml
-  uid: e9e9e895-a4c9-4eba-8446-e25d70965d4d
   title: Plan and implement security for storage
   description: "This module is designed to provide administrators with the knowledge and skills required to plan and implement comprehensive security measures for Azure storage resources, safeguarding data integrity, confidentiality, and availability."
   ms.date: 12/31/2025

@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-monitoring-applications
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-  skills:
-    - "Cloud Administration"
-    - "Data Analytics"
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-monitoring-applications/index.yml
-  uid: 0e17b4c5-5393-4bdc-a418-71bdac0fc131
   title: Configure monitoring for applications
   description: In this module you learn how to use Application Insights to monitor application performance and how to use Azure ASQL Insights to improve performance of Azure SQL database applications.
   ms.date: 01/23/2026

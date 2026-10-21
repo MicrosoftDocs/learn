@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 41
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - database-administrator
-  skills:
-    - "Database Development"
-    - "Cloud Infrastructure"
-    - Databases
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/configure-multi-region-write-azure-cosmos-db-sql-api/index.yml
-  uid: ca356cad-6577-4e2d-af0e-4cbcaf6fa8cb
   title: Configure multi-region write in Azure Cosmos DB for NoSQL
   description: "Write data to multiple regions using Azure Cosmos DB for NoSQL."
   ms.date: 04/02/2025

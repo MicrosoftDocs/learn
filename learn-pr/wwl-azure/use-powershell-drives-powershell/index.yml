@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.use-powershell-drives-powershell
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 49
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - Automation
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/use-powershell-drives-powershell/index.yml
-  uid: 6dd192df-ff26-4a56-9687-8e502431c13e
   title: Use PowerShell drives in PowerShell
   description: This module explains how to work with PowerShell drives.
   ms.date: 05/12/2026

@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-windows-server-roles
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 24
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-windows-server-roles/index.yml
-  uid: 4c3012a2-aa9d-4cf0-aad8-a047ae11c0c8
   title: Migrate Windows Server roles
   description: "Learn how to install and use the Windows Server Migration Tools cmdlets to migrate commonly used server roles from earlier versions of Windows Server."
   ms.date: 01/23/2026

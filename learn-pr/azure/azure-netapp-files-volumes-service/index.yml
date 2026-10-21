@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.azure-netapp-files-volumes-service
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 22
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - storage-admin
-    - security-engineer
-  skills:
-    - Storage
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-netapp-files-volumes-service/index.yml
-  uid: a122bafe-0dae-47b9-86c8-6eb2d184c74c
   moduleType: introduction        
   title: Understand how Azure NetApp Files provides volumes as a service     
   description: Understand network attached storage (NAS) concepts and various NAS protocols supported in Azure NetApp Files.      

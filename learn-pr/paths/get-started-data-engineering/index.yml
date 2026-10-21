@@ -1,31 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-data-engineering
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - solution-architect
-    - storage-admin
-  skills:
-    - "Data Engineering"
-    - "Cloud Computing"
-    - Storage
-    - "Data Warehousing"
-    - "Data Management"
-    - "Data Security"
-    - "Data Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-data-engineering/index.yml
-  uid: 300dfbd0-7b76-455c-ba9f-33a2193fdc9d
   title: Get started with data engineering on Azure
   description: Learn how to perform core data engineering workloads on Microsoft Azure.
   ms.date: 05/19/2026

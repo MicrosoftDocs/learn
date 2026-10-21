@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 88
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-    - developer
-    - support-engineer
-    - site-reliability-engineer
-  skills:
-    - Databases
-    - "Data Administration"
-    - "Data Management"
-    - "Cloud Administration"
-    - "Data Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/replicate-monitor-azure-cosmos-db-api-mongodb-account/index.yml
-  uid: 4839907b-02a7-43eb-9500-2de399c9ee4e
   title: Replicate and monitor an Azure Cosmos DB for MongoDB account
   description: "Replicate and monitor an Azure Cosmos DB for MongoDB account"
   ms.date: 12/12/2022

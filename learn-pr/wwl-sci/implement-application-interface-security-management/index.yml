@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-api-security-api-management
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 36
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - entra
-    - azure-openai
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-  skills:
-    - "API Management"
-    - "Application Security"
-    - Cybersecurity
-    - "Identity and Access Management (IAM)"
-    - "Cloud Administration"
-    - "AI Governance"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-application-interface-security-management/index.yml
-  uid: 8c0a8414-2f7a-44fb-917d-37f26a32ab49
   title: Implement API Backend Security Using Azure API Management
   description: "Implement security policies for backend API protection using Azure API Management. Configure subscription key management, JSON Web Token (JWT) validation, and OAuth 2.0 policies, and apply IP filtering and rate limiting. Then enforce mutual Transport Layer Security (mTLS) for secure backend API connections, and configure AI Gateway to secure and govern AI model endpoints."
   ms.date: 05/10/2026

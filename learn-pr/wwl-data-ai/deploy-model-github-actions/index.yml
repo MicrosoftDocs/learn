@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-model-github-actions
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 62
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-machine-learning
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - devops-engineer
-    - ai-engineer
-  skills:
-    - "Machine Learning"
-    - DevOps
-    - Automation
-    - "AI Model Evaluation & Testing"
-    - "Data Science"
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/deploy-model-github-actions/index.yml
-  uid: 5b93ad5b-c8ac-4b05-8444-57a3a5512446
   title: Deploy and monitor a model in Azure Machine Learning
   description: Choose this module if you want to register, deploy, monitor, and roll back models by using GitHub Actions and protected environments.
   ms.date: 08/27/2026

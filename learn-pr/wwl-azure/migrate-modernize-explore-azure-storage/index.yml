@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-explore-azure-storage
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - storage-admin
-    - solution-architect
-  skills:
-    - Storage
-    - "Cloud Infrastructure"
-    - "Solution Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-modernize-explore-azure-storage/index.yml
-  uid: d25519f3-5550-47e7-b651-8b7a06f6a1e1
   title: Modernize and explore Azure for SAP storage
   description: 'This module explores the use of the Azure storage component to design scalable, performant, and resilient SAP deployments in Azure. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/09/2024

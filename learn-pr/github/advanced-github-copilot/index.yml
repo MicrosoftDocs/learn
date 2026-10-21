@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.advanced-github-copilot
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 22
-  last.refresh.date: null
-  modality: module
-  products:
-    - github-copilot
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "AI-Augmented Software Development"
-    - "Prompt Engineering"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/advanced-github-copilot/index.yml
-  uid: e5bfc151-c97a-43f2-910a-638ef7c50221
   title: Using advanced GitHub Copilot features
   description: Use advanced features of GitHub Copilot with Visual Studio Code to make changes and updates to a Python application.
   author: abrilurena

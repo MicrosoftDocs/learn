@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.github.manage-innersource-program-github
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 50
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - technology-manager
-    - devops-engineer
-    - developer
-  skills:
-    - "Collaboration Tools"
-    - DevOps
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/manage-innersource-program-github/index.yml
-  uid: 3f675c06-fcab-4dd0-bd34-2a5b0dd4589c
   title: "Manage an InnerSource program by using GitHub"
   description: Learn to manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
   ms.date: 09/19/2024

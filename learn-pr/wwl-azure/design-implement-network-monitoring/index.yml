@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-network-monitoring
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 28
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - network-engineer
-    - administrator
-  skills:
-    - "IT Networking"
-    - "Security Analytics"
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-implement-network-monitoring/index.yml
-  uid: ccd14747-a6ac-4bf9-beb2-a0b70ac3867e
   adobe-target: true
   prefetch-feature-rollout: true
   title: Design and Implement Network Monitoring

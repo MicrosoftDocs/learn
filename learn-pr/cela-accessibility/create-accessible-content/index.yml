@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.cela-accessibility.create-accessible-content
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 28
-  last.refresh.date: null
-  modality: module
-  products:
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "Digital Accessibility"
-    - "AI Productivity"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/create-accessible-content/index.yml
-  uid: 7777aaf4-360c-4794-9138-7b882341a25e
   title: Create accessible content
   description: Learn the best practices, benefits, and principles of creating accessible content for diverse audiences and situations.
   ms.date: 10/24/2024

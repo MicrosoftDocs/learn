@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.create-throw-exceptions-c-sharp
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 55
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/create-throw-exceptions-c-sharp/index.yml
-  uid: 85c87618-aafc-431e-b255-92fb3b9b8693
   title: Create and throw exceptions in C# console applications
   description: "This module explores the process for creating, throwing, and catching customized exceptions in a C# console application. Hands-on activities provide experience customizing exception properties, throwing exceptions, and using the exception properties to mitigate the exception within a catch block."
   ms.date: 12/15/2025

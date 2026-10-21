@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.create-configure-group-policy-objects-active-directory
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 48
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - "Infrastructure Management"
-    - "Identity and Access Management (IAM)"
-    - Cybersecurity
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/create-configure-group-policy-objects-active-directory/index.yml
-  uid: b80804e3-644e-43f0-b0ac-c3b04fd88c62
   title: Create and configure Group Policy Objects in Active Directory
   description: "This module focuses on Group Policy objects, including using them to enforce a robust password policy."
   ms.date: 06/10/2026

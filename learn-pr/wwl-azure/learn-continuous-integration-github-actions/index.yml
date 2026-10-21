@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.learn-continuous-integration-github-actions
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 70
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-  skills:
-    - DevOps
-    - Automation
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/learn-continuous-integration-github-actions/index.yml
-  uid: 6f53bc5c-64c3-4cce-b755-a151c067f412
   title: Learn continuous integration with GitHub Actions
   description: "Learn continuous integration with GitHub Actions through hands-on practice with workflows, environment variables, artifacts, secrets, and best practices for secure CI/CD pipelines."
   ms.date: 09/26/2025

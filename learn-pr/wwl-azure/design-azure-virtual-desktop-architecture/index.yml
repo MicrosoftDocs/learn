@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-azure-virtual-desktop-architecture
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 59
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - administrator
-  skills:
-    - "Solution Architecture"
-    - Virtualization
-    - "IT Networking"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-azure-virtual-desktop-architecture/index.yml
-  uid: 4afe321e-393e-49cb-9097-fd160b39418c
   adobe-target: true
   prefetch-feature-rollout: true
   title: Design the Azure Virtual Desktop architecture

@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-single-multiple-computers-use-windows-powershell-remoting
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 65
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - it-professional
-  skills:
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-single-multiple-computers-use-windows-powershell-remoting/index.yml
-  uid: 5dd717e0-52e6-404f-98d0-b0bced51845f
   title: Manage single and multiple computers by using Windows PowerShell remoting
   description: "This module explains how to use remoting to perform administration on remote computers."
   ms.date: 05/12/2026

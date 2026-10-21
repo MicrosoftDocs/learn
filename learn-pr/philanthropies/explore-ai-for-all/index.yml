@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.philanthropies.explore-ai-for-all
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 25
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "AI Fluency"
-    - "Accessible AI"
-    - "AI Workforce Applications"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/explore-ai-for-all/index.yml
-  uid: 6057dc9c-7fb5-4ec2-bacd-98f6aa3f00ba
   author: yoosunee
   ms.author: anruss
   ms.date: 01/14/2025

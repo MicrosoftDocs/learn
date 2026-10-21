@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.defender-iot-prepare-deployment
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 33
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-defender
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - network-engineer
-    - security-engineer
-  skills:
-    - "Security Architecture Design"
-    - "IT Networking"
-    - "Infrastructure Management"
-    - Virtualization
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/defender-iot-prepare-deployment/index.yml
-  uid: 016e1741-9355-49d6-a4b9-d559e31e4190
   title: |
     Prepare to deploy Microsoft Defender for IoT
   description: Learn how to prepare your deployment of Microsoft Defender for IoT to monitor your OT network.

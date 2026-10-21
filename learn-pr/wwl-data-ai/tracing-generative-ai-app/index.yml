@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.tracing-generative-ai-app
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 65
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "Large Language Model Operations (LLMOps)"
-    - "Application Development"
-    - "Generative AI"
-    - "AI Model Evaluation & Testing"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/tracing-generative-ai-app/index.yml
-  uid: a4126f3d-9665-4c52-acaa-b3b2c563fc71
   adobe-target: true
   prefetch-feature-rollout: true
   title: Analyze and debug your generative AI app with tracing

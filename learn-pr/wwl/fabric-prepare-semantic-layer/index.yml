@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.fabric-prepare-semantic-layer
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 50
-  last.refresh.date: null
-  modality: module
-  products:
-    - fabric
-    - power-bi
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-analyst
-    - data-engineer
-  skills:
-    - "Data Analytics"
-    - "Data Engineering"
-    - "AI Governance"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/fabric-prepare-semantic-layer/index.yml
-  uid: 3c5b7cb1-8a81-4e4c-8b83-710eb51ac956
   title: Prepare Semantic Models for AI in Power BI and Microsoft Fabric
   description: "Design gold layers, semantic models, and documentation that enable Copilot, data agents, and enterprise ontologies to deliver accurate, business-relevant insights."
   ms.date: 09/03/2026

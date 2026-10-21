@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 125
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - security-engineer
-  skills:
-    - "Cloud Infrastructure"
-    - "Application Security"
-    - Cybersecurity
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/develop-secure-iot-solutions-azure-sphere-iot-hub/index.yml
-  uid: 33244779-5bba-4a76-b50d-184b1ede32e6
   title: "Develop secure IoT Solutions for Azure Sphere with IoT Hub"
   description: "Develop highly secure IoT solutions with Azure Sphere, Azure RTOS and Azure IoT Hub"
   ms.date: 05/10/2026

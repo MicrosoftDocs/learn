@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-windows-server-performance
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 79
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - support-engineer
-  skills:
-    - "Data Analytics"
-    - Automation
-    - Storage
-    - "Network Connectivity"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/monitor-windows-server-performance/index.yml
-  uid: 3b332210-969f-44f6-97a5-3b0341fb5ee1
   title: Monitor Windows Server performance
   description: "Learn how to monitor Windows Server performance using Performance Monitor, Resource Monitor, Reliability Monitor, data collector sets, System Insights for capacity forecasting, and Windows Admin Center."
   ms.date: 08/31/2026

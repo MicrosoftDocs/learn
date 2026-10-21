@@ -1,28 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure-databases.postgresql.basic-sql-join-tables
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 18
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-analyst
-  skills:
-    - SQL
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure-databases/postgresql/basic-sql-join-tables/index.yml
-  uid: 30b45e18-8530-43db-98a7-57b84608529b
   title: "Combining data from multiple tables: SQL Joins Explained"
   description: "Combine data across multiple PostgreSQL tables using SQL JOINs. Learn INNER, LEFT, RIGHT, FULL OUTER, and NATURAL joins with real examples."
   ms.date: 05/23/2025
-  author: markingmyname
-  ms.author: maghan
+  author: mpopovic
+  ms.author: mpopovic
   ms.topic: module-standard-task-based
 ###########################################################################
 ###

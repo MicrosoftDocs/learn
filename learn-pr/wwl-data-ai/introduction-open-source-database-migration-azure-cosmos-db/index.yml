@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-    - solution-architect
-  skills:
-    - "Data Migration"
-    - "Database Design"
-    - "Data Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/index.yml
-  uid: 9754137b-50e0-4c15-b3ef-e54dfe74994b
   title: Introduction to open source database migration to Azure Cosmos DB
   description: "Module on the use of Azure Cosmos DB as part of a migration solution."
   ms.date: 03/26/2024

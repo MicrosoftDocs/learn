@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.github-administration-github-advanced-security
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 21
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - systems-administrator
-    - developer
-  skills:
-    - "Application Security"
-    - "Security Operations Management"
-    - "Security Architecture Design"
-    - "Security Automation"
-    - Cybersecurity
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/github-administration-github-advanced-security/index.yml
-  uid: 4bbef8fb-5e93-4056-8380-6ea06e431fb5
   moduleType: standard
   title: GitHub Administration for GitHub Advanced Security
   description: Understand where GitHub Advanced Security fits in your software development lifecycle and how to enable and roll it out in your organization.

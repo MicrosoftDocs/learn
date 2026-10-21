@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-agent-memory-azure-cosmos-db
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 107
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-openai
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-    - solution-architect
-  skills:
-    - "Agent Development"
-    - "Agentic AI"
-    - "Embedding Models"
-    - "Data Engineering"
-    - Databases
-    - "Data Security"
-    - "Responsible AI"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/design-implement-agent-memory-azure-cosmos-db/index.yml
-  uid: 935af7f4-88a1-485e-8710-45d20c49e09f
   title: Design and Implement Agent Memory Stores in Azure Cosmos DB
   description: "Design durable agent memory on Azure Cosmos DB for NoSQL: separate conversation state from long-term memory, distill turns into facts searchable by meaning, budget a context window, and set retention, reconciliation, and erasure policies."
   ms.date: 10/04/2026

@@ -2,30 +2,6 @@
 uid: learn.github.azure-devops-to-github-enterprise-migrations-part-migration-testing-and-production-migration
 title: Azure Devops to GitHub Enterprise Migrations Part III - Migration Testing and Production Migration
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 19
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-    - azure-devops
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - platform-engineer
-    - it-professional
-  skills:
-    - "Data Migration"
-    - DevOps
-    - "Platform Engineering"
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/ado-github-migrations-3/index.yml
-  uid: 37b398e0-774b-48c9-b3b6-a56432acd5bd
   title: Azure Devops to GitHub Enterprise Migrations Part III - Migration Testing and Production Migration
   description: Learn how to complete the final stages of your Azure DevOps to GitHub Enterprise migration. This module helps you test your migration plan with real repositories and carry out a smooth production migration while keeping your data, communication, and business running safely.
   author: camihmerhar

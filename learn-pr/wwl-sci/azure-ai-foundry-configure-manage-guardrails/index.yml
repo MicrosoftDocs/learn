@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.azure-ai-foundry-configure-manage-guardrails
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 48
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - developer
-    - ai-engineer
-  skills:
-    - "AI Security (Model-Level)"
-    - "AI Safety"
-    - "Responsible AI"
-    - "AI Governance"
-    - "AI Model Evaluation & Testing"
-    - "Data Security"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/azure-ai-foundry-configure-manage-guardrails/index.yml
-  uid: fe49c5f4-1307-4f1c-b035-f41f8c812b36
   title: Configure and manage guardrails in Microsoft Foundry 
   description: Safeguard your AI workloads with Microsoft Foundry guardrails. Discover how to configure and validate content filters, blocklists, and Prompt Shields to protect sensitive data, ensure responsible model behavior, and continuously improve AI safety.
   ms.date: 10/14/2025

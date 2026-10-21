@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-compliance-management-capabilities-microsoft
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 13
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "Data Security"
-    - Cybersecurity
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/index.yml
-  uid: 0d6cd570-11dc-4004-befe-7b3022a4e6c3
   title: Describe Microsoft’s Service Trust Portal and Privacy Principles
   description: "Describe Microsoft’s Service Trust portal and privacy principles."
   ms.date: 04/27/2026

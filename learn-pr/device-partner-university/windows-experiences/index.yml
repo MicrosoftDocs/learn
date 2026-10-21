@@ -2,24 +2,6 @@
 uid: learn.dpu.windows-experiences
 title: A new generation of Windows experiences
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 17
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - it-professional
-  skills:
-    - "Device Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/windows-experiences/index.yml
-  uid: 475be6d8-98e1-495f-af9a-3731e7a4b0f8
   title: A New Generation of Windows Experiences
   description: In this module, you'll learn about new Windows experiences on Windows 11 Pro and Copilot+ PCs.
   ms.date: 07/18/2025

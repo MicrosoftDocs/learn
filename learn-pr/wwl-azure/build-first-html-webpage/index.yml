@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.build-first-html-webpage
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 31
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - student
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/build-first-html-webpage/index.yml
-  uid: 98df3bda-da06-433d-b40a-6602fc307890
   title: Build your First HTML Webpage
   description: "Illustrates basic programming techniques using Visual Studio Code to write HTML and CSS."
   ms.date: 04/25/2025

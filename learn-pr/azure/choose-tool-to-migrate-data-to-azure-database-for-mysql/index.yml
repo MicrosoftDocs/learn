@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-  skills:
-    - "Data Migration"
-    - "Data Administration"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/choose-tool-to-migrate-data-to-azure-database-for-mysql/index.yml
-  uid: c9ce6b34-a699-47f9-8f0f-1a0ed4321edf
   title: "Choose a tool to migrate data to Azure Database for MySQL"
   description: "Choose a tool to migrate data to Azure Database for MySQL"
   ms.date: 08/28/2024

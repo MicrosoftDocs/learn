@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-build-deploy-your-own-ai-copilot
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 43
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-openai
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - data-engineer
-  skills:
-    - "Application Development"
-    - "Retrieval-Augmented Generation (RAG)"
-    - "Vector Databases"
-    - "Cloud Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/guided-project-build-deploy-your-own-ai-copilot/index.yml
-  uid: 47a3cfe0-59fd-4506-8b1d-e5ec21f39295
   title: 'Guided project: Build and Deploy your own AI Copilot'
   description: "Build an AI copilot for Contoso Bike Shop. Integrate Azure OpenAI and Cosmos DB to enable advanced data searches, use GPT-3.5 for enhanced results, and deploy the solution on Azure Kubernetes Service."
   ms.date: 11/13/2024

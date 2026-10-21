@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.modify-data-with-transact-sql
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 56
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - database-administrator
-  skills:
-    - SQL
-    - "Database Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/modify-data-with-transact-sql/index.yml
-  uid: be87b2b1-e56e-4187-a117-1ee527c8eff9
   title: Modify data with T-SQL
   description: "Modify data with T-SQL"
   ms.date: 08/10/2026

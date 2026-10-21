@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.case-study-endpoints-infrastructure
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 38
-  last.refresh.date: null
-  modality: module
-  products:
-    - intune
-    - defender-endpoint
-    - microsoft-defender
-    - defender-for-cloud
-    - microsoft-sentinel
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-  skills:
-    - "Security Architecture Design"
-    - "Zero Trust Security"
-    - "Device Management"
-    - "Threat Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/case-study-endpoints-infrastructure/index.yml
-  uid: 7f40872a-45cc-4e74-a44c-45663775da1b
   title: "Interactive Case Study: Securing Endpoints and Infrastructure"
   description: "Apply your cybersecurity architect skills on a real business scenario in the area of endpoint and infrastructure security. Analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
   ms.date: 04/03/2026

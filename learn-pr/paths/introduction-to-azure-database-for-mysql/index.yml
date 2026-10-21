@@ -2,34 +2,6 @@
 uid: learn.azure-database-for-mysql
 title: Azure Database for MySQL
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-    - solution-architect
-    - systems-administrator
-  skills:
-    - Databases
-    - "Data Administration"
-    - "Solution Architecture"
-    - "Data Security"
-    - "Identity and Access Management (IAM)"
-    - "Cloud Administration"
-    - "Network Connectivity"
-    - Storage
-    - "Data Migration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/introduction-to-azure-database-for-mysql/index.yml
-  uid: abe4b93d-e1fc-40af-a3e6-b58643db8108
   title: Azure Database for MySQL
   description: Azure Database for MySQL
   ms.date: 07/11/2024

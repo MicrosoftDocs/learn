@@ -1,36 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-foundry-iq
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 38
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-    - solution-architect
-    - security-engineer
-  skills:
-    - "Knowledge Grounding for AI"
-    - "Retrieval-Augmented Generation (RAG)"
-    - "Semantic Search"
-    - "Agent Development"
-    - "Agentic AI"
-    - "Identity and Access Management (IAM)"
-    - "AI Security (Model-Level)"
-    - "AI Model Evaluation & Testing"
-    - "Data Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-foundry-iq/index.yml
-  uid: c8e29e41-eb5c-493c-83ff-d378c3746e61
   title: Get started with Microsoft Foundry IQ
   description: "Learn how Microsoft Foundry IQ helps AI agents retrieve relevant information from enterprise data and generate grounded, citation-backed responses."
   ms.date: 07/31/2026

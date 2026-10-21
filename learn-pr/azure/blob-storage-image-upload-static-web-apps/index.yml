@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.blob-storage-image-upload-static-web-apps
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 25
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - Storage
-    - "Application Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/blob-storage-image-upload-static-web-apps/index.yml
-  uid: fd90aa58-8805-4413-9f6b-de3eb3e8c431
   title: Upload images to Azure Blob Storage from a static web app
   description: Learn how to securely upload images to Azure Blob Storage from a static web app by using an Azure Function to generate on demand shared access signatures.
   ms.date: 03/23/2023

@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.create-manage-active-directory-objects
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 55
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - identity-access-admin
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Infrastructure Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/create-manage-active-directory-objects/index.yml
-  uid: 92ee1257-cfc3-4e82-be62-8d09c1b6b641
   adobe-target: true
   prefetch-feature-rollout: true
   title: Create and manage Active Directory objects

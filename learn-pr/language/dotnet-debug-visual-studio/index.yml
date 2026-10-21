@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.dotnet-debug-visual-studio
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 31
-  last.refresh.date: null
-  modality: module
-  products:
-    - vs
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/language/dotnet-debug-visual-studio/index.yml
-  uid: 7728c580-4d76-4585-bde4-9427d99ddc26
   title: Interactively debug .NET apps with the Visual Studio debugger
   description: 'Learn how to efficiently debug your .NET app by using Visual Studio to fix your bugs quickly. Analyze and fix your C# applications by using the interactive debugger within Visual Studio.'
   ms.date: 11/29/2022

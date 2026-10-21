@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.optimize-finetune-agents
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 89
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - data-scientist
-  skills:
-    - "Model Fine-Tuning"
-    - "AI Model Evaluation & Testing"
-    - "Data Science"
-    - "Machine Learning"
-    - "Large Language Model Operations (LLMOps)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/optimize-finetune-agents/index.yml
-  uid: 19372005-1295-469c-b847-4d00fd684159
   title: Optimize and fine-tune AI agents for production
   description: Learn how to select fine-tuning methods (SFT, RFT, DPO), recognize agent quality problems, prepare training data, and design optimization strategies using hyperparameter configuration and iterative evaluation.
   author: madiepev

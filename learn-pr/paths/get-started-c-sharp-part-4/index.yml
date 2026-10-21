@@ -1,22 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-c-sharp-part-4
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-c-sharp-part-4/index.yml
-  uid: 6b3fd5aa-bab9-4513-a9e9-4414999acb7e
   title: Work with variable data in C# console applications (Get started with C#, Part 4)
   description: Work with variable data in C# console applications (Get started with C#, Part 4)
   ms.date: 08/19/2024

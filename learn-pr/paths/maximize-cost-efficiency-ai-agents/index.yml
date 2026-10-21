@@ -1,45 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.maximize-cost-efficiency-ai-agents
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - microsoft-foundry
-    - microsoft-copilot-studio
-    - vs
-    - azure-openai
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - technology-manager
-    - solution-architect
-    - ai-engineer
-    - business-analyst
-  skills:
-    - "AI Business & Vision"
-    - "AI Strategy"
-    - "Agentic AI"
-    - "Solution Architecture"
-    - "AI Infrastructure"
-    - "Cloud Administration"
-    - "Agent Operations"
-    - "Data Strategies"
-    - "Business Insights"
-    - "AI Risk Management"
-    - "AI Governance"
-    - "Large Language Model Operations (LLMOps)"
-    - "Agent Development"
-    - "Multi-Agent Orchestration"
-    - "Model Hosting & Inference"
-    - "AI Model Evaluation & Testing"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/maximize-cost-efficiency-ai-agents/index.yml
-  uid: f724b80d-150c-48e1-adef-b1f2e7453316
   title: Maximize the Cost Efficiency of AI Agents on Azure
   description:  Maximize the ROI of AI agent investments by making cost-conscious, informed decisions at every stage. This learning path offers actionable guidance, from identifying high-impact use cases and understanding cost drivers, to forecasting ROI, adopting best practices, designing scalable and effective architectures, and optimizing ongoing investments.  
   ms.date: 09/01/2026

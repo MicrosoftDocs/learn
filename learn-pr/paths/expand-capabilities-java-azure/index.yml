@@ -1,30 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.expand-capabilities-java-azure
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - security-engineer
-    - systems-administrator
-  skills:
-    - "Cloud Administration"
-    - "Application Development"
-    - SQL
-    - "Identity and Access Management (IAM)"
-    - "Application Security"
-  solution.area: null
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/expand-capabilities-java-azure/index.yml
-  uid: bab57b19-2fae-40f9-b592-ea14b22474c2
   title: Expand the capabilities for Java apps on Azure
   description: Start here and learn how you can get the full power of Azure with your Java apps - use idiomatic libraries to connect and interact with your preferred cloud services, including Azure SQL and NoSQL databases, messaging and eventing systems, Redis cache, storage and directory services. As always, use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
   ms.date: 11/29/2021

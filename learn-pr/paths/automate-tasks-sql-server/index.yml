@@ -1,31 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.automate-tasks-sql-server
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-  skills:
-    - "Cloud Infrastructure"
-    - Automation
-    - DevOps
-    - Databases
-    - SQL
-    - "Data Administration"
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Low-Code Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/automate-tasks-sql-server/index.yml
-  uid: 67b02f3a-ee4a-4f83-868b-c960f77be626
   title: Automate database tasks for Azure SQL
   description: Automate database tasks for Azure SQL
   ms.date: 08/10/2026

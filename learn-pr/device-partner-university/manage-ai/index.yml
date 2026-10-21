@@ -2,28 +2,6 @@
 uid: learn.dpu.manage-ai
 title: 'Frontier Firms: Govern and manage AI experiences with Windows 11'
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 16
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-    - intune
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - technology-manager
-  skills:
-    - "AI Governance"
-    - "Agent Operations"
-    - "Device Management"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/manage-ai/index.yml
-  uid: e4df7fd5-b37e-4d71-9c29-a4d28cda2f97
   title: 'Frontier Firms: Govern And Manage AI Experiences With Windows 11'
   description: In this module, you'll explore why governance is a critical part of scaling AI adoption and how Windows 11 works with management solutions such as Microsoft Intune and Microsoft Agent 365 to help organizations deploy, manage, and secure AI experiences across devices and users.
   ms.date: 08/21/2026

@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.apply-schema-design-patterns-azure-documentdb
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 64
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-  skills:
-    - "Database Design"
-    - Databases
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/apply-schema-design-patterns-azure-documentdb/index.yml
-  uid: 169ac464-2a43-46f8-a430-fa61b78a606a
   title: Apply Schema Design Patterns in Azure DocumentDB
   description: "Apply 10 schema design patterns to solve data modeling challenges in Azure DocumentDB. Organize documents, precompute results, manage arrays, group time-series data, evolve schemas, and archive old data."
   ms.date: 06/20/2026

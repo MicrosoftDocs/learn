@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-blob-storage
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 63
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-    - storage-admin
-  skills:
-    - Storage
-    - "Cloud Administration"
-    - "Data Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-blob-storage/index.yml
-  uid: 254cb903-a0e9-42ce-8b7d-c56526387a5e
   adobe-target: true
   prefetch-feature-rollout: true
   title: Configure Azure Blob Storage

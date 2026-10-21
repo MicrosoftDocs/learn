@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 81
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - solution-architect
-  skills:
-    - "Application Architecture"
-    - "Cloud Computing"
-    - DevOps
-    - "IT Networking"
-    - "Infrastructure Management"
-    - "Application Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-build-apps-cloud/index.yml
-  uid: fa8fb9a9-8fc8-47f6-9626-12d074286d3d
   title: Build applications on the cloud
   description: Carnegie Mellon University's Cloud Developer course. Learn how developers write programs that run on the cloud, including how to deploy, be fault-tolerant, load balance, scale, and deal with latency.
   ms.date: 03/09/2022

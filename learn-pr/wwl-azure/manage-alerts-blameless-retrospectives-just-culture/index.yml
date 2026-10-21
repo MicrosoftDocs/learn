@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 50
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - site-reliability-engineer
-    - devops-engineer
-  skills:
-    - DevOps
-    - "Cloud Administration"
-    - "Organizational Culture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-alerts-blameless-retrospectives-just-culture/index.yml
-  uid: e55ad608-be2c-4a7f-8304-29249cd52e63
   title: Manage alerts, blameless retrospectives and a just culture
   description: "Learn to manage monitoring alerts effectively, conduct blameless retrospectives after incidents, and develop a just culture that promotes learning from failures. Improve application performance by reducing alert fatigue and understanding performance degradation patterns."
   ms.date: 10/21/2025

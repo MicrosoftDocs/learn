@@ -2,29 +2,6 @@
 uid: learn.dpu.work-smarter-copilot-sales
 title: Work smarter with Copilot prompts for sales professionals
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 24
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-365-copilot
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "AI Productivity"
-    - "Prompt Engineering"
-    - "Customer Relationship Management (CRM)"
-    - "Role focused AI Workflows"
-    - "Communications Management"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/work-smarter-copilot-sales/index.yml
-  uid: f78d360d-d2d7-4b38-a9fa-5fafd6c7de2b
   title: Work Smarter With Copilot Prompts For Sales Professionals
   description: Explore how Microsoft 365 Copilot and Copilot+ PC experiences support each stage of the sales workflow, from planning and customer preparation to content creation, meeting collaboration, and end-of-day follow-up.
   ms.date: 07/20/2026

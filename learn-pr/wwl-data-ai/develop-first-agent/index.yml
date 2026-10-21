@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.develop-first-agent
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 74
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - github-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "Agent Development"
-    - "Agentic AI"
-    - "Generative AI"
-    - "Application Development"
-    - "Python (Programming Language)"
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/develop-first-agent/index.yml
-  uid: ad187dd7-2125-4c05-b5a9-ef99a87ea4fa
   title: Develop your first agent with Microsoft Foundry
   description: "AI agents are transforming how we interact with technology. In
     this module, you'll learn how to develop your first AI agent using Microsoft

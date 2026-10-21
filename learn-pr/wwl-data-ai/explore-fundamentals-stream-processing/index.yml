@@ -1,33 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-fundamentals-of-stream-processing
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 38
-  last.refresh.date: null
-  modality: module
-  products:
-    - fabric
-    - azure-databricks
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - data-analyst
-    - solution-architect
-  skills:
-    - "Data Engineering"
-    - "Data Analytics"
-    - "Cloud Computing"
-    - "Data Warehousing"
-    - Storage
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/index.yml
-  uid: 4017810d-31db-4ca0-a1c1-260c51acd127
   title: Explore Fundamentals of Real-Time Analytics
   description: "Learn about the basics of stream processing, and the services in Microsoft Azure that you can use to implement real-time analytics solutions."
   ms.date: 10/12/2026

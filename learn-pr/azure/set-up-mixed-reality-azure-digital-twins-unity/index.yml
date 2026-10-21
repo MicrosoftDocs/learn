@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.set-up-mixed-reality-azure-digital-twins-unity
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 34
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Cloud Computing"
-    - "Application Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/set-up-mixed-reality-azure-digital-twins-unity/index.yml
-  uid: 33fc1b55-fa7a-4072-89ae-b3022531af85
   title: Set up a mixed reality project for Azure Digital Twins in Unity  
   description: Get step-by-step guidance on how to set up and configure a mixed reality project in Unity. Learn about the Azure Digital Twins and SignalR services and common use cases for the Azure platform in Mixed Reality.
   author: JBrentJ

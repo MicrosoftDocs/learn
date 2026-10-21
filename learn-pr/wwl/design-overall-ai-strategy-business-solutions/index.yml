@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-overall-ai-strategy-business-solutions
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 165
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-leader
-    - chief-ai-officer
-  skills:
-    - "AI Strategy"
-    - "AI Transformation"
-    - "AI Governance"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/design-overall-ai-strategy-business-solutions/index.yml
-  uid: 206a26c3-c84b-440c-aa6f-578eb5c8652a
   title: "Design Overall AI Strategy for Business Solutions"
   description: "Learn to design an enterprise AI strategy using Azure's Cloud Adoption Framework. Align AI agent lifecycle with business goals for operational excellence."
   ms.date: 02/13/2026

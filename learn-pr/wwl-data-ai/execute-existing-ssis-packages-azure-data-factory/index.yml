@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 24
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-  skills:
-    - "Data Engineering"
-    - "Process Automation"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/execute-existing-ssis-packages-azure-data-factory/index.yml
-  uid: 97818be8-3263-4e45-88f8-53996dbb5c62
   title: Execute existing SSIS packages in Azure Data Factory
   description: Execute existing SSIS packages in Azure Data Factory or Azure Synapse Pipeline
   ms.date: 10/12/2026

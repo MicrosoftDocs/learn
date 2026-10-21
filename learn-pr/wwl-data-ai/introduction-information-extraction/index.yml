@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-information-extraction
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 28
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-  skills:
-    - "Information Extraction"
-    - "Computer Vision"
-    - "Machine Learning"
-    - "Natural Language Processing (NLP)"
-    - "Generative AI"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/introduction-information-extraction/index.yml
-  uid: a824ba40-41fb-480c-b3b0-3f7d3bdb69ab
   title: Introduction to AI-powered information extraction concepts
   description: "Introduction to AI-powered information extraction concepts"
   ms.date: 11/18/2025

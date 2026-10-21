@@ -1,36 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-cloud-native-applications-to-azure-container-apps
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-    - platform-engineer
-  skills:
-    - "Cloud Infrastructure"
-    - DevOps
-    - "Solution Architecture"
-    - "Application Development"
-    - "Identity and Access Management (IAM)"
-    - "Network Connectivity"
-    - "Application Security"
-    - Automation
-    - "Platform Engineering"
-    - "Application Architecture"
-    - "Infrastructure Management"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/deploy-cloud-native-applications-to-azure-container-apps/index.yml
-  uid: e1a9168e-8643-4764-a149-74e525ca0920
   title: Deploy cloud-native apps using Azure Container Apps AZ-2003
   description: Learn how to build, deploy, scale, and manage containerized cloud-native apps using Azure Container Apps, Azure Container Registry, and Azure Pipelines. (AZ-2003)
   ms.date: 11/22/2023

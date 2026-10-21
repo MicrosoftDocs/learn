@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.devrel.understand-storage-spaces-direct
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 68
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - storage-admin
-    - systems-administrator
-  skills:
-    - Storage
-    - "Infrastructure Management"
-    - "IT Networking"
-    - Virtualization
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/understand-storage-spaces-direct/index.yml
-  uid: e899abc4-8daf-4827-909f-7eeba11b1993
   title: Understand Storage Spaces Direct
   description: Learn how to plan, deploy, provision, monitor, maintain, and troubleshoot Storage Spaces Direct clusters in Windows Server 2025.
   ms.date: 09/01/2026

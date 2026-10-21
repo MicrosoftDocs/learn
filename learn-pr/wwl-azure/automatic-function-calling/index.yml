@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.automatic-function-calling
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 36
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-openai
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - ai-engineer
-  skills:
-    - "Agentic AI"
-    - "Application Development"
-    - "Generative AI"
-    - "Prompt Engineering"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/automatic-function-calling/index.yml
-  uid: e1f64634-0b76-4f1a-8daa-a7cc70646885
   title: Automatic function calling
   description: "Learn how you can automatically invoke functions using the Semantic Kernel SDK."
   ms.date: 08/28/2024

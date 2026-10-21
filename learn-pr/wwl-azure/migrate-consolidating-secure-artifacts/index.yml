@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-consolidating-secure-artifacts
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 37
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-devops
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - security-engineer
-  skills:
-    - DevOps
-    - "Data Migration"
-    - "Data Security"
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-consolidating-secure-artifacts/index.yml
-  uid: 4be8b37d-7e31-4f17-9e69-0f9185ff7bbe
   title: Migrate, Consolidate, and Secure Artifacts
   description: "Learn how to migrate and consolidate artifact repositories to Azure Artifacts, and implement comprehensive security including roles, permissions, and authentication to protect package feeds."
   ms.date: 10/13/2025
