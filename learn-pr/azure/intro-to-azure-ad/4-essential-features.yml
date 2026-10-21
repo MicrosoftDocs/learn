@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-ad.4-essential-features
 metadata:
-  title: Essential features of Microsoft Entra ID
+  title: Essential Features of Microsoft Entra ID
   description: Essential features of Microsoft Entra ID
-  ms.date: 04/30/2025
-  author: joflore
-  ms.author: joflore
+  ms.date: 10/18/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 title: Essential features of Microsoft Entra ID
 durationInMinutes: 5
@@ -16,9 +16,9 @@ quiz:
   questions:
   - content: What does Microsoft Entra B2B provide?
     choices:
-    - content: Microsoft Entra B2B allows you to manage your customers' identities. It provides access to applications and resources.
+    - content: Microsoft Entra B2B allows customers to sign up for customer-facing applications in a separate external tenant.
       isCorrect: false
-      explanation: You use Azure B2C to manage customer identities. You use Microsoft Entra B2B to invite external users to your tenant so that your staff can collaborate with them.
+      explanation: Use Microsoft Entra External ID in an external tenant for customer-facing applications. Microsoft Entra B2B collaboration lets you invite external users to your workforce tenant.
     - content: Microsoft Entra B2B allows you to let your users access virtual machines by using their company Microsoft Entra credentials.
       isCorrect: false
       explanation: You use Microsoft Entra B2B to invite external users to your tenant so that your staff can collaborate with them.
@@ -36,4 +36,3 @@ quiz:
     - content: You use it to add Microsoft Entra Gallery applications to your instance of Microsoft Entra ID.
       isCorrect: false
       explanation: You use Application Proxy to add on-premises applications to your instance of Microsoft Entra ID.
-
