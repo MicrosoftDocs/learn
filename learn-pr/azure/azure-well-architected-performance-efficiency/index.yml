@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-performance-efficiency
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 65
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - developer
-    - systems-administrator
-  skills:
-    - "Solution Architecture"
-    - "Application Architecture"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-well-architected-performance-efficiency/index.yml
-  uid: de0f0845-b80b-47ac-a09e-f025f24f38ab
   title: 'Microsoft Azure Well-Architected Framework - Performance Efficiency'
   description: Learn how to optimize your workload to meet performance requirements while balancing costs, reliability, and security.
   ms.date: 05/28/2025

@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-write-ahead-logging
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 46
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-    - data-engineer
-  skills:
-    - Databases
-    - "Data Administration"
-    - "Data Management"
-    - "Data Engineering"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/understand-write-ahead-logging/index.yml
-  uid: 8d9fdc50-75b7-44a3-b27d-2f18dc0a2569
   title: Understand write-ahead logging
   description: "Azure Database for PostgreSQL is an ACID compliant database service. Write-ahead logging ensures changes are both atomic and durable (the A and D in ACID). Changes are first written to the log before they're committed to the database. In this module, you learn how Azure Database for PostgreSQL implements write-ahead logging, and how the log can be used for replication and logical decoding."
   ms.date: 05/10/2024

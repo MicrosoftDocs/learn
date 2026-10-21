@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-app-registration
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 48
-  last.refresh.date: null
-  modality: module
-  products:
-    - entra
-    - microsoft-defender
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Application Security"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-app-registration/index.yml
-  uid: fb5d5637-eee4-45a2-a889-c6ce3958dd3a
   adobe-target: true
   prefetch-feature-rollout: true
   title: Implement app registration

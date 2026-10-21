@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-generative-ai-vision-apps
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 43
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-    - azure-openai
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "Multimodal AI"
-    - "Computer Vision"
-    - "Generative AI"
-    - "Application Development"
-    - "Python (Programming Language)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/develop-generative-ai-vision-apps/index.yml
-  uid: a697e3dd-40bd-4667-913e-f6dbbf54b1b0
   title: Develop a vision-enabled generative AI application
   description: A picture says a thousand words, and multimodal generative AI models can interpret images to respond to visual prompts. Learn how to build vision-enabled chat apps.
   ms.date: 03/23/2026

@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-right-size-rbac-role-assignments
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 28
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - entra
-    - defender-for-cloud
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - identity-access-admin
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Zero Trust Security"
-    - "Security Architecture Design"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Security Operations Management"
-    - "Cloud Administration"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-right-size-rbac-role-assignments/index.yml
-  uid: f6b96256-d4c5-4842-9ee6-fac6e07930b5
   title: Manage and Right-Size RBAC Role Assignments for Least Privilege
   description: "Implement least-privilege access governance across Azure and Microsoft Entra ID. Assign built-in roles at appropriate scope, create custom roles for Azure resources and Microsoft Entra directory operations, and identify and remediate overprivileged access using Microsoft Entra access reviews and Defender for Cloud CSPM identity insights."
   ms.date: 05/11/2026

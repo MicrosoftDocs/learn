@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-manage-hybrid-identity
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 70
-  last.refresh.date: null
-  modality: module
-  products:
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-    - systems-administrator
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Security Architecture Design"
-    - "Infrastructure Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-manage-hybrid-identity/index.yml
-  uid: 071a828b-3f19-45fe-9785-f58a17a05ce7
   title: Implement and Manage Hybrid Identity
   description: "Creating a hybrid-identity solution to use your on-premises active directory can be challenging. Explore how to implement a secure hybrid-identity solution."
   ms.date: 07/24/2025

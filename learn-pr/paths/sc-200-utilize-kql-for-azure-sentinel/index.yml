@@ -1,27 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-utilize-kql-for-azure-sentinel
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - microsoft-sentinel
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-  skills:
-    - "Data Analytics"
-    - "Security Analytics"
-    - "Data Visualization"
-    - "Threat Management"
-    - SQL
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/sc-200-utilize-kql-for-azure-sentinel/index.yml
-  uid: 84590d76-12cb-4b5d-a06f-aebb6c3e2794
   title: 'Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
   description: 'Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
   ms.date: 11/26/2025

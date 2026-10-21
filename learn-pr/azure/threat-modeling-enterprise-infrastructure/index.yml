@@ -1,33 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.threat-modeling-enterprise-security
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 72
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - solution-architect
-    - systems-administrator
-  skills:
-    - "Threat Management"
-    - "Security Architecture Design"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Identity and Access Management (IAM)"
-    - "Data Security"
-    - "Security Operations Management"
-    - Cybersecurity
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/threat-modeling-enterprise-infrastructure/index.yml
-  uid: c474a98d-f1e4-4ed0-9871-3f5634aa0953
   title: Secure your infrastructure with threat modeling
   description: Learn how to use the foundation of threat modeling to identify enterprise risks and find ways to reduce or eliminate them.
   ms.date: 08/07/2023

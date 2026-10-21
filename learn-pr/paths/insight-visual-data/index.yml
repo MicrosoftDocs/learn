@@ -1,39 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.extract-insights-visual-data-azure
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "Multimodal AI"
-    - "Computer Vision"
-    - "Generative AI"
-    - "Application Development"
-    - "Python (Programming Language)"
-    - "AI Prompting"
-    - "Prompt Engineering"
-    - "Model Hosting & Inference"
-    - "AI Safety"
-    - "Information Extraction"
-    - "Machine Learning"
-    - "API Management"
-    - "Semantic Search"
-    - "AI Solutions"
-    - "Data Engineering"
-    - "Data Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/insight-visual-data/index.yml
-  uid: a99bf0e6-bb78-41a9-89b8-dddf13fc1d19
   title: Extract insights from visual data on Azure
   description: Use generative AI vision and Content Understanding in Azure to extract insights from visual data.
   ms.date: 03/11/2026

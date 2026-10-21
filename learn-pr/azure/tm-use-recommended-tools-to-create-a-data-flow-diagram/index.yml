@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.tm-use-recommended-tools-to-create-a-data-flow-diagram
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 18
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - solution-architect
-    - developer
-  skills:
-    - "Threat Management"
-    - "Security Architecture Design"
-    - "Application Security"
-    - Automation
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/tm-use-recommended-tools-to-create-a-data-flow-diagram/index.yml
-  uid: b1dcb567-6b73-4944-913f-54254e9fce2a
   title: Use Recommended Tools to Create a Data-Flow Diagram
   description: You can use any canvas, physical or virtual, to create a data-flow diagram. Engineers at Microsoft recommend three tools to help you in your threat modeling journey.
   ms.date: 05/22/2025

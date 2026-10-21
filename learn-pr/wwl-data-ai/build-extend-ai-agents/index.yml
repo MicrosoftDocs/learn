@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.build-extend-ai-agents
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 59
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-    - solution-architect
-  skills:
-    - "Agent Development"
-    - "Agentic AI"
-    - "Application Development"
-    - "Generative AI"
-    - "Agent Operations"
-    - "Responsible AI"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/build-extend-ai-agents/index.yml
-  uid: e0ff8000-5500-4394-8883-2bc52efb2de5
   title: Build and extend AI agents with Microsoft Foundry
   description: Build and extend an AI agent with grounded knowledge, data analysis, custom functions, and remote Model Context Protocol (MCP) tools.
   ms.date: 08/21/2026

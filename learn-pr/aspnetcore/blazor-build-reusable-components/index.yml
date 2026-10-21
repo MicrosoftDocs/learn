@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.blazor-build-reusable-components
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 18
-  last.refresh.date: null
-  modality: module
-  products:
-    - vs
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Application Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/blazor-build-reusable-components/index.yml
-  uid: 64fe4c81-1ad4-4268-b417-a20b40a47b2c
   moduleType: standard
   title: Build reusable components with Blazor
   description: "Learn how to use Razor class libraries to package and deploy components with Blazor."

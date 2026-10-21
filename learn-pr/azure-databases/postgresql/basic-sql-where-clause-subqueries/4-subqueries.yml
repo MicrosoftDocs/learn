@@ -6,7 +6,7 @@ metadata:
   description: "This unit teaches how to use subqueries in PostgreSQL to filter, calculate, and manipulate data within SELECT, UPDATE, and WHERE clauses using nested queries."
   ms.date: 05/23/2025
   author: milenak
-  ms.author: maghan
+  ms.author: mpopovic
   ms.topic: unit
 ###########################################################################
 ###

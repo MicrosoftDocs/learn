@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.microsoft-ai-code
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 47
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - ai-engineer
-  skills:
-    - "AI-Augmented Software Development"
-    - "Generative AI"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/microsoft-ai-code/index.yml
-  uid: 3b57f43c-5064-4596-a22e-704181a95a96
   title: Use a Microsoft AI Code model for AI-assisted coding
   description: Learn how Microsoft AI Code models support AI-assisted software development and how to use an MAI-Code model in coding tools.
   ms.date: 09/30/2026

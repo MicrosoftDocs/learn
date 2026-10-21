@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-project-repository-structure-support-secure-pipelines
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 68
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-devops
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-  skills:
-    - DevOps
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/index.yml
-  uid: 600a968e-6db2-4334-bf93-860c5e97e161
   title: Configure a project and repository structure to support secure pipelines
   description: Configure a project and repository structure to support secure pipelines.
   ms.date: 01/18/2024

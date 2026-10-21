@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-expressroute
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 18
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - network-engineer
-    - solution-architect
-  skills:
-    - "Network Connectivity"
-    - "IT Networking"
-    - "Solution Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-expressroute/index.yml
-  uid: f7d2eff1-b600-46d7-8fb0-e40176e1e0c7
   moduleType: introduction
   title: Introduction to Azure ExpressRoute
   description: This module explains what Azure ExpressRoute does, how it works, and when you should choose to use Azure ExpressRoute as a solution.

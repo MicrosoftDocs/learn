@@ -1,26 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.quantum-computing-fundamentals
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure-quantum
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Cloud Computing"
-    - "Application Development"
-    - "Python (Programming Language)"
-    - "Security Architecture Design"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/quantum-computing-fundamentals/index.yml
-  uid: 9fb1e1fa-6b09-443a-9b8f-9fb25490ba18
   title: Get started with Azure Quantum
   description: Intrigued by quantum computing but don't know where to start? This learning path helps prepare you for this exciting next generation of computing.
   brand: azure

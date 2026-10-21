@@ -1,34 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - microsoft-sentinel
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-  skills:
-    - "Security Architecture Design"
-    - "Security Operations Management"
-    - "Identity and Access Management (IAM)"
-    - "Data Management"
-    - "Security Analytics"
-    - "Threat Management"
-    - "Cloud Administration"
-    - "Device Management"
-    - Cybersecurity
-    - "Infrastructure Management"
-    - "Security Automation"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/configure-security-information-event-management-operations-using-microsoft-sentinel/index.yml
-  uid: 476a07ed-2fd3-4893-ab04-5bd868a89b84
   title: 'Configure SIEM security operations using Microsoft Sentinel SC-5001'
   description: 'Configure Security Information and Event Management (SIEM) operations using Microsoft Sentinel. (SC-5001)'
   ms.date: 8/01/2023

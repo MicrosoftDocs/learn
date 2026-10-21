@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.quantum.explore-superposition
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 34
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-quantum
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/quantum/explore-superposition/index.yml
-  uid: 8b495c5f-ba3e-4500-98be-39ae38b1ccf8
   title: Explore quantum superposition with Q#
   description: Learn about the concept of superposition in quantum computing, how to represent superposition states for a single qubit with the Bloch sphere, and how to create and analyze superposition states with Q#.
   ms.date: 09/18/2025

@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-copilot-fabric
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 27
-  last.refresh.date: null
-  modality: module
-  products:
-    - fabric
-    - power-bi
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - data-analyst
-    - data-scientist
-    - business-analyst
-  skills:
-    - "AI Productivity"
-    - "Data Analytics"
-    - "Data Engineering"
-    - "AI Prompting"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/introduction-to-copilot-fabric/index.yml
-  uid: 14e6f7cc-f380-4d7c-9fc8-d307b9cdf910
   title: Introduction to Copilot in Microsoft Fabric
   description: Introduction to Copilot in Microsoft Fabric.
   ms.date: 10/12/2026

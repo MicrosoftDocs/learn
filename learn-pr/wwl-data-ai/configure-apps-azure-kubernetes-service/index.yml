@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-apps-azure-kubernetes-service
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 72
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - platform-engineer
-    - devops-engineer
-  skills:
-    - "Cloud Infrastructure"
-    - "Platform Engineering"
-    - "Application Development"
-    - "Application Security"
-    - Storage
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/configure-apps-azure-kubernetes-service/index.yml
-  uid: f99cc009-d73e-4850-aca3-9304bc7a12da
   title: Configure Applications on Azure Kubernetes Service
   description: Externalize configuration, secure sensitive settings, and attach persistent storage for applications running on Azure Kubernetes Service.
   ms.date: 06/11/2026

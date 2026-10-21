@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.fabric-transform-data-notebooks
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 68
-  last.refresh.date: null
-  modality: module
-  products:
-    - fabric
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - data-analyst
-  skills:
-    - "Data Engineering"
-    - "Data Management"
-    - SQL
-    - "Data Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/fabric-transform-data-notebooks/index.yml
-  uid: 0e877c2b-f40c-4eb0-ba7d-0cf788ac7d6e
   title: Transform Data Using Notebooks in Microsoft Fabric
   description: "Use Fabric notebooks to transform data with Spark SQL and PySpark, connecting to lakehouses, warehouses, and other data stores."
   ms.date: 04/01/2026

@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-if-elseif-else
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 43
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - student
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-if-elseif-else/index.yml
-  uid: fb586fa2-e568-431f-893a-8d283f08d270
   title: Add Decision Logic to your Code in C#
   description: "Learn to branch your code's execution path by evaluating Boolean expressions."
   ms.date: 9/24/2026

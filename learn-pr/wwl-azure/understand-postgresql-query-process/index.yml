@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-postgresql-query-process
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 20
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-  skills:
-    - SQL
-    - Databases
-    - "Data Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/understand-postgresql-query-process/index.yml
-  uid: 571c4902-fb74-407c-9de8-73df52385cba
   title: Understand PostgreSQL query processing
   description: "The Azure Database for PostgreSQL server receives SQL queries and returns the relevant results. Each SQL query goes through several stages in order to return the correct results as quickly as possible. In this module, you learn about the different stages of processing a query, and the EXPLAIN statement."
   ms.date: 05/11/2024

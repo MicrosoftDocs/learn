@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-language
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 30
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - ai-engineer
-  skills:
-    - "Natural Language Processing (NLP)"
-    - "Embedding Models"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/introduction-language/index.yml
-  uid: 2687f32e-b8ce-4124-99bf-752a4abc6f38
   title: Introduction to natural language processing concepts
   description: "Natural language processing (NLP) supports applications that can analyze text to infer semantic meaning."
   ms.date: 12/16/2025

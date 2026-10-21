@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-canary-releases-dark-launching
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 21
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-  skills:
-    - DevOps
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-canary-releases-dark-launching/index.yml
-  uid: 575f5016-8714-4ff2-9b8a-7ef64fb15a47
   title: Implement canary releases and dark launching
   description: "Learn canary release strategies, Azure Traffic Manager configuration, and dark launching techniques for progressive delivery and risk-controlled deployments."
   ms.date: 10/23/2025

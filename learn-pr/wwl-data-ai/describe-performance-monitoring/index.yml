@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-performance-monitoring
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 83
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-  skills:
-    - "Data Administration"
-    - SQL
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/describe-performance-monitoring/index.yml
-  uid: 44ecaf98-c8b7-41ec-a934-141b0d1a971a
   title: Describe performance monitoring
   description: Describe performance monitoring
   ms.date: 08/05/2026

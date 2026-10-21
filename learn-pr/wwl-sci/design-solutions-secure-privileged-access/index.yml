@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-solutions-secure-privileged-access
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 58
-  last.refresh.date: null
-  modality: module
-  products:
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-    - security-engineer
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Zero Trust Security"
-    - "Security Architecture Design"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/design-solutions-secure-privileged-access/index.yml
-  uid: a7d2fc3d-5790-4e3a-b7bb-080b82122b0b
   title: Design Solutions for Securing Privileged Access
   description: "You learn advanced techniques for designing solutions that secure privileged access using Zero Trust principles, the Enterprise Access Model, and Microsoft security frameworks."
   ms.date: 05/29/2026

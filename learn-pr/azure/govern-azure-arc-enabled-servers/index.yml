@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.govern-azure-arc-enabled-servers
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 29
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/govern-azure-arc-enabled-servers/index.yml
-  uid: bb5c3a9c-181f-48a2-b438-288f6bdedbd7
   title: Govern your hybrid and multicloud machines through Azure Arc-enabled servers
   description: Understand the governance capabilities of Azure Arc-enabled servers. Learn about the benefits of and how to onboard Azure Arc-enabled servers to Azure Policy, Azure Automation, and Azure Automanage.
   ms.date: 08/09/2024

@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-manage-resources-cloud-shell-cli
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 43
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - "Cloud Administration"
-    - "Cloud Infrastructure"
-    - "Infrastructure Management"
-    - Storage
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/guided-project-manage-resources-cloud-shell-cli/index.yml
-  uid: 7d484bbe-81fa-4b27-9b42-52f1e3acda8a
   title: 'Guided Project: Manage Azure resources with Cloud Shell and the Azure CLI'
   description: "Create, query, tag, and clean up Azure resources using Cloud Shell and Azure CLI commands."
   ms.date: 03/25/2026

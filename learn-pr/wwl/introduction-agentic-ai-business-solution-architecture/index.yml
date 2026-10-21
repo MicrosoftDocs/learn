@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-agentic-ai-business-solution-architecture
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 24
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - business-leader
-  skills:
-    - "AI Strategy"
-    - "Agentic AI"
-    - "AI Solutions"
-    - "Solution Architecture"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/introduction-agentic-ai-business-solution-architecture/index.yml
-  uid: cc86c2f0-62ba-4a15-8911-1fdb8c245b5e
   title: "Introduction to Agentic AI Business Solutions"
   description: "Learn how to align AI solutions with business goals, scale AI adoption, and use Microsoft AI technologies for enterprise success."
   ms.date: 02/02/2026

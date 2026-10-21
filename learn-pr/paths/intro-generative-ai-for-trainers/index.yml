@@ -2,31 +2,6 @@
 uid: learn.philanthropies.intro-generative-ai-for-trainers
 title: Introduction to generative AI for trainers
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "AI Fluency"
-    - "Generative AI"
-    - "Responsible AI"
-    - "AI Productivity"
-    - "Natural Language Processing (NLP)"
-    - "Digital Accessibility"
-    - "AI Prompting"
-    - "Prompt Engineering"
-    - "Multimodal AI"
-    - "Career Development"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/intro-generative-ai-for-trainers/index.yml
-  uid: 12acffd5-4a4b-49c1-98bc-985d4053cf2d
   title: Introduction to generative AI for trainers
   description: Discover the world of generative AI, including basic concepts, the different applications in various fields, and the skills necessary to use generative AI tools within training environments. Gain knowledge of large language models (LLMs), AI-powered image generators, and Microsoft Copilot. Explore prompt engineering, navigate the limitations of content created by generative AI models, and learn to utilize generative AI models into your trainings critically and responsibly.
   author: yoosunee

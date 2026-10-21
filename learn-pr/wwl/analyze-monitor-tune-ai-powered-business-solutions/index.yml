@@ -1,41 +1,6 @@
 ### YamlMime:Module
 uid: learn.analyze-monitor-tune-ai-powered-business-solutions
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 36
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-365-copilot
-    - microsoft-copilot-studio
-    - power-platform
-    - azure
-    - microsoft-foundry
-    - power-bi
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - ai-engineer
-    - technology-manager
-    - data-engineer
-    - administrator
-    - developer
-  skills:
-    - "Agent Operations"
-    - "AI Model Evaluation & Testing"
-    - "Data Analytics"
-    - "AI Governance"
-    - "AI Risk Management"
-    - "Agent Development"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/analyze-monitor-tune-ai-powered-business-solutions/index.yml
-  uid: 927da246-67fc-4bd3-9855-0b4235df9395
   title: "Monitor, Analyze, and Tune AI Agents"
   description: "Learn to monitor, analyze, and tune AI agents for reliability, performance, and continuous improvement in enterprise environments."
   ms.date: 02/13/2026

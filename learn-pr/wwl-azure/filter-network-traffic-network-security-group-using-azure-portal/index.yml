@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 97
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - security-engineer
-  skills:
-    - "Cloud Infrastructure"
-    - Cybersecurity
-    - "Security Architecture Design"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/filter-network-traffic-network-security-group-using-azure-portal/index.yml
-  uid: 6ba5a0ba-9689-46e7-aa3a-f48f52701a24
   title: Filter network traffic with a network security group using the Azure portal
   description: "Learn to regulate network traffic to your Azure resources by configuring and applying network security groups in the Azure portal, improving your network's security posture."
   ms.date: 01/05/2026

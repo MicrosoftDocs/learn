@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-introduction
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 14
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-  skills:
-    - "Solution Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-well-architected-introduction/index.yml
-  uid: 70875a08-2494-4a4e-bc07-22bf35fb9991
   adobe-target: true
   prefetch-feature-rollout: true
   title: Introduction to the Microsoft Azure Well-Architected Framework

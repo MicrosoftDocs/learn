@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-code-blocks
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 37
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-code-blocks/index.yml
-  uid: 813a1055-e3d4-41fd-b0e4-31725b898343
   title: Control Variable Scope and Logic using Code Blocks in C#
   description: "Use code blocks with more confidence, understanding how they impact the visibility and accessibility of both higher and lower-level constructs in your code."
   ms.date: 12/15/2025

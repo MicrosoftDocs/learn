@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.data-ai.introduction-to-data-streaming
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - power-bi
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - data-analyst
-  skills:
-    - "Data Engineering"
-    - SQL
-    - "Data Analytics"
-    - "Data Visualization"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/data-ai-cert/introduction-to-data-streaming/index.yml
-  uid: 81422f98-cb68-4a5f-8d91-7c1f9645a147
   title: Get Started With Azure Stream Analytics
   description: "Get started with Azure Stream Analytics"
   ms.date: 10/12/2026

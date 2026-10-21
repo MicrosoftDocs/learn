@@ -1,24 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.build-web-pages-html-css-for-beginners
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - student
-  skills:
-    - "Application Development"
-    - "Digital Accessibility"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/build-web-pages-html-css-for-beginners/index.yml
-  uid: 1d7e2dd9-9a24-4b18-a5e9-7fc255c6e547
   title: Build web pages with HTML and CSS for beginners
   description: Write HTML and CSS code to create an accessible webpage using the browser-based version of Visual Studio code.
   ms.date: 01/16/2023

@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn-wwl.security-copilot-getting-started
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 24
-  last.refresh.date: null
-  modality: module
-  products:
-    - security-copilot
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-    - security-engineer
-    - administrator
-  skills:
-    - "AI Prompting"
-    - "Security Operations Management"
-    - "Security Analytics"
-    - "Threat Management"
-    - "Identity and Access Management (IAM)"
-    - "AI Governance"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/security-copilot-getting-started/index.yml
-  uid: 606ec4ee-5e7c-4191-90fe-b4c02d3fc122
   title: Describe Microsoft Security Copilot
   description: Describe Microsoft Security Copilot.
   author: ceperezb

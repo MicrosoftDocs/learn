@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.philanthropies.explore-internet-search-beyond
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 48
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "AI Fluency"
-    - "Prompt Engineering"
-    - "Responsible AI"
-    - "AI Productivity"
-    - "Natural Language Processing (NLP)"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/explore-internet-search-beyond/index.yml
-  uid: e75256ab-f964-4a4f-81fa-2d35f84b46e8
   author: v-downesmary
   ms.author: anruss
   ms.date: 01/14/2025

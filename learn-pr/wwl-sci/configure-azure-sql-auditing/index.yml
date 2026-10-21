@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-sql-auditing
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 20
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-    - ip-admin
-  skills:
-    - "Data Security"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Security Analytics"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/configure-azure-sql-auditing/index.yml
-  uid: c8e72aef-06b0-40bc-a39f-aa020ae8f658
   title: Configure Auditing for Azure SQL Database and SQL Managed Instance
   description: "Configure audit logging for Azure SQL Database and SQL Managed Instance to create tamper-resistant compliance records. Set audit action groups, route logs to Azure Monitor, Event Hubs, and immutable blob storage, and configure SQL Managed Instance–specific auditing to meet financial regulatory audit requirements."
   ms.date: 04/22/2026

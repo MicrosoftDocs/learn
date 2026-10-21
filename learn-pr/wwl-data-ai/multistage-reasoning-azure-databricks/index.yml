@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.multistage-reasoning-azure-databricks
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 68
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-databricks
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "AI Solutions"
-    - "Application Architecture"
-    - "Generative AI"
-    - "Retrieval-Augmented Generation (RAG)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/multistage-reasoning-azure-databricks/index.yml
-  uid: a801a74c-3c0b-42af-89a5-67f4c9822b34
   title: Implement Multi-Stage Reasoning in Azure Databricks
   description: Implement multi-stage reasoning in Azure Databricks
   ms.date: 06/17/2026

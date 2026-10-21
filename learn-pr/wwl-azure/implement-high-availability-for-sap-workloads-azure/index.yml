@@ -1,34 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-high-availability-for-sap-workloads-azure
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 98
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - systems-administrator
-    - database-administrator
-    - network-engineer
-  skills:
-    - "Enterprise Resource Planning (ERP)"
-    - "Solution Architecture"
-    - "Cloud Infrastructure"
-    - "Infrastructure Management"
-    - Databases
-    - "Network Connectivity"
-    - "IT Networking"
-    - Storage
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-high-availability-for-sap-workloads-azure/index.yml
-  uid: 51e4a4f8-94ba-4b40-b0a2-f8daaaa0fd8a
   title: Implement high availability for SAP workloads in Azure
   description: "This module explores high availability and disaster recovery support of Azure for SAP workloads, such as SAP application servers, SAP ASCS-SCS instances, DBMS instances, and SAP HANA. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 12/27/2024

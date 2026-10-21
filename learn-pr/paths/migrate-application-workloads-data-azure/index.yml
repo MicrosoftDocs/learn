@@ -1,39 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.migrate-application-workloads-data-azure
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - systems-administrator
-    - database-administrator
-    - data-engineer
-    - developer
-    - security-engineer
-  skills:
-    - "Data Migration"
-    - "Cloud Infrastructure"
-    - "Identity and Access Management (IAM)"
-    - Virtualization
-    - "Cloud Administration"
-    - Cybersecurity
-    - "Data Administration"
-    - Databases
-    - SQL
-    - Automation
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/migrate-application-workloads-data-azure/index.yml
-  uid: 55d6d96b-1a7e-4d31-96f9-6df0c9130735
   title: Migrate application workloads and data to Azure
   description: Migrate application workloads and data to Azure
   ms.date: 01/23/2026

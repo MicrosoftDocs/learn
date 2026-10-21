@@ -1,25 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-with-python-fundamentals
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Python (Programming Language)"
-    - "Application Development"
-    - "Data Analytics"
-    - "AI-Augmented Software Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-with-python-fundamentals/index.yml
-  uid: 59d74691-42d5-443b-832d-53b8ecb347b6
   title: "Get Started with Python Programming: Part 1 - Fundamentals"
   description: Learn the fundamentals of programming in Python.
   ms.date: 07/15/2026

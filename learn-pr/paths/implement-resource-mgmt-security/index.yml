@@ -1,31 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.security.implement-resource-mgmt-security
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - security-engineer
-    - identity-access-admin
-    - solution-architect
-  skills:
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Identity and Access Management (IAM)"
-    - "Solution Architecture"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-resource-mgmt-security/index.yml
-  uid: 14a49ea9-25ee-41e6-b567-22441eafba5c
   title: Implement resource management security in Azure
   description: Learn how to secure resources using policy, role-based access control, and other Azure services
   brand: azure

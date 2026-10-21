@@ -2,26 +2,6 @@
 uid: learn.github.code-reviews-pull-requests-github-copilot
 title: Leveling up code reviews and pull requests with GitHub Copilot
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 38
-  last.refresh.date: null
-  modality: module
-  products:
-    - github-copilot
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "AI-Augmented Software Development"
-    - "Application Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/code-reviews-pull-requests-github-copilot/index.yml
-  uid: a01c18a0-0628-4a55-b37e-938898fd227d
   title: Leveling Up Code Reviews and Pull Requests with GitHub Copilot
   description: This module shows how GitHub Copilot supports code reviews with actionable suggestions, auto-fixes, and custom guidelines, while Premium Request Units (PRUs) unlock advanced review capabilities.
   author: camihmerhar

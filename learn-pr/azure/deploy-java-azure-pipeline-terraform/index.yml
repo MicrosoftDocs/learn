@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-java-azure-pipeline-terraform
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 30
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - github
-    - azure-devops
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-  skills:
-    - DevOps
-    - Automation
-    - "Cloud Infrastructure"
-    - "Application Development"
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/deploy-java-azure-pipeline-terraform/index.yml
-  uid: 09292313-df37-4494-b9f6-079211f05bf0
   title: Rapidly develop and deploy Java apps using GitHub Actions or Azure Pipelines
   description: Create a Terraform configuration, provision your Azure resources, and set up your project for continuous integration and continuous delivery (CI/CD) by using either GitHub Actions or Azure Pipelines.
   ms.date: 08/02/2023

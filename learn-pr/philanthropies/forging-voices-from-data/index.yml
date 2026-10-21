@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.philanthropies.forging-voices-from-data
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 70
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-openai
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-  skills:
-    - "Generative AI"
-    - "Model Fine-Tuning"
-    - "Prompt Engineering"
-    - "Agent Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/forging-voices-from-data/index.yml
-  uid: 6534bb99-c268-4a30-955e-f4b3bd84d4fe
   title: Forging Voices from Data - Custom AI Training with Azure OpenAI Studio
   description: "Explore how Azure OpenAI Studio enables the development of AI-powered dialogue systems. Learn the core architecture of conversational agents, the models behind them, and how to design basic chat interactions using Microsoft tools."
   ms.date: 4/28/2025

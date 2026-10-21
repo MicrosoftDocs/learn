@@ -2,24 +2,6 @@
 uid: learn.dpu.surface-5g
 title: Get started with 5G on Surface for Business devices
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 23
-  last.refresh.date: null
-  modality: module
-  products:
-    - surface
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - it-professional
-  skills:
-    - "Device Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/surface-5g/index.yml
-  uid: 2ecba6ce-1f46-492b-8f09-04b70fe5d84e
   title: Get Started With 5G On Surface For Business Devices
   description: 'In this module, you''ll learn how to get started with 5G on Surface for Business devices. You''ll learn about the benefits of 5G, how to prepare your network for 5G, and how to activate 5G service on your Surface device.'
   ms.date: 07/08/2026

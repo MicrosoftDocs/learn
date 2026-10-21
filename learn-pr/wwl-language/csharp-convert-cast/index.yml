@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-convert-cast
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 62
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-convert-cast/index.yml
-  uid: 834284a3-7864-46fb-a8d2-d04da8dc2838
   title: Convert Data Types Using Casting and Conversion Techniques in C#
   description: "Explore using C# techniques for casts and conversions."
   ms.date: 12/15/2025

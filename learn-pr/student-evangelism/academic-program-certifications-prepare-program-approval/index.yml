@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.academic-program-certifications-prepare-program-approval
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 12
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-  skills:
-    - "Organizational Effectiveness"
-    - "Career Development"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/academic-program-certifications-prepare-program-approval/index.yml
-  uid: ade5feaf-b52e-4234-ab27-df0af900a22a
   title: Prepare for a program approval event
   description: Organize and support the approval process for your program. Define the main processes in program approval and respond to feedback from an approval panel. 
   ms.date: 08/11/2021

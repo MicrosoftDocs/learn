@@ -1,39 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.manage-hybrid-infrastructure-with-azure-arc
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - defender-for-cloud
-    - defender-endpoint
-    - microsoft-sentinel
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - security-engineer
-    - solution-architect
-    - security-operations-analyst
-  skills:
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Identity and Access Management (IAM)"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Network Connectivity"
-    - Automation
-    - Cybersecurity
-    - "Security Analytics"
-    - "Threat Management"
-    - "Security Automation"
-    - "Data Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-hybrid-infrastructure-with-azure-arc/index.yml
-  uid: 35d4033b-ea14-4d09-af26-cb9c5720db2e
   title: Bring Azure innovation to your hybrid environments with Azure Arc
   description: Learn how to work with Azure Arc enabled servers, data services and Kubernetes.
   ms.date: 08/22/2023

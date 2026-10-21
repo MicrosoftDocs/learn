@@ -1,36 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-create-detections-perform-investigations-azure-sentinel
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - microsoft-sentinel
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-  skills:
-    - "Security Analytics"
-    - "Threat Management"
-    - "Security Operations Management"
-    - "Security Automation"
-    - "Process Automation"
-    - Cybersecurity
-    - "Machine Learning"
-    - "Data Engineering"
-    - "Cloud Administration"
-    - "Data Management"
-    - "Data Visualization"
-    - "Data Analytics"
-    - DevOps
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/sc-200-create-detections-perform-investigations-azure-sentinel/index.yml
-  uid: 2f4f7393-a295-491a-8781-2baba1fb724c
   title: 'Create detections and perform investigations using Microsoft Sentinel'
   description: 'Create detections and perform investigations using Microsoft Sentinel'
   ms.date: 04/18/2025

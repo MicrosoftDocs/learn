@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.tm-provide-context-with-the-right-depth-layer
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 26
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - security-engineer
-    - developer
-  skills:
-    - "Security Architecture Design"
-    - "Threat Management"
-    - "Application Architecture"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/tm-provide-context-with-the-right-depth-layer/index.yml
-  uid: b9457dc3-83c9-4f1d-9a82-aa48d90463d1
   title: Provide Context with the Right Depth Layer
   description: Threat models can get complex if all parties involved can't agree on a data-flow diagram depth layer that provides enough context to satisfy requirements
   ms.date: 06/25/2025

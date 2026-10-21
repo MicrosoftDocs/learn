@@ -2,26 +2,6 @@
 uid: learn.philanthropies.introduction-to-microsofts-responsible-ai-approach
 
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 24
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - risk-practitioner
-  skills:
-    - "Responsible AI"
-    - "AI Governance"
-    - "AI Risk Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/introduction-to-microsofts-responsible-ai-approach/index.yml
-  uid: 62dfbaab-907a-4581-920d-b04c6abd6437
   title: Introduction to Microsoft's Responsible AI Approach
   description: This module provides an overview of Microsoft's responsible AI principles, guidelines, and standards.
   author: yoosunee

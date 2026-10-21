@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.query-configuration-information
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 41
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - "Infrastructure Management"
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/query-configuration-information/index.yml
-  uid: 3a8206c3-9355-47ca-a343-fa6e37e82418
   title: Query configuration information by using CIM and WMI
   description: "This module explains the structure of the namespaces that contain classes and also how to query instances of a class. It covers how to query remote computers by using ad-hoc connections and CIM sessions."
   ms.date: 05/12/2026

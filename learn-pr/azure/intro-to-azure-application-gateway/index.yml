@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-application-gateway
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 18
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - network-engineer
-    - solution-architect
-  skills:
-    - "IT Networking"
-    - "Application Security"
-    - "Solution Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-application-gateway/index.yml
-  uid: 5e6c0543-8e62-4329-9940-a63fe88648a4
   moduleType: introduction
   title: Introduction to Azure Application Gateway
   description: This module explains what Azure Application Gateway does, how it works, and when you should choose to use Application Gateway as a solution to meet your organization's needs.

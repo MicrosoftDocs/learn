@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-azure-databricks-architecture
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 38
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-databricks
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-  skills:
-    - "Data Engineering"
-    - "Cloud Infrastructure"
-    - Storage
-    - "Data Management"
-    - "Data Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-databricks/understand-azure-databricks-architecture/index.yml
-  uid: c7725b99-146e-4cbf-88f7-16306e4e6c75
   title: Understand Azure Databricks Architecture
   description: Learn about Azure Databricks architecture, including the account hierarchy, control and compute planes, and different storage options for managing data with Unity Catalog.
   ms.date: 10/12/2026

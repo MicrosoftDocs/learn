@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 102
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-databricks
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-  skills:
-    - "Data Engineering"
-    - SQL
-    - "Python (Programming Language)"
-    - "Data Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-databricks/cleanse-transform-load-data-into-unity-catalog/index.yml
-  uid: 8a722228-1c8c-4dc3-8a19-95312b3df52f
   title: Cleanse, Transform, and Load Data into Unity Catalog
   description: Learn how to cleanse, transform, and load data into Unity Catalog tables in Azure Databricks by profiling data, handling duplicates and nulls, applying transformations, and using various loading strategies.
   ms.date: 10/12/2026

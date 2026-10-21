@@ -1,25 +1,6 @@
 ### YamlMime:Module 
 uid: learn.develop-accessible-resize-reflow
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 90
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Digital Accessibility"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/develop-accessible-resize-reflow/index.yml
-  uid: cd1141b7-bcc5-4e58-9c91-8a2b8d48e07c
   title: Develop accessible resize and reflow
   description: Learn why supporting resize and reflow is crucial for creating accessible websites and apps.
   ms.date: 02/12/2025

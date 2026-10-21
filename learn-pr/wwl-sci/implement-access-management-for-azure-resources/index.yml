@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-access-management-for-azure-resources
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 30
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-    - security-engineer
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Cloud Administration"
-    - "Application Security"
-    - "Zero Trust Security"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-access-management-for-azure-resources/index.yml
-  uid: 78284208-1f4b-4b7e-b67d-b1b3e399b38c
   adobe-target: true
   prefetch-feature-rollout: true
   title: Implement access manager for Azure resource

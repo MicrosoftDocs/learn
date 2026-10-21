@@ -1,34 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-premises-windows-server-instances-to-azure-iaas-vms
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 41
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-    - systems-administrator
-    - solution-architect
-    - technology-manager
-  skills:
-    - "Data Migration"
-    - "Cloud Infrastructure"
-    - Virtualization
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Solution Architecture"
-    - "Network Connectivity"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-premises-windows-server-instances-azure-iaas-virtual-machines/index.yml
-  uid: 92a769d0-f136-422b-9a0e-88955549c3c0
   title: Migrate on-premises Windows Server instances to Azure IaaS virtual machines
   description: "You're able to plan a migration and select appropriate server migration tools. You'll also learn how to use Azure Migrate, how to assess physical servers, and how to migrate those servers."
   ms.date: 01/23/2026

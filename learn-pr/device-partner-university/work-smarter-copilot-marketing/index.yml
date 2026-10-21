@@ -2,26 +2,6 @@
 uid: learn.dpu.work-smarter-copilot-marketing
 title: Work smarter with Copilot prompts for marketing professionals
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 26
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-365-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-    - marketing
-  skills:
-    - "AI Productivity"
-    - "Collaboration Tools"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/work-smarter-copilot-marketing/index.yml
-  uid: 8137a8d5-886d-4757-b0a2-d98bec1cd7c0
   title: Work Smarter With Copilot Prompts For Marketing Professionals
   description: 'In this module, you''ll learn how to use Microsoft 365 Copilot to work smarter and more efficiently in your role as a marketing professional. You''ll learn how to use Copilot prompts to automate tasks, generate insights, and improve decision-making.'
   ms.date: 07/01/2026

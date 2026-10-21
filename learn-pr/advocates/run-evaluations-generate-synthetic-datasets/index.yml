@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.run-evaluations-generate-synthetic-datasets
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 58
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-    - azure-openai
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "AI Model Evaluation & Testing"
-    - "AI Security (Model-Level)"
-    - "Responsible AI"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/run-evaluations-generate-synthetic-datasets/index.yml
-  uid: 3b0f6f4b-b5ac-4c5f-985e-76977ec9396a
   ms.author: apspeigh
   author: aprilgittens
   ms.date: 04/20/2026

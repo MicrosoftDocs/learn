@@ -1,35 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.secure-access-resources-entra
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - entra
-    - azure
-    - microsoft-365-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-    - security-engineer
-    - developer
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Zero Trust Security"
-    - Cybersecurity
-    - "Cloud Administration"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Security Architecture Design"
-    - "AI Governance"
-    - "Agent Development"
-    - "Application Security"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/secure-access-resources-entra/index.yml
-  uid: 04efe3a2-39b0-4465-8cbe-e3901223f967
   title: Secure Access to Resources by Using Microsoft Entra
   description: Learn to design and implement strong authentication controls, apply Just-in-Time privileged access strategies, and extend identity-based security to AI-powered applications using Microsoft Entra.
   ms.date: 05/17/2026

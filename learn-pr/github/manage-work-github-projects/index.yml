@@ -2,30 +2,6 @@
 uid: learn.github.manage-work-github-projects
 title: Manage your work with GitHub Projects
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 36
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - product-manager
-    - devops-engineer
-    - developer
-    - administrator
-  skills:
-    - "Organizational Effectiveness"
-    - "Collaboration Tools"
-    - Automation
-    - DevOps
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/manage-work-github-projects/index.yml
-  uid: bf27e9b0-7e99-4351-931a-2cf29afcda37
   title: Manage your work with GitHub Projects
   description: Visualize large projects as spreadsheets or boards, and automate everything with code.
   ms.date: 08/03/2024

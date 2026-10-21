@@ -2,28 +2,6 @@
 uid: learn.dpu.summarize-sales-data
 title: Summarize sales data using Copilot in Excel
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 16
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-365-copilot
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - sales
-  skills:
-    - "AI Productivity"
-    - "AI Prompting"
-    - "Data Analytics"
-    - "Data Visualization"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/summarize-sales-data/index.yml
-  uid: 72dc6f90-1d35-44c1-9cbc-40160758c90f
   title: Summarize Sales Data Using Copilot In Excel
   description: In this module, you'll learn how to use Copilot in Excel to summarize, analyze, and visualize sales data for clearer insights.
   ms.date: 10/10/2025

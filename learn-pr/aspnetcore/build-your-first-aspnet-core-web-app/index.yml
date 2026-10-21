@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.build-your-first-aspnet-core-web-app
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 13
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/build-your-first-aspnet-core-web-app/index.yml
-  uid: e244c339-28d0-4b61-92b0-33a93e938533
   title: Build your first ASP.NET Core web app
   description: Learn how to build your first web app using ASP.NET Core. 
   ms.date: 9/9/2024

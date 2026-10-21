@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-network-solutions
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 53
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - network-engineer
-    - solution-architect
-  skills:
-    - "IT Networking"
-    - "Network Connectivity"
-    - "Solution Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-network-solutions/index.yml
-  uid: a0c0960d-a2db-4882-b322-80968bc71253
   adobe-target: true
   prefetch-feature-rollout: true
   title: Design Network Solutions

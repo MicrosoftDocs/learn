@@ -2,26 +2,6 @@
 uid: learn.github.code-with-github-codespaces
 title: Code with GitHub Codespaces
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 27
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Cloud Computing"
-    - DevOps
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/code-with-github-codespaces/index.yml
-  uid: f8c0cefe-0ef6-4d50-b605-efbcc152769c
   title: Code with GitHub Codespaces
   description: In this tutorial, you learn about GitHub Codespaces, its lifecycle, how to personalize your codespace, the differences between Codespaces and github.dev, and build a personalized and customized codespace with devcontainer.json files.
   ms.date: 07/02/2024

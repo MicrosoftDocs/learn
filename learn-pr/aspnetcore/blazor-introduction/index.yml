@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.intro-to-blazor
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 24
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Application Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/blazor-introduction/index.yml
-  uid: fc2d1201-b806-448f-ad61-a3bbe90e6656
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Web Development with Blazor          # Do not edit: title must be "Introduction to (product)"
   description: "Evaluate whether Blazor is appropriate for your next web development project and learn how Blazor works."             # Copy your 'evaluate' Learning Objective here (see below)

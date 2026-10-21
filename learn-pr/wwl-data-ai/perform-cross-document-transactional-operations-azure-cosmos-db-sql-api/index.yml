@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 37
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Database Development"
-    - "Application Development"
-    - Databases
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/perform-cross-document-transactional-operations-azure-cosmos-db-sql-api/index.yml
-  uid: 29a012c7-200a-4e6f-98d2-c8c7832117e8
   title: Perform cross-document transactional operations with the Azure Cosmos DB for NoSQL
   description: "Perform operations on multiple items in single logical units of work."
   ms.date: 04/02/2025

@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.extend-pipeline-use-multiple-templates
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 63
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-devops
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-  skills:
-    - DevOps
-    - "Application Security"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/extend-pipeline-use-multiple-templates/index.yml
-  uid: be684755-da98-4706-8d0a-27aa879014b4
   title: Extend a pipeline to use multiple templates
   description: Fundamental concepts and best practices for creating nested templates.
   ms.date: 01/18/2024

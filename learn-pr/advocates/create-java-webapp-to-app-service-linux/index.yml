@@ -8,25 +8,6 @@
 
 uid: learn.azure.build-tomcat-java-appservice
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 28
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/create-java-webapp-to-app-service-linux/index.yml
-  uid: df2c3a92-243f-4f55-adf1-1a9860cfcbe0
   title: Deploy a Java Web App to a Tomcat Server on Azure App Service
   description: Learn how to create a Java Tomcat web app and deploy it to Azure App Service using Maven.
   ms.date: 05/20/2026

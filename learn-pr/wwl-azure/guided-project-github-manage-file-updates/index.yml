@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-github-manage-file-updates
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 53
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - DevOps
-    - "Collaboration Tools"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/guided-project-github-manage-file-updates/index.yml
-  uid: 683ac749-3b92-4d11-9903-b7196d2a2a16
   title: Guided Project –  Use GitHub to manage file updates
   description: "Hands-on module focused on getting the learner comfortable with basic source control commands through an integrated development environment or web portal."
   ms.date: 04/08/2024

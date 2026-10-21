@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-read-write-files
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 55
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-read-write-files/index.yml
-  uid: 2b68fa96-5298-4148-8370-db9481294fab
   title: Read and write files in C#
   description: "Learn how to read from and write to files in C# using the using statement and the File class to keep your code safe and clean."
   ms.date: 09/23/2026

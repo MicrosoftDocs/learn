@@ -1,36 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.run-governed-ai-workloads-microsoft-foundry
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 47
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-    - azure
-    - azure-openai
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - platform-engineer
-    - ip-admin
-    - security-engineer
-  skills:
-    - "AI Governance"
-    - "AI Compliance"
-    - "AI Risk Management"
-    - "AI Infrastructure"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Platform Engineering"
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/run-governed-ai-workloads-microsoft-foundry/index.yml
-  uid: 1fe5e0d8-f5fa-468a-bfb4-471c44691e17
   title: "Run Governed AI Workloads with Microsoft Foundry"
   description: "Implement enterprise AI governance with Microsoft Foundry by understanding the governance framework, configuring policy‑driven controls, enforcing quotas and safeguards, and applying hands‑on exercises to balance compliance, security, cost management, and innovation."
   ms.date: 02/02/2026

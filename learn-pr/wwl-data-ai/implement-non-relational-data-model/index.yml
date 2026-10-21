@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-non-relational-data-model
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 57
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Database Design"
-    - Databases
-    - "Application Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-non-relational-data-model/index.yml
-  uid: 01d36610-2788-49e0-ae1c-f4416f48ec9e
   title: Implement a non-relational data model
   description: "Implement a non-relational data model"
   ms.date: 04/02/2025

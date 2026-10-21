@@ -1,45 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.cmu-cloud-admin.cloud-developer
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - solution-architect
-  skills:
-    - Virtualization
-    - "Cloud Computing"
-    - "Cloud Infrastructure"
-    - "Infrastructure Management"
-    - "Application Development"
-    - "Application Architecture"
-    - "IT Networking"
-    - Storage
-    - Automation
-    - "IT Strategy"
-    - Cybersecurity
-    - "Identity and Access Management (IAM)"
-    - "Data Security"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Cloud Administration"
-    - DevOps
-    - "Application Security"
-    - Databases
-    - "Database Design"
-    - "Data Engineering"
-    - "Data Analytics"
-    - "Python (Programming Language)"
-    - "Machine Learning"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/cmu-developer/index.yml
-  uid: 7f94d6c7-2805-4ab5-bfab-a59b303343d8
   title: Cloud developer
   description: You will learn various important skills you need as a developer using the Cloud. Skills like virtualization, managing cost and cloud storage to more hands-on developer skills like message queues, and working with streaming data with spark and map reduce.
   brand: azure

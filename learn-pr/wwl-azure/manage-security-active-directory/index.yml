@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-security-active-directory
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 43
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - security-engineer
-    - identity-access-admin
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Zero Trust Security"
-    - Cybersecurity
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-security-active-directory/index.yml
-  uid: 378bfa38-605e-4522-be9f-983608ee9bbc
   title: Manage security in Active Directory
   description: "Learn how to manage security in Active Directory, including configuring user rights with least privilege, delegating permissions, using the Protected Users group and Credential Guard, blocking NTLM authentication, and finding problematic accounts."
   ms.date: 08/31/2026

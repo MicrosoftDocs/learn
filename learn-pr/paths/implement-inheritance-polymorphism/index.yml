@@ -1,22 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-inheritance-polymorphism
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: null
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-inheritance-polymorphism/index.yml
-  uid: 88bff3c0-b4a7-4674-b438-729ec339d019
   title: Implement inheritance and polymorphism
   description: Implement inheritance and polymorphism
   ms.date: 03/10/2025

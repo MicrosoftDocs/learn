@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-vpn-gateways
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 47
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - support-engineer
-    - network-engineer
-  skills:
-    - "IT Networking"
-    - "Network Connectivity"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/troubleshoot-vpn-gateways/index.yml
-  uid: 6f9f5d8d-dcef-4d5d-ba45-bd290407725e
   title: Troubleshoot VPN gateways in Microsoft Azure
   description: "Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module, we look at how to monitor and troubleshoot site-to-site and point-to-site VPNs. AZ720 AZ-720 az-720 networking"
   ms.date: 04/27/2023

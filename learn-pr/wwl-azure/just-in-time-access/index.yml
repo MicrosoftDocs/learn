@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.just-in-time-access
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 68
-  last.refresh.date: null
-  modality: module
-  products:
-    - defender-for-cloud
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - systems-administrator
-  skills:
-    - Cybersecurity
-    - "Network Connectivity"
-    - "Identity and Access Management (IAM)"
-    - "Cloud Infrastructure"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/just-in-time-access/index.yml
-  uid: 6d203744-9084-488a-bf75-c3a5dd1b6397
   title: Explore Just in Time Virtual Machine Access
   description: "Discover how to use Microsoft Defender for Cloud through the Azure portal to ensure the security of your Azure services and workloads, offering continuous threat detection and prevention."
   ms.date: 12/3/2025

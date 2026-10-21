@@ -1,33 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.plan-implement-azure-cosmos-db-sql-api
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - data-engineer
-    - solution-architect
-  skills:
-    - "Cloud Infrastructure"
-    - Databases
-    - Storage
-    - "Application Architecture"
-    - "Cloud Computing"
-    - "Database Design"
-    - "Data Migration"
-    - "Data Engineering"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/plan-implement-azure-cosmos-db-sql-api/index.yml
-  uid: c60c52cb-baac-4d82-b876-d942a7c98c88
   title: Plan and implement Azure Cosmos DB for NoSQL
   description: Plan and implement Azure Cosmos DB for NoSQL
   ms.date: 04/02/2025

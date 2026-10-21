@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.github.github-actions-cd
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 179
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-  skills:
-    - DevOps
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/github-actions-cd/index.yml
-  uid: eedac2dc-f1a4-4d95-a202-92c723b723a9
   title: "Build and deploy applications to Azure by using GitHub Actions"
   description: Create two deployment workflows using GitHub Actions and Microsoft Azure. Learn about triggering a CD workflow and storing credentials.
   ms.date: 01/22/2025

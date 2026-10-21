@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.train-evaluate-cluster-models
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 46
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-machine-learning
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - ai-engineer
-  skills:
-    - "Machine Learning"
-    - "Data Science"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/machine-learning/train-evaluate-cluster-models/index.yml
-  uid: 9d15fe7a-dec0-4842-8021-e078a8dab773
   title: Train and evaluate clustering models
   description: "Clustering is a type of machine learning that is used to group similar items into clusters."
   ms.collection: TBD

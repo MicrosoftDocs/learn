@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.place-scene-objects-tutorials-mrtk
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 54
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/place-scene-objects/index.yml
-  uid: 896afac8-797d-44a2-87a8-c2f95288c08c
   title: Place a Mars Rover Object in the Scene and Work with Grids and Intelligent Object Tracking
   description: This course provides you with an understanding of placing objects and tracking objects using solvers.
   ms.date: 05/26/2025

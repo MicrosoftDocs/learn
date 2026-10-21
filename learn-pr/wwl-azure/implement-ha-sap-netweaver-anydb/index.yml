@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-ha-sap-netweaver-anydb
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 297
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - systems-administrator
-    - network-engineer
-  skills:
-    - "Cloud Infrastructure"
-    - "Solution Architecture"
-    - "Network Connectivity"
-    - Storage
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-ha-sap-netweaver-anydb/index.yml
-  uid: 25e6493d-c2f6-4511-a034-7651acf03478
   title: Implement high availability in SAP NetWeaver with AnyDB on Azure virtual machines
   description: "SAP professionals need to evaluate deploying SAP solutions on Azure. This module explores the preparation for SAP NetWeaver high availability AnyDB deployment on Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 12/23/2024

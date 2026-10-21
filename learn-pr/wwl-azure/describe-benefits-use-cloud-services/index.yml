@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-benefits-use-cloud-services
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 19
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - technology-manager
-    - devops-engineer
-    - developer
-  skills:
-    - "Cloud Computing"
-    - "Cloud Infrastructure"
-    - "Solution Architecture"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - Cybersecurity
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-benefits-use-cloud-services/index.yml
-  uid: 18cf639a-06b8-402d-a599-ffb8952c4ef0
   title: Describe the benefits of using cloud services
   description: "Introduction to concepts surrounding cloud computing. Focused on benefits of using cloud services such as reliability and management."
   ms.date: 12/19/2025

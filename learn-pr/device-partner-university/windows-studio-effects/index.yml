@@ -2,29 +2,6 @@
 uid: learn.dpu.windows-studio-effects
 title: Enhance video and audio with Windows Studio Effects
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 22
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-    - administrator
-    - business-leader
-    - technology-manager
-  skills:
-    - "AI Productivity"
-    - "Collaboration Tools"
-    - "AI Workforce Applications"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/windows-studio-effects/index.yml
-  uid: 7008227f-b10f-43c5-9583-e8e874e4cf4c
   title: Enhance Video And Audio With Windows Studio Effects
   description: In this module, you'll learn how Windows Studio Effects helps you communicate more clearly by enhancing audio and video, reducing distractions, and applying consistent, AI-powered improvements across your apps and environments.
   ms.date: 06/15/2026

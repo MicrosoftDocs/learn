@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-solutions-regulatory-compliance
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 52
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - microsoft-purview
-    - defender-for-cloud
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - security-engineer
-    - ip-admin
-  skills:
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Security Architecture Design"
-    - "AI Compliance"
-    - "Data Security"
-    - "Cloud Infrastructure"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/design-solutions-regulatory-compliance/index.yml
-  uid: 7eced071-0568-4d05-abe2-aa4cd562df79
   title: Design Solutions for Regulatory Compliance
   description: "Learn how to design security solutions that address regulatory compliance requirements across multicloud environments. Translate compliance requirements into security controls using Zero Trust principles, Microsoft Purview, Microsoft Priva, Azure Policy, and Microsoft Defender for Cloud."
   ms.date: 05/15/2026

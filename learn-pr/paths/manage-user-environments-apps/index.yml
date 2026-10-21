@@ -1,37 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-user-environments-apps
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - windows
-    - m365
-    - office-teams
-    - office-onedrive
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - platform-engineer
-    - support-engineer
-    - security-engineer
-  skills:
-    - Virtualization
-    - Storage
-    - "Device Management"
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Identity and Access Management (IAM)"
-    - "IT Networking"
-    - "Security Operations Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-user-environments-apps/index.yml
-  uid: ae398d25-c386-48c7-8bc2-c9cf5e7f172c
   title: Manage user environments and apps for Azure Virtual Desktop
   description: Manage user environments and apps for Azure Virtual Desktop
   ms.date: 08/06/2024

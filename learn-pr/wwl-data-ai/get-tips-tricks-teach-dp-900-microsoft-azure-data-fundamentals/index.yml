@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - fabric
-    - power-bi
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-  skills:
-    - Databases
-    - "Data Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals/index.yml
-  uid: ec42afb2-47a0-45e9-a77b-d6e99adae939
   title: DP-900
   description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
   ms.date: 12/14/2023

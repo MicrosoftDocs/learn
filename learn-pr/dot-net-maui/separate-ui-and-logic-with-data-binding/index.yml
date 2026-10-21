@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 47
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Architecture"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/dot-net-maui/separate-ui-and-logic-with-data-binding/index.yml
-  uid: 7af95230-3214-49b7-9ebf-5b91c8fe4e1e
   title: Create a UI That Uses Data Binding in .NET MAUI.
   description: Create a UI with data binding. Your UI automatically updates based on the latest data, while the data updates in response to changes in the UI.
   ms.date: 02/14/2024

@@ -1,23 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-classes-properties-and-methods
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Application Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-classes-properties-and-methods/index.yml
-  uid: a28213de-8ef2-41f0-b8a2-3efe92bb7d11
   title: Implement classes, properties, and methods
   description: Learn how to&nbsp;create classes and objects in C# and how to securely access and manage encapsulated data using class properties and methods.
   ms.date: 02/11/2025

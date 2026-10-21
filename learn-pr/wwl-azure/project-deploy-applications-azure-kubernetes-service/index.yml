@@ -1,34 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.project-deploy-applications-azure-kubernetes-service
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 65
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-    - devops-engineer
-    - platform-engineer
-    - developer
-  skills:
-    - "Cloud Infrastructure"
-    - DevOps
-    - Automation
-    - "Platform Engineering"
-    - "Application Development"
-    - "Infrastructure Management"
-    - "Network Connectivity"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/project-deploy-applications-azure-kubernetes-service/index.yml
-  uid: ae4eac12-8e51-48bf-8ec4-fc34061294d5
   title: Guided project - Deploy applications to Azure Kubernetes Service
   description: "In this guided project, you provision Azure Container Registry and an Azure Kubernetes Service cluster, build Linux and Windows container images, and deploy them to AKS."
   ms.date: 05/10/2026

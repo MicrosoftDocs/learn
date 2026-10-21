@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.discover-microsoft-sentinel-solution-for-sap-btp
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 30
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-sentinel
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-  skills:
-    - "Security Analytics"
-    - "Threat Management"
-    - "Security Operations Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/discover-microsoft-sentinel-solution-for-sap-btp/index.yml
-  uid: d97eeec9-b1b2-4ebe-a0f6-2b477e8f53c7
   title: Discover the Microsoft Sentinel solution for SAP BTP
   description: "Understand the Microsoft Sentinel solution for SAP BTP. The module explores the benefits of monitoring BTP activity, and describes the steps for deploying the Microsoft Sentinel solution for SAP BTP."
   ms.date: 01/13/2025

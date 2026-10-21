@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 38
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-  skills:
-    - "Data Engineering"
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/orchestrate-data-movement-transformation-azure-data-factory/index.yml
-  uid: 4df46bb8-af70-4b7b-ae60-e83080b057e4
   title: Orchestrating data movement and transformation in Azure Data Factory
   description: "Orchestrate data movement and transformation in Azure Data Factory"
   ms.date: 10/12/2026

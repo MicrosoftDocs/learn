@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-explore-identity-services
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 57
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-  skills:
-    - "Data Migration"
-    - "Cloud Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-modernize-explore-identity-services/index.yml
-  uid: e8f4c479-b0af-466a-83bf-d41f0cb72ac6
   title: Modernize and explore identity services for SAP on Azure
   description: 'Explore using identity services to design multiple authentication and authorization scenarios Azure facilitates, that include support for a range of identity providers. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/10/2024

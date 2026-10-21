@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.github.communicate-using-markdown
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 66
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - devops-engineer
-  skills:
-    - "Collaboration Tools"
-    - DevOps
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/communicate-using-markdown/index.yml
-  uid: b9f086df-934f-41b3-bce7-a0bb26b5550e
   title: Communicate effectively on GitHub using Markdown
   description: Learn to use Markdown to communicate with brevity, clarity, and expression.
   ms.date: 11/05/2024

@@ -2,35 +2,6 @@
 uid: learn.dpu.security-management-education
 title: Microsoft security and management solutions in education
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 28
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-sentinel
-    - defender-endpoint
-    - entra
-    - microsoft-purview
-    - security-copilot
-    - intune
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-    - systems-administrator
-    - technology-manager
-  skills:
-    - Cybersecurity
-    - "Security Operations Management"
-    - "Device Management"
-    - "Identity and Access Management (IAM)"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/security-management-education/index.yml
-  uid: d912bf00-d880-451b-8c40-0fee93a037a0
   title: Microsoft Security And Management Solutions In Education
   description: This module introduces how education institutions can strengthen security and modernize device management using Microsoft’s integrated security and management solutions. It explains how concepts like Zero Trust, chip‑to‑cloud protection, and tools such as Microsoft Sentinel, Defender, Intune, Entra ID, Security Copilot, Purview, and Priva work together to create safer, more efficient learning environments.
   ms.date: 03/25/2026

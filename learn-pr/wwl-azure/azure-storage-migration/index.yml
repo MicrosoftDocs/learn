@@ -1,35 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.storagemigration
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 63
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - systems-administrator
-    - platform-engineer
-    - security-engineer
-  skills:
-    - "Data Migration"
-    - Storage
-    - "Cloud Infrastructure"
-    - "Cloud Administration"
-    - "Data Management"
-    - "Network Connectivity"
-    - "Identity and Access Management (IAM)"
-    - "Data Security"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/azure-storage-migration/index.yml
-  uid: 7a40108a-631c-4b6e-bb6a-8527e1347e9a
   title: Accelerate Your Storage Migration, Modernization, and Innovation Journey to Azure
   description: Plan your storage migration to Azure by assessing your environment, selecting tools, and validating data integrity.
   manager: jsuri

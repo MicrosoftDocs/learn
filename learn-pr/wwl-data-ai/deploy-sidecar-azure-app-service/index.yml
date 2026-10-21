@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-sidecar-azure-app-service
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 85
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - devops-engineer
-    - solution-architect
-  skills:
-    - "Cloud Infrastructure"
-    - "AI Infrastructure"
-    - "Application Development"
-    - "Infrastructure Management"
-    - "Identity and Access Management (IAM)"
-    - "Network Connectivity"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/deploy-sidecar-azure-app-service/index.yml
-  uid: 7957b870-1522-4e15-bbc6-dd331c5e7eff
   title: Run Sidecar-Enabled AI Applications on Azure App Service
   description: Learn how to choose, configure, connect, and troubleshoot sidecar containers for AI applications on Azure App Service.
   ms.date: 08/25/2026

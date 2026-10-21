@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-configure-secure-access-workloads
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 99
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - network-engineer
-    - security-engineer
-  skills:
-    - "Cloud Infrastructure"
-    - Cybersecurity
-    - "Security Architecture Design"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/guided-project-configure-secure-access-workloads/index.yml
-  uid: 2f264cfa-c0be-41c9-bf3a-2b1ea9e7d262
   title: Guided Project - Configure secure access to workloads with Azure virtual networking services
   description: "In this module, you practice configuring secure access to workloads using Azure virtual networking. The lab combines both learning and hands-on practice."
   ms.date: 06/23/2026

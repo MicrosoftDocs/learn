@@ -2,24 +2,6 @@
 uid: learn.dpu.windows-ecosystems-modern-work
 title: 'Windows ecosystems for modern work: The Windows advantage'
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 29
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - it-professional
-  skills:
-    - "Device Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/windows-ecosystems-modern-work/index.yml
-  uid: 5ec4b33d-a4cb-40e8-aca1-74761ce928b8
   title: 'Windows Ecosystems For Modern Work: The Windows Advantage'
   description: Learn how Windows ecosystems support modern work through integrated productivity, security, management, and AI capabilities across diverse organizational environments.
   ms.date: 04/08/2026

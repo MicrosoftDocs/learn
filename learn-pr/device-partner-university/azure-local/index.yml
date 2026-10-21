@@ -2,30 +2,6 @@
 uid: learn.dpu.azure-local
 title: Introduction to Azure Local
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 15
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - technology-manager
-    - systems-administrator
-  skills:
-    - Virtualization
-    - "Infrastructure Management"
-    - "Cloud Infrastructure"
-    - "Solution Architecture"
-    - Storage
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/azure-local/index.yml
-  uid: d4fb680d-52d7-44ee-a2fc-b0f534935525
   title: Introduction To Azure Local
   description: In this module, you’ll learn how Azure Local helps you run virtual machines on-premises using hyperconverged infrastructure. You’ll also discover how you can use Azure services for centralized management, monitoring, and backup.
   ms.date: 09/10/2025

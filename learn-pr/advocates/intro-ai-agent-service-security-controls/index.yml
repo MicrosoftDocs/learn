@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.introduction-ai-agent-service-security-controls
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 20
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - systems-administrator
-    - ai-engineer
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Security Architecture Design"
-    - "Network Connectivity"
-    - "AI Security (Model-Level)"
-    - "Agent Operations"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/intro-ai-agent-service-security-controls/index.yml
-  uid: 60d3088f-b97b-4414-b4a3-e0b409b40cd4
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 05/22/2026

@@ -1,34 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.describe-capabilities-of-microsoft-identity-access-management-solutions
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-    - security-engineer
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Zero Trust Security"
-    - "AI Security (Model-Level)"
-    - "Application Security"
-    - "Cloud Administration"
-    - Automation
-    - "IT Networking"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Threat Management"
-    - "AI-Powered Workflow Automation"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/describe-capabilities-of-microsoft-identity-access/index.yml
-  uid: 890ea281-d168-4cdb-8ab5-e4a9a4003983
   title: 'Introduction to Microsoft Entra'
   description: 'SC-900: Introduction to Microsoft Entra'
   ms.date: 04/27/2026

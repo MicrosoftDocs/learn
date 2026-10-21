@@ -1,27 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.purview-ediscovery-manage-investigations
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - microsoft-purview
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ip-admin
-  skills:
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Data Management"
-    - "Data Security"
-    - "Identity and Access Management (IAM)"
-    - "Security Analytics"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/purview-ediscovery-manage-investigations/index.yml
-  uid: f2ad8f81-06e4-4079-9916-8cd518c6b104
   title: 'Manage investigations with Microsoft Purview eDiscovery'
   description: 'Microsoft Purview eDiscovery supports internal investigations and legal matters by enabling the discovery, preservation, and analysis of Microsoft 365 content. Learn how to manage cases, place holds on data, run targeted searches, and organize results for review to meet legal and regulatory requirements.'
   ms.date: 05/16/2025

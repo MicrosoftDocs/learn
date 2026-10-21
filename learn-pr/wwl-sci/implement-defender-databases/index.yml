@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-defender-databases
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 21
-  last.refresh.date: null
-  modality: module
-  products:
-    - defender-for-cloud
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - database-administrator
-    - security-operations-analyst
-    - administrator
-  skills:
-    - "Threat Management"
-    - Databases
-    - "Data Security"
-    - "Cloud Administration"
-    - "Security Operations Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-defender-databases/index.yml
-  uid: 36e902f8-8fa3-4dd3-80da-b8ae25f37814
   title: Implement Microsoft Defender for Databases
   description: "Enable Microsoft Defender for Databases to detect SQL injection, anomalous query patterns, and vulnerability exposures across Azure SQL services. Enable protection at subscription scope using Azure Policy, configure vulnerability assessment baselines, and route security alerts to the security operations team."
   ms.date: 04/22/2026

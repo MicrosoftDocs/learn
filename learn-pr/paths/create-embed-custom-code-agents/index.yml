@@ -1,27 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.create-embed-custom-code-agents
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - github
-    - github-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-  skills:
-    - "Agent Development"
-    - "Multi-Agent Orchestration"
-    - "AI-Augmented Software Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/create-embed-custom-code-agents/index.yml
-  uid: f7acce3c-38f0-42a9-9d6b-c4eeadb6d1aa
   title: Develop Agents and Applications using Agentic Programming Tools
   description: Learn how to develop applications using agentic programming tools and techniques. This training covers how to configure custom agents in the development environment, how to develop or update apps using the GitHub Spec Kit, and how to create AI-enabled apps with embedded agents using the GitHub Copilot SDK.
   ms.date: 03/05/2026

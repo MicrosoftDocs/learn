@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 67
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - defender-for-cloud
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - administrator
-  skills:
-    - "Security Analytics"
-    - "Cloud Administration"
-    - Cybersecurity
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/create-log-analytics-workspace-microsoft-defender-cloud/index.yml
-  uid: 0b58a963-cf59-4c20-9de6-7db256bca245
   title: Create a Log Analytics workspace
   description: "Learn to create a Log Analytics workspace within the Azure portal, enabling robust data collection and analysis for Microsoft Defender for Cloud to enhance your security posture."
   ms.date: 10/16/2024

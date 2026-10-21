@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.microsoft-sap-partnership
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 76
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - microsoft-365-copilot
-    - office-teams
-    - viva
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - technology-manager
-  skills:
-    - "Solution Architecture"
-    - "Enterprise Resource Planning (ERP)"
-    - "Cloud Infrastructure"
-    - "Application Architecture"
-    - "Data Engineering"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/microsoft-sap-partnership/index.yml
-  uid: 7c2b8e94-a69c-41ef-b288-12cdd4dfce6c
   title: The Microsoft and SAP Partnership
   description: "In this module, you learn about the key aspects of the Microsoft and SAP partnership, including cloud migration, AI integration, Copilot for Microsoft Viva Learning, and SAP SuccessFactors."
   ms.date: 03/26/2025

@@ -1,36 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 67
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - defender-for-cloud
-    - microsoft-defender
-    - microsoft-sentinel
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - security-engineer
-    - technology-manager
-  skills:
-    - "Security Architecture Design"
-    - "Zero Trust Security"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Identity and Access Management (IAM)"
-    - "Data Security"
-    - "Threat Management"
-    - "AI Security (Model-Level)"
-    - "IT Strategy"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/index.yml
-  uid: 3b0965c3-006d-49fa-afdb-8641a581a918
   title: Design Solutions that Align with the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft Cloud Security Benchmark (MCSB)
   description: "You learn about the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft Cloud Security Benchmark (MCSB) and how you can use them to design more secure solutions."
   ms.date: 05/19/2026

@@ -1,32 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-modeling-partitioning-azure-cosmos-db-sql-api
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - developer
-    - solution-architect
-  skills:
-    - "Database Design"
-    - Databases
-    - "Application Architecture"
-    - "Database Development"
-    - "Data Management"
-    - "Data Engineering"
-    - "Solution Architecture"
-    - "Cloud Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-modeling-partitioning-azure-cosmos-db-sql-api/index.yml
-  uid: ae2c0d50-e8c9-4dfd-93a5-78b2f3f7858b
   title: Implement a data modeling and partitioning strategy for Azure Cosmos DB for NoSQL
   description: Implement a data modeling and partitioning strategy for Azure Cosmos DB for NoSQL
   ms.date: 04/02/2025

@@ -1,37 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.devops-dojo-white-belt-foundation
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-    - product-manager
-    - solution-architect
-  skills:
-    - DevOps
-    - "Organizational Culture"
-    - "Organizational Effectiveness"
-    - "Application Architecture"
-    - "Platform Engineering"
-    - "IT Strategy"
-    - "Application Development"
-    - Automation
-    - "Solution Architecture"
-    - Cybersecurity
-    - "Security Automation"
-    - "Application Security"
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/devops-dojo-white-belt-foundation/index.yml
-  uid: ffa104ee-c77d-4e02-89e5-174b0ee1e2dc
   title: 'Introduce DevOps Dojo: Create efficiencies that support your business'
   description: Start your DevOps Dojo journey.  Create multidisciplinary DevOps teams by using shared tools and processes that are designed to make your organization’s software development and implementation projects more efficient.
   ms.date: 09/17/2020

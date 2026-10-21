@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-ai-special-education
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 15
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-365-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - k-12-educator
-  skills:
-    - "AI Productivity"
-    - "Responsible AI"
-    - "AI Prompting"
-    - "Accessible AI"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/introduction-ai-special-education/index.yml
-  uid: 82b95e2d-1a44-45eb-a544-0d550b1ada16
   title: "Learn AI in Special Education"
   description: "Explore practical AI tools to enhance teaching, boost student outcomes, and streamline work in special education environments responsibly."
   ms.date: 11/18/2025

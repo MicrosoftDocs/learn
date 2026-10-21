@@ -1,34 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.cmu-cloud-admin.cmu-monitor-secure-recover
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Data Analytics"
-    - "IT Strategy"
-    - Cybersecurity
-    - "Data Security"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Identity and Access Management (IAM)"
-    - "Cloud Infrastructure"
-    - Storage
-    - "Solution Architecture"
-    - DevOps
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/cmu-admin-monitor-secure-recover/index.yml
-  uid: 69fc009e-4f18-40e4-9a67-3071de052130
   title: Safeguard cloud resources
   description: The third and final learning path in a course on Cloud Administration from Carnegie Mellon University. Learn to monitor your cloud resources, keep them safe, and protect or recover them in the case of a disaster.
   brand: azure

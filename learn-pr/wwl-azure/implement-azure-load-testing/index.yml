@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-azure-load-testing
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 73
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - devops-engineer
-  skills:
-    - "Application Development"
-    - DevOps
-    - Automation
-    - "Application Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-azure-load-testing/index.yml
-  uid: 29eb34b7-255b-4925-b8f1-3bd13ac29cf3
   title: Implement Azure Load Testing
   description: "Learn how to optimize application performance by simulating real-world loads with Azure Load Testing service. Learn how to automate load testing with GitHub Actions to ensure consistent application performance and scalability."
   ms.date: 07/23/2026

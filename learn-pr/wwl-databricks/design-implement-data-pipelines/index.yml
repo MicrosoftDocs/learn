@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-data-pipelines
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 96
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-databricks
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-  skills:
-    - "Data Engineering"
-    - Automation
-    - SQL
-    - "Python (Programming Language)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-databricks/design-implement-data-pipelines/index.yml
-  uid: 5d1f3ff4-b5af-4d9f-a4f5-7729420c4de0
   title: Design and Implement Data Pipelines with Azure Databricks
   description: Learn how to design and implement robust data pipelines using Lakehouse architecture principles, medallion architecture, and Lakeflow pipelines in Azure Databricks.
   ms.date: 10/02/2026

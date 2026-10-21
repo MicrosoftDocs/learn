@@ -1,36 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.migrate-windows-server-workloads-azure
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - systems-administrator
-    - security-engineer
-    - network-engineer
-  skills:
-    - "Data Migration"
-    - "Cloud Infrastructure"
-    - "Identity and Access Management (IAM)"
-    - Virtualization
-    - "Cloud Administration"
-    - Cybersecurity
-    - "Network Connectivity"
-    - "IT Networking"
-    - "Solution Architecture"
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/migrate-windows-server-workloads-azure/index.yml
-  uid: 3114aa78-cf87-449f-9fa2-eae535e68615
   title: Migrate Windows Server workloads to Azure
   description: Learn to migrate physical and virtual on-premises Windows Server workloads to Azure.
   ms.date: 11/15/2025

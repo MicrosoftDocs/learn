@@ -2,26 +2,6 @@
 uid: learn.dpu.microsoft-adaptive-accessories
 title: Configure Microsoft Adaptive Accessories for accessible productivity
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 23
-  last.refresh.date: null
-  modality: module
-  products:
-    - surface
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-    - it-professional
-  skills:
-    - "Digital Accessibility"
-    - "Device Management"
-  solution.area: null
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/microsoft-adaptive-accessories/index.yml
-  uid: 342065ab-18dd-42d9-9b25-d6cecbd08289
   title: Configure Microsoft Adaptive Accessories for accessible productivity
   description: "In this module, you'll learn how to configure Microsoft Adaptive Accessories for accessible productivity."
   ms.date: 08/27/2026

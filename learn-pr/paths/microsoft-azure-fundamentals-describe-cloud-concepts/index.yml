@@ -1,32 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.microsoft-azure-fundamentals-describe-cloud-concepts
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - it-professional
-    - developer
-    - solution-architect
-    - business-user
-    - technology-manager
-  skills:
-    - "Cloud Computing"
-    - "Cloud Infrastructure"
-    - "Solution Architecture"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - Cybersecurity
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/microsoft-azure-fundamentals-describe-cloud-concepts/index.yml
-  uid: 8893ab6e-7222-42b7-805a-92aace37987e
   title: 'Introduction to Cloud Infrastructure: Describe Cloud Concepts'
   description: 'Introductory learning path that is part of the Azure Infrastructure fundamentals content.'
   ms.date: 03/31/2026

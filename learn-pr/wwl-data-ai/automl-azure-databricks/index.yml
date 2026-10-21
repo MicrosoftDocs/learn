@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.automl-azure-databricks
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 44
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-databricks
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-  skills:
-    - "Machine Learning"
-    - "Data Science"
-    - "AI Model Evaluation & Testing"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/automl-azure-databricks/index.yml
-  uid: d6f831a8-e054-40d8-a6cf-ed64493854e7
   title: Use AutoML in Azure Databricks
   description: Learn how to use AutoML to train optimal machine learning models for your data in Azure Databricks.
   author: JulianePadrao

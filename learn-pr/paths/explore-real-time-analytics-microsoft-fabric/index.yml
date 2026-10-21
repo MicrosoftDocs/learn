@@ -1,28 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.explore-real-time-analytics-microsoft-fabric
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - fabric
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-analyst
-    - data-engineer
-  skills:
-    - Automation
-    - "Data Analytics"
-    - "Data Engineering"
-    - "Process Automation"
-    - "Data Visualization"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/explore-real-time-analytics-microsoft-fabric/index.yml
-  uid: 07b1cef9-60bb-4368-b1c1-56a5743bacfc
   title: Implement Real-Time Intelligence with Microsoft Fabric
   description: Ingest, transform, and analyze streaming data with Real-Time Intelligence in Microsoft Fabric.
   ms.date: 06/12/2026

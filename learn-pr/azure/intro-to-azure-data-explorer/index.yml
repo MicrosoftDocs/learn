@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-data-explorer 
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 29
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - data-analyst
-    - solution-architect
-  skills:
-    - "Data Analytics"
-    - "Data Engineering"
-    - "Data Management"
-    - "Solution Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-data-explorer/index.yml
-  uid: bb24e129-cbd4-42c6-8e58-50dda2c93054
   moduleType: introduction        
   title: Introduction to Azure Data Explorer          
   description: "Evaluate whether Azure Data Explorer is appropriate to process and analyze your big data."                 # Copy your 'evaluate' Learning Objective here (see below)

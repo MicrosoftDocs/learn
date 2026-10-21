@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.dotnet-maui.create-multi-page-apps
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 49
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Application Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/dot-net-maui/create-multi-page-apps/index.yml
-  uid: 3f2e8bec-ebd9-48ba-8d74-bc424d6526e2
   moduleType: standard
   title: "Create multi-page .NET MAUI apps with tab and flyout navigation"
   description: "Use .NET Multi-platform App UI (MAUI) shell to create multi-page applications with tabs and flyout navigation."

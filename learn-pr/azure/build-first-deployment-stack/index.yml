@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.build-first-deployment-stack
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 38
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - systems-administrator
-  skills:
-    - "Infrastructure Management"
-    - Automation
-    - DevOps
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/build-first-deployment-stack/index.yml
-  uid: 9ba1285b-d6c1-4213-8da1-8c5a18da37aa
   title: Build your first deployment stack
   description: Learn how to build and deploy deployment stacks.
   ms.date: 08/01/2023

@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-ai-gateway-security-foundry
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 22
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - microsoft-foundry
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-  skills:
-    - "API Management"
-    - "AI Security (Model-Level)"
-    - "Identity and Access Management (IAM)"
-    - "Security Analytics"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/configure-ai-gateway-security-foundry/index.yml
-  uid: 1a356dca-f39f-4995-b24c-7bbf858ee4b1
   title: Configure AI Gateway Security in Microsoft Foundry
   description: "Secure AI model traffic in Microsoft Foundry by deploying and configuring AI Gateway. Examine AI Gateway architecture, create and configure a gateway instance, and apply access controls and monitoring to protect AI workloads."
   ms.date: 04/21/2026

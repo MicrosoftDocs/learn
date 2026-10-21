@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 111
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - azure-devops
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - platform-engineer
-    - devops-engineer
-  skills:
-    - "Cloud Infrastructure"
-    - DevOps
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/deploy-manage-container-app-using-azure-container-apps/index.yml
-  uid: a72bae06-9e72-4507-8de9-dd5037e807db
   title: Guided project - Deploy and manage a container app using Azure Container Apps
   description: "Learn to configure Azure Container Registry, Azure Container Apps, and the other resources required for an app deployment scenario. Learn to configure a container apps solution for continuous integration, scaling, and revision management."
   ms.date: 10/31/2024

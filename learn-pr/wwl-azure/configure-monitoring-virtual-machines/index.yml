@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-monitoring-virtual-machines
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 36
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - platform-engineer
-    - devops-engineer
-  skills:
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-monitoring-virtual-machines/index.yml
-  uid: dfe16e36-6e5d-4693-9d62-42b67b4ada51
   title: Configure monitoring for virtual machines
   description: In this module, you learn how the Azure Monitor Agent can be deployed to IaaS VMs, how VM Insights can be used to monitor IaaS VM performance, and how to enable data collection rules to collect operating system and application logs.
   ms.date: 01/23/2026

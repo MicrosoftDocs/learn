@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-network-security-issues
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 59
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - network-engineer
-    - security-engineer
-    - systems-administrator
-  skills:
-    - "IT Networking"
-    - Cybersecurity
-    - "Cloud Administration"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/troubleshoot-network-security-issues/index.yml
-  uid: d8241537-9c46-4da7-a15d-fa8cb10b75d8
   title: Troubleshoot network security issues with Microsoft Azure
   description: "Troubleshoot network issues revolving around WAF, NSG, Azure Firewall, latency within a virtual network. AZ720 AZ-720 az-720 networking"
   ms.date: 04/27/2023

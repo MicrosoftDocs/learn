@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.build-query-azure-database-postgresql
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 89
-  last.refresh.date: null
-  modality: module
-  products:
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - database-administrator
-    - ai-engineer
-  skills:
-    - Databases
-    - SQL
-    - "Database Design"
-    - "Application Development"
-    - "Data Management"
-    - "Identity and Access Management (IAM)"
-    - "Application Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/build-query-azure-database-postgresql/index.yml
-  uid: 6627f1ef-7b30-4b6f-80e5-8aa3a5dc77ec
   title: Build and Query with Azure Database for PostgreSQL
   description: Learn how to use Azure Database for PostgreSQL as a data foundation for AI applications, including schema design, SQL queries, and Python integration.
   ms.date: 06/15/2026

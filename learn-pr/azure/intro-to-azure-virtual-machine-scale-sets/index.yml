@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-virtual-machine-scale-sets
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 24
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - solution-architect
-  skills:
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Solution Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-virtual-machine-scale-sets/index.yml
-  uid: 42d6b2c4-c554-44ee-9100-4be728c90253
   title: Introduction to Azure Virtual Machine Scale Sets
   description: Learn about what Azure Virtual Machine Scale Sets do, how they work, and when you should use Azure Virtual Machine Scale Sets as a solution for your organization.
   ms.date: 11/15/2025

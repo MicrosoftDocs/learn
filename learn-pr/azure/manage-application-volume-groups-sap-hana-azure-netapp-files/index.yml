@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.manage-application-volume-groups-sap-hana
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 80
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - database-administrator
-    - solution-architect
-  skills:
-    - Storage
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Solution Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/manage-application-volume-groups-sap-hana-azure-netapp-files/index.yml
-  uid: e2f5320a-a1ed-44ee-a2e1-cc7d2d7b3964
   title: Manage application volume groups for SAP HANA in Azure NetApp Files
   description: Learn how to manage application volume groups for SAP HANA in Azure NetApp Files, including deploying a SAP HANA host, adding volumes to a SAP HANA system, and managing volumes in an application volume group.
   ms.date: 07/18/2026

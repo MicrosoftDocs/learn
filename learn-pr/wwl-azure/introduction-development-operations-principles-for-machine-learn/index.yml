@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-development-operations-principles-for-machine-learn
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 33
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - azure-devops
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - devops-engineer
-  skills:
-    - DevOps
-    - "Machine Learning"
-    - Automation
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/introduction-development-operations-principles-for-machine-learn/index.yml
-  uid: bc2665e7-89bf-4824-bdf8-d71af443c6cd
   title: Introduction to DevOps principles for machine learning
   description: Learn about DevOps for machine learning, machine learning operations, and MLOps.
   author: wwlpublish

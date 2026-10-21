@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.review-windows-powershell
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 55
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - it-professional
-  skills:
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/review-windows-powershell/index.yml
-  uid: 77b9371e-26b9-46fe-977f-40d3e1f0ab9b
   title: Review Windows PowerShell
   description: "Review Windows PowerShell"
   ms.date: 05/12/2026

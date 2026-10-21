@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-security-concepts-methodologies
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 48
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - Cybersecurity
-    - "Zero Trust Security"
-    - "Data Security"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/describe-security-concepts-methodologies/index.yml
-  uid: e261dc84-8e0e-45e8-aacd-df077ad13e67
   title: Describe Security Concepts and Methodologies
   description: "Describe security and compliance concepts."
   ms.date: 05/15/2026

@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: introduction-azure-firewall
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 48
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - network-engineer
-    - security-engineer
-    - solution-architect
-  skills:
-    - Cybersecurity
-    - "IT Networking"
-    - "Security Architecture Design"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure-networking/introduction-azure-firewall/index.yml
-  uid: ec6ddbf9-0aa5-4ed5-9416-416c7172dc76
   title: "Introduction to Azure Firewall"
   description: Describe how Azure Firewall protects Azure Virtual Network resources, including the Azure Firewall features, rules, deployment options, and administration with Azure Firewall Manager.
   manager: kumud

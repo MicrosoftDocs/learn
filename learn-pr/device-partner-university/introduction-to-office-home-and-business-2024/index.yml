@@ -2,25 +2,6 @@
 uid: learn.dpu.introduction-to-office-home-and-business-2024
 title: Introduction to Office Home & Business 2024
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 21
-  last.refresh.date: null
-  modality: module
-  products:
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "AI Productivity"
-    - "Collaboration Tools"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-to-office-home-and-business-2024/index.yml
-  uid: 0da60baa-8f7f-4542-bdb1-3530bb6bb46a
   title: Introduction To Office Home & Business 2024
   description: Learn how Microsoft Office Home & Business 2024 supports small businesses, educators, and professionals with essential productivity tools—without requiring a subscription or cloud services.
   ms.date: 09/22/2025

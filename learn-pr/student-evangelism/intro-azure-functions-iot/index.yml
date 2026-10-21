@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.intro-iot-functions-iot
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 27
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Cloud Computing"
-    - "Application Architecture"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/intro-azure-functions-iot/index.yml
-  uid: f15a6bd7-834b-4f6b-b284-41a5d022ed50
   title: "Introduction to Azure Functions in IoT solutions"
   description: "Learn about using Azure Functions in IoT solutions. University of Oxford"
   ms.date: 05/10/2026

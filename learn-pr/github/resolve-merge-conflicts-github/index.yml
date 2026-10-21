@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.github.merge-conflict-resolution-github
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 52
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - devops-engineer
-    - solution-architect
-  skills:
-    - DevOps
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/resolve-merge-conflicts-github/index.yml
-  uid: 0dd890e8-0dac-444c-95fa-1b843d473ce1
   title: "Settle Competing Commits by Using Merge Conflict Resolution on GitHub"
   description: Learn to settle overlapping commits across branches by using merge conflict resolution.
   ms.date: 06/10/2025

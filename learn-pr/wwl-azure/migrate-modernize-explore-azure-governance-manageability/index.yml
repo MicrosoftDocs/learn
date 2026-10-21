@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-explore-azure-governance-manageability
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 33
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - defender-for-cloud
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - systems-administrator
-    - security-engineer
-  skills:
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Cloud Infrastructure"
-    - "Infrastructure Management"
-    - Cybersecurity
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-modernize-explore-azure-governance-manageability/index.yml
-  uid: acabff04-6b7c-4d9e-bc49-e77667de9ebf
   title: Modernize and explore governance and manageability for SAP on Azure
   description: 'This module explores using the Azure Governance collection of concepts and services that are designed to enable management of Azure resources at scale. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/11/2024

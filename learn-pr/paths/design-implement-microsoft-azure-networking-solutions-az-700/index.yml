@@ -1,33 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.designing-implementing-microsoft-azure-networking-solutions-az-700
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - network-engineer
-    - solution-architect
-  skills:
-    - "IT Networking"
-    - "Network Connectivity"
-    - "Cloud Infrastructure"
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Security Architecture Design"
-    - "Solution Architecture"
-    - "Application Security"
-    - Cybersecurity
-    - "Security Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/design-implement-microsoft-azure-networking-solutions-az-700/index.yml
-  uid: e1d7eaf3-7d0c-4242-bc13-b0f4d2e49b8a
   title: AZ-700 Design and Implement Microsoft Azure Network Solutions
   description: AZ-700 Design and Implement Microsoft Azure Network Solutions
   ms.date: 03/23/2026

@@ -1,29 +1,6 @@
 #### YamlMime:Module
 uid: learn.philanthropies.polish-vision
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 75
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-365-copilot
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - student
-    - k-12-educator
-    - communications
-  skills:
-    - "Generative AI"
-    - "Prompt Engineering"
-    - "Communications Management"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/polish-vision/index.yml
-  uid: 97b0c6bb-7742-4144-bde6-894e61311443
   title: Polish the Vision - Smart Postproduction with Copilot, Clipchamp & Designer
   description: "Evaluate how Microsoft Copilot, Designer, and Clipchamp streamline visual creation, video editing, and media enhancement tasks for music video production."
   ms.date: 4/25/2025

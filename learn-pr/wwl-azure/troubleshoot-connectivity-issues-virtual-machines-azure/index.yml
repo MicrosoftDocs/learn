@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 32
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - defender-for-cloud
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - support-engineer
-    - network-engineer
-    - security-engineer
-    - systems-administrator
-  skills:
-    - "Network Connectivity"
-    - Cybersecurity
-    - "Cloud Administration"
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/troubleshoot-connectivity-issues-virtual-machines-azure/index.yml
-  uid: bfd8b9f3-e697-4db7-8b7b-2aebaf894ef8
   title: Troubleshoot connectivity issues with virtual machines in Microsoft Azure
   description: "Troubleshoot deployment, connectivity, and authorization issues with Azure Bastion and just in time access to Virtual Machines. AZ720 AZ-720 az-720 networking"
   ms.date: 08/01/2024

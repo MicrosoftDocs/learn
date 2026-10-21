@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduce-foundation-pillars-devops
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 25
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-devops
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - product-manager
-  skills:
-    - DevOps
-    - "Organizational Culture"
-    - "Organizational Effectiveness"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/introduce-foundation-pillars-devops/index.yml
-  uid: 0b6b7f9e-e3ff-457f-962b-6083a1f887e4
   title: 'Introduce the foundation pillars of DevOps: Culture and Lean Product'
   description: 'DevOps is the union of people, process, and products to enable continuous delivery of value to our end users. Discover the first two foundation pillars of DevOps: Culture and Lean Product.'
   ms.date: 09/20/2020

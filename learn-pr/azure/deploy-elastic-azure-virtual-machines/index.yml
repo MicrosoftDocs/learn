@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-elastic-azure-virtual-machines
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 27
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - solution-architect
-  skills:
-    - "Cloud Infrastructure"
-    - "Cloud Administration"
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/deploy-elastic-azure-virtual-machines/index.yml
-  uid: 6e40ca8d-0921-45ee-b7db-09b55b7cb59c
   moduleType: standard
   title: Deploy Elastic on Azure virtual machines
   description: "Deploy Elastic on Azure virtual machines (VMs) to get the benefits of Elasticsearch for your Linux workloads by following the instructions provided here."

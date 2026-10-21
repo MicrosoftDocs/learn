@@ -1,37 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.microsoft-azure-architect-design-prerequisites
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles: null
-  skills:
-    - "Cloud Infrastructure"
-    - "Cloud Administration"
-    - DevOps
-    - Storage
-    - Virtualization
-    - "Cloud Computing"
-    - "Data Migration"
-    - "Data Security"
-    - "Zero Trust Security"
-    - "IT Strategy"
-    - "Organizational Effectiveness"
-    - "Solution Architecture"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - Cybersecurity
-    - "Application Architecture"
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/microsoft-azure-architect-design-prerequisites/index.yml
-  uid: c5992157-25fe-4842-a48f-be1171a876fb
   title: AZ-305 Microsoft Azure Architect Design Prerequisites
   description: "Learn the basic Azure concepts you'll need to know as an Azure infrastructure architect. This path gives you the knowledge to be successful as you begin studying for AZ-305: Designing Microsoft Azure Infrastructure Solutions."
   ms.date: 03/23/2026

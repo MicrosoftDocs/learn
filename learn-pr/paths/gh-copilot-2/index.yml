@@ -1,33 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.github-copilot-2
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - github
-    - github-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "AI-Augmented Software Development"
-    - "Agentic AI"
-    - "AI Security (Model-Level)"
-    - "AI Productivity"
-    - Automation
-    - "Application Development"
-    - "Application Security"
-    - "Prompt Engineering"
-    - "Python (Programming Language)"
-    - "AI Prompting"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/gh-copilot-2/index.yml
-  uid: b746a5f3-ba3a-4450-9425-f9b133c1f179
   title: GitHub Copilot Fundamentals Part 2 of 2
   description: Empower individual developers and businesses to enhance their productivity and foster innovation through a comprehensive exploration of the fundamental concepts of GitHub Copilot. Additionally, gain valuable insights on how to initiate the implementation of GitHub Copilot within your organization, enabling you to kickstart your own transformative journey.
   brand: github

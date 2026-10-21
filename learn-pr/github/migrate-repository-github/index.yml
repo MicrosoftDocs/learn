@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.github.migrate-repository-github
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 43
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-    - systems-administrator
-    - solution-architect
-  skills:
-    - "Data Migration"
-    - DevOps
-    - "Data Security"
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/migrate-repository-github/index.yml
-  uid: 31dbb87a-fae5-48d8-afbe-3aac4430eb3f
   title: "Migrate your repository by using GitHub best practices"
   description: Learn to move your existing project to GitHub from a legacy version control system.
   ms.date: 09/20/2024

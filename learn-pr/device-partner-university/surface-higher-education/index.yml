@@ -2,35 +2,6 @@
 uid: learn.dpu.surface-higher-education
 title: Empower Higher Education With Microsoft Surface
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 35
-  last.refresh.date: null
-  modality: module
-  products:
-    - surface
-    - m365
-    - microsoft-365-copilot
-    - windows
-    - intune
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-    - administrator
-    - technology-manager
-    - student
-  skills:
-    - "AI Productivity"
-    - "Collaboration Tools"
-    - "Device Management"
-    - "Digital Accessibility"
-    - "Infrastructure Management"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/surface-higher-education/index.yml
-  uid: 9674a7b6-1dd0-4d71-8280-eb241fa86d79
   title: Empower Higher Education With Microsoft Surface
   description: 'Discover how Microsoft Surface devices can transform higher education by enhancing learning experiences, improving educator workflows, and ensuring secure device management for institutions.'
   ms.date: 02/02/2026

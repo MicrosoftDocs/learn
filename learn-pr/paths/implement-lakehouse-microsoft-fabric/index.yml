@@ -1,39 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-lakehouse-microsoft-fabric
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - fabric
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-analyst
-    - data-engineer
-  skills:
-    - "Data Analytics"
-    - "Data Engineering"
-    - "Data Management"
-    - "AI Fluency"
-    - Storage
-    - SQL
-    - "Python (Programming Language)"
-    - "Data Visualization"
-    - "Platform Engineering"
-    - "Database Development"
-    - "Data Administration"
-    - "Database Design"
-    - Automation
-    - "Process Automation"
-    - "Data Strategies"
-    - "Low-Code Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-lakehouse-microsoft-fabric/index.yml
-  uid: 8840231b-2d12-47aa-a62e-acfd4812eedf
   title: Implement a Lakehouse with Microsoft Fabric
   description: Implement a Lakehouse with Microsoft Fabric
   ms.date: 06/12/2026

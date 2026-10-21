@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.windows-server.manage-user-computer-certificates
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 128
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - identity-access-admin
-    - security-engineer
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Data Security"
-    - "Infrastructure Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/manage-user-computer-certificates/index.yml
-  uid: 05455043-9313-4fb9-8d06-dbbae7f716a0
   title: Manage Local User and Computer Certificates
   description: Manage Windows user and computer certificates, private keys, enrollment, trust, renewal, recovery, retirement, and troubleshooting.
   ms.date: 09/20/2026

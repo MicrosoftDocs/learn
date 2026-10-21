@@ -1,34 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.store-manage-containers-azure-container-registry
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 66
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - github
-    - azure-devops
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-    - platform-engineer
-    - security-engineer
-  skills:
-    - DevOps
-    - Automation
-    - "Cloud Infrastructure"
-    - "Application Development"
-    - "Application Security"
-    - "Security Automation"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/store-manage-containers-azure-container-registry/index.yml
-  uid: eec610f4-1fd0-4390-b0e3-5b12bc607b09
   title: Store and Manage Containers in Azure Container Registry
   description: Learn to store, build, and manage container images using Azure Container Registry for AI applications on Azure.
   ms.date: 01/05/2026

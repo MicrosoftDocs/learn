@@ -1,33 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.philanthropies.intro-to-ai-for-trainers
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles: null
-  skills:
-    - "Machine Learning"
-    - "Data Science"
-    - "AI Fluency"
-    - "AI Solutions"
-    - "Generative AI"
-    - "Natural Language Processing (NLP)"
-    - "Computer Vision"
-    - "AI Model Evaluation & Testing"
-    - "Responsible AI"
-    - "Data Security"
-    - "AI Productivity"
-    - "Accessible AI"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/introduction-to-artificial-intelligence-for-trainers/index.yml
-  uid: 8113375f-d2a4-4638-863d-ad86989437f1
   title: Introduction to artificial intelligence for trainers
   description: Gain the foundational knowledge about the principles of artificial intelligence (AI) and how it's used in educational settings.
   author: yoosunee

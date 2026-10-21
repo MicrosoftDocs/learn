@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-evaluation-frameworks-multi-agent-azure
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 41
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - data-scientist
-    - solution-architect
-  skills:
-    - "AI Model Evaluation & Testing"
-    - "Agent Operations"
-    - "Multi-Agent Orchestration"
-    - "Synthetic Data Generation"
-    - DevOps
-    - "Machine Learning"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/aaai-design-evaluation-frameworks-multi-agent-azure/index.yml
-  uid: 408cd223-7b9b-491d-9caf-a8d5f22c036b
   title: Design Evaluation Frameworks for Multi-Agent Solutions with Microsoft Foundry
   description: "Design evaluation frameworks for production multi-agent AI solutions using Microsoft Foundry. Define success metrics for coordination quality and system-level outcomes, implement calibrated LLM-as-judge patterns, design synthetic test datasets for agent collaboration scenarios, and build regression pipelines for behavioral drift detection."
   ms.date: 8/5/2026

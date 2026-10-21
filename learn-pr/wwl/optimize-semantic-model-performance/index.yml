@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.optimize-semantic-model-performance
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 78
-  last.refresh.date: null
-  modality: module
-  products:
-    - power-bi
-    - fabric
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-analyst
-    - data-engineer
-  skills:
-    - "Data Analytics"
-    - "Data Engineering"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/optimize-semantic-model-performance/index.yml
-  uid: 6a0cb7e8-54ba-4658-b4a0-8bb3c91a2ec1
   title: Optimize Semantic Model Performance
   description: "Diagnose and fix semantic model and report performance issues. Use Performance analyzer to identify bottlenecks, optimize DAX calculations, reduce cardinality, and implement aggregations to improve query speed."
   ms.date: 04/06/2026

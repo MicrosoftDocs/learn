@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.automate-machine-learning-workflows
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 29
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-machine-learning
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - ai-engineer
-  skills:
-    - "Machine Learning"
-    - "Data Science"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/automate-machine-learning-workflows/index.yml
-  uid: 40770511-4fab-4f54-8ba3-8e30cf21c68f
   title: Automate machine learning workflows
   description: Learn about automation for machine learning, machine learning operations, and MLOps.
   author: wwlpublish

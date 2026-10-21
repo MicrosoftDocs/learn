@@ -1,36 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-solutions-securing-server-client-endpoints
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 88
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - defender-for-cloud
-    - defender-endpoint
-    - microsoft-defender
-    - intune
-    - entra
-    - windows
-    - microsoft-sentinel
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-  skills:
-    - "Security Architecture Design"
-    - "Device Management"
-    - "Zero Trust Security"
-    - "Identity and Access Management (IAM)"
-    - "Threat Management"
-    - "Network Connectivity"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/design-solutions-securing-server-client-endpoints/index.yml
-  uid: c9e3e0ff-c372-4ce2-825f-a82446a41f30
   title: Design Solutions for Securing Server and Client Endpoints
   description: "You learn how to analyze the security requirements for different types of endpoints including servers, clients, IoT, OT, mobile, and embedded devices. These requirements take into account different platforms and operating systems and set standards for endpoint protection, hardening, and configuration."
   ms.date: 06/05/2026

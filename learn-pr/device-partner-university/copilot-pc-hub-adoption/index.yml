@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.dpu.copilot-pc-hub-adoption
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 25
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "AI Fluency"
-    - "AI Productivity"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/copilot-pc-hub-adoption/index.yml
-  uid: 82a38689-60e2-4db2-903e-09176f5054fb
   title: "Use the Copilot+ PC Hub to get started with Copilot+ PCs"
   description: "Learn how to use the Copilot+ PC Hub to explore Copilot+ PC experiences, discover role-based workflows, and continue learning through guided feature walkthroughs and workplace scenarios."
   ms.date: 06/15/2026

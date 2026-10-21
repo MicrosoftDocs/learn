@@ -2,29 +2,6 @@
 uid: learn.github.mcp-server
 title: Introduction to MCP Server
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 35
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-    - github-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - devops-engineer
-  skills:
-    - "Agentic AI"
-    - "AI Productivity"
-    - Automation
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/mcp-server/index.yml
-  uid: 849d347d-e500-49f6-9b02-f0d32ce23358
   title: Introduction to MCP Server
   description: Learn how to set up and use GitHub MCP Server in Visual Studio Code to extend GitHub Copilot and streamline your AI-assisted development workflow.
   author: camihmerhar

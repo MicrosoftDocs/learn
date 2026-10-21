@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 53
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - solution-architect
-  skills:
-    - Virtualization
-    - "Network Connectivity"
-    - "Infrastructure Management"
-    - "Cloud Administration"
-    - "Data Migration"
-    - "Solution Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/migrate-vmware-workloads-on-premises-azure-vmware-solution/index.yml
-  uid: 8f2b775c-578b-4755-b398-bc63015c2a7a
   moduleType: standard
   title: Migrate VMware vSphere Resources from On-Premises to Azure VMware Solution
   description: Learn how to migrate virtual machines from an on-premises VMware environment to Azure VMware Solution by using VMware HCX.

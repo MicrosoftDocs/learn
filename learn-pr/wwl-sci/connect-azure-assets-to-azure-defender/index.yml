@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-azure-assets-to-azure-defender
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 35
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - defender-for-cloud
-    - defender-endpoint
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-  skills:
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Security Operations Management"
-    - "Security Analytics"
-    - "Security Automation"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/connect-azure-assets-to-azure-defender/index.yml
-  uid: 14583864-b713-4505-b1d8-92d289d6691f
   title: Connect Azure Assets to Microsoft Defender for Cloud
   description: "Connect Azure assets to Microsoft Defender for Cloud"
   ms.date: 09/11/2025

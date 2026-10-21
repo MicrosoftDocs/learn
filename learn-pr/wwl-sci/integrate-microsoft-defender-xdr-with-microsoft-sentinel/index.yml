@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 98
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-sentinel
-    - microsoft-defender
-    - azure
-    - security-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-    - security-engineer
-    - security-professional
-  skills:
-    - "Security Operations Management"
-    - "Security Analytics"
-    - "Threat Management"
-    - "Cloud Administration"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/integrate-microsoft-defender-xdr-with-microsoft-sentinel/index.yml
-  uid: 5938e3be-ea8c-48de-8a00-c41482281e5f
   title: Integrate Microsoft Defender XDR with Microsoft Sentinel
   description: "In this module, you learn how to integrate Microsoft Defender XDR with Microsoft Sentinel."
   ms.date: 06/26/2026

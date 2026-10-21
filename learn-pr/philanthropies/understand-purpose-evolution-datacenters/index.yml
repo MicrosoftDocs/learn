@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.philanthropies.understand-purpose-evolution-datacenters
 metadata:
- content.levels: 100
- content.locale: en-us
- duration: 46
- last.refresh.date: null
- modality: module
- products: null
- publish.locations: null
- release.date: null
- retire.date: null
- reusable: null
- roles:
-   - student
-   - systems-administrator
-   - platform-engineer
-   - network-engineer
-   - higher-ed-educator
-   - business-user
- skills:
-   - "Cloud Infrastructure"
-   - "Cloud Computing"
-   - "Infrastructure Management"
-   - "IT Networking"
-   - "AI Infrastructure"
- solution.area: "Cloud & AI Platforms"
- source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/understand-purpose-evolution-datacenters/index.yml
- uid: 7d1b37da-0935-4425-a8bd-9db01e98355e
  title: Understand the purpose and evolution of datacenters
  description: In this module, you'll learn the basics of datacenters—what they are, why they exist, and their critical role in modern IT infrastructure. We'll explore the evolution of datacenters from mainframes to the cloud and look at different types, such as enterprise, colocation, cloud, and edge datacenters. You'll also discover the core components that make up a datacenter, including power supply, cooling, security. By the end, you'll have a clear understanding of the purpose and structure of datacenters.
  ms.date: 05/06/2025

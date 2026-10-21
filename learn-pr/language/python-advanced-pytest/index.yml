@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.python-advanced-pytest
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 26
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - student
-  skills:
-    - "Python (Programming Language)"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/language/python-advanced-pytest/index.yml
-  uid: 6e7be769-b454-4810-8ad4-69330e1b74aa
   moduleType: standard
   title: Advanced testing with pytest
   description: Take advantage of the advanced features of pytest, a popular test framework used to write and run tests in Python.

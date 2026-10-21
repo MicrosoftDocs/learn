@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-azure-kubernetes-service-cluster
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 70
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - platform-engineer
-    - administrator
-  skills:
-    - "Cloud Infrastructure"
-    - "Platform Engineering"
-    - "IT Networking"
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/deploy-azure-kubernetes-service-cluster/index.yml
-  uid: 2e98b317-0881-495d-9e92-5d76004ad983
   title: Deploy an Azure Kubernetes Service Cluster
   description: This module covers the deployment of a managed Kubernetes cluster in Azure using Azure Kubernetes Service (AKS).
   ms.date: 04/25/2026

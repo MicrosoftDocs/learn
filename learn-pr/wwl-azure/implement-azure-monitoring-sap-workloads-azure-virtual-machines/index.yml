@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 23
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - "Cloud Administration"
-    - "Data Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-azure-monitoring-sap-workloads-azure-virtual-machines/index.yml
-  uid: 4d97952c-289a-4565-80ea-c9b570c92acc
   title: Implement Azure Monitoring for SAP workloads on Azure VMs
   description: Explore Azure Monitoring for SAP workloads configuration on Azure Virtual Machines.
   ms.date: 03/28/2024

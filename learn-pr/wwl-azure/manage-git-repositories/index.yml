@@ -1,33 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-git-repositories
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 48
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-    - azure-devops
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-    - platform-engineer
-    - security-engineer
-  skills:
-    - DevOps
-    - "Application Development"
-    - Automation
-    - "Collaboration Tools"
-    - "Identity and Access Management (IAM)"
-    - Cybersecurity
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-git-repositories/index.yml
-  uid: b2b24dab-7f86-4b63-98b6-ec5d0fb4be81
   title: Manage and Configure Repositories
   description: "Learn how to work with large code repositories, clean up repository data, and manage releases using GitHub."
   ms.date: 09/09/2025

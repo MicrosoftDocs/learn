@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 83
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-machine-learning
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-  skills:
-    - "Career Development"
-    - "Machine Learning"
-    - "Collaboration Tools"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/index.yml
-  uid: dce874b1-1c6e-4111-b739-fc35298f4254
   adobe-target: true
   prefetch-feature-rollout: true
   title: 'Get Tips and Tricks for Teaching DP-100: Designing and Implementing a Data Science Solution on Azure'

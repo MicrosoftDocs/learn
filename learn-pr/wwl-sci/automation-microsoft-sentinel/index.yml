@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.automation-microsoft-sentinel
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 15
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-sentinel
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-  skills:
-    - "Security Automation"
-    - "Security Operations Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/automation-microsoft-sentinel/index.yml
-  uid: a66843c0-710d-4088-a0f9-b0dff348960e
   title: Automation in Microsoft Sentinel
   description: "Automation in Microsoft Sentinel"
   ms.date: 06/17/2026

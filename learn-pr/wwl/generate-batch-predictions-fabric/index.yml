@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.generate-batch-predictions-fabric
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 50
-  last.refresh.date: null
-  modality: module
-  products:
-    - fabric
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - data-engineer
-  skills:
-    - "Machine Learning"
-    - "Data Engineering"
-    - "Python (Programming Language)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/generate-batch-predictions-fabric/index.yml
-  uid: 3ea89051-53af-417b-9609-17976466c065
   title: Generate batch predictions using a deployed model in Microsoft Fabric
   description: Learn how to use a trained machine learning model to generate batch predictions in Microsoft Fabric.
   author: JulianePadrao

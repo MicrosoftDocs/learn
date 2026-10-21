@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-fabric-iq-fundamentals
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products:
-    - fabric
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-analyst
-  skills:
-    - "Data Analytics"
-    - "Business Insights"
-    - "Agentic AI"
-    - "Data Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/understand-fabric-iq-fundamentals/index.yml
-  uid: 405f226e-ccc2-4a1d-a30e-273ea7098b5a
   title: Understand Microsoft Fabric IQ fundamentals
   description: Learn the fundamentals of Microsoft Fabric IQ, including how ontologies create a shared business vocabulary, the six items in the IQ workload, and how ontology modeling differs from traditional data modeling approaches.
   ms.date: 09/08/2026

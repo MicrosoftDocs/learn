@@ -1,32 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.oxford.machine-teaching-autonomous-ai
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - solution-architect
-    - business-analyst
-  skills:
-    - Automation
-    - "Process Automation"
-    - "AI Solutions"
-    - "Machine Learning"
-    - "Autonomous AI"
-    - "Solution Architecture"
-    - "AI Business & Vision"
-    - "AI Strategy"
-    - "AI Model Evaluation & Testing"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/machine-teaching-autonomous-ai/index.yml
-  uid: a8516512-9fb2-4eb4-ad81-24a11c334e3a
   title: Machine Teaching for Autonomous AI
   description: This learning path aims to design and implement Machine Teaching for Autonomous AI brains.
   ms.date: 12/12/2022

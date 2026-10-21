@@ -2,25 +2,6 @@
 uid: learn.dpu.live-captions
 title: Use Live Captions in Windows to better understand audio
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 25
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "Digital Accessibility"
-    - "Communications Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/live-captions/index.yml
-  uid: 79d433f6-7304-4f5e-a1e9-ebcd33652c6d
   title: Use Live Captions In Windows To Better Understand Audio
   description: In this module, you'll learn how Live Captions helps you follow spoken content in real time, making it easier to stay productive and access information in various environments and accessibility scenarios.
   ms.date: 06/15/2026

@@ -1,29 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.azure.build-mixed-reality-azure-digital-twins-unity
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Cloud Computing"
-    - "Application Architecture"
-    - "Data Visualization"
-    - Automation
-    - "Cloud Administration"
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/build-mixed-reality-azure-digital-twins-unity/index.yml
-  uid: 0df38aae-2fa2-4f3b-a6bf-9cea0800ebe0
   title: Build mixed reality digital twins with Azure Digital Twins and Unity
   description: Learn how to create a mixed reality application using Azure Digital Twins and Unity, a real-time 3D platform.
   ms.date: 05/12/2021

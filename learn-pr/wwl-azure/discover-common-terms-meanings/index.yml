@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.discover-common-terms-meanings
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 12
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - solution-architect
-  skills:
-    - "Cloud Infrastructure"
-    - "Solution Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/discover-common-terms-meanings/index.yml
-  uid: 6ce852ca-5cad-4b83-b0ed-6992ebd38453
   title: Discover common terms and meanings for SAP on Azure
   description: "You're introduced to some of the common terms that will be used in working with SAP workloads on Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 08/01/2024

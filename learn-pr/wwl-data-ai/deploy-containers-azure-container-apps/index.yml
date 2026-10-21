@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-containers-azure-container-apps
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 72
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - devops-engineer
-  skills:
-    - "Cloud Infrastructure"
-    - DevOps
-    - "Infrastructure Management"
-    - "Identity and Access Management (IAM)"
-    - "Network Connectivity"
-    - "AI Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/deploy-containers-azure-container-apps/index.yml
-  uid: 6227d4b8-c0dc-4218-8652-a61379cbe6e4
   title: Deploy Containers to Azure Container Apps
   description: Create and manage container deployments in Azure Container Apps. Work with environments, runtime configuration, registry authentication, and deployment verification techniques.
   ms.date: 06/10/2026

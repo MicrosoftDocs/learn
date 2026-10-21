@@ -1,46 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-copilot-for-security
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - microsoft-defender
-    - security-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-    - security-engineer
-    - security-operations-analyst
-  skills:
-    - "Generative AI"
-    - "Natural Language Processing (NLP)"
-    - "Prompt Engineering"
-    - "Large Language Model Operations (LLMOps)"
-    - "Embedding Models"
-    - "Retrieval-Augmented Generation (RAG)"
-    - "Agentic AI"
-    - "AI Fluency"
-    - "AI Prompting"
-    - "Security Operations Management"
-    - "Security Analytics"
-    - "Threat Management"
-    - "Identity and Access Management (IAM)"
-    - "AI Governance"
-    - "AI-Powered Workflow Automation"
-    - "Knowledge Grounding for AI"
-    - "Data Security"
-    - "Security Automation"
-    - "AI Risk Management"
-    - "Agent Operations"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/index.yml
-  uid: 90d6b723-c323-4337-a232-0c8bfb7cf165
   title: 'Mitigate threats using Microsoft Security Copilot'
   description: 'Mitigate threats using Microsoft Security Copilot'
   ms.date: 11/26/2025

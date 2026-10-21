@@ -1,47 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.monitor-evaluate-operate-multi-agent-ai-solutions-azure
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - solution-architect
-  skills:
-    - "Agent Operations"
-    - "Large Language Model Operations (LLMOps)"
-    - "Cloud Administration"
-    - "Security Analytics"
-    - "AI Model Evaluation & Testing"
-    - "Multi-Agent Orchestration"
-    - "Synthetic Data Generation"
-    - DevOps
-    - "Machine Learning"
-    - "AI Infrastructure"
-    - "Model Hosting & Inference"
-    - "Data Management"
-    - Automation
-    - "Platform Engineering"
-    - "Agentic AI"
-    - "AI Governance"
-    - "AI Risk Management"
-    - "AI Compliance"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Responsible AI"
-    - "AI-Powered Workflow Automation"
-    - "Prompt Engineering"
-    - "Data Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/aaai-4-monitor-evaluate-operate-multi-agent-ai-solutions-azure/index.yml
-  uid: 7be3fa3b-f530-42e9-a51f-eb3b6eb1c4e0
   title: Monitor, Evaluate, and Operate Multi-Agent AI Solutions in Azure | AI-500
   description: Learn how to operate production multi-agent solutions with comprehensive visibility, systematic quality assurance, cost control, and robust incident response. Learners advance from single-application monitoring and evaluation experiments to distributed multi-agent observability, LLM-as-judge evaluation for coordination quality, multi-agent cost optimization, enterprise human-in-the-loop approval workflows, and structured AI incident debugging procedures. AI-500
   ms.date: 06/16/2026

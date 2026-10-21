@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.responsible-language-models-azure-databricks
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 43
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-databricks
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - ai-engineer
-  skills:
-    - "Responsible AI"
-    - "AI Risk Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/responsible-language-models-azure-databricks/index.yml
-  uid: 280cb9a0-9ece-4cdd-bb40-cd0b393bf1c8
   title: Review Responsible AI Principles for Language Models in Azure Databricks
   description: Review responsible AI principles for language models in in Azure Databricks
   ms.date: 06/17/2026

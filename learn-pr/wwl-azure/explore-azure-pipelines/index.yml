@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-pipelines
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 17
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-devops
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-  skills:
-    - DevOps
-    - Automation
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-azure-pipelines/index.yml
-  uid: 160a1c9a-b1e8-4112-8ee1-8a513f5acc9f
   title: Explore Azure Pipelines
   description: "Learn how Azure Pipelines helps you automate building, testing, and deploying your applications."
   ms.date: 09/26/2025

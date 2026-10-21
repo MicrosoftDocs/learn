@@ -1,38 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-generative-ai-engineering-azure-databricks
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure-databricks
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-  skills:
-    - "AI Solutions"
-    - "Generative AI"
-    - "Natural Language Processing (NLP)"
-    - "Knowledge Grounding for AI"
-    - "Embedding Models"
-    - "Vector Databases"
-    - "Data Engineering"
-    - "Application Architecture"
-    - "Retrieval-Augmented Generation (RAG)"
-    - "Responsible AI"
-    - "AI Risk Management"
-    - "Large Language Model Operations (LLMOps)"
-    - "AI Model Evaluation & Testing"
-    - "AI Prompting"
-    - "Model Fine-Tuning"
-    - "Data Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-generative-ai-engineering-azure-databricks/index.yml
-  uid: 0da1777e-708c-47e6-a9bc-119d757adaf1
   title: Implement Generative AI Engineering with Azure Databricks
   description: Generative Artificial Intelligence (AI) engineering with Azure Databricks uses the platform's capabilities to explore, fine-tune, evaluate, and integrate advanced language models. By using Apache Spark's scalability and Azure Databricks' collaborative environment, you can design complex AI systems.
   ms.date: 06/17/2026

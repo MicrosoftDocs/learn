@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.use-css-styles
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 35
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Digital Accessibility"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/use-css-styles/index.yml
-  uid: fd767f8c-8f1c-4886-9343-48763e0fd533
   title: Use CSS Styles in a Webpage
   description: "Discover how to use CSS styles in a webpage."
   ms.date: 04/28/2025

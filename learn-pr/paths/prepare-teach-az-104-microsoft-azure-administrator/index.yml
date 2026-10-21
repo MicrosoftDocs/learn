@@ -1,28 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.prepare-teach-az-104-microsoft-azure-administrator
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-  skills:
-    - "Career Development"
-    - "Collaboration Tools"
-    - "Digital Accessibility"
-    - "Cloud Administration"
-    - "Organizational Effectiveness"
-    - "Communications Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/prepare-teach-az-104-microsoft-azure-administrator/index.yml
-  uid: 2a59b7e6-c33b-4c22-901f-448a508010ed
   title: AZ-104
   description: Prepare to teach AZ-104 Microsoft Azure Administrator in the classroom
   ms.date: 08/26/2022

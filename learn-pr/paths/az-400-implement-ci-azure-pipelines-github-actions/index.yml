@@ -1,33 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-implement-ci-azure-pipelines-github-actions
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure-devops
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-  skills:
-    - DevOps
-    - Automation
-    - "Application Development"
-    - "Infrastructure Management"
-    - Cybersecurity
-    - "Cloud Infrastructure"
-    - "Platform Engineering"
-    - "Application Security"
-    - "Application Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-400-implement-ci-azure-pipelines-github-actions/index.yml
-  uid: e049afce-be3c-40ac-aa6a-de169f2f8e43
   title: "AZ-400: Implement CI with Azure Pipelines and GitHub Actions"
   description: "AZ-400: Implement CI with Azure Pipelines and GitHub Actions"
   ms.date: 09/30/2025

@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-unity-catalog-objects
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 107
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-databricks
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - security-engineer
-  skills:
-    - "Data Security"
-    - "Identity and Access Management (IAM)"
-    - "Data Management"
-    - "Zero Trust Security"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-databricks/secure-unity-catalog-objects/index.yml
-  uid: 62fd7c41-0bd2-4c56-a17e-f9d5446bb4a5
   title: Secure Unity Catalog Objects
   description: Learn how to implement security for Unity Catalog objects in Azure Databricks, including access control, fine-grained permissions, credential management, and authentication strategies.
   ms.date: 10/12/2026

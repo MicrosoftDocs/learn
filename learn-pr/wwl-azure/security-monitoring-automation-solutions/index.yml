@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.security-monitoring-automation-solutions
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 72
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-sentinel
-    - defender-for-cloud
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - security-operations-analyst
-  skills:
-    - "Security Analytics"
-    - "Security Automation"
-    - "Security Operations Management"
-    - "Threat Management"
-    - "Data Management"
-    - "Identity and Access Management (IAM)"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/security-monitoring-automation-solutions/index.yml
-  uid: ffe7f7ac-ac43-4110-a5ba-3602e2ab9a87
   title: Configure and manage security monitoring and automation solutions
   description: "Learn to set up Azure Monitor and Microsoft Sentinel for automatic security monitoring and response in cloud settings."
   ms.date: 02/03/2025

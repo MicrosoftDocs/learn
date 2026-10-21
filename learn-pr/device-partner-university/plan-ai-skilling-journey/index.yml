@@ -2,31 +2,6 @@
 uid: learn.dpu.plan-ai-skilling-journey
 title: Plan your organization’s AI skilling journey with Microsoft 365 Copilot
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 23
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-365-copilot
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - hr
-    - business-leader
-    - chief-human-resources-officer
-  skills:
-    - "AI Strategy"
-    - "AI Transformation"
-    - "AI Governance"
-    - "AI Fluency"
-    - "AI Productivity"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/plan-ai-skilling-journey/index.yml
-  uid: 1bb61f7c-d196-48b8-9601-e85b27fe47ef
   title: Plan Your Organization’s AI Skilling Journey With Microsoft 365 Copilot
   description: In this module, you'll learn how to plan and sustain an AI skilling journey that connects individual curiosity with organizational goals. You'll assess your organization's AI readiness, design role-based learning paths, and explore ways to build a culture of continuous, responsible AI learning.
   ms.date: 10/23/2025

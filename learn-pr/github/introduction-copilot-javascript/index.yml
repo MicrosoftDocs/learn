@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.github-copilot-with-javascript
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 22
-  last.refresh.date: null
-  modality: module
-  products:
-    - github-copilot
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "AI-Augmented Software Development"
-    - "AI Prompting"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/introduction-copilot-javascript/index.yml
-  uid: 24972daf-772e-421f-b2f9-9adce9adf5b0
   title: Using GitHub Copilot with JavaScript
   description: Develop updates in a JavaScript application using GitHub Copilot with Visual Studio Code.
   author: abrilurena

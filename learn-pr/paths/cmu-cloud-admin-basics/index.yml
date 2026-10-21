@@ -1,30 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.cmu-cloud-admin.cmu-cloud-admin-basics
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - "Cloud Computing"
-    - "Cloud Infrastructure"
-    - Virtualization
-    - "IT Strategy"
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Identity and Access Management (IAM)"
-    - "Application Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/cmu-cloud-admin-basics/index.yml
-  uid: 2faa42a7-75ea-4244-bae7-cfcd1a574d65
   title: Cloud administration basics
   description: The first learning path in a course on Cloud Administration from Carnegie Mellon University. Learn about the basics of the cloud, including the history, building blocks, and types of services, in preparation for real-world cloud practice on Azure. 
   brand: azure

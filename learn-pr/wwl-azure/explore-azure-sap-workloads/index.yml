@@ -1,33 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-sap-workloads
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 17
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - power-bi
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - systems-administrator
-    - functional-consultant
-  skills:
-    - "Enterprise Resource Planning (ERP)"
-    - "Solution Architecture"
-    - "Cloud Infrastructure"
-    - "Data Analytics"
-    - "Data Visualization"
-    - "Process Automation"
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-azure-sap-workloads/index.yml
-  uid: 29763c41-ef2d-4992-af21-da70169875c2
   title: Explore Azure for SAP workloads
   description: "Explore how the Microsoft and SAP partnership allows fully supported SAP applications to run across development, test, and production scenarios in Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 08/01/2024

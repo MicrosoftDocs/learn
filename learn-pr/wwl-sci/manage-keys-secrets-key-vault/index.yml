@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-keys-secrets-key-vault
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 25
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - developer
-  skills:
-    - "Data Security"
-    - "Cloud Administration"
-    - "Application Security"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/manage-keys-secrets-key-vault/index.yml
-  uid: ff75cffa-db58-4679-b323-624dc16ff1a5
   title: Manage Keys and Secrets in Azure Key Vault
   description: "Manage the security lifecycle of cryptographic keys and secrets in Azure Key Vault. Configure HSM-backed keys, implement BYOK, automate key rotation, and build zero-downtime secret rotation using dual-credential patterns."
   ms.date: 04/13/2026

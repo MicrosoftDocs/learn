@@ -2,27 +2,6 @@
 uid: learn.github.ado-github-migrations-four
 title: Azure DevOps to GitHub Enterprise Migrations Part IV - Post-Migration Stabilization, Enablement, and Operations
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 35
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-    - azure-devops
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-  skills:
-    - DevOps
-    - "Data Migration"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/ado-github-migrations-four/index.yml
-  uid: 5a8f536d-559c-46f0-9d3e-3d59227c2786
   title: Azure DevOps to GitHub Enterprise Migrations Part IV - Post-Migration Stabilization, Enablement, and Operations
   description: Transition from a completed migration to a sustainable developer platform by resolving identity mismatches, enforcing governance, validating integrations, enabling adoption, and retiring Azure DevOps.
   author: camihmerhar

@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-alerts-responses
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 21
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - "Cloud Administration"
-    - "Security Operations Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-alerts-responses/index.yml
-  uid: 6d759ef0-633d-4802-8c22-cadb7f45c264
   title: Configure alerts and responses
   description: In this module, you learn how Azure Monitoring alerts proactively notify you when Azure Monitor data indicates there might be a problem with your infrastructure or applications before the problem becomes one for your users.
   ms.date: 10/25/2023

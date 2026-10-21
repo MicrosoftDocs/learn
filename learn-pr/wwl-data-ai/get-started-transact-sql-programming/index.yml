@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-transact-sql-programming
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 51
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - database-administrator
-    - data-engineer
-  skills:
-    - SQL
-    - "Database Development"
-    - "Application Development"
-    - Databases
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-transact-sql-programming/index.yml
-  uid: 968f1eee-fa8d-4c1c-9395-c4bf07c9449a
   title: Get started with Transact-SQL programming
   description: "Get started with Transact-SQL programming"
   ms.date: 08/11/2026
