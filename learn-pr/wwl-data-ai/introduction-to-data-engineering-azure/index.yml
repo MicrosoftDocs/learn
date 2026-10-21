@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-data-engineering-azure
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 26
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-  skills:
-    - "Data Engineering"
-    - "Cloud Computing"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/introduction-to-data-engineering-azure/index.yml
-  uid: 5802df05-537d-4e72-a985-65f39d099af5
   title: Introduction to Data Engineering on Azure
   description: This module describes how Microsoft Azure provides a comprehensive platform for data engineering.
   ms.date: 10/12/2026

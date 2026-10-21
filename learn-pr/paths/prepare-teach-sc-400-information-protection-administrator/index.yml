@@ -1,27 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.prepare-teach-sc-400-information-protection-administrator
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-  skills:
-    - "Career Development"
-    - "Collaboration Tools"
-    - "Digital Accessibility"
-    - "Communications Management"
-    - "Data Security"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: null
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/prepare-teach-sc-400-information-protection-administrator/index.yml
-  uid: 541bbb28-aa70-4419-8f5b-50f29b761666
   title: Prepare to teach SC-400 Microsoft Information Protection Administrator
   description: Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft’s security solutions, SC-400 Microsoft Information Protection Administrator in academic program.
   ms.date: 12/01/2023

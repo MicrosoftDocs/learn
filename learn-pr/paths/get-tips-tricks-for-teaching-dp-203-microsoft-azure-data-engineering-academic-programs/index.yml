@@ -1,30 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.prepare-teach-dp-203-microsoft-azure-data-engineering
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-  skills:
-    - "Career Development"
-    - "Collaboration Tools"
-    - "Digital Accessibility"
-    - "Communications Management"
-    - "Organizational Effectiveness"
-    - "Data Engineering"
-    - "Data Warehousing"
-    - "Data Administration"
-    - "Cloud Computing"
-  solution.area: null
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-tips-tricks-for-teaching-dp-203-microsoft-azure-data-engineering-academic-programs/index.yml
-  uid: 76eda274-bed2-4170-955b-653813688874
   title: 'Prepare to teach DP-203: Microsoft Azure Data Engineering '
   description: Learn  about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver  Developing solution for Microsoft Azure solutions in the classroom.
   ms.date: 05/09/2023

@@ -2,35 +2,6 @@
 uid: learn.dpu.intro-k12-edu
 title: Introduction to Microsoft Education for K-12
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 24
-  last.refresh.date: null
-  modality: module
-  products:
-    - m365
-    - microsoft-defender
-    - security-copilot
-    - intune
-    - microsoft-purview
-    - microsoft-365-copilot
-    - microsoft-copilot-studio
-    - azure-openai
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - sales
-  skills:
-    - "AI Business & Vision"
-    - "AI Solutions"
-    - "Responsible AI"
-    - Cybersecurity
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-to-k12-education/index.yml
-  uid: 838064a1-ace9-4cbb-82dd-cd2622fad61e
   title: Introduction to Microsoft Education for K-12
   description: In this module, you'll learn about Microsoft Education solutions for K-12 institutions.
   ms.date: 06/24/2025

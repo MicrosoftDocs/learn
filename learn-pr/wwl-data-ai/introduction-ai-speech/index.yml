@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-ai-speech
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 28
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "Natural Language Processing (NLP)"
-    - "Machine Learning"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/introduction-ai-speech/index.yml
-  uid: 21cfa172-f8e7-42fa-8a13-54214257c341
   title: Introduction to AI speech concepts
   description: Imagine AI apps and agents that you can talk to. Explore the concepts behind AI speech, including speech recognition and synthesis.
   author: wwlpublish

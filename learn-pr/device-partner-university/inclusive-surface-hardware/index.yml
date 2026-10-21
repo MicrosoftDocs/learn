@@ -2,25 +2,6 @@
 uid: learn.dpu.inclusive-surface-hardware
 title: Reduce workplace barriers with inclusive Surface hardware
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 16
-  last.refresh.date: null
-  modality: module
-  products:
-    - surface
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-    - technology-manager
-  skills:
-    - "Digital Accessibility"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/inclusive-surface-hardware/index.yml
-  uid: 80e8dcb1-e055-46d5-a037-8b5e31ab17d0
   title: Reduce workplace barriers with inclusive Surface hardware
   description: 'In this module, you''ll learn how inclusive Surface hardware can help reduce workplace barriers for people with disabilities. You''ll also learn about the accessibility features of Surface devices and how to use them to create a more inclusive work environment.'
   ms.date: 08/26/2026

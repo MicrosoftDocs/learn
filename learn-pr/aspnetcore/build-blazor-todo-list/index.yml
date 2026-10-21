@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.build-blazor-todo-list
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 22
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/build-blazor-todo-list/index.yml
-  uid: 78c0085d-436d-4712-a640-53048e276266
   title: Build a to-do list with Blazor
   description: Learn how to build a to-do list with Blazor.
   ms.date: 09/30/2024

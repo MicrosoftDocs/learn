@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.use-ai-personalize-learning-students-disabilities
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 24
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-365-copilot
-    - m365
-    - office-teams
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - k-12-educator
-  skills:
-    - "Accessible AI"
-    - "Digital Accessibility"
-    - "AI Productivity"
-    - "AI Prompting"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/personalize-learning-students-disabilities-using-ai/index.yml
-  uid: 57b93640-19f0-4502-a249-ae7f6d1476e2
   title: "Personalize Learning for Students with Disabilities Using AI"
   description: "Educators will learn how to use AI and accessibility tools to personalize learning for students with disabilities."
   ms.date: 01/09/2026

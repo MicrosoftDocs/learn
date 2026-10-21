@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.devrel.guarded-fabrics-shielded-virtual-machines
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 174
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - security-engineer
-  skills:
-    - Virtualization
-    - "Security Architecture Design"
-    - "Infrastructure Management"
-    - Cybersecurity
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/guarded-fabric-shielded-virtual-machines/index.yml
-  uid: 9ae27179-aa46-4344-8d53-64cd41c067bf
   title: Design, Operate, and Recover Hyper-V Guarded Fabrics and Shielded Virtual Machines
   description: Design, deploy, operate, and recover guarded fabrics and shielded virtual machines on Windows Server 2025 while preserving host trust and owner key custody.
   ms.date: 10/08/2026

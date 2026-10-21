@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-network-security-azure-storage
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 21
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - network-engineer
-    - storage-admin
-  skills:
-    - "IT Networking"
-    - "Network Connectivity"
-    - Storage
-    - Cybersecurity
-    - "Identity and Access Management (IAM)"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/configure-network-security-azure-storage/index.yml
-  uid: 4e34fee2-d359-4eac-9ef1-bf45ad2c9b3c
   title: Configure Network Security for Azure Storage
   description: "Configure network-layer access controls for Azure Storage accounts. Apply firewall rules, define virtual network and IP-based access, configure resource instance rules for Azure AI services, manage trusted service exceptions, and implement private endpoints to eliminate public endpoint exposure."
   ms.date: 04/22/2026

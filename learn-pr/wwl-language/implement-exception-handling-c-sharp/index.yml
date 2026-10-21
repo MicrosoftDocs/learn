@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-exception-handling-c-sharp
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 78
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/implement-exception-handling-c-sharp/index.yml
-  uid: a0bc8447-5973-4f30-ade8-c703d407412a
   title: Implement exception handling in C# console applications
   description: "This module explores the use of exceptions and the exception handling process in C# console applications. Hands-on activities provide experience implementing exception handling patterns for various coding scenarios."
   ms.date: 12/15/2025

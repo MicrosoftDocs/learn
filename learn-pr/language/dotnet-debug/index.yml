@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.dotnet-debug
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 43
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/language/dotnet-debug/index.yml
-  uid: 6068ecfa-e136-4f91-978c-dd46254e173f
   title: Interactively Debug .NET Apps with the Visual Studio Code Debugger
   description: 'Learn how to efficiently debug your .NET app by using Visual Studio Code to fix your bugs quickly. Use the interactive debugger within Visual Studio Code to analyze and fix your C# applications.'
   ms.date: 05/19/2025

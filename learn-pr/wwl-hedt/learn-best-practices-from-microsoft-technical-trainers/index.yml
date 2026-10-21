@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 26
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-  skills:
-    - "Digital Accessibility"
-    - "Career Development"
-  solution.area: null
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-hedt/learn-best-practices-from-microsoft-technical-trainers/index.yml
-  uid: b5d22151-687d-41e6-8836-d19dff63a63d
   title: Learn best practices from Microsoft Technical Trainers
   description: Learn best practices from Microsoft Technical Trainers
   ms.date: 08/08/2022

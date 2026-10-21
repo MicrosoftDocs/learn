@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 53
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-  skills:
-    - "Cloud Computing"
-    - "Cloud Administration"
-    - "Identity and Access Management (IAM)"
-    - Storage
-    - "Network Connectivity"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals/index.yml
-  uid: c6239601-1aaf-49c6-ab83-85979e0fda76
   title: Get tips and tricks for teaching AZ-900 Microsoft Azure Fundamentals
   description: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
   ms.date: 01/16/2023

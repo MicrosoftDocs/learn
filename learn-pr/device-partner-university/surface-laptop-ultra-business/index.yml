@@ -2,31 +2,6 @@
 uid: learn.dpu.surface-laptop-ultra-business
 title: Understand local AI and high-performance workflows with Microsoft Surface Laptop Ultra for Business
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 33
-  last.refresh.date: null
-  modality: module
-  products:
-    - surface
-    - microsoft-foundry
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-    - data-scientist
-  skills:
-    - "AI Infrastructure"
-    - "Model Hosting & Inference"
-    - "AI Solutions"
-    - "Device Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/surface-laptop-ultra-business/index.yml
-  uid: 34efa475-96a6-494e-aab4-5853ddd2f24d
   title: Understand local AI and high-performance workflows with Microsoft Surface Laptop Ultra for Business
   description: 'In this module, you will learn about local AI and high-performance workflows with Microsoft Surface Laptop Ultra for Business.'
   ms.date: 10/05/2026

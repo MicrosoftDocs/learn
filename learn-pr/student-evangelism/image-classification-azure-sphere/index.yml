@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.image-classification-azure-sphere
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 68
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "Computer Vision"
-    - "Machine Learning"
-    - "Application Development"
-    - "AI Infrastructure"
-    - "Cloud Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/image-classification-azure-sphere/index.yml
-  uid: 1c797305-8efb-489c-8bdd-d8fded9b9e97
   title: "Image classification using Azure Sphere"
   description: "Learn how to implement image classification on a microcontroller device. Also, learn how Azure Sphere components work."
   ms.date: 05/10/2026

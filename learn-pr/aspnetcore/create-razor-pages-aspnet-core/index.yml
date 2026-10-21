@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.create-razor-pages-aspnet-core
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 45
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Application Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/create-razor-pages-aspnet-core/index.yml
-  uid: 91921887-92a4-4d92-8e5b-f4250fa34b88
   title: Create a web UI with ASP.NET Core
   description: "Learn how to create web pages using Razor with ASP.NET Core."
   ms.date: 09/25/2024

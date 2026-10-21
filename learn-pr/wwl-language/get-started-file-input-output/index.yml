@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-file-input-output
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 81
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Data Management"
-    - Storage
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/get-started-file-input-output/index.yml
-  uid: 6f95d1dc-4b03-401a-abb4-21b9279cf422
   title: Get started with file input and output
   description: "Learn how to manage local files and directories using the System.IO classes, and how to store and retrieve C# objects using CSV files and the StreamReader and StreamWriter classes."
   ms.date: 07/02/2025

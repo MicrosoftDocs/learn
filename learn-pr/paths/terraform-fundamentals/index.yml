@@ -1,28 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.terraform-fundamentals
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-    - systems-administrator
-  skills:
-    - "Infrastructure Management"
-    - "Cloud Infrastructure"
-    - DevOps
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/terraform-fundamentals/index.yml
-  uid: 131690d5-480e-4aca-b7b6-e1ae94a1b40d
   title: Fundamentals of Terraform on Azure
   description: Learn the fundamentals of how Terraform enables you to manage infrastructure deployments on Azure.
   brand: azure

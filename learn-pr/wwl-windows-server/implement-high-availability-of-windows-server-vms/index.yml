@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-high-availability-of-windows-server-vms
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 45
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - Virtualization
-    - "Infrastructure Management"
-    - Storage
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/implement-high-availability-of-windows-server-vms/index.yml
-  uid: 174cf5dc-dce0-4d09-868e-3f9947871f58
   title: Implement high availability of Windows Server VMs
   description: "Learn how to implement high availability for Hyper-V virtual machines using host clustering, guest clustering, Network Load Balancing, live migration with CredSSP or Kerberos authentication, and storage migration."
   ms.date: 08/31/2026

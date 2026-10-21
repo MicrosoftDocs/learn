@@ -1,31 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.az-104-manage-identities-governance
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - identity-access-admin
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Cloud Administration"
-    - "Device Management"
-    - "Cloud Infrastructure"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - Automation
-    - DevOps
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-104-manage-identities-governance/index.yml
-  uid: 380e515f-625a-46dc-9f0a-80d429e9e761
   title: 'AZ-104: Manage identities and governance in Azure'
   description: 'AZ-104: Manage identities and governance in Azure'
   ms.date: 06/23/2026

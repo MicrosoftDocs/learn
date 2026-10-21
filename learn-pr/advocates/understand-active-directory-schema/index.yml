@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.devrel.understand-active-directory-schema
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 145
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - identity-access-admin
-  skills:
-    - "Infrastructure Management"
-    - Databases
-    - "Identity and Access Management (IAM)"
-    - "Data Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/understand-active-directory-schema/index.yml
-  uid: 082e115d-1441-4e62-806b-5d6aae83b9b7
   title: Understand the Active Directory Domain Services Schema
   description: Understand how the Active Directory Domain Services schema defines directory data, controls behavior, replicates through a forest, and supports governed extensions.
   ms.date: 07/30/2026

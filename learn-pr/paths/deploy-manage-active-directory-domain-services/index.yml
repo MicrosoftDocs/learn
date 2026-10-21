@@ -1,33 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-manage-active-directory-domain-services
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-    - systems-administrator
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Cloud Infrastructure"
-    - "Infrastructure Management"
-    - "Solution Architecture"
-    - "Cloud Administration"
-    - Cybersecurity
-    - "Data Management"
-    - Automation
-    - "Security Architecture Design"
-    - "Zero Trust Security"
-    - "IT Networking"
-  solution.area: null
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/deploy-manage-active-directory-domain-services/index.yml
-  uid: d55f56b4-4ce7-45ba-b271-ccaba313f841
   title: Deploy and Manage Active Directory Domain Services
   description: Learn how to deploy and manage Active Directory Domain Services domain controllers, security principals, multi-site environments, and Group Policy in on-premises and cloud scenarios.
   ms.date: 08/31/2026

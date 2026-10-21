@@ -1,30 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-cosmos-db-sql-api-solution-using-devops-practices
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - database-administrator
-    - data-engineer
-  skills:
-    - Automation
-    - Databases
-    - "Cloud Administration"
-    - "Data Administration"
-    - "Cloud Infrastructure"
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-cosmos-db-sql-api-solution-using-devops-practices/index.yml
-  uid: 68b148d5-36bd-4b63-8bce-cbbd0d17c9bf
   title: Manage an Azure Cosmos DB for NoSQL solution using DevOps practices
   description: Manage an Azure Cosmos DB for NoSQL solution using DevOps practices
   ms.date: 04/02/2025

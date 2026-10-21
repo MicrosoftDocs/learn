@@ -2,24 +2,6 @@
 uid: learn.github.introduction-to-ado-to-github-migration
 title: Introduction to Azure DevOps to GitHub migration
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 20
-  last.refresh.date: null
-  modality: module
-  products:
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - DevOps
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/introduction-to-ado-to-github-migration/index.yml
-  uid: 39c77b1f-5630-49da-963b-14896360e66a
   title: Introduction to Azure DevOps to GitHub Migration
   description: This module is the first of four in this learning path that guides you through your Azure DevOps to GitHub Enterprise migration.
   author: camihmerhar

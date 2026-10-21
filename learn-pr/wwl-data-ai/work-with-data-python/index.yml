@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.work-with-data-python
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 48
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - data-analyst
-  skills:
-    - "Python (Programming Language)"
-    - "Data Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/work-with-data-python/index.yml
-  uid: c2e8f817-82ec-44a5-b6fc-13e684aa4e12
   title: Work with data in Python
   description: Learn how to store and manipulate data in Python. Explore variables, dynamic typing, numeric operations, and type conversion.
   ms.date: 07/15/2026

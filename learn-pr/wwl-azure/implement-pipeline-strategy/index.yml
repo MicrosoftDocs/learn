@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-pipeline-strategy
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 34
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-devops
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-    - platform-engineer
-  skills:
-    - DevOps
-    - Automation
-    - "Application Development"
-    - "Platform Engineering"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-pipeline-strategy/index.yml
-  uid: 9c709b88-2029-49e6-a0f5-64fdfc75766a
   title: Design and Implement a Pipeline Strategy
   description: "Learn how to design and implement effective pipeline strategies using Azure Pipelines, including multi-agent builds, source control integration, and comprehensive testing approaches."
   ms.date: 09/26/2025

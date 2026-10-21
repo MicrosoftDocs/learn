@@ -1,37 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.best-practices-java-azure
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - developer
-    - systems-administrator
-  skills:
-    - "Application Security"
-    - "Identity and Access Management (IAM)"
-    - "Application Development"
-    - "Cloud Administration"
-    - "Zero Trust Security"
-    - "Data Analytics"
-    - "Data Visualization"
-    - "Data Administration"
-    - "Platform Engineering"
-    - "Solution Architecture"
-    - DevOps
-    - Automation
-    - "Cloud Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/best-practices-java-azure/index.yml
-  uid: b7c47e32-9676-46a3-81fe-3dc2b3bef2fb
   title: Best practices for Java apps on Azure
   description: Start here and learn how you can monitor, automate, tune, autoscale, secure and build Java apps on Azure. As always, use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
   ms.date: 11/29/2021

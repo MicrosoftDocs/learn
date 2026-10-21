@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-azure-storage-services
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 36
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-  skills:
-    - Storage
-    - "Cloud Computing"
-    - "Data Migration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-azure-storage-services/index.yml
-  uid: eb8c3f2e-b832-40a1-8cb6-6038247aa2ac
   adobe-target: true
   prefetch-feature-rollout: true
   title: Describe Azure storage services

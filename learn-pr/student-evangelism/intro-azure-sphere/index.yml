@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.intro-azure-sphere
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 30
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Cloud Infrastructure"
-    - Cybersecurity
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/intro-azure-sphere/index.yml
-  uid: 0a109e55-d7fb-4c0f-b66c-b9b9161b77a0
   title: "Introduction to Azure Sphere"
   description: "Learn how to evaluate whether Azure Sphere is the right product for creating IoT applications."
   ms.date: 05/10/2026

@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.startups.build-team
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 34
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - startup-founder
-    - business-owner
-    - business-leader
-    - student
-  skills:
-    - "Business Insights"
-    - "Communications Management"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/startup/build-team/index.yml
-  uid: a787a35a-3605-4601-a297-301a65dd41d8
   title: Build your Team
   description: Find out how to build your startup team and find cofounders. Learn how to benefit from diversity in teams, mentors, and risk management measures.
   ms.date: 06/11/2025

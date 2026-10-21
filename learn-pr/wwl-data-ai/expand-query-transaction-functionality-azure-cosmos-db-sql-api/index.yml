@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 53
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Database Development"
-    - Databases
-    - SQL
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/expand-query-transaction-functionality-azure-cosmos-db-sql-api/index.yml
-  uid: 0189f23f-71be-499b-8e09-7ee23a696038
   title: Expand query and transaction functionality in Azure Cosmos DB for NoSQL
   description: "Author user-defined functions and triggers using JavaScript in Azure Cosmos DB for NoSQL."
   ms.date: 04/02/2025

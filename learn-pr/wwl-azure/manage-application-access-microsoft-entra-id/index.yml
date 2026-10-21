@@ -1,33 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-application-access-microsoft-entra-id
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 65
-  last.refresh.date: null
-  modality: module
-  products:
-    - entra
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-    - security-engineer
-    - administrator
-    - developer
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Zero Trust Security"
-    - "Application Security"
-    - "Security Architecture Design"
-    - "Cloud Administration"
-    - "Network Connectivity"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-application-access-microsoft-entra-id/index.yml
-  uid: fd0dbee7-1e15-4477-ba5d-061f6b7c603d
   title: Manage Microsoft Entra application access
   description: "This module focuses on effectively managing identities and enhancing security in Microsoft Enterprise Identity, ensuring that users, groups, and external identities are protected against security threats and unauthorized access."
   ms.date: 02/12/2025

@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.introduction-to-azure-red-hat-openshift
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 26
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - solution-architect
-    - systems-administrator
-  skills:
-    - "Cloud Computing"
-    - DevOps
-    - "Platform Engineering"
-    - "Cloud Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/introduction-to-azure-red-hat-openshift/index.yml
-  uid: a4888c39-e99d-4308-9fa5-6df835fe75be
   moduleType: introduction
   title: Introduction to Azure Red Hat OpenShift
   description: Evaluate whether to use Azure Red Hat OpenShift for developing and deploying applications.

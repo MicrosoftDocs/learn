@@ -1,37 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.plan-implement-ha-dr-environment
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-    - solution-architect
-    - data-engineer
-    - systems-administrator
-  skills:
-    - "Solution Architecture"
-    - "Data Management"
-    - "Cloud Infrastructure"
-    - "Infrastructure Management"
-    - "Network Connectivity"
-    - Storage
-    - "Data Administration"
-    - Databases
-    - "Cloud Administration"
-    - SQL
-    - "IT Networking"
-    - Virtualization
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/plan-implement-high-availability-disaster-recovery-environment/index.yml
-  uid: 3c5eb5a8-eec0-4f32-a148-60d86420d290
   title: Plan and implement a high availability and disaster recovery environment
   description: Data must be available when needed. Configure, test and manage a solution for high availability and disaster recovery using Azure tools and SQL Server tools.
   ms.date: 08/10/2026

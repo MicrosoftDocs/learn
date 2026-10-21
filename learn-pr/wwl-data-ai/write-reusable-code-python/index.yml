@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.write-reusable-code-python
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 57
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Python (Programming Language)"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/write-reusable-code-python/index.yml
-  uid: c817db62-4787-4140-b9d5-352e1d7c2f47
   title: Write Reusable Code
   description: Learn how to write reusable code in Python using functions, parameters, return values, variable scope, and importable modules.
   ms.date: 09/21/2026

@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.build-product-road-maps
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 41
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - product-manager
-    - business-analyst
-  skills:
-    - "Communications Management"
-    - "Organizational Effectiveness"
-    - "Collaboration Tools"
-  solution.area: null
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/build-product-roadmaps/index.yml
-  uid: df1f8e8b-c477-409d-89bc-276c4a7e35ce
   ms.service: azure
   title: Build product roadmaps
   description: Identify and construct Agile product roadmaps including audiences, prioritization, themes, milestones, epics, and user stories.

@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-your-ai-copilot-azure-kubernetes
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 39
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - devops-engineer
-    - systems-administrator
-  skills:
-    - "Cloud Infrastructure"
-    - DevOps
-    - "Platform Engineering"
-    - "Application Development"
-    - "AI Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/deploy-your-ai-copilot-azure-kubernetes/index.yml
-  uid: b54fbe5c-a03f-46fb-b023-7c83ebbb7e10
   title: Deploy your AI Copilot with Azure Kubernetes
   description: "Learn how to deploy an AI copilot app using Docker, Azure Container Resource, and Azure Kubernetes Service."
   ms.date: 11/12/2024

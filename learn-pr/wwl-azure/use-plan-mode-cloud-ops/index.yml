@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.use-plan-mode-cloud-ops
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 81
-  last.refresh.date: null
-  modality: module
-  products:
-    - github-copilot
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - administrator
-  skills:
-    - "AI-Augmented Software Development"
-    - "AI Prompting"
-    - DevOps
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/use-plan-mode-cloud-ops/index.yml
-  uid: cefc6950-8eed-4740-aec5-88fc48fdff4f
   title: "Use GitHub Copilot Plan Mode for Cloud Operations Tasks"
   description: "Learn how to use GitHub Copilot plan mode to create structured implementation plans for cloud infrastructure changes and system administration tasks."
   ms.date: 6/11/2026

@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-initial-configuration-of-azure-active-directory
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 50
-  last.refresh.date: null
-  modality: module
-  products:
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-    - administrator
-    - security-engineer
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Cloud Administration"
-    - "Zero Trust Security"
-    - "Security Architecture Design"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-initial-configuration-of-azure-active-directory/index.yml
-  uid: 7cdb8cbd-6ae8-41ce-b81e-6842b6e784aa
   adobe-target: true
   prefetch-feature-rollout: true
   title: Implement Initial Configuration of Microsoft Entra ID

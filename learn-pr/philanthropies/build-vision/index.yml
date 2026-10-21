@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.philanthropies.build-vision
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 82
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - student
-    - business-user
-  skills:
-    - "Multimodal AI"
-    - "AI Prompting"
-    - "AI Productivity"
-    - "AI Fluency"
-    - "AI-Powered Workflow Automation"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/build-vision/index.yml
-  uid: 30679f6c-909f-427f-a178-f77d89c35a35
   title: Build the Vision - Visual Content Creation with Copilot, Designer & Clipchamp
   description: "Evaluate how Microsoft Copilot, Designer, and Clipchamp streamline image generation, video editing, and media enhancement tasks for music video production."
   ms.date: 4/25/2025

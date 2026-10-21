@@ -2,29 +2,6 @@
 uid: learn.dpu.work-smarter-excel
 title: Work smarter in Excel with Copilot Chat
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 21
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-365-copilot
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-analyst
-    - business-user
-  skills:
-    - "AI Productivity"
-    - "AI Prompting"
-    - "Data Analytics"
-    - "Data Visualization"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/work-smarter-excel/index.yml
-  uid: 6d793304-c1bf-44db-b615-9185a5fbe636
   title: Work Smarter In Excel With Copilot Chat
   description: Learn how business professionals can use Copilot Chat in Excel to generate formulas, analyze data, and create visualizations efficiently.
   ms.date: 09/26/2025

@@ -2,28 +2,6 @@
 uid: learn.dpu.agent-in-settings
 title: Personalize your PC faster with Agent in Settings
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 23
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-    - support-engineer
-  skills:
-    - "AI Productivity"
-    - "AI Prompting"
-    - "Device Management"
-    - "Digital Accessibility"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/agent-in-settings/index.yml
-  uid: 02e92760-5c96-4567-a802-cc8c988a7339
   title: Personalize Your PC Faster with Agent in Settings
   description: In this module, you'll learn how to use Agent in Settings to find and change Windows settings by describing what you want to do in everyday language. You'll explore how the feature works, when to use it, and how it can help make personalization, accessibility, setup, and troubleshooting tasks easier on Copilot+ PCs.
   ms.date: 06/25/2026

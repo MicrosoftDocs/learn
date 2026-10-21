@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.devrel.active-directory-authentication-kerberos-hardening
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 118
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-    - systems-administrator
-  skills:
-    - "Identity and Access Management (IAM)"
-    - Cybersecurity
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/active-directory-authentication-kerberos/index.yml
-  uid: ae214bd0-218f-445f-acce-e00ab356e7bc
   title: Active Directory Domain Services Authentication and Kerberos Hardening
   description: Analyze Windows authentication internals and harden Kerberos for Windows Server 2025.
   ms.date: 08/10/2026

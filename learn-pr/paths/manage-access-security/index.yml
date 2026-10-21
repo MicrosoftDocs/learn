@@ -1,34 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-access-security
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - entra
-    - defender-for-cloud
-    - defender-endpoint
-    - intune
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - identity-access-admin
-    - systems-administrator
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Cloud Administration"
-    - "Device Management"
-    - Cybersecurity
-    - "Cloud Infrastructure"
-    - "Security Architecture Design"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-access-security/index.yml
-  uid: 7be395e7-3519-46ac-86c5-a0f25b1b22f7
   title: Manage access and security for Azure Virtual Desktop
   description: Manage access and security for Azure Virtual Desktop
   ms.date: 08/06/2024

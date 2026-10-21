@@ -2,28 +2,6 @@
 uid: learn.dpu.copilot-office-applications
 title: Work smarter with Copilot across your Microsoft 365 apps
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 39
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-365-copilot
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "AI Productivity"
-    - "AI Prompting"
-    - "Generative AI"
-    - "Agentic AI"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/copilot-office-applications/index.yml
-  uid: d61a19e0-5919-4023-bb37-e2cd8a0e823b
   title: Work Smarter with Copilot Across Your Microsoft 365 Apps
   description: "In this module, you'll learn how to use Microsoft 365 Copilot in Word, PowerPoint, Excel, Outlook, and OneNote to work smarter and more efficiently."
   ms.date: 03/02/2026

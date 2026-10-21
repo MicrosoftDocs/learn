@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-virtual-machine-availability
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 34
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - "Cloud Infrastructure"
-    - Virtualization
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-virtual-machine-availability/index.yml
-  uid: e20bc2e9-3a48-4af4-be40-10f1f4fe00f8
   title: Configure Virtual Machine Availability
   description: "Learn how to configure virtual machine availability including vertical and horizontal scaling."
   ms.date: 06/23/2026

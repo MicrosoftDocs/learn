@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.tm-introduction-to-threat-modeling
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 27
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - developer
-    - solution-architect
-    - devops-engineer
-  skills:
-    - "Threat Management"
-    - "Security Architecture Design"
-    - "Application Security"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/tm-introduction-to-threat-modeling/index.yml
-  uid: 1ada0fa8-06ab-44f9-bbbb-b50dd9f14e01
   title: Introduction to threat modeling
   description: Explore the four high-level steps of threat modeling. This engineering technique identifies potential threats early in the development lifecycle.
   ms.date: 11/11/2024

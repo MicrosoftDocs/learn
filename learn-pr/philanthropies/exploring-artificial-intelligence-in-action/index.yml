@@ -2,30 +2,6 @@
 uid: learn.philanthropies.exploring-artificial-intelligence-in-action
 
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 19
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - k-12-educator
-    - higher-ed-educator
-    - business-user
-    - student
-  skills:
-    - "Natural Language Processing (NLP)"
-    - "Computer Vision"
-    - "AI Model Evaluation & Testing"
-    - "Responsible AI"
-    - "Data Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/exploring-artificial-intelligence-in-action/index.yml
-  uid: 79011969-d7db-44ff-ac71-206ec98de5cb
   title: Exploring artificial intelligence in action
   description: This module explores various subsets within artificial intelligence (AI) such as natural language processing (NLP), computer vision, and recommendation systems and discuss the integration of AI-powered tools into a learning environment.
   author: yoosunee

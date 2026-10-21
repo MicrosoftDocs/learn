@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-windows-server-data-deduplication
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 45
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-    - solution-architect
-  skills:
-    - "Data Management"
-    - "Infrastructure Management"
-    - "Cloud Infrastructure"
-    - Virtualization
-    - "Data Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/implement-windows-server-data-deduplication/index.yml
-  uid: 6c4de84e-feea-4392-9051-12821116f859
   title: Implement Windows Server Data Deduplication
   description: "Learn how to implement Data Deduplication in Windows Server to reduce storage consumption for file shares, VDI deployments, software distribution, and backup volumes."
   ms.date: 08/31/2026

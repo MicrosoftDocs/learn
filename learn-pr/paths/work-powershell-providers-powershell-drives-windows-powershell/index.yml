@@ -1,25 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.work-powershell-providers-powershell-drives-windows-powershell
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - Automation
-    - "Infrastructure Management"
-    - "Data Management"
-  solution.area: null
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/work-powershell-providers-powershell-drives-windows-powershell/index.yml
-  uid: 17e1be7d-46f5-4b4a-b273-1d16a1455205
   title: Work with PowerShell providers and PowerShell drives in Windows PowerShell
   description: 'This learning path explains two technologies: PowerShell providers and PowerShell drives, which let you work with many forms of storage by using the commands and techniques that you use to manage the file system.'
   ms.date: 05/12/2026

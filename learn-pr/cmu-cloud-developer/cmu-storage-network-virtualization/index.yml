@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.how-cloud-works.cmu-storage-network-virtualization
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 54
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - network-engineer
-    - storage-admin
-    - it-professional
-    - solution-architect
-  skills:
-    - "IT Networking"
-    - Storage
-    - Virtualization
-    - "Cloud Infrastructure"
-    - "Infrastructure Management"
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-storage-network-virtualization/index.yml
-  uid: 7023b601-0d3e-4de3-9367-f027151fcb9f
   title: Storage and network virtualization
   description: Carnegie Mellon University's Cloud Developer course. Learn about how storage and network resources can be virtualized to support software defined datacenters.
   ms.date: 03/09/2022

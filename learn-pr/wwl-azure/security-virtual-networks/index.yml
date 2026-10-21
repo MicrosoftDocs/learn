@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.security-virtual-networks
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 117
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - network-engineer
-    - administrator
-  skills:
-    - "Security Architecture Design"
-    - "IT Networking"
-    - "Network Connectivity"
-    - "Zero Trust Security"
-    - "Data Security"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/security-virtual-networks/index.yml
-  uid: aeb55a80-25ac-41f1-8781-1ef1d6f5ac09
   title: Plan and implement security for virtual networks
   description: "This module is designed to provide administrators with the knowledge and skills needed to plan and implement robust security measures for Azure virtual networks, ensuring the confidentiality, integrity, and availability of network resources."
   ms.date: 03/25/2025

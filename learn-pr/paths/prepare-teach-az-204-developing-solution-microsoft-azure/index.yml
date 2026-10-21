@@ -1,26 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.prepare-teach-az-204-developing-solution-microsoft-azure
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-  skills:
-    - "Career Development"
-    - "Collaboration Tools"
-    - "Digital Accessibility"
-    - "Communications Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/prepare-teach-az-204-developing-solution-microsoft-azure/index.yml
-  uid: c8e4dd14-2a22-494c-893b-8e7097264a4c
   title: Prepare to teach AZ-204 Developing Solution for Microsoft Azure
   description: Learn about the Microsoft Learn for Educators program. Also, learn and how to best deliver its content to your students. Prepare to deliver Developing solution for Microsoft Azure solutions in the classroom.
   ms.date: 06/02/2023

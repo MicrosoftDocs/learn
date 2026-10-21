@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-ai-protect-sensitive-data
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 23
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-purview
-    - microsoft-365-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ip-admin
-  skills:
-    - "Data Security"
-    - "AI Governance"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - Cybersecurity
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-ai-protect-sensitive-data/index.yml
-  uid: 56756f32-ca64-4668-89e1-912f2f89c588
   title: Protect sensitive data from AI-related risks
   description: Protect sensitive data from AI-related risks
   ms.date: 04/10/2025

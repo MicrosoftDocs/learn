@@ -1,33 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 69
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - database-administrator
-    - developer
-    - solution-architect
-  skills:
-    - "Data Migration"
-    - Databases
-    - "Database Development"
-    - "Data Engineering"
-    - "Application Development"
-    - "Cloud Infrastructure"
-    - "Network Connectivity"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/migrate-on-premises-mongodb-databases-azure-database-mongodb/index.yml
-  uid: c2495229-e37a-483b-9b97-db5f9ef59e2f
   title: Migrate on-premises MongoDB databases to Cosmos DB
   description: "Migrate on-premises MongoDB databases to Cosmos DB"
   ms.date: 02/03/2021

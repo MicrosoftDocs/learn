@@ -1,38 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.build-enterprise-tool-ecosystems-mcp-azure
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 41
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - microsoft-foundry
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-    - solution-architect
-    - platform-engineer
-    - devops-engineer
-  skills:
-    - "Agentic AI"
-    - "Application Development"
-    - "Application Architecture"
-    - "Platform Engineering"
-    - DevOps
-    - "Cloud Infrastructure"
-    - "Identity and Access Management (IAM)"
-    - "API Management"
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/aaai-build-enterprise-tool-ecosystems-mcp-azure/index.yml
-  uid: 848825ee-54d7-4ef4-b79d-948dd30b5e4d
   title: Build Enterprise-Grade Tool Ecosystems with MCP and Microsoft Foundry
   description: "Build enterprise-grade tool ecosystems for production multi-agent systems with the Model Context Protocol (MCP) and Microsoft Foundry. Develop custom MCP servers with authentication, implement dynamic tool selection and routing, build tool result validation with fallback pipelines, and govern tool ecosystems with dependency management."
   ms.date: 7/31/2026

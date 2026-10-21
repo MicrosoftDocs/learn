@@ -1,40 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.protect-govern-ai-ready-infrastructure-azure
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 75
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - azure-openai
-    - microsoft-foundry
-    - entra
-    - microsoft-purview
-    - azure-machine-learning
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - security-engineer
-    - administrator
-    - ip-admin
-    - identity-access-admin
-  skills:
-    - "AI Governance"
-    - "AI Compliance"
-    - "AI Risk Management"
-    - "Responsible AI"
-    - "AI Safety"
-    - "Identity and Access Management (IAM)"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Security Analytics"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/protect-govern-ai-ready-infrastructure-azure/index.yml
-  uid: 8bc5f305-4d0c-42fc-b9be-423fd4b8d228
   title: "Protect and Govern AI Ready Infrastructure with Azure"
   description: "Design and deploy governed AI infrastructure by understanding governance frameworks, enforcing policies and access controls, implementing responsible AI safeguards, and completing hands-on exercises to ensure compliant, secure AI workloads."
   ms.date: 02/03/2026

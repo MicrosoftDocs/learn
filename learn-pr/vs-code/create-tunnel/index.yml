@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.create-tunnel
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 24
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Network Connectivity"
-    - "Cloud Computing"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/vs-code/create-tunnel/index.yml
-  uid: aacc9995-6d8b-4d12-9d63-a70ec4092e51
   title: Introduction to Remote - Tunnels extension
   description: Learn how to enable remote tunnels with Visual Studio Code.
   ms.date: 12/15/2023

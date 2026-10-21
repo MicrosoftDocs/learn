@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.use-apache-spark-work-files-lakehouse
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 73
-  last.refresh.date: null
-  modality: module
-  products:
-    - fabric
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - data-analyst
-  skills:
-    - "Data Engineering"
-    - "Data Analytics"
-    - "Python (Programming Language)"
-    - SQL
-    - "Data Management"
-    - "Data Visualization"
-    - "Platform Engineering"
-    - "Database Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/use-apache-spark-work-files-lakehouse/index.yml
-  uid: 845b38c9-1078-47d4-b5a7-fe28ee0aafe1
   title: Use Apache Spark in Microsoft Fabric
   description: "Apache Spark is a core technology for large-scale data analytics. Microsoft Fabric provides support for Spark clusters, enabling you to analyze and process data at scale."
   ms.date: 05/22/2025

@@ -1,27 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.describe-basic-concepts-of-cybersecurity
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - Cybersecurity
-    - "Threat Management"
-    - "Data Security"
-    - "Identity and Access Management (IAM)"
-    - "Device Management"
-    - "IT Networking"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/describe-basic-concepts-of-cybersecurity/index.yml
-  uid: e1cb8f69-f3d2-46b6-94bd-c843fee5dd3a
   title: Describe the concepts of cybersecurity
   description: Describe the concepts of cybersecurity
   ms.date: 04/24/2026

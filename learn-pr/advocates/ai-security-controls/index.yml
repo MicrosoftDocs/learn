@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.ai-security-controls
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 48
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - ai-engineer
-    - developer
-  skills:
-    - "AI Security (Model-Level)"
-    - "Application Security"
-    - "Data Security"
-    - "Prompt Engineering"
-    - "Knowledge Grounding for AI"
-    - "Security Operations Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/ai-security-controls/index.yml
-  uid: b5c56fc6-1774-4adc-b6b8-e827594b215d
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 10/01/2026

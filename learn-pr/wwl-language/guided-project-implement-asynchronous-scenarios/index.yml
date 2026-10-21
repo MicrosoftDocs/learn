@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-implement-asynchronous-scenarios
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 21
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/guided-project-implement-asynchronous-scenarios/index.yml
-  uid: ea8e3ab6-3fd0-4fc9-aff7-df665b4ed3c8
   title: 'Guided project: Implement asynchronous scenarios'
   description: "This module introduces the learner to Tasks and the concept of asynchronous programming."
   ms.date: 09/25/2024

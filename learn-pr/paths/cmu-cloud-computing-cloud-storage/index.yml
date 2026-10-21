@@ -1,29 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.cmu-cloud-computing.cloud-storage
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - developer
-    - solution-architect
-  skills:
-    - Storage
-    - Databases
-    - "Database Design"
-    - "Data Engineering"
-    - "Application Architecture"
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/cmu-cloud-computing-cloud-storage/index.yml
-  uid: 644ce3f3-656c-489d-9d57-0ff8879f1353
   title: Cloud storage
   description: Carnegie Mellon University's Cloud Developer course. Gain a deeper understanding of data and how it's stored on the cloud.
   brand: azure

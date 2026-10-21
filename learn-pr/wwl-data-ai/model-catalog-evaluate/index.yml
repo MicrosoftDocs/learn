@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.model-catalog-evaluate
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 63
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - data-scientist
-  skills:
-    - "AI Model Evaluation & Testing"
-    - "Model Hosting & Inference"
-    - "Generative AI"
-    - "Responsible AI"
-    - "Machine Learning"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/model-catalog-evaluate/index.yml
-  uid: eeed5eba-14e5-4713-82e4-2c218252d312
   title: Select, deploy, and evaluate Microsoft Foundry models
   description: Explore how to select appropriate models from the model catalog
     using benchmarks, deploy them to endpoints, and evaluate their performance

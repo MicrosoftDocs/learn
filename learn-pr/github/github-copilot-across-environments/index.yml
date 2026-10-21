@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.github.github-copilot-across-environments
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 53
-  last.refresh.date: null
-  modality: module
-  products:
-    - github-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "AI-Augmented Software Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/github-copilot-across-environments/index.yml
-  uid: 76d21a36-75e8-4dcf-bc3f-7f77e8171ec8
   title: "GitHub Copilot Across Environments: IDE, Chat, GitHub.com, Command Line Techniques, and the GitHub Copilot App"
   description: "GitHub Copilot Across Environments: IDE, Chat, GitHub.com, Command Line Techniques, and the GitHub Copilot App explore the versatile integration of GitHub's AI-powered coding assistance across your entire development workflow. It covers effective use of Copilot's auto-suggestions and multiple panes in IDEs, using natural language interactions in Copilot Chat, and streamlining command-line workflows. The guide delves into optimizing prompts, understanding context-aware code generation, and customizing Copilot's behavior to accelerate code changes and automate routine development tasks across different coding environments."
   ms.date: 10/08/2024

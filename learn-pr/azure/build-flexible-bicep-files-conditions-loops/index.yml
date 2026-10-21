@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.bicep-conditions-loops
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 41
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - systems-administrator
-  skills:
-    - Automation
-    - "Cloud Infrastructure"
-    - DevOps
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/build-flexible-bicep-files-conditions-loops/index.yml
-  uid: cca1fa76-4869-43e2-bc28-784e6c2857fd
   moduleType: standard
   title: Build Flexible Bicep files by Using Conditions and Loops
   description: Build advanced Bicep files by using conditions to conditionally deploy resources and using loops to deploy multiple instances of resources.

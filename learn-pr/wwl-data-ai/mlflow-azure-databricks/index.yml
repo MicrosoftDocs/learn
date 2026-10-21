@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.mlflow-azure-databricks
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 63
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-databricks
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - ai-engineer
-  skills:
-    - "Machine Learning"
-    - "AI Model Evaluation & Testing"
-    - "Model Hosting & Inference"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/mlflow-azure-databricks/index.yml
-  uid: 5098232e-b450-4201-9495-5581b4c9404e
   title: Use MLflow in Azure Databricks
   description: Learn how to use MLflow in Azure Databricks to track machine learning experiments and deploy models.
   author: JulianePadrao

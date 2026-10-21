@@ -2,26 +2,6 @@
 #LP name: Module 2: Community Collaboration for Accessible Design
 uid: learn.community-collaboration
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 44
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - product-manager
-  skills:
-    - "Digital Accessibility"
-    - "Organizational Culture"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/community-collaboration/index.yml
-  uid: 6719cf5e-2f6a-4e8d-b1c3-2b3041cabe6f
   title: Community collaboration for accessible design
   description: Learn about the importance of collaboration with the disability community in creating accessible gaming experiences. Identify methods to build connections with these communities. Implement best practice etiquette during these collaboration sessions.
   ms.date: 10/17/2024

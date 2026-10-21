@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.microsoft-azure-data-engineering-academic-programs
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 140
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-    - faculty
-    - data-engineer
-  skills:
-    - "Career Development"
-    - "Communications Management"
-    - "Organizational Effectiveness"
-    - "Data Engineering"
-    - "Data Warehousing"
-    - "Data Administration"
-    - "Cloud Computing"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/microsoft-azure-data-engineering-academic-programs/index.yml
-  uid: 8daea66f-afed-492b-9dba-a5ff38a619ce
   title: Get tips and tricks for teaching DP-203 Microsoft Azure Data Engineering in academic programs
   description: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
   ms.date: 06/02/2023

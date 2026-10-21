@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-arrays
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 51
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-arrays/index.yml
-  uid: bd668c40-e7fb-4a9a-a713-47b393ec2899
   title: Store and Iterate Through Sequences of Data using Arrays and the foreach Statement in C#
   description: "Learn to create array variables and iterate through elements of the array."
   ms.date: 12/15/2025

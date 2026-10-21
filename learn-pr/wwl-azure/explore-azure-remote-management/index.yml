@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-remote-management
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 34
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-    - security-engineer
-  skills:
-    - "Cloud Administration"
-    - "Identity and Access Management (IAM)"
-    - "Zero Trust Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-azure-remote-management/index.yml
-  uid: 7b66c999-1ca3-4c54-b04f-acf59ae94376
   title: Explore remote management for SAP on Azure
   description: "This module explores ways to apply Azure remote management components to design remote management of virtual machines and set up the Azure connector for SAP Landscape Management. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 08/01/2024

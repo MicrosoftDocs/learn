@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-windows-server
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 45
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - "Infrastructure Management"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/deploy-windows-server/index.yml
-  uid: 98148b50-f5ff-4466-81f5-15aded20ab93
   title: Deploy Windows Server
   description: "Deploy Windows Server"
   ms.date: 01/23/2026

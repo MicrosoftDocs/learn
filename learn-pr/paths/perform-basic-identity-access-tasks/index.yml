@@ -1,38 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.perform-basic-identity-access-tasks
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - entra
-    - m365
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-    - security-engineer
-    - ip-admin
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Cloud Administration"
-    - "Device Management"
-    - Automation
-    - "Zero Trust Security"
-    - "IT Networking"
-    - "AI Security (Model-Level)"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Threat Management"
-    - "AI-Powered Workflow Automation"
-    - Cybersecurity
-    - "Security Architecture Design"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/perform-basic-identity-access-tasks/index.yml
-  uid: fa892517-9636-4400-abe0-1317bd459419
   title: Perform Basic Identity and Access Tasks
   description: Learn to create and manage identity and access using Microsoft Entra ID. Explore the basics of creating users, groups, and how to control access with conditional access.
   ms.date: 01/23/2026

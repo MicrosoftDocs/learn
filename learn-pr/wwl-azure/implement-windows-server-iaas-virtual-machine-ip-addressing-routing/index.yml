@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-windows-server-iaas-vm-ip-addressing-routing
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 53
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - network-engineer
-    - systems-administrator
-  skills:
-    - "IT Networking"
-    - "Network Connectivity"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-ip-addressing-routing/index.yml
-  uid: 4018ffe5-ab25-46e2-8e45-3f4973455d9e
   title: Implement Windows Server IaaS VM IP addressing and routing
   description: "Learn how to implement IP addressing and routing for Windows Server IaaS VMs, including Azure VNets, subnets, public and private IP allocation, network interfaces, system routes, user-defined routes, and IPv6 for Azure VNet."
   ms.date: 08/31/2026

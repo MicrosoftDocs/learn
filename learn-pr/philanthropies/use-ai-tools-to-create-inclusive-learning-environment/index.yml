@@ -2,31 +2,6 @@
 uid: learn.philanthropies.use-ai-tools-to-create-inclusive-learning-environment
 
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 22
-  last.refresh.date: null
-  modality: module
-  products:
-    - m365
-    - office-teams
-    - windows
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - k-12-educator
-    - higher-ed-educator
-    - business-user
-  skills:
-    - "Generative AI"
-    - "Digital Accessibility"
-    - "Communications Management"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/use-ai-tools-to-create-inclusive-learning-environment/index.yml
-  uid: 19f12dcc-0b01-407d-9be5-582a4f684d5a
   title: Use AI tools to create an inclusive learning environment
   description: In this module, you learn how AI tools can help foster inclusive and adaptive learning environments, enabling trainers to address the varied needs of their learners.
   author: yoosunee

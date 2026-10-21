@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-windows-server-file-server-high-availability
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 45
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-    - platform-engineer
-    - solution-architect
-    - network-engineer
-    - security-engineer
-  skills:
-    - Storage
-    - "Cloud Infrastructure"
-    - "Platform Engineering"
-    - "IT Networking"
-    - Cybersecurity
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/implement-windows-server-file-server-high-availability/index.yml
-  uid: 571d0313-28e2-46b3-9f32-366cfdfb52f0
   title: Implement Windows Server File Server high availability
   description: "Implement Windows Server File Server high availability"
   ms.date: 01/23/2026

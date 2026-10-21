@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-generative-ai-audio-apps
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 43
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "Generative AI"
-    - "Application Development"
-    - "Python (Programming Language)"
-    - "AI Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/develop-generative-ai-audio-apps/index.yml
-  uid: 276cc07b-2de2-4c97-9af4-9d943d43e03d
   title: Develop a speech-capable generative AI application
   description: A voice carries meaning beyond words. Learn how to use models that transcribe and synthesize speech.
   ms.date: 03/11/2026

@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-class-implementations
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 106
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Application Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-class-implementations/index.yml
-  uid: a2fb8311-0cab-468a-be3a-b976af8d6be5
   title: Manage Class Implementations
   description: "Learn how to implement classes using advanced techniques like static classes, partial classes, and object initializers that can improve the readability, maintainability, and organization of your code."
   ms.date: 02/12/2025

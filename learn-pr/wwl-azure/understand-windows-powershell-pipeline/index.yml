@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-windows-powershell-pipeline
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 30
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - Automation
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/understand-windows-powershell-pipeline/index.yml
-  uid: 77050c4f-9d45-43b5-ac4f-4dc8d55722d3
   title: Understand the Windows PowerShell pipeline
   description: "This module explains about the Windows PowerShell pipeline and some basic techniques for running multiple commands in it."
   ms.date: 05/12/2026

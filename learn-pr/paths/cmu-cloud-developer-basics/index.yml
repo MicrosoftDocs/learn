@@ -1,39 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.cmu-cloud-computing.cmu-cloud-computing-basics
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - solution-architect
-  skills:
-    - "Cloud Computing"
-    - "Cloud Infrastructure"
-    - Virtualization
-    - "Application Architecture"
-    - "IT Strategy"
-    - Cybersecurity
-    - "Identity and Access Management (IAM)"
-    - "Data Security"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Infrastructure Management"
-    - "IT Networking"
-    - Storage
-    - "Cloud Administration"
-    - Automation
-    - DevOps
-    - "Application Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/cmu-cloud-developer-basics/index.yml
-  uid: 09f79839-0e0c-4f21-9726-7f6688db2c3a
   title: Cloud computing basics for developers
   description: The first learning path in a course on cloud computing for developers from Carnegie Mellon University. Learn about the basics of the cloud, including the history, building blocks, and types. This learning path prepares developers for real-world cloud practice on Azure.
   brand: azure

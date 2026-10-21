@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-admin.cmu-cloud-security
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 59
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - security-engineer
-  skills:
-    - Cybersecurity
-    - "Data Security"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Identity and Access Management (IAM)"
-    - "Cloud Administration"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-admin/cmu-cloud-security/index.yml
-  uid: 6660a1de-7f4f-4acd-8804-6a1ba603698e
   title: Cloud security
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Keeping your cloud secure means more than just adding permissions to resources. Learn about what cloud security means, including threats, cryptography, and regulation.
   ms.date: 06/07/2022

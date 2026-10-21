@@ -1,39 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.govern-enterprise-agent-lifecycle-azure
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 41
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-    - azure
-    - azure-openai
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - solution-architect
-    - devops-engineer
-    - ip-admin
-    - technology-manager
-  skills:
-    - "AI Governance"
-    - "Agent Operations"
-    - "AI Compliance"
-    - "AI Risk Management"
-    - DevOps
-    - "API Management"
-    - "Cloud Administration"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/aaai-govern-enterprise-agent-lifecycle-azure/index.yml
-  uid: 229ed204-b5a6-445e-8729-e73d198ceefd
   title: Govern the Enterprise Agent Lifecycle in Microsoft Foundry
   description: "Govern the enterprise agent lifecycle in Microsoft Foundry. Design agent versioning strategies and approval workflows, implement usage quotas and cost allocation models, establish change management processes for behavioral updates, and design agent retirement workflows that minimize business disruption."
   ms.date: 8/4/2026

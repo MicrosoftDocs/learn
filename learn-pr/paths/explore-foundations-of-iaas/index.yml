@@ -1,32 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.explore-foundations-of-iaas
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-  skills:
-    - "Cloud Infrastructure"
-    - Virtualization
-    - "Solution Architecture"
-    - "Network Connectivity"
-    - Cybersecurity
-    - Storage
-    - "Infrastructure Management"
-    - Databases
-    - "Enterprise Resource Planning (ERP)"
-    - "Data Security"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/explore-foundations-of-iaas/index.yml
-  uid: 8ae46b7b-d0c9-4d67-b3f7-b2aebe718428
   title: Explore the foundations of IaaS for SAP on Azure
   description: Explore the foundations of IaaS for SAP on Azure
   ms.date: 07/29/2024

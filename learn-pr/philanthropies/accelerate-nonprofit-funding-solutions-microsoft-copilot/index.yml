@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.philanthropies.accelerate-nonprofit-funding-solutions-microsoft-copilot
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 39
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - nonprofit-professionals
-    - marketing
-    - communications
-  skills:
-    - "AI Prompting"
-    - "AI Productivity"
-    - "Role focused AI Workflows"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/accelerate-nonprofit-funding-solutions-microsoft-copilot/index.yml
-  uid: 1dc324ab-94a0-4a1d-a0e1-2465551d7c13
   title: Accelerate nonprofit funding solutions with Microsoft Copilot
   description: Save time, improve quality, and increase impact in your funding activities. Copilot can also help you learn new skills, discover new opportunities, and enhance your creativity.
   author: CourtneyHMicrosoft

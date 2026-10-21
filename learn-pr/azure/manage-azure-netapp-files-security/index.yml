@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.manage-azure-netapp-files-security
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 45
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - systems-administrator
-  skills:
-    - "Data Security"
-    - "Identity and Access Management (IAM)"
-    - "Network Connectivity"
-    - "Cloud Administration"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/manage-azure-netapp-files-security/index.yml
-  uid: 188e504c-7945-419d-8d00-fc8939b538fb
   title: Manage Azure NetApp Files Security
   description: Learn encryption options like configuring customer-managed keys for Azure NetApp Files volume encryption and configure customer-managed keys with managed hardware security module (HSM).
   ms.date: 07/23/2026

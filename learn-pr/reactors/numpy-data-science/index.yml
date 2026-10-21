@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.reactors.numpy-data-science
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 127
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - developer
-    - student
-  skills:
-    - "Data Science"
-    - "Data Analytics"
-    - "Application Development"
-    - "Data Visualization"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/reactors/numpy-data-science/index.yml
-  uid: a360f8a3-ade0-4385-9bd7-8b0e0c635713
   title: Introduction to NumPy for data science
   description: Learn about how to use NumPy for data science. Create, index, and sort arrays.
   ms.date: 04/07/2022

@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-pipelines-securely-use-variables-parameters
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 44
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-devops
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-    - security-engineer
-    - developer
-    - systems-administrator
-  skills:
-    - DevOps
-    - Cybersecurity
-    - "Application Security"
-    - "Security Automation"
-    - "Data Security"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-pipelines-securely-use-variables-parameters/index.yml
-  uid: a419510b-0a07-4c80-87b6-f7f8262b3440
   title: Configure pipelines to securely use variables and parameters
   description: This module is designed to help learners understand the importance of configuring pipelines to use variables and parameters securely in Azure DevOps.
   ms.date: 01/18/2024

@@ -2,26 +2,6 @@
 uid: learn.dpu.evaluate-azure-local
 title: When to evaluate Azure Local for private cloud scenarios
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 17
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - technology-manager
-  skills:
-    - "IT Strategy"
-    - "Cloud Computing"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/evaluate-azure-local/index.yml
-  uid: 38848383-92c5-4700-8083-ef32dc32b69a
   title: When To Evaluate Azure Local For Private Cloud Scenarios
   description: "In this module, you’ll explore why private cloud scenarios are reemerging, understand what Azure Local represents in private and hybrid cloud discussions, see how it works alongside existing Windows Server environments. You'll also learn how to recognize the signals and timing that indicate when Azure Local might be appropriate to introduce into infrastructure conversations."
   ms.date: 05/12/2026

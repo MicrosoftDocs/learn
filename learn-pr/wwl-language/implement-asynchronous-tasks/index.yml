@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-asynchronous-tasks
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 65
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/implement-asynchronous-tasks/index.yml
-  uid: 934c2e5b-d13b-4d6d-90df-414c605fff7d
   title: Implement Asynchronous Tasks
   description: "Learn how to implement asynchronous tasks in C# apps using the `async` and `await` keywords and how to run asynchronous tasks in parallel."
   ms.date: 04/07/2025

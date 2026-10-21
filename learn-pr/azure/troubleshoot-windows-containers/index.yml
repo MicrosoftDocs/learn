@@ -2,33 +2,6 @@
 uid: learn.azure.troubleshoot-windows-containers
 title: Troubleshooting Windows Containers
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 45
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - developer
-    - devops-engineer
-    - support-engineer
-  skills:
-    - Virtualization
-    - "Infrastructure Management"
-    - "Cloud Administration"
-    - "Application Development"
-    - DevOps
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/troubleshoot-windows-containers/index.yml
-  uid: a92d5bf4-01ed-4644-ae20-70fe95cac591
   title: Troubleshooting Windows Containers
   description: Learn about the Windows containerization platform and how to troubleshoot it. Learn various troubleshooting techniques, using Docker, Azure, or native Windows tools.
   ms.date: 08/13/2024

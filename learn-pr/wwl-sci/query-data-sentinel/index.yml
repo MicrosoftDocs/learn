@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: azure.query-data-sentinel
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 48
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-sentinel
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-  skills:
-    - "Security Analytics"
-    - "Data Visualization"
-    - "Data Analytics"
-    - "Threat Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/query-data-sentinel/index.yml
-  uid: 728f30b4-8da8-4c39-9282-e55e80559c8a
   title: Query, visualize, and monitor data in Microsoft Sentinel
   description: Learn how to query, visualize, and monitor data in Microsoft Sentinel by using the Azure portal.
   ms.date: 06/06/2025

@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.analyze-climate-data-with-azure-notebooks
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 45
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - student
-    - developer
-  skills:
-    - "Data Science"
-    - "Data Analytics"
-    - "Data Visualization"
-    - "Machine Learning"
-    - "Python (Programming Language)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/analyze-climate-data-with-azure-notebooks/index.yml
-  uid: 00a97b0a-771c-4edb-a797-d1bec61fc2ca
   title: Analyze climate data with Azure Notebooks
   description: Create an Azure Notebook and use three popular Python libraries to analyze climate data collected by NASA, then share it.
   ms.date: 02/25/2019

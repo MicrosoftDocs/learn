@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-data-roles-services-products
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 21
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - fabric
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "Data Management"
-    - "Cloud Computing"
-    - "Career Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/understand-data-roles-services-products/index.yml
-  uid: bc0923b0-eb99-48dd-b0d2-dca0445f5a26
   title: Understand data roles, services, and products
   description: "Data is so widespread that many services and roles are needed to manage the data of an organization. This module covers types of data products, Azure data services, and the roles of data professionals."
   ms.date: 10/12/2026

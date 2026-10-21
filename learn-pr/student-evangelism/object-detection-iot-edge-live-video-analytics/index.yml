@@ -1,34 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.object-detection-lva-edge-device
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 105
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - platform-engineer
-    - systems-administrator
-    - security-engineer
-  skills:
-    - "Computer Vision"
-    - "Machine Learning"
-    - "AI Infrastructure"
-    - "Cloud Infrastructure"
-    - "Infrastructure Management"
-    - "Identity and Access Management (IAM)"
-    - "Network Connectivity"
-    - "Security Operations Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/object-detection-iot-edge-live-video-analytics/index.yml
-  uid: 8dd4e840-8675-4300-bd0c-fd6c6cb6331a
   title: "Object detection on Edge devices with Live Video Analytics using YOLO model"
   description: "This module reviews a historical object detection architecture that used Live Video Analytics on IoT Edge and the archived Vision on Edge sample."
   ms.date: 05/10/2026

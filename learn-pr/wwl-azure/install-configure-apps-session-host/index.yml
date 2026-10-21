@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.install-configure-apps-session-host
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 54
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - windows
-    - office-teams
-    - m365
-    - office-onedrive
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-  skills:
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - Virtualization
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/install-configure-apps-session-host/index.yml
-  uid: 868ff7c1-33bc-45e0-8752-0640838e345f
   title: Install and configure apps on a session host
   description: "MSIX app attach is a way to deliver MSIX applications to both physical and virtual machines. MSIX app attach is different from regular MSIX because it’s specifically for Azure Virtual Desktop."
   ms.date: 08/13/2024

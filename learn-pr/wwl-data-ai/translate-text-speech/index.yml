@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.translate-text-speech
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 48
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "Natural Language Processing (NLP)"
-    - "Application Development"
-    - "Multimodal AI"
-    - "AI Solutions"
-    - "Model Hosting & Inference"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/translate-text-speech/index.yml
-  uid: 14ea4e2c-1804-40c6-b13b-e217ab88474d
   title: Translate text and speech
   description: Translate text and speech using Azure Translator and Azure Speech in Foundry Tools
   author: GraemeMalcolm

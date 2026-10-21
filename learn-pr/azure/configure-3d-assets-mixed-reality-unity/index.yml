@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.configure-3d-assets-mixed-reality-unity
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 41
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/configure-3d-assets-mixed-reality-unity/index.yml
-  uid: 57257c01-c4b9-48cd-824a-100b512fc285
   title: Configure 3D assets for mixed reality in Unity
   description: Get step-by-step instructions on how to place Prefab 3D assets and models into a Unity scene. Learn about Unity Scriptable Objects and mixed reality design considerations before deploying to a HoloLens 2.
   ms.date: 05/24/2024

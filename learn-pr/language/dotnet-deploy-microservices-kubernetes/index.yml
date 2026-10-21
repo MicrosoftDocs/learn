@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.languages.dotnet-deploy-microservices-kubernetes
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 26
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - devops-engineer
-  skills:
-    - "Application Development"
-    - DevOps
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/language/dotnet-deploy-microservices-kubernetes/index.yml
-  uid: 43ca6b69-18f2-44ee-8e88-23bf9d7afabc
   title: Deploy a .NET microservice to Kubernetes
   description: Microservice applications are composed of small, independently versioned, and scalable customer-focused services. Microservices applications deployed in containers make it possible to scale out apps, and respond to increased demand by deploying more container instances, and to scale back if demand is decreasing. In complex solutions of many microservices the process of deploying, updating, monitoring, and removing containers introduces challenges. This module explains some of those challenges and shows how Kubernetes can help.
   ms.date: 12/06/2024

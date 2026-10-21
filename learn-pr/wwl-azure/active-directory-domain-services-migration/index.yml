@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.active-directory-domain-services-migration
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 30
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - identity-access-admin
-  skills:
-    - "Infrastructure Management"
-    - "Identity and Access Management (IAM)"
-    - "Data Migration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/active-directory-domain-services-migration/index.yml
-  uid: 7a5950d7-304a-49d8-8f48-62e49ec0b1d5
   title: Active Directory Domain Services migration
   description: "Determine the best approach to moving domain controllers to Windows Server 2025."
   ms.date: 01/23/2026

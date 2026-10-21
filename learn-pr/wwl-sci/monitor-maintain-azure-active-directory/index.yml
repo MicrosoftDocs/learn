@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-maintain-azure-active-directory
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 36
-  last.refresh.date: null
-  modality: module
-  products:
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-  skills:
-    - "Identity and Access Management (IAM)"
-    - Automation
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/monitor-maintain-azure-active-directory/index.yml
-  uid: e0262603-3813-4b9f-90b2-fa588c43353a
   adobe-target: true
   prefetch-feature-rollout: true
   title: Monitor and Maintain Microsoft Entra ID

@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-open-source-software-azure
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 66
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - devops-engineer
-    - technology-manager
-    - security-engineer
-  skills:
-    - "Application Development"
-    - DevOps
-    - "Application Security"
-    - Cybersecurity
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-open-source-software-azure/index.yml
-  uid: 6016f37a-0914-45de-84c0-16a6122e805e
   title: Implement Open-Source Software
   description: "Learn how to implement open-source software securely, understand licensing implications, evaluate corporate concerns, and manage open-source components in enterprise environments."
   ms.date: 10/28/2025

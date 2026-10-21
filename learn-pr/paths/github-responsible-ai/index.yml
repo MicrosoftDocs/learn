@@ -1,32 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.github.responsible-ai
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - student
-  skills:
-    - "AI Fluency"
-    - "Generative AI"
-    - "Natural Language Processing (NLP)"
-    - "Computer Vision"
-    - "Responsible AI"
-    - "Prompt Engineering"
-    - "Large Language Model Operations (LLMOps)"
-    - "Embedding Models"
-    - "Retrieval-Augmented Generation (RAG)"
-    - "Agentic AI"
-    - "AI Governance"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/github-responsible-ai/index.yml
-  uid: e06bd562-d23c-4b89-88d3-3eab1f42e5bb
   title: GitHub responsible AI
   description: Strengthen your AI knowledge through courses covering essential topics such as machine learning, facial recognition, generative AI, and responsible AI practices. Learn how AI tools detect and analyze faces, explore the creation of content with generative models, and embrace responsible considerations in AI development. These foundational classes build expertise in AI while focusing on responsible technology use. 
   brand: github

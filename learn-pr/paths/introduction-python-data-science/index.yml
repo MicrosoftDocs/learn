@@ -1,29 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.reactors.introduction-python-data-science
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - developer
-    - student
-  skills:
-    - "Python (Programming Language)"
-    - "Application Development"
-    - "Data Science"
-    - "Data Analytics"
-    - "Data Visualization"
-    - "Data Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/introduction-python-data-science/index.yml
-  uid: 58037f2d-739c-49d3-9197-638142f3bb83
   title: Introduction to Python for data science
   description: Learn to use Python for data science. Modules introduce the Python language, the NumPy and pandas libraries, basic data-preparation methods, and related tools.
   brand: azure

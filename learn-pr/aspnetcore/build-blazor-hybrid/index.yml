@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.build-blazor-hybrid
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 53
-  last.refresh.date: null
-  modality: module
-  products:
-    - vs
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Application Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/build-blazor-hybrid/index.yml
-  uid: e38aebd5-3bff-4979-9fcc-c86bc700f899
   title: Build a mobile and desktop app with Blazor Hybrid and .NET MAUI
   description: Learn how to set up your development environment and build your first cross-platform hybrid app with Blazor, .NET MAUI, and C#.
   ms.date: 12/05/2024

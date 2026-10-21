@@ -1,32 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.github.developing-agentic-systems-2
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - github-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Multi-Agent Orchestration"
-    - "Agentic AI"
-    - "Agent Operations"
-    - "AI Model Evaluation & Testing"
-    - "Responsible AI"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - Cybersecurity
-    - "Security Architecture Design"
-    - DevOps
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/github-agentic-systems-part-two/github-agentic-systems-part-two.yml
-  uid: f05c06b9-e0a6-4dec-92d6-08799e8f8b39
   title: Developing in Agentic AI Systems Part 2 of 2
   description: This is part two of two part learning series to support our new certification, Developing in Agentic AI Systems. In this learning path you will learn how to design, deploy, and manage agentic AI systems within the software development lifecycle by integrating, orchestrating, and governing autonomous agents using GitHub to ensure safe, reliable, and scalable delivery.
   brand: github

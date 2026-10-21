@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-text-analysis-agent-language-mcp
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 52
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "Agent Development"
-    - "Application Development"
-    - "Natural Language Processing (NLP)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/develop-text-analysis-agent-language-mcp/index.yml
-  uid: 41c9e9ca-c669-48ab-b325-34c83f12bff5
   title: Develop a Text Analysis Agent with the Azure Language MCP Server
   description: Learn how to build an AI agent that uses the Azure Language MCP server to perform text analysis tasks like language detection, entity recognition, and personal information redaction.
   ms.date: 10/16/2026

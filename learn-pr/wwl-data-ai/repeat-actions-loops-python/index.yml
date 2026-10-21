@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.repeat-actions-loops-python
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 47
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Python (Programming Language)"
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/repeat-actions-loops-python/index.yml
-  uid: 222ebbef-7c1c-4ffa-9040-b8c4645e2c85
   title: Repeat Actions with Loops
   description: Learn how to repeat actions in Python using for and while loops, and control loop execution with break and continue.
   ms.date: 07/15/2026

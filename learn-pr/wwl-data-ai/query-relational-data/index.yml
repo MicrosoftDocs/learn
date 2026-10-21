@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.query-relational-data-azure
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 26
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - data-engineer
-  skills:
-    - SQL
-    - Databases
-    - "Database Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/query-relational-data/index.yml
-  uid: 229b4875-0c3a-438e-bc5a-ca8ac7cb604c
   title: Query relational data in Azure
   description: "This content is a part of Query relational data in Azure."
   ms.date: 10/12/2026

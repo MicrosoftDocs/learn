@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.scale-containers-azure-container-apps
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 87
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - devops-engineer
-  skills:
-    - "Cloud Infrastructure"
-    - Automation
-    - DevOps
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/scale-containers-azure-container-apps/index.yml
-  uid: 33b59188-901a-45a6-913f-7e3856011c34
   title: Scale Containers in Azure Container Apps
   description: Learn how to configure automatic horizontal scaling for containerized applications in Azure Container Apps using HTTP rules, KEDA scalers, and traffic management.
   ms.date: 06/11/2026

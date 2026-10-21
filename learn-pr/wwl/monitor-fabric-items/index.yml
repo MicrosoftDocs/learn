@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-fabric-items
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 61
-  last.refresh.date: null
-  modality: module
-  products:
-    - fabric
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - devops-engineer
-    - data-analyst
-  skills:
-    - DevOps
-    - "Data Engineering"
-    - "Data Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/monitor-fabric-items/index.yml
-  uid: a0ad4c4d-768b-417b-849c-8072330c6f83
   title: Monitor Activities in Microsoft Fabric
   description: "Learn how to use the monitoring hub in Microsoft Fabric to track activity status, investigate failures, and view historical run data. Explore how Activator responds to Fabric job events with automated alerts and actions."
   ms.date: 06/03/2026

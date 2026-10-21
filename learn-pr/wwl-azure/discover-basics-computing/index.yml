@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.discover-basics-computing
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 27
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - student
-    - k-12-educator
-    - network-engineer
-    - support-engineer
-  skills:
-    - "IT Networking"
-    - "Network Connectivity"
-    - Cybersecurity
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/discover-basics-computing/index.yml
-  uid: f49277af-2111-4ed9-9073-ecb1bf51a0c1
   title: Discover the basics of computing
   description: "Learn about the parts of computers and how they work together."
   ms.date: 03/19/2024

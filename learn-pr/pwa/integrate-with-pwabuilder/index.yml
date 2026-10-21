@@ -2,25 +2,6 @@
 uid: learn.edge.integrate-with-pwabuilder
 title: Integrate your project with PWABuilder
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 31
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Digital Accessibility"
-    - "IT Networking"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/pwa/integrate-with-pwabuilder/index.yml
-  uid: 3bfa69f8-6a25-484b-9824-3568d5d886e6
   title: Integrate your project with PWABuilder
   description: Elevate your web development skills by integrating Progressive Web App (PWA) features into projects. Master PWA readiness, app manifest generation, and service worker configuration using PWABuilder. Customize settings and appearance, configure essential PWA features like push notifications and background sync, and transform your project into a polished, app-like experience for users.
   ms.date: 07/11/2023

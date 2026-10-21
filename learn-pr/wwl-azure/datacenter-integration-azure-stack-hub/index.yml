@@ -1,34 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.datacenter-integration-for-azure-stack-hub
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 67
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - administrator
-    - solution-architect
-    - network-engineer
-    - security-engineer
-  skills:
-    - "Cloud Infrastructure"
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Network Connectivity"
-    - "IT Networking"
-    - "Identity and Access Management (IAM)"
-    - Cybersecurity
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/datacenter-integration-azure-stack-hub/index.yml
-  uid: 031833db-af4b-4944-9284-053066292898
   title: Datacenter integration for Azure Stack Hub
   description: "Datacenter integration for Azure Stack Hub"
   ms.date: 03/15/2022

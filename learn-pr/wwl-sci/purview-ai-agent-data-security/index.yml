@@ -1,34 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-ai-agent-data-security
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 41
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-purview
-    - m365
-    - microsoft-365-copilot
-    - microsoft-defender
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ip-admin
-    - administrator
-    - security-engineer
-  skills:
-    - "Agentic AI"
-    - "Data Security"
-    - "AI Compliance"
-    - "AI Risk Management"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Data Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-ai-agent-data-security/index.yml
-  uid: aff680cc-5c84-4dc2-9e91-3bdbf0e5a673
   title: Secure and govern agent interactions with Microsoft Purview
   description: "Learn how to identify which Microsoft Purview capabilities cover which AI agent types, discover active agents, assess coverage gaps, and configure agent-specific data security and compliance controls."
   ms.date: 06/15/2026

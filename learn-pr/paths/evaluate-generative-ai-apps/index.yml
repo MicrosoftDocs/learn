@@ -2,31 +2,6 @@
 uid: learn.azure-evaluate-generative-ai-apps
 title: Evaluate generative AI applications
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure-openai
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "AI Model Evaluation & Testing"
-    - "AI Safety"
-    - "Prompt Engineering"
-    - "Large Language Model Operations (LLMOps)"
-    - "Retrieval-Augmented Generation (RAG)"
-    - "AI Security (Model-Level)"
-    - "Responsible AI"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/evaluate-generative-ai-apps/index.yml
-  uid: 74704d95-57bf-428c-93a6-42c96bf8334f
   title: Evaluate generative AI applications
   description: Explore how to evaluate generative AI applications.
   ms.date: 10/15/2024

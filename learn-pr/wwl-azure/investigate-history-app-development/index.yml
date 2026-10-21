@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.investigate-history-app-development
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 24
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles: null
-  skills:
-    - "Application Development"
-    - "Digital Accessibility"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/investigate-history-app-development/index.yml
-  uid: 97a588a3-31fc-4980-ad61-93374762e90e
   title: Investigate the history of app development
   description: "Explores the history of computing and programming and surveys how modern programming evolved from the early days."
   ms.date: 03/19/2024

@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-modularize-tasks-templates
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 41
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-devops
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - devops-engineer
-  skills:
-    - DevOps
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-modularize-tasks-templates/index.yml
-  uid: 772c1cf8-04ce-4567-b679-7fbd0e6979d3
   title: Manage and Modularize Tasks and Templates
   description: "Learn to create and manage task groups, variable groups, and custom build and release tasks for modular Azure pipelines"
   ms.date: 10/01/2025

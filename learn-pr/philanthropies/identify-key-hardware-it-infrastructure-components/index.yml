@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.philanthropies.identify-key-hardware-and-it-infrastructure-components
 metadata:
- content.levels: 200
- content.locale: en-us
- duration: 26
- last.refresh.date: null
- modality: module
- products: null
- publish.locations: null
- release.date: null
- retire.date: null
- reusable: null
- roles:
-   - it-professional
-   - network-engineer
-   - storage-admin
-   - solution-architect
- skills:
-   - "Cloud Infrastructure"
-   - "Infrastructure Management"
-   - "IT Networking"
-   - Storage
-   - "Network Connectivity"
- solution.area: "Cloud & AI Platforms"
- source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/identify-key-hardware-it-infrastructure-components/index.yml
- uid: e3182595-222f-44bc-a3c3-ceb245931cd1
  title: Identify key hardware and IT infrastructure components of datacenters
  description: In this module, we'll dive into the essential hardware and IT infrastructure that power datacenters. You'll learn about the different types of servers and their components, as well as various storage options like SAN, NAS, and object storage. We explore the network infrastructure inside a datacenter, including key components like switches, routers, and firewalls, along with how external connectivity is managed. Additionally, you discover the important IT apparatus such as racks and enclosures and application delivery controllers that help optimize performance and organization within the datacenter. By the end, you have a solid understanding of the hardware that supports the data storage, processing, and networking needs of a modern datacenter.
  ms.date: 05/10/2025

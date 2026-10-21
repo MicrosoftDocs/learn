@@ -1,35 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-ai-capabilities-database-solutions
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - microsoft-foundry
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - data-engineer
-    - developer
-  skills:
-    - "Embedding Models"
-    - SQL
-    - "Database Development"
-    - "Vector Databases"
-    - "Retrieval-Augmented Generation (RAG)"
-    - "Data Engineering"
-    - "Semantic Search"
-    - "Database Design"
-    - "AI Model Evaluation & Testing"
-    - "Natural Language Processing (NLP)"
-    - "Knowledge Grounding for AI"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-ai-capabilities-database-solutions/index.yml
-  uid: 22c47cb3-f3ef-463b-bad3-50de4111ea0f
   title: Implement AI capabilities in database solutions
   description: Learn to design intelligent search, work with models and embeddings, and build Retrieval Augmented Generation (RAG) patterns in T-SQL.
   ms.date: 02/05/2026

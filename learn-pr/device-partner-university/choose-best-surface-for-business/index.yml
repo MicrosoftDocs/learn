@@ -2,26 +2,6 @@
 uid: learn.dpu.choose-best-surface-business
 title: Choose the best Microsoft Surface for your business
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 29
-  last.refresh.date: null
-  modality: module
-  products:
-    - surface
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - technology-manager
-    - it-professional
-  skills:
-    - "Device Management"
-    - "AI Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/choose-best-surface-for-business/index.yml
-  uid: 5e819518-7b49-4747-9594-87842d56e852
   title: Choose The Best Microsoft Surface For Your Business
   description: 'Discover how to select the ideal Microsoft Surface device for your business needs by evaluating key decision criteria such as portability, flexibility, battery life, and performance.'
   ms.date: 12/01/2025

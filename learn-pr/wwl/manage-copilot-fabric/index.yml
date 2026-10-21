@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-copilot-fabric
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 21
-  last.refresh.date: null
-  modality: module
-  products:
-    - fabric
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-analyst
-  skills:
-    - "AI Productivity"
-    - "AI Governance"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/manage-copilot-fabric/index.yml
-  uid: 5b47a609-aab5-4c3f-a854-ee1e470c8d45
   title: Manage Copilot in Microsoft Fabric
   description: Manage to Copilot in Microsoft Fabric.
   ms.date: 10/12/2026

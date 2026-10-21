@@ -1,32 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.active-directory-domain-services
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-    - systems-administrator
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Infrastructure Management"
-    - "Security Architecture Design"
-    - "Zero Trust Security"
-    - "Solution Architecture"
-    - "Cloud Administration"
-    - Cybersecurity
-    - "Data Management"
-    - Automation
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/active-directory-domain-services/index.yml
-  uid: 269fe8e9-c3d9-4c46-865a-862ca95c3df5
   title: Active Directory Domain Services
   description: Active Directory Domain Services
   ms.date: 01/23/2026

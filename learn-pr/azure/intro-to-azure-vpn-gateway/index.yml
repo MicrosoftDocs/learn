@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-vpn-gateway
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 18
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - network-engineer
-    - solution-architect
-  skills:
-    - "Network Connectivity"
-    - "IT Networking"
-    - "Solution Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-vpn-gateway/index.yml
-  uid: 0def22ef-ca9e-4236-b998-37420344aa77
   title: Introduction to Azure VPN Gateway
   description: Learn what Azure VPN Gateway does, how it works, and when you should choose to use Azure VPN Gateway as a solution to meet your organization's needs.
   ms.date: 10/17/2026

@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.install-configure-visual-studio-code-python
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 54
-  last.refresh.date: null
-  modality: module
-  products:
-    - github-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - student
-  skills:
-    - "Python (Programming Language)"
-    - "Application Development"
-    - "AI-Augmented Software Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/install-configure-visual-studio-code-python/index.yml
-  uid: eacf552e-752d-4b41-a9ef-aa3c447c6c44
   title: Install and configure Visual Studio Code
   description: Set up a professional Python development environment. Learn to install Python and VS Code, manage packages with pip, and write code with GitHub Copilot.
   ms.date: 07/15/2026

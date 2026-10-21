@@ -1,33 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-azure-storage-security
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-  skills:
-    - Storage
-    - "Cloud Computing"
-    - "Data Migration"
-    - "IT Networking"
-    - "Network Connectivity"
-    - Cybersecurity
-    - "Identity and Access Management (IAM)"
-    - "Data Security"
-    - "Cloud Administration"
-    - "Threat Management"
-    - "Security Operations Management"
-  solution.area: null
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-azure-storage-security/index.yml
-  uid: 6b657922-bf39-465f-8b78-6d30b285636f
   title: Implement Security for Azure Storage for the Cloud and AI Security Engineer
   description: "Implement a defense-in-depth security strategy for Azure Storage. Harden storage accounts, govern access with Microsoft Entra ID and stored access policies, enforce network perimeter controls using firewall rules and private endpoints, and enable Microsoft Defender for Storage to detect threats from malicious uploads and compromised AI agent credentials."
   ms.date: 04/22/2026

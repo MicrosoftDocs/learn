@@ -1,34 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-fabric-data-agents
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 54
-  last.refresh.date: null
-  modality: module
-  products:
-    - fabric
-    - microsoft-foundry
-    - power-bi
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - data-analyst
-    - ai-engineer
-    - developer
-  skills:
-    - "Agent Development"
-    - "Knowledge Grounding for AI"
-    - "Data Analytics"
-    - "Data Engineering"
-    - "Data Security"
-    - "AI Governance"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/implement-fabric-data-agents/index.yml
-  uid: a7e7e5b6-d6fa-4299-9edc-c473ffdc4ea2
   title: Implement Microsoft Fabric Data Agents
   description: Implement Microsoft Fabric Data Agents (chat with your data)
   ms.date: 10/12/2026

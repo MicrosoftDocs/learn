@@ -2,28 +2,6 @@
 uid: learn.dpu.introduction-to-microsoft-365-business-standard
 title: Introduction to Microsoft 365 Business Standard
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 23
-  last.refresh.date: null
-  modality: module
-  products:
-    - m365
-    - office-teams
-    - office-onedrive
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-leader
-    - it-professional
-  skills:
-    - "Collaboration Tools"
-    - "Cloud Computing"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-to-microsoft-365-business-standard/index.yml
-  uid: 3263ca2d-10b0-4bdd-b1b3-a64cf40af144
   title: Introduction To Microsoft 365 Business Standard
   description: In this module, you'll learn about the components and features of Microsoft 365 Business Standard, including its productivity applications, cloud-based collaboration tools, and integrated solutions for communication and project management.
   ms.date: 09/11/2025

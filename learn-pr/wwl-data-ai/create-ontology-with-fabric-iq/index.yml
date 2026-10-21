@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.create-ontology-with-fabric-iq
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 143
-  last.refresh.date: null
-  modality: module
-  products:
-    - fabric
-    - power-bi
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - business-analyst
-  skills:
-    - "Graph-based AI"
-    - "Data Management"
-    - "Business Insights"
-    - "Knowledge Grounding for AI"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/create-ontology-with-fabric-iq/index.yml
-  uid: c5b40940-cc81-45bf-8892-4c544ec21aff
   title: Create an Ontology with Fabric IQ
   description: Learn how to create ontologies in Fabric IQ by building manually or generating from Power BI semantic models, then bind ontology definitions to OneLake data sources including lakehouse tables and eventhouse streams.
   ms.date: 09/08/2026

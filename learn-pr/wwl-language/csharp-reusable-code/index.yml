@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-reusable-code
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 61
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-reusable-code/index.yml
-  uid: 21d1fe2f-0c96-4923-9159-7faceff47086
   title: Write reusable code in C#
   description: "Learn how to write reusable code in C# using methods, parameters, return values, variable scope, and namespaces."
   ms.date: 09/23/2026

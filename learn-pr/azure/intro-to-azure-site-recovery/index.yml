@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-site-recovery
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 28
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - solution-architect
-  skills:
-    - "Infrastructure Management"
-    - "Cloud Administration"
-    - "Solution Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-site-recovery/index.yml
-  uid: 1385d2a6-d9eb-4898-aaea-07e8ca340aa9
   title: Introduction to Azure Site Recovery
   description: This module explains what Azure Site Recovery does, how it works, and when you should choose to use Azure Site Recovery as a solution to meet your organization's needs.
   ms.date: 11/15/2025

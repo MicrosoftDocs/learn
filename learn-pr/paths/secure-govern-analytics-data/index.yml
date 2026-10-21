@@ -1,30 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.secure-govern-analytics-data
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - fabric
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-analyst
-    - data-engineer
-  skills:
-    - "Data Security"
-    - "Identity and Access Management (IAM)"
-    - "Data Administration"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Data Management"
-    - "Data Warehousing"
-    - SQL
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/secure-govern-analytics-data/index.yml
-  uid: e070467e-4579-4225-8309-fd994c677304
   title: Secure and Govern Analytics Data in Microsoft Fabric
   description: Implement layered access controls across Microsoft Fabric workspaces and data stores, then establish governance policies that help consumers identify trustworthy, certified analytics assets.
   ms.date: 04/30/2026

@@ -1,32 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-responsible-ai-security-governance-risk-management-compliance
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 53
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - microsoft-foundry
-    - microsoft-copilot-studio
-    - microsoft-purview
-    - microsoft-365-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-  skills:
-    - "Security Architecture Design"
-    - "AI Governance"
-    - "AI Security (Model-Level)"
-    - "Responsible AI"
-    - "AI Compliance"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/design-responsible-ai-security-governance-risk-management-compliance/index.yml
-  uid: 03ef22a7-fd15-4fb5-b239-7c1635617a36
   title: "Design Responsible AI Security, Governance, Risk Management, and Compliance"
   description: "Learn to design secure, governed, and compliant AI systems that align with organizational policies and Responsible AI principles."
   ms.date: 02/09/2026

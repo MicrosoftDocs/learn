@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-reliability
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 89
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - solution-architect
-    - systems-administrator
-    - developer
-  skills:
-    - "Solution Architecture"
-    - "Application Architecture"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-well-architected-reliability/index.yml
-  uid: 2ac07054-3373-44bb-b0f9-27371142852c
   title: Microsoft Azure Well-Architected Framework - Reliability
   description: Apply reliability guidance in your architecture to improve your workload's availability and resilience.
   ms.date: 05/15/2025

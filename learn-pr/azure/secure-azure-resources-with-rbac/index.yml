@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.secure-azure-resources-with-rbac
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 37
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - security-engineer
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Cloud Administration"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/secure-azure-resources-with-rbac/index.yml
-  uid: ca022ca0-4364-433d-9583-06eebd1d3958
   moduleType: standard
   title: Secure your Azure resources with Azure role-based access control (Azure RBAC)
   description: Learn how to use Azure role-based access control to effectively manage your team's access to Azure resources.

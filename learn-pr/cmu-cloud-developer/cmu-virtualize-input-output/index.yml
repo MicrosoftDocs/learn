@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 21
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - it-professional
-  skills:
-    - Virtualization
-    - "Application Development"
-    - "Cloud Infrastructure"
-    - "IT Networking"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-virtualize-input-output/index.yml
-  uid: 4b8163f4-b71d-4dde-8f3c-0b8538480170
   title: Virtualize I/O
   description: Carnegie Mellon University's Cloud Developer course. Learn about how computer input/output is virtualized. Covers I/O basics and a case study of virtualizing I/O.
   ms.date: 03/09/2022

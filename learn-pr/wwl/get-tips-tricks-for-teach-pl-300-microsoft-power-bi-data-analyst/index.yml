@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 77
-  last.refresh.date: null
-  modality: module
-  products:
-    - power-bi
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-  skills:
-    - "Data Analytics"
-    - "Data Visualization"
-    - "Digital Accessibility"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/get-tips-tricks-for-teach-pl-300-microsoft-power-bi-data-analyst/index.yml
-  uid: e3279381-afd1-4746-b9a8-6a14891abf59
   title: 'Get tips and tricks for teaching PL-300: Microsoft Power BI Data Analyst in academic programs'
   description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
   ms.date: 06/02/2023

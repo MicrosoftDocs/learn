@@ -2,32 +2,6 @@
 uid: learn.improve-reliability-incidents
 title: "Improve your reliability with modern operations practices: Incident response"
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 33
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - azure-devops
-    - office-teams
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - site-reliability-engineer
-    - devops-engineer
-    - technology-manager
-  skills:
-    - DevOps
-    - Automation
-    - "Communications Management"
-    - "Organizational Effectiveness"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/improve-reliability-incidents/index.yml
-  uid: b7dc4c5c-48b2-4899-a590-b2c11bea7dd1
   title: "Improve your reliability with modern operations practices: Incident response"
   description: Learn the incident response fundamentals necessary to help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
   ms.date: 04/16/2026

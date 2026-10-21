@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-access
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - entra
-    - intune
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-    - systems-administrator
-    - security-engineer
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Cloud Administration"
-    - "Device Management"
-    - Cybersecurity
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-access/index.yml
-  uid: 72e64b4e-4a80-4aba-bd78-79a1aad1b296
   title: Manage access for Azure Virtual Desktop
   description: "Manage access for Azure Virtual Desktop"
   ms.date: 08/20/2024

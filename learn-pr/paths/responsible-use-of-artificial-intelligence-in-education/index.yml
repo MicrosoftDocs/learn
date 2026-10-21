@@ -2,29 +2,6 @@
 uid: learn.philanthropies.responsible-use-of-artificial-intelligence-in-education
 title: Responsible use of artificial intelligence in education
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - higher-ed-educator
-    - k-12-educator
-  skills:
-    - "Responsible AI"
-    - "AI Governance"
-    - "AI Safety"
-    - "Digital Accessibility"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "AI Risk Management"
-    - "Data Security"
-  solution.area: null
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/responsible-use-of-artificial-intelligence-in-education/index.yml
-  uid: 090eb82e-9a5d-452d-bc7f-22bdb394915b
   title: Responsible use of artificial intelligence in education
   description: In this learning path, you'll embark on an insightful exploration of Microsoft’s Responsible AI framework, learning how to apply ethical principles to the development and use of AI technologies. You start by learning the frameworks that shape Microsoft’s approach to responsible AI, focusing on the commitment to the six responsible AI principles. As you progress, you discover practical ways to integrate these principles into educational environments, ensuring that AI tools not only enhance learning experiences but also uphold values of fairness and privacy. The learning path concludes with hands-on exercises, translating theoretical knowledge into real-world practice. This learning path equips you with the necessary skills to implement responsible AI systems responsibly in any learning environment.
   author: yoosunee

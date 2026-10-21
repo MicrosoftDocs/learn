@@ -2,27 +2,6 @@
 uid: learn.dpu.choose-the-right-moment
 title: Choose the right moment to modernize Windows Server
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 19
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - technology-manager
-    - it-professional
-  skills:
-    - "IT Strategy"
-    - "Infrastructure Management"
-    - "Communications Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/choose-the-right-moment/index.yml
-  uid: c3fc2360-3ce5-4e29-a908-1dc61435c92b
   title: Choose The Right Moment To Modernize Windows Server
   description: This module helps you evaluate when to modernize environments running Windows Server 2016 or Windows Server 2019. You’ll learn how to identify security, operational, and business signals that indicate it might be time to move to Windows Server 2025.
   ms.date: 05/05/2026

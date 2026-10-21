@@ -1,32 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.architect-data-platform
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - database-administrator
-    - developer
-    - solution-architect
-  skills:
-    - "Data Migration"
-    - "Data Administration"
-    - Databases
-    - SQL
-    - "Cloud Infrastructure"
-    - Automation
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/architect-data-platform/index.yml
-  uid: f8401492-e4f1-4217-ac9b-e71fc78fa982
   title: Architect a data platform in Azure learning path
   description: Learn how to architect a data platform in Azure and build solutions to store relational and NoSQL data.
   brand: azure

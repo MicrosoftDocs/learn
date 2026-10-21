@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.what-is-threat-hunting-azure-sentinel
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 23
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-sentinel
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-  skills:
-    - "Security Analytics"
-    - "Threat Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/what-is-threat-hunting-azure-sentinel/index.yml
-  uid: ae49e5d3-364c-4164-9900-5774753730b7
   title: Explain threat hunting concepts in Microsoft Sentinel
   description: "Explain threat hunting concepts in Microsoft Sentinel"
   ms.date: 05/21/2025

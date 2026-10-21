@@ -2,31 +2,6 @@
 uid: learn.dpu.business-impact-copilot-pc
 title: Understand the business impact of Copilot+ PCs
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 23
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-    - microsoft-365-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - technology-manager
-    - business-leader
-    - sales
-  skills:
-    - "AI Business & Vision"
-    - "AI Fluency"
-    - "AI Productivity"
-    - "AI Governance"
-    - "Device Management"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/business-impact-copilot-pc/index.yml
-  uid: 355df7af-6577-41e3-97ff-0c9d9226fee0
   title: Understand the Business Impact of Copilot+ PCs
   description: Learn how Copilot+ PCs support modern organizations through on-device AI, cloud-connected services, and Windows 11 Pro capabilities. Explore how AI-powered workflows, security, governance, and productivity features help businesses improve flexibility, collaboration, and operational efficiency.
   ms.date: 08/04/2025

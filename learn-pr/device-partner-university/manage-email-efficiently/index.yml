@@ -2,28 +2,6 @@
 uid: learn.dpu.manage-email-efficiently
 title: Manage email efficiently with Microsoft Outlook and Copilot Chat
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 16
-  last.refresh.date: null
-  modality: module
-  products:
-    - microsoft-365-copilot
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "AI Productivity"
-    - "AI Prompting"
-    - "Communications Management"
-    - Automation
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/manage-email-efficiently/index.yml
-  uid: 2a7374f4-c401-41a9-803f-4d8fab6a9f31
   title: Manage Email Efficiently With Microsoft Outlook And Copilot Chat
   description: In this module, you’ll explore how to work more productively with Microsoft Outlook and Copilot Chat.
   ms.date: 09/24/2025

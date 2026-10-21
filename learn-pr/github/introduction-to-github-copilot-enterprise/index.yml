@@ -2,30 +2,6 @@
 uid: learn.github.intro-github-copilot-enterprise
 title: Introduction to GitHub Copilot Enterprise
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 17
-  last.refresh.date: null
-  modality: module
-  products:
-    - github-copilot
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - administrator
-    - devops-engineer
-  skills:
-    - "AI-Augmented Software Development"
-    - "Generative AI"
-    - "AI Productivity"
-    - "Collaboration Tools"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/introduction-to-github-copilot-enterprise/index.yml
-  uid: cfd12d0d-f42d-4d9b-b7cb-d7a3fb8e8d54
   title: Introduction to GitHub Copilot Enterprise
   description: GitHub Copilot Enterprise is designed as an intelligent companion for developers, making the vast repository of your organization's institutional knowledge readily accessible. This cutting-edge tool empowers your team to query both public and private codebases directly, facilitating a smoother onboarding process for new codebases, fostering consistency across engineering teams, and ensuring universal access to established standards and previously completed work.
   author: a-a-ron

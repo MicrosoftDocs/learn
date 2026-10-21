@@ -1,35 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.turn-insight-into-action-combine-sap-other-data
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 30
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - power-platform
-    - power-bi
-    - power-apps
-    - power-automate
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - data-analyst
-    - solution-architect
-  skills:
-    - "Data Engineering"
-    - "Data Analytics"
-    - "Data Visualization"
-    - "Machine Learning"
-    - "Low-Code Development"
-    - "Business Insights"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/turn-insight-into-action-combine-sap-other-data/index.yml
-  uid: 00425135-a870-447e-8c5b-3f37157b4fa6
   title: Turn insight into action by combining SAP and other data
   description: "Explore Microsoft solutions and products that can help you address analytics needs that include both SAP and other data. You’ll learn about using the Azure Synapse Analytics platform to combine data from multiple sources and examine how Power Platform is used to display and analyze business data to turn insights into action."
   ms.date: 12/23/2024

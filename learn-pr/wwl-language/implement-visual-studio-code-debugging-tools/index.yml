@@ -1,23 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-visual-studio-code-debugging-tools
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 81
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/implement-visual-studio-code-debugging-tools/index.yml
-  uid: 494ea9e3-7742-49a1-af71-c5fa3194b8db
   title: Implement the Visual Studio Code debugging tools for C#
   description: "This module explores the tools and processes used to debug C# console applications in Visual Studio Code. Hands-on activities provide experience using breakpoints, conditional breakpoints, and the debugging resources in the RUN AND DEBUG view."
   ms.date: 12/15/2025

@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.establish-ai-cost-management-practices
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 33
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - ai-engineer
-    - technology-manager
-  skills:
-    - "Cloud Administration"
-    - "Large Language Model Operations (LLMOps)"
-    - "API Management"
-    - "Data Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/establish-ai-cost-management-practices/index.yml
-  uid: 2cc54225-72e1-4354-876a-4a62026e7d52
   ms.author: socuff
   author: Orin-Thomas
   ms.date: 10/03/2025

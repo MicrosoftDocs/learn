@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.manage-active-directory
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 64
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-    - entra
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - storage-admin
-    - systems-administrator
-    - security-engineer
-  skills:
-    - "Identity and Access Management (IAM)"
-    - Storage
-    - "Cloud Administration"
-    - "Data Security"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/managing-azure-netapp-files-manage-active-directory/index.yml
-  uid: ee8261ce-e77b-4693-9550-f773100106bc
   title: Manage Active Directory for Azure NetApp Files
   description: Learn how to create and manage Active Directory connections for Azure NetApp Files. Also, learn how to modify Active Directory connections and configure AD DS LDAP over TLS for Azure NetApp Files. Finally, you learn to join a Linux VM to a Microsoft Entra Domain to enable users to sign into to VMs with one set of credentials.
   ms.date: 05/11/2026

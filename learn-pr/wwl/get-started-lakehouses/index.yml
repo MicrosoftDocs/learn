@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-lakehouses
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 58
-  last.refresh.date: null
-  modality: module
-  products:
-    - fabric
-    - power-bi
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-engineer
-    - data-analyst
-  skills:
-    - "Data Engineering"
-    - Storage
-    - SQL
-    - "Data Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/get-started-lakehouses/index.yml
-  uid: 31da5042-1cc4-4d5d-8b17-10a729ef61ce
   title: Get started with lakehouses in Microsoft Fabric
   description: "Lakehouses in Microsoft Fabric combine data lake flexibility with data warehouse analytics. Learn how to create, load, and query a lakehouse on a single platform."
   ms.date: 9/17/2026

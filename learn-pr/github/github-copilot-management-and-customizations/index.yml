@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.github.github-copilot-management-and-customizations
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 30
-  last.refresh.date: null
-  modality: module
-  products:
-    - github-copilot
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - technology-manager
-  skills:
-    - "AI Governance"
-    - "AI Security (Model-Level)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/github-copilot-management-and-customizations/index.yml
-  uid: 799c683a-19fc-4979-8a84-da79b7be871e
   title: Management and Customization Considerations with GitHub Copilot
   description: Management and customization control are a vital part of using an AI pair programming tool. With a better understanding of the GitHub Copilot plans and their associated features, you can select the right fit for your organization's needs.
   ms.date: 10/18/2024

@@ -1,27 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.administer-active-directory-domain-services
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - "Infrastructure Management"
-    - "Identity and Access Management (IAM)"
-    - Cybersecurity
-    - "Zero Trust Security"
-    - Virtualization
-    - "IT Networking"
-  solution.area: null
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/administer-active-directory-domain-services/index.yml
-  uid: 323c76bb-9d35-40b8-869d-1f866281049d
   title: Administer Active Directory Domain Services AZ-1008
   description: This learning path helps prepare you for the APL-1008 Administer Active Directory Domain Services modern credential. You'll learn how to create, deploy, and maintain an Active Directory Domain Services environment. (AZ-1008)
   ms.date: 01/23/2026

@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.introduction-to-azure-virtual-machines
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 67
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - solution-architect
-  skills:
-    - "Cloud Administration"
-    - "Cloud Infrastructure"
-    - "IT Networking"
-    - Storage
-    - Automation
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-virtual-machines/index.yml
-  uid: 1c0f82cf-dc5d-4040-8442-cf76ebfea85a
   title: Introduction to Azure virtual machines
   description: Learn about the decisions you make before creating a virtual machine, the options to create and manage the VM, and the extensions and services you use to manage your VM.
   ms.date: 05/19/2023

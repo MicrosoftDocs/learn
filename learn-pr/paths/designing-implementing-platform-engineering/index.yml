@@ -1,36 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.designing-implementing-platform-engineering
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - platform-engineer
-    - solution-architect
-  skills:
-    - "Cloud Computing"
-    - "Cloud Infrastructure"
-    - "Platform Engineering"
-    - "Security Architecture Design"
-    - "Solution Architecture"
-    - Automation
-    - DevOps
-    - Cybersecurity
-    - "Identity and Access Management (IAM)"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "IT Strategy"
-    - "Organizational Effectiveness"
-    - "Data Visualization"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/designing-implementing-platform-engineering/index.yml
-  uid: 30db7b33-ea71-4451-88ed-70b8b88f0388
   title: Design and Implement Platform Engineering
   description: This learning path provides a comprehensive guide to Design and Implement Platform Engineering within modern enterprises. It covers the foundational principles, strategic alignment with business goals, and the practical aspects of building scalable, secure, and future-proof platforms. By following this path, learners will gain the knowledge and skills needed to enhance developer productivity, ensure operational excellence, and drive continuous innovation.
   ms.date: 01/13/2025

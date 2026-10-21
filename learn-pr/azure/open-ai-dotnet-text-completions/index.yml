@@ -1,27 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.open-ai-dotnet-text-completions
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-openai
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - ai-engineer
-  skills:
-    - "Application Development"
-    - "Generative AI"
-    - "Prompt Engineering"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/open-ai-dotnet-text-completions/index.yml
-  uid: f9194a6d-2463-487f-a51b-12b7d64f6689
   title: Generate Text and Conversations with .NET and Azure OpenAI Completions
   description: Learn how to use the .NET SDK with the Azure OpenAI service to have your applications carry on conversations with users in natural language.
   author: codemillmatt

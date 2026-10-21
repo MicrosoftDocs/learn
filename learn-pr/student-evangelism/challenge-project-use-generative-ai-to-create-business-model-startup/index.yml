@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.challenge-project-use-generative-ai-to-create-business-model-startup
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 50
-  last.refresh.date: null
-  modality: module
-  products:
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - startup-founder
-    - business-owner
-    - business-leader
-    - student
-  skills:
-    - "Prompt Engineering"
-    - "Generative AI"
-    - "Business Insights"
-    - "Customer Relationship Management (CRM)"
-    - "AI Strategy"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/challenge-project-use-generative-ai-to-create-business-model-startup/index.yml
-  uid: 76539350-22cd-4190-ab4c-dd49cb9c0d3f
   title: Challenge Project — Create a Business Model for Your Startup Using Microsoft Copilot.
   description: Challenge Project - Use Microsoft Copilot to Create a Business Model for your Startup or business.
   author: juliamuiruri4

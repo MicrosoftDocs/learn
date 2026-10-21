@@ -2,26 +2,6 @@
 uid: learn.dpu.voice-access-fluid-dictation
 title: Boost productivity with Voice Access and Fluid Dictation on Copilot+ PCs
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 30
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - business-user
-  skills:
-    - "AI Productivity"
-    - "Digital Accessibility"
-    - "AI Workforce Applications"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/voice-access-fluid-dictation/index.yml
-  uid: 802b0dd7-d45c-47a8-a064-d867da064523
   title: Boost Productivity With Voice Access And Fluid Dictation On Copilot+ PCs
   description: 'In this module, you learn how Voice Access and Fluid Dictation on Copilot+ PCs can help you boost productivity by navigating Windows and interacting with applications using spoken commands, and creating and editing content using natural speech.'
   ms.date: 09/29/2026

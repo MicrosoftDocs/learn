@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.cloud-storage.case-study-distributed-file-systems
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 67
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - data-engineer
-    - solution-architect
-  skills:
-    - Storage
-    - "Data Engineering"
-    - "Application Architecture"
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-case-study-distributed-file-systems/index.yml
-  uid: f1a99a99-a1b7-4885-a748-20f4416b35ca
   title: 'Case studies: Distributed file systems'
   description: Carnegie Mellon University's Cloud Developer course. Discover how distributed file systems work, then learn about Hadoop and Ceph.
   brand: azure

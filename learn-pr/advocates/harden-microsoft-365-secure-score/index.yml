@@ -2,34 +2,6 @@
 uid: learn.devrel.harden-microsoft-365-secure-score
 title: Harden a Microsoft 365 tenant with Microsoft Secure Score
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 212
-  last.refresh.date: null
-  modality: module
-  products:
-    - m365
-    - entra
-    - office-teams
-    - microsoft-defender
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - security-engineer
-    - identity-access-admin
-  skills:
-    - "Identity and Access Management (IAM)"
-    - "Security Operations Management"
-    - "Security Automation"
-    - "Zero Trust Security"
-    - "Cloud Administration"
-    - "Collaboration Tools"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/harden-microsoft-365-secure-score/index.yml
-  uid: 321d66a7-68be-4435-b76e-bfd3b383c287
   title: Harden a Microsoft 365 Tenant with Microsoft Secure Score
   description: Implement commonly flagged Microsoft Secure Score recommendations by using staged identity, application, privilege, recovery, and meeting controls.
   ms.date: 09/01/2026

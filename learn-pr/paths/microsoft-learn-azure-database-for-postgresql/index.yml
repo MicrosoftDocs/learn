@@ -1,36 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.microsoft-learn-azure-database-for-postgresql
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-  skills:
-    - "Data Administration"
-    - Databases
-    - "Cloud Administration"
-    - SQL
-    - "Data Security"
-    - "Identity and Access Management (IAM)"
-    - "Database Design"
-    - "Network Connectivity"
-    - Cybersecurity
-    - "Database Development"
-    - "Application Development"
-    - "Data Management"
-    - "Data Engineering"
-    - "Data Migration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/microsoft-learn-azure-database-for-postgresql/index.yml
-  uid: 1fa38883-9600-40d7-bc0c-5f1cb7f6713a
   title: 'Configure and migrate to Azure Database for PostgreSQL DP-3021'
   description: Azure Database for PostgreSQL is a Platform as a Service database service in the Microsoft cloud. It bases itself on the PostgreSQL open-source relational database and includes built-in high availability, automatic backup and restore, as well as comprehensive security features. The pay-as-you-go pricing model provides predictable performance and near-instant scaling. In this learning path, you're introduced to the main features of PostgreSQL and how they work in Azure Database for PostgreSQL. You learn about the different Azure Database for PostgreSQL implementation options, and how to configure a server for your needs. (DP-3021)
   ms.date: 05/11/2024

@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-manage-performance-health
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - it-professional
-  skills:
-    - "Cloud Administration"
-    - "Cloud Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/monitor-manage-performance-health/index.yml
-  uid: 41e969db-bb3f-42f8-a8e4-dda84eae2351
   title: Monitor and manage performance and health
   description: "Monitor and manage performance and health"
   ms.date: 08/13/2024

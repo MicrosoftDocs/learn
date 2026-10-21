@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.philanthropies.apply-responsible-ai-principles
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 39
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - k-12-educator
-    - higher-ed-educator
-  skills:
-    - "Responsible AI"
-    - "AI Governance"
-    - "AI Safety"
-    - "Digital Accessibility"
-    - "Governance, Risk Management, and Compliance (GRC)"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/apply-responsible-ai-principles/index.yml
-  uid: c7fe4ea8-c18d-4f89-8568-9bb3ce2d2de1
   title: Apply responsible AI principles in learning environments
   description: Discover Microsoft's commitment to ethical AI. Learn about the principles of responsible AI - fairness, reliability & safety, privacy & security, transparency, inclusiveness, and accountability specifically for a learning environment. Principles that are designed to guide and shape the future of AI development and usage.
   author: yoosunee

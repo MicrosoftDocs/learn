@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.review-common-information-model-windows-management-instrumentation
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 29
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - Automation
-    - "Network Connectivity"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/review-common-information-model-windows-management-instrumentation/index.yml
-  uid: f6efa18d-caed-4c1b-8e21-f4487436253b
   title: Review CIM and WMI
   description: "This module covers CIM and WMI technologies to connect to a common information repository that contains management information that you can query and manipulate. The repository contains all kinds of information about a computer system or device, including hardware, software, hardware drivers, components, roles, services, user settings, and just about every configurable item and the current state of that item. An understanding of the framework and syntax of CIM and WMI will help you know and control almost every aspect of an operating system environment."
   ms.date: 05/12/2026

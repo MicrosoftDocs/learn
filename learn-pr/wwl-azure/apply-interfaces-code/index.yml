@@ -1,24 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.apply-interfaces-code
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-  skills:
-    - "Application Development"
-    - "Application Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/apply-interfaces-code/index.yml
-  uid: f7145623-292f-4f23-a860-b61dec680fcd
   title: Apply Interfaces in Code
   description: "Discover how default implementations in interfaces enable you to add new methods directly into an interface and provide a default implementation."
   ms.date: 04/15/2025

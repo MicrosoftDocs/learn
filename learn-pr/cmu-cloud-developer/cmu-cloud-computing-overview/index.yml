@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 80
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - solution-architect
-  skills:
-    - "Cloud Computing"
-    - "Cloud Infrastructure"
-    - Virtualization
-    - "Application Architecture"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-cloud-computing-overview/index.yml
-  uid: 04054081-3f40-448a-b4cb-38c037f2d1eb
   title: Foundations of cloud computing for developers
   description: Carnegie Mellon University's Cloud Developer course. Discover what the cloud is, the history of cloud computing, what types of clouds are available, and how you might use the cloud.
   ms.date: 03/09/2022

@@ -1,42 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-ai-analytics-capabilities-azure-cosmos-db
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure-openai
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "Semantic Search"
-    - "Vector Databases"
-    - "Embedding Models"
-    - "Database Development"
-    - "Application Development"
-    - "Data Engineering"
-    - "Retrieval-Augmented Generation (RAG)"
-    - Databases
-    - "AI Model Evaluation & Testing"
-    - "AI Infrastructure"
-    - "Knowledge Grounding for AI"
-    - "Data Security"
-    - "Agentic AI"
-    - "Agent Development"
-    - "Responsible AI"
-    - "Data Analytics"
-    - "Data Warehousing"
-    - SQL
-    - "Infrastructure Management"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-ai-analytics-capabilities-azure-cosmos-db/index.yml
-  uid: 4c1fd78e-e651-4008-a90e-04ebd37d0a69
   title: Implement AI and Analytics Capabilities in Azure Cosmos DB
   description: "Build AI and analytics capabilities on Azure Cosmos DB for NoSQL: full-text, vector, and hybrid search, retrieval tuning, retrieval-augmented generation, durable agent memory, and no-ETL operational analytics with Microsoft Fabric mirroring."
   ms.date: 10/05/2026

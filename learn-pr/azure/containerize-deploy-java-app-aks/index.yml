@@ -1,31 +1,6 @@
 ### YamlMime:Module
 uid: learn.containerize-deploy-java-app-aks
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 40
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - devops-engineer
-  skills:
-    - DevOps
-    - "Application Development"
-    - "Cloud Infrastructure"
-    - "Cloud Administration"
-    - Virtualization
-    - "Application Security"
-    - "Identity and Access Management (IAM)"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/containerize-deploy-java-app-aks/index.yml
-  uid: 1bc7c605-ae82-4c31-a89c-c13bf4af3583
   moduleType: standard
   title: Containerize and Deploy a Java App to Azure
   description: Containerize a Java app, push the container image to Azure Container Registry, and then deploy to Azure Kubernetes Service.

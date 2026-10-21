@@ -2,31 +2,6 @@
 uid: learn.dpu.windows-at-work-finance
 title: 'Windows at work: Transforming finance teams with Windows 11 Pro'
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 19
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-    - microsoft-365-copilot
-    - m365
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - finance
-    - data-analyst
-    - chief-financial-officer
-  skills:
-    - "Business Insights"
-    - "Data Analytics"
-    - "Generative AI"
-    - "AI Productivity"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/windows-at-work-finance/index.yml
-  uid: 80e50a41-d5a1-4ffa-9449-f84f28c9e59c
   title: 'Windows At Work: Transforming Finance Teams With Windows 11 Pro'
   description: This module teaches learners how to use Copilot and Windows 11 features to analyze business data efficiently. It covers generating insights, creating visualizations, and preparing stakeholder-ready presentations using Excel and PowerPoint.
   ms.date: 10/22/2025

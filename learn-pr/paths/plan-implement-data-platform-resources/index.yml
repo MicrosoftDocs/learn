@@ -1,33 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.plan-implement-data-platform-resources
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-    - data-engineer
-    - developer
-    - solution-architect
-  skills:
-    - Databases
-    - "Cloud Infrastructure"
-    - "Cloud Administration"
-    - "Data Administration"
-    - "Data Migration"
-    - SQL
-    - Automation
-    - "Application Development"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/plan-implement-data-platform-resources/index.yml
-  uid: fb06bd2f-1820-4297-9ab0-bb2d754a1137
   title: Plan and implement data platform resources
   description: Plan and implement data platform resources
   ms.date: 8/4/2026

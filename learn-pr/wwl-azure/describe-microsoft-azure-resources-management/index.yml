@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-microsoft-azure-resources-management
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 50
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - it-professional
-  skills:
-    - "Cloud Computing"
-    - "Cloud Infrastructure"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-microsoft-azure-resources-management/index.yml
-  uid: a2e457b7-5259-48bd-a233-5d0abab9c381
   adobe-target: true
   prefetch-feature-rollout: true
   title: Describe Microsoft Azure Resources Management

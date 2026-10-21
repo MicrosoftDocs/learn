@@ -2,30 +2,6 @@
 uid: learn.dpu.surface-portal-learning-path
 title: Surface Management and Support Portals learning path
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - intune
-    - m365
-    - surface
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - identity-access-admin
-    - systems-administrator
-  skills:
-    - "Device Management"
-    - "Identity and Access Management (IAM)"
-    - "Cloud Administration"
-    - Cybersecurity
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/surface-portal-learning-path/index.yml
-  uid: 9e10cb80-5d83-4c9b-b10a-dbec77c0549b
   title: Surface Management And Support Portals Learning Path
   description: "This learning path helps IT administrators, service providers, and partners learn how to manage and support Microsoft Surface devices using the Surface Management Portal and Surface Support Portal. Learners compare both portals, understand how Intune enrollment and tenant context affect access, and practice selecting the correct portal for common management and support tasks.\nThrough task-based modules and decision scenarios, learners verify prerequisites, assign required roles, initiate service or support actions, and track requests using the correct portal while following tenant-scoped guardrails and escalation boundaries."
   ms.date: 04/29/2026

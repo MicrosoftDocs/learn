@@ -1,36 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.endpoint-manager-fundamentals
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - intune
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - "Device Management"
-    - Cybersecurity
-    - "Cloud Computing"
-    - "Data Security"
-    - "Cloud Administration"
-    - "Identity and Access Management (IAM)"
-    - "Infrastructure Management"
-    - "IT Networking"
-    - "Application Security"
-    - "Data Management"
-    - "Zero Trust Security"
-    - "Threat Management"
-    - "Governance, Risk Management, and Compliance (GRC)"
-    - "Data Analytics"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/endpoint-manager-fundamentals/index.yml
-  uid: 1badcfad-7f90-4bb2-9ad4-34459c0697fd
   title: Microsoft Intune fundamentals
   description: This learning path will help you understand the fundamentals concepts involved in managing your endpoint environment.
   brand: azure

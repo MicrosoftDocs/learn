@@ -1,29 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.reactors.machine-learning-three-basic-pillars
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - data-analyst
-    - developer
-  skills:
-    - "Data Management"
-    - "Data Analytics"
-    - "Python (Programming Language)"
-    - "Machine Learning"
-    - "Data Science"
-    - "Data Visualization"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/machine-learning-three-basic-pillars/index.yml
-  uid: b05a6d15-b0d8-40d5-bcc6-f683b823fb0c
   title: 'Machine learning: Regression, classification, and clustering'
   description: Learn how to TBD.
   ms.date: 05/15/2020

@@ -1,26 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.monitor-azure-arc-enabled-servers
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 36
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-  skills:
-    - "Cloud Administration"
-    - "Infrastructure Management"
-    - "Data Analytics"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/monitor-azure-arc-enabled-servers/index.yml
-  uid: 291b51dd-add5-4691-ac14-ecf62b9d2335
   title: Monitor your hybrid and multicloud machines through Azure Arc-enabled servers
   description: Understand the monitoring capabilities of Azure Arc-enabled servers. Learn about the benefits of and how to onboard Azure Arc-enabled servers to Azure Logs and Metrics, VM Insights, and Azure Monitor Alerts.
   ms.date: 08/17/2023

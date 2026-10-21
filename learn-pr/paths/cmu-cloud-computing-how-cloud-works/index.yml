@@ -1,32 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.cmu-cloud-computing.how-cloud-works
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - developer
-    - it-professional
-    - systems-administrator
-  skills:
-    - Virtualization
-    - "Cloud Computing"
-    - "Cloud Infrastructure"
-    - "Infrastructure Management"
-    - "Application Development"
-    - "Application Architecture"
-    - "IT Networking"
-    - Storage
-    - Automation
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/cmu-cloud-computing-how-cloud-works/index.yml
-  uid: 83c46455-fdfc-4793-9857-e44335e4d9e5
   title: Virtualization - Sharing cloud resources
   description: Carnegie Mellon University's Cloud Developer course. Dive deeper into how the cloud works by understanding virtualization. How are computing power, memory, input and output, networking, and storage virtualized?
   brand: azure

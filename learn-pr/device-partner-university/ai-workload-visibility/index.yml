@@ -2,26 +2,6 @@
 uid: learn.dpu.ai-workload-visibility
 title: Gain visibility into AI workloads with Windows Task Manager
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  duration: 32
-  last.refresh.date: null
-  modality: module
-  products:
-    - windows
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - it-professional
-    - developer
-  skills:
-    - "AI Infrastructure"
-    - "Infrastructure Management"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/ai-workload-visibility/index.yml
-  uid: 7d241c2b-422e-45c0-9a30-fc0d97274933
   title: Gain Visibility Into AI Workloads With Windows Task Manager
   description: In this module, you'll explore how Windows Task Manager provides visibility into AI workloads running on supported devices. You'll learn how to monitor NPU and GPU neural engine utilization, identify AI resource usage, and use these insights to investigate performance, power efficiency, and workload behavior.
   ms.date: 09/30/2026

@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-microsoft-defender-for-endpoints-environment
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 46
-  last.refresh.date: null
-  modality: module
-  products:
-    - defender-endpoint
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-operations-analyst
-    - security-engineer
-    - administrator
-  skills:
-    - Cybersecurity
-    - "Security Operations Management"
-    - "Zero Trust Security"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/deploy-microsoft-defender-for-endpoints-environment/index.yml
-  uid: 0dc30e08-8d9e-442b-bd9c-fee3e3b730a7
   title: Deploy the Microsoft Defender for Endpoint environment
   description: "Deploy the Microsoft Defender for Endpoint environment"
   ms.date: 4/3/2025

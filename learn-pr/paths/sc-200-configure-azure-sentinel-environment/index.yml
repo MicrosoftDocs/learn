@@ -1,35 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-configure-your-azure-sentinel-environment
 metadata:
-  content.levels: 200
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - azure
-    - microsoft-defender
-    - microsoft-sentinel
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - security-operations-analyst
-  skills:
-    - "Security Operations Management"
-    - "Security Analytics"
-    - "Threat Management"
-    - "Security Automation"
-    - "Security Architecture Design"
-    - "Identity and Access Management (IAM)"
-    - "Data Management"
-    - "Data Analytics"
-    - Cybersecurity
-    - "Cloud Administration"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/sc-200-configure-azure-sentinel-environment/index.yml
-  uid: 3794e5f4-37ce-4e47-a145-268c1dcb1374
   title: 'Configure your Microsoft Sentinel environment'
   description: 'Configure your Microsoft Sentinel environment'
   ms.date: 12/04/2025

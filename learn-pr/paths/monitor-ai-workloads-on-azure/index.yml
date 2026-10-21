@@ -3,32 +3,6 @@ uid: learn.monitor-ai-workloads-on-azure
 title: Monitor AI workloads on Azure
 summary: This learning path is designed to help you build a strong foundation in monitoring and optimizing AI solutions deployed on Azure. You explore how to keep track of Azure AI services logs, assess the performance of AI applications using Azure Monitor, and learn the basics of monitoring AI models with Azure AI Foundry. By the end of this learning path, you gain the essential skills needed to ensure your AI applications are running efficiently and effectively, while understanding the tools available for comprehensive workload monitoring on Azure. 
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  last.refresh.date: null
-  modality: learning-path
-  products:
-    - microsoft-foundry
-    - azure-machine-learning
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - data-scientist
-    - ai-engineer
-    - systems-administrator
-  skills:
-    - "AI Model Evaluation & Testing"
-    - "Model Hosting & Inference"
-    - "Generative AI"
-    - "Responsible AI"
-    - "Machine Learning"
-    - "Cloud Administration"
-  solution.area: null
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/monitor-ai-workloads-on-azure/index.yml
-  uid: c9cb97be-10bc-42c0-b2c4-f71f04e5b83a
   title: Monitor AI workloads on Azure
   description: Optimize your AI operations with the "Monitor AI Workloads on Azure" learning path. Through targeted modules, you learn to monitor Azure AI services, evaluate the performance of AI applications with Azure Monitor, and explore the fundamentals of monitoring AI models with Azure AI Foundry. This path equips professionals with the skills to ensure efficient, reliable, and high-performing AI workloads on Azure's robust platform. Start mastering AI monitoring strategies today!
   ms.date: 03/20/2025

@@ -1,34 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.microsoft-defender-cloud-threat-protection
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 200
-  last.refresh.date: null
-  modality: module
-  products:
-    - defender-for-cloud
-    - azure
-    - github
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - security-operations-analyst
-    - systems-administrator
-    - devops-engineer
-  skills:
-    - Cybersecurity
-    - "Cloud Infrastructure"
-    - "Security Operations Management"
-    - DevOps
-    - "Application Security"
-    - "AI Security (Model-Level)"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/index.yml
-  uid: 4589f102-a2f8-4e47-81c8-2b15a4a77a33
   adobe-target: true
   prefetch-feature-rollout: true
   title: Configure and manage threat protection by using Microsoft Defender for Cloud

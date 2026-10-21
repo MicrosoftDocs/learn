@@ -1,29 +1,6 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-admin.cmu-disaster-recovery-backup
 metadata:
-  content.levels: 400
-  content.locale: en-us
-  duration: 61
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - systems-administrator
-    - solution-architect
-  skills:
-    - "Cloud Administration"
-    - "Cloud Infrastructure"
-    - Storage
-    - "Solution Architecture"
-    - DevOps
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-admin/cmu-disaster-recovery-backup/index.yml
-  uid: 52557e63-78d3-4be7-ab88-6c8106d30224
   title: Disaster recovery and backup
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. What do you do when something goes wrong with your resources on the cloud? How do you prepare for such an issue? Learn about disaster backup and recovery with this module.
   ms.date: 06/07/2022

@@ -1,25 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.try-azure-cosmos-db-sql-api
 metadata:
-  content.levels: 100
-  content.locale: en-us
-  duration: 32
-  last.refresh.date: null
-  modality: module
-  products: null
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - database-administrator
-  skills:
-    - Databases
-    - "Data Administration"
-    - "Cloud Administration"
-  solution.area: "Cloud & AI Platforms"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/try-azure-cosmos-db-sql-api/index.yml
-  uid: 92309179-68bf-429d-8c0b-5dc8e0680da6
   title: Try Azure Cosmos DB for NoSQL
   description: "Try Azure Cosmos DB for NoSQL"
   ms.date: 04/02/2025

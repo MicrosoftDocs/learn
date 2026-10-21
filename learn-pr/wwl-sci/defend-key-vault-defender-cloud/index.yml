@@ -1,28 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.defend-key-vault-defender-cloud
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 32
-  last.refresh.date: null
-  modality: module
-  products:
-    - defender-for-cloud
-    - azure
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - security-engineer
-    - security-operations-analyst
-  skills:
-    - "Threat Management"
-    - "Data Security"
-    - "Security Operations Management"
-  solution.area: Security
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/defend-key-vault-defender-cloud/index.yml
-  uid: 7115d5a3-f1b7-44dc-8a02-099691faa308
   title: Protect Azure Key Vault with Microsoft Defender for Cloud
   description: "Protect Azure Key Vault with Microsoft Defender for Cloud. Use Defender Cloud Security Posture Management (CSPM) agentless secret scanning to discover exposed credentials, enable Microsoft Defender for Key Vault to detect malicious access patterns, and respond effectively to Key Vault security alerts."
   ms.date: 04/13/2026

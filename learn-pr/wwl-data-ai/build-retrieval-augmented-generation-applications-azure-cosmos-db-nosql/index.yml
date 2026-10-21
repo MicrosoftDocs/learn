@@ -1,30 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql
 metadata:
-  content.levels: 300
-  content.locale: en-us
-  duration: 100
-  last.refresh.date: null
-  modality: module
-  products:
-    - azure-openai
-  publish.locations: null
-  release.date: null
-  retire.date: null
-  reusable: null
-  roles:
-    - ai-engineer
-    - developer
-  skills:
-    - "Retrieval-Augmented Generation (RAG)"
-    - "Knowledge Grounding for AI"
-    - "Semantic Search"
-    - "Application Development"
-    - "Data Security"
-    - "Agentic AI"
-  solution.area: "AI Business Solutions"
-  source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql/index.yml
-  uid: 60606e41-741e-4d92-9d81-4dea092a9d01
   title: Build RAG Applications with Azure Cosmos DB for NoSQL
   description: "Work through the retrieval-augmented generation loop on Azure Cosmos DB for NoSQL: prepare content for retrieval, ground and cite a generated answer, defend the boundary between evidence and instruction, and orchestrate the pipeline for multi-turn and multi-step questions."
   ms.date: 10/04/2026
