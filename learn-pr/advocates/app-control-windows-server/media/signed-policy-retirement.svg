@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="800" viewBox="0 0 960 800" role="img" aria-labelledby="title description" style="background-color: white">
+  <title id="title">Retire a signed base policy without bypassing its protection</title>
+  <desc id="description">Read the four numbered boxes from top to bottom. Prepare a retirement update with the same policy ID, a nondecreasing version, and option 6. Sign it with an authorized update signer and verify deployment. Restart the server to deactivate the signed base policy's UEFI protection. Then prevent redeployment, remove only the selected policy, and verify remaining protections and workload health.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 9 5 L 0 10 Z" fill="#42576b"/>
+    </marker>
+  </defs>
+  <rect id="background" width="960" height="800" fill="#ffffff"/>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#172b3a">
+    <text x="480" y="43" text-anchor="middle" font-size="27" font-weight="600">Retire a signed base policy in the correct order</text>
+    <text x="480" y="77" text-anchor="middle" font-size="18">Normal retirement is different from emergency boot recovery.</text>
+    <g data-node="prepare">
+      <rect id="prepare" class="node" x="145" y="112" width="670" height="125" rx="12" fill="#edf5fc" stroke="#426b8e" stroke-width="2"/>
+      <text x="173" y="151" font-size="22" font-weight="600">1. Prepare the retirement update</text>
+      <text x="173" y="185" font-size="19">Keep the policy ID and authorized update signers.</text>
+      <text x="173" y="217" font-size="19">Use a nondecreasing version; add option 6.</text>
+    </g>
+    <g data-node="deploy">
+      <rect id="deploy" class="node" x="145" y="280" width="670" height="125" rx="12" fill="#edf5fc" stroke="#426b8e" stroke-width="2"/>
+      <text x="173" y="319" font-size="22" font-weight="600">2. Sign and deploy the replacement</text>
+      <text x="173" y="352" font-size="19">Use an update signer authorized by the current policy.</text>
+      <text x="173" y="384" font-size="19">Verify that the replacement was accepted.</text>
+    </g>
+    <g data-node="restart">
+      <rect id="restart" class="node" x="145" y="458" width="670" height="100" rx="12" fill="#fff5e8" stroke="#9b6d32" stroke-width="2"/>
+      <text x="173" y="497" font-size="22" font-weight="600">3. Restart under change control</text>
+      <text x="173" y="533" font-size="19">Deactivate the signed base policy's UEFI protection.</text>
+    </g>
+    <g data-node="remove">
+      <rect id="remove" class="node" x="145" y="610" width="670" height="125" rx="12" fill="#f1f8ee" stroke="#52754a" stroke-width="2"/>
+      <text x="173" y="649" font-size="22" font-weight="600">4. Remove only the selected policy</text>
+      <text x="173" y="683" font-size="19">Prevent redeployment before targeted removal.</text>
+      <text x="173" y="715" font-size="19">Verify remaining policies, boot and workload health.</text>
+    </g>
+    <g fill="none" stroke="#42576b" stroke-width="3" marker-end="url(#arrow)">
+      <path class="connector" d="M 480 243 L 480 273"/>
+      <path class="connector" d="M 480 411 L 480 451"/>
+      <path class="connector" d="M 480 564 L 480 603"/>
+    </g>
+    <text x="480" y="775" text-anchor="middle" font-size="18">Never delete a protected signed base or roll it back to a lower version.</text>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.app-control-windows-server.resolve-policy-failures
+title: Resolve policy failures
+metadata:
+  title: Resolve Policy Failures
+  description: Diagnose policy failures, retire protected policies, recover startup, and restore server workloads.
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/11-resolve-policy-failures.md)]

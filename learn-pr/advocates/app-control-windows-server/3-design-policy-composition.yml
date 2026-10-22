@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.app-control-windows-server.design-policy-composition
+title: Design policy composition
+metadata:
+  title: Design Policy Composition
+  description: Design base policies, supplemental policies, file rules, trust sources, and policy options for Windows Server workloads.
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-design-policy-composition.md)]

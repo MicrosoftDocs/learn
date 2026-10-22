@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="740" viewBox="0 0 1000 740" role="img" aria-labelledby="title description" style="background-color: white">
+  <title id="title">Reason about effective App Control authorization</title>
+  <desc id="description">Read steps 1 to 4 from top to bottom. Identify applicable enforced policies, then check for an explicit deny. A matching deny leads to the blocked outcome on the right. Otherwise, each base policy and its authorized linked supplements form an allow union. Every enforced base family must pass. Audit-only policies do not cancel an enforced block.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 9 5 L 0 10 Z" fill="#42576b"/>
+    </marker>
+  </defs>
+  <rect id="background" width="1000" height="740" fill="#ffffff"/>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#172b3a">
+    <text x="500" y="42" text-anchor="middle" font-size="28" font-weight="600">Reason about effective authorization</text>
+    <text x="500" y="76" text-anchor="middle" font-size="18">A decision model for explicit rules in multiple-policy deployments</text>
+    <g data-node="identify">
+      <rect id="identify" class="node" x="200" y="106" width="560" height="85" rx="12" fill="#edf5fc" stroke="#426b8e" stroke-width="2"/>
+      <text x="226" y="140" font-size="22" font-weight="600">1. Identify enforced policies</text>
+      <text x="226" y="172" font-size="18">Include every applicable base and its linked supplements.</text>
+    </g>
+    <g data-node="deny">
+      <rect id="deny" class="node" x="200" y="241" width="560" height="100" rx="12" fill="#fff5e8" stroke="#9b6d32" stroke-width="2"/>
+      <text x="226" y="279" font-size="22" font-weight="600">2. Does an explicit deny match?</text>
+      <text x="226" y="316" font-size="18">An enforced deny takes precedence over an allow.</text>
+    </g>
+    <g data-node="blocked">
+      <rect id="blocked" class="node" x="820" y="251" width="155" height="80" rx="12" fill="#fcefee" stroke="#a34c48" stroke-width="2"/>
+      <text x="897" y="284" text-anchor="middle" font-size="21" font-weight="600">2a. Block</text>
+      <text x="897" y="311" text-anchor="middle" font-size="17">Stop here.</text>
+    </g>
+    <g data-node="union">
+      <rect id="union" class="node" x="155" y="411" width="650" height="110" rx="12" fill="#edf5fc" stroke="#426b8e" stroke-width="2"/>
+      <text x="181" y="448" font-size="22" font-weight="600">3. Evaluate the allow union within each family</text>
+      <text x="181" y="481" font-size="18">Family A passes: base A OR an authorized supplement to A.</text>
+      <text x="181" y="507" font-size="18">Family B passes: base B OR an authorized supplement to B.</text>
+    </g>
+    <g data-node="intersection">
+      <rect id="intersection" class="node" x="155" y="576" width="650" height="100" rx="12" fill="#f1f8ee" stroke="#52754a" stroke-width="2"/>
+      <text x="181" y="613" font-size="22" font-weight="600">4. Require the intersection of enforced families</text>
+      <text x="181" y="650" font-size="18">A AND B must pass. Otherwise, the file is blocked.</text>
+    </g>
+    <g fill="none" stroke="#42576b" stroke-width="3" marker-end="url(#arrow)">
+      <path class="connector" d="M 480 197 L 480 234"/>
+      <path class="connector" d="M 766 291 L 813 291"/>
+      <path class="connector" d="M 480 347 L 480 404"/>
+      <path class="connector" d="M 480 527 L 480 569"/>
+    </g>
+    <text x="789" y="273" text-anchor="middle" font-size="17">Yes</text>
+    <text x="501" y="382" font-size="18">No</text>
+    <text x="500" y="718" text-anchor="middle" font-size="18">An audit-only policy cannot override another policy's enforced block.</text>
+  </g>
+</svg>

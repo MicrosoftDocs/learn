@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.app-control-windows-server.protect-domain-controllers
+title: Protect domain controllers
+metadata:
+  title: Protect Domain Controllers
+  description: Protect domain controller execution paths while preserving authentication, replication, backup, and recovery.
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/9-protect-domain-controllers.md)]

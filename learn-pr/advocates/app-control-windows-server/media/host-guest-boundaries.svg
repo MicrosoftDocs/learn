@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="580" viewBox="0 0 960 580" role="img" aria-labelledby="title description" style="background-color: white">
+  <title id="title">Separate host and guest policy boundaries</title>
+  <desc id="description">Read box 1 first, then boxes 2 and 3 from left to right. The Hyper-V management operating system hosts a domain-controller virtual machine and an application virtual machine. Each operating system has its own App Control policy. Hosting arrows do not represent inheritance of policy.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 9 5 L 0 10 Z" fill="#42576b"/>
+    </marker>
+  </defs>
+  <rect id="background" width="960" height="580" fill="#ffffff"/>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#172b3a">
+    <text x="480" y="42" text-anchor="middle" font-size="28" font-weight="600">Separate host and guest policy boundaries</text>
+    <text x="480" y="76" text-anchor="middle" font-size="18">Each operating system authorizes the code that executes inside it.</text>
+    <g data-node="host">
+      <rect id="host" class="node" x="40" y="110" width="880" height="175" rx="12" fill="#edf5fc" stroke="#426b8e" stroke-width="2"/>
+      <text x="66" y="151" font-size="23" font-weight="600">1. Hyper-V management OS: host policy H</text>
+      <text x="66" y="190" font-size="20">Hyper-V services, worker processes, host agents and drivers</text>
+      <text x="66" y="230" font-size="20">Policy H does not authorize applications inside either guest.</text>
+    </g>
+    <g fill="none" stroke="#42576b" stroke-width="3" marker-end="url(#arrow)">
+      <path class="connector" d="M 250 291 L 250 373"/>
+      <path class="connector" d="M 710 291 L 710 373"/>
+    </g>
+    <text x="272" y="339" font-size="18">Hosts</text>
+    <text x="732" y="339" font-size="18">Hosts</text>
+    <g data-node="dc">
+      <rect id="dc" class="node" x="40" y="380" width="420" height="145" rx="12" fill="#f1f8ee" stroke="#52754a" stroke-width="2"/>
+      <text x="64" y="420" font-size="22" font-weight="600">2. Domain-controller VM</text>
+      <text x="64" y="459" font-size="19">AD DS, DNS and local agents</text>
+      <text x="64" y="496" font-size="19">Independent guest policy G1</text>
+    </g>
+    <g data-node="application">
+      <rect id="application" class="node" x="500" y="380" width="420" height="145" rx="12" fill="#f5f1fa" stroke="#75608c" stroke-width="2"/>
+      <text x="524" y="420" font-size="22" font-weight="600">3. Application VM</text>
+      <text x="524" y="459" font-size="19">Guest applications and services</text>
+      <text x="524" y="496" font-size="19">Independent guest policy G2</text>
+    </g>
+    <text x="480" y="561" text-anchor="middle" font-size="18">Treat a host of domain-controller VMs as identity-critical infrastructure.</text>
+  </g>
+</svg>
