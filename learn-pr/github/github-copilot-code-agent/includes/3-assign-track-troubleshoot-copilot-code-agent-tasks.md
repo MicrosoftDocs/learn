@@ -2,7 +2,7 @@ The GitHub Copilot Cloud Agent  acts as an autonomous teammate that works direct
 
 ### By the end of this unit, you will be able to:
 
-- Assign issues to Copilot using GitHub.com, GitHub Mobile, the API, or the CL.
+- Assign issues to Copilot using GitHub.com, GitHub Mobile, the API, or the CLI.
 - Monitor Copilot's progress through pull request timelines and session logs.
 - Iterate on Copilot's work by commenting on its pull requests.
 - Understand the approval rules for agent-generated pull requests.
