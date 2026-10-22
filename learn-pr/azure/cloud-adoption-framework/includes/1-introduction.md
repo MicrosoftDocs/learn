@@ -2,16 +2,17 @@ The [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overvie
 
 The cloud fundamentally changes how organizations procure and use technology resources and introduces tremendous flexibility in design choices. The Cloud Adoption Framework provides a proven and consistent methodology to help you adopt those cloud technologies.
 
-The Cloud Adoption Framework includes eight methodologies:
+The Cloud Adoption Framework includes seven core Azure adoption phases:
 
 - Strategy
 - Plan
 - Ready
-- Migrate
-- Innovate
+- Adopt
 - Govern
-- Manage
 - Secure
+- Manage
+
+The Adopt phase covers migrating, modernizing, and building workloads. This module explores those activities in the Migrate, Modernize, and Cloud-native units.
 
 In this module, you will:
 
