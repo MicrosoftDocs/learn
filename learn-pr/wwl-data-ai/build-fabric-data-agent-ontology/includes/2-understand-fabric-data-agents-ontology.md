@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b2145419-fb44-47d8-ad19-b74005bb4757]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A Fabric data agent provides a conversational way to ask questions about connected data. For Lamna Healthcare, an ontology adds the business context needed to interpret questions about departments, rooms, patients, and equipment.
 
 ## Separate context from query execution
@@ -53,3 +64,5 @@ Context changes also take time to reach the agent. The agent retrieves the lates
 When a question doesn't reflect a recent change, inspect the context available to the agent before you add more instructions. Refresh that context and retest. This separates stale metadata from a problem with the definition, source data, or generated query.
 
 For the access requirements, see [Fabric data agent sharing and permission management](/fabric/data-science/data-agent-sharing#sharing-permission-models-and-required-source-access).
+
+::: zone-end

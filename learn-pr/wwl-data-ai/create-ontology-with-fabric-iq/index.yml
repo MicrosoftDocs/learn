@@ -3,7 +3,7 @@ uid: learn.wwl.create-ontology-with-fabric-iq
 metadata:
   title: Create an Ontology with Fabric IQ
   description: Learn how to create ontologies in Fabric IQ by building manually or generating from Power BI semantic models, then bind ontology definitions to OneLake data sources including lakehouse tables and eventhouse streams.
-  ms.date: 09/08/2026
+  ms.date: 10/22/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

@@ -2,9 +2,10 @@
 uid: learn.wwl.create-ontology-with-fabric-iq.generate-ontology-from-semantic-model
 title: Generate an ontology from a Power BI semantic model
 metadata:
+  zone_pivot_groups: video-or-text
   title: Generate an Ontology from a Power BI Semantic Model
   description: "Learn how to generate an ontology automatically from a Power BI semantic model"
-  ms.date: 09/08/2026
+  ms.date: 10/22/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

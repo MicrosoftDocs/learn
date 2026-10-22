@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b65c7fa0-a5db-478d-a393-26bed03d1e6e]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Imagine you work at Lamna Healthcare, a fictitious medical center that manages operations across hospitals, departments, and rooms.
 
 Your data lives in multiple places—hospital, department, room, and patient records exist as lakehouse tables, while continuous vital signs monitoring from intensive care unit (ICU) equipment streams into an eventhouse. To enable natural language queries and exploration across all of it, you need to create an ontology that unifies these data sources with consistent business vocabulary.
@@ -12,3 +20,8 @@ In this module, you build the complete Lamna Healthcare ontology by choosing you
 
 > [!IMPORTANT]
 > Fabric IQ is currently in [preview](/fabric/fundamentals/preview).
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

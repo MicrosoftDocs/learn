@@ -2,9 +2,10 @@
 uid: learn.wwl.build-fabric-data-agent-ontology.summary
 title: Summary
 metadata:
+  zone_pivot_groups: video-or-text
   title: Summary
   description: Review ontology context, source-native queries, validation, and permission-aware sharing for a Fabric data agent.
-  ms.date: 10/20/2026
+  ms.date: 10/22/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

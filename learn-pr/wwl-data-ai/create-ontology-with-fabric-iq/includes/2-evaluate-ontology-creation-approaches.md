@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4ab1c129-a242-471b-b2d0-588d82f28111]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Creating an ontology means defining business concepts (entity types), their characteristics (properties), and how they connect (relationships).
 
 Fabric IQ offers two paths for creating ontologies. You can generate initial structure from an existing Power BI semantic model, automatically creating entity types and relationships that you then refine. Or you can build directly from OneLake data, manually defining each business concept with full control over naming. Both paths produce the same result—a complete ontology bound to your data sources.
@@ -29,3 +40,5 @@ This path requires more upfront design work than automatically generating from a
 Choose this approach when you don't have a semantic model, when existing models are optimized for reporting rather than business vocabulary, or when you prefer designing ontology structure from scratch. You need clear understanding of your business domain and how entities relate.
 
 The next unit teaches ontology concepts through manual creation—you'll build entity types with properties and keys, then define relationship types. This hands-on approach reveals how ontology structure works. After that, you'll see how semantic model generation automates much of this process. Both approaches lead to the same destination: a complete ontology ready to connect to your data sources.
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7b2e2946-fbf0-4632-a986-ae86eefaba85]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 An answer that sounds plausible isn't sufficient evidence that a data agent retrieves the right data. For the Lamna Healthcare scenario, you validate source selection, query logic, and expected results before you publish the agent.
 
 ## Establish expected answers
@@ -77,3 +88,5 @@ For ontology-backed queries, recipients also need access to the ontology item an
 Check access using the intended recipient's permissions, rather than treating a successful author test as proof that every colleague has access. Grant only the source permissions required for the task. For example, queries through a data agent require Read permission on a Power BI semantic model, not Build permission.
 
 For versioning and source-specific access requirements, see [Fabric data agent sharing and permission management](/fabric/data-science/data-agent-sharing).
+
+::: zone-end

@@ -2,9 +2,10 @@
 uid: learn.wwl.create-ontology-with-fabric-iq.preview-ontology
 title: Preview the ontology
 metadata:
+  zone_pivot_groups: video-or-text
   title: Preview the ontology
   description: "Verify ontology by viewing entity instances, relationship graphs, and property charts"
-  ms.date: 09/08/2026
+  ms.date: 10/22/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
