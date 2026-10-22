@@ -3,7 +3,7 @@ uid: learn.wwl.build-fabric-data-agent-ontology
 metadata:
   title: Build a Fabric data agent with an ontology
   description: Learn how to add ontology context to a Fabric data agent, configure eligible underlying sources, validate SQL, KQL, or DAX queries, and publish and share the agent.
-  ms.date: 10/20/2026
+  ms.date: 10/22/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

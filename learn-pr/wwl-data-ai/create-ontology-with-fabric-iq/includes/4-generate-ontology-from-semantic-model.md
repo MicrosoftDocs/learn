@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fe3678b7-3d0a-4e2b-9c6a-2c4e6d4ed9c9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Imagine you're working at Lamna Healthcare and you already have a Power BI semantic model representing hospitals, departments, rooms, and patients—complete with relationships showing how they connect. Building an ontology manually would mean recreating all that structure from scratch. Instead, you can generate an ontology directly from the existing semantic model, getting entity types, properties, and relationship structure in minutes.
 
 Fabric reads your semantic model and translates it into ontology components. Tables become entity types, columns become properties with their data types preserved, and model relationships define how entity types connect. This automation doesn't just save time—it ensures your ontology mirrors the analytical model your teams already trust for reporting.
@@ -35,3 +46,5 @@ After generation, complete these tasks to finalize your ontology:
 - **Verify and configure relationship types** — Relationship bindings are created based on the semantic model structure. Depending on how the model defines relationships, some bindings are configured automatically while others require manual configuration to make them queryable.
 
 - **Add time series bindings for streaming data** — Static entity bindings from the lakehouse are configured automatically. For entity types that need real-time streaming data, add time series bindings to connect eventhouse data sources.
+
+::: zone-end

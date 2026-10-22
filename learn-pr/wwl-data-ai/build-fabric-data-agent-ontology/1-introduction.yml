@@ -2,9 +2,10 @@
 uid: learn.wwl.build-fabric-data-agent-ontology.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: Introduction to using ontology as business context for source-native queries in a Fabric data agent.
-  ms.date: 10/20/2026
+  ms.date: 10/22/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

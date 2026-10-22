@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d4826300-f979-4d15-9fcc-b37e4f5f98d6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Building an ontology starts with defining its fundamental building blocks. This unit focuses on ontology structure. You learn to create entity types representing business concepts and relationship types showing how they connect. Creating an ontology manually involves three steps:
 
 1. Define entity types—name each business concept, add properties, and set a key
@@ -101,3 +112,5 @@ Relationship direction matters for how people navigate and query the ontology. W
 You repeat this process for each relationship in your business domain. For a hospital scenario, you'd define Department "has rooms" Room to show how departments organize their spaces, and Room "has Patient" Patient to show patient assignments. Each relationship captures one aspect of how your organization operates.
 
 At this stage, relationship types are defined as conceptual connections—which entities relate and what those connections mean using business vocabulary. Later, when you configure data bindings, the system populates these relationships with actual data showing specific connections between entity instances. Next, you learn how to generate an ontology from an existing semantic model, automating this entire process. The system creates entity types, properties, keys, and relationship types from an existing semantic model.
+
+::: zone-end

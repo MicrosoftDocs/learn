@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=93178df1-1c70-4d05-9e2f-b7a8997e167e]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Imagine you work for Lamna Healthcare, a fictitious organization that uses Microsoft Fabric to analyze hospital operations. You need to help colleagues ask questions using business terms without requiring them to understand the underlying tables.
 
 ## Use ontology as business context
@@ -18,3 +26,8 @@ In this module, you learn how to:
 - Configure instructions and eligible underlying sources.
 - Validate answers by inspecting queries and ontology context.
 - Publish and share an agent with the required data access.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

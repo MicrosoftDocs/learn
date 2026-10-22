@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=dc5289da-4f94-4a17-9b3e-81ed8a4ec910]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Entity types bound to data give you facts about individual business concepts—a hospital, a department, a patient. Relationship types define the connections between them: a department *belongs to* a hospital. A patient *is admitted to* a room, equipment *monitors* a patient.
 
 Like entity types, relationship types need two things: a definition (which entity types can connect) and a binding (which table and columns contain the actual connection data). Without the binding, the relationship exists as a definition but can't be queried.
@@ -37,3 +48,5 @@ Every row with values in both columns creates one relationship instance connecti
 Each relationship type needs its own configuration. A Patient-Room relationship uses the patients table, mapping PatientId, and CurrentRoomId. A VitalSignEquipment-Patient relationship uses the vitalsignequipment table, mapping EquipmentId, and PatientId. The same table can serve as source for multiple relationships if it contains the necessary keys. The hospitals table couldn't serve as source for the Hospital-Department relationship—it contains only HospitalId, with no column identifying which department is connected.
 
 With entity types bound to data and relationship types configured, your ontology is complete—definitions backed by source data, connections established between entities, ready to explore.
+
+::: zone-end

@@ -2,9 +2,10 @@
 uid: learn.wwl.build-fabric-data-agent-ontology.understand-fabric-data-agents-ontology
 title: Understand Fabric data agents and ontology context
 metadata:
+  zone_pivot_groups: video-or-text
   title: Understand Fabric data agents and ontology context
   description: Explain how ontology context guides source selection and SQL, KQL, or DAX query generation, including permissions and context refresh.
-  ms.date: 10/20/2026
+  ms.date: 10/22/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=47d6fd32-7831-451f-9350-069cc9de2966]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 With entity types bound to data and relationships configured, the ontology is ready to explore. Selecting an entity type and choosing **Entity type overview** from the ribbon opens the preview experience—a dashboard showing how your bound data looks as a populated ontology.
 
 ## Explore the entity type overview
@@ -16,3 +27,5 @@ The entity type overview shows three sections for the selected entity type.
 > When you first open the preview experience, you'll see an **"Updating your ontology"** message while the system processes your data in the background. After 1-2 minutes, refresh your browser to display the entity type overview.
 
 The entity type overview confirms your ontology is working—definitions are populated with real data and connected across entity types. The next module covers how to query and visualize this data using the Query builder and relationship graph.
+
+::: zone-end
