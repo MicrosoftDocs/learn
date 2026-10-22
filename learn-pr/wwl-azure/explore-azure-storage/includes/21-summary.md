@@ -4,7 +4,7 @@ Now you have:
 - Explored Azure Files.
 - Examined Azure Virtual Machine disks.
 - Learned to recognize virtual machine images and disks.
-- Explored managed and unmanaged disks.
+- Explored Azure managed disks.
 - Explored caching for virtual machines and data disks.
 - Explored Write Accelerator.
 - Examined general database sizing.

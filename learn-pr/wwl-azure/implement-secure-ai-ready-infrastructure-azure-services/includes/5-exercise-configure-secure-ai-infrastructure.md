@@ -1,6 +1,8 @@
 
  Learners can find the full list of labs and launch each exercise directly by visiting the [Secure AI-Ready Infrastructure](https://go.microsoft.com/fwlink/?linkid=2349700) GitHub repository, which serves as the single entry point for the course’s hands‑on activities.
 
+These exercises use different Foundry resource architectures. Exercise 1 covers a Foundry account and project, while exercise 2 covers a Foundry hub and its managed network. Follow the security configuration for the resource type in each exercise rather than assuming that hub inheritance applies to both.
+
 ## Exercise 1: Implement Microsoft Foundry standard agent setup
 
 ### Scenario
@@ -19,13 +21,15 @@ Your company is building a centralized AI platform on Microsoft Foundry to suppo
 ## Exercise 2: Configure Microsoft Foundry hub network connectivity by using a managed network
 
 ### Background information
-Securing network connectivity for Microsoft Foundry hubs is essential for maintaining data confidentiality, preventing unauthorized access, and complying with enterprise security policies. Microsoft Foundry provides built-in support for network isolation, enabling you to control both inbound and outbound traffic to the hub and its associated resources. This isolation ensures that compute instances, managed endpoints, and other AI workloads operate within a tightly controlled network boundary while maintaining connectivity to approved Azure services.
+This exercise uses the hub-based Foundry (classic) architecture. The hub's managed network controls outbound connectivity for supported compute. Inbound access and the connected services' network settings have separate controls. The managed network doesn't automatically secure every resource referenced by a hub connection.
 
 
 ### Scenario
 Your company operates in the financial services industry, where strict regulatory requirements and data protection policies govern how sensitive information is accessed and processed. The organization plans to build a centralized AI platform on Microsoft Foundry to support the development of machine learning models used for fraud detection, credit risk assessment, and transaction analysis. Because these workloads involve highly confidential customer and financial data, ensuring network isolation and controlled data movement is a top priority.
 
-To meet internal security policies and industry compliance standards (such as ISO 27001 and SOC 2), the company plans to deploy the Microsoft Foundry hub within a managed virtual network. This managed network isolates all AI resources from the public internet and enforces strict outbound connectivity rules to prevent accidental data exposure. Private endpoints are used to connect securely to dependent Azure services, including Storage accounts, Key Vault, and the Azure Container Registry, while private DNS zones ensure reliable name resolution within the isolated environment.
+In this exercise, you provision a virtual network and dependent Azure services with private endpoints. You then review the hub's inbound access settings and compare **Allow internet outbound** with **Allow only approved outbound**. You stop after validation without creating the hub or provisioning its managed virtual network, limiting the exercise's duration and cost.
+
+For a production deployment, also review public network access, permissions, diagnostic settings, and name resolution for each connected service. These are design considerations, not additional configuration or connectivity-testing tasks in this exercise.
 
 :::image type="content" source="../media/financial-services-industry-strict-regulatory.png" alt-text="Diagram showing a company operating in the financial services industry with strict regulatory requirements.":::
 

@@ -2,17 +2,17 @@
 uid: learn.wwl.implement-secure-ai-ready-infrastructure-azure-services
 metadata:
   title: "Implement Secure AI-ready Infrastructure with Azure Services"
-  description: "This course explains how to design secure AI platforms using Microsoft Foundry, applying centralized governance, managed identities, private networking, Azure OpenAI security controls, and container image protection to ensure compliant, production‑ready AI workloads across enterprise environments."
-  ms.date: 02/04/2026
+  description: "Design AI infrastructure with hub-based project security settings, explicitly configured service controls, deployment-aware data residency, and container image protection."
+  ms.date: 10/22/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: azure
 title: "Implement secure AI-ready infrastructure with Azure services"
-summary: This course explains how to design secure AI platforms using Microsoft Foundry, applying centralized governance, managed identities, private networking, Azure OpenAI security controls, and container image protection to ensure compliant, production‑ready AI workloads across enterprise environments.
+summary: Design AI infrastructure with hub-based project security settings, explicitly configured service controls, deployment-aware data residency, and container image protection.
 abstract: |
   After completing this module, you will be able to:
-  - Configure Microsoft Foundry Hubs and Projects for secure AI development environments
+  - Configure Microsoft Foundry hubs and hub-based projects for secure AI development environments
   - Implement Azure OpenAI Service and Cognitive Services with enterprise security controls
   - Secure AI container images and deployments using Azure Container Registry
   - Apply network isolation and identity governance to protect AI infrastructure

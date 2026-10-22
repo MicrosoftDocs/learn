@@ -17,7 +17,7 @@ Organizations can use data residency policies to ensure AI services are deployed
 
 ## Encryption policy enforcement for AI assets
 
-In addition to geographic controls, encryption policies help protect AI data both at rest and in transit. Azure supports platform-managed keys, customer-managed keys, and double encryption, allowing organizations to define security requirements based on data sensitivity. For instance, a policy can require customer-managed keys for Azure Machine Learning workspace storage accounts that store training data classified as Confidential or higher, denying deployments that rely solely on platform-managed encryption until stronger protections are configured.
+In addition to geographic controls, encryption policies help protect AI data both at rest and in transit. Azure supports platform-managed keys, customer-managed keys, and double encryption, allowing organizations to define security requirements based on data sensitivity. For instance, assign a policy that requires customer-managed keys to the resource groups that host confidential training data. Azure Policy evaluates the resource properties defined in the policy. A Purview classification doesn't automatically assign the policy or pass a sensitivity label into its evaluation.
 
 - Enforces encryption standards based on data classification  
 - Supports multiple encryption models, including customer-managed keys  
@@ -36,12 +36,11 @@ At the same time, the DeployIfNotExists effect enables automated remediation tha
 
 Policies apply at specific scopes within your Azure hierarchy: management groups, subscriptions, or resource groups. This hierarchical model lets you implement different governance controls for production versus development environments. For production subscriptions, you enforce strict policies with Deny effects that block any compliance violations. For development and testing environments, you use Audit effects that provide visibility without blocking experimental work. Your policy assignments cascade down the hierarchy—a policy assigned at the management group level automatically applies to all child subscriptions and resource groups.
 
-However, this changes when legitimate business cases require temporary exemptions from governance policies. Suppose your data science team needs to deploy an Azure OpenAI Service instance in East US for a three-month collaboration with a US-based partner, despite your standard European data residency requirement. Rather than disabling the policy globally, you create a scoped exemption that allows this specific deployment while maintaining protection everywhere else. The exemption request flows through an approval workflow: the data scientist documents the business justification, their manager approves, the compliance team validates legal requirements, and finally an exemption is granted with an expiration date. Purview logs all exemption activity for audit trails.
+However, this changes when legitimate business cases require temporary exemptions from governance policies. Suppose your data science team needs to deploy an Azure OpenAI Service instance in East US for a three-month collaboration with a US-based partner, despite your standard European data residency requirement. Rather than disabling the policy globally, you create a scoped exemption that allows this specific deployment while maintaining protection everywhere else. The exemption request flows through an approval workflow: the data scientist documents the business justification, their manager approves, the compliance team validates legal requirements, and finally an exemption is granted with an expiration date. Retain the approval records and use Azure Activity Log to review Azure Policy exemption changes.
 
-Now that you understand how Azure Policy enforces governance guardrails at deployment time, you're ready to explore how Microsoft Purview captures data lineage that traces AI workload dependencies from source data through training to production inference.
+Now that you understand how Azure Policy enforces governance guardrails at deployment time, you're ready to explore supported Purview lineage relationships between source data, training assets, jobs, and models.
 
 :::image type="content" source="../media/azure-policy-enforcement-flow.png" alt-text="Diagram showing a policy definition assigned at management group level that covers production and development subscriptions.":::
 
 *Azure Policy enforcement flow for AI infrastructure provisioning across production and development environments with different policy effects*
-
 

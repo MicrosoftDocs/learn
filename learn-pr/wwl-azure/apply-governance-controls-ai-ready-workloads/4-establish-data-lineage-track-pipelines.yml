@@ -3,10 +3,10 @@ uid: learn.wwl.apply-governance-controls-ai-ready-workloads.establish-data-linea
 title: "Establish data lineage tracking for AI pipelines Azure Policy guardrails for AI workloads"
 metadata:
   title: "Establish data lineage tracking for AI pipelines Azure Policy guardrails for AI workloads"
-  description: "Establish data lineage tracking for AI pipelines Azure Policy guardrails for AI workloads."
-  ms.date: 02/02/2026
+  description: "Track supported AI training lineage and combine catalog relationships with deployment and audit evidence."
+  ms.date: 10/22/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 10
 content: |

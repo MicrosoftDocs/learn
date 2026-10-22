@@ -2,7 +2,7 @@ Traditionally, failover clusters provided high-availability protection from loca
 
 ## What are stretch clusters?
 
-A stretch cluster implements high availability and disaster recovery across two separate physical locations. Both locations host a separate storage system, with unidirectional, synchronous replication from the primary site to the secondary site. If a failure affects the availability of the primary site, to minimize downtime, the cluster automatically transitions its workloads to nodes in the secondary site. For planned maintenance events at the primary site, you can use Hyper-V Live Migration to seamlessly transition workloads to the other site, which avoids downtime altogether.
+A stretch cluster implements high availability and disaster recovery across two separate physical locations. Both locations host a separate storage system, with unidirectional replication from the primary site to the secondary site. Storage Replica supports synchronous or asynchronous replication between the sites. If the primary site becomes unavailable, the cluster can automatically fail over workloads to the secondary site, provided that the surviving site maintains quorum and has the resources required to run those workloads. For planned maintenance events at the primary site, you can use Hyper-V Live Migration to seamlessly transition workloads to the other site, which avoids downtime altogether.
 
 Using stretch clusters offers several advantages over manually maintaining a disaster recovery site:
 
@@ -22,7 +22,7 @@ Storage Replica supports synchronous and asynchronous replication:
 - Asynchronous replication replicates data over longer distances that are subject to higher latencies, but without a guarantee that both sites have identical copies of the data at the time of a failover.
 
 > [!IMPORTANT]
-> Stretch clusters require synchronous replication. This requirement imposes the limit of 5-ms round-trip network latency between two groups of cluster nodes in the replicated sites. Depending on the physical network connectivity characteristics, this constraint typically translates into a distance of about 20-30 miles.
+> Choose synchronous replication when you require zero recovery point objective (RPO). Synchronous replication requires sufficient bandwidth for the write workload and an average round-trip network latency of approximately 5 milliseconds or less. Asynchronous replication supports higher-latency networks, but recent writes might not reach the secondary site before a failure.
 
 :::image type="content" source="../media/m28-stretched-cluster.png" alt-text="A depiction of the architecture of an active-passive stretched cluster." border="false":::
 
@@ -57,7 +57,7 @@ The prerequisites for implementing stretched clusters include:
   - The log volumes shouldn't be used for any other workloads.
 
 - Bi-directional connectivity via Internet Control Message Protocol (ICMP), SMB (port 445, plus port 5445 for SMB Direct) and Web Services-Management (WS-MAN) (port 5985) between the two sites.
-- A network between servers with enough bandwidth to match I/O writes of the clustered workloads and less than 5-ms round-trip latency.
+- A network between servers with enough bandwidth to support the write workload. For synchronous replication, the average round-trip latency should be approximately 5 milliseconds or less.
 
 ## Considerations for deploying a stretch cluster
 
