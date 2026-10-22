@@ -20,11 +20,14 @@ The main criteria that we're evaluating are outlined in the following table. The
 
 In the introduction, we presented a scenario where your organization might have an application that relies on data from a back-end SQL Server installation. SQL Server is running on three Azure VMs. The data in the backup must be retained for up to 10 years to meet compliance requirements. You also want to be able to monitor the backups.
 
-Before we dive into how Azure Backup can help meet these needs, it's important to understand what isn't currently supported. If your three Azure VMs are deployed across multiple subscriptions or regions, you should note that Azure Backup doesn’t support cross-region backup for most workloads. However, it does support cross-region restore in a paired secondary region.
+For this SQL Server availability-group scenario, a node registered for backup must use a Recovery Services vault in the same region and subscription as that node. Which nodes must be registered depends on the SQL Server version and the AG backup preference. If the nodes span regions or subscriptions, follow the [multi-region availability-group backup guidance](/azure/backup/backup-sql-server-on-availability-groups#configure-backups-for-a-multi-region-ag); protection in different vaults has separate recovery chains and additional operational considerations.
+
+> [!NOTE]
+> Cross Region Restore is a different capability. For supported SQL Server backups in a geo-redundant vault with Cross Region Restore enabled, you can restore eligible recovery points in the paired secondary region for drills, audits, or disaster recovery. It doesn't allow a vault to back up SQL availability-group nodes in another region or subscription. See [Cross Region Restore configuration](/azure/backup/backup-create-recovery-services-vault#set-cross-region-restore).
 
 ### Can Azure Backup protect the Azure VMs hosting the SQL Server instances?
 
-Azure Backup is able to back up entire Windows and Linux VMs using backup extensions. As a result, you can back up the entire VM that hosts SQL Server. If you only want to back up the files, folders, and system state on the Azure VMs, you can use the Microsoft Azure Recovery Services (MARS) agent.
+Azure Backup is able to back up entire Windows and Linux VMs using backup extensions. As a result, you can back up the entire VM that hosts SQL Server. On supported Windows Azure VMs, the Microsoft Azure Recovery Services (MARS) agent can back up files and folders. System-state backup requires a Windows Server operating system supported for that feature in the MARS support matrix. MARS doesn't support Linux.
 
 If your main concern is to only back up the SQL Server data, Azure Backup provides support for that as well. Azure Backup offers a stream-based, specialized solution to back up SQL Servers running in Azure VMs. This solution aligns with Azure Backup's benefits of zero-infrastructure backup, long-term retention, and central management.
 
@@ -35,19 +38,19 @@ Additionally, Azure Backup provides the following advantages specifically for SQ
 * Point-in-time recovery up to a second
 * Individual database-level backup and restore
 
-:::image type="content" source="../media/azure-backup-sql-overview.png" alt-text="Diagram of SQL Server hosted on an Azure VM backed up to a Recovery Services Vaults in Azure Backup. Arrows indicate a two-way flow for the data path and control path flow from Azure Backup to the backup extension on the VM.":::
+:::image type="content" source="../media/azure-backup-sql-overview.png" alt-text="Diagram that shows data and control paths between a SQL Server backup extension on an Azure VM and a Recovery Services vault.":::
 
 ### Does Azure Backup help with compliance?
 
-You can implement required access-control mechanisms for your backups. Vaults (Recovery Services and Backup vaults) provide the management capabilities and are accessible via the Azure portal, Backup Center, Vault dashboards, SDK, CLI, and even REST APIs. It's also an Azure role-based access control (Azure RBAC) boundary, providing you with the option to restrict access to backups only to authorized Backup Admins.
+You can implement required access-control mechanisms for your backups. Vaults (Recovery Services and Backup vaults) provide the management capabilities and are accessible through the Azure portal, including Resiliency and vault dashboards, and through supported SDKs, Azure CLI, and REST APIs. It's also an Azure role-based access control (Azure RBAC) boundary, providing you with the option to restrict access to backups only to authorized Backup Admins.
 
-Short-term retention can be *minutes* or *daily*. Retention for *weekly*, *monthly*, or *yearly* backup points is referred to as *Long-term retention*.
+Short-term retention can be daily. Weekly, monthly, and yearly retention settings keep selected recovery points for longer periods. Backup frequency and retention are different: for example, SQL transaction-log backups can run every 15 minutes to support a 15-minute recovery point objective (RPO), while the backup policy separately defines how long recovery points are retained.
 
 Long-term retention can be:
 
 * **Planned (compliance requirements)**: If you know in advance that data is required years from the current time, use Long-term retention.
 * **Unplanned (on-demand requirement)**: If you don't know in advance, then you can use on-demand backup with specific custom retention settings. Your policy settings don't impact these custom retention settings.
-* **On-demand backup with custom retention**: If you need to take a backup not scheduled via backup policy, then you can use an on-demand backup. It can be useful for taking backups that don’t fit your scheduled backup or for taking granular backup (for example, multiple IaaS VM backups per day since scheduled backup permits only one backup per day). It's important to note that the retention policy defined in scheduled policy doesn't apply to on-demand backups.
+* **On-demand backup with custom retention**: For Azure VM backup, use an on-demand backup when you need a recovery point outside the scheduled policy, and specify the applicable retention for that backup. Standard policy permits one scheduled backup per day; Enhanced policy can schedule backups as frequently as every four hours. On-demand backup is therefore an option for an extra recovery point, not the only way to obtain multiple daily VM backups. Retention behavior for other workloads follows their workload-specific backup policies.
 
 You can also implement policy management to help with compliance. Azure Backup Policies within each vault define when the backups should be triggered and how long they need to be retained. You can also manage these policies and apply them across multiple items.
 

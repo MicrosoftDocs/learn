@@ -1,54 +1,67 @@
 Let's take a look at how Azure Backup works to provide the data protection you need. Particularly, let's look at how the different aspects of the backup service make it easy to back up various types of data, and how it offers security for your backups as well. In this unit, we cover the following aspects of the Azure Backup Service:
 
-- **Workload integration layer - Backup Extension**: Integration with the actual workload, such as Azure virtual machines (VMs) or Azure Blobs, happens at this layer.
+- **Workload integration layer**: Backup integrates with each workload through the appropriate method, such as VM extensions, database-aware backup, or native storage-platform capabilities.
 - **Data Plane - Access Tiers**: There are three access tiers where the backups could be stored:
   - Snapshot tier
   - Standard tier
   - Archive tier
-- **Data Plane - Availability and Security**: The backup data is replicated across zones or regions, based on the redundancy the user specifies.
-- **Management Plane – Recovery Services vault/Backup vault and Backup center**: The vault provides an interface for the user to interact with the backup service.
+- **Data Plane - Availability and Security**: For vaulted backup data, the selected redundancy option provides local redundancy, cross-zone replication, or replication to a paired secondary region.
+- **Management plane - Recovery Services vault, Backup vault, and Resiliency**: Vaults manage backup policies and protected items. Resiliency provides centralized management and monitoring across your backup estate.
 
 ## What data is backed up and how?
 
-The simplest explanation of Azure Backup is that it backs up data, machine state, and workloads running on on-premises machines and VM instances to the Azure cloud. Azure Backup stores the backed-up data in Recovery Services vaults and Backup vaults.
+The simplest explanation of Azure Backup is that it backs up data, machine state, and workloads running on on-premises machines and VM instances to the Azure cloud. Azure Backup uses Recovery Services vaults and Backup vaults to manage protection; where backup data is stored depends on the workload and backup tier.
 
 For on-premises Windows machines, you can back up directly to Azure with the Azure Backup Microsoft Azure Recovery Services (MARS) agent. Alternatively, you can back up these Windows machines to a backup server, perhaps a System Center Data Protection Manager (DPM) or Microsoft Azure Backup Server (MABS). You can then back that server up to a Recovery Services vault in Azure.
 
-If you're using Azure VMs, you can back them up directly. Azure Backup installs a backup extension to the Azure VM agent that's running on the VM, which allows you to back up the entire VM. If you only want to back up the files and folders on the VM, you can do so by running the MARS agent.
+You can back up supported Azure VMs directly. By default, Azure Backup uses the Azure VM agent and a backup extension for application-consistent or file-system-consistent snapshots. If you only want to back up files and folders on a supported Windows Azure VM, you can use the MARS agent; MARS doesn't support Linux.
 
-Azure Backup stores backed-up data in vaults: Recovery Services vaults and Backup vaults. A vault is an online-storage entity in Azure that's used to hold data such as backup copies, recovery points, and backup policies.
+Recovery Services vaults and Backup vaults manage backup policies, protected items, and recovery points for their supported workloads. Vaulted backup stores an isolated copy of protected data in Azure Backup-managed storage. Operational protection can instead retain data or snapshots in the customer's subscription without creating a vaulted copy.
 
 ### Supported backup types
 
-Azure Backup supports full backups and incremental backups. Your initial backup is a full backup. DPM/MABS use the incremental backup for disk backups, and all backups to Azure also use incremental backups. As the name suggests, incremental backups only focus on the blocks of data that changed since the previous backup.
+Backup types depend on the workload. Azure VM backup uses an initial full backup followed by incremental backups that transfer changed blocks. DPM/MABS use incremental backups for disk backups and backups to Azure. Workload-aware SQL Server backup in Azure VMs instead uses the full, differential, and transaction log backup types described next.
 
-Azure Backup also supports SQL Server backup types. The following table outlines the support for SQL Server type backups:
+Azure Backup supports the following SQL Server database backup types:
 
-| Type | Description | Usage |
+| Type | Description | Schedule |
 | --- | --- | --- |
-| Full | A full database backup backs up the entire database. It contains all the data in a specific database or in a set of filegroups or files. A full backup also contains enough logs to recover that data. | At most, you can trigger one full backup per day. You can choose to make a full backup on a daily or weekly interval. |
-| Differential | A differential backup is based on the most recent full-data backup. It captures only the data that changed since the full backup. | At most, you can trigger one differential backup per day. You can't configure a full backup and a differential backup on the same day. |
-| Multiple backups per day | Back up Azure VMs hourly with a minimum recovery point objective (RPO) of 4 hours and a maximum of 24 hours. | You can use Enhanced backup policy to set the backup schedule to 4, 6, 8, 12, and 24 hours (respectively) for new Azure offerings, such as Trusted Launch VM. |
-| Selective disk backup | Selectively back up a subset of the data disks that are attached to your VM, then restore a subset of the disks that are available in a recovery point, both from instant restore and vault tier. Selective disk backup helps you manage critical data in a subset of the VM disks and use database backup solutions when you want to back up only their OS disk to reduce cost. | Azure Backup provides Selective Disk backup and restore capability using Enhanced backup policy. |
-| Transaction Log | A log backup enables point-in-time restoration up to a specific second. | At most, you can configure transactional log backups every 15 minutes. |
+| Full | Backs up the database and the log information needed to recover that backup. | Schedule full backups daily or weekly. |
+| Differential | Backs up changes since the most recent full backup. | Schedule differential backups on days without a scheduled full backup. |
+| Transaction log | Captures transaction-log changes to support point-in-time recovery for eligible databases. | Schedule log backups as frequently as every 15 minutes. |
 
-## Workload integration layer - Backup Extension
+Azure VM backup has separate scheduling and disk-selection options:
 
-A backup extension specific to each workload is installed on the source VM or a worker VM. At the time of backup (as defined by the user in the Backup Policy) the backup extension generates the backup, which could be:
+| Feature | Description |
+| --- | --- |
+| Multiple scheduled backups per day | The Enhanced VM backup policy supports an hourly schedule with intervals of 4, 6, 8, 12, or 24 hours. The minimum interval is four hours, not one hour. |
+| Selective disk backup | Standard and Enhanced VM backup policies support selective disk backup. In the Azure portal, Standard policy supports choosing OS-disk-only backup; Enhanced policy supports selecting individual data disks. Use the supported Azure CLI or PowerShell options for other disk-selection configurations. |
 
-- **Storage**: Snapshots when using an Azure VM or Azure Files.
+For details, see [Enhanced VM backup policy](/azure/backup/backup-azure-vms-enhanced-policy) and [selective disk backup](/azure/backup/selective-disk-backup-restore).
 
-- **Stream backup**: For databases like SQL or High-performance Analytic Appliance (HANA) running in VMs.
+## Workload integration
 
-The backup data is eventually transferred to Azure Backup managed storage in the data plane by using secure Azure networks Network Security Groups (NSG), Firewalls, or more sophisticated private endpoints.
+Azure Backup integrates with workloads in different ways:
 
-## Data Plane - Access Tiers
+- **VM and database workloads**: Extension-based Azure VM backup can create application-consistent or file-system-consistent snapshots. Workload-aware backup for SQL Server and SAP HANA databases in Azure VMs uses database backup streams.
+- **Azure Files**: Backup uses Azure Files snapshot APIs directly; you don't deploy a worker VM or VM backup extension for the file share.
+- **Azure Blobs**: Operational backup uses blob-platform protection features, including point-in-time restore, versioning, change feed, and soft delete. Vaulted backup uses object replication to create an isolated backup copy.
+
+> [!NOTE]
+> For supported VM and disk configurations, the Enhanced VM backup policy also supports agentless multidisk crash-consistent backup. This mode doesn't require the VM agent or snapshot extension, but it doesn't provide application-consistent or file-system-consistent backups. Check the [supported scenarios](/azure/backup/backup-azure-vms-agentless-multi-disk-crash-consistent-overview) before selecting it.
+
+Vaulted backup transfers protected data to Azure Backup-managed storage. Operational protection can keep the data in the source environment, as described in the access-tier section.
+
+## Data plane - Access tiers
 
 There are three access tiers where the backups can be stored:
 
-- **Snapshot tier**: (Workload-specific term) In the first phase of a virtual machine backup, the snapshot is taken and stored along with the disk. This form of storage is referred to as a snapshot tier. Restoring a snapshot tier is faster than restoring from a vault, because it eliminates the wait time for snapshots to be copied from the vault before triggering the restore operation. The snapshots of the VM/Azure Files/Azure Blobs/and so on are retained in the customer's subscription in a specified resource group. This container ensures that restores are quick, because the backup/snapshot is available locally to the customer.
+- **Snapshot tier**: Supported workloads, such as Azure VMs and Azure Files, can retain point-in-time snapshots for quick recovery. Azure VM backup snapshots are retained in the customer's subscription; Azure Files backup uses file-share snapshots. Azure Blob operational backup isn't snapshot-based: it uses native storage features such as point-in-time restore and versioning.
 
-- **Vault-standard tier**: Backup data for all workloads supported by Azure Backup is stored in vaults, which hold backup storage, an autoscaling set of storage accounts managed by Azure Backup. The Vault-standard tier is an online storage tier that allows you to store an isolated copy of backup data in a Microsoft-managed tenant, thus creating an extra layer of protection. For workloads where snapshot tier is supported, there's a copy of the backup data in both the snapshot tier and the Vault-standard tier. The Vault-standard tier ensures that backup data is available even if the data source being backed up is deleted or compromised.
+- **Vault-standard tier**: For supported workloads configured for vaulted backup, this tier stores an isolated copy of backup data in Azure Backup-managed storage. Supporting snapshots or operational backup doesn't automatically mean that a workload has a vaulted copy as well.
+
+    > [!NOTE]
+    > Azure Disk Backup currently supports operational incremental snapshots only; these snapshots aren't copied to vault storage. Azure Blob operational backup keeps data in the source storage account, while vaulted Blob backup is a separate protection option. A vault can manage protection without holding a backup copy of the data.
 
 - **Archive tier**: Customers rely on Azure Backup for storing backup data, including their Long-Term Retention (LTR) backup data, with retention needs defined in the organization's compliance rules. In most cases, the older backup data is rarely accessed and is only stored for compliance needs.
 
@@ -56,26 +69,35 @@ There are three access tiers where the backups can be stored:
 
 All tiers offer different recovery time objectives (RTO) and are priced differently.
 
-:::image type="content" source="../media/data-plane.png" alt-text="Diagram of the various workloads such as on-premises server, Azure VMs, Azure files, etc. feeding into the data plane where the access tiers are located.":::
+:::image type="content" source="../media/data-plane.png" alt-text="Diagram that shows on-premises and Azure workloads connected to snapshot and vault storage, replication, and built-in security.":::
 
-## Data Plane - Availability and Security
+## Data plane - Availability and security
 
-The backup data is replicated across zones or regions, based on the redundancy you specify. You can choose from locally redundant storage (LRS), Geo-redundant storage (GRS), or zone-redundant storage (ZRS). These options provide you with highly available data storage capabilities.
+Vaulted backup data is replicated according to the vault's storage redundancy setting. Locally redundant storage (LRS) keeps replicas in the primary region without guaranteeing distribution across availability zones. Zone-redundant storage (ZRS) replicates data across availability zones in the primary region. Geo-redundant storage (GRS) also replicates data to a paired secondary region.
 
-The data is kept safe by encrypting it and implementing Azure role-based access control (RBAC). You choose who can perform backup and restore operations. Azure Backup also provides protection against malicious deletion of your backup by using soft-delete operations. A deleted backup is stored for 14 days, free of charge, which allows you to recover the backup if needed.
+> [!NOTE]
+> Vault storage redundancy applies to backup data stored in the vault, not to operational backups such as Azure Disk Backup snapshots or Azure Blob operational backup. For supported workloads and regions, Archive tier requires an LRS or GRS vault; Archive tier isn't supported in vaults configured with ZRS. For details, see [Archive tier support](/azure/backup/archive-tier-support#supported-workloads).
+
+Encryption and Azure role-based access control (RBAC) help protect backup data and control who can perform backup and restore operations. For supported vaulted backups, soft delete retains deleted backup data for 14 days by default, with no additional retention charge for that default period. You can configure a retention period from 14 to 180 days; retention beyond the free duration incurs regular backup charges.
+
+> [!NOTE]
+> Azure Backup soft delete doesn't currently apply to operational backups of Azure Blobs or Azure Files shares. Native blob or file-share soft delete is a separate storage capability. Operational disk and VM backup snapshots can be deleted directly before the soft-delete retention period ends, and their underlying snapshot resource charges continue. Don't assume the vaulted-backup recovery and pricing behavior applies to every operational backup.
 
 Azure Backup also supports a backup data lifecycle-management scenario that allows you to comply with retention policies.
 
-:::image type="content" source="../media/built-in-security.png" alt-text="Graphic displaying the three security options of Azure RBAC, encryption, and soft delete as icons.":::
+:::image type="content" source="../media/built-in-security.png" alt-text="Illustration of Azure Backup security features: Azure RBAC, encryption, and soft delete.":::
 
-## Management Plane – Recovery Services vault/Backup vault and Backup center
+## Management plane - Recovery Services vault and Backup vault
 
-Azure Backup uses Recovery Services vaults and Backup vaults to orchestrate and manage backups. It also uses vaults to store backed-up data. The vault provides an interface for the user to interact with the backup service. Azure Backup Policies within each vault define when the backups should get triggered and how long they need to be retained.
+Azure Backup uses Recovery Services vaults and Backup vaults to orchestrate and manage backups. For vaulted backup, an isolated copy of the protected data is stored in Azure Backup-managed storage. Operational protection can instead retain data or snapshots in the customer's subscription without creating a vaulted copy. The vault provides an interface for the user to interact with the backup service. Azure Backup Policies within each vault define when the backups should get triggered and how long they need to be retained.
 
 You can use a single vault or multiple vaults to organize and manage your backup. If you manage your workloads with a single subscription and single resource, you can use a single vault to monitor and manage your backup estate. If your workloads are spread across multiple subscriptions, you can create multiple vaults with one or more vaults per subscription.
 
-:::image type="content" source="../media/backup-vaults.png" alt-text="Diagram of the management plane. The recovery services vault shows the options for backup policies and management with the portal, SDK, or the Command-line interface (CLI).":::
+:::image type="content" source="../media/backup-vaults.png" alt-text="Diagram that shows Recovery Services vaults and backup policies managed through the Azure portal, SDK, and CLI.":::
 
-Backup center allows you to have a single pane of glass to manage all tasks related to backups. Backup center is designed to function well across a large and distributed Azure environment. You can use Backup center to efficiently manage backups spanning multiple workload types, vaults, subscriptions, regions, and Azure Lighthouse tenants.
+Use Resiliency in the Azure portal to manage and monitor protection across workload types, vaults, subscriptions, regions, and Azure Lighthouse tenants. Resiliency extends the capabilities previously available in Azure Business Continuity Center. For the legacy Backup center experience, open Resiliency and use **Help** > **Go to Backup Center**.
 
-:::image type="content" source="../media/backup-center.png" alt-text="Screenshot of the Backup center user interface in the Azure portal displaying backup information for Azure Virtual machines related to jobs and backup instances.":::
+> [!NOTE]
+> This screenshot shows the legacy Backup center experience. For current centralized backup management, search for **Resiliency** in the Azure portal. Legacy Backup center is available from Resiliency through **Help** > **Go to Backup Center**.
+
+:::image type="content" source="../media/backup-center.png" alt-text="Screenshot of legacy Backup center showing Azure VM backup jobs and backup instance protection states.":::
