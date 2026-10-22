@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b53e641a-5353-42ba-ac4b-d3a655bce475]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Whether you build your ontology manually or generate it from a semantic model, entity types need data bindings before they can be queried. If you followed the manual path, you haven't configured any bindings yet—this unit covers how to create them. If you generated from a semantic model, static bindings were configured automatically, but you still need to add time series bindings for the VitalSignsReadings eventhouse data. Both paths meet here.
 
 ## Understand data bindings
@@ -79,3 +90,5 @@ Select **Timeseries** as the binding type, then choose the timestamp column—in
 The static property in a time series binding is the linking key—not a new static data binding, but the column that connects each reading back to its equipment entity. The timeseries properties are the measurements that update with each new reading.
 
 With entity types connected to their data sources, the next step is configuring relationship bindings—specifying which table contains the connections between entity types so the ontology knows which specific hospital contains which departments, which rooms hold which patients.
+
+::: zone-end

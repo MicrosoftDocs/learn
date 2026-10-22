@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1a363db1-73da-4ea1-bb98-f7d62dea8fb8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 To build the Lamna Healthcare agent, you start with an existing ontology and the underlying sources it describes. You then add that context to a data agent and configure guidance for the questions you expect.
 
 ## Check access and create the agent
@@ -82,3 +93,5 @@ These additions belong to the data agent's source configuration. They don't chan
 Configuration support varies. SQL and Eventhouse KQL sources support source instructions and example queries. Power BI semantic models don't support these supplemental data-agent-specific configurations. Use the [configuration support matrix](/fabric/data-science/data-agent-add-datasources#configure-your-data-source) to check the selected source rather than assuming that every source offers the same options.
 
 With context and guidance configured, use representative questions to check source selection, query logic, and results. Adding more instructions isn't a substitute for that validation.
+
+::: zone-end

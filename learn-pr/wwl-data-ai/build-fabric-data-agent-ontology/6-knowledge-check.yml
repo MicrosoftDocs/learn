@@ -6,7 +6,7 @@ metadata:
   module_assessment: true
   ai_generated_module_assessment: false
   description: Check understanding of ontology context, source configuration, query validation, and publishing a Fabric data agent.
-  ms.date: 10/20/2026
+  ms.date: 10/22/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -2,9 +2,10 @@
 uid: learn.wwl.build-fabric-data-agent-ontology.create-fabric-data-agent-connect-ontology
 title: Create a Fabric data agent and connect it to an ontology
 metadata:
+  zone_pivot_groups: video-or-text
   title: Create a Fabric data agent and connect it to an ontology
   description: Create a Fabric data agent, add ontology context, and configure agent guidance and eligible underlying sources.
-  ms.date: 10/20/2026
+  ms.date: 10/22/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

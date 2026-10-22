@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e184d0a3-f032-4942-8577-ab7c4e05c0ff]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this module, you learned how ontology context supports a Fabric data agent that answers questions about hospital operations.
 
 ## Review the workflow
@@ -17,3 +28,5 @@ You learned how to:
 When an answer is wrong, identify whether the cause is the ontology context, source selection, generated query, source data, or permissions. Correct that cause and retest rather than assuming that instructions alone fix every issue.
 
 For current capabilities and preview limitations, see [Use ontology as context in Fabric data agent](/fabric/data-science/data-agent-ontology-sources).
+
+::: zone-end
