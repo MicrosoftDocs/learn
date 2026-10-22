@@ -45,4 +45,4 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
 **The values listed are intended to be a starting point and need to be evaluated against the real demands.** The advantage with Azure Ultra disk is that the values for IOPS and throughput can be adapted without the need to shut down the virtual machine or halting the workload applied to the system.
 
 > [!NOTE]
-> So far, storage snapshots with Ultra disk storage aren't available. This blocks the usage of virtual machine snapshots with Azure Backup Services.
+> Ultra Disks support incremental snapshots. Azure VM Backup supports Ultra Disks with an Enhanced policy, but not with a Standard policy. See [Azure VM Backup storage support](/azure/backup/backup-support-matrix-iaas#vm-storage-support). VM-level backup support doesn't by itself provide an application-consistent SAP HANA backup. For HANA-aware storage snapshots that coordinate disk snapshots with HANA snapshot commands, see [Back up SAP HANA database instance snapshots on Azure VMs](/azure/backup/sap-hana-database-instances-backup).

@@ -1,12 +1,12 @@
-Microsoft Foundry Hubs and Projects deliver the governance framework your security team requires. By combining Foundry's centralized policy enforcement with Azure OpenAI Service, Azure Cognitive Services, and Azure Container Registry, you build AI infrastructure that passes enterprise security reviews while maintaining developer agility. This approach eliminates public internet exposure through private endpoints, removes credential sprawl through managed identities, and provides visibility into container vulnerabilities before production deployment.
+Secure AI infrastructure requires controls at multiple scopes. Microsoft Foundry hubs share supported settings with hub-based projects, while connected Azure services require their own network, identity, and monitoring configuration.
 
-In this module, you configure a Foundry Hub to enforce security policies across multiple AI projects, integrate Azure OpenAI Service with network isolation and identity controls, and deploy Azure Container Registry with automated vulnerability scanning. By the end, you have production-ready AI infrastructure that satisfies your compliance team and accelerates safe AI adoption across your organization.
+In this module, you examine hub-based project security, Azure OpenAI authentication and private connectivity, deployment-aware data residency, and container image protection. The exercises distinguish a Foundry account and project setup from a hub-based managed-network setup, and also cover customer-managed keys.
 
 ## Learning objectives
 
 By the end of this module, you're able to:
 
-- Configure Microsoft Foundry Hubs and Projects for secure AI development environments
+- Configure Microsoft Foundry hubs and hub-based projects for secure AI development environments
 - Implement Azure OpenAI Service and Cognitive Services with enterprise security controls
 - Secure AI container images and deployments using Azure Container Registry
 - Apply network isolation and identity governance to protect AI infrastructure
@@ -23,4 +23,3 @@ Before starting this module, you should be familiar with:
 
 - [Microsoft Foundry documentation](/azure/ai-foundry/) - Official documentation for Foundry Hubs and Projects
 - [Azure OpenAI Service security best practices](/azure/ai-services/openai/how-to/managed-identity) - Guidance on securing Azure OpenAI deployments
-

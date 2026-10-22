@@ -42,7 +42,7 @@ When comparing Microsoft Entra ID with AD DS, it's important to note the Microso
 - Microsoft Entra ID is a multitenant directory service.
 - Microsoft Entra users and groups are created in a flat structure, and there are no organizational units (OUs) or Group Policy Objects (GPOs).
 - You can't query Microsoft Entra ID by using LDAP; instead, Microsoft Entra ID uses the REST API over HTTP and HTTPS.
-- Microsoft Entra ID doesn't use Kerberos authentication; instead, it uses HTTP and HTTPS protocols such as Security Assertion Markup Language (SAML), Web Services Federation (WS-Federation), and OpenID Connect for authentication. It also uses Open Authorization (OAuth) for authorization.
+- Microsoft Entra ID uses protocols such as Security Assertion Markup Language (SAML), WS-Federation, and OpenID Connect for authentication to web applications, and OAuth 2.0 for authorization. Microsoft Entra Kerberos also supports Kerberos authentication for specific scenarios, such as accessing Azure Files.
 - Microsoft Entra ID includes federation services, and many third-party services are federated with and trust Microsoft Entra ID.
 
 ## Microsoft Entra integration options

@@ -1,14 +1,19 @@
 
-You've successfully built the secure AI infrastructure your financial services organization requires for production deployment. By implementing Microsoft Foundry Hubs for centralized governance, configuring Azure OpenAI Service with managed identities and private endpoints, and deploying Azure Container Registry with automated vulnerability scanning, you've addressed the CISO's core security requirements: eliminated public internet exposure, removed credential sprawl, and gained visibility into container security vulnerabilities before production deployment.
+This module examines security controls for AI infrastructure, including Microsoft Foundry hub-based projects, Azure OpenAI Service, and container image protection. You distinguish supported hub settings from the controls that require configuration on connected resources and calling applications.
 
-Your infrastructure now provides measurable security outcomes. Managed identities removed 100% of credential-based authentication vulnerabilities by eliminating API keys from application code and configuration files. Private endpoints blocked all public internet access attempts to AI services, ensuring traffic flows exclusively through your corporate network. Microsoft Defender for Containers automatically scans every pushed image within minutes, identifying CVEs and providing remediation guidance that reduced your vulnerability response time from weeks to 24 hours. These controls give your CISO the audit logs, network isolation, and access governance needed to approve production AI workloads.
+Hub-based projects share infrastructure and supported security settings rather than receiving a dedicated copy of every Azure resource. Validate project permissions, shared connections, and access to dependent services. For Azure OpenAI, configure the calling identity, required service roles, private connectivity, public access restrictions, and diagnostic settings explicitly.
 
-## Key decisions you made
+Data residency requires a separate deployment decision. Resource location, inference-processing location, stored-data location, and logging destinations aren't interchangeable. Review Global, Data Zone, and geography-based deployment commitments against the workload's approved boundary. A private endpoint or same-region log destination doesn't change the model deployment's processing boundary.
 
-- **Chose managed identities over API keys** for Azure OpenAI Service authentication, eliminating credential management overhead and enabling automatic token rotation
-- **Enforced private endpoints** for all AI services and container registry access, removing public IP addresses from your attack surface
-- **Enabled Microsoft Defender scanning** on Azure Container Registry, gaining automated vulnerability detection across all base images and dependencies
-- **Configured hub-level policies** that cascade to all Foundry Projects, ensuring consistent security controls without per-project configuration
+The exercises distinguish a Foundry account and project from a hub-based managed-network setup. Apply each architecture's own security guidance instead of treating all Foundry projects as hub-based.
+
+## Key security decisions
+
+- **Choose managed identities over API keys** for Azure OpenAI Service authentication where supported, avoiding application-managed API keys
+- **Configure private connectivity and public access restrictions** on the services that require private-only access, with routing and DNS validated for permitted callers
+- **Enable Microsoft Defender scanning** on Azure Container Registry, gaining automated vulnerability detection across all base images and dependencies
+- **Use supported hub settings** as a shared baseline for hub-based projects, while configuring connected-resource controls separately
+- **Select a model deployment type** that matches the approved processing boundary and review storage and logging locations independently
 
 ## Next steps
 

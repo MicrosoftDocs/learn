@@ -1,45 +1,54 @@
 
-## The centralized governance challenge
+## Centralize shared security settings
 
-You might be wondering how to enforce consistent security policies across multiple AI development teams without slowing down innovation. Traditional approaches create isolated environments for each team, forcing security administrators to configure network rules, identity permissions, and encryption settings repeatedly. With five AI projects underway, your security team faces configuring private endpoints, managed identities, and audit logging five separate times—multiplying administrative overhead and increasing the risk of configuration drift.
+Your fraud detection and customer service teams need consistent security controls for AI development. If each team configures every resource independently, your security administrators must review multiple sets of network rules, role assignments, and logging settings. A shared platform reduces repeated configuration, but you still need to identify which controls apply to each resource.
 
-Microsoft Foundry Hubs solve this challenge by providing centralized security governance that applies automatically to all connected projects. A Foundry Hub acts as the policy enforcement layer where you configure network isolation, identity controls, and data protection once. Every Foundry Project that connects to the hub inherits these security controls, ensuring consistency without requiring per-project configuration. This separation allows your security team to maintain governance while data science teams retain autonomy within their project workspaces.
+This unit covers Microsoft Foundry hubs and **hub-based projects**, which use the Foundry (classic) architecture. These aren't the same resource type as newer Foundry projects. Use the documentation for the project type you deploy rather than assuming both architectures have the same inheritance behavior.
 
-## How Hubs and Projects work together
+A hub shares supported configurations across its hub-based projects. These include public network access settings, customer-managed key encryption, identity controls, and a managed virtual network. Hub-level Azure Policy enforcement also applies to the hub-based projects as documented for this architecture. Shared settings give your platform team a common baseline, while project permissions organize team access.
 
-Consider a scenario where your fraud detection team and customer service automation team both need access to Azure OpenAI Service. With traditional Azure resource groups, each team would create separate OpenAI instances, configure their own virtual networks, and manage independent sets of managed identities. This creates security islands where one team might enable public access while another enforces private endpoints—introducing compliance gaps your auditor's flag.
+## Separate hub settings from connected resource controls
 
-:::image type="content" source="../media/manage-independent-sets-managed-identities.png" alt-text="Diagram showing traditional Azure resource groups where each team creates separate OpenAI instances.":::
+Suppose both teams need Azure OpenAI Service. They might provision separate service resources and networks, or use a shared service through a hub connection. The security design needs to account for the Azure OpenAI resource in either case.
 
-Foundry changes this architecture fundamentally. You create one Foundry Hub that defines your organization's security baseline: private endpoint connectivity required, managed identity authentication mandatory, and diagnostic logging enabled for all resources. When the fraud detection team creates their Foundry Project, it automatically inherits the hub's networking configuration—their Azure OpenAI Service endpoint is private by default. The customer service team's project gets identical security controls without more configurations. Both teams work independently within their project boundaries while the hub ensures security consistency.
+:::image type="content" source="../media/manage-independent-sets-managed-identities.png" alt-text="Diagram showing separate fraud detection and customer service environments with their own Azure OpenAI resources and virtual networks.":::
 
-This becomes especially important when your security team needs to respond to new compliance requirements. Instead of updating five separate environments, you modify the hub's policy once. All connected projects inherit the change immediately, reducing your compliance window from weeks to hours and eliminating the risk of overlooking an environment during updates.
+A connection stores information needed to access an external service. It doesn't make that service part of the hub's resource boundary. Adding an Azure OpenAI connection doesn't automatically disable the service's public endpoint, configure its diagnostic settings, or assign permissions to every calling application.
 
-## Core security components
+For each connected resource, verify:
 
-The hub integrates three foundational security services that protect your AI workloads. Microsoft Entra ID provides identity and access management through role-based access control (RBAC), allowing you to define who can create projects, deploy models, and access training data. Unlike service-specific authentication, Microsoft Entra ID centralizes identity management—your existing user groups and conditional access policies apply automatically to AI resources. At the same time, managed identities eliminate credential storage by allowing applications and services to authenticate directly using Microsoft Entra ID tokens, removing API keys from your codebase entirely.
+- The public network access setting and required private endpoint connections.
+- The DNS configuration and network path used by callers.
+- The identities, authentication method, and role assignments used for access.
+- The diagnostic settings and approved log destinations.
+- The encryption configuration required for that service.
 
-Azure Virtual Network delivers network isolation by creating private connectivity between your hub and Azure services. When you deploy a private endpoint for Azure OpenAI Service, all API traffic flows through your virtual network rather than the public internet. This network boundary prevents external access attempts and ensures compliance with data residency requirements. For example, your fraud detection models processing customer transactions stay within EU Azure regions, satisfying data localization mandates.
+Azure Policy assignments at appropriate resource scopes can audit or enforce supported settings. Check the policy's resource types, aliases, effect, and scope. A policy or diagnostic setting on the hub isn't a universal control for every resource referenced by a connection. When you change the baseline, verify compliance across the hub, projects, and connected services.
 
-Azure Key Vault completes the protection layer by securing secrets, certificates, and encryption keys. Even when services require API keys for backward compatibility, Key Vault stores them with access logging and automatic rotation. Your applications reference keys using Key Vault URIs rather than embedding credentials in configuration files. With this approach, your security team gains audit trails showing when keys were accessed, by which identity, and from which application—visibility that's critical during security investigations.
+## Configure identity and network access
 
-## Policy inheritance and workspace isolation
+Microsoft Entra ID and Azure role-based access control (RBAC) govern access to the hub and projects. Access to connected Azure services also requires permissions on those services. For example, when a hub connection uses Microsoft Entra ID, grant the hub's managed identity the required role on the target resource.
 
-Now that you understand the hub's role, let's examine how projects maintain both security consistency and team autonomy. Each Foundry Project operates as an isolated workspace with dedicated compute resources, storage accounts, and AI service connections. Data scientists in the fraud detection project can't access datasets or models in the customer service project—even though both projects connect to the same hub. This isolation prevents accidental data leakage between business domains while simplifying access control through project-level RBAC assignments.
+Hub connections support multiple authentication methods, depending on the connector. These include managed identity, service principal, API key, and some storage SAS token scenarios. Prefer managed identity where supported, and configure credentials and their lifecycle explicitly where another method is necessary. The presence of a hub doesn't require all connections or applications to use managed identity.
 
-Building on this concept, policy inheritance works like a security firewall with mandatory baseline rules. The hub enforces non-negotiable requirements—private endpoints, managed identities, encryption at rest—that projects can't disable. Within these boundaries, project administrators customize permissions for their team members and configure project-specific resources like storage containers or compute clusters. For instance, the fraud detection project might grant senior data scientists permission to deploy production models while restricting junior analysts to development experiments. These project-level permissions add flexibility without compromising hub-enforced security controls.
+For networking, configure the hub's managed network isolation mode and required outbound connections for supported compute. Separately configure private connectivity and public access restrictions for the target services. For example, your Azure OpenAI resource needs its own approved private endpoint connection and appropriate DNS resolution. Private networking controls access paths. It doesn't determine where model inference is processed.
 
-Consider what happens when a new data scientist joins your fraud detection team. The project administrator assigns them the "Data Scientist" role within the Foundry Project. This role inherits hub-level policies automatically—they can only access AI services through private endpoints and must authenticate with their Microsoft Entra ID credentials. The project role then grants specific permissions to training datasets and development compute resources. This layered approach means your security team manages baseline controls once at the hub level, while project administrators handle day-to-day access management within their domains.
+Azure Key Vault stores secrets and encryption keys used by the architecture. Review its permissions, networking, and logging alongside the hub configuration. A shared security design still needs service-specific checks.
 
-:::image type="content" source="../media/architecture-centralized-security-controls.png" alt-text="Diagram showing the Microsoft Foundry Hub architecture with centralized security controls.":::
+## Isolate project assets within shared infrastructure
 
+Hub-based projects organize team assets and access within shared infrastructure. Compute and quota are managed as shared capacity across the hub's projects. Dependent resources, such as Storage and Key Vault, are set up once for the hub and its associated projects. This doesn't mean every project receives a dedicated storage account or its own complete set of service connections.
 
-*Microsoft Foundry Hub architecture showing centralized security controls with policy inheritance flowing to isolated project workspaces*
+Project isolation includes project GUID-prefixed storage containers and project-scoped access to secrets through the supported APIs. Connections can be shared at hub scope or limited to a project. Review the scope before sharing credentials or a service connection with multiple teams.
 
+When a new data scientist joins the fraud detection team, assign a suitable role, such as Azure AI Developer, at the intended project scope. Review inherited assignments and direct permissions on shared services as well. Project membership alone doesn't describe all access that the person might have through a subscription role, storage role, or shared connection.
+
+Validate the design with identities representing each team. Confirm that permitted project operations succeed and that access outside the intended scope is denied. If business domains require stronger separation, assess separate hubs or resources against those requirements rather than assuming project boundaries provide dedicated infrastructure.
 
 ## More resources
 
 - [Plan your Microsoft Foundry Hub architecture](/azure/foundry-classic/concepts/ai-resources) - Architectural guidance for hub and project design patterns
-- [Configure managed identities for Azure AI services](/azure/ai-services/authentication) - Step-by-step guide for passwordless authentication
-
+- [Manage hub connections](/azure/foundry-classic/how-to/hub-connections-add) - Connection scope and supported authentication methods
+- [Review hub and project RBAC](/azure/foundry-classic/concepts/hub-rbac-foundry) - Role assignments and dependency-service permissions
+- [Configure a hub managed network](/azure/foundry-classic/how-to/configure-managed-network) - Network isolation modes and outbound connections
 

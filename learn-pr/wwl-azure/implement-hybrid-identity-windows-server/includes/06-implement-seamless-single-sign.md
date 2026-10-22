@@ -13,28 +13,27 @@ You should join a server that runs the pass-through authentication agent to the 
 You can use pass-through authentication for the following authentication scenarios:
 
 - User sign-ins to all web browser–based applications supported by Microsoft Entra ID.
-- User sign-ins to Office applications that support modern authentication. 
+- User sign-ins to Office applications that support modern authentication, and legacy Office client sign-ins supported by Microsoft Entra pass-through authentication.
 - User sign-ins to Microsoft Outlook clients by using legacy protocols, such as Exchange ActiveSync, Simple Mail Transfer Protocol (SMTP), Post Office Protocol (POP), and Internet Message Access Protocol (IMAP).
 - User sign-ins to Skype for Business application that supports modern authentication, including online and hybrid topologies.
 - Microsoft Entra domain joins for Windows 10 devices.
 - App passwords for multifactor authentication.
 
+> [!IMPORTANT]
+> Pass-through authentication support doesn't override application lifecycle requirements or service-specific authentication restrictions. Use supported Office clients with modern authentication.
+
 ## Unsupported scenarios for pass-through authentication
 
 Although pass-through authentication supports most common authentication scenarios, there are still some scenarios in which you can’t use this method. These scenarios include:
 
-- User sign-ins to legacy Office client applications, excluding Outlook.
-
-  > [!NOTE]
-  > These legacy client apps include Office 2010 and Office 2013 without modern authentication.
-
 - Access to calendar sharing and free/busy information in Exchange hybrid environments on Office 2010 only.
 - User sign-ins to Skype for Business client applications without modern authentication.
-- User sign-ins to Windows PowerShell version 1.0.
 - Detection of users with leaked credentials.
 - Scenarios that require Microsoft Entra Domain Services. Microsoft Entra Domain Services requires tenants to have password hash synchronization enabled, so tenants that use only pass-through authentication won’t work in these scenarios.
 - Scenarios that require Microsoft Entra Connect Health. Pass-through authentication isn't integrated with Microsoft Entra Connect Health.
-- If you use the Apple Device Enrollment Program (Apple DEP) that uses the iOS Setup Assistant, then you can’t use modern authentication as it isn't supported. It will fail to enroll Apple DEP devices into Intune for managed domains that use pass-through authentication. Consider using the Intune Company Portal app as an alternative.
+
+> [!NOTE]
+> For Apple Automated Device Enrollment in Intune, Setup Assistant with modern authentication is supported on iOS/iPadOS 13.0 and later. Distinguish this option from Setup Assistant (legacy), which doesn't provide modern authentication. For enrollment requirements and configuration options, see [Authentication methods for automated device enrollment in Intune](/intune/device-enrollment/apple/ref-automated-authentication-methods).
 
 ## How pass-through authentication works
 
@@ -71,3 +70,4 @@ To learn more, review the following documents.
 
 - [Microsoft Entra seamless single sign-on](https://aka.ms/how-to-connect-sso?azure-portal=true).
 - [User sign-in with Microsoft Entra pass-through authentication](https://aka.ms/how-to-connect-pta?azure-portal=true).
+- [Microsoft Entra pass-through authentication: Current limitations](/entra/identity/hybrid/connect/how-to-connect-pta-current-limitations).

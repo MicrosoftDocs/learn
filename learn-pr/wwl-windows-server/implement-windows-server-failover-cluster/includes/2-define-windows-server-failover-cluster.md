@@ -29,10 +29,10 @@ A failover cluster consists of the components described in the following table.
 
 ## Failover clustering functional levels
 
-Windows Server failover clustering capabilities depend on the cluster's functional level. In general, you would want to ensure that the cluster uses the highest possible functional level. However, support for lower functional levels in Windows Server 2016 and Windows Server 2025 allows you to perform rolling upgrades of failover clusters running earlier OS versions. This way, during an upgrade, it's possible to have Windows Server 2016 and Windows Server 2025 nodes in the same failover cluster, eliminating the need for downtime.
+Windows Server failover clustering capabilities depend on the cluster's functional level. During a cluster OS rolling upgrade, nodes running consecutive Windows Server versions can temporarily coexist in the same cluster. For example, you can upgrade a Windows Server 2022 cluster to Windows Server 2025 one node at a time. To upgrade from Windows Server 2016 to Windows Server 2025, upgrade sequentially through Windows Server 2019 and Windows Server 2022, or migrate to a new cluster.
 
 > [!TIP]
-> After all the nodes that were running Windows Server 2016 have been replaced with Windows Server 2025 nodes, you can update the cluster functional level.
+> Update the cluster functional level after all nodes run the newer Windows Server version and you confirm that the upgrade is successful. This update prevents you from adding nodes that run the previous version.
 
 ## Failover clustering quorum
 

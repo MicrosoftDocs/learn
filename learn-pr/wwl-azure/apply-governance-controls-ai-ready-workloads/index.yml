@@ -2,20 +2,20 @@
 uid: learn.wwl.apply-governance-controls-ai-ready-workloads
 metadata:
   title: "Apply governance controls to AI-ready workloads"
-  description: "Discover classify AI assets enforce Azure Policy guardrails track data lineage and implement hands‑on governance controls securing compliant auditable AI deployments across infrastructure pipelines and sensitive data workflows."
-  ms.date: 02/02/2026
+  description: "Catalog supported ML assets, classify training data, apply Azure Policy guardrails, and review lineage with deployment and audit evidence for AI-ready workloads."
+  ms.date: 10/22/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: azure
 title: "Apply governance controls to AI-ready workloads"
-summary: Discover classify AI assets enforce Azure Policy guardrails track data lineage and implement hands‑on governance controls securing compliant auditable AI deployments across infrastructure pipelines and sensitive data workflows.
+summary: Catalog supported ML assets, classify training data, apply Azure Policy guardrails, and review lineage with deployment and audit evidence for AI-ready workloads.
 abstract: |
  By the end of this module, you're able to:
-  - Configure Microsoft Purview to discover and classify AI infrastructure assets
+  - Configure supported Purview sources to catalog ML assets and classify training data
   - Implement Azure Policy guardrails for AI resource provisioning and management
-  - Establish data lineage tracking for AI training datasets and model outputs
-  - Monitor AI workload compliance using Microsoft Purview audit logs and reports
+  - Track supported lineage between data sources, training datasets, jobs, and models
+  - Review AI workload governance using catalog metadata, Azure Policy compliance results, and relevant audit logs
   - Design access controls that protect AI models and sensitive training data
 prerequisites: |
   - Familiarity with Azure fundamentals, including subscriptions, resource groups, and Azure role-based access control (RBAC)
