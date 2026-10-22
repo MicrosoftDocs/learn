@@ -3,11 +3,11 @@ uid: learn.azure.intro-to-azure-backup.knowledge-check
 title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check questions for the Introduction to Azure Backup Module."
-  ms.date: 10/03/2024
-  author: gerryaobrien
-  ms.author: nitinme
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 2
@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "Snapshot Tier"
       isCorrect: true
-      explanation: "Correct. The snapshots of the VM/Azure Files/Azure Blobs/and so on are retained in the customer's subscription itself in a specified resource group. This ensure restores are quick, because the backup/snapshot is available to the customer locally."
+      explanation: "Correct. Azure VM backup retains snapshots in the customer's subscription for fast restores. Azure Files backup uses file-share snapshots. Azure Blob operational backup uses point-in-time restore and versioning rather than a snapshot tier."
     - content: "Standard Tier"
       isCorrect: false
       explanation: "Incorrect. The Vault-Standard tier is an online storage tier that allows you to store an isolated copy of backup data in a Microsoft-managed tenant, thus creating an extra layer of protection."
@@ -46,6 +46,6 @@ quiz:
       explanation: "Incorrect. MABS is used for backing up on-premises Windows machines."
     - content: "Recovery point objective policies in an Azure vault."
       isCorrect: false
-      explanation: "Incorrect. Recovery point objective (RPO) is concerned with the amount of time it takes for recovery operations."
+      explanation: "Incorrect. Recovery point objective (RPO) is the maximum acceptable data loss, measured in time. Recovery time objective (RTO) is the target time for restoring a business process after a disruption. Neither objective is a component installed on a VM."
  
 

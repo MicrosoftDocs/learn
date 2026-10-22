@@ -1,10 +1,10 @@
 You can use the [Govern methodology](/azure/cloud-adoption-framework/govern/) to help maintain consistent control of your environment and address tangible risks. The Govern methodology provides a structured approach that you can use to establish and optimize governance in Azure. The Govern methodology consists of five steps.
 
-:::image type="content" source="../media/govern.svg" alt-text="Diagram that shows the steps of the Govern methodology." border="false":::
+:::image type="content" source="../media/govern.svg" alt-text="Diagram that shows a governance team establishing a cycle of risk assessment, policy documentation, enforcement, and monitoring." border="false":::
 
 ## Build a team
 
-Select a [small, diverse team](/azure/cloud-adoption-framework/govern/build-cloud-governance-team) to encourage quick decision-making and include various perspectives. Define the [functions](/azure/cloud-adoption-framework/govern/build-cloud-governance-team#define-the-functions-of-the-cloud-governance-team), [authority](/azure/cloud-adoption-framework/govern/build-cloud-governance-team#define-the-authority-of-the-cloud-governance-team), and [scope](/azure/cloud-adoption-framework/govern/build-cloud-governance-team#define-the-scope-of-the-cloud-governance-team) of your team. Ensure that your organization supports your cloud governance team so that you can enforce important security policies. 
+Select a [small, diverse team](/azure/cloud-adoption-framework/govern/build-cloud-governance-team) to encourage quick decision-making and include various perspectives. Define the [functions](/azure/cloud-adoption-framework/govern/build-cloud-governance-team#1-define-the-teams-function), [authority](/azure/cloud-adoption-framework/govern/build-cloud-governance-team#3-define-the-teams-authority), and [scope](/azure/cloud-adoption-framework/govern/build-cloud-governance-team#4-define-the-teams-scope) of your team. Ensure that your organization supports your cloud governance team so that you can enforce important security policies. 
 
 ## Assess cloud risks
 

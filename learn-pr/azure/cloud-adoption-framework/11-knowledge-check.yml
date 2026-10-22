@@ -2,11 +2,11 @@
 uid: learn.azure.cloud-adoption-framework.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 02/06/2025
-  author: Zimmergren
-  ms.author: tozimmergren
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
