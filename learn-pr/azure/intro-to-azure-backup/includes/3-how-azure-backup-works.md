@@ -5,8 +5,8 @@ Let's take a look at how Azure Backup works to provide the data protection you n
   - Snapshot tier
   - Standard tier
   - Archive tier
-- **Data Plane - Availability and Security**: For vaulted backup data, the selected redundancy option provides local redundancy, cross-zone replication, or replication to a paired secondary region.
-- **Management plane - Recovery Services vault, Backup vault, and Resiliency**: Vaults manage backup policies and protected items. Resiliency provides centralized management and monitoring across your backup estate.
+- **Data Plane: Availability and Security**: For vaulted backup data, the selected redundancy option provides local redundancy, cross-zone replication, or replication to a paired secondary region.
+- **Management plane: Recovery Services vault, Backup vault, and Resiliency**: Vaults manage backup policies and protected items. Resiliency provides centralized management and monitoring across your backup estate.
 
 ## What data is backed up and how?
 
@@ -52,7 +52,7 @@ Azure Backup integrates with workloads in different ways:
 
 Vaulted backup transfers protected data to Azure Backup-managed storage. Operational protection can keep the data in the source environment, as described in the access-tier section.
 
-## Data plane - Access tiers
+## Data plane: Access tiers
 
 There are three access tiers where the backups can be stored:
 
@@ -71,7 +71,7 @@ All tiers offer different recovery time objectives (RTO) and are priced differen
 
 :::image type="content" source="../media/data-plane.png" alt-text="Diagram that shows on-premises and Azure workloads connected to snapshot and vault storage, replication, and built-in security.":::
 
-## Data plane - Availability and security
+## Data plane: Availability and security
 
 Vaulted backup data is replicated according to the vault's storage redundancy setting. Locally redundant storage (LRS) keeps replicas in the primary region without guaranteeing distribution across availability zones. Zone-redundant storage (ZRS) replicates data across availability zones in the primary region. Geo-redundant storage (GRS) also replicates data to a paired secondary region.
 
@@ -87,7 +87,7 @@ Azure Backup also supports a backup data lifecycle-management scenario that allo
 
 :::image type="content" source="../media/built-in-security.png" alt-text="Illustration of Azure Backup security features: Azure RBAC, encryption, and soft delete.":::
 
-## Management plane - Recovery Services vault and Backup vault
+## Management plane: Recovery Services vault and Backup vault
 
 Azure Backup uses Recovery Services vaults and Backup vaults to orchestrate and manage backups. For vaulted backup, an isolated copy of the protected data is stored in Azure Backup-managed storage. Operational protection can instead retain data or snapshots in the customer's subscription without creating a vaulted copy. The vault provides an interface for the user to interact with the backup service. Azure Backup Policies within each vault define when the backups should get triggered and how long they need to be retained.
 
@@ -95,7 +95,7 @@ You can use a single vault or multiple vaults to organize and manage your backup
 
 :::image type="content" source="../media/backup-vaults.png" alt-text="Diagram that shows Recovery Services vaults and backup policies managed through the Azure portal, SDK, and CLI.":::
 
-Use Resiliency in the Azure portal to manage and monitor protection across workload types, vaults, subscriptions, regions, and Azure Lighthouse tenants. Resiliency extends the capabilities previously available in Azure Business Continuity Center. For the legacy Backup center experience, open Resiliency and use **Help** > **Go to Backup Center**.
+Use Resiliency in the Azure portal to manage and monitor protection across workload types, vaults, subscriptions, regions, and Azure Lighthouse tenants. Resiliency extends the capabilities previously available in Azure Business Continuity Center. For the legacy Backup center experience, open **Resiliency** and use **Help** > **Go to Backup Center**.
 
 > [!NOTE]
 > This screenshot shows the legacy Backup center experience. For current centralized backup management, search for **Resiliency** in the Azure portal. Legacy Backup center is available from Resiliency through **Help** > **Go to Backup Center**.

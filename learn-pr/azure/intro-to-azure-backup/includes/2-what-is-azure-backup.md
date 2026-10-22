@@ -8,7 +8,7 @@ The Azure Backup service provides simple, secure, and cost-effective solutions t
 
 ## Azure Backup definition
 
-Azure Backup is an Azure service that provides cost effective, secure, and zero-infrastructure backup solutions for supported Azure-managed data assets.
+Azure Backup is an Azure service that provides cost-effective, secure, and zero-infrastructure backup solutions for supported Azure-managed data assets.
 
 The centralized management interface makes it easy to define backup policies and protect a wide range of enterprise workloads, including Azure Virtual Machines, Azure Disks, SQL and SAP databases, Azure file shares, and blobs.
 
@@ -43,7 +43,7 @@ Let's look at some key features of Azure Backup.
 | --- | --- | --- |
 | Zero-infrastructure backup solution | Unlike conventional backup solutions, no backup server or infrastructure is needed. Similarly, no backup storage needs to be deployed, because Azure Backup automatically manages and scales it. | Zero-infrastructure solution eliminates capital expenses and reduces operational expenses. It increases ease of use by automating storage management. |
 | At-scale management | Use Resiliency in the Azure portal for centralized backup management and monitoring. Use APIs, PowerShell, and Azure CLI to automate backup policy and security configuration. | Manage protection across workload types, vaults, subscriptions, regions, and Azure Lighthouse tenants from a unified experience. |
-| Security | Azure Backup provides built-in security to your backup environment, both when your data is in transit and at rest by using capabilities encryption, private endpoints, alerts, and so on. | Protection depends on the workload and configuration. Use supported soft-delete, immutability, and multi-user authorization controls, together with separate administrative permissions, to help protect against accidental or malicious deletion. |
+| Security | Azure Backup provides built-in security to your backup environment, both when your data is in transit and at rest by using capabilities such as encryption, private endpoints, alerts, and so on. | Protection depends on the workload and configuration. Use supported soft-delete, immutability, and multi-user authorization controls, together with separate administrative permissions, to help protect against accidental or malicious deletion. |
 
 ## How do Recovery Time Objective and Recovery Point Objective work?
 
