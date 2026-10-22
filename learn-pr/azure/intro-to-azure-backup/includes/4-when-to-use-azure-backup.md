@@ -42,7 +42,7 @@ Additionally, Azure Backup provides the following advantages specifically for SQ
 
 ### Does Azure Backup help with compliance?
 
-You can implement required access-control mechanisms for your backups. Vaults (Recovery Services and Backup vaults) provide the management capabilities and are accessible through the Azure portal, including Resiliency and vault dashboards, and through supported SDKs, Azure CLI, and REST APIs. It's also an Azure role-based access control (Azure RBAC) boundary, providing you with the option to restrict access to backups only to authorized Backup Admins.
+You can implement required access-control mechanisms for your backups. Vaults (Recovery Services and Backup vaults) provide the management capabilities and are accessible through the Azure portal, including Resiliency and vault dashboards, and through supported SDKs, Azure CLI, and REST APIs. Each vault is also an Azure role-based access control (Azure RBAC) boundary, providing you with the option to restrict access to backups only to authorized Backup Admins.
 
 Short-term retention can be daily. Weekly, monthly, and yearly retention settings keep selected recovery points for longer periods. Backup frequency and retention are different: for example, SQL transaction-log backups can run every 15 minutes to support a 15-minute recovery point objective (RPO), while the backup policy separately defines how long recovery points are retained.
 
