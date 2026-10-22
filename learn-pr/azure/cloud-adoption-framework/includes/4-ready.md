@@ -30,7 +30,7 @@ Continuous optimizations can help you:
 
 ## Develop necessary skills
 
-Cloud adoption requires that your team has the necessary technical skills and organizational roles. Microsoft provides [learning paths](/azure/cloud-adoption-framework/ready/suggested-skills#environmental-technical-readiness-learning-paths) that your team can use to help develop necessary skills. You must [align your teams with cloud adoption functions](/azure/cloud-adoption-framework/ready/suggested-skills#organizational-readiness-learning-paths), which might require that you establish a new organizational structure or assign new roles.
+Cloud adoption requires that your team has the necessary technical skills and organizational roles. Microsoft provides [training guidance and resources](/azure/cloud-adoption-framework/plan/prepare-people-for-cloud#close-the-skills-gap) that your team can use to help develop necessary skills. You must [align your teams with cloud adoption functions](/azure/cloud-adoption-framework/plan/prepare-organization-for-cloud#document-cloud-responsibilities), which might require that you establish a new organizational structure or assign new roles.
 
 ## Avoid antipatterns
 

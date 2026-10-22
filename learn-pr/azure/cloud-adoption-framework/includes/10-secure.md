@@ -12,11 +12,11 @@ This Cloud Adoption Framework Secure guidance is one component of a larger holis
 
 - [Zero Trust guidance](/security/zero-trust/) provides guidance for security teams to implement technical capabilities to support a Zero Trust modernization initiative.
 
-Throughout your cloud adoption journey, look for opportunities to enhance your overall security posture through [modernization](/azure/cloud-adoption-framework/secure/overview#security-posture-modernization), [incident preparation](/azure/cloud-adoption-framework/secure/overview#incident-preparation-and-response), and response. Your ability to prepare for and respond to incidents can significantly affect your success in the cloud. Well-designed preparation mechanisms and operational practices enable quick threat detection and help minimize the blast radius of incidents.
+Throughout your cloud adoption journey, look for opportunities to enhance your overall security posture through [modernization](/azure/cloud-adoption-framework/secure/overview#modernize-security-posture), [incident preparation](/azure/cloud-adoption-framework/secure/overview#prepare-for-and-respond-to-incidents), and response. Your ability to prepare for and respond to incidents can significantly affect your success in the cloud. Well-designed preparation mechanisms and operational practices enable quick threat detection and help minimize the blast radius of incidents.
 
 ## Use the CIA Triad model
 
-The [CIA Triad](/azure/cloud-adoption-framework/secure/overview#the-cia-triad) is a fundamental model in information security that represents three core principles: confidentiality, integrity, and availability.
+The [CIA Triad](/azure/cloud-adoption-framework/secure/overview#adopt-cia-triad-principles) is a fundamental model in information security that represents three core principles: confidentiality, integrity, and availability.
 
 - **Confidentiality** ensures that only authorized individuals can access sensitive information. This principle includes measures like encryption and access controls to protect data from unauthorized access.
 
@@ -26,7 +26,7 @@ The [CIA Triad](/azure/cloud-adoption-framework/secure/overview#the-cia-triad) i
 
 Some ways that the triad principles can help ensure security and reliability include:
 
-- **Data protection:** Protect sensitive data from breaches by taking advantage of the CIA Triad, which ensures privacy and compliance with regulations.
+- **Data protection:** Use CIA Triad principles to guide controls that protect sensitive data. Assess and implement applicable privacy and regulatory requirements; applying the triad alone doesn't establish compliance.
 
 - **Business continuity:** Ensure data integrity and availability to maintain business operations and avoid downtime.
 

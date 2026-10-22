@@ -3,9 +3,9 @@ uid: learn.azure.cloud-adoption-framework
 metadata:
   title: Introduction to the Microsoft Cloud Adoption Framework
   description: "This module covers the basics of how to use the Cloud Adoption Framework to help you align your strategy for business, people, and technology."
-  ms.date: 02/06/2025
-  author: Zimmergren
-  ms.author: tozimmergren
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.service: caf
   ms.topic: module
 title: Introduction to the Microsoft Cloud Adoption Framework

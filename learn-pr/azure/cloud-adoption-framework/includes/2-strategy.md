@@ -1,14 +1,14 @@
-You can use the [Strategy methodology](/azure/cloud-adoption-framework/strategy/) to create a comprehensive plan that outlines your organization's approach when you adopt and integrate cloud technologies. A cloud adoption strategy helps you align with business goals. The Strategy methodology consists of five steps.
+You can use the [Strategy methodology](/azure/cloud-adoption-framework/strategy/) to create a comprehensive plan that outlines your organization's approach when you adopt and integrate cloud technologies. A cloud adoption strategy helps you align with business goals. The Strategy methodology defines four steps: define motivations, mission, and objectives; define your strategy team; prepare your organization; and inform your strategy. This unit also includes an initial strategy assessment, which is shown as an additional activity in the following diagram.
 
-:::image type="content" source="../media/strategy-overview.svg" alt-text="Diagram showing steps: assess strategy; define motivations, mission, and objectives; define team; prepare organization; and inform strategy." border="false":::
+:::image type="content" source="../media/strategy-overview.svg" alt-text="Diagram that shows a strategy cycle: assess; define motivations, mission, and objectives; define team; prepare organization; inform strategy." border="false":::
 
 ## Assess your strategy
 
-[Assess your existing cloud adoption strategy.](/azure/cloud-adoption-framework/strategy/cloud-adoption-strategy-evaluator) Use the feedback from your assessment to inform your organization of your current cloud maturity, identify gaps in your strategy, and take action to improve.
+[Assess your existing cloud adoption strategy.](/assessments/8fefc6d5-97ac-42b3-8e97-d82701e55bab/) Use the feedback from your assessment to inform your organization of your current cloud maturity, identify gaps in your strategy, and take action to improve.
 
 To assess your current cloud strategy posture, use the [Cloud Adoption Strategy Evaluator](/assessments/8fefc6d5-97ac-42b3-8e97-d82701e55bab/) assessment tool. 
 
-:::image type="content" source="../media/cloud-adoption-strategy-evaluator-assessment.png" alt-text="A screenshot that shows the Cloud Adoption Strategy Evaluator assessment.":::
+:::image type="content" source="../media/cloud-adoption-strategy-evaluator-assessment.png" alt-text="Screenshot of the Cloud Adoption Strategy Evaluator page with the Start Assessment button and a sample recommendations report.":::
 
 ## Determine your motivations, mission, and objectives
 
@@ -38,7 +38,7 @@ Your organization might need to transition from a [project delivery model to a p
 
 ## Inform your strategy
     
-After you complete the first four steps, you can factor in the following considerations to [inform your cloud adoption strategy](/azure/cloud-adoption-framework/strategy/inform):
+Use the assessment and the preceding Strategy steps to [inform your cloud adoption strategy](/azure/cloud-adoption-framework/strategy/inform) with the following considerations:
 
 - **Financial efficiency:** Make strategic decisions to help ensure that your organization gets the best value for its investment, while minimizing unnecessary expenses.
 
