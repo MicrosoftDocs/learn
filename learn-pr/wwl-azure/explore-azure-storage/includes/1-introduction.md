@@ -8,7 +8,7 @@ Storage options for SAP workloads in Azure include Azure Virtual Machine disks, 
 - Explore Azure Files.
 - Examine Azure Virtual Machine disks.
 - Learn to recognize virtual machine images and disks.
-- Explore managed and unmanaged disks.
+- Explore Azure managed disks.
 - Explore caching for virtual machines and data disks.
 - Explore Write Accelerator.
 - Examine general database sizing.

@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.apply-governance-controls-ai-ready-workloads.discover-classify-ai-infrastructure-assets
-title: "Discover and classify AI infrastructure assets"
+title: "Catalog ML assets and classify training data"
 metadata:
-  title: "Discover and classify AI infrastructure assets"
-  description: "Discover and classify AI infrastructure assets."
-  ms.date: 02/02/2026
+  title: "Catalog ML assets and classify training data"
+  description: "Use supported Purview sources to catalog Azure Machine Learning assets and classify training data."
+  ms.date: 10/22/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 12
 content: |

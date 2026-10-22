@@ -4,26 +4,26 @@ title: "Module assessment"
 metadata:
   title: "Knowledge check"
   description: "Knowledge check"
-  ms.date: 02/02/2026
+  ms.date: 10/22/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 6
 content: "Choose the best response for each of the following questions."
 quiz:
   questions:
-  - content: "Your data science team trained an Azure Machine Learning model using a dataset that Purview classified as **Internal Use Only**. After deployment, Purview's automated classification detects that the source dataset now contains customer email addresses, upgrading the classification to **Confidential - personal data**. What governance action should you take first?"
+  - content: "A Purview scan identifies customer email addresses in a training dataset stored in Azure Data Lake Storage. The dataset is associated with registered Azure Machine Learning jobs and models. What governance action should the security team take first?"
     choices:
-    - content: "Review lineage in Purview to identify all models trained from this dataset, verify that deployed endpoints use private network access, and flag models for security review to confirm access controls match the upgraded sensitivity level."
+    - content: "Review available lineage to identify related jobs and models, correlate them with deployment records, and assess whether the actual data, model, and endpoint controls meet the requirements for personal data."
       isCorrect: true
-      explanation: "Purview lineage identifies affected models so you can validate that existing security controls (private endpoints, access policies) match the elevated sensitivity. Security review confirms whether current protections suffice or require enhancement before taking disruptive action."
+      explanation: "Available lineage helps scope the review. Deployment records identify endpoints, and the security team verifies controls in the relevant Azure services. Classification doesn't automatically change model labels, permissions, or network settings."
     - content: "Immediately delete all models trained from this dataset and redeploy them after removing personal data from the training data, as any model exposure represents a compliance violation requiring immediate remediation."
       isCorrect: false
-      explanation: "Immediate deletion disrupts production without assessing actual risk—existing controls mayovide adequate protection for the upgraded classification. Downgrading classification ignores the discovered personal data and creates compliance risk by misrepresenting the data's true sensitivity level."
-    - content: "Change the Purview classification back to **Internal Use Only** since the model was trained before the personal data was discovered, maintaining the original classification to avoid disrupting production services."
+      explanation: "Deleting models before assessing the data exposure and existing controls can disrupt production without establishing which assets require remediation. The team should first review the available evidence and actual protection settings."
+    - content: "Remove the personal-data classification because the model is already deployed, retain the current permissions and endpoint settings, and wait for the next training cycle before reviewing the security requirements."
       isCorrect: false
-      explanation: "Immediate deletion disrupts production without assessing actual risk—existing controls mayovide adequate protection for the upgraded classification. Downgrading classification ignores the discovered personal data and creates compliance risk by misrepresenting the data's true sensitivity level."
+      explanation: "Removing a classification doesn't remove the personal data or address its handling requirements. The team needs to review related assets and controls when the finding is identified."
   - content: "You need to deploy an Azure Policy that enforces encryption with customer-managed keys for all Azure Machine Learning workspaces. Development teams report this requirement slows their experimentation because provisioning Key Vault and keys adds 15-20 minutes to workspace setup. Which policy enforcement strategy balances governance requirements with developer productivity?"
     choices:
     - content: "Assign the policy with DeployIfNotExists effect at the management group level, configuring automatic Key Vault and key provisioning so encryption is enforced transparently without manual developer configuration steps."
@@ -35,14 +35,14 @@ quiz:
     - content: "Create a policy exemption for all development workspaces to eliminate the encryption requirement during experimentation, then require manual security review and encryption enablement before promoting workspaces to production."
       isCorrect: false
       explanation: "DeployIfNotExists with automatic Key Vault provisioning still adds 15-20 minutes regardless of automation, and may create cost concerns with numerous test Key Vaults. Exemptions eliminate protection during development when data leaks often occur through experiment artifacts, creating unnecessary risk that staged enforcement avoids."
-  - content: "Your compliance team asks for a report showing which customer records influenced predictions made by your fraud detection model during August 2024. You need to provide this audit trail within 48 hours. Which Microsoft Purview capability enables you to meet this requirement efficiently?"
+  - content: "A compliance team needs evidence of the dataset and model versions used by a fraud detection service during a reporting period. Which approach provides the appropriate evidence?"
     choices:
-    - content: "Use Purview's data lineage viewer to trace the model's inference endpoint back through registered model versions to the specific training dataset version used during August retraining, then query that dataset's lineage to identify source customer records."
+    - content: "Review supported Purview lineage relationships and correlate them with retained ML job records, dataset and model version identifiers, deployment history, and application logs for the reporting period."
       isCorrect: true
-      explanation: "Purview lineage automatically captures version-specific relationships between inference endpoints, models, training datasets, and source records, letting you trace backwards from predictions to input data within minutes rather than days."
-    - content: "Generate a Purview Data Catalog export showing all assets classified as **Confidential - Customer Data** and manually filter by creation dates in August, assuming these represent the records used for model training that month."
+      explanation: "Purview provides supported asset relationships. ML records establish training details, while deployment history and application logs establish production use. The ML connector doesn't automatically provide complete inference-endpoint or record-level prediction lineage."
+    - content: "Export all catalog assets classified as containing personal data and filter their creation dates to the reporting period, treating those dates as proof of the training and deployed model versions."
       isCorrect: false
-      explanation: "Catalog exports show asset inventory but not data flow relationships, requiring manual correlation that takes days and introduces human error. Audit logs capture execution events but not data lineage—knowing a training job ran doesn't reveal which specific records it consumed without querying lineage metadata."
-    - content: "Configure Purview audit logs to track all Azure Machine Learning training job executions during August, then contact data scientists to manually document which customer records they included in training datasets for that period."
+      explanation: "An asset's classification and creation date don't establish which version a training job uses or which model an application invokes. Those questions require training and deployment evidence."
+    - content: "Use the current endpoint configuration and assume its model and dataset versions apply to the whole reporting period, without retaining historical deployment records or examining the associated training jobs."
       isCorrect: false
-      explanation: "Catalog exports show asset inventory but not data flow relationships, requiring manual correlation that takes days and introduces human error. Audit logs capture execution events but not data lineage—knowing a training job ran doesn't reveal which specific records it consumed without querying lineage metadata."
+      explanation: "The current endpoint configuration doesn't establish which versions are in use earlier in the reporting period. Retained training, deployment, and application records are needed to establish historical use."

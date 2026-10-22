@@ -4,9 +4,9 @@ title: "Implement Azure Policy guardrails for AI workloads"
 metadata:
   title: "Implement Azure Policy guardrails for AI workloads"
   description: "Implement Azure Policy guardrails for AI workloads."
-  ms.date: 02/02/2026
+  ms.date: 10/22/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 11
 content: |

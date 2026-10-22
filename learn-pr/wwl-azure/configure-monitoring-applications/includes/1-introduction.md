@@ -7,7 +7,7 @@ In this module you learn how to:
 - Describe how Application Insights is used to monitor application performance.
 - Distinguish between the different Application Insights sampling rates.
 - Describe Azure diagnostic settings and resource logs.
-- Leverage Azure SQL Insights to improve performance of Azure SQL database applications.
+- Monitor Azure SQL performance using current monitoring and tuning tools.
 
 ## Prerequisites
 - Understand the basic functionality of Azure Monitor and Log Analytics workspaces.

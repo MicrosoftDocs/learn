@@ -17,7 +17,7 @@ For information regarding the recommended swap file size, refer to [SAP Note \#1
 
 ## Managed disks
 
-The use of managed disks is recommended for all SAP workloads. Managed disks are required to implement Write Accelerator. As explained earlier, Write Accelerator is a disk capability of M-Series Azure Virtual Machines with Premium storage-based Azure managed disks. Its purpose is to improve the I/O latency of writes. Write Accelerator is ideally suited where log file updates are required to persist to disk in a highly performant manner for modern databases.
+Use managed disks for all SAP workloads. Managed disks are required to implement Write Accelerator. As explained earlier, Write Accelerator is a disk capability of M-Series Azure Virtual Machines with Premium storage-based Azure managed disks. Its purpose is to improve the I/O latency of writes. Write Accelerator is ideally suited where log file updates are required to persist to disk in a highly performant manner for modern databases.
 
 ## Premium Storage
 
@@ -27,7 +27,7 @@ Premium Storage provides better performance than Standard Storage, especially fo
 - Using Azure Standard SSD storage for non-performance sensitive DBMS deployment
 - Using Azure Premium SSD storage for all other Azure Virtual Machines DBMS workloads.
 
-For SAP application servers, including the Central Services virtual machines, you could potentially use Azure Standard Storage to reduce cost, because application execution takes place in memory and uses disks for logging only. However, as explained earlier, Standard Storage is only certified for unmanaged disks. Since application servers don't host any data, you can also use the smaller P4 and P6 Premium Storage disks to help minimize cost.
+For SAP application servers, including the Central Services virtual machines, use managed disks that meet the workload's performance and SAP support requirements. Smaller P4 and P6 Premium SSD managed disks can help minimize cost for application servers.
 
 ## Multi-disk volumes
 

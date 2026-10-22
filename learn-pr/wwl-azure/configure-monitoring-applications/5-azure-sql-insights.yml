@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-monitoring-applications.azure-sql-insights
-title: Azure SQL Insights
+title: Monitor Azure SQL performance
 metadata:
-  title: Azure SQL Insights
-  description: "Azure SQL Insights"
-  ms.date: 10/25/2023
+  title: Monitor Azure SQL performance
+  description: "Monitor performance of Azure SQL Database and Azure SQL Managed Instance."
+  ms.date: 10/22/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 8
 content: |
