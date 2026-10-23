@@ -2,12 +2,13 @@
 uid: learn.wwl.enable-semantic-search-azure-database-postgresql.create-embeddings-with-azure-ai-extension
 title: Create embeddings with the Azure AI extension
 metadata:
+  zone_pivot_groups: video-or-text
   adobe-target: true
   prefetch-feature-rollout: true
   title: Create embeddings with the Azure AI extension
-  description: "Create embeddings with the Azure AI extension"
-  ms.date: 04/23/2025
-  author: wwlpublish
+  description: "Create embeddings with the Azure AI extension."
+  ms.date: 10/23/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ms.custom:

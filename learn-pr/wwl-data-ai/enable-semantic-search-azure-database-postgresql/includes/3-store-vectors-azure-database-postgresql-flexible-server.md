@@ -1,6 +1,17 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=52a21454-ebbb-4f78-8a74-f9426a61bf88]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Recall that you require embedding vectors stored in a vector database to run a semantic search. Azure Database for PostgreSQL flexible server can be used as a [vector database](/azure/postgresql/flexible-server/how-to-use-pgvector) with the `vector` extension.
 
-![Diagram of an Azure Database for PostgreSQL flexible server and the extension named "vector." Next to it are four stored vectors with n-dimensions and arbitrary numeric values.](../media/store-vectors.png)
+![Diagram of Azure Database for PostgreSQL flexible server using the vector extension to store four embedding vectors.](../media/store-vectors.png)
 
 ## Introduction to `pgvector`
 
@@ -87,7 +98,7 @@ SELECT '[1,1]' <=> '[-1,-1]';
 
 Consider these vectors:
 
-![A 2D graph showing the vectors (1,1), (1,0), (0,1), and (0,0).](../media/vectors.png)
+![Diagram of a two-dimensional graph showing vectors (1, 1), (1, 0), (0, 1), and (-1, -1).](../media/vectors.png)
 
 Their similarities and distances are:
 
@@ -138,3 +149,8 @@ Results:
  3 | [4,5,6] | 0.0053884541273605535
 ```
 
+::: zone-end
+
+
+> [!TIP]
+> See the **Text and images** tab for more details!
