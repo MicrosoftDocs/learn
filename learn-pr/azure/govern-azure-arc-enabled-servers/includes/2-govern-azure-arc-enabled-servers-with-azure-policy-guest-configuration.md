@@ -1,34 +1,46 @@
-Fabrikam Residences onboarded its machines to Azure Arc-enabled servers. Unlike Azure VMs where Guest Configuration is deployed as a virtual machine (VM) extension, Azure Arc-enabled servers have the Guest Configuration service as part of the Connected Machine Agent. In this Unit, you learn about Guest Configuration and how it fits into Azure Arc-enabled servers. 
+Fabrikam Residences needs to audit and manage operating system settings across its Azure Arc-enabled servers. Azure Machine Configuration provides this capability. Its agent is included in the Azure Connected Machine agent on Arc-enabled servers. On Azure virtual machines (VMs), Machine Configuration uses a separate VM extension.
 
-## Overview of Guest Configuration
+## Audit and configure machine settings
 
-Azure Policy's Guest Configuration feature provides native capability to audit or configure operating system settings as code, both for machines running in Azure and Arc-enabled machines. While Guest Configuration is deployed as a VM extension to Azure Virtual Machines, the Guest Configuration agent is embedded in the Connected Machine Agent for Azure Arc-enabled servers. By default, Arc-enabled servers can rely on the Guest Configuration service to provide in-guest policy and Guest Configuration functionality to Azure Arc-enabled servers.
+Azure Machine Configuration audits or configures operating system, application, and environment settings as code. You can assign configurations to individual machines or use Azure Policy to assign them at scale. For details, see Azure Machine Configuration overview in More Info in the Summary unit.
 
-Guest Configuration can be used for both configuration management and compliance of resources. Configuration settings include operating system settings, application configuration or presence, and environment settings. From a compliance point of view, you can audit or deploy settings to all machines in scope. You can do so reactively, to your existing machines. Or, proactively to new machines as you deploy them.
+Azure Policy determines which resources are in scope and reports compliance. Machine Configuration evaluates the settings inside the operating system. This distinction lets Fabrikam apply the same configuration requirements to existing servers and to new servers that enter a policy assignment's scope.
 
-## Built-in Azure Policy Guest Configuration
+Machine Configuration supports the following behaviors when the configuration package and policy support them:
 
-There are dozens of built-in Azure Policies for Arc-enabled servers that use Guest Configuration. Some examples of Azure Policy Guest Configuration for Arc-enabled servers include:
+| Mode | Behavior |
+| --- | --- |
+| Audit | Evaluates settings and reports compliance without changing the machine. |
+| Apply and monitor | Applies the configuration, then reports subsequent drift without automatically correcting it. |
+| Apply and autocorrect | Applies the configuration and corrects subsequent drift to maintain the desired settings. |
 
-- Configuring the time zone on Windows machines.
-- Specifying the Group Policy settings in the **Windows Firewall Properties** category for the firewall state, connections, rule management, and notifications, on Windows machines.
-- Meeting the requirements for **Security Options - User Account Control** on Windows machines.
+For example, Fabrikam can audit its current configuration before choosing a configuration-capable policy to apply an approved setting. Check the policy's supported operating systems, parameters, and effect before assignment. Test configuration changes on a small group of machines before expanding the scope.
 
-## Guest Configuration in disconnected scenarios
+> [!NOTE]
+> Not every built-in policy can change settings. The **Windows machines should meet requirements of the Azure compute security baseline** policy used in the next unit is audit-only. Selecting enforcement for an Azure Policy assignment doesn't turn an audit-only policy into a configuration-enforcement policy.
 
-For disconnected machines, Azure Arc-enabled servers have the following Azure Policy guest configuration behavior:
+For configuration management beyond built-in definitions, you can author a custom configuration package and assign it through Azure Policy. See Machine Configuration assignment resources in More Info in the Summary unit.
 
-- An Azure Policy assignment that targets disconnected machines is unaffected.
-- Guest assignment is stored locally for 14 days. Within the 14-day period, if the Connected Machine agent reconnects to the service, policy assignments are reapplied.
-- Assignments are deleted after 14 days and aren't reassigned to the machine after the 14-day period.
+## Use built-in policies
 
-## Azure Policy Guest Configuration Pricing
+Built-in policies for Arc-enabled servers include scenarios such as auditing security baseline settings, checking Windows security options, and configuring the Windows time zone. The policy definition determines whether a scenario audits settings or applies configuration.
 
-Billing is based on the number of servers registered with the service that have one or more Guest Configurations assigned to them. Billing is pro-rated hourly. Offline machines, such as machines that are disconnected or powered-off for the entire hour, aren't billed. Azure Arc resources managed by guest configuration are excluded from billing in the following scenarios.
+Start with Azure Policy built-in definitions for Azure Arc-enabled servers in More Info in the Summary unit. Review the definition rather than assuming that all policies in an initiative have the same effect or remediation behavior.
 
-- Azure Automation: Guest Configuration assignments aren't billed if the state configuration or change tracking features offered by Azure Automation already manage the machine.
-- Microsoft Defender for Cloud: Azure Policy assignment of the Azure Security Benchmark initiative creates configuration assignment. Azure Policy assignment of a built-in policy initiative in the "Regulatory Compliance" category creates configuration assignment. Azure Policy assignment of a custom policy initiative created in Microsoft Defender for Cloud creates configuration assignment.
-- Azure Stack HCI: You can use Azure benefits on your Azure Stack HCI cluster so that the Guest Configuration assignments are used at no extra fee. You can use these benefits for virtual machines hosted by Azure Stack HCI and nodes in an Azure Stack HCI cluster.
-- Azure Security Baselines and non-Guest Configuration Azure Policies don't trigger pricing.
+## Understand disconnected behavior
 
-Azure Policy Guest Configuration, including Azure Automation change tracking, inventory, and state configuration, costs $6/server/month for Azure Arc-enabled servers. There's no charge to assign Azure Policy Guest Configuration to Azure VMs.
+Azure Arc-enabled servers require connectivity for cloud management. When a machine disconnects, its Azure Policy assignments remain in place, but local configuration assignments have a limited lifetime:
+
+- Local configuration assignments are retained for 14 days.
+- If the Connected Machine agent reconnects within that period, policy assignments are reapplied.
+- After 14 days, local assignments are deleted and aren't automatically reassigned to the machine.
+
+Don't design a disconnected configuration-management solution around this temporary retention. Restore connectivity and review assignments and compliance. See Troubleshoot Arc connectivity in More Info in the Summary unit.
+
+## Plan for service costs
+
+Azure Policy resource-governance capabilities don't incur an additional service charge. Machine Configuration is available at no additional charge for Azure VMs. For Arc-enabled servers, billable Machine Configuration usage is charged per managed server, prorated hourly, rather than per policy. Review Azure Policy pricing in More Info in the Summary unit for current rates and exclusions.
+
+Benefits can reduce service charges for qualifying machines. For example, Windows Server Management enabled by Azure Arc includes Machine Configuration for eligible licenses after the required enrollment or attestation. Eligible VMs on Azure Local can also use Machine Configuration at no additional cost when they meet the Azure verification requirements. See Windows Server management benefits and Azure verification benefits in More Info in the Summary unit. Simply connecting a server to Azure Arc doesn't establish eligibility for every benefit.
+
+Review the costs of the other services you enable, including data ingestion and retention in Log Analytics workspaces.

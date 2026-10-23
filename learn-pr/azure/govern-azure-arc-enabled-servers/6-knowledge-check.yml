@@ -2,59 +2,72 @@
 uid: learn.azure.govern-azure-arc-enabled-servers.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: Knowledge check
-  ms.date: 08/09/2024
-  author: aurnovcy
-  ms.author: aurnovc
+  ms.date: 10/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   module_assessment: true
-durationInMinutes: 7
+durationInMinutes: 8
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
   questions:
-  - content: While most Azure Policy scenarios for Azure Arc-enabled servers are free, which of the following Azure Policy scenarios trigger a charge?
+  - content: Fabrikam wants to assign several related governance policies together and track their compliance across a group of Arc-enabled servers. Which Azure capability should it use?
     choices:
-    - content: Assigning a non-Guest Configuration Azure Policy to an Arc-enabled server.
-      isCorrect: false
-      explanation: Incorrect, non-Guest Configuration Azure Policies are free.
-    - content: Assigning a Guest Configuration Azure Policy to an Arc-enabled Stack HCI Node.
-      isCorrect: false
-      explanation: Incorrect, assigning to an Arc-enabled Stack HCI Node is free.
-    - content: Assigning a Guest Configuration Azure Policy to an Azure virtual machine (VM).
-      isCorrect: false
-      explanation: Incorrect, assigning to an Azure VM is free.
-    - content: Assigning a Guest Configuration Azure Policy to an Arc-enabled server that isn't connected to Stack HCI.
+    - content: An Azure Policy initiative
       isCorrect: true
-      explanation: Correct, assigning a Guest Configuration Azure Policy to a non-Stack HCI Arc-enabled server is charged.
-  - content: Azure Automanage onboards Azure Arc-enabled servers to several best practices. Which of the following services aren't automatically onboarded for you when you use Automanage machine best practices on an Azure Arc-enabled server?
+      explanation: Correct. An initiative groups related policy definitions so that they can be assigned and monitored together.
+    - content: A Log Analytics workspace
+      isCorrect: false
+      explanation: Incorrect. A workspace stores and analyzes log data; it doesn't group or assign policy definitions.
+    - content: An Azure Update Manager maintenance configuration
+      isCorrect: false
+      explanation: Incorrect. A maintenance configuration defines update scheduling, not a group of governance policy definitions.
+    - content: An Azure Automation Hybrid Runbook Worker group
+      isCorrect: false
+      explanation: Incorrect. A worker group provides targets for runbook execution; it doesn't group policy definitions.
+  - content: Which statement describes the Windows machines should meet requirements of the Azure compute security baseline policy used in this module?
     choices:
-    - content: Machine Insights Monitoring
-      isCorrect: false
-      explanation: Incorrect, Machine Insights Monitoring is a participating service.
-    - content: Microsoft Sentinel
+    - content: It audits settings and reports noncompliance without automatically correcting those settings.
       isCorrect: true
-      explanation: Correct, Microsoft Sentinel isn’t a participating service.
-    - content: Change Tracking and Inventory
+      explanation: Correct. This policy uses the AuditIfNotExists effect to report noncompliant settings without changing them.
+    - content: It automatically corrects every noncompliant setting.
       isCorrect: false
-      explanation: Incorrect, Change Tracking, and Inventory aren't participating services.
-    - content: Azure Guest Configuration
+      explanation: Incorrect. The baseline reports noncompliance but doesn't automatically remediate it.
+    - content: It replaces Azure Update Manager for operating system patching.
       isCorrect: false
-      explanation: Incorrect, Azure Guest Configuration is a participating service.
-  - content: Which of the following services isn’t a component of Azure Automation’s robust capabilities for Arc-enabled servers?
+      explanation: Incorrect. The baseline audits configuration; Azure Update Manager manages operating system updates.
+    - content: It applies only to native Azure virtual machines.
+      isCorrect: false
+      explanation: Incorrect. The policy also evaluates supported Arc-enabled servers when the Include Arc connected servers parameter is true.
+  - content: Which service should you use to assess and schedule operating system updates for Azure Arc-enabled servers?
     choices:
-    - content: Azure Policy
+    - content: Azure Update Manager
       isCorrect: true
-      explanation: Correct, Azure Policy isn't part of Azure Automation.
-    - content: Change Tracking and Inventory
+      explanation: Correct. Azure Update Manager assesses and manages updates for supported Azure VMs and Arc-enabled servers.
+    - content: Azure Change Tracking and Inventory
       isCorrect: false
-      explanation: Incorrect, Change Tracking, and Inventory are part of Azure Automation.
-    - content: Update Management
+      explanation: Incorrect. Change Tracking and Inventory records configuration changes and inventory; it doesn't schedule operating system patch installation.
+    - content: Azure Monitor Agent
       isCorrect: false
-      explanation: Incorrect, Update Management is part of Azure Automation.
-    - content: Process Automation
+      explanation: Incorrect. Azure Monitor Agent collects monitoring data; Azure Update Manager doesn't depend on it.
+    - content: Azure Machine Configuration
       isCorrect: false
-      explanation: Incorrect, Process Automation is part of Azure Automation.
+      explanation: Incorrect. Machine Configuration audits and configures settings; Azure Update Manager is the service for this update-management scenario.
+  - content: Which deployment should Fabrikam use to run an Azure Automation runbook directly on an Arc-enabled server?
+    choices:
+    - content: An extension-based Hybrid Runbook Worker (V2) in a worker group
+      isCorrect: true
+      explanation: Correct. The worker executes the runbook on a machine in the selected group. Use a group containing only the target server when execution must occur on that server.
+    - content: An Azure Automation cloud sandbox
+      isCorrect: false
+      explanation: Incorrect. A cloud sandbox executes the job in Azure, not directly on the Arc-enabled server.
+    - content: An Azure Monitor Agent extension
+      isCorrect: false
+      explanation: Incorrect. AMA collects monitoring data; it isn't a runbook execution worker.
+    - content: A Machine Configuration audit assignment
+      isCorrect: false
+      explanation: Incorrect. An audit assignment evaluates configuration compliance; it doesn't execute Azure Automation runbook jobs.
 
