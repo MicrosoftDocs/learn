@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.app-control-windows-server.understand-code-integrity-boundaries
+title: Understand Code Integrity boundaries
+metadata:
+  title: Understand Code Integrity Boundaries
+  description: Distinguish kernel-mode, user-mode, host, guest, and signing boundaries for App Control on Windows Server.
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understand-code-integrity-boundaries.md)]

@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.devrel.app-control-windows-server
+metadata:
+  title: Restrict Unauthorized Code Execution with Code Integrity Policies on Windows Server
+  description: Design, deploy, operate, and recover Code Integrity policies on Windows Server 2025 while preserving critical server functions.
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: windows-server
+title: Restrict unauthorized code execution with Code Integrity policies on Windows Server
+summary: |
+  App Control for Business is a Code Integrity (CI) technology that restricts which executable code can run on a system. This module explains how to design, deploy, operate, and recover Code Integrity policies without losing critical server functions.
+abstract: |
+  By the end of this module, you'll be able to:
+
+  - Select a Windows Server 2025 policy architecture and management model.
+  - Predict authorization across enforced base policies, supplemental policies, and deny rules.
+  - Build, inspect, version, link, and compile appropriately scoped policies.
+  - Approve enforcement from audit evidence and workload tests.
+  - Diagnose binary, driver, PowerShell, and dynamic-code failures.
+  - Sign, update, retire, and recover policies while preserving workload availability.
+prerequisites: |
+  - Experience administering Windows Server, Hyper-V, and Active Directory Domain Services.
+  - Familiarity with PowerShell administration, Windows event logs, and application deployment.
+  - Understanding of code signing, Secure Boot, backups, and recovery procedures.
+  - To follow the examples, access to a representative Windows Server 2025 test environment with PowerShell 7.4 or later, Windows PowerShell 5.1, and independent recovery access.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - advanced
+roles:
+  - administrator
+  - security-engineer
+products:
+  - windows-server
+subjects:
+  - security
+  - infrastructure
+units:
+  - learn.devrel.app-control-windows-server.introduction
+  - learn.devrel.app-control-windows-server.understand-code-integrity-boundaries
+  - learn.devrel.app-control-windows-server.design-policy-composition
+  - learn.devrel.app-control-windows-server.choose-management-model
+  - learn.devrel.app-control-windows-server.deploy-audit-policies
+  - learn.devrel.app-control-windows-server.evaluate-audit-evidence
+  - learn.devrel.app-control-windows-server.control-application-runtime
+  - learn.devrel.app-control-windows-server.protect-virtualization-hosts
+  - learn.devrel.app-control-windows-server.protect-domain-controllers
+  - learn.devrel.app-control-windows-server.manage-policy-releases
+  - learn.devrel.app-control-windows-server.resolve-policy-failures
+  - learn.devrel.app-control-windows-server.knowledge-check
+  - learn.devrel.app-control-windows-server.summary
+badge:
+  uid: learn.devrel.app-control-windows-server.badge

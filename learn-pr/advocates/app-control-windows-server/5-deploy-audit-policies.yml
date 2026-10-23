@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.app-control-windows-server.deploy-audit-policies
+title: Deploy audit policies
+metadata:
+  title: Deploy Audit Policies
+  description: Create, inspect, compile, and deploy a custom audit base policy with scoped workload supplements.
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-deploy-audit-policies.md)]

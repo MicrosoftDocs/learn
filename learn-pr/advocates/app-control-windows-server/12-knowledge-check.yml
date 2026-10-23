@@ -1,0 +1,169 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.app-control-windows-server.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Assess policy composition, audit readiness, runtime restrictions, workload protection, signing, and recovery decisions.
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 15
+content: |
+quiz:
+  questions:
+    - content: A host agent is allowed by supplement A1, which correctly expands base A. A second enforced base B does not allow the agent. Select the expected result.
+      choices:
+        - content: The agent runs if an administrator starts it.
+          isCorrect: false
+          explanation: Administrator elevation doesn't exempt the agent from base B.
+        - content: A newer version number on A1 overrides B.
+          isCorrect: false
+          explanation: A version change to supplement A1 doesn't override the rules in unrelated base B.
+        - content: The agent runs because any supplemental allowance is sufficient.
+          isCorrect: false
+          explanation: A supplemental policy expands only its linked base. The agent must also satisfy every other enforced base policy.
+        - content: The agent is blocked because it must also pass B.
+          isCorrect: true
+          explanation: Base families intersect. A1 expands A only. Administrative elevation and unrelated policy versions do not override B.
+    - content: A vulnerable driver matches an enforced deny policy. A workload supplement allows the driver's publisher. Select the safest next action.
+      choices:
+        - content: Remove every blocklist from the host.
+          isCorrect: false
+          explanation: Removing every blocklist weakens unrelated protections instead of addressing the vulnerable driver.
+        - content: Start the application as a domain administrator.
+          isCorrect: false
+          explanation: Administrator elevation doesn't override an enforced deny rule.
+        - content: Add a second supplemental allow with a higher version.
+          isCorrect: false
+          explanation: Another supplemental allowance, regardless of version, can't override an enforced deny.
+        - content: Obtain an approved fixed driver, review its rule match, and test the replacement.
+          isCorrect: true
+          explanation: The enforced deny wins over the supplemental allow. Elevation and supplemental version numbers do not change precedence; removing unrelated blocks unnecessarily weakens protection.
+    - content: An OSConfig-managed policy returns several hours after a CiTool removal. Select the correct next action.
+      choices:
+        - content: Disable every Code Integrity policy.
+          isCorrect: false
+          explanation: Disabling every policy removes unrelated protections without resolving the owning configuration.
+        - content: Repeatedly delete its binary from the active directory.
+          isCorrect: false
+          explanation: Deleting the binary doesn't change the OSConfig desired state, so drift correction can restore the policy.
+        - content: Change the owning OSConfig desired configuration and verify the resulting state.
+          isCorrect: true
+          explanation: The declared desired state is still active. Repeated deletion fights drift correction; another audit policy does not neutralize enforcement.
+        - content: Add another audit policy to cancel the restored policy.
+          isCorrect: false
+          explanation: An audit policy doesn't cancel another policy's enforced decisions.
+    - content: On PowerShell 7, an unapproved script starts under an enforced UMCI policy with script enforcement and reports `ConstrainedLanguage`. Select the best interpretation.
+      choices:
+        - content: The script host is applying a restricted execution mode; inspect the intended behavior and dependencies.
+          isCorrect: true
+          explanation: This can be a sandbox-required result, not a failed control. A blocked result would prevent the file from loading. Process success, elevation, and script authorization are different facts. In PowerShell 7.4+ audit mode, would-be restrictions can instead be logged without enforcement; the policy mode is essential context.
+        - content: The script became trusted because it returned exit code zero.
+          isCorrect: false
+          explanation: A successful exit doesn't prove that the script is trusted or ran with Full Language rights.
+        - content: App Control failed because every unapproved PowerShell script must be completely blocked.
+          isCorrect: false
+          explanation: The script host can apply a required sandbox rather than completely block every unapproved script.
+        - content: Its administrator account is exempt.
+          isCorrect: false
+          explanation: Administrator elevation doesn't exempt a script from App Control or language restrictions.
+    - content: A signed base at version 3.0.0.0 contains an incorrect rule. The previous working binary is version 2.0.0.0. Select the normal rollback approach.
+      choices:
+        - content: Reset the policy ID and assume its supplements follow automatically.
+          isCorrect: false
+          explanation: Resetting the policy ID creates a new identity. Existing supplements don't automatically link to that identity.
+        - content: Remove the base file before obtaining recovery access.
+          isCorrect: false
+          explanation: Deleting a protected signed base can prevent startup. Preserve recovery access and use an authorized corrected release.
+        - content: Copy version 2.0.0.0 into both stores immediately.
+          isCorrect: false
+          explanation: A lower signed-policy version can violate the version constraint and cause boot failure.
+        - content: Reintroduce the known-good rules in an authorized signed release with the same ID and a nondecreasing version.
+          isCorrect: true
+          explanation: Signed-policy version constraints still apply during rollback. Downgrading, changing identity accidentally, or deleting protected state can create a more serious failure.
+    - content: An approved agent update adds a helper DLL. VM start succeeds, but live migration fails when the helper loads. Select the best correction.
+      choices:
+        - content: Accept the update because the primary service is running.
+          isCorrect: false
+          explanation: A successful virtual machine start or running primary service doesn't prove that migration dependencies can load.
+        - content: Verify the approved helper and add the required scoped allowance, then repeat migration tests.
+          isCorrect: true
+          explanation: The failing dependency needs investigation. Broad paths, unrelated driver changes, and service-state-only validation do not address the actual failure safely.
+        - content: Disable all driver block rules.
+          isCorrect: false
+          explanation: Removing driver blocks doesn't address a missing allowance for the helper DLL and weakens unrelated protection.
+        - content: Allow the entire VM-storage volume.
+          isCorrect: false
+          explanation: Allowing an entire storage volume unnecessarily broadens trust instead of approving the specific helper.
+    - content: A domain controller's system-state backup fails because its approved vendor package introduces an unsigned helper executable. CI evidence identifies a missing allow rule, not an explicit deny. Select the appropriate correction.
+      choices:
+        - content: Add a reviewed hash rule for the approved helper through the domain controller policy design, then retest backup and isolated recovery.
+          isCorrect: true
+          explanation: A hash can identify an approved unsigned dependency, but it needs maintenance when the file changes. Publisher trust requires an applicable signature. SYSVOL trust is unrelated, and healthy directory services do not replace a working backup.
+        - content: Allow execution from all of SYSVOL.
+          isCorrect: false
+          explanation: A broad SYSVOL allowance is unrelated to the identified helper and creates unnecessary trust.
+        - content: Accept the failure because authentication and replication still work.
+          isCorrect: false
+          explanation: Authentication and replication success don't replace working backup and recovery.
+        - content: Add a broad Publisher rule and assume it authorizes unsigned files.
+          isCorrect: false
+          explanation: A Publisher rule requires an applicable signature and doesn't authorize an unsigned helper.
+    - content: A Server Core domain controller has no useful MSI/script events, while an administrative script fails. Select the best next action.
+      choices:
+        - content: Disable script enforcement for every server.
+          isCorrect: false
+          explanation: Disabling script enforcement on every server weakens protection without diagnosing the failure.
+        - content: Conclude that application control is unrelated.
+          isCorrect: false
+          explanation: Missing MSI and script events on Server Core are a documented telemetry limitation, not proof that App Control is unrelated.
+        - content: Use available CI, PowerShell/runtime, and functional evidence, accounting for the documented telemetry limitation.
+          isCorrect: true
+          explanation: Missing telemetry is not evidence of no policy effect. The other actions either assume the cause away or weaken trust without diagnosis.
+        - content: Enable a broad SYSVOL path allowance.
+          isCorrect: false
+          explanation: A broad SYSVOL path allowance changes trust without identifying the cause of the script failure.
+    - content: A Windows Server 2025 application produces one 3114 event in audit, then completes its operation. Select the best interpretation.
+      choices:
+        - content: Remove all .NET checks immediately.
+          isCorrect: false
+          explanation: Removing all .NET checks weakens protection without investigating the successful operation and its related events.
+        - content: Correlate .NET's attempts and actual behavior before deciding that the event represents a functional failure.
+          isCorrect: true
+          explanation: Server 2025 supports Dynamic Code Security audit mode, and a first-attempt event can be benign. Do not infer a crash or remove protection without evidence.
+        - content: Dynamic Code Security cannot audit on Windows Server 2025.
+          isCorrect: false
+          explanation: Windows Server 2025 supports Dynamic Code Security audit mode.
+        - content: Every 3114 event proves that the process crashed.
+          isCorrect: false
+          explanation: A single 3114 event can record an unsuccessful first attempt followed by success. It doesn't prove a crash.
+    - content: A policy-signing certificate is being replaced. Select the safest order.
+      choices:
+        - content: Add the new certificate only to the replacement XML and assume the current policy trusts it.
+          isCorrect: false
+          explanation: The currently active policy, not the proposed XML alone, determines which signers can update it.
+        - content: Use an authorized current signer to deploy new signer authorization, verify targets, then move to the replacement key.
+          isCorrect: true
+          explanation: The current policy controls acceptable update signers. Rollover must preserve that chain of authorization, including supplemental signer permissions.
+        - content: Change the filename to bypass signer validation.
+          isCorrect: false
+          explanation: Renaming the file doesn't bypass cryptographic signer validation.
+        - content: Destroy the old key, then sign a replacement policy with the new key.
+          isCorrect: false
+          explanation: Destroying the currently authorized private key before authorizing the replacement can prevent valid policy updates.
+    - content: An administrator has an approved signed retirement update with option 6 and the correct ID/version. Select the next required sequence.
+      choices:
+        - content: Enter DSRM and assume CI protection no longer applies.
+          isCorrect: false
+          explanation: Directory Services Restore Mode doesn't bypass Code Integrity protection.
+        - content: Replace it with an unsigned file immediately.
+          isCorrect: false
+          explanation: An unsigned replacement isn't a substitute for the required authorized signed retirement update.
+        - content: Deploy and verify the authorized signed update, restart, prevent redeployment, then remove the selected policy and verify state.
+          isCorrect: true
+          explanation: The restart deactivates the signed base's UEFI protection before removal. DSRM is not a CI bypass, and premature deletion or an unauthorized unsigned replacement is unsafe.
+        - content: Delete the original base first, then deploy the update.
+          isCorrect: false
+          explanation: Removing protected signed-base state before deploying the retirement update and restarting can cause boot failure.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.app-control-windows-server.manage-policy-releases
+title: Manage policy releases
+metadata:
+  title: Manage Policy Releases
+  description: Promote, sign, deploy, and maintain policy releases while preserving authorized updates and signer continuity.
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/10-manage-policy-releases.md)]

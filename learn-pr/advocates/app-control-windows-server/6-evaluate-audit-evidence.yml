@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.app-control-windows-server.evaluate-audit-evidence
+title: Evaluate audit evidence
+metadata:
+  title: Evaluate Audit Evidence
+  description: Collect policy events, correlate signatures, preserve evidence, and establish an enforcement readiness gate.
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-evaluate-audit-evidence.md)]

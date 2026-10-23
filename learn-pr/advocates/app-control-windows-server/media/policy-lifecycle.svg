@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="670" viewBox="0 0 1000 670" role="img" aria-labelledby="title description" style="background-color: white">
+  <title id="title">Stage App Control changes through six gates</title>
+  <desc id="description">Follow numbered boxes from 1 through 6, left to right across each row. Design an audit candidate, collect evidence, approve the enforcement gate, enforce on a canary, harden the release with signed-policy restart testing when signing is chosen, then expand and monitor. Any failed gate stops expansion. Trust changes restart the cycle, and recovery must be prepared before deployment.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 9 5 L 0 10 Z" fill="#42576b"/>
+    </marker>
+  </defs>
+  <rect id="background" width="1000" height="670" fill="#ffffff"/>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#172b3a">
+    <text x="500" y="44" text-anchor="middle" font-size="28" font-weight="600">Stage changes through evidence-based gates</text>
+    <text x="500" y="79" text-anchor="middle" font-size="18">Prepare recovery before deployment. Stop expansion whenever a gate fails.</text>
+    <g data-node="design">
+      <rect id="design" class="node" x="40" y="135" width="280" height="140" rx="12" fill="#edf5fc" stroke="#426b8e" stroke-width="2"/>
+      <text x="61" y="175" font-size="22" font-weight="600">1. Design</text>
+      <text x="61" y="214" font-size="19">Review trust and identity.</text>
+      <text x="61" y="244" font-size="19">Build an audit candidate.</text>
+    </g>
+    <g data-node="audit">
+      <rect id="audit" class="node" x="360" y="135" width="280" height="140" rx="12" fill="#edf5fc" stroke="#426b8e" stroke-width="2"/>
+      <text x="381" y="175" font-size="22" font-weight="600">2. Audit</text>
+      <text x="381" y="214" font-size="19">Collect correlated events.</text>
+      <text x="381" y="244" font-size="19">Exercise workload cycles.</text>
+    </g>
+    <g data-node="approve">
+      <rect id="approve" class="node" x="680" y="135" width="280" height="140" rx="12" fill="#fff5e8" stroke="#9b6d32" stroke-width="2"/>
+      <text x="701" y="175" font-size="22" font-weight="600">3. Approve</text>
+      <text x="701" y="214" font-size="19">Resolve required-code</text>
+      <text x="701" y="244" font-size="19">blocks; prove recovery.</text>
+    </g>
+    <g data-node="canary">
+      <rect id="canary" class="node" x="40" y="395" width="280" height="140" rx="12" fill="#edf5fc" stroke="#426b8e" stroke-width="2"/>
+      <text x="61" y="435" font-size="22" font-weight="600">4. Enforce a canary</text>
+      <text x="61" y="474" font-size="19">Change one test target.</text>
+      <text x="61" y="504" font-size="19">Verify real operations.</text>
+    </g>
+    <g data-node="harden">
+      <rect id="harden" class="node" x="360" y="395" width="280" height="140" rx="12" fill="#fff5e8" stroke="#9b6d32" stroke-width="2"/>
+      <text x="381" y="435" font-size="22" font-weight="600">5. Harden the release</text>
+      <text x="381" y="474" font-size="19">If signing, rehearse</text>
+      <text x="381" y="504" font-size="19">two restarts and recovery.</text>
+    </g>
+    <g data-node="operate">
+      <rect id="operate" class="node" x="680" y="395" width="280" height="140" rx="12" fill="#f1f8ee" stroke="#52754a" stroke-width="2"/>
+      <text x="701" y="435" font-size="22" font-weight="600">6. Expand and operate</text>
+      <text x="701" y="474" font-size="19">Release through rings.</text>
+      <text x="701" y="504" font-size="19">Monitor drift and changes.</text>
+    </g>
+    <g fill="none" stroke="#42576b" stroke-width="3" marker-end="url(#arrow)">
+      <path class="connector" d="M 326 205 L 353 205"/>
+      <path class="connector" d="M 646 205 L 673 205"/>
+      <path class="connector" d="M 820 281 L 820 335 L 180 335 L 180 388"/>
+      <path class="connector" d="M 326 465 L 353 465"/>
+      <path class="connector" d="M 646 465 L 673 465"/>
+    </g>
+    <text x="500" y="589" text-anchor="middle" font-size="20" font-weight="600">A passed gate is evidence, not elapsed time.</text>
+    <text x="500" y="627" text-anchor="middle" font-size="18">Restart at step 1 when trust, software, hardware or signing requirements change.</text>
+  </g>
+</svg>
