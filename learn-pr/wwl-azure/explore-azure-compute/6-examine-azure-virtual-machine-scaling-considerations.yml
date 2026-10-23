@@ -4,9 +4,9 @@ title: Examine Azure Virtual Machine scaling considerations
 metadata:
   title: Examine Azure Virtual Machine scaling considerations
   description: "Examine important considerations when changing the size of your virtual machine based on the required CPU, network, or disk performance."
-  ms.date: 12/23/2024
+  ms.date: 10/23/2026
   author: wwlpublish
-  ms.author: eric
+  ms.author: robbarefoot
   ms.topic: unit
   ms.custom:
   - N/A

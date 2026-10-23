@@ -3,7 +3,7 @@ Hyper-V can subdivide the hardware capacity of a single host computer by allocat
 As a new Windows Server administrator for Contoso, you must identify the considerations for installing and configuring Hyper-V on Windows Server to ensure that workloads are optimized and stable.
 
 > [!NOTE]
-> Hyper-V is available as a server role for Windows Server, as a feature in 64-bit versions of Windows client OS, and as a standalone product called *Microsoft Hyper-V Server*. Each Hyper-V version includes similar features, and this module focuses on the Hyper-V Server role for Windows Server.
+> This module focuses on the Hyper-V role in Windows Server. Hyper-V is also available as an optional feature in supported Windows client editions. Availability and capabilities depend on the operating system and edition. See [Install Hyper-V](/windows-server/virtualization/hyper-v/get-started/install-hyper-v) for the requirements for each platform.
 
 ## Features of Hyper-V on Windows Server
 

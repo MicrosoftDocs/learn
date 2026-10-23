@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.govern-azure-arc-enabled-servers.assign-azure-policies-to-govern-azure-arc-enabled-servers
-title: Assign Azure Policies to govern Azure Arc-enabled servers
+title: Assign Azure policies to govern Azure Arc-enabled servers
 metadata:
-  title: Assign Azure Policies to govern Azure Arc-enabled servers
-  description: Assign Azure Policies to govern Azure Arc-enabled servers
-  ms.date: 08/09/2024
-  author: aurnovcy
-  ms.author: aurnovc
+  title: Assign Azure Policies to Govern Azure Arc-Enabled Servers
+  description: Assign Azure policies to govern Azure Arc-enabled servers.
+  ms.date: 10/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 4
 content: |

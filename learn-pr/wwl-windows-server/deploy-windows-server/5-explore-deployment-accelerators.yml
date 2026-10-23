@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-windows-server.explore-deployment-accelerators
-title: Explore the deployment accelerators
+title: Explore deployment planning and automation tools
 metadata:
-  title: Explore the deployment accelerators
-  description: "Explore the deployment accelerators"
-  ms.date: 12/26/2024
+  title: Explore deployment planning and automation tools
+  description: "Explore supported Windows Server deployment planning, Windows ADK tools, and unattended installation."
+  ms.date: 10/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5

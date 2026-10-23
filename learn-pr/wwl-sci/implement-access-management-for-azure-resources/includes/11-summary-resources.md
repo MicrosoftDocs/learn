@@ -6,7 +6,6 @@ During this module you have learned to:
 - Create and manage application access with managed identities.
 - Configure and manage access into Azure Key Vault.
 - Retrieve object from a key vault securely.
-- Explore the capabilities of Microsoft Entra Permissions Management.
 
 ## To learn more, research using these links
 

@@ -6,7 +6,7 @@
 
 Using an identity provider for authentication offers a way to ensure secure identities without limiting the capabilities of the users. You get convenience, multiple sources for validating identity, industry protocols, and assurance of the identity.
 
-**Convenience** - The convenience capability focuses on the end-users experience with how they're prompted for authentication credentials. Focus here's on the end-user experience. If something isn't easy, users avoid it or complain about it.
+**Convenience** - The convenience capability focuses on the end-user's experience with how they're prompted for authentication credentials. Focus here's on the end-user experience. If something isn't easy, users avoid it or complain about it.
 
 **Sources** - The sources capability surrounds where the user obtains their authentication token from. Many organizations have what they believe is a centralized issuer (Microsoft Entra ID), but in reality most organizations also have other identity repositories. Federated identity is the most common other identity provider.
 

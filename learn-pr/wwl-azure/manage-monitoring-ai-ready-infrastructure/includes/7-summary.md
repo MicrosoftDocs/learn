@@ -4,10 +4,11 @@ Your Log Analytics Workspace queries demonstrated how to diagnose infrastructure
 
 ## Key takeaways
 
-- Azure Monitor collects platform metrics automatically, while guest OS metrics require the Azure Diagnostics extension for visibility into memory usage and process-level performance
+- Azure Monitor collects platform metrics automatically, while Azure Monitor Agent and associated data collection rules collect selected VM guest performance counters and logs
 - Alert rules with threshold-based conditions trigger notifications when metrics exceed safe values, enabling early detection of capacity constraints and performance degradation
 - Alert processing rules suppress or route notifications based on maintenance windows and business hours, reducing alert fatigue without compromising operational visibility
 - Kusto Query Language (KQL) queries in Log Analytics Workspace reveal root causes by searching logs, aggregating performance data, and correlating events across multiple resources
+- VM guest collection and Azure resource diagnostic settings are separate collection paths. Query the tables populated by the configured source, such as `Event`, `Syslog`, or `Perf`, rather than assuming all data appears in `AzureDiagnostics`
 
 ## Next steps
 

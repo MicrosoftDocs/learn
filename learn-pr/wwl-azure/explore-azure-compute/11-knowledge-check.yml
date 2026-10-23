@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Check what you learn in this module."
-  ms.date: 12/23/2024
+  ms.date: 10/23/2026
   author: wwlpublish
-  ms.author: eric
+  ms.author: robbarefoot
   ms.topic: unit
   ms.custom:
   - N/A
@@ -50,14 +50,14 @@ quiz:
     - content: "It has lower licensing fees"
       isCorrect: true
       explanation: "Correct. The licensing fees charged for SQL Server or Oracle are constrained to the vCPU count, and other products should be charged based on the new vCPU count. A constrained vCPU virtual machine shares the same specs for memory, storage, and I/O bandwidth as the original virtual machine, but with a lower licensing cost."
-  - content: "How many total network data flows does the Azure networking stack support with good performance, for virtual machines with eight CPU cores or more?"
+  - content: "An SAP application uses an eight-vCPU Azure VM that isn't a Network Optimized size and doesn't forward traffic as a network appliance. Which recommended connection limit should the team use as a starting point for workload testing?"
     choices:
     - content: "100,000"
       isCorrect: false
-      explanation: "Incorrect. The Azure networking stack supports 100-K total flows with good performance for virtual machines with less than eight CPU cores."
+      explanation: "Incorrect. The 100,000-connection recommendation applies to VMs with two through seven vCPUs. Connection recommendations vary with vCPU count and networking hardware."
     - content: "250,000"
-      isCorrect: true
-      explanation: "Correct. The Azure networking stack supports 250-K total network flows with good performance for virtual machines with eight CPU cores or more and 100-K total flows with good performance for virtual machines with less than eight CPU cores. Past this limit network performance degrades gracefully for extra flows up to a hard limit of 1-M total flows, 500-K inbound and 500-K outbound, after which extra flows are dropped."
-    - content: "1,000,000"
       isCorrect: false
-      explanation: "Incorrect. Azure networking stack support supports 1-M total flows (500-K inbound and 500-K outbound) after which flows are dropped."
+      explanation: "Incorrect. The old 250,000-flow figure isn't the current connection recommendation for an eight-vCPU VM. A typical connection uses two directional flows."
+    - content: "500,000"
+      isCorrect: true
+      explanation: "Correct. For VMs with eight through 15 vCPUs, the current recommendation is 500,000 connections. This is a starting point for testing, not a performance guarantee. Network Optimized sizes and forwarding workloads require separate guidance."

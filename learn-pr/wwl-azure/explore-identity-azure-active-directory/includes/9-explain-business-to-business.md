@@ -1,4 +1,4 @@
-Business to business communication for your applications and users is essential.  You need to work with external organizations without having to maintain multiple identities.  That creates the space for Azure Business to Business (B2B) services.  And the product Microsoft Entra External Identities, part of Microsoft Entra.
+Business-to-business (B2B) collaboration lets you work with external organizations without maintaining separate identities for their users. Microsoft Entra External ID provides B2B collaboration capabilities as part of Microsoft Entra.
 
 ## Microsoft Entra External Identities
 

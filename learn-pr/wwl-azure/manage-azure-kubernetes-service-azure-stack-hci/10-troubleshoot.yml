@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.troubleshoot
-title: Troubleshoot Azure Kubernetes Service on Azure Stack HCI
+title: Troubleshoot Azure Kubernetes Service on Azure Local
 metadata:
-  title: Troubleshoot Azure Kubernetes Service on Azure Stack HCI
-  description: "Troubleshoot Azure Kubernetes Service on Azure Stack HCI"
-  ms.date: 06/09/2021
+  title: Troubleshoot Azure Kubernetes Service on Azure Local
+  description: "Distinguish provisioning, access, scheduling, storage, and node diagnostic issues in AKS on Azure Local."
+  ms.date: 10/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 6
@@ -15,15 +15,15 @@ content: |
 quiz:
   title: "Knowledge check"
   questions:
-  - content: "As part of evaluating AKS on Azure Stack HCI for Contoso, you are documenting the steps to connect to the newly deployed Windows Server nodes of a Kubernetes cluster. What authentication method should you use during such connections?"
+  - content: "An administrator needs to collect full diagnostic logs from an AKS on Azure Local cluster using the documented log-collection command. Which credential material should the administrator preserve from provisioning?"
     choices:
-    - content: "Asymmetric key pair"
+    - content: "The cluster's associated SSH private key"
       isCorrect: true
-      explanation: "Correct. When establishing an SSH connection to a Windows node of a Kubernetes cluster, you need to provide the location of the private key of the asymmetric key pair generated during cluster provisioning."
-    - content: "Active Directory"
+      explanation: "Correct. The log-collection procedure requires the correct SSH key. Record and protect its actual location rather than assuming a fixed path on the Azure Local nodes."
+    - content: "A Windows Admin Center extension package"
       isCorrect: false
-      explanation: "Incorrect. Windows Servers that are deployed as part of a Kubernetes cluster node pool are not automatically joined to Active Directory."
-    - content: "Microsoft Entra ID"
+      explanation: "Incorrect. An extension package isn't an authentication credential for collecting node logs."
+    - content: "An application's container registry password"
       isCorrect: false
-      explanation: "Incorrect. Windows Server does not support Microsoft Entra authentication."
+      explanation: "Incorrect. Registry credentials support image pulls. They don't replace the SSH credential used by this diagnostic procedure."
 

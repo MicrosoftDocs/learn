@@ -1,25 +1,22 @@
-In this module, you learned about the process of implementing and managing AKS on Azure Stack HCI. 
+You now have a deployment and operations model for AKS on Azure Local in Contoso's hyperconverged environment. You distinguish the local infrastructure, the Azure management surface, and the Kubernetes resources that run applications.
 
-Using what you have learned, you determined that you can facilitate deployment of internally developed Windows and Linux containerized workloads by using AKS on Azure Stack HCI. In particular:
+## Key takeaways
 
-- AKS on Azure Stack HCI simplifies deployment of Kubernetes clusters by providing an abstraction layer that hides some of the more challenging implementation details.
-- Windows Admin Center provides guidance with deploying AKS and Kubernetes clusters on Azure Stack HCI. Also, you can automate their deployments by using PowerShell.
-- Azure Arc facilitates the integration of AKS and Kubernetes clusters on Azure Stack HCI, helping companies like Contoso to implement consistent administrative models across on-premises and cloud resources.
-- AKS on Azure Stack HCI supports Windows Server and Linux-based node pools in the same Kubernetes cluster, facilitating deployment of containerized applications on both operating system platforms. 
-- Kubernetes clusters on Azure Stack HCI allow you to implement a mix of stateless and stateful workloads.
-- Windows-based containers on Kubernetes clusters on Azure Stack HCI support integration with AD DS, using the gMSA functionality to provide authenticated access to AD DS-protected resources.
+- Arc resource bridge, the AKS extension, a custom location, and a logical network provide the infrastructure foundation for cluster provisioning.
+- Use a management workstation with supported tools and delegated access.
+- Azure CLI cluster creation automatically enables Azure Arc. Keep a Linux node pool available for the Arc agents and verify their health.
+- Azure management permissions, Microsoft Entra authentication, and Kubernetes authorization are separate considerations.
+- OS selectors constrain pod placement. Tolerations permit scheduling onto matching tainted nodes but don't select those nodes by themselves.
+- Persistent volume claims request storage from a suitable class. Reclaim policies and backups determine how you protect the data throughout its lifecycle.
+- Windows workloads require compatible images, prepared node pools, appropriate licensing, and a verified identity design. Check the documented gMSA restrictions for the target release before approving an AD DS-dependent workload.
+
+Before you expand Contoso's deployment, test representative applications in a nonproduction environment. Verify access, scheduling, storage persistence, application authentication, and recovery behavior.
 
 ## Learn more
 
-To learn more, go through the following documents:
-
-- [Clusters and workloads for Azure Kubernetes Service on Azure Stack HCI](/azure-stack/aks-hci/kubernetes-concepts)
-- [What is Azure Kubernetes Service on Azure Stack HCI?](/azure-stack/aks-hci/overview)
-- [Quickstart: Set up Azure Kubernetes Service on Azure Stack HCI using Windows Admin Center](/azure-stack/aks-hci/setup)
-- [Quickstart: Create a Kubernetes cluster on Azure Stack HCI using Windows Admin Center](/azure-stack/aks-hci/create-kubernetes-cluster)
-- [Connect an Azure Kubernetes Service on Azure Stack HCI cluster to Azure Arc for Kubernetes](/azure-stack/aks-hci/connect-to-arc)
-- [Adapt apps for mixed-OS Kubernetes Clusters using node selectors or taints and tolerations](/azure-stack/aks-hci/adapt-apps-mixed-os-clusters)
-- [Deploy Windows applications in Azure Kubernetes Service on Azure Stack HCI](/azure-stack/aks-hci/deploy-windows-application)
-- [Configure group Managed Service Account with AKS on Azure Stack HCI](/azure-stack/aks-hci/prepare-windows-nodes-gmsa)
-- [Use persistent volume in an AKS on Azure Stack HCI cluster](/azure-stack/aks-hci/persistent-volume)
-- [AKS on Azure Stack HCI troubleshooting](/azure-stack/aks-hci/troubleshoot)
+- [AKS on Azure Local architecture](/azure/aks-hybrid-edge/local/hyperconverged/cluster-architecture)
+- [Create Kubernetes clusters using Azure CLI](/azure/aks-hybrid-edge/local/aks-create-clusters-cli)
+- [Create logical networks](/azure/aks-hybrid-edge/local/hyperconverged/aks-networks)
+- [Storage options for applications](/azure/aks-hybrid-edge/local/hyperconverged/concepts-storage)
+- [Create a Windows node pool](/azure/aks-hybrid-edge/local/hyperconverged/howto-create-windows-node-pools)
+- [Get on-demand logs](/azure/aks-hybrid-edge/local/hyperconverged/get-on-demand-logs)

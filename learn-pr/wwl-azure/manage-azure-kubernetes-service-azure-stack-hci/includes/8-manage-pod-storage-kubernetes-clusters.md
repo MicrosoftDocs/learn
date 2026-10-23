@@ -1,67 +1,82 @@
-Although most applications you intend to deploy to AKS on Azure Stack HCI are stateless, Contoso developers identified a few stateful workloads that they are planning to containerize. To accommodate this requirement, you need to explore the support for preserving state of running pods by relying on Kubernetes persistent volumes. 
+Some Contoso applications need data to survive pod replacement. Persistent volumes separate the lifetime of that data from the lifetime of an individual pod.
 
-## Implement persistent volumes for AKS on Azure Stack HCI
+## Understand persistent storage resources
 
-By default, individual pods operate as stateless resources. If a pod that is part of a deployment fails for some reason, Kubernetes scheduler automatically creates a new one that provides the matching functionality, ensuring that the containerized application remains available. However, without additional provisions for preserving state, any data that the failed pod might have been working on is lost. 
+A **PersistentVolume** represents storage available to a cluster. A **PersistentVolumeClaim** (PVC) requests capacity and an access mode. A **StorageClass** describes the provisioner and storage characteristics used for dynamic provisioning.
 
-There are scenarios in which pods must be able to persist and share their data and state. In these scenarios, you can use persistent volumes, which are cluster resources that allow for storing data of containerized workloads beyond the lifespan of individual pods. 
+With static provisioning, an administrator creates a persistent volume, which can exist before a claim requests it. With dynamic provisioning, a storage provisioner creates the volume in response to a claim.
 
-To implement a volume in a Kubernetes cluster, you need to define a persistent volume claim for a specific storage class. A storage class represents the characteristics of the underlying storage, such as performance or support for shared access. Persistent volume claim includes information about the required access mode and volume size. Kubernetes API server uses the persistent volume claim definition to dynamically provision a suitable storage volume whenever required by deployed pods.
+AKS on Azure Local provides a `default` storage class that creates VHDX-backed volumes on Cluster Shared Volumes. Inspect the classes in the target cluster before relying on a particular configuration:
 
-> [!NOTE] 
-> AKS on Azure Stack HCI offers the default storage class, which implements VHDX-based disks.
+```powershell
+kubectl --kubeconfig .\contoso-aks-kubeconfig get storageclass
+kubectl --kubeconfig .\contoso-aks-kubeconfig describe storageclass default
+```
 
-Define storage requirements of deployed pods by including persistent volume specifications in the corresponding manifest files. Besides triggering dynamic provisioning, this also automatically mounts the volume within the pods.
+Review the provisioner, access requirements, binding behavior, and reclaim policy. `ReadWriteOnce` means read-write access from a single node. Multiple pods on that node can use the volume. Shared access across nodes requires an appropriate storage backend and configuration.
 
-For example, the following manifest defines a persistent volume claim for a 100 GB non-shared disk that uses the default storage class. 
+## Request and mount persistent storage
+
+The following claim requests a 10-GiB volume from the `default` storage class:
 
 ```yaml
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
- name: pvc-akshci
+  name: app-data
 spec:
- accessModes:
- - ReadWriteOnce
- resources:
-  requests:
-   storage: 100Gi
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: default
+  resources:
+    requests:
+      storage: 10Gi
 ```
 
-To implement this persistent volume claim, you can store this manifest as a YAML file and run the kubectl command line utility to create the corresponding resource (where the `pvc_definition.yaml` represents the YAML file):
+Save the claim as `app-data.yaml` in your working directory and create it in the same namespace as the application:
 
-```kubectl
-kubectl create -f pvc_definition.yaml
+```powershell
+kubectl --kubeconfig .\contoso-aks-kubeconfig apply -f .\app-data.yaml
+kubectl --kubeconfig .\contoso-aks-kubeconfig get pvc app-data
 ```
 
-To define a corresponding persistent volume for a pod, you could use the following manifest:
+The pod references the claim under `volumes` and mounts that volume in a container. This Linux example uses a separate `/data` path:
 
 ```yaml
-kind: Pod
 apiVersion: v1
+kind: Pod
 metadata:
-  name: win-appserver
+  name: storage-check
 spec:
-  containers:
-    - name: win-appserver
-      image: mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019 
-      volumeMounts:
-      - name: akshciscsi
-        mountPath: "/mnt/akshciscsi"
-  volumes:
-    - name: akshciscsi
-      persistentVolumeClaim:
-        claimName: pvc-akshci
   nodeSelector:
-     kubernetes.io/os: windows
+    kubernetes.io/os: linux
+  containers:
+  - name: web
+    image: nginx:stable
+    volumeMounts:
+    - name: data
+      mountPath: /data
+  volumes:
+  - name: data
+    persistentVolumeClaim:
+      claimName: app-data
 ```
 
-To implement this persistent volume also, you can store the pod manifest as a YAML file and run the kubectl command line utility to provision the volume and mount it (where the `pv_definition.yaml` represents the YAML file):
+Save the pod as `storage-check.yaml` and apply it:
 
-```kubectl
-kubectl create -f pv_definition.yaml
+```powershell
+kubectl --kubeconfig .\contoso-aks-kubeconfig apply -f .\storage-check.yaml
+kubectl --kubeconfig .\contoso-aks-kubeconfig describe pod storage-check
 ```
 
-The resulting pod will have a volume of 100 GB in size mounted within the file system path designated by the value of the `mountPath` element.
+The example mounts storage. It doesn't configure the web application to write its content to `/data`. Test persistence with the application's actual write path and workload behavior.
 
-To delete the persistent volume claim, you need to first delete any pods and deployments that are currently using it. At that point, to complete the task, you can use the `kubectl delete PersistentVolumeClaim` command, followed by the name of the persistent volume claim.
+If the claim remains pending, inspect its events and the consuming pod. Depending on the storage class's binding mode, provisioning can wait for a pod to be scheduled. Investigate capacity, class configuration, and attachment errors rather than repeatedly recreating the claim.
+
+## Protect data throughout its lifecycle
+
+A persistent volume can outlive the pod that uses it. Deleting a claim can cause its backing storage to be deleted when the associated reclaim policy is `Delete`.
+
+Verify the policy and recovery plan before cleanup. Persistent storage isn't a backup: test restore procedures and document how application-consistent data is protected during maintenance.
+
+See [Storage options for applications in AKS on Azure Local](/azure/aks-hybrid-edge/local/hyperconverged/concepts-storage) for the platform's persistent storage model.

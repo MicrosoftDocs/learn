@@ -1,22 +1,76 @@
-Contoso relies on AD DS as its identity provider for Windows and Linux-based workloads, with Kerberos as the primary authentication protocol. The Information Security team asked you to investigate the options for integrating containerized workloads hosted by AKS on Azure Stack HCI with the Contoso's AD DS environment. Considering that you intend to deploy Windows-based nodes and containers into Kubernetes clusters, you want to determine to what extent such integration is possible. 
+Contoso has Windows applications as well as Linux applications. Before you containerize a Windows workload, verify its image compatibility, node-pool requirements, licensing, and authentication dependencies.
 
-## Integrate Windows containers in AKS on Azure Stack HCI with AD DS
+## Prepare a supported Windows node pool
 
-There might be scenarios in which containerized Windows-based applications running in Kubernetes pods might need access to AD DS-protected resources. Such functionality requires the use of an AD DS domain-based identity to successfully complete authentication and authorization tasks. To implement this identity, you can use Group Managed Service Accounts (gMSA).
+Keep the cluster's Linux node pool for system components and Arc connectivity. Add Windows capacity as a separate node pool.
 
-Compared to the traditional method for managing identities for Windows services and applications that need to be able to authenticate on their own, gMSA offers several benefits, which include automatic password changes, simplified setup and maintenance, and support for delegated management. 
+For Azure Local release 2509 or later, the Windows node-pool feature is disabled by default. An authorized infrastructure administrator must enable it and prepare the required Windows images before you create a Windows pool. Follow [Enable Windows node pools](/azure/aks-hybrid-edge/local/hyperconverged/howto-enable-windows-node-pools) for preparation steps and permissions for your release.
 
-To enable pods to use gMSA for authentication, join all the Windows Server-based Kubernetes worker nodes that will host the pods to an AD DS domain. Perform the domain join by connecting to each node through Secure Shell (SSH), and then running the netdom.exe command line utility with the join switch.
+In the management PowerShell session, the following example adds one Windows Server 2022 node to the cluster created earlier:
 
-The rest of the process is the same as in any Kubernetes cluster that includes Windows Server worker nodes, and it has the following high-level steps:
+```powershell
+az aksarc nodepool add --resource-group $resourceGroup --cluster-name $clusterName `
+    --name winpool --node-count 1 --os-type Windows --os-sku Windows2022
+```
 
-1. Provisioning a gMSA in AD DS and assigning it to the Windows Server nodes.
-1. Defining a custom Kubernetes resource type representing the AD DS gMSA (GMSACredentialSpec).
-1. Configuring a webhook-based mechanism that automatically populates and validates GMSACredentialSpec references for pods and containers.
-1. Creating a custom resource based on the GMSACredentialSpec resource type.
-1. Defining a cluster role to enable RBAC for the GMSACredentialSpec resource.
-1. Assigning the role to the AD DS gMSA to authorize its usage of the corresponding GMSACredentialSpec resource.
-1. Including a reference to the GMSACredentialSpec resource in the definition of pods that will use it for AD DS authentication.
+Confirm that the selected OS SKU and VM configuration are supported for the target cluster version. Windows node pools also require the appropriate Windows Server licensing.
 
-> [!NOTE]
-> To enable gMSA support, the name of the Kubernetes cluster cannot exceed three characters. This constraint results from the 15-character limit of a domain-joined computer name.
+A single node is an illustrative starting point, not a production availability recommendation. Size the pool for the workload and its maintenance requirements. Verify node readiness before deploying applications.
+
+## Match the image to the container host
+
+A Windows container image must be compatible with its Windows container host. Don't reuse a Windows Server 2019 application image solely because the old module used it.
+
+The following example uses a Windows Server 2022 IIS image. Its OS and build selectors restrict placement to Windows Server 2022 nodes, which Kubernetes labels with build `10.0.20348`. Use an approved registry and image version for production:
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: windows-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: windows-web
+  template:
+    metadata:
+      labels:
+        app: windows-web
+    spec:
+      nodeSelector:
+        kubernetes.io/os: windows
+        node.kubernetes.io/windows-build: '10.0.20348'
+      tolerations:
+      - key: dedicated
+        operator: Equal
+        value: windows-apps
+        effect: NoSchedule
+      containers:
+      - name: web
+        image: mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2022
+        ports:
+        - containerPort: 80
+```
+
+Save the manifest as `windows-web.yaml`. With the Arc proxy running, apply it and inspect the result:
+
+```powershell
+kubectl --kubeconfig .\contoso-aks-kubeconfig apply -f .\windows-web.yaml
+kubectl --kubeconfig .\contoso-aks-kubeconfig get pods -o wide
+```
+
+The included toleration permits scheduling onto nodes with the custom taint described earlier. It doesn't require that taint to be present. The example doesn't create an externally accessible Service.
+
+## Evaluate application authentication separately
+
+Creating a Windows node pool doesn't configure an application's access to AD DS-protected services. Before you approve the platform, record whether the application needs Kerberos, NTLM, service accounts, or another identity mechanism.
+
+> [!IMPORTANT]
+> Windows node-pool documentation explicitly states that group managed service account (gMSA) authentication isn't supported for AKS on Azure Local 23H2 and 24H2. For these releases, manually domain-joining nodes doesn't provide a supported gMSA configuration.
+
+If gMSA is a requirement, verify support for the exact target Azure Local release before you deploy. Preinstalled gMSA components aren't proof that a supported configuration procedure exists. If the required configuration isn't supported, select a supported alternative platform or revise the application design.
+
+See [Create a Windows node pool](/azure/aks-hybrid-edge/local/hyperconverged/howto-create-windows-node-pools) for licensing, supported deployment options, and the documented gMSA limitation.
+
+For build-specific scheduling, see [Handling multiple Windows versions in the same cluster](https://kubernetes.io/docs/concepts/windows/user-guide/#handling-multiple-windows-versions-in-the-same-cluster).

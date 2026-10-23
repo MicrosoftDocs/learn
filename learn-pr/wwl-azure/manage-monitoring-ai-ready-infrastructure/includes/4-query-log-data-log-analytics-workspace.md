@@ -2,7 +2,13 @@ Metrics show you what happened—CPU spiked, memory usage climbed, disk I/O satu
 
 ## How Log Analytics Workspace collects diagnostic data
 
-Log Analytics Workspace acts as a central repository for log data from across your Azure environment. Unlike metrics that capture numeric performance values at regular intervals, logs contain rich event records with timestamps, severity levels, resource identifiers, and descriptive messages explaining what occurred. When you enable diagnostic settings on a virtual machine, Azure sends operating system events, application logs, and security audit records to your Log Analytics Workspace. This happens automatically in the background—your VM continues running normally while the Azure Diagnostics extension streams log data to the workspace every few minutes.
+Log Analytics Workspace acts as a central repository for log data from across your Azure environment. Unlike metrics that capture numeric performance values at regular intervals, logs contain rich event records with timestamps, severity levels, resource identifiers, and descriptive messages explaining what occurred. Data reaches the workspace through the collection method configured for each source.
+
+For VM guest data, install Azure Monitor Agent (AMA) and associate a data collection rule (DCR) with the VM. Configure the DCR's data sources, filters, and **Azure Monitor Logs** destination. For Windows, select the required event logs and levels. For Linux, select the required Syslog facilities and severity levels. Application logs need an appropriate supported source, such as an application's Windows event log, Syslog output, or a separately configured custom log source. Installing the agent or enabling resource diagnostic settings doesn't automatically collect every application or security event.
+
+Resource diagnostic settings serve a different purpose: they route supported Azure resource logs to selected destinations. For example, configure diagnostic settings on a Foundry resource or storage account to send its supported resource logs to the workspace. These settings don't replace the AMA and DCR configuration for VM guest data.
+
+Confirm that records arrive in the expected tables before building queries or alerts. Collection intervals and ingestion latency depend on the source and configuration, so don't assume a fixed delivery time for all logs. See [Collect guest logs from a VM](/azure/azure-monitor/vm/tutorial-collect-logs).
 
 :::image type="content" source="../media/log-analytics-workspace-central-repository.png" alt-text="Diagram showing how security audits record information to the Log Analytics Workspace.":::
 
@@ -10,17 +16,24 @@ The value of centralized logging becomes clear when you troubleshoot issues that
 
 ## Writing effective KQL queries for infrastructure troubleshooting
 
-Kusto Query Language provides the syntax for searching and analyzing log data in Log Analytics Workspace. You construct queries using a pipeline approach: start with a table containing the log records you want to examine, then apply filters, aggregations, and transformations to extract meaningful insights. A basic query structure looks like this: select a table (such as AzureDiagnostics or Perf), filter rows using the 'where' operator, and display results using 'take' or 'summarize'.
+Kusto Query Language provides the syntax for searching and analyzing log data in Log Analytics Workspace. You construct queries using a pipeline approach: start with a table containing the log records you want to examine, then apply filters, aggregations, and transformations to extract meaningful insights. A basic query structure looks like this: select a table, filter rows using the `where` operator, and display results using `take` or `summarize`.
 
-Consider a common troubleshooting scenario where you need to identify all error events from the past 24 hours. Your query starts with the AzureDiagnostics table, filters for records where the Level property equals 'Error', adds a time range filter for the past day, and returns the 100 most recent matches. This query runs in seconds even when your workspace contains millions of log records, because Log Analytics indexes log data by timestamp and resource properties, enabling fast retrieval.
+Choose the table that matches the collection path:
 
-As you investigate further, you aggregate data to identify patterns rather than examining individual events. You query the Perf table to calculate average CPU usage per hour over the past week, revealing that CPU consistently spikes every morning at 9:00 AM when batch processing jobs start. This pattern wasn't obvious from individual metric values, but the KQL summarize operator makes it visible by grouping CPU readings into hourly buckets and computing averages. With this insight, you adjust job scheduling to distribute workload more evenly throughout the day, preventing morning CPU saturation.
+- `Event` contains Windows events selected by a Windows event DCR.
+- `Syslog` contains Linux Syslog records selected by the collection configuration.
+- `Perf` contains performance counters sent to the workspace by a performance-counter DCR. VM insights uses `InsightsMetrics` for its standard performance collection instead.
+- `AzureDiagnostics` or a resource-specific table contains supported Azure resource logs sent through diagnostic settings, depending on the resource and destination mode.
+
+For example, to investigate Windows errors, query `Event`, filter `EventLevelName` to `Error`, select the required time range, and sort by `TimeGenerated`. For resource logs collected into `AzureDiagnostics`, use that table's schema, including `Level` where available. An `AzureDiagnostics` query isn't a substitute for querying guest Windows events.
+
+As you investigate further, you aggregate data to identify patterns rather than examining individual events. If a DCR collects CPU counters into `Perf`, calculate average CPU usage per hour over the past week. Use `summarize` with `bin(TimeGenerated, 1h)` to group readings into hourly intervals. This can reveal a recurring spike when batch processing jobs start.
 
 ## Common query patterns for operations teams
 
-Your infrastructure troubleshooting tasks follow predictable patterns, and learning a few core KQL query templates accelerates investigation workflows. When you need to find errors, you filter the AzureDiagnostics table for Level equals 'Error' and sort by TimeGenerated descending to see the most recent failures first. When you investigate performance degradation, you query the Perf table for specific counter names like '% Processor Time' or 'Available MBytes', then use the summarize operator with bin(TimeGenerated, 1h) to group readings into hourly intervals.
+For process-level investigation on a Windows VM, configure the DCR to collect the required process counters, such as `\Process(*)\% Processor Time`, into `Perf`. Filter `ObjectName` to `Process` and `CounterName` to `% Processor Time`, then group by `Computer` and `InstanceName` for the incident window. Without process-counter collection, overall CPU measurements don't identify which process consumes the CPU. See [Collect performance counters](/azure/azure-monitor/vm/data-collection-performance).
 
-Security investigations require different query patterns that focus on authentication events and access attempts. You query the SecurityEvent table to find failed login attempts by filtering for EventID 4625, then count occurrences per user account to detect potential brute-force attacks. If you discover an account with 50 failed login attempts in 10 minutes, you immediately reset credentials and review recent successful authentications from that account to assess whether unauthorized access occurred.
+Security investigations require the corresponding event collection as well. A Windows event DCR that selects the Security log sends its records to `Event`. If you use Microsoft Sentinel's Windows Security Events via AMA connector, the selected events are sent to `SecurityEvent` instead. Use that table only when the corresponding collection is configured. For failed Windows logons, filter the appropriate table for `EventID` 4625 and use its schema to group the events by account. Review matching events and recent successful logons to assess the activity. See [Collect Windows events](/azure/azure-monitor/vm/data-collection-windows-events).
 
 :::image type="content" source="../media/security-investigation-require-query-pattern.png" alt-text="Diagram showing how security investigations require different query patterns that focus on authentication events.":::
 
@@ -33,26 +46,6 @@ Query results inform decisions only when they're accessible at the moment you ne
 For recurring investigations, you configure alert rules that automatically run KQL queries on a schedule and trigger notifications when results meet specific criteria. You create an alert rule that executes your 'DetectFailedLogins' query every 15 minutes and fires an alert if any user account shows more than 10 failed login attempts. This transforms reactive log analysis into proactive threat detection, with your security team receiving notifications about suspicious activity within minutes rather than discovering attacks hours later during manual log reviews.
 
 Organizations that adopt query-driven troubleshooting report 50-70% reductions in mean time to resolution (MTTR) for infrastructure incidents, because log data reveals root causes faster than trial-and-error configuration changes. For AI infrastructure teams, this translates to fewer failed training runs, reduced compute waste from debugging incorrect configurations, and faster recovery when production services experience outages.
-
-:::image type="content" source="../media/log-analytics-workspace-query-workflow.png" alt-text="Diagram showing how Azure resources with diagnostic settings enabled streaming logs continuously.":::
-
-```mermaid
-graph LR
-  A[Azure Resources with diagnostic settings] -->|Stream logs continuously| B[Log Analytics Workspace]
-  B --> C[Log tables: AzureDiagnostics, Perf, SecurityEvent]
-  C --> D[KQL Query Editor]
-  D --> E[Administrator runs query]
-  E --> F[Query results displayed]
-  F --> G{Root cause identified?}
-  G -->|Yes| H[Take corrective action]
-  G -->|No| I[Refine query and re-run]
-  I --> E
-  H --> J[Issue resolved]
-```
-
-*Log Analytics Workspace query workflow for infrastructure troubleshooting and root cause analysis*
-
-Alt text: Flow diagram showing Azure resources with diagnostic settings enabled streaming logs continuously to Log Analytics Workspace, where data is organized into tables including AzureDiagnostics, Perf, and SecurityEvent. An administrator accesses the KQL query editor, runs a query, and views results. A decision point evaluates whether the root cause is identified: if yes, the administrator takes corrective action leading to issue resolution; if no, the administrator refines the query and re-runs it, creating a feedback loop until the root cause is found.
 
 ## Additional resources
 
@@ -68,4 +61,4 @@ Alt text: Flow diagram showing Azure resources with diagnostic settings enabled 
 
 ## Accessibility notes
 
-For the query editor screenshot, describe the layout: query editor pane at top with editable text field, toolbar with Run button and time range selector, results pane below showing a data table. Describe table structure: four columns labeled TimeGenerated, ResourceName, Level, and Message, with 15 rows of error records. Specify that TimeGenerated shows timestamps in descending order, Level column contains the text 'Error' for all rows, and Message column displays descriptive error text. For the workflow diagram, explain each process step and decision point, noting that arrows represent chronological progression and the feedback loop represents an iterative troubleshooting approach where query refinement continues until root cause identification.
+For the query editor screenshot, describe the layout: query editor pane at top with editable text field, toolbar with Run button and time range selector, results pane below showing a data table. Describe table structure: four columns labeled TimeGenerated, ResourceName, Level, and Message, with 15 rows of error records. Specify that TimeGenerated shows timestamps in descending order, Level column contains the text 'Error' for all rows, and Message column displays descriptive error text.

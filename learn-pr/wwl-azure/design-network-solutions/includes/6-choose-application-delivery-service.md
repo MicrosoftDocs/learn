@@ -20,12 +20,23 @@ In the next unit, we examine features of several load-balancing services, includ
 
 ### Things to consider when choosing load balancing
 
-As you review the descriptions of the Azure load-balancing services in the next unit, you can use the following flowchart to help you to find the ideal solution for your application. The flowchart guides you through a set of key decision criteria to reach a recommendation.
+Use the traffic type, application scope, and required routing features to identify candidate services. The following table summarizes common starting points.
+
+| Service | When to consider it |
+| --- | --- |
+| Azure Front Door | Global HTTP(S) delivery with edge acceleration, TLS termination, and application-layer routing. |
+| Application Gateway | Regional HTTP(S) routing, TLS termination, and web application firewall capabilities for public or private applications. |
+| Regional Azure Load Balancer | TCP or UDP load balancing within a region when application-layer routing isn't required. |
+| Global Azure Load Balancer | Public TCP or UDP traffic distributed across regional Standard Load Balancers through a single global public IP address. |
+| Traffic Manager | DNS-based endpoint selection across regions or clouds when DNS-based routing and failover meet your requirements. |
+| Application Gateway for Containers | Managed application-layer ingress for Azure Kubernetes Service (AKS). Evaluate it alongside other supported Kubernetes ingress options. |
 
 > [!Tip]
-> **Treat this flowchart as a starting point.**
+> **Treat these recommendations as a starting point.**
 > Every application has unique requirements, so use these recommendations as a starting point in your planning.
 
 After you identify possible solutions for your requirements, apply the options to your scenarios and do a detailed evaluation. If your application consists of multiple workloads, evaluate each workload separately. A complete solution might incorporate two or more load-balancing solutions.
 
-:::image type="content" source="../media/load-balancer-decision-tree-thumb.png" alt-text="Flowchart for choosing an Azure Load Balancer network solution." lightbox="../media/load-balancer-decision-tree.png" border="false":::
+Azure Front Door provides TLS termination and application-layer routing without requiring Application Gateway. Combine the services when your design also needs Application Gateway's regional capabilities, not solely because the application requires TLS offload.
+
+For the current service comparison and design considerations, see [Load balancing options](/azure/architecture/guide/technology-choices/load-balancing-overview).
