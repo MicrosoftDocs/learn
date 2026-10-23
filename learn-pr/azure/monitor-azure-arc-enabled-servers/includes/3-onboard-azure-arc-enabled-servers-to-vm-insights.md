@@ -1,39 +1,25 @@
-Tailwind Manufacturing has onboarded its machines to Azure Arc-enabled servers, and now wants to use VM insights. In this Unit, you learn how to configure and collect data from your Azure Arc-enabled servers by enabling VM insights.
+Tailwind Manufacturing has onboarded its machines to Azure Arc-enabled servers, and now wants to use VM insights. In this unit, you learn how to configure and collect data from your Azure Arc-enabled servers by enabling VM insights.
 
 ## Enable VM insights
 
-You can apply VM extensions to your Arc-enabled server by using the following steps in the Azure portal:
+Enable VM insights on an Azure Arc-enabled server to collect guest performance data with Azure Monitor Agent.
 
-1. From your browser, navigate to the Azure portal at <https://portal.azure.com/>.
+Before you begin, connect the server to Azure Arc and verify that its operating system is supported by AMA. You need permission to manage the machine's extensions, create or select data collection rules and associate them with the machine, and use the destination workspace. Allow the Azure Arc and AMA network endpoints required by your deployment. An Arc connection alone doesn't prove that monitoring data can reach Azure Monitor.
 
-1. Navigate to **Servers - Azure Arc** and select your hybrid machine from the list.
+For this module, enable logs-based performance collection and use a Log Analytics workspace. The subsequent alert exercise queries the InsightsMetrics table in that workspace.
 
-1. From the left-pane under the **Monitoring** section, select **Insights**, and then select **Enable**.
+1. Sign in to the Azure portal, open **Azure Arc**, and select **Machines** under **Infrastructure**. Select the connected server.
+1. Under **Monitoring**, select **Insights**. On the **Monitor** page, select **Configure** to open the monitoring configuration.
+1. Select the logs-based monitoring option. If you also enable OpenTelemetry metrics, remember that those metrics use an Azure Monitor workspace and PromQL. Enabling only OpenTelemetry metrics doesn't supply the InsightsMetrics data used later in this module.
+1. Select **Customize infrastructure monitoring**. Choose the Log Analytics workspace for logs-based performance data, and create or select the corresponding VM insights data collection rule. Confirm that the configuration applies the rule to the selected server.
+1. Select **Review + Enable**, review the resources and collection settings, and then select **Enable**. Allow time for the AMA extension to install and for collected data to arrive.
+1. Return to **Insights**. If an experience selector is shown, select **Log based visualizations (Classic)**, and then select **Performance**. Inspect the available guest performance charts. The charts show collected data, not performance history from before collection was configured.
+1. Under **Monitoring**, select **Logs**. Check for recent Heartbeat and InsightsMetrics records associated with this machine. Heartbeat confirms agent reporting; also check the required performance records before creating a performance alert.
+1. If you want to inspect Windows event logs, first configure a Windows events data source in an associated DCR with a Log Analytics destination. Select the logs, severity levels, or XPath filters required for your scenario. After matching events arrive, inspect the Event table. This optional step applies to Windows, and the table contains the events selected by your collection configuration, not every Windows event.
 
-    On the Azure Monitor Insights Onboarding page, you're prompted to create a workspace. You can either select an existing Log Analytics workspace or select the default. The default is a configured workspace with a unique name in the same region as the Azure Arc-enabled server.
+If the expected table or records are missing, check the DCR association, selected data source and destination, agent health, ingestion delay, query scope, time range, and access permissions. Log Analytics hides empty tables by default, so a missing table isn't proof that no collection rule exists.
 
-    ![Screenshot of Azure Monitor's enable VM Insights page.](../media/image-1.png)
+> [!IMPORTANT]
+> For new servers, use AMA-based performance monitoring without installing Dependency Agent or verifying a Map view. Microsoft discourages new installations, and portal onboarding to the mapping capability was restricted after September 30, 2025. Existing installations reach end of support on June 30, 2028. VM insights performance monitoring isn't affected. For inventory requirements, evaluate AMA-based Change Tracking and Inventory. Inventory isn't a replacement for process-dependency or network-topology mapping; use the separate replacement-evaluation guidance in the Summary unit's More Info section for those requirements.
 
-    With VM insights enabled, you get a message that the machine has been successfully onboarded to VM insights. This process takes a few minutes while extensions are installed on your connected machine.
-
-## View collected data
-
-After the deployment and configuration is completed, you can view your collected data by using the following steps in the Azure portal:
-
-1. From your browser, navigate to the Azure portal at <https://portal.azure.com/>.
-
-1. Select **Insights**, and then select the **Performance** tab. This tab shows you a select group of performance counters collected from the guest operating system of your machine at the top.
-
-1. over over a graph to view averages and percentiles taken starting from the time when the Log Analytics VM extension was installed on the machine.
-
-    ![Screenshot of VM Insights Performance View.](../media/image-2.png)
-
-1. Select **Map** to open the maps feature, which shows the processes running on the machine and their dependencies.
-
-1. Select **Properties** to open the property pane if it isn't already open.
-
-    ![Screenshot of VM Insights Map View.](../media/image-3.png)
-
-1. Select your machine again and then select **Log Events**. You get a list of tables that are stored in the Log Analytics workspace for the machine.
-
-1. Select **Event** table. The **Event** table includes all events from the Windows event log. Log Analytics opens with a simple query to retrieve collected event log entries.
+For details, see monitoring a hybrid machine, comparing metrics-based and logs-based monitoring, collecting Windows events, and dependency-mapping lifecycle guidance in the Summary unit's More Info section.
