@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.app-control-windows-server.protect-virtualization-hosts
+title: Protect virtualization hosts
+metadata:
+  title: Protect Virtualization Hosts
+  description: Validate Hyper-V dependencies, clustered operations, workload mobility, and staged policy rollout.
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-protect-virtualization-hosts.md)]

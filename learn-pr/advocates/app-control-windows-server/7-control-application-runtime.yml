@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.app-control-windows-server.control-application-runtime
+title: Control application runtimes
+metadata:
+  title: Control Application Runtimes
+  description: Evaluate PowerShell language restrictions, script authorization, interpreter boundaries, and .NET Dynamic Code Security.
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/7-control-application-runtime.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.app-control-windows-server.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Prepare the Windows Server environment, PowerShell runtimes, authoring tools, and recovery access for App Control policies.
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/1-introduction.md)]

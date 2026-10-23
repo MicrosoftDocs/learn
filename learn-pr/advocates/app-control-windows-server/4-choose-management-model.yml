@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.app-control-windows-server.choose-management-model
+title: Choose a management model
+metadata:
+  title: Choose a Management Model
+  description: Choose policy ownership, inventory active policies, configure OSConfig, and plan controlled policy migration.
+  ms.date: 10/19/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-choose-management-model.md)]
