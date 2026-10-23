@@ -1,29 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci
 metadata:
-  title: Manage Azure Kubernetes Service on Azure Stack HCI
-  description: "Manage Azure Kubernetes Service on Azure Stack HCI"
-  ms.date: 01/23/2026
+  title: Manage Azure Kubernetes Service on Azure Local
+  description: "Prepare, deploy, access, and operate AKS clusters on hyperconverged Azure Local deployments."
+  ms.date: 10/23/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
-  ms.service: azure-stack-hub
-title: Manage Azure Kubernetes Service on Azure Stack HCI
-summary: This module describes how to implement and manage Microsoft Azure Kubernetes Service on Azure Stack HCI.
+  ms.service: azure-kubernetes-service-hybrid
+title: Manage Azure Kubernetes Service on Azure Local
+summary: Prepare and manage AKS clusters on hyperconverged Azure Local deployments using Azure CLI, automatic Azure Arc integration, and Kubernetes tools.
 abstract: |
-  In this module, you will:
-  - Describe Kubernetes and Azure Kubernetes Service (AKS).
-  - Describe Azure Kubernetes Service on Azure Stack HCI.
-  - Deploy AKS and Kubernetes clusters.
-  - Connect Azure Kubernetes Service on Azure Stack HCI to Microsoft Azure Arc for Kubernetes.
-  - Manage pod placement on multi-pool Kubernetes clusters.
-  - Manage pod storage on Kubernetes clusters.
-  - Implement containerized Windows workloads.
-  - Troubleshoot Azure Kubernetes Service on Azure Stack HCI.
+  In this module, you learn how to:
+  - Describe Kubernetes concepts and the AKS on Azure Local architecture.
+  - Identify infrastructure, networking, identity, and tool prerequisites.
+  - Deploy an AKS cluster and verify its automatic Azure Arc integration.
+  - Access the Kubernetes API using Microsoft Entra authentication.
+  - Place workloads on appropriate Linux and Windows node pools.
+  - Configure persistent storage for containerized applications.
+  - Evaluate Windows workload requirements and platform limitations.
+  - Troubleshoot deployment, access, scheduling, and storage issues.
 prerequisites: |
   - Familiarity with the key features of Windows Server
   - Familiarity with the concept of virtualization
-  - Familiarity with the architecture, core capabilities, and primary use cases of Azure Stack HCI
+  - Familiarity with hyperconverged Azure Local deployments and their Azure-connected management model
   - Familiarity with the concept of containerization and container orchestration
 iconUrl: /training/achievements/manage-azure-kubernetes-service-on-azure-stack-hci.svg
 levels:
@@ -54,4 +54,3 @@ units:
 - learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.summary
 badge:
   uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.badge
-

@@ -1,52 +1,40 @@
-With the advent of changes in its technological landscape, Contoso CIO is looking for opportunities to modernize its operational model. The current one lacks consistency, forcing IT staff to deal with multiple, disparate management and monitoring products. This fragmented approach becomes even more problematic because Contoso is preparing for migrating some of its workloads to Azure and containerizing many others. You decide to evaluate to what extent these challenges can be addressed by using Azure Arc. 
+Contoso needs a consistent inventory and management experience for its local Kubernetes clusters. AKS on Azure Local automatically connects newly provisioned clusters to Azure Arc, so your next task is to verify and operate that connection.
 
-## What is Azure Arc?
+## Distinguish platform registration from cluster integration
 
-Azure Arc consists of a set of technologies that simplify the administration of complex, distributed, hybrid environments. It provides a centralized, scalable, and consistent multi-cloud and on-premises governance, management, and monitoring platform. 
+Azure Local registration, Arc resource bridge, and an Arc-enabled Kubernetes cluster serve related but different purposes. Registering the platform doesn't replace checking the Kubernetes cluster's connected resource and agents.
 
-From the architectural standpoint, Azure Arc is a cloud-based solution that relies on an agent that customers such as Contoso deploy to their on-premises servers. Each on-premises resource with a locally installed agent has its representation in the form of an Azure resource. 
+AKS on Azure Local provisioning automatically enables Azure Arc on the workload cluster. Containerized Arc agents run in the `azure-arc` namespace. Keep at least one Linux node pool available to run those agents and maintain connectivity to Azure.
 
-The combination of the agent and an Azure-based resource allows centralized monitoring and management. The state of the cloud-based resource reflects the state of the on-premises servers, which allows for Azure-based monitoring. To manage the workloads running on the on-premises servers, you can use technologies such as Microsoft Azure Policy and Azure VM extensions. 
+See [AKS on Azure Local architecture](/azure/aks-hybrid-edge/local/hyperconverged/cluster-architecture) for the automatic integration and Linux node-pool requirement.
 
-## What are the benefits of Azure Arc-enabled Kubernetes and AKS on Azure Stack HCI?
+## Verify connectivity and access
 
-Azure Arc enables integration of non-Azure resources with Azure, helping companies such as Contoso to provide a consistent administrative model across on-premises and cloud resources. At the same time, by keeping your resources on-premises, you can continue using your existing management methods as you transition to the new operational model.
+Use the Azure portal to locate the Kubernetes cluster's Azure resource and review its connection status. Confirm that the resource is in the expected subscription and resource group.
 
-Many Azure Arc benefits are independent of the resource type because they reflect the capabilities of Azure Resource Manager. These benefits include:
+With the proxy from the deployment unit running, inspect the Arc components:
 
-- The ability to organize all organizational resources by using Azure management groups, subscriptions, resource groups, and tags.
-- A single, comprehensive inventory of organizational assets across multi-clouds and on-premises.
-- A consolidated view of Azure and Azure Arc-enabled resources by using the Azure portal, Microsoft Azure CLI, Azure PowerShell, and Azure REST API.
-- Integration with Microsoft Azure Monitor for comprehensive, cloud-based monitoring spanning on-premises datacenters, Azure, and other third-party clouds.
+```powershell
+kubectl --kubeconfig .\contoso-aks-kubeconfig get pods --namespace azure-arc
+kubectl --kubeconfig .\contoso-aks-kubeconfig get deployments --namespace azure-arc
+```
 
-There are also benefits specific to Azure Arc-enabled Kubernetes and AKS on Azure Stack HCI, such as:
+If agents aren't healthy, investigate node availability, pod events, DNS, and required network connectivity. Don't assume that recreating the connected resource is the first repair step.
 
-  - Enforcement of run-time policies by using Azure Policy for Kubernetes and centralized reporting of the policy compliance, which allows you to enforce HTTPS ingress in Kubernetes cluster and ensure that pods listen only on secured ports.
+Also test the intended administrator's Kubernetes access. Azure RBAC controls Azure management operations, while Kubernetes authorization controls operations on cluster resources. The deployment example supplies a Microsoft Entra administrator group. Application teams usually need narrower access than that group's cluster-wide administration rights.
 
-:::image type="content" source="../media/kubernetes-arc-integration-resource-policies.png" alt-text="The screenshot displays the Policies blade of a Kubernetes - Azure Arc resource in the Azure portal." border="false":::
+The `az connectedk8s proxy` process creates an access channel. It doesn't repair failed workload pods, grant missing permissions, or replace the Arc agents.
 
-  - Support for automated updates to cluster configuration by using GitOps. GitOps is the practice of automatically deploying the code residing in a Git repository. In this scenario, that code describes a YAML-based desired state of the Kubernetes configuration. You can enforce specific GitOps-based configurations by using Azure Policy, which also provides centralized reporting of the policy compliance.
+## Plan optional management capabilities
 
-:::image type="content" source="../media/kubernetes-arc-integration-resource-level.png" alt-text="The screenshot displays the Kubernetes - Azure Arc blade in the Azure portal." border="false":::
+Arc integration provides a foundation for additional services, but it doesn't automatically configure every policy, monitoring collection, or GitOps deployment.
 
-## Connect an AKS on Azure Stack HCI cluster to Azure Arc for Kubernetes
+For each capability, identify its prerequisites and configuration:
 
-In Azure Stack HCI clusters, the Azure Arc agent is already included as part of the operating system of cluster nodes. You activate it by registering your Azure Stack HCI cluster with Azure Arc, which automatically enables Azure monitoring, support, and billing. 
+- **Azure Policy:** Configure the supported policy integration and assignments for the controls you intend to assess or enforce.
+- **GitOps:** Configure the desired repositories, credentials, and reconciliation scope rather than assuming that connecting a cluster deploys application manifests.
+- **Monitoring:** Configure the supported monitoring integration and destination, and verify that the expected data arrives.
 
-For Kubernetes clusters hosted by AKS on Azure Stack HCI, connection to Azure requires deploying containerized agents into a designated cluster namespace (azure-arc). The agents are responsible for maintaining connectivity to Azure, collecting Azure Arc logs and metrics, and processing configuration requests. 
+Before you enable an integration, check permissions, network access, and any applicable charges. Test its behavior rather than relying on the presence of an Arc resource to confirm that the feature works.
 
-> [!NOTE] 
-> For onboarding to succeed, the AKS on Azure Stack HCI cluster must contain at least one operational node in a Linux worker node pool.
-
-:::image type="content" source="../media/kubernetes-setup-node-pool-linux.png" alt-text="The screenshot depicts the Add a node pool blade of the Create Kubernetes Cluster wizard in Windows Admin Center." border="false":::
-
-To simplify the onboarding process, use Windows Admin Center. Such onboarding happens automatically if you follow the cluster creation process described in the previous unit of this module. Alternatively, you can script this process by using Azure CLI or PowerShell.
-
-If you choose the scripting approach to connect Kubernetes clusters on an Azure Stack HCI cluster to Azure Arc, run the following sequence of steps from an on-premises computer with connectivity to the Azure Stack HCI cluster and to Azure:
-
-1. Install the current version of the Azure CLI version with the Azure Arc-enabled Kubernetes CLI extensions and the AKS on Azure Stack HCI PowerShell module.
-1. Use Azure CLI to sign in to Microsoft Entra ID to access the Azure subscription where you've at least the Contributor role and where you intend to register your Kubernetes clusters.
-1. Use Azure CLI to register the Microsoft.Kubernetes and Microsoft.KubernetesConfiguration Azure Resource Manager resource providers. This step is necessary to implement Azure Arc-enabled Kubernetes. Using Azure CLI is a one-time only setup for a given subscription.
-1. Use Azure CLI to create a resource group that will host the connected cluster resources in an Azure region that supports Azure Arc-enabled Kubernetes.
-1. Use Azure CLI to create a service principal with the Contributor role in the resource group you created in the previous step and record its credentials.
-1. Use the AKS on Azure Stack HCI PowerShell module to connect the Kubernetes cluster to Azure Arc in the target subscription, authenticating with the service principal credentials. This step deploys the Azure Arc agents for Kubernetes into the azure-arc namespace.
+Verify each result separately: the Azure resource is present, the agents are healthy, administrators can access Kubernetes, and each selected management integration produces its intended result. See [Azure Arc-enabled Kubernetes overview](/azure/azure-arc/kubernetes/overview) for the management capabilities available through Arc.

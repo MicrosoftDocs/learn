@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.deploy-aks-cluster-to
-title: Deploy an AKS cluster to Azure Stack HCI
+title: Prepare to deploy AKS on Azure Local
 metadata:
-  title: Deploy an AKS cluster to Azure Stack HCI
-  description: "Deploy an AKS cluster to Azure Stack HCI"
-  ms.date: 06/09/2021
+  title: Prepare to Deploy AKS on Azure Local
+  description: "Verify infrastructure, networking, permissions, and management tools before deploying an AKS cluster."
+  ms.date: 10/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 11
@@ -15,14 +15,14 @@ content: |
 quiz:
   title: "Knowledge check"
   questions:
-  - content: "You're documenting the AKS installation procedure for Contoso's IT operational team that will be performing similar installations on many Azure Stack HCI clusters. You must list the prerequisites for installing the AKS extension for Windows Admin Center. Which step should you include in your list?"
+  - content: "An administrator prepares to create an AKS cluster on an existing Azure Local deployment. Which infrastructure details identify the local deployment target and the VM network?"
     choices:
-    - content: "Enabling CredSSP."
+    - content: "The application Helm chart and container image names"
       isCorrect: false
-      explanation: "Incorrect. Although you must enable CredSSP to install the AKS cluster on Azure Stack HCI, CredSSP does not play any role in installing the AKS extension for Windows Admin Center."
-    - content: "Modifying Windows Admin Center feed manager settings."
+      explanation: "Incorrect. These identify application content deployed after the Kubernetes cluster exists. They don't identify its local infrastructure target."
+    - content: "The custom location and AKS logical network resource IDs"
       isCorrect: true
-      explanation: "Correct. To install the extension, add the location of the downloaded package to the list of extension feeds within the extension manager of Windows Admin Center."
-    - content: "Register Windows Admin Center with Azure."
+      explanation: "Correct. The custom location selects the prepared Azure Local target, and the logical network identifies the network for the cluster's underlying VMs."
+    - content: "The Windows Admin Center extension package feed address"
       isCorrect: false
-      explanation: "Incorrect. Although you must register Windows Admin Center with Azure to install the AKS cluster on Azure Stack HCI, the registration does not play any role in installing the AKS extension for Windows Admin Center."
+      explanation: "Incorrect. The current workflow uses Azure tools against prepared Azure Local infrastructure. It doesn't install AKS through an extension package feed."

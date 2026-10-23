@@ -1,53 +1,79 @@
-Contoso developers are working on transforming internally developed Windows and Linux applications into Docker-based images deployable using Helm charts. In your planning for implementing Kubernetes clusters on Azure Stack HCI, you need to ensure support for both operating system platforms.
+Contoso's Linux and Windows applications need different worker nodes. Node pools group nodes with a common configuration, while Kubernetes scheduling rules determine which nodes can host each pod.
 
-## What are node pools in Kubernetes clusters on Azure Stack HCI
+## Select the required operating system
 
-AKS on Azure Stack HCI supports multiple node pools in the same Kubernetes cluster. Each pool consists of identically configured VMs, according to the settings you specify when provisioning that pool. 
+Use the `kubernetes.io/os` node label to restrict a pod to nodes that run its required operating system. The values are lowercase: `linux` and `windows`.
 
-By grouping nodes into separate pools, you can target pod deployments to the suitable set of VMs. For example, you might have containerized workloads that are supported only by the Windows operating system or require specialized hardware, such as graphics processor units. 
-
-## Control deployment of pods into node pools in Kubernetes clusters on Azure Stack HCI
-
-By default, Kubernetes schedules provisioning of containerized workloads on any available worker nodes in a manner that optimizes resource utilization. To alter this behavior, you can apply constraints on the choice of nodes based on custom criteria that you specify. These constraints include node selectors and taints and tolerations. 
-
-### Node selectors
-
-Node Selector is a setting within the YAML-based definition of a pod or a deployment that identifies the target nodes onto which the corresponding pod can be scheduled. If your intention is to designate target nodes based on their operating system, you can rely on the built-in labels automatically assigned to nodes by Kubernetes. Depending on the intended operating system, the node selector will take the form `kubernetes.io/os = Windows` or `kubernetes.io/os = Linux`. For example, the following YAML-based pod manifest designates Linux nodes as deployment targets:
+The following Deployment runs a Linux web container. The node selector belongs in the pod template, not at the top level of the Deployment:
 
 ```yaml
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: nginx
-  labels:
-    env: test
+  name: linux-web
 spec:
-  containers:
-  - name: nginx
-    image: nginx
-  nodeSelector:
-    kubernetes.io/os = Linux
+  replicas: 2
+  selector:
+    matchLabels:
+      app: linux-web
+  template:
+    metadata:
+      labels:
+        app: linux-web
+    spec:
+      nodeSelector:
+        kubernetes.io/os: linux
+      containers:
+      - name: web
+        image: nginx:stable
+        ports:
+        - containerPort: 80
 ```
 
-### Taints and tolerations
+This selector prevents the Linux container from being scheduled onto a Windows node. It doesn't guarantee capacity: pods remain pending if no eligible node meets their requirements. For production, use approved images pinned to an appropriate version or digest, and define resource requests and limits for the workload.
 
-Taints and tolerations provide an alternative approach to controlling pod placement. With this approach, taints are part of the node configuration and tolerations are part of pod specifications. By tainting a node, you effectively prevent it from hosting any pod without the corresponding taint-specific toleration.
+## Combine selectors with taints and tolerations
 
-For example, in AKS on Azure Stack HCI, if you wanted to allow for a pod to be scheduled on a Windows node, you should add the following toleration to its definition: 
+A **taint** is configured on a node. A **toleration** is configured on a pod and permits it to tolerate a matching taint. A toleration doesn't force a pod onto the tainted node, and it doesn't prevent scheduling onto other eligible nodes.
+
+For example, Contoso can reserve a set of Windows nodes for a dedicated application with a custom taint. This example requires an existing Windows node. If the cluster only has its default Linux pool, complete the Windows node-pool preparation and creation in the Windows workload unit before you try this example.
+
+Replace `windows-node-name` with the intended node name:
+
+```powershell
+kubectl --kubeconfig .\contoso-aks-kubeconfig taint nodes windows-node-name `
+    dedicated=windows-apps:NoSchedule
+```
+
+`NoSchedule` prevents new pods without a matching toleration from being scheduled onto that node. It doesn't evict pods that are already running.
+
+Add the matching toleration and an OS selector to the application's pod specification:
 
 ```yaml
+nodeSelector:
+  kubernetes.io/os: windows
 tolerations:
-- key: node.kubernetes.io/os
+- key: dedicated
   operator: Equal
-  value: Windows
+  value: windows-apps
   effect: NoSchedule
 ```
 
-In addition, you would need to add the taint `node.kubernetes.io/os=Windows:NoSchedule` to each of the Windows nodes that you want to make available exclusively for deployment of pods with the corresponding toleration. To accomplish this, you could use the kubectl command line utility, and then, after you connect to the target cluster, run the following command for each of the nodes in scope (where the `<node_name>` placeholder designates the name of the target node):
+The selector requires Windows nodes. The toleration permits the pod to use nodes with the custom taint. If the workload must use only a particular pool, add a selector for an appropriate pool label as well. Inspect existing node labels and taints before changing them.
 
-```kubectl
-kubectl taint node <node_name> node.kubernetes.io/os=Windows:NoSchedule
+> [!IMPORTANT]
+> Taints affect which workloads can schedule on a node. Test changes with the system and application workloads that use the pool. Don't indiscriminately taint all Linux nodes that host the Arc agents.
+
+## Investigate pending pods
+
+With the Arc proxy running, inspect node labels, pod placement, and scheduling events:
+
+```powershell
+kubectl --kubeconfig .\contoso-aks-kubeconfig get nodes --show-labels
+kubectl --kubeconfig .\contoso-aks-kubeconfig get pods -o wide
+kubectl --kubeconfig .\contoso-aks-kubeconfig describe pod 'pod-name'
 ```
 
-> [!NOTE]
-> Node selectors enforce placements of pods on a specific set of nodes. Tolerations allow pods to run on a designated set of tainted nodes, but does not prevent their placement on nodes without taints.
+Replace `pod-name` before running the last command. Compare the pod's selector, tolerations, resource requests, and storage requirements with the available nodes. A node selector alone doesn't create a missing Windows pool or provide additional resources.
+
+See [AKS on Azure Local mixed-OS deployments](/azure/aks-hybrid-edge/local/hyperconverged/cluster-architecture#mixed-os-deployments) and [Kubernetes taints and tolerations](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/).

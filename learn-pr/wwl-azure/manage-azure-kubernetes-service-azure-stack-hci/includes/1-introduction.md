@@ -1,31 +1,33 @@
-Microsoft Azure Stack HCI provides the option to implement Azure Kubernetes Service (AKS), which considerably simplifies deployment and management of Kubernetes-based orchestration of containerized workloads. Containerization offers a wide range of benefits, including increased workload density and resource usage efficiency. Azure Stack HCI further enhances the agility and resiliency inherent to Kubernetes deployments. 
+With Azure Kubernetes Service (AKS) on Azure Local, you deploy and manage Kubernetes clusters on your own infrastructure from Azure. In this module, you explore how to prepare, deploy, access, and operate those clusters.
 
-## Scenario: Optimize operational model
+## Scenario: Modernize Contoso's container platform
 
-Contoso Ltd. is a medium-sized financial-services company located in New York. Until recently, Contoso was operating almost entirely on-premises. Operational overhead was a significant challenge because of lack of automation and reliance on outdated technologies. Legacy hardware and software resulted in frequent stability and performance issues. These issues exposed insufficient high availability and disaster recovery provisions. 
+Contoso is a financial services company that runs Windows and Linux applications in its datacenter. Its developers are containerizing selected applications. The infrastructure team needs a repeatable way to deploy Kubernetes without moving all application processing to Azure.
 
-Contoso's Chief Information Officer (CIO) has asked you, the lead system engineer, to evaluate how Microsoft Azure Stack HCI can help change Contoso's IT landscape. So far, you have explored the way to implement the most common cluster and VM-level management tasks. You also investigated the methods of integrating Azure Stack HCI with Azure. Satisfied with the results, you reported your results to Contoso's CIO.
+As Contoso's lead system engineer, you evaluate AKS on Azure Local. You need to separate infrastructure preparation from workload-cluster creation, give administrators appropriate access, and verify that each application's operating system, storage, and authentication requirements fit the platform.
 
-In the meantime, in its search for increased workload agility and density, Contoso IT took an interest in open-source software technologies, particularly focusing on containerization and container orchestration. As a result, a group of developers started working on transforming internally developed Windows and Linux applications into Docker-based images that can be deployed by using Helm charts. To accommodate this initiative and following another request from the Contoso's CIO, you now need to identify a way to use Azure Stack HCI to host containerized workloads.
+## Scope and learning objectives
 
-## Learning objectives
+This module covers **AKS on Azure Local for hyperconverged deployments**. It doesn't describe the separate AKS on Windows Server deployment workflow or Azure Local multi-rack deployments. The Azure Local infrastructure is already deployed; you prepare the environment for an AKS workload cluster and use Azure CLI from a management workstation.
 
-At the end of this module, you'll be able to:
+In this module, you learn how to:
 
-- Describe the main concepts, architecture, and benefits of Kubernetes and AKS.
-- Describe the benefits, characteristics, and use cases of AKS on Azure Stack HCI.
-- Deploy AKS and Kubernetes clusters on Azure Stack HCI.
-- Connect AKS on Azure Stack HCI to Microsoft Azure Arc for Kubernetes.
-- Manage pod placement on multi-pool Kubernetes clusters running on Azure Stack HCI.
-- Manage pod storage on Kubernetes clusters running on Azure Stack HCI.
-- Implement containerized Windows workloads on Azure Stack HCI.
-- Troubleshoot AKS and Kubernetes-related issues on Azure Stack HCI.
+- Describe Kubernetes concepts and the AKS on Azure Local architecture.
+- Identify infrastructure, networking, identity, and tool prerequisites.
+- Deploy an AKS cluster and verify its automatic Azure Arc integration.
+- Access the Kubernetes API using Microsoft Entra authentication.
+- Place workloads on appropriate Linux and Windows node pools.
+- Configure persistent storage for containerized applications.
+- Evaluate Windows workload requirements and platform limitations.
+- Troubleshoot deployment, access, scheduling, and storage issues.
 
 ## Prerequisites
 
-Familiarity with:
+To follow the examples, you need:
 
-- The key features of Windows Server
-- The concept of virtualization
-- The architecture, core capabilities, and primary use cases of Azure Stack HCI
-- The concept of containerization and container orchestration
+- Familiarity with Windows Server, virtualization, containers, and basic Kubernetes concepts.
+- Familiarity with Azure Local and its Azure-connected management model.
+- A supported hyperconverged Azure Local deployment prepared by an infrastructure administrator.
+- Access to the Azure resources and Microsoft Entra group described in the deployment preparation unit.
+
+The examples illustrate administrative workflows. Before you use them in production, review current release requirements, capacity, licensing, and application support.

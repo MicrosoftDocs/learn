@@ -1,66 +1,61 @@
-With AKS running on the Azure Stack HCI cluster, you're now ready to install your first Kubernetes cluster. To simplify this task, you decide to use Windows Admin Center.
+Use Contoso's prepared Azure Local infrastructure and management workstation to create the workload cluster. The supported provisioning workflow also connects the cluster to Azure Arc.
 
-## Create a Kubernetes cluster on the Azure Stack HCI cluster
+## Validate and create the cluster
 
-Just like AKS, Windows Admin Center relies on the AKS extension to guide you through the process of creating a Kubernetes cluster. The process steps are:
+Use the PowerShell session and variables from the preparation unit. First validate the intended deployment:
 
-- Prerequisites
-- Basics
-- Node pools
-- Authentication
-- Networking
-- Integration
-- Review + create
+```powershell
+az aksarc create --name $clusterName --resource-group $resourceGroup `
+    --custom-location $customLocationId --vnet-ids $logicalNetworkId `
+    --aad-admin-group-object-ids $adminGroupId --generate-ssh-keys --validate
+```
 
-### Prerequisites
+Before you proceed, investigate any reported validation errors. Successful parameter validation doesn't confirm that the deployment meets application requirements or has enough production capacity.
 
-Windows Admin Center lists the compute, storage, and software prerequisites for creating a Kubernetes cluster on Azure Stack HCI. It's your responsibility to verify that the prerequisites are met. 
+Run the command without `--validate` to create the cluster:
 
-:::image type="content" source="../media/kubernetes-setup-prerequisites.png" alt-text="The screenshot depicts the Prerequisites step of the Create Kubernetes cluster wizard in Windows Admin Center." border="false":::
+```powershell
+az aksarc create --name $clusterName --resource-group $resourceGroup `
+    --custom-location $customLocationId --vnet-ids $logicalNetworkId `
+    --aad-admin-group-object-ids $adminGroupId --generate-ssh-keys
+```
 
-### Basics
+The custom location selects the deployment target, and the logical network selects the VM network. The Microsoft Entra group identifies the Kubernetes administrators. Review supported Kubernetes versions, node counts, and VM-size options for your environment rather than treating defaults as production sizing.
 
-Windows Admin Center automatically registers your Kubernetes cluster with Azure and onboards it to Azure Arc. For this configuration to succeed, provide the name of your Azure subscription and the resource group you intend to host the Azure resource corresponding to the Kubernetes cluster you are deploying. You also need to authorize Windows Admin Center to perform registration on your behalf.
+The command requests SSH keys for node troubleshooting. Protect the private key and record its actual location. The key isn't a Kubernetes user credential. Keep node access separate from application deployment permissions.
 
-:::image type="content" source="../media/kubernetes-setup-basics-1-completed-rg.png" alt-text="The screenshot depicts the Azure Arc integration settings of the Basics step of the Create Kubernetes cluster wizard in Windows Admin Center." border="false":::
+Inspect the resulting Azure resource:
 
-Windows Admin Center also allows you to specify the size of VMs used to host the control plane components. 
+```powershell
+az aksarc show --name $clusterName --resource-group $resourceGroup
+```
 
-:::image type="content" source="../media/kubernetes-setup-basics-2-completed-rg.png" alt-text="The screenshot depicts the Kubernetes version and the primary node pool settings of the Basics step of the Create Kubernetes cluster wizard in Windows Admin Center." border="false":::
+Check the provisioning state and investigate failures before you deploy applications. See [Create Kubernetes clusters using Azure CLI](/azure/aks-hybrid-edge/local/aks-create-clusters-cli) for the complete parameter reference and current release requirements.
 
-### Node pools
+## Connect through Azure Arc
 
-Windows Admin Center provides the option to specify Windows and Linux worker node pools that should be provisioned as part of the Kubernetes cluster setup. 
+The example uses Microsoft Entra authentication and the Arc cluster connection proxy. On the management workstation, open a second PowerShell terminal in the same working directory as the original terminal. Set the resource group to the value used for deployment, then start the proxy:
 
-:::image type="content" source="../media/kubernetes-setup-node-pool-mixed.png" alt-text="The screenshot depicts the Node pools step of the Create Kubernetes cluster wizard in Windows Admin Center." border="false":::
+```powershell
+$resourceGroup = '<existing-resource-group>'
+$clusterName = 'contosok8s'
+az connectedk8s proxy --name $clusterName --resource-group $resourceGroup `
+    --file .\contoso-aks-kubeconfig
+```
 
-### Authentication
+Keep that terminal open while you access the cluster. The proxy channel remains available while the command runs. If it stops, reestablish the connection before retrying Kubernetes operations.
 
-Windows Admin Center allows you to enable Active Directory authentication for the control plane of the Kubernetes cluster you are deploying. If you do choose to use this option, you will need to provide additional information necessary to establish a secure channel between the API Server of the cluster and AD DS domain controllers. 
+Return to the original management terminal and inspect the nodes. Both terminals use the same working directory, so the kubeconfig file is available there. The original deployment variables also remain available for later Azure CLI commands:
 
-:::image type="content" source="../media/kubernetes-setup-authentication-enabled.png" alt-text="The screenshot depicts the Authentication step of the Create Kubernetes cluster wizard in Windows Admin Center." border="false":::
+```powershell
+kubectl --kubeconfig .\contoso-aks-kubeconfig get nodes -o wide
+kubectl --kubeconfig .\contoso-aks-kubeconfig get pods --all-namespaces
+```
 
-### Networking
+Confirm that nodes reach `Ready` and investigate unhealthy system pods. Check Azure resource permissions, membership in the selected Microsoft Entra group, and Kubernetes authorization separately. A successful Azure sign-in doesn't confirm that all three are configured.
 
-Windows Admin Center exposes the networking features that will determine the IP address range for virtual networks hosting cluster nodes and provide the ability to implement network traffic controls. 
+## Prepare for ongoing operations
 
-:::image type="content" source="../media/kubernetes-setup-networking-basic.png" alt-text="The screenshot depicts the Networking step of the Create Kubernetes cluster wizard in Windows Admin Center." border="false":::
+Record the cluster resource, custom location, network, administrator group, SSH key location, and chosen version and capacity settings. Verify that the connected cluster appears in Azure and that its Arc agents are healthy.
 
-### Integration
-
-Windows Admin Center presents the integration settings, which indicate the Azure Stack HCI-based persistent storage available to containerized workloads. 
-
-:::image type="content" source="../media/kubernetes-setup-integration.png" alt-text="The screenshot depicts the Integration step of the Create Kubernetes cluster wizard in Windows Admin Center." border="false":::
-
-### Review + Create
-
-Windows Admin Center provides an overview of your configuration choices. After you verify those, initiate the cluster creation process.
-
-:::image type="content" source="../media/kubernetes-setup-review-create-1.png" alt-text="The screenshot depicts the Review + Create step of the Create Kubernetes cluster wizard in Windows Admin Center." border="false":::
-
-After creating the Kubernetes cluster, you can deploy containerized workloads.
-
-:::image type="content" source="../media/kubernetes-setup-finished-final.png" alt-text="The screenshot depicts the New cluster step of the Create Kubernetes cluster wizard in Windows Admin Center." border="false":::
-
-> [!NOTE] 
-> You can fully automate the process of creating a Kubernetes cluster on Azure Stack HCI by using Windows PowerShell.
+Don't run a separate legacy `Enable-AksHciArcConnection` onboarding sequence for this cluster. Arc integration is part of provisioning. The next unit explains how to verify that integration and plan optional management capabilities.

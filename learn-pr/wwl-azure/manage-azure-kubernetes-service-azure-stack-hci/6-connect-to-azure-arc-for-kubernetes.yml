@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.connect-to-azure-arc-for-kubernetes
-title: Connect Azure Kubernetes Service on Azure Stack HCI to Azure Arc for Kubernetes
+title: Verify and manage Azure Arc integration
 metadata:
-  title: Connect Azure Kubernetes Service on Azure Stack HCI to Azure Arc for Kubernetes
-  description: "Connect Azure Kubernetes Service on Azure Stack HCI to Azure Arc for Kubernetes"
-  ms.date: 06/09/2021
+  title: Verify and Manage Azure Arc Integration
+  description: "Verify automatic Arc integration, Linux agent capacity, and access for an AKS on Azure Local cluster."
+  ms.date: 10/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 8
@@ -15,14 +15,14 @@ content: |
 quiz:
   title: "Knowledge check"
   questions:
-  - content: "To promote operational excellence in Contoso, you decide to script the process of connecting Kubernetes clusters on Azure Stack HCI to Azure Arc for Kubernetes. You've a newly created subscription and want to ensure that the onboarding will complete successfully. What should you do after you successfully authenticate and access the target subscription?"
+  - content: "Contoso plans a Windows application deployment on AKS on Azure Local. What should the administrator retain to host the Arc agents and maintain Azure connectivity?"
     choices:
-    - content: "Connect Azure Stack HCI to Azure Arc."
+    - content: "A separate Windows Admin Center onboarding server"
       isCorrect: false
-      explanation: "Incorrect. In Azure Stack HCI clusters, the Azure Arc agent is already included in the operating system of cluster nodes. You activate it by registering your Azure Stack HCI cluster with Azure Arc, which automatically enables Azure monitoring, support, and billing."
-    - content: "Deploy at least one Windows worker node into the Kubernetes cluster."
+      explanation: "Incorrect. Supported AKS on Azure Local provisioning automatically enables Arc. A separate Windows Admin Center onboarding server doesn't replace the agents' node requirement."
+    - content: "A Windows-only worker-node configuration"
       isCorrect: false
-      explanation: "Incorrect. For onboarding to succeed, the AKS on Azure Stack HCI cluster must contain at least one operational Linux worker node."
-    - content: "Register Azure Resource providers."
+      explanation: "Incorrect. Windows application nodes don't replace the Linux node pool required to host the Arc agents."
+    - content: "At least one available Linux node pool"
       isCorrect: true
-      explanation: "Correct. You need to register the Microsoft.Kubernetes and Microsoft.KubernetesConfiguration Azure Resource Manager resource providers, necessary to implement Azure Arc enabled Kubernetes. This is a one-time only setup for a given subscription."
+      explanation: "Correct. AKS on Azure Local requires at least one Linux node pool to host Arc agents and maintain connectivity, even when the application workloads run on Windows."
