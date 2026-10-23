@@ -2,7 +2,19 @@ Like bandwidth, the number of network connections present on a virtual machine a
 
 A typical TCP/UDP connection has two flows created, one for the inbound and another for the outbound direction. Data transfer between endpoints requires creation of several flows in addition to the flows that perform the data transfer. Some examples are flows created for Domain Name System (DNS) resolution and flows created for load balancer health probes.
 
-Network virtual appliances (NVAs) such as gateways, proxies, and firewalls, have flows being created for connections terminated at the appliance and originated by the appliance. The Azure networking stack supports 250-K total network flows with good performance for virtual machines with eight CPU cores or more. The Azure networking stack supports 100-K total flows with good performance for virtual machines with less than eight CPU cores. Network performance degrades gracefully for flows past the good performance limits, up to a hard limit of 1M total flows (500 K inbound and 500-K outbound), after which further flows are dropped.
+Connection recommendations depend on the VM's vCPU count and networking hardware. A connection and a directional flow aren't interchangeable: a typical TCP/UDP connection uses an inbound flow and an outbound flow. The current recommended connection limits for VMs other than Network Optimized sizes are:
+
+| VM vCPUs | Azure Boost VMs with MANA | Other VM sizes |
+| --- | --- | --- |
+| 2-7 | 100,000 | 100,000 |
+| 8-15 | 500,000 | 500,000 |
+| 16-31 | 700,000 | 700,000 |
+| 32-63 | 800,000 | 800,000 |
+| 64 or more | 2,000,000 | 1,000,000 |
+
+MANA is the Microsoft Azure Network Adapter. Network Optimized VM sizes have separate connection recommendations. These values are recommendations, not performance guarantees. Above the recommended limit, connections can be dropped or experience reduced performance. Benchmark the workload's expected traffic patterns, including connection creation and termination rates, and monitor the VM's inbound and outbound flow metrics.
+
+Network virtual appliances (NVAs), such as gateways, proxies, and firewalls, consume additional flows when forwarding traffic. Use half the applicable recommended connection limit for forwarding workloads because they consume twice the flows of typical client-server communication. For the maintained tables and Network Optimized guidance, see [Virtual machine network bandwidth](/azure/virtual-network/virtual-machine-network-throughput#flow-limits-and-active-connections-recommendations).
 
 Azure Virtual Machines are more agile than on-premises virtual machines. You can deploy and scale Azure Virtual Machines vertically on an as-needed basis, without investing in dedicated hardware. Thus, Azure Virtual Machines suitable for scenarios that must accommodate dynamically changing workloads. Also, the ease of provisioning and deprovisioning makes Azure Virtual Machines ideal for proof-of-concept or development scenarios, where the need for compute resources is temporary.
 

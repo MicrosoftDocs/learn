@@ -8,21 +8,25 @@ In contrast, the following diagram depicts Hyper-V with nested virtualization en
 
 :::image type="content" source="../media/m22-nested-virtualization-2.svg" alt-text="A nested virtualization architecture diagram in which there is an additional hypervisor present, which sits above the initial hypervisor, creating two hypervisor layers. Any VMs created above this additional hypervisor access host hardware through the two hypervisors in succession." border="false":::
 
-## Configure networks with nested virtualization
+## Prerequisites for nested virtualization
 
-To enable nested virtualization, you need to meet the following prerequisites:
+For Windows Server hosts, the prerequisites depend on the physical processor:
 
-- Both the Hyper-V host and the guest VM must be Windows Server 2016 and newer.
-- The physical host computer must have enough static RAM.
-- Hyper-V VMs must have a configuration version of 8.0 or greater.
-- The physical host computer must have an Intel processor with Virtual Machine Extensions (VT-x) and Extended Page Tables (EPT) capabilities.
+| Physical processor | Hyper-V host operating system | Minimum VM configuration version |
+| --- | --- | --- |
+| Intel with VT-x and Extended Page Tables (EPT) | Windows Server 2016 or later | 8.0 |
+| AMD EPYC or Ryzen, or later | Windows Server 2022 or later | 9.3 |
+
+These host requirements aren't a requirement that the host and guest run the same Windows Server version. Choose a supported Windows guest operating system that supports installing Hyper-V for the VM that acts as the nested host. Allocate enough memory and other resources to that VM for its own operating system and the nested VMs it runs.
+
+Supported Windows client hosts are also covered in [Run Hyper-V in a virtual machine with nested virtualization](/windows-server/virtualization/hyper-v/enable-nested-virtualization). Check the processor-specific requirements for the host platform you use.
 
 ## Enable nested virtualization
 
-To enable nested virtualization by using Windows PowerShell, while the VM is in the **off** state, run the following command from the physical Hyper-V host machine:
+To enable nested virtualization by using Windows PowerShell, run the following command from the physical Hyper-V host while the VM is in the **off** state. Replace `NestedHostVM` with the name of the VM that acts as the nested Hyper-V host:
 
 ```powershell
-Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true
+Set-VMProcessor -VMName 'NestedHostVM' -ExposeVirtualizationExtensions $true
 ```
 
 After you have enabled nested virtualization, you can install Hyper-V on the guest VM in the same way that you would for a Hyper-V host.
@@ -38,10 +42,10 @@ There are two options for networking with nested VMs:
 
 The first option uses MAC address spoofing, which enables network packets to be routed through two vSwitches. MAC address spoofing must be enabled on the physical Hyper-V host.
 
-To enable MAC address spoofing by using Windows PowerShell, run the following command from the physical Hyper-V host machine:
+To enable MAC address spoofing by using Windows PowerShell, run the following command from the physical Hyper-V host. Replace `NestedHostVM` with the name of the VM that acts as the nested Hyper-V host. The command gets that VM's network adapters and enables MAC address spoofing on them:
 
 ```powershell
-Set-VMNetworkAdapter -VMName <VMName> | Set-VMNetworkAdapter -MacAddressSpoofing On
+Get-VMNetworkAdapter -VMName 'NestedHostVM' | Set-VMNetworkAdapter -MacAddressSpoofing On
 ```
 
 ### NAT
@@ -53,10 +57,8 @@ To use NAT, create a virtual NAT switch in the host VM. Assign an IP address to 
 > [!NOTE] 
 > There's more configuration required with the NAT option than the MAC address spoofing option.
 
-### Features that become disabled when you enable nested virtualization
+### Memory considerations
 
-After you enable nested virtualization, the following features will become disabled or will fail:
+When Hyper-V runs inside a VM, that VM's memory allocation doesn't fluctuate even if Dynamic Memory is enabled. Turn off the VM before adjusting its memory allocation. Runtime memory resizing also fails for a VM without Dynamic Memory while Hyper-V runs inside it.
 
-- Virtualization-based Security (VBS). VBS can't expose virtualization extensions to guests. You must first disable VBS before enabling nested virtualization.
-- Device Guard. Device Guard can't expose virtualization extensions to guests. You must first disable Device Guard on the host before enabling nested virtualization.
-- Dynamic Memory. Dynamic Memory isn't supported while nested virtualization is enabled, so runtime memory resize will fail.
+Simply exposing virtualization extensions doesn't disable Dynamic Memory. The restriction applies while Hyper-V runs inside the VM. See [Nested virtualization memory considerations](/windows-server/virtualization/hyper-v/nested-virtualization#dynamic-memory-and-runtime-memory-resize).

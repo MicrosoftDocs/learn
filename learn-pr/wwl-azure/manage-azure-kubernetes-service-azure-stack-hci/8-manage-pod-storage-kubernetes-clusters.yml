@@ -2,11 +2,11 @@
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.manage-pod-storage-kubernetes-clusters
 title: Manage pod storage on Kubernetes clusters
 metadata:
-  title: Manage pod storage on Kubernetes clusters
-  description: "Manage pod storage on Kubernetes clusters"
-  ms.date: 06/09/2021
+  title: Manage Pod Storage on Kubernetes Clusters
+  description: "Request and mount persistent storage and manage volume and claim lifecycles."
+  ms.date: 10/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
@@ -15,14 +15,14 @@ content: |
 quiz:
   title: "Knowledge check"
   questions:
-  - content: "Because Contoso developers are working on containerizing stateful workloads, you want to test the implementation of persistent pod storage by using your deployment of AKS on Azure Stack HCI. What do you have to define first?"
+  - content: "Contoso's cluster has a suitable storage class configured for dynamic provisioning. Which resource should an application developer create to request persistent capacity from that class?"
     choices:
     - content: "Persistent volume claim"
       isCorrect: true
-      explanation: "Correct. To implement a volume in a Kubernetes cluster, you need to first define a persistent volume claim."
+      explanation: "Correct. A persistent volume claim requests the capacity, access mode, and storage class. The provisioner can then create the backing volume."
     - content: "Storage class"
       isCorrect: false
-      explanation: "Incorrect. AKS on Azure Stack HCI offers the default storage class, which implements VHDX-based disks."
+      explanation: "Incorrect. The scenario already has a suitable storage class. Creating another class doesn't submit the application's request for capacity."
     - content: "Persistent volume"
       isCorrect: false
-      explanation: "Incorrect. Persistent volumes require you to first define a persistent volume claim."
+      explanation: "Incorrect. An administrator can create a volume statically, but this scenario uses dynamic provisioning initiated by an application's claim."

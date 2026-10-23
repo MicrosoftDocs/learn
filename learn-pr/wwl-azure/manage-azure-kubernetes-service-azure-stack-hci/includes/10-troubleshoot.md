@@ -1,24 +1,57 @@
-As you evaluate AKS on Azure Stack HCI, you remain aware of the operational challenges that Contoso has been struggling with in recent years. To address these challenges, you want to ensure that Contoso IT staff will be able to swiftly troubleshoot and resolve the most common issues that they might encounter when configuring and managing Kubernetes clusters. To help reach that goal, you decide to document the AKS on Azure Stack HCI troubleshooting steps you used during your evaluation.
+Contoso needs a repeatable way to distinguish platform, access, and application failures. Start with the failing layer and collect evidence before changing the environment.
 
-## Troubleshoot issues with AKS on Azure Stack HCI 
+## Separate provisioning and access problems
 
-The approach to troubleshooting AKS on Azure Stack HCI depends largely on the components that exhibit abnormal behavior. Assuming that the issue you encounter is limited to an individual component, you can start your troubleshooting process by using the following guidance.
+If cluster deployment fails, inspect the Azure operation and the cluster's provisioning state. Check the custom location, logical network, available IP addresses, local capacity, and required permissions with the infrastructure administrator.
 
-### Troubleshoot Windows and Linux worker nodes
-
-Both Windows and Linux worker nodes are accessible though the SSH protocol, with asymmetric key-based authentication. To identify their IP addresses, after you connect to the cluster, run the following command:
-
-```kubectl
-kubectl get nodes -o wide
+```powershell
+az aksarc show --name $clusterName --resource-group $resourceGroup
 ```
 
-When establishing an SSH connection, specify the location of the private key of the asymmetric key pair generated during cluster provisioning. By default, the private key is stored in the **C:\\ClusterStorage\\AKS\\AksHCI\\.ssh\\akshci_rsa** file of the Azure Stack HCI cluster nodes.
+If you can't access the cluster, check the selected subscription, Azure role assignments, Microsoft Entra group membership, and the status of the Arc proxy process. An expired or stopped proxy isn't the same as a Kubernetes authorization denial.
 
-> [!NOTE]
-> To reset the SSH keys and change their locations, run the **Set-AksHciConfig** PowerShell cmdlet.
+For Arc connectivity issues, check the Linux node pool and the `azure-arc` agents. Investigate required outbound access and DNS rather than deleting the connected cluster resource as an initial response.
 
-## Troubleshoot authentication and authorization issues affecting AKS on Azure Stack HCI 
+## Inspect Kubernetes resources and events
 
-If you encounter issues with AD DS authentication (including gMSA), verify that time synchronization is configured across Azure Stack HCI cluster nodes and their virtual machines. You can use AD DS domain controllers or an external time service as the synchronization source. 
+With the proxy running and the kubeconfig available, collect the cluster's current state:
 
-To join Windows Server nodes of a Kubernetes cluster on Azure Stack HCI to an AD DS domain, you will need Full Control permission in the AD DS container that hosts the Azure Stack HCI cluster nodes.
+```powershell
+kubectl --kubeconfig .\contoso-aks-kubeconfig get nodes -o wide
+kubectl --kubeconfig .\contoso-aks-kubeconfig get pods --all-namespaces -o wide
+kubectl --kubeconfig .\contoso-aks-kubeconfig get events --all-namespaces --sort-by=.metadata.creationTimestamp
+```
+
+Use the symptoms to choose the next check:
+
+| Symptom | Initial checks |
+| --- | --- |
+| Pod remains pending | Node readiness, OS selector, taints, resource requests, and volume binding events. |
+| Image pull fails | Image reference, registry connectivity, pull credentials, and host/image compatibility. |
+| Container repeatedly restarts | Application logs, configuration, resource limits, and health checks. |
+| PVC remains pending | Storage class, binding mode, provisioner events, and available capacity. |
+| Kubernetes operation is forbidden | The authenticated identity and its Kubernetes authorization, not only Azure resource visibility. |
+
+Inspect the specific pod and container when necessary. Replace the quoted example names with resources in the relevant namespace:
+
+```powershell
+kubectl --kubeconfig .\contoso-aks-kubeconfig describe pod 'pod-name' --namespace 'application-namespace'
+kubectl --kubeconfig .\contoso-aks-kubeconfig logs 'pod-name' --namespace 'application-namespace' --container 'container-name'
+```
+
+## Preserve keys and collect support logs
+
+Use the SSH private key associated with cluster creation when a supported diagnostic procedure requires direct node access or log collection. Don't assume that a key exists in a fixed `C:\ClusterStorage` path.
+
+Verify the actual key location, node access settings, and network reachability. The Arc proxy provides Kubernetes API access, not SSH connectivity to the nodes. Run SSH-based log collection from a workstation with network access to the node IP addresses and permitted SSH access. Use the Kubernetes API for routine application operations. Node access is a separate administrative capability.
+
+For full cluster logs, the documented `az aksarc get-logs` command accepts a kubeconfig, the directory containing the SSH credentials, and an output directory. Replace the example credential path with the directory containing the correct key:
+
+```powershell
+az aksarc get-logs --kubeconfig .\contoso-aks-kubeconfig `
+    --credentials-dir 'C:\Users\operator\.ssh' --out-dir .\aks-support-logs
+```
+
+Protect the resulting archive and send it through your organization's approved support process. Record timestamps, the affected resource, recent changes, and the checks already performed.
+
+See [Get on-demand logs](/azure/aks-hybrid-edge/local/hyperconverged/get-on-demand-logs) and [Connect to Windows or Linux worker nodes with SSH](/azure/aks/aksarc/ssh-connect-to-windows-and-linux-worker-nodes) for the current diagnostic procedures.

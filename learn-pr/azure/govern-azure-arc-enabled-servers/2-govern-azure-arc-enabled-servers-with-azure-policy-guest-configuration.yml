@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.govern-azure-arc-enabled-servers.govern-azure-arc-enabled-servers-with-azure-policy-guest-configuration
-title: Govern Azure Arc-enabled servers with Azure Policy Guest Configuration
+title: Govern Azure Arc-enabled servers with Azure Machine Configuration
 metadata:
-  title: Govern Azure Arc-enabled servers with Azure Policy Guest Configuration
-  description: Govern Azure Arc-enabled servers with Azure Policy Guest Configuration
-  ms.date: 08/09/2024
-  author: aurnovcy
-  ms.author: aurnovc
+  title: Govern Azure Arc-Enabled Servers with Azure Machine Configuration
+  description: Audit and configure operating system settings on Azure Arc-enabled servers with Azure Machine Configuration and Azure Policy.
+  ms.date: 10/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 5
 content: |

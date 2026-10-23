@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.deploy-kubernetes-cluster-to
-title: Deploy a Kubernetes cluster to Azure Stack HCI
+title: Deploy a Kubernetes cluster to Azure Local
 metadata:
-  title: Deploy a Kubernetes cluster to Azure Stack HCI
-  description: "Deploy a Kubernetes cluster to Azure Stack HCI"
-  ms.date: 06/09/2021
+  title: Deploy a Kubernetes Cluster to Azure Local
+  description: "Validate and create an AKS cluster using Azure CLI, then connect through Azure Arc."
+  ms.date: 10/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
@@ -15,14 +15,14 @@ content: |
 quiz:
   title: "Knowledge check"
   questions:
-  - content: "You are documenting the procedure of creating a Kubernetes cluster for Contoso's IT operation team that will be performing similar installations on many Azure Stack HCI clusters. You need to describe the step to configure the size of the VMs used to host the control plane components of the Kubernetes cluster. Which of the following is that step?"
+  - content: "An administrator creates an AKS cluster with Microsoft Entra authentication and wants selected users to have Kubernetes administrator access. Which value should the administrator supply during cluster creation?"
     choices:
-    - content: "Node pools"
+    - content: "The subscription's billing account identifier"
       isCorrect: false
-      explanation: "Incorrect. During this step, specify Windows and Linux worker node pools that should be provisioned as part of the Kubernetes cluster setup."
-    - content: "Basics"
+      explanation: "Incorrect. A billing identifier doesn't identify the Microsoft Entra users authorized to administer the Kubernetes cluster."
+    - content: "The Microsoft Entra administrator group's object ID"
       isCorrect: true
-      explanation: "Correct. During this step, specify the size of the VMs used to host the control plane components."
-    - content: "Integration"
+      explanation: "Correct. The example supplies this group through --aad-admin-group-object-ids. Its members receive Kubernetes administrator access, so membership requires careful control."
+    - content: "The management workstation's SSH public key fingerprint"
       isCorrect: false
-      explanation: "Incorrect. During this step, Windows Admin Center presents the integration settings, which indicate the Azure Stack HCI-based persistent storage available to containerized workloads."
+      explanation: "Incorrect. SSH keys support node access and troubleshooting. They don't identify the Microsoft Entra administrator group."

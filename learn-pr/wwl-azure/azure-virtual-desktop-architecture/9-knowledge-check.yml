@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 06/21/2023
+  ms.date: 10/23/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
@@ -17,14 +17,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "While deploying Azure Virtual desktop, what is used to integrate Active Directory Domain Services (AD DS) with Microsoft Entra ID?"
+  - content: "An organization uses Active Directory Domain Services (AD DS) and plans a hybrid-identity deployment for Azure Virtual Desktop. Which tool synchronizes its on-premises identities to Microsoft Entra ID?"
     choices:
     - content: "ExpressRoute"
       isCorrect: false
       explanation: "That's incorrect. Azure ExpressRoute creates private connections between Azure datacenters and infrastructure on the premises or in a colocation."
     - content: "Microsoft Entra Connect"
       isCorrect: true
-      explanation: "That's correct. Microsoft Entra Connect is the Microsoft tool designed to meet and accomplish hybrid identity in the organization."
+      explanation: "That's correct. Microsoft Entra Connect synchronizes on-premises AD DS identities to Microsoft Entra ID for this hybrid-identity scenario. AD DS isn't a requirement for every Azure Virtual Desktop deployment."
     - content: "RD Connection Broker"
       isCorrect: false
       explanation: "That's incorrect. Remote Desktop Connection Broker manages incoming remote desktop connections to the Session Host."

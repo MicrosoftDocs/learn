@@ -10,9 +10,11 @@ The minimum OS releases for deploying scale-out configurations in Azure Virtual 
 - **SUSE Linux 12 SP3**
 - **Red Hat Linux 7.4**
 
-Azure Virtual Machine scale-out deployments don't support a standby node with NFS shares implemented by third-party solutions. This is because none of these solutions are currently able to fulfill the storage latency criteria for SAP HANA with their solutions deployed on Azure. This means that **/hana/data** and **/hana/log** volumes can't be shared, which prevents the usage of an SAP HANA standby node in a scale-out configuration.
+Standby-node support depends on the storage configuration. SAP HANA scale-out on Azure Virtual Machines supports host auto-failover with standby nodes when the shared storage uses Azure NetApp Files. In this configuration, the standby node requires access to all database volumes. The **/hana/data** and **/hana/log** volumes must use NFSv4.1, including the NFSv4.1 mount protocol. NFSv3 isn't supported for this standby-node configuration.
 
-The basic configuration of a SUSE Linux virtual machine node for SAP HANA scale-out has the following characteristics:
+Storage soft appliances that provide third-party NFS shares aren't supported for SAP DBMS deployments on Azure. Don't infer standby-node support from the availability of an NFS share alone. For supported configurations, see the [SUSE Linux](/azure/sap/workloads/sap-hana-scale-out-standby-netapp-files-suse) and [Red Hat Enterprise Linux](/azure/sap/workloads/sap-hana-scale-out-standby-netapp-files-rhel) deployment guides and [SAP workload supported scenarios](/azure/sap/workloads/planning-supported-configurations#high-availability-protection-for-the-sap-dbms-layer).
+
+The following disk-based configuration uses nonshared data and log volumes and doesn't provide shared-storage host auto-failover with a standby node. The basic configuration of a SUSE Linux virtual machine node for this approach has the following characteristics:
 
 - For **/hana/shared**, you build out a highly available NFS cluster based on SUSE Linux 12 SP3. This cluster hosts the **/hana/shared** NFS share(s) of your scale-out configuration and SAP NetWeaver or BW/4HANA Central Services.
 - All other disk volumes aren't shared among the different nodes and aren't based on NFS.

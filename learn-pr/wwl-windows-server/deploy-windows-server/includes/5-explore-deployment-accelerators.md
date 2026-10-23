@@ -1,74 +1,51 @@
-Contoso's IT infrastructure staff  must consider using software tools to help them plan their upgrade and migration to Windows Server 2025. Along with guidance content to help you design and plan your Windows Server deployment, Microsoft also supplies solution accelerators to aid in the process.
+Contoso needs a repeatable way to prepare and deploy Windows Server 2025 across its sites. You select tools that support the target operating system and distinguish readiness checks from installation automation.
 
-Solution accelerators are free, scenario-based guides and automations designed to help you with planning, deploying, and operating Microsoft products and technologies. Solution Accelerator scenarios focus on security and compliance, management and infrastructure, and communication and collaboration. Solution accelerators are no longer under active development, but are still available from the Microsoft website. You can use solution accelerators with more recent versions of Windows Server, such as Windows Server 2025 even though more recent versions of the Windows Server operating system aren't officially supported.
+> [!IMPORTANT]
+> Microsoft Deployment Toolkit (MDT) is retired and unsupported. Don't use it as the basis for a new Windows Server 2025 deployment. See [MDT support lifecycle](/troubleshoot/windows-server/setup-upgrade-and-drivers/deployment-toolkit-support).
 
-## Microsoft Deployment Toolkit
+## Assess the target environment
 
-You can use the MDT to automate the deployment of Windows operating systems, applications, desktops, laptops, tablets, and servers in the enterprise.
+Start with an inventory of the target computers, installed applications, server roles, and workload dependencies. Compare the hardware against the Windows Server 2025 requirements, and check application and driver support with the respective vendors. An inventory shows what exists, but doesn't by itself certify that a workload supports the new operating system.
 
-> [!TIP]
-> The MDT helps you configure the unattended answer files and provides tools for automating additional components and settings.
+Separate installation minimums from workload capacity. A computer that meets the Server Core memory minimum might still lack enough memory for its planned roles. Record current CPU, memory, storage, and network demand, then use representative workload tests to size the replacement server.
 
-The MDT allows you to automate the creation of a reference computer and then capture that computer to an image, which you then can deploy to target computers. However, this feature is more applicable to building client computers running Windows 10 rather than building servers.
+For an in-place upgrade, also verify the supported upgrade path and each application's upgrade requirements. For a migration, identify how you transfer data, preserve permissions, and validate the service on the destination. Microsoft's [server application compatibility guidance](/windows-server/get-started/application-compatibility) is a starting point, not a replacement for product-specific support information.
 
-> [!NOTE]
-> MDT lets you build and deploy both boot and install images.
+## Choose supported deployment tools
 
-Both boot and install image types are available as .wim files found on the installation media for Windows operating systems. Whenever you update a deployment share, the update process checks for changes and creates a new light-touch installation (LTI) boot image. The boot image is created in both a .wim file and an .iso image file, which you then can use to create bootable media.
+The Windows Assessment and Deployment Kit (Windows ADK) includes tools for preparing Windows installations. Select an ADK release that explicitly supports Windows Server 2025, apply its required servicing updates, and install the separate Windows Preinstallation Environment (Windows PE) add-on when you need bootable deployment media. Check the [ADK download and support information](/windows-hardware/get-started/adk-install) rather than assuming an older deployment workstation supports a newer server release.
 
-While you'll usually use the original install.wim file found in the sources directory of the installation media to deploy an image, in rare cases you might want to customize both the image as it exists as a .wim file in the MDT Deployment Share, and through the deployment of the image.
+These tools serve different purposes:
 
-> [!TIP]
-> If you want to create a custom image, using MDT, you can deploy a .wim file to a reference computer, configure the reference computer, and then capture the reference computer in its entirety to a .wim file. You can later deploy this .wim file to many computer devices, and even add software, drivers, and apps to the image as part of customizing it when deploying.
+| Tool | Purpose |
+| --- | --- |
+| Windows System Image Manager (Windows SIM) | Create and validate XML answer files for unattended Windows Setup. |
+| Deployment Image Servicing and Management (DISM) | Inspect, mount, service, capture, and apply Windows images. |
+| Windows PE | Boot a target computer into a small deployment and recovery environment before the full operating system runs. |
 
-When you follow the LTI process (which uses only the tools available in the MDT), you perform the following high-level steps:
+For example, use DISM to inspect the available image indexes before selecting an edition for deployment. Use Windows SIM to define installation settings for that image. Windows PE provides an environment in which you run deployment tools, but it isn't the installed server operating system. These components don't require MDT.
 
-1. Install the MDT, create a deployment share on the management computer, and then import the source files that you want to use.
-1. Create a task sequence and boot image for the reference computer.
-1. Update the deployment share with any changes.
-1. Boot the reference computer with the MDT media. This will provide access to the task sequence files, the task sequence, and the boot image to the reference computer.
-1. Run the deployment wizard to install the operating system on the reference computer, and capture an image of the reference computer.
-1. Copy the captured image to the management computer.
-1. Create the boot image and task sequence to deploy the captured image to target computers.
-1. Update the deployment share.
-1. Boot the target computer with the MDT media. This will provide the reference computer with access to the task sequence files, the task sequence, and the boot image.
-1. Run the deployment wizard to install the operating system on the target computer.
+## Automate Windows Setup with an answer file
 
-## Microsoft Assessment and Planning Toolkit
+An answer file supplies settings that otherwise require interaction during installation. In Windows SIM, use the target Windows image and its catalog to select applicable settings. Add the settings to the appropriate configuration passes, then validate the answer file against that image. This helps detect invalid settings before you start a deployment.
 
-The Microsoft Assessment and Planning Toolkit (MAP) is an agentless solution accelerator that analyzes the inventory of an organization’s server infrastructure, performs an assessment, and then creates reports that you can use for upgrade and migration plans.
+Typical settings include the installation language, image selection, and target disk and partition. Review disk settings carefully: an automated partitioning configuration can erase existing data. Test on an isolated computer or VM with a representative disk layout before using the file on a production server.
 
-MAP can be used with Windows Server 2025, Windows 11, and for other scenarios, such as:
+Windows Setup can discover an `Autounattend.xml` file at the root of removable media, or you can explicitly select an answer file when you start Setup from Windows PE. Incorrect or missing required settings can still cause Setup to display prompts. An answer file automates installation choices, not application compatibility assessment or workload sizing.
 
-- Assessing the environment for Microsoft 365.
-- Sizing your desktop virtualization needs for Virtual Desktop Infrastructure (VDI).
-- Migrating to Microsoft Azure VM.
-- Virtualizing Linux servers to Hyper-V.
-- Setting up SQL Server platforms in the cloud.
-- Planning Hyper-V servers.
-- Assessing Microsoft Volume licensing compliance and positioning for Server and Cloud Enrollment.
+Restrict access to answer files and deployment media because they can contain sensitive information. Don't store credentials in a shared template without appropriate protection. See [Automate Windows Setup](/windows-hardware/manufacture/desktop/automate-windows-setup) and [answer-file best practices](/windows-hardware/customize/desktop/wsim/best-practices-for-authoring-answer-files).
 
-Use the MAP to perform the tasks described in the following table.
+## Validate a repeatable deployment workflow
 
-| Task                                                         | Explanation                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Inventory your organization’s IT infrastructure              | Based on the inventory, MAP displays a detailed report about which machines can run Windows Server 2025, which machines can run Windows Server 2025 with minimum system requirements, and which machines aren't capable of running Windows Server 2025. MAP also recommends specific upgrades that ensure computers can run Windows Server 2025. |
-| Generate a report or proposal based on the Windows Server 2025 Readiness Assessment | The report or proposal is a document that contains an executive overview, assessment results, next steps, and a worksheet summarizing Windows Server 2025 readiness for computers that are running Windows Server. |
-| Capture the performance metrics of the current IT infrastructure to help plan consolidation and server virtualization. | The performance assessment generates reports on performance and presents the server consolidation recommendations. |
-| Estimate server utilization based on that metric before and after the virtualization. | You can also choose which current physical servers are the best candidates for virtualization and the hosts on which you should place those VMs. |
+For Contoso's new servers, use the following high-level workflow:
 
-MAP uses technologies that are already available in your IT environment to perform inventory and assessments. These technologies include Windows Management Instrumentation (WMI), the Remote Registry service, Simple Network Management Protocol (SNMP), AD DS, and the Computer Browser service.
+1. Verify hardware, workload capacity, application compatibility, and the selected installation option.
+1. Prepare the supported Windows Server installation media and compatible ADK tools.
+1. Inspect the target image with DISM and create its answer file with Windows SIM.
+1. Validate the answer file and test Setup on a representative target.
+1. Check the installed edition, drivers, network connectivity, and required server roles.
+1. Run workload and recovery tests, then approve the tested configuration for wider deployment.
 
-### MAP discovery
+If your process requires a customized image, DISM provides image-management capabilities separately from answer-file authoring. Consult the [DISM image-management reference](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14) for the operation you need, and the [Windows PE overview](/windows-hardware/manufacture/desktop/winpe-intro) for deployment-environment capabilities.
 
-MAP can discover Windows, Linux, UNIX, and VMware servers, computers, and virtual machines. It has the following discovery methods for creating an inventory:
-
-- AD DS. Requires domain credentials. You can use this method to discover all computers in all domains, or in specified domains, containers, and organization units.
-
-- Windows networking protocols, using the Win32 LAN Manager application programming interface (API). Requires the Computer Browser service to be running on the computer, or the server running MAP. You can use this method to discover Windows workgroups and Windows NT 4.0 domains.
-
-- Configuration Manager. MAP can use Configuration Manager for discovery. For discovery, you require the primary site server name and appropriate credentials for Configuration Manager or Systems Management Server.
-
-- IP Address Range. You can scan for computer and servers using one or more IP address ranges, up to a maximum of 100,000 addresses.
-
-- NetBIOS names. You also can discover computers and servers by entering their NetBIOS names manually, or by importing the names from a text file.
+Keep the image version, answer file, tool versions, and test results together as the deployment baseline. Repeat validation when you change the image or installation settings. This gives Contoso a documented process without relying on unsupported solution-accelerator claims.

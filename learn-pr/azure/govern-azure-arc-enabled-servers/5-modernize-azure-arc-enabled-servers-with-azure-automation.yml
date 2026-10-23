@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.govern-azure-arc-enabled-servers.modernize-azure-arc-enabled-servers-with-azure-automation
-title: Modernize deployment, response, and orchestration of Azure Arc-enabled servers with Azure Automation
+title: Manage inventory, updates, and runbooks for Azure Arc-enabled servers
 metadata:
-  title: Modernize deployment, response, and orchestration of Azure Arc-enabled servers with Azure Automation
-  description: Modernize deployment, response, and orchestration of Azure Arc-enabled servers with Azure Automation
-  ms.date: 08/09/2024
-  author: aurnovcy
-  ms.author: aurnovc
+  title: Manage Inventory, Updates, and Runbooks for Azure Arc-Enabled Servers
+  description: Use Azure Change Tracking and Inventory, Azure Update Manager, and Azure Automation with extension-based Hybrid Runbook Workers.
+  ms.date: 10/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/5-modernize-azure-arc-enabled-servers-with-azure-automation.md)]
 

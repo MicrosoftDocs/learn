@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-windows-server.identify-hardware-requirements-for-2019
-title: Identify the hardware requirements for Windows Server 2019
+title: Identify the hardware requirements for Windows Server 2025
 metadata:
-  title: Identify the hardware requirements for Windows Server 2019
-  description: "Identify the hardware requirements for Windows Server 2019"
-  ms.date: 12/26/2024
+  title: Identify the hardware requirements for Windows Server 2025
+  description: "Identify the hardware requirements for Windows Server 2025"
+  ms.date: 10/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5

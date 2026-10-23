@@ -17,18 +17,21 @@ Microsoft manages the following Azure Virtual Desktop services as part of Azure:
 
 Customers manage these components of Azure Virtual Desktop solutions:
 
- -  **Azure Virtual Network**: Azure Virtual Network lets Azure resources like VMs communicate privately with each other and with the internet. By connecting Azure Virtual Desktop host pools to an Active Directory domain, you can define network topology to access virtual desktops and virtual apps from the intranet or internet, based on organizational policy. You can connect an Azure Virtual Desktop to an on-premises network using a virtual private network (VPN), or use Azure ExpressRoute to extend the on-premises network into the Azure cloud over a private connection.
+ -  **Azure Virtual Network**: Azure Virtual Network lets Azure resources like VMs communicate privately with each other and with the internet. Plan network connectivity for the session hosts' identity configuration and the resources users need to access. AD DS domain-joined session hosts need connectivity to their domain controllers, but domain-controller connectivity isn't required simply to deploy Microsoft Entra joined session hosts. When your deployment needs access to an on-premises network, use a virtual private network (VPN) or Azure ExpressRoute as appropriate.
 
 :::image type="content" source="../media/virtual-network-connection-10929655.png" alt-text="Diagram of a VNET connection from datacenter to Azure.":::
 
 
  -  **Microsoft Entra ID**: Azure Virtual Desktop uses Microsoft Entra ID for identity and access management. Microsoft Entra integration applies Microsoft Entra security features like conditional access, multifactor authentication, and the Intelligent Security Graph, and helps maintain app compatibility in domain-joined VMs.
- -  **AD DS**: Azure Virtual Desktop VMs must domain-join an AD DS service. You can use Microsoft Entra Connect to associate AD DS with Microsoft Entra ID.
- -  **Azure Virtual Desktop session hosts**: A host pool can run the following operating systems:
-     -  Windows 10 Enterprise and Windows 11 Enterprise
-     -  Windows 10 Enterprise Multi-session
-     -  Windows Server 2012 R2 and above
-     -  Custom Windows system images with pre-loaded apps, group policies, or other customizations
+ -  **Session host join options**: Join session hosts to the same Microsoft Entra tenant as your users, or to an Active Directory domain provided by AD DS or Microsoft Entra Domain Services. AD DS is one supported option, not a requirement for every deployment. Keep session hosts in a host pool on the same join type. For a hybrid-identity deployment using AD DS, Microsoft Entra Connect can synchronize on-premises identities to Microsoft Entra ID. See [Microsoft Entra joined session hosts](/azure/virtual-desktop/azure-ad-joined-session-hosts) for the requirements and considerations for that join option.
+ -  **Azure Virtual Desktop session hosts**: Supported 64-bit operating system editions include:
+     -  Windows 11 Enterprise and Windows 11 Enterprise multi-session
+     -  Windows 10 Enterprise and Windows 10 Enterprise multi-session
+     -  Windows Server 2025, Windows Server 2022, Windows Server 2019, and Windows Server 2016
+
+Support depends on the specific operating system release's lifecycle and the applicable licensing requirements. Verify the current [Azure Virtual Desktop prerequisites](/azure/virtual-desktop/prerequisites#operating-systems-and-licenses) before selecting an image.
+
+Custom images can include preinstalled applications and other customizations, but must use a supported session host operating system. Customizing an image doesn't remove operating system support, licensing, or identity requirements.
 
 You can choose VM sizes, including GPU-enabled VMs. Each session host has an Azure Virtual Desktop host agent, which registers the VM as part of the Azure Virtual Desktop workspace or tenant. Each host pool can have one or more app groups, which are collections of remote applications or desktop sessions that users can access.
 

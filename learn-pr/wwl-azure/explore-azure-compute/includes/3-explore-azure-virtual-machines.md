@@ -42,7 +42,7 @@ There's a 2 terabytes (TB) size limit on a virtual disk that hosts the operating
 A limit also exists on the throughput and input/output operations per second (IOPS) that individual disks support. With Standard HDD storage, you should expect about 60 megabytes per second (MBps) or 500 8-kilobyte (KB) IOPS. With Azure Premium SSD storage, performance depends on the disk size, with 32-TB disks supporting up to 900 MBps and 20,000 256-KB IOPS (Ultra SSD storage offers 2,000 MBps and 160,000 IOPS per disk, regardless of its size). If you need to increase per-volume performance beyond these limits, you can create multiple-disk volumes.
 
 > [!NOTE]
-> At the time of writing, any virtual disks that you intend to attach to Azure Virtual Machines must be in the .vhd format. There's also no support for Generation 2 Hyper V virtual machines in Azure. Additionally, no support exists for dynamically expanding or differencing virtual disks—they all must be fixed.
+> Azure supports both Generation 1 and Generation 2 virtual machines. Select a VM size and operating system image that support the required generation. For uploaded VM images, Azure requires fixed-size VHD files, not VHDX, dynamically expanding, or differencing disks. Convert an on-premises disk to the supported format before uploading it. For details, see [Generation 2 VM support](/azure/virtual-machines/generation-2) and [Prepare a Windows VHD or VHDX to upload to Azure](/azure/virtual-machines/windows/prepare-for-upload-vhd-image).
 
 ## Optional demos
 

@@ -1,41 +1,42 @@
-Your research of the capabilities of Kubernetes yields promising results. However, you are concerned that its management will prove to be too challenging for your team, relatively new to the area of container orchestration. You need to identify a way to minimize the learning curve required to successfully implement containerized workloads for Contoso. You expect that the best way to accomplish this objective for your Azure Stack HCI deployments is to use its support for AKS.
+Contoso needs to manage Kubernetes from Azure while its containerized workloads run in its datacenter. AKS on Azure Local uses Azure Arc and the local infrastructure to meet both requirements.
 
-## What is AKS on Azure Stack HCI?
+## Understand the infrastructure components
 
-AKS on Azure Stack HCI is a Microsoft implementation of AKS, which automates deployment and management of containerized applications. 
+For hyperconverged deployments, AKS uses **Azure Arc resource bridge** as the orchestration interface between Azure and the local platform. The AKS cluster extension provides the on-premises functionality required to manage Kubernetes clusters from Azure.
 
-Microsoft introduced AKS as an Azure service, but later extended its availability to on-premises environments, including Windows Server and Azure Stack HCI operating systems. However, there are some differences between running AKS on these two operating systems:
+A **custom location** identifies the local deployment target. It isn't an Azure region or a Kubernetes namespace, although Azure tools use it to target resources to your datacenter. An AKS logical network supplies the network configuration and address allocation for the cluster's underlying virtual machines.
 
-- In Azure, Microsoft manages the control plane of each AKS cluster. In addition, management and worker nodes run on Azure virtual machines (VMs) or Azure virtual machine scale sets.
-- In on-premises environments, you manage the entire deployment. When using Azure Stack HCI, management and worker nodes run on VMs hosted by the hyperconverged cluster.
+Your infrastructure administrator prepares these components as part of the Azure Local environment.
 
-## What is the architecture of AKS on Azure Stack HCI?
+| Component | Responsibility |
+| --- | --- |
+| Azure Local infrastructure | Provide the local compute, networking, storage, and virtualization platform. |
+| Arc resource bridge and AKS extension | Coordinate Azure-based provisioning and management of local AKS resources. |
+| Custom location | Identify the local target for deploying the AKS cluster. |
+| AKS cluster control plane | Expose the Kubernetes API and coordinate the cluster's desired state. |
+| Worker node pools | Run application pods on the appropriate operating system and VM configuration. |
 
-The implementation of AKS on Azure Stack HCI consists of two types of clusters:
+## Understand cluster and node-pool responsibilities
 
-- A single AKS management cluster. This cluster serves as a dedicated control plane for management of Kubernetes clusters running on the same hyperconverged platform. It consists of Linux VMs, which host Kubernetes system components such as API server and load balancers. These VMs service requests that originate from the Azure Stack HCI administrative staff who use management interfaces such as Microsoft Azure Arc or Windows Admin Center.
-- One or more Kubernetes clusters. These clusters consist of both control and worker nodes. Control nodes are implemented as Linux VMs, with API server and load balancer components servicing requests from Azure Stack HCI users, who deploy their workloads to Linux or Windows-based worker nodes. Users can interact directly with their respective Kubernetes clusters by using tools such as kubectl or Kubernetes dashboards.
+An AKS cluster contains Linux control plane nodes and worker node pools. A node pool groups nodes with a common configuration. Linux pools run Linux containers, and optional Windows pools run compatible Windows containers.
 
-:::image type="content" source="../media/aks-azshci-architecture.png" alt-text="The diagram illustrates the high-level architecture of AKS on Azure Stack HCI, consisting of the management cluster and Kubernetes clusters." border="false":::
+Keep at least one Linux node pool available to host the Azure Arc agents and maintain connectivity with Azure. A Windows application doesn't remove this Linux infrastructure requirement.
 
-Each Kubernetes cluster runs on its own dedicated set of VMs protected by Hypervisor-based isolation, making it possible to securely share the same physical infrastructure in scenarios that require workload isolation.
+AKS on Azure Local automatically enables Azure Arc on clusters created through its supported provisioning workflow. You use Azure tools to manage the cluster resource and Kubernetes tools to manage application resources.
 
-## What are the benefits of AKS on Azure Stack HCI?
+Your organization remains responsible for capacity planning, local platform maintenance, application access, data protection, and workload availability.
 
-AKS simplifies the deployment of Kubernetes clusters by providing an abstraction layer that hides some of the more challenging implementation details. It uses Windows Admin Center to guide you through the process of installing the AKS host serving as the management cluster. Windows Admin Center also facilitates installation of individual Kubernetes clusters that contain worker nodes hosting your containerized workloads. The installation process automatically provisions all relevant software components, including management tools such as kubectl.
+## Plan lifecycle management
 
-AKS on Azure Stack HCI supports both Linux-based and Windows-based containers. When you create a Kubernetes cluster, you just specify the types of containers you intend to run. The hyperconverged platform automatically installs the required operating system on the Kubernetes cluster nodes. 
+Azure Local solution updates include its AKS infrastructure components. Plan workload-cluster Kubernetes upgrades and node-pool changes separately, using the supported AKS management operations. An infrastructure update doesn't automatically upgrade every workload cluster to the latest Kubernetes release.
 
-AKS running on Azure Stack HCI offers many other benefits, including:
+Before you make a change, check the supported release and version combinations, available capacity, application compatibility, and recovery requirements. Test applications during representative node maintenance and pod rescheduling.
 
-- Streamlined deployment of containerized apps to Kubernetes clusters that run across the Azure Stack HCI cluster
-- Horizontal scaling of compute resources by adding or removing nodes of Kubernetes clusters
-- Simplified management of storage and networking configuration of clustered resources
-- Automated upgrades of cluster nodes to the latest available Kubernetes version. Microsoft manages Windows Server and Linux images for cluster nodes and updates them on a monthly basis. 
-- Integration with a range of Azure services and features, such as Microsoft Azure Monitor, Azure Policy, and Azure Role-Based Access Control (RBAC). This capability uses Azure Arc for Kubernetes.
-- Centralized management of Azure Stack HCI-based Kubernetes clusters and their workloads through the Azure portal. This capability also uses Azure Arc for Kubernetes. 
+Check each layer separately:
 
-> [!NOTE]
-> The Azure portal-based management supplements traditional Kubernetes administrative tools and interfaces, such as kubectl command line utility and Kubernetes dashboards.
+- Is the underlying Azure Local environment healthy and supported?
+- Are the resource bridge, AKS extension, custom location, and logical network ready?
+- Is the workload cluster on a supported Kubernetes version?
+- Do the node images, storage configuration, and application dependencies support the intended workload?
 
-In addition, Azure Stack HCI manages automatic failover of VMs serving as Kubernetes cluster nodes if there is a localized failure of the underlying physical components. This supplements the high availability built into Kubernetes, which automatically restarts failed containers on the same or another VM.
+See [AKS on Azure Local architecture](/azure/aks-hybrid-edge/local/hyperconverged/cluster-architecture) for the current architecture and infrastructure lifecycle model.

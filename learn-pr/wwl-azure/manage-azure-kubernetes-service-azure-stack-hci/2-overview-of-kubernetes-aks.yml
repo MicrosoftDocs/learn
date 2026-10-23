@@ -3,10 +3,10 @@ uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.overview-of-kuber
 title: Overview of Kubernetes and AKS
 metadata:
   title: Overview of Kubernetes and AKS
-  description: "Overview of Kubernetes and AKS"
-  ms.date: 06/09/2021
+  description: "Describe pods, Deployments, Services, namespaces, and Kubernetes access controls."
+  ms.date: 10/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 9
@@ -15,14 +15,14 @@ content: |
 quiz:
   title: "Knowledge check"
   questions:
-  - content: "While you were evaluating the suitability of using Kubernetes for containerized workloads you intend to deploy to Contoso's Azure Stack HCI environment, you realized that you will need to restrict users who use the same Kubernetes cluster from creating, viewing, or using containerized resources. Which Kubernetes feature should you use to restrict users?"
+  - content: "Contoso's development teams share a Kubernetes cluster but need separate application administration scopes. Which design organizes their resources and limits each team's permissions?"
     choices:
-    - content: "Helm charts"
+    - content: "Helm charts with shared release templates"
       isCorrect: false
-      explanation: "Incorrect. Helm charts facilitate deployment of more complex workloads to Kubernetes clusters, but they do not provide isolation of containerized resources."
-    - content: "Deployments"
+      explanation: "Incorrect. Helm charts package application manifests. Packaging an application doesn't establish namespace-scoped permissions for its developers."
+    - content: "Deployments with additional application replicas"
       isCorrect: false
-      explanation: "Incorrect. Deployments allow you to implement high availability and redundancy of pods, but they do not provide isolation of containerized resources."
-    - content: "Namespaces"
+      explanation: "Incorrect. Deployments manage application replicas and updates. They don't define a separate administrative scope for a development team."
+    - content: "Namespaces with namespace-scoped RBAC"
       isCorrect: true
-      explanation: "Correct. Kubernetes offers the ability to isolate pods, services, deployments, and many other cluster components into namespaces. Namespaces form logical boundaries, which allow you to restrict access to create, view, or use cluster resources."
+      explanation: "Correct. Namespaces organize namespaced resources, and namespace-scoped RBAC limits what each team can do. A namespace alone doesn't enforce all required security controls."

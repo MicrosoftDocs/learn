@@ -2,11 +2,11 @@
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.implement-containerized-windows-workloads
 title: Implement containerized Windows workloads
 metadata:
-  title: Implement containerized Windows workloads
-  description: "Implement containerized Windows workloads"
-  ms.date: 06/09/2021
+  title: Implement Containerized Windows Workloads
+  description: "Prepare Windows node pools, match container images to hosts, and evaluate authentication requirements."
+  ms.date: 10/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 6
@@ -15,14 +15,14 @@ content: |
 quiz:
   title: "Knowledge check"
   questions:
-  - content: "Contoso's Information Security team requests you to investigate the options for implementing AD DS-based authentication of Windows-based containerized workloads hosted by AKS on Azure Stack HCI. You start by deploying a Kubernetes cluster containing Windows Server nodes into your Azure Stack HCI cluster. What should you do next?"
+  - content: "Contoso wants to add a Windows pool on Azure Local release 2509 or later, where the Windows node-pool feature is disabled by default. What should happen before the pool is created?"
     choices:
-    - content: "Register the Azure Stack HCI cluster with Azure."
+    - content: "Have an administrator remove the Linux pool before creating Windows nodes"
       isCorrect: false
-      explanation: "Incorrect. This is a requirement for deploying AKS on Azure Stack HCI, which you have already completed."
-    - content: "Enable CredSSP in the Azure Stack HCI cluster."
+      explanation: "Incorrect. At least one Linux node pool is required for Arc agents and connectivity. Removing it doesn't enable Windows image preparation."
+    - content: "Have an administrator domain-join the existing nodes to the application domain"
       isCorrect: false
-      explanation: "Incorrect. This functionality does not depend in any way on CredSSP being enabled."
-    - content: "Join the Kubernetes cluster Windows Server nodes to the AD DS domain."
+      explanation: "Incorrect. Domain joining nodes isn't the documented mechanism for enabling the Windows node-pool feature or preparing the required images."
+    - content: "Have an authorized administrator enable the feature and prepare its images"
       isCorrect: true
-      explanation: "Correct. To provide the ability for pods to use gMSA for authentication, you must first join to an AD DS domain all of the Windows Server-based Kubernetes worker nodes that will host these pods."
+      explanation: "Correct. On these releases, the Windows feature and image preparation must be enabled through the supported infrastructure procedure before Windows pools are created."

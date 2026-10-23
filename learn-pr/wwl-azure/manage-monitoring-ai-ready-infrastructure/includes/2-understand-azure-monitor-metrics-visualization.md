@@ -4,7 +4,9 @@ You need visibility into infrastructure performance before problems escalate int
 
 Azure Monitor captures three types of metrics that provide different layers of visibility into your infrastructure. Platform metrics are collected automatically the moment you create a resource—no configuration required. When you deploy a virtual machine, Azure Monitor immediately begins tracking CPU percentage, network throughput, and disk operations per second. These metrics flow into Azure Monitor's time-series database every 60 seconds, giving you near real-time visibility into resource behavior.
 
-Platform metrics cover the fundamentals, but they don't reveal what's happening inside your virtual machine's operating system. For deeper visibility, you enable guest OS metrics by installing the Azure Diagnostics extension on your VM. This agent collects memory usage, process-level performance counters, and application-specific metrics that platform monitoring can't access. With this approach, you track not just whether your VM is running, but whether it has sufficient memory to handle current workloads and which processes consume the most resources.
+Platform metrics cover the fundamentals, but they don't reveal everything happening inside your virtual machine's operating system. For guest performance data, install Azure Monitor Agent (AMA) and associate the VM with a data collection rule (DCR). The DCR specifies the supported performance counters, sampling intervals, and destinations. For example, collect available memory to identify memory pressure during training. Collect process-level counters explicitly when you need to investigate individual processes. Installing the agent alone doesn't select all the counters your workload requires.
+
+For the logs-based collection path used in this module, select an **Azure Monitor Logs** destination in the DCR. The selected performance counters are stored in the workspace's `Perf` table and queried with Kusto Query Language (KQL). Sending counters to Log Analytics doesn't automatically make them available in Metrics Explorer. The performance-counter DCR also supports an **Azure Monitor Metrics (preview)** destination for Metrics Explorer, using the guest metric namespace rather than the platform metric namespace. Check the destination and collection configuration before building a visualization. See [Collect performance counters from virtual machines](/azure/azure-monitor/vm/data-collection-performance).
 
 Custom metrics extend monitoring beyond infrastructure to capture business-specific indicators. Using the Application Insights SDK or Azure Monitor REST API, you send metrics that matter to your organization—such as the number of AI model predictions completed per minute, queue processing latency, or user session duration. This becomes especially important when your operations team needs to correlate infrastructure performance with business outcomes and demonstrate how resource optimization improves application responsiveness.
 
@@ -26,14 +28,8 @@ Proactive metric tracking transforms infrastructure management from reactive fir
 
 For teams managing AI infrastructure, continuous monitoring delivers measurable operational improvements. Organizations that implement metric dashboards report 40-60% reductions in mean time to detection (MTTD) for performance issues, because anomalies become visible immediately rather than surfacing only after user complaints. This early detection prevents cascading failures—such as a memory leak in one VM causing downstream service timeouts—and reduces the business impact of infrastructure incidents by enabling faster, more targeted remediation efforts.
 
-:::image type="content" source="../media/azure-monitor-collect-platform.png" alt-text="Diagram showing how three metric sources with Azure resources emitting platform metrics automatically.":::
-
-*Azure Monitor collects platform, guest OS, and custom metrics, then delivers them to visualization and alerting tools*
-
-
 ## More resources
 
 - [Azure Monitor Metrics overview](/azure/azure-monitor/essentials/data-platform-metrics) - Comprehensive guide to metric types, collection methods, and retention policies
 - [Metrics Explorer documentation](/azure/azure-monitor/essentials/metrics-getting-started) - Step-by-step instructions for creating charts and analyzing metric data
 - [Azure dashboards best practices](/azure/azure-portal/azure-portal-dashboards) - Design patterns for effective operational dashboards
-

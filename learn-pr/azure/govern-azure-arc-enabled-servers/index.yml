@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.govern-azure-arc-enabled-servers
 metadata:
-  title: Govern your hybrid and multicloud machines through Azure Arc-enabled servers
-  description: Understand the governance capabilities of Azure Arc-enabled servers. Learn about the benefits of and how to onboard Azure Arc-enabled servers to Azure Policy, Azure Automation, and Azure Automanage.
-  ms.date: 08/09/2024
-  author: aurnovcy
-  ms.author: aurnovc
+  title: Govern Your Hybrid and Multicloud Machines Through Azure Arc-Enabled Servers
+  description: Govern Azure Arc-enabled servers with Azure Policy and Machine Configuration. Manage inventory, updates, and operational tasks with Azure management services.
+  ms.date: 10/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: azure-arc
   ms.subservice: servers-azure-arc
@@ -13,13 +13,16 @@ title: Govern your hybrid and multicloud machines through Azure Arc-enabled serv
 summary: Azure Arc promises to bridge the gap between on-premises and cloud environments. Azure Arc extends the consistent security, observability, and governance of the Azure platform to non-Azure machines. In this module, you learn about governance of Azure Arc-enabled servers.
 abstract: |
   After you complete this module, you're able to:
-    - Understand the usage of Azure Policy and Guest Configuration with Azure Arc-enabled servers 
-    - Evaluate different Azure Automation offerings across inventory management, change tracking, and update management
-    -	Understand the onboarding process for and benefits of using Azure Automanage with Azure Arc-enabled servers 
+    - Explain how Azure Policy and Azure Machine Configuration audit and configure Azure Arc-enabled servers.
+    - Use policy initiatives and remediation tasks to onboard management services at scale.
+    - Describe AMA-based Azure Change Tracking and Inventory and assess and schedule updates with Azure Update Manager.
+    - Describe how Azure Automation runs operational tasks with extension-based Hybrid Runbook Workers.
 prerequisites: |
-  - Basic characteristics of Azure services and Azure Arc 
-  - Compute, storage, networking, and virtualization technologies 
-  - Basic Windows Server and Linux administration tasks 
+  Before starting this module, you should be familiar with:
+
+  - Basic characteristics of Azure services and Azure Arc
+  - Compute, storage, networking, and virtualization technologies
+  - Basic Windows Server and Linux administration tasks
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner

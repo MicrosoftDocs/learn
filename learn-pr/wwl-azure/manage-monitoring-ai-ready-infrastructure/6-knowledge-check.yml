@@ -4,9 +4,9 @@ title: "Module assessment"
 metadata:
   title: "Knowledge check"
   description: "Test your understanding of Azure Monitor implementation by answering these scenario-based questions. Consider how you would apply monitoring concepts to real-world infrastructure management challenges."
-  ms.date: 02/02/2026
+  ms.date: 10/23/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: robbarefoot
   ms.topic: unit
   module_assessment: false
 durationInMinutes: 5
@@ -18,12 +18,12 @@ quiz:
     - content: "Platform metrics collected automatically by Azure Monitor, which include memory available bytes for all virtual machines"
       isCorrect: false
       explanation: "Incorrect. Platform metrics don't include memory usage inside the virtual machine's operating system—they only track resource consumption at the Azure infrastructure level like CPU percentage and disk IOPS."
-    - content: "Guest OS metrics collected by the Azure Diagnostics extension installed on each virtual machine"
+    - content: "Guest performance counters collected by Azure Monitor Agent with a data collection rule selecting the required memory counters and destination"
       isCorrect: true
-      explanation: "Correct. Guest OS metrics provide visibility into memory usage and process-level performance counters. The Azure Diagnostics extension must be installed on each VM to collect these metrics."
+      explanation: "Correct. Azure Monitor Agent collects the guest data selected by an associated data collection rule. The rule must include the required memory counters and a supported destination. Installing the agent alone doesn't configure all counters."
     - content: "Custom metrics published from your training application using the Application Insights SDK"
       isCorrect: false
-      explanation: "Incorrect. Custom metrics would work but require modifying your training application code to publish metrics, adding unnecessary complexity when guest OS metrics provide the needed data automatically once the diagnostics extension is installed."
+      explanation: "Incorrect. Application instrumentation can publish custom measurements, but the required guest memory counters can be collected without changing the training application by configuring Azure Monitor Agent and a data collection rule."
   - content: "You create an alert rule that fires when storage account transaction latency exceeds 500 milliseconds. During testing, you notice the alert fires briefly every hour during backup operations, generating notifications your team ignores. How should you reduce alert fatigue while maintaining visibility into genuine latency issues?"
     choices:
     - content: "Increase the latency threshold to 1000 milliseconds and reduce the evaluation frequency to 15 minutes"
@@ -35,14 +35,14 @@ quiz:
     - content: "Disable the alert rule entirely and rely on user reports to detect storage performance problems"
       isCorrect: false
       explanation: "Incorrect. Disabling the alert entirely removes proactive monitoring, forcing your team into reactive mode where storage problems surface only after users complain, increasing mean time to detection and business impact."
-  - content: "After receiving an alert about high CPU usage on a virtual machine, you need to identify which process consumed the most resources during the spike. Which Kusto Query Language (KQL) query pattern provides this information?"
+  - content: "A Windows VM has Azure Monitor Agent and a data collection rule that sends process CPU counters to the Perf table. After a high-CPU alert, which Kusto Query Language (KQL) query pattern identifies the process instances with the highest recorded CPU usage during the spike?"
     choices:
     - content: "Query the AzureDiagnostics table filtering for Level equals 'Error' to find failures that caused the CPU spike"
       isCorrect: false
-      explanation: "Incorrect. The AzureDiagnostics table contains error logs but doesn't provide process-level performance data—errors might correlate with high CPU but won't tell you which process was responsible."
-    - content: "Query the Perf table filtering for CounterName equals '% Processor Time' and summarize by process name"
+      explanation: "Incorrect. AzureDiagnostics contains resource logs collected through supported diagnostic settings, not the process counters selected by this DCR. Error records alone don't identify the process instances consuming CPU."
+    - content: "Query the Perf table for ObjectName equals 'Process' and CounterName equals '% Processor Time', then summarize by Computer and InstanceName during the spike"
       isCorrect: true
-      explanation: "Correct. Querying the Perf table for processor time counters by process name provides the granular resource consumption data needed to identify which specific process caused the CPU spike."
+      explanation: "Correct. The configured process counters provide CPU measurements for individual process instances. Filter to the incident window and group by Computer and InstanceName to distinguish the recorded processes. Overall CPU counters alone don't provide this detail."
     - content: "Query the SecurityEvent table to detect unauthorized access attempts that might have triggered resource-intensive operations"
       isCorrect: false
-      explanation: "Incorrect. The SecurityEvent table tracks authentication and access events, useful for security investigations but irrelevant for diagnosing resource consumption patterns that cause CPU saturation."
+      explanation: "Incorrect. SecurityEvent contains selected Windows security events when the corresponding security collection is configured. Those events don't provide the process CPU measurements collected into Perf for this scenario."

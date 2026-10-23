@@ -38,7 +38,7 @@ Let's review why Azure Databricks can be the right choice to meet these requirem
   
 -	Works with Power BI for fast insights.
   
--	Databricks SQL and Machine Learning aren't suitable here, as unstructured data and machine learning aren't required.
+-	Data Science and Engineering fits the scenario's batch and streaming processing needs. Databricks SQL can complement it for reporting, while machine learning isn't an explicit requirement.
 
 
 ### Things to consider when using Azure Databricks
