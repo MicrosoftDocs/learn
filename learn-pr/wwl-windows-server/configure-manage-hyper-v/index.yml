@@ -3,7 +3,7 @@ uid: learn.wwl.configure-manage-hyper-v
 metadata:
   title: Configure and manage Hyper-V
   description: "Learn how to install and configure the Hyper-V role in Windows Server, including virtual switch types, advanced networking features such as NIC Teaming, SR-IOV, and SET, and nested virtualization."
-  ms.date: 08/31/2026
+  ms.date: 10/23/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module

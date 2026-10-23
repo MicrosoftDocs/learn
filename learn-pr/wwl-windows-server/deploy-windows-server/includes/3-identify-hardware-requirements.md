@@ -8,10 +8,12 @@ The hardware requirements for Windows Server depend on the services that the ser
 | ---------------------- | ------------------------------------------------------------ |
 | Processor architecture | 64-bit                                                       |
 | Processor speed        | 1.4 Gigahertz (GHz)                                          |
-| RAM                    | 512 MB. VMs require at least 800 MB of RAM during installation. You can reduce it to 512 MB after the installation is complete. |
+| RAM                    | 2 GB for Server Core. Physical host deployments require error-correcting code (ECC) memory or similar technology. |
 | Hard drive space       | 32 GB                                                        |
 
-Virtualized deployments of Windows Server require the same hardware specifications for physical deployments. However, during installation, you'll need to allocate extra memory to the VM, which you can then deallocate after installation, or you'll need to create an installation partition during the boot process.
+For a Windows Server 2025 Server Core VM, use the documented 2-GB RAM minimum as the baseline and allocate more memory for the server's roles and applications. Setup can also require additional memory, particularly when the boot image includes extra languages or updates. Don't size a production VM around the lower-memory setup workaround described in the hardware documentation or assume that you can reduce its allocation to 512 MB after installation.
+
+Minimum installation requirements aren't workload sizing recommendations. Check the version-specific [Windows Server hardware requirements](/windows-server/get-started/hardware-requirements?view=windows-server-2025) before deployment, and test the configuration with the roles and applications you intend to run.
 
 ### Other hardware requirements
 

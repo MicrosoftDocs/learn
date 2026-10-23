@@ -4,9 +4,9 @@ title: Configure Hyper-V networking
 metadata:
   title: Configure Hyper-V networking
   description: "Configure Hyper-V networking"
-  ms.date: 03/19/2024
+  ms.date: 10/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
 durationInMinutes: 6
 content: |
@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "External"
       isCorrect: false
-      explanation: "Incorrect. An External virtual switch is used to map a network to a specific network adapter or network adapter team. It binds to the physical network adapter so that the virtual machines can access a physical network, and as such allows communication between the VMs on a Hyper-V host and the Hyper-V host."
+      explanation: "Incorrect. An external virtual switch binds to a physical network adapter to connect VMs to a wired physical network. The management operating system can also share that adapter when the sharing option is enabled. This isn't the VM-only isolation described in the question."
     - content: "Internal"
       isCorrect: false
       explanation: "Incorrect. An Internal virtual switch is used to communicate between each of the VMs on a Hyper-V host, and to communicate between the VMs and the Hyper-V host."

@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 12/26/2024
+  ms.date: 10/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
@@ -25,25 +25,25 @@ quiz:
     - content: "Windows Admin Center"
       isCorrect: false
       explanation: "Incorrect. You can't run Windows Admin Center on Server Core as it requires a web browser interface."
-  - content: "What's the minimum memory an administrator should initially allocate to a Windows Server VM?"
+  - content: "An administrator plans a Windows Server 2025 Server Core VM. Which allocation meets the documented Server Core RAM minimum before the administrator adds capacity for server roles and applications?"
     choices:
-    - content: "1 GB"
-      isCorrect: false
-      explanation: "Incorrect. VMs can run with less memory."
     - content: "512 MB"
       isCorrect: false
-      explanation: "Incorrect. Although VMs can run with 512 MB, they require more memory to start."
+      explanation: "Incorrect. Windows Server 2025 Server Core has a documented minimum of 2 GB. A 512-MB allocation is below that baseline."
     - content: "800 MB"
+      isCorrect: false
+      explanation: "Incorrect. An 800-MB allocation doesn't meet the documented Windows Server 2025 Server Core RAM minimum. Setup and workload requirements can also require additional memory."
+    - content: "2 GB"
       isCorrect: true
-      explanation: "Correct. VMs require at least 800 MB of RAM during installation, which you can reduce to 512 MB when installation is complete."
-  - content: "When working with MDT, what is the name and location of the original install image?"
+      explanation: "Correct. The documented Windows Server 2025 Server Core minimum is 2 GB. The administrator uses this as a baseline and allocates additional memory for setup, roles, and applications as needed."
+  - content: "An administrator needs to automate Windows Server 2025 Setup settings across several new servers. Which tool creates and validates the XML answer file for the target Windows image?"
     choices:
-    - content: "*x:*\\Sources\\install.wim"
+    - content: "Windows System Image Manager (Windows SIM)"
       isCorrect: true
-      explanation: "Correct. This is the default installation image."
-    - content: "*x:*\\Sources\\boot.wim"
+      explanation: "Correct. Windows SIM creates answer files using the target image's settings and validates them against that image before deployment."
+    - content: "Deployment Image Servicing and Management (DISM)"
       isCorrect: false
-      explanation: "Incorrect. This is the default boot image."
-    - content: "*x:*\\Sources\\install.iso"
+      explanation: "Incorrect. DISM provides image inspection, servicing, capture, and application capabilities. It isn't the answer-file authoring and validation tool."
+    - content: "Windows Preinstallation Environment (Windows PE)"
       isCorrect: false
-      explanation: "Incorrect. Although you can use ISO images with MDT, this isn't the default install image."
+      explanation: "Incorrect. Windows PE provides a bootable environment for deployment and recovery tools. It doesn't create and validate Windows Setup answer files."
