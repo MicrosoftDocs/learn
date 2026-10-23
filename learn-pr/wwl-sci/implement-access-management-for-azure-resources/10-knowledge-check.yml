@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/30/2025
+  ms.date: 10/20/2026
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
@@ -19,17 +19,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What tool is available in Azure to give administrators the ability to provide comprehensive visibility into permissions assigned to all identities – users and workloads – actions, and resources across cloud infrastructures and identity providers? It detects, right-sizes, and monitors unused and excessive permissions and enables Zero Trust security through least privilege access in Microsoft Azure, AWS, and GCP?"
+  - content: "An administrator needs to grant a team the same Azure role for every current and future resource in one resource group, without granting access to other resource groups. At which scope should the administrator assign the role?"
     choices:
-    - content: "Azure Monitor"
+    - content: "The subscription containing the resource group"
       isCorrect: false
-      explanation: "Sorry, that's incorrect. Azure Monitor looks at services running on Azure."
-    - content: "Microsoft Defender for Identity"
+      explanation: "A subscription-level assignment also grants access to resources in other resource groups in that subscription."
+    - content: "Each resource individually in the resource group"
       isCorrect: false
-      explanation: "Sorry, that's incorrect. Use this tool to protect your on-premises identities."
-    - content: "Microsoft Entra Permissions Management."
+      explanation: "Individual resource assignments don't provide an inherited assignment for all resources in the resource group, including resources added later."
+    - content: "The resource group containing those resources"
       isCorrect: true
-      explanation: "Correct. CloudKnox was the original tool acquired by Microsoft. With permissions management you can detect and right-size permissions for your identities."
+      explanation: "Resources inherit role assignments from their resource group. This scope grants the required access without extending it to other resource groups."
   - content: "You want to assign the Azure role - Contributor - to a specific user; what tools can you use to make this assignment?"
     choices:
     - content: "Azure portal, PowerShell, and CLI"
