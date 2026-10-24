@@ -2,11 +2,11 @@
 uid: learn.azure.monitor-azure-arc-enabled-servers.smart-scalable-alerts-azure-arc-enabled-servers-with-azure-monitor
 title: Smart and scalable alerts for Azure Arc-enabled servers with Azure Monitor
 metadata:
-  title: Smart and scalable alerts for Azure Arc-enabled servers with Azure Monitor
+  title: Smart and Scalable Alerts for Azure Arc-Enabled Servers with Azure Monitor
   description: Smart and scalable alerts for Azure Arc-enabled servers with Azure Monitor
-  ms.date: 08/17/2023
-  author: aurnovcy
-  ms.author: aurnovc
+  ms.date: 10/21/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 6
 content: |

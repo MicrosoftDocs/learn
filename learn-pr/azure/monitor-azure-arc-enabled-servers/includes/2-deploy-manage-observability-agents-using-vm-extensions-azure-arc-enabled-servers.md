@@ -1,25 +1,30 @@
-With Tailwind Manufacturing's distributed IT infrastructure, it's often difficult to get a coherent view of the entire organization's security posture. Moreover, initiatives to secure and defend resources are increasingly siloed. In this unit, you learn how to use Microsoft Defender for Cloud with Azure Arc-enabled servers. Together, they can facilitate a more comprehensive security strategy to meet the demands of your hybrid and multicloud infrastructure.
+Tailwind Manufacturing needs a consistent way to collect monitoring data from its distributed servers. In this unit, you learn how Azure Arc-enabled servers use VM extensions to deploy and manage Azure Monitor Agent. This agent collects the guest operating system data that supports performance analysis and alerting across your hybrid environment.
 
 ## Overview of extension management
 
-Virtual machine (VM) extensions are small applications that provide post-deployment configuration and automation tasks on Azure VMs. For example, if a virtual machine requires software installation, anti-virus protection, or the ability to run scripts, you can use a VM extension.
+Virtual machine (VM) extensions are small applications that provide post-deployment configuration and automation tasks on Azure VMs. For example, if a virtual machine requires software installation, antivirus protection, or the ability to run scripts, you can use a VM extension.
 
 With Azure Arc-enabled servers, you can deploy, remove, and update Azure VM extensions on non-Azure Windows and Linux servers, simplifying the management of your hybrid machines through their lifecycle. These VM extensions can be managed using Azure portal, Azure CLI, Azure PowerShell, or Azure Resource Manager templates.
 
 ## Overview of observability agent VM extensions
 
-Azure Arc supports the deployment of the Azure Monitor agent, Log Analytics, and Azure Monitor Dependency as VM extensions. The following table provides a quick comparison of the observability agents supported as VM extensions for Azure Arc-enabled servers.
+Use Azure Monitor Agent (AMA) to collect monitoring data from supported Windows and Linux Azure Arc-enabled servers. AMA is separate from the Azure Connected Machine agent. The two agents have different responsibilities:
 
-| Observability agents | Description |
-|---|---|
-| **Azure Monitor agent** | The Azure Monitor agent provides all capabilities necessary to collect guest operating system monitoring data. There are multiple legacy agents that exist due to the consolidation of Azure Monitor and Log Analytics, and each agent has unique capabilities with some overlap. We recommend that you use Azure Monitor agent because it consolidates features from all existing agents and provides more benefits. The Azure Monitor agent can send data to both Azure Monitor Logs and Azure Monitor Metrics. It uses Data Collection Rules (DCR) which provide a more scalable method of configuring data collection and destinations for each agent. |
-| **Log Analytics agent** | The Log Analytics agent collects monitoring data from the guest operating system and workloads of virtual machines in Azure, other cloud providers, and on-premises machines. It sends data to a Log Analytics workspace. The Log Analytics agent is the same agent System Center Operations Manager uses, and you can multi-home agent computers to communicate with your management group and Azure Monitor simultaneously. Certain insights in Azure Monitor and other services in Azure require this agent. The Log Analytics agent for Windows is often referred to as Microsoft Monitoring Agent (MMA). The Log Analytics agent for Linux is often referred to as OMS agent. |
-| **Dependency agent** | The Dependency agent collects discovered data about processes running on the machine and external process dependencies. On both the Windows and Linux versions of the Dependency Agent, data collection is done using a user-space service and a kernel driver. |
+| Component | Responsibility |
+| --- | --- |
+| Azure Connected Machine agent | Connects the server to Azure Arc and provides the extension service that installs, updates, and removes VM extensions. Install and connect it before deploying monitoring extensions. |
+| Azure Monitor Agent | Runs as an extension on the Arc-enabled server and collects the monitoring data specified by associated data collection rules. |
 
-## Deploying the observability VM extensions
+A data collection rule (DCR) defines the data to collect and its destinations. A DCR association connects that configuration to a machine. Keep the Connected Machine agent installed when you deploy AMA; AMA doesn't replace it.
 
-There are three main ways to deploy the observability agents Azure Monitor Agent, Log Analytics Agent, and Dependency Agent:
+## Deploy Azure Monitor Agent
 
-- **Directly as a VM Extension for Azure Arc-enabled servers:** Configure the extensions directly from the Azure portal, using PowerShell, the Azure CLI, or with an Azure Resource Manager (ARM) template.
-- **Deploy an Azure Policy:** Use Azure Policy to deploy agents at scale to machines in your environment while maintaining configuration compliance.
-- **Use Azure Automation:** The process automation operating environment in Azure Automation and its support for PowerShell and Python runbooks lets you automate the deployment of the Log Analytics agent, Azure Monitor, and Dependency Agent VM extension at-scale to machines in your environment.
+Choose a deployment method appropriate for your environment:
+
+- Deploy the AMA extension to individual machines through the Azure portal, PowerShell, Azure CLI, or an Azure Resource Manager template. Create and associate the required DCR separately when using extension-only installation.
+- Use Azure Policy to deploy AMA and the required DCR associations across a fleet. Review the initiative's scope and configuration, and remediate existing noncompliant resources where required.
+- Use Azure Automation runbooks when you need a scripted deployment schedule. The runbook must deploy the supported extension and configure the required DCR associations.
+
+For the performance-monitoring exercise in this module, use the VM insights onboarding procedure in the next unit to configure AMA and logs-based performance collection.
+
+For details, see AMA deployment options for Arc-enabled servers, Connected Machine agent components, and AMA support and migration guidance in the Summary unit's More Info section.

@@ -2,47 +2,46 @@
 uid: learn.azure.monitor-azure-arc-enabled-servers.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: Knowledge check
-  ms.date: 08/17/2023
-  author: aurnovcy
-  ms.author: aurnovc
+  ms.date: 10/21/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 7
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
   questions:
-  - content: Which of the following agents can’t be deployed as a VM extension for Azure Arc-enabled servers?
+  - content: Which component installs, upgrades, and removes VM extensions on an Azure Arc-enabled server?
     choices:
-    - content: Azure Monitor agent
-      isCorrect: false
-      explanation: Incorrect, you can deploy the Azure Monitor agent as a VM extension for Azure Arc-enabled servers.
-    - content: Log Analytics agent
-      isCorrect: false
-      explanation: Incorrect, you can deploy the Log Analytics agent as a VM extension for Azure Arc-enabled servers.
-    - content: Dependency agent
-      isCorrect: false
-      explanation: Incorrect, you can deploy the Dependency agent as a VM extension for Azure Arc-enabled servers.
-    - content: Connected Machine agent
+    - content: The extension service in the Azure Connected Machine agent
       isCorrect: true
-      explanation: Correct, you can't deploy the Connected Machine agent as a VM extension for Azure Arc-enabled servers. The Connected Machine agent contains the extension manager used for VM extension deployment.
-  - content: Which of the following services can be enabled to show Performance and Map data for an individual Azure Arc-enabled server?
+      explanation: Correct. The Connected Machine agent includes the extension service that manages VM extensions on the server.
+    - content: Azure Monitor Agent
+      isCorrect: false
+      explanation: Incorrect. Azure Monitor Agent collects monitoring data. The Connected Machine agent's extension service manages its installation as an extension.
+    - content: A data collection rule
+      isCorrect: false
+      explanation: Incorrect. A data collection rule defines collection settings and destinations; it isn't the extension-management service.
+    - content: A Log Analytics workspace
+      isCorrect: false
+      explanation: Incorrect. A Log Analytics workspace stores collected log data; it doesn't run the server's extension-management service.
+  - content: Which configuration supplies the performance records used by the logs-based VM insights charts and the KQL alert in this module?
     choices:
-    - content: Azure Monitor metrics
-      isCorrect: false
-      explanation: Incorrect, Azure Monitor metrics help provide the data foundation for observability, but don't show Performance and Map data for an Azure Arc-enabled server.
-    - content: VM insights
+    - content: Azure Monitor Agent with an associated VM insights logs-based data collection rule and a Log Analytics workspace
       isCorrect: true
-      explanation: Correct, VM insights can be enabled to show Performance and Map data for an individual Azure Arc-enabled server.
-    - content: Azure Monitor Logs
+      explanation: Correct. This configuration collects the performance records used by the InsightsMetrics queries in this module.
+    - content: The Azure Connected Machine agent without a monitoring configuration
       isCorrect: false
-      explanation: Incorrect, Azure Monitor Logs help provide the data foundation for observability, but don't show Performance and Map data for an Azure Arc-enabled server.
-    - content: Azure Monitor alerts
+      explanation: Incorrect. Connecting a server to Azure Arc alone doesn't configure the guest performance collection used by this example.
+    - content: Only OpenTelemetry metrics sent to an Azure Monitor workspace
       isCorrect: false
-      explanation: Incorrect, Azure Monitor alerts offer smart and scalable proactive responses, but don't show Performance and Map data for an Azure Arc-enabled server.
+      explanation: Incorrect. This is a separate supported metrics configuration queried with PromQL. The KQL example requires logs-based performance collection into a Log Analytics workspace.
+    - content: An action group without a data collection rule
+      isCorrect: false
+      explanation: Incorrect. An action group defines notifications and actions; it doesn't collect the performance records.
   - content: Which of the following services isn't a necessary component of an Azure Monitor alert rule for an Arc-enabled server?
     choices:
     - content: Logic App
@@ -62,12 +61,12 @@ quiz:
     - content: Analyze with Metrics Explorer
       isCorrect: false
       explanation: Incorrect, Azure Monitor Metrics can be analyzed with Metrics Explorer, but Azure Monitor Logs can't be analyzed with Metrics Explorer.
-    - content: Visualize with Power BI
+    - content: Visualize with Grafana
       isCorrect: false
-      explanation: Incorrect, both Azure Monitor Logs and Azure Monitor Metrics can be visualized with Power BI.
+      explanation: Incorrect, both Azure Monitor Logs and Azure Monitor Metrics can be visualized with Grafana.
     - content: Analyze with Log Analytics
       isCorrect: true
-      explanation: Correct, Azure Monitor Logs can be analyzed with Log Analytics, but Azure Monitor Metrics can't be analyzed with Metrics Explorer.
+      explanation: Correct. Use Log Analytics to query records in Azure Monitor Logs. Use Metrics Explorer to analyze metric time series in Azure Monitor.
     - content: Visualize with Azure Dashboard
       isCorrect: false
       explanation: Incorrect, both Azure Monitor Logs and Azure Monitor Metrics can be visualized with Azure Dashboards.

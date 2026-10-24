@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.monitor-azure-arc-enabled-servers
 metadata:
-  title: Monitor your hybrid and multicloud machines through Azure Arc-enabled servers
+  title: Monitor Your Hybrid and Multicloud Machines Through Azure Arc-Enabled Servers
   description: Understand the monitoring capabilities of Azure Arc-enabled servers. Learn about the benefits of and how to onboard Azure Arc-enabled servers to Azure Logs and Metrics, VM Insights, and Azure Monitor Alerts.
-  ms.date: 08/17/2023
-  author: aurnovcy
-  ms.author: aurnovc
+  ms.date: 10/21/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: azure-arc
   ms.subservice: servers-azure-arc
@@ -13,13 +13,16 @@ title: Monitor your hybrid and multicloud machines through Azure Arc-enabled ser
 summary: Azure Arc promises to bridge the gap between on-premises and cloud environments. Azure Arc extends the consistent security, observability, and governance of the Azure platform to non-Azure machines. In this module, you learn about monitoring Azure Arc-enabled servers.
 abstract: |
   After you've completed this module, you'll be able to:
-    - Understand the usage of VM extensions to manage observability agents with Azure Arc-enabled servers. 
-    - Evaluate different Azure Monitor offerings across logs, metrics, and alerts.
-    -	Understand the onboarding process for and benefits of using VM Insights with Azure Arc-enabled servers.
+
+  - Understand the usage of VM extensions to manage observability agents with Azure Arc-enabled servers.
+  - Evaluate different Azure Monitor offerings across logs, metrics, and alerts.
+  - Understand the onboarding process for and benefits of using VM insights with Azure Arc-enabled servers.
 prerequisites: |
-  - Basic characteristics of Azure services and Azure Arc 
-  - Compute, storage, networking, and virtualization technologies 
-  - Basic Windows Server and Linux administration tasks 
+  Before you start this module, you should be familiar with:
+
+  - Basic characteristics of Azure services and Azure Arc
+  - Compute, storage, networking, and virtualization technologies
+  - Basic Windows Server and Linux administration tasks
 iconUrl: /training/achievements/monitor-azure-arc-enabled-servers.svg
 levels:
 - beginner

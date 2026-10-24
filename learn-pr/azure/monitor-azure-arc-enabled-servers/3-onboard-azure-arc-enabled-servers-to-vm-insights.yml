@@ -2,11 +2,11 @@
 uid: learn.azure.monitor-azure-arc-enabled-servers.onboard-azure-arc-enabled-servers-to-vm-insights
 title: Onboard Azure Arc-enabled servers to VM insights
 metadata:
-  title: Onboard Azure Arc-enabled servers to VM insights
+  title: Onboard Azure Arc-Enabled Servers to VM Insights
   description: Onboard Azure Arc-enabled servers to VM insights
-  ms.date: 08/17/2023
-  author: aurnovcy
-  ms.author: aurnovc
+  ms.date: 10/21/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 4
 content: |
