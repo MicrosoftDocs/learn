@@ -1,4 +1,4 @@
-Using Microsoft Defender for Cloud to improve security posture across one's entire digital estate—Microsoft Sentinel for vulnerability and threat intelligence in other clouds, and Azure Monitor to monitor on-premises services—Azure Arc-enabled servers offers customers immense value that is delivered through a simple architecture. 
+Using Microsoft Defender for Cloud to improve security posture across your entire digital estate, Microsoft Sentinel for security-event correlation and threat intelligence, and Azure Monitor to monitor on-premises services, Azure Arc-enabled servers delivers value through a simple architecture.
 
 Wide World Importers has prioritized its deployment of Azure Arc-enabled servers. You want to first understand how Azure Arc can extend Azure's management plane to servers outside Azure and learn about what capabilities Azure Arc-enabled servers could deliver for the firm.  
 
@@ -8,35 +8,54 @@ Azure Arc relies on a locally installed agent to establish a logical connection 
 
 - The Hybrid Instance Metadata service (HIMDS) manages the connection to Azure and the connected machine's Azure identity.
 
-- The guest configuration agent provides functionality like assessing whether the machine complies with required policies and enforcing compliance.
+- The Azure Machine Configuration agent, also called the guest configuration agent, assesses compliance with required guest settings and, for supported configurations, applies and monitors or automatically corrects those settings.
 
-- The Extension agent manages virtual machine (VM) extensions, including install, uninstall, and upgrade.
+- The extension agent manages virtual machine (VM) extensions, including installation, removal, and upgrades.
 
-When the Azure Connected Machine Agent establishes a connection between Azure and a local resource, it effectively "arc-enables" the resource. The non-Azure resource automatically becomes a hybrid Azure resource as part of the Azure Resource Manager plane. Azure Resource Manager serves as the management interface that allows you to create, modify, and delete Azure resources.
+When the Azure Connected Machine agent establishes a connection between Azure and a local resource, it effectively "Arc-enables" the resource. The non-Azure resource automatically becomes a hybrid Azure resource as part of the Azure Resource Manager plane. Azure Resource Manager serves as the management interface that allows you to create, modify, and delete Azure resources.
 
-[![Illustration showing the Connected Machine agent architecture. The Connected Machine agent includes HIMDS, the guest configuration agent, and the Extension agent.](../media/2-connected-machine-agent-architecture.png)](../media/2-connected-machine-agent-architecture-large.png#ligntbox)
+[![Diagram that shows HIMDS, Machine Configuration, and the extension agent connecting a server to Azure.](../media/2-connected-machine-agent-architecture.png)](../media/2-connected-machine-agent-architecture-large.png#lightbox)
 
 ## Capabilities of Azure Arc-enabled servers
 
-Azure Arc-enabled servers can make use of a breadth of capabilities, so you can bring Azure services to your machines anywhere: across on-premises, multicloud, and edge environments. These capabilities serve diverse use cases across security, observability, and governance needs.
+Azure Arc-enabled servers can make use of a breadth of capabilities, so you can bring Azure services to your machines anywhere: across on-premises, multicloud, and edge environments. The following table summarizes services that address security, observability, and governance needs.
 
 | Service | Description |
 |---|---|
-| **Azure Resource** | Azure Arc-enabled servers benefit from Azure's robust resource management functions, including:<ul><li>The ability to organize all organizational resources by using Azure management groups, subscriptions, resource groups, and tags.</li><li>A single, comprehensive inventory of organizational assets across multiclouds and on-premises, including support for searching and indexing by using Azure Resource Graph.</li><li>A consolidated view of Azure and Azure Arc-enabled resources via the Azure portal, Azure Command Line Interface (CLI), Azure PowerShell, and Representational State Transfer (REST) Application Programming Interface (API).</li></ul> |
-| **Microsoft Defender for Cloud** | Microsoft Defender for Cloud enables customers to protect non-Azure servers with Microsoft Defender for Endpoint (included through Microsoft Defender for Cloud) for threat detection, for vulnerability management, and to proactively monitor for potential security threats. Microsoft Defender for Cloud presents the alerts and remediation suggestions from the threats detected, and consolidates security posture with a high-level security score. |
+| **Azure resources** | Azure Arc-enabled servers benefit from Azure's resource management functions, including:<ul><li>The ability to organize resources by using Azure management groups, subscriptions, resource groups, and tags.</li><li>A comprehensive inventory of multicloud and on-premises assets, including support for searching and indexing by using Azure Resource Graph.</li><li>A consolidated view of Azure and Azure Arc-enabled resources through the Azure portal, Azure command-line interface (CLI), Azure PowerShell, and REST API.</li></ul> |
+| **Microsoft Defender for Cloud** | Use Defender for Cloud to review security posture. Enable the paid Defender for Servers Plan 1 or Plan 2 for the corresponding server-protection capabilities, including Defender for Endpoint integration and agent-based Microsoft Defender Vulnerability Management. Capabilities and charges depend on the selected plan. |
 | **Microsoft Sentinel** | You can configure machines connected to Arc-enabled servers with Microsoft Sentinel to collect security-related events and correlate them with other data sources. |
-| **Azure Monitor** | Monitor the connected machine guest operating system performance and discover application components to monitor their processes and dependencies with other resources using VM insights. Use the Log Analytics agent to collect other log data, such as performance data and events, from the operating system or workloads running on the machine. |
-| **Azure Policy** | Azure Policy enables customers to manage and evaluate their Arc-enabled servers' internal and regulatory compliance. Users can define, assign, and remediate based on Azure Policy guest configurations to audit settings inside the machine like their time zone or security vulnerabilities. |
-| **Azure Automation** | Automate frequent and time-consuming management tasks using PowerShell and Python runbooks. Assess configuration changes about installed software, Microsoft services, Windows registry and files, and Linux daemons using Change Tracking and Inventory. Use Update Management to manage updates to the operating system for your Windows and Linux servers. |
-| **Azure Automanage** | Automate onboarding and configuration of a set of Azure services when you use Automanage Machine for Azure Arc-enabled servers. |
+| **Azure Monitor** | Use Azure Monitor Agent (AMA) and associated data collection rules (DCRs) to collect selected performance counters, events, and logs from supported Windows and Linux servers. Send log data to a Log Analytics workspace and configure alerts for your monitoring requirements. Use AMA-based VM insights for supported performance-monitoring scenarios. |
+| **Azure Policy and Azure Machine Configuration** | Use Azure Policy to assess resource governance and deploy supported configuration policies. Use Azure Machine Configuration to audit operating system settings and, for configurations that support it, apply and monitor or automatically correct those settings inside the guest. |
+| **Azure Automation** | Automate recurring operational tasks by using supported PowerShell or Python runbooks. Use an extension-based Hybrid Runbook Worker when the runbook must execute on a supported Arc-enabled server. |
+| **Azure Update Manager** | Assess and install operating system updates on supported Windows and Linux Arc-enabled servers. Configure periodic assessments and scheduled maintenance according to your patching requirements. Update Manager uses the Connected Machine agent to deploy and manage its update extensions. |
+| **Azure Change Tracking and Inventory** | Track supported software, service, file, and registry changes by using AMA, the Change Tracking extension, and an associated DCR. Store the collected data in a Log Analytics workspace. |
 
-Azure Arc-enabled servers can use Azure VM extensions. Azure VM extensions are lightweight software components that automate post-operating system deployment configuration and automation tasks. Traditionally, Azure VM extensions were available only on Azure VMs, but it's now possible to use selected ones on Azure Arc-enabled servers.
+### Plan service prerequisites
+
+> [!NOTE]
+> Azure Update Manager doesn't require AMA, a Log Analytics workspace, or an Automation account. For non-Azure machines, connect the server to Azure Arc first. Update Manager uses the update sources already configured in the operating system; it doesn't supply an update repository. Review supported operating systems, network access to those sources, and applicable charges before enabling patching.
+
+Follow the Change Tracking and Inventory guidance for Arc-enabled servers. Deploy AMA, the supported Change Tracking extension version (`2.20.0.0` or later as of October 2026), and the DCR configuration and association together. Confirm that inventory and change records appear in the `ConfigurationData` and `ConfigurationChange` tables in the destination workspace.
+
+For on-premises Arc-enabled servers, configure Defender for Endpoint sensor-based vulnerability assessment through the applicable Defender for Servers plan. Agentless scanning applies to supported Azure, AWS, and Google Cloud virtual machines; Arc registration alone doesn't make an on-premises server eligible for agentless scanning. Follow the current Defender for Endpoint integration and vulnerability-assessment guidance, then verify that the machine is onboarded and assessment results are available. Installing the Connected Machine agent doesn't automatically enable the paid protection plan or its sensor.
+
+## Extend Azure Arc-enabled servers
+
+Azure Arc-enabled servers can use Azure VM extensions. Azure VM extensions are lightweight software components that automate configuration tasks after operating system deployment. Traditionally, Azure VM extensions were available only on Azure VMs, but it's now possible to use selected extensions on Azure Arc-enabled servers. The following table describes several supported extensions:
 
 | Extension | Description |
 |---|---|
 | Custom Script Extension | Executes a script on the target Azure Arc-enabled server. |
-| Desired State Configuration (DSC) | Applies a PowerShell DSC on the target Azure Arc-enabled server. |
-| Log Analytics agent | Installs the Log Analytics agent on the target Azure Arc-enabled server and configures it for log forwarding to a Log Analytics workspace. |
-| Dependency agent | Installs the Dependency agent on the target Azure Arc-enabled server to facilitate identifying internal and external dependencies of server workloads. |
-| Azure Key Vault agent | Synchronizes certificates from an Azure Key Vault instance to the Arc enabled server. |
-| Qualys extension | Microsoft Defender for servers' vulnerability-assessment scanning solution. |
+| Azure Monitor Agent | Collects the guest operating system data specified by associated DCRs. On Arc-enabled servers, deploy the `AzureMonitorWindowsAgent` or `AzureMonitorLinuxAgent` extension from `Microsoft.Azure.Monitor`. |
+| Azure Key Vault agent | Synchronizes certificates from an Azure Key Vault instance to the Arc-enabled server. |
+| Microsoft Defender for Endpoint | Enables supported endpoint-protection integration on Arc-enabled servers and supplies the sensor used for agent-based vulnerability assessment. Review Defender for Servers plan requirements, supported operating systems, and deployment prerequisites before enabling it. |
+
+The Machine Configuration agent is included in the Connected Machine agent on Arc-enabled servers. Don't deploy a separate Machine Configuration VM extension to these servers. Select policies and assignment modes that match the required audit or configuration outcome. Use Custom Script Extension for suitable scripted post-deployment tasks; it isn't a substitute for continuous configuration assessment and correction.
+
+### Plan for dependency-mapping retirement
+
+> [!IMPORTANT]
+> VM insights Map and the Dependency Agent are deprecated and retire on June 30, 2028. New portal onboarding stopped on September 30, 2025, and support for new operating system versions and Azure regions stopped on June 30, 2025. Don't make this deprecated capability the basis of a new deployment.
+>
+> AMA-based VM insights performance monitoring is unaffected. For inventory, use Change Tracking and Inventory with AMA. If you require process and network dependency mapping, evaluate a suitable replacement solution using Microsoft's retirement guidance. AMA and Change Tracking and Inventory don't themselves replace dependency maps. Existing deployments should use that guidance to plan migration and offboarding.
