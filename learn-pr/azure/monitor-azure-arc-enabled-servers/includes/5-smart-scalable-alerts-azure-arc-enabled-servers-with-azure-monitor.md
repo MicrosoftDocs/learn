@@ -1,4 +1,4 @@
-Tailwind Manufacturing is interested in setting up a system of alerts to respond to operational and connectivity signals from its Azure Arc-enabled servers. In this unit, you learn how Azure Monitor supports smart and scalable alerting through rules. Then, you walk through the creation of an Azure Monitor Alert Rule for Azure Arc-enabled servers. 
+Tailwind Manufacturing is interested in setting up a system of alerts to respond to operational and connectivity signals from its Azure Arc-enabled servers. In this unit, you learn how Azure Monitor supports smart and scalable alerting through rules. Then, you create a log search alert for low free disk space on an Azure Arc-enabled server.
 
 ## Overview of Azure Monitor alerts and alert rules
 
@@ -8,50 +8,68 @@ Alert rules are separated from alerts and the actions taken when an alert fires.
 
 - **Target resource** defines the scope and signals available for alerting. A target can be any Azure resource. Azure Arc-enabled servers can be targets for Azure Monitor Alerts.
 
-- **Signal** includes the metric, activity log, Application Insights, and log emitted by the target resource. For example, the heartbeats emitted by an Azure Arc-enabled server, or the CPU Utilization threshold of that server.
+- **Signal** is the monitoring data evaluated by an alert rule, such as metrics, logs, or activity log events. Application Insights can also supply telemetry for alerts. For an Arc-enabled server, examples include collected guest CPU utilization data or Azure Monitor Agent heartbeat records. A CPU utilization threshold belongs to the rule's condition, not to the signal.
 
-- **Criteria** specifies the combination of signal and logic applied on a target resource. For example, if the CPU utilization threshold passes 70%.  
+- **Criteria** specifies the condition applied to a signal for a target resource. For example, trigger an alert when the monitored CPU utilization exceeds a threshold of 70%.
 
 - **Alert name, Alert description,** and **Severity** are configured by the user. Severity ranges from 0 to 4, where Severity 0 is *Critical*, Severity 1 is *Error*, Severity 2 is *Warning*, Severity 3 is *Informational*, and Severity 4 is *Verbose*.
 
-- **Action** specifies the corresponding action group to be notified and respond. Main action types include Automation Runbook, Azure Function, ITSM, Logic App, Secure Webhook, and Webhook.
+- **Action** selects an action group for notifications and automated responses. Action types include an Automation runbook, Azure Function, Logic App, Secure Webhook, and Webhook. For supported ServiceNow ITOM or BMC Helix scenarios, use the Secure Webhook integration, including its Microsoft Entra authentication and target-system configuration. For other service-management systems or payload formats, use an appropriate webhook endpoint, Azure Logic Apps, or Azure Functions to adapt the alert data to the target API.
 
-The default **Alerts** page provides a summary of alerts that are created within a particular time range. You can also manage the state of an alert to specify where it is in the resolution process. When all of criteria specified in the alert rule are met, an alert is created or fired, and it has a status of *New*. You can change the status when you acknowledge an alert and when you close it. All state changes are stored in the history of the alert.
+The default **Alerts** page provides a summary of alerts that are created within a particular time range. You can also manage the state of an alert to specify its stage in the resolution process. When all of the criteria specified in the alert rule are met, an alert is created or fired, and it has a status of *New*. You can change the status when you acknowledge an alert and when you close it. All state changes are stored in the history of the alert.
 
-You might want to query programmatically for alerts generated against your subscription. Through Azure Resource Graph, you can programmatically manage your alert instances. Additionally, you can use smart groups to reduce noise and improve troubleshooting. Smart groups are aggregations of alerts based on machine learning algorithms.
+Use Azure Resource Graph to query alert instances across your subscription and summarize them by properties such as severity and alert state. To reduce notification noise during planned maintenance, use alert processing rules to suppress action groups for matching fired alerts within a selected scope and schedule. The alerts still fire and remain available for investigation; suppression changes action-group execution, not the underlying alert condition.
 
 Azure Monitor’s robust alert management and resource framework can be extended to reporting of hybrid and multicloud machines through Azure Arc-enabled servers.
 
-## Create an alert rule for Azure Arc-enabled servers
+## Create a log search alert for low free disk space
 
-When you have one or more Azure Arc-enabled servers with VM Insights enabled, you can use the following steps to define a new alert rule for your Azure Arc-enabled servers:
+This example creates a log search alert when an individual disk on an Azure Arc-enabled server averages less than 10 percent free space over 15 minutes. It monitors free disk capacity, not disk busy time. The threshold is an example; choose one appropriate for your workload.
 
-1. From your browser, navigate to the Azure portal at <https://portal.azure.com/>.
+Before you begin, complete the logs-based VM insights configuration earlier in this module. Identify its Log Analytics workspace and copy the full Azure resource ID of the Arc-enabled server. Confirm that current InsightsMetrics data is arriving. You need workspace query access and permission to create the alert rule in its resource group. You also need read permission on any existing action group you attach. Creating or changing an action group requires appropriate write permissions; testing it requires a test-capable role. For an existing group, Contributor scoped to that action-group resource is one supported option. If you can't test the group yourself, arrange for an authorized action-group administrator to perform the notification test with you. Ingestion, retention, alert evaluation, and alert dimensions can incur charges.
 
-1. In the portal, browse to **Monitor** and select **Alerts** from the left-navigation list.
+### Prepare a notification action group
 
-1. From under the **Create** section, select **Alert Rule**.
+Before creating the alert rule, prepare a saved action group and confirm that its notification reaches the intended recipient. Testing sends real notifications, so coordinate with the recipients.
 
-1. From under the **Filter by Resource Type** section, select **Servers - Azure Arc**.
+1. In the Azure portal, open **Monitor** > **Alerts** > **Action groups**. Select an existing approved group, or select **Create** and configure the intended notifications. Save the group and any changes before testing.
+1. If you add an email address that hasn't already been verified in this tenant, have the recipient complete the one-time-passcode verification within 30 minutes of saving the group. If the passcode expires, open the action group and select **Resend**. An address already verified in the same tenant doesn't need to be verified again for each action group.
+1. On the **Action groups** page, select the saved group and select **Test**. Choose a sample alert type and only the notification types you intend to test, then select **Test**. Don't include automation actions unless their execution is also intended and approved. If you lack test permissions, have the authorized action-group administrator perform this step.
+1. Keep the test window open until it completes. Review the **Success** or **Failed** result and confirm delivery with the intended recipient. If the test fails, select **View details**, correct the reported problem, save any changes, and test again.
 
-1. Select the target Azure Arc-enabled servers as the scope of the rule.
+> [!NOTE]
+> When email verification enforcement is active, unverified email receivers can't receive alert or test notifications. The **Email Azure Resource Manager role** notification type doesn't require one-time-passcode verification. A successful action-group test confirms the notification path; it doesn't evaluate the disk query, its threshold, or the alert rule's resource and dimension settings.
 
-1. Select the signal **\LogicalDisk(\_Total)\% Disk Time (Azure.VM.Windows.GuestMetrics)**.
+### Create the disk-space alert rule
 
-   ![Screenshot of creating an alert rule.](../media/image-9.png)
-  
-1. Enter the **Threshold value** of 0.5 and select **Done**.
-  
-   ![Screenshot of creating signal logic.](../media/image-10.png)
+Follow these steps to create the disk-space alert rule and connect it to the tested action group:
 
-1. Select **Create a new Action Group** to define the response to the alert.
+1. In the Azure portal, open **Monitor > Alerts**, and select **Create > Alert rule**.
+1. Set the rule's scope to the Log Analytics workspace that receives this server's VM insights data.
+1. On **Condition**, select **Custom log search**. Enter the following query. Replace `<arc-resource-id>`, including the angle brackets, with the server's full resource ID ending in `/providers/Microsoft.HybridCompute/machines/<machine-name>`.
 
-1. For Basics, enter the Subscription, Resource Group, and Action Group Name.
+   ```kusto
+   InsightsMetrics
+   | where TimeGenerated > ago(15m)
+   | where Origin == "vm.azm.ms"
+   | where Namespace == "LogicalDisk" and Name == "FreeSpacePercentage"
+   | where _ResourceId =~ "<arc-resource-id>"
+   | extend Disk = tostring(parse_json(Tags)["vm.azm.ms/mountId"])
+   | project TimeGenerated, _ResourceId, Computer, Disk, FreeSpacePercent = Val
+   ```
 
-1. For Notifications, select **Email Azure Resource Manager Role** and choose **Owner** from the dropdown options. 
+1. Run the query and inspect the results. Confirm that the rows belong to the intended server, the disk identifiers are populated, and recent free-space percentage samples are present. If there are no records, resolve the collection, scope, or access problem before continuing.
+1. Return to the alert condition editor. Under **Measurement**, choose calculation of the numeric column `FreeSpacePercent`, **Average** aggregation, and an aggregation granularity/window of **15 minutes**. Don't use a count of table rows.
+1. Use `_ResourceId` as the resource ID column so the alert identifies the affected machine. Under **Split by dimensions**, select `Disk`, include the current disk values, and select **Include all future values**. This prevents a healthy disk from masking a low-space disk through a machine-wide average.
+1. Configure a static threshold with **Less than** and a value of **10**, and evaluate every **5 minutes**. The value is a percentage on a 0-100 scale: `10` means 10 percent, not `0.10`. Use one violation to trigger the alert and a 15-minute query time range.
+1. Review the condition preview for each disk, and finish configuring the condition.
+1. On **Actions**, select the saved action group whose notification you tested. Confirm that it's the intended group for this alert. Notification delivery doesn't prove that the query condition is correct.
+1. On **Details**, select the rule's subscription, resource group, region, name, and severity. For this single-workspace example, **Identity: None** uses the permissions of the last editor, who must be able to read the workspace. If you instead select a managed identity, grant it the required workspace read access before relying on the rule.
+1. Review and create the enabled rule. Verify the configured rule and its notification path in a non-production scenario before relying on it for operational monitoring.
 
-   ![Screensbot of creating an action group.](../media/image-11.png)
+> [!NOTE]
+> For the logs-based VM insights collection used in this exercise, Linux data-disk metrics are supported only for XFS and the EXT filesystem family (EXT2, EXT3, EXT4). Performance metric collection from network shared drives isn't supported. Before relying on this alert, confirm that the query returns recent `FreeSpacePercentage` samples for each disk you intend to monitor.
+>
+> Missing telemetry isn't evidence of healthy disk space. This rule evaluates received disk samples; it doesn't detect every agent, network, or ingestion failure. Monitor telemetry health separately. For Azure Arc connection status, use an appropriate Resource Health alert; connection status isn't the same measurement as guest disk capacity or AMA health.
 
-1. Enter a **Notification Name** and select **Review + Create** for the Action Group.
-
-1. Select **Review + Create** for the alert rule.
+For details, see individual-disk alert queries, creating log search alerts, agent heartbeat monitoring, and Arc disconnected-server alerts in the Summary unit's More Info section.

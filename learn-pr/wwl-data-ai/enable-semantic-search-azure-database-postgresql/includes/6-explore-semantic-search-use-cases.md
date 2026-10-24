@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c5bde754-e63e-4085-8575-09d0855e28d7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 With semantic search, applications can provide a search experience built on context and intent, not just keywords. This type of search is helpful for many use cases. Here are some examples.
 
 ## Semantic search use cases
@@ -18,3 +29,8 @@ Semantic search allows applications to provide customers with relevant product r
 
 There are many ways to use semantic search beyond text. The core feature of semantic search is computing the similarity of embedding vectors. A model can generate embeddings for text input or other inputs such as image pixels. An image model can be trained on object recognition to allow users to search for photos containing objects in a query photo.
 
+::: zone-end
+
+
+> [!TIP]
+> See the **Text and images** tab for more details!
