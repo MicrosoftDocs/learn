@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1370e09c-9a0e-4488-a325-9ab3a9fb3954]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Visually inspecting a dataset isn't the easiest way to uncover patterns and relationships in your data, and the bigger the dataset, the slower the task. Data can quickly be converted into an easy-to-understand visualization, such as a bar chart or a graph that brings your data to life.
 
 Common visualizations include:
@@ -12,6 +23,4 @@ Common visualizations include:
 
 Other visualizations, such as a map, help to show data patterns that would otherwise be hidden. The choice of chart that you use affects how the story behind the data is revealed. Dashboards are a useful tool for displaying a dataset using different visualizations to uncover trends.
 
-This video shows how data can be represented using different types of visualizations, and how this makes it easier to read the patterns within a dataset:
-
-> [!VIDEO 20f02e48-0af5-40b0-8b9d-ce1a26663261]
+::: zone-end

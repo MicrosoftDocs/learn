@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=63f64d8f-2f74-4adf-9051-bd13c308f16c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI agents rely on orchestration frameworks to manage tasks, coordinate tools, and maintain context. These frameworks provide the structure needed to build agents that can reason, retrieve information, and interact with external systems. *Azure Database for PostgreSQL* integrates with several of these frameworks, making it easier to build applications that combine data, logic, and language models.  
 
 ## Identify key frameworks
@@ -32,3 +43,5 @@ For example, at Margie's Travel, LangGraph orchestrates multi-agent workflows, L
 ## Summarize key takeaways
 
 *Azure Database for PostgreSQL* pairs with any of these frameworks to support agent memory, retrieval, and context management. Developers can select the framework that best fits their application needs and connect it to PostgreSQL through native extensions, framework-specific connectors, or custom integrations.
+
+::: zone-end

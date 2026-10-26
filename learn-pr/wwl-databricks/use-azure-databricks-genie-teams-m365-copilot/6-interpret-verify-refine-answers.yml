@@ -4,7 +4,7 @@ title: Interpret, verify, and refine Genie's answers
 metadata:
   title: Interpret, Verify, and Refine Genie's Answers
   description: "Apply an inspect-verify-refine workflow to Genie responses: check filters and assumptions, handle ambiguous or uncertain answers, and translate a verified answer into a decision or next action."
-  ms.date: 08/25/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ccfff60f-f1cd-441c-8920-639ebb119920]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Modern AI agents often need to interact with a wide range of tools and data sources. The *Model Context Protocol* (MCP) provides a standardized way for agents to discover, connect to, and invoke external tools and services. MCP acts as a universal adapter, enabling seamless integration with platforms like *GitHub* and *Azure services*.
 
 ## Define MCP and its key components
@@ -32,3 +43,5 @@ For example, at Margie’s Travel, agents use MCP to access tools that query pro
 ## Key takeaways
 
 MCP and *Azure MCP Server* give AI agents a reliable way to connect with external tools and data sources. When used with *Azure Database for PostgreSQL*, they allow agents to query structured and semantic data as part of their workflow. This combination helps create systems that are flexible, consistent, and easier to scale.
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fca4a23c-66ca-4a9d-a631-2479f1ede83d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Aggregate functions are used to return a summary value from your dataset, and are a fundamental component of data analysis. These functions help us answer specific questions about our business, such as how many customers visited the Tokyo store last Tuesday, or  the average spend of each online customer in December.
 
 The following functions are commonly used in data analysis:
@@ -16,6 +27,4 @@ The following functions are commonly used in data analysis:
 
 The type of function used depends on the data in the column being aggregated. Temperature values in a column wouldn't work with a summary aggregation, but would be ideal for minimum, maximum, or average. In a sales order table, the total column might be summarized, or you could use the minimum, maximum, or average functions.
 
-This video shows how aggregate functions can be applied to data to return summarized results:
-
-> [!VIDEO c0438c09-3c78-483f-9e85-63a128564c08]
+::: zone-end

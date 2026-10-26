@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ee37c1d0-06c2-483d-8b39-31d21c1bdb84]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 AI agents depend on reliable information retrieval to give useful answers, recommendations, and support. As data grows, they need search methods that move beyond simple keyword matching. When semantic understanding is combined with scalable indexing, agents can deliver results that reflect both the query and the data behind it. *Azure Database for PostgreSQL* enables these capabilities through features such as vector search, semantic operators, and graph-based retrieval.
 
 ![Diagram of AI agent architecture diagram showing agent using tools to access Azure Database for PostgreSQL.](../media/ai-agent-postgresql-architecture.png)
@@ -31,3 +42,5 @@ Suppose a guest asks: *"I’m looking for a pet-friendly apartment near the city
 ## Summarize key takeaways  
 
 With vector search, semantic operators, and scalable indexing, agents can respond with answers that are both fast and relevant. These tools help users find what they need while keeping results grounded in the underlying data.  
+
+::: zone-end

@@ -2,10 +2,11 @@
 uid: learn.wwl.implement-generative-ai-agents-azure-postgresql.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Introduction to implementing generative AI agents with Azure Database for PostgreSQL."
-  ms.date: 10/09/2025
-  author: wwlpublish
+  ms.date: 10/26/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 1

@@ -1,7 +1,7 @@
 If Microsoft 365 Copilot is your primary daily work tool, you can access Genie without switching to Teams or opening Azure Databricks. This unit explains the two ways to invoke Genie from Microsoft 365 Copilot, how the experience differs from the Teams app, and what to expect from each approach.
 
 > [!NOTE]
-> Genie on Microsoft 365 Copilot is in Public Preview. Verify current availability with your Microsoft 365 administrator or at [Azure Databricks integrations with Microsoft 365 Copilot](/azure/databricks/integrations/msft-m365-copilot).
+> The recommended connection uses the Databricks Genie app in Microsoft Teams, which is in Public Preview. Your organization can alternatively configure a Genie Agent connection through Power Platform and Copilot Studio. Verify your connection with your Microsoft 365 administrator or at [Azure Databricks integrations with Microsoft 365 Copilot](/azure/databricks/integrations/msft-m365-copilot).
 
 ## Find Genie in Microsoft 365 Copilot
 
@@ -30,11 +30,11 @@ For a quick, one-off data question within a broader Copilot conversation, use th
 2. Type `@Databricks` and select **Databricks Genie** from the suggestion list.
 3. Type your question.
 
-This is a one-off mention. Genie answers within the current chat, and other Copilot capabilities remain available. Use this approach when you want to combine a data question with other tasks in one conversation.
+This invokes Genie from the current chat without first opening a dedicated agent conversation. It doesn't mean the exchange is temporary or excluded from conversation history.
 
 ## How the Microsoft 365 Copilot experience compares to Teams
 
-The two surfaces use the same data permissions and have the same feature limitations. The main differences are in how you start a conversation and where the response appears.
+When you connect through the Databricks Genie Teams app, both surfaces use your existing data permissions and share the documented integration limitations. Conversation-specific features still differ. If your organization uses a custom Copilot Studio connection, check its configuration with your IT team.
 
 | Feature | Teams app | Microsoft 365 Copilot |
 |---|---|---|
@@ -43,8 +43,9 @@ The two surfaces use the same data permissions and have the same feature limitat
 | Source citations | Yes | Yes |
 | Suggested follow-up prompts | Yes | Yes |
 | Thumbs up/down feedback | Yes | Yes |
-| Charts or visualizations | No | No |
+| Charts or visualizations | Chart images when included; not shown in private-visibility replies | Check the Teams integration's visualization and visibility limitations |
+| File uploads | Direct messages only, with the upload preview enabled and OneDrive for Business | Not supported |
 | Persistent agent conversation | Yes—DM thread | Yes—via More agents |
 | One-off question in a broader conversation | Yes—channel mention | Yes—@mention in new chat |
 
-Both surfaces are subject to the same important limitation: Genie in Teams and Microsoft 365 Copilot doesn't display charts or visualizations. If you need to see a chart, open the Genie Agent directly in Azure Databricks or in Genie One, where visualization is supported.
+The Teams integration can display charts as images, so a blanket "no charts" limitation no longer applies. For interactive visualization controls, open the Genie Agent directly in Azure Databricks or in Genie One. For the Teams-app connection in Microsoft 365 Copilot, consult the [shared integration limitations](/azure/databricks/integrations/msft-m365-copilot#limitations).

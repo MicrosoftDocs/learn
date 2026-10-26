@@ -2,11 +2,12 @@
 uid: learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.understand-postgresql-extension
 title: Understand how the PostgreSQL extension supports SQL development
 metadata:
+  zone_pivot_groups: video-or-text
   title: Understand how the PostgreSQL extension supports SQL development
   description: Learn how the PostgreSQL extension enables connecting, browsing objects, and running SQL inside Visual Studio Code.
-  author: wwlpublish
+  author: MScalopez
   ms.author: calopez
-  ms.date: 12/08/2025
+  ms.date: 10/26/2026
   ms.topic: unit
 durationInMinutes: 5
 content: |

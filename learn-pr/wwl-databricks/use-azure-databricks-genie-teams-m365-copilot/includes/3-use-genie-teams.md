@@ -9,7 +9,7 @@ The Databricks Genie app is installed by a Microsoft 365 administrator from the 
 
 :::image type="content" source="../media/genie-app-install.png" alt-text="Screenshot showing Microsoft Teams Databricks Genie app.":::
 
-The first time you open the app, you're prompted to sign in with your own organizational credentials. This matters: Genie only shows you data you're authorized to see. Your access is determined by the permissions your data team set up—the app doesn't give you any additional access.
+When you send a question and aren't signed in, select **Configure**, enter your Azure Databricks **Workspace URL**, and select **Continue** to sign in to your Azure Databricks account. Ask your administrator for the workspace URL if you don't know it. Genie uses your existing data permissions—the app doesn't give you additional access. A public channel reply can still expose your answer to other members, so check visibility before asking.
 
 ## Start a conversation: direct messages and channel mentions
 
@@ -30,7 +30,9 @@ The Databricks Genie app supports two ways to ask a question:
 
 Some Teams channels use a Genie Agent that focuses on a specific business topic. For example, a sales channel might answer questions using an agent that covers sales performance. This focus helps the channel return relevant answers for its usual audience.
 
-If an answer seems unexpectedly narrow or doesn't cover your topic, try asking the same question in a direct message. The direct message isn't tied to the channel's topic, so it may produce a broader answer. You can also ask the channel owner which topics the channel supports.
+Channel owners can pin a specific Genie Agent or use Genie One, which routes questions to relevant data. If an answer seems unexpectedly narrow, ask the channel owner which scope is configured. A direct message has its own workspace and Genie scope settings, so it might cover a different topic, but it isn't necessarily broader.
+
+To start a new Genie conversation in a direct message, send `newchat`. This clears the current conversation context without deleting your Teams messages.
 
 ## What you can and can't do in the Teams app
 
@@ -43,9 +45,11 @@ The Teams integration covers natural-language Q&A. Some capabilities available i
 | Source citations in responses | Yes |
 | Suggested follow-up prompts | Yes |
 | Thumbs up/down feedback on responses | Yes |
-| View answer as a chart or visualization | No |
+| View answer as a chart or visualization | Yes, as an image when included in a response; not shown in private-visibility replies |
 
 > [!TIP]
-> Thumbs up or down feedback helps your data team improve the accuracy and relevance of your organization's Genie Agents. If an answer looks incorrect, submit feedback even if you can't explain exactly what's wrong.
+> Thumbs up or down feedback is sent to Genie One, even when a channel uses a pinned Genie Agent. If an answer looks incorrect, submit feedback and contact your data team when the agent's instructions or data need correction.
 
-Every response in Teams also includes source citations and, often, suggested follow-up prompts. These prompts give you a starting point for drilling deeper into the data without having to construct your next question from scratch.
+Data answers in Teams include sources and suggested follow-up prompts. These prompts give you a starting point for drilling deeper into the data without having to construct your next question from scratch.
+
+Some features differ by conversation type. File uploads are available only in direct messages when your administrator enables the **Genie One File Upload** preview and you have OneDrive for Business. Uploads aren't supported in channels, group chats, or Microsoft 365 Copilot. The Teams app also selects an authorized SQL warehouse automatically; you can't choose compute in the app. See the [current limitations](/azure/databricks/integrations/msft-teams#limitations).

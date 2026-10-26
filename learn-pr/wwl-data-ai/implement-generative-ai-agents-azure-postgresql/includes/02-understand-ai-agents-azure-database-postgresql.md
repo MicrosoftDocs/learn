@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a3f18806-64de-4e4a-9e9a-27f483e2fc28]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Many modern applications use AI agents to automate tasks, answer questions, and create personalized experiences. Before looking at a specific example, it’s helpful to understand how agentic architectures work and why Azure Database for PostgreSQL is a strong fit for these systems.
 
 ## Explain agentic architecture with PostgreSQL
@@ -37,3 +48,5 @@ Each agent interacts with Azure Database for PostgreSQL to access structured dat
 ## Summarize key takeaways
 
 AI agents rely on data retrieval and memory to work effectively. *Azure Database for PostgreSQL* supports both, giving agents a place to find information and keep track of context. These capabilities make it a practical choice for building systems that can manage complex tasks and continue to perform well as they scale.
+
+::: zone-end

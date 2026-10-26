@@ -4,8 +4,8 @@ title: Exercise - Build an AI agent with Foundry Agent Service and Azure Databas
 metadata:
   title: Exercise - Build an AI agent with Foundry Agent Service and Azure Database for PostgreSQL
   description: "Practice building an AI agent that uses Foundry Agent Service and Azure Database for PostgreSQL."
-  ms.date: 10/09/2025
-  author: wwlpublish
+  ms.date: 10/26/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 30
