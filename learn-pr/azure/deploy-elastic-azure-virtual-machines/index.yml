@@ -2,27 +2,34 @@
 uid: learn.azure.deploy-elastic-azure-virtual-machines
 metadata:
   moduleType: standard
-  title: Deploy Elastic on Azure virtual machines
-  description: "Deploy Elastic on Azure virtual machines (VMs) to get the benefits of Elasticsearch for your Linux workloads by following the instructions provided here."
-  ms.date: 08/02/2024
-  author: yenchiho
-  ms.author: yenchiho
+  title: Deploy Elastic on Azure Virtual Machines
+  description: "Deploy a self-managed Elasticsearch cluster and Kibana on private Azure Linux virtual machines, configure HTTPS, and verify a disposable lab."
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module-standard-task-based
   ms.service: azure-virtual-machines
 title: Deploy Elastic on Azure virtual machines
-summary: In this module, we demonstrate how to deploy Elastic on Azure virtual machines.
+summary: Deploy a private, self-managed Elasticsearch cluster and Kibana on Azure virtual machines, configure trusted HTTPS, and verify cluster membership and replica allocation.
 abstract: |
   By the end of this module, you're able to:
-    - Deploy Elastic on Azure VMs
+    - Distinguish self-managed Azure VMs from Elastic-operated managed services.
+    - Deploy a private, three-node Elasticsearch cluster and enroll Kibana.
+    - Configure trusted HTTPS and verify cluster membership, document access, and replica allocation.
+    - Clean up lab resources without deleting shared infrastructure.
 prerequisites: |
-  - An Azure subscription
-  - Basic understanding of Elasticserach, Kibana, Logstash, and Beats
+  Before starting this module, you need:
+
+  - An active Azure subscription, an approved budget, and permissions and quota for four VMs totaling eight vCPUs, managed disks, and networking resources
+  - Basic understanding of Elasticsearch and Kibana
   - Familiarity with Azure virtual machines (VMs)
-  - Established Ubuntu username 
-hidden: true
+  - Linux administration skills and an administrator workstation with SSH/SCP and SSH public-key authentication
+  - Approved routed private connectivity for both SSH and browser access, with a known administrator source IP range
+  - Ubuntu Server 24.04 LTS x64 and Elastic 9.5.5 support confirmed against the current Elastic Support Matrix and version policy
+  - An approved Kibana server certificate or permission to trust a temporary lab CA
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-  - beginner
+  - intermediate
 roles:
   - developer
 products:
@@ -38,4 +45,3 @@ units:
 - learn.azure.deploy-elastic-azure-virtual-machines.summary
 badge:
   uid: learn.azure.deploy-elastic-azure-virtual-machines.badge
-

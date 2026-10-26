@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.surface-mouse-second-edition
+title: Explore interaction experiences with Surface Mouse (2nd Edition)
+metadata:
+  title: Explore Interaction Experiences With Surface Mouse (2nd Edition)
+  description: "In this module, you explore interaction experiences with Surface Mouse (2nd Edition). Discover how to work comfortably, access frequently used tools, and connect across Surface workspaces."
+  ms.date: 10/26/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  In this module, you explore interaction experiences with Surface Mouse (2nd Edition). Discover how to work comfortably, access frequently used tools, and connect across Surface workspaces.
+
+abstract: |
+  By the end of this module, you're able to:
+  - Explore how to work comfortably with Surface Mouse (2nd Edition)
+  - Access frequently used tools efficiently
+  - Connect across Surface workspaces seamlessly
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/surface-mouse-second-edition-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.surface-mouse-second-edition.introduction
+  - learn.dpu.surface-mouse-second-edition.work-comfortably-throughout-the-day
+  - learn.dpu.surface-mouse-second-edition.navigate-using-haptic-feedback
+  - learn.dpu.surface-mouse-second-edition.access-frequently-used-tools
+  - learn.dpu.surface-mouse-second-edition.connect-across-surface-workspaces
+  - learn.dpu.surface-mouse-second-edition.apply-capabilities-to-your-workflow
+  - learn.dpu.surface-mouse-second-edition.module-assessment
+  - learn.dpu.surface-mouse-second-edition.summary
+badge:
+  uid: learn.dpu.surface-mouse-second-edition.badge

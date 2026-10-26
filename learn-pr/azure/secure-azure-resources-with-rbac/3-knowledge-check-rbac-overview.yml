@@ -1,17 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-azure-resources-with-rbac.3-knowledge-check-rbac-overview
-title: Knowledge check - What is Azure RBAC?
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check - What is Azure RBAC?
+  title: Module Assessment
   description: Knowledge check - What is Azure RBAC?
-  ms.date: 09/19/2024
-  author: rolyon
-  ms.author: rolyon
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 2
 quiz:
-  title: Check your knowledge
   questions:
 
   - content: "What is a role definition in Azure?"
@@ -35,10 +34,10 @@ quiz:
       explanation: "A contributor can create and manage all types of Azure resources, but they can't grant access to other users."
     - content: "Reader"
       isCorrect: false
-      explanation: "A reader can only view existing Azure Resources."
+      explanation: "A reader can only view existing Azure resources."
     - content: "User Access Administrator"
       isCorrect: false
-      explanation: "A user access administrator can only manage access of Azure resources."
+      explanation: "User Access Administrator can manage Azure role assignments, including granting access to other users. It therefore doesn't meet the requirement to manage resources without delegating Azure RBAC access."
   - content: "What is the inheritance order for scope in Azure?"
     choices:
     - content: "Management group, Resource group, Subscription, Resource"

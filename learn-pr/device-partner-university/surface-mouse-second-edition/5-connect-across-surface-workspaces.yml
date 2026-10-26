@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-mouse-second-edition.connect-across-surface-workspaces
+title: Connect across surface workspaces
+metadata:
+  title: Connect Across Surface Workspaces
+  description: This content is part of the "Explore interaction experiences with Surface Mouse (2nd Edition)" module.
+  ms.date: 10/26/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-connect-across-surface-workspaces.md)]
