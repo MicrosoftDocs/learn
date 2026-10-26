@@ -5,7 +5,7 @@ The integration doesn't replace Genie Agent or Unity Catalog security. Validate 
 Open the existing Genie Agent with an editor or data engineer and confirm these requirements:
 
 - The agent's data is registered in Unity Catalog.
-- The agent contains no more than 30 tables or views.
+- The agent contains no more than 50 tables, views, or metric views.
 - The default compute is a pro or serverless SQL warehouse.
 - The editor who selected the warehouse has `CAN USE` on it.
 - The agent has a clear title and description that identify its business domain.
@@ -52,7 +52,7 @@ Use Unity Catalog controls to preserve differences within the group:
 Sharing the agent doesn't grant privileges on its underlying data objects. Similarly, adding a table to the agent doesn't make that table readable to every agent user.
 
 > [!IMPORTANT]
-> Genie can query objects beyond the tables explicitly attached to an agent when instructions, metadata, joins, or edited SQL reference them. Base least-privilege design on Unity Catalog permissions, not only on the agent's visible table list.
+> A Genie Agent queries only data sources explicitly attached under **Sources**. It doesn't query unattached tables or Unity Catalog functions, even when instructions or metadata reference them. Attached sources still require each user's Unity Catalog authorization. Validate both the source configuration and the user's privileges.
 
 ## Confirm allowed and denied data behavior
 

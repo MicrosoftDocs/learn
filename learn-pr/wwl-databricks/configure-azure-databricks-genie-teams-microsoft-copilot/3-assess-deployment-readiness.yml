@@ -4,7 +4,7 @@ title: Assess deployment readiness
 metadata:
   title: Assess Deployment Readiness
   description: "Assess Azure Databricks, Microsoft 365, identity, and network prerequisites for the Databricks Genie app."
-  ms.date: 08/26/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

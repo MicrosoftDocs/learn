@@ -37,7 +37,7 @@ Workspace security settings control whether external collaboration surfaces can 
 
 :::image type="content" source="../media/databricks-workspace-security-settings.png" alt-text="Screenshot of Azure Databricks workspace settings for connections and public messages.":::
 
-The public-message setting affects more than response formatting. If public messages are disabled, Teams channels and group chats don't work with the app. Users can use direct messages only.
+The public-message setting takes precedence over channel and personal settings. If public messages are disabled, responses are private to the user who asked. Channel owners can't make those responses public.
 
 Select the setting based on the organization's collaboration policy and the sensitivity of expected questions. Unity Catalog still controls source-data access, but a public response can expose an authorized user's returned result to other channel members.
 
@@ -66,11 +66,23 @@ Confirm these conditions:
 
 The Teams app doesn't let an administrator or user select a SQL warehouse. Azure Databricks chooses compute according to the active Genie scope and the permissions that apply to it.
 
-## Accommodate IP access lists
+## Configure network access
 
 If the workspace enforces an IP access list, add the Azure Databricks control-plane outbound addresses for East US 2. Use the live outbound section of [Azure Databricks regions, IP addresses, and domains](/azure/databricks/resources/ip-domain-region#outbound) because address ranges can change.
 
+For a workspace with front-end Private Link, the app uses a controlled public ingress path rather than a Private Link connection. An account administrator configures this path:
+
+1. Confirm that the workspace uses context-based ingress. If it uses legacy IP access lists, [migrate to context-based ingress](/azure/databricks/security/network/front-end/migrate-to-context-based-ingress) first.
+2. Confirm that the organization's network policy permits the exception, and keep **Allow Public Network Access** set to **Enabled** on the workspace.
+3. In the account console, open or create the workspace network policy.
+4. On the **Ingress** tab, under **Public network access**, add an **Allow** rule with **Access type** set to **API** and the **Genie** API scope.
+5. Set **Identity** to **Selected identities** for the intended users, or **All users and service principals** if the approved scope requires it.
+6. Set **Network source** to **Partner platforms** > **Databricks Teams App**.
+7. Save the policy and attach it to the workspace. Allow up to 30 minutes for the change to take effect.
+
+The rule permits the app's Genie API requests without changing how the policy handles other traffic. Each request still uses the permissions of the user who asked. See [Use with Private Link workspaces](/azure/databricks/integrations/msft-teams#use-with-private-link-workspaces).
+
 > [!IMPORTANT]
-> Private Link isn't supported by this integration. An environment that requires Private Link for this connection isn't ready for the Databricks Genie app in Teams.
+> The app doesn't connect over Private Link. If organizational policy prohibits public ingress entirely, don't enable this exception.
 
 At this point, the account and workspace accept the integration, users can authenticate, and the required compute foundation exists. The next step validates the separate agent and data-authorization path.
