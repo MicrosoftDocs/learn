@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=6af57df6-26b3-4699-93ee-a01283ea1fc7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 When you schedule a Lakeflow Job, you define exactly when your workflow runs without manual intervention. Scheduling transforms ad hoc data processing into reliable, automated pipelines that keep your data fresh and your business processes running smoothly.
 
@@ -136,3 +145,5 @@ Keep these points in mind:
 - Don't rely on sub-minute precision for business-critical timing
 - Monitor job run history to identify scheduling patterns or delays
 - Use the minimum 10-second interval rule when planning high-frequency jobs
+
+::: zone-end

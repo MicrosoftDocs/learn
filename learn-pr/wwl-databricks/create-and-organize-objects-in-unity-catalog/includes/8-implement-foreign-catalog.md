@@ -1,6 +1,17 @@
-Your analytics team needs immediate access to customer transaction data stored in a PostgreSQL database. Moving terabytes of operational data into Azure Databricks for exploratory analysis would take weeks and consume significant resources. At the same time, your organization requires **centralized governance** for all data access, regardless of where the data resides. **Foreign catalogs in Unity Catalog** solve this challenge by enabling you to query external databases directly while maintaining Unity Catalog's access control, lineage tracking, and audit capabilities.
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=e9b068cb-1af4-49fb-afa7-9a38557109c5]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=752b978d-6b05-4aac-9076-3676cd726fe5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
+Your analytics team needs immediate access to customer transaction data stored in a PostgreSQL database. Moving terabytes of operational data into Azure Databricks for exploratory analysis would take weeks and consume significant resources. At the same time, your organization requires **centralized governance** for all data access, regardless of where the data resides. **Foreign catalogs in Unity Catalog** solve this challenge by enabling you to query external databases directly while maintaining Unity Catalog's access control, lineage tracking, and audit capabilities.
 
 ## Why implement foreign catalogs?
 
@@ -116,8 +127,6 @@ Schedule these refresh operations using Lakeflow Jobs to run at intervals that m
 
 ## Grant access and query foreign data
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=752b978d-6b05-4aac-9076-3676cd726fe5]
-
 Foreign catalogs appear in Unity Catalog alongside your standard catalogs, making them subject to the same permission model. You control access by granting appropriate privileges to users and groups.
 
 **Grant read privileges** to users who need to query foreign data:
@@ -146,3 +155,5 @@ LIMIT 100;
 Azure Databricks translates this query into SQL appropriate for PostgreSQL, pushes the query down to the external database, and returns results. The external database performs the aggregation and filtering, leveraging its own compute resources while Azure Databricks handles the final result set.
 
 **Query execution** uses remote compute in the external system. Understanding this behavior helps you optimize performance. Complex joins, aggregations, and filters are pushed down to the external database when possible, reducing data transfer. However, if your result set is very large, the Databricks executor retrieving data might run out of memory. Monitor query performance and consider using materialized views to cache frequently accessed external data locally.
+
+::: zone-end

@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=30e7bb65-edc2-42f8-96f2-00344ef4eb10]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 SQL commands provide a declarative approach to data ingestion in Azure Databricks. If you're already comfortable with SQL syntax, these methods let you create and populate tables without writing procedural code. The three primary SQL ingestion techniques—`CREATE TABLE AS SELECT (CTAS)`, `CREATE OR REPLACE TABLE`, and `COPY INTO`—each address different ingestion scenarios while maintaining full compatibility with Unity Catalog.
 
@@ -149,3 +158,5 @@ For file-based ingestion that requires automatic schema inference, file notifica
 
 > [!NOTE]
 > `COPY INTO` works well when ingesting files in the order of thousands over time. For sources that will grow to millions of files or more, Auto Loader (covered in the next unit) is the recommended approach—it discovers files more efficiently, supports richer schema evolution, and scales without the overhead of directory listing. Databricks also recommends streaming tables backed by Auto Loader as a scalable, long-term alternative for SQL-based file ingestion.
+
+::: zone-end

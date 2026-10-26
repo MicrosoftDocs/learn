@@ -4,7 +4,7 @@ title: Review app permissions and security
 metadata:
   title: Review App Permissions and Security
   description: "Review Microsoft Graph, Teams resource-specific consent, Azure Databricks sign-in, and data-boundary considerations."
-  ms.date: 08/26/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

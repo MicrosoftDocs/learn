@@ -2,9 +2,10 @@
 uid: learn.wwl.design-implement-data-pipelines.design-order-operations-pipeline
 title: Design order of operations for a pipeline
 metadata:
+  zone_pivot_groups: video-or-text
   title: Design Order of Operations for a Pipeline
   description: Learn how to design the order of operations for a data pipeline in Azure Databricks, including ingestion, cleaning, transformation, loading, serving, and monitoring stages.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

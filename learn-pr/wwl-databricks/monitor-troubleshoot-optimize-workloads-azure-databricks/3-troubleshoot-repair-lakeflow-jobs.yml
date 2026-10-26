@@ -2,9 +2,10 @@
 uid: learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.troubleshoot-repair-lakeflow-jobs
 title: Troubleshoot and repair Lakeflow Jobs
 metadata:
+  zone_pivot_groups: video-or-text
   title: Troubleshoot and Repair Lakeflow Jobs
   description: Learn how to troubleshoot, repair, restart, and stop Lakeflow Jobs in Azure Databricks to maintain reliable data pipelines.
-  ms.date: 10/12/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

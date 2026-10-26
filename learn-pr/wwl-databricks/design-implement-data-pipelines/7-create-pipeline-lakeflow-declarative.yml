@@ -4,7 +4,7 @@ title: Create pipeline with Lakeflow pipelines
 metadata:
   title: Create Pipeline with Lakeflow pipelines
   description: Learn how to create data pipelines using Lakeflow pipelines in Azure Databricks, including streaming tables, materialized views, and data quality expectations.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

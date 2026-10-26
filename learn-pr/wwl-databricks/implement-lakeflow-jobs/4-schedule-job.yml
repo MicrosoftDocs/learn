@@ -2,9 +2,10 @@
 uid: learn.wwl.implement-lakeflow-jobs.schedule-job
 title: Schedule a job
 metadata:
+  zone_pivot_groups: video-or-text
   title: Schedule a Job
   description: Learn how to schedule Lakeflow Jobs in Azure Databricks using simple intervals or advanced cron expressions to automate your data pipelines.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

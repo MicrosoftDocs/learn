@@ -1,8 +1,31 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bd32efc6-01aa-4c6b-811c-14c5109d9a3c]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=043554e4-b9f6-4566-90ab-6071ffc27eba]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=85a4a208-66db-4059-a4f0-9ba951818fc3]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0963a8a9-2beb-4b23-8edb-cc2401fbf74e]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b50ca343-fcd9-4070-b6a1-1e4fcde9d606]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3eb8bdba-9207-4733-9ed7-d08369734f9e]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0aef1e6c-12e3-40f5-b04c-ecd1db01e153]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fa507047-6226-4ba4-9a9a-c0d2a95ba01b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Databricks is a single service platform with multiple technologies that enable working with data at scale. When using Azure Databricks, there are some key concepts to understand.
 
 ## Workspaces
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=bd32efc6-01aa-4c6b-811c-14c5109d9a3c]
 
 A **workspace** in Azure Databricks is a secure, collaborative environment where you can access and organize all Databricks assets, such as notebooks, clusters, jobs, libraries, dashboards, and experiments. 
 
@@ -16,8 +39,6 @@ In addition, workspaces are tied to **Unity Catalog** (when enabled) for central
 
 ## Notebooks
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=043554e4-b9f6-4566-90ab-6071ffc27eba]
-
 **Databricks notebooks** are interactive, web-based documents that combine **runnable code, visualizations, and narrative text** in a single environment. They support multiple languages—such as Python, R, Scala, and SQL—and allow users to switch between languages within the same notebook using *magic commands*. This flexibility makes notebooks well-suited for **exploratory data analysis, data visualization, machine learning experiments, and building complex data pipelines**.
 
 Notebooks are also designed for **collaboration**: multiple users can edit and run cells simultaneously, add comments, and share insights in real time. They integrate tightly with Databricks clusters, enabling users to process large datasets efficiently, and can connect to external data sources through **Unity Catalog** for governed data access. In addition, notebooks can be version-controlled, scheduled as jobs, or exported for sharing outside the platform, making them central to both **ad-hoc exploration** and **production-grade workflows**.
@@ -27,8 +48,6 @@ Notebooks contain a collection of two types of cells: **code cells** and **Markd
 :::image type="content" source="../media/notebook.png" alt-text="Screenshot of an Azure Databricks Notebook." lightbox="../media/notebook.png":::
 
 ## Clusters
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=85a4a208-66db-4059-a4f0-9ba951818fc3]
 
 Azure Databricks uses a two-layer architecture:
 
@@ -49,8 +68,6 @@ This allows you to tailor compute to specific needs—from exploratory analysis 
 
 ## Databricks Runtime
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=0963a8a9-2beb-4b23-8edb-cc2401fbf74e]
-
 The **Databricks Runtime** is a set of customized builds of **Apache Spark** that include performance improvements and additional libraries. These runtimes make it easier to handle tasks such as **machine learning**, while still supporting general data processing and analytics.
 
 Databricks provides multiple runtime versions, including **long-term support (LTS)** releases. Each release specifies the underlying Apache Spark version, its release date, and when support ends. Over time, each runtime version follows a lifecycle:
@@ -64,8 +81,6 @@ Databricks provides multiple runtime versions, including **long-term support (LT
 If a maintenance update is released for a runtime version you're using, you can apply it by **restarting your cluster**.
 
 ## Lakeflow Jobs
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=b50ca343-fcd9-4070-b6a1-1e4fcde9d606]
 
 **Lakeflow Jobs** provide workflow automation and orchestration in Azure Databricks, making it possible to reliably schedule, coordinate, and run data processing tasks. Instead of running code manually, you can use jobs to automate repetitive or production-grade workloads such as ETL pipelines, machine learning training, or dashboard refreshes.
 
@@ -83,8 +98,6 @@ Because they're repeatable and managed, jobs are critical for **production workl
 
 ## Delta Lake
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=3eb8bdba-9207-4733-9ed7-d08369734f9e]
-
 **Delta Lake** is an open-source storage framework that improves the reliability and scalability of data lakes by adding transactional features on top of cloud object storage, such as **Azure Data Lake Storage**. Traditional data lakes can suffer from issues like inconsistent data, partial writes, or difficulties managing concurrent access. Delta Lake addresses these problems by supporting:
 
 - **ACID transactions** (atomicity, consistency, isolation, durability) for reliable reads and writes.
@@ -96,8 +109,6 @@ On top of this foundation, **Delta tables** provide a familiar table abstraction
 
 ## Databricks SQL
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=0aef1e6c-12e3-40f5-b04c-ecd1db01e153]
-
 **Databricks SQL** brings **data warehousing capabilities** to the Databricks Lakehouse, allowing analysts and business users to query and visualize data stored in open formats directly in the data lake. It supports **ANSI SQL**, so anyone familiar with SQL can run queries, build reports, and create dashboards without needing to learn new languages or tools.
 
 Databricks SQL is available only in the **Premium tier** of Azure Databricks. It includes:
@@ -107,8 +118,6 @@ Databricks SQL is available only in the **Premium tier** of Azure Databricks. It
 - Integration with external BI and analytics tools.
 
 ## SQL warehouses
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=fa507047-6226-4ba4-9a9a-c0d2a95ba01b]
 
 All Databricks SQL queries run on **SQL warehouses** (formerly called SQL endpoints), which are scalable compute resources decoupled from storage. Different warehouse types are available depending on performance, cost, and management needs:
 
@@ -133,3 +142,5 @@ All Databricks SQL queries run on **SQL warehouses** (formerly called SQL endpoi
 ## MLflow
 
 **MLflow** is an open-source platform designed to manage the **end-to-end machine learning (ML) lifecycle**. It helps data scientists and ML engineers track experiments, manage models, and streamline the process of moving models from development to production. MLflow also supports generative AI workflows and includes tools for evaluating and improving AI agents.
+
+::: zone-end

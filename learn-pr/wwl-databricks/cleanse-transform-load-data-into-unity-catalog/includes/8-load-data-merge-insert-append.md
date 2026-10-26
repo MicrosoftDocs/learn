@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=c4b9d1b5-a8a3-4613-82ed-4cb86b99db03]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 After you transform and cleanse data, the final step in your pipeline is loading it into target tables. Azure Databricks provides three core loading strategies: **append**, **overwrite**, and **merge**. Each strategy serves different use cases, and choosing the right one depends on how your source data relates to existing records.
 
@@ -214,3 +223,5 @@ Your choice of loading operation depends on the relationship between source and 
 > MERGE operations fail if more than one source row matches the same target row, because it's unclear which source row to apply. Unconditional `DELETE` actions are the exception. Deduplicate your source data before merging.
 
 Understanding these loading patterns prepares you to build reliable data pipelines that maintain data integrity while efficiently processing both new and changed records.
+
+::: zone-end

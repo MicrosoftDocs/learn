@@ -1,4 +1,15 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=8c5875e6-a71b-4054-af29-2782014dd89d]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7cd58862-808c-4bbe-affb-53786093261e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Tracking who did what, when, and to which data objects is essential for governance, security, and compliance. When you configure **audit logging** in Azure Databricks, you gain visibility into every significant action across your workspace and account. This visibility helps you meet regulatory requirements, investigate security incidents, and maintain accountability across your data platform.
 
@@ -146,8 +157,6 @@ When you enable or disable verbose logging, Azure Databricks logs this configura
 
 ## Configure log delivery to external systems
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=7cd58862-808c-4bbe-affb-53786093261e]
-
 While the audit log system table provides direct access within Databricks, many organizations route logs to external systems for centralized monitoring. Azure Databricks integrates with Azure diagnostic settings to deliver workspace-level logs to multiple destinations, each optimized for different use cases:
 
 - **Azure Log Analytics**: Provides centralized storage and querying using Kusto Query Language (KQL). This makes it a good fit for interactive investigations and custom dashboards.
@@ -164,3 +173,5 @@ You configure log delivery for each Azure Databricks workspace resource in the A
 The combination of the system table for interactive queries and external delivery for operational monitoring provides broad coverage. You can use the system table for ad-hoc investigations while relying on your SIEM platform for continuous security monitoring of workspace-level events.
 
 Understanding audit logging capabilities positions you to support compliance requirements and respond quickly to security incidents. With the audit log system table, you can track activity, investigate issues, and demonstrate governance controls to stakeholders.
+
+::: zone-end

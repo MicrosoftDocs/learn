@@ -1,10 +1,29 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5a6895d9-b264-4f25-a054-e533c73cd9d1]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8dca13af-6084-412b-ac4d-7c391769c661]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e3c301e1-13bc-4c84-a9b2-e82c1571ac15]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3404841b-a2f1-440d-8f94-abe101227b73]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=051cb3b1-3282-4c0a-b5f7-5eb583f401fe]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b0f5251c-2ebe-4dfc-942f-5e3e4252990c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When you work with Azure Databricks, selecting the right **compute type** directly affects your costs, performance, and operational complexity. Each compute option serves different workload patterns and comes with distinct tradeoffs in startup time, scalability, and management overhead.
 
 Understanding these options helps you match compute resources to your specific needs. You can optimize for fast development cycles, minimize costs for production jobs, or balance both for analytics workloads.
 
 ## Serverless compute
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=5a6895d9-b264-4f25-a054-e533c73cd9d1]
 
 **Serverless compute** is managed entirely by Azure Databricks. You don't provision or configure infrastructure—Azure Databricks automatically allocates and scales resources based on your workload demands. These resources run in **Databricks' Azure subscription, not yours**, which means no virtual machines or networking components appear in your subscription.
 
@@ -33,8 +52,6 @@ You configure the performance mode using the **Performance optimized** toggle in
 
 ## Classic compute
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=8dca13af-6084-412b-ac4d-7c391769c661]
-
 **Classic compute** gives you full control over cluster configuration. You create, size, and manage compute resources that run directly in **your Azure subscription**, giving you visibility and control over the underlying infrastructure.
 
 Classic compute supports two access modes that determine how users interact with the cluster:
@@ -57,8 +74,6 @@ This compute type fits workloads that need features unavailable in serverless, r
 
 ## SQL warehouses
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=e3c301e1-13bc-4c84-a9b2-e82c1571ac15]
-
 **SQL warehouses** are compute resources optimized specifically for SQL queries, analytics, and business intelligence. They come in three types, each with different performance characteristics.
 
 **Serverless SQL warehouses** offer optimal performance and cost efficiency. They start in 2-6 seconds, use Intelligent Workload Management to predict query resource needs, and scale clusters dynamically based on demand. Photon and Predictive IO accelerate query execution. Choose serverless SQL warehouses for most SQL workloads—BI dashboards, ETL jobs, and ad hoc analysis.
@@ -70,8 +85,6 @@ This compute type fits workloads that need features unavailable in serverless, r
 All SQL warehouse types optimize for SQL execution patterns, but serverless offers the most responsive scaling and lowest operational overhead.
 
 ## Instance pools
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=3404841b-a2f1-440d-8f94-abe101227b73]
 
 **Instance pools** maintain a set of idle virtual machine instances ready for immediate use. When you create a cluster from a pool, startup time decreases because Databricks allocates instances from the pool instead of requesting new ones from Azure.
 
@@ -85,8 +98,6 @@ Configure pools with spot instances for worker nodes to reduce costs, but use on
 
 ## Job compute
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=051cb3b1-3282-4c0a-b5f7-5eb583f401fe]
-
 **Job compute** refers to clusters optimized for automated workflows rather than interactive development. You configure job compute through cluster policies that enforce best practices for production workloads.
 
 Job clusters terminate automatically after completing their tasks, preventing unnecessary costs from idle resources. When you configure a job, you choose between serverless and classic job compute. 
@@ -99,8 +110,6 @@ With classic job compute, you can use optimized settings like autoscaling and **
 The Job Compute policy in Azure Databricks offers a template for creating production-ready job clusters with sensible defaults. It enforces the latest LTS (Long Term Support) runtime version and other reliability settings.
 
 ## Compare compute types
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=b0f5251c-2ebe-4dfc-942f-5e3e4252990c]
 
 Different compute types suit different scenarios. The following table compares key characteristics to help you make informed decisions:
 
@@ -140,3 +149,5 @@ Custom virtual networks, on-premises connectivity, or specific instance types re
 For latency-sensitive workloads, serverless compute starts 2-4x faster than classic options. For predictable performance at scale, both serverless and classic can meet requirements, but serverless adapts more dynamically to load variations.
 
 For most scenarios, start with serverless options. They minimize operational overhead, optimize costs through automatic scaling, and provide the fastest development experience. Switch to classic compute only when you encounter a specific limitation that serverless doesn't support.
+
+::: zone-end

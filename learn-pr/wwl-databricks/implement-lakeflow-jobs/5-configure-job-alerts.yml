@@ -2,9 +2,10 @@
 uid: learn.wwl.implement-lakeflow-jobs.configure-job-alerts
 title: Configure job alerts
 metadata:
+  zone_pivot_groups: video-or-text
   title: Configure Job Alerts
   description: Learn how to configure job alerts and notifications in Azure Databricks, including notification events, system destinations, and best practices for avoiding alert fatigue.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

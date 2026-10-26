@@ -2,9 +2,10 @@
 uid: learn.wwl.create-and-organize-objects-in-unity-catalog.create-volumes
 title: Create volumes
 metadata:
+  zone_pivot_groups: video-or-text
   title: Create Volumes
   description: Learn how to create and manage volumes in Unity Catalog to store and govern non-tabular files in cloud object storage.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

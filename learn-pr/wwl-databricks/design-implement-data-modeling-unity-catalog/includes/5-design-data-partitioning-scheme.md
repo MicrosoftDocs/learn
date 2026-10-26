@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=bc55c60e-d4b9-4e0f-b753-08c7077b7a2e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Data partitioning directly affects how efficiently your queries run and how much compute resources you consume. When you partition a table, you divide data into discrete segments based on column values, allowing the query engine to read only relevant portions of your dataset. This approach, called **partition pruning**, can dramatically reduce data scans when filters align with partition boundaries.
 
@@ -152,3 +161,4 @@ Liquid clustering is the **recommended approach** for new tables where partition
 
 For implementation details, syntax, and optimization strategies, refer to the **Design and implement a clustering strategy** unit later in this module.
 
+::: zone-end

@@ -2,9 +2,10 @@
 uid: learn.wwl.secure-unity-catalog-objects.access-azure-key-vault
 title: Access Azure Key Vault secrets
 metadata:
+  zone_pivot_groups: video-or-text
   title: Access Azure Key Vault Secrets
   description: "Learn how to securely access Azure Key Vault secrets in Azure Databricks workflows using Key Vault-backed secret scopes."
-  ms.date: 10/12/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

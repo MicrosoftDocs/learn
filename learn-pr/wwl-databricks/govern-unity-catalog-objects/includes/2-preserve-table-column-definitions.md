@@ -1,8 +1,19 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4dcfda01-41a5-403a-a5ad-badfd736e74c]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7f00114e-2681-48ea-a6dc-f59b73cf6d01]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 **Well-documented table** and **column definitions** are the foundation of effective data governance. When you create and preserve comprehensive **metadata** for your data assets, you enable data consumers to discover, understand, and trust the data they need. This becomes especially important as AI-driven data discovery tools rely on high-quality metadata to surface relevant information.
 
 In this unit, you learn how to create tables with descriptive comments and tags, and use discovery tools to explore your data assets in Unity Catalog.
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=4dcfda01-41a5-403a-a5ad-badfd736e74c]
 
 ## Add comments to tables and columns
 
@@ -73,8 +84,6 @@ To add or edit comments on a view or materialized view, you must be the owner of
 
 **Tags** are key-value pairs that help you organize and categorize data assets in Unity Catalog. Unlike comments, which provide descriptive text, tags enable structured classification and improve search functionality.
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=7f00114e-2681-48ea-a6dc-f59b73cf6d01]
-    
 ### Add tags using SQL
 
 Use the `ALTER` command with `SET TAGS` to apply tags:
@@ -173,3 +182,5 @@ For tables with defined foreign keys, select **View relationships** in Catalog E
 AI-powered discovery tools like **AI/BI Genie** use your table comments and tags to provide natural language search and question answering. High-quality metadata directly improves the accuracy of AI-assisted data exploration.
 
 Maintaining comprehensive table and column definitions is an ongoing responsibility. As your data evolves, update your comments and tags to keep them accurate. This investment in metadata quality pays dividends through improved discoverability, governance compliance, and AI-readiness.
+
+::: zone-end

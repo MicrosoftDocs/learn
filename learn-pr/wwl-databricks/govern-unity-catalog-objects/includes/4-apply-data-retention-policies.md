@@ -1,4 +1,15 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=a3b03ec4-23e8-4ed5-9928-fd65d021e7ca]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8954bdc7-532d-4d10-8a73-826a09dafb32]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Every organization faces the challenge of balancing data availability with compliance requirements and storage costs. When you implement **data retention policies** in Azure Databricks, you ensure that data is kept only as long as necessary while remaining accessible for legitimate business needs. This becomes especially critical when regulations require you to delete personal data upon request.
 
@@ -130,8 +141,6 @@ You can monitor predictive optimization operations through the system table `sys
 
 ## Integrate with Azure Storage lifecycle policies
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=8954bdc7-532d-4d10-8a73-826a09dafb32]
-
 For data stored in Azure Blob Storage, you can complement Delta Lake retention with **Azure Storage lifecycle management policies**. These policies automatically transition data to cooler storage tiers or delete blobs based on access patterns and age.
 
 Consider using Azure lifecycle policies to:
@@ -185,3 +194,5 @@ To overcome these challenges and implement a cost-effective archival strategy:
     ```
 
 Implementing data retention policies requires ongoing attention as business requirements and regulations evolve. Establish clear processes for reviewing and updating your retention settings, and document your compliance procedures so your team can respond quickly to deletion requests.
+
+::: zone-end

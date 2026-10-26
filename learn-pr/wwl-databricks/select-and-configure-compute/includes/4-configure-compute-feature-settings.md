@@ -1,8 +1,17 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b0d7b320-44d9-43cd-b7fd-f56b2bdf17fd]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Compute features determine the functional capabilities available to your workloads. Unlike performance settings that tune resource allocation, feature settings enable specific technologies and runtime environments. Selecting appropriate features ensures your compute resource supports your workload requirements while maximizing efficiency.
 
 ## Enable Photon acceleration
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=b0d7b320-44d9-43cd-b7fd-f56b2bdf17fd]
 
 **Photon** is a query execution engine that replaces traditional Spark components with optimized native code. When you enable Photon, your compute resource uses this accelerated engine for SQL queries and DataFrame operations.
 
@@ -37,3 +46,5 @@ When you configure compute for machine learning, start by selecting a **Databric
 ![Screenshot of Azure Databricks runtime version dropdown menu displaying machine learning runtimes.](../media/machine-learning-runtime.png)
 
 **GPU instances** enable training of deep learning models that would be impractical on CPU-only compute. Models involving image recognition, natural language processing, or neural networks benefit significantly from GPU acceleration. With GPU-enabled instances, operations that would take hours on CPUs complete in minutes. Keep in mind that **Photon must be disabled when using GPU instances**, as these features aren't compatible.
+
+::: zone-end

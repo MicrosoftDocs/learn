@@ -2,9 +2,10 @@
 uid: learn.wwl.design-implement-data-pipelines.choose-notebook-vs-lakeflow-pipelines
 title: Choose notebook vs Lakeflow Pipelines
 metadata:
+  zone_pivot_groups: video-or-text
   title: Choose Notebook vs Lakeflow Pipelines
   description: Learn how to choose between notebooks and Lakeflow pipelines for building data pipelines in Azure Databricks, comparing flexibility, maintainability, and use cases.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

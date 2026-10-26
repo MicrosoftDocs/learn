@@ -3,7 +3,7 @@ uid: learn.wwl.design-implement-data-pipelines
 metadata:
   title: Design and Implement Data Pipelines with Azure Databricks
   description: Learn how to design and implement robust data pipelines using Lakehouse architecture principles, medallion architecture, and Lakeflow pipelines in Azure Databricks.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

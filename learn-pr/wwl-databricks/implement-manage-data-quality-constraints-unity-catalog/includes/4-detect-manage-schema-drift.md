@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=7d89f504-412f-45b5-b9cb-e93fb320a73f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Data pipelines often receive data from sources that evolve over time. New columns appear, others disappear, and the structure of incoming data changes as business requirements shift. Without proper controls, these changes can silently corrupt your data or break your pipelines entirely.
 
@@ -199,3 +208,5 @@ Test schema handling in development. Before deploying pipelines to production, v
 Consider the tradeoffs between strictness and flexibility. Strict schema enforcement catches problems early but requires more maintenance. Flexible approaches like schema evolution reduce operational overhead but might allow unexpected changes.
 
 With these strategies in place, your data pipelines can maintain data quality while adapting to the inevitable changes in your source systems.
+
+::: zone-end

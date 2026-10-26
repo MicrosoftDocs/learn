@@ -2,9 +2,10 @@
 uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog.resolve-duplicate-missing-null-values
 title: Resolve duplicates and nulls
 metadata:
+  zone_pivot_groups: video-or-text
   title: Resolve Duplicates and Nulls
   description: Learn how to identify and resolve duplicate records and handle null or missing values in Azure Databricks using SQL and PySpark approaches.
-  ms.date: 10/12/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

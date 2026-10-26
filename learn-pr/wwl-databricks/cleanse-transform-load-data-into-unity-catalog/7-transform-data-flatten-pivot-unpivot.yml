@@ -2,9 +2,10 @@
 uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-denormalize-pivot-unpivot
 title: Transform data with denormalization and pivots
 metadata:
+  zone_pivot_groups: video-or-text
   title: Transform Data With Denormalization and Pivots
   description: Learn how to denormalize data for faster queries, pivot rows into columns for cross-tabular analysis, and unpivot columns into rows in Azure Databricks.
-  ms.date: 10/12/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

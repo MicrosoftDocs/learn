@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=deb0ae82-1885-423d-8b95-1fe8b2d61ac7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Choosing the right data type for each column directly affects your data quality, storage efficiency, and query performance. When you select an inappropriate type, you risk losing precision, wasting storage space, or blocking operations that require specific type characteristics. In this unit, you learn how to evaluate your data and select the most appropriate column types in Azure Databricks.
 
@@ -193,3 +202,5 @@ FROM staging_table;
 **Use explicit casts when converting types.** Implicit conversions can succeed silently even when data is lost. Explicit casts make your intentions clear and help identify problems during testing.
 
 These practices help you build pipelines where data types serve as a form of documentation and validation, catching errors early rather than letting them affect downstream analytics.
+
+::: zone-end

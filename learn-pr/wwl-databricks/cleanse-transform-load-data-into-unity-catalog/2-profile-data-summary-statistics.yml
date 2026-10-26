@@ -2,9 +2,10 @@
 uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog.profile-data-summary-statistics
 title: Profile data
 metadata:
+  zone_pivot_groups: video-or-text
   title: Profile Data
   description: Learn how to profile data to generate summary statistics and assess data distributions in Azure Databricks using SQL commands and the data profiling feature.
-  ms.date: 10/12/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

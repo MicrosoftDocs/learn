@@ -1,6 +1,15 @@
-As a data engineer working with Azure Databricks, you often need to access data stored in Azure Data Lake Storage or other cloud storage services. Service principals provide a secure, automated way to authenticate these data access requests without using personal credentials.
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=010c0d72-1c44-481c-badd-755d32322f94]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
+As a data engineer working with Azure Databricks, you often need to access data stored in Azure Data Lake Storage or other cloud storage services. Service principals provide a secure, automated way to authenticate these data access requests without using personal credentials.
 
 ## Understanding service principals for data access
 
@@ -89,3 +98,5 @@ When working with service principals for data access, several security practices
 **Apply the principle of least privilege**. Each service principal should have access only to the specific storage locations and data it needs. If a service principal is compromised, limited permissions reduce the potential impact. When requesting access, specify exactly which storage accounts and containers you need rather than requesting broad permissions.
 
 Managed identities offer a more streamlined approach to authenticating data access. The next unit explains how managed identities eliminate many of the challenges associated with service principals while simplifying operations.
+
+::: zone-end

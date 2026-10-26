@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=0f312bb1-11ec-45f9-bd5a-d48888191353]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 When a Lakeflow Job fails, you must quickly identify the problem, understand the root cause, and take corrective action. Navigating failures efficiently keeps your pipelines running and your downstream consumers satisfied.
 
@@ -91,3 +100,5 @@ Reactive troubleshooting works, but proactive monitoring prevents many failures 
 - **Use system tables**: If an account admin enables the `system.lakeflow` schema, query it to analyze job performance across your account and identify trends before they become critical issues.
 
 Combining proactive monitoring with efficient troubleshooting skills helps you maintain reliable data pipelines that your organization can depend on.
+
+::: zone-end

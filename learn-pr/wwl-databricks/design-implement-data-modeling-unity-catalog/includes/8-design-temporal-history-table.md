@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=feaee633-42d4-4b4c-9c9a-6fd1a3d451b1]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Data pipelines often require tracking not just current values, but every change that occurs over time. Temporal tables provide a mechanism for recording row-level changes automatically, enabling point-in-time queries and complete audit trails. Unlike slowly changing dimensions that focus on business data history, temporal tables capture technical history for operational traceability and debugging.
 
@@ -145,3 +154,5 @@ Both properties must be set together. The `logRetentionDuration` controls how lo
 Longer retention periods increase storage costs but provide extended time travel access and change data feed availability for auditing.
 
 With temporal tables configured properly, you can trace every change to your data from ingestion through transformation, supporting both operational debugging and regulatory compliance requirements.
+
+::: zone-end

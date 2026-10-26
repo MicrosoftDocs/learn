@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=5c876d18-dc54-41e5-a8db-12a6e0b7fd41]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Attribute-based access control (ABAC) provides a flexible, scalable approach to data governance in Unity Catalog. Instead of managing individual permissions for every table and user combination, you define policies based on attributes. When you tag data assets with meaningful classifications, ABAC policies automatically enforce the right access controls.
 
@@ -160,3 +169,5 @@ Only one row filter can apply to any given table, and only one column mask can a
 > You must use Databricks Runtime 16.4 or above, or serverless compute, to access tables secured by ABAC policies. Queries from older runtimes fail unless the principal is listed in the `EXCEPT` clause of every policy that applies to the table.
 
 When you configure ABAC effectively, you create a governance model that scales with your organization. Adding the appropriate governed tag to a new table immediately brings it under the protection of existing policies, without requiring additional configuration.
+
+::: zone-end

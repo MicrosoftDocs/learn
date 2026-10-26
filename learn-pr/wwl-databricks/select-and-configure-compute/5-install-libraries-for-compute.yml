@@ -2,9 +2,10 @@
 uid: learn.wwl.select-and-configure-compute.install-libraries-for-compute
 title: Install libraries for compute
 metadata:
+  zone_pivot_groups: video-or-text
   title: Install Libraries for Compute
   description: Learn how to install libraries on Azure Databricks compute resources using package repositories, workspace files, Unity Catalog volumes, and init scripts.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
