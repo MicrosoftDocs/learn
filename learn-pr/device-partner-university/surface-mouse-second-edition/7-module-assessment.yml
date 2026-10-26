@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-mouse-second-edition.module-assessment
+title: Module assessment
+metadata:
+  module_assessment: true
+  title: Module Assessment
+  description: This content is part of the "Explore interaction experiences with Surface Mouse (2nd Edition)" module.
+  ms.date: 10/26/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "An IT administrator prepares a Surface device at a desk and then moves to a shared workspace to validate the setup on another PC. Which Surface Mouse (2nd Edition) capabilities are most relevant to this workflow?"
+    choices:
+        - content: "Multi-host connectivity and the compact form factor"
+          isCorrect: true
+          explanation: ""
+        - content: "Haptic feedback and quiet switches"
+          isCorrect: false
+          explanation: ""
+        - content: "The mechanical scroll wheel and Copilot Voice"
+          isCorrect: false
+          explanation: ""
+        - content: "Image alignment feedback and Click to Do"
+          isCorrect: false
+          explanation: ""
+  - content: "Which action opens Click to Do by default when it's available?"
+    choices:
+        - content: "Press the pairing button once"
+          isCorrect: false
+          explanation: ""
+        - content: "Press the action button twice"
+          isCorrect: true
+          explanation: ""
+        - content: "Press and hold the action button"
+          isCorrect: false
+          explanation: ""
+        - content: "Adjust the Signal intensity slider"
+          isCorrect: false
+          explanation: ""
+  - content: "A content creator is arranging images in a PowerPoint presentation. How can integrated haptic feedback support this task?"
+    choices:
+        - content: "It automatically places each image in the correct location."
+          isCorrect: false
+          explanation: ""
+        - content: "It replaces the visual alignment information displayed in PowerPoint."
+          isCorrect: false
+          explanation: ""
+        - content: "It provides tactile cues at supported alignment or rotation points."
+          isCorrect: true
+          explanation: ""
+        - content: "It opens Snipping Tool when an image reaches an alignment point."
+          isCorrect: false
+          explanation: ""
+  - content: "A previously used connection slot needs to be paired with a new device. What should the user do?"
+    choices:
+        - content: "Press the action button twice."
+          isCorrect: false
+          explanation: ""
+        - content: "Wait for the pairing light to blink quickly."
+          isCorrect: false
+          explanation: ""
+        - content: "Open Haptic signals and adjust the Signal intensity slider."
+          isCorrect: false
+          explanation: ""
+        - content: "Press and hold the pairing button for three seconds or more."
+          isCorrect: true
+          explanation: ""
+  - content: "Which approach should a user take when deciding which Surface Mouse (2nd Edition) capability best fits their workflow?"
+    choices:
+        - content: "Enable multi-host connectivity before considering the task."
+          isCorrect: false
+          explanation: ""
+        - content: "Choose haptic feedback as the primary capability for every workflow."
+          isCorrect: false
+          explanation: ""
+        - content: "Customize every available feature before identifying a regular task."
+          isCorrect: false
+          explanation: ""
+        - content: "Start with a task performed frequently, then identify the mouse capability that relates to that task."
+          isCorrect: true
+          explanation: ""

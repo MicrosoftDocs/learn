@@ -3,11 +3,11 @@ uid: learn.secure-azure-resources-with-rbac.2-rbac-overview
 title: What is Azure RBAC?
 metadata:
   unitType: learning-content
-  title: What is Azure RBAC?
+  title: What Is Azure RBAC?
   description: Learn what Azure role-based access control (Azure RBAC) is and how it works.
-  ms.date: 09/19/2024
-  author: rolyon
-  ms.author: rolyon
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 8
 content: |

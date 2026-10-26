@@ -3,49 +3,70 @@ uid: learn.azure.deploy-elastic-azure-virtual-machines.knowledge-check
 title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Module assessment
-  description: "This unit checks user's understanding of the content in the module for deploying Elastic on Azure virtual machines."
-  ms.date: 08/02/2024
-  author: yenchiho
-  ms.author: yenchiho
+  title: Module Assessment
+  description: "This unit checks your understanding of deploying Elastic on Azure virtual machines."
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: What is the Elasticsearch (self-managed) template?
+  - content: Which approach retains control of the guest OS and underlying Azure VMs?
     choices:
-    - content: An Azure Marketplace template used for deploying Elastic on Azure VMs using best practices.
+    - content: Provision VMs in your subscription and install/manage supported Elastic packages on them.
       isCorrect: true
-      explanation: The template guides you through the deployment process using best practices.
-    - content: A data visualization tool.
+      explanation: Self-managed deployment retains customer responsibility for the guest OS and stack; Elastic Cloud is Elastic-operated infrastructure.
+    - content: A linked Azure Native Elastic resource gives you the service's underlying VMs.
       isCorrect: false
-      explanation: Kibana is Elastic’s data visualization tool that is part of the Elastic Stack.
-    - content: A template for deploying Elastic on-premises.
+      explanation: The integration resource does not transfer control of Elastic's backing infrastructure.
+    - content: Selecting an Azure subscription always places the managed Elasticsearch deployment in your tenant.
       isCorrect: false
-      explanation: The template is for deploying Elastic on Azure VMs.
-  - content: What is the recommended number of Elasticsearch nodes to start with, if you’re not sure where to start? 
+      explanation: The managed service's Elasticsearch deployment is outside the customer's Azure tenant.
+  - content: What is a recommended starting number of nodes for a small production Elasticsearch cluster?
     choices:
     - content: One
       isCorrect: false
-      explanation: While a single-node cluster may be sufficient, a three-nodes cluster is recommended.
+      explanation: A single-node cluster cannot tolerate a node failure. Three nodes are a reasonable small production starting point.
     - content: Three
       isCorrect: true
-      explanation: A three-node cluster is recommended when starting and you can always adjust this number later.
+      explanation: The three nodes can be both data and master-eligible. Allocated replicas and resilient client routing are also required; three dedicated master-only nodes are not required for this small cluster.
     - content: "Sixty"
       isCorrect: false
-      explanation: A three-node cluster is recommended when starting and you can always adjust this number later.
-  - content: What is the final step to deploy Elastic on Azure VMs?
+      explanation: Size the cluster for the workload. Three nodes are a reasonable small production starting point; sixty is not a general requirement.
+  - content: What confirms that the exercise produced a functioning Elasticsearch cluster?
     choices:
-    - content: Enter the Basics.
+    - content: The Azure portal's review page is displayed.
       isCorrect: false
-      explanation: This is the first step in the process.
-    - content: Add Kibana & Logstash.
+      explanation: Review is followed by Create and resource provisioning.
+    - content: All VMs report that their Azure deployment succeeded.
       isCorrect: false
-      explanation: This is an optional step in the process.
-    - content: Select Review and create.
+      explanation: VM deployment status does not prove Elasticsearch configuration or cluster health.
+    - content: Authenticated HTTPS checks show the expected cluster and three nodes, and a synthetic document can be indexed and retrieved.
       isCorrect: true
-      explanation: This is the final step in deploying Elastic on Azure VMs.
-  
+      explanation: Infrastructure provisioning alone does not verify application membership, security, or data access; also inspect the health and replica checks described in the exercise.
+  - content: What does Elasticsearch security auto-configuration provide for browser access to Kibana?
+    choices:
+    - content: It automatically installs a trusted browser HTTPS certificate on Kibana.
+      isCorrect: false
+      explanation: Elasticsearch HTTP and transport TLS do not configure Kibana's browser-facing server certificate.
+    - content: Kibana browser HTTPS must be configured separately with a matching server certificate and a trusted issuing CA.
+      isCorrect: true
+      explanation: Browser-to-Kibana TLS and Kibana-to-Elasticsearch TLS are separate connections with separate trust requirements.
+    - content: A private IP address removes the need for HTTPS.
+      isCorrect: false
+      explanation: Network restriction does not encrypt traffic or replace certificate validation.
+  - content: How should you finish the disposable VM exercise?
+    choices:
+    - content: Stop Elasticsearch and leave the VMs running.
+      isCorrect: false
+      explanation: Stopping an application does not stop VM or retained-resource charges.
+    - content: Delete the exercise-only resource group, check for remaining lab resources, and remove temporary workstation keys and lab CA trust.
+      isCorrect: true
+      explanation: Cloud resource deletion does not remove workstation files or certificate trust; shared resources and organizational trust anchors must be preserved.
+    - content: Delete every resource in the subscription.
+      isCorrect: false
+      explanation: Cleanup must be limited to disposable lab resources, not unrelated or shared infrastructure.
 

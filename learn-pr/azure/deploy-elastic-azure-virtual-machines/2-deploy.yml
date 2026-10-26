@@ -3,13 +3,13 @@ uid: learn.azure.deploy-elastic-azure-virtual-machines.deploy
 title: Deploy Elastic on Azure virtual machines
 metadata:
   unitType: learning-content
-  title: Deploy Elastic on Azure virtual machines
+  title: Deploy Elastic on Azure Virtual Machines
   description: "This unit describes the steps for deploying Elastic on Azure virtual machines."
-  ms.date: 08/02/2024
-  author: yenchiho
-  ms.author: yenchiho
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 15
 content: |
   [!include[](includes/2-deploy.md)]
 

@@ -1,23 +1,26 @@
 ### YamlMime:Module
 uid: learn.aks-governance-azure-policy
 metadata:
-  title: Azure Kubernetes Services Governance with Azure Policy
+  title: Azure Kubernetes Service Governance with Azure Policy
   description: In this module, we discuss how to use Azure Policy for Kubernetes to enforce rules and detect noncompliance in AKS clusters.
-  ms.date: 04/22/2024
-  author: mosabami
-  ms.author: aayodeji
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: azure-kubernetes-service
-title: Azure Kubernetes Services Governance with Azure Policy
+title: Azure Kubernetes Service governance with Azure Policy
 summary: >
   To improve operational governance of your Azure Kubernetes Service (AKS) cluster, you can apply and enforce built-in policies on your cluster using Azure Policy. Learn how to govern your AKS clusters using Azure Policy for Kubernetes.
 abstract: | 
   By the end of this module, you're able to:
-  - Deploy the Azure Policy and Azure Monitor add-on for Azure Kubernetes Service.
+
+  - Deploy the Azure Policy add-on for Azure Kubernetes Service.
   - Use Azure Policy to enforce rules and manage compliance state of your Azure Kubernetes Service cluster.
   - Monitor cluster compliance status using Azure Policy.
-  - Run queries to see runtime operation of policies in AKS clusters.
+  - Inspect policy violations and diagnose admission denials in AKS.
 prerequisites: |
+  Before you begin, make sure you have:
+
   - A basic understanding of Azure Kubernetes Service concepts such as Kubernetes API, clusters, and pods.
   - Access to an Azure subscription. 
   - Knowledge of how to deploy a running instance of an AKS cluster.
@@ -28,8 +31,8 @@ levels:
 roles:
 - administrator
 - auditor
-- devops-engineer	
-- solution-architect	
+- devops-engineer
+- solution-architect
 products:
 - azure-kubernetes-service
 - azure-policy

@@ -2,11 +2,11 @@
 uid: learn.aks-governance-azure-policy.introduction
 title: Introduction
 metadata:
-  title: Introduction to Azure Kubernetes Services governance with Azure Policy
+  title: Introduction to Azure Kubernetes Service Governance with Azure Policy
   description: Introduction
-  ms.date: 04/22/2024
-  author: NillsF
-  ms.author: nilfran
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 3
 content: | 

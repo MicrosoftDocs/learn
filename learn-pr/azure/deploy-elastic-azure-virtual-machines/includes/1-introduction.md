@@ -6,8 +6,18 @@ Imagine that you work for a startup retailer that uses Elastic on-premises to ma
 
 ## What will we do?
 
-Through the course of this module, we discuss the steps and considerations for migrating an Elastic workload to an Azure VM. The exercises require a pay-as-you-go Azure subscription, and may incur a nominal fee. To keep costs low, you can either sign up for a free trial or set the VM to the smallest size. Be sure to take it down when the exercise is over.
+This intermediate module prepares a new self-managed Elastic deployment on Azure VMs; migrating existing application data is a separate task. The exercise uses three Elasticsearch nodes and one Kibana VM, Ubuntu Server 24.04 LTS, and matching Elastic 9.5.5 packages. You configure private networking, enroll the nodes, enable browser HTTPS, and verify a synthetic document and its replica.
 
-## What is the main goal?
+You need an Azure subscription with permission and quota for the four VMs, persistent disks, and networking. You also need Linux administration and SSH skills, an approved routed administrator connection to the private lab network, and permission to use an approved server certificate or a temporary lab CA. Establish these prerequisites before the exercise; it doesn't build a VPN or configure corporate certificate policy for you.
 
-By the end of this module, you're able to deploy Elastic on Azure VMs.
+> [!IMPORTANT]
+> Estimate the cost of all exercise resources before creating them, including three Elasticsearch VMs, a Kibana VM, disks, outbound connectivity, and administrator network access. Costs vary by region, size, and runtime; this exercise isn't guaranteed to be free and doesn't provide a sandbox. Any Azure trial credit is subject to its eligibility and spending limits. After the exercise, delete the dedicated lab resources and remove temporary workstation certificates and keys.
+
+## What's the main goal?
+
+By the end of this module, you're able to:
+
+- Distinguish self-managed Azure VMs from the Elastic-operated managed-service alternative.
+- Deploy a private, three-node Elasticsearch cluster and enroll Kibana.
+- Configure trusted HTTPS and verify cluster membership, document access, and replica allocation.
+- Clean up lab resources without deleting shared infrastructure.

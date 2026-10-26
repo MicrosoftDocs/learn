@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-governance-azure-policy.azure-policy-integration-with-aks
-title: Azure Policy and how it integrates with Azure Kubernetes Services
+title: Azure Policy and how it integrates with Azure Kubernetes Service
 metadata:
-  title: Azure Policy and how it integrates with Azure Kubernetes Services
-  description: Introduction to Azure Policy and how Azure Policy integrates with Azure Kubernetes Services.
-  ms.date: 04/22/2024
-  author: NillsF
-  ms.author: nilfran
+  title: Azure Policy and How It Integrates with Azure Kubernetes Service
+  description: Introduction to Azure Policy and how Azure Policy integrates with Azure Kubernetes Service.
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 10
 content: | 
@@ -23,10 +23,10 @@ quiz:
           explanation: "A policy initiative is a way to group multiple policies together. It isn't a way to assign a policy to a scope."
         - content: "Assign the policy to the Entra tenant."
           isCorrect: false
-          explanation: "Azure policies can't be assigned to an Entra tenant. Azure policies can be assigned to management groups, subscriptions, and resource groups."
+          explanation: "Azure policies can't be assigned to an Entra tenant. Azure policies can be assigned to management groups, subscriptions, resource groups, and individual Azure resources."
     - content: "How can you use Azure to ensure that all pods created in your Kubernetes cluster have requests and limits configured, and deny pods without those configurations from being created?"
       choices:
-        - content: "Use helm to create new pods in the cluster."
+        - content: "Use Helm to create new pods in the cluster."
           isCorrect: false
           explanation: "Helm is a tool to package applications in Kubernetes. It doesn't block resources being created on a cluster."
         - content: "Assign an Azure policy to the resource group of the Kubernetes cluster."
@@ -40,9 +40,9 @@ quiz:
           explanation: "RBAC in Kubernetes defines who can execute certain actions in the cluster. It doesn't inspect the resources being created and doesn't check policy."
     - content: "You assign the policy 'Kubernetes cluster containers should only use allowed images' to the resource group of your Kubernetes cluster. What happens to existing pods not using allowed images?"
       choices:
-        - content: "Azure policy deletes the incompliant pods."
+        - content: "Azure Policy deletes the noncompliant pods."
           isCorrect: false
-          explanation: "Azure policy doesn't delete incompliant resources. It denies new incompliant pods."
-        - content: "The pods are marked as incompliant in Azure policy."
+          explanation: "Azure Policy doesn't delete noncompliant resources. It denies new noncompliant pods."
+        - content: "The pods are marked as noncompliant in Azure Policy."
           isCorrect: true
-          explanation: "Azure policy reports incompliant pods and denies new incompliant pods from being created."
+          explanation: "Azure Policy reports noncompliant pods and denies new noncompliant pods from being created."
