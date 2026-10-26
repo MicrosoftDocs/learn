@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=84b7d1b3-8141-4f54-953e-4518c102f199]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A dataset is a collection of data that is organized in rows and columns, often referred to as a table. Rows are also known as records, and columns as fields. Data points make up the fields in a dataset that usually comprise different types of data:
 
 - **Temporal data** - Temporal data are dates held against an event, such as when an order was placed, or a package was shipped. Dates have a natural order, and we know that 12/24/2021 comes before 12/25/2021, and after 12/23/2021. Because of this natural order, it's easy to measure values over time.
@@ -8,6 +19,4 @@ A dataset is a collection of data that is organized in rows and columns, often r
 
 It's important that you understand the data in your dataset before analyzing it. You can then choose the correct analytical functions to apply to the types of data you're working with.
 
-In this video, you see an example of a dataset and how the different types of date, string, and numeric fields combine into rows and columns. You learn how analysis can be done on a dataset to understand patterns within the data:
-
-> [!VIDEO 032a24f6-573c-45c3-b93c-35ecd04180c2]
+::: zone-end

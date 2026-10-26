@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=48cf05d9-99c1-46f2-9509-da15c29a859f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 ## Data systems
 
 Spreadsheets are useful for gathering and visualizing modest-sized datasets, and are an ideal solution when working individually, or collaborating with a small team. You can quickly sort, filter, and aggregate data to share ideas and insights. However, it's likely that your organization has a centralized data processing system for larger datasets, and for sharing data with the wider enterprise.
@@ -10,6 +21,4 @@ Also, accounting departments frequently process invoices and reconcile purchase 
 
 Analytical solutions integrate the data from these systems into a single source that can be used for reporting. You then create reports to inform business decisions, and enlighten stakeholders who monitor key performance indicators (KPIs).
 
-This video shows how data from different areas within an organization can be processed into a central reporting data store:
-
-> [!VIDEO c7aab29e-cb7e-43fe-9f42-f0f45a4e639a]
+::: zone-end
