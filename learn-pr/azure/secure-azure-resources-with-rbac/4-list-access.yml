@@ -3,11 +3,11 @@ uid: learn.secure-azure-resources-with-rbac.4-list-access
 title: Exercise - List access using Azure RBAC and the Azure portal
 metadata:
   unitType: exercise
-  title: Exercise - List access using Azure RBAC and the Azure portal
+  title: Exercise - List Access Using Azure RBAC and the Azure Portal
   description: Exercise - Learn how to list the role assignments for yourself and at different scopes in the Azure portal.
-  ms.date: 09/19/2024
-  author: rolyon
-  ms.author: rolyon
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 8
 content: |

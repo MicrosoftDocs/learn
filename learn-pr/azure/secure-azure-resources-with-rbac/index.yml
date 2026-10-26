@@ -2,23 +2,28 @@
 uid: learn.secure-azure-resources-with-rbac
 metadata:
   moduleType: standard
-  title: Secure your Azure resources with Azure role-based access control (Azure RBAC)
+  title: Secure Your Azure Resources with Azure Role-Based Access Control (Azure RBAC)
   description: Learn how to use Azure role-based access control to effectively manage your team's access to Azure resources.
-  ms.date: 09/19/2024
-  author: rolyon
-  ms.author: rolyon
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: role-based-access-control
 title: Secure your Azure resources with Azure role-based access control (Azure RBAC)
 summary: Learn how to use Azure RBAC to manage access to resources in Azure.
 abstract: |
-  In this module, you will:
+  In this module, you'll:
+
   - Verify access to resources for yourself and others.
   - Grant access to resources.
   - View activity logs of Azure RBAC changes.
 prerequisites: |
-  - An Azure account with an [active subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
+  Before you begin, make sure you have:
+
+  - An Azure account with an active subscription
   - Knowledge of basic Azure concepts, such as the Azure portal and resource groups
+
+  For setup resources, see the More info section in the Summary unit.
 iconUrl: /training/achievements/secure-azure-resources-with-rbac.svg
 levels: 
 - beginner
