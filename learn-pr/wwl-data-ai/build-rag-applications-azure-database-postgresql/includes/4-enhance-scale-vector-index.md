@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c33825f6-888d-438c-a69c-2bd9bd6d2402]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 As your data set grows from hundreds to millions of rows, fast retrieval becomes a hard requirement. Without optimization, a similarity search scans the entire table, which raises latency and hurts the user experience. A *vector index* reduces the work by directing the database to the most promising rows first, so queries return faster. *Azure Database for PostgreSQL* supports vector indexes through the `pgvector` and `pg_diskann` extensions. In a Retrieval Augmentation Generation (RAG) solution, store each item's embedding in a *vector column* on the same row as its related fields, then index that column. That index is the *vector index*.
 
 > [!TIP]
@@ -108,3 +119,5 @@ LIMIT 5;
 ## Key takeaways
 
 As your tables grow, you need a vector index so retrieval stays fast. Store each embedding in a `vector` column on the same row as its data and index that column using `pgvector` or `pg_diskann`. Choose `IVFFlat` for simple, lower-memory builds, `HNSW` when you want stronger in-memory query performance, and `DiskANN` when the data is very large or memory is tight. At query time, match the operator class to the distance used in your query so the planner can use the index. Begin with defaults and make small, measured adjustments to query-time parameters (`ivfflat.probes`, `hnsw.ef_search`, `diskann.l_value_is`) if obvious matches are missing or speed needs improvement. After any change, run the same queries with `EXPLAIN (ANALYZE, VERBOSE, BUFFERS)` and check that the plan uses the index, execution time drops, I/O goes down, and the top results still look correct.
+
+::: zone-end

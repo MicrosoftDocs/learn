@@ -1,8 +1,19 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d04c670e-3206-42e3-ab24-667eee3eed4d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Now that the database is ready with embeddings and vector indexes, it’s time to turn retrieval into a working application. The goal is simple: take a user question, retrieve the most relevant chunks from PostgreSQL, and generate an answer grounded in those chunks using *Azure OpenAI* through *LangChain*.
 
 In this unit, you learn the basics of building a RAG application in *Python*. The application connects to the database, runs a similarity search on the database, and passes the search results to a model with clear instructions to avoid hallucinations. Since the model receives a well defined context based on the database data, it can generate more accurate and relevant answers grounded in that context.
 
-## Retrieval-Augmented Generation with PostgreSQL and LangChain
+## Retrieval-augmented generation with PostgreSQL and LangChain
 
 Remember from our previous units, the RAG flow is a set of steps that combines retrieval and generation. Let’s break it down:
 
@@ -141,3 +152,5 @@ In this example, you retrieve the relevant chunks from the database and use them
 A practical RAG application takes a user question, creates an embedding in SQL, uses a vector index to fetch the closest passages in the database, and hands only that context to the model. To reduce hallucination, the model is also instructed to stay within the provided context and admit when information is missing. Keep the connections short-lived, parameterize queries, and pass secrets through environment variables. Use a low temperature for factual answers and include lightweight citations (titles or IDs) so responses are traceable.
 
 You should now have a solid understanding of how to build a Retrieval Augmented Generation (RAG) application using *Azure Database for PostgreSQL* and *Python*. While your RAG application might be much more complex in a real-world scenario, the core principles remain the same.
+
+::: zone-end

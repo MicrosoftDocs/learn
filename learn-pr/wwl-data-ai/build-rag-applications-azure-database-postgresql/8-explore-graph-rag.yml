@@ -2,10 +2,11 @@
 uid: learn.wwl.build-rag-applications-azure-database-postgresql.explore-graphrag
 title: Explore GraphRAG with Azure Database for PostgreSQL
 metadata:
+  zone_pivot_groups: video-or-text
   title: Explore GraphRAG with Azure Database for PostgreSQL
   description: "Explore GraphRAG on PostgreSQL. Retrieve by meaning and relationships, then sort by embedding similarity."
-  ms.date: 08/08/2025
-  author: wwlpublish
+  ms.date: 10/25/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 5

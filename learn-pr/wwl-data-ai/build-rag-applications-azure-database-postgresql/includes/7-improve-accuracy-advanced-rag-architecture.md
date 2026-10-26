@@ -1,6 +1,17 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d69bdfde-1cc2-46dd-b71a-00433fe3a4c9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 So far, the pipeline retrieves relevant chunks and answers based on them. But accuracy can still suffer when queries are ambiguous, chunks are too large, or ranking is weak. This unit explores strategies to improve precision and recall without sacrificing speed. These techniques build on the foundation from earlier units and prepare you for more advanced RAG patterns.
 
-## **Why Accuracy Matters**
+## **Why accuracy matters**
 
 Even when a vector search is used, wrong, or incomplete context leads to fluent but incorrect answers. Users lose trust if the assistant sounds confident but is wrong. Improving accuracy means:
 
@@ -8,7 +19,7 @@ Even when a vector search is used, wrong, or incomplete context leads to fluent 
 - **Smarter retrieval**: Combine multiple signals, not just vector similarity.
 - **Context optimization**: Ensure the model sees the most relevant, diverse evidence.
 
-## Core Strategies
+## Core strategies
 
 There are many strategies to improve accuracy in retrieval-augmented generation (RAG) systems. Let's explore some of the core techniques.
 
@@ -24,7 +35,7 @@ There are many strategies to improve accuracy in retrieval-augmented generation 
 
 Querying for relevant chunks isn't enough. Context matters as well, and these strategies help ensure the model has the right context for each query.
 
-## Advanced Architectures
+## Advanced architectures
 
 While those strategies improve accuracy, they can still struggle with complex queries or large document sets. Advanced architectures build on these foundations to unlock new capabilities. Let's explore a few key approaches.
 
@@ -60,3 +71,5 @@ LIMIT 5;
 ## Key takeaways
 
 Accuracy isn’t just about better models, it’s about better retrieval. Start simple, *good chunking + hybrid search* often delivers big wins. *Advanced patterns* (GraphRAG, hierarchical indexing, agentic workflows) unlock new capabilities for complex environments. It's not just about quick searches, it's about finding the right information efficiently and the methods that can help achieve that.
+
+::: zone-end

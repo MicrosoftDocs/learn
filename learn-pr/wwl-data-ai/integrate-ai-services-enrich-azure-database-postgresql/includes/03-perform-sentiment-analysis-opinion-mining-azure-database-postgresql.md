@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6c8106ba-8426-4ac4-94fc-ee3e1321ee94]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Customer reviews, survey responses, and open text feedback often reveal how people truly feel about a product or service. The challenge is that this information is written in free form, making it difficult to track trends or compare experiences at scale. Without the right tools, valuable signals about satisfaction or dissatisfaction remain buried in lengthy comments.  
 
 Consider *Margie’s Travel*, a company that manages vacation rentals. Guests leave detailed reviews in the booking application, sharing their experiences about the property, host, and overall stay. Some highlight positive details like a scenic view or a friendly welcome, while others mention negatives such as noise or outdated furniture. Reading each review individually is time-consuming, and it’s hard to turn those impressions into clear, actionable insights.  
@@ -33,3 +44,5 @@ For a company like Margie’s Travel, these capabilities turn raw customer comme
 ## Key takeaways
 
 In this unit, you learn how to evaluate text data with sentiment analysis and opinion mining in Azure Database for PostgreSQL. Sentiment analysis identifies the overall tone of reviews, while opinion mining reveals which aspects are praised or criticized. Using these techniques together transforms free-form feedback into clear insights that organizations can act on.  
+
+::: zone-end

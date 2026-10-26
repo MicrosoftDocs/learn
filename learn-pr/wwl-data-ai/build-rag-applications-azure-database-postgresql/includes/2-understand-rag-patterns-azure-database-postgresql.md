@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b6289e37-a5f0-49fa-899f-07f368436c66]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Imagine you’re building an internal assistant that answers employee questions about company policies. A large language model (LLM) can generate fluent responses. However, if it doesn’t have access to your latest company data, the LLM gives outdated or incorrect answers. **Retrieval Augmented Generation (RAG)** solves this issue by combining the reasoning power of an LLM with the accuracy of your own data.
 
 ## Why RAG matters
@@ -8,10 +19,10 @@ LLMs are trained on vast quantities of text but don’t know your organization�
 
 A RAG pipeline consists of several key components that work together to provide accurate and relevant responses. Think of RAG as a sequence of steps working together:
 
-- **Prepare and store content**: Break your documents into smaller chunks and store them for efficient search.
-- **Create embeddings**: Convert your text into numeric vectors that capture meaning, making it possible to find related content even if the wording is different.
-- **Retrieve relevant chunks**: When a user asks a question, the system finds the most similar chunks in your database using vector similarity search.
-- **Generate an answer**: The retrieved chunks are passed usually to an application that calls the language model, which in turn crafts a natural language response from your actual data.
+1. **Prepare and store content**: Break your documents into smaller chunks and store them for efficient search.
+1. **Create embeddings**: Convert your text into numeric vectors that capture meaning, making it possible to find related content even if the wording is different.
+1. **Retrieve relevant chunks**: When a user asks a question, the system finds the most similar chunks in your database using vector similarity search.
+1. **Generate an answer**: The retrieved chunks are passed usually to an application that calls the language model, which in turn crafts a natural language response from your actual data.
 
 So, if, for example, you store your company policies in the database, the RAG pipeline can help retrieve the most relevant policy for your own company instead of generic data that an LLM by itself might provide.
 
@@ -84,3 +95,5 @@ Regardless of the complexity of your own solutions, you use a similar approach t
 ## Key takeaways
 
 *Azure Database for PostgreSQL* can effectively implement RAG patterns by applying its builtin AI and vector search capabilities. The `azure_ai` extension enables seamless integration with Azure OpenAI and Azure AI Services for generating embeddings, creating chat completions, and using semantic operators for tasks such as text generation, information extraction, truth evaluation, and ranking—directly within SQL queries. The `vector` (pgvector) extension facilitates efficient storage and retrieval of embeddings, making it possible to perform similarity searches without the need for a separate vector database. Start small when applying these methods to new scenarios, gradually expanding the scope as you refine your approach in your own environment.
+
+::: zone-end

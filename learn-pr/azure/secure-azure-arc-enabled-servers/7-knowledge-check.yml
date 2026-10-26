@@ -2,18 +2,17 @@
 uid: learn.azure.secure-azure-arc-enabled-servers.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: Check your knowledge about what you learned.
-  ms.date: 09/23/2025
-  author: aurnovcy
-  ms.author: aurnovc
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 5
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
   questions:
   - content: "Which of the following security services can you not use with Azure Arc-enabled servers?"
     choices:
@@ -57,18 +56,17 @@ quiz:
     - content: "Microsoft Defender for Containers"
       explanation: "Incorrect, Microsoft Defender for Containers offers enhanced security for your hybrid and multicloud Kubernetes clusters."
       isCorrect: false
-  - content: "Which of the following should you deploy to your Azure Arc-enabled server before onboarding to Microsoft Sentinel?"
+  - content: "Which agent is used by the Windows Security Events via AMA connector to collect events from an Azure Arc-enabled Windows server?"
     choices:
     - content: "Azure Policy"
-      explanation: "Incorrect, Azure Policy can be used, but it isn't required to onboard to Microsoft Sentinel."
+      explanation: "Incorrect. Azure Policy can deploy and configure collection resources at scale, but it isn't the event-collection agent."
       isCorrect: false
     - content: "Azure Automation"
-      explanation: "Incorrect, Azure Automation can be used, but it isn't required to onboard to Microsoft Sentinel."
+      explanation: "Incorrect. Azure Automation can automate deployment tasks, but it isn't the event-collection agent."
       isCorrect: false
     - content: "Azure Monitor Agent"
-      explanation: "Correct, the Azure Arc-enabled server must have the Azure Monitor Agent in order to onboard to Microsoft Sentinel."
+      explanation: "Correct. Azure Monitor Agent collects the events selected by a data collection rule associated with the server and sends them to the configured workspace."
       isCorrect: true
     - content: "Azure Function"
-      explanation: "Incorrect, Azure Functions can be used, but it isn't required to onboard to Microsoft Sentinel."
+      explanation: "Incorrect. An Azure Function isn't the agent used by this connector."
       isCorrect: false
-
