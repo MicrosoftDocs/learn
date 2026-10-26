@@ -2,9 +2,10 @@
 uid: learn.wwl.implement-manage-data-quality-constraints-unity-catalog.implement-data-type-checks
 title: Implement data type checks
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement Data Type Checks
   description: Learn how to implement data type checks in Azure Databricks using schema enforcement, explicit casting, constraints, and pipeline expectations to validate data quality.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

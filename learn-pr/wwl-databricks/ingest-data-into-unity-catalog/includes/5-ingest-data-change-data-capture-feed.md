@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=c8ea60fe-4361-4f31-bfe0-754fe56a1936]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 When source systems generate millions of transactions daily, reloading entire tables becomes impractical. You need a way to capture only the changes—inserts, updates, and deletes—and apply them efficiently to your destination tables. This pattern, known as change data capture (CDC), forms the foundation of modern incremental data pipelines.
 
@@ -116,3 +125,5 @@ When two updates arrive for the same key, the API compares their sequence values
 :::image type="content" source="../media/5-handle-out-of-order-events.png" alt-text="Diagram explaining handling out-of-order events." border="false" lightbox="../media/5-handle-out-of-order-events.png":::
 
 Without this built-in handling, you would need to write complex merge logic that checks timestamps, compares versions, and conditionally applies updates. The AUTO CDC API encapsulates all this logic, letting you focus on your business requirements rather than edge case handling.
+
+::: zone-end

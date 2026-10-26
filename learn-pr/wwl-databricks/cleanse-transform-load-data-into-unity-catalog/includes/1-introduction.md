@@ -1,4 +1,10 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=6c2b1291-d084-4710-8733-bb5607a51560]
+
+::: zone-end
+
+::: zone pivot="text"
 
 Raw data rarely arrives in a format ready for analysis. Missing values, duplicate records, inconsistent data types, and poorly structured datasets are common challenges that data engineers must address before data can deliver business value. Without proper cleansing and transformation, analytics results become unreliable and downstream processes fail. **Unity Catalog** in Azure Databricks provides the governance foundation for managing transformed data assets throughout this process.
 
@@ -7,3 +13,8 @@ Azure Databricks offers a toolkit for data quality and transformation work. **Da
 Beyond basic transformations, you work with advanced reshaping techniques. **Denormalization** flattens related tables for faster query performance. **Pivoting** rotates row values into columns for cross-tabular analysis, while **unpivoting** reverses this process for normalized data structures. Finally, **loading strategies** like append, overwrite, and merge ensure transformed data lands correctly in target tables—whether you're adding new records, replacing existing data, or synchronizing changes through upsert operations.
 
 In this module, you learn how to assess data quality through profiling, apply cleansing techniques to resolve common issues, transform data using SQL and PySpark operations, and load the results into Unity Catalog tables with the appropriate strategy for each scenario.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

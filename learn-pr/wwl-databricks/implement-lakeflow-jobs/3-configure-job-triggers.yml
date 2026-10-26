@@ -2,9 +2,10 @@
 uid: learn.wwl.implement-lakeflow-jobs.configure-job-triggers
 title: Configure job triggers
 metadata:
+  zone_pivot_groups: video-or-text
   title: Configure Job Triggers
   description: Learn how to configure job triggers in Lakeflow Jobs including table update triggers, file arrival triggers, and continuous triggers for automated data pipeline execution.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -2,9 +2,10 @@
 uid: learn.wwl.create-and-organize-objects-in-unity-catalog.implement-foreign-catalog
 title: Implement foreign catalog
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement Foreign Catalog
   description: Learn how to implement foreign catalogs in Unity Catalog by configuring connections to external databases for centralized governance and read-only access.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -2,9 +2,10 @@
 uid: learn.wwl.explore-azure-databricks.workloads
 title: Identify Azure Databricks workloads
 metadata:
+  zone_pivot_groups: video-or-text
   title: Identify Azure Databricks Workloads
   description: "Identify Azure Databricks workloads"
-  ms.date: 10/12/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

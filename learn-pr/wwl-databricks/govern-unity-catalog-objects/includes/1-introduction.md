@@ -1,4 +1,10 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=7759ad6f-e9a1-46f4-8aed-25281fba4634]
+
+::: zone-end
+
+::: zone pivot="text"
 
 Effective data governance requires more than just controlling access—it demands visibility into your data assets, accountability for how they're used, and enforcement mechanisms that scale with your organization. As data platforms grow in complexity, managing table definitions, tracking data lineage, enforcing retention policies, and sharing data securely become increasingly challenging. **Unity Catalog** in Azure Databricks provides the foundation for comprehensive governance that addresses these challenges through centralized metadata management and policy enforcement.
 
@@ -7,3 +13,8 @@ When you govern Unity Catalog objects, you work across several interconnected ca
 Beyond access control, governance extends to **data lineage tracking** that shows how data flows through your pipelines, enabling impact analysis and troubleshooting. **Audit logging** captures who did what and when, supporting security investigations and regulatory compliance. For external collaboration, **OpenSharing** (formerly Delta Sharing) lets you share data with partners and customers while maintaining governance controls over what they can access.
 
 This module guides you through implementing these governance capabilities in your Azure Databricks environment. You explore techniques for preserving metadata, enforcing policies at scale, managing data lifecycle, and sharing data securely. By mastering these concepts, you position yourself to build data platforms that balance accessibility with control, enabling your organization to derive value from data while meeting its governance obligations.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

@@ -1,4 +1,10 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=ac7df0e7-8d9c-4fae-8ef4-b6bb587bdffe]
+
+::: zone-end
+
+::: zone pivot="text"
 
 Building reliable data pipelines requires more than connecting data sources to destinations. You need to design workflows that handle failures gracefully, scale with growing data volumes, and remain maintainable as business requirements evolve. Azure Databricks provides multiple approaches for creating data pipelines—from flexible **notebooks** with procedural code to **Lakeflow pipelines** that automate orchestration and data quality enforcement.
 
@@ -7,3 +13,8 @@ When you design data pipelines, you make decisions that affect every downstream 
 **Error handling** separates production-ready pipelines from fragile prototypes. Without proper error handling, invalid records corrupt downstream analytics, unnoticed failures accumulate technical debt, and problems surface hours or days after they occur. Azure Databricks provides built-in mechanisms for **data quality expectations**, **retry policies**, and **conditional task flows** that help you build resilient data workflows.
 
 This module guides you through designing and implementing data pipelines in Azure Databricks. You learn how to structure pipeline operations, choose the right approach for your use case, configure task logic in Lakeflow Jobs, and implement error handling strategies. You also create pipelines using both notebook-based and declarative approaches, gaining hands-on experience with the tools that power production data platforms.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

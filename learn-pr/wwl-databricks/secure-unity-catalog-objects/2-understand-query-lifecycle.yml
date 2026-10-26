@@ -2,9 +2,10 @@
 uid: learn.wwl.secure-unity-catalog-objects.understand-query-lifecycle
 title: Understand query lifecycle
 metadata:
+  zone_pivot_groups: video-or-text
   title: Understand Query Lifecycle
   description: "Understand Query Lifecycle"
-  ms.date: 10/12/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

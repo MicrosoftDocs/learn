@@ -2,9 +2,10 @@
 uid: learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.implement-log-streaming-azure-analytics
 title: Implement log streaming with Azure Log Analytics
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement Log Streaming with Azure Log Analytics
   description: Learn how to implement log streaming from Azure Databricks to Azure Log Analytics for centralized monitoring, querying with KQL, and creating alerts for proactive troubleshooting.
-  ms.date: 10/12/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

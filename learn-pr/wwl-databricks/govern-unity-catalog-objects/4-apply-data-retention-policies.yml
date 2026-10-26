@@ -2,9 +2,10 @@
 uid: learn.wwl.govern-unity-catalog-objects.apply-data-retention-policies
 title: Apply data retention policies
 metadata:
+  zone_pivot_groups: video-or-text
   title: Apply Data Retention Policies
   description: Learn how to configure and enforce data retention policies in Azure Databricks using Delta Lake VACUUM, deletion operations for regulatory compliance, and predictive optimization for automated maintenance.
-  ms.date: 10/12/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

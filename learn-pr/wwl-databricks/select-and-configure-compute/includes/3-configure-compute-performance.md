@@ -1,8 +1,21 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e0c7ff8f-9e08-49dd-8645-140490098a21]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=670b0dcd-299f-459c-8a17-6c21f00a8d80]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=58a7d7b4-1091-4b23-8fa7-07dc711f1f12]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Configuring compute resources involves balancing performance requirements with cost considerations. Over-provisioning leads to unnecessary expenses, while under-provisioning can cause stability issues and slow query execution. Understanding how to configure compute settings helps you optimize resources for your workload.
 
 ## Understand compute resource components
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=e0c7ff8f-9e08-49dd-8645-140490098a21]
 
 Compute performance depends on three key factors working together. Each factor influences how efficiently your workload runs and how much it costs.
 
@@ -17,8 +30,6 @@ Compute performance depends on three key factors working together. Each factor i
 With this understanding of compute components, you can make informed decisions about node types and cluster size.
 
 ## Configure node types and cluster size
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=670b0dcd-299f-459c-8a17-6c21f00a8d80]
 
 Node type selection directly impacts both performance and cost. Different instance families serve different workload characteristics.
 
@@ -64,8 +75,6 @@ Autoscaling works particularly well with instance pools. Set your minimum worker
 
 Automatic termination prevents idle compute resources from accumulating unnecessary costs while maintaining availability for scheduled workloads.
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=58a7d7b4-1091-4b23-8fa7-07dc711f1f12]
-
 When you configure automatic termination, you specify an inactivity period in minutes. If no commands run on the cluster for longer than this period, Azure Databricks terminates the cluster. The cluster configuration remains available for restart when needed.
 
 For interactive workloads like data analysis, set the termination period based on typical session patterns. A 45-minute timeout works well for most use cases, giving data engineers time to review results between queries without leaving clusters idle for hours.
@@ -109,3 +118,5 @@ Regular monitoring helps you identify optimization opportunities. Review cluster
 
 > [!NOTE]
 > Monitoring and observability are covered in detail in a later module.
+
+::: zone-end

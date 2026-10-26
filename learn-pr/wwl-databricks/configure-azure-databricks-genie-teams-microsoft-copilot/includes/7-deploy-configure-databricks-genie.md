@@ -83,13 +83,13 @@ A channel owner configures the app when a channel should use a consistent worksp
 
 If no agent is selected, the channel uses Genie One. Selecting a specific agent sends channel questions to that agent through Genie One.
 
-If **Allow public messages in collaboration platforms** is off, channel and group messages do not work and only direct messages are supported.
+If **Allow public messages in collaboration platforms** is off, responses are private to the user who asked. Channel settings can't make them public.
 
 ## Apply configuration precedence
 
 When settings differ, the integration applies them in this order:
 
-1. **Workspace settings** have the highest priority. If the workspace disables public collaboration messages, channel and group-chat use isn't available.
+1. **Workspace settings** have the highest priority. If the workspace disables public collaboration messages, responses are private to the user who asked.
 2. **Channel-wide settings** selected by a channel owner override personal settings in that channel.
 3. **Personal settings** apply when no channel-wide value overrides them.
 

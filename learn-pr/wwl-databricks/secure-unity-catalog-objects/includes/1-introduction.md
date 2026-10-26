@@ -1,4 +1,10 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=53837f53-8349-439b-9d3a-390f0322c07b]
+
+::: zone-end
+
+::: zone pivot="text"
 
 Securing data is fundamental to enterprise data platforms, yet traditional approaches often fragment governance across multiple systems and require constant maintenance. As organizations scale their analytics workloads on Azure Databricks, they need unified security that protects sensitive information while maintaining operational efficiency. **Unity Catalog** addresses this challenge by providing centralized governance for data assets, compute resources, and access controls.
 
@@ -7,3 +13,8 @@ When you work with Unity Catalog, security operates at multiple layers. You cont
 Understanding how these security mechanisms work together enables you to build data solutions that balance accessibility with protection. You need to know when inherited permissions simplify administration and when explicit grants provide necessary control. You must choose between row and column security functions versus dynamic views based on your governance requirements. You should recognize when managed identities offer advantages over service principals for authenticating storage access.
 
 This module guides you through Unity Catalog's security model, from understanding the **query lifecycle** to implementing **authentication strategies**. You explore access control patterns that scale across your organization, fine-grained filtering techniques that protect sensitive data, and credential management approaches that strengthen your security posture. After completing this module, you can design and implement security for your Azure Databricks environment.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=0631ba8f-e7a8-486c-a104-cbb21f66cdbe]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Data engineers face a critical decision early in every data pipeline: which table format should store your data? This choice affects query performance, transaction reliability, interoperability with other platforms, and long-term maintenance of your lakehouse architecture.
 
@@ -94,3 +103,5 @@ Selecting a table format depends on your specific requirements. Start with Delta
 | Recommended for production   | Yes        | Yes (when interop required) | No (landing zone only) |
 
 Your choice also depends on organizational standards. If your architecture team has established conventions for table formats, align with those decisions to maintain consistency across your data platform.
+
+::: zone-end

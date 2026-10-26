@@ -7,7 +7,7 @@ The Databricks Genie app from Microsoft Marketplace is the integration point for
 When a business user asks a question, the request follows this path:
 
 1. The user opens Databricks Genie in Teams or Microsoft Copilot.
-2. The app connects to the Azure Databricks workspace selected for the conversation.
+2. The app routes the request through a central Azure Databricks control-plane service in East US 2 to the workspace selected for the conversation.
 3. The user signs in to Azure Databricks with their own organizational identity.
 4. The app sends the question to the Genie One application programming interface (API).
 5. Genie One routes the question across available governed assets or sends it to the specific Genie Agent selected for a channel.
@@ -18,6 +18,8 @@ When a business user asks a question, the request follows this path:
 :::image type="content" source="../media/genie-collaboration-architecture.png" alt-text="Diagram showing Genie One routing questions from Teams or Microsoft Copilot to governed Azure Databricks data.":::
 
 The app doesn't copy the user's Azure Databricks privileges into Microsoft 365. It preserves the separation between collaboration access and data access. A person might be able to open the app but receive no data from a source that Unity Catalog doesn't permit them to query.
+
+For Teams requests, the central service doesn't persist or log question or answer content. It stores the mapping between the Teams tenant and the Azure Databricks workspace. Genie processes questions and stores conversation history in the workspace's region. The workspace's geography and cross-geography processing settings determine where the large language model processes content. Review these routing and processing boundaries separately.
 
 ## Distinguish Genie One from a Genie Agent
 

@@ -2,9 +2,10 @@
 uid: learn.wwl.design-implement-data-pipelines.design-task-logic-lakeflow-job
 title: Design Lakeflow job logic
 metadata:
+  zone_pivot_groups: video-or-text
   title: Design Lakeflow Job Logic
   description: Learn how to design task logic for Lakeflow Jobs in Azure Databricks, including task dependencies, execution patterns, conditional logic, and parameter configuration.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

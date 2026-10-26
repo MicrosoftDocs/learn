@@ -1,4 +1,15 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=fb14f62e-fac1-42f5-86ef-96a823f93551]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d318328a-1f99-4b2f-8376-93cf315b8797]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Access control in Unity Catalog is built on four complementary models that work together to enforce secure, fine-grained access across your data environment.
 
@@ -136,8 +147,6 @@ When reviewing privileges, remember that **SHOW GRANTS** displays inherited, den
 
 ## Understand Access Control Lists (ACLs)
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=d318328a-1f99-4b2f-8376-93cf315b8797]
-
 Access Control Lists (ACLs) are the backbone of Unity Catalog’s authorization model: they explicitly associate a *principal* with a *privilege* on a *securable object*. To understand how ACLs work, we can break down those three pieces—privileges, securables, principals—and then see how they interact in a typical grant.
 
 ![Diagram showing how privileges, securables and principles help with access control lists.](../media/understand-access-control-lists.png)
@@ -183,3 +192,5 @@ On Azure Databricks, Unity Catalog identities are account-level identities, and 
 - **Account Users**: The special built-in group `account users` contains all users and service principals in the Azure Databricks account, and can be used when broad access is acceptable.
 
 Because identities are typically synced from Microsoft Entra ID, administrators should coordinate closely with their Microsoft Entra ID administrators to ensure that group memberships remain accurate.
+
+::: zone-end

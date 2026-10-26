@@ -7,8 +7,6 @@ The app requests two categories of Microsoft permissions:
 - **Microsoft Entra ID delegated permissions** support sign-in and access to the signed-in user's basic profile. The current app lists `offline_access` and `User.Read`.
 - **Teams resource-specific consent (RSC) permissions** apply to the chat, channel, or team where the app is installed. They include permissions to read and send relevant messages, send activity notifications, read channel members, and read channel settings.
 
-The app might temporarily display `User.ReadBasic.All` during installation. Azure Databricks documentation states that this permission is no longer used and is being removed from the requested set. Review the permissions shown by the current app package rather than relying on an older approval record.
-
 ## Review Microsoft Graph consent
 
 In [Teams admin center](https://admin.teams.microsoft.com/), a Teams administrator can inspect the permissions requested by a third-party app. Only a Global Administrator grants organization-wide consent to Microsoft Graph permissions through this flow. Whether the delegated permissions require administrator consent depends on the tenant's user-consent policy. Organization-wide approval is a deployment choice, not an inherent property of every delegated permission.
@@ -51,6 +49,7 @@ The Databricks Genie app sends questions to Azure Databricks and returns answers
 - Unity Catalog governs the source data query.
 - Azure Databricks partner-powered AI and trust settings apply to Genie processing.
 - Teams message visibility determines who can see the returned answer in the conversation.
+- Teams requests pass through a central Azure Databricks service in East US 2. The service doesn't persist or log question or answer content. Genie stores conversation history in the workspace's region, and workspace geography settings govern model processing.
 - Microsoft 365 app approval doesn't extend Microsoft service terms or protections to processing performed by a non-Microsoft service.
 
 After the permission and data-boundary review is approved, the Microsoft 365 administrator can install and assign the app.

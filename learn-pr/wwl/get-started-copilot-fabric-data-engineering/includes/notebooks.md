@@ -1,5 +1,8 @@
 Copilot for Fabric Data Engineering assists with writing code in notebooks. It uses notebook context, including attached lakehouses, available schemas, tables, files, existing code, and runtime information.
 
+> [!IMPORTANT]
+> Copilot for Data Engineering and Data Science is in preview. The chat pane doesn't work when your tenant uses private link. Context awareness is optimized for lakehouses; specify other data sources explicitly. Generated code can contain errors, including incorrect library syntax. Review it before approving execution. See [Copilot notebook limitations](/fabric/data-engineering/copilot-notebooks-overview#known-limitations).
+
 You can interact with Copilot in two ways:
 
 - **Copilot chat pane**: Ask questions in natural language and work across multiple notebook cells. Copilot can generate, edit, run, explain, and validate code while maintaining the context of your workflow.
@@ -37,17 +40,17 @@ Use in-cell Copilot when you want to refine a specific cell — for example, und
 
 In this example, you use Copilot for Fabric Data Engineering to load, transform, and save data in a lakehouse. Contoso Health, a multispecialty hospital network, wants to analyze projected population data as it considers expanding its services in the European Union (EU). This example uses a population projection dataset from [Eurostat](https://ec.europa.eu/eurostat/web/main/home), the statistical office of the European Union.
 
-Source: EUROPOP2023 Population on January 1 by age, sex, and type of projection [[proj_23np](https://ec.europa.eu/eurostat/databrowser/product/view/proj_23np?category=proj.proj_23n)], Last updated June 28, 2023.
+Source: EUROPOP2023 Population on January 1 by age, sex, and type of projection [[proj_23np](https://ec.europa.eu/eurostat/databrowser/product/view/proj_23np?category=proj.proj_23n)]. Source data can change; the tables below are illustrative, not fixed expected results.
 
 ### Load data
 
-Begin in a notebook that's attached to your lakehouse. Open the **Copilot** chat pane, enter the following prompt, and submit it:
+Begin in a PySpark (Python) notebook with your lakehouse attached and set as the default. The Python file API uses `/lakehouse/default/`, while Spark uses paths relative to that lakehouse, such as `Files/temp/proj_23np.tsv`. See [Load data with a notebook](/fabric/data-engineering/lakehouse-notebook-load-data). Open the **Copilot** chat pane, enter the following prompt, and submit it:
 
 ```copilot-prompt
 Download the following file from this URL:
 https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/proj_23np$defaultview/?format=TSV
 
-Then write the file to the default lakehouse into a temporary folder. Create the temporary folder if it doesn't exist yet.
+Write the file directly to /lakehouse/default/Files/temp/proj_23np.tsv. Create the parent folder if it doesn't exist yet.
 ```
  
 When Copilot requests permission to add and run a code cell, review the requested actions and select **Allow**. Copilot generates code that might differ from the following example:
@@ -58,21 +61,12 @@ When Copilot requests permission to add and run a code cell, review the requeste
 import urllib.request
 import os
 
-# Step 1: Download the file
 url = "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/proj_23np$defaultview/?format=TSV"
-file_path = "/tmp/proj_23np_defaultview.tsv"
-
-urllib.request.urlretrieve(url, file_path)
-
-# Step 2: Create a temporary folder in the default lakehouse
 lakehouse_temp_folder = "/lakehouse/default/Files/temp"
 os.makedirs(lakehouse_temp_folder, exist_ok=True)
-
-# Step 3: Write the file to the lakehouse temporary folder
-import shutil
-shutil.move(file_path, os.path.join(lakehouse_temp_folder, "proj_23np.tsv"))
-
-print(f"File successfully written to {os.path.join(lakehouse_temp_folder, 'proj_23np.tsv')}")
+file_path = os.path.join(lakehouse_temp_folder, "proj_23np.tsv")
+urllib.request.urlretrieve(url, file_path)
+print(f"File successfully written to {file_path}")
 ```
 
 After the cell runs, the file appears in the temporary folder of your lakehouse. Review the result and select **Keep** in the Copilot pane.
@@ -117,7 +111,7 @@ Next, ask Copilot to split the combined first field into separate columns, remov
 ```copilot-prompt
 Now transform this dataframe spark_df and split the first field 'freq,projection,sex,age,unit,geo\TIME_PERIOD' using a comma into 6 separate fields.
 
-Then, remove the fields 'freq', 'age', 'unit'.
+Keep only rows where freq is A, age is TOTAL, and unit is PER. Then remove the fields 'freq', 'age', 'unit'.
 
 The fields 'projection', 'sex', 'geo' should be positioned first.
 
@@ -151,7 +145,8 @@ file_path = "Files/temp/proj_23np.tsv"
 spark_df = spark.read.format("csv").option("delimiter", "\t").option("header", "true").load(file_path)
 
 # Split the first field 'freq,projection,sex,age,unit,geo\TIME_PERIOD' into 6 separate fields.
-split_col = split(spark_df['freq,projection,sex,age,unit,geo\TIME_PERIOD'], ',')
+source_column = r'freq,projection,sex,age,unit,geo\TIME_PERIOD'
+split_col = split(spark_df[source_column], ',')
 spark_df = spark_df.withColumn('freq', split_col.getItem(0)) \
                    .withColumn('projection', split_col.getItem(1)) \
                    .withColumn('sex', split_col.getItem(2)) \
@@ -159,8 +154,11 @@ spark_df = spark_df.withColumn('freq', split_col.getItem(0)) \
                    .withColumn('unit', split_col.getItem(4)) \
                    .withColumn('geo', split_col.getItem(5))
 
-# Remove the fields 'freq', 'age', 'unit'
-columns_to_drop = ['freq', 'age', 'unit', 'freq,projection,sex,age,unit,geo\TIME_PERIOD']
+# Keep annual population counts for all ages before removing these dimensions.
+spark_df = spark_df.filter(
+    (col('freq') == 'A') & (col('age') == 'TOTAL') & (col('unit') == 'PER')
+)
+columns_to_drop = ['freq', 'age', 'unit', source_column]
 spark_df = spark_df.drop(*columns_to_drop)
 
 # Reorder the columns, placing 'projection', 'sex', 'geo' first
@@ -223,29 +221,36 @@ Review and allow the requested actions. Copilot generates code that might differ
 spark_df.write.format("delta").saveAsTable("Population")
 ```
 
+This creates a new Delta table and fails if `Population` already exists. On a repeat run, use a new table name or explicitly choose an appropriate write mode after reviewing the effect on existing data.
+
 ### Validation
 
 To check that the table saved as expected, expand the **Tables** list in your lakehouse and review its contents. You can also use the **Copilot chat pane** for exploratory questions. Copilot responds with explanations or requests permission to add and run code. For example:
 
 ```copilot-prompt
-What is the projected population for geo BE in 2050?
+What is the total baseline projected population for geo BE in 2050? Sum female and male values from the Population table, using only the Baseline projections scenario.
 ```
 
-Copilot generates code to filter the data for the specified geo and year, and display the result.
+Copilot can generate code to filter the table and aggregate the female and male rows. A filter alone returns separate values by sex, not the total population. Check that both rows exist and have non-null values before summing:
 
 ```python
 # ATTENTION: AI-generated code can include errors or operations you didn't intend. Review the code in this cell carefully before running it.
 
-from pyspark.sql import SparkSession
-
-# Initialize Spark session
-spark = SparkSession.builder.getOrCreate()
+from pyspark.sql.functions import col, sum as spark_sum
 
 # Load the Population table into a Spark DataFrame
-spark_df = spark.read.table("population")
+population_df = spark.read.table("Population")
 
 # Filter for the projected population for geo BE in 2050
-result_df = spark_df.filter((spark_df['geo'] == 'BE') & (spark_df['projection'] == 'Baseline projections')).select('2050')
+baseline_df = population_df.filter(
+    (col('geo') == 'BE')
+    & (col('projection') == 'Baseline projections')
+    & col('sex').isin('F', 'M')
+)
+rows = baseline_df.select('sex', '2050').collect()
+if len(rows) != 2 or {row['sex'] for row in rows} != {'F', 'M'} or any(row['2050'] is None for row in rows):
+    raise ValueError("Expected one non-null 2050 value for each sex.")
+result_df = baseline_df.agg(spark_sum(col('2050')).alias('Population2050'))
 
 # Show the result
 result_df.show()
@@ -256,3 +261,4 @@ result_df.show()
 - Copilot is currently strongest with data engineering and data science scenarios, so framing questions in those domains tends to yield clearer results.
 - Giving Copilot concrete references to your data assets (file paths, table names, column names) usually improves the specificity and usefulness of generated answers.
 - Loading data as DataFrames or pinning datasets in your lakehouse supplies richer context, enabling more accurate analysis and transformations.
+- Keep approval prompts enabled and inspect generated code before running it. **Undo** reverts notebook edits; don't treat it as a rollback of data already written or other external effects.

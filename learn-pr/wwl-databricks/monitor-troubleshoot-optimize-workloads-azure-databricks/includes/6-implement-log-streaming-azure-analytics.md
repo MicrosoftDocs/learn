@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=7cf24ded-3fc2-4406-b4fe-922c259cfb02]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 When your Azure Databricks environment grows beyond a single workspace, tracking what happens across clusters, jobs, and users becomes a challenge. **Log streaming to Azure Log Analytics** solves this by centralizing all your diagnostic and audit logs in one place, enabling queries, alerts, and dashboards.
 
@@ -161,3 +170,5 @@ Log streaming transforms troubleshooting from **reactive investigation** to **sy
 **Cost attribution**: Combine cluster and job logs with Azure cost data to understand which teams or projects drive consumption.
 
 With logs centralized in Azure Log Analytics, you build views of your Azure Databricks environment. This visibility supports both day-to-day operations and long-term planning decisions.
+
+::: zone-end

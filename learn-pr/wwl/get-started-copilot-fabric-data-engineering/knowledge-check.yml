@@ -2,12 +2,13 @@
 uid: learn.wwl.get-started-copilot-fabric-data-engineering.knowledge-check
 title: Module assessment
 metadata:
-  title: Module Assessment
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/21/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 durationInMinutes: 5
 content: |
@@ -44,7 +45,7 @@ quiz:
       explanation: "Sorry, that's incorrect. Copilot can help create and configure activities."
     - content: "Generate and configure pipeline activities using natural language prompts."
       isCorrect: true
-      explanation: "That's correct. Copilot can generate and configure pipeline activities."
+      explanation: "That's correct. Copilot can generate pipeline activities, but you must verify connections, credentials, required settings, and the resulting workflow before running it."
     - content: "Delete all data in the workspace automatically."
       isCorrect: false
       explanation: "Sorry, that's incorrect. Copilot doesn't delete all data automatically."
@@ -56,6 +57,6 @@ quiz:
     - content: "It generates code and helps analyze data through the Copilot chat pane and in-cell assistance."
       isCorrect: true
       explanation: "That's correct. Copilot assists with code generation and analysis in notebooks."
-    - content: "It restricts users to only one programming language."
+    - content: "It guarantees that generated code is correct without review."
       isCorrect: false
-      explanation: "Sorry, that's incorrect. Copilot supports multiple languages in notebooks."
+      explanation: "Sorry, that's incorrect. Generated code can contain errors. Review it before approving execution and validate the results."

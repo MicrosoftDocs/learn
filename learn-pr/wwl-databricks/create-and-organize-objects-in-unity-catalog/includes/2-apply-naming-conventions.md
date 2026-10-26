@@ -1,8 +1,21 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f26ca1fc-1218-4f52-b998-1e7a9c642af1]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5beb1979-3ec1-4bf9-9104-e6db204d4391]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=40f8d028-dc75-4ed1-86dd-cc1ab75cf0b7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Naming conventions are fundamental to effective data governance in Azure Databricks Unity Catalog. When you apply consistent naming patterns across catalogs, schemas, and tables, you enable your team to quickly understand data organization, enforce access controls, and maintain compliance with organizational standards.
 
 ## Understand Unity Catalog naming requirements
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=f26ca1fc-1218-4f52-b998-1e7a9c642af1]
 
 Unity Catalog imposes specific technical constraints on object names that you must follow when designing your naming conventions. These constraints ensure compatibility across the platform while supporting international characters and diverse organizational needs.
 
@@ -13,8 +26,6 @@ Certain characters are prohibited in object names. You can't use periods (`.`), 
 Column names follow different rules. Unity Catalog preserves the casing you specify for column names, though queries remain case-insensitive. You can use special characters in column names by enclosing them in backticks, giving you flexibility for descriptive field names while maintaining query simplicity.
 
 ## Apply naming patterns for data organization
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=5beb1979-3ec1-4bf9-9104-e6db204d4391]
 
 Effective naming patterns balance descriptiveness with brevity, helping your team understand data purpose without creating unwieldy identifiers. The three-level namespace structure of Unity Catalog—`catalog.schema.table`—provides natural boundaries for applying meaningful conventions.
 
@@ -84,8 +95,6 @@ For **external sharing scenarios**, choose catalog names that are meaningful to 
 
 ## Apply naming conventions for compute and development resources
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=40f8d028-dc75-4ed1-86dd-cc1ab75cf0b7]
-
 Beyond data objects, consistent naming conventions for compute resources, development artifacts, and operational components help you navigate the Azure Databricks workspace efficiently and maintain clear ownership boundaries.
 
 ### Clusters
@@ -140,3 +149,5 @@ Start by **documenting your conventions** in a central location accessible to al
 **Review existing objects regularly** to identify naming inconsistencies and plan remediation. Use Unity Catalog's information schema to query object names and flag those that don't match your patterns. For newly identified legacy objects, decide whether to rename them for consistency or document them as exceptions with justification.
 
 **Balance flexibility with standardization** based on your organization's needs. Strict enforcement works well for highly regulated environments where consistency is critical for compliance. More flexible guidelines may be appropriate for smaller teams or during periods of rapid experimentation, as long as you eventually converge on standards for production data.
+
+::: zone-end

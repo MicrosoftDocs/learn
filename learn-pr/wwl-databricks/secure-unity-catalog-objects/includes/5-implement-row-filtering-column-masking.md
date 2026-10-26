@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=778d274c-f2bc-474b-94f1-690bd6b46ad5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 When working with sensitive information in a data lakehouse, you need more than just role-based permissions. Unity Catalog allows you to enforce **fine-grained access control** so that different users can query the same tables but see only the data they're allowed to. Two approaches are commonly used, as explained in the previous unit:
 
@@ -104,3 +113,5 @@ Both approaches achieve fine-grained security, but they differ in scope:
 :::image type="content" source="../media/choose-between-approaches.png" alt-text="Diagram helping you choose between the two approaches." border="false" lightbox="../media/choose-between-approaches.png":::
 
 In practice, you use table-level controls when you need strict enforcement, and dynamic views when you want adaptable, shareable abstractions.
+
+::: zone-end

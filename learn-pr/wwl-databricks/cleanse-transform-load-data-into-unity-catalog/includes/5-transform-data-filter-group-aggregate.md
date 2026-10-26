@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=61a9bafd-23b4-4fd5-bf23-aa98b1510b9b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Data transformation turns raw data into formats suitable for analysis and reporting. **Filtering**, **grouping**, and **aggregating** are fundamental operations you use to shape data—selecting relevant records, organizing them into meaningful categories, and calculating summary statistics. These operations form the foundation of most data engineering pipelines.
 
@@ -217,3 +226,5 @@ This approach improves readability and lets Spark optimize the entire operation 
 > When chaining transformations, place filters early in the pipeline to reduce the data volume that subsequent operations must process.
 
 Understanding filtering, grouping, and aggregating prepares you to build efficient transformation pipelines. These operations combine naturally with joins and other transformations to create data processing workflows.
+
+::: zone-end

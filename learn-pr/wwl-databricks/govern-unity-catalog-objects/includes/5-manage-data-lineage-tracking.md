@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=dff93cc3-d88e-4db3-844c-c0aef80e141e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Understanding where your data comes from, how it transforms, and where it flows is essential for effective data governance. When you set up and manage **data lineage tracking** in Unity Catalog, you gain visibility into data dependencies, ownership, and history. This visibility helps you perform **impact analysis** before making changes, troubleshoot data quality issues, and meet compliance requirements.
 
@@ -145,3 +154,5 @@ Lineage tracking has certain constraints you should be aware of:
 Despite these limitations, lineage tracking provides comprehensive visibility for most data engineering workflows. By understanding these constraints, you can design your pipelines to maximize lineage capture.
 
 Effective data lineage management transforms how you govern and troubleshoot your data platform. With the visibility that Catalog Explorer and system tables provide, you can confidently manage dependencies, assess change impact, and maintain accountability across your data assets.
+
+::: zone-end

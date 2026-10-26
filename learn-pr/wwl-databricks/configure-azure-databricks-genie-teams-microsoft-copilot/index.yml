@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot
 metadata:
   title: Configure Azure Databricks Genie for Microsoft Teams and Microsoft Copilot
   description: "Prepare Azure Databricks and Microsoft 365 so business users can access governed data through Databricks Genie in Microsoft Teams and Microsoft Copilot."
-  ms.date: 08/26/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

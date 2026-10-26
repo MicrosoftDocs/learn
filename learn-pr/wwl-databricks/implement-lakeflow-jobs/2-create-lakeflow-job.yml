@@ -2,9 +2,10 @@
 uid: learn.wwl.implement-lakeflow-jobs.create-lakeflow-job
 title: Create job setup and configuration
 metadata:
+  zone_pivot_groups: video-or-text
   title: Create Job Setup and Configuration
   description: Learn how to create and configure a Lakeflow Job in Azure Databricks, including setting up tasks, selecting compute resources, organizing task dependencies, and configuring job access permissions.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

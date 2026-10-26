@@ -2,9 +2,10 @@
 uid: learn.wwl.implement-lakeflow-jobs.configure-job-automatic-restarts
 title: Configure automatic restarts
 metadata:
+  zone_pivot_groups: video-or-text
   title: Configure Automatic Restarts
   description: Learn how to configure automatic restarts and retry policies for Lakeflow Jobs in Azure Databricks to handle transient failures and maintain pipeline reliability.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

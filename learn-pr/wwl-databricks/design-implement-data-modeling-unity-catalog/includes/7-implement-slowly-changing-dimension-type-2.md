@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=a1da50c9-1de6-41c6-b4bc-cc7ae7dcf02b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 After selecting SCD Type 2 for a dimension, you need to implement the table structure and change capture logic in Azure Databricks. This unit focuses on creating SCD Type 2 tables and implementing the MERGE patterns that maintain version history as source data changes.
 
@@ -131,3 +140,5 @@ VERSION AS OF 42;
 
 > [!IMPORTANT]
 > Delta Lake time travel has a default retention of 7 days. For longer historical analysis, use explicit SCD columns (ValidFrom, ValidTo) rather than relying solely on time travel. Configure `delta.logRetentionDuration` and `delta.deletedFileRetentionDuration` if you need extended time travel access.
+
+::: zone-end

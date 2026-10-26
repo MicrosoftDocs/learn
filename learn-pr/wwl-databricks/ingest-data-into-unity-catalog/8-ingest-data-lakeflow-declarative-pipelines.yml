@@ -2,9 +2,10 @@
 uid: learn.wwl.ingest-data-into-unity-catalog.ingest-data-lakeflow-declarative-pipelines
 title: Ingest data with Lakeflow pipelines
 metadata:
+  zone_pivot_groups: video-or-text
   title: Ingest Data with Lakeflow pipelines
   description: Learn how to ingest data into Azure Databricks using Lakeflow pipelines, including configuring streaming tables, flows, and handling schema evolution for ingestion from cloud storage and message buses.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

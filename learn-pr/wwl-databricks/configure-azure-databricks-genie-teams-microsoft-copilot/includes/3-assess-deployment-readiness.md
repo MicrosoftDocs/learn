@@ -19,11 +19,13 @@ The Teams app connects from Azure Databricks control-plane infrastructure. Revie
 
 - If the workspace uses an IP access list, allow the current Azure Databricks control-plane outbound addresses for the East US 2 region.
 - Use the live [Azure Databricks regions, IP addresses, and domains](/azure/databricks/resources/ip-domain-region#outbound) reference. Don't copy address values into long-lived configuration documentation.
-- Private Link isn't supported for the Databricks Genie app in Teams.
+- Workspaces with front-end Private Link can use the app through a context-based ingress rule for **Databricks Teams App**. The app doesn't connect over Private Link, and **Allow Public Network Access** must remain **Enabled**.
 - Workspace security settings must allow connections to collaboration platforms.
-- If the workspace prohibits public collaboration messages, the app supports direct messages only. Channel and group-chat use isn't available.
+- If the workspace prohibits public collaboration messages, responses are private to the user who asked. Channel settings can't override this restriction.
 
-These requirements can affect architecture approval. A workspace that requires Private Link for every connection doesn't meet the current integration constraints.
+These requirements can affect architecture approval. A workspace that requires Private Link for every connection doesn't meet the current integration constraints. Approve the public ingress exception before enabling it, and migrate legacy IP access lists to context-based ingress if the Private Link workspace still uses them.
+
+If the deployment includes file uploads or PDF delivery in direct messages, check the additional prerequisites. File uploads require the **Genie One File Upload** workspace preview and OneDrive for Business. Saving generated documents as PDFs requires OneDrive and version 1.0.17 or later of the Teams app. Neither feature is available in channels, group chats, or Microsoft 365 Copilot.
 
 ## Confirm Microsoft 365 and identity readiness
 

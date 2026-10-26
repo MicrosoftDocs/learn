@@ -23,3 +23,5 @@ This module doesn't cover creating or tuning a Genie Agent, building a custom Te
 
 > [!IMPORTANT]
 > The Databricks Genie app in Microsoft Teams is in Public Preview. Features, requirements, and administrative interfaces can change before general availability. Confirm current requirements in the [Databricks Genie app in Microsoft Teams documentation](/azure/databricks/integrations/msft-teams) before you configure a production tenant.
+
+Genie can generate inaccurate responses. Verify answers before you act on them, even when the integration enforces the correct data permissions.

@@ -2,9 +2,10 @@
 uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-join-union-intersect-except
 title: Transform data with joins and set operators
 metadata:
+  zone_pivot_groups: video-or-text
   title: Transform Data With Joins and Set Operators
   description: Learn how to transform data in Azure Databricks using join, union, intersect, and except operators to combine and compare datasets.
-  ms.date: 10/12/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

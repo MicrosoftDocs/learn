@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=c416d267-6b68-41dd-8973-8caba17fd6da]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 When a Spark job fails or runs slower than expected, your ability to quickly diagnose and resolve the issue directly impacts business operations. As a data engineer, you need a systematic approach to investigate problems, identify root causes, and take corrective action.
 
@@ -71,3 +80,5 @@ Replace `CLUSTER_ID` with your cluster's identifier, which you can find on the c
 > Restarting a cluster interrupts any running jobs and notebooks attached to it. Save any diagnostic information you need before restarting. For long-running clusters processing streaming data, consider scheduling regular restarts during maintenance windows so the cluster runs on current images.
 
 After making changes—whether adjusting cluster configuration, fixing code, or resolving external dependencies—validate your fix by monitoring the next job run. Check that execution times return to expected levels and that no new errors appear in the Spark UI or job output.
+
+::: zone-end

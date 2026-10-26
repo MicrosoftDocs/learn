@@ -1,4 +1,17 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=ae2e4976-0a38-4e28-a6bc-0622b7d00079]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=72b4857c-6be6-421e-a53f-c672e53c5d33]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0e72769b-ae7e-4b3a-881e-0e52b1523347]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Data governance is critical for ensuring that data within an organization is managed securely, efficiently, and in compliance with regulations. 
 
@@ -15,8 +28,6 @@ These governance challenges directly affect the value organizations can derive f
 Azure Databricks, combined with Unity Catalog and Microsoft Purview, provides a solution for managing and governing data effectively. 
 
 ## Unity Catalog 
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=72b4857c-6be6-421e-a53f-c672e53c5d33]
 
 Unity Catalog provides a centralized way to manage access, discovery, lineage, audit logs, and quality monitoring across data and AI assets within Azure Databricks. It applies consistently across all workspaces attached to the same metastore.
 
@@ -50,8 +61,6 @@ Unity Catalog is automatically enabled for workspaces created after November 9, 
 
 ## Microsoft Purview
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=0e72769b-ae7e-4b3a-881e-0e52b1523347]
-
 Microsoft Purview is a data governance service that lets you manage and oversee data across on-premises systems, multiple clouds, and SaaS platforms. It includes features such as data discovery, classification, lineage tracking, and access governance.
 
 When integrated with Azure Databricks and Unity Catalog, Purview can discover Lakehouse data and ingest its metadata into the Data Map. This allows you to apply consistent governance across your entire data environment, while acting as a central catalog that brings together metadata from different sources.
@@ -68,3 +77,5 @@ With this integration, you can:
 ![Screenshot of Microsoft Purview showing an Azure Databricks Table Metadata.](../media/purview-databricks.png)
 
 In addition, Microsoft Purview can scan the workspace-level **Hive metastore** in Azure Databricks.
+
+::: zone-end
