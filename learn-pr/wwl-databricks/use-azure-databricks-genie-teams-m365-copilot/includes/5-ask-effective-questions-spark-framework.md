@@ -1,4 +1,4 @@
-Getting a useful answer from Genie depends less on the surface you use and more on the question you ask. A vague question produces a vague answer; a well-structured question produces a specific, actionable one. The **SPARK framework** gives you a repeatable checklist for building questions that remove ambiguity and produce reliable results.
+Getting a useful answer from Genie depends less on the surface you use and more on the question you ask. This module uses **SPARK** as a question-writing checklist to reduce ambiguity, not as a product feature or a guarantee of accuracy.
 
 ## Get context before you ask
 
@@ -10,7 +10,7 @@ or
 
 > What kinds of questions can I ask here?
 
-The response describes the available topics, time periods, geographic dimensions, and suggested question patterns for that agent. This step helps you understand what data is available before you ask a question—and avoids the frustrating experience of asking about data the agent doesn't cover.
+The response can help identify available topics, time periods, geographic dimensions, and suggested question patterns for that agent. Check those details against the agent's description or with your data team before relying on them.
 
 For example, Sofia opens the Contoso Bakehouse Sales Agent for the first time and asks, "What kinds of questions can I ask here?" The agent responds by listing available metrics (revenue, unit sales, franchise performance, country/region breakdowns) and the time range covered (2024 through present). With that context, she knows exactly how to frame her Q1 question.
 
@@ -30,7 +30,7 @@ Not every question needs all five elements. But including as many as apply signi
 
 ## Apply SPARK to your questions
 
-The most common source of unexpected answers is a **missing time period** (the P in SPARK). When you don't specify a period, Genie makes an assumption—and that assumption may not match what you had in mind.
+A **missing time period** (the P in SPARK) is one source of unexpected answers. When you don't specify a period, Genie might make an assumption that doesn't match what you had in mind.
 
 Compare these question pairs across different business contexts:
 
@@ -50,7 +50,7 @@ Compare these question pairs across different business contexts:
 - Vague: Show me headcount.
 - SPARK: What was total headcount by department as of March 31, 2026, shown as a table ranked from largest to smallest?
 
-In each case, the SPARK version covers all five elements: scope (the data domain), period (specific dates), aggregation (how to calculate), result (the format you want), and key metric (the exact value). That structure removes ambiguity and consistently produces a more reliable answer.
+In each case, the SPARK version covers all five elements: scope (the data domain), period (specific dates), aggregation (how to calculate), result (the format you want), and key metric (the exact value). That structure reduces ambiguity, but you still need to verify the answer.
 
 ## Use multi-turn conversations to drill deeper
 
@@ -65,4 +65,4 @@ Genie carries the earlier context forward. She doesn't need to re-specify the me
 > [!TIP]
 > If Genie asks you a clarifying question before answering—for example, "Did you mean revenue or unit count?"—answer it. That clarification ensures the agent has the context it needs to give you a reliable result. If you skip the clarification and repeat the question, Genie makes an assumption that might not be correct.
 
-Context is maintained within a single thread. If you start a new thread or open a new conversation, Genie starts fresh without memory of that earlier thread.
+A Genie Agent uses the context of the current conversation thread, and that thread context doesn't carry over to other agent chats. Don't apply this as a blanket rule to Genie One: it can recall relevant past conversations and use saved memories. Restate important dates and definitions, and review any history or memory citations. See [Recall past conversations](/azure/databricks/genie-one/chat#recall-past-conversations).

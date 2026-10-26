@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/25/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -21,7 +21,7 @@ quiz:
       explanation: "This question is missing a period, an aggregation method, a result format, and a key metric. Genie has to make assumptions for all of them, which increases the chance of getting a result that doesn't match your intent."
     - content: "What was total revenue in dollars by product category for Q2 2026, shown as a table?"
       isCorrect: true
-      explanation: "This question covers all five SPARK elements: scope (revenue by product category), period (Q2 2026), aggregation (total), result (table), and key metric (dollars). That specificity removes ambiguity and produces a reliable answer."
+      explanation: "This question covers all five SPARK elements: scope (revenue by product category), period (Q2 2026), aggregation (total), result (table), and key metric (revenue, measured in dollars). That specificity reduces ambiguity, but you still need to verify the answer."
     - content: "Give me the latest revenue numbers with as much detail as possible."
       isCorrect: false
       explanation: "This question doesn't specify a period, aggregation method, or output format. 'As much detail as possible' is ambiguous, and 'latest' could mean today, this week, or this quarter depending on Genie's interpretation."
@@ -40,13 +40,13 @@ quiz:
     choices:
     - content: "Yes—Genie's causal analysis is verified against the data, so it's reliable."
       isCorrect: false
-      explanation: "Genie answers factual questions using your organization's data. It doesn't reliably analyze causes or provide recommendations. Treat any causal interpretation as unverified until a domain expert confirms it."
-    - content: "No—for standard data queries, Genie retrieves and reports data but doesn't analyze causes or give recommendations. You should treat any causal interpretation with skepticism and verify it with a domain expert."
+      explanation: "An AI-generated causal analysis isn't automatically verified. Agent mode can investigate causes and patterns, but you still need to check its evidence and conclusions with a domain expert."
+    - content: "No—verify the evidence and causal interpretation with a domain expert before using it in a formal report."
       isCorrect: true
-      explanation: "Genie is designed to answer factual questions using available data. Interpretive or causal answers are outside its reliable scope. For a formal report, verify causal claims with a domain expert or your data team."
+      explanation: "Chat mode focuses on factual SQL-backed questions, while Agent mode supports deeper investigation. Neither mode removes the need to verify causal claims with a domain expert or your data team."
     - content: "Only if the answer is labeled Trusted."
       isCorrect: false
-      explanation: "The Trusted label means a domain expert reviewed and confirmed a specific factual answer. It doesn't make a causal or interpretive response reliable."
+      explanation: "A trusted asset is an editor-provided query or function with verified logic. It doesn't guarantee that Genie matched the question correctly or that a causal interpretation is valid."
   - content: "You want to use Genie to answer a one-off data question during a broader Microsoft 365 Copilot conversation without switching to a dedicated agent session. Which method should you use?"
     choices:
     - content: "Open a dedicated agent conversation via More agents and select Databricks Genie."
@@ -54,7 +54,7 @@ quiz:
       explanation: "The More agents path opens a persistent, scoped conversation dedicated to Genie. It's better suited for multiple exchanges on a data topic, not a single question within a broader conversation."
     - content: "Type @Databricks and select Databricks Genie in a new Microsoft 365 Copilot chat."
       isCorrect: true
-      explanation: "The @mention approach is designed for ephemeral, one-off data questions within a broader Copilot chat. It lets you get a Genie answer without committing to a dedicated agent session."
+      explanation: "The @mention approach lets you ask Genie a question from a new Copilot chat without first opening a dedicated agent conversation. It doesn't imply that the exchange is temporary or excluded from conversation history."
     - content: "Open the Databricks Genie app directly in Azure Databricks."
       isCorrect: false
       explanation: "Opening Azure Databricks requires switching to a different tool entirely. The question asks how to get a Genie answer within an ongoing Microsoft 365 Copilot conversation."
