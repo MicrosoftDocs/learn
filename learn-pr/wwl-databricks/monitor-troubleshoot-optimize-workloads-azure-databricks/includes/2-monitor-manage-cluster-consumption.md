@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=56720b1a-acba-450c-b425-e96495ac48a9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 When clusters run longer than needed or consume more resources than necessary, costs can escalate quickly. As a data engineer, you're responsible for **monitoring cluster usage** and taking action to balance **performance requirements** with **cost efficiency**.
 
@@ -136,3 +145,5 @@ Reviewing monthly cost reports helps you catch anomalies early. Investigate unex
 
 > [!NOTE]
 > Serverless compute for notebooks and jobs uses a different cost model. In `system.billing.usage`, filter by `product_features.is_serverless = true` to isolate serverless usage. The `identity_metadata.run_as` column identifies which user or service principal ran the workload. Multiple billing records can appear for a single serverless job run, including correction records, so aggregate with `SUM()` rather than expecting a single row per run.
+
+::: zone-end

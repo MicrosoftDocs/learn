@@ -2,9 +2,10 @@
 uid: learn.wwl.govern-unity-catalog-objects.manage-data-lineage-tracking
 title: Set up and manage data lineage
 metadata:
+  zone_pivot_groups: video-or-text
   title: Set Up and Manage Data Lineage
   description: Learn how to set up and manage data lineage tracking by using Catalog Explorer, including owner, history, dependencies, and lineage in Azure Databricks.
-  ms.date: 10/12/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

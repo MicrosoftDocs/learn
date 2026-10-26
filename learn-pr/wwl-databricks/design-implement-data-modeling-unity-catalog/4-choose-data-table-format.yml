@@ -2,9 +2,10 @@
 uid: learn.wwl.design-implement-data-modeling-unity-catalog.choose-data-table-format
 title: Choose a data table format
 metadata:
+  zone_pivot_groups: video-or-text
   title: Choose a Data Table Format
   description: Learn how to select the appropriate data table format in Azure Databricks, including Delta Lake, Apache Iceberg, Parquet, CSV, and JSON based on performance, transaction requirements, and interoperability needs.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -1,4 +1,10 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=aafb4cc3-3e5a-4168-8e10-d78366db752c]
+
+::: zone-end
+
+::: zone pivot="text"
 
 Running data workloads in Azure Databricks at scale requires more than setting up clusters and writing pipelines—it demands continuous attention to resource consumption, job health, and performance optimization. When compute costs climb unexpectedly, jobs fail without clear explanations, or queries that once ran quickly now take hours, you need systematic approaches to identify problems and apply targeted fixes.
 
@@ -9,3 +15,8 @@ Performance issues often trace back to common patterns: **data skew** that overl
 For enterprise-scale environments, **log streaming to Azure Log Analytics** centralizes diagnostic and audit data from across your Azure Databricks workspaces. This integration enables KQL queries for troubleshooting, proactive alerting for critical events, and visibility into platform operations.
 
 Throughout this module, you explore cluster consumption monitoring, Lakeflow Jobs troubleshooting, Spark job diagnostics, performance optimization techniques, and log streaming configuration to build the skills needed to keep your Azure Databricks workloads running reliably and cost-effectively.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

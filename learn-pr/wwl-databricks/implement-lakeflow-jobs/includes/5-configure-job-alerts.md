@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=b52fb4cb-5669-4559-b1c6-ccc13bdcf87f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 When your data pipelines run in production, you need to know when something goes wrong—or even when everything goes right. Configuring **job alerts** in Azure Databricks gives you visibility into job execution without constantly monitoring dashboards. Alerts enable you to respond quickly to failures, track long-running jobs, and maintain confidence in your data workflows.
 
@@ -129,3 +138,5 @@ To configure ADF alerts, navigate to **Monitor** > **Alerts & metrics** in the D
 This layered approach—Databricks notifications for job-level events and ADF alerts for orchestration-level metrics—gives you comprehensive visibility across your data platform.
 
 With alerts configured at the right granularity and sent to the right channels, you can respond to issues quickly while avoiding the distraction of unnecessary notifications. As you deploy more jobs to production, revisit your alerting strategy to ensure it scales with your workload.
+
+::: zone-end

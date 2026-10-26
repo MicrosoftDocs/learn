@@ -2,9 +2,10 @@
 uid: learn.wwl.design-implement-data-pipelines.design-error-handling-pipelines
 title: Design error handling in pipelines and jobs
 metadata:
+  zone_pivot_groups: video-or-text
   title: Design Error Handling in Pipelines and Jobs
   description: Learn how to design and implement error handling strategies in Azure Databricks data pipelines, notebooks, and jobs using expectations, retry policies, notifications, and exception handling.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

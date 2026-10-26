@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=9641bd12-f1cf-4ef0-be79-1dd29424da72]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Before you cleanse or transform data, you need to understand what's in your tables. **Profiling data** means examining your datasets to generate summary statistics—counts, averages, value distributions, and null percentages—that reveal the quality and structure of your data. This foundation helps you identify issues like missing values, outliers, and unexpected patterns before they cause problems downstream.
 
@@ -166,3 +175,5 @@ When you examine profiling results, look for these common indicators:
 The drift metrics table calculates statistical tests like the Kolmogorov-Smirnov (KS) test for numeric columns and chi-squared test for categorical columns. These tests quantify how much distributions have changed.
 
 Understanding these patterns helps you design appropriate cleansing and validation rules for your data pipelines.
+
+::: zone-end

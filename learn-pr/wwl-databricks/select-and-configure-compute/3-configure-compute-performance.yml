@@ -2,9 +2,10 @@
 uid: learn.wwl.select-and-configure-compute.configure-compute-performance
 title: Configure compute performance
 metadata:
+  zone_pivot_groups: video-or-text
   title: Configure Compute Performance
   description: Learn how to configure Azure Databricks compute performance settings including node types, autoscaling, termination, and instance pools to balance cost and performance.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

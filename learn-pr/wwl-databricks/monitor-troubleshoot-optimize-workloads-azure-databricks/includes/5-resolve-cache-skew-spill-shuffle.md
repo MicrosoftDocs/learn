@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=098f1548-94fd-4a0c-940c-7c66d38544fb]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 A query that ran fine yesterday now takes three times longer. A job that processed millions of records suddenly fails with memory errors. These situations often trace back to four common performance issues: **caching problems**, **data skew**, **memory spill**, and **excessive shuffle**. Knowing how to investigate these issues using Azure Databricks diagnostic tools helps you restore performance quickly.
 
@@ -109,3 +118,5 @@ Reduce unnecessary shuffle with these approaches:
 The query profile in SQL warehouses shows shuffle as **Shuffle** operators in the DAG. Select these operators to see metrics like data size and number of partitions exchanged.
 
 By systematically checking for skew and spill in the Spark UI, reviewing shuffle metrics, and understanding your caching behavior, you can diagnose most performance issues and apply targeted fixes.
+
+::: zone-end

@@ -2,9 +2,10 @@
 uid: learn.wwl.ingest-data-into-unity-catalog.ingest-data-cdc-feed
 title: Ingest data with CDC feed
 metadata:
+  zone_pivot_groups: video-or-text
   title: Ingest Data with CDC Feed
   description: Learn how to ingest data using change data capture (CDC) feeds in Azure Databricks, including processing changes with the AUTO CDC API and handling SCD Type 1 and Type 2 patterns.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -2,9 +2,10 @@
 uid: learn.wwl.implement-manage-data-quality-constraints-unity-catalog.manage-data-quality-pipeline-expectations
 title: Manage data quality with pipeline expectations
 metadata:
+  zone_pivot_groups: video-or-text
   title: Manage Data Quality with Pipeline Expectations
   description: Learn how to use pipeline expectations in Lakeflow pipelines to define and enforce data quality rules for streaming tables and materialized views.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

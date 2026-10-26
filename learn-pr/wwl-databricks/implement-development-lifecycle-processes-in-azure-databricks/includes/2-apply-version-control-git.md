@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=09b1546c-02c8-4441-b020-a0f296417232]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Data engineering projects require systematic tracking of code changes, collaboration across teams, and the ability to **reproduce work reliably**. When you apply version control best practices using Git within Azure Databricks, you establish a foundation for professional development workflows. **Git folders** integrate directly into your workspace, providing a visual interface for managing repositories without leaving your development environment.
 
@@ -56,3 +65,5 @@ A well-organized repository makes collaboration easier and reduces confusion. Ap
 > Git folders have size constraints. Working branches are limited to 1 GB, and Databricks recommends keeping the total number of assets below 20,000. For large repositories, consider using **sparse checkout** to work with only the directories you need.
 
 When everyone follows consistent organization practices, team members can find what they need quickly and understand how the codebase fits together.
+
+::: zone-end

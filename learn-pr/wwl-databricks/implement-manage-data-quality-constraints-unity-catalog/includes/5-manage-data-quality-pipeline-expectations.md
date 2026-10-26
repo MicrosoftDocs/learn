@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=89da28d5-6674-447c-9a17-5073e4e4b749]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Data quality issues can disrupt downstream analytics and erode trust in your data. When invalid records slip into production tables, they might cause report failures, incorrect business decisions, or compliance violations. Pipeline expectations in Lakeflow pipelines give you a way to define quality rules that run automatically as data flows through your pipeline.
 
@@ -191,3 +200,5 @@ Input data: '{"id":"TEMP_001","temperature":-500,"timestamp_ms":"1710498600"}'.
 You can also query expectation metrics programmatically through the Lakeflow pipelines event log. This approach enables you to build custom dashboards or trigger alerts based on data quality thresholds.
 
 Understanding when to use expectations sets you up to build pipelines that catch data quality issues before they affect downstream consumers. With the right combination of constraints and actions, you create a reliable data foundation for your analytics workloads.
+
+::: zone-end

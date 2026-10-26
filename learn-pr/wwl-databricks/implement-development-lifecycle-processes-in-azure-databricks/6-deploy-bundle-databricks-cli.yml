@@ -2,9 +2,10 @@
 uid: learn.wwl.implement-development-lifecycle-processes-azure-databricks.deploy-bundle-databricks-cli
 title: Deploy bundle with Databricks CLI
 metadata:
+  zone_pivot_groups: video-or-text
   title: Deploy Bundle with Databricks CLI
   description: Learn how to deploy Declarative Automation Bundles to Azure Databricks using CLI commands, including validation, deployment planning, and troubleshooting common issues.
-  ms.date: 10/12/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

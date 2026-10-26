@@ -2,9 +2,10 @@
 uid: learn.wwl.select-and-configure-compute.choose-appropriate-compute-type
 title: Choose an appropriate compute type
 metadata:
+  zone_pivot_groups: video-or-text
   title: Choose an Appropriate Compute Type
   description: Learn how to choose the right compute type for your Azure Databricks workloads, comparing serverless, classic, SQL warehouses, instance pools, and job compute options.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

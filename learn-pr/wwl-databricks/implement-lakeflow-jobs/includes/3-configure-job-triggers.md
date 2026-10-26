@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=37d8134b-cfef-4d1b-bd83-aacb9cdbae26]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 When you configure job triggers in Lakeflow Jobs, you enable automated pipeline execution based on data events rather than fixed schedules. Your jobs can respond to changes in source tables, new file arrivals, or run continuously to process data as it becomes available.
 
@@ -114,3 +123,5 @@ Pausing a trigger stops new runs from starting while allowing any active run to 
 To receive notifications when trigger evaluation fails, configure email or system destination notifications on your job. This approach ensures you're informed when triggers encounter problems such as permission changes or table deletions.
 
 Now that you understand how to configure triggers that automate job execution based on data events, you can build responsive pipelines that process data as it becomes available.
+
+::: zone-end

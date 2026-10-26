@@ -1,8 +1,17 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=99e9c9ea-b4e0-4c5d-9e45-ddec74896dc6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When you run notebooks and jobs on Azure Databricks compute, you often need third-party packages or custom code that isn't included in the default runtime. Installing **libraries** at the **cluster level** ensures that every notebook and job using that compute has access to the same dependencies, creating a consistent execution environment.
 
 Understanding how to install libraries effectively becomes critical as your data engineering workflows grow in complexity. You need to know which installation method to use, where to store library files, and how access modes affect your options.
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=99e9c9ea-b4e0-4c5d-9e45-ddec74896dc6]
 
 ## Understand compute-scoped libraries
 
@@ -85,3 +94,5 @@ To configure the `allowlist`, metastore admins use Catalog Explorer, selecting t
 Different library installation methods suit different scenarios. The following diagram illustrates a decision flow to help you select the appropriate installation approach:
 
 ![Diagram showing the different library installation methods.](../media/library-installation.png)
+
+::: zone-end

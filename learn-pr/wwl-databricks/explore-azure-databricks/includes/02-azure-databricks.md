@@ -1,4 +1,15 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=d4fcf5c1-5d99-439c-8bba-157f93385e15]
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=06416086-5e53-47c0-8804-8387d1973871]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 To use Azure Databricks, you must create an Azure Databricks workspace in your Azure subscription. A workspace is an Azure Databricks deployment in a cloud service account. It provides a unified environment for working with Azure Databricks assets for a specified set of users.
 
@@ -71,8 +82,6 @@ The workspace is available in **multiple languages.** To change the workspace la
 
 ## Get help from Genie Code
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=06416086-5e53-47c0-8804-8387d1973871]
-
 **Genie Code** (formerly Databricks Assistant) is an AI-powered pair programmer and support tool that helps you work more efficiently in Databricks by generating, explaining, and fixing code or queries directly in notebooks, dashboards, and files.
 
 ![Screenshot of Genie Code in Azure Databricks.](../media/genie-code.png)
@@ -82,3 +91,5 @@ It can assist with a wide range of tasks, including identifying and correcting e
 Genie Code also runs in **Agent mode**, which plans solutions, retrieves relevant assets, runs code, uses cell outputs to improve results, and fixes errors across multi-step data tasks. Genie Code asks for your approval before it uses tools such as running code or editing a notebook.
 
 By using Unity Catalog metadata, it personalizes its responses based on your organization’s data assets—tables, columns, and descriptions—making it easier to explore and work with your data.
+
+::: zone-end

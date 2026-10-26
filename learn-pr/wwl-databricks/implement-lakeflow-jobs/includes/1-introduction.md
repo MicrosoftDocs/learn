@@ -1,4 +1,10 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=2c80d1c5-45cc-482c-87ae-35e7369f26c0]
+
+::: zone-end
+
+::: zone pivot="text"
 
 Data pipelines rarely succeed when run manually at arbitrary times. **Production workloads** demand automation—jobs that execute reliably, respond to data changes, and recover from failures without human intervention. **Lakeflow Jobs** in Azure Databricks provides the **orchestration layer** that transforms ad hoc data processing into robust, automated workflows.
 
@@ -7,3 +13,8 @@ Building effective data pipelines requires more than writing transformation logi
 Lakeflow Jobs addresses these challenges through a comprehensive set of features. You create jobs that organize tasks as **directed acyclic graphs (DAGs)**, defining execution order and dependencies. You configure **triggers** that respond to table updates, file arrivals, or continuous processing needs—eliminating rigid schedules that miss data changes or waste resources. You set up **schedules** using simple intervals or cron expressions when time-based execution fits your requirements. **Alerts and notifications** keep your team informed about job status without constant dashboard monitoring. **Automatic restart policies** handle transient failures gracefully, maintaining pipeline reliability during inevitable infrastructure hiccups.
 
 This module guides you through implementing these Lakeflow Jobs capabilities. You explore **job creation** and **task configuration**, event-based and scheduled triggers, alerting strategies, and **retry policies** that keep your data pipelines running smoothly. By mastering these concepts, you build automation that your organization can depend on for **critical data processing workloads**.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=5a45c669-7252-4be8-9837-00f9515a1009]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Notebooks in Azure Databricks provide a flexible, code-driven approach for ingesting data from various sources. When graphical tools don't meet your requirements, or when you need custom logic for data transformation, notebooks give you complete control over the ingestion process. You can use Python (PySpark), SQL, Scala, or R to connect to data sources, apply transformations, and load data into Unity Catalog tables.
 
@@ -158,3 +167,5 @@ df_variant.select(variant_get(col("data"), "$.customer.name", "string")).display
 ```
 
 This approach works well when the JSON schema varies between records or evolves over time.
+
+::: zone-end

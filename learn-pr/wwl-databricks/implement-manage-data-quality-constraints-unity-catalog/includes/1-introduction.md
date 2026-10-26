@@ -1,4 +1,10 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=8f94718e-160e-4b3f-902f-fb1d807a3107]
+
+::: zone-end
+
+::: zone pivot="text"
 
 **Data quality** issues can derail analytics projects, corrupt business reports, and erode confidence in your data platform. When invalid data enters your tables—whether through type mismatches, missing required values, or unexpected schema changes—problems compound as that data flows through pipelines and reaches downstream consumers. Implementing robust **data quality constraints** at the point of ingestion creates a foundation of trust in your data assets.
 
@@ -7,3 +13,8 @@ Azure Databricks provides multiple mechanisms for enforcing data quality within 
 Throughout this module, you explore practical techniques for implementing data quality constraints. You learn how to enforce data type checks using **schema validation**, **explicit casting**, and **CHECK constraints**. You discover strategies for managing **schema drift** when source systems evolve over time. You implement validation checks for **nullability**, **uniqueness**, and **value ranges**. Finally, you master pipeline expectations that monitor data quality metrics and take automated actions when violations occur.
 
 By combining these approaches, you build pipelines that catch quality issues early, prevent invalid data from reaching production tables, and provide visibility into the health of your data. These skills are essential for data engineers working with Unity Catalog who need to maintain high data quality standards across their organization's data estate.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

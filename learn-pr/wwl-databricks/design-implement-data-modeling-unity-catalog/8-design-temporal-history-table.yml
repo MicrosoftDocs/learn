@@ -2,9 +2,10 @@
 uid: learn.wwl.design-implement-data-modeling-unity-catalog.design-temporal-history-table
 title: Design and implement a temporal (history) table to record changes over time
 metadata:
+  zone_pivot_groups: video-or-text
   title: Design and Implement a Temporal (History) Table to Record Changes Over Time
   description: Learn how to design and implement temporal tables in Azure Databricks to track row-level changes for auditing, debugging, and point-in-time queries.
-  ms.date: 10/02/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

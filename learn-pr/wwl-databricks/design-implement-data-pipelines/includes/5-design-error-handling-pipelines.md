@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=1268c800-cec5-4dae-9d18-8e66d28446d3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 When data pipelines fail, the consequences extend beyond immediate job errors. Invalid records can corrupt downstream analytics, unnoticed failures can accumulate technical debt, and without proper alerting, teams might discover problems hours or days after they occur. Designing robust **error handling** transforms your pipelines from fragile processes into resilient systems that protect data quality and enable rapid recovery.
 
@@ -157,3 +166,5 @@ Effective error handling balances thoroughness with practicality. Consider these
 **Monitor trends**: Track data quality metrics over time. A gradual increase in dropped records might indicate upstream system changes that need attention.
 
 **Test failure scenarios**: Validate that your error handling works as expected by deliberately introducing failures during development.
+
+::: zone-end

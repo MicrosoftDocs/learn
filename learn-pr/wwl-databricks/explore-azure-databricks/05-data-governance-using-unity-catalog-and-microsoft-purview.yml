@@ -2,9 +2,10 @@
 uid: learn.wwl.explore-azure-databricks.data-governance
 title: Data governance using Unity Catalog and Microsoft Purview
 metadata:
+  zone_pivot_groups: video-or-text
   title: Data Governance Using Unity Catalog and Microsoft Purview
   description: "Data governance using Unity Catalog and Microsoft Purview"
-  ms.date: 10/12/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

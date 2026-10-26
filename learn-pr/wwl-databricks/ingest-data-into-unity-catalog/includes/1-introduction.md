@@ -1,4 +1,10 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=e6f63fcd-62cc-455f-bc82-e42352cb6dcc]
+
+::: zone-end
+
+::: zone pivot="text"
 
 Data engineers face a fundamental challenge: getting data from diverse sources into a unified analytics platform efficiently and reliably. Whether your organization works with batch files in cloud storage, streaming events from Kafka, or transactional data from operational databases, you need ingestion methods that handle each scenario while maintaining data quality and governance. **Unity Catalog** in Azure Databricks provides the foundation for this unified approach, offering centralized governance for all your ingested data.
 
@@ -7,3 +13,8 @@ Azure Databricks offers multiple ingestion techniques, each optimized for specif
 Understanding when to apply each technique enables you to build robust data pipelines that scale with your organization. You'll learn how to configure managed connectors for enterprise data sources, write notebook code for custom ingestion scenarios, use SQL commands for file-based batch loads, process change data capture feeds incrementally, stream data from message buses like Kafka and Event Hubs, configure Auto Loader for automatic file detection, and orchestrate ingestion workflows with Lakeflow pipelines.
 
 By the end of this module, you'll be equipped to choose and implement the right ingestion approach for any data source, ensuring your data lands in Unity Catalog tables with proper governance and optimal performance.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

@@ -1,4 +1,10 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=31cbad27-483b-4952-a0fc-0e52a1a460f4]
+
+::: zone-end
+
+::: zone pivot="text"
 
 Building reliable data engineering solutions in Azure Databricks requires more than writing code that works—it demands processes that enable collaboration, ensure quality, and support consistent deployments across environments. When data pipelines grow in complexity and team members contribute simultaneously, you need systematic approaches to track changes, validate code, and move work from development to production reliably.
 
@@ -7,3 +13,8 @@ Azure Databricks integrates with established development practices through **Git
 Effective development lifecycle management also depends on testing strategies. The **testing pyramid**—spanning unit tests, integration tests, end-to-end tests, and user acceptance testing—helps you catch issues early, validate component interactions, and confirm business requirements are met before production deployment. By automating these tests and incorporating them into your deployment workflows, you reduce risk and build confidence in your data solutions.
 
 Throughout this module, you work with Git version control practices, branching strategies and pull request workflows, comprehensive testing approaches, and bundle configuration with CLI deployment. These skills enable you to implement professional development lifecycle processes that scale with your team and project complexity.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

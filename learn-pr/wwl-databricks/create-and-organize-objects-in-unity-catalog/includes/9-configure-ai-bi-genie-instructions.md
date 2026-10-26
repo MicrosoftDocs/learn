@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=1e17e69d-6fe2-432d-bcfc-7e9588577e9b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Making your data discoverable involves more than organizing it into catalogs and schemas. **AI/BI Genie** in Azure Databricks enables business users to explore data through **natural language questions**, but it needs guidance to interpret your organization's terminology and business logic. When you configure AI/BI Genie instructions properly, you transform Unity Catalog metadata into a **knowledge store** that helps both humans and AI systems understand your data.
 
@@ -72,3 +81,5 @@ Encourage business users to provide feedback through the built-in response ratin
 Genie also learns on its own through **knowledge mining recommendations**. When you first create a space, Genie analyzes the Unity Catalog metadata for your selected tables and automatically saves any primary key and foreign key relationships it finds as join relationships in the knowledge store — so well-annotated schemas reduce manual setup from the start. Beyond initial discovery, whenever you approve a response (by marking it correct or downloading the results), Genie analyzes the underlying SQL and may suggest new SQL expressions — measures, filters, or dimensions — as well as additional join relationships to add to the knowledge store. Suggestions appear for your review and are not added automatically, keeping you in control of what guidance Genie relies on.
 
 As you iterate, watch for patterns in failed queries. If Genie consistently uses the wrong table or column, review your metadata and descriptions. If it can't match user language to data values, check that prompt matching is enabled for relevant columns. If joins are incorrect, verify your relationship definitions. Each refinement makes the knowledge store more accurate and the space more valuable to users.
+
+::: zone-end

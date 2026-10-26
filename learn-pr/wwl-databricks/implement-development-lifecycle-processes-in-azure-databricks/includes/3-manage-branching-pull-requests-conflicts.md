@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=08b19b6b-832c-4b15-a30a-7f1fc6f930c6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Collaborative development in Azure Databricks relies on effective **version control practices**. When multiple team members work on notebooks and code files simultaneously, you need a structured approach to **isolate changes**, **review code**, and **integrate work** without disrupting production workflows.
 
@@ -89,3 +98,5 @@ After resolving all conflicts, select **Continue Merge** or **Continue Rebase** 
 > **Pull changes frequently** from the remote repository to catch conflicts early. Small, frequent merges are easier to resolve than large, complex ones.
 
 With these branching and conflict resolution skills, you can participate effectively in team development workflows. Your next step is understanding how these practices integrate with broader CI/CD processes for deploying code across environments.
+
+::: zone-end

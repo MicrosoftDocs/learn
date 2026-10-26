@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=cc9a82b0-d30e-437c-87cb-e96240966031]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 When you need to automate data processing or orchestrate multiple operations in Azure Databricks, you create a **Lakeflow Job**. A job coordinates tasks, manages their execution order, and allocates compute resources to run your workloads reliably.
 
@@ -164,3 +173,5 @@ GRANT USE SCHEMA ON SCHEMA catalog.schema TO `service-principal-id`;
 If the run identity lacks the required privileges, the job fails at runtime with an authorization error—even if the job configuration itself is valid. Always verify Unity Catalog access before scheduling production jobs.
 
 With your job created, tasks configured, dependencies set, and permissions assigned, you're ready to run your workflow. The next step is understanding how to monitor job execution and handle run outcomes.
+
+::: zone-end

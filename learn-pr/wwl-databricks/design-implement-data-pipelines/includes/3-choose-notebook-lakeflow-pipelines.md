@@ -1,4 +1,13 @@
+::: zone pivot="video"
+
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=37fd6fc9-80f1-4af1-b3fe-42400ac6660c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 When you build data pipelines in Azure Databricks, you have two primary approaches: **notebooks** with procedural code and **Lakeflow pipelines**. Each approach serves different needs, and understanding when to use each helps you deliver maintainable, efficient data solutions.
 
@@ -68,3 +77,5 @@ For production pipelines with standard ingestion and transformation patterns, La
 For exploratory work, complex integrations, or pipelines requiring extensive customization, notebooks provide the **flexibility** you need. You can always refactor successful notebook prototypes into declarative pipelines once the logic stabilizes.
 
 Many teams use **both approaches together**. Notebooks handle custom preprocessing or machine learning model training, while Lakeflow pipelines manage the core ETL workflow. This **hybrid approach** lets you use each tool where it performs best.
+
+::: zone-end
