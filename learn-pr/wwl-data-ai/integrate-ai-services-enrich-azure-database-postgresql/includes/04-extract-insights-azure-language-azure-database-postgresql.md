@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=eba0dfc9-79af-4d8a-a153-e71d2e49ebe7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Businesses often store text that's rich with details but hard to work with directly. A single property description might mention furniture, neighborhood landmarks, and amenities, while a guest review could mix praise with criticism. Buried in these words are clues that could improve search, highlight unique features, or surface trends. The challenge is finding a way to pull out those details without reading through every line of text.  
 
 Let’s consider **Margie’s Travel**, a vacation rental company that manages thousands of listings. Their database holds long descriptions and customer reviews. The application team wants to quickly identify the main topics, capture mentions of specific places or items, and ensure that sensitive details like phone numbers aren't exposed. Performing these tasks by hand isn’t practical at scale, so they use Azure Language services with the `azure_ai` extension in Azure Database for PostgreSQL.  
@@ -40,3 +51,5 @@ For Margie’s Travel, these capabilities mean they can handle large volumes of 
 ## Key takeaways
 
 In this unit, you learn how to extract insights from text data with Azure Language services in Azure Database for PostgreSQL. Key phrase extraction identifies important topics, named entity recognition categorizes entities, and PII detection safeguards sensitive information. These techniques turn free-form text into structured data that's easier to analyze, search, and protect.  
+
+::: zone-end

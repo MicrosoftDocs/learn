@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=91f2561a-155d-4383-92a2-df979cee724e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Organizations often store large amounts of unstructured text, such as product details, customer reviews, or service descriptions. While this information contains useful insights, it can be difficult to scan quickly or use effectively in applications. Without a way to condense text into shorter summaries, both employees and customers could struggle to identify the most important details.  
 
 Let’s consider how a managed travel company deals with this challenge. *Margie’s Travel*, which manages vacation rentals, stores long property descriptions in their PostgreSQL database. Each listing includes paragraphs about amenities, location, and nearby attractions. While this information is helpful, customers who are browsing multiple properties don’t always have time to read every detail. Margie’s Travel wants a way to generate shorter summaries that highlight the most important features. Customers can use these summaries to compare listings quickly and make confident booking decisions.  
@@ -39,3 +50,5 @@ By applying these summarization techniques with Azure AI Services, Margie’s Tr
 ## Key takeaways
 
 In this unit, you learn how to summarize text with Azure AI Services in Azure Database for PostgreSQL. Extractive summarization highlights the most important sentences from the original text, while abstractive summarization creates new sentences that express the meaning more naturally. Both approaches make long passages easier to work with and help applications present information in a clear, concise way.  
+
+::: zone-end

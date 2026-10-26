@@ -4,8 +4,8 @@ title: Exercise - Use Azure AI services with Azure Database for PostgreSQL
 metadata:
   title: Exercise - Use Azure AI services with Azure Database for PostgreSQL
   description: "Practice summarization, sentiment/opinion mining, key phrase/entity extraction, and translation in Azure Database for PostgreSQL."
-  ms.date: 09/08/2025
-  author: wwlpublish
+  ms.date: 10/25/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 20

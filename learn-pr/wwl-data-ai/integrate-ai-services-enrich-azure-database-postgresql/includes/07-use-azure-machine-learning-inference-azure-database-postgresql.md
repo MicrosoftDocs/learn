@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6a509404-c967-4f33-bba4-9120b35baf63]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Many applications rely on predictive models to make decisions, such as estimating demand, detecting anomalies, or recommending actions. Building and deploying these models can be complex, requiring coordination between databases, services, and machine learning frameworks. Without integration, organizations often face delays in applying predictions to live data.  
 
 Let’s consider **Margie’s Travel**, a vacation rental company that wants to predict nightly rental prices for its listings. Their historical booking data contains useful signals like location, number of bedrooms, and amenities. With this data, they can train a machine learning model to estimate price ranges for new properties. Instead of exporting data and manually running predictions, Margie’s Travel wants to run these predictions directly from their database where the data already lives.  
@@ -31,3 +42,5 @@ For Margie’s Travel, this means being able to deliver real-time insights to pr
 ## Key takeaways
 
 In this unit, you learn how to use Azure Machine Learning with Azure Database for PostgreSQL to perform inferencing directly from the database. AutoML helps build models efficiently, and the `azure_ml.inference()` function enables real-time predictions on live data. This integration turns raw information into actionable intelligence that applications can use immediately.  
+
+::: zone-end
