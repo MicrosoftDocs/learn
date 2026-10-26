@@ -2,11 +2,11 @@
 uid: learn.azure.secure-azure-arc-enabled-servers.assess-secure-defend-azure-arc-enabled-servers-with-microsoft-defender-for-cloud
 title: Assess, secure, and defend Azure Arc-enabled servers with Microsoft Defender for Cloud
 metadata:
-  title: Assess, secure, and defend Azure Arc-enabled servers with Microsoft Defender for Cloud
-  description: Learn how the advanced capabilities of Microsoft Defender for Cloud for Azure Arc-enabled servers.
-  ms.date: 04/24/2024
-  author: aurnovcy
-  ms.author: aurnovc
+  title: Assess, Secure, and Defend Azure Arc-Enabled Servers with Microsoft Defender for Cloud
+  description: Learn about the advanced capabilities of Microsoft Defender for Cloud for Azure Arc-enabled servers.
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 6
 content: |

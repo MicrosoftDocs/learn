@@ -2,10 +2,11 @@
 uid: learn.wwl.integrate-ai-services-enrich-azure-database-postgresql.translate-text-azure-translator-azure-database-postgresql
 title: Translate text with Azure Translator and Azure Database for PostgreSQL
 metadata:
+  zone_pivot_groups: video-or-text
   title: Translate text with Azure Translator and Azure Database for PostgreSQL
   description: "Learn how to translate text in Azure Database for PostgreSQL using Azure Translator to support multilingual applications."
-  ms.date: 09/08/2025
-  author: wwlpublish
+  ms.date: 10/25/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 5

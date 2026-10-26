@@ -2,11 +2,11 @@
 uid: learn.azure.secure-azure-arc-enabled-servers.secure-azure-arc-enabled-servers-with-microsoft-defender-for-servers
 title: Secure Azure Arc-enabled servers with Microsoft Defender for Servers
 metadata:
-  title: Secure Azure Arc-enabled servers with Microsoft Defender for Servers
+  title: Secure Azure Arc-Enabled Servers with Microsoft Defender for Servers
   description: Learn how to secure Azure Arc-enabled servers with Microsoft Defender for Servers.
-  ms.date: 04/24/2024
-  author: aurnovcy
-  ms.author: aurnovc
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 6
 content: |

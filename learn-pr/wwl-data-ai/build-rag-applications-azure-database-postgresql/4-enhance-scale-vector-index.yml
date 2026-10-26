@@ -2,10 +2,11 @@
 uid: learn.wwl.build-rag-applications-azure-database-postgresql.enhance-scale-vector-index
 title: Enhance scale with vector indexes
 metadata:
+  zone_pivot_groups: video-or-text
   title: Enhance scale with vector indexes
   description: "Explore how vector indexing keeps retrieval fast at scale by choosing index types that balance speed, memory, and relevance."
-  ms.date: 08/08/2025
-  author: wwlpublish
+  ms.date: 10/25/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 8

@@ -2,10 +2,11 @@
 uid: learn.wwl.build-rag-applications-azure-database-postgresql.explore-scale-accuracy-problem
 title: Explore information retrieval challenges - scale and accuracy
 metadata:
+  zone_pivot_groups: video-or-text
   title: Explore information retrieval challenges - scale and accuracy
   description: "Explore how information retrieval balances scale and accuracy, then set a baseline to measure and improve search performance."
-  ms.date: 08/08/2025
-  author: wwlpublish
+  ms.date: 10/25/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 5

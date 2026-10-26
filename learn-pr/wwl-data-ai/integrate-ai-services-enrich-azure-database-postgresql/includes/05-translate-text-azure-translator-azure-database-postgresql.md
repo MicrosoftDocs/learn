@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8011839e-b3ac-4ab8-85da-cf9804dc3404]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Applications that work across regions often need to support multiple languages. Customers submit reviews, descriptions, or requests in one language, while the business needs to make the content available in another. Without translation, valuable information stays locked away from some audiences, creating communication barriers and limiting reach.  
 
 Let’s consider **Margie’s Travel**, a vacation rental company that serves an international customer base. Guests leave reviews in their native languages, and property owners upload descriptions in English, Spanish, Japanese, and other languages. To make the platform accessible, Margie’s Travel needs a way to automatically translate text so guests and hosts can understand each other without requiring manual translation.  
@@ -28,3 +39,5 @@ For Margie’s Travel, translation ensures the platform feels welcoming and usef
 ## Key takeaways
 
 In this unit, you learn how to use Azure Translator with Azure Database for PostgreSQL to translate text into multiple languages. This feature enables applications to provide multilingual support, improve accessibility, and deliver consistent experiences across global markets.  
+
+::: zone-end

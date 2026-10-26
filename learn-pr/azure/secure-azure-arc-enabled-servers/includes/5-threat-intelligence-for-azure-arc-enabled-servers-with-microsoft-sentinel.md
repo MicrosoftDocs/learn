@@ -1,23 +1,25 @@
-Tailwind Traders’ SOC (Security Operations Center) Analysts are struggling to assess their environment with its various SIEM and SOAR solutions. In this unit, you learn how Azure Arc-enabled servers work together with Microsoft Sentinel, a SIEM and SOAR solution that keeps up with hybrid and multicloud environment.
+Tailwind Traders' security operations center (SOC) analysts are struggling to assess their environment with its various SIEM and SOAR solutions. In this unit, you learn how Azure Arc-enabled servers work together with Microsoft Sentinel, a SIEM and SOAR solution that keeps up with hybrid and multicloud environments.
 
 ## Overview of Microsoft Sentinel
 
 Microsoft Sentinel is a scalable, cloud-native, **security information and event management (SIEM)** and **security orchestration, automation, and response (SOAR)** solution. Microsoft Sentinel delivers threat intelligence across the enterprise, providing a single solution for attack detection, proactive hunting, and threat response.
 
-Microsoft Sentinel is your birds-eye view across the enterprise for alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
+Microsoft Sentinel is your bird's-eye view across the enterprise for alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
+
+Use Microsoft Sentinel to perform these tasks:
 
 - **Collect data at cloud scale** across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds.
 - **Detect previously undetected threats** and minimize false positives using Microsoft's analytics and unparalleled threat intelligence.
-- **Investigate threats with artificial intelligence** and hunt for suspicious activities at scale, tapping into years of cyber security work at Microsoft.
+- **Investigate threats with artificial intelligence** and hunt for suspicious activities at scale, tapping into years of cybersecurity work at Microsoft.
 - **Respond to incidents rapidly** with built-in orchestration and automation of common tasks.
 
 ## Connect data
 
-To onboard Microsoft Sentinel, you first need to connect to your security sources.
+After you enable Microsoft Sentinel on a Log Analytics workspace, install the required solution from Content hub and configure its data connector to collect your security data.
 
 Microsoft Sentinel comes with several connectors for Microsoft solutions, available out of the box and which provide real-time integration. Microsoft Sentinel's out-of-the-box connectors include Microsoft 365 sources, Microsoft Entra ID, Microsoft Defender for Identity, and Microsoft Defender for Cloud Apps. In addition, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions.  
 
-Relevant data connectors for Azure Arc-enabled servers might include Security Events via Legacy Agent, Windows Security Events via AMA, or Syslog.
+For Arc-enabled servers, use **Windows Security Events via AMA** to collect supported Windows security events into the `SecurityEvent` table, or **Syslog via AMA** to collect Linux Syslog events into the `Syslog` table. Use **Common Event Format (CEF) via AMA** when your source produces CEF messages; these are stored in `CommonSecurityLog`. Configure the connector's data collection rule, workspace destination, and association with the appropriate Arc-enabled machines. Installing the Azure Monitor Agent alone doesn't configure event collection.
 
 ## Workbooks and analytics
 
@@ -29,7 +31,7 @@ To help you minimize the number of alerts you must investigate, Microsoft Sentin
 
 You can automate common tasks and simplify security orchestration with playbooks that integrate with Azure services and your existing tools.
 
-Using Azure Logic Apps, Microsoft Sentinel's automation and orchestration solution is extensible, scalable, and modernized. To build playbooks with Azure Logic Apps, you can choose from a growing gallery of built-in playbooks. These include 200+ connectors for services such as Azure Functions. The connectors allow you to apply any custom logic in code, ServiceNow, Jira, Zendesk, HTTP requests, Microsoft Teams, Slack, Windows Defender ATP, and Defender for Cloud Apps.
+Using Azure Logic Apps, Microsoft Sentinel's automation and orchestration solution is extensible, scalable, and modernized. To build playbooks with Azure Logic Apps, you can choose from a growing gallery of built-in playbooks. These include 200+ connectors for services such as Azure Functions. The connectors allow you to apply any custom logic in code, ServiceNow, Jira, Zendesk, HTTP requests, Microsoft Teams, Slack, Microsoft Defender for Endpoint through the Microsoft Defender ATP connector, and Defender for Cloud Apps. For the connector reference, see the summary's **More info** section.
 
 ## Hunting and notebooks
 
