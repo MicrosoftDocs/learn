@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=dd6b1a38-9cee-4f42-a3ee-ea67247e2915]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 GitHub Copilot integrates with the PostgreSQL extension in Visual Studio Code to provide AI-assisted database development. After connecting to a PostgreSQL database, Copilot can access contextual information from the live connection. This allows the `@pgsql` Copilot chat participant to generate schema-aware SQL queries and insights while developers remain in Visual Studio Code.
 
 Consider the Margie’s Travel scenario. Developers work with PostgreSQL databases that store property listings and customer reviews. Copilot helps them understand database structures, generate SQL queries, and manage schema changes while keeping development work centralized in the editor.
@@ -59,3 +70,5 @@ At Margie’s Travel, this model ensures that Copilot improves productivity whil
 ## What you’ve learned
 
 In this unit, you learned how GitHub Copilot integrates with the PostgreSQL extension in Visual Studio Code. You learned where the integration appears, the types of database tasks it supports, and how confirmation and review help developers safely use Copilot for PostgreSQL development.
+
+::: zone-end

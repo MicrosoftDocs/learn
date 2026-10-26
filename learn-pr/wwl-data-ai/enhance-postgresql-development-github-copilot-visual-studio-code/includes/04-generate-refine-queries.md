@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3761fa45-b0a1-40e6-9007-dfa94c4d47d3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 GitHub Copilot can be used with the PostgreSQL extension in Visual Studio Code to perform common database development tasks. By working through practical scenarios, developers use Copilot Chat to generate SQL queries and make schema changes, then review and execute the results using the PostgreSQL query editor.
 
 Consider the Margie’s Travel scenario. The application stores property listings and customer reviews in PostgreSQL. Developers use Copilot Chat to speed up tasks such as writing SQL queries and modifying tables while remaining in control of what is executed.
@@ -58,3 +69,5 @@ For example, at Margie’s Travel a developer might ask Copilot Chat for help im
 ## What you’ve learned
 
 You learned how GitHub Copilot can be applied with the PostgreSQL extension in Visual Studio Code. You saw how Copilot Chat is used to generate SQL queries, modify database schemas with confirmation, and address query issues, followed by reviewing and executing results in the PostgreSQL query editor.
+
+::: zone-end
