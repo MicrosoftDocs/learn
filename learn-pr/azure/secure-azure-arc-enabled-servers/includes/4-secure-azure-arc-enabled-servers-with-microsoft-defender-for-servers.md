@@ -1,52 +1,82 @@
-Tailwind Traders is interested in more of Microsoft Defender for Cloud’s enhanced security features. These enhanced security features include vulnerability assessments, file integrity monitoring, and adaptive application controls. In this unit, you learn how Azure Arc-enabled servers together with Microsoft Defender for Servers can unlock even more security functionality.
+Tailwind Traders wants to understand the protections available for its Arc-enabled servers. In this unit, you explore endpoint detection and response, vulnerability assessment, file integrity monitoring, and complementary application-control measures.
+
+Reference links for this unit are in the summary's **More info** section.
 
 ## Overview of Microsoft Defender for Servers
 
-Microsoft Defender for Servers is one of the enhanced security features of Microsoft Defender for Cloud. Defender for Servers adds threat detection and advanced defenses to your Windows and Linux machines whether they're running in Azure, on-premises, or in a multicloud environment. Core benefits of Defender for Servers include:
+Microsoft Defender for Servers is a paid plan in Microsoft Defender for Cloud. It protects supported Windows and Linux servers across cloud and on-premises environments. Features depend on the plan, operating system, and hosting environment.
 
-- Microsoft Defender for Endpoint Integration
-- Virtual machine behavioral analytics (and security alerts)
-- Fileless security alerts
-- Integrated Qualys vulnerability scanner
-- File integrity monitoring
-- Adaptive application controls
-- Regulatory compliance dashboard and reports
-- Missing OS patches assessment
-- Security misconfigurations assessment
-- Endpoint protection assessment
-- Non-Microsoft vulnerability assessment
+The following table summarizes the capabilities covered in this module.
+
+| Capability | Scope for this module |
+| --- | --- |
+| Microsoft Defender for Endpoint integration | Plan 1 and Plan 2, on supported Windows and Linux servers. |
+| Agent-based vulnerability assessment through Microsoft Defender Vulnerability Management | Plan 1 and Plan 2 through the endpoint sensor. |
+| Premium Defender Vulnerability Management capabilities | Plan 2; access these capabilities in the Microsoft Defender portal. |
+| File integrity monitoring | Plan 2, with separate enablement and a Log Analytics workspace. |
+| Dedicated fileless-security alerts | Plan 2 on supported Windows Arc-enabled servers; distinguish these alerts from general Defender for Endpoint detections. |
+
+For complete coverage and exclusions, see *Defender for Servers overview and plan comparison* and the *Defender for Servers support matrix*.
+
+Security posture capabilities also include assessments of applicable operating-system configuration and update status. Review the plan-specific guidance before relying on those assessments. Use Azure Update Manager for the supported update-management workflow and review its requirements and pricing separately.
 
 ## Integration with Microsoft Defender for Endpoint
 
-Defender for Servers includes Microsoft Defender for Endpoint. Together, they provide comprehensive endpoint detection and response (EDR) capabilities.
+Defender for Servers includes Defender for Endpoint capabilities for supported servers. The integration provides endpoint detection and response, vulnerability information, and software inventory. Endpoint alerts can appear in Defender for Cloud, and you can investigate the corresponding device and incident in the Microsoft Defender portal.
 
-When Defender for Endpoint detects a threat, it triggers an alert. The alert is shown in Defender for Cloud. From Defender for Cloud, you can also pivot to the Defender for Endpoint console and perform a detailed investigation to uncover the scope of the attack. When you enable Defender for Servers, you give Defender for Cloud access to the Defender for Endpoint data related to vulnerabilities, installed software, and alerts.
+Confirm that endpoint integration is enabled and that each server has actually onboarded, as described in the previous unit. Enabling Defender for Servers authorizes access to relevant endpoint vulnerability, software, and alert data.
 
-## Vulnerability assessment tools
+## Vulnerability assessment with Microsoft Defender Vulnerability Management
 
-Defender for Servers includes a choice of vulnerability discovery and management tools. From Defender for Cloud's settings pages, you can choose whether to deploy these tools to your machines. Any discovered vulnerabilities are shown in a security recommendation.
+For on-premises Arc-enabled servers, use agent-based vulnerability assessment through the Defender for Endpoint sensor. This is available with Defender for Servers Plan 1 or Plan 2. Review applicable software vulnerability recommendations in Defender for Cloud and use the Microsoft Defender portal for deeper vulnerability-management investigation.
 
-- **Microsoft threat and vulnerability management**: Discover vulnerabilities and misconfigurations in real time with Defender for Endpoint, without the need for more agents or periodic scans. Threat and vulnerability management prioritizes vulnerabilities based on the threat landscape, sensitive information, and business context.  
-- **Vulnerability scanner powered by Qualys**: Qualys is one of the leading tools for real-time identification of vulnerabilities in your hybrid virtual machines. You don't need a Qualys license or even a Qualys account; everything is handled seamlessly inside Defender for Cloud.  
+Plan 2 includes additional premium vulnerability-management capabilities. These don't make on-premises Arc machines eligible for cloud disk-snapshot scanning.
 
-## File integrity monitoring (FIM)
+> [!NOTE]
+> Agentless scanning is a separate collection method for supported Azure VMs, AWS EC2 instances, and GCP compute instances. It requires the applicable Plan 2 or Defender CSPM coverage. Registering an on-premises server with Azure Arc doesn't give Defender for Cloud access to snapshot that server's disks.
 
-File integrity monitoring (FIM) examines files and registries of operating systems and application software for changes that might indicate an attack. A comparison method is used to determine if the current state of the file is different from the last scan of the file. You can use this comparison to determine if valid or suspicious modifications were made to your files.
+Follow *Set up integrated vulnerability assessment* and investigate current individual vulnerability recommendations rather than relying on a specific grouped recommendation title.
 
-When you enable Defender for Servers, you can use FIM to validate the integrity of Windows files, your Windows registries, and Linux files.  
+## File integrity monitoring
 
-## Adaptive application controls (AAC)
+File integrity monitoring (FIM) helps identify suspicious changes to monitored files and Windows registry entities. For on-premises Arc-enabled servers, the current collection path uses Defender for Endpoint. Endpoint-collected changes are sent to the configured Log Analytics workspace in near real time.
 
-Adaptive application controls are an intelligent and automated solution for defining allowlists of known-safe applications for your machines. When you've configured adaptive application controls, you get security alerts if any application runs other than the ones you defined as safe.
+FIM is part of Defender for Servers Plan 2 and isn't enabled by default. Before enabling it, confirm that the server is connected through Azure Arc and has Defender for Endpoint installed through the Defender for Servers extension. Check the current platform-specific minimum sensor versions and the configuration permissions in *Enable file integrity monitoring*. That guidance requires Security Admin and Owner roles on the subscription containing the selected workspace.
 
-## Fileless attack detection
+To configure the recommended monitoring coverage:
 
-Fileless attacks inject malicious payloads into memory to avoid detection by disk-based scanning techniques. The attacker's payload then persists within the memory of compromised processes and performs a wide range of malicious activities.
+1. In the Azure portal, open **Microsoft Defender for Cloud** > **Environment settings** and select the subscription.
+1. Open **Settings** for Defender for Servers and set **File Integrity Monitoring** to **On**.
+1. Select **Edit configuration** and choose or create the Log Analytics workspace to store change events.
+1. Under **Recommended to monitor**, select **Edit**. Review the recommended entities, keep the required rules enabled, and select the change types you want to monitor.
+1. Select **Apply** to save the rule selection, then **Apply** and **Continue** to finish the configuration. Save the subscription settings if the portal presents a pending **Save** action.
+1. Open **Workload protection** > **File Integrity Monitoring** > **Settings** and resolve any missing prerequisites.
 
-With fileless attack detection, automated memory forensic techniques identify fileless attack toolkits, techniques, and behaviors. This solution, available by default, periodically scans your machine at runtime, and extracts insights directly from the memory of processes. Specific insights include the identification of:
+Review change records in the FIM experience or query the chosen workspace:
 
-- Well-known toolkits and crypto mining software
-- Shellcode, which is a small piece of code typically used as the payload in the exploitation of software vulnerabilities
-- Injected malicious executable in process memory
+```kusto
+MDCFileIntegrityMonitoringEvents
+| where TimeGenerated > ago(1h)
+| take 20
+```
 
-Fileless attack detection generates detailed security alerts that include descriptions with process metadata such as network activity. These details accelerate alert triage, correlation, and downstream response time.  
+Records are expected only after a matching monitored change occurs. Use a controlled change on a test server to verify the selected coverage, without changing a production system file solely to test ingestion. If you don't get any results, check FIM status, endpoint health, monitored entities, and the destination workspace.
+
+For Linux, the current sensor reports a newly created file as a Modify event rather than distinguishing Create from Modify. Custom-path and agentless coverage have additional requirements; this on-premises walkthrough uses the recommended monitored entities rather than promising arbitrary path monitoring.
+
+## Complementary application control on Windows
+
+Use App Control for Business to define which applications and code are permitted on supported Windows servers. It's a Windows security control configured separately from Defender for Cloud; enabling Defender for Servers doesn't deploy an application-control policy.
+
+App Control for Business supports Windows Server 2016 and later; individual policy capabilities vary by version. Check *App Control for Business feature availability* for the server version and policy capabilities you need. Plan an audit-mode pilot, review the observed applications, and validate your management and recovery procedures before enforcing a policy. Follow *Use audit events to create App Control policy rules*.
+
+Defender attack surface reduction rules provide complementary Windows protection against risky behaviors. They aren't application allowlisting and aren't a Linux feature. See *Attack surface reduction overview*.
+
+> [!IMPORTANT]
+> These Windows controls aren't a one-for-one, cross-platform Defender for Cloud application-control service. An enforced policy can block legitimate business or management software. Validate it on representative test servers before rollout, and don't assume that the same policy applies to Linux.
+
+## Fileless threats and platform scope
+
+Fileless attacks can run malicious code in memory to reduce their exposure to disk-based detection. Defender for Servers Plan 2 provides dedicated Defender for Cloud fileless-security alerts for supported Windows Arc-enabled servers. These are additional detections, distinct from general Defender for Endpoint detection and response available through Plan 1 or Plan 2. Investigate the alerts with the associated endpoint and process context. See *Alerts for Windows machines*.
+
+Use the *Defender for Servers support matrix* to distinguish this Windows capability from general endpoint detection and response on supported Windows and Linux servers. Don't assume identical alert families or a default periodic memory-scanning workflow across both operating systems.
