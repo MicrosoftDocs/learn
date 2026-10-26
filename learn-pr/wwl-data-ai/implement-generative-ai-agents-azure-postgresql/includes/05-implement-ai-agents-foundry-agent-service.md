@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c6c0eb2c-57dc-4e03-b165-54723ad62d44]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 *Foundry Agent Service* provides a hosted orchestration layer for building and deploying intelligent agents. These agents can interact with tools, retrieve data, and maintain context across workflows. When integrated with *Azure Database for PostgreSQL*, agents gain access to scalable vector search, persistent memory, and structured data—essential for delivering relevant, context-aware responses.  
 
 ## Explain Foundry Agent Service and PostgreSQL integration  
@@ -55,3 +66,5 @@ This setup enables Margie’s Travel to provide personalized recommendations qui
 ## Summarize key takeaways  
 
 *Foundry Agent Service* simplifies the process of building intelligent agents that integrate with *Azure Database for PostgreSQL*. By combining embeddings, vector search, and orchestration, developers can create agents that retrieve information, maintain context, and respond intelligently to user needs.  
+
+::: zone-end
