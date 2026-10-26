@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bfa10b46-a282-40c0-b575-378664db0ea1]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The PostgreSQL extension for Visual Studio Code provides a comprehensive set of tools for managing and developing PostgreSQL databases directly within the editor. It allows developers to connect to local or cloud-hosted PostgreSQL databases, explore database objects, write and execute SQL queries, and review query results without leaving Visual Studio Code. This integrated experience simplifies common database tasks and reduces the need to switch between separate tools.
 
 Consider the Margie’s Travel scenario. The team works with Azure Database for PostgreSQL to store information such as reservations, listings, and customer data. By using the PostgreSQL extension inside Visual Studio Code, developers can connect to these databases, inspect tables and schemas, and validate SQL changes while continuing to work in the same development environment as their application code.
@@ -37,3 +48,5 @@ For Margie’s Travel, this integrated workflow helps developers validate change
 ## What you’ve learned
 
 You learned how the PostgreSQL extension supports PostgreSQL development in Visual Studio Code. You explored how developers connect to PostgreSQL databases, browse database objects, write and execute SQL queries, and review results using the extension’s built-in tools. These capabilities form the foundation for more advanced workflows, including GitHub Copilot integration in later units.
+
+::: zone-end

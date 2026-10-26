@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=51054bb5-8775-423f-befc-099d75e0bcf7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 ## Data professionals
 
 With organizations gathering, storing, and reporting on vast quantities of information, data needs to be managed before it can be used in important decision-making processes. Various roles are necessary to support business with their data requirements. Data professionals frequently work together to achieve a satisfactory outcome:
@@ -12,6 +23,4 @@ These data professionals also work alongside:
  -  **Application developers** \- An application developer creates software applications to enable users to interact with business data. Application developers often collaborate with a data engineer, who creates and manages the data source, the developer builds a user interface for viewing, managing, or processing the data. The solutions can be web, cloud, or desktop applications, depending on the business requirement.
  -  **Infrastructure operators** \- An infrastructure operator is responsible for managing the underlying compute, storage, and networking services. Much like the DBA role, the operator ensures systems are available, or restored as quickly as possible following failure. This can be a varied role, supporting all departments within the business to enable continuous service of systems across offices, home offices, call centers, warehouses and distribution centers, and manufacturing plants.
 
-This video describes the key data professions, and shows how they work together to provide data solutions to a business:
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8598e380-2226-4405-925c-48731d04bff8]
+::: zone-end

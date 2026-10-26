@@ -2,11 +2,12 @@
 uid: learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.generate-refine-queries
 title: Use GitHub Copilot to generate, refine, and troubleshoot SQL queries
 metadata:
+  zone_pivot_groups: video-or-text
   title: Use GitHub Copilot to generate, refine, and troubleshoot SQL queries
   description: Learn how GitHub Copilot helps generate, refine, and troubleshoot SQL queries by using database-aware prompts in Visual Studio Code.
-  author: wwlpublish
+  author: MScalopez
   ms.author: calopez
-  ms.date: 12/08/2025
+  ms.date: 10/26/2026
   ms.topic: unit
 durationInMinutes: 6
 content: |

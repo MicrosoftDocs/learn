@@ -2,10 +2,10 @@
 uid: learn.wwl.implement-generative-ai-agents-azure-postgresql.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 10/24/2025
-  author: wwlpublish
+  ms.date: 10/26/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   module_assessment: true

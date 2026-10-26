@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b17051cb-1f55-4599-9b7c-2194d6188b48]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 ## Azure data services
 
 Cloud services provide a popular solution for building scalable enterprise data storage. Many organizations host their solutions in cloud services rather than on-premises servers, which removes the overhead of hardware and other maintenance tasks.
@@ -14,6 +25,4 @@ Microsoft Azure is a cloud platform that offers services for storing, processing
 
 These are a handful of the cloud services that Microsoft offers. They can be combined with other services to create end-to-end cloud solutions for applications and reporting.
 
-This video shows how the above services combine to create an analytics solution for reporting:
-
-> [!VIDEO 4be1575e-6ddd-46fe-a620-2ea29848ed5e]
+::: zone-end

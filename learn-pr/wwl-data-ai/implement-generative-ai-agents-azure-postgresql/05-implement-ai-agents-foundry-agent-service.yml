@@ -2,10 +2,11 @@
 uid: learn.wwl.implement-generative-ai-agents-azure-postgresql.implement-ai-agents-foundry-agent-service
 title: Implement AI agents with Foundry Agent Service
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement AI agents with Foundry Agent Service
   description: "Build and deploy AI agents using Foundry Agent Service and connect them to PostgreSQL."
-  ms.date: 10/09/2025
-  author: wwlpublish
+  ms.date: 10/26/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 5

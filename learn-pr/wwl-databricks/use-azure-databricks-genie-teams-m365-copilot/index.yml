@@ -3,7 +3,7 @@ uid: learn.wwl.use-azure-databricks-genie-teams-m365-copilot
 metadata:
   title: Use Azure Databricks Genie in Microsoft Teams and Microsoft 365 Copilot
   description: "Learn to use Azure Databricks Genie from Microsoft Teams and Microsoft 365 Copilot. Ask effective data questions using the SPARK framework, interpret and verify AI-generated answers, and apply responsible-use practices."
-  ms.date: 08/25/2026
+  ms.date: 10/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

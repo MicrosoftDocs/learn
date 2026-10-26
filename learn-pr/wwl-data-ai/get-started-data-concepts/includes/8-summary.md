@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1ed6f745-0764-40e5-97ad-1a1da80d8ab0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When you understand the data in a dataset, you can extend and transform it using techniques that make it easy to analyze. In its most basic format, data doesn't reveal much useful information. When you apply sorting, filtering, and aggregate calculations, you can shape data to expose insights to determine critical business decisions.
 
 In this module, you've learned how to:
@@ -13,3 +24,5 @@ Use the following resources to discover more:
 
 - [Get started with Microsoft data analytics](/training/paths/data-analytics-microsoft/)
 - [Introduction to Microsoft Azure Data core data concepts](/training/paths/azure-data-fundamentals-explore-core-data-concepts/)
+
+::: zone-end

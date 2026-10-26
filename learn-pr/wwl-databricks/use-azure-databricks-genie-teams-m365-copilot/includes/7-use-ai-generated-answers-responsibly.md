@@ -9,10 +9,10 @@ It handles questions like:
 - "How many active franchise locations are in Germany?"
 - "What was the average order fulfillment rate for last month?"
 
-For most business queries, Genie retrieves and reports data—it doesn't diagnose root causes or give strategic recommendations:
-- "Why were sales low in Q1?"—a factual query returns the data; interpretation is yours.
-- "What should we do about the drop in Germany?"—Genie surfaces numbers, not decisions.
-- "Is this trend normal?"—Genie doesn't have the business context to judge normality.
+The available analysis depends on the experience and mode you use. **Chat mode** focuses on factual questions answered by a SQL query. **Agent mode** can investigate complex questions, test hypotheses, and return reports with supporting queries and visualizations. For example:
+- "Why were sales low in Q1?"—Agent mode can investigate patterns, but you must verify any causal conclusion.
+- "What should we do about the drop in Germany?"—use the findings as input to a decision, not as an approved strategy.
+- "Is this trend normal?"—ask for an explicit comparison period and check the business assumptions with a domain expert.
 
 If you ask Genie an interpretive question, it may attempt an answer—but treat that answer as a starting point, not a conclusion. Use Genie to surface the data, then bring it to a conversation with the people who can interpret it.
 
@@ -29,7 +29,7 @@ AI-generated answers can be wrong for several reasons:
 
 **Topic mismatch.** If you ask a question that spans several business topics and the Genie Agent covers only one of them, the answer may be incomplete without Genie flagging that it's incomplete.
 
-**Trusted vs. generated answers.** A response labeled **Trusted** means a domain expert reviewed and confirmed the answer for that specific question. An unlabeled response means Genie generated a new answer. Both can be correct, but a trusted answer provides an additional review signal for high-impact decisions.
+**Trusted assets vs. verified results.** In Chat mode, a trusted response uses an editor-provided SQL query or function with verified logic. It doesn't mean an expert reviewed the current result, and Genie can select the wrong asset. Check the question match, parameters, and source data even when the response uses a trusted asset.
 
 The best defense against these risks is the inspect-verify-refine workflow from the previous unit: check the filters, review the source, and ask a follow-up question when something doesn't look right.
 
@@ -39,7 +39,7 @@ Where and how you share a Genie answer matters:
 
 **In a direct message or private conversation:** The answer isn't visible to other channel members. This is the appropriate place for exploratory questions, preliminary analysis, or sensitive topics.
 
-**In a public or team channel:** When you mention `@Databricks Genie` in a public channel, both the question and the answer are visible to all channel members. Before posting, consider whether the data is appropriate to share broadly. Some metrics—such as individual employee performance data or pre-announcement financial figures—may have confidentiality requirements that make a public channel the wrong venue.
+**In a public or team channel:** Your mention is visible to the conversation's members. By default, Genie's reply is public, but workspace, channel, or personal settings can make it private. Workspace settings override channel settings, and channel settings override personal settings. Don't assume that each reader has your data permissions: check visibility and whether the data is appropriate to share before you post. Use a direct message for confidential questions.
 
 **In a report or presentation:** When you use a Genie-generated number in a formal deliverable, include the source (the Genie Agent name), the key parameters (date range, scope, aggregation), and a note that the figure was AI-generated and verified. This gives your audience the context they need to evaluate the number.
 

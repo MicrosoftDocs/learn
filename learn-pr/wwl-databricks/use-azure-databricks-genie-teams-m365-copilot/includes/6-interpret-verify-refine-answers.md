@@ -2,7 +2,7 @@ Getting a clear answer from Genie is only the first step. Before you act on that
 
 ## Inspect the answer before you act
 
-Every Genie response includes several elements worth examining before you use the result:
+When a Genie response includes the following elements, examine them before you use the result:
 
 **The answer itself:** Read the response carefully, including any natural-language summary above or below a table. Genie often states the filters and assumptions it applied—for example, "I filtered to Q1 2026 and included all active franchises." If it doesn't state these, ask.
 
@@ -34,7 +34,7 @@ Some answers from Genie require more investigation before they're usable:
 
 **Genie says it doesn't know or asks for clarification.** This is the expected behavior when your question doesn't match the available data or when the agent needs more context. Answer any clarifying questions Genie asks, or rephrase your question using SPARK elements.
 
-**The number is surprisingly high or low.** Before assuming it's an error, ask Genie for a more detailed breakdown or comparison. For example, ask, "Show the monthly sales totals for Germany and France for Q1 2026." Genie answers straightforward factual data questions, but it doesn't reliably explain causes or recommend what to do. Bring verified data to the relevant domain expert when you need interpretation.
+**The number is surprisingly high or low.** Before you assume it's an error, ask Genie for a more detailed breakdown or comparison. For example, ask, "Show the monthly sales totals for Germany and France for Q1 2026." Chat mode focuses on factual SQL-backed questions, while Agent mode can investigate causes and patterns through multiple steps. Treat any causal explanation as a hypothesis and bring its supporting evidence to a domain expert for verification.
 
 **Two similar questions return different numbers.** Ask Genie to state the period, included records, and calculation used for each answer. Then ask a new question that makes those details explicit. If the answers still conflict, ask your data team to verify them.
 
@@ -46,4 +46,4 @@ Once you've verified the answer, the final step is deciding what to do with it. 
 
 - **Share in context:** If you're sharing the number in a Teams channel or meeting, include the key assumptions—the time period, the metric, and the data source—so colleagues understand what they're looking at.
 - **Follow up with a deeper question:** Use the verified answer as the starting point for your next SPARK question. A total sales number leads naturally to a regional breakdown, which leads to a specific product or franchise comparison.
-- **Escalate for further analysis:** If the answer reveals a trend or anomaly that warrants deeper investigation—for example, one region significantly underperforming—note the finding and bring it to the appropriate analyst or data owner for root-cause analysis. Genie can surface the "what"; human expertise handles the "why."
+- **Escalate for further analysis:** If the answer reveals a trend or anomaly that warrants deeper investigation—for example, one region significantly underperforming—note the finding and bring it to the appropriate analyst or data owner. Agent mode can help investigate the "why," but human review is still necessary to verify causal claims.
