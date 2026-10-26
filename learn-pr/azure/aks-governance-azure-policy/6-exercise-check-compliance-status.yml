@@ -2,11 +2,11 @@
 uid: learn.aks-governance-azure-policy.exercise-check-compliance-status
 title: Check compliance status using Azure Policy
 metadata:
-  title: Check compliance status using Azure Policy
+  title: Check Compliance Status Using Azure Policy
   description: Check compliance status using Azure Policy from the Azure portal.
-  ms.date: 04/22/2024
-  author: mosabami
-  ms.author: aayodeji
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 3
 content: | 

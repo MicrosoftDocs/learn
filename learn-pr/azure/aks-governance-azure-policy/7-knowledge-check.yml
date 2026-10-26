@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-governance-azure-policy.check-your-knowledge
-title: Check your knowledge
+title: Module assessment
 metadata:
-  title: Check your knowledge
-  description: Knowledge Check of Azure policy concepts
-  ms.date: 04/22/2024
-  author: mosabami
-  ms.author: aayodeji
+  title: Module Assessment
+  description: Module assessment of Azure Policy concepts.
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/7-check-your-knowledge.md)]
 quiz:
   questions:
-    - content: "If a Policy is applied with the deny option to a Resource group, what happens to already existing noncompliant resources in that group?"
+    - content: "If a policy is applied with the deny option to a resource group, what happens to already existing noncompliant resources in that group?"
       choices:
         - content: "The noncompliant resources get deleted."
           isCorrect: false
@@ -23,38 +23,38 @@ quiz:
           explanation: "Correct. Azure Policy doesn't delete resources but you can always check for noncompliant already existing resources."
         - content: "The resources have a read-only lock on them so that no changes can be made to them."
           isCorrect: false
-          explanation: "Azure Policies doesn't lock already deployed resources."
+          explanation: "Azure Policy doesn't lock already deployed resources."
         - content: "The resources become unusable and can't be used to connect to other resources."
           isCorrect: false
-          explanation: "Azure Policies doesn't render already deployed resources unusable."
+          explanation: "Azure Policy doesn't render already deployed resources unusable."
     
-    - content: "What happens when you have a Policy set as deny at the Subscription level and the same Policy set as audit at the Resource group level?"
+    - content: "What happens when you have a policy set as deny at the subscription level and the same policy set as audit at the resource group level?"
       choices:
-        - content: "The two Policies would cancel each other out and have no effect."
+        - content: "The two policies would cancel each other out and have no effect."
           isCorrect: false
           explanation: "Policies don't cancel each other out when there's a conflict."
-        - content: "The Policy set as audit would take effect."
+        - content: "The policy set as audit would take effect."
           isCorrect: false
-          explanation: "Even though the resource group scope is closer to the resource than the subscription, the more restrictive Policy would take effect."
-        - content: "The Policy set as deny would take effect."
+          explanation: "Even though the resource group scope is closer to the resource than the subscription, the more restrictive policy would take effect."
+        - content: "The policy set as deny would take effect."
           isCorrect: true
-          explanation: "Correct. The more restrictive Policy would take effect."
-        - content: "You would get an error when you attempt to deploy the second Policy that contradicts the first one, so you would be unable to proceed."
+          explanation: "Correct. The more restrictive policy would take effect."
+        - content: "You would get an error when you attempt to deploy the second policy that contradicts the first one, so you would be unable to proceed."
           isCorrect: false
-          explanation: "Azure Policies don't prevent other Policies from being deployed because of a contradiction."
+          explanation: "Azure Policy doesn't prevent other policies from being deployed because of a contradiction."
 
-    - content: "You have an Azure Policy applied at the Subscription level, but one of your AKS clusters needs to be exempt from a specific policy. What's the best way to handle the situation?"
+    - content: "A subscription-level policy applies to several AKS clusters. One cluster needs a temporary, approved exception that must remain visible in compliance reporting. What should you use?"
       choices:
-        - content: "Move the Azure Kubernetes Service (AKS) cluster to another Subscription and apply the Policy to the previous Subscription."
+        - content: "Assign the same policy with Audit at the cluster's resource group."
           isCorrect: false
-          explanation: "This solution solves the immediate problem but might not work if that resource needs to stay in that Subscription for business reasons."
-        - content: "Apply the Policy at the resource level to the resources that need to have it in that Subscription."
+          explanation: "An Audit assignment at a lower scope doesn't cancel the inherited subscription assignment."
+        - content: "Assign the policy individually to the other clusters without changing the subscription assignment."
           isCorrect: false
-          explanation: "You can't apply a Policy at the resource level."
-        - content: "Tell your coworkers not to deploy resources that aren't compliant with that Policy and add it to your training manual."
+          explanation: "Individual-resource assignments are supported, but the exceptional cluster still inherits the subscription assignment."
+        - content: "Exclude the entire subscription from the assignment."
           isCorrect: false
-          explanation: "This solution isn't the best option in this scenario. It might work, but it could require lots of manual work."
-        - content: "Add an exclusion to the AKS cluster Resource group that the Policy shouldn't apply to."
+          explanation: "This bypasses evaluation for unrelated resources and removes them from the assignment's compliance counts."
+        - content: "Create a policy exemption for the affected cluster and assignment, with an appropriate justification and expiration."
           isCorrect: true
-          explanation: "Correct. Azure Policies allows you to add exclusions you can use to exempt certain resources from having to comply with the Policy."
+          explanation: "Correct. A scoped exemption records the approved exception as Exempted in compliance reporting and can expire."
 
