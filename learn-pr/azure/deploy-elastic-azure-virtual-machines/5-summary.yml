@@ -5,9 +5,9 @@ metadata:
   unitType: summary
   title: Summary
   description: "This unit summarizes the Deploy Elastic on Azure Virtual Machines module and provides links to more resources."
-  ms.date: 08/02/2024
-  author: yenchiho
-  ms.author: yenchiho
+  ms.date: 10/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 1
 content: |
