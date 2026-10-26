@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ac9bca30-a503-4ea0-962a-756645f759fd]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Retrieval augmented generation (RAG) depends on pulling the right passages from your data before the model answers. Two issues show up as your content grows: **scale** and **accuracy**. *Scale* is about how your data size and access patterns grow, and how fast results come back. *Accuracy* is about whether those results actually answer the question. If retrieval is slow or off target, the experience suffers regardless of the model's strength.
 
@@ -53,3 +63,5 @@ As your application grows, reevaluate your application's performance and adjust 
 ## Key takeaways
 
 For a Postgres RAG path, you keep the retrieval in the database, start with `pgvector`, and move to the appropriate index as the data set and traffic grows. Add a *Semantic Ranking* pass in SQL if ordering needs to be tighter. Bring in *GraphRAG* to add a short graph step when relationships carry meaning. Evaluate regularly and monitor in production so the system stays both fast and correct as data and usage change.
+
+::: zone-end

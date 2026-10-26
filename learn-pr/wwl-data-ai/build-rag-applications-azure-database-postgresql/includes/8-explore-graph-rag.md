@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e0a15dda-ef40-4f4d-8ee0-3c0e3411b408]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 As your data grows, many documents or rows start to sound alike. This unit shows how to keep the full retrieval flow inside *Azure Database for PostgreSQL* while also taking relationships into account. Documents stay in tables. Relationships live in a property graph with **Apache AGE** (A Graph Extension) and are queried with **openCypher**. When the question is evaluated, you combine meaning-based matches from `pgvector` (with optional reranking) and a relationship score from the graph. Because the whole flow runs in SQL, the system is easier to operate and easier to understand.
 
 ## Graphs in Azure Database for PostgreSQL
@@ -41,3 +52,5 @@ You can keep reranking inside the database with SQL semantic operators. The `ran
 ## Key takeaways
 
 A similarity-only search often falls short on real questions. *GraphRAG* with *Apache AGE* adds a knowledge graph so the model gets structure and meaning. You extract relationships into an *AGE* graph, keep short summaries on the nodes, and at question time run vector search and an *openCypher* query to see how the candidates connect. In *Azure Database for PostgreSQL*, this process all stays in one place. Tables hold the content, *Apache AGE* manages the graph, `pgvector` pulls likely passages, and a light rerank with simple fusion tightens the order. The result is a smaller, clearer context that points to the right sources and produces answers you can verify.
+
+::: zone-end
