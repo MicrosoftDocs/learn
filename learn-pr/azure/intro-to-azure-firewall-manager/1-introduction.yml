@@ -5,9 +5,9 @@ metadata:
   unitType: introduction
   title: Introduction to Azure Firewall Manager
   description: Learn how you can use Azure Firewall Manager to provide central security policy and route management for your cloud-based security perimeters
-  ms.date: 03/08/2024
-  author: vhorne
-  ms.author: victorh
+  ms.date: 10/24/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 4
 content: |
