@@ -49,7 +49,7 @@ In the final setup, the MCP Client connects to an MCP Server that lives entirely
 
 Let's first understand why GitHub MCP Server matters for your workflow. Using local MCP servers typically requires Docker, token management, and manual configuration, which can slow down your setup and block integration with web clients like GitHub.com. 
 
-Connecting to the GitHub-hosted server is quick and easy with no need for docker or config files. You can use AI tools like GitHub Copilot chat across web and mobile to scale your projects as they grow. GitHub MCP Server supports secure enterprise sign-in and gives you access to advanced features like semantic code search and automated fixes to boost your workflow.
+Connecting to the GitHub-hosted server is quick and easy with no need for docker or config files. You can use AI tools like Copilot in GitHub and Copilot in GitHub Mobile to scale your projects as they grow. GitHub MCP Server supports secure enterprise sign-in and gives you access to advanced features like semantic code search and automated fixes to boost your workflow.
 
 GitHub MCP Server benefits include:
 

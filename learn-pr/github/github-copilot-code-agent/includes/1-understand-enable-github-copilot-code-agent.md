@@ -2,24 +2,24 @@ This unit explains what the agent is, how it differs from traditional AI coding 
 
 By the end of this unit, you'll be able to:
 
-- Explain what the GitHub Copilot Cloud Agent  is, who can use it, and where it's available.
+- Explain what Copilot in the cloud does, who can use it, and where you can start it.
 - Describe the tasks it can perform and how to delegate work.
 - Distinguish it from IDE-only assistants and Copilot's "agent mode."
 - Enable the agent at the organization or repository level.
 - Understand how GitHub Actions minutes and Premium Request Units (PRUs) are used and manage them effectively.
 
-### What is GitHub Copilot Cloud Agent , who can use it and where it's available.
+### How can you use Copilot in the cloud
 
-GitHub Copilot Cloud Agent is an autonomous development assistant that runs inside GitHub itself. Rather than pairing with you only in your IDE, the agent acts like a background teammate. You give it a clearly scoped task—such as a bug fix, an incremental feature, or documentation update—and it creates a branch, explores the codebase, generates an implementation plan, and drafts code while keeping you in control of when and whether to open a pull request.
+When you run Copilot in the cloud, it works as an autonomous development assistant inside GitHub. Rather than pairing with you only in your IDE, the agent acts like a background teammate. You give it a clearly scoped task—such as a bug fix, an incremental feature, or documentation update—and it creates a branch, explores the codebase, generates an implementation plan, and drafts code while keeping you in control of when and whether to open a pull request.
 
 ### Availability and plans
 
 - **Plans:** Available on Copilot Pro, Copilot Pro+, Copilot Business, Copilot Enterprise.
 - **Repositories:** Works in all GitHub-hosted repositories except those owned by managed user accounts or where the agent is explicitly disabled.
 
-### What the Copilot Cloud Agent  does
+### What Copilot in the cloud does
 
-Copilot Cloud Agent  can take on a wide range of development tasks:
+Copilot in the cloud can take on a wide range of development tasks:
 
 - Fix bugs and regressions.
 - Implement incremental new features.
@@ -30,7 +30,7 @@ Copilot Cloud Agent  can take on a wide range of development tasks:
 You can delegate work to the agent in two primary ways:
 
 - **Assign an issue** to Copilot - on GitHub.com, GitHub Mobile, or via API/CLI.
-- **Ask Copilot to make code changes** - from the Agents panel on GitHub, Copilot Chat, your IDE or other agentic tool with MCP support, or Raycast on macOS.
+- **Ask Copilot to make code changes** - from the Agents panel on GitHub, Copilot in GitHub, your IDE or other agentic tool with MCP support, or Raycast on macOS.
 
 When the agent finishes, it requests your review. You can mention @copilot in a pull-request comment to ask it to iterate on its work.
 
@@ -38,7 +38,7 @@ When the agent finishes, it requests your review. You can mention @copilot in a 
 
 Traditional AI assistants in IDEs help you write code locally but leave manual steps to you: creating branches, pushing commits, writing PR descriptions, and iterating. Those decisions happen in a private session and aren't visible to your team.
 
-With Copilot Cloud Agent :
+When you run Copilot in the cloud:
 
 - All work happens as commits on GitHub.
 - The agent automates branch creation, commit messages, and code drafting, while letting you decide if and when to open a PR.
@@ -47,31 +47,30 @@ With Copilot Cloud Agent :
 
 This creates transparency and collaboration opportunities-your teammates can see each step and jump in as needed.
 
-### Cloud agent vs. "Agent Mode" in IDEs
+### Copilot in the cloud vs. agent mode in your IDE
 
-It's important to distinguish the GitHub Copilot Cloud Agent  (covered in this module) from the agent mode feature in Visual Studio and Visual Studio Code:
+It's important to distinguish Copilot in the cloud, which this module covers, from the agent mode feature in Visual Studio and Visual Studio Code:
 
-- **Cloud agent:** Runs autonomously in a GitHub Actions-powered environment to complete development tasks you assign through issues or Copilot Chat.
+- **Copilot in the cloud:** Runs autonomously in a GitHub Actions-powered environment to complete development tasks you assign through issues or Copilot in GitHub.
 - **Agent mode (Copilot Edits):** Performs autonomous local edits directly in your IDE session.
 
-### Enabling the Copilot Cloud Agent 
+### Enabling Copilot in the cloud
 
 Before assigning tasks to Copilot, ensure the agent is enabled:
 
 - **Organization-owned repositories:** Availability is managed by organization or enterprise administrators.
 - **Personal repositories:** Configure availability in your account settings.
 
-**Usage Costs: GitHub Actions + PRUs**
-
-Copilot Cloud Agent  uses two main resources:
+**Usage Costs: GitHub minutes + AI credits**
+Copilot in the cloud uses two main resources:
 
 - **GitHub Actions minutes** for the ephemeral build/test environment where the agent works.
-- **Copilot Premium Requests (PRUs)** to power advanced model reasoning.
+- **AI credits** for the AI models that power its work. Each plan includes an allowance of AI credits. The cost depends on the model and the number of tokens it uses.
 
 > [!NOTE]
-> Beginning June 4, 2025, the agent uses one premium request per model request it makes. Within your monthly Actions and premium request allowance, you can run tasks without extra charges. ([See GitHub Copilot billing.](https://www.google.com/url?q=https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-copilot/about-billing-for-github-copilot%23allowance-usage-for-copilot-coding-agent&sa=D&source=docs&ust=1758211495584204&usg=AOvVaw2lQmmT8QfhnQOGji8ggdYe))
+> For usage allowances and costs, see [GitHub Copilot billing and usage](https://docs.github.com/en/copilot/concepts/billing-and-usage).
 
 > [!TIP]
-> Use PRUs where they add value-multi-file edits, test generation, and broader diffs that need deeper reasoning. Lightweight edits may require fewer PRU-intensive steps.
+> Cost depends on the model you choose. Save the more capable models for tasks where they add value, like multi-file edits, test generation, and broader diffs that need deeper reasoning.
 
 With the agent enabled and costs understood, let's confirm how it adheres to your security posture, what risks to anticipate, and which limitations to account for as you plan real work.

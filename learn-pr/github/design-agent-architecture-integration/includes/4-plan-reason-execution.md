@@ -30,7 +30,7 @@ GitHub naturally supports this separation:
 
 ## Understanding the difference between a plan-first workflow and a plan + execution workflow
 
-When working with agents, teams must decide when a plan becomes visible and when code changes are allowed to begin. In GitHub, planning and execution can start from different entry points-such as a GitHub issue (for example, assigning a Copilot Cloud Agent), or through the Agents tab where a plan is generated interactively.
+When working with agents, teams must decide when a plan becomes visible and when code changes are allowed to begin. In GitHub, planning and execution can start from different entry points-such as a GitHub issue (for example, assigning it to Copilot in the cloud), or through the Agents tab where a plan is generated interactively.
 
 These are separate ways of interacting with the agent, but they converge on the same governance model: all work is ultimately surfaced and reviewed in a pull request (PR)
 

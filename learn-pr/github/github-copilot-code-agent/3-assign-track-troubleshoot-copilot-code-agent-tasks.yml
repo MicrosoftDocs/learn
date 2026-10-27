@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.github-copilot-code-agent.assign-track-troubleshoot-copilot-code-agent-tasks
-title: Assigning, tracking, and troubleshooting Copilot Cloud Agent  tasks
+title: Assigning, tracking, and troubleshooting Copilot in the cloud
 metadata:
-  title: Assigning, tracking, and troubleshooting Copilot Cloud Agent  tasks
-  description: This content is a part of the Accelerate development with GitHub Copilot Cloud Agent .
+  title: Assigning, tracking, and troubleshooting Copilot in the cloud
+  description: This content is part of the Accelerate development with Copilot in the cloud module.
   author: camihmerhar
   ms.author: camhernandez
   ms.date: 09/22/2025

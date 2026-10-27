@@ -81,9 +81,9 @@ After finalizing a plan, choose the implementation path that matches your operat
 |----------------|----------|
 | **Same session (Agent)** | Quick, low-risk changes where you want to review edits immediately |
 | **Copilot CLI (background)** | Larger implementations where you want to keep working on other tasks |
-| **Cloud agent (pull request)** | Changes that require team review, approval workflows, or CI/CD validation |
+| **Copilot in the cloud (pull request)** | Changes that require team review, approval workflows, or CI/CD validation |
 
-For production infrastructure changes, handing off to a cloud agent is often the best choice. The cloud agent creates a pull request, which enables peer review, automated validation through CI pipelines, and a documented approval trail.
+For production infrastructure changes, handing off to Copilot in the cloud is often the best choice. Copilot creates a pull request, which enables peer review, automated validation through CI pipelines, and a documented approval trail.
 
 ## Break complex tasks into smaller plans
 

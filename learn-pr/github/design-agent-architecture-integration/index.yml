@@ -31,9 +31,9 @@ prerequisites: |
 
   Some enforcement controls (for example, rulesets/branch protection and required checks) require repository or organization administrator permissions to configure.
 
-  This module focuses on repository-level architecture (pull requests, checks, and rules). In practice, agent systems also include environment-level controls such as network access restrictions. For example, GitHub Copilot cloud agent uses a configurable firewall to limit external access. These controls define what the agent can access at runtime, while PR-based governance defines what changes are accepted.
+  This module focuses on repository-level architecture (pull requests, checks, and rules). In practice, agent systems also include environment-level controls such as network access restrictions. For example, Copilot in the cloud uses a configurable firewall to limit external access. These controls define what the agent can access at runtime, while PR-based governance defines what changes are accepted.
 
-  For more information, see: [Customize the agent firewall for Copilot cloud agent.](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/customize-the-agent-firewall)
+  For more information, see: [Customizing or disabling the firewall for GitHub Copilot](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-the-firewall).
 
 
 iconUrl: /training/achievements/generic-badge.svg

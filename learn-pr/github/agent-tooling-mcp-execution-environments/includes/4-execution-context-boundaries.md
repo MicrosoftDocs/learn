@@ -32,14 +32,14 @@ Repository scope is the first boundary that limits agent behavior.
 
 ## How repository scope is configured
 
-For agents such as the Copilot cloud agent, this boundary is explicitly configured at the repository level.
+For Copilot in the cloud, this boundary is explicitly configured at the repository level.
 
 To configure this:
 
 1. Open your repository on GitHub
 1. Click Settings
 1. In the sidebar, under Code & automation, click Copilot
-1. Select Cloud agent
+1. Select Cloud
 1. Enable and configure the agent for that repository
 1. Save your configuration
 
@@ -96,7 +96,7 @@ Branch-based isolation is a key safety mechanism.
 
 ## Configure an agent to use branch-based scope
 
-To set up a Copilot Cloud agent to operate with a branch-based scope, follow these steps:
+To set up Copilot in the cloud to operate with a branch-based scope, follow these steps:
 
 1. Selecting a Base Branch:
     - Access the Agents Page: Navigate to the Agents page in your GitHub repository.
@@ -106,7 +106,7 @@ Custom agents operate within a repository, but they don't control branch behavio
 
 ### How it works
 
-When used with a cloud agent:
+When used with Copilot in the cloud:
 
 - The system automatically creates a branch
 - Applies changes
@@ -140,7 +140,7 @@ Agents can perform autonomous actions within a repository once they're enabled a
 Steps:
 
 1. Enable the agent for the repository.
-    - Go to Settings → Copilot → Cloud agent
+    - Go to Settings → Copilot → Cloud
     - Enable the agent, select the repository
 1. Assign a task to the agent.
     - From an issue, Copilot Chat, or the agents interface

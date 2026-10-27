@@ -55,6 +55,6 @@ quiz:
     - content: "Continue in Copilot CLI for background implementation"
       isCorrect: false
       explanation: "Copilot CLI runs in the background on the local machine. While it isolates changes in a worktree, it doesn't automatically create a pull request for team review and CI validation."
-    - content: "Hand off to a Copilot cloud agent to create a pull request"
+    - content: "Hand off to Copilot in the cloud to create a pull request"
       isCorrect: true
-      explanation: "The cloud agent creates a pull request on GitHub, which enables peer review, automated CI pipeline validation, and a documented approval trail — all requirements for production changes."
+      explanation: "Copilot in the cloud creates a pull request on GitHub, which enables peer review, automated CI pipeline validation, and a documented approval trail — all requirements for production changes."
