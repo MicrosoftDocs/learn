@@ -4,23 +4,28 @@ To understand this hardware architecture on Microsoft Surface devices, it's impo
 
 Arm is an organization that develops and licenses IP solutions for CPUs (Central Processing Units), GPUs (Graphical Processing Units), NPUs (Neural Processing Units), and interconnect technologies for OEMs (Original Equipment Manufacturers) to develop products. Arm licenses the ARM instruction sets to partners, such as Qualcomm, who then make chips with customization for their unique needs. Arm doesn't manufacture processors but rather provides designs and architecture that enable other companies to create their own products.
 
-Advanced RISC Machines (ARM) is a licensed architecture that follows the Reduced Instruction Set Computer (RISC) design philosophy for computer processors. RISC is a way of designing processors that use simpler and fewer instructions—which can result in faster and more efficient performance. Arm architectures is widely used in mobile devices, embedded systems, Internet of Things (IoT) devices, and increasingly in servers and cloud computing—positioning them to be ideal solutions for modern workforces.
+Advanced RISC Machines (ARM) is a licensed architecture that follows the Reduced Instruction Set Computer (RISC) design philosophy for computer processors. RISC is a way of designing processors that use simpler and fewer instructions—which can result in faster and more efficient performance. Arm architectures are widely used in mobile devices, embedded systems, Internet of Things (IoT) devices, and increasingly in servers and cloud computing—positioning them to be solutions for modern workforces.
 
-Surface for Business devices offer both traditional x86 and modern Arm solutions. In the current Surface for Business lineup, there are five devices that are built on Arm architecture, they're listed below:
+Surface for Business devices offer both traditional x86 and modern Arm solutions. In the current Surface for Business lineup, there are eight devices that are built on Arm architecture, they're listed below:
 
 | **Device** | **Display** | **Processor** | **RAM** |
 | :---: | :---: | :---: | :---: |
-| Surface Pro for Business 12-inch | 12" PixelSense 90 Hz Refresh rate | Snapdragon® X Plus (eight-core) | 16GB |
-| Surface Pro for Business | 13" PixelSense Flow 120 Hz Refresh rate | Snapdragon X Plus (10 Core) Snapdragon® X Elite (12-Core) | 16GB 32GB |
-| Surface Laptop for Business 13-inch | 13" PixelSense 60 Hz Refresh rate | Snapdragon® X Plus (eight-core) | 16GB |
-| Surface Laptop for Business 13.8-inch | 13.8" PixelSense Flow 120 Hz Refresh rate | Snapdragon® X Plus (10 Core) Snapdragon® X Elite (12-Core) | 16GB 32GB |
-| Surface Laptop for Business 15-inch | 15" PixelSense Flow 120 Hz Refresh rate | Snapdragon® X Elite (12-Core) | 16 GB 32GB |
+| Surface Pro for Business 12-inch (1st Edition) | 12" PixelSense<br>90 Hz Refresh rate | Snapdragon® X Plus (eight-core) | 16 GB |
+| Surface Pro for Business 12-inch (2nd Edition) | 12" PixelSense<br>90 Hz Refresh rate | Snapdragon® X2 Plus (six-core) | 16 GB<br>24 GB |
+| Surface Pro for Business | 13" PixelSense Flow<br>120 Hz Refresh rate | Snapdragon X Plus (10 Core)<br>Snapdragon® X Elite (12-Core) | 16 GB<br>32 GB |
+| Surface Laptop for Business 13-inch (1st Edition) (Qualcomm) | 13" PixelSense<br>60 Hz Refresh rate | Snapdragon® X Plus (eight-core) | 16 GB |
+| Surface Laptop for Business 13-inch (2nd Edition) (Qualcomm) | 13" PixelSense<br>60 Hz Refresh rate | Snapdragon® X2 Plus (six-core) | 16 GB<br>24 GB |
+| Surface Laptop for Business 13.8-inch | 13.8" PixelSense Flow<br>120 Hz Refresh rate | Snapdragon® X Plus (10 Core)<br>Snapdragon® X Elite (12-Core) | 16 GB<br>32 GB |
+| Surface Laptop for Business 15-inch | 15" PixelSense Flow<br>120 Hz Refresh rate | Snapdragon® X Elite (12-Core) | 16 GB<br>32 GB |
+| Surface Laptop Ultra for Business | 15" PixelSense Ultra<br>120 Hz Refresh rate | NVIDIA RTX Spark™ N1X with 5120-core GPU (18-core CPU)<br>NVIDIA RTX Spark™ N1X with 6114-core GPU (20-core CPU) | Up to 128 GB LPDDR5x unified memory |
 
 There are multiple benefits to using Arm architecture on Surface devices, such as:
 
-- Security features are built directly into the System on Chip (SoC).
+- Select security features are built directly into the System on Chip (SoC).
 - High performance potential is balanced with a focus on energy efficiency.
 - Arm architecture has a large and diverse ecosystem of device form factors—which means that they're already deployed in other device types such as smartphones, tablets, wearables, smart TVs, and drones.
+
+Arm-based architectures can also support AI processing by bringing the CPU, GPU, NPU, memory, and security capabilities together within the System on Chip (SoC). This integration helps Surface devices process supported AI workloads locally, including experiences such as Windows Studio Effects for video calls, while balancing performance and power efficiency.
 
 Arm technology powers most of the worlds connected devices with over 325 billion Arm-based chips have shipped to date. Arm architecture allows Surface devices to provide long battery life due to lower power consumption when compared to other PCs. This enables business users that work from multiple locations to get work done without concern for finding a power outlet.
 
