@@ -19,9 +19,9 @@ You can choose whether to use GitHub Copilot in GitHub, however, preview feature
 
 You can choose whether to use GitHub Copilot for assistance in GitHub Desktop. This setting is enabled by default.
 
-#### GitHub Copilot Cloud Agent
+#### Copilot in the cloud
 
-You can choose whether to enable or disable GitHub Copilot Cloud Agent in your repositories. GitHub Copilot Cloud Agent allows you to assign GitHub Copilot to GitHub issues, or ask GitHub Copilot to raise a pull request from a prompt during a chat session. GitHub Copilot Cloud Agent is enabled in all repositories by default, but you can block it from being used in repositories owned by your personal account. GitHub Copilot Cloud Agent is available with the GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
+You can choose whether to enable or disable Copilot in the cloud in your repositories. Copilot in the cloud allows you to assign GitHub Copilot to GitHub issues, or ask GitHub Copilot to raise a pull request from a prompt during a chat session. Copilot in the cloud is enabled in all repositories by default, but you can block it from being used in repositories owned by your personal account. Copilot in the cloud is available with the GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
 
 #### GitHub Copilot can search the web
 
@@ -29,7 +29,7 @@ You can choose whether to use the web search capability in GitHub Copilot. If yo
 
 #### Non-Microsoft coding agents
 
-You can choose whether to allow non-Microsoft coding agents to be enabled in your repositories. Non-Microsoft agents, such as Anthropic Claude and OpenAI Codex, can work alongside the GitHub Copilot Cloud Agent. Non-Microsoft agents are available in the GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
+You can choose whether to allow non-Microsoft coding agents to be enabled in your repositories. Non-Microsoft agents, such as Anthropic Claude and OpenAI Codex, can work alongside the Copilot in the Cloud. Non-Microsoft agents are available in the GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
 
 ### Enable or disable privacy policies
 

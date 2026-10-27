@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.github-copilot-code-agent.responsible-use-github-copilot-code-agent-github
-title: Responsible use of GitHub Copilot Cloud Agent  on GitHub.com
+title: Responsible use of Copilot in the cloud
 metadata:
-  title: Responsible use of GitHub Copilot Cloud Agent  on GitHub.com
-  description: This content is a part of the Accelerate development with GitHub Copilot Cloud Agent .
+  title: Responsible use of Copilot in the cloud
+  description: This content is part of the Accelerate development with Copilot in the cloud module.
   author: camihmerhar
   ms.author: camhernandez
   ms.date: 09/22/2025

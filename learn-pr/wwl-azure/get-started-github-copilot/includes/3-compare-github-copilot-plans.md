@@ -35,7 +35,7 @@ The tables below show example feature differences across plans. Do not rely on t
 
 | Feature                     | GitHub Copilot Free | GitHub Copilot Pro                          | GitHub Copilot Pro+                        | GitHub Copilot Business                  | GitHub Copilot Enterprise                |
 |-----------------------------|--------------|---------------------------------------|-------------------------------------|------------------------------------|------------------------------------|
-| GitHub Copilot Cloud Agent         | X            | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
+| GitHub Copilot cloud agent         | X            | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
 | Agent mode                  | &#10003;     | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
 | GitHub Copilot code review  | Only "Review selection" in Visual Studio Code | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
 | Model Context Protocol (MCP) | &#10003;    | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |

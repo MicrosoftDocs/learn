@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-architecture-deployment-support.define-operational-ownership
+metadata:
+  title: Define Operational Ownership
+  description: Define hardware qualification, support responsibilities, lifecycle requirements, licensing assumptions, and incident ownership in an Azure Local operating agreement.
+  ms.date: 10/24/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Define operational ownership
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-define-operational-ownership.md)]

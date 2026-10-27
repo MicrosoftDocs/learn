@@ -97,7 +97,7 @@ Not all agent invocation modes support parallel tasks:
 
 | **Agent Mode** | **Parallel Sessions  Across Multiple Tasks?** |
 | -------------- | --------------------------------------------- |
-| Copilot Cloud  | Yes                                           |
+| Copilot in the cloud | Yes                                           |
 | Copilot CLI    | Yes                                           |
 | Local          | No (serial  only, one at a time)              |
 

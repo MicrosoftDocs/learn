@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.code-defensively-with-best-practices.exercise
+title: Exercise - Refactor a sales report generator
+metadata:
+  title: Exercise - Refactor a Sales Report Generator
+  description: "Refactor a sales report program by improving names, handling bad data, adding documentation, and writing unit tests."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 40
+content: |
+  [!include[](includes/6-exercise.md)]

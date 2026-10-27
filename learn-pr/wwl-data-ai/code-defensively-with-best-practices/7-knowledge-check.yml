@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.code-defensively-with-best-practices.knowledge-check
+title: Check your knowledge
+metadata:
+  title: Check Your Knowledge
+  description: Check your understanding of coding defensively with best practices.
+  author: wwlpublish
+  ms.author: buzahid
+  ms.date: 10/19/2026
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "What is PEP 8?"
+    choices:
+    - content: "A Python testing framework"
+      isCorrect: false
+      explanation: "Incorrect. PEP 8 is not a testing framework. Consider what naming conventions and formatting standards Python uses."
+    - content: "Python's style guide for code formatting and naming conventions"
+      isCorrect: true
+      explanation: "Correct. PEP 8 is the official Python Enhancement Proposal that defines code style guidelines."
+    - content: "A Python library for error handling"
+      isCorrect: false
+      explanation: "Incorrect. PEP 8 is not a library. It's a style guide used for writing consistent Python code."
+  - content: "What is the purpose of type hints in Python?"
+    choices:
+    - content: "To make code run faster"
+      isCorrect: false
+      explanation: "Incorrect. Type hints don't affect runtime performance. They serve a different purpose related to code clarity."
+    - content: "To document the expected types of function parameters and return values"
+      isCorrect: true
+      explanation: "Correct. Type hints help document and clarify what types of values functions expect and return."
+    - content: "To replace the need for variable names"
+      isCorrect: false
+      explanation: "Incorrect. Type hints complement variable names; they don't replace them."
+  - content: "A function converts user text to a number with `int()`. Which approach is recommended for handling invalid text?"
+    choices:
+    - content: "Wrap the call in a bare except clause"
+      isCorrect: false
+      explanation: "Incorrect. A bare except clause catches all exceptions, including ones you didn't expect, and hides bugs. It's better to catch specific exception types."
+    - content: "Catch ValueError and respond to it"
+      isCorrect: true
+      explanation: "Correct. Catching a specific exception like ValueError allows for targeted error handling and a helpful message."
+    - content: "Add a type hint so Python rejects the text"
+      isCorrect: false
+      explanation: "Incorrect. Type hints aren't enforced at run time. You still need to validate input or handle the exception."
+  - content: "Why are unit tests important for defensive programming?"
+    choices:
+    - content: "They slow down development to make code more careful"
+      isCorrect: false
+      explanation: "Incorrect. While tests take time to write, they speed up development by catching bugs early and enabling confident refactoring."
+    - content: "They verify code behaves correctly under various conditions and catch regressions"
+      isCorrect: true
+      explanation: "Correct. Unit tests validate code functionality and prevent bugs from being introduced when making changes."
+    - content: "They replace the need for error handling"
+      isCorrect: false
+      explanation: "Incorrect. Tests and error handling serve different purposes and both are needed for robust code."

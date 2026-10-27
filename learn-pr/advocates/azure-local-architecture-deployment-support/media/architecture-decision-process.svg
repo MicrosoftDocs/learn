@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1274" viewBox="0 0 1200 1274" role="img" aria-labelledby="diagram-title diagram-description" style="background-color: white" data-module="1">
+  <title id="diagram-title">Evidence for an architecture decision</title>
+  <desc id="diagram-description">Five ordered stages establish an architecture decision: workload objectives, architecture selection, dependency assessment, capacity sizing, support ownership. Each stage supplies evidence for the next stage. Revisit the design if a required gate cannot be met.</desc>
+  <rect id="background" x="0" y="0" width="1200" height="1274" fill="#ffffff" />
+  <defs>
+    <marker id="flow-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#426789" />
+    </marker>
+  </defs>
+  <text x="48" y="49" font-family="Segoe UI, Arial, sans-serif" font-size="30" fill="#172b4d" data-role="diagram-heading" font-weight="600">Evidence for an architecture decision</text>
+  <text x="48" y="84" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#172b4d" data-role="diagram-subtitle">Module 1 | Read from top to bottom.</text>
+  <g data-card="1">
+    <rect data-role="card-boundary" x="48" y="130" width="1104" height="156" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" />
+    <circle cx="88" cy="172" r="20" fill="#005a9e" />
+    <text x="88" y="179" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#ffffff" data-role="stage-number" text-anchor="middle" font-weight="700">1</text>
+    <svg width="52" height="52" viewBox="0 0 18 18" x="126" y="154" aria-hidden="true" data-source-icon="azure stack\10109-icon-service-Capacity.svg">
+      <defs>
+        <linearGradient id="stage1-b756f194-f0ab-4baf-9a5b-c24373260298" x1="6.01" y1="17.69" x2="6.01" y2="0.26" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#949494" />
+          <stop offset="0.53" stop-color="#a2a2a2" />
+          <stop offset="1" stop-color="#b3b3b3" />
+        </linearGradient>
+        <linearGradient id="stage1-b4a51a97-50dd-4686-924a-188a97007e56" x1="10.55" y1="853.33" x2="15" y2="858.17" gradientTransform="translate(0 -1351.46) scale(1 1.59)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#0078d4" />
+          <stop offset="0.02" stop-color="#0d7ed8" />
+          <stop offset="0.08" stop-color="#2b8ae0" />
+          <stop offset="0.15" stop-color="#4194e7" />
+          <stop offset="0.22" stop-color="#519beb" />
+          <stop offset="0.29" stop-color="#5b9fee" />
+          <stop offset="0.4" stop-color="#5ea0ef" />
+          <stop offset="0.55" stop-color="#5b9fee" />
+          <stop offset="0.68" stop-color="#509aeb" />
+          <stop offset="0.8" stop-color="#3f92e6" />
+          <stop offset="0.91" stop-color="#2688df" />
+          <stop offset="0.99" stop-color="#127fd9" />
+        </linearGradient>
+      </defs>
+      <g id="stage1-a5e70dc5-b1f0-464a-b150-2d065854bc52">
+        <g>
+          <g>
+            <path d="M11.13,17.1a.6.6,0,0,1-.59.59H1.48a.59.59,0,0,1-.59-.59V.85A.58.58,0,0,1,1.48.26h9.06a.59.59,0,0,1,.59.59Z" fill="url(#stage1-b756f194-f0ab-4baf-9a5b-c24373260298)" />
+            <path d="M2.39,6.37A1.12,1.12,0,0,1,3.51,5.26H8.6A1.11,1.11,0,0,1,9.71,6.37h0A1.11,1.11,0,0,1,8.6,7.49H3.51A1.12,1.12,0,0,1,2.39,6.37Z" fill="#003067" />
+            <path d="M2.39,3.07A1.11,1.11,0,0,1,3.51,2H8.6A1.1,1.1,0,0,1,9.71,3.07h0A1.11,1.11,0,0,1,8.6,4.18H3.51A1.12,1.12,0,0,1,2.39,3.07Z" fill="#003067" />
+            <circle cx="3.55" cy="3.07" r="0.75" fill="#50e6ff" />
+            <circle cx="3.55" cy="6.37" r="0.75" fill="#50e6ff" />
+          </g>
+          <ellipse cx="12.62" cy="14.91" rx="4.49" ry="1.84" fill="#76bc2d" />
+          <ellipse cx="12.73" cy="14.89" rx="1.49" ry="0.41" fill="#5e9624" />
+          <ellipse cx="12.62" cy="10.82" rx="4.49" ry="1.84" fill="url(#stage1-b4a51a97-50dd-4686-924a-188a97007e56)" />
+          <ellipse cx="12.73" cy="10.8" rx="1.49" ry="0.41" fill="#005ba1" />
+          <path d="M12.62,16.72c2.48,0,4.49-.83,4.49-1.85h0V16h0c-.09,1-2.06,1.78-4.49,1.78s-4.49-.82-4.49-1.84v-1C8.13,15.89,10.14,16.72,12.62,16.72Z" fill="#5e9624" />
+          <path d="M12.62,12.62c2.48,0,4.49-.82,4.49-1.84h0v1.09h0c-.09,1-2.06,1.78-4.49,1.78s-4.49-.83-4.49-1.85v-1C8.13,11.8,10.14,12.62,12.62,12.62Z" fill="#0078d4" />
+        </g>
+      </g>
+    </svg>
+    <text x="208" y="174" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="stage-title" font-weight="600">Workload objectives</text>
+    <text x="208" y="210" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#172b4d" data-role="stage-body">Latency, residency, recovery targets.</text>
+    <text x="208" y="240" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#172b4d" data-role="stage-body">Name the failure domain to survive.</text>
+  </g>
+  <line data-role="connector" x1="600" x2="600" y1="294" y2="352" stroke="#426789" stroke-width="2.5" marker-end="url(#flow-arrow)" />
+  <text x="628" y="328" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#172b4d" data-role="connector-label">Constrain supported choices</text>
+  <g data-card="2">
+    <rect data-role="card-boundary" x="48" y="362" width="1104" height="156" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" />
+    <circle cx="88" cy="404" r="20" fill="#005a9e" />
+    <text x="88" y="411" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#ffffff" data-role="stage-number" text-anchor="middle" font-weight="700">2</text>
+    <svg id="stage2-fd454f1c-5506-44b8-874e-8814b8b2f70b" width="52" height="52" viewBox="0 0 18 18" x="126" y="386" aria-hidden="true" data-source-icon="compute\10021-icon-service-Virtual-Machine.svg">
+      <defs>
+        <linearGradient id="stage2-f34d9569-2bd0-4002-8f16-3d01d8106cb5" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#0078d4" />
+          <stop offset="0.82" stop-color="#5ea0ef" />
+        </linearGradient>
+        <linearGradient id="stage2-bdb45a0b-eb58-4970-a60a-fb2ce314f866" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+          <stop offset="0.15" stop-color="#ccc" />
+          <stop offset="1" stop-color="#707070" />
+        </linearGradient>
+      </defs>
+      <title>Icon-compute-21</title>
+      <rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#stage2-f34d9569-2bd0-4002-8f16-3d01d8106cb5)" />
+      <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" />
+      <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" />
+      <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" />
+      <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" />
+      <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" />
+      <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#stage2-bdb45a0b-eb58-4970-a60a-fb2ce314f866)" />
+    </svg>
+    <text x="208" y="406" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="stage-title" font-weight="600">Architecture selection</text>
+    <text x="208" y="442" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#172b4d" data-role="stage-body">Match supported workloads to scale.</text>
+    <text x="208" y="472" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#172b4d" data-role="stage-body">Choose connectivity separately.</text>
+  </g>
+  <line data-role="connector" x1="600" x2="600" y1="526" y2="584" stroke="#426789" stroke-width="2.5" marker-end="url(#flow-arrow)" />
+  <text x="628" y="560" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#172b4d" data-role="connector-label">Identify required dependencies</text>
+  <g data-card="3">
+    <rect data-role="card-boundary" x="48" y="594" width="1104" height="156" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" />
+    <circle cx="88" cy="636" r="20" fill="#005a9e" />
+    <text x="88" y="643" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#ffffff" data-role="stage-number" text-anchor="middle" font-weight="700">3</text>
+    <svg width="52" height="52" viewBox="0 0 18 18" x="126" y="618" aria-hidden="true" data-source-icon="management + governance\00756-icon-service-Azure-Arc.svg">
+      <defs>
+        <linearGradient id="stage3-b69d2150-b4da-460b-99ae-a9f5a961b313" x1="-1194.321" y1="9.128" x2="-1190.755" y2="9.128" gradientTransform="matrix(-1, 0, 0, 1, -1179.887, 0)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#32bedd" />
+          <stop offset="0.998" stop-color="#9cebff" stop-opacity="0.5" />
+        </linearGradient>
+        <linearGradient id="stage3-e690cc62-d1a2-4325-90ca-ac2fe51a5b58" x1="80.363" y1="9.135" x2="83.929" y2="9.135" gradientTransform="translate(-76.796)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#005ba1" />
+          <stop offset="0.998" stop-color="#005ba1" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="stage3-ff649864-6b4c-4fa8-bcca-c12b2b910f3c" x1="3.555" y1="9.326" x2="14.434" y2="9.326" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#005ba1" />
+          <stop offset="0.974" stop-color="#32bedd" />
+        </linearGradient>
+      </defs>
+      <g id="stage3-a826c017-5e9e-4208-897f-2ade2eb58cd6">
+        <polygon points="7.132 4.469 3.567 6.542 0 4.468 3.567 2.395 7.132 4.469" fill="#5ea0ef" />
+        <polygon points="7.132 13.794 3.566 11.735 3.566 15.867 7.132 13.794" fill="#005ba1" />
+        <polygon points="3.567 6.542 3.566 6.541 3.566 6.542 0 4.468 0 13.801 3.566 15.874 7.132 13.801 7.132 13.794 3.566 15.867 3.566 11.735 7.132 13.794 7.132 4.469 3.567 6.542" fill="#0078d4" />
+        <polygon points="10.868 4.469 14.433 6.542 18 4.468 14.433 2.395 10.868 4.469" fill="#9cebff" />
+        <polygon points="10.868 13.794 14.434 11.735 14.434 15.867 10.868 13.794" fill="#32bedd" />
+        <polygon points="14.433 6.535 14.434 6.535 14.434 6.535 14.434 11.728 10.868 13.794 10.868 4.462 14.433 6.535" fill="url(#stage3-b69d2150-b4da-460b-99ae-a9f5a961b313)" />
+        <polygon points="10.868 4.469 14.433 6.542 18 4.468 14.433 2.395 10.868 4.469" fill="#9cebff" />
+        <polygon points="14.433 6.542 10.868 4.469 10.868 13.794 14.434 11.735 14.434 15.867 10.868 13.794 10.868 13.801 14.434 15.874 18 13.801 18 4.468 18 4.468 14.433 6.542" fill="#50e6ff" />
+        <polygon points="10.868 13.794 14.434 11.735 14.434 15.867 10.868 13.794" fill="#32bedd" />
+        <polygon points="14.433 6.535 14.434 6.535 14.434 6.535 14.434 11.728 10.868 13.794 10.868 4.462 14.433 6.535" fill="url(#stage3-b69d2150-b4da-460b-99ae-a9f5a961b313)" />
+        <polygon points="3.567 6.541 3.566 6.541 3.566 6.541 3.566 11.734 7.132 13.801 7.132 4.469 3.567 6.541" fill="url(#stage3-e690cc62-d1a2-4325-90ca-ac2fe51a5b58)" />
+        <path d="M14.423,10.126c-.624,1.556-3.066,2.584-5.348,2.584l-.081,0-.08,0c-2.282,0-4.724-1.028-5.348-2.584,0,0-.025-1.561,0-1.713C4.02,10.15,6.4,11.435,8.859,11.435l.135,0,.136,0c2.455,0,4.839-1.285,5.293-3.022C14.448,8.565,14.423,10.126,14.423,10.126ZM13.4,5.942A6.653,6.653,0,0,1,9.13,7.416l-.136,0-.135,0a6.656,6.656,0,0,1-4.267-1.47l-.856.5C4.553,7.809,6.8,8.69,8.914,8.69h.161c2.115,0,4.366-.883,5.181-2.251Z" fill="url(#stage3-ff649864-6b4c-4fa8-bcca-c12b2b910f3c)" />
+      </g>
+    </svg>
+    <text x="208" y="638" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="stage-title" font-weight="600">Dependency assessment</text>
+    <text x="208" y="674" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#172b4d" data-role="stage-body">Separate local execution from management.</text>
+    <text x="208" y="704" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#172b4d" data-role="stage-body">Trace identity, network, witness, telemetry.</text>
+  </g>
+  <line data-role="connector" x1="600" x2="600" y1="758" y2="816" stroke="#426789" stroke-width="2.5" marker-end="url(#flow-arrow)" />
+  <text x="628" y="792" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#172b4d" data-role="connector-label">Define failure-state demand</text>
+  <g data-card="4">
+    <rect data-role="card-boundary" x="48" y="826" width="1104" height="156" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" />
+    <circle cx="88" cy="868" r="20" fill="#005a9e" />
+    <text x="88" y="875" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#ffffff" data-role="stage-number" text-anchor="middle" font-weight="700">4</text>
+    <svg width="52" height="52" viewBox="0 0 18 18" x="126" y="850" aria-hidden="true" data-source-icon="azure stack\10109-icon-service-Capacity.svg">
+      <defs>
+        <linearGradient id="stage4-b756f194-f0ab-4baf-9a5b-c24373260298" x1="6.01" y1="17.69" x2="6.01" y2="0.26" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#949494" />
+          <stop offset="0.53" stop-color="#a2a2a2" />
+          <stop offset="1" stop-color="#b3b3b3" />
+        </linearGradient>
+        <linearGradient id="stage4-b4a51a97-50dd-4686-924a-188a97007e56" x1="10.55" y1="853.33" x2="15" y2="858.17" gradientTransform="translate(0 -1351.46) scale(1 1.59)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#0078d4" />
+          <stop offset="0.02" stop-color="#0d7ed8" />
+          <stop offset="0.08" stop-color="#2b8ae0" />
+          <stop offset="0.15" stop-color="#4194e7" />
+          <stop offset="0.22" stop-color="#519beb" />
+          <stop offset="0.29" stop-color="#5b9fee" />
+          <stop offset="0.4" stop-color="#5ea0ef" />
+          <stop offset="0.55" stop-color="#5b9fee" />
+          <stop offset="0.68" stop-color="#509aeb" />
+          <stop offset="0.8" stop-color="#3f92e6" />
+          <stop offset="0.91" stop-color="#2688df" />
+          <stop offset="0.99" stop-color="#127fd9" />
+        </linearGradient>
+      </defs>
+      <g id="stage4-a5e70dc5-b1f0-464a-b150-2d065854bc52">
+        <g>
+          <g>
+            <path d="M11.13,17.1a.6.6,0,0,1-.59.59H1.48a.59.59,0,0,1-.59-.59V.85A.58.58,0,0,1,1.48.26h9.06a.59.59,0,0,1,.59.59Z" fill="url(#stage4-b756f194-f0ab-4baf-9a5b-c24373260298)" />
+            <path d="M2.39,6.37A1.12,1.12,0,0,1,3.51,5.26H8.6A1.11,1.11,0,0,1,9.71,6.37h0A1.11,1.11,0,0,1,8.6,7.49H3.51A1.12,1.12,0,0,1,2.39,6.37Z" fill="#003067" />
+            <path d="M2.39,3.07A1.11,1.11,0,0,1,3.51,2H8.6A1.1,1.1,0,0,1,9.71,3.07h0A1.11,1.11,0,0,1,8.6,4.18H3.51A1.12,1.12,0,0,1,2.39,3.07Z" fill="#003067" />
+            <circle cx="3.55" cy="3.07" r="0.75" fill="#50e6ff" />
+            <circle cx="3.55" cy="6.37" r="0.75" fill="#50e6ff" />
+          </g>
+          <ellipse cx="12.62" cy="14.91" rx="4.49" ry="1.84" fill="#76bc2d" />
+          <ellipse cx="12.73" cy="14.89" rx="1.49" ry="0.41" fill="#5e9624" />
+          <ellipse cx="12.62" cy="10.82" rx="4.49" ry="1.84" fill="url(#stage4-b4a51a97-50dd-4686-924a-188a97007e56)" />
+          <ellipse cx="12.73" cy="10.8" rx="1.49" ry="0.41" fill="#005ba1" />
+          <path d="M12.62,16.72c2.48,0,4.49-.83,4.49-1.85h0V16h0c-.09,1-2.06,1.78-4.49,1.78s-4.49-.82-4.49-1.84v-1C8.13,15.89,10.14,16.72,12.62,16.72Z" fill="#5e9624" />
+          <path d="M12.62,12.62c2.48,0,4.49-.82,4.49-1.84h0v1.09h0c-.09,1-2.06,1.78-4.49,1.78s-4.49-.83-4.49-1.85v-1C8.13,11.8,10.14,12.62,12.62,12.62Z" fill="#0078d4" />
+        </g>
+      </g>
+    </svg>
+    <text x="208" y="870" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="stage-title" font-weight="600">Capacity envelope</text>
+    <text x="208" y="906" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#172b4d" data-role="stage-body">Deduct overhead, failure reserve.</text>
+    <text x="208" y="936" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#172b4d" data-role="stage-body">Prove growth headroom. Allow maintenance.</text>
+  </g>
+  <line data-role="connector" x1="600" x2="600" y1="990" y2="1048" stroke="#426789" stroke-width="2.5" marker-end="url(#flow-arrow)" />
+  <text x="628" y="1024" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#172b4d" data-role="connector-label">Approve with accountable owners</text>
+  <g data-card="5">
+    <rect data-role="card-boundary" x="48" y="1058" width="1104" height="156" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" />
+    <circle cx="88" cy="1100" r="20" fill="#005a9e" />
+    <text x="88" y="1107" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#ffffff" data-role="stage-number" text-anchor="middle" font-weight="700">5</text>
+    <svg width="52" height="52" viewBox="0 0 18 18" x="126" y="1082" aria-hidden="true" data-source-icon="azure stack\10111-icon-service-User-Subscriptions.svg">
+      <defs>
+        <linearGradient id="stage5-b0670cdb-9407-42e5-ae8f-f3558902da1a" x1="7.89" y1="6.9" x2="7.89" y2="19.35" gradientUnits="userSpaceOnUse">
+          <stop offset="0.22" stop-color="#32d4f5" />
+          <stop offset="1" stop-color="#198ab3" />
+        </linearGradient>
+        <linearGradient id="stage5-fd04ffc0-49c3-4a18-9b27-999b23712bcb" x1="7.53" y1="0.22" x2="8.44" y2="11.53" gradientUnits="userSpaceOnUse">
+          <stop offset="0.22" stop-color="#32d4f5" />
+          <stop offset="1" stop-color="#198ab3" />
+        </linearGradient>
+        <radialGradient id="stage5-aa3ecbb1-1061-42c8-aaf2-d5c01a3fcfd9" cx="-19.24" cy="6.51" r="6.13" gradientTransform="matrix(0.94, 0.01, -0.01, 0.94, 32.03, 6.26)" gradientUnits="userSpaceOnUse">
+          <stop offset="0.27" stop-color="#ffd70f" />
+          <stop offset="1" stop-color="#fea11b" />
+        </radialGradient>
+      </defs>
+      <g id="stage5-b245b541-7d80-40be-a5d7-51667bcba1b3">
+        <g>
+          <g>
+            <path d="M14.05,17.11a1.34,1.34,0,0,0,1.34-1.33.81.81,0,0,0,0-.16C14.86,11.42,12.47,8,7.9,8S.86,10.9.4,15.63A1.34,1.34,0,0,0,1.59,17.1H14.05Z" fill="url(#stage5-b0670cdb-9407-42e5-ae8f-f3558902da1a)" />
+            <path d="M7.9,9a4.09,4.09,0,0,1-2.27-.67l2.25,5.89,2.24-5.85A4.17,4.17,0,0,1,7.9,9Z" fill="#fff" opacity="0.8" />
+            <circle cx="7.9" cy="4.8" r="4.21" fill="url(#stage5-fd04ffc0-49c3-4a18-9b27-999b23712bcb)" />
+          </g>
+          <g>
+            <path id="stage5-f2ddd4d7-46fc-4e48-ae24-8fde036c39bb" d="M17.27,11.45a1.13,1.13,0,0,0,0-1.6h0l-1.94-2a1.12,1.12,0,0,0-1.6,0h0l-2,1.94a1.14,1.14,0,0,0,0,1.61l1.61,1.64a.31.31,0,0,1,.09.22l0,3a.36.36,0,0,0,.12.28l.73.75a.27.27,0,0,0,.37,0l.72-.72h0l.42-.43a.14.14,0,0,0,0-.2l-.31-.31a.17.17,0,0,1,0-.23l.31-.31a.13.13,0,0,0,0-.2l-.3-.31a.17.17,0,0,1,0-.23l.31-.31a.14.14,0,0,0,0-.2l-.42-.43V13.3ZM14.54,8.34a.66.66,0,0,1,.64.65.63.63,0,0,1-.65.64.65.65,0,0,1,0-1.29Z" fill="url(#stage5-aa3ecbb1-1061-42c8-aaf2-d5c01a3fcfd9)" />
+            <path id="stage5-e15034b6-eebb-4253-ac69-86068a1d4276" d="M14,16.38h0a.14.14,0,0,0,.24-.1V13.83a.16.16,0,0,0-.06-.13h0a.14.14,0,0,0-.22.12v2.46A.13.13,0,0,0,14,16.38Z" fill="#ff9300" opacity="0.75" />
+            <rect id="stage5-f3d2a589-08f4-4e99-9635-cc67abadc8f4" x="14.38" y="9.07" width="0.38" height="3.21" rx="0.17" transform="translate(3.8 25.17) rotate(-89.65)" fill="#ff9300" opacity="0.75" />
+            <rect id="stage5-bc7793e0-f7bc-4cc4-abb0-181c6c62350c" x="14.37" y="9.68" width="0.38" height="3.21" rx="0.17" transform="translate(3.18 25.78) rotate(-89.65)" fill="#ff9300" opacity="0.75" />
+          </g>
+        </g>
+      </g>
+    </svg>
+    <text x="208" y="1102" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="stage-title" font-weight="600">Support decision</text>
+    <text x="208" y="1138" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#172b4d" data-role="stage-body">Record qualification. Confirm entitlement.</text>
+    <text x="208" y="1168" font-family="Segoe UI, Arial, sans-serif" font-size="19" fill="#172b4d" data-role="stage-body">Assign operational owners. Name escalation leads.</text>
+  </g>
+</svg>

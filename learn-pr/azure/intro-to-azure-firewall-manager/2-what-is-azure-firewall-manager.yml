@@ -3,11 +3,11 @@ uid: learn.intro-to-azure-firewall-manager.2-what-is-azure-firewall-manager
 title: What is Azure Firewall Manager?
 metadata:
   unitType: learning-content
-  title: What is Azure Firewall Manager?
+  title: What Is Azure Firewall Manager?
   description: What is Azure Firewall Manager?
-  ms.date: 03/08/2024
-  author: vhorne
-  ms.author: victorh
+  ms.date: 10/24/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 5
 content: |

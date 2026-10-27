@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.github-copilot-code-agent.understand-enable-github-copilot-code-agent
-title: Understanding and enabling the GitHub Copilot Cloud Agent 
+title: Understanding and enabling Copilot in the cloud
 metadata:
-  title: Understanding and Enabling the GitHub Copilot Cloud Agent 
-  description: This content is a part of the Accelerate development with GitHub Copilot Cloud Agent .
+  title: Understanding and enabling Copilot in the cloud
+  description: This content is part of the Accelerate development with Copilot in the cloud module.
   author: camihmerhar
   ms.author: camhernandez
   ms.date: 09/22/2025

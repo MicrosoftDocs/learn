@@ -3,11 +3,11 @@ uid: learn.intro-to-azure-firewall-manager.5-knowledge-check
 title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Module assessment
+  title: Module Assessment
   description: Knowledge check
-  ms.date: 03/08/2024
-  author: vhorne
-  ms.author: victorh
+  ms.date: 10/24/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 6
@@ -20,34 +20,34 @@ quiz:
     - content: "Centralized route management"
       isCorrect: true
       explanation: "Correct. This feature isn't currently available with hub virtual network architecture."
-    - content: "Third-party integration"
+    - content: "Centralized policy management"
       isCorrect: false
-      explanation: "Incorrect. This feature is also available with hub virtual network architecture."
+      explanation: "Incorrect. Firewall Manager can centrally manage firewall policies for Azure Firewall instances in both hub virtual networks and secured virtual hubs."
     - content: "Centralized deployment and configuration"
       isCorrect: false
       explanation: "Incorrect. This feature is also available with hub virtual network architecture."
-  - content: "When Azure Firewall rules are processed, which of the following rules is processed first?"
+  - content: "When threat intelligence-based filtering is enabled, which of the following checks does Azure Firewall perform first?"
     choices:
     - content: "Network rules"
       isCorrect: false
-      explanation: "Incorrect. Network rules are applied second."
+      explanation: "Incorrect. Threat intelligence is evaluated first, and DNAT rules are evaluated before network rules."
     - content: "Application rules"
       isCorrect: false
-      explanation: "Incorrect. Application rules are applied third."
+      explanation: "Incorrect. Application rules are evaluated after network rules."
     - content: "Threat intelligence rules"
       isCorrect: true
-      explanation: "Correct. Threat intelligence rules are processed before all other rules."
-  - content: "An administrator is considering the benefits of Firewall Manager for their organization. The administrator knows that there are resources in several different Azure regions. The organization also has multiple Azure subscriptions. Which of the following statements about this scenario is true?"
+      explanation: "Correct. When enabled, threat intelligence-based filtering is evaluated before DNAT, network, and application rules."
+  - content: "An organization has Azure Firewall instances in multiple Azure regions and subscriptions. Which statement describes Azure Firewall Manager?"
     choices:
-    - content: "The administrator must implement multiple instances of Firewall Manager: one for each Azure region."
+    - content: "Firewall Manager can manage firewalls only within a single Azure region."
       isCorrect: false
-      explanation: "Incorrect. Firewall Manager can be implemented across multiple Azure regions."
-    - content: "The administrator must implement multiple instances of Firewall Manager: one for each Azure subscription."
+      explanation: "Incorrect. Firewall Manager supports centralized management across Azure regions."
+    - content: "Firewall Manager can manage firewalls only within a single Azure subscription."
       isCorrect: false
-      explanation: "Incorrect. Firewall Manager can be implemented across multiple Azure subscriptions."
-    - content: "The administrator must implement a single instance of Firewall Manager: one for all Azure regions and subscriptions."
+      explanation: "Incorrect. Firewall Manager supports centralized management across Azure subscriptions."
+    - content: "Firewall Manager can centrally manage these firewall instances and their policies across regions and subscriptions, subject to the administrator's permissions."
       isCorrect: true
-      explanation: "Correct. Firewall Manager spans Azure regions and subscriptions."
+      explanation: "Correct. Firewall Manager provides centralized security management across regions and subscriptions. You deploy firewall resources and configure policies, not a separate Firewall Manager instance."
   - content: "An Azure administrator wants to help secure traffic by using Firewall Manager to create Azure Firewall policies. The traffic originates via an Azure Virtual WAN/ExpressRoute connection from the organization's on-premises environment. Which of the following statements about Firewall Manager is true?"
     choices:
     - content: "It's not possible to use Firewall Manager to secure traffic in this context."
@@ -58,7 +58,7 @@ quiz:
       explanation: "Correct. When the underlying resource is Azure Virtual WAN, it's referred to as secured virtual hub."
     - content: "This example describes Firewall Manager being implemented in the hub virtual network architecture."
       isCorrect: false
-      explanation: "Incorrect. Secured virtual hub architecture's underlying resource is Azure virtual networks."
+      explanation: "Incorrect. This scenario uses a secured virtual hub, whose underlying resource is an Azure Virtual WAN hub. A hub virtual network uses a customer-managed Azure virtual network."
   - content: "The Research department requires specific firewall settings to help secure their resources in several Azure virtual networks. But the enterprise administrator wants to ensure that the organization's overarching firewall policies also are applied. Which of the following statements about this configuration is true?"
     choices:
     - content: "Firewall Manager can't be implemented because the global policies override any local policies."

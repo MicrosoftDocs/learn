@@ -13,10 +13,10 @@ Now that you've finished this module, you should be able to:
 
 Here are some links to more information on the topics we discussed in this module.
 
-- [About GitHub Copilot coding agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent)
+- [Copilot on GitHub.com](https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github)
 - [Automate repository tasks with GitHub Agentic Workflows](https://github.blog/ai-and-ml/automate-repository-tasks-with-github-agentic-workflows/)
 - [GitHub Agentic Workflows (gh-aw)](https://github.github.com/gh-aw/)
-- [Responsible use of Copilot coding agent](https://docs.github.com/en/copilot/responsible-use/copilot-coding-agent)
+- [Responsible use of Copilot in the cloud](https://docs.github.com/en/copilot/responsible-use/copilot-coding-agent)
 - [Workflow syntax for GitHub Actions](https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions)
 - [Events that trigger workflows](https://docs.github.com/actions/using-workflows/events-that-trigger-workflows)
 - [Managing GitHub Actions permissions](https://docs.github.com/en/actions/security-guides/automatic-token-authentication)

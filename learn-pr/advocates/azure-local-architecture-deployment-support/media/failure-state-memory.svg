@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1446" viewBox="0 0 1200 1446" role="img" aria-labelledby="failure-state-capacity-title failure-state-capacity-description" style="background: white; background-color: white" font-family="Segoe UI, Arial, sans-serif" data-module="1">
+  <title id="failure-state-capacity-title">Failure-state memory capacity</title>
+  <desc id="failure-state-capacity-description">Four nodes with 512 gibibytes each provide 2048 gibibytes installed. One unavailable node leaves 1536 gibibytes. Deduct 192 gibibytes of host reserve, then 96 gibibytes of infrastructure demand, leaving 1248 gibibytes. A 20 percent operational reserve leaves a workload budget of 998.4 gibibytes. Demand of 960 gibibytes leaves 38.4 gibibytes spare. Two unavailable nodes leave a budget of 640 gibibytes. These illustrative assumptions are not Microsoft sizing ratios.</desc>
+  <rect id="failure-state-capacity-background" x="0" y="0" width="1200" height="1446" fill="#ffffff" />
+  <metadata>{"source_icons": [{"source": "C:\\Azure-Icons\\CnE_Enterprise\\Server (generic).svg", "source_sha256": "ad48653923f33e26b833269fa4426879d4864b1a19282278aaa41885703d3389", "source_viewBox": "0 0 83.4 83.4", "instance_id_prefix": "failure-state-capacity-icon1-", "handling": "Original inline vector elements, colors, proportions and title metadata retained; IDs prefixed."}]}</metadata>
+  <defs>
+    <marker id="failure-state-capacity-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#426789" />
+    </marker>
+  </defs>
+  <text x="48" y="54" font-family="Segoe UI, Arial, sans-serif" font-size="32" fill="#172b4d" data-role="diagram-heading" font-weight="600">Failure-state memory capacity</text>
+  <text x="48" y="96" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="diagram-subtitle">Illustrative memory budget. All capacity values are in gibibytes.</text>
+  <rect x="48" y="138" width="1104" height="168" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <circle cx="90" cy="182" r="22" fill="#005a9e" data-role="number-badge" />
+  <text x="90" y="189" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" data-role="stage-number" font-weight="700" text-anchor="middle">1</text>
+  <text x="138" y="189" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="stage-title" font-weight="600">Installed memory</text>
+  <rect x="48" y="386" width="1104" height="168" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <circle cx="90" cy="430" r="22" fill="#005a9e" data-role="number-badge" />
+  <text x="90" y="437" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" data-role="stage-number" font-weight="700" text-anchor="middle">2</text>
+  <text x="138" y="437" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="stage-title" font-weight="600">Memory on surviving nodes</text>
+  <rect x="48" y="634" width="1104" height="216" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <circle cx="90" cy="678" r="22" fill="#005a9e" data-role="number-badge" />
+  <text x="90" y="685" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" data-role="stage-number" font-weight="700" text-anchor="middle">3</text>
+  <text x="138" y="685" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="stage-title" font-weight="600">Subtract infrastructure reserves</text>
+  <rect x="48" y="930" width="1104" height="258" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <circle cx="90" cy="974" r="22" fill="#005a9e" data-role="number-badge" />
+  <text x="90" y="981" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" data-role="stage-number" font-weight="700" text-anchor="middle">4</text>
+  <text x="138" y="981" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="stage-title" font-weight="600">Set the workload budget</text>
+  <svg version="1.0" x="988" y="158" viewBox="0 0 83.4 83.4" enable-background="new 0 0 83.4 83.4" xml:space="preserve" width="104" height="104" preserveAspectRatio="xMidYMid meet" overflow="visible" aria-hidden="true" data-source-icon="CnE_Enterprise\Server (generic).svg" data-source-sha256="ad48653923f33e26b833269fa4426879d4864b1a19282278aaa41885703d3389">
+    <g id="failure-state-capacity-icon1-Layer_1">
+      <g id="failure-state-capacity-icon1-File_x2C__general">
+        <title>Sheet.1071</title>
+      </g>
+      <g id="failure-state-capacity-icon1-Message">
+	</g>
+      <g id="failure-state-capacity-icon1-Monitor">
+	</g>
+      <g id="failure-state-capacity-icon1-Monitor_running_apps">
+	</g>
+      <g id="failure-state-capacity-icon1-Mouse">
+	</g>
+      <g id="failure-state-capacity-icon1-Network_card">
+	</g>
+      <g id="failure-state-capacity-icon1-Not_allowed">
+	</g>
+      <g id="failure-state-capacity-icon1-Performance">
+	</g>
+      <g id="failure-state-capacity-icon1-Phone">
+	</g>
+      <g id="failure-state-capacity-icon1-Plug_and_play">
+	</g>
+      <g id="failure-state-capacity-icon1-Powershell_script_file">
+	</g>
+      <g id="failure-state-capacity-icon1-Protocol_stack">
+	</g>
+      <g id="failure-state-capacity-icon1-Queue_x2C__general">
+	</g>
+      <g id="failure-state-capacity-icon1-RMS_connector">
+	</g>
+      <g id="failure-state-capacity-icon1-Router">
+	</g>
+      <g id="failure-state-capacity-icon1-Script_file">
+	</g>
+      <g id="failure-state-capacity-icon1-Secure_virtual_machine">
+	</g>
+    </g>
+    <g id="failure-state-capacity-icon1-paths">
+      <g id="failure-state-capacity-icon1-Access_control">
+	</g>
+      <g id="failure-state-capacity-icon1-Azure_active_directory">
+	</g>
+      <g id="failure-state-capacity-icon1-Generic_code">
+	</g>
+      <g id="failure-state-capacity-icon1-Laptop">
+	</g>
+      <g id="failure-state-capacity-icon1-Load_balancer">
+	</g>
+      <g id="failure-state-capacity-icon1-Lock_x2C__protected">
+	</g>
+    </g>
+    <g id="failure-state-capacity-icon1-symbols">
+      <g>
+        <path fill="#2A3282" d="M52.6,19.1h-16c-1.1,0-2,0.9-2,2v39h20v-39C54.6,20,53.7,19.1,52.6,19.1z M51.6,56.1h-14v-2h14V56.1z     M51.6,52.1h-14v-2h14V52.1z M51.6,27.1h-14v-2h14V27.1z" />
+      </g>
+    </g>
+    <g id="failure-state-capacity-icon1-slices">
+</g>
+  </svg>
+  <text x="138" y="249" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#172b4d" data-role="body" font-weight="600">4 x 512 = 2,048 installed</text>
+  <text x="138" y="497" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#172b4d" data-role="body" font-weight="600">3 x 512 = 1,536 on surviving nodes</text>
+  <text x="138" y="736" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Host reserve: 3 x 64 = 192; cluster infrastructure: 96</text>
+  <text x="138" y="795" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#172b4d" data-role="body" font-weight="600">1,536 - 192 - 96 = 1,248</text>
+  <text x="138" y="1030" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Operational reserve: 20% x 1,248 = 249.6</text>
+  <text x="138" y="1078" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#172b4d" data-role="body" font-weight="600">Workload budget: 1,248 - 249.6 = 998.4</text>
+  <text x="138" y="1129" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="body">Demand: 960    |    Spare: 998.4 - 960 = 38.4</text>
+  <line x1="600" y1="320" x2="600" y2="372" stroke="#426789" stroke-width="2.5" marker-end="url(#failure-state-capacity-arrow)" data-role="connector" data-path-kind="conceptual-flow" />
+  <text x="636" y="354" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#172b4d" data-role="connector-label">One node unavailable</text>
+  <line x1="600" y1="568" x2="600" y2="620" stroke="#426789" stroke-width="2.5" marker-end="url(#failure-state-capacity-arrow)" data-role="connector" data-path-kind="conceptual-flow" />
+  <text x="636" y="602" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#172b4d" data-role="connector-label">Deduct fixed overhead</text>
+  <line x1="600" y1="864" x2="600" y2="916" stroke="#426789" stroke-width="2.5" marker-end="url(#failure-state-capacity-arrow)" data-role="connector" data-path-kind="conceptual-flow" />
+  <text x="636" y="898" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#172b4d" data-role="connector-label">Keep operational reserve</text>
+  <rect x="48" y="1230" width="1104" height="172" rx="10" fill="#eef4f8" stroke="#8aa8c2" stroke-width="1.5" data-role="callout-boundary" />
+  <text x="80" y="1275" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="body" font-weight="600">Illustrative assumptions, not Microsoft sizing ratios.</text>
+  <text x="80" y="1319" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Two nodes unavailable: budget 640; demand 960 does not fit.</text>
+  <text x="80" y="1362" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">(2 x 512 - 2 x 64 - 96) x 0.8 = 640</text>
+</svg>

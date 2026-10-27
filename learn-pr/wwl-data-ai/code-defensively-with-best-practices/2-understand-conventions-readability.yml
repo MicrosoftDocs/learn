@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.code-defensively-with-best-practices.understand-conventions-readability
+title: Understand conventions and readability
+metadata:
+  title: Understand Conventions and Readability
+  description: "Learn Python naming conventions and formatting standards that make code more readable and maintainable."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-understand-conventions-readability.md)]
