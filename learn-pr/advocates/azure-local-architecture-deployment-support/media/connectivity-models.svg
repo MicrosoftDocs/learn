@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1548" viewBox="0 0 1200 1548" role="img" aria-labelledby="connected-and-disconnected-operations-title connected-and-disconnected-operations-description" style="background: white; background-color: white" font-family="Segoe UI, Arial, sans-serif" data-module="1">
+  <title id="connected-and-disconnected-operations-title">Choose connectivity separately from deployment type</title>
+  <desc id="connected-and-disconnected-operations-description">Connected deployments host their control plane in an Azure region, with workloads at the customer site. Agents initiate outbound connections. Disconnected operations host the control plane on a dedicated local three-node production management cluster, separate from business workloads. Hyperconverged deployments support either mode. Disaggregated deployments support either mode. Multi-rack preview deployments support connected mode only. Small form factor preview deployments support connected mode only. An internet outage does not convert a connected deployment into disconnected operations.</desc>
+  <rect id="connected-and-disconnected-operations-background" x="0" y="0" width="1200" height="1548" fill="#ffffff" />
+  <metadata>{"source_icons": [{"source": "C:\\Azure-Icons\\management + governance\\00756-icon-service-Azure-Arc.svg", "source_sha256": "00f4a57d6e0391bec619a9298d114f783dbb7dd4165d44242202ca37d00d9bfa", "source_viewBox": "0 0 18 18", "instance_id_prefix": "connected-and-disconnected-operations-icon1-", "handling": "Original inline vector elements, colors, proportions and title metadata retained; IDs prefixed."}, {"source": "C:\\Azure-Icons\\compute\\10021-icon-service-Virtual-Machine.svg", "source_sha256": "092d18ffadec9ec0e5af129186dc7bc2a80544011e55f965604ed4b13873e0fc", "source_viewBox": "0 0 18 18", "instance_id_prefix": "connected-and-disconnected-operations-icon2-", "handling": "Original inline vector elements, colors, proportions and title metadata retained; IDs prefixed."}, {"source": "C:\\Azure-Icons\\CnE_Enterprise\\Server (generic).svg", "source_sha256": "ad48653923f33e26b833269fa4426879d4864b1a19282278aaa41885703d3389", "source_viewBox": "0 0 83.4 83.4", "instance_id_prefix": "connected-and-disconnected-operations-icon3-", "handling": "Original inline vector elements, colors, proportions and title metadata retained; IDs prefixed."}, {"source": "C:\\Azure-Icons\\compute\\10021-icon-service-Virtual-Machine.svg", "source_sha256": "092d18ffadec9ec0e5af129186dc7bc2a80544011e55f965604ed4b13873e0fc", "source_viewBox": "0 0 18 18", "instance_id_prefix": "connected-and-disconnected-operations-icon4-", "handling": "Original inline vector elements, colors, proportions and title metadata retained; IDs prefixed."}]}</metadata>
+  <defs>
+    <marker id="connected-and-disconnected-operations-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#426789" />
+    </marker>
+  </defs>
+  <text x="48" y="54" font-family="Segoe UI, Arial, sans-serif" font-size="32" fill="#172b4d" data-role="diagram-heading" font-weight="600">Choose connectivity separately from deployment type</text>
+  <text x="48" y="96" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="diagram-subtitle">Arrows show management dependencies. Read each column from top to bottom.</text>
+  <rect x="48" y="132" width="536" height="832" rx="10" fill="#ffffff" stroke="#8aa8c2" stroke-width="1.5" data-role="panel-boundary" />
+  <text x="80" y="181" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#172b4d" data-role="panel-heading" font-weight="600">A. Connected</text>
+  <rect x="616" y="132" width="536" height="832" rx="10" fill="#ffffff" stroke="#8aa8c2" stroke-width="1.5" data-role="panel-boundary" />
+  <text x="648" y="181" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#172b4d" data-role="panel-heading" font-weight="600">B. Disconnected operations</text>
+  <rect x="72" y="210" width="488" height="160" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <svg width="56" height="56" viewBox="0 0 18 18" x="100" y="238" preserveAspectRatio="xMidYMid meet" overflow="visible" aria-hidden="true" data-source-icon="management + governance\00756-icon-service-Azure-Arc.svg" data-source-sha256="00f4a57d6e0391bec619a9298d114f783dbb7dd4165d44242202ca37d00d9bfa">
+    <defs>
+      <linearGradient id="connected-and-disconnected-operations-icon1-b69d2150-b4da-460b-99ae-a9f5a961b313" x1="-1194.321" y1="9.128" x2="-1190.755" y2="9.128" gradientTransform="matrix(-1, 0, 0, 1, -1179.887, 0)" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#32bedd" />
+        <stop offset="0.998" stop-color="#9cebff" stop-opacity="0.5" />
+      </linearGradient>
+      <linearGradient id="connected-and-disconnected-operations-icon1-e690cc62-d1a2-4325-90ca-ac2fe51a5b58" x1="80.363" y1="9.135" x2="83.929" y2="9.135" gradientTransform="translate(-76.796)" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#005ba1" />
+        <stop offset="0.998" stop-color="#005ba1" stop-opacity="0" />
+      </linearGradient>
+      <linearGradient id="connected-and-disconnected-operations-icon1-ff649864-6b4c-4fa8-bcca-c12b2b910f3c" x1="3.555" y1="9.326" x2="14.434" y2="9.326" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#005ba1" />
+        <stop offset="0.974" stop-color="#32bedd" />
+      </linearGradient>
+    </defs>
+    <g id="connected-and-disconnected-operations-icon1-a826c017-5e9e-4208-897f-2ade2eb58cd6">
+      <polygon points="7.132 4.469 3.567 6.542 0 4.468 3.567 2.395 7.132 4.469" fill="#5ea0ef" />
+      <polygon points="7.132 13.794 3.566 11.735 3.566 15.867 7.132 13.794" fill="#005ba1" />
+      <polygon points="3.567 6.542 3.566 6.541 3.566 6.542 0 4.468 0 13.801 3.566 15.874 7.132 13.801 7.132 13.794 3.566 15.867 3.566 11.735 7.132 13.794 7.132 4.469 3.567 6.542" fill="#0078d4" />
+      <polygon points="10.868 4.469 14.433 6.542 18 4.468 14.433 2.395 10.868 4.469" fill="#9cebff" />
+      <polygon points="10.868 13.794 14.434 11.735 14.434 15.867 10.868 13.794" fill="#32bedd" />
+      <polygon points="14.433 6.535 14.434 6.535 14.434 6.535 14.434 11.728 10.868 13.794 10.868 4.462 14.433 6.535" fill="url(#connected-and-disconnected-operations-icon1-b69d2150-b4da-460b-99ae-a9f5a961b313)" />
+      <polygon points="10.868 4.469 14.433 6.542 18 4.468 14.433 2.395 10.868 4.469" fill="#9cebff" />
+      <polygon points="14.433 6.542 10.868 4.469 10.868 13.794 14.434 11.735 14.434 15.867 10.868 13.794 10.868 13.801 14.434 15.874 18 13.801 18 4.468 18 4.468 14.433 6.542" fill="#50e6ff" />
+      <polygon points="10.868 13.794 14.434 11.735 14.434 15.867 10.868 13.794" fill="#32bedd" />
+      <polygon points="14.433 6.535 14.434 6.535 14.434 6.535 14.434 11.728 10.868 13.794 10.868 4.462 14.433 6.535" fill="url(#connected-and-disconnected-operations-icon1-b69d2150-b4da-460b-99ae-a9f5a961b313)" />
+      <polygon points="3.567 6.541 3.566 6.541 3.566 6.541 3.566 11.734 7.132 13.801 7.132 4.469 3.567 6.541" fill="url(#connected-and-disconnected-operations-icon1-e690cc62-d1a2-4325-90ca-ac2fe51a5b58)" />
+      <path d="M14.423,10.126c-.624,1.556-3.066,2.584-5.348,2.584l-.081,0-.08,0c-2.282,0-4.724-1.028-5.348-2.584,0,0-.025-1.561,0-1.713C4.02,10.15,6.4,11.435,8.859,11.435l.135,0,.136,0c2.455,0,4.839-1.285,5.293-3.022C14.448,8.565,14.423,10.126,14.423,10.126ZM13.4,5.942A6.653,6.653,0,0,1,9.13,7.416l-.136,0-.135,0a6.656,6.656,0,0,1-4.267-1.47l-.856.5C4.553,7.809,6.8,8.69,8.914,8.69h.161c2.115,0,4.366-.883,5.181-2.251Z" fill="url(#connected-and-disconnected-operations-icon1-ff649864-6b4c-4fa8-bcca-c12b2b910f3c)" />
+    </g>
+  </svg>
+  <text x="180" y="265" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="body" font-weight="600">1. Control plane in Azure</text>
+  <text x="96" y="315" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Azure management services</text>
+  <text x="96" y="351" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Hosted in an Azure region</text>
+  <line x1="126" y1="390" x2="126" y2="486" stroke="#426789" stroke-width="2.5" marker-end="url(#connected-and-disconnected-operations-arrow)" data-role="connector" stroke-dasharray="8 6" data-path-kind="logical-management" />
+  <text x="158" y="420" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="connector-label">Outbound access to Azure</text>
+  <text x="158" y="457" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="connector-label">Agents initiate connections</text>
+  <rect x="72" y="510" width="488" height="390" rx="10" fill="#ffffff" stroke="#8aa8c2" stroke-width="1.5" data-role="site-boundary" />
+  <text x="96" y="552" font-family="Segoe UI, Arial, sans-serif" font-size="23" fill="#172b4d" data-role="body" font-weight="600">Customer site</text>
+  <rect x="96" y="582" width="440" height="250" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <svg id="connected-and-disconnected-operations-icon2-fd454f1c-5506-44b8-874e-8814b8b2f70b" width="56" height="56" viewBox="0 0 18 18" x="120" y="608" preserveAspectRatio="xMidYMid meet" overflow="visible" aria-hidden="true" data-source-icon="compute\10021-icon-service-Virtual-Machine.svg" data-source-sha256="092d18ffadec9ec0e5af129186dc7bc2a80544011e55f965604ed4b13873e0fc">
+    <defs>
+      <linearGradient id="connected-and-disconnected-operations-icon2-f34d9569-2bd0-4002-8f16-3d01d8106cb5" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#0078d4" />
+        <stop offset="0.82" stop-color="#5ea0ef" />
+      </linearGradient>
+      <linearGradient id="connected-and-disconnected-operations-icon2-bdb45a0b-eb58-4970-a60a-fb2ce314f866" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+        <stop offset="0.15" stop-color="#ccc" />
+        <stop offset="1" stop-color="#707070" />
+      </linearGradient>
+    </defs>
+    <title>Icon-compute-21</title>
+    <rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#connected-and-disconnected-operations-icon2-f34d9569-2bd0-4002-8f16-3d01d8106cb5)" />
+    <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" />
+    <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" />
+    <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" />
+    <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" />
+    <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" />
+    <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#connected-and-disconnected-operations-icon2-bdb45a0b-eb58-4970-a60a-fb2ce314f866)" />
+  </svg>
+  <text x="200" y="645" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="body" font-weight="600">2. Local workloads</text>
+  <text x="120" y="714" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Compute, storage, networking</text>
+  <text x="120" y="754" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Applications execute locally</text>
+  <text x="120" y="794" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Cloud operations need Azure</text>
+  <text x="80" y="940" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Management is separate from workloads.</text>
+  <rect x="640" y="210" width="488" height="690" rx="10" fill="#ffffff" stroke="#8aa8c2" stroke-width="1.5" data-role="site-boundary" />
+  <text x="664" y="252" font-family="Segoe UI, Arial, sans-serif" font-size="23" fill="#172b4d" data-role="body" font-weight="600">Customer site</text>
+  <rect x="664" y="280" width="440" height="230" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <svg version="1.0" x="680" y="288" viewBox="0 0 83.4 83.4" enable-background="new 0 0 83.4 83.4" xml:space="preserve" width="84" height="84" preserveAspectRatio="xMidYMid meet" overflow="visible" aria-hidden="true" data-source-icon="CnE_Enterprise\Server (generic).svg" data-source-sha256="ad48653923f33e26b833269fa4426879d4864b1a19282278aaa41885703d3389">
+    <g id="connected-and-disconnected-operations-icon3-Layer_1">
+      <g id="connected-and-disconnected-operations-icon3-File_x2C__general">
+        <title>Sheet.1071</title>
+      </g>
+      <g id="connected-and-disconnected-operations-icon3-Message">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Monitor">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Monitor_running_apps">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Mouse">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Network_card">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Not_allowed">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Performance">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Phone">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Plug_and_play">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Powershell_script_file">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Protocol_stack">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Queue_x2C__general">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-RMS_connector">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Router">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Script_file">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Secure_virtual_machine">
+	</g>
+    </g>
+    <g id="connected-and-disconnected-operations-icon3-paths">
+      <g id="connected-and-disconnected-operations-icon3-Access_control">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Azure_active_directory">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Generic_code">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Laptop">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Load_balancer">
+	</g>
+      <g id="connected-and-disconnected-operations-icon3-Lock_x2C__protected">
+	</g>
+    </g>
+    <g id="connected-and-disconnected-operations-icon3-symbols">
+      <g>
+        <path fill="#2A3282" d="M52.6,19.1h-16c-1.1,0-2,0.9-2,2v39h20v-39C54.6,20,53.7,19.1,52.6,19.1z M51.6,56.1h-14v-2h14V56.1z     M51.6,52.1h-14v-2h14V52.1z M51.6,27.1h-14v-2h14V27.1z" />
+      </g>
+    </g>
+    <g id="connected-and-disconnected-operations-icon3-slices">
+</g>
+  </svg>
+  <text x="784" y="333" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="body" font-weight="600">1. Local control plane</text>
+  <text x="688" y="398" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Dedicated management cluster</text>
+  <text x="688" y="436" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Three nodes for production</text>
+  <text x="688" y="474" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">No business applications here</text>
+  <line x1="716" y1="530" x2="716" y2="594" stroke="#426789" stroke-width="2.5" marker-end="url(#connected-and-disconnected-operations-arrow)" data-role="connector" data-path-kind="conceptual-flow" />
+  <text x="748" y="568" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="connector-label">Local management</text>
+  <rect x="664" y="614" width="440" height="220" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <svg id="connected-and-disconnected-operations-icon4-fd454f1c-5506-44b8-874e-8814b8b2f70b" width="56" height="56" viewBox="0 0 18 18" x="688" y="640" preserveAspectRatio="xMidYMid meet" overflow="visible" aria-hidden="true" data-source-icon="compute\10021-icon-service-Virtual-Machine.svg" data-source-sha256="092d18ffadec9ec0e5af129186dc7bc2a80544011e55f965604ed4b13873e0fc">
+    <defs>
+      <linearGradient id="connected-and-disconnected-operations-icon4-f34d9569-2bd0-4002-8f16-3d01d8106cb5" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#0078d4" />
+        <stop offset="0.82" stop-color="#5ea0ef" />
+      </linearGradient>
+      <linearGradient id="connected-and-disconnected-operations-icon4-bdb45a0b-eb58-4970-a60a-fb2ce314f866" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+        <stop offset="0.15" stop-color="#ccc" />
+        <stop offset="1" stop-color="#707070" />
+      </linearGradient>
+    </defs>
+    <title>Icon-compute-21</title>
+    <rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#connected-and-disconnected-operations-icon4-f34d9569-2bd0-4002-8f16-3d01d8106cb5)" />
+    <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" />
+    <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" />
+    <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" />
+    <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" />
+    <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" />
+    <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#connected-and-disconnected-operations-icon4-bdb45a0b-eb58-4970-a60a-fb2ce314f866)" />
+  </svg>
+  <text x="768" y="677" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="body" font-weight="600">2. Local workloads</text>
+  <text x="688" y="738" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Compute, storage, networking</text>
+  <text x="688" y="776" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Only supported local services</text>
+  <text x="688" y="814" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Local workload execution</text>
+  <text x="648" y="940" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Planned disconnected offering.</text>
+  <rect x="48" y="1004" width="1104" height="300" rx="10" fill="#eef4f8" stroke="#8aa8c2" stroke-width="1.5" data-role="eligibility-boundary" />
+  <text x="80" y="1048" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#172b4d" data-role="body" font-weight="600">3. Apply deployment eligibility</text>
+  <text x="90" y="1102" font-family="Segoe UI, Arial, sans-serif" font-size="23" fill="#172b4d" data-role="body" font-weight="600">Deployment type</text>
+  <text x="690" y="1102" font-family="Segoe UI, Arial, sans-serif" font-size="23" fill="#172b4d" data-role="body" font-weight="600">Connected</text>
+  <text x="914" y="1102" font-family="Segoe UI, Arial, sans-serif" font-size="23" fill="#172b4d" data-role="body" font-weight="600">Disconnected</text>
+  <text x="90" y="1150" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Hyperconverged, disaggregated</text>
+  <text x="690" y="1150" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Supported</text>
+  <text x="914" y="1150" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Supported</text>
+  <text x="90" y="1194" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Multi-rack (preview)</text>
+  <text x="690" y="1194" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Supported</text>
+  <text x="914" y="1194" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Not supported</text>
+  <text x="90" y="1238" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Small form factor (preview)</text>
+  <text x="690" y="1238" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Supported</text>
+  <text x="914" y="1238" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Not supported</text>
+  <text x="80" y="1284" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="body">Service availability depends on workload eligibility for the selected release.</text>
+  <rect x="48" y="1336" width="1104" height="176" rx="10" fill="#eef4f8" stroke="#8aa8c2" stroke-width="1.5" data-role="callout-boundary" />
+  <text x="80" y="1380" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="body" font-weight="600">An internet outage does not change the deployment mode</text>
+  <text x="80" y="1424" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Local workloads need healthy dependencies to keep running.</text>
+  <text x="80" y="1466" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Cloud management can fail; disconnected operations require a planned deployment.</text>
+</svg>

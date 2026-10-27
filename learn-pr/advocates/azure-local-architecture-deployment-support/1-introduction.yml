@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-architecture-deployment-support.introduction
+metadata:
+  title: Introduction
+  description: Explore Azure Local capabilities, compare its operating model with Windows Server virtualization, and translate business needs into architecture requirements.
+  ms.date: 10/24/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Introduction
+durationInMinutes: 12
+content: |
+  [!include[](includes/1-introduction.md)]

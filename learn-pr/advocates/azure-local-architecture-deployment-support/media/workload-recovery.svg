@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1440" viewBox="0 0 1200 1440" role="img" aria-labelledby="availability-and-recovery-title availability-and-recovery-description" style="background: white; background-color: white" font-family="Segoe UI, Arial, sans-serif" data-module="1">
+  <title id="availability-and-recovery-title">Workload recovery scenarios</title>
+  <desc id="availability-and-recovery-description">Three recovery scenarios. Host failure requires a surviving host with sufficient capacity, healthy storage, cluster quorum. Virtual machine restart interrupts service. Data damage requires a protected recovery point; replication can copy corruption. Site loss requires a separate recovery location with data, identity, networking, a tested runbook. A recovery point objective specifies tolerable data loss. A recovery time objective specifies tolerable service interruption.</desc>
+  <rect id="availability-and-recovery-background" x="0" y="0" width="1200" height="1440" fill="#ffffff" />
+  <metadata>{"source_icons": []}</metadata>
+  <defs>
+    <marker id="availability-and-recovery-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#426789" />
+    </marker>
+  </defs>
+  <text x="48" y="54" font-family="Segoe UI, Arial, sans-serif" font-size="32" fill="#172b4d" data-role="diagram-heading" font-weight="600">Workload recovery scenarios</text>
+  <text x="48" y="96" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="diagram-subtitle">Select protection for the failure. Test the recovery path.</text>
+  <rect x="48" y="134" width="1104" height="306" rx="10" fill="#ffffff" stroke="#8aa8c2" stroke-width="1.5" data-role="panel-boundary" />
+  <circle cx="90" cy="178" r="22" fill="#005a9e" data-role="number-badge" />
+  <text x="90" y="185" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" data-role="stage-number" font-weight="700" text-anchor="middle">1</text>
+  <text x="138" y="186" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#172b4d" data-role="panel-heading" font-weight="600">A. Host failure</text>
+  <rect x="80" y="218" width="260" height="148" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <text x="104" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body" font-weight="600">Host unavailable</text>
+  <text x="104" y="301" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="body">Workload stops</text>
+  <rect x="448" y="218" width="270" height="148" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <text x="472" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body" font-weight="600">Surviving host</text>
+  <text x="472" y="301" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="body">Capacity required</text>
+  <rect x="826" y="218" width="294" height="148" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <text x="850" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body" font-weight="600">Infrastructure health</text>
+  <text x="850" y="301" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="body">Healthy storage</text>
+  <text x="850" y="335" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="body">Cluster quorum</text>
+  <line x1="358" y1="292" x2="430" y2="292" stroke="#426789" stroke-width="2.5" marker-end="url(#availability-and-recovery-arrow)" data-role="connector" data-path-kind="conceptual-flow" />
+  <line x1="736" y1="292" x2="808" y2="292" stroke="#426789" stroke-width="2.5" marker-end="url(#availability-and-recovery-arrow)" data-role="connector" data-path-kind="conceptual-flow" />
+  <text x="80" y="402" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Virtual machines may restart on surviving hosts. Restart is not zero downtime.</text>
+  <rect x="48" y="478" width="1104" height="306" rx="10" fill="#ffffff" stroke="#8aa8c2" stroke-width="1.5" data-role="panel-boundary" />
+  <circle cx="90" cy="522" r="22" fill="#005a9e" data-role="number-badge" />
+  <text x="90" y="529" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" data-role="stage-number" font-weight="700" text-anchor="middle">2</text>
+  <text x="138" y="530" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#172b4d" data-role="panel-heading" font-weight="600">B. Data damage</text>
+  <rect x="80" y="562" width="260" height="148" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <text x="104" y="604" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body" font-weight="600">Data unavailable</text>
+  <text x="104" y="645" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="body">Corruption, deletion</text>
+  <rect x="448" y="562" width="270" height="148" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <text x="472" y="604" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body" font-weight="600">Protected backup</text>
+  <text x="472" y="645" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="body">Independent copy</text>
+  <rect x="826" y="562" width="294" height="148" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <text x="850" y="604" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body" font-weight="600">Restore service</text>
+  <text x="850" y="645" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="body">Validate recovery</text>
+  <line x1="358" y1="636" x2="430" y2="636" stroke="#426789" stroke-width="2.5" marker-end="url(#availability-and-recovery-arrow)" data-role="connector" data-path-kind="conceptual-flow" />
+  <line x1="736" y1="636" x2="808" y2="636" stroke="#426789" stroke-width="2.5" marker-end="url(#availability-and-recovery-arrow)" data-role="connector" data-path-kind="conceptual-flow" />
+  <text x="80" y="746" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Replication can copy corruption. Recover from an independent protected backup.</text>
+  <rect x="48" y="822" width="1104" height="338" rx="10" fill="#ffffff" stroke="#8aa8c2" stroke-width="1.5" data-role="panel-boundary" />
+  <circle cx="90" cy="866" r="22" fill="#005a9e" data-role="number-badge" />
+  <text x="90" y="873" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff" data-role="stage-number" font-weight="700" text-anchor="middle">3</text>
+  <text x="138" y="874" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#172b4d" data-role="panel-heading" font-weight="600">C. Site loss</text>
+  <rect x="80" y="906" width="260" height="148" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <text x="104" y="948" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body" font-weight="600">Primary site lost</text>
+  <text x="104" y="989" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="body">Local service stops</text>
+  <rect x="448" y="906" width="270" height="148" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <text x="472" y="948" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body" font-weight="600">Recovery location</text>
+  <text x="472" y="989" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="body">Separate site</text>
+  <rect x="826" y="906" width="294" height="148" rx="10" fill="#f5f9fd" stroke="#8aa8c2" stroke-width="1.5" data-role="card-boundary" />
+  <text x="850" y="948" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body" font-weight="600">Recovery plan</text>
+  <text x="850" y="989" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="body">Data, identity, network</text>
+  <text x="850" y="1023" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="body">Tested runbook</text>
+  <line x1="358" y1="980" x2="430" y2="980" stroke="#426789" stroke-width="2.5" marker-end="url(#availability-and-recovery-arrow)" data-role="connector" data-path-kind="conceptual-flow" />
+  <line x1="736" y1="980" x2="808" y2="980" stroke="#426789" stroke-width="2.5" marker-end="url(#availability-and-recovery-arrow)" data-role="connector" data-path-kind="conceptual-flow" />
+  <text x="80" y="1122" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">Cluster redundancy alone is insufficient for a site-loss recovery plan.</text>
+  <rect x="48" y="1200" width="536" height="198" rx="10" fill="#eef4f8" stroke="#8aa8c2" stroke-width="1.5" data-role="callout-boundary" />
+  <text x="80" y="1247" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="body" font-weight="600">Recovery point objective</text>
+  <text x="80" y="1292" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">How much data can be lost,</text>
+  <text x="80" y="1330" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">measured as time?</text>
+  <rect x="616" y="1200" width="536" height="198" rx="10" fill="#eef4f8" stroke="#8aa8c2" stroke-width="1.5" data-role="callout-boundary" />
+  <text x="648" y="1247" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172b4d" data-role="body" font-weight="600">Recovery time objective</text>
+  <text x="648" y="1292" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">How long can service remain</text>
+  <text x="648" y="1330" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="body">unavailable during recovery?</text>
+</svg>

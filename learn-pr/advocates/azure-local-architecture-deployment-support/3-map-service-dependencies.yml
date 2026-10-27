@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-architecture-deployment-support.map-service-dependencies
+metadata:
+  title: Map Service Dependencies
+  description: Trace local workload execution, Azure management, identity, network services, and data movement to assess the effects of a connectivity interruption.
+  ms.date: 10/24/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Map service dependencies
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-map-service-dependencies.md)]

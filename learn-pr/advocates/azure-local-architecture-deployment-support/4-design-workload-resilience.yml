@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-architecture-deployment-support.design-workload-resilience
+metadata:
+  title: Design Workload Resilience
+  description: Define failure domains and recovery targets while distinguishing quorum, storage resilience, surviving capacity, failover, backup, and disaster recovery.
+  ms.date: 10/24/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Design workload resilience
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-design-workload-resilience.md)]

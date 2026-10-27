@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-architecture-deployment-support.calculate-failure-state-capacity
+metadata:
+  title: Calculate a Failure-State Capacity Envelope
+  description: Calculate usable memory and storage after failures, then assess processor demand, workload placement, network throughput, and lifecycle headroom.
+  ms.date: 10/24/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Calculate a failure-state capacity envelope
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-calculate-failure-state-capacity.md)]

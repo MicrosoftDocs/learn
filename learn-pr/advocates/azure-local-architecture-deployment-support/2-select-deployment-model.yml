@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-architecture-deployment-support.select-deployment-model
+metadata:
+  title: Select a Supported Deployment Model
+  description: Select an Azure Local platform, deployment type, and connectivity model by checking workload eligibility, hardware qualification, and operating requirements.
+  ms.date: 10/24/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Select a supported deployment model
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-select-deployment-model.md)]
