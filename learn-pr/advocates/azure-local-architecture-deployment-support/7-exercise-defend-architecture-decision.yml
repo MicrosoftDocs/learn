@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-architecture-deployment-support.exercise-defend-architecture-decision
+metadata:
+  title: Exercise - Defend an Architecture Decision
+  description: Use a paper-design scenario to select an Azure Local architecture, calculate failure-state budgets, and record evidence, ownership, and approval conditions.
+  ms.date: 10/24/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Exercise - Defend an architecture decision
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-defend-architecture-decision.md)]

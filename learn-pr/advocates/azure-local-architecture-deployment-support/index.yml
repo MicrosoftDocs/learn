@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.devrel.azure-local-architecture-deployment-support
+metadata:
+  title: Design an Azure Local Architecture, Deployment Model, and Support Plan
+  description: Design an Azure Local architecture by selecting a supported deployment model, mapping dependencies, calculating failure-state capacity, and defining support ownership.
+  ms.date: 10/24/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-concept-based
+  ms.service: azure-local
+  ai-usage: ai-assisted
+title: Design an Azure Local architecture, deployment model, and support plan
+summary: |
+  Designing your Azure Local architecture begins with the business service that must keep working, not with the selection of a server count. In this module, you turn workload objectives into a supported deployment model, identify dependencies that can interrupt service, calculate failure-state capacity, and define who operates and supports the solution.
+abstract: |
+  After completing this module, you can:
+
+  - Select an Azure Local deployment and connectivity model from workload, locality, and operational requirements.
+  - Explain the difference between local workload execution and cloud-dependent management.
+  - Translate a failure scenario into compute, storage, network, and recovery requirements.
+  - Calculate usable capacity and failure headroom with explicit assumptions.
+  - Separate platform support, customer responsibilities, licensing, and workload availability commitments.
+  - Record and defend an architecture decision without deploying infrastructure.
+prerequisites: |
+  - Familiarity with virtual machines, physical servers, networking, and storage.
+  - Basic understanding of Azure management and hybrid infrastructure.
+  - No Azure subscription or deployed infrastructure is required for the paper-design exercise.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure-local
+subjects:
+- architecture
+- infrastructure
+units:
+- learn.devrel.azure-local-architecture-deployment-support.introduction
+- learn.devrel.azure-local-architecture-deployment-support.select-deployment-model
+- learn.devrel.azure-local-architecture-deployment-support.map-service-dependencies
+- learn.devrel.azure-local-architecture-deployment-support.design-workload-resilience
+- learn.devrel.azure-local-architecture-deployment-support.calculate-failure-state-capacity
+- learn.devrel.azure-local-architecture-deployment-support.define-operational-ownership
+- learn.devrel.azure-local-architecture-deployment-support.exercise-defend-architecture-decision
+- learn.devrel.azure-local-architecture-deployment-support.knowledge-check
+- learn.devrel.azure-local-architecture-deployment-support.summary
+badge:
+  uid: learn.devrel.azure-local-architecture-deployment-support.badge

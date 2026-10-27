@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.code-defensively-with-best-practices.implement-error-handling
+title: Validate input and handle exceptions
+metadata:
+  title: Validate Input and Handle Exceptions
+  description: "Learn how to validate user input and handle exceptions with try and except blocks."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-implement-error-handling.md)]

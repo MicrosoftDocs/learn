@@ -1,4 +1,4 @@
-System on Chip (SoC) is an Integrated Circuit (IC) that consolidates most of the components of a computer. Manufacturers like Qualcomm and other ARM-based manufacturers have embraced this architecture for a more streamlined approach versus the Motherboard architecture of the past as illustrated below:
+System on Chip (SoC) is an Integrated Circuit (IC) that consolidates most of the components of a computer. Manufacturers like Qualcomm and other ARM-based manufacturers have embraced this architecture for a more streamlined approach versus the traditional motherboard architecture illustrated below:
 
 :::image type="content" border="true" source="../media/arm-architecture.svg" alt-text="Diagram illustrating the ARM architecture versus traditional motherboard architecture.":::
 
@@ -6,7 +6,9 @@ Due to the consolidation of hardware components being fabricated on the chip its
 
 :::image type="content" border="true" source="../media/windows-on-arm-history.svg" alt-text="Diagram illustrating the history of Windows on ARM.":::
 
-Surface devices have been built on Arm architecture since the very beginning—dating back to Surface RT in 2012, which was powered by a custom variant of Windows 8 designed for Arm-based processors called Windows RT. With the desire for a thin and light design, long battery life, and a touch-optimized experience, ARM was a perfect fit for that device, and it has been crucial to Surface devices ever since.
+Surface has used Arm-based processors since the introduction of Surface RT in 2012. Since then, Windows on Arm has expanded from native applications and 32-bit x86 emulation to include x64 emulation, enterprise management capabilities, hardware-based security, and Copilot+ PCs powered by Snapdragon X Series processors. Together, these developments give organizations more options for adopting ARM-based Surface devices while continuing to support established Windows workflows.
+
+This progression is especially important for organizations evaluating ARM-based devices. Application compatibility, device management, security, and AI processing have developed together rather than as separate capabilities, ensuring a cohesive and optimized experience for business users.
 
 In the following years, Windows on ARM added emulation of x86 apps, allowing 64-bit apps to run on ARM chips, and the development of native ARM versions of Microsoft Edge and Office. With the combination of long-term native app development and x86 emulation, business users can utilize their preferred software tools. Let's explore a timeline of app emulation on Microsoft Surface:
 
@@ -20,9 +22,12 @@ In the following years, Windows on ARM added emulation of x86 apps, allowing 64-
 
 :::image type="content" border="true" source="../media/arm-prism.png" alt-text="Screenshot of Prism emulation on ARM Surface devices.":::
 
-Emulation makes the rich ecosystem of Windows apps available on Arm, so business users can run essential apps without modifications to the app. Emulation is a part of Windows and doesn't require any extra components to be installed. Starting with Windows 11 24H2, Prism is included with Windows. As the new emulation standard, it offers significant optimizations that improve the performance and lower CPU usage of apps under emulation.
+Many existing Windows applications were developed for x86 or x64 processors and might not yet have native Arm64 versions. Emulation helps address this difference by allowing supported applications to run on Windows on Arm without requiring them to be rewritten first.
 
-Prism is optimized and tuned specifically for Qualcomm Snapdragon® processors that run on ARM-powered Surface devices. Some performance features within Prism require hardware features only available in the Snapdragon® X series, but Prism is available for all supported Arm Surface devices with Windows 11 24H2. Let's explore how emulation on these devices works.
+Prism is the emulation engine included with Windows 11, version 24H2. It translates blocks of x86 and x64 instructions into Arm64 instructions and applies optimizations that improve performance and reduce CPU usage. Windows caches translated code blocks to reduce translation overhead when an application runs again.
+
+>[!NOTE]
+> In Windows 11, version 24H2 and later, Prism supports other emulated CPU features, including AVX and AVX2. This expanded instruction-set support can improve compatibility for applications that depend on those features.
 
 - **How emulation works:** Emulation compiles blocks of x86 instructions into Arm64 instructions with optimizations to improve performance of the emitted Arm64 code. A service caches these translated blocks to reduce overhead and allow for optimization when the code runs again. For x86 apps, the WOW64 layer of Windows allows x86 code to run on the Arm64 version of Windows. This means that x86 apps on Arm are protected with filesystem and registry redirection.
 - **Detecting emulation:** An x86 app doesn't know that it's running on an Arm Surface, unless it calls specific APIs (Application Programming Interface) that are designed to convey knowledge of the Arm64 host. Apps under emulation that query processor details—including metadata or feature capabilities—receive details corresponding to the emulated virtual processor.
@@ -31,7 +36,7 @@ Application emulation is needed to run and translate x86 and x64 apps to maximiz
 
 Prism is the emulation engine on Surface devices that improves performance and offers a better emulation experience than previous versions. Prism emulation works well for line-of-business applications that aren't CPU-intensive or graphics-heavy. It also works well for productivity, education, and entertainment apps that are compatible with Windows 11. Where Prism doesn't work well is for the following:
 
-- System drivers that need direct access to hardware or kernel.
+- Applications that require kernel-mode drivers without native Arm64 support.
 - Games or apps that use OpenGL or DirectX 12.
 - Apps that have anti-cheat or DRM (digital rights management) software that interferes with emulation.
 

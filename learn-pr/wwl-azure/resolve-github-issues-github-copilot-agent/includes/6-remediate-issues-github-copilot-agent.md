@@ -23,9 +23,9 @@ Agent mode is ideal for implementing multi-step security fixes that require care
 GitHub Copilot offers multiple agent types that run in different environments. For security remediation workflows, the two most relevant types are:
 
 - **Local agent (Agent in VS Code)**: runs interactively in the editor with full access to your workspace, tools, and models. This is the agent type described throughout this unit — ideal for hands-on, step-by-step security remediation where you review each change.
-- **Copilot cloud agent**: runs remotely and integrates with GitHub pull requests. You can assign a GitHub issue directly to the cloud agent, which then researches the codebase, creates an implementation plan, and makes code changes on a branch for your review. Available with Copilot Pro+, Business, and Enterprise plans.
+- **Copilot in the cloud**: runs remotely and integrates with GitHub pull requests. You can assign a GitHub issue directly to Copilot, which then researches the codebase, creates an implementation plan, and makes code changes on a branch for your review. Available with Copilot Pro+, Business, and Enterprise plans.
 
-For most security remediation, the local Agent is recommended because it gives you real-time visibility into each change. The cloud agent is useful for well-defined, lower-risk issues where autonomous implementation is acceptable.
+For most security remediation, the local Agent is recommended because it gives you real-time visibility into each change. Copilot in the cloud is useful for well-defined, lower-risk issues where autonomous implementation is acceptable.
 
 ### Permission levels
 
@@ -317,4 +317,4 @@ git push origin your-branch-name
 
 ## Summary
 
-Using GitHub Copilot's Agent mode enables developers to efficiently remediate security issues while maintaining code quality and functionality. By combining the analytical insights from the Ask agent with the Agent's execution capabilities, you can systematically address vulnerabilities in your codebase. Choose the right agent type for your situation — use the local Agent for interactive, step-by-step remediation, or the cloud agent to assign well-defined issues for autonomous resolution. The key to success is providing clear instructions, setting appropriate permission levels, maintaining safety practices, thoroughly validating all changes, and ensuring proper documentation. The Agent is a powerful assistant that accelerates remediation, but human oversight remains essential to ensuring security fixes are complete, correct, and don't introduce new vulnerabilities.
+Using GitHub Copilot's Agent mode enables developers to efficiently remediate security issues while maintaining code quality and functionality. By combining the analytical insights from the Ask agent with the Agent's execution capabilities, you can systematically address vulnerabilities in your codebase. Choose the right agent type for your situation — use the local Agent for interactive, step-by-step remediation, or Copilot in the cloud to assign well-defined issues for autonomous resolution. The key to success is providing clear instructions, setting appropriate permission levels, maintaining safety practices, thoroughly validating all changes, and ensuring proper documentation. The Agent is a powerful assistant that accelerates remediation, but human oversight remains essential to ensuring security fixes are complete, correct, and don't introduce new vulnerabilities.

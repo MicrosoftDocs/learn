@@ -13,7 +13,7 @@ summary: >
   Explore how Arm on Microsoft Surface devices delivers long battery life, efficient performance, and broad app compatibility, enabling modern business productivity.
 
 abstract: |
-  In this module, you'll learn:
+  In this module, you learn:
   - What Arm on Microsoft Surface is and how it differs from traditional x86 architecture.
   - How Surface devices with ARM processors work to provide efficient performance and long battery life.
   - When to use Surface devices with Arm for your business needs.
@@ -35,6 +35,7 @@ units:
   - learn.dpu.introduction-to-arm-surface.introduction
   - learn.dpu.introduction-to-arm-surface.what-is-arm-on-microsoft-surface
   - learn.dpu.introduction-to-arm-surface.how-surface-with-arm-works
+  - learn.dpu.introduction-to-arm-surface.evaluate-app-and-deployment-readiness
   - learn.dpu.introduction-to-arm-surface.when-to-use-surface-with-arm
   - learn.dpu.introduction-to-arm-surface.knowledge-check
   - learn.dpu.introduction-to-arm-surface.summary

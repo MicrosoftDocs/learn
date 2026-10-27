@@ -30,9 +30,9 @@ The chat interface provides built-in agents that are optimized for different tas
 
 AI-generated code review suggestions to help you write better code.
 
-### GitHub Copilot Cloud Agent
+### Copilot in the cloud
 
-An autonomous AI agent that can make code changes for you. You can assign a GitHub issue to GitHub Copilot and the agent will work on making the required changes, and will create a pull request for you to review. You can also ask GitHub Copilot to create a pull request from GitHub Copilot. This feature is available in GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
+An autonomous AI agent that makes code changes for you. Assign an issue to Copilot or start a task from Copilot in GitHub. Copilot works in the cloud and opens a pull request for you to review. This feature is available in GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
 
 ### GitHub Copilot in the CLI
 
@@ -52,7 +52,7 @@ Enhance GitHub Copilot responses by providing contextual details on your prefere
 
 ### GitHub Copilot Memory (public preview)
 
-GitHub Copilot can deduce and store useful information about a repository, which GitHub Copilot Cloud Agent and GitHub Copilot code review can use to improve the quality of their output when working in that repository.
+GitHub Copilot can deduce and store useful information about a repository, which GitHub Copilot cloud agent and GitHub Copilot code review can use to improve the quality of their output when working in that repository.
 
 ### GitHub Copilot Spaces
 

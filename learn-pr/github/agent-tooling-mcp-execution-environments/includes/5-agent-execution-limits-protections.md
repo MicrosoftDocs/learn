@@ -1,4 +1,4 @@
-Agents can take actions in repositories, but those actions run within platform limits and protections. On GitHub, Copilot cloud agent works in a GitHub Actions-powered environment, creates changes on a branch, and prepares those changes for review.
+Agents can take actions in repositories, but those actions run within platform limits and protections. On GitHub, Copilot in the cloud works in a GitHub Actions-powered environment, creates changes on a branch, and prepares those changes for review.
 
 It doesn't finalize changes on its own. You decide whether those changes should become a pull request.
 
@@ -11,13 +11,13 @@ In this unit, you'll learn:
 
 ## Repository and branch limits
 
-Copilot cloud agent only has access to the repository where it's working. It can't access other repositories.
+Copilot in the cloud only has access to the repository where it's working. It can't access other repositories.
 
 Its changes are made on a separate branch, not directly on the default branch such as main. This ensures that all modifications are isolated before review.
 
 ## Pull request control
 
-When Copilot cloud agent finishes its work, it prepares the changes for review, but it doesn't automatically create or merge a pull request.
+When Copilot in the cloud finishes its work, it prepares the changes for review, but it doesn't automatically create or merge a pull request.
 
 You decide whether to:
 

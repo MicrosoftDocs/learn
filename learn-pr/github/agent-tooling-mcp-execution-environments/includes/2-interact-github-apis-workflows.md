@@ -11,7 +11,7 @@ In this unit, you'll learn:
 
 ## How agents interact with GitHub
 
-GitHub agents, such as Copilot cloud agent, operate within a defined repository and branch context. When you assign a task, for example through an issue or prompt, the agent begins working inside that repository.
+GitHub agents, such as Copilot in the cloud, operate within a defined repository and branch context. When you assign a task, for example through an issue or prompt, the agent begins working inside that repository.
 
 Agents can:
 
@@ -67,7 +67,7 @@ Agents rely on these workflows to:
 - Execute automation tasks
 - Deploy applications
 
-Copilot cloud agent operates in a GitHub Actions-powered environment, which means workflows form the foundation of agent execution.
+Copilot in the cloud operates in a GitHub Actions-powered environment, which means workflows form the foundation of agent execution.
 
 ## Traditional workflows vs agentic workflows
 

@@ -120,7 +120,7 @@ After you finalize a plan, you have several options to proceed:
 
 - **Implement in the same session**: Select **Start Implementation** to let the Agent implement the plan directly in your workspace. The Agent receives the plan document as its initial context and begins executing the implementation steps.
 - **Continue in Copilot CLI**: Select **Start Implementation** > **Continue in Copilot CLI** to run the implementation as a background session. Copilot CLI creates a Git worktree; An isolated copy of your repository at the current commit. So the implementation runs against a clean state without affecting your working tree.
-- **Continue in a cloud agent**: Hand off to a Copilot cloud agent running on GitHub infrastructure. The cloud agent implements the actual plan, opens a pull request, creates CI/CD pipeline, and establishes an auditable approval record.
+- **Continue with Copilot in the cloud**: Hand off to Copilot in the cloud, which runs on GitHub infrastructure. It implements the plan, opens a pull request, creates a CI/CD pipeline, and establishes an auditable approval record.
 
 The handoff mechanism is significant architecturally: the plan document written to `/memories/session/plan.md` becomes the implementation agent's task specification. The quality and specificity of the plan directly controls the quality of the implementation. A vague plan produces vague implementation, and a plan with explicit verification gates causes the implementation agent to pause and verify at each gate before proceeding.
 
