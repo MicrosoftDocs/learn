@@ -16,32 +16,32 @@ quiz:
   questions:
   - content: "A retail site needs its existing Azure Local VMs but has room only for a compact appliance. The deployment matrix lists Azure Kubernetes Service for small form factor, but not Azure Local VMs. What should the architect do?"
     choices:
-    - content: "Enable Azure Arc to remove the deployment's workload restrictions"
+    - content: "Enable Azure Arc to remove the deployment's workload restrictions."
       isCorrect: false
       explanation: "Incorrect. Azure Arc supplies management integration; it doesn't override deployment workload restrictions."
-    - content: "Select small form factor because containers and VMs are interchangeable"
+    - content: "Select small form factor because containers and VMs are interchangeable."
       isCorrect: false
       explanation: "Incorrect. Container support doesn't establish virtual machine support for the selected deployment."
-    - content: "Change the footprint, select another supported architecture, or redesign the workload"
+    - content: "Change the footprint, select another supported architecture, or redesign the workload."
       isCorrect: true
       explanation: "Correct. Workload eligibility is a design gate. Container support doesn't establish VM support, and Arc doesn't override deployment restrictions."
   - content: "A connected site's proxy fails. Local switching, storage, and the tested application's local identity dependencies remain healthy. Which conclusion is justified?"
     choices:
-    - content: "The site automatically becomes a supported disconnected deployment"
+    - content: "The site automatically becomes a supported disconnected deployment."
       isCorrect: false
       explanation: "Incorrect. Supported disconnected operations require a separately planned local control plane. An outage doesn't convert a connected deployment."
-    - content: "All management remains available until the 30-day reporting deadline"
+    - content: "All management remains available until the 30-day reporting deadline."
       isCorrect: false
       explanation: "Incorrect. The reporting interval isn't a management availability guarantee. Cloud-dependent operations can be interrupted when connectivity is lost."
-    - content: "Existing local VMs may keep running, but cloud-dependent operations and visibility can be interrupted"
+    - content: "Existing local VMs may keep running, but cloud-dependent operations and visibility can be interrupted."
       isCorrect: true
       explanation: "Correct. Local execution and cloud management have different dependencies. The reporting interval isn't a management availability guarantee, and an outage isn't a disconnected-mode conversion."
   - content: "A cluster retains quorum and its workload storage remains readable after a host failure. What else must be established before claiming application recovery?"
     choices:
-    - content: "Only that a witness contains an application backup"
+    - content: "Only that a witness contains an application backup."
       isCorrect: false
       explanation: "Incorrect. A witness contributes to quorum. It doesn't contain a recoverable application backup."
-    - content: "Nothing; quorum guarantees that all VMs can restart"
+    - content: "Nothing; quorum guarantees that all VMs can restart."
       isCorrect: false
       explanation: "Incorrect. Quorum determines which members can operate; it doesn't supply capacity or guarantee workload placement."
     - content: "Enough eligible surviving capacity, placement, and functioning application dependencies"
@@ -60,13 +60,13 @@ quiz:
       explanation: "Incorrect. This is the worked budget for four installed nodes with one unavailable, not three installed nodes."
   - content: "The four-node worked design passes with one unavailable node. The business now requires one node in maintenance while a second node fails. Which statement is correct?"
     choices:
-    - content: "The modeled budget becomes 640 GiB; the design needs reassessment for all relevant resilience and capacity dimensions"
+    - content: "The modeled budget becomes 640 GiB; the design needs reassessment for all relevant resilience and capacity dimensions."
       isCorrect: true
       explanation: "Correct. Two unavailable nodes leave only two survivors. The new failure requirement affects memory, storage, quorum, placement, and performance; it can't be satisfied by relabeling a reserve."
-    - content: "Removing the 20 percent reserve automatically proves the design safe"
+    - content: "Removing the 20 percent reserve automatically proves the design safe."
       isCorrect: false
       explanation: "Incorrect. Removing an agreed reserve changes the assumptions rather than proving safety. Memory, storage, quorum, placement, and performance still require reassessment."
-    - content: "The workload budget remains 998.4 GiB because maintenance is planned"
+    - content: "The workload budget remains 998.4 GiB because maintenance is planned."
       isCorrect: false
       explanation: "Incorrect. A node in maintenance is unavailable to the workload. Together with the failed node, it leaves only two survivors."
   - content: "An application accidentally deletes important records. The deletion is written to all live storage mirrors. Which capability is required to recover the earlier state?"
@@ -77,18 +77,18 @@ quiz:
     - content: "More VM memory on the surviving nodes"
       isCorrect: false
       explanation: "Incorrect. Additional memory can help workload capacity, but it can't restore records deleted from all live copies."
-    - content: "An additional quorum witness"
+    - content: "An additional quorum witness."
       isCorrect: false
       explanation: "Incorrect. A witness supports quorum decisions; it doesn't retain previous application data states."
   - content: "A proposal adds qualified external storage to a connected L1 hyperconverged design but retains its existing Azure Hybrid Benefit host-fee waiver without review. What is the problem?"
     choices:
-    - content: "A successful Windows guest activation automatically preserves all previous benefits"
+    - content: "A successful Windows guest activation automatically preserves all previous benefits."
       isCorrect: false
       explanation: "Incorrect. Activation is a technical state, not proof of license entitlement or continued eligibility for a deployment-specific benefit."
-    - content: "The deployment tier and benefit eligibility must be reassessed; the original L1 assumption no longer applies"
+    - content: "The deployment tier and benefit eligibility must be reassessed; the original L1 assumption no longer applies."
       isCorrect: true
       explanation: "Correct. The stated benefit is scoped to eligible L1 hyperconverged deployments without external storage. Activation isn't proof of commercial entitlement."
-    - content: "External storage changes only the number of guest virtual CPUs"
+    - content: "External storage changes only the number of guest virtual CPUs."
       isCorrect: false
       explanation: "Incorrect. Adding external storage can change the Azure Local deployment tier and applicable commercial terms, not merely guest resource allocation."
   - content: "The cluster has redundant hosts and an OEM contract with a rapid initial response. The proposal promises a four-hour RTO after complete site loss. What evidence is missing?"
