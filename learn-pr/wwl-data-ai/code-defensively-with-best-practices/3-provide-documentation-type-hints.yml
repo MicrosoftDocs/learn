@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.code-defensively-with-best-practices.provide-documentation-type-hints
+title: Provide documentation and type hints
+metadata:
+  title: Provide Documentation and Type Hints
+  description: "Learn how to document your code with docstrings and add type hints for better code clarity."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-provide-documentation-type-hints.md)]

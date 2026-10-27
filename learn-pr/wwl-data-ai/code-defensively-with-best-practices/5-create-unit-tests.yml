@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.code-defensively-with-best-practices.create-unit-tests
+title: Create unit tests
+metadata:
+  title: Create Unit Tests
+  description: "Learn how to write and run unit tests to verify your code functions correctly."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-create-unit-tests.md)]
