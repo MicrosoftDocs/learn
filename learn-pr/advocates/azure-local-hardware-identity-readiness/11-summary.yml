@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-hardware-identity-readiness.summary
+metadata:
+  title: Summary
+  description: Review Azure Local readiness principles and retain references for hardware, authorization, identity, networking, validation, and recovery.
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 4
+content: |
+  [!include[](includes/11-summary.md)]

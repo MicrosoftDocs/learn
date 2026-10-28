@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1060" viewBox="0 0 1100 1060" role="img" aria-labelledby="network-address-plan-title network-address-plan-desc" style="background-color:white" font-family="Segoe UI, Arial, sans-serif" data-source-icon-root="C:\Azure-Icons" data-content-review-date="2026-10-28" data-diagram="network-address-plan">
+  <title id="network-address-plan-title">Reserve addresses before deployment</title>
+  <desc id="network-address-plan-desc">Fictional two-node local-identity training site using existing enterprise DNS and management subnet 192.168.50.0/24. DNS uses .10 and .11; nodes use .21 and .22. Six separate infrastructure addresses .40 through .45 are excluded from DHCP; .40 is the system or cluster address. Remaining service assignment is controlled by deployment. Check routed-network overlap with reserved ranges 10.96.0.0/12 and 10.244.0.0/16; do not allocate them to infrastructure or DNS.</desc>
+  <metadata data-provenance="Supplied Azure icon SVG artwork, embedded inline" data-asset-policy="Original artwork; namespaced IDs; no external assets">{"title": "Reserve addresses before deployment", "source_icon_root": "C:\\Azure-Icons", "review_date": "2026-10-28", "asset_handling": "Inline original vector artwork; IDs and local references prefixed", "font_stack": "Segoe UI, Arial, sans-serif", "icons": [{"relative_path": "networking\\10064-icon-service-DNS-Zones.svg", "sha256": "e6aaa1380e974af7d0aba1bb8380ecfab3f95182a595a28692aa3f963bcf9fac"}, {"relative_path": "CnE_Enterprise\\Server (generic).svg", "sha256": "ad48653923f33e26b833269fa4426879d4864b1a19282278aaa41885703d3389"}]}</metadata>
+  <rect id="network-address-plan-white-background" x="0" y="0" width="1100" height="1060" fill="#FFFFFF" />
+  <defs>
+    <marker id="network-address-plan-arrow" viewBox="0 0 8 8" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#51798F" />
+    </marker>
+  </defs>
+  <text id="network-address-plan-text-1" x="52" y="58" font-size="30" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="canvas" data-max-width="996">
+    <tspan x="52" y="58">Reserve addresses before deployment</tspan>
+  </text>
+  <text id="network-address-plan-text-2" x="52" y="96" font-size="20" font-weight="400" fill="#405E72" text-anchor="start" data-diagram-text="true" data-layout-owner="canvas" data-max-width="996">
+    <tspan x="52" y="96">Reading order: 1 to 4, top to bottom. Address allocation, not physical topology.</tspan>
+  </text>
+  <rect id="network-address-plan-training-context" data-layout-box="training-context" x="52" y="124" width="996" height="94" rx="16" fill="#F4F8FB" stroke="#CFDEE8" stroke-width="1.5" />
+  <text id="network-address-plan-text-3" x="78" y="158" font-size="18" font-weight="700" fill="#155F91" text-anchor="start" data-diagram-text="true" data-layout-owner="training-context" data-max-width="944">
+    <tspan x="78" y="158">FICTIONAL TRAINING EXAMPLE  •  LOCAL IDENTITY  •  TWO NODES</tspan>
+  </text>
+  <text id="network-address-plan-text-4" x="78" y="193" font-size="24" font-weight="600" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="training-context" data-max-width="944">
+    <tspan x="78" y="193">Management subnet: 192.168.50.0/24</tspan>
+  </text>
+  <rect id="network-address-plan-step-1" data-layout-box="step-1" x="52" y="240" width="996" height="124" rx="16" fill="#EAF4FC" stroke="#ACCDE3" stroke-width="1.5" />
+  <circle cx="91" cy="273" r="22" fill="#155F91" />
+  <text id="network-address-plan-text-5" x="91" y="280" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-1" data-max-width="37">
+    <tspan x="91" y="280">1</tspan>
+  </text>
+  <text id="network-address-plan-text-6" x="130" y="280" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-1" data-max-width="775">
+    <tspan x="130" y="280">Existing enterprise DNS</tspan>
+  </text>
+  <text id="network-address-plan-text-7" x="130" y="315" font-size="23" font-weight="600" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-1" data-max-width="775">
+    <tspan x="130" y="315">192.168.50.10   and   192.168.50.11</tspan>
+  </text>
+  <text id="network-address-plan-text-8" x="130" y="344" font-size="20" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-1" data-max-width="775">
+    <tspan x="130" y="344">Existing DNS servers; not infrastructure-pool addresses.</tspan>
+  </text>
+  <svg id="network-address-plan-icon-1-a542cf39-2ba6-4206-8278-6a4f1c2452f5" width="58" height="58" viewBox="0 0 18 18" x="954" y="273" preserveAspectRatio="xMidYMid meet" data-source-icon="networking\10064-icon-service-DNS-Zones.svg" data-source-sha256="e6aaa1380e974af7d0aba1bb8380ecfab3f95182a595a28692aa3f963bcf9fac" data-icon-id-prefix="network-address-plan-icon-1-" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="network-address-plan-icon-1-e7579f4d-36a3-4693-a726-7a6050ac5671" cx="-6811.4" cy="6729.69" r="17" gradientTransform="matrix(0.5, 0, 0, -0.5, 3414.91, 3374.05)" gradientUnits="userSpaceOnUse">
+        <stop offset="0.18" stop-color="#5ea0ef" />
+        <stop offset="1" stop-color="#0078d4" />
+      </radialGradient>
+    </defs>
+    <title>Icon-networking-64</title>
+    <path id="network-address-plan-icon-1-f57e105d-6d2d-4ad7-b8c3-c10684c9f9b8" d="M14.21,15.72A8.5,8.5,0,0,1,3.79,2.28l.09-.06a8.5,8.5,0,0,1,10.33,13.5" fill="url(#network-address-plan-icon-1-e7579f4d-36a3-4693-a726-7a6050ac5671)" />
+    <path d="M9,1.31A7.69,7.69,0,1,0,16.69,9,7.7,7.7,0,0,0,9,1.31ZM14.15,3.9A7.37,7.37,0,0,1,12,4.7,8.83,8.83,0,0,0,10.75,2,7.2,7.2,0,0,1,14.15,3.9ZM9,1.74a6.59,6.59,0,0,1,1.09.09h0a7.48,7.48,0,0,1,1.53,3,15.12,15.12,0,0,1-5.45,0A7.38,7.38,0,0,1,7.68,1.89l0,0A7.34,7.34,0,0,1,9,1.74ZM7,2A8.72,8.72,0,0,0,5.73,4.68a5.58,5.58,0,0,1-1.9-.77A7.35,7.35,0,0,1,7,2ZM3.72,14a5.27,5.27,0,0,1,1.78-.76,7.08,7.08,0,0,0,1.35,2.72A7.25,7.25,0,0,1,3.72,14Zm6.41,2.2A7.08,7.08,0,0,1,9,16.26a6.83,6.83,0,0,1-1.44-.15l0,0a6,6,0,0,1-1.67-3,14.73,14.73,0,0,1,5.88,0,6,6,0,0,1-1.69,3Zm.73-.16a7.13,7.13,0,0,0,1.38-2.8,6.68,6.68,0,0,1,2,.83A7.13,7.13,0,0,1,10.86,16Zm1.48-3.22c.08-.36.15-.73.2-1.12l-.46.11c-.05.31-.1.62-.17.91a15.23,15.23,0,0,0-6.09,0c-.07-.27-.12-.56-.17-.86a.28.28,0,0,1,0-.09l-.46-.13a2.36,2.36,0,0,0,0,.28c0,.32.11.62.17.91a5.9,5.9,0,0,0-2,.85,7.24,7.24,0,0,1,.11-9.4,6.29,6.29,0,0,0,2.08.86c-.07.24-.13.5-.18.76s0,.25-.08.37l.47-.11,0-.17c.06-.26.12-.51.19-.75A14.89,14.89,0,0,0,9,5.48a15,15,0,0,0,2.78-.26c.07.27.14.56.2.85l.46.11q-.11-.54-.24-1a7.73,7.73,0,0,0,2.3-.91,7.22,7.22,0,0,1,.06,9.49A7.28,7.28,0,0,0,12.34,12.79Z" fill="#5ea0ef" />
+    <path d="M3.69,7a7.92,7.92,0,0,1,1.16-.08,2.44,2.44,0,0,1,1.71.52A2,2,0,0,1,7.15,8.9a2.21,2.21,0,0,1-.61,1.64,2.6,2.6,0,0,1-1.86.61,9.17,9.17,0,0,1-1-.05Zm.55,3.73a4,4,0,0,0,.55,0A1.62,1.62,0,0,0,6.58,8.92,1.5,1.5,0,0,0,4.87,7.3a3.17,3.17,0,0,0-.63,0Z" fill="#fff" />
+    <path d="M7.86,11.11V6.9h.59L9.8,9a12.18,12.18,0,0,1,.76,1.37h0c-.05-.56-.06-1.07-.06-1.73V6.9H11v4.21h-.55L9.13,9c-.29-.47-.57-1-.79-1.4h0c0,.53,0,1,0,1.74v1.8Z" fill="#fff" />
+    <path d="M11.89,10.45a2,2,0,0,0,1,.27c.56,0,.88-.29.88-.72s-.22-.62-.79-.83-1.12-.6-1.12-1.2a1.22,1.22,0,0,1,1.37-1.14,2,2,0,0,1,.93.2L14,7.48a1.63,1.63,0,0,0-.8-.2c-.58,0-.8.34-.8.63s.26.59.84.81,1.08.62,1.08,1.24-.48,1.21-1.48,1.21a2.16,2.16,0,0,1-1.07-.27Z" fill="#fff" />
+  </svg>
+  <rect id="network-address-plan-step-2" data-layout-box="step-2" x="52" y="388" width="996" height="126" rx="16" fill="#EAF7F5" stroke="#AAD3CC" stroke-width="1.5" />
+  <circle cx="91" cy="421" r="22" fill="#155F91" />
+  <text id="network-address-plan-text-9" x="91" y="428" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-2" data-max-width="37">
+    <tspan x="91" y="428">2</tspan>
+  </text>
+  <text id="network-address-plan-text-10" x="130" y="428" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-2" data-max-width="775">
+    <tspan x="130" y="428">Static node addresses</tspan>
+  </text>
+  <text id="network-address-plan-text-11" x="130" y="463" font-size="22" font-weight="600" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-2" data-max-width="375">
+    <tspan x="130" y="463">Node01   192.168.50.21</tspan>
+  </text>
+  <text id="network-address-plan-text-12" x="545" y="463" font-size="22" font-weight="600" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-2" data-max-width="350">
+    <tspan x="545" y="463">Node02   192.168.50.22</tspan>
+  </text>
+  <text id="network-address-plan-text-13" x="130" y="493" font-size="20" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-2" data-max-width="775">
+    <tspan x="130" y="493">Node IPs are separate from the six-address infrastructure pool.</tspan>
+  </text>
+  <svg version="1.0" x="925" y="389" viewBox="0 0 83.4 83.4" enable-background="new 0 0 83.4 83.4" xml:space="preserve" width="118" height="118" preserveAspectRatio="xMidYMid meet" data-source-icon="CnE_Enterprise\Server (generic).svg" data-source-sha256="ad48653923f33e26b833269fa4426879d4864b1a19282278aaa41885703d3389" data-icon-id-prefix="network-address-plan-icon-2-" aria-hidden="true" focusable="false">
+    <g id="network-address-plan-icon-2-Layer_1">
+      <g id="network-address-plan-icon-2-File_x2C__general">
+        <title>Sheet.1071</title>
+      </g>
+      <g id="network-address-plan-icon-2-Message">
+	</g>
+      <g id="network-address-plan-icon-2-Monitor">
+	</g>
+      <g id="network-address-plan-icon-2-Monitor_running_apps">
+	</g>
+      <g id="network-address-plan-icon-2-Mouse">
+	</g>
+      <g id="network-address-plan-icon-2-Network_card">
+	</g>
+      <g id="network-address-plan-icon-2-Not_allowed">
+	</g>
+      <g id="network-address-plan-icon-2-Performance">
+	</g>
+      <g id="network-address-plan-icon-2-Phone">
+	</g>
+      <g id="network-address-plan-icon-2-Plug_and_play">
+	</g>
+      <g id="network-address-plan-icon-2-Powershell_script_file">
+	</g>
+      <g id="network-address-plan-icon-2-Protocol_stack">
+	</g>
+      <g id="network-address-plan-icon-2-Queue_x2C__general">
+	</g>
+      <g id="network-address-plan-icon-2-RMS_connector">
+	</g>
+      <g id="network-address-plan-icon-2-Router">
+	</g>
+      <g id="network-address-plan-icon-2-Script_file">
+	</g>
+      <g id="network-address-plan-icon-2-Secure_virtual_machine">
+	</g>
+    </g>
+    <g id="network-address-plan-icon-2-paths">
+      <g id="network-address-plan-icon-2-Access_control">
+	</g>
+      <g id="network-address-plan-icon-2-Azure_active_directory">
+	</g>
+      <g id="network-address-plan-icon-2-Generic_code">
+	</g>
+      <g id="network-address-plan-icon-2-Laptop">
+	</g>
+      <g id="network-address-plan-icon-2-Load_balancer">
+	</g>
+      <g id="network-address-plan-icon-2-Lock_x2C__protected">
+	</g>
+    </g>
+    <g id="network-address-plan-icon-2-symbols">
+      <g>
+        <path fill="#2A3282" d="M52.6,19.1h-16c-1.1,0-2,0.9-2,2v39h20v-39C54.6,20,53.7,19.1,52.6,19.1z M51.6,56.1h-14v-2h14V56.1z     M51.6,52.1h-14v-2h14V52.1z M51.6,27.1h-14v-2h14V27.1z" />
+      </g>
+    </g>
+    <g id="network-address-plan-icon-2-slices">
+</g>
+  </svg>
+  <rect id="network-address-plan-step-3" data-layout-box="step-3" x="52" y="536" width="996" height="254" rx="16" fill="#EAF4FC" stroke="#ACCDE3" stroke-width="1.5" />
+  <circle cx="91" cy="569" r="22" fill="#155F91" />
+  <text id="network-address-plan-text-14" x="91" y="576" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-3" data-max-width="37">
+    <tspan x="91" y="576">3</tspan>
+  </text>
+  <text id="network-address-plan-text-15" x="130" y="576" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-3" data-max-width="892">
+    <tspan x="130" y="576">Infrastructure pool</tspan>
+  </text>
+  <text id="network-address-plan-text-16" x="130" y="610" font-size="21" font-weight="600" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-3" data-max-width="892">
+    <tspan x="130" y="610">192.168.50.40–192.168.50.45  •  six addresses  •  excluded from DHCP</tspan>
+  </text>
+  <rect id="network-address-plan-system-allocation" data-layout-box="system-allocation" x="78" y="632" width="328" height="110" rx="10" fill="#FFFFFF" stroke="#ACCDE3" stroke-width="1.5" />
+  <text id="network-address-plan-text-17" x="100" y="665" font-size="23" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="system-allocation" data-max-width="284">
+    <tspan x="100" y="665">192.168.50.40</tspan>
+  </text>
+  <text id="network-address-plan-text-18" x="100" y="700" font-size="20" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="system-allocation" data-max-width="284">
+    <tspan x="100" y="700">System / cluster address</tspan>
+  </text>
+  <rect id="network-address-plan-remaining-allocation" data-layout-box="remaining-allocation" x="428" y="632" width="594" height="110" rx="10" fill="#FFFFFF" stroke="#ACCDE3" stroke-width="1.5" />
+  <text id="network-address-plan-text-19" x="450" y="665" font-size="23" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="remaining-allocation" data-max-width="550">
+    <tspan x="450" y="665">192.168.50.41–192.168.50.45</tspan>
+  </text>
+  <text id="network-address-plan-text-20" x="450" y="698" font-size="20" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="remaining-allocation" data-max-width="550">
+    <tspan x="450" y="698">Remaining infrastructure addresses</tspan>
+  </text>
+  <text id="network-address-plan-text-21" x="450" y="725" font-size="20" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="remaining-allocation" data-max-width="550">
+    <tspan x="450" y="725">Service assignment is deployment-controlled.</tspan>
+  </text>
+  <text id="network-address-plan-text-22" x="78" y="769" font-size="20" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-3" data-max-width="944">
+    <tspan x="78" y="769">Do not manually fix service-to-address assignments.</tspan>
+  </text>
+  <rect id="network-address-plan-step-4" data-layout-box="step-4" x="52" y="812" width="996" height="136" rx="16" fill="#FFF6E7" stroke="#DFC697" stroke-width="1.5" />
+  <circle cx="91" cy="845" r="22" fill="#155F91" />
+  <text id="network-address-plan-text-23" x="91" y="852" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-4" data-max-width="37">
+    <tspan x="91" y="852">4</tspan>
+  </text>
+  <text id="network-address-plan-text-24" x="130" y="852" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-4" data-max-width="892">
+    <tspan x="130" y="852">Check all routed networks and reserved ranges</tspan>
+  </text>
+  <text id="network-address-plan-text-25" x="130" y="888" font-size="21" font-weight="600" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-4" data-max-width="892">
+    <tspan x="130" y="888">Check overlap with 10.96.0.0/12 and 10.244.0.0/16.</tspan>
+  </text>
+  <text id="network-address-plan-text-26" x="130" y="921" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-4" data-max-width="892">
+    <tspan x="130" y="921">These ranges are not assignable to infrastructure or DNS.</tspan>
+  </text>
+  <text id="network-address-plan-text-27" x="52" y="987" font-size="20" font-weight="400" fill="#405E72" text-anchor="start" data-diagram-text="true" data-layout-owner="canvas" data-max-width="996">
+    <tspan x="52" y="987">Illustrative only: approve routes, reservations and endpoint access</tspan>
+    <tspan x="52" y="1016">for the actual site.</tspan>
+  </text>
+</svg>

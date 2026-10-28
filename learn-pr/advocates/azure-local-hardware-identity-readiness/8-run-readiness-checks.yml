@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-hardware-identity-readiness.run-readiness-checks
+metadata:
+  title: Run Readiness Checks
+  description: Install Environment Checker, run scoped readiness checks, preserve evidence, remediate failures, and record an acceptance decision.
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Run readiness checks
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-run-readiness-checks.md)]

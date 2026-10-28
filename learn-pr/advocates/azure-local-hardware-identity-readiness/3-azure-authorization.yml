@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-hardware-identity-readiness.azure-authorization
+metadata:
+  title: Azure Authorization
+  description: Identify Azure Local deployment principals, roles, scopes, resource providers, policy constraints, and service limits.
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Azure authorization
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-azure-authorization.md)]

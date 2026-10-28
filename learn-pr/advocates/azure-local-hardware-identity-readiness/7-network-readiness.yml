@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-hardware-identity-readiness.network-readiness
+metadata:
+  title: Network Readiness
+  description: Prepare nonoverlapping Azure Local address ranges, name resolution, time synchronization, outbound dependencies, and supported proxy settings.
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Network readiness
+durationInMinutes: 12
+content: |
+  [!include[](includes/7-network-readiness.md)]

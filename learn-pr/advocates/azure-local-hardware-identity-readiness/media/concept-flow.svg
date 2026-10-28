@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1060" viewBox="0 0 1100 1060" role="img" aria-labelledby="concept-flow-title concept-flow-desc" style="background-color:white" font-family="Segoe UI, Arial, sans-serif" data-source-icon-root="C:\Azure-Icons" data-content-review-date="2026-10-28" data-diagram="concept-flow">
+  <title id="concept-flow-title">Build a deployment-readiness decision</title>
+  <desc id="concept-flow-desc">Five ordered evidence stages: qualified hardware configuration, Azure and local identity, network dependencies, versioned validation, and reviewed acceptance. Readiness is dated evidence, not simply a green check.</desc>
+  <metadata data-provenance="Supplied Azure icon SVG artwork, embedded inline" data-asset-policy="Original artwork; namespaced IDs; no external assets">{"title": "Build a deployment-readiness decision", "source_icon_root": "C:\\Azure-Icons", "review_date": "2026-10-28", "asset_handling": "Inline original vector artwork; IDs and local references prefixed", "font_stack": "Segoe UI, Arial, sans-serif", "icons": [{"relative_path": "CnE_Enterprise\\Server (generic).svg", "sha256": "ad48653923f33e26b833269fa4426879d4864b1a19282278aaa41885703d3389"}, {"relative_path": "general\\10002-icon-service-Subscriptions.svg", "sha256": "d69843a70bd38eefa5b70a4d0b803502f95cdf061c59aed48b435170a15919b4"}, {"relative_path": "networking\\10064-icon-service-DNS-Zones.svg", "sha256": "e6aaa1380e974af7d0aba1bb8380ecfab3f95182a595a28692aa3f963bcf9fac"}, {"relative_path": "general\\10800-icon-service-File.svg", "sha256": "89c56bc2a1b0f3f1a061049c7b58ea385b1a4d687cefc22ea91ffa3002f341f8"}, {"relative_path": "general\\10853-icon-service-Backlog.svg", "sha256": "3cbfa83a364c36d68e927dc96ee9c79302d7f100c3cf938bdf9764bd8d7a414f"}]}</metadata>
+  <rect id="concept-flow-white-background" x="0" y="0" width="1100" height="1060" fill="#FFFFFF" />
+  <defs>
+    <marker id="concept-flow-arrow" viewBox="0 0 8 8" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#51798F" />
+    </marker>
+  </defs>
+  <text id="concept-flow-text-1" x="52" y="58" font-size="30" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="canvas" data-max-width="996">
+    <tspan x="52" y="58">Build a deployment-readiness decision</tspan>
+  </text>
+  <text id="concept-flow-text-2" x="52" y="96" font-size="20" font-weight="400" fill="#405E72" text-anchor="start" data-diagram-text="true" data-layout-owner="canvas" data-max-width="996">
+    <tspan x="52" y="96">Reading order: 1 to 5. Arrows assemble evidence; they do not automate deployment.</tspan>
+  </text>
+  <rect id="concept-flow-step-1" data-layout-box="step-1" x="52" y="144" width="996" height="118" rx="16" fill="#EAF4FC" stroke="#ACCDE3" stroke-width="1.5" />
+  <circle cx="91" cy="177" r="22" fill="#155F91" />
+  <text id="concept-flow-text-3" x="91" y="184" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-1" data-max-width="37">
+    <tspan x="91" y="184">1</tspan>
+  </text>
+  <text id="concept-flow-text-4" x="130" y="184" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-1" data-max-width="778">
+    <tspan x="130" y="184">Qualified configuration</tspan>
+  </text>
+  <text id="concept-flow-text-5" x="130" y="216" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-1" data-max-width="776">
+    <tspan x="130" y="216">Catalog model and components</tspan>
+    <tspan x="130" y="243">OEM firmware, drivers and Solution Builder Extension (SBE)</tspan>
+  </text>
+  <svg version="1.0" x="925" y="145" viewBox="0 0 83.4 83.4" enable-background="new 0 0 83.4 83.4" xml:space="preserve" width="118" height="118" preserveAspectRatio="xMidYMid meet" data-source-icon="CnE_Enterprise\Server (generic).svg" data-source-sha256="ad48653923f33e26b833269fa4426879d4864b1a19282278aaa41885703d3389" data-icon-id-prefix="concept-flow-icon-1-" aria-hidden="true" focusable="false">
+    <g id="concept-flow-icon-1-Layer_1">
+      <g id="concept-flow-icon-1-File_x2C__general">
+        <title>Sheet.1071</title>
+      </g>
+      <g id="concept-flow-icon-1-Message">
+	</g>
+      <g id="concept-flow-icon-1-Monitor">
+	</g>
+      <g id="concept-flow-icon-1-Monitor_running_apps">
+	</g>
+      <g id="concept-flow-icon-1-Mouse">
+	</g>
+      <g id="concept-flow-icon-1-Network_card">
+	</g>
+      <g id="concept-flow-icon-1-Not_allowed">
+	</g>
+      <g id="concept-flow-icon-1-Performance">
+	</g>
+      <g id="concept-flow-icon-1-Phone">
+	</g>
+      <g id="concept-flow-icon-1-Plug_and_play">
+	</g>
+      <g id="concept-flow-icon-1-Powershell_script_file">
+	</g>
+      <g id="concept-flow-icon-1-Protocol_stack">
+	</g>
+      <g id="concept-flow-icon-1-Queue_x2C__general">
+	</g>
+      <g id="concept-flow-icon-1-RMS_connector">
+	</g>
+      <g id="concept-flow-icon-1-Router">
+	</g>
+      <g id="concept-flow-icon-1-Script_file">
+	</g>
+      <g id="concept-flow-icon-1-Secure_virtual_machine">
+	</g>
+    </g>
+    <g id="concept-flow-icon-1-paths">
+      <g id="concept-flow-icon-1-Access_control">
+	</g>
+      <g id="concept-flow-icon-1-Azure_active_directory">
+	</g>
+      <g id="concept-flow-icon-1-Generic_code">
+	</g>
+      <g id="concept-flow-icon-1-Laptop">
+	</g>
+      <g id="concept-flow-icon-1-Load_balancer">
+	</g>
+      <g id="concept-flow-icon-1-Lock_x2C__protected">
+	</g>
+    </g>
+    <g id="concept-flow-icon-1-symbols">
+      <g>
+        <path fill="#2A3282" d="M52.6,19.1h-16c-1.1,0-2,0.9-2,2v39h20v-39C54.6,20,53.7,19.1,52.6,19.1z M51.6,56.1h-14v-2h14V56.1z     M51.6,52.1h-14v-2h14V52.1z M51.6,27.1h-14v-2h14V27.1z" />
+      </g>
+    </g>
+    <g id="concept-flow-icon-1-slices">
+</g>
+  </svg>
+  <polyline points="550,270 550,288" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#concept-flow-arrow)" data-diagram-connector="true" />
+  <rect id="concept-flow-step-2" data-layout-box="step-2" x="52" y="296" width="996" height="118" rx="16" fill="#EAF7F5" stroke="#AAD3CC" stroke-width="1.5" />
+  <circle cx="91" cy="329" r="22" fill="#155F91" />
+  <text id="concept-flow-text-7" x="91" y="336" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-2" data-max-width="37">
+    <tspan x="91" y="336">2</tspan>
+  </text>
+  <text id="concept-flow-text-8" x="130" y="336" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-2" data-max-width="778">
+    <tspan x="130" y="336">Azure and local identity</tspan>
+  </text>
+  <text id="concept-flow-text-9" x="130" y="368" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-2" data-max-width="776">
+    <tspan x="130" y="368">Scoped Azure rights</tspan>
+    <tspan x="130" y="395">AD DS or local identity</tspan>
+  </text>
+  <svg id="concept-flow-icon-2-bc18bade-5481-447e-a959-659d72346474" width="58" height="58" viewBox="0 0 18 18" x="954" y="325" preserveAspectRatio="xMidYMid meet" data-source-icon="general\10002-icon-service-Subscriptions.svg" data-source-sha256="d69843a70bd38eefa5b70a4d0b803502f95cdf061c59aed48b435170a15919b4" data-icon-id-prefix="concept-flow-icon-2-" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="concept-flow-icon-2-a445c717-9d75-44c7-ba6b-0d8f2383e560" cx="-36.63" cy="17.12" r="11.18" gradientTransform="translate(41.88 -7.4) scale(0.94 0.94)" gradientUnits="userSpaceOnUse">
+        <stop offset="0.27" stop-color="#ffd70f" />
+        <stop offset="0.49" stop-color="#ffcb12" />
+        <stop offset="0.88" stop-color="#feac19" />
+        <stop offset="1" stop-color="#fea11b" />
+      </radialGradient>
+    </defs>
+    <title>Icon-general-2</title>
+    <path id="concept-flow-icon-2-e3d1e58c-f78e-4fb5-9857-0c9331da9979" d="M13.56,7.19a2.07,2.07,0,0,0,0-2.93h0L10,.69a2.06,2.06,0,0,0-2.92,0h0L3.52,4.26a2.09,2.09,0,0,0,0,2.93l3,3a.61.61,0,0,1,.17.41v5.52a.7.7,0,0,0,.2.5l1.35,1.35a.45.45,0,0,0,.66,0l1.31-1.31h0l.77-.77a.26.26,0,0,0,0-.38l-.55-.56a.29.29,0,0,1,0-.42l.55-.56a.26.26,0,0,0,0-.38L10.4,13a.28.28,0,0,1,0-.41L11,12a.26.26,0,0,0,0-.38l-.77-.78v-.28Zm-5-5.64A1.18,1.18,0,1,1,7.37,2.73,1.17,1.17,0,0,1,8.54,1.55Z" fill="url(#concept-flow-icon-2-a445c717-9d75-44c7-ba6b-0d8f2383e560)" />
+    <path id="concept-flow-icon-2-a21a8f7a-61cc-4035-8449-e5c8fe4d4d5e" d="M7.62,16.21h0A.25.25,0,0,0,8,16V11.55a.27.27,0,0,0-.11-.22h0a.25.25,0,0,0-.39.22V16A.27.27,0,0,0,7.62,16.21Z" fill="#ff9300" opacity="0.75" />
+    <rect id="concept-flow-icon-2-ecd3189c-fb1e-4a0e-a2b6-ba2f11dda484" x="5.69" y="5.45" width="5.86" height="0.69" rx="0.32" fill="#ff9300" opacity="0.75" />
+    <rect id="concept-flow-icon-2-a1949a3c-4818-4bd1-b236-0d970b92fc62" x="5.69" y="6.57" width="5.86" height="0.69" rx="0.32" fill="#ff9300" opacity="0.75" />
+  </svg>
+  <polyline points="550,422 550,440" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#concept-flow-arrow)" data-diagram-connector="true" />
+  <rect id="concept-flow-step-3" data-layout-box="step-3" x="52" y="448" width="996" height="118" rx="16" fill="#EAF4FC" stroke="#ACCDE3" stroke-width="1.5" />
+  <circle cx="91" cy="481" r="22" fill="#155F91" />
+  <text id="concept-flow-text-11" x="91" y="488" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-3" data-max-width="37">
+    <tspan x="91" y="488">3</tspan>
+  </text>
+  <text id="concept-flow-text-12" x="130" y="488" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-3" data-max-width="778">
+    <tspan x="130" y="488">Network dependencies</tspan>
+  </text>
+  <text id="concept-flow-text-13" x="130" y="520" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-3" data-max-width="776">
+    <tspan x="130" y="520">Reserved addresses</tspan>
+    <tspan x="130" y="547">DNS, time and required endpoints</tspan>
+  </text>
+  <svg id="concept-flow-icon-3-a542cf39-2ba6-4206-8278-6a4f1c2452f5" width="58" height="58" viewBox="0 0 18 18" x="954" y="477" preserveAspectRatio="xMidYMid meet" data-source-icon="networking\10064-icon-service-DNS-Zones.svg" data-source-sha256="e6aaa1380e974af7d0aba1bb8380ecfab3f95182a595a28692aa3f963bcf9fac" data-icon-id-prefix="concept-flow-icon-3-" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="concept-flow-icon-3-e7579f4d-36a3-4693-a726-7a6050ac5671" cx="-6811.4" cy="6729.69" r="17" gradientTransform="matrix(0.5, 0, 0, -0.5, 3414.91, 3374.05)" gradientUnits="userSpaceOnUse">
+        <stop offset="0.18" stop-color="#5ea0ef" />
+        <stop offset="1" stop-color="#0078d4" />
+      </radialGradient>
+    </defs>
+    <title>Icon-networking-64</title>
+    <path id="concept-flow-icon-3-f57e105d-6d2d-4ad7-b8c3-c10684c9f9b8" d="M14.21,15.72A8.5,8.5,0,0,1,3.79,2.28l.09-.06a8.5,8.5,0,0,1,10.33,13.5" fill="url(#concept-flow-icon-3-e7579f4d-36a3-4693-a726-7a6050ac5671)" />
+    <path d="M9,1.31A7.69,7.69,0,1,0,16.69,9,7.7,7.7,0,0,0,9,1.31ZM14.15,3.9A7.37,7.37,0,0,1,12,4.7,8.83,8.83,0,0,0,10.75,2,7.2,7.2,0,0,1,14.15,3.9ZM9,1.74a6.59,6.59,0,0,1,1.09.09h0a7.48,7.48,0,0,1,1.53,3,15.12,15.12,0,0,1-5.45,0A7.38,7.38,0,0,1,7.68,1.89l0,0A7.34,7.34,0,0,1,9,1.74ZM7,2A8.72,8.72,0,0,0,5.73,4.68a5.58,5.58,0,0,1-1.9-.77A7.35,7.35,0,0,1,7,2ZM3.72,14a5.27,5.27,0,0,1,1.78-.76,7.08,7.08,0,0,0,1.35,2.72A7.25,7.25,0,0,1,3.72,14Zm6.41,2.2A7.08,7.08,0,0,1,9,16.26a6.83,6.83,0,0,1-1.44-.15l0,0a6,6,0,0,1-1.67-3,14.73,14.73,0,0,1,5.88,0,6,6,0,0,1-1.69,3Zm.73-.16a7.13,7.13,0,0,0,1.38-2.8,6.68,6.68,0,0,1,2,.83A7.13,7.13,0,0,1,10.86,16Zm1.48-3.22c.08-.36.15-.73.2-1.12l-.46.11c-.05.31-.1.62-.17.91a15.23,15.23,0,0,0-6.09,0c-.07-.27-.12-.56-.17-.86a.28.28,0,0,1,0-.09l-.46-.13a2.36,2.36,0,0,0,0,.28c0,.32.11.62.17.91a5.9,5.9,0,0,0-2,.85,7.24,7.24,0,0,1,.11-9.4,6.29,6.29,0,0,0,2.08.86c-.07.24-.13.5-.18.76s0,.25-.08.37l.47-.11,0-.17c.06-.26.12-.51.19-.75A14.89,14.89,0,0,0,9,5.48a15,15,0,0,0,2.78-.26c.07.27.14.56.2.85l.46.11q-.11-.54-.24-1a7.73,7.73,0,0,0,2.3-.91,7.22,7.22,0,0,1,.06,9.49A7.28,7.28,0,0,0,12.34,12.79Z" fill="#5ea0ef" />
+    <path d="M3.69,7a7.92,7.92,0,0,1,1.16-.08,2.44,2.44,0,0,1,1.71.52A2,2,0,0,1,7.15,8.9a2.21,2.21,0,0,1-.61,1.64,2.6,2.6,0,0,1-1.86.61,9.17,9.17,0,0,1-1-.05Zm.55,3.73a4,4,0,0,0,.55,0A1.62,1.62,0,0,0,6.58,8.92,1.5,1.5,0,0,0,4.87,7.3a3.17,3.17,0,0,0-.63,0Z" fill="#fff" />
+    <path d="M7.86,11.11V6.9h.59L9.8,9a12.18,12.18,0,0,1,.76,1.37h0c-.05-.56-.06-1.07-.06-1.73V6.9H11v4.21h-.55L9.13,9c-.29-.47-.57-1-.79-1.4h0c0,.53,0,1,0,1.74v1.8Z" fill="#fff" />
+    <path d="M11.89,10.45a2,2,0,0,0,1,.27c.56,0,.88-.29.88-.72s-.22-.62-.79-.83-1.12-.6-1.12-1.2a1.22,1.22,0,0,1,1.37-1.14,2,2,0,0,1,.93.2L14,7.48a1.63,1.63,0,0,0-.8-.2c-.58,0-.8.34-.8.63s.26.59.84.81,1.08.62,1.08,1.24-.48,1.21-1.48,1.21a2.16,2.16,0,0,1-1.07-.27Z" fill="#fff" />
+  </svg>
+  <polyline points="550,574 550,592" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#concept-flow-arrow)" data-diagram-connector="true" />
+  <rect id="concept-flow-step-4" data-layout-box="step-4" x="52" y="600" width="996" height="118" rx="16" fill="#EAF7F5" stroke="#AAD3CC" stroke-width="1.5" />
+  <circle cx="91" cy="633" r="22" fill="#155F91" />
+  <text id="concept-flow-text-15" x="91" y="640" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-4" data-max-width="37">
+    <tspan x="91" y="640">4</tspan>
+  </text>
+  <text id="concept-flow-text-16" x="130" y="640" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-4" data-max-width="778">
+    <tspan x="130" y="640">Versioned validation</tspan>
+  </text>
+  <text id="concept-flow-text-17" x="130" y="672" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-4" data-max-width="776">
+    <tspan x="130" y="672">Actual nodes where required</tspan>
+    <tspan x="130" y="699">Versioned tools and scoped reports</tspan>
+  </text>
+  <svg width="58" height="58" viewBox="0 0 18 18" x="954" y="629" preserveAspectRatio="xMidYMid meet" data-source-icon="general\10800-icon-service-File.svg" data-source-sha256="89c56bc2a1b0f3f1a061049c7b58ea385b1a4d687cefc22ea91ffa3002f341f8" data-icon-id-prefix="concept-flow-icon-4-" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="concept-flow-icon-4-e5371565-cc9b-4729-9e54-9bac135a92bd" x1="9" y1="18" x2="9" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#0078d4" />
+        <stop offset="0.817" stop-color="#5ea0ef" />
+      </linearGradient>
+    </defs>
+    <title>MsPortalFx.base.images-22</title>
+    <g id="concept-flow-icon-4-abc3e3f9-d4db-41ad-8b60-378d1c3348f7">
+      <g>
+        <g>
+          <path d="M10.023.134H2.362A.605.605,0,0,0,1.757.74V17.26a.605.605,0,0,0,.605.606H15.638a.605.605,0,0,0,.6-.606V6.327a.605.605,0,0,0-.6-.606H11.232a.605.605,0,0,1-.6-.605V.74A.6.6,0,0,0,10.023.134Z" fill="#fff" />
+          <path d="M9.743.908V5.057a1.524,1.524,0,0,0,1.52,1.523h4.18V17.092H2.557V.908H9.743M10.036,0H2.264A.614.614,0,0,0,1.65.615v16.77A.614.614,0,0,0,2.264,18H15.736a.614.614,0,0,0,.614-.615V6.286a.614.614,0,0,0-.614-.614H11.263a.614.614,0,0,1-.613-.615V.615A.614.614,0,0,0,10.036,0Z" fill="url(#concept-flow-icon-4-e5371565-cc9b-4729-9e54-9bac135a92bd)" />
+          <path d="M16.116,5.794,10.438.134V4.746a1.041,1.041,0,0,0,1.035,1.048Z" fill="#0078d4" />
+        </g>
+        <rect x="4" y="8.196" width="9.999" height="1.341" rx="0.603" fill="#5ea0ef" />
+        <rect x="4" y="10.599" width="9.999" height="1.341" rx="0.603" fill="#5ea0ef" />
+        <rect x="4" y="13.002" width="6.302" height="1.341" rx="0.603" fill="#5ea0ef" />
+      </g>
+    </g>
+  </svg>
+  <polyline points="550,726 550,744" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#concept-flow-arrow)" data-diagram-connector="true" />
+  <rect id="concept-flow-step-5" data-layout-box="step-5" x="52" y="752" width="996" height="118" rx="16" fill="#EAF4FC" stroke="#ACCDE3" stroke-width="1.5" />
+  <circle cx="91" cy="785" r="22" fill="#155F91" />
+  <text id="concept-flow-text-19" x="91" y="792" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-5" data-max-width="37">
+    <tspan x="91" y="792">5</tspan>
+  </text>
+  <text id="concept-flow-text-20" x="130" y="792" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-5" data-max-width="778">
+    <tspan x="130" y="792">Reviewed acceptance</tspan>
+  </text>
+  <text id="concept-flow-text-21" x="130" y="824" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-5" data-max-width="776">
+    <tspan x="130" y="824">No unresolved blockers</tspan>
+    <tspan x="130" y="851">Named owners and retained evidence</tspan>
+  </text>
+  <svg width="58" height="58" viewBox="0 0 18 18" x="954" y="781" preserveAspectRatio="xMidYMid meet" data-source-icon="general\10853-icon-service-Backlog.svg" data-source-sha256="3cbfa83a364c36d68e927dc96ee9c79302d7f100c3cf938bdf9764bd8d7a414f" data-icon-id-prefix="concept-flow-icon-5-" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="concept-flow-icon-5-ae5004eb-b3cc-4afc-9498-a0eb145de4dc" x1="3.439" y1="6.801" x2="3.439" y2="1.432" gradientUnits="userSpaceOnUse">
+        <stop offset="0.2" stop-color="#0078d4" />
+        <stop offset="0.287" stop-color="#1380da" />
+        <stop offset="0.759" stop-color="#5ea0ef" />
+      </linearGradient>
+      <linearGradient id="concept-flow-icon-5-a1226368-080a-4756-9af4-a472e9b2c59c" x1="3.439" y1="11.998" x2="3.439" y2="6.628" gradientUnits="userSpaceOnUse">
+        <stop offset="0.2" stop-color="#0078d4" />
+        <stop offset="0.287" stop-color="#1380da" />
+        <stop offset="0.759" stop-color="#5ea0ef" />
+      </linearGradient>
+      <linearGradient id="concept-flow-icon-5-a87a55b1-552d-4fae-9ce3-1c309da31213" x1="3.439" y1="17.194" x2="3.439" y2="11.824" gradientUnits="userSpaceOnUse">
+        <stop offset="0.2" stop-color="#0078d4" />
+        <stop offset="0.287" stop-color="#1380da" />
+        <stop offset="0.759" stop-color="#5ea0ef" />
+      </linearGradient>
+    </defs>
+    <g id="concept-flow-icon-5-fb31d21f-8069-4bda-ba9f-5d4b1930b65d">
+      <g>
+        <path d="M6.437,1.856l-.292-.292a.5.5,0,0,0-.707,0L2.606,4.392,1.441,3.229a.5.5,0,0,0-.707,0l-.293.293a.5.5,0,0,0,0,.707L2.253,6.044a.5.5,0,0,0,.354.146.5.5,0,0,0,.353-.146L6.437,2.563A.5.5,0,0,0,6.437,1.856Z" fill="url(#concept-flow-icon-5-ae5004eb-b3cc-4afc-9498-a0eb145de4dc)" />
+        <rect x="7.339" y="2.949" width="10.366" height="1.895" rx="0.923" fill="#a3a3a3" />
+        <rect x="7.339" y="8.073" width="10.366" height="1.895" rx="0.923" fill="#a3a3a3" />
+        <rect x="7.339" y="13.196" width="10.366" height="1.895" rx="0.923" fill="#a3a3a3" />
+        <path d="M6.437,7.053,6.145,6.76a.5.5,0,0,0-.707,0L2.606,9.588,1.441,8.425a.5.5,0,0,0-.707,0l-.293.293a.5.5,0,0,0,0,.707L2.253,11.24a.5.5,0,0,0,.354.147.5.5,0,0,0,.353-.147L6.437,7.76A.5.5,0,0,0,6.437,7.053Z" fill="url(#concept-flow-icon-5-a1226368-080a-4756-9af4-a472e9b2c59c)" />
+        <path d="M6.437,12.249l-.292-.293a.5.5,0,0,0-.354-.146.494.494,0,0,0-.353.146L2.606,14.784,1.441,13.621a.5.5,0,0,0-.707,0l-.293.292a.5.5,0,0,0,0,.707l1.812,1.815a.5.5,0,0,0,.707,0l3.477-3.48A.5.5,0,0,0,6.437,12.249Z" fill="url(#concept-flow-icon-5-a87a55b1-552d-4fae-9ce3-1c309da31213)" />
+      </g>
+    </g>
+  </svg>
+  <rect id="concept-flow-takeaway" data-layout-box="takeaway" x="52" y="906" width="996" height="112" rx="16" fill="#F4F8FB" stroke="#CFDEE8" stroke-width="1.5" />
+  <text id="concept-flow-text-23" x="78" y="941" font-size="22" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="takeaway" data-max-width="944">
+    <tspan x="78" y="941">Readiness is dated evidence — not just a green check.</tspan>
+  </text>
+  <text id="concept-flow-text-24" x="78" y="972" font-size="20" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="takeaway" data-max-width="944">
+    <tspan x="78" y="972">Record the build, site, owners and review date.</tspan>
+  </text>
+</svg>

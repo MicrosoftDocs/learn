@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-hardware-identity-readiness.introduction
+metadata:
+  title: Introduction
+  description: Establish an Azure Local configuration baseline, identify readiness boundaries, and assign owners for deployment evidence.
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Introduction
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

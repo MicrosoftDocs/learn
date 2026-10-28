@@ -1,0 +1,60 @@
+### YamlMime:Module
+uid: learn.devrel.azure-local-hardware-identity-readiness
+metadata:
+  title: Prepare Azure Local Hardware and Identity Readiness
+  description: Connect Azure Local hardware qualification, Azure authorization, local authentication, networking, and validation evidence to make a supported deployment readiness decision.
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-concept-based
+  ms.service: windows-server
+  ai-usage: ai-assisted
+title: Prepare Azure Local hardware and identity readiness
+summary: |
+  An Azure Local readiness decision requires answers to the following three questions:
+
+  - Is the configuration supported?
+  - Can the required operations succeed?
+  - Can the owners maintain and recover the Azure Local system after deployment?
+
+  In this module, you connect hardware qualification, Azure authorization, local authentication, addressing, and validation results into an engineering acceptance decision. You learn what each prerequisite protects, how to collect evidence without exposing credentials, and when a finding must halt a deployment.
+abstract: |
+  After completing this module, you can:
+
+  - Establish hardware qualification and distinguish platform minimums from workload sizing.
+  - Identify the Azure principals, roles, scopes, and resource prerequisites needed for deployment.
+  - Compare AD DS and local identity with Azure Key Vault, including their lifecycle obligations.
+  - Prepare nonoverlapping address ranges, DNS, time, and outbound connectivity dependencies.
+  - Interpret validator failures and warnings without weakening required security controls.
+  - Build a dated evidence package, remediate a prerequisite, and make a defensible readiness decision.
+prerequisites: |
+  Review the following prerequisites and exercise requirements:
+
+  - Familiarity with physical servers, virtual machines, networking, and storage.
+  - Basic understanding of Azure resources, permissions, and Windows Server identity concepts.
+  - No Azure subscription or deployed infrastructure is required for the evidence-review exercise.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure-local
+subjects:
+- infrastructure
+units:
+- learn.devrel.azure-local-hardware-identity-readiness.introduction
+- learn.devrel.azure-local-hardware-identity-readiness.hardware-qualification
+- learn.devrel.azure-local-hardware-identity-readiness.azure-authorization
+- learn.devrel.azure-local-hardware-identity-readiness.identity-selection
+- learn.devrel.azure-local-hardware-identity-readiness.active-directory-preparation
+- learn.devrel.azure-local-hardware-identity-readiness.local-identity-preparation
+- learn.devrel.azure-local-hardware-identity-readiness.network-readiness
+- learn.devrel.azure-local-hardware-identity-readiness.run-readiness-checks
+- learn.devrel.azure-local-hardware-identity-readiness.exercise-review-readiness
+- learn.devrel.azure-local-hardware-identity-readiness.knowledge-check
+- learn.devrel.azure-local-hardware-identity-readiness.summary
+badge:
+  uid: learn.devrel.azure-local-hardware-identity-readiness.badge
