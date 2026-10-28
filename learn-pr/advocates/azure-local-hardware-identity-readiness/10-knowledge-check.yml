@@ -1,0 +1,93 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-hardware-identity-readiness.knowledge-check
+metadata:
+  title: Module Assessment
+  description: Assess Azure Local hardware qualification, authorization, identity preparation, network reservations, validation scope, and recovery evidence.
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-assisted
+title: Module assessment
+durationInMinutes: 8
+content: |
+quiz:
+  questions:
+  - content: "Two nodes have the same server model and core count, but different network adapter models. One passes a basic boot test. What should the engineer do?"
+    choices:
+    - content: "Reconcile the complete initial-deployment configuration with the catalog and OEM requirements."
+      isCorrect: true
+      explanation: "Correct. Qualification covers the complete configuration. Matching core count and a successful boot do not establish NIC compatibility or initial symmetry."
+    - content: "Accept the nodes because the manufacturer and core count match."
+      isCorrect: false
+      explanation: "Incorrect. Qualification covers the complete configuration. A matching model and core count do not establish network adapter compatibility."
+    - content: "Treat add-node replacement allowances as approval for the initial mismatch."
+      isCorrect: false
+      explanation: "Incorrect. Add-node and repair workflows have their own compatibility rules. Replacement allowances do not approve an asymmetric initial deployment."
+  - content: "An engineer can administer the physical nodes but cannot create the deployment Key Vault. Which boundary should be investigated?"
+    choices:
+    - content: "The cluster witness vote."
+      isCorrect: false
+      explanation: "Incorrect. A witness contributes to quorum and does not authorize Azure resource creation."
+    - content: "The engineer's Azure role, scope, and applicable policy for the denied operation."
+      isCorrect: true
+      explanation: "Correct. Local administrator rights do not authorize Azure resource creation. Investigate the actual Azure operation, scope, grants, and policy."
+    - content: "The node's local administrator password complexity."
+      isCorrect: false
+      explanation: "Incorrect. Local password complexity does not grant Azure resource-creation permissions."
+  - content: "The LCM account has OU delegation, but deployment cannot perform a batch logon. Block Inheritance is enabled. What is the best next action?"
+    choices:
+    - content: "Delete and recreate the OU until the helper succeeds."
+      isCorrect: false
+      explanation: "Incorrect. Recreating directory objects does not resolve effective logon policy and can destroy important configuration or recovery information."
+    - content: "Review effective logon rights and enforced GPOs with the directory owner."
+      isCorrect: true
+      explanation: "Correct. Enforced policies can survive blocked inheritance, and effective deny rights can prevent required logons. Broad privilege or destructive recreation is not the remedy."
+    - content: "Permanently use a domain administrator for deployment and servicing."
+      isCorrect: false
+      explanation: "Incorrect. Broad privilege is not a safe substitute for resolving effective logon rights and policy conflicts."
+  - content: "A site has no suitable directory and proposes local identity with Windows Admin Center as its only administration tool. Is the proposal ready?"
+    choices:
+    - content: "Yes; local identity supports every tool available on a domain-joined system."
+      isCorrect: false
+      explanation: "Incorrect. Windows Admin Center is unsupported for the local-identity model, and other management tools have their own compatibility limits."
+    - content: "No; establish supported management, account and certificate lifecycle, vault access, and recovery procedures."
+      isCorrect: true
+      explanation: "Correct. Windows Admin Center is unsupported for this model. Key Vault does not replace supported administration or lifecycle ownership."
+    - content: "Yes; a dedicated Key Vault replaces the need for local administration."
+      isCorrect: false
+      explanation: "Incorrect. Key Vault protects supported secrets and certificates. It does not replace local administration or lifecycle ownership."
+  - content: "The network team proposes a DNS server at `10.100.1.10` and an infrastructure pool inside `10.244.0.0/16`. Neither is used on the local switch. Which statement is correct?"
+    choices:
+    - content: "Both conflict with Azure Local reserved ranges, and local nonuse does not establish readiness."
+      isCorrect: true
+      explanation: "Correct. `10.100.1.10` lies within `10.96.0.0/12`, and the proposed pool lies within `10.244.0.0/16`. Route and reservation checks extend beyond the local switch."
+    - content: "Both are acceptable because there are no local duplicates."
+      isCorrect: false
+      explanation: "Incorrect. Local nonuse does not establish nonoverlap with reserved or routed networks."
+    - content: "Only the infrastructure pool is invalid; the DNS server is outside the reserved ranges."
+      isCorrect: false
+      explanation: "Incorrect. `10.100.1.10` is inside the reserved `10.96.0.0/12` range, which extends through `10.111.255.255`."
+  - content: "Arc for Servers connectivity succeeds from a staging machine. A processor-consistency check on the nodes fails with Warning severity. What can you conclude?"
+    choices:
+    - content: "The Arc result also proves witness connectivity and node DNS."
+      isCorrect: false
+      explanation: "Incorrect. A service-scoped staging test does not establish witness access or the effective name-resolution path on each node."
+    - content: "The entire system is ready because a warning cannot block deployment."
+      isCorrect: false
+      explanation: "Incorrect. A warning on a mandatory hardware requirement still needs resolution against the documented support requirements."
+    - content: "The Arc result covers its tested scope; the hardware finding still needs resolution against support requirements."
+      isCorrect: true
+      explanation: "Correct. A scoped pass proves only the tested context. Severity does not waive a mandatory hardware requirement."
+  - content: "The deployment vault exists and the human administrator can open it. Which evidence is still needed for the local-identity recovery handoff?"
+    choices:
+    - content: "A copy of every secret value in the readiness report."
+      isCorrect: false
+      explanation: "Incorrect. Readiness evidence must verify recovery preparation without exposing passwords, keys, or other secret values."
+    - content: "The vault's display name only."
+      isCorrect: false
+      explanation: "Incorrect. A display name does not establish machine permissions, successful backups, or protected recovery access."
+    - content: "The applicable node-identity grants, extension health, expected recovery material, and protected recovery procedure."
+      isCorrect: true
+      explanation: "Correct. Resource existence and human access do not prove backup operation or recovery. Secret values must not be copied into a general report."

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-hardware-identity-readiness.active-directory-preparation
+metadata:
+  title: Active Directory Preparation
+  description: Prepare directory objects, lifecycle accounts, delegated permissions, effective policy, and name resolution for Azure Local deployment.
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Active Directory preparation
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-active-directory-preparation.md)]

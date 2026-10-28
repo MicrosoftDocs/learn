@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1060" viewBox="0 0 1100 1060" role="img" aria-labelledby="hardware-qualification-title hardware-qualification-desc" style="background-color:white" font-family="Segoe UI, Arial, sans-serif" data-source-icon-root="C:\Azure-Icons" data-content-review-date="2026-10-28" data-diagram="hardware-qualification">
+  <title id="hardware-qualification-title">Qualification is a complete configuration</title>
+  <desc id="hardware-qualification-desc">A five-step hardware checklist covering the catalog solution, matched nodes, supported software, enabled platform controls, and workload sizing with resilience headroom. Workload sizing is distinct from certification.</desc>
+  <metadata data-provenance="Supplied Azure icon SVG artwork, embedded inline" data-asset-policy="Original artwork; namespaced IDs; no external assets">{"title": "Qualification is a complete configuration", "source_icon_root": "C:\\Azure-Icons", "review_date": "2026-10-28", "asset_handling": "Inline original vector artwork; IDs and local references prefixed", "font_stack": "Segoe UI, Arial, sans-serif", "icons": [{"relative_path": "CnE_Enterprise\\Server (generic).svg", "sha256": "ad48653923f33e26b833269fa4426879d4864b1a19282278aaa41885703d3389"}, {"relative_path": "general\\10837-icon-service-SSD.svg", "sha256": "29f359855eb3ba4c7df3ae02e14283ee03cf4ce2fdd0ec9bd8118ef1e070b98d"}, {"relative_path": "general\\10805-icon-service-Gear.svg", "sha256": "cfc08d47427746c4110ac4682473b489867b9657c5edf93f1230058927bc5c7d"}, {"relative_path": "identity\\00321-icon-service-Security.svg", "sha256": "b7af2a276558a69fe8b3e64dca6f2bf5dd451401357a88f70d3242022e2e0a77"}]}</metadata>
+  <rect id="hardware-qualification-white-background" x="0" y="0" width="1100" height="1060" fill="#FFFFFF" />
+  <defs>
+    <marker id="hardware-qualification-arrow" viewBox="0 0 8 8" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#51798F" />
+    </marker>
+  </defs>
+  <text id="hardware-qualification-text-1" x="52" y="58" font-size="30" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="canvas" data-max-width="996">
+    <tspan x="52" y="58">Qualification is a complete configuration</tspan>
+  </text>
+  <text id="hardware-qualification-text-2" x="52" y="96" font-size="20" font-weight="400" fill="#405E72" text-anchor="start" data-diagram-text="true" data-layout-owner="canvas" data-max-width="996">
+    <tspan x="52" y="96">Reading order: 1 to 5, top to bottom. Verify the selected configuration as a whole.</tspan>
+  </text>
+  <rect id="hardware-qualification-step-1" data-layout-box="step-1" x="52" y="144" width="996" height="118" rx="16" fill="#EAF4FC" stroke="#ACCDE3" stroke-width="1.5" />
+  <circle cx="91" cy="177" r="22" fill="#155F91" />
+  <text id="hardware-qualification-text-3" x="91" y="184" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-1" data-max-width="37">
+    <tspan x="91" y="184">1</tspan>
+  </text>
+  <text id="hardware-qualification-text-4" x="130" y="184" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-1" data-max-width="778">
+    <tspan x="130" y="184">Catalog solution</tspan>
+  </text>
+  <text id="hardware-qualification-text-5" x="130" y="216" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-1" data-max-width="776">
+    <tspan x="130" y="216">Manufacturer and model</tspan>
+    <tspan x="130" y="243">Selected catalog solution build</tspan>
+  </text>
+  <svg version="1.0" x="925" y="145" viewBox="0 0 83.4 83.4" enable-background="new 0 0 83.4 83.4" xml:space="preserve" width="118" height="118" preserveAspectRatio="xMidYMid meet" data-source-icon="CnE_Enterprise\Server (generic).svg" data-source-sha256="ad48653923f33e26b833269fa4426879d4864b1a19282278aaa41885703d3389" data-icon-id-prefix="hardware-qualification-icon-1-" aria-hidden="true" focusable="false">
+    <g id="hardware-qualification-icon-1-Layer_1">
+      <g id="hardware-qualification-icon-1-File_x2C__general">
+        <title>Sheet.1071</title>
+      </g>
+      <g id="hardware-qualification-icon-1-Message">
+	</g>
+      <g id="hardware-qualification-icon-1-Monitor">
+	</g>
+      <g id="hardware-qualification-icon-1-Monitor_running_apps">
+	</g>
+      <g id="hardware-qualification-icon-1-Mouse">
+	</g>
+      <g id="hardware-qualification-icon-1-Network_card">
+	</g>
+      <g id="hardware-qualification-icon-1-Not_allowed">
+	</g>
+      <g id="hardware-qualification-icon-1-Performance">
+	</g>
+      <g id="hardware-qualification-icon-1-Phone">
+	</g>
+      <g id="hardware-qualification-icon-1-Plug_and_play">
+	</g>
+      <g id="hardware-qualification-icon-1-Powershell_script_file">
+	</g>
+      <g id="hardware-qualification-icon-1-Protocol_stack">
+	</g>
+      <g id="hardware-qualification-icon-1-Queue_x2C__general">
+	</g>
+      <g id="hardware-qualification-icon-1-RMS_connector">
+	</g>
+      <g id="hardware-qualification-icon-1-Router">
+	</g>
+      <g id="hardware-qualification-icon-1-Script_file">
+	</g>
+      <g id="hardware-qualification-icon-1-Secure_virtual_machine">
+	</g>
+    </g>
+    <g id="hardware-qualification-icon-1-paths">
+      <g id="hardware-qualification-icon-1-Access_control">
+	</g>
+      <g id="hardware-qualification-icon-1-Azure_active_directory">
+	</g>
+      <g id="hardware-qualification-icon-1-Generic_code">
+	</g>
+      <g id="hardware-qualification-icon-1-Laptop">
+	</g>
+      <g id="hardware-qualification-icon-1-Load_balancer">
+	</g>
+      <g id="hardware-qualification-icon-1-Lock_x2C__protected">
+	</g>
+    </g>
+    <g id="hardware-qualification-icon-1-symbols">
+      <g>
+        <path fill="#2A3282" d="M52.6,19.1h-16c-1.1,0-2,0.9-2,2v39h20v-39C54.6,20,53.7,19.1,52.6,19.1z M51.6,56.1h-14v-2h14V56.1z     M51.6,52.1h-14v-2h14V52.1z M51.6,27.1h-14v-2h14V27.1z" />
+      </g>
+    </g>
+    <g id="hardware-qualification-icon-1-slices">
+</g>
+  </svg>
+  <polyline points="550,270 550,288" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hardware-qualification-arrow)" data-diagram-connector="true" />
+  <rect id="hardware-qualification-step-2" data-layout-box="step-2" x="52" y="296" width="996" height="118" rx="16" fill="#EAF7F5" stroke="#AAD3CC" stroke-width="1.5" />
+  <circle cx="91" cy="329" r="22" fill="#155F91" />
+  <text id="hardware-qualification-text-7" x="91" y="336" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-2" data-max-width="37">
+    <tspan x="91" y="336">2</tspan>
+  </text>
+  <text id="hardware-qualification-text-8" x="130" y="336" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-2" data-max-width="778">
+    <tspan x="130" y="336">Matched nodes</tspan>
+  </text>
+  <text id="hardware-qualification-text-9" x="130" y="368" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-2" data-max-width="776">
+    <tspan x="130" y="368">CPU capabilities</tspan>
+    <tspan x="130" y="395">NIC and storage symmetry</tspan>
+  </text>
+  <svg width="58" height="58" viewBox="0 0 18 18" x="954" y="325" preserveAspectRatio="xMidYMid meet" data-source-icon="general\10837-icon-service-SSD.svg" data-source-sha256="29f359855eb3ba4c7df3ae02e14283ee03cf4ce2fdd0ec9bd8118ef1e070b98d" data-icon-id-prefix="hardware-qualification-icon-2-" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="hardware-qualification-icon-2-b7e818fc-7d3f-4e66-aeef-4fd721e36265" x1="9" y1="13.333" x2="9" y2="1.244" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#0078d4" />
+        <stop offset="0.156" stop-color="#1380da" />
+        <stop offset="0.528" stop-color="#3c91e5" />
+        <stop offset="0.822" stop-color="#559cec" />
+        <stop offset="1" stop-color="#5ea0ef" />
+      </linearGradient>
+    </defs>
+    <title>MsPortalFx.base.images-36</title>
+    <g id="hardware-qualification-icon-2-be136587-6678-4499-b6cd-788b4eed2774">
+      <g>
+        <path d="M17.5,13.333H.5L1.683,2.412a1.308,1.308,0,0,1,1.3-1.168H15.016a1.308,1.308,0,0,1,1.3,1.168Z" fill="url(#hardware-qualification-icon-2-b7e818fc-7d3f-4e66-aeef-4fd721e36265)" />
+        <path d="M.5,13.333h17a0,0,0,0,1,0,0v2.114a1.309,1.309,0,0,1-1.309,1.309H1.809A1.309,1.309,0,0,1,.5,15.447V13.333A0,0,0,0,1,.5,13.333Z" fill="#5ea0ef" />
+        <path d="M15.028,11.835H2.972a.328.328,0,0,1-.326-.363L3.56,3.034a.327.327,0,0,1,.325-.292h10.23a.327.327,0,0,1,.325.292l.914,8.438A.328.328,0,0,1,15.028,11.835Z" fill="#f2f2f2" />
+        <path d="M13.691,15.294V14.5a.294.294,0,0,0-.294-.294h-.035a.294.294,0,0,0-.294.294v.753H9.221V14.5a.294.294,0,0,0-.294-.294H8.892A.294.294,0,0,0,8.6,14.5v.753H4.542V14.51a.294.294,0,0,0-.294-.294H4.213a.294.294,0,0,0-.294.294V15.3a.588.588,0,0,0,.588.588h.035l8.562-.01A.587.587,0,0,0,13.691,15.294Z" fill="#f2f2f2" />
+        <path d="M8.579,7.584H6.441c-.067,0-.121-.033-.121-.074a.05.05,0,0,1,.011-.03L8.9,3.985a.14.14,0,0,1,.11-.043h2.529c.067,0,.121.033.121.074a.057.057,0,0,1-.021.042L8.624,6.793h2.935c.067,0,.121.033.121.074a.064.064,0,0,1-.031.05l-4.88,3.5c-.045.019-.371.205-.211-.078h0Z" fill="#5ea0ef" />
+      </g>
+    </g>
+  </svg>
+  <polyline points="550,422 550,440" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hardware-qualification-arrow)" data-diagram-connector="true" />
+  <rect id="hardware-qualification-step-3" data-layout-box="step-3" x="52" y="448" width="996" height="118" rx="16" fill="#EAF4FC" stroke="#ACCDE3" stroke-width="1.5" />
+  <circle cx="91" cy="481" r="22" fill="#155F91" />
+  <text id="hardware-qualification-text-11" x="91" y="488" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-3" data-max-width="37">
+    <tspan x="91" y="488">3</tspan>
+  </text>
+  <text id="hardware-qualification-text-12" x="130" y="488" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-3" data-max-width="778">
+    <tspan x="130" y="488">Supported software</tspan>
+  </text>
+  <text id="hardware-qualification-text-13" x="130" y="520" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-3" data-max-width="776">
+    <tspan x="130" y="520">OEM firmware and drivers</tspan>
+    <tspan x="130" y="547">Solution Builder Extension (SBE)</tspan>
+  </text>
+  <svg width="58" height="58" viewBox="0 0 18 18" x="954" y="477" preserveAspectRatio="xMidYMid meet" data-source-icon="general\10805-icon-service-Gear.svg" data-source-sha256="cfc08d47427746c4110ac4682473b489867b9657c5edf93f1230058927bc5c7d" data-icon-id-prefix="hardware-qualification-icon-3-" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="hardware-qualification-icon-3-b76ba356-3d29-41f5-a521-8647fe84a8b4" x1="9" y1="297.5" x2="9" y2="280.5" gradientTransform="translate(0 -280)" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#32bedd" />
+        <stop offset="1" stop-color="#32d4f5" />
+      </linearGradient>
+    </defs>
+    <path d="M17.5,9.9V8l-.3-.1-2.1-.7-.5-1.3,1.1-2.2L14.3,2.3l-.3.1-1.9,1-1.3-.5L9.9.5H8L7.9.8l-.7,2-1.3.6L3.7,2.3,2.3,3.7l.1.3,1,1.9L2.9,7.2.5,8.1V10l.3.1,2.1.7.5,1.3L2.3,14.3l1.4,1.4.3-.1,1.9-1,1.3.5.9,2.3H10l.1-.3.7-2.1,1.3-.5,2.2,1.1,1.4-1.4-.1-.2-1-1.9.5-1.3Z" fill="url(#hardware-qualification-icon-3-b76ba356-3d29-41f5-a521-8647fe84a8b4)" />
+    <path d="M12.3,6.5l-.8.7a2.911,2.911,0,0,1-.3,4.2A2.906,2.906,0,0,1,7,11.1,2.91,2.91,0,0,1,7,7.2h.1l.6.5h.1V7.6l-.2-2c0-.1-.1-.1-.2-.1l-1.9.3a.1.1,0,0,0-.1.1h0l.6.5H6v.1H6a3.976,3.976,0,1,0,6.1,5.1A3.63,3.63,0,0,0,12.3,6.5Z" fill="#fff" />
+  </svg>
+  <polyline points="550,574 550,592" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hardware-qualification-arrow)" data-diagram-connector="true" />
+  <rect id="hardware-qualification-step-4" data-layout-box="step-4" x="52" y="600" width="996" height="118" rx="16" fill="#EAF7F5" stroke="#AAD3CC" stroke-width="1.5" />
+  <circle cx="91" cy="633" r="22" fill="#155F91" />
+  <text id="hardware-qualification-text-15" x="91" y="640" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-4" data-max-width="37">
+    <tspan x="91" y="640">4</tspan>
+  </text>
+  <text id="hardware-qualification-text-16" x="130" y="640" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-4" data-max-width="778">
+    <tspan x="130" y="640">Enabled platform controls</tspan>
+  </text>
+  <text id="hardware-qualification-text-17" x="130" y="672" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-4" data-max-width="776">
+    <tspan x="130" y="672">UEFI Secure Boot and hardware TPM 2.0</tspan>
+    <tspan x="130" y="699">Virtualization and SLAT</tspan>
+  </text>
+  <svg id="hardware-qualification-icon-4-e50dc341-b883-4e55-8651-97cc0be130ad" width="58" height="58" viewBox="0 0 18 18" x="954" y="629" preserveAspectRatio="xMidYMid meet" data-source-icon="identity\00321-icon-service-Security.svg" data-source-sha256="b7af2a276558a69fe8b3e64dca6f2bf5dd451401357a88f70d3242022e2e0a77" data-icon-id-prefix="hardware-qualification-icon-4-" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="hardware-qualification-icon-4-a2eeded5-bd74-4136-ade6-a04d837899ca" x1="9" y1="16.795" x2="9" y2="1.205" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#0078d4" />
+        <stop offset="0.064" stop-color="#0a7cd7" />
+        <stop offset="0.338" stop-color="#2e8ce1" />
+        <stop offset="0.594" stop-color="#4897e9" />
+        <stop offset="0.822" stop-color="#589eed" />
+        <stop offset="1" stop-color="#5ea0ef" />
+      </linearGradient>
+    </defs>
+    <path d="M15.5,8.485c0,4.191-5.16,7.566-6.282,8.25a.412.412,0,0,1-.428,0C7.664,16.051,2.5,12.676,2.5,8.485V3.441a.4.4,0,0,1,.4-.4C6.916,2.935,5.992,1.205,9,1.205s2.084,1.73,6.1,1.837a.4.4,0,0,1,.4.4Z" fill="url(#hardware-qualification-icon-4-a2eeded5-bd74-4136-ade6-a04d837899ca)" />
+  </svg>
+  <polyline points="550,726 550,744" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hardware-qualification-arrow)" data-diagram-connector="true" />
+  <rect id="hardware-qualification-step-5" data-layout-box="step-5" x="52" y="752" width="996" height="118" rx="16" fill="#EAF4FC" stroke="#ACCDE3" stroke-width="1.5" />
+  <circle cx="91" cy="785" r="22" fill="#155F91" />
+  <text id="hardware-qualification-text-19" x="91" y="792" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-5" data-max-width="37">
+    <tspan x="91" y="792">5</tspan>
+  </text>
+  <text id="hardware-qualification-text-20" x="130" y="792" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-5" data-max-width="778">
+    <tspan x="130" y="792">Capacity and resilience</tspan>
+  </text>
+  <text id="hardware-qualification-text-21" x="130" y="824" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-5" data-max-width="776">
+    <tspan x="130" y="824">Workload demand</tspan>
+    <tspan x="130" y="851">Maintenance and failure headroom</tspan>
+  </text>
+  <svg version="1.0" x="925" y="753" viewBox="0 0 83.4 83.4" enable-background="new 0 0 83.4 83.4" xml:space="preserve" width="118" height="118" preserveAspectRatio="xMidYMid meet" data-source-icon="CnE_Enterprise\Server (generic).svg" data-source-sha256="ad48653923f33e26b833269fa4426879d4864b1a19282278aaa41885703d3389" data-icon-id-prefix="hardware-qualification-icon-5-" aria-hidden="true" focusable="false">
+    <g id="hardware-qualification-icon-5-Layer_1">
+      <g id="hardware-qualification-icon-5-File_x2C__general">
+        <title>Sheet.1071</title>
+      </g>
+      <g id="hardware-qualification-icon-5-Message">
+	</g>
+      <g id="hardware-qualification-icon-5-Monitor">
+	</g>
+      <g id="hardware-qualification-icon-5-Monitor_running_apps">
+	</g>
+      <g id="hardware-qualification-icon-5-Mouse">
+	</g>
+      <g id="hardware-qualification-icon-5-Network_card">
+	</g>
+      <g id="hardware-qualification-icon-5-Not_allowed">
+	</g>
+      <g id="hardware-qualification-icon-5-Performance">
+	</g>
+      <g id="hardware-qualification-icon-5-Phone">
+	</g>
+      <g id="hardware-qualification-icon-5-Plug_and_play">
+	</g>
+      <g id="hardware-qualification-icon-5-Powershell_script_file">
+	</g>
+      <g id="hardware-qualification-icon-5-Protocol_stack">
+	</g>
+      <g id="hardware-qualification-icon-5-Queue_x2C__general">
+	</g>
+      <g id="hardware-qualification-icon-5-RMS_connector">
+	</g>
+      <g id="hardware-qualification-icon-5-Router">
+	</g>
+      <g id="hardware-qualification-icon-5-Script_file">
+	</g>
+      <g id="hardware-qualification-icon-5-Secure_virtual_machine">
+	</g>
+    </g>
+    <g id="hardware-qualification-icon-5-paths">
+      <g id="hardware-qualification-icon-5-Access_control">
+	</g>
+      <g id="hardware-qualification-icon-5-Azure_active_directory">
+	</g>
+      <g id="hardware-qualification-icon-5-Generic_code">
+	</g>
+      <g id="hardware-qualification-icon-5-Laptop">
+	</g>
+      <g id="hardware-qualification-icon-5-Load_balancer">
+	</g>
+      <g id="hardware-qualification-icon-5-Lock_x2C__protected">
+	</g>
+    </g>
+    <g id="hardware-qualification-icon-5-symbols">
+      <g>
+        <path fill="#2A3282" d="M52.6,19.1h-16c-1.1,0-2,0.9-2,2v39h20v-39C54.6,20,53.7,19.1,52.6,19.1z M51.6,56.1h-14v-2h14V56.1z     M51.6,52.1h-14v-2h14V52.1z M51.6,27.1h-14v-2h14V27.1z" />
+      </g>
+    </g>
+    <g id="hardware-qualification-icon-5-slices">
+</g>
+  </svg>
+  <rect id="hardware-qualification-takeaway" data-layout-box="takeaway" x="52" y="906" width="996" height="112" rx="16" fill="#F4F8FB" stroke="#CFDEE8" stroke-width="1.5" />
+  <text id="hardware-qualification-text-23" x="78" y="941" font-size="22" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="takeaway" data-max-width="944">
+    <tspan x="78" y="941">Sizing is not certification.</tspan>
+  </text>
+  <text id="hardware-qualification-text-24" x="78" y="972" font-size="20" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="takeaway" data-max-width="944">
+    <tspan x="78" y="972">Meets minimums does not mean sized for your workloads.</tspan>
+  </text>
+</svg>

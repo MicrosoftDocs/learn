@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-hardware-identity-readiness.exercise-review-readiness
+metadata:
+  title: Exercise - Review Contoso's Azure Local Readiness
+  description: Evaluate a fictional Azure Local branch proposal, identify readiness blockers, assign corrective actions, and define the acceptance evidence.
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Exercise - Review Contoso's Azure Local readiness
+durationInMinutes: 15
+content: |
+  [!include[](includes/9-exercise-review-readiness.md)]

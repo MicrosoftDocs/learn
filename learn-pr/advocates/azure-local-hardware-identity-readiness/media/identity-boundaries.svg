@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1060" viewBox="0 0 1100 1060" role="img" aria-labelledby="identity-boundaries-title identity-boundaries-desc" style="background-color:white" font-family="Segoe UI, Arial, sans-serif" data-source-icon-root="C:\Azure-Icons" data-content-review-date="2026-10-28" data-diagram="identity-boundaries">
+  <title id="identity-boundaries-title">Separate Azure rights from local authentication</title>
+  <desc id="identity-boundaries-desc">One shared Microsoft Entra ID and Azure RBAC boundary authorizes Azure operations, not local logon. Choose exactly one local authentication model: AD DS or local identity with a dedicated Key Vault. Both choices lead to operations and recovery. Key Vault is not presented as an interactive local-logon service.</desc>
+  <metadata data-provenance="Supplied Azure icon SVG artwork, embedded inline" data-asset-policy="Original artwork; namespaced IDs; no external assets">{"title": "Separate Azure rights from local authentication", "source_icon_root": "C:\\Azure-Icons", "review_date": "2026-10-28", "asset_handling": "Inline original vector artwork; IDs and local references prefixed", "font_stack": "Segoe UI, Arial, sans-serif", "icons": [{"relative_path": "general\\10002-icon-service-Subscriptions.svg", "sha256": "d69843a70bd38eefa5b70a4d0b803502f95cdf061c59aed48b435170a15919b4"}, {"relative_path": "general\\10007-icon-service-Resource-Groups.svg", "sha256": "4d2b2eacb37735849d2e556074ac8564f92fada70672b40985c77ea666e82977"}, {"relative_path": "CnE_Enterprise\\Server directory.svg", "sha256": "48bba1f0a6d2a1a946e889d4d3cb0aa3518eee083b9bd25d61ce7031a071e180"}, {"relative_path": "security\\10245-icon-service-Key-Vaults.svg", "sha256": "712b426f54f0fc50d0816dc79df709daa7ac5f93ccaf4e9b3527f627f6e9ad97"}, {"relative_path": "general\\10805-icon-service-Gear.svg", "sha256": "cfc08d47427746c4110ac4682473b489867b9657c5edf93f1230058927bc5c7d"}]}</metadata>
+  <rect id="identity-boundaries-white-background" x="0" y="0" width="1100" height="1060" fill="#FFFFFF" />
+  <defs>
+    <marker id="identity-boundaries-arrow" viewBox="0 0 8 8" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#51798F" />
+    </marker>
+  </defs>
+  <text id="identity-boundaries-text-1" x="52" y="58" font-size="30" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="canvas" data-max-width="996">
+    <tspan x="52" y="58">Separate Azure rights from local authentication</tspan>
+  </text>
+  <text id="identity-boundaries-text-2" x="52" y="96" font-size="20" font-weight="400" fill="#405E72" text-anchor="start" data-diagram-text="true" data-layout-owner="canvas" data-max-width="996">
+    <tspan x="52" y="96">Reading order: 1 shared Azure boundary, then choose 2A or 2B, then 3 operations.</tspan>
+  </text>
+  <rect id="identity-boundaries-step-1" data-layout-box="step-1" x="52" y="144" width="996" height="176" rx="16" fill="#EAF4FC" stroke="#ACCDE3" stroke-width="1.5" />
+  <circle cx="91" cy="179" r="22" fill="#155F91" />
+  <text id="identity-boundaries-text-3" x="91" y="186" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-1" data-max-width="37">
+    <tspan x="91" y="186">1</tspan>
+  </text>
+  <text id="identity-boundaries-text-4" x="130" y="186" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-1" data-max-width="745">
+    <tspan x="130" y="186">Microsoft Entra ID + Azure RBAC</tspan>
+  </text>
+  <text id="identity-boundaries-text-5" x="130" y="224" font-size="22" font-weight="600" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-1" data-max-width="845">
+    <tspan x="130" y="224">Tenant / subscription / resource group</tspan>
+  </text>
+  <text id="identity-boundaries-text-6" x="130" y="258" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-1" data-max-width="850">
+    <tspan x="130" y="258">Role assignments authorize Azure resource operations.</tspan>
+  </text>
+  <text id="identity-boundaries-text-7" x="130" y="292" font-size="21" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-1" data-max-width="850">
+    <tspan x="130" y="292">They do not grant local logon.</tspan>
+  </text>
+  <svg id="identity-boundaries-icon-1-bc18bade-5481-447e-a959-659d72346474" width="42" height="42" viewBox="0 0 18 18" x="914" y="165" preserveAspectRatio="xMidYMid meet" data-source-icon="general\10002-icon-service-Subscriptions.svg" data-source-sha256="d69843a70bd38eefa5b70a4d0b803502f95cdf061c59aed48b435170a15919b4" data-icon-id-prefix="identity-boundaries-icon-1-" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="identity-boundaries-icon-1-a445c717-9d75-44c7-ba6b-0d8f2383e560" cx="-36.63" cy="17.12" r="11.18" gradientTransform="translate(41.88 -7.4) scale(0.94 0.94)" gradientUnits="userSpaceOnUse">
+        <stop offset="0.27" stop-color="#ffd70f" />
+        <stop offset="0.49" stop-color="#ffcb12" />
+        <stop offset="0.88" stop-color="#feac19" />
+        <stop offset="1" stop-color="#fea11b" />
+      </radialGradient>
+    </defs>
+    <title>Icon-general-2</title>
+    <path id="identity-boundaries-icon-1-e3d1e58c-f78e-4fb5-9857-0c9331da9979" d="M13.56,7.19a2.07,2.07,0,0,0,0-2.93h0L10,.69a2.06,2.06,0,0,0-2.92,0h0L3.52,4.26a2.09,2.09,0,0,0,0,2.93l3,3a.61.61,0,0,1,.17.41v5.52a.7.7,0,0,0,.2.5l1.35,1.35a.45.45,0,0,0,.66,0l1.31-1.31h0l.77-.77a.26.26,0,0,0,0-.38l-.55-.56a.29.29,0,0,1,0-.42l.55-.56a.26.26,0,0,0,0-.38L10.4,13a.28.28,0,0,1,0-.41L11,12a.26.26,0,0,0,0-.38l-.77-.78v-.28Zm-5-5.64A1.18,1.18,0,1,1,7.37,2.73,1.17,1.17,0,0,1,8.54,1.55Z" fill="url(#identity-boundaries-icon-1-a445c717-9d75-44c7-ba6b-0d8f2383e560)" />
+    <path id="identity-boundaries-icon-1-a21a8f7a-61cc-4035-8449-e5c8fe4d4d5e" d="M7.62,16.21h0A.25.25,0,0,0,8,16V11.55a.27.27,0,0,0-.11-.22h0a.25.25,0,0,0-.39.22V16A.27.27,0,0,0,7.62,16.21Z" fill="#ff9300" opacity="0.75" />
+    <rect id="identity-boundaries-icon-1-ecd3189c-fb1e-4a0e-a2b6-ba2f11dda484" x="5.69" y="5.45" width="5.86" height="0.69" rx="0.32" fill="#ff9300" opacity="0.75" />
+    <rect id="identity-boundaries-icon-1-a1949a3c-4818-4bd1-b236-0d970b92fc62" x="5.69" y="6.57" width="5.86" height="0.69" rx="0.32" fill="#ff9300" opacity="0.75" />
+  </svg>
+  <svg id="identity-boundaries-icon-2-a685cc8c-32ba-4d54-91da-3a125cb58ded" width="42" height="42" viewBox="0 0 18 18" x="978" y="165" preserveAspectRatio="xMidYMid meet" data-source-icon="general\10007-icon-service-Resource-Groups.svg" data-source-sha256="4d2b2eacb37735849d2e556074ac8564f92fada70672b40985c77ea666e82977" data-icon-id-prefix="identity-boundaries-icon-2-" aria-hidden="true" focusable="false">
+    <title>Icon-general-7</title>
+    <g>
+      <g>
+        <path d="M.5,15.08a.16.16,0,0,0,.08.14l1.16.65L3.7,17a.17.17,0,0,0,.23-.06l.66-1.12a.16.16,0,0,0-.06-.21l-2.3-1.3a.17.17,0,0,1-.08-.14V3.85a.16.16,0,0,1,.08-.14l2.3-1.3a.16.16,0,0,0,.06-.21L3.93,1.08A.17.17,0,0,0,3.7,1L1.78,2.11l-1.2.67a.16.16,0,0,0-.08.14V15.08Z" fill="#949494" />
+        <path d="M2.14,3.77l.06-.06,2.3-1.3a.14.14,0,0,0,.06-.21L3.9,1.08A.15.15,0,0,0,3.68,1L1.75,2.11.56,2.78s-.05,0-.06.06l.9.51Z" fill="#a3a3a3" />
+        <path d="M4.5,15.59l-2.3-1.3a.22.22,0,0,1-.07-.09l-1.62,1,.05,0,1.15.65,2,1.11a.15.15,0,0,0,.22-.06l.66-1.12A.14.14,0,0,0,4.5,15.59Z" fill="#a3a3a3" />
+      </g>
+      <path d="M17.5,15.08a.16.16,0,0,1-.08.14l-1.16.65L14.3,17a.17.17,0,0,1-.23-.06l-.66-1.12a.16.16,0,0,1,.06-.21l2.3-1.3a.17.17,0,0,0,.08-.14V3.85a.16.16,0,0,0-.08-.14l-2.3-1.3a.16.16,0,0,1-.06-.21l.66-1.12A.17.17,0,0,1,14.3,1l1.92,1.09,1.2.67a.16.16,0,0,1,.08.14V15.08Z" fill="#949494" />
+      <path d="M15.86,3.77l-.06-.06-2.3-1.3a.14.14,0,0,1-.06-.21l.66-1.12A.15.15,0,0,1,14.32,1l1.93,1.09,1.19.67s0,0,.06.06l-.9.51Z" fill="#a3a3a3" />
+      <path d="M13.5,15.59l2.3-1.3a.22.22,0,0,0,.07-.09l1.62,1,0,0-1.15.65-2,1.11a.15.15,0,0,1-.22-.06l-.66-1.12A.14.14,0,0,1,13.5,15.59Z" fill="#a3a3a3" />
+      <polygon points="14.31 5.93 14.31 12.07 8.99 15.16 8.99 9.01 14.31 5.93" fill="#32bedd" />
+      <polygon points="14.31 5.93 9 9.02 3.68 5.93 9 2.84 14.31 5.93" fill="#9cebff" />
+      <polygon points="8.99 9.02 8.99 15.16 3.68 12.07 3.68 5.93 8.99 9.02" fill="#50e6ff" />
+      <polygon points="3.68 12.07 8.99 9.01 8.99 15.16 3.68 12.07" fill="#9cebff" />
+      <polygon points="14.31 12.07 8.99 9.01 8.99 15.16 14.31 12.07" fill="#50e6ff" />
+    </g>
+  </svg>
+  <polyline points="550,328 550,350" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-diagram-connector="true" />
+  <polyline points="289,350 811,350" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-diagram-connector="true" />
+  <polyline points="289,350 289,422" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#identity-boundaries-arrow)" data-diagram-connector="true" />
+  <polyline points="811,350 811,422" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#identity-boundaries-arrow)" data-diagram-connector="true" />
+  <text id="identity-boundaries-text-8" x="550" y="393" font-size="20" font-weight="700" fill="#155F91" text-anchor="middle" data-diagram-text="true" data-layout-owner="canvas" data-max-width="420">
+    <tspan x="550" y="393">CHOOSE ONE — NOT BOTH</tspan>
+  </text>
+  <rect id="identity-boundaries-step-2A" data-layout-box="step-2A" x="52" y="430" width="474" height="250" rx="16" fill="#EAF4FC" stroke="#ACCDE3" stroke-width="1.5" />
+  <circle cx="91" cy="470" r="24" fill="#155F91" />
+  <text id="identity-boundaries-text-9" x="91" y="477" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-2A" data-max-width="41">
+    <tspan x="91" y="477">2A</tspan>
+  </text>
+  <text id="identity-boundaries-text-10" x="130" y="478" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-2A" data-max-width="280">
+    <tspan x="130" y="478">AD DS</tspan>
+  </text>
+  <text id="identity-boundaries-text-11" x="78" y="536" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-2A" data-max-width="422">
+    <tspan x="78" y="536">Dedicated organizational unit (OU)</tspan>
+    <tspan x="78" y="570">Unique lifecycle account</tspan>
+    <tspan x="78" y="604">Domain, DNS and time dependencies</tspan>
+    <tspan x="78" y="638">Required delegation</tspan>
+  </text>
+  <svg version="1.0" x="414" y="426" viewBox="0 0 83.4 83.4" enable-background="new 0 0 83.4 83.4" xml:space="preserve" width="108" height="108" preserveAspectRatio="xMidYMid meet" data-source-icon="CnE_Enterprise\Server directory.svg" data-source-sha256="48bba1f0a6d2a1a946e889d4d3cb0aa3518eee083b9bd25d61ce7031a071e180" data-icon-id-prefix="identity-boundaries-icon-3-" aria-hidden="true" focusable="false">
+    <g id="identity-boundaries-icon-3-Layer_1">
+      <g id="identity-boundaries-icon-3-File_x2C__general">
+        <title>Sheet.1071</title>
+      </g>
+      <g id="identity-boundaries-icon-3-Message">
+	</g>
+      <g id="identity-boundaries-icon-3-Monitor">
+	</g>
+      <g id="identity-boundaries-icon-3-Monitor_running_apps">
+	</g>
+      <g id="identity-boundaries-icon-3-Mouse">
+	</g>
+      <g id="identity-boundaries-icon-3-Network_card">
+	</g>
+      <g id="identity-boundaries-icon-3-Not_allowed">
+	</g>
+      <g id="identity-boundaries-icon-3-Performance">
+	</g>
+      <g id="identity-boundaries-icon-3-Phone">
+	</g>
+      <g id="identity-boundaries-icon-3-Plug_and_play">
+	</g>
+      <g id="identity-boundaries-icon-3-Powershell_script_file">
+	</g>
+      <g id="identity-boundaries-icon-3-Protocol_stack">
+	</g>
+      <g id="identity-boundaries-icon-3-Queue_x2C__general">
+	</g>
+      <g id="identity-boundaries-icon-3-RMS_connector">
+	</g>
+      <g id="identity-boundaries-icon-3-Router">
+	</g>
+      <g id="identity-boundaries-icon-3-Script_file">
+	</g>
+      <g id="identity-boundaries-icon-3-Secure_virtual_machine">
+	</g>
+      <g>
+        <g>
+          <path fill="#2A3282" d="M43.7,21.2h-16c-1.1,0-2,0.9-2,2v39h11v-4h-8v-2h8v-2h-8v-2h8v-6h1v-1h6c0.6,0,1,0,2,0v-22     C45.7,22.1,44.8,21.2,43.7,21.2z M42.7,29.2h-14v-2h14V29.2z" />
+        </g>
+        <g>
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#2A3282" d="M44.2,50.1c0.7,0,1.3,0.6,1.3,1.2c0,0.7-0.6,1.2-1.3,1.2     c-0.7,0-1.3-0.6-1.3-1.2C43,50.6,43.5,50.1,44.2,50.1L44.2,50.1z" />
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#2A3282" d="M46.5,54.4c-0.2-1-0.3-1.1-1.3-1.3c0,0,0,0-0.1,0     c-0.1,0-0.2,0-0.2,0c-0.1,0.3-0.6,1-0.7,1.2c0,0,0,0,0,0h0h0c0,0,0,0,0,0C44,54,43.5,53.3,43.4,53c0,0-0.1,0-0.2,0     c0,0-0.1,0-0.1,0c-1,0.2-1.1,0.3-1.3,1.3c0,0.2,0,0.3,0,0.4c0,0.4,1.1,0.6,2.3,0.6h0h0c1.3,0,2.3-0.3,2.3-0.6     C46.6,54.7,46.6,54.6,46.5,54.4L46.5,54.4z" />
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#2A3282" d="M52.1,50c0.7,0,1.3,0.5,1.3,1.2c0,0.7-0.6,1.2-1.3,1.2     c-0.7,0-1.3-0.5-1.3-1.2C50.9,50.6,51.4,50,52.1,50L52.1,50z" />
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#2A3282" d="M54.5,54.4c-0.2-1-0.3-1.1-1.3-1.3c0,0,0,0-0.1,0     c-0.1,0-0.2,0-0.2,0c-0.1,0.3-0.6,1-0.8,1.2c0,0,0,0,0,0h0h0c0,0,0,0,0,0C52,54,51.4,53.3,51.3,53c0,0-0.1,0-0.2,0     c0,0-0.1,0-0.1,0c-1,0.2-1.1,0.3-1.3,1.3c0,0.2,0,0.3,0,0.3c0,0.4,1.1,0.6,2.4,0.6h0h0c1.3,0,2.3-0.3,2.4-0.6     C54.5,54.7,54.5,54.6,54.5,54.4L54.5,54.4z" />
+          <rect x="49.7" y="57" fill-rule="evenodd" clip-rule="evenodd" fill="#2A3282" width="5" height="1" />
+          <rect x="49.7" y="59" fill-rule="evenodd" clip-rule="evenodd" fill="#2A3282" width="5" height="1" />
+          <rect x="41.7" y="57" fill-rule="evenodd" clip-rule="evenodd" fill="#2A3282" width="5" height="1" />
+          <rect x="41.7" y="59" fill-rule="evenodd" clip-rule="evenodd" fill="#2A3282" width="5" height="1" />
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#2A3282" d="M57.7,51.2v-3h-1v-1h-4.8c-1.2,0-2.5,0.4-3.5,0.9H48     c-1.1-0.5-2.3-0.9-3.5-0.9h-4.8v1h-1v14h18.4V60h-0.5v-0.8h1v-3h-1v-1h1v-2.9h-1v-1.1H57.7z M44.7,61.1h-4.3V47.9h4.3     c1.1,0,2.3,0.4,3.3,0.9v13.1C46.9,61.4,45.8,61.1,44.7,61.1z M55.9,61.1h-4.3c-1.1,0-2.3,0.2-3.3,0.7V48.8c1-0.5,2.1-0.9,3.3-0.9     h4.3V61.1z" />
+        </g>
+      </g>
+    </g>
+    <g id="identity-boundaries-icon-3-paths">
+      <g id="identity-boundaries-icon-3-Access_control">
+	</g>
+      <g id="identity-boundaries-icon-3-Azure_active_directory">
+	</g>
+      <g id="identity-boundaries-icon-3-Generic_code">
+	</g>
+      <g id="identity-boundaries-icon-3-Laptop">
+	</g>
+      <g id="identity-boundaries-icon-3-Load_balancer">
+	</g>
+      <g id="identity-boundaries-icon-3-Lock_x2C__protected">
+	</g>
+    </g>
+    <g id="identity-boundaries-icon-3-symbols">
+</g>
+    <g id="identity-boundaries-icon-3-slices">
+</g>
+  </svg>
+  <rect id="identity-boundaries-step-2B" data-layout-box="step-2B" x="576" y="430" width="472" height="250" rx="16" fill="#EAF7F5" stroke="#AAD3CC" stroke-width="1.5" />
+  <circle cx="615" cy="470" r="24" fill="#126D69" />
+  <text id="identity-boundaries-text-15" x="615" y="477" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-2B" data-max-width="41">
+    <tspan x="615" y="477">2B</tspan>
+  </text>
+  <text id="identity-boundaries-text-16" x="654" y="478" font-size="22" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-2B" data-max-width="307">
+    <tspan x="654" y="478">Local identity + Key Vault</tspan>
+  </text>
+  <text id="identity-boundaries-text-17" x="602" y="536" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-2B" data-max-width="420">
+    <tspan x="602" y="536">Same non-built-in local admin</tspan>
+    <tspan x="602" y="570">on every node</tspan>
+    <tspan x="602" y="604">Deployment-configured certificates</tspan>
+    <tspan x="602" y="638">Dedicated cluster vault</tspan>
+  </text>
+  <svg id="identity-boundaries-icon-4-bc93169a-24c4-4686-9f37-c7e4f53b3d34" width="48" height="48" viewBox="0 0 18 18" x="976" y="452" preserveAspectRatio="xMidYMid meet" data-source-icon="security\10245-icon-service-Key-Vaults.svg" data-source-sha256="712b426f54f0fc50d0816dc79df709daa7ac5f93ccaf4e9b3527f627f6e9ad97" data-icon-id-prefix="identity-boundaries-icon-4-" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="identity-boundaries-icon-4-fb114c93-7c16-4540-899a-0796041629e6" cx="9" cy="9" r="8.5" gradientUnits="userSpaceOnUse">
+        <stop offset="0.18" stop-color="#5ea0ef" />
+        <stop offset="0.56" stop-color="#5c9fee" />
+        <stop offset="0.69" stop-color="#559ced" />
+        <stop offset="0.78" stop-color="#4a97e9" />
+        <stop offset="0.86" stop-color="#3990e4" />
+        <stop offset="0.93" stop-color="#2387de" />
+        <stop offset="0.99" stop-color="#087bd6" />
+        <stop offset="1" stop-color="#0078d4" />
+      </radialGradient>
+      <radialGradient id="identity-boundaries-icon-4-ec478bd3-5b38-4e7f-b661-11f355578bff" cx="38.95" cy="182.07" r="9.88" gradientTransform="translate(-28.71 -163.24) scale(0.94 0.94)" gradientUnits="userSpaceOnUse">
+        <stop offset="0.27" stop-color="#ffd70f" />
+        <stop offset="0.49" stop-color="#ffcb12" />
+        <stop offset="0.88" stop-color="#feac19" />
+        <stop offset="1" stop-color="#fea11b" />
+      </radialGradient>
+    </defs>
+    <title>Icon-security-245</title>
+    <path id="identity-boundaries-icon-4-aacf8311-a317-400f-b613-74bd00da5ce3" d="M9,.5A8.5,8.5,0,1,0,17.5,9,8.51,8.51,0,0,0,9,.5ZM9,16.34A7.34,7.34,0,1,1,16.34,9,7.34,7.34,0,0,1,9,16.34Z" fill="url(#identity-boundaries-icon-4-fb114c93-7c16-4540-899a-0796041629e6)" />
+    <circle cx="9" cy="9" r="7.34" fill="#fff" />
+    <g>
+      <path id="identity-boundaries-icon-4-bd983c41-db73-40ec-a4f4-da1213fc9924" d="M13.44,7.33a1.84,1.84,0,0,0,0-2.59h0L10.29,1.58a1.83,1.83,0,0,0-2.58,0h0L4.56,4.74a1.84,1.84,0,0,0,0,2.59L7.18,10a.51.51,0,0,1,.15.36v4.88a.63.63,0,0,0,.18.44l1.2,1.2a.41.41,0,0,0,.58,0l1.16-1.16h0l.68-.68a.25.25,0,0,0,0-.34l-.49-.49a.27.27,0,0,1,0-.37l.49-.49a.25.25,0,0,0,0-.34l-.49-.49a.27.27,0,0,1,0-.37l.49-.49a.25.25,0,0,0,0-.34l-.68-.69v-.25ZM9,2.35A1,1,0,0,1,9,4.42,1,1,0,1,1,9,2.35Z" fill="url(#identity-boundaries-icon-4-ec478bd3-5b38-4e7f-b661-11f355578bff)" />
+      <path id="identity-boundaries-icon-4-ad2e7e44-9bfd-4775-8bf4-8ef26a544921" d="M8.18,15.3h0a.23.23,0,0,0,.38-.17v-4a.24.24,0,0,0-.11-.2h0a.22.22,0,0,0-.34.2v4A.28.28,0,0,0,8.18,15.3Z" fill="#ff9300" opacity="0.75" />
+      <rect id="identity-boundaries-icon-4-a996fbff-3936-4b24-b407-369336c143ba" x="6.48" y="5.79" width="5.17" height="0.61" rx="0.28" fill="#ff9300" opacity="0.75" />
+      <rect id="identity-boundaries-icon-4-bb12d31c-3352-4a18-87dd-a169a4a8721d" x="6.48" y="6.78" width="5.17" height="0.61" rx="0.28" fill="#ff9300" opacity="0.75" />
+    </g>
+  </svg>
+  <polyline points="289,688 289,718 811,718 811,688" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-diagram-connector="true" />
+  <polyline points="550,718 550,750" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#identity-boundaries-arrow)" data-diagram-connector="true" />
+  <rect id="identity-boundaries-step-3" data-layout-box="step-3" x="52" y="758" width="996" height="152" rx="16" fill="#EAF7F5" stroke="#AAD3CC" stroke-width="1.5" />
+  <circle cx="91" cy="793" r="22" fill="#155F91" />
+  <text id="identity-boundaries-text-21" x="91" y="800" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-3" data-max-width="37">
+    <tspan x="91" y="800">3</tspan>
+  </text>
+  <text id="identity-boundaries-text-22" x="130" y="800" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-3" data-max-width="775">
+    <tspan x="130" y="800">Operate and recover</tspan>
+  </text>
+  <text id="identity-boundaries-text-23" x="130" y="837" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-3" data-max-width="775">
+    <tspan x="130" y="837">Retain lifecycle access; validate DNS/time and backup.</tspan>
+    <tspan x="130" y="870">Workload identity remains a separate decision.</tspan>
+  </text>
+  <svg width="58" height="58" viewBox="0 0 18 18" x="954" y="796" preserveAspectRatio="xMidYMid meet" data-source-icon="general\10805-icon-service-Gear.svg" data-source-sha256="cfc08d47427746c4110ac4682473b489867b9657c5edf93f1230058927bc5c7d" data-icon-id-prefix="identity-boundaries-icon-5-" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="identity-boundaries-icon-5-b76ba356-3d29-41f5-a521-8647fe84a8b4" x1="9" y1="297.5" x2="9" y2="280.5" gradientTransform="translate(0 -280)" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#32bedd" />
+        <stop offset="1" stop-color="#32d4f5" />
+      </linearGradient>
+    </defs>
+    <path d="M17.5,9.9V8l-.3-.1-2.1-.7-.5-1.3,1.1-2.2L14.3,2.3l-.3.1-1.9,1-1.3-.5L9.9.5H8L7.9.8l-.7,2-1.3.6L3.7,2.3,2.3,3.7l.1.3,1,1.9L2.9,7.2.5,8.1V10l.3.1,2.1.7.5,1.3L2.3,14.3l1.4,1.4.3-.1,1.9-1,1.3.5.9,2.3H10l.1-.3.7-2.1,1.3-.5,2.2,1.1,1.4-1.4-.1-.2-1-1.9.5-1.3Z" fill="url(#identity-boundaries-icon-5-b76ba356-3d29-41f5-a521-8647fe84a8b4)" />
+    <path d="M12.3,6.5l-.8.7a2.911,2.911,0,0,1-.3,4.2A2.906,2.906,0,0,1,7,11.1,2.91,2.91,0,0,1,7,7.2h.1l.6.5h.1V7.6l-.2-2c0-.1-.1-.1-.2-.1l-1.9.3a.1.1,0,0,0-.1.1h0l.6.5H6v.1H6a3.976,3.976,0,1,0,6.1,5.1A3.63,3.63,0,0,0,12.3,6.5Z" fill="#fff" />
+  </svg>
+  <rect id="identity-boundaries-tool-support" data-layout-box="tool-support" x="52" y="936" width="996" height="96" rx="16" fill="#F4F8FB" stroke="#CFDEE8" stroke-width="1.5" />
+  <text id="identity-boundaries-text-25" x="78" y="972" font-size="20" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="tool-support" data-max-width="944">
+    <tspan x="78" y="972">Local identity: PowerShell / Azure portal / Azure Monitor supported;</tspan>
+    <tspan x="78" y="1002">Windows Admin Center unsupported.</tspan>
+  </text>
+</svg>
