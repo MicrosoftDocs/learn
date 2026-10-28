@@ -1,67 +1,59 @@
-Integrating **Microsoft Foundry Agents** with **Microsoft Fabric data agents** enables organizations to combine data analysis and conversational AI. By connecting these two services, you can expose enterprise data through interactive Q&A, allowing users to explore and retrieve information via natural language.
+Connect a Microsoft Foundry agent to your published Microsoft Fabric data agents through **Fabric IQ (OneLake Catalog)**. This integration lets your Foundry agent answer natural language questions using enterprise data in Fabric.
 
-## Why integrate Microsoft Foundry with Fabric Data Agents?
+## Connect through Fabric IQ
 
-Integrating these services allows users to **interact with enterprise data** through chat interfaces, making data exploration more accessible. This approach helps users obtain **data-driven insights** that can support decision-making. 
+Fabric IQ exposes each selected data agent as a **Model Context Protocol (MCP)** endpoint. MCP is a standard for how an agent calls a tool. Your Foundry agent uses its instructions to decide which data agent to call, then uses the returned answer to respond to you.
 
-With **Identity Passthrough** (On-Behalf-Of) authorization, all data access is governed by the user’s permissions, supporting enterprise security and compliance. 
+With this integration, you:
 
-The integration also reduces the steps required to **connect AI agents to enterprise data**, lowering development effort and complexity.
+- Select published data agents that you have access to by name from the OneLake Catalog.
+- Connect multiple data agents to one Foundry agent, such as separate agents for sales and customer support.
+- Guide tool selection by naming each data agent and describing the questions it should answer.
 
 > [!NOTE]
-> This integration is currently in preview.
+> The Fabric IQ integration with Microsoft Foundry is currently in preview.
 
-## Prerequisites
+## Prepare access and permissions
 
-Before you begin, make sure that:
+With your Fabric data agent configured, check these requirements for the Foundry integration:
 
-- You have created and **published** a Fabric data agent endpoint.
-- Developers and end users in Microsoft Foundry have at least the **Foundry User** Azure RBAC role assigned (previously named **Azure AI User**).
-- Developers and end users have at least **read access** to the Fabric data agent.
-- Developers and end users have the minimum permission on each underlying data source:
+- Your workspace is in a [region that supports the full Fabric stack](/fabric/admin/region-availability).
+- Your Foundry project has a deployed model.
+- Your Fabric and Foundry agents are in the same tenant, and you sign in to both services with the same account.
 
-  | Data source | Minimum permission |
-  |---|---|
-  | Power BI semantic model | **Read**. Row-level security and column-level security continue to apply. |
-  | Lakehouse | Read on the lakehouse item |
-  | Warehouse | Read (SELECT on relevant tables) |
-  | KQL database | Reader role on the database |
+Microsoft Foundry uses Azure role-based access control (RBAC). In an existing project, the required role depends on your task:
+
+| Task | Required role |
+|---|---|
+| Build and test a Foundry agent | **Foundry User** |
+| Create the connection to Fabric IQ | **Foundry Project Manager** |
+
+Assign **Foundry User** to your account, the agent's runtime identity, and any user identity that participates in the sign-in flow. The Fabric data agent connection uses **delegated user authentication**, also called identity passthrough: queries run as the signed-in user, and Fabric applies that user's data permissions.
 
 > [!IMPORTANT]
-> This integration uses **identity passthrough** (On-Behalf-Of). The agent runs queries using the signed-in user's identity. Service principal authentication isn't supported for the Fabric data agent.
+> Responses returned by Fabric data agents can leave Fabric's compliance boundary or geographic region. Microsoft Foundry processes and stores those responses according to its applicable terms and data handling policies.
 
-## How to integrate Microsoft Foundry with Fabric Data Agents?
+## Add data agents in the Foundry portal
 
-### 1. Create and publish a Fabric Data Agent
+1. Sign in to the [Microsoft Foundry portal](https://ai.azure.com/), select your project, and select **Build**. Open an existing agent, or select **New agent** > **Build an agent** to create one. On its **Playground** tab, select your deployed model.
+1. In the **Tools** section, select **Add**, and then select **Browse all tools**.
+1. On the **Configured** tab, select **Fabric IQ (OneLake Catalog)**, and then select **Add tool**.
 
-Build your Fabric data agent and publish it to obtain an endpoint. This endpoint is used to connect with the Microsoft Foundry Agent.
+   [![Screenshot of the Foundry tool selector showing Fabric IQ (OneLake Catalog) on the Configured tab.](../media/foundry-select-fabric-iq-tool.png)](../media/foundry-select-fabric-iq-tool.png#lightbox)
 
-### 2. Configure access and permissions
+1. In the OneLake Catalog, select **Filter**. Under **Type**, select **Data agent**. Only published data agents that you have access to appear.
 
-Ensure all users and developers have the necessary roles and permissions as outlined in the prerequisites.
+   [![Screenshot of the OneLake Catalog with the Filter menu open and Data agent available under Type.](../media/foundry-filter-data-agents.png)](../media/foundry-filter-data-agents.png#lightbox)
 
-### 3. Update agent instructions
+1. Select your data agent, and then select **Add**. It appears in **Tools** as **Fabric IQ** with the data agent's name. To add another data agent, repeat the catalog selection process.
+1. In **Instructions**, name each connected data agent and describe when to use it. For example, if you connected sales and support data agents:
 
-In Microsoft Foundry, update your agent’s instructions to describe the Fabric data agent and the type of data it provides. For example:
+   > Use the Sales Insights Agent for questions about revenue, orders, and products. Use the Support Insights Agent for questions about support tickets. If a question needs both, call both and combine their answers.
 
-_“For customer and product sales related data, please use the Fabric tool.”_
+1. Select **Save**, then send representative questions in the playground. Check that each question invokes the intended data agent and returns only authorized data. If you connected multiple data agents, also test a question that needs more than one. Revise the instructions, save, and retest if tool selection is incorrect.
 
-### 4. Add the Fabric tool to your agent
+If a data agent is missing from the catalog, confirm that it's published, shared with your account, and in the same tenant. For detailed setup guidance, see [Add Fabric data agents to a Foundry agent with Fabric IQ](/fabric/data-science/data-agent-foundry-fabric-iq).
 
-In the Microsoft Foundry portal, navigate to your agent’s setup screen.
-Under the “Knowledge” section, select “Add” and choose “Microsoft Fabric.”
+## Connect through code
 
-> [![Screenshot of selecting the add knowledge button in Microsoft Foundry agent.](../media/ai-foundry-agent-add-knowledge.png)](../media/ai-foundry-agent-add-knowledge.png#lightbox)
-
-Follow the prompts to add the Fabric tool. You can only add one Fabric tool per agent.
-
-To connect, you need the workspace-id and artifact-id from your published Fabric data agent endpoint (for example, `https://fabric.microsoft.com/groups/<workspace_id>/aiskills/<artifact-id>`).
-
-> [![Screenshot of creating a connection in Microsoft Foundry agent.](../media/ai-foundry-agent-create-connection.png)](../media/ai-foundry-agent-create-connection.png#lightbox)
-
-Add these values as a new connection, marking them as secret if necessary.
-Once added, you can select from existing connections for future use.
-
-### 5. Test the integration
-
-Once configured, test your agent by sending queries. Select **Try in playground** to test its performance. The agent determines when to leverage the Fabric data agent and generate responses based on the data the user is authorized to access.
+To connect an application through code, use Fabric IQ with the data agent's MCP endpoint and a Fabric IQ project connection resource ID. See [Connect agents to Microsoft Fabric with Fabric IQ](/azure/foundry/agents/how-to/tools/fabric-iq) for SDK and REST examples.

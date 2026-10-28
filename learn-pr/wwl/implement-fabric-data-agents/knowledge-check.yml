@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 10/12/2026
+  ms.date: 10/28/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -51,14 +51,25 @@ quiz:
     - content: "To increase the number of data sources the agent can access."
       isCorrect: false
       explanation: "Incorrect. Example queries don't affect data source access."
-  - content: "When integrating Microsoft Foundry with Microsoft Fabric Data Agents, what is required for secure data access?"
+  - content: "Which statement correctly describes permissions for the Fabric IQ integration in an existing Microsoft Foundry project?"
     choices:
-    - content: "Users must have the Foundry User Azure RBAC role, read access to the data agent, and the minimum permission on each underlying data source, such as Read on a Power BI semantic model."
+    - content: "Foundry User supports building and testing agents, Foundry Project Manager is required to create the Fabric IQ connection, and users need access to the data agent and its underlying sources."
       isCorrect: true
-      explanation: "Correct. The Foundry User Azure RBAC role (previously Azure AI User) is required in Foundry. Each underlying source also requires minimum permissions, such as Read on a Power BI semantic model."
-    - content: "Users only need access to the Azure portal."
+      explanation: "Correct. Foundry roles depend on the task. The Fabric data agent connection uses delegated user authentication, so Fabric also checks the signed-in user's data permissions."
+    - content: "Foundry User alone grants permission to create the Fabric IQ connection and read all connected Fabric data."
       isCorrect: false
-      explanation: "Incorrect. More specific permissions are required."
-    - content: "No permissions are needed if the agent is published."
+      explanation: "Incorrect. Creating the connection requires Foundry Project Manager, and Foundry roles don't grant access to Fabric data."
+    - content: "Publishing the Fabric data agent gives all Foundry project users access to its underlying sources."
       isCorrect: false
-      explanation: "Incorrect. Permissions are always required for secure access."
+      explanation: "Incorrect. Publishing doesn't grant data permissions. Users still need access to the agent and its underlying sources."
+  - content: "How do you add published Fabric data agents to a Foundry agent through the portal with Fabric IQ?"
+    choices:
+    - content: "Add Fabric IQ (OneLake Catalog) in Tools, filter for Data agent, and select published agents that you have access to."
+      isCorrect: true
+      explanation: "Correct. The catalog lets you select accessible published data agents by name. Repeat the process to add multiple data agents, and write instructions that guide the Foundry agent to the appropriate tool."
+    - content: "Select Fabric IQ to automatically connect every data agent in the tenant."
+      isCorrect: false
+      explanation: "Incorrect. You select individual published data agents that you have access to from the OneLake Catalog. Adding Fabric IQ doesn't automatically connect every data agent."
+    - content: "Add an unpublished data agent from the catalog and let Foundry publish it automatically."
+      isCorrect: false
+      explanation: "Incorrect. Only published Fabric data agents that you have access to appear in the catalog."
