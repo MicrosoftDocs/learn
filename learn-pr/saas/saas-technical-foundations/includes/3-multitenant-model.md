@@ -79,5 +79,5 @@ Additionally, service providers can check if downstream services provide control
 
 Each service may have its own specific approaches and best practices to address the noisy neighbor problem.
 
-You can find more information in the following documentation: [Noisy Neighbor antipattern - Azure Architecture Center | Microsoft Learn](https://learn.microsoft.com/azure/architecture/antipatterns/noisy-neighbor/noisy-neighbor)
+You can find more information in the following documentation: [Noisy Neighbor antipattern - Azure Architecture Center | Microsoft Learn](/azure/architecture/antipatterns/noisy-neighbor/noisy-neighbor)
 

@@ -6,7 +6,7 @@ metadata:
   description: Determine cloud connection options for an OT network sensor
   ms.date: 11/29/2023
   author: limwainstein
-  ms.author: lwainstein
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

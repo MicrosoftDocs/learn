@@ -1,11 +1,41 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-authentication-access-management-solution
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Security Architecture Design"
+    - Automation
+    - "Zero Trust Security"
+    - "Data Security"
+    - "Agentic AI"
+    - "Security Automation"
+    - "Security Analytics"
+    - "Cloud Administration"
+    - "Application Security"
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Security Operations Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-authentication-access-management-solution/index.yml
   title: 'Implement an authentication and access management solution'
   description: 'Implement an authentication and access management solution'
   ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: learning-path
 title: 'Implement an authentication and access management solution'
 prerequisites: |

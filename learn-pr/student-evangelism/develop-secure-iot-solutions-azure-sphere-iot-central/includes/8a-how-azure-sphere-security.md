@@ -37,7 +37,7 @@ az sphere catalog show --resource-group <resource-group-name> --catalog <catalog
 ```
 
 > [!NOTE]
-> `properties.tenantId` is documented on the [Catalog REST API schema](https://learn.microsoft.com/rest/api/azuresphere/catalogs/get?view=rest-azuresphere-2024-04-01) and is present on every Azure Sphere catalog (both brand-new Integrated catalogs and catalogs that were migrated from Azure Sphere (Legacy)). Catalogs that were migrated from Azure Sphere (Legacy) also store the same value in the `tags.MigratedCatalogId` resource tag for backward compatibility, but querying `properties.tenantId` works for every catalog type.
+> `properties.tenantId` is documented on the [Catalog REST API schema](/rest/api/azuresphere/catalogs/get?view=rest-azuresphere-2024-04-01&preserve-view=true) and is present on every Azure Sphere catalog (both brand-new Integrated catalogs and catalogs that were migrated from Azure Sphere (Legacy)). Catalogs that were migrated from Azure Sphere (Legacy) also store the same value in the `tags.MigratedCatalogId` resource tag for backward compatibility, but querying `properties.tenantId` works for every catalog type.
 
 ## Access to hardware
 

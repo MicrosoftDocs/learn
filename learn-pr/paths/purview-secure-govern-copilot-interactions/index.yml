@@ -1,6 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.purview-secure-govern-copilot-interactions
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - microsoft-purview
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ip-admin
+    - security-engineer
+  gs-skills:
+    - "Responsible AI"
+    - "AI Risk Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Threat Management"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Security Automation"
+    - "Security Analytics"
+    - "Data Management"
+    - "AI Compliance"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/purview-secure-govern-copilot-interactions/index.yml
   title: 'Secure and govern Microsoft 365 Copilot interactions with Microsoft Purview'
   description: 'Microsoft 365 Copilot changes how users access, combine, and generate content across organizational data. Learn how Microsoft Purview helps you gain visibility into AI activity, protect sensitive information, detect risky behavior, and govern Microsoft 365 Copilot interactions.'
   ms.date: 05/29/2026

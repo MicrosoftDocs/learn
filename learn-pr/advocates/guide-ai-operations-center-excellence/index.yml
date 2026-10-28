@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.workload-operations-generative-ai-center-excellence
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 37
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - technology-manager
+    - solution-architect
+  gs-skills:
+    - "Large Language Model Operations (LLMOps)"
+    - "AI Governance"
+    - "AI Infrastructure"
+    - "Solution Architecture"
+    - "Organizational Effectiveness"
+    - "Responsible AI"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/guide-ai-operations-center-excellence/index.yml
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 07/25/2026

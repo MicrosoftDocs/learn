@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-databases
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 260
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - database-administrator
+    - systems-administrator
+  gs-skills:
+    - Databases
+    - "Enterprise Resource Planning (ERP)"
+    - Storage
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "Data Security"
+    - Virtualization
+    - "Network Connectivity"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-azure-databases/index.yml
   title: Explore Azure for SAP databases
   description: "This module explores SAP on Azure database support and best practices for Azure for SAP workloads. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 12/23/2024

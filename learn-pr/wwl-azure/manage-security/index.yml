@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-security
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 41
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - defender-for-cloud
+    - defender-endpoint
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - systems-administrator
+    - identity-access-admin
+  gs-skills:
+    - Cybersecurity
+    - "Cloud Infrastructure"
+    - "Security Architecture Design"
+    - "Identity and Access Management (IAM)"
+    - "Device Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-security/index.yml
   title: Manage security for Azure Virtual Desktop
   description: "The Windows client for Azure Virtual Desktop integrates Azure Virtual Desktop on local machines. You’ll learn the critical actions for keeping your users safe."
   ms.date: 08/07/2024

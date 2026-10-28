@@ -1,12 +1,33 @@
 ### YamlMime:Module
 uid: introduction-azure-firewall
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 48
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - security-engineer
+    - solution-architect
+  gs-skills:
+    - Cybersecurity
+    - "IT Networking"
+    - "Security Architecture Design"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure-networking/introduction-azure-firewall/index.yml
   title: "Introduction to Azure Firewall"
   description: Describe how Azure Firewall protects Azure Virtual Network resources, including the Azure Firewall features, rules, deployment options, and administration with Azure Firewall Manager.
   manager: kumud
   ms.date: 01/23/2025
   author: vhorne
-  ms.author: victorh
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-firewall
 title: "Introduction to Azure Firewall"

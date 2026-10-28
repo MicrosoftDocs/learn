@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-manage-azure-arc-enabled-servers
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Network Connectivity"
+    - Automation
+    - Cybersecurity
+    - "Security Operations Management"
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/deploy-manage-azure-arc-enabled-servers/index.yml
   title: Deploy and manage Azure Arc-enabled Servers AZ-1010
   description: In this learning path, you're introduced to Azure Arc-enabled servers. You'll cover Arc-enabled server deployment, updates to Arc-enabled servers using Azure Update Manager and configuring Microsoft Defender for Cloud for Azure Arc-enabled servers. (AZ-1010)
   ms.date: 06/17/2024

@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to recommend security and governance solutions based on the Cloud Adoption Framework and Well-Architected Framework, organized by capability area with framework-aligned evaluation criteria."
   ms.date: 05/27/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 9

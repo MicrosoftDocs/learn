@@ -1,11 +1,30 @@
 ### YamlMime:Module
 uid: learn-wwl.load-data-into-microsoft-fabric-data-warehouse
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 61
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+  gs-skills:
+    - "Data Warehousing"
+    - "Data Engineering"
+    - SQL
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/load-data-into-microsoft-fabric-data-warehouse/index.yml
   title: Load data into a Microsoft Fabric data warehouse
   description: Learn how to load data into a Microsoft Fabric warehouse using data pipelines, T-SQL, and Dataflow Gen2.
   ms.date: 06/09/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: module-standard-task-based
   ms.service: fabric
   ai-usage: ai-assisted

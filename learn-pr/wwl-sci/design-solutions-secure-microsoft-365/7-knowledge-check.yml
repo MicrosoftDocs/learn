@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check for a module on the topic: design solutions for securing Microsoft 365"
   ms.date: 05/21/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 5

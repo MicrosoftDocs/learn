@@ -6,7 +6,7 @@ metadata:
   description: "Summary of designing solutions for securing privileged access, including Zero Trust principles, PIM, CIEM, and AD DS security for the SC-100 certification."
   ms.date: 05/29/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 2
 content: |

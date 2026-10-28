@@ -6,7 +6,7 @@ metadata:
   description: "SC-100 preparatory unit introducing the Cloud Adoption Framework and Well-Architected Framework for security architecture."
   ms.date: 05/27/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 2

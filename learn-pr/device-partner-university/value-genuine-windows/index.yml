@@ -2,6 +2,24 @@
 uid: learn.dpu.value-genuine-windows
 title: The value of genuine Windows
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 16
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+  gs-skills:
+    - Cybersecurity
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/value-genuine-windows/index.yml
   title: The value of genuine Windows
   description: ' In this module, you’ll explore the core concepts behind genuine Windows, including outcomes related to authenticity, trust, security, and risk. '
   ms.date: 04/23/2026

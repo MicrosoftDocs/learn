@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-vibe-coding
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 80
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github-copilot
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "AI-Augmented Software Development"
+    - "Prompt Engineering"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/introduction-vibe-coding/index.yml
   title: Introduction to Vibe Coding
   description: "This module examines the vibe coding approach to app development and how to implement a vibe coding process to create and refine an app using GitHub Copilot Agent."
   ms.date: 04/16/2026

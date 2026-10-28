@@ -1,11 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.identify-ai-data-risks-purview
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-purview
+    - microsoft-365-copilot
+    - office-sp
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - ip-admin
+    - privacy-manager
+  gs-skills:
+    - "Data Security"
+    - "AI Security (Model-Level)"
+    - "Security Analytics"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/identify-ai-data-risks-purview/index.yml
   title: Identify AI Data Risks Using Microsoft Purview Data Security Posture Management
   description: "Discover and assess AI data risks in your environment using Microsoft Purview Data Security Posture Management (DSPM) for AI. Configure DSPM, assess SharePoint overexposure, and identify risks in Copilot and AI app interactions."
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: purview
   ai-usage: ai-assisted

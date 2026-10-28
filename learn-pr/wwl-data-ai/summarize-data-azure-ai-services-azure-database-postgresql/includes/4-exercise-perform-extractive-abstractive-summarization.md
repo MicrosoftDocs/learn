@@ -6,4 +6,4 @@ Now, it's time to get hands-on with the `azure_ai` extension and the summarizati
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://learn.microsoft.com/)
+[![Button to launch exercise.](../media/launch-exercise.png)](/)

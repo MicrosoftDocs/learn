@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-azure-cosmos-db-nosql
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 98
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+  gs-skills:
+    - Databases
+    - "Data Administration"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/secure-azure-cosmos-db-nosql/index.yml
   title: Secure an Azure Cosmos DB Solution
   description: "Secure an Azure Cosmos DB account with Microsoft Entra authentication, key rotation, scoped role assignments, network isolation, and dynamic data masking."
   ms.date: 10/02/2026

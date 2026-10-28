@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.govern-unity-catalog-objects
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 108
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-databricks
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - security-engineer
+    - ip-admin
+    - database-administrator
+  gs-skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Security"
+    - "Data Administration"
+    - "Data Management"
+    - "Identity and Access Management (IAM)"
+    - "Security Analytics"
+    - SQL
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-databricks/govern-unity-catalog-objects/index.yml
   title: Govern Unity Catalog Objects
   description: Learn how to govern data and AI assets in Azure Databricks using Unity Catalog, including access control, data lineage, audit logging, and secure sharing.
   ms.date: 10/26/2026

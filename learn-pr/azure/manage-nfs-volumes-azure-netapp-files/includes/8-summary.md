@@ -11,12 +11,12 @@ You also performed hands-on exercises to create an NFS volume in Azure NetApp Fi
 
 ### Learn more
 
-[Configure NFSv4.1 Kerberos encryption for Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/configure-kerberos-encryption)
+[Configure NFSv4.1 Kerberos encryption for Azure NetApp Files](/azure/azure-netapp-files/configure-kerberos-encryption)
 
-[Enable Active Directory Domain Services LDAP authentication for NFS volumes](https://learn.microsoft.com/azure/azure-netapp-files/configure-ldap-extended-groups)
+[Enable Active Directory Domain Services LDAP authentication for NFS volumes](/azure/azure-netapp-files/configure-ldap-extended-groups)
 
-[Configure an NFS client for Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/configure-nfs-clients)
+[Configure an NFS client for Azure NetApp Files](/azure/azure-netapp-files/configure-nfs-clients)
 
-[Configure two VMs with the same hostname to access NFSv4.1 volumes](https://learn.microsoft.com/azure/azure-netapp-files/configure-nfs-clients#configure-two-vms-with-the-same-hostname-to-access-nfsv41-volumes)
+[Configure two VMs with the same hostname to access NFSv4.1 volumes](/azure/azure-netapp-files/configure-nfs-clients#configure-two-vms-with-the-same-hostname-to-access-nfsv41-volumes)
 
-[Disable showmount in Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/disable-showmount)
+[Disable showmount in Azure NetApp Files](/azure/azure-netapp-files/disable-showmount)

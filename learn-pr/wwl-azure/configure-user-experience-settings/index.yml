@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-user-experience-settings
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 56
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - platform-engineer
+    - support-engineer
+    - security-engineer
+  gs-skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - "IT Networking"
+    - "Security Operations Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-user-experience-settings/index.yml
   title: Configure user experience settings
   description: "Virtual desktop provides users easy and seamless access to their assigned VMs, often with a single sign-on solution."
   ms.date: 08/08/2024

@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.azure-netapp-files
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - storage-admin
+  gs-skills:
+    - Storage
+    - "Network Connectivity"
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+    - "Identity and Access Management (IAM)"
+    - "IT Networking"
+    - "Cloud Administration"
+    - "Data Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/azure-netapp-files/index.yml
   title: Azure NetApp Files fundamentals
   description: Learn how to deploy, monitor, secure, and optimize Azure NetApp Files.
   brand: azure

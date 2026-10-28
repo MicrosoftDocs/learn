@@ -6,7 +6,7 @@ metadata:
   description: Learn about the built-in metrics that you can view in Azure Monitor.
   ms.date: 12/01/2023
   author: AbhishekMallick-MS
-  ms.author: v-abhmallick
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 2
 content: |

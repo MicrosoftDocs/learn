@@ -21,7 +21,7 @@ After training, compare your fine-tuned model's scores against these thresholds 
 
 Divide your prepared data into training and validation sets before training begins. The training set teaches the model; the validation set measures how well it generalizes to unseen examples. Keep the two sets strictly separate—overlap makes evaluation metrics look better than they are.
 
-| Adventure Works dataset split | |
+| Adventure Works dataset split | Example count |
 |---|---|
 | **Total examples** | 300 gear interactions |
 | **Training set (80%)** | 240 examples |

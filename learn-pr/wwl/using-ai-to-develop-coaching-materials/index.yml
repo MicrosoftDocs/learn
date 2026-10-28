@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.using-ai-to-develop-coaching-materials
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 16
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - hr
+    - business-user
+  gs-skills:
+    - "Generative AI"
+    - "Prompt Engineering"
+    - "Responsible AI"
+    - "AI Risk Management"
+    - "Digital Accessibility"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/using-ai-to-develop-coaching-materials/index.yml
   title: "Using AI to Develop Coaching Materials"
   description: "Learn how AI can help job coaches organize, format, and simplify verified content while ensuring human-led discovery and decision-making."
   ms.date: 09/25/2026

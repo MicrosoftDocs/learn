@@ -6,7 +6,7 @@ metadata:
   description: "Review how the Microsoft Sentinel Solution for SAP BTP activity workbook provides a dashboard overview of BTP activity."
   ms.date: 01/13/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

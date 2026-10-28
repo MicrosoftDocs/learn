@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-network-based-threats-mitigations
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 28
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+  gs-skills:
+    - "IT Networking"
+    - Cybersecurity
+    - "Threat Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/describe-network-based-threats-mitigations/index.yml
   title: Describe Network-Based Threats and Mitigations
   description: "Describe basic networking concepts and how they relate to cybersecurity."
   ms.date: 04/24/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: module
   ms.service: security
 title: Describe network-based threats and mitigations

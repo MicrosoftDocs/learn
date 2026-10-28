@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.monitor-maintain-azure-virtual-desktop-infrastructure
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+    - systems-administrator
+    - solution-architect
+    - site-reliability-engineer
+  gs-skills:
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+    - "Infrastructure Management"
+    - "Data Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/monitor-maintain-azure-virtual-desktop-infrastructure/index.yml
   title: Monitor and maintain an Azure Virtual Desktop infrastructure
   description: Monitor and maintain an Azure Virtual Desktop infrastructure
   ms.date: 08/06/2024

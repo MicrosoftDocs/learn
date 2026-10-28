@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-entra-agent-id
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 58
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - Automation
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/introduction-entra-agent-id/index.yml
   title: Introduction to Microsoft Entra Agent ID
   description: "Learn about Microsoft Entra Agent ID, a specialized identity type designed for AI agents. Understand how agent identities differ from other identity types, which Microsoft products use them, and how to view and manage them in the Microsoft Entra admin center."
   ms.date: 02/09/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: entra-id
 title: Introduction to Microsoft Entra Agent ID

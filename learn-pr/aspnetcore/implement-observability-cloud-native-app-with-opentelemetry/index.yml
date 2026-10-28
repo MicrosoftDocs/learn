@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.implement-observability-cloud-native-app-with-opentelemetry
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 43
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - site-reliability-engineer
+  gs-skills:
+    - "Application Development"
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/implement-observability-cloud-native-app-with-opentelemetry/index.yml
   title: Implement Observability in a .NET Cloud-Native Application with OpenTelemetry
   description: "Learn about observability and how to implement it in a cloud-native application. Use OpenTelemetry packages to output logs, metrics, and tracing data and analyze the data in Application Insights and third-party applications."
   ms.date: 05/27/2025

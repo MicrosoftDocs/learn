@@ -1,6 +1,40 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.monitor-troubleshoot-windows-server-environments
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - windows
+    - azure
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - support-engineer
+    - security-engineer
+    - solution-architect
+    - network-engineer
+    - platform-engineer
+    - identity-access-admin
+  gs-skills:
+    - "Data Analytics"
+    - Automation
+    - Storage
+    - "Network Connectivity"
+    - "Infrastructure Management"
+    - Cybersecurity
+    - "Security Analytics"
+    - "Cloud Administration"
+    - "IT Networking"
+    - "Cloud Infrastructure"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/monitor-troubleshoot-windows-server-environments/index.yml
   title: Monitor and Troubleshoot Windows Server Environments
   description: Learn how to monitor Windows Server environments using built-in tools and Azure services, and troubleshoot Windows Server networking, Active Directory, and system issues.
   ms.date: 08/31/2026

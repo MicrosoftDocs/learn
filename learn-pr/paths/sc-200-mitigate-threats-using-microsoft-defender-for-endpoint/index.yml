@@ -1,11 +1,36 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-defender-for-endpoint
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - defender-endpoint
+    - microsoft-defender
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+  gs-skills:
+    - "Threat Management"
+    - "Security Analytics"
+    - "Security Operations Management"
+    - "Security Automation"
+    - Cybersecurity
+    - "Zero Trust Security"
+    - "Device Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/sc-200-mitigate-threats-using-microsoft-defender-for-endpoint/index.yml
   title: 'Mitigate threats using Microsoft Defender for Endpoint'
   description: 'Mitigate threats using Microsoft Defender for Endpoint'
   ms.date: 04/25/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: learning-path
 title: 'Mitigate threats using Microsoft Defender for Endpoint'
 prerequisites: |

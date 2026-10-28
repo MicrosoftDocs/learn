@@ -6,7 +6,7 @@ metadata:
   description: "Address security risks that organizations must consider with SAP BTP using Microsoft Sentinel Solution for SAP BTP."
   ms.date: 01/13/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

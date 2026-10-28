@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.academic-program-certifications-design-program-launch
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 15
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - higher-ed-educator
+    - marketing
+    - business-leader
+  gs-skills:
+    - "Communications Management"
+    - "Career Development"
+    - "Organizational Effectiveness"
+    - "Business Insights"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/academic-program-certifications-design-program-launch/index.yml
   title: Design a program launch strategy
   description: Ensure that your program's unique selling points focus on the benefits of implementing certifications, and discover the support available through the Microsoft Learn for Educators program. 
   ms.date: 08/11/2021

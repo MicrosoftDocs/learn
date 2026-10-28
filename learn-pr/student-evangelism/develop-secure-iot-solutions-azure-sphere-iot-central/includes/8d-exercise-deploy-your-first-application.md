@@ -16,7 +16,7 @@ In this exercise, we'll deploy a high-level application to your Azure Sphere.
 
     - Keep the existing **SchemaVersion**, **Name**, **ComponentId**, **EntryPoint**, and **ApplicationType** fields.
     - Update **CmdArgs** with your Azure IoT Central ID scope. Keep the `--ConnectionType`, `DPS`, and `--ScopeID` entries, and replace only the scope ID value.
-    - Preserve the existing **Gpio**, **I2cMaster**, and **PowerControls** capabilities from the sample manifest. The **PowerControls** entry is set to `[ "ForceReboot" ]` for the controlled-reboot lab later in this learning path. Because `ForceReboot` and `ForcePowerDown` allow an application to immediately terminate all running applications, applications that use these values **must** ensure the device can still receive Azure Sphere OS and application updates (see [Force Power Down and updates](/azure-sphere/app-development/power-down?view=azure-sphere-integrated#force-power-down-and-updates)). Remove **PowerControls** from production applications that don't call the power management APIs, and don't add `ForcePowerDown` or any other capability unless the application requires it.
+    - Preserve the existing **Gpio**, **I2cMaster**, and **PowerControls** capabilities from the sample manifest. The **PowerControls** entry is set to `[ "ForceReboot" ]` for the controlled-reboot lab later in this learning path. Because `ForceReboot` and `ForcePowerDown` allow an application to immediately terminate all running applications, applications that use these values **must** ensure the device can still receive Azure Sphere OS and application updates (see [Force Power Down and updates](/azure-sphere/app-development/power-down?view=azure-sphere-integrated&preserve-view=true#force-power-down-and-updates)). Remove **PowerControls** from production applications that don't call the power management APIs, and don't add `ForcePowerDown` or any other capability unless the application requires it.
     - Update **DeviceAuthentication** with the Azure Sphere (Legacy) tenant UUID for your catalog. With Azure Sphere Integrated, every catalog exposes this UUID through the Azure Sphere Catalog `properties.tenantId` field. Run the following Azure CLI command, using the resource group and catalog name for your Azure Sphere catalog:
 
       ```azurecli
@@ -72,7 +72,7 @@ In this exercise, we'll deploy a high-level application to your Azure Sphere.
     ```
 
     > [!NOTE]
-    > `"MallocVersion": 2` opts in to the mallocng allocator, which the [app_manifest reference](/azure-sphere/app-development/app-manifest?view=azure-sphere-integrated) recommends for all new Azure Sphere applications. The official Azure Sphere AzureIoT sample sets the same value.
+    > `"MallocVersion": 2` opts in to the mallocng allocator, which the [app_manifest reference](/azure-sphere/app-development/app-manifest?view=azure-sphere-integrated&preserve-view=true) recommends for all new Azure Sphere applications. The official Azure Sphere AzureIoT sample sets the same value.
 
 1. Save the updated app_manifest.json file.
 

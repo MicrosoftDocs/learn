@@ -6,7 +6,7 @@ metadata:
   description: "Learn to design autonomous agents in Copilot Studio to automate workflows, improve efficiency, and integrate with Microsoft Teams and enterprise apps."
   ms.date: 02/13/2026
   author: Randall-Knapp
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 5

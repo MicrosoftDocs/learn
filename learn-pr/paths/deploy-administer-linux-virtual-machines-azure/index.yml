@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-administer-linux-virtual-machines-azure
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Data Analytics"
+    - "Data Administration"
+    - Storage
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+    - "Zero Trust Security"
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/deploy-administer-linux-virtual-machines-azure/index.yml
   title: Deploy and administer Linux virtual machines on Azure AZ-1007
   description: In this learning path, you prepare for the Applied Skill, Deploy and administer Linux virtual machines on Microsoft Azure. (AZ-1007)
   ms.date: 06/23/2026

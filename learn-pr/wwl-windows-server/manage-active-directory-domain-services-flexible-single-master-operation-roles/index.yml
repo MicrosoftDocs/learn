@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 54
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - identity-access-admin
+    - solution-architect
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Infrastructure Management"
+    - "Solution Architecture"
+    - "Cloud Administration"
+    - Cybersecurity
+    - "Data Management"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/manage-active-directory-domain-services-flexible-single-master-operation-roles/index.yml
   title: Manage AD DS domain controllers and FSMO roles
   description: "Learn how to deploy and manage AD DS domain controllers, maintain availability with backup and recovery, manage the global catalog role, and transfer or seize FSMO roles including schema master, domain-naming master, RID master, infrastructure master, and PDC emulator."
   ms.date: 08/31/2026

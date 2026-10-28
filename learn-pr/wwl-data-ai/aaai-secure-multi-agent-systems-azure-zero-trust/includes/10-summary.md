@@ -8,8 +8,8 @@ These patterns ensure that Fabrikam's multi-agent code review system protects cu
 
 ## Learn more
 
-- [Microsoft Zero Trust security model](https://learn.microsoft.com/security/zero-trust/zero-trust-overview)
-- [Azure managed identities documentation](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview)
-- [Azure Container Apps networking and security](https://learn.microsoft.com/azure/container-apps/networking)
+- [Microsoft Zero Trust security model](/security/zero-trust/zero-trust-overview)
+- [Azure managed identities documentation](/entra/identity/managed-identities-azure-resources/overview)
+- [Azure Container Apps networking and security](/azure/container-apps/networking)
 - [Kubernetes NetworkPolicy tutorial](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
-- [Azure Cosmos DB data encryption and isolation](https://learn.microsoft.com/azure/cosmos-db/database-security)
+- [Azure Cosmos DB data encryption and isolation](/azure/cosmos-db/database-security)

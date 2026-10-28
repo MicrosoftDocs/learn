@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 29
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - platform-engineer
+  gs-skills:
+    - Automation
+    - "Infrastructure Management"
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/create-azure-resources-using-azure-resource-manager-templates/index.yml
   title: Create Azure Resources Using Azure Resource Manager Templates
   description: Learn how to create and deploy Azure resources using ARM templates and Bicep, including template components, dependencies, modularization, and secrets management for infrastructure as code.
   ms.date: 10/24/2025

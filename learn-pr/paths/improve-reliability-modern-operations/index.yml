@@ -1,6 +1,43 @@
 ### YamlMime:LearningPath
 uid: learn.improve-reliability-modern-operations
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - azure-devops
+    - office-teams
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - site-reliability-engineer
+    - devops-engineer
+    - systems-administrator
+    - solution-architect
+    - technology-manager
+    - developer
+  gs-skills:
+    - DevOps
+    - "Organizational Culture"
+    - "IT Strategy"
+    - "Cloud Administration"
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Communications Management"
+    - Automation
+    - "Organizational Effectiveness"
+    - "Solution Architecture"
+    - "Application Architecture"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - Databases
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/improve-reliability-modern-operations/index.yml
   title: Improve your reliability with modern operations practices
   description: Learn the modern operations principles and practices that will help you achieve the level of reliability you need.
   brand: azure

@@ -6,7 +6,7 @@ metadata:
   description:  Measure in MR component allows the users to measure distance, area, and volume in the real world
   ms.date: 04/23/2024
   author: "Sean-Kerawala"
-  ms.author: "vinnietieto"
+  ms.author: "lumac"
   ms.topic: unit
 durationInMinutes: 5
 content: |

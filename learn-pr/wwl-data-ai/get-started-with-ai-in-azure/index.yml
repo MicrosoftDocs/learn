@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-with-ai-in-azure
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 56
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+    - solution-architect
+    - data-scientist
+  gs-skills:
+    - "Cloud Computing"
+    - "AI Infrastructure"
+    - "Application Development"
+    - "Agent Development"
+    - "Generative AI"
+    - "Application Security"
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-with-ai-in-azure/index.yml
   title: Get started with AI in Azure
   description: "This module introduces Azure and its capabilities for building AI solutions. Explore the key features and benefits of using Microsoft Foundry for AI development."
   ms.date: 03/24/2026

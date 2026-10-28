@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-ip-address-management
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 75
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - systems-administrator
+    - administrator
+  gs-skills:
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/implement-ip-address-management/index.yml
   title: Implement IP Address Management
   description: "Learn how to deploy and configure IP Address Management (IPAM) in Windows Server to centrally manage DHCP servers, DNS zones, and IP address space with role-based access control and GPO-based provisioning."
   ms.date: 08/31/2026

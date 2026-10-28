@@ -6,7 +6,7 @@ metadata:
   description: "Summary of implementing Microsoft Defender for Databases across Azure SQL and open-source relational database services."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 1

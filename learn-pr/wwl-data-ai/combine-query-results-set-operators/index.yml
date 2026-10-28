@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.combine-query-results-set-operators
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 48
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - data-analyst
+  gs-skills:
+    - SQL
+    - "Database Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/combine-query-results-set-operators/index.yml
   title: Combine query results with set operators
   description: "Combine query results with set operators using Transact-SQL."
   ms.date: 08/12/2026

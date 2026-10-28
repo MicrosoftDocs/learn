@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.dotnet-maui.build-mobile-and-desktop-apps
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 33
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/dot-net-maui/build-mobile-and-desktop-apps/index.yml
   moduleType: standard
   title: "Create a cross-platform app with .NET MAUI"
   description: "Learn how to use Visual Studio with .NET MAUI (Multi-platform Application User Interface) to create a cross-platform app."

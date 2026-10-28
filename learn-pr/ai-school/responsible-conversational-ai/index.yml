@@ -1,12 +1,30 @@
 ### YamlMime:Module
 uid: learn-wwl.responsible-conversational-ai
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 39
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - product-manager
+  gs-skills:
+    - "Responsible AI"
+    - "Digital Accessibility"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/ai-school/responsible-conversational-ai/index.yml
   title: Discover Microsoft guidelines for responsible conversational AI development
   description: Learn Microsoft guidelines for the development of responsible conversational AI, such as chat bots and voice-controlled systems.
   ms.collection: TBD
   ms.date: 07/10/2024
   author: Adriamen
-  ms.author: japerena
+  ms.author: lumac
   ms.topic: module
   ms.service: artificial-intelligence
   #ms.learn-contact: barlan

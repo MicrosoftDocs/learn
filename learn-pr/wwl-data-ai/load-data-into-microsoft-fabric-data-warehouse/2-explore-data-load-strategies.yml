@@ -6,7 +6,7 @@ metadata:
   description: "Learn different strategies to load data into a data warehouse in Microsoft Fabric."
   ms.date: 06/09/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 8
 content: |

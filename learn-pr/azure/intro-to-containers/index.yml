@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.intro-to-containers
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 57
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - devops-engineer
+  gs-skills:
+    - DevOps
+    - Automation
+    - "Cloud Administration"
+    - "Application Development"
+    - Virtualization
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-containers/index.yml
   title: Build a Containerized Web Application with Docker
   description: Use Docker to build, store, and manage private container images with the Azure Container Registry.  
   ms.date: 06/20/2025

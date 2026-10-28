@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-github-actions-azure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 63
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+    - azure
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - devops-engineer
+    - identity-access-admin
+    - security-engineer
+  gs-skills:
+    - DevOps
+    - Automation
+    - "Identity and Access Management (IAM)"
+    - "Application Development"
+    - "Application Security"
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-github-actions-azure/index.yml
   title: Implement GitHub Actions for Azure
   description: "Learn how to use GitHub Actions for Azure in your workflows and configure Azure with the necessary security principals to automate software development workflows between GitHub and Azure."
   ms.date: 07/23/2026

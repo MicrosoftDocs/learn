@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 92
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+  gs-skills:
+    - "AI-Augmented Software Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/spec-driven-development-github-spec-kit-greenfield-intro/index.yml
   title: "Get Started with Spec-Driven Development and GitHub Spec Kit"
   description: "Learn to implement the spec-driven development methodology and GitHub Spec Kit for greenfield applications."
   ms.date: 01/26/2026

@@ -1,11 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure.get-started-with-object-interaction-tutorials-mrtk
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 54
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/get-started-with-object-interaction/index.yml
   title: Getting Started With 3D Object Interaction
   description: This course will provide steps and procedures to follow on how to manipulate and interact with 3D objects. 
   ms.date: 06/05/2025
   author: Sean-Kerawala
-  ms.author: lolab
+  ms.author: lumac
   ms.topic: module
   ms.service: hololens
 title: Getting started with 3D object interaction

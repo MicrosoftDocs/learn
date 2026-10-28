@@ -5,7 +5,7 @@ metadata:
   description: Enable Microsoft Defender for Key Vault, understand the anomalous access patterns it detects, and configure alert destinations and suppression rules.
   ms.date: 04/13/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Enable Microsoft Defender for Key Vault

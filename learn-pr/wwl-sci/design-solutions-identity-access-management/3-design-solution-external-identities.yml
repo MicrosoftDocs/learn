@@ -6,7 +6,7 @@ metadata:
   description: "Design B2B collaboration, customer identity, and decentralized identity solutions using Microsoft Entra External ID."
   ms.date: 05/28/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 13
 content: |

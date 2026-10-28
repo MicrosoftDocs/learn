@@ -2,6 +2,23 @@
 uid: learn.dpu.optimize-pc-gaming
 title: Optimize your Windows gaming experience with the Xbox app
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+  gs-skills:
+    - "Device Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/optimize-windows-gaming/index.yml
   title: Optimize Your Windows Gaming Experience With The Xbox App
   description: This module introduces ways to use the Xbox app and Windows gaming features to optimize your PC gaming experience across several types of features.
   ms.date: 06/15/2026

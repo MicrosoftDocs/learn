@@ -6,7 +6,7 @@ metadata:
   description: Describe the process to deploy Microsoft Defender for IoT
   ms.date: 11/29/2023
   author: limwainstein
-  ms.author: lwainstein
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 6
 content: |

@@ -1,11 +1,37 @@
 ### YamlMime:Module
 uid: learn.wwl.design-solutions-secure-organization-data
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 77
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - microsoft-purview
+    - azure-openai
+    - defender-for-cloud
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - solution-architect
+  gs-skills:
+    - Cybersecurity
+    - "Security Architecture Design"
+    - "Data Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Threat Management"
+    - "AI Security (Model-Level)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/design-solutions-secure-organization-data/index.yml
   title: Design Solutions for Securing an Organization's Data
   description: "You learn about designing solutions that secure an organization's data using capabilities like Microsoft Purview, Defender for SQL, Defender for Storage."
   ms.date: 06/02/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: module
   ms.service: security
   ai-usage: ai-generated

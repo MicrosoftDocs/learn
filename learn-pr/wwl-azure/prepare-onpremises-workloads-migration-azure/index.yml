@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.prepare-onpremises-workloads-migration-azure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 35
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+  gs-skills:
+    - "Data Migration"
+    - "Cloud Infrastructure"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/prepare-onpremises-workloads-migration-azure/index.yml
   title: Prepare on-premises workloads for migration to Azure
   description: "Prepare on-premises workloads for migration to Azure"
   ms.date: 01/23/2026

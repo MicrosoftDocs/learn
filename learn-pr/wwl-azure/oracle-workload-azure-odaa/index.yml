@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.azure.oracle-workload-azure-odaa
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 27
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - database-administrator
+    - administrator
+  gs-skills:
+    - "Data Migration"
+    - "Solution Architecture"
+    - Databases
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/oracle-workload-azure-odaa/index.yml
   title: "Migrate Oracle workloads to Oracle Database@Azure"
   description: "Learn how to migrate your Oracle workloads to Oracle Database@Azure."
   ms.date: 05/01/2024

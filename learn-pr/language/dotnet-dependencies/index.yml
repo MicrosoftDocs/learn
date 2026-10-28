@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.dotnet-dependencies
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 18
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/language/dotnet-dependencies/index.yml
   title: Create a new .NET project and work with package dependencies 
   description: Create a .NET project and learn to add packages and manage package dependencies in your project. Use the .NET Core CLI and NuGet registry to add libraries and tools to your C# applications through Visual Studio Code.
   ms.date: 10/16/2024

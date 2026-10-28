@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 39
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - database-administrator
+  gs-skills:
+    - Databases
+    - "Application Development"
+    - "Data Management"
+    - "Data Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/build-multi-item-transactions-azure-cosmos-db-sql-api/index.yml
   title: Build multi-item transactions with the Azure Cosmos DB for NoSQL
   description: "Author stored procedures using JavaScript in Azure Cosmos DB for NoSQL."
   ms.date: 04/02/2025

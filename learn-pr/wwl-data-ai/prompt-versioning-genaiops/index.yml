@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.prompt-versioning-genaiops
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 53
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - devops-engineer
+    - developer
+  gs-skills:
+    - "Large Language Model Operations (LLMOps)"
+    - DevOps
+    - "Agent Operations"
+    - "AI Model Evaluation & Testing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/prompt-versioning-genaiops/index.yml
   title: Manage prompts for agents in Microsoft Foundry with GitHub
   description: Learn how to manage prompts for agents in Microsoft Foundry using GitHub version control and collaboration features.
   author: madiepev

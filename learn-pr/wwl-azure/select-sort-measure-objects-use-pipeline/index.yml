@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.select-sort-measure-objects-use-pipeline
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 42
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - Automation
+    - "Data Management"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/select-sort-measure-objects-use-pipeline/index.yml
   title: Select, sort, and measure objects using the pipeline
   description: This module explains how to manipulate objects in the pipeline by using commands that sort, select, and measure objects.
   ms.date: 05/12/2026

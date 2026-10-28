@@ -6,7 +6,7 @@ metadata:
   description: "Lab - Implement SAP architecture on Azure Linux virtual machines"
   ms.date: 01/09/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom: linux-related-content
 durationInMinutes: 100

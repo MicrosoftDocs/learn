@@ -5,7 +5,7 @@ metadata:
   description: Summary of planning and implementing Azure Bastion, covering SKU selection, deployment architecture, configuration, and VM connection methods.
   ms.date: 04/16/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary

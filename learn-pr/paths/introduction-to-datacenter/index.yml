@@ -2,6 +2,32 @@
 uid: learn.introduction-to-datacenter
 title: Introduction to Datacenter
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+    - student
+    - systems-administrator
+    - network-engineer
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Cloud Computing"
+    - "Infrastructure Management"
+    - "IT Networking"
+    - "AI Infrastructure"
+    - "Network Connectivity"
+    - Cybersecurity
+    - Storage
+    - "Security Operations Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/introduction-to-datacenter/index.yml
   title: Introduction to Datacenter
   description: Learn the fundamentals of datacenters, their roles, components, sustainability, and career opportunities.
   ms.date: 05/19/2025

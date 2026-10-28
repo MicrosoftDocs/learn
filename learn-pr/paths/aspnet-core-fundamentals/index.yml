@@ -1,6 +1,23 @@
 ### YamlMime:LearningPath
 uid: learn.aspnet-core-fundamentals
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/aspnet-core-fundamentals/index.yml
   title: Understand ASP.NET Core fundamentals
   description: |
     Learn the fundamentals of building web applications with ASP.NET Core. This learning path teaches the basics required for front-end and back-end development with ASP.NET Core.

@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-arc-enabled-servers-scripting
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 57
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - Automation
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-azure-arc-enabled-servers-scripting/index.yml
   title: Manage Azure Arc-enabled servers by using scripting
   description: "This module covers the topic of enabling Azure Arc for Windows or Linux machines in your environment. Enabling Arc-enabled servers is done either manually or by using an automated method with a provided template script."
   ms.date: 02/14/2025

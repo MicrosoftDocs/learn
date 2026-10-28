@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn-wwl.get-started-with-graphql-microsoft-fabric
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 61
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Data Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-with-graphql-microsoft-fabric/index.yml
   title: Get started with GraphQL in Microsoft Fabric
   description: "Learn how GraphQL in Microsoft Fabric works, the key concepts, and practical examples to help users integrate their applications with GraphQL effectively as part of their solutions."
   ms.date: 08/11/2026

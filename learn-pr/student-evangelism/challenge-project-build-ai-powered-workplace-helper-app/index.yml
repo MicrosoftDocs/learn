@@ -1,11 +1,34 @@
 ### YamlMime:Module
 uid: learn.build-ai-powered-workplace-helper-app
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 60
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-copilot-studio
+    - power-apps
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - functional-consultant
+  gs-skills:
+    - "Low-Code Development"
+    - "Agent Development"
+    - "Knowledge Grounding for AI"
+    - "Generative AI"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/challenge-project-build-ai-powered-workplace-helper-app/index.yml
   title: Build an AI-powered workplace helper app
   description: "In this module, you'll learn how to build an AI-powered workplace helper app using Copilot Studio."
   ms.date: 12/12/2023
   author: reneenoble
   ms.author: reneenoble
+  ms.service: copilot-studio
   ms.topic: module-challenge-project 
 title: Build an AI-powered workplace helper app
 summary: |

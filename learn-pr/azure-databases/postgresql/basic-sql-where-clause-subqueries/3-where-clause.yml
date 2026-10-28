@@ -6,7 +6,7 @@ metadata:
   description: "This unit teaches how to use the WHERE clause in PostgreSQL to filter data using conditions, logical operators, pattern matching, ranges, and null checks"
   ms.date: 05/23/2025
   author: milenak
-  ms.author: mpopovic
+  ms.author: lumac
   ms.topic: unit
 ###########################################################################
 ###

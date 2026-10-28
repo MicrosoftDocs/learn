@@ -2,6 +2,29 @@
 uid: learn.dpu.surface-business-snapdragon
 title: Surface Pro for Business with Snapdragon® X Elite and Plus processors
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 19
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - surface
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - technology-manager
+    - systems-administrator
+    - business-user
+  gs-skills:
+    - "AI Infrastructure"
+    - "AI Productivity"
+    - "Device Management"
+    - "Digital Accessibility"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/surface-business-snapdragon/index.yml
   title: Surface Pro For Business With Snapdragon® X Elite And Plus Processors
   description: In this module, you'll learn about Surface Pro for Business with Snapdragon® X Elite and Plus processors.  
   ms.date: 08/22/2025

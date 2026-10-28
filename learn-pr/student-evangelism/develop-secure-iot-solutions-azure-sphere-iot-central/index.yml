@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 120
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Application Security"
+    - "Device Management"
+    - "Cloud Computing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/develop-secure-iot-solutions-azure-sphere-iot-central/index.yml
   title: "Develop secure IoT solutions for Azure Sphere with Azure IoT Central"
   description: "Develop highly secure IoT solutions with Azure Sphere, Azure RTOS and Azure IoT Central"
   ms.date: 05/10/2026

@@ -2,6 +2,33 @@
 uid: learn.dpu.modern-management-with-cloud-native-windows-accreditation-2026
 title: Modern management with Cloud-native Windows Accreditation 2026
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - windows
+    - intune
+    - entra
+    - security-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - it-professional
+    - security-engineer
+    - systems-administrator
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "Device Management"
+    - Automation
+    - "Cloud Administration"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/modern-management-with-cloud-native-windows-accreditation-2026/index.yml
   title: Modern Management With Cloud-Native Windows Accreditation 2026
   description: >
     description: This Accreditation provides an overview of cloud-native Windows, covering Microsoft Intune, Windows Autopilot, Microsoft Entra ID, and hotpatch updates. Learn how these solutions help streamline device provisioning, secure identity and access, device management, and keep Windows devices up to date with minimal disruption.

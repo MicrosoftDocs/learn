@@ -1,10 +1,30 @@
 ### YamlMime:Module
 uid: learn.oxford.explore-design-brain-patterns
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 19
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - solution-architect
+    - business-analyst
+  gs-skills:
+    - "Autonomous AI"
+    - "AI Solutions"
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/explore-brain-design-pattern/index.yml
   title: Explore brain design patterns
   description: Learn AI brain design patterns and evaluate when to use them.
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.date: 08/29/2024
   ms.update-cycle: 180-days
   ms.service: artificial-intelligence

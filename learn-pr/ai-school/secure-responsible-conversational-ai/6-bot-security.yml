@@ -5,7 +5,7 @@ metadata:
   title: Handle data securely
   description: Ensuring that your bot is secure from malicious attacks should be of high priority when designing and developing it. This section provides guidelines on how to make sure you protect your application and your user's security.
   author: Adriamen
-  ms.author: japerena
+  ms.author: lumac
   ms.date: 07/10/2024
   ms.update-cycle: 180-days
   ms.topic: unit

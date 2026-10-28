@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.utilize-threat-intelligence-azure-sentinel
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 18
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-sentinel
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+  gs-skills:
+    - "Security Analytics"
+    - "Security Operations Management"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/utilize-threat-intelligence-azure-sentinel/index.yml
   title: Utilize threat intelligence in Microsoft Sentinel
   description: "Utilize threat intelligence in Microsoft Sentinel"
   ms.date: 05/07/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Utilize threat intelligence in Microsoft Sentinel

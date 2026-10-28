@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.startups.name-brand
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 27
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - startup-founder
+  gs-skills:
+    - "Communications Management"
+    - "Career Development"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/startup/name-brand/index.yml
   title: Naming and branding
   description: Learn how to choose a good name for your startup and create a strong brand.
   ms.date: 06/13/2025

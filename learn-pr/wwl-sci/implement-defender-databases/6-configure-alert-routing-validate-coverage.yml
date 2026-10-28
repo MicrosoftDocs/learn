@@ -6,7 +6,7 @@ metadata:
   description: "Configure email notifications and Microsoft Sentinel integration for Defender for Databases alerts, create suppression rules for known-good patterns, and validate coverage using sample alerts."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 3

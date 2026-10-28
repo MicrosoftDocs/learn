@@ -6,7 +6,7 @@ metadata:
   description: "Create a virtual machine with a static public IP address using the Azure portal"
   ms.date: 12/20/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 3

@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-deployment-patterns
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - solution-architect
+  gs-skills:
+    - DevOps
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/introduction-to-deployment-patterns/index.yml
   title: Introduction to deployment patterns
   description: Explore deployment pattern architectures including microservices frameworks, classical deployment methodologies, and modern continuous delivery strategies for optimized software release cycles.
   ms.date: 10/23/2025

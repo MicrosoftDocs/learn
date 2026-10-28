@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.philanthropies.animate-impossible
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 100
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles: null
+  gs-skills:
+    - "Generative AI"
+    - "Multimodal AI"
+    - "Prompt Engineering"
+    - "AI Productivity"
+    - "AI Workforce Applications"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/animate-impossible/index.yml
   title: Animate the Impossible - 2D/3D Motion Techniques with Sora
   description: "Explore how Sora enables AI-powered enhancements to traditional 2D animation workflows, including motion smoothing, frame interpolation, and 2D-to-3D transformation techniques."
   ms.date: 4/28/2025

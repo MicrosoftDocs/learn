@@ -2,6 +2,27 @@
 uid: learn.dpu.copilot-and-copilot-agents
 title: Microsoft 365 Copilot and Copilot agents
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 12
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-365-copilot
+    - microsoft-copilot-studio
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+    - technology-manager
+  gs-skills:
+    - "AI Fluency"
+    - "Agentic AI"
+    - "AI Business & Vision"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/copilot-and-copilot-agents/index.yml
   title: Microsoft 365 Copilot and Copilot agents
   description: In this module, you'll learn how Microsoft 365 Copilot and Copilot agents enhance productivity and streamline workflows by providing intelligent assistance within Microsoft 365 applications.
   ms.date: 06/26/2025

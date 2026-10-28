@@ -2,6 +2,36 @@
 uid: learn.philanthropies.ai-toolbox-for-trainers
 title: An AI toolbox for trainers
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - m365
+    - microsoft-365-copilot
+    - office-teams
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+    - higher-ed-educator
+    - k-12-educator
+  gs-skills:
+    - "Generative AI"
+    - "Responsible AI"
+    - "AI Productivity"
+    - "AI Workforce Applications"
+    - "Role focused AI Workflows"
+    - "AI Prompting"
+    - "Collaboration Tools"
+    - "Digital Accessibility"
+    - "Communications Management"
+    - "AI Fluency"
+    - "Career Development"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/ai-toolbox-for-trainers/index.yml
   title: An AI toolbox for trainers
   description: In today's fast-paced digital era, artificial intelligence (AI) is changing the way we train and educate. This learning path is designed to equip you with an understanding of how AI tools can transform a learning environment. Throughout this learning path, you'll explore how AI can elevate the training experience, build engaging content, and foster a more inclusive training environment. You'll also explore the advantages of integrating AI-powered productivity tools into your daily educational practices. By the end of this learning path, you'll be equipped to design and implement training ecosystems that apply AI tools to enhance the training process.
   author: yoosunee

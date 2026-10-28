@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to determine generative AI knowledge sources for agents built in Copilot Studio. Explore orchestration modes, grounding strategies, and governance."
   ms.date: 02/13/2026
   author: Randall-Knapp
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 26

@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.backup-restore-databases
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 61
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+  gs-skills:
+    - "Data Administration"
+    - Databases
+    - Storage
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/backup-restore-databases/index.yml
   title: Back up and restore databases
   description: Back up and restore databases
   ms.date: 08/10/2026

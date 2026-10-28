@@ -1,6 +1,24 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.use-variables-arrays-hash-tables-windows-powershell
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+  gs-skills:
+    - Automation
+    - "Infrastructure Management"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/use-variables-arrays-hash-tables-windows-powershell/index.yml
   title: Use variables, arrays, and hash tables in Windows PowerShell scripts
   description: This learning path explains how to work with variables, arrays, and hash tables in Windows PowerShell scripts.
   ms.date: 05/12/2026

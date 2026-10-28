@@ -1,11 +1,36 @@
 ### YamlMime:Module
 uid: learn.monitor-report-aad-security-events
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 72
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+    - azure
+    - power-bi
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - security-operations-analyst
+    - identity-access-admin
+  gs-skills:
+    - "Security Analytics"
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+    - "Data Analytics"
+    - "Data Visualization"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/monitor-report-aad-security-events/index.yml
   title: Monitor and report on security events in Microsoft Entra ID
   description: Monitor Microsoft Entra security events with built-in reporting and monitoring capabilities to prevent unauthorized access and potential data loss.
   ms.date: 03/01/2023
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: module
   ms.service: entra-id
 title: Monitor and report on security events in Microsoft Entra ID

@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check for module on the topic: design solutions for securing server and client endpoints."
   ms.date: 06/05/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 5

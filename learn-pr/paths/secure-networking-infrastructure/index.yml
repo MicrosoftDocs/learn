@@ -1,11 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.secure-networking-infrastructure
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - security-engineer
+    - solution-architect
+  gs-skills:
+    - Cybersecurity
+    - "IT Networking"
+    - "Security Architecture Design"
+    - "Security Operations Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/secure-networking-infrastructure/index.yml
   title: Introduction to Secure Network Infrastructure with Azure network security
   description: Learn to protect your network from cyber security attacks to secure your networking infrastructure.
   ms.date: 04/20/2021
   author: vhorne
-  ms.author: victorh
+  ms.author: lumac
   ms.topic: learning-path
 title: Introduction to Secure Network Infrastructure with Azure network security
 prerequisites: |

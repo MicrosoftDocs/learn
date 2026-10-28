@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.github.manage-changes-pull-requests-github
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 49
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - devops-engineer
+    - administrator
+    - student
+  gs-skills:
+    - DevOps
+    - "Application Development"
+    - "Collaboration Tools"
+    - "Communications Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/manage-changes-pull-requests-github/index.yml
   title: "Manage repository changes by using pull requests on GitHub"
   description: Learn how to manage changes to your repository source by using pull requests.
   ms.date: 12/09/2024

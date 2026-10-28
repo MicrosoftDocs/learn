@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-protect-on-premises-data
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 41
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-purview
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ip-admin
+    - security-engineer
+    - systems-administrator
+    - risk-practitioner
+  gs-skills:
+    - "Data Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - Cybersecurity
+    - "Security Automation"
+    - "Identity and Access Management (IAM)"
+    - "Security Operations Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-protect-on-premises-data/index.yml
   title: Classify and protect on-premises data with Microsoft Purview
   description: "Classify and protect on-premises data with Microsoft Purview."
   ms.date: 04/24/2025

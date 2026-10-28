@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to configure governance controls for AI workloads using Microsoft Foundry and Azure services to ensure compliance and innovation."
   ms.date: 02/02/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
   ms.custom: references_regions
 durationInMinutes: 75

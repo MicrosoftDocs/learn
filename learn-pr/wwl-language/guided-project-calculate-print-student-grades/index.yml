@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-calculate-print-student-grades
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 44
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/guided-project-calculate-print-student-grades/index.yml
   title: Guided project - Calculate and print student grades
   description: Learn to develop an application that will calculate and display results based on given data.
   ms.date: 11/10/2025

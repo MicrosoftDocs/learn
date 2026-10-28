@@ -6,7 +6,7 @@ metadata:
   description: "Validate that Conditional Access policies enforce Zero Trust principles of explicit verification, least privilege, and assume breach."
   ms.date: 05/28/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 13
 content: |

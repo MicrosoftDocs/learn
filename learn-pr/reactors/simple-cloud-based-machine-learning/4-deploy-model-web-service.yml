@@ -6,7 +6,7 @@ metadata:
   description: Deploy your model as a web service for data science operations.
   ms.date: 06/30/2020
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5

@@ -6,7 +6,7 @@ metadata:
   description: "Enforce Microsoft Entra multifactor authentication for Azure Virtual Desktop using Conditional Access"
   ms.date: 08/20/2024
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

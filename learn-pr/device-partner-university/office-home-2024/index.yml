@@ -2,6 +2,22 @@
 uid: learn.dpu.office-home-2024
 title: Introduction to Microsoft Office Home 2024
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+    - student
+  gs-skills: null
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/office-home-2024/index.yml
   title: Introduction To Microsoft Office Home 2024
   description: In this module, you'll learn how Microsoft Office Home 2024 works as a one-time purchase offering core desktop apps for everyday productivity. You'll evaluate whether it’s the right fit for your needs by understanding its features, limitations, and how it compares to subscription-based options.
   ms.date: 05/20/2026

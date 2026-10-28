@@ -6,7 +6,7 @@ metadata:
   description: "Advanced features of KQL databases include materialized views and stored functions."
   ms.date: 09/10/2025
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

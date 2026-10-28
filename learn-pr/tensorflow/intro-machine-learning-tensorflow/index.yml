@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.tensorflow.intro-machine-learning-tensorflow
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 61
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - developer
+  gs-skills:
+    - "Machine Learning"
+    - "Python (Programming Language)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/tensorflow/intro-machine-learning-tensorflow/index.yml
   title: "Go beyond Keras: Customize with TensorFlow"
   description: Learn how to build a machine learning model using lower-level TensorFlow concepts.
   ms.date: 10/10/2025

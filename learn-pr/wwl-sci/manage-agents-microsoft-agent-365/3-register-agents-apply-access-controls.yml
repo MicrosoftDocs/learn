@@ -5,7 +5,7 @@ metadata:
   description: Register AI agents in Microsoft Agent 365 and apply organizational access controls, including approval workflows, usage policies, and scope restrictions, to ensure agents operate within defined boundaries.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Register agents and apply access controls

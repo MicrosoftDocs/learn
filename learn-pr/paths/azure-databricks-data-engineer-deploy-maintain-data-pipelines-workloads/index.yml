@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure-databricks
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - devops-engineer
+  gs-skills:
+    - "Data Engineering"
+    - SQL
+    - Automation
+    - DevOps
+    - "Platform Engineering"
+    - "Cloud Administration"
+    - "Data Analytics"
+    - "Python (Programming Language)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads/index.yml
   title: Deploy and Maintain Data Pipelines and Workloads With Azure Databricks
   description: Master the complete lifecycle of building, deploying, and maintaining production-ready data pipelines in Azure Databricks—from design and orchestration to monitoring and optimization.
   ms.date: 12/09/2025

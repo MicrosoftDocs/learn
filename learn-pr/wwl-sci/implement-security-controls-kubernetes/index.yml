@@ -1,11 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-security-controls-aks
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 31
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - devops-engineer
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Application Security"
+    - "Zero Trust Security"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-security-controls-kubernetes/index.yml
   title: Implement Security Controls for Azure Kubernetes Service
   description: "Implement security controls for Azure Kubernetes Service. Configure Microsoft Entra integration and Kubernetes RBAC for API server authentication and authorization, enforce network policies and private cluster access. Then apply workload identity and pod security standards to harden containerized workloads in Azure Kubernetes Service (AKS)."
   ms.date: 05/10/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-kubernetes-service
   ai-usage: ai-assisted

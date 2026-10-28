@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.fundamentals-generative-ai
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 37
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+    - solution-architect
+    - student
+  gs-skills:
+    - "Generative AI"
+    - "Natural Language Processing (NLP)"
+    - "Prompt Engineering"
+    - "Large Language Model Operations (LLMOps)"
+    - "Embedding Models"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Agentic AI"
+    - "AI Fluency"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/fundamentals-generative-ai/index.yml
   adobe-target: true
   prefetch-feature-rollout: true
   title: Introduction to generative AI and agents

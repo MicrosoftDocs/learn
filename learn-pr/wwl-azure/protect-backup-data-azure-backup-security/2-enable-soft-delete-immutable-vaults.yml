@@ -5,7 +5,7 @@ metadata:
   description: Configure enhanced soft delete and vault immutability to protect Azure Backup recovery points from deletion by ransomware and unauthorized administrators.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Enable soft delete and immutable vaults

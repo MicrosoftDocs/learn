@@ -1,11 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-100-design-operations-identity-compliance-capabilities
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - entra
+    - microsoft-sentinel
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - solution-architect
+  gs-skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Architecture Design"
+    - "AI Compliance"
+    - "Data Security"
+    - "Cloud Infrastructure"
+    - "Zero Trust Security"
+    - "Identity and Access Management (IAM)"
+    - "Network Connectivity"
+    - "Threat Management"
+    - "Agent Operations"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/sc-100-design-operations-identity-compliance-capabilities/index.yml
   title: 'Design security operations, identity, and compliance capabilities'
   description: 'SC-100: Design security operations, identity, and compliance capabilities'
   ms.date: 04/03/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: learning-path
 title: 'Design security operations, identity, and compliance capabilities'
 prerequisites: |

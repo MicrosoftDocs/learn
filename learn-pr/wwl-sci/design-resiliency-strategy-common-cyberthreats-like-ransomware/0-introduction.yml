@@ -6,7 +6,7 @@ metadata:
   description: "Introduction to the module, Design a resiliency strategy for ransomware and other attacks based on Microsoft Security Best Practices."
   ms.date: 05/21/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 2
 content: |

@@ -2,11 +2,46 @@
 uid: learn.dpu.microsoft-education-k-12-accreditation-2025
 title: Microsoft Education for K-12 Accreditation 2025
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - m365
+    - microsoft-defender
+    - intune
+    - microsoft-365-copilot
+    - security-copilot
+    - microsoft-purview
+    - microsoft-copilot-studio
+    - azure-openai
+    - microsoft-foundry
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+    - k-12-educator
+    - sales
+  gs-skills:
+    - "AI Business & Vision"
+    - "AI Solutions"
+    - "Responsible AI"
+    - Cybersecurity
+    - "Device Management"
+    - "Digital Accessibility"
+    - "Accessible AI"
+    - "Generative AI"
+    - "Cloud Administration"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/microsoft-education-k-12-accreditation-2025/index.yml
   title: Microsoft Education For K-12 Accreditation 2025
   description: This Learning Path introduces Microsoft Education solutions designed specifically for K–12 institutions. You'll explore how these tools empower administrators, educators, IT professionals, and students to enhance learning outcomes, streamline operations, and foster inclusive, engaging educational environments. Whether you're new to Microsoft Education or looking to deepen your understanding, this Learning Path will guide you through the key capabilities and best practices for implementation in K–12 settings.
   ms.date: 08/22/2025
   author: melissawinters
-  ms.author: v-mwinters
+  ms.author: lumac
   ms.topic: learning-path
   ms.custom: CE052925-0
 summary: >

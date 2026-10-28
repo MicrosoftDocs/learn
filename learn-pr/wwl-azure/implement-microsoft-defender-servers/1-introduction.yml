@@ -5,7 +5,7 @@ metadata:
   description: Introduction to implementing Microsoft Defender for Servers, covering the threat detection and vulnerability visibility gaps addressed in this module.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction

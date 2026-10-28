@@ -6,7 +6,7 @@ metadata:
   description: "Learn about Continuous Integration and Continuous Delivery (CI/CD) and how to use it in Fabric."
   ms.date: 05/06/2025
   author: wwlpublish
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

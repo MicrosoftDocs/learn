@@ -6,7 +6,7 @@ metadata:
   description: "Enable transparent data encryption with service-managed and customer-managed keys in Azure Key Vault, enforce transport encryption, and evaluate Always Encrypted for column-level protection."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 4

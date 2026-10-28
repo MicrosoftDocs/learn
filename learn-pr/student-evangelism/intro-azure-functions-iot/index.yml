@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.oxford.intro-iot-functions-iot
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 27
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Cloud Computing"
+    - "Application Architecture"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/intro-azure-functions-iot/index.yml
   title: "Introduction to Azure Functions in IoT solutions"
   description: "Learn about using Azure Functions in IoT solutions. University of Oxford"
   ms.date: 05/10/2026

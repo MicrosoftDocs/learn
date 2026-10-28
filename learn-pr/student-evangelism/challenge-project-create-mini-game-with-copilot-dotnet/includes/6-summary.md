@@ -9,6 +9,6 @@ Your ability to implement features of this console minigame application based on
 
 To continue learning, you can explore additional Copilot learning resources on Microsoft Learn:
 
-- [Using GitHub Copilot with JavaScript](https://learn.microsoft.com/training/modules/introduction-copilot-javascript/)
-- [Using GitHub Copilot with Python](https://learn.microsoft.com/training/modules/introduction-copilot-python/)
-- [Challenge project - Add image analysis and generation capabilities to your application](https://learn.microsoft.com/training/modules/challenge-project-add-image-analysis-generation-to-app/)
+- [Using GitHub Copilot with JavaScript](/training/modules/introduction-copilot-javascript/)
+- [Using GitHub Copilot with Python](/training/modules/introduction-copilot-python/)
+- [Challenge project - Add image analysis and generation capabilities to your application](/training/modules/challenge-project-add-image-analysis-generation-to-app/)

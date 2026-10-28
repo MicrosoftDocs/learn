@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.github.security-campaign
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - security-operations-analyst
+    - devops-engineer
+    - security-professional
+  gs-skills:
+    - "Security Operations Management"
+    - "Threat Management"
+    - "Security Automation"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/security-campaign/index.yml
   title: Security Campaigns and Prevention-First Strategy
   description: Learn how to coordinate security remediation across repositories using GitHub Advanced Security campaigns. You'll explore how to scope and manage security campaigns, assign remediation ownership, track alert resolution, measure campaign effectiveness, and apply prevention-first controls to reduce the introduction of new vulnerabilities.
   author: a-a-ron

@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.azure.register-and-setup
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 44
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - storage-admin
+  gs-skills:
+    - "Cloud Administration"
+    - Storage
+    - "Network Connectivity"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/managing-azure-netapp-files-register-setup/index.yml
   title: Register and Set Up Azure NetApp Files
   description: Learn to register and set up Azure NetApp Files by registering the NetApp Resource Provider and create a NetApp account. Also learn how to delegate a subnet to Azure NetApp Files and request access to a region
   ms.date: 03/25/2026

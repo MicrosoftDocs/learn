@@ -6,7 +6,7 @@ metadata:
   description: Check your knowledge
   ms.date: 05/18/2023
   author: asajohnson
-  ms.author: asjohnso
+  ms.author: lumac
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 5

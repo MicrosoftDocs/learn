@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-database-objects
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 93
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - database-administrator
+    - data-engineer
+    - solution-architect
+  gs-skills:
+    - Databases
+    - "Database Design"
+    - "Database Development"
+    - SQL
+    - "Data Management"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/design-implement-database-objects/index.yml
   title: Design and Implement Database Objects with SQL
   description: "Learn how to design and implement database objects in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric, including tables, indexes, constraints, and specialized table types."
   ms.date: 07/01/2026

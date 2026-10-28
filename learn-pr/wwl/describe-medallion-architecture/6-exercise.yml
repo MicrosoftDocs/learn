@@ -6,7 +6,7 @@ metadata:
   description: "Practice implementing a medallion architecture in a Fabric lakehouse by moving data through the bronze, silver, and gold layers and querying the results using the SQL analytics endpoint."
   ms.date: 06/10/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 45
 content: |

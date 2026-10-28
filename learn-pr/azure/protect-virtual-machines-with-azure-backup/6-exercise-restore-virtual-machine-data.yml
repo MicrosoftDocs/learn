@@ -5,7 +5,7 @@ metadata:
   description: Learn how to restore a successful backup to replace a virtual machine that became corrupted, and monitor its progress.
   ms.date: 09/05/2024
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: lumac
   ms.topic: unit
 title: Exercise - Restore Azure virtual machine data
 durationInMinutes: 6

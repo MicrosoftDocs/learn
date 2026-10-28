@@ -5,7 +5,7 @@ metadata:
   description: Introduction to implementing security controls for Azure App Service and Web Application Firewall for web workload protection.
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction

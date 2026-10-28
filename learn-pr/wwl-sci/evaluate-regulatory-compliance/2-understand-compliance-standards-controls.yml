@@ -5,7 +5,7 @@ metadata:
   description: Learn how compliance standards, controls, and assessments work in Defender for Cloud, including the Microsoft Cloud Security Benchmark, standard types, assessment states, and required permissions.
   ms.date: 03/26/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Understand compliance standards and controls in Defender for Cloud

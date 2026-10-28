@@ -6,7 +6,7 @@ metadata:
   description: "Discover foundational concepts and best practices for designing scalable, secure, and customizable AI solutions using Microsoft platforms."
   ms.date: 02/13/2026
   author: pablorodMS
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

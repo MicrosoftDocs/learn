@@ -6,7 +6,7 @@ metadata:
   description: "Exercise - Use delta tables in Apache Spark"
   ms.date: 05/23/2025
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 40
 content: |

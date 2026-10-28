@@ -70,7 +70,7 @@ If this is your first custom authentication extension, [register the custom auth
 
 #### 2. Register custom authentication extension
 
-Next, you [register the custom authentication extension](/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-beta&tabs=http). You register the custom authentication extension by associating it with the **Custom authentication extension security app** you created, and to your REST API endpoint. Replace the following values with your own:
+Next, you [register the custom authentication extension](/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-beta&tabs=http&preserve-view=true). You register the custom authentication extension by associating it with the **Custom authentication extension security app** you created, and to your REST API endpoint. Replace the following values with your own:
     - **{app-ID}** with the app ID from the previous call **Custom authentication extension security app**.
     - **{REST-API-domain}** with your rest API domain name
     - **{Endpoint-URL}** - with the RUL of your REST API endpoint
@@ -137,7 +137,7 @@ From the response, copy the value of the **id**. For example:
 
 ##### 2.2 Create an authentication event listener
 
-After you have registered your custom authentication extension, [create an authentication event listener](/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-beta&tabs=http). In the next JSON, replace **{Custom-auth-extension-ID}** with the custom authentication extension you just created.
+After you have registered your custom authentication extension, [create an authentication event listener](/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-beta&tabs=http&preserve-view=true). In the next JSON, replace **{Custom-auth-extension-ID}** with the custom authentication extension you just created.
 
 ```json
 POST https://graph.microsoft.com/beta/identity/authenticationEventListeners
@@ -183,8 +183,8 @@ POST https://graph.microsoft.com/beta/identity/authenticationEventListeners
 
 ##### 2.3 Link the custom authentication extension to a user flow
 
-[Update your user flow](/graph/api/authenticationeventsflow-update?view=graph-rest-beta&tabs=http). In the following request, replace the following values with your own:
-    - **{user-flow-ID}** with your [user flow ID](/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-beta&tabs=http).
+[Update your user flow](/graph/api/authenticationeventsflow-update?view=graph-rest-beta&tabs=http&preserve-view=true). In the following request, replace the following values with your own:
+    - **{user-flow-ID}** with your [user flow ID](/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-beta&tabs=http&preserve-view=true).
     - **{Custom-auth-extension-ID}** with the custom authentication extension you just created.
 
 ```json

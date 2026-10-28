@@ -6,7 +6,7 @@ metadata:
   description: "You've deployed secure AI infrastructure for Contoso using Azure RBAC, managed identities, and Cosmos DB with optimized configurations. Now test your understanding of when to apply these technologies and how to make the right architectural decisions for production workloads. The following questions present realistic scenarios that require you to evaluate security trade-offs, choose appropriate configurations, and identify best practices based on specific business requirements."
   ms.date: 02/02/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
   module_assessment: false
 durationInMinutes: 4

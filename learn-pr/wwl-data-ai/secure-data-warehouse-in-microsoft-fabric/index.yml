@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 74
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+  gs-skills:
+    - "Data Warehousing"
+    - SQL
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/secure-data-warehouse-in-microsoft-fabric/index.yml
   title: Secure a Microsoft Fabric data warehouse
   description: Learn the key concepts and strategies for protecting sensitive data in Microsoft Fabric data warehouses.
   ms.date: 06/11/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: module
   ms.service: azure
   ai-usage: ai-assisted

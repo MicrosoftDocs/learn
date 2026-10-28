@@ -1,11 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-implement-entitlement-management
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 55
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Zero Trust Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/plan-implement-entitlement-management/index.yml
   title: Plan and Implement Entitlement Management
   description: "When new users or external users join your site, quickly assigning them access to Azure solutions is a must. Explore how to entitle users to access your site and resources."
   ms.date: 04/21/2025
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.collection: N/A
   ms.custom:

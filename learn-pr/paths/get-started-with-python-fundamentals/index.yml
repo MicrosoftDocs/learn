@@ -1,8 +1,26 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-with-python-fundamentals
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Python (Programming Language)"
+    - "Application Development"
+    - "Data Analytics"
+    - "AI-Augmented Software Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-with-python-fundamentals/index.yml
   title: "Get Started with Python Programming: Part 1 - Fundamentals"
-  description: Learn the fundamentals of programming in Python.
+  description: Start coding in Python with variables, data types, and decisions, and configure Visual Studio Code to develop your first programs.
   ms.date: 07/15/2026
   author: wwlpublish
   ms.author: buzahid

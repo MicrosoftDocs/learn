@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-reusable-code
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 61
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-reusable-code/index.yml
   title: Write reusable code in C#
   description: "Learn how to write reusable code in C# using methods, parameters, return values, variable scope, and namespaces."
   ms.date: 09/23/2026

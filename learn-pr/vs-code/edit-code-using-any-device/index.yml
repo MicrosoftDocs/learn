@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.edit-code-using-any-device
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 17
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Collaboration Tools"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/vs-code/edit-code-using-any-device/index.yml
   title: Edit code using any device with Visual Studio Code for the Web
   description: "In this module, you'll learn how to use Visual Studio for the Web to develop from any device that is browser compatible. We'll explore how to make and review lightweight code edits using Visual Studio Code for the Web. Finally, we'll learn how to continue working in a different environment to get the full feature set of Visual Studio Code."             
   ms.date: 01/22/2024           

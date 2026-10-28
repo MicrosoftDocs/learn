@@ -1,6 +1,28 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-app-secrets-configuration
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - security-engineer
+    - devops-engineer
+  gs-skills:
+    - "Application Security"
+    - "Identity and Access Management (IAM)"
+    - "Application Development"
+    - "Security Automation"
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-app-secrets-configuration/index.yml
   title: Manage Application Secrets and Configuration for AI Solutions
   description: Learn how to manage application secrets and configuration for AI solutions on Azure using Azure Key Vault and Azure App Configuration.
   ms.date: 02/18/2026

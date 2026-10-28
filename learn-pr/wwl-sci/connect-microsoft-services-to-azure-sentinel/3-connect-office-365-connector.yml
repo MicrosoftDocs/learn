@@ -6,7 +6,7 @@ metadata:
   description: "Connect the Microsoft 365 connector"
   ms.date: 01/13/2025
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

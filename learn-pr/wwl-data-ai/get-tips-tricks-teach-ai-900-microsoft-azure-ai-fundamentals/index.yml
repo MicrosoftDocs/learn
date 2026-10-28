@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 54
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - higher-ed-educator
+  gs-skills:
+    - "AI Fluency"
+    - "Machine Learning"
+    - "Computer Vision"
+    - "Natural Language Processing (NLP)"
+    - "Generative AI"
+    - "Responsible AI"
+    - "Semantic Search"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals/index.yml
   title: Get tips and tricks for teaching AI-900 Microsoft Azure AI Fundamentals
   description: Get tips and tricks for teaching AI-900 Microsoft Azure AI Fundamentals
   author: wwlpublish

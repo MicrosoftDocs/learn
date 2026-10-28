@@ -1,11 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.characterize-devops-continous-collaboration-improvement
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 17
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+  gs-skills:
+    - DevOps
+    - "Organizational Culture"
+    - "Organizational Effectiveness"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/characterize-devops-continous-collaboration-improvement/index.yml
   title: Characterize DevOps Continuous Collaboration and Continuous Improvement
   description: "Characterize DevOps Continuous Collaboration and Continuous Improvement"
   ms.date: 04/16/2021
   author: wwlpublish
-  ms.author: sallybre
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-devops
 title: Characterize DevOps Continuous Collaboration and Continuous Improvement

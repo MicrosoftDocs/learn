@@ -1,6 +1,28 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.windows-server-network-infrastructure
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - network-engineer
+    - systems-administrator
+  gs-skills:
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Infrastructure Management"
+    - Cybersecurity
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/windows-server-network-infrastructure/index.yml
   title: Windows Server Network Infrastructure
   description: Windows Server Network Infrastructure
   ms.date: 01/23/2026

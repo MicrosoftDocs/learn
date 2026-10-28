@@ -6,7 +6,7 @@ metadata:
   description: "Learn to design custom connectors for Copilot in Dynamics 365 Sales, enabling secure authentication, publishing actions, and enhancing workflows."
   ms.date: 02/13/2026
   author: Randall-Knapp
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 5

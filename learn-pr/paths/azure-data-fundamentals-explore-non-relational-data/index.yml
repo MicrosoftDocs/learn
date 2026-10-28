@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-data-fundamentals-explore-non-relational-data
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+    - data-engineer
+    - database-administrator
+    - developer
+  gs-skills:
+    - Storage
+    - Databases
+    - "Database Design"
+    - "Data Management"
+    - "Cloud Computing"
+    - "Data Engineering"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/azure-data-fundamentals-explore-non-relational-data/index.yml
   title: 'Introduction to Microsoft Azure Data non-relational data in Azure'
   description: 'Introduction to Microsoft Azure Data non-relational data in Azure'
   ms.date: 05/04/2026

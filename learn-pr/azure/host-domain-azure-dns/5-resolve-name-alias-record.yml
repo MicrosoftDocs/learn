@@ -6,7 +6,7 @@ metadata:
   description: Dynamically resolve resource name by using alias record
   ms.date: 10/03/2024
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

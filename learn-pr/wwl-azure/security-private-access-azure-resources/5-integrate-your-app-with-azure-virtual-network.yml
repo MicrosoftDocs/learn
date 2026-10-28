@@ -6,7 +6,7 @@ metadata:
   description: "Plan and implement network integration for Azure App Service and Azure Functions"
   ms.date: 10/03/2024
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - references_regions

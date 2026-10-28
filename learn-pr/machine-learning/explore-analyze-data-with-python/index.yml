@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-analyze-data-with-python
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 60
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+  gs-skills:
+    - "Python (Programming Language)"
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Data Science"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/machine-learning/explore-analyze-data-with-python/index.yml
   title: Explore and analyze data with Python
   description: "Data exploration and analysis is at the core of data science. Data scientists require skills in programming languages like Python to explore, visualize, and manipulate data."
   ms.date: 12/01/2025

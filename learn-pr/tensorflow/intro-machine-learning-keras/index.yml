@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.tensorflow.intro-machine-learning-keras
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 46
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - developer
+    - student
+  gs-skills:
+    - "Machine Learning"
+    - "Data Science"
+    - "Python (Programming Language)"
+    - "AI Model Evaluation & Testing"
+    - "Computer Vision"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/tensorflow/intro-machine-learning-keras/index.yml
   ms.service: azure-machine-learning
   title: Introduction to TensorFlow using Keras
   description: Learn how to build a TensorFlow machine learning model using the Keras API.

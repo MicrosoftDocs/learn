@@ -1,6 +1,26 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.monitor-optimize-operational-resources-sql-server
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+  gs-skills:
+    - Databases
+    - SQL
+    - "Data Administration"
+    - "Infrastructure Management"
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/monitor-optimize-operational-resources-sql-server/index.yml
   title: Monitor and optimize operational resources in Azure SQL
   description: Monitor and optimize operational resources in Azure SQL
   ms.date: 08/05/2026

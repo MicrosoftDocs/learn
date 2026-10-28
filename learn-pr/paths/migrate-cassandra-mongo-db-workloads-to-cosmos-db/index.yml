@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.migrating-cassandra-mongo-db-workloads-cosmos-db
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+  gs-skills:
+    - "Data Migration"
+    - "Database Design"
+    - Databases
+    - "Data Administration"
+    - "Database Development"
+    - "Data Engineering"
+    - "Application Development"
+    - "Cloud Infrastructure"
+    - "Network Connectivity"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/migrate-cassandra-mongo-db-workloads-to-cosmos-db/index.yml
   title: Migrating Cassandra and MongoDB workloads to Cosmos DB
   description: Migrating Cassandra and MongoDB workloads to Cosmos DB
   ms.date: 02/02/2021

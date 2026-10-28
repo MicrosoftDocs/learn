@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.data-ai.introduction-to-azure-data-lake-storage
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 30
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - storage-admin
+    - solution-architect
+  gs-skills:
+    - Storage
+    - "Data Engineering"
+    - "Data Warehousing"
+    - "Data Management"
+    - "Data Security"
+    - "Data Analytics"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/data-ai-cert/introduction-to-azure-data-lake-storage/index.yml
   title: Introduction to Azure Data Lake Storage Gen2
   description: "Discover how Data Lake Storage provides a repository where you can upload and store unstructured data bringing new efficiencies to processing big data analytics."
   ms.date: 10/12/2026

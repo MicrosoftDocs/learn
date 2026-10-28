@@ -6,7 +6,7 @@ metadata:
   description: "Explore disaster recovery of SAP workloads, covering Application servers, Central Services servers, and Database servers."
   ms.date: 12/23/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

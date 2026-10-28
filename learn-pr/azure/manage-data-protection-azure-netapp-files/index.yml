@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.azure.manage-data-protection-azure-netapp-files
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 86
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - storage-admin
+    - systems-administrator
+  gs-skills:
+    - Storage
+    - "Cloud Administration"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/manage-data-protection-azure-netapp-files/index.yml
   title: Manage Data Protection with Azure NetApp Files
   description: Learn various ways to manage volume snapshots, volume backups, replication, availability zone, and cross-region replication with Azure NetApp Files.
   ms.date: 07/22/2026

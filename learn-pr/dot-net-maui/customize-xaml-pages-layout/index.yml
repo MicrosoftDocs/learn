@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.dotnet-maui.customize-xaml-pages-layout
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 60
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - vs
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/dot-net-maui/customize-xaml-pages-layout/index.yml
   title: Customize layout in .NET MAUI XAML pages
   description: Create consistent user interfaces across different devices by using StackLayout and Grid.
   ms.date: 12/04/2024

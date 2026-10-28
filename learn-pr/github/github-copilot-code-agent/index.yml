@@ -2,6 +2,26 @@
 uid: learn.github.github-copilot-code-agent
 title: Accelerate development with Copilot in the cloud
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 40
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github-copilot
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "AI-Augmented Software Development"
+    - "Agentic AI"
+    - "AI Security (Model-Level)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/github-copilot-code-agent/index.yml
   title: Accelerate development with Copilot in the cloud
   description: Learn how Copilot in the cloud automates routine tasks, manages pull requests, and supports your development workflow.
   author: camihmerhar

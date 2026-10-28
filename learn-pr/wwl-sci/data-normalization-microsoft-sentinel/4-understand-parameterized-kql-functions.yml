@@ -6,7 +6,7 @@ metadata:
   description: "Understand parameterized KQL functions"
   ms.date: 04/17/2026
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to evaluate Azure network designs against Zero Trust principles, defense-in-depth controls, and Microsoft security best practices as a security architect."
   ms.date: 05/20/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 8

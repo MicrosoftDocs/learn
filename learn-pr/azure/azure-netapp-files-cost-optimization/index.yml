@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.azure.azure-netapp-file-cost-optimization
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - storage-admin
+    - technology-manager
+  gs-skills:
+    - Storage
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-netapp-files-cost-optimization/index.yml
   moduleType: introduction        
   title: Optimize costs with Azure NetApp Files      
   description: This module looks at cost models and cost optimization features in Azure NetApp Files.    

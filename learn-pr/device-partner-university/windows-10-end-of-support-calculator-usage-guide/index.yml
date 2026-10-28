@@ -2,6 +2,30 @@
 uid: learn.dpu.windows-10-end-of-support-calculator-usage-guide
 title: Windows 10 EOS Calculator usage guide
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+    - intune
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - technology-manager
+    - systems-administrator
+    - business-owner
+  gs-skills:
+    - "Device Management"
+    - "Infrastructure Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Visualization"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/windows-10-end-of-support-calculator-usage-guide/index.yml
   title: Windows 10 EOS Calculator Usage Guide
   description: Use the Windows 10 EOS Calculator to assess post-EOS exposure, test phased vs. accelerated timelines, and generate a clear plan for Windows 11.
   ms.date: 10/08/2025

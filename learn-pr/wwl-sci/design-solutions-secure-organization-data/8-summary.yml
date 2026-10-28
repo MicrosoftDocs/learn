@@ -6,7 +6,7 @@ metadata:
   description: "Summary of a module on the topic: design solutions for securing an organization's data."
   ms.date: 06/02/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 3

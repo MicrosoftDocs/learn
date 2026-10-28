@@ -1,6 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.integrate-azure-cosmos-db-sql-api-azure-services
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - data-engineer
+  gs-skills:
+    - "Database Development"
+    - "Application Development"
+    - "Data Engineering"
+    - Databases
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/integrate-azure-cosmos-db-sql-api-azure-services/index.yml
   title: Integrate Azure Cosmos DB for NoSQL with Azure services
   description: Integrate Azure Cosmos DB for NoSQL with Azure services
   ms.date: 04/02/2025

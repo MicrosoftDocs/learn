@@ -1,6 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.prepare-teach-mb-910-microsoft-dynamics-365-fundamentals
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - dynamics-365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - higher-ed-educator
+  gs-skills:
+    - "Career Development"
+    - "Collaboration Tools"
+    - "Digital Accessibility"
+    - "Customer Relationship Management (CRM)"
+    - "Communications Management"
+    - "Organizational Effectiveness"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/prepare-teach-mb-910-microsoft-dynamics-365-fundamentals/index.yml
   title: Prepare to teach MB-910 Microsoft Dynamics 365 Fundamentals (CRM)
   description: Prepare to teach MB-910 Microsoft Dynamics 365 Fundamentals (CRM)
   ms.date: 08/08/2022

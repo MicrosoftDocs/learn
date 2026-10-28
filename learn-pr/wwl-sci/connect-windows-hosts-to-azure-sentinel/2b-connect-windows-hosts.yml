@@ -6,7 +6,7 @@ metadata:
   description: "Connect using the Security Events via Legacy Agent Connector"
   ms.date: 04/09/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

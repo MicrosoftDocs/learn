@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.azure.oracle-application-azure-paas
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 25
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+  gs-skills:
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/oracle-application-azure-paas/index.yml
   title: Migrate Oracle-powered applications by using Azure PaaS database services
   description: Learn how to migrate Oracle-powered applications by using Azure PaaS database services.
   ms.date: 05/01/2024

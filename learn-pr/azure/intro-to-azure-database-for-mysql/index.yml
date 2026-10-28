@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-database-for-mysql 
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 33
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - solution-architect
+  gs-skills:
+    - Databases
+    - "Data Administration"
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-database-for-mysql/index.yml
   moduleType: introduction        
   title: Introduction to Azure Database for MySQL
   description: Describe how Azure Database for MySQL supports mission-critical workloads with predictable performance and dynamic scalability. Determine whether you should implement Azure Database for MySQL to address your relational database needs.

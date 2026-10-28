@@ -5,7 +5,7 @@ metadata:
   title: Queue trigger
   description: Learn how to work with queues and queue triggers to consume messages.
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.date: 07/12/2021
   ms.topic: unit
   ms.custom: team=nextgen

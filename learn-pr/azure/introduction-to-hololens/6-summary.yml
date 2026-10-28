@@ -6,7 +6,7 @@ metadata:
   title: Get started with Hololens
   description: "This unit provides information about how HoloLens 2 transforms industries. It provides success stories, information on digital imagery, and usage examples."
   author: qianw211
-  ms.author: qianwen
+  ms.author: lumac
   ms.date: 03/01/2024
   ms.topic: unit
 durationInMinutes: 5

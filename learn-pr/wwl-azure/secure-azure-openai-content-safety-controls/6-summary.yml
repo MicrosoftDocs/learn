@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to secure Azure OpenAI deployments with layered content safety controls, custom thresholds, and block lists for comprehensive protection."
   ms.date: 02/04/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

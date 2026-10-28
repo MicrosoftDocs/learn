@@ -1,6 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-manage-apps-azure-container-apps
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+  gs-skills:
+    - "Cloud Infrastructure"
+    - DevOps
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - "Network Connectivity"
+    - "AI Infrastructure"
+    - "Application Architecture"
+    - "Application Development"
+    - Cybersecurity
+    - "Python (Programming Language)"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/deploy-manage-apps-azure-container-apps/index.yml
   title: Deploy and Manage Apps on Azure Container Apps
   description: Learn how to deploy, manage, and scale containerized applications and securely run AI-generated code on Azure Container Apps.
   ms.date: 01/27/2026

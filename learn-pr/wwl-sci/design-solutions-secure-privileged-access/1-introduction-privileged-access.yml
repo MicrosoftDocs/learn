@@ -6,7 +6,7 @@ metadata:
   description: "Learn about securing privileged access using Zero Trust principles, the Microsoft Cloud Security Benchmark, and AI considerations for the SC-100 Microsoft Cybersecurity Architect certification."
   ms.date: 05/29/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 9
 content: |

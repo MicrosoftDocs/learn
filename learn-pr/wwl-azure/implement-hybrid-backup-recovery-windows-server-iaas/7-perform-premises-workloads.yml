@@ -6,7 +6,7 @@ metadata:
   description: "Perform backup and restore of on-premises workloads"
   ms.date: 12/20/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 12

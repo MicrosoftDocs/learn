@@ -6,7 +6,7 @@ metadata:
   description: "Summary of the Challenge Learn module for building augmented reality apps for HoloLens 2."
   ms.date: 7/25/2023
   author: tholewis
-  ms.author: tholewis
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 1
 content: |

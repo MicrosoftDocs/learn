@@ -2,11 +2,30 @@
 uid: learn.dpu.introduction-windows-365
 title: Introduction to Windows 365
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 15
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+  gs-skills:
+    - Virtualization
+    - "Cloud Administration"
+    - "Device Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-windows-365/index.yml
   title: Introduction To Windows 365
   description: 'In this module, you’ll explore what Windows 365 is, how it delivers cloud‑based Windows desktops, and how to decide if it’s the right solution for your organization’s workforce needs.'
   ms.date: 04/28/2026
   author: sheridan-connor
-  ms.author: v-mwinters
+  ms.author: lumac
   ms.topic: module
   ms.service: microsoft-365-business
 summary: >2+

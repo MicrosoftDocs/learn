@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 50
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-databricks
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - data-engineer
+    - solution-architect
+    - administrator
+  gs-skills:
+    - "Data Migration"
+    - Databases
+    - "Data Engineering"
+    - "Cloud Administration"
+    - "Data Management"
+    - "Python (Programming Language)"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/migrate-vcore-based-azure-cosmos-db-mongodb/index.yml
   title: Migrate to vCore-based Azure Cosmos DB for MongoDB
   description: "Migrate to vCore-based Azure Cosmos DB for MongoDB."
   ms.date: 11/24/2024

@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-literals-variables
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 39
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-literals-variables/index.yml
   title: Store data with variables in C#
   description: "Use data in your applications by creating literal values and variable values of different data types."
   ms.date: 9/25/2026

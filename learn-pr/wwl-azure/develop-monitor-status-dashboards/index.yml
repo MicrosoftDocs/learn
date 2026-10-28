@@ -1,6 +1,38 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-monitor-status-dashboards
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 51
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - azure-devops
+    - github
+    - power-bi
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - administrator
+    - platform-engineer
+    - data-engineer
+    - data-analyst
+    - technology-manager
+  gs-skills:
+    - DevOps
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Cloud Administration"
+    - Automation
+    - "Application Development"
+    - "Platform Engineering"
+    - "Business Insights"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/develop-monitor-status-dashboards/index.yml
   title: Develop Monitor and Status Dashboards
   description: "Learn to create comprehensive monitoring dashboards using Azure Dashboards, Azure Monitor Workbooks, Power BI, and GitHub monitoring tools. Track pipeline health metrics including failure rates, duration, and flaky tests. Optimize pipeline performance for cost and reliability. Explore visualization strategies and custom application development for DevOps monitoring at scale."
   ms.date: 10/20/2025

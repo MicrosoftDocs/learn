@@ -2,11 +2,32 @@
 uid: learn.dpu.automate-meeting-scheduling
 title: Automate meeting scheduling with Microsoft Teams
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 19
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - office-teams
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - business-user
+  gs-skills:
+    - "Collaboration Tools"
+    - "Communications Management"
+    - "Process Automation"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/automate-meeting-scheduling-with-microsoft-teams/index.yml
   title: Automate Meeting Scheduling With Microsoft Teams
   description: "In this module, you’ll learn how to:\n\n- Use Microsoft Teams’ calendar integration to schedule meetings.\n- Set up recurring and channel meetings.\n- Configure meeting options, including participant roles and permissions.\n- Manage meeting settings before and during meetings."
   ms.date: 09/18/2025
   author: melissawinters
-  ms.author: v-mwinters
+  ms.author: lumac
   ms.topic: module
   ms.service: microsoft-365-business
 summary: >

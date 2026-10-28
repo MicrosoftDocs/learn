@@ -1,6 +1,36 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-hybrid-services
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 74
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - entra
+    - defender-for-cloud
+    - microsoft-sentinel
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - systems-administrator
+    - network-engineer
+    - identity-access-admin
+    - security-engineer
+  gs-skills:
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Network Connectivity"
+    - "Identity and Access Management (IAM)"
+    - "Application Architecture"
+    - Storage
+    - "Security Operations Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-hybrid-services/index.yml
   title: Introduction to Azure hybrid cloud services
   description: Get an introductory overview of hybrid cloud technologies and how you can connect an on-premises environment to Azure in a way that works best for your organization.
   ms.date: 08/01/2026

@@ -6,7 +6,7 @@ metadata:
   description: "Practice securing a Microsoft Fabric data warehouse using dynamic data masking, row-level security, column-level security, and SQL granular permissions."
   ms.date: 06/11/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 45
 content: |

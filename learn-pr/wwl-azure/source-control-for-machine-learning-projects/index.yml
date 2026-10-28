@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.source-control-for-machine-learning-projects
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 34
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-devops
+    - github
+    - azure-machine-learning
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - data-engineer
+    - ai-engineer
+    - devops-engineer
+    - developer
+  gs-skills:
+    - DevOps
+    - "Machine Learning"
+    - "Data Science"
+    - "Application Development"
+    - Automation
+    - "AI Model Evaluation & Testing"
+    - "Platform Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/source-control-for-machine-learning-projects/index.yml
   title: Source control for machine learning projects
   description: Learn about source control for machine learning, machine learning operations, and MLOps.
   author: wwlpublish

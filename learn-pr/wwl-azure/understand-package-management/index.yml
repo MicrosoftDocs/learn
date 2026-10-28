@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-package-management
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 82
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-devops
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - devops-engineer
+  gs-skills:
+    - DevOps
+    - "Application Development"
+    - Automation
+    - "Application Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/understand-package-management/index.yml
   title: Understand Package Management
   description: Learn package management concepts including package feeds, feed managers, public and private sources, and how to consume, create, and publish packages using Azure Artifacts.
   ms.date: 10/27/2025

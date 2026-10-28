@@ -2,6 +2,23 @@
 uid: learn.github.github-enterprise-server-developer-fundamentals
 title: GitHub Enterprise Server fundamentals for developers
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 31
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/github-enterprise-server-developer-fundamentals/index.yml
   title: GitHub Enterprise Server Fundamentals for Developers
   description: Overview of GitHub Enterprise Server (GHES) and its self-managed GitHub experience for secure or regulated environments.
   author: camihmerhar

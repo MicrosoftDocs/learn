@@ -6,7 +6,7 @@ metadata:
   description: "Enable Defender for Azure SQL Databases at subscription scope in Microsoft Defender for Cloud, verify coverage, and enforce consistent protection using Azure Policy."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 3

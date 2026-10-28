@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.microsoft-learn-educators-course-plan
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - higher-ed-educator
+  gs-skills:
+    - "Career Development"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-hedt/microsoft-learn-educators-course-plan/index.yml
   title: Microsoft Learn for Educators course planning
   description: "As you begin to prepare for your course delivery, begin by determining the curriculum integration approach. Once you have developed an implementation plan, you can set up your LMS to integrate with Microsoft Learn for benefits such as getting details about published Microsoft Learn content and student reporting. Set certification expectations with your students, provide clarity about certification, why, when, and how; this sets your students up for success. Finally, make sure to record your course in the MSLE portal to ensure you receive updates like resources like lab seats for your class, curriculum updates, and information about student events."
   ms.date: 08/08/2022

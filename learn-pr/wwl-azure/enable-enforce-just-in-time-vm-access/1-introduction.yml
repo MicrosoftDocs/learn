@@ -5,7 +5,7 @@ metadata:
   description: Introduction to enabling and enforcing just-in-time VM access, covering the security risk of permanently open management ports that JIT access addresses.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction

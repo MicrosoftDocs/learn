@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-operate-premises-hybrid
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - systems-administrator
+    - solution-architect
+    - security-engineer
+    - identity-access-admin
+  gs-skills:
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-operate-premises-hybrid/index.yml
   title: Implement and operate an on-premises and hybrid networking infrastructure
   description: Implement and operate an on-premises and hybrid networking infrastructure
   ms.date: 01/23/2026

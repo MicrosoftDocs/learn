@@ -5,7 +5,7 @@ metadata:
   description: Deploy the Azure Machine Configuration extension prerequisites and assign the built-in Windows and Linux compute security baseline policy initiatives in audit. Then enforce modes, interpret compliance results, and create remediation tasks.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Apply built-in security baseline policies

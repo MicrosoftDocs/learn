@@ -6,7 +6,7 @@ metadata:
   description: Use Azure Monitor to monitor and ensure ongoing protection operations in Azure Backup.
   ms.date: 12/01/2023
   author: sgsneha
-  ms.author: sudhirsneha
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 1
 content: |

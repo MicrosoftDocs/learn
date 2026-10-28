@@ -5,7 +5,7 @@ metadata:
   description: Create and manage stored access policies on blob containers to control SAS token permissions and expiry, and revoke delegated access without rotating storage account keys.
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Manage access with stored access policies

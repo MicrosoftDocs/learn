@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-business-benefits-azure
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 35
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-leader
+    - business-owner
+  gs-skills:
+    - "Cloud Computing"
+    - "IT Strategy"
+    - "AI Business & Vision"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-business-benefits-azure/index.yml
   title: Describe the business benefits of Azure
   description: "This module explores various business benefits of Azure, including cost-efficiency, innovation, agility, and security."
   ms.date: 09/20/2024

@@ -5,7 +5,7 @@ metadata:
   description: Deploy security controls to remediate Defender for Cloud recommendations at scale using Fix, governance rules, Policy remediation tasks, and exemptions.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Deploy remediation controls at scale

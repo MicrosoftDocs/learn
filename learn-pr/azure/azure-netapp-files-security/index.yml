@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.azure.azure-netapp-files-security
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 19
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - storage-admin
+  gs-skills:
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-netapp-files-security/index.yml
   title: Azure security for Azure NetApp Files
   description: Learn about data encryption options available in Azure NetApp Files to improve the security of your data. 
   ms.date: 11/18/2024

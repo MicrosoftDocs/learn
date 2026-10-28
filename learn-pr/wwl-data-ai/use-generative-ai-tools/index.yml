@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.generative-ai-tools
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 60
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+    - early-in-career-professionals
+  gs-skills:
+    - "Generative AI"
+    - "AI Fluency"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/use-generative-ai-tools/index.yml
   title: Develop generative AI apps that use tools
   description: Tools enable models to perform tasks and interact with external
     systems, enabling them to extend their capabilities beyond basic chat

@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to design solutions for business continuity and disaster recovery (BCDR), including secure backup and restore."
   ms.date: 05/21/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 7
 content: |

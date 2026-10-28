@@ -6,7 +6,7 @@ metadata:
   description: "Install Microsoft Sentinel Content Hub solutions, data connectors and an Analytic rule."
   ms.date: 04/01/2025
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 25
 content: |

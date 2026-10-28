@@ -2,6 +2,30 @@
 uid: learn.dpu.frontier-firms-learning-path-2026
 title: Frontier Firms learning path 2026
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles: null
+  gs-skills:
+    - "AI Productivity"
+    - "AI Workforce Applications"
+    - "Semantic Search"
+    - "Information Extraction"
+    - "Communications Management"
+    - "AI Governance"
+    - "Agent Operations"
+    - "Device Management"
+    - "AI Risk Management"
+    - "Responsible AI"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/frontier-firms-learning-path-2026/index.yml
   title: Frontier Firms Learning Path 2026
   description: This learning path introduces the concepts, strategies, and technologies behind Frontier Firms, organizations that combine human expertise with AI-powered assistants and agents to transform the way work gets done. Learners explore how AI is being integrated into everyday business processes, how organizations can scale AI adoption responsibly, and how leaders can build a foundation for long-term business transformation. Through real-world scenarios and practical guidance, this Learning Path examines the processes and technologies that help organizations improve productivity, enhance decision-making, and create sustainable value with AI.
   ms.date: 10/01/2026

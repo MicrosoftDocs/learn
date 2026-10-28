@@ -6,7 +6,7 @@ metadata:
   description: "Implement Microsoft Purview Audit (Standard)."
   ms.date: 2/17/2023
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
   ms.custom: sfi-ga-nochange
 durationInMinutes: 4

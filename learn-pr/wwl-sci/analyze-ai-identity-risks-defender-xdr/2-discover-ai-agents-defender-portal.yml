@@ -5,7 +5,7 @@ metadata:
   description: Use the AI assets inventory in Microsoft Defender XDR to discover AI agents operating in your environment, review discovery data, and verify agent visibility.
   ms.date: 08/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Discover AI agents in the Microsoft Defender portal

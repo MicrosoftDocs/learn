@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-readable-code
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 48
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - student
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-readable-code/index.yml
   title: Create Readable Code with Conventions, Whitespace, and Comments in C#
   description: "Write code that is easier to read, update and support using naming conventions, comments and whitespace."
   ms.date: 12/15/2025

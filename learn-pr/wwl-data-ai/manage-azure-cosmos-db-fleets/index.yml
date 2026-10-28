@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-cosmos-db-fleets
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 100
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - platform-engineer
+    - developer
+    - data-engineer
+  gs-skills:
+    - Databases
+    - "Database Design"
+    - "Data Administration"
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - "Data Analytics"
+    - "Data Engineering"
+    - "Data Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/manage-azure-cosmos-db-fleets/index.yml
   title: Manage Azure Cosmos DB at Scale with Fleets
   description: "Organize many Azure Cosmos DB accounts into a fleet, share throughput across accounts and subscriptions with fleetspace pools, and analyze estate-wide usage and cost with fleet analytics."
   ms.date: 10/03/2026

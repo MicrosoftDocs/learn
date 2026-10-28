@@ -15,9 +15,9 @@ In this task, you use Azure portal to mount an NFS volume on a Linux client.
 
 In this task, you mount an NFS volume on Windows clients.
 
-1. [Mount the volume on a Unix or Linux VM first](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-mount-unmount-volumes-for-virtual-machines#mount-nfs-volumes-on-linux-clients)
+1. [Mount the volume on a Unix or Linux VM first](/azure/azure-netapp-files/azure-netapp-files-mount-unmount-volumes-for-virtual-machines#mount-nfs-volumes-on-linux-clients)
 2. Run `chmod 777` or `chmod 775` command against the volume.
-3. Mount the volume through the Windows NFS client using the mount option `mtype=hard` to reduce connection issues. See [Windows command line utility for mounting NFS volumes](https://learn.microsoft.com/windows-server/administration/windows-commands/mount) for more detail. For example: `Mount -o rsize=256 -o wsize=256 -o mtype=hard \\10.x.x.x\testvol X:*`
+3. Mount the volume through the Windows NFS client using the mount option `mtype=hard` to reduce connection issues. See [Windows command line utility for mounting NFS volumes](/windows-server/administration/windows-commands/mount) for more detail. For example: `Mount -o rsize=256 -o wsize=256 -o mtype=hard \\10.x.x.x\testvol X:*`
 4. You can also access NFS volumes from Windows clients using SMB by setting the protocol access for the volume to **dual-protocol**. This setting allows access to the volume via SMB and NFS (NFSv3 or NFSv4.1) and results in better performance than using the NFS client on Windows with an NFS volume.
 
 ### Task 3 - Mount SMB volumes for Windows virtual machines

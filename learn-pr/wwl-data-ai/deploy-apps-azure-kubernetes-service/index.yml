@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-apps-azure-kubernetes-service
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 75
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - devops-engineer
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Application Development"
+    - DevOps
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/deploy-apps-azure-kubernetes-service/index.yml
   title: Deploy Applications to Azure Kubernetes Service
   description: Learn how to deploy applications to Azure Kubernetes Service.
   ms.date: 06/11/2026

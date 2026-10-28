@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.introduction-ai-landing-zones
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 28
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - systems-administrator
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "AI Infrastructure"
+    - "Platform Engineering"
+    - "Network Connectivity"
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/intro-ai-landing-zones/index.yml
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 07/25/2026

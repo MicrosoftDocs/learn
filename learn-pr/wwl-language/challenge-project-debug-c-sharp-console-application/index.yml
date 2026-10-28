@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.challenge-project-debug-c-sharp-console-application
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 37
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/challenge-project-debug-c-sharp-console-application/index.yml
   title: Challenge project - Debug a C# console application using Visual Studio Code
   description: "This module helps you evaluate your debugging skills. You start with a C# console application that contains code logic issues and a specification that describes the requirements. You’re challenged to demonstrate your ability to identify and fix the issues using the Visual Studio Code debugger tools."
   ms.date: 12/15/2025

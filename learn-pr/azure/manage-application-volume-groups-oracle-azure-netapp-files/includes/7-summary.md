@@ -10,8 +10,8 @@ You also performed hands-on exercises to deploy application volume group for Ora
 
 ### Learn more
 
-[Deploy application volume group for Oracle](https://learn.microsoft.com/azure/azure-netapp-files/application-volume-group-oracle-deploy-volumes)
+[Deploy application volume group for Oracle](/azure/azure-netapp-files/application-volume-group-oracle-deploy-volumes)
 
-[Configure application volume group for Oracle using REST API](https://learn.microsoft.com/azure/azure-netapp-files/configure-application-volume-oracle-api)
+[Configure application volume group for Oracle using REST API](/azure/azure-netapp-files/configure-application-volume-oracle-api)
 
-[Delete an application volume group](https://learn.microsoft.com/azure/azure-netapp-files/application-volume-group-delete)
+[Delete an application volume group](/azure/azure-netapp-files/application-volume-group-delete)

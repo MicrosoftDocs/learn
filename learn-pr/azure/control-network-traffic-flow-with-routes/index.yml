@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.control-network-traffic-flow-with-routes
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 50
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - systems-administrator
+    - solution-architect
+  gs-skills:
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Security Architecture Design"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/control-network-traffic-flow-with-routes/index.yml
   title: Manage and control traffic flow in your Azure deployment with routes
   description: Learn how to control Azure virtual network traffic by implementing custom routes.
   ms.date: 12/02/2024

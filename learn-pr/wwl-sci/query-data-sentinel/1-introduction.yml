@@ -6,7 +6,7 @@ metadata:
   description: "Provide an introduction to querying, visualizing, and monitoring data with Microsoft Sentinel."
   ms.date: 01/26/2023
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

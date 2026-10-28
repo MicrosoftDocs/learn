@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn-wwl.build-ai-solutions-sql-server
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 80
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - github
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - data-engineer
+    - solution-architect
+  gs-skills:
+    - "Vector Databases"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Semantic Search"
+    - SQL
+    - "Database Development"
+    - "Generative AI"
+    - "AI-Augmented Software Development"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/build-ai-solutions-sql-server/index.yml
   title: Build AI-powered solutions using SQL Server 2025
   description: "Build AI-powered solutions using SQL Server 2025"
   ms.date: 08/11/2026

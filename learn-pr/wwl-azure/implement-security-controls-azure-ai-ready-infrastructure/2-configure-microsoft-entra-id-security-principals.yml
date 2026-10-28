@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to configure Microsoft Entra ID security principals to manage access for users, groups, and services in Azure AI environments."
   ms.date: 02/09/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 12
 content: |

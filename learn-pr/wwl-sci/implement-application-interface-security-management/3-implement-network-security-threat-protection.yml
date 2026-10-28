@@ -5,7 +5,7 @@ metadata:
   description: Implement IP filtering, rate limiting, quota policies, and virtual network integration, allowing you to control API consumption and reduce the gateway attack surface.
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Implement API network security and threat protection

@@ -1,11 +1,30 @@
 ### YamlMime:Module
 uid: learn.reactors.join-clean-data-deep-dive
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 60
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+  gs-skills:
+    - "Data Management"
+    - "Data Analytics"
+    - "Python (Programming Language)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/reactors/join-clean-data-deep-dive/index.yml
   title: 'Join and clean datasets: Deep dive'
   description: Learn how to join and clean datasets and prepare your data for analysis.
   ms.date: 05/15/2020
   author: sguthals
-  ms.author: chnoring
+  ms.author: lumac
+  ms.service: azure-python
   ms.topic: module
   ms.custom: team=nextgen
 title: 'Join and clean datasets: Deep dive'

@@ -1,6 +1,37 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 58
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - entra
+    - microsoft-defender
+    - defender-for-cloud
+    - microsoft-sentinel
+    - microsoft-purview
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - higher-ed-educator
+    - faculty
+    - security-professional
+  gs-skills:
+    - "Career Development"
+    - Cybersecurity
+    - "Identity and Access Management (IAM)"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Zero Trust Security"
+    - "Threat Management"
+    - "Security Operations Management"
+    - "Communications Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-hedt/get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals/index.yml
   title: 'Get tips and tricks for teaching SC-900: Microsoft Security, Compliance, and Identity Fundamentals'
   description: 'Get tips and tricks for teaching SC-900: Microsoft Security, Compliance, and Identity Fundamentals'
   ms.date: 04/07/2023

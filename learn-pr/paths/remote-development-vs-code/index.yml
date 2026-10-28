@@ -2,6 +2,31 @@
 uid: learn.remote-development-vs-code
 title: Remote development with Visual Studio Code
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - Virtualization
+    - Automation
+    - DevOps
+    - "Collaboration Tools"
+    - "Network Connectivity"
+    - "Cloud Computing"
+    - "IT Networking"
+    - "Cloud Administration"
+    - Cybersecurity
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/remote-development-vs-code/index.yml
   title: Remote development with Visual Studio Code
   description: Remote development provides benefits like consistent environments, the ability to use more powerful hardware, and the flexibility to develop on different platforms without impacting your local machine. Visual Studio Code provides tools for various remote development setups, such as using a container, a remote machine, or the Windows Subsystem for Linux (WSL). In this path, you'll learn about the different remote development offerings available in Visual Studio Code and practice using them.
   ms.date: 01/29/2024

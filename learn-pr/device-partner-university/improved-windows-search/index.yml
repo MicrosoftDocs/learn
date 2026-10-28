@@ -2,6 +2,23 @@
 uid: learn.dpu.improved-windows-search
 title: Discover faster insights with Improved Windows Search
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 20
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+  gs-skills:
+    - "AI Productivity"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/improved-windows-search/index.yml
   title: Discover Faster Insights With Improved Windows Search
   description: In this module, you learn how Improved Windows Search uses AI to interpret user intent and deliver more relevant results through natural language queries. You also explore how features like enhanced indexing and access across Windows help users quickly locate files and improve productivity.
   ms.date: 05/19/2026

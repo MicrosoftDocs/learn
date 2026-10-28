@@ -12,4 +12,4 @@ Here you can choose a problem type for the issue you're experiencing, for exampl
 
 Then select Troubleshoot to run an automated troubleshooter, follow do-it-yourself troubleshooting steps, or explore wide range of troubleshooting tools.
 
-For more information about using this tool, see [Diagnostics and solve tool - Azure App Service](https://learn.microsoft.com/azure/app-service/overview-diagnostics).
+For more information about using this tool, see [Diagnostics and solve tool - Azure App Service](/azure/app-service/overview-diagnostics).

@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-explore-azure-center-sap-solutions
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 54
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - solution-architect
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-modernize-explore-azure-center-sap-solutions/index.yml
   title: Modernize and explore Azure Center for SAP solutions
   description: 'Explore Azure Center for SAP Solutions (ACSS) to deploy and manage SAP workloads more efficiently. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/09/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: module
   ms.service: sap-on-azure
 title: Modernize and explore Azure Center for SAP solutions

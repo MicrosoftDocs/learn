@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+  gs-skills:
+    - "Natural Language Processing (NLP)"
+    - "Generative AI"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/summarize-data-azure-ai-services-azure-database-postgresql/index.yml
   title: Summarize data with Foundry Tools and Azure database for PostgreSQL
   description: Learn to summarize data with Foundry Tools and Azure database for PostgreSQL.
   author: wwlpublish

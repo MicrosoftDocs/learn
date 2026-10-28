@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-firewall-manager 
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 28
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - network-engineer
+    - solution-architect
+  gs-skills:
+    - "Security Operations Management"
+    - "Security Architecture Design"
+    - "IT Networking"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-firewall-manager/index.yml
   moduleType: introduction
   title: Introduction to Azure Firewall Manager
   description: Describe how Azure Firewall Manager provides central security policy and route management for your cloud-based security perimeters. Determine whether Azure Firewall Manager can help you secure your cloud perimeters.

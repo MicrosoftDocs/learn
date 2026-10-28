@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.use-advanced-windows-powershell-remoting-techniques
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 44
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - Automation
+    - "IT Networking"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/use-advanced-windows-powershell-remoting-techniques/index.yml
   title: Use advanced Windows PowerShell remoting techniques
   description: "This module covers some useful advanced techniques that help overcome the limitations of basic Windows PowerShell remoting."
   ms.date: 05/12/2026

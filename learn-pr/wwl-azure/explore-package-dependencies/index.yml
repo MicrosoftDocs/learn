@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-package-dependencies
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 29
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - devops-engineer
+    - solution-architect
+  gs-skills:
+    - "Application Development"
+    - DevOps
+    - "Solution Architecture"
+    - "Application Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-package-dependencies/index.yml
   title: Explore Package Dependencies
   description: "This module introduces you to organizing your build logic into different components and to dependency management."
   ms.date: 06/08/2022

@@ -1,11 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-security-controls-function-logic-apps
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 28
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - developer
+  gs-skills:
+    - "Application Security"
+    - "Identity and Access Management (IAM)"
+    - "Cloud Infrastructure"
+    - "Zero Trust Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-security-controls-function-logic-apps/index.yml
   title: Implement Security Controls for Azure Function Apps and Logic Apps
   description: "Implement security controls for Azure Function apps and Logic apps. Configure authentication and authorization, managed identities, virtual network integration, and private endpoints for Function apps, and apply managed identity, connector security, and network isolation for Logic apps."
   ms.date: 05/10/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-functions
   ai-usage: ai-assisted

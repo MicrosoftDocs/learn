@@ -49,7 +49,7 @@ To use the default domain defaultv4iddomain.com, select the box next to Use Defa
 
 [![Screenshot of Azure portal NFSv4 ID domain configuration screen.It is showing the default NFSv4 ID domain selected.](../media/nfsv4-id-domain.png)](../media/nfsv4-id-domain.png#lightbox)
 
-To learn how to configure NFSv4.1 ID domain in NFS clients, see [Configure NFSv4.1 ID domain on Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-configure-nfsv41-domain#configure-nfsv41-id-domain-on-azure-netapp-files).
+To learn how to configure NFSv4.1 ID domain in NFS clients, see [Configure NFSv4.1 ID domain on Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-configure-nfsv41-domain#configure-nfsv41-id-domain-on-azure-netapp-files).
 
 #### Behavior of other (nonroot) users and groups
 
@@ -110,4 +110,4 @@ After creating the first NFSv4.1 Kerberos volume, set the encryption type for th
 
 #### Performance impact of Kerberos on NFSv4.1
 
-You should understand the security options available for NFSv4.1 volumes, the tested performance vectors, and the expected performance impact of Kerberos. See [Performance impact of Kerberos on NFSv4.1 volumes](https://learn.microsoft.com/azure/azure-netapp-files/performance-impact-kerberos) for details.
+You should understand the security options available for NFSv4.1 volumes, the tested performance vectors, and the expected performance impact of Kerberos. See [Performance impact of Kerberos on NFSv4.1 volumes](/azure/azure-netapp-files/performance-impact-kerberos) for details.

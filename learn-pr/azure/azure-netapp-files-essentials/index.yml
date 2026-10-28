@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.azure-netapp-files.essentials 
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 48
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - storage-admin
+    - network-engineer
+  gs-skills:
+    - Storage
+    - "IT Networking"
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-netapp-files-essentials/index.yml
   title: Understand Azure NetApp Files essentials 
   description: Learn about the key parts of Azure NetApp Files, including storage terminology and monitoring strategies, to help you optimize your setup and deployment processes.  
   ms.date: 11/18/2024

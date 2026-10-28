@@ -1,6 +1,26 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.purview-audit-search
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - microsoft-purview
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ip-admin
+    - security-operations-analyst
+  gs-skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Threat Management"
+    - "Data Security"
+    - "Security Analytics"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/purview-audit-search/index.yml
   title: 'Audit and search activity in Microsoft Purview (SC-401)'
   description: 'Logging actions and locating content are essential for investigating events, supporting compliance efforts, and maintaining transparency. Microsoft Purview provides audit and content search capabilities to help organizations understand what actions were taken and find specific items across Microsoft 365 services. This learning path aligns with exam SC-401: Microsoft Information Security Administrator.'
   ms.date: 04/17/2025

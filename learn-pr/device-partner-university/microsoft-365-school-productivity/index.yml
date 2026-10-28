@@ -2,6 +2,24 @@
 uid: learn.dpu.microsoft-365-school-productivity
 title: Use Microsoft 365 to stay productive throughout your school day
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 25
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - student
+  gs-skills:
+    - "Collaboration Tools"
+    - "AI Productivity"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/microsoft-365-school-productivity/index.yml
   title: Use Microsoft 365 To Stay Productive Throughout Your School Day
   description: Explore how Microsoft 365 can help you stay organized, manage assignments, and stay productive throughout the school day.
   ms.date: 06/29/2026

@@ -1,11 +1,38 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-explore-azure-sap-workloads
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 15
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - entra
+    - power-bi
+    - power-platform
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - administrator
+    - technology-manager
+  gs-skills:
+    - "Cloud Computing"
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Identity and Access Management (IAM)"
+    - "Data Analytics"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-modernize-explore-azure-sap-workloads/index.yml
   title: Modernize and explore Azure for SAP workloads
   description: 'This module explores the partnership between Microsoft and SAP which allows SAP applications to run in Azure across development, test, and production scenarios alongside other Microsoft components. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/08/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: module
   ms.service: sap-on-azure
 title: Modernize and explore Azure for SAP workloads

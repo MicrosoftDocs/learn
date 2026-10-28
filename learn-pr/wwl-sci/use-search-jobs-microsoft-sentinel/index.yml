@@ -1,11 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.use-search-jobs-microsoft-sentinel
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 15
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-sentinel
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+  gs-skills:
+    - "Security Analytics"
+    - "Threat Management"
+    - "Data Management"
+    - "Security Operations Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/use-search-jobs-microsoft-sentinel/index.yml
   title: Use Search jobs in Microsoft Sentinel
   description: "Use Search jobs in Microsoft Sentinel"
   ms.date: 09/26/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Use Search jobs in Microsoft Sentinel

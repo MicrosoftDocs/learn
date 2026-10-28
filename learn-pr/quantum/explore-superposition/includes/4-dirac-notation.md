@@ -34,6 +34,7 @@ The `X` operator is also called the Pauli-X gate. It's a fundamental quantum ope
 You can also use an operator to put a qubit into a superposition state. The Hadamard operator, `H`, puts a qubit into a Hadamard state, which is an equal superposition of the $|0\rangle$ state and the $|1\rangle$ state:
 
 $$  H |0\rangle = \frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$$
+
 $$  H |1\rangle = \frac1{\sqrt2} |0\rangle - \frac1{\sqrt2} |1\rangle$$
 
 When you measure a qubit in a Hadamard state, you have a 50% chance to observe 0 and a 50% chance to observe 1.

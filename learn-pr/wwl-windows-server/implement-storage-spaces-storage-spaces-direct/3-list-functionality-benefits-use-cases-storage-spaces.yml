@@ -6,7 +6,7 @@ metadata:
   description: "List the functionalities, benefits, and use cases of Storage Spaces"
   ms.date: 09/10/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-versioning-strategy
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 29
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-devops
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+    - platform-engineer
+  gs-skills:
+    - DevOps
+    - Automation
+    - "Application Development"
+    - "Platform Engineering"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-versioning-strategy/index.yml
   title: Implement a Versioning Strategy
   description: "Learn to implement effective versioning strategies for packages using semantic versioning, package promotion workflows, and Azure Artifacts views to manage package quality and lifecycle."
   ms.date: 10/13/2025

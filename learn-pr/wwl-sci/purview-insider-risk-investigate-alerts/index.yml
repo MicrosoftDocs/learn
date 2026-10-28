@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-insider-risk-investigate-alerts
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 87
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-purview
+    - microsoft-defender
+    - security-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - risk-practitioner
+    - security-operations-analyst
+    - ip-admin
+  gs-skills:
+    - "Security Analytics"
+    - "Threat Management"
+    - "Security Operations Management"
+    - "Data Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - Cybersecurity
+    - "AI Governance"
+    - "Security Automation"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-insider-risk-investigate-alerts/index.yml
   title: Investigate Insider Risk Alerts and Related Activity
   description: "Investigate Insider Risk Alerts and Related Activity."
   ms.date: 11/05/2025

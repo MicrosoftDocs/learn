@@ -2,6 +2,28 @@
 uid: learn.dpu.copilot-productivity-workflows
 title: Copilot for all the ways you work
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-365-copilot
+    - m365
+    - office-teams
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+  gs-skills:
+    - "AI Productivity"
+    - "AI Prompting"
+    - "Data Analytics"
+    - "Collaboration Tools"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/copilot-productivity-workflows/index.yml
   title: Copilot for all the ways you work
   description: >
     In this module, you'll learn how to use Microsoft 365 Copilot to boost your productivity across Microsoft 365 apps. You'll learn how to find action items with Word, analyze data with Excel, and communicate effectively with Outlook and Teams. By the end of this module, you'll have the skills and knowledge to use Copilot to complete tasks from start to finish across Microsoft 365 apps.

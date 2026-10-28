@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview
 metadata:  
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 79
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - student
+    - early-in-career-professionals
+  gs-skills:
+    - "Career Development"
+    - "AI Productivity"
+    - "Prompt Engineering"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/enhance-linkedin-profile-with-copilot-ace-your-interview/index.yml
   title: Enhance Your LinkedIn Profile With Microsoft Copilot And Ace Your Interview
   description: Your LinkedIn profile is a gateway to networking, career growth, and personal branding. By leveraging Microsoft Copilot, you can refine your headline, summary, and experience sections, ensuring that your profile highlights your strengths and potential, in addition to serving as a valuable interview preparation tool.
   ms.author: tsheppard

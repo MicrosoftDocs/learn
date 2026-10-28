@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.select-and-configure-compute
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 107
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-databricks
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - platform-engineer
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Data Engineering"
+    - "Platform Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-databricks/select-and-configure-compute/index.yml
   title: Select and Configure Compute in Azure Databricks
   description: Learn how to select and configure appropriate compute resources in Azure Databricks including serverless, classic compute, SQL warehouses, and job clusters. Master performance tuning, access control, and library management.
   ms.date: 10/26/2026

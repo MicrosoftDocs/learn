@@ -38,7 +38,7 @@ Use these resources for preparation and onboarding:
 - **R38:** [Onboard Azure Arc-enabled servers with PowerShell](/azure/azure-arc/servers/onboard-powershell)
 - **R39:** [Onboard Azure Arc-enabled servers with a service principal](/azure/azure-arc/servers/onboard-service-principal)
 - **R40:** [Create and run scripts in Microsoft Configuration Manager](/mem/configmgr/apps/deploy-use/create-deploy-scripts)
-- **R57:** [Connect-AzConnectedMachine command reference](/powershell/module/az.connectedmachine/connect-azconnectedmachine?view=azps-16.4.0)
+- **R57:** [Connect-AzConnectedMachine command reference](/powershell/module/az.connectedmachine/connect-azconnectedmachine?view=azps-16.4.0&preserve-view=true)
 - **R58:** [Onboard Azure Arc-enabled servers with Windows Admin Center](/azure/azure-arc/servers/onboard-windows-admin-center)
 
 ### Identity, governance, and configuration

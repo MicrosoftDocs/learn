@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge of API Management security, including authentication policies, rate limiting, mutual TLS, virtual network integration, and AI Gateway token-based rate limiting.
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Knowledge check

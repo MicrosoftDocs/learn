@@ -6,7 +6,7 @@ metadata:
   description: Learn how to deploy an ARM template to create, configure, and deploy Azure Services.   
   ms.date: 09/10/2024
   author: JBrentJ
-  ms.author: lolab
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
     - devx-track-arm-template

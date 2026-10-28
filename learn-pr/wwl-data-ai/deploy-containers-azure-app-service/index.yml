@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-containers-azure-app-service
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 74
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - devops-engineer
+    - platform-engineer
+    - administrator
+  gs-skills:
+    - "Cloud Infrastructure"
+    - DevOps
+    - "Application Development"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - "Security Architecture Design"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/deploy-containers-azure-app-service/index.yml
   title: Deploy Containers to Azure App Service
   description: Learn how to deploy and manage containerized applications on Azure App Service by configuring container sources, runtime settings, application configuration, and diagnostics.
   ms.date: 06/10/2026

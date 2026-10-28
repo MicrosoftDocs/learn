@@ -5,7 +5,7 @@ metadata:
   description: Configure Azure App Service Authentication with Microsoft Entra ID, understand Function authorization levels, and assign managed identity for outbound connections from Azure Function apps.
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Configure authentication and authorization for Function apps

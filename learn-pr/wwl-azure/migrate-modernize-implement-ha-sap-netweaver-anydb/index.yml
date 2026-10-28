@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 259
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-modernize-implement-ha-sap-netweaver-anydb/index.yml
   title: Modernize and implement high availability in SAP NetWeaver with AnyDB on Azure Virtual Machines
   description: 'This module explores the preparation for SAP NetWeaver high availability AnyDB deployment on Azure. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/09/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: module
   ms.service: sap-on-azure
 title: Modernize and implement high availability in SAP NetWeaver with AnyDB on Azure Virtual Machines

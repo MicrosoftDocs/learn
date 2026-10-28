@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to design an enterprise-grade ALM process for custom AI models, ensuring reliability, compliance, and adaptability across environments."
   ms.date: 02/12/2026
   author: msdavidram
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

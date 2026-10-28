@@ -6,7 +6,7 @@ metadata:
   description: "Explore the Threat Intelligence Briefing Agent and create an agent in the Security Copilot standalone experience."
   ms.date: 04/28/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 11
 content: |

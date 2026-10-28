@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.modernize-aspnet-framework-to-core
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - vs
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/modernize-aspnet-framework-to-core/index.yml
   title: Modernize ASP.NET Framework to ASP.NET Core with the .NET Upgrade Assistant
   description: In this module, you'll learn to when, why, and how to modernize an ASP.NET Framework app to ASP.NET Core using the Upgrade Assistant.
   ms.date: 06/07/2024

@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.intro-project-perception-agentic-security
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-defender
+    - azure
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+    - solution-architect
+    - administrator
+  gs-skills:
+    - "Agentic AI"
+    - "Agent Operations"
+    - "Security Architecture Design"
+    - "Security Operations Management"
+    - "Threat Management"
+    - "Security Automation"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/project-perception-agentic-security-introduction/index.yml
   title: What is Project Perception?
   description: "Understand what Project Perception is, the problem it addresses, and the core capabilities it provides today in the Microsoft Defender portal's Agentic security section."
   ms.date: 08/07/2026

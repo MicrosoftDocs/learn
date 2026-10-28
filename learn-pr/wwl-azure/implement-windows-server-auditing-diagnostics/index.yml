@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-windows-server-auditing-diagnostics
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 37
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - security-engineer
+    - support-engineer
+  gs-skills:
+    - Cybersecurity
+    - "Security Analytics"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-windows-server-auditing-diagnostics/index.yml
   title: Implement Windows Server auditing and diagnostics
   description: "Learn how to implement Windows Server auditing for regulatory compliance and security, including basic and advanced audit policies, User Access Logging (UAL), and Setup and Boot Event Collection."
   ms.date: 08/31/2026

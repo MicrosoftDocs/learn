@@ -6,7 +6,7 @@ metadata:
   description: Three multiple-choice questions
   ms.date: 01/03/2024
   author: marlenaklein-msft
-  ms.author: marlenaklein
+  ms.author: lumac
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3

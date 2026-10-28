@@ -1,11 +1,28 @@
 ### YamlMime:Module
 uid: learn.fsharp-lists
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/language/fsharp-lists/index.yml
   title: Store and apply operations on list data in F#
   description: This module covers collections in F#, with a specific focus on lists.
   ms.date: 03/24/2023
   author: baronfel
   ms.author: chethusk 
+  ms.service: dotnet-fsharp
   ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: fsharp

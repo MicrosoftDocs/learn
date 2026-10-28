@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.write-first-python-code
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 39
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Python (Programming Language)"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/write-first-python-code/index.yml
   title: Write your first Python code
   description: Get started with Python programming. Learn to display output, accept user input, and manipulate strings to build your first Python program.
   ms.date: 07/15/2026

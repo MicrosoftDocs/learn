@@ -1,11 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.build-multi-table-statements-kql
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-sentinel
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - data-analyst
+  gs-skills:
+    - "Security Analytics"
+    - SQL
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/build-multi-table-statements-kusto-query-language/index.yml
   title: Build multi-table statements using KQL
   description: "Build multi-table statements using KQL"
   ms.date: 05/07/2026
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module
   ms.service: kusto
   ai-usage: ai-assisted

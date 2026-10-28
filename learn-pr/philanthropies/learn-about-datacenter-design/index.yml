@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.philanthropies.learn-about-datacenter-design
 metadata:
+ gs-content.levels: 200
+ gs-content.locale: en-us
+ gs-duration: 49
+ gs-last.refresh.date: null
+ gs-modality: module
+ gs-products: null
+ gs-publish.locations: null
+ gs-release.date: null
+ gs-retired.data: null
+ gs-reusable: null
+ gs-roles:
+   - systems-administrator
+   - network-engineer
+   - solution-architect
+ gs-skills:
+   - "Infrastructure Management"
+   - "IT Networking"
+   - "Network Connectivity"
+   - Cybersecurity
+ gs-solution.area: "Cloud & AI Platforms"
+ gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/learn-about-datacenter-design/index.yml
  title: Learn about datacenter design, architecture, and infrastructure management
  description: In this module, we'll explore the key factors of datacenter design, delving into why they're crucial for building a reliable, scalable, and efficient infrastructure. You'll learn about site selection considerations such as power availability, climate, and risks from natural disasters. We'll also look at the layout of a datacenter, covering important elements like topologies, IT infrastructure, and space allocation. By the end of this module, you understand the importance of a well-architected datacenter.
  ms.date: 05/08/2025

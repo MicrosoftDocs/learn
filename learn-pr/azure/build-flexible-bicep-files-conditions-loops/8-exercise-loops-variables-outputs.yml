@@ -8,7 +8,7 @@ metadata:
   description: Learn how to use loops with variables and outputs.
   ms.date: 04/18/2025
   author: mumian
-  ms.author: jgao
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

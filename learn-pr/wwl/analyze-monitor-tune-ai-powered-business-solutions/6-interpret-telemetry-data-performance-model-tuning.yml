@@ -6,7 +6,7 @@ metadata:
   description: "Learn to analyze telemetry data from AI systems to diagnose issues, optimize performance, and guide continuous tuning for better outcomes."
   ms.date: 02/13/2026
   author: msdavidram
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 4
 content: |

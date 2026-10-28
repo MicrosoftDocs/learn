@@ -1,11 +1,42 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.migrate-sap-workloads-to-azure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - it-professional
+    - database-administrator
+    - data-engineer
+    - network-engineer
+  gs-skills:
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Data Migration"
+    - "Infrastructure Management"
+    - Cybersecurity
+    - "Cloud Computing"
+    - Databases
+    - "Data Engineering"
+    - "Network Connectivity"
+    - Storage
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/migrate-sap-workloads-to-azure/index.yml
   title: Migrate SAP workloads to Azure
   description: Migrate SAP workloads to Azure
   ms.date: 01/04/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: learning-path
 title: Migrate SAP workloads to Azure
 prerequisites: |

@@ -3,6 +3,26 @@ uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio
 title: Integrate OpenAPI-enabled Web APIs with Azure API Management through Visual Studio
 summary: Learn how to add an OpenAPI-enabled Web API application to Azure API Management through Visual Studio.
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 39
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - vs
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "API Management"
+    - "Application Development"
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/integrate-openapi-enabled-web-api-with-apim-and-visual-studio/index.yml
   title: Integrate OpenAPI-enabled Web APIs with Azure API Management through Visual Studio
   description: Learn how to add an OpenAPI-enabled Web API application to Azure API Management through Visual Studio.
   ms.date: 09/13/2024

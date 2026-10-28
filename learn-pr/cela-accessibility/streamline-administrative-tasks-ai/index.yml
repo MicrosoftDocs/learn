@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.streamline-administrative-tasks-ai
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - k-12-educator
+  gs-skills:
+    - "AI Productivity"
+    - "Role focused AI Workflows"
+    - "AI Prompting"
+    - "Responsible AI"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/streamline-administrative-tasks-ai/index.yml
   title: "Streamline Administrative Tasks With AI"
   description: "In this module, special educators will learn how and when to use Teach and/or Copilot to streamline administrative tasks, support professional judgment, and maintain accuracy, compliance, and student centered decision making."
   ms.date: 01/05/2026
   author: Randall-Knapp
-  ms.author: rknapp
+  ms.author: lumac
   ms.topic: module
   ms.service: microsoft-365-copilot
 title: "Streamline administrative tasks with AI tools"

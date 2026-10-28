@@ -6,7 +6,7 @@ metadata:
   description: "Manage your threat indicators"
   ms.date: 05/07/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

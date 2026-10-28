@@ -6,7 +6,7 @@ metadata:
   description: "Explore Azure Virtual Machine NFS storage"
   ms.date: 01/09/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 2
 content: |

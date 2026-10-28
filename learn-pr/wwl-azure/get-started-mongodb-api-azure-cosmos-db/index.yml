@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-mongodb-api-azure-cosmos-db
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 63
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - data-engineer
+  gs-skills:
+    - "Database Development"
+    - "Application Development"
+    - "Data Administration"
+    - "Cloud Computing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/get-started-mongodb-api-azure-cosmos-db/index.yml
   title: Get started with the MongoDB API in Azure Cosmos DB
   description: "Learn Azure Cosmos DB for MongoDB basics."
   ms.date: 03/20/2024

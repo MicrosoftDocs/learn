@@ -1,6 +1,37 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.configure-storage-file-services
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - storage-admin
+    - systems-administrator
+  gs-skills:
+    - Storage
+    - Virtualization
+    - "Infrastructure Management"
+    - "Solution Architecture"
+    - "Data Management"
+    - "Cloud Infrastructure"
+    - "Data Security"
+    - "IT Networking"
+    - "Network Connectivity"
+    - Automation
+    - Cybersecurity
+    - "Data Migration"
+    - "Cloud Administration"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/configure-storage-file-services/index.yml
   title: Configure storage and file services
   description: Configure storage and file services
   ms.date: 01/23/2026

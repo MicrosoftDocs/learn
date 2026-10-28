@@ -1,6 +1,35 @@
 ### YamlMime:LearningPath
 uid: learn.ai-center-excellence
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - technology-manager
+  gs-skills:
+    - "AI Strategy"
+    - "AI Governance"
+    - "AI Transformation"
+    - "Organizational Effectiveness"
+    - "AI Risk Management"
+    - "Large Language Model Operations (LLMOps)"
+    - "AI Infrastructure"
+    - "Solution Architecture"
+    - "Responsible AI"
+    - "Cloud Infrastructure"
+    - "Platform Engineering"
+    - "Network Connectivity"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/ai-center-excellence/index.yml
   title: AI Center of Excellence
   description: Learn about the AI Center of Excellence (AI CoE), how it centralizes information about AI adoption, operations, governance, best practices, and security.
   ms.date: 06/05/2025

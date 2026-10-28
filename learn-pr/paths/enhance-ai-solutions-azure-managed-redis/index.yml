@@ -1,6 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.enhance-ai-solutions-azure-managed-redis
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Data Management"
+    - "Application Development"
+    - "Python (Programming Language)"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - Automation
+    - "Data Engineering"
+    - "Identity and Access Management (IAM)"
+    - "Application Architecture"
+    - "Vector Databases"
+    - "Semantic Search"
+    - "Embedding Models"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/enhance-ai-solutions-azure-managed-redis/index.yml
   title: Enhance AI solutions with Azure Managed Redis
   description: Learn how to use Azure Managed Redis to enhance your AI solutions, including caching strategies, data operations, event messaging, and vector storage.
   ms.date: 11/26/2005

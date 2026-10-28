@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to prepare Azure Virtual Machines for a manual installation of SAP HANA."
   ms.date: 12/23/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

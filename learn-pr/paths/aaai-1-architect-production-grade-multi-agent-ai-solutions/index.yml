@@ -1,6 +1,39 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.architect-production-grade-multi-agent-ai-solutions
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+    - solution-architect
+  gs-skills:
+    - "Multi-Agent Orchestration"
+    - "Agentic AI"
+    - "Agent Development"
+    - "Application Architecture"
+    - "Python (Programming Language)"
+    - "AI Infrastructure"
+    - "Solution Architecture"
+    - "AI Model Evaluation & Testing"
+    - "Agent Operations"
+    - "Platform Engineering"
+    - "Data Management"
+    - "Data Security"
+    - "Security Architecture Design"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Prompt Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/aaai-1-architect-production-grade-multi-agent-ai-solutions/index.yml
   title: Architect Production-Grade Multi-Agent AI Solutions in Azure AI-500
   description: Learn how to design production-grade agentic AI solutions in Microsoft Foundry. This training covers stateful agentic loop architecture, hierarchical orchestration patterns, dynamic task decomposition strategies, and enterprise-scale agent communication ecosystems, including A2A protocol integration for cross-platform agent connectivity. AI-500
   ms.date: 06/16/2026

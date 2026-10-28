@@ -1,10 +1,31 @@
 ### YamlMime:Module
 uid: learn.philanthropies.implement-ai-tools-into-training-environment
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 17
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-365-copilot
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - k-12-educator
+    - higher-ed-educator
+    - business-user
+  gs-skills:
+    - "Generative AI"
+    - "Responsible AI"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/implement-ai-tools-into-training-environment/index.yml
   title: Implement AI tools into a training environment
   description: Explore the power of AI tools in education and training plans. Learn how to integrate AI tools to enhance creativity, productivity, and efficiency in your training sessions. Understand the potential and limitations of AI through real-life examples and enhance your training experience.
   author: yoosunee
-  ms.author: anruss
+  ms.author: lumac
   ms.date: 01/14/2025
   ms.update-cycle: 180-days
   ms.service: artificial-intelligence

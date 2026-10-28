@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.philanthropies.breathing-life-into-stories
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 115
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-openai
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Generative AI"
+    - "AI Prompting"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/breathing-life-into-stories/index.yml
   title: Breathing Life into Stories - Character and Dialogue Creation with Azure
   description: Learn how to use Azure OpenAI and DALL·E to create interactive stories with AI-generated characters, dialogue, and branching narrative paths."
   ms.date: 4/28/2025

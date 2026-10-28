@@ -1,11 +1,36 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 38
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - it-professional
+    - solution-architect
+  gs-skills:
+    - Virtualization
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - Storage
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-virtualization-case-studies/index.yml
   title: Virtualization case study
   description: Carnegie Mellon University's Cloud Developer course. Dive deeper into resource sharing and virtualization with case studies of how real cloud providers use virtualization.
   ms.date: 03/09/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
+  ms.service: azure
   ms.topic: module
   ms.custom: team=nextgen
 title: Virtualization case study

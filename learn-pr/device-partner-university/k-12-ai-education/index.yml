@@ -2,6 +2,24 @@
 uid: learn.dpu.k-12-ai-education
 title: AI‑enhanced K‑12 institutional concepts
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles: null
+  gs-skills:
+    - "AI Strategy"
+    - "AI Transformation"
+    - "Organizational Effectiveness"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/k-12-ai-education/index.yml
   title: AI‑enhanced K‑12 Institutional Concepts
   description: In this module, you will learn how AI-powered solutions help decision makers create better learning experiences for students.
   ms.date: 04/09/2026

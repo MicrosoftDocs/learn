@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.azure-security.secure-aad-users-with-mfa
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 38
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - systems-administrator
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Security Architecture Design"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/secure-aad-users-with-mfa/index.yml
   title: Secure Microsoft Entra users with multifactor authentication
   description: Learn how to use multifactor authentication with Microsoft Entra ID to harden your user accounts.
   ms.date: 11/01/2024
   author: Justinha
-  ms.author: justinha
+  ms.author: lumac
   ms.topic: module
   ms.service: entra-id
 title: Secure Microsoft Entra users with multifactor authentication

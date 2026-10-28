@@ -1,11 +1,30 @@
 ### YamlMime:Module
 uid: learn.azure.inclusive-marketing
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 38
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - marketing
+    - communications
+  gs-skills:
+    - "Communications Management"
+    - "Organizational Culture"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/inclusive-marketing/index.yml
   title: Learn inclusive marketing principles
   description: Learn how to embody diversity and inclusivity across marketing engines 
   ms.date: 05/18/2023
   author: asajohnson
-  ms.author: asjohnso
+  ms.author: lumac
+  ms.service: accessibility
   ms.topic: module
 title: Learn inclusive marketing principles
 summary: Learn how to embody diversity and inclusivity across marketing engines.

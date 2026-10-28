@@ -5,7 +5,7 @@ metadata:
   description: Enable Microsoft Agent 365 in the Microsoft 365 admin center, and navigate the management interface. Use the interface to understand the agent governance capabilities available.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Enable and navigate Microsoft Agent 365

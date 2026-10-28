@@ -6,7 +6,7 @@ metadata:
   description: "Describe how Microsoft Purview Data Security Investigations helps organizations investigate data security incidents."
   ms.date: 06/22/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 8
 content: |

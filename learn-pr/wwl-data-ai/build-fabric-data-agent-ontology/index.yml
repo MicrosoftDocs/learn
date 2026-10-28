@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.build-fabric-data-agent-ontology
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 65
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - business-analyst
+  gs-skills:
+    - "Agent Development"
+    - "Graph-based AI"
+    - "Knowledge Grounding for AI"
+    - "Data Analytics"
+    - "AI Model Evaluation & Testing"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/build-fabric-data-agent-ontology/index.yml
   title: Build a Fabric data agent with an ontology
   description: Learn how to add ontology context to a Fabric data agent, configure eligible underlying sources, validate SQL, KQL, or DAX queries, and publish and share the agent.
   ms.date: 10/22/2026

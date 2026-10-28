@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.quantum.choose-the-best-azure-quantum
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 27
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-quantum
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+  gs-skills:
+    - "Cloud Computing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/quantum/choose-the-best-azure-quantum/index.yml
   title: Choose the best Azure Quantum option for your needs
   description: Learn how to get started with Azure Quantum and choose the best option for your needs.
   

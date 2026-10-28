@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.build-agent-workflows-microsoft-foundry
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 64
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+    - solution-architect
+  gs-skills:
+    - "Agent Development"
+    - "Multi-Agent Orchestration"
+    - "AI-Powered Workflow Automation"
+    - "Low-Code Development"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/build-agent-workflows-microsoft-foundry/index.yml
   title: Get started with building agent-driven workflows using Microsoft Foundry
   description: Workflows enable you to orchestrate AI agents and other components to create intelligent applications. Learn how to build and manage workflows using Microsoft Foundry.
   author: buzahid

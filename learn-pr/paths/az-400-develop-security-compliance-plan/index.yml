@@ -1,6 +1,36 @@
 ### YamlMime:LearningPath
 uid: learn.az-400-develop-security-compliance-plan
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Security Architecture Design"
+    - "Security Operations Management"
+    - "Cloud Administration"
+    - "Security Analytics"
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Application Security"
+    - DevOps
+    - "Security Automation"
+    - "Organizational Culture"
+    - "Organizational Effectiveness"
+    - "Communications Management"
+    - Automation
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-400-develop-security-compliance-plan/index.yml
   title: "Develop a security and compliance plan"
   description: "Build strategies around security and compliance and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
   brand: azure

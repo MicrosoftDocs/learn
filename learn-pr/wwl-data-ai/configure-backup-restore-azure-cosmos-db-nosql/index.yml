@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-backup-restore-azure-cosmos-db-nosql
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 92
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - developer
+  gs-skills:
+    - "Data Administration"
+    - "Cloud Administration"
+    - "Data Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/configure-backup-restore-azure-cosmos-db-nosql/index.yml
   title: Configure Backup and Restore in Azure Cosmos DB
   description: "Evaluate periodic and continuous backup for Azure Cosmos DB, configure continuous backup, perform point-in-time recovery, and describe Azure Backup for Azure Cosmos DB."
   ms.date: 10/03/2026

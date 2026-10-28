@@ -53,5 +53,5 @@ The current Azure Sphere management model uses catalogs. The Azure Sphere applic
      ```
 
    > [!NOTE]
-   > Catalogs that were migrated from Azure Sphere (Legacy) also store the same value in the `tags.MigratedCatalogId` resource tag for backward compatibility. Both `--query "properties.tenantId"` and `--query "tags.MigratedCatalogId"` return the same UUID for migrated catalogs, but only `properties.tenantId` is guaranteed for catalogs created directly in the Integrated model. The `properties.tenantId` field is documented in the [Azure Sphere Catalog REST API schema](https://learn.microsoft.com/rest/api/azuresphere/catalogs/get?view=rest-azuresphere-2024-04-01).
+   > Catalogs that were migrated from Azure Sphere (Legacy) also store the same value in the `tags.MigratedCatalogId` resource tag for backward compatibility. Both `--query "properties.tenantId"` and `--query "tags.MigratedCatalogId"` return the same UUID for migrated catalogs, but only `properties.tenantId` is guaranteed for catalogs created directly in the Integrated model. The `properties.tenantId` field is documented in the [Azure Sphere Catalog REST API schema](/rest/api/azuresphere/catalogs/get?view=rest-azuresphere-2024-04-01&preserve-view=true).
 1. Copy the Azure Sphere (Legacy) tenant UUID to Notepad, as you'll need it soon.

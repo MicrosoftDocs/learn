@@ -7,7 +7,7 @@ metadata:
   description: Learn what Bicep is and how to install the Bicep tooling.
   ms.date: 01/31/2025
   author: mumian
-  ms.author: jgao
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

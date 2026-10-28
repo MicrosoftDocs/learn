@@ -2,6 +2,28 @@
 uid: learn.dpu.windows-server-2025-accreditation-2026
 title: Windows Server 2025 Accreditation 2026
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - technology-manager
+  gs-skills:
+    - "IT Strategy"
+    - "Infrastructure Management"
+    - "Communications Management"
+    - "Cloud Computing"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Cloud Administration"
+    - Virtualization
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/windows-server-2025-accreditation-2026/index.yml
   title: Windows Server 2025 Accreditation 2026
   description: This learning path introduces Windows Server 2025 and helps you evaluate how it supports modernization across on-premises and hybrid environments. You’ll explore how to determine the right time to modernize from Windows Server 2016 or Windows Server 2019, assess the role of Azure Local in your infrastructure strategy, and understand the key capabilities and positioning of Windows Server 2025. By the end of this learning path, you’ll be able to evaluate modernization approaches and identify how Windows Server 2025 can help meet evolving security, operational, and business requirements.
   ms.date: 05/22/2026

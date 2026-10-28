@@ -6,7 +6,7 @@ metadata:
   description: Practice trying out your deployed model in the Azure OpenAI completions playground.
   ms.date: 09/25/2024
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

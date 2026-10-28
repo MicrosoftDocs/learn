@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-azure-networking-services
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - administrator
+  gs-skills:
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Cloud Computing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-azure-networking-services/index.yml
   title: Describe Azure Networking Services
   description: "Introduction to core Azure networking services, including virtual networks, VPN Gateway, ExpressRoute, and Azure DNS."
   ms.date: 03/06/2026

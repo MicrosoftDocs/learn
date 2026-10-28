@@ -1,11 +1,30 @@
 ### YamlMime:Module
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 35
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Data Analytics"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/monitor-azure-vm-using-diagnostic-data/index.yml
   title: Monitor your Azure virtual machines with Azure Monitor
   description: Learn how to monitor your Azure VMs by using Azure Monitor to collect and analyze VM host and client metrics and logs.
   ms.date: 09/26/2024
   author: guywi-ms
-  ms.author: guywild
+  ms.author: lumac
   ms.topic: module
   ms.custom: engagement-fy23
   ms.service: azure-virtual-machines

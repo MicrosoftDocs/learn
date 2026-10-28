@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-evaluate-boolean-expressions
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 50
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - student
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-evaluate-boolean-expressions/index.yml
   title: Evaluate Boolean Expressions to make Decisions in C#
   description: "Learn the operators and techniques required to evaluate and compare values in your decision statements."
   ms.date: 12/15/2025

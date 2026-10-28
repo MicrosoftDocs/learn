@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-identity-principles-concepts
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 49
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-professional
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/describe-identity-principles-concepts/index.yml
   title: Describe Identity Concepts
   description: "Describe identity concepts."
   ms.date: 06/16/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.service: security
   ms.topic: module
 title: Describe identity concepts

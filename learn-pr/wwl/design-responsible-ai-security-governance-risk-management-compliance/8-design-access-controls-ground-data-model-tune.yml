@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to design access controls for grounding data and model tuning workflows to ensure secure, compliant, and responsible AI system outputs."
   ms.date: 02/09/2026
   author: pabloMS
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 4
 content: |

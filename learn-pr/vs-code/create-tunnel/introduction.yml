@@ -5,7 +5,7 @@ metadata:
   title: Introduction to the Remote - Tunnels extension
   description: Introduction to the Visual Studio Code Remote - Tunnels extension.
   author: theReynald
-  ms.author: radolphe
+  ms.author: lumac
   ms.date: 12/15/2023
   ms.topic: unit
 durationInMinutes: 1

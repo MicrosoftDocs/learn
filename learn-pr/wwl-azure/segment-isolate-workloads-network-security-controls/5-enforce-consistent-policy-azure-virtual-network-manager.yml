@@ -6,7 +6,7 @@ metadata:
   description: "Use Azure Virtual Network Manager security admin rules to enforce organization-wide network policies that individual teams can't override."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 8
 content: |

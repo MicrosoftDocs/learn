@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - higher-ed-educator
+  gs-skills:
+    - "Digital Accessibility"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/learn-best-practices-from-microsoft-technical-trainers-for-az-104/index.yml
   title: Learn best practices from Microsoft Technical Trainers
   description: Becoming familiar with the Microsoft technical training program will provide direction when preparing to implement the fundamentals course materials in your classroom.
   ms.date: 08/16/2022

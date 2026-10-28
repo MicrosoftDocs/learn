@@ -1,6 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.windows-server-file-servers-storage-management
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - storage-admin
+    - systems-administrator
+  gs-skills:
+    - Storage
+    - Virtualization
+    - "Infrastructure Management"
+    - "Solution Architecture"
+    - "Data Management"
+    - "Cloud Infrastructure"
+    - "Data Security"
+    - "IT Networking"
+    - "Network Connectivity"
+    - Automation
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/windows-server-file-servers-storage-management/index.yml
   title: Windows Server file servers and storage management
   description: Windows Server file servers and storage management
   ms.date: 01/23/2026

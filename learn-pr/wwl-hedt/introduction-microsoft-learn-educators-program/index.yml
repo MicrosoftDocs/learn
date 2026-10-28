@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-microsoft-learn-educators-program
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 33
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - higher-ed-educator
+    - k-12-educator
+  gs-skills:
+    - "Career Development"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-hedt/introduction-microsoft-learn-educators-program/index.yml
   title: Introduction to Microsoft Learn for Educators program
   description: "The Microsoft Learn for Educators program provides eligible educators and faculty members at colleges, universities, community colleges, polytechnics, and some STEM-focused secondary schools access to Microsoft's ready-to-teach curriculum and teaching materials aligned to industry-recognized Microsoft Certifications. The Microsoft certifications enhance your students' credibility by giving them a professional advantage through globally recognized, industry-endorsed evidence of skills mastery."
   ms.date: 08/08/2022

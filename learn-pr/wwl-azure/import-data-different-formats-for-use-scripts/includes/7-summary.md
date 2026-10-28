@@ -15,13 +15,13 @@ In this module, you learned to import data from a text file, CSV file, XML file,
 
 To learn more, go through the following documents:
 
-- [Get-Content](https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-content)
+- [Get-Content](/powershell/module/microsoft.powershell.management/get-content)
 
-- [Import-Csv](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/import-csv)
+- [Import-Csv](/powershell/module/microsoft.powershell.utility/import-csv)
 
-- [Import-Clixml](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/import-clixml)
+- [Import-Clixml](/powershell/module/microsoft.powershell.utility/import-clixml)
 
-- [ConvertFrom-Json](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/convertfrom-json)
+- [ConvertFrom-Json](/powershell/module/microsoft.powershell.utility/convertfrom-json)
 
-- [Invoke-RestMethod](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-restmethod)
+- [Invoke-RestMethod](/powershell/module/microsoft.powershell.utility/invoke-restmethod)
 

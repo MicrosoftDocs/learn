@@ -6,7 +6,7 @@ metadata:
   description: Learn tips for getting help when you have the NumPy library installed.
   ms.date: 04/07/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5

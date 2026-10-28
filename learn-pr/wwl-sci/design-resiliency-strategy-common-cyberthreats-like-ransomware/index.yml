@@ -1,11 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 49
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - solution-architect
+  gs-skills:
+    - "Security Architecture Design"
+    - "Threat Management"
+    - "Infrastructure Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/design-resiliency-strategy-common-cyberthreats-like-ransomware/index.yml
   title: Design a Resiliency Strategy for Ransomware and Other Attacks Based on Microsoft Security Best Practices
   description: "You learn about common cyberthreats like ransomware and what kinds of attack patterns an organization must be prepared for."
   ms.date: 05/21/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: module
   ms.service: security
   ai-usage: ai-assisted

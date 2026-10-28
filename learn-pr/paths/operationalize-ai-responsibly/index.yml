@@ -2,6 +2,31 @@
 uid: learn.azure.operationalize-ai-responsibly
 title: Operationalize AI responsibly with Azure AI Foundry
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - microsoft-foundry
+    - azure-openai
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - security-engineer
+    - developer
+  gs-skills:
+    - "AI Security (Model-Level)"
+    - "AI Model Evaluation & Testing"
+    - "Responsible AI"
+    - "Application Development"
+    - "Prompt Engineering"
+    - "Retrieval-Augmented Generation (RAG)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/operationalize-ai-responsibly/index.yml
   title: Operationalize AI responsibly with Azure AI Foundry
   description: Explore Azure AI Foundry's tools for generative AI security, privacy, and quality. Shift from reactive risk management to agile, responsible-by-design governance for better observability and efficiency.
   ms.date: 09/23/2024

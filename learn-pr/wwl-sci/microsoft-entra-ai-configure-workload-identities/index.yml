@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.entra-ai-configure-workload-identities
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 49
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/microsoft-entra-ai-configure-workload-identities/index.yml
   title: Configure Workload Identities and Permissions for AI Environments
   description: "Configure secure authentication and least-privilege permissions for workload identities in AI environments using Microsoft Entra. Focused on app registrations, managed identities, and service principals."
   ms.date: 04/27/2026

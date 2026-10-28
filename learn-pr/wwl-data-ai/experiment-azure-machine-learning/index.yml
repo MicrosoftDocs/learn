@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.experiment-azure-machine-learning
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 65
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-machine-learning
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - ai-engineer
+  gs-skills:
+    - "Machine Learning"
+    - "Data Science"
+    - "AI Model Evaluation & Testing"
+    - "Responsible AI"
+    - "Python (Programming Language)"
+    - "Data Management"
+    - "AI Governance"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/experiment-azure-machine-learning/index.yml
   title: Experiment with Azure Machine Learning
   description: Choose this module if you want to compare models by using automated machine learning, MLflow, and the Responsible AI dashboard.
   author: madiepev

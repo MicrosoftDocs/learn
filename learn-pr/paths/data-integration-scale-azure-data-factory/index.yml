@@ -1,6 +1,37 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.data-integration-scale-azure-data-factory
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+  gs-skills:
+    - "Data Engineering"
+    - "Data Management"
+    - Automation
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Data Security"
+    - "IT Networking"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Data Warehousing"
+    - "No-Code Development"
+    - "Low-Code Development"
+    - "Data Migration"
+    - "Process Automation"
+    - DevOps
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/data-integration-scale-azure-data-factory/index.yml
   title: Data integration at scale with Azure Data Factory
   description: Data integration at scale with Azure Data Factory
   ms.date: 07/20/2026

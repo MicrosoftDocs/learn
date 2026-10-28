@@ -6,7 +6,7 @@ metadata:
   description: "SC-100 preparatory unit on the topic: compliance considerations for AI technologies including EU AI Act, ISO 42001, and NIST AI RMF."
   ms.date: 05/15/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 7

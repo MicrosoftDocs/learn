@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.autoscale-java-azure
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 56
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - platform-engineer
+    - solution-architect
+  gs-skills:
+    - "Cloud Administration"
+    - "Platform Engineering"
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/autoscale-java-azure/index.yml
   moduleType: standard
   title: Drive higher utilization of your Java apps - autoscaling
   description: Learn how to drive higher utilization of your Java apps on Azure using autoscaling

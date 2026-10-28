@@ -1,6 +1,36 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.explore-analytics-data-stores
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+    - data-engineer
+  gs-skills:
+    - "Data Analytics"
+    - "Data Engineering"
+    - "Data Management"
+    - "AI Fluency"
+    - Storage
+    - SQL
+    - "Data Warehousing"
+    - "Database Design"
+    - "Database Development"
+    - "Data Administration"
+    - "Data Security"
+    - "Data Visualization"
+    - "Solution Architecture"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/explore-analytics-data-stores/index.yml
   title: Explore Analytics Data Stores in Microsoft Fabric
   description: Understand how Microsoft Fabric unifies analytics storage through OneLake, and evaluate when to use lakehouses, warehouses, or eventhouses for your data workloads.
   ms.date: 04/30/2026

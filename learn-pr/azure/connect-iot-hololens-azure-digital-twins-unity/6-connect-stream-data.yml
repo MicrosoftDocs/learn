@@ -6,7 +6,7 @@ metadata:
   description: Learn how to connect and stream Azure Digital Twin data to the wind turbine assets in your Unity project.
   ms.date: 09/10/2024
   author: JBrentJ
-  ms.author: lolab
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
 durationInMinutes: 20

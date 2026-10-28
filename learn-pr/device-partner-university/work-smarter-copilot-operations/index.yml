@@ -2,6 +2,32 @@
 uid: learn.dpu.work-smarter-copilot-operations
 title: Work smarter with Copilot prompts for operations professionals
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 20
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-365-copilot
+    - m365
+    - windows
+    - office-teams
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - operations
+    - business-user
+    - technology-manager
+  gs-skills:
+    - "AI Productivity"
+    - "AI Workforce Applications"
+    - "Collaboration Tools"
+    - "Communications Management"
+    - "Process Automation"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/work-smarter-copilot-operations/index.yml
   title: Work Smarter with Copilot prompts for operations professionals
   description: >
     This module explores how to use Microsoft 365 Copilot to enhance productivity and efficiency for operations professionals. Learn to compose effective Copilot prompts for automating tasks, extracting actionable insights, and optimizing decision-making processes.

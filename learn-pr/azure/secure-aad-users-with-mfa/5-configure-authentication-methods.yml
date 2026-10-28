@@ -5,7 +5,7 @@ metadata:
   description: Configure multifactor authentication methods
   ms.date: 11/01/2024
   author: Justinha
-  ms.author: justinha
+  ms.author: lumac
   ms.topic: unit
 title: Configure multifactor authentication methods
 durationInMinutes: 6

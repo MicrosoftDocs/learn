@@ -6,7 +6,7 @@ metadata:
   description: This content is part of the "Keep Microsoft 365 secure after Windows 10 end of support" module.
   ms.date: 10/15/2025
   author: melissawinters
-  ms.author: v-mwinters
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

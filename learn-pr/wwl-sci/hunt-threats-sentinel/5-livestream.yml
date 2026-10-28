@@ -5,7 +5,7 @@ metadata:
   description: Learn how to organize threat-hunting investigations with hunts, queries, bookmarks, analytics rules, and incidents.
   ms.date: 08/20/2026
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 title: Track threat-hunting investigations with hunts
 durationInMinutes: 5

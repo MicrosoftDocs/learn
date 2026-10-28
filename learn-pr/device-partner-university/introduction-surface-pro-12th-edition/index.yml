@@ -2,6 +2,23 @@
 uid: learn.dpu.introduction-surface-pro-12th-edition
 title: Introduction to Microsoft Surface Pro for Business, 13-inch (12th Edition)
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 30
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - surface
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+  gs-skills:
+    - "Device Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-surface-pro-12th-edition/index.yml
   title: Introduction to Microsoft Surface Pro for Business, 13-inch (12th Edition)
   description: 'In this module, you''ll learn about the features and benefits of Microsoft Surface Pro for Business, 13-inch (12th Edition), and how it can help you and your organization be more productive.'
   ms.date: 05/20/2026

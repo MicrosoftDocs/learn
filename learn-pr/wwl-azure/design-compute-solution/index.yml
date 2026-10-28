@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.design-compute-solution
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 61
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+  gs-skills:
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-compute-solution/index.yml
   adobe-target: true
   prefetch-feature-rollout: true
   title: Design an Azure Compute Solution

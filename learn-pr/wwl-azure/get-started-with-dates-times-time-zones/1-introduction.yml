@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to handle date and time effectively in C# applications, focusing on scheduling and logging across time zones."
   ms.date: 03/24/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 2
 content: |

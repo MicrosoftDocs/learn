@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.optimize-vacuum-azure-database-for-postgresql
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+  gs-skills:
+    - "Data Administration"
+    - Databases
+    - SQL
+    - Storage
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/optimize-vacuum-azure-database-for-postgresql/index.yml
   title: Optimize vacuum in Azure Database for PostgreSQL
   description: "Azure Database for PostgreSQL uses vacuum and autovacuum to remove rows that have been marked as soft-deleted after an update or deletion."
   ms.date: 10/05/2022

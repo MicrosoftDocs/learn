@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-concepts-of-relational-data
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 19
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+  gs-skills:
+    - Databases
+    - "Data Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/describe-concepts-of-relational-data/index.yml
   title: Describe concepts of relational data
   description: "This content is a part of Describe concepts of relational data."
   ms.date: 10/12/2026

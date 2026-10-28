@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.introduction-to-aspnet-core
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 7
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/introduction-to-aspnet-core/index.yml
   title: Introduction to .NET web development with ASP.NET Core            # Do not edit: title must be "Introduction to (product)"
   description: In this module, you'll learn about .NET web development with ASP.NET Core, including what it is and when to use it.
   ms.date: 11/01/2024

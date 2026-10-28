@@ -1,11 +1,28 @@
 ### YamlMime:LearningPath
 uid: learn.azure-databases.postgresql.playground-learning
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+    - developer
+  gs-skills:
+    - SQL
+    - "Data Analytics"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/playground-learning/index.yml
   title: 'Azure Database for PostgreSQL Tutorials'
   description: "Learn key PostgreSQL concepts through our Azure Database for PostgreSQL Tutorials. Explore our tutorials to focus on a specific topic, or discover a subject that interest you and delve deeper."
   ms.date: 05/23/2025
   author: milenak
-  ms.author: mpopovic
+  ms.author: lumac
   ms.topic: learning-path
 title: Azure Database for PostgreSQL Tutorials
 prerequisites: |

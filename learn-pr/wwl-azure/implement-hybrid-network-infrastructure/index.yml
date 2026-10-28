@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-hybrid-network-infrastructure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 69
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - systems-administrator
+    - solution-architect
+  gs-skills:
+    - "Network Connectivity"
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-hybrid-network-infrastructure/index.yml
   title: Implement hybrid network infrastructure
   description: "You learn to connect your on-premises environment to Azure, implement subnets and routing between your on-premises and cloud environments, and ensure that workloads in the cloud and on-premises perform DNS resolution to locate each other."
   ms.date: 01/23/2026

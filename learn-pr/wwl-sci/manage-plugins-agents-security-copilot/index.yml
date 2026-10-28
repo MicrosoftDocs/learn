@@ -1,11 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-plugins-agents-security-copilot
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - security-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+  gs-skills:
+    - "Agent Operations"
+    - "AI Governance"
+    - "Security Automation"
+    - "Identity and Access Management (IAM)"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Operations Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/manage-plugins-agents-security-copilot/index.yml
   title: Manage Plugins and Agents in Microsoft Security Copilot
   description: Learn how to configure plugin governance settings and manage the Security Copilot agent lifecycle, from discovering agents in the agent library and Security Store through to day-to-day agent operations.
   ms.date: 04/23/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: security-copilot
   ai-usage: ai-assisted

@@ -2,6 +2,25 @@
 uid: learn.philanthropies.get-started-with-ai
 
 metadata:
+  gs-content.levels: null
+  gs-content.locale: en-us
+  gs-duration: 50
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - student
+  gs-skills:
+    - "AI Fluency"
+    - "AI Prompting"
+    - "Generative AI"
+    - "Multimodal AI"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/get-started-with-ai/index.yml
   title: Get started with AI
   description: Learn the best practices for interacting with AI tools, including how to effectively prompt AI, summarize articles, and create images. This module provides you with basic AI terms and practical skills to enhance your understanding and usage of artificial intelligence. Perfect for beginners aiming to improve their AI capabilities.
   ms.date: 04/08/2025

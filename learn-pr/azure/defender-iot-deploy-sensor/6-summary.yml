@@ -6,7 +6,7 @@ metadata:
   description: "Summary of what you learned from the deployment of the Microsoft Defender for IoT monitoring system on to an operational technology (OT) network sensor training module."
   ms.date: 4/15/2024
   author: limwainstein
-  ms.author: lwainstein
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 1
 content: |

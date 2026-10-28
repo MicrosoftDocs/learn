@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to recommend process metrics for testing AI agents to ensure reliability, usability, and compliance before production deployment."
   ms.date: 02/13/2026
   author: msdavidram
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

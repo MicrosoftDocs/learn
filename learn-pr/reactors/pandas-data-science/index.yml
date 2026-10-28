@@ -1,11 +1,34 @@
 ### YamlMime:Module
 uid: learn.reactors.pandas-data-science
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 64
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - data-analyst
+    - developer
+    - student
+  gs-skills:
+    - "Python (Programming Language)"
+    - "Data Science"
+    - "Data Management"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/reactors/pandas-data-science/index.yml
   title: Introduction to the pandas library for data science
   description: Learn about the pandas library for data science. Run statements and scripts, declare variables, and create a basic pandas app.
   ms.date: 04/07/2022
   author: sguthals
-  ms.author: chnoring
+  ms.author: lumac
+  ms.service: azure-python
   ms.topic: module
   ms.custom: team=nextgen
 title: Introduction to the pandas library for data science

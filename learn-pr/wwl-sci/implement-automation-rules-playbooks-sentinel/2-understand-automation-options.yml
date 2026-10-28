@@ -5,7 +5,7 @@ metadata:
   description: Explore the two automation tiers in Microsoft Sentinel—automation rules and Logic Apps playbooks—and learn when to use each for incident management and response.
   ms.date: 04/16/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Understand Microsoft Sentinel automation options

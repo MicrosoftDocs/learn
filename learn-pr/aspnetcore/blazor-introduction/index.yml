@@ -1,12 +1,29 @@
 ### YamlMime:Module
 uid: learn.intro-to-blazor
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/blazor-introduction/index.yml
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Web Development with Blazor          # Do not edit: title must be "Introduction to (product)"
   description: "Evaluate whether Blazor is appropriate for your next web development project and learn how Blazor works."             # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 11/01/2024             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: csharpfritz      # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: jefritz           # Alias of the Microsoft employee either authoring or project-managing this content
+  ms.author: lumac           # Alias of the Microsoft employee either authoring or project-managing this content
   manager: coxford
   ms.topic: module
   ms.service: dotnet # Edit as appropriate for your portfolio area

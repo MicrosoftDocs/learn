@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.write-subqueries
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 50
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - database-administrator
+    - data-engineer
+    - data-analyst
+  gs-skills:
+    - SQL
+    - "Database Development"
+    - Databases
+    - "Data Analytics"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/write-subqueries/index.yml
   title: Write Subqueries in T-SQL
   description: "Write Subqueries in T-SQL"
   ms.date: 08/10/2026

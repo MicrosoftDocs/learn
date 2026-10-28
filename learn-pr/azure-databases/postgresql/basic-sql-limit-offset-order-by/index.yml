@@ -1,11 +1,28 @@
 ### YamlMime:Module
 uid: learn.azure-databases.postgresql.basic-sql-limit-offset-order-by
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 12
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - data-analyst
+  gs-skills:
+    - SQL
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure-databases/postgresql/basic-sql-limit-offset-order-by/index.yml
   title: "Organizing data: Using LIMIT, OFFSET, and ORDER BY clauses"
   description: "Learn to control the size and order of query results in PostgreSQL with the LIMIT, OFFSET, and ORDER BY clauses. Master pagination, sorting, and optimizing performance with these essential SQL tools."
   ms.date: 05/23/2025
-  author: mpopovic
-  ms.author: mpopovic
+  author: LuizMacedo
+  ms.author: lumac
   ms.topic: module-standard-task-based
 ###########################################################################
 ###

@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.automate-inspection-of-health
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 29
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-devops
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+  gs-skills:
+    - DevOps
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/automate-inspection-health/index.yml
   title: Automate Inspection of Health
   description: "Learn to implement automated health monitoring, configure event notifications, set up service hooks for pipeline monitoring, and establish quality gates for comprehensive release management"
   ms.date: 10/01/2025

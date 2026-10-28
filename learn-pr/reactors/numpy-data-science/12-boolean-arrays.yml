@@ -6,7 +6,7 @@ metadata:
   description: Learn about some of the operations you can do with Boolean arrays.
   ms.date: 04/07/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 10

@@ -6,7 +6,7 @@ metadata:
   description: "Summary of integrating Microsoft Defender XDR and Microsoft Sentinel."
   ms.date: 6/25/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

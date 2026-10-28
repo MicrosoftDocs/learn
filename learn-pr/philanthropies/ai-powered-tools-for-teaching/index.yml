@@ -2,10 +2,28 @@
 uid: learn.philanthropies.ai-powered-tools-for-teaching
 
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 87
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - faculty
+  gs-skills:
+    - "AI Productivity"
+    - "Accessible AI"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/ai-powered-tools-for-teaching/index.yml
   title: Use AI-powered tools for training
   description: This module contains sample activities that demonstrate how to integrate AI-powered tools into your learning environment.
   author: yoosunee
-  ms.author: anruss
+  ms.author: lumac
   ms.date: 01/14/2025
   ms.update-cycle: 180-days
   ms.service: artificial-intelligence

@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-class-inheritance
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 88
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-class-inheritance/index.yml
   title: Implement Class Inheritance
   description: "Learn how to create a class hierarchy using base and derived classes and how to hide or override members of a derived class by using `new`, `virtual`, `abstract`, and `override` keywords."
   ms.date: 08/25/2025

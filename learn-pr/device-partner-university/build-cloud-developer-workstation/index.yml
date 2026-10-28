@@ -2,6 +2,27 @@
 uid: learn.dpu.build-cloud-developer-workstation
 title: Build your first cloud-based developer workstation using Windows 365
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 26
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - platform-engineer
+  gs-skills:
+    - "Application Development"
+    - DevOps
+    - "Infrastructure Management"
+    - "Cloud Computing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/build-cloud-developer-workstation/index.yml
   title: Build Your First Cloud-Based Developer Workstation Using Windows 365
   description: 'In this module, you’ll start with a Windows 365 Cloud PC designed for developers. You’ll explore an environment that’s ready to code sooner, begin working with preinstalled tools, and validate that your environment supports real development workflows from the moment you sign in.'
   ms.date: 07/22/2026

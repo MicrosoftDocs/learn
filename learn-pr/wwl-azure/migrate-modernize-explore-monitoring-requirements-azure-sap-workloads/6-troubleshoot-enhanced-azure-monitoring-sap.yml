@@ -6,7 +6,7 @@ metadata:
   description: "Troubleshoot Azure Enhanced Monitoring for SAP"
   ms.date: 01/08/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom: linux-related-content
 durationInMinutes: 14

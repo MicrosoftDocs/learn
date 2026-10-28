@@ -5,7 +5,7 @@ metadata:
   description: Configure Defender for Cloud environment settings and manage security standards at management group scope, including Microsoft Cloud Security Benchmark (MCSB), regulatory standards, and custom standards.
   ms.date: 04/23/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Configure Defender for Cloud and manage security standards

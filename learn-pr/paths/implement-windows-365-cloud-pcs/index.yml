@@ -1,11 +1,39 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-windows-365-cloud-pcs
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - intune
+    - azure
+    - entra
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - support-engineer
+  gs-skills:
+    - Virtualization
+    - "Device Management"
+    - "Cloud Administration"
+    - "Network Connectivity"
+    - "Solution Architecture"
+    - "Data Security"
+    - "IT Networking"
+    - "Identity and Access Management (IAM)"
+    - "Collaboration Tools"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-windows-365-cloud-pcs/index.yml
   title: MD-015 Implement Windows 365 Cloud PCs
   description: This learning path provides instruction on the implementation of Windows 365, including application management, and provisioning, deploying, and managing Windows 365 Cloud PCs.
   ms.date: 08/19/2025
   author: wwlpublish
-  ms.author: rstearman
+  ms.author: lumac
   ms.topic: learning-path
 title: MD-015 Implement Windows 365 Cloud PCs
 prerequisites: |

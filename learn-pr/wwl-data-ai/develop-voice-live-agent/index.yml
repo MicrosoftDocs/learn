@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-voice-live-agent
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 52
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+  gs-skills:
+    - "Agent Development"
+    - "Application Development"
+    - "Python (Programming Language)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/develop-voice-live-agent/index.yml
   title: Develop an Azure Speech Voice Live Agent in Microsoft Foundry
   description: "Learn how to develop an Azure Speech Voice Live Agent using the Voice Live API and SDK in Microsoft Foundry."
   ms.date: 03/12/2026

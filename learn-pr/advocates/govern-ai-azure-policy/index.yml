@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.govern-ai-services-azure-policy
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 36
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - security-engineer
+  gs-skills:
+    - "AI Governance"
+    - "AI Compliance"
+    - "Cloud Administration"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Automation"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/govern-ai-azure-policy/index.yml
   ms.author: viniap
   author: Orin-Thomas
   ms.date: 07/25/2026

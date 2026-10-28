@@ -6,7 +6,7 @@ metadata:
   description: "Identify the security risks of VPN gateway configurations for site-to-site and point-to-site connections, including authentication weaknesses, legacy Internet Key Exchange (IKE) versions, and over-broad post-tunnel access."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 8
 content: |

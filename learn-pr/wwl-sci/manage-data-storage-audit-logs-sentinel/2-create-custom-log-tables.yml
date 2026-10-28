@@ -5,7 +5,7 @@ metadata:
   description: Create custom log tables in the Microsoft Sentinel workspace to store data from nonstandard sources, including table plan selection, schema definition, and DCR-based ingestion via the Logs Ingestion API.
   ms.date: 04/16/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Create custom log tables in Microsoft Sentinel

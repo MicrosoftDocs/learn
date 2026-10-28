@@ -6,7 +6,7 @@ metadata:
   description: "Select the appropriate remote administration tool"
   ms.date: 01/20/2025
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
   ms.custom: devx-track-azurecli, devx-track-azurepowershell
 azureSandbox: false

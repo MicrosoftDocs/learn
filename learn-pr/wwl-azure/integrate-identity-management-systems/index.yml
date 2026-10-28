@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.integrate-identity-management-systems
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 30
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+    - github
+    - azure-devops
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - devops-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+    - DevOps
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/integrate-identity-management-systems/index.yml
   title: Integrate with identity management systems
   description: "Master identity integration architectures including GitHub SSO, Microsoft Entra ID workload identities, service principals, and managed identities for secure DevOps authentication."
   ms.date: 10/23/2025

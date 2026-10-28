@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 43
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - Databases
+    - "Data Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/create-resource-template-for-azure-cosmos-db-sql-api/index.yml
   title: Create resource template for Azure Cosmos DB for NoSQL
   description: "Learn about automated Azure Cosmos DB for NoSQL resource deployments using the Azure Resource Manager with JSON and Bicep templates."
   ms.date: 04/02/2025

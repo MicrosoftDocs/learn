@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.operationalize-your-azure-data-factory-pipelines
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 53
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - azure-devops
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - devops-engineer
+    - administrator
+  gs-skills:
+    - DevOps
+    - "Data Engineering"
+    - "Infrastructure Management"
+    - "Cloud Administration"
+    - "Data Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/operationalize-azure-data-factory-pipelines/index.yml
   title: Operationalize your Azure Data Factory pipelines
   description: "Operationalize your Azure Data Factory pipelines"
   ms.date: 10/12/2026

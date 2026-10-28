@@ -22,10 +22,10 @@ The answers to these and other questions will be the requirements for your futur
 
 To learn more about architecting multitenant solutions on Azure and other concepts covered in this module, see the following resources:
 
-- [Architecting multitenant solutions on Azure - Azure Architecture Center | Microsoft Learn](https://learn.microsoft.com/azure/architecture/guide/multitenant/overview) 
-- [Starter web app for SaaS development - Azure Architecture Center | Microsoft Learn](https://learn.microsoft.com/azure/architecture/example-scenario/apps/saas-starter-web-app)
-- [Considerations for multitenant control planes - Azure Architecture Center | Microsoft Learn](https://learn.microsoft.com/azure/architecture/guide/multitenant/considerations/control-planes)
+- [Architecting multitenant solutions on Azure - Azure Architecture Center | Microsoft Learn](/azure/architecture/guide/multitenant/overview)
+- [Starter web app for SaaS development - Azure Architecture Center | Microsoft Learn](/azure/architecture/example-scenario/apps/saas-starter-web-app)
+- [Considerations for multitenant control planes - Azure Architecture Center | Microsoft Learn](/azure/architecture/guide/multitenant/considerations/control-planes)
 - [Azure SaaS Development Kit – SaaS Software Dev | Microsoft Azure](https://azure.microsoft.com/resources/development-kit/saas/)
-- [Microsoft identity platform overview - Microsoft identity platform | Microsoft Learn](https://learn.microsoft.com/entra/identity-platform/v2-overview)
-- [Technical and feature overview - Azure Active Directory B2C | Microsoft Learn](https://learn.microsoft.com/azure/active-directory-b2c/technical-overview)
+- [Microsoft identity platform overview - Microsoft identity platform | Microsoft Learn](/entra/identity-platform/v2-overview)
+- [Technical and feature overview - Azure Active Directory B2C | Microsoft Learn](/azure/active-directory-b2c/technical-overview)
 

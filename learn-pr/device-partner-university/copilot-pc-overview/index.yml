@@ -2,6 +2,27 @@
 uid: learn.dpu.copilot-pc-overview
 title: Explore on-device AI and NPU capabilities in Copilot+ PCs
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 14
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - technology-manager
+    - sales
+  gs-skills:
+    - "AI Infrastructure"
+    - "AI Fluency"
+    - "AI Business & Vision"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/copilot-pc-overview/index.yml
   title: Explore on-device AI and NPU capabilities in Copilot+ PCs
   description: Explore how Copilot+ PCs use on-device AI, a dedicated Neural Processing Unit (NPU), and Windows 11 Pro to deliver intelligent, secure AI-powered experiences for modern work.
   ms.date: 08/06/2025

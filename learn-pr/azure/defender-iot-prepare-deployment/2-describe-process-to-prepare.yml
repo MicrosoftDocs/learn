@@ -6,7 +6,7 @@ metadata:
   description: "Describe where the preparing process fits in the overall deployment of Microsoft Defender for IoT for operational technology monitoring."
   ms.date: 03/04/2024
   author: limwainstein
-  ms.author: lwainstein
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

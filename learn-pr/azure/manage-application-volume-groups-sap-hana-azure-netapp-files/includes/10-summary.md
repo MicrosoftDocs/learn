@@ -12,7 +12,7 @@ You also performed hands-on exercises to deploy the first SAP HANA host, add hos
 
 ### Learn more
 
-- [Add volumes for an SAP HANA system as a secondary database in HSR](https://learn.microsoft.com/azure/azure-netapp-files/application-volume-group-add-volume-secondary?tabs=without-extension-one)
-- [Add volumes for an SAP HANA system as a DR system](https://learn.microsoft.com/azure/azure-netapp-files/application-volume-group-disaster-recovery?tabs=without-extension-1)
-- [Manage volumes in an application volume group for SAP HANA](https://learn.microsoft.com/azure/azure-netapp-files/application-volume-group-manage-volumes)
-- [Configure application volume groups for SAP HANA using REST API](https://learn.microsoft.com/azure/azure-netapp-files/configure-application-volume-group-sap-hana-api?tabs=without-extension-1)
+- [Add volumes for an SAP HANA system as a secondary database in HSR](/azure/azure-netapp-files/application-volume-group-add-volume-secondary?tabs=without-extension-one)
+- [Add volumes for an SAP HANA system as a DR system](/azure/azure-netapp-files/application-volume-group-disaster-recovery?tabs=without-extension-1)
+- [Manage volumes in an application volume group for SAP HANA](/azure/azure-netapp-files/application-volume-group-manage-volumes)
+- [Configure application volume groups for SAP HANA using REST API](/azure/azure-netapp-files/configure-application-volume-group-sap-hana-api?tabs=without-extension-1)

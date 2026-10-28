@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.accelerate-app-development-using-github-copilot
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - github
+    - github-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "AI-Augmented Software Development"
+    - "AI Productivity"
+    - "AI Prompting"
+    - "Application Development"
+    - "AI Model Evaluation & Testing"
+    - "Prompt Engineering"
+    - "Agentic AI"
+    - "Generative AI"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/accelerate-app-development-using-github-copilot/index.yml
   title: Get Started with AI-Assisted Development
   description: Learn how to use GitHub Copilot in a Visual Studio Code environment. This training covers code analysis, inline and project documentation, app development, unit testing, code refactoring, and provides an introduction to vibe coding. AZ-2007
   ms.date: 03/05/2026

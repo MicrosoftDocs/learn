@@ -6,7 +6,7 @@ metadata:
   description: "Back up and recover data from encrypted disks"
   ms.date: 01/10/2025
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

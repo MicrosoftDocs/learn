@@ -6,7 +6,7 @@ metadata:
   description: Create visualizations for the clustering model.
   ms.date: 05/15/2020
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 7

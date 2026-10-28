@@ -1,11 +1,33 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 19
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+    - systems-administrator
+    - developer
+  gs-skills:
+    - Virtualization
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-virtualize-memory/index.yml
   title: Virtualize memory
   description: Carnegie Mellon University's Cloud Developer course. Learn how memory is virtualized to support cloud resources. Covers different types of memory mapping and related issues.
   ms.date: 03/09/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
+  ms.service: azure
   ms.topic: module
   ms.custom: team=nextgen
 title: Virtualize memory

@@ -6,7 +6,7 @@ metadata:
   description: "Creates a Microsoft Sentinel workspace, assigns IAM roles, and configures data retention."
   ms.date: 04/01/2025
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 15
 content: |

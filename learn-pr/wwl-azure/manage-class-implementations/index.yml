@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-class-implementations
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 106
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-class-implementations/index.yml
   title: Manage Class Implementations
   description: "Learn how to implement classes using advanced techniques like static classes, partial classes, and object initializers that can improve the readability, maintainability, and organization of your code."
   ms.date: 02/12/2025

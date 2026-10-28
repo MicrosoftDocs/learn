@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-results-kql
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 30
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-sentinel
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+  gs-skills:
+    - "Security Analytics"
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Threat Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/analyze-results-kusto-query-language/index.yml
   title: Analyze query results using KQL
   description: "Analyze query results using KQL"
   ms.date: 04/18/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module
   ms.service: kusto
 title: Analyze query results using KQL

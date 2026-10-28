@@ -6,7 +6,7 @@ metadata:
   description: "Convert pipeline objects to other forms of data representation in PowerShell"
   ms.date: 01/29/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

@@ -5,7 +5,7 @@ metadata:
   description: Configure Microsoft Defender for DevOps and the Microsoft DevOps (MSDO) extension to scan Bicep and ARM templates in CI/CD pipelines. Then surface findings in Defender for Cloud, and block noncompliant merges using PR annotations.
   ms.date: 04/23/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Scan IaC templates using Microsoft Defender for DevOps

@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-azure-database-for-postgresql
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 45
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - security-engineer
+    - administrator
+  gs-skills:
+    - Databases
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Database Design"
+    - SQL
+    - "Network Connectivity"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/secure-azure-database-for-postgresql/index.yml
   title: Secure Azure Database for PostgreSQL
   description: "Azure Database for PostgreSQL includes comprehensive security features including encryption in transit and at rest, authentication, and granting permissions to database users. In this module you learn about the security features of Azure Database for PostgreSQL, and how to configure them."
   ms.date: 05/10/2024

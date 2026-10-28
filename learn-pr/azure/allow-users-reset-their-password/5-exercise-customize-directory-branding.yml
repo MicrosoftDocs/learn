@@ -6,7 +6,7 @@ metadata:
   description: In this exercise, you'll apply a custom background and logo to the Azure sign-in page.
   ms.date: 11/07/2024
   author: Justinha
-  ms.author: justinha
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

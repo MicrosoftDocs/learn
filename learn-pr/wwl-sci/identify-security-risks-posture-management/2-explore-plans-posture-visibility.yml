@@ -5,7 +5,7 @@ metadata:
   description: Compare Foundational CSPM and Defender CSPM plan capabilities, navigate the Cloud Overview dashboard in the Defender portal, discover AI workloads with AI security posture management, and understand the risk-based Cloud Secure Score.
   ms.date: 03/26/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Explore CSPM plans and posture visibility

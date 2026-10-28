@@ -5,7 +5,7 @@ metadata:
   description: Learn how to use the Plugin Settings page to govern who can add and manage custom plugins. Explore restricting preinstalled plugin access, and adding custom plugins to extend Security Copilot capabilities.
   ms.date: 04/23/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 title: Configure plugin settings in Security Copilot
 durationInMinutes: 5

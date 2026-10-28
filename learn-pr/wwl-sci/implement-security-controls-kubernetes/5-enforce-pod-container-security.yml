@@ -5,7 +5,7 @@ metadata:
   description: Apply Pod Security Standards, security contexts, user namespaces, and AppArmor profiles to harden containerized workloads in Azure Kubernetes Service (AKS).
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Enforce pod and container security

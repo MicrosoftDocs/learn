@@ -5,7 +5,7 @@ metadata:
   description: Compare Azure managed disk encryption options and select the appropriate approach for new and existing virtual machines based on workload and compliance requirements.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Choose the right disk encryption option for Azure VMs

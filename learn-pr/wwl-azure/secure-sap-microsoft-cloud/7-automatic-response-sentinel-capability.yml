@@ -6,7 +6,7 @@ metadata:
   description: "Automatic response with Microsoft Sentinel SOAR capabilities"
   ms.date: 03/24/2025
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 7
 content: |

@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-vector-search-azure-database-postgresql
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 94
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+    - data-engineer
+    - database-administrator
+  gs-skills:
+    - "Vector Databases"
+    - "Embedding Models"
+    - "Retrieval-Augmented Generation (RAG)"
+    - SQL
+    - "Database Development"
+    - "Data Engineering"
+    - "Generative AI"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-vector-search-azure-database-postgresql/index.yml
   title: Implement Vector Search with Azure Database for PostgreSQL
   description: Learn how to implement vector search in Azure Database for PostgreSQL using the pgvector extension for semantic search, recommendations, and RAG pipelines.
   ms.date: 06/15/2026

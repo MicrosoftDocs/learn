@@ -6,7 +6,7 @@ metadata:
   description: "Learn to design a solution for secure workstations for privileged access, including remote access using Azure Bastion for the SC-100 certification."
   ms.date: 05/29/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 7
 content: |

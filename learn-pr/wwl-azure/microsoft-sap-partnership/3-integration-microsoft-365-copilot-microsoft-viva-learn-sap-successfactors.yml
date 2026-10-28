@@ -6,7 +6,7 @@ metadata:
   description: "Integration of Microsoft 365 Copilot, Copilot for Microsoft Viva Learning, and SAP SuccessFactors"
   ms.date: 03/26/2025
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 8
 content: |

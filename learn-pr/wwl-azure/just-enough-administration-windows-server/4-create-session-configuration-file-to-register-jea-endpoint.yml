@@ -6,7 +6,7 @@ metadata:
   description: "Create a session configuration file to register a JEA endpoint"
   ms.date: 01/15/2025
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 58
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - data-scientist
+  gs-skills:
+    - "Data Engineering"
+    - "Data Management"
+    - "Data Warehousing"
+    - "No-Code Development"
+    - "Low-Code Development"
+    - "Data Migration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/code-free-transformation-scale/index.yml
   title: Code-free transformation at scale with Azure Data Factory
   description: "Perform code-free transformation at scale with Azure Data Factory"
   ms.date: 10/12/2026

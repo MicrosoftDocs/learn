@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-containers-azure-container-apps
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 68
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - devops-engineer
+  gs-skills:
+    - DevOps
+    - "Cloud Infrastructure"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/manage-containers-azure-container-apps/index.yml
   title: Manage Containers in Azure Container Apps
   description: Manage container apps across the day-two lifecycle. Update images, manage revisions, diagnose failing deployments, tune resources and scaling, and troubleshoot with logs and health probes.
   ms.date: 06/10/2026

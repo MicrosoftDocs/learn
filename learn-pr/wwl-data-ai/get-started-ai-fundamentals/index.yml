@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-ai-fundamentals
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 40
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+    - student
+  gs-skills:
+    - "AI Fluency"
+    - "Generative AI"
+    - "Natural Language Processing (NLP)"
+    - "Computer Vision"
+    - "Responsible AI"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-ai-fundamentals/index.yml
   title: Introduction to AI concepts
   description: "Curious about artificial intelligence? Want to understand what the
     buzz is about? This module introduces you to the world of AI."

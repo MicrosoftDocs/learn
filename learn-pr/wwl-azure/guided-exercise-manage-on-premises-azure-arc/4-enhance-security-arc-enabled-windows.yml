@@ -6,7 +6,7 @@ metadata:
   description: "Exercise 3 - Enhance security of Azure Arc-enabled Windows servers by using Microsoft Defender for Cloud"
   ms.date: 06/10/2024
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 45
 content: |

@@ -2,6 +2,25 @@
 uid: learn.dpu.recall-preview
 title: Retrace your steps with Recall (preview)
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+  gs-skills:
+    - "AI Productivity"
+    - "Data Security"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/recall-preview/index.yml
   title: Retrace Your Steps With Recall (preview)
   description: In this module, you'll learn how to use Recall (preview) to find previously viewed content using natural language and timeline browsing. You'll also learn to identify when it’s most useful and how it helps reduce time spent retracing steps.
   ms.date: 06/15/2026

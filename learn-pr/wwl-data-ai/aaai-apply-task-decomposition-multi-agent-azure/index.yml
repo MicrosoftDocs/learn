@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.apply-task-decomposition-multi-agent-azure
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 46
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - solution-architect
+  gs-skills:
+    - "Multi-Agent Orchestration"
+    - "Agent Development"
+    - "Prompt Engineering"
+    - "Agent Operations"
+    - "AI Model Evaluation & Testing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/aaai-apply-task-decomposition-multi-agent-azure/index.yml
   title: Apply Task Decomposition and Agent Collaboration Strategies in Microsoft Foundry
   description: "Apply advanced task decomposition strategies in Microsoft Foundry multi-agent systems. Design prompt chaining workflows, implement LLM-driven adaptive decomposition, configure agent handoff protocols for context-preserving transitions, and balance decomposition granularity against coordination overhead."
   ms.date: 7/27/2026

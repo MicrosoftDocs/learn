@@ -2,11 +2,39 @@
 uid: learn.defender-iot-deploy-ot-monitoring
 title: Deploy Defender for IoT for OT monitoring
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+  gs-skills:
+    - "Security Architecture Design"
+    - "Network Connectivity"
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "Security Operations Management"
+    - "IT Networking"
+    - "Infrastructure Management"
+    - Virtualization
+    - "Device Management"
+    - "Cloud Administration"
+    - Cybersecurity
+    - "Security Analytics"
+    - "Threat Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/defender-iot-deploy-ot-monitoring/index.yml
   title: Deploy Microsoft Defender for IoT for OT monitoring
   description: Learn how to deploy Defender for IoT to discover and secure IoT and OT devices.
   ms.date: 05/17/2024
   author: limwainstein
-  ms.author: lwainstein
+  ms.author: lumac
   ms.topic: learning-path
 summary: >
   Microsoft Defender for IoT is a unified security solution that identifies IoT and OT devices, vulnerabilities, and threats. Learn how to deploy Defender for IoT for OT monitoring.

@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.devrel.understand-windows-packet-monitor
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 43
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - systems-administrator
+  gs-skills:
+    - "IT Networking"
+    - "Infrastructure Management"
+    - "Data Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/understand-windows-packet-monitor/index.yml
   title: Capture and Inspect Windows Server Network Traffic with Packet Monitor
   description: Use Packet Monitor to discover network components, filter traffic, collect counters and packets, validate evidence, and convert a bounded Windows Server capture.
   ms.date: 07/28/2026

@@ -10,6 +10,6 @@ For Contoso Capital's research platform, these patterns enable a system that rou
 
 ## Learn more
 
-- [Microsoft Agent Framework handoff orchestration](https://learn.microsoft.com/agent-framework/workflows/orchestrations/handoff)—`HandoffBuilder`, context synchronization, and autonomous mode patterns covered in this module
-- [AI agent orchestration patterns](https://learn.microsoft.com/azure/architecture/ai-ml/guide/ai-agent-design-patterns)—architecture reference for sequential, concurrent, group chat, handoff, and Magentic patterns
-- [What is Microsoft Foundry Agent Service?](https://learn.microsoft.com/azure/foundry/agents/overview)—agent types, tools, and workflows in the Foundry platform
+- [Microsoft Agent Framework handoff orchestration](/agent-framework/workflows/orchestrations/handoff)—`HandoffBuilder`, context synchronization, and autonomous mode patterns covered in this module
+- [AI agent orchestration patterns](/azure/architecture/ai-ml/guide/ai-agent-design-patterns)—architecture reference for sequential, concurrent, group chat, handoff, and Magentic patterns
+- [What is Microsoft Foundry Agent Service?](/azure/foundry/agents/overview)—agent types, tools, and workflows in the Foundry platform

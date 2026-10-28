@@ -5,7 +5,7 @@ metadata:
   description: Connect on-premises Windows and Linux servers to Microsoft Defender for Cloud using Azure Arc-enabled servers, covering single-machine and at-scale deployment paths.
   ms.date: 04/01/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Connect on-premises machines using Azure Arc

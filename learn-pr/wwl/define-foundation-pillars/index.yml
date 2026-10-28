@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.define-foundation-pillars
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 16
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-devops
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - solution-architect
+  gs-skills:
+    - DevOps
+    - "Application Architecture"
+    - "Platform Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/define-foundation-pillars/index.yml
   title: 'Define the foundation pillars of DevOps: Architecture and Technology'
   description: "There are three things required to make DevOps happen: the cultural component, tools and technology, and architecture. Discover the last two foundation pillars of DevOps, Architecture and Technology!"
   ms.date: 09/20/2020
   author: wwlpublish
-  ms.author: sallybre
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-devops
 title: 'Define the foundation pillars of DevOps: Architecture and Technology'

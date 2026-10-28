@@ -6,7 +6,7 @@ metadata:
   description: "Onboarding Microsoft Sentinel to Microsoft Defender XDR."
   ms.date: 6/25/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 15
 content: |

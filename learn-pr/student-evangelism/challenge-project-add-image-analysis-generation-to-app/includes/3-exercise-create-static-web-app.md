@@ -2,7 +2,7 @@
 By completing this exercise you will:
 
 - Create a new Azure Static Web App resource in your subscription together with your application skeleton based on the React JavaScript framework, using the Azure Static Web Apps Visual Studio Code extension.
-- Build a CI/CD pipeline to deploy your React application on Azure, using Azure Static Web Apps service and [GitHub actions](https://github.com/features/actions). Automatizing the deployment process is one of the key best practice recommended by the [DevOps guidelines](https://learn.microsoft.com/devops/what-is-devops?WT.mc_id=academic-105496-cacaste), to catch bugs early and to ensure that your app is always up-to-date.
+- Build a CI/CD pipeline to deploy your React application on Azure, using Azure Static Web Apps service and [GitHub actions](https://github.com/features/actions). Automatizing the deployment process is one of the key best practice recommended by the [DevOps guidelines](/devops/what-is-devops?WT.mc_id=academic-105496-cacaste), to catch bugs early and to ensure that your app is always up-to-date.
 
 ## Specification
 

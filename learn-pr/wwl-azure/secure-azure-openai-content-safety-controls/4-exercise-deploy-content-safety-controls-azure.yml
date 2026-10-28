@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to deploy content safety controls in Azure to create custom block lists for precise moderation tailored to your business needs."
   ms.date: 02/04/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 18
 content: |

@@ -6,7 +6,7 @@ metadata:
   description: "Create a Virtual Machine from a managed image"
   ms.date: 12/24/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 3

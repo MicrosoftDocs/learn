@@ -1,6 +1,26 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.windows-server-deployment-configuration-administration
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - "Infrastructure Management"
+    - Automation
+    - "IT Networking"
+    - "Cloud Administration"
+    - Virtualization
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/windows-server-deployment-configuration-administration/index.yml
   title: Windows Server deployment, configuration, and administration
   description: Windows Server deployment, configuration, and administration
   ms.date: 01/23/2026

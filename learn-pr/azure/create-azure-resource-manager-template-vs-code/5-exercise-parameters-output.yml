@@ -6,7 +6,7 @@ metadata:
   description: Update your Azure Resource Manager template to add parameters and outputs.
   ms.date: 10/20/2025
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
     - devx-track-arm-template

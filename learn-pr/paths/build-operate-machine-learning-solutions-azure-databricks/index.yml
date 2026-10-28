@@ -1,6 +1,36 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.build-operate-machine-learning-solutions-azure-databricks
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure-databricks
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - data-scientist
+  gs-skills:
+    - "Data Engineering"
+    - "Data Analytics"
+    - "Data Management"
+    - "Data Science"
+    - "Machine Learning"
+    - SQL
+    - "Data Warehousing"
+    - "Cloud Administration"
+    - "Python (Programming Language)"
+    - "AI Model Evaluation & Testing"
+    - "AI Infrastructure"
+    - "Model Hosting & Inference"
+    - Automation
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/build-operate-machine-learning-solutions-azure-databricks/index.yml
   title: Build machine learning solutions using Azure Databricks
   description: Azure Databricks is a cloud-scale platform for data analytics and machine learning. Data scientists and machine learning engineers can use Azure Databricks to implement machine learning solutions at scale. (DP-3014)
   ms.date: 08/27/2025

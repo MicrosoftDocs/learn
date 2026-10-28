@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.data-ai.data-processing-with-azure-adls
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - storage-admin
+  gs-skills:
+    - Storage
+    - "Data Engineering"
+    - "Data Warehousing"
+    - "Data Management"
+    - "Data Security"
+    - "Data Analytics"
+    - "Cloud Administration"
+    - "Identity and Access Management (IAM)"
+    - "Network Connectivity"
+    - "Threat Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/data-processing-with-azure-adls/index.yml
   title: Large-Scale Data Processing with Azure Data Lake Storage Gen2
   description: Large-Scale Data Processing with Azure Data Lake Storage Gen2
   ms.date: 05/18/2026

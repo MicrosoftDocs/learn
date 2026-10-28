@@ -8,7 +8,7 @@ metadata:
   description: "Exercise enable sign-in risk policy"
   ms.date: 04/16/2025
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
     - sfi-ga-nochange

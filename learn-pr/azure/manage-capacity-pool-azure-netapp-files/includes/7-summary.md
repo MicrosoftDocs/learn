@@ -11,8 +11,8 @@ You also performed hands-on exercises to create a capacity pool in Azure NetApp 
 
 ### Learn more
 
-[Manage a manual QoS capacity pool](https://learn.microsoft.com/azure/azure-netapp-files/manage-manual-qos-capacity-pool)
+[Manage a manual QoS capacity pool](/azure/azure-netapp-files/manage-manual-qos-capacity-pool)
 
-[Manage billing by using capacity pool billing tag](https://learn.microsoft.com/azure/azure-netapp-files/manage-billing-tags)
+[Manage billing by using capacity pool billing tag](/azure/azure-netapp-files/manage-billing-tags)
 
-[Cost model for Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-cost-model)
+[Cost model for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-cost-model)

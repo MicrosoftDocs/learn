@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-client-server-communication-postgresql
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 28
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+  gs-skills:
+    - Databases
+    - "Data Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/understand-client-server-communication-postgresql/index.yml
   title: Understand client-server communication in PostgreSQL
   description: "PostgreSQL is a client-server system, which allows many clients to connect to a central server. In this module you learn how PostgreSQL manages connections from clients, and looking at some common PostgreSQL client tools."
   ms.date: 05/12/2024

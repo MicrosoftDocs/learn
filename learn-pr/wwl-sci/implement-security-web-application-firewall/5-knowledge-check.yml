@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge of implementing security controls for Azure App Service and Web Application Firewall, including authentication configuration, Web Application Firewall (WAF) modes, rule exclusions, and integration patterns.
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Knowledge check

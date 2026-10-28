@@ -6,7 +6,7 @@ metadata:
   description: Understand incident evidence and entities in Microsoft Sentinel.
   ms.date: 05/22/2023
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

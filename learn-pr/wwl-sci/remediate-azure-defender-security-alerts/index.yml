@@ -1,11 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.remediate-azure-defender-security-alerts
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 52
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - defender-for-cloud
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+    - administrator
+  gs-skills:
+    - "Security Operations Management"
+    - "Threat Management"
+    - "Security Automation"
+    - "Security Analytics"
+    - "Cloud Administration"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/remediate-azure-defender-security-alerts/index.yml
   title: Remediate security alerts using Microsoft Defender for Cloud
   description: "Remediate security alerts using Microsoft Defender for Cloud"
   ms.date: 06/10/2026
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module
   ms.service: defender-for-cloud
   ai-usage: ai-assisted

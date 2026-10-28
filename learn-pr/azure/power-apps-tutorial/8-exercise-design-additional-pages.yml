@@ -6,7 +6,7 @@ metadata:
   description: Construct additional pages for the application and send emails through Power Apps.
   ms.date: 04/23/2024
   author: "Sean-Kerawala"
-  ms.author: "vinnietieto"
+  ms.author: "lumac"
   ms.topic: unit
 durationInMinutes: 10
 content: |

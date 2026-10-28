@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-pipelines
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 17
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-devops
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+  gs-skills:
+    - DevOps
+    - Automation
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-azure-pipelines/index.yml
   title: Explore Azure Pipelines
   description: "Learn how Azure Pipelines helps you automate building, testing, and deploying your applications."
   ms.date: 09/26/2025

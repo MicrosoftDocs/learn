@@ -1,13 +1,38 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-implement-administer-conditional-access
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 65
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+    - microsoft-defender
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - administrator
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "Security Architecture Design"
+    - "Data Security"
+    - "Agentic AI"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/plan-implement-administer-conditional-access/index.yml
   adobe-target: true
   prefetch-feature-rollout: true
   title: Plan, Implement, and Administer Conditional Access
   description: "Conditional Access gives a fine granularity of control over which users and identities can do specific activities, access which resources, and how to ensure data and systems are safe—including AI agent identities managed through Microsoft Entra Agent ID."
   ms.date: 06/27/2025
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module-standard-task-based
   ms.collection: N/A
   ms.custom:

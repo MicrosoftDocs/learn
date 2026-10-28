@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.defender-for-cloud-ai-protect-workloads
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 38
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - defender-for-cloud
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - security-operations-analyst
+  gs-skills:
+    - "AI Security (Model-Level)"
+    - "Security Operations Management"
+    - "Threat Management"
+    - Cybersecurity
+    - "Security Analytics"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/defender-for-cloud-ai-protect-workloads/index.yml
   title: Protect AI workloads with Microsoft Defender for Cloud
   description: Learn how Microsoft Defender for Cloud extends protection to AI workloads across Azure. See how it discovers AI resources, assesses configuration risks, detects active threats, and integrates with Microsoft Defender XDR for unified investigation and response.
   ms.date: 10/13/2025

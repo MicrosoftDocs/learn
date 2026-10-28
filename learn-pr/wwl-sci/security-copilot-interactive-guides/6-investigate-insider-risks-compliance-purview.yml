@@ -6,7 +6,7 @@ metadata:
   description: "Use Security Copilot to investigate an insider risk alert and analyze unlabeled sensitive content using eDiscovery in Microsoft Purview."
   ms.date: 04/28/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 12
 content: |

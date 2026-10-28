@@ -1,11 +1,37 @@
 ### YamlMime:Module
 uid: learn.wwl.what-is-azure-defender
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 51
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - defender-for-cloud
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+    - administrator
+    - solution-architect
+  gs-skills:
+    - "Cloud Administration"
+    - "Threat Management"
+    - Cybersecurity
+    - "Infrastructure Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Architecture Design"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/what-is-azure-defender/index.yml
   title: Plan for Cloud Workload Protections using Microsoft Defender for Cloud
   description: "Plan for cloud workload protections using Microsoft Defender for Cloud"
   ms.date: 07/30/2025
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module-standard-task-based
   ms.service: defender-for-cloud
 title: Plan for cloud workload protections using Microsoft Defender for Cloud

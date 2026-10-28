@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.configure-dependency-injection
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 44
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/configure-dependency-injection/index.yml
   title: Configure services with dependency injection in ASP.NET Core
   description: "Understand and implement dependency injection in an ASP.NET Core app. Use ASP.NET Core's built-in service container to manage dependencies. Register services with the service container."
   ms.date: 11/7/2024

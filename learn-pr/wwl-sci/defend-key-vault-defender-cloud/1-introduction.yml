@@ -5,7 +5,7 @@ metadata:
   description: Introduction to protecting Azure Key Vault using Microsoft Defender for Cloud, including secret scanning and threat detection capabilities.
   ms.date: 04/13/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction

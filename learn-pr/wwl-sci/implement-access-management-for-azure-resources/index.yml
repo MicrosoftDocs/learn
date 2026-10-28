@@ -1,13 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-access-management-for-azure-resources
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 30
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+    - "Application Security"
+    - "Zero Trust Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-access-management-for-azure-resources/index.yml
   adobe-target: true
   prefetch-feature-rollout: true
   title: Implement access manager for Azure resource
   description: "Explore how to use built-in Azure roles, managed identities, and RBAC-policy to control access to Azure resources. Identity is the key to secure solutions."
   ms.date: 10/20/2026
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.collection: N/A
   ms.custom:

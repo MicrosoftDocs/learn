@@ -6,7 +6,7 @@ metadata:
   description: "Review the difference between an application object and a service principal and what each is used for."
   ms.date: 03/18/2024
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

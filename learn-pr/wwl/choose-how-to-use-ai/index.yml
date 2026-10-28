@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.choose-how-to-use-ai
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 18
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - student
+    - k-12-educator
+  gs-skills:
+    - "Accessible AI"
+    - "Digital Accessibility"
+    - "Responsible AI"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/choose-how-to-use-ai/index.yml
   title: "Choose How to Use AI"
   description: "Learn how to decide when to use AI, combine it with other supports, and stay in control of your choices to achieve your goals effectively."
   ms.date: 09/17/2026

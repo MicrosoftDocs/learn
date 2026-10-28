@@ -6,7 +6,7 @@ metadata:
   description: "Understand why monitoring matters, which Fabric activities to track, and how to establish a monitoring baseline."
   ms.date: 06/03/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - fabric

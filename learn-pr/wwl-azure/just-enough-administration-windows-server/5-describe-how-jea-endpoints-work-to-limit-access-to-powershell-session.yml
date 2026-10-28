@@ -6,7 +6,7 @@ metadata:
   description: "Describe how JEA endpoints work to limit access to a PowerShell session"
   ms.date: 01/15/2025
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
 azureSandbox: false

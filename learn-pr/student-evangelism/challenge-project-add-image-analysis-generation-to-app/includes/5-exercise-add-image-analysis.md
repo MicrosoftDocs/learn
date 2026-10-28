@@ -2,9 +2,9 @@ In this exercise you will add image analysis capabilities to your React applicat
 
 ## Specification
 
-1. Create a new Azure AI Vision Service resource in your subscription, using the 'Computer Vision' service. You can leverage the [Azure portal](https://ms.portal.azure.com/) UI or the [Azure CLI](https://learn.microsoft.com/cli/azure/what-is-azure-cli?WT.mc_id=academic-105496-cacaste) to do that.
+1. Create a new Azure AI Vision Service resource in your subscription, using the 'Computer Vision' service. You can leverage the [Azure portal](https://ms.portal.azure.com/) UI or the [Azure CLI](/cli/azure/what-is-azure-cli?WT.mc_id=academic-105496-cacaste) to do that.
 
-1. Add the code to call the Azure AI Vision service [Image Analysis 4.0 API](https://learn.microsoft.com/azure/ai-services/computer-vision/how-to/call-analyze-image-40?tabs=rest&WT.mc_id=academic-105496-cacaste&pivots=programming-language-rest-api) to your React application as a function 'analyzeImage' in a new separate module, that you can name 'azure-image-analysis.js'. Note that you can customize the visual features to be returned by the API, by embedding them in the 'features' query parameter. The function should receive as input the image URL and return the JSON response of the API.
+1. Add the code to call the Azure AI Vision service [Image Analysis 4.0 API](/azure/ai-services/computer-vision/how-to/call-analyze-image-40?tabs=rest&WT.mc_id=academic-105496-cacaste&pivots=programming-language-rest-api) to your React application as a function 'analyzeImage' in a new separate module, that you can name 'azure-image-analysis.js'. Note that you can customize the visual features to be returned by the API, by embedding them in the 'features' query parameter. The function should receive as input the image URL and return the JSON response of the API.
 
 1. Add 'analyzeImage' as a new module into your App.js and call the 'analyzeImage' function from there, in a way that the image analysis action is triggered when the 'Analyze' button is pressed. Ensure to hold the UI and to have a processing indicator while the analysis is running.
 
@@ -12,7 +12,7 @@ In this exercise you will add image analysis capabilities to your React applicat
 
 > [!TIP]
 > Don't include the services key directly in your code, and never post it publicly. When running your app locally, you can store your credentials in environment variables. Environment variables are name-value pairs that are stored within a specific development environment.
-> See the [Azure AI services security article](https://learn.microsoft.com/azure/ai-services/security-features?WT.mc_id=academic-105496-cacaste) for more authentication options.
+> See the [Azure AI services security article](/azure/ai-services/security-features?WT.mc_id=academic-105496-cacaste) for more authentication options.
 
 ## Check your work
 

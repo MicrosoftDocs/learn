@@ -1,6 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-secure-environment-database-service
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - entra
+    - defender-for-cloud
+    - microsoft-purview
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - security-engineer
+    - identity-access-admin
+    - solution-architect
+    - data-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Data Security"
+    - Databases
+    - SQL
+    - Cybersecurity
+    - "Network Connectivity"
+    - "Security Architecture Design"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Management"
+    - "Security Operations Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-secure-environment-database-service/index.yml
   title: Implement a secure environment for a database service
   description: Implement a secure environment for a database service
   ms.date: 08/04/2026

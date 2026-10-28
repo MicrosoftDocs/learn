@@ -38,4 +38,4 @@ The following table describes the request body parameters and volume properties 
 | tags | Volume tags |  |
 | zones | Availability Zones | If the region has availability zones, then you must select zones (1, 2, or 3). If a region has no available zones and the use of PPG isn't enabled, you can go for regional deployment (requires PPG activation). |
 
-To learn more about how to create Oracle volume groups using `curl` and see related examples, [see this guidance](https://learn.microsoft.com/azure/azure-netapp-files/configure-application-volume-oracle-api#create-application-volume-groups-for-oracle-using-curl).
+To learn more about how to create Oracle volume groups using `curl` and see related examples, [see this guidance](/azure/azure-netapp-files/configure-application-volume-oracle-api#create-application-volume-groups-for-oracle-using-curl).

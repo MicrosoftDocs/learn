@@ -1,11 +1,45 @@
 ### YamlMime:Module
 uid: learn.wwl.design-ai-agents-business-solutions
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 161
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-copilot-studio
+    - dynamics-365
+    - power-platform
+    - microsoft-foundry
+    - power-apps
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - ai-engineer
+    - developer
+    - functional-consultant
+  gs-skills:
+    - "Agent Development"
+    - "Agentic AI"
+    - "AI Solutions"
+    - "Application Architecture"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Prompt Engineering"
+    - "Responsible AI"
+    - "Low-Code Development"
+    - "Natural Language Processing (NLP)"
+    - "AI Governance"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/design-ai-agents-business-solutions/index.yml
   title: "Design AI agents for business solutions"
   description: "Learn to design AI agents tailored to business needs using Dynamics 365 and Copilot. Explore Responsible AI, custom connectors, and integration strategies."
   ms.date: 02/13/2026
   author: Randall-Knapp
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: module
   ms.service: microsoft-foundry
   ai-usage: ai-assisted

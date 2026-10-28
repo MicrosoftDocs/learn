@@ -26,7 +26,7 @@ When a clinician asks "What are the interactions between my patient's current me
 
 ## Learn more
 
-- [Prompt engineering techniques for Azure OpenAI](https://learn.microsoft.com/azure/ai-services/openai/concepts/advanced-prompt-engineering)
+- [Prompt engineering techniques for Azure OpenAI](/azure/ai-services/openai/concepts/advanced-prompt-engineering)
 - [OWASP Top 10 for Large Language Model Applications - Prompt Injection](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
-- [Azure AI Evaluation SDK documentation](https://learn.microsoft.com/azure/ai-foundry/how-to/develop/evaluate-sdk)
-- [Azure AI Content Safety - Prompt Shields](https://learn.microsoft.com/azure/ai-services/content-safety/concepts/jailbreak-detection)
+- [Azure AI Evaluation SDK documentation](/azure/ai-foundry/how-to/develop/evaluate-sdk)
+- [Azure AI Content Safety - Prompt Shields](/azure/ai-services/content-safety/concepts/jailbreak-detection)

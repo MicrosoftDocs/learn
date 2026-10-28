@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-unit-tests-using-github-copilot-tools
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 68
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github-copilot
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "AI-Augmented Software Development"
+    - "AI Productivity"
+    - "AI Prompting"
+    - "Generative AI"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/develop-unit-tests-using-github-copilot-tools/index.yml
   title: Develop Unit Tests using GitHub Copilot Tools
   description: "This module explores using GitHub Copilot and GitHub Copilot Chat to create unit tests. Exercises provide practical experience creating unit test projects and running unit tests in Visual Studio Code."
   ms.date: 05/12/2026

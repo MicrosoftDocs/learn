@@ -1,6 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.work-with-generative-models-azure-machine-learning
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure-machine-learning
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - data-scientist
+  gs-skills:
+    - "Natural Language Processing (NLP)"
+    - "Machine Learning"
+    - "Generative AI"
+    - "Embedding Models"
+    - "Model Hosting & Inference"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/work-with-generative-models-azure-machine-learning/index.yml
   title: Work with generative artificial intelligence (AI) models in Azure Machine Learning
   description: Work with generative artificial intelligence (AI) models in Azure Machine Learning
   ms.date: 12/01/2025

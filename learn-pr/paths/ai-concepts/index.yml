@@ -1,6 +1,37 @@
 ### YamlMime:LearningPath
 uid: learn.ai-technical-concepts
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+  gs-skills:
+    - "AI Fluency"
+    - "Generative AI"
+    - "Natural Language Processing (NLP)"
+    - "Computer Vision"
+    - "Responsible AI"
+    - "Prompt Engineering"
+    - "Large Language Model Operations (LLMOps)"
+    - "Embedding Models"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Agentic AI"
+    - "Machine Learning"
+    - "Application Development"
+    - "Information Extraction"
+    - "Knowledge Grounding for AI"
+    - "Vector Databases"
+    - "AI Model Evaluation & Testing"
+    - "Multimodal AI"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/ai-concepts/index.yml
   title: AI concepts for developers and technology professionals
   description: Learn core AI concepts and terminology to help you better understand AI workloads and how to plan AI solutions.
   brand: azure

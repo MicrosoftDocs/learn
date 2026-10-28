@@ -6,7 +6,7 @@ metadata:
   description: Test your knowledge of tunneling in Visual Studio Code.
   ms.date: 12/15/2023
   author: theReynald
-  ms.author: radolphe
+  ms.author: lumac
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3

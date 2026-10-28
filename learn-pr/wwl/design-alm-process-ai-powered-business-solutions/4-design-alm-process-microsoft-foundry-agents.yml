@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to design robust ALM processes for Microsoft Foundry agents, ensuring governance, deployment, and operational reliability."
   ms.date: 02/12/2026
   author: msdavidram
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

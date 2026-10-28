@@ -6,7 +6,7 @@ metadata:
   description: "Learn to build a scalable strategy for creating high-quality test cases using Copilot. Strengthen reliability, coverage, and consistency in AI solutions."
   ms.date: 02/13/2026
   author: msdavidram
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

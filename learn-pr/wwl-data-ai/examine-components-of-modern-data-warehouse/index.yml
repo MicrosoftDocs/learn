@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.examine-components-of-modern-data-warehouse
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 51
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+    - azure-databricks
+    - azure
+    - power-bi
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - solution-architect
+    - student
+  gs-skills:
+    - "Data Warehousing"
+    - "Data Engineering"
+    - "Data Analytics"
+    - "Data Management"
+    - "Data Visualization"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/index.yml
   title: Explore Fundamentals Of Large-Scale Data Analytics
   description: "Organizations use analytics platforms to build large scale data analytics solutions that generate insights and drive success. Microsoft provides multiple technologies that you can combine to build a large scale data analytics solution."
   ms.date: 10/12/2026

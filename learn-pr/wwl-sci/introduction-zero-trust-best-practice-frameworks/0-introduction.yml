@@ -6,7 +6,7 @@ metadata:
   description: "Introduction to the module on Zero Trust and best practice frameworks for cybersecurity architects."
   ms.date: 04/27/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 2

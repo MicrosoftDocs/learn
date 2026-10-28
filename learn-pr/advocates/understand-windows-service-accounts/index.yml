@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.devrel.understand-windows-server-service-accounts
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 43
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - systems-administrator
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Security Automation"
+    - "Infrastructure Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/understand-windows-service-accounts/index.yml
   title: Understand Windows Server service accounts
   description: Describe the purpose and common problems of Windows Server service accounts, and select and configure the correct local or managed account type, including the Windows Server 2025 delegated Managed Service Account (dMSA).
   ms.date: 07/01/2026

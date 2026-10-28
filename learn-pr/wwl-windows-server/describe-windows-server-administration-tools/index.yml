@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-windows-server-administration-tools
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 45
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - systems-administrator
+    - support-engineer
+  gs-skills:
+    - "Infrastructure Management"
+    - Automation
+    - "IT Networking"
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/describe-windows-server-administration-tools/index.yml
   title: Describe Windows Server administration tools
   description: "Learn how to select and use Windows Server administration tools including Windows Admin Center, Server Manager, Remote Server Administration Tools (RSAT), and Windows PowerShell remoting for local and remote server management."
   ms.date: 08/31/2026

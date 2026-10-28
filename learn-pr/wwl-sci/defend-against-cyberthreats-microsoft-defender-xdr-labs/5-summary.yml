@@ -6,7 +6,7 @@ metadata:
   description: "Provides a summary of initializing and deploying Microsoft Defender XDR and Microsoft Defender for Endpoint."
   ms.date: 11/5/2024
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

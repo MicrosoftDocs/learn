@@ -6,7 +6,7 @@ metadata:
   description: Learn how to open the entity type overview, view entity instances, and inspect individual entity instance details and relationships in Microsoft Fabric IQ.
   ms.date: 04/13/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

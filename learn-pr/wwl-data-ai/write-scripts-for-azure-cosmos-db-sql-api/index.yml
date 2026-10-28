@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 41
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - database-administrator
+    - administrator
+    - data-engineer
+  gs-skills:
+    - Automation
+    - Databases
+    - "Cloud Administration"
+    - "Data Administration"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/write-scripts-for-azure-cosmos-db-sql-api/index.yml
   title: Write management scripts for Azure Cosmos DB for NoSQL
   description: "Learn how to manage Azure Cosmos DB for NoSQL accounts, databases, and containers using the Azure CLI."
   ms.date: 04/02/2025

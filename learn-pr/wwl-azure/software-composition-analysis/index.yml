@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.software-composition-analysis
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 77
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+    - azure-devops
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - security-engineer
+    - developer
+  gs-skills:
+    - "Application Security"
+    - Cybersecurity
+    - DevOps
+    - "Security Automation"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/software-composition-analysis/index.yml
   title: Software Composition Analysis
   description: "Learn Software Composition Analysis (SCA) to detect vulnerabilities and license compliance issues in open-source dependencies, implement GitHub Dependabot, integrate scanning tools into pipelines, and automate container security scanning."
   ms.date: 10/22/2025

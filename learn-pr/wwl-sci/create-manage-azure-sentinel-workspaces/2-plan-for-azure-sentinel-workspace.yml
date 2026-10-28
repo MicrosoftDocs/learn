@@ -6,7 +6,7 @@ metadata:
   description: "Plan for the Microsoft Sentinel workspace"
   ms.date: 03/14/2025
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

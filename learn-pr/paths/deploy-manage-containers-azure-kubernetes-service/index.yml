@@ -1,6 +1,37 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-manage-containers-azure-kubernetes-service
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - platform-engineer
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Platform Engineering"
+    - DevOps
+    - "IT Networking"
+    - "Application Architecture"
+    - "Cloud Administration"
+    - "Identity and Access Management (IAM)"
+    - "Infrastructure Management"
+    - Cybersecurity
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Security"
+    - Storage
+    - "Application Development"
+    - Automation
+    - "Network Connectivity"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/deploy-manage-containers-azure-kubernetes-service/index.yml
   title: Deploy containers by using Azure Kubernetes Service (AKS) AZ-1001
   description: In this learning path, you practice deploying containers, container orchestration, and managing clusters on Azure Kubernetes Service. The skills validated include deploying, configuring, and scaling an Azure Kubernetes Service cluster. Also, deploying an Azure Container Registry instance and deploying an application into an Azure Kubernetes Service cluster.
   ms.date: 04/20/2026

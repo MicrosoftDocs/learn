@@ -1,11 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.use-watchlists-azure-sentinel
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-sentinel
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+    - administrator
+  gs-skills:
+    - "Security Analytics"
+    - "Security Operations Management"
+    - "Data Management"
+    - "Threat Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/use-watchlists-azure-sentinel/index.yml
   title: Use watchlists in Microsoft Sentinel
   description: "Use watchlists in Microsoft Sentinel"
   ms.date: 05/02/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Use watchlists in Microsoft Sentinel

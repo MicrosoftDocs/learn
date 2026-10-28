@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.adopt-ai-agent-best-practice
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 34
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - technology-manager
+    - solution-architect
+  gs-skills:
+    - "AI Strategy"
+    - "AI Governance"
+    - "Large Language Model Operations (LLMOps)"
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/adopt-ai-agent-best-practice/index.yml
   title: Implement best practices to empower AI agent efficiency and ensure long-term success
   description: Learn how to implement best practices for AI agent workloads by leveraging frameworks like AI Center of Excellence, FinOps, GenAI Ops, Cloud Adoption Framework, and Well-Architected Framework.
   ms.date: 10/13/2026

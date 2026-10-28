@@ -1,12 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.architect-migration-bcdr
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - systems-administrator
+  gs-skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Data Administration"
+    - Storage
+    - "Data Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/architect-migration-bcdr/index.yml
   title: Architect migration, business continuity, and disaster recovery in Azure learning path
   description: Learn how to migrate resources to Azure, how to provide site recovery for your applications in Azure and on-premises, and how to your applications are available through service interruptions and changes in load.
   brand: azure
   ms.date: 10/23/2019
   author: rmcmurray
-  ms.author: robmcm
+  ms.author: lumac
   ms.topic: learning-path
 title: Architect migration, business continuity, and disaster recovery in Azure
 summary: Learn how to migrate resources to Azure, how to provide site recovery for your applications in Azure and on-premises, and how to your applications are available through service interruptions and changes in load.

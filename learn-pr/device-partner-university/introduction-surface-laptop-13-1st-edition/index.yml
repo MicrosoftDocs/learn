@@ -2,6 +2,25 @@
 uid: learn.dpu.introduction-surface-laptop-13-1st-edition
 title: Introduction to Microsoft Surface Laptop for Business, 13-inch (1st Edition)
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - surface
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+  gs-skills:
+    - "Device Management"
+    - "AI Productivity"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-surface-laptop-13-1st-edition/index.yml
   title: Introduction To Microsoft Surface Laptop For Business, 13-Inch (1st Edition)
   description: "In this module, you'll learn about the Microsoft Surface Laptop for Business, 13-inch (1st Edition), its features, how it works, and when to use it."
   ms.date: 05/19/2026

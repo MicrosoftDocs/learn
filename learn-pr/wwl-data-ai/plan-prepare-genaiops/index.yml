@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-prepare-genaiops
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 46
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+  gs-skills:
+    - "Agent Development"
+    - "AI Model Evaluation & Testing"
+    - "Knowledge Grounding for AI"
+    - "Large Language Model Operations (LLMOps)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/plan-prepare-genaiops/index.yml
   title: Plan and prepare a GenAIOps solution
   description: Learn how to plan and prepare a GenAIOps solution.
   author: madiepev

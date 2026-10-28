@@ -6,7 +6,7 @@ metadata:
   description: Summary of implementing and managing authentication methods in Microsoft Entra ID, including MFA, passwordless authentication, and SSPR.
   ms.date: 03/05/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 2

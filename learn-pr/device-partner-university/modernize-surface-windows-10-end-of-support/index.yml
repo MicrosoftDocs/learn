@@ -2,6 +2,31 @@
 uid: learn.dpu.modernize-surface-windows-10-end-of-support
 title: Modernize with Surface for Business after Windows 10 end of support
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 17
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - surface
+    - windows
+    - intune
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+    - administrator
+    - technology-manager
+  gs-skills:
+    - "Device Management"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - Cybersecurity
+    - "Zero Trust Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/modernize-surface-windows-10-end-of-support/index.yml
   title: Modernize With Surface For Business After Windows 10 End Of Support
   description: Windows 10 support has ended—learn how to move forward with Windows 11 Pro and Surface for Business devices to maintain security, simplify management, and support modern work across your organization.
   ms.date: 11/12/2025

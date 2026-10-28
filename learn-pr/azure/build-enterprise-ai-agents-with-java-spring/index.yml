@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.azure.build-enterprise-ai-agents-with-java-spring
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 100
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-openai
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+  gs-skills:
+    - "Application Development"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Vector Databases"
+    - "Embedding Models"
+    - "Agent Development"
+    - "Prompt Engineering"
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/build-enterprise-ai-agents-with-java-spring/index.yml
   title: Build Enterprise AI Agents with Java and Spring
   description: Learn how to build and deploy an AI-powered Java application and AI agents using Spring AI, Azure OpenAI, and Azure Container Apps with PostgreSQL vector storage.
   ms.date: 03/16/2025

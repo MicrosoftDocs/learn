@@ -5,7 +5,7 @@ metadata:
   description: Explore how Azure Machine Configuration uses the Azure Machine Configuration extension and Azure Policy to audit and enforce OS-level settings on Azure VMs and Arc-enrolled servers. The configuration includes the audit-to-enforce promotion path.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Explore Azure Machine Configuration extension capabilities and modes

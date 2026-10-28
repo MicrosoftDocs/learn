@@ -6,7 +6,7 @@ metadata:
   description: Understand how to use several Azure services together, bring data to your Digital Twin, and add two-way communication in Unity and in mixed reality.
   ms.date: 09/10/2024
   author: JBrentJ
-  ms.author: lolab
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
     - devx-track-arm-template

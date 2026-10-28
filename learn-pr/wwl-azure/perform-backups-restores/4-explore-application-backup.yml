@@ -6,7 +6,7 @@ metadata:
   description: "Explore how Azure Backup completes a backup for Azure Virtual Machines hosting SAP applications."
   ms.date: 12/23/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

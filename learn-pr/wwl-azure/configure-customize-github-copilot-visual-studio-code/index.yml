@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-customize-github-copilot-visual-studio-code
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 101
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Agent Development"
+    - "Multi-Agent Orchestration"
+    - "AI-Augmented Software Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-customize-github-copilot-visual-studio-code/index.yml
   title: "Configure GitHub Copilot Instructions and Create Custom Agents"
   description: "This module covers how to configure and customize GitHub Copilot in Visual Studio Code using instruction files, prompt files, custom agents, and agent handoffs to create tailored AI-assisted development workflows."
   ms.date: 02/25/2026

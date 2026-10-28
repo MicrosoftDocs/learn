@@ -5,7 +5,7 @@ metadata:
   description: Learn about Azure Backup, and how you can use the Azure portal to back up and restore a virtual machine.
   ms.date: 09/05/2024
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: lumac
   ms.topic: unit
 title: Introduction
 durationInMinutes: 2

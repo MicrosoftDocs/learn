@@ -2,6 +2,33 @@
 uid: learn.devrel.harden-microsoft-365-secure-score
 title: Harden a Microsoft 365 tenant with Microsoft Secure Score
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 212
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - m365
+    - entra
+    - office-teams
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - security-engineer
+    - identity-access-admin
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Security Operations Management"
+    - "Security Automation"
+    - "Zero Trust Security"
+    - "Cloud Administration"
+    - "Collaboration Tools"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/harden-microsoft-365-secure-score/index.yml
   title: Harden a Microsoft 365 Tenant with Microsoft Secure Score
   description: Implement commonly flagged Microsoft Secure Score recommendations by using staged identity, application, privilege, recovery, and meeting controls.
   ms.date: 09/01/2026

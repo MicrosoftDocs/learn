@@ -6,7 +6,7 @@ metadata:
   description: "Describes the process of choosing appropriate appliances and hardware profiles for your Microsoft Defender for IoT sensors."
   ms.date: 03/04/2024
   author: limwainstein
-  ms.author: lwainstein
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 6
 content: |

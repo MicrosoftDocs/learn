@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.protect-backup-data-azure-backup-security
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+  gs-skills:
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/protect-backup-data-azure-backup-security/index.yml
   title: Protect Backup Data with Azure Backup Security Features
   description: "Protect Azure Backup data against ransomware, accidental deletion, and rogue administrators. Configure enhanced soft delete, vault immutability, Multi-User Authorization with Resource Guard, and RBAC controls to achieve an Excellent security posture rating across Recovery Services vaults."
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-backup
   ai-usage: ai-assisted

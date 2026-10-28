@@ -1,6 +1,39 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-ai-ready-infrastructure
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - microsoft-foundry
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - platform-engineer
+    - solution-architect
+    - security-engineer
+    - ai-engineer
+  gs-skills:
+    - "AI Infrastructure"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Identity and Access Management (IAM)"
+    - "AI Governance"
+    - "Security Architecture Design"
+    - "Solution Architecture"
+    - "Infrastructure Management"
+    - "Data Analytics"
+    - "Security Analytics"
+    - Automation
+    - Databases
+    - "Data Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-ai-ready-infrastructure/index.yml
   title: Manage AI-ready infrastructure
   description: Learn to manage AI infrastructure by planning compute capacity, enforcing governance, configuring monitoring, and optimizing costs to support scalable, compliant, and high-performing AI workloads without budget overruns or operational risks.
   ms.date: 02/11/2026

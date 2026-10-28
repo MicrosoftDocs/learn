@@ -5,7 +5,7 @@ metadata:
   description: Submit just-in-time access requests for VMs from the Defender for Cloud portal and Azure portal, audit JIT access history using the Activity Log, and enforce JIT adoption at scale using the built-in Azure Policy definition.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Request Just-in-time (JIT) access and audit access activity

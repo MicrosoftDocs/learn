@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.configure-secure-workloads-use-azure-virtual-networking
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - security-engineer
+    - systems-administrator
+  gs-skills:
+    - "Network Connectivity"
+    - "IT Networking"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Security Architecture Design"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/configure-secure-workloads-using-azure-virtual-networking/index.yml
   title: Configure secure access to your workloads using Azure virtual networking AZ-1002
   description: Configure secure access to your workloads using Azure virtual networking. (AZ-1002)
   ms.date: 06/23/2026

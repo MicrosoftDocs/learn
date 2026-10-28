@@ -2,6 +2,25 @@
 uid: learn.dpu.frontier-firms-scale-ai-responsibly-build-trust
 title: 'Frontier Firms: Scale AI responsibly and build trust'
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 38
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-leader
+    - risk-practitioner
+  gs-skills:
+    - "AI Governance"
+    - "AI Risk Management"
+    - "Responsible AI"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/frontier-firms-scale-ai-responsibly-build-trust/index.yml
   title: 'Frontier Firms: Scale AI Responsibly And Build Trust'
   description: In this module, you'll learn how to evaluate and govern agentic AI deployments using a risk-based approach. Apply governance concepts related to capability, authority, human oversight, security, monitoring, and continuous governance to help scale AI responsibly and build trust.
   ms.date: 09/29/2026

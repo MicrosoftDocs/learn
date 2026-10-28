@@ -5,7 +5,7 @@ metadata:
   description: Create, configure, and enforce Microsoft Entra Conditional Access policies scoped to AI agent identities. Then with these policies, you can block unauthorized agent sign-ins, and restrict agent capabilities.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Configure Conditional Access policies for agents

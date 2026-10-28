@@ -1,11 +1,43 @@
 ### YamlMime:Module
 uid: learn.wwl.security-copilot-interactive-guides
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 113
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - security-copilot
+    - microsoft-purview
+    - microsoft-defender
+    - entra
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+    - ip-admin
+    - identity-access-admin
+    - administrator
+  gs-skills:
+    - "Security Operations Management"
+    - "Security Analytics"
+    - "Threat Management"
+    - "Security Automation"
+    - "Agentic AI"
+    - "Agent Operations"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/security-copilot-interactive-guides/index.yml
   title: Experience Security Copilot Through Guided Simulations
   description: "Explore use cases of Microsoft Security Copilot in the standalone and embedded experiences through interactive guides."
   ms.date: 04/28/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: module
   ms.service: security-copilot
   ai-usage: ai-assisted

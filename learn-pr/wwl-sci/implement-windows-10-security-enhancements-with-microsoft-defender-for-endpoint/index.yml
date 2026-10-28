@@ -1,11 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 31
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - defender-endpoint
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+  gs-skills:
+    - Cybersecurity
+    - "Device Management"
+    - "Threat Management"
+    - "Security Operations Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint/index.yml
   title: Implement Windows security enhancements with Microsoft Defender for Endpoint
   description: "Implement Windows security enhancements with Microsoft Defender for Endpoint"
   ms.date: 05/21/2026
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module
   ms.service: defender-endpoint
   ai-usage: ai-assisted

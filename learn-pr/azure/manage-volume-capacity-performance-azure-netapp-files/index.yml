@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.azure.manage-volume-capacity-performance
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 65
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - storage-admin
+    - systems-administrator
+  gs-skills:
+    - Storage
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/manage-volume-capacity-performance-azure-netapp-files/index.yml
   title: Manage volume capacity and performance for Azure NetApp Files
   description: Learn how to monitor volume capacity, resize capacity pools and volumes, change volume service levels, manage quota rules, and use cool access in Azure NetApp Files.
   ms.date: 06/10/2026

@@ -5,7 +5,7 @@ metadata:
   description: Monitor AI agent activity in Microsoft Agent 365, review usage data and policy violations, and enforce organizational governance controls, maintaining visibility and accountability across deployed agents.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Monitor agent activity and enforce governance

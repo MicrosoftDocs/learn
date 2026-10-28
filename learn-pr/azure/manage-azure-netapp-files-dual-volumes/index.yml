@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.azure.manage-dual-volumes
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 30
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - Storage
+    - "Cloud Administration"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/manage-azure-netapp-files-dual-volumes/index.yml
   title: Manage dual volumes in Azure NetApp Files
   description: Learn how to create and manage dual-protocol volumes with support for LDAP user mapping in Azure NetApp Files.
   ms.date: 03/25/2026

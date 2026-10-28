@@ -5,7 +5,7 @@ metadata:
   description: Learn how to save key findings with bookmarks in Microsoft Sentinel.
   ms.date: 03/06/2025
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 title: Save key findings with bookmarks
 durationInMinutes: 5

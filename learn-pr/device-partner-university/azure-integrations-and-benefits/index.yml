@@ -2,6 +2,29 @@
 uid: learn.dpu.azure-integrations-and-benefits-in-windows-server-2025
 title: Azure integrations and benefits in Windows Server 2025
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 15
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - it-professional
+    - technology-manager
+  gs-skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Cloud Infrastructure"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/azure-integrations-and-benefits/index.yml
   title: Azure Integrations And Benefits In Windows Server 2025
   description: In this module, you learn how Windows Server 2025 integrates with Azure services to provide unified management, consistent security, and scalable performance for hybrid and multicloud infrastructures.
   ms.date: 09/03/2025

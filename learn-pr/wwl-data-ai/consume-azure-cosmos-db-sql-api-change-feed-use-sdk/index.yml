@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 39
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Database Development"
+    - "Application Development"
+    - "Data Engineering"
+    - Databases
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/consume-azure-cosmos-db-sql-api-change-feed-use-sdk/index.yml
   title: Consume an Azure Cosmos DB for NoSQL change feed using the SDK
   description: "Process change feed events using the change feed processor in the Azure Cosmos DB for NoSQL .NET SDK."
   ms.date: 04/02/2025

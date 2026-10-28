@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.prepare-ai-ready-analytics-data
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - fabric
+    - power-bi
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+    - data-engineer
+    - business-analyst
+  gs-skills:
+    - "Data Analytics"
+    - "Data Engineering"
+    - "AI Governance"
+    - "Business Insights"
+    - "Agentic AI"
+    - "Data Management"
+    - "Graph-based AI"
+    - "Knowledge Grounding for AI"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/prepare-ai-ready-analytics-data/index.yml
   title: Prepare AI-Ready Analytics Data in Microsoft Fabric
   description: Prepare your semantic layer for AI by adding metadata and linguistic context to gold-layer data stores and semantic models, then generate ontologies that AI agents use to answer business questions.
   ms.date: 04/30/2026

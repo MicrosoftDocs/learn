@@ -6,7 +6,7 @@ metadata:
   description: "Discover supported Azure Virtual Machines for SAP products on Windows and Linux"
   ms.date: 01/09/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom: linux-related-content
 durationInMinutes: 5

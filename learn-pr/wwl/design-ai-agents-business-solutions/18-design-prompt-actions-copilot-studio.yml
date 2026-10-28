@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to design prompt actions in Copilot Studio to create reliable, grounded, and consistent agent responses using the Prompt Coach template."
   ms.date: 02/13/2026
   author: Randall-Knapp
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 11

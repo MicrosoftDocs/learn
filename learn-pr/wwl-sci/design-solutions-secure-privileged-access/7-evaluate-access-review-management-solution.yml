@@ -6,7 +6,7 @@ metadata:
   description: "Learn to evaluate access review management solutions using Microsoft Entra access reviews, including multi-stage reviews for the SC-100 certification."
   ms.date: 05/29/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 7
 content: |

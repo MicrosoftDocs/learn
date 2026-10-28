@@ -1,11 +1,32 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 65
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - data-engineer
+  gs-skills:
+    - "Data Engineering"
+    - "Application Development"
+    - "Application Architecture"
+    - "Python (Programming Language)"
+    - "Machine Learning"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-analytics-engines-spark/index.yml
   title: 'Distributed computing on the cloud: Spark'
   description: Carnegie Mellon University's cloud developer course. Spark is an open-source cluster-computing framework with different strengths than MapReduce has. Learn about how Spark works.
   ms.date: 03/09/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: module
   ms.custom: team=nextgen
   ms.service: azure-synapse-analytics

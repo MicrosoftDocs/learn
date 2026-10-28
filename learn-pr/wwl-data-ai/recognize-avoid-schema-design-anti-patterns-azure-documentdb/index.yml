@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 62
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - database-administrator
+  gs-skills:
+    - "Database Design"
+    - "Database Development"
+    - Databases
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/recognize-avoid-schema-design-anti-patterns-azure-documentdb/index.yml
   title: Recognize and Avoid Schema Design Anti-Patterns in Azure DocumentDB
   description: "Identify and fix common schema design mistakes in Azure DocumentDB, including unbounded arrays, collection sprawl, unnecessary indexes, over-normalization, and case-sensitivity issues."
   ms.date: 06/20/2026

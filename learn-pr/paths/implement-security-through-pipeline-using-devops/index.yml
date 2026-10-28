@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-security-through-pipeline-using-devops
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure-devops
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - security-engineer
+  gs-skills:
+    - DevOps
+    - "Application Security"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Security Automation"
+    - Cybersecurity
+    - "Cloud Administration"
+    - "Zero Trust Security"
+    - "Security Operations Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-security-through-pipeline-using-devops/index.yml
   title: Implement security through a pipeline using Azure DevOps AZ-2001
   description: "Implement security through a pipeline using Azure DevOps. (AZ-2001)"
   ms.date: 01/18/2024

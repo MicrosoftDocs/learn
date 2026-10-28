@@ -2,6 +2,31 @@
 uid: learn.wwl.apl-3031-create-ai-agent-foundry
 hidden: true
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - data-scientist
+    - developer
+  gs-skills:
+    - "Agent Development"
+    - "Agentic AI"
+    - "Generative AI"
+    - "Knowledge Grounding for AI"
+    - "Multi-Agent Orchestration"
+    - "AI Security (Model-Level)"
+    - "AI Governance"
+    - "Prompt Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/apl-3031/index.yml
   title: Create an AI agent with Microsoft Foundry (Microsoft Applied Skill)
   description: Learn how to create an AI agent using Microsoft Foundry. (MAS-3031)
   ms.date: 12/08/2025

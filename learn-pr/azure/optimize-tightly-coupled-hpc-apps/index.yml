@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 44
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - solution-architect
+    - systems-administrator
+  gs-skills:
+    - "Application Development"
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+    - "IT Networking"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/optimize-tightly-coupled-hpc-apps/index.yml
   title: Optimizing tightly coupled HPC applications on HBv2, HC, and HB series virtual machines
   description: Learn how to build, run, and tune tightly coupled HPC applications in Azure.
   ms.date: 08/05/2024

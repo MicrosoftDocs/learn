@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.import-data-different-formats-for-use-scripts
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 28
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - Automation
+    - "Data Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/import-data-different-formats-for-use-scripts/index.yml
   title: Import data in different formats for use in scripts by using Windows PowerShell cmdlets
   description: "This module explains how to import data from a text file, CSV file, XML file, and JavaScript Object Notation (JSON) file."
   ms.date: 05/12/2026

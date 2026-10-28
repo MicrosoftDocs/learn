@@ -1,12 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.secure-your-cloud-data
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - defender-for-cloud
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - security-engineer
+    - systems-administrator
+  gs-skills:
+    - Storage
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+    - "Network Connectivity"
+    - "Threat Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/secure-your-cloud-data/index.yml
   title: Secure your cloud data in Azure learning path
   description: This learning path helps you leverage the built-in Azure services for securing app data, ensuring that only authorized services and clients have access.
   brand: azure
   ms.date: 10/1/2019
   author: rmcmurray
-  ms.author: robmcm
+  ms.author: lumac
   ms.topic: learning-path
 title: Secure your cloud data
 summary:  |

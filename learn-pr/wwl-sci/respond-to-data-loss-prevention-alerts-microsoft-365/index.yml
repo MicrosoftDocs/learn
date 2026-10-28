@@ -1,11 +1,37 @@
 ### YamlMime:Module
 uid: learn.wwl.respond-to-data-loss-prevention-alerts-microsoft-365
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 28
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - m365
+    - microsoft-purview
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - ip-admin
+    - risk-practitioner
+  gs-skills:
+    - "Data Security"
+    - "Security Analytics"
+    - "Threat Management"
+    - "Security Operations Management"
+    - Cybersecurity
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/respond-to-data-loss-prevention-alerts-microsoft-365/index.yml
   title: Respond to data loss prevention alerts using Microsoft 365
   description: "Respond to data loss prevention alerts using Microsoft 365"
   ms.date: 09/20/2024
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module
   ms.service: purview
   ms.subservice: purview-data-loss-prevention

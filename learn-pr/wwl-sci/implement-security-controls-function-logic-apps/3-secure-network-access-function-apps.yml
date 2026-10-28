@@ -5,7 +5,7 @@ metadata:
   description: Implement inbound IP restrictions, private endpoints, virtual network integration, CORS configuration, and Key Vault references for Azure Function apps.
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Secure network access for Function apps

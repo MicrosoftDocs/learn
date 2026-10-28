@@ -6,7 +6,7 @@ metadata:
   description: "Exercise 4 - Monitor Azure Arc-enabled Windows servers by using Azure Monitor"
   ms.date: 06/10/2024
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 30
 content: |

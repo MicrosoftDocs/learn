@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 51
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-machine-learning
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - devops-engineer
+  gs-skills:
+    - DevOps
+    - "Machine Learning"
+    - Automation
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/trigger-azure-machine-learn-jobs-github-actions/index.yml
   title: Automate model training with GitHub Actions
   description: Choose this module if you want to automate and validate model training with GitHub Actions and Azure Machine Learning pipelines.
   author: madiepev

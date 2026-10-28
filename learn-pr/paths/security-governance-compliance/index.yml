@@ -1,11 +1,43 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.security-governance-compliance
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - defender-for-cloud
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ip-admin
+    - security-engineer
+  gs-skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Cloud Administration"
+    - "Security Architecture Design"
+    - "Security Operations Management"
+    - "Identity and Access Management (IAM)"
+    - Automation
+    - "Infrastructure Management"
+    - Cybersecurity
+    - "Cloud Infrastructure"
+    - "Zero Trust Security"
+    - "Application Security"
+    - "Security Automation"
+    - DevOps
+    - "Platform Engineering"
+    - "Security Analytics"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/security-governance-compliance/index.yml
   title: Enforce Security Governance and Regulatory Compliance
   description: "Enforce security governance and regulatory compliance across Azure environments using Azure Policy, Microsoft Defender for Cloud, Azure RBAC. Then enable Azure Backup security features, and infrastructure as code scanning."
   ms.date: 05/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: learning-path
   ai-usage: ai-assisted
 title: Enforce security governance and regulatory compliance

@@ -5,7 +5,7 @@ metadata:
   description: Learn how Microsoft Defender External Attack Surface Management (EASM)'s recursive discovery engine uses seeds to find unknown internet-facing assets.
   ms.date: 04/07/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Discover assets using recursive discovery

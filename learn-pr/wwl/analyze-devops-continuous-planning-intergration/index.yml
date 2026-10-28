@@ -1,11 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-devops-continuous-planning-intergration
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - product-manager
+    - developer
+    - solution-architect
+    - technology-manager
+  gs-skills:
+    - DevOps
+    - "IT Strategy"
+    - "Application Development"
+    - Automation
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/analyze-devops-continuous-planning-intergration/index.yml
   title: Analyze DevOps Continuous Planning and Continuous Integration
   description: "Explore the first two capabilities in the DevOps taxonomy, Continuous Planning and Continuous Integration."
   ms.date: 09/20/2020
   author: wwlpublish
-  ms.author: sallybre
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-devops
 title: Analyze DevOps Continuous Planning and Continuous Integration

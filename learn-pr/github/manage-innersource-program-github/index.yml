@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.github.manage-innersource-program-github
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 50
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - technology-manager
+    - devops-engineer
+    - developer
+  gs-skills:
+    - "Collaboration Tools"
+    - DevOps
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/manage-innersource-program-github/index.yml
   title: "Manage an InnerSource program by using GitHub"
   description: Learn to manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
   ms.date: 09/19/2024

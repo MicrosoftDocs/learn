@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to control access by layer using workspace permissions and OneLake data access roles, and how to manage changes to your medallion lakehouse using Git integration and deployment pipelines."
   ms.date: 06/10/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 4
 content: |

@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 103
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-openai
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+  gs-skills:
+    - "Semantic Search"
+    - "Vector Databases"
+    - "Embedding Models"
+    - "Database Development"
+    - "Application Development"
+    - "Data Engineering"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-full-text-vector-search-azure-cosmos-db-nosql/index.yml
   title: Implement Full-Text and Vector Search in Azure Cosmos DB for NoSQL
   description: "Configure full-text policies and indexes and rank text with BM25, design vector data and vector indexes, run similarity queries with VectorDistance, and keep embeddings current with the change feed."
   ms.date: 10/03/2026

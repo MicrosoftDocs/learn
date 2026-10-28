@@ -2,6 +2,29 @@
 uid: learn.dpu.ai-dev-gallery
 title: 'Get started using Foundry on Windows: AI Dev Gallery (Preview)'
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 18
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+    - sales
+  gs-skills:
+    - "Generative AI"
+    - "Computer Vision"
+    - "Model Hosting & Inference"
+    - "AI Infrastructure"
+    - "AI Productivity"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/ai-dev-gallery/index.yml
   title: 'Get Started Using Foundry On Windows: AI Dev Gallery (preview)'
   description: In this module, you'll use AI Dev Gallery (Preview) to explore, run, and demonstrate local AI experiences on a Copilot+ PC. You'll learn how Foundry on Windows enables on-device AI through samples, models, and AI APIs that help reduce reliance on cloud-based processing.
   ms.date: 09/01/2026

@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.create-classes-objects-c-sharp
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 71
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/create-classes-objects-c-sharp/index.yml
   title: Get started with classes and objects in C#
   description: "Learn how to create classes and instantiate objects that expose encapsulated field data by using class definitions, constructors, and the 'new' operator."
   ms.date: 02/06/2025

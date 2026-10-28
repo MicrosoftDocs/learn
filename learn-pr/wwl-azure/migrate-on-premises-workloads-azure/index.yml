@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-onpremises-workloads-azure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 31
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - systems-administrator
+    - security-engineer
+  gs-skills:
+    - "Data Migration"
+    - Virtualization
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-on-premises-workloads-azure/index.yml
   title: Migrate on-premises workloads to Azure
   description: Migrate on-premises workloads to Azure
   ms.date: 01/23/2026

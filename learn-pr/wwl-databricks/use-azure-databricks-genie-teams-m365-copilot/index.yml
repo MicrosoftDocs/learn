@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.use-azure-databricks-genie-teams-m365-copilot
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 45
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-databricks
+    - office-teams
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+  gs-skills:
+    - "AI Fluency"
+    - "AI Prompting"
+    - "AI Productivity"
+    - "Data Analytics"
+    - "Responsible AI"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-databricks/use-azure-databricks-genie-teams-m365-copilot/index.yml
   title: Use Azure Databricks Genie in Microsoft Teams and Microsoft 365 Copilot
   description: "Learn to use Azure Databricks Genie from Microsoft Teams and Microsoft 365 Copilot. Ask effective data questions using the SPARK framework, interpret and verify AI-generated answers, and apply responsible-use practices."
   ms.date: 10/26/2026

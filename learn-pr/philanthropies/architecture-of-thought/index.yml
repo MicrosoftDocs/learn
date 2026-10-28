@@ -1,8 +1,33 @@
 ### YamlMime:Module
 uid: learn.philanthropies.architecture-of-thought
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 75
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-openai
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+    - student
+    - solution-architect
+  gs-skills:
+    - "Generative AI"
+    - "Natural Language Processing (NLP)"
+    - "AI Solutions"
+    - "Prompt Engineering"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/architecture-of-thought/index.yml
   title: The Architecture of Thought - Dialogue Systems with Azure OpenAI Studio
-  description: "Explore how Azure OpenAI Studio enables the development of AI-powered dialogue systems. Learn the core architecture of conversational agents, the models behind them, and how to design basic chat interactions using Microsoft tools."
+  description: "Explore dialogue-system architecture, GPT models, and chatbot prototyping with Azure OpenAI Studio for scalable conversational experiences."
   ms.date: 4/28/2025
   author: kprks
   ms.author: kbarreto

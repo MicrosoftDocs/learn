@@ -2,11 +2,28 @@
 uid: learn.philanthropies.intro-to-budgeting-for-students
 
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 56
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - student
+  gs-skills:
+    - "AI Fluency"
+    - "Business Insights"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/intro-to-budgeting-for-students/index.yml
   title: Introduction to budgeting for students
   description: Learn the fundamentals of budgeting to manage your money effectively, save for future goals, and reduce financial stress.
   ms.date: 04/01/2025
   author: kprks
-  ms.author: v-kperkes
+  ms.author: lumac
   ms.topic: module
   ms.service: artificial-intelligence
 

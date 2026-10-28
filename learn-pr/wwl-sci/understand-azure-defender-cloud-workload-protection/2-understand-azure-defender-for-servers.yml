@@ -6,7 +6,7 @@ metadata:
   description: "Understand Microsoft Defender for servers"
   ms.date: 03/24/2025
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

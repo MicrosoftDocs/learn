@@ -1,6 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.azure.oracle-workloads-to-azure
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - database-administrator
+  gs-skills:
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+    - "Data Migration"
+    - "Solution Architecture"
+    - Databases
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/oracle-workloads-to-azure/index.yml
   title: Migrate Oracle workloads to Azure
   description: "Learn how you can migrate your Oracle workloads to Azure."
   brand: azure

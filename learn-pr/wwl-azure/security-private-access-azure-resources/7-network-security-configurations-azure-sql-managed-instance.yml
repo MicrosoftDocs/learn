@@ -6,7 +6,7 @@ metadata:
   description: "Service supports disabling public network access either through using service-level IP Access Control List (ACL) filtering rule (not NSG or Azure Firewall) or using a **Disable Public Network Access** toggle switch."
   ms.date: 10/03/2024
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - references_regions

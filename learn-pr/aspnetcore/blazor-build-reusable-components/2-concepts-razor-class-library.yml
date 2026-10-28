@@ -7,7 +7,7 @@ metadata:
   description: "In this unit, you learn about Razor class libraries, how to create one, and how they differ from other .NET class libraries."
   ms.date: 04/07/2025
   author: csharpfritz
-  ms.author: jefritz
+  ms.author: lumac
   ms.manager: markl
   ms.topic: unit
   ms.custom:

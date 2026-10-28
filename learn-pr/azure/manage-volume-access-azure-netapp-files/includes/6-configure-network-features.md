@@ -26,4 +26,4 @@ Navigate to the volume and select **Change network features**. The Edit network 
 
 :::image type="content" source="../media/edit-network-features.png" alt-text="Screenshot of edit network features dialog. It's showing a confirmation option to update the network sibling set." border="true" lightbox="../media/edit-network-features.png":::
 
-You must follow separate instructions if you use Terraform-managed volumes. For more information, see, [**Update Terraform-managed Azure NetApp Files volume from Basic to Standard**](https://learn.microsoft.com/azure/azure-netapp-files/configure-network-features#update-terraform-managed-azure-netapp-files-volume-from-basic-to-standard).
+You must follow separate instructions if you use Terraform-managed volumes. For more information, see, [**Update Terraform-managed Azure NetApp Files volume from Basic to Standard**](/azure/azure-netapp-files/configure-network-features#update-terraform-managed-azure-netapp-files-volume-from-basic-to-standard).

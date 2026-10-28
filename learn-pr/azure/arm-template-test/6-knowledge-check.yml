@@ -6,7 +6,7 @@ metadata:
   description: Three multiple-choice questions
   ms.date: 06/07/2022
   author: ttorble
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom: team=nextgen
   module_assessment: true

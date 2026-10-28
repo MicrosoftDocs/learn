@@ -6,7 +6,7 @@ metadata:
   description: Learn how to monitor the protection of workload data in Azure Backup.
   ms.date: 12/1/2023
   author: AbhishekMallick-MS
-  ms.author: v-abhmallick
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 2
 content: |

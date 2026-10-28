@@ -1,11 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-azure-server-private-endpoint-using-azure-portal
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 77
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - security-engineer
+    - network-engineer
+    - administrator
+  gs-skills:
+    - "Network Connectivity"
+    - "IT Networking"
+    - "Data Security"
+    - "Security Architecture Design"
+    - "Cloud Administration"
+    - Databases
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/connect-azure-server-private-endpoint-using-azure-portal/index.yml
   title: Connect an Azure SQL server using an Azure Private Endpoint using the Azure portal
   description: "Learn how to securely connect an Azure SQL server using an Azure Private Endpoint via the Azure portal, ensuring private and safe communication with your SQL server."
   ms.date: 10/29/2024
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A

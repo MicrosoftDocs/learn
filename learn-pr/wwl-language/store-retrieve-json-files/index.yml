@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.store-retrieve-json-files
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 72
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Data Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/store-retrieve-json-files/index.yml
   title: Store and Retrieve JSON Files
   description: "Learn how to serialize and deserialize JavaScript Object Notation (JSON) strings using the JsonSerializer class, the JsonSerializerOptions class, and Data Transfer Objects."
   ms.date: 04/08/2025

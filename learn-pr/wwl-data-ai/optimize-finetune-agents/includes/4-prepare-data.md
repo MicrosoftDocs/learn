@@ -142,6 +142,6 @@ Follow this systematic workflow to create training data that meets format requir
 5. **Monitor and audit model performance**: Evaluate model benchmarks and metrics on validation data after fine-tuning. If performance falls short, analyze failures to determine whether you need more, better, or different examples.
 
 > [!TIP]
-> Learn more about how to [generate synthetic data for fine-tuning with Microsoft Foundry](/azure/ai-foundry/fine-tuning/data-generation?view=foundry#generate-synthetic-data-for-fine-tuning)
+> Learn more about how to [generate synthetic data for fine-tuning with Microsoft Foundry](/azure/ai-foundry/fine-tuning/data-generation?view=foundry&preserve-view=true#generate-synthetic-data-for-fine-tuning)
 
 With properly formatted, high-quality training data created, you're ready to learn how to optimize fine-tuning a model.

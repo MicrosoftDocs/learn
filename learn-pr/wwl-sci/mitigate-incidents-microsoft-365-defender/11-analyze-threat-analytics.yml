@@ -6,7 +6,7 @@ metadata:
   description: "Use the Security Copilot Threat Intelligence Briefing Agent to analyze threat analytics"
   ms.date: 03/12/2026
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

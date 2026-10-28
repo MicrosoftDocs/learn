@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-security-web-application-firewall
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 30
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+  gs-skills:
+    - "Application Security"
+    - "Network Connectivity"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-security-web-application-firewall/index.yml
   title: Implement Security Controls for Azure App Services and Web Application Firewall
   description: "Implement security controls for Azure App Services and Web Application Firewall. Configure authentication, managed identities, VNet integration, and private endpoints for App Service, and deploy WAF policies on Azure Application Gateway to protect web workloads at the network edge."
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-app-service
   ai-usage: ai-assisted

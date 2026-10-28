@@ -6,7 +6,7 @@ metadata:
   description: "Provides a summary of threat detection with Microsoft Sentinel Analytics."
   ms.date: 05/15/2023
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

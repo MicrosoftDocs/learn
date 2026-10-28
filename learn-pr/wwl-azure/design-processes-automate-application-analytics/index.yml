@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.design-processes-to-automate-application-analytics
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 32
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - support-engineer
+  gs-skills:
+    - "Security Analytics"
+    - Automation
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-processes-automate-application-analytics/index.yml
   title: Design processes to automate application analytics
   description: "Learn to design automated application analytics processes using Azure Application Insights, telemetry integration, augmented search capabilities, and monitoring tools to improve DevOps efficiency and user experience."
   ms.date: 10/21/2025

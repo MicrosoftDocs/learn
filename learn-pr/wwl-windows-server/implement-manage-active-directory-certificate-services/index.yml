@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-manage-active-directory-certificate-services
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 56
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - identity-access-admin
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Infrastructure Management"
+    - "Zero Trust Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/implement-manage-active-directory-certificate-services/index.yml
   title: Implement and manage Active Directory Certificate Services
   description: "Implement and manage Active Directory Certificate Services"
   ms.date: 01/23/2026

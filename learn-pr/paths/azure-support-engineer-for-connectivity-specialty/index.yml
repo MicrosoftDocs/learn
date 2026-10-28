@@ -1,11 +1,37 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-support-engineer-for-connectivity-specialty
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - support-engineer
+  gs-skills:
+    - "Cloud Administration"
+    - Storage
+    - "Infrastructure Management"
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Cloud Infrastructure"
+    - "Data Analytics"
+    - Cybersecurity
+    - "Identity and Access Management (IAM)"
+    - "Security Analytics"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/azure-support-engineer-for-connectivity-specialty/index.yml
   title: Azure Support Engineer for Connectivity Specialty
   description: Azure Support Engineer for Connectivity Specialty
   ms.date: 04/27/2023
   author: mistoyanwork
-  ms.author: mistoyan
+  ms.author: lumac
   ms.topic: learning-path
 title: Azure Support Engineer for Connectivity Specialty
 prerequisites: |
